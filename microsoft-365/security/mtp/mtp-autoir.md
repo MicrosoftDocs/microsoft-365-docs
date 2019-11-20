@@ -20,7 +20,7 @@ ms.topic: conceptual
 
 # Automated investigation and remediation in Microsoft Threat Protection
 
-When security alerts are triggered, it’s up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts keep coming in while investigation is going on. Automating some of this can help. 
+When security alerts are triggered, it’s up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts keep coming in while investigation is going on. Automating some of the tasks involved can help. 
 
 Automated investigation and remediation (AIR) capabilities, such as those included in Microsoft Threat Protection, mimic the ideal steps a human would take to investigate and respond to a cyberthreat. AIR can do this far more efficiently and effectively. AIR steps include:
 
@@ -44,7 +44,7 @@ AIR enables your security operations team to:
 
 ## The automated investigation process
 
-In a nutshell, a triggered **alert** creates an **incident** that can start an **automated investigation** that can result in **remediation actions**.
+As a high-level overview, a triggered **alert** creates an **incident**, which can start an **automated investigation**, and that investigation can result in **remediation actions**.
 
 An automated investigation begins when an alert is triggered, and an incident is created. Security playbooks go into effect, and the automated investigation process begins. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization’s security operations team. Not every alert will trigger an automated investigation, and not every investigation results in automated remediation actions; this all depends on how AIR is configured for your organization. 
 
