@@ -42,4 +42,4 @@ You must be a global or license admin to get started with an allotment.
 
 ## Getting started
 
-The allotments feature is available in a private preview to only a small number of customers. If you are interested in joining, please fill out this form: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)
+The allotments feature is available in a private preview to only a small number of customers. If you're interested in joining, fill out this form: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).
