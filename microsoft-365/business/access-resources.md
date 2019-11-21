@@ -28,7 +28,7 @@ To learn more, see [Introduction to device management in Azure Active Directory]
 The steps are also summarized in the following sections.
 
 > [!IMPORTANT]
-> This procedure is only for OAuth and NTLM and Kerberos is not supported.
+> This procedure is only applicable to OAuth and NTLM. Kerberos is not supported.
  
 ## Run Azure AD Connect
 
