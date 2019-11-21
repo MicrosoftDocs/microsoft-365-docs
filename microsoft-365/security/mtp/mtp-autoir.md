@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: 
 - M365-security-compliance 
 ms.topic: conceptual
+ms.custom: autoir
 ---
 
 # Automated investigation and remediation in Microsoft Threat Protection

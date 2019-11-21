@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: 
 - M365-security-compliance 
 ms.topic: conceptual
+ms.custom: autoir
 ---
 
 # View the results of an automated investigation in Microsoft Threat Protection
