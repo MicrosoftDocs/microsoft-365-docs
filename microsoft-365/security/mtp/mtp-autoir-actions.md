@@ -24,7 +24,7 @@ ms.custom: autoir
 During and after an automated investigation in Microsoft Threat Protection, depending on the results of the investigation, one or more actions might need approval to proceed. Such actions can be reviewed and approved (or rejected) within the Action center or within an investigation details view. 
 
 > [!NOTE]
-> You must be a global administrator, security administrator, or security operator to approve or reject an action. Security readers can view, but not approve or reject, actions. To learn more about roles and permissions, see [Permissions in the Microsoft 365 compliance center and Microsoft 365 security center](https://docs.microsoft.com/office365/securitycompliance/permissions-microsoft-365-compliance-security).
+> You must be a global administrator, security administrator, or security operator to approve or reject an action. Security readers can view, but not approve or reject, actions. 
 
 ## Review a pending action in the Action center
 

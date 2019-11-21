@@ -20,18 +20,19 @@ Managing the security of your business to protect against an ever-evolving threa
 
 Enter Microsoft 365 security center-- the new home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can easily view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 security center is specifically intended for security admins and security operations teams to better manage and protect their organization.
 
-The new Microsoft 365 security center and Microsoft 365 compliance center are specialized workspaces designed to meet the needs of security teams and compliance teams. These solutions are integrated across Microsoft 365 services and provide actionable insights to help reduce risks and safeguard your digital estate.
+The new Microsoft 365 security center and [Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) are specialized workspaces designed to meet the needs of security teams and compliance teams. These solutions are integrated across Microsoft 365 services and provide actionable insights to help reduce risks and safeguard your digital estate.
 
-[Learn more and get ready](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance) for the new Microsoft 365 security center and the Microsoft 365 compliance center.
+Visit the Microsoft 365 security center at [https://security.microsoft.com](https://security.microsoft.com). 
 
-Visit the Microsoft 365 security center at security.microsoft.com.  
+> [!NOTE]
+> You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Azure Active Directory to access the Microsoft 365 security center.
+
 
 ## Let's take a closer look
 
 The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because the Microsoft 365 security center uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.  
 
 This at-a-glance information helps you keep up with the latest activities in your organization. The Microsoft 365 security center brings together signals from a variety of sources to present a holistic view of your Microsoft 365 environment.
-
 
 The Microsoft 365 security center includes:
 
