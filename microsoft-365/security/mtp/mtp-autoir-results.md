@@ -41,6 +41,8 @@ Use the Action center to view actions that are either pending approval (on the *
 
 ### Open an investigation from an incident details page
 
+Use an incident details page to view detailed information about an incident, including alerts that were triggered information about any affected devices, user accounts, or mailboxes.
+
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 
 2. In the navigation pane, choose **Incidents**. 
