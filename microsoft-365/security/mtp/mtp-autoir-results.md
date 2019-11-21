@@ -31,6 +31,8 @@ You can open the investigation details view by [selecting an item in the Action 
 
 ### Select an item in the Action center
 
+Use the Action center to view actions that are either pending approval (on the **Pending** tab) or were already approved (on the **History** tab). 
+
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 
 2. In the navigation pane, choose **Action center**. 
