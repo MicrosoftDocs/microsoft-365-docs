@@ -53,7 +53,7 @@ Use an incident details page to view detailed information about an incident, inc
 
 ## Investigation details
 
-The investigation details view resembles the following image:
+Use the investigation details view to see past, current, and pending activity pertaining to an investigation. The investigation details view resembles the following image:
 
 ![Investigation details](../images/mtp-air-investdetails.png)
 
