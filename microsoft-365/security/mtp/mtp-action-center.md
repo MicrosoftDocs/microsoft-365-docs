@@ -33,10 +33,8 @@ The following table lists remediation actions that are currently supported in th
 |---------|---------|
 |Quarantine file<br/>Remove registry key<br/>Kill process <br/>Stop service <br/>Remove registry key <br/>Disable driver <br/>Remove scheduled task      |Soft delete emails<br/>Block URL (time-of-click)<br/>Turn off external mail forwarding<br/>Soft delete emails          |
 
-
-
 > [!NOTE]
-> You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+> You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. 
 
 ## Visit the Action center
 
@@ -53,6 +51,10 @@ The following table lists remediation actions that are currently supported in th
 4. To show only the columns you want to see, select **Customize columns**.<br/>![Action Center in Microsoft Threat Protection](../images/mtp-action-center.png)
 
 5. Select an item in the list to view more details about an investigation. The investigation details view opens.<br/>![Investigation details](../images/mtp-air-investdetails.png)
+
+    - If the investigation pertains to email content (such as, the entity is a mailbox), investigation details open in the Office 365 Security & Compliance Center ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
+
+    - If the investigation involves a user account or a device, investigation details open in the security center ([https://security.microsoft.com](https://security.microsoft.com)). 
 
 ## Next steps 
 
