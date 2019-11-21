@@ -25,10 +25,9 @@ ms.custom: aka.ms/self-service-purchase-faq
 
 ### What changes did Microsoft announce around self-service purchases for the Power Platform products?
 
-UPDATE as of October 31, 2019: Over the past week, we’ve been listening to customer feedback about the rollout of our self-service purchase capabilities for Power Platform products. Based on the feedback, we’re making the following changes to our plan:
+On November 19, we provided IT admins a way to turn off self-service purchasing on a per product basis via PowerShell. To learn how to use it, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
-- On November 19, we will provide IT admins a way to turn off self-service purchasing on a per product basis via PowerShell. To learn how to use it, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
-- To provide more time to prepare for this change, we're updating the launch for self-service purchase capabilities for Power Platform products to start with Power BI on January 14 for all commercial cloud customers.  
+To provide more time to prepare for this change, we're updating the launch for self-service purchase capabilities for Power Platform products to start with Power BI on January 14 for all commercial cloud customers.  
 
 Beginning January 14, 2020, self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, Power Apps, and Power Automate) will be available for commercial cloud customers in the United States. Self-service purchase gives users a chance to try out new technologies and lets them develop solutions that will ultimately benefit their larger organizations. This capability will not be available to tenants in the US that are government, nonprofit, or education, at this time. Central procurement and IT teams will have visibility to all users buying and deploying self-service purchase solutions through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, and will be able to turn off self-service purchasing on a per product basis via PowerShell.
 

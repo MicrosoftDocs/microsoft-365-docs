@@ -43,9 +43,9 @@ First, follow the instructions in [password hash synchronization](password-hash-
   
 This configuration consists of: 
   
-- Office 365 E5 and EMS E5 trial or paid subscriptions.
+- Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
-- Azure AD Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions.
+- Azure AD Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Azure AD tenant of your Microsoft 365 or Office 365 subscription.
 
 
 ## Phase 2: Enable password writeback
