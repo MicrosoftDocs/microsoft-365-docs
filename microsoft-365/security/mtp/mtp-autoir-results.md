@@ -1,5 +1,5 @@
 ---
-title: View the results of an automated investigation in Microsoft Threat Protection 
+title: View the results of an automated investigation
 description: During and after an automated investigation, you can view the results and key findings
 keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.product: eADQiWindows 10XVcnh
@@ -19,7 +19,7 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# View the results of an automated investigation in Microsoft Threat Protection
+# View the results of an automated investigation
 
 In Microsoft Threat Protection, when an automated investigation occurs, you can view details about that investigation during and after the automated investigation process. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
