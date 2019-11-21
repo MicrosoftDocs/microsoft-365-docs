@@ -41,13 +41,13 @@ As previously stated, a Litigation Hold, In-Place Hold, or Office 365 retention 
   
 Run the following command to display the hold information for all inactive mailboxes in your organization.
   
-```
+```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
 ```
 
 The value of **True** for the **LitigationHoldEnabled** property indicates that the inactive mailbox is on Litigation Hold. If an In-Place Hold is placed on an inactive mailbox, the GUID for the hold is displayed as the value for the **InPlaceHolds** property. For example, the following results for two inactive mailboxes show that a Litigation Hold is placed on Ann Beebe and that two In-Place Holds are placed on Pilar Pinilla. 
   
-```
+```text
 DisplayName           : Ann Beebe
 Name                  : annb
 IsInactiveMailbox     : True
@@ -72,7 +72,7 @@ After you identify what type of hold is placed on the inactive mailbox (and whet
 
 As previously stated, you have to use Windows PowerShell to remove a Litigation Hold from an inactive mailbox. You can't use the EAC. Run the following command to remove a Litigation Hold.
   
-```
+```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
 ```
 
@@ -94,9 +94,9 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 1. If you know the name of the In-Place Hold that you want to delete, you can go to the next step. Otherwise, run the following command to get the name of the In-Place Hold that is placed on the inactive mailbox that you want to permanently delete. Use the In-Place Hold GUID that you obtained in [Step 1: Identify the holds on an inactive mailbox](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
-```
-  Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
-```
+   ```powershell
+   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
+   ```
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
@@ -112,29 +112,29 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 1. Create a variable that contains the properties of the In-Place Hold that you want to delete. Use the In-Place Hold GUID that you obtained in [Step 1: Identify the holds on an inactive mailbox](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
-```
-  $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
-```
+   ```powershell
+   $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
+   ```
 
 2. Disable the hold on the In-Place Hold.
     
-```
-  Set-MailboxSearch $InPlaceHold.Name -InPlaceHoldEnabled $false
-```
+   ```powershell
+   Set-MailboxSearch $InPlaceHold.Name -InPlaceHoldEnabled $false
+   ```
 
 3. Delete the In-Place Hold.
     
-```
-  Remove-MailboxSearch $InPlaceHold.Name
-```
+   ```powershell
+   Remove-MailboxSearch $InPlaceHold.Name
+   ```
 
 #### Use the EAC to remove an inactive mailbox from an In-Place Hold
 
 1. If you know the name of the In-Place Hold that's placed on the inactive mailbox, you can go to the next step. Otherwise, run the following command to get the name of the In-Place Hold placed on the mailbox. Use the In-Place Hold GUID that you obtained in [Step 1: Identify the holds on an inactive mailbox](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
-```
-  Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
-```
+   ```powershell
+   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
+   ```
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
@@ -154,47 +154,47 @@ If the In-Place Hold contains a large number of source mailboxes, it's possible 
   
 1. Create a variable that contains the properties of the In-Place Hold placed on the inactive mailbox. Use the In-Place Hold GUID that you obtained in [Step 1: Identify the holds on an inactive mailbox](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
-```
-  $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
-```
+    ```powershell
+    $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
+    ```
 
 2. Verify that the inactive mailbox is listed as a source mailbox for the In-Place Hold. 
     
-```
-  $InPlaceHold.Sources
-```
+   ```powershell
+   $InPlaceHold.Sources
+   ```
 
    **Note:** The *Sources* property of the In-Place Hold identifies the source mailboxes by their *LegacyExchangeDN* properties. Because this property uniquely identifies inactive mailboxes, using the *Sources* property from the In-Place Hold helps prevent removing the wrong mailbox. This also helps to avoid issues if two mailboxes have the same alias or SMTP address. 
    
 3. Remove the inactive mailbox from the list of source mailboxes in the variable. Be sure to use the **LegacyExchangeDN** of the inactive mailbox that's returned by the command in the previous step. 
     
-```
-  $InPlaceHold.Sources.Remove("<LegacyExchangeDN of the inactive mailbox>")
-```
+    ```powershell
+    $InPlaceHold.Sources.Remove("<LegacyExchangeDN of the inactive mailbox>")
+    ```
 
     For example, the following command removes the inactive mailbox for Pilar Pinilla.
     
-  ```
-  $InPlaceHold.Sources.Remove("/o=contoso/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=9c8dfff651ec4908950f5df60cbbda06-pilarp")
-  ```
+    ```powershell
+    $InPlaceHold.Sources.Remove("/o=contoso/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/ cn=9c8dfff651ec4908950f5df60cbbda06-pilarp")
+    ```
 
 4. Verify that the inactive mailbox is removed from the list of source mailboxes in the variable.
     
-```
-  $InPlaceHold.Sources
-```
+   ```powershell
+   $InPlaceHold.Sources
+   ```
 
 5. Modify the In-Place Hold with the updated list of source mailboxes, which doesn't include the inactive mailbox.
     
-```
-  Set-MailboxSearch $InPlaceHold.Name -SourceMailboxes $InPlaceHold.Sources
-```
+   ```powershell
+   Set-MailboxSearch $InPlaceHold.Name -SourceMailboxes $InPlaceHold.Sources
+   ```
 
 6. Verify that the inactive mailbox is removed from the list of source mailboxes for the In-Place Hold.
     
-```
-  Get-MailboxSearch $InPlaceHold.Name | FL Sources
-```
+   ```powershell
+   Get-MailboxSearch $InPlaceHold.Name | FL Sources
+   ```
 
 ## More information
 
@@ -208,7 +208,7 @@ If the In-Place Hold contains a large number of source mailboxes, it's possible 
     
 - **How do you display information about an inactive mailbox after the hold is removed?** After a hold is removed and the inactive mailbox is reverted back to a soft-deleted mailbox, it won't be returned by using the  *InactiveMailboxOnly*  parameter with the **Get-Mailbox** cmdlet. But you can display information about the mailbox by using the **Get-Mailbox -SoftDeletedMailbox** command. For example: 
     
-```
+  ```text
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In
   Placeholds,WhenSoftDeleted,IsInactiveMailbox
   Name                   : pilarp
@@ -217,7 +217,7 @@ If the In-Place Hold contains a large number of source mailboxes, it's possible 
   InPlaceHolds           : {}
   WhenSoftDeleted        : 10/30/2014 1:19:04 AM
   IsInactiveMailbox      : False
-```
-  
-In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is October 30, 2014. If this soft-deleted mailbox was previously an inactive mailbox for which the hold was removed, it will be permanently deleted 30 days after the value of the *WhenSoftDeleted* property. In this case, the mailbox is permanently deleted after November 30, 2014.
+  ```
+
+  In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is October 30, 2014. If this soft-deleted mailbox was previously an inactive mailbox for which the hold was removed, it will be permanently deleted 30 days after the value of the *WhenSoftDeleted* property. In this case, the mailbox is permanently deleted after November 30, 2014.
 

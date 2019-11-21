@@ -28,7 +28,7 @@ Perform the following procedure on the computer that you'll use to export the re
     
 2. Save the following text to a Window registry file by using a filename suffix of .reg; for example, PstExportSize.reg. 
     
-    ```
+    ```text
     Windows Registry Editor Version 5.00
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool]
     "PstSizeLimitInBytes"="1073741824"

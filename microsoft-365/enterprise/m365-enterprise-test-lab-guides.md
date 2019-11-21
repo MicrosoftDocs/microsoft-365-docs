@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise Test Lab Guides"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/04/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -18,6 +18,8 @@ description: Use these Test Lab Guides to set up demonstration, proof of concept
 ---
 
 # Microsoft 365 Enterprise Test Lab Guides
+
+*This applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
 Test Lab Guides (TLGs) help you quickly learn about Microsoft products. They provide prescriptive instructions to configure simplified but representative test environments. You can use these environments for demonstration, customization, or creation of complex proofs of concept for the duration of a trial or paid subscription. 
 
@@ -38,6 +40,8 @@ First, you create a test environment for [Microsoft 365 Enterprise](https://docs
 - Use the [lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md) when you want to configure and demonstrate Microsoft 365 Enterprise features and capabilities in a cloud-only environment, which does not include any on-premises components.
 
 - Use the [simulated enterprise base configuration](simulated-ent-base-configuration-microsoft-365-enterprise.md) when you want to configure and demonstrate Microsoft 365 Enterprise features and capabilities in a hybrid cloud environment, which uses on-premises components such as an Active Directory Domain Services (AD DS) domain.
+
+You can also create test environments for Office 365 E5 by not adding the Microsoft 365 E5 license to your trial or production test environment.
     
 ## Identity
 
@@ -50,6 +54,10 @@ To demonstrate identity-related features and capabilities, see:
 - [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md)
   
    Enable and test pass-through authentication to an AD DS domain controller.
+
+- [Federated authentication](federated-identity-for-your-office-365-dev-test-environment.md)
+  
+   Enable and test federated authentication to an AD DS domain controller.
 
 - [Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md)
   

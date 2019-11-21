@@ -141,7 +141,7 @@ Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define 
 |**Operator**|**Usage**|**Description**|
 |:-----|:-----|:-----|
 |AND|keyword1 AND keyword2|Returns items that include all of the specified keywords or  `property:value` expressions. For example,  `from:"Ann Beebe" AND subject:northwind` would return all messages sent by Ann Beebe that contained the word northwind in the subject line. <sup>2</sup>|
-|+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> The query  `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the ** AND ** operator. This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
+|+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> The query  `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the **AND** operator. This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
 |OR|keyword1 OR keyword2|Returns items that include one or more of the specified keywords or  `property:value` expressions. <sup>2</sup>|
 |NOT|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> NOT kind:im|Excludes items specified by a keyword or a  `property:value` expression. In the second example excludes messages sent by Ann Beebe. The third example excludes any instant messaging conversations, such as Skype for Business conversations that are saved to the Conversation History mailbox folder. <sup>2</sup>|
 |-|keyword1 -keyword2|The same as the **NOT** operator. So this query returns items that contain  `keyword1` and would exclude items that contain  `keyword2`.|
@@ -376,13 +376,13 @@ Only documents that are shared by using the third option (shared with **Specific
 
 You can use the following keyword query to specifically search for content in Skype for Business conversations:
 
-```
+```powershell
 kind:im
 ```
 
 The previous search query also returns chats from Microsoft Teams. To prevent this, you can narrow the search results to include only Skype for Business conversations by using the following keyword query:
 
-```
+```powershell
 kind:im AND subject:conversation
 ```
 
@@ -390,7 +390,7 @@ The previous keyword query excludes chats in Microsoft Teams because Skype for B
 
 To search for Skype for Business conversations that occurred within a specific date range, use the following keyword query:
 
-```
+```powershell
 kind:im AND subject:conversation AND (received=startdate..enddate)
 ```
 

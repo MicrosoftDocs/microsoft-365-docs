@@ -16,12 +16,14 @@ description: Use this Test Lab Guide to enroll devices in your Microsoft 365 tes
 
 # Enroll iOS and Android devices in your Microsoft 365 Enterprise test environment
 
+*This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
+
 By following the instructions provided in this article, you'll be able to enroll and test basic mobile device management capabilities for iOS and Android devices in your Microsoft 365 Enterprise test environment.
 
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
 
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 

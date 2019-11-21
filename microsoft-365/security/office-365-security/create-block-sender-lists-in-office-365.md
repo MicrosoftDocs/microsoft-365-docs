@@ -44,7 +44,7 @@ The steps to set this up are different between [Outlook Web App](https://support
 
 When multiple users are being impacted, the scope is wider, and you need to use a company-wide sender/domain block list Anti-Spam policy. The detailed steps can be found in [Configure your spam filter policies](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) document. Any messages blocked through this method will follow the spam action as configured in the policy.
 
-The maximum limit for these lists is approximately 1000 entries.
+The maximum limit for these lists is approximately 1000 entries; although, you will only be able to enter 30 entries into the portal. You must use PowerShell to add more than 30 entries.
 
 ## Use Exchange Transport Rules (ETRs) to Block specific senders
 
