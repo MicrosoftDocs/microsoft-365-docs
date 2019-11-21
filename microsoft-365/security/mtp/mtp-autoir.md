@@ -21,11 +21,15 @@ ms.custom: autoir
 
 # Automated investigation and remediation in Microsoft Threat Protection
 
-When security alerts are triggered, it’s up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts keep coming in while an investigation is going on. 
+## Your virtual analyst
 
-Imagine having a virtual analyst in your Tier 1 / Tier 2 security operations team. The virtual analyst mimics the ideal steps that security operations would take to investigate and remediate threats. The virtual assistant could work 24x7, with unlimited capacity, and take on a significant load of investigations and threat remediation. Such a virtual assistant could significantly reduce the time to respond, freeing up your security operations team for other important strategic projects. If this scenario sounds like science fiction, it’s not! Such a virtual analyst is part of your Microsoft Threat Protection suite, and its name is Automated Investigation and Remediation (AIR). 
+When security alerts are triggered, it’s up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts keep coming in while an investigation is going on. Security operations teams can feel overwhelmed by the sheer volume of threats they must monitor and protect against. 
 
-AIR takes steps that include:
+Imagine having a virtual analyst in your Tier 1 / Tier 2 security operations team. The virtual analyst mimics the ideal steps that security operations would take to investigate and remediate threats. The virtual assistant could work 24x7, with unlimited capacity, and take on a significant load of investigations and threat remediation. Such a virtual assistant could significantly reduce the time to respond, freeing up your security operations team for other important strategic projects. If this scenario sounds like science fiction, it’s not! Such a virtual analyst is part of your Microsoft Threat Protection suite, and its name is Automated Investigation and Remediation.
+
+## Automated investigation and remediation (AIR)
+
+AIR enables your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents. With AIR, you can reduce the cost of dealing with investigation and remediation activities and get the most out of your threat protection suite. AIR takes steps that include:
 
 1.	Determining whether a threat requires action;
 
@@ -34,16 +38,6 @@ AIR takes steps that include:
 3.	Determining what additional investigations should occur; and
 
 4.	Repeating the process as necessary for other alerts.
-
-Investigations are done on devices (also referred to as endpoints), user accounts (also referred to as user identities), and mailboxes (email). AIR investigates and remediates by correlating signals across [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP), [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) (Defender ATP), and [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP). AIR generates a verdict (*Malicious*, *Suspicious*, or *Clean*) for each piece of evidence following an investigation. 
-
-AIR enables your security operations team to:
-
-- Dramatically increase your organization's capacity to deal with security alerts and incidents;
-
-- Reduce the cost of dealing with investigation and remediation activities; and 
-
-- Get the most out of your threat protection suite.
 
 ## How AIR works
 
@@ -59,7 +53,17 @@ Once an automated investigation is triggered, the process begins immediately. In
 
 4. Determine verdicts and remediation actions
 
+Investigations are done on devices, user accounts, and email content by correlating signals across Microsoft Threat Protection services, as listed in the following table:
+
+|Entities |Threat protection services  |
+|---------|---------|
+|Devices (also referred to as endpoints)     |[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)         |
+|User accounts (also referred to as user identities)     |[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)         |
+|Email content (files and messages in mailboxes)     |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
+
 While an investigation is running, any other related alerts that are generated are added to the investigation until it completes. If the same threat is seen on other entities (such as identities, files, processes, services, drivers, etc.), those entities are added to the investigation. If an incriminated entity is seen in elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run.
+
+Following each investigation, AIR generates a verdict (*Malicious*, *Suspicious*, or *Clean*) for each piece of evidence.
 
 ## Requirements for AIR in Microsoft Threat Protection
 
