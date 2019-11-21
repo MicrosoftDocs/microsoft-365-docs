@@ -46,7 +46,7 @@ If you are an Office 365 customer you can manage this feature through the Securi
 
     ![Editing unauthenticated senders in the graphic interface.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
-- If an admin has identified a false positive, and a sender should not be receiving the unverified sender treatment they can take one of the following actions to add the sender to the Spoof Intelligence spoof allow list:
+- If an admin has identified a false positive, and a sender should not be receiving the unverified sender treatment, one of the following actions can be taken to add the sender to the Spoof Intelligence spoof allow list:
 		
     - Add the domain pair through the Spoof Intelligence Insight. For more details, see [Walkthrough: spoof intelligence insight](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight)
         		
