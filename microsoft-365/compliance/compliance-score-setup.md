@@ -14,7 +14,7 @@ search.appverid:
 description: "Learn how to sign in, set up permissions, and understand your dashboard for Microsoft Compliance Score, which helps simplify and automate risk assessments."
 ---
 
-# Microsoft Compliance Score setup (Preview)
+# Microsoft Compliance Score (Preview) setup
 
 ## Before you begin
 
