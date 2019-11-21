@@ -27,7 +27,7 @@ In Microsoft Threat Protection, when an automated investigation occurs, you can 
 
 ## Open the investigation details view
 
-You can open the investigation details view by doing one of the following:
+You can open the investigation details view by using one of the following methods:
 - [Select an item in the Action center](#select-an-item-in-the-action-center)
 - [Select an investigation from an incident details page](#open-an-investigation-from-an-incident-details-page)
 
