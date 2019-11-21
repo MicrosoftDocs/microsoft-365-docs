@@ -48,7 +48,7 @@ If you are an Office 365 customer you can manage this feature through the Securi
 
 - If an admin has identified a false positive, and a sender should not be receiving the unverified sender treatment, one of the following actions can be taken to add the sender to the Spoof Intelligence spoof allow list:
 		
-    - Add the domain pair through the Spoof Intelligence Insight. For more details, see [Walkthrough: spoof intelligence insight](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight)
+    - Add the domain pair through the Spoof Intelligence Insight. For more details, see [Walkthrough: spoof intelligence insight](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight).
         		
     - Add the domain pair through the PhishFilterPolicy cmdlet. For more details, see [Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) and [Anti-spoofing protection in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)
 
