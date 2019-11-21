@@ -35,7 +35,7 @@ AIR takes steps that include:
 
 4.	Repeating the process as necessary for other alerts.
 
-Investigations are done on devices (also referred to as endpoints), user accounts (also referred to as user identities), and mailboxes (email). AIR investigates and remediates by correlating signals across [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP), [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) (Defender ATP), and [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP). 
+Investigations are done on devices (also referred to as endpoints), user accounts (also referred to as user identities), and mailboxes (email). AIR investigates and remediates by correlating signals across [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP), [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) (Defender ATP), and [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP). AIR generates a verdict (*Malicious*, *Suspicious*, or *Clean*) for each piece of evidence following an investigation. 
 
 AIR enables your security operations team to:
 
