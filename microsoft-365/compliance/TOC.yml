@@ -34,7 +34,7 @@
           href: controlling-your-data-using-customer-key.md
         - name: Service encryption with Customer Key for Office 365 FAQ
           href: service-encryption-with-customer-key-faq.md
-    - name: Communication compliance
+    - name: Communication compliance (preview)
       items: 
         - name: Learn about communication compliance (preview)
           href: communication-compliance.md
