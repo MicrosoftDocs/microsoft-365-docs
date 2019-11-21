@@ -24,6 +24,9 @@ This timeline reflects a sample deployment.
 
 ![trainable-classifier-timeline](media/trainable-classifier-deployment-timeline_border.png)
 
+> [!TIP]
+> Opt-in is required the first time for trainable classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content.
+
 ## Seed content
 
 When you want a trainable classifier to independently and accurately identify an item as being in particular category of content, you first have to present it with many samples of the type of content that are in the category. This feeding of samples to the trainable classifier is known as *seeding*. Seed content is selected by a human and is judged to represent the category of content.
@@ -37,9 +40,6 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 > [!TIP]
 > For best results, have 10,000 items in your test sample set with an even distribution of positive and negative matches.
-
-> [!TIP]
-> Opt-in is required the first time for trainable classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content.
 
 ## How to create a trainable classifier
 
@@ -102,6 +102,8 @@ Once the trainable classifier has processed enough positive samples to build a p
 ![review items box](media/classifier-trainable-review-detail.png)
 
 19. Review *at least* 200 items.
+
+<!-- insert Analyze steps here-->
 
 20. Continue to review until the accuracy reaches at least 70% and the `Publish the classifier` status is `Ready to use`.
 
