@@ -26,8 +26,6 @@ Microsoft Managed Desktop offers a solution for several of the challenges facing
 Your end users will enjoy the latest versions of Windows 10 and Office 365 ProPlus apps (and more besides), using devices and software that are curated and rigorously tested for best performance and reliability. Also, you'll never have to worry about keeping any of this software up to date because that happens automatically, following a careful rollout sequence that is monitored every step of the way. And registered devices are monitored 24x7 for technical and security issues, so if something goes wrong, help will be on the way.
 
 
-Your end users will enjoy the latest versions of Windows 10 and Office 365 ProPlus apps (and more besides), using devices and software that are curated for best performance and reliability--and you'll never have to worry about keeping any of this software up to date because that happens automatically. And registered devices are monitored 24x7 for technical and security issues, so if something goes wrong, help will be on the way. 
-
 ## Unique to Microsoft Managed Desktop
 
 Of course there's nothing stopping you from obtaining and managing your own devices and Microsoft 365 deployments yourself. So what does Microsoft Managed Desktop offer beyond that?
