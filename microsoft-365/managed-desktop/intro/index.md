@@ -9,9 +9,22 @@ ms.localizationpriority: normal
 
 # What is Microsoft Managed Desktop?
 
-<!--from Overview-->
 
-Microsoft Managed Desktop is a cloud-based IT management and security monitoring subscription service for all or some devices in your enterprise or small-business environment. It brings together [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (including [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise and [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)), cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs. 
+Microsoft Managed Desktop is a cloud-based service that brings together [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (including [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise and [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) and adding these features:
+
+- End-user device deployment
+- IT service management and operations
+- Security monitoring and response
+- End-user support
+
+Microsoft Managed Desktop offers a solution for several of the challenges facing businesses and their people today:
+- The transition to the agile world of software as a service is daunting.
+- End users want an empowered, connected work experience.
+- Many current IT management and security processes are outdated, time-intensive, and expensive.
+- Businesses want to focus on what makes them uniquely successful, rather than maintaining digital infrastructure.
+
+Your end users will enjoy the latest versions of Windows 10 and Office 365 ProPlus apps (and more besides), using devices and software that are curated and rigorously tested for best performance and reliability. Also, you'll never have to worry about keeping any of this software up to date because that happens automatically, following a careful rollout sequence that is monitored every step of the way. And registered devices are monitored 24x7 for technical and security issues, so if something goes wrong, help will be on the way.
+
 
 Your end users will enjoy the latest versions of Windows 10 and Office 365 ProPlus apps (and more besides), using devices and software that are curated for best performance and reliability--and you'll never have to worry about keeping any of this software up to date because that happens automatically. And registered devices are monitored 24x7 for technical and security issues, so if something goes wrong, help will be on the way. 
 
@@ -49,7 +62,7 @@ We also monitor device health and provide you with insights about device perform
 
 
 ## Need more details?
-For more about the value of Microsoft Managed desktop, including customer stories, see [Microsoft Managed Desktop](https://aka.ms/mmd). You can find the latest news at the Microsoft Managed Desktop [blog](https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/bg-p/MicrosoftManagedDesktop).
+For more about the value of Microsoft Managed desktop, including customer stories, see [Microsoft Managed Desktop](https://aka.ms/mmd). Great places to get started with more are the [Roadmap](https://aka.ms/AA6jiam) and a downloadable [one-page summary](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/microsoft-managed-desktop-data-sheet-v20191114.pdf). You can find the latest news at the Microsoft Managed Desktop [blog](https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/bg-p/MicrosoftManagedDesktop).
 
 If Microsoft Managed Desktop seems right for your organization, you can delve into additional documentation that explains more about the service, how to prepare your organization to enroll, how to get started with the service, and ongoing operations thereafter, including how you and your end users can easily get help if needed. If you're already ready to come on board, start with contacting your [local account team](https://pages.email.office.com/contactmmd/).
 
