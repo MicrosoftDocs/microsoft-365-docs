@@ -21,8 +21,6 @@ ms.custom: autoir
 
 # Approve or reject actions following an automated investigation
 
-![Action Center](../images/air-actioncenter.png)
-
 During and after an automated investigation in Microsoft Threat Protection, depending on the results of the investigation, one or more actions might need approval to proceed. Such actions can be reviewed and approved (or rejected) [within the Action center](#review-a-pending-action-in-the-action-center) or [within an investigation details view](#review-a-pending-action-in-the-investigation-details-view). 
 
 > [!NOTE]
