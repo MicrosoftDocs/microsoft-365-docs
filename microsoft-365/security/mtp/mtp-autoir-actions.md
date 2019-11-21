@@ -1,5 +1,5 @@
 ---
-title: Approve or reject actions following automated investigation in Microsoft Threat Protection 
+title: Approve or reject actions following an automated investigation 
 description: Use the Action Center to manage actions related to automated investigation and response
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.product: eADQiWindows 10XVcnh
@@ -19,16 +19,16 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# Approve or reject actions following automated investigation in Microsoft Threat Protection
+# Approve or reject actions following an automated investigation
 
-During and after an automated investigation in Microsoft Threat Protection, depending on the results of the investigation, one or more actions might need approval to proceed. Such actions can be reviewed and approved (or rejected) within the Action center or within an investigation details view. 
+![Action Center](../images/air-actioncenter.png)
+
+During and after an automated investigation in Microsoft Threat Protection, depending on the results of the investigation, one or more actions might need approval to proceed. Such actions can be reviewed and approved (or rejected) [within the Action center](#review-a-pending-action-in-the-action-center) or [within an investigation details view](#review-a-pending-action-in-the-investigation-details-view). 
 
 > [!NOTE]
 > You must be a global administrator, security administrator, or security operator to approve or reject an action. Security readers can view, but not approve or reject, actions. 
 
 ## Review a pending action in the Action center
-
-![Action Center](../images/air-actioncenter.png)
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 
