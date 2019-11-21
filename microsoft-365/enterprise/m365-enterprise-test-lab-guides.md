@@ -3,7 +3,7 @@ title: "Microsoft 365 Enterprise Test Lab Guides"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/04/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -54,6 +54,10 @@ To demonstrate identity-related features and capabilities, see:
 - [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md)
   
    Enable and test pass-through authentication to an AD DS domain controller.
+
+- [Federated authentication](federated-identity-for-your-office-365-dev-test-environment.md)
+  
+   Enable and test federated authentication to an AD DS domain controller.
 
 - [Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md)
   
