@@ -61,7 +61,7 @@ Investigations are done on devices, user accounts, and email content by correlat
 |User accounts (also referred to as user identities)     |[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)         |
 |Email content (files and messages in mailboxes)     |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-While an investigation is running, any other related alerts that are generated are added to the investigation until it completes. If the same threat is seen on other entities (such as identities, files, processes, services, drivers, etc.), those entities are added to the investigation. If an incriminated entity is seen in elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run.
+While an investigation is running, any other related alerts that are generated are added to the investigation until it completes. In cases where the same threat is seen on other entities (such as identities, files, processes, services, drivers, etc.), those entities are added to the investigation. If an incriminated entity is seen in elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run.
 
 Following each investigation, AIR generates a verdict (*Malicious*, *Suspicious*, or *Clean*) for each piece of evidence.
 
