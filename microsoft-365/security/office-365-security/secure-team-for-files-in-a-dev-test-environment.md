@@ -57,7 +57,7 @@ First, create two groups for a typical organization with the Azure portal.
       
 5. Click **Create**, and then close the **Group** blade.
     
-6.	Repeat steps 3-5 for a new following group named **Marketing staff**.
+6.	Repeat steps 3-5 for a new group named **Marketing staff**.
     
 Next, you configure automatic licensing so that members of your groups are automatically assigned licenses for your Office 365 and EMS subscriptions.
   
