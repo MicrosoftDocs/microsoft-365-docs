@@ -1,6 +1,6 @@
 ---
 title: Investigate incidents in Microsoft Threat Protection
-description: Analyze incidents related to machines, users, and mailboxes.
+description: Analyze incidents related to devices, users, and mailboxes.
 keywords: incident, incidents, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -34,21 +34,21 @@ Investigate the alerts that affect your network, understand what they mean, and 
 1. Select an incident from the incident queue. <BR> This opens a side panel and gives a preview of important information such as status, severity, category, and the impacted entities.
  ![Image of incident side panel](../images/incident-side-panel.png)
 
-2. Select **Open incident page**. <BR> This opens the incident page where you'll find more information incident details, comments and actions, tabs (alerts, machines, users, investigations, evidence).
+2. Select **Open incident page**. <BR> This opens the incident page where you'll find more information incident details, comments and actions, tabs (alerts, devices, users, investigations, evidence).
 
    ![Image of incident details](../images/indicent-details.png)
 
     
     Clicking the **Linked by** field shows an elaborate explanation for the reason the alerts were correlated. 
 
-3. Review the alerts, machines, users, other entities involved in the incident.
+3. Review the alerts, devices, users, other entities involved in the incident.
 
 
 ## Alerts 
 You can view all the alerts related to the incident and other information about them such as severity, entities that were involved in the alert, the detection source of the alerts (Azure ATP, Microsoft Defender ATP , Office  365 ATP) and the reason they were linked together. 
 
-## Machines 
-The machines tab lists all the devices where alerts related to the incident are seen as reported by Microsoft Defender ATP and Azure ATP. 
+## Devices 
+The devices tab lists all the devices where alerts related to the incident are seen as reported by Microsoft Defender ATP and Azure ATP. 
 
 Selecting the name of the machine where the attack was conducted navigates you to its Machine page where you can see alerts that were triggered on it and related events provided to ease investigation. 
 
@@ -70,8 +70,8 @@ Select **Investigations** to see all the automated investigations that were trig
 
 Select an investigation to navigate to the Investigation details page, which displays the following:
 - Alert(s) that triggered the automated investigation
-- Impacted users and machines <br>
-  If indicators are found on additional machines, these additional machines will be listed as well.
+- Impacted users and devices <br>
+  If indicators are found on additional devices, these additional devices will be listed as well.
 - List of evidences <br> The entities found and analyzed, such as files, processes, services, drivers, and network addresses. These entities are analyzed for possible relationships to the alert and rated as benign or malicious.
 - Threats found <br> Known threats that are found during the investigation.
 
