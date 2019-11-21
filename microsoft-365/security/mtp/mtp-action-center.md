@@ -21,9 +21,19 @@ ms.custom: autoir
 
 # The Action center in Microsoft Threat Protection
 
+## Overview of the Action center
+
 The Action center provides a view of current and past investigations across identities, devices, and mailboxes. The Action center not only enables your security operations team to operate more effectively and efficiently, it also provides a more comprehensive view of Microsoft Threat Protection at work for your organization. 
 
 Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization’s security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. This provides a "single pane of glass" experience for both approving pending remediation actions and viewing an audit log of already approved remediation actions across Microsoft Threat Protection. 
+
+The following table lists remediation actions that are currently supported in the Action center: 
+
+|Endpoints remediation actions  |Email remediation actions  |
+|---------|---------|
+|Quarantine file<br/>Remove registry key<br/>Kill process <br/>Stop service <br/>Remove registry key <br/>Disable driver <br/>Remove scheduled task      |Soft delete emails<br/>Block URL (time-of-click)<br/>Turn off external mail forwarding<br/>Soft delete emails          |
+
+
 
 > [!NOTE]
 > You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. To learn more, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
