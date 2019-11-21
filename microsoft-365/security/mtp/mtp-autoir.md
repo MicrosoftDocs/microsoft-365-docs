@@ -29,7 +29,7 @@ Imagine having a virtual analyst in your Tier 1 / Tier 2 security operations tea
 
 ## Automated investigation and remediation (AIR)
 
-AIR enables your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents. With AIR, you can reduce the cost of dealing with investigation and remediation activities and get the most out of your threat protection suite. AIR takes steps that include:
+AIR enables your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents. With AIR, you can reduce the cost of dealing with investigation and remediation activities and get the most out of your threat protection suite. AIR helps your security operations team by:
 
 1.	Determining whether a threat requires action;
 
@@ -45,13 +45,13 @@ An automated investigation begins when an alert is triggered, and an incident is
 
 Once an automated investigation is triggered, the process begins immediately. In line with security operations best practices, an automated investigation typically includes the following steps:
 
-1. Gather information about the type of threat and where it came from
+1. Gather information about the type of threat and where it came from.
 
-2. Identify who and what devices are affected by the threat
+2. Identify who and what devices are affected by the threat.
 
-3. Find out whether and where other instances of the threat exist in your work environment, and what other investigations should be done
+3. Find out whether and where other instances of the threat exist in your work environment, and what other investigations should be done.
 
-4. Determine verdicts and remediation actions
+4. Determine verdicts and remediation actions.
 
 Investigations are done on devices, user accounts, and email content by correlating signals across Microsoft Threat Protection services, as listed in the following table:
 
