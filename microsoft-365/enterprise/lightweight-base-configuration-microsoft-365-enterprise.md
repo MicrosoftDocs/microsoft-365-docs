@@ -114,11 +114,11 @@ You might want to print this article to record the specific information that you
 
 Record these values:
   
-- Office 365 global administrator name: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (from step 9 of Phase 2)
+- Office 365 global administrator name: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (from step 6 of Phase 1)
     
     Also record the password for this account in a secure location.
     
-- Your trial subscription organization name: ![](./media/Common-Images/TableLine.png) (from step 4 of Phase 2)
+- Your trial subscription organization name: ![](./media/Common-Images/TableLine.png) (from step 4 of Phase 1)
     
 - To list the accounts for User 2, User 3, User 4, and User 5, run the following command from the Windows Azure Active Directory Module for Windows PowerShell prompt:
     
