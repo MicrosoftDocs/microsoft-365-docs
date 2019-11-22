@@ -75,24 +75,24 @@ Primarily for technical and business decision makers, these topics detail the di
 **Get ready for enrollment**
 These topics describe the steps you'll need to take in your organization to prepare for enrollment, including checking that your environment meets key prerequisites, configuring networks, setting up certificates, and preparing your apps.
 
-- [Prerequisites for Microsoft Managed Desktop](get-ready/prerequisites.md)
-- [Prepare network](get-ready/network.md)
-- [Prepare on-premises resources access for Microsoft Managed Desktop](get-ready/authentication.md)
-- [Prepare mapped drives for Microsoft Managed Desktop](get-ready/mapped-drives.md)
-- [Prepare certificates and network profiles for Microsoft Managed Desktop](get-ready/certs-wifi-lan.md)
-- [Prepare apps](get-ready/apps.md)
+- [Prerequisites for Microsoft Managed Desktop](../get-ready/prerequisites.md)
+- [Network configuration for Microsoft Managed Desktop](../get-ready/network.md)
+- [Prepare on-premises resources access for Microsoft Managed Desktop](../get-ready/authentication.md)
+- [Prepare mapped drives for Microsoft Managed Desktop](../get-ready/mapped-drives.md)
+- [Prepare certificates and network profiles for Microsoft Managed Desktop](../get-ready/certs-wifi-lan.md)
+- [Apps in Microsoft Managed Desktop](../get-ready/apps.md)
 
 **Get started**
 Once you're ready to enroll, this section includes the steps to follow to actually join the service, obtain and set up devices, prep your end users, and deploy apps.
 
-- [Add and verify admin contacts in the Admin portal](get-started/add-admin-contacts.md)
-- [Adjust conditional access](get-started/conditional-access.md)
-- [Assign licenses](get-started/assign-licenses.md)
-- [Deploy Intune Company Portal](get-started/company-portal.md)
-- [Enable Enterprise State Roaming](get-started/enterprise-state-roaming.md)
-- [Set up devices](get-started/set-up-devices.md)
-- [Get your users ready to use devices](get-started/get-started-devices.md)
-- [Deploy apps](get-started/deploy-apps.md)
+- [Add and verify admin contacts in the Admin portal](../get-started/add-admin-contacts.md)
+- [Adjust conditional access](../get-started/conditional-access.md)
+- [Assign licenses](../get-started/assign-licenses.md)
+- [Install Intune Company Portal on on devices](../get-started/company-portal.md)
+- [Enable Enterprise State Roaming](../get-started/enterprise-state-roaming.md)
+- [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md)
+- [Get your users ready to use devices](../get-started/get-started-devices.md)
+- [Deploy apps to devices](../get-started/deploy-apps.md)
 
 **Working with Microsoft Managed Desktop**
 This section includes information about your day-to-day life with the service, such as how your IT admins can get support if needed, how your end users get support, managing your apps once deployed, and how to work the customizable settings on devices.
