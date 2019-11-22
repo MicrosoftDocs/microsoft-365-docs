@@ -24,13 +24,15 @@ Follow these steps to set up and use insider risk management in your Microsoft 3
 
 ## Step 1 (required): Enable permissions for insider risk management
 
-Depending on your compliance management role, you'll need specific roles to configure and manage insider risk management features. There are three roles in the **Insider Risk Management** role group:
+Depending on your compliance management role, you'll need specific roles to configure and manage insider risk management features. 
 
-| Role | Role permissions |
+There are three roles in the **Insider Risk Management** role group:
+
+| **Role** | **Role permissions** |
 | ---- | ---------------- |
-| Insider Risk Management Admins | Create, read, update, and delete insider risk management policies <br> Create, read, update, and delete insider risk management permissions and roles |
-| Insider Risk Management Analysts | Access to all insider risk management alerts, cases, and notices |
-| Insider Risk Management Investigators | Access to all insider risk management alerts, cases, notices, and the Content Explorer for all cases |
+| **Insider Risk Management Admins** | Create, read, update, and delete insider risk management policies <br> Create, read, update, and delete insider risk management permissions and roles |
+| **Insider Risk Management Analysts** | Access to all insider risk management alerts, cases, and notices |
+| **Insider Risk Management Investigators** | Access to all insider risk management alerts, cases, notices, and the Content Explorer for all cases |
 
 To continue with these configuration steps, your tenant administrators must assign you the Insider Risk Management Admins role.
 
@@ -40,8 +42,8 @@ Before you start using insider risk management, you may want to create security 
 
 At a minimum, consider creating the following insider risk management groups:
 
-- **Insider risk analysts**: Employees who will triage alerts, open new insider risk management cases, and take actions on cases.
-- **Insider risk investigators**: Employees who will triage alerts, open new insider risk management cases, conduct investigative reviews of captured content, and take actions on cases.
+- **Insider risk analysts**: Employees who triage alerts, open new insider risk management cases, and take actions on cases.
+- **Insider risk investigators**: Employees who triage alerts, open new insider risk management cases, conduct investigative reviews of captured content, and take actions on cases.
 
 ## Step 3 (optional): Configure the Microsoft 365 human resources data connector
 
