@@ -23,6 +23,8 @@ If your organization is using a security incident and event management (SIEM) se
 
 The Office 365 Activity Management API retrieves information about user, admin, system, and policy actions and events from your organization's Office 365 and Azure Active Directory activity logs. The [Office 365 Advanced Threat Protection schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) works with Advanced Threat Protection, so if your organization has the Office 365 Advanced Threat Protection Plan 1 or Plan 2 or Office 365 E5, you can still use that same API for your SIEM server integration. 
 
+As part of our recent updates, we have also added investigation events from Automated incident response from Office 365 ATP Plan 2  within Management API. In addition to including data about core investigation details such as ID, name and status, it also contains high-level information about investigation actions and entities.   
+
 The SIEM server or other similar system should poll the **audit.general** workload to access detection events. To learn more see [Get started with Office 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). In addition, the following values of **AuditLogRecordType** are relevant for Office 365 ATP events:
 
 ### Enum: AuditLogRecordType - Type: Edm.Int32
@@ -34,6 +36,8 @@ The SIEM server or other similar system should poll the **audit.general** worklo
 |28|ThreatIntelligence|Phishing and malware events from Exchange Online Protection and Office 365 Advanced Threat Protection.|
 |41|ThreatIntelligenceUrl|ATP Safe Links time-of-block and block override events from Office 365 Advanced Threat Protection.|
 |47|ThreatIntelligenceAtpContent|Phishing and malware events for files in SharePoint Online, OneDrive for Business, and Microsoft Teams from Office 365 Advanced Threat Protection.|
+|64|AirInvestigation|Automated incident response events which include investigation details and relevant artifacts from Office 365 Advanced Threat Protection Plan 2.|
+
 
 > [!IMPORTANT]
 > You must be an Office 365 global administrator or have the security administrator role assigned for the Security & Compliance Center to set up SIEM integration with Office 365 Advanced Threat Protection.<br/>Audit logging must be turned on for your Office 365 environment. To get help with this, see [Turn Office 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
@@ -41,6 +45,8 @@ The SIEM server or other similar system should poll the **audit.general** worklo
 ## Related topics
 
 [Office 365 Threat Investigation and Response](office-365-ti.md)
+
+[Automated incident response (AIR) in Office 365](automated-investigation-response-office.md)
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)
 
