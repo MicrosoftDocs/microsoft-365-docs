@@ -805,37 +805,37 @@ Here are some tips for searching for Exchange admin activities when searching th
 
 The following table lists the user and admin activities in Microsoft Forms that are logged in the Office 365 audit log. Microsoft Forms is a forms/quiz/survey tool used to collect data for anlaysis. 
 
-Where noted below in the descriptions, some operations contain additional activitiy paramaters.
+Where noted below in the descriptions, some operations contain additional activity parameters.
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
-|Created Comment|CreateComment|Form owner adds comment or score to a quiz.|
-|Created Form|CreateForm|Form owner creates a new form.|
-|Edited Form|EditForm|Form owner edits a form such as creating, removing, or editing a question. <br><br>Property EditOperation:string indicates the edit operation name. These include: CreateQuestion, CreateQuestionChoice, DeleteQuestion, DeleteQuestionChoice, DeleteFormImage, DeleteQuestionImage, UpdateQuestion, UpdateQuestionChoice, UploadFormImage/Bing/Onedrive, UploadQuestionImage, ChangeTheme.  <br><br>Most operation names are self-explanatory. <br><br>FormImage includes any place within Forms that user can upload image, such as in a query or as a background theme.|
-|Moved Form|MoveForm|Form owner moves a form. <br><br>Property DestinationUserId:string indicates the user ID of the person who moved the form. Property NewFormId:string is the new ID for the newly copied form|
-|Deleted Form|DeleteForm|Form owner deletes a form. This includes SoftDelete (delete option used and form now in recycle bin) and HardDelete (emptied recycle bin).|
-|Viewed Form (design time)|ViewForm|Form owner opens an existing form for editing.|
-|Previewed Form|PreviewForm|Form owner Previews a form using Preview function.|
-|Exported Form|ExportForm|Form owner exports results to Excel. <br><br>Property ExportFormat:string incidates if the excel file is Download or Online.|
-|Allowed Share Form For Copy|AllowShareFormForCopy|Form owner createst a template link to share the form with other users.  Event logged when form owner clicks to generate template url.|
-|Disallowed Share Form For Copy|DisallowShareFormForCopy|Form owner deletes template link.|
-|Added Form Coauthor|AddFormCoauthor|User uses a collaboration link to help design for/view responses.  Logged when a user uses a collab URL (not when collab URL is first generated).|
-|Removed Form Coauthor|RemoveFormCoauthor|Form owner deletes collaboration link.|
-|Viewed Runtime Form|ViewRuntimeForm|User has opened a to view. Logged regardles if the user submits a response or not.|
-|Created Response|CreateResponse|Analogous to recieviing a new response.  A User has submitted a response to a form. <br><br>Property ResponseId:string and Property ResponderId:string incidate which result is being viewed. <br><br>For anonymous responder, the ResponderId property will be null.|
-|Updated Response|UpdateResponse|Form owner has updated a comment or score on a quiz. <br><br>Property ResponseId:string and Property ResponderId:string incidate which result is being viewed. <br><br>For anonymous responder, the ResponderId property will be null.|
-|Deleted All Responses|DeleteAllResponses|Form owner deletes all response data.|
+|Created comment|CreateComment|Form owner adds comment or score to a quiz.|
+|Created form|CreateForm|Form owner creates a new form.|
+|Edited form|EditForm|Form owner edits a form such, as creating, removing, or editing a question. <br><br>Property EditOperation:string indicates the edit operation name. Possible operations are: CreateQuestion, CreateQuestionChoice, DeleteQuestion, DeleteQuestionChoice, DeleteFormImage, DeleteQuestionImage, UpdateQuestion, UpdateQuestionChoice, UploadFormImage/Bing/Onedrive, UploadQuestionImage, and ChangeTheme.  <br><br>Most operation names are self-explanatory. <br><br>FormImage includes any place within Forms that user can upload an image, such as in a query or as a background theme.|
+|Moved form|MoveForm|Form owner moves a form. <br><br>Property DestinationUserId:string indicates the user ID of the person who moved the form. Property NewFormId:string is the new ID for the newly copied form.|
+|Deleted form|DeleteForm|Form owner deletes a form. This includes SoftDelete (delete option used and form moved to recycle bin) and HardDelete (Recycle bin is emptied).|
+|Viewed form (design time)|ViewForm|Form owner opens an existing form for editing.|
+|Previewed form|PreviewForm|Form owner previews a form using the Preview function.|
+|Exported form|ExportForm|Form owner exports results to Excel. <br><br>Property ExportFormat:string incidates if the Excel file is Download or Online.|
+|Allowed share form for copy|AllowShareFormForCopy|Form owner creates a template link to share the form with other users. This event is logged when the form owner clicks to generate template URL.|
+|Disallowed share form for copy|DisallowShareFormForCopy|Form owner deletes template link.|
+|Added form co-author|AddFormCoauthor|A user uses a collaboration link to help design for/view responses. This event is logged when a user uses a collab URL (not when collab URL is first generated).|
+|Removed form co-author|RemoveFormCoauthor|Form owner deletes a collaboration link.|
+|Viewed response page|ViewRuntimeForm|User has opened a response page to view. This event is logged regardless of whether the user submits a response or not.|
+|Created response|CreateResponse|Similar to recieviing a new response.  A user has submitted a response to a form. <br><br>Property ResponseId:string and Property ResponderId:string incidate which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
+|Updated response|UpdateResponse|Form owner has updated a comment or score on a quiz. <br><br>Property ResponseId:string and Property ResponderId:string incidate which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
+|Deleted all responses|DeleteAllResponses|Form owner deletes all response data.|
 |Deleted Response|DeleteResponse|Form owner deletes one response. <br><br>Property ResponseId:string incidates the response being deleted.|
-|Viewed Responses|ViewResponses|Form owner views aggregated list of responses. <br><br>Property ViewType:string indicates whether they are viewing Detail or Aggregate|
-|Viewed Response|ViewResponse|Form owner views a particular response. <br><br>Property ResponseId:string and Property ResponderId:string incidate which result is being viewed. <br><br>For anonymous responder, the ResponderId property will be null.|
-|Created Summary Link|GetSummaryLink|Form owner creates summary results link to share results.|
-|Deleted Summary Link|DeleteSummaryLink|Form owner deletes summary results link.|
-|Updated Phishing Status|UpdatePhishingStatus|Logged whenever the internal security status detailed value has changed, regardless of whether this changed the final Security State (eg form is now Closed or Opened). This means you may see duplicate events without a final Security State change.|
-|Sent Forms Pro Invitation|ProInvitation|User clicks to activate Pro trial.|
-|Updated Form Setting|UpdateFormSetting|Form owner updates a form setting. <br><br>Property FormSettingName:string indicates the setting name and new value|
-|Updated User Setting|UpdateUserSetting|Form owner updates a user setting. <br><br>Property UserSettingName:string indicates the setting name and new value|
-|Listed Forms|ListForms|Form owner is viewing a list of forms. <br><br>Property ViewType:string incidates which view they are looking at: All Forms, Shared with Me, Group Forms|
-|Submitted Response|SubmitResponse|A user submits a response to a form. <br><br>Property IsInternalForm:boolean incidates if the responder is within the same organization as the form owner.|
+|Viewed responses|ViewResponses|Form owner views the aggregated list of responses. <br><br>Property ViewType:string indicates whether form owner is viewing Detail or Aggregate|
+|Viewed response|ViewResponse|Form owner views a particular response. <br><br>Property ResponseId:string and Property ResponderId:string incidate which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
+|Created summary link|GetSummaryLink|Form owner creates summary results link to share results.|
+|Deleted summary link|DeleteSummaryLink|Form owner deletes summary results link.|
+|Updated form phishing status|UpdatePhishingStatus|This event is logged whenever the internal security status detailed value has changed, regardless of whether this changed the final Security State (for example, form is now Closed or Opened). This means you may see duplicate events without a final Security State change.|
+|Sent Forms Pro invitation|ProInvitation|User clicks to activate a Pro trial.|
+|Updated form setting|UpdateFormSetting|Form owner updates a form setting. <br><br>Property FormSettingName:string indicates the setting's name and new value.|
+|Updated user setting|UpdateUserSetting|Form owner updates a user setting. <br><br>Property UserSettingName:string indicates the setting's name and new value|
+|Listed forms|ListForms|Form owner is viewing a list of forms. <br><br>Property ViewType:string incidates which view the form owner is looking at: All Forms, Shared with Me, or Group Forms|
+|Submitted response|SubmitResponse|A user submits a response to a form. <br><br>Property IsInternalForm:boolean incidates if the responder is within the same organization as the form owner.|
 ||||
 
 ## Frequently asked questions
