@@ -26,7 +26,9 @@ Managing incidents is critical in ensuring that threats are contained and addres
 
 You can manage incidents by selecting an incident from the **Incidents queue**. 
 
-You can edit the name of an incident, set its classification, resolve it, or assign the incident to yourself. 
+You can edit the name of an incident, resolve it, set its classification and determination. You can also assign the incident to yourself, add incident tags and comments.
+
+In cases where while investigating you would like to move alerts from one incident to another you can also do so from the Alerts tab, thus creating a larger or smaller incident that include all relevant alerts.
 
 ## Edit incident name
 By default, an incident is assigned a number. You can modify the incident name to better align with your preferred naming convention.
@@ -40,10 +42,10 @@ You can categorize incidents (as **Active**, or **Resolved**) by changing their 
 
 For example, your SOC analyst can review the urgent **Active** incidents for the day, and decide to assign them to herself for investigation.
 
-Alternatively, your SOC analyst might set the incident as **Resolved** if the incident has been remediated. 
+Alternatively, your SOC analyst might set the incident as **Resolved** if the incident has been remediated. Resolving an incident will automatically close all alerts that are part of the incident and still open. 
 
-### Classification
-You can choose not to set a classification, or decide to specify whether an incident is true or false. Doing so helps the team see patterns and learn from them.
+### Classification and determination
+You can choose not to set a classification, or decide to specify whether an incident is true or false. Doing so helps the team see patterns and learn from them. 
 
 ### Add comments
 You can add comments and view historical events about an incident to see previous changes made to it.
@@ -52,4 +54,6 @@ Whenever a change or comment is made to an alert, it is recorded in the Comments
 
 Added comments instantly appear on the pane.
 
+### Add incident tags
+You can add custom tags to an incident, for example to flag a group of incidents with a common characteristics. You can later filter the incidents queue for all incidents that contain a specific tag.
 
