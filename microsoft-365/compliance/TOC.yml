@@ -21,17 +21,17 @@
     - name: Insider risk management (preview)
       items:
         - name: Learn about insider risk management (preview)
-        - href: insider-risk-management.md
+          href: insider-risk-management.md
         - name: Get started with insider risk management (preview)
-        - href: insider-risk-management-configure.md
+          href: insider-risk-management-configure.md
         - name: Create and manage insider risk policies (preview)
-        - href: insider-risk-management-policies.md
+          href: insider-risk-management-policies.md
         - name: Investigate insider risk alerts (preview)
-        - href: insider-risk-management-alerts.md
+          href: insider-risk-management-alerts.md
         - name: Take action on insider risk cases (preview)
-        - href: insider-risk-management-cases.md
+          href: insider-risk-management-cases.md
         - name: Create insider risk notices (preview)
-        - href: insider-risk-management-notices.md
+          href: insider-risk-management-notices.md
     - name: Protect user and device access
       href: protect-access-to-data-and-services.md
     - name: Customer Lockbox
