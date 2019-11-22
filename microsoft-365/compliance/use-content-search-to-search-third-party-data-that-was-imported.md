@@ -24,7 +24,7 @@ For more information about importing third-party data and a list of the third-pa
 
 To search (or place on hold) any type of third-party data that you've imported to Office 365, you can use the  `kind:externaldata` message property-value pair in the keyword box for a Content Search or when creating a query-based hold. For example, to search for items imported from any third-party data source and contain the word "contoso" in the Subject property of the imported item, you would use the following query: 
   
-```
+```powershell
 kind:externaldata AND subject:contoso
 ```
 
@@ -36,13 +36,13 @@ When creating queries to search and hold third-party data, you can also use cond
 
 Instead of searching all types of third-party data, you can create queries that only search for a specify type of third-party data by using the following message *property:value* pair in the keyword box for a Content Search:
   
-```
+```powershell
 itemclass:ipm.externaldata.<third-party data type>* 
 ```
 
 For example, to search Facebook data that contains the word "contoso" in the Subject property, you would use the following query:
   
-```
+```powershell
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 

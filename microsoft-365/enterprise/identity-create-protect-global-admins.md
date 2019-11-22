@@ -42,7 +42,7 @@ See [Protect your Office 365 global administrator accounts](https://docs.microso
 The results of this section are:
 
 - The only user accounts in your subscription that have the global admin role are the dedicated global administrator accounts. Verify this with the following Azure Active Directory PowerShell for Graph command: 
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | Where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 - All other user accounts that manage your subscription services have admin roles assigned that are associated with their job responsibilities.

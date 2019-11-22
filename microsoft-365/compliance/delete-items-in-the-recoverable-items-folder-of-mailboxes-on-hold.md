@@ -66,7 +66,7 @@ Additionally, you need to get the mailbox client access settings so you can temp
     
 2. Run the following command to get information about single item recovery and the deleted item retention period.
 
-    ```
+    ```powershell
     Get-Mailbox <username> | FL SingleItemRecoveryEnabled,RetainDeletedItemsFor
     ```
 
@@ -74,7 +74,7 @@ Additionally, you need to get the mailbox client access settings so you can temp
     
 3. Run the following command to get the mailbox access settings for the mailbox. 
     
-    ```
+    ```powershell
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
@@ -82,7 +82,7 @@ Additionally, you need to get the mailbox client access settings so you can temp
     
 4. Run the following command to get information about the holds and Office 365 retention policies applied to the mailbox.
     
-    ```
+    ```powershell
     Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
     ```
 
@@ -92,9 +92,10 @@ Additionally, you need to get the mailbox client access settings so you can temp
   
 5. Run the following command to get information about any organization-wide Office 365 retention policies. 
 
-    ```
+    ```powershell
     Get-OrganizationConfig | FL InPlaceHolds
     ```
+   
    If your organization has any organization-wide Office 365 retention policies, you'll have to exclude the mailbox from these policies in Step 3.
 
    > [!TIP]
@@ -102,7 +103,7 @@ Additionally, you need to get the mailbox client access settings so you can temp
   
 6. Run the following command to get the current size and total number of items in folders and subfolders in the Recoverable Items folder in the user's primary mailbox. 
 
-    ```
+    ```powershell
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
@@ -133,19 +134,19 @@ Perform the following steps in Exchange Online PowerShell.
     ```   
     Set-CASMailbox <username> -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
     ```
-   
+
    > [!NOTE]
     > It might take up to 60 minutes to disable all client access methods to the mailbox. Note that disabling these access methods won't disconnect the mailbox owner they're currently signed in. If the owner isn't signed in, then they won't be able to access their mailbox after these access methods are disabled. 
   
 2. Run the following command to increase the deleted item retention period the maximum of 30 days. This assumes that the current setting is less than 30 days. 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 30
     ```
 
 3. Run the following command to disable single item recovery.
     
-    ```
+    ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $false
     ```
 
@@ -154,7 +155,7 @@ Perform the following steps in Exchange Online PowerShell.
   
 4. Run the following command to prevent the Managed Folder Assistant from processing the mailbox. As previously explained, you can disable the Managed Folder Assistant only if an Office 365 retention policy with a Preservation Lock is not applied to the mailbox. 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $true
     ```
 
@@ -169,7 +170,7 @@ The last step before you can delete items from the Recoverable Items folder is t
   
 Run the following command in Exchange Online PowerShell to remove a Litigation Hold from the mailbox.
 
-```
+```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $false
 ```
 
@@ -181,27 +182,27 @@ Set-Mailbox <username> -LitigationHoldEnabled $false
   
 Run the following command in Exchange Online PowerShell to identify the In-Place Hold that's placed on the mailbox. Use the GUID for the In-Place Hold that you identified in Step 1. 
 
-```
+```powershell
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 ```
-   
+
 After you identify the In-Place Hold, you can use the Exchange admin center (EAC) or Exchange Online PowerShell to remove the mailbox from the hold. For more information, see [Create or remove an In-Place Hold](https://go.microsoft.com/fwlink/?linkid=852668).
   
  ### Office 365 retention policies applied to specific mailboxes
   
 Run the following command in [Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) to identify the Office 365 retention policy that is applied to the mailbox. Use the GUID (not including the  `mbx` or  `skp` prefix) for the retention policy that you identified in Step 1. 
 
-```
+```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
-   
+
 After you identify the retention policy, go to the **Date governance** \> **Retention** page in the Security & Compliance Center, edit the retention policy that you identified in the previous step, and remove the mailbox from the list of recipients that are included in the retention policy. 
   
  ### Organization-wide Office 365 retention policies
   
 Organization-wide and Exchange-wide Office 365 retention policies are applied to every mailbox in the organization. They are applied at the organization level (not the mailbox level) and are returned when you run the **Get-OrganizationConfig** cmdlet in Step 1. Run the following command in [Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) to identify the organization-wide Office 365 retention policies. Use the GUID (not including the  `mbx` prefix) for the organization-wide retention policies that you identified in Step 1. 
 
-```
+```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
@@ -213,7 +214,7 @@ Whenever a user applies a label that's configured to retain content or retain an
 
 To view the value of the *ComplianceTagHoldApplied* property, run the following command in Exchange Online PowerShell:
 
-```
+```powershell
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
@@ -225,15 +226,15 @@ For more information about labels, see [Overview of Office 365 labels](labels.md
   
 Run the following commands in [Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) to identify the hold associated with an eDiscovery case that's applied to the mailbox. Use the GUID (not including the  `UniH` prefix) for the eDiscovery hold that you identified in Step 1. Note that the second command displays the name of the eDiscovery case the hold is associated with; the third command displays the name of the hold. 
   
-```
+```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
 ```
 
-```
+```powershell
 Get-ComplianceCase $CaseHold.CaseId | FL Name
 ```
 
-```
+```powershell
 $CaseHold.Name
 ```
 
@@ -245,7 +246,7 @@ After any type of hold is removed from a mailbox, the value of the *DelayHoldApp
 
 Before you can delete items in Step 5, you have to remove the delay hold from the mailbox. First, determine if the delay hold is applied to the mailbox by running the following command in Exchange Online PowerShell:
 
-```
+```powershell
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
@@ -253,9 +254,10 @@ If the value of the *DelayHoldApplied* property is set to **False**, a delay hol
 
 If the value of the *DelayHoldApplied* property is set to **True**, run the following command to remove the delay hold:
 
-```
+```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
+
 Note that you must be assigned the Legal Hold role in Exchange Online to use the *RemoveDelayHoldApplied* parameter.
 
 ## Step 5: Delete items in the Recoverable Items folder
@@ -279,7 +281,7 @@ The following examples show the command syntax for each of these options. These 
 
 This example copies all items in the user's Recoverable Items folder to a folder in your organization's Discovery Search Mailbox. This lets you review the items before you permanently delete them.
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>"
 ```
 
@@ -289,15 +291,15 @@ In the previous example, it isn't required to copy items to the Discovery Search
 
 This example copies all items in the user's Recoverable Items folder to a folder in your organization's Discovery Search Mailbox and then deletes the items from the user's Recoverable Items folder.
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>" -DeleteContent
 ```
- 
+
 ### Example 3
 
 This example deletes all items in the user's Recoverable Items folder, without copying them to a target mailbox. 
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -DeleteContent
 ```
 
@@ -307,38 +309,38 @@ Here are a few examples of using the  *SearchQuery*  parameter to find specific 
   
 This example returns messages that contain a specific phrase in the Subject field.
   
-```
+```powershell
 SearchQuery 'subject:"MAIL_BOX VALIDATION/UPGRADE!!!"' 
 ```
 
 This example returns messages that were sent within the specified date range.
   
-```
+```powershell
 SearchQuery 'sent>=06/01/2016 AND sent<=09/01/2016'
 ```
- 
+
 This example returns messages that were sent to the specified person.
 
-```
+```powershell
 SearchQuery 'to:garthf@alpinehouse.com'
 ```
-   
+
 ### Verify that items were deleted
 
 To verify that you've successfully deleted items from the Recoverable Items folder of a mailbox, use **Get-MailboxFolderStatistics** cmdlet in Exchange Online PowerShell to check the size and number of items in Recoverable Items folder. You can compare these statistics with the ones you collected in Step 1. 
   
 Run the following command in to get the current size and total number of items in folders and subfolders in the Recoverable Items folder in the user's primary mailbox. 
   
-```
+```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
-   
+
 Run the following command to get the size and total number of items in folders and subfolders in the Recoverable Items folder in the user's archive mailbox. 
 
-```
+```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
-  
+
 ## Step 6: Revert the mailbox to its previous state
 
 The final step is to revert the mailbox back to its previous configuration. This means resetting the properties that you changed in Step 2 and re-applying the holds that you removed in Step 3. This includes:
@@ -360,29 +362,29 @@ Perform the following steps (in the specified sequence) in Exchange Online Power
   
 1. Run the following command to change the deleted item retention period back to its original value. This assumes that the previous setting is less than 30 days; for example 14 days. 
     
-    ```
+    ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 14
     ```
-   
+
 2. Run the following command to re-enable single item recovery.
    
-    ```
+    ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $true
     ```
 
 3. Run the following command to re-enable all client access methods to the mailbox.
     
-    ```
+    ```powershell
     Set-CASMailbox <username> -EwsEnabled $true -ActiveSyncEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
     ```
-   
+
 4. Re-apply the holds that you removed in Step 3. Depending on the type of hold, use one of the following procedures.
     
     **Litigation Hold**
     
     Run the following command to re-enable a Litigation Hold for the mailbox.
     
-    ```
+    ```powershell
     Set-Mailbox <username> -LitigationHoldEnabled $true
     ```
 
@@ -404,20 +406,20 @@ Perform the following steps (in the specified sequence) in Exchange Online Power
     
 5. Run the following command to allow the Managed Folder Assistant to process the mailbox again. As previously stated, we recommend that you wait 24 hours after re-applying a hold or Office 365 retention policy (and verifying that it's in place) before you re-enable the Managed Folder Assistant. 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $false
     ```
-   
+
 6. To verify that the mailbox has been reverted back to its previous configuration, you can run the following commands and then compare the settings to the ones that you collected in Step 1.
 
-    ```
+    ```powershell
     Get-Mailbox <username> | FL ElcProcessingDisabled,InPlaceHolds,LitigationHoldEnabled,RetainDeletedItemsFor,SingleItemRecoveryEnabled
     ```
 
-    ```
+    ```powershell
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
-  
+
 ## More information
 
 Here's a table that describes how to identify different types of holds based on the values in the  *InPlaceHolds*  property when you run the **Get-Mailbox** or **Get-OrganizationConfig** cmdlets. For more detailed information, see [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
