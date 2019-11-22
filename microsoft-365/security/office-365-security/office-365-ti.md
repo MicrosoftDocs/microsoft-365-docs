@@ -3,7 +3,7 @@ title: "Office 365 threat investigation and response"
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/23/2019
+ms.date: 11/15/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -27,13 +27,13 @@ Threat investigation and response capabilities in [Office 365 Advanced Threat Pr
     
 - Providing insights and knowledge to help security operations prevent cyberattacks against their organization
 
-- Employing [automated investigation and response](automated-investigation-response-office.md) for critical email-based threats
+- Employing [automated incident response](automated-investigation-response-office.md) for critical email-based threats
     
 Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Office 365 Security &amp; Compliance Center. These insights can help your organization's security team protect Office 365 users from email- or file-based attacks. The capabilities help monitor signals and gathers data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and Office 365 global administrators, security administrators, and security analysts can all use this information to understand and respond to threats against Office 365 users and protect intellectual property.
 
 ## Get acquainted with threat investigation and response tools
 
-Threat investigation and response capabilities surface in the Security &amp; Compliance Center, as a set of tools and response workflows, including the [threat dashboard](#threat-dashboard), [Explorer](#threat-explorer), [Incidents](#incidents), [Attack Simulator](#attack-simulator), and [Automated Investigation & Response](automated-investigation-response-office.md).
+Threat investigation and response capabilities surface in the Security &amp; Compliance Center, as a set of tools and response workflows, including the [threat dashboard](#threat-dashboard), [Explorer](#threat-explorer), [Incidents](#incidents), [Attack Simulator](#attack-simulator), and [Automated incident response](automated-investigation-response-office.md).
   
 ### Threat dashboard
 
@@ -41,7 +41,7 @@ Use the Threat dashboard (this is also referred to as the [Security dashboard](s
   
 ![Threat Dashboard](../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
-To view and use this dashboard, in the Security &amp; Compliance Center, go to **Threat management** \> **Dashboard**.
+To view and use this dashboard, in the Office 365 Security &amp; Compliance Center, go to **Threat management** \> **Dashboard**.
 
 To learn more about 
   
@@ -51,7 +51,7 @@ Use [Threat Explorer (and real-time detections)](threat-explorer.md) to analyze 
   
 ![Threat explorer](../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
-To view and use this report, in the Security &amp; Compliance Center, go to **Threat management** \> **Explorer**.
+To view and use this report, in the Office 365 Security &amp; Compliance Center, go to **Threat management** \> **Explorer**.
   
 ### Incidents
 
@@ -69,7 +69,7 @@ Use Attack Simulator to set up and run realistic cyberattacks in your organizati
 
 ### Automated investigation and response
 
-Use automated investigation and response (AIR) capabilities to save time and effort correlating content, devices, and people at risk from threats in your organization. AIR processes can begin whenever certain alerts are triggered, or when started by your security operations team. To learn more, see [Automated Incident Response (AIR) with Office 365](automated-investigation-response-office.md). 
+Use automated investigation and response (AIR) capabilities to save time and effort correlating content, devices, and people at risk from threats in your organization. AIR processes can begin whenever certain alerts are triggered, or when started by your security operations team. To learn more, see [Automated incident response in Office 365](automated-investigation-response-office.md). 
   
 ## Threat intelligence widgets
 
@@ -82,7 +82,7 @@ As part of the Office 365 Advanced Threat Protection Plan 2 offering, security a
 Office 365 threat investigation and response capabilities are included in Office 365 Advanced Threat Protection Plan 2 and Enterprise E5. 
 
 > [!TIP]
-> If your organization has an Office 365 subscription that does not include these threat investigation and response capabilities, you can potentially purchase Office 365 Advanced Threat Protection Plan 2 as an add-on. For more information about plan options, see [Office 365 Advanced Threat Protection service description](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) and [Buy or edit an add-on for Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
+> If your organization has an Office 365 subscription that does not include these threat investigation and response capabilities, you can potentially purchase Office 365 Advanced Threat Protection Plan 2 as an add-on. For more information about plan options, see [Office 365 Advanced Threat Protection service description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) and [Buy or edit an add-on for Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
   
 1. As an Office 365 global administrator, go to [https://admin.microsoft.com](https://admin.microsoft.com) and sign in using your work or school account for Office 365. 
     

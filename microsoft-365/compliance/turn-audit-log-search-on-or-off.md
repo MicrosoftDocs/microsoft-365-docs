@@ -56,7 +56,7 @@ You can use the Security & Compliance Center or PowerShell to turn on audit log 
     
 2. Run the following PowerShell command to turn on audit log search in Office 365.
     
-    ```
+    ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
     ```
 
@@ -70,7 +70,7 @@ You have to use remote PowerShell connected to your Exchange Online organization
     
 2. Run the following PowerShell command to turn off audit log search in Office 365.
     
-    ```
+    ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
@@ -78,12 +78,12 @@ You have to use remote PowerShell connected to your Exchange Online organization
     
     - In PowerShell, run the following command:
 
-            ```
-            Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
-            ```
+    ```powershell
+    Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+    ```
 
-           The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off. 
+      The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off. 
     
     - In the Security & Compliance Center, go to **Search** \> **Audit log search**.
     
-           A banner is displayed saying that auditing has to be turned on in order to record user and admin activity.
+      A banner is displayed saying that auditing has to be turned on in order to record user and admin activity.

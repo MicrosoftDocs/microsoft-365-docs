@@ -18,7 +18,7 @@ The sample connector feature to archive Facebook data in Office 365 is in Previe
 
 Use a sample connector in the Security & Compliance Center in Office 365 to import and archive data from Facebook Business pages to Office 365. After you set up and configure a sample connector, it connects to the Facebook Business page (on a scheduled basis), converts the content of Facebook items to an email message format, and then imports those items to a mailbox in Office 365.
 
-After the Facebook data is imported, you can apply Office 365 compliance features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, Supervision, and Office 365 retention policies to the Facebook data. For example, when a mailbox is placed on Litigation Hold or assigned to a retention policy, the Facebook data is preserved. You can search third-party data using Content Search or associate the mailbox where the Facebook data is stored with a custodian in an Advanced eDiscovery case. Using a connector to import and archive Facebook data in Office 365 can help your organization stay compliant with government and regulatory policies.
+After the Facebook data is imported, you can apply Office 365 compliance features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, [Communication compliance](communication-compliance.md), and Office 365 retention policies to the Facebook data. For example, when a mailbox is placed on Litigation Hold or assigned to a retention policy, the Facebook data is preserved. You can search third-party data using Content Search or associate the mailbox where the Facebook data is stored with a custodian in an Advanced eDiscovery case. Using a connector to import and archive Facebook data in Office 365 can help your organization stay compliant with government and regulatory policies.
 
 > [!NOTE]
 > At this time, only the sample connectors for Facebook Business pages and [Twitter](archive-twitter-data-with-sample-connector.md) is available for Preview. More sample connectors are coming soon.
@@ -80,9 +80,9 @@ For step-by-step instructions, see [Create a new web app resource in Azure](depl
 
 During the completion of this step (by following the step-by-step instructions), you provide the following information (that you've copied to a text file after completing the previous steps) when creating the web app resource.
 
-- APISecretKey — You create this secret during the completion of this step; it is used in Step 7.
-- StorageAccountConnectionString – The connection string Uri that you copied after creating the Azure storage account in Step 3.
-- tenantId – The tenant ID of your Office 365 organization that you copied after creating the Facebook connector app in Azure Active Directory in Step 2.
+- APISecretKey: You create this secret during the completion of this step; it is used in Step 7.
+- StorageAccountConnectionString: The connection string Uri that you copied after creating the Azure storage account in Step 3.
+- tenantId: The tenant ID of your Office 365 organization that you copied after creating the Facebook connector app in Azure Active Directory in Step 2.
 
 Additionally, you upload the SampleConnector.zip file (that you downloaded in Step 1) in this step to deploy the source code for the Facebook connector app.
 
@@ -113,7 +113,7 @@ During the completion of this step (by following the step-by-step instructions),
 - Facebook webhooks verify token (obtained in Step 5)
 - Azure Active Directory application ID (the AAD application ID obtained in Step 2)
 - Azure Active Directory application secret (the AAD application secret obtained in Step 2)
-- Azure Active Directory application Uri (the AAD application Uri obtained in Step 2; for example, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)
+- Azure Active Directory application Uri (the AAD application Uri obtained in Step 2; for example, `https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)`
 
 ## Step 7: Set up a custom connector in the Security & Compliance Center
 

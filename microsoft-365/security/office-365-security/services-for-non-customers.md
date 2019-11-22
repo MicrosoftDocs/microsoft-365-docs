@@ -41,7 +41,7 @@ Microsoft offers several support options for people having trouble sending mail 
 
 - Use the [Office 365 delist portal](https://sender.office.com) to submit a request to have your IP removed from the blocked sender's list.
 
-- Read the [Microsoft community forums](https://community.office365.com/en-us/f/).
+- Read the [Microsoft community forums](https://community.office365.com/f/).
 
 - Contact the Office 365 customer you're trying to email using another method and ask them to contact Microsoft Support and open a support ticket on your behalf. In some cases, for legal reasons, Microsoft Support must communicate directly with the sender who owns the IP space that is being blocked. However, non-customers typically can't open support tickets.
 

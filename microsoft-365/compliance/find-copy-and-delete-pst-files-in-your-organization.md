@@ -73,7 +73,7 @@ See the description for the  `Locations` parameter in table in the following pro
     
 4. Run the following command to find PST files in a specified location.
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Find -JobName <Name> -Locations <Locations to search for PSTs> -LogLocation <Location to store log files> -ConfigurationLocation <Location to store configuration files>
     ```
 
@@ -92,7 +92,7 @@ See the description for the  `Locations` parameter in table in the following pro
    
     Here's an example of the syntax for the DataCollectorMaster.exe command using actual values for each parameter:
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Find -JobName PstSearch1 -Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com" -LogLocation "c:\users\admin\desktop\PSTCollection" -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration"
     ```
 
@@ -133,7 +133,7 @@ To block access to PST files:
     
 3. Run the following command to block access to the PST files found in Step 1.
 
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Block -JobName <Name of job from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -BlockChangesToFiles -BlockNewFiles
     ```
 
@@ -151,10 +151,10 @@ To block access to PST files:
    
     Here's an example of the syntax for the DataCollectorMaster.exe command using actual values for each parameter:
 
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Block -JobName PstSearch1 -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -LogLocation "c:\users\admin\desktop\PSTCollection" -BlockChangesToFiles -BlockNewFiles
     ```
-    
+
     You are prompted to confirm that you want to block new PST files or changes to existing PST files. After you confirm that you want to continue and the command successfully runs, a message is displayed saying that a new GPO, named "PST Usage Controls", has been created.
     
 ## Step 3: Copy the PST files to a collection location
@@ -170,7 +170,7 @@ The next step is to copy the PST files that where found when you ran the PST Col
     
 3. Run the following command to copy the PST files to a specified location.
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Collect -JobName <Name of job from Step 1> -Locations <same locations from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -CopyLocation <Location to copy PST files to>
     ```
 
@@ -189,7 +189,7 @@ The next step is to copy the PST files that where found when you ran the PST Col
    
     Here's an example of the syntax for the DataCollectorMaster.exe tool using actual values for each parameter:
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Collect -JobName PstSearch1 -Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com" -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -CopyLocation "\\FILESERVER03\PSTs" -LogLocation "c:\users\admin\desktop\PSTCollection"
     ```
 
@@ -225,7 +225,7 @@ After the PST files that you found and collected have been imported to Exchange 
     
 3. Run the following command to delete the PST files.
 
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Delete -JobName <Name of job from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -CopyLocation <Location to copy PST files to>
     ```
 
@@ -242,10 +242,10 @@ After the PST files that you found and collected have been imported to Exchange 
 
     Here's an example of the syntax for the DataCollectorMaster.exe tool using actual values for each parameter:
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Delete -JobName PstSearch1 -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -LogLocation "c:\users\admin\desktop\PSTCollection"
     ```
-   
+
     After you run the command, detailed status messages are displayed that show the progress of deleting the PST files that were found in Step 1 and collected in Step 3. After a while, a final status message shows if there were any errors and the location that the log is copied to. The same status messages are copied to the .log file.
     
 ### Results of running DataCollectorMaster.exe in the Delete mode

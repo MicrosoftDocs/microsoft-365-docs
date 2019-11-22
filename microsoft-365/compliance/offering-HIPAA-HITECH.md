@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
+title: Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
 description: Microsoft offers Health Insurance Portability & Accountability Act Business Associate Agreements (BAAs).
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -17,7 +17,7 @@ hideEdit: true
 
 ## HIPAA and the HITECH Act overview
 
-The Health Insurance Portability and Accountability Act (HIPAA) is a US healthcare law that establishes requirements for the use, disclosure, and safeguarding of individually identifiable health information. It applies to covered entities—doctors’ offices, hospitals, health insurers, and other healthcare companies—with access to patients’ protected health information (PHI), as well as to business associates, such as cloud service and IT providers, that process PHI on their behalf. (Most covered entities do not carry out functions such as claims or data processing on their own; they rely on business associates to do so.)
+The Health Insurance Portability and Accountability Act (HIPAA) is a US healthcare law that establishes requirements for the use, disclosure, and safeguarding of individually identifiable health information. It applies to covered entities — doctors’ offices, hospitals, health insurers, and other healthcare companies — with access to patients’ protected health information (PHI), as well as to business associates, such as cloud service and IT providers, that process PHI on their behalf. (Most covered entities do not carry out functions such as claims or data processing on their own; they rely on business associates to do so.)
 
 The law regulates the use and dissemination of PHI in four general areas:
 
@@ -35,13 +35,13 @@ The HITECH Breach Notification Final Rule, which requires giving notice to indiv
 
 ## Microsoft and HIPAA and the HITECH Act
 
-HIPAA regulations require that covered entities and their business associates—in this case, Microsoft when it provides services, including cloud services, to covered entities—enter into contracts to ensure that those business associates will adequately protect PHI. These contracts, or BAAs, clarify and limit how the business associate can handle PHI, and set forth each party’s adherence to the security and privacy provisions set forth in HIPAA and the HITECH Act. Once a BAA is in place, Microsoft customers—covered entities—can use its services to process and store PHI.
+HIPAA regulations require that covered entities and their business associates — in this case, Microsoft when it provides services, including cloud services, to covered entities — enter into contracts to ensure that those business associates will adequately protect PHI. These contracts, or BAAs, clarify and limit how the business associate can handle PHI, and set forth each party’s adherence to the security and privacy provisions set forth in HIPAA and the HITECH Act. Once a BAA is in place, Microsoft customers — covered entities — can use its services to process and store PHI.
 
 Currently there is no official certification for HIPAA or HITECH Act compliance. However, those Microsoft services covered under the BAA have undergone audits conducted by accredited independent auditors for the Microsoft ISO/IEC 27001 certification.
 
 Microsoft enterprise cloud services are also covered by FedRAMP assessments. Microsoft Azure and Microsoft Azure Government received a Provisional Authority to Operate from the FedRAMP Joint Authorization Board; Microsoft Dynamics 365 U.S. Government received an Agency Authority to Operate from the US Department of Housing and Urban Development, as did Microsoft Office 365 U.S. Government from the US Department of Health and Human Services.
 
-Learn about the benefits of HIPAA and the HITECH on the Microsoft Cloud: [Read the Zwanger – Pesiri Radiology Customer Story](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)
+Learn about the benefits of HIPAA and the HITECH on the Microsoft Cloud: [Read the Zwanger — Pesiri Radiology Customer Story](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)
 
 ## Microsoft in-scope cloud services
 
@@ -60,7 +60,7 @@ Learn about the benefits of HIPAA and the HITECH on the Microsoft Cloud: [Read t
 
 ## Accelerate your deployment of HIPAA/HITRUST solutions on Azure
 
-Get a head start on taking advantage of the benefits of the cloud for health data solutions with the Azure Security and Compliance Blueprint - HIPAA/HITRUST Health Data and AI. This blueprint provides tools and guidance to get you started building HIPAA/HITRUST solutions today.
+Get a head start on taking advantage of the benefits of the cloud for health data solutions with the Azure Security and Compliance Blueprint — HIPAA/HITRUST Health Data and AI. This blueprint provides tools and guidance to get you started building HIPAA/HITRUST solutions today.
 
 [Start using the Azure HIPAA/HITRUST Blueprint](https://aka.ms/healthblueprint)
 
@@ -70,9 +70,9 @@ Get a head start on taking advantage of the benefits of the cloud for health dat
 
 Microsoft offers qualified companies or their suppliers a BAA that covers in-scope Microsoft services.
 
-For Microsoft cloud services: The [HIPAA Business Associate Agreement](http://aka.ms/BAA) is available via the Online Services Terms by default to all customers who are covered entities or business associates under HIPAA. See “Microsoft in-scope cloud services” on this webpage for the list of cloud services covered by this BAA.
+For Microsoft cloud services: The [HIPAA Business Associate Agreement](https://aka.ms/BAA) is available via the Online Services Terms by default to all customers who are covered entities or business associates under HIPAA. See “Microsoft in-scope cloud services” on this webpage for the list of cloud services covered by this BAA.
 
-For Microsoft Microsoft Professional Services services: The HIPAA Business Associate Amendment is available for in-scope Microsoft Professional Services upon request to your Microsoft services representative.
+For Microsoft Professional Services services: The HIPAA Business Associate Amendment is available for in-scope Microsoft Professional Services upon request to your Microsoft services representative.
 
 **Does having a BAA with Microsoft ensure my organization’s compliance with HIPAA and the HITECH Act?**
 
@@ -90,20 +90,20 @@ The [Service Trust Portal](https://www.microsoft.com/trustcenter/STP/default.asp
 
 To assist customers with this task, Microsoft has published these guides:
 
-- *HIPAA/HITECH Act implementation guidance* for [Azure](https://aka.ms/azurehipaaguidance) and for [Dynamics 365 and Office 365](http://go.microsoft.com/fwlink/?LinkID=257510). Written for privacy, security, and compliance officers and others responsible for HIPAA and HITECH Act implementation, they describe concrete steps your organization can take to maintain compliance.
-- [Practical guide to designing secure health solutions using Microsoft Azure](http://aka.ms/azureindustrysecurity) helps you better understand what it takes to successfully adopt a cloud service in a secure manner.
-- [Addressing HIPAA security and privacy requirements in the Microsoft Cloud](http://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) offers a brief overview of regulation requirements. It also provides a detailed analysis of how Microsoft’s cloud services were built with methodologies that map to those requirements, and guidance on how to build compliance-ready solutions.
+- *HIPAA/HITECH Act implementation guidance* for [Azure](https://aka.ms/azurehipaaguidance) and for [Dynamics 365 and Office 365](https://go.microsoft.com/fwlink/?LinkID=257510). Written for privacy, security, and compliance officers and others responsible for HIPAA and HITECH Act implementation, they describe concrete steps your organization can take to maintain compliance.
+- [Practical guide to designing secure health solutions using Microsoft Azure](https://aka.ms/azureindustrysecurity) helps you better understand what it takes to successfully adopt a cloud service in a secure manner.
+- [Addressing HIPAA security and privacy requirements in the Microsoft Cloud](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) offers a brief overview of regulation requirements. It also provides a detailed analysis of how Microsoft’s cloud services were built with methodologies that map to those requirements, and guidance on how to build compliance-ready solutions.
 
 ## Resources
 
-- [HIPAA Omnibus Rule](http://aka.ms/HIPAA-omnibus) (The final regulations modifying HIPAA rules)
+- [HIPAA Omnibus Rule](https://aka.ms/HIPAA-omnibus) (The final regulations-modifying HIPAA rules)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Understanding HIPAA Compliance with Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(May 19, 2016)
-- [Azure HIPAA implementation guidan](https://aka.ms/azure-hipaa-guide)
+- [Azure HIPAA implementation guidance](https://aka.ms/azure-hipaa-guide)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf).

@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Center for Financial Industry Information Systems (FISC)
+title: Center for Financial Industry Information Systems (FISC)
 description: Microsoft meets the requirements of the Financial Industry Information Systems v.8 standard in Japan.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -21,13 +21,13 @@ The Center for Financial Industry Information Systems (FISC) is a not-for-profit
 
 In collaboration with its member institutions, the Bank of Japan, and the Financial Services Agency (a government organization responsible for overseeing banking, securities and exchange, and insurance in Japan), the FISC created guidelines for the security of banking information systems. These include basic auditing standards for computer system controls, contingency planning in the event of a disaster, and the development of security policies and standards encompassed in more than 300 controls.
 
-Although the application of these guidelines in a cloud computing environment is not required by regulation, most financial institutions in Japan that implement cloud services have built information systems that satisfy these security standards, and it can be very difficult to justify diverging from them. (The latest guidelines, Version 8 Supplemental Revised, issued in 2015, added two revisions relating to the use of cloud services by financial institutions and countermeasures against cyberattack.)
+Although the application of these guidelines in a cloud computing environment is not required by regulation, most financial institutions in Japan that implement cloud services have built information systems that satisfy these security standards, and it can be difficult to justify diverging from them. (The latest guidelines, Version 8 Supplemental Revised, issued in 2015, added two revisions relating to the use of cloud services by financial institutions and countermeasures against cyberattack.)
 
 Conformance with this framework is not required by regulation, and not audited or otherwise validated by the FISC.
 
 ## Microsoft and FISC
 
-Microsoft engaged outside assessors to validate that Microsoft Azure, Dynamics 365 and Microsoft Office 365 meet requirements of the FISC Security Guidelines on Computer Systems for Financial Institutions 9th Edition Revised. Microsoft provided evidence of compliance in each of the following areas:
+Microsoft engaged outside assessors to validate that Microsoft Azure, Dynamics 365, and Microsoft Office 365 meet requirements of the FISC Security Guidelines on Computer Systems for Financial Institutions 9th Edition Revised. Microsoft provided evidence of compliance in each of the following areas:
 
 - Datacenter guidelines for buildings and computer rooms, power, air conditioning, datacenter, and facilities monitoring.
 - Operational guidelines for organizations, training, access control, system development, and auditing.
@@ -58,8 +58,8 @@ Banks and other financial institutions in Japan that want to validate their appr
 
 The FISC has published two reports from its Council of Experts:
 
-- [Usage of Cloud Computing by Financial Institutions](http://aka.ms/cloud-computing-report-en)
-- [Countermeasures Against Cyber Attacks on Financial Institutions](http://aka.ms/cyberattack-counter)
+- [Usage of Cloud Computing by Financial Institutions](https://aka.ms/cloud-computing-report-en)
+- [Countermeasures Against Cyber Attacks on Financial Institutions](https://aka.ms/cyberattack-counter)
 
 **Where can I get the details of Microsoft's responses to the FISC framework?**
 
@@ -71,9 +71,9 @@ Yes. However, although Microsoft responses to this framework are confirmed compl
 
 ## Resources
 
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [FISC Security Guidelines/Safety Standards](https://www.fisc.or.jp/english)
-- [FISC Report on Usage of Cloud Computing](http://aka.ms/cloud-computing-report-en)
+- [FISC Report on Usage of Cloud Computing](https://aka.ms/cloud-computing-report-en)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Resources in Japanese
@@ -82,4 +82,4 @@ Yes. However, although Microsoft responses to this framework are confirmed compl
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/9/1/D/91D74F03-AA26-4D22-AB99-576FE9F88B58/FISC_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/1/D/91D74F03-AA26-4D22-AB99-576FE9F88B58/FISC-Compliance.pdf).

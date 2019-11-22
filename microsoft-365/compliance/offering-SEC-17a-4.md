@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — Securities and Exchange Commission (SEC) Rule 17a-4(f) United States
+title: Securities and Exchange Commission (SEC) Rule 17a-4(f) United States
 description: An independent assessment firm validated that Azure and Office 365 can help financial firms meet SEC Rule 17a-4(f) records retention and immutable storage requirements.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -19,7 +19,7 @@ hideEdit: true
 
 The [US Securities and Exchange Commission (SEC)](https://www.sec.gov/) is an independent agency of the US federal government and the primary overseer and regulator of US securities markets. It wields enforcement authority over federal securities laws, proposes new securities rules, and oversees market regulation of the securities industry.
 
-The SEC defines rigorous and explicit requirements for regulated entities that elect to retain books and records on electronic storage media. It established [17 CFR 240.17a-3](https://www.govinfo.gov/app/details/CFR-2012-title17-vol3/CFR-2012-title17-vol3-sec240-17a-3) and [17 CFR 240.17a-4](https://www.ecfr.gov/cgi-bin/text-idx?mc=true&node=pt17.4.240&rgn=div5#se17.4.240_117a_64) to regulate recordkeeping, including retention periods, for securities broker-dealers. Subsequently, the SEC [amended](https://www.sec.gov/rules/interp/34-47806.htm) 17 CFR 240.17a-4 paragraph (f), issuing two interpretive releases expressly to allow books and records to be retained on electronic storage media as long as certain conditions were met.
+The SEC defines rigorous and explicit requirements for regulated entities that elect to retain books and records on electronic storage media. It established [17 CFR 240.17a-3](https://www.govinfo.gov/app/details/CFR-2012-title17-vol3/CFR-2012-title17-vol3-sec240-17a-3) and [17 CFR 240.17a-4](https://www.ecfr.gov/cgi-bin/text-idx?mc=true&node=pt17.4.240&rgn=div5#se17.4.240_117a_64) to regulate recordkeeping, including retention periods, for securities broker-dealers. Later, the SEC [amended](https://www.sec.gov/rules/interp/34-47806.htm) 17 CFR 240.17a-4 paragraph (f), issuing two interpretive releases expressly to allow books and records to be retained on electronic storage media as long as certain conditions were met.
 
 An electronic storage system meets those conditions if it prevents the alteration or erasure of records for the required retention period. Retention periods vary from three to six years based on record types, with immediate accessibility mandated for the first two years. Moreover, one of the interpretive releases requires that the storage system be capable of retaining records beyond the SEC-established retention period to comply with subpoenas, legal hold, or other such requirements.
 
@@ -66,7 +66,7 @@ Use case overviews, tutorials, and other resources to build Azure solutions for 
 ## Resources
 
 - Archiving in Microsoft Office 365, Data Retention, and Rule 17a-4
-- [Compliance Microsoft Financial Services](http://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
+- [Compliance Microsoft Financial Services](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
 - [Compliance Program Microsoft business cloud services and financial services](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
@@ -76,4 +76,4 @@ Use case overviews, tutorials, and other resources to build Azure solutions for 
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/E/5/2/E52103E7-C1BB-4118-9725-4452FEA931D8/SEC17a-4(f)-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/E/5/2/E52103E7-C1BB-4118-9725-4452FEA931D8/SEC17a-4(f)-Compliance.pdf).

@@ -30,3 +30,14 @@ We recommend working with one of our approved device partners. You can work with
     - [Register existing devices yourself](register-reused-devices-self.md)
     - Work with a partner to register the devices
 3. [Get your users ready](get-started-devices.md) to use Microsoft Managed Desktop devices
+
+## Steps to get started with Microsoft Managed Desktop
+
+1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
+2. [Adjust conditional access](conditional-access.md)
+3. [Assign licenses](assign-licenses.md)
+4. [Deploy Intune Company Portal](company-portal.md)
+5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)
+6. Set up devices (this topic)
+7. [Get your users ready to use devices](get-started-devices.md)
+8. [Deploy apps](deploy-apps.md)

@@ -43,7 +43,7 @@ When you've completed these steps, go to the [exit criteria](networking-exit-cri
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-Peek inside Microsoft and learn how the company [optimized the Microsoft network for cloud services](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR4).
+Peek inside Microsoft and learn how the company [optimized the Microsoft network for cloud services](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR4).
 
 ## How Contoso did Microsoft 365 Enterprise
 

@@ -79,7 +79,7 @@ When you export content search results or a content search report using one of t
 
 Error tags are made up of two pieces of information, the error and the file type. For example, in this error/filetype pair:
 
-```
+```text
  parseroutputsize_xls
 ```
 
@@ -115,7 +115,7 @@ The following steps show you how to run a PowerShell script that searches for al
   
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `PartiallyIndexedItems.ps1`.
 
-```
+```powershell
   write-host "**************************************************"
   write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
@@ -158,15 +158,15 @@ The following steps show you how to run a PowerShell script that searches for al
   }
   
 ```
-   
+
 2. [Connect to Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084).
     
 3. In Security & Compliance Center PowerShell, go to the folder where you saved the script in step 1, and then run the script; for example:
 
-    ```
+    ```powershell
     .\PartiallyIndexedItems.ps1
     ```
-   
+
 Here's an example fo the output returned by the script.
   
 ![Example of output from script that generates a report on your organization's exposure to partially indexed email items](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)

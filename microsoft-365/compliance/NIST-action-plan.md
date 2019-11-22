@@ -21,7 +21,7 @@ Microsoft 365 allows you to operate your enterprise with a cloud control framewo
 
 Microsoft is recognized as an industry leader in cloud security. Using years of experience building enterprise software and running online services, our team is constantly learning and continuously updating our services and applications to deliver a secure cloud productivity service that meets rigorous industry standards for compliance. Microsoft’s government cloud services, including Office 365 U.S. Government, meet the demanding requirements of the US Federal Risk and Authorization Management Program (FedRAMP), enabling U.S. federal agencies to benefit from the cost savings and rigorous security of the Microsoft Cloud.
 
-This article includes a prioritized action plan you can follow as you work to meet the requirements of NIST 800-53. This action plan was developed in partnership with Protiviti, a Microsoft partner specializing in regulatory compliance. Learn more about how to use this action plan at Microsoft Ignite by attending this session: [Chart your Microsoft 365 compliance path and information protection strategy](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions), presented by Maithili Dandige (Microsoft) and Antonio Maio (Protiviti).
+This article includes a prioritized action plan you can follow as you work to meet the requirements of NIST 800-53. This action plan was developed in partnership with Protiviti, a Microsoft partner specializing in regulatory compliance. 
 
 ## Action plan outcomes
 

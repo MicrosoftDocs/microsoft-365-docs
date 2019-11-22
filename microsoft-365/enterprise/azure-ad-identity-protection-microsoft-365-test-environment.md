@@ -17,6 +17,8 @@ description: "Configure Azure AD Identity Protection and analyze the current acc
 
 # Azure AD Identity Protection for your Microsoft 365 Enterprise test environment
 
+*This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
+
 Azure AD Identity Protection allows you to detect potential vulnerabilities affecting your organization’s identities, configure automated responses, and investigate incidents. This article describes how to enable Azure AD Identity Protection and view the analysis of your test environment accounts.
 
 There are two phases to setting up Azure AD Identity Protection in your Microsoft 365 Enterprise test environment:
@@ -27,7 +29,7 @@ There are two phases to setting up Azure AD Identity Protection in your Microsof
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 

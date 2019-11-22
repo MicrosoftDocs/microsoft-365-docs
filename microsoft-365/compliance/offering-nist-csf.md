@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
+title: National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
 description: Microsoft Cloud Services meet the National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF).
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -21,11 +21,11 @@ The National Institute of Standards and Technology (NIST) promotes and maintains
 
 The main priorities of the FICIC were to establish a set of standards and practices to help organizations manage cybersecurity risk, while enabling business efficiency. The NIST Framework addresses cybersecurity risk without imposing additional regulatory requirements for both government and private sector organizations.
 
-The FICIC references globally-recognized standards including NIST SP 800-53 found in Appendix A of the NIST’s [2014 Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf). Each control within the FICIC framework is mapped to corresponding NIST 800-53 controls within the FedRAMP Moderate Baseline.
+The FICIC references globally recognized standards including NIST SP 800-53 found in Appendix A of the NIST’s [2014 Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf). Each control within the FICIC framework is mapped to corresponding NIST 800-53 controls within the FedRAMP Moderate Baseline.
 
 ## Microsoft and the NIST CSF
 
-NIST Cybersecurity Framework (CSF) is a voluntary Framework that consists of standards, guidelines, and best practices to manage cybersecurity-related risks. Microsoft Cloud services have undergone independent, third-party FedRAMP Moderate and High Baseline audits and are certified according to the FedRAMP standards. Additionally, through a validated assessment performed by HITRUST, a leading security and privacy standards development and accreditation organization, Office 365 is certified to the objectives specified in the NIST CSF.
+NIST Cybersecurity Framework (CSF) is a voluntary Framework that consists of standards, guidelines, and best practices to manage cybersecurity-related risks. Microsoft Cloud services have undergone independent, third-party FedRAMP Moderate and High Baseline audits and are certified according to the FedRAMP standards. Also, through a validated assessment performed by HITRUST, a leading security and privacy standards development and accreditation organization, Office 365 is certified to the objectives specified in the NIST CSF.
 
 Learn how to accelerate your NIST Cybersecurity Framework deployment with Compliance Manager and our Azure Security and Compliance Blueprint:
 
@@ -60,7 +60,7 @@ Cybersecurity remains a critical management issue in the era of digital transfor
 
 **Has an independent assessor validated that Azure Government, Dynamics 365, and Office 365 support NIST CSF requirements?**
 
-Yes, a third-party assessment organization has attested that the Azure Government cloud service offering conforms to the NIST Cybersecurity Framework (CSF) risk management practices, as defined in the Framework for Improving Critical Infrastructure Cybersecurity, Version 1.0, dated February 12, 2014. The NIST CSF is mapped to FedRAMP Moderate controls framework and an independent assessor has assessed Dynamics 365 against the FedRAMP Moderate baseline. Additionally, Office 365 obtained [the NIST CSF letter of certification](https://aka.ms/O365NISTCSFcertification) from HITRUST in June 2018.
+Yes, a third-party assessment organization has attested that the Azure Government cloud service offering conforms to the NIST Cybersecurity Framework (CSF) risk management practices, as defined in the Framework for Improving Critical Infrastructure Cybersecurity, Version 1.0, dated February 12, 2014. The NIST CSF is mapped to FedRAMP Moderate controls framework and an independent assessor has assessed Dynamics 365 against the FedRAMP Moderate baseline. Also, Office 365 obtained [the NIST CSF letter of certification](https://aka.ms/O365NISTCSFcertification) from HITRUST in June 2018.
 
 **How do Microsoft Cloud Services demonstrate compliance with the framework?**
 
@@ -70,9 +70,9 @@ Using the formal audit reports prepared by third parties for the FedRAMP accredi
 
 Participation in the FICIC is voluntary. However, Microsoft ensures that Azure, Office 365, and Dynamics 365 meet the terms defined within the governing Online Services Terms and applicable service level agreements. These define Microsoft’s responsibility for implementing and maintaining controls adequate to secure the Azure platform and monitor the system.
 
-**Can I leverage Microsoft's compliance for my organization?**
+**Can I use Microsoft's compliance for my organization?**
 
-Yes. The independent third-party compliance reports to the FedRAMP standards attest to the effectiveness of the controls Microsoft has implemented to maintain the security and privacy of the Microsoft Cloud Services. Microsoft customers may leverage the audited controls described in these related reports as part of their own FedRAMP and NIST FICIC’s risk analysis and qualification efforts.
+Yes. The independent third-party compliance reports to the FedRAMP standards attest to the effectiveness of the controls Microsoft has implemented to maintain the security and privacy of the Microsoft Cloud Services. Microsoft customers may use the audited controls described in these related reports as part of their own FedRAMP and NIST FICIC’s risk analysis and qualification efforts.
 
 **Which organizations are deemed by the United States Government to be critical infrastructure?**
 
@@ -96,9 +96,9 @@ Microsoft provides the most comprehensive offerings compared to other cloud serv
 - [2014 Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf)
 - [Presidential Executive Order on Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf).

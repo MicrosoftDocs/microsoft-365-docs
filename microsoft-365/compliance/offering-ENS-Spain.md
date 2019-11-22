@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
+title: Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
 description: Microsoft received Spain's Esquema Nacional de Seguridad (National Security Framework) certification.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -21,11 +21,11 @@ In 2007, the Spanish government enacted Law 11/2007, which established a legal f
 
 The framework applies to all public organizations and government agencies in Spain that purchase cloud services, as well as to providers of information and communications technologies (ICT). It guides these agencies and companies in implementing effective controls for security in the cloud and on premises, in compliance with Spanish and EU security and privacy standards.
 
-The framework establishes core policies and mandatory requirements that both government agencies and their service providers must meet. It defines a set of specific security controls — (many of which align directly with ISO/IEC 27001) — relating to availability, authenticity, integrity, confidentiality, and traceability. The sensitivity of the information—low, intermediate, or high—determines the security measures that must be applied to protect it.
+The framework establishes core policies and mandatory requirements that both government agencies and their service providers must meet. It defines a set of specific security controls — (many of which align directly with ISO/IEC 27001) — relating to availability, authenticity, integrity, confidentiality, and traceability. The sensitivity of the information — low, intermediate, or high — determines the security measures that must be applied to protect it.
 
 Each government agency is required to adopt a risk-management approach to security, whereby they identify and assess risks, and then apply security controls appropriate to those risks. Service providers, too, must comply with the stringent framework requirements to help ensure that their procedures, technical capacities, and operations are secure and enable agencies to comply with the regulations.
 
-The framework prescribes an accreditation process that is voluntary for systems handling information of low sensitivity, but mandatory for systems handling information at an intermediate or high level of sensitivity. An audit is performed by an accredited independent auditor; the report is then reviewed in a process of certification before risk-management controls are accepted in the final step of accreditation.
+The framework prescribes an accreditation process that is voluntary for systems handling information of low sensitivity, but mandatory for systems handling information at an intermediate or high level of sensitivity. An audit is performed by an accredited independent auditor. The report is then reviewed in a process of certification before risk-management controls are accepted in the final step of accreditation.
 
 ## Microsoft and Spain ENS high-level security measures
 
@@ -60,7 +60,7 @@ The certification is valid for two years, with an annual surveillance audit.
 
 **How can I get copies of the audit reports and certifications?**
 
-The [Service Trust Portal](http://aka.ms/stphelp) provides the audit reports and certifications in both Spanish and English. Your auditors can use them to compare Microsoft cloud services results with your own legal and regulatory requirements.
+The [Service Trust Portal](https://aka.ms/stphelp) provides the audit reports and certifications in both Spanish and English. Your auditors can use them to compare Microsoft cloud services results with your own legal and regulatory requirements.
 
 **Where do I start with my organization’s own compliance effort?**
 
@@ -68,10 +68,10 @@ If your organization is using Azure or Office 365, you can use ENS Microsoft aud
 
 ## Resources
 
-- Esquema Nacional de Seguridad of Spain ([Spanish](http://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=sp#.Vwxp82mcGM8) and [English](http://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=en#.VwvcgmmcGM9))
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- Esquema Nacional de Seguridad of Spain ([Spanish](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=sp#.Vwxp82mcGM8) and [English](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=en#.VwvcgmmcGM9))
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/2/3/2/23208181-BA86-4011-8B4A-3CA7E8E383A1/ENS-Spain-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/2/3/2/23208181-BA86-4011-8B4A-3CA7E8E383A1/ENS-Spain-Compliance.pdf).

@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — European Union Model Clauses
+title: European Union Model Clauses
 description: Microsoft offers EU Standard Contractual Clauses, guarantees for transfers of personal data.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -25,7 +25,7 @@ On a practical level, compliance with EU data protection laws also means that cu
 
 Microsoft has invested in the operational processes necessary to meet the exacting requirements of the Model Clauses for the transfer of personal data to processors. Microsoft offers customers Model Clauses, referred to as Standard Contractual Clauses, that make specific guarantees around transfers of personal data for in-scope Microsoft services. This ensures that Microsoft customers can freely move data through the Microsoft cloud from the EEA to the rest of the world.
 
-However, Microsoft enterprise customers, who are the controllers of the personal data, carry the primary obligation to protect that data. This means that EEA enterprise customers have a strong interest in ensuring that their service provider abides by EU data protection laws, or the customer can face liability—and even blockage of its ability to use a service.
+However, Microsoft enterprise customers, who are the controllers of the personal data, carry the primary obligation to protect that data. This means that EEA enterprise customers have a strong interest in ensuring that their service provider abides by EU data protection laws, or the customer can face liability — and even blockage of its ability to use a service.
 
 Microsoft provided its Standard Contractual Clauses to the EU's Article 29 Working Party for review and approval. The Article 29 Working Party includes representatives from the European Data Protection Supervisor, the European Commission, and each of the 28 EU data protection authorities (DPAs).
 
@@ -49,7 +49,7 @@ Learn about the benefits of European Union Model Clauses on the Microsoft Cloud
 - Azure DevOps Services
 - Windows Defender Advanced Threat Protection for the following cloud service portions: Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score.
 
-## Audits, Reports and certificates
+## Audits, reports, and certificates
 
 Microsoft continually assesses the EU standards, and updates its services as needed.
 
@@ -65,28 +65,28 @@ A service provider that commits contractually to the Model Clauses gives its cus
 
 **Where can I see compliance information for Microsoft services?**
 
-Compliance is a contractual commitment. Microsoft Standard Contractual Clauses are available to all cloud customers in the [Online Services Terms](http://aka.ms/Online-Services-Terms); for other services, see your existing agreement with Microsoft.
+Compliance is a contractual commitment. Microsoft Standard Contractual Clauses are available to all cloud customers in the [Online Services Terms](https://aka.ms/Online-Services-Terms); for other services, see your existing agreement with Microsoft.
 
 **What is a "sub-processor"?**
 
-A "sub-processor" is someone who processes personal data following the data controller’s instructions, as well as the terms of the EU Model Clauses and the subcontract. Microsoft customers—independent software vendors (ISVs), in particular—are sometimes themselves data processors; in those instances, Microsoft is the sub-processor.
+A "sub-processor" is someone who processes personal data following the data controller’s instructions, and the terms of the EU Model Clauses and the subcontract. Microsoft customers—independent software vendors (ISVs), in particular — are sometimes themselves data processors. In those instances, Microsoft is the sub-processor.
 
 **Where do I start with my own organization’s compliance efforts?**
 
-You can enter an agreement such, as the [Online Services Terms](http://aka.ms/Online-Services-Terms), or explore amending your existing agreement to incorporate the Standard Contractual Clauses.
+You can enter an agreement such, as the [Online Services Terms](https://aka.ms/Online-Services-Terms), or explore amending your existing agreement to incorporate the Standard Contractual Clauses.
 
 ## Resources
 
-- [EU Standards Organization](http://eur-lex.europa.eu/)
-- [EU Model Clauses](http://aka.ms/EU-model_clauses)
-- [EU Data Protection Directive](http://aka.ms/EU-DPD)
+- [EU Standards Organization](https://eur-lex.europa.eu/)
+- [EU Model Clauses](https://aka.ms/EU-model_clauses)
+- [EU Data Protection Directive](https://aka.ms/EU-DPD)
 - [European Data Protection Board](https://edpb.europa.eu/)
 - [EU Model Clauses FAQ for Dynamics 365 and Office 365](https://products.office.com/business/office-365-trust-center-eu-model-clauses-faq)
 - [Microsoft and the EU-U.S. Privacy Shield](https://go.microsoft.com/fwlink/p/?linkid=2099701)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/E/5/F/E5FA8D11-07A4-4496-82B3-0BCFABAA2FB7/EU_Model_Clauses_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/E/5/F/E5FA8D11-07A4-4496-82B3-0BCFABAA2FB7/EU_Model_Clauses_Compliance_Backgrounder.pdf).

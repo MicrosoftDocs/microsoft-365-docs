@@ -18,8 +18,6 @@ description: Understand how Contoso uses Microsoft Intune in Microsoft 365 Enter
 
 # Mobile device management for Contoso
 
-**Summary:** Understand how Contoso uses Microsoft Intune in Microsoft 365 Enterprise to manage its devices and the apps that run on them.
-
 Microsoft 365 Enterprise includes Intune and a set of Azure services to support mobile device and application management and security.
 
 Contoso has many mobile-enabled employees, some of which have offices in Contoso locations and some of which have no offices. Contoso needed a way to enable employee productivity but keep the devices, the Contoso data stored on those devices, and application behavior secure.

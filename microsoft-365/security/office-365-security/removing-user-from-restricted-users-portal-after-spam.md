@@ -31,7 +31,7 @@ If a user continuously sends emails that are classified as spam from Office 365,
 
 Estimated time to complete: 5 minutes
   
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam entry in the [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam entry in the [Feature Permissions in Exchange Online](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) topic.
 
 The following procedure can also be performed via remote PowerShell. Use the Get-BlockedSenderAddress cmdlet to get the list of restricted users and Remove-BlockedSenderAddress to remove the restriction. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
@@ -78,10 +78,10 @@ The PowerShell commands for Restricted Users are:
 
 [Responding to a compromised email account](../../compliance/responding-to-a-compromised-email-account.md)
 
-[Understanding the User restricted from sending email alert](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)
+[Understanding the User restricted from sending email alert](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
 
 [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md)
 
 [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 
-[Alert policies in the Security & Compliance Center](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)
+[Alert policies in the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/alert-policies)

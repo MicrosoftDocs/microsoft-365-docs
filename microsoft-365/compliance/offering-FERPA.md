@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — Family Educational Rights and Privacy Act (FERPA)
+title: Family Educational Rights and Privacy Act (FERPA)
 description: Microsoft aligns with the requirements of the US Family Educational Rights and Privacy Act.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -27,7 +27,7 @@ Security is central to compliance with FERPA, which requires the protection of s
 
 FERPA does not require or recognize audits or other certifications, so any academic institution that is subject to FERPA must assess for itself whether and how its use of a cloud service affects its ability to comply with FERPA requirements. However, Microsoft has made the following contractual commitments that attest to its compliance:
 
-- In its [Online Services Terms](http://aka.ms/Online-Services-Terms), Microsoft agrees to be designated as a “school official” with “legitimate educational interests” in customer data as defined under FERPA. (Customer data would include any student records provided through a school’s use of Microsoft cloud services.) When handling student education records, Microsoft agrees to abide by the limitations and requirements imposed by 34 CFR 99.33(a) just as school officials do.
+- In its [Online Services Terms](https://aka.ms/Online-Services-Terms), Microsoft agrees to be designated as a “school official” with “legitimate educational interests” in customer data as defined under FERPA. (Customer data would include any student records provided through a school’s use of Microsoft cloud services.) When handling student education records, Microsoft agrees to abide by the limitations and requirements imposed by 34 CFR 99.33(a) just as school officials do.
 - Furthermore, Microsoft commits to using customer data only to provide organizations with its cloud services and compatible purposes (such as improving malware detection), and does not mine customer data for advertising.
 - Microsoft also contractually commits not to disclose customer data except as the educational institution directs, as described in the contract, or as required by law. Schools that provide education records to Microsoft through their use of a Microsoft cloud service can thus be assured that those records are subject to stringent contractual restrictions regarding their use and disclosure.
 
@@ -59,19 +59,19 @@ This US federal law mandates the protection of the privacy of students’ educat
 
 **Where can I find more information on FERPA?**
 
-- [Federal Register: FERPA Final Rule](http://aka.ms/ferpa-reg) (December 2011)
-- [FERPA general guidance for parents](http://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
+- [Federal Register: FERPA Final Rule](https://aka.ms/ferpa-reg) (December 2011)
+- [FERPA general guidance for parents](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
 
 ## Resources
 
-- [Family Educational Rights and Privacy Act](http://www.ed.gov/policy/gen/guid/fpco/ferpa/index.html)
-- [Electronic Code of Federal Regulations: FERPA](http://aka.ms/FERPA-GPO)
-- [Federal Register: FERPA Final Rule](http://aka.ms/ferpa-reg)
+- [Family Educational Rights and Privacy Act](https://www.ed.gov/policy/gen/guid/fpco/ferpa/index.html)
+- [Electronic Code of Federal Regulations: FERPA](https://aka.ms/FERPA-GPO)
+- [Federal Register: FERPA Final Rule](https://aka.ms/ferpa-reg)
 - [FERPA implementation guide for Microsoft Azure](https://aka.ms/azureferpa)
 - [Azure FERPA compliance framework mapping](https://aka.ms/AzureFERPAMapping)
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf).

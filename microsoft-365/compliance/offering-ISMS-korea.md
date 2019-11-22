@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Korea-Information Security Management System (K-ISMS)
+title: Korea-Information Security Management System (K-ISMS)
 description: Microsoft Azure has achieved certification for the Korea-Information Security Management System (K-ISMS).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -17,7 +17,7 @@ hideEdit: true
 
 ## About K-ISMS
 
-Under Article 47 in the “Act on Promotion of Information and Communications Network Utilization and Information Protection” ([Korean](http://law.go.kr/lsSc.do?tabMenuId=tab18&query=%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0%EB%A7%9D%20%EC%9D%B4%EC%9A%A9%EC%B4%89%EC%A7%84%20%EB%B0%8F%20%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8) and [English](http://law.go.kr/engLsSc.do?tabMenuId=tab45)), the Korean government introduced the [Korea-Information Security Management System](https://isms.kisa.or.kr/main/isms/intro/) (K-ISMS). A country-specific ISMS framework, it defines a stringent set of control requirements designed to help ensure that organizations in Korea consistently and securely protect their information assets.
+Under Article 47 in the “Act on Promotion of Information and Communications Network Utilization and Information Protection” ([Korean](https://law.go.kr/lsSc.do?tabMenuId=tab18&query=%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0%EB%A7%9D%20%EC%9D%B4%EC%9A%A9%EC%B4%89%EC%A7%84%20%EB%B0%8F%20%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8) and [English](https://law.go.kr/engLsSc.do?tabMenuId=tab45)), the Korean government introduced the [Korea-Information Security Management System](https://isms.kisa.or.kr/main/isms/intro/) (K-ISMS). A country-specific ISMS framework, it defines a stringent set of control requirements designed to help ensure that organizations in Korea consistently and securely protect their information assets.
 
 To obtain the certification, a company must undergo an assessment by an independent auditor that covers both information security management and security countermeasures. It covers 104 criteria including 12 control items in 5 sectors for information security management, and 92 control items in 13 sectors for information security countermeasures. Some of these include examination of the organization’s security management responsibilities, security policies, security training, incident response, risk management, and more. A special committee examines the results of the audit and grants the certification.
 
@@ -68,7 +68,7 @@ There are voluntary and compulsory subjects. Voluntary subjects, like Microsoft,
 
 In November 2018, the MSIT, Korea Communications Commission, and Ministry of the Interior and Safety merged the K-ISMS and the Korea-Personal Information Management System (K-PIMS) into a new certification system, Information Security Management System-Personal (ISMS-P).
 
-The integration of these two systems reflects the recent trends in the integration of information security and the protection of personal information. The goal was both to strengthen the links between these systems and to reduce the compliance burden on organizations due to the considerable overlap of requirements. Instead of 104 K-ISMS controls and 82 K-PIMS controls, the new consolidated certification will have 80 items related to information security and 22 items related to the protection of personal information.
+The integration of these two systems reflects the recent trends in the integration of information security and the protection of personal information. The goal was both to strengthen the links between these systems and to reduce the compliance burden on organizations due to the considerable overlap of requirements. Instead of 104 K-ISMS controls and 82 K-PIMS controls, the new consolidated certification has 80 items related to information security and 22 items related to the protection of personal information.
 
 Organizations can apply for the K-ISMS certification based on the 80 controls for information security, or they can apply for the ISMS-P by complying with the 22 additional requirements for personal information protection. Microsoft can apply for an audit under the new ISMS-P certification system. However, we wait until our current K-ISMS certification expires in 2021, at which point we apply for an ISMS-P audit.
 
@@ -81,4 +81,4 @@ Organizations can apply for the K-ISMS certification based on the 80 controls fo
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/2/C/6/2C6FFA1C-1BA8-48E8-887A-4EA52E256AF3/K-ISMS-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/2/C/6/2C6FFA1C-1BA8-48E8-887A-4EA52E256AF3/K-ISMS-Compliance.pdf).

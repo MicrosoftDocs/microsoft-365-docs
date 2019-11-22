@@ -13,19 +13,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 
-description: Understand how Contoso used System Center Configuration Manager to deploy in-place upgrades for Windows 10 Enterprise.
+description: Understand how Contoso used Microsoft Endpoint Configuration Manager to deploy in-place upgrades for Windows 10 Enterprise.
 ---
 
 # Windows 10 Enterprise deployment for Contoso
-
-**Summary:** Understand how Contoso used System Center Configuration Manager to deploy in-place upgrades for Windows 10 Enterprise.
 
 Prior to the wide rollout of Microsoft 365 Enterprise, Contoso had Windows-compatible PCs and devices running a mixture of Windows 7 (10%), Windows 8.1 (65%), and Windows 10 (25%). Contoso wanted to upgrade their PCs for Windows 10 Enterprise take advantage of advanced security and lowered IT overhead from automated deployments of updates. 
 
 After assessing their infrastructure and business needs, Contoso identified these key requirements for the deployment:
 
 - As many PCs and devices as possible should run Windows 10 Enterprise
-- Rollout of the in-place upgrades leverages existing System Center Configuration Manager infrastructure
+- Rollout of the in-place upgrades leverages existing Configuration Manager infrastructure
 - Control over which versions of Windows 10 Enterprise to deploy and updates are done through rings
 - PCs and devices should stay up to date with minimal IT administrative costs and with minimal impact to end-users
 
@@ -47,7 +45,7 @@ Prior to and during in-place upgrades of Windows 10 Enterprise, Contoso used the
 
   Identifies devices that crash frequently, and therefore might need to be rebuilt or replaced and device drivers that are causing device crashes, with suggestions of alternative versions of those drivers that might reduce the number of crashes. Provides notification of Windows Information Protection misconfigurations that send prompts to end users.
  
-Contoso has an existing System Center Configuration Manager (Current Branch) infrastructure. Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Windows 10 Enterprise.
+Contoso has an existing Configuration Manager (Current Branch) infrastructure. Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Windows 10 Enterprise.
 
 ## Planning process
 
@@ -79,7 +77,7 @@ Here is Contoso’s in-place upgrade and ongoing updates deployment architecture
 
 This infrastructure consists of:
 
-- System Center Configuration Manager, which:
+- Configuration Manager, which:
   - Obtains images for Windows 10 Enterprise packages from the Microsoft Volume Licensing Center in the Microsoft Network.
   - Is the central administration point for deployment packages.
 - Regional distribution points that are typically located in Contoso’s regional hub offices.
@@ -87,7 +85,7 @@ This infrastructure consists of:
 
 ## Next step
 
-[Learn](contoso-o365pp.md) how Contoso is leveraging its System Center Configuration Manager infrastructure to deploy and keep current Office 365 ProPlus across its organization. 
+[Learn](contoso-o365pp.md) how Contoso is leveraging its Configuration Manager infrastructure to deploy and keep current Office 365 ProPlus across its organization. 
 
 ## See also
 
