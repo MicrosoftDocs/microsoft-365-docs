@@ -18,14 +18,14 @@ description: "Advanced spam filtering  options give administrators the ability t
 
 # Advanced spam filtering options
 
+> [!NOTE]
+> The Advanced Spam filter settings of the Anti-spam policy are currently being deprecated. Our recommended settings for these are to turn them **OFF**. The functions that were available in the Advanced Spam filter is being incorporated into other parts of the filtering stack.
+
 Advanced spam filtering  options give administrators the ability to inspect various content attributes of a message. The presence of these attributes in a message either increases the spam score of the message (thereby increasing the potential for it to be identified as spam) or marks the message as spam. The ASF options target specific message properties, such as HTML tags and URL redirection, which are commonly found in spam messages.
   
 Enabling ASF options is an aggressive approach to spam filtering, and any messages that are filtered by these options cannot be reported as false positives. These messages can be identified through periodic end-user spam notifications and salvaged from the spam quarantine. They can also be identified via the X-header text that's specific to each ASF option and which appear in the Internet header of messages where an ASF option has been matched. For more information, see [Anti-spam message headers](anti-spam-message-headers.md).
   
 ASF options can be set on, off, or to test mode when you edit your content filter policies. For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md). Test mode is not available for the **NDR backscatter**, **SPF record: hard fail**, **Conditional Sender ID filtering: hard fail**, and **Bulk mail** options. 
-  
-> > [!TIP]
->  Consider enabling your ASF options in test mode in order to maximize spam blocking based upon your environment. For customers with high spam percentages for specific ASF options, we recommend that you test these options first before implementing them in your production environment. If you're concerned about phishing in your organization, turn on the **SPF record: hard fail** option. 
   
 The following table describes each advanced spam filtering option.
   

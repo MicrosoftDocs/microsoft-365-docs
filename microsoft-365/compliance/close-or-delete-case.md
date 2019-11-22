@@ -31,16 +31,16 @@ When the legal case or investigation supported by an eDiscovery case is complete
 
 To close a case:
 
-1. From the **Advanced eDiscovery** page, go to your case.
+1. On the **Advanced eDiscovery** page, select the case that you want to close.
 
-2. Go to **Settings** and select **Case Information**. 
+2. On the **Settings** tab, under **Case Information**, click **Select**.
 
-3. Click **Close Case**. 
+3. Click **Close case**.
 
 To delete a case:
 
-1. From the **Advanced eDiscovery** page, go to your case.
+1. On the **Advanced eDiscovery** page, select the case that you want to delete.
 
-2. Go to **Settings** and select **Case Information**. 
+2. On the **Settings** tab, under **Case Information**, click **Select**.
 
-3. Click **Delete Case**. 
+3. Click **Delete case**. 
