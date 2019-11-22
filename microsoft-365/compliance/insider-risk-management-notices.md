@@ -1,7 +1,7 @@
 ---
-title: Insider risk management notices (preview)
-description: Learn about Insider Risk in Microsoft 365
-keywords: Microsoft 365, Insider Risk, risk management, compliance
+title: Insider risk management notice templates (preview)
+description: Learn about insider risk management notice templates in Microsoft 365
+keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -12,9 +12,9 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Insider risk management notices (preview)
+# Insider risk management notice templates (preview)
 
-Insider risk management notices allow you to send email messages to employees when their activities generate an insider risk policy match and alert. In most cases, employee actions that generate alerts are the result of mistakes or inadvertent activities without ill intent. Notices serve as simple reminders to employees to be more careful or to provide links or information for refresher training or corporate policy resources. Notices can be an important part of your internal compliance training program and can help create a documented audit trail for employees with recurring risk activities.
+Insider risk management notice templates allow you to send email messages to employees when their activities generate an insider risk policy match and alert. In most cases, employee actions that generate alerts are the result of mistakes or inadvertent activities without ill intent. Notices serve as simple reminders to employees to be more careful or to provide links or information for refresher training or corporate policy resources. Notices can be an important part of your internal compliance training program and can help create a documented audit trail for employees with recurring risk activities.
 
 You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices can only be sent to the employee email address associated with the policy match that generated the specific alert for remediation. When selecting a notice template to apply to a policy violation as part of the remediation workflow, you can choose to accept the field values defined in the template or overwrite the fields as needed.
 
@@ -46,9 +46,9 @@ If you'd like to create more than a simple text-based email message for notifica
 
 To create a new insider risk management notice template, you'll use the notice wizard in **Insider risk management** solution in the Microsoft 365 compliance center.
 
-Complete the following steps to create a new notice template:
+Complete the following steps to create a new insider risk management notice template:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider Risk** and select the **Notices** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Notices** tab.
 2. Select **Add notice** to open the notice wizard.
 3. On the **Create a new notice template** page, complete the following fields:
     - **Template name (required)**: Enter a friendly name for the notice. This name appears on the list of notices on the notice dashboard and in the notice selection list when sending notices from a case.
@@ -60,9 +60,9 @@ Complete the following steps to create a new notice template:
 
 ## Manage an existing notice
 
-To manage an existing insider risk notice, complete the following steps:
+To manage an existing insider risk management notice template, complete the following steps:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider Risk** and select the **Notices** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Notices** tab.
 2. On the notice dashboard, select the notice you want to manage.
 3. On the notice details page, select **Edit**
 4. On the **Create a new notice template** page, you can edit the following fields::
