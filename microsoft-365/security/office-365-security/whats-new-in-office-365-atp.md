@@ -28,16 +28,17 @@ Features that are currently in preview are denoted with **(preview)**.
 
 ## Office 365 ATP Plan 1 and Plan 2
 
-Office 365 ATP is available in two plans: Office 365 ATP Plan 1 and Office 365 ATP Plan 2. 
+Office 365 ATP is available in two plans: Office 365 ATP Plan 1 and Office 365 ATP Plan 2.
+ 
 The following table summarizes what's included in each plan. 
 
 |Office 365 ATP Plan 1  |Office 365 ATP Plan 2  |
 |---------|---------|
 |Configuration, protection, and detection capabilities:<br/>- [Safe Attachments](atp-safe-attachments.md)<br/>- [Safe Links](atp-safe-links.md)<br/>- [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Advanced antiphishing protection](atp-anti-phishing.md)<br/>- [Real-time detections](threat-explorer.md)     |Office 365 ATP Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:<br/>- [Threat Trackers](threat-trackers.md)<br/>- [Threat Explorer](threat-explorer.md)<br/>- [Automated incident response](automated-investigation-response-office.md)<br/>- [Attack Simulator](attack-simulator.md)         |
 
-Office 365 ATP Plan 2 is included in Office 365 E5, Office 365 A5, and Microsoft 365 E5. 
-Office 365 ATP Plan 1 is included in Microsoft 365 Business. 
-If your current subscription does not include Office 365 ATP, [contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644), and see how ATP can work for your organization. 
+- Office 365 ATP Plan 2 is included in Office 365 E5, Office 365 A5, and Microsoft 365 E5. 
+- Office 365 ATP Plan 1 is included in Microsoft 365 Business. 
+- If your current subscription does not include Office 365 ATP, [contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644), and see how ATP can work for your organization. 
 
 ## November 2019
 
