@@ -83,7 +83,7 @@ As a best practice, we recommend  *always*  staying current: uninstall the old A
     Uninstall-Module AzureAD
     ```
 
-4. To install the latest version of AzureADPreview, run this command:
+4. To install the latest version of AzureADPreview, run the following command:
   
     ```
     Install-Module AzureADPreview
