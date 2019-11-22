@@ -27,6 +27,8 @@ The policy dashboard allows you to quickly see the policies in your organization
 - **Policy effectiveness**: The percentage of cases divided by alerts for the policy for the last 365 days.
 - **Active status**: The status of the case, either *Active* or *Inactive*.
 
+![Insider risk management policy dashboard](media/insider-risk-temp-policies.png)
+
 ## Policy templates
 
 Insider risk management templates are pre-defined policy conditions that define the types of risk signals monitored by a policy. Each policy must have a template assigned in the policy creation wizard before the policy is created. The following templates are available:
