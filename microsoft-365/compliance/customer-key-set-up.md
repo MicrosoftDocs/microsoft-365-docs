@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Learn how to set up Customer Key for Office 365 for Exchange Online, Skype for Business, SharePoint Online, including Team Sites, and OneDrive for Business."
+description: "Learn how to set up Customer Key for Office 365 for Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files."
 ---
 
 # Set up Customer Key for Office 365
@@ -82,7 +82,7 @@ SharePoint Online and OneDrive for Business:
   
 - [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo)
 
-- [Validate encryption of Group Sites, Team Sites, and OneDrive for Business](#validate-encryption-of-group-sites-team-sites-and-onedrive-for-business)
+- [Validate encryption of SharePoint Online, OneDrive for Business, and Teams files](#validate-encryption-of-group-sites-team-sites-and-onedrive-for-business)
 
 ## Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key
 
@@ -488,7 +488,7 @@ To create a DEP, you need to remotely connect to SharePoint Online by using Wind
 
    When you register the DEP, encryption begins on the data in the geo. This can take some time.
 
-### Validate encryption of Group Sites, Team Sites, and OneDrive for Business
+### Validate encryption of SharePoint Online, OneDrive for Business, and Teams files
 
  You can [connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps), and then use the Get-SPODataEncryptionPolicy cmdlet to check the status of your tenant. The _State_ property returns a value of **registered** if Customer Key encryption is enabled and all files in all sites have been encrypted. If encryption is still in progress, this cmdlet provides information on what percentage of sites is complete.
 
