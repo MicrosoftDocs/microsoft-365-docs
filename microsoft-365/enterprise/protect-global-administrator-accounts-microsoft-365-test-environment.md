@@ -3,7 +3,7 @@ title: "Protect global administrator accounts in your Microsoft 365 Enterprise t
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/16/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -51,7 +51,7 @@ First, create a new user account as a dedicated global administrator.
 4. Click **Password**, click **Let me create the password**, and then type a strong password. Record the password for this new account in a secure location.
 5. Clear **Make this user change their password when they first sign in**.
 6. Click **Roles**, and then click **Global administrator**.
-7. Click **Product licenses**, and then turn the **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5 licenses** on.
+7. Click **Product licenses**, and then turn the **Microsoft 365 E5** license on.
 8. Click **Add**.
 9. On the **User was added page**, clear **Send password in email**, and then click **Close**.
 
