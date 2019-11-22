@@ -89,7 +89,7 @@ As a best practice, we recommend  *always*  staying current: uninstall the old A
     Install-Module AzureADPreview
     ```
 
-    At the message about an untrusted repository, type **Y**. It will take a minute or so for the new module to install.
+    At the message about an untrusted repository, type **Y**. It will take approximately one minute for the new module to install.
 
 
 ## Enable this preview by using Azure PowerShell
