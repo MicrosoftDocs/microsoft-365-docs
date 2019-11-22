@@ -14,7 +14,7 @@ ms.collection: m365-security-compliance
 
 # Insider risk management policies (preview)
 
-Insider risk management policies determine which employees are monitored and which types of risk signals are configured for alerts. You can quickly create a policy that applies to all users in your organization, or define individual users or groups for management in a policy. Policies support content priority that allow you to focus policy conditions on multiple or specific Microsoft Teams, SharePoint sites, data sensitivity types, and data labels. You can also choose specific alert signals and how much weight they are assigned within a policy, effectively determining the weight of each alert trigger in the policy. Policies windows allow you to define the time frame to apply the policy to alert activities and are used to determine the duration of the policy once activated.
+Insider risk management policies determine which employees are monitored and which types of risk signals are configured for alerts. You can quickly create a policy that applies to all users in your organization, or define individual users or groups for management in a policy. Policies support content priority that allow you to focus policy conditions on multiple or specific Microsoft Teams, SharePoint sites, data sensitivity types, and data labels. You can also choose specific alert signals and how much weight they are assigned within a policy, effectively determining the weight of each alert trigger in the policy. Policies windows allow you to define the time frame to apply the policy to alert activities and are used to determine the duration of the policy once activated. The maximum limit policies is currently capped at five active policies at the same time, though you can configure additional inactive policies and activate and deactivate policies as needed.
 
 ## Policy dashboard
 
@@ -31,13 +31,16 @@ The policy dashboard allows you to quickly see the policies in your organization
 
 Insider risk management templates are pre-defined policy conditions that define the types of risk signals monitored by a policy. Each policy must have a template assigned in the policy creation wizard before the policy is created. The following templates are available:
 
-- **Departing employee data theft**: When employees leave your organization, there are specific risk signals that are typically associated with data theft by departing employees. This policy template prioritizes these signals and focuses detection and alerts to this risk area. TALHAH - DETAILS?
-- **Data leaks**: TALHAH - DETAILS?
-- **Offensive language in communication**: TALHAH - DETAILS?
+- **Departing employee data theft**: When employees leave your organization, there are specific risk signals typically associated with data theft by departing employees. This policy template prioritizes these signals and focuses detection and alerts to this risk area. Data theft for departing employees may include downloading files from SharePoint Online, copying files to portable devices such as USB drives, printing files, and copying data to personal cloud messaging and storage services near their employment resignation and end dates. This template prioritizes signals relating to these activities and how the may corelate with employee employment status.
+- **Data leaks**: Protecting data and preventing data leaks is a constant challenge for most organizations, particularly with the rapid grow of new data created by employees, devices, and services. Employees are empowered to create, store, and share information across services and devices that make managing data leaks increasingly more complex and difficult. Data leaks can include accidental oversharing of information outside your organization or data theft with malicious intent. This template prioritizes real-time detection of suspicious SharePoint Online data downloads, file and folder sharing, copying files to portable devices such as USB drives, printing files, and copying data to personal cloud messaging and storage services.
+- **Offensive language in communication**: Detecting and taking action to prevent offensive and abusive behavior is a critical component of preventing risk. Built-in offensive language classifiers in Microsoft 365 can scan sent email messages from Exchange Online mailboxes in your organization for different types of compliance issues. These classifiers use a combination of artificial intelligence and keywords to identify language in email likely to violate anti-harassment policies. Use this template to quickly create a policy that uses these classifiers to automatically detect email message content that may be considered abusive or offensive. Insider risk management uses classifiers that scan sent email messages for English language terms and sentiment for the following language types:
+    - **Threat**: Scans for threats to commit violence or physical harm to a person or property.
+    - **Harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin
+    - **Profanity**: Scans for profane expressions that embarrass most people.
 
 ## Create a new policy
 
-To create a new insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft 365 compliance center. The maximum limit policies is currently capped at five active policies at the same time, though you can configure additional inactive policies and activate and deactivate policies as needed.
+To create a new insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft 365 compliance center.
 
 Complete the following steps to create a new policy:
 
@@ -49,17 +52,17 @@ Complete the following steps to create a new policy:
     - **Select template (required)**: Select one of the templates to define the types of signals monitored by the policy.
 4. On the **Users** page, select **Add user or group** to define which users are subject to the policy. Select **Next** to continue.
 5. On the **Content priority** page, assign the sources for user activities in one or more of the content sources and then select **Next**:
-    - Microsoft Teams: Select **Add Teams group** and select the Teams organization you want to prioritize. For example, *"group1@teams.com"*.
+    - Microsoft Teams: Select **Add Teams group** and select the Microsoft Teams organization you want to prioritize. For example, *"group1@teams.com"*.
     - SharePoint sites: Select **Add SharePoint site** and select the SharePoint organization you want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
     - Sensitivity type: Select **Add sensitivity type** and select the sensitivity type you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
     - Labels: Select **Add label** and select the label you want to prioritize. For example, *"Confidential"* and *"Secret"*.
-6. On the **Choose alert indicators** page, select one or more alerts and define the policy weighting for each. TALHAH - CAN'T SELECT, WHAT IF YOU DON'T SELECT?
-7. On the **Monitoring window** page, choose the time period for the policy. Select **Next** to continue. TALHAH - DEFAULT SETTINGS? DETAILS FOR CHECK ACTIVITY POST TERMINATION?
+6. On the **Choose alert indicators** page, select one or more alerts and define the policy weighting for each.
+7. On the **Monitoring window** page, choose the time period for the policy. Select **Next** to continue.
 8. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
 ## Manage a policy
 
-To manage an existing insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft 365 compliance center. 
+To manage an existing insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft 365 compliance center.
 
 Complete the following steps to manage an existing policy:
 
