@@ -59,7 +59,7 @@ These procedures require the preview version of the Azure Active Directory Power
   
 As a best practice, we recommend  *always*  staying current: uninstall the old AzureADPreview or old AzureAD version and get the latest one. 
   
-1. In your search bar, type Windows PowerShell.
+1. In the search bar, type Windows PowerShell.
     
 2. Right-click on **Windows PowerShell** and select **Run as Administrator**.
     
