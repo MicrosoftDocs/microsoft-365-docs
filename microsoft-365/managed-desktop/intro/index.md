@@ -30,14 +30,14 @@ Your end users will enjoy the latest versions of Windows 10 and Office 365 ProPl
 
 Of course there's nothing stopping you from obtaining and managing your own devices and Microsoft 365 deployments yourself. So what does Microsoft Managed Desktop offer beyond that?
 
-For your end users:
+Our policies and security baseline offers your end users these benefits:
 
 - Boot times for Microsoft Managed Desktop devices about one-fourth as long.
 - At least twice the battery life
 - About one-third as many device crashes per year
 - Device mobility through [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), allowing users to have the same experience no matter what device to sign into
 
-For your IT admins:
+Your IT admins benefit from these features:
 
 - Insights dashboards constantly keeping you up to date on usage, reliability, device health, and other data on devices and users
 - About *one-tenth* the amount of time needed to update 95% of devices
@@ -85,9 +85,14 @@ These topics describe the steps you'll need to take in your organization to prep
 **Get started**
 Once you're ready to enroll, this section includes the steps to follow to actually join the service, obtain and set up devices, prep your end users, and deploy apps.
 
-- [Add Admin contacts in Microsoft Managed Desktop Admin portal](../get-started/add-admin-contacts.md)
+- [Add and verify admin contacts in the Admin portal](../get-started/add-admin-contacts.md)
+- [Adjust conditional access](../get-started/conditional-access.md)
+- [Assign licenses](../get-started/assign-licenses.md)
+- [Install Intune Company Portal on on devices](../get-started/company-portal.md)
+- [Enable Enterprise State Roaming](../get-started/enterprise-state-roaming.md)
 - [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md)
-- [Deploy apps to Microsoft Managed Desktop devices](../get-started/deploy-apps.md)
+- [Get your users ready to use devices](../get-started/get-started-devices.md)
+- [Deploy apps to devices](../get-started/deploy-apps.md)
 
 **Working with Microsoft Managed Desktop**
 This section includes information about your day-to-day life with the service, such as how your IT admins can get support if needed, how your end users get support, managing your apps once deployed, and how to work the customizable settings on devices.
