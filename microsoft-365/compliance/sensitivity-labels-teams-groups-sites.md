@@ -65,7 +65,7 @@ As a best practice, we recommend  *always*  staying current: uninstall the old A
     
     ![Open PowerShell as "Run as administrator."](../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
   
-2. Check installed module:
+3. Check which module is installed by running the following command:
     
     ```
     Get-InstalledModule -Name "AzureAD*"
