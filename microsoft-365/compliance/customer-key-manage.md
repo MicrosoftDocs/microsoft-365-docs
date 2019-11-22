@@ -69,7 +69,7 @@ Customer Key handles DEPs differently between the different Office 365 services.
 
 **Exchange Online and Skype for Business:** You can create up to 50 DEPs. For instructions, see [Create a data encryption policy (DEP) for use with Exchange Online and Skype for Business](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business).
 
-**SharePoint Online, including Teams Sites, and OneDrive for Business:** A DEP applies to data in one geographic location, also called a _geo_. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP. Normally, you create the DEP when you set up Customer Key. For instructions, see [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo).
+**SharePoint Online, OneDrive for Business, and Teams files** A DEP applies to data in one geographic location, also called a _geo_. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP. Normally, you create the DEP when you set up Customer Key. For instructions, see [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo).
 
 > [!WARNING]
 > Isn't it also one DEP for an entire forest for SPO? That means there might be multiple tenants on a DEP? I'm a tad confused now about WHO creates the DEP to be honest. JEFF MCDOWELL please enlighten me. ***For information about creating additional DEPs, refer to the setup instructions*** link
@@ -148,7 +148,7 @@ New-MoveRequest <alias>
 
 For more information about this cmdlet, see [Get-MailboxStatistics](https://docs.microsoft.com/en-us/powershell/module/exchange/move-and-migration/new-moverequest?view=exchange-ps).
 
-### Verify encryption completes for SharePoint Online, including Teams Sites, and OneDrive for Business
+### Verify encryption completes for SharePoint Online, OneDrive for Business, and Teams files
 
 Check on the status of encryption by running the Get-SPODataEncryptionPolicy cmdlet as follows:
 
@@ -218,9 +218,9 @@ To initiate the data purge path for Exchange Online and Skype for Business, comp
 
     Once Microsoft receives the legal document, we run cmdlets to trigger the data purge which performs crypto deletion of the availability key. Once the data purge cmdlets complete, the data has been purged.
 
-### Revoke your Customer Keys and the availability key for SharePoint Online, including Team Sites, and OneDrive for Business
+### Revoke your Customer Keys and the availability key for SharePoint Online, OneDrive for Business, and Teams files
 
-To initiate the data purge path for SharePoint Online, including Team Sites, and OneDrive for Business, complete these steps:
+To initiate the data purge path for SharePoint Online, OneDrive for Business, and Teams files, complete these steps:
 
 1. Revoke Azure Key Vault access. All key vault admins must agree to revoke access.
 

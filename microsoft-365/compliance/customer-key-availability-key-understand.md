@@ -41,11 +41,11 @@ Automated systems in Exchange Online and Skype for Business may use the availabi
 
 ### SharePoint Online, OneDrive for Business, and Teams files uses
 
-For SharePoint Online, including Teams Sites, and OneDrive for Business, the availability key is NEVER used outside of the recovery capability and customers must explicitly instruct Microsoft to initiate use of the availability key during a recovery scenario. Automated service operations solely rely on your Customer Keys in Azure Key vault.
+For SharePoint Online, OneDrive for Business, and Teams files, the availability key is NEVER used outside of the recovery capability and customers must explicitly instruct Microsoft to initiate use of the availability key during a recovery scenario. Automated service operations solely rely on your Customer Keys in Azure Key vault.
 
 ## Availability key security
 
-Microsoft shares the responsibility of data protection with you by instantiating the availability key and taking extensive measures to protect it. Microsoft does not expose direct control of the availability key to customers. For example, you can only roll (rotate) the keys that you own in Azure Key Vault. For more information about rolling the availability key and other keys stored in Azure Key Vault and used by Customer Key, see [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md).
+Microsoft shares the responsibility of data protection with you by instantiating the availability key and taking extensive measures to protect it. Microsoft does not expose direct control of the availability key to customers. For example, you can only roll (rotate) the keys that you own in Azure Key Vault. For more information about rolling the availability key and other keys stored in Azure Key Vault and used by Customer Key, see [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md). 
 
 ### Availability key secret stores
 
@@ -73,7 +73,7 @@ Any log event that indicates a potential violation of the Microsoft Security Pol
 
 Automated systems in the Office 365 service process all data as it flows through the system to provide cloud service value, for example, anti-virus, e-discovery, data loss prevention, and data indexing. Office 365 does not generate customer-visible logs for this activity, since it's normal system operation. Microsoft personnel do not access your data as part of these normal system operations.
 
-Recall that the availability key is only used outside of recovery operations by Exchange Online and Skype for Business. The availability key for SharePoint Online, OneDrive for Business, and Teams files is only used when you instruct Microsoft to enable it for recovery purposes.
+Recall that the availability key is only used outside of recovery operations by Exchange Online and Skype for Business. The availability key for SharePoint Online, OneDrive for Business, and Teams files is only used when you instruct Microsoft to enable it for recovery purposes.
 
 Customer Key assists you in meeting compliance obligations by allowing you to revoke your keys when you leave the service. When you revoke your keys as part of leaving the service, the availability key is deleted or disabled resulting in cryptographic deletion of your data. Cryptographic deletion mitigates the risk of data remanence which is important for meeting both security and compliance obligations. Customer Key is not a solution for preventing Microsoft personnel from accessing to your data, which is a risk mitigated by the following access controls:
 
