@@ -124,7 +124,7 @@ TALHAL - Data theft and security violations often center around employees and co
 
 ### Actions and behaviors that violate corporate policies
 
-Employee-to-employee communications are often a source of inadvertent or malicious violations of corporate polices relating to offensive language, threats, and cyber-bullying. This type of activity contributes to a hostile work environment and can result in legal actions against both employees and the larger organization. Insider risk management uses new built-in Microsoft 365 classifiers and the *Offensive language in communication* policy template to enable the quick configuration of a policy to automatically detect and alert you of this behavior.
+Employee-to-employee communications are often a source of inadvertent or malicious violations of corporate policies relating to offensive language, threats, and cyber-bullying. This type of activity contributes to a hostile work environment and can result in legal actions against both employees and the larger organization. Insider risk management uses new built-in Microsoft 365 classifiers and the *Offensive language in communication* policy template to enable the quick configuration of a policy to automatically detect and alert you of this behavior.
 
 ## Ready to get started?
 
