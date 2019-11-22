@@ -185,7 +185,7 @@ These uncategorized events represent a variety of activities that can be relevan
 |`ScheduledTaskDeleted`|A scheduled task was deleted.|`TaskName`|
 |`ScheduledTaskEnabled`|A scheduled task was turned on.|`TaskName`|
 |`ScheduledTaskDisabled`|A scheduled task was turned off.|`TaskName`|
-|`ScreenshotTaken`|A process used the [BitBlt API function](https://docs.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-bitblt) to capture an image from the screen.|-|
+|`ScreenshotTaken`|A process used the [BitBlt API function](https://docs.microsoft.com/windows/win32/api/wingdi/nf-wingdi-bitblt) to capture an image from the screen.|-|
 |`SmartScreenAppWarning`|SmartScreen warned about running a downloaded application that is untrusted or malicious.|`ActivityId`, `Experience`|
 |`SmartScreenExploitWarning`|SmartScreen warned about opening a web page that contains an exploit.|`Uri`, `ReferrerUri`|
 |`SmartScreenUrlWarning`|SmartScreen warned about opening a low-reputation URL that might be hosting malware or is a phishing site.|`ActivityId`, `Uri`|

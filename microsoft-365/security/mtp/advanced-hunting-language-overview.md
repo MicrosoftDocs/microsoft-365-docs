@@ -127,7 +127,7 @@ The **Get started** section provides a few simple queries using commonly used op
 
 ## Access query language documentation
 
-For more information on Kusto query language and supported operators, see  [Query Language](https://docs.microsoft.com/en-us/azure/kusto/query/).
+For more information on Kusto query language and supported operators, see  [Query Language](https://docs.microsoft.com/azure/kusto/query/).
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting.md)
