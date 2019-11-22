@@ -54,7 +54,7 @@ These procedures require the preview version of the Azure Active Directory Power
 
 
 > [!IMPORTANT]
-> You cannot install both the preview and GA versions on the same computer at the same time. You can install the module on Windows 10, Windows Server 2016.
+> You cannot install both the preview and GA versions on the same computer at the same time. You can install the module on Windows 10 and Windows Server 2016.
 
   
 As a best practice, we recommend  *always*  staying current: uninstall the old AzureADPreview or old AzureAD version and get the latest one. 
