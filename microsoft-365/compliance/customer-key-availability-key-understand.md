@@ -45,7 +45,7 @@ For SharePoint Online, including Teams Sites, and OneDrive for Business, the ava
 
 ## Availability key security
 
-Microsoft shares the responsibility of data protection with you by instantiating the availability key and taking extensive measures to protect it. Microsoft does not expose direct control of the availability key to customers. For example, you can only roll (rotate) the keys that you own in Azure Key Vault. For more information about rolling the availability key and other keys stored in Azure Key Vault and used by Customer Key, see [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md). 
+Microsoft shares the responsibility of data protection with you by instantiating the availability key and taking extensive measures to protect it. Microsoft does not expose direct control of the availability key to customers. For example, you can only roll (rotate) the keys that you own in Azure Key Vault. For more information about rolling the availability key and other keys stored in Azure Key Vault and used by Customer Key, see [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md).
 
 ### Availability key secret stores
 
