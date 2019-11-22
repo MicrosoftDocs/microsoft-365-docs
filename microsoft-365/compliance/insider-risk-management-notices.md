@@ -66,10 +66,9 @@ To manage an existing insider risk notice, complete the following steps:
 2. On the notice dashboard, select the notice you want to manage.
 3. On the notice details page, select **Edit**
 4. On the **Create a new notice template** page, you can edit the following fields::
-    - **Template name (required)**: Enter a new friendly name for the notice
-    - **Send from (required)**: Update the sender email address for the notice.
-    - **CC (optional)**:
-    - **BCC (optional)**:
-    - **Subject (required)**:
-    - **Message body (required)**:
+    - **Template name (required)**: Enter a new friendly name for the notice. This name appears on the list of notices on the notice dashboard and in the notice selection list when sending notices from a case.
+    - **Send from (required)**: Update the sender email address for the notice. This address will appear in the **From:** field in all notices sent to employees unless changed when sending a notice from a case.
+    - **Cc and Bcc (optional)**: Update optional users or groups to be notified of the policy match, selected from the Active Directory for your subscription.
+    - **Subject (required)**: Update information that appears in the subject line of the message, supports text characters.
+    - **Message body (required)**: Update information that appears in the message body, supports text or HTML values.
 5. Select **Save** to update and save the notice.
