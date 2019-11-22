@@ -11,7 +11,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
-ms.date: 03/11/2019
+ms.date: 11/22/2019
 ms.collection:
 - M365-security-compliance
 description: "Integrate your organization's SIEM server with Office 365 Advanced Threat Protection and related threat events in the Office 365 Activity Management API."
@@ -44,7 +44,7 @@ The SIEM server or other similar system should poll the **audit.general** worklo
 
 ## Related topics
 
-[Office 365 Threat Investigation and Response](office-365-ti.md)
+[Office 365 threat investigation and response](office-365-ti.md)
 
 [Automated incident response (AIR) in Office 365](automated-investigation-response-office.md)
 
