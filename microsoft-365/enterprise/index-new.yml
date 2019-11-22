@@ -39,7 +39,7 @@ highlightedContent:
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   title: Get help with Microsoft 365 Enterprise and other resources # < 60 chars (optional)
-  summary: Select a card to learn more about Microsoft 365 Enterprise features and services. # < 160 chars (optional)
+  summary: Explore Microsoft 365 Enterprise deployment guidance, features, and services. # < 160 chars (optional)
   items:
     # Card
     - title: Follow the deployment roadmap
