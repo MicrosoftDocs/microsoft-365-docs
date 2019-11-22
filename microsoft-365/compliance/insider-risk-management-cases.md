@@ -31,6 +31,11 @@ The case dashboard allows you to view the status of cases and to select individu
 - **Cases over time**:
 - **Statistics**:
 
+Case contributors
+
+- Permanent
+- Temporary
+
 
 ## Create a new case
 

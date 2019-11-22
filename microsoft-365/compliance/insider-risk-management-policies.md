@@ -22,14 +22,14 @@ The policy dashboard allows you to quickly see the policies in your organization
 
 - **Policy name**: The name assigned to the policy in the policy wizard.
 - **Active alerts**: The number of active alerts for each policy.
-- **Total alerts**: The total number of alerts created from the policy.
-- **Total actioned alerts**: The total number of alerts the resulted in cases from the policy.
-- **Policy effectiveness**: The percentage of cases divided by alerts for the policy.
+- **Total alerts**: The total number of alerts created from the policy in the last 365 days.
+- **Total actioned alerts**: The total number of alerts the resulted in cases from the policy in the last 365 days.
+- **Policy effectiveness**: The percentage of cases divided by alerts for the policy for the last 365 days.
 - **Active status**: The status of the case, either *Active* or *Inactive*.
 
 ## Policy templates
 
-Insider risk management templates are pre-defined policy conditions that define the types of risk signals monitored by a policy. Each policy must have a template assigned in the policy creation wizard before the policy is created. The following playbooks are available:
+Insider risk management templates are pre-defined policy conditions that define the types of risk signals monitored by a policy. Each policy must have a template assigned in the policy creation wizard before the policy is created. The following templates are available:
 
 - **Departing employee data theft**: When employees leave your organization, there are specific risk signals that are typically associated with data theft by departing employees. This policy template prioritizes these signals and focuses detection and alerts to this risk area. TALHAH - DETAILS?
 - **Data leaks**: TALHAH - DETAILS?
@@ -37,7 +37,7 @@ Insider risk management templates are pre-defined policy conditions that define 
 
 ## Create a new policy
 
-To create a new insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft 365 compliance center. The maximum limit for active policies is currently capped at five active policies.
+To create a new insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft 365 compliance center. The maximum limit policies is currently capped at five active policies at the same time, though you can configure additional inactive policies and activate and deactivate policies as needed.
 
 Complete the following steps to create a new policy:
 
@@ -49,10 +49,10 @@ Complete the following steps to create a new policy:
     - **Select template (required)**: Select one of the templates to define the types of signals monitored by the policy.
 4. On the **Users** page, select **Add user or group** to define which users are subject to the policy. Select **Next** to continue.
 5. On the **Content priority** page, assign the sources for user activities in one or more of the content sources and then select **Next**:
-    - Microsoft Teams: Select **Add Teams group** and select the Teams organization you want to prioritize. For example, "group1@teams.com".
-    - SharePoint sites: Select **Add SharePoint site** and select the SharePoint organization you want to prioritize. For example, "group1@contoso.sharepoint.com/sites/group1".
-    - Sensitivity type: Select **Add sensitivity type** and select the sensitivity type you want to prioritize. For example, "U.S. Bank Account Number" and "Credit Card Number".
-    - Labels: Select **Add label** and select the label you want to prioritize. For example, "Confidential" and "Secret".
+    - Microsoft Teams: Select **Add Teams group** and select the Teams organization you want to prioritize. For example, *"group1@teams.com"*.
+    - SharePoint sites: Select **Add SharePoint site** and select the SharePoint organization you want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - Sensitivity type: Select **Add sensitivity type** and select the sensitivity type you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
+    - Labels: Select **Add label** and select the label you want to prioritize. For example, *"Confidential"* and *"Secret"*.
 6. On the **Choose alert indicators** page, select one or more alerts and define the policy weighting for each. TALHAH - CAN'T SELECT, WHAT IF YOU DON'T SELECT?
 7. On the **Monitoring window** page, choose the time period for the policy. Select **Next** to continue. TALHAH - DEFAULT SETTINGS? DETAILS FOR CHECK ACTIVITY POST TERMINATION?
 8. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
