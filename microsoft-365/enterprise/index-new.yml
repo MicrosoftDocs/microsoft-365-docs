@@ -15,7 +15,7 @@ metadata:
   ms.collection: M365-subscription-management
   author: robmazz #Required; your GitHub user alias, with correct capitalization.
   ms.author: robmazz #Required; microsoft alias of author; optional team alias.
-  ms.date: 11/15/2019 #Required; mm/dd/yyyy format.
+  ms.date: 11/29/2019 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -23,7 +23,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Get an overview
+    - title: Learn about Microsoft 365 Enterprise
       itemType: get-started
       url: microsoft-365-overview.md
     # Card
@@ -42,7 +42,7 @@ conceptualContent:
   summary: Select a card to learn more about Microsoft 365 Enterprise features and services. # < 160 chars (optional)
   items:
     # Card
-    - title: Follow a deployment roadmap
+    - title: Follow the deployment roadmap
       links:
         - url: deploy-microsoft-365-enterprise.md
           itemType: deploy
@@ -61,7 +61,7 @@ conceptualContent:
       links:
         - url: identity-infrastructure.md
           itemType: how-to-guide
-          text: Identity
+          text: Identity infrastructure
         - url: https://docs.microsoft.com/windows/deployment/
           itemType: get-started
           text: Windows 10 Enterprise
@@ -91,16 +91,16 @@ conceptualContent:
       links:
         - url: https://docs.microsoft.com/microsoft-365/business
           itemType: get-started
-          text: Business
+          text: Microsoft 365 Business
         - url: https://docs.microsoft.com/education
           itemType: get-started
-          text: Education
+          text: Microsoft 365 Education
         - url: https://www.microsoft.com/microsoft-365/government
           itemType: get-started
-          text: Government
-        - url: https://m365forcampaigns.microsoft.com/
+          text: Microsoft 365 Government
+        - url: https://docs.microsoft.com/microsoft-365/campaigns/
           itemType: get-started
-          text: Campaigns
+          text: Microsoft 365 for Campaigns
 
 # additionalContent section (optional)
 # Card with summary style
