@@ -32,12 +32,12 @@ Investigate the alerts that affect your network, understand what they mean, and 
 ## Investigate an incident
 
 1. Select an incident from the incident queue. <BR> This opens a side panel and gives a preview of important information such as status, severity, category, and the impacted entities.
- ![Image of incident side panel](../images/incident-side-panel.png)
+
+    ![Image of incident side panel](../images/incident-side-panel.png)
 
 2. Select **Open incident page**. <BR> This opens the incident page where you'll find more information incident details, comments and actions, tabs (alerts, devices, users, investigations, evidence).
 
    ![Image of incident details](../images/indicent-details.png)
-
     
     Clicking the **Linked by** field shows an elaborate explanation for the reason the alerts were correlated. 
 

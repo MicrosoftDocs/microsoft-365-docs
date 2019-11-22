@@ -37,24 +37,34 @@ The incident queue exposes customizable columns that give you visibility into di
 
 The incident queue also exposes multiple filtering options, that when applied, enable you to choose to perform a broad sweep of all existing incidents in your environment, or decide to focus on a specific scenario or threat. Applying filters on the incident queue can help determine which incident requires immediate attention. 
 
-## Filter by severity
-The severity of an incident is indicative of the impact it can have in your assets. The higher the severity the bigger the impact and typically requires the most immediate attention. 
+## Available filters
 
-Incident severity | Description
-:---|:---
-High </br>(Red) | Threats often associated with advanced persistent threats (APT). These incidents indicate a high risk due to the severity of damage they can inflict on entities.
-Medium </br>(Orange) | Threats rarely observed in the organization, such as anomalous registry change, execution of suspicious files, and observed behaviors typical of attack stages.
-Low </br>(Yellow) | Threats associated with prevalent malware and hack-tools that do not necessarily indicate an advanced threat targeting the organization.
-Informational </br>(Grey) | Informational incidents are those that might not be considered harmful to the network but might be good to keep track of.
-
-## Filter by owner
-You can choose to filter the list by selecting assigned to anyone or ones that are assigned to you.
-
-## Filter by status
+### Status
 You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved.
 
-## Filter by data sensitivity
-Some attacks focus on targeting to exfiltrate sensitive or valauble data. By applying a filter to see if sensitive data is involved in the incident, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents.
+### Severity
+The severity of an incident is indicative of the impact it can have in your assets. The higher the severity the bigger the impact and typically requires the most immediate attention. 
+
+### Assigned to (owner)
+You can choose to filter the list by selecting assigned to anyone or ones that are assigned to you.
+
+### Multiple alerts 
+Filter to see only incidents containing more than one alert. This could be an indication for an attack that is more complex or progressed in the kill chain. 
+
+
+### Multiple service sources 
+Filter to only see incidents that contain alerts from different sources (Microsoft Defender ATP, Microsoft Cloud App Security, Azure ATP, Office ATP)
+### Service sources
+By choosing a specific source, you can focus on incidents that contain at least one alert from that chosen source. 
+
+### Multiple categories 
+You can choose to see only incidents that have mapped to multiple categories of the kill chain and can potentially cause more damage. 
+
+### Categories
+Choose specific categories to focus on a specific step in the kill chain
+
+### Data sensitivity
+Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter to see if sensitive data is involved in the incident, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents.
 
 
 ## Next steps
