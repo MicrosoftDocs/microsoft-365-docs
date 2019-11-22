@@ -58,7 +58,7 @@ Complete the following steps to create a new insider risk management notice temp
     - **Message body (required)**: Information that appears in the message body, supports text or HTML values.
 4. Select **Save** to create and save the notice.
 
-## Manage an existing notice
+## Manage an existing notice template
 
 To manage an existing insider risk management notice template, complete the following steps:
 
