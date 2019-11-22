@@ -32,6 +32,20 @@
           href: insider-risk-management-cases.md
         - name: Create insider risk notices (preview)
           href: insider-risk-management-notices.md
+    - name: Communication compliance (preview)
+      items: 
+        - name: Learn about communication compliance (preview)
+          href: communication-compliance.md
+        - name: Configure communication compliance in Microsoft 365 (preview)
+          href: communication-compliance-configure.md
+        - name: Investigate and remediate communication compliance alerts (preview)
+          href: communication-compliance-investigate-remediate.md
+        - name: Feature reference for communication compliance (preview)
+          href: communication-compliance-feature-reference.md
+        - name: Supervision policies in Office 365
+          href: supervision-policies.md
+        - name: Configure supervision policies for Office 365
+          href: configure-supervision-policies.md
     - name: Protect user and device access
       href: protect-access-to-data-and-services.md
     - name: Customer Lockbox
@@ -48,20 +62,6 @@
           href: controlling-your-data-using-customer-key.md
         - name: Service encryption with Customer Key for Office 365 FAQ
           href: service-encryption-with-customer-key-faq.md
-    - name: Communication compliance (preview)
-      items: 
-        - name: Learn about communication compliance (preview)
-          href: communication-compliance.md
-        - name: Configure communication compliance in Microsoft 365 (preview)
-          href: communication-compliance-configure.md
-        - name: Investigate and remediate communication compliance alerts (preview)
-          href: communication-compliance-investigate-remediate.md
-        - name: Feature reference for communication compliance (preview)
-          href: communication-compliance-feature-reference.md
-        - name: Supervision policies in Office 365
-          href: supervision-policies.md
-        - name: Configure supervision policies for Office 365
-          href: configure-supervision-policies.md
     - name: Information barriers
       href: information-barriers.md
       items: 

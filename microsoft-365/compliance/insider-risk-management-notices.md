@@ -14,7 +14,7 @@ ms.collection: m365-security-compliance
 
 # Insider risk management notices (preview)
 
-Insider risk management notices allow you to send email notices to employees when their activities generate an insider risk policy match and alert. In most cases, employee actions that generate alerts are the result of mistakes or inadvertent activities without ill intent. Notices serve as reminders to employees to be more careful and can also be used to provide refresher training or policy guideline resources. Notices can be an important part of your internal compliance training program and can help create a documented audit trail for employees with recurring risk activities.
+Insider risk management notices allow you to send email messages to employees when their activities generate an insider risk policy match and alert. In most cases, employee actions that generate alerts are the result of mistakes or inadvertent activities without ill intent. Notices serve as simple reminders to employees to be more careful or to provide links or information for refresher training or corporate policy resources. Notices can be an important part of your internal compliance training program and can help create a documented audit trail for employees with recurring risk activities.
 
 You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices can only be sent to the employee email address associated with the policy match that generated the specific alert for remediation. When selecting a notice template to apply to a policy violation as part of the remediation workflow, you can choose to accept the field values defined in the template or overwrite the fields as needed.
 
