@@ -20,7 +20,7 @@ You can create notice templates if you want to send users an email reminder noti
 
 ## Notice dashboard
 
-The **Notices** dashboard displays a list of configured notice templates and allows you to create new notice templates. The notice templates are listed in reverse date order with the most recent notice template listed first. TALHAH - DELETE NOTICE TEMPLATE FROM DASHBOARD? CHANGE SORTING? FILTERING NOT WORKING?
+The Notices dashboard displays a list of configured notice templates and allows you to create new notice templates. The notice templates are listed in reverse date order with the most recent notice template listed first.
 
 ## HTML for notices
 
@@ -39,11 +39,8 @@ If you'd like to create more than a simple text-based email message for notifica
 </html>
 ```
 
-TALHAH
-
 > [!NOTE]
 > HTML href attribute implementation in the insider risk management notice templates currently support only single quotation marks instead of double quotation marks for URL references.
-
 
 ## Create a new notice template
 

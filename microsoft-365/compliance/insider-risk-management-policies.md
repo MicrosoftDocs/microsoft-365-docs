@@ -22,10 +22,10 @@ The policy dashboard allows you to quickly see the policies in your organization
 
 - **Policy name**: The name assigned to the policy in the policy wizard.
 - **Active alerts**: The number of active alerts for each policy.
-- **Total confirmed alerts**: The number of confirmed alerts that opened a new case for the policy.
-- **Total actioned alerts**: TALHAH - ?
-- **Policy effectiveness**: TALHAH - ?
-- **Active status**: TALHAH - can you have a policy that is NOT active?
+- **Total alerts**: The total number of alerts created from the policy.
+- **Total actioned alerts**: The total number of alerts the resulted in cases from the policy.
+- **Policy effectiveness**: The percentage of cases divided by alerts for the policy.
+- **Active status**: The status of the case, either *Active* or *Inactive*.
 
 ## Policy templates
 
@@ -33,7 +33,6 @@ Insider risk management templates are pre-defined policy conditions that define 
 
 - **Departing employee data theft**: When employees leave your organization, there are specific risk signals that are typically associated with data theft by departing employees. This policy template prioritizes these signals and focuses detection and alerts to this risk area. TALHAH - DETAILS?
 - **Data leaks**: TALHAH - DETAILS?
-- **Security violation on laptop/PC**: TALHAH - DETAILS?
 - **Offensive language in communication**: TALHAH - DETAILS?
 
 ## Create a new policy
@@ -83,10 +82,16 @@ Complete the following steps to manage an existing policy:
 10. On the **Monitoring window** page, choose the time period for the policy. Select **Next** to continue.
 11. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to update and activate the policy.
 
+## Deactivate a policy
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
+2. On the policy dashboard, select the policy you want to deactivate.
+3. ?
+
 ## Delete a policy
 
-> [!IMPORTANT]
-> TALHAH - Deleting a policy does remove existing policy match alerts?
+> [!NOTE]
+> Deleting a policy does not delete active or archived alerts generated from the policy.
 
 To delete an existing insider risk management policy, complete the following steps:
 
