@@ -71,7 +71,7 @@ As a best practice, we recommend  *always*  staying current: uninstall the old A
     Get-InstalledModule -Name "AzureAD*"
     ```
 
-3. To uninstall a previous version of AzureADPreview or AzureAD, run this command:
+3. To uninstall a previous version of AzureADPreview or AzureAD, run the following command:
   
     ```
     Uninstall-Module AzureADPreview
