@@ -37,7 +37,7 @@ Insider risk management templates are pre-defined policy conditions that define 
 
 ## Create a new policy
 
-To create a new insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft 365 compliance center. The maximum limit for active policies is currently capped at five policies active simulatenously.
+To create a new insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft 365 compliance center. The maximum limit for active policies is currently capped at five active policies.
 
 Complete the following steps to create a new policy:
 
