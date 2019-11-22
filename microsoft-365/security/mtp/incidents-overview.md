@@ -24,15 +24,15 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-The basis of all incidents are alerts. Alerts are created when an anomalous event is seen on your network. Individual alerts provide valuable clues in what's happening on individual events or entities. However, attacks typically employ various attack vectors to carry out a breach. Piecing individual clues together can be a challenging and time-consuming task. 
+The basis of all incidents are alerts. Alerts are created when a malicious event or activity is seen on your network. Individual alerts provide valuable clues in what's happening on individual events or entities. However, attacks typically employ various attack vectors to carry out a breach. Piecing individual clues together can be a challenging and time-consuming task. 
 
 Microsoft Threat Protection connects the dots on individual alerts seen across endpoints, identities, and mailboxes to tell the broader story of an attack.  Suspicious events that show characteristics of being part of a larger attack are aggregated into an incident. 
 
-You'll know exactly where an attack started, impacted endpoints, affected users, affected mailboxes, and other details to help you see the extent of the attack.
+You'll know exactly where an attack started, impacted endpoints, users, mailboxes, and other details to help you see the extent of the attack.
 
 
 Malicious events on the following entities are surfaced in Microsoft 365 security center:
-- Devices or endpoints
+- Devices
 - Identities
 - Mailboxes
 
