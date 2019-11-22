@@ -31,6 +31,26 @@ The case dashboard allows you to view the status of cases and to select individu
 - **Cases over time**:
 - **Statistics**:
 
+## Investigate a case
+
+The **User activity** tab is one of the most powerful tools for internal risk analysis and investigation in the insider risk management solution. This tab is structured to enable a quick view of a case, including a historical timeline of alerts, alerts details, the current risk score for the user in the case, and controls to take effective action to contain the risks in the case.
+
+![Insider risk management policy dashboard](media/insider-risk-temp-user-activities.png)
+
+1. **Case details**: The **Case details** pane summarizes the case details for risk analysts and investigators. It includes the following areas:
+    - Case name:
+    - Case status:
+    - Current user risk level:
+    - Alerts confirmed:
+    - Content at risk:
+2. **Date and window time filters**:
+3. **Risk alert activity and details**:
+4. **Risk activity legend**:
+5. **Risk activity chronology**:
+6. **Case actions**:
+7. **Case export**:
+
+
 Case contributors
 
 - Permanent
