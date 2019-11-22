@@ -3,7 +3,7 @@ title: "Set up Customer Key for Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/4/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -187,7 +187,7 @@ For each key vault, you will need to define three separate sets of permissions f
 - Run the Set-AzureRmKeyVaultAccessPolicy cmdlet to assign the necessary permissions.
 
    ```powershell
-   Set-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
+   Set-AzureRmKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
    For example:
@@ -201,12 +201,12 @@ For each key vault, you will need to define three separate sets of permissions f
 - If you intend to use Customer Key with Exchange Online and Skype for Business, you need to give permission to Office 365 to use the key vault on behalf of Exchange Online and Skype for Business. Likewise, if you intend to use Customer Key with SharePoint Online and OneDrive for Business, you need to add permission for the Office 365 to use the key vault on behalf of SharePoint Online and OneDrive for Business. To give permission to Office 365, run the **Set-AzureRmKeyVaultAccessPolicy** cmdlet using the following syntax: 
 
    ```powershell
-   Set-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
+   Set-AzureRmKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
    ```
 
    Where:
 
-    - *vaultname* is the name of the key vault you created.
+    - *vault name* is the name of the key vault you created.
 
     - For Exchange Online and Skype for Business, replace  *Office 365 appID* with `00000002-0000-0ff1-ce00-000000000000`
 
@@ -232,10 +232,10 @@ To enable Soft Delete on your key vaults, complete these steps:
   
 1. Log in to your Azure subscription with Windows Powershell. For instructions, see [Log in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
-2. Run the [Get-AzureRmKeyVault](https://docs.microsoft.com/powershell/module/azurerm.keyvault/get-azurermkeyvault) cmdlet. In this example, *vaultname* is the name of the key vault for which you are enabling soft delete:
+2. Run the [Get-AzureRmKeyVault](https://docs.microsoft.com/powershell/module/azurerm.keyvault/get-azurermkeyvault) cmdlet. In this example, *vault name* is the name of the key vault for which you are enabling soft delete:
 
    ```powershell
-   $v = Get-AzureRmKeyVault -VaultName <vaultname>
+   $v = Get-AzureRmKeyVault -VaultName <vault name>
    $r = Get-AzureRmResource -ResourceId $v.ResourceId
    $r.Properties | Add-Member -MemberType NoteProperty -Name enableSoftDelete -Value 'True'
    Set-AzureRmResource -ResourceId $r.ResourceId -Properties $r.Properties
@@ -244,7 +244,7 @@ To enable Soft Delete on your key vaults, complete these steps:
 3. Confirm soft delete is configured for the key vault by running the **Get-AzureRmKeyVault** cmdlet. If soft delete is configured properly for the key vault, then the  Soft Delete Enabled? property returns a value of **True**:
 
    ```powershell
-   Get-AzureRmKeyVault -VaultName <vaultname> | fl
+   Get-AzureRmKeyVault -VaultName <vault name> | fl
    ```
 
 ### Add a key to each key vault either by creating or importing a key
@@ -254,14 +254,14 @@ There are two ways to add keys to an Azure Key Vault; you can create a key direc
 To create a key directly in your key vault, run the [Add-AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Add-AzureKeyVaultKey) cmdlet as follows:
   
 ```powershell
-Add-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
+Add-AzureKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
 ```
 
 Where:
 
-- *vaultname* is the name of the key vault in which you want to create the key.
+- *vault name* is the name of the key vault in which you want to create the key.
 
-- *keyname* is the name you want to give the new key.
+- *key name* is the name you want to give the new key.
 
   > [!TIP]
   > Name keys using a similar naming convention as described above for key vaults. This way, in tools that show only the key name, the string is self-describing.
@@ -291,7 +291,7 @@ Office 365 requires that the Azure Key Vault subscription is set to Do Not Cance
 To check the recovery level of a key, in Azure PowerShell, run the Get-AzureKeyVaultKey cmdlet as follows:
   
 ```powershell
-(Get-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname>).Attributes
+(Get-AzureKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
 If the _Recovery Level_ property returns anything other than a value of **Recoverable+ProtectedSubscription**, you will need to review this topic and ensure that you have followed all of the steps to put the subscription on the Do Not Cancel list and that you have soft delete enabled on each of your key vaults.
@@ -303,7 +303,7 @@ Immediately following creation or any change to a key, perform a backup and stor
 To create a backup of an Azure Key Vault key, run the [Backup-AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Backup-AzureKeyVaultKey) cmdlet as follows:
 
 ```powershell
-Backup-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname>
+Backup-AzureKeyVaultKey -VaultName <vault name> -Name <key name>
 -OutputFile <filename .backup>
 ```
 
@@ -329,7 +329,7 @@ To verify that your keys have get, wrapKey, and unwrapKey operations enabled:
 Run the [Get-AzureRmKeyVault](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Get-AzureRmKeyVault) cmdlet as follows:
   
 ```powershell
-Get-AzureRMKeyVault -VaultName <vaultname>
+Get-AzureRMKeyVault -VaultName <vault name>
 ```
 
 In the output, look for the Access Policy and for the Exchange Online identity (GUID) or the SharePoint Online identity (GUID) as appropriate. All three of the above permissions must be shown under Permissions to Keys.
@@ -337,7 +337,7 @@ In the output, look for the Access Policy and for the Exchange Online identity (
 If the access policy configuration is incorrect, run the Set-AzureRmKeyVaultAccessPolicy cmdlet as follows:
   
 ```powershell
-Set-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
+Set-AzureRmKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
 ```
 
 For example, for Exchange Online and Skype for Business:
@@ -357,7 +357,7 @@ Set-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365SP-NA-VaultA1
 To verify that an expiration date is not set for your keys run the [Get-AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Get-AzureKeyVaultKey) cmdlet as follows:
   
 ```powershell
-Get-AzureKeyVaultKey -VaultName <vaultname>
+Get-AzureKeyVaultKey -VaultName <vault name>
 ```
 
 An expired key cannot be used by Customer Key and operations attempted with an expired key will fail, and possibly result in a service outage. We strongly recommend that keys used with Customer Key do not have an expiration date. An expiration date, once set, cannot be removed, but can be changed to a different date. If a key must be used that has an expiration date set, change the expiration value to 12/31/9999. Keys with an expiration date set to a date other than 12/31/9999 will not pass Office 365 validation.
@@ -365,7 +365,7 @@ An expired key cannot be used by Customer Key and operations attempted with an e
 To change an expiration date that has been set to any value other than 12/31/9999, run the [Set-AzureKeyVaultKeyAttribute](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Set-AzureKeyVaultKeyAttribute) cmdlet as follows:
   
 ```powershell
-Set-AzureKeyVaultKeyAttribute -VaultName <vaultname> -Name <keyname>
+Set-AzureKeyVaultKeyAttribute -VaultName <vault name> -Name <key name>
 -Expires (Get-Date -Date "12/31/9999")
 ```
 
@@ -379,7 +379,7 @@ Once you've completed all the steps in Azure to set up your key vaults and added
 In Azure PowerShell:
   
 ```powershell
-(Get-AzureKeyVaultKey -VaultName <vaultname>).Id
+(Get-AzureKeyVaultKey -VaultName <vault name>).Id
 ```
 
 ## Office 365: Setting up Customer Key for Exchange Online and Skype for Business

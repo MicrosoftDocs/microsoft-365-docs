@@ -3,7 +3,7 @@ title: "Manage Customer Key for Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/4/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -24,7 +24,7 @@ After you've set up Customer Key for Office 365, you can manage your keys as des
 Before performing a restore, use the recovery capabilities provided by soft delete. All keys that are used with Customer Key are required to have soft delete enabled. Soft delete acts like a recycle bin and allows recovery for up to 90 days without the need to restore. Restore should only be required in extreme or unusual circumstances, for example if the key or key vault is lost. If you must restore a key for use with Customer Key, in Azure PowerShell, run the Restore-AzureKeyVaultKey cmdlet as follows:
   
 ```powershell
-Restore-AzureKeyVaultKey -VaultName <vaultname> -InputFile <filename>
+Restore-AzureKeyVaultKey -VaultName <vault name> -InputFile <filename>
 ```
 
 For example:
@@ -37,12 +37,12 @@ If the key vault already contains a key with the same name, the restore operatio
   
 ## Manage key vault permissions
 
-Several cmdlets are available that enable you to view and, if necessary, remove key vault permissions. You might need to remove permissions, for example, when an employee leaves the team. For each of these tasks, you will use Azure PowerShell. For information about Azure Powershell, see [Overview of Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/azurerm/overview?view=azurermps-6.13.0).
+Several cmdlets are available that enable you to view and, if necessary, remove key vault permissions. You might need to remove permissions, for example, when an employee leaves the team. For each of these tasks, you will use Azure PowerShell. For information about Azure Powershell, see [Overview of Azure PowerShell](https://docs.microsoft.com/powershell/azure/azurerm/overview?view=azurermps-6.13.0).
 
 To view key vault permissions, run the Get-AzureRmKeyVault cmdlet.
 
 ```powershell
-Get-AzureRmKeyVault -VaultName <vaultname>
+Get-AzureRmKeyVault -VaultName <vault name>
 ```
 
 For example:
@@ -54,7 +54,7 @@ Get-AzureRmKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 To remove an administrator's permissions, run the Remove-AzureRmKeyVaultAccessPolicy cmdlet:
   
 ```powershell
-Remove-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> -UserPrincipalName <UPN of user>
+Remove-AzureRmKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
 ```
 
 For example:
@@ -78,7 +78,7 @@ Customer Key handles DEPs differently between the different Office 365 services.
 
 To view a list of all the DEPs you've created for Exchange Online and Skype for Business using the Get-DtaEncryptionPolicy PowerShell cmdlet.
 
-1. Using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. Using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 2. To return all DEPs in your organization, run the Get-DataEncryptionPolicy cmdlet without any parameters.
 
@@ -86,7 +86,7 @@ To view a list of all the DEPs you've created for Exchange Online and Skype for 
   Get-DataEncryptionPolicy
   ```
 
-  For more information about the Get-DataEncryptionPolicy cmdlet, see [Get-DataEncryptionPolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/encryption-and-certificates/get-dataencryptionpolicy?view=exchange-ps).
+  For more information about the Get-DataEncryptionPolicy cmdlet, see  [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-dataencryptionpolicy?view=exchange-ps).
 
 ### Assign a DEP before you migrate a mailbox to the cloud
 
@@ -94,7 +94,7 @@ When you assign the DEP, Office 365 encrypts the contents of the mailbox using t
 
 To assign a DEP to a mailbox before you migrate it to Office 365, run the Set-MailUser cmdlet in Exchange Online PowerShell:
 
-1. Using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. Using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 2. Run the Set-MailUser cmdlet.
 
@@ -102,19 +102,19 @@ To assign a DEP to a mailbox before you migrate it to Office 365, run the Set-Ma
   Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
   ```
 
-  Where *GeneralMailboxOrMailUserIdParameter* specifies a mailbox, and *DataEncryptionPolicyIdParameter* is the ID of the DEP. For more information about the Set-MailUser cmdlet, see [Set-MailUser](https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/set-mailuser?view=exchange-ps).
+  Where *GeneralMailboxOrMailUserIdParameter* specifies a mailbox, and *DataEncryptionPolicyIdParameter* is the ID of the DEP. For more information about the Set-MailUser cmdlet, see [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser?view=exchange-ps).
 
 ### Determine the DEP assigned to a mailbox
 
 To determine the DEP assigned to a mailbox, use the Get-MailboxStatistics cmdlet. The cmdlet returns a unique identifier (GUID).
   
-1. Using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. Using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
    ```powershell
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
    ```
 
-   Where *GeneralMailboxOrMailUserIdParameter* specifies a mailbox and DataEncryptionPolicyID returns the GUID of the DEP. For more information about the Get-MailboxStatistics cmdlet, see [Get-MailboxStatistics](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/get-mailboxstatistics?view=exchange-ps).
+   Where *GeneralMailboxOrMailUserIdParameter* specifies a mailbox and DataEncryptionPolicyID returns the GUID of the DEP. For more information about the Get-MailboxStatistics cmdlet, see [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxstatistics?view=exchange-ps).
   
 2. Run the Get-DataEncryptionPolicy cmdlet to find out the friendly name of the DEP to which the mailbox is assigned.
   
@@ -146,7 +146,7 @@ The time to complete mailbox moves depends on the size of the mailbox. If Custom
 New-MoveRequest <alias>
 ```
 
-For more information about this cmdlet, see [Get-MailboxStatistics](https://docs.microsoft.com/en-us/powershell/module/exchange/move-and-migration/new-moverequest?view=exchange-ps).
+For more information about this cmdlet, see [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest?view=exchange-ps).
 
 ### Verify encryption completes for SharePoint Online, OneDrive for Business, and Teams files
 

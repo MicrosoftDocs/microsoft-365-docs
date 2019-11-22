@@ -3,7 +3,7 @@ title: "Service encryption with Customer Key in Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/4/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -24,9 +24,9 @@ Office 365 provides baseline, volume-level encryption enabled through BitLocker 
 
 ## How service encryption, BitLocker, and Customer Key work together
 
-Service encryption ensures that content at rest is encrypted at the application layer. **Your data is always encrypted at rest in the Office 365 service with BitLocker and DKM**. For more information, see the "Security, Privacy, and Compliance Information for Office 365", and [How Exchange Online secures your email secrets](https://support.office.com/article/989BA10C-F73F-4EFB-AD1B-AF3322E5F376). Customer Key provides additional protection against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters. Service encryption is not meant to prevent Microsoft personnel from accessing customer data. The primary purpose is to assist customers in meeting regulatory or compliance obligations for controlling root keys. Customers explicitly authorize O365 services to use their encryption keys to provide value added cloud services, such as eDiscovery, anti-malware, anti-spam, search indexing, etc.
+Service encryption ensures that content at rest is encrypted at the application layer. **Your data is always encrypted at rest in the Office 365 service with BitLocker and DKM**. For more information, see the "Security, Privacy, and Compliance Information for Office 365", and [How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md). Customer Key provides additional protection against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters. Service encryption is not meant to prevent Microsoft personnel from accessing customer data. The primary purpose is to assist customers in meeting regulatory or compliance obligations for controlling root keys. Customers explicitly authorize O365 services to use their encryption keys to provide value added cloud services, such as eDiscovery, anti-malware, anti-spam, search indexing, etc.
 
-Customer Key is built on service encryption and lets you provide and control encryption keys. Office 365 then uses these keys to encrypt your data at rest as described in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx). Customer Key helps you meet compliance obligations because you control the encryption keys that Office 365 uses to encrypt and decrypt data.
+Customer Key is built on service encryption and lets you provide and control encryption keys. Office 365 then uses these keys to encrypt your data at rest as described in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products.aspx). Customer Key helps you meet compliance obligations because you control the encryption keys that Office 365 uses to encrypt and decrypt data.
   
 Customer Key enhances the ability of your organization to meet the demands of compliance requirements that specify key arrangements with the cloud service provider. With Customer Key, you provide and control the encryption keys for your Office 365 data at-rest at the application level. As a result, you exercise control over your organization's keys. If you decide to exit the service, you revoke your organization's keys. By revoking the keys, the data is unreadable to the service. For all Office 365 services, key revocation is the first step on the path towards data deletion.
 
@@ -125,21 +125,19 @@ You can't enable Customer Key with a trial subscription. By definition, trial su
   
 ## Estimating Customer Key costs
 
-In addition to the licensing required for Customer Key, you will incur a cost for Key Vault usage. [Azure Key Vault pricing details](https://azure.microsoft.com/en-us/pricing/details/key-vault/) describes the cost model and assists you with estimating. There is no way to predict the exact cost that you'll incur because usage patterns vary. Experience has shown that the cost is very low and generally falls within the range of $0.002 to $0.005 per user per month plus the cost of HSM-backed keys. The cost also varies according to the logging configuration you choose and the amount of Azure storage you use for Azure Key Vault logs.
+In addition to the licensing required for Customer Key, you will incur a cost for Key Vault usage. [Azure Key Vault pricing details](https://azure.microsoft.com/pricing/details/key-vault/) describes the cost model and assists you with estimating. There is no way to predict the exact cost that you'll incur because usage patterns vary. Experience has shown that the cost is very low and generally falls within the range of $0.002 to $0.005 per user per month plus the cost of HSM-backed keys. The cost also varies according to the logging configuration you choose and the amount of Azure storage you use for Azure Key Vault logs.
 
 ## Microsoft's approach to third-party data requests
 
 Customer Key wasn't designed to respond to law enforcement subpoenas. Regulated customers use Customer Key to meet their internal or external compliance obligations. Microsoft takes third-party requests for customer data very seriously. As a cloud service provider, we always advocate for the privacy of customer data. In the event we get a subpoena, we always attempt to redirect the third party to the customer to obtain the information.
   
-See the [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data) regarding third-party data requests and for periodic updates about requests that we receive. Also, see "Disclosure of Customer Data" in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
+See the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) regarding third-party data requests and for periodic updates about requests that we receive. Also, see "Disclosure of Customer Data" in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products.aspx).
 
 ## We welcome your feedback
 
 To provide feedback on Customer Key, including the documentation, send your ideas, suggestions, and perspectives to customerkeyfeedback@microsoft.com.
   
 ## Related articles
-
-- [Learn about the availability key](customer-key-availability-key-understand.md)
 
 - [Set up Customer Key for Office 365](customer-key-set-up.md)
 
@@ -150,3 +148,5 @@ To provide feedback on Customer Key, including the documentation, send your idea
 - [Customer Lockbox in Office 365](customer-lockbox-requests.md)
 
 - [Office 365 Service Encryption](office-365-service-encryption.md)
+
+- [Learn about the availability key](customer-key-availability-key-understand.md)

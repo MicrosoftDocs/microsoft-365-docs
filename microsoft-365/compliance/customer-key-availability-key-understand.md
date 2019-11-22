@@ -3,7 +3,7 @@ title: "Learn about the availability key for Office 365 Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/9/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,17 +17,17 @@ description: "Learn about the availability key used to recover lost Office 365 C
 
 The availability key is a root key automatically generated and provisioned when you create a data encryption policy. Office 365 stores and protects the availability key. The availability key is functionally similar to the two root keys that you supply for service encryption with Customer Key. The availability key wraps the keys one tier lower in the key hierarchy. Unlike the keys that you provide and manage in Azure Key Vault, you can't directly access the availability key. Microsoft personnel manage the availability key using PowerShell cmdlets to initiate automated operations that never involve direct access to the availability key.
 
-The primary purpose of the availability key is to provide recovery capability from the unanticipated loss of root keys that you manage. This could be a result of mismanagement or malicious action. If you lose control of your root keys, contact Microsoft Support and Microsoft will assist you through the process of recovery using the availability key. You'll use the availability key to migrate to a new Data Encryption Policy with new root keys you provision.
+The primary purpose of the availability key is to provide recovery capability from the unanticipated loss of root keys that you manage. Loss could be a result of mismanagement or malicious action. If you lose control of your root keys, contact Microsoft Support and Microsoft will assist you through the process of recovery using the availability key. You'll use the availability key to migrate to a new Data Encryption Policy with new root keys you provision.
 
 Storage and control of the availability key are deliberately different from Azure Key Vault keys for three reasons:
 
 - The availability key provides a recovery, "break-glass" capability in the event that control over both Azure Key Vault keys is lost.
 - The separation of logical controls and secure storage locations provides defense-in-depth and protects against the loss of all keys, and your data, from a single attack or point of failure.
-- The availability key provides a high-availability capability in the event that Office 365 services are unable to reach keys hosted in Azure Key Vault due to transient errors. This only applies to Exchange Online and Skype for Business service encryption. SharePoint Online, OneDrive for Business, and Teams files never use the availability key unless you explicitly instruct Microsoft to initiate the recovery process.
+- The availability key provides a high-availability capability in the event that Office 365 services are unable to reach keys hosted in Azure Key Vault due to transient errors. This rule only applies to Exchange Online and Skype for Business service encryption. SharePoint Online, OneDrive for Business, and Teams files never use the availability key unless you explicitly instruct Microsoft to initiate the recovery process.
 
 Sharing the responsibility to protect your data, using a variety of protections and processes for key management, ultimately reduces the risk that all keys (and therefore your data) will be permanently lost or destroyed. Microsoft provides you with sole authority over the disablement or destruction of the availability key when you leave the service. By design, no one at Microsoft has access to the availability key: it is only accessible by Office 365 service code.
 
-See the [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data) for more information about how we secure keys.
+See the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) for more information about how we secure keys.
   
 ## Availability key uses
 
@@ -45,7 +45,7 @@ For SharePoint Online, OneDrive for Business, and Teams files, the availa
 
 ## Availability key security
 
-Microsoft shares the responsibility of data protection with you by instantiating the availability key and taking extensive measures to protect it. Microsoft does not expose direct control of the availability key to customers. For example, you can only roll (rotate) the keys that you own in Azure Key Vault. For more information about rolling the availability key and other keys stored in Azure Key Vault and used by Customer Key, see [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md). 
+Microsoft shares the responsibility of data protection with you by instantiating the availability key and taking extensive measures to protect it. Microsoft does not expose direct control of the availability key to customers. For example, you can only roll (rotate) the keys that you own in Azure Key Vault. For more information about rolling the availability key and other keys stored in Azure Key Vault and used by Customer Key, see [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md).
 
 ### Availability key secret stores
 
@@ -61,7 +61,7 @@ Microsoft employs a defense-in-depth strategy to prevent malicious actors from i
 
 Office 365 is architected to prevent misuse of the availability key. The application layer is the only method through which keys, including the availability key, can be used to encrypt-decrypt data. Only Office 365 service code has the ability to interpret and traverse the key hierarchy for encryption-decryption activities. If a malicious Microsoft administrator were to circumvent controls to extract an availability key from the secret store, the key would be unusable to access customer data. Logical isolation exists between the storage locations of Customer Keys, availability keys, other hierarchical keys, and customer data, which mitigates the risk of data exposure in the event one or more locations are compromised.
 
-Access controls are implemented to prevent unauthorized access to internal systems, including availability key secret stores. Microsoft engineers do not have direct access to the availability key secret stores. For additional detail on access controls, review [Administrative Access Controls in Office 365](https://docs.microsoft.com/en-us/Office365/securitycompliance/office-365-administrative-access-controls-overview).
+Access controls are implemented to prevent unauthorized access to internal systems, including availability key secret stores. Microsoft engineers do not have direct access to the availability key secret stores. For additional detail on access controls, review [Administrative Access Controls in Office 365](https://docs.microsoft.com/Office365/securitycompliance/office-365-administrative-access-controls-overview).
 
 Technical controls prevent Microsoft personnel from logging into highly privileged service accounts (i.e. interactive logon is prevented), which might otherwise be used by attackers to impersonate Office 365 services.
 
@@ -77,22 +77,22 @@ Recall that the availability key is only used outside of recovery operations by 
 
 Customer Key assists you in meeting compliance obligations by allowing you to revoke your keys when you leave the service. When you revoke your keys as part of leaving the service, the availability key is deleted or disabled resulting in cryptographic deletion of your data. Cryptographic deletion mitigates the risk of data remanence which is important for meeting both security and compliance obligations. Customer Key is not a solution for preventing Microsoft personnel from accessing to your data, which is a risk mitigated by the following access controls:
 
-If Microsoft employees ever need access to your tenant, as part of providing support you have requested:
+If Microsoft employees ever need access to your tenant as part of providing support that you have requested:
 
-- The assigned engineer must have a valid support ticket submitted by you
+- The assigned engineer must have a valid support ticket submitted by you.
 
-- The engineer must request privilege escalation to your tenant through an internal escalation tool
+- The engineer must request privilege escalation to your tenant through an internal escalation tool.
 
-- The privileged access escalation is programmatically time-bound and automatically revokes engineer access upon time expiration or logout
+- The privileged access escalation is programmatically time-bound and automatically revokes engineer access upon time expiration or logout.
 
-- The request must be approved by another engineer belonging to an approval group, which enforces segregation of duties
+- The request must be approved by another engineer belonging to an approval group. The approval group enforces segregation of duties.
 
-- If you have Customer Lockbox properly licensed and configured, you will receive a Customer Lockbox request that allows you to approve or deny the engineer's access to your data. If you approve the request, the service generates customer-visible logs for the Customer Lockbox request.
+- If you have Customer Lockbox properly licensed and configured, you'll receive a Customer Lockbox request that allows you to approve or deny the engineer's access to your data. If you approve the request, the service generates customer-visible logs for the Customer Lockbox request.
   
 > [!IMPORTANT]
-> Customer Lockbox is a technical control that prevents Microsoft engineers from accessing your tenant if you deny the request. The system will not provide the engineer access to your tenant if you deny the request. This is not a process control. For more information on Customer Lockbox, review [Customer Lockbox in Office 365](https://docs.microsoft.com/en-us/microsoft-365/compliance/customer-lockbox-requests).
+> Customer Lockbox is a technical control that prevents Microsoft engineers from accessing your tenant if you deny the request. The system will not provide the engineer access to your tenant if you deny the request. This isn't a process control. For more information on Customer Lockbox, review [Customer Lockbox in Office 365](customer-lockbox-requests.md).
 
-Automated systems in the Office 365 service are approved to access your data to provide cloud service value. When our engineers are approved to access your tenant, you will see logged events in your administrator dashboards. Customer Key is not designed to prevent Microsoft personnel from accessing your data. As part of Customer Key architecture, the availability key does not increase or decrease the risk of Microsoft personnel accessing your data.  
+Automated systems in the Office 365 service are approved to access your data to provide cloud service value. When our engineers obtain approval to access your tenant, you'll see logged events in your administrator dashboards. Customer Key isn't designed to prevent Microsoft personnel from accessing your data. As part of Customer Key architecture, the availability key doesn't increase or decrease the risk of Microsoft personnel accessing your data.  
 
 ## Use the availability key to recover from key loss
 
@@ -108,7 +108,11 @@ This operation is proportional to the number of sites in your organization. Once
 
 ## Availability key in the Customer Key hierarchy
   
-Office 365 uses the availability key to wrap the tier of keys lower in the key hierarchy established for Customer Key service encryption. Different key hierarchies exist between services. Key algorithms also differ between availability keys and other keys in the hierarchy of each applicable service. Two lines: Exchange AK is AES-256 and SharePoint is RSA-2048
+Office 365 uses the availability key to wrap the tier of keys lower in the key hierarchy established for Customer Key service encryption. Different key hierarchies exist between services. Key algorithms also differ between availability keys and other keys in the hierarchy of each applicable service. The key algorithms used by the different services are as follows:
+
+- The Exchange Online and Skype for Business availability key use AES-256.
+
+- The SharePoint Online, OneDrive for Business, and Teams files availability key use RSA-2048.
 
 ### Encryption ciphers used to encrypt keys for Exchange Online and Skype for Business
 
@@ -150,7 +154,7 @@ For SharePoint Online, OneDrive for Business, and Teams files, the availa
 >[!IMPORTANT]
 >Office 365 service code always has a valid login token for reasoning over customer data to provide value-adding cloud services. Therefore, until the availability key has been deleted or disabled, it can be used as a fallback for actions initiated by, or internal to, Exchange Online and Skype for Business such as search index creation or moving mailboxes. This applies to both transient ERRORS and ACCESS DENIED requests to Azure Key Vault.
 
-<!--(TB): This section belongs in the Customer Key documentation - not availability key. Leaving it here for you to move over (didn't want to simply delete it and lose it)  
+<!--(TB): This section belongs in the Customer Key documentation - not availability key. Leaving it here for you to move over (didn't want to simply delete it and lose it)  ***TANNER I KNOW I MOVED THIS DID WE LOSE IT?***
 
 ## How SharePoint Online and OneDrive for Business use the availability key
 

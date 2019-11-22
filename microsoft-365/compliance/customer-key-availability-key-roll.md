@@ -3,7 +3,7 @@ title: "Roll or rotate a Customer Key or an availability key"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/4/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -47,7 +47,7 @@ To instruct Customer Key to use the new key to encrypt mailboxes in Office 365 r
 1. Run the Set-DataEncryptionPolicy cmdlet in Azure PowerShell:
   
    ```powershell
-   Set-DataEncryptionPolicy <policyname> -Refresh
+   Set-DataEncryptionPolicy <policy name> -Refresh
    ```
 
    Within 72 hours, the active mailboxes associated with this DEP become encrypted with the new key.
@@ -83,8 +83,8 @@ Microsoft does not expose direct control of the availability key to customers. F
 
 - [Service encryption with Customer Key for Office 365](customer-key-overview.md)
 
-- [Learn about the availability key](customer-key-availability-key-understand.md)
-
 - [Set up Customer Key for Office 365](customer-key-set-up.md)
 
 - [Manage Customer Key for Office 365](customer-key-manage.md)
+
+- [Learn about the availability key](customer-key-availability-key-understand.md)
