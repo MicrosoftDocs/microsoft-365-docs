@@ -37,17 +37,21 @@ The **User activity** tab is one of the most powerful tools for internal risk an
 ![Insider risk management policy dashboard](media/insider-risk-temp-user-activities.png)
 
 1. **Case details**: The **Case details** pane summarizes the case details for risk analysts and investigators. It includes the following areas:
-    - Case name:
-    - Case status:
-    - Current user risk level:
-    - Alerts confirmed:
-    - Content at risk:
-2. **Date and window time filters**:
-3. **Risk alert activity and details**:
-4. **Risk activity legend**:
-5. **Risk activity chronology**:
-6. **Case actions**:
-7. **Case export**:
+    - **Case name**: The name of the case, prefixed with an auto-generated case sequence number and the name of the risk associated with the policy template that the first confirmed alert matches. 
+    - **Case status**: The current status of the case, either *Active* or *Closed*.
+    - **Current user risk level**: The current calculated risk level of the user for the case. This score is calculated every 24 hours and uses the alert risk scores from all active alerts associated to the user.
+    - **Alerts confirmed**: List of alerts for the user confirmed for the case. 
+    - **Content at risk**: List of content, sorted by content sources and types. For example, for case alert content in SharePoint Online and Microsoft Teams, you may see channel, project, folder, or file names listed that are associated with the risk activity for alerts in the case.
+2. **Date and window time filters**: By default, the last 6 months of alerts confirmed in the case are displayed in the User activity chart. You can easily filter the chart view with either the slider controls at both ends of the chart window, or by defining specific start and end dates in the chart filter control.
+3. **Risk alert activity and details**: Risk activities are visually displayed as colored bubbles in the User activity chart. Bubbles are created for different categories of risk and bubble size is proportional to the number of risk activities for the category. Select a bubble to display the details for each risk activity. Details include:
+    - **Date** of the risk activity.
+    - The **risk activity category**. For example, *Email(s) with attachments sent outside the organization* or *File(s) downloaded from SharePoint Online*.
+    - **Risk score** for the alert. This score is the numerical score for the alert risk severity level.
+    - Number of **files** or **emails** associated with the alert. Links to each file or email associated with the risk activity is also available.
+4. **Risk activity legend**: Across the bottom of the USer activity chart, a color-coded legend helps you quickly determine risk category for each alert.
+5. **Risk activity chronology**: The full chronology of all risk alerts associated with the case are listed, including all the details available in the corresponding alert bubble.
+6. **Case actions**: Options for resolving the case are on the case action toolbar. You can resolve a case, send an email notice to the employee, or escalate the case for a data or employee investigation.
+7. **Case export**: You can export all alerts and alert details to a CSV for a case.
 
 ### Content explorer
 
