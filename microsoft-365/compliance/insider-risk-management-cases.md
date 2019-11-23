@@ -26,9 +26,15 @@ The case dashboard allows you to view the status of cases and to select individu
 
 ## Investigate a case
 
+Investigating a case...
+
 ### Case overview
 
+The **Case overview** tab...
+
 ### Alerts
+
+The **Alerts** tab...
 
 ### User activity
 
@@ -55,16 +61,18 @@ The **User activity** tab is one of the most powerful tools for internal risk an
 
 ### Content explorer
 
+The **Content explorer** tab...
+
 ### Case notes
 
 The **Case notes** tab in the case is where risk analysts and investigators share comments, feedback, and insights about their work for the case.
 
 ### Contributors
 
-Case contributors
+The **Contributors** tab... 
 
-- Permanent
-- Temporary
+- **Permanent**:
+- **Temporary**:
 
 ## Case actions
 
@@ -72,8 +80,12 @@ To take action and resolve a case...
 
 ### Resolve a case
 
+Resolve the case...
 
 ### Escalate for data investigation
 
+Escalate the case for data investigation....
 
 ### Escalate for employee investigation
+
+Escalate the case employee investigation...
