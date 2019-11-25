@@ -17,16 +17,17 @@ description: "What are best practices for Exchange Online Protection (EOP) and A
 
 # Recommended settings for EOP and Office 365 ATP security
 
-**Exchange Online Protection (EOP)** is the core of security for Office 365 subscriptions and helps keep malicious emails from reaching your employee's inboxes. But with new, more sophisticated attacks emerging every day, improved protections are often required. **Office 365 Advanced Threat Protection (ATP)** ATP Plan 1 or ATP Plan 2 contain additional features that give admins more layers of security, control, and investigation. 
+**Exchange Online Protection (EOP)** is the core of security for Office 365 subscriptions and helps keep malicious emails from reaching your employee's inboxes. But with new, more sophisticated attacks emerging every day, improved protections are often required. **Office 365 Advanced Threat Protection (ATP)** ATP Plan 1 or ATP Plan 2 contain additional features that give admins more layers of security, control, and investigation.
 
-Although we empower security administrators to customize their security settings, there are two security levels in EOP and Office 365 ATP that we recommend: **Standard** and **Strict**. Each customer's environment and needs are different, but we believe that these levels of mail filtering configurations will help prevent unwanted mail from reaching your employees' inbox in most situations. 
+Although we empower security administrators to customize their security settings, there are two security levels in EOP and Office 365 ATP that we recommend: **Standard** and **Strict**. Each customer's environment and needs are different, but we believe that these levels of mail filtering configurations will help prevent unwanted mail from reaching your employees' inbox in most situations.
 
 This topic describes these Microsoft-recommended settings to help protect your Office 365 users.
 
 ## Anti-spam, anti-malware, and anti-phishing protection in EOP
+
 Anti-spam, anti-malware, and anti-phishing are features of EOP that can be configured by admins. We recommend the following configurations.
 
-### Anti-spam policy
+### EOP anti-spam policy settings
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
@@ -66,7 +67,7 @@ There are several other parameters in the Anti-spam policy called Advanced Spam 
 |MarkAsSpamNdrBackscatter|
 |MarkAsSpamSpfRecordHardFail|
 
-#### Outbound spam filter policy
+#### EOP outbound spam filter policy settings
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
@@ -75,7 +76,7 @@ There are several other parameters in the Anti-spam policy called Advanced Spam 
 |Outbound spam policy Recipient Limits - Daily limit|800|1000||
 |Action when a user exceeds the limits|Restrict the user from sending mail|Restrict the user from sending mail||
 
-### Anti-malware policy
+### EOP anti-malware policy settings
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
@@ -85,26 +86,28 @@ There are several other parameters in the Anti-spam policy called Advanced Spam 
 |Notify internal senders of the undelivered message|Disabled|Disabled||
 |Notify external senders of the undelivered message|Disabled|Disabled||
 
-### Anti-phishing policy
+### EOP anti-phishing policy settings
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|Enable antispoofing protection|On|On||
+|Enable anti-spoofing protection|On|On||
 |Enable Unauthenticated Sender (tagging)|On|On||
 |If email is sent by someone who's not allowed to spoof your domain|Move message to the recipients' Junk Email folders|Quarantine the message||
 
-## Office 365 Advanced Threat Protection (ATP) security
-Additional security benefits come with an Office 365 Advanced Threat Protection subscription. For the latest news and information, you can see [What's new in Office 365 ATP](whats-new-in-office-365-atp.md). 
+## Office 365 Advanced Threat Protection security
+
+Additional security benefits come with an Office 365 Advanced Threat Protection (ATP) subscription. For the latest news and information, you can see [What's new in Office 365 ATP](whats-new-in-office-365-atp.md).
 
 Office 365 ATP includes the Safe Attachment and Safe Links policies to prevent email with potentially malicious attachments from being delivered, and to keep users from clicking potentially unsafe URLs.
 
 > [!IMPORTANT]
-> Advanced Anti-phishing is one of the benefits of an Office 365 ATP subscription. Enabled by default, anti-phishing ***must*** be configured by using policies before it'll start filtering mail. Forgetting to configure anti-phishing policies could exposes users to risky emails. Make sure to configure your Anti-phishing policies after you add an Office 365 ATP subscription.
+> Advanced anti-phishing is one of the benefits of an Office 365 ATP subscription. Although it's enabled by default, you ***must*** configure at least one anti-phishing policy before it can start filtering mail. Forgetting to configure anti-phishing policies could exposes users to risky emails. Be sure to configure your anti-phishing policies after you add an Office 365 ATP subscription.
 
 If you've added an Office 365 ATP subscription to your EOP, set the following configurations.
 
-### Office ATP Anti-phishing policy
-EOP customers get a basic anti-phishing policy set but with Office 365 ATP, admins get more features and control to help prevent, detect, and remidiate against attacks.
+### Office ATP anti-phishing policy settings
+
+EOP customers get basic anti-phishing as previously described, but Office 365 ATP includes more features and control to help prevent, detect, and remediate against attacks.
 
 |Impersonation security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
@@ -123,7 +126,7 @@ EOP customers get a basic anti-phishing policy set but with Office 365 ATP, admi
 
 |Spoof security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|Enable antispoofing protection|On|On||
+|Enable anti-spoofing protection|On|On||
 |Enable Unauthenticated Sender (tagging)|On|On||
 |If email is sent by someone who's not allowed to spoof your domain|Move message to the recipients' Junk Email folders|Quarantine the message||
 |EnableAuthenticationSafetyTip|True|True|This setting is only available in PowerShell|
@@ -155,3 +158,4 @@ Do not track when users click safe links|Disabled|Disabled|This falls under the 
 |ATP Safe attachments unknown malware response|Block|Block||
 |Redirect attachment on detection|Enabled|Enabled|Redirect to email address for a security administrator that knows how to determine if the attachment is malware or not|
 |ATP Safe attachments response if malware scanning for attachments times out or error occurs|Enabled|Enabled||
+
