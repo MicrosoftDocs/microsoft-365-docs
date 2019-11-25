@@ -25,7 +25,7 @@ search.appverid:
 - Microsoft Threat Protection
 
 
-Microsoft Threat Protection aggregates all related alerts, assets, investigations and evidence from across your endpoints, identities, and mailboxes to give you a comprehensive look into the entire breadth of an attack. 
+Microsoft Threat Protection aggregates all related alerts, assets, investigations and evidence from across your devices, users, and mailboxes to give you a comprehensive look into the entire breadth of an attack. 
 
 Investigate the alerts that affect your network, understand what they mean, and collate evidence associated with the incidents so that you can devise an effective remediation plan. 
 
@@ -80,7 +80,7 @@ Clicking the username navigates you to the user's Cloud App Security page where 
 Investigate mailboxes that's been identified to be part of, or related to an incident. To do further investigative work, selecting the mail related alert will open Office 365 Advanced Threat Protection where you can take remediation actions.
 
 ## Investigations
-Select **Investigations** to see all the automated investigationstriggered by alerts in this incident. The investigations will perform remediation actions or wait for analyst approval of actions, depending on you configured your automated investigations to run in Microsoft Defender ATP and O365 ATP.
+Select **Investigations** to see all the automated investigation striggered by alerts in this incident. The investigations will perform remediation actions or wait for analyst approval of actions, depending on you configured your automated investigations to run in Microsoft Defender ATP and Office 365 Advanced Threat Protection.
 
 
 Select an investigation to navigate to the Investigation details page to get full information on the investigation and remediation status. If there are any actions pending for approval as part of the investigation they will appear in the Pending actions tab. Take action as part of incident remediation.

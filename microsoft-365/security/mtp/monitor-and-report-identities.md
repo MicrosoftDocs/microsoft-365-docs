@@ -1,7 +1,7 @@
 ---
 title: Identity monitoring and reporting in Microsoft 365 security center
-description: Describes how you can monitor the identities in your organization and keep track of suspicious or risky behaviors.
-keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identity
+description: Describes how you can monitor the users in your organization and keep track of suspicious or risky behaviors.
+keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identity, users
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium

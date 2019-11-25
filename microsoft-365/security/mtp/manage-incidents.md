@@ -21,7 +21,10 @@ search.appverid:
 
 # Manage incidents in Microsoft Threat Protection
 
-Managing incidents is critical in ensuring that threats are contained and addressed. In Microsoft Threat Protection, you have access to managing incidents on endpoints, identities, and mailboxes. 
+**Applies to:**
+- Microsoft Threat Protection
+
+Managing incidents is critical in ensuring that threats are contained and addressed. In Microsoft Threat Protection, you have access to managing incidents on devices, users, and mailboxes. 
 
 
 You can manage incidents by selecting an incident from the **Incidents queue**. 

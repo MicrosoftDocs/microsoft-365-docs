@@ -1,7 +1,7 @@
 ---
 title: Prioritize incidents in Microsoft Threat Protection
 description: Learn how to prioritize incidents from the incident queue in Microsoft Threat Protection
-keywords: incident, queue, overview, devices, identities, mailbox, email, incidents
+keywords: incident, queue, overview, devices, identities, users, mailbox, email, incidents
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -27,7 +27,7 @@ search.appverid:
 Microsoft Threat Protection applies correlation analytics and aggregates all related alerts and investigations from different products into one incident. Microsoft Threat Protection also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility that Microsoft Threat Protection has across the entire estate and suite of products. By doing so, Microsoft Threat Protection narrates the broader attack story, allowing a security operations analyst to understand and deal with complex threats across the organization.
 
 
-The **Incidents queue** shows a collection of incidents that were flagged from across devices, identities, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
+The **Incidents queue** shows a collection of incidents that were flagged from across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
 
 ![Image of incidents queue](../images/incidents-queue.png)
 
@@ -53,7 +53,7 @@ Filter to see only incidents containing more than one alert. This could be an in
 
 
 ### Multiple service sources 
-Filter to only see incidents that contain alerts from different sources (Microsoft Defender ATP, Microsoft Cloud App Security, Azure ATP, Office ATP)
+Filter to only see incidents that contain alerts from different sources (Microsoft Defender ATP, Microsoft Cloud App Security, Azure ATP, Office 365 ATP)
 ### Service sources
 By choosing a specific source, you can focus on incidents that contain at least one alert from that chosen source. 
 
