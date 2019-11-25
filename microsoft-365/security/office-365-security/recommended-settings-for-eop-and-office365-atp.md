@@ -159,24 +159,3 @@ Do not track when users click safe links|Disabled|Disabled|This falls under the 
 |Redirect attachment on detection|Enabled|Enabled|Redirect to email address for a security administrator that knows how to determine if the attachment is malware or not|
 |ATP Safe attachments response if malware scanning for attachments times out or error occurs|Enabled|Enabled||
 
-## Miscellaneous settings
-
-These settings cover a range of features that don't necessarily fit into specific categories above. Some of the settings are external to the Security & Compliance Center.
-
-Security feature name|Standard|Strict|Comment|
-|---------|---------|---------|---------|
-|[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Yes|Yes||
-|[Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md)|Yes|Yes||
-|[Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md)|Yes|Yes|Use action=quarantine for Standard, and action=reject for Strict.|
-|Deploy Report Message add-on to improve End User Reporting of Suspicious Emails|Yes|Yes||
-|Schedule Malware and Spam Reports|Yes|Yes||
-|Auto-forwarding to external domains should be disallowed or monitored|Yes|Yes||
-|Unified Auditing should be enabled|Yes|Yes||
-|IMAP connectivity to mailbox|Disabled|Disabled||
-|POP connectivity to mailbox|Disabled|Disabled||
-|SMTP Authenticated Submission to mailbox|Disabled|Disabled||
-|EWS connectivity to mailbox|Disabled|Disabled||
-|PowerShell connectivity|Disabled|Disabled||
-|Use Spoof Intelligence to whitelist senders whenever possible|Yes|Yes||
-|Directory-Based Edge Blocking (DBEB)|Enabled|Enabled|Domain Type = Authoritative|
-|[Set up multi-factor authentication for all admin accounts](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Enabled|Enabled||
