@@ -54,18 +54,18 @@ sections:
     className: cardsM
     columns: 2
     items: 
-    - href: https://www.microsoft.com/microsoft-365/blog/2018/09/17/collaborating-with-customers-and-partners-to-deliver-a-modern-desktop-microsoft-managed-desktop/
-      title: "[Blog] Collaborating with customers and partners to deliver a modern desktop"
+    - href: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
+      title: "[Whitepaper] Study: Rising Demand for Managed Desktop Services"
       image:
         src: https://docs.microsoft.com/media/common/i_architecture.svg
-    - href: https://www.cio.com/article/3307121/systems-management/microsoft-managed-desktop-all-your-windows-10-devices-managed-by-microsoft.html
-      title: "[Article] Microsoft Managed Desktop: All your Windows 10 devices, managed by Microsoft"
+    - href: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
+      title: "[E-book] Delight your company with a modern workplace"
       image:
         src: https://docs.microsoft.com/media/common/i_guide.svg
 - title: Videos
   items:
   - type: markdown
-    text: ">[!VIDEO https://www.youtube.com/embed/Pe75tc8YwKM]"
+    text: ">[!VIDEO https://www.youtube.com/watch?v=GXVRu49Gmxc&feature=youtu.be"
 
  
  
