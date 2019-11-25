@@ -17,15 +17,15 @@ To view usage data, select the **Usage** tab.
 
 ## Device usage
 
-In the **Device usage** area, we display the usage level of reporting devices over time, as well as how many registered devices are reporting data. We consider device "usage" to mean {whatever--logged in? online? powered on? apps active?}
+In the **Device usage** area, we display the usage level of reporting devices over time, as well as how many registered devices are reporting data. For all data displayed on this page, you can change the interval to view reported data in either the last 14 or 28 days by using the drop-down menu in the upper right.
 
 We categorize the usage level with these terms:
 
-- Active: at least 55 hours of usage
-- Low: between 8 and 55 hours of usage
-- Inactive: less than 8 hours of usage
+- **Active:** at least 55 hours of usage
+- **Low:** between 8 and 55 hours of usage
+- **Inactive:** less than 8 hours of usage
 
-You can change the interval to view reported data in either the last 14 or 28 days by using the drop-down menu in the upper right.
+
 
 
 ## Application usage

@@ -30,6 +30,5 @@ The **Top issues** section details specific detected issues that affect at least
 - The percentage of managed devices that number represents
 - The total count of occurences of the specific issue
 - The software component that appears to be the source of the problem
-- {CATEGORY?}
 - The current status as Microsoft Managed Desktop Operations investigates and remediates the issue
 
