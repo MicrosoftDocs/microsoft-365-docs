@@ -3,7 +3,7 @@ title: "Automate licensing and group membership for your Microsoft 365 Enterpris
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -58,10 +58,10 @@ First, you create a new Sales group and add a dynamic group membership rule so t
 12. Click **Add query**, and then click **Create**.
 13. Close the **Group** and **Groups-All groups** blades.
 
-Next, you configure the Sales group so that members are automatically assigned Office 365 E5 and Enterprise Mobility + Security E5 licenses.
+Next, you configure the Sales group so that members are automatically assigned the Microsoft 365 E5 license.
 
 1. On the **Overview** blade for Azure Active Directory, click **Licenses > All products**.
-2. In the list, select **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5**, and then click **Assign**.
+2. In the list, select **Micrsooft 365 E5**, and then click **Assign**.
 3. On the **Assign license** blade, click **Users and groups**.
 4. In the list of groups, select the **Sales** group.
 5. Click **Select**, and then click **Assign**.
@@ -73,7 +73,7 @@ Next, you test dynamic group membership and automatic licensing on the User 4 ac
 2. From the **Microsoft 365 admin center** tab, click **Active users**.
 3. On the **Active users** page, click the **User 4** account.
 4. On the **User 4** pane, click **Edit** for **Product licenses**.
-5. On the **Product licenses** pane, turn the **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5** licenses off, and then click **Save > Close**.
+5. On the **Product licenses** pane, disable the **Microsoft 365 E5** license, and then click **Save > Close**.
 6. In the properties of the User 4 account, verify that no product licenses have been assigned and there are no group memberships.
 7. Click **Edit** for **Contact information**.
 8. In the **Edit Contact information** pane, click **Contact information**.
@@ -83,7 +83,7 @@ Next, you test dynamic group membership and automatic licensing on the User 4 ac
 In time you should see the:
 
 - **Group memberships** property updated with the **Sales** group.
-- **Product licenses** property updated with the **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5** licenses.
+- **Product licenses** property updated with the **Microsoft 365 E5** license.
 
 See these steps in the Identity phase for information and links to deploy dynamic group membership and automatic licensing in production:
 
