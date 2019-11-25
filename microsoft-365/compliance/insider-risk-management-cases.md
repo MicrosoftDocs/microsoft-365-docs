@@ -61,7 +61,19 @@ The **Case details** pane is available on all case management tabs and summarize
 
 ### Alerts
 
-The **Alerts** tab...
+The **Alerts** tab summarizes the current alerts included in the case. New alerts may be added to an existing case and they will be added to the **Policy match alert** queue as they are assigned. The following alert attributes are listed the queue:
+
+- Status
+- Alert risk severity
+- Time detected
+
+Select an alert from the queue to display the **Alert detail** page. 
+
+Use the search control to search alert names for specific text and use the alert filter to sort cases by the following attributes:
+
+- Status
+- Risk severity
+- Time detected, start and end dates
 
 ### User activity
 
