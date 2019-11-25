@@ -19,16 +19,20 @@ With these dashboards you can find the answers to questions like these:
 - Which apps are causing trouble by crashing or hanging a lot?
 - How is Microsoft Managed Desktop Operations mitigating or resolving such problems?
 
-To access these views from the Microsoft 365 Admin Center, select {whatever}:
+To access these views from the Microsoft 365 Admin Center, select **View details** in the **Reports** area:
 
-[screenshot showing where to click to access?]
+![Insights pane overview](images/insights_overview.png)
 
 
 
 ## Usage insights
-brief explanation
-[Usage insights](usage-insights.md)
+This view provides usage metrics for your Microsoft Managed Desktop devices. 
+
+To view usage data, select the **Usage** tab.
+
+Learn more about [usage insights](usage-insights.md).
 
 ## Reliability insights
-brief explanation
-[Reliability insights](reliability-insights.md)
+This view provides you with a health summary of your managed devices. To view reliability data, select the **Reliability** tab.
+
+Learn more about [reliability insights](reliability-insights.md)
