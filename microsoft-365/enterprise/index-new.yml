@@ -72,6 +72,21 @@ conceptualContent:
           itemType: deploy
           text: Microsoft Intune
     # Card
+    - title: Deploy key scenarios
+      links:
+        - url: secure-teams-highly-regulated-data-scenario.md
+          itemType: how-to-guide
+          text: Microsoft Teams for highly regulated data
+        - url: teams-sharepoint-online-sites-highly-regulated-data.md
+          itemType: how-to-guide
+          text: SharePoint sites for highly regulated data
+        - url: empower-people-to-work-remotely.md
+          itemType: how-to-guide
+          text: Remote workers
+        - url: migration-microsoft-365-enterprise-workload.md
+          itemType: deploy
+          text: Office client and server and Windows migration
+    # Card
     - title: Manage Microsoft 365 Enterprise
       links:
         - url: https://docs.microsoft.com/windows/deployment/update/
@@ -86,21 +101,6 @@ conceptualContent:
         - url: https://docs.microsoft.com/office365/
           itemType: get-started
           text: Office 365 services
-    # Card
-    - title: See other Microsoft 365 products
-      links:
-        - url: https://docs.microsoft.com/microsoft-365/business
-          itemType: get-started
-          text: Microsoft 365 Business
-        - url: https://docs.microsoft.com/education
-          itemType: get-started
-          text: Microsoft 365 Education
-        - url: https://www.microsoft.com/microsoft-365/government
-          itemType: get-started
-          text: Microsoft 365 Government
-        - url: https://docs.microsoft.com/microsoft-365/campaigns/
-          itemType: get-started
-          text: Microsoft 365 for Campaigns
 
 # additionalContent section (optional)
 # Card with summary style
