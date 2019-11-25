@@ -18,7 +18,7 @@ description: "To prevent phishing messages from reaching your mailbox, Outlook.c
 # Unverified Sender
 
 > [!NOTE] 
-> These updates are rolling out now, and might not be available yet for all users.
+> These updates are rolling out now, and might not be available yet for all users. This feature is supported for Enterprise outlook.com users. It is not currently available for consumer outlook.com.
 
 To prevent phishing messages from reaching your mailbox, Outlook.com and Outlook on the web verify that the sender is who they say they are and mark suspicious messages as junk email.
 
