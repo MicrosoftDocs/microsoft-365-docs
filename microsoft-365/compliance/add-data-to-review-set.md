@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "Add the results of a search associated with an Advanced eDiscovery case. Items are copied from their original location and copied to a Microsoft-provided Azure Storage location. Items are also re-indexed and Advanced eDiscovery will perform Optical Character Recognition (OCR) on image files and upload the image text for review and analysis."
+description: "Add the results of a search associated with an Advanced eDiscovery case. Items are copied from their original location and copied to a Microsoft-provided Azure Storage location. Items are also re-indexed and Advanced eDiscovery will perform optical character recognition (OCR) on image files and upload the image text for review and analysis."
 ---
 
 # Add search results to a review set
