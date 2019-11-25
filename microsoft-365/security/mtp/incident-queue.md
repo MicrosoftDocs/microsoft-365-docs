@@ -29,7 +29,8 @@ Microsoft Threat Protection applies correlation analytics and aggregates all rel
 
 The **Incidents queue** shows a collection of incidents that were flagged from across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
 
-![Image of incidents queue](../images/incidents-queue.png)
+
+![Image of incidents queue](../images/incidents-queue.png) **IMAGE TO BE UPDATED**
 
 By default, the queue in Microsoft 365 security center displays incidents seen in the last 30 days, with the most recent incident showing at the top of the list, helping you see the most recent incidents first.
 
@@ -65,6 +66,9 @@ Choose specific categories to focus on a specific step in the kill chain
 
 ### Data sensitivity
 Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter to see if sensitive data is involved in the incident, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents.
+
+>[!NOTE]
+>Only applicable if Microsoft Information Protection is turned on.
 
 
 ## Next steps

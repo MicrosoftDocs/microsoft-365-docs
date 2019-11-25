@@ -45,19 +45,21 @@ The overview page gives you a snapshot glance into the top things to notice abou
 INSERT IMAGE HERE!!!!!!
 
 
-The attack categories give you visual and numeric view of how advanced the attack has progressed against the kill chain. As with other Microsoft security products, Microsoft Threat Protection is also aligning to the MITRE ATT&CK framework. 
+The attack categories give you visual and numeric view of how advanced the attack has progressed against the kill chain. As with other Microsoft security products, Microsoft Threat Protection is aligned to the [MITRE ATT&CK&trade;](https://attack.mitre.org/) framework. 
 
 The scope section gives you a list of top impacted assets that are part of this incident. If there is specific information regarding this asset, such as risk level, investigation priority as well as any tagging on the assets this will also surface in this section.
 
 The alerts timeline provides a sneak peek into the chronological order in which the alerts occurred, as well as the reasons that these alerts linked to this incident.
 
-And last – the evidence section provides a summary of how many different artifacts were included in the incident and their remediation status, so you can immediately identify if any action is needed on your end. 
+And last - the evidence section provides a summary of how many different artifacts were included in the incident and their remediation status, so you can immediately identify if any action is needed on your end. 
 
 This overview can assist in the initial triage of the incident by providing insight to the top characteristics of the incident that you should be aware of. 
 
 
+**IMAGES FROM NAAMA WILL INSERTED INTO EACH OF THE FOLLOWING SECTIONS**
+
 ## Alerts 
-You can view all the alerts related to the incident and other information about them such as severity, entities that were involved in the alert, the detection source of the alerts (Azure ATP, Microsoft Defender ATP , Office  365 ATP) and the reason they were linked together. 
+You can view all the alerts related to the incident and other information about them such as severity, entities that were involved in the alert, the source of the alerts (Azure ATP, Microsoft Defender ATP , Office  365 ATP) and the reason they were linked together. 
 
 
 By default, the alerts are ordered chronologically, to allow you to first view how the attack played out over time. Clicking on each alert will lead you to the relevant alert page where you can conduct an in depth investigation of that alert. 
@@ -80,7 +82,7 @@ Clicking the username navigates you to the user's Cloud App Security page where 
 Investigate mailboxes that's been identified to be part of, or related to an incident. To do further investigative work, selecting the mail related alert will open Office 365 Advanced Threat Protection where you can take remediation actions.
 
 ## Investigations
-Select **Investigations** to see all the automated investigation striggered by alerts in this incident. The investigations will perform remediation actions or wait for analyst approval of actions, depending on you configured your automated investigations to run in Microsoft Defender ATP and Office 365 Advanced Threat Protection.
+Select **Investigations** to see all the automated investigation striggered by alerts in this incident. The investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Microsoft Defender ATP and Office 365 Advanced Threat Protection.
 
 
 Select an investigation to navigate to the Investigation details page to get full information on the investigation and remediation status. If there are any actions pending for approval as part of the investigation they will appear in the Pending actions tab. Take action as part of incident remediation.

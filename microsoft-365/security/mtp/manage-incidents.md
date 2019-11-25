@@ -50,13 +50,13 @@ Alternatively, your SOC analyst might set the incident as **Resolved** if the in
 ### Classification and determination
 You can choose not to set a classification, or decide to specify whether an incident is true or false. Doing so helps the team see patterns and learn from them. 
 
-### Add comments
+## Add comments
 You can add comments and view historical events about an incident to see previous changes made to it.
 
 Whenever a change or comment is made to an alert, it is recorded in the Comments and history section.
 
 Added comments instantly appear on the pane.
 
-### Add incident tags
+## Add incident tags
 You can add custom tags to an incident, for example to flag a group of incidents with a common characteristics. You can later filter the incidents queue for all incidents that contain a specific tag.
 
