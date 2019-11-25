@@ -60,6 +60,7 @@ Admins should submit false negatives (spam) and false positives (non-spam) to Mi
 
 End-users can also directly report false negatives (spam) and false positives (non-spam) to Microsoft for analysis when they disagree with verdicts given. For details, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
 
+
 ## Create mail flow rules
 
 Create mail flow rules or custom filters to meet your business needs.
@@ -68,6 +69,6 @@ When you deploy a new rule to production, select one of the test modes first to 
 
 When you deploy new rules, consider adding the additional action of **Generate Incident Report** to monitor the rule in action.
 
-If you are in a hybrid deployment configuration, with part of your organization on-premises and part in Office 365, you can create rules that apply to the entire organization. To do this, use conditions that are available both on-premises and in Office 365. While most conditions are available in both deployments, there is a small set that is specific to a particular deployment scenario. Learn more at [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+In hybrid environments where your organization includes both on-premises Exchange and Office 365, consider the conditions that you use in mail flow rules. If you want the rules to apply to the entire organization, be sure to use conditions that are available in both on-premises Exchange and in Office 365. While most conditions are available in both environments, there are a few that are only available in one environment or the other. Learn more at [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
-If you want to inspect email attachments for messages in-transit within your organization, you can do this by setting up mail flow rules. Then, take action on the messages that were inspected based on the content or characteristics of those attachments. Learn more at [Use mail flow rules to inspect message attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments).
+

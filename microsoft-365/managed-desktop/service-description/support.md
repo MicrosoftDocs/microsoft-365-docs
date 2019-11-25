@@ -34,7 +34,7 @@ Supported products:
 
 Support details:
 
-- Current: North America, Canada (excluding Quebec), United Kingdom, Australia, and New Zealand only (24x7x365) 
+- Current: United States, Canada (excluding Quebec), United Kingdom, Belgium, Luxembourg, the Netherlands, Australia, and New Zealand (24x7x365) 
 - English is the only supported language for phone and chat conversations with customers 
 - We are partnering with, not replacing, your corporate helpdesk; line-of-Business (LOB) apps, network resources, etc. are still handled by your helpdesk 
 - Microsoft Managed Desktop devices in the "Test" group and devices not part of Microsoft Managed Desktop are out of scope 

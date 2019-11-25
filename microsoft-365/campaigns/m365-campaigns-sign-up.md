@@ -72,14 +72,14 @@ If you already have and existing subscription to Office 365 for business, for ex
 > You cannot add the Microsoft 365 for Campaigns offer to an existing Microsoft 365 Business tenant.
 
 1. In your invitation to Microsoft 365 for Campaigns email, select **ENROLL YOUR ORGANIZATION >**. This takes you to Microsoft 365 sign-up.
-2. On the **Welcome, let's get to know you** page, click or tap on **Want to add this to an existing subscription? Sign in**.
+2. On the **Welcome, let's get to know you** page, click or tap **Want to add this to an existing subscription? Sign in**.
     
     ![Choose Sign in on the upper right corner.](media/addtoexisting.png)
-3. On the sign in page, enter the admin alias for your existing subscription, for example, *Alice@VoteContoso<span></span>.org* and then choose **Next**, enter your password, and choose **Sign in**.
-4. On the **How does this look?** enter the number of users you have and choose **Next**. Note that you don't have to enter a promo code here because it is already included in the invitation URL.
+3. On the sign in page, enter the admin alias for your existing subscription, for example *Alice@VoteContoso<span></span>.org*, choose **Next**, enter your password, and then choose **Sign in**.
+4. On the **How does this look?** enter the number of users you have and choose **Next**. You don't have to enter a promo code here because it is already included in the invitation URL.
 5. On the **How do you want to pay?** page, enter your payment method and choose **Place order**.
 
-After you have completed these steps, you are ready to [assign the new licenses](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) to your campaign staff. 
+After you have completed these steps, you're ready to [assign the new licenses](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) to your campaign staff. 
 
 
 ## What's next?
