@@ -65,7 +65,7 @@ sections:
 - title: Videos
   items:
   - type: markdown
-    text: ">[!VIDEO https://www.youtube.com/watch?v=GXVRu49Gmxc&feature=youtu.be]"
+    text: ">[!VIDEO https://www.youtube.com/watch?v=GXVRu49Gmxc]"
 
  
  
