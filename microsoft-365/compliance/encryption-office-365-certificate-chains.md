@@ -14,7 +14,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: "Get an overview of encryption chains in Office 365."
+description: "View a complete list of root certificates and certificate authorities (CAs) in Office 365."
 ---
 
 # Office 365 encryption chains
@@ -25,8 +25,8 @@ Office 365 leverages a number of different certificate providers. The following 
 
 | **Certificate type** | **P7b download** | **CRL Endpoints** | **OCSP Endpoints** | **AIA Endpoints** |
 | --- | --- | --- | --- | --- |
-| Publicly Trusted Root Certificates | [Office 365 Root Certificate Bundle (P7B)](http://download.microsoft.com/download/A/5/A/A5AE01F3-D19B-4A11-9407-801263CEF72C/O365_Root_Certs_20170321.p7b) | crl.globalsign.netwww.d-trust.net | N/A | N/A |
-| Publicly Trusted Intermediate Certificates | [Office 365 Intermediate Certificate Bundle (P7B)​​](http://download.microsoft.com/download/4/D/5/4D5339A4-0A4A-46AB-AE52-B179DEDA4BEC/O365_Intermediate_Certs_20170321.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
+| Publicly Trusted Root Certificates | [Office 365 Root Certificate Bundle (P7B)](https://download.microsoft.com/download/A/5/A/A5AE01F3-D19B-4A11-9407-801263CEF72C/O365_Root_Certs_20170321.p7b) | crl.globalsign.netwww.d-trust.net | N/A | N/A |
+| Publicly Trusted Intermediate Certificates | [Office 365 Intermediate Certificate Bundle (P7B)​​](https://download.microsoft.com/download/4/D/5/4D5339A4-0A4A-46AB-AE52-B179DEDA4BEC/O365_Intermediate_Certs_20170321.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
 
 Expand the root and intermediate sections below to see additional details about the certificate providers.
 
@@ -240,7 +240,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **Pin (SHA-256)** | dKZRcLDh7hBNZTmTIHOGJ6C2Om/ITjUCPkOnLTnrZXk= |
 | **AIA URLs** | http://www.cnnic.cn/download/cert/CNNICROOT.cer |
 | **CRL URLs** | ldap:///CN=crl1,%20OU=crl,%20O=CNNIC,%20C=CN?certificateRevocationList;binary,authorityRevocationList;binary,deltaRevocationList;binary<br>http://crl.cnnic.cn/download/rootsha2crl/CRL1.crl |
-| **OCSP URLs** | http://ocspcnnicroot.cnnic.cn |
+| **OCSP URLs** | <http://ocspcnnicroot.cnnic.cn> |
 
 ### **D-TRUST SSL Class 3 CA 1 2009**
 
@@ -684,178 +684,91 @@ Expand the root and intermediate sections below to see additional details about 
 
 The following include legacy certificates that aren't included above and will be merged with the list above over time.
 
-evsecure-aia.verisign.com
-
-sa.symcb.com
-
-sd.symcb.com
-
-\*.omniroot.com
-
-\*.verisign.com
-
-\*.symcb.com
-
-\*.symcd.com
-
-\*.verisign.net
-
-\*.geotrust.com
-
-\*.entrust.net
-
-\*.public-trust.com
-
-EVIntl-ocsp.verisign.com
-
-EVSecure-ocsp.verisign.com
-
-isrg.trustid.ocsp.identrust.com
-
-ocsp.digicert.com
-
-ocsp.entrust.net
-
-ocsp.globalsign.com/ExtendedSSLSHA256CACross
-
-ocsp.globalsign.com/rootr1
-
-ocsp.globalsign.com/rootr2
-
-ocsp2.globalsign.com/rootr3
-
-ocsp.int-x3.letsencrypt.org/
-
-ocsp.msocsp.com
-
-ocsp.omniroot.com/baltimoreroot
-
-ocsp2.globalsign.com/gsextendvalsha2g3r3
-
-ocsp2.globalsign.com/gsorganizationvalsha2g2
-
-ocsp2.globalsign.com/gsorganizationvalsha2g3
-
-ocsp2.globalsign.com/rootr3
-
-ocspx.digicert.com
-
-s2.symcb.com
-
-sr.symcd.com
-
-su.symcd.com
-
-vassg142.ocsp.omniroot.com
-
-cdp1.public-trust.com/CRL/Omniroot2025.crl
-
-crl.entrust.net/2048ca.crl
-
-crl.entrust.net/g2ca.crl
-
-crl.entrust.net/level1k.crl
-
-crl.entrust.net/rootca1.crl
-
-crl.globalsign.com/gs/gsextendvalsha2g3r3.crl
-
-crl.globalsign.com/gs/gsorganizationvalsha2g2.crl
-
-crl.globalsign.com/gsorganizationvalsha2g3.crl
-
-crl.globalsign.com/root.crl
-
-crl.globalsign.net/root-r2.crl
-
-crl.globalsign.com/root-r3.crl
-
-crl.globalsign.net/root.crl
-
-crl.identrust.com/DSTROOTCAX3CRL.crl
-
-crl.microsoft.com/pki/mscorp/crl/msitwww1.crl
-
-crl.microsoft.com/pki/mscorp/crl/msitwww2.crl
-
-crl3.digicert.com/DigiCertCloudServicesCA-1-g1.crl
-
-crl3.digicert.com/DigiCertGlobalRootCA.crl
-
-crl3.digicert.com/sha2-ev-server-g1.crl
-
-crl3.digicert.com/sha2-ha-server-g5.crl
-
-crl3.digicert.com/ssca-sha2-g5.crl
-
-crl4.digicert.com/DigiCertCloudServicesCA-1-g1.crl
-
-crl4.digicert.com/DigiCertGlobalRootCA.crl
-
-crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl
-
-crl4.digicert.com/sha2-ev-server-g1.crl
-
-crl4.digicert.com/sha2-ha-server-g5.crl
-
-crl4.digicert.com/ssca-sha2-g5.crl
-
-EVIntl-crl.verisign.com/EVIntl2006.crl
-
-EVSecure-crl.verisign.com/pca3-g5.crl
-
-mscrl.microsoft.com/pki/mscorp/crl/msitwww1.crl
-
-mscrl.microsoft.com/pki/mscorp/crl/msitwww2.crl
-
-s1.symcb.com/pca3-g5.crl
-
-sr.symcb.com/sr.crl
-
-su.symcb.com/su.crl
-
-vassg142.crl.omniroot.com/vassg142.crl
-
-aia.entrust.net/l1k-chain256.cer
-
-apps.identrust.com/roots/dstrootcax3.p7c
-
-https://cacert.a.omniroot.com/vassg142.crt
-
-https://cacert.a.omniroot.com/vassg142.der
-
-https://cacert.omniroot.com/baltimoreroot.crt
-
-https://cacert.omniroot.com/baltimoreroot.der
-
-cacerts.digicert.com/DigiCertCloudServicesCA-1.crt
-
-cacerts.digicert.com/DigiCertSHA2ExtendedValidationServerCA.crt
-
-cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt
-
-cacerts.digicert.com/DigiCertSHA2SecureServerCA.crt
-
-cert.int-x3.letsencrypt.org/
-
-EVIntl-aia.verisign.com/EVIntl2006.cer
-
-secure.globalsign.com/cacert/gsextendvalsha2g2r2.crt
-
-secure.globalsign.com/cacert/gsextendvalsha2g3r3.crt
-
-secure.globalsign.com/cacert/gsorganizationvalsha2g2r1.crt
-
-secure.globalsign.com/cacert/gsorganizationvalsha2g3.crt
-
-sr.symcb.com/sr.crt
-
-su.symcb.com/su.crt
-
-https://www.digicert.com/CACerts/DigiCertGlobalRootCA.crt
-
-https://www.digicert.com/CACerts/DigiCertHighAssuranceEVRootCA.crt
-
-www.microsoft.com/pki/mscorp/msitwww1.crt
-
-www.microsoft.com/pki/mscorp/msitwww2.crt
+evsecure-aia.verisign.com<br>
+sa.symcb.com<br>
+sd.symcb.com<br>
+\*.omniroot.com<br>
+\*.verisign.com<br>
+\*.symcb.com<br>
+\*.symcd.com<br>
+\*.verisign.net<br>
+\*.geotrust.com<br>
+\*.entrust.net<br>
+\*.public-trust.com<br>
+EVIntl-ocsp.verisign.com<br>
+EVSecure-ocsp.verisign.com<br>
+isrg.trustid.ocsp.identrust.com<br>
+ocsp.digicert.com<br>
+ocsp.entrust.net<br>
+ocsp.globalsign.com/ExtendedSSLSHA256CACross<br>
+ocsp.globalsign.com/rootr1<br>
+ocsp.globalsign.com/rootr2<br>
+ocsp2.globalsign.com/rootr3<br>
+ocsp.int-x3.letsencrypt.org/<br>
+ocsp.msocsp.com<br>
+ocsp.omniroot.com/baltimoreroot<br>
+ocsp2.globalsign.com/gsextendvalsha2g3r3<br>
+ocsp2.globalsign.com/gsorganizationvalsha2g2<br>
+ocsp2.globalsign.com/gsorganizationvalsha2g3<br>
+ocsp2.globalsign.com/rootr3<br>
+ocspx.digicert.com<br>
+s2.symcb.com<br>
+sr.symcd.com<br>
+su.symcd.com<br>
+vassg142.ocsp.omniroot.com<br>
+cdp1.public-trust.com/CRL/Omniroot2025.crl<br>
+crl.entrust.net/2048ca.crl<br>
+crl.entrust.net/g2ca.crl<br>
+crl.entrust.net/level1k.crl<br>
+crl.entrust.net/rootca1.crl<br>
+crl.globalsign.com/gs/gsextendvalsha2g3r3.crl<br>
+crl.globalsign.com/gs/gsorganizationvalsha2g2.crl<br>
+crl.globalsign.com/gsorganizationvalsha2g3.crl<br>
+crl.globalsign.com/root.crl<br>
+crl.globalsign.net/root-r2.crl<br>
+crl.globalsign.com/root-r3.crl<br>
+crl.globalsign.net/root.crl<br>
+crl.identrust.com/DSTROOTCAX3CRL.crl<br>
+crl.microsoft.com/pki/mscorp/crl/msitwww1.crl<br>
+crl.microsoft.com/pki/mscorp/crl/msitwww2.crl<br>
+crl3.digicert.com/DigiCertCloudServicesCA-1-g1.crl<br>
+crl3.digicert.com/DigiCertGlobalRootCA.crl<br>
+crl3.digicert.com/sha2-ev-server-g1.crl<br>
+crl3.digicert.com/sha2-ha-server-g5.crl<br>
+crl3.digicert.com/ssca-sha2-g5.crl<br>
+crl4.digicert.com/DigiCertCloudServicesCA-1-g1.crl<br>
+crl4.digicert.com/DigiCertGlobalRootCA.crl<br>
+crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl<br>
+crl4.digicert.com/sha2-ev-server-g1.crl<br>
+crl4.digicert.com/sha2-ha-server-g5.crl<br>
+crl4.digicert.com/ssca-sha2-g5.crl<br>
+EVIntl-crl.verisign.com/EVIntl2006.crl<br>
+EVSecure-crl.verisign.com/pca3-g5.crl<br>
+mscrl.microsoft.com/pki/mscorp/crl/msitwww1.crl<br>
+mscrl.microsoft.com/pki/mscorp/crl/msitwww2.crl<br>
+s1.symcb.com/pca3-g5.crl<br>
+sr.symcb.com/sr.crl<br>
+su.symcb.com/su.crl<br>
+vassg142.crl.omniroot.com/vassg142.crl<br>
+aia.entrust.net/l1k-chain256.cer<br>
+apps.identrust.com/roots/dstrootcax3.p7c<br>
+<https://cacert.a.omniroot.com/vassg142.crt><br>
+<https://cacert.a.omniroot.com/vassg142.der><br>
+<https://cacert.omniroot.com/baltimoreroot.crt><br>
+<https://cacert.omniroot.com/baltimoreroot.der><br>
+cacerts.digicert.com/DigiCertCloudServicesCA-1.crt<br>
+cacerts.digicert.com/DigiCertSHA2ExtendedValidationServerCA.crt<br>
+cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt<br>
+cacerts.digicert.com/DigiCertSHA2SecureServerCA.crt<br>
+cert.int-x3.letsencrypt.org/<br>
+EVIntl-aia.verisign.com/EVIntl2006.cer<br>
+secure.globalsign.com/cacert/gsextendvalsha2g2r2.crt<br>
+secure.globalsign.com/cacert/gsextendvalsha2g3r3.crt<br>
+secure.globalsign.com/cacert/gsorganizationvalsha2g2r1.crt<br>
+secure.globalsign.com/cacert/gsorganizationvalsha2g3.crt<br>
+sr.symcb.com/sr.crt<br>
+su.symcb.com/su.crt<br>
+<https://www.digicert.com/CACerts/DigiCertGlobalRootCA.crt><br>
+<https://www.digicert.com/CACerts/DigiCertHighAssuranceEVRootCA.crt><br>
+www.microsoft.com/pki/mscorp/msitwww1.crt<br>
+www.microsoft.com/pki/mscorp/msitwww2.crt<br>
