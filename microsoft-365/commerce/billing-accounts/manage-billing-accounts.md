@@ -25,7 +25,7 @@ The Microsoft 365 admin center currently supports the following type of billing 
 - Microsoft Products & Services Agreement (MPSA) Program: This billing account is created when your organization signs an MPSA Volume Licensing agreement to purchase software and online services.
 - Microsoft Customer Agreement: This billing account is created when your organization works with a Microsoft representative, an authorized partner, or purchases independently.
 
-The <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page provides a view of your commercial accounts with Microsoft. By default, your organization has at least one billing account associated with an agreement that is accepted either at time of a direct purchase or through a Volume Licensing agreement.
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page provides a view of your commercial accounts with Microsoft. By default, your organization has at least one billing account associated with an agreement that is accepted either at the time of a direct purchase, or through a Volume Licensing arrangement.
 
 ## Understand the billing account details
 
@@ -39,8 +39,8 @@ The following table lists the important terms that you see in the Billing accoun
 | Segment | A read-only field that identifies the business segment of your organization (Commercial, Education, Government, or Non-profit). |
 | Account status | A read-only field that specifies the status of your commercial account with Microsoft. |
 | Tax ID | If you are outside the United States, you must provide a VAT or local equivalent. For more information, see [Tax information](#tax-information). |
-| Agreement | When a billing account is created, either through a direct purchase, or a Volume Licensing arrangement, a signatory for the organization accepts, or signs, an agreement that outlines the terms & conditions of the account. If applicable, this view lists an agreement history. If you are required to accept updated terms, a link for **Approve agreement** is displayed. |
-| Billing profiles | A billing profile defines properties of your invoice such as who receives the bill, how the bill is delivered, payment terms and a PO number. For flexibility, you can opt to distribute billing across your organization by creating multiple billing profiles and by identifying the appropriate billing profile at the time of purchase. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, [Manage billing profiles](../billing-and-payments/manage-billing-profiles.md). |
+| Agreement | When a billing account is created, either through a direct purchase or a Volume Licensing arrangement, a signatory for the organization accepts, or signs, an agreement that outlines the terms & conditions of the account. If applicable, this view lists an agreement history. If you're required to accept updated terms, a link for **Approve agreement** is displayed. |
+| Billing profiles | A billing profile defines properties of your invoice, like who receives the bill, how the bill is delivered, payment terms, and a PO number. To distribute billing across your organization, you can create multiple billing profiles and identify the appropriate billing profile at the time of purchase. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, [Manage billing profiles](../billing-and-payments/manage-billing-profiles.md). |
 
 ## Shipping addresses
 
@@ -48,16 +48,14 @@ This section lists the shipping addresses associated with your billing account. 
 
 ## Understand access to billing accounts
 
-You can provide others with access to the billing account in the Microsoft 365 admin center through the following roles and permissions. Only a billing account owner can grant access to a billing account by assigning one of these roles to users.
+You can provide others with access to the billing account in the Microsoft 365 admin center through roles and permissions. Only a billing account owner can grant access to a billing account. You can assign one of the following roles to users:
+
+- **Billing account owner** &mdash; Can assign permissions, edit accounts, sign agreements, and view accounts.
+- **Billing account contributor** &mdash; Can edit accounts, sign agreements, and view accounts.
+- **Billing account reader** &mdash; Can view accounts.
 
 > [!Note]
 > Billing account roles only apply to billing accounts, and don’t apply to other Microsoft 365 admin center scenarios.
-
-| Role                        | Description                                                        |
-|-----------------------------|--------------------------------------------------------------------|
-| Billing account owner       | Manage everything for a billing account.                           |
-| Billing account contributor | Manage everything except assign permissions for a billing account. |
-| Billing account reader      | Read-only view of everything in the billing account.               |
 
 ## Tax information
 
@@ -67,40 +65,40 @@ Businesses in these countries can provide their VAT number:
 
 :::row:::
     :::column:::
-        - Austria
-        - Belgium
-        - Bulgaria
-        - Croatia
-        - Cyprus
-        - Czech Republic
-        - Denmark
-        - Estonia
-        - Finland
-        - France
-        - Germany
-        - Greece
-        - Hungary
-        - Ireland
-        - Italy
-        - Latvia
+- Austria
+- Belgium
+- Bulgaria
+- Croatia
+- Cyprus
+- Czech Republic
+- Denmark
+- Estonia
+- Finland
+- France
+- Germany
+- Greece
+- Hungary
+- Ireland
+- Italy
+- Latvia
     :::column-end:::
     :::column:::
-        - Liechtenstein
-        - Lithuania
-        - Luxembourg
-        - Malta
-        - Monaco
-        - Netherlands
-        - Norway
-        - Poland
-        - Portugal
-        - Romania
-        - Slovakia
-        - South Africa
-        - Spain
-        - Sweden
-        - Switzerland
-        - United Kingdom
+- Liechtenstein
+- Lithuania
+- Luxembourg
+- Malta
+- Monaco
+- Netherlands
+- Norway
+- Poland
+- Portugal
+- Romania
+- Slovakia
+- South Africa
+- Spain
+- Sweden
+- Switzerland
+- United Kingdom
     :::column-end:::
 :::row-end:::
 
