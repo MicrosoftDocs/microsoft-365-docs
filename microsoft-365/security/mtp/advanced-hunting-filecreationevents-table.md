@@ -24,7 +24,7 @@ ms.topic: article
 
 The `FileCreationEvents` table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about file creation, modification, and other file system events. Use this reference to construct queries that return information from this table.
 
-For information on other tables in the Advanced hunting schema, [see the aAvanced hunting reference](advanced-hunting-schema-tables.md).
+For information on other tables in the Advanced hunting schema, [see the Advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
