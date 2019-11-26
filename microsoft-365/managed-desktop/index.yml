@@ -54,6 +54,10 @@ sections:
     className: cardsM
     columns: 2
     items: 
+    - href: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
+      title: "[Roadmap] Your Complete Roadmap to Microsoft Managed Desktop"
+      image:
+        src: https://docs.microsoft.com/media/common/i_architecture.svg
     - href: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
       title: "[Whitepaper] Study: Rising Demand for Managed Desktop Services"
       image:
@@ -65,7 +69,7 @@ sections:
 - title: Videos
   items:
   - type: markdown
-    text: ">[!VIDEO https://www.youtube.com/watch?v=GXVRu49Gmxc]"
+    text: ">[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]"
 
  
  
