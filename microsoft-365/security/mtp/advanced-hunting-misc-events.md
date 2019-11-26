@@ -199,7 +199,7 @@ These uncategorized events represent a variety of activities that can be relevan
 
 ## Related topics
 - [MiscEvents table reference](advanced-hunting-miscevents-table.md)
-- [Proactively hunt for threats](advanced-hunting.md)
+- [Proactively hunt for threats](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-language-overview.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)

@@ -130,7 +130,7 @@ The **Get started** section provides a few simple queries using commonly used op
 For more information on Kusto query language and supported operators, see  [Query Language](https://docs.microsoft.com/azure/kusto/query/).
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting.md)
+- [Proactively hunt for threats](advanced-hunting-overview.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
