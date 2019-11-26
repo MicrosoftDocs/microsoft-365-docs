@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: "Administrators can set up a native connector to import data from the Instant Bloomberg chat tool into Office 365. This lets you archive data from third-party data sources in Office 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
+description: "Administrators can set up a native connector to import data from the Instant Bloomberg chat tool into Office 365. This lets you archive data from third-party data sources in Office 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage your organization's third-party data."
 ---
 
 # Set up a connector to archive Instant Bloomberg data in Office 365
 
-Use a native connector in the Security & Compliance Center in Office 365 to import and archive financial services chat data from [Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) collaboration tool. After you set up and configure a connector, it connects to your organization's Bloomberg secure FTP site (SFTP) once every day, converts the content of chat messages to an email message format, and then imports those items to mailboxes in Office 365.
+Use a native connector in the Security & Compliance Center in Office 365 to import and archive financial services chat data from the [Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) collaboration tool. After you set up and configure a connector, it connects to your organization's Bloomberg secure FTP site (SFTP) once every day, converts the content of chat messages to an email message format, and then imports those items to mailboxes in Office 365.
 
 After Instant Bloomberg data is stored in user mailboxes, you can apply Office 365 compliance features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, [Communication compliance](communication-compliance.md), and Office 365 retention policies to Instant Bloomberg data. For example, you can search Instant Bloomberg chat messages using Content Search or associate the mailbox that contains the Instant Bloomberg data with a custodian in an Advanced eDiscovery case. Using an Instant Bloomberg connector to import and archive data in Office 365 can help your organization stay compliant with government and regulatory policies.
 
@@ -24,7 +24,7 @@ The following overview explains the process of using a connector to archive Inst
 
 ![Instant Bloomberg import and archive process](media/InstantBloombergDataArchiving.png)
 
-1. Your organization works with Bloomberg to set up a Bloomberg SFTP site. You will also work with Bloomberg to configure Instant Bloomberg to copy chat messages to your Bloomberg SFTP site.
+1. Your organization works with Bloomberg to set up a Bloomberg SFTP site. You'll also work with Bloomberg to configure Instant Bloomberg to copy chat messages to your Bloomberg SFTP site.
 
 2. Once every 24 hours, chat messages from Instant Bloomberg are copied to the Bloomberg SFTP site.
     
@@ -34,7 +34,7 @@ The following overview explains the process of using a connector to archive Inst
     
     a. **Items that have a value in the CorporateEmailAddress property that corresponds to an Office 365 user account:** If the connector can associate the email address in the *CorporateEmailAddress* property to a specific user account in Office 365, the item is copied to the Inbox folder in the user's Office 365 mailbox.
     
-    b. **Items that have a value in the CorporateEmailAddress property that doesn't correspond to an Office 365 user account:** If the connector can't associate an email address in the *CorporateEmailAddress* property to a specific user account in Office 365, the item is copied to the Inbox folder of an alternative, "catch-all" mailbox in Office 365.
+    b. **Items that have a value in the CorporateEmailAddress property that doesn't correspond to an Office 365 user account:** If the connector can't associate an email address in the *CorporateEmailAddress* property to a specific user account in Office 365, the item is copied to the Inbox folder of an alternative "catch-all" mailbox in Office 365.
 
 ## Before you begin
 
@@ -62,7 +62,7 @@ Many of the implementation steps required to archive Instant Bloomberg data are 
 
     - Port number for Bloomberg SFTP site
 
-- The user who creates an Instant Bloomberg connector in Step 3 (and who downloads the public keys and IP address in Step 1) must be assigned the Mailbox Import Export role in Exchange Online. This is required to access the **Archive third-party data** page in the Security & Compliance Center. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the  [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+- The user who creates an Instant Bloomberg connector in Step 3 (and who downloads the public keys and IP address in Step 1) must be assigned the Mailbox Import Export role in Exchange Online. This is required to access the **Archive third-party data** page in the Security & Compliance Center. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 ## Step 1: Obtain SSH and PGP public keys
 
@@ -109,7 +109,7 @@ The last step is to create an Instant Bloomberg connector in the Security & Comp
 
     - **SFTP URL:** The URL for Bloomberg SFTP site (for example, sftp.bloomberg.com).
 
-    - **SFTP port:** The port number for Bloomberg SFTP site. The connector uses this to connect to the SFTP site.
+    - **SFTP port:** The port number for Bloomberg SFTP site. The connector uses this port to connect to the SFTP site.
 
 5. On the **Alternative mailbox** page, type the email address of a mailbox that is used to store the chat messages from Instant Bloomberg that aren't associated with a user mailbox in your organization.
 
