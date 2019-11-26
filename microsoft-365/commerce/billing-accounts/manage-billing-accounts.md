@@ -17,28 +17,38 @@ description: "Learn about billing accounts and how to manage them."
 
 # Manage billing accounts
 
-The billing account provides you a summary of your account information. It’s available online in the Microsoft 365 admin center on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page. The page lets you manage your account profile and define the parts of your organization that do business with Microsoft. This information includes addresses, contact information, and Tax info.
+A billing account is created when you sign up to try or buy Microsoft products. You use your billing account to manage your account settings, invoices, payment methods, and purchases. You can have access to multiple billing accounts. For example, you signed up for Microsoft 365 directly, or you have access to your organization’s Enterprise Agreement, Microsoft Product & Services Agreement or Microsoft Customer Agreement. For each of these scenarios, you would have a separate billing account.
+
+The Microsoft 365 admin center currently supports the following type of billing accounts:
+
+- Microsoft Online Services Program: This billing account is created when you sign up for a Microsoft 365 subscription directly.
+- Microsoft Products & Services Agreement (MPSA) Program: This billing account is created when your organization signs an MPSA Volume Licensing agreement to purchase software and online services.
+- Microsoft Customer Agreement: This billing account is created when your organization works with a Microsoft representative, an authorized partner, or purchases independently.
+
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page provides a view of your commercial accounts with Microsoft. By default, your organization has at least one billing account associated with an agreement that is accepted either at time of a direct purchase or through a Volume Licensing agreement.
 
 ## Understand the billing account details
 
-The top of the **Billing account** detail page contains information about your organization. This organization is the legal entity that pays for the products that you purchase.
+The top of the **Billing accounts** detail page is your account profile and contains legal and tax information about your organization. You can update your profile to change your legal address and phone number. This account is the legal entity that pays for the products that you purchase.
+
+The following table lists the important terms that you see in the Billing accounts detail page.
 
 | Field name | Description |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sold-to address | The billing account that identifies the name and address of the legal entity responsible for payment. This information can be managed on the **Billing account** page. |
-| Segment | The business segment that your organization belongs to (Commercial, Education, Government, or Non-profit). This information is read-only. |
-| Account status | The status of your account with Microsoft. This information is read-only. |
-| Tax ID | If you are outside the United States, you must provide a VAT or local equivalent. Your **Sold-to** address determines what tax to charge for purchases you make. For more information, see [Tax information](#tax-information). |
-| Agreement | Each organization signs the purchasing agreement with Microsoft. You can view the agreement and the agreement history, if applicable, here. If there's an updated version of the Microsoft customer agreement for you to sign, there is a link for **Approve agreement**. |
-| Billing profiles | The name of the billing profile used to define invoice properties like Bill to, PO number, and payment terms. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, see [Manage billing profiles](../billing-and-payments/manage-billing-profiles.md). |
+| Sold-to address | The legal entity responsible for payment and identified on the invoice. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](#tax-information). |
+| Segment | A read-only field that identifies the business segment of your organization (Commercial, Education, Government, or Non-profit). |
+| Account status | A read-only field that specifies the status of your commercial account with Microsoft. |
+| Tax ID | If you are outside the United States, you must provide a VAT or local equivalent. For more information, see [Tax information](#tax-information). |
+| Agreement | When a billing account is created, either through a direct purchase, or a Volume Licensing arrangement, a signatory for the organization accepts, or signs, an agreement that outlines the terms & conditions of the account. If applicable, this view lists an agreement history. If you are required to accept updated terms, a link for **Approve agreement** is displayed. |
+| Billing profiles | A billing profile defines properties of your invoice such as who receives the bill, how the bill is delivered, payment terms and a PO number. For flexibility, you can opt to distribute billing across your organization by creating multiple billing profiles and by identifying the appropriate billing profile at the time of purchase. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, [Manage billing profiles](../billing-and-payments/manage-billing-profiles.md). |
 
-## Understand shipping addresses
+## Shipping addresses
 
-This section lists the shipping addresses associated with your billing account. You can have one or more shipping addresses associated with your billing account. When you make a purchase, you select which shipping address to use. If the address is different from the **Sold-to address**, the shipping address is used to determine what tax to charge. For example, you can have one shipping address for Seattle, Washington, and another shipping address for Miami, Florida. When you make a purchase and specify that it's for use at the Miami, Florida address, the tax you pay is based on the tax rate for that location.
+This section lists the shipping addresses associated with your billing account. When you make a purchase, you can use this address to identify where your purchase is shipped or used. The shipping address is editable. You can add a shipping address or update the existing address. This address is used to determine the tax rate for your purchase.
 
-## Understand the billing account roles
+## Understand access to billing accounts
 
-Roles on the billing account have permissions to control view and manage account. Only a billing account owner can assign roles to users. Assign these roles to users who track, organize, and manage the account information for the purchase made.
+You can provide others with access to the billing account in the Microsoft 365 admin center through the following roles and permissions. Only a billing account owner can grant access to a billing account by assigning one of these roles to users.
 
 > [!Note]
 > Billing account roles only apply to billing accounts, and don’t apply to other Microsoft 365 admin center scenarios.
@@ -51,42 +61,48 @@ Roles on the billing account have permissions to control view and manage account
 
 ## Tax information
 
-Taxes for Microsoft 365 admin center purchases that you make through Microsoft are determined by your business address. If the shipping address is different, that address is used, instead. Organizations in the United States must provide a Federal Employer Identification Number (FEIN).
+Taxes for Microsoft 365 admin center purchases that you make through Microsoft are determined by your business address, or, if it’s different, by your shipping address. If you are in the United States, you must provide a Federal Employer Identification Number (FEIN).
 
 Businesses in these countries can provide their VAT number:
 
-- Austria  
-- Belgium  
-- Bulgaria  
-- Croatia  
-- Cyprus  
-- Czech Republic  
-- Denmark  
-- Estonia  
-- Finland  
-- France  
-- Germany  
-- Greece  
-- Hungary  
-- Ireland  
-- Italy  
-- Latvia 
-- Liechtenstein  
-- Lithuania  
-- Luxembourg  
-- Malta  
-- Monaco  
-- Netherlands  
-- Norway  
-- Poland  
-- Portugal  
-- Romania  
-- Slovakia  
-- South Africa  
-- Spain  
-- Sweden  
-- Switzerland  
-- United Kingdom
+:::row:::
+    :::column:::
+        - Austria
+        - Belgium
+        - Bulgaria
+        - Croatia
+        - Cyprus
+        - Czech Republic
+        - Denmark
+        - Estonia
+        - Finland
+        - France
+        - Germany
+        - Greece
+        - Hungary
+        - Ireland
+        - Italy
+        - Latvia
+    :::column-end:::
+    :::column:::
+        - Liechtenstein
+        - Lithuania
+        - Luxembourg
+        - Malta
+        - Monaco
+        - Netherlands
+        - Norway
+        - Poland
+        - Portugal
+        - Romania
+        - Slovakia
+        - South Africa
+        - Spain
+        - Sweden
+        - Switzerland
+        - United Kingdom
+    :::column-end:::
+:::row-end:::
 
 These countries can provide their VAT number or local equivalent on their billing account information.
 
@@ -101,7 +117,7 @@ These countries can provide their VAT number or local equivalent on their billin
 | Taiwan | VAT ID (optional) |
 
 > [!Note]
-> If you need to contact support, please have your FEIN, VAT number, or local equivalent ready to give to the support agent.
+> If you need to contact support, have your FEIN, VAT number, or local equivalent ready to give to the support agent.
 
 ## Tax-exempt status
 
@@ -117,14 +133,14 @@ Have the following documentation ready:
 | International organizations that hold tax exemption | Certification / letter confirmation from local tax authorities |
 | Puerto Rico | Certificado de Compras Exentas |
 
-## Calculating tax
+## Calculate taxes
 
-Sales tax is calculated against the unit price, and then aggregated.
+Sales taxes are calculated against the unit price, and then aggregated.
 
 For example:
 
-*(unit price X tax rate) X quantity = total sales tax*
+>*(unit price X tax rate) X quantity = total sales tax*
 
 -or-
 
-($1.29 X 0.095) X 100 = $12.25
+>($1.29 X 0.095) X 100 = $12.25
