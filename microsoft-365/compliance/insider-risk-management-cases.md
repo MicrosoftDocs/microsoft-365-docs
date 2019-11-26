@@ -94,7 +94,128 @@ The **User activity** tab is one of the most powerful tools for internal risk an
 
 ### Content explorer
 
-The **Content explorer** tab...
+The **Content explorer** tab allows risk analysts and investigators to review copies of all individual files and email messages associated with risk alerts. For example, if an alert is created when an employee downloads hundreds of files from SharePoint Online to a USB device and the activity triggers a policy alert, all the downloaded files for the alert are captured and copied into the insider risk management case from original storage sources. For all alerts, copies of data and message files are archived as a snapshot in time of the items, while maintaining the original files and messages in the storage sources. The copying of data and messages is transparent to the employee associated with the alert and to the owner of the content. The permission settings and access rights for the data are maintained for the copied content and messages and risk analysts and investigators need these permissions and rights if they need to open and view the files. Each file and message is automatically assigned an unique file ID in the insider risk management case for management purposes.
+
+![Insider risk management case content explorer](media/insider-risk-temp-content-explorer.png)
+
+To make it easier for risk analysts and investigators to review captured data and messages and review it's context to the case, several filtering and sorting tools are included in the Content Explorer. For basic sorting, the **Date** and **File class** columns support sorting using the column titles in the content queue pane.
+
+Add or remove column headings for the content queue with the **Edit columns** control and select from the following column options:
+
+| **Column option** | **Description** |
+| :--------- | :-------------- |
+| Author |  |
+| Bcc |  |
+| Caption |  |
+| Cc |  |
+| Comments |  |
+| Compound path |  |
+| Conversation ID |  |
+| Conversation index |  |
+| Created time |  |
+| Date |  |
+| Dominant theme |  |
+| Email set ID |  |
+| Family ID |  |
+| File class |  |
+| File ID |  |
+| File type icon |  |
+| ID |  |
+| Immutable ID |  |
+| Inclusive type |  |
+| Last modified |  |
+| Marked as pivot |  |
+| Marked as representative |  |
+| Message kind |  |
+| Participants |  |
+| Pivot ID |  |
+| Received |  |
+| Recipients |  |
+| Representative ID |  |
+| Sender |  |
+| Sender/Author |  |
+| Sent |  |
+| Size |  |
+| Source |  |
+| Subject |  |
+| Subject/Title |  |
+| Themes list |  |
+| Title |  |
+| To |  |
+
+#### Advanced content filtering
+
+For advanced filter and search tools, expand the **Filter** pane on the left side of the content queue. Select the **Add a condition** button to open the condition list:
+
+| **Condition option** | **Description** |
+| :--------- | :-------------- |
+| Annotations |  |
+| Attorney-client privilege score |  |
+| Author |  |
+| Bcc |  |
+| Cc |  |
+| Comments |  |
+| Compliance labels |  |
+| Compound path |  |
+| Conversation ID |  |
+| Created time |  |
+| Custodian |  |
+| Data source |  |
+| Date |  |
+| Dominant theme |  |
+| Email Internet headers |  |
+| Email security |  |
+| Email sensitivity |  |
+| Email set ID |  |
+| Family ID |  |
+| File class |  |
+| File types |  |
+| Has attachment |  |
+| Has attorney participant |  |
+| Ignored processing errors |  |
+| Immutable ID |  |
+| Importance |  |
+| Inclusive type |  |
+| Item class |  |
+| Keywords |  |
+| Last modified |  |
+| Load ID |  |
+| Location name |  |
+| Marked as pivot |  |
+| Marked as representative |  |
+| Meeting end date |  |
+| Meeting start date |  |
+| Message kind |  |
+| Native file extension |  |
+| Native file name |  |
+| NdEtSortExclAttach |  |
+| Participant domains |  |
+| Participants |  |
+| Pivot ID |  |
+| Potentially privileged |  |
+| Processing status |  |
+| Read percentile |  |
+| Received |  |
+| Recipient domains |  |
+| Relevance score |  |
+| Relevance tag |  |
+| Representative ID |  |
+| Sender |  |
+| Sender domain |  |
+| Sender/Author |  |
+| Sent |  |
+| Size |  |
+| Source |  |
+| Subject |  |
+| Subject/Title |  |
+| Tags |  |
+| Themes list |  |
+| Title |  |
+| To |  |
+| Unique in email set |  |
+| Was remediated |  |
+| Word count |  |
+| Work product |  |
 
 ### Case notes
 
