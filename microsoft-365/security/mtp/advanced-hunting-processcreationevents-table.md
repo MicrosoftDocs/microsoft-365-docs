@@ -20,7 +20,7 @@ ms.topic: article
 # ProcessCreationEvents
 
 **Applies to:**
-- Microsoft 365 security center
+- Microsoft Threat Protection
 
 The ProcessCreationEvents table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about process creation and related events. Use this reference to construct queries that return information from this table.
 

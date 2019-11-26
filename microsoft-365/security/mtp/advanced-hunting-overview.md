@@ -20,7 +20,7 @@ ms.topic: article
 # Proactively hunt for threats with Advanced hunting
 
 **Applies to**:
-- Microsoft 365 security center
+- Microsoft Threat Protection
 
 Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
 
@@ -28,8 +28,8 @@ In Microsoft 365 security center, Advanced hunting supports queries that look in
 
 || Microsoft 365 security center  |  Microsoft Defender Security Center |
 |-------------------------------|---|---|
-| Portal link | [securityoperations.microsoft.com/hunting](https://securityoperations.microsoft.com/hunting) | [securitycenter.windows.com/hunting](https://securitycenter.windows.com/hunting) |
-| Schema coverage | Windows 10 devices, Office 365 email  | Windows 10 devices  |
+| Portal link | [security.microsoft.com/hunting](https://security.microsoft.com/hunting) | [securitycenter.windows.com/hunting](https://securitycenter.windows.com/hunting) |
+| Schema coverage | Microsoft Threat Protection (Microsoft Defender ATP onboarded devices, Office 365 email)  | Microsoft Defender ATP onboarded devices  |
 | Custom detections | Not available  | Available |
 | Shared queries | Available  | Available — queries are shared with M365 security center |
 

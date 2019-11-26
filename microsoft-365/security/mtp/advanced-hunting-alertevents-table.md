@@ -20,27 +20,27 @@ ms.topic: article
 # AlertEvents
 
 **Applies to:**
-- Microsoft 365 security center
+- Microsoft Threat Protection
 
-The AlertEvents table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about Microsoft Defender ATP alerts. Use this reference to construct queries that return information from this table.
+The `AlertEvents` table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about Microsoft Defender ATP alerts. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the Advanced hunting schema, [see the Advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| AlertId | string | Unique identifier for the alert |
-| EventTime | datetime | Date and time when the event was recorded |
-| MachineId | string | Unique identifier for the machine in the service |
-| ComputerName | string | Fully qualified domain name (FQDN) of the machine |
-| Severity | string | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert |
-| Category | string | Type of threat indicator or breach activity identified by the alert |
-| Title | string | Title of the alert |
-| FileName | string | Name of the file that the recorded action was applied to |
-| SHA1 | string | SHA-1 of the file that the recorded action was applied to |
-| RemoteUrl | string | URL or fully qualified domain name (FQDN) that was being connected to |
-| RemoteIP | string | IP address that was being connected to |
-| ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns |
-| Table | string | Table that contains the details of the event |
+| `AlertId` | string | Unique identifier for the alert |
+| `EventTime` | datetime | Date and time when the event was recorded |
+| `MachineId` | string | Unique identifier for the machine in the service |
+| `ComputerName` | string | Fully qualified domain name (FQDN) of the machine |
+| `Severity` | string | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert |
+| `Category` | string | Type of threat indicator or breach activity identified by the alert |
+| `Title` | string | Title of the alert |
+| `FileName` | string | Name of the file that the recorded action was applied to |
+| `SHA1` | string | SHA-1 of the file that the recorded action was applied to |
+| `RemoteUrl` | string | URL or fully qualified domain name (FQDN) that was being connected to |
+| `RemoteIP` | string | IP address that was being connected to |
+| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns |
+| `Table` | string | Table that contains the details of the event |
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting-overview.md)

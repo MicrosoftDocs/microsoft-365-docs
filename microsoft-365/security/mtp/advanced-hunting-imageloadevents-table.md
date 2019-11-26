@@ -20,7 +20,7 @@ ms.topic: article
 # ImageLoadEvents
 
 **Applies to:**
-- Microsoft 365 security center
+- Microsoft Threat Protection
 
 The ImageLoadEvents table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about DLL loading events. Use this reference to construct queries that return information from this table.
 

@@ -20,7 +20,7 @@ ms.topic: article
 # DeviceTvmSoftwareInventoryVulnerabilities
 
 **Applies to:**
-- Microsoft 365 security center
+- Microsoft Threat Protection
 
 The DeviceTvmSoftwareInventoryVulnerabilities table in the Advanced hunting schema contains the [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) inventory of software on your devices as well as any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information. Use this reference to construct queries that return information from the table.
 

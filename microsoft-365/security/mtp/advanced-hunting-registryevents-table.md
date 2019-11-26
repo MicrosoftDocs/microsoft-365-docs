@@ -20,7 +20,7 @@ ms.topic: article
 # RegistryEvents
 
 **Applies to:**
-- Microsoft 365 security center
+- Microsoft Threat Protection
 
 The RegistryEvents table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about the creation and modification of registry entries. Use this reference to construct queries that return information from this table.
 

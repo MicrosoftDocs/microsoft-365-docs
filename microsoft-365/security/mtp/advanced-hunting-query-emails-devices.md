@@ -1,7 +1,7 @@
 ---
 title: Find threats across devices and emails using Advanced hunting
 description: Study common hunting scenarios and sample queries that cover devices and emails.
-keywords: advanced hunting, Office365 data, tolower, Windows devices, Office365 emails normalize, emails, threat hunting, cyber threat hunting, search, query, telemetry
+keywords: advanced hunting, Office365 data, Windows devices, Office365 emails normalize, emails, threat hunting, cyber threat hunting, search, query, telemetry
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -24,21 +24,14 @@ ms.topic: article
 
 [Advanced hunting](advanced-hunting-overview.md) on Microsoft 365 security center allows you to proactively hunt for threats across your Windows devices and Office 365 emails. Here are some hunting scenarios and sample queries that can help you explore how you might construct queries covering both devices and emails.
 
-## Normalize common values
-Before running queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you might need to consider the following techniques needed to normalize values:
+## Obtain user accounts from email addresses
+When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses. To do this use the *local-host* from the email address:
 
--  File SHA-256 values in the **[EmailEvents](advanced-hunting-emailevents-table.md)** table are currently in upper case. To unify this table with other tables using file SHA-256 values, use the `tolower()` function ([see Kusto reference](https://docs.microsoft.com/azure/kusto/query/tolowerfunction)). The example below uses the `project` operator to hold the lower case SHA-256 values in a column called `LowerSha`. 
+```
+AccountName = tostring(split(SenderFromAddress, "@")[0])
+```
 
-    ```
-    | project LowerSha = tolower(SHA256);
-    ```
-
-- To obtain user account names from sender or recipient email addresses, use the *local-host* from the email address:
-
-    ```
-    AccountName = tostring(split(SenderFromAddress, "@")[0])
-    ```
-Both these normalization techniques are used in the succeeding scenarios.
+This normalization technique is used in the succeeding scenarios.
 
 ## Hunting scenarios
 
@@ -49,20 +42,20 @@ Assuming you know of an email address sending malicious files, you can run this 
 //Get prevalence of files sent by a malicious sender in your organization
 let MaliciousSender=EmailAttachmentInfo
 | where SenderFromAddress =~ "malicious sender"
-| project LowerSha = tolower(SHA256);
 MaliciousSender
 | join (
 FileCreationEvents
-| project LowerSha = SHA256
-) on LowerSha
+| project FileName, SHA256
+) on SHA256
 ```
+
 ### Review logon attempts after receipt of malicious emails
 This query finds the 10 latest logons performed by email recipients within 30 minutes after they received known malicious emails. You can use this query to check whether the accounts of the email recipients have been compromised.
 
 ```
 //Find logons that occurred right after malicious email was received
 let MaliciousEmail=EmailEvents
-| where MalwareFilterVerdict == "MAL" 
+| where MalwareFilterVerdict == "Malware" 
 | project TimeEmail = EventTime, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 MaliciousEmail
 | join (
