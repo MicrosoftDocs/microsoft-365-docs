@@ -39,7 +39,7 @@ There are specific administrative functions that are only available to the globa
   
 ### Assigning Compliance Manager roles to users
 
-Once the administrator assigns Compliance Manager roles to other users, those users can view data in Compliance Manager and perform actions determined by their role. The administrator can also give read-only access to Compliance Manager by assigning the user the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
+Once the administrator assigns Compliance Manager roles to other users, those users can view data in Compliance Manager and perform actions determined by their role. The administrator can also give read-only access to Compliance Manager by assigning the user the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
 
 Each Compliance Manager role has slightly different permissions. You can view the permissions assigned to each role, see which users are in which roles, and add or remove users from that role through the Service Trust Portal. Select the **Admin** menu item, and choose **Settings** to view.
   
@@ -167,11 +167,6 @@ Action Type dimension key.
 8. Select the **X** to close the Description blade.
 9. Select **Save** to save the Customer Action.
 
-#### Edit a customer action
-
-1. Select the ellipses (…) for the Action you want to modify and select **Edit**.
-2. Edit the Action as desired, and select **Save**.
-
 #### Delete a customer action
 
 1. Select the ellipses (…) for the Action you want to modify and select **Delete**.
@@ -201,7 +196,7 @@ Action Type dimension key.
 - The title of the Assessment.
 - The dimensions of the Assessment, including certification, environment, and product applied to the Assessment.
 - The date it was created and date when it was last modified.
-- The Assessment Score shown as a percentage.
+- The Assessment Score shown as a percentage. This score automatically includes your scores from Microsoft-managed controls and from Secure Score.
 - Progress indicators that show the number of assessed Microsoft-managed and customer-manged controls.
 
 ### Copying information from existing Assessments
@@ -229,12 +224,7 @@ When you create an Assessment, you have the option to copy information from an e
 
 3. Select **Save** to create the Assessment.
 
-### Viewing Assessments
-
-> [!IMPORTANT]
-> When you receive an alert notification (designated by an orange triangle icon on the Assessments dashboard) that an Assessment is ready for update, select **Update**. This ensures that updates to templates are reflected in the Assessment.  
-
-#### View an Assessment
+### View an Assessment
   
 1. In the Assessments dashboard, select the assessment name to open it and view the Action Items and Controls Info.
 
@@ -299,40 +289,39 @@ You can export an Assessment to an Excel file for compliance stakeholders in you
 
 The assessment report is downloaded as an Excel file in your browser session. The files name for the Excel file defaults to the title of the Assessment.
 
-### Archive a Template or an Assessment
+### Hide a Template or an Assessment
 
-When you are finished with a Template or Assessment and no longer need it for compliance purposes, you can archive it. When a Template or Assessment is archived, it is removed from the default view, and you must check the Show Archived checkbox to display it.
+When you are finished with a Template or Assessment and no longer need it for compliance purposes, you can hide it from your view. When a Template or Assessment is hidden, it is removed from the default view, and you must select **Include Hidden** checkbox to display it.
 
-![Compliance Manager Microsoft Action View](media/compliance-manager-archive-assessment-view.png)
-  
+![Compliance Manager Hidden Template View](media/compliance-manager-hidden-template.png "Compliance Manager hidden template")
+
 > [!IMPORTANT]
-> Archived Assessments do not retain their links to uploaded evidence documents. It is highly recommended that you export the Assessment before archiving to retain links to the evidence documents in the report.
+> Hidden Assessments do not retain their links to uploaded evidence documents. It is highly recommended that you export the Assessment before hiding it to retain links to the evidence documents in the report.
   
-#### Archive a Template
+#### Hiding a Template
 
 1. Open the **Templates** dashboard.
-2. Locate the Template you want to archive and select the archive icon.
-3. When you see the confirmation message, select **Archive**.
+2. Locate the Template you want to hide and at the ellipses in its row, select **Hide**.
+3. When you see the confirmation message, select **Hide**.
 
-#### Archive an Assessment
+#### Hide an Assessment
 
 1. Open the **Assessments** dashboard.
-2. Select the **Group** from the dropdown that contains the Assessment you want to archive.
-3. Locate the Assessment you want to archive and select the archive icon.
-4. When you see the confirmation message, select **Archive**.
+2. Select the **Group** from the dropdown that contains the Assessment you want to hide.
+3. Locate the Assessment you want to hide and at the ellipses, select **Hide**.
+4. When you see the confirmation message, select **Hide**.
 
-#### View archived Assessments
+#### View hidden Assessments
   
-1. Open the **Assessments** dashboard tab and check the **Show Archived** checkbox.
-2. The archived assessments appear in the **Archived Assessments** section.
-3. Select the Assessment name to open and view the Assessment.
+1. Open the **Assessments** dashboard tab and select the **Include Hidden** checkbox.
+2. The hidden assessments appear in the **Hidden Assessments** section.
 
-#### Activate an archived Assessment
+#### Unhide an Assessment
 
-1. On the **Assessments** tab and select the **Show Archived** checkbox.
-2. The archived assessments appear in the **Archived Assessments** section.
-3. Locate the Assessment you want to activate and select the activate icon.
-4. When you see the confirmation message, select **Activate**.
+1. On the **Assessments** tab, select the **Include Hidden** checkbox.
+2. The hidden assessments appear in the **Hidden Assessments** section.
+3. Locate the Assessment you want to unhide and at the ellipses, select **Unhide**.
+4. When you see the confirmation message, select **Unhide**.
 
 ## Controls and Actions
 
@@ -384,9 +373,6 @@ The dashboard displays each Template, along with the Certification and Product a
 
 The built-in Templates each have a built-in Assessment associated with them, but you can create additional Assessments based on built-in Templates, and you can import your own Templates, and create custom Assessments based off those.
 
-> [!IMPORTANT]
-> When you receive an alert notification (designated by an orange triangle icon on the Templates dashboard) that a template is ready for update, select **Update** to ensure your score is accurately calculated. Updates do not automatically extend to the Assessment level, so you should also accept updates to Assessments to ensure proper functionality.
-
 ### Create a Template
 
 You can create a Template by copying an existing Template or by importing a custom Template. There is a specific format and schema that must be used for Template data or it will not import into Compliance Manager. A file with the correct schema and sample data can be downloaded from here.
@@ -432,13 +418,13 @@ This tab includes columns that define individual Actions, and it includes detail
 
 - **actionDimensionValues:** Double semicolon-delimited list of applicable dimensions from the Dimensions tab, using the following format:
 
-    ```
+    ```Markdown
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
     For example:
 
-    ```
+    ```Markdown
     Product::Office 365;;Certification::NIST CSF
     ```
 
@@ -472,7 +458,7 @@ Templates and Assessments support the use of Markdown language for some text ele
 
 Bullets are represented as asterisks instead of Word or Excel bullets. For example:
 
-```
+```Markdown
 * Item A
 * Item B
 * Item C
@@ -491,15 +477,16 @@ Numbers are represented as numbers, but with spaces for indentation (three space
 
 Hyperlinks are constructed by placing brackets around the hyperlink text and the hyperlink itself in parentheses immediately next to the close bracket.  For example:
 
-```
+```Markdown
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 ```
 This text renders as follows:  Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
+
 As shown in the above example, Compliance Manager does not render URLs with underlining.
 
-Boldface text is just two asterisks on each side of the text to be bolded.  For example:
+Boldface text is two asterisks on each side of the text to be bolded.  For example:
 
-```
+```Markdown
 **This text will render in bold**
 ```
 **This text renders in bold**
@@ -527,6 +514,9 @@ You can create a Template by copying an existing Template or by importing Templa
 7. The imported Template appears on the **Templates** dashboard and it has a status of **Imported**. Select the ellipses (…) and select **Publish** to publish the Template. When the confirmation message appears, select **Publish**. The Template status changes to **Pending Approval**.
 8. Another user with the Compliance Manager Administrator role must approve the Template in the Templates dashboard. They must select the ellipses (…) and select **Approve**. When the confirmation message appears, select **Approve**. The Template is now ready for use.
 
+> [!IMPORTANT]
+> When creating a template, you must include Dimensions for both **Product** and **Certification** to ensure your template displays in Compliance Score.
+
 ### Customize a Template
 
 Templates can be customized through the additional of custom controls. All custom controls are considered customer-managed Controls.
@@ -550,6 +540,9 @@ Templates can be customized through the additional of custom controls. All custo
 11. Repeat Steps 9 and 10 for each additional Action you want to assign.
 12. When all applicable Actions have been selected, select **Assign**.
 13. Select **Save** to save the new control.
+
+> [!NOTE]
+> Any changes made to a template will not be reflected in existing assessments. Template updates must be made first, and then applied to a new assessment, in order for the changes to be seen.
 
 ### Export a Template to JSON
 

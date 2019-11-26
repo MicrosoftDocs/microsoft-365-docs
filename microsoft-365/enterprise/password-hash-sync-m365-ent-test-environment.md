@@ -20,7 +20,9 @@ description: "Summary: Configure and demonstrate password hash synchronization a
 
 # Password hash synchronization for your Microsoft 365 test environment
 
-Many organizations use Azure AD Connect and password hash synchronization to synchronize the set of accounts in their on-premises Active Directory Domain Services (AD DS) forest to the set of accounts in the Azure AD tenant of their Office 365 and EMS E5 subscriptions. This article describes how you can add password hash synchronization to your Microsoft 365 test environment, resulting in the following configuration:
+*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+
+Many organizations use Azure AD Connect and password hash synchronization to synchronize the set of accounts in their on-premises Active Directory Domain Services (AD DS) forest to the set of accounts in the Azure AD tenant of their Microsoft 365 or Office 365 subscription. This article describes how you can add password hash synchronization to your Microsoft 365 test environment, resulting in the following configuration:
   
 ![The simulated enterprise with password hash synchronization test environment](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
@@ -30,7 +32,7 @@ There are two phases to setting up this test environment:
 2. Install and configure Azure AD Connect on APP1.
     
 > [!TIP]
-> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
 ## Phase 1: Create the Microsoft 365 simulated enterprise test environment
 
@@ -40,7 +42,7 @@ Follow the instructions in [simulated enterprise base configuration for Microsof
   
 This configuration consists of: 
   
-- Office 365 E5 and EMS E5 trial or paid subscriptions.
+- Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network. DC1 is a domain controller for the testlab.\<your public domain name> AD DS domain.
 
 ## Phase 2: Create and register the testlab domain
@@ -57,7 +59,7 @@ Here is your resulting configuration.
   
 This configuration consists of:
 
-- Office 365 E5 and EMS E5 trial or paid subscriptions with the DNS domain testlab.\<your public domain name> registered.
+- Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions with the DNS domain testlab.\<your public domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.
 
 Notice how the testlab.\<your public domain name> is now:
@@ -76,7 +78,7 @@ First, you install and configure Azure AD Connect on APP1.
     
 2. From the desktop of APP1, open an administrator-level Windows PowerShell command prompt, and then run these commands:
     
-   ```
+   ```powershell
    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
    Stop-Process -Name Explorer -Force
@@ -124,8 +126,8 @@ Here is your resulting configuration.
 
 This configuration consists of: 
   
-- Office 365 E5 and EMS E5 trial or paid subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
-- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions periodically.
+- Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 or Office 365 subscription periodically.
 - The User1 account in the TESTLAB  AD DS domain has been synchronized with the Azure AD tenant.
 
 ## Next step

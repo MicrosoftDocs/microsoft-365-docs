@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — US Internal Revenue Service Publication 1075
+title: US Internal Revenue Service Publication 1075
 description: Microsoft has controls that meet the requirements of US Internal Revenue Service Publication 1075.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -58,7 +58,7 @@ Compliance with the substantive requirements of IRS 1075 is covered under the Fe
 
 **How does Microsoft address the requirements of IRS 1075?**
 
-Microsoft regularly monitors its security, privacy, and operational controls and NIST 800-53 rev. 4 controls required by the FedRAMP baseline for Moderate Impact information systems. It provides quarterly access to this information through continuous monitoring reports. Azure Government and Office 365 U.S. Government customers can access this sensitive compliance information through the [Service Trust Portal](http://aka.ms/stphelp).
+Microsoft regularly monitors its security, privacy, and operational controls and NIST 800-53 rev. 4 controls required by the FedRAMP baseline for Moderate Impact information systems. It provides quarterly access to this information through continuous monitoring reports. Azure Government and Office 365 U.S. Government customers can access this sensitive compliance information through the [Service Trust Portal](https://aka.ms/stphelp).
 
 In addition, Microsoft has committed to including IRS 1075 controls in its master control set for Azure Government and Office 365 U.S. Government, and to auditing against them annually.
 
@@ -72,12 +72,12 @@ No. The only environments where FTI can be stored and processed are Azure Govern
 
 ## Resources
 
-- [IRS Publication 1075](http://www.irs.gov/pub/irs-pdf/p1075.pdf)
-- [IRS Safeguards Program](http://www.irs.gov/uac/Safeguards-Program)
+- [IRS Publication 1075](https://www.irs.gov/pub/irs-pdf/p1075.pdf)
+- [IRS Safeguards Program](https://www.irs.gov/uac/Safeguards-Program)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-- [Microsoft Cloud for Government](http://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- [Microsoft Cloud for Government](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf).

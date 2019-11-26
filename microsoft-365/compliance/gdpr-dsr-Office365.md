@@ -1,7 +1,7 @@
 ---
-title:  Office 365 Data Service Requests Under the GDPR
-description: Understand the user rights under GDPR and how Office 365 helps enterprises find and act on data in response to DSRs.
-keywords:  Office 365, DSR, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
+title:  Office 365 Data Service Requests Under the GDPR and CCPA
+description: Understand the user rights under GDPR and CCPA and how Office 365 helps enterprises find and act on data in response to DSRs.
+keywords:  Office 365, DSR, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
 localization_priority:  Priority
 ms.prod:  Microsoft-365-enterprise
 ms.topic:  article
@@ -9,23 +9,28 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience:  itpro
-ms.collection:  GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
 ---
 
-# Office 365 Data Subject Requests for the GDPR
+# Office 365 Data Subject Requests for the GDPR and CCPA
 
 ## Introduction to DSRs
 
 The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called a *Data Subject Request* or DSR. The controller is obligated to promptly consider each DSR and provide a substantive response either by taking the requested action or by providing an explanation for why the DSR cannot be accommodated by the controller. A controller should consult with its own legal or compliance advisers regarding the proper disposition of any given DSR.
 
-The guide discusses how to use Office 365 products, services, and administrative tools to help you find and act on personal data to respond to DSRs. Specifically, this includes how to find, access, and act on personal data that resides in Microsoft's cloud. Here’s a quick overview of the processes outlined in this guide:
+Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR’s Data Subject Rights, such as the right to delete, access and receive (portability) their personal information. The CCPA also provides for certain disclosures, protections against 
+discrimination when electing exercise rights, and “opt-out/ opt-in” requirements for certain data transfers classified as “sales". Sales are broadly defined to include the sharing of data for a valuable consideration. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
+
+The guide discusses how to use Office 365 products, services, and administrative tools to help you find and act on personal data or personal information to respond to DSRs. Specifically, this includes how to find, access, and act on personal data or personal information that resides in Microsoft's cloud. Here’s a quick overview of the processes outlined in this guide:
 
 - **Discover:** Use search and discovery tools to more easily find customer data that may be the subject of a DSR. Once potentially responsive documents are collected, you can perform one or more of the DSR actions described in the following steps to respond to the request. Alternatively, you may determine that the request doesn't meet your organization’s guidelines for responding to DSRs.
 - **Access:** Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it that can be available to the data subject.
 - **Rectify:** Make changes or implement other requested actions on the personal data, where applicable.
 - **Restrict:** Restrict the processing of personal data, either by removing licenses for various Azure services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
 - **Delete:** Permanently remove personal data that resided in the Microsoft cloud.
-- **Export:** Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
+- **Export/Receive (Portability):** Provide an electronic copy (in a machine-readable format) of personal data or personal information to the data subject. Personal information under the CCPA is any information relating to an identified or identifiable person. There is no distinction between a person’s private, public, or work roles. The defined term “personal information” roughly lines up with “personal data” under GDPR. However, the CCPA also includes family and household data. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
 
 ### Terminology
 
@@ -178,13 +183,13 @@ This example returns Excel files on SharePoint Online sites and OneDrive for Bus
 
 ***Keyword syntax***
 
-```
+```Query
 pilar@contoso.com AND filetype="xlxs"
 ```
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image18.png)
+![keyword dialog](media/O365-DSR-Doc_image18.png)
 
 ##### Example 2
 
@@ -194,19 +199,19 @@ This example returns Excel or Word files on SharePoint Online sites and OneDrive
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image19.png)
+![keyword dialog](media/O365-DSR-Doc_image19.png)
 
 ##### Example 3
 
 This example returns email messages that contain the specified ID number, which is a France Social Security Number (INSEE)
 
-```
+```Query
 "1600330345678 97" AND kind="email"
 ```
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image20.png)
+![keyword dialog](media/O365-DSR-Doc_image20.png)
 
 #### Working with partially indexed items in Content Search
 
@@ -276,13 +281,13 @@ End users can discover, access, and rectify SharePoint Online user profile data 
 
 Another way for users to access their SharePoint profile data is to navigate to the **edit profile page** in their OneDrive for Business account, which can be accessed by going to the **EditProfile.aspx** path under the OneDrive for Business account URL. For example, for a user <strong>user1@contoso.com</strong>, the user's OneDrive for Business account is at:
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/OneDrive.aspx`
 ```
 
 The URL for the edit profile page would be:
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/EditProfile.aspx`
 ```
 
@@ -352,9 +357,11 @@ Here’s specific guidance to search for a Class Notebook.
 3. Select that item, and then copy the folder path that’s displayed in the details pane. This is the root folder for the Class Notebook.
 4. Edit the search that you created in step 1 and replace the class name in the keyword query with the folder path of the Class Notebook and precede the folder path with the **path** site property; for example, **path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/"**. Be sure to include the quotation marks and the trailing forward slash.
 5. Add a search condition and select the File Type condition and use one for the value of the file type. This returns all OneNote files in the search results. The resulting keyword syntax would look something like this:[](#building-search-queries-to-find-personal-data)
-    ```
+
+    ```Query
    path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
    ```
+
 6.  Rerun the Content Search. The search results should include all OneNote files for the Class Notebook from the class team.
 
 #### Microsoft To Do
@@ -421,13 +428,13 @@ When you export the results of a Content Search, email items can be downloaded a
 To export and download items:
 
 1. Open the Content Search in the Security & Compliance Center.
-2. On the search fly out page, click ![](media/o365-dsr_image21.png) **More**, and then click **Export results**. You can also export a report.
+2. On the search fly out page, click ![download icon](media/o365-dsr_image21.png) **More**, and then click **Export results**. You can also export a report.
 3. Complete the sections on the **Export results** fly out page. Be sure to use the scroll bar to view all export options.
 4. Go back to the Content search page in the Security & Compliance Center, and click the **Export** tab.
 5. Click **Refresh** to update the page.
 6. Under the **Name** column, click the export job that you created. The name of the export job is the name of the content search appended with **\_Export**.
 7. On the export fly out page, under **Export key**, **click Copy to clipboard**. You'll use this key in step 10 to download the search results
-8. On the top of the fly out page, click ![](media/o365-dsr_image21.png) **Download results**.
+8. On the top of the fly out page, click ![download icon](media/o365-dsr_image21.png) **Download results**.
 9. If you're prompted to install the **Microsoft Office 365 eDiscovery Export Tool**, click **Install**.
 10. In the **eDiscovery Export Tool**, paste the export key that you copied in step 7 in the appropriate box.
 11. Click **Browse** to specify the location where you want to download the search result files.
@@ -842,13 +849,16 @@ Students files associated with a Submission for Assignment are stored in a docum
 
 An admin can use the Content Search tool in the Office 365 Security & Compliance Center to search for student files (in the Student Work and Class Files libraries) that are related to submissions on assignments and files related to assignments. For example, an admin could search all SharePoint sites in the organization and use the student’s name and class or assignment name in the search query to find data relevant to a DSR request.
 
-Similarly, an admin can for teacher files related to assignments for files that a teacher distributed to students. For example, an admin could search all SharePoint sites in the organization and use the teacher's name and class or assignment name in the search query to find data relevant to a DSR request.
+Similarly, an admin can search for teacher files related to assignments for files that a teacher distributed to students. For example, an admin could search all SharePoint sites in the organization and use the teacher's name and class or assignment name in the search query to find data relevant to a DSR request.
 
-See [Using the Content Search eDiscovery tool to respond to DSRs](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) section in this guide.
+For more information, see:
+
+- [Assignments Admin Documentation](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-admin-documentation)
+- [Using the Content Search eDiscovery tool to respond to DSRs](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) (in this guide)
 
 ##### Finding Assignments data not stored in SharePoint
 
-The following types of Assignments data are not stored in the class team SharePoint site, and therefore isn't discoverable by using Content Search. This data this includes the following:
+The following types of Assignments data are not stored in the class team SharePoint site, and therefore aren't discoverable by using Content Search. This data this includes the following:
 
 - Student grades and feedback from the teacher
 - The list of documents submitted for an assignment by each student
@@ -860,26 +870,27 @@ Even if a student is no longer part of a class, their data might still be presen
 
 ##### Export
 
-You can export Assignments data for a specific student for all classes in which the student is enrolled by using a PowerShell script. See:
+You can export Assignments data for a specific student for all classes in which the student is enrolled by using a PowerShell script to get a list of classes for the student and then using a PowerShell script to export the data. See:
 
-- [Using scripts to export and delete user data from Assignments](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe).
-- [Export student and teacher data from Assignments](https://support.office.com/article/e8c36e0e-fb6e-42c5-97fd-66f90f92a13a).
+- [Configure Assignments for Teams](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
+- [Get a list of classes for a specific student](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
+- [Export student and teacher data from Assignments](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-export)
 
-If the student has been removed from the Team Class site, the admin can add the student back to the site before running the export script. Or the admin can use the input file for the script to identify every class that the student was ever enrolled in.
-You can also use the Assignment export script to export submissions data for all assignments that a teacher has access to.
+If the student has been removed from the Team Class site, the admin can add the student back to the site before running the export script. Or the admin can use the input file for the script to identify every class that the student was ever enrolled in. You can also use the Assignment export script to export submissions data for all assignments that a teacher has access to.
 
 ##### Delete
 
-You can delete Assignments data for a specific student for all classes in which the student is enrolled by using a PowerShell script. You should do this before you remove the student from the class. See:
+You can delete Assignments data for a specific student for all classes in which the student is enrolled by using a PowerShell script to get a list of classes for the student and then using a PowerShell script to delete the data. You should do this before you remove the student from the class. See:
 
-- [Using scripts to export and delete user data from Assignments](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe).
+- [Configure Assignments for Teams](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
+- [Get a list of classes for a specific student](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
+- [Delete student data from Assignments](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-delete)
 
-- [Delete student data from Assignments](https://support.office.com/article/a368853a-9565-4320-8e86-2f9423e932a4).
+If the student has been removed from the Team Class site, the admin can add the student back to the site before running the export script. Or the admin can use the input file for the script to identify every class that the student was ever enrolled in. You can't use the Assignments deletion script to delete teacher data because all Assignments are shared across the Class Team site. As an alternative, an admin would have to add themselves to the Class Team site and then delete a specific Assignment.
 
-If the student has been removed from the Team Class site, the admin can add the student back to the site before running the export script. Or the admin can use the input file for the script to identify every class that the student was ever enrolled in.
-You can't use the Assignments deletion script to delete teacher data because all Assignments are shared across the Class Team site. As an alternative, an admin would have to add themselves to the Class Team site and then delete a specific Assignment.
+#### Class Notebook
 
-**Class Notebook:** Searching for content in Class Notebook is discussed previously in this guide. See the [OneNote Class Notebook](#onenote-class-notebook) section. You can also use the Content Search tool to export data from a Class Notebook. Alternatively, an admin or the data subject can export data from a Class Notebook. See [Save a copy of a Class Notebook](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec).
+Searching for content in Class Notebook is discussed previously in this guide. See the [OneNote Class Notebook](#onenote-class-notebook) section. You can also use the Content Search tool to export data from a Class Notebook. Alternatively, an admin or the data subject can export data from a Class Notebook. See [Save a copy of a Class Notebook](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec).
 
 ### Flow
 
@@ -1072,7 +1083,7 @@ PowerApps is a service for building apps that can be shared and used within your
 
 To help facilitate a DSR request related to PowerApps, you can use the administration operations exposed in the [PowerApps Admin Center](https://admin.powerapps.com/) and [PowerApps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804). Access to these tools requires an account with the following permissions:
 
-- A paid PowerApps Plan 2 license or a PowerApps Plan 2 trial license. You can sign up for a 30-day trial license [here](http://web.powerapps.com/trial).
+- A paid PowerApps Plan 2 license or a PowerApps Plan 2 trial license. You can sign up for a 30-day trial license [here](https://web.powerapps.com/trial).
 - [Office 365 global administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)
     or
 - [Azure Active Directory global administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
@@ -1168,7 +1179,7 @@ After relevant StaffHub content is found, you can view and take screenshots of r
 - **Shared files:** All files in StaffHub are stored on SharePoint Online and can thus be discovered, accessed, and exported by using Content Search as previously described above. They can also be viewed from within StaffHub under the tab **Files**.
 - **Messaging:** Currently, messages can be accessed by following the steps about accessing user-specific data in the next item. In the future, all messages in StaffHub will be stored in Microsoft Teams, which means you be able to use the Content Search tool to access them.
 - **User-specific data:** User-specific data consists of user settings, user activity feed and user shift request history, none of which can be viewed by team members or admins. To access or export user-specific data, have the data subject sign in to their StaffHub account to obtain it. Alternatively, if the data subject has left your organization, you can obtain this data by having your admin reset the user password for the data subject to allow you or the admin to sign in to their account.
-- **Kronos:** StaffHub supports connections to [Kronos](http://www.kronos.com/), which is a third-party workforce management tool. StaffHub and Kronos are independent processors and process your organization's data under individual terms that you have signed with each party. If your DSR relates to data held by Kronos, you need to contact Kronos for DSR assistance and vice versa.
+- **Kronos:** StaffHub supports connections to [Kronos](https://www.kronos.com/), which is a third-party workforce management tool. StaffHub and Kronos are independent processors and process your organization's data under individual terms that you have signed with each party. If your DSR relates to data held by Kronos, you need to contact Kronos for DSR assistance and vice versa.
 
 #### Delete
 
@@ -1205,7 +1216,7 @@ The following sections explain how to use the in-app functionality in Microsoft 
 
 #### Discover
 
-Content created using Sway (found at [www.sway.com](http://www.sway.com)) can only be seen by the owner and those that the author has permitted to view the Sway. See [Privacy Settings in Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). To determine whether Sway is a place where personal data responsive to your DSR is likely to reside, you can ask the Data Subject and organizational users who are likely to have generated content about the Data Subject to search their Sways and share with you any Sways that are likely to contain personal data responsive to the Data Subject’s request. For information on how to share a Sway, see “Share a Sway from your Organizational Account” in this [Share your Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998) article.
+Content created using Sway (found at [www.sway.com](https://www.sway.com)) can only be seen by the owner and those that the author has permitted to view the Sway. See [Privacy Settings in Sway](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). To determine whether Sway is a place where personal data responsive to your DSR is likely to reside, you can ask the Data Subject and organizational users who are likely to have generated content about the Data Subject to search their Sways and share with you any Sways that are likely to contain personal data responsive to the Data Subject’s request. For information on how to share a Sway, see “Share a Sway from your Organizational Account” in this [Share your Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998) article.
 
 #### Access
 
@@ -1533,7 +1544,7 @@ Users can delete the following information in Delve:
 
 ### MyAnalytics
 
-MyAnalytics provides statistics to users to help them understand how they spend their time at work. To help your users better understand the data that is presented to them in their personal dashboard and how that data is calculated, direct your users to the [MyAnalytics personal dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard) help topic.
+MyAnalytics provides statistics to users to help them understand how they spend their time at work. To help your users better understand the data that is presented to them in their personal dashboard and how that data is calculated, direct your users to the [MyAnalytics personal dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2) help topic.
 
 #### Access and export
 
@@ -1545,7 +1556,7 @@ All insights generated by MyAnalytics are derived from the user’s mail and cal
 
 #### Restrict
 
-To restrict processing for a specific user, you can opt them out of MyAnalytics. To see how, see [Configure MyAnalytics user settings](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-mya-user-settings).
+To restrict processing for a specific user, you can opt them out of MyAnalytics. To see how, see [Configure MyAnalytics user settings](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-myanalytics).
 
 #### Delete
 
@@ -1553,7 +1564,7 @@ All mailbox content, including MyAnalytics data, is purged when a user account i
 
 ### Workplace Analytics
 
-Workplace Analytics allows organizations to augment Office 365 data with their own business data to gain insights about organizational productivity, collaboration patterns, and employee engagement. [This article](https://docs.microsoft.com/workplace-analytics/overview/privacy-and-data-access) explains the control that your organization has over the data that Workplace Analytics processes and who has access to that data.
+Workplace Analytics allows organizations to augment Office 365 data with their own business data to gain insights about organizational productivity, collaboration patterns, and employee engagement. [This article](https://docs.microsoft.com/workplace-analytics/index-orig) explains the control that your organization has over the data that Workplace Analytics processes and who has access to that data.
 
 To assist you with DSRs in Workplace Analytics: 
 
@@ -1582,7 +1593,7 @@ To remove the personal data of a data subject, an Office 365 global administrato
 1. Remove the Workplace Analytics license from the data subject.
 2. Delete the Azure Active Directory (AAD) entry for the data subject. (For more information, see [Delete a user](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user).)
 3. Contact support and have support open a ticket for a Data Subject Rights (DSR) user-delete request. In this ticket, identify the data subject by using their User Principal Name (UPN).
-4. Export a copy of the HR data from the company's HR system (see [Export data](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data#step-three--export-data)), remove the data subject's information from that HR data file, and then upload the edited HR data file in .csv format into Workplace Analytics (see [Upload organizational data](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)).
+4. Export a copy of the HR data from the company's HR system (see [Export data](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data)), remove the data subject's information from that HR data file, and then upload the edited HR data file in .csv format into Workplace Analytics (see [Upload organizational data](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)).
 
 ## Part 3: Responding to DSRs for system-generated Logs
 
@@ -1627,7 +1638,7 @@ The following summarizes accessing and exporting system-generated logs using the
 
 - **What will data in system-generated logs look like?:** Example of a system-generated log record in JSON format:
 
-   ```
+   ```JSON
    [{
             "DateTime": "2017-04-28T12:09:29-07:00",
              "AppName": "SharePoint",
@@ -1668,7 +1679,7 @@ Deleting a user’s account will not remove system-generated logs for Yammer and
 A global IT admin needs to do the following to delete system-generated logs in the following national clouds:
 
 - Office 365 Germany - When the user account is permanently deleted, the system-generated logs will also be deleted. 
-- Office 365 US Government - Submit a request to Microsoft Support via the [Office 365 admin portal](http://portal.office365.us).
+- Office 365 US Government - Submit a request to Microsoft Support via the [Office 365 admin portal](https://portal.office365.us).
 - Office 365 operated by 21Vianet (China) - Submit a request to Microsoft Support via the Office 365 admin portal at this [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Go to **Commerce** and then select **Subscription** -> **Privacy** -> **GDPR** and enter the required information.
 
 ## Part 4: Additional resources to assist you with DSRs
@@ -1786,4 +1797,5 @@ The following table lists the changes to the Office 365 DSR guide since its init
 |1/9/2019|[StaffHub](#staffhub)|In the Delete section, updated the description of what happens when a user account is permanently deleted.|
 |5/8/2019| [Publisher](#publisher)|Added content about responding to DSRs for Publisher.|
 |7/11/2019| [MyAnalytics](#myanalytics)|The ability for an admin to use the DSR case tool in the Office 365 Security & Compliance Center to export MyAnalytics data was removed because all users can now view their data in the MyAnalytics app. |
+|11/6/2019|[Education](#education)|Linked to new topics on using PowerShell scripts to get a list of classes for a specific student and then exporting or deleting their data.|
 ||||

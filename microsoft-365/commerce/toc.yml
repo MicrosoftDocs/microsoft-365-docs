@@ -3,16 +3,15 @@
   expanded: true
   items:
     - name: Products and services
-      expanded: true
       items: 
         - name: Manage third-party apps
           href: manage-saas-apps.md
         - name: Buy licenses
           href: /office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: Assign licenses
-          href: /office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+          href: /office365/admin/manage/assign-licenses-to-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: Unassign licenses
-          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+          href: /office365/admin/manage/remove-licenses-from-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: Remove licenses from subscription
           href: /office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: Upgrade subscriptions
@@ -23,15 +22,12 @@
         - name: Understand your invoice
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
         - name: Manage payment methods
-          href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
+          href: /office365/Admin/subscriptions-and-billing/add-update-or-remove-credit-card-or-bank-account?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: Manage billing profiles
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
-        - name: View order history
-          href: /microsoft-365/commerce/billing-and-payments/view-order-history
         - name: Payment Services Directive 2 and Strong Customer Authentication
-          href: psd2.md
+          href: /microsoft-365/commerce/billing-and-payments/psd2
     - name: Billing accounts
-      expanded: true
       items: 
         - name: Manage billing accounts
           href: /microsoft-365/commerce/billing-accounts/manage-billing-accounts

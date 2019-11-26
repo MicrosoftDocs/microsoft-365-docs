@@ -3,7 +3,7 @@ title: "Teams for highly regulated data"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 11/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -22,6 +22,10 @@ This article provides you with recommendations and steps to configure a private 
 
 Beyond the private access based on the Office 365 group, this article describes how to configure the underlying private SharePoint team site, which you can access from the **Files** section of a team channel, for the additional security needed to store highly regulated data. On this SharePoint team site, you can store and collaborate on files, pages, a shared calendar, tasks, a notebook, and lists.
 
+>[!Note]
+> A similar scenario using SharePoint is [here](teams-sharepoint-online-sites-highly-regulated-data.md).
+>
+
 The elements of configuration for a team for highly regulated data are:
 
 - A private team with a corresponding Office 365 group that has owner and member user accounts.
@@ -35,7 +39,14 @@ The elements of configuration for a team for highly regulated data are:
 Here is the resulting configuration with a sensitivity label.
 
 ![The secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
- 
+
+<a name="poster"></a>
+For a 1-page summary of this scenario, see the [Teams for highly regulated data poster](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf).
+
+[![Teams for highly regulated data poster](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) or [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17)-sized paper.
+
 ## Phase 1: Configure a team for highly regulated data
 
 The end-to-end configuration consists of these steps:
@@ -101,7 +112,7 @@ Here’s the resulting configuration so far.
  
 ### Step 4: Create a retention label and DLP policy
 
-Use [these instructions](https://docs.microsoft.com/microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp) to:
+Use [these instructions](https://docs.microsoft.com/microsoft-365/security/office-365-security/deploy-teams-retention-dlp) to:
 
 1. Create and publish a retention label for highly regulated data (if needed).
 2. Configure the Team Site for the retention label created in step 1.
@@ -111,7 +122,7 @@ Here’s the resulting configuration so far.
 
 ![Step 4 of the secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
  
-### Step 5: Create the label or a sublabel of the highly regulated label
+### Step 5: Create a sensitivity label or a sublabel of the highly regulated sensitivity label
 
 Unlike a sensitivity label for highly regulated data that anyone can apply to any file, a secure team needs its own label or sublabel so that assigned files:
 
@@ -120,7 +131,7 @@ Unlike a sensitivity label for highly regulated data that anyone can apply to an
 
 To accomplish this additional level of security for files stored in the Team Site, you must configure a new sensitivity label that is either its own label a sublabel of the general label for highly regulated files. Only Team Group members will see it in their list of labels.
 
-Use a sensitivity label when you need a small number of labels for both global use and individual private teams. Use a sensitivity sublabel when you have a large number of labels or want to organize labels for private teams the under the highly regulated label.
+Use a sensitivity label when you need a small number of labels for both global use and individual private teams. Use a sensitivity sublabel when you have a large number of labels or want to organize labels for private teams under the highly regulated label.
 
 [Use these instructions](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) to configure a separate label or a sublabel with the following settings:
 
@@ -199,6 +210,10 @@ In the weeks after training:
   You can see which files have a label assigned by viewing a folder in SharePoint and adding the **Sensitivity** column through the **Show/hide columns** option of **Add column**.
 
 Retrain your users as needed.
+
+## How the Contoso Corporation used a secure team for a top-secret project
+
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate. See how Contoso configured and drove the adoption of a [secure team](contoso-team-for-top-secret-project.md) for a top secret project to develop and bring to market a new set of products and services. 
 
 ## See also
 

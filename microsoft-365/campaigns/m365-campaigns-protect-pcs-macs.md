@@ -25,7 +25,7 @@ description: "Protect against phishing and other attacks with Microsoft 365 for 
 
 # Protect unmanaged Windows 10 PCs and Macs
 
-You can manage Windows 10 PCs and Macs by enrolling them into Microsoft Intune, which allows you to ensure tht they are healthy and secure before accessing data in your environment. However, many campaigns and small businesses include staff that bring their own devices (byod), which will not be managed by the organization. For these unmanaged PCs and Macs, use this article to ensure that minimum security capabilities are configured. 
+You can manage Windows 10 PCs and Macs by enrolling them in Microsoft Intune, which allows you to ensure they're healthy and secure before accessing data in your environment. However, many campaigns and small businesses include staff who bring their own devices (byod), which will not be managed by the organization. For these unmanaged PCs and Macs, use this article to ensure that minimum security capabilities are configured. 
 
 <!--A Windows 10 PC is considered managed after you have completed the following two steps:
 
@@ -43,10 +43,9 @@ If your Windows 10 PC or Mac is not managed by your organization, be sure to con
 ## [Windows 10](#tab/Windows10)
 **Turn on device encryption**<p>
 
-Device encryption is available on a wide range of Windows devices and helps protect your data by encrypting it. If you turn on device encryption, only authorized individuals will be able to access your device and data. See [turn on device encryption](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption) for instructions.
+Device encryption is available on a wide range of Windows devices and helps protect your data by encrypting it. If you turn on device encryption, only authorized individuals will be able to access your device and data. See [turn on device encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) for instructions.
 
- If device encryption is not available on your device, you can turn on standard [BitLocker encryption](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption) instead. (BitLocker is not available on Windows 10 Home edition.) 
-
+ If device encryption isn't available on your device, you can turn on standard [BitLocker encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) instead. (BitLocker isn't available on Windows 10 Home edition.) 
 
 
 **Protect your device with Windows Security**<p>
@@ -54,10 +53,10 @@ If you have Windows 10, you’ll get the latest antivirus protection with Window
 
 Windows Update downloads updates for Windows Security automatically to help keep your PC safe and protect it from threats.
 
-If you have an earlier version of Windows and are using Microsoft Security Essentials, it’s a good idea to move to Windows Security. See [help protect my device with Windows Security](https://support.microsoft.com/en-us/help/17464/windows-10-help-protect-my-device-with-windows-security) for more information.
+If you have an earlier version of Windows and are using Microsoft Security Essentials, it’s a good idea to move to Windows Security. For more information, see [help protect my device with Windows Security](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
 
 **Turn on Windows Firewall**<p>
-You should always run Windows Firewall even if you have another firewall turned on. Turning off Windows Firewall might make your device (and your network, if you have one) more vulnerable to unauthorized access. See [Turn Windows Firewall on or off](https://support.microsoft.com/en-us/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) for instructions
+You should always run Windows Firewall even if you have another firewall turned on. Turning off Windows Firewall might make your device (and your network, if you have one) more vulnerable to unauthorized access. See [Turn Windows Firewall on or off](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) for instructions
 
 ## [Mac](#tab/Mac)
 **Use FileVault to encrypt your Mac disk**<p>
@@ -66,7 +65,7 @@ Disk encryption protects data when devices are lost or stolen. FileVault full-di
 **Protect your mac from malware**<p>
 Microsoft recommends that you install and use reliable antivirus software on your Mac. See the following article for a list of choices: [Best Mac antivirus 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
 
-You can also reduce the risk of malware by using software only from reliable sources. The settings in Security & Privacy preferences allow you to specify the sources of software installed on your Mac. See [protect your Mac from malware](https://support.apple.com/kb/PH25087) for more information.
+You can also reduce the risk of malware by using software only from reliable sources. The settings in Security & Privacy preferences allow you to specify the sources of software installed on your Mac. For more information, see [protect your Mac from malware](https://support.apple.com/kb/PH25087).
 
 **Turn on firewall protection**<p>
 Use firewall settings to protect your Mac from unwanted contact initiated by other computers when you’re connected to the Internet or a network. Without this protection, your Mac might be more vulnerable to unauthorized access. See [about the application firewall](https://support.apple.com/HT201642) for instructions.

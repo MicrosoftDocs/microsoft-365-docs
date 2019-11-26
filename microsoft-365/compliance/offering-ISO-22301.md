@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — ISO 22301:2012 Business Continuity Management Standard
+title: ISO 22301:2012 Business Continuity Management Standard
 description: Microsoft is certified for its implementation of these business continuity management standards.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -55,7 +55,7 @@ ISO 22301 is a certification used by enterprises and governmental organization t
 
 **Where can I get the ISO 22301 audit reports and scope statements for Microsoft services?**
 
-The [Service Trust Portal](http://aka.ms/stphelp) provides independently audited compliance reports, so that your auditors can compare Microsoft's cloud services results with your own legal and regulatory requirements.
+The [Service Trust Portal](https://aka.ms/stphelp) provides independently audited compliance reports, so that your auditors can compare Microsoft's cloud services results with your own legal and regulatory requirements.
 
 **Can I use ISO 22301 compliance of Microsoft services in my organization’s certification?**
 
@@ -63,10 +63,10 @@ Yes. If your business requires ISO 22301 certification for implementations deplo
 
 ## Resources
 
-- [ISO 22301:2012 standard](http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=50038) (for purchase)
-- [Azure resiliency technical guidance](https://aka.ms/Azure-resiliency-guide) (Explains the Azure shared responsibility model for business continuity.)
+- [ISO 22301:2012 standard](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=50038) (for purchase)
+- [Azure resiliency technical guidance](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview) (Explains the Azure shared responsibility model for business continuity.)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Microsoft Enterprise Business Continuity Management Program Description](https://go.microsoft.com/fwlink/p/?linkid=2092212)
 - [Compliance Manager](https://go.microsoft.com/fwlink/p/?linkid=2092329)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Financial Supervisory Authority (FSA) Denmark
+title: Financial Supervisory Authority (FSA) Denmark
 description: Microsoft guidance to help financial institutions in Denmark with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -31,7 +31,7 @@ Guidelines issued by the Ministry of Industry, Business, and Financial Affairs:
 
 ## Microsoft and the FSA
 
-To help guide financial institutions in Denmark considering outsourcing business functions to the cloud, Microsoft has published [A compliance checklist for financial institutions in Denmark](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+\(EBA-Rec-2017-03\).pdf/5fa5cdde-3219-4e95-946d-0c0d05494362). By reviewing and completing the checklist, financial organizations can adopt Microsoft business cloud services with the confidence that they are complying with applicable regulatory requirements.
+To help guide financial institutions in Denmark considering outsourcing business functions to the cloud, Microsoft has published [A compliance checklist for financial institutions in Denmark](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf /5fa5cdde-3219-4e95-946d-0c0d05494362). By reviewing and completing the checklist, financial organizations can adopt Microsoft business cloud services with the confidence that they are complying with applicable regulatory requirements.
 
 When Danish financial institutions outsource business activities they must comply with the requirements of the Financial Supervisory Authority (FSA), and work within the broad policy framework of the European Banking Authority (EBA). Specifically, those requirements focus on how contractual agreements between financial services and cloud providers can ensure adequate control of outsourced activities.
 
@@ -43,7 +43,7 @@ The Microsoft checklist helps Danish financial firms conducting due-diligence as
 ## Microsoft in-scope cloud services
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
-- [Dynamics 365](http://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
+- [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - [Microsoft 365](https://aka.ms/RiskGovernanceGuide)
 
 ## How to implement
@@ -64,7 +64,7 @@ Yes. The Executive Order on Outsourcing of Significant Areas of Activity (and th
 
 ## Resources
 
-- [Microsoft Financial Services Compliance Program](http://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20(Print).pdf)
+- [Microsoft Financial Services Compliance Program](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20(Print).pdf)
 - [Microsoft business cloud services and financial services](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Financial services compliance in Azure](https://aka.ms/AzureCompliance)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
@@ -72,4 +72,4 @@ Yes. The Executive Order on Outsourcing of Significant Areas of Activity (and th
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/E/9/7/E9793230-8137-4297-BC5E-A43F8732CCCD/FSA-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/E/9/7/E9793230-8137-4297-BC5E-A43F8732CCCD/FSA-Compliance.pdf).

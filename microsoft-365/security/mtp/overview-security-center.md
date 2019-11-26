@@ -22,7 +22,7 @@ Enter Microsoft 365 security center-- the new home for monitoring and managing s
 
 The new Microsoft 365 security center and Microsoft 365 compliance center are specialized workspaces designed to meet the needs of security teams and compliance teams. These solutions are integrated across Microsoft 365 services and provide actionable insights to help reduce risks and safeguard your digital estate.
 
-[Learn more and get ready](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-security-and-compliance) for the new Microsoft 365 security center and the Microsoft 365 compliance center.
+[Learn more and get ready](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance) for the new Microsoft 365 security center and the Microsoft 365 compliance center.
 
 Visit the Microsoft 365 security center at security.microsoft.com.  
 

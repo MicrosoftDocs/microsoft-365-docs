@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud
+title: ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud
 description: Microsoft was the first cloud provider to adhere to this code of practice for cloud privacy.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -102,9 +102,9 @@ In the context of ISO/IEC 27018:
 
 **Where can I view Microsoft compliance information for ISO/IEC 27018?**
 
-- You can review the ISO/IEC 27018 certificates from BSI for [Azure](https://go.microsoft.com/fwlink/p/?linkid=2078016), [Microsoft Professional Services](http://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dMicrosoft%2bCorporation&licencenumber=PII%20642270), and [Power BI](https://go.microsoft.com/fwlink/p/?linkid=2078016).
+- You can review the ISO/IEC 27018 certificates from BSI for [Azure](https://go.microsoft.com/fwlink/p/?linkid=2078016), [Microsoft Professional Services](https://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dMicrosoft%2bCorporation&licencenumber=PII%20642270), and [Power BI](https://go.microsoft.com/fwlink/p/?linkid=2078016).
 - You can also review ISO/IEC 27001 certificates from BSI upon which ISO/IEC 27018 certification is based for [Dynamics 365](https://aka.ms/Dynamics-CRM-Online-Cert), [Office 365](https://aka.ms/Office365-Cert), and [Azure DevOps Services](https://go.microsoft.com/fwlink/p/?linkid=2062159).
-- To review the BSI reports, the independent auditor that validated Microsoft compliance with ISO/IEC 27018, visit the [Service Trust Portal](http://aka.ms/stphelp).
+- To review the BSI reports, the independent auditor that validated Microsoft compliance with ISO/IEC 27018, visit the [Service Trust Portal](https://aka.ms/stphelp).
 
 **Can I use Microsoft’s compliance in my organization’s certification process?**
 
@@ -114,13 +114,13 @@ However, you are responsible for engaging an assessor to evaluate your implement
 
 ## Resources
 
-- [ISO/IEC 27018:2014 code of practice](http://aka.ms/ISO.IEC_27018.2014)
+- [ISO/IEC 27018:2014 code of practice](https://aka.ms/ISO.IEC_27018.2014)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Data access policies for Microsoft enterprise cloud and technical services](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/F/D/A/FDA4697E-D72D-4513-8626-A5F294DC7A0F/ISOIEC_27018_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/F/D/A/FDA4697E-D72D-4513-8626-A5F294DC7A0F/ISOIEC_27018_Compliance_Backgrounder.pdf).

@@ -160,7 +160,7 @@ Your organization has adopted SharePoint in Microsoft 365 Enterprise to support 
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-To peek inside Microsoft and learn how we deployed SharePoint, see [SharePoint to the cloud: Learn how Microsoft ran its own migration](https://www.microsoft.com/en-us/itshowcase/sharepoint-to-the-cloud-learn-how-microsoft-ran-its-own-migration).
+To peek inside Microsoft and learn how we deployed SharePoint, see [SharePoint to the cloud: Learn how Microsoft ran its own migration](https://www.microsoft.com/itshowcase/sharepoint-to-the-cloud-learn-how-microsoft-ran-its-own-migration).
 
 ## Next steps
 

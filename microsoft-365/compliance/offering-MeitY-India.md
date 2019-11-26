@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — Ministry of Electronics and Information Technology (MeitY)
+title: Ministry of Electronics and Information Technology (MeitY)
 description: Microsoft was given full accreditation by the Ministry of Electronics and Information Technology in India.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -21,7 +21,7 @@ The Ministry of Electronics and Information Technology (MeitY), an agency of the
 
 MeitY provides accreditation (referred to by MeitY as “empanelment”) of cloud service providers, which requires that cloud services be certified as compliant against a predefined set of standards and guidelines on security, interoperability, data portability, service level agreement, and contractual terms and conditions. Auditors accredited by MeitY verify compliance by conducting audits of cloud service providers.
 
-Once accredited, cloud service providers are listed in a government cloud services directory where public sector organizations can compare and procure accredited cloud services. The directory is a service of the [MeghRaj Cloud Initiative](http://meity.gov.in/content/gi-cloud-meghraj) (or GI \[Government of India\] Cloud), which promotes the use of cloud computing in government, and governs the implementation of public sector IT services.
+Once accredited, cloud service providers are listed in a government cloud services directory where public sector organizations can compare and procure accredited cloud services. The directory is a service of the [MeghRaj Cloud Initiative](https://meity.gov.in/content/gi-cloud-meghraj) (or GI \[Government of India\] Cloud), which promotes the use of cloud computing in government, and governs the implementation of public sector IT services.
 
 ## Microsoft and Ministry of Electronics and Information Technology (MeitY)
 
@@ -40,7 +40,7 @@ The MeitY accreditation of Microsoft was the result of a rigorous audit conducte
 
 ## Audits, reports, and certificates
 
-- Microsoft Cloud accreditation under [Audit Status of Cloud Service Providers](http://meity.gov.in/content/gi-cloud-meghraj)
+- Microsoft Cloud accreditation under [Audit Status of Cloud Service Providers](https://meity.gov.in/content/gi-cloud-meghraj)
 
 ## Frequently asked questions
 
@@ -50,9 +50,9 @@ Making government services available to citizens online is a key part of the Dig
 
 ## Resources
 
-- [Ministry of Electronics and Information Technology](http://meity.gov.in/)
-- [MeghRaj Cloud Initiative](http://meity.gov.in/content/gi-cloud-meghraj)
-- [Accredited cloud service providers](http://meity.gov.in/content/gi-cloud-meghraj)
+- [Ministry of Electronics and Information Technology](https://meity.gov.in/)
+- [MeghRaj Cloud Initiative](https://meity.gov.in/content/gi-cloud-meghraj)
+- [Accredited cloud service providers](https://meity.gov.in/content/gi-cloud-meghraj)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder

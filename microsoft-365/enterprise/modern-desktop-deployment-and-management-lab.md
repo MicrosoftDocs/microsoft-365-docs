@@ -21,7 +21,7 @@ These downloadable hands-on labs focus on Windows 10 deployment and Office 365 d
 
 These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning System Center Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
 
-As part of the [Desktop Deployment](http://www.aka.ms/howtoshift) process for Windows 10 and Office 365 ProPlus, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.
+As part of the [Desktop Deployment](https://www.aka.ms/howtoshift) process for Windows 10 and Office 365 ProPlus, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.
 
 The lab kit is free to download and uses trial software.
 
@@ -31,7 +31,7 @@ The lab kit is free to download and uses trial software.
 
 The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured ConfigMgr instance. The lab contains Evaluation Versions of the following products:
 
-  - Windows 10 Enterprise, Version 1903
+  - Windows 10 Enterprise, Version 1909
   - Windows 7 Enterprise
   - System Center Configuration Manager, Version 1902
   - Windows Assessment and Deployment Kit for Windows 10, Version 1903
@@ -113,15 +113,15 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 ### [**Download the Windows and Office Deployment Lab Kit**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires November 16, 2019. A new version will be published prior to expiration.*
+*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires February 15, 2020. A new version will be published prior to expiration.*
 
 ## **Additional guidance**
 
-  - [Desktop Deployment Center](http://www.aka.ms/howtoshift)
+  - [Desktop Deployment Center](https://www.aka.ms/howtoshift)
 
-  - [Desktop Deployment series videos from Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Desktop Deployment series videos from Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
-  - [System Center Configuration Manager OS Deployment](https://docs.microsoft.com/en-us/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [System Center Configuration Manager OS Deployment](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Plan for Windows 10 deployment</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
+title: Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
 description: Microsoft offers Health Insurance Portability & Accountability Act Business Associate Agreements (BAAs).
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -70,7 +70,7 @@ Get a head start on taking advantage of the benefits of the cloud for health dat
 
 Microsoft offers qualified companies or their suppliers a BAA that covers in-scope Microsoft services.
 
-For Microsoft cloud services: The [HIPAA Business Associate Agreement](http://aka.ms/BAA) is available via the Online Services Terms by default to all customers who are covered entities or business associates under HIPAA. See “Microsoft in-scope cloud services” on this webpage for the list of cloud services covered by this BAA.
+For Microsoft cloud services: The [HIPAA Business Associate Agreement](https://aka.ms/BAA) is available via the Online Services Terms by default to all customers who are covered entities or business associates under HIPAA. See “Microsoft in-scope cloud services” on this webpage for the list of cloud services covered by this BAA.
 
 For Microsoft Professional Services services: The HIPAA Business Associate Amendment is available for in-scope Microsoft Professional Services upon request to your Microsoft services representative.
 
@@ -90,15 +90,15 @@ The [Service Trust Portal](https://www.microsoft.com/trustcenter/STP/default.asp
 
 To assist customers with this task, Microsoft has published these guides:
 
-- *HIPAA/HITECH Act implementation guidance* for [Azure](https://aka.ms/azurehipaaguidance) and for [Dynamics 365 and Office 365](http://go.microsoft.com/fwlink/?LinkID=257510). Written for privacy, security, and compliance officers and others responsible for HIPAA and HITECH Act implementation, they describe concrete steps your organization can take to maintain compliance.
-- [Practical guide to designing secure health solutions using Microsoft Azure](http://aka.ms/azureindustrysecurity) helps you better understand what it takes to successfully adopt a cloud service in a secure manner.
-- [Addressing HIPAA security and privacy requirements in the Microsoft Cloud](http://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) offers a brief overview of regulation requirements. It also provides a detailed analysis of how Microsoft’s cloud services were built with methodologies that map to those requirements, and guidance on how to build compliance-ready solutions.
+- *HIPAA/HITECH Act implementation guidance* for [Azure](https://aka.ms/azurehipaaguidance) and for [Dynamics 365 and Office 365](https://go.microsoft.com/fwlink/?LinkID=257510). Written for privacy, security, and compliance officers and others responsible for HIPAA and HITECH Act implementation, they describe concrete steps your organization can take to maintain compliance.
+- [Practical guide to designing secure health solutions using Microsoft Azure](https://aka.ms/azureindustrysecurity) helps you better understand what it takes to successfully adopt a cloud service in a secure manner.
+- [Addressing HIPAA security and privacy requirements in the Microsoft Cloud](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) offers a brief overview of regulation requirements. It also provides a detailed analysis of how Microsoft’s cloud services were built with methodologies that map to those requirements, and guidance on how to build compliance-ready solutions.
 
 ## Resources
 
-- [HIPAA Omnibus Rule](http://aka.ms/HIPAA-omnibus) (The final regulations-modifying HIPAA rules)
+- [HIPAA Omnibus Rule](https://aka.ms/HIPAA-omnibus) (The final regulations-modifying HIPAA rules)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Understanding HIPAA Compliance with Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(May 19, 2016)
 - [Azure HIPAA implementation guidance](https://aka.ms/azure-hipaa-guide)
@@ -106,4 +106,4 @@ To assist customers with this task, Microsoft has published these guides:
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf).

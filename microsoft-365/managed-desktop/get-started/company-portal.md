@@ -1,15 +1,14 @@
 ---
-title: Install Intune Company Portal Microsoft Managed Desktop devices 
+title: Install Intune Company Portal on devices 
 description: Info on installing company portal app on Microsoft Managed Desktop devices 
 keywords: Microsoft Managed Desktop, Microsoft 365, Company Portal
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 03/08/2019
 ms.collection: M365-modern-desktop
 ---
 
-# Install Intune Company Portal on Microsoft Managed Desktop devices
+# Install Intune Company Portal on on devices
 
 Microsoft Managed Desktop requires that IT administrators install Intune Company Portal for their users with Microsoft Managed Desktop devices. Here are some benefits for your organization:
 - Users have one place to browse and install available applications. 
@@ -38,4 +37,15 @@ For more information on submitting support requests with Microsoft Managed Deskt
 ## Step 3 - Communicate change to your users
 As the IT administrator for your organization, it’s important to let your users know how to use Company Portal in your organization. Microsoft Managed Desktop recommends:
 - Steps on installing applications from the Company Portal. For more information, see [Install and share apps on your device](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows).
-- How to send requests to IT administrators for applications that are not currently available.
+- How to send requests to IT administrators for applications that are not currently available. For more information, see [Request an app for work or school](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows#request-an-app-for-work-or-school).  
+
+## Steps to get started with Microsoft Managed Desktop
+
+1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
+2. [Adjust conditional access](conditional-access.md)
+3. [Assign licenses](assign-licenses.md)
+4. Deploy Intune Company Portal (this topic)
+5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)
+6. [Set up devices](set-up-devices.md)
+7. [Get your users ready to use devices](get-started-devices.md)
+8. [Deploy apps](deploy-apps.md)

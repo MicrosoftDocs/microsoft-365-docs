@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — United Kingdom Financial Conduct Authority (FCA)
+title: United Kingdom Financial Conduct Authority (FCA)
 description: Microsoft guidance for financial firms in the UK follows Financial Conduct Authority and guidelines for outsourcing to the cloud.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -17,7 +17,7 @@ hideEdit: true
 
 ## FCA (UK) overview
 
-The [Financial Conduct Authority](https://www.fca.org.uk/) (FCA), an independent public body that is accountable to the Treasury, regulates 58,000 financial firms and markets in the UK and serves as the prudential regulator for over 18,000 of those organizations. [Prudential Regulation Authority](http://www.bankofengland.co.uk/pra/pages/default.aspx) (PRA), which also serves as the prudential regulator for the Bank of England and regulates 1,500 of the larger financial services institutions such as banks, building societies, credit unions, insurers, and investment firms. (The FCA picks up prudential regulation for firms that do not fall under the PRA remit.)
+The [Financial Conduct Authority](https://www.fca.org.uk/) (FCA), an independent public body that is accountable to the Treasury, regulates 58,000 financial firms and markets in the UK and serves as the prudential regulator for over 18,000 of those organizations. [Prudential Regulation Authority](https://www.bankofengland.co.uk/pra/pages/default.aspx) (PRA), which also serves as the prudential regulator for the Bank of England and regulates 1,500 of the larger financial services institutions such as banks, building societies, credit unions, insurers, and investment firms. (The FCA picks up prudential regulation for firms that do not fall under the PRA remit.)
 
 The FCA had received feedback that financial institutions and cloud service providers were unclear about how to apply its rules for outsourcing to the cloud, a potential barrier to cloud use. Given that the FCA mandate includes promoting effective competition (for which innovation can be a driver), the FCA wanted to support the use of cloud services, stating “We see no fundamental reason why cloud services (including public cloud services) cannot be implemented, with appropriate consideration, in a manner that complies with our rules.” So the FCA clarified its requirements for outsourcing to the cloud, publishing final guidance in November 2016 in the [Guidance for firms outsourcing to the cloud and other third-party IT services](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf) intended to help financial firms and cloud service providers understand FCA expectations when firms outsource to the cloud (or plan to do so). Although this guidance is not binding, the FCA expects firms to use it where appropriate. (Note that the PRA has different statutory objectives, so firms it regulates must confirm their approach with the PRA.) This is a detailed document and offers specific guidance for the use, evaluation, and ongoing monitoring of third parties in the delivery of IT services. It divides considerations into 13 areas of interest, ranging from legal, and regulatory considerations and risk management to continuity planning and plans for exiting outsourcing arrangements
 
@@ -61,4 +61,4 @@ Yes. However, although Microsoft responses to this framework are confirmed compl
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf).

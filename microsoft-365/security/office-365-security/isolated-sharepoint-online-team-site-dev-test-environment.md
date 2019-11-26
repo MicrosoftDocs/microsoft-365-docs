@@ -45,7 +45,7 @@ There are three phases to setting up an isolated SharePoint Online team site in 
 3. Create a new ProjectX SharePoint Online team site and isolate it.
     
 > [!TIP]
-> Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.
+> Click [here](https://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.
   
 ## Phase 1: Build out your lightweight or simulated enterprise Office 365 dev/test environment
 

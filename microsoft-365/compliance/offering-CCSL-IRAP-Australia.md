@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — Australian Government Certified Cloud Services List (CCSL)
+title: Australian Government Certified Cloud Services List (CCSL)
 description: Microsoft is included on the Australian Certified Cloud Services List for both Unclassified Dissemination Limiting Markers (DLM) and PROTECTED data based on an IRAP assessment and certification by the Australian Cyber Security Centre (ACSC).
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -66,20 +66,20 @@ Yes. If your organization requires or is seeking an accreditation in line with t
 
 **Where do I start with my organization’s own compliance effort?**
 
-Start with the [IRAP tool kit](http://www.asd.gov.au/infosec/irap/toolkit.htm) and follow it with the information below:
+Start with the [IRAP tool kit](https://www.cyber.gov.au/node/291) and follow it with the information below:
 
-- [What is an IRAP assessment](http://www.asd.gov.au/infosec/irap/irap_assessments.htm)
-- [Who provides IRAP training?](http://www.asd.gov.au/infosec/irap/training.htm)
-- [Compliance and noncompliance requirements information](http://www.asd.gov.au/infosec/irap/compliance.htm)
+- [What is an IRAP assessment](https://www.asd.gov.au/infosec/irap/irap_assessments.htm)
+- [Who provides IRAP training?](https://www.cyber.gov.au/irap/training)
+- [Compliance and noncompliance requirements information](https://www.cyber.gov.au/irap/compliance)
 
 ## Resources
 
-- [Australian Government ISM](http://www.asd.gov.au/infosec/ism/index.htm)
-- [ASD IRAP policy and procedures](http://aka.ms/irap-policy)
-- [ASD Certified Cloud Services](http://www.asd.gov.au/infosec/irap/certified_clouds.htm)
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+- [Australian Government ISM](https://www.asd.gov.au/infosec/ism/index.htm)
+- [ASD IRAP policy and procedures](https://aka.ms/irap-policy)
+- [ASD Certified Cloud Services](https://www.asd.gov.au/infosec/irap/certified_clouds.htm)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/9/9/C/99CF1E4A-510C-45FD-9819-B81E1CDFC3C3/IRAP_CCSL_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/9/C/99CF1E4A-510C-45FD-9819-B81E1CDFC3C3/IRAP_CCSL_Compliance_Backgrounder.pdf).

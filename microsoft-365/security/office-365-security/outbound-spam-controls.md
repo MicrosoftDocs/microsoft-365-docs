@@ -55,7 +55,7 @@ It is difficult to strike a balance between customers who want to send a large v
 
 2. **Use a 3rd party bulk emailer to send the mass communication**: There are several 3rd party bulk emailers whose sole business it is to send bulk email. They can work with customers to ensure that they have good emailing practices and they have resources dedicated to enforcing it.
 
-The Messaging, Mobile, Malware Anti-Abuse Working Group (MAAWG) publishes its membership roster [here](http://www.maawg.org/about/roster). Several bulk email providers are on the list and are known to be responsible Internet citizens.
+The Messaging, Mobile, Malware Anti-Abuse Working Group (MAAWG) publishes its membership roster [here](https://www.maawg.org/about/roster). Several bulk email providers are on the list and are known to be responsible Internet citizens.
 
 ## For more information
 

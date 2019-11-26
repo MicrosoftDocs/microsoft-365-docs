@@ -1,6 +1,6 @@
 ---
 title: Manage software-as-a-service apps for your organization
-description: Learn how to activate and manage 3rd-party apps in Microsoft 365 admin center
+description: Learn how to activate and manage third-party apps in Microsoft 365 admin center
 ms.prod: 
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,13 +15,13 @@ ms.date: 05/31/2019
 
 # Manage third-party app subscriptions for your organization
 
-You can manage licenses and billing for 3rd-party apps in Microsoft 365 admin center with preview mode turned on. Updated features include enhanced subscription management, improved access to billing information, and improved flexibility for managing bills. Subscription management is based on Microsoft’s updated commerce platform. This applies to software-as-a-service apps that customers purchase directly, or from 3rd-party provider.
+You can manage licenses and billing for third-party apps in Microsoft 365 admin center with preview mode turned on. Updated features include enhanced subscription management, improved access to billing information, and improved flexibility for managing bills. Subscription management is based on Microsoft’s updated commerce platform. This applies to software-as-a-service apps that customers purchase directly, or from third-party provider.
 
 ## How to get software-as-a-service apps
-There are a few ways to purchase 3rd-party apps.
-- **Direct purchase** – Customers can directly purchase subscriptions from [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/), or [AppSource](http://www.appsource.com/). 
+There are a few ways to purchase third-party apps.
+- **Direct purchase** – Customers can directly purchase subscriptions from [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/), or [AppSource](https://www.appsource.com/). 
 - **Partner purchase** –  Work with a partner through Partner Center to purchase subscriptions. 
-- **Microsoft proposal** – Respond to a proposal from Microsoft Sales that includes 3rd-party apps. 
+- **Microsoft proposal** – Respond to a proposal from Microsoft Sales that includes third-party apps. 
 
 Once customers purchase the apps and accept the Microsoft Customer Agreement, they can manage them in Microsoft 365 admin center, or Microsoft Store for Business.
 
@@ -30,7 +30,7 @@ App providers sell their apps either at a flat rate, or by purchasing licenses f
 - **Licenses** – Apps are priced by license. Customers assign licenses to each user in their organization
 
 ## Supported regions
-Support for 3rd-party apps is available in these regions:
+Support for third-party apps is available in these regions:
 - Argentina
 - Australia
 - Canada
@@ -45,9 +45,9 @@ Support for 3rd-party apps is available in these regions:
 - Western Europe
 
 ## Set up app
-Admins need to activate 3rd-party apps before assigning them to users. They are activated in the 3rd-party publisher’s portal. 
+Admins need to activate third-party apps before assigning them to users. These apps are activated in the third-party publisher’s portal. 
 
-**To activate 3rd-party apps**
+**To activate third-party apps**
 1. Go to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), and turn on **Try the preview**.
 2. Select **Billing** > **Products & services** > **Apps**.
 3. Find and select the app you want to manage. 
@@ -55,21 +55,21 @@ Admins need to activate 3rd-party apps before assigning them to users. They are 
 
 You’ll be directed to the app publisher’s site where you can activate the app. 
 
-## Managing 3rd-party apps
-Admins manage 3rd-party apps in two locations: Microsoft 365 admin center, and the 3rd-party app provider’s portal. 
+## Managing third-party apps
+Admins manage third-party apps in two locations: Microsoft 365 admin center, and the third-party app provider’s portal. 
 Here’s what you can do in each portal.
 
 ### App status
-Once activated, the app remain active unless it is canceled, expires, or if payment is not kept current. These events change the app status to disabled. Once an app is disabled, it can’t be reactivated. You need to buy another copy of the app to continue using it.
+Once activated, the app remains active unless it is canceled, expires, or if payment is not kept current. These events change the app status to disabled. Once an app is disabled, it can’t be reactivated. You need to buy another copy of the app to continue using it.
 
 | Microsoft 365 admin center | App publisher portal |
 | --- | --- |
 | Change license quantity <br> Manage how you pay your bill <br> Manage how you pay your bill <br> Change payment method (credit card) <br> View invoice <br> Cancel app subscription | Set up app (once for each app) <br> Assign licenses to users <br> Technical support |
 
 ## Assign licenses
-Admins need to activate 3rd-party apps before assigning them to users. They are activated in the 3rd-party publisher’s portal. On the app page, under Settings & actions, select the link to assign licenses.
+Admins need to activate third-party apps before assigning them to users. They're activated in the third-party publisher’s portal. On the app page, under **Settings & actions**, select the link to assign licenses.
 
-**To assign 3rd-party apps**
+**To assign third-party apps**
 
 1. Go to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), and turn on **Try the preview**.
 2. Select **Billing** > **Products & services** > **Apps**.
@@ -77,7 +77,7 @@ Admins need to activate 3rd-party apps before assigning them to users. They are 
 4. Under **Settings & actions**, select the link to **Manage in publisher’s portal**. 
  
 ## Change license quantity
-Admins can change the number of licenses owned by their organization. This only applies for apps purchased with seat-based pricing.
+Admins can change the number of licenses owned by their organization. This only applies to apps purchased with seat-based pricing.
 
 **To change license quantity**
 
@@ -95,7 +95,7 @@ Software-as-a-service apps each have a billing profile assigned to them. Billing
 
 For more information on billing profiles, see [Understand billing profiles](https://docs.microsoft.com/microsoft-store/billing-profile). 
 
-**To change the billing profile on a software-as-a-service app subscriptions**
+**To change the billing profile on a software-as-a-service app subscription**
 
 1. Go to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), and turn on **Try the preview**.
 2. Select **Billing** > **Products & services** > **Apps**.

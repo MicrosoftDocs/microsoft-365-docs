@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — Federal Risk and Authorization Management Program (FedRAMP)
+title: Federal Risk and Authorization Management Program (FedRAMP)
 description: Microsoft was granted US Federal Risk and Authorization Management Program P-ATOs and ATOs.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -103,7 +103,7 @@ Yes. You may use the certifications of Microsoft cloud services as the foundatio
 
 ## Resources
 
-- [Federal Risk and Authorization Management Program](http://www.fedramp.gov/)
+- [Federal Risk and Authorization Management Program](https://www.fedramp.gov/)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [FedRAMP Security Assessment Framework](https://go.microsoft.com/fwlink/p/?linkid=2099507)
@@ -111,4 +111,4 @@ Yes. You may use the certifications of Microsoft cloud services as the foundatio
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf).

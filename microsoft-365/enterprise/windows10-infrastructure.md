@@ -25,7 +25,7 @@ Microsoft 365 Enterprise includes Windows 10 Enterprise, which gives you the too
 You'll need to understand the different ways you can deploy the Windows 10 operating system and choose the right one for your organization. Depending on your Microsoft 365 Enterprise subscription, there are also Windows 10 services and security features that you'll need to configure to get the most out of Windows 10.
 
 >[!Note]
->To deploy both Windows 10 Enterprise and Office 365 ProPlus together and shift to a [modern desktop](https://www.microsoft.com/microsoft-365/modern-desktop), see the [Modern Desktop Deployment Center](http://aka.ms/howtoshift).
+>To deploy both Windows 10 Enterprise and Office 365 ProPlus together and shift to a [modern desktop](https://www.microsoft.com/microsoft-365/modern-desktop), see the [Modern Desktop Deployment Center](https://aka.ms/howtoshift).
 >
 
 ## Windows 10 deployment
@@ -34,7 +34,7 @@ There are multiple ways you can deploy Windows 10 Enterprise for your organizati
 
 | Deployment scenario | When to use it |
 |:--- |:--- |
-| [Using System Center Configuration Manager as an in-place upgrade](windows10-deploy-inplaceupgrade.md) | Select this option if you need to upgrade Windows 7 or Windows 8.1 computers to the <a href="https://aka.ms/windows-10-release-information" target="_blank">current version</a> of Windows 10 Enterprise and your computers are currently managed with <a href="https://aka.ms/introtosccm" target="_blank">System Center Configuration Manager (Current branch)</a>. |
+| [Using Microsoft Endpoint Configuration Manager as an in-place upgrade](windows10-deploy-inplaceupgrade.md) | Select this option if you need to upgrade Windows 7 or Windows 8.1 computers to the <a href="https://aka.ms/windows-10-release-information" target="_blank">current version</a> of Windows 10 Enterprise and your computers are currently managed with <a href="https://aka.ms/introtosccm" target="_blank">Configuration Manager (Current branch)</a>. |
 | [Using Windows Autopilot](windows10-deploy-autopilot.md) | Select this option if you are setting up new Windows computers that have Windows 10 Enterprise, version 1703 or later pre-installed. End users will initiate setup using your desired configuration by entering their work or school account credentials. |
 
 If these deployment scenarios do not fit the needs of your organization, you can learn about other scenarios and understand the capabilities and limitations of each in [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). You can also <a href="https://aka.ms/planforwin10deployment" target="_blank">plan for Windows 10 deployment</a> on your own.
@@ -67,7 +67,7 @@ To learn more about the security features that you get with Windows 10 Enterpris
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-Peek inside Microsoft and learn how the company [deployed Windows 10 Enterprise and is using strong authentication, Intune, and Microsoft Defender ATP](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR6).
+Peek inside Microsoft and learn how the company [deployed Windows 10 Enterprise and is using strong authentication, Intune, and Microsoft Defender ATP](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR6).
 
 ## How Contoso did Microsoft 365 Enterprise
 

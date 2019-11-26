@@ -72,7 +72,7 @@ In addition to the [required licenses and permissions](information-barriers.md#r
 
    1. Run the following PowerShell cmdlets:
 
-      ```
+      ```powershell
       Login-AzureRmAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
@@ -103,7 +103,10 @@ When you have your initial list of groups and policies, proceed to identify the 
 
 ### Identify segments
 
-In addition to your initial list of policies, make a list of segments for your organization. Users who will be included in information barrier policies should belong to a segment, and no user should belong to two or more segments. Each segment can have only one information barrier policy applied. 
+In addition to your initial list of policies, make a list of segments for your organization. Users who will be included in information barrier policies should belong to a segment. Plan your segments carefully as a user can only be in one segment. Each segment can have only one information barrier policy applied.
+
+> [!IMPORTANT]
+> A user can only be in one segment.
 
 Determine which attributes in your organization's directory data you'll use to define segments. You can use *Department*, *MemberOf*, or any of the supported attributes. Make sure that you have values in the attribute you select for users. [See the list of supported attributes for information barriers](information-barriers-attributes.md).
 

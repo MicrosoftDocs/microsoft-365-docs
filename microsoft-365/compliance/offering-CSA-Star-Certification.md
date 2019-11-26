@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Cloud Security Alliance (CSA) STAR certification
+title: Cloud Security Alliance (CSA) STAR certification
 description: Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR certification at the Gold level.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -55,7 +55,7 @@ Learn how to accelerate your CSA STAR Certification deployment with our Azure Se
 
 **Which industry standards does the CSA CCM align with?**
 
-The CCM corresponds to industry-accepted security standards, regulations, and control frameworks, such as ISO 27001, PCI DSS, HIPAA, AICPA SOC 2, NERC CIP, FedRAMP, NIST, and many more. For the most current list, visit the [CSA website](http://cloudsecurityalliance.org/).
+The CCM corresponds to industry-accepted security standards, regulations, and control frameworks, such as ISO 27001, PCI DSS, HIPAA, AICPA SOC 2, NERC CIP, FedRAMP, NIST, and many more. For the most current list, visit the [CSA website](https://cloudsecurityalliance.org/).
 
 **Where can I view the CSA STAR Certification for Microsoft cloud services?**
 
@@ -76,7 +76,7 @@ Azure, Cloud App Security, Intune, and Power BI have achieved the highest possib
 - [Azure standard response for request for information](https://aka.ms/AzureStandardRequestForInformation)
 - [Azure Cloud Security Alliance CAIQ](https://aka.ms/AzureCSACAIQ)
 - [Office 365 Mapping of CSA Cloud Control Matrix](https://aka.ms/Office365CSACloudControlMatrix)
-- [Cloud Security Alliance](http://cloudsecurityalliance.org/)
+- [Cloud Security Alliance](https://cloudsecurityalliance.org/)
 - [CSA Security, Trust & Assurance Registry (STAR)](https://cloudsecurityalliance.org/star/)
 - [About CSA STAR certification](https://cloudsecurityalliance.org/star/certification/)
 - [Cloud Controls Matrix (CCM)](https://cloudsecurityalliance.org/group/cloud-controls-matrix/)
@@ -86,4 +86,4 @@ Azure, Cloud App Security, Intune, and Power BI have achieved the highest possib
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/C/3/6/C36C6DBB-AF39-44A2-B6C6-50CC6E4991D7/CSA-STAR-Certification-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/C/3/6/C36C6DBB-AF39-44A2-B6C6-50CC6E4991D7/CSA-STAR-Certification-Compliance.pdf).
