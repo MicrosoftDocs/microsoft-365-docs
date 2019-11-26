@@ -98,22 +98,22 @@ The **Content explorer** tab allows risk analysts and investigators to review co
 
 ![Insider risk management case content explorer](media/insider-risk-temp-content-explorer.png)
 
-To make it easier for risk analysts and investigators to review captured data and messages and review it's context to the case, several filtering and sorting tools are included in the Content Explorer. For basic sorting, the **Date** and **File class** columns support sorting using the column titles in the content queue pane.
+To make it easier for risk analysts and investigators to review captured data and messages and review the context to the case, several filtering and sorting tools are included in the Content Explorer. For basic sorting, the **Date** and **File class** columns support sorting using the column titles in the content queue pane. Other queue columns are available to add to the view to provide different pivots on the files and messages.
 
-Add or remove column headings for the content queue with the **Edit columns** control and select from the following column options:
+To add or remove column headings for the content queue, use the **Edit columns** control and select from the following column options:
 
 | **Column option** | **Description** |
 | :--------- | :-------------- |
-| Author |  |
-| Bcc |  |
+| Author | The user that created a file. |
+| Bcc | Available for email messages, the users in the Bcc message field. |
 | Caption |  |
-| Cc |  |
+| Cc | Available for email messages, the users in the Cc message field. |
 | Comments |  |
 | Compound path |  |
 | Conversation ID |  |
 | Conversation index |  |
-| Created time |  |
-| Date |  |
+| Created time | The time the file or email message was created. |
+| Date | The date the file or email message was created. |
 | Dominant theme |  |
 | Email set ID |  |
 | Family ID |  |
@@ -123,19 +123,19 @@ Add or remove column headings for the content queue with the **Edit columns** co
 | ID |  |
 | Immutable ID |  |
 | Inclusive type |  |
-| Last modified |  |
+| Last modified | The date and time a file was modified. |
 | Marked as pivot |  |
 | Marked as representative |  |
 | Message kind |  |
 | Participants |  |
 | Pivot ID |  |
 | Received |  |
-| Recipients |  |
+| Recipients | The users that received an email message. |
 | Representative ID |  |
-| Sender |  |
+| Sender | The user that sent an email message. |
 | Sender/Author |  |
 | Sent |  |
-| Size |  |
+| Size | The size of the file or email message. |
 | Source |  |
 | Subject |  |
 | Subject/Title |  |
@@ -151,17 +151,17 @@ For advanced filter and search tools, expand the **Filter** pane on the left sid
 | :--------- | :-------------- |
 | Annotations |  |
 | Attorney-client privilege score |  |
-| Author |  |
-| Bcc |  |
-| Cc |  |
+| Author | The user that created a file. |
+| Bcc | Available for email messages, the users in the Bcc message field. |
+| Cc | Available for email messages, the users in the Cc message field. |
 | Comments |  |
 | Compliance labels |  |
 | Compound path |  |
 | Conversation ID |  |
-| Created time |  |
+| Created time | The time the file or email message was created. |
 | Custodian |  |
 | Data source |  |
-| Date |  |
+| Date | The date the file or email message was created. |
 | Dominant theme |  |
 | Email Internet headers |  |
 | Email security |  |
@@ -178,7 +178,7 @@ For advanced filter and search tools, expand the **Filter** pane on the left sid
 | Inclusive type |  |
 | Item class |  |
 | Keywords |  |
-| Last modified |  |
+| Last modified | The date and time a file was modified. |
 | Load ID |  |
 | Location name |  |
 | Marked as pivot |  |
@@ -204,7 +204,7 @@ For advanced filter and search tools, expand the **Filter** pane on the left sid
 | Sender domain |  |
 | Sender/Author |  |
 | Sent |  |
-| Size |  |
+| Size | The size of the file or email message. |
 | Source |  |
 | Subject |  |
 | Subject/Title |  |
@@ -214,23 +214,45 @@ For advanced filter and search tools, expand the **Filter** pane on the left sid
 | To |  |
 | Unique in email set |  |
 | Was remediated |  |
-| Word count |  |
+| Word count | The number of words in a file. |
 | Work product |  |
 
 ### Case notes
 
-The **Case notes** tab in the case is where risk analysts and investigators share comments, feedback, and insights about their work for the case.
+The **Case notes** tab in the case is where risk analysts and investigators share comments, feedback, and insights about their work for the case. Notes are permanent additions to a case and cannot be edited or deleted 
+after the note is saved. The case notes dashboard displays notes by the user that created the note and the time that has passed since the note was saved. To search the case note text field for a specific keyword, use the **Search** button on the case dashboard and enter a specific keyword.
+
+To add a note to a case:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+2. Select a case, then select the **Case notes** tab.
+3. Select **Add a case note**
+4. On the **Add case note** dialog, type your note for the case. Select **Save** to add the note to the case or select **Cancel** close without saving the note to the case.
 
 ### Contributors
 
-The **Contributors** tab... 
+The **Contributors** tab in the case is where risk analysts and investigators can add other reviewers to the case. Be default, all users assigned the **Insider Risk Management Analysts** and **Insider Risk Management Investigators** roles are listed as contributors for each active and closed case.
 
-- **Permanent**:
-- **Temporary**:
+All insider risk management cases must be managed with appropriate access controls in place to maintain confidentiality and integrity of the investigation. To help maintain access control of cases, users are assigned one of two types of access to cases:
+
+- **Permanent access**: Permanent access is automatically granted to users with the **Insider Risk Management Analysts** and **Insider Risk Management Investigators** roles when the case is created from an alert. Permanent access grants full control of the case for the lifetime of the case and grants the ability to add other case contributors.
+- **Temporary access**: Temporary access is only granted to users by contributors that have permanent access for the case. Typically, this access level is granted to user that need to add notes to a case. Contributors with temporary access have all case management control except:
+    - Permission to confirm or dismiss alerts
+    - Permission to edit the contributors for cases
+    - Permission to view files and messages in the Content Explorer
+
+To add a contributor to a case:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+2. Select a case, then select the **Contributors** tab.
+3. Select **Add contributor**
+4. On the **Add contributor** dialog, start typing the name of the user you want to add and then select the user from the suggested user list.
+5. On the **Add contributor** dialog, select the access level for the contributor. You can select **Permanent** or **Temporary**.
+6. Select **Add** to add the user as a contributor or select **Cancel** close without adding the user as a contributor.
 
 ## Case actions
 
-To take action and resolve a case...
+After review , risk analysts and investigators can resolve a case in
 
 ### Resolve a case
 
