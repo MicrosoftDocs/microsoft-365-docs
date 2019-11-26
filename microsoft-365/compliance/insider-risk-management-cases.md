@@ -245,18 +245,28 @@ To add a contributor to a case:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Contributors** tab.
-3. Select **Add contributor**
-4. On the **Add contributor** dialog, start typing the name of the user you want to add and then select the user from the suggested user list.
+3. Select **Add contributor**.
+4. On the **Add contributor** dialog, start typing the name of the user you want to add and then select the user from the suggested user list. This list is generated from the Active Directory of your tenant subscription.
 5. On the **Add contributor** dialog, select the access level for the contributor. You can select **Permanent** or **Temporary**.
-6. Select **Add** to add the user as a contributor or select **Cancel** close without adding the user as a contributor.
+6. Select **Add** to add the user as a contributor or select **Cancel** close the dialog without adding the user as a contributor.
 
 ## Case actions
 
-After review, risk analysts and investigators can resolve a case in
+Risk analysts and investigators can take action on a case in one of several methods, depending on the severity of the case, the history of risk of the employee, and the risk guidelines of your organization.
 
-### Resolve a case
+### Send a notice
 
-Resolve the case...
+In most cases, employee actions that create policy match alerts are inadvertent or accidental. Sending a reminder notice to the employee via email is an effective method for documenting case review and action, as well as a method to remind employees of corporate policies or point them to refresher training. Notices are generated from notice templates that you create for your insider risk management infrastructure.
+
+It's important to remember that sending a notice to an employee ***does not*** resolve the case as *Closed*. In some cases, you may want to leave a case open after sending a notice to monitor for additional risk activities by the same employee without opening a new case. If you want to resolve a case after sending a notice, you must select the **Resolve case** as a follow-on step.
+
+To send a notice to the employee assigned to a case:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+2. Select a case, then select the **Send e-mail notice** button on the case action toolbar.
+3. On the **Send e-mail notice** dialog, select the **Choose a notice template** dropdown control to select the notice template for the notice. This pre-fills the other fields on the notice.
+4. Review the notice fields and update any field that needs changes.
+6. Select **Send** to send the notice to the employee or select **Cancel** close the dialog without sending the notice to the employee. All sent notices are added to the case notes queue on the **Case notes** dashboard.
 
 ### Escalate for data investigation
 
@@ -265,3 +275,18 @@ Escalate the case for data investigation....
 ### Escalate for employee investigation
 
 Escalate the case employee investigation...
+
+### Resolve the case
+
+After risk analysts and investigators have completed their review and investigation, a case can be resolved to take action on all the alerts currently included in the case. Resolving a case adds a resolution classification, changes the case status to *Closed*, and the resolution action reasons are automatically added to the case notes queue on the **Case notes** dashboard. Cases are resolved as either:
+
+- **Benign**: The classification for cases where policy match alerts are evaluated as low risk, non-serious, or false positive.
+- **Confirmed policy violation**: The classification for cases where policy match alerts are evaluated as risky, serious, or the result of malicious intent.
+
+To resolve a case:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+2. Select a case, then select the **Resolve case** button on the case action toolbar.
+3. On the **Resolve case** dialog, select the **Resolve as** dropdown control to select the resolution classification for the case. The options are **Benign** or **Confirmed policy violation**.
+4. On the **Resolve case** dialog, enter the reasons for the resolution classification in the **Action taken** text field.
+5. Select **REsolve** to close the case or select **Cancel** close the dialog without resolving the case.
