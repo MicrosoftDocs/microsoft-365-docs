@@ -27,11 +27,11 @@ The Microsoft 365 admin center currently supports the following type of billing 
 
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page provides a view of your commercial accounts with Microsoft. By default, your organization has at least one billing account associated with an agreement that is accepted either at the time of a direct purchase, or through a Volume Licensing arrangement.
 
-## Understand the billing account details
+## Understand billing account details
 
 The top of the **Billing accounts** detail page is your account profile and contains legal and tax information about your organization. You can update your profile to change your legal address and phone number. This account is the legal entity that pays for the products that you purchase.
 
-The following table lists the important terms that you see in the Billing accounts detail page.
+The following table lists the important terms that you see in the **Billing accounts** detail page.
 
 | Field name | Description |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
