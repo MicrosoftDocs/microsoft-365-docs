@@ -56,7 +56,7 @@ For information on other tables in the Advanced hunting schema, [see the Advance
 | `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated—use the SHA1 column when available |
 | `InitiatingProcessMD5` | string | MD5 hash of the process (image file) that initiated the event |
 | `InitiatingProcessFileName` | string | Name of the process that initiated the event |
-| `InitiatingProcessId | int | Process ID (PID) of the process that initiated the event |
+| `InitiatingProcessId` | int | Process ID (PID) of the process that initiated the event |
 | `InitiatingProcessCommandLine` | string | Command line used to run the process that initiated the event |
 | `InitiatingProcessCreationTime` | datetime | Date and time when the process that initiated the event was started |
 | `InitiatingProcessFolderPath` | string | Folder containing the process (image file) that initiated the event |

@@ -31,7 +31,7 @@ For information on other tables in the Advanced hunting schema, [see the Advance
 | `EventTime` | datetime | Date and time when the event was recorded |
 | `MachineId` | string | Unique identifier for the machine in the service |
 | `ComputerName` | string | Fully qualified domain name (FQDN) of the machine |
-| `ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns |
+| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns |
 | `NetworkAdapterName` | string | Name of the network adapter |
 | `MacAddress` | string | MAC address of the network adapter |
 | `NetworkAdapterType` | string | Network adapter type. For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
