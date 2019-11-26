@@ -47,11 +47,11 @@ There are multiple types of condition cards:
 
 ### Query language
 
-In addition to condition cards, you can use a KQL-like query language in the Keywords card to build your query. The query language for review set queries supports standard Boolean operators, such as AND, OR, NOT, and NEAR(n). It also supports a single-character wildcard (?) and a multi-character wildcard (*).
+In addition to condition cards, you can use a KQL-like query language in the Keywords card to build your query. The query language for review set queries supports standard Boolean operators, such as **AND**, **OR**, **NOT**, and **NEAR**. It also supports a single-character wildcard (?) and a multi-character wildcard (*).
 
 ## Using filters
 
-In addition to queries that you can save, you can use review set filters to quickly apply additional conditions to a review set query. This helps you further refine the results displayed by a review set query. 
+In addition to queries that you can save, you can use review set filters to quickly apply additional conditions to a review set query. This helps you further refine the results displayed by a review set query.
 
 ![Review set filters](media/AeDReviewSetFilters.png)
 
