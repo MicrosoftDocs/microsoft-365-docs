@@ -40,9 +40,9 @@ Assuming you know of an email address sending malicious files, you can run this 
 
 ```
 //Get prevalence of files sent by a malicious sender in your organization
-let MaliciousSender=EmailAttachmentInfo
-| where SenderFromAddress =~ "malicious sender"
-MaliciousSender
+EmailAttachmentInfo
+| where SenderFromAddress =~ "MaliciousSender@example.com"
+| where isnotempty(SHA256)
 | join (
 FileCreationEvents
 | project FileName, SHA256
@@ -72,7 +72,7 @@ Malicious emails often contain documents and other specially crafted attachments
 ```
 //Find PowerShell activities right after email was received from malicious sender
 let x=EmailEvents
-| where SenderFromAddress =~ "malicious@sender.com"
+| where SenderFromAddress =~ "MaliciousSender@example.com"
 | project TimeEmail = EventTime, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 x
 | join (
