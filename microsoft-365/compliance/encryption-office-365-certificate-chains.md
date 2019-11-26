@@ -48,7 +48,7 @@ Expand the root and intermediate sections below to see additional details about 
 
 ### **CNNIC ROOT**
 
-| **Subject** | CN=CNNIC ROOT<br>O=CNNICC=CN |
+| **Subject** | CN=CNNIC ROOT<br>O=CNNIC<br>C=CN |
 | --- | --- |
 | **Serial Number** | 49:33:00:01 |
 | **Public Key Length** | RSA 2048 bits (e 65537) |
@@ -104,7 +104,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-1)** | 58E8ABB0361533FB80F79B1B6D29D3FF8D5F00F0 |
 | **Thumbprint (SHA-256)** | 49E7A442ACF0EA6287050054B52564B650E4F49E42E348D6AA38E039E957B1C1 |
 | **Pin (SHA-256)** | 7KDxgUAs56hlKzG00DbfJH46MLf0GlDZHsT5CwBrQ6E= |
-| **CRL URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlisthttp://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_2009.crl |
+| **CRL URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_2009.crl |
 
 ### **D-TRUST Root Class 3 CA 2 EV 2009**
 
@@ -119,7 +119,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-1)** | 96C91B0B95B4109842FAD0D82279FE60FAB91683 |
 | **Thumbprint (SHA-256)** | EEC5496B988CE98625B934092EEC2908BED0B0F316C2D4730C84EAF1F3D34881 |
 | **Pin (SHA-256)** | /zQvtsTIvTCkcG9zSJU58Z5uSMwF9GJUZU9mENvFQOk= |
-| **CRL URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlisthttp://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
+| **CRL URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
 
 ### **DST Root CA X3**
 
@@ -227,7 +227,7 @@ Expand the root and intermediate sections below to see additional details about 
 
 | **Subject** | CN=CNNIC SHA256 SSL <br>O=CNNIC SHA256 SSL <br>C=CN |
 | --- | --- |
-| **Issuer** | CN=CNNIC ROOT <br>O=CNNIC C=CN |
+| **Issuer** | CN=CNNIC ROOT <br>O=CNNIC <br>C=CN |
 | **Serial Number** | 49:33:00:7C |
 | **Public Key Length** | RSA 2048 bits (e 65537) |
 | **Signature Algorithm** | sha256RSA |
