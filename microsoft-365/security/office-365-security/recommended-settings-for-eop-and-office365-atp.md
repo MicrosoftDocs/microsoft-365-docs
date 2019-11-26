@@ -36,7 +36,7 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 |Phishing email detection action|Quarantine message|Quarantine message||
 |High confidence Phish email detection action|Quarantine message|Quarantine message||
 |Bulk email detection action|Move message to Junk Email folder|Quarantine message||
-|Set Bulk email threshold to|6|4||
+|Set Bulk email threshold to|6|4|The default is currently 7 but we recommend that most organizations mvoe it down to at least 6|
 |Quarantine retention period|30 days|30 days||
 |Safety tips|On|On||
 |Allowed Senders|None|None||
@@ -71,9 +71,9 @@ There are several other parameters in the Anti-spam policy called Advanced Spam 
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|Outbound spam policy Recipient Limits - External hourly limit|400|500||
-|Outbound spam policy Recipient Limits - Internal hourly limit|800|1000||
-|Outbound spam policy Recipient Limits - Daily limit|800|1000||
+|Outbound spam policy Recipient Limits - External hourly limit|500|400||
+|Outbound spam policy Recipient Limits - Internal hourly limit|1000|800||
+|Outbound spam policy Recipient Limits - Daily limit|1000|800||
 |Action when a user exceeds the limits|Restrict the user from sending mail|Restrict the user from sending mail||
 
 ### EOP anti-malware policy settings
