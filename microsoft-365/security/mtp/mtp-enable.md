@@ -39,7 +39,7 @@ To deprovision the service, [contact premier support](http://go.microsoft.com/fw
 ## Related topics
 
 - [Microsoft Defender ATP overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Office 365 ATP overview](/../office-365-security/office-365-atp.md)
+- [Office 365 ATP overview](../office-365-security/office-365-atp.md)
 - [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 - [Azure ATP overview](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
 - [Microsoft Defender ATP data storage](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
