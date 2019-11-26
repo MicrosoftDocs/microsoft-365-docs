@@ -22,21 +22,21 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-Each row in the DeviceTvmSecureConfigurationAssessment table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Use this reference to check the latest assessment results and determine whether devices are compliant.
+Each row in the `DeviceTvmSecureConfigurationAssessment` table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Use this reference to check the latest assessment results and determine whether devices are compliant.
 
 For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| MachineId | string | Unique identifier for the machine in the service |
-| ComputerName | string | Fully qualified domain name (FQDN) of the machine |
-| OSPlatform | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.|
-| Timestamp | datetime | Date and time when the record was generated |
-| ConfigurationId | string | Unique identifier for a specific configuration |
-| ConfigurationCategory | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls |
-| ConfigurationSubcategory | string | Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features. |
-| ConfigurationImpact | string | Rated impact of the configuration to the overall configuration score (1-10) |
-| IsCompliant | boolean | Indicates whether the configuration or policy is properly configured |
+| `MachineId` | string | Unique identifier for the machine in the service |
+| `ComputerName` | string | Fully qualified domain name (FQDN) of the machine |
+| `OSPlatform` | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.|
+| `Timestamp` | datetime | Date and time when the record was generated |
+| `ConfigurationId` | string | Unique identifier for a specific configuration |
+| `ConfigurationCategory` | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls |
+| `ConfigurationSubcategory` | string | Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features. |
+| `ConfigurationImpact` | string | Rated impact of the configuration to the overall configuration score (1-10) |
+| `IsCompliant` | boolean | Indicates whether the configuration or policy is properly configured |
 
 ## Related topics
 

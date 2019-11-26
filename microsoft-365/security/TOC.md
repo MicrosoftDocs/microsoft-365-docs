@@ -52,7 +52,6 @@
 ##### [Use shared queries](mtp/advanced-hunting-shared-queries.md)
 ##### [Hunt on devices and emails](mtp/advanced-hunting-query-emails-devices.md)
 ##### [Understand the schema](mtp/advanced-hunting-schema-tables.md)
-###### [AlertEvents](mtp/advanced-hunting-alertevents-table.md)
 ###### [MachineInfo](mtp/advanced-hunting-machineinfo-table.md)
 ###### [MachineNetworkInfo](mtp/advanced-hunting-machinenetworkinfo-table.md)
 ###### [ProcessCreationEvents](mtp/advanced-hunting-processcreationevents-table.md)
