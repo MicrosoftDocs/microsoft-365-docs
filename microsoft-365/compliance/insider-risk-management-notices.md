@@ -18,7 +18,7 @@ Insider risk management notice templates allow you to send email messages to emp
 
 You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices can only be sent to the employee email address associated with the policy match that generated the specific alert for remediation. When selecting a notice template to apply to a policy violation as part of the remediation workflow, you can choose to accept the field values defined in the template or overwrite the fields as needed.
 
-## Notice dashboard
+## Notice template dashboard
 
 The Notices dashboard displays a list of configured notice templates and allows you to create new notice templates. The notice templates are listed in reverse date order with the most recent notice template listed first.
 
