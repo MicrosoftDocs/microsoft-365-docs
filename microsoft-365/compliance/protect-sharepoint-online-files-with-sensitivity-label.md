@@ -24,7 +24,7 @@ description: "Summary: Apply Azure Information Protection to protect files in a 
 
 Use the steps in this article to configure an Office 365 sensitivity label to provide encryption and permissions for files. These files can be added to a SharePoint library configured for highly confidential protection. Or, you can open a file directly from the site and apply the label. The encryption and permissions protection travels with a file even when it is downloaded from the site. 
 
-These steps are part of a larger solution for configuring highly confidential protection for SharePoint sites and the files within these sites. For more information, see [Secure SharePoint Online sites and files](/security/office-365-security/secure-sharepoint-online-sites-and-files.md). 
+These steps are part of a larger solution for configuring highly confidential protection for SharePoint sites and the files within these sites. For more information, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection). 
 
 Using sensitivity labels for files in SharePoint Online is not recommended for all customers, but is an option for customers who need this level of protection for a subset of files.
 
@@ -35,7 +35,7 @@ Some important notes about this solution:
 
 ## Admin setup
 
-To accomplish this additional level of security for files, you must configure a customized sensitivity label that is either its own label or a sublabel of the general label for highly regulated data. Only team members will see the customized label or sublabel in their list of labels.
+To accomplish this additional level of security for files in a specific SharePoint Online team site, you must configure a customized sensitivity label that is either its own label or a sublabel of the general label for highly regulated data. Only members of the Office 365 groups for the SharePoint Online team site will see the customized label or sublabel in their list of labels.
 
 - Use a sensitivity label when you need a small number of labels for both global use and individual private teams.
 
@@ -58,11 +58,11 @@ Once your uses can select the sensitivity label from the **Sensitivity** option 
 There are two ways you can grant external users access to files protected with a sensitivity label. In both cases, external users must have an Azure AD account. If external users aren't members of an organization that uses Azure AD, they can obtain an Azure AD account as an individual by using this signup page: [https://aka.ms/aip-signup](https://aka.ms/aip-signup).
 
  - Add external users to the Office 365 group for the team site. You'll need to first add the account as a B2B user in your directory. It can take a couple of hours for [group membership caching by Azure Rights Management](https://docs.microsoft.com/azure/information-protection/plan-design/prepare#group-membership-caching-by-azure-information-protection).  
- - Add external user accounts directly to the label configuration. You can add all users from an organization (e.g. Fabrikam.com), an Office 365 group (such as a finance group within an organization), or user. For example, you can add an external team of regulators to the protection for a label.
+ - Add external user accounts directly to the label configuration. You can add all users from an organization (e.g. Fabrikam.com), an Office 365 group (such as a finance group within an organization), or user. For example, you can add an external team of regulators to the permissions of your sensitivity label.
 
 ## See Also
 
-[Secure SharePoint Online sites and files](/security/office-365-security/secure-sharepoint-online-sites-and-files.md)
+[Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)
   
 [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
