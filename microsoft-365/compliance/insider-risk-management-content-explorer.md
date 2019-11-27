@@ -107,7 +107,7 @@ The following table lists email message property conditions available the Conten
 ## Document property conditions
 
 | **Condition option** | **Description** |
-| :--------- | :-------------- |
+| :------------------- | :-------------- |
 | **Annotations** |  |
 | **Attorney-client privilege score** |  |
 | **Author** | The author field from Office documents, which persists if a document is copied. For example, if a user creates a document and the emails it to someone else who then uploads it to SharePoint, the document will still retain the original author. |
