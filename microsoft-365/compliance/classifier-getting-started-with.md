@@ -41,7 +41,7 @@ This classification method is particularly well suited to content that isn't eas
 > Both types of classifiers are available as a condition for [auto-apply retention label policy based on a condition](labels.md#applying-a-retention-label-automatically-based-on-conditions) and [Communication compliance](communication-compliance.md).
 
 > [!IMPORTANT]
-> Trainable classifiers only work with items that are not encrypted and are in english.
+> Trainable classifiers only work with items that are not encrypted and are in English.
 
 ## Types of classifiers
 
