@@ -25,12 +25,11 @@ ms.custom: aka.ms/self-service-purchase-faq
 
 ### What changes did Microsoft announce around self-service purchases for the Power Platform products?
 
-UPDATE as of October 31, 2019: Over the past week, we’ve been listening to customer feedback regarding the rollout of our self-service purchase capabilities for Power Platform products. Based on the feedback, we’re making the following changes to our plan:
+On November 19, we provided IT admins a way to turn off self-service purchasing on a per product basis via PowerShell. To learn how to use it, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
-- On November 19th, we will provide IT admins a way to turn off self-service purchasing on a per product basis via PowerShell. To learn how to use it, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
-- To provide more time to prepare for this change, we are updating the launch for self-service purchase capabilities for Power Platform products to start with Power BI on January 14th for all commercial cloud customers.  
+To provide more time to prepare for this change, we're updating the launch for self-service purchase capabilities for Power Platform products to start with Power BI on January 14 for all commercial cloud customers.  
 
-Beginning January 14, 2020, self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, Power Apps, and Power Automate) will be available for commercial cloud customers in the United States. Self-service purchase gives users a chance to try out new technologies and enables them to develop solutions that will ultimately benefit their larger organizations. This capability will not be available to tenants in the US that are government, nonprofit, or education, at this time. Central procurement and IT teams will have visibility to all users buying and deploying self-service purchase solutions through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and will be able to turn off self-service purchasing on a per product basis via PowerShell.
+Beginning January 14, 2020, self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, Power Apps, and Power Automate) will be available for commercial cloud customers in the United States. Self-service purchase gives users a chance to try out new technologies and lets them develop solutions that will ultimately benefit their larger organizations. This capability will not be available to tenants in the US that are government, nonprofit, or education, at this time. Central procurement and IT teams will have visibility to all users buying and deploying self-service purchase solutions through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, and will be able to turn off self-service purchasing on a per product basis via PowerShell.
 
 ### Why is Microsoft adding a self-service purchase option for the Power Platform products?
 
@@ -42,13 +41,13 @@ Microsoft is launching self-service purchase for Power BI on January 14, 2020, t
 
 ### Will self-service purchase be enabled for services beyond the Power Platform products?
 
-At this time, the Power Platform family of products are the only services being offered through self-service purchase.
+At this time, only the Power Platform family products is being offered through self-service purchase.
 
 ## Making a self-service purchase
 
 ### How does a customer make a self-service purchase?
 
-Customers will be able to make a self-service purchase online from the Microsoft Power BI, Power Apps, and Power Automate websites. Customers will first be asked to enter an email address to ensure they’re a user in an existing Azure Active Directory (AD) tenant, and then they’ll be directed to log in by using their Azure AD credentials. After logging in, the customer will be asked to select how many subscriptions they want to purchase and provide credit card payment. When the purchase is complete, they’ll be able to start using their subscription. The purchaser will also be able to access a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> where they can enable other people in their organization to use the product.
+Customers will be able to make a self-service purchase online from the Microsoft Power BI, Power Apps, and Power Automate websites. Customers will first be asked to enter an email address to ensure they’re a user in an existing Azure Active Directory (AD) tenant. Then they’ll be directed to log in by using their Azure AD credentials. After signing in, the customer will be asked to select how many subscriptions they want to purchase and provide credit card payment. When the purchase is complete, they’ll be able to start using their subscription. The purchaser will also be able to access a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> where they can enable other people in their organization to use the product.
 
 ### What are the payment options for self-service purchases?
 
@@ -84,7 +83,7 @@ Self-service purchasers can manage their purchases in the limited view of the <a
 
 ### What is the pricing for self-service purchases?
 
-Pricing for each of the Power Platform products for self-service purchases will be available on Microsoft’s website and is also displayed as part of the checkout experience while making a self-service purchase. These prices may differ from the prices an organization pays when making central purchases or prices offered through a partner.
+Pricing for each of the Power Platform products for self-service purchases will be available on the Microsoft website and is also displayed as part of the checkout experience while making a self-service purchase. These prices may differ from the prices an organization pays when making central purchases or prices offered through a partner.
 
 ### Who is responsible for payment?
 
@@ -96,7 +95,7 @@ The person who buys the subscription through self-service purchase will be bille
 
 Admins can view all self-service purchases made in their organization in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. They can see the product, purchaser name, subscriptions purchased, expiry date, order history, purchase price, and assigned users for each self-service purchase. If required for their organization, admins will be able to turn off self-service purchasing on a per product basis via PowerShell. Admins have the same data management and access policies over products bought through self-service purchase or centrally.
 
-Admins can also control whether users in their organization can make self-service purchases. For more information see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
+Admins can also control whether users in their organization can make self-service purchases. For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
 ### How is Microsoft respecting data governance and compliance by enabling self-service purchase?
 
@@ -132,7 +131,7 @@ Extensive training for users is provided on the Microsoft Power BI, Power Apps, 
 
 ### What happens to a self-service purchase if a user leaves the organization?
 
-Valid users will continue to have full use of the self-service purchase for the duration of the subscription. The subscription remains active until the purchaser directly cancels it or an admin requests that the subscription be cancelled through customer support. Admins may also choose to assign a centrally purchased license to users of the cancelled subscription.
+Valid users will continue to have full use of the self-service purchase for the duration of the subscription. The subscription remains active until the purchaser directly cancels it or an admin requests that the subscription be canceled through customer support. Admins may also choose to assign a centrally purchased license to users of the canceled subscription.
 
 ## Partners
 

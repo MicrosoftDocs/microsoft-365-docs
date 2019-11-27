@@ -34,7 +34,7 @@ With Compliance Manager, your organization can:
 
 ## Compliance Manager relationships
 
-Compliance Manager uses several components help you with your compliance management activities. These components work together to provide a complete management work flow and hassle-free compliance reports for auditors.
+Compliance Manager uses several components to help you with your compliance management activities. These components work together to provide a complete management work flow and hassle-free compliance reports for auditors.
 
 The diagram shows the relationships between the primary components of Compliance Manager:
 

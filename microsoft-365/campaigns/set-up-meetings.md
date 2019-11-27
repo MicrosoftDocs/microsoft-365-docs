@@ -35,8 +35,8 @@ Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2078712
 ## Best practices
 
 Follow these best practices for your online meetings:
-1. Schedule your online meetings right in Microsoft Teams. You can choose a team and channel, and Teams will invite the participants in that team or channel automatically.
-2. Need an impromptu meeting? If you're in a one-on-one chat, choose **Meet now** to start a video or audio call with the person you're chatting with. 
+- Schedule your online meetings right in Microsoft Teams. You can choose a team and channel, and Teams will invite the participants in that team or channel automatically.
+- Need an impromptu meeting? If you're in a one-on-one chat, choose **Meet now** to start a video or audio call with the person you're chatting with. 
 
 
 ## Schedule a meeting

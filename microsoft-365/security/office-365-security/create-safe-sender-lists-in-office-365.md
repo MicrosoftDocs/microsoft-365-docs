@@ -82,7 +82,7 @@ When it’s not possible to use ETRs to globally allow a specific sender while v
 
 The least desirable option is to authorize by sender/domain. This option should be avoided *if at all possible* as it bypasses Spam/Spoof/Phish protection completely and does not evaluate sender authentication. This method increases your risk of receiving mail from bad actors and is best recommended temporarily and only when testing. The detailed steps can be found in [Configure your spam filter policies](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) document.
 
-The maximum limit for these lists is approximately 1000 entries.
+The maximum limit for these lists is approximately 1000 entries; although, you will only be able to enter 30 entries into the portal. You must use PowerShell to add more than 30 entries.
 
 > [!CAUTION]
 > Configuring Anti-Spam polices to *allow sender/allow domain* will result in messages skipping spam filtering for a) messages from senders in the allow list, or b) any senders from an allowed domain. This method significantly increases the risk spammers can spoof the sending domain (or impersonate the full email address) which skips all spam filtering, sender authentication checks, and will send the message directly into a person's inbox.
