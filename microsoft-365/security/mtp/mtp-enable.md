@@ -27,9 +27,9 @@ search.appverid:
 Microsoft Threat Protection unifies your incident response process by integrating key capabilities across Microsoft Defender Advanced Threat Protection (ATP), Office 365 ATP, Microsoft Cloud App Security, and Azure ATP. This unified experience adds powerful features you can access on Microsoft 365 security center.
 
 ## Start using the service
-Turning the Microsoft Threat Protection service on aggregates data from the various integrated services. The data will be processed and stored centrally to identify new insights and to make centralized response workflows possible. The data will be stored and processed in the same data center location you have selected for [your Microsoft Defender ATP data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).  
+Turning the Microsoft Threat Protection service on aggregates data from the various integrated services. The data will be processed and stored centrally to identify new insights and to make centralized response workflows possible. The data will be stored and processed in the same data center location you have selected for [your Microsoft Defender ATP data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
 
-To turn the Microsoft Threat Protect service on, go to **Settings** > **Microsoft Threat Protection**. 
+To turn the Microsoft Threat Protect service on, go to **Settings** > **Microsoft Threat Protection**. You will be asked to provide your consent before data is shared between services and aggregated.
 
 ## Turn off Microsoft Threat Protection
 To stop using Microsoft Threat Protection, Microsoft staff will help you deprovision the necessary resources from your tenant. Data will be permanently restored and corresponding features will be removed from Microsoft 365 security center.

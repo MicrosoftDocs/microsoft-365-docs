@@ -24,28 +24,25 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-Accounts assigned the following Azure Active Directory or Office 365 roles have full access to all available Microsoft Threat Protection functionality and data:
+Accounts assigned the following Azure Active Directory (AD) roles can access Microsoft Threat Protection functionality and data:
 - Global administrator
 - Security administrator
+- Security Operator
+- Global Reader
+- Security Reader
 
-All other accounts, however, must be given access through the role-based access control (RBAC) settings in various integrated services.
- 
+To review accounts with these roles, [view Permissions in Microsoft 365 security center](https://security.microsoft.com/permissions).
+
 ## Access to functionality
-Access to functionality is determined by your [Azure Active Directory or Office 365 role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Contact a global administrator if you need access to specific functionality that requires you or your user group be assigned a new role.
+Access to specific functionality is determined by your [Azure AD role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Contact a global administrator if you need access to specific functionality that requires you or your user group be assigned a new role.
 
 ## Access to data
-Access to Microsoft Threat Protection data is based on the scope assigned to you or your user group in Microsoft Defender ATP and Microsoft Cloud App Security.
+Access to Microsoft Threat Protection data can be controlled using the scope assigned to user groups in Microsoft Defender ATP role-based access control (RBAC). If your access has not been scoped to a specific set of devices in the Microsoft Defender ATP, you will have full access to data in Microsoft Threat Protection. However, once your account is scoped, you will only see data about the devices in your scope.
 
-### Tenants with Microsoft Defender ATP
-If your tenant has Microsoft Defender ATP, your access to data in Microsoft Threat Protection is determined by the your account's scope in Microsoft Defender ATP. For example, if you belong to only one user group with a Microsoft Defender ATP role and that user group has been given access to sales devices only, you will see only data about sales devices in Microsoft Threat Protection. [Learn more about RBAC settings in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+For example, if you belong to only one user group with a Microsoft Defender ATP role and that user group has been given access to sales devices only, you will see only data about sales devices in Microsoft Threat Protection. [Learn more about RBAC settings in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
-### Tenants with Microsoft Cloud App Security
-Scoping settings in Cloud App Security determine whether you have access to all data or no data in Microsoft Threat Protection:
-
-- **Full access to data** — scoping settings do not apply to your role, or scoping has been turned on
-- **No access to data** — scoping settings apply to your role and scoping has been turned off
-
-If both Microsoft Defender ATP and Cloud App Security settings apply to your account, the most restrictive settings will apply. This means that if Cloud App Security scoping settings determine that you don't have access to data, you will not be able to access even data from machines you  can access in Microsoft Defender ATP. At the same time, even if you have full access to data based on Cloud App Security settings, your access will be restricted by the scope defined in the Microsoft Defender ATP RBAC.
+### Microsoft Cloud App Security access controls
+During the preview, Microsoft Threat Protection does not enforce access controls based on  Cloud App Security settings. Access to Microsoft Threat Protection data is not affected by these settings.
 
 ## Related topics
 
