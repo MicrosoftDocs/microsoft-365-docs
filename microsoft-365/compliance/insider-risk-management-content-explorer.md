@@ -16,7 +16,7 @@ ms.collection: m365-security-compliance
 
 The insider risk management content explorer allows risk analysts and investigators....
 
-## Basic filters
+## Column options
 
 To make it easier for risk analysts and investigators to review captured data and messages and review the context to the case, several filtering and sorting tools are included in the Content Explorer. For basic sorting, the **Date** and **File class** columns support sorting using the column titles in the content queue pane. Other queue columns are available to add to the view to provide different pivots on the files and messages.
 
@@ -63,7 +63,7 @@ To add or remove column headings for the content queue, use the **Edit columns**
 | **Title** | The title of the document. The Title property is metadata that's specified in Office documents. It's different than the file name of the document. |
 | **To** | The recipient of an email message in the To field. |
 
-## Advanced conditions and search
+## Advanced search conditions
 
 You can add search conditions to narrow the scope of a search and return a more refined set of results. Each condition adds a clause to the search query that is created and run when you start the search. A condition is logically connected to the keyword query (specified in the keyword box) by a logical operator (which is represented as c:c) that is similar in functionality to the AND operator. That means that items have to satisfy both the keyword query and one or more conditions to be included in the search results. This is how conditions help to narrow your results.
 
