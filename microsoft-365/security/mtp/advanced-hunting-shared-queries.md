@@ -24,7 +24,7 @@ ms.topic: article
 
 [Advanced hunting](advanced-hunting-overview.md) queries can be shared among users in the same organization. You can also find queries shared publicly on GitHub. These queries let you quickly pursue specific threat hunting scenarios without having to write queries from scratch.
 
-![Image of shared queries](../images/atp-advanced-hunting-shared-queries.png)
+![Image of shared queries](../images/advanced-hunting-shared-queries.png)
 
 ## Save, modify, and share a query
 You can save a new or existing query so that it is only accessible to you or shared with other users in your organization. 
@@ -46,7 +46,7 @@ You can save a new or existing query so that it is only accessible to you or sha
 ## Delete or rename a query
 1. Right-click on a query you want to rename or delete.
 
-    ![Image of delete query](../images/atp_advanced_hunting_delete_rename.png)
+    ![Image of delete query](../images/advanced_hunting_delete_rename.png)
 
 2. Select **Delete** and confirm deletion. Or select **Rename** and provide a new name for the query.
 
