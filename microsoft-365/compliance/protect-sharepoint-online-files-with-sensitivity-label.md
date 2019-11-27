@@ -35,7 +35,7 @@ Some important notes about this solution:
 
 ## Admin setup
 
-To accomplish this additional level of security for files in a specific SharePoint Online team site, you must configure a customized sensitivity label that is either its own label or a sublabel of the general label for highly regulated data. Only members of the Office 365 groups for the SharePoint Online team site will see the customized label or sublabel in their list of labels.
+To accomplish this additional level of security for files in a specific SharePoint Online team site, you must configure a customized sensitivity label that is either its own label or a sublabel of the general label for highly regulated data. Only members of the Office 365 group for the SharePoint Online team site will see the customized label or sublabel in their list of labels.
 
 - Use a sensitivity label when you need a small number of labels for both global use and individual private teams.
 
