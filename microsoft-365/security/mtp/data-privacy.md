@@ -24,4 +24,6 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
+[!include[Prerelease information](prerelease.md)]
+
 

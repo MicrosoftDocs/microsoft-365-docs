@@ -22,6 +22,8 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
+[!include[Prerelease information](prerelease.md)]
+
 Each row in the `DeviceTvmSecureConfigurationAssessment` table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Use this reference to check the latest assessment results and determine whether devices are compliant.
 
 For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-schema-tables.md).

@@ -22,6 +22,8 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
+[!include[Prerelease information](prerelease.md)]
+
 The `EmailEvents` table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about events involving the processing of emails on Office 365 ATP. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the Advanced hunting schema, [see the Advanced hunting reference](advanced-hunting-schema-tables.md).

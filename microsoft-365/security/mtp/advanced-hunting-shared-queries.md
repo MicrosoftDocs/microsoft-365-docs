@@ -19,8 +19,10 @@ ms.topic: article
 
 # Use shared queries in Advanced hunting
 
-**Applies to**:
-- Microsoft 365 security center
+**Applies to:**
+- Microsoft Threat Protection
+
+[!include[Prerelease information](prerelease.md)]
 
 [Advanced hunting](advanced-hunting-overview.md) queries can be shared among users in the same organization. You can also find queries shared publicly on GitHub. These queries let you quickly pursue specific threat hunting scenarios without having to write queries from scratch.
 

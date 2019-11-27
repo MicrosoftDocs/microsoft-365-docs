@@ -22,6 +22,8 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
+[!include[Prerelease information](prerelease.md)]
+
 The `MachineInfo` table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about machines in the organization, including OS version, active users, and computer name. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the Advanced hunting schema, [see the Advanced hunting reference](advanced-hunting-schema-tables.md).

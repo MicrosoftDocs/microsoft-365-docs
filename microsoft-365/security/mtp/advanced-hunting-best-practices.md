@@ -19,8 +19,10 @@ ms.topic: article
 
 # Advanced hunting query best practices
 
-**Applies to**:
-- Microsoft 365 security center
+**Applies to:**
+- Microsoft Threat Protection
+
+[!include[Prerelease information](prerelease.md)]
 
 ## Optimize query performance
 Apply these recommendations to get results faster and avoid timeouts while running complex queries:
