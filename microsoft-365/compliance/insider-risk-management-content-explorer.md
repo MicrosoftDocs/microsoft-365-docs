@@ -23,7 +23,7 @@ To make it easier for risk analysts and investigators to review captured data an
 To add or remove column headings for the content queue, use the **Edit columns** control and select from the following column options:
 
 | **Column option** | **Description** |
-| :---------------- | :-------------- |
+|:------------------|:----------------|
 | **Author** | The author field from Office documents, which persists if a document is copied. For example, if a user creates a document and the emails it to someone else who then uploads it to SharePoint, the document will still retain the original author. |
 | **Bcc** | Available for email messages, the users in the Bcc message field. |
 | **Caption** |  |
@@ -68,6 +68,31 @@ To add or remove column headings for the content queue, use the **Edit columns**
 You can add search conditions to narrow the scope of a search and return a more refined set of results. Each condition adds a clause to the search query that is created and run when you start the search. A condition is logically connected to the keyword query (specified in the keyword box) by a logical operator (which is represented as c:c) that is similar in functionality to the AND operator. That means that items have to satisfy both the keyword query and one or more conditions to be included in the search results. This is how conditions help to narrow your results.
 
 For advanced filter and search tools, expand the **Filter** pane on the left side of the content queue. Select the **Add a condition** button to open the condition list:
+
+### Operators used with conditions
+
+|**Operator**|**Query equivalent**|**Description**|
+|:-----------|:-------------------|:--------------|
+| **After** |`property>date`| Used with date conditions. Returns items that were sent, received, or modified after the specified date.|
+| **Before** |`property<date`| Used with date conditions. Returns items that were sent, received, or modified before the specified date.|
+| **Between** |`date..date`| Use with date and size conditions. When used with a date condition, returns items there were sent, received, or modified within the specified date range. When used with a size condition, returns items whose size is within the specified range.|
+| **Contains all of** |`(property:value) OR (property:value)`|  |
+| **Contains any of** |`(property:value) OR (property:value)`| Used with conditions for properties that specify a string value. Returns items that contain any part of one or more specified string values.|
+| **Contains none of** |`-property:value`  <br/> `NOT property:value`| Used with conditions for properties that specify a string value. Returns items that don't contain any part of the specified string value.|
+| **Doesn't equal any of** |`-property=value`  <br/> `NOT property=value`| Used with conditions for properties that specify a string value. Returns items that don't contain the specific string.|
+| **End at** |  |
+| **Equals** |`size=value`| Returns items that are equal to the specified size.<sup>1</sup>|
+| **Equals any of** |`(property=value) OR (property=value)`| Used with conditions for properties that specify a string value. Returns items that are an exact match of one or more specified string values.|
+| **Equals none of** |`(property=value) OR (property=value)`|  |
+| **Greater than** |`size>value`| Returns items where the specified property is greater than the specified value.<sup>1</sup>|
+| **Greater or equal** |`size>=value`| Returns items where the specified property is greater than or equal to the specified value.<sup>1</sup>|
+| **Less than** |`size<value`| Returns items that are greater than or equal to the specific value.<sup>1</sup>|
+| **Less or equal** |`size<=value`| Returns items that are greater than or equal to the specific value.<sup>1</sup>|
+| **Not equal** |`size<>value`| Returns items that don't equal the specified size.<sup>1</sup>|
+| **Start from** |  |
+
+> [!NOTE]
+> <sup>1</sup> This operator is available only for conditions that use the Size property.
 
 ### Common property conditions
 
