@@ -30,5 +30,12 @@ The **Top issues** section details specific detected issues that affect at least
 - The percentage of managed devices that number represents
 - The total count of occurences of the specific issue
 - The software component that appears to be the source of the problem
+- The category of the detected problem:
+    - Browser (Edge, Chrome, IE)
+    - Unknown (Non-Microsoft components)
+    - Driver (audio, graphics, or other drivers)
+    - Productivity (Slack, G-Suites, Microsoft Office and its add-ons or extensions, Teams)
+    - Media (image, music, or video apps
+    - Security (Windows security components)
 - The current status as Microsoft Managed Desktop Operations investigates and remediates the issue
 
