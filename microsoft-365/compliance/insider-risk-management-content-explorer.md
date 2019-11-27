@@ -97,7 +97,7 @@ For advanced filter and search tools, expand the **Filter** pane on the left sid
 ### Common property conditions
 
 | **Condition option** | **Description** |
-| :------------------- | :-------------- |
+|:---------------------|:----------------|
 | **Date** | For email, the date a message was received by a recipient or sent by the sender. For documents, the date a document was last modified. |
 | **Sender/Author** | For email, the person who sent a message. For documents, the person cited in the author field from Office documents. You can type more than one name, separated by commas. Two or more values are logically connected by the **OR** operator. |
 | **Size** | For both email and documents, the size of the item (in bytes). |
@@ -108,7 +108,7 @@ For advanced filter and search tools, expand the **Filter** pane on the left sid
 The following table lists email message property conditions available the Content Explorer.
 
 | **Condition option** | **Description** | **Examples** |
-| :------------------- | :-------------- | :----------- |
+|:---------------------|:----------------|:-------------|
 | **Bcc** | The Bcc field of an email message. | `bcc:pilarp@contoso.com` <br> `bcc:pilarp` <br> `bcc:"Pilar Pinilla"` |
 | **Cc** | The Cc field of an email message. | `cc:pilarp@contoso.com` <br> `cc:pilarp` <br/> `cc:"Pilar Pinilla"` |
 | **Email Internet headers** |  |  |
@@ -132,7 +132,7 @@ The following table lists email message property conditions available the Conten
 ## Document property conditions
 
 | **Condition option** | **Description** |
-| :------------------- | :-------------- |
+|:---------------------|:----------------|
 | **Annotations** |  |
 | **Attorney-client privilege score** |  |
 | **Author** | The author field from Office documents, which persists if a document is copied. For example, if a user creates a document and the emails it to someone else who then uploads it to SharePoint, the document will still retain the original author. |
