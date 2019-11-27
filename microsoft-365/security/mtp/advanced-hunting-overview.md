@@ -1,7 +1,7 @@
 ---
-title: Overview of Advanced hunting in Microsoft 365
+title: Overview of Advanced hunting in Microsoft Threat Protection
 description: Learn about Advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, microsoft 365
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Proactively hunt for threats with Advanced hunting
+# Proactively hunt for threats with Advanced hunting in Microsoft Threat Protection
 
 **Applies to:**
 - Microsoft Threat Protection
@@ -36,7 +36,7 @@ We recommend going through several steps to quickly get up and running with adva
 |--|--|--|
 | **Get a feel for the language** | Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/), supporting the same syntax and operators. Start learning the query language by running your first query. | [Query language overview](advanced-hunting-query-language.md) |
 | **Understand the schema** | Get a good, high-level understanding of the tables in the schema and their columns. This will help you determine where to look for data and how to construct your queries. | [Schema reference](advanced-hunting-schema-tables.md) |
-| **Use predefined queries** | Explore collections of predefined queries covering different threat hunting scenarios. | [Hunt across devices and emails](advanced-hunting-query-emails-devices.md)
+| **Use predefined queries** | Explore collections of predefined queries covering different threat hunting scenarios. | [Use shared queries](advanced-hunting-shared-queries.md)
 | **Optimize queries** | Understand how to create efficient queries and queries that combine data from emails and devices. | [Query best practices](advanced-hunting-shared-queries.md), [Hunt across devices and emails](advanced-hunting-best-practices.md)
 
 ## Get help as you write queries

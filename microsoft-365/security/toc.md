@@ -47,7 +47,7 @@
 ##### [The Action center in Microsoft 365](mtp/mtp-action-center.md)
 
 #### [Advanced hunting]()
-##### [Proactively hunt for threats](mtp/advanced-hunting-overview.md)
+##### [Advanced hunting overview](mtp/advanced-hunting-overview.md)
 ##### [Learn the query language](mtp/advanced-hunting-query-language.md)
 ##### [Use shared queries](mtp/advanced-hunting-shared-queries.md)
 ##### [Hunt on devices and emails](mtp/advanced-hunting-query-emails-devices.md)

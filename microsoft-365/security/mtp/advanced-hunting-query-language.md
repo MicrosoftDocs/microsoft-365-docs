@@ -1,5 +1,5 @@
 ---
-title: Learn the Advanced hunting query language in Microsoft 365
+title: Learn the Advanced hunting query language in Microsoft Threat Protection
 description: Create your first threat hunting query and learn about common operators and other aspects of the Advanced hunting query language
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types
 search.product: eADQiWindows 10XVcnh

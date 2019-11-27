@@ -1,7 +1,7 @@
 ---
 title: Find threats across devices and emails using Advanced hunting
 description: Study common hunting scenarios and sample queries that cover devices and emails.
-keywords: advanced hunting, Office365 data, Windows devices, Office365 emails normalize, emails, threat hunting, cyber threat hunting, search, query, telemetry
+keywords: advanced hunting, Office365 data, Windows devices, Office365 emails normalize, emails, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -24,7 +24,7 @@ ms.topic: article
 
 [!include[Prerelease information](prerelease.md)]
 
-[Advanced hunting](advanced-hunting-overview.md) on Microsoft 365 security center allows you to proactively hunt for threats across your Windows devices and Office 365 emails. Here are some hunting scenarios and sample queries that can help you explore how you might construct queries covering both devices and emails.
+[Advanced hunting](advanced-hunting-overview.md) in Microsoft Threat Protection allows you to proactively hunt for threats across your Windows devices and Office 365 emails. Here are some hunting scenarios and sample queries that can help you explore how you might construct queries covering both devices and emails.
 
 ## Obtain user accounts from email addresses
 When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses. To do this use the *local-host* from the email address:

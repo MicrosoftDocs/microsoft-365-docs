@@ -1,5 +1,5 @@
 ---
-title: Use shared queries in Microsoft 365 advanced hunting
+title: Use shared queries in Microsoft Threat Protection Advanced hunting
 description: Start threat hunting immediately with predefined and shared queries. Share your queries to the public or to your organization.
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, github repo, my queries, shared queries
 search.product: eADQiWindows 10XVcnh
