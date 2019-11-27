@@ -37,7 +37,7 @@ Allow lists, [mail flow rules](https://go.microsoft.com/fwlink/p/?LinkId=722755)
 
 ### Malware ZAP
 
-For newly detected malware, ZAP moves the entire message -including its attachment- to malware Quarantine. Messages are moved regardless of the read status of the mail. If we get a malware signal for a message in the process of Dynamic Delivery scanning, ZAP will take a Move to Junk action on the message. Then it will allow Dynamic Delivery to finish the Time of Delivery scanning and take the appropriate action.
+For newly detected malware, ZAP moves the entire message, including its attachment, to malware Quarantine. Messages are moved regardless of the read status of the mail. If we get a malware signal for a message in the process of Dynamic Delivery scanning, ZAP will take a Move to Junk action on the message. Then it will allow Dynamic Delivery to finish the Time of Delivery scanning and take the appropriate action.
 
 Malware ZAP is enabled by default in the Malware Policy. You can disable Malware ZAP by using the *ZapEnabled* parameter on the [Set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy) cmdlet in Exchange Online PowerShell or Exchange Online Protection PowerShell. Malware ZAP can also be enabled or disabled by editing the Malware Policy in the Security and Compliance Center.
 
@@ -53,7 +53,7 @@ For mail that is identified as spam after delivery, ZAP takes action according t
 
 Spam ZAP is enabled by default in the Spam Policy. You can disable Spam ZAP by using the *SpamZapEnabled* parameter of [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758) cmdlet in Exchange Online PowerShell or Exchange Online Protection PowerShell.
 
-###Phish and Spam ZAP requirements, exclusions, and notices
+### Phish and Spam ZAP requirements, exclusions, and notices
 
 > [!IMPORTANT]
 > the previous *ZapEnabled* cmdlet parameter which controlled both Phish and Spam ZAP will be **deprecated February 1, 2020**. If you have written any scripts which use the ZapEnabled parameter, we recommend updating them to use SpamZapEnabled and PhishZapEnabled. In the transitional period all 3 parameters (ZapEnabled, PhishZapEnabled, and SpamZapEnabled) will be available through the cmdlet. Until explicitly set via UI or PowerShell, PhishZapEnabled and SpamZapEnabled will show an inherited value from the ZapEnabled parameter. Once the new parameters are set, they will no longer inherit from the ZapEnabled parameter. After it is deprecated setting ZapEnabled will have no affect on the PhishZapEnabled or SpamZapEnabled properties and ZapEnabled will be removed from the list of parameters in cmdlets.
