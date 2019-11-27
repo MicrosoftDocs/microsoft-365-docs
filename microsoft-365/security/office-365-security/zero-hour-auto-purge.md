@@ -37,7 +37,7 @@ Allow lists, [mail flow rules](https://go.microsoft.com/fwlink/p/?LinkId=722755)
 
 ### Malware ZAP
 
-For newly detected malware, ZAP removes attachments from email messages, leaving the body of the message in the user's mailbox. Attachments are removed regardless of the read status of the mail.
+For newly detected malware, ZAP moves the entire message -including its attachment- to malware Quarantine. Messages are moved regardless of the read status of the mail. If we get a malware signal for a message in the process of Dynamic Delivery scanning, ZAP will take a Move to Junk action on the message. Then it will allow Dynamic Delivery to finish the Time of Delivery scanning and take the appropriate action.
 
 Malware ZAP is enabled by default in the Malware Policy. You can disable Malware ZAP by using the *ZapEnabled* parameter on the [Set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy) cmdlet in Exchange Online PowerShell or Exchange Online Protection PowerShell. Malware ZAP can also be enabled or disabled by editing the Malware Policy in the Security and Compliance Center.
 
