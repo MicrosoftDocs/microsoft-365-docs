@@ -40,7 +40,7 @@ To share Azure ATP data with Microsoft Threat Protection, ensure that Microsoft 
 ## Turn off Microsoft Threat Protection
 To stop using Microsoft Threat Protection, Microsoft staff will help you deprovision the necessary resources from your tenant. Data will be permanently restored and corresponding features will be removed from Microsoft 365 security center.
 
-To deprovision the service, [contact premier support](http://go.microsoft.com/fwlink/?LinkID=733758).
+To deprovision the service, [contact premier support](https://go.microsoft.com/fwlink/?LinkID=733758).
 
 ## Related topics
 
