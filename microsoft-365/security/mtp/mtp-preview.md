@@ -21,6 +21,11 @@ search.appverid:
 
 # Microsoft 365 Security preview features
 
+**Applies to:**
+- Microsoft Threat Protection
+
+[!include[Prerelease information](prerelease.md)]
+
 Microsoft 365 Security is constantly being updated to include new feature enhancements and capabilities.
 
 Learn about new features in the Microsoft 365 Security preview release and be among the first to try upcoming features by turning on the preview experience.

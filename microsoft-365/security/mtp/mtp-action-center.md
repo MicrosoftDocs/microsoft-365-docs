@@ -21,6 +21,11 @@ ms.custom: autoir
 
 # The Action center
 
+**Applies to:**
+- Microsoft Threat Protection
+
+[!include[Prerelease information](prerelease.md)]
+
 ## Overview of the Action center
 
 ![Action Center](../images/air-actioncenter.png)

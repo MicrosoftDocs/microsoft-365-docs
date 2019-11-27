@@ -16,8 +16,8 @@ search.appverid: met150
 
 # Understand the latest attack campaigns and techniques with threat analytics 
 
-Cyber threats are becoming more frequent and sophisticated. It’s critical for organizations to quickly assess their security posture and resilience against specific emerging threats.
+Cyber threats are becoming more frequent and sophisticated. It's critical for organizations to quickly assess their security posture and resilience against specific emerging threats.
 
-**Threat analytics** is a set of interactive reports published as soon as emerging threats—new techniques, attack campaigns, and malware outbreaks—are identified. The reports help you the assess impact of threats to your environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
+**Threat analytics** is a set of interactive reports published as soon as emerging threats â€” new techniques, attack campaigns, and malware outbreaks â€” are identified. The reports help you the assess impact of threats to your environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
 
 [Learn more about threat analytics in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).  

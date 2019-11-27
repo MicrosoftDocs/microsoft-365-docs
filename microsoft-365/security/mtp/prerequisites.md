@@ -21,6 +21,11 @@ search.appverid:
 
 # Microsoft 365 Security prerequisites
 
+**Applies to:**
+- Microsoft Threat Protection
+
+[!include[Prerelease information](prerelease.md)]
+
 Learn about the licensing, hardware and software requirements, and other configuration settings to run and use the Microsoft 365 Security.
 
 

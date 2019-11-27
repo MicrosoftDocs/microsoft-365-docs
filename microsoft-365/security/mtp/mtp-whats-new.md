@@ -19,7 +19,12 @@ search.appverid:
 - MET150
 ---
 
-# What's new in Microsoft 365 Security 
+# What's new in Microsoft 365 Security
+
+**Applies to:**
+- Microsoft Threat Protection
+
+[!include[Prerelease information](prerelease.md)]
 
 This topic will cover capabilities that are generally available (GA) in the latest release of Microsoft 365 Security. 
 

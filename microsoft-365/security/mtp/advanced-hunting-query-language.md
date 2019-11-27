@@ -19,8 +19,10 @@ ms.topic: article
 
 # Learn the Advanced hunting query language
 
-**Applies to**:
+**Applies to:**
 - Microsoft Threat Protection
+
+[!include[Prerelease information](prerelease.md)]
 
 Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-schema-tables.md) specifically structured for Advanced hunting. To understand these concepts better, run your first query.
 

@@ -19,6 +19,11 @@ ms.topic: conceptual
 
 # Microsoft Threat Protection
 
+**Applies to:**
+- Microsoft Threat Protection
+
+[!include[Prerelease information](prerelease.md)]
+
 Microsoft Threat Protection is a comprehensive security solution bringing together powerful security capabilities which enable today's organizations to: 
 
 - **Protect assets** - Assets are protected from unauthorized users, devices, and applications.
