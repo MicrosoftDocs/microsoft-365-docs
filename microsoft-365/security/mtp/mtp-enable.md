@@ -33,6 +33,10 @@ Turning the Microsoft Threat Protection service on aggregates data from the vari
 
 To turn the Microsoft Threat Protect service on, go to **Settings** > **Microsoft Threat Protection**. You will be asked to provide your consent before data is shared between services and aggregated.
 
+### Getting Azure ATP data
+To share Azure ATP data with Microsoft Threat Protection, ensure that Microsoft Cloud App Security and Azure ATP integration is turned on. [Learn more about this integration](https://docs.microsoft.com/cloud-app-security/aatp-integration)
+
+
 ## Turn off Microsoft Threat Protection
 To stop using Microsoft Threat Protection, Microsoft staff will help you deprovision the necessary resources from your tenant. Data will be permanently restored and corresponding features will be removed from Microsoft 365 security center.
 
