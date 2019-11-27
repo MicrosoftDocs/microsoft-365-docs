@@ -49,7 +49,7 @@ These images show:
 
 ## Enable this preview by using Azure PowerShell
 
-1. Sign in to Azure as a global admin by using Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
+1. Sign in to Azure AD as a global admin by using the Azure Active Directory PowerShell for Graph preview release. For instructions, see [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
 
 2. Run the following command:
 
