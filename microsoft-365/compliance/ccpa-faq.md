@@ -26,7 +26,7 @@ The California Consumer Privacy Act (CCPA) is the first comprehensive privacy la
 
 **Who needs to know about the CCPA?**
 
-The CCPA only applies to companies doing business in California, which annually satisfy one or more of the following, (1) have a gross revenue of more than $25 million, (2) derive 50% or more of its annual revenue from the sale of consumer personal information, or (3) buys, sells, or shares the personal information of more than 50,000 consumers.
+The CCPA only applies to companies doing business in California, which annually satisfy one or more of the following: (1) have a gross revenue of more than $25 million, (2) derive 50% or more of its annual revenue from the sale of consumer personal information, or (3) buys, sells, or shares the personal information of more than 50,000 consumers.
 
 **When will the CCPA come into effect?**
 
@@ -68,7 +68,7 @@ The CCPA requires disclosure of the following:
 - The business or commercial purposes for collecting.
 - The categories of third parties with whom the personal information is “shared”.
 - Categories of personal information that has been “sold” and the categories of “third parties” to whom each category of personal information was sold.
-- Categories of personal information that has been “disclosed for a business purpose” (i.e. transferred but not a “sale”) and the categories of “third parties” to whom each category of personal information was transferred.
+- Categories of personal information that has been “disclosed for a business purpose” (that is, transferred but not a “sale”) and the categories of “third parties” to whom each category of personal information was transferred.
 - The specific pieces of personal information that has been collected about that consumer.
 
 **How is data “sold” under the CCPA?**
@@ -77,11 +77,11 @@ The definition of “sell” in the CCPA is incredibly broad, including “makin
 
 The CCPA does provide a number of carve-outs to this “sale” opt-out control. The three primary carve-outs are transfers (i) to a Service Provider, (ii) to an “exempted entity” or “contractor”, and (iii) at the direction of the consumer. Even if a consumer has elected to “opt-out”, personal information can continue to transfer to third parties who fit into those carve-outs.
 
-In order to take advantage of the first two exemptions, businesses will have to ensure that the transfers are governed by written contracts containing the specific terms required by the CCPA.
+To take advantage of the first two exemptions, businesses will have to ensure that the transfers are governed by written contracts containing the specific terms required by the CCPA.
 
-**What does *Businesses* and *Service Providers* mean in the context of CCPA?**
+**What do *Businesses* and *Service Providers* mean in the context of CCPA?**
 
-In the context of CCPA, Businesses are individuals or entities that determine the purposes and means of the processing of consumer’s personal data and Service Providers are individuals or entities that process information on behalf of a business. These are broadly synonymous to the terms ‘Controllers’ and ‘Processors’ used in GDPR.
+In the context of CCPA, Businesses are individuals or entities that determine the purposes and means of the processing of consumer’s personal data, and Service Providers are individuals or entities that process information on behalf of a business. These are broadly synonymous with the terms *Controllers* and *Processors* used in GDPR.
 
 **How much can companies be fined for noncompliance?**
 
@@ -110,7 +110,7 @@ There are many differences. It’s easier to focus on the similarities, includin
 
 The biggest difference in CCPA is the core requirement to enable an opt-out from sales of data to third parties (with “sale” broadly defined to include sharing of data for valuable consideration). This is a narrower and more specific obligation than the broad GDPR right to object to processing, which encompasses this type of “sale,” but is not specifically limited to covering this type of sharing.
 
-**What are Processors and Controllers?**
+**What are *Processors* and *Controllers*?**
 
 A controller is a natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data. A processor is a natural or legal person, public authority, agency, or other body that processes personal data on behalf of the controller.
 
@@ -157,7 +157,7 @@ Examples of personal data include:
 
 **What about personal data from my employees?**
 
-In October, 2019, a number of amendments were passed to the CCPA. One amendment clarified that the CCPA obligations do not apply to the personal information of employees of the business. However, legislators put a 1-year sunset on that exemption. We expect California to legislate a new data protection law for employees in 2020.  
+In October  2019, a number of amendments were passed to the CCPA. One amendment clarified that the CCPA obligations do not apply to the personal information of employees of the business. However, legislators put a one-year sunset on that exemption. We expect California to legislate a new data protection law for employees in 2020.  
 
 **As a Microsoft customer, do I need to implement the opt-out control for transfers to Microsoft?**
 
