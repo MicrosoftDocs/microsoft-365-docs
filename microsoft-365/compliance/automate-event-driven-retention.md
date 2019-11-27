@@ -124,19 +124,19 @@ Hence an automated process to trigger these different retention clocks for multi
 
   - Admin creates employee folders to the Document set such as Jane Doe, John Smith.
 
-  - Admin adds employee files such as Benefits, Payroll, Worker’s Compensation to each employee folder
+  - Admin adds employee files such as Benefits, Payroll, Worker’s Compensation to each employee folder.
 
-  - Admin assigns Asset Id to each employee folder. 
+  - Admin assigns Asset ID to each employee folder. 
 
-  - SCC Admin logs into the Security & Compliance Center
+  - SCC Admin logs into the Security & Compliance Center.
 
   - SCC Admin creates employee-related events types such as “Employee Termination”, “Employee Hire” events.
 
   - SCC Admin creates “Employee Retention” label.
 
-  - This “Employee Retention” label is published and applied manually or automatically to the employee files in SharePoint
+  - This “Employee Retention” label is published and applied manually or automatically to the employee files in SharePoint.
 
-  - HR Management System like Workday can work with Microsoft Flow to run periodically to manage employee files
+  - HR Management System like Workday can work with Microsoft Flow to run periodically to manage employee files.
 
   - If an employee has left the organization, the Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific employee’s files.
 
@@ -420,19 +420,19 @@ A Customer Relationship Management (CRM) system can work with Microsoft 365 and 
 
   - Admin creates a SharePoint library with various folders for each contract type.
 
-  - Admin adds contract files such as License Contracts, Development Contracts to each contract folder
+  - Admin adds contract files such as License Contracts, Development Contracts to each contract folder.
 
-  - Admin assigns Asset Id to each contract folder
+  - Admin assigns Asset ID to each contract folder.
 
-  - SCC Admin logs into the Security & Compliance Center
+  - SCC Admin logs into the Security & Compliance Center.
 
   - SCC Admin creates contract-related events types such as “Contract Creation”, “Contract Expiration” events.
 
   - SCC Admin creates “Contract Expiration” label.
 
-  - This “ Contract Expiration” label is published and applied manually or automatically to the contract files in SharePoint
+  - This “ Contract Expiration” label is published and applied manually or automatically to the contract files in SharePoint.
 
-  - Contract Management System can work with Microsoft Flow or a similar application to run periodically to manage contract files
+  - Contract Management System can work with Microsoft Flow or a similar application to run periodically to manage contract files.
 
   - If a contract expires, Microsoft Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific contract’s files.
 
@@ -448,19 +448,19 @@ An Enterprise Resource Planning (ERP) system can work with Microsoft 365 and Mic
 
   - Admin creates product folders in the Document set such as Product 1, Product 2, and so on.
 
-  - Admin adds product files such as Manufacturing Specifications, Product Pricing, Product licensing to each product folder
+  - Admin adds product files such as Manufacturing Specifications, Product Pricing, Product licensing to each product folder.
 
-  - Admin assigns Asset Id to each product folder.
+  - Admin assigns Asset ID to each product folder.
 
-  - SCC Admin logs into the Security & Compliance Center
+  - SCC Admin logs into the Security & Compliance Center.
 
   - SCC Admin creates employee-related events types such as “Start of Product Manufacturing”, “End of Product Manufacturing” events.
 
   - SCC Admin creates “End of Product Manufacturing” label.
 
-  - This “ End of Product Manufacturing” label is published and applied manually or automatically to the product files in SharePoint
+  - This “ End of Product Manufacturing” label is published and applied manually or automatically to the product files in SharePoint.
 
-  - ERP Systems can work with Microsoft Flow or similar applications to run periodically to manage product files
+  - ERP Systems can work with Microsoft Flow or similar applications to run periodically to manage product files.
 
   - If the manufacturing of a product ends, Microsoft Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific product’s files.
 
@@ -468,11 +468,11 @@ An Enterprise Resource Planning (ERP) system can work with Microsoft 365 and Mic
 
 ### Using Redirect 302 response results to call the REST API
 
-1.  Invoke a POST retention event call using the REST API URL <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (Global Admin permissions are required)
+1. Invoke a POST retention event call using the REST API URL <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (Global Admin permissions are required)
 
-2.  Check the response code. If it’s 302, then get the redirected URL from Location property of the response header
+2. Check the response code. If it’s 302, then get the redirected URL from Location property of the response header
 
-3.  Invoke the POST retention event call again using the redirected URL.
+3. Invoke the POST retention event call again using the redirected URL.
 
 ## Credits
 
