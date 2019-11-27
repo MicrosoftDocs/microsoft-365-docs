@@ -31,7 +31,7 @@ Microsoft Threat Protection unifies your incident response process by integratin
 ## Start using the service
 Turning the Microsoft Threat Protection service on aggregates data from the various integrated services. The data will be processed and stored centrally to identify new insights and to make centralized response workflows possible. The data will be stored and processed in the same data center location you have selected for [your Microsoft Defender ATP data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
 
-To turn the Microsoft Threat Protect service on, go to **Settings** > **Microsoft Threat Protection**. You will be asked to provide your consent before data is shared between services and aggregated.
+To turn the Microsoft Threat Protect service on, go to **Settings** > **Microsoft Threat Protection** in Microsoft 365 security center. You will be asked to provide your consent before data is shared between services and aggregated.
 
 ### Getting Azure ATP data
 To share Azure ATP data with Microsoft Threat Protection, ensure that Microsoft Cloud App Security and Azure ATP integration is turned on. [Learn more about this integration](https://docs.microsoft.com/cloud-app-security/aatp-integration)
