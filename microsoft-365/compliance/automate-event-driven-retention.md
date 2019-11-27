@@ -128,9 +128,7 @@ Hence an automated process to trigger these different retention clocks for multi
 
   - Admin assigns Asset Id to each employee folder. 
 
-  - SCC Admin l
-
-  - Logs into the Security & Compliance Center
+  - SCC Admin logs into the Security & Compliance Center
 
   - SCC Admin creates employee-related events types such as “Employee Termination”, “Employee Hire” events.
 
