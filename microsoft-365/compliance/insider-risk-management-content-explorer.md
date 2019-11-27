@@ -95,7 +95,7 @@ The following table lists email message property conditions available the Conten
 | **Importance** | The importance of an email message, which a sender can specify when sending a message. By default, messages are sent with normal importance, unless the sender sets the importance as **high** or **low**. | `importance:high`  <br> `importance:medium` <br> `importance:low`  |
 | **Meeting end date** |  |  |
 | **Meeting start date** |  |  |
-| **Message kind** | The type of email message to search for. Possible values: <br> contacts <br> docs <br> email <br> externaldata <br> faxes <br> im <br> journals <br> meetings <br> microsoftteams (returns items from chats, meetings, and calls in Microsoft Teams) <br> notes <br> posts <br> rssfeeds <br> tasks <br> voicemail | `kind:email` <br/> `kind:email OR kind:im OR kind:voicemail` <br> `kind:externaldata` |
+| **Message kind** | The type of email message to search for. Possible values: contacts, docs, email, externaldata, faxes, im, journals, meetings, microsoftteams (returns items from chats, meetings, and calls in Microsoft Teams), notes, posts, rssfeeds, tasks, voicemail | `kind:email` <br/> `kind:email OR kind:im OR kind:voicemail` <br> `kind:externaldata` |
 | **Participant domain** |  |  |
 | **Participants** | All the people fields in an email message. These fields are From, To, Cc, and Bcc. | `participants:garthf@contoso.com` <br> `participants:contoso.com` |
 | **Received** | The date that an email message was received by a recipient. | `received:04/15/2016` <br> `received>=01/01/2016 AND received<=03/31/2016` |
