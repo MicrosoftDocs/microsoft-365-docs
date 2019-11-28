@@ -61,7 +61,10 @@ SharePoint Online supports encryption of the following file types:
 - The Office Open XML formats for the following Microsoft Office programs: Word, Excel, and PowerPoint
     
 - The XML Paper Specification (XPS) format
-    
+ 
+> [!NOTE]
+> IRM protection cannot be applied to the protected documents (like digitally signed PDF files) as SharePoint needs to open the document on upload. 
+
 ## Next steps
 <a name="__toc220831191"> </a>
 
