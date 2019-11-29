@@ -182,7 +182,7 @@ Based on your current deployment, you have two options to convert your old class
 
 We recommend that you:
 
-1. Create new sensitivity labels in the Microsoft 365 compliance center that have the same names as your existing classifications.
+1. Create new sensitivity labels in the Microsoft 365 security center that have the same names as your existing classifications.
 2. Use PowerShell to apply the new labels to existing Office 365 groups and SharePoint sites using name mapping.
 3. Delete the old classifications.
 
@@ -194,7 +194,7 @@ Apps and services that support the new sensitivity labels will get created with 
 
 ### If you use sensitivity labels (unified Microsoft Information Protection labels) for files and email
 
-As soon as you enable this preview, go to each label in the Microsoft 365 compliance center and apply the policies you want for sites and groups. Users will start seeing your existing labels available for sites and groups.
+As soon as you enable this preview, go to each label in the Microsoft 365 security center and apply the policies you want for sites and groups. Users will start seeing your existing labels available for sites and groups.
 
 ### Prepare the SharePoint Online Management Shell before you relabel Office 365 groups
 
