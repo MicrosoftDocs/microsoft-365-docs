@@ -84,7 +84,8 @@ Before you enable the preview, ensure that you're running the latest SharePoint 
 
 4. Select your language and then click **Download**.
 
-5. Choose between the x64 and x86 .msi file. Download the x64 file if you run the 64-bit version of Windows or the x86 file if you run the 32-bit version. If you don’t know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system).
+5. Choose between the x64 and x86 .msi file. Download the x64 file if you run the 64-bit version of Windows or the x86 file if you run the 32-bit version. If you don’t know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system)
+
 
 6. After you download the file, run the file and follow the steps in the Setup Wizard.
 
