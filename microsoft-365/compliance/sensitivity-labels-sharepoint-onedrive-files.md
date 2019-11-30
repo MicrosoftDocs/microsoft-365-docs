@@ -72,7 +72,7 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
 
 Before you enable the preview, ensure that you're running the latest SharePoint Online Management Shell. If you already have the latest version, you can go ahead and enable the preview.
 
-1. If you installed a previous version of the SharePoint Online Management Shell from Powershell Gallery, You can Update the module by running the below cmdlet
+1. If you have installed a previous version of the SharePoint Online Management Shell from PowerShell gallery, you can update the module by running the following cmdlet.
 
     ```PowerShell
     Update-Module -Name Microsoft.Online.SharePoint.PowerShell
