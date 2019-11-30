@@ -78,7 +78,7 @@ Before you enable the preview, ensure that you're running the latest SharePoint 
     Update-Module -Name Microsoft.Online.SharePoint.PowerShell
     ```
 
-2. Else, If you installed a previous version of the SharePoint Online Management Shell from the Microsoft download center, go to **Add or remove programs** and uninstall “SharePoint Online Management Shell.”
+2. Alternatively, if you have installed a previous version of the SharePoint Online Management Shell from the Microsoft Download Center, you can also go to **Add or remove programs** and uninstall the SharePoint Online Management Shell.
 
 3. In a web browser, go to the Download Center page and [Download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
