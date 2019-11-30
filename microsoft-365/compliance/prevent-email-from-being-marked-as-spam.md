@@ -46,7 +46,7 @@ In the header, look for the following headings and values.
 - **CAT:SPOOF** or **CAT:PHISH**: Indicates that the message appears to be spoofed, meaning that the message source cannot be validated and could be suspicious. If valid, the sender will need to make sure that they have proper SPF and DKIM configuration. Check the Authentication-Results header for more information. Although it may be difficult to get all senders to use proper email authentication methods, bypassing these checks can be extremely dangerous and is the top cause of compromises.
 
 > [!IMPORTANT]
-> A detailed list of [Anti-spam headers](../security/office-365-security/anti-spam-message-headers.md)  can be found in the previous link.
+> For a detailed list of anti-spam headers, please see [Anti-spam message headers](../security/office-365-security/anti-spam-message-headers.md).
 
 
 anti-spam-message-headers
