@@ -48,8 +48,6 @@ In the header, look for the following headings and values.
 > [!IMPORTANT]
 > For a detailed list of anti-spam headers, please see [Anti-spam message headers](../security/office-365-security/anti-spam-message-headers.md).
 
-
-anti-spam-message-headers
 ### x-customspam
 
 - The presence of this header indicates that the message was marked as spam because one of the [advanced spam options is enabled](https://docs.microsoft.com/microsoft-365/security/office-365-security/advanced-spam-filtering-asf-options) in your spam filter. Unless you need these features, we recommend that you use the default settings.
