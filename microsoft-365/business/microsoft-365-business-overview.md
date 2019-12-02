@@ -34,6 +34,8 @@ Watch this video for a quick overview of Microsoft 365 Business.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
+
 Microsoft 365 Business is meant for up to 300 licenses. If you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information.
 
 See [Microsoft 365 Business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) for the entire list of features.
@@ -101,3 +103,7 @@ To see the full list of security features, see [Microsoft 365 Business security 
 
     > [!NOTE]
     > This link is for stores in U.S. only
+
+## See also
+
+[Training videos for small businesses](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
