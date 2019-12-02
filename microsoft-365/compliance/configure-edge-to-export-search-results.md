@@ -10,7 +10,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: ""
+description: "You have to enable ClickOnce support to use Microsoft Edge to export search results from Content Search and eDiscovery in the security and compliance center."
 ---
 
 # Use the Office 365 eDiscovery Export Tool in Microsoft Edge
@@ -21,7 +21,7 @@ As a result of recent changes to Microsoft Edge, ClickOnce support is no longer 
 
 1. In Microsoft Edge, navigate to **edge://flags/#edge-click-once**.
 
-2. If the existing value is set to **Default** or **Disabled** in the dropdown list, change it to **Enabled**. 
+2. If the existing value is set to **Default** or **Disabled** in the dropdown list, change it to **Enabled**.
     
    ![](media/ClickOnceimage1.png)
 
@@ -39,16 +39,18 @@ As a result of recent changes to Microsoft Edge, ClickOnce support is no longer 
 
    ![Click Download results on the flyout page to download search results](media/ClickOnceExport1.png)
 
-2. You will be prompted with a confirmation to launch the tool, Click Open
+2. You will be prompted with a confirmation to launch the tool, Click **Open**.
 
-   ![ ](media/ClickOnceimage4.png)
+   ![Click Open to launch the eDiscovery Export Tool](media/ClickOnceimage4.png)
 
    If the Microsoft Office 365 eDiscovery Export Tool isn't installed, you will be prompted with a Security Warning, 
 
-   > ![](media/ClickOnceimage5.png)
+   ![Click Install to install the eDiscovery Export Tool](media/ClickOnceimage5.png)
 
-3. Click Install to install the tool. After it's installed, the export tool will automatically launch.
+3. Click **Install**. After it's installed, the export tool will launch automatically.
 
-For more information about exporting search results, see [Export Content Search results](export-search-results.md).
+For more information, see the following topics:
 
-For more information about flags in Edge, see [How to enable experiment flags in Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
+- [Export Content Search results](export-search-results.md)
+
+- [How to enable experiment flags in Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
