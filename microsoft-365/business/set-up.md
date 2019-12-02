@@ -28,7 +28,7 @@ description: "Learn how to set up Microsoft 365 Business."
 
 # Set up Microsoft 365 Business in the setup wizard
 
-Watch this video for an overview of Microsoft 365 Business setup.
+Watch this video for an overview of Microsoft 365 Business setup.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 

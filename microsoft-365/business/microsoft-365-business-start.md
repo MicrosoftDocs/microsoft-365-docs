@@ -50,7 +50,7 @@ The following diagram describes how admins set up Microsoft 365 Business. It als
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-Watch this video for an overview of Microsoft 365 Business setup.
+Watch this video for an overview of Microsoft 365 Business setup.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
