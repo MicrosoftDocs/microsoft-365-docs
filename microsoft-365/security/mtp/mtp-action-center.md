@@ -47,17 +47,10 @@ The following table lists remediation actions that are currently supported in th
 
 [Automated investigation and remediation](mtp-autoir-actions.md) capabilities can take appropriate actions on email messages, forwarding rules, files, persistence mechanisms, and other artifacts found during investigations. Some actions require approval by your organization's security operations team to proceed. Permissions to approve (or reject) pending actions in the Action center require certain roles to be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) (Azure AD) and the [Office 365 Security & Compliance Center](../office-365-security/permissions-in-the-security-and-compliance-center.md). The following table summarizes roles and permissions needed for certain Action center tasks.
 
-| Azure AD role | Office 365 "Search & purge" role |  Actions you can approve (or reject) |
-|----|----|----|
-| Security administrator | Assigned | All tasks |
-| Security administrator | Not assigned | Block email, Delete forwarding rule |
-| Security operator, Security reader | Assigned | Delete emails and email clusters |
-| Security operator, Security reader | Not assigned | None |
-
 |Action | Role(s) needed |More information |
 |---|---|---|
 |Approve (or reject) actions on devices (endpoints) |Either the **Security Administrator** role or another role with **Active remediation actions** permissions assigned in Azure AD |[Create and manage roles for role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) |
-| | | |
+|Soft delete email messages or email clusters |Both the **Security Administrator** role in Azure AD and the **Search and Purge** role in the Office 365 Security & Compliance Center |[Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/>[Permissions for threat investigation and response capabilities in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti#how-do-we-get-these-capabilities) |
 | | | |
 
 > [!NOTE]
