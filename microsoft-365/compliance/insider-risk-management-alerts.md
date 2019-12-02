@@ -1,7 +1,7 @@
 ---
-title: Insider Risk alerts
-description: Learn about Insider Risk in Microsoft 365
-keywords: Microsoft 365, Insider Risk, risk management, compliance
+title: Insider risk management alerts
+description: Learn about insider risk management alerts in Microsoft 365
+keywords: Microsoft 365, insider risk, risk management, compliance
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article

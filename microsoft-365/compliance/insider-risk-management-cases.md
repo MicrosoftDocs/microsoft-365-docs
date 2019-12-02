@@ -1,6 +1,6 @@
 ---
 title: Insider risk management cases (preview)
-description: Learn about insider risk management in Microsoft 365
+description: Learn about insider risk management cases in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
