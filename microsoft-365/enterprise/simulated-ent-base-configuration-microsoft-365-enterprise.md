@@ -256,7 +256,7 @@ Next, join the APP1 virtual machine to the TESTLAB domain with these commands at
   
 ```powershell
 $yourDomain="<your public domain name>"
-Add-Computer -DomainName ("testlab" + $yourDomain)
+Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
@@ -314,7 +314,7 @@ Next, join the CLIENT1 virtual machine to the TESTLAB domain with these commands
   
 ```powershell
 $yourDomain="<your public domain name>"
-Add-Computer -DomainName ("testlab" + $yourDomain)
+Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
