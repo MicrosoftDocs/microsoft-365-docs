@@ -27,7 +27,7 @@ The insider risk management case dashboard allows you to view and take action on
 
 The case queue lists all active and closed cases for your organization, in addition to the current state of the following case attributes:
 
-- **Case name**: The name of the case, prefixed with the case sequence number and appended with the  
+- **Case name**: The name of the case, defined when an alert is confirmed and the case is created.  
 - **Status**: The status of the case, either *Active* or *Closed*.
 - **User**: The employee for the case, either the employee name or a pseudonymized alias.
 - **Time case opened**: The time that has passed since the case was opened.
@@ -102,8 +102,9 @@ The content explorer is a powerful tool with basic and advanced search and filte
 
 ### Case notes
 
-The **Case notes** tab in the case is where risk analysts and investigators share comments, feedback, and insights about their work for the case. Notes are permanent additions to a case and cannot be edited or deleted 
-after the note is saved. The case notes dashboard displays notes by the user that created the note and the time that has passed since the note was saved. To search the case note text field for a specific keyword, use the **Search** button on the case dashboard and enter a specific keyword.
+The **Case notes** tab in the case is where risk analysts and investigators share comments, feedback, and insights about their work for the case. Notes are permanent additions to a case and cannot be edited or deleted after the note is saved. When a case is created from an alert, the comments entered in the **Confirm alert and create insider risk case** dialog are automatically added as a case note.
+
+The case notes dashboard displays notes by the user that created the note and the time that has passed since the note was saved. To search the case note text field for a specific keyword, use the **Search** button on the case dashboard and enter a specific keyword.
 
 To add a note to a case:
 
