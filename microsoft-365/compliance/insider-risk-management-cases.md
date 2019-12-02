@@ -162,6 +162,7 @@ To escalate a case to a data investigation:
 2. Select a case, then select the **Open investigation** button on the case action toolbar.
 3. Select **Escalate for data investigation**.
 4. On the **Escalate for data investigation** dialog, enter a name for the new data investigation. If needed, enter notes about the case and select **Escalate**.
+5. Select **Confirm** to create the data investigation case or select **Cancel** to close the dialog without creating a new data investigation case.
 
 After the insider risk management case has been escalated to a new data investigation case, you can review the new case in the **Data investigations** area on the Microsoft 365 compliance center.
 
@@ -175,6 +176,7 @@ To escalate a case to an employee investigation:
 2. Select a case, then select the **Open investigation** button on the case action toolbar.
 3. Select **Escalate for employee investigation**.
 4. On the **Escalate for employee investigation** dialog, enter a name for the new employee investigation. If needed, enter notes about the case and select **Escalate**.
+5. Select **Confirm** to create the employee investigation case or select **Cancel** to close the dialog without creating a new employee investigation case.
 
 After the insider risk management case has been escalated to a new employee investigation case, you can review the new case in the **eDiscovery > Advanced** area on the Microsoft 365 compliance center.
 
