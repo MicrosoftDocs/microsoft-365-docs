@@ -60,6 +60,9 @@ The following table lists remediation actions that are currently supported in th
 | | | |
 | | | |
 
+> [!NOTE]
+> Users with the Global Administrator role assigned in Azure AD can approve or reject any pending action in the Action center. However, your organization should limit the number of people who have the Global Administrator role assigned. We recommend using the roles listed in the table above while Microsoft Threat Protection is in preview.
+
 ## Visit the Action center
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
