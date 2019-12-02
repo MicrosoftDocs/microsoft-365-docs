@@ -24,7 +24,7 @@ description: "Summary: Apply Azure Information Protection to protect files in a 
 
 Use the steps in this article to configure an Office 365 sensitivity label to provide encryption and permissions for files. These files can be added to a SharePoint library configured for highly confidential protection. Or, you can open a file directly from the site and apply the label. The encryption and permissions protection travels with a file even when it is downloaded from the site. 
 
-These steps are part of a larger solution for configuring highly confidential protection for SharePoint sites and the files within these sites. For more information, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection). 
+These steps are part of a larger solution for configuring highly confidential protection for SharePoint sites and the files within these sites. For more information, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files). 
 
 Using sensitivity labels for files in SharePoint Online is not recommended for all customers, but is an option for customers who need this level of protection for a subset of files.
 
@@ -39,7 +39,7 @@ To accomplish this additional level of security for files in a specific SharePoi
 
 - Use a sensitivity label when you need a small number of labels for both global use and individual private teams.
 
-- Use a sensitivity sublabel when you have a large number of labels or want to organize labels for highly confidential teams under the highly regulated label.
+- Use a sensitivity sublabel when you have a large number of labels or want to organize labels for highly confidential teams under a general-purpose label for highly confidential files.
 
 Use [these instructions](encryption-sensitivity-labels.md) to configure a separate label or a sublabel with the following settings:
 
@@ -62,7 +62,7 @@ There are two ways you can grant external users access to files protected with a
 
 ## See Also
 
-[Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)
+[Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files)
   
 [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

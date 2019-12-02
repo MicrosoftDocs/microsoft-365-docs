@@ -22,7 +22,7 @@ description: "Summary: Create and configure SharePoint Online team sites for var
 
 # Deploy SharePoint Online sites for three tiers of protection
 
-Use the steps in this article to design and deploy baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection).
+Use the steps in this article to design and deploy baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files).
   
 ## Baseline SharePoint Online team sites
 
@@ -30,7 +30,7 @@ Baseline protection includes both public and private team sites. Public team sit
   
 ### Public
 
-To create a baseline SharePoint Online team site with public access and permissions, follow the instructions [here](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d).
+To create a baseline SharePoint Online team site with public access and permissions, follow [these instructions](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d).
 
 Here is your resulting configuration.
   
@@ -38,7 +38,7 @@ Here is your resulting configuration.
   
 ### Private
 
-To create a baseline SharePoint Online team site with private access and permissions, follow the instructions [here](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d).
+To create a baseline SharePoint Online team site with private access and permissions, follow [these instructions](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d).
   
 Here is your resulting configuration.
   
@@ -58,7 +58,7 @@ Next, from the new SharePoint Online team site, configure additional permission 
 
 The results of these permission settings are:
 
-- The ability for members to invite other members is disabled.
+- The ability for members to share with other members is disabled.
 - The ability for non-members to request access is enabled.
 
 Here is your resulting configuration.
@@ -82,7 +82,7 @@ Next, from the new SharePoint Online team site, configure additional permission 
 
 The results of these permission settings are:
 
-- The ability for members to invite other members is disabled.
+- The ability for members to share with other members is disabled.
 - The ability for non-members to request access is disabled.
 
 Here is your resulting configuration.
@@ -97,7 +97,7 @@ The members of the site, through group membership in one of the access groups, c
 
 ## See also
 
-[Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)
+[Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files)
   
 [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
