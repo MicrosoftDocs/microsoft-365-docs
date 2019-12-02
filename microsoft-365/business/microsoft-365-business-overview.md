@@ -29,6 +29,10 @@ description: "Learn more about Microsoft 365 Business."
 ## What is Microsoft 365 Business
 
 Microsoft 365 Business is a subscription service that includes Office 365 productivity tools plus advanced capabilities to help protect your business against cyberthreats, protect your data, and manage devices.
+
+Watch this video for a quick overview of Microsoft 365 Business.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
 Microsoft 365 Business is meant for up to 300 licenses. If you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information.
 
