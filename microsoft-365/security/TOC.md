@@ -2,8 +2,6 @@
 
 ## Get started
 ### [Microsoft 365 Security for BDMs](Microsoft-365-security-for-bdm.md)
-### [Secure Score](./mtp/microsoft-secure-score.md)
-### [Secure Score (preview)](./mtp/microsoft-secure-score-preview.md)
 ### [Chief Information Security Officer (CISO) workshop training](./office-365-security/ciso-workshop.md)
 #### [Module 1 - Microsoft cybersecurity briefing](./office-365-security/ciso-workshop-module-1.md)
 #### [Module 2 - Security management](./office-365-security/ciso-workshop-module-2.md)
@@ -70,7 +68,9 @@
 ###### [DeviceTvmSoftwareVulnerabilitiesKB](mtp/advanced-hunting-tvm-softwarevulnerability-table.md)
 ##### [Apply query best practices](mtp/advanced-hunting-best-practices.md)
 
-#### [Secure Score](mtp/microsoft-secure-score.md)
+#### [Secure Score]()
+##### [Secure Score](mtp/microsoft-secure-score.md)
+##### [Secure Score (preview)](mtp/microsoft-secure-score-preview.md)
 
 #### [Reports]()
 ##### [Monitor and view reports](mtp/monitoring-and-reporting.md)
@@ -80,7 +80,7 @@
 ##### [App monitoring and reporting](mtp/monitor-apps.md)
 
 
-### [Manage tickets through ServiceNow](./mtp/tickets.md)
+#### [Manage tickets through ServiceNow](./mtp/tickets.md)
 
 
 ## [Office 365 Security]()

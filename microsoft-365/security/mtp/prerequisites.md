@@ -19,23 +19,23 @@ search.appverid:
 - MET150
 ---
 
-# Microsoft 365 Security prerequisites
+# Microsoft 365 security prerequisites
 
 **Applies to:**
 - Microsoft Threat Protection
 
 [!include[Prerelease information](prerelease.md)]
 
-Learn about the licensing, hardware and software requirements, and other configuration settings to run and use the Microsoft 365 Security.
+Learn about the licensing, hardware and software requirements, and other configuration settings to run and use the Microsoft 365 security.
 
 
 ## Licensing requirements
-Microsoft 365 Security requires one of the following license:
+Microsoft 365 security requires one of the following licenses:
 
 - Microsoft 365 E5 
-- Office 365 E5 and Enterprise Mobility + Security E5 and Windows E5
+- Office 365 E5, Enterprise Mobility + Security E5, and Windows E5
 
-You can acquire this from the [Microsoft 365 Enterprise page](https://www.microsoft.com/en-us/microsoft-365/enterprise).
+You can acquire these licenses from the [Microsoft 365 enterprise page](https://www.microsoft.com/en-us/microsoft-365/enterprise).
 
 ## Browser requirements
 Access to Microsoft 365 security center is done through a browser. The following browsers are supported:
