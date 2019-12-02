@@ -352,7 +352,7 @@ For details, see the section "France Passport Number" in [What the sensitive inf
   
 ## Germany
 
-For details, see the section "Germany Passport Number" in [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+For details, see the section "German Passport Number" in [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
   
 ## Greece
 
