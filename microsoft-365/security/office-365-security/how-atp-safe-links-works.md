@@ -42,7 +42,7 @@ At a high level, here's how [ATP Safe Links](atp-safe-links.md) protection works
     
     - If the URL is determined to be safe, the website opens.
     
-## How ATP Safe Links works with URLs in Office documents
+## How ATP Safe Links works with URLs in Office documents 
 
 At a high level, here's how [ATP Safe Links](atp-safe-links.md) protection works for URLs in Office 365 ProPlus or Business Premium applications (current versions of Word, Excel, and PowerPoint on Windows, Mac, or in a browser, Office apps on iOS or Android devices, Visio on Windows, OneNote in a browser):
   
@@ -63,4 +63,7 @@ At a high level, here's how [ATP Safe Links](atp-safe-links.md) protection works
       - If the URL is considered safe, the user is taken to the website.
       
       - If the URL check fails, Safe Links' protection will not trigger. On the desktop clients, the user will be warned before proceeding through to the site.
+      
+Note: It may take several seconds at the beginning of each session for Office to verify that the user has ATP Safe Links for Office enabled. 
+      
 
