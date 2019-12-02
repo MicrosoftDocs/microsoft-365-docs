@@ -65,9 +65,19 @@ To triage an insider risk alert, complete the following steps:
         - **Active case**: If confirmed, the case generated from the alert is listed. For new alerts, the Active case has a *None* value.
     - **User activity**: This tab displays the activity history for the user associated with the alert. This history includes other alerts and activities related to risk signals defined in the template assigned to the policy for this alert. This history allows risk analysts and investigators to factor in any past risky behavior for the employee as part of the triage process. 
     - **User profile**: This tab displays the general information about the employee assigned to the alert. If pseudonymize is active for the solution, employee details are not shown.
-    - **Confirm and create a new case**: Visible across all tabs, use this button to confirm and create a new case. This automatically changes the alert status to *Confirmed*.
+    - **Confirm and create a new case**: Visible across all tabs, use this button to confirm and create a new case. This automatically changes the alert status to *Confirmed*. 
     - **Dismiss as benign**: Visible across all tabs, use this button to dismiss the alert. This changes the alert status to *Resolved*.
 
 ## Search alerts
 
 To search the alert name for a specific word, select the **Search** control and type the word to search. The search will display any policy alert containing the word in the search.
+
+## Create a case for an alert
+
+After an alert is reviewed and triaged, you may need to create a new case to further investigate the risk activity. To create a case for an alert, follow these steps:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
+2. On the alerts dashboard, select the alert you want to confirm and create a new case for.
+3. On the alerts detail pane, select **Confirm and create case**.
+4. On the **Confirm alert and create insider risk case** dialog, enter a name for the case, select users to add as contributors, and add comments as applicable.
+5. Select **Create case** to create a new case or select **Cancel** to close the dialog without creating a case.
