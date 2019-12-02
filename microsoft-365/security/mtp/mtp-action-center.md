@@ -50,7 +50,7 @@ The following table lists remediation actions that are currently supported in th
 |Action | Role(s) needed |More information |
 |---|---|---|
 |Approve (or reject) actions on devices (endpoints) |One of the following: <br/>- **Security Administrator** role assigned in Azure AD<br/>- Another role with **Active remediation actions** permissions assigned in Azure AD |[Create and manage roles for role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) |
-|Soft delete email messages or email clusters |Both the **Security Administrator** role in Azure AD and the **Search and Purge** role in the Office 365 Security & Compliance Center |[Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/>[Permissions for threat investigation and response capabilities in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti#how-do-we-get-these-capabilities) |
+|Soft delete email messages or email clusters |Both of the following:<br/>- **Security Administrator** role assigned in Azure AD<br/>- **Search and Purge** role assigned in the Office 365 Security & Compliance Center |[Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/>[Permissions for threat investigation and response capabilities in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti#how-do-we-get-these-capabilities) |
 | | | |
 
 > [!NOTE]
