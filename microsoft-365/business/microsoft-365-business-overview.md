@@ -30,7 +30,7 @@ description: "Learn more about Microsoft 365 Business."
 
 Microsoft 365 Business is a subscription service that includes Office 365 productivity tools plus advanced capabilities to help protect your business against cyberthreats, protect your data, and manage devices.
 
-Watch this video for a quick overview of Microsoft 365 Business.</br>
+Watch this video for a quick overview of Microsoft 365 Business.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
