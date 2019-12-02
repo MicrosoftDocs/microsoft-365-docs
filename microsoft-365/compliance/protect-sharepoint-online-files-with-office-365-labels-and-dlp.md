@@ -145,7 +145,7 @@ Use these steps to configure a DLP policy that notifies users when they share a 
     
 14. In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.
     
-15. In the text box, type or paste in one of the following tips, depending on if you are optionall using sensitivity labels to protect sensitive files:
+15. In the text box, type or paste in one of the following tips, depending on if you are optionallyusing sensitivity labels to protect sensitive files:
     
   - To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.
   - Highly confidential files are protected with encryption. Only external users who are granted permissions to these files by your IT department can read them.
