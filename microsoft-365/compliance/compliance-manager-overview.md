@@ -46,7 +46,7 @@ The diagram shows the relationships between the primary components of Compliance
 
 ## Assessments
 
-[Assessments](working-with-compliance-manager.md#assessments) are containers that allow you to organize Controls based for responsibilities shared between Microsoft and your organization for assessing cloud service security and compliance risks. Assessments help you implement data protection safeguards specified by a compliance standard and applicable data protection standards, regulations, or laws. They help you discern your data protection and compliance posture against the selected industry standard for the selected Microsoft cloud service. Assessments are completed by the implementation of controls included in the Assessment that map to a certification standard.
+[Assessments](working-with-compliance-manager.md#assessments) are containers that allow you to organize controls for responsibilities shared between Microsoft and your organization for assessing cloud service security and compliance risks. Assessments help you implement data protection safeguards specified by a compliance standard and applicable data protection standards, regulations, or laws. They help you discern your data protection and compliance posture against the selected industry standard for the selected Microsoft cloud service. Assessments are completed by the implementation of controls included in the Assessment that map to a certification standard.
 
 By default, Compliance Manager creates the following Assessments for your organization:
 
@@ -100,9 +100,9 @@ A shared control refers to any control where Microsoft and customers both share 
 
 [Actions Items](working-with-compliance-manager.md#controls-and-actions) are included in customer-managed controls as part of the built-in workflow management functionality that you can use to manage and track your progress towards Assessment completion.
 
-People in your organization can use Compliance Manager to review the customer-managed controls from all Assessments for which they are assigned. When a user signs in to Compliance Manager and opens the **Action Items** dashboard, a list of Action Items assigned to them is displayed. Depending on the Compliance Manager role assigned to the user, they can provide implementation or test details, update the Status, or assign Action Items.
+People in your organization can use Compliance Manager to review the customer-managed controls from all Assessments for which they're assigned. When a user signs in to Compliance Manager and opens the **Action Items** dashboard, a list of Action Items assigned to them is displayed. Depending on the Compliance Manager role assigned to the user, they can provide implementation or test details, update the Status, or assign Action Items.
 
-Certification controls are usually implemented by one person and tested by another. For example, after Action Items initially assigned to one person for implementation are completed, Action Items are assigned to the next person to test and upload evidence. Any user with sufficient permissions for control assignments can assign and reassign Action Items. This enables central management of control assignments and decentralized routing of Action Items between implementors and testers.
+Certification controls are usually implemented by one person and tested by another. For example, after Action Items initially assigned to one person for implementation are completed, those Action Items are assigned to the next person to test and upload evidence. Any user with sufficient permissions for control assignments can assign and reassign Action Items. This enables central management of control assignments and decentralized routing of Action Items between implementors and testers.
 
 ## Permissions
 
@@ -111,15 +111,15 @@ Compliance Manager uses a role-based access control permission model. Only users
 The portal admin for Compliance Manager can set permissions for other users in within Compliance Manager by following these steps:
 
 1. From the top **More** drop-down menu, select **Admin**, then **Settings**.
-2. From here, select the role you want to assign and then add the employee you want to assign to that role. Users will then be able to perform certain actions.
+2. From here, select the role you want to assign, and then add the employee you want to assign to that role. Users will then be able to perform certain actions.
 
-In addition, users who are assigned the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) have read-only permission to access Compliance Manager; however they cannot edit data or perform any actions within Compliance Manager.
+In addition, users who are assigned the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) have read-only permission to access Compliance Manager. However, they cannot edit data or perform any actions within Compliance Manager.
 
-Note that there is no longer a default **Guest access** role. Each user must be assigned a role in order to access and work within Compliance Manager.
+There is no longer a default **Guest access** role. Each user must be assigned a role in order to access and work within Compliance Manager.
   
 ## Manage evidence
 
-Compliance Manager can store evidence of your implementation tasks for performing testing and validation of customer-managed controls. Evidence includes documents, spreadsheets, screenshots, images, scripts, script output files, and other files. Compliance Manager also automatically receives telemetry and creates an evidence record for Action Items that are integrated with Secure Score. Any data uploaded as evidence into Compliance Manager is stored in the United States on Microsoft Cloud Storage sites. This data is replicated across Azure regions located in Southeast Asia and Western Europe.
+Compliance Manager can store evidence of your implementation tasks for performing testing, and validation of customer-managed controls. Evidence includes documents, spreadsheets, screenshots, images, scripts, script output files, and other files. Compliance Manager also automatically receives telemetry and creates an evidence record for Action Items that are integrated with Secure Score. Any data uploaded as evidence into Compliance Manager is stored in the United States on Microsoft Cloud Storage sites. This data is replicated across Azure regions located in Southeast Asia and Western Europe.
 
 ## Templates
 
@@ -151,7 +151,7 @@ The pre-configured templates included with Compliance Manager are:
 
 Compliance Manager is integrated with [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md) to automatically apply Secure Score credit to the Compliance Score for synced Action Items. This is configurable for individual Action Items or all actions globally, and provides updates from Secure Score.
 
-For example, you have a security-related requirement for activating Azure Rights Management in your organization that also applies to a compliance-related Action Item. When Azure Rights Management is activated and processed by Secure Score, Compliance Manager receives notification of the update and the score for the Action Item automatically updates with completion credit.
+For example, you have a security-related requirement for activating Azure Rights Management in your organization that also applies to a compliance-related Action Item. When Azure Rights Management is activated and processed by Secure Score, Compliance Manager receives notification of the update, and the score for the Action Item automatically updates with completion credit.
 
 ## Ready to get started?
 
