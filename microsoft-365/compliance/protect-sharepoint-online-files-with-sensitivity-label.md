@@ -24,7 +24,7 @@ description: "Summary: Apply Azure Information Protection to protect files in a 
 
 Use the steps in this article to configure an Office 365 sensitivity label to provide encryption and permissions for files. These files can be added to a SharePoint library configured for highly confidential protection. Or, you can open a file directly from the site and apply the label. The encryption and permissions protection travels with a file even when it is downloaded from the site. 
 
-These steps are part of a larger solution for configuring highly confidential protection for SharePoint sites and the files within these sites. For more information, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files). 
+These steps are part of a larger solution for configuring highly confidential protection for SharePoint sites and the files within these sites. For more information, see [Protect SharePoint Online files with sensitivity labels](protect-sharepoint-online-files-with-sensitivity-label.md). 
 
 Using sensitivity labels for files in SharePoint Online is not recommended for all customers, but is an option for customers who need this level of protection for a subset of files.
 
@@ -62,7 +62,7 @@ There are two ways you can grant external users access to files protected with a
 
 ## See Also
 
-[Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files)
+[Protect SharePoint Online files with sensitivity labels](protect-sharepoint-online-files-with-sensitivity-label.md)
   
 [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

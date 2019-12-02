@@ -22,7 +22,7 @@ description: "Summary: Apply retention labels and data loss prevention (DLP) pol
 
 # Protect SharePoint Online files with retention labels and DLP
 
-Use the steps in this article to design and deploy retention labels and DLP policies for baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files).
+Use the steps in this article to design and deploy retention labels and DLP policies for baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Protect SharePoint Online files with sensitivity labels](protect-sharepoint-online-files-with-sensitivity-label.md).
   
 ## How this works
 
