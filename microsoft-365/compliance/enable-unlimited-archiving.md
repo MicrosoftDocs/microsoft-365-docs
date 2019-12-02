@@ -43,10 +43,10 @@ You can enable auto-expanding archiving for your entire organization. After you 
     
 2. Run the following command in Exchange Online PowerShell to enable auto-expanding archiving for your entire organization.
 
-    ```
+    ```powershell
     Set-OrganizationConfig -AutoExpandingArchive
     ```
-  
+
 ## Enable auto-expanding archiving for specific users
 
 Instead of enabling auto-expanding archiving for every user in your organization, you can enable it only for specific users. You might do this because only some users might have a need for a large archive storage capacity.
@@ -63,7 +63,7 @@ This additional space is added to prevent any storage issues that may occur befo
     
 2. Run the following command in Exchange Online PowerShell to enable auto-expanding archiving for a specific user. As previously explained, the user's archive mailbox (main archive) must be enabled before you can turn on auto-expanding archiving for that user.
     
-    ```
+    ```powershell
     Enable-Mailbox <user mailbox> -AutoExpandingArchive
     ```
 
@@ -75,7 +75,7 @@ This additional space is added to prevent any storage issues that may occur befo
 
 To verify that auto-expanding archiving is enabled for your organization, run the following command in Exchange Online PowerShell.
 
-```
+```powershell
 Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
 ```
 
@@ -83,9 +83,10 @@ A value of  `True` indicates that auto-expanding archiving is enabled for the or
   
 To verify that auto-expanding archiving is enabledd for a specific user, run the following command in Exchange Online PowerShell.
   
-```
+```powershell
 Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
 ```
+
 A value of  `True` indicates that auto-expanding archiving is enabled for the user. 
   
 Keep the following things in mind after you enable auto-expanding archiving:
@@ -101,7 +102,7 @@ Keep the following things in mind after you enable auto-expanding archiving:
 
 - You can also use PowerShell to enable archive mailboxes. For example, you can run the following command in Exchange Online PowerShell to enable archive mailboxes for all users whose archive mailbox isn't already enabled.
 
-    ```
+    ```powershell
     Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
     ```
 

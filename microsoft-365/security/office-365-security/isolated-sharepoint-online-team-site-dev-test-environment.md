@@ -45,7 +45,7 @@ There are three phases to setting up an isolated SharePoint Online team site in 
 3. Create a new ProjectX SharePoint Online team site and isolate it.
     
 > [!TIP]
-> Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.
+> Click [here](https://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.
   
 ## Phase 1: Build out your lightweight or simulated enterprise Office 365 dev/test environment
 
@@ -78,9 +78,6 @@ $groupDesc="People allowed to view the SharePoint resources for ProjectX."
 New-MsolGroup -DisplayName $groupName -Description $groupDesc
 ```
 
-> [!TIP]
-> Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1) for a text file that contains all of the PowerShell commands in this article.
-  
 Fill in your organization name (example: contosotoycompany), the two-character country code for your location, and then run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:
   
 ```

@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 Business resources # < 60 chars
-summary: Microsoft 365 Business includes the latest versions of Windows and Office apps like Excel and Outlook. Get up and running and take advantage of data protection and security that extends to all your business devices. # < 160 chars
+summary: Microsoft 365 Business is a subscription service that includes Office 365 productivity tools plus advanced capabilities to help protect your business against cyberthreats, protect your data, and manage the devices. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -28,10 +28,10 @@ conceptualContent:
         - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
           itemType: video
           text: Microsoft 365 Business training
-        - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-licensing-deck
+        - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
           itemType: overview
-          text: Compare plans (English Only)
-        - url: https://docs.microsoft.com/en-us/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+          text: Compare plans
+        - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
           itemType: reference
           text: Service description
         - url: support/microsoft-365-business-faqs.md
@@ -86,13 +86,13 @@ conceptualContent:
  # Card
     - title: Manage threats
       links:
-        - url: https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp
+        - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp
           itemType: overview
           text: Office 365 Advanced Threat Protection
         - url: set-up-mfa.md
           itemType: how-to-guide
           text: Set up MFA
-        - url: https://docs.microsoft.com/en-us/microsoft-365/business/increase-threat-protection#protect-against-ransomware
+        - url: https://docs.microsoft.com/microsoft-365/business/increase-threat-protection#protect-against-ransomware
           itemType: how-to-guide
           text: Protect against ransomware
         - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
@@ -133,7 +133,7 @@ conceptualContent:
         - url: reset-devices-to-factory-settings.md
           itemType: how-to-guide
           text: Wipe and reset
-        - url: https://docs.microsoft.com/en-us/intune/index
+        - url: https://docs.microsoft.com/intune/index
           itemType: overview
           text: Intune
         - url: manage-windows-devices.md
@@ -186,18 +186,18 @@ conceptualContent:
         - url: sign-up.md
           itemType: get-started
           text: Sign up for Microsoft 365 Business
-        - url: https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790
-          itemType: video
-          text: Store files in the cloud
-        - url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
-          itemType: video
-          text: Collaborate with Microsoft Teams
-        - url: https://docs.microsoft.com/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=%2Fmicrosoft-365%2Fbusiness%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbusiness%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+        - url: migrate-to-microsoft-365-business.md
           itemType: how-to-guide
-          text: View my bill
+          text: Migrate from Office 365 Business Premium 
+        - url: migrate-from-e3.md
+          itemType: how-to-guide
+          text: Migrate from Office 365 E3 
+        - url: migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md
+          itemType: how-to-guide
+          text: Migrate to Microsoft 365 Enterprise E3
       # footerLink (optional)
       footerLink:
-        url: https://docs.microsoft.com/microsoft-365/security/
+        url: microsoft-365-business-overview.md
         text: See more 
   
 

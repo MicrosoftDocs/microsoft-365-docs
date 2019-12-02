@@ -39,7 +39,7 @@ landingContent:
           - text: What is Microsoft Defender ATP?
             url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
           - text: Overview of capabilities
-            url: https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/overview
+            url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
  
    # Card
   - title: Office 365 ATP
@@ -57,9 +57,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Azure ATP?
-            url: https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp
+            url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
           - text: Azure ATP architecture
-            url: https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-architecture
+            url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
               
   # Card (optional)
   - title: Azure Security Center
@@ -67,9 +67,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Azure Security Center?
-            url: https://docs.microsoft.com/en-us/azure/security-center/security-center-intro
+            url: https://docs.microsoft.com/azure/security-center/security-center-intro
           - text: Supported features
-            url: https://docs.microsoft.com/en-us/azure/security-center/security-center-services
+            url: https://docs.microsoft.com/azure/security-center/security-center-services
 
  # Card
   - title: Microsoft Cloud App Security
@@ -77,9 +77,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Microsoft Cloud App Security?
-            url: https://docs.microsoft.com/en-us/cloud-app-security/what-is-cloud-app-security
+            url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
           - text: Get started with Microsoft Cloud App Security
-            url: https://docs.microsoft.com/en-us/cloud-app-security/getting-started-with-cloud-app-security
+            url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
 
   # Card
   - title: Azure Sentinel (Preview)
@@ -87,7 +87,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Azure Sentinel? (Preview)
-            url: https://docs.microsoft.com/en-us/azure/sentinel/overview
+            url: https://docs.microsoft.com/azure/sentinel/overview
 
   # Card
   - title: Security management 

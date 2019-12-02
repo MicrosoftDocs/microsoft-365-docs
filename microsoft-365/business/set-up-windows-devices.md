@@ -36,7 +36,7 @@ See [Verify the device is connected to Azure AD](#verify-the-device-is-connected
   
 ## Join Windows 10 devices to your organization's Azure AD
 
-Once all Windows devices in your organization have either been upgraded to Windows 10 Pro Creators Update or are already running Windows 10 Pro Creators Update, you can join these devices to your organization's Azure Active Directory. Once the devices are joined, they will automatically be upgraded to Windows 10 Business, which is part of your Microsoft 365 Business subscription.
+When all Windows devices in your organization have either been upgraded to Windows 10 Pro Creators Update or are already running Windows 10 Pro Creators Update, you can join these devices to your organization's Azure Active Directory. Once the devices are joined, they'll be automatically upgraded to Windows 10 Business, which is part of your Microsoft 365 Business subscription.
   
 ### For a brand new, or newly upgraded, Windows 10 Pro device
 
@@ -84,7 +84,7 @@ For a brand new device running Windows 10 Pro Creators Update, or for a device t
   
    ![On the Make sure this is your organization screen, click Join](media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
-If you uploaded files to OneDrive for Business, sync them back down. If you used a third party tool to migrate profile and files, sync those also to the new profile.
+If you uploaded files to OneDrive for Business, sync them back down. If you used a third-party tool to migrate profile and files, also sync those to the new profile.
   
 ## Verify the device is connected to Azure AD
 
@@ -92,7 +92,7 @@ To verify your sync status, on the **Access work or school** page in **Settings*
   
 On the Sync status page, click Sync to get the latest mobile device management policies onto the PC.
   
-To start using the Microsoft 365 Business account, go to the Windows **Start** button, right-click your current account picture and then **Switch account**. Sign in by using your organization email and password.
+To start using the Microsoft 365 Business account, go to the Windows **Start** button, right-click your current account picture, and then **Switch account**. Sign in by using your organization email and password.
   
 ![Click Info button to view synchronization status](media/818f7043-adbf-402a-844a-59d50034911d.png)
   

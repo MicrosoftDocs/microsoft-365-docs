@@ -14,6 +14,7 @@ search.appverid:
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 description: "Understand the basic elements of encryption for data security in OneDrive for Business and SharePoint Online."
 ---
 

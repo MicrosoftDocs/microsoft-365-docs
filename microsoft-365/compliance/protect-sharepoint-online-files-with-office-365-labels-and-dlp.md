@@ -3,7 +3,7 @@ title: "Protect SharePoint Online files with retention labels and DLP"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/18/2019
+ms.date: 11/27/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,6 +13,7 @@ search.appverid:
 ms.collection: 
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
@@ -21,9 +22,7 @@ description: "Summary: Apply retention labels and data loss prevention (DLP) pol
 
 # Protect SharePoint Online files with retention labels and DLP
 
- **Summary:** Apply retention labels and data loss prevention (DLP) policies for SharePoint Online team sites with various levels of information protection.
-  
-Use the steps in this article to design and deploy retention labels and DLP policies for baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Secure SharePoint Online sites and files](/security/office-365-security/secure-sharepoint-online-sites-and-files.md).
+Use the steps in this article to design and deploy retention labels and DLP policies for baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection).
   
 ## How this works
 
@@ -146,7 +145,7 @@ Use these steps to configure a DLP policy that notifies users when they share a 
     
 14. In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.
     
-15. In the text box, type or paste in one of the following tips, depending on if you implemented Azure Information Protection to protect highly confidential files:
+15. In the text box, type or paste in one of the following tips, depending on if you are using sensitivity labels to protect highly confidential files:
     
   - To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.
   - Highly confidential files are protected with encryption. Only external users who are granted permissions to these files by your IT department can read them.
@@ -213,7 +212,7 @@ Here is your resulting configuration for high confidentiality SharePoint Online 
   
 ## Next step
 
-[Protect SharePoint Online files with Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md)
+[Protect SharePoint Online files with sensitivity labels](protect-sharepoint-online-files-with-sensitivity-label.md)
     
 ## See Also
 

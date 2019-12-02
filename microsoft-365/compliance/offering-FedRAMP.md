@@ -2,7 +2,7 @@
 title: Federal Risk and Authorization Management Program (FedRAMP)
 description: Microsoft was granted US Federal Risk and Authorization Management Program P-ATOs and ATOs.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz

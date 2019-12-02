@@ -27,7 +27,7 @@ When you set up the new Office 365 Message Encryption capabilities, users in you
   
 ### To manage whether recipients can use social IDs to sign in to the OME portal
   
-1. [Connect to Exchange Online Using Remote PowerShell](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
+1. [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
 
 2. Run the Set-OMEConfiguration cmdlet with the SocialIdSignIn parameter as follows:
 

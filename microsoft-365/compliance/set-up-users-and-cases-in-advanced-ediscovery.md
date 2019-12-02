@@ -1,9 +1,9 @@
 ---
 title: "Set up users and cases in Office 365 Advanced eDiscovery"
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -31,7 +31,7 @@ Before setting up cases and users in Advanced eDiscovery, the following is requi
     
 - You have to be a member of the eDiscovery Manager role group in the Office 365 Security &amp; Compliance Center to create an eDiscovery case and add members to it. To add yourself to the eDiscovery Manager role group in Security &amp; Compliance Center, you have to be a global administrator in your Office 365 organization. If you're not a global administrator, you 'll have to ask a global administrator to add you to the eDiscovery Manager role group. For more information, see:
     
-  - [Permissions in the Microsoft 365 Security &amp; Compliance Center](/security/office-365-security/protect-against-threats.md)
+  - [Permissions in the Microsoft 365 Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
     
   - [Assign eDiscovery permissions in the Microsoft‍ 365 Security &amp; Compliance Center](assign-ediscovery-permissions.md)
     

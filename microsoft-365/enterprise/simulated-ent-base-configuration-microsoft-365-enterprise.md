@@ -3,7 +3,7 @@ title: "Simulated enterprise base configuration for Microsoft 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,6 +19,8 @@ description: Use this Test Lab Guide to create a simulated enterprise test envir
 
 # The simulated enterprise base configuration
 
+*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+
 This article provides you with step-by-step instructions to create a simplified environment for Microsoft 365 Enterprise that includes:
 
 - A Microsoft 365 E5 trial or paid subscription.
@@ -31,7 +33,7 @@ You can use the resulting environment to test the features and functionality of 
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
 
 ## Phase 1: Create a simulated intranet
 
@@ -75,32 +77,32 @@ First, start a Windows PowerShell command prompt on your local computer.
   
 Sign in to your Azure account with the following command.
   
-```
+```powershell
 Connect-AzAccount
 ```
 
 Get your subscription name using the following command.
   
-```
+```powershell
 Get-AzSubscription | Sort Name | Select Name
 ```
 
 Set your Azure subscription. Replace everything within the quotes, including the < and > characters, with the correct name.
   
-```
+```powershell
 $subscr="<subscription name>"
 Get-AzSubscription -SubscriptionName $subscr | Select-AzSubscription
 ```
 
 Next, create a new resource group for your simulated enterprise test lab. To determine a unique resource group name, use this command to list your existing resource groups.
   
-```
+```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
 Create your new resource group with these commands. Replace everything within the quotes, including the < and > characters, with the correct names.
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName="<location name, such as West US>"
 New-AzResourceGroup -Name $rgName -Location $locName
@@ -108,7 +110,7 @@ New-AzResourceGroup -Name $rgName -Location $locName
 
 Next, you create the TestLab virtual network that will host the Corpnet subnet of the simulated enterprise environment and protect it with a network security group. Fill in the name of your resource group and run these commands at the PowerShell command prompt on your local computer.
   
-```
+```powershell
 $rgName="<name of your new resource group>"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $corpnetSubnet=New-AzVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
@@ -125,13 +127,13 @@ Next, you create the DC1 virtual machine and configure it as a domain controller
   
 To create an Azure virtual machine for DC1, fill in the name of your resource group and run these commands at the PowerShell command prompt on your local computer.
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
 $pip=New-AzPublicIpAddress -Name DC1-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzNetworkInterface -Name DC1-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress 10.0.0.4
-$vm=New-AzVMConfig -VMName DC1 -VMSize Standard_A1
+$vm=New-AzVMConfig -VMName DC1 -VMSize Standard_A2_V2
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for DC1."
 $vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName DC1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
@@ -167,13 +169,13 @@ Next, connect to the DC1 virtual machine.
     
 Next, add an extra data disk as a new volume with the drive letter F: with this command at an administrator-level Windows PowerShell command prompt on DC1.
   
-```
+```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
 Next, configure DC1 as a domain controller and DNS server for the **testlab.**\<your public domain> domain. Specify your public domain name, remove the \< and > characters, and then run these commands at an administrator-level Windows PowerShell command prompt on DC1.
   
-```
+```powershell
 $yourDomain="<your public domain>"
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSForest -DomainName testlab.$yourDomain -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs"
@@ -196,7 +198,7 @@ After DC1 restarts, reconnect to the DC1 virtual machine.
     
 Next, create a user account in Active Directory that will be used when logging in to TESTLAB domain member computers. Run this command at an administrator-level Windows PowerShell command prompt.
   
-```
+```powershell
 New-ADUser -SamAccountName User1 -AccountPassword (read-host "Set user password" -assecurestring) -name "User1" -enabled $true -PasswordNeverExpires $true -ChangePasswordAtLogon $false
 ```
 
@@ -204,9 +206,9 @@ Note that this command prompts you to supply the User1 account password. Because
   
 Next, configure the new User1 account as a domain, enterprise, and schema administrator. Run this command at the administrator-level Windows PowerShell command prompt.
   
-```
+```powershell
 $yourDomain="<your public domain>"
-$domainName = "testlab"+$yourDomain
+$domainName = "testlab."+$yourDomain
 $userName="user1@" + $domainName
 $userSID=(New-Object System.Security.Principal.NTAccount($userName)).Translate([System.Security.Principal.SecurityIdentifier]).Value
 $groupNames=@("Domain Admins","Enterprise Admins","Schema Admins")
@@ -217,7 +219,7 @@ Close the Remote Desktop session with DC1 and then reconnect using the TESTLAB\\
   
 Next, to allow traffic for the Ping tool, run this command at an administrator-level Windows PowerShell command prompt.
   
-```
+```powershell
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
 ```
 
@@ -231,13 +233,13 @@ In this step, you create and configure APP1, which is an application server that
 
 To create an Azure Virtual Machine for APP1, fill in the name of your resource group and run these commands at the  command prompt on your local computer.
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
 $pip=New-AzPublicIpAddress -Name APP1-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzNetworkInterface -Name APP1-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
-$vm=New-AzVMConfig -VMName APP1 -VMSize Standard_A1
+$vm=New-AzVMConfig -VMName APP1 -VMSize Standard_A2_V2
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for APP1."
 $vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName APP1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
@@ -252,9 +254,9 @@ To check name resolution and network communication between APP1 and DC1, run the
   
 Next, join the APP1 virtual machine to the TESTLAB domain with these commands at the Windows PowerShell prompt.
   
-```
+```powershell
 $yourDomain="<your public domain name>"
-Add-Computer -DomainName ("testlab" + $yourDomain)
+Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
@@ -264,13 +266,13 @@ After APP1 restarts, connect to it using the TESTLAB\\User1 account, and then op
   
 Next, make APP1 a web server with this command at an administrator-level Windows PowerShell command prompt on APP1.
   
-```
+```powershell
 Install-WindowsFeature Web-WebServer -IncludeManagementTools
 ```
 
 Next, create a shared folder and a text file within the folder on APP1 with these PowerShell commands.
   
-```
+```powershell
 New-Item -path c:\files -type directory
 Write-Output "This is a shared file." | out-file c:\files\example.txt
 New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
@@ -289,13 +291,13 @@ In this step, you create and configure CLIENT1, which acts as a typical laptop, 
   
 To create an Azure Virtual Machine for CLIENT1, fill in the name of your resource group and run these commands at the  command prompt on your local computer.
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
 $pip=New-AzPublicIpAddress -Name CLIENT1-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzNetworkInterface -Name CLIENT1-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
-$vm=New-AzVMConfig -VMName CLIENT1 -VMSize Standard_A1
+$vm=New-AzVMConfig -VMName CLIENT1 -VMSize Standard_A2_V2
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for CLIENT1."
 $vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
@@ -310,9 +312,9 @@ To check name resolution and network communication between CLIENT1 and DC1, run 
   
 Next, join the CLIENT1 virtual machine to the TESTLAB domain with these commands at the Windows PowerShell prompt.
   
-```
+```powershell
 $yourDomain="<your public domain name>"
-Add-Computer -DomainName ("testlab" + $yourDomain)
+Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
@@ -345,67 +347,48 @@ This is your current configuration.
 ![Step 3 of the simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 
-## Phase 2: Create your Microsoft 365 E5 subscriptions
+## Phase 2: Create your Microsoft 365 E5 subscription
 
-In this phase, you create a new Microsoft 365 E5 subscription that use a new Azure AD tenant, one that is separate from your production subscription. You can do this in two ways:
+In this phase, you create a new Microsoft 365 E5 subscription that uses a new Azure AD tenant, one that is separate from your production subscription. You can do this in two ways:
 
 - Use a trial subscription of Microsoft 365 E5. 
 
   The Microsoft 365 E5 trial subscription is 30 days, which can be easily extended to 60 days. When the trial subscription expires, you must either convert it to a paid subscriptions or create a new trial subscription. Creating new trial subscriptions means you will leave your configuration, which could include complex scenarios, behind.  
+
 - Use a separate production subscription of Microsoft 365 E5 with a small number of licenses.
 
   This is an additional cost, but ensures that you have a working test environment to try features, configurations, and scenarios that does not expire. You can use the same test environment over the long term for proofs of concept, demonstration to peers and management, and application development and testing. This is the recommended method.
 
-### Use trial subscriptions
+### Sign up for an Office 365 E5 trial subscription
 
-First, follow the steps in Phase 2 and Phase 3 of the [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) to create a lightweight Office 365 dev/test environment.
+Connect to CLIENT1 with the CORP\User1 account from the Azure portal.
 
->[!Note]
->We have you create a trial subscription of Office 365 so that your dev/test environment has a separate Azure AD tenant from any paid subscriptions you currently have. This separation means you can add and remove users and groups in the test tenant without effecting your production subscriptions.
->
+To create a new Office 365 E5 trial subscription, perform the instructions in [Phase 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-office-365-e5-subscription) of the lightweight base configuration Test Lab Guide.
 
-Next, add the Microsoft 365 E5 trial subscription and assign a Microsoft 365 license to your global administrator account.
+To configure your new Office 365 E5 trial subscription, perform the instructions in [Phase 2](lightweight-base-configuration-microsoft-365-enterprise.md#phase-2-configure-your-office-365-trial-subscription) of the lightweight base configuration Test Lab Guide.
 
-1. With a private instance of an Internet browser, sign in to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com) with your global administrator account credentials.
-    
-2. On the **Microsoft 365 admin center** page, in the left navigation, click **Billing > Purchase services**.
-    
-3. On the **Purchase services** page, find the **Microsoft 365 E5** item. Hover your mouse pointer over it and click **Start free trial**.
+#### Using an Office 365 E5 test environment
 
-4. On the **Microsoft 365 E5 Trial** page, choose to receive a text or a call, enter your phone number, then click **Text me** or **Call me**.
+If all you need is an Office 365 test environment, you can stop here. 
 
-5. On the **Confirm your order** page, click **Try now**.
+See [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) for additional Test Lab Guides that apply to both Office 365 and Microsoft 365.
 
-6. On the **Order receipt** page, click **Continue**.
+### Add a Microsoft 365 E5 trial subscription
 
-7. In the Microsoft 365 admin center, click **Active users**, and then your administrator account.
+To a Microsoft 365 E5 trial subscription and configure your users accounts with licenses, perform the instructions in [Phase 3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) of the lightweight base configuration Test Lab Guide.
 
-8. Click **Edit** for **Product licenses**.
-
-9. Turn off the license for Office 365 Enterprise E5 and turn on the license for Microsoft 365 E5.
-
-10. Click **Save > Close > Close**.
-
- Next, ***if you completed Phase 3 of the*** [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment), repeat steps 8 through 11 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
   
-> [!NOTE]
-> The Microsoft 365 E5 trial subscription is 30 days. For a permanent test environment, convert this trial subscription to a paid subscription with a small number of licenses.
-  
-Your test environment now has:
-  
-- A Microsoft 365 E5 trial subscription.
-- All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Microsoft 365 E5.
-    
-### Results
+## Results
 
 Your test environment now has:
   
 - Microsoft 365 E5 trial subscription.
-- All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Microsoft 365 E5.
+- All your appropriate user accounts are enabled to use Microsoft 365 E5.
+- A simulated and simplified intranet.
     
 This is your final configuration.
   
-![Phase 4 of the simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Phase 2 of the simulated enterprise base configuration](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
 You are now ready to experiment with additional features of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
   

@@ -41,10 +41,10 @@ There are three ways to get Microsoft 365 Business:
 To sign up and purchase Microsoft 365 for your business, complete the following steps:
 
 1. On the [Microsoft 365 for business page](https://go.microsoft.com/fwlink/?linkid=2109654), select **See plans & pricing**. 
-2. On the next page, find out the monthly cost, and scroll down the page to find out more about what's included in Microsoft 365 Business. Under Microsoft 365 Business, select **Buy now**.
+2. On the next page, find out the monthly cost, and then scroll down the page to find out more about what's included in Microsoft 365 Business. Under Microsoft 365 Business, select **Buy now**.
 3. On the **Thank you for choosing Microsoft 365 Business** page, enter your information to get started.
 4. In **step 1**, enter an email address that you already use. This can be your current work email address or any address you want Microsoft to use to communicate with you during setup. It is also the address where we'll send you information about your bill and renewals. Then select, **Set up account**.
-5. In **step 2**, enter your name, business phone number, company name, and location. Note that your Country or Region determines the exact services you receive from Microsoft, and can't be changed after you complete this step. Select **Next**.
+5. In **step 2**, enter your name, business phone number, company name, and location. Your Country or Region determines the exact services you receive from Microsoft, and can't be changed after you complete this step. Select **Next**.
     > [!NOTE]
     > We display your company name in the admin center; this is where you manage Microsoft 365 users, licenses, and so on. We also include it in any internal (SharePoint) site URLs.
 6. In **step 3**:
@@ -61,7 +61,7 @@ To sign up and purchase Microsoft 365 for your business, complete the following 
         
         - **I'm not sure, or I own a domain name already** 
         
-             Choose **Get a Microsoft domain for now**. This doesn't cost anything, and later you can get a custom name for your business, or connect to one you already own&mdash;we'll show you how.
+             Choose **Get a Microsoft domain for now**. This doesn't cost anything, and later you can get a custom name for your business, or connect to one you already own. We'll show you how.
 
     3. Select **Next** to create your user ID and business email address. Enter the name (also called an alias) that you want to use. For example, Robert Young might use RobY or RobYoung as a work alias. Add a password and select **Sign up**. Make a note of your password. We'll send an email to the address you entered in step 1 to remind you of your user ID.
 7. In **step 4**: 

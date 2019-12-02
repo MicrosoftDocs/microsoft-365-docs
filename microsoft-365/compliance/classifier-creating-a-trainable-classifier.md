@@ -16,14 +16,13 @@ description: "Use trainable classifiers when one of the ready to use box classif
 
 # Creating a trainable classifier (preview)
 
-Use trainable classifiers when one of the out of the box classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. Training the classifier involves first giving it samples that are human picked and positively match the category. Then after it has processed those, you test the predictions by giving it a mix of positive and negative samples.
+Use trainable classifiers when one of the out of the box classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. Training the classifier involves first giving it samples that are human picked and positively match the category. Then, after it has processed those, you test the predictions by giving it a mix of positive and negative samples.
 
 To learn more about the different types of classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
 
 This timeline reflects a sample deployment.
 
-![trainable-classifier-timeline](media/trainable-classifier-deployment-timeline_version3.png)
-
+![trainable-classifier-timeline](media/trainable-classifier-deployment-timeline_border.png)
 
 ## Seed content
 
@@ -34,13 +33,13 @@ When you want a trainable classifier to independently and accurately identify an
 
 ## Testing content
 
-Once the trainable classifier has processed enough positive samples to build a prediction model, you need to test the predictions it makes to see if the classifier can correctly distinguish between items that match the category and items that do not. You do this by feeding it another, hopefully larger, set of human picked content that consists of samples that should fall into the category and samples that won't. Once it processes those, you will manually go through the results and verify if each prediction is correct, incorrect or you are not sure. The trainable classifier uses this feedback to improve its prediction model.
+Once the trainable classifier has processed enough positive samples to build a prediction model, you need to test the predictions it makes to see if the classifier can correctly distinguish between items that match the category and items that don't. You do this by feeding it another, hopefully larger, set of human picked content that consists of samples that should fall into the category and samples that won't. Once it processes those, you manually go through the results and verify whether each prediction is correct, incorrect, or you aren't sure. The trainable classifier uses this feedback to improve its prediction model.
 
 > [!TIP]
 > For best results, have 10,000 items in your test sample set with an even distribution of positive and negative matches.
 
 > [!TIP]
-> Opt-in is required the first time for trainable classifiers. classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content.
+> Opt-in is required the first time for trainable classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content.
 
 ## How to create a trainable classifier
 
@@ -52,7 +51,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 > [!IMPORTANT]
 > Make sure the items in your seed set are **strong** examples of the category. The trainable classifier initially builds its model based on what you seed it with. The classifier assumes all seed samples are strong positives and has no way of knowing if a sample is a weak or negative match to the category.
 
-2. Place the seed content in a SharePoint Online folder that is dedicated to holding *the seed content only*. Make note of the site, library, and folder url.
+2. Place the seed content in a SharePoint Online folder that is dedicated to holding *the seed content only*. Make note of the site, library, and folder URL.
 
 > [!TIP]
 > If you create a new site and folder for your seed data, allow at least an hour for that location to be indexed before creating the trainable classifier that will use that seed data.
@@ -81,14 +80,14 @@ Once the trainable classifier has processed enough positive samples to build a p
 > [!IMPORTANT]
 > The sample items must not be encrypted and they must be in English.
 
-12. Place the test content in a SharePoint Online folder that is dedicated to holding *the test content only*. Make note of the SharePoint Online site, library and folder url.
+12. Place the test content in a SharePoint Online folder that is dedicated to holding *the test content only*. Make note of the SharePoint Online site, library, and folder URL.
 
 > [!TIP]
 > If you create a new site and folder for your test data, allow at least an hour for that location to be indexed before creating the trainable classifier that will use that seed data.
 
 13. Choose `Add items to test`.
 
-14. Enter the exact SharePoint Online site, library and folder URL for the test content site from step 12. Choose `Add`.
+14. Enter the exact SharePoint Online site, library, and folder URL for the test content site from step 12. Choose `Add`.
 
 15. Finish the wizard by choosing `Done`. Your trainable classifier will take up to an hour to process the test files.
 

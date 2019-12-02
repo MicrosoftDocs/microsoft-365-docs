@@ -1,7 +1,7 @@
 ---
 title: "Responding to a Compromised Email Account in Office 365"
-ms.author: dansimp
-author: dansimp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -69,7 +69,7 @@ You must perform all the following steps to regain access to your account the so
 - If your on-premises identity is federated with Office 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
 
 > [!TIP]
-> It is highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.  You can learn more [here](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
+> It is highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.  You can learn more [here](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
 
 ### Step 2 Remove suspicious email forwarding addresses
 
@@ -139,6 +139,6 @@ Your Office 365 subscription comes with a powerful set of security capabilities 
 
 - [Security best practices for Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
 - [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](/security/office-365-security/detect-and-remediate-outlook-rules-forms-attack.md)
-- [Internet Crime Complaint Center](http://www.ic3.gov/preventiontips.aspx)
-- [Securities and Exchange Commission - "Phishing" Fraud](http://www.sec.gov/investor/pubs/phishing.htm)
+- [Internet Crime Complaint Center](https://www.ic3.gov/preventiontips.aspx)
+- [Securities and Exchange Commission - "Phishing" Fraud](https://www.sec.gov/investor/pubs/phishing.htm)
 - To report spam email directly to Microsoft and your admin [Use the Report Message add-in](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)

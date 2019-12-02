@@ -144,15 +144,19 @@ You can’t edit an Owner name, but you can modify the description that is displ
 
 The Customer Actions area shows all the customer actions for all Templates and Assessments in Compliance Manager (Preview).
 
-![Compliance Manager — add users](media/compliance-manager-customer-actions.png)
+![Compliance Manager — add users](media/compliance-manager-customer-actions.png "Compliance Manager Customer Actions")
 
-At-a-glance, you can see an Action’s title, owner, category, enforcement, and score, and determine if it is integrated with Secure Score. You can expand an Action and select **Read More** to read the Action’s description and access any links in the description. You can also use this interface to enable and disable Secure Score integration on a per-action basis, and to add custom actions. Actions that have Secure Score integration capabilities have an ellipsis (…) next to them (note that custom actions also have an ellipsis next to them).
+At a glance, you can see an Action’s title, owner, category, enforcement, and score, and determine if it is integrated with Secure Score. You can expand an Action and select **Read More** to read the Action’s description and access any links in the description. You can also use this interface to enable and disable Secure Score integration on a per-action basis, and to add custom actions. Actions that have Secure Score integration capabilities have an ellipsis (…) next to them (note that custom actions also have an ellipsis next to them).
 
 #### Enable or disable Secure Score integration
 
 1. Select the ellipses (…) for the Action you want to modify and select **Edit**.
 2. Toggle the switch for Secure Score continuous update to On or Off to enable or disable continuous monitoring through Secure Score.
 3. Select **Save**.
+
+When organizations first deploy Microsoft 365 or Office 365, it takes approximately seven days for Secure Score to fully collect data and factor it into your score. During that time, setting the Secure Score continuous update switch to **Off** and manually setting an action to **implemented** will count that action toward your score. After the initial seven days, turning Secure Score continuous update back on will enable continuous monitoring from that point forward.
+
+Any actions that are not supported by Secure Score integration can be manually implemented. A manual implementation will factor into the score for that action's group.
 
 #### Add a customer action
 
@@ -289,40 +293,39 @@ You can export an Assessment to an Excel file for compliance stakeholders in you
 
 The assessment report is downloaded as an Excel file in your browser session. The files name for the Excel file defaults to the title of the Assessment.
 
-### Archive a Template or an Assessment
+### Hide a Template or an Assessment
 
-When you are finished with a Template or Assessment and no longer need it for compliance purposes, you can archive it. When a Template or Assessment is archived, it is removed from the default view, and you must check the Show Archived checkbox to display it.
+When you are finished with a Template or Assessment and no longer need it for compliance purposes, you can hide it from your view. When a Template or Assessment is hidden, it is removed from the default view, and you must select **Include Hidden** checkbox to display it.
 
-![Compliance Manager Microsoft Action View](media/compliance-manager-archive-assessment-view.png)
-  
+![Compliance Manager Hidden Template View](media/compliance-manager-hidden-template.png "Compliance Manager hidden template")
+
 > [!IMPORTANT]
-> Archived Assessments do not retain their links to uploaded evidence documents. It is highly recommended that you export the Assessment before archiving to retain links to the evidence documents in the report.
+> Hidden Assessments do not retain their links to uploaded evidence documents. It is highly recommended that you export the Assessment before hiding it to retain links to the evidence documents in the report.
   
-#### Archive a Template
+#### Hiding a Template
 
 1. Open the **Templates** dashboard.
-2. Locate the Template you want to archive and select the archive icon.
-3. When you see the confirmation message, select **Archive**.
+2. Locate the Template you want to hide and at the ellipses in its row, select **Hide**.
+3. When you see the confirmation message, select **Hide**.
 
-#### Archive an Assessment
+#### Hide an Assessment
 
 1. Open the **Assessments** dashboard.
-2. Select the **Group** from the dropdown that contains the Assessment you want to archive.
-3. Locate the Assessment you want to archive and select the archive icon.
-4. When you see the confirmation message, select **Archive**.
+2. Select the **Group** from the dropdown that contains the Assessment you want to hide.
+3. Locate the Assessment you want to hide and at the ellipses, select **Hide**.
+4. When you see the confirmation message, select **Hide**.
 
-#### View archived Assessments
+#### View hidden Assessments
   
-1. Open the **Assessments** dashboard tab and check the **Show Archived** checkbox.
-2. The archived assessments appear in the **Archived Assessments** section.
-3. Select the Assessment name to open and view the Assessment.
+1. Open the **Assessments** dashboard tab and select the **Include Hidden** checkbox.
+2. The hidden assessments appear in the **Hidden Assessments** section.
 
-#### Activate an archived Assessment
+#### Unhide an Assessment
 
-1. On the **Assessments** tab and select the **Show Archived** checkbox.
-2. The archived assessments appear in the **Archived Assessments** section.
-3. Locate the Assessment you want to activate and select the activate icon.
-4. When you see the confirmation message, select **Activate**.
+1. On the **Assessments** tab, select the **Include Hidden** checkbox.
+2. The hidden assessments appear in the **Hidden Assessments** section.
+3. Locate the Assessment you want to unhide and at the ellipses, select **Unhide**.
+4. When you see the confirmation message, select **Unhide**.
 
 ## Controls and Actions
 
@@ -419,13 +422,13 @@ This tab includes columns that define individual Actions, and it includes detail
 
 - **actionDimensionValues:** Double semicolon-delimited list of applicable dimensions from the Dimensions tab, using the following format:
 
-    ```
+    ```Markdown
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
     For example:
 
-    ```
+    ```Markdown
     Product::Office 365;;Certification::NIST CSF
     ```
 
@@ -459,7 +462,7 @@ Templates and Assessments support the use of Markdown language for some text ele
 
 Bullets are represented as asterisks instead of Word or Excel bullets. For example:
 
-```
+```Markdown
 * Item A
 * Item B
 * Item C
@@ -478,15 +481,16 @@ Numbers are represented as numbers, but with spaces for indentation (three space
 
 Hyperlinks are constructed by placing brackets around the hyperlink text and the hyperlink itself in parentheses immediately next to the close bracket.  For example:
 
-```
+```Markdown
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 ```
 This text renders as follows:  Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
+
 As shown in the above example, Compliance Manager does not render URLs with underlining.
 
-Boldface text is just two asterisks on each side of the text to be bolded.  For example:
+Boldface text is two asterisks on each side of the text to be bolded.  For example:
 
-```
+```Markdown
 **This text will render in bold**
 ```
 **This text renders in bold**

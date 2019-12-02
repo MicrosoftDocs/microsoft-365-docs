@@ -21,7 +21,7 @@ ms.collection:
 The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called a *Data Subject Request* or DSR. The controller is obligated to promptly consider each DSR and provide a substantive response either by taking the requested action or by providing an explanation for why the DSR cannot be accommodated by the controller. A controller should consult with its own legal or compliance advisers regarding the proper disposition of any given DSR.
 
 Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR’s Data Subject Rights, such as the right to delete, access and receive (portability) their personal information. The CCPA also provides for certain disclosures, protections against 
-discrimination when electing exercise rights, and “opt-out/ opt-in” requirements for certain data transfers classified as “sales".
+discrimination when electing exercise rights, and “opt-out/ opt-in” requirements for certain data transfers classified as “sales". Sales are broadly defined to include the sharing of data for a valuable consideration. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
 
 The guide discusses how to use Office 365 products, services, and administrative tools to help you find and act on personal data or personal information to respond to DSRs. Specifically, this includes how to find, access, and act on personal data or personal information that resides in Microsoft's cloud. Here’s a quick overview of the processes outlined in this guide:
 
@@ -30,7 +30,7 @@ The guide discusses how to use Office 365 products, services, and administrative
 - **Rectify:** Make changes or implement other requested actions on the personal data, where applicable.
 - **Restrict:** Restrict the processing of personal data, either by removing licenses for various Azure services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
 - **Delete:** Permanently remove personal data that resided in the Microsoft cloud.
-- **Export/Receive (Portability):** Provide an electronic copy (in a machine-readable format) of personal data or personal information to the data subject.
+- **Export/Receive (Portability):** Provide an electronic copy (in a machine-readable format) of personal data or personal information to the data subject. Personal information under the CCPA is any information relating to an identified or identifiable person. There is no distinction between a person’s private, public, or work roles. The defined term “personal information” roughly lines up with “personal data” under GDPR. However, the CCPA also includes family and household data. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
 
 ### Terminology
 
@@ -183,7 +183,7 @@ This example returns Excel files on SharePoint Online sites and OneDrive for Bus
 
 ***Keyword syntax***
 
-```
+```Query
 pilar@contoso.com AND filetype="xlxs"
 ```
 
@@ -205,7 +205,7 @@ This example returns Excel or Word files on SharePoint Online sites and OneDrive
 
 This example returns email messages that contain the specified ID number, which is a France Social Security Number (INSEE)
 
-```
+```Query
 "1600330345678 97" AND kind="email"
 ```
 
@@ -281,13 +281,13 @@ End users can discover, access, and rectify SharePoint Online user profile data 
 
 Another way for users to access their SharePoint profile data is to navigate to the **edit profile page** in their OneDrive for Business account, which can be accessed by going to the **EditProfile.aspx** path under the OneDrive for Business account URL. For example, for a user <strong>user1@contoso.com</strong>, the user's OneDrive for Business account is at:
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/OneDrive.aspx`
 ```
 
 The URL for the edit profile page would be:
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/EditProfile.aspx`
 ```
 
@@ -357,9 +357,11 @@ Here’s specific guidance to search for a Class Notebook.
 3. Select that item, and then copy the folder path that’s displayed in the details pane. This is the root folder for the Class Notebook.
 4. Edit the search that you created in step 1 and replace the class name in the keyword query with the folder path of the Class Notebook and precede the folder path with the **path** site property; for example, **path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/"**. Be sure to include the quotation marks and the trailing forward slash.
 5. Add a search condition and select the File Type condition and use one for the value of the file type. This returns all OneNote files in the search results. The resulting keyword syntax would look something like this:[](#building-search-queries-to-find-personal-data)
-    ```
+
+    ```Query
    path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
    ```
+
 6.  Rerun the Content Search. The search results should include all OneNote files for the Class Notebook from the class team.
 
 #### Microsoft To Do
@@ -847,13 +849,16 @@ Students files associated with a Submission for Assignment are stored in a docum
 
 An admin can use the Content Search tool in the Office 365 Security & Compliance Center to search for student files (in the Student Work and Class Files libraries) that are related to submissions on assignments and files related to assignments. For example, an admin could search all SharePoint sites in the organization and use the student’s name and class or assignment name in the search query to find data relevant to a DSR request.
 
-Similarly, an admin can for teacher files related to assignments for files that a teacher distributed to students. For example, an admin could search all SharePoint sites in the organization and use the teacher's name and class or assignment name in the search query to find data relevant to a DSR request.
+Similarly, an admin can search for teacher files related to assignments for files that a teacher distributed to students. For example, an admin could search all SharePoint sites in the organization and use the teacher's name and class or assignment name in the search query to find data relevant to a DSR request.
 
-See [Using the Content Search eDiscovery tool to respond to DSRs](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) section in this guide.
+For more information, see:
+
+- [Assignments Admin Documentation](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-admin-documentation)
+- [Using the Content Search eDiscovery tool to respond to DSRs](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) (in this guide)
 
 ##### Finding Assignments data not stored in SharePoint
 
-The following types of Assignments data are not stored in the class team SharePoint site, and therefore isn't discoverable by using Content Search. This data this includes the following:
+The following types of Assignments data are not stored in the class team SharePoint site, and therefore aren't discoverable by using Content Search. This data this includes the following:
 
 - Student grades and feedback from the teacher
 - The list of documents submitted for an assignment by each student
@@ -865,26 +870,27 @@ Even if a student is no longer part of a class, their data might still be presen
 
 ##### Export
 
-You can export Assignments data for a specific student for all classes in which the student is enrolled by using a PowerShell script. See:
+You can export Assignments data for a specific student for all classes in which the student is enrolled by using a PowerShell script to get a list of classes for the student and then using a PowerShell script to export the data. See:
 
-- [Using scripts to export and delete user data from Assignments](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe).
-- [Export student and teacher data from Assignments](https://support.office.com/article/e8c36e0e-fb6e-42c5-97fd-66f90f92a13a).
+- [Configure Assignments for Teams](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
+- [Get a list of classes for a specific student](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
+- [Export student and teacher data from Assignments](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-export)
 
-If the student has been removed from the Team Class site, the admin can add the student back to the site before running the export script. Or the admin can use the input file for the script to identify every class that the student was ever enrolled in.
-You can also use the Assignment export script to export submissions data for all assignments that a teacher has access to.
+If the student has been removed from the Team Class site, the admin can add the student back to the site before running the export script. Or the admin can use the input file for the script to identify every class that the student was ever enrolled in. You can also use the Assignment export script to export submissions data for all assignments that a teacher has access to.
 
 ##### Delete
 
-You can delete Assignments data for a specific student for all classes in which the student is enrolled by using a PowerShell script. You should do this before you remove the student from the class. See:
+You can delete Assignments data for a specific student for all classes in which the student is enrolled by using a PowerShell script to get a list of classes for the student and then using a PowerShell script to delete the data. You should do this before you remove the student from the class. See:
 
-- [Using scripts to export and delete user data from Assignments](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe).
+- [Configure Assignments for Teams](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
+- [Get a list of classes for a specific student](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
+- [Delete student data from Assignments](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-delete)
 
-- [Delete student data from Assignments](https://support.office.com/article/a368853a-9565-4320-8e86-2f9423e932a4).
+If the student has been removed from the Team Class site, the admin can add the student back to the site before running the export script. Or the admin can use the input file for the script to identify every class that the student was ever enrolled in. You can't use the Assignments deletion script to delete teacher data because all Assignments are shared across the Class Team site. As an alternative, an admin would have to add themselves to the Class Team site and then delete a specific Assignment.
 
-If the student has been removed from the Team Class site, the admin can add the student back to the site before running the export script. Or the admin can use the input file for the script to identify every class that the student was ever enrolled in.
-You can't use the Assignments deletion script to delete teacher data because all Assignments are shared across the Class Team site. As an alternative, an admin would have to add themselves to the Class Team site and then delete a specific Assignment.
+#### Class Notebook
 
-**Class Notebook:** Searching for content in Class Notebook is discussed previously in this guide. See the [OneNote Class Notebook](#onenote-class-notebook) section. You can also use the Content Search tool to export data from a Class Notebook. Alternatively, an admin or the data subject can export data from a Class Notebook. See [Save a copy of a Class Notebook](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec).
+Searching for content in Class Notebook is discussed previously in this guide. See the [OneNote Class Notebook](#onenote-class-notebook) section. You can also use the Content Search tool to export data from a Class Notebook. Alternatively, an admin or the data subject can export data from a Class Notebook. See [Save a copy of a Class Notebook](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec).
 
 ### Flow
 
@@ -1632,7 +1638,7 @@ The following summarizes accessing and exporting system-generated logs using the
 
 - **What will data in system-generated logs look like?:** Example of a system-generated log record in JSON format:
 
-   ```
+   ```JSON
    [{
             "DateTime": "2017-04-28T12:09:29-07:00",
              "AppName": "SharePoint",
@@ -1791,4 +1797,5 @@ The following table lists the changes to the Office 365 DSR guide since its init
 |1/9/2019|[StaffHub](#staffhub)|In the Delete section, updated the description of what happens when a user account is permanently deleted.|
 |5/8/2019| [Publisher](#publisher)|Added content about responding to DSRs for Publisher.|
 |7/11/2019| [MyAnalytics](#myanalytics)|The ability for an admin to use the DSR case tool in the Office 365 Security & Compliance Center to export MyAnalytics data was removed because all users can now view their data in the MyAnalytics app. |
+|11/6/2019|[Education](#education)|Linked to new topics on using PowerShell scripts to get a list of classes for a specific student and then exporting or deleting their data.|
 ||||

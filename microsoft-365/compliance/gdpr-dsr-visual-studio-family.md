@@ -20,7 +20,7 @@ ms.workload:
 
 The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as _data subjects_) to manage their personal data. Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format. A formal request by a data subject to a data controller (an employer or other type of agency or organization that has control over personal data) to take an action on that data subject's personal data is called a _data subject request_ or DSR.
 
-Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR’s Data Subject Rights, such as the right to delete, access and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and “opt-out/ opt-in” requirements for certain data transfers classified as “sales".
+Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR’s Data Subject Rights, such as the right to delete, access and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and “opt-out/ opt-in” requirements for certain data transfers classified as “sales". Sales are broadly defined to include the sharing of data for a valuable consideration. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
 
 For general information about GDPR, see the [GDPR section of the Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
@@ -162,7 +162,7 @@ Once you click **Delete my account:**
 - If you report a new problem or log into [Developer Community](https://developercommunity.visualstudio.com), you will be identified as a new user.
 - If you delete your account from [Developer Community](https://developercommunity.visualstudio.com), we will not delete it from other Microsoft services.
 
-## Xamarin Forums and Bugzilla
+## Xamarin Forums
 
 ### Personal Data We Collect
 
@@ -184,22 +184,8 @@ Xamarin Forums are hosted by a third party, Vanilla Forums. To request export of
 
 Xamarin Forums are hosted by a third party, Vanilla Forums. To request deletion of your personal and public data, users should contact forums@xamarin.com (monitored by the Xamarin team). We will then manually service the user's personal data deletion request.
 
-#### Bugzilla for Xamarin
-
 > [!NOTE]
-> Bugzilla for Xamarin no longer accepts new issues.  
-
-##### View
-
-Former Xamarin Bugzilla accounts holders can view an archive of all bugs they've reported and all comments they've added to bugs here: [https://xamarin.github.io/bugzilla-archives/](https://xamarin.github.io/bugzilla-archives/).
-
-##### Export
-
-Exporting of personal data is not supported.
-
-##### Delete
-
-To request deletion of personal data used in connection with Xamarin's Bugzilla bug reporting website, users can close their Xamarin Bugzilla account by going to the [user preferences page](https://bugzilla.xamarin.com/userprefs.cgi) and choosing the **Close Account tab**. Enter your Bugzilla password and check the box confirming that you understand that this will permanently delete your account. Public feedback (for example, bugs, problems, comments, and solutions) that users have posted to the Xamarin Bugzilla will not be deleted after receipt of a delete request. Public feedback will instead be anonymized by removing the name and email address associated with any public feedback created by the user submitting the delete request.
+> Bugzilla for Xamarin no longer accepts new issues. Former Xamarin Bugzilla accounts holders can view an archive of all bugs they've reported and all comments they've added to bugs at [https://xamarin.github.io/bugzilla-archives/](https://xamarin.github.io/bugzilla-archives/). To request deletion of personal data contained in the archive, users can file and issue at [https://github.com/xamarin/bugzilla-archives/issues/new/choose](https://github.com/xamarin/bugzilla-archives/issues/new/choose). Public feedback (for example, bugs, problems, comments, and solutions) that users have posted to the Xamarin Bugzilla will not be deleted after receipt of a delete request. Public feedback will instead be anonymized by removing the name and email address associated with any public feedback created by the user submitting the delete request.
 
 ## NuGet
 
@@ -218,16 +204,6 @@ For information on DSR for the IIS.NET website, see [The IIS.NET Website and GDP
 ### SurveyMonkey
 
 From time to time, we invite customers to provide feedback on these products via SurveyMonkey. This data is deleted within 28 days. When servicing data subject requests for these products, if we have authenticated survey responses we include them in export and delete data subject requests.
-
-### UserVoice
-
-We invite customers to provide product suggestions at UserVoice.com sites for these products. These sites are independently operated by UserVoice, and data subject requests are managed by UserVoice.
-
-- [https://visualstudio.uservoice.com/](https://visualstudio.uservoice.com/)
-- [https://aspnet.uservoice.com/](https://aspnet.uservoice.com/)
-- [https://xamarin.uservoice.com/](https://xamarin.uservoice.com/)
-
-For data subject requests on this data, see the UserVoice guidance on [how to export your data](https://feedback.uservoice.com/knowledgebase/articles/1850245-export-my-personal-data) or on [how to delete your data](https://feedback.uservoice.com/knowledgebase/articles/1848856-delete-my-profile-information).
 
 ## Learn more
 

@@ -23,11 +23,11 @@ For commercial customers who buy products and services from Microsoft, billing p
 
 Billing profiles include the following information:
 
-- **Billing account** &mdash; Name of the billing account the profile is related to
-- **Payment methods** &mdash; Credit or debit cards, bank accounts, check, or wire transfer
-- **Contact information** &mdash; Billing address and a contact name
-- **Invoice settings** &mdash; Currency based on the country of the billing account, an optional PO number, and the option to receive invoices as email attachments
-- **Permissions** &mdash; Permissions that allow you to change the billing profile, pay bills, or use the payment method on the billing profile to make purchases
+- **Billing account** &ndash; Name of the billing account the profile is related to
+- **Payment methods** &ndash; Credit or debit cards, bank accounts, check, or wire transfer
+- **Contact information** &ndash; Billing address and a contact name
+- **Invoice settings** &ndash; Currency based on the country of the billing account, an optional PO number, and the option to receive invoices as email attachments
+- **Permissions** &ndash; Permissions that allow you to change the billing profile, pay bills, or use the payment method on the billing profile to make purchases
 
 Use billing profiles to control your purchases and customize your invoice. A monthly invoice is generated for the products bought with the
 billing profile. You can customize the invoice such as update the purchase order number and email invoice preference.
@@ -68,4 +68,4 @@ Roles on billing profiles have permissions to control purchases, and view and ma
 
 If you have questions or need help with your Azure charges, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
-If you have questions or need help with your billing profile in Microsoft 365 admin center, [contact support for business products](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products).
+If you have questions or need help with your billing profile in Microsoft 365 admin center, [contact support for business products](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).

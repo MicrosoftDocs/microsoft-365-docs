@@ -3,7 +3,7 @@ title: "Teams for highly regulated data"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/31/2019
+ms.date: 11/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -45,7 +45,19 @@ For a 1-page summary of this scenario, see the [Teams for highly regulated data 
 
 [![Teams for highly regulated data poster](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
-You can also download this poster as a [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) or [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17)-sized paper.
+
+
+<!--
+
+[Quick-Learn test (vertical): PDF](./media/secure-teams-highly-regulated-data-scenario/Click-Through-Test.pdf)
+
+[Quick-Learn test: PowerPoint](./media/secure-teams-highly-regulated-data-scenario/Click-Through-Test.pptx)
+
+[Horizontal PDF (Quick Start)](./media/secure-teams-highly-regulated-data-scenario/Sideways.pdf)
+
+--> 
+
 
 ## Phase 1: Configure a team for highly regulated data
 
@@ -112,7 +124,7 @@ Here’s the resulting configuration so far.
  
 ### Step 4: Create a retention label and DLP policy
 
-Use [these instructions](https://docs.microsoft.com/microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp) to:
+Use [these instructions](https://docs.microsoft.com/microsoft-365/security/office-365-security/deploy-teams-retention-dlp) to:
 
 1. Create and publish a retention label for highly regulated data (if needed).
 2. Configure the Team Site for the retention label created in step 1.
@@ -122,7 +134,7 @@ Here’s the resulting configuration so far.
 
 ![Step 4 of the secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
  
-### Step 5: Create the label or a sublabel of the highly regulated label
+### Step 5: Create a sensitivity label or a sublabel of the highly regulated sensitivity label
 
 Unlike a sensitivity label for highly regulated data that anyone can apply to any file, a secure team needs its own label or sublabel so that assigned files:
 
@@ -210,6 +222,16 @@ In the weeks after training:
   You can see which files have a label assigned by viewing a folder in SharePoint and adding the **Sensitivity** column through the **Show/hide columns** option of **Add column**.
 
 Retrain your users as needed.
+
+## Demonstrate this in a test environment
+
+To build out your own test environment to test teams for sensitive and highly confidential files, see [these instructions](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment). 
+
+![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
+
+## How the Contoso Corporation used a secure team for a top-secret project
+
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate. See how Contoso configured and drove the adoption of a [secure team](contoso-team-for-top-secret-project.md) for a top secret project to develop and bring to market a new set of products and services. 
 
 ## See also
 
