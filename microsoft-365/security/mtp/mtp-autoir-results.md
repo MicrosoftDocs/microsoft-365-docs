@@ -44,7 +44,7 @@ Use the Action center to view actions that are either pending approval (on the *
 
 2. In the navigation pane, choose **Action center**. 
 
-3. On either the **Pending** or **History** tab, select an item.
+3. On either the **Pending** or **History** tab, select an item. If you have the [necessary permissions](mtp-action-center.md#action-center-permissions), you can approve (or reject) pending actions.
 
 ### Open an investigation from an incident details page
 
