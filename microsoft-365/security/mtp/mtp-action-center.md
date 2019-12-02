@@ -43,6 +43,17 @@ The following table lists remediation actions that are currently supported in th
 > [!NOTE]
 > You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. 
 
+## Action center permissions
+
+[Automated investigation and remediation](mtp-autoir-actions.md) can take action on emails, forwarding rules, files, persistence mechanisms, and other artifacts found during investigations. To approve or reject pending actions that require explicit approval, you will need to be assigned certain roles on Azure AD and [Office 365](../office-365-security/permissions-in-the-security-and-compliance-center.md).
+
+| Azure AD role | Office 365 "Search & purge" role |  Tasks you can approve |
+|----|----|----|
+| Security administrator | Assigned | All tasks |
+| Security administrator | Not assigned | Block email, Delete forwarding rule |
+| Security operator, Security reader | Assigned | Delete emails and email clusters |
+| Security operator, Security reader | Not assigned | None |
+
 ## Visit the Action center
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
