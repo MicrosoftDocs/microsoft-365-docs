@@ -39,16 +39,7 @@ To review accounts with these roles, [view Permissions in Microsoft 365 security
 Access to specific functionality is determined by your [Azure AD role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Contact a global administrator if you need access to specific functionality that requires you or your user group be assigned a new role.
 
 ### Approve pending automated tasks
-[Automated investigation and remediation](mtp-autoir-actions.md) can take action on emails, forwarding rules, files, persistence mechanisms, and other artifacts found during investigations. To approve or reject pending actions that require explicit approval, you will need to be assigned certain roles on Azure AD and [Office 365](../office-365-security/permissions-in-the-security-and-compliance-center.md).
-
-| Azure AD role | Office 365 "Search & purge" role |  Tasks you can approve |
-|----|----|----|
-| Security administrator | Assigned | All tasks |
-| Security administrator | Not assigned | Block email, Delete forwarding rule |
-| Security operator, Security reader | Assigned | Delete emails and email clusters |
-| Security operator, Security reader | Not assigned | None |
-
-
+[Automated investigation and remediation](mtp-autoir-actions.md) can take action on emails, forwarding rules, files, persistence mechanisms, and other artifacts found during investigations. To approve or reject pending actions that require explicit approval, you must have certain roles assigned in Microsoft 365. To learn more, see [Action center permissions](mtp-action-center.md#action-center-permissions).
 
 ## Access to data
 Access to Microsoft Threat Protection data can be controlled using the scope assigned to user groups in Microsoft Defender ATP role-based access control (RBAC). If your access has not been scoped to a specific set of devices in the Microsoft Defender ATP, you will have full access to data in Microsoft Threat Protection. However, once your account is scoped, you will only see data about the devices in your scope.
