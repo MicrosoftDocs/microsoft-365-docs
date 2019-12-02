@@ -42,11 +42,11 @@ To share Azure ATP data with Microsoft Threat Protection, ensure that Microsoft 
 ## Turn off Microsoft Threat Protection
 To stop using Microsoft Threat Protection, go to **Settings** > **Microsoft Threat Protection** > **Opt-in / Opt-out** in Microsoft 365 security center. Unselect **Turn on Microsoft Threat Protection** and save the changes.
 
-Data will be permanently restored and corresponding features will be removed from Microsoft 365 security center.
+Data will be permanently deleted and corresponding features will be removed from Microsoft 365 security center.
 
 ## Get assistance
 
-Microsoft staff can help provision or deprovision the service and releated resources on your tenant. For assistance, [contact premier support](https://go.microsoft.com/fwlink/?LinkID=733758).
+Microsoft staff can help provision or deprovision the service and related resources on your tenant. For assistance, [contact premier support](https://go.microsoft.com/fwlink/?LinkID=733758).
 
 ## Related topics
 
