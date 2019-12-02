@@ -14,6 +14,19 @@ ms.localizationpriority: normal
 
 This topic lists new and updated topics in the [Microsoft Managed Desktop documentation](index.yml). "Updated" topics are those which have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+## November 2019
+New or changed topic | Description
+--- | ---
+[Work with insights](working-with-managed-desktop/insights.md) | New topic
+[Usage insights](working-with-managed-desktop/usage-insights.md) | New topic
+[Reliability insights](working-with-managed-desktop/reliability-insights.md) | New topic
+[Microsoft Managed Desktop devices](service-description/device-list.md) | Updated topic
+[Microsoft Managed Desktop main page](https://docs.microsoft.com/microsoft-365/managed-desktop/) | Updated topic
+[What is Microsoft Managed Desktop?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Updated topic
+[Get your users ready to use devices](get-started/get-started-devices.md) | Updated topic
+[Exceptions to the service plan](service-description/customizing.md) | Updated topic
+
+
 ## October 2019
 New or changed topic | Description
 --- | ---

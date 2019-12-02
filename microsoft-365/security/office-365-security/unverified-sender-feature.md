@@ -18,7 +18,7 @@ description: "To prevent phishing messages from reaching your mailbox, Outlook.c
 # Unverified Sender
 
 > [!NOTE] 
-> These updates are rolling out now, and might not be available yet for all users.
+> These updates are rolling out now, and might not be available yet for all users. This feature is supported for Enterprise outlook.com users. It is not currently available for consumer outlook.com.
 
 To prevent phishing messages from reaching your mailbox, Outlook.com and Outlook on the web verify that the sender is who they say they are and mark suspicious messages as junk email.
 
@@ -46,11 +46,11 @@ If you are an Office 365 customer you can manage this feature through the Securi
 
     ![Editing unauthenticated senders in the graphic interface.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
-- If an admin has identified a false positive, and a sender should not be receiving the unverified sender treatment they can take one of the following actions to add the sender to the Spoof Intelligence spoof allow list:
+- If an admin has identified a false positive, and a sender should not be receiving the unverified sender treatment, one of the following actions can be taken to add the sender to the Spoof Intelligence spoof allow list:
 		
-    - Add the domain pair through the Spoof Intelligence Insight. For more details, see Walkthrough: spoof intelligence insight
+    - Add the domain pair through the Spoof Intelligence Insight. For more details, see [Walkthrough: spoof intelligence insight](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight).
         		
-    - Add the domain pair through the PhishFilterPolicy cmdlet. For more details, see Set-PhishFilterPolicy and Anti-spoofing protection in Office 365
+    - Add the domain pair through the PhishFilterPolicy cmdlet. For more details, see [Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) and [Set up Office 365 ATP anti-phishing and anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
 
 Additionally, we do not apply the unverified sender treatment if it was delivered to the inbox via an admin allow list, including Email Transport Rules (ETRs), Safe Domain List (Anti-Spam Policy), Safe Sender List or a user has set this user as a “Safe Sender” in their inbox.
 

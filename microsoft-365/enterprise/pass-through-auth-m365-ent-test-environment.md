@@ -3,7 +3,7 @@ title: "Pass-through authentication for your Microsoft 365 test environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/13/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -73,13 +73,13 @@ In this phase, you configure Azure AD Connect on APP1 to use pass-through authen
 
 10.	Click **Pass-through authentication**. The **Pass-through authentication** pane lists the servers where your Authentication Agents are installed. You should see APP1 in the list. Close the **Pass-through authentication** pane.
 
-Next, test the ability to sign in to your Office 365 subscription with the <strong>user1@testlab.</strong>\<your public domain> user name of the User1 account.
+Next, test the ability to sign in to your subscription with the <strong>user1@testlab.</strong>\<your public domain> user name of the User1 account.
 
-1. From APP1, sign out of Office 365, and then sign in again, this time specifying a different account.
+1. From APP1, sign out, and then sign in again, this time specifying a different account.
 
 2. When prompted for a user name and password, specify <strong>user1@testlab.</strong>\<your public domain> and the User1 password. You should successfully sign in as User1.
 
-Notice that although User1 has domain administrator permissions for the TESTLAB AD DS domain, it is not an Office 365 global administrator. Therefore, you will not see the **Admin** icon as an option.
+Notice that although User1 has domain administrator permissions for the TESTLAB AD DS domain, it is not a global administrator. Therefore, you will not see the **Admin** icon as an option.
 
 Here is your resulting configuration:
 
@@ -101,5 +101,3 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 [Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
 
 [Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
-
-
