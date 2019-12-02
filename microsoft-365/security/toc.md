@@ -1,7 +1,7 @@
 # [Microsoft 365 security](index.yml)
 
 ## Get started
-### [Microsoft 365 Security for BDMs](Microsoft-365-security-for-bdm.md)
+### [Microsoft 365 security for BDMs](Microsoft-365-security-for-bdm.md)
 ### [Chief Information Security Officer (CISO) workshop training](./office-365-security/ciso-workshop.md)
 #### [Module 1 - Microsoft cybersecurity briefing](./office-365-security/ciso-workshop-module-1.md)
 #### [Module 2 - Security management](./office-365-security/ciso-workshop-module-2.md)
@@ -314,4 +314,4 @@
 
 
 
-## [Microsoft 365 Compliance](https://docs.microsoft.com/microsoft-365/compliance/)
+## [Microsoft 365 compliance](https://docs.microsoft.com/microsoft-365/compliance/)

@@ -39,7 +39,7 @@ To review accounts with these roles, [view Permissions in Microsoft 365 security
 Access to specific functionality is determined by your [Azure AD role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Contact a global administrator if you need access to specific functionality that requires you or your user group be assigned a new role.
 
 ### Approve pending automated tasks
-[Automated investigation and remediation](mtp-autoir-actions.md) can take action on emails, forwarding rules, files, persistence mechanisms, and other artifacts found during investigations. To approve or reject pending actions that require explicit approval, you will need to be assigned certain roles on Azure AD and [Office 365](../office-365-security/permissions-in-the-security-and-compliance-center).
+[Automated investigation and remediation](mtp-autoir-actions.md) can take action on emails, forwarding rules, files, persistence mechanisms, and other artifacts found during investigations. To approve or reject pending actions that require explicit approval, you will need to be assigned certain roles on Azure AD and [Office 365](../office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 | Azure AD role | Office 365 "Search & purge" role |  Tasks you can approve |
 |----|----|----|
