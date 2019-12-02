@@ -9,7 +9,7 @@ ms.collection: M365-modern-desktop
 ---
 
 # Usage insights
-This view provides usage metrics for your Microsoft Managed Desktop devices. 
+This view provides usage metrics for your Microsoft Managed Desktop devices. For these purposes, an app is considered "in use" if it is running and in focus.
 
 To view usage data, select the **Usage** tab.
 
