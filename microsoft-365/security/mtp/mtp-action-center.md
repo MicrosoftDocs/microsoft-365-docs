@@ -56,7 +56,7 @@ The following table lists remediation actions that are currently supported in th
 
 |Action | Role(s) needed |More information |
 |---|---|---|
-|Approve (or reject) actions on devices (endpoints) | | |
+|Approve (or reject) actions on devices (endpoints) |Either the **Security Administrator** role or another role with **Active remediation actions** permissions assigned in Azure AD |[Create and manage roles for role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) |
 | | | |
 | | | |
 
