@@ -45,9 +45,9 @@ The following table lists remediation actions that are currently supported in th
 
 ## Action center permissions
 
-[Automated investigation and remediation](mtp-autoir-actions.md) can take action on emails, forwarding rules, files, persistence mechanisms, and other artifacts found during investigations. To approve or reject pending actions that require explicit approval, you will need to be assigned certain roles on Azure AD and [Office 365](../office-365-security/permissions-in-the-security-and-compliance-center.md).
+[Automated investigation and remediation](mtp-autoir-actions.md) can take action on emails, forwarding rules, files, persistence mechanisms, and other artifacts found during investigations. To approve or reject pending actions that require explicit approval, you must have certain roles assigned in Azure Active Directory and the [Office 365 Security & Compliance Center](../office-365-security/permissions-in-the-security-and-compliance-center.md).
 
-| Azure AD role | Office 365 "Search & purge" role |  Tasks you can approve |
+| Azure AD role | Office 365 "Search & purge" role |  Actions you can approve (or reject) |
 |----|----|----|
 | Security administrator | Assigned | All tasks |
 | Security administrator | Not assigned | Block email, Delete forwarding rule |
