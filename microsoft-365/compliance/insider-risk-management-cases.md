@@ -67,7 +67,7 @@ The **Alerts** tab summarizes the current alerts included in the case. New alert
 - Alert risk severity
 - Time detected
 
-Select an alert from the queue to display the **Alert detail** page. 
+Select an alert from the queue to display the **Alert detail** page.
 
 Use the search control to search alert names for specific text and use the alert filter to sort cases by the following attributes:
 
@@ -96,7 +96,7 @@ The **User activity** tab is one of the most powerful tools for internal risk an
 
 The **Content explorer** tab allows risk analysts and investigators to review copies of all individual files and email messages associated with risk alerts. For example, if an alert is created when an employee downloads hundreds of files from SharePoint Online to a USB device and the activity triggers a policy alert, all the downloaded files for the alert are captured and copied to the insider risk management case from original storage sources. For all alerts, copies of data and message files are archived as a snapshot in time of the items, while maintaining the original files and messages in the storage sources. The copying of data and messages is transparent to the employee associated with the alert and to the owner of the content. The permission settings and access rights for the data are maintained for the copied content and messages and risk analysts and investigators need these permissions and rights if they need to open and view the files. Each file and message is automatically assigned a unique file ID in the insider risk management case for management purposes.
 
-The Content Explorer is a powerful tool with basic and advanced search and filtering features. To learn more about using the Content Explorer, see [Insider risk management Content Explorer](insider-risk-management-content-explorer.md).
+The content explorer is a powerful tool with basic and advanced search and filtering features. To learn more about using the content explorer, see [Insider risk management content explorer](insider-risk-management-content-explorer.md).
 
 ![Insider risk management case content explorer](media/insider-risk-temp-content-explorer.png)
 
@@ -135,7 +135,7 @@ To add a contributor to a case:
 
 ## Case actions
 
-Risk analysts and investigators can take action on a case in one of several methods, depending on the severity of the case, the history of risk of the employee, and the risk guidelines of your organization.
+Risk analysts and investigators can take action on a case in one of several methods, depending on the severity of the case, the history of risk of the employee, and the risk guidelines of your organization. In some situations, you may need to escalate a case to an employee or data investigation to collaborate with other areas of your organization and to dive deeper into risk activities. Insider risk management is tightly integrated with other Microsoft 365 compliance features to help you with end-to-end resolution management.
 
 ### Send a notice
 
@@ -149,15 +149,33 @@ To send a notice to the employee assigned to a case:
 2. Select a case, then select the **Send e-mail notice** button on the case action toolbar.
 3. On the **Send e-mail notice** dialog, select the **Choose a notice template** dropdown control to select the notice template for the notice. This pre-fills the other fields on the notice.
 4. Review the notice fields and update any field that needs changes.
-6. Select **Send** to send the notice to the employee or select **Cancel** close the dialog without sending the notice to the employee. All sent notices are added to the case notes queue on the **Case notes** dashboard.
+5. Select **Send** to send the notice to the employee or select **Cancel** close the dialog without sending the notice to the employee. All sent notices are added to the case notes queue on the **Case notes** dashboard.
 
 ### Escalate for data investigation
 
-Escalate the case for data investigation....
+Escalate the case for data investigation in situations where you need to address data spillage activities. Data investigations allow you to search for sensitive, malicious, or misplaced data across Microsoft 365 and to take appropriate action to remediate the data spillage. Creating a new data investigation from an insider risk management case automatically copies all alert activities in the data investigation case and allows reviewers to properly evaluate the extent and impact of any data spillage. To learn more about data investigation cases, see [Overview of data investigations in Microsoft 365](overview-data-investigations.md).
+
+To escalate a case to a data investigation:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+2. Select a case, then select the **Open investigation** button on the case action toolbar.
+3. Select **Escalate for data investigation**.
+4. On the **Escalate for data investigation** dialog, enter a name for the new data investigation. If needed, enter notes about the case and select **Escalate**.
+
+After the insider risk management case has been escalated to a new data investigation case, you can review the new case in the **Data investigations** area on the Microsoft 365 compliance center.
 
 ### Escalate for employee investigation
 
-Escalate the case employee investigation...
+Escalate the case for employee investigation in situations where additional legal review is needed for the employee's risk activity. This escalation opens a new Advanced eDiscovery case in your Microsoft 365 organization. Advanced eDiscovery provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external legal investigations. It also lets your legal team manage the entire legal hold notification workflow to communicate with custodians involved in a case. Assigning a reviewer as a custodian in an Advanced eDiscovery case created from an insider risk management case helps your legal team take appropriate action and manage content preservation. To learn more about Advanced eDiscovery cases, see [Overview of Advanced eDsicovery in Microsoft 365](overview-ediscovery-20.md).
+
+To escalate a case to an employee investigation:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
+2. Select a case, then select the **Open investigation** button on the case action toolbar.
+3. Select **Escalate for employee investigation**.
+4. On the **Escalate for employee investigation** dialog, enter a name for the new employee investigation. If needed, enter notes about the case and select **Escalate**.
+
+After the insider risk management case has been escalated to a new employee investigation case, you can review the new case in the **eDiscovery > Advanced** area on the Microsoft 365 compliance center.
 
 ### Resolve the case
 
