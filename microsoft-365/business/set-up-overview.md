@@ -13,6 +13,7 @@ localization_priority: Normal
 ms.collection: 
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -26,6 +27,12 @@ description: "Overview of the setup steps for Microsoft 365 Business."
 ---
 
 # Overview of setup
+
+Watch this video for an overview of Microsoft 365 Business setup.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Most of the setup steps can be done in the setup wizard, but the other options are also listed.
 
@@ -77,4 +84,6 @@ Most of the setup steps can be done in the setup wizard, but the other options a
 
     - If your business has a local Active Directory that contains some on-premises resources (such as file shares and printers), you can give your Azure AD-joined devices access to these resources by following the steps here: [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources.md).
 
-  
+## See also
+
+[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
