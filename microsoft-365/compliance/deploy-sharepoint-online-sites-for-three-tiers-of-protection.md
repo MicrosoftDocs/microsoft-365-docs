@@ -22,7 +22,7 @@ description: "Summary: Create and configure SharePoint Online team sites for var
 
 # Deploy SharePoint Online sites for three tiers of protection
 
-Use the steps in this article to design and deploy baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Protect SharePoint Online files with sensitivity labels](protect-sharepoint-online-files-with-sensitivity-label.md).
+Use the steps in this article to design and deploy baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Secure SharePoint Online sites and files](../security/office-365-security/secure-sharepoint-online-sites-and-files.md).
   
 ## Baseline SharePoint Online team sites
 
@@ -97,7 +97,7 @@ The members of the site, through group membership in one of the access groups, c
 
 ## See also
 
-[Protect SharePoint Online files with sensitivity labels](protect-sharepoint-online-files-with-sensitivity-label.md)
+[Secure SharePoint Online sites and files](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
 [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
