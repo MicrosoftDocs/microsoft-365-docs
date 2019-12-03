@@ -3,7 +3,7 @@ title: "Office 365 threat investigation and response"
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -42,8 +42,6 @@ Use the Threat dashboard (this is also referred to as the [Security dashboard](s
 ![Threat Dashboard](../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
 To view and use this dashboard, in the Office 365 Security &amp; Compliance Center, go to **Threat management** \> **Dashboard**.
-
-To learn more about 
   
 ### Threat Explorer
 
@@ -96,13 +94,13 @@ Office 365 threat investigation and response capabilities are included in Office
     
 5. Assign roles to people in your organization who will be working with the Office 365 Advanced Threat Protection. See [Give users access to the Office 365 Security &amp; Compliance Center](grant-access-to-the-security-and-compliance-center.md), and refer to the following table:<br/>
 
-  |**To do this activity...** <br/> |**You must have one of these roles** <br/> |  
+  |**To do this activity...** <br/> |**You must have these roles** <br/> |  
   |:-----|:-----|
-  |Use the Threat dashboard (or the new [Security dashboard](security-dashboard.md))<br/> View information about recent or current threats  <br/> |Office 365 Global Administrator  <br/> Security Administrator (assigned in the Security &amp; Compliance Center)  <br/> Security Reader (assigned in the Security &amp; Compliance Center)  <br/> |
-  |Use [Threat Explorer (and real-time detections)](threat-explorer.md) to analyze threats  <br/> |Office 365 Global Administrator  <br/> Security Administrator (assigned in the Security &amp; Compliance Center)  <br/> Security Reader (assigned in the Security &amp; Compliance Center)  <br/> |
-  |View Incidents (also referred to as Investigations) <br/> Add email messages to an incident  <br/> |Office 365 Global Administrator  <br/> Security Administrator (assigned in the Security &amp; Compliance Center)  <br/> Security Reader (assigned in the Security &amp; Compliance Center)  <br/> |
-  |Trigger email actions in an incident  <br/> Find and delete suspicious email messages  <br/> |Office 365 Global Administrator or Security Administrator  <br/> One of the roles above and Search and Purge (assigned in the Security &amp; Compliance Center)  <br/> |
-  |Integrate Office 365 Advanced Threat Protection Plan 2 with Microsoft Defender ATP  <br/> Integrate Office 365 Advanced Threat Protection Plan 2 with a SIEM server  <br/> |Office 365 Global Administrator  <br/> Security Administrator (assigned in the Security &amp; Compliance Center)  <br/> Appropriate role assigned in additional applications (such as Microsoft Defender Security Center or a SIEM server)  <br/> |
+  |Use the Threat dashboard (or the new [Security dashboard](security-dashboard.md))<br/> View information about recent or current threats  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/> |
+  |Use [Threat Explorer (and real-time detections)](threat-explorer.md) to analyze threats  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/> |
+  |View Incidents (also referred to as Investigations) <br/> Add email messages to an incident  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/>  <br/> |
+  |Trigger email actions in an incident  <br/> Find and delete suspicious email messages  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>--- and ---<br/>- **Search and Purge** (assigned only in the Office 365 Security &amp; Compliance Center)  <br/> |
+  |Integrate Office 365 Advanced Threat Protection Plan 2 with Microsoft Defender ATP  <br/> Integrate Office 365 Advanced Threat Protection Plan 2 with a SIEM server  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>--- and ---<br/>An appropriate role assigned in additional applications (such as Microsoft Defender Security Center or a SIEM server)  <br/> |
    
 For information about roles, role groups, and permissions, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
