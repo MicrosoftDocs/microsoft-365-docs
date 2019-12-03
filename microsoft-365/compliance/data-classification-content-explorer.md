@@ -28,10 +28,9 @@ Content explorer is a current snapshot of the items that have a sensitivity labe
 
 A [DLP policy](data-loss-prevention-policies.md) can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes [definitions for many common sensitive information types](what-the-sensitive-information-types-look-for.md) across many different regions that are ready for you to use, such as a credit card number, bank account numbers, national ID numbers, and passport numbers.
 
-
 ### Sensitivity labels
 
-A [sensitivity label](sensitivity-labels.md) is simply a tag that indicates the value of the item to your org. It can be applied manually, or automatically. Once applied it gets embedded in the document and will follow it everywhere it goes. Sensitivity label enables various protective behaviors, such as mandatory watermarking or encryption. With end point protection enabled you can even prevent an item from leaving your organizational control.
+A [sensitivity label](sensitivity-labels.md) is simply a tag that indicates the value of the item to your organization. It can be applied manually, or automatically. Once applied it gets embedded in the document and will follow it everywhere it goes. Sensitivity label enables various protective behaviors, such as mandatory watermarking or encryption. With end point protection enabled you can even prevent an item from leaving your organizational control.
 
 ### Retention labels
 
