@@ -39,7 +39,7 @@ There are three ways to get Microsoft 365 Business:
 
 ## Sign up steps
 
-Watch this video for a quick overview of the sign-up process.
+Watch this video for a quick overview of the sign-up process.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
