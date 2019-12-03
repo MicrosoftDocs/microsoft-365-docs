@@ -40,9 +40,6 @@ The following table lists remediation actions that are currently supported in th
 |---------|---------|
 |Quarantine file<br/>Remove registry key<br/>Kill process <br/>Stop service <br/>Remove registry key <br/>Disable driver <br/>Remove scheduled task      |Soft delete emails<br/>Block URL (time-of-click)<br/>Turn off external mail forwarding<br/>Soft delete emails          |
 
-> [!NOTE]
-> You must be a global administrator, security administrator, security operator, or security reader to perform the tasks described in this article. 
-
 ## Action center permissions
 
 [Automated investigation and remediation](mtp-autoir-actions.md) capabilities can take appropriate actions on email messages, forwarding rules, files, persistence mechanisms, and other artifacts found during investigations. Some actions require approval by your organization's security operations team to proceed. Permissions to approve (or reject) pending actions in the Action center require certain roles to be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) (Azure AD), the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac), the [Office 365 Security & Compliance Center](../office-365-security/permissions-in-the-security-and-compliance-center.md), and/or the [Exchange admin center](https://docs.microsoft.com/Exchange/exchange-admin-center). The following table summarizes roles and permissions needed for certain Action center tasks.
@@ -79,6 +76,9 @@ The following table lists remediation actions that are currently supported in th
 
 ## Next steps 
 
-[Learn about hunting in Microsoft Threat Protection](hunting.md)
+- [Learn more about incidents in Microsoft Threat Protection](incidents-overview.md)
 
-[Learn about incidents in Microsoft Threat Protection](incidents-overview.md)
+- [View the results of an automated investigation](mtp-autoir-results.md)
+
+- [Learn about hunting in Microsoft Threat Protection](hunting.md)
+
