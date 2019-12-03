@@ -38,7 +38,7 @@ The following table lists remediation actions that are currently supported in th
 
 |Endpoints remediation actions  |Email remediation actions  |
 |---------|---------|
-|Quarantine file<br/>Remove registry key<br/>Kill process <br/>Stop service <br/>Remove registry key <br/>Disable driver <br/>Remove scheduled task      |Soft delete emails<br/>Block URL (time-of-click)<br/>Turn off external mail forwarding<br/>Soft delete emails          |
+|Quarantine file<br/>Remove registry key<br/>Kill process <br/>Stop service <br/>Remove registry key <br/>Disable driver <br/>Remove scheduled task      |Soft delete email messages<br/>Block URL (time-of-click)<br/>Turn off external mail forwarding<br/>Soft delete emails          |
 
 ## Action center permissions
 
