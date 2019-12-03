@@ -73,11 +73,6 @@ While an investigation is running, any other related alerts that arise are added
     - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) configured
     - [MCAS integrated with Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration)
 
-- Identity requirements:
-    - [User accounts synced to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)
-    - [Azure Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) enabled
-    - [User risk policy](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-user-risk-policy) configured
-
 - Windows machine requirements:  
     - Windows 10, version 1709 or later installed (To learn more, see [Windows 10 release information](https://docs.microsoft.com/windows/release-information/).)
     - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) configured
