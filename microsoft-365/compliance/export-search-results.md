@@ -40,10 +40,10 @@ Exporting the results of a Content Search involves preparing the results, and th
   - Microsoft .NET Framework 4.7
     
 - You have to use one of the following supported browsers to run the eDiscovery Export Tool<sup>1</sup>:
-    
+
   - Microsoft Edge <sup>2</sup>
-         
-  OR
+  
+    OR
 
   - Microsoft Internet Explorer 10 and later versions
     

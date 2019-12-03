@@ -40,13 +40,13 @@ When you export a report, it's downloaded to a folder that has the same name as 
   - Microsoft .NET Framework 4.7
     
 - You have to use one of the following supported browsers to run the eDiscovery Export Tool<sup>1</sup>:
-    
+
   - Microsoft Edge <sup>2</sup>
-         
-  OR
+
+    OR
 
   - Microsoft Internet Explorer 10 and later versions
-    
+
   > [!NOTE]
   > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
   > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the Office 365 eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
