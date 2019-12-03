@@ -3,7 +3,7 @@ title: "Automated incident response (AIR) in Office 365"
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -22,7 +22,7 @@ Automated incident response (AIR) capabilities enable you to run automated inves
 - To get started using AIR, see [Automatically investigate and respond to threats in Office 365](office-365-air.md).
 
 > [!NOTE]
-> You must be a global administrator, security administrator, security operator, or security reader to access AIR capabilities. To learn more about these permissions, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+> You must be a global administrator, security administrator, security operator, or security reader to access AIR capabilities. These roles can be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). To learn more about permissions for Office 365 security and compliance features, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## The overall flow of AIR
 
@@ -42,24 +42,22 @@ The following sections provide more details about AIR, including details about a
 
 [Alerts](../../compliance/alert-policies.md#viewing-alerts) represent triggers for security operations team workflows for incident response. Prioritizing the right set of alerts for investigation, while making sure no threats are unaddressed is challenging. When investigations into alerts are performed manually, Security Operations teams must hunt and correlate entities (e.g. content, devices and users) at risk from threats. Such tasks and workflows are very time consuming and involve multiple tools and systems. With AIR, investigation and response are automated into key security and threat management alerts that trigger your security response playbooks automatically. 
 
-In the initial release of AIR (beginning April 2019), alerts generated from following single events alert policies are auto-investigated. 
+In the initial release of AIR (beginning April 2019), alerts generated from the following kinds of single-event alert policies are auto-investigated:  
 
 - A potentially malicious URL click was detected
-
 - Email reported by user as phish*
-
 - Email messages containing malware removed after delivery*
-
 - Email messages containing phish URLs removed after delivery*
-
 - Suspicious email sending patterns detected#
-
 - User restricted from sending email#
 
 > [!NOTE]
 > The alerts marked with an asterisk (*) are assigned an *Informational* severity in the respective alert policies within the Security & Compliance Center, with email notifications turned off. Email notifications can be turned on through [Alert policy configuration](../../compliance/alert-policies.md#alert-policy-settings). Alerts marked with a hash (#) are generally available alerts associated with public preview playbooks.
 
-To view alerts, in the Security & Compliance Center, choose **Alerts** > **View alerts**. Select an alert to view its details, and from there, use the **View investigation** link to go to the corresponding [investigation](#investigation-graph). Note that informational alerts are hidden in the alert view by default. To see them, you need to change the alert filtering to include informational alerts.
+To view alerts, in the Security & Compliance Center, choose **Alerts** > **View alerts**. Select an alert to view its details, and from there, use the **View investigation** link to go to the corresponding [investigation](#investigation-graph). 
+
+> [!NOTE]
+> Informational alerts are hidden in the alert view by default. To see them, change the alert filtering to include informational alerts.
 
 If your organization manages your security alerts through a alert management system, service management system, or Security Information and Event Management (SIEM) system, you can send Office 365 alerts to that system via either email notification or via the [Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). The investigation alert notifications via email or API include links to access the alerts in the Security & Compliance Center, enabling the assigned security administrator to navigate quickly to the investigation.
 
@@ -303,6 +301,15 @@ Office 365 AIR is included in the following subscriptions:
 If you don't have any of these subscriptions, [start a free trial](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US).
 
 To learn more about feature availability, visit the [Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+
+## Required permissions to use AIR capabilities
+
+Permissions are granted through certain roles, such as those that are described in the following table: 
+
+|Task |Role(s) required |
+|--|--|
+|To set up AIR features |One of the following: <br/>- **Global Administrator**<br/>- **Security Administrator** <br/>These roles can be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
+|To approve or reject recommended actions|One of the following (these roles can be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)):<br/>- **Global Administrator** <br/>- **Security Administrator**<br/>- **Security Reader** <br/>--- and ---<br/>- **Search and Purge** (this role is assigned only in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center))
 
 ## Next steps
 
