@@ -40,10 +40,10 @@ conceptualContent:
   #Card
     - title: Set up Microsoft 365 Business
       links:
-        - url: https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1
-          itemType: video
+        - url: set-up.md
+          itemType: how-to-guide
           text: 1. Run the setup wizard
-        - url: protection-settings-for-windows-10-pcs.md
+        - url: secure-win-10.pcs.md
           itemType: how-to-guide
           text: 2. Secure your PCs
         - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
