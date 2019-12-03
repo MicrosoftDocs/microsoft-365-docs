@@ -41,11 +41,11 @@ When you export a report, it's downloaded to a folder that has the same name as 
     
   - A supported browser<sup>1</sup>:
     
-         - Microsoft Edge <sup>2</sup>
+    - Microsoft Edge <sup>2</sup>
          
-         OR
+    OR
 
-         - Microsoft Internet Explorer 10 and later versions
+    - Microsoft Internet Explorer 10 and later versions
     
     > [!NOTE]
     > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>

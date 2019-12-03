@@ -41,11 +41,11 @@ Exporting the results of a Content Search involves preparing the results, and th
     
   - A supported browser<sup>1</sup>:
     
-         - Microsoft Edge <sup>2</sup>
+    - Microsoft Edge <sup>2</sup>
          
-         OR
+    OR
 
-         - Microsoft Internet Explorer 10 and later versions
+    - Microsoft Internet Explorer 10 and later versions
     
     > [!NOTE]
     > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
