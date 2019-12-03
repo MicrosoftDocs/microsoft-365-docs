@@ -1,0 +1,32 @@
+- name: Microsoft 365 security
+  href: index.yml
+- name: Get started
+  items:  
+	- name: Microsoft 365 security for BDMs
+      href: microsoft-365-security-for-bdm.md
+	- name: Secure score
+	  href: microsoft-secure-score	- name: Secure score (preview)
+	  href: microsoft-secure-score    - name: Chief Information Security Officer (CISO) workshop training
+		-items: 
+			- name: Chief Information Security Officer (CISO) workshop training
+			  href: ciso-workshop.md			- name: CISO Workshop Module 1: Microsoft Cybersecurity Briefing			  href: ciso-workshop-module-1.md			- name:CISO Workshop Module 2: Security Management			  href: ciso-workshop-module-2.md			- name: CISO Workshop Module 3: Identity and Zero Trust User Access			  href: ciso-workshop-module-3.md			- name: CISO Workshop Module 4a: Threat Protection Strategy, Part I			  href: ciso-workshop-module-4.md			- name: CISO Workshop Module 4b: Threat Protection Strategy, Part II			  href: ciso-workshop-module-4b.md			- name: CISO Workshop Module 5: Information protection			  href: ciso-workshop-module-5.md	- name: Identity and access configurations
+		-items: 
+			- name: Identity and device access configurations
+			  href: microsoft-365-policies-configurations.md
+			- name: Prerequisite work
+			  href: identity-access-prerequisites.md
+			- name: Common identity and device access
+			  href: identity-access-policies.md
+			- name: Policies for guest and external users
+			  href: identity-access-policies-guest-access.md
+			- name: Recommended Teams access policies
+			  href: teams-access-policies.md
+			- name: Recommended Exchange Online access policies
+			  href: secure-email-recommended-policies.md			- name: Recommended SharePoint Online access policies
+			  href: sharepoint-file-access-policies.md	- name: Microsoft Threat Protection
+		-items: 
+			- name: Overview
+				- items:
+					- name: What is Microsoft Threat Protection?
+					  href: microsoft-threat-protection.md					- name: Microsoft 365 security center					  href: overview-security-center.md					- name: Microsoft 365 security prerequisites					  href: prerequisites.md			- name: How-to guides				- items:					- name: 
+			 
