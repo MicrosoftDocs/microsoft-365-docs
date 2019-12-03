@@ -29,6 +29,7 @@ sections:
       html: <p>Detailed description of all parts of Microsoft Managed Desktop</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
+        alt: ""
       title: Service Description
     - href: get-ready/index.md
       html: <p>All the steps to get your environment and organization ready to work with the service</p>
