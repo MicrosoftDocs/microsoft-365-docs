@@ -43,7 +43,7 @@ conceptualContent:
         - url: set-up.md
           itemType: how-to-guide
           text: 1. Run the setup wizard
-        - url: secure-win-10.pcs.md
+        - url: secure-win-10-pcs.md
           itemType: how-to-guide
           text: 2. Secure your PCs
         - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
