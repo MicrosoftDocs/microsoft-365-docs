@@ -20,7 +20,7 @@ When a new Microsoft Managed Desktop device is being set up, we ensure that it h
 >[!NOTE]
 >To avoid conflicts, do not alter these policies.
 
-Devices will arrive with a signature image, and then join the Azure Active Directory domain when the first user logs in. The device will automatically install required policies and applications without any IT intervention needed.
+Devices will arrive with a signature image, and then join the Azure Active Directory domain when the first user signs in. The device will automatically install required policies and applications without any intervention from your IT personnel.
 
 ## Default policies
 
