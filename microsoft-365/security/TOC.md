@@ -40,9 +40,10 @@
 
 #### [Automated investigation and remediation]()
 ##### [Overview](mtp/mtp-autoir.md)
+##### [The Action center](mtp/mtp-action-center.md)
 ##### [Results and details of an automated investigation](mtp/mtp-autoir-results.md)
 ##### [Approve or reject actions related to automated investigation and remediation](mtp/mtp-autoir-actions.md)
-##### [The Action center in Microsoft 365](mtp/mtp-action-center.md)
+
 
 #### [Advanced hunting]()
 ##### [Advanced hunting overview](mtp/advanced-hunting-overview.md)
