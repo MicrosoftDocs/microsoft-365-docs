@@ -42,7 +42,7 @@ The following table lists remediation actions that are currently supported in th
 |---------|---------|
 |Quarantine file<br/>Remove registry key<br/>Kill process <br/>Stop service <br/>Remove registry key <br/>Disable driver <br/>Remove scheduled task      |Soft delete email messages or clusters<br/>Block URL (time-of-click)<br/>Turn off external mail forwarding          |
 
-## Action center permissions
+## Required permissions for Action center tasks
 
 The following table summarizes roles and permissions needed for certain Action center tasks.
 
