@@ -30,9 +30,9 @@ ms.custom: autoir
 
 ![Action Center](../images/air-actioncenter.png)
 
-The Action center provides a view of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and [resulting verdict](mtp-autoir-results.md#remediation-actions-following-automated-investigation), remediation actions occur automatically or upon approval by your organization’s security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. This provides a "single pane of glass" experience for both approving pending remediation actions and viewing an audit log of already approved remediation actions across Microsoft Threat Protection. 
+The Action center provides a view of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and [resulting verdict](mtp-autoir-results.md#remediation-actions-following-automated-investigation), remediation actions occur automatically or upon approval by your organization’s security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
 
-The Action center not only enables your security operations team to operate more effectively and efficiently, it also provides a more comprehensive view of Microsoft Threat Protection at work for your organization. 
+The Action center provides a "single pane of glass" experience for both approving pending remediation actions and viewing an audit log of already approved remediation actions across Microsoft Threat Protection. This enables your security operations team to operate more effectively and efficiently, with a more comprehensive view of Microsoft Threat Protection at work for your organization. 
 
 ## Remediation actions
 
@@ -44,7 +44,7 @@ The following table lists remediation actions that are currently supported in th
 
 ## Required permissions for Action center tasks
 
-To approve or reject pending actions in the Action center, you must be assigned certain roles and permissions, as follows:
+To approve or reject pending actions in the Action center, you must be assigned the following roles and permissions:
 - **Security Administrator** or **Security Reader** role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 - **Active remediation actions** permissions assigned in the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)
 - **Search and Purge** role assigned in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
