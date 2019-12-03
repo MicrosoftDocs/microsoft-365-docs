@@ -44,18 +44,13 @@ The following table lists remediation actions that are currently supported in th
 
 ## Required permissions for Action center tasks
 
-The following table summarizes roles and permissions needed for certain Action center tasks.
-
-|Action(s) | Role(s) needed |More information |
-|---|---|---|
-|Approve (or reject) actions on devices (endpoints) |**One** of the following: <br/>- **Security Administrator** role assigned in Azure AD<br/>- A role with **Active remediation actions** permissions assigned in the Microsoft Defender Security Center |[Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/><br/>[Create and manage roles for role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) |
-|Soft delete email messages or email clusters |**Both** of the following:<br/>- **Security Administrator** role assigned in Azure AD<br/>- **Search and Purge** role assigned in the Office 365 Security & Compliance Center |[Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/><br/>[Permissions for threat investigation and response in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti#how-do-we-get-these-capabilities) |
-|Block specific URLs when clicked|**Security Administrator** role assigned in Azure AD<br/>--- AND ---<br/>**One** of the following assigned in the Exchange admin center:<br/>- **Organization management** role<br/>- **Security Administrator** role<br/>- **Hygiene Management** role | [Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/><br/>[Role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) |
-|Turn off external email forwarding  |**Both** of the following:<br/>- **Security Administrator** role assigned in Azure AD<br/>- **Organization management** role assigned in the Exchange admin center|[Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/><br/>[Role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)|
-
+To approve or reject pending actions in the Action center, you must be assigned certain roles and permissions, as follows:
+- **Security Administrator** or **Security Reader** role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+- **Active remediation actions** permissions assigned in the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)
+- **Search and Purge** role assigned in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
 
 > [!NOTE]
-> Users who have the **Global Administrator** role assigned in Azure AD can approve or reject any pending action in the Action center. However, as a best practice, your organization should limit the number of people who have the Global Administrator role assigned. We recommend using the roles listed in the table above for Action center permissions.
+> Users who have the **Global Administrator** role assigned in Azure AD can approve or reject any pending action in the Action center. However, as a best practice, your organization should limit the number of people who have the Global Administrator role assigned. We recommend using the roles listed above for Action center permissions.
 
 ## Visit the Action center
 
