@@ -39,16 +39,15 @@ Most of the setup steps can be done in the setup wizard, but the other options a
         - You can also [add users later](add-users-m365b.md) in the admin center.
 ## Step 2: Set up security policies and configure devices 
 
-  - Use the [Setup wizard](set-up.md#protect-data-and-devices) to configure device and security policies. 
+  - Use the [Setup wizard](set-up.md#protect-your-organization) to configure device policies. 
   - You can also add more or edit them later in the [admin center](view-policies-and-devices.md) and in the [Intune portal](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
-  - In addition to the security settings in the setup wizard, you can increase your security by adding the following settings:
+  - The setup wizard will also set up basic threat protection and data loss prevention settings.
+  
+  In addition to the security settings in the setup wizard, you can increase your security by adding the following settings:
 
       - **Email malware protection**
-      - **Advanced Threat Protection (ATP) Safe links**
-      - **ATP Safe Attachments**
       - **ATP anti-phishing**
       - **Exchange Online Archiving**
-      - **Data Loss Prevention (DLP)**
       - **Azure Information Protection (Plan1**)
 
           To get started see, [set up advanced security policies](set-up-advanced-security.md).
@@ -57,10 +56,12 @@ Most of the setup steps can be done in the setup wizard, but the other options a
 
 ## Step 3: Set up and manage Windows 10 devices
 
-   When you join a Windows 10 device to Azure AD, the policies you set up in [Step 2](#step-2-set-up-security-policies-and-configure-devices) get applied to it.
+After you run the set up wizard, you will want to proctect all the Windwos 10 computers in your organization.
+  
+- Windows 10 Pro is a [prerequisite](pre-requisites-for-data-protection.md) for Microsoft 365 Business, but if you have Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your subscription entitles you to an [upgrade to  Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
+- Follow the steps in [secure Windows 10 PCs](secure-win-10-pcs.md) to set up policies for Windows 10 devices.
 
-   - Windows 10 Pro is a [prerequisite](pre-requisites-for-data-protection.md) for Microsoft 365 Business, but if you have Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your subscription entitles you to an [upgrade to  Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
-    - Use the [Setup wizard](set-up.md#protect-data-and-devices) to configure policies for Windows 10 devices.
+When you join a Windows 10 device to Azure AD, the policies you set for Windows 10 computers get applied to it.
 
 ## Step 4: Install Office 365 Business
 - You can automatically install Office in the Windows devices by using the [setup wizard](set-up.md#deploy-office-365-client-apps).
