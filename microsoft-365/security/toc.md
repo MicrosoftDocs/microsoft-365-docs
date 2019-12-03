@@ -30,6 +30,7 @@
 
 #### [Turn on Microsoft Threat Protection](mtp/mtp-enable.md)
 #### [Manage access](mtp/mtp-permissions.md)
+#### [Set time zone](mtp/mtp-time-zone.md)
 
 #### [Incidents]()
 ##### [Overview](mtp/incidents-overview.md)
