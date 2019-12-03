@@ -36,6 +36,7 @@ The Action center provides a "single pane of glass" experience for tasks, such a
 - Approving pending remediation actions;
 - Viewing an audit log of already approved remediation actions; and
 - Reviewing completed remediation actions.
+
 With the Action center, your security operations team can operate more effectively and efficiently, with a comprehensive view of Microsoft Threat Protection at work.
 
 ## Remediation actions
