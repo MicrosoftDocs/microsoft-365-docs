@@ -32,7 +32,7 @@ Microsoft Threat Protection applies correlation analytics and aggregates all rel
 The **Incidents queue** shows a collection of incidents that were flagged from across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
 
 
-![Image of incidents queue](../images/incidents-queue.png) **IMAGE TO BE UPDATED**
+![Image of incidents queue](../images/incidents-queue.png) 
 
 By default, the queue in Microsoft 365 security center displays incidents seen in the last 30 days, with the most recent incident showing at the top of the list, helping you see the most recent incidents first.
 
