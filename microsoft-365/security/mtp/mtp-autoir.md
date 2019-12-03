@@ -36,7 +36,7 @@ AIR enables your security operations team to dramatically increase your organiza
 
 1.	Determining whether a threat requires action;
 
-2.	Performing necessary remediation actions;
+2.	Performing (or recommending) any necessary remediation actions;
 
 3.	Determining what additional investigations should occur; and
 
@@ -44,8 +44,7 @@ AIR enables your security operations team to dramatically increase your organiza
 
 ## The automated investigation process
 
-**Alert** > **incident** > **automated investigation** > **remediation actions**
-
+**Alert** > **incident** > **automated investigation** > **verdict** > **remediation action**
 
 At a high level, a triggered alert creates an incident, which can start an automated investigation. That investigation can result in one or more remediation actions. In Microsoft Threat Protection, each automated investigation correlates signals across Azure Advanced Threat Protection (Azure ATP), Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP), and Office 365 Advanced Threat Protection (Office 365 ATP), as summarized in the following table: 
 
