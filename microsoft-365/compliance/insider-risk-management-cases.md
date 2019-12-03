@@ -21,7 +21,7 @@ Cases are the heart of insider risk management and allow you to deeply investiga
 The insider risk management case dashboard allows you to view and take action on cases. Each report widget on the dashboard displays information for last 30 days.
 
 - **Active cases**: The total number of active cases under investigation.
-- **Cases over time**: The total number of cases created, sorted Active and Closed status.
+- **Cases over time**: The total number of cases created, sorted by *Active* and *Closed* status.
 - **Statistics**: A summary of useful case statistics:
     - Average time of active cases.
 
@@ -38,8 +38,8 @@ The case queue lists all active and closed cases for your organization, in addit
 Use the search control to search case names for specific text and use the case filter to sort cases by the following attributes:
 
 - Status
-- Time case opened, start and end dates
-- Last updated, start and end dates
+- Time case opened, start date, and end date
+- Last updated, start date, and end date
 
 ## Investigate a case
 
@@ -47,7 +47,7 @@ Deeper investigation into insider risk management alerts is critical to taking p
 
 ### Case overview
 
-The **Case overview** tab summarizes the alert activity and risk level history for the case. The **Alerts** widget shows the policy matches for the case, including the status of the alert, the alert risk severity, and when the alert was detected. The **Risk level history** chart displays the user risk level over the last 30 days. The line chart allows analysts and investigators to quick see the trend in overall user risk over time. The **risk activity content** widget summarizes the types of data and content contained in alerts added to the case. This gives an all-up view of the entire data and content set at risk in the case.
+The **Case overview** tab summarizes the alert activity and risk level history for the case. The **Alerts** widget shows the policy matches for the case, including the status of the alert, the alert risk severity, and when the alert was detected. The **Risk level history** chart displays the user risk level over the last 30 days. The line chart allows analysts and investigators to quickly see the trend in overall user risk over time. The **Risk activity content** widget summarizes the types of data and content contained in alerts added to the case. This widget gives an all-up view of the entire data and content set at risk in the case.
 
 The **Case details** pane is available on all case management tabs and summarizes the case details for risk analysts and investigators. It includes the following areas:
 
@@ -73,7 +73,7 @@ Use the search control to search alert names for specific text and use the alert
 
 - Status
 - Risk severity
-- Time detected, start and end dates
+- Time detected, start date, and end date
 
 ### User activity
 
@@ -148,7 +148,7 @@ To send a notice to the employee assigned to a case:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Send e-mail notice** button on the case action toolbar.
-3. On the **Send e-mail notice** dialog, select the **Choose a notice template** dropdown control to select the notice template for the notice. This pre-fills the other fields on the notice.
+3. On the **Send e-mail notice** dialog, select the **Choose a notice template** dropdown control to select the notice template for the notice. This selection pre-fills the other fields on the notice.
 4. Review the notice fields and update any field that needs changes.
 5. Select **Send** to send the notice to the employee or select **Cancel** close the dialog without sending the notice to the employee. All sent notices are added to the case notes queue on the **Case notes** dashboard.
 

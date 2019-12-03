@@ -38,13 +38,13 @@ You can triage alerts into one of the following statuses:
 
 Alert risk scores are automatically calculated from several risk activity attributes. These attributes include the type of risk activity, the number and frequency of the activity occurrence, the history of user risk activity, and the addition of activity risks that may boost the seriousness of the activity. The alert risk score drives the programmatic assignment of a risk severity level for each alert and cannot be customized. If alerts remain untriaged and risk activities continue to accrue to the alert, the risk severity level can increase. Risk analysts and investigators can use the alert risk severity to help triage alerts in accordance to your organization's risk policies and standards. The alert risk severity levels are:
 
-- **High**: The activity and signals for the alert pose significant risk. The associated risk activities are serious, repetitive, and corelate strongly to other other significant risk factors.
-- **Medium**: The activity and signals for the alert pose a moderate risk. The associated risk activities are moderate, somewhat frequent, and have some correlation to other risk factors.
+- **High**: The activity and signals for the alert pose significant risk. The associated risk activities are serious, repetitive, and corelate strongly to other significant risk factors.
+- **Medium**: The activity and signals for the alert pose a moderate risk. The associated risk activities are moderate, frequent, and have some correlation to other risk factors.
 - **Low**: The activity and signals for the alert pose a minor risk. The associated risk activities are minor, more infrequent, and do not corelate to other significant risk factors.
 
 ## Filter alerts
 
-Depending on the number and type of active insider risk management policies in your organization, reviewing a large queue of alerts can be challenging. Using alert filters can help analysts and investigators sort alerts by several attributes. To filter alerts on the alerts dashboard, select the **Filter** control. You can filter alerts by one or more attribbutes:
+Depending on the number and type of active insider risk management policies in your organization, reviewing a large queue of alerts can be challenging. Using alert filters can help analysts and investigators sort alerts by several attributes. To filter alerts on the alerts dashboard, select the **Filter** control. You can filter alerts by one or more attributes:
 
 - **Status**: Select one or more status values to filter the alert list. The options are *Confirmed*, *Dismissed*, *Needs review*, and *Resolved*.
 - **Severity**: Select one or more alert risk severity levels to filter the alert list. The options are *High*, *Medium*, and *Low*.
@@ -61,7 +61,7 @@ To triage an insider risk alert, complete the following steps:
         - **Status**: The status of the alert
         - **Time detected**: The length of time since the alert was generated.
         - **Policy matches**: The policies that generated the alert are listed. Each policy is listed as a link to the policy details.
-        - **Severity**: The current alert risk severity level, listed as high, medium, or low. This level may increase or decrease over time if not triaged.
+        - **Severity**: The current alert risk severity level, listed as high, medium, or low. The severity level may increase or decrease over time if the alert is not triaged.
         - **Active case**: If confirmed, the case generated from the alert is listed. For new alerts, the Active case has a *None* value.
     - **User activity**: This tab displays the activity history for the user associated with the alert. This history includes other alerts and activities related to risk signals defined in the template assigned to the policy for this alert. This history allows risk analysts and investigators to factor in any past risky behavior for the employee as part of the triage process. 
     - **User profile**: This tab displays the general information about the employee assigned to the alert. If pseudonymize is active for the solution, employee details are not shown.

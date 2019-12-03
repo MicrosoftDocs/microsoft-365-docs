@@ -14,9 +14,9 @@ ms.collection: m365-security-compliance
 
 # Insider risk management notice templates (preview)
 
-Insider risk management notice templates allow you to send email messages to employees when their activities generate an insider risk policy match and alert. In most cases, employee actions that generate alerts are the result of mistakes or inadvertent activities without ill intent. Notices serve as simple reminders to employees to be more careful or to provide links or information for refresher training or corporate policy resources. Notices can be an important part of your internal compliance training program and can help create a documented audit trail for employees with recurring risk activities.
+Insider risk management notice templates allow you to send email messages to employees when their activities generate a policy match and alert. In most cases, employee actions that generate alerts are the result of mistakes or inadvertent activities without ill intent. Notices serve as simple reminders to employees to be more careful or to provide links or information for refresher training or corporate policy resources. Notices can be an important part of your internal compliance training program and can help create a documented audit trail for employees with recurring risk activities.
 
-You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices can only be sent to the employee email address associated with the policy match that generated the specific alert for remediation. When selecting a notice template to apply to a policy violation as part of the remediation workflow, you can choose to accept the field values defined in the template or overwrite the fields as needed.
+Create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices can only be sent to the employee email address associated with the specific alert being reviewed. When selecting a notice template to apply to a policy match, you can choose to accept the field values defined in the template or overwrite the fields as needed.
 
 ## Notice template dashboard
 
@@ -65,7 +65,7 @@ To manage an existing insider risk management notice template, complete the foll
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Notices** tab.
 2. On the notice dashboard, select the notice you want to manage.
 3. On the notice details page, select **Edit**
-4. On the **Create a new notice template** page, you can edit the following fields::
+4. On the **Create a new notice template** page, you can edit the following fields:
     - **Template name (required)**: Enter a new friendly name for the notice. This name appears on the list of notices on the notice dashboard and in the notice selection list when sending notices from a case.
     - **Send from (required)**: Update the sender email address for the notice. This address will appear in the **From:** field in all notices sent to employees unless changed when sending a notice from a case.
     - **Cc and Bcc (optional)**: Update optional users or groups to be notified of the policy match, selected from the Active Directory for your subscription.
