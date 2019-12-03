@@ -30,9 +30,13 @@ ms.custom: autoir
 
 ![Action Center](../images/air-actioncenter.png)
 
-The Action center provides a view of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and [resulting verdict](mtp-autoir-results.md#remediation-actions-following-automated-investigation), remediation actions occur automatically or upon approval by your organization’s security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
+Use the Action center to see current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and [resulting verdict](mtp-autoir-results.md#remediation-actions-following-automated-investigation), remediation actions occur automatically or upon approval by your organization’s security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
 
-The Action center provides a "single pane of glass" experience for approving pending remediation actions, viewing an audit log of already approved remediation actions, and reviewing completed remediation actions across Microsoft Threat Protection. Your security operations team can operate more effectively and efficiently, with a comprehensive view of Microsoft Threat Protection at work for your organization. 
+The Action center provides a "single pane of glass" experience for tasks, such as:
+- Approving pending remediation actions;
+- Viewing an audit log of already approved remediation actions; and
+- Reviewing completed remediation actions.
+With the Action center, your security operations team can operate more effectively and efficiently, with a comprehensive view of Microsoft Threat Protection at work.
 
 ## Remediation actions
 
