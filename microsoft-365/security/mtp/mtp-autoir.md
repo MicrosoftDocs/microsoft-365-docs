@@ -94,7 +94,7 @@ Following each investigation, AIR generates a verdict (*Malicious*, *Suspicious*
 - Permissions:
     - To *configure* AIR, you must be a global administrator or security administrator.
     - To *use* AIR capabilities, you must be a global administrator, security administrator, security operator, or security reader.
-    - See [Permissions in the Microsoft 365 compliance center and Microsoft 365 security center](https://docs.microsoft.com/office365/securitycompliance/permissions-microsoft-365-compliance-security) 
+    - See [Action center permissions](mtp-action-center.md#action-center-permissions).
 
 ## Next steps
 
