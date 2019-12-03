@@ -25,7 +25,6 @@
 #### [What is Microsoft Threat Protection?](mtp/microsoft-threat-protection.md)
 #### [Microsoft 365 security center](mtp/overview-security-center.md)
 #### [Microsoft 365 security prerequisites](mtp/prerequisites.md)
-#### [Data storage and privacy in Microsoft Threat Protection](mtp/data-privacy.md)
 
 ### [How-to guides]()
 
