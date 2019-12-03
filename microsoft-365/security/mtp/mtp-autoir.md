@@ -42,33 +42,25 @@ AIR enables your security operations team to dramatically increase your organiza
 
 4.	Repeating the process as necessary for other alerts.
 
-## How AIR works
+## The automated investigation process
 
-At a high level, a triggered alert creates an incident, which can start an automated investigation. That investigation can result in remediation actions. In Microsoft Threat Protection, each automated investigation correlates signals across Azure Advanced Threat Protection (Azure ATP) and/or Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for your devices (also referred to as endpoints), and Office 365 Advanced Threat Protection (Office 365 ATP) for your Office files and email messages. Each investigation generates verdicts (Malicious, Suspicious, or Clean) for each piece of evidence investigated.
+**Alert** > **incident** > **automated investigation** > **remediation actions**
 
-An automated investigation begins when an alert is triggered, and an incident is created. Security playbooks go into effect, and the automated investigation process begins. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization’s security operations team. Not every alert triggers an automated investigation, and not every investigation results in automated remediation actions; this all depends on how AIR is configured for your organization. 
 
-Once an automated investigation is triggered, the process begins immediately. In line with security operations best practices, an automated investigation typically includes the following steps:
-
-1. Gather information about the type of threat and where it came from.
-
-2. Identify who and what devices are affected by the threat.
-
-3. Find out whether and where other instances of the threat exist in your work environment, and what other investigations should be done.
-
-4. Determine verdicts and remediation actions.
-
-Investigations are done on devices, user accounts, and email content by correlating signals across Microsoft Threat Protection services, as listed in the following table:
+At a high level, a triggered alert creates an incident, which can start an automated investigation. That investigation can result in one or more remediation actions. In Microsoft Threat Protection, each automated investigation correlates signals across Azure Advanced Threat Protection (Azure ATP), Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP), and Office 365 Advanced Threat Protection (Office 365 ATP), as summarized in the following table: 
 
 |Entities |Threat protection services  |
 |---------|---------|
-|Devices (also referred to as endpoints)     |[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)         |
-|User accounts (also referred to as user identities)     |[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)         |
-|Email content (files and messages in mailboxes)     |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
+|Devices (also referred to as endpoints)     |[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
+|Email content (files and messages in mailboxes)     |[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-While an investigation is running, any other related alerts that are generated are added to the investigation until it completes. In cases where the same threat is seen on other entities (such as identities, files, processes, services, drivers, etc.), those entities are added to the investigation. If an incriminated entity is seen in elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run.
 
-Following each investigation, AIR generates a verdict (*Malicious*, *Suspicious*, or *Clean*) for each piece of evidence.
+Each investigation generates verdicts (*Malicious*, *Suspicious*, or *Clean*) for each piece of evidence investigated. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization’s security operations team. Pending and completed actions are listed in the [Action center](mtp-action-center.md).
+
+While an investigation is running, any other related alerts that arise are added to the investigation until it completes. If an incriminated entity is seen elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run. 
+
+> [!NOTE]
+> Not every alert triggers an automated investigation, and not every investigation results in automated remediation actions; this all depends on how AIR is configured for your organization. 
 
 ## Requirements for AIR in Microsoft Threat Protection
 
