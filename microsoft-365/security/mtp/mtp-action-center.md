@@ -44,7 +44,7 @@ The following table lists remediation actions that are currently supported in th
 
 ## Required permissions for Action center tasks
 
-To approve or reject pending actions in the Action center, you must be assigned the following roles and permissions:
+To approve or reject pending actions in the Action center, you must have the following roles and permissions assigned:
 - **Security Administrator** or **Security Reader** role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 - **Active remediation actions** permissions assigned in the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)
 - **Search and Purge** role assigned in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
