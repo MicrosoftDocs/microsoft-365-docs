@@ -26,7 +26,7 @@ ms.custom: autoir
 
 [!include[Prerelease information](prerelease.md)]
 
-## Overview of the Action center
+## A "single pane of glass" experience
 
 ![Action Center](../images/air-actioncenter.png)
 
