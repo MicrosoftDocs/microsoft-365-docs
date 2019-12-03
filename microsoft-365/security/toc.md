@@ -38,10 +38,10 @@
 ##### [Manage incidents](mtp/manage-incidents.md)
 
 #### [Automated investigation and remediation]()
-##### [Overview](mtp/mtp-autoir.md)
-##### [The Action center](mtp/mtp-action-center.md)
-##### [Results and details of an automated investigation](mtp/mtp-autoir-results.md)
-##### [Approve or reject actions related to automated investigation and remediation](mtp/mtp-autoir-actions.md)
+##### [AIR overview](mtp/mtp-autoir.md)
+##### [Go to the Action center](mtp/mtp-action-center.md)
+##### [View AIR results](mtp/mtp-autoir-results.md)
+##### [Approve or reject pending actions](mtp/mtp-autoir-actions.md)
 
 
 #### [Advanced hunting]()

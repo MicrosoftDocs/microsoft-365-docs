@@ -26,7 +26,7 @@ ms.custom: autoir
 
 [!include[Prerelease information](prerelease.md)]
 
-In Microsoft Threat Protection, when an automated investigation occurs, details about that investigation are available during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#action-center-permissions), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
+In Microsoft Threat Protection, when an automated investigation occurs, details about that investigation are available during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
 ![Investigation details](../images/mtp-air-investdetails.png)
 
@@ -44,7 +44,7 @@ Use the Action center to view actions that are either pending approval (on the *
 
 2. In the navigation pane, choose **Action center**. 
 
-3. On either the **Pending** or **History** tab, select an item. If you have the [necessary permissions](mtp-action-center.md#action-center-permissions), you can approve (or reject) pending actions.
+3. On either the **Pending** or **History** tab, select an item. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can approve (or reject) pending actions.
 
 ### Open an investigation from an incident details page
 
@@ -89,7 +89,7 @@ When an automated investigation completes, a verdict is reached for every piece 
 
 ## Next steps
 
-- [Get an overview of Action center permissions](mtp-action-center.md#action-center-permissions)
+- [Get an overview of Action center permissions](mtp-action-center.md#required-permissions-for-action-center-tasks)
 
 - [Approve or reject actions related to automated investigation and remediation](mtp-autoir-actions.md)
 

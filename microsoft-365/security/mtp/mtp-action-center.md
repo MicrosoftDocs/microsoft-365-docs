@@ -30,9 +30,11 @@ ms.custom: autoir
 
 ![Action Center](../images/air-actioncenter.png)
 
-The Action center provides a view of current and past investigations across identities, devices, and mailboxes. The Action center not only enables your security operations team to operate more effectively and efficiently, it also provides a more comprehensive view of Microsoft Threat Protection at work for your organization. 
+The Action center provides a view of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and [resulting verdict](mtp-autoir-results.md#remediation-actions-following-automated-investigation), remediation actions occur automatically or upon approval by your organization’s security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. This provides a "single pane of glass" experience for both approving pending remediation actions and viewing an audit log of already approved remediation actions across Microsoft Threat Protection. 
 
-Depending on the type of threat and [resulting verdict](mtp-autoir-results.md#remediation-actions-following-automated-investigation), remediation actions occur automatically or upon approval by your organization’s security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. This provides a "single pane of glass" experience for both approving pending remediation actions and viewing an audit log of already approved remediation actions across Microsoft Threat Protection. 
+The Action center not only enables your security operations team to operate more effectively and efficiently, it also provides a more comprehensive view of Microsoft Threat Protection at work for your organization. 
+
+## Remediation actions
 
 The following table lists remediation actions that are currently supported in the Action center: 
 
@@ -40,7 +42,7 @@ The following table lists remediation actions that are currently supported in th
 |---------|---------|
 |Quarantine file<br/>Remove registry key<br/>Kill process <br/>Stop service <br/>Remove registry key <br/>Disable driver <br/>Remove scheduled task      |Soft delete email messages or clusters<br/>Block URL (time-of-click)<br/>Turn off external mail forwarding          |
 
-## Action center permissions
+## Required permissions for Action center tasks
 
 The following table summarizes roles and permissions needed for certain Action center tasks.
 
@@ -48,7 +50,7 @@ The following table summarizes roles and permissions needed for certain Action c
 |---|---|---|
 |Approve (or reject) actions on devices (endpoints) |**One** of the following: <br/>- **Security Administrator** role assigned in Azure AD<br/>- A role with **Active remediation actions** permissions assigned in the Microsoft Defender Security Center |[Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/><br/>[Create and manage roles for role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) |
 |Soft delete email messages or email clusters |**Both** of the following:<br/>- **Security Administrator** role assigned in Azure AD<br/>- **Search and Purge** role assigned in the Office 365 Security & Compliance Center |[Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/><br/>[Permissions for threat investigation and response in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti#how-do-we-get-these-capabilities) |
-|Block specific URLs when clicked|The **Security Administrator** role assigned in Azure AD<br/>--- AND ---<br/>**One** of the following assigned in the Exchange admin center:<br/>- The **Organization management** role<br/>- The **Security Administrator** role<br/>- The **Hygiene Management** role | [Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/><br/>[Role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) |
+|Block specific URLs when clicked|**Security Administrator** role assigned in Azure AD<br/>--- AND ---<br/>**One** of the following assigned in the Exchange admin center:<br/>- **Organization management** role<br/>- **Security Administrator** role<br/>- **Hygiene Management** role | [Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/><br/>[Role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) |
 |Turn off external email forwarding  |**Both** of the following:<br/>- **Security Administrator** role assigned in Azure AD<br/>- **Organization management** role assigned in the Exchange admin center|[Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/><br/>[Role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)|
 
 
