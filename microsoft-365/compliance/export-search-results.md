@@ -39,15 +39,17 @@ Exporting the results of a Content Search involves preparing the results, and th
     
   - Microsoft .NET Framework 4.7
     
-  - A supported browser:
+  - A supported browser<sup>1</sup>:
     
-     - Microsoft Edge
+         - Microsoft Edge <sup>2</sup>
+         
+         OR
+
+         - Microsoft Internet Explorer 10 and later versions
     
-        OR
-    
-     - Microsoft Internet Explorer 10 and later versions
-    
-    **Note:** Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported. 
+    > [!NOTE]
+    > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
+    > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the Office 365 eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
     
 - When you download search results (described in Step 2), you can increase the download speed by configuring a Windows Registry setting on the computer you use to export the search results. For more information, see [Increase the download speed when exporting eDiscovery search results from Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
