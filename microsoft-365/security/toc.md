@@ -79,8 +79,8 @@
 ##### [App monitoring and reporting](mtp/monitor-apps.md)
 
 #### [Permissions & settings]()
-#### [Manage access](mtp/mtp-permissions.md)
-#### [Set time zone](mtp/mtp-time-zone.md)
+##### [Manage access](mtp/mtp-permissions.md)
+##### [Set time zone](mtp/mtp-time-zone.md)
 
 #### [Manage tickets through ServiceNow](./mtp/tickets.md)
 
