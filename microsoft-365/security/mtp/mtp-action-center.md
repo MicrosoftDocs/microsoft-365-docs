@@ -19,7 +19,7 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# The Action center
+# Visit the Action center
 
 **Applies to:**
 - Microsoft Threat Protection
