@@ -57,7 +57,7 @@ To approve or reject pending actions in the Action center, you must have the fol
 > [!NOTE]
 > Users who have the **Global Administrator** role assigned in Azure AD can approve or reject any pending action in the Action center. However, as a best practice, your organization should limit the number of people who have the Global Administrator role assigned. We recommend using the roles listed above for Action center permissions.
 
-## Visit the Action center
+## Go to the Action center
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 
