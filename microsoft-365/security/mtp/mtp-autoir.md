@@ -72,6 +72,6 @@ While an investigation is running, any other related alerts that arise are added
 
 ## Next steps
 
-- [Approve or reject actions related to automated investigation and remediation in Microsoft 365](mtp-autoir-actions.md)
+- [Approve or reject actions related to automated investigation and remediation](mtp-autoir-actions.md)
 
 - [Learn more about the Action center](mtp-action-center.md)
