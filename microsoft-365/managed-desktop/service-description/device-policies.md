@@ -15,19 +15,12 @@ ms.collection: M365-modern-desktop
 
 <!-- Device configuration and Security Addendum-->
 
-When a new Microsoft Managed Desktop device is being set up, we ensure that it has the right configuration optimized for Microsoft Managed Desktop. This includes a set of default policies that are set as part of the onboarding process. To avoid conflicts, do not alter these policies. 
+When a new Microsoft Managed Desktop device is being set up, we ensure that it has the right configuration optimized for Microsoft Managed Desktop. This includes a set of default policies that are set as part of the onboarding process. These policies are delivered using Mobile Device Management (MDM) whenever possible. For more information, see [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/). 
+
+>[!NOTE]
+>To avoid conflicts, do not alter these policies.
 
 Devices will arrive with a signature image, and then join the Azure Active Directory domain when the first user logs in. The device will automatically install required policies and applications without any IT intervention needed.
-
-## Why MDM over Group Policy
-
-There are a few reasons to use mobile device management (MDM) instead of Group Policy:
-
-- Security - MDM policies are more secure. Group Policy is designed to work best with on-premises identity while MDM designed to work best with cloud identity management (Azure Active Directory).
-- Reliability - MDM policies provide more reliable policy deployment. Also, MDM settings overwrite Group Policy Object (GPO) policies. Starting with Windows 10, version 1803, MDM settings are prioritized over the Group Policy values, which supports customers moving to modern management. 
-- Align with Microsoft Managed Desktop vision - Provides more comprehensive monitoring on policy deployment and supports group-based approach to gradually rollout policy changes with capability to pause / resume deployment when necessary.
-
-For more information, see [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm/). 
 
 ## Default policies
 
