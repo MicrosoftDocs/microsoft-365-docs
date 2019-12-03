@@ -26,7 +26,9 @@ ms.custom: autoir
 
 [!include[Prerelease information](prerelease.md)]
 
-During and after an automated investigation runs, you might have one or more [remediation actions](mtp-action-center.md#remediation-actions) that require approval to proceed. For example, a cluster of email messages might need to be deleted, or a quarantined file might need to be removed. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can review and approve (or reject) actions [within the Action center](#review-a-pending-action-in-the-action-center) or [within an investigation details view](#review-a-pending-action-in-the-investigation-details-view), as described in the following sections. 
+During and after an automated investigation runs, you might have one or more [remediation actions](mtp-action-center.md#remediation-actions) that require approval to proceed. For example, a cluster of email messages might need to be deleted, or a quarantined file might need to be removed. 
+
+If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can review and approve (or reject) actions [within the Action center](#review-a-pending-action-in-the-action-center) or [within an investigation details view](#review-a-pending-action-in-the-investigation-details-view), as described in the following sections. 
 
 ## Review a pending action in the Action center
 

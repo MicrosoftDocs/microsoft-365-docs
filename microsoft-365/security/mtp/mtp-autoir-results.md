@@ -26,7 +26,7 @@ ms.custom: autoir
 
 [!include[Prerelease information](prerelease.md)]
 
-In Microsoft Threat Protection, when an automated investigation occurs, details about that investigation are available during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
+When an automated investigation occurs in Microsoft Threat Protection, details about that investigation are available during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
 ![Investigation details](../images/mtp-air-investdetails.png)
 
@@ -82,10 +82,12 @@ When an automated investigation completes, a verdict is reached for every piece 
 
 |Verdict	|Area	|Outcomes|
 |------|------|------|
-|Malicious	|Device (endpoints)<br/>Identity (user accounts)	|Remediation actions are taken automatically|
+|Malicious	|Devices (endpoints)	|Remediation actions are taken automatically|
 |Malicious	|Email content (URLs or attachments) | Recommended remediation actions are pending approval|
-|Suspicious	|Device, identity, or email content |Recommended remediation actions are pending approval|
-|Clean	|Device, identity, or email content	|No remediation actions are needed|
+|Suspicious	|Devices or email content |Recommended remediation actions are pending approval|
+|Clean	|Devices or email content	|No remediation actions are needed|
+
+[Review a pending action in the Action center](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
 
 ## Next steps
 

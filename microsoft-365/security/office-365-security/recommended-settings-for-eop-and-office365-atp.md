@@ -36,7 +36,7 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 |Phishing email detection action|Quarantine message|Quarantine message||
 |High confidence Phish email detection action|Quarantine message|Quarantine message||
 |Bulk email detection action|Move message to Junk Email folder|Quarantine message||
-|Set Bulk email threshold to|6|4||
+|Set Bulk email threshold to|6|4|The default is currently 7 but we recommend that most organizations mvoe it down to at least 6|
 |Quarantine retention period|30 days|30 days||
 |Safety tips|On|On||
 |Allowed Senders|None|None||
@@ -71,9 +71,9 @@ There are several other parameters in the Anti-spam policy called Advanced Spam 
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|Outbound spam policy Recipient Limits - External hourly limit|400|500||
-|Outbound spam policy Recipient Limits - Internal hourly limit|800|1000||
-|Outbound spam policy Recipient Limits - Daily limit|800|1000||
+|Outbound spam policy Recipient Limits - External hourly limit|500|400||
+|Outbound spam policy Recipient Limits - Internal hourly limit|1000|800||
+|Outbound spam policy Recipient Limits - Daily limit|1000|800||
 |Action when a user exceeds the limits|Restrict the user from sending mail|Restrict the user from sending mail||
 
 ### EOP anti-malware policy settings
@@ -159,24 +159,3 @@ Do not track when users click safe links|Disabled|Disabled|This falls under the 
 |Redirect attachment on detection|Enabled|Enabled|Redirect to email address for a security administrator that knows how to determine if the attachment is malware or not|
 |ATP Safe attachments response if malware scanning for attachments times out or error occurs|Enabled|Enabled||
 
-## Miscellaneous settings
-
-These settings cover a range of features that don't necessarily fit into specific categories above. Some of the settings are external to the Security & Compliance Center.
-
-Security feature name|Standard|Strict|Comment|
-|---------|---------|---------|---------|
-|[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Yes|Yes||
-|[Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md)|Yes|Yes||
-|[Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md)|Yes|Yes|Use action=quarantine for Standard, and action=reject for Strict.|
-|Deploy Report Message add-on to improve End User Reporting of Suspicious Emails|Yes|Yes||
-|Schedule Malware and Spam Reports|Yes|Yes||
-|Auto-forwarding to external domains should be disallowed or monitored|Yes|Yes||
-|Unified Auditing should be enabled|Yes|Yes||
-|IMAP connectivity to mailbox|Disabled|Disabled||
-|POP connectivity to mailbox|Disabled|Disabled||
-|SMTP Authenticated Submission to mailbox|Disabled|Disabled||
-|EWS connectivity to mailbox|Disabled|Disabled||
-|PowerShell connectivity|Disabled|Disabled||
-|Use Spoof Intelligence to whitelist senders whenever possible|Yes|Yes||
-|Directory-Based Edge Blocking (DBEB)|Enabled|Enabled|Domain Type = Authoritative|
-|[Set up multi-factor authentication for all admin accounts](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Enabled|Enabled||

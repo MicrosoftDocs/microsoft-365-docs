@@ -19,20 +19,25 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# The Action center
+# Visit the Action center
 
 **Applies to:**
 - Microsoft Threat Protection
 
 [!include[Prerelease information](prerelease.md)]
 
-## Overview of the Action center
+## A "single pane of glass" experience
 
 ![Action Center](../images/air-actioncenter.png)
 
-The Action center provides a view of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and [resulting verdict](mtp-autoir-results.md#remediation-actions-following-automated-investigation), remediation actions occur automatically or upon approval by your organization’s security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. This provides a "single pane of glass" experience for both approving pending remediation actions and viewing an audit log of already approved remediation actions across Microsoft Threat Protection. 
+Use the Action center to see current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and [resulting verdict](mtp-autoir-results.md#remediation-actions-following-automated-investigation), remediation actions occur automatically or upon approval by your organization’s security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
 
-The Action center not only enables your security operations team to operate more effectively and efficiently, it also provides a more comprehensive view of Microsoft Threat Protection at work for your organization. 
+The Action center provides a "single pane of glass" experience for tasks, such as:
+- Approving pending remediation actions;
+- Viewing an audit log of already approved remediation actions; and
+- Reviewing completed remediation actions.
+
+With the Action center, your security operations team can operate more effectively and efficiently, with a comprehensive view of Microsoft Threat Protection at work.
 
 ## Remediation actions
 
@@ -42,22 +47,7 @@ The following table lists remediation actions that are currently supported in th
 |---------|---------|
 |Quarantine file<br/>Remove registry key<br/>Kill process <br/>Stop service <br/>Remove registry key <br/>Disable driver <br/>Remove scheduled task      |Soft delete email messages or clusters<br/>Block URL (time-of-click)<br/>Turn off external mail forwarding          |
 
-## Required permissions for Action center tasks
-
-The following table summarizes roles and permissions needed for certain Action center tasks.
-
-|Action(s) | Role(s) needed |More information |
-|---|---|---|
-|Approve (or reject) actions on devices (endpoints) |**One** of the following: <br/>- **Security Administrator** role assigned in Azure AD<br/>- A role with **Active remediation actions** permissions assigned in the Microsoft Defender Security Center |[Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/><br/>[Create and manage roles for role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) |
-|Soft delete email messages or email clusters |**Both** of the following:<br/>- **Security Administrator** role assigned in Azure AD<br/>- **Search and Purge** role assigned in the Office 365 Security & Compliance Center |[Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/><br/>[Permissions for threat investigation and response in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti#how-do-we-get-these-capabilities) |
-|Block specific URLs when clicked|**Security Administrator** role assigned in Azure AD<br/>--- AND ---<br/>**One** of the following assigned in the Exchange admin center:<br/>- **Organization management** role<br/>- **Security Administrator** role<br/>- **Hygiene Management** role | [Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/><br/>[Role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) |
-|Turn off external email forwarding  |**Both** of the following:<br/>- **Security Administrator** role assigned in Azure AD<br/>- **Organization management** role assigned in the Exchange admin center|[Security Administrator role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)<br/><br/>[Role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)|
-
-
-> [!NOTE]
-> Users who have the **Global Administrator** role assigned in Azure AD can approve or reject any pending action in the Action center. However, as a best practice, your organization should limit the number of people who have the Global Administrator role assigned. We recommend using the roles listed in the table above for Action center permissions.
-
-## Visit the Action center
+## Go to the Action center
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 
@@ -76,6 +66,16 @@ The following table summarizes roles and permissions needed for certain Action c
     - If the investigation pertains to email content (such as, the entity is a mailbox), investigation details open in the Office 365 Security & Compliance Center ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
 
     - If the investigation involves a user account or a device, investigation details open in the security center ([https://security.microsoft.com](https://security.microsoft.com)). 
+
+## Required permissions for Action center tasks
+
+To approve or reject pending actions in the Action center, you must have the following roles and permissions:
+- **Security Administrator** or **Security Reader** role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+- **Active remediation actions** permissions assigned in the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)
+- **Search and Purge** role assigned in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+
+> [!NOTE]
+> Users who have the **Global Administrator** role assigned in Azure AD can approve or reject any pending action in the Action center. However, as a best practice, your organization should limit the number of people who have the Global Administrator role assigned. We recommend using the roles listed above for Action center permissions.
 
 ## Next steps 
 
