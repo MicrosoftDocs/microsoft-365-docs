@@ -87,7 +87,7 @@ When an automated investigation completes, a verdict is reached for every piece 
 |Suspicious	|Devices or email content |Recommended remediation actions are pending approval|
 |Clean	|Devices or email content	|No remediation actions are needed|
 
-[Visit the Action center](mtp-action-center.md) to view pending and completed remediation actions.
+[Review a pending action in the Action center](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
 
 ## Next steps
 
