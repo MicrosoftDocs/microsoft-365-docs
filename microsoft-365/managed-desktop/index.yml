@@ -24,6 +24,7 @@ sections:
       html: <p>Introduction to Microsoft Managed Desktop for decision makers--what it is, how it works, and what it can do for you</p>
       image:
         src: https://docs.microsoft.com/media/common/i_overview.svg
+        alt: ""
       title: What is Microsoft Managed Desktop?
     - href: service-description/index.md
       html: <p>Detailed description of all parts of Microsoft Managed Desktop</p>
