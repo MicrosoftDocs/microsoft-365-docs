@@ -47,16 +47,6 @@ The following table lists remediation actions that are currently supported in th
 |---------|---------|
 |Quarantine file<br/>Remove registry key<br/>Kill process <br/>Stop service <br/>Remove registry key <br/>Disable driver <br/>Remove scheduled task      |Soft delete email messages or clusters<br/>Block URL (time-of-click)<br/>Turn off external mail forwarding          |
 
-## Required permissions for Action center tasks
-
-To approve or reject pending actions in the Action center, you must have the following roles and permissions:
-- **Security Administrator** or **Security Reader** role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-- **Active remediation actions** permissions assigned in the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)
-- **Search and Purge** role assigned in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
-
-> [!NOTE]
-> Users who have the **Global Administrator** role assigned in Azure AD can approve or reject any pending action in the Action center. However, as a best practice, your organization should limit the number of people who have the Global Administrator role assigned. We recommend using the roles listed above for Action center permissions.
-
 ## Go to the Action center
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
@@ -76,6 +66,16 @@ To approve or reject pending actions in the Action center, you must have the fol
     - If the investigation pertains to email content (such as, the entity is a mailbox), investigation details open in the Office 365 Security & Compliance Center ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
 
     - If the investigation involves a user account or a device, investigation details open in the security center ([https://security.microsoft.com](https://security.microsoft.com)). 
+
+## Required permissions for Action center tasks
+
+To approve or reject pending actions in the Action center, you must have the following roles and permissions:
+- **Security Administrator** or **Security Reader** role assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+- **Active remediation actions** permissions assigned in the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)
+- **Search and Purge** role assigned in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+
+> [!NOTE]
+> Users who have the **Global Administrator** role assigned in Azure AD can approve or reject any pending action in the Action center. However, as a best practice, your organization should limit the number of people who have the Global Administrator role assigned. We recommend using the roles listed above for Action center permissions.
 
 ## Next steps 
 
