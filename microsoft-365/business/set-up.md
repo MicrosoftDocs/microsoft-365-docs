@@ -13,6 +13,7 @@ localization_priority: Normal
 ms.collection: 
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -27,6 +28,12 @@ description: "Learn how to set up Microsoft 365 Business."
 
 # Set up Microsoft 365 Business in the setup wizard
 
+Watch this video for an overview of Microsoft 365 Business setup.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+
 ## Add your domain, users, and set up policies
 
 [![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
@@ -39,16 +46,18 @@ When you purchase Microsoft 365 Business, you have the option of using a domain 
 
 1. Sign in to [Microsoft 365 admin center](https://admin.microsoft.com) by using your global admin credentials. 
 
-2. Choose **Add a domain** or **Add users** to start the wizard.
+2. Choose **Go to setup** to start the wizard.
+
+    ![Select Go to setup.](media/gotosetupinadmincenter.png)
+
+3. On the **Install your Office apps** page, you can optionally install the apps on your own computer.
+    
+4. In the **Add domain** step, enter the domain name you want to use (like contoso.com).
+
     > [!IMPORTANT]
     > If you purchased a domain during the sign-up, you will not see **Add a domain** step here. Go to [Add users ](#add-users-and-assign-licenses) instead.
 
-    ![Select Go to setup.](media/gotosetupinadmincenter.png)
-    
-3. In the wizard, enter the domain name you want to use (like contoso.com).
-
-
-    ![Screenshot of the Personalize your sign-in page.](media/personalizesignin.png)
+    ![Screenshot of the Personalize your sign-in page.](media/adddomain.png)
 
     
 4. Follow the steps in the wizard to [Create DNS records at any DNS hosting provider for Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) that verifies you own the domain. If you know your domain host, see also the [host specific instructions](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
@@ -71,13 +80,6 @@ Any users you add in the wizard get automatically assigned a Microsoft 365 Busin
 
 2. After you've added the users, you'll also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
 
-3. On the Create Teams for your organization, you can choose to add Teams and add users to them. You can also do this later. For more information, see [create a company-wide Team](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3).
-
-4. Skip migrating email messages and choose **Next** on **Migrate email messages** page. 
-
-    If you're moving from another email provider and want to copy your data later, you can [Migrate email and contacts to Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
-
-
 ### Connect your domain
 
 > [!NOTE]
@@ -90,31 +92,29 @@ To set up services, you have to update some records at your DNS host or domain r
     - If you have existing DNS records, for example an existing web site, but your DNS host is enabled for [domain connect](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), choose **Add records for me**. On the **Choose your online services** page, accept all the defaults, and choose **Next**, and choose **Authorize** on your DNS host's page.
     - If you have existing DNS records with other DNS hosts (not enabled for domain connect), you'll want to manage your own DNS records to make sure the existing services stay connected. See [domain basics](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) for more info.
 
-        ![Connect your domain page with I'll manage my own DNS records.](media/connectyourdomainpage.png)
+        ![Activate records page.](media/activaterecords.png)
 
 2. Follow the steps in the wizard and email and other services will be set up for you.
 
-### Protect data and devices 
+### Protect your organization 
 
 The policies you set up in the wizard are applied automatically to a [Security group](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) called *All Users*. You can also create additional groups to assign policies to in the admin center.
 
-1. On the **Protect your work files on mobile devices**, the option **Protect work files when devices are lost or stolen** is selected by default. You have an option to turn on **Manage how users access Office files on mobile devices**, and this is recommended.
+1. On the **Increase protection from advanced cyber threats**, it is recommended that you accept the defaults to let [Office 365 Advance Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) scan files and links in Office apps.
 
-    ![Screenshot of Protect work files on mobile devices page.](media/protectworkfilesondevices.png)
+    ![Screenshot of Increase protection page.](media/increasetreatprotection.png)
 
-     - Expand **Protect work files when devices are lost or stolen** to display the [default values](protect-work-files-on-lost-or-stolen-device.md):
 
-        ![Screenshot of default values for protecting files on lost devices.](media/protectworkfilesondevicesdefault.png)
+2. On the **Prevent leaks of sensitive data** page, accept the defaults to turn on Office 365 Data Loss Prevention (DLP) to track sensitive data in Office apps and prevent the accidental sharing of these outside your organization.
 
-    - Select **Manage how users access Office files on mobile devices** and expand it to display the [default values](manage-user-access-on-mobile-devices.md). We recommend that you accept the default values during setup to create application policies for Android, iOS, and Windows 10 that apply to all users. You can create more policies after setup completes.
+3. On the **Protect data in Office for mobile** page, leave mobile app management on, expand the settings and review them, and then select **Create mobile app management policy**.
 
-        ![Screenshot of protection settings for Office files on mobile.](media/useraccessonmobile.png)
+    ![Screenshot of Protect data in Office for mobile page.](media/protectdatainmobile.png)
 
-2. The last step on protect data and devices allows you to set up policies to secure Windows 10 devices. These settings are applied automatically when a user's Windows 10 connects to your organization. You can expand **Secure Windows 10 devices** to see and modify the [default values](secure-windows-10-devices.md).
-3. You can also choose to [automatically install Office](install-office-on-windows-10-during-setup.md) on Windows 10 devices.
 
-    ![Screenshot of set Windows 10 device configuration page.](media/setwin10config.png)
+## Secure Windows 10 PCs
 
+On the left nav, select **Setup** and then, under **Sing-in and security**, choose **Secure your Windows 10 computers**. Choose **View** to get started. See [secure your Windows 10 computers](secure-win-10-pcs.md) for complete instructions.
 
 ## Deploy Office 365 client apps
 
@@ -123,3 +123,7 @@ If you chose to automatically install Office apps during setup, the apps will in
 To install Office on mobile iOS or Android devices, see [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md).
 
 You can also install Office individually. See [install Office on a PC or Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) for instructions.
+
+## See also
+
+[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
