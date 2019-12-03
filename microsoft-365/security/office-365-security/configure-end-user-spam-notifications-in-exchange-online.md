@@ -26,17 +26,11 @@ End-user spam notifications contain a list of all spam-quarantined messages that
   
 After receiving a notification message, end users can choose from the following options:
 
-**Preview** the message if you would like to preview the content or header prior to taking action.
-
-**Download** the message if you would like to review the message and attachments (if any) on your device prior to taking action.
+**Block Sender** if you want Office 365 to add the sender to your blocked senders list.
 
 **Release** if the message isn’t spam and you want Office 365 to send the message to your mailbox.
 
-**Release & Allow Sender** if the message isn’t spam and you want Office 365 to add the sender to your safe senders and recipients list for future emails. Keep in mind that your admin may have other organization wide allow/block configurations that override your safe sender list.
-
-**Release & Report**, if the message isn’t spam and you want to send the message to your mailbox and report it to Microsoft for analysis.
-
-**Block** if you want Office 365 to add the sender to your blocked senders list.
+**Review** to navigate to the Quarantine Portal within the Security and Compliance Center if you want to take other actions, such as Preview or Release.
   
 ## What do you need to know before you begin?
 
