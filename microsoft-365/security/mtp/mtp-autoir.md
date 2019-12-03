@@ -35,11 +35,8 @@ Imagine having a virtual analyst in your Tier 1 / Tier 2 security operations tea
 AIR enables your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents. With AIR, you can reduce the cost of dealing with investigation and remediation activities and get the most out of your threat protection suite. AIR helps your security operations team by:
 
 1.	Determining whether a threat requires action;
-
 2.	Performing (or recommending) any necessary remediation actions;
-
 3.	Determining what additional investigations should occur; and
-
 4.	Repeating the process as necessary for other alerts.
 
 ## The automated investigation process
