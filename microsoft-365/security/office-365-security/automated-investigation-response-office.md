@@ -304,9 +304,12 @@ To learn more about feature availability, visit the [Feature availability across
 
 ## Required permissions to use AIR capabilities
 
-To approve or reject recommended actions, you must have the following roles and permissions:
-- **Global Administrator**, **Security Administrator**, or **Security Reader** role (this can be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles))
-- **Search and Purge** role (this is assigned in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center))
+Permissions are granted through certain roles, such as those that are described in the following table: 
+
+|Task |Role(s) required |
+|--|--|
+|To set up AIR features |One of the following: <br/>- **Global Administrator**<br/>- **Security Administrator** <br/>These roles can be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) |
+|To approve or reject recommended actions|One of the following (these roles can be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)):<br/>- **Global Administrator** <br/>- **Security Administrator**<br/>- **Security Reader** <br/>--- and ---<br/>- **Search and Purge** (this role is assigned in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center))
 
 ## Next steps
 
