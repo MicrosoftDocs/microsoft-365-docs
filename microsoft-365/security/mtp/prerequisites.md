@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ---
 
-# Microsoft 365 security prerequisites
+# Microsoft Threat Protection prerequisites
 
 **Applies to:**
 - Microsoft Threat Protection
