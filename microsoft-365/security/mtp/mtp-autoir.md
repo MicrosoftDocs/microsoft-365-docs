@@ -63,24 +63,12 @@ While an investigation is running, any other related alerts that arise are added
 
 ## Requirements for AIR in Microsoft Threat Protection
 
-- Subscription requirements: 
-    - Either Microsoft 365 E5, or Microsoft 365 E3 together with Identity & Threat Protection
-    - See [Microsoft 365 plans](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview#plans).
-
-- Network requirements:
-    - [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) enabled
-    - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) configured
-    - [MCAS integrated with Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration)
-
-- Windows machine requirements:  
-    - Windows 10, version 1709 or later installed (To learn more, see [Windows 10 release information](https://docs.microsoft.com/windows/release-information/).)
-    - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) configured
-    - [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) configured
-
-- Permissions:
-    - To *configure* AIR, you must be a global administrator or security administrator.
-    - To *use* AIR capabilities, you must be a global administrator, security administrator, security operator, or security reader.
-    - See [Action center permissions](mtp-action-center.md#action-center-permissions).
+| | |
+|--|--|
+|Subscription requirements |- Microsoft 365 E5 or Microsoft 365 E3 together with Identity & Threat Protection<br/>- See [Microsoft 365 plans](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview#plans)|
+|Network requirements |- [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) enabled<br/>- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) configured<br/>- [MCAS integrated with Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
+|Windows machine requirements |- Windows 10, version 1709 or later installed (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information/))<br/>- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) configured <br/>- [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) configured |
+|Permissions |- To *configure* AIR: global administrator or security administrator<br/>- To *use* AIR capabilities: global administrator, security administrator, security operator, or security reader <br/>- See [Action center permissions](mtp-action-center.md#action-center-permissions) |
 
 ## Next steps
 
