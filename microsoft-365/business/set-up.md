@@ -114,7 +114,7 @@ The policies you set up in the wizard are applied automatically to a [Security g
 
 ## Secure Windows 10 PCs
 
-On the left nav, select **Setup** and then, under Sing-in and security, Secure your Windows 10 computers. Choose View to get started. See [secure your Windows 10 computers](secure-win-10-pcs.md) for complete instructions.
+On the left nav, select **Setup** and then, under **Sing-in and security**, choose **Secure your Windows 10 computers**. Choose **View** to get started. See [secure your Windows 10 computers](secure-win-10-pcs.md) for complete instructions.
 
 ## Deploy Office 365 client apps
 

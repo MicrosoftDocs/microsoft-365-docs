@@ -6,6 +6,7 @@
 ## Setup
 ### [Overview of setup](set-up-overview.md)
 ### [Set up Microsoft 365 Business](set-up.md)
+### [Secure your Windows 10 Computers](secure-win-10-pcs.md)
 ### [Upgrade to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
 ### [Prepare for Office client deployment](prepare-for-office-client-deployment.md)
 ### [Help users install Office](help-users-install-office.md)
