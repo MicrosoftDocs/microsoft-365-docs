@@ -19,9 +19,9 @@ description: "Learn how to use Office labels as part of your GDPR protection pla
 
 # Apply labels to personal data in Office 365
 
- Use this topic if you are using classification labels as part of your GDPR protection plan. 
+ Use this topic if you're using classification labels as part of your GDPR protection plan. 
 
-If you are using labels for protection of personal data in Office 365, Microsoft recommends you start with [retention labels](labels.md). With retention labels, you can:
+If you're using labels for protection of personal data in Office 365, Microsoft recommends you start with [retention labels](labels.md). With retention labels, you can:
 - Use Advanced Data Governance to automatically apply labels based on sensitive information types or other criteria.
 - Use retention labels with data loss prevention to apply protection. 
 - Use labels with eDiscovery and Content Search. 
@@ -39,9 +39,9 @@ Retention labels can be applied to mail in Exchange Online and these labels work
 
 In the illustration:
 
--   Use retention labels for personal data and for highly regulated & trade secret files in SharePoint Online and OneDrive for Business.
--   Office 365 sensitive information types can be used within Office 365 and with Cloud App Security to monintor personal data that resides in other SaaS apps.
--   Use sensitivity labels for highly regulated & trade secret files, Exchange Online email, files in other SaaS services, files in on-premises datacenters, and files in other cloud providers.
+-   Use retention labels for personal data and for highly regulated and trade secret files in SharePoint Online and OneDrive for Business.
+-   Office 365 sensitive information types can be used within Office 365 and with Cloud App Security to monitor personal data that resides in other SaaS apps.
+-   Use sensitivity labels for highly regulated and trade secret files, Exchange Online email, files in other SaaS services, files in on-premises datacenters, and files in other cloud providers.
 
 
 ## Use retention labels and sensitive information types across Microsoft 365 for information protection
@@ -73,7 +73,7 @@ For accessibility, the following table provides the same examples in the illustr
 <p>. . . to documents with this label . . .</p>
 <p>Customer data</p></td>
 <td align="left"><p>Alert when files with these attributes . . .</p>
-<p>Choose one or more attribute: predefined PII attribute, Office 365 sensitive information type, sensitivity label (AIP), custom expression</p>
+<p>Choose one or more attributes: predefined PII attribute, Office 365 sensitive information type, sensitivity label (AIP), custom expression</p>
 <p>. . . in any sanctioned SaaS app are shared outside the organization</p><p>Note: Retention labels are currently not supported in Cloud App Security.</td>
 </tr>
 <tr class="even">
@@ -94,7 +94,7 @@ For accessibility, the following table provides the same examples in the illustr
 
 For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment. It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.
 
-The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it is important to carefully plan the roll-out. Here’s what you need to know.
+The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here’s what you need to know.
 
 ### One label at a time
 
@@ -102,11 +102,11 @@ You can only assign one label to a document.
 
 ### Older auto-apply policies win
 
-If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned. For this reason, it is important to plan the label policies carefully before configuring them. If an organization requires a change to the priority of the label policies, they will need to delete and recreate them.
+If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned. For this reason, it's important to plan the label policies carefully before configuring them. If an organization requires a change to the priority of the label policies, they'll need to delete and recreate them.
 
 ### Manual user-applied labels trump auto-applied labels
 
-Manual user applied labels trump auto-applied labels. Auto-apply policies cannot replace a label that is already applied by a user. Users can replace labels that are auto-applied.
+Manual user applied labels trump auto-applied labels. Auto-apply policies can't replace a label that is already applied by a user. Users can replace labels that are auto-applied.
 
 ### Auto-assigned labels can be updated
 
@@ -114,9 +114,9 @@ Auto-assigned labels can be updated by either newer label policies or by updates
 
 Be sure your plan for implementing labels includes:
 
--   Prioritizing the order that auto-apply policies are created.
+- Prioritizing the order that auto-apply policies are created.
 
--   Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply. It can take up to seven days for the labels to be applied to all content that matches the conditions.
+- Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply. It can take up to seven days for the labels to be applied to all content that matches the conditions.
 
 ### Example priority for creating the auto-apply policies
 
@@ -161,7 +161,7 @@ Be sure your plan for implementing labels includes:
 
 ## Create labels and auto-apply label policies
 
-Create labels and policies in the scurity center or the compliance center.
+Create labels and policies in the security center or the compliance center.
 
 <table>
 <thead>
@@ -193,8 +193,8 @@ The following illustration shows how to create an auto-apply label for the Custo
 
 In the illustration:
 
--   The “Customer data” label is created.
+- The “Customer data” label is created.
 
--   The desired sensitive information types for GDPR are listed: Belgium National Number, Credit Card Number, Croatia Identity Card Number, Finland National ID.
+- The desired sensitive information types for GDPR are listed: Belgium National Number, Credit Card Number, Croatia Identity Card Number, Finland National ID.
 
--   Create an auto-apply policy assigns the label “Customer data” to any file that includes one of the sensitive information types that you add to the policy.
+- Create an auto-apply policy assigns the label “Customer data” to any file that includes one of the sensitive information types that you add to the policy.

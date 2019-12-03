@@ -52,7 +52,7 @@ When a sensitivity label is automatically applied, the user sees a notification 
 
 ## Recommend that the user apply a sensitivity label
 
-If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label is not suitable for their document or email.
+If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label isn't suitable for their document or email.
 
 Recommended labels are supported in Word, PowerPoint, and Excel (and require that the Azure Information Protection unified labeling client is installed).
 
