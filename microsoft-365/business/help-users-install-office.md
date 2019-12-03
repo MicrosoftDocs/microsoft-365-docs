@@ -31,7 +31,7 @@ You can quickly and easily install Office on Windows 10 PCs from the Microsoft 3
   
 To understand how this works with previously installed Office apps, read [Prepare for Office client installation](prepare-for-office-client-deployment.md) before you get started.
 
-Watch a short video about installing Office apps.
+Watch a short video about installing Office apps.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 

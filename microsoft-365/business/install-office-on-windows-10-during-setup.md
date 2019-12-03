@@ -32,7 +32,7 @@ This setting is off by default. You can turn it on to make sure users have the l
   
 We recommend that you accept the default setting during setup.
 
-Watch a short video about installing Office apps.
+Watch a short video about installing Office apps.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 

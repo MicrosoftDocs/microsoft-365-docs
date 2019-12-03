@@ -22,7 +22,7 @@ description: "Learn to move your files to OneDrive."
 
 # Move files to OneDrive for Business
 
-Watch a short video about moving files to OneDrive for Business.
+Watch a short video about moving files to OneDrive for Business.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
