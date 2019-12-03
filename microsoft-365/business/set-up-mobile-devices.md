@@ -26,7 +26,6 @@ description: "Install Office on an iPhone or an Android phone, and your work fil
 
 Follow the instructions in the tabs to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 Business.
 
-  
 The example is for Outlook, but applies for any other Office apps you want to install also.
   
 ## Set up mobile devices
@@ -63,6 +62,12 @@ Locate Outlook on the iPhone, and restart it. When prompted, enter a PIN and ver
   
 ## [Android](#tab/Android)
   
+Watch a video about installing Outlook and Office on Android devices.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+
 To begin setup on your Android phone, go to the Play Store.
   
 ![On the Android home screen, tap Play Store](media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
@@ -86,7 +91,9 @@ In Play Store, install Intune Company Portal.
 Open Outlook again, and enter and confirm a PIN. Your Outlook app is now ready for use.
   
 ![Set  PIN for Outlook app in Android](media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
-  
+
+## See also
+
+[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+
 ---
-
-
