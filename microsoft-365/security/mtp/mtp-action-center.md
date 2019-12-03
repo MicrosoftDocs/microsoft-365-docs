@@ -2,7 +2,6 @@
 title: Visit the Action center 
 description: Use the Action Center to view details about automated investigation and approve pending actions
 keywords: Action Center, threat protection, investigation, alert, pending, automated, detection
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: M365-security-compliance
 ms.mktglfcycl: deploy

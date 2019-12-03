@@ -2,7 +2,6 @@
 title: Approve or reject pending actions following automated investigation 
 description: Use the Action Center to manage actions related to automated investigation and response
 keywords: action, center, autoair, automated, investigation, response, remediation
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy

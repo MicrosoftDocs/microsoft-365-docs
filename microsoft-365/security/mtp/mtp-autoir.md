@@ -2,7 +2,6 @@
 title: Automated investigation and remediation in Microsoft Threat Protection 
 description: Get an overview of automated investigation and remediation capabilities in Microsoft Threat Protection
 keywords: automated, investigation, alert, trigger, action, remediation
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
