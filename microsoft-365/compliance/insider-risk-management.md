@@ -14,11 +14,11 @@ ms.collection: m365-security-compliance
 
 # Insider risk management in Microsoft 365
 
-Insider risk management is part of the new internal risk solution set in Microsoft 365 that helps minimize internal risks by helping you detect, investigate, and take remediation actions for inappropriate activities in your organization. Custom policies allow you to detect and take action on malicious and inadvertent risk activities in your organization, including escalating cases to other Microsoft 365 investigation solutions if needed. Risk analysts in your organization can quickly take appropriate remediation actions to make sure that your users are compliant with your organization's compliance standards.
+Insider risk management is an internal risk solution in Microsoft 365 that helps minimize internal risks by enabling you to detect, investigate, and take remediation actions for risky activities in your organization. Custom policies allow you to detect and take action on malicious and inadvertent risk activities in your organization, including escalating cases to other Microsoft 365 investigation solutions if needed. Risk analysts in your organization can quickly take appropriate remediation actions to make sure users are compliant with your organization's compliance standards.
 
 ## Modern risk pain points
 
-Managing and minimizing risk in your organization starts with understanding the types of risks found in the modern workplace. Some risks are driven by external events and factors and are outside direct control, while other risks are driven by internal events and employee activities that can be eliminated and avoided. Some examples are risks from illegal, inappropriate, unauthorized, or unethical behavior and actions by employees and managers. These behaviors include a broad range of internal risks from employees:
+Managing and minimizing risk in your organization starts with understanding the types of risks found in the modern workplace. Some risks are driven by external events and factors and are outside direct control. Other risks are driven by internal events and employee activities that can be eliminated and avoided. Some examples are risks from illegal, inappropriate, unauthorized, or unethical behavior and actions by employees and managers. These behaviors include a broad range of internal risks from employees:
 
 - Leaks of sensitive data and data spillage
 - Confidentiality violations
@@ -29,7 +29,7 @@ Managing and minimizing risk in your organization starts with understanding the 
 
 Employees in the modern workplace have access to create, manage, and share data across a broad spectrum of platforms and services. In most cases, organizations have limited resources and tools to identify and mitigate organization-wide risks while also meeting employee privacy standards.
 
-Insider risk management in Microsoft 365 uses the full breadth of service and 3rd-party signals to help you quickly identify, triage, and remediate risks. By using logs from Office 365 and Azure services, insider risk management allows you to define specific policies to monitor for risk signals and to take action to remediate the associated risk from these activities.
+Insider risk management in Microsoft 365 uses the full breadth of service and 3rd-party signals to help you quickly identify, triage, and remediate risks. By using logs from Office 365 and Azure services, insider risk management allows you to define specific policies to monitor for risk signals. These policies allow you to take action to remediate the associated risk from these activities.
 
 Insider risk management is centered around the following principles:
 
@@ -42,13 +42,13 @@ Insider risk management is centered around the following principles:
 
 Insider risk management helps you identify, investigate, and take action to address internal risks in your organization. With focused policy templates, comprehensive activity signaling across the Microsoft 365 service, and a flexible workflow, you can use actionable insights to quickly identify and resolve risky behavior.
 
-Identifying and resolving internal risk activities and compliance issues with insider risk management in Microsoft 365 uses the following workflow: 
+Identifying and resolving internal risk activities and compliance issues with insider risk management in Microsoft 365 uses the following workflow:
 
 ![Insider risk management workflow](media/insider-risk-temp-workflow.png)
 
 ### Policies
 
-Insider risk management policies are created using pre-defined templates and the policy conditions allow you to define what signals are used in other feature areas. These include how signals are used for alerts, what users are monitored by the policy, which services are monitored, how you weigh the alerts, and the monitoring time period.
+Insider risk management policies are created using pre-defined templates and policy conditions that define what signals are used in other feature areas. These conditions include how signals are used for alerts, what users are monitored by the policy, which services are monitored, how you weigh the alerts, and the monitoring time period.
 
 You can select from the following policy templates:
 
@@ -77,7 +77,7 @@ For more information, see [Insider risk management alerts](insider-risk-manageme
 
 ### Triage
 
-New activities that need investigation automatically generate alerts that are assigned a *Needs review* status. Reviewers can quickly identify these alerts and scroll through each to triage and either open a new case or dismiss the alert as benign. Using alert filters, it's easy to quickly identify alerts by status, severity, or time detected. As part of the triage process, reviewers view alert details, including the policy match, user activity associated with the match, the severity of the alert, and user profile information.
+New activities that need investigation automatically generate alerts that are assigned a *Needs review* status. Reviewers can quickly identify these alerts and scroll through each to evaluate and triage. Alerts are resolved by opening a new case, assigning the alert to an existing case, or dismissing the alert as benign. Using alert filters, it's easy to quickly identify alerts by status, severity, or time detected. As part of the triage process, reviewers view alert details, including the policy match, user activity associated with the match, the severity of the alert, and user profile information.
 
 ![Insider risk management triage](media/insider-risk-temp-triage.png)
 
@@ -85,9 +85,9 @@ New activities that need investigation automatically generate alerts that are as
 
 Cases are created for alerts that require deeper review and investigation of the details and circumstances around the policy match. The case dashboard provides an all-up view of all active cases, open cases over time, and case statistics for your organization. Reviewers can quickly filter cases by status, the date the case was opened, and the date the case was last updated.
 
-Selecting a case on the case dashboard opens the case for investigation and review. This step is the heart of the insider risk management workflow and where activity signals, policy conditions, alerts details, and employee details are synthesized into an integrated view for reviewers. The primary investigation tools in this area are:
+Selecting a case on the case dashboard opens the case for investigation and review. This step is the heart of the insider risk management workflow. This area is where activity signals, policy conditions, alerts details, and employee details are synthesized into an integrated view for reviewers. The primary investigation tools in this area are:
 
-- **User activity**: User activity is automatically displayed in an interactive chart that plots risk activities over time and by risk level for an employee current or past risk activities. Reviewers can quickly filter and view the entire risk history for the employee and drill into specific activities for more details.
+- **User activity**: User activity is automatically displayed in an interactive chart that plots risk activities over time and by risk level for current or past risk activities. Reviewers can quickly filter and view the entire risk history for the employee and drill into specific activities for more details.
 - **Content explorer**: All data files and email messages associated with alert risk activities are automatically captured and displayed in the content explorer. Reviewers can filter and view files and messages by data source, file type, tags, conversation, and many more attributes.
 - **Case notes**: Reviewers provide notes for a case in the Case Notes section. This list consolidates all notes in a central view and include reviewer and date submitted information.
 
@@ -97,16 +97,16 @@ For more information, see [Insider risk management cases](insider-risk-managemen
 
 ### Action
 
-After cases are investigated, reviewers can quickly take action to resolve the case or collaborate with other risk stakeholders in your organization. For the most common scenario of employees accidentally or inadvertently violating policy conditions, a reminder notice can be sent to the employee from custom notice templates you can configure for your organization. These notices may serve as simple reminders or may direct the employee to refresher training or guidance to help prevent future risky behavior.
+After cases are investigated, reviewers can quickly take action to resolve the case or collaborate with other risk stakeholders in your organization. When employees accidentally or inadvertently violate policy conditions, a simple reminder notice can be sent to the employee from notice templates you can configure for your organization. These notices may serve as simple reminders or may direct the employee to refresher training or guidance to help prevent future risky behavior.
 
 For more information, see [Insider risk management notice templates](insider-risk-management-notices.md).
 
 ### Collaborate
 
-In the most serious cases, you may need to share the insider risk management case information with other reviewers in your organization. Insider risk management is tightly integrated with other Microsoft 365 compliance features to help you with end-to-end risk resolution. Sharing a case transfers data and management of the case to one of two options:
+In the most serious situations, you may need to share the insider risk management case information with other reviewers in your organization. Insider risk management is tightly integrated with other Microsoft 365 compliance features to help you with end-to-end risk resolution. Sharing a case transfers data and management of the case to one of two options:
 
 - **Investigate data**: Data investigation allows you to search for sensitive, malicious, or misplaced data across Microsoft 365 and to take appropriate action to remediate data spillage. Creating a new investigation from an insider risk management case allows other reviewers to properly evaluate the extent of any data spillage. To learn more about data investigation cases, see [Overview of Data Investigations in Microsoft 365](overview-data-investigations.md).
-- **Investigate employee**: Advanced eDiscovery provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also allows legal teams to manage the entire legal hold notification workflow to communication with custodians involved in a case. To learn more about Advanced eDiscovery cases, see [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+- **Investigate employee**: Advanced eDiscovery provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It allows legal teams to manage the entire legal hold notification workflow. To learn more about Advanced eDiscovery cases, see [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 ## Scenarios
 
@@ -114,15 +114,15 @@ Insider risk management can help you detect, investigate, and take action to mit
 
 ### Data theft by departing employee
 
-When employees leave an organization, either voluntarily or as the result of termination, there is often legitimate concerns that intellectual property (IP) is at risk. Employees may innocently assume that data relating to their projects isn't proprietary or they may be tempted to take company data for personal gain and in violation of company policy and legal standards. Insider risk management policies that use the [Departing employee data theft policy template](insider-risk-management-policies.md#policy-templates) automatically detect activities typically associated with this type of theft and helps you take corrective actions to mitigate the impact. By configuring an insider risk management policy focused on activities typically associated with actions taken by departing employees, you'll automatically receive alerts for suspicious activities associated with departing employees theft so you can take appropriate investigative and remediation actions.
+When employees leave an organization, either voluntarily or as the result of termination, there is often legitimate concerns that intellectual property (IP) is at risk. Employees may innocently assume that project data isn't proprietary or they may be tempted to take company data for personal gain and in violation of company policy and legal standards. Insider risk management policies that use the [Departing employee data theft policy template](insider-risk-management-policies.md#policy-templates) automatically detect activities typically associated with this type of theft. With this policy, you'll automatically receive alerts for suspicious activities associated with departing employees theft so you can take appropriate investigative and remediation actions.
 
 ### Intentional or unintentional leak of sensitive or confidential information
 
-In most cases, employees try their best to properly handle sensitive or confidential information. But occasionally employees make mistakes and information is accidentally shared outside your organization or in violation of your information protection policies. In rare cases, employees may intentionally leak or share confidential information with malicious intent and for potential personal gain. Insider risk management policies created using the [Data leaks policy template](insider-risk-management-policies.md#policy-templates) automatically detect activities typically associated sharing sensitive or confidential information.
+In most cases, employees try their best to properly handle sensitive or confidential information. But occasionally employees make mistakes and information is accidentally shared outside your organization or in violation of your information protection policies. Sometimes employees may intentionally leak or share confidential information with malicious intent and for potential personal gain. Insider risk management policies created using the [Data leaks policy template](insider-risk-management-policies.md#policy-templates) automatically detect activities typically associated sharing sensitive or confidential information.
 
 ### Actions and behaviors that violate corporate policies
 
-Employee-to-employee communications are often a source of inadvertent or malicious violations of corporate policies relating to offensive language, threats, and cyber-bullying. This type of activity contributes to a hostile work environment and can result in legal actions against both employees and the larger organization. Insider risk management uses new built-in Microsoft 365 classifiers and the [Offensive language in communication* policy template](insider-risk-management-policies.md#policy-templates) to enable the quick configuration of a policy to automatically detect and alert you of this behavior.
+Employee-to-employee communications are often a source of inadvertent or malicious violations of corporate policies. These violations can include offensive language, threats, and cyber-bullying between employees. This type of activity contributes to a hostile work environment and can result in legal actions against both employees and the larger organization. Insider risk management uses new built-in Microsoft 365 classifiers and the [Offensive language in communication policy template](insider-risk-management-policies.md#policy-templates). These classifiers and templates enable the quick configuration of a policy to automatically detect and alert you of this kind of behavior.
 
 ## Ready to get started?
 
