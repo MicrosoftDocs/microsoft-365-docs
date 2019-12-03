@@ -98,6 +98,6 @@ Following each investigation, AIR generates a verdict (*Malicious*, *Suspicious*
 
 ## Next steps
 
-[Approve or reject actions related to automated investigation and remediation in Microsoft 365](mtp-autoir-actions.md)
+- [Approve or reject actions related to automated investigation and remediation in Microsoft 365](mtp-autoir-actions.md)
 
-[Learn more about the Action center in Microsoft Threat Protection](mtp-action-center.md)
+- [Learn more about the Action center](mtp-action-center.md)
