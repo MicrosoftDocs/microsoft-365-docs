@@ -29,8 +29,6 @@
 ### [How-to guides]()
 
 #### [Turn on Microsoft Threat Protection](mtp/mtp-enable.md)
-#### [Manage access](mtp/mtp-permissions.md)
-#### [Set time zone](mtp/mtp-time-zone.md)
 
 #### [Incidents]()
 ##### [Overview](mtp/incidents-overview.md)
@@ -80,6 +78,9 @@
 ##### [Device monitoring and reporting](mtp/monitor-devices.md)
 ##### [App monitoring and reporting](mtp/monitor-apps.md)
 
+#### [Permissions & settings]()
+#### [Manage access](mtp/mtp-permissions.md)
+#### [Set time zone](mtp/mtp-time-zone.md)
 
 #### [Manage tickets through ServiceNow](./mtp/tickets.md)
 
