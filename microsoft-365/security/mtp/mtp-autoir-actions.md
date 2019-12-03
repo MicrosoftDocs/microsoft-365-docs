@@ -50,6 +50,6 @@ During and after an automated investigation in Microsoft Threat Protection, depe
 
 ## Next steps
 
-[Learn more about incidents](incidents-overview.md)
+- [Learn more about incidents](incidents-overview.md)
 
-[Learn about hunting](hunting.md)
+- [Learn about hunting](hunting.md)
