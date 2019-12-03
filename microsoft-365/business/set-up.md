@@ -13,6 +13,7 @@ localization_priority: Normal
 ms.collection: 
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -26,6 +27,12 @@ description: "Learn how to set up Microsoft 365 Business."
 ---
 
 # Set up Microsoft 365 Business in the setup wizard
+
+Watch this video for an overview of Microsoft 365 Business setup.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## Add your domain, users, and set up policies
 
@@ -123,3 +130,7 @@ If you chose to automatically install Office apps during setup, the apps will in
 To install Office on mobile iOS or Android devices, see [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md).
 
 You can also install Office individually. See [install Office on a PC or Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) for instructions.
+
+## See also
+
+[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
