@@ -21,9 +21,6 @@ Automated incident response (AIR) capabilities enable you to run automated inves
 - To get an overview how AIR works, use this article.
 - To get started using AIR, see [Automatically investigate and respond to threats in Office 365](office-365-air.md).
 
-> [!NOTE]
-> You must be a global administrator, security administrator, security operator, or security reader to access AIR capabilities. These roles can be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). To learn more about permissions for Office 365 security and compliance features, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-
 ## The overall flow of AIR
 
 At a high level, the AIR flow works like this:
