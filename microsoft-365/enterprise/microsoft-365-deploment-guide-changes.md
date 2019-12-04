@@ -27,7 +27,7 @@ description: See the new content and changes to the content in the Microsoft 365
 ### Updates and enhancements
 
 - [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files) for the use of sensitivity labels
--  [The lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md) and [The simulated enterprise base configuration](enterprise/simulated-ent-base-configuration-microsoft-365-enterprise) for new trial subscription procedures
+-  [The lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md) and [The simulated enterprise base configuration](simulated-ent-base-configuration-microsoft-365-enterprise.md) for new trial subscription procedures
 - 
 
 ## November 2019
