@@ -1,12 +1,12 @@
 ---
-title: Hunt for malware and other threats in Microsoft 365
-description: Describes how you can look for compromised accounts, file less malware, suspicious emails, and more.
-keywords: security, malware, Microsoft 365, M365, security center, hunt, hunting, Microsoft Defender ATP, Office 365 ATP, Azure ATP
+title: Hunt for other threats in Microsoft 365
+description: Use threat hunting capabilities in Microsoft 365 security center to proactively find breaches and other threats
+keywords: security, malware, Microsoft 365, M365, security center, hunt, hunting, Microsoft Defender ATP, Office 365 ATP, Azure ATP, advanced hunting
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: ellevin
-author: levinec
+ms.author: lomayor
+author: lomayor
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance  
@@ -14,14 +14,21 @@ ms.topic: article
 search.appverid: met150
 ---
 
-# Hunt for malware and other threats in Microsoft 365
+# Hunt for threats in Microsoft 365
 
-Hunting provides security teams a view into possible threats in your organization across email and data, devices, and identities. Within Microsoft Defender ATP, Office 365 ATP, and Azure ATP portals you can look for compromised accounts, file less malware, suspicious emails, and more.
+With threat hunting capabilities in Microsoft 365 security center, you can proactively find threats in your organization affecting email and data, devices, and identities. From the **Hunting** screen, you can access threat hunting tools made available by various solutions:
+- Office 365 ATP — [hunt for threats to email and data](../office-365-security/office-365-atp.md)
+- Microsoft Defender ATP — [hunt for threats to devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)
+- Azure ATP — [hunt for threats to identities](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)
 
 ![Hunting page](../images/hunt.png)
 
-Learn more:
 
-* [Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) in Microsoft Defender Advanced Threat Protection
-* [Email and data](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) in Office 365 Advanced Threat Protection
-* [Identities](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user) in Azure Advanced Threat Protection
+## Hunt with Microsoft Threat Protection
+
+[Turn on Microsoft Threat Protection](mtp-enable.md) to get the advanced hunting query interface directly in the Microsoft 365 security center. With [advanced hunting](advanced-hunting-overview.md), you can create single queries that look into data from both Microsoft Defender ATP, covering data from onboarded devices, and Office 365 ATP, providing data from emails.
+
+## Related topics
+- [Advanced hunting overview](advanced-hunting-overview.md)
+- [Microsoft Threat Protection overview](microsoft-threat-protection.md)
+- [Turn on Microsoft Threat Protection](mtp-enable.md)

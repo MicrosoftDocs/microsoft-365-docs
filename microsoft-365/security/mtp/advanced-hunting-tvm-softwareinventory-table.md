@@ -1,6 +1,6 @@
 ---
-title: DeviceTvmSoftwareInventoryVulnerabilities table in the Advanced hunting schema
-description: Learn about the inventory of software in your devices and their vulnerabilities in the DeviceTvmSoftwareInventoryVulnerabilities table of the Advanced hunting schema.
+title: DeviceTvmSoftwareInventoryVulnerabilities table in the advanced hunting schema
+description: Learn about the inventory of software in your devices and their vulnerabilities in the DeviceTvmSoftwareInventoryVulnerabilities table of the advanced hunting schema.
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, software, inventory, vulnerabilities, CVE ID, OS DeviceTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -24,9 +24,9 @@ ms.topic: article
 
 [!include[Prerelease information](prerelease.md)]
 
-The `DeviceTvmSoftwareInventoryVulnerabilities` table in the Advanced hunting schema contains the [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) inventory of software on your devices as well as any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information. Use this reference to construct queries that return information from the table.
+The `DeviceTvmSoftwareInventoryVulnerabilities` table in the advanced hunting schema contains the [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) inventory of software on your devices as well as any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information. Use this reference to construct queries that return information from the table.
 
-For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-schema-tables.md).
+For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|

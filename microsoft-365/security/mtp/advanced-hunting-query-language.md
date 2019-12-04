@@ -1,6 +1,6 @@
 ---
-title: Learn the Advanced hunting query language in Microsoft Threat Protection
-description: Create your first threat hunting query and learn about common operators and other aspects of the Advanced hunting query language
+title: Learn the advanced hunting query language in Microsoft Threat Protection
+description: Create your first threat hunting query and learn about common operators and other aspects of the advanced hunting query language
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,18 +17,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Learn the Advanced hunting query language
+# Learn the advanced hunting query language
 
 **Applies to:**
 - Microsoft Threat Protection
 
 [!include[Prerelease information](prerelease.md)]
 
-Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-schema-tables.md) specifically structured for Advanced hunting. To understand these concepts better, run your first query.
+Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-schema-tables.md) specifically structured for advanced hunting. To understand these concepts better, run your first query.
 
 ## Try your first query
 
-In Microsoft 365 security center, go to **Advanced hunting** to run your first query. Use the following example:
+In Microsoft 365 security center, go to **Hunting** to run your first query. Use the following example:
 
 ```
 // Finds PowerShell execution events that could involve a download.
@@ -44,9 +44,9 @@ ProcessCreationEvents
 | top 100 by EventTime
 ```
 
-This is how it will look like in Advanced hunting.
+This is how it will look like in advanced hunting.
 
-![Image of Microsoft Defender ATP Advanced hunting query](../images/advanced-hunting-query-example.png)
+![Image of Microsoft Defender ATP advanced hunting query](../images/advanced-hunting-query-example.png)
 
 The query starts with a short comment describing what it is for. This helps if you later decide to save your query and share it with others in your organization.
 
@@ -88,9 +88,9 @@ Now that your query clearly identifies the data you want to locate, you can add 
 
 Click **Run query** to see the results. You can expand the screen view so you can focus on your hunting query and the results.
 
-## Learn common query operators for Advanced hunting
+## Learn common query operators for advanced hunting
 
-Now that you've run your first query and have a general idea of its components, it's time to backtrack a little bit and learn some basics. The Kusto query language used by Advanced hunting supports a range of operators, including the following common ones.
+Now that you've run your first query and have a general idea of its components, it's time to backtrack a little bit and learn some basics. The Kusto query language used by advanced hunting supports a range of operators, including the following common ones.
 
 | Operator | Description and usage |
 |--|--|
@@ -123,7 +123,7 @@ Data in advanced hunting tables are generally classified into the following data
 
 The **Get started** section provides a few simple queries using commonly used operators. Try running these queries and making small modifications to them.
 
-![Image of Advanced hunting window](../images/advanced-hunting-get-started.png)
+![Image of advanced hunting window](../images/advanced-hunting-get-started.png)
 
 >[!NOTE]
 >Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the GitHub query repository.

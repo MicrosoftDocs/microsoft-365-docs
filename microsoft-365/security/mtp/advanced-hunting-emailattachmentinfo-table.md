@@ -1,6 +1,6 @@
 ---
-title: EmailAttachmentInfo table in the Advanced hunting schema
-description: Learn about email attachment information in the EmailAttachmentInfo table of the Advanced hunting schema
+title: EmailAttachmentInfo table in the advanced hunting schema
+description: Learn about email attachment information in the EmailAttachmentInfo table of the advanced hunting schema
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailAttachmentInfo, network message id, sender, recipient, attachment id, attachment name, malware verdict
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -24,9 +24,9 @@ ms.topic: article
 
 [!include[Prerelease information](prerelease.md)]
 
-The `EmailAttachmentInfo` table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about attachments on emails processed by Office 365 ATP. Use this reference to construct queries that return information from this table.
+The `EmailAttachmentInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about attachments on emails processed by Office 365 ATP. Use this reference to construct queries that return information from this table.
 
-For information on other tables in the Advanced hunting schema, [see the Advanced hunting reference](advanced-hunting-schema-tables.md).
+For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|

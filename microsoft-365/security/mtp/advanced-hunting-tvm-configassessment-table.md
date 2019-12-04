@@ -1,6 +1,6 @@
 ---
-title: DeviceTvmSecureConfigurationAssessment table in the Advanced hunting schema
-description: Learn about Threat & Vulnerability Management security assessment events in the DeviceTvmSecureConfigurationAssessment table of the Advanced hunting schema. These events provide machine information as well as security configuration details, impact, and compliance information. 
+title: DeviceTvmSecureConfigurationAssessment table in the advanced hunting schema
+description: Learn about Threat & Vulnerability Management security assessment events in the DeviceTvmSecureConfigurationAssessment table of the advanced hunting schema. These events provide machine information as well as security configuration details, impact, and compliance information. 
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, DeviceTvmSecureConfigurationAssessment  
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -26,7 +26,7 @@ ms.topic: article
 
 Each row in the `DeviceTvmSecureConfigurationAssessment` table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Use this reference to check the latest assessment results and determine whether devices are compliant.
 
-For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-schema-tables.md).
+For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
