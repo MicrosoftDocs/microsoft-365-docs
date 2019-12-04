@@ -72,7 +72,7 @@
             - name: Configure your Office 365 tenant for increased security
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: New Microsoft 365 security center
-              href: ./office-365-security/microsoft-security-and-compliance.md
+              href: ./mtp/overview-security-center.md 
             - name: Permissions in the Security & Compliance Center
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
             - name: Give users access to the Security center
