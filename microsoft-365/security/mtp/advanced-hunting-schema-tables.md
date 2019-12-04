@@ -1,6 +1,6 @@
 ---
-title: Data tables in the Microsoft Threat Protection Advanced hunting schema
-description: Learn about the tables in the Advanced hunting schema to understand the data you can run threat hunting queries on
+title: Data tables in the Microsoft Threat Protection advanced hunting schema
+description: Learn about the tables in the advanced hunting schema to understand the data you can run threat hunting queries on
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Understand the Advanced hunting schema
+# Understand the advanced hunting schema
 
 **Applies to:**
 - Microsoft Threat Protection
 
 [!include[Prerelease information](prerelease.md)]
 
-The [Advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about machines and entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the Advanced hunting schema.
+The [advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about machines and entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the advanced hunting schema.
 
 ## Schema tables
 

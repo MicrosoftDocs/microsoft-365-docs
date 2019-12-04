@@ -53,4 +53,4 @@ If you have the [necessary permissions](mtp-action-center.md#required-permission
 
 - [Learn more about incidents](incidents-overview.md)
 
-- [Learn about hunting](hunting.md)
+- [Learn about hunting](advanced-hunting-overview.md)

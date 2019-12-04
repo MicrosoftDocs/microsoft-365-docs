@@ -1,6 +1,6 @@
 ---
 title: Advanced hunting best practices in Microsoft Threat Protection
-description: Learn how to construct fast, efficient, and error-free threat hunting queries when using Advanced hunting
+description: Learn how to construct fast, efficient, and error-free threat hunting queries when using advanced hunting
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, avoid timeout, command lines, process id
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

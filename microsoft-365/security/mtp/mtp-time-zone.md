@@ -1,6 +1,6 @@
 ---
 title: Set the time zone for Microsoft Threat Protection features
-description: Learn how to choose the time zone for date and time information associated with incidents, automated investigation and remediation, and Advanced hunting 
+description: Learn how to choose the time zone for date and time information associated with incidents, automated investigation and remediation, and advanced hunting 
 keywords: time zone, date, time, MTP, Microsoft Threat Protection, M365, security, incidents, automated investigation and response, AIR, advanced hunting
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise

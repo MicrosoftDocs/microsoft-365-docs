@@ -33,7 +33,11 @@ Turning on the Microsoft Threat Protection service aggregates data from the vari
 
 If Microsoft Defender ATP has been provisioned for your organization, data will be stored and processed in the same data center location you have selected for [your Microsoft Defender ATP data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have without Microsoft Defender ATP, you will be asked to choose a new data center location specifically for Microsoft Threat Protection. You will need to provide consent before data is shared between services and aggregated.
 
-To turn the Microsoft Threat Protect service on, go to **Settings** > **Microsoft Threat Protection** > **Opt-in / Opt-out** in Microsoft 365 security center. Once the service is provisioned, it adds the **Incidents** section, the **Action center**, and major enhancements to the existing **Hunting** page.
+To turn the Microsoft Threat Protection service on, go to **Settings** > **Microsoft Threat Protection** > **Opt-in / Opt-out** in Microsoft 365 security center. Once the service is provisioned, it adds:
+
+- [Incidents management](incidents-overview.md)
+- An action center for managing [automated investigation and response](mtp-autoir.md)
+- [Advanced hunting](advanced-hunting-overview.md) capabilities to the existing **Hunting** page.
 
 ![Image of Microsoft 365 security center menu with Microsoft Threat Protection features](../images/mtp-enabled-nav.png)
 
