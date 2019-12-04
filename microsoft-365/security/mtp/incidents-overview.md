@@ -28,7 +28,7 @@ search.appverid:
 
 The basis of all incidents are alerts. Alerts are created when a malicious event or activity is seen on your network. Individual alerts provide valuable clues in what's happening on individual events or entities. However, attacks typically employ various attack vectors to carry out a breach. Piecing individual clues together can be a challenging and time-consuming task. 
 
-Microsoft Threat Protection connects the dots on individual alerts. Malicious events on the following entities are surfaced in Microsoft 365 security center:
+Microsoft Threat Protection connects the dots on individual alerts. Malicious events on the following entities are surfaced in the Microsoft 365 security center:
 - Devices
 - Users
 - Mailboxes

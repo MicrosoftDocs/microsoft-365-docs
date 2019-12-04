@@ -26,7 +26,7 @@ search.appverid:
 
 [!include[Prerelease information](prerelease.md)]
 
-Microsoft Threat Protection can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the following features in Microsoft 365 security center:
+Microsoft Threat Protection can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 security center:
 - Incidents
 - Automated investigation and remediation, including the action center
 - Advanced hunting

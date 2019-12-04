@@ -1,6 +1,6 @@
 ---
-title: Understand the latest attack campaigns and techniques with threat analytics in Microsoft 365 security center
-description: Describes threat analytics interactive reports in Microsoft 365 security center
+title: Understand the latest attack campaigns and techniques with threat analytics in the Microsoft 365 security center
+description: Describes threat analytics interactive reports in the Microsoft 365 security center
 keywords: security, malware, Microsoft 365, M365, security center, threat analytics, Microsoft Defender ATP, cyber, security posture, emerging threats
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
