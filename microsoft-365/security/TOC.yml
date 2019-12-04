@@ -225,7 +225,7 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
               items: 
                 - name: Security Dashboard overview
-                  href: ./office-365-security/security-dashboard.md)
+                  href: ./office-365-security/security-dashboard.md
                   items: 
                     - name: Walkthrough - From a detailed report to an insight
                       href: ./office-365-security/from-a-detailed-report-to-an-insight.md
