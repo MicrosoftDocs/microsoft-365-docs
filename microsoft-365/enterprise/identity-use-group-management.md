@@ -71,7 +71,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 *This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-In this section, you'll configure security groups in Azure AD to automatically assign licenses from a set of subscriptions to all the members of the group. This is known as *group-based licensing*. If a user account is added to or removed from the group, the licenses for the group’s subscriptions will be automatically assigned or unassignedfrom the user account.
+In this section, you'll configure security groups in Azure AD to automatically assign licenses from a set of subscriptions to all the members of the group. This is known as *group-based licensing*. If a user account is added to or removed from the group, the licenses for the group’s subscriptions will be automatically assigned or unassigned from the user account.
 
 For Microsoft 365 Enterprise, you'll configure Azure AD security groups to assign the appropriate Microsoft 365 Enterprise license.
 
