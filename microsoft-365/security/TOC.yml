@@ -1,85 +1,44 @@
 - name: Microsoft 365 security
-
   href: index.yml
-
   items: 
-
     - name: Get started
-
       items: 
-
         - name: Microsoft 365 Security for BDMs
-
           href: Microsoft-365-security-for-bdm.md
-
         - name: Secure Score
-
           href: ./mtp/microsoft-secure-score.md
-
         - name: Secure Score (preview)
-
           href: ./mtp/microsoft-secure-score-preview.md
-
         - name: Chief Information Security Officer (CISO) workshop training
-
           href: ./office-365-security/ciso-workshop.md
-
           items: 
-
             - name: Module 1 - Microsoft cybersecurity briefing
-
               href: ./office-365-security/ciso-workshop-module-1.md
-
             - name: Module 2 - Security management
-
               href: ./office-365-security/ciso-workshop-module-2.md
-
             - name: Module 3 - Identity and Zero Trust User Access
-
               href: ./office-365-security/ciso-workshop-module-3.md
-
             - name: Module 4a - Threat protection strategy, Part I
-
               href: ./office-365-security/ciso-workshop-module-4a.md
-
             - name: Module 4b - Threat protection strategy, Part II
-
               href: ./office-365-security/ciso-workshop-module-4b.md
-
             - name: Module 5 - Information protection
-
               href: ./office-365-security/ciso-workshop-module-5.md
-
     - name: Identity and device access configurations
-
       href: ../enterprise/microsoft-365-policies-configurations.md
-
       items: 
-
         - name: Prerequisite work
-
           href: ../enterprise/identity-access-prerequisites.md
-
         - name: Common identity and device access policies
-
           href: ../enterprise/identity-access-policies.md
-
         - name: Policies for guest and external users
-
           href: ../enterprise/identity-access-policies-guest-access.md
-
         - name: Recommended Teams access policies
-
           href: ../enterprise/teams-access-policies.md
-
         - name: Recommended Exchange Online access policies
-
           href: ../enterprise/secure-email-recommended-policies.md
-
         - name: Recommended SharePoint Online access policies
-
           href: ../enterprise/sharepoint-file-access-policies.md
-
     - name: Microsoft Threat Protection
       items: 
         - name: Overview
