@@ -105,7 +105,7 @@ For advanced filter and search tools, expand the **Filter** pane on the left sid
 
 ### Email property conditions
 
-The following table lists email message property conditions available the Content Explorer.
+The following table lists email message property conditions available the content explorer.
 
 | **Condition option** | **Description** |
 |:---------------------|:----------------|
@@ -133,7 +133,7 @@ The following table lists email message property conditions available the Conten
 
 ## Document property conditions
 
-The following table lists the metadata fields for documents in an insider risk management case. Many of these property conditions are shared with review sets included in [Advanced eDiscovery cases](document-metadata-fields-in-Advanced-eDiscovery.md).
+The following table lists documents property conditions available the content explorer. Many of these property conditions are shared with review sets included in [Advanced eDiscovery cases](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 | **Condition option** | **Description** |
 |:---------------------|:----------------|
