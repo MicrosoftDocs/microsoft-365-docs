@@ -3,7 +3,7 @@ title: "Use sensitivity labels with Microsoft Teams, Office 365 groups, and Shar
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/13/2019
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -32,6 +32,8 @@ Now, You can also enable sensitivity labels for Office files in SharePoint and O
 ## About the public preview for Microsoft Teams, Office 365 groups, and SharePoint sites
 
 Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites is gradually rolling out to tenants and might change before final release.
+
+The public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
 
 ## Overview
 
@@ -72,9 +74,9 @@ These images show:
 
 Office 365 no longer uses the old classifications for new groups and SharePoint sites when you enable this preview. If you used [Azure AD site classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($setting["ClassificationList"]), existing groups and sites still display the old classifications. To display the new classifications, convert them. For information about how to convert them, see [If you used classic Azure AD site classification](#if-you-used-classic-azure-ad-site-classification).
 
-## Set site and group settings when you create sensitivity labels
+## Set site and group settings when you create (or edit) sensitivity labels
 
-After you enable the preview, follow these steps:
+After you enable the preview, follow these steps to create sensitivity labels. Changes to these settings may take up to 24 hours sync.
 
 1. In the Microsoft 365 compliance center, select **Classification** > **Sensitivity labels**.
 
