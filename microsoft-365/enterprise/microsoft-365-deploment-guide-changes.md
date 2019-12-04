@@ -3,7 +3,7 @@ title: "Changes to Microsoft 365 Enterprise deployment content"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 11/19/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,6 +17,18 @@ description: See the new content and changes to the content in the Microsoft 365
 ---
 
 # Changes to Microsoft 365 Enterprise deployment content
+
+## December 2019
+
+### New content 
+
+- [Test Lab Guide for Secure Teams for files](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment)
+
+### Updates and enhancements
+
+- [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files) for the use of sensitivity labels
+-  [The lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md) and [The simulated enterprise base configuration](enterprise/simulated-ent-base-configuration-microsoft-365-enterprise) for new trial subscription procedures
+- 
 
 ## November 2019
 
