@@ -13,7 +13,36 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Australian Government Certified Cloud Services List (CCSL)
+# Australian Government Information Security Registered Assessor Program (IRAP)
+
+The Information Security Registered Assessor Program (IRAP) provides a comprehensive process for the independent assessment of a system’s security against Australian government policies and guidelines. The IRAP goal is to maximize the security of Australian federal, state, and local government data by focusing on the information and communications technology infrastructure that stores, processes, and communicates it.
+
+## IRAP overview
+
+The Information Security Registered Assessors Program (IRAP) is governed and administered by the ACSC. IRAP provides the framework to endorse individuals from the private and public sectors to provide cyber security assessment services to the Australian government. Endorsed IRAP assessors can provide an independent assessment of ICT security, suggest mitigations and highlight residual risks. IRAP provides a comprehensive process for the independent assessment of a system’s security against Australian government policies and guidelines. The IRAP goal is to maximize the security of Australian federal, state, and local government data by focusing on the information and communications technology infrastructure that stores, processes, and communicates it.
+
+- In 2014, Azure was launched as the first IRAP-assessed cloud service in Australia, hosted from datacenters in Melbourne and Sydney. These two datacenters give Australian customers control over where their customer data is stored, while also providing enhanced data durability in the event of a disaster through backups at both locations.
+- In early 2015, Office 365 became the first cloud productivity service to complete this assessment.
+- In April 2015, the ASD announced the CCSL certification of both Azure and Office 365, and in November 2015, of Dynamics 365.
+- In June 2017, ASD announced the recertification of Microsoft Azure and Office 365 for a greatly expanded set of services.
+- In April 2018, the ACSC announced the certification of Azure and Office 365 at the PROTECTED classification. Microsoft is the first and only public cloud provider to achieve this level of certification
+- In September 2019, Microsoft’s updated IRAP assessment scope expanded to include 113 services at the PROTECTED classification.
+
+## CCSL overview
+
+The Certified Cloud Services List (CCSL) identifies cloud services that have successfully completed an IRAP assessment by the Australian Government, and have been awarded certification by the Australian Cyber Security Centre (ACSC). The certification recognises the successful completion, review, and acceptance of a comprehensive assessment undertaken by an Information Security Registered Assessor, so all Australian Government agencies can use it. The CCSL can also be referenced by New Zealand Government organisations in conducting their risk assessments as the NZ ISM and Australian Government ISM are aligned.
+
+Microsoft’s Azure, Dynamics 365 CRM, and Office 365 continue to be included on the CCSL for both Unclassified: Dissemination Limiting Markers (DLM) (now OFFICIAL: Sensitive) and PROTECTED data based on the previous IRAP assessment and certification by the Australian Cyber Security Centre (ACSC).
+
+## Microsoft and IRAP
+
+
+
+
+
+
+
+
 
 ## CCSL overview
 
