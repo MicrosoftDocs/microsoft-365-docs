@@ -44,6 +44,7 @@
 
 
 #### [Advanced hunting]()
+##### [Hunting in Microsoft 365](mtp/hunting.md)
 ##### [Advanced hunting overview](mtp/advanced-hunting-overview.md)
 ##### [Learn the query language](mtp/advanced-hunting-query-language.md)
 ##### [Use shared queries](mtp/advanced-hunting-shared-queries.md)
@@ -66,6 +67,7 @@
 ###### [DeviceTvmSoftwareInventoryVulnerabilities](mtp/advanced-hunting-tvm-softwareinventory-table.md)
 ###### [DeviceTvmSoftwareVulnerabilitiesKB](mtp/advanced-hunting-tvm-softwarevulnerability-table.md)
 ##### [Apply query best practices](mtp/advanced-hunting-best-practices.md)
+
 
 #### [Secure Score]()
 ##### [Secure Score](mtp/microsoft-secure-score.md)
