@@ -32,15 +32,10 @@ Microsoft Threat Protection is a comprehensive security solution bringing togeth
 
 - **Empower defenders** - By providing visibility into the full scope of a threat, your security defenders are empowered to identify its impact and take appropriate remediation actions.
 
+To start using these powerful capabilities in the Microsoft 365 security center, turn on Microsoft Threat Protection.
 
 Access the power of Microsoft Threat Protection through Microsoft 365 security center at [security.microsoft.com](https://security.microsoft.com).
 
-
-To turn the Microsoft Threat Protection service on, go to **Settings** > **Microsoft Threat Protection** > **Opt-in / Opt-out** in Microsoft 365 security center. Once the service is provisioned, it adds:
-
-- [Incidents management](incidents-overview.md)
-- An action center for managing [automated investigation and response](mtp-autoir.md)
-- [Advanced hunting](advanced-hunting-overview.md) capabilities to the existing **Hunting** page
 
 <center><h2>Microsoft Threat Protection services</center></h2>
 <table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender Advanced Threat Protection</b></center></a></td>
