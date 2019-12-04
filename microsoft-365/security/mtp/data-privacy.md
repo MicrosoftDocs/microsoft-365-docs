@@ -3,7 +3,6 @@ title: Microsoft Threat Protection data security and privacy
 description: Describes the privacy and data security of the service.
 keywords: privacy, data, security, trust center, information collection
 search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,6 +14,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
+search.appverid: 
+- MOE150
+- MET150
 ---
 
 # Microsoft Threat Protection data security and privacy

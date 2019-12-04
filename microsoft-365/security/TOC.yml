@@ -150,6 +150,8 @@
                   href: mtp/mtp-time-zone.md
             - name: Manage tickets through ServiceNow
               href: ./mtp/tickets.md
+            - name: Troubleshoot issues
+              href: ./mtp/troubleshoot.md
 
     - name: Office 365 Security
 
