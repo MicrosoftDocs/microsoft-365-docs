@@ -79,8 +79,8 @@
         - name: Recommended SharePoint Online access policies
 
           href: ../enterprise/sharepoint-file-access-policies.md
-	
-	- name: Microsoft Threat Protection
+
+    - name: Microsoft Threat Protection
       items: 
         - name: Overview
           items: 
