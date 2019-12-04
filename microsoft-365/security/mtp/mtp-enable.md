@@ -37,7 +37,7 @@ To turn the Microsoft Threat Protection service on, go to **Settings** > **Micro
 
 - [Incidents management](incidents-overview.md)
 - An action center for managing [automated investigation and response](mtp-autoir.md)
-- [Advanced hunting](advanced-hunting-overview.md) capabilities to the existing **Hunting** page.
+- [Advanced hunting](advanced-hunting-overview.md) capabilities to the existing **Hunting** page
 
 ![Image of Microsoft 365 security center menu with Microsoft Threat Protection features](../images/mtp-enabled-nav.png)
 

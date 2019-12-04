@@ -17,7 +17,7 @@ search.appverid: met150
 # Hunt for threats in Microsoft 365
 
 With threat hunting capabilities in Microsoft 365 security center, you can proactively find threats in your organization affecting email and data, devices, and identities. From the **Hunting** screen, you can access threat hunting tools made available by various solutions:
-- Office 365 ATP — [hunt for threats to email and data](https://docs.microsoft.com/office365/securitycompliance/office-365-atp)
+- Office 365 ATP — [hunt for threats to email and data](../office-365-security/office-365-atp.md)
 - Microsoft Defender ATP — [hunt for threats to devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)
 - Azure ATP — [hunt for threats to identities](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)
 
