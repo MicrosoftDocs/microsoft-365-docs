@@ -107,74 +107,76 @@ For advanced filter and search tools, expand the **Filter** pane on the left sid
 
 The following table lists email message property conditions available the Content Explorer.
 
-| **Condition option** | **Description** | **Examples** |
-|:---------------------|:----------------|:-------------|
-| **Bcc** | The Bcc field of an email message. | `bcc:pilarp@contoso.com` <br> `bcc:pilarp` <br> `bcc:"Pilar Pinilla"` |
-| **Cc** | The Cc field of an email message. | `cc:pilarp@contoso.com` <br> `cc:pilarp` <br/> `cc:"Pilar Pinilla"` |
-| **Email Internet headers** |  |  |
-| **Email security** |  |   |
-| **Email sensitivity** |  |   |
-| **Email set ID** |  |  |
-| **From** | The sender of an email message. | `from:pilarp@contoso.com` <br> `from:contoso.com` |
-| **Has attachment** | Indicates whether a message has an attachment. Use the values **true** or **false**. | `hasattachment:true` |
-| **Importance** | The importance of an email message, which a sender can specify when sending a message. By default, messages are sent with normal importance, unless the sender sets the importance as **high** or **low**. | `importance:high`  <br> `importance:medium` <br> `importance:low`  |
-| **Meeting end date** |  |  |
-| **Meeting start date** |  |  |
-| **Message kind** | The type of email message to search for. Possible values: contacts, docs, email, external data, faxes, im, journals, meetings, microsoft teams (returns items from chats, meetings, and calls in Microsoft Teams), notes, posts, rssfeeds, tasks, voicemail | `kind:email` <br/> `kind:email OR kind:im OR kind:voicemail` <br> `kind:externaldata` |
-| **Participant domain** |  |  |
-| **Participants** | All the people fields in an email message. These fields are From, To, Cc, and Bcc. | `participants:garthf@contoso.com` <br> `participants:contoso.com` |
-| **Received** | The date that an email message was received by a recipient. | `received:04/15/2016` <br> `received>=01/01/2016 AND received<=03/31/2016` |
-| **Recipient domains** |  |  |
-| **Subject** | The text in the subject line of an email message.  <br/> **Note:** When you use the Subject property in a query, the search returns all messages in which the subject line contains the text you're searching for. In other words, the query doesn't return only those messages that have an exact match. For example, if you search for `subject:"Quarterly Financials"`, your results will include messages with the subject "Quarterly Financials 2018". | `subject:"Quarterly Financials"` <br> `subject:northwind` |
-| **To** | The To field of an email message. | `to:annb@contoso.com` <br> `to:annb ` <br> `to:"Ann Beebe"` |
-| **Unique in email set** |  |
+| **Condition option** | **Description** |
+|:---------------------|:----------------|
+| **Bcc** | The Bcc field of an email message. |
+| **Cc** | The Cc field of an email message. |
+| **Email Internet headers** |  |
+| **Email security** | Email Security | Security setting of the message. |
+| **Email sensitivity** | Sensitivity setting of the message. |
+| **Email set ID** | Group ID for all messages in the same email set. |  |
+| **From** | The sender of an email message. |
+| **Has attachment** | Indicates whether a message has an attachment. Use the values **true** or **false**. |
+| **Importance** | The importance of an email message, which a sender can specify when sending a message. By default, messages are sent with normal importance, unless the sender sets the importance as **high** or **low**. |
+| **Meeting end date** | Meeting end date for meetings. |
+| **Meeting start date** | Meeting start date for meetings. |
+| **Message kind** | The type of email message to search for. Possible values: contacts, docs, email, external data, faxes, im, journals, meetings, microsoft teams (returns items from chats, meetings, and calls in Microsoft Teams), notes, posts, rssfeeds, tasks, voicemail |
+| **Participant domain** | List of all domains of participants of a message. |
+| **Participants** | All the people fields in an email message. These fields are From, To, Cc, and Bcc. |
+| **Received** | The date that an email message was received by a recipient. |
+| **Recipient domains** | List of all domains of recipients of a message. |
+| **Subject** | The text in the subject line of an email message.  <br/> **Note:** When you use the Subject property in a query, the search returns all messages in which the subject line contains the text you're searching for. In other words, the query doesn't return only those messages that have an exact match. For example, if you search for `subject:"Quarterly Financials"`, your results will include messages with the subject "Quarterly Financials 2018". |
+| **To** | The To field of an email message. |
+| **Unique in email set** | False if there's a duplicate of the attachment in its email set. |
 
 ## Document property conditions
+
+The following table lists the metadata fields for documents in an insider risk management case. Many of these property conditions are shared with review sets included in [Advanced eDiscovery cases](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 | **Condition option** | **Description** |
 |:---------------------|:----------------|
 | **Annotations** |  |
-| **Attorney-client privilege score** |  |
+| **Attorney-client privilege score** | Attorney-client privilege model content score. |
 | **Author** | The author field from Office documents, which persists if a document is copied. For example, if a user creates a document and the emails it to someone else who then uploads it to SharePoint, the document will still retain the original author. |
 | **Comments** |  |
-| **Compliance labels** |  |
-| **Compound path** |  |
-| **Conversation ID** |  |
+| **Compliance labels** | Compliance labels applied in Office 365. |
+| **Compound path** | Human readable path that describes the source of the item. |
+| **Conversation ID** | Conversation Id from the message. |
 | **Created time** | The time the file or email message was created. |
-| **Custodian** |  |
+| **Custodian** | Name of the custodian the item was associated with. |
 | **Data source** |  |
-| **Dominant theme** |  |
-| **Family ID** |  |
-| **File class** |  |
+| **Dominant theme** | Dominant theme as calculated for analytics. |
+| **Family ID** | Family Id groups together all items; for email, this includes the message and all attachments; for documents, this includes the document and any embedded items. |
+| **File class** | For content from SharePoint and OneDrive: **Document**; for content from Exchange: **Email or **Attachment**. |
 | **File types** | The extension of a file; for example, docx, one, pptx, or xlsx. |
-| **Has attorney participant** |  |
+| **Has attorney participant** | True when at least one of the participants is found in the attorney list; otherwise, the value is False. |
 | **Ignored processing errors** |  |
-| **Immutable ID** |  |
-| **Inclusive type** |  |
-| **Item class** |  |
+| **Immutable ID** | Immutable Id as stored in Office 365. |
+| **Inclusive type** | Inclusive type calculated for analytics: **0** - not inclusive; **1** - inclusive; **2** - inclusive minus; **3** - inclusive copy. |
+| **Item class** | Item class supplied by exchange server; for example, **IPM.Note** |
 | **Keywords** |  |
 | **Last modified** | The date that a document was last changed. |
-| **Load ID** |  |
-| **Location name** |  |
+| **Load ID** | Load Id, in which the item was loaded into a review set. |
+| **Location name** | String that identifies the source of the item.  For exchange, this will be the SMTP address of the mailbox. For SharePoint and OneDrive, the URL to the site collection. |
 | **Marked as pivot** |  |
-| **Marked as representative** |  |
-| **Native file extension** |  |
-| **Native file name** |  |
-| **NdEtSortExclAttach** |  |
-| **Pivot ID** |  |
-| **Potentially privileged** |  |
-| **Processing status** |  |
-| **Read percentile** |  |
-| **Relevance score** |  |
-| **Relevance tag** |  |
-| **Representative ID** |  |
-| **Sender** |  |
-| **Sender domain** |  |
+| **Marked as representative** | One document from each set of exact duplicates is marked as representatives. |
+| **Native file extension** | Native extension of the item. |
+| **Native file name** | Native file name of the item. |
+| **NdEtSortExclAttach** | Concatenation of email set and ND set for efficient sorting at review time; D is added as a prefix to ND sets and E is added to email sets. |
+| **Pivot ID** | The ID of a pivot. |
+| **Potentially privileged** | True if attorney-client privilege detection model considers the document potentially privileged. |
+| **Processing status** | Processing status after the item was added to a review set. |
+| **Read percentile** | Read percentile for the document based on Relevance. |
+| **Relevance score** | Relevance score of a document based on Relevance. |
+| **Relevance tag** | Relevance score of a document based on Relevance. |
+| **Representative ID** | Numeric identifier of each set of exact duplicates. |
+| **Sender** | Sender (From) field for message types.  Format is **DisplayName \<SmtpAddress>**. |
+| **Sender domain** | Domain of the sender. |
 | **Source** |  |
-| **Tags** |  |
-| **Themes list** |  |
+| **Tags** | Tags applied in a review set. |
+| **Themes list** | Themes list as calculated for analytics. |
 | **Title** | The title of the document. The Title property is metadata that's specified in Office documents. It's different than the file name of the document. |
-| **Was remediated** |  |
+| **Was remediated** | True if the item was remediated, otherwise False. |
 | **Word count** | The number of words in a file. |
 | **Work product** |  |
 
