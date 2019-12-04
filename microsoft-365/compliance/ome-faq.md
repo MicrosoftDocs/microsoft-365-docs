@@ -3,7 +3,7 @@ title: "Office 365 Message Encryption FAQ"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -128,7 +128,11 @@ Yes! You can set up mail flow rules in Exchange Online or by using DLP in the Se
   
 ## Can I open encrypted messages sent to a Shared Mailbox?
 
-Yes! Encrypted messages are supported for a Shared Mailbox. Some limitations apply.
+Yes! Encrypted messages are supported for a Shared Mailbox.
+
+- Users can open protected mails in a Shared Mailbox where the Shared Mailbox received a protected mail as part of a distribution group.
+
+- Users can view attachments that inherit protection from email when they use Outlook for Windows, Outlook for Mac, and Outlook on the web.
 
 ## Is delegated access supported?
 
