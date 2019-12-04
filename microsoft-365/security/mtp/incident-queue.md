@@ -34,7 +34,7 @@ The **Incidents queue** shows a collection of incidents that were flagged from a
 
 ![Image of incidents queue](../images/incidents-queue.png) 
 
-By default, the queue in Microsoft 365 security center displays incidents seen in the last 30 days, with the most recent incident showing at the top of the list, helping you see the most recent incidents first.
+By default, the queue in the Microsoft 365 security center displays incidents seen in the last 30 days, with the most recent incident showing at the top of the list, helping you see the most recent incidents first.
 
 The incident queue exposes customizable columns that give you visibility into different characteristics of the incident or the contained entities, helping you make an informed decision regarding prioritization of incidents to handle. 
 

@@ -1,5 +1,5 @@
 ---
-title: Manage access to Microsoft Threat Protection data in Microsoft 365 security center
+title: Manage access to Microsoft Threat Protection data in the Microsoft 365 security center
 description: Learn how to manage permissions to data in Microsoft Threat Protection 
 keywords: access, permissions, MTP, Microsoft Threat Protection, M365, security, MCAS, MDATP, Cloud App Security, Microsoft Defender Advanced Threat Protection, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
@@ -33,7 +33,7 @@ Accounts assigned the following Azure Active Directory (AD) roles can access Mic
 - Global Reader
 - Security Reader
 
-To review accounts with these roles, [view Permissions in Microsoft 365 security center](https://security.microsoft.com/permissions).
+To review accounts with these roles, [view Permissions in the Microsoft 365 security center](https://security.microsoft.com/permissions).
 
 ## Access to functionality
 Access to specific functionality is determined by your [Azure AD role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Contact a global administrator if you need access to specific functionality that requires you or your user group be assigned a new role.
