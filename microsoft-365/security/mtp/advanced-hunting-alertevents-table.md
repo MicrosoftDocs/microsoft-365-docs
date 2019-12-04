@@ -1,6 +1,6 @@
 ---
-title: AlertEvents table in the Advanced hunting schema
-description: Learn about alert generation events in the AlertEvents table of the Advanced hunting schema
+title: AlertEvents table in the advanced hunting schema
+description: Learn about alert generation events in the AlertEvents table of the advanced hunting schema
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, alertevents, alert, severity, category
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -24,9 +24,9 @@ ms.topic: article
 
 [!include[Prerelease information](prerelease.md)]
 
-The `AlertEvents` table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about Microsoft Defender ATP alerts. Use this reference to construct queries that return information from this table.
+The `AlertEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about Microsoft Defender ATP alerts. Use this reference to construct queries that return information from this table.
 
-For information on other tables in the Advanced hunting schema, [see the Advanced hunting reference](advanced-hunting-schema-tables.md).
+For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|

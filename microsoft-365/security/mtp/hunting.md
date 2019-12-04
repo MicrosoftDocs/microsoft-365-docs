@@ -26,7 +26,7 @@ With threat hunting capabilities in Microsoft 365 security center, you can proac
 
 ## Hunt with Microsoft Threat Protection
 
-[Turn on Microsoft Threat Protection](mtp-enable.md) to get the advanced hunting query interface directly in the Microsoft 365 security center. With [Advanced hunting](advanced-hunting-overview.md), you can create single queries that look into data from both Microsoft Defender ATP, covering data from onboarded devices, and Office 365 ATP, providing data from emails.
+[Turn on Microsoft Threat Protection](mtp-enable.md) to get the advanced hunting query interface directly in the Microsoft 365 security center. With [advanced hunting](advanced-hunting-overview.md), you can create single queries that look into data from both Microsoft Defender ATP, covering data from onboarded devices, and Office 365 ATP, providing data from emails.
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

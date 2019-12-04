@@ -1,6 +1,6 @@
 ---
-title: Overview of Advanced hunting in Microsoft Threat Protection
-description: Learn about Advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
+title: Overview of advanced hunting in Microsoft Threat Protection
+description: Learn about advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Proactively hunt for threats with Advanced hunting in Microsoft Threat Protection
+# Proactively hunt for threats with advanced hunting in Microsoft Threat Protection
 
 **Applies to:**
 - Microsoft Threat Protection
@@ -26,11 +26,11 @@ ms.topic: article
 
 Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
 
-In Microsoft 365 security center, Advanced hunting supports queries that look into data from both Microsoft Defender ATP, covering data from onboarded devices, and Office 365 ATP, providing data from emails. To use Advanced hunting, [turn on Microsoft Threat Protection](mtp-enable.md).
+In Microsoft 365 security center, advanced hunting supports queries that look into data from both Microsoft Defender ATP, covering data from onboarded devices, and Office 365 ATP, providing data from emails. To use advanced hunting, [turn on Microsoft Threat Protection](mtp-enable.md).
 
-## Get started with Advanced hunting
+## Get started with advanced hunting
 
-We recommend going through several steps to quickly get up and running with Advanced hunting.
+We recommend going through several steps to quickly get up and running with advanced hunting.
 
 | Learning goal | Description | Resource |
 |--|--|--|
@@ -41,7 +41,7 @@ We recommend going through several steps to quickly get up and running with Adva
 
 ## Get help as you write queries
 Take advantage of the following functionality to write queries faster:
-- **Autosuggest** — as you write queries, Advanced hunting provides suggestions. 
+- **Autosuggest** — as you write queries, advanced hunting provides suggestions. 
 - **Schema reference** — a schema reference that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
 
 ## Drilldown from query results
@@ -54,14 +54,14 @@ Right-click a value in the result set to quickly enhance your query. You can use
 - Exclude the selected value from the query (`!=`)
 - Get more advanced operators for adding the value to your query, such as `contains`, `starts with` and `ends with` 
 
-![Image of Microsoft Defender ATP Advanced hunting result set](../images/advanced-hunting-results-filter.png)
+![Image of Microsoft Defender ATP advanced hunting result set](../images/advanced-hunting-results-filter.png)
 
 ## Filter the query results
 The filters displayed to the right provide a summary of the result set. Each column has its own section that lists the distinct values found for that column and the number of instances.
 
 Refine your query by selecting the "+" or "-" buttons on the values that you want to include or exclude and then selecting **Run query**.
 
-![Image of Advanced hunting filter](../images/advanced-hunting-filter.png)
+![Image of advanced hunting filter](../images/advanced-hunting-filter.png)
 
 Once you apply the filter to modify the query and then run the query, the results are updated accordingly.
 

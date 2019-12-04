@@ -1,5 +1,5 @@
 ---
-title: Use shared queries in Microsoft Threat Protection Advanced hunting
+title: Use shared queries in Microsoft Threat Protection advanced hunting
 description: Start threat hunting immediately with predefined and shared queries. Share your queries to the public or to your organization.
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, github repo, my queries, shared queries
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Use shared queries in Advanced hunting
+# Use shared queries in advanced hunting
 
 **Applies to:**
 - Microsoft Threat Protection
@@ -53,10 +53,10 @@ You can save a new or existing query so that it is only accessible to you or sha
 2. Select **Delete** and confirm deletion. Or select **Rename** and provide a new name for the query.
 
 ## Access queries in the GitHub repository  
-Microsoft security researchers regularly share Advanced hunting queries in a [designated public repository on GitHub](https://github.com/microsoft/MTP-AHQ). This repository is open to contributions. To contribute, [join GitHub for free](https://github.com/).
+Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://github.com/microsoft/MTP-AHQ). This repository is open to contributions. To contribute, [join GitHub for free](https://github.com/).
 
 >[!tip]
->Microsoft security researchers also provide Advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender Security Center.
+>Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender Security Center.
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting-overview.md)

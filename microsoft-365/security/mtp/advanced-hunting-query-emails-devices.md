@@ -1,5 +1,5 @@
 ---
-title: Find threats across devices and emails using Advanced hunting
+title: Find threats across devices and emails using advanced hunting
 description: Study common hunting scenarios and sample queries that cover devices and emails.
 keywords: advanced hunting, Office365 data, Windows devices, Office365 emails normalize, emails, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
