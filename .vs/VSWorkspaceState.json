@@ -3,8 +3,8 @@
     "",
     "\\microsoft-365",
     "\\microsoft-365\\security",
-    "\\microsoft-365\\security\\office-365-security"
+    "\\microsoft-365\\security\\mtp"
   ],
-  "SelectedNode": "\\microsoft-365\\security\\office-365-security\\anti-malware-protection-faq-eop.md",
+  "SelectedNode": "\\microsoft-365\\security\\mtp\\data-privacy.md",
   "PreviewInSolutionExplorer": false
 }
