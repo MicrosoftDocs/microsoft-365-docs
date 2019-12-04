@@ -75,6 +75,8 @@
                   href: mtp/mtp-autoir-actions.md
             - name: Advanced hunting
               items: 
+                - name: Hunting in Microsoft 365
+                  href: mtp/hunting.md
                 - name: Advanced hunting overview
                   href: mtp/advanced-hunting-overview.md
                 - name: Learn the query language

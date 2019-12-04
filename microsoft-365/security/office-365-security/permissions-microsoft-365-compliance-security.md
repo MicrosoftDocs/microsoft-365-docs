@@ -22,7 +22,7 @@ Your organization needs to manage security and compliance scenarios that span al
 
 After the global administrator assigns these admin roles, the admins have access to features and data that span all services in Microsoft 365, such as the Microsoft 365 security center, Microsoft 365 compliance center, Azure, Office 365, and Enterprise Mobility + Security.
 
-![Permissions page in Microsoft 365 security center](../media/m365-security-permissions-page.png)
+![Permissions page in the Microsoft 365 security center](../media/m365-security-permissions-page.png)
 
 ## What the Microsoft 365 roles are
 
@@ -88,7 +88,7 @@ Users with this role have permissions to manage security-related features in the
 
 ### Security operator
 
-Users with this role can manage alerts and have global read-only access on security-related feature, including all information in Microsoft 365 security center, Azure Active Directory, Identity Protection, Privileged Identity Management, as well as the ability to read Azure Active Directory sign-in reports and audit logs, and in Office 365 Security & Compliance Center.
+Users with this role can manage alerts and have global read-only access on security-related feature, including all information in the Microsoft 365 security center, Azure Active Directory, Identity Protection, Privileged Identity Management, as well as the ability to read Azure Active Directory sign-in reports and audit logs, and in Office 365 Security & Compliance Center.
 
 |**In this service...**|**The security operator can...**|
 |:-----|:-----|
@@ -103,7 +103,7 @@ Users with this role can manage alerts and have global read-only access on secur
 
 ### Security reader
 
-Users with this role have global read-only access on security-related feature, including all information in Microsoft 365 security center, Azure Active Directory, Identity Protection, Privileged Identity Management, as well as the ability to read Azure Active Directory sign-in reports and audit logs, and in Office 365 Security & Compliance Center.
+Users with this role have global read-only access on security-related feature, including all information in the Microsoft 365 security center, Azure Active Directory, Identity Protection, Privileged Identity Management, as well as the ability to read Azure Active Directory sign-in reports and audit logs, and in Office 365 Security & Compliance Center.
 
 |**In this service...**|**The security reader can...**|
 |:-----|:-----|

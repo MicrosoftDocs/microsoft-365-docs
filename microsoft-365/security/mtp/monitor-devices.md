@@ -129,13 +129,13 @@ Intune enrolled device data includes:
 
 ### Understand which devices have the most malware
 
-**Devices with malware detections** shows which devices have the most malware detections. In Microsoft 365 security center, you can investigate whether malware is active, who uses the device, and its management status in Intune.
+**Devices with malware detections** shows which devices have the most malware detections. in the Microsoft 365 security center, you can investigate whether malware is active, who uses the device, and its management status in Intune.
 
 ![Devices with malware detections card](../images/devices-with-malware-detections.png)
 
 ### Understand which users have devices with the most malware
 
-**Users with malware detections** shows users with devices that had the most malware detections. In Microsoft 365 security center, you can see how many devices are assigned to each user and more information about each device and the type of malware.
+**Users with malware detections** shows users with devices that had the most malware detections. in the Microsoft 365 security center, you can see how many devices are assigned to each user and more information about each device and the type of malware.
 
 ![Users with malware detection card](../images/users-with-malware-detections.png)
 
