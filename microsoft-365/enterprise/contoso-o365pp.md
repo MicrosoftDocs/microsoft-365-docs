@@ -65,7 +65,7 @@ To complete the deployment of Office, Contoso implemented the following process,
 7. In Configuration Manager, they deployed the Windows and Office packages to distribution points across their network, and then ran the Configuration Manager deployment task sequences to deploy the pilot Office 365 ProPlus package to the pilot group.
 8. After addressing any compatibility issues with the pilot group, Contoso ran the task sequences to deploy the broad Office 365 ProPlus package to the broad group.
 
-Because Contoso chose to automatically update devices from the cloud, there was no need to manage the process in Configuration Manager. Their devices are automatically updated directly from the cloud based on the update channel that was defined as part of the initial deployment. 
+Because Contoso chose to automatically update devices from the cloud, there was no need to manage the process in Configuration Manager. Their devices are automatically updated directly from the cloud-based on the update channel that was defined as part of the initial deployment. 
 
 Here is Contoso’s Office 365 ProPlus installation and ongoing updates deployment architecture.
 
