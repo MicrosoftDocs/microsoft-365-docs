@@ -20,7 +20,7 @@ The insider risk management content explorer allows risk analysts and investigat
 
 To make it easier for risk analysts and investigators to review captured data and messages and review the context to the case, several filtering and sorting tools are included in the Content Explorer. For basic sorting, the **Date** and **File class** columns support sorting using the column titles in the content queue pane. Other queue columns are available to add to the view to provide different pivots on the files and messages.
 
-To add or remove column headings for the content queue, use the **Edit columns** control and select from the following column options:
+To add or remove column headings for the content queue, use the **Edit columns** control and select from the following column options. These columns map to the common, email, and document property conditions supported in the content explorer and listed later in this topic.
 
 | **Column option** | **Description** |
 |:------------------|:----------------|
@@ -29,29 +29,29 @@ To add or remove column headings for the content queue, use the **Edit columns**
 | **Caption** |  |
 | **Cc** | Available for email messages, the users in the Cc message field. |
 | **Comments** |  |
-| **Compound path** |  |
-| **Conversation ID** |  |
-| **Conversation index** |  |
+| **Compound path** | Human readable path that describes the source of the item. |
+| **Conversation ID** | Conversation Id from the message. |
+| **Conversation index** | Conversation index from the message. |
 | **Created time** | The time the file or email message was created. |
 | **Date** | For email, the date a message was received by a recipient or sent by the sender. For documents, the date a document was last modified. |
-| **Dominant theme** |  |
-| **Email set ID** |  |
-| **Family ID** |  |
-| **File class** |  |
-| **File ID** |  |
+| **Dominant theme** | Dominant theme as calculated for analytics. |
+| **Email set ID** | Group ID for all messages in the same email set. |
+| **Family ID** | Family Id groups together all items; for email, this includes the message and all attachments; for documents, this includes the document and any embedded items. |
+| **File class** | For content from SharePoint and OneDrive: **Document**; for content from Exchange: **Email or **Attachment**. |
+| **File ID** | Document identifier unique within the case. |
 | **File type icon** | The extension of a file; for example, docx, one, pptx, or xlsx. This is the same property as the FileExtension site property. |
 | **ID** |  |
-| **Immutable ID** |  |
-| **Inclusive type** |  |
+| **Immutable ID** | Immutable Id as stored in Office 365. |
+| **Inclusive type** | Inclusive type calculated for analytics: **0** - not inclusive; **1** - inclusive; **2** - inclusive minus; **3** - inclusive copy. |
 | **Last modified** | The date that a document was last changed. |
 | **Marked as pivot** |  |
-| **Marked as representative** |  |
-| **Message kind** |  |
-| **Participants** |  |
-| **Pivot ID** |  |
+| **Marked as representative** | One document from each set of exact duplicates is marked as representatives. |
+| **Message kind** | The type of email message to search for. Possible values: contacts, docs, email, external data, faxes, im, journals, meetings, microsoft teams (returns items from chats, meetings, and calls in Microsoft Teams), notes, posts, rssfeeds, tasks, voicemail |
+| **Participants** | List of all participants of a message; for example, Sender, To, Cc, Bcc. |
+| **Pivot ID** | The ID of a pivot. |
 | **Received** | The date that an email message was received by a recipient. This is the same property as the Received email property. |
 | **Recipients** | All recipient fields in an email message. These fields are To, Cc, and Bcc. |
-| **Representative ID** |  |
+| **Representative ID** | Numeric identifier of each set of exact duplicates. |
 | **Sender** | The sender of an email message. |
 | **Sender/Author** | For email, the person who sent a message. For documents, the person cited in the author field from Office documents. You can type more than one name, separated by commas. Two or more values are logically connected by the OR operator. |
 | **Sent** | The date that an email message was sent by the sender. This is the same property as the Sent email property. |
@@ -59,7 +59,7 @@ To add or remove column headings for the content queue, use the **Edit columns**
 | **Source** |  |
 | **Subject** | The text in the subject line of an email message. |
 | **Subject/Title** | For email, the text in the subject line of a message. For documents, the title of the document. As previously explained, the Title property is metadata specified in Microsoft Office documents. You can type the name of more than one subject/title, separated by commas. Two or more values are logically connected by the OR operator. |
-| **Themes list** |  |
+| **Themes list** | Themes list as calculated for analytics. |
 | **Title** | The title of the document. The Title property is metadata that's specified in Office documents. It's different than the file name of the document. |
 | **To** | The recipient of an email message in the To field. |
 
@@ -125,6 +125,8 @@ The following table lists email message property conditions available the Conten
 | **Participants** | All the people fields in an email message. These fields are From, To, Cc, and Bcc. |
 | **Received** | The date that an email message was received by a recipient. |
 | **Recipient domains** | List of all domains of recipients of a message. |
+| **Sender** | Sender (From) field for message types.  Format is **DisplayName \<SmtpAddress>**. |
+| **Sender domain** | Domain of the sender. |
 | **Subject** | The text in the subject line of an email message.  <br/> **Note:** When you use the Subject property in a query, the search returns all messages in which the subject line contains the text you're searching for. In other words, the query doesn't return only those messages that have an exact match. For example, if you search for `subject:"Quarterly Financials"`, your results will include messages with the subject "Quarterly Financials 2018". |
 | **To** | The To field of an email message. |
 | **Unique in email set** | False if there's a duplicate of the attachment in its email set. |
@@ -170,8 +172,6 @@ The following table lists the metadata fields for documents in an insider risk m
 | **Relevance score** | Relevance score of a document based on Relevance. |
 | **Relevance tag** | Relevance score of a document based on Relevance. |
 | **Representative ID** | Numeric identifier of each set of exact duplicates. |
-| **Sender** | Sender (From) field for message types.  Format is **DisplayName \<SmtpAddress>**. |
-| **Sender domain** | Domain of the sender. |
 | **Source** |  |
 | **Tags** | Tags applied in a review set. |
 | **Themes list** | Themes list as calculated for analytics. |
