@@ -72,15 +72,15 @@ These images show:
   }
 ```
 
-Office 365 no longer uses the old classifications for new groups and SharePoint sites when you enable this preview. If you used [Azure AD site classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($setting["ClassificationList"]), existing groups and sites still display the old classifications. To display the new classifications, convert them. For information about how to convert them, see [If you used classic Azure AD site classification](#if-you-used-classic-azure-ad-site-classification).
+Office 365 no longer uses the old classifications for new groups and SharePoint sites when you enable this preview. If you used [Azure AD site classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($setting["ClassificationList"]), existing groups and sites still display the old classifications. To display the new classifications, convert them. For information about how to convert them, see [If you used classic Azure AD site classification](#if-you-used-classic-azure-ad-site-classification). 
 
-## Set site and group settings when you create (or edit) sensitivity labels
+## Set site and group settings when you create or edit sensitivity labels
 
-After you enable the preview, follow these steps to create sensitivity labels. Changes to these settings may take up to 24 hours sync.
+After you enable the preview, follow these steps to create or edit sensitivity labels. You must complete these steps for the new sensitivity labels to work with sites and groups, even if you already have labels defined. Changes to these settings may take up to 24 hours sync.
 
 1. In the Microsoft 365 compliance center, select **Classification** > **Sensitivity labels**.
 
-2. Select **Create a label**.
+2. Select **Create a label**. If you already have a label, skip to the next step.
 
 3. Select the options you want, and then on the **Site and group settings** tab, choose:
 
@@ -92,6 +92,14 @@ After you enable the preview, follow these steps to create sensitivity labels. C
 
 > [!IMPORTANT]
 > Only the site and group settings take effect when you apply a label to a team, group, or site. Other settings, such as encryption and content marking, aren't applied to all content within the team, group, or site. Similarly, if you create a label and don't turn on site and group settings, the label will still be available when users create teams, groups, and sites, but it won't do anything when users apply it.
+
+[Learn how to publish a sensitivity label](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
+
+## Troubleshoot sensitivity label deployment
+
+IF you experience issues when you create a Teams or Office 365 group after you enable these settings or make a change to a Label's description, save the Label, wait a few hours, and then try to create the Team or Office 365 group again.
+
+If you are still not able to see the new sensitivity label from SharePoint Online then contact Microsoft Support immediately.
 
 [Learn how to publish a sensitivity label](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
 
