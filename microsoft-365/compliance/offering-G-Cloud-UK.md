@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: United Kingdom Government-Cloud (G-Cloud)
+# United Kingdom Government-Cloud (G-Cloud)
 
 ## UK G-Cloud overview
 

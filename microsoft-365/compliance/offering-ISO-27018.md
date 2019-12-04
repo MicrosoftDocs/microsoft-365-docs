@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud
+# ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud
 
 ## ISO/IEC 27018 overview
 

@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Sarbanes-Oxley Act of 2002 (SOX)
+# Sarbanes-Oxley Act of 2002 (SOX)
 
 ## SOX overview
 

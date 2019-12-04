@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: U.S. Section 508
+# U.S. Section 508
 
 ## About U.S. Section 508
 

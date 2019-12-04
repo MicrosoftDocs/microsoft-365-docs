@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Australian Government Certified Cloud Services List (CCSL)
+# Australian Government Certified Cloud Services List (CCSL)
 
 ## CCSL overview
 
