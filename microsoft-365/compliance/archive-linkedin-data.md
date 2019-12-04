@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: "Administrators can set up a native connector to import data from a LinkedIn Company Page to Office 365. This lets you archive data from third-party data sources in Office 365 so you can use compliance features such as legal hold, content search, and retention policies to manage the compliance of your organization's third-party data."
+description: "Administrators can set up a native connector to import data from a LinkedIn Company Page to Office 365. This lets you archive data from third-party data sources in Office 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage the compliance of your organization's third-party data."
 ---
 
 # Set up a connector to archive LinkedIn data in Office 365 (Preview)
@@ -24,41 +24,41 @@ After the LinkedIn Company page data is stored in a mailbox, you can apply Offic
 
 - Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. To consent to this request, go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of an Office 365 global admin, and then accept the request.
 
-- The user who creates a LinkedIn Company Page connector must be assigned the Mailbox Import Export role in Exchange Online. This is required to access the **Archive third-party data** page in the Security & Compliance Center. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the  [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+- The user who creates a LinkedIn Company Page connector must be assigned the Mailbox Import Export role in Exchange Online. This role is required to access the **Archive third-party data** page in the Security & Compliance Center. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 - You must have the sign-in credentials (email address or phone number and password) of a LinkedIn user account that is an admin for the LinkedIn Company Page that you want to archive. You use these credentials to sign in to LinkedIn when setting up the connector.
 
 ## Create a LinkedIn connector
 
-1. Go to <https://protection.office.com> and then click **Data governance \> Import** and then click **Archive third-party data**.
+1. Go to <https://protection.office.com> and then select **Data governance \> Import** and then select **Archive third-party data**.
 
-2. On the **Archive third-party data** page, click **Add a connector**, and then click **LinkedIn**.
+2. On the **Archive third-party data** page, select **Add a connector**, and then select **LinkedIn**.
 
-3. On the **Terms of service** page, click **Accept**.
+3. On the **Terms of service** page, select **Accept**.
 
-4. On the **Sign in with LinkedIn** page, click **Sign in with LinkedIn**.
+4. On the **Sign in with LinkedIn** page, select **Sign in with LinkedIn**.
 
    The LinkedIn sign in page is displayed.
 
    ![LinkedIn sign in page](media/LinkedInSigninPage.png)
 
-5. On the LinkedIn sign in page, enter the email address (or phone number) and password for the LinkedIn account that associated with the company page that you want to archive, and then click **Sign in**.
+5. On the LinkedIn sign in page, enter the email address (or phone number) and password for the LinkedIn account associated with the company page that you want to archive, and then select **Sign in**.
 
    A wizard page is displayed with a list of all LinkedIn Company Pages associated with the account that you signed in to. A connector can only be configured for one company page. If your organization has multiple LinkedIn Company Pages, you have to create a connector for each one.
 
    ![A page with a list of LinkedIn Company Pages is displayed](media/LinkedInSelectCompanyPage.png)
 
-6. Select the company page that you want to archive items from, and then click **Next**.
+6. Select the company page that you want to archive items from, and then select **Next**.
 
-7. On the **Set filters** page, you can apply a filter to initially import items that are a certain age. Select an age, and then click **Next**.
+7. On the **Set filters** page, you can apply a filter to initially import items that are a certain age. Select an age, and then select **Next**.
 
-8. On the **Set storage account** page, type the email address of an Office 365 mailbox that the LinkedIn items will be imported to, and then click **Next**. Items are imported to the Inbox folder in this mailbox.
+8. On the **Set storage account** page, type the email address of an Office 365 mailbox that the LinkedIn items will be imported to, and then select **Next**. Items are imported to the Inbox folder in this mailbox.
 
-9. Review the connector settings and then click **Save** to complete the connector setup.
+9. Review the connector settings and then select **Save** to complete the connector setup.
 
-After you create the connector, you can go back to the **Archive third-party data** page (click **Refresh** if necessary to update the list of connectors) a view the new connector. The value in the **Status** column is **Waiting to start**. It takes up to 24 hours for the initial import process to be started. After the first time the connector runs and imports the LinkedIn items, the connector will run once every 24 hours and import any new items that are created on the LinkedIn Company Page in the previous 24 hours.
+After you create the connector, you can go back to the **Archive third-party data** page (select **Refresh** if necessary to update the list of connectors) a view the new connector. The value in the **Status** column is **Waiting to start**. It takes up to 24 hours for the initial import process to be started. After the first time the connector runs and imports the LinkedIn items, the connector will run once every 24 hours and import any new items that are created on the LinkedIn Company Page in the previous 24 hours.
 
-To view more details, click the connector in the list on the **Archive third-party data** page to display the flyout page. Under **Status**, the date range that's displayed indicates the age filter that was selected when the connector was created. 
+To view more details, select the connector in the list on the **Archive third-party data** page to display the flyout page. Under **Status**, the date range that's displayed indicates the age filter that was selected when the connector was created. 
 
 ## More information
 

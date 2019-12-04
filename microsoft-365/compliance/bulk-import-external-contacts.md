@@ -19,7 +19,7 @@ description: "Learn how admins can use Exchange Online PowerShell and a CSV file
 
 **This article is for administrators. Are you trying to import contacts to your own mailbox? See [Import contacts to Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
    
-Does your company have lots of existing business contacts that you want to include in the shared address book (also called the global address list) in Exchange Online? Do you want to add external contacts as members of distribution groups, just like you can with users inside your company? If so, you can use Exchange Online PowerShell and a CSV (Comma Separated Value) file to bulk import external contacts into Exchange Online. It's a three-step process:
+Does your company have lots of existing business contacts that you want to include in the shared address book (also called the global address list) in Exchange Online? Do you want to add external contacts as members of distribution groups, just like you can with users inside your company? If so, you can use Exchange Online PowerShell and a CSV (comma-separated value) file to bulk import external contacts into Exchange Online. It's a three-step process:
   
 [Step 1: Create a CSV file that contains information about the external contacts](#step-1-create-a-csv-file-that-contains-information-about-the-external-contacts)
 
@@ -37,7 +37,7 @@ After you complete these steps to import contacts, you can perform these additio
 
 The first step is to create a CSV file that contains information about each external contact that you want to import to Exchange Online. 
   
-1. Copy the following text to a text file in NotePad, and save it to your desktop as a CSV file by using a filename suffix of .csv; for example, ExternalContacts.csv.
+1. Copy the following text to a text file in NotePad, and save it on your desktop as a CSV file by using a filename suffix of .csv; for example, ExternalContacts.csv.
     
     > [!TIP]
     > If your language contains special characters (such as **å**, **ä**, and **ö** in Swedish) save the CSV file with UTF-8 or other Unicode encoding when you save the file in NotePad. 
@@ -90,11 +90,11 @@ The next step is to use the CSV file that you created in Step 1 and PowerShell t
 
 ## Step 3: Add information to the properties of the external contacts
 
-After you run the command in Step 2, the external contacts are created, but they don't contain any of the contact or organization information, which is the information from the most of the cells in the CSV file. This is because when you create new external contacts, only the required properties are populated. Don't worry if you don't have all the information populated in the CSV file. If it's not there, it won't be added.
+After you run the command in Step 2, the external contacts are created, but they don't contain any of the contact or organization information, which is the information from most of the cells in the CSV file. This is because when you create new external contacts, only the required properties are populated. Don't worry if you don't have all the information populated in the CSV file. If it's not there, it won't be added.
   
 1.  Connect PowerShell to your Exchange Online organization. For step-by-step instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     
-2. Go to the desktop folder where you saved the CSV file in Step 1; for example `C:\Users\Administrator\desktop`.
+2. Go to the desktop folder where you saved the CSV file in Step 1; for example, `C:\Users\Administrator\desktop`.
     
 3. Run the following two commands to add the other properties from the CSV file to the external contacts that you created in Step 2.
     

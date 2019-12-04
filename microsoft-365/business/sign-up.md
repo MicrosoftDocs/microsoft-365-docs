@@ -10,11 +10,14 @@ localization_priority: Normal
 ms.collection: 
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
@@ -37,6 +40,12 @@ There are three ways to get Microsoft 365 Business:
 - [Sign up for a home or family plan](https://go.microsoft.com/fwlink/?linkid=2109398) if you're not buying for a business. 
 
 ## Sign up steps
+
+Watch this video for a quick overview of the sign-up process.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 To sign up and purchase Microsoft 365 for your business, complete the following steps:
 
@@ -78,3 +87,6 @@ Select **Go to setup** to complete other steps such as adding more security to p
 
 To get help with setup, see [set up](set-up.md).
 
+## See also
+
+[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

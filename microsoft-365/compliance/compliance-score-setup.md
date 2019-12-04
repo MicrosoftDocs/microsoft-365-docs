@@ -14,7 +14,7 @@ search.appverid:
 description: "Learn how to sign in, set up permissions, and understand your dashboard for Microsoft Compliance Score, which helps simplify and automate risk assessments."
 ---
 
-# Microsoft Compliance Score setup (Preview)
+# Microsoft Compliance Score (Preview) setup
 
 ## Before you begin
 
@@ -58,8 +58,6 @@ To set permissions in the Microsoft 365 compliance center:
 
 1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com) and sign in with your global admin account.
 2. Select **Permissions** on the left navigation pane. From here, you can view roles and assign permissions.
-
-For details, read [roles and permissions in the Microsoft 365 compliance center](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
 
 ## Understand the Compliance Score dashboard
 

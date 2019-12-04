@@ -75,13 +75,11 @@ From here, you'll see cards for the following solutions:
 
 - To visit the Microsoft 365 solution catalog, go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in as a global administrator, compliance administrator, or compliance data administrator. Select **Catalog** in the navigation pane on the left side of the screen to open the catalog home page.
 
-- To learn more about requirements, see [Required licenses and permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
-
 ## Frequently asked questions
 
 **Why don't I see the new Microsoft 365 solution catalog yet?**
 
-First, make sure that you have the appropriate [licenses and permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions). Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) as a global administrator, compliance administrator, or compliance data administrator. If you still don't see the new solution catalog in the left navigation pane yet, you'll have it soon.
+First, make sure that you have the appropriate licenses and permissions. Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) as a global administrator, compliance administrator, or compliance data administrator. If you still don't see the new solution catalog in the left navigation pane yet, you'll have it soon.
 
 **Some of the compliance features listed on the solution catalog page aren't available in the Microsoft 365 compliance center. What do I do?**
 
