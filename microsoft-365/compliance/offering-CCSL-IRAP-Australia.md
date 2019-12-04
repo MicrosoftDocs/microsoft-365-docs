@@ -34,7 +34,7 @@ The Certified Cloud Services List (CCSL) identifies cloud services that have suc
 
 Microsoft’s Azure, Dynamics 365 CRM, and Office 365 continue to be included on the CCSL for both Unclassified: Dissemination Limiting Markers (DLM) (now OFFICIAL: Sensitive) and PROTECTED data based on the previous IRAP assessment and certification by the Australian Cyber Security Centre (ACSC).
 
-## Microsoft and IRAP</p>
+## Microsoft and IRAP
 
 In September 2019 Microsoft completed its annual update to the IRAP security assessments of Azure, Office 365, and Dynamics 365 Customer Engagement. For 2019, the scope of the Azure assessment includes both Dynamics 365 Customer Engagement and Azure DevOps.
 
