@@ -36,7 +36,7 @@ Microsoft Threat Protection is a comprehensive security solution bringing togeth
 Access the power of Microsoft Threat Protection through Microsoft 365 security center at [security.microsoft.com](https://security.microsoft.com).
 
 
-To turn the Microsoft Threat Protection service on, go to **Settings** > **Microsoft Threat Protection** > **Opt-in / Opt-out** in Microsoft 365 security center. Once the service is provisioned, it adds:
+To turn the Microsoft Threat Protection service on, go to **Settings** > **Microsoft Threat Protection** > **Opt-in / Opt-out** in the Microsoft 365 security center. Once the service is provisioned, it adds:
 
 - [Incidents management](incidents-overview.md)
 - An action center for managing [automated investigation and response](mtp-autoir.md)

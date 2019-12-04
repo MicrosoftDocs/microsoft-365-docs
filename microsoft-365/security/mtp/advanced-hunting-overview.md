@@ -26,7 +26,7 @@ ms.topic: article
 
 Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
 
-In Microsoft 365 security center, advanced hunting supports queries that look into data from both Microsoft Defender ATP, covering data from onboarded devices, and Office 365 ATP, providing data from emails. To use advanced hunting, [turn on Microsoft Threat Protection](mtp-enable.md).
+in the Microsoft 365 security center, advanced hunting supports queries that look into data from both Microsoft Defender ATP, covering data from onboarded devices, and Office 365 ATP, providing data from emails. To use advanced hunting, [turn on Microsoft Threat Protection](mtp-enable.md).
 
 ## Get started with advanced hunting
 
