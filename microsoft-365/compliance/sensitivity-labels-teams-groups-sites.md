@@ -97,11 +97,9 @@ After you enable the preview, follow these steps to create or edit sensitivity l
 
 ## Troubleshoot sensitivity label deployment
 
-IF you experience issues when you create a Teams or Office 365 group after you enable these settings or make a change to a Label's description, save the Label, wait a few hours, and then try to create the Team or Office 365 group again.
+If you experience issues when you create a Teams or Office 365 group after you enable these settings or make a change to a sensitivity label's description, save the label, wait a few hours, and then try to create the Team or Office 365 group again.
 
-If you are still not able to see the new sensitivity label from SharePoint Online then contact Microsoft Support immediately.
-
-[Learn how to publish a sensitivity label](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
+If you are still not able to see the new sensitivity label from SharePoint Online, then contact Microsoft Support immediately.
 
 ## Apply a sensitivity label to a new team
 
