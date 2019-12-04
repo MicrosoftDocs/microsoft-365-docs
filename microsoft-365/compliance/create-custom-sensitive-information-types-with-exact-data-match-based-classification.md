@@ -196,7 +196,7 @@ When you set up your rule package, make sure to correctly reference your .csv fi
   - Name & des Editing the schema criptions: customize as required.
 
 ```xml
-<RulePackage xmlns="https://schemas.microsoft.com/office/2018/edm">
+<RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
   <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b11">
     <Version build="0" major="2" minor="0" revision="0" />
     <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />
