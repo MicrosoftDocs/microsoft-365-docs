@@ -49,8 +49,8 @@
               href: mtp/overview-security-center.md
             - name: Microsoft 365 security prerequisites
               href: mtp/prerequisites.md
-	        - name: Microsoft Threat Protection data security and privacy
-			  href: mtp/data-privacy.md
+            - name: Microsoft Threat Protection data security and privacy
+              href: mtp/data-privacy.md
         - name: How-to guides
           items: 
             - name: Turn on Microsoft Threat Protection
