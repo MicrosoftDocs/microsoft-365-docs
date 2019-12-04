@@ -65,8 +65,6 @@ In addition to links in cards on the home page, you'll see a navigation pane on 
 
 - To visit the Microsoft 365 compliance center, as a global administrator, compliance administrator, or compliance data administrator go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
 
-- To learn more about requirements, see [Required licenses and permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
-
 ## Frequently asked questions
 
 **Why am I taken to the Office 365 Security & Compliance Center to complete some tasks, such as defining certain policies?**
@@ -75,7 +73,7 @@ We're still developing the Microsoft 365 compliance center, and we add more func
 
 **Why don't I see the new Microsoft 365 compliance center yet?**
 
-First, make sure that you have the appropriate [licenses and permissions](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions). Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com). If you don't see the new compliance center yet, you'll have it soon.
+First, make sure that you have the appropriate licenses and permissions. Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com). If you don't see the new compliance center yet, you'll have it soon.
 
 **Some of my compliance features aren't available in the Microsoft 365 compliance center. What do I do?**
 
