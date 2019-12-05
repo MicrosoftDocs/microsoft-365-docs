@@ -36,7 +36,7 @@ Turning on the Microsoft Threat Protection service aggregates data from the vari
 
 If Microsoft Defender ATP has been provisioned for your organization, data will be stored and processed in the same data center location you have selected for [your Microsoft Defender ATP data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have without Microsoft Defender ATP, you will be asked to choose a new data center location specifically for Microsoft Threat Protection. You will need to provide consent before data is shared between services and aggregated.
 
-With the service turned off, the Microsoft 365 security center at [security.microsoft.com](https://security.microsoft.com) does not show the **Incidents** and the **Action center** options on the menu.
+With the service turned off, Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) does not show the **Incidents** and the **Action center** options on the menu.
 
 ![Image of Microsoft 365 security center menu without Microsoft Threat Protection features](../images/mtp-off.png)
 *Microsoft 365 security center with Microsoft Threat Protection turned off*
@@ -48,7 +48,7 @@ To turn the Microsoft Threat Protection service on, go to **Settings** > **Micro
 - [Advanced hunting](advanced-hunting-overview.md) capabilities to the existing **Hunting** page
 
 ![Image of Microsoft 365 security center menu with Microsoft Threat Protection features](../images/mtp-on.png)
-*Microsoft 365 security center with Microsoft Threat Protection features*
+*Microsoft 365 security center with incidents management and other Microsoft Threat Protection features*
 
 ### Getting Azure ATP data
 To share Azure ATP data with Microsoft Threat Protection, ensure that Microsoft Cloud App Security and Azure ATP integration is turned on. [Learn more about this integration](https://docs.microsoft.com/cloud-app-security/aatp-integration)
