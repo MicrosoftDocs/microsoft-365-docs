@@ -38,12 +38,7 @@ Microsoft 365 security requires one of the following licenses:
 You can acquire these licenses from the [Microsoft 365 enterprise page](https://www.microsoft.com/en-us/microsoft-365/enterprise).
 
 ## Browser requirements
-Access to Microsoft 365 security center is done through a browser. The following browsers are supported:
-
-- Microsoft Edge
-- Internet Explorer version 11
-- Google Chrome
-
+Access to Microsoft 365 security center is done through a browser. Internet Explorer and Microsoft Edge is supported. Any HTML5 compliant browsers are also supported.
 
 
 
