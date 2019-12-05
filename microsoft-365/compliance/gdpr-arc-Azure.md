@@ -132,7 +132,7 @@ For more GDPR-related documentation, visit [https://aka.ms/gdprgetstarted](https
 | 7 <a name="7"> </a>   | [Who can access your data and on what terms](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
 | 8 <a name="8"> </a>   | [Contracts for sub-processors: Contracting with Microsoft](https://www.microsoft.com/procurement/supplier-contracting.aspx#SSPA) |
 | 9 <a name="9"> </a>   | [Azure Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure) |
-| 10 <a name="10"> </a> | [Azure and Breach Notification Under the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure) |
+| 10 <a name="10"> </a> | [Azure and Dynamics 365 breach notification under the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics) |
 | 11 <a name="11"> </a> | [Key Information from Azure for Customer Data Protection Impact Assessments](https://aka.ms/DPIAAzure) |
 | 12 <a name="12"> </a> | [SOC 2 Type 2 Audit Report [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |

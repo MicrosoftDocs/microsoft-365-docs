@@ -33,15 +33,15 @@ Follow these steps to set up and use communication compliance in your Microsoft 
   
 - **Step 1 (optional)**: [Set up groups for communication compliance](#step-1-set-up-groups-for-communication-compliance-optional) 
 
-    Before you start using communication compliance, determine who needs communications reviewed and who performs reviews. If you want to get started with just a few users to see how communication compliance works, you can skip setting up groups for now.
+    Before you start using communication compliance, determine who needs communications reviewed and who does reviews. If you want to get started with just a few users to see how communication compliance works, you can skip setting up groups for now.
 
 - **Step 2 (required)**: [Make communication compliance available in your organization](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    Add yourself to the **Supervisory Review Administrator** role so you can set up policies. You'll also need to assign the **Case Management** and **Review** roles to people or groups that will take investigative and remediation action on messages with policy matches. Anyone who has these roles assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Add yourself to the **Supervisory Review Administrator** role so you can set up policies. You'll also need to create a group with the **Supervisory Review Administrator**, **Case Management**, and **Review** roles to people or groups that will take investigative and remediation action on messages with policy matches. Anyone who has these roles assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Step 3 (required)**: [Set up a communication compliance policy](#step-3-create-a-communication-compliance-policy-required)
 
-    You create communication compliance policies in the Microsoft 365 compliance center. These policies define which communications are subject to review in your organization and specifies who performs reviews. Communications include email, Microsoft Teams, Skype for Business, and 3rd-party platform communications (such as Facebook, Twitter, etc.).
+    You create communication compliance policies in the Microsoft 365 compliance center. These policies define which communications are subject to review in your organization and specifies who does reviews. Communications include email, Microsoft Teams, Skype for Business, and third-party platform communications (such as Facebook, Twitter, and so on).
 
 - **Step 4 (optional)**: [Create employee notice templates](#step-4-create-employee-notice-templates-optional)
 
@@ -49,11 +49,11 @@ Follow these steps to set up and use communication compliance in your Microsoft 
 
 - **Step 5 (optional)**: [Test your communication compliance policy](#step-5-test-your-communication-compliance-policy-optional)
 
-    Test your communication compliance policy to make sure it functions as desired. It is important to ensure that your compliance strategy is meeting your standards.
+    Test your communication compliance policy to make sure it functions as desired. It's important to ensure that your compliance strategy is meeting your standards.
 
 ## Step 1: Set up groups for communication compliance (optional)
 
- When you create a communication compliance policy, you define who has their communications reviewed and who performs reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, you can create groups for people who have their communication reviewed and groups for people who review those communications. If you're using groups, you may need several. For example, you want to monitor communications between two distinct groups of people or if you want to specify a group that isn't going to be supervised.
+ When you create a communication compliance policy, you define who has their communications reviewed and who performs reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, you can create groups for people who have their communication reviewed and groups for people who review those communications. If you're using groups, you may need several. For example, if you want to monitor communications between two distinct groups of people or if you want to specify a group that isn't going to be supervised.
 
 Use the following chart to help you configure groups in your organization for communication compliance policies:
 
@@ -72,29 +72,7 @@ For more information about setting up groups, see:
 
 ## Step 2: Make communication compliance available in your organization (required)
 
-To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the Supervisory Review Administrator role. To investigate and remediate messages with policy matches, you must be assigned the **Case Management** and **Review** roles.
-  
-To do this, you can either add yourself as a member of the Supervisory Review role group, or you can create a new role group.
-  
-### Add required roles to the Supervisory Reviewer role group
-
-1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
-
-2. In the Microsoft 365 compliance center, go to **Permissions**. Select the link to view and manage roles in Office 365.
-
-3. Select the **Supervisory Review** role group and then click **Edit** in the **Assigned roles** section of the details page.
-
-4. Select **Edit**, then select **Add**. Select the checkbox for **Case Management** and **Review**, then select **Add**.
-
-5. Select **Done**, then select **Save**.
-
-6. In the **Members** section, select **Edit** to add the people who you want to manage communication compliance for your organization.
-
-7. Select **Edit**, then select **Add**. Select the checkbox for all the users and groups you want manage messages with policy matches, then select **Add**.
-
-8. Select **Done**, then select **Save**.
-
-9. Select **Close** to exit the role group detail page.
+To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the **Supervisory Review Administrator** role. Additionally, to investigate and remediate messages with policy matches, you must create a group for reviewers with the **Supervisory Review Administrator**, **Case Management**, and **Review** roles.
 
 ### Create a new role group
 
@@ -133,24 +111,24 @@ For more information about role groups and permissions, see [Permissions in the 
 
     If you choose to use the policy wizard to create a custom policy, you will:
 
-    - Give the policy a name and description. Policy names cannot be changed once the policy is created.
-    - Choose the users or groups to supervise, including choosing all users in your organization, specific users and groups, or other users and groups you'd like to exclude. -
+    - Give the policy a name and description. Policy names can't be changed once the policy is created.
+    - Choose the users or groups to supervise, including all users in your organization, specific users and groups, or other users and groups you'd like to exclude. -
     - Choose the reviewers for the policy. Reviewers can be individual users or [mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). All reviewers must have mailboxes hosted on Exchange Online.
-    - Choose the communication channels to scan, including Exchange, Microsoft Teams, or Skype for Business. You'll also choose to scan third party sources if you've configured a connector in Microsoft 365.
+    - Choose the communication channels to scan, including Exchange, Microsoft Teams, or Skype for Business. You'll also choose to scan third-party sources if you've configured a connector in Microsoft 365.
     - Choose the communication direction to monitor, including inbound, outbound, or internal communications.
     - Define the communication compliance policy [conditions](communication-compliance-feature-reference.md#ConditionalSettings). You can choose from message address, keyword, file types, and size match conditions.
-    - Choose if you'd like to include sensitive information types. This is where you can select default and custom sensitive info types. Pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard, you can create these items before running the wizard if needed. If desired, you can also create new sensitive information types from within the communication compliance policy wizard.
+    - Choose if you'd like to include sensitive information types. This is where you can select default and custom sensitive info types. Pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard. You can create these items before running the wizard if needed. You can also create new sensitive information types from within the communication compliance policy wizard.
     - Choose if you'd like to enable the offensive language model. This detects inappropriate language sent or received in the body of email messages.
     - Define the percentage of communications to review.
     - Review your policy selections and create the policy.
 
 5. Select **Create policy** when using the templates or **Submit** when using the custom policy wizard.
 
-6. The **Your policy was created** page is displayed with guidelines on when policy will be activated and communications will be captured.
+6. The **Your policy was created** page is displayed with guidelines on when policy will be activated and which communications will be captured.
 
 ## Step 4: Create employee notice templates (optional)
 
-If you want to have the option of responding to a policy alert by sending a reminder notice to the associated employee, you'll need to create at least one notice template in your organization. The notice template fields are editable prior to sending as part of the alert remediation process and creating a customized notice template for each communication compliance policy is recommended.
+If you want to have the option of responding to a policy alert by sending a reminder notice to the associated employee, you'll need to create at least one notice template in your organization. The notice template fields are editable before they're sent as part of the alert remediation process, and creating a customized notice template for each communication compliance policy is recommended.
 
 1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
@@ -170,16 +148,16 @@ If you want to have the option of responding to a policy alert by sending a remi
 
 ## Step 5: Test your communication compliance policy (optional)
 
-After you create a communication compliance policy, it's a good idea to test to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your data loss prevention (DLP) policies](create-test-tune-dlp-policy.md) if your communication compliance policies include sensitive information types. Make sure you give your policies time to activate so that the communications you want to test are captured.
+After you create a communication compliance policy, it's a good idea to test it to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your data loss prevention (DLP) policies](create-test-tune-dlp-policy.md) if your communication compliance policies include sensitive information types. Make sure you give your policies time to activate so that the communications you want to test are captured.
 
 Follow these steps to test your communication compliance policy:
 
-1. Open an email client or Microsoft Teams logged in as a supervised user defined in the policy you want to test.
-2. Send an email or Microsoft Teams chat that meets the criteria you've defined in the communication compliance policy. This can be a keyword, attachment size, domain, etc. Make sure that you determine if your configured conditional settings in the policy are too restrictive or too lenient.
+1. Open an email client or Microsoft Teams while signed in as a supervised user defined in the policy you want to test.
+2. Send an email or Microsoft Teams chat that meets the criteria you've defined in the communication compliance policy. This can be a keyword, attachment size, domain, and so on. Make sure you determine if your configured conditional settings in the policy are too restrictive or too lenient.
 
     > [!NOTE]
     > Communications in all source channels can take up to 24 hours to fully process in a policy.
 
-3. Log into Microsoft 365 as a reviewer designated in the communication compliance policy. Navigate to **Communication compliance** > **Alerts** to view the alerts for your policies.
+3. Sign in to Microsoft 365 as a reviewer designated in the communication compliance policy. Navigate to **Communication compliance** > **Alerts** to view the alerts for your policies.
 
 4. Remediate the alert using the remediation controls and verify that the alert is properly resolved.

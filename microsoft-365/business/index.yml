@@ -40,10 +40,10 @@ conceptualContent:
   #Card
     - title: Set up Microsoft 365 Business
       links:
-        - url: https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1
-          itemType: video
+        - url: set-up.md
+          itemType: how-to-guide
           text: 1. Run the setup wizard
-        - url: protection-settings-for-windows-10-pcs.md
+        - url: secure-win-10-pcs.md
           itemType: how-to-guide
           text: 2. Secure your PCs
         - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
@@ -186,18 +186,18 @@ conceptualContent:
         - url: sign-up.md
           itemType: get-started
           text: Sign up for Microsoft 365 Business
-        - url: https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790
-          itemType: video
-          text: Store files in the cloud
-        - url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
-          itemType: video
-          text: Collaborate with Microsoft Teams
-        - url: https://docs.microsoft.com/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=%2Fmicrosoft-365%2Fbusiness%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbusiness%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+        - url: migrate-to-microsoft-365-business.md
           itemType: how-to-guide
-          text: View my bill
+          text: Migrate from Office 365 Business Premium 
+        - url: migrate-from-e3.md
+          itemType: how-to-guide
+          text: Migrate from Office 365 E3 
+        - url: migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md
+          itemType: how-to-guide
+          text: Migrate to Microsoft 365 Enterprise E3
       # footerLink (optional)
       footerLink:
-        url: https://docs.microsoft.com/microsoft-365/security/
+        url: microsoft-365-business-overview.md
         text: See more 
   
 

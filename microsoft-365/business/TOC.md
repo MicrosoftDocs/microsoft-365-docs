@@ -6,10 +6,11 @@
 ## Setup
 ### [Overview of setup](set-up-overview.md)
 ### [Set up Microsoft 365 Business](set-up.md)
+### [Secure Windows 10 computers](secure-win-10-pcs.md)
 ### [Upgrade to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
 ### [Prepare for Office client deployment](prepare-for-office-client-deployment.md)
 ### [Help users install Office](help-users-install-office.md)
-### [Access on-premises resources]()
+### Access on-premises resources
 #### [Enable domain-joined Windows 10 devices to be managed](manage-windows-devices.md)
 #### [Access resources from an Azure AD-joined device](access-resources.md)
 ## User device setup
@@ -35,7 +36,7 @@
 ## Migrate to Microsoft 365 Business
 ### [Migrate from Office 365 Business Premium](migrate-to-microsoft-365-business.md)
 ### [Migrate from Office 365 E3](migrate-from-e3.md)
-### [Migrate ro Microsoft 365 Enterprise](migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md)
+### [Migrate to Microsoft 365 Enterprise](migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md)
 ## Billing
 ### [Your bill](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [Pay](/Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)

@@ -1,5 +1,5 @@
 ---
-title: Use AllowSelfServicePurchase to enable or disable self-service purchases
+title: Use AllowSelfServicePurchase for the MSCommerce PowerShell module
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -118,6 +118,21 @@ Connect-MSCommerce #sign-in with your global or billing administrator account wh
 $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | where {$_.ProductName -match 'Power Automate'}
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
 ```
+
+## Troubleshooting
+
+**Problem**
+
+You see the following error message:
+
+    HandleError : Failed to retrieve policy with PolicyId 'AllowSelfServicePurchase', ErrorMessage - The underlying
+    connection was closed: An unexpected error occurred on a send.
+
+This may be due to an older version of Transport Layer Security (TLS). To connect this service you need to use TLS 1.2 or greater
+
+**Solution**
+
+Upgrade to TLS 1.2: [https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

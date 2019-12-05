@@ -57,9 +57,9 @@ In this phase, you verify that the privileged access policy is working and users
 
 First, connect to Exchange Management PowerShell with the credentials of a user configured as a Global Administrator in your test environment and attempt to create a new Journal rule. The [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps) task is not currently defined in a privileged access policy for your organization.
 
-1. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using the Global Admin account for your test environment.
+1. On your local computer, open and sign into the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using the Global Admin account for your test environment.
 
-2. In Exchange Management Powershell, create a new Journal rule for your organization:
+2. In Exchange Management PowerShell, create a new Journal rule for your organization:
 
 ```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
@@ -96,15 +96,15 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### Test approval requirement for the New-JournalRule task defined in a privileged access policy
 
-1. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using an using the Global Admin account for your test environment.
+1. On your local computer, open and sign into the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using an using the Global Admin account for your test environment.
 
-2. In Exchange Management Powershell, create a new Journal rule for your organization:
+2. In Exchange Management PowerShell, create a new Journal rule for your organization:
 
 ```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
 
-3. View "Insuffient permissions" error in Exchange Management PowerShell:
+3. View "Insufficient permissions" error in Exchange Management PowerShell:
 
 ```ExchangeManagementPowerShell
 Insufficient permissions. Please raise an elevated access request for this task.
@@ -144,13 +144,13 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 3. Select **Manage access policies and requests**.
 
-4. Select the pending request and select **Approve** to grant access to the Global Admin account to create a new Journal Rule. An notification email confirming that approval has been granted will be sent to the Global Admin account (the requesting user).  
+4. Select the pending request and select **Approve** to grant access to the Global Admin account to create a new Journal Rule. A notification email confirming that approval has been granted will be sent to the Global Admin account (the requesting user).  
 
 ### Test creating a new Journal Rule with privileged access approved for the New-JournalRule task
 
-1. On your local computer, open and sign into the the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using the Global Admin account for your test environment.
+1. On your local computer, open and sign into the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using the Global Admin account for your test environment.
 
-2. In Exchange Management Powershell, create a new Journal rule for your organization:
+2. In Exchange Management PowerShell, create a new Journal rule for your organization:
 
 ```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
