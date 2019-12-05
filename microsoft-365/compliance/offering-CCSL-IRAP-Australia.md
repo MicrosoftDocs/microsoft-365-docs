@@ -38,7 +38,7 @@ Microsoft’s Azure, Dynamics 365 CRM, and Office 365 continue to be included on
 
 In September 2019 Microsoft completed its annual update to the IRAP security assessments of Azure, Office 365, and Dynamics 365 Customer Engagement. For 2019, the scope of the Azure assessment includes both Dynamics 365 Customer Engagement and Azure DevOps.
 
-The assessment of Microsoft’s services in Australia covers the four available Azure regions. For Government and critical infrastructure, we’ve deployed two regions designed specifically for your needs that are delivered from CDC Data Centres in Canberra; [Australia Central and Australia Central 2](https://azure.microsoft.com/en-us/global-infrastructure/australia/). The differences between the Australian regions are covered in detail in the Azure IRAP Assessment report, which is available on the Australia-specific page of [Microsoft Service Trust Portal](https://aka.ms/au-irap).
+The assessment of Microsoft’s services in Australia covers the four available Azure regions. For Government and critical infrastructure, we’ve deployed two regions designed specifically for your needs that are delivered from CDC Data Centres in Canberra; [Australia Central and Australia Central 2](https://azure.microsoft.com/global-infrastructure/australia/). The differences between the Australian regions are covered in detail in the Azure IRAP Assessment report, which is available on the Australia-specific page of [Microsoft Service Trust Portal](https://aka.ms/au-irap).
 
 For each assessment, Microsoft engaged an ACSC-accredited IRAP assessor who examined the security controls and processes used by Microsoft’s IT operations team, physical datacenters, intrusion detection, cryptography, cross-domain and network security, access control, and information security risk management of in-scope services. The IRAP assessments found that the Microsoft system architecture is based on sound security principles, and that the applicable Australian Government Information Security Manual (ISM) controls are in place and fully effective within our assessed services.
 
@@ -85,7 +85,3 @@ Start with [What is IRAP?](https://www.cyber.gov.au/irap/what-irap) and follow i
 - [Australia Security and Gateway Guides](ttps://docs.microsoft.com/azure/azure-australia)
 - [ASD Certified Cloud Services](https://acsc.gov.au/infosec/irap/certified_clouds.htm)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/9/C/99CF1E4A-510C-45FD-9819-B81E1CDFC3C3/IRAP_CCSL_Compliance_Backgrounder.pdf).
