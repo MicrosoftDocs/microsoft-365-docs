@@ -30,7 +30,7 @@ This section addresses issues that might arise as you use the Microsoft Threat P
 ## Not seeing Microsoft Threat Protection content
 If you don't see capabilities on the navigation page such as the Incidents, Action Center, or Hunting in your portal you'll need to verify that your tenant has the appropriate license. 
 
-For more information, see the eligibility page.
+For more information, see [Prerequisites](prerequisites.md).
 
 ## Azure ATP alerts are not showing up in the Microsoft Threat Protection incidents
 If you have Azure ATP deployed in your environment but you're not seeing Azure ATP alerts as part of Microsoft Threat Protection incidents, you'll need to ensure that the Microsoft Cloud App Security and Azure ATP integration is enabled. 

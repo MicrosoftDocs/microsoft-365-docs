@@ -51,6 +51,8 @@
               href: mtp/prerequisites.md
             - name: Data security and privacy
               href: mtp/data-privacy.md
+            - name: Troubleshoot issues
+              href: ./mtp/troubleshoot.md
         - name: How-to guides
           items: 
             - name: Turn on Microsoft Threat Protection
@@ -150,8 +152,7 @@
                   href: mtp/mtp-time-zone.md
             - name: Manage tickets through ServiceNow
               href: ./mtp/tickets.md
-            - name: Troubleshoot issues
-              href: ./mtp/troubleshoot.md
+
 
     - name: Office 365 Security
 
