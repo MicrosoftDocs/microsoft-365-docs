@@ -27,7 +27,7 @@ description: "Overview of the setup steps for Microsoft 365 Business."
 
 # Overview of setup
 
-Watch a short video about Microsoft 365 Business setup.
+Watch a short video about Microsoft 365 Business setup.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
