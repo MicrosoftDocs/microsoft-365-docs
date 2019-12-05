@@ -64,6 +64,6 @@ At a high level, here's how [ATP Safe Links](atp-safe-links.md) protection works
       
       - If the URL check fails, Safe Links' protection will not trigger. On the desktop clients, the user will be warned before proceeding through to the site.
       
-Note: It may take several seconds at the beginning of each session for Office to verify that the user has ATP Safe Links for Office enabled. 
+> [!NOTE]
+> It may take several seconds at the beginning of each session for Office 365 to verify that the user has ATP Safe Links for Office enabled. 
       
-
