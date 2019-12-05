@@ -26,14 +26,14 @@ ms.topic: conceptual
 
 Microsoft Threat Protection is a unified pre and post breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate and automatically respond to sophisticated attacks.  
 
-With the integrated Microsoft Threat Protection solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it’s affected, and how it’s currently impacting the organization. Microsoft Threat Protection takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.  
+With the integrated Microsoft Threat Protection solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft Threat Protection takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.  
 
 
 Microsoft Threat Protection suite protects: 
 - **Endpoints with Microsoft Defender ATP** - Microsoft Defender ATP is a unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response. 
 - **Email and collaboration with Office 365 ATP** - Office 365 ATP safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools. 
 - **Identities with Azure ATP and Azure AD Identity Protection** - Azure ATP uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. 
-- **Applications with Microsoft Cloud App security** – Microsoft Cloud App security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. 
+- **Applications with Microsoft Cloud App security** - Microsoft Cloud App security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. 
 
 Microsoft Threat Protection's unique cross-product layer augments the individual suite components to:
 - Help protect against attacks and coordinate defensive responses across the suite through signal sharing and automated actions
@@ -41,13 +41,13 @@ Microsoft Threat Protection's unique cross-product layer augments the individual
 - Automate response to compromise by triggering self-healing for impacted assets through automated remediation
 - Enable security teams to perform detailed and effective threat hunting across endpoint and Office data
 
-![Image of incident overview page](../images/overview-incident.png)
+![Image of incident overview page](../images/overview-incident.png) <br>
 Cross-product incident (Overview)
 
-![Image of alerts queue](../images/incident-list.png)
+![Image of alerts queue](../images/incident-list.png)<br>
 All related alerts across the suite products correlated together into a single incident (alerts view)
 
-![Image of incident queue](../images/advanced-hunting.png)
+![Image of incident queue](../images/advanced-hunting.png)<br>
 Query-based hunting on top of email and endpoint raw data
 
 
