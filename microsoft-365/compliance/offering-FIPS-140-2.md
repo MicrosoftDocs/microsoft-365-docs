@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Federal Information Processing Standard (FIPS) Publication 140-2
+# Federal Information Processing Standard (FIPS) Publication 140-2
 
 ## FIPS 140-2 standard overview
 

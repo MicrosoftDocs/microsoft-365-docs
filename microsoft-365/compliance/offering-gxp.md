@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Good Clinical, Laboratory, and Manufacturing Practices (GxP)
+# Good Clinical, Laboratory, and Manufacturing Practices (GxP)
 
 ## About GxP
 

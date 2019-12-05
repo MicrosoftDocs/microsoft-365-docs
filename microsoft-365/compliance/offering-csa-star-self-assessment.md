@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Cloud Security Alliance (CSA) STAR self-assessment
+# Cloud Security Alliance (CSA) STAR self-assessment
 
 ## CSA STAR self-assessment overview
 

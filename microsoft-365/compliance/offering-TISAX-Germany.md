@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Trusted Information Security Assessment Exchange (TISAX) Germany
+# Trusted Information Security Assessment Exchange (TISAX) Germany
 
 ## About TISAX
 

@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Center for Internet Security (CIS) Benchmarks
+# Center for Internet Security (CIS) Benchmarks
 
 ## About CIS Benchmarks
 

@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Federal Financial Institutions Examination Council (FFIEC)
+# Federal Financial Institutions Examination Council (FFIEC)
 
 ## FFIEC overview
 

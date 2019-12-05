@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: New Zealand Government Cloud Computing Security and Privacy Considerations
+# New Zealand Government Cloud Computing Security and Privacy Considerations
 
 ## New Zealand Government Cloud Computing Security and Privacy overview
 

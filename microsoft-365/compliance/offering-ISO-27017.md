@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: ISO/IEC 27017:2015 Code of Practice for Information Security Controls
+# ISO/IEC 27017:2015 Code of Practice for Information Security Controls
 
 ## ISO-IEC 27017 Overview
 

@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Web Content Accessibility Guidelines 2.1
+# Web Content Accessibility Guidelines 2.1
 
 ## About WCAG 2.1
 

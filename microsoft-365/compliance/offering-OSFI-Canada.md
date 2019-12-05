@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Office of the Superintendent of Financial Institutions (OSFI) Canada
+# Office of the Superintendent of Financial Institutions (OSFI) Canada
 
 ## About the OSFI
 
