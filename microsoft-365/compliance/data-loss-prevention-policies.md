@@ -217,7 +217,7 @@ For example, the built-in **U.S. HIPAA** policy has a rule that uses an **AND** 
 
 When you create rules in a policy, each rule is assigned a priority in the order in which it's created — meaning, the rule created first has first priority, the rule created second has second priority, and so on. 
   
-![Rules in priority order](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
+![Rules in priority order](media/dlp-rules-in-priority-order.png)
   
 After you have set up more than one DLP policy, you can change the priority of one or more policies. To do that, select a policy, choose **Edit policy**, and use the **Priority** list to specify its priority.
 
