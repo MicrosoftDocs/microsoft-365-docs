@@ -1,5 +1,5 @@
 ---
-title: "Office 365 threat investigation and response"
+title: "Office 365 threat investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2"
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -20,21 +20,22 @@ description: "Find out how threat intelligence capabilities in Office 365 Advanc
 # Office 365 threat investigation and response
 
 Threat investigation and response capabilities in [Office 365 Advanced Threat Protection](office-365-atp.md) help security analysts and administrators protect their organization's Office 365 users by:
-  
 - Making it easy to identify, monitor and understand cyberattacks
-    
 - Helping to quickly address threats in Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams
-    
 - Providing insights and knowledge to help security operations prevent cyberattacks against their organization
-
 - Employing [automated incident response](automated-investigation-response-office.md) for critical email-based threats
     
 Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Office 365 Security &amp; Compliance Center. These insights can help your organization's security team protect Office 365 users from email- or file-based attacks. The capabilities help monitor signals and gathers data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and Office 365 global administrators, security administrators, and security analysts can all use this information to understand and respond to threats against Office 365 users and protect intellectual property.
 
 ## Get acquainted with threat investigation and response tools
 
-Threat investigation and response capabilities surface in the Security &amp; Compliance Center, as a set of tools and response workflows, including the [threat dashboard](#threat-dashboard), [Explorer](#threat-explorer), [Incidents](#incidents), [Attack Simulator](#attack-simulator), and [Automated incident response](automated-investigation-response-office.md).
-  
+Threat investigation and response capabilities surface in the Security &amp; Compliance Center, as a set of tools and response workflows, including the following:
+- [Threat dashboard](#threat-dashboard)
+- [Explorer](#threat-explorer)
+- [Incidents](#incidents)
+- [Attack Simulator](#attack-simulator)
+- [Automated incident response](automated-investigation-response-office.md)
+
 ### Threat dashboard
 
 Use the Threat dashboard (this is also referred to as the [Security dashboard](security-dashboard.md)) to quickly see what threats have been addressed, and as a visual way to report to business decision makers how Office 365 services are securing your business.
@@ -77,31 +78,17 @@ As part of the Office 365 Advanced Threat Protection Plan 2 offering, security a
   
 ## How do we get these capabilities?
 
-Office 365 threat investigation and response capabilities are included in Office 365 Advanced Threat Protection Plan 2 and Enterprise E5. 
+Office 365 threat investigation and response capabilities are included in Office 365 Advanced Threat Protection Plan 2, which is included in Enterprise E5 or as an add-on to certain subscriptions. To learn more, see [Office 365 ATP Plan 1 and Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-> [!TIP]
-> If your organization has an Office 365 subscription that does not include these threat investigation and response capabilities, you can potentially purchase Office 365 Advanced Threat Protection Plan 2 as an add-on. For more information about plan options, see [Office 365 Advanced Threat Protection service description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) and [Buy or edit an add-on for Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
-  
-1. As an Office 365 global administrator, go to [https://admin.microsoft.com](https://admin.microsoft.com) and sign in using your work or school account for Office 365. 
-    
-2. Choose **Admin** \> **Billing** to see what your current subscription includes. 
-    - If you see **Office 365 Enterprise E5**, then your organization has Office 365 Advanced Threat Protection Plan 2 (which includes threat investigation and response capabilities). 
-    - If you see a different subscription, such as **Office 365 Enterprise E3** or **Office 365 Enterprise E1**, consider adding Office 365 Advanced Threat Protection Plan 2. (To do that, choose **+ Add subscription**.)
-    
-3. In the Microsoft 365 admin center, choose **Users** \> **Active users**.
-    
-4. Assign Office 365 Advanced Threat Protection Plan 2 licenses to all active users. (Only users who have a license for this will show up in reports, such as Explorer.)
-    
-5. Assign roles to people in your organization who will be working with the Office 365 Advanced Threat Protection. See [Give users access to the Office 365 Security &amp; Compliance Center](grant-access-to-the-security-and-compliance-center.md), and refer to the following table:<br/><br/>
+## Required roles and permissions
 
-
-  |**To do this activity...** <br/> |**You must have these roles** <br/> |  
-  |:-----|:-----|
-  |Use the Threat dashboard (or the new [Security dashboard](security-dashboard.md))<br/> View information about recent or current threats  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/> |
-  |Use [Threat Explorer (and real-time detections)](threat-explorer.md) to analyze threats  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/> |
-  |View Incidents (also referred to as Investigations) <br/> Add email messages to an incident  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/>  <br/> |
-  |Trigger email actions in an incident  <br/> Find and delete suspicious email messages  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>--- and ---<br/>- **Search and Purge** (assigned only in the Office 365 Security &amp; Compliance Center)  <br/> |
-  |Integrate Office 365 Advanced Threat Protection Plan 2 with Microsoft Defender ATP  <br/> Integrate Office 365 Advanced Threat Protection Plan 2 with a SIEM server  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>--- and ---<br/>An appropriate role assigned in additional applications (such as Microsoft Defender Security Center or a SIEM server)  <br/> |
+|**To do this activity...** <br/> |**You must have these roles** <br/> |  
+|:-----|:-----|
+|Use the Threat dashboard (or the new [Security dashboard](security-dashboard.md))<br/> View information about recent or current threats  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/> |
+|Use [Threat Explorer (and real-time detections)](threat-explorer.md) to analyze threats  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/> |
+|View Incidents (also referred to as Investigations) <br/> Add email messages to an incident  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>- **Security Reader** <br/>  <br/> |
+|Trigger email actions in an incident  <br/> Find and delete suspicious email messages  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>--- and ---<br/>- **Search and Purge** (assigned only in the Office 365 Security &amp; Compliance Center)  <br/> |
+|Integrate Office 365 Advanced Threat Protection Plan 2 with Microsoft Defender ATP  <br/> Integrate Office 365 Advanced Threat Protection Plan 2 with a SIEM server  <br/> |One of the following (assigned in either Azure Active Directory or the Office 365 Security &amp; Compliance Center): <br/>- **Office 365 Global Administrator**  <br/> - **Security Administrator** <br/>--- and ---<br/>An appropriate role assigned in additional applications (such as Microsoft Defender Security Center or a SIEM server)  <br/> |
    
 For information about roles, role groups, and permissions, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
