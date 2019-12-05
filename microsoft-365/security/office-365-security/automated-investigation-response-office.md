@@ -21,6 +21,9 @@ Automated incident response (AIR) capabilities enable you to run automated inves
 - To get an overview how AIR works, use this article.
 - To get started using AIR, see [Automatically investigate and respond to threats in Office 365](office-365-air.md).
 
+> [!TIP]
+> Do you have Microsoft 365 E5 or Microsoft 365 E3 together with Identity & Threat Protection? Consider trying [Microsoft Threat Protection](../mtp/microsoft-threat-protection.md).
+
 ## The overall flow of AIR
 
 At a high level, the AIR flow works like this:
@@ -310,9 +313,11 @@ Permissions are granted through certain roles, such as those that are described 
 
 ## Next steps
 
-[Get started using AIR in Office 365](office-365-air.md)
+- [Get started using AIR in Office 365](office-365-air.md)
+- [Learn about AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
+- [Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-[Learn about AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
+## See also
 
-[Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-
+- [Microsoft Threat Protection](../mtp/microsoft-threat-protection.md)
+- [Automated investigation and remediation (AIR) in Microsoft Threat Protection](../mtp/mtp-autoir.md)
