@@ -9,13 +9,16 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
 - Adm_O365
-- M365-subscription-management 
+- M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
@@ -28,6 +31,10 @@ description: "Learn to set up Microsoft 365 Business."
 ## What is Microsoft 365 Business
 
 Microsoft 365 Business is a comprehensive set of business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products, that are always up to date. You can protect your work files on all your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.
+
+Watch this video for a quick overview of Microsoft 365 Business.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
 Microsoft 365 Business is meant for up to 300 licenses. If you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information. 
   
@@ -44,6 +51,13 @@ Microsoft 365 Business is meant for up to 300 licenses. If you need more license
 The following diagram describes how admins set up Microsoft 365 Business. It also describes the steps to prepare Windows PCs for Microsoft 365 Business. You can also add new devices in the Microsoft 365 Business admin center with [Windows AutoPilot](add-autopilot-devices-and-profile.md). You can use AutoPilot to set up and pre-configure new devices so that they're ready for productive use as soon as a user signs in with their Microsoft 365 Business credentials.
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
+
+Watch this video for an overview of Microsoft 365 Business setup.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+
   
 ### 1: Set up Microsoft 365 Business (Admin)
 
@@ -84,9 +98,10 @@ If you retain a local Active Directory that contains some on-premises resources 
     
 - As a Microsoft 365 Business admin, you have access to our customer support team: **[Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
-## Related topics
+## See also
+
 [Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
 [Manage Microsoft 365 Business](manage.md)[Migrate to Microsoft 365 Business](migrate-to-microsoft-365-business.md)
-  
 
+[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

@@ -66,8 +66,6 @@ Contact your Microsoft account representative for information on the jurisdictio
 
 Microsoft signs an Information Agreement with a state CJIS Systems Agency (CSA); you may request a copy from your state’s CSA. In addition, Microsoft provides customers with in-depth security, privacy, and compliance information. Customers may also review security and compliance reports prepared by independent auditors so they can validate that Microsoft has implemented security controls (such as ISO 27001) appropriate to the relevant audit scope.
 
-States with appropriate CJIS documentation, as of August 2017, include: Alaska, Arizona, Arkansas, California, Colorado, Hawaii, Georgia, Illinois, Indiana, Iowa, Kansas, Kentucky, Massachusetts, Michigan, Minnesota, Missouri, Montana, Nevada, New Jersey, New York, North Carolina, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Virginia, Utah, Vermont, and Washington.
-
 **Where do I start with my agency’s compliance effort?**
 
 [CJIS Security Policy](https://aka.ms/cjis-security-policy) covers the precautions that your agency must take to protect CJI. In addition, your Microsoft account representative can put you in touch with those familiar with the requirements of your jurisdiction

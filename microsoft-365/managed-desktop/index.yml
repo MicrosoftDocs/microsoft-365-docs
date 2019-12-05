@@ -24,26 +24,31 @@ sections:
       html: <p>Introduction to Microsoft Managed Desktop for decision makers--what it is, how it works, and what it can do for you</p>
       image:
         src: https://docs.microsoft.com/media/common/i_overview.svg
+        alt: ""
       title: What is Microsoft Managed Desktop?
     - href: service-description/index.md
       html: <p>Detailed description of all parts of Microsoft Managed Desktop</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
-      title: Service Description
+        alt: ""
+      title: Service description
     - href: get-ready/index.md
       html: <p>All the steps to get your environment and organization ready to work with the service</p>
       image:
         src: https://docs.microsoft.com/media/common/i_support.svg
+        alt: ""
       title: Get ready
     - href: get-started/index.md
       html: <p>Get your organization on board with Microsoft Managed Desktop, including setting up devices and deploying apps</p>
       image:
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
+        alt: ""
       title: Get started
     - href: working-with-managed-desktop/index.md
       html: <p>All about your day-to-day operations with the service</p>
       image:
         src: https://docs.microsoft.com/media/common/i_portal.svg
+        alt: ""
       title: Working with Microsoft Managed Desktop
 - title: New articles and blog posts
   items:
@@ -54,18 +59,23 @@ sections:
     className: cardsM
     columns: 2
     items: 
-    - href: https://www.microsoft.com/microsoft-365/blog/2018/09/17/collaborating-with-customers-and-partners-to-deliver-a-modern-desktop-microsoft-managed-desktop/
-      title: "[Blog] Collaborating with customers and partners to deliver a modern desktop"
+    - href: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
+      title: "[Roadmap] Your Complete Roadmap to Microsoft Managed Desktop"
       image:
         src: https://docs.microsoft.com/media/common/i_architecture.svg
-    - href: https://www.cio.com/article/3307121/systems-management/microsoft-managed-desktop-all-your-windows-10-devices-managed-by-microsoft.html
-      title: "[Article] Microsoft Managed Desktop: All your Windows 10 devices, managed by Microsoft"
+    - href: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
+      title: "[Whitepaper] Study: Rising Demand for Managed Desktop Services"
+      image:
+        src: https://docs.microsoft.com/media/common/i_architecture.svg
+    - href: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
+      title: "[E-book] Delight your company with a modern workplace"
       image:
         src: https://docs.microsoft.com/media/common/i_guide.svg
 - title: Videos
   items:
   - type: markdown
-    text: ">[!VIDEO https://www.youtube.com/embed/Pe75tc8YwKM]"
+    text: ">[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]"
+
 
  
  

@@ -19,19 +19,20 @@ description: "Use the Content Search tool in the Security & Compliance Center to
 
 # Searching cloud-based mailboxes for on-premises users in Office 365
 
-If your organization has an Exchange hybrid deployment and has enabled Microsoft Teams, users can use the Teams chat application for instant messaging. For the cloud-based user, the Teams chat data (also called 1xN chats) is saved to their primary cloud-based mailbox. When an on-premises user uses the Team chat application, their primary mailbox is located on-premises. To get around this limitation, Microsoft has released a new feature where a cloud-based storage area (called a cloud-based mailbox for on-premises users) is created to store Teams chat data for on-premises users. This lets you use the Content Search tool in the Security & Compliance Center to search and export Teams chat data for on-premises users. 
+If your organization has an Exchange hybrid deployment and has enabled Microsoft Teams, users can use the Teams chat application for instant messaging. For the cloud-based user, the Teams chat data (also called *1xN chats*) is saved to their primary cloud-based mailbox. When an on-premises user uses the Team chat application, their primary mailbox is located on-premises. To get around this limitation, Microsoft has released a new feature where a cloud-based storage area (called a cloud-based mailbox for on-premises users) is created to store Teams chat data for on-premises users. This lets you use the Content Search tool in the Security & Compliance Center to search and export Teams chat data for on-premises users. 
   
 Here are the requirements and limitations for setting up cloud-based mailboxes for on-premises users:
   
 - The user accounts in your on-premises directory service (such as Active Directory) must be synchronized with Azure Active Directory, the directory service in Office 365. This means that a mail user account is created in Office 365 and is associated with a user whose primary mailbox is located in the on-premises organization.
 
-- The user whose primary mailbox is located in the on-premises organization must be assigned a Microsoft Teams license and an Exchange Online Plan 1 license.
-    
+- The user whose primary mailbox is located in the on-premises organization must be assigned a Microsoft Teams license and a minimum of an Exchange Online Plan 1 license.
+
 - The cloud-based mailbox for on-premises users is used only store Teams chat data. An on-premises user can't sign in to the cloud-based mailbox or access in any way. It can't be used to send or receive email messages. 
-    
+
 - You have to submit a request to Microsoft Support to enable your organization to search for Teams chat data in the cloud-based mailboxes for on-premises users. See [Filing a request with Microsoft Support to enable this feature](#filing-a-request-with-microsoft-support-to-enable-this-feature) in this article. 
-    
- **Note:** Teams channel conversations are always stored in the cloud-based mailbox that's associated with the Team. That means you can use Content Search to search channel conversations without have to file a support request. For more information about searching Teams channel conversations, see [Searching Microsoft Teams and Office 365 Groups](content-search.md#searching-microsoft-teams-and-office-365-groups).
+
+> [!NOTE]
+> Teams channel conversations are always stored in the cloud-based mailbox that's associated with the Team. That means you can use Content Search to search channel conversations without have to file a support request. For more information about searching Teams channel conversations, see [Searching Microsoft Teams and Office 365 Groups](content-search.md#searching-microsoft-teams-and-office-365-groups).
   
 ## How it works
 
@@ -66,9 +67,7 @@ After this feature is deployed in your Office 365 organization, the following ch
     ![The "Add Office app content for on-premises users" checkbox is added to the Content Search UI](media/599e751e-17bd-408d-a18c-127538de6e85.png)
   
 - On-premises users are displayed in the content locations picker that you use to select user mailboxes to search. 
-    
 
-  
 ## Searching for Teams chat content in cloud-based mailboxes for on-premises users
 
 After the feature has been enabled, you can use Content Search in the Security & Compliance Center to search for Teams chat data in the cloud-based mailboxes for on-premises users. 
@@ -80,39 +79,39 @@ After the feature has been enabled, you can use Content Search in the Security &
     As previously explained, the **Add Office app content for on-premises users** checkbox is displayed under **Locations**. It's selected by default.
     
 3. Create the keyword query and add conditions to the search query if necessary. To only search for Team chats data, you can add the following query in the **Keywords** box: 
-    
+
     ```text
     kind:im
-    ``` 
+    ```
 
 4. At this point, you can choose one of the following options under **Locations**:
-    
+
     - **All locations:** Select this option to search the mailboxes of all users in your organization. When the checkbox is selected, all cloud-based mailboxes for on-premises users will also be searched. 
-    
+
     - **Specific locations:** Select this option and then click **Modify** \> Choose user, groups, or teams to search specific mailboxes. As previously explained, the locations picker lets you search for on-premises users. 
     
 5. Save and run the search. Any search results from the cloud-based mailboxes for on-premises users can be previewed like any other search results. You can also export the search results (including any Teams chat data) to a PST file. For more information, see: 
-    
+
     - [Create a search](content-search.md#create-a-search)
-    
+
     - [Preview search results](content-search.md#preview-search-results)
-    
+
     - [Export Content Search results](export-search-results.md)
-    
+
 ## Using PowerShell to search for Teams chat data in cloud-based mailboxes for on-premises users
 
 You can use the **New-ComplianceSearch** and **Set-ComplianceSearch** cmdlets in the Security & Compliance Center PowerShell to search the cloud-based mailbox for on-premises users. As previously explained, you don't have to submit a support request to use PowerShell to search for Teams chat data for on-premises users. 
   
 1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
-    
+
 2. Run the following PowerShell command to create a content search that searches the cloud-based mailboxes of on-premises users.
-    
+
     ```powershell
     New-ComplianceSearch <name of new search> -ContentMatchQuery <search query> -ExchangeLocation <on-premises user> -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
-    The  *IncludeUserAppContent*  parameter is used to specify the cloud-based mailbox for the user or users who are specified by the  *ExchangeLocation*  parameter. The  *AllowNotFoundExchangeLocationsEnabled*  allows cloud-based mailboxes for on-premises users. When you use the `$true` value for this parameter, the search doesn't try to validate the existence of the mailbox before it runs. This is required to search the cloud-based mailboxes for on-premises users because these types of mailboxes don't resolve as regular mailboxes. 
-    
+    The *IncludeUserAppContent*  parameter is used to specify the cloud-based mailbox for the user or users who are specified by the  *ExchangeLocation*  parameter. The  *AllowNotFoundExchangeLocationsEnabled*  allows cloud-based mailboxes for on-premises users. When you use the `$true` value for this parameter, the search doesn't try to validate the existence of the mailbox before it runs. This is required to search the cloud-based mailboxes for on-premises users because these types of mailboxes don't resolve as regular mailboxes. 
+
     The following example searches for Teams chats (which are instant messages) that contain keyword "redstone" in the cloud-based mailbox of Sara Davis, who is an on-premises user in the Contoso organization.
   
     ```powershell
@@ -124,18 +123,17 @@ You can use the **New-ComplianceSearch** and **Set-ComplianceSearch** cmdlets in
 For more information using these cmdlets, see:
   
 - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
-    
+
 - [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-compliancesearch)
-    
+
 - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
-    
 
 ## Known issues
 
 - Currently, you can only search, preview, and export content in cloud-based mailboxes for on-premises users. Placing a cloud-based mailbox for an on-premises user on a hold associated with an eDiscovery case or assigning it to an Office 365 retention policy is not supported. 
-    
+
 - The content location picker for eDiscovery holds displays on-premises users and will let you select them. However, as previously explained the hold will not be applied to the on-premises user.
-    
+
 ## Frequently asked questions
 
  **Where are cloud-based mailboxes for on-premises users located?**

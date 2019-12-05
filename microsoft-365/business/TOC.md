@@ -6,10 +6,11 @@
 ## Setup
 ### [Overview of setup](set-up-overview.md)
 ### [Set up Microsoft 365 Business](set-up.md)
+### [Secure Windows 10 computers](secure-win-10-pcs.md)
 ### [Upgrade to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
 ### [Prepare for Office client deployment](prepare-for-office-client-deployment.md)
 ### [Help users install Office](help-users-install-office.md)
-### [Access on-premises resources]()
+### Access on-premises resources
 #### [Enable domain-joined Windows 10 devices to be managed](manage-windows-devices.md)
 #### [Access resources from an Azure AD-joined device](access-resources.md)
 ## User device setup

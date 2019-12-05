@@ -256,7 +256,7 @@ Next, join the APP1 virtual machine to the TESTLAB domain with these commands at
   
 ```powershell
 $yourDomain="<your public domain name>"
-Add-Computer -DomainName ("testlab" + $yourDomain)
+Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
@@ -287,7 +287,7 @@ This is your current configuration.
 In this step, you create and configure CLIENT1, which acts as a typical laptop, tablet, or desktop computer on the intranet.
 
 > [!NOTE]  
-> The following command set creates CLIENT1 running Windows Server 2016 Datacenter, which can be done for all types of Azure subscriptions. If you have an Visual Studio-based Azure subscription, you can create CLIENT1 running Windows 10 with the [Azure portal](https://portal.azure.com). 
+> The following command set creates CLIENT1 running Windows Server 2016 Datacenter, which can be done for all types of Azure subscriptions. If you have a Visual Studio-based Azure subscription, you can create CLIENT1 running Windows 10 with the [Azure portal](https://portal.azure.com). 
   
 To create an Azure Virtual Machine for CLIENT1, fill in the name of your resource group and run these commands at the  command prompt on your local computer.
   
@@ -314,7 +314,7 @@ Next, join the CLIENT1 virtual machine to the TESTLAB domain with these commands
   
 ```powershell
 $yourDomain="<your public domain name>"
-Add-Computer -DomainName ("testlab" + $yourDomain)
+Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
@@ -353,7 +353,7 @@ In this phase, you create a new Microsoft 365 E5 subscription that uses a new Az
 
 - Use a trial subscription of Microsoft 365 E5. 
 
-  The Microsoft 365 E5 trial subscription is 30 days, which can be easily extended to 60 days. When the trial subscription expires, you must either convert it to a paid subscriptions or create a new trial subscription. Creating new trial subscriptions means you will leave your configuration, which could include complex scenarios, behind.  
+  The Microsoft 365 E5 trial subscription is 30 days, which can be easily extended to 60 days. When the trial subscription expires, you must either convert it to a paid subscription or create a new trial subscription. Creating new trial subscriptions means you will leave your configuration, which could include complex scenarios, behind.  
 
 - Use a separate production subscription of Microsoft 365 E5 with a small number of licenses.
 
