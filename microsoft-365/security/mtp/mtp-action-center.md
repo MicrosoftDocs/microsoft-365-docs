@@ -29,7 +29,7 @@ ms.custom: autoir
 
 ![Action Center](../images/air-actioncenter.png)
 
-Use the Action center to see current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and [resulting verdict](mtp-autoir-results.md#remediation-actions-following-automated-investigation), remediation actions occur automatically or upon approval by your organization’s security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
+Use the Action center to see the results of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and [resulting verdict](mtp-autoir-results.md#remediation-actions-following-automated-investigation), remediation actions occur automatically or upon approval by your organization’s security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
 
 The Action center provides a "single pane of glass" experience for tasks, such as:
 - Approving pending remediation actions;
@@ -64,7 +64,7 @@ The following table lists remediation actions that are currently supported in th
 
     - If the investigation pertains to email content (such as, the entity is a mailbox), investigation details open in the Office 365 Security & Compliance Center ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
 
-    - If the investigation involves a user account or a device, investigation details open in the security center ([https://security.microsoft.com](https://security.microsoft.com)). 
+    - If the investigation involves a device, investigation details open in the security center ([https://security.microsoft.com](https://security.microsoft.com)). 
 
 ## Required permissions for Action center tasks
 
