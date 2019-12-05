@@ -1,5 +1,5 @@
 ---
-title: "Secure Windows 10 Pcs"
+title: "Secure Windows 10 computers"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,9 +22,14 @@ search.appverid:
 description: "Learn how to secure Windows 10 PCs after you have set up Microsoft 365 Business."
 ---
 
-# Secure Windows 10 PCs
+# Secure Windows 10 computers
 
 After you have [set up](set-up.md) Microsoft 365 Business, it is time to protect the Windows 10 computers in your org from theft, and malicious threats like viruses and malware.
+Watch this video for an overview of how to set up policies to secure your Windows 10 computers.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## To secure your Windows 10 PCs
 
