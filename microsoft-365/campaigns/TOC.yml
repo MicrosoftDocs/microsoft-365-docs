@@ -27,7 +27,7 @@
     - name: Protect access to your campaign data
       href: m365-campaigns-conditional-access.md
     - name: Protect against malware and other threats
-      href: m365-campaigns-increase-protection.md)
+      href: m365-campaigns-increase-protection.md
 - name: Device setup for all staff
   items: 
     - name: Set up multifactor authentication
