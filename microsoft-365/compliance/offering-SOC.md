@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Service Organization Controls (SOC)
+# Service Organization Controls (SOC)
 
 ## SOC 1, 2, and 3 Reports overview
 

@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States
+# Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States
 
 ## About FINRA Rule 4511
 

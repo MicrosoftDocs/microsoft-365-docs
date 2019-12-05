@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: International Traffic in Arms Regulations (ITAR)
+# International Traffic in Arms Regulations (ITAR)
 
 ## ITAR overview
 

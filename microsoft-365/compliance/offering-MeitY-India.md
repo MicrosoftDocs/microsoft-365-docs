@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Ministry of Electronics and Information Technology (MeitY)
+# Ministry of Electronics and Information Technology (MeitY)
 
 ## MeitY overview
 

@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Cloud Computing Compliance Controls Catalog (C5)
+# Cloud Computing Compliance Controls Catalog (C5)
 
 ## C5 overview
 
