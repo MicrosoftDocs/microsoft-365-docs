@@ -3,7 +3,7 @@ title: "Use sensitivity labels with Microsoft Teams, Office 365 groups, and Shar
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 12/05/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -97,7 +97,7 @@ After you enable the preview, follow these steps to create or edit sensitivity l
 
 ## Troubleshoot sensitivity label deployment
 
-If you experience issues when you create a Teams or Office 365 group after you enable these settings or make a change to a sensitivity label's description, save the label, wait a few hours, and then try to create the Team or Office 365 group again.
+If you experience issues when you create a Teams or Office 365 group after you enable these settings or make a change to a sensitivity label's description, save the label, wait a few hours, and then try to create the Team or Office 365 group again. For information, see [Schedule roll-out after you create or change a sensitivity label](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
 
 If you are still not able to see the new sensitivity label from SharePoint Online, then contact Microsoft Support immediately.
 
