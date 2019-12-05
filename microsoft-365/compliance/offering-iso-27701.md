@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: ISO/IEC 27701 Privacy Information Management System (PIMS)
+# ISO/IEC 27701 Privacy Information Management System (PIMS)
 
 ## Privacy Information Management System (PIMS) overview
 

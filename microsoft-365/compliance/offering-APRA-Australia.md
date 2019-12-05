@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Australian Prudential Regulation Authority (APRA)
+# Australian Prudential Regulation Authority (APRA)
 
 ## APRA overview
 

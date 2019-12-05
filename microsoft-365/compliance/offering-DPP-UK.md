@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Digital Production Partnership (DPP) United Kingdom
+# Digital Production Partnership (DPP) United Kingdom
 
 ## About the DPP
 

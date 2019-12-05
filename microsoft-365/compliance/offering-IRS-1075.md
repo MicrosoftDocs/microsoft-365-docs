@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: US Internal Revenue Service Publication 1075
+# US Internal Revenue Service Publication 1075
 
 ## US Internal Revenue Service Publication 1075 overview
 

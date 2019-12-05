@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Motion Picture Association of America (MPAA)
+# Motion Picture Association of America (MPAA)
 
 ## MPAA overview
 

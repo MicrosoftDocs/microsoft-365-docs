@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
+# National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
 
 ## NIST CSF overview
 
