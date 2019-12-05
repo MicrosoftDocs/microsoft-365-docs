@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: ISO 22301:2012 Business Continuity Management Standard
+# ISO 22301:2012 Business Continuity Management Standard
 
 ## ISO 22301 overview
 

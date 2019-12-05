@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
+# Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
 
 ## Spain ENS overview
 

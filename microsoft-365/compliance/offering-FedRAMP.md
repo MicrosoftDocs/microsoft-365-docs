@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Federal Risk and Authorization Management Program (FedRAMP)
+# Federal Risk and Authorization Management Program (FedRAMP)
 
 ## FedRAMP overview
 

@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Reserve Bank of India (RBI) and Insurance Regulatory and Development Authority of India (IRDAI)
+# Reserve Bank of India (RBI) and Insurance Regulatory and Development Authority of India (IRDAI)
 
 ## About RBI and IRDAI
 

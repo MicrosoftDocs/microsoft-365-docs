@@ -42,7 +42,7 @@ Not every message that fails to authenticate is malicious. However, you should b
 
 If you are an Office 365 customer you can manage this feature through the Security & Compliance Center. 
 
-- In the Office 365 Security & Compliance Center, global or security administrators can turn the feature on or off, through anti-spoofing protection under the Anti-Phish policy. Additionally, it can be managed through the ‘Set-AntiPhishPolicy’ cmdlet. For more details, see [Anti-phishing protection in Office 365](anti-phishing-protection.md) and [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy?view=exchange-ps).
+- In the Office 365 Security & Compliance Center, global or security administrators can turn the feature on or off, through anti-spoofing protection under the Anti-Phish policy. Additionally, it can be managed through the ‘Set-AntiPhishPolicy’ cmdlet. For more details, see [Anti-phishing protection in Office 365](anti-phishing-protection.md) and [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
 
     ![Editing unauthenticated senders in the graphic interface.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 

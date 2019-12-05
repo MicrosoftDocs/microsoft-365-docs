@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: European Union Model Clauses
+# European Union Model Clauses
 
 ## European Union Model Clauses overview
 

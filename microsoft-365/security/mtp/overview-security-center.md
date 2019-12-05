@@ -18,11 +18,9 @@ search.appverid: met150
 
 Managing the security of your business to protect against an ever-evolving threat landscape brings many challenges. You might have too many security solutions with various places to configure lots of controls and don’t know which controls are the most effective and which will introduce new challenges for your workforce. It can be difficult for security teams to find the right balance of security and productivity.
 
-Enter Microsoft 365 security center-- the new home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can easily view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 security center is specifically intended for security admins and security operations teams to better manage and protect their organization.
+Enter Microsoft 365 security center -- the new home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can easily view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 security center is specifically intended for security admins and security operations teams to better manage and protect their organization.
 
-The new Microsoft 365 security center and Microsoft 365 compliance center are specialized workspaces designed to meet the needs of security teams and compliance teams. These solutions are integrated across Microsoft 365 services and provide actionable insights to help reduce risks and safeguard your digital estate.
-
-[Learn more and get ready](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance) for the new Microsoft 365 security center and the Microsoft 365 compliance center.
+The new Microsoft 365 security center and [Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) are specialized workspaces designed to meet the needs of security teams and compliance teams. These solutions are integrated across Microsoft 365 services and provide actionable insights to help reduce risks and safeguard your digital estate.
 
 Visit the Microsoft 365 security center at security.microsoft.com.  
 

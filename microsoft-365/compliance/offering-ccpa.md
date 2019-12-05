@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: California Consumer Privacy Act (CCPA)
+# California Consumer Privacy Act (CCPA)
 
 ## CCPA overview
 

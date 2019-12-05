@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Korea-Information Security Management System (K-ISMS)
+# Korea-Information Security Management System (K-ISMS)
 
 ## About K-ISMS
 
