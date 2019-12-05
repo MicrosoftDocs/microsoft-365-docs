@@ -197,7 +197,7 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 #### To enable DKIM signing for your custom domain by using PowerShell
 
-1. [Connect to Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289.aspx).
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Run the following command:
 
@@ -248,7 +248,7 @@ Disabling the signing policy does not completely disable DKIM. After a period of
   
 ### To disable the DKIM signing policy by using Windows PowerShell
 
-1. [Connect to Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289.aspx).
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Run one of the following commands for each domain for which you want to disable DKIM signing.
     

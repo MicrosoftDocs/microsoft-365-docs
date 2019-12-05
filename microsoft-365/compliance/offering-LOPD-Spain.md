@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Spanish Royal Decree 1720/2007, Spanish Organic Law 15/1999
+# Spanish Royal Decree 1720/2007, Spanish Organic Law 15/1999
 
 ## Spanish Royal Decree 1720/2007, Spanish Organic Law 15/1999 overview
 

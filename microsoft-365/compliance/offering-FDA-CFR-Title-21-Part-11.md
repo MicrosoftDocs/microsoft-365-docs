@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Food and Drug Administration CFR Title 21 Part 11
+# Food and Drug Administration CFR Title 21 Part 11
 
 ## FDA CFR Title 21 overview
 

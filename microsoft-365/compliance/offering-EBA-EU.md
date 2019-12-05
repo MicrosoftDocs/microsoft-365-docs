@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: European Banking Authority (EBA)
+# European Banking Authority (EBA)
 
 ## About the EBA
 

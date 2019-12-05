@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: US Department of Defense (DoD) Provisional Authorization at Impact Levels 2, 4, and 5
+# US Department of Defense (DoD) Provisional Authorization at Impact Levels 2, 4, and 5
 
 ## DoD and DISA overview
 

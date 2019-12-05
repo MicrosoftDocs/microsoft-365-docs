@@ -323,6 +323,8 @@
           href: export-search-results.md
         - name: Export a Content Search report
           href: export-a-content-search-report.md
+        - name: Use the eDiscovery Export Tool in Microsoft Edge
+          href: configure-edge-to-export-search-results.md
         - name: Search for and delete email messages
           href: search-for-and-delete-messages-in-your-organization.md
         - name: Search the cloud-based mailboxes of on-premises users in Office 365
@@ -707,6 +709,8 @@
           href: compliance-score-methodology.md
         - name: Compliance Score release notes (Preview)
           href: compliance-score-release-notes.md
+        - name: Compliance Score FAQ (Preview)
+          href: compliance-score-faq.md
         - name: Compliance Manager (Preview)
           href: compliance-manager-overview.md
           items: 
@@ -1073,7 +1077,7 @@
               href: https://aka.ms/TRUCS-Compliance
         - name: Australia / Pacific
           items: 
-            - name: CCSL/IRAP (Australia)
+            - name: IRAP/CCSL (Australia)
               href: offering-CCSL-IRAP-Australia.md
             - name: NZ CC Framework (New Zealand)
               href: offering-nz-cc-framework-nz.md

@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
+# Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
 
 ## HITRUST — CSF overview
 

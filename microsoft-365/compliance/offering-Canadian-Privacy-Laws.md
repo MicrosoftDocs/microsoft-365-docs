@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Canadian Privacy Laws
+# Canadian Privacy Laws
 
 ## About Canadian Privacy Laws
 

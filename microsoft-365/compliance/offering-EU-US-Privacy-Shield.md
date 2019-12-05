@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: EU-US and Swiss-US Privacy Shield Frameworks
+# EU-US and Swiss-US Privacy Shield Frameworks
 
 ## About the EU-U.S. and Swiss-U.S. Privacy Shield frameworks
 

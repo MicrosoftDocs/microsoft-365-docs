@@ -17,6 +17,7 @@
         - name: Upgrade subscriptions
           href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
     - name: Bills and payments
+      expanded: true
       items: 
         - name: Understand your invoice
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
@@ -28,8 +29,8 @@
           href: /microsoft-365/commerce/billing-and-payments/psd2
     - name: Billing accounts
       items: 
-        - name: Manage billing account info
-          href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
+        - name: Manage billing accounts
+          href: /microsoft-365/commerce/billing-accounts/manage-billing-accounts
         - name: Associate a tenant with my billing account
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
     - name: Manage relationships with my partners

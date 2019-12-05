@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Committee on National Security Systems Instruction No. 1253 (CNSSI 1253)
+# Committee on National Security Systems Instruction No. 1253 (CNSSI 1253)
 
 ## About CNSS Instruction 1253
 
