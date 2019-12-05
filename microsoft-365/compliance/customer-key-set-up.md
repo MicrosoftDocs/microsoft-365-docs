@@ -119,9 +119,9 @@ To submit an offer to activate Customer Key, complete these steps:
 
 The temporary or permanent loss of root encryption keys can be very disruptive or even catastrophic to service operation and can result in data loss. For this reason, the resources used with Customer Key require strong protection. All the Azure resources that are used with Customer Key offer protection mechanisms beyond the default configuration. Azure subscriptions can be tagged or registered in a way that will prevent immediate and irrevocable cancellation. This is referred to as registering for a mandatory retention period. The steps required to register Azure subscriptions for a mandatory retention period require collaboration with the Office 365 team. This process can take from one to five business days. Previously, this was sometimes referred to as "Do Not Cancel".
   
-Before contacting the Office 365 team, you must perform the following steps for each Azure subscription that you use with Customer Key. Please ensure that you have the Azure PowerShell Az module installed before proceeding (https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az.
+Before contacting the Office 365 team, you must perform the following steps for each Azure subscription that you use with Customer Key. Please ensure that you have the Azure PowerShell Az module installed before proceeding (https://docs.microsoft.com/powershell/azure/new-azureps-module-az.
   
-1. Sign in with Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/authenticate-azureps).
+1. Sign in with Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
 2. Run the Register-AzProviderFeature cmdlet to register your subscriptions to use a mandatory retention period. Perform this action for each subscription.
 
@@ -183,7 +183,7 @@ For each key vault, you will need to define three separate sets of permissions f
   > [!IMPORTANT]
   > The set of permissions assigned to key vault administrators does not include the permission to delete keys. This is intentional and an important practice. Deleting encryption keys is not typically done, since doing so permanently destroys data. As a best practice, do not grant this permission to key vault administrators by default. Instead, reserve this for key vault contributors and only assign it to an administrator on a short term basis once a clear understanding of the consequences is understood.
   
-  To assign these permissions to a user in your Office 365 organization, log in to your Azure subscription with Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/authenticate-azureps).
+  To assign these permissions to a user in your Office 365 organization, log in to your Azure subscription with Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
    
 - Run the Set-AzKeyVaultAccessPolicy cmdlet to assign the necessary permissions.
 
@@ -233,7 +233,7 @@ To enable Soft Delete on your key vaults, complete these steps:
   
 1. Log in to your Azure subscription with Windows Powershell. For instructions, see [Log in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
-2. Run the [Get-AzKeyVault](https://docs.microsoft.com/en-us/powershell/module/az.keyvault/get-azkeyvault) cmdlet. In this example, *vault name* is the name of the key vault for which you are enabling soft delete:
+2. Run the [Get-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) cmdlet. In this example, *vault name* is the name of the key vault for which you are enabling soft delete:
 
    ```powershell
    $v = Get-AzKeyVault -VaultName <vault name>
@@ -252,7 +252,7 @@ To enable Soft Delete on your key vaults, complete these steps:
 
 There are two ways to add keys to an Azure Key Vault; you can create a key directly in Key Vault, or you can import a key. Creating a key directly in Key Vault is the less complicated method, while importing a key provides total control over how the key is generated.
   
-To create a key directly in your key vault, run the [Add-AzKeyVaultKey](https://docs.microsoft.com/en-us/powershell/module/az.keyvault/add-azkeyvaultkey) cmdlet as follows:
+To create a key directly in your key vault, run the [Add-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey) cmdlet as follows:
   
 ```powershell
 Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
@@ -301,7 +301,7 @@ If the _Recovery Level_ property returns anything other than a value of **Recove
 
 Immediately following creation or any change to a key, perform a backup and store copies of the backup, both online and offline. Offline copies should not be connected to any network, such as in a physical safe or commercial storage facility. At least one copy of the backup should be stored in a location that will be accessible in the event of a disaster. The backup blobs are the sole means of restoring key material should a Key Vault key be permanently destroyed or otherwise rendered inoperable. Keys that are external to Azure Key Vault and were imported to Azure Key Vault do not qualify as a backup because the metadata necessary for Customer Key to use the key does not exist with the external key. Only a backup taken from Azure Key Vault can be used for restore operations with Customer Key. Therefore, it is essential that a backup of Azure Key Vault be made once a key is uploaded or created.
   
-To create a backup of an Azure Key Vault key, run the [Backup-AzKeyVaultKey](https://docs.microsoft.com/en-us/powershell/module/az.keyvault/backup-azkeyvaultkey) cmdlet as follows:
+To create a backup of an Azure Key Vault key, run the [Backup-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/backup-azkeyvaultkey) cmdlet as follows:
 
 ```powershell
 Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
@@ -327,7 +327,7 @@ Performing validation before using keys in a DEP is optional, but highly recomme
   
 To verify that your keys have get, wrapKey, and unwrapKey operations enabled:
   
-Run the [Get-AzKeyVault](https://docs.microsoft.com/en-us/powershell/module/az.keyvault/get-azkeyvault) cmdlet as follows:
+Run the [Get-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) cmdlet as follows:
   
 ```powershell
 Get-AzKeyVault -VaultName <vault name>
@@ -355,7 +355,7 @@ Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365SP-NA-VaultA1
 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName TBD
 ```
 
-To verify that an expiration date is not set for your keys run the [Get-AzKeyVaultKey](https://docs.microsoft.com/en-us/powershell/module/az.keyvault/get-azkeyvault) cmdlet as follows:
+To verify that an expiration date is not set for your keys run the [Get-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) cmdlet as follows:
   
 ```powershell
 Get-AzKeyVaultKey -VaultName <vault name>
@@ -363,7 +363,7 @@ Get-AzKeyVaultKey -VaultName <vault name>
 
 An expired key cannot be used by Customer Key and operations attempted with an expired key will fail, and possibly result in a service outage. We strongly recommend that keys used with Customer Key do not have an expiration date. An expiration date, once set, cannot be removed, but can be changed to a different date. If a key must be used that has an expiration date set, change the expiration value to 12/31/9999. Keys with an expiration date set to a date other than 12/31/9999 will not pass Office 365 validation.
   
-To change an expiration date that has been set to any value other than 12/31/9999, run the [Update-AzKeyVaultKey](https://docs.microsoft.com/en-us/powershell/module/az.keyvault/update-azkeyvaultkey) cmdlet as follows:
+To change an expiration date that has been set to any value other than 12/31/9999, run the [Update-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) cmdlet as follows:
   
 ```powershell
 Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date -Date "12/31/9999")
