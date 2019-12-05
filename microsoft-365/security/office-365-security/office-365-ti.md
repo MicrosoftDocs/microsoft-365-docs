@@ -3,7 +3,7 @@ title: "Office 365 threat investigation and response capabilities in Office 365 
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/03/2019
+ms.date: 12/04/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ description: "Find out how threat intelligence capabilities in Office 365 Advanc
 # Office 365 threat investigation and response
 
 Threat investigation and response capabilities in [Office 365 Advanced Threat Protection](office-365-atp.md) help security analysts and administrators protect their organization's Office 365 users by:
-- Making it easy to identify, monitor and understand cyberattacks
+- Making it easy to identify, monitor, and understand cyberattacks
 - Helping to quickly address threats in Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams
 - Providing insights and knowledge to help security operations prevent cyberattacks against their organization
 - Employing [automated incident response](automated-investigation-response-office.md) for critical email-based threats
     
-Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Office 365 Security &amp; Compliance Center. These insights can help your organization's security team protect Office 365 users from email- or file-based attacks. The capabilities help monitor signals and gathers data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and Office 365 global administrators, security administrators, and security analysts can all use this information to understand and respond to threats against Office 365 users and protect intellectual property.
+Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Office 365 Security &amp; Compliance Center. These insights can help your organization's security team protect Office 365 users from email- or file-based attacks. The capabilities help monitor signals and gather data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and your security operations team can use this information to understand and respond to threats against your organization and protect your intellectual property.
 
 ## Get acquainted with threat investigation and response tools
 
