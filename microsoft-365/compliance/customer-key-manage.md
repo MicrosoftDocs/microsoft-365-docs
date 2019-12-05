@@ -24,43 +24,43 @@ After you've set up Customer Key for Office 365, you can manage your keys as des
 Before performing a restore, use the recovery capabilities provided by soft delete. All keys that are used with Customer Key are required to have soft delete enabled. Soft delete acts like a recycle bin and allows recovery for up to 90 days without the need to restore. Restore should only be required in extreme or unusual circumstances, for example if the key or key vault is lost. If you must restore a key for use with Customer Key, in Azure PowerShell, run the Restore-AzureKeyVaultKey cmdlet as follows:
   
 ```powershell
-Restore-AzureKeyVaultKey -VaultName <vault name> -InputFile <filename>
+Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
 ```
 
 For example:
   
 ```powershell
-Restore-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
+Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
 ```
 
-If the key vault already contains a key with the same name, the restore operation fails. Restore-AzureKeyVaultKey restores all key versions and all metadata for the key including the key name.
+If the key vault already contains a key with the same name, the restore operation fails. Restore-AzKeyVaultKey restores all key versions and all metadata for the key including the key name.
   
 ## Manage key vault permissions
 
-Several cmdlets are available that enable you to view and, if necessary, remove key vault permissions. You might need to remove permissions, for example, when an employee leaves the team. For each of these tasks, you will use Azure PowerShell. For information about Azure Powershell, see [Overview of Azure PowerShell](https://docs.microsoft.com/powershell/azure/azurerm/overview?view=azurermps-6.13.0).
+Several cmdlets are available that enable you to view and, if necessary, remove key vault permissions. You might need to remove permissions, for example, when an employee leaves the team. For each of these tasks, you will use Azure PowerShell. For information about Azure Powershell, see [Overview of Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/).
 
-To view key vault permissions, run the Get-AzureRmKeyVault cmdlet.
+To view key vault permissions, run the Get-AzKeyVault cmdlet.
 
 ```powershell
-Get-AzureRmKeyVault -VaultName <vault name>
+Get-AzKeyVault -VaultName <vault name>
 ```
 
 For example:
 
 ```powershell
-Get-AzureRmKeyVault -VaultName Contoso-O365EX-NA-VaultA1
+Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 ```
 
-To remove an administrator's permissions, run the Remove-AzureRmKeyVaultAccessPolicy cmdlet:
+To remove an administrator's permissions, run the Remove-AzKeyVaultAccessPolicy cmdlet:
   
 ```powershell
-Remove-AzureRmKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
+Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
 ```
 
 For example:
 
 ```powershell
-Remove-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com
+Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com
 ```
 
 ## Manage data encryption policies (DEPs) with Customer Key
@@ -76,7 +76,7 @@ Customer Key handles DEPs differently between the different Office 365 services.
   
 ### View the DEPs you've created for Exchange Online and Skype for Business
 
-To view a list of all the DEPs you've created for Exchange Online and Skype for Business using the Get-DtaEncryptionPolicy PowerShell cmdlet.
+To view a list of all the DEPs you've created for Exchange Online and Skype for Business using the Get-DataEncryptionPolicy PowerShell cmdlet.
 
 1. Using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
@@ -176,6 +176,7 @@ The output from this cmdlet includes:
 
 > [!IMPORTANT]
 > **@Reviewers!!** Please verify that EXO is still not supported. Also, I need instructions for SPO.
+> **@KCCross!!** EXO has started to roll out Microsoft-managed keys. It is currently available on a limited set of Forests though.
 
  **Exchange Online and Skype for Business:** This is not currently supported.
   
@@ -186,7 +187,7 @@ The output from this cmdlet includes:
 > [!WARNING]
 > @REVIEWERS! Move this to a separate article? it doesn't fit with "learn about the availability key" so i moved it here.
 
-You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key. This process takes Microsoft about 72 hours.
+You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key once the datga purge process has been completed.
 
 The Office 365 core audits and validates the data purge path. For more information, see the SSAE 18 SOC 2 Report available on the [Service Trust Portal](https://servicetrust.microsoft.com/). In addition, Microsoft recommends the following documents:
 
@@ -212,11 +213,11 @@ To initiate the data purge path for Exchange Online and Skype for Business, comp
 
 1. Contact Microsoft to delete the availability key.
 
-    When you contact Microsoft to delete the availability key, we will send you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who is legally authorized to sign the paperwork on behalf of your organization.
+    When you contact Microsoft to delete the availability key, Microsoft will send you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who is legally authorized to sign the paperwork on behalf of your organization.
 
 1. Once your representative has signed the legal document, return it to Microsoft (usually through an eDoc signature).
 
-    Once Microsoft receives the legal document, we run cmdlets to trigger the data purge which performs crypto deletion of the availability key. Once the data purge cmdlets complete, the data has been purged.
+    Once Microsoft receives the legal document, Microsoft runs cmdlets to trigger the data purge which results into the deletion of the availability key. Once the data purge process is complete, the data has been purged and is not recoverable. 
 
 ### Revoke your Customer Keys and the availability key for SharePoint Online, OneDrive for Business, and Teams files
 
