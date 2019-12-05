@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Gramm-Leach-Bliley Act (GLBA)
+# Gramm-Leach-Bliley Act (GLBA)
 
 ## GLBA overview
 

@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Defense Federal Acquisition Regulation Supplement (DFARS)
+# Defense Federal Acquisition Regulation Supplement (DFARS)
 
 ## DFARS overview
 

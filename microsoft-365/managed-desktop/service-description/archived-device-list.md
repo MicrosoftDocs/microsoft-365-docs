@@ -29,6 +29,7 @@ To be enrolled in Microsoft Managed Desktop a device must be one of the followin
 | Model  | Minimum specs  | Additional requirements  | Retirement date |
 |---------|---------|---------|---------|
 | HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required  | **Feb 15, 2023** |
+|Surface Book 2| 256 GB / Intel i5 / 8 GB RAM | None | **November 16, 2022** |
 |Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | None | **May 20, 2022** |
 |Surface Pro| 256 GB / Intel i5 / 8 GB RAM | None | **Jun 15, 2022** |
 

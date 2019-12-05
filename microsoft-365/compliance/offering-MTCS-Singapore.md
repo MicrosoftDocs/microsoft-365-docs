@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Multi-Tier Cloud Security (MTCS) Standard for Singapore
+# Multi-Tier Cloud Security (MTCS) Standard for Singapore
 
 ## MTCS overview
 

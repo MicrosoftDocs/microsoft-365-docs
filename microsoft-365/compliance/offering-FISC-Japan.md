@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Center for Financial Industry Information Systems (FISC)
+# Center for Financial Industry Information Systems (FISC)
 
 ## FISC overview
 

@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Financial Authority (AMF) and Prudential Authority (ACPR) France
+# Financial Authority (AMF) and Prudential Authority (ACPR) France
 
 ## About the AMF and ACPR
 
