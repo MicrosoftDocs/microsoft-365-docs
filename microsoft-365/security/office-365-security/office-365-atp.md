@@ -3,7 +3,7 @@ title: "Office 365 Advanced Threat Protection"
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/03/2019
+ms.date: 12/04/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -35,10 +35,16 @@ Office 365 Advanced Threat Protection (ATP) safeguards your organization against
 
 ## Office 365 ATP Plan 1 and Plan 2
 
-ATP is included in Office 365 E5; however, Office 365 ATP Plan 1 and Office 365 ATP Plan 2 are each available as an add-on for certain subscriptions. To learn more, see [Feature availability across ATP plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+The following table summarizes what's included in each plan. 
 
-> [!TIP]
-> If you don't have Office 365 ATP, you can [start a free trial](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+|Office 365 ATP Plan 1  |Office 365 ATP Plan 2  |
+|---------|---------|
+|Configuration, protection, and detection capabilities:<br/>- [Safe Attachments](atp-safe-attachments.md)<br/>- [Safe Links](atp-safe-links.md)<br/>- [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Advanced antiphishing protection](atp-anti-phishing.md)<br/>- [Real-time detections](threat-explorer.md)     |Office 365 ATP Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:<br/>- [Threat Trackers](threat-trackers.md)<br/>- [Threat Explorer](threat-explorer.md)<br/>- [Automated incident response](automated-investigation-response-office.md)<br/>- [Attack Simulator](attack-simulator.md)         |
+
+- Office 365 ATP Plan 2 is included in Office 365 E5, Office 365 A5, and Microsoft 365 E5. 
+- Office 365 ATP Plan 1 is included in Microsoft 365 Business. 
+- Office 365 ATP Plan 1 and Office 365 ATP Plan 2 are each available as an add-on for certain subscriptions. To learn more, see [Feature availability across ATP plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- If your current subscription does not include Office 365 ATP, [contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644), and see how ATP can work for your organization. 
 
 
 ## Configure ATP policies
