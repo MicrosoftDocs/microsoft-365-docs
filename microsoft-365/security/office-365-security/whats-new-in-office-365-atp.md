@@ -24,7 +24,8 @@ ms.topic: conceptual
 This article lists new features in the latest release of Office 365 ATP. 
 Features that are currently in preview are denoted with **(preview)**.
 
->Don't have Office 365 ATP yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644). 
+> [!TIP]
+> >Don't have Office 365 ATP yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644). 
 
 ## Office 365 ATP Plan 1 and Plan 2
 
