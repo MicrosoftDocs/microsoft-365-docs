@@ -81,7 +81,7 @@ Start with [What is IRAP?](https://www.cyber.gov.au/irap/what-irap) and follow i
 ## Resources
 
 - [Australian Government ISM](https://acsc.gov.au/infosec/ism/index.htm)
-- [Australia page of the Microsoft Service Trust Portal (STP)](http://aka.ms/au-irap)
-- [Australia Security and Gateway Guides](ttps://docs.microsoft.com/azure/azure-australia)
+- [Australia page of the Microsoft Service Trust Portal (STP)](https://aka.ms/au-irap)
+- [Australia Security and Gateway Guides](https://docs.microsoft.com/azure/azure-australia)
 - [ASD Certified Cloud Services](https://acsc.gov.au/infosec/irap/certified_clouds.htm)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
