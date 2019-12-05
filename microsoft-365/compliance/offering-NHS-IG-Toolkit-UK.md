@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: National Health Service (NHS) Information Governance (IG) Toolkit
+# National Health Service (NHS) Information Governance (IG) Toolkit
 
 ## NHS IG Toolkit overview
 

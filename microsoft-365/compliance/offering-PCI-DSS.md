@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Payment Card Industry (PCI) Data Security Standard (DSS)
+# Payment Card Industry (PCI) Data Security Standard (DSS)
 
 ## PCI DSS overview
 

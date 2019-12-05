@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: European Standards EN 301 549 reports
+# European Standards EN 301 549 reports
 
 ## About EN 301 549
 

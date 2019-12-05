@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: National Bank of Belgium (NBB) and the Financial Services and Markets Authority (FSMA)
+# National Bank of Belgium (NBB) and the Financial Services and Markets Authority (FSMA)
 
 ## About the NBB and FSMA
 

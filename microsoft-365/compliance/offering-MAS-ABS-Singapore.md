@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Monetary Authority of Singapore (MAS) and Association of Banks in Singapore (ABS)
+# Monetary Authority of Singapore (MAS) and Association of Banks in Singapore (ABS)
 
 ## MAS and ABS Overview
 

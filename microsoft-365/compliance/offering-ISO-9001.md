@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: ISO 9001:2015 Quality Management Systems Standards
+# ISO 9001:2015 Quality Management Systems Standards
 
 ## ISO 9001 overview
 

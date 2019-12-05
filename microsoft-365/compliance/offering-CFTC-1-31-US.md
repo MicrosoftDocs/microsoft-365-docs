@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Commodity Futures Trading Commission (CFTC) Rule 1.31(c-d) United States
+# Commodity Futures Trading Commission (CFTC) Rule 1.31(c-d) United States
 
 ## About CFTC Rule 1.3(c-d)
 
