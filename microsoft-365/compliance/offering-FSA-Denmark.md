@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Financial Supervisory Authority (FSA) Denmark
+# Financial Supervisory Authority (FSA) Denmark
 
 ## About the FSA
 

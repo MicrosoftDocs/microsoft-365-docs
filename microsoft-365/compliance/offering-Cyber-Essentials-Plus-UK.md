@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: United Kingdom Cyber Essentials PLUS
+# United Kingdom Cyber Essentials PLUS
 
 ## UK Cyber Essentials PLUS overview
 

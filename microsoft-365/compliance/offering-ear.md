@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: US Export Administration Regulations (EAR)
+# US Export Administration Regulations (EAR)
 
 ## About the EAR
 

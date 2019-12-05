@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: United Kingdom Financial Conduct Authority (FCA)
+# United Kingdom Financial Conduct Authority (FCA)
 
 ## FCA (UK) overview
 

@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Criminal Justice Information Services (CJIS) Security Policy
+# Criminal Justice Information Services (CJIS) Security Policy
 
 ## CJIS overview
 
