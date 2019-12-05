@@ -58,12 +58,6 @@ Microsoft Threat Protection cross-product features include:
 - **Self-healing for compromised devices, user identities, and mailboxes** - Microsoft Threat Protection uses AI-powered automatic actions and playbooks to remediate impacted assets back to a secure state. Microsoft Threat Protection leverages automatic remediation capabilities of the suite products to ensure all impacted assets related to an incident are automatically remediated where possible.
 - **Cross-product threat hunting** - Security teams can leverage their unique organizational knowledge to hunt for signs of compromise by creating their own custom queries over the raw data collected by the various protection products. Microsoft Threat Protection provides query-based access to 30 days of historic raw signals and alert data across endpoint and Office 365 ATP data. 
 
-
-To start using these powerful capabilities in the Microsoft 365 security center, turn on Microsoft Threat Protection.
-
-Access the power of Microsoft Threat Protection through Microsoft 365 security center at [security.microsoft.com](https://security.microsoft.com).
-
-
 <center><h2>Microsoft Threat Protection services</center></h2>
 <table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender Advanced Threat Protection</b></center></a></td>
 <td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Office 365 Advanced Threat Protection</b></center></a></td>
@@ -72,4 +66,11 @@ Access the power of Microsoft Threat Protection through Microsoft 365 security c
 </tr>
 </table>
 <br>
+
+
+## Get started
+Customers with a Microsoft 365 E5 or equivalent license can use Microsoft Threat Protection. To begin, enable the service in the Microsoft 365 security center at [security.microsoft.com](https://security.microsoft.com). For more information, read:
+- [Licensing requirements](prerequisites.md#licensing-requirements)
+- [Turn on Microsoft Threat Protection](mtp-enable)
+
 

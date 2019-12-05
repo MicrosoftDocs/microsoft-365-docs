@@ -28,10 +28,18 @@ search.appverid:
 
 Microsoft Threat Protection unifies your incident response process by integrating key capabilities across Microsoft Defender Advanced Threat Protection (ATP), Office 365 ATP, Microsoft Cloud App Security, and Azure ATP. This unified experience adds powerful features you can access in the Microsoft 365 security center.
 
+## Check your eligibility
+Customers with a Microsoft 365 E5 or equivalent license can use Microsoft Threat Protection. For more information, [read the licensing requirements](prerequisites.md#licensing-requirements).
+
 ## Start using the service
 Turning on the Microsoft Threat Protection service aggregates data from the various integrated services. The data will be processed and stored centrally to identify new insights and to make centralized response workflows possible. 
 
 If Microsoft Defender ATP has been provisioned for your organization, data will be stored and processed in the same data center location you have selected for [your Microsoft Defender ATP data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have without Microsoft Defender ATP, you will be asked to choose a new data center location specifically for Microsoft Threat Protection. You will need to provide consent before data is shared between services and aggregated.
+
+With the service turned off, Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) does not show the **Incidents** and the **Action center** options on the menu.
+
+![Image of Microsoft 365 security center menu without Microsoft Threat Protection features](../images/mtp-off.png)
+*Microsoft 365 security center with Microsoft Threat Protection turned off*
 
 To turn the Microsoft Threat Protection service on, go to **Settings** > **Microsoft Threat Protection** > **Opt-in / Opt-out** in the Microsoft 365 security center. Once the service is provisioned, it adds:
 
@@ -39,7 +47,8 @@ To turn the Microsoft Threat Protection service on, go to **Settings** > **Micro
 - An action center for managing [automated investigation and response](mtp-autoir.md)
 - [Advanced hunting](advanced-hunting-overview.md) capabilities to the existing **Hunting** page
 
-![Image of Microsoft 365 security center menu with Microsoft Threat Protection features](../images/mtp-enabled-nav.png)
+![Image of Microsoft 365 security center menu with Microsoft Threat Protection features](../images/mtp-on.png)
+*Microsoft 365 security center with incidents management and other Microsoft Threat Protection features*
 
 ### Getting Azure ATP data
 To share Azure ATP data with Microsoft Threat Protection, ensure that Microsoft Cloud App Security and Azure ATP integration is turned on. [Learn more about this integration](https://docs.microsoft.com/cloud-app-security/aatp-integration)
@@ -56,6 +65,8 @@ Microsoft staff can help provision or deprovision the service and related resour
 
 ## Related topics
 
+- [Microsoft Threat Protection overview](microsoft-threat-protection.md)
+- [Licensing requirements and other prerequisites](prerequisites.md)
 - [Microsoft Defender ATP overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Office 365 ATP overview](../office-365-security/office-365-atp.md)
 - [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
