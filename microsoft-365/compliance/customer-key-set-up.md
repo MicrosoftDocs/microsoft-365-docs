@@ -183,7 +183,7 @@ For each key vault, you will need to define three separate sets of permissions f
   > [!IMPORTANT]
   > The set of permissions assigned to key vault administrators does not include the permission to delete keys. This is intentional and an important practice. Deleting encryption keys is not typically done, since doing so permanently destroys data. As a best practice, do not grant this permission to key vault administrators by default. Instead, reserve this for key vault contributors and only assign it to an administrator on a short term basis once a clear understanding of the consequences is understood.
   
-  To assign these permissions to a user in your Office 365 organization, log in to your Azure subscription with Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/authenticate-azureps?view=azps-3.1.0).
+  To assign these permissions to a user in your Office 365 organization, log in to your Azure subscription with Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/authenticate-azureps).
    
 - Run the Set-AzKeyVaultAccessPolicy cmdlet to assign the necessary permissions.
 
@@ -363,11 +363,10 @@ Get-AzKeyVaultKey -VaultName <vault name>
 
 An expired key cannot be used by Customer Key and operations attempted with an expired key will fail, and possibly result in a service outage. We strongly recommend that keys used with Customer Key do not have an expiration date. An expiration date, once set, cannot be removed, but can be changed to a different date. If a key must be used that has an expiration date set, change the expiration value to 12/31/9999. Keys with an expiration date set to a date other than 12/31/9999 will not pass Office 365 validation.
   
-To change an expiration date that has been set to any value other than 12/31/9999, run the [Set-AzureKeyVaultKeyAttribute](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Set-AzureKeyVaultKeyAttribute) cmdlet as follows:
+To change an expiration date that has been set to any value other than 12/31/9999, run the [Update-AzKeyVaultKey](https://docs.microsoft.com/en-us/powershell/module/az.keyvault/update-azkeyvaultkey) cmdlet as follows:
   
 ```powershell
-Set-AzureKeyVaultKeyAttribute -VaultName <vault name> -Name <key name>
--Expires (Get-Date -Date "12/31/9999")
+Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date -Date "12/31/9999")
 ```
 
 > [!CAUTION]
@@ -380,7 +379,7 @@ Once you've completed all the steps in Azure to set up your key vaults and added
 In Azure PowerShell:
   
 ```powershell
-(Get-AzureKeyVaultKey -VaultName <vault name>).Id
+(Get-AzKeyVaultKey -VaultName <vault name>).Id
 ```
 
 ## Office 365: Setting up Customer Key for Exchange Online and Skype for Business
