@@ -91,6 +91,5 @@ When an automated investigation completes, a verdict is reached for every piece 
 ## Next steps
 
 - [Get an overview of Action center permissions](mtp-action-center.md#required-permissions-for-action-center-tasks)
-
 - [Approve or reject actions related to automated investigation and remediation](mtp-autoir-actions.md)
 

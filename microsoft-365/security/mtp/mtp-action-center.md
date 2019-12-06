@@ -81,8 +81,6 @@ To approve or reject pending actions in the Action center, you must have permiss
 ## Next steps 
 
 - [Learn more about incidents in Microsoft Threat Protection](incidents-overview.md)
-
 - [View the results of an automated investigation](mtp-autoir-results.md)
-
 - [Learn about hunting in Microsoft Threat Protection](advanced-hunting-overview.md)
 
