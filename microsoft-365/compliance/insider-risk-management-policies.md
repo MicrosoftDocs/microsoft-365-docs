@@ -62,9 +62,9 @@ Complete the following steps to create a new policy:
 7. On the **Monitoring window** page, choose the time period for the policy. Select **Next** to continue.
 8. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
-## Manage a policy
+## Update a policy
 
-To manage an existing insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft 365 compliance center.
+To update an existing insider risk management policy, you'll use the policy wizard in **Insider risk management** solution in the Microsoft 365 compliance center.
 
 Complete the following steps to manage an existing policy:
 
@@ -91,7 +91,7 @@ Complete the following steps to manage an existing policy:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy you want to deactivate.
-3. ?
+3. DETAILS NEEDED
 
 ## Delete a policy
 

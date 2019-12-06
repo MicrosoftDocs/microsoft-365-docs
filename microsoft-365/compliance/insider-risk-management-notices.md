@@ -58,9 +58,9 @@ Complete the following steps to create a new insider risk management notice temp
     - **Message body (required)**: Information that appears in the message body, supports text or HTML values.
 4. Select **Save** to create and save the notice.
 
-## Manage an existing notice template
+## Update a notice template
 
-To manage an existing insider risk management notice template, complete the following steps:
+To update an existing insider risk management notice template, complete the following steps:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Notices** tab.
 2. On the notice dashboard, select the notice you want to manage.
@@ -72,3 +72,11 @@ To manage an existing insider risk management notice template, complete the foll
     - **Subject (required)**: Update information that appears in the subject line of the message, supports text characters.
     - **Message body (required)**: Update information that appears in the message body, supports text or HTML values.
 5. Select **Save** to update and save the notice.
+
+## Delete a notice template
+
+To delete an existing insider risk management notice template, complete the following steps:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Notices** tab.
+2. On the notice dashboard, select the notice you want to manage.
+3. DETAILS NEEDED

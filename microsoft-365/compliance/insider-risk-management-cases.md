@@ -23,7 +23,8 @@ The insider risk management case dashboard allows you to view and take action on
 - **Active cases**: The total number of active cases under investigation.
 - **Cases over time**: The total number of cases created, sorted by *Active* and *Closed* status.
 - **Statistics**: A summary of useful case statistics:
-    - Average time of active cases.
+    - Average time of active cases, listed in hours, days, or months.
+    - OTHER CASE STATISTICS?
 
 The case queue lists all active and closed cases for your organization, in addition to the current state of the following case attributes:
 
@@ -94,7 +95,7 @@ The **User activity** tab is one of the most powerful tools for internal risk an
 
 ### Content explorer
 
-The **Content explorer** tab allows risk analysts and investigators to review copies of all individual files and email messages associated with risk alerts. For example, if an alert is created when an employee downloads hundreds of files from SharePoint Online to a USB device and the activity triggers a policy alert, all the downloaded files for the alert are captured and copied to the insider risk management case from original storage sources. For all alerts, copies of data and message files are archived as a snapshot in time of the items, while maintaining the original files and messages in the storage sources. The copying of data and messages is transparent to the employee associated with the alert and to the owner of the content. The permission settings and access rights for the data are maintained for the copied content and messages and risk analysts and investigators need these permissions and rights if they need to open and view the files. Each file and message is automatically assigned a unique file ID in the insider risk management case for management purposes.
+The **Content explorer** tab allows risk analysts and investigators to review copies of all individual files and email messages associated with risk alerts. For example, if an alert is created when an employee downloads hundreds of files from SharePoint Online to a USB device and the activity triggers a policy alert, all the downloaded files for the alert are captured and copied to the insider risk management case from original storage sources.
 
 The content explorer is a powerful tool with basic and advanced search and filtering features. To learn more about using the content explorer, see [Insider risk management content explorer](insider-risk-management-content-explorer.md).
 

@@ -74,7 +74,7 @@ To search the alert name for a specific word, select the **Search** control and 
 
 ## Create a case for an alert
 
-After an alert is reviewed and triaged, you may need to create a new case to further investigate the risk activity. To create a case for an alert, follow these steps:
+After an alert is reviewed and triaged, you can create a new case to further investigate the risk activity. To create a case for an alert, follow these steps:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
 2. On the alerts dashboard, select the alert you want to confirm and create a new case for.
