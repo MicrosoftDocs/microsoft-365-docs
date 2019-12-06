@@ -40,11 +40,11 @@ Pending actions can be reviewed and approved by using one of several methods:
 
 2. In the navigation pane, choose **Action center**. 
 
-3. In the Action Center, on the **Pending** tab, select an item in the list. Depending on what you select, one of the following occurs:
+3. In the Action Center, on the **Pending** tab, select an item in the list. 
 
     - If you select an item in the **Investigation number** column, the investigation details page opens. There, you can view the results of the investigation, and then either approve or reject the recommended action.
  
-    - If you select a row in the list, a flyout opens, where you can view information about that item, click links to an associated alert or an investigation, and either approve or reject the action.<br/>![Approve or reject an action](../images/air-actioncenter-itemselected.png)
+    - If you select a row in the list, a flyout opens, where you can view information about that item. <br/>![Approve or reject an action](../images/air-actioncenter-itemselected.png)<br/>Use the links to view an associated alert or an investigation, and approve or reject the action.
 
 ## Review a pending action in the investigation details view
 
