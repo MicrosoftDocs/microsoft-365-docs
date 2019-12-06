@@ -44,5 +44,6 @@ You need to be assigned either the **Billing admin** or **Global reader** [role 
 ## Browser requirements
 Access to Microsoft 365 security center is done through a browser. Internet Explorer and Microsoft Edge is supported. Any HTML5 compliant browsers are also supported.
 
+## Related topics
 - [Microsoft Threat Protection overview](microsoft-threat-protection.md)
 - [Turn on Microsoft Threat Protection](mtp-enable.md)
