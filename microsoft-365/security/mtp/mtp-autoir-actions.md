@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# Approve or reject pending actions
+# Approve or reject pending actions from automated investigations
 
 **Applies to:**
 - Microsoft Threat Protection
