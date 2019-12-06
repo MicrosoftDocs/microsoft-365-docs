@@ -41,7 +41,9 @@ With the service turned off, Microsoft 365 security center ([security.microsoft.
 ![Image of Microsoft 365 security center menu without Microsoft Threat Protection features](../images/mtp-off.png)
 *Microsoft 365 security center with Microsoft Threat Protection turned off*
 
-To turn the Microsoft Threat Protection service on, go to **Settings** > **Microsoft Threat Protection** > **Opt-in / Opt-out** in the Microsoft 365 security center. Once the service is provisioned, it adds:
+To turn the Microsoft Threat Protection service on, go to **Settings** > **Microsoft Threat Protection** > **Opt-in / Opt-out** in the Microsoft 365 security center. You will need to be a global administrator or a security administrator in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to perform this task.
+
+Once the service is provisioned, it adds:
 
 - [Incidents management](incidents-overview.md)
 - An action center for managing [automated investigation and response](mtp-autoir.md)
