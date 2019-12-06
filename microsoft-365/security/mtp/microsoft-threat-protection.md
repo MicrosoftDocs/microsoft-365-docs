@@ -72,5 +72,3 @@ Microsoft Threat Protection cross-product features include:
 Customers with a Microsoft 365 E5 or equivalent license can use Microsoft Threat Protection. To begin, enable the service in the Microsoft 365 security center at [security.microsoft.com](https://security.microsoft.com). For more information, read:
 - [Licensing requirements](prerequisites.md#licensing-requirements)
 - [Turn on Microsoft Threat Protection](mtp-enable.md)
-
-
