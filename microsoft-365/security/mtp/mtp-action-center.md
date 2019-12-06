@@ -1,5 +1,5 @@
 ---
-title: Visit the Action center 
+title: Go to the Action center to view and approve your automated investigation and remediation tasks
 description: Use the Action Center to view details about automated investigation and approve pending actions
 keywords: Action Center, threat protection, investigation, alert, pending, automated, detection
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# Visit the Action center
+# Go to the Action center to view remediation actions
 
 **Applies to:**
 - Microsoft Threat Protection
@@ -36,7 +36,7 @@ The Action center provides a "single pane of glass" experience for tasks, such a
 - Viewing an audit log of already approved remediation actions; and
 - Reviewing completed remediation actions.
 
-With the Action center, your security operations team can operate more effectively and efficiently, with a comprehensive view of Microsoft Threat Protection at work.
+Your security operations team can operate more effectively and efficiently, because the Action center provides a comprehensive view of Microsoft Threat Protection at work.
 
 ## Remediation actions
 
@@ -70,7 +70,7 @@ The following table lists remediation actions that are currently supported in th
 
 To approve or reject pending actions in the Action center, you must have permissions assigned as listed in the following table:
 
-|Action |Required roles and permissions |
+|Remediation action |Required roles and permissions |
 |--|----|
 |Microsoft Defender ATP remediation (devices) |**Security Administrator** role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- or ---<br/>**Active remediation actions** role assigned in Microsoft Defender ATP <br/> <br/> To learn more, see the following resources: <br/>- [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Create and manage roles for role-based access control (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
 |Office 365 ATP remediation (Office content and email)  |**Security Administrator** role assigned in either Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- and --- <br/>**Search and Purge** role assigned the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) <br/><br/>**IMPORTANT**: If you have the Security Administrator role assigned in the Office 365 Security & Compliance Center only, you will not be able to access the Action center or Microsoft Threat Protection capabilities. You must have the Security Administrator role assigned in Azure Active Directory or the Microsoft 365 admin center. <br/><br/>To learn more, see the following resources: <br/>- [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
