@@ -32,7 +32,7 @@ Pending actions can be reviewed and approved by using one of several methods:
 - [Use the investigation details view](#review-a-pending-action-in-the-investigation-details-view)
 
 > [!NOTE]
-> You must have appropriate permissions to approve or reject remediation actions. See [Required permissions for Action center tasks](mtp-action-center.md#required-permissions-for-action-center-tasks).
+> You must have [appropriate permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions.
 
 ## Review a pending action in the Action center
 
