@@ -25,9 +25,14 @@ ms.custom: autoir
 
 [!include[Prerelease information](prerelease.md)]
 
-During and after an automated investigation runs, you might have one or more [remediation actions](mtp-action-center.md#remediation-actions) that require approval to proceed. For example, a cluster of email messages might need to be deleted, or a quarantined file might need to be removed. 
+When an automated investigation runs, it can result in one or more [remediation actions](mtp-action-center.md#remediation-actions) that require approval to proceed. For example, a cluster of email messages might need to be deleted, or a quarantined file might need to be removed. It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
 
-If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can review and approve (or reject) actions [within the Action center](#review-a-pending-action-in-the-action-center) or [within an investigation details view](#review-a-pending-action-in-the-investigation-details-view), as described in the following sections. 
+Pending actions can be reviewed and approved by using one of several methods:
+- [Use the Action center](#review-a-pending-action-in-the-action-center)
+[Use the investigation details view](#review-a-pending-action-in-the-investigation-details-view)
+
+> [!NOTE]
+> You must have appropriate permissions to approve or reject remediation actions. See [Required permissions for Action center tasks](mtp-action-center.md#required-permissions-for-action-center-tasks).
 
 ## Review a pending action in the Action center
 
@@ -49,8 +54,9 @@ If you have the [necessary permissions](mtp-action-center.md#required-permission
 
 2. Select an item in the list, and then choose **Approve** or **Reject**.
 
+
 ## Next steps
 
+- [Learn more about the Action center](mtp-action-center.md)
 - [Learn more about incidents](incidents-overview.md)
-
 - [Learn about hunting](advanced-hunting-overview.md)
