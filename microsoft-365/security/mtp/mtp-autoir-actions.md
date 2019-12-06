@@ -54,7 +54,6 @@ Pending actions can be reviewed and approved by using one of several methods:
 
 2. Select an item in the list, and then choose **Approve** or **Reject**.
 
-
 ## Next steps
 
 - [Learn more about the Action center](mtp-action-center.md)
