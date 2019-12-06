@@ -1,5 +1,5 @@
 ---
-title: View the results of an automated investigation
+title: View the details and results of an automated investigation
 description: During and after an automated investigation, you can view the results and key findings
 keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# View the results of an automated investigation
+# View the details and results of an automated investigation
 
 **Applies to:**
 - Microsoft Threat Protection
