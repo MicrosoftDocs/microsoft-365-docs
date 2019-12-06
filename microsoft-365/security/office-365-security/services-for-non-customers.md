@@ -45,7 +45,7 @@ Microsoft offers several support options for people having trouble sending mail 
 
 - Contact the Office 365 customer you're trying to email using another method and ask them to contact Microsoft Support and open a support ticket on your behalf. In some cases, for legal reasons, Microsoft Support must communicate directly with the sender who owns the IP space that is being blocked. However, non-customers typically can't open support tickets.
 
-  For more information about Microsoft Technical support for Office 365, see [Support](https://technet.microsoft.com/library/office-365-support.aspx).
+  For more information about Microsoft Technical support for Office 365, see [Support](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support).
 
 ## Office 365 Anti-Spam IP Delist Portal
 
