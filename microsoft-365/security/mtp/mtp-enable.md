@@ -32,17 +32,18 @@ Microsoft Threat Protection unifies your incident response process by integratin
 Customers with a Microsoft 365 E5 or equivalent license can use Microsoft Threat Protection. For more information, [read the licensing requirements](prerequisites.md#licensing-requirements).
 
 ## Start using the service
-Turning on the Microsoft Threat Protection service aggregates data from the various integrated services. The data will be processed and stored centrally to identify new insights and to make centralized response workflows possible. 
+Turning on the Microsoft Threat Protection service aggregates data from the various integrated services. The data will be processed and stored centrally to identify new insights and to make centralized response workflows possible.
 
-If Microsoft Defender ATP has been provisioned for your organization, data will be stored and processed in the same data center location you have selected for [your Microsoft Defender ATP data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have without Microsoft Defender ATP, you will be asked to choose a new data center location specifically for Microsoft Threat Protection. You will need to provide consent before data is shared between services and aggregated.
-
-With the service turned off, Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) does not show the **Incidents** and the **Action center** options on the menu.
+Before you turn the service on, Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) does not show the **Incidents** and the **Action center** options on the menu.
 
 ![Image of Microsoft 365 security center menu without Microsoft Threat Protection features](../images/mtp-off.png)
 *Microsoft 365 security center with Microsoft Threat Protection turned off*
 
 To turn the Microsoft Threat Protection service on, go to **Settings** > **Microsoft Threat Protection** > **Opt-in / Opt-out** in the Microsoft 365 security center. You will need to be a global administrator or a security administrator in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to perform this task.
 
+If Microsoft Defender ATP has been provisioned for your organization, data will be stored and processed in the same data center location you have selected for [your Microsoft Defender ATP data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have Microsoft Defender ATP, you will be asked to choose a new data center location specifically for Microsoft Threat Protection. You will need to provide consent before data is shared between services and aggregated.
+
+### Confirm that the service is on
 Once the service is provisioned, it adds:
 
 - [Incidents management](incidents-overview.md)
