@@ -82,11 +82,11 @@ SharePoint Online and OneDrive for Business:
   
 - [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo)
 
-- [Validate encryption of SharePoint Online, OneDrive for Business, and Teams files](#validate-encryption-of-group-sites-team-sites-and-onedrive-for-business)
+- [Validate encryption of SharePoint Online, OneDrive for Business, and Teams files](#validate-encryption-of-sharepoint-online-onedrive-for-business-and-teams-files)
 
 ## Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key
 
-Complete these tasks in Azure Key Vault. You will need to complete these steps regardless of whether you intend to set up Customer Key for Exchange Online and Skype for Business, for SharePoint Online and OneDrive for Business, or for all supported services in Office 365.
+Complete these tasks in Azure Key Vault. You will need to complete these steps regardless of whether you intend to set up Customer Key for Exchange Online and Skype for Business or for SharePoint Online, OneDrive for Business, and Teams files, or for all supported services in Office 365.
   
 ### Create two new Azure subscriptions
 
@@ -116,10 +116,6 @@ To submit an offer to activate Customer Key, complete these steps:
 5. On the **Offer details** page, choose **Create Request**.
 
 6. Fill out all applicable details and requested information on the offer form. Pay particular attention to your selections for which officers of your organization you want to authorize to approve the permanent and irreversible destruction of encryption keys and data. Once you've completed the form, choose **Submit**.
-
-   This process can take up to five business days once Microsoft has been notified of your request.
-
-7. Continue on to the mandatory retention period section below.
 
 ### Register Azure subscriptions to use a mandatory retention period
 
@@ -384,13 +380,13 @@ In Azure PowerShell:
 
 ## Office 365: Setting up Customer Key for Exchange Online and Skype for Business
 
-Before you begin, ensure that you have completed the tasks required to set up Azure Key Vault. See [Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key](customer-key-set-up.md#AzureSteps) for information.
+Before you begin, ensure that you have completed the tasks required to set up Azure Key Vault. See [Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key](#complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key) for information.
   
 To set up Customer Key for Exchange Online and Skype for Business, you will need to perform these steps by remotely connecting to Exchange Online with Windows PowerShell.
   
 ### Create a data encryption policy (DEP) for use with Exchange Online and Skype for Business
 
-A DEP is associated with a set of keys stored in Azure Key Vault. You assign a DEP to a mailbox in Office 365. Office 365 will then use the keys identified in the policy to encrypt the mailbox. To create the DEP, you need the Key Vault URIs you obtained earlier. See [Obtain the URI for each Azure Key Vault key](customer-key-set-up.md#GetKeyURI) for instructions.
+A DEP is associated with a set of keys stored in Azure Key Vault. You assign a DEP to a mailbox in Office 365. Office 365 will then use the keys identified in the policy to encrypt the mailbox. To create the DEP, you need the Key Vault URIs you obtained earlier. See [Obtain the URI for each Azure Key Vault key](#obtain-the-uri-for-each-azure-key-vault-key) for instructions.
   
 Remember! When you create a DEP, you specify two keys that reside in two different Azure Key Vaults. Ensure that these keys are located in two separate Azure regions to ensure geo-redundancy.
   
@@ -466,13 +462,13 @@ New-MoveRequest <mailbox alias>
 
 ## Office 365: Setting up Customer Key for SharePoint Online and OneDrive for Business
 
-Before you begin, ensure that you have completed the tasks required to set up Azure Key Vault. See [Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key](customer-key-set-up.md#AzureSteps) for information.
+Before you begin, ensure that you have completed the tasks required to set up Azure Key Vault. See [Complete tasks in Azure Key Vault and Microsoft FastTrack for Customer Key](#complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key) for information.
   
 To set up Customer Key for SharePoint Online and OneDrive for Business, you will need to perform these steps by remotely connecting to SharePoint Online with Windows PowerShell.
   
 ### Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo
 
-You associate a DEP with a set of keys stored in Azure Key Vault. You apply a DEP to all of your data in one geographic location, also called a geo. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP in Office 365 for use with SharePoint Online and OneDrive for Business. Office 365 will then use the keys identified in the DEP to encrypt your data in that geo. To create the DEP, you need the Key Vault URIs you obtained earlier. See [Obtain the URI for each Azure Key Vault key](customer-key-set-up.md#GetKeyURI) for instructions.
+You associate a DEP with a set of keys stored in Azure Key Vault. You apply a DEP to all of your data in one geographic location, also called a geo. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP in Office 365 for use with SharePoint Online and OneDrive for Business. Office 365 will then use the keys identified in the DEP to encrypt your data in that geo. To create the DEP, you need the Key Vault URIs you obtained earlier. See [Obtain the URI for each Azure Key Vault key](#obtain-the-uri-for-each-azure-key-vault-key) for instructions.
   
 Remember! When you create a DEP, you specify two keys that reside in two different Azure Key Vaults. Ensure that these keys are located in two separate Azure regions to ensure geo-redundancy.
   
