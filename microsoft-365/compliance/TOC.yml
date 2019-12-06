@@ -749,7 +749,6 @@
         - name: GDPR for on-premises Windows Server file shares
           href: gdpr-for-on-premises-file-shares.md
 - name: Regulatory compliance action plans
-  href: compliance-solutions-overview.md
   items: 
     - name: ISO - Recommended action plan
       href: iso-action-plan.md
