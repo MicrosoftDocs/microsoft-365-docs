@@ -43,7 +43,7 @@ To search for a user account:
 
 ## Export a report of account data history
 
-For each user account identified, you can generate a report of dependencies linked to this account. This information allows you to reassign open Action Items or ensure access to previously uploaded evidence.
+For each user account identified, you can generate a report of dependencies linked to the account. This information allows you to reassign open Action Items or ensure access to previously uploaded evidence.
   
  To generate and export a report:
   
@@ -64,6 +64,6 @@ To delete the user account Action Item and document upload history:
   
 1. Select **Delete**.
 
-    A confirmation dialog is displayed, "*This removes all control Action Item assignments and the document upload history for the selected user. This action is permanent. Are you sure you want to continue?*"
+    A confirmation dialog is displayed: "*This removes all control Action Item assignments and the document upload history for the selected user. This action is permanent. Are you sure you want to continue?*"
 
 2. To continue select **OK**, otherwise select **Cancel**.

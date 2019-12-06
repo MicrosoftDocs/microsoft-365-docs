@@ -3,7 +3,7 @@ title: "Password writeback for your Microsoft 365 test environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 11/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions

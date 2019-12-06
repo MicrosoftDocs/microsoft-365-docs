@@ -10,6 +10,7 @@ localization_priority: Priority
 ms.collection: 
 - M365-collaboration
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 description: Step through the process of planning for, rolling out, and driving the value of SharePoint across your organization.
 ---

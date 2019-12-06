@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Financial Supervision Authority (KNF) Poland
+# Financial Supervision Authority (KNF) Poland
 
 ## About the KNF
 

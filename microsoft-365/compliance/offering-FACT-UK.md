@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Federation Against Copyright Theft (FACT)
+# Federation Against Copyright Theft (FACT)
 
 ## FACT overview
 

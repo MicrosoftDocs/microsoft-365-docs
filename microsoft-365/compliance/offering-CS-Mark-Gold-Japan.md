@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Cloud Security Mark Gold (CS Gold Mark)
+# Cloud Security Mark Gold (CS Gold Mark)
 
 ## CS Gold Mark overview
 

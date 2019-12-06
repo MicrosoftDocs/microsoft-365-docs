@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Securities and Exchange Commission (SEC) Rule 17a-4(f) United States
+# Securities and Exchange Commission (SEC) Rule 17a-4(f) United States
 
 ## Microsoft and SEC Rule 17a-4(f)
 

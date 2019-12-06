@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Content Delivery & Security Association (CDSA) Content Protection & Security (CPS) Standard
+# Content Delivery & Security Association (CDSA) Content Protection & Security (CPS) Standard
 
 ## CDSA overview
 

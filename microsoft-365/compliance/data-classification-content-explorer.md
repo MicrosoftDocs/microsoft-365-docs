@@ -22,7 +22,19 @@ The data classification content explorer allows you to natively view the items t
 
 ## Content explorer
 
-Content explorer is a current snapshot of the items that have a sensitivity label, a retention label or have been classified as a sensitive information type in your organization.
+Content explorer shows a current snapshot of the items that have a sensitivity label, a retention label or have been classified as a sensitive information type in your organization.
+
+### Sensitive information types
+
+A [DLP policy](data-loss-prevention-policies.md) can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes [definitions for many common sensitive information types](what-the-sensitive-information-types-look-for.md) across many different regions that are ready for you to use. For example, a credit card number, bank account numbers, national ID numbers, and Windows Live ID service numbers.
+
+### Sensitivity labels
+
+A [sensitivity label](sensitivity-labels.md) is simply a tag that indicates the value of the item to your organization. It can be applied manually, or automatically. Once applied it gets embedded in the document and will follow it everywhere it goes. A sensitivity label enables various protective behaviors, such as mandatory watermarking or encryption. With end point protection enabled you can even prevent an item from leaving your organizational control.
+
+### Retention labels
+
+A [retention label](labels.md) allows you to define how long a labeled item is kept and the steps to be taken prior to deleting it. They are applied manually or automatically via policies. They can play a role in helping your organization stay in compliance with legal and regulatory requirements.
 
 ![content explorer collapsed screenshot](media/data-classification-content-explorer-1.png)
 
@@ -42,7 +54,7 @@ The account you use to access Content explorer must be in one or both of the rol
 2. If you know the name of the label, or the sensitive information type, you can type that into the search box.
 3. Alternately, you can browse for the item by expanding the label type and selecting the label from the list, an item from the retention label portion of the list is show below.
 4. Select a location under **All locations** and drill down the folder structure to the item.
-5. Double click to open the item natively in content explorer.
+5. Double-click to open the item natively in content explorer.
 
 ## See also
 
@@ -50,3 +62,4 @@ The account you use to access Content explorer must be in one or both of the rol
 - [Retention labels](labels.md)
 - [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
 - [Overview of retention policies](retention-policies.md)
+- [Overview of data loss prevention](data-loss-prevention-policies.md)

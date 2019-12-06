@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Payment Card Industry (PCI) Data Security Standard (DSS)
+# Payment Card Industry (PCI) Data Security Standard (DSS)
 
 ## PCI DSS overview
 
@@ -95,4 +95,4 @@ Currently, only files and documents uploaded to OneDrive for Business and ShareP
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/7/7/377F1BBC-37D5-4677-AB4A-7C01D089CA67/PCI_DSS_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/7/7/377F1BBC-37D5-4677-AB4A-7C01D089CA67/PCI-DSS-Compliance.pdf).

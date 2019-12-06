@@ -7,12 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.collection: 
+- M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - MET150
 - MOE150
@@ -21,6 +25,12 @@ description: "Learn how to upgrade Windows devices to Windows 10 Pro Creators Up
 ---
 
 # Upgrade Windows devices to Windows Pro Creators Update
+
+Watch a short video about upgrading Windows devices to Windows 10 Pro.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## Upgrade to Windows 10 Pro Creators update
   
@@ -41,3 +51,6 @@ See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-dev
   
 See [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md) to complete setting up Android and iOS devices. 
   
+## See also
+
+[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -26,7 +26,7 @@ After you've configured your communication compliance policies, you'll start to 
 
 The first step to investigate issues detected by your policies is to review generated alerts in the Microsoft 365 compliance center. There are several areas in the compliance center to help you to quickly investigate alerts, depending on how you prefer to view alert grouping:
 
-- **Communication compliance home page**: When you sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, select **Communication compliance** > **Overview** to display the communication compliance home page. Here you'll see:
+- **Communication compliance home page**: When you sign in to [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, select **Communication compliance** > **Overview** to display the communication compliance home page. Here you'll see:
     - Alerts needing review listed from high to low severity. Select an alert to launch the alert details page and to start remediation actions.
     - Recent policy matches listed by policy name.
     - Resolved items listed by policy name.
@@ -104,10 +104,10 @@ No matter where you start to review alerts or the filtering you configure, the n
 
 3. **Decide on a remediation action**: Now that you've reviewed the details of the message for the alert, you can choose several remediation actions:
 
-    - **Resolve**: Selecting the **Resolve** control immediately removes the message from the **Pending alerts** queue and no further action can be taken on the message. By selecting **Resolve**, you've essentially closed the alert without further classification and it cannot be reopened for further actions. All resolved messages are displayed in the **Resolved** tab.
+    - **Resolve**: Selecting the **Resolve** control immediately removes the message from the **Pending alerts** queue and no further action can be taken on the message. By selecting **Resolve**, you've essentially closed the alert without further classification and it can't be reopened for further actions. All resolved messages are displayed in the **Resolved** tab.
     - **False Positive**: You can always resolve a message as a false positive at any point during the message review workflow. The message cannot be reopened and all false positive messages are displayed in the **Resolved** tab.
     - **Tag as**: Tag the message as *compliant*, *non-compliant*, or as *questionable* as it relates to the policies and standards for your organization. Adding tags and tagging comments can help you micro-filter policy alerts for escalations or as part of other internal review processes. After tagging is complete, you can also choose to resolve the message to move it out of the pending review queue.
-    - **Notify**: You can use the **Notify** control to assign a custom notice template to the alert and to send a warning notice to the user. Choose the appropriate notice template and select **Send** to email a reminder to the employee that sent the message and to resolve the issue.
+    - **Notify**: You can use the **Notify** control to assign a custom notice template to the alert and to send a warning notice to the user. Choose the appropriate notice template, and select **Send** to email a reminder to the employee that sent the message and to resolve the issue.
     - **Escalate**: Using the **Escalate** control, you can choose who else in your organization should review the message. Choose from a list of configured reviewers to send an email notification requesting additional review of the message alert. The selected reviewer can use a link in the email notification to go directly to items escalated to them for review.
 
 4. **Determine if message details should be archived outside of communication compliance**: Message details can be exported or downloaded if you need to archive the messages in a separate storage solution. Selecting the **Download** control automatically adds selected messages to a .ZIP file that can be saved to storage outside of Microsoft 365.

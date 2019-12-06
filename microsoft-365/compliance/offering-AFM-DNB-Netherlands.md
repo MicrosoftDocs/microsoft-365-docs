@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Dutch Authority for the Financial Markets and the Central Bank of the Netherlands
+# Dutch Authority for the Financial Markets and the Central Bank of the Netherlands
 
 ## About the AFM and DNB
 

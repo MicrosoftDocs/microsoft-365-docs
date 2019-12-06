@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: General Data Protection Regulation (GDPR)
+# General Data Protection Regulation (GDPR)
 
 ## Learn about GDPR compliance best practices
 

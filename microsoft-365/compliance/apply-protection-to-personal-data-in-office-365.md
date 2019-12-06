@@ -16,7 +16,7 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Learn how to use DLP policies to protect personal data in Office 365."
+description: "Learn how to use data loss prevention (DLP) policies to protect personal data in Office 365."
 ---
 # Apply protection to personal data in Office 365
 
@@ -56,9 +56,9 @@ This illustration shows the options for creating a DLP policy:
 
 One of the primary uses of Office 365 DLP is to identify personal data related to EU data subjects in your Office 365 environment. Office 365 DLP can notify your compliance teams of where personal information is stored in SharePoint Online and OneDrive for Business, or when users send email containing personal information. DLP can also provide policy tips to your employees when working with personal information related to EU residents.
 
-Educating and raising awareness to where EU resident data is stored in your environment and how your employees are permitted to handle it represents one level of information protection using Office 365 DLP. Often, employees who already have access to this type of information require this access to perform their day to day work. Enforcing DLP policies to help comply with GDPR may not require restricting access.
+Educating and raising awareness to where EU resident data is stored in your environment and how your employees are permitted to handle it represents one level of information protection using Office 365 DLP. Often, employees who already have access to this type of information require this access to do their day to day work. Enforcing DLP policies to help comply with GDPR may not require restricting access.
 
-However, complying with GDPR typically involves a risk based assessment of the organization from both a legal and information security perspective, identification of what type and where personal information is stored, as well as if there is a legal justification to store and process that information. Based on this assessment, implementing policies to protect the organization and comply with GDPR might require removing access for employees to documents that contain personal information for EU data subjects. In cases where further protection is required, additional DLP protection can be configured.
+However, complying with GDPR typically involves a risk-based assessment of the organization from both a legal and information security perspective, identification of what type and where personal information is stored, as well as if there's a legal justification to store and process that information. Based on this assessment, implementing policies to protect the organization and comply with GDPR might require removing access for employees to documents that contain personal information for EU data subjects. In cases where further protection is required, additional DLP protection can be configured.
 
 The following table lists three configurations of increasing protection using DLP. The first configuration, awareness, can be used as a starting point and minimum level of protection for GDPR.
 
@@ -78,7 +78,7 @@ The following table lists three configurations of increasing protection using DL
 <td align="left"><p>Send email notifications to compliance teams when this data is found in documents in SharePoint Online and OneDrive for Business.</p>
 <p>Customize and display Policy Tips to employees in SharePoint and OneDrive for Business when accessing documents containing this data.</p>
 <p>Detect and report when this data is being shared.</p></td>
-<td align="left"><p>Raise awareness with compliance teams as well as employees regarding where this data is stored.</p>
+<td align="left"><p>Raise awareness with compliance teams and employees about where this data is stored.</p>
 <p>Educate employees on corporate policy for handling documents containing this data.</p>
 <p>Does not prevent employees from sharing this data internally or externally.</p>
 <p>You can review DLP reports for shared data and decide if you need to increase the protection.</p></td>
@@ -94,15 +94,15 @@ The following table lists three configurations of increasing protection using DL
 <tr class="odd">
 <td align="left">Prevent internal and external sharing</td>
 <td align="left"><p>Restrict access to documents that contain this data in SharePoint Online and OneDrive for Business when that content is shared internally or externally.</p>
-<p>Prevent sending emails which contain this data to both internal and external recipients.</p></td>
+<p>Prevent sending emails that contain this data to both internal and external recipients.</p></td>
 <td align="left"><p>Prevents internal and external sharing of this data.</p>
 <p>Employees might not be able to complete tasks that require working with this data.</p>
-<p>You can review DLP reports for internally or externally shared data and decide if end user training is needed.</p></td>
+<p>You can review DLP reports for internally or externally shared data and decide if end-user training is needed.</p></td>
 </tr>
 </tbody>
 </table>
 
-Note: As the levels of protection increase, the ability of users to access information will decrease in some cases, and could potentially impact their productivity or ability to complete day to day tasks. Increasing protection levels by implementing policies that impact employees is typically accompanied by end user training, educating users on new security policies and procedures to help them continue to be productive in a more secure environment.
+Note: As the levels of protection increase, the ability of users to access information will decrease in some cases, and could potentially impact their productivity or ability to complete day to day tasks. Increasing protection levels by implementing policies that impact employees is typically accompanied by end-user training, educating users on new security policies and procedures to help them continue to be productive in a more secure environment.
 
 ### Example DLP policy for GDPR — Awareness 
 
@@ -150,17 +150,17 @@ Description: Display policy tips to employees, notify compliance teams when this
 
 All locations includes:
 
--   SharePoint Online
+- SharePoint Online
 
--   OneDrive for Business accounts
+- OneDrive for Business accounts
 
--   Exchange mailboxes
+- Exchange mailboxes
 
-Because Content Search doesn’t currently let you test sensitive information types with email,consider creating separate policies for Exchange with a subset of sensitive information types in each policy and monitoring the rollout of these policies.
+Because Content Search doesn’t currently let you test sensitive information types with email, consider creating separate policies for Exchange with a subset of sensitive information types in each policy and monitoring the rollout of these policies.
 
 ## Additional protection you can apply to protect personal data in Office 365
 
-Sensitive information types, labels, and data loss protection policies help you identify documents containing specific data and apply protection. However, these protections depend on appropriate permissions being set for access to data, users with accounts that are not compromised, and devices that are healthy.
+Sensitive information types, labels, and data loss protection policies help you identify documents containing specific data and apply protection. However, these protections depend on appropriate permissions being set for access to data, users with accounts that aren't compromised, and devices that are healthy.
 
 The following illustration details additional protection you can apply to protect access to personal data.
 
@@ -233,7 +233,7 @@ The illustration plots permission levels from Full control to View Only. The fol
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Contribute + approve and customize</td>
-<td align="left">Contribute + add, edit and delete lists (not just list items)</td>
+<td align="left">Contribute + add, edit, and delete lists (not just list items)</td>
 <td align="left">View, add, update, delete list items and documents</td>
 <td align="left">View and download</td>
 <td align="left">View, no download</td>
@@ -251,7 +251,7 @@ More information:
 
 Many organizations allow external sharing to support collaboration. Find out how your tenant-wide settings are configured. Then review the external sharing settings for sites that contain personal data.
 
-An external user is someone outside of your organization who is invited to access your SharePoint Online sites and documents but does not have a license for your SharePoint Online or Microsoft Office 365 subscription.
+An external user is someone outside of your organization who is invited to access your SharePoint Online sites and documents but doesn't have a license for your SharePoint Online or Microsoft Office 365 subscription.
 
 External sharing policies apply to both SharePoint Online and OneDrive for Business.
 
@@ -305,7 +305,7 @@ SharePoint Online and OneDrive for Business let you configure device access poli
 
 If you configure site-level device access policies, be sure to coordinate these with tenant-level policies and also with access policies that are configured in Azure Active Directory, Intune, and Intune App Management.
 
-Device access policies for SharePoint and OneDrive for Business require supporting policies in Azure Active Directory and Microsoft Intune depending on the scenario you are implementing. The following table summarizes objectives you can achieve with device access policies and indicates which products require supporting policies.
+Device access policies for SharePoint and OneDrive for Business require supporting policies in Azure Active Directory and Microsoft Intune depending on the scenario you're implementing. The following table summarizes objectives you can achieve with device access policies and indicates which products require supporting policies.
 
 <table>
 <thead>
@@ -352,13 +352,13 @@ More information: [SharePoint Online admin center: Control access from unmanaged
 
 Microsoft recommends you configure protection for identities and devices that access the service. The work you put into protecting access to Office 365 services can also be used to protect access to other SaaS services, PaaS services, and even apps in other cloud providers.
 
-Access protection for identities and devices provides a baseline of protection to ensure that identities are not compromised, devices are safe, and organization data that is accessed on devices is isolated and protected.
+Access protection for identities and devices provides a baseline of protection to ensure that identities aren't compromised, devices are safe, and organization data that is accessed on devices is isolated and protected.
 
 For starting point recommendations and configuration guidance, see [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
 For hybrid identity environments with AD FS, see [Recommended security policies and configurations](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
-The following illustration describes how cloud services (SaaS, PaaS), account types (tenant domain accounts vs. B2B accounts) and service access capabilities relate. It’s important to note which capabilities can be used with B2B accounts.
+The following illustration describes how cloud services (SaaS, PaaS), account types (tenant domain accounts vs. B2B accounts), and service access capabilities relate. It’s important to note which capabilities can be used with B2B accounts.
 
 ![Cloud services, account types, and access capabilities](Media/Apply-protection-to-personal-data-in-Office-365-image4.png)
 

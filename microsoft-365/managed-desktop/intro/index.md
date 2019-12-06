@@ -30,14 +30,14 @@ Your end users will enjoy the latest versions of Windows 10 and Office 365 ProPl
 
 Of course there's nothing stopping you from obtaining and managing your own devices and Microsoft 365 deployments yourself. So what does Microsoft Managed Desktop offer beyond that?
 
-For your end users:
+Our policies and security baseline offers your end users these benefits:
 
 - Boot times for Microsoft Managed Desktop devices about one-fourth as long.
 - At least twice the battery life
 - About one-third as many device crashes per year
 - Device mobility through [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), allowing users to have the same experience no matter what device to sign into
 
-For your IT admins:
+Your IT admins benefit from these features:
 
 - Insights dashboards constantly keeping you up to date on usage, reliability, device health, and other data on devices and users
 - About *one-tenth* the amount of time needed to update 95% of devices
@@ -60,7 +60,7 @@ We also monitor device health and provide you with insights about device perform
 
 
 ## Need more details?
-For more about the value of Microsoft Managed desktop, including customer stories, see [Microsoft Managed Desktop](https://aka.ms/mmd). Great places to get started with more are the [Roadmap](https://aka.ms/AA6jiam) and a downloadable [one-page summary](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/microsoft-managed-desktop-data-sheet-v20191114.pdf). You can find the latest news at the Microsoft Managed Desktop [blog](https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/bg-p/MicrosoftManagedDesktop).
+For more about the value of Microsoft Managed desktop, including customer stories, see [Microsoft Managed Desktop](https://aka.ms/mmd). Great places to get started with more are the [Roadmap](https://aka.ms/AA6jiam) and a downloadable [one-page summary](https://aka.ms/AA6ob3h). You can find the latest news at the Microsoft Managed Desktop [blog](https://aka.ms/AA6l2dd).
 
 If Microsoft Managed Desktop seems right for your organization, you can delve into additional documentation that explains more about the service, how to prepare your organization to enroll, how to get started with the service, and ongoing operations thereafter, including how you and your end users can easily get help if needed. If you're already ready to come on board, start with contacting your [local account team](https://pages.email.office.com/contactmmd/).
 
@@ -85,9 +85,14 @@ These topics describe the steps you'll need to take in your organization to prep
 **Get started**
 Once you're ready to enroll, this section includes the steps to follow to actually join the service, obtain and set up devices, prep your end users, and deploy apps.
 
-- [Add Admin contacts in Microsoft Managed Desktop Admin portal](../get-started/add-admin-contacts.md)
+- [Add and verify admin contacts in the Admin portal](../get-started/add-admin-contacts.md)
+- [Adjust conditional access](../get-started/conditional-access.md)
+- [Assign licenses](../get-started/assign-licenses.md)
+- [Install Intune Company Portal on on devices](../get-started/company-portal.md)
+- [Enable Enterprise State Roaming](../get-started/enterprise-state-roaming.md)
 - [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md)
-- [Deploy apps to Microsoft Managed Desktop devices](../get-started/deploy-apps.md)
+- [Get your users ready to use devices](../get-started/get-started-devices.md)
+- [Deploy apps to devices](../get-started/deploy-apps.md)
 
 **Working with Microsoft Managed Desktop**
 This section includes information about your day-to-day life with the service, such as how your IT admins can get support if needed, how your end users get support, managing your apps once deployed, and how to work the customizable settings on devices.

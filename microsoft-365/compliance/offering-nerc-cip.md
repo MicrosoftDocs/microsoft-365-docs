@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: North American Electric Reliability Corporation (NERC)
+# North American Electric Reliability Corporation (NERC)
 
 ## About the NERC
 

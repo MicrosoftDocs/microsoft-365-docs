@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Title 23 NYCRR Part 500
+# Title 23 NYCRR Part 500
 
 ## Title 23 NYCRR Part 500 overview
 
