@@ -46,6 +46,8 @@ End users with Microsoft Managed Desktop devices also have access to toll-free p
 - United States: +1 855 425 0216
 - Canada (excluding Quebec): +1 855 425 0216
 - United Kingdom: +44 800 026 0698
+- Belgium: +32 800 58533
+- Luxembourg: +352 800 40119
 - Australia: +61 180 037 0619
 - New Zealand: +64 988 44380
 

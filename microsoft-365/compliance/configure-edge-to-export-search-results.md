@@ -9,7 +9,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
+ROBOTS: NOINDEX, NOFOLLOW
 description: "You have to enable ClickOnce support to use Microsoft Edge to export search results from Content Search and eDiscovery in the security and compliance center."
 ---
 
