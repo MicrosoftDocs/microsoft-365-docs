@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: IT-Grundschutz Compliance workbook
+# IT-Grundschutz Compliance workbook
 
 ## IT-Grundschutz Compliance workbook overview
 
@@ -58,7 +58,6 @@ Microsoft Cloud Germany is physically based in Germany and adheres to the requir
 - [IT-Grundschutz](https://www.bsi.bund.de/EN/Topics/ITGrundschutz/ITGrundschutzHome/itgrundschutzhome_node.html;jsessionid=5ABC53411232B460035220974AE634C4.1_cid351)
 - [IT-Grundschutz Catalogues v.15](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/International/GSK_15_EL_EN_Draft.pdf?__blob=publicationFile&v=2) (2015)
 - [BSI Standards](https://www.bsi.bund.de/EN/Publications/BSIStandards/BSIStandards_node.html)
-- [IT-Grundschutz certification process](https://www.bsi.bund.de/EN/Topics/ITGrundschutz/ITGrundschutzCertification/itgrundschutzcertification_node.html)
 - [Azure Germany IT-Grundschutz Compliance workbook](https://aka.ms/grundschutzworkbook)
 - [ISO/IEC 27001:2013 Information Security Management Systems background](offering-iso-27001.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: My Number Act (Japan)
+# My Number Act (Japan)
 
 ## About the My Number Act
 

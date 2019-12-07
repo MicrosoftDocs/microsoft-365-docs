@@ -41,7 +41,7 @@ Microsoft 365 Enterprise is available in three plans.
 | F1 | Connect with your Firstline Workers through purpose-built tools and resources that allow them to do their best work. |
 |||
 
-If you have Microsoft 365 Enteprise E3, you can also get these [offerings](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
+If you have Microsoft 365 Enterprise E3, you can also get these [offerings](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
 
 - Identity & Threat Protection
 - Information Protection & Compliance

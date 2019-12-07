@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
+# Health Insurance Portability and Accountability (HIPAA) & HITECH Acts
 
 ## HIPAA and the HITECH Act overview
 

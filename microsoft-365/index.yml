@@ -62,7 +62,7 @@ additionalContent:
         # Card
         - title: Microsoft 365 Enterprise
           summary: Designed for large organizations. Protect your business and transform the way you work with Office apps, Windows 10, and Enterprise Mobility + Security.
-          url: ./enterprise/index.md
+          url: ./enterprise/index.yml
         # Card
         - title: Microsoft 365 Education
           summary: Designed for educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.

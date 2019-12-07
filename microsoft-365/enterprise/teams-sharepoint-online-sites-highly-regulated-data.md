@@ -11,6 +11,7 @@ localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 
 description: Create a secure SharePoint team site to store your most valuable and sensitive files.

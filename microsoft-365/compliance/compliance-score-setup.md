@@ -59,8 +59,6 @@ To set permissions in the Microsoft 365 compliance center:
 1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com) and sign in with your global admin account.
 2. Select **Permissions** on the left navigation pane. From here, you can view roles and assign permissions.
 
-For details, read [roles and permissions in the Microsoft 365 compliance center](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
-
 ## Understand the Compliance Score dashboard
 
 The Compliance Score dashboard is designed to provide you an at-a-glance view of your current compliance posture.

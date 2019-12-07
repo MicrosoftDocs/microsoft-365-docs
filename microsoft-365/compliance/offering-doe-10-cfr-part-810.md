@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: US DoE 10 CFR Part 810
+# US DoE 10 CFR Part 810
 
 ## Microsoft and DoE 10 CFR Part 810
 

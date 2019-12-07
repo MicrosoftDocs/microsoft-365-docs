@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
+# National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
 
 ## NIST CSF overview
 
@@ -21,7 +21,7 @@ The National Institute of Standards and Technology (NIST) promotes and maintains
 
 The main priorities of the FICIC were to establish a set of standards and practices to help organizations manage cybersecurity risk, while enabling business efficiency. The NIST Framework addresses cybersecurity risk without imposing additional regulatory requirements for both government and private sector organizations.
 
-The FICIC references globally recognized standards including NIST SP 800-53 found in Appendix A of the NIST’s [2014 Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf). Each control within the FICIC framework is mapped to corresponding NIST 800-53 controls within the FedRAMP Moderate Baseline.
+The FICIC references globally recognized standards including NIST SP 800-53 found in Appendix A of the NIST’s [Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11). Each control within the FICIC framework is mapped to corresponding NIST 800-53 controls within the FedRAMP Moderate Baseline.
 
 ## Microsoft and the NIST CSF
 
@@ -93,7 +93,7 @@ Microsoft provides the most comprehensive offerings compared to other cloud serv
 
 - [Microsoft Cloud Services Authorizations](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
 - [Mapping Microsoft Cyber Offerings to: NIST Cybersecurity Framework (CSF), CIS Controls, ISO27001:2013 and HITRUST CSF](https://go.microsoft.com/fwlink/p/?linkid=2074025)
-- [2014 Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf)
+- [Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)
 - [Presidential Executive Order on Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)

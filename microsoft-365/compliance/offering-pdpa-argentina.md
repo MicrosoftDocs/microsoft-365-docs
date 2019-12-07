@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Personal Data Protection Act (PDPA) Argentina
+# Personal Data Protection Act (PDPA) Argentina
 
 ## About the PDPA
 

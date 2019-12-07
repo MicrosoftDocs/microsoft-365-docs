@@ -1,0 +1,234 @@
+- name: Microsoft 365 Enterprise documentation and resources
+  href: index.yml
+- name: Microsoft 365 Enterprise overview
+  href: microsoft-365-overview.md
+- name: Deploy Microsoft 365 Enterprise
+  href: deploy-microsoft-365-enterprise.md
+  items: 
+    - name: Deploy foundation infrastructure
+      href: deploy-foundation-infrastructure.md
+      items: 
+        - name: Phase 1 - Networking
+          href: networking-infrastructure.md
+          items: 
+            - name: Step 1 - Prepare your network for Microsoft 365
+              href: networking-provide-bandwidth-cloud-services.md
+            - name: Step 2 - Configure local Internet connections for each office
+              href: networking-dns-resolution-same-location.md
+            - name: Step 3 - Avoid network hairpins
+              href: networking-avoid-network-hairpins.md
+            - name: Step 4 - Configure traffic bypass
+              href: networking-configure-proxies-firewalls.md
+            - name: Step 5 - Optimize client and Office 365 service performance
+              href: networking-optimize-tcp-performance.md
+            - name: Networking exit criteria
+              href: networking-exit-criteria.md
+        - name: Phase 2 - Identity
+          href: identity-infrastructure.md
+          items: 
+            - name: Step 1 - Create and protect your global admin accounts
+              href: identity-create-protect-global-admins.md
+            - name: Step 2 - Secure your passwords
+              href: identity-secure-your-passwords.md
+            - name: Step 3 - Secure and manage your user sign-ins
+              href: identity-secure-user-sign-ins.md
+            - name: Step 4 - Add your user accounts
+              href: identity-add-user-accounts.md
+            - name: Step 5 - Use groups for management
+              href: identity-use-group-management.md
+            - name: Step 6 - Configure identity governance
+              href: identity-configure-identity-governance.md
+            - name: Identity exit criteria
+              href: identity-exit-criteria.md
+        - name: Phase 3 - Windows 10 Enterprise
+          href: windows10-infrastructure.md
+          items: 
+            - name: Step 1 - Prepare your organization
+              href: windows10-prepare-your-org.md
+            - name: Step 2 - Deploy as an in-place upgrade
+              href: windows10-deploy-inplaceupgrade.md
+            - name: Step 3 - Deploy for new devices
+              href: windows10-deploy-autopilot.md
+            - name: Step 4 - Monitor device health and compliance
+              href: windows10-enable-windows-analytics.md
+            - name: Step 5 - Deploy security features
+              href: windows10-enable-security-features.md
+            - name: Windows 10 Enterprise exit criteria
+              href: windows10-exit-criteria.md
+        - name: Phase 4 - Office 365 ProPlus
+          href: office365proplus-infrastructure.md
+          items: 
+            - name: Office 365 ProPlus exit criteria
+              href: office365proplus-exit-criteria.md
+        - name: Phase 5 - Mobile device management
+          href: mobility-infrastructure.md
+          items: 
+            - name: Mobile device management exit criteria
+              href: mobility-infrastructure-exit-criteria.md
+        - name: Phase 6 - Information protection
+          href: infoprotect-infrastructure.md
+          items:
+            - name: Step 1 - Define security and information protection levels
+              href: infoprotect-define-sec-infoprotect-levels.md
+            - name: Step 2 - Configure classification for your environment
+              href: infoprotect-configure-classification.md
+            - name: Step 3 - Configure increased security for Microsoft 365
+              href: infoprotect-configure-increased-security-office-365.md
+            - name: Step 4 - Configure Windows Information Protection
+              href: infoprotect-deploy-windows-information-protection.md
+            - name: Step 5 - Configure Office 365 Data Loss Prevention
+              href: infoprotect-data-loss-prevention.md
+            - name: Step 6 - Configure email encryption
+              href: infoprotect-email-encryption.md
+            - name: Step 7 - Configure privileged access management for Office 365
+              href: infoprotect-configure-privileged-access-management.md
+            - name: Information protection exit criteria
+              href: infoprotect-exit-criteria.md
+        - name: Deployment strategies
+          href: deployment-strategies-microsoft-365-enterprise.md
+        - name: Deploy with existing infrastructure
+          href: deploy-with-existing-infrastructure.md
+        - name: Deploy for non-enterprises
+          href: deploy-foundation-infrastructure-non-enterprises.md
+    - name: Deploy workloads and scenarios
+      href: deploy-workloads.md
+      items: 
+        - name: Microsoft Teams
+          href: teams-workload.md
+        - name: Exchange Online
+          href: exchangeonline-workload.md
+        - name: SharePoint and OneDrive for Business
+          href: sharepoint-online-onedrive-workload.md
+        - name: Migration
+          href: migration-microsoft-365-enterprise-workload.md
+        - name: Empower remote workers
+          href: empower-people-to-work-remotely.md
+        - name: Teams for highly regulated data
+          href: secure-teams-highly-regulated-data-scenario.md
+        - name: SharePoint sites for highly regulated data
+          href: teams-sharepoint-online-sites-highly-regulated-data.md
+    - name: Test Lab Guides
+      href: m365-enterprise-test-lab-guides.md
+      items: 
+        - name: Base configuration
+          items: 
+            - name: Lightweight
+              href: lightweight-base-configuration-microsoft-365-enterprise.md
+            - name: Simulated enterprise
+              href: simulated-ent-base-configuration-microsoft-365-enterprise.md
+        - name: Identity
+          items: 
+            - name: Password hash sync
+              href: password-hash-sync-m365-ent-test-environment.md
+            - name: Pass-through authentication
+              href: pass-through-auth-m365-ent-test-environment.md
+            - name: Federated authentication
+              href: federated-identity-for-your-office-365-dev-test-environment.md
+            - name: Azure AD Seamless Single Sign-on
+              href: single-sign-on-m365-ent-test-environment.md
+            - name: Multi-factor authentication
+              href: multi-factor-authentication-microsoft-365-test-environment.md
+            - name: Protect global administrator accounts
+              href: protect-global-administrator-accounts-microsoft-365-test-environment.md
+            - name: Password writeback
+              href: password-writeback-m365-ent-test-environment.md
+            - name: Password reset
+              href: password-reset-m365-ent-test-environment.md
+            - name: Automatic licensing and group membership
+              href: automate-licenses-group-membership-microsoft-365-test-environment.md
+            - name: Azure AD Identity Protection
+              href: azure-ad-identity-protection-microsoft-365-test-environment.md
+            - name: Identity and device access
+              href: identity-device-access-m365-test-environment.md
+              items: 
+                - name: Cloud-only
+                  href: cloud-only-prereqs-m365-test-environment.md
+                - name: Password hash sync
+                  href: phs-prereqs-m365-test-environment.md
+                - name: Pass-through authentication
+                  href: pta-prereqs-m365-test-environment.md
+        - name: Mobile device management
+          items: 
+            - name: Enroll iOS and Android devices
+              href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
+            - name: Device compliance policies
+              href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
+        - name: Information protection
+          items: 
+            - name: Increased Microsoft 365 security
+              href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
+            - name: Data classification
+              href: data-classification-microsoft-365-enterprise-dev-test-environment.md
+            - name: Privileged access management
+              href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
+    - name: Contoso case study
+      href: contoso-case-study.md
+      items: 
+        - name: Overview
+          href: contoso-overview.md
+        - name: Contoso's IT infrastructure and needs
+          href: contoso-infra-needs.md
+        - name: Networking
+          href: contoso-networking.md
+        - name: Identity
+          href: contoso-identity.md
+        - name: Windows 10 Enterprise
+          href: contoso-win10.md
+        - name: Office 365 ProPlus
+          href: contoso-o365pp.md
+        - name: Mobile device management
+          href: contoso-mdm.md
+        - name: Information protection
+          href: contoso-info-protect.md
+        - name: Security summary
+          href: contoso-security-summary.md
+        - name: Team for a top-secret project
+          href: contoso-team-for-top-secret-project.md
+        - name: SharePoint site for highly regulated data
+          href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
+    - name: Changes to Microsoft 365 Enterprise deployment content
+      href: microsoft-365-deploment-guide-changes.md
+- name: Desktop Deployment Center
+  href: desktop-deployment-center-home.md
+  items: 
+    - name: Getting Started - People, Process and Technology Guidance
+      href: getting-started.md
+    - name: Step 1 - Device and App Readiness
+      href: step-1-device-and-app-readiness.md
+    - name: Step 2 - Directory and Network Readiness
+      href: step-2-directory-and-network-readiness.md
+    - name: Step 3 - Office and LOB App Delivery
+      href: step-3-office-and-lob-app-delivery.md
+    - name: Step 4 - User Files and Settings Migration
+      href: step-4-user-files-and-settings-migration.md
+    - name: Step 5 - Security and Compliance Considerations
+      href: step-5-security-and-compliance.md
+    - name: Step 6 - OS Deployment and Feature Updates
+      href: step-6-os-deployment-and-feature-updates.md
+    - name: Step 7 - Windows and Office Servicing
+      href: step-7-windows-and-office-as-a-service.md
+    - name: Step 8 - User Communications and Training
+      href: step-8-user-communications-and-training.md
+    - name: Windows 7 to Windows 10 manual upgrade
+      href: windows-7-to-windows-10-upgrade-manual.md
+    - name: Windows 7 to Windows 10 automated upgrades
+      href: windows-7-to-windows-10-upgrade-automated.md
+    - name: Windows and Office Deployment and Lab Kit
+      href: modern-desktop-deployment-and-management-lab.md
+    - name: Find help for your deployment
+      href: find-help-for-modern-desktop-deployment.md
+- name: Microsoft 365 compliance
+  href: ../compliance/index.yml
+- name: Microsoft 365 security
+  href: ../security/index.yml
+- name: Enterprise Business Continuity Management (EBCM) with cloud services
+  href: ebcm-understanding-ebcm-with-cloud-services.md
+  items: 
+    - name: Customer and cloud partner EBCM responsibilities
+      href: ebcm-customer-and-cloud-partner-ebcm-responsibilities.md
+    - name: Microsoft 365 cloud services resiliency
+      href: ebcm-m365-service-resiliency.md
+    - name: Developing your continuity plan
+      href: ebcm-developing-your-ebcm-plan.md
+    - name: Service incident mitigation scenarios
+      href: ebcm-microsoft-365-mitigations.md

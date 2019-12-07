@@ -21,6 +21,9 @@ description: "What are best practices for Exchange Online Protection (EOP) and A
 
 Although we empower security administrators to customize their security settings, there are two security levels in EOP and Office 365 ATP that we recommend: **Standard** and **Strict**. Each customer's environment and needs are different, but we believe that these levels of mail filtering configurations will help prevent unwanted mail from reaching your employees' inbox in most situations.
 
+> [!IMPORTANT]
+> The Junk Email Configuration has to be enabled on the mailbox in order for filtering to work properly. This is enabled by default, but should be checked if filtering does not seem to be working. Read [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) to find out more. 
+
 This topic describes these Microsoft-recommended settings to help protect your Office 365 users.
 
 ## Anti-spam, anti-malware, and anti-phishing protection in EOP
