@@ -49,7 +49,7 @@ These images show:
 
 ![A sensitivity label displayed in the Word desktop app](media/sensitivity-label-word.png)
 
-## Enable this preview by using Azure PowerShell
+## Enable this preview
 
 1. Sign in to Azure as a global admin by using Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
@@ -73,6 +73,18 @@ These images show:
 ```
 
 Office 365 no longer uses the old classifications for new groups and SharePoint sites when you enable this preview. If you used [Azure AD site classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($setting["ClassificationList"]), existing groups and sites still display the old classifications. To display the new classifications, convert them. For information about how to convert them, see [If you used classic Azure AD site classification](#if-you-used-classic-azure-ad-site-classification). 
+
+3. Sign in to Security and Compliance Center Powershell as a global admin. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+
+4. Run the following command:
+
+```powershell
+  Set-ExecutionPolicy RemoteSigned
+  $UserCredential = Get-Credential
+  $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+  Import-PSSession $Session -DisableNameChecking
+  Execute-AzureAdLabelSync
+```
 
 ## Set site and group settings when you create or edit sensitivity labels
 
