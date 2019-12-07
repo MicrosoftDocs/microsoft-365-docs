@@ -30,7 +30,7 @@ After receiving a notification message, end users can choose from the following 
 
 **Release** if the message isn’t spam and you want Office 365 to send the message to your mailbox.
 
-**Review** to navigate to the Quarantine Portal within the Security and Compliance Center if you want to take other actions, such as Preview or Release.
+**Review** to navigate to the Quarantine Portal within the Security & Compliance Center if you want to take other actions, such as Preview or Release.
   
 ## What do you need to know before you begin?
 
