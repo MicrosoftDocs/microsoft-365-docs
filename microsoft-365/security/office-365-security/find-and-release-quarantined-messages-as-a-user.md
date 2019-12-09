@@ -107,10 +107,8 @@ After you select a message or group of messages, you have several options for ma
     
 - **Release message** Release a quarantined message (or set of messages) so that the message is sent to your mailbox. When you release a message, you have the option to report the message to Microsoft for analysis. 
     
-    When you choose to report a message, also called reporting a message as a false positive, the message is reported to the Microsoft Spam Analysis Team. The team evaluates and analyzes false positive messages, and, depending on the results of the analysis, the service-wide spam content filter rules may be adjusted to allow these messages through.
-    
-- **Download message** Lets you download the message as a .eml file. Once you download a message, you can review the .eml file using your email client prior to releasing the message. 
-    
+    When you choose to report a message, also called reporting a message as a false positive, the message is reported to the Microsoft Spam Analysis Team. The team evaluates and analyzes false positive messages, and, depending on the results of the analysis, the service-wide spam content filter rules may be adjusted to allow these messages through.    
+   
 - **Remove from quarantine** Deletes the message immediately from quarantine without releasing the message to your mailbox. 
     
 

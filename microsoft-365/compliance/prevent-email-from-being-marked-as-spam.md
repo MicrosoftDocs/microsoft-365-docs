@@ -16,7 +16,7 @@ search.appverid:
 description: "Learn how to prevent False Positives and keep real email out of junk in Office 365."
 ---
 
-# How to prevent real email from being marked as spam in Office 365
+# How to prevent good email from being marked as spam in Office 365
 
  **Is your real email getting marked as spam in Office 365? Do this.**
 

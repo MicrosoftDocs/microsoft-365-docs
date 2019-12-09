@@ -333,8 +333,6 @@
           href: export-search-results.md
         - name: Export a Content Search report
           href: export-a-content-search-report.md
-        - name: Use the eDiscovery Export Tool in Microsoft Edge
-          href: configure-edge-to-export-search-results.md
         - name: Search for and delete email messages
           href: search-for-and-delete-messages-in-your-organization.md
         - name: Search the cloud-based mailboxes of on-premises users in Office 365
