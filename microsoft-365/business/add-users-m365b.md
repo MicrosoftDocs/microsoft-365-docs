@@ -35,6 +35,8 @@ Watch a short video about adding a user. <br><br>
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
+To add a user:
+
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
 2. In the left navigation pane, choose **Users** \> **Active users**.
 3. On the **Active users** page, choose **Add a user**.
