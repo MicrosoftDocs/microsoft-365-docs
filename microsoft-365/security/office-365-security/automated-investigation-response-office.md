@@ -248,6 +248,33 @@ You can:
 - Export the results to a CSV file.
 - Filter the view.
 
+## Remediation actions
+
+When an automated investigation is running or has completed, you will typically see one or more remediation actions. The following table lists possible remediation actions in Office 365 AIR.
+
+|Action | Description |
+|-----|-----|
+|Block URL(time-of-click) |Protect against emails and documents that contain malicious URLs. This enables the detection of malicious links and any related webpages via [Safe Links](atp-safe-links.md) when the user clicks a link in an existing Office file or in an older email message. |
+|DLP violations investigation |Investigate any violations detected by [Office 365 Data Loss Prevention](../../compliance/data-loss-prevention-policies.md) (DLP) |
+|Email indicators extraction |Extract indicators from the header, body, and content of an email message for investigation |
+|File Hash Reputation |Detect anomalies based on file hashes for users and machines in your organization |
+|Mail cluster identification |Email cluster analysis based on header, body, content, and URLs |
+|Mail cluster volume analysis |Email cluster analysis based on outbound mail flow volume patterns |
+|Mail delegation investigation |Investigate mail delegation access for user mailboxes related to this investigation |
+|Mail forwarding rules investigation |Investigate any mail forwarding rules for user mailboxes related to this investigation |
+|Missed malware detected |Detect missed malware delivered to user's mailbox in your organization |
+|On-demand detonation |On-demand detonation triggered for email messages, attachments, and URLs |
+|Outbound mail anomaly investigation |Detect anomalies based on historical mail flow sending patterns for users in your organization |
+|Outbound malware and spam anomaly investigation |Detect intra-org and outbound malware, phish, or spam originating from users in your organization |
+|Sender domain investigation |On-demand check of domain reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources |
+|Sender IP investigation | On-demand check of IP reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources |
+|Soft delete emails  |Move malicious email messages to a user's junk folder, or perform a soft or hard delete from the user's mailbox |
+|URL clicks investigation | Investigate clicks  from users protected by [Office 365 ATP Safe Links](atp-safe-links.md) in your organization |
+|URL reputation investigation |On-demand check on URL reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources |
+|User activity investigation |Analyze user activity anomalies in [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) |
+|User-reported emails indicators extraction |Extract indicators from the header, body, and content of [user-reported email](enable-the-report-message-add-in.md) for investigation |
+
+
 ## Example: A user-reported phish message launches an investigation playbook
 
 When a user in your organization submits an email message and reports it to Microsoft by using the [Report Message add-in for Outlook or Outlook Web Access](enable-the-report-message-add-in.md), the report is also sent to your system and is visible in Explorer in the User-reported view. This user-reported message now triggers a system-based informational alert, which automatically launches the investigation playbook.
