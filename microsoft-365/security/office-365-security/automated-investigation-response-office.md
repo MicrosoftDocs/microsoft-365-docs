@@ -18,7 +18,7 @@ description: "Get an overview of automated investigation and response capabiliti
 # Automated incident response (AIR) in Office 365
 
 Automated incident response (AIR) capabilities enable you to run automated investigation processes in response to well known threats that exist today. AIR can help your security operations team operate more efficiently and effectively.
-- To get an overview how AIR works, use this article.
+- To learn about how AIR works, use this article.
 - To get started using AIR, see [Automatically investigate and respond to threats in Office 365](office-365-air.md).
 
 > [!TIP]
