@@ -40,7 +40,7 @@ Watch a video on how to set up Office apps on iOS devices with Microsoft 365 Bus
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-Watch a video about using policies to help secure Office apps on mobile devices.
+Watch a video about using policies to help secure Office apps on mobile devices.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9?autoplay=false] 
 
