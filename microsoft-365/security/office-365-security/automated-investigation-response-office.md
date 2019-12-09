@@ -3,7 +3,7 @@ title: "Automated incident response (AIR) in Office 365"
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 12/03/2019
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
