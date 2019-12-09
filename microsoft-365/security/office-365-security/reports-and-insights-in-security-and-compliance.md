@@ -43,7 +43,7 @@ A wide variety of reports are available in the Security &amp; Compliance Center.
   
 |**Type of information**|**How to get there**|**Where to go to learn more**|
 |:-----|:-----|:-----|
-|**Security &amp; Compliance Center reports** (all up)  <br/> Top insights and recommendations, and links to Security &amp; Compliance reports, including data loss prevention reports, labels, email security reports, Advanced Threat Protection reports, and more  <br/> |In the Security &amp; Compliance Center, go to **Reports** \> **Dashboard** <br/> |[Monitor and view reports in Microsoft 365 security center](../mtp/monitoring-and-reporting.md) <br/> |
+|**Security &amp; Compliance Center reports** (all up)  <br/> Top insights and recommendations, and links to Security &amp; Compliance reports, including data loss prevention reports, labels, email security reports, Advanced Threat Protection reports, and more  <br/> |In the Security &amp; Compliance Center, go to **Reports** \> **Dashboard** <br/> |[Monitor and view reports in the Microsoft 365 security center](../mtp/monitoring-and-reporting.md) <br/> |
 |**Data loss prevention** <br/> Data loss prevention policy matches, false positives and overrides, and links to create or edit policies  <br/> |In the Security &amp; Compliance Center, go to **Data loss prevention** \> **Policy** <br/> |[View the reports for data loss prevention](../../compliance/view-the-dlp-reports.md) <br/> |
 |**Data governance** <br/> Information about how labels are applied, labels classified as records, label trends, and more  <br/> |In the Security &amp; Compliance Center, go to **Data governance** \> **Dashboard** <br/> |[View the data governance reports](../../compliance/view-the-data-governance-reports.md) <br/> |
 |**Threat management dashboard** (this is also referred to as the Security dashboard and the Threat Intelligence dashboard)  <br/> Threat detections, malware trends, top targeted users, details about sent and received email messages, and more  <br/> |In the Security &amp; Compliance Center, go to **Threat management** \> **Dashboard** <br/> |[Security dashboard overview](security-dashboard.md) <br/> |
@@ -68,7 +68,7 @@ Now that you have an overview of reports and insights, your next step is to lear
     
 ## Related topics
 
-[Monitor and view reports in Microsoft 365 security center](../mtp/monitoring-and-reporting.md)
+[Monitor and view reports in the Microsoft 365 security center](../mtp/monitoring-and-reporting.md)
   
 [Protect against threats in Office 365](protect-against-threats.md)
   
