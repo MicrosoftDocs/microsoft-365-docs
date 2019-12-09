@@ -92,15 +92,15 @@ The Office built-in labeling client downloads labels and policy settings from th
 
 - Microsoft 365 compliance center
 
-To use the Office built-in labeling client, you must have one or more [label policy published](sensitivity-labels.md#what-label-policies-can-do) to users from one of the listed admin centers.
+To use the Office built-in labeling client, you must have one or more [label policies published](sensitivity-labels.md#what-label-policies-can-do) to users from one of the listed admin centers.
 
-However, if you have one of the Azure Information Protection clients installed ([unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) or [classic client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), by default, the built-in labeling client is disabled in your Office apps. To use built-in labeling rather than the Azure Information Protection client for your Office apps, disable or uninstall the Office add-in for Azure Information Protection:
+However, if users have one of the Azure Information Protection clients installed ([unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) or [classic client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), by default, the built-in labeling client is disabled in their Office apps. To use built-in labeling rather than the Azure Information Protection client for Office apps, disable or uninstall the Office add-in for Azure Information Protection:
 
 1. Complete one of these options:
-
-    **For multiple computers:** Configure the **Use the Sensitivity feature in Office to apply and view sensitivity labels** Group Policy setting. Find this setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**. Deploy this setting through group policy, or by using the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
-
-    **For a single computer:** See "View, manage, and install add-ins in Office programs" for information about how to  [permanently disable or remove](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) the Azure Information Protection add-in on a single computer.
+    
+    - **For multiple computers:** Configure the **Use the Sensitivity feature in Office to apply and view sensitivity labels** Group Policy setting. Find this setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**. Deploy this setting through group policy, or by using the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
+    
+    - **For a single computer:** See "View, manage, and install add-ins in Office programs" for information about how to  [permanently disable or remove](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) the Azure Information Protection add-in on a single computer.
 
 2. Restart all Office applications.
 
