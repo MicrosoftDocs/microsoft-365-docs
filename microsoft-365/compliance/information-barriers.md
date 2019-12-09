@@ -13,9 +13,14 @@ localization_priority: None
 description: "Use information barriers to ensure communication compliance using Microsoft Teams within your organization."
 ---
 
-# Information barriers
+# Information barriers (click-through test)
 
 ## Overview
+
+
+>[!Tip]
+>Try this new [click-through on information barriers](media/information-barriers/Clickthrough_InformationBarriers.pdf) for a quick overview of the essential facts.
+>
 
 Microsoft cloud services include powerful communication and collaboration capabilities. But suppose that you want to restrict communications between two groups to avoid a conflict of interest from occurring in your organization. Or, perhaps you want to restrict communications between certain people inside your organization in order to safeguard internal information. Microsoft 365 enables communication and collaboration across groups and organizations, so is there a way to restrict communications among specific groups of users when necessary? With information barriers, you can! 
 
