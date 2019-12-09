@@ -274,7 +274,6 @@ When an automated investigation is running or has completed, you will typically 
 |User activity investigation |Analyze user activity anomalies in [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) |
 |User-reported emails indicators extraction |Extract indicators from the header, body, and content of [user-reported email](enable-the-report-message-add-in.md) for investigation |
 
-
 ## Example: A user-reported phish message launches an investigation playbook
 
 When a user in your organization submits an email message and reports it to Microsoft by using the [Report Message add-in for Outlook or Outlook Web Access](enable-the-report-message-add-in.md), the report is also sent to your system and is visible in Explorer in the User-reported view. This user-reported message now triggers a system-based informational alert, which automatically launches the investigation playbook.
