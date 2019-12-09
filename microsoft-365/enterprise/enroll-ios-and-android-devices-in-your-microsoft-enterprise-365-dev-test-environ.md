@@ -3,7 +3,7 @@ title: "Enroll iOS and Android devices in your Microsoft 365 Enterprise test env
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/11/2018
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -50,7 +50,7 @@ Microsoft Intune provides both remote lock and passcode reset capabilities. If s
 To lock an iOS or Android device remotely:
 
 1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com) with the credentials of your global administrator account.
-2. Click **All services**, type **Intune**, and then click **Intune**.
+2. On the Azure portal tab in your browser, type **Intune** in the search box, and then click **Intune**.
 3. Click **Devices > All devices**.
 4. In the list of devices, click an iOS or Android device, and then click the **Remote lock** action.
 
@@ -58,7 +58,7 @@ To lock an iOS or Android device remotely:
 To reset the passcode remotely:
 
 1. If needed, sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com) with the credentials of your global administrator account.
-2. Click **All services**, type **Intune**, and then click **Intune**.
+2. On the Azure portal tab in your browser, type **Intune** in the search box, and then click **Intune**.
 3. Click **Devices > All devices**.
 4. From the list of devices you manage, click an iOS or Android device, and choose **...More**. Then choose the **Remove passcode** device remote action.
 

@@ -3,7 +3,7 @@ title: "Protect global administrator accounts in your Microsoft 365 Enterprise t
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/21/2019
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -53,7 +53,7 @@ First, create a new user account as a dedicated global administrator.
 6. Click **Roles**, and then click **Global administrator**.
 7. Click **Product licenses**, and then turn the **Microsoft 365 E5** license on.
 8. Click **Add**.
-9. On the **User was added page**, clear **Send password in email**, and then click **Close**.
+9. On the **User was added** page, clear **Send password in email**, and then click **Close**.
 
 Next, create a new group named GlobalAdmins and add the DedicatedAdmin account to it.
 
@@ -70,22 +70,22 @@ Next, create conditional access policies to require multifactor authentication f
 This first policy requires that all global administrator accounts use MFA.
 
 1. In a new tab of your browser, go to [https://portal.azure.com](https://portal.azure.com).
-2. Click **Azure Active Directory > Conditional access**.
-3. On the **Conditional access – Policies** blade, click **Baseline policy: Require MFA for admins (preview)**.
-4. On the **Baseline policies…** blade, click **Use policy immediately > Save**.
+2. Click **Azure Active Directory > Security > Conditional access**.
+3. In the **Conditional access – Policies** pane, click **Baseline policy: Require MFA for admins (preview)**.
+4. In the **Baseline policies…** pane, click **Use policy immediately > Save**.
 
 This second policy blocks access to global administrator account authentication when the sign-in risk is medium or high.
 
-1. On the **Conditional access – Policies** blade, click **New policy**.
-2. On the **New** blade, type **Global administrators** in **Name**.
+1. In the **Conditional access – Policies** pane, click **New policy**.
+2. In the **New** pane, type **Global administrators** in **Name**.
 3. In the **Assignments** section, click **Users and groups**.
-4. On the **Include** tab of the **Users and groups** blade, click **Select users and groups > Users and groups > Select**.
-5. On the **Select** blade, click the **GlobalAdmins > Select > Done**.
+4. On the **Include** tab of the **Users and groups** pane, click **Select users and groups > Users and groups > Select**.
+5. In the **Select** pane, click the **GlobalAdmins > Select > Done**.
 6. In the **Assignments** section, click **Conditions**.
-7. On the **Conditions** blade, click **Sign-in risk**, click **Yes** for **Configure**, click **High** and **Medium**, and then click **Select** and **Done**.
-8. In the **Access controls** section of the **New** blade, click **Grant**.
-9. On the **Grant** blade, click **Block access**, and then click **Select**.
-10. On the **New** blade, click **On** for **Enable policy**, and then click **Create**.
+7. In the **Conditions** pane, click **Sign-in risk**, click **Yes** for **Configure**, click **High** and **Medium**, and then click **Select** and **Done**.
+8. In the **Access controls** section of the **New** pane, click **Grant**.
+9. In the **Grant** pane, click **Block access**, and then click **Select**.
+10. In the **New** pane, click **On** for **Enable policy**, and then click **Create**.
 11. Close the **Azure portal** and **Microsoft 365 admin center** tabs.
 
 To test the first policy, sign out and sign in with the DedicatedAdmin account. You should be prompted to configure MFA on the user account. This demonstrates that the first policy is being applied.
