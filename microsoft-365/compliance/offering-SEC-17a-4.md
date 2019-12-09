@@ -37,7 +37,7 @@ To evaluate Azure and Office 365 compliance with SEC Rule 17a-4(f), Microsoft re
 ## Microsoft in-scope cloud services
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
-- [Office 365](http://aka.ms/Office365ComplianceOfferings)
+- [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
 ## Audits, reports, and certificates
 
