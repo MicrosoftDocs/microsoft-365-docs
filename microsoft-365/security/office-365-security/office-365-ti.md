@@ -3,7 +3,7 @@ title: "Office 365 threat investigation and response capabilities in Office 365 
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/04/2019
+ms.date: 12/09/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -82,7 +82,7 @@ Office 365 threat investigation and response capabilities are included in Office
 
 ## Required roles and permissions
 
-Office 365 Advanced Threat Protection uses role-based access control. Permissions are assigned through roles in Azure Active Directory, the Microsoft 365 admin center, or the Office 365 Security & Compliance Center.
+Office 365 Advanced Threat Protection uses role-based access control. Permissions are assigned through certain roles in Azure Active Directory, the Microsoft 365 admin center, or the Office 365 Security & Compliance Center.
 
 > [!TIP]
 > Although some roles, such as Security Administrator, can be assigned in the Office 365 Security & Compliance Center, consider using either the Microsoft 365 admin center or Azure Active Directory instead. For information about roles, role groups, and permissions, see the following resources:
