@@ -125,6 +125,7 @@ If your company has enabled single sign on and you receive an error or login is 
 4. Select **Allow** in the ServiceNow page that asks whether the Security + Compliance Connector can connect to your ServiceNow account.
 5. Proceed with the set up steps.
 
-#### Give Security Admin privileges
+#### Create a security admin user
 
-Give Security Admin privileges in Azure Active Directory to the integration user you created from the Installation Checklist. You can remove the security admin role once login and connection has been completed. You should then be able to follow the set up steps.
+1. Create a user with security admin privileges in Azure Active Directory. The user will need to have the same name and email address as the integration user you created from the Installation Checklist. You can remove the security admin role once login and connection has been completed.
+2. Log in to the Microsoft 365 security center as this user and follow the set up steps.
