@@ -16,6 +16,8 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
@@ -24,6 +26,12 @@ description: "Learn how to add new users, secure their devices, and assign roles
 ---
 
 # Add more users to Microsoft 365 Business
+
+Watch a short video about adding a user. <br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN] 
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## Add new users
 
