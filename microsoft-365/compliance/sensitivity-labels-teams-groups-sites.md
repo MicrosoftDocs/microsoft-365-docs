@@ -27,11 +27,11 @@ When you create sensitivity labels in the [Microsoft 365 compliance center](http
 
 When you apply a label to a team or group, the label automatically applies to the connected SharePoint team site and the other way around.
 
-Now, you can also enable sensitivity labels for Office files in SharePoint and OneDrive. For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md).
+You can now also enable sensitivity labels for Office files in SharePoint and OneDrive. For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## About the public preview for Microsoft Teams, Office 365 groups, and SharePoint sites
 
-Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites is gradually rolling out to tenants and might change before final release.
+Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites are gradually rolling out to tenants and might change before final release.
 
 This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
 
@@ -77,7 +77,7 @@ You must use [Azure Active Directory PowerShell for Graph (AzureAD)](https://doc
 
 3. Now sign in to Security and Compliance Center Powershell as a global admin. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-4. Run the following command in a PowerShell session:
+4. Run the following commands:
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -89,7 +89,7 @@ You must use [Azure Active Directory PowerShell for Graph (AzureAD)](https://doc
 
 ## Set site and group settings when you create or edit sensitivity labels
 
-After you enable the preview, use the following steps to create or edit sensitivity labels. You must complete these steps for the new sensitivity labels to work with sites and groups, even if you already have labels defined. Changes to these settings may take up to 24 hours to synchronize.
+After you enable the preview, use the following steps to create or edit sensitivity labels. You must complete these steps for the new sensitivity labels to work with sites and groups, even if you already have labels defined. Changes to these settings might take up to 24 hours to synchronize.
 
 1. In the Microsoft 365 compliance center, select **Classification** > **Sensitivity labels**.
 
@@ -97,9 +97,9 @@ After you enable the preview, use the following steps to create or edit sensitiv
 
 3. Select the options you want, and then on the **Site and group settings** tab, choose:
     
-    - Privacy (Public/Private): Private means only approved members in your organization can see what's inside the group. Anyone else in your organization can't see what's in the group. [Learn more](https://support.office.com/article/36236e39-26d3-420b-b0ac-8072d2d2bedc)
+    - Privacy (Public/Private): Private means that only approved members in your organization can see what's inside the group. Anyone else in your organization can't see what's in the group. [Learn more](https://support.office.com/article/36236e39-26d3-420b-b0ac-8072d2d2bedc)
     - Guest access: You can control if guests can be added to a group. [Learn about managing guest access in Office 365 Groups](/office365/admin/create-groups/manage-guest-access-in-groups)
-    - Unmanaged devices: This setting lets you block or limit access to SharePoint content from devices that aren't hybrid AD joined or compliant in Intune. If you select Unmanaged devices, you need to go to Azure AD to finish setting up the policy. For info, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).
+    - Unmanaged devices: This setting lets you block or limit access to SharePoint content from devices that aren't hybrid AD joined or compliant in Intune. If you select Unmanaged devices, you must go to Azure AD to finish setting up the policy. For info, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).
 
 ![The site and group settings tab](media/edit-sensitivity-label-site-group.png)
 
@@ -156,7 +156,7 @@ To view and edit the labels, use the Active sites page in the new SharePoint adm
 
 ## Change site and group settings for a label
 
-As a best practice, don't change settings after you've applied a label to several teams, groups, or sites. If you must make a change, you'll need to use an Azure AD PowerShell script to manually apply updates. This method ensures all existing teams, sites, and groups enforce the new setting.
+As a best practice, don't change settings after you've applied a label to several teams, groups, or sites. If you must make a change, you need to use an Azure AD PowerShell script to manually apply updates. This method ensures that all existing teams, sites, and groups enforce the new setting.
 
 ## Support for the new sensitivity labels
 
