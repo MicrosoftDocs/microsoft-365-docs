@@ -52,9 +52,9 @@ The following table summarizes what's included in each plan.
 
 ## September 2019
 
-- [Employ automated incident response (AIR) in Office 365](automated-investigation-response-office.md) (Office 365 ATP Plan 2)
+- [Employ automated investigation and response capabilities in Office 365](automated-investigation-response-office.md) (Office 365 ATP Plan 2)
 
-- [Integrate with Office 365 ATP AIR events using the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP Plan 2)
+- [Integrate with Office 365 ATP automated investigation and response events using the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP Plan 2)
 
 - [View the email headers and download the email body](investigate-malicious-email-that-was-delivered.md#view-the-email-headers-and-download-the-email-body) (Office 365 ATP Plan 1 or Plan 2)
 
