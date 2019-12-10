@@ -68,7 +68,7 @@ Delivery location shows the results of policies and detections that run post-del
 - **Deleted items folder**: The email in the Deleted items folder of a user.
 - **Quarantine**: The email in quarantine, and is not in a user’s mailbox.
 - **Failed**: The email failed to reach the mailbox.
-- **Dropped**: The email gets lost somewhere in the Mailflow.
+- **Dropped**: The email gets lost somewhere in the mail flow.
 
 The **Email Timeline** is another new Explorer feature aimed at making the hunting experience better for admins. It cuts down on randomization because there is less time spent checking different locations to try to understand the event. When multiple events happen at, or close to, the same time on an email, those events will show up in a timeline view. In fact, some events that happen post-delivery to your mail will be captured in the 'Special action' column. Combining the information from the timeline of that mail with the special action taken on the mail post-delivery will give admins insight into how their policies work, where the mail was finally routed, and, in some cases, what the final assessment was.
 
