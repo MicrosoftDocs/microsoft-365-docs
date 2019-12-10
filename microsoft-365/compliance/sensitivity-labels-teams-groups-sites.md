@@ -70,8 +70,8 @@ You must use [Azure Active Directory PowerShell for Graph (AzureAD)](https://doc
     }
     else
     {
-    $setting["EnableMIPLabels"] = "True"
-    Set-AzureADDirectorySetting -Id $setting.Id -DirectorySetting $setting
+    $setting["EnableMIPLabels"] = "True"
+    Set-AzureADDirectorySetting -Id $setting.Id -DirectorySetting $setting
     }
     ```
     
