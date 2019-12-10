@@ -3,7 +3,6 @@ title: "Threat Explorer and real-time detections, new to Threat Explorer, change
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -52,7 +51,7 @@ Delivery Action is the action taken on an email due to existing policies or dete
 
 |Delivered  |Junked  |Blocked  |Replaced  |
 |---------|---------|---------|---------|
-|Email was delivered to Inbox or folder of a user and the user can directly access it.    | Email was sent to either user’s Junk folder or Deleted folder, and the user has access to emails in those folders.       | Any emails that are quarantined, that  failed, or were dropped. This is completely inaccessible by the user!     | Any email where malicious attachments are replaced by .txt files that state the attachment was malicious.     |
+|Email was delivered to the user's inbox or another folder, and the user can directly access it.    | Email was sent to either user’s Junk folder or Deleted folder, and the user has access to email messages in those folders.       | Any email messages that are quarantined, that failed, or were dropped, and are not accessible by the user.     | Any email messages where malicious attachments were replaced by .txt files that state the attachments were malicious.     |
 
 And here is what the user can see, and what they can't:
 
@@ -63,13 +62,13 @@ And here is what the user can see, and what they can't:
 
 Delivery location shows the results of policies and detections that run post-delivery. It's linked to a Delivery Action. This field was added to give insight into the action taken when a problem mail is found. Here are the possible values of delivery location:
 
-1. Inbox or folder – The email is in inbox or a folder (according to your email rules).
-2. On-prem or external – The mailbox doesn’t exist on cloud but is on-premises.
-3. Junk folder – The email in in the Junk folder of a user.
-4. Deleted items folder – The email in the Deleted items folder of a user.
-5. Quarantine – The email in quarantine, and is not in a user’s mailbox.
-6. Failed – The email failed to reach the mailbox.
-7. Dropped – The email gets lost somewhere in the Mailflow.
+- **Inbox or folder**: The email is in inbox or a folder (according to your email rules).
+- **On-prem or external**: The mailbox doesn’t exist on cloud but is on-premises.
+- **Junk folder**: The email in in the Junk folder of a user.
+- **Deleted items folder**: The email in the Deleted items folder of a user.
+- **Quarantine**: The email in quarantine, and is not in a user’s mailbox.
+- **Failed**: The email failed to reach the mailbox.
+- **Dropped**: The email gets lost somewhere in the Mailflow.
 
 The **Email Timeline** is another new Explorer feature aimed at making the hunting experience better for admins. It cuts down on randomization because there is less time spent checking different locations to try to understand the event. When multiple events happen at, or close to, the same time on an email, those events will show up in a timeline view. In fact, some events that happen post-delivery to your mail will be captured in the 'Special action' column. Combining the information from the timeline of that mail with the special action taken on the mail post-delivery will give admins insight into how their policies work, where the mail was finally routed, and, in some cases, what the final assessment was.
 
