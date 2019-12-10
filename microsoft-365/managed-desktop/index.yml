@@ -73,9 +73,12 @@ sections:
         src: https://docs.microsoft.com/media/common/i_guide.svg
 - title: Videos
   items:
+  - type: paragraph
+    text: 'video 1 is about this'
   - type: markdown
     text: ">[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]"
+  - type: paragraph
+    text: 'video 2 is about this'
   - type: markdown
     text: ">[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]"
-- video: |
-  second video text
+
