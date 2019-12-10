@@ -227,9 +227,9 @@ Download the prebuilt package from the Release section in the GitHub repository 
 
 ## Step 7: Set up a custom connector in the Security & Compliance Center
 
-1. Go to <https://protection.office.com> and then click **Data governance \> Import \> Archive third-party data**.
+1. Go to <https://protection.office.com> and then click **Information governance \> Import \> Archive third-party data**.
 
-   ![Go to security and compliance center and click Data governance > Import > Archive third-party data](media/FBCimage44.png)
+   ![Go to security and compliance center and click Information governance > Import > Archive third-party data](media/FBCimage44.png)
 
 2.  Click **Add a connector** and then click **Facebook pages**.
 

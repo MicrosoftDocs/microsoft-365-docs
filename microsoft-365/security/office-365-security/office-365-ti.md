@@ -23,7 +23,7 @@ Threat investigation and response capabilities in [Office 365 Advanced Threat Pr
 - Making it easy to identify, monitor, and understand cyberattacks
 - Helping to quickly address threats in Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams
 - Providing insights and knowledge to help security operations prevent cyberattacks against their organization
-- Employing [automated incident response](automated-investigation-response-office.md) for critical email-based threats
+- Employing [automated investigation and response in Office 365](automated-investigation-response-office.md) for critical email-based threats
     
 Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Office 365 Security &amp; Compliance Center. These insights can help your organization's security team protect Office 365 users from email- or file-based attacks. The capabilities help monitor signals and gather data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and your security operations team can use this information to understand and respond to threats against your organization and protect your intellectual property.
 
@@ -34,7 +34,7 @@ Threat investigation and response capabilities surface in the Security &amp; Com
 - [Explorer](#threat-explorer)
 - [Incidents](#incidents)
 - [Attack Simulator](#attack-simulator)
-- [Automated incident response](automated-investigation-response-office.md)
+- [Automated investigation and response](automated-investigation-response-office.md)
 
 ### Threat dashboard
 
@@ -68,7 +68,7 @@ Use Attack Simulator to set up and run realistic cyberattacks in your organizati
 
 ### Automated investigation and response
 
-Use automated investigation and response (AIR) capabilities to save time and effort correlating content, devices, and people at risk from threats in your organization. AIR processes can begin whenever certain alerts are triggered, or when started by your security operations team. To learn more, see [Automated incident response in Office 365](automated-investigation-response-office.md). 
+Use automated investigation and response (AIR) capabilities to save time and effort correlating content, devices, and people at risk from threats in your organization. AIR processes can begin whenever certain alerts are triggered, or when started by your security operations team. To learn more, see [automated investigation and response in Office 365](automated-investigation-response-office.md). 
   
 ## Threat intelligence widgets
 
