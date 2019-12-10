@@ -3,7 +3,7 @@ title: "Use sensitivity labels with Microsoft Teams, Office 365 groups, and Shar
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/05/2019
+ms.date: 12/10/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -27,13 +27,13 @@ When you create sensitivity labels in the [Microsoft 365 compliance center](http
 
 When you apply a label to a team or group, the label automatically applies to the connected SharePoint team site and the other way around.
 
-Now, You can also enable sensitivity labels for Office files in SharePoint and OneDrive. [Learn more](sensitivity-labels-sharepoint-onedrive-files.md).
+Now, you can also enable sensitivity labels for Office files in SharePoint and OneDrive. For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## About the public preview for Microsoft Teams, Office 365 groups, and SharePoint sites
 
 Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites is gradually rolling out to tenants and might change before final release.
 
-The public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
+This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
 
 ## Overview
 
@@ -51,51 +51,52 @@ These images show:
 
 ## Enable this preview
 
-1. Sign in to Azure as a global admin by using Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
+You must use [Azure Active Directory PowerShell for Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) to enable this preview. If you need to install this module, see [Installing the Azure AD Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#installing-the-azure-ad-module).
 
-2. Run the following command:
+1. In a PowerShell session, sign in to Azure Active Directory PowerShell as a global admin. For instructions, see [Connect to Azure AD](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#connect-to-azure-ad ).
 
-```powershell
-  Connect-AzureAD
-  $setting=(Get-AzureADDirectorySetting | where -Property DisplayName -Value "Group.Unified" -EQ)
-  if ($setting -eq $null)
-  {
+2. Run the following commands:
+    
+    ```powershell
+    $setting=(Get-AzureADDirectorySetting | where -Property DisplayName -Value "Group.Unified" -EQ)
+    if ($setting -eq $null)
+    {
     $template = Get-AzureADDirectorySettingTemplate -Id 62375ab9-6b52-47ed-826b-58e47e0e304b
     $setting = $template.CreateDirectorySetting()
     $setting["EnableMIPLabels"] = "True"
     New-AzureADDirectorySetting -DirectorySetting $setting
-  }
-  else
-  {
+    }
+    else
+    {
     $setting["EnableMIPLabels"] = "True"
     Set-AzureADDirectorySetting -Id $setting.Id -DirectorySetting $setting
-  }
-```
+    }
+    ```
+    
+    Office 365 no longer uses the old classifications for new groups and SharePoint sites when you enable this preview. If you used [Azure AD site classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($setting["ClassificationList"]), existing groups and sites still display the old classifications. To display the new classifications, convert them. For information about how to convert them, see [If you used classic Azure AD site classification](#if-you-used-classic-azure-ad-site-classification). 
 
-Office 365 no longer uses the old classifications for new groups and SharePoint sites when you enable this preview. If you used [Azure AD site classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($setting["ClassificationList"]), existing groups and sites still display the old classifications. To display the new classifications, convert them. For information about how to convert them, see [If you used classic Azure AD site classification](#if-you-used-classic-azure-ad-site-classification). 
+3. Now sign in to Security and Compliance Center Powershell as a global admin. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-3. Sign in to Security and Compliance Center Powershell as a global admin. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
-
-4. Run the following command:
-
-```powershell
-  Set-ExecutionPolicy RemoteSigned
-  $UserCredential = Get-Credential
-  $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-  Import-PSSession $Session -DisableNameChecking
-  Execute-AzureAdLabelSync
-```
+4. Run the following command in a PowerShell session:
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
+    Execute-AzureAdLabelSync
+    ```
 
 ## Set site and group settings when you create or edit sensitivity labels
 
-After you enable the preview, follow these steps to create or edit sensitivity labels. You must complete these steps for the new sensitivity labels to work with sites and groups, even if you already have labels defined. Changes to these settings may take up to 24 hours sync.
+After you enable the preview, use the following steps to create or edit sensitivity labels. You must complete these steps for the new sensitivity labels to work with sites and groups, even if you already have labels defined. Changes to these settings may take up to 24 hours to synchronize.
 
 1. In the Microsoft 365 compliance center, select **Classification** > **Sensitivity labels**.
 
 2. Select **Create a label**. If you already have a label, skip to the next step.
 
 3. Select the options you want, and then on the **Site and group settings** tab, choose:
-
+    
     - Privacy (Public/Private): Private means only approved members in your organization can see what's inside the group. Anyone else in your organization can't see what's in the group. [Learn more](https://support.office.com/article/36236e39-26d3-420b-b0ac-8072d2d2bedc)
     - Guest access: You can control if guests can be added to a group. [Learn about managing guest access in Office 365 Groups](/office365/admin/create-groups/manage-guest-access-in-groups)
     - Unmanaged devices: This setting lets you block or limit access to SharePoint content from devices that aren't hybrid AD joined or compliant in Intune. If you select Unmanaged devices, you need to go to Azure AD to finish setting up the policy. For info, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).
