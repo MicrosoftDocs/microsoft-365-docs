@@ -24,7 +24,8 @@ ms.topic: conceptual
 This article lists new features in the latest release of Office 365 ATP. 
 Features that are currently in preview are denoted with **(preview)**.
 
->Don't have Office 365 ATP yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644). 
+> [!TIP]
+> >Don't have Office 365 ATP yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644). 
 
 ## Office 365 ATP Plan 1 and Plan 2
 
@@ -38,7 +39,12 @@ The following table summarizes what's included in each plan.
 
 - Office 365 ATP Plan 2 is included in Office 365 E5, Office 365 A5, and Microsoft 365 E5. 
 - Office 365 ATP Plan 1 is included in Microsoft 365 Business. 
+- Office 365 ATP Plan 1 and Office 365 ATP Plan 2 are each available as an add-on for certain subscriptions. To learn more, see [Feature availability across ATP plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 - If your current subscription does not include Office 365 ATP, [contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644), and see how ATP can work for your organization. 
+
+## December 2019
+
+- [Export URL click data for offline analysis](threat-explorer.md#new-features-in-real-time-detections) (Office 365 ATP Plan 1 or Plan 2)
 
 ## November 2019
 

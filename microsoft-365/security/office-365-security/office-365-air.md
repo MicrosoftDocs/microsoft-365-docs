@@ -25,6 +25,9 @@ Depending on your subscription, [Office 365 Advanced Threat Protection](office-3
 - To get started using AIR capabilities in Office 365, use this article. 
 - To get an overview of how AIR works, see [Automated incident response (AIR) in Office 365](automated-investigation-response-office.md).
 
+> [!TIP]
+> Do you have Microsoft 365 E5 or Microsoft 365 E3 together with Identity & Threat Protection? Consider trying [Automated investigation and remediation (AIR) in Microsoft Threat Protection](../mtp/mtp-autoir.md).
+
 With AIR, when certain alerts are triggered, one or more security playbooks initiate, and automated investigation begins. During and after an automated investigation process, your administrators and security operations team can:
 
 - [View the details of an investigation](#view-details-of-an-investigation)
