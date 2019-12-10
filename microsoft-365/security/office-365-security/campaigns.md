@@ -1,5 +1,5 @@
 ---
-title: "Campaigns in Office 365 ATP"
+title: "Campaigns Views in Office 365 ATP"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid:
 ms.collection:
 - M365-security-compliance
-description: "Learn about Campaigns in Office 365 Advanced Threat Protection."
+description: "Learn about Campaign Views in Office 365 Advanced Threat Protection."
 ---
 
-# Campaigns in Office 365 ATP
+# Campaign Views in Office 365 ATP
 
 > [!NOTE]
 > The features described in this topic are currently in preview, and are subject to change.
 
-Campaigns is a feature in Advanced Threat Protection (ATP) in Office 365 that identifies and categorizes phishing attacks that are detected in in the service. Campaigns can help you to:
+Campaign Views is a feature in Advanced Threat Protection (ATP) in the Office 365 Security & Compliance Center that identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
 
 - Efficiently investigate and respond to phishing attacks.
 
@@ -30,7 +30,7 @@ Campaigns is a feature in Advanced Threat Protection (ATP) in Office 365 that id
 
 - Show value to decision makers.
 
-Campaigns lets you see the big picture of an attack faster and more complete than any human.
+Campaign Views lets you see the big picture of an attack faster and more complete than any human.
 
 ## What is a campaign?
 
@@ -46,9 +46,9 @@ Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malwa
 
 - **Attack payload**: Malicious links, attachments, or other payloads.
 
-## Campaign view the Office 365 Security & Compliance Center
+## Campaign Views the Office 365 Security & Compliance Center
 
-Campaign view is available in the [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center) at the following locations:
+Campaign Views is available in the [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center) at the following locations:
 
 - **Threat management** \> **Explorer** \> **View** \> **Phish** \> **Top campaign (Preview)**
 
@@ -63,19 +63,19 @@ The overview page shows the following information about the campaign:
 
 - **Name**
 
-- **Sample subject**
+- **Sample subject**: The subject line of one of the messages in the campaign. Note that _all_ the messages in the campaign will not necessarily have this same subject line.
 
-- **Type** (currently, this value will always be **Phish**)
+- **Type**: Currently, this value will always be **Phish**.
 
-- **Subtype**
+- **Subtype**: Where available, the brand that is being phished by this campaign. When the detection is driven by ATP technology, the prefix **ATP-**is added to the subtype value.
 
-- **Recipients**
+- **Recipients**: The number of users that were targeted by this campaign.
 
-- **Delivered**
+- **Delivered**: The number of users that received messages from this campaign into their Inbox.
 
 - **ID**: A unique identifier for the campaign.
 
-When you click on the name of a campaign, campaign view appears in a flyout.
+When you click on the name of a campaign, the campaign details appears in a flyout.
 
 ## Campaign details
 
@@ -89,7 +89,7 @@ In the campaign details view, a lot of information is available about the campai
 
   - **Impact**: the number of messages sent in the date range you selected, how many were "inboxed" (that is, delivered to the Inbox), and how many users clicked on the URL payload in the phishing message.
 
-  - A timeline of campaign activity (the number of messages sent).
+  - A timeline of campaign activity: When the campaign started and ended, and the volume of messages over time.
 
 ### Campaign flow
 
