@@ -44,7 +44,7 @@ The following table summarizes what's included in each plan.
 
 ## December 2019
 
-- [Export URL click data for offline analysis](threat-explorer.md#new-features-in-real-time-detections) (Office 365 ATP Plan 1 or Plan 2)
+- [Export URL click data for offline analysis](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP Plan 1 or Plan 2)
 
 ## November 2019
 
