@@ -45,6 +45,8 @@ These images show:
 
 - When you view the list in Word
 
+For example:
+
 ![A sensitivity label when creating a team site from SharePoint](media/sensitivity-label-new-team-site.png)
 
 ![A sensitivity label displayed in the Word desktop app](media/sensitivity-label-word.png)
@@ -53,7 +55,7 @@ These images show:
 
 You must use [Azure Active Directory PowerShell for Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) to enable this preview. If you need to install this module, see [Installing the Azure AD Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#installing-the-azure-ad-module).
 
-1. In a PowerShell session, sign in to Azure Active Directory PowerShell as a global admin. For instructions, see [Connect to Azure AD](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#connect-to-azure-ad ).
+1. In a PowerShell session, sign in to Azure Active Directory PowerShell as a global admin. For instructions, see [Connect to Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#connect-to-azure-ad ).
 
 2. Run the following commands:
     
@@ -61,7 +63,7 @@ You must use [Azure Active Directory PowerShell for Graph (AzureAD)](https://doc
     $setting=(Get-AzureADDirectorySetting | where -Property DisplayName -Value "Group.Unified" -EQ)
     if ($setting -eq $null)
     {
-    $template = Get-AzureADDirectorySettingTemplate -Id 62375ab9-6b52-47ed-826b-58e47e0e304b
+    $template = Get-AzureADDirectorySettingTemplate -Id 62375ab9-6b52-47ed-826b-58e47e0e304b
     $setting = $template.CreateDirectorySetting()
     $setting["EnableMIPLabels"] = "True"
     New-AzureADDirectorySetting -DirectorySetting $setting
