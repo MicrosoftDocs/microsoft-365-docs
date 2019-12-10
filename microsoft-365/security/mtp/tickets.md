@@ -33,7 +33,7 @@ ServiceNow recommends that users keep default settings in your ServiceNow instan
 
 ## Data exchange
 
-When you connect the Microsoft 365 security center to ServiceNow, Microsoft will receive the following additional data:
+When you connect the Microsoft 365 security center to ServiceNow, Microsoft receives the following additional data:
 
 * ServiceNow instance name
 * ServiceNow client ID
@@ -52,15 +52,16 @@ When you create a ServiceNow ticket from the Microsoft 365 security center, the 
 
 ## Connect Microsoft 365 security center to ServiceNow
 
-Navigate to the Microsoft 365 security center home page to see a card asking if you use ServiceNow.
+Navigate to the Microsoft 365 security center home page to see the ServiceNow connection card.
 
 ![Do you use ServiceNow](../images/do-you-use-servicenow-250.png)
 
-Selecting "Connect to ServiceNow" will send you to the ServiceNow setup page. Follow the instructions to authorize the Microsoft 365 Connector app.
+Select "Connect to ServiceNow" to go to the ServiceNow setup page. Follow the instructions to authorize the Microsoft 365 Connector app.
 
-When authorizing the connection between Microsoft 365 security center and ServiceNow, make sure you use the integration user login and password you created in the installation steps and not your personal credentials.
+> [!NOTE]
+> Before you authorize the connection between Microsoft 365 security center and ServiceNow, make sure you use the integration user login and password you created in the installation steps. Do not use your personal credentials.
 
-After following the directions and authorizing the connection, view the connection status on both the Microsoft 365 security center connection page and in the ServiceNow Microsoft 365 Ticketing Connector App experience. Now you are all set to start creating tasks!
+After you have followed the directions and authorizing the connection, view the connection status on both the Microsoft 365 security center connection page and in the ServiceNow Microsoft 365 Ticketing Connector App experience. Now you are all set to start creating tasks!
 
 ## Create a task and share it to ServiceNow
 
@@ -84,7 +85,7 @@ With ServiceNow tickets visible in the Microsoft 365 security center, your tasks
 
 ## Troubleshooting
 
-### Receiving an error in the first step of the installation checklist (OAuth creation)
+### You receive an error in the first step of the installation checklist (OAuth creation)
 
 **Error Message**: Read operation against 'oauth_entity' from scope 'x_mioms_m365ticket' has been refused due to the table's cross-scope access policy
 
@@ -103,11 +104,11 @@ Set the “application registries” table configurations to default:
 
 Go to application registries table (Menu > System OAuth > Application Registry) in ServiceNow and find the OAuth entity created by you (name that you assigned it).
 
-### How to validate the Integration User created in step two of the installation checklist for Microsoft 365 Security & Compliance connector
+### How to validate the Integration User created with the installation checklist for Microsoft 365 Security & Compliance connector
 
 Go to Users Table (Menu > User Administration > Users) in ServiceNow and find the Integration user created by you (name that you assigned it).
 
-When authorizing the connection between Microsoft 365 security center and ServiceNow, make sure you use the integration user login and password you created in the installation steps and not your personal credentials.
+Before you authorize the connection between Microsoft 365 security center and ServiceNow, make sure you use the integration user login and password you created in the installation steps. Do not use your personal credentials.
 
 ### Installation is complete but don't see tickets and can't share
 
