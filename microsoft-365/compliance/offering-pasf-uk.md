@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Police-Assured Secure Facilities (PASF) United Kingdom
+# Police-Assured Secure Facilities (PASF) United Kingdom
 
 ## About PASF
 

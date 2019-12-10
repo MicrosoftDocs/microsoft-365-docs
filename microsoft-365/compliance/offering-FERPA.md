@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Family Educational Rights and Privacy Act (FERPA)
+# Family Educational Rights and Privacy Act (FERPA)
 
 ## FERPA overview
 

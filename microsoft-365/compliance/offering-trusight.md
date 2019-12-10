@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: TruSight
+# TruSight
 
 ## About TruSight
 

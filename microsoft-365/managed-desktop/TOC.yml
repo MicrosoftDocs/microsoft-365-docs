@@ -1,0 +1,115 @@
+- name: Microsoft Managed Desktop
+  href: index.yml
+  items: 
+    - name: What is Microsoft Managed Desktop?
+      href: intro/index.md
+      items: 
+        - name: Roles and responsibilities
+          href: intro/roles-and-responsibilities.md
+        - name: Technologies in Microsoft Managed Desktop
+          href: intro/technologies.md
+        - name: Microsoft Managed Desktop and ITIL
+          href: MMD-and-ITSM.md
+    - name: Microsoft Managed Desktop service description
+      href: service-description/index.md
+      items: 
+        - name: Supported regions and languages
+          href: service-description/regions-languages.md
+        - name: Product lifecycle
+          href: service-description/device-lifecycle.md
+        - name: Program devices
+          href: service-description/device-list.md
+          items: 
+            - name: Archived program devices
+              href: service-description/archived-device-list.md
+        - name: Device services
+          href: service-description/device-services.md
+        - name: Device configuration
+          href: service-description/device-policies.md
+        - name: Security
+          href: service-description/security.md
+        - name: Updates
+          href: service-description/updates.md
+        - name: Support
+          href: service-description/support.md
+        - name: Operations and monitoring
+          href: service-description/operations-and-monitoring.md
+        - name: Application requirements
+          href: service-description/mmd-app-requirements.md
+        - name: Service changes and communication
+          href: service-description/servicechanges.md
+        - name: Exceptions to the service plan
+          href: service-description/customizing.md
+    - name: Get ready for enrollment in Microsoft Managed Desktop
+      href: get-ready/index.md
+      items: 
+        - name: Prerequisites for Microsoft Managed Desktop
+          href: get-ready/prerequisites.md
+        - name: Prepare network
+          href: get-ready/network.md
+        - name: Prepare on-premises resources access for Microsoft Managed Desktop
+          href: get-ready/authentication.md
+        - name: Prepare mapped drives for Microsoft Managed Desktop
+          href: get-ready/mapped-drives.md
+        - name: Prepare certificates and network profiles for Microsoft Managed Desktop
+          href: get-ready/certs-wifi-lan.md
+        - name: Prepare apps
+          href: get-ready/apps.md
+          items: 
+            - name: Working with Microsoft Consulting Services
+              href: get-ready/apps-MCS.md
+    - name: Get started with Microsoft Managed Desktop
+      href: get-started/index.md
+      items: 
+        - name: Add and verify admin contacts in the Admin portal
+          href: get-started/add-admin-contacts.md
+        - name: Adjust conditional access
+          href: get-started/conditional-access.md
+        - name: Assign licenses
+          href: get-started/assign-licenses.md
+        - name: Deploy Intune Company Portal
+          href: get-started/company-portal.md
+        - name: Enable Enterprise State Roaming
+          href: get-started/enterprise-state-roaming.md
+        - name: Set up devices
+          href: get-started/set-up-devices.md
+          items: 
+            - name: Register new devices yourself
+              href: get-started/register-devices-self.md
+              items: 
+                - name: Steps for Partners to register devices
+                  href: get-started/register-devices-partner.md
+            - name: Register existing devices yourself
+              href: get-started/register-reused-devices-self.md
+        - name: Get your users ready to use devices
+          href: get-started/get-started-devices.md
+        - name: Deploy apps
+          href: get-started/deploy-apps.md
+          items: 
+            - name: Microsoft Project and Microsoft Visio
+              href: get-started/project-visio.md
+    - name: Working with Microsoft Managed Desktop
+      href: working-with-managed-desktop/index.md
+      items: 
+        - name: Work with insights
+          href: working-with-managed-desktop/insights.md
+          items: 
+            - name: Usage insights
+              href: working-with-managed-desktop/usage-insights.md
+            - name: Reliability insights
+              href: working-with-managed-desktop/reliability-insights.md
+        - name: Admin support
+          href: working-with-managed-desktop/admin-support.md
+        - name: End user support
+          href: working-with-managed-desktop/end-user-support.md
+        - name: Manage apps
+          href: working-with-managed-desktop/manage-apps.md
+        - name: Configurable settings
+          href: working-with-managed-desktop/config-setting-overview.md
+          items: 
+            - name: Configurable settings reference
+              href: working-with-managed-desktop/config-setting-ref.md
+            - name: Deploy configurable settings
+              href: working-with-managed-desktop/config-setting-deploy.md
+    - name: Change history for Microsoft Managed Desktop documentation
+      href: change-history-managed-desktop.md

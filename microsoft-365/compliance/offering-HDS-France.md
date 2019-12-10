@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Health Data Hosting (HDS) France
+# Health Data Hosting (HDS) France
 
 ## About HDS
 

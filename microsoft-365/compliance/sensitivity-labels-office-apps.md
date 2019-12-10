@@ -3,7 +3,7 @@ title: "Sensitivity labels in Office apps"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/09/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -92,23 +92,27 @@ The Office built-in labeling client downloads labels and policy settings from th
 
 - Microsoft 365 compliance center
 
-The Office built-in labeling client is enabled automatically for users who have one or more [label policy published](sensitivity-labels.md#what-label-policies-can-do) to them.
+To use the Office built-in labeling client, you must have one or more [label policies published](sensitivity-labels.md#what-label-policies-can-do) to users from one of the listed admin centers.
 
-To use the built-in labeling client in Office on Windows, you can't run the Azure Information Protection add-in at the same time in Office. You can either temporarily or permanently uninstall the Azure Information Protection client, or you can leave it installed and configure Office to prevent it from running.
+However, if users have one of the Azure Information Protection clients installed ([unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) or [classic client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), by default, the built-in labeling client is disabled in their Office apps. To use built-in labeling rather than the Azure Information Protection client for Office apps, disable or uninstall the Office add-in for Azure Information Protection:
 
 1. Complete one of these options:
-
-    **For multiple computers:** Configure the **Use the Sensitivity feature in Office to apply and view sensitivity labels** Group Policy setting. Find this setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**. Deploy this setting through group policy, or by using the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
-
-    **For a single computer:** See "view, manage, and install add-ins in Office programs," and [permanently disable or remove](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) the Azure Information Protection add-in on a single computer.
+    
+    - **For multiple computers:** Configure the **Use the Sensitivity feature in Office to apply and view sensitivity labels** Group Policy setting. Find this setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**. Deploy this setting through group policy, or by using the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
+    
+    - **For a single computer:** See "View, manage, and install add-ins in Office programs" for information about how to  [permanently disable or remove](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) the Azure Information Protection add-in on a single computer.
 
 2. Restart all Office applications.
 
-For more information about client apps for information protection, see [The client side of Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/use-client).
+When you disable or uninstall this Office add-in, the Azure Information Protection client remains installed so that you can continue to label files outside your Office apps. For example, by using File Explorer, or PowerShell.
+
+For information about which features are supported by the Azure Information Protection clients and the Office built-in labeling client, see [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure Information Protection documentation.
 
 ## Protection templates and sensitivity labels
 
-Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates), such as those you define for Office 365 Message Encryption, are hidden from the Office user experience when sensitivity labels are enabled because they are redundant with sensitivity labels that have encryption enabled.
+Administrator-defined [protection templates](https://docs.microsoft.com/azure/information-protection/configure-policy-templates), such as those you define for Office 365 Message Encryption, aren't visible in Office apps when you're using built-in labeling. This simplified experience reflects that there's no need to select a protection template, because the same settings are included with sensitivity labels that have encryption enabled.
+
+If you need to convert existing protection templates to labels, use the Azure portal and the following instructions: [To convert templates to labels](https://docs.microsoft.com/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels).
 
 ## Apply sensitivity labels to files, emails, and attachments
 

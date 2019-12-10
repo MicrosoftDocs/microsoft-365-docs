@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework
+# Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework
 
 ## MARS-E 2.0 Framework overview
 
