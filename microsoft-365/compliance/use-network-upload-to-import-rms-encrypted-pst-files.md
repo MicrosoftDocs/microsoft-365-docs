@@ -220,9 +220,9 @@ Now that you've configured Azure RMS and obtained the IDs necessary to encrypt P
     
 2. Sign in to Office 365 using the credentials for an administrator account in your Office 365 organization.
     
-3. In the left pane, click **Data governance** and then click **Import**.
+3. In the left pane, click **Information governance** \> **Import** \> **Import PST files**.
     
-4. On the **Import** page, click **Go to the Import service**.
+4. On the **Import PST files** page, click **Go to the Import service**.
     
 5. On the **Import data to Office 365** page, click **New job** ![Add Icon](media/ITPro-EAC-AddIcon.gif), and then click **Upload email messages (PST files)**.
     
@@ -376,9 +376,9 @@ The last step is to create the PST Import job in the Import service in Office 36
     
 2. Sign in to Office 365 using the credentials for an administrator account in your Office 365 organization.
     
-3. In the left pane, click **Data governance** and then click **Import**.
+3. In the left pane, click **Information governance** and then click **Import**.
     
-4. On the **Import** page, click **Go to the Import service**.
+4. On the **Import PST files** page, click **Go to the Import service**.
     
 5. On the **Import data to Office 365** page, click **New job**![Add Icon](media/ITPro-EAC-AddIcon.gif), and then click **Upload email messages (PST files)**.
     

@@ -402,7 +402,7 @@ Step 2: Run the following script.
 
 Step 1: Go to the Security & Compliance Center.
 
-Step 2: Select **Events** under **Data Governance**.
+Step 2: Select **Events** under **Information governance**.
 
 Step 3: Verify Event has been created.
 
