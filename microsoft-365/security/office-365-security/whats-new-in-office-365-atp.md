@@ -46,6 +46,9 @@ The following table summarizes what's included in each plan.
 
 - [Check out new compromised user detection and response capabilities (**preview**)](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) (Office 365 ATP Plan 2)
 
+## December 2019
+- [Export URL Clicks for offline analysis](threat-explorer.md#new-features-in-real-time-detections) (Office 365 ATP Plan 1 or Plan 2)
+
 ## September 2019
 
 - [Employ automated incident response (AIR) in Office 365](automated-investigation-response-office.md) (Office 365 ATP Plan 2)
