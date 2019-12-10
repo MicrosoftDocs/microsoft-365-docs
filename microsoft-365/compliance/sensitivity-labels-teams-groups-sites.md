@@ -55,7 +55,7 @@ For example:
 
 You must use [Azure Active Directory PowerShell for Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) to enable this preview. If you need to install this module, see [Installing the Azure AD Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#installing-the-azure-ad-module).
 
-1. In a PowerShell session, sign in to Azure Active Directory PowerShell as a global admin. For instructions, see [Connect to Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#connect-to-azure-ad ).
+1. In a PowerShell session, sign in to Azure Active Directory as a global admin. For instructions, see [Connect to Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#connect-to-azure-ad ).
 
 2. Run the following commands:
     
