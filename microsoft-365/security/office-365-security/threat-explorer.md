@@ -3,7 +3,6 @@ title: "Threat Explorer and real-time detections, new to Threat Explorer, change
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
