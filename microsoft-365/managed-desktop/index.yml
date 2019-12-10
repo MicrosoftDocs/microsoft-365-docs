@@ -77,8 +77,8 @@ sections:
     text: ">[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]"
   - type: markdown
     text: ">[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]"
-video: |
-
+- video: |
+   
   second video text
  
  
