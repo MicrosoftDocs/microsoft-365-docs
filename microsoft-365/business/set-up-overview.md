@@ -45,10 +45,11 @@ Most of the setup steps can be done in the setup wizard, but the other options a
   
   In addition to the security settings in the setup wizard, you can increase your security by adding the following settings:
 
-      - **Email malware protection**
-      - **ATP anti-phishing**
-      - **Exchange Online Archiving**
-      - **Azure Information Protection (Plan1**)
+
+- **Email malware protection**
+- **ATP anti-phishing**
+- **Exchange Online Archiving**
+- **Azure Information Protection (Plan1**)
 
 
 To get started see, [set up advanced security policies](set-up-advanced-security.md).
