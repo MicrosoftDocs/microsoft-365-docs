@@ -327,7 +327,7 @@ After you've shipped the hard drive to Microsoft, complete the following procedu
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your Office 365 organization. 
     
-2. In the left pane, click **Information governance** and then click **Import**.
+2. In the left pane, click **Information governance > Import > Import PST files**.
     
 3. On the **Import PST files** page, click the job for the drive shipment that you want to enter the tracking number for. 
     
@@ -395,7 +395,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
     
 1. Go to [https://protection.office.com/](https://protection.office.com/) and sign in using the credentials for an administrator account in your Office 365 organization. 
     
-2. In the left pane of the Security & Compliance Center, click **Information governance** \> **Import**.
+2. In the left pane of the Security & Compliance Center, click **Information governance > Import > Import PST files**.
     
 3. On the **Import PST files** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     

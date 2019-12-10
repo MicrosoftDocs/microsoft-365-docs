@@ -30,7 +30,7 @@ After the LinkedIn Company page data is stored in a mailbox, you can apply Offic
 
 ## Create a LinkedIn connector
 
-1. Go to <https://protection.office.com> and then select **Information governance \> Import** and then select **Archive third-party data**.
+1. Go to <https://protection.office.com> and then click **Information governance \> Import > Archive third-party data**.
 
 2. On the **Archive third-party data** page, select **Add a connector**, and then select **LinkedIn**.
 

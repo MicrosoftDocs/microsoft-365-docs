@@ -234,7 +234,7 @@ The next step is to create the PST Import job in the Import service in Office 36
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your Office 365 organization. 
     
-2. In the left pane of the Security & Compliance Center, click **Information governance** and then click **Import**.
+2. In the left pane of the Security & Compliance Center, click **Information governance > Import > Import PST files**.
     
 3. On the **Import PST files** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     

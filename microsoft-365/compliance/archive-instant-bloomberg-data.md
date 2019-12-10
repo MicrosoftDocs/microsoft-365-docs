@@ -68,7 +68,7 @@ Many of the implementation steps required to archive Instant Bloomberg data are 
 
 The first step is to obtain a copy of the public keys for Secure Shell (SSH) and Pretty Good Privacy (PGP). You use these keys in Step 2 to configure the Bloomberg SFTP site to allow the connector (that you create in Step 3) to connect to the SFTP site and transfer the Instant Bloomberg chat data to Office 365 mailboxes. You also obtain an IP address in this step, which you use when configuring the Bloomberg SFTP site.
 
-1. Go to <https://protection.office.com> and then click **Information governance \> Import** and then click **Archive third-party data**.
+1. Go to <https://protection.office.com> and then click **Information governance \> Import** > **Archive third-party data**.
 
 2. On the **Archive third-party data** page, click **Add a connector**, and then click **Instant Bloomberg**.
 
@@ -95,7 +95,7 @@ The next step is to use the SSH and PGP public keys and the IP address that you 
 
 The last step is to create an Instant Bloomberg connector in the Security & Compliance Center. The connector uses the information you provide to connect to the Bloomberg SFTP site and transfer chat messages to the corresponding user mailbox boxes in Office 365. 
 
-1. Go to <https://protection.office.com> and then click **Information governance \> Import** and then click **Archive third-party data**.
+1. Go to <https://protection.office.com> and then click **Information governance \> Import** > **Archive third-party data**.
 
 2. On the **Archive third-party data** page, click **Add a connector**, and then click **Instant Bloomberg**.
 
