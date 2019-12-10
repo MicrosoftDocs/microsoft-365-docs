@@ -79,6 +79,6 @@ sections:
   - type: markdown
     text: ">[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]"
   - type: paragraph
-    text: 'Watch Microsoft Managed Desktop's General Manager share all the highlights of the service at the annual Ignite conference.'
+    text: 'The General Manager of Microsoft Managed desktop shares all the highlights of the service at the annual Ignite conference.'
   - type: markdown
     text: ">[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]"
