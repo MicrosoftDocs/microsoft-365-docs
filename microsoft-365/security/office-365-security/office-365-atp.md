@@ -28,7 +28,7 @@ Office 365 Advanced Threat Protection (ATP) safeguards your organization against
 - **[Threat protection policies](#configure-atp-policies)**: Define threat-protection policies to set the appropriate level of protection for your organization. 
 - **[Reports](#view-office-365-atp-reports)**: View real-time reports to monitor ATP performance in your organization. 
 - **[Threat investigation and response capabilities](#use-threat-investigation-and-response-capabilities)**: Use leading-edge tools to investigate, understand, simulate, and prevent threats. 
-- **[Automated investigation and response capabilities](#save-time-with-automated-incident-response)**: Save time and effort investigating and mitigating threats.
+- **[Automated investigation and response capabilities](#save-time-with-automated-investigation-and-response)**: Save time and effort investigating and mitigating threats.
 
 ## Office 365 ATP Plan 1 and Plan 2
 
@@ -126,4 +126,4 @@ New features are added to Office 365 ATP continually. To learn more, see the fol
 
 - [Microsoft Threat Protection](../mtp/microsoft-threat-protection.md)
 
-- [Automated investigation and remediation (AIR) in Microsoft Threat Protection](../mtp/mtp-autoir.md)
+- [Automated investigation and response (AIR) in Microsoft Threat Protection](../mtp/mtp-autoir.md)
