@@ -31,7 +31,7 @@ Wondering why it's quiet on the release front this month? We're heads down build
 ### New encryption options for sensitivity labels 
 
 When configuring encryption for a sensitivity label, you now have two options that lets users assign permissions when they manually apply the label to email and docs:<br>
-- When applying the label to **Outlook email**, users can enforce restrictions equivalent to the Do Not Forward option. Recipients will be able ot read the message but not forward, print, or copy the content.
+- When applying the label to **Outlook email**, users can enforce restrictions equivalent to the Do Not Forward option. Recipients will be able to read the message but not forward, print, or copy the content.
 - When applying the label to **Word, PowerPoint, and Excel files**, users will be prompted to assign access permissions to specific users and groups.
 
 [Learn more](encryption-sensitivity-labels.md#let-users-assign-permissions)

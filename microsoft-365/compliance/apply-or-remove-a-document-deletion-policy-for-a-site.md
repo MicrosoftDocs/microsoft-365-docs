@@ -18,7 +18,7 @@ description: "Organizations are often subject to compliance, legal, or other reg
 
 # Apply or remove a document deletion policy for a site
 
-Organizations are often subject to compliance, legal, or other regulations that require them to retain documents for a certain period of time. However, retaining documents for longer than required can expose the organization to legal risk. For this reason, your organization may have created a document deletion policy for your site — for example, general business documents might be required to be deleted five years after they were created.
+Organizations are often subject to compliance, legal, or other regulations that require them to retain documents for a certain period of time. However, retaining documents for longer than required can expose the organization to legal risk. For this reason, your organization may have created a document deletion policy for your site&mdash;for example, general business documents might be required to be deleted five years after they were created.
   
 Depending on your organization, a document deletion policy might be:
   
@@ -28,11 +28,11 @@ Depending on your organization, a document deletion policy might be:
     
   - Choose another policy if available.
     
-  - Opt out of the policy entirely if it is not relevant to the content in the site.
+  - Opt out of the policy entirely if it isn't relevant to the content in the site.
     
 - **Neither mandatory nor default** In this case, no policy is automatically applied to the site, and the site owner needs to take action to apply one. 
     
-A document deletion policy may contain more than one rule — for example, one rule might say delete documents one year after they were created, but another rule might say delete documents one year after they were last modified. If a policy contains more than one rule, you can select the rule that best applies to your site. The delete rule will be applied to all libraries within the site. Only one policy and one rule can be active in a site at one time. Like a policy, a rule can be set as default, so that it is applied automatically when the policy is applied.
+A document deletion policy may contain more than one rule&mdash;for example, one rule might say delete documents one year after they were created, but another rule might say delete documents one year after they were last modified. If a policy contains more than one rule, you can select the rule that best applies to your site. The delete rule will be applied to all libraries within the site. Only one policy and one rule can be active in a site at one time. Like a policy, a rule can be set as default, so that it's applied automatically when the policy is applied.
   
 Finally, document deletion policies are inherited. When you select a policy or rule for your site, that selection is inherited by all subsites, although an owner of a subsite can break inheritance by selecting a different policy or rule. When you select a policy or rule, consider the content of any subsites below your site.
   
@@ -80,7 +80,7 @@ As a site owner or site collection owner, your organization may have created pol
   
   - **To opt out of a policy** Choose **Opt-Out: Do Note Delete** \> **Save**.
     
-    As a site owner, you can opt out of a document deletion policy if you determine that the policy is not applicable to the content in your site. However, you cannot opt out of a policy that has been marked as **Mandatory**.
+    As a site owner, you can opt out of a document deletion policy if you determine that the policy isn't applicable to the content in your site. However, you can't opt out of a policy that has been marked as **Mandatory**.
     
     ![Opt Out option](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
   
@@ -92,9 +92,9 @@ A site may use other policies for retaining and deleting content:
     
 - Information management policies for a list or library.
     
-If you apply a document deletion policy to a site that already uses content type policies or information management policies for a list or library, those policies are ignored while the document deletion policy is in effect. If other policies are ignored, you will see the message "Content on this site uses Document Deletion Policies".
+If you apply a document deletion policy to a site that already uses content type policies or information management policies for a list or library, those policies are ignored while the document deletion policy is in effect. If other policies are ignored, you'll see the message "Content on this site uses Document Deletion Policies".
   
-This means you should plan for a site to use only policies meant for structured content (information management policies and content type policies) or unstructured content (document deletion policies), not both. If you opt out of a document deletion policy, the warning will not be displayed and other types of policies will continue to work.
+This means you should plan for a site to use only policies meant for structured content (information management policies and content type policies) or unstructured content (document deletion policies), not both. If you opt out of a document deletion policy, the warning won't be displayed and other types of policies will continue to work.
   
 Site policies are not affected by document deletion policies.
   

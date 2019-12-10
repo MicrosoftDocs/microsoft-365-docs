@@ -3,7 +3,7 @@ title: "Simulated enterprise base configuration for Microsoft 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -256,7 +256,7 @@ Next, join the APP1 virtual machine to the TESTLAB domain with these commands at
   
 ```powershell
 $yourDomain="<your public domain name>"
-Add-Computer -DomainName ("testlab" + $yourDomain)
+Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
@@ -287,7 +287,7 @@ This is your current configuration.
 In this step, you create and configure CLIENT1, which acts as a typical laptop, tablet, or desktop computer on the intranet.
 
 > [!NOTE]  
-> The following command set creates CLIENT1 running Windows Server 2016 Datacenter, which can be done for all types of Azure subscriptions. If you have an Visual Studio-based Azure subscription, you can create CLIENT1 running Windows 10 with the [Azure portal](https://portal.azure.com). 
+> The following command set creates CLIENT1 running Windows Server 2016 Datacenter, which can be done for all types of Azure subscriptions. If you have a Visual Studio-based Azure subscription, you can create CLIENT1 running Windows 10 with the [Azure portal](https://portal.azure.com). 
   
 To create an Azure Virtual Machine for CLIENT1, fill in the name of your resource group and run these commands at the  command prompt on your local computer.
   
@@ -314,7 +314,7 @@ Next, join the CLIENT1 virtual machine to the TESTLAB domain with these commands
   
 ```powershell
 $yourDomain="<your public domain name>"
-Add-Computer -DomainName ("testlab" + $yourDomain)
+Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
@@ -353,183 +353,32 @@ In this phase, you create a new Microsoft 365 E5 subscription that uses a new Az
 
 - Use a trial subscription of Microsoft 365 E5. 
 
-  The Microsoft 365 E5 trial subscription is 30 days, which can be easily extended to 60 days. When the trial subscription expires, you must either convert it to a paid subscriptions or create a new trial subscription. Creating new trial subscriptions means you will leave your configuration, which could include complex scenarios, behind.  
+  The Microsoft 365 E5 trial subscription is 30 days, which can be easily extended to 60 days. When the trial subscription expires, you must either convert it to a paid subscription or create a new trial subscription. Creating new trial subscriptions means you will leave your configuration, which could include complex scenarios, behind.  
 
 - Use a separate production subscription of Microsoft 365 E5 with a small number of licenses.
 
   This is an additional cost, but ensures that you have a working test environment to try features, configurations, and scenarios that does not expire. You can use the same test environment over the long term for proofs of concept, demonstration to peers and management, and application development and testing. This is the recommended method.
 
-To start your Microsoft 365 E5 trial subscription, you first need a fictitious company name and a new Microsoft account.
-  
-1. We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here: ![](./media/Common-Images/TableLine.png)
-    
-2. To sign up for a new Microsoft account, go to [https://outlook.com](https://outlook.com) and create an account with a new email account and address. You will use this account to sign up for Office 365.
-    
-  - Record the first and last name of your new account here: ![](./media/Common-Images/TableLine.png)
-    
-  - Record the new email account address here: ![](./media/Common-Images/TableLine.png)@outlook.com
-    
 ### Sign up for an Office 365 E5 trial subscription
 
-We start with an Office 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
+Connect to CLIENT1 with the CORP\User1 account from the Azure portal.
 
-1. For the simulated enterprise Office 365 dev/test environment, connect to CLIENT1 with the CORP\User1 account from the Azure portal.  From the Start screen, run Microsoft Edge and go to [https://aka.ms/e5trial](https://aka.ms/e5trial).
-    
-2. On the **Welcome, let's get to know you** page, specify:
-    
-  - Your physical location
-    
-  - The first and last name of your new Microsoft account
-    
-  - Your new email account address
-    
-  - A business phone number
-    
-  - Your fictional company name
-    
-  - An organization size of 250-999 people
-    
-3. Click **Just one more step**.
-    
-4. On the **Create your user ID** page, type a user name based on your new email address, your fictional company after the @ sign (remove all spaces in the name), then a password (twice) for this new Office 365 account.
-    
-    Record the password that you typed in a secure location.
-    
-    Record your fictional company name, to be referred to as the **organization name**, here: ![](./media/Common-Images/TableLine.png)
-    
-5. Click **Create my account**.
-    
-6. On the **Prove. You're. Not. A. Robot.** page, type the phone number of your text-capable phone, and then click **Text me**.
-    
-7. Type the verification code from the received text message, and then click **Next**.
-    
-8. Record the sign-in page URL here (select and copy): ![](./media/Common-Images/TableLine.png)
-    
-9. Record the user ID here (select and copy): ![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-    This value will be referred to as the **Office 365 global administrator name**.
-    
-10. When you see **You're ready to go**, click it.
-    
-11. On the next page, wait until Office 365 completes setting up and all the tiles are available.
-    
-You should see main Office 365 portal page from which you can access Office services and the Microsoft 365 admin center.
-  
-We have you create a trial subscription of Office 365 so that your dev/test environment has a separate Azure AD tenant from any paid subscriptions you currently have. This separation means you can add and remove users and groups in the test tenant without affecting your production subscriptions.
-    
-### Configure your Office 365 E5 trial subscription
+To create a new Office 365 E5 trial subscription, perform the instructions in [Phase 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-office-365-e5-subscription) of the lightweight base configuration Test Lab Guide.
 
-Next, you configure your Office 365 E5 subscription with additional users and assign them Office 365 E5 licenses.
-  
-Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) to connect to your Office 365 subscription with the Azure Active Directory PowerShell for Graph module the CLIENT1 virtual machine.
-    
-In the Windows PowerShell Credential Request dialog box, type the Office 365 global administrator name (example: jdoe@contosotoycompany.onmicrosoft.com) and password.
-  
-Fill in your organization name (example: contosotoycompany), the two-character country code for your location, a common account password, and then run the following commands from the PowerShell prompt:
+To configure your new Office 365 E5 trial subscription, perform the instructions in [Phase 2](lightweight-base-configuration-microsoft-365-enterprise.md#phase-2-configure-your-office-365-trial-subscription) of the lightweight base configuration Test Lab Guide.
 
-```powershell
-$orgName="<organization name>"
-$loc="<two-character country code, such as US>"
-$commonPW="<common user account password>"
-$PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
-$PasswordProfile.Password=$commonPW
+#### Using an Office 365 E5 test environment
 
-$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-```
-> [!NOTE]
-> The use of a common password here is for automation and ease of configuration for a dev/test environment. Obviously, this is highly discouraged for production subscriptions. 
-
-#### Record key information for future reference
-
-You might want to print this article to record the specific information that you will need for this environment over the 30 days of the Office 365 trial subscription. You can easily extend the trail subscription for another 30 days. For a permanent dev/test environment, create a new paid subscription with a separate Azure AD tenant and a small number of licenses.
-
-Record these values:
-  
-- Office 365 global administrator name: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (from step 9 of Phase 2)
-    
-    Also record the password for this account in a secure location.
-    
-- Your trial subscription organization name: ![](./media/Common-Images/TableLine.png) (from step 4 of Phase 2)
-    
-- To list the accounts for User 2, User 3, User 4, and User 5, run the following command from the Windows Azure Active Directory Module for Windows PowerShell prompt:
-    
-  ```powershell
-  Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
-  ```
-
-    Record the account names here:
-    
-  - User 2 account name: user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-  - User 3 account name: user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-  - User 4 account name: user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-  - User 5 account name: user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-    Also record the common password for these accounts in a secure location.
-   
-
-#### Using an Office 365 E5 dev/test environment
-
-If all you need is an Office 365 dev/test environment, you can stop here. 
+If all you need is an Office 365 test environment, you can stop here. 
 
 See [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) for additional Test Lab Guides that apply to both Office 365 and Microsoft 365.
-  
+
 ### Add a Microsoft 365 E5 trial subscription
 
-Next, you sign up for the Microsoft 365 E5 trial subscription and add it to the same organization as your Office 365 E5 trial subscription.
+To a Microsoft 365 E5 trial subscription and configure your users accounts with licenses, perform the instructions in [Phase 3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) of the lightweight base configuration Test Lab Guide.
+
   
-First, add the Microsoft 365 E5 trial subscription and assign a Microsoft 365 license to your global administrator account.
-  
-1. With a private instance of an Internet browser, sign in to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com) with your global administrator account credentials.
-    
-2. On the **Microsoft 365 admin center** page, in the left navigation, click **Billing > Purchase services**.
-    
-3. On the **Purchase services** page, find the **Microsoft 365 E5** item. Hover your mouse pointer over it and click **Start free trial**.
-
-4. On the **Microsoft 365 E5 Trial** page, choose to receive a text or a call, enter your phone number, then click **Text me** or **Call me**.
-
-5. On the **Confirm your order** page, click **Try now**.
-
-6. On the **Order receipt** page, click **Continue**.
-
-7. In the Microsoft 365 admin center, click **Active users**, and then your administrator account.
-
-8. Click **Edit** for **Product licenses**.
-
-9. Turn off the license for Office 365 Enterprise E5 and turn on the license for Microsoft 365 E5.
-
-10. Click **Save > Close > Close**.
-
-Next, repeat steps 8 through 11 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
-  
-> [!NOTE]
-> The Microsoft 365 E5 trial subscription is 30 days. For a permanent test environment, convert this trial subscription to a paid subscription with a small number of licenses. 
-  
-### Results
+## Results
 
 Your test environment now has:
   

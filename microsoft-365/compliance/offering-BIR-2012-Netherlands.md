@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Baseline Informatiebeveiliging Rijksdienst standard (BIR 2012)
+# Baseline Informatiebeveiliging Rijksdienst standard (BIR 2012)
 
 ## BIR 2012 overview
 

@@ -228,6 +228,16 @@
           "source_path": "microsoft-365/compliance/responding-to-a-compromised-email-account.md",
           "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account",
           "redirect_document_id": true
+        }, 
+        {
+          "source_path": "microsoft-365/security/office-365-security/microsoft-security-and-compliance.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/security/compliance/compliance-solutions-overview.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/offering-home",
+          "redirect_document_id": true
         }
       ]
   }

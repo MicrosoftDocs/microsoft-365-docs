@@ -54,13 +54,12 @@ The Junk Email Reporting Add-in supports the following languages:
 - Spanish
     
 ## Install the Junk Email Reporting Add-in
-<a name="sectionSection1"> </a>
 
 You can install the Junk Email Reporting Add-in:
   
-- By running the Windows Installer package as you would any other .msi file. When you install the add-in, a GUI interface opens and prompts you through the installation screens. For more information, see [Install the Junk Email Reporting Add-In using the Setup wizard](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-InUsingtheSetupWizard). OR
+- By running the Windows Installer package as you would any other .msi file. When you install the add-in, a GUI interface opens and prompts you through the installation screens. For more information, see [Install the Junk Email Reporting Add-In using the Setup wizard](#install-the-junk-email-reporting-add-in-using-the-setup-wizard). OR
     
-- By running a silent installation which suppresses the installation user interface. Instead, you specify command-line options which run an installation script. When you install the add-in, additional configuration options are available which are not available through the GUI interface. For more information, see [Install the Junk Email Reporting Add-In using Silent Mode](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode).
+- By running a silent installation which suppresses the installation user interface. Instead, you specify command-line options which run an installation script. When you install the add-in, additional configuration options are available which are not available through the GUI interface. For more information, see [Install the Junk Email Reporting Add-In using Silent Mode](#install-the-junk-email-reporting-add-in-using-silent-mode).
     
 ### What do you need to know before you begin?
 
@@ -82,7 +81,6 @@ Installation of the Microsoft Junk Email Reporting Add-in for Microsoft Outlook 
 > You must have administrator privileges on the computer on which you are installing the add-in. 
   
 ### Install the Junk Email Reporting Add-In using the Setup wizard
-<a name="BKMK_InstalltheJunkEmailReportingAdd-InUsingtheSetupWizard"> </a>
 
 1. On your computer, close Outlook.
     
@@ -103,7 +101,6 @@ Installation of the Microsoft Junk Email Reporting Add-in for Microsoft Outlook 
 9. Choose the down arrow next to **Junk** for more options such as **Report as Phishing** if you want to report phishing scam emails to Microsoft. In your junk mail folder, you can also select, **Report not junk** if an email was incorrectly identified as junk mail. 
     
 ### Install the Junk Email Reporting Add-In using Silent Mode
-<a name="BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode"> </a>
 
 1. On your computer, close Outlook.
     
@@ -130,9 +127,9 @@ Installation of the Microsoft Junk Email Reporting Add-in for Microsoft Outlook 
   
     To add both of these optional parameters based on the above examples, you would specify the following for a computer running x86 Outlook: 
     
-  ```
-  msiexec /qn /i JunkReportingAdd-in.x86-en.msi. MaxMessageSelection=16 BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"
-  ```
+      ```
+      msiexec /qn /i JunkReportingAdd-in.x86-en.msi. MaxMessageSelection=16 BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"
+      ```
 
 4. After the installation is complete, start Outlook.
     
@@ -141,21 +138,19 @@ Installation of the Microsoft Junk Email Reporting Add-in for Microsoft Outlook 
 6. Choose the down arrow next to **Junk** for more options such as **Report as Phishing** if you want to report phishing scam emails to Microsoft. In your junk mail folder, you can also select, **Report not junk** if an email was incorrectly identified as junk mail. 
     
 ## Uninstall the Junk Email Reporting Add-in
-<a name="sectionSection2"> </a>
 
 Use one of these options to uninstall the Junk Email Reporting Add-in:
   
-- Remove the add-in using Windows Control Panel. For more information, see [Uninstall the Junk Email Reporting Add-in from Control Panel](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_UninstalltheJunkEmailReportingAdd-infromControlPanel). OR
+- Remove the add-in using Windows Control Panel. For more information, see [Uninstall the Junk Email Reporting Add-in from Control Panel](#uninstall-the-junk-email-reporting-add-in-from-control-panel).
     
-- Run the Windows installer package and select the uninstall option. For more information, see [Uninstall the Junk Email Reporting Add-in by Running the Windows Installer Package](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_UninstalltheJunkEmailReportingAddinbyRunningtheWindowsInstallerPackage).OR
+- Run the Windows installer package and select the uninstall option. For more information, see [Uninstall the Junk Email Reporting Add-in by Running the Windows Installer Package](#uninstall-the-junk-email-reporting-add-in-by-running-the-windows-installer-package).
     
-- Run a silent installation using the uninstall option. For more information, see [Uninstall the Junk Email Reporting Add-in in Silent Mode](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#MK_UninstalltheJunkEmailReportingAdd-ininSilentMode).
+- Run a silent installation using the uninstall option. For more information, see [Uninstall the Junk Email Reporting Add-in in Silent Mode](#uninstall-the-junk-email-reporting-add-in-in-silent-mode).
     
 > [!NOTE]
 > You must have administrator privileges on the computer on which you are uninstalling the add-in. 
   
 ### Uninstall the Junk Email Reporting Add-in from Control Panel
-<a name="BKMK_UninstalltheJunkEmailReportingAdd-infromControlPanel"> </a>
 
 1. On your computer, close Outlook.
     
@@ -170,7 +165,6 @@ Use one of these options to uninstall the Junk Email Reporting Add-in:
 6. Start Outlook again to confirm that the add-in is no longer displayed on your Outlook ribbon.
     
 ### Uninstall the Junk Email Reporting Add-in by Running the Windows Installer Package
-<a name="BKMK_UninstalltheJunkEmailReportingAddinbyRunningtheWindowsInstallerPackage"> </a>
 
 1. On your computer, close Outlook.
     
@@ -186,7 +180,6 @@ Use one of these options to uninstall the Junk Email Reporting Add-in:
 4. Start Outlook again to confirm that the add-in is no longer displayed on your Outlook ribbon.
     
 ### Uninstall the Junk Email Reporting Add-in in Silent Mode
-<a name="MK_UninstalltheJunkEmailReportingAdd-ininSilentMode"> </a>
 
 1. On your computer, close Outlook.
     
@@ -204,7 +197,6 @@ Use one of these options to uninstall the Junk Email Reporting Add-in:
 4. Start Outlook again to confirm that the add-in is no longer displayed on your Outlook ribbon.
     
 ## For more information
-<a name="sectionSection3"> </a>
 
 [Report junk email messages to Microsoft](report-junk-email-messages-to-microsoft.md)
   

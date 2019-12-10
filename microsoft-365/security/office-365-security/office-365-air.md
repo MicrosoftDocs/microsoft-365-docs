@@ -4,7 +4,7 @@ keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, thr
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -25,22 +25,14 @@ Depending on your subscription, [Office 365 Advanced Threat Protection](office-3
 - To get started using AIR capabilities in Office 365, use this article. 
 - To get an overview of how AIR works, see [Automated incident response (AIR) in Office 365](automated-investigation-response-office.md).
 
+> [!TIP]
+> Do you have Microsoft 365 E5 or Microsoft 365 E3 together with Identity & Threat Protection? Consider trying [Automated investigation and remediation (AIR) in Microsoft Threat Protection](../mtp/mtp-autoir.md).
+
 With AIR, when certain alerts are triggered, one or more security playbooks initiate, and automated investigation begins. During and after an automated investigation process, your administrators and security operations team can:
 
 - [View the details of an investigation](#view-details-of-an-investigation)
 - [Review and approve actions as a result of an investigation](#review-and-approve-actions) 
 - [View details about an alert related to an investigation](#view-details-about-an-alert-related-to-an-investigation)
-
-> [!NOTE]
-> You must have appropriate permissions to perform the tasks described in this article. For example, you myst be a global administrator, security administrator, security operator, or security reader. [Learn more about Microsoft 365 security center roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
-
-AIR is included in the following subscriptions:
-- Microsoft 365 E5
-- Microsoft 365 E5 Security
-- Office 365 E5
-- Office 365 Advanced Threat Protection Plan 2
-
-If you don't have one of these subscriptions, [start a free trial](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## View details of an investigation
 
@@ -115,10 +107,8 @@ Use the following resources to set this up:
 
 ## Next steps
 
-[Learn more about alerts](../../compliance/alert-policies.md)
-
-[Manually find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)
-
-[Learn about AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-
-[Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Find out how to get AIR and see required permissions](automated-investigation-response-office.md#how-to-get-air)
+- [Learn more about alerts](../../compliance/alert-policies.md)
+- [Manually find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)
+- [Learn about AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)

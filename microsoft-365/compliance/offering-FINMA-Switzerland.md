@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Financial Market Supervisory Authority (FINMA) Switzerland
+# Financial Market Supervisory Authority (FINMA) Switzerland
 
 ## About FINMA
 

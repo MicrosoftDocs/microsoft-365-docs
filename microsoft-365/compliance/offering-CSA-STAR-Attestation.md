@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 hideEdit: true
 ---
 
-# Compliance offering: Cloud Security Alliance (CSA) STAR attestation
+# Cloud Security Alliance (CSA) STAR attestation
 
 ## CSA STAR attestation overview
 
