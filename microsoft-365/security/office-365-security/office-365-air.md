@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: "Get started using automated incident response capabilities in Office 365 Advanced Threat Protection Plan 2."
+description: "Get started using automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
 ---
 
 # Automatically investigate and respond to threats in Office 365

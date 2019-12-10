@@ -28,7 +28,7 @@ Office 365 Advanced Threat Protection (ATP) safeguards your organization against
 - **[Threat protection policies](#configure-atp-policies)**: Define threat-protection policies to set the appropriate level of protection for your organization. 
 - **[Reports](#view-office-365-atp-reports)**: View real-time reports to monitor ATP performance in your organization. 
 - **[Threat investigation and response capabilities](#use-threat-investigation-and-response-capabilities)**: Use leading-edge tools to investigate, understand, simulate, and prevent threats. 
-- **[Automated incident response capabilities](#save-time-with-automated-incident-response)**: Save time and effort investigating and mitigating threats.
+- **[Automated investigation and response capabilities](#save-time-with-automated-incident-response)**: Save time and effort investigating and mitigating threats.
 
 ## Office 365 ATP Plan 1 and Plan 2
 
@@ -36,7 +36,7 @@ The following table summarizes what's included in each plan.
 
 |Office 365 ATP Plan 1  |Office 365 ATP Plan 2  |
 |---------|---------|
-|Configuration, protection, and detection capabilities:<br/>- [Safe Attachments](atp-safe-attachments.md)<br/>- [Safe Links](atp-safe-links.md)<br/>- [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Advanced antiphishing protection](atp-anti-phishing.md)<br/>- [Real-time detections](threat-explorer.md)     |Office 365 ATP Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:<br/>- [Threat Trackers](threat-trackers.md)<br/>- [Threat Explorer](threat-explorer.md)<br/>- [Automated incident response](automated-investigation-response-office.md)<br/>- [Attack Simulator](attack-simulator.md)         |
+|Configuration, protection, and detection capabilities:<br/>- [Safe Attachments](atp-safe-attachments.md)<br/>- [Safe Links](atp-safe-links.md)<br/>- [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Advanced antiphishing protection](atp-anti-phishing.md)<br/>- [Real-time detections](threat-explorer.md)     |Office 365 ATP Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:<br/>- [Threat Trackers](threat-trackers.md)<br/>- [Threat Explorer](threat-explorer.md)<br/>- [Automated investigation and response](automated-investigation-response-office.md)<br/>- [Attack Simulator](attack-simulator.md)         |
 
 - Office 365 ATP Plan 2 is included in Office 365 E5, Office 365 A5, and Microsoft 365 E5. 
 - Office 365 ATP Plan 1 is included in Microsoft 365 Business. 
@@ -89,9 +89,9 @@ Office 365 ATP Plan 2 includes best-of-class [threat investigation and response 
 
 - **[Attack Simulator](attack-simulator.md)** allows you to run realistic attack scenarios in your organization to identify vulnerabilites. Simulations of current types of attacks are available, including a [display name spear-phishing attack](attack-simulator.md#display-name-spear-phishing-attack), a [password-spray attack](attack-simulator.md#password-spray-attack), a [brute-force password attack](attack-simulator.md#brute-force-password-attack), and more.
     
-## Save time with automated incident response
+## Save time with automated investigation and response
 
-(**NEW!**) When you are investigating a potential cyberattack, time is of the essence. The sooner you can identify and mitigate threats, the better off your organization will be. [Automated incident response](automated-investigation-response-office.md) (AIR) capabilities include a set of security playbooks that can be launched automatically, such as when an alert is triggered, or manually, such as from a view in Explorer. AIR can save your security operations team time and effort in mitigating threats effectively and efficiently. To learn more, see [AIR in Office 365](automated-investigation-response-office.md).
+(**NEW!**) When you are investigating a potential cyberattack, time is of the essence. The sooner you can identify and mitigate threats, the better off your organization will be. [Automated investigation and response](automated-investigation-response-office.md) (AIR) capabilities include a set of security playbooks that can be launched automatically, such as when an alert is triggered, or manually, such as from a view in Explorer. AIR can save your security operations team time and effort in mitigating threats effectively and efficiently. To learn more, see [AIR in Office 365](automated-investigation-response-office.md).
 
 ## Permissions required to use ATP features
 

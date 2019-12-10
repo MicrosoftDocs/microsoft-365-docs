@@ -157,9 +157,9 @@ The report refreshes to show data about email messages that people in your organ
 ## Start automated investigation and response
 
 > [!NOTE]
-> Automated incident response capabilities are available in **Office 365 ATP Plan 2** and **Office 365 E5**.
+> Automated investigation and response capabilities are available in **Office 365 ATP Plan 2** and **Office 365 E5**.
 
-(NEW!) [Automated incident response](automated-investigation-response-office.md) can save your security operations team much time and effort in investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. 
+(NEW!) [Automated investigation and response](automated-investigation-response-office.md) can save your security operations team much time and effort in investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. 
 
 For details on this, see [Example: A security administrator triggers an investigation from Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
