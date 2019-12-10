@@ -29,7 +29,7 @@ Features that are currently in preview are denoted with **(preview)**.
 
 ## Office 365 ATP Plan 1 and Plan 2
 
-Office 365 ATP is available in two plans: Office 365 ATP Plan 1 and Office 365 ATP Plan 2. For more details, see [Office 365 ATP Plan 1 and Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
+Office 365 ATP is available in two plans: Office 365 ATP Plan 1 and Office 365 ATP Plan 2. [Learn more about what's included in each plan](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
  
 ## December 2019
 
