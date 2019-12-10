@@ -73,7 +73,7 @@ Secure Score updates can be turned on automatically for all actions, can be turn
 
 2. On the Service Trust Portal top menu bar, select **Admin** and then choose **Settings**.
 
-4. In the **Secure Score** tab, select the appropriate button for you chosen setting.
+4. In the **Secure Score** tab, select the appropriate button for your chosen setting.
 
 **Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager administrator can turn on automatic updates for individual actions, but not for all actions globally.
 
