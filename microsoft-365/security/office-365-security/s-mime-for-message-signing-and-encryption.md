@@ -32,7 +32,7 @@ You can set up S/MIME to work with any of the following end points:
 
 The steps that you follow to set up S/MIME with each of these end points is slightly different. Generally, you will need to do the following steps:
 
-- Install a Windows-based Certification Authority and set up a public key infrastructure to issue S/MIME certificates. Certificates issued by third-party certificate providers are also supported. For details, see [Active Directory Certificate Services Overview](https://technet.microsoft.com/library/hh831740.aspx).
+- Install a Windows-based Certification Authority and set up a public key infrastructure to issue S/MIME certificates. Certificates issued by third-party certificate providers are also supported. For details, see [Active Directory Certificate Services Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
 
 - Publish the user certificate in an on-premises AD DS account in the **UserSMIMECertificate** and/or **UserCertificate** attributes.
 
@@ -41,6 +41,9 @@ The steps that you follow to set up S/MIME with each of these end points is slig
 - Set up a virtual certificate collection in order to validate S/MIME. This information is used by Outlook on the web when validating the signature of an email and ensuring that it was signed by a trusted certificate.
 
 - Set up the Outlook or EAS end point to use S/MIME.
+
+> [!NOTE]
+> You can't install S/MIME control in Outlook on the web on Mac, iOS, Android, or other non-Windows devices. For more information, see [Encrypt messages by using S/MIME in Outlook on the web](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480).
 
 ## Setup S/MIME with Outlook on the web
 
@@ -68,6 +71,6 @@ S/MIME requires a certificate and publishing infrastructure that is often used i
 
 ## More information
 
-[Outlook on the web](http://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
+[Outlook on the web](https://docs.microsoft.com/exchange/exchange-admin-center)
 
-[Secure Mail (2000)](https://technet.microsoft.com/en-us/library/cc962043.aspx)
+[Secure Mail (2000)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc962043(v=technet.10))

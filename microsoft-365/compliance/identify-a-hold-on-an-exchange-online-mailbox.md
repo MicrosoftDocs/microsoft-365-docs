@@ -55,7 +55,7 @@ To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerS
 
 Run the following command to get information about the holds and Office 365 retention policies applied to a mailbox.
 
-```
+```powershell
 Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 ```
 
@@ -76,7 +76,7 @@ The following table describes how to identify different types of holds based on 
 ### Get-OrganizationConfig
 If the *InPlaceHolds* property is empty when you run the **Get-Mailbox** cmdlet, there still may be one or more organization-wide Office 365 retention policies applied to the mailbox. Run the following command in Exchange Online PowerShell to get a list of GUIDs for organization-wide Office 365 retention policies.
 
-```
+```powershell
 Get-OrganizationConfig | FL InPlaceHolds
 ```
 
@@ -121,15 +121,15 @@ After you obtain the GUID for a hold that is applied to a mailbox, the next step
 
 Run the following commands in Security & Compliance Center PowerShell to identify an eDiscovery hold that's applied to the mailbox. Use the GUID (not including the UniH prefix) for the eDiscovery hold that you identified in Step 1. The first command creates a variable that contains information about the hold. This variable is used in the other commands. The second command displays the name of the eDiscovery case the hold is associated with. The third command displays the name of the hold and a list of the mailboxes the hold applies to.
 
-```
+```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
 ```
 
-```
+```powershell
 Get-ComplianceCase $CaseHold.CaseId | FL Name
 ```
 
-```
+```powershell
 $CaseHold | FL Name,ExchangeLocation
 ```
 
@@ -139,16 +139,17 @@ To connect to Security & Compliance Center PowerShell, see  [Connect to Security
 
 Run the following command in Exchange Online PowerShell to identify the In-Place Hold that's applied to the mailbox. Use the GUID for the In-Place Hold that you identified in Step 1. The command displays the name of the hold and a list of the mailboxes the hold applies to.
 
-```
+```powershell
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
+
 If the GUID for the In-Place Hold starts with the `cld` prefix, be sure to include the prefix when running the previous command.
 
 ### Office 365 retention policies
 
 Run the following command in Security & Compliance Center PowerShell to identity the Office 365 retention policy (organization-wide or specific location) that's applied to the mailbox. Use the GUID (not including the mbx, skp, or grp prefix or the action suffix) that you identified in Step 1.
 
-```
+```powershell
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
@@ -162,7 +163,7 @@ Whenever a user applies a retention label that's configured to retain content or
 
 To view the value of the *ComplianceTagHoldApplied* property, run the following command in Exchange Online PowerShell:
 
-```
+```powershell
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
@@ -170,29 +171,56 @@ For more information about retention labels, see [Overview of Office 365 retenti
 
 ## Managing mailboxes on delay hold
 
-After any type of hold is removed from a mailbox, the value of the *DelayHoldApplied* mailbox property is set to **True**. This occurs the next time the Managed Folder Assistant processes the mailbox and detects that a hold was removed. This is called a *delay hold* and means that the actual removal of the hold is delayed for 30 days to prevent data from being permanently deleted (purged) from the mailbox. This gives admins an opportunity to search for or recover mailbox items that will be purged after the hold is removed. When a delay hold is placed on the mailbox, the mailbox is still considered to be on hold for an unlimited duration, as if the mailbox was on Litigation Hold. After 30 days, the delay hold expires, and Office 365 will automatically attempt to remove the delay hold (by setting the *DelayHoldApplied* property to **False**) so that the hold is removed. After the *DelayHoldApplied* property to **False**, items that are marked for removal are purged the next time the mailbox is processed by the Managed Folder Assistant.
+After any type of hold is removed from a mailbox, a *delay hold* is applied. This means that the actual removal of the hold is delayed for 30 days to prevent data from being permanently deleted (purged) from the mailbox. This gives admins an opportunity to search for or recover mailbox items that will be purged after a hold is removed. A delay hold is placed on a mailbox the next time the Managed Folder Assistant processes the mailbox and detects that a hold was removed. Specifically, a delay hold is applied to a mailbox when the Managed Folder Assistant sets one of the following mailbox properties to **True**:
 
-To view the value for the *DelayHoldApplied* property for a mailbox, run the following command in Exchange Online PowerShell.
+- **DelayHoldApplied:** This property applies to email-related content (generated by people using Outlook and Outlook on the web) that's stored in a user's mailbox.
 
-```
-Get-Mailbox <username> | FL DelayHoldApplied
-```
-
-To remove the delay hold before it expires, you can run the following command in Exchange Online PowerShell: 
+- **DelayReleaseHoldApplied:** This property applies to cloud-based content (generated by non-Outlook apps such as Microsoft Teams, Microsoft Forms, and Microsoft Yammer) that's stored in a user's mailbox. Cloud data generated by a Microsoft app is typically stored in a hidden folder in a user's mailbox.
  
+ When a delay hold is placed on the mailbox (when either of the previous properties is set to **True**), the mailbox is still considered to be on hold for an unlimited hold duration, as if the mailbox was on Litigation Hold. After 30 days, the delay hold expires, and Office 365 will automatically attempt to remove the delay hold (by setting the DelayHoldApplied or DelayReleaseHoldApplied property to **False**) so that the hold is removed. After either of these properties are set to **False**, the corresponding items that are marked for removal are purged the next time the mailbox is processed by the Managed Folder Assistant.
+
+To view the values for the DelayHoldApplied and DelayReleaseHoldApplied properties for a mailbox, run the following command in Exchange Online PowerShell.
+
+```powershell
+Get-Mailbox <username> | FL *HoldApplied*
 ```
+
+To remove the delay hold before it expires, you can run one (or both) the following commands in Exchange Online PowerShell, depending on which property you want to change: 
+ 
+```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
-You must be assigned the Legal Hold role in Exchange Online to use the *RemoveDelayHoldApplied* parameter 
 
-To remove the delay hold on an inactive mailbox, run the following command in Exchange Online PowerShell:
-
+Or
+ 
+```powershell
+Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 ```
+
+You must be assigned the Legal Hold role in Exchange Online to use the *RemoveDelayHoldApplied* or *RemoveDelayReleaseHoldApplied* parameters. 
+
+To remove the delay hold on an inactive mailbox, run one of the following commands in Exchange Online PowerShell:
+
+```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
+```
+
+Or
+
+```powershell
+Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
 ```
 
 > [!TIP]
 > The best way to specify an inactive mailbox in the previous command is to use its Distinguished Name or Exchange GUID value. Using one of these values helps prevent accidentally specifying the wrong mailbox. 
+
+For more information about using these parameters for managing delay holds, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+
+Keep the following things in mind when managing a mailbox on delay hold:
+
+- If either the DelayHoldApplied or DelayReleaseHoldApplied property is set to **True** and a mailbox (or the corresponding Office 365 user account) is deleted, the mailbox becomes an inactive mailbox. That's because a mailbox is considered to be on hold if either property is set to **True**, and deleting a mailbox on hold results in an inactive mailbox. To delete a mailbox and not make it an inactive mailbox, you have to set both properties to **False**.
+
+- As previous stated, a mailbox is considered to be on hold for an unlimited hold duration if either the DelayHoldApplied or DelayReleaseHoldApplied property is set to **True**. However, that doesn't mean that *all* content in the mailbox is preserved. It depends on the value that's set to each property. For example, let's say both properties are set to **True** because holds are removed from the mailbox. Then you remove only the delay hold that's applied to non-Outlook cloud data (by using the *RemoveDelayReleaseHoldApplied* parameter). The next time the Managed Folder Assistant processes the mailbox, the non-Outlook items marked for removal are purged. Any Outlook items marked for removal won't be purged because the DelayHoldApplied property is still set to **True**. The opposite would also be true: if DelayHoldApplied is set to **False** and DelayReleaseHoldApplied is set to **True**, then only Outlook items marked for removal would be purged.
 
 ## Next steps
 

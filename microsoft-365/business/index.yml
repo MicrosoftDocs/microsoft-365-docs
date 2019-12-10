@@ -1,0 +1,205 @@
+### YamlMime:Hub
+
+title: Microsoft 365 Business resources # < 60 chars
+summary: Microsoft 365 Business is a subscription service that includes Office 365 productivity tools plus advanced capabilities to help protect your business against cyberthreats, protect your data, and manage the devices. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft 365 Business resources # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: description # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: o365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  ms.collection: collection
+  author: samanro #Required; your GitHub user alias, with correct capitalization.
+  ms.author: samanro #Required; microsoft alias of author; optional team alias.
+  ms.date: 10/01/2019 #Required; mm/dd/yyyy format.
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+  #Card
+    - title: What is Microsoft 365 Business?
+      links:
+        - url: microsoft-365-business-overview.md
+          itemType: overview
+          text: Overview
+        - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+          itemType: video
+          text: Microsoft 365 Business training
+        - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
+          itemType: overview
+          text: Compare plans
+        - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+          itemType: reference
+          text: Service description
+        - url: support/microsoft-365-business-faqs.md
+          itemType: reference
+          text: FAQ
+  #Card
+    - title: Set up Microsoft 365 Business
+      links:
+        - url: set-up.md
+          itemType: how-to-guide
+          text: 1. Run the setup wizard
+        - url: secure-win-10-pcs.md
+          itemType: how-to-guide
+          text: 2. Secure your PCs
+        - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
+          itemType: video
+          text: 3. Set up Teams
+        - url: https://support.office.com/article/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
+          itemType: get-started
+          text: 4. Install Office
+  #Card
+    - title: Resources for partners (English only)
+      links:
+        - url: https://www.microsoft.com/microsoft-365/partners/business
+          itemType: overview
+          text: Partner page 
+        - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-customer-pitch-deck
+          itemType: download
+          text: Pitch deck (customer focus)
+        - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-partner-pitch-deck
+          itemType: download
+          text: Pitch deck (partner focus) 
+        - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
+          itemType: download
+          text: Tech fundamentals
+  # Card
+    - title: Manage users
+      links:
+        - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
+          itemType: how-to-guide
+          text: Add a user
+        - url: https://docs.microsoft.com/office365/admin/add-users/remove-former-employee
+          itemType: how-to-guide
+          text: Remove a user
+        - url: https://docs.microsoft.com/office365/admin/add-users/reset-passwords
+          itemType: how-to-guide
+          text: Reset someone's password
+      # footerLink (optional)
+      footerLink:
+        url: https://docs.microsoft.com/office365/admin/admin-home
+        text: See more 
+ # Card
+    - title: Manage threats
+      links:
+        - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp
+          itemType: overview
+          text: Office 365 Advanced Threat Protection
+        - url: set-up-mfa.md
+          itemType: how-to-guide
+          text: Set up MFA
+        - url: https://docs.microsoft.com/microsoft-365/business/increase-threat-protection#protect-against-ransomware
+          itemType: how-to-guide
+          text: Protect against ransomware
+        - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
+          itemType: overview
+          text: Conditional Access
+      # footerLink (optional)
+      footerLink:
+        url: https://docs.microsoft.com/office365/admin/admin-home
+        text: See more 
+  # Card
+    - title: Manage data
+      links:
+        - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
+          itemType: overview
+          text: Data Loss Prevention 
+        - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
+          itemType: how-to-guide
+          text: Send encrypted email
+        - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
+          itemType: how-to-guide
+          text: Set up email retention
+        - url: https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
+          itemType: video
+          text: Create and use sensitivity labels
+      # footerLink (optional)
+      footerLink:
+        url: https://docs.microsoft.com/microsoft-365/compliance/
+        text: See more
+  # Card
+    - title: Manage devices
+      links:
+        - url: view-policies-and-devices.md
+          itemType: how-to-guide
+          text: PC & Mobile devices
+        - url: remove-company-data.md
+          itemType: how-to-guide
+          text: Remove company data
+        - url: reset-devices-to-factory-settings.md
+          itemType: how-to-guide
+          text: Wipe and reset
+        - url: https://docs.microsoft.com/intune/index
+          itemType: overview
+          text: Intune
+        - url: manage-windows-devices.md
+          itemType: how-to-guide
+          text: Set up hybrid Azure AD join
+        - url: access-resources.md
+          itemType: how-to-guide
+          text: Set up Azure AD join 
+        - url: https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot
+          text: Windows Autopilot
+          itemType: overview    
+      # footerLink (optional)
+      footerLink:
+        url: manage-windows-devices.md
+        text: See more
+  # Card
+    - title: Monitor security
+      links:
+        - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
+          itemType: how-to-guide
+          text: Secure score
+        - url: https://docs.microsoft.com/intune/apps/app-protection-policies-monitor
+          itemType: overview
+          text: Intune App Protection Policies report
+        - url: https://docs.microsoft.com/office365/enterprise/view-service-health
+          itemType: how-to-guide
+          text: Health monitoring alerts
+      # footerLink (optional)
+      footerLink:
+        url: https://docs.microsoft.com/microsoft-365/security/
+        text: See more
+  # Card
+    - title: Support and community
+      links:
+        - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
+          itemType: whats-new
+          text: Announcements
+        - url: https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988
+          itemType: video
+          text: Get help
+        - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business
+          itemType: overview
+          text: Send feedback
+        - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
+          itemType: overview
+          text: Small and medium business tech community
+  #Card
+    - title: How do I...
+      links:
+        - url: sign-up.md
+          itemType: get-started
+          text: Sign up for Microsoft 365 Business
+        - url: migrate-to-microsoft-365-business.md
+          itemType: how-to-guide
+          text: Migrate from Office 365 Business Premium 
+        - url: migrate-from-e3.md
+          itemType: how-to-guide
+          text: Migrate from Office 365 E3 
+        - url: migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md
+          itemType: how-to-guide
+          text: Migrate to Microsoft 365 Enterprise E3
+      # footerLink (optional)
+      footerLink:
+        url: microsoft-365-business-overview.md
+        text: See more 
+  
+
+
+

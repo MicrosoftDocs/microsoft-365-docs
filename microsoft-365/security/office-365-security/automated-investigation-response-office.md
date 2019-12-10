@@ -1,9 +1,9 @@
 ---
-title: "Automated investigation and response (AIR) in Office 365"
+title: "Automated incident response (AIR) in Office 365"
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,23 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: "Learn about Automated Investigation and Response capabilities in Office 365 Advanced Threat Protection."
+description: "Get an overview of automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
 ---
 
-# Automated investigation and response (AIR) in Office 365
+# Automated incident response (AIR) in Office 365
 
-Automated investigation and response (AIR) capabilities enable you to run automated investigation processes in response to well known threats that exist today. AIR can help your security operations team operate more efficiently and effectively.
+Automated incident response (AIR) capabilities enable you to run automated investigation processes in response to well known threats that exist today. AIR can help your security operations team operate more efficiently and effectively.
 - To get an overview how AIR works, use this article.
 - To get started using AIR, see [Automatically investigate and respond to threats in Office 365](office-365-air.md).
 
-> [!NOTE]
-> You must be a global administrator, security administrator, security operator, or security reader to access AIR capabilities. To learn more about these permissions, see [Microsoft 365 security center: roles and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
-
-AIR is included in the following subscriptions:
-- Microsoft 365 E5
-- Microsoft 365 E5 Security
-- Office 365 E5
-- Office 365 Advanced Threat Protection Plan 2
+> [!TIP]
+> Do you have Microsoft 365 E5 or Microsoft 365 E3 together with Identity & Threat Protection? Consider trying [Microsoft Threat Protection](../mtp/microsoft-threat-protection.md).
 
 ## The overall flow of AIR
 
@@ -48,24 +42,22 @@ The following sections provide more details about AIR, including details about a
 
 [Alerts](../../compliance/alert-policies.md#viewing-alerts) represent triggers for security operations team workflows for incident response. Prioritizing the right set of alerts for investigation, while making sure no threats are unaddressed is challenging. When investigations into alerts are performed manually, Security Operations teams must hunt and correlate entities (e.g. content, devices and users) at risk from threats. Such tasks and workflows are very time consuming and involve multiple tools and systems. With AIR, investigation and response are automated into key security and threat management alerts that trigger your security response playbooks automatically. 
 
-In the initial release of AIR (beginning April 2019), alerts generated from following single events alert policies are auto-investigated. 
+In the initial release of AIR (beginning April 2019), alerts generated from the following kinds of single-event alert policies are auto-investigated:  
 
 - A potentially malicious URL click was detected
-
 - Email reported by user as phish*
-
 - Email messages containing malware removed after delivery*
-
 - Email messages containing phish URLs removed after delivery*
-
 - Suspicious email sending patterns detected#
-
 - User restricted from sending email#
 
 > [!NOTE]
 > The alerts marked with an asterisk (*) are assigned an *Informational* severity in the respective alert policies within the Security & Compliance Center, with email notifications turned off. Email notifications can be turned on through [Alert policy configuration](../../compliance/alert-policies.md#alert-policy-settings). Alerts marked with a hash (#) are generally available alerts associated with public preview playbooks.
 
-To view alerts, in the Security & Compliance Center, choose **Alerts** > **View alerts**. Select an alert to view its details, and from there, use the **View investigation** link to go to the corresponding [investigation](#investigation-graph). Note that informational alerts are hidden in the alert view by default. To see them, you need to change the alert filtering to include informational alerts.
+To view alerts, in the Security & Compliance Center, choose **Alerts** > **View alerts**. Select an alert to view its details, and from there, use the **View investigation** link to go to the corresponding [investigation](#investigation-graph). 
+
+> [!NOTE]
+> Informational alerts are hidden in the alert view by default. To see them, change the alert filtering to include informational alerts.
 
 If your organization manages your security alerts through a alert management system, service management system, or Security Information and Event Management (SIEM) system, you can send Office 365 alerts to that system via either email notification or via the [Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). The investigation alert notifications via email or API include links to access the alerts in the Security & Compliance Center, enabling the assigned security administrator to navigate quickly to the investigation.
 
@@ -113,18 +105,22 @@ You can:
 - Export the data to a .csv file.
 
 The investigation status indicates the progress of the analysis and actions. As the investigation runs, status changes to indicate whether threats were found, and whether actions have been approved. 
-- **Starting**: The investigation is queued to begin soon
-- **Running**: The investigation has started and is conducting its analysis
-- **No Threats Found**: The investigation has completed its analysis and no threats were found
-- **Terminated By System**: The investigation was not closed and expired after 7 days
-- **Pending Action**: The investigation found threats with actions recommended
-- **Threats Found**: The investigation found threats, but the threats do not have actions available within AIR
-- **Remediated**: The investigation finished and was fully remediated (all actions were approved)
-- **Partially Remediated**: The investigation finished and some of the recommended actions were approved
-- **Terminated By User**: An admin terminated the investigation
-- **Failed**: An error occurred during the investigation that prevented it from reaching a conclusion on threats
-- **Queued By Throttling**: The investigation is waiting for analysis due to system processing limitations (to protect service performance)
-- **Terminated By Throttling**: The investigation could not be completed in sufficient time due to investigation volume and system processing limitations. You can re-trigger the investigation by selecting the email in Explorer and selecting the Investigate action.
+
+
+|Status  |What it means  |
+|---------|---------|
+|Starting | The investigation is queued to begin soon |
+|Running | The investigation has started and is conducting its analysis |
+|No Threats Found | The investigation has completed its analysis and no threats were found |
+|Terminated By System | The investigation was not closed and expired after 7 days |
+|Pending Action | The investigation found threats with actions recommended |
+|Threats Found | The investigation found threats, but the threats do not have actions available within AIR |
+|Remediated | The investigation finished and was fully remediated (all actions were approved) |
+|Partially Remediated | The investigation finished and some of the recommended actions were approved |
+|Terminated By User | An admin terminated the investigation |
+|Failed | An error occurred during the investigation that prevented it from reaching a conclusion on threats |
+|Queued By Throttling | The investigation is waiting for analysis due to system processing limitations (to protect service performance) |
+|Terminated By Throttling | The investigation could not be completed in sufficient time due to investigation volume and system processing limitations. You can re-trigger the investigation by selecting the email in Explorer and selecting the Investigate action. |
 
 ### Investigation graph
 
@@ -184,7 +180,8 @@ You can:
 
 ![AIR investigation email with flyout details](../media/air-investigationemailpageflyoutdetails.png)
 
-*Note: In the context of email, you may see a volume anomaly threat surface as part of the investigation. A volume anomaly indicates a spike in similar email messages around the investigation event time compared to earlier timeframes. This spike in email traffic with similar characteristics (e.g. subject and sender domain, body similarity and sender IP) is typical of the start of email campaigns or attacks. However, bulk, spam, and legitimate email campaigns commonly share these characteristics. Volume anomalies represent a potential threat, and accordingly could be less severe compared to malware or phish threats that are identified using anti-virus engines, detonation or malicious reputation.
+> [!NOTE]
+> In the context of email, you may see a volume anomaly threat surface as part of the investigation. A volume anomaly indicates a spike in similar email messages around the investigation event time compared to earlier timeframes. This spike in email traffic with similar characteristics (e.g. subject and sender domain, body similarity and sender IP) is typical of the start of email campaigns or attacks. However, bulk, spam, and legitimate email campaigns commonly share these characteristics. Volume anomalies represent a potential threat, and accordingly could be less severe compared to malware or phish threats that are identified using anti-virus engines, detonation or malicious reputation.
 
 ### User investigation
 
@@ -294,10 +291,10 @@ Similar to playbooks triggered by an alert, automatic investigations that are tr
 
 ## How to get AIR
 
-Office 365 AIR are included in the following subscriptions:
+Office 365 AIR is included in the following subscriptions:
 
-- Microsoft 365 Enterprise E5
-- Office 365 Enterprise E5
+- Microsoft 365 E5
+- Office 365 E5
 - Microsoft Threat Protection
 - Office 365 Advanced Threat Protection Plan 2
 
@@ -305,10 +302,22 @@ If you don't have any of these subscriptions, [start a free trial](https://go.mi
 
 To learn more about feature availability, visit the [Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
+## Required permissions to use AIR capabilities
+
+Permissions are granted through certain roles, such as those that are described in the following table: 
+
+|Task |Role(s) required |
+|--|--|
+|To set up AIR features |One of the following: <br/>- **Global Administrator**<br/>- **Security Administrator** <br/>These roles can be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
+|To approve or reject recommended actions|One of the following (these roles can be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)):<br/>- **Global Administrator** <br/>- **Security Administrator**<br/>- **Security Reader** <br/>--- and ---<br/>- **Search and Purge** (this role is assigned only in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center))
+
 ## Next steps
 
-[Get started using AIR in Office 365](office-365-air.md)
+- [Get started using AIR in Office 365](office-365-air.md)
+- [Learn about AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
+- [Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-[Learn about AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
+## See also
 
-[Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Microsoft Threat Protection](../mtp/microsoft-threat-protection.md)
+- [Automated investigation and remediation (AIR) in Microsoft Threat Protection](../mtp/mtp-autoir.md)

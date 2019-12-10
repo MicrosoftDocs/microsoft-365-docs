@@ -40,7 +40,7 @@ To edit (or define) ATP policies, you must be assigned one of the roles describe
 |---------|---------|
 |Office 365 Global Administrator |The person who signs up to buy Office 365 is a global admin by default. (See [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)         |
 |Security Administrator |Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online Organization Management |Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Exchange Online Organization Management |Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
 > [!TIP]
 > To learn more about roles and permissions, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -61,7 +61,7 @@ To edit (or define) ATP policies, you must be assigned one of the roles describe
 
 While you add URLs to your list, keep the following points in mind: 
 
-- Do not include a forward slash ( **/**) at the end of the URL. For example, instead of entering `http://www.contoso.com/`, enter `http://www.contoso.com`.
+- Do not include a forward slash ( **/**) at the end of the URL. For example, instead of entering `https://www.contoso.com/`, enter `https://www.contoso.com`.
     
 - You can specify a domain-only URL (like `contoso.com` or `tailspintoys.com`). This will block clicks on any URL that contains the domain.
 
@@ -71,10 +71,10 @@ While you add URLs to your list, keep the following points in mind:
     
 |**Example Entry**|**What It Does**|
 |:-----|:-----|
-|`contoso.com` or `*contoso.com*`  <br/> |Blocks the domain, subdomains, and paths, such as `https://www.contoso.com`, `http://sub.contoso.com`, and `http://contoso.com/abc`  <br/> |
-|`http://contoso.com/a`  <br/> |Blocks a site `http://contoso.com/a` but not additional subpaths like `http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a*`  <br/> |Blocks a site `http://contoso.com/a` and additional subpaths like `http://contoso.com/a/b`  <br/> |
-|`http://toys.contoso.com*`  <br/> |Blocks a subdomain ("toys" in this case) but allow clicks to other domain URLs (like `http://contoso.com` or `http://home.contoso.com`).  <br/> |
+|`contoso.com` or `*contoso.com*`  <br/> |Blocks the domain, subdomains, and paths, such as `https://www.contoso.com`, `https://sub.contoso.com`, and `https://contoso.com/abc`  <br/> |
+|`https://contoso.com/a`  <br/> |Blocks a site `https://contoso.com/a` but not additional subpaths like `https://contoso.com/a/b`  <br/> |
+|`https://contoso.com/a*`  <br/> |Blocks a site `https://contoso.com/a` and additional subpaths like `https://contoso.com/a/b`  <br/> |
+|`https://toys.contoso.com*`  <br/> |Blocks a subdomain ("toys" in this case) but allow clicks to other domain URLs (like `https://contoso.com` or `https://home.contoso.com`).  <br/> |
    
 
 ## How to define exceptions for certain users in an organization

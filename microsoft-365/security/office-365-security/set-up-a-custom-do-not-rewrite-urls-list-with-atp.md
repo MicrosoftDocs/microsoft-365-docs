@@ -36,7 +36,7 @@ To edit (or define) ATP policies, you must be assigned an appropriate role. The 
 |---------|---------|
 |Office 365 Global Administrator |The person who signs up to buy Office 365 is a global admin by default. (See [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)         |
 |Security Administrator |Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online Organization Management |Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Exchange Online Organization Management |Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
 > [!TIP]
 > To learn more about roles and permissions, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -64,19 +64,19 @@ To edit (or define) ATP policies, you must be assigned an appropriate role. The 
 
 - Any URLs that you specify in the "do not rewrite" list are excluded from ATP Safe Links scanning for the recipients that you specify.
  
-- If you already have a list of URLs in your "do not rewrite" list, make sure to review that list and add wildcards as appropriate. For example, if your existing list has an entry like `http://contoso.com/a` and you want to include subpaths like `http://contoso.com/a/b` in your policy, add a wildcard to your entry so it looks like `http://contoso.com/a*`.
+- If you already have a list of URLs in your "do not rewrite" list, make sure to review that list and add wildcards as appropriate. For example, if your existing list has an entry like `https://contoso.com/a` and you want to include subpaths like `https://contoso.com/a/b` in your policy, add a wildcard to your entry so it looks like `https://contoso.com/a/*`.
     
 - Do not include a forward slash (/) in the URLs that you specify in your "do not rewrite" list. For example, rather than enter `contoso.com/` in your "do not rewrite" list, enter `contoso.com`.
 
-- When you specify a "do not rewrite" list for an ATP Safe Links policy, you can include up to three wildcard asterisks (\*). Wildcards (\*) are used to explicitly include prefixes or subdomains, like `http://` or `https://`. An entry, such as `contoso.com` is not the same as `*contoso.com*` for your "do not rewrite" list. You must have `*contoso.com*` if you want to allow people to visit a domain and its subdomains and paths.
+- When you specify a "do not rewrite" list for an ATP Safe Links policy, you can include up to three wildcard asterisks (\*). Wildcards (\*) are used to explicitly include prefixes or subdomains, like `https://` or `https://`. An entry, such as `contoso.com` is not the same as `*.contoso.com/*` for your "do not rewrite" list. You must have `*.contoso.com/*` if you want to allow people to visit a domain and its subdomains and paths.
     
 The following table lists examples of what you can enter and what effect those entries have.
     
 |**Example Entry**|**What It Does**|
 |:-----|:-----|
-|`contoso.com`|Allows recipients to visit a site like `http://contoso.com` but not subdomains or paths.|
-|`*contoso.com*`  <br/> |Allows recipients to visit a domain, subdomains, and paths, such as `http://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, or `http://www.contoso.com/a`  <br/> |
-|`http://contoso.com/a`  <br/> |Allows specific recipients to visit a site like `http://contoso.com/a`, but not subpaths like `http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a*`  <br/> |Allows specific recipients to visit a site like `http://contoso.com/a` and subpaths like `http://contoso.com/a/b`  <br/> |
+|`contoso.com`|Allows recipients to visit a site like `https://contoso.com` but not subdomains or paths.|
+|`*.contoso.com/*`  <br/> |Allows recipients to visit a domain, subdomains, and paths, such as `https://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, or `https://www.contoso.com/a`  <br/> |
+|`https://contoso.com/a`  <br/> |Allows specific recipients to visit a site like `https://contoso.com/a`, but not subpaths like `https://contoso.com/a/b`  <br/> |
+|`https://contoso.com/a/*`  <br/> |Allows specific recipients to visit a site like `https://contoso.com/a` and subpaths like `https://contoso.com/a/b`  <br/> |
    
  

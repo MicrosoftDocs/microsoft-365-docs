@@ -18,15 +18,15 @@ ms.collection:
 ---
 # Identity and device access configurations
 
-This series of articles describes how to configure secure access to cloud services through Enterprise Mobility + Security products by implementing a recommended environment and configuration, including a prescribed set of conditional access policies and related capabilities. You can use this guidance to protect access to all services that are integrated with Azure Active Directory, including Office 365 services, other SaaS services, and on-premises applications published with Azure AD Application Proxy. 
+This series of articles describes how to configure secure access to cloud services through Enterprise Mobility + Security (EMS) products by implementing a recommended environment and configuration, including a prescribed set of conditional access policies and related capabilities. EMS is a core component of Microsoft 365. You can use this guidance to protect access to all services that are integrated with Azure Active Directory, including Office 365 services, other SaaS services, and on-premises applications published with Azure AD Application Proxy. 
 
-These recommendations are aligned with Microsoft Secure Score as well as [identity score in Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/identity-secure-score), and will increase these scores for your organization. These recommendations will also help you implement these [five steps to securing your identity infrastructure](https://docs.microsoft.com/en-us/azure/security/azure-ad-secure-steps). 
+These recommendations are aligned with Microsoft Secure Score as well as [identity score in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score), and will increase these scores for your organization. These recommendations will also help you implement these [five steps to securing your identity infrastructure](https://docs.microsoft.com/azure/security/azure-ad-secure-steps). 
 
 Microsoft understands that some organizations have unique environment requirements or complexities. If you are one of these organizations, use these recommendations as a starting point. However, most organizations can implement these recommendations as prescribed. 
 
 ## Intended audience
 
-These recommendations are intended for enterprise architects and IT professionals who are familiar with [Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx) and [Microsoft Enterprise Mobility + Security](http://microsoft.com/ems), which includes, among others, Azure Active Directory (identity), Microsoft Intune (device management), and Azure Information Protection (data protection).
+These recommendations are intended for enterprise architects and IT professionals who are familiar with [Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx) and [Microsoft Enterprise Mobility + Security](https://microsoft.com/ems), which includes, among others, Azure Active Directory (identity), Microsoft Intune (device management), and Azure Information Protection (data protection).
 
 ### Customer environment
 
@@ -64,7 +64,7 @@ It’s important to use consistent levels of protection across your data, identi
 
 **File Protection Solutions in Office 365**<br/>
 ![Thumbnail for poster "File protection solutions in Office 365"](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
-[PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
 ## Security and productivity trade-offs
 

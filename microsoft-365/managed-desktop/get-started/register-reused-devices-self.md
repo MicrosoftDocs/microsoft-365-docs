@@ -66,20 +66,25 @@ If you've met all these prerequisites, you're ready to collect the information b
 4. In **Report Builder**, select **Data source:**. Select the default data source, which should start with "AutoGen". 
 5. Choose **Query type as Text**, and then enter this query:
 
-```
 
+
+
+```sql
 SELECT comp.manufacturer0      AS Manufacturer,  
        comp.model0             AS Model,  
        bios.serialnumber0      AS Serial_Number,  
        mdm.devicehardwaredata0 AS HardwareHash  
-FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp  
+FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
+
        INNER JOIN Fn_rbac_gs_pc_bios(@UserSIDs) bios  
                ON comp.resourceid = bios.resourceid  
        INNER JOIN Fn_rbac_gs_mdm_devdetail_ext01(@UserSIDs) mdm  
                ON comp.resourceid = mdm.resourceid
-
-
 ```
+
+
+
+
 5. Navigate to the **Field** tab, wehre values for **Field Name** and **Field Source** should already be populated. If they aren't, then select **Add**, and then select **Query Field**. Enter the **Field Name** and **Field Source**.
 6. Repeat for each of these values: 
     - Manufacturer 
@@ -172,7 +177,7 @@ Now you can proceed to [register devices](#register-devices).
 
 If you collected the hardware hash data by the manual PowerShell or flash drive methods, you now need to have the data in the CSV files combined into a single file to complete registration. Here's a sample PowerShell script to make this easy:
 
-`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 With the hash data merged into one CSV file, you can now proceed to [register the devices](#register-devices).
 
@@ -199,7 +204,7 @@ Your file needs to include the **exact same column headings** as the sample one 
 
 From the Microsoft Managed Desktop [Azure Portal](https://aka.ms/mmdportal), select **Devices** in the left navigation pane. Select **+ Register devices**; the fly-in opens:
 
-[![Fly-in after selecting Register devices](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
 
 
 [//]: # (Sadly this isn't true. We can remove this note - but leaving it now until we have a chance to chat about it.)

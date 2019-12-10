@@ -9,7 +9,10 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
+hideEdit: true
 ---
 
 # Dynamics 365 accountability readiness checklist for the GDPR
@@ -122,7 +125,7 @@ For more GDPR-related documentation, visit https://aka.ms/gdprgetstarted.
 |||
 |:-----|:-----|
 |**ID**|**Description/Link**|
-| 1 <a name="1"> </a> | [Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
+| 1 <a name="1"> </a> | [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 | 2 <a name="2"> </a> | [Key Information from Dynamics 365 for Customer Data Protection Impact Assessments](https://servicetrust.microsoft.com/ViewPage/GDPRDPIA?command=Download&downloadType=Document&downloadId=ef2902bb-3137-4f4a-8ca6-af35afaa6bec&docTab=2ba9a350-555c-11e8-b74a-77b1f31da06e_DPIA) |
 | 3 <a name="3"> </a> | [Auditing and Reporting in Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing) |
 | 4 <a name="4"> </a> | [Dynamics 365 Data Subject Requests for the GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) |
@@ -132,9 +135,9 @@ For more GDPR-related documentation, visit https://aka.ms/gdprgetstarted.
 | 8 <a name="8"> </a> | [Dynamics 365 SOC 2 Type 2 Report & Bridge Letter](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=e06a247d-af6b-4933-8074-1002757984bd&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 9 <a name="9"> </a> | [Dynamics 365 — Discover built in security features](https://www.microsoft.com/trustcenter/security/dynamics365-security) |
 | 10 <a name="10"> </a> | [Who can access data and at what terms](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
-| 11 <a name="11"> </a> | [Contracts for sub-processors: Contracting with Microsoft](https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx#SSPA) |
+| 11 <a name="11"> </a> | [Contracts for sub-processors: Contracting with Microsoft](https://www.microsoft.com/procurement/supplier-contracting.aspx#SSPA) |
 | 12<a name="12"> </a>  | [Dynamics 365 Breach Notification Under the GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) |
-| 13 <a name="13"> </a> | [Microsoft Trust Center Compliance offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings) |
+| 13 <a name="13"> </a> | [Microsoft Trust Center Compliance offerings](offering-home.md) |
 | 14 <a name="14"> </a> | [Dynamics 365 Penetration Testing and Security Assessment Report](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=25aa47b1-c510-43f2-84de-6b78ed3b1258&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Pen_Test_and_Security_Assessments) |
 | 15 <a name="15"> </a> | [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) |
 | 16 <a name="16"> </a> | [Microsoft DPO Information](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) |

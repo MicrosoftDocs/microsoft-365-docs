@@ -10,6 +10,7 @@ localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
@@ -53,6 +54,8 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 - User and admin activity in Microsoft PowerApps
 
+- User and admin activity in Microsoft Forms
+
 ## Before you begin
 
 Be sure to read the following items before you start searching the Office 365 audit log.
@@ -81,13 +84,13 @@ Be sure to read the following items before you start searching the Office 365 au
 
 - If you want to turn off audit log search in Office 365 for your organization, you can run the following command in remote PowerShell connected to your Exchange Online organization:
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
   ```
 
     To turn on audit search again, you can run the following command in Exchange Online PowerShell:
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
@@ -119,7 +122,9 @@ Be sure to read the following items before you start searching the Office 365 au
   |SharePoint Online and OneDrive for Business|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Yammer||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  ||||
 
 - Azure Active Directory (Azure AD) is the directory service for Office 365. The unified audit log contains user, group, application, domain, and directory activities performed in the Microsoft 365 admin center or in the Azure management portal. For a complete list of Azure AD events, see [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).
 
@@ -208,6 +213,9 @@ The results contain the following information about each event returned by the s
 
 - **IP address**: The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.
 
+   > [!NOTE]
+  > For some services, the value displayed in this field might be the IP address for a trusted application (for example, Office on the web apps) calling into the service on behalf of a user and not the IP address of the device used by person who performed the activity. Also, for admin activity (or activity performed by a system account) for Azure Active Directory-related events, the IP address isn't logged and the value displayed in this field is `null`.
+
 - **User**: The user (or service account) who performed the action that triggered the event.
 
 - **Activity**: The activity performed by the user. This value corresponds to the activities that you selected in the **Activities** drop down list. For an event from the Exchange admin audit log, the value in this column is an Exchange cmdlet.
@@ -291,8 +299,9 @@ Click one of the following links to go to a specific table.
 |[User administration activities](#user-administration-activities)|[Azure AD group administration activities](#azure-ad-group-administration-activities)|[Application administration activities](#application-administration-activities)|
 |[Role administration activities](#role-administration-activities)|[Directory administration activities](#directory-administration-activities)|[eDiscovery activities](#ediscovery-activities)|
 |[Advanced eDiscovery activities](#advanced-ediscovery-activities)|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams activities](#microsoft-teams-activities)|[Yammer activities](#yammer-activities)|[Microsoft Flow activities](#microsoft-flow-activities)|
-|[Microsoft PowerApps activities](#microsoft-powerapps)|[Microsoft Stream activities](#microsoft-stream-activities)|[Exchange admin activities](#exchange-admin-audit-log)|
+|[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Yammer activities](#yammer-activities)|
+|[Microsoft Flow activities](#microsoft-flow-activities)|[Microsoft PowerApps activities](#microsoft-powerapps)|[Microsoft Stream activities](#microsoft-stream-activities)|
+|[Microsoft Forms activities](#microsoft-forms-activities)|[Exchange admin activities](#exchange-admin-audit-log)|||
 ||||
 
 ### File and page activities
@@ -434,7 +443,7 @@ The following table lists events related to assigning permissions in SharePoint 
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
-|Added site collection admin|SiteCollectionAdminAdded|Site collection administrator or owner adds a person as a site collection administrator for a site. Site collection administrators have full control permissions for the site collection and all subsites. This activity is also logged when an admin gives themselves access to a user's OneDrive account (by editing the user profile in the SharePoint admin center or  [by using the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)).|
+|Added site collection admin|SiteCollectionAdminAdded|Site collection administrator or owner adds a person as a site collection administrator for a site. Site collection administrators have full control permissions for the site collection and all subsites. This activity is also logged when an admin gives themselves access to a user's OneDrive account (by editing the user profile in the SharePoint admin center or by [using the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)).|
 |Added user or group to SharePoint group|AddedToGroup|User added a member or guest to a SharePoint group. This might have been an intentional action or the result of another activity, such as a sharing event.|
 |Broke permission level inheritance|PermissionLevelsInheritanceBroken|An item was changed so that it no longer inherits permission levels from its parent.|
 |Broke sharing inheritance|SharingInheritanceBroken|An item was changed so that it no longer inherits sharing permissions from its parent.|
@@ -675,7 +684,7 @@ Audit logging for Power BI isn't enabled by default. To search for Power BI acti
 
 ### Microsoft Workplace Analytics activities
 
-Workplace Analytics provides insight into how groups collaborate across your Office 365 organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
+Workplace Analytics provides insight into how groups collaborate across your Office 365 organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -719,8 +728,16 @@ The following table lists the user and admin activities in Microsoft Teams that 
 |Removed tab|TabRemoved|A user removes a tab from a channel.|
 |Updated connector|ConnectorUpdated|A user modified a connector in a channel.|
 |Updated tab|TabUpdated|A user modified a tab in a channel.|
-|User signed in to Teams|TeamsSessionStarted|A user signs in to a Microsoft Teams client.|
+|User signed in to Teams|TeamsSessionStarted|A user signs in to a Microsoft Teams client. This event doesn't capture token refresh activities.|
 ||||
+
+### Microsoft Teams Healthcare activities
+
+If your organization is using the [Patients application](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) in Microsoft Teams, you can search the audit log for activities related to the using the Patients app. If your environment is configured to support Patients app, an additional activity group for these activities is available in the **Activities** picker list.
+
+![Microsoft Teams Healthcare activities in Activities picker list](media/TeamsHealthcareAuditActivities.png)
+
+For a description of the Patients app activities, see [Audit logs for Patients app](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
 
 ### Yammer activities
 
@@ -753,11 +770,48 @@ You can search the audit log for activities in Microsoft Flow. These activities 
 
 ### Microsoft PowerApps
 
-You can search the audit log for app-related activities in PowerApps. These activities include creating, launching, and publishing an app. Assigning permissions to apps is also audited. For a description of all PowerApps activities, see [Activity logging for PowerApps](https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps#what-events-are-audited).
+You can search the audit log for app-related activities in PowerApps. These activities include creating, launching, and publishing an app. Assigning permissions to apps is also audited. For a description of all PowerApps activities, see [Activity logging for PowerApps](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited).
 
 ### Microsoft Stream activities
 
 You can search the audit log for activities in Microsoft Stream. These activities include video activities performed by users, group channel activities, and admin activities such as managing users, managing organization settings, and exporting reports. For a description of these activities, see the "Activities logged in Microsoft Stream" section in [Audit Logs in Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
+
+### Microsoft Forms activities
+
+The following table lists the user and admin activities in Microsoft Forms that are logged in the Office 365 audit log. Microsoft Forms is a forms/quiz/survey tool used to collect data for anlaysis. 
+
+Where noted below in the descriptions, some operations contain additional activity parameters.
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Created comment|CreateComment|Form owner adds comment or score to a quiz.|
+|Created form|CreateForm|Form owner creates a new form.|
+|Edited form|EditForm|Form owner edits a form such, as creating, removing, or editing a question. <br><br>Property EditOperation:string indicates the edit operation name. Possible operations are: CreateQuestion, CreateQuestionChoice, DeleteQuestion, DeleteQuestionChoice, DeleteFormImage, DeleteQuestionImage, UpdateQuestion, UpdateQuestionChoice, UploadFormImage/Bing/Onedrive, UploadQuestionImage, and ChangeTheme.  <br><br>Most operation names are self-explanatory. <br><br>FormImage includes any place within Forms that user can upload an image, such as in a query or as a background theme.|
+|Moved form|MoveForm|Form owner moves a form. <br><br>Property DestinationUserId:string indicates the user ID of the person who moved the form. Property NewFormId:string is the new ID for the newly copied form.|
+|Deleted form|DeleteForm|Form owner deletes a form. This includes SoftDelete (delete option used and form moved to recycle bin) and HardDelete (Recycle bin is emptied).|
+|Viewed form (design time)|ViewForm|Form owner opens an existing form for editing.|
+|Previewed form|PreviewForm|Form owner previews a form using the Preview function.|
+|Exported form|ExportForm|Form owner exports results to Excel. <br><br>Property ExportFormat:string incidates if the Excel file is Download or Online.|
+|Allowed share form for copy|AllowShareFormForCopy|Form owner creates a template link to share the form with other users. This event is logged when the form owner clicks to generate template URL.|
+|Disallowed share form for copy|DisallowShareFormForCopy|Form owner deletes template link.|
+|Added form co-author|AddFormCoauthor|A user uses a collaboration link to help design for/view responses. This event is logged when a user uses a collab URL (not when collab URL is first generated).|
+|Removed form co-author|RemoveFormCoauthor|Form owner deletes a collaboration link.|
+|Viewed response page|ViewRuntimeForm|User has opened a response page to view. This event is logged regardless of whether the user submits a response or not.|
+|Created response|CreateResponse|Similar to recieviing a new response.  A user has submitted a response to a form. <br><br>Property ResponseId:string and Property ResponderId:string incidate which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
+|Updated response|UpdateResponse|Form owner has updated a comment or score on a quiz. <br><br>Property ResponseId:string and Property ResponderId:string incidate which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
+|Deleted all responses|DeleteAllResponses|Form owner deletes all response data.|
+|Deleted Response|DeleteResponse|Form owner deletes one response. <br><br>Property ResponseId:string incidates the response being deleted.|
+|Viewed responses|ViewResponses|Form owner views the aggregated list of responses. <br><br>Property ViewType:string indicates whether form owner is viewing Detail or Aggregate|
+|Viewed response|ViewResponse|Form owner views a particular response. <br><br>Property ResponseId:string and Property ResponderId:string incidate which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
+|Created summary link|GetSummaryLink|Form owner creates summary results link to share results.|
+|Deleted summary link|DeleteSummaryLink|Form owner deletes summary results link.|
+|Updated form phishing status|UpdatePhishingStatus|This event is logged whenever the internal security status detailed value has changed, regardless of whether this changed the final Security State (for example, form is now Closed or Opened). This means you may see duplicate events without a final Security State change.|
+|Sent Forms Pro invitation|ProInvitation|User clicks to activate a Pro trial.|
+|Updated form setting|UpdateFormSetting|Form owner updates a form setting. <br><br>Property FormSettingName:string indicates the setting's name and new value.|
+|Updated user setting|UpdateUserSetting|Form owner updates a user setting. <br><br>Property UserSettingName:string indicates the setting's name and new value|
+|Listed forms|ListForms|Form owner is viewing a list of forms. <br><br>Property ViewType:string incidates which view the form owner is looking at: All Forms, Shared with Me, or Group Forms|
+|Submitted response|SubmitResponse|A user submits a response to a form. <br><br>Property IsInternalForm:boolean incidates if the responder is within the same organization as the form owner.|
+||||
 
 ### Exchange admin audit log
 

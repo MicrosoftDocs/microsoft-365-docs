@@ -1,0 +1,124 @@
+### YamlMime:Hub
+
+title: Microsoft 365 Enterprise documentation and resources # < 60 chars
+summary: Best-in-class productivity apps with intelligent cloud services that transform the way you work. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft 365 Enterprise documentation and resources # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about the product documentation and resources available for Microsoft 365 Enterprise for IT pros, information workers, and partners. # Required; article description that is displayed in search results. < 160 chars.
+  services: service
+  ms.prod: microsoft-365-enterprise
+  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  ms.collection: M365-subscription-management
+  author: robmazz #Required; your GitHub user alias, with correct capitalization.
+  ms.author: robmazz #Required; microsoft alias of author; optional team alias.
+  ms.date: 11/29/2019 #Required; mm/dd/yyyy format.
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Learn about Microsoft 365 Enterprise
+      itemType: get-started
+      url: microsoft-365-overview.md
+    # Card
+    - title: Accelerate your deployment with FastTrack
+      itemType: quickstart
+      url: https://www.microsoft.com/fasttrack/microsoft-365
+    # Card
+    - title: Train your IT pros and admins
+      itemType: learn
+      url: https://docs.microsoft.com/learn/m365/
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  title: Get help with Microsoft 365 Enterprise and other resources # < 60 chars (optional)
+  summary: Explore Microsoft 365 Enterprise deployment guidance, features, and services. # < 160 chars (optional)
+  items:
+    # Card
+    - title: Follow the deployment roadmap
+      links:
+        - url: deploy-microsoft-365-enterprise.md
+          itemType: deploy
+          text: Deployment overview
+        - url: deploy-foundation-infrastructure.md
+          itemType: how-to-guide
+          text: Foundation infrastructure
+        - url: deploy-workloads.md
+          itemType: how-to-guide
+          text: Workloads and scenarios
+        - url: desktop-deployment-center-home.md
+          itemType: get-started
+          text: Desktop Deployment Center
+    # Card
+    - title: Deploy key elements
+      links:
+        - url: identity-infrastructure.md
+          itemType: how-to-guide
+          text: Identity infrastructure
+        - url: https://docs.microsoft.com/windows/deployment/
+          itemType: get-started
+          text: Windows 10 Enterprise
+        - url: https://docs.microsoft.com/deployoffice/plan-office-365-proplus
+          itemType: deploy
+          text: Office 365 ProPlus
+        - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
+          itemType: deploy
+          text: Microsoft Intune
+    # Card
+    - title: Deploy key scenarios
+      links:
+        - url: secure-teams-highly-regulated-data-scenario.md
+          itemType: how-to-guide
+          text: Microsoft Teams for highly regulated data
+        - url: teams-sharepoint-online-sites-highly-regulated-data.md
+          itemType: how-to-guide
+          text: SharePoint sites for highly regulated data
+        - url: empower-people-to-work-remotely.md
+          itemType: how-to-guide
+          text: Remote workers
+        - url: migration-microsoft-365-enterprise-workload.md
+          itemType: deploy
+          text: Office client and server and Windows migration
+    # Card
+    - title: Manage Microsoft 365 Enterprise
+      links:
+        - url: https://docs.microsoft.com/windows/deployment/update/
+          itemType: how-to-guide
+          text: Windows 10 Enterprise
+        - url: https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus
+          itemType: concept
+          text: Office 365 ProPlus
+        - url: https://docs.microsoft.com/intune/apps/app-management
+          itemType: get-started
+          text: Apps with Intune
+        - url: https://docs.microsoft.com/office365/
+          itemType: get-started
+          text: Office 365 services
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Additional resources # < 60 chars (optional)
+      summary: Learn more about other Microsoft 365 features and resources. # < 160 chars (optional)
+      items:
+        # Card
+        - title: Microsoft 365 compliance
+          summary: Help your organization govern information, protect against risks, and comply with legal or regulatory standards.
+          url: https://docs.microsoft.com/microsoft-365/compliance/index
+        # Card
+        - title: Microsoft 365 security
+          summary: Protect your organization across attack surfaces with robust security services and solutions.
+          url: https://docs.microsoft.com/microsoft-365/security/index
+        # Card
+        - title: Microsoft 365 technical community
+          summary: Connect and collaborate with peers and experts in the Microsoft Tech Community and share Microsoft 365 best practices.
+          url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

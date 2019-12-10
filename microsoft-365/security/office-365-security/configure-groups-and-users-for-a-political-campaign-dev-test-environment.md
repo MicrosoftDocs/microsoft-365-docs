@@ -129,7 +129,7 @@ First, you [Connect with the Azure Active Directory PowerShell for Graph module]
   
 Next, you fill in your organization name, your location, and a common password, and then run these commands from the PowerShell command prompt or Integrated Script Environment (ISE):
   
-```
+```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
 $commonPassword="<common password for all the new accounts>"
@@ -164,31 +164,31 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 Use these steps to verify that dynamic group membership and group-based licensing are working correctly.
   
 1. From the **Microsoft Office Home** tab of your browser, click the **Admin** tile.
-    
+
 2. From the new **Microsoft 365 admin center** tab of your browser, click **Users**.
-    
+
 3. In the list of users, click **Candidate**.
-    
+
 4. In the pane that lists the properties of the **Candidate** user account, verify that:
-    
+
   - It is a member of the **Senior and strategic staff** group (in **Group memberships**).
-    
+
   - It has been assigned the **Enterprise Mobility + Security E5** and **Office 365 Enterprise E5** licenses (in **Product licenses**).
-    
+
 5. Close the **Candidate** user account pane.
-    
+
 ## Record values for future reference
 
 Record these values for working with the Office 365 and EMS trial subscriptions for this dev/test environment:
   
 - Your trial subscription organization name: ![](../media/Common-Images/TableLine.png) 
-    
+
     For example, for the trial subscription domain name of contoso.onmicrosoft.com, the organization name is "contoso".
-    
+
 - The Office 365 global administrator name: ![](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
     Record the password for this account and the common initial password for the other user accounts in a secure location.
-    
+
 ## Next step
 
 Build the four different types of SharePoint Online team sites in this dev/test environment with [Create team sites in a political campaign dev/test environment](create-team-sites-in-a-political-campaign-dev-test-environment.md).
@@ -202,7 +202,3 @@ Build the four different types of SharePoint Online team sites in this dev/test 
 [Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
   
 [Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

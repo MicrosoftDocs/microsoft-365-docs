@@ -122,11 +122,11 @@ Now you're ready to use the AzCopy.exe tool to upload PST files to Office 365. T
     
 3. Run the following command to upload the PST files to Office 365.
 
-    ```
+    ```powershell
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
   
     ```
- 
+
     > [!IMPORTANT] 
     > You must specify a directory as the source location in the previous command; you can't specify an individual PST file. All PST files in the source directory will be uploaded.
  
@@ -135,16 +135,15 @@ Now you're ready to use the AzCopy.exe tool to upload PST files to Office 365. T
     |**Parameter**|**Description**|**Example**|
     |:-----|:-----|:-----|
     | `/Source:` <br/> |Specifies the source directory in your organization that contains the PST files that will be uploaded to Office 365.  <br/> Be sure to surround the value of this parameter with double-quotation marks (" ").  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
-    | `/Dest:` <br/> |Specifies the SAS URL that you obtained in Step 1.  <br/> Be sure to surround the value of this parameter with double-quotation marks (" ").  <br/> **Tip:** (Optional) You can specify a subfolder in the Azure Storage location to upload the PST files to. You do this by adding a subfolder location (after "ingestiondata") in the SAS URL. The first example doesn't specify a subfolder. That means the PSTs are uploaded to the root (named  *ingestiondata*) of the Azure Storage location. The second example uploads the PST files to a subfolder (named  *PSTFiles*) in the root of the Azure Storage location.  <br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Or  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | `/Dest:` <br/> |Specifies the SAS URL that you obtained in Step 1.  <br/> Be sure to surround the value of this parameter with double-quotation marks (" ").<br/><br/>**Note:** If you use the SAS URL in a script or batch file, you need to watch out for certain characters that need to be escaped. For example, you have to change `%` to `%%` and change `&` to `^&`.<br/><br/>**Tip:** (Optional) You can specify a subfolder in the Azure Storage location to upload the PST files to. You do this by adding a subfolder location (after "ingestiondata") in the SAS URL. The first example doesn't specify a subfolder. That means the PSTs are uploaded to the root (named  *ingestiondata*) of the Azure Storage location. The second example uploads the PST files to a subfolder (named  *PSTFiles*) in the root of the Azure Storage location.  <br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Or  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
     | `/V:` <br/> |Outputs verbose status messages into a log file. By default, the verbose log file is named AzCopyVerbose.log in %LocalAppData%\Microsoft\Azure\AzCopy. If you specify an existing file location for this option, the verbose log will be appended to that file.  <br/> Be sure to surround the value of this parameter with double-quotation marks (" ").  <br/> | `/V:"c:\Users\Admin\Desktop\Uploadlog.log"` <br/> |
     | `/S` <br/> |This optional switch specifies the recursive mode so that the AzCopy tool copies PSTs files that are located in subfolders in the source directory that is specified by the  `/Source:` parameter.  <br/> **Note:** If you include this switch, PST files in subfolders will have a different file pathname in the Azure Storage location after they're uploaded. You'll have to specify the exact file pathname in the CSV file that you create in Step 4.  <br/> | `/S` <br/> |
     | `/Y` <br/> |This required switch allows the use of write-only SAS tokens when you upload the PST files to the Azure Storage location. The SAS URL you obtained in step 1 (and specified in  `/Dest:` parameter) is a write-only SAS URL, which is why you must include this switch. A write-only SAS URL won't prevent you from using the Azure Storage Explorer to view a list of the PST files uploaded to the Azure Storage location.  <br/> | `/Y` <br/> |
-   
+
 Here's an example of the syntax for the AzCopy.exe tool using actual values for each parameter:
     
-```
+```powershell
   AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
-  
 ```
 
 After you run the command, status messages are displayed that show the progress of uploading the PST files. A final status message shows the total number of files that were successfully uploaded.
@@ -195,8 +194,7 @@ After the PST files have been uploaded to the Azure Storage location for your Of
     
 2. Open or save the CSV file to your local computer. The following example shows a completed PST Import mapping file (opened in NotePad). It's much easier to use Microsoft Excel to edit the CSV file.
 
-
-    ```
+    ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst,annb@contoso.onmicrosoft.com,TRUE,,,,,
@@ -209,6 +207,7 @@ After the PST files have been uploaded to the Azure Storage location for your Of
     Exchange,PSTFiles,zrinkam.pst,zrinkam@contoso.onmicrosoft.com,FALSE,,,,,
     Exchange,PSTFiles,zrinkam_archive.pst,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
+    
     The first row, or header row, of the CSV file lists the parameters that will be used by the PST Import service to import the PST files to user mailboxes. Each parameter name is separated by a comma. Each row under the header row represents the parameter values for importing a PST file to a specific mailbox. You need a row for each PST file that you want to import to a user mailbox. Be sure to replace the placeholder data in the mapping file with your actual data.
 
    **Note:** Don't change anything in the header row, including the SharePoint parameters; they will be ignored during the PST Import process. 
@@ -349,7 +348,7 @@ Here's an illustration and description of the network upload process to import P
   
 - Here's an example of the Shared Access Signature (SAS) URL that's obtained in Step 1. This example also contains the syntax for the command that you run in the AzCopy.exe tool to upload PST files to Office 365. Be sure to take precautions to protect the SAS URL just like you would protect passwords or other security-related information.
 
-    ```
+    ```text
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D
 
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y

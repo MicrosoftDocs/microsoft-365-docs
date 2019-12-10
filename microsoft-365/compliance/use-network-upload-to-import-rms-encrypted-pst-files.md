@@ -105,7 +105,7 @@ After you've activated the Rights Management service, the next step is to set up
     
 2. Run the following command to set the RMS key sharing URL.
     
-    ```
+    ```powershell
     Set-IRMConfiguration -RMSOnlineKeySharingLocation <RMS key sharing location>
     ```
 
@@ -124,13 +124,13 @@ After you've activated the Rights Management service, the next step is to set up
   
     For example, this command configures the RMS Online key sharing location in Exchange Online for a customer located in North America.
     
-    ```
+    ```powershell
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
     ```
 
 3. Run the following command to import a Trusted Publishing Domain (TPD) from RMS Online to your Office 365 organization. 
     
-    ```
+    ```powershell
   	Import-RMSTrustedPublishingDomain -RMSOnline -Name "RMS Online"
     ```
 
@@ -138,7 +138,7 @@ After you've activated the Rights Management service, the next step is to set up
     
 4. Run the following command to enable IRM for your Office 365 organization.
     
-    ```
+    ```powershell
     Set-IRMConfiguration -InternalLicensingEnabled $true
     ```
 
@@ -146,7 +146,7 @@ After you've activated the Rights Management service, the next step is to set up
 
 The last step in this section is to download the Rights Management Services (RMS) Client 2.1. This software helps protect access to Azure RMS and protects information flowing through applications that use Azure RMS. Install the RMS client on the same computer that you'll use to encrypt and upload PST files in Step 5. 
   
-1. Download [Rights Management Service Client 2.1](https://www.microsoft.com/en-us/download/details.aspx?id=38396).
+1. Download [Rights Management Service Client 2.1](https://www.microsoft.com/download/details.aspx?id=38396).
     
 2. Run the Active Directory Rights Management Service Client 2.1 wizard to install the client.
 
@@ -158,7 +158,7 @@ After you've set up Azure RMS, the next step is to generate an encryption key (c
     
 2. Run the following command to connect to the Microsoft Online service.
     
-    ```
+    ```powershell
     Connect-MsolService
     ```
 
@@ -166,7 +166,7 @@ After you've set up Azure RMS, the next step is to generate an encryption key (c
     
 4. Run the following command to generate an encryption key (call a symmetric key). You'll do this by creating a new PST Encryption Principal.
     
-    ```
+    ```powershell
     New-MsolServicePrincipal -DisplayName PstEncryptionPrincipal
     ```
 
@@ -187,7 +187,7 @@ The next step is to obtain the tenant ID and licensing location URL for the Azur
   
 1. In the Azure Active Directory Module for Windows PowerShell (which is connected to the Microsoft Online service), run the following command to connect to the Azure RMS service in your Office 365 organization.
     
-    ```
+    ```powershell
     Connect-AadrmService 
     ```
 
@@ -195,7 +195,7 @@ The next step is to obtain the tenant ID and licensing location URL for the Azur
     
 3. Run the following command to display the tenant ID for the Azure RMS service in your Office 365 organization.
     
-    ```
+    ```powershell
     Get-AadrmConfiguration | FL BPOSId
     ```
 
@@ -203,7 +203,7 @@ The next step is to obtain the tenant ID and licensing location URL for the Azur
     
 4. Run the following command to display the licensing location for your Azure RMS service.
     
-    ```
+    ```powershell
     Get-AadrmConfiguration | FL LicensingIntranetDistributionPointUrl
     ```
 
@@ -255,7 +255,7 @@ After you have completed Step 1 through Step 4, you're ready to use the O365Impo
     
 3. Run the following command to encrypt and upload PST files to Office 365.
     
-    ```
+    ```powershell
     O365ImportTool.exe /srcdir:<Location of PST files> /protect-rmsserver:<RMS licensing location> /protect-tenantid:<BPOSId> /protect-key:<Symmetric key> /transfer:upload /upload-dest:<Network upload URL> /upload-destSAS:<SAS key>
     ```
 
@@ -269,12 +269,12 @@ After you have completed Step 1 through Step 4, you're ready to use the O365Impo
     | `/protect-key:` <br/> |Specifies the symmetric key that you obtained in Step 2. Be sure to surround the value of this parameter with double-quotation marks (" ").  <br/> | `/protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867="` <br/> |
     | `/transfer:` <br/> |Specifies whether you upload PST files over the network or ship them on a hard drive. The value  `upload` indicates that you are uploading the files over the network. The value  `drive` indicates that you are shipping the PSTs on a hard drive.  <br/> | `/transfer:upload` <br/> |
     | `/upload-dest:` <br/> |Specifies the destination in Office 365 where your PST files will be uploaded to; this is the Azure storage location for your organization. The value for this parameter consists of the network upload URL from the SAS URL that you copied in Step 4. Be sure to surround the value of this parameter with double-quotation marks (" ").  <br/><br/> **Tip:** (Optional) You can specify a subfolder in the Azure storage location to upload the encrypted PST files to. You do this by adding a subfolder location (after "ingestiondata") in the network upload URL. The first example doesn't specify a subfolder; that means the PSTs will be uploaded to the root (named  *ingestiondata*  ) of the Azure storage location. The second example uploads the PST files to a subfolder (named  *EncryptedPSTs*  ) in the Azure storage location.           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> Or  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
-    | `/upload-destSAS:` <br/> |Specifies the SAS key for you organization. The value for this parameter consists of the SAS key from the SAS URL that you copied in Step 4. Note that first character in the SAS key is a question mark ("?"). Be sure to surround the value of this parameter with double-quotation marks (" ").  <br/> | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | `/upload-destSAS:` <br/> |Specifies the SAS key for you organization. The value for this parameter consists of the SAS key from the SAS URL that you copied in Step 4. Note that first character in the SAS key is a question mark ("?"). Be sure to surround the value of this parameter with double-quotation marks (" ").<br/><br/>**Note:** If you use the SAS URL in a script or batch file, you need to watch out for certain characters that need to be escaped. For example, you have to change `%` to `%%` and change `&` to `^&`. | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
     | `/recurse` <br/> |This optional switch specifies the recursive mode so that the O365ImportTool.exe tool will copy PSTs files that are located in subfolders in the source directory that is specified by the  `/srcdir:` parameter.  <br/><br/> **Note:** If you include this switch, PST files in subfolders will have a different file pathname in the Azure storage location after they're uploaded. You'll have to specify the exact file pathname in the CSV file that you create in Step 7.           | `/recurse` <br/> |
    
     Here's an example of the syntax for the O365ImportTool.exe tool using actual values for each parameter:
     
-    ```
+    ```powershell
     O365ImportTool.exe /srcdir:\\FILESERVER01\PSTs /protect-rmsserver:"https://afcbd8ec-cb2b-4a1a-8246-0b4bc22d1978.rms.na.aadrm.com/_wmcs/licensing" /protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b  /protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867=" /transfer:upload /upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata" /upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"
     ```
 
@@ -334,7 +334,7 @@ After the PST files have been encrypted and uploaded to the Azure storage locati
     
 2. Open or save the CSV file to your local computer. The following example shows a completed PST Import mapping file (opened in NotePad). It's much easier to use Microsoft Excel to edit the CSV file.
     
-    ```
+    ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst.pfile,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst.pfile,annb@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
@@ -429,7 +429,7 @@ The last step is to create the PST Import job in the Import service in Office 36
     
 - Here's an example of the keys, IDs, and URLs that are obtained in Steps 2, 3, and 4. This example also contains the syntax for the command that you run in the O365ImportTool.exe tool to encrypt and upload PST files to Office 365. Be sure to take precautions to protect these just like you would protect passwords or other security-related information.
     
-  ```
+  ```text
   Symmetric key: l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867=
 
   BPOSId: 42745b33-2a5c-4726-8a2a-ca43caa0f74b

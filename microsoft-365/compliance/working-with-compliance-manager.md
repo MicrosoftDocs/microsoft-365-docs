@@ -35,9 +35,11 @@ To get you started, an ISO/IEC 27001:2103 Assessment for Office 365 appears by d
 
 ## Administration
 
-There are specific administrative functions that are only available to the tenant administrator and only visible when logged in with a global administrator account. However, until the administrator assigns Compliance Manager roles to users, data in Compliance Manager is visible to all users in your organization. We recommend implementing role-based access control to determine who can access and perform actions in Compliance Manager.
+There are specific administrative functions that are only available to the global administrator and only visible when logged in with a global administrator account. The global administrator can assign user permissions, and can turn on automatic Secure Score updates for all actions.
   
 ### Assigning Compliance Manager roles to users
+
+Once the administrator assigns Compliance Manager roles to other users, those users can view data in Compliance Manager and perform actions determined by their role. The administrator can also give read-only access to Compliance Manager by assigning the user the [Global Reader role in Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
 
 Each Compliance Manager role has slightly different permissions. You can view the permissions assigned to each role, see which users are in which roles, and add or remove users from that role through the Service Trust Portal. Select the **Admin** menu item, and choose **Settings** to view.
   
@@ -62,6 +64,18 @@ To add or remove users from Compliance Manager roles.
 7. To remove users from this role, select the users and select **Delete**.
 
     ![Compliance Manager — delete users](media/compliance-manager-delete-users.png)
+
+### Controlling automatic Secure Score updates
+
+Secure Score updates can be turned on automatically for all actions, can be turned off for all actions, or can be set by individual action.
+
+1. Sign in to the [Service Trust Portal](https://servicetrust.microsoft.com) with your global administrator account.
+
+2. On the Service Trust Portal top menu bar, select **Admin** and then choose **Settings**.
+
+4. In the **Secure Score** tab, select the appropriate button for your chosen setting.
+
+**Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager administrator can turn on automatic updates for individual actions, but not for all actions globally.
 
 ## Groups
 
@@ -99,6 +113,9 @@ Select **Tenant Management** to open the management interface, and use the follo
 
 Dimensions are sets of metadata that provide information about a Template, an Assessment, or an Action Item. Dimensions use the concept of Keys and Values, where the Dimension Key represents a property, and Dimension Value represents valid values for the property. For example, in Compliance Manager there are three types of Actions. They are defined by a Dimension Key of **Action Type** and Dimension Values of **Documentation**, **Operational**, and **Technical**. You can edit or delete existing Dimensions.
 
+> [!IMPORTANT]
+> You can add new dimensions, and they can be assigned to Templates that you have already imported. You can also add new dimensions to any new Templates you create.
+
 ### Owners
 
 Owners are used to identify the responsible party for each control. All built-in controls are owned by Microsoft, by customers, or by both. You can create custom values for Owners that can be used to specify more granular responsibilities within your organization. For example, you could create Owners that represent specific groups, teams, or business units within your organization.
@@ -127,15 +144,19 @@ You can’t edit an Owner name, but you can modify the description that is displ
 
 The Customer Actions area shows all the customer actions for all Templates and Assessments in Compliance Manager (Preview).
 
-![Compliance Manager — add users](media/compliance-manager-customer-actions.png)
+![Compliance Manager — add users](media/compliance-manager-customer-actions.png "Compliance Manager Customer Actions")
 
-At-a-glance, you can see an Action’s title, owner, category, enforcement, and score, and determine if it is integrated with Secure Score. You can expand an Action and select **Read More** to read the Action’s description and access any links in the description. You can also use this interface to enable and disable Secure Score integration on a per-action basis, and to add custom actions. Actions that have Secure Score integration capabilities have an ellipsis (…) next to them (note that custom actions also have an ellipsis next to them).
+At a glance, you can see an Action’s title, owner, category, enforcement, and score, and determine if it is integrated with Secure Score. You can expand an Action and select **Read More** to read the Action’s description and access any links in the description. You can also use this interface to enable and disable Secure Score integration on a per-action basis, and to add custom actions. Actions that have Secure Score integration capabilities have an ellipsis (…) next to them (note that custom actions also have an ellipsis next to them).
 
 #### Enable or disable Secure Score integration
 
 1. Select the ellipses (…) for the Action you want to modify and select **Edit**.
 2. Toggle the switch for Secure Score continuous update to On or Off to enable or disable continuous monitoring through Secure Score.
 3. Select **Save**.
+
+When organizations first deploy Microsoft 365 or Office 365, it takes approximately seven days for Secure Score to fully collect data and factor it into your score. During that time, setting the Secure Score continuous update switch to **Off** and manually setting an action to **implemented** will count that action toward your score. After the initial seven days, turning Secure Score continuous update back on will enable continuous monitoring from that point forward.
+
+Any actions that are not supported by Secure Score integration can be manually implemented. A manual implementation will factor into the score for that action's group.
 
 #### Add a customer action
 
@@ -149,11 +170,6 @@ Action Type dimension key.
 7. Select **+** to add a description and description title for the Action.
 8. Select the **X** to close the Description blade.
 9. Select **Save** to save the Customer Action.
-
-#### Edit a customer action
-
-1. Select the ellipses (…) for the Action you want to modify and select **Edit**.
-2. Edit the Action as desired, and select **Save**.
 
 #### Delete a customer action
 
@@ -184,7 +200,7 @@ Action Type dimension key.
 - The title of the Assessment.
 - The dimensions of the Assessment, including certification, environment, and product applied to the Assessment.
 - The date it was created and date when it was last modified.
-- The Assessment Score shown as a percentage.
+- The Assessment Score shown as a percentage. This score automatically includes your scores from Microsoft-managed controls and from Secure Score.
 - Progress indicators that show the number of assessed Microsoft-managed and customer-manged controls.
 
 ### Copying information from existing Assessments
@@ -212,9 +228,7 @@ When you create an Assessment, you have the option to copy information from an e
 
 3. Select **Save** to create the Assessment.
 
-### Viewing Assessments
-
-#### View an Assessment
+### View an Assessment
   
 1. In the Assessments dashboard, select the assessment name to open it and view the Action Items and Controls Info.
 
@@ -279,40 +293,39 @@ You can export an Assessment to an Excel file for compliance stakeholders in you
 
 The assessment report is downloaded as an Excel file in your browser session. The files name for the Excel file defaults to the title of the Assessment.
 
-### Archive a Template or an Assessment
+### Hide a Template or an Assessment
 
-When you are finished with a Template or Assessment and no longer need it for compliance purposes, you can archive it. When a Template or Assessment is archived, it is removed from the default view, and you must check the Show Archived checkbox to display it.
+When you are finished with a Template or Assessment and no longer need it for compliance purposes, you can hide it from your view. When a Template or Assessment is hidden, it is removed from the default view, and you must select **Include Hidden** checkbox to display it.
 
-![Compliance Manager Microsoft Action View](media/compliance-manager-archive-assessment-view.png)
-  
+![Compliance Manager Hidden Template View](media/compliance-manager-hidden-template.png "Compliance Manager hidden template")
+
 > [!IMPORTANT]
-> Archived Assessments do not retain their links to uploaded evidence documents. It is highly recommended that you export the Assessment before archiving to retain links to the evidence documents in the report.
+> Hidden Assessments do not retain their links to uploaded evidence documents. It is highly recommended that you export the Assessment before hiding it to retain links to the evidence documents in the report.
   
-#### Archive a Template
+#### Hiding a Template
 
 1. Open the **Templates** dashboard.
-2. Locate the Template you want to archive and select the archive icon.
-3. When you see the confirmation message, select **Archive**.
+2. Locate the Template you want to hide and at the ellipses in its row, select **Hide**.
+3. When you see the confirmation message, select **Hide**.
 
-#### Archive an Assessment
+#### Hide an Assessment
 
 1. Open the **Assessments** dashboard.
-2. Select the **Group** from the dropdown that contains the Assessment you want to archive.
-3. Locate the Assessment you want to archive and select the archive icon.
-4. When you see the confirmation message, select **Archive**.
+2. Select the **Group** from the dropdown that contains the Assessment you want to hide.
+3. Locate the Assessment you want to hide and at the ellipses, select **Hide**.
+4. When you see the confirmation message, select **Hide**.
 
-#### View archived Assessments
+#### View hidden Assessments
   
-1. Open the **Assessments** dashboard tab and check the **Show Archived** checkbox.
-2. The archived assessments appear in the **Archived Assessments** section.
-3. Select the Assessment name to open and view the Assessment.
+1. Open the **Assessments** dashboard tab and select the **Include Hidden** checkbox.
+2. The hidden assessments appear in the **Hidden Assessments** section.
 
-#### Activate an archived Assessment
+#### Unhide an Assessment
 
-1. On the **Assessments** tab and select the **Show Archived** checkbox.
-2. The archived assessments appear in the **Archived Assessments** section.
-3. Locate the Assessment you want to activate and select the activate icon.
-4. When you see the confirmation message, select **Activate**.
+1. On the **Assessments** tab, select the **Include Hidden** checkbox.
+2. The hidden assessments appear in the **Hidden Assessments** section.
+3. Locate the Assessment you want to unhide and at the ellipses, select **Unhide**.
+4. When you see the confirmation message, select **Unhide**.
 
 ## Controls and Actions
 
@@ -409,13 +422,13 @@ This tab includes columns that define individual Actions, and it includes detail
 
 - **actionDimensionValues:** Double semicolon-delimited list of applicable dimensions from the Dimensions tab, using the following format:
 
-    ```
+    ```Markdown
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
     For example:
 
-    ```
+    ```Markdown
     Product::Office 365;;Certification::NIST CSF
     ```
 
@@ -449,7 +462,7 @@ Templates and Assessments support the use of Markdown language for some text ele
 
 Bullets are represented as asterisks instead of Word or Excel bullets. For example:
 
-```
+```Markdown
 * Item A
 * Item B
 * Item C
@@ -468,15 +481,16 @@ Numbers are represented as numbers, but with spaces for indentation (three space
 
 Hyperlinks are constructed by placing brackets around the hyperlink text and the hyperlink itself in parentheses immediately next to the close bracket.  For example:
 
-```
+```Markdown
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 ```
 This text renders as follows:  Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
+
 As shown in the above example, Compliance Manager does not render URLs with underlining.
 
-Boldface text is just two asterisks on each side of the text to be bolded.  For example:
+Boldface text is two asterisks on each side of the text to be bolded.  For example:
 
-```
+```Markdown
 **This text will render in bold**
 ```
 **This text renders in bold**
@@ -504,6 +518,9 @@ You can create a Template by copying an existing Template or by importing Templa
 7. The imported Template appears on the **Templates** dashboard and it has a status of **Imported**. Select the ellipses (…) and select **Publish** to publish the Template. When the confirmation message appears, select **Publish**. The Template status changes to **Pending Approval**.
 8. Another user with the Compliance Manager Administrator role must approve the Template in the Templates dashboard. They must select the ellipses (…) and select **Approve**. When the confirmation message appears, select **Approve**. The Template is now ready for use.
 
+> [!IMPORTANT]
+> When creating a template, you must include Dimensions for both **Product** and **Certification** to ensure your template displays in Compliance Score.
+
 ### Customize a Template
 
 Templates can be customized through the additional of custom controls. All custom controls are considered customer-managed Controls.
@@ -528,6 +545,9 @@ Templates can be customized through the additional of custom controls. All custo
 12. When all applicable Actions have been selected, select **Assign**.
 13. Select **Save** to save the new control.
 
+> [!NOTE]
+> Any changes made to a template will not be reflected in existing assessments. Template updates must be made first, and then applied to a new assessment, in order for the changes to be seen.
+
 ### Export a Template to JSON
 
 Compliance Manager (Preview) also supports exporting Templates to JavaScript Object Notation (JSON) format. This enables you to exchange Compliance Manager data with other systems that support JSON.
@@ -548,15 +568,11 @@ You can export an Assessment to an Excel file for compliance stakeholders in you
 
 The following table describes each Compliance Manager permission and what it allows the user do. The table also indicates the role that each permission is assigned.
 
-||**Compliance Manager Reader**|**Compliance Manager Contributor**|**Compliance Manager Assessor**|**Compliance Manager Administrator**|**Portal Admin**|
-|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Read data:** Users can read but not edit data (except for Template data and Tenant Management).  <br> | X | X | X | X  | X |
-|**Edit data:** Users can edit all fields, except the Test Result and Test Date fields (except for Template data and Tenant Management).  <br> || X | X  | X | X |
-|**Edit test results:** Users can edit the Test Result and Test Date fields.  <br> ||| X | X | X |
-|**Manage assessments:** Users can create, archive, and delete Assessments.  <br> |||| X | X |
-|**Manage master data:** Users can view, edit, and delete template data and tenant management data.  <br> |||| X | X |
-|**Manage users:** Users can add other users in their organization to the Reader, Contributor, Assessor, and Administrator roles. Only those users with the Global Administrator role in your organization can add or remove users from the Portal Admin role.  <br> ||||| X |
-
-### Guest access
-  
-After Compliance Manager access is configured, any user that does not have a provisioned role is in the **Guest access** role by default (which is also the experience of any non-organization-provisioned accounts like personal Microsoft Accounts). Guest Access users do not have full access to all Compliance Manager features. They are not able to see any of the organization's compliance assessment data, however they are able to use Compliance Manager to view Microsoft's compliance assessment reports and Service Trust documents.
+||**Azure AD Global Reader**|**Compliance Manager Reader**|**Compliance Manager Contributor**|**Compliance Manager Assessor**|**Compliance Manager Administrator**|**Portal Admin**|
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|**Read data:** Users can read but not edit data (except for Template data and Tenant Management).  <br> | X | X | X | X | X  | X |
+|**Edit data:** Users can edit all fields, except the Test Result and Test Date fields (except for Template data and Tenant Management).  <br> ||| X | X  | X | X |
+|**Edit test results:** Users can edit the Test Result and Test Date fields.  <br> |||| X | X | X |
+|**Manage assessments:** Users can create, archive, and delete Assessments.  <br> ||||| X | X |
+|**Manage master data:** Users can view, edit, and delete template data and tenant management data.  <br> ||||| X | X |
+|**Manage users:** Users can add other users in their organization to the Reader, Contributor, Assessor, and Administrator roles. Only those users with the Global Administrator role in your organization can add or remove users from the Portal Admin role.  <br> |||||| X |

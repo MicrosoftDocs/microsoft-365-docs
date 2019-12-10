@@ -32,17 +32,17 @@ If your spam filter rules or your spam filter policy contains any of the invalid
 
 Once you have identified the policy and rules that contain invalid characters, you can change the names by using the Windows PowerShell cmdlets. 
 
-1. [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
     
 2. To change the name of the spam filter policy, run the Set-HostedContentFilterPolicy cmdlet as follows:
     
-    ```
+    ```powershell
     Set-HostedContentFilterPolicy -Identity "Old policy name" -Name "New policy name"
     ```  
 
 3. To change the name of a spam filter rule, run the Set-HostedContentFilterRule cmdlet as follows:
     
-    ```
+    ```powershell
     Set-HostedContentFilterRule -Identity "Old rule name" -Name "New rule name"
     ```  
 
@@ -51,6 +51,6 @@ Once you have identified the policy and rules that contain invalid characters, y
 
 [Threat management in the Security &amp; Compliance Center](protect-against-threats.md)
   
-[Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy?view=exchange-ps)
+[Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)
 
-[Set-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule?view=exchange-ps)
+[Set-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule)

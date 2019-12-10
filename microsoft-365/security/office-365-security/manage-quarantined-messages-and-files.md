@@ -60,7 +60,7 @@ After you find a specific quarantined message, click the message to view details
   
 ## View your organization's quarantined files
 
-1. Using a work or school account that has global administrator privileges in your Office 365 organization, sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your Office 365 organization, sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
     
 2. On the left, expand **Threat Management**, choose **Review**, and then choose **Quarantine**. <br/>
     > [!TIP]
@@ -190,16 +190,15 @@ You can configure how long messages and files will remain in quarantine before t
     > [!TIP]
     > To go directly to the **anti-spam** page in the Security &amp; Compliance Center, use this URL: > [https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
   
-3. Choose **Custom** to display the **Custom settings** tab. 
+ 
+3. Expand the **Default spam filter policy (always ON)** row. 
     
-4. Expand the **Default spam filter policy (always ON)** row. 
+4. Choose **Edit policy**. The settings for the default spam filter policy appear in a new page.
     
-5. Choose **Edit policy**. The settings for the default spam filter policy appear in a new page.
+5. Expand **Spam and bulk actions**.
     
-6. Expand **Spam and bulk actions**.
+6. Under **Quarantine**, in the **Retain spam for (days)** text box, enter the amount of time you want Office 365 to retain messages and files in quarantine. The default is 30 days. This is also the maximum. 
     
-7. Under **Quarantine**, in the **Retain spam for (days)** text box, enter the amount of time you want Office 365 to retain messages and files in quarantine. The default is 30 days. This is also the maximum. 
-    
-8. Choose **Save**.
+7. Choose **Save**.
     
 

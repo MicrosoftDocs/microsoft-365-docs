@@ -92,7 +92,7 @@ Regular expressions are supported for use when defining Ignore Text. The followi
   - The regular eExpression field can be unlimited length.
     
 > [!TIP]
-> For an explanation and detailed syntax of regular expressions, see: [Regular Expression Language - Quick Reference](https://msdn.microsoft.com/en-us/library/az24scfc%28v=vs.110%29.aspx). 
+> For an explanation and detailed syntax of regular expressions, see: [Regular Expression Language - Quick Reference](https://msdn.microsoft.com/library/az24scfc%28v=vs.110%29.aspx). 
   
 ## Define Ignore Text rule
 

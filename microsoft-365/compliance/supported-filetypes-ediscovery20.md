@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: "A list of supported file types in Microsoft 365 Advanced eDiscovery. This includes a list of the image file types that are supported by the OCR functionality in Advanced eDiscovery."
 ---
 
 # Supported file types in Advanced eDiscovery
 
-Advanced eDiscovery supports many file types to many different levels, which are described in the following table. This list isn't finalized, and we'll add new file types as we continue our validation testing. The tables indicates if a file type is supported for text extraction (OCR for images), viewable in the native viewer and also support in the Annotate viewer in Advanced eDiscovery.
+Advanced eDiscovery supports many file types to many different levels, which are described in the following tables. This list isn't finalized, and we will add new file types as we continue our validation testing. These tables indicate if a file type is supported for text extraction (and Optical Character Recognition or OCR text extraction for image files), viewable in the native viewer and also support in the Annotate viewer in Advanced eDiscovery.
 
 ## Archive / Container
 
@@ -29,6 +29,18 @@ Advanced eDiscovery supports many file types to many different levels, which are
 | application/x-rar-compressed | Yes | Yes | Yes | .rar |
 | application/x-tar | Yes | Yes | Yes | .tar |
 | application/zip | Yes | Yes | Yes | .zip |
+||||||||
+
+## Audio / Video
+
+| Mime type | File identification | Metadata extraction | Text extraction | Native viewer | Annotate viewer | Possible Extensions |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/mp4 | Yes | Yes | No | Yes | No | .f4v; .m4a; .m4v; .mp4; .mp4v; .mpeg; .mpeg4 |
+| audio/mpeg | Yes | Yes | No | Yes | No | .mpeg |
+| video/3gpp | Yes | Yes | No | Yes | No | .3gp |
+| video/3gpp2 | Yes | Yes | No | Yes | No | .3g2; .3gp2 |
+| video/quicktime | Yes | Yes | No | Yes | No | .moov; .mov; .qt |
+| video/x-m4v | Yes | Yes | No | Yes | No | .m4v |
 ||||||||
 
 ## Database
@@ -66,7 +78,7 @@ Advanced eDiscovery supports many file types to many different levels, which are
 
 ## Image
 
-| Mime type | File identification | Metadata extraction | OCR Text extraction | Native viewer | Annotate viewer | Possible Extensions |
+| Mime type | File identification | Metadata extraction | OCR text extraction | Native viewer | Annotate viewer | Possible Extensions |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | image/bmp | Yes | Yes | Yes | Yes | Yes | .bmp |
 | image/emf | Yes | Yes | Yes | Yes | Yes | .emf |
@@ -91,7 +103,14 @@ Advanced eDiscovery supports many file types to many different levels, which are
 | application/vnd.openxmlformats-officedocument.spreadsheetml.template | Yes | Yes | Yes | Yes | Yes | .xltx |
 ||||||||
 
-## Microsoft Powerpoint
+## Microsoft OneNote
+
+| Mime type | File identification | Metadata extraction | Text extraction | Native viewer | Annotate viewer | Possible Extensions |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/onenote | Yes | Yes | Yes | Yes | No | .one |
+||||||||
+
+## Microsoft PowerPoint
 
 | Mime type | File identification | Metadata extraction | Text extraction | Native viewer | Annotate viewer | Possible Extensions |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
@@ -99,6 +118,13 @@ Advanced eDiscovery supports many file types to many different levels, which are
 | application/vnd.openxmlformats-officedocument.presentationml.presentation | Yes | Yes | Yes | Yes | Yes | .pptx |
 | application/vnd.openxmlformats-officedocument.presentationml.slideshow | Yes | Yes | Yes | Yes | Yes | .ppsx |
 | application/vnd.openxmlformats-officedocument.presentationml.template | Yes | Yes | Yes | Yes | Yes | .potx |
+||||||||
+
+## Microsoft Project
+
+| Mime type | File identification | Metadata extraction | Text extraction | Native viewer | Annotate viewer | Possible Extensions |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd.ms-project | Yes | Yes | Yes | No | Yes | .mpp |
 ||||||||
 
 ## Microsoft Publisher

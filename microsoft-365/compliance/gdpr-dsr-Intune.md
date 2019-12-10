@@ -1,7 +1,7 @@
 ---
-title: Intune Data Subject Requests for the GDPR
-description: Guide for how to use Microsoft products, services, and administrative tools to help our controller customers find and act on personal data to respond to DSR requests.
-keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
+title: Intune Data Subject Requests for the GDPR and CCPA
+description: Guide for how to use Microsoft products, services, and administrative tools to help our controller customers find and act on personal data to respond to DSR and CCPA requests.
+keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,21 +9,26 @@ ms.author: dougeby
 author: dougeby
 manager: angrobe
 audience: itpro
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
+hideEdit: true
 ---
 
-# Intune Data Subject Requests for the GDPR
+# Intune Data Subject Requests for the GDPR and CCPA
 
 The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called a *Data Subject Request* or DSR.
 
-The guide discusses how to use Microsoft products, services, and administrative tools to help our controller customers find and act on personal data to respond to DSRs. Specifically, this includes how to find, access, and act on personal data that reside in the Microsoft cloud. Here’s a quick overview of the processes outlined in this guide:
+Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR’s Data Subject Rights, such as the right to delete, access and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and “opt-out/ opt-in” requirements for certain data transfers classified as “sales". Sales are broadly defined to include the sharing of data for a valuable consideration. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
+
+The guide discusses how to use Microsoft products, services, and administrative tools to help our controller customers find and act on personal data to respond to DSRs. Specifically, this includes how to find, access, and act on personal data or personal information that reside in the Microsoft cloud. Here’s a quick overview of the processes outlined in this guide:
 
 - **Discover:** Use search and discovery tools to more easily find customer data that may be the subject of a DSR. Once potentially responsive documents are collected, you can perform one or more of the DSR actions described in the following steps to respond to the request. Alternatively, you may determine that the request doesn't meet your organization’s guidelines for responding to DSRs.
 - **Access:** Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it that can be available to the data subject.
 - **Rectify:** Make changes or implement other requested actions on the personal data, where applicable.
 - **Restrict:** Restrict the processing of personal data, either by removing licenses for various Azure services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
 - **Delete:** Permanently remove personal data that resided in the Microsoft cloud.
-- **Export:** Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
+- **Export/Receive (Portability):** Provide an electronic copy (in a machine-readable format) of personal data or personal information to the data subject. Personal information under the CCPA is any information relating to an identified or identifiable person. There is no distinction between a person’s private, public, or work roles. The defined term “personal information” roughly lines up with “personal data” under GDPR. However, the CCPA also includes family and household data. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
 
 Each section in this guide outlines the technical procedures that a data controller organization can take to respond to a DSR for personal data in the Microsoft cloud.
 

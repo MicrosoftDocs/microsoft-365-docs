@@ -18,8 +18,6 @@ description: Understand the Contoso Corporation as a business and the tiered str
 
 # Overview of the Contoso Corporation
 
-**Summary:** Understand the Contoso Corporation as a business and the tiered structure of its worldwide offices.
-
 ![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 The Contoso Corporation is a multi-national business with headquarters in Paris, France. It is a conglomerate manufacturing, sales, and support organization with over 100,000 products.
@@ -60,7 +58,7 @@ Contoso's IT architects identified the following design requirements and conside
 
 - Multiple geographic locations with local regulations and compliance requirements
 - A central intranet datacenter in the headquarters office and regional application servers that host internal line of business applications
-- An existing System Center Configuration Manager infrastructure
+- An existing Microsoft Endpoint Configuration Manager infrastructure
 - A mix of client computing devices, including Windows, Mac, and Linux
 - A mix of personal and company-owned mobile devices, including iOS (iPhone and iPad) and Android smart phones and tablets
 - Many remote and mobile workers

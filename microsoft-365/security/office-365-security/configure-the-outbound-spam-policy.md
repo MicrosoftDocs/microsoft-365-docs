@@ -32,9 +32,9 @@ Outbound spam filtering is always enabled if you use the service for sending out
 
 Estimated time to complete: 5 minutes
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam entry in the [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam entry in the [Feature Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) topic.
 
-The following procedure can also be performed via remote PowerShell. Use the [Get-HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx) cmdlet to review your settings, and the [Set-HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx) to edit your outbound spam policy settings. To learn how to use Windows PowerShell to connect to Exchange Online Protection, see [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+The following procedure can also be performed via remote PowerShell. Use the [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy) cmdlet to review your settings, and the [Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy) to edit your outbound spam policy settings. To learn how to use Windows PowerShell to connect to Exchange Online Protection, see [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
 ## Use the Security And Compliance Center (SCC) to edit the default outbound spam policy
 
@@ -60,7 +60,7 @@ Use the following procedure to edit the default outbound spam policy:
 
 4. Expand the **Recipient limits** section to specify the maximum number of recipients that a user can send to, per hour for internal and external recipients together with the maximum number per day.
 
-    [NOTE!] The maximum number for any input is 10,000.  For more information see [receiving and sending limits within Exchange online](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
+    [NOTE!] The maximum number for any input is 10,000.  For more information see [receiving and sending limits within Exchange online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 7. Specify the **action** to take when a user exceeds the specified limits.  The actions that are possible are as follows:
     * **Restrict the user from sending mail till the following day**.  Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin and the user will be unable to send any further email until the following day, based on UTC time. There is no way for the administrator to override this block.
@@ -100,7 +100,7 @@ Use the following procedure to edit the default outbound spam policy:
 
 ## For more information
 
-[Removing a user from the Restricted Users portal after sending spam email](https://docs.microsoft.com/en-us/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
+[Removing a user from the Restricted Users portal after sending spam email](https://docs.microsoft.com/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
 
 [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md)
 
