@@ -36,7 +36,7 @@ For more information about the different permissions you can give to users in th
 
 ## Use the admin center to give another user access to the Security & Compliance Center
 
-1. [Sign in to Office 365 and go to the Admin center](https://go.microsoft.com/fwlink/p/?LinkId=525275).
+1. [Sign in to Office 365 and go to the Admin center](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center).
 
 2. In the Microsoft 365 admin center, open **Admin centers** and then click **Security & Compliance**.
 
@@ -74,7 +74,7 @@ For more information about the different permissions you can give to users in th
 
    - _Member_ is the mailbox, universal security group (USG), or computer to add to the role group. You can specify only one member at a time.
 
-For detailed information on syntax and parameters, see [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).
+For detailed information on syntax and parameters, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
 
 ### How do you know this worked?
 
@@ -84,4 +84,4 @@ To verify that you've given users access to the Security & Compliance Center, us
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 
-For detailed information on syntax and parameters, see [Get-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510860).
+For detailed information on syntax and parameters, see [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroupMember).
