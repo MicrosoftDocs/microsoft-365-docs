@@ -67,7 +67,7 @@
                   href: mtp/investigate-incidents.md
                 - name: Manage incidents
                   href: mtp/manage-incidents.md
-            - name: Automated investigation and remediation
+            - name: Automated investigation and response
               items: 
                 - name: AIR overview
                   href: mtp/mtp-autoir.md
