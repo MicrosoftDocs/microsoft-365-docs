@@ -31,7 +31,7 @@ As an Office 365 user, you can manage messages that were sent to quarantine inst
 2. On the left, expand **Threat Management**, choose **Review**, and then choose **Quarantine**.
 
     > [!TIP]
-    > To go directly to the **Quarantine** page in the Security &amp; Compliance Center, use this URL: > [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > To go directly to the **Quarantine** page in the Security &amp; Compliance Center, use this URL: [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
 
 By default, the Security &amp; Compliance Center displays all email messages that have been quarantined as spam. The messages are sorted from newest to oldest based on the **Date** the message was received. **Sender**, **Subject**, and the expiration date (under **Expires** ) are also displayed for each message. You can sort on a field by clicking the corresponding column header; click a column header a second time to reverse the sort order.
 
