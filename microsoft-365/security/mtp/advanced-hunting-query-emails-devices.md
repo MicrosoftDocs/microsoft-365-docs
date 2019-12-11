@@ -46,7 +46,7 @@ EmailAttachmentInfo
 | where SenderFromAddress =~ "MaliciousSender@example.com"
 | where isnotempty(SHA256)
 | join (
-FileCreationEvents
+DeviceFileEvents
 | project FileName, SHA256
 ) on SHA256
 ```
@@ -58,11 +58,11 @@ This query finds the 10 latest logons performed by email recipients within 30 mi
 //Find logons that occurred right after malicious email was received
 let MaliciousEmail=EmailEvents
 | where MalwareFilterVerdict == "Malware" 
-| project TimeEmail = EventTime, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
+| project TimeEmail = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 MaliciousEmail
 | join (
-LogonEvents
-| project LogonTime = EventTime, AccountName, ComputerName
+DeviceLogonEvents
+| project LogonTime = Timestamp, AccountName, DeviceName
 ) on AccountName 
 | where (LogonTime - TimeEmail) between (0min.. 30min)
 | take 10
@@ -75,13 +75,13 @@ Malicious emails often contain documents and other specially crafted attachments
 //Find PowerShell activities right after email was received from malicious sender
 let x=EmailEvents
 | where SenderFromAddress =~ "MaliciousSender@example.com"
-| project TimeEmail = EventTime, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
+| project TimeEmail = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 x
 | join (
-ProcessCreationEvents
+DeviceProcessEvents
 | where FileName =~ "powershell.exe"
 //| where InitiatingProcessParentFileName =~ "outlook.exe"
-| project TimeProc = EventTime, AccountName, ComputerName, InitiatingProcessParentFileName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| project TimeProc = Timestamp, AccountName, DeviceName, InitiatingProcessParentFileName, InitiatingProcessFileName, FileName, ProcessCommandLine
 ) on AccountName 
 | where (TimeProc - TimeEmail) between (0min.. 30min)
 ```
