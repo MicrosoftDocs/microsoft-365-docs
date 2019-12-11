@@ -364,6 +364,10 @@
 
                   href: ./office-365-security/how-office-365-validates-the-from-address.md
 
+                - name: Campaign Views
+
+                  href: ./office-365-security/campaigns.md
+
             - name: Anti-spoofing protection in Office 365
 
               href: ./office-365-security/anti-spoofing-protection.md
