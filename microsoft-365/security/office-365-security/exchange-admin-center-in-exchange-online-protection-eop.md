@@ -20,7 +20,7 @@ description: "The Exchange admin center (EAC) is the web-based management consol
 
 The Exchange admin center (EAC) is the web-based management console for Microsoft Exchange Online Protection (EOP).
 
-Looking for the Exchange Server version of this topic? See [Exchange admin center in Exchange 2013](https://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
+Looking for the Exchange Server version of this topic? See [Exchange admin center in Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center).
 
 Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
@@ -91,7 +91,7 @@ The **Me** tile allows you to sign out the EAC and sign in as a different user. 
 
 ## Supported Browsers
 
-For the best experience using the EAC, we recommend that you always use the latest browsers, Office clients, and apps. We also recommend that you install software updates when they become available. For more information about the supported browsers and system requirements for the service, see [Office 365 System Requirements](https://go.microsoft.com/fwlink/p/?LinkID=402699).
+For the best experience using the EAC, we recommend that you always use the latest browsers, Office clients, and apps. We also recommend that you install software updates when they become available. For more information about the supported browsers and system requirements for the service, see [System requirements for Office](https://products.office.com/office-system-requirements).
 
 ## Supported languages in EOP
 

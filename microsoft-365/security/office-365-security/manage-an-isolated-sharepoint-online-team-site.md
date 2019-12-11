@@ -141,7 +141,7 @@ In some cases, a subset of the people working within the isolated site need a mo
   
 To create a documents subfolder with custom permissions, do the following:
   
-1. Sign in to Office 365 with an account that is a member of the admins access group for the site. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Sign in to Office 365 with an account that is a member of the admins access group for the site. For help, see [Where to sign in to Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Go to the isolated team site and click **Documents**.
     

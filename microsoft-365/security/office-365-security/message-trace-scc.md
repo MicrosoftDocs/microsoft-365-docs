@@ -94,7 +94,7 @@ You can leave the default value **All** selected, or you can select one of the f
 
 - **Failed**: The message was not delivered.
 
-- **Quarantined**: The message was quarantined (as spam, bulk mail, or phishing). For more information, see [Quarantine email messages in Office 365](https://support.office.com/article/4c234874-015e-4768-8495-98fcccfc639b.aspx).
+- **Quarantined**: The message was quarantined (as spam, bulk mail, or phishing). For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
 
 - **Filtered as spam**: The message was identified spam, and was rejected or blocked (not quarantined).
 
@@ -336,13 +336,13 @@ A **custom_data** value that starts with `S:SFA` is from the spam filter agent. 
 |`SFV=SPM`|The message was marked as spam by the content filter.|
 |`SFV=BLK`|Filtering was skipped and the message was blocked because it originated from a blocked sender.|
 |`SFV=SKS`|The message was marked as spam prior to being processed by the content filter. This includes messages where the message matched a Transport rule to automatically mark it as spam and bypass all additional filtering.|
-|`SCL=<number>`|For more information about the different SCL values and what they mean, see [Spam confidence levels](https://technet.microsoft.com/library/jj200686.aspx).|
-|`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](https://technet.microsoft.com/library/jj200686.aspx).|
+|`SCL=<number>`|For more information about the different SCL values and what they mean, see [Spam confidence levels](spam-confidence-levels.md).|
+|`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
 |`DI=SB`|The sender of the message was blocked.|
 |`DI=SQ`|The message was quarantined.|
 |`DI=SD`|The message was deleted.|
 |`DI=SJ`|The message was sent to the recipient's Junk Email folder.|
-|`DI=SN`|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](https://technet.microsoft.com/library/jj200746.aspx).|
+|`DI=SN`|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).|
 |`DI=SO`|The message was routed through the normal outbound delivery pool.|
 |`SFS=[a]|SFS=[b]`|This denotes that spam rules were matched.|
 |`IPV=CAL`|The message was allowed through the spam filters because the IP address was specified in an IP Allow list in the connection filter.|
@@ -384,7 +384,7 @@ A **custom_data** value that starts with`S:TRA` is from the Transport Rule agent
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|The rule ID that was matched.|
 |`St=<datetime>`|The date and time in UTC when the rule match occurred.|
-|`Action=<ActionDefinition>`|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](https://technet.microsoft.com/library/jj919237.aspx).|
+|`Action=<ActionDefinition>`|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
 |`Mode=<Mode>`|The mode of the rule. Valid values are: <br/>• **Enforce**: All actions on the rule will be enforced. <br/>• **Test with Policy Tips:**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on. <br/>• **Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.|
 
 An example **custom_data** value for a messages that matches the conditions of a mail flow rule looks like this:

@@ -40,7 +40,7 @@ Most PDFs and Office documents can be previewed in safe mode while ATP scanning 
 
 With Dynamic Delivery, people can read and respond to their email messages right away, while their attachments are being analyzed. 
 
-ATP Safe Attachments scanning takes place in the same region where your Office 365 data resides. For more information about data center geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All) 
+ATP Safe Attachments scanning takes place in the same region where your Office 365 data resides. For more information about data center geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All)
   
 ## What happens when someone forwards an email that contains an attachment?
 

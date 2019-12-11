@@ -25,7 +25,7 @@ This timeline reflects a sample deployment.
 ![trainable-classifier-timeline](media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
-> Opt-in is required the first time for trainable classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content.
+> Opt-in is required the first time for trainable classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content. Contact your global administrator to kick off the opt-in process.
 
 ## Seed content
 
