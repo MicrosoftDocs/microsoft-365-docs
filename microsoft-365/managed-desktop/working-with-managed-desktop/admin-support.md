@@ -50,7 +50,7 @@ Additional details:
 
 We appreciate your feedback and use it to improve the admin support experience.
 
-Once a ticket is in the **Mitigated** or **Resolved**, you can share your feedback on your experience with that particular issue. To do this, go to the **Support requests** page in the Admin portal. Select the specific ticket. In the fly-in that appears on the right side, select the **Feedback** tab, and provide the requested information.
+Once a ticket is in the **Mitigated** or **Resolved** state, you can share your feedback on your experience with that particular issue. To do this, go to the **Support requests** page in the Admin portal. Select the specific ticket. In the fly-in that appears on the right side, select the **Feedback** tab, and provide the requested information. Be careful not to include any personal information in the feedback form. For more information about privacy, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ![Feedback form](images/feedback_form.png)
 
