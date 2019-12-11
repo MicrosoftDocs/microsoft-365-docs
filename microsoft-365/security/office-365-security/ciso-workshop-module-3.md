@@ -41,7 +41,7 @@ Learn how to advance zero trust with your identity and user access strategy to b
 
 ##  Part 6: Build an Identity Perimeter (13:57)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMg]
 
 ## Part 7: Identity System Security (3:37)
 
