@@ -158,7 +158,7 @@ Yes! Encrypted messages are supported for a shared mailbox.
 
 - Users can view attachments that inherit protection from email when they use Outlook for Windows, Outlook for Mac, and Outlook on the web.
 
-The following table shows the supported clients for shared mailboxes.
+The following table lists the supported clients for shared mailboxes.
 
 | Platform | Read mail | View email attachments |
 |----------|-----------|------------------------|

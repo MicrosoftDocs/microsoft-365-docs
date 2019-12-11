@@ -22,7 +22,7 @@ This topic provides frequently asked questions and answers about the hosted quar
 
  **Q. How do I manage malware-quarantined messages in quarantine?**
 
-You need to use the Security &amp; Compliance Center in order to view and work with messages that were sent to quarantine because they contain malware. For more information, see [Quarantine email messages in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+You need to use the Security &amp; Compliance Center in order to view and work with messages that were sent to quarantine because they contain malware. For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
 
  **Q. How do I configure the service to send spam-quarantined messages to the quarantine?**
 

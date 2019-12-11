@@ -201,7 +201,7 @@ The Twitter developer app is now ready to use.
 
 ## Step 7: Set up a custom connector in the security and compliance center
 
-1.  Go to <https://protection.office.com> and then click **Data governance \> Import \> Archive third-party data**.
+1.  Go to <https://protection.office.com> and then click **Information governance \> Import \> Archive third-party data**.
 
     ![Go to Archive third-party data page in security and compliance center](media/TCimage36.png)
 
