@@ -564,7 +564,11 @@
 
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
 
-            - name: Understanding latest attack campaigns with threat analytics
+            - name: Campaign Views
+
+              href: ./office-365-security/campaigns.md
+
+            - name: Understanding latest attacks with threat analytics
 
               href: ./mtp/latest-attack-campaigns.md
 
