@@ -28,7 +28,7 @@ Upon logging in, the Office 365 portal provides information about the status of 
 
 [Microsoft Support and Recovery Assistant (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
 
-[Mail flow troubleshooter](http://aka.ms/FixEmail)
+[Mail flow troubleshooter](https://aka.ms/FixEmail)
 
 ## Assisted support from Microsoft
 
