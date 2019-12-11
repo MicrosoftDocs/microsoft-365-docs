@@ -29,22 +29,13 @@ Features that are currently in preview are denoted with **(preview)**.
 
 ## Office 365 ATP Plan 1 and Plan 2
 
-Office 365 ATP is available in two plans: Office 365 ATP Plan 1 and Office 365 ATP Plan 2.
+Office 365 ATP is available in two plans: Office 365 ATP Plan 1 and Office 365 ATP Plan 2. [Learn more about what's included in each plan](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
  
-The following table summarizes what's included in each plan. 
-
-|Office 365 ATP Plan 1  |Office 365 ATP Plan 2  |
-|---------|---------|
-|Configuration, protection, and detection capabilities:<br/>- [Safe Attachments](atp-safe-attachments.md)<br/>- [Safe Links](atp-safe-links.md)<br/>- [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Advanced antiphishing protection](atp-anti-phishing.md)<br/>- [Real-time detections](threat-explorer.md)     |Office 365 ATP Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:<br/>- [Threat Trackers](threat-trackers.md)<br/>- [Threat Explorer](threat-explorer.md)<br/>- [Automated investigation and response](automated-investigation-response-office.md)<br/>- [Attack Simulator](attack-simulator.md)         |
-
-- Office 365 ATP Plan 2 is included in Office 365 E5, Office 365 A5, and Microsoft 365 E5. 
-- Office 365 ATP Plan 1 is included in Microsoft 365 Business. 
-- Office 365 ATP Plan 1 and Office 365 ATP Plan 2 are each available as an add-on for certain subscriptions. To learn more, see [Feature availability across ATP plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
-- If your current subscription does not include Office 365 ATP, [contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644), and see how ATP can work for your organization. 
-
 ## December 2019
 
 - [Export URL click data for offline analysis](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP Plan 1 or Plan 2)
+
+- [Campaign Views in Office 365 ATP (**preview**)](campaigns.md)
 
 ## November 2019
 
