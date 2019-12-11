@@ -33,7 +33,7 @@ Follow these steps to set up and use communication compliance in your Microsoft 
   
 - **Step 1 (optional)**: [Set up groups for communication compliance](#step-1-set-up-groups-for-communication-compliance-optional) 
 
-    Before you start using communication compliance, determine who needs communications reviewed and who does reviews. If you want to get started with just a few users to see how communication compliance works, you can skip setting up groups for now.
+    Before you start using communication compliance, determine who needs communications reviewed and who performs reviews. If you want to get started with just a few users to see how communication compliance works, you can skip setting up groups for now.
 
 - **Step 2 (required)**: [Make communication compliance available in your organization](#step-2-make-communication-compliance-available-in-your-organization-required)
 
@@ -41,7 +41,7 @@ Follow these steps to set up and use communication compliance in your Microsoft 
 
 - **Step 3 (required)**: [Set up a communication compliance policy](#step-3-create-a-communication-compliance-policy-required)
 
-    You create communication compliance policies in the Microsoft 365 compliance center. These policies define which communications are subject to review in your organization and specifies who does reviews. Communications include email, Microsoft Teams, Skype for Business, and third-party platform communications (such as Facebook, Twitter, and so on).
+    You create communication compliance policies in the Microsoft 365 compliance center. These policies define which communications are subject to review in your organization and specifies who performs reviews. Communications include email, Microsoft Teams, Skype for Business, and third-party platform communications (such as Facebook, Twitter, etc.).
 
 - **Step 4 (optional)**: [Create employee notice templates](#step-4-create-employee-notice-templates-optional)
 
@@ -117,8 +117,8 @@ For more information about role groups and permissions, see [Permissions in the 
     - Choose the communication channels to scan, including Exchange, Microsoft Teams, or Skype for Business. You'll also choose to scan third-party sources if you've configured a connector in Microsoft 365.
     - Choose the communication direction to monitor, including inbound, outbound, or internal communications.
     - Define the communication compliance policy [conditions](communication-compliance-feature-reference.md#ConditionalSettings). You can choose from message address, keyword, file types, and size match conditions.
-    - Choose if you'd like to include sensitive information types. This is where you can select default and custom sensitive info types. Pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard. You can create these items before running the wizard if needed. You can also create new sensitive information types from within the communication compliance policy wizard.
-    - Choose if you'd like to enable the offensive language model. This detects inappropriate language sent or received in the body of email messages.
+    - Choose if you'd like to include sensitive information types. This step is where you can select default and custom sensitive info types. Pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard. You can create these items before running the wizard if needed. You can also create new sensitive information types from within the communication compliance policy wizard.
+    - Choose if you'd like to enable the offensive language classifier. This  classifier detects inappropriate language sent or received in the body of email messages.
     - Define the percentage of communications to review.
     - Review your policy selections and create the policy.
 
@@ -153,7 +153,7 @@ After you create a communication compliance policy, it's a good idea to test it 
 Follow these steps to test your communication compliance policy:
 
 1. Open an email client or Microsoft Teams while signed in as a supervised user defined in the policy you want to test.
-2. Send an email or Microsoft Teams chat that meets the criteria you've defined in the communication compliance policy. This can be a keyword, attachment size, domain, and so on. Make sure you determine if your configured conditional settings in the policy are too restrictive or too lenient.
+2. Send an email or Microsoft Teams chat that meets the criteria you've defined in the communication compliance policy. This test can be a keyword, attachment size, domain, etc. Make sure you determine if your configured conditional settings in the policy are too restrictive or too lenient.
 
     > [!NOTE]
     > Communications in all source channels can take up to 24 hours to fully process in a policy.
