@@ -201,7 +201,7 @@ Communication compliance filters allow you to filter and sort alert messages for
 | **Date** | The date the message was sent or received by a user in your organization. |
 | **File class** | The class of the message based on the message type, either *message* or *attachment*. |
 | **Has attachment** | The attachment presence in the message. |
-| **Item class** | The source of the message based on the message type, email, Microsoft Team chat, Bloonmberg, and so on. |
+| **Item class** | The source of the message based on the message type, email, Microsoft Team chat, Bloonmberg, etc. |
 | **Recipient domains** | The domain to which the message was sent. This is normally your Microsoft 365 subscription domain by default. |
 | **Recipient** | The user to which the message was sent. |
 | **Sender** | The person who sent the message. |
@@ -248,7 +248,7 @@ If you'd like to change the severity level assigned in an alert policy for a spe
 
 ## Audit
 
-In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This may be a summary of all activities associated with a defined organizational policy or any time a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
+In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
 
 To view communication compliance policy activities, select the **Export review activities** control on the main page for any policy. This generates an audit file in the .csv format that contains the following information:
 
