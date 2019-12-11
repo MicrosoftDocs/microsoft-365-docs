@@ -188,7 +188,7 @@ Create a condition using common properties when searching mailboxes and sites in
 |Sender/Author|For email, the person who sent a message. For documents, the person cited in the author field from Office documents. You can type more than one name, separated by commas. Two or more values are logically connected by the **OR** operator.|
 |Size (in bytes)|For both email and documents, the size of the item (in bytes).|
 |Subject/Title|For email, the text in the subject line of a message. For documents, the title of the document. As previously explained, the Title property is metadata specified in Microsoft Office documents. You can type the name of more than one subject/title, separated by commas. Two or more values are logically connected by the **OR** operator.|
-|Compliance tag|For both email and documents, labels that have been assigned to messages and documents automatically by label policies or labels that have been manually assigned by users. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. You can type part of the label name and use a wildcard or type the complete label name. For more information, see [Overview of labels in Office 365](labels.md).|
+|Compliance label|For both email and documents, retention labels that have been assigned to messages and documents automatically by label policies or retention labels that have been manually assigned by users. Retention labels are used to classify email and documents for information governance and enforce retention rules based on the settings defined by the label. You can type part of the retention label name and use a wildcard or type the complete label name. For more information, see [Overview of retention labels](labels.md).|
 |||
   
 ### Conditions for mail properties
@@ -309,7 +309,6 @@ This example returns email items or documents that contain the keyword "report",
  `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype="aspx")`
   
 #### Example 3
-<a name="conditionexamples"> </a>
 
 This example returns email messages or calendar meetings that were sent between 12/1/2016 and 11/30/2016 and that contain words that start with "phone" or "smartphone".
   
