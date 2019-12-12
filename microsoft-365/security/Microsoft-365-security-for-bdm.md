@@ -20,7 +20,7 @@ This article is organized by priority of work, starting with protecting those ac
 
 [![Thumb image Microsoft 365 BDM security recommendations spreadsheet](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
-Microsoft provides you with the Secure Score tool within your tenant to automatically analyze your security posture based on your regular activities, assign a score, and provide security improvement recommendations. Before taking the actions recommended in this article, take note of your current score and recommendations. The actions recommended in this article will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. See [Microsoft Secure Score](mtp/microsoft-secure-score.md).
+Microsoft provides you with the Secure Score tool within your tenant to automatically analyze your security posture based on your regular activities, assign a score, and provide security improvement recommendations. Before taking the actions recommended in this article, take note of your current score and recommendations. The actions recommended in this article will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment in a way that do not negatively affect productivity for your users. See [Microsoft Secure Score](mtp/microsoft-secure-score.md).
 
 One more thing before we get started . . . be sure to [turn on the Office 365 audit log](../compliance/search-the-audit-log-in-security-and-compliance.md). You’ll need this data later, in the event you need to investigate an incident or a breach. 
 
@@ -41,14 +41,14 @@ The following diagram illustrates these capabilities.
 Additional recommendations:
 - Ensure accounts that are synchronized from on-premises are not assigned admin roles for cloud services. This helps prevent an attacker from leveraging on-premises accounts to gain administrative access to cloud services. 
 - Ensure service accounts are not assigned admin roles. These accounts are often not monitored and set with passwords that do not expire. Start by ensuring the AADConnect and ADFS services accounts are not Global Admins by default.
-- Remove licenses from admin accounts. Unless there is a specific user case to assign licenses to specific admin accounts, remove licenses from these accounts. 
+- Remove licenses from admin accounts. Unless there is a specific use case to assign licenses to specific admin accounts, remove licenses from these accounts. 
 
 ## Reduce the surface of attack
 
 The next focus area is reducing the surface of attack. This can be accomplished with minimal effort and impact to your users and services. By reducing the surface area of attack, attackers have fewer ways to launch an attack against your organization.
 
 Here are some examples:
-- Disable POP3, IMAP, and SMTP protocols. Most modern organizations no longer use these older protocols. You can safely disable these and allow only exceptions as needed. 
+- Disable POP3, IMAP, and SMTP protocols. Most modern organizations no longer use these older protocols. You can safely disable these and allow exceptions only as needed. 
 - Reduce and keep the number of Global Admins in the tenant to the absolute minimum required. This directly reduces the surface area of attack for all Cloud applications. 
 - Retire servers and applications that are no longer used in your environment. 
 - Implement a process for disabling and deleting accounts that are no longer used. 
