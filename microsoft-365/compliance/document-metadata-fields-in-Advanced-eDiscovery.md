@@ -70,7 +70,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Document template||Doc_template|Template from the document metadata.|
 |Dominant theme|DominantTheme|Dominant_theme|Dominant theme as calculated for analytics.|
 |Duplicate subset||Duplicate_subset|Group ID for exact duplicates.|
-|EmailAction*||Email_action|None| Reply| Forward based on the subject line of a message."|
+|EmailAction*||Email_action|Values are **None**, **Reply**, or **Forward**; based on the subject line of a message.|
 |Email Delivery Receipt||Email_delivery_receipt|Email address supplied in Internet Headers for delivery receipt.|
 |Importance|EmailImportance|Email_importance|Importance of the message: **0** - Low; **1** - Normal; **2** - High|
 |EmailLevel*||Email_level|Indicates a message's level within the email thread it belongs to; attachments inherit its parent message's value.|
@@ -79,7 +79,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Email Security|EmailSecurity|Email_security|Security setting of the message: **0** - None; **1** - Signed; **2** -  Encrypted; **3** -  Encrypted and signed.|
 |Email Sensitivity|EmailSensitivity|email_sensitivity|Sensitivity setting of the message: **0** - None; **1** Personal; **2** - Private; **3** - CompanyConfidential.|
 |Email set|EmailSet|Email_set|Group ID for all messages in the same email set.|
-|EmailThread*||Email_thread|Position of the message within the email set; consists all node IDs from the root to the current message| period-separated.|
+|EmailThread*||Email_thread|Position of the message within the email set; consists of node IDs from the root to the current message; ,period-separated.|
 |Extracted content type||Extracted_content_type|Extracted content type, in the form of mime type; for example, **image/jpeg**|
 |ExtractedTextLength*||Extracted_text_length|Number of characters in the extracted text.|
 |Family relevance score Case issue 1*||Family_relevance_score_case_issue_1|Family relevance score Case issue 1 from Relevance.|
@@ -101,7 +101,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Is Representative|IsRepresentative|Is_representative|One document in every set of exact duplicates is marked as representative.|
 |Item class|ItemClass|Item_class|Item class supplied by exchange server; for example, **IPM.Note**|
 |Last modified date|LastModifiedDate|Doc_date_modified|Last modified date from document metadata.|
-|Load ID|LoadId|Load_ID|Load Id| in which the item was loaded into a review set."|
+|Load ID|LoadId|Load_ID|The Id of the load set in which the item was added to a review set.|
 |Location|Location|Location|String that indicates the type of location that documents were sourced from:<br />**Imported Data** - Non-Office 365 data<br />**Teams** - Microsoft Teams<br />**Exchange** - Exchange mailboxes<br />**SharePoint** - SharePoint sites<br />**OneDrive** - OneDrive accounts|
 |Location name|LocationName|Location_name|String that identifies the source of the item. For exchange, this will be the SMTP address of the mailbox; for SharePoint and OneDrive, the URL for the site collection.|
 |Marked as representative|MarkAsRepresentative||One document from each set of exact duplicates is marked as representatives.|
@@ -145,7 +145,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Sender/Author|SenderAuthor||Calculated field comprised of the sender or author of the item.|
 |Sender domain|SenderDomain|Email_sender_domain|Domain of the sender.|
 |Sent|Sent|Email_date_sent|Sent date of the message.|
-|Set Order: Inclusive First|SetOrderInclusivesFirst|Set_order_inclusives_first|Sorting field - email and attachments: counter-chronological| documents: pivot first then by similarity score| descending."|
+|Set Order: Inclusive First|SetOrderInclusivesFirst|Set_order_inclusives_first|Sorting field - email and attachments: counter-chronological; documents: pivot first then by descending similarity score.|
 |SimilarityPercent||Similarity_percent|Indicates how similar a document is to the pivot of the near duplicate set.|
 |Native file size|Size|Native_size|Number of bytes of the native item.|
 |Subject|Subject|Email_subject|Subject of the message.|
