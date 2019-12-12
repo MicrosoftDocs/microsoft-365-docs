@@ -70,7 +70,7 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
 
 ## Prepare the SharePoint Online Management Shell for the preview
 
-Before you enable the preview, ensure that you're running the latest SharePoint Online Management Shell. If you already have the latest version, you can go ahead and enable the preview.
+Before you enable the preview, ensure that you're running SharePoint Online Management Shell version 16.0.19418.12000 or above. If you already have the latest version, you can go ahead and enable the preview.
 
 To prepare the SharePoint Online Management Shell for the preview:
 
