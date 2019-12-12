@@ -146,9 +146,11 @@ To learn more, see [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-l
 
    - On the **Add domains to protect** tab, turn on **Automatically include the domains I own**. If you have custom domains, add those as well.
 
-   - On the **Actions** tab, select **Move message to the recipients' Junk Email folders** for both impersonated user and impersonated domain, and turn on safety tips.
+   - On the **Actions** tab, select **Quarantine the message** for both the **impersonated user** and **impersonated domain** options. In addition, turn on impersonation safety tips.
 
-   - On the **Mailbox intelligence** tab, make sure mailbox intelligence is turned on.
+   - On the **Mailbox intelligence** tab, make sure mailbox intelligence is turned on. In addition, turn on mailbox intelligence based impersonation protection. In the **If email is sent by an impersonated user** list, choose **Quarantine the message**.
+
+   - On the **Add trusted senders and domains** tab, specify any trusted senders or domains that you want to add.
 
    - On the **Review your settings** tab, after you have reviewed your settings, click **Save**.
 
@@ -156,7 +158,7 @@ To learn more, see [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-l
 
    - On the **Spoofing filter settings** tab, make sure anti-spoofing protection is turned on.
 
-   - On the **Actions** tab, choose Move message to the recipients' Junk Email folders.
+   - On the **Actions** tab, choose **Quarantine the message**.
 
    - On the **Review your settings** tab, after you have reviewed your settings, click **Save**. (If you didn't make any changes, click **Cancel**.)
 
