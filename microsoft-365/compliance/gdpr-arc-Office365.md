@@ -26,7 +26,7 @@ In addition, items in this checklist under *5.* *Data Protection & Security* pro
 
 The checklist and Compliance Manager are organized using the titles and reference number (in parentheses for each checklist topic) of a set of privacy and security controls for personal data processors drawn from:
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) for security techniques requirements.
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail?pid=000000000030351736) for security techniques requirements.
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) for privacy management requirements.
 
 This control structure is also used to organize the presentation of the internal controls that Microsoft Office 365 implements to support GDPR, which you can download from the [Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
