@@ -1,7 +1,7 @@
 ---
-title: RegistryEvents table in the advanced hunting schema
-description: Learn about registry events you can query from the RegistryEvents table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, registryevents, registry, key, subkey, value
+title: DeviceRegistryEvents table in the advanced hunting schema
+description: Learn about registry events you can query from the DeviceRegistryEvents table of the advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, registryevents, registry, DeviceRegistryEvents, key, subkey, value
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,22 +17,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# RegistryEvents
+# DeviceRegistryEvents
 
 **Applies to:**
 - Microsoft Threat Protection
 
 [!include[Prerelease information](prerelease.md)]
 
-The `RegistryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about the creation and modification of registry entries. Use this reference to construct queries that return information from this table.
+The `DeviceRegistryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about the creation and modification of registry entries. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `EventTime` | datetime | Date and time when the event was recorded |
-| `MachineId` | string | Unique identifier for the machine in the service |
-| `ComputerName` | string | Fully qualified domain name (FQDN) of the machine |
+| `Timestamp` | datetime | Date and time when the event was recorded |
+| `DeviceId` | string | Unique identifier for the machine in the service |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
 | `ActionType` | string | Type of activity that triggered the event |
 | `RegistryKey` | string | Registry key that the recorded action was applied to |
 | `RegistryValueType` | string | Data type, such as binary or string, of the registry value that the recorded action was applied to |
@@ -55,7 +55,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessParentCreationTime` | datetime | Date and time when the parent of the process responsible for the event was started |
 | `InitiatingProcessIntegrityLevel` | string | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources |
 | `InitiatingProcessTokenElevation` | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
-| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns |
+| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 
 ## Related topics
