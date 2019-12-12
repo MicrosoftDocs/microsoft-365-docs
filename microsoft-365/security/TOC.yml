@@ -5,10 +5,6 @@
       items: 
         - name: Microsoft 365 Security for BDMs
           href: Microsoft-365-security-for-bdm.md
-        - name: Secure Score
-          href: ./mtp/microsoft-secure-score.md
-        - name: Secure Score (preview)
-          href: ./mtp/microsoft-secure-score-preview.md
         - name: Chief Information Security Officer (CISO) workshop training
           href: ./office-365-security/ciso-workshop.md
           items: 
