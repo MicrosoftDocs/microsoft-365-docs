@@ -19,7 +19,7 @@ hideEdit: true
 
 Accessibility requirements suitable for information and communications technologies (ICT) products and services are set forth in EN 301 549, which is a set of standards for ICT products and services including websites, software, and digital devices. EN 301 549 was published in 2014 by the European Telecommunications Standards Institute (ETSI) in response to a request from the European Commission, and it was most recently updated in November 2019 to version 3.1.1. EN 301 549 3.1.1 incorporates the [WCAG](offering-WCAG-2-1.md) standards for web accessibility.
 
-Microsoft is a major software and cloud-services provider to European states.  To assist government customers in making procurement decisions, Microsoft publishes Accessibility Conformance Reports (ACRs) describing the extent to which our products and services support the criteria of EN 301 549. The information in the ACRs can help Microsoft customers determine whether a product or service will meet their specific needs.
+Microsoft is a major software and cloud-services provider to European states. To assist government customers in making procurement decisions, Microsoft publishes Accessibility Conformance Reports (ACRs) describing the extent to which our products and services support the criteria of EN 301 549. The information in the ACRs can help Microsoft customers determine whether a product or service will meet their specific needs.
 
 ## Microsoft and EN 301 549
 
