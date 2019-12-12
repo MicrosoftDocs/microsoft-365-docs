@@ -3,7 +3,7 @@ title: "Multi-factor authentication for your Microsoft 365 Enterprise test envir
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,9 +19,11 @@ description: "Configure multi-factor authentication using text messages sent to 
 
 *This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
 
-For an additional level of security for signing in to Office 365 or any service or application that uses the Azure AD tenant for your organization, you can enable Azure multi-factor authentication, which requires more than just a username and password to verify an account. With multi-factor authentication, users are required to acknowledge a phone call, type a verification code sent in a text message, or specify an app password on their smart phones after correctly entering their passwords. They can sign in only after this second authentication factor has been satisfied. 
+For an additional level of security for signing in to Microsoft 365 or any service or application that uses the Azure AD tenant for your subscription, you can enable Azure multi-factor authentication, which requires more than just a username and password to verify an account. 
+
+With multi-factor authentication, users are required to acknowledge a phone call, type a verification code sent in a text message, or specify an app password on their smart phones after correctly entering their passwords. They can sign in only after this second authentication factor has been satisfied. 
   
-This article describes how to enable and test text message-based authentication for a specific account.
+This article describes how to enable and test text message-based authentication for a specific user account.
   
 There are two phases to setting up multi-factor authentication for an account in your Microsoft 365 Enterprise test environment:
   
@@ -51,7 +53,7 @@ Enable multi-factor authentication for the User 2 account with these steps:
     
 2. In the left navigation, click **Users > Active users**.
     
-3. In the Active users pane, click **More > Multi-factor authentication setup**.
+3. In the Active users pane, click **Multi-factor authentication**.
     
 4. In the list, select the **User 2** account.
     

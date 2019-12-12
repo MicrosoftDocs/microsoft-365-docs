@@ -3,7 +3,7 @@ title: "Protect global administrator accounts in your Microsoft 365 Enterprise t
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -36,7 +36,6 @@ There are two phases to protecting global administrator accounts in your Microso
 If you just want to test global administrator account protection in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
 If you want to test global administrator account protection in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
-
   
 > [!NOTE]
 > Testing global administrator account protection does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS). It is provided here as an option so that you can test global administrator account protection and experiment with it in an environment that represents a typical organization. 
@@ -46,33 +45,33 @@ If you want to test global administrator account protection in a simulated enter
 First, create a new user account as a dedicated global administrator.
 
 1. On a separate tab, open the [Microsoft 365 admin center](https://admin.microsoft.com/).
-2. Under **Active users**, click **Add a user**.
-3. On the **New user** page, type **DedicatedAdmin** in **First name**, **Display name**, and **Username**.
+2. Click **Users > Active users**, and then click **Add a user**.
+3. In the **Add user** pane, type **DedicatedAdmin** in **First name**, **Display name**, and **Username**.
 4. Click **Password**, click **Let me create the password**, and then type a strong password. Record the password for this new account in a secure location.
-5. Clear **Make this user change their password when they first sign in**.
-6. Click **Roles**, and then click **Global administrator**.
-7. Click **Product licenses**, and then turn the **Microsoft 365 E5** license on.
-8. Click **Add**.
-9. On the **User was added** page, clear **Send password in email**, and then click **Close**.
+5. Click **Next**.
+6. In the **Assign product licenses** pane, select **Microsoft 365 E5** or **Office 365 E5**, and then click **Next**.
+7. In the **Optional settings** pane, click **Roles**, and then select **Admin center access** and **Global admin**. Click **Next**.
+8. On the **You're almost done** pane, click **Finish adding**, and then click **Close**.
 
 Next, create a new group named GlobalAdmins and add the DedicatedAdmin account to it.
 
-1. On the **Microsoft 365 admin center** tab, click the groups icon in the left navigation, and then click **Groups**.
+1. On the **Microsoft 365 admin center** tab, click **Groups** in the left navigation, and then click **Groups**.
 2. Click **Add a group**.
-3. On the **New Group** page, type **GlobalAdmins**.
-4. Click **Select owner** click your global administrator account, and then click **Add > Close**.
-5. In the list of groups, click the **GlobalAdmins** group.
-6. On the **GlobalAdmins** page, click **Edit for Member**, and then click **Add members**.
-7. In the list, click the **DedicatedAdmin** account, and then click **Save > Close > Close > Admin center**.
+3. In the **Choose a group type** pane, select **Security**, and then click **Next**.
+4. In the **Set up the basics** pane, click **Create group**, and then click **Close**.
+5. In the **Review and finish adding group** pane, type **GlobalAdmins**, and then click **Next**.
+7. In the list of groups, click the **GlobalAdmins** group.
+8. In the **GlobalAdmins** pane, click **Members**, and then click **View all and manage members**.
+9. In the **GlobalAdmins** pane, click **Add members**, select the **DedicatedAdmin** account and your global admin account, and then click **Save > Close > Close**.
 
 Next, create conditional access policies to require multifactor authentication for global administrator accounts and to deny authentication if the sign-in risk is medium or high.
 
 This first policy requires that all global administrator accounts use MFA.
 
 1. In a new tab of your browser, go to [https://portal.azure.com](https://portal.azure.com).
-2. Click **Azure Active Directory > Security > Conditional access**.
+2. Click **Azure Active Directory > Security > Conditional Access**.
 3. In the **Conditional access – Policies** pane, click **Baseline policy: Require MFA for admins (preview)**.
-4. In the **Baseline policies…** pane, click **Use policy immediately > Save**.
+4. In the **Baseline policy** pane, click **Use policy immediately > Save**.
 
 This second policy blocks access to global administrator account authentication when the sign-in risk is medium or high.
 
