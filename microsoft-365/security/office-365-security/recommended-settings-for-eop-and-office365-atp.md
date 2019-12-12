@@ -1,5 +1,5 @@
 ---
-title: "Microsoft recommendations for EOP and Office 365 ATP security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, etc"
+title: "Microsoft recommendations for EOP and Office 365 ATP security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for ATP, setup ATP, setup EOP, configure ATP, configure EOP"
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -161,3 +161,14 @@ Do not track when users click safe links|Disabled|Disabled|This falls under the 
 |ATP Safe attachments unknown malware response|Block|Block||
 |Redirect attachment on detection|Enabled|Enabled|Redirect to email address for a security administrator that knows how to determine if the attachment is malware or not|
 |ATP Safe attachments response if malware scanning for attachments times out or error occurs|Enabled|Enabled||
+
+
+## Related topics
+
+Are you looking for best practices with **Exchange Mail Flow / Exchange Transport Rules**? Please see [this article](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) for details.
+
+Do you need to send suspicious mails, suspected spam, phish, or URLs to Microsoft for scan? Use the **Admin Submissions** directions in [this article](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/admin-submission).
+
+Use these links for info on how to **set up** your [EOP service](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/set-up-your-eop-service), and **configure** [Office 365 Advanced Threat Protection](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp). (Don't forget to see the helpful directions in '[Protect Against Threats in Office 365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/protect-against-threats)'.)
+
+**Security baselines for Windows** can be found [here](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) for GPO/on-premises options, and for Intune-based security, [here](https://docs.microsoft.com/en-us/intune/protect/security-baselines). Finally, a comparison between Microsoft Defender Advanced Threat Protection (ATP) and Windows Intune security baselines is [here](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).
