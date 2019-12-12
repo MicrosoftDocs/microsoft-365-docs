@@ -64,7 +64,7 @@ Financial organizations, or SCI entities, that are subject to this regulation ca
 - [Microsoft Cloud Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - [Financial services compliance in Azure](https://aka.ms/FinServ-Compliance-Azure)
 - [Microsoft Financial Services](https://aka.ms/FinServ-Compliance)
-- [Microsoft and SEC Rule 17a-4](https://download.microsoft.com/download/E/5/2/E52103E7-C1BB-4118-9725-4452FEA931D8/SEC17a-4\(f\)-Compliance.pdf)
+- [Microsoft and SEC Rule 17a-4](offering-SEC-17a-4.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
