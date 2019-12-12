@@ -39,7 +39,7 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 |Phishing email detection action|Quarantine message|Quarantine message||
 |High confidence Phish email detection action|Quarantine message|Quarantine message||
 |Bulk email detection action|Move message to Junk Email folder|Quarantine message||
-|Set Bulk email threshold to|6|4|The default value is currently 7, but we recommend that you change it to 6. For details, see [Bulk Complaint Level values](https://docs.microsoft.com/microsoft-365/security/office-365-security/bulk-complaint-level-values).|
+|Set Bulk email threshold to|6|4|The default value is currently 7, but we recommend that you change it to 6. For details, see [Bulk Complaint Level values](bulk-complaint-level-values.md).|
 |Quarantine retention period|30 days|30 days||
 |Safety tips|On|On||
 |Allowed Senders|None|None||

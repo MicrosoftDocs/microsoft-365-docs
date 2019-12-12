@@ -125,6 +125,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <p><a href="offering-pci-dss.md">PCI DSS</a></p>
                         <p><a href="offering-rbi-irdai-india.md">RBI + IRDAI (India)</a></p>
                         <p><a href="offering-sec-17a-4.md">SEC 17a-4</a></p>
+                        <p><a href="offering-sec-reg-sci.md">SEC Regulation SCI</a></p>
                         <p><a href="offering-shared-assessments.md">Shared assessments</a></p>
                         <p><a href="offering-sox.md">SOX</a></p>
                         <p><a href="offering-tisax-germany.md">TISAX (Germany)</a></p>
