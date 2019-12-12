@@ -69,7 +69,7 @@ You can also <a href="https://docs.microsoft.com/azure/active-directory/authenti
 
 ## Step 5: Delete the directory in Azure Active Directory
 
-1. Sign in to the <a href="https://aad.portal.azure.com/" target="_blank">Azure AD admin center</a> with an account that is the Global Administrator for your organization.
+1. Sign in to the <a href="https://aad.portal.azure.com/" target="_blank">Azure AD admin center</a> with a Global Administrator account.
 
 2. Select **Azure Active Directory**.
 
