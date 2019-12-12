@@ -221,7 +221,7 @@
         }, 
         {
           "source_path": "microsoft-365/business/auto-install-or-uninstall-office.md",
-          "redirect_url": "https://docs.microsoft.com/microsoft-365/business/help-users-install-office.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/business/help-users-install-office",
           "redirect_document_id": true
         }, 
         {
@@ -237,6 +237,16 @@
         {
           "source_path": "microsoft-365/security/compliance/compliance-solutions-overview.md",
           "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/offering-home",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/compliance/run-a-content-search-in-the-security-and-compliance-center.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/search-for-content",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/compliance/manage-ediscovery-cases.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/ediscovery-cases",
           "redirect_document_id": true
         }
       ]

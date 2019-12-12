@@ -152,7 +152,7 @@ In this phase, you create the isolated SharePoint Online site and configure the 
   
 First, create the SharePoint Online team site with these steps.
   
-1. Sign in to the admin center with an account that will also be used to administer the SharePoint Online team site (a SharePoint Online administrator). For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Sign in to the admin center with an account that will also be used to administer the SharePoint Online team site (a SharePoint Online administrator). For help, see [Where to sign in to Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. In the list of tiles, click **SharePoint**.
     

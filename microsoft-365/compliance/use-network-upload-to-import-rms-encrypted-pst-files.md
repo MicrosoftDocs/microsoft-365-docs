@@ -220,9 +220,9 @@ Now that you've configured Azure RMS and obtained the IDs necessary to encrypt P
     
 2. Sign in to Office 365 using the credentials for an administrator account in your Office 365 organization.
     
-3. In the left pane, click **Data governance** and then click **Import**.
+3. In the left pane, click **Information governance** \> **Import** \> **Import PST files**.
     
-4. On the **Import** page, click **Go to the Import service**.
+4. On the **Import PST files** page, click **Go to the Import service**.
     
 5. On the **Import data to Office 365** page, click **New job** ![Add Icon](media/ITPro-EAC-AddIcon.gif), and then click **Upload email messages (PST files)**.
     
@@ -269,7 +269,7 @@ After you have completed Step 1 through Step 4, you're ready to use the O365Impo
     | `/protect-key:` <br/> |Specifies the symmetric key that you obtained in Step 2. Be sure to surround the value of this parameter with double-quotation marks (" ").  <br/> | `/protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867="` <br/> |
     | `/transfer:` <br/> |Specifies whether you upload PST files over the network or ship them on a hard drive. The value  `upload` indicates that you are uploading the files over the network. The value  `drive` indicates that you are shipping the PSTs on a hard drive.  <br/> | `/transfer:upload` <br/> |
     | `/upload-dest:` <br/> |Specifies the destination in Office 365 where your PST files will be uploaded to; this is the Azure storage location for your organization. The value for this parameter consists of the network upload URL from the SAS URL that you copied in Step 4. Be sure to surround the value of this parameter with double-quotation marks (" ").  <br/><br/> **Tip:** (Optional) You can specify a subfolder in the Azure storage location to upload the encrypted PST files to. You do this by adding a subfolder location (after "ingestiondata") in the network upload URL. The first example doesn't specify a subfolder; that means the PSTs will be uploaded to the root (named  *ingestiondata*  ) of the Azure storage location. The second example uploads the PST files to a subfolder (named  *EncryptedPSTs*  ) in the Azure storage location.           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> Or  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
-    | `/upload-destSAS:` <br/> |Specifies the SAS key for you organization. The value for this parameter consists of the SAS key from the SAS URL that you copied in Step 4. Note that first character in the SAS key is a question mark ("?"). Be sure to surround the value of this parameter with double-quotation marks (" ").  <br/> | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | `/upload-destSAS:` <br/> |Specifies the SAS key for you organization. The value for this parameter consists of the SAS key from the SAS URL that you copied in Step 4. Note that first character in the SAS key is a question mark ("?"). Be sure to surround the value of this parameter with double-quotation marks (" ").<br/><br/>**Note:** If you use the SAS URL in a script or batch file, you need to watch out for certain characters that need to be escaped. For example, you have to change `%` to `%%` and change `&` to `^&`. | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
     | `/recurse` <br/> |This optional switch specifies the recursive mode so that the O365ImportTool.exe tool will copy PSTs files that are located in subfolders in the source directory that is specified by the  `/srcdir:` parameter.  <br/><br/> **Note:** If you include this switch, PST files in subfolders will have a different file pathname in the Azure storage location after they're uploaded. You'll have to specify the exact file pathname in the CSV file that you create in Step 7.           | `/recurse` <br/> |
    
     Here's an example of the syntax for the O365ImportTool.exe tool using actual values for each parameter:
@@ -376,9 +376,9 @@ The last step is to create the PST Import job in the Import service in Office 36
     
 2. Sign in to Office 365 using the credentials for an administrator account in your Office 365 organization.
     
-3. In the left pane, click **Data governance** and then click **Import**.
+3. In the left pane, click **Information governance > Import > Import PST files**.
     
-4. On the **Import** page, click **Go to the Import service**.
+4. On the **Import PST files** page, click **Go to the Import service**.
     
 5. On the **Import data to Office 365** page, click **New job**![Add Icon](media/ITPro-EAC-AddIcon.gif), and then click **Upload email messages (PST files)**.
     

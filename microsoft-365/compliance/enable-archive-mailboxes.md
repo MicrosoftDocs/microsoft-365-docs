@@ -36,7 +36,7 @@ You have to be assigned the Mail Recipients role in Exchange Online to enable or
     
 2. Sign in to Office 365 using your work or school account.
     
-3. In the left pane of the Security & Compliance Center, click **Data governance** \> **Archive**.
+3. In the left pane of the Security & Compliance Center, click **Information governance** \> **Archive**.
     
     The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
     
@@ -67,7 +67,7 @@ To disable an archive mailbox:
     
 2. Sign in to Office 365 using your work or school account.
     
-3. In the left pane of the Security & Compliance Center, click **Data governance** \> **Archive**.
+3. In the left pane of the Security & Compliance Center, click **Information governance** \> **Archive**.
     
     The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
     

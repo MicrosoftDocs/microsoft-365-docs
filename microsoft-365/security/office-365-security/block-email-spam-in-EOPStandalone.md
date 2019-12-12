@@ -26,7 +26,7 @@ An Admin can use several Office 365 spam filter settings to help prevent email s
 
 Customize your Office 365 spam filter by adding the sender IP address to the connection filter IP block list:
 
-1. Obtain the headers for the message you want to block in your mail client such as Outlook or Outlook on the web (formerly known as Outlook Web App), as described in [Message Header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583).
+1. Obtain the headers for the message you want to block in your mail client such as Outlook or Outlook on the web (formerly known as Outlook Web App), as described in [View internet message headers in Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 
 2. Search for the IP address following the CIP tag in the X-Forefront-Antispam-Report header using the [message header analyzer](https://testconnectivity.microsoft.com/?tabid=mha) or manually.
 
@@ -44,7 +44,7 @@ Is the spam primarily bulk mail, for example, newsletters or promotions? You can
 
 ## Email users can also help ensure that false negative and email spam is blocked with Office 365 spam filter
 
-It will help your Office 365 anti-spam efforts to prevent false negatives and junk mail if you tell your users to add the spam sender address to their blocked sender list in [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) or [Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=294862). In Outlook on the web, get started by clicking **Settings** \> **Options** \> **Block or allow**, and then adding the address to the **Blocked senders** list, as shown here.
+It will help your Office 365 anti-spam efforts to prevent false negatives and junk mail if you tell your users to add the spam sender address to their blocked sender list in [Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) or [Outlook on the web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d). In Outlook on the web, get started by clicking **Settings** \> **Options** \> **Block or allow**, and then adding the address to the **Blocked senders** list, as shown here.
 
 ![Blocking a sender in Outlook on the web](../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 

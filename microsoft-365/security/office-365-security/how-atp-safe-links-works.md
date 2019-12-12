@@ -48,7 +48,7 @@ At a high level, here's how [ATP Safe Links](atp-safe-links.md) protection works
   
 1. People have installed Office 365 ProPlus or Business Premium on their computer, smartphone, or tablet. (Or, they are using Office in their browser.)
     
-2. A user opens a Word, Excel, PowerPoint, OneNote (on the web), or Visio (on desktop), and signs in to Office 365 Enterprise using their work or school account. The document contains URLs.
+2. A user opens a Word, Excel, PowerPoint, OneNote (in the browser), or Visio (on desktop), and signs in to Office 365 Enterprise using their work or school account. The document contains URLs.
     
 3. When the user clicks on a URL in the document, the link is checked by the ATP Safe Links service.
     

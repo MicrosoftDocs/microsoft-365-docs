@@ -64,7 +64,7 @@ In this topic:
 
 Admins can use Exchange Online PowerShell to enable or disable safety tips. Use the Set-HostedContentFilterPolicy cmdlet to enable or disable safety tips in a spam filter policy.
 
-1. Connect to Exchange Online PowerShell. For information, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+1. Connect to Exchange Online PowerShell. For information, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Run the Set-HostedContentFilterPolicy cmdlet to enable or disable safety tips:
 

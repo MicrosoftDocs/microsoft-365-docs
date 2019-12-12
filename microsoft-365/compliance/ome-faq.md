@@ -150,15 +150,15 @@ Admins can set up a mail flow rule to remove encryption from outgoing mail. You 
 
 Not at this time.
 
-## Can I open encrypted messages sent to a Shared Mailbox?
+## Can I open encrypted messages sent to a shared mailbox?
 
-Yes! Encrypted messages are supported for a Shared Mailbox.
+Yes! Encrypted messages are supported for a shared mailbox.
 
-- Users can open protected mails in a Shared Mailbox where the Shared Mailbox received a protected mail as part of a distribution group.
+- Users can open protected mails in a shared mMailbox where the shared mailbox received a protected mail as part of a distribution group.
 
 - Users can view attachments that inherit protection from email when they use Outlook for Windows, Outlook for Mac, and Outlook on the web.
 
-The following table shows the supported clients for shared mailboxes.
+The following table lists the supported clients for shared mailboxes.
 
 | Platform | Read mail | View email attachments |
 |----------|-----------|------------------------|
@@ -171,6 +171,6 @@ The following table shows the supported clients for shared mailboxes.
 
 There are currently two known limitations:
 
-- We only support access provided by direct user assignment to the SMB. We don't support assignment through an email enabled security group.
+- We only support access provided by direct user assignment to the shared mailbox. We don't support assignment through an email enabled security group.
 
 - You can't open attachments to emails that you receive on mobile devices by using Outlook mobile.
