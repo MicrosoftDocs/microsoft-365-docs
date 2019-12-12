@@ -69,7 +69,10 @@ Use the **New-MailboxRestoreRequest** cmdlet with the  _SourceMailbox_ and  _Tar
 
 ## Restore the archive from an inactive mailbox
 
-If an inactive mailbox has an archive mailbox, you can also restore it to the archive mailbox of an existing mailbox. To restore the archive from an inactive mailbox, you have to add the  _SourceIsArchive_ and  _TargetIsAchive_ switches to the command used to restore an inactive mailbox. 
+If an inactive mailbox has an archive mailbox, you can also restore it to the archive mailbox of an existing mailbox. To restore the archive from an inactive mailbox, you have to add the  _SourceIsArchive_ and  _TargetIsAchive_ switches to the command used to restore an inactive mailbox.
+
+> [!IMPORTANT]
+> You can't restore the archive from an inactive mailbox if the archive is larger than 100 GB. If the archive for a inactive mailbox is larger than 100 GB, that means auto-expanding archiving was enabled on the mailbox (or was enabled for your organization) before the mailbox was made inactive. For more information, see [Overview of unlimited archiving](unlimited-archiving.md).
   
 1. Create a variable that contains the properties of the inactive mailbox.
 
