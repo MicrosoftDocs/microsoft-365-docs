@@ -1,9 +1,9 @@
 ---
 title: "Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)"
 ms.author: krowley
-author: kccross
+author: cabailey
 manager: laurawi
-ms.date: 12/10/2019
+ms.date: 12/12/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -53,7 +53,15 @@ For example:
 
 ## Enable this preview
 
-You must use [Azure Active Directory PowerShell for Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) to enable this preview. If you need to install this module, see [Installing the Azure AD Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#installing-the-azure-ad-module).
+You must use the preview version of [Azure Active Directory PowerShell for Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) (AzureADPreview) to enable this preview of sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites:
+
+- If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module).
+
+- If you have the 2.0 general availability version of the Azure AD PowerShell module (AzureAD) installed, you must uninstall it by running `Uninstall-Module AzureAD` in your PowerShell session, and then install the preview version by running `Install-Module AzureADPreview`.
+
+- If you have already installed the preview version, run `Install-Module AzureADPreview` to make sure it's the latest version.
+
+You're now ready to enable the preview of sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites:
 
 1. In a PowerShell session, sign in to Azure Active Directory as a global admin. For instructions, see [Connect to Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#connect-to-azure-ad ).
 
