@@ -41,8 +41,6 @@ See the [More information](#more-information) section for more details about the
 
     Use the information returned by this command to recover a specific inactive mailbox.
 
-- You can't recover an inactive mailbox that has [auto-expanding archiving](unlimited-archiving.md) enabled. As an alternative, you can restore the inactive mailbox to a new mailbox and then use the [Content Search tool](content-search.md) to search for and export content from the archive of the inactive mailbox, and then [import](use-network-upload-to-import-pst-files.md) that content (up to 100 GB) to the archive of the new mailbox.
-
 ## Recover an inactive mailbox
 
 Use the **New-Mailbox** cmdlet with the  *InactiveMailbox*  parameter to recover an inactive mailbox. 
