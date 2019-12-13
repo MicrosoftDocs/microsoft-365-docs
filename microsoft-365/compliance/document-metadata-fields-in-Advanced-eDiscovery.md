@@ -21,7 +21,7 @@ description: ""
 
 The following table lists the metadata fields for documents in a review set in a case in Advanced eDiscovery. The table provides the following information:
 
-- **Field name and Display name:** The name of the metadata field and the name of the field that's displayed when viewing the file metadata of a selected document in a review set. Note that some metadata fields aren't included when viewing the file metadata of a document. These fields are highlighted with an asterisk (*).
+- **Field name** and **Display name:** The name of the metadata field and the name of the field that's displayed when viewing the file metadata of a selected document in a review set. Note that some metadata fields aren't included when viewing the file metadata of a document. These fields are highlighted with an asterisk (*).
 
 - **Searchable field name:** The name of the property that you can search for when running a [review set query](review-set-search.md). A blank cell means that you can't search for the field in a review set query.
 
