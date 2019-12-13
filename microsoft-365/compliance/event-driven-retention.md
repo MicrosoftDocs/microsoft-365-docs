@@ -1,7 +1,7 @@
 ---
 title: "Overview of event-driven retention"
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
