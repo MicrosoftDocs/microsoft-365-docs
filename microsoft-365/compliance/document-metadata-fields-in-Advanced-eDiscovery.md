@@ -31,15 +31,15 @@ The following table lists the metadata fields for documents in a review set in a
 
 - A description of the meta data field (in the **Description column**).
 
-| Field name | Searchable field name | Exported field name | Display field name | Description |
-| :- |  :- |  :- |  :- |  :- |
+|Field name|Searchable field name|Exported field name|Display field name|Description|
+|:-|:-|:-|:-|:-|
 | Attachment Content Id | AttachmentContentId |  | Attachment Content Id | Attachment content Id of the item. |
 | Attachment Names | AttachmentNames | Attachment_Names | Attachment Names | List of names of attachments. |
 | Attorney client privilege score | AttorneyClientPrivilegeScore |  | Attorney client privilege score | Attorney-client privilege model content score. |
 | Author | Author | Doc_authors | Author | Author from the document metadata. |
 | BCC | Bcc | Email_bcc | BCC | Bcc field for message types.  Format is **DisplayName \<SMTPAddress>**. |
 | CC | Cc | Email_cc | CC | Cc field for message types.  Format is **DisplayName \<SMTPAddress>**. |
-| Compliance labels | ComplianceLabels | Compliance_labels | Compliance labels | Compliance labels applied in Office 365. |
+| Compliance labels | ComplianceLabels | Compliance_labels | Compliance labels |[Retention labels](labels.md) applied to content in Office 365. |
 | Compound Path | CompoundPath | Compound_path | Compound Path | Human readable path that describes the source of the item. |
 | Content | Content |  |  | Extracted text of the item. |
 | Conversation Body | Conversation Body |  | Conversation Body | Conversation body of the item. |
