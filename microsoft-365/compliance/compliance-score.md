@@ -112,8 +112,8 @@ The pre-configured templates for Compliance Score are:
 9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
 10. [FedRAMP Moderate](https://go.microsoft.com/fwlink/?linkid=2108869)
 11. [European Union GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-12. [California Consumer Privacy Act (CCPA) (Preview)](https://go.microsoft.com/fwlink/?linkid=2108871)
-13. [Australian Government Information Security Manual (ISM) (Preview)](https://go.microsoft.com/fwlink/?linkid=2113024)
+12. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (Preview)
+13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [Australian Government (ISM)](https://go.microsoft.com/fwlink/?linkid=2113024) (Preview)
 14. [Microsoft 365 Data Protection Baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 > [!NOTE]
