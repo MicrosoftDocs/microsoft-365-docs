@@ -44,6 +44,7 @@ For a quick overview, watch this short video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
+
 <a name="poster"></a>
 For a 1-page summary of this scenario, see the [Teams for highly regulated data poster](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf).
 
