@@ -29,7 +29,7 @@ The following table lists the metadata fields for documents in a review set in a
 
 - **Description:** A description of the meta data field.
 
-|**Field name and Display field name**|**Searchable field name**|**Exported field name**|**Description**|
+|**Field name** and **Display field name**|**Searchable field name**|**Exported field name**|**Description**|
 |:-----|:-----|:-----|:-----|
 |Attachment Content Id|AttachmentContentId||Attachment content Id of the item.|
 |Attachment Names|AttachmentNames|Attachment_Names|List of names of attachments.|
@@ -48,15 +48,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Conversation Redaction Burn Time|ConversationRedactionBurnTime||Date when the PDF version of the conversation was created for Chat.|
 |Document date created|CreatedTime|Doc_date_created|Create date from document metadata.|
 |Custodian|Custodian|Custodian|Name of the custodian the item was associated with.|
-|Date|Date|Date|Date is a computed field that depends on the file type.|
-||||*Email:* Sent date|
-||||*Email attachments:* Last modified date of the document, if not available, the parent's Sent date|
-||||*Embedded documents:* Last modified date of the document, if not available, the parent's last modified date|
-||||*SPO documents (includes modern attachments):* SharePoint Last modified date, if not available, the documents last modified date|
-||||*Non-Office documents:* Last modified date|
-||||*Meetings:* Meeting start date|
-||||*VoiceMail:* Sent date|
-||||*IM:* Sent date|
+|Date|Date|Date|Date is a computed field that depends on the file type.<br /><br />Email: Sent date<br />Email attachments: Last modified date of the document;if not available, the parent's Sent date<br />Embedded documents: Last modified date of the document; if not available, the parent's last modified date<br />SPO documents (includes modern attachments): SharePoint Last modified date; if not available, the documents last modified date<br />Non-Office 365 documents: Last modified date<br />Meetings: Meeting start date<br />VoiceMail: Sent date<br />IM: Sent date|
 |Other paths|Dedupedcompoundpath|Deduped_compound_path|List of compound paths of documents that are exact duplicates (email: based on content, documents: based on hash).|
 |Other custodians|DedupedCustodians|Deduped_custodians|List of custodians of documents that are exact duplicates (for email, based on content; for documents, based on hash).|
 |Other file IDs|DedupedFileIds|Deduped_file_IDs|List of file IDs of documents that are exact duplicates (for email, based on content; for documents, based on hash).|
@@ -102,14 +94,14 @@ The following table lists the metadata fields for documents in a review set in a
 |Item class|ItemClass|Item_class|Item class supplied by exchange server; for example, **IPM.Note**|
 |Last modified date|LastModifiedDate|Doc_date_modified|Last modified date from document metadata.|
 |Load ID|LoadId|Load_ID|The Id of the load set in which the item was added to a review set.|
-|Location|Location|Location|String that indicates the type of location that documents were sourced from:<br />**Imported Data** - Non-Office 365 data<br />**Teams** - Microsoft Teams<br />**Exchange** - Exchange mailboxes<br />**SharePoint** - SharePoint sites<br />**OneDrive** - OneDrive accounts|
+|Location|Location|Location|String that indicates the type of location that documents were sourced from.<br /><br />**Imported Data** - Non-Office 365 data<br />**Teams** - Microsoft Teams<br />**Exchange** - Exchange mailboxes<br />**SharePoint** - SharePoint sites<br />**OneDrive** - OneDrive accounts|
 |Location name|LocationName|Location_name|String that identifies the source of the item. For exchange, this will be the SMTP address of the mailbox; for SharePoint and OneDrive, the URL for the site collection.|
 |Marked as representative|MarkAsRepresentative||One document from each set of exact duplicates is marked as representatives.|
 |Marked as pre tagged Case issue 1*||Marked_as_pre_tagged_Case_issue_1|Marked as pre-tagged Case issue 1 from Relevance.|
 |Marked as seed Case issue 1*||Marked_as_seed_Case_issue_1|Marked as seed Case issue 1 from Relevance.|
 |Meeting End Date|MeetingEndDate|Meeting_end_date|Meeting end date for meetings.|
 |Meeting Start Date|MeetingStartDate|Meeting_start_date|Meeting start date for meetings.|
-|Message kind|MessageKind|Message_kind|The type of message to search for. Possible values: **<br />contacts <br />docs <br />email <br />externaldata <br />faxes <br />im <br />journals <br />meetings <br />microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br />notes <br />posts <br />rssfeeds <br />tasks <br />voicemail**| 
+|Message kind|MessageKind|Message_kind|The type of message to search for. Possible values: **<br /><br />contacts <br />docs <br />email <br />externaldata <br />faxes <br />im <br />journals <br />meetings <br />microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br />notes <br />posts <br />rssfeeds <br />tasks <br />voicemail**| 
 |Native Extension|NativeExtension|Native_extension|Native extension of the item.|
 |Native file name|NativeFileName|Native_file_name|Native file name of the item.|
 |NativeMD5||Native_MD5|MD5 hash of file stream.|
