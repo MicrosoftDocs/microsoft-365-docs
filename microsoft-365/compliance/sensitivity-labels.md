@@ -1,7 +1,7 @@
 ---
 title: "Overview of sensitivity labels"
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 11/01/2019
 audience: Admin

@@ -22,7 +22,7 @@ description: "Summary: Create a simulated cross-premises virtual network in Micr
 
 This article steps you through creating a simulated hybrid cloud environment with Microsoft Azure using two Azure virtual networks. Here is the resulting configuration. 
   
-![Phase 3 of the simulated cross-premises virtual network dev/test environment, with the DC2 virtual machine in the XPrem VNet](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![Phase 3 of the simulated cross-premises virtual network test environment, with the DC2 virtual machine in the XPrem VNet](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 This simulates an Azure IaaS hybrid cloud production environment and consists of:
   
@@ -40,7 +40,7 @@ This provides a basis and common starting point from which you can:
     
 - Create test configurations of computers, some within the TestLab virtual network and some within the XPrem virtual network, to simulate hybrid cloud-based IT workloads.
     
-There are three major phases to setting up this dev/test environment:
+There are three major phases to setting up this test environment:
   
 1. Configure the TestLab virtual network.
     
@@ -121,7 +121,7 @@ Add-AzVirtualNetworkPeering -Name XPrem2TestLab -VirtualNetwork $vnet2 -RemoteVi
 
 This is your current configuration. 
   
-![Phase 2 of the simulated cross-premises virtual network dev/test environment, with the XPrem VNet and the VNet peering relationship](media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
+![Phase 2 of the simulated cross-premises virtual network test environment, with the XPrem VNet and the VNet peering relationship](media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
   
 ## Phase 3: Configure DC2
 
@@ -193,7 +193,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 
 This is your current configuration. 
   
-![Phase 3 of the simulated cross-premises virtual network dev/test environment, with the DC2 virtual machine in the XPrem VNet](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![Phase 3 of the simulated cross-premises virtual network test environment, with the DC2 virtual machine in the XPrem VNet](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 Your simulated Azure hybrid cloud environment is now ready for testing.
   

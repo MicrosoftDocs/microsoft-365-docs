@@ -1,7 +1,7 @@
 ---
 title: "View the data governance reports"
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 6/8/2018
 audience: Admin
