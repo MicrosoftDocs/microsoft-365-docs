@@ -17,11 +17,11 @@ hideEdit: true
 
 ## About WCAG
 
-The Web Content Accessibility Guidelines (WCAG) provide a framework for developing web content that improves accessibility for people with disabilities, in addition to users of devices with limited graphical abilities. WCAG version 2.0 was published in 2008 by the World Wide Web Consortium (W3C), an international organization dedicated to creating web standards, and updated to WCAG 2.1 in June 2018. In 2012, WCAG 2.0 was also published by the International Organization for Standardization (ISO) as ISO/IEC 40500:2012.
+The Web Content Accessibility Guidelines (WCAG) provide a framework for making web content more accessible for people with disabilities. WCAG version 2.0 was published in 2008 by the World Wide Web Consortium (W3C), an international organization dedicated to creating web standards, and updated to WCAG 2.1 in June 2018. In 2012, WCAG 2.0 was also published by the International Organization for Standardization (ISO) as ISO/IEC 40500:2012.
 
 Content that conforms to WCAG 2.1 also conforms to WCAG 2.0. For policies requiring conformance to WCAG 2.0, WCAG 2.1 can provide an alternate means of conformance.
 
-Microsoft is a major software and cloud-services provider to consumers, businesses, and governments around the world.  To assist customers in making purchasing decisions, Microsoft publishes Accessibility Conformance Reports describing the extent to which our products and services support the WCAG criteria . This information can help Microsoft customers determine whether a particular product or service will meet their specific needs.
+Microsoft is a major software and cloud-services provider to consumers, businesses, and governments around the world. To assist customers in making purchasing decisions, Microsoft publishes Accessibility Conformance Reports describing the extent to which our products and services support the WCAG criteria. This information can help Microsoft customers determine whether a particular product or service will meet their specific needs.
   
 ## Microsoft and WCAG
 
@@ -29,7 +29,7 @@ Microsoft’s consideration of the WCAG standard in the development of products 
 
 Microsoft publishes WCAG reports that reflect the complete product or service. It generally does not create reports for individual features or components. Sometimes, Microsoft might release a new component for an existing product, or a new version of an existing component, which users can choose to install separately, and Microsoft might also publish a WCAG report for that component.
 
-[Download the WCAG 2.1 (ISO/IEC 40500) accessibility standards](https://go.microsoft.com/fwlink/p/?linkid=2052226)
+[Download the WCAG (ISO/IEC 40500) accessibility standards](https://www.w3.org/WAI/standards-guidelines/wcag/)
 
 ## Microsoft in-scope cloud services
 
@@ -43,13 +43,11 @@ Microsoft publishes WCAG reports that reflect the complete product or service. I
 
 ## Microsoft accessibility conformance reports
 
-Find WCAG reports for all our products and services.
-
-[**Learn more**](https://go.microsoft.com/fwlink/p/?linkid=2050974)
+Read WCAG reports for [all our products and services](https://go.microsoft.com/fwlink/p/?linkid=205097).
 
 ## Resources
 
-[Microsoft accessibility site — Get information on using accessibility features and explore the ways Microsoft innovates to help everyone achieve more.
+Microsoft accessibility site — Get information on using accessibility features and explore the ways Microsoft innovates to help everyone achieve more.
 
 [Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801)
     - Office 365 resources for people with disabilities.
