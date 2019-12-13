@@ -30,7 +30,9 @@ You can use the Content Search eDiscovery tool in the compliance center in Offic
 - Skype for Business conversations
     
 - Microsoft Teams 
-    
+
+- Yammer Groups 
+
 - Office 365 Groups
     
 After you run a Content Search, the number of content locations and an estimated number of search results are displayed in the search statistics. You can also quickly view statistics, such as the content locations that have the most items that match the search query. After you run a search, you can preview the results or export them to a local computer.
