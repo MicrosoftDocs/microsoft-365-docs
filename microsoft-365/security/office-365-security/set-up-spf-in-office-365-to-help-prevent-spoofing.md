@@ -59,7 +59,7 @@ Gather this information:
    |3|Exchange Online dedicated only|Not common|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
    |4|Office 365 Germany, Microsoft Cloud Germany only|Not common|include:spf.protection.outlook.de|
    |5|Third-party email system|Not common|include:\<domain name\>  <br/> Where domain name is the domain name of the third party email system.|
-   |6|On-premises mail system. For example, Exchange Online Protection plus another mail system|Not common| Use one of these for each additional mail system:  <br/>  ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  include:\<_domain name_\>  <br/>  Where the value for \<_IP address_\> is the IP address of the other mail system and \<_domain name_\> is the domain name of the other mail system that sends mail on behalf of your domain.|
+   |6|On-premises mail system. For example, Exchange Online Protection plus another mail system|Not common| Use one of these for each additional mail system: <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  include:\<_domain name_\>  <br/>  Where the value for \<_IP address_\> is the IP address of the other mail system and \<_domain name_\> is the domain name of the other mail system that sends mail on behalf of your domain.|
    |7|Any email system (required)|Common. All SPF TXT records end with this value|\<_enforcement rule_\>  <br/> This can be one of several values. We recommend that you use **-all**.|
 
 2. If you haven't already done so, form your SPF TXT record by using the syntax from the table:
@@ -76,7 +76,7 @@ Gather this information:
 
    If you're already deployed in Office 365 and have set up your SPF TXT records for your custom domain, and you're migrating to Office 365 Germany, you need to update your SPF TXT record. To do this, change **include:spf.protection.outlook.com** to **include:spf.protection.outlook.de**.
 
-3. Once you have formed your SPF TXT record, you need to update the record in DNS. You can only have one SPF TXT record for a domain. If an SPF TXT record exists, instead of adding a new record, you need to update the existing record. Go to [Create DNS records for Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide), and then click the link for your DNS host.
+3. Once you have formed your SPF TXT record, you need to update the record in DNS. You can only have one SPF TXT record for a domain. If an SPF TXT record exists, instead of adding a new record, you need to update the existing record. Go to [Create DNS records for Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), and then click the link for your DNS host.
 
 4. Test your SPF TXT record.
 

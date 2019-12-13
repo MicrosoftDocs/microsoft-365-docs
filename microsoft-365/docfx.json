@@ -55,7 +55,11 @@
       "rmca14",
       "claydetels19"
     ],
-    "fileMetadata": {},
+    "fileMetadata": {
+      "titleSuffix": {
+        "compliance/**/*.md": "Microsoft 365 Compliance"
+      }
+    },
     "template": [],
     "dest": "microsoft-365-docs",
     "markdownEngineName": "markdig"
