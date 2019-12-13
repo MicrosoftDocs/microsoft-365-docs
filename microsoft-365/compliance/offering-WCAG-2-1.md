@@ -47,15 +47,10 @@ Read WCAG reports for [all our products and services](https://go.microsoft.com/f
 
 ## Resources
 
-Microsoft accessibility site — Get information on using accessibility features and explore the ways Microsoft innovates to help everyone achieve more.
-
-[Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801)
-    - Office 365 resources for people with disabilities.
-
-[Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890)
-    - Dedicated support for enterprise customers with accessibility questions about our products and services or compliance.
-
-[Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft accessibility site](https://www.microsoft.com/accessibility): Get information on using accessibility features and explore the ways Microsoft innovates to help everyone achieve more.
+- [Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801): Office 365 resources for people with disabilities.
+- [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): Dedicated support for enterprise customers with accessibility questions about our products and services or compliance.
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
