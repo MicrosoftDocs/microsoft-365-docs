@@ -1,7 +1,7 @@
 ---
 title: "Enable sensitivity labels for Office files in SharePoint and OneDrive"
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -70,19 +70,24 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
 
 ## Prepare the SharePoint Online Management Shell for the preview
 
-Before you enable the preview, ensure that you're running the latest SharePoint Online Management Shell. If you already have the latest version, you can go ahead and enable the preview.
+Before you enable the preview, ensure that you're running SharePoint Online Management Shell version 16.0.19418.12000 or above. If you already have the latest version, you can go ahead and enable the preview.
 
-To prepare the SharePoint Online Management Shell for the preview:
+1. If you have installed a previous version of the SharePoint Online Management Shell from PowerShell gallery, you can update the module by running the following cmdlet.
 
-1. If you installed a previous version of the SharePoint Online Management Shell, go to **Add or remove programs** and uninstall “SharePoint Online Management Shell.”
+    ```PowerShell
+    Update-Module -Name Microsoft.Online.SharePoint.PowerShell
+    ```
 
-2. In a web browser, go to the Download Center page and [Download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
+2. Alternatively, if you have installed a previous version of the SharePoint Online Management Shell from the Microsoft Download Center, you can also go to **Add or remove programs** and uninstall the SharePoint Online Management Shell.
 
-3. Select your language and then click **Download**.
+3. In a web browser, go to the Download Center page and [Download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
-4. Choose between the x64 and x86 .msi file. Download the x64 file if you run the 64-bit version of Windows or the x86 file if you run the 32-bit version. If you don’t know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system).
+4. Select your language and then click **Download**.
 
-5. After you download the file, run the file and follow the steps in the Setup Wizard.
+5. Choose between the x64 and x86 .msi file. Download the x64 file if you run the 64-bit version of Windows or the x86 file if you run the 32-bit version. If you don’t know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system)
+
+
+6. After you have downloaded the file, run the file and follow the steps in the Setup Wizard.
 
 ## Enable the preview by using Microsoft PowerShell (opt-in)
 

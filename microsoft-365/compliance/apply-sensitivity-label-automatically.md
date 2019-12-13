@@ -1,7 +1,7 @@
 ---
 title: "Apply a sensitivity label to content automatically"
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
