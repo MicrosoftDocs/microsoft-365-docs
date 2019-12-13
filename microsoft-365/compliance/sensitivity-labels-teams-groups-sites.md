@@ -170,7 +170,7 @@ If you experience creation errors during the public preview, you have two option
 
 Users can select sensitivity labels when they create new teams in Microsoft Teams. When they select the sensitivity level, the privacy setting changes as necessary. Depending on the guest access setting you selected for the label, users can or can't add people outside the organization to the team.
 
->[Learn more about sensitivity labels for Teams](https://docs.microsoft.com/en-us/microsoftteams/sensitivity-labels)
+[Learn more about sensitivity labels for Teams](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
 ![The privacy setting when creating a new team](media/privacy-setting-new-team.png)
 
