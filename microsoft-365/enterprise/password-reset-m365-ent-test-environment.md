@@ -3,7 +3,7 @@ title: "Password reset for your Microsoft 365 test environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -47,7 +47,6 @@ This configuration consists of:
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
 - Azure AD Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Azure AD tenant of your Microsoft 365 or Office 365 subscription.
 
-
 ## Phase 2: Enable password writeback
 
 Follow the instructions in [Phase 2 of the password writeback Test Lab Guide](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain).
@@ -80,8 +79,8 @@ Next, you test password reset for the User 3 account.
 8. Open a new private browser instance and go to [https://aka.ms/sspr](https://aka.ms/sspr).
 9. Type the User 3 account name, type the characters from the CAPTCHA, and then click **Next**.
 10. For **verification step 1**, click **Email my alternate email**, and then click **Email**. When you receive the email, type the verification code, and then click **Next**.
-11. In **Get back into your account**, type a new password for the User 2 account, and then click **Finish**. Note the changed password of the User 2 account and store it in a safe location.
-12. In a separate tab of the same browser, go to [https://portal.office.com](https://portal.office.com), and then sign in with the User 2 account name and its new password. You should see the **Microsoft Office Home** page.
+11. In **Get back into your account**, type a new password for the User 3 account, and then click **Finish**. Note the changed password of the User 3 account and store it in a safe location.
+12. In a separate tab of the same browser, go to [https://portal.office.com](https://portal.office.com), and then sign in with the User 3 account name and its new password. You should see the **Microsoft Office Home** page.
 
 See the [Simplify password resets](identity-secure-your-passwords.md#identity-pw-reset) step in the Identity phase for information and links to configure password resets in production.
 
