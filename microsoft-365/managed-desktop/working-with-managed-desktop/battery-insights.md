@@ -1,4 +1,4 @@
---
+---
 title: Battery insights
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
