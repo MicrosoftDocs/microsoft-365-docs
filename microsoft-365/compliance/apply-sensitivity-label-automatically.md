@@ -26,7 +26,7 @@ The ability to apply sensitivity labels to content automatically is important be
 
 - You don't need to rely on users to classify all content correctly.
 
-- Users no longer need to know about your policies - they can instead focus on their work.
+- Users no longer need to know about your policies — they can instead focus on their work.
 
 For information about license requirements, see [Subscription and licensing requirements for sensitivity labels](sensitivity-labels-office-apps.md#subscription-and-licensing-requirements-for-sensitivity-labels).
 
