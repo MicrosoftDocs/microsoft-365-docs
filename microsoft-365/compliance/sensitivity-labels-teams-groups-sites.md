@@ -63,7 +63,7 @@ You must use the preview version of [Azure Active Directory PowerShell for Graph
 
 You're now ready to enable the preview of sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites:
 
-1. In a PowerShell session, sign in to Azure Active Directory as a global admin. For instructions, see [Connect to Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#connect-to-azure-ad ).
+1. In a PowerShell session, sign in to Azure Active Directory as a global admin. For instructions, see [Connect to Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#connect-to-azure-ad).
 
 2. Run the following commands:
     
