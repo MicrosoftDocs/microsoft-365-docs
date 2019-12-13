@@ -59,7 +59,8 @@
       "titleSuffix": {
         "compliance/**/*.md": "Microsoft 365 Compliance",
         "security/mtp/**/*.md": "Microsoft 365 security",
-        "security/office-365-security/**/*.md": "Office 365"
+        "security/office-365-security/**/*.md": "Office 365",
+        "managed-desktop/**/*.md": "Microsoft Managed Desktop"
       }
     },
     "template": [],
