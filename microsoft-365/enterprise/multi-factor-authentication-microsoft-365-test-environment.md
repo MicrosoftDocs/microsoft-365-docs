@@ -31,6 +31,8 @@ There are two phases to setting up multi-factor authentication for an account in
     
 2. Enable and test multi-factor authentication for the User 2 account.
 
+3. Enable and test multi-factor authentication with a conditional access policy (optional).
+
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
@@ -93,6 +95,40 @@ Complete the configuration for the User 2 account to use a text message for vali
     
     You should see the Office portal for User 2 on the **Microsoft Office Home** tab of your browser.
 
+## Phase 3: Enable and test multi-factor authentication using a conditional access policy
+
+*This phase can only be used for a Microsoft 365 Enterprise test environment.*
+
+In this phase you enable multi-factor authentication for the User 3 account using a group and a conditional access policy.
+
+Next, create a new group named MFAUsers and add the User 3 account to it.
+
+1. On the **Microsoft 365 admin center** tab, click **Groups** in the left navigation, and then click **Groups**.
+2. Click **Add a group**.
+3. In the **Choose a group type** pane, select **Security**, and then click **Next**.
+4. In the **Set up the basics** pane, click **Create group**, and then click **Close**.
+5. In the **Review and finish adding group** pane, type **MFAUsers**, and then click **Next**.
+6. In the list of groups, click the **MFAUsers** group.
+7. In the **MFAUsers** pane, click **Members**, and then click **View all and manage members**.
+8. In the **MFAUsers** pane, click **Add members**, select the **User 3** account, and then click **Save > Close > Close**.
+
+Next, create a conditional access policies to require multifactor authentication for members of the MFAUsers group.
+
+1. In a new tab of your browser, go to [https://portal.azure.com](https://portal.azure.com).
+2. Click **Azure Active Directory > Security > Conditional Access**.
+3. In the **Conditional access – Policies** pane, click **New policy**.
+4. In the **New** pane, type **MFA user accounts** in **Name**.
+5. In the **Assignments** section, click **Users and groups**.
+6. On the **Include** tab of the **Users and groups** pane, click **Select users and groups > Users and groups > Select**.
+7. In the **Select** pane, click the **MFAUsers** group, and then click **Select > Done**.
+8. In the **Assignments** section, click **Conditions**.
+9. In the **Conditions** pane, click **Sign-in risk**, click **Yes** for **Configure**, click **High** and **Medium**, and then click **Select** and **Done**.
+10. In the **Access controls** section of the **New** pane, click **Grant**.
+11. In the **Grant** pane, click **BRequire multi-factor authentication**, and then click **Select**.
+12. In the **New** pane, click **On** for **Enable policy**, and then click **Create**.
+13. Close the **Azure portal** and **Microsoft 365 admin center** tabs.
+
+To test the first policy, sign out and sign in with the User 3 account. You should be prompted to configure MFA. This demonstrates that the MFAUsers policy is being applied.
 
 See the [Set up multi-factor authentication](identity-secure-user-sign-ins.md#identity-mfa) step in the Identity phase for information and links to deploy multi-factor authentication in production.
     

@@ -50,7 +50,7 @@ If you want to test Azure AD Identity Protection in a simulated enterprise, foll
 6. For **Emails are sent to the following users**, click **Included** and verify that your global admin account is in the list of selected members.
 7. Click **Save**.
 
-Click through the different policies under **Protect** to see how to configure them. If you create and activate a policy, make sure it is not blocking access for too wide a scope of conditions, or you might not be able to sign in, even as the global admin,
+Click through the different policies under **Protect** to see how to configure them. If you create and activate a policy, make sure it is not blocking access for too wide a scope of conditions, or you might not be able to sign in, even as the global admin.
 
 For further testing and experimentation, see [Simulating risk events](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook).
 

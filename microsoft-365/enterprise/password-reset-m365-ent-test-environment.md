@@ -62,13 +62,13 @@ First, enable password reset for the accounts in a specific Azure AD group.
 
 1. From a private instance of your browser, open [https://portal.azure.com](https://portal.azure.com), and then sign in with the credentials of your global administrator account.
 2. In the Azure portal, click **Azure Active Directory > Groups > New group**.
-3. Set the **Group type** to **Security**, **Group name** to **PWReset**, and the **Membership type** to **Assigned**. Click **Create**.
-5. Click the **PWReset** group in the list, and then click **Members**.
-6. Click **Add members**, click **User 2**, and then click **Select**. Close the **PWReset** and **Group** pages.
-7. On the Azure Active Directory page, click **Password reset**.
-8. From the **Properties** page, under the option **Self Service Password Reset Enabled**, choose **Selected**.
-9. From **Select group**, select **PWReset**, and then click **Save**.
-10. Close the private browser instance.
+3. Set the **Group type** to **Security**, **Group name** to **PWReset**, and the **Membership type** to **Assigned**. 
+4. Click **Members**, find and select **User 2**, and then click **Select**, and then click **Create**.
+5. Close the **Groups** pane.
+6. In the Azure Active Directory pane, click **Password reset** in the left navigation.
+7. In the **Password reset-Properties** pane, under the option **Self Service Password Reset Enabled**, choose **Selected**.
+8. Click **Select group**, select the **PWReset** group, and then click **Select > Save**.
+9. Close the private browser instance.
 
 Next, you test password reset for the User 2 account.
 

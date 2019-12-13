@@ -79,7 +79,7 @@ This second policy blocks access to global administrator account authentication 
 2. In the **New** pane, type **Global administrators** in **Name**.
 3. In the **Assignments** section, click **Users and groups**.
 4. On the **Include** tab of the **Users and groups** pane, click **Select users and groups > Users and groups > Select**.
-5. In the **Select** pane, click the **GlobalAdmins > Select > Done**.
+5. In the **Select** pane, click the **GlobalAdmins** group, and then click **Select > Done**.
 6. In the **Assignments** section, click **Conditions**.
 7. In the **Conditions** pane, click **Sign-in risk**, click **Yes** for **Configure**, click **High** and **Medium**, and then click **Select** and **Done**.
 8. In the **Access controls** section of the **New** pane, click **Grant**.
@@ -87,7 +87,7 @@ This second policy blocks access to global administrator account authentication 
 10. In the **New** pane, click **On** for **Enable policy**, and then click **Create**.
 11. Close the **Azure portal** and **Microsoft 365 admin center** tabs.
 
-To test the first policy, sign out and sign in with the DedicatedAdmin account. You should be prompted to configure MFA on the user account. This demonstrates that the first policy is being applied.
+To test the first policy, sign out and sign in with the DedicatedAdmin account. You should be prompted to configure MFA. This demonstrates that the first policy is being applied.
 
 See the [Protect global administrator accounts](identity-create-protect-global-admins.md#identity-global-admin) step in the Identity phase for information and links to protect your global administrator accounts in production.
 
