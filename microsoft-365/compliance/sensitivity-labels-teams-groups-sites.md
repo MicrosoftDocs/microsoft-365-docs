@@ -126,7 +126,10 @@ After you enable the preview, use the following steps to create or edit sensitiv
 
 ## Sensitivity label management
 
-Creating, modifying, and deleting sensitivity labels that you use for Microsoft Teams, Office 365 groups, and SharePoint sites requires careful coordination with publishing label policies to users. Avoid creation errors for sites and groups that can affect all users by using the following guidance.
+> [!IMPORTANT]
+> Creating, modifying, and deleting sensitivity labels that you use for Microsoft Teams, Office 365 groups, and SharePoint sites requires careful coordination with publishing label policies to users. 
+
+Avoid creation errors for sites and groups that can affect all users by using the following guidance.
 
 **Creating and publishing labels:**
 
