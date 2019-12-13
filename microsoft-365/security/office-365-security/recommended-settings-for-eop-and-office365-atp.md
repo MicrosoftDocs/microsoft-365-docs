@@ -52,23 +52,23 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 
 There are several other parameters in the Anti-spam policy called Advanced Spam filter that are being deprecated at the time of this writing. Our recommended settings for these are to turn them **OFF** for both Standard and Strict levels:
 
-|Security feature name|
-|---------|
-|IncreaseScoreWithImageLinks|
-|IncreaseScoreWithNumericIps|
-|IncreaseScoreWithRedirectToOtherPort|
-|IncreaseScoreWithBizOrInfoUrls|
-|MarkAsSpamEmptyMessages|
-|MarkAsSpamJavaScriptInHtml|
-|MarkAsSpamFramesInHtml|
-|MarkAsSpamObjectTagsInHtml|
-|MarkAsSpamEmbedTagsInHtml|
-|MarkAsSpamFormTagsInHtml|
-|MarkAsSpamWebBugsInHtml|
-|MarkAsSpamSensitiveWordList|
-|MarkAsSpamFromAddressAuthFail|
-|MarkAsSpamNdrBackscatter|
-|MarkAsSpamSpfRecordHardFail|
+|Security feature name| Comments |
+|---------|---------|
+|IncreaseScoreWithImageLinks| |
+|IncreaseScoreWithNumericIps| |
+|IncreaseScoreWithRedirectToOtherPort| |
+|IncreaseScoreWithBizOrInfoUrls| |
+|MarkAsSpamEmptyMessages| |
+|MarkAsSpamJavaScriptInHtml| |
+|MarkAsSpamFramesInHtml| |
+|MarkAsSpamObjectTagsInHtml| |
+|MarkAsSpamEmbedTagsInHtml| |
+|MarkAsSpamFormTagsInHtml| |
+|MarkAsSpamWebBugsInHtml| |
+|MarkAsSpamSensitiveWordList| |
+|MarkAsSpamFromAddressAuthFail| |
+|MarkAsSpamNdrBackscatter| |
+|MarkAsSpamSpfRecordHardFail| |
 
 #### EOP outbound spam filter policy settings
 
