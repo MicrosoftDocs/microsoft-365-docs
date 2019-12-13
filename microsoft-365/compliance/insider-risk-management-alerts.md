@@ -64,7 +64,7 @@ To triage an insider risk alert, complete the following steps:
         - **Severity**: The current alert risk severity level, listed as high, medium, or low. The severity level may increase or decrease over time if the alert is not triaged.
         - **Active case**: If confirmed, the case generated from the alert is listed. For new alerts, the Active case has a *None* value.
     - **User activity**: This tab displays the activity history for the user associated with the alert. This history includes other alerts and activities related to risk signals defined in the template assigned to the policy for this alert. This history allows risk analysts and investigators to factor in any past risky behavior for the employee as part of the triage process. 
-    - **User profile**: This tab displays the general information about the employee assigned to the alert. If pseudonymize is active for the solution, employee details are not shown.
+    - **User profile**: This tab displays the general information about the employee assigned to the alert. If pseudonymization  is enabled for the solution, employee details are not shown.
     - **Confirm and create a new case**: Visible across all tabs, use this button to confirm and create a new case. This automatically changes the alert status to *Confirmed*. 
     - **Dismiss as benign**: Visible across all tabs, use this button to dismiss the alert. This changes the alert status to *Resolved*.
 
