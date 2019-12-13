@@ -57,7 +57,8 @@
     ],
     "fileMetadata": {
       "titleSuffix": {
-        "compliance/**/*.md": "Microsoft 365 Compliance"
+        "compliance/**/*.md": "Microsoft 365 Compliance",
+        "security/mtp/**/*.md": "Microsoft 365 security"
       }
     },
     "template": [],
