@@ -3,7 +3,7 @@ title: "Identity and device access prerequisites for password hash synchronizati
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/23/2019
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions

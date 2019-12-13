@@ -28,7 +28,7 @@ This article describes how you can configure and test password resets in your Mi
 
 1.	Create the Microsoft 365 Enterprise test environment.
 2.  Enable password writeback.
-3.	Configure and test password reset for the User 2 account.
+3.	Configure and test password reset for the User 3 account.
     
 ![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -63,17 +63,17 @@ First, enable password reset for the accounts in a specific Azure AD group.
 1. From a private instance of your browser, open [https://portal.azure.com](https://portal.azure.com), and then sign in with the credentials of your global administrator account.
 2. In the Azure portal, click **Azure Active Directory > Groups > New group**.
 3. Set the **Group type** to **Security**, **Group name** to **PWReset**, and the **Membership type** to **Assigned**. 
-4. Click **Members**, find and select **User 2**, and then click **Select**, and then click **Create**.
+4. Click **Members**, find and select **User 3**, and then click **Select**, and then click **Create**.
 5. Close the **Groups** pane.
 6. In the Azure Active Directory pane, click **Password reset** in the left navigation.
 7. In the **Password reset-Properties** pane, under the option **Self Service Password Reset Enabled**, choose **Selected**.
 8. Click **Select group**, select the **PWReset** group, and then click **Select > Save**.
 9. Close the private browser instance.
 
-Next, you test password reset for the User 2 account.
+Next, you test password reset for the User 3 account.
 
 1. Open a new private browser instance and browse to [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
-2. Sign in with the User 2 account credentials.
+2. Sign in with the User 3 account credentials.
 3. In **Don’t lose access to your account**, set the authentication phone to your mobile phone number and the authentication email to your work or personal email account.
 4. After both are verified, click **Looks good** and close the private instance of the browser.
 5. Open a new private browser instance and go to [https://aka.ms/sspr](https://aka.ms/sspr).
