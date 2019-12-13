@@ -62,7 +62,8 @@
         "security/office-365-security/**/*.md": "Office 365",
         "managed-desktop/**/*.md": "Microsoft Managed Desktop",
         "enterprise/**/*.md": "Microsoft 365 Enterprise",
-        "campaigns/**/*.md": "Microsoft 365 for Campaigns"
+        "campaigns/**/*.md": "Microsoft 365 for Campaigns",
+        "business/**/*.md": "Microsoft 365 Business"
       }
     },
     "template": [],
