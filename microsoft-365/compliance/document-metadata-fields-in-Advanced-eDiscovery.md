@@ -25,9 +25,9 @@ The following table lists the metadata fields for documents in a review set in a
 
 - **Searchable field name:** The name of the property that you can search for when running a [review set query](review-set-search.md). A blank cell means that you can't search for the field in a review set query.
 
--  **Exported field name:** The name of the metadata field that included when documents are exported.  A blank cell means the meta data field is not included with the exported metadata.
+-  **Exported field name:** The name of the metadata field that included when documents are exported.  A blank cell means the field isn't included with the exported metadata.
 
-- **Description:** A description of the meta data field.
+- **Description:** A description of the metadata field.
 
 |**Field name** and **Display field name**|**Searchable field name**|**Exported field name**|**Description**|
 |:-----|:-----|:-----|:-----|
