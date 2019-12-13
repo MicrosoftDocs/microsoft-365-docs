@@ -134,7 +134,7 @@ After a sensitivity label is created and published, it can take up to 24 hours f
 
 3. After this 24 hours wait, use one of the user accounts you specified in step 1 to create a team, Office 365 group, or SharePoint site with the label that you created in step 1.
 
-4. If there are no errors during the creation operation for step 3, publish the label for all users in your tenant. If there are errors, wait a further 24 hours and repeat steps 3 and 4. Contact Microsoft Support if the errors persist after this time.
+4. If there are no errors during the creation operation for step 3, publish the label for all users in your tenant. If there are errors, contact Microsoft Support.
 
 **Modifying and deleting published labels:**
 
@@ -146,7 +146,7 @@ If you modify or delete a sensitivity label that is included in one or more labe
 
 3. After the 48 hours wait, try creating a team, group, or site and confirm that the label is no longer visible.
 
-4. If the sensitivity label isn't visible, you can now safely modify or delete the label. If the label is still visible, wait a further 48 hours and repeat steps 3 and 4. Contact Microsoft Support if the label remains visible after this time.
+4. If the sensitivity label isn't visible, you can now safely modify or delete the label. If the label is still visible, contact Microsoft Support.
 
 ## Troubleshoot sensitivity label deployment
 
