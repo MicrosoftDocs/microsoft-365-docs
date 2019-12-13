@@ -29,6 +29,7 @@ You can use the Content Search eDiscovery tool in the compliance center in Offic
 - Skype for Business conversations
     
 - Microsoft Teams 
+
 - Yammer Groups 
 
 - Office 365 Groups
