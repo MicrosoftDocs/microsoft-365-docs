@@ -3,11 +3,11 @@ title: "Use sensitivity labels with Microsoft Teams, Office 365 groups, and Shar
 ms.author: krowley
 author: cabailey
 manager: laurawi
-ms.date: 12/12/2019
+ms.date: 12/13/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -315,6 +315,7 @@ To prepare the SharePoint Online Management Shell for the preview:
    $UserCredential = Get-Credential
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
    Import-PSSession $Session
+   $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
    ```
 
 6. For each group, add the new sensitivity label GUID.
