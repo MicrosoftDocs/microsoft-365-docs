@@ -81,7 +81,7 @@ Test multi-factor authentication only for the User 2 account.
 
 ## Phase 7: Enable Azure AD Identity Protection
 
-Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab Guide](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-enable-and-use-azure-ad-identity-protection). 
+Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab Guide](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
 
 ## Phase 8: Enable modern authentication for Exchange Online and Skype for Business Online
 

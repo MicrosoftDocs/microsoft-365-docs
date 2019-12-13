@@ -74,13 +74,14 @@ Next, you test password reset for the User 3 account.
 
 1. Open a new private browser instance and browse to [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
 2. Sign in with the User 3 account credentials.
-3. In **Don’t lose access to your account**, set the authentication phone to your mobile phone number and the authentication email to your work or personal email account.
-4. After both are verified, click **Looks good** and close the private instance of the browser.
-5. Open a new private browser instance and go to [https://aka.ms/sspr](https://aka.ms/sspr).
-6. Sign in with the User 2 account credentials, type the characters from the CAPTCHA, and then click **Next**.
-8. For **verification step 1**, click **Email my alternate email**, and then click **Email**. When you receive the email, type the verification code, and then click **Next**.
-9. In **Get back into your account**, type a new password for the User 2 account, and then click **Finish**. Note the changed password of the User 2 account and store it in a safe location.
-10. In a separate tab of the same browser, go to [https://portal.office.com](https://portal.office.com), and then sign in with the User 2 account name and its new password. You should see the **Microsoft Office Home** page.
+3. In **More information required**, click **Next**. 
+5. In **Don’t lose access to your account**, set the authentication phone to your mobile phone number and the authentication email to your work or personal email account.
+7. After both are verified, click **Looks good** and close the private instance of the browser.
+8. Open a new private browser instance and go to [https://aka.ms/sspr](https://aka.ms/sspr).
+9. Type the User 3 account name, type the characters from the CAPTCHA, and then click **Next**.
+10. For **verification step 1**, click **Email my alternate email**, and then click **Email**. When you receive the email, type the verification code, and then click **Next**.
+11. In **Get back into your account**, type a new password for the User 2 account, and then click **Finish**. Note the changed password of the User 2 account and store it in a safe location.
+12. In a separate tab of the same browser, go to [https://portal.office.com](https://portal.office.com), and then sign in with the User 2 account name and its new password. You should see the **Microsoft Office Home** page.
 
 See the [Simplify password resets](identity-secure-your-passwords.md#identity-pw-reset) step in the Identity phase for information and links to configure password resets in production.
 
