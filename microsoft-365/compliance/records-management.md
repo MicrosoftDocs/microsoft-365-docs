@@ -1,5 +1,5 @@
 ---
-title: "Records management in Microsoft 365"
+title: "Records management"
 ms.author: cabailey
 author: cabailey
 manager: laurawi

@@ -364,7 +364,7 @@ The existing employee should already be added to the appropriate workgroup, depa
 
 You can add a user account to multiple Azure AD groups in the Microsoft 365 admin center. From the properties of the user account, click **Manage groups > Add memberships**.
 
-If you want to use PowerShell, see this [downloadable Excel workbook](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/enterprise/media/Group-License-Mgmt-PowerShell.xlsx?raw=true), which generates the PowerShell commands based on a specified user account and selected group names.
+If you want to use PowerShell, see this [downloadable Excel workbook](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx), which generates the PowerShell commands based on a specified user account and selected group names.
 
 ### New employee with a cloud-only user account
 
