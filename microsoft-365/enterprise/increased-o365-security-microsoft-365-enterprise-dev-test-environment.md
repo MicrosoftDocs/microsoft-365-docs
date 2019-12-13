@@ -96,9 +96,9 @@ Take a close look at all the cards on the dashboard to familiarize yourself with
 For more information, see [Security Dashboard](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-dashboard).
 
 
-### Phase 4: Examine Microsoft Secure Score
+## Phase 4: Examine Microsoft Secure Score
 
-Microsoft Secure Score tells you your security posture with a numbered score that indicates your current level relative to the features that are available in your subscription. It also gives you a list of improvement actions you can take to improve your score.
+Microsoft Secure Score shows your security posture as a number, which indicates your current level relative to the features that are available in your subscription. It also gives you a list of improvement actions you can take to improve your score.
 
 1. Create a new tab in your browser and go to the [Microsoft 365 security center](https://security.microsoft.com/), and then click **Secure score**.
 2. On the **Overview**  tab, note your current Secure Score and how it compares with the global average and subscriptions with a similar number of licenses.
