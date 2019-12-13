@@ -3,11 +3,11 @@ title: "Use sensitivity labels with Microsoft Teams, Office 365 groups, and Shar
 ms.author: krowley
 author: cabailey
 manager: laurawi
-ms.date: 12/12/2019
+ms.date: 12/13/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
