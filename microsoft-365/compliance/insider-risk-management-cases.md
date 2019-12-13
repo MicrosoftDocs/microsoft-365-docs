@@ -88,7 +88,7 @@ The **User activity** tab is one of the most powerful tools for internal risk an
     - The **risk activity category**. For example, *Email(s) with attachments sent outside the organization* or *File(s) downloaded from SharePoint Online*.
     - **Risk score** for the alert. This score is the numerical score for the alert risk severity level.
     - Number of **files** or **emails** associated with the alert. Links to each file or email associated with the risk activity is also available.
-3. **Risk activity legend**: Across the bottom of the USer activity chart, a color-coded legend helps you quickly determine risk category for each alert.
+3. **Risk activity legend**: Across the bottom of the user activity chart, a color-coded legend helps you quickly determine risk category for each alert.
 4. **Risk activity chronology**: The full chronology of all risk alerts associated with the case are listed, including all the details available in the corresponding alert bubble.
 5. **Case actions**: Options for resolving the case are on the case action toolbar. You can resolve a case, send an email notice to the employee, or escalate the case for a data or employee investigation.
 6. **Case export**: You can export all alerts and alert details to a CSV for a case.
@@ -141,7 +141,7 @@ Risk analysts and investigators can take action on a case in one of several meth
 
 ### Send a notice
 
-In most cases, employee actions that create policy match alerts are inadvertent or accidental. Sending a reminder notice to the employee via email is an effective method for documenting case review and action, as well as a method to remind employees of corporate policies or point them to refresher training. Notices are generated from notice templates that you create for your insider risk management infrastructure.
+In most cases, employee actions that create policy match alerts are inadvertent or accidental. Sending a reminder notice to the employee via email is an effective method for documenting case review and action, as well as a method to remind employees of corporate policies or point them to refresher training. Notices are generated from [notice templates that you create](insider-risk-management-notices.md) for your insider risk management infrastructure.
 
 It's important to remember that sending a notice to an employee ***does not*** resolve the case as *Closed*. In some cases, you may want to leave a case open after sending a notice to monitor for additional risk activities by the same employee without opening a new case. If you want to resolve a case after sending a notice, you must select the **Resolve case** as a follow-on step after sending a notice.
 
