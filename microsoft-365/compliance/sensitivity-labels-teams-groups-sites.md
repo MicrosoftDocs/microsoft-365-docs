@@ -63,7 +63,7 @@ You must use the preview version of [Azure Active Directory PowerShell for Graph
 
 You're now ready to enable the preview of sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites:
 
-1. In a PowerShell session, sign in to Azure Active Directory as a global admin. For instructions, see [Connect to Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#connect-to-azure-ad).
+1. In a PowerShell session, using a work or school account that has global admin privileges, sign in to Azure Active Directory. For instructions, see [Connect to Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#connect-to-azure-ad).
 
 2. Run the following commands:
     
@@ -86,7 +86,7 @@ You're now ready to enable the preview of sensitivity labels with Microsoft Team
     > [!NOTE]
     > Office 365 no longer uses the old classifications for new groups and SharePoint sites when you enable this preview. If you used [Azure AD site classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($setting["ClassificationList"]), existing groups and sites still display the old classifications. To display the new classifications, convert them. For information about how to convert them, see [If you used classic Azure AD site classification](#if-you-used-classic-azure-ad-site-classification). 
 
-3. Now sign in to Security and Compliance Center Powershell as a global admin. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+3. Now sign in to Security and Compliance Center PowerShell using a work or school account that has global admin privileges. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 4. Run the following commands:
     
