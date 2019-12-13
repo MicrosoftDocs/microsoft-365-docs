@@ -97,7 +97,7 @@ You're now ready to enable the preview of sensitivity labels with Microsoft Team
     Import-PSSession $Session -DisableNameChecking
     Execute-AzureAdLabelSync
     ```
-## Creating, managing and publishing labels for Teams, Groups and Sharepoint
+## Creating, managing, and publishing labels for Teams, Office 365 groups, and SharePoint sites
 
 After you enable the preview, use the following steps to create or edit sensitivity labels. You must complete these steps for the new sensitivity labels to work with sites and groups, even if you already have labels defined. Changes to these settings might take up to 24 hours to synchronize.
 
@@ -114,15 +114,12 @@ After you enable the preview, use the following steps to create or edit sensitiv
     ![The site and group settings tab](media/edit-sensitivity-label-site-group.png)
 
 > [!IMPORTANT]
-> Only the site and group settings take effect when you apply a label to a team, group, or site. Other settings, such as encryption and content marking, aren't applied to all content within the team, group, or site. Similarly, if you create a label and don't turn on site and group settings, the label will still be available when users create teams, groups, and sites, but it won't do anything when users apply it.
-
-> [!IMPORTANT]
-> Only the site and group settings take effect when you apply a label to a team, group, or site. Other settings, such as encryption and content marking, aren't applied to all content within the team, group, or site. Similarly, if you create a label and don't turn on site and group settings, the label will still be available when users create teams, groups, and sites, but it won't do anything when users apply it.
+> Only the site and group settings take effect when you apply a label to a team, group, or site. Other settings, such as encryption and content marking, aren't applied to all content within the team, group, or site.
+> 
+> Similarly, if you create a label and don't turn on site and group settings, the label will still be available when users create teams, groups, and sites, but it will classify without applying any settings.
 
 >[!WARNING]
->Creating, updating and deleting sensitivity labels require careful sequencing with publishing
->labels to users. Any deviation in the sequence can result in persistent team, group or sharepoint
->site creation errors for all users. Therefore please note below:
+>Creating, updating, and deleting sensitivity labels require careful sequencing with publishing labels to users. Any deviation in the sequence can result in persistent team, group, or SharePoint site creation errors for all users. Therefore please note below:
 
 >**Creating and publishing labels**
 
