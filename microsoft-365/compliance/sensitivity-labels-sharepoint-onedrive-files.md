@@ -1,7 +1,7 @@
 ---
 title: "Enable sensitivity labels for Office files in SharePoint and OneDrive"
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
