@@ -126,7 +126,10 @@ After you enable the preview, use the following steps to create or edit sensitiv
 
 ## Sensitivity label management
 
-Creating, modifying, and deleting sensitivity labels that you use for Microsoft Teams, Office 365 groups, and SharePoint sites requires careful coordination with publishing label policies to users. Avoid creation errors for sites and groups that can affect all users by using the following guidance.
+> [!WARNING]
+> Creating, modifying, and deleting sensitivity labels that you use for Microsoft Teams, Office 365 groups, and SharePoint sites requires careful coordination with publishing label policies to users. 
+
+Avoid creation errors for sites and groups that can affect all users by using the following guidance.
 
 **Creating and publishing labels:**
 
@@ -164,11 +167,7 @@ If you experience creation errors during the public preview, you have two option
 
 - Ensure that sensitivity labels are not mandatory for any user.
 
-- You can turn off sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites by using the same instructions from the [Enable this preview](#enable-this-preview) section on this page. However, search for the line `$setting["EnableMIPLabels"] = "True"`, and change the **True** value to **False**:
-    
-    ```
-    $setting["EnableMIPLabels"] = "False"
-    ```
+- You can turn off sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites by using the same instructions from the [Enable this preview](#enable-this-preview) section on this page. However, to disable the preview, search for the line `$setting["EnableMIPLabels"] = "True"`, and change the **True** value to **False**.
 
 ## Apply a sensitivity label to a new team
 
