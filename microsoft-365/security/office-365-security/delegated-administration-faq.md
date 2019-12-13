@@ -22,11 +22,11 @@ A. If you are a Microsoft partner or reseller, and you've signed up to be a Micr
 
 1. Sign up to be a [Microsoft Office 365 Advisor](https://aka.ms/cloudbenefits).
 
-2. Sign up for Office 365 delegated administration. Before you can start administering a customer's account, they must authorize you as a delegated administrator. To obtain their approval, you first [send them an offer for delegated administration](https://go.microsoft.com/fwlink/?LinkId=396829). (You can also offer delegated administration to your customer at a later time.)
+2. Sign up for Office 365 delegated administration. Before you can start administering a customer's account, they must authorize you as a delegated administrator. To obtain their approval, you first [send them an offer for delegated administration](https://support.office.com/article/26530dc0-ebba-415b-86b1-b55bc06b073e). (You can also offer delegated administration to your customer at a later time.)
 
-3. Create the delegated admin account using the steps in [Add or delete a delegated admin](https://go.microsoft.com/fwlink/?LinkId=396831).
+3. Create the delegated admin account using the steps in [Add, change, or delete a subscription advisor partner](https://docs.microsoft.com/office365/admin/misc/add-partner).
 
-Visit [Partners: Build your business and administer your Office 365 partner account](https://go.microsoft.com/fwlink/?LinkId=301485) for more information about how to set up Office 365 delegated administration.
+Visit [Partners: Build your business and administer your Office 365 partner subscription](https://support.office.com/article/30dd1681-47e0-4cbc-abfe-a222cd111319) for more information about how to set up Office 365 delegated administration.
 
 **Q. I'm a customer, not a reseller, how can set up delegated administrator for my sub-tenants?**
 
@@ -38,4 +38,4 @@ A. Office 365 does not currently have this capability.
 
 **Q. Can I get consolidated reporting across all of my sub-tenants?**
 
-A. Consolidated reporting across the companies you manage is not available for the Microsoft 365 admin center reports at this time. However, you can do this by using remote Windows PowerShell or the [Office 365 Reporting web service](https://go.microsoft.com/fwlink/?LinkId=279926).
+A. Consolidated reporting across the companies you manage is not available for the Microsoft 365 admin center reports at this time. However, you can do this by using [Microsoft Graph](https://docs.microsoft.com/graph/overview).

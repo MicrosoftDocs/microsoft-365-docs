@@ -1,5 +1,5 @@
 ---
-title: "Archive third-party data in Office 365"
+title: "Archive third-party data"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,7 +16,7 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: "Administrators can import third-party data from  social media platforms, instant messaging platforms, and document collaboration platforms to mailboxes in your Office 365 organization. This lets you archive data from Facebook, Twitter, and other third-party data sources in Office 365. Then you can use and apply Office 365 compliance features (such as legal hold, eDiscovery, In-Place Archiving, and retention policies) for third-party data."
 ---
 
-# Archive third-party data in Office 365
+# Archive third-party data
 
 Office 365 lets administrators import and archive third-party data from social media platforms, instant messaging platforms, and document collaboration platforms, to mailboxes in your Office 365 organization. Examples of third-party data sources that you can import to Office 365 include the following services: 
   

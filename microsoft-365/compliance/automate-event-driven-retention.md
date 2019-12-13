@@ -1,7 +1,7 @@
 ---
 title: "Automate event-driven retention"
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -402,7 +402,7 @@ Step 2: Run the following script.
 
 Step 1: Go to the Security & Compliance Center.
 
-Step 2: Select **Events** under **Data Governance**.
+Step 2: Select **Events** under **Information governance**.
 
 Step 3: Verify Event has been created.
 

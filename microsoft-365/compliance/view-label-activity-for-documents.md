@@ -1,7 +1,7 @@
 ---
 title: "View label activity for documents"
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 5/9/2018
 audience: Admin
@@ -33,7 +33,7 @@ For example, with the Label Activity Explorer, you can:
     
 - View label activity for folders as well as individual documents. Coming soon is the ability to show how many files inside that folder got labeled as a result of the folder getting labeled.
     
-You can find the Label Activity Explorer in the Security &amp; Compliance Center > **Information governance** > **Label Activity Explorer**.
+You can find the Label Activity Explorer in the Security &amp; Compliance Center > **Information governance** > **Label activity explorer**.
   
 Note that the Label Activity Explorer requires an Office 365 Enterprise E5 subscription.
   

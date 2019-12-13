@@ -59,7 +59,7 @@ The first step is to enable the archive mailbox for each user in your organizati
 2. Sign in to Office 365 using your global administrator account.
     
     
-3. In the Security & Compliance Center, go to **Data governance** \> **Archive**.
+3. In the Security & Compliance Center, go to **Information governance** \> **Archive**.
     
     A list of the mailboxes in your organization is displayed and whether the corresponding archive mailbox is enabled or disabled. 
     

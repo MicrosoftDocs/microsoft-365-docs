@@ -27,9 +27,9 @@ This article is intended for Office 365 administrators. If you're not an adminis
 
  **Connection filtering**: When you use connection filtering, Office 365 checks the reputation of the sender before allowing a message to get through. You can create an allow list, or safe sender list, to make sure you receive every message sent to you from a specific IP address or IP address range. You can also create a list of IP addresses from which to block messages, called a block list. For more information, see [Configure the connection filter policy](configure-the-connection-filter-policy.md). If you're concerned about spam in Office 365, use connection filtering to help prevent spam.
 
-For customers who have Office 365 Enterprise E5 or have purchased Advanced Threat Protection (ATP) licenses, connection filtering is used by spoof intelligence to create allow and block lists of senders who are spoofing your domain. For more information, see [Learn more about spoof intelligence](https://go.microsoft.com/fwlink/?LinkID=735009).
+For customers who have Office 365 Enterprise E5 or have purchased Advanced Threat Protection (ATP) licenses, connection filtering is used by spoof intelligence to create allow and block lists of senders who are spoofing your domain. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
 
- **Spam filtering**: Office 365 checks for message characteristics consistent with spam by using spam filtering. You can change what actions to take on messages identified as spam, and choose whether to filter messages written in specific languages, or sent from specific countries or regions. You can also turn on advanced spam filtering options if you want to pursue an aggressive approach to spam filtering. Additionally, you can configure end-user spam notifications to inform users when messages intended for them were sent to the quarantine instead. (Sending messages to the quarantine is one of the configurable actions.) From these notifications, end users can release false positives and report them to Microsoft for analysis. For more information, see [Configure your spam filter policies](https://go.microsoft.com/fwlink/p/?LinkId=617147). In order to help prevent spam in Office 365, use spam filtering, if you're concerned about too much spam in Office 365, use connection filtering to help prevent spam.
+ **Spam filtering**: Office 365 checks for message characteristics consistent with spam by using spam filtering. You can change what actions to take on messages identified as spam, and choose whether to filter messages written in specific languages, or sent from specific countries or regions. You can also turn on advanced spam filtering options if you want to pursue an aggressive approach to spam filtering. Additionally, you can configure end-user spam notifications to inform users when messages intended for them were sent to the quarantine instead. (Sending messages to the quarantine is one of the configurable actions.) From these notifications, end users can release false positives and report them to Microsoft for analysis. For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md). In order to help prevent spam in Office 365, use spam filtering, if you're concerned about too much spam in Office 365, use connection filtering to help prevent spam.
 
 > [!NOTE]
 > For EOP standalone customers: By default, the EOP spam filters send spam-detected messages to each recipients' Junk Email folder. However, in order to ensure that the **Move message to Junk Email folder** action will work with on-premises mailboxes, you must configure two Exchange mail flow rules (also known as transport rules) on your on-premises servers to detect spam headers added by EOP. For details, see [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
@@ -40,7 +40,7 @@ The following video provides an overview of configuring spam filtering in EOP.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
 
-For more details, see the [Configure spam filter policies](https://go.microsoft.com/fwlink/p/?LinkId=617147) topic.
+For more details, see the [Configure your spam filter policies](configure-your-spam-filter-policies.md) topic.
 
 ## Check your outgoing messages to prevent spam in Office 365
 
@@ -60,11 +60,11 @@ For more details, see the [Configure spam filter policies](https://go.microsoft.
 
 If you're concerned about spam, phishing, and spoofing in Office 365, use SPF, DKIM, and DMARC together to help prevent spam and unwanted spoofing.
 
- **End-user managed settings**: If you're looking for information about how end users can manage their own spam settings, check out [Overview of the Junk Email Filter](https://go.microsoft.com/fwlink/?LinkId=270065) (for Microsoft Outlook users) or [Learn about Junk email and phishing](https://go.microsoft.com/fwlink/?LinkId=270068) (for Outlook on the web users). If you're using EOP to protect on-premises mailboxes, be sure to use directory synchronization to ensure that these settings are synced to the service. For more information about setting up directory synchronization, see "Use directory synchronization to manage mail users" in [Manage mail users in EOP](manage-mail-users-in-eop.md).
+ **End-user managed settings**: If you're looking for information about how end users can manage their own spam settings, check out [Overview of the Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) (for Microsoft Outlook users) or [Learn about junk email and phishing](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31) (for Outlook on the web users). If you're using EOP to protect on-premises mailboxes, be sure to use directory synchronization to ensure that these settings are synced to the service. For more information about setting up directory synchronization, see "Use directory synchronization to manage mail users" in [Manage mail users in EOP](manage-mail-users-in-eop.md).
 
 ## For more information
 
-[Blog: Why does spam and phishing get through Office 365?](https://go.microsoft.com/fwlink/?LinkId=528179 )
+[Blog: Why does spam and phishing get through Office 365?](https://blogs.msdn.microsoft.com/tzink/2014/09/12/why-does-spam-and-phishing-get-through-office-365-and-what-can-be-done-about-it/)
 
 [Anti-spam protection FAQ](anti-spam-protection-faq.md)
 
@@ -80,8 +80,8 @@ If you're concerned about spam, phishing, and spoofing in Office 365, use SPF, D
 
 ## More resources
 
-[Get help from the Office 365 community forums](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[Get help from the Office 365 community forums](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Admins: Sign in and create a service request](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[Admins: Sign in and create a service request](https://portal.office.com/AdminPortal/Home?ref=support)
 
-[Admins: Call Support](https://go.microsoft.com/fwlink/p/?LinkID=518322)
+[AContact support for business products - Admin Help](https://docs.microsoft.com/Office365/Admin/contact-support-for-business-products)
