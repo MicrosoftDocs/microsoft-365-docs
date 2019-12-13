@@ -97,7 +97,7 @@ You're now ready to enable the preview of sensitivity labels with Microsoft Team
     Import-PSSession $Session -DisableNameChecking
     Execute-AzureAdLabelSync
     ```
-## Creating, managing, and publishing labels for Teams, Office 365 groups, and SharePoint sites
+## Set site and group settings when you create or edit sensitivity labels
 
 After you enable the preview, use the following steps to create or edit sensitivity labels. You must complete these steps for the new sensitivity labels to work with sites and groups, even if you already have labels defined. Changes to these settings might take up to 24 hours to synchronize.
 
@@ -118,52 +118,53 @@ After you enable the preview, use the following steps to create or edit sensitiv
 > 
 > Similarly, if you create a label and don't turn on site and group settings, the label will still be available when users create teams, groups, and sites, but it will classify without applying any settings.
 
->[!WARNING]
->Creating, updating, and deleting sensitivity labels require careful sequencing with publishing labels to users. Any deviation in the sequence can result in persistent team, group, or SharePoint site creation errors for all users. Therefore please note below:
+[Learn more about publishing sensitivity labels](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
 
->**Creating and publishing labels**
+## Sensitivity label management
 
->Once a label is created and published in Security and Compliance center, it can take up to 24 hours
->for the label to become visible in teams, group or sharepoint creation interface. Please observe the
->below steps to publish the label for all users in the tenant:
->1. Create the label and publish it for a few select user accounts in the tenant.
->2. Once the label is published, please wait for 24 hours.
->3. After 24 hours, try to create a team, group or sharepoint site with the label using one of the 
->user accounts that have access to the label.
->4. If the creation operation is successful in step 3, then go ahead and publish the label for remaining 
->users in the tenant.
+Creating, modifying, and deleting sensitivity labels that you use for Microsoft Teams, Office 365 groups, and SharePoint sites requires careful coordination with publishing label policies to users. Avoid creation errors for sites and groups that affect all users by using the following guidance.
 
->[Learn more about publishing sensitivity labels](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
+**Creating and publishing labels:**
 
->**Modifying and deleting published labels**
+After a sensitivity label is created and published, it can take up to 24 hours for the label to become visible for users in teams, groups, and sites. Use the following steps to publish a label for all users in the tenant:
 
->Deleting or modifying the label while it is associated with sensitivity policies can result in team, 
->group or sharepoint site creation failures across the tenant. Therefore prior to deleting or modifying a label,
->one must first disassociate the label from its associated policies. Please observe the below steps in order 
->to delete or modify a label:
->1. Remove the label from all policies that are utilizing the label. Alternatively, you may also delete
->the policies themselves.
->2. Once the label is removed from the policies or the policies themselves are deleted, please wait for 
->48 hours before proceeding further.
->3. After 48 hours, launch any of team, group or sharepoint site creation interface and ensure that the
->label is no longer visible for any user in the tenant.
->4. Now you may safely delete or modify the label.
+1. Create the sensitivity label and publish it for just a few  user accounts in the tenant.
+
+2. Wait for 24 hours.
+
+3. After this 24 hours wait, use one of the user accounts you specified in step 1 to create a team, Office 365 group, or SharePoint site with the label that you created in step 1.
+
+4. If there are no errors during the creation operation for step 3, publish the label for all users in your tenant. If there are errors, wait a further 24 hours and repeat steps 3 and 4.
+
+**Modifying and deleting published labels:**
+
+If you modify or delete a sensitivity label that is included in one or more label policies, these actions can result in creation failures for all teams, groups, and sites. To avoid this situation, use the following guidance:
+
+1. Remove the sensitivity label from all label policies that include the label.
+
+2. Wait for 48 hours.
+
+3. After the 48 hours wait, try creating a team, group, or site and confirm that the label is no longer visible.
+
+4. If the sensitivity label isn't visible, you can now safely modify or delete the label. If the label is still visible, wait a further 48 hours and repeat steps 3 and 4.
 
 ## Troubleshoot sensitivity label deployment
 
 ### Labels not visible after publishing
-If you experience issues when you create a Teams or Office 365 group after you enable these settings or make a change to a sensitivity label's description, save the label, wait a few hours, and then try to create the Team or Office 365 group again. For information, see [Schedule roll-out after you create or change a sensitivity label](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
+If you experience issues when you create a team or Office 365 group after you enable these settings or modify a sensitivity label's description, save the label, wait a few hours, and then try to create the team or group again. For information, see [Schedule roll-out after you create or change a sensitivity label](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
 
-If you are still not able to see the new sensitivity label from SharePoint Online, then contact Microsoft Support immediately.
+If you are still not able to see the new sensitivity label from SharePoint Online, contact Microsoft Support.
 
-### Managing team, group and sharepoint site creation errors
-If create operations begin to fail at any point during the public preview then you have two options:
-* Ensure that sensitivity labels are not mandatory for any user.
-* You may turn off sensitivity labels using the scripts provided in the following link: [Enable this preview](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#enable-this-preview)
-Note that the EnableMIPLabels setting must be set to false as follows:
-```
-$setting["EnableMIPLabels"] = "False"
-```
+### Team, group, or SharePoint site creation errors
+If you experience creation errors during the public preview, you have two options:
+
+- Ensure that sensitivity labels are not mandatory for any user.
+
+- You can turn off sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites by using the same instructions from the [Enable this preview](#enable-this-preview) section on this page. However, search for the line `setting["EnableMIPLabels"] = "True"`, and change the **True** value to **False**:
+    
+    ```
+    $setting["EnableMIPLabels"] = "False"
+    ```
 
 ## Apply a sensitivity label to a new team
 
