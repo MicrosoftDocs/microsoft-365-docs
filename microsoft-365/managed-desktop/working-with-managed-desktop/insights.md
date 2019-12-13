@@ -35,4 +35,9 @@ Learn more about [usage insights](usage-insights.md).
 ## Reliability insights
 This view provides you with a health summary of your managed devices. To view reliability data, select the **Reliability** tab.
 
-Learn more about [reliability insights](reliability-insights.md)
+Learn more about [reliability insights](reliability-insights.md).
+
+## Battery insights
+This view shows you information about the energy consumption of apps and projected battery life for devices in your environment. To view this information, select the **Battery** tab.
+
+Learn more about [Battery insights](battery-insights.md).
