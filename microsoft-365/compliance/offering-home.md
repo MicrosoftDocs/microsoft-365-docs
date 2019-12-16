@@ -10,6 +10,7 @@ keywords: Microsoft, Microsoft 365, Compliance, Offering
 localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
+titleSuffix: Microsoft Compliance
 ---
 
 # Microsoft compliance offerings
