@@ -12,6 +12,7 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft GDPR
 ---
 
 # Accountability Readiness Checklist for Microsoft Office 365
