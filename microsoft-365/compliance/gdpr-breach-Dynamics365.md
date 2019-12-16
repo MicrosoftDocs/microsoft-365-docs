@@ -12,6 +12,7 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
+titleSuffix: Microsoft GDPR
 ---
 
 # Dynamics 365 and Breach Notification Under the GDPR

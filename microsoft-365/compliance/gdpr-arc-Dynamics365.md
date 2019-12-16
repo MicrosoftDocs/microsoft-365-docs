@@ -13,6 +13,7 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft GDPR
 ---
 
 # Dynamics 365 accountability readiness checklist for the GDPR
