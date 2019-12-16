@@ -1,5 +1,6 @@
 ---
-title: "Communication compliance in Microsoft 365 (preview)"
+title: "Communication compliance (preview)"
+description: "Learn about communication compliance in Microsoft 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,7 +16,6 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Learn about communication compliance in Microsoft 365"
 ---
 
 # Communication compliance in Microsoft 365 (preview)

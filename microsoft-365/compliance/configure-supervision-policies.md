@@ -1,5 +1,6 @@
 ---
-title: "Configure supervision policies for Office 365"
+title: "Configure supervision policies"
+description: "Configure communication supervision for Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,10 +16,10 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Configure communication supervision for Office 365"
+titleSuffix: Office 365 Compliance
 ---
 
-# Configure supervision policies for Office 365
+# Configure supervision policies in Office 365
 
 > [!IMPORTANT]
 > This topic applies to configuring supervision policies in an Office 365 subscription. If you want to configure communications compliance for a Microsoft 365 subscription, see [Configure communications compliance in Microsoft 365 (preview)](communication-compliance-configure.md).

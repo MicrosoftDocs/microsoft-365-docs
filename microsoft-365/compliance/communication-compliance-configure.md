@@ -1,5 +1,6 @@
 ---
-title: "Configure communication compliance for Microsoft 365 (preview)"
+title: "Configure communication compliance (preview)"
+description: "Set up communication compliance policies to configure employee communications for review."
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,10 +16,9 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Set up communication compliance policies to configure employee communications for review."
 ---
 
-# Configure communication compliance for Microsoft 365 (preview)
+# Configure communication compliance in Microsoft 365 (preview)
 
 > [!IMPORTANT]
 > This topic applies to configuring communication compliance in a Microsoft 365 subscription. If you want to configure Supervision policies for an Office 365 subscription, see [Configure supervision for Office 365](supervision-policies.md).

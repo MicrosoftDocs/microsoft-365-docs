@@ -1,5 +1,6 @@
 ---
 title: "Communication compliance feature reference (preview)"
+description: "Feature reference for communication compliance in Microsoft 365. Learn details and specifications for each of the feature components."
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,7 +16,6 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Feature reference for communication compliance in Microsoft 365. Learn details and specifications for each of the feature components."
 ---
 
 # Communication compliance feature reference (preview)
