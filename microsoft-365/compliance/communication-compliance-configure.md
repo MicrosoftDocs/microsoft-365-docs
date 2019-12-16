@@ -76,6 +76,9 @@ For more information about setting up groups, see:
 
 ## Step 2: Make communication compliance available in your organization (required)
 
+> [!Important]
+> By default, Global Administrators do not have access to communication compliance features. The roles assigned in this step are required before any communication compliance features will be accessible.
+
 To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the **Supervisory Review Administrator** role. Additionally, to investigate and remediate messages with policy matches, you must create a group for reviewers with the **Supervisory Review Administrator**, **Case Management**, and **Review** roles.
 
 ### Create a new role group
