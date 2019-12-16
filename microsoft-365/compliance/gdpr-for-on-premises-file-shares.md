@@ -1,5 +1,6 @@
 ---
 title: "GDPR for on-premises file shares"
+description: "Learn about how to address GDPR requirements in on-premises Windows Server file shares."
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,7 +8,7 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-description: "Learn about how to address GDPR requirements in on-premises Windows Server file shares."
+titleSuffix: Microsoft GDPR
 ---
 
 # GDPR for on-premises Windows Server file shares

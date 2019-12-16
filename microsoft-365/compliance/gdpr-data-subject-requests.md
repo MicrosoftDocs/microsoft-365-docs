@@ -12,6 +12,7 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
+titleSuffix: Microsoft GDPR
 ---
 
 # Data Subject Requests and the GDPR and CCPA
