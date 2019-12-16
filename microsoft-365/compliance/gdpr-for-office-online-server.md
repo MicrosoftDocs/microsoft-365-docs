@@ -1,5 +1,6 @@
 ---
 title: "GDPR for Office Online Server and Office Web Apps Server"
+description: "Learn about how to address GDPR requirements on-premises Exchange Server."
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,7 +8,7 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-description: "Learn about how to address GDPR requirements on-premises Exchange Server."
+titleSuffix: Microsoft GDPR
 ---
 
 # GDPR for Office Web Apps Server and Office Online Server

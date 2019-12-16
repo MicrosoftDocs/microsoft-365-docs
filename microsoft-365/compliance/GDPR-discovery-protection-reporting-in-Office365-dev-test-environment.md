@@ -1,5 +1,6 @@
 ---
 title: "GDPR discovery, protection, and reporting in the Office 365 dev/test environment"
+description: "Demonstrate GDPR capabilities in Office 365."
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -14,7 +15,7 @@ localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
-description: "Demonstrate GDPR capabilities in Office 365."
+titleSuffix: Microsoft GDPR
 ---
 
 # GDPR discovery, protection, and reporting in the Office 365 dev/test environment
