@@ -11,6 +11,7 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
 # Reserve Bank of India (RBI) and Insurance Regulatory and Development Authority of India (IRDAI)
