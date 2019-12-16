@@ -3,7 +3,7 @@ title: "Overview of sensitivity labels"
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 11/01/2019
+ms.date: 12/13/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -125,7 +125,7 @@ With a label policy, you can:
 
 - **Apply a default label** to all new documents and email created by the users and groups included in the label policy. This default label can set a base level of protection settings that you want applied to all your content.
 
-- **Require a justification for changing a label.** If content is marked Confidential and a user wants to remove that label or replace it with a lower classification, such as a label named Public, you can require that the user provide a justification when performing this action. These justifications will be available for the admin to review.
+- **Require a justification for changing a label.** If content is marked Confidential and a user wants to remove that label or replace it with a lower classification, such as a label named Public, you can require that the user provide a justification when performing this action. Currently, the justification reason isn't sent to [label analytics](label-analytics.md) for the admin to review. However, the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) sends this information to [Azure Information Protection analytics](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
     ![Prompt where users enter a justification](media/Sensitivity-label-justification-required.png)
 
