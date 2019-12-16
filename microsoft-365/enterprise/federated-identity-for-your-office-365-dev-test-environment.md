@@ -36,7 +36,7 @@ This configuration consists of:
     
 - A simplified organization intranet connected to the Internet, consisting of five virtual machines on a subnet of an Azure virtual network (DC1, APP1, CLIENT1, ADFS1, and PROXY1). Azure AD Connect runs on APP1 to synchronize the list of accounts in the Active Directory Domain Services domain to Office 365. PROXY1 receives the incoming authentication requests. ADFS1 validates credentials with DC1 and issues security tokens.
     
-There are five phases to setting up this dev/test environment:
+There are five phases to setting up this test environment:
   
 1. Create the simulated enterprise test environment with password hash synchronization.
     

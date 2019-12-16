@@ -1,7 +1,7 @@
 ---
 title: "Sensitivity labels in Office apps"
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 12/09/2019
 audience: Admin
