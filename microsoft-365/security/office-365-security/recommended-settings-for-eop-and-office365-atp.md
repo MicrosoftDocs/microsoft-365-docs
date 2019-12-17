@@ -146,8 +146,8 @@ EOP customers get basic anti-phishing as previously described, but Office 365 AT
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |Use ATP Safe Links in Office 365 Apps, Office for iOS and Android|Enabled|Enabled|This falls under the ATP Safe Links Policies that apply to the entire organization|
-Do not track when users click safe links|Disabled|Disabled|This falls under the ATP Safe Links Policies that apply to the entire organization|
-|Do not let users click through safe links to original URL|Enabled|Enabled|This falls under the ATP Safe Links Policies that apply to the entire organization|
+Do not track when users click safe links|Disabled|Disabled|This is for both the policies that apply to the entire organization and any policies that apply to specific recipients|
+|Do not let users click through safe links to original URL|Enabled|Enabled|This is for both the policies that apply to the entire organization and any policies that apply to specific recipients|
 |Action for unknown potentially malicious URLs in messages|On|On||
 |Apply real-time URL scanning for suspicious links and links that point to files|Enabled|Enabled||
 |Wait for URL scanning to complete before delivering the message|Enabled|Enabled||
