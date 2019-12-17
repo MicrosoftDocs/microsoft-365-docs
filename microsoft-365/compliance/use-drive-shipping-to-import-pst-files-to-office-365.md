@@ -19,7 +19,7 @@ description: "For administrators: Learn how to bulk-import your organization's P
 "
 ---
 
-# Use drive shipping to import your organization PST files to Office 365
+# Use drive shipping to import your organization's PST files to Office 365
 
 **This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
