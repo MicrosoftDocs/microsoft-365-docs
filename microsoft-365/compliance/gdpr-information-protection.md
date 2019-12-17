@@ -13,6 +13,7 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
+titleSuffix: Microsoft GDPR
 ---
 
 # Information protection for GDPR with Microsoft 365 capabilities
