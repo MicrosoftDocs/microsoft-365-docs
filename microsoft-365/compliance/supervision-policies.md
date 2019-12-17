@@ -1,5 +1,6 @@
 ---
-title: "Supervision policies in Office 365"
+title: "Supervision policies"
+description: "Learn about supervision policies in Office 365"
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,7 +16,7 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Learn about supervision policies in Office 365"
+titleSuffix: Office 365 Compliance
 ---
 
 # Supervision policies in Office 365

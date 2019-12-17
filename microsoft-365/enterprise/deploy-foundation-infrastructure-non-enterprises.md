@@ -60,7 +60,7 @@ Each employee of your organization must be able to sign in, which requires a use
 
 Protect your global administrator user accounts by requiring strong passwords and multi-factor authentication (MFA). See [Protect global administrator accounts](identity-create-protect-global-admins.md#protect-global-administrator-accounts) for more information.
 
-If your organization requires high security and you have Microsoft 365 Enterprise E5, use Azure AD Privileged Identity Management to enable just-in-time administrator access. See [Set up on-demand global administrators](identity-create-protect-global-admins.md#identity-pim) for more information.
+If your organization requires high security and you have Microsoft 365 E5, use Azure AD Privileged Identity Management to enable just-in-time administrator access. See [Set up on-demand global administrators](identity-create-protect-global-admins.md#identity-pim) for more information.
 
 ### Recommendations for groups
 
@@ -107,15 +107,15 @@ Here is the list of Azure AD Conditional Access policies to enable or create.
 |:------|:-----|
 | Baseline policy: Require MFA for admins | This policy applies to admin roles, so no groups need to be specified. This policy just needs to be enabled. All subsequent policies need to be created and enabled. |
 | Block clients that don't support modern authentication | Select “All users” in the policy settings. |
-| Require MFA when sign-in risk is medium or high (requires Microsoft 365 Enterprise E5) | BASELINE |
-| Require MFA when sign-in risk is low, medium, or high (requires Microsoft 365 Enterprise E5) | SENSITIVE |
+| Require MFA when sign-in risk is medium or high (requires Microsoft 365 E5) | BASELINE |
+| Require MFA when sign-in risk is low, medium, or high (requires Microsoft 365 E5) | SENSITIVE |
 | Always require MFA | HIGHLY-REGULATED |
 | Require approved apps on iOS and Android devices | BASELINE, SENSITIVE, HIGHLY-REGULATED |
 | Require compliant PCs | BASELINE |
 | Require compliant PCs and iOS and Android devices | SENSITIVE, HIGHLY-REGULATED |
 |||
 
-Here is the Azure AD Identity Protection (requires Microsoft 365 Enterprise E5) user risk policy to create and enable.
+Here is the Azure AD Identity Protection (requires Microsoft 365 E5) user risk policy to create and enable.
 
 | Azure AD Identity Protection user risk policy | Groups to which it applies |
 |:------|:-----|
@@ -139,7 +139,7 @@ If you are using group-based licensing, create a group named LICENSED to contain
 
 ### Monitor user access
 
-If you have Microsoft 365 Enterprise E5, you can use Azure AD Identity Protection to monitor and analyze user sign-ins for credential compromise. See [Protect against credential compromise](identity-secure-user-sign-ins.md#protect-against-credential-compromise) for more information.
+If you have Microsoft 365 E5, you can use Azure AD Identity Protection to monitor and analyze user sign-ins for credential compromise. See [Protect against credential compromise](identity-secure-user-sign-ins.md#protect-against-credential-compromise) for more information.
 
 ### Your configuration so far
 

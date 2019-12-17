@@ -66,7 +66,7 @@ Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsof
 
 To create the new access groups for the ProjectX SharePoint Online team site, run these commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:
 
-```
+```powershell
 $groupName="ProjectX-Members"
 $groupDesc="People allowed to collaborate for ProjectX."
 New-MsolGroup -DisplayName $groupName -Description $groupDesc
@@ -80,7 +80,7 @@ New-MsolGroup -DisplayName $groupName -Description $groupDesc
 
 Fill in your organization name (example: contosotoycompany), the two-character country code for your location, and then run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:
 
-```
+```powershell
 $orgName="<organization name>"
 $loc="<two-character country code, such as US>"
 $licAssignment= $orgName + ":ENTERPRISEPREMIUM"
@@ -92,7 +92,7 @@ From the display of the **New-MsolUser** command, note the generated password fo
 
 Run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:
 
-```
+```powershell
 $userName= "researcher@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "Lead Researcher" -FirstName Lead -LastName Researcher -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment -ForceChangePassword $false
 ```
@@ -101,7 +101,7 @@ From the display of the **New-MsolUser** command, note the generated password fo
 
 Run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:
 
-```
+```powershell
 $userName= "devvp@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "Development VP" -FirstName Development -LastName VP -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment -ForceChangePassword $false
 ```
@@ -110,7 +110,7 @@ From the display of the **New-MsolUser** command, note the generated password fo
 
 Next, to add the new accounts to the new access groups, run these PowerShell commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:
 
-```
+```powershell
 $grpName="ProjectX-Members"
 $userUPN="designer@" + $orgName + ".onmicrosoft.com"
 Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $grpName }).ObjectID -GroupMemberObjectId (Get-MsolUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -GroupMemberType "User"
