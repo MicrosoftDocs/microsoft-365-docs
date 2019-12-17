@@ -1,5 +1,5 @@
 ---
-title: "Use drive shipping to import your organization PST files to Office 365"
+title: "Use drive shipping to import your organization's PST files"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
