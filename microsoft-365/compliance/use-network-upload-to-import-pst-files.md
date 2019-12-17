@@ -58,7 +58,7 @@ You have to perform Step 1 only once to import PST files to Office 365 mailboxes
     
 - You need to store the PST files that you want to import to Office 365 on a file server or shared folder in your organization. In Step 2, you run the Azure AzCopy tool that uploads the PST files that are stored on a file server or shared folder to Office 365.
     
-- Very large PST files impact will impact the performance of the import job that you create in Step 5. Therefore, we we recommend that each PST file the you upload to the Azure Storage location in Step 5 should be no larger than 20 GB.
+- Large PST files may impact the performance of the PST import process. So we recommend that each PST file you upload to the Azure Storage location in Step 2 should be no larger than 20 GB.
 
 - This procedure involves copying and saving a copy of a URL that contains an access key. This information will be used in Step 2 to upload your PST files, and in Step 3 if you want to view a list of the PST files uploaded to Office 365. Be sure to take precautions to protect this URL like you would protect passwords or other security-related information. For example, you might save it to a password-protected Microsoft Word document or to an encrypted USB drive. See the [More information](#more-information) section for an example of this combined URL and key. 
     
@@ -117,7 +117,10 @@ The first step is to download and install the Azure AzCopy tool, which is the to
 ## Step 2: Upload your PST files to Office 365
 
 Now you're ready to use the AzCopy.exe tool to upload PST files to Office 365. This tool uploads and stores them in an Azure Storage location in the Microsoft cloud. As previously explained, the Azure Storage location that you upload your PST files to resides in the same regional Microsoft datacenter where your Office 365 organization is located. To complete this step, the PST files have to be located in a file share or file server in your organization. This is known as the source directory in this procedure. Each time you run the AzCopy tool, you can specify a different source directory. 
-  
+
+> [!NOTE]
+> As previously stated, each PST file that you upload to the Azure Storage location should be no larger than 20 GB. PST files larger than 20 GB may impact the performance of the PST import process that you start in Step 6.
+
 1. Open a Command Prompt on your local computer.
     
 2. Go to the directory where you installed the AzCopy.exe tool in Step 1. If you installed the tool in the default location, go to `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy`.
