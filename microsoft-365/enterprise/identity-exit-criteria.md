@@ -116,7 +116,7 @@ If needed, [Step 3](identity-secure-user-sign-ins.md#identity-mfa) can help you 
 5.	Delete the test user account.
 
 <a name="crit-identity-ident-prot"></a>
-## Optional: Azure AD Identity Protection is enabled to protect against credential compromise (Microsoft 365 Enterprise E5 only)
+## Optional: Azure AD Identity Protection is enabled to protect against credential compromise (Microsoft 365 E5 only)
 
 You've enabled Azure AD Identity Protection to:
 
