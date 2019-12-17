@@ -3,7 +3,7 @@ title: "Overview of importing your organization PST files to Office 365"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 
 audience: Admin
 ms.topic: overview
 f1_keywords:
