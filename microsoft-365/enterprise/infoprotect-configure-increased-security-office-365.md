@@ -38,7 +38,7 @@ An additional security feature is [Office 365 Advanced Threat Protection (ATP)](
 - Protecting [links](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links) and [attachments](https://docs.microsoft.com/office365/securitycompliance/atp-safe-attachments) in email. 
 - Providing spoof intelligence and anti-phishing capabilities for email in Exchange Online and [files in SharePoint Online, OneDrive for Business, and Microsoft Teams](https://docs.microsoft.com/office365/securitycompliance/atp-for-spo-odb-and-teams). 
 
-Office 365 ATP is only available with Microsoft 365 Enterprise E5.
+Office 365 ATP is only available with Microsoft 365 E5.
 
 |||
 |:-------|:-----|
