@@ -113,8 +113,8 @@ There are three ways to deploy the products, features, and components of Microso
 
 For more deployment information, see how:
 
-- [Customers](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-enterprise)  use Microsoft 365 for enterprise.
-- [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise) uses Microsoft 365 for enterprise.
+- [Customers](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-for-enterprise)  use Microsoft 365 for enterprise.
+- [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-for-enterprise) uses Microsoft 365 for enterprise.
 - [The Contoso Corporation](contoso-overview.md), a fictional but representative multinational organization, has deployed Microsoft 365 for enterprise.
 
 ## Additional Microsoft 365 solutions

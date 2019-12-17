@@ -31,7 +31,7 @@ There are three main ways to deploy Microsoft 365 for enterprise:
 
 - Do it with Microsoft engineers using [FastTrack for Microsoft 365](#fasttrack-for-microsoft-365).
 - Do it with help from Microsoft Consulting Services or a [Microsoft partner](https://partner.microsoft.com/).
-- Do it yourself with the [Microsoft 365 for enterprise deployment guide](#microsoft-365-enterprise-deployment-guide).
+- Do it yourself with the [Microsoft 365 for enterprise deployment guide](#microsoft-365-for-enterprise-deployment-guide).
 
 ## FastTrack for Microsoft 365
 
