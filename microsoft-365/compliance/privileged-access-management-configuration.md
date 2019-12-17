@@ -30,7 +30,7 @@ Follow these steps to set up and use privileged access in your Office 365 organi
 
 - [Step 1: Create an approver's group](privileged-access-management-configuration.md#step1)
 
-    Before you start using privilege access, determine who needs approval authority for incoming requests for access to elevated and privileged tasks. Any user who is part of the Approvers’ group is able to approve access requests. This is enabled by creating a mail-enabled security group in Office 365.
+    Before you start using privilege access, determine who needs approval authority for incoming requests for access to elevated and privileged tasks. Any user who is part of the Approvers’ group is able to approve access requests. This group is enabled by creating a mail-enabled security group in Office 365.
 
 - [Step 2: Enable privileged access](privileged-access-management-configuration.md#step2)
 
@@ -73,9 +73,9 @@ After approval is granted, the requesting user can execute the intended task and
 
 1. Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using credentials for an admin account in your organization.
 
-2. In the Admin Center, go to **Settings > Security & Privacy** > **Privileged access**.
+2. In the Admin Center, go to **Settings > Settings > Security & Privacy** > **Privileged access**.
 
-3. Enable the **Require approvals for privileged access** control.
+3. Enable the **Require approvals for privileged tasks** control.
 
 4. Assign the approver's group you created in Step 1 as the **Default approvers group**.
 
