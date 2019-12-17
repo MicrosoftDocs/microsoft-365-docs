@@ -23,7 +23,7 @@ description: You can make user sign-ins to Windows devices and to Microsoft 365 
 <a name="identity-windows-hello"></a>
 ## Use Windows Hello for Business
 
-*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365*
 
 Windows Hello for Business in Windows 10 Enterprise replaces passwords with strong two-factor authentication when signing on a Windows device. The two factors are a new type of user credential that is tied to a device and a biometric or PIN.
 
@@ -33,7 +33,7 @@ For more information, see [Windows Hello for Business Overview](https://docs.mic
 <a name="identity-mfa"></a>
 ## Set up Azure Multi-Factor Authentication
 
-*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365*
 
 In this step, you'll set up Azure Multi-Factor Authentication (MFA) to add a second layer of security to user sign-ins and transactions. MFA requires an additional verification method after users have correctly entered their password. Without MFA, the password is the only verification method. The problem with passwords is that many of them are easily guessed by an attacker or unknowingly shared with untrusted parties.
 
