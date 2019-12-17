@@ -18,7 +18,7 @@ ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: "For administrators: Learn how to use network upload to bulk-import multiple PST files to user mailboxes in Office 365."
 ---
 
-# Use network upload to import your organization PST files to Office 365
+# Use network upload to import your organization's PST files to Office 365
 
 > [!NOTE]
 > This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)
