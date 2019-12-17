@@ -1,4 +1,4 @@
-Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) for additional recommendations on identity infrastructure.
+Also see [Prerequisites](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites) for additional recommendations on identity infrastructure.
 
 <a name="crit-identity-global-admin"></a>
 ### Required: Your global administrator accounts are protected 

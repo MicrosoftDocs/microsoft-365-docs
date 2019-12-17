@@ -21,7 +21,7 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 Make sure your identity infrastructure meets the following required criteria and that you've considered those that are optional.
 
-Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) for additional recommendations on identity infrastructure.
+Also see [Prerequisites](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites) for additional recommendations on identity infrastructure.
 
 <a name="crit-identity-global-admin"></a>
 ## Required: Your global administrator accounts are protected 
