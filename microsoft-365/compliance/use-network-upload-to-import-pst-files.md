@@ -56,8 +56,10 @@ You have to perform Step 1 only once to import PST files to Office 365 mailboxes
   
 - The only supported method for importing PST files to Office 365 is to use the Azure AzCopy tool, as described in this topic. You can't use the Azure Storage Explorer to upload PST files directly to the Azure Storage area.
     
-- You need to store the PST files that you want to import to Office 365 on a file server or shared folder in your organization. In Step 2, you run the Azure AzCopy tool that uploads the PST files that are stored on this file server or shared folder to Office 365.
+- You need to store the PST files that you want to import to Office 365 on a file server or shared folder in your organization. In Step 2, you run the Azure AzCopy tool that uploads the PST files that are stored on a file server or shared folder to Office 365.
     
+- Very large PST files impact will impact the performance of the import job that you create in Step 5. Therefore, we we recommend that each PST file the you upload to the Azure Storage location in Step 5 should be no larger than 20 GB.
+
 - This procedure involves copying and saving a copy of a URL that contains an access key. This information will be used in Step 2 to upload your PST files, and in Step 3 if you want to view a list of the PST files uploaded to Office 365. Be sure to take precautions to protect this URL like you would protect passwords or other security-related information. For example, you might save it to a password-protected Microsoft Word document or to an encrypted USB drive. See the [More information](#more-information) section for an example of this combined URL and key. 
     
 - You can import PST files to an inactive mailbox in Office 365. You do this by specifying the GUID of the inactive mailbox in the  `Mailbox` parameter in the PST Import mapping file. See Step 4 on the **Instructions** tab in this topic for information. 
@@ -70,7 +72,7 @@ You have to perform Step 1 only once to import PST files to Office 365 mailboxes
     
     See [Step 4](#step-4-create-the-pst-import-mapping-file) for more information. 
     
-- After PST files are imported to an Office 365 mailbox, the retention hold setting for the mailbox is turned on for an indefinite duration. This means that the retention policy assigned to the mailbox won't be processed until you turn off the retention hold or set a date to turn off the hold. Why do we do this? If messages imported to a mailbox are old, they might be permanently deleted (purged) because their retention period has expired based on the retention settings configured for the mailbox. Placing the mailbox on retention hold gives the mailbox owner time to manage these newly imported messages or give you time to change the retention settings for the mailbox. See the **More info** tab in this topic for suggestions about managing the retention hold. 
+- After PST files are imported to an Office 365 mailbox, the retention hold setting for the mailbox is turned on for an indefinite duration. This means that the retention policy assigned to the mailbox won't be processed until you turn off the retention hold or set a date to turn off the hold. Why do we do this? If messages imported to a mailbox are old, they might be permanently deleted (purged) because their retention period has expired based on the retention settings configured for the mailbox. Placing the mailbox on retention hold gives the mailbox owner time to manage these newly imported messages or give you time to change the retention settings for the mailbox. See the [More information](#more-information) section in this topic for suggestions about managing the retention hold. 
     
 - By default, the maximum message size that can be received by an Office 365 mailbox is 35 MB. That's because the default value for the  *MaxReceiveSize*  property for a mailbox is set to 35 MB. However, the limit for the maximum message receive size in Office 365 is 150 MB. So if you import a PST file that contains an item larger than 35 MB, the Office 365 Import service we will automatically change the value of the  *MaxReceiveSize*  property on the target mailbox to 150 MB. This allows messages up to 150 MB to be imported to user mailboxes. 
     
@@ -124,7 +126,6 @@ Now you're ready to use the AzCopy.exe tool to upload PST files to Office 365. T
 
     ```powershell
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
-  
     ```
 
     > [!IMPORTANT] 
