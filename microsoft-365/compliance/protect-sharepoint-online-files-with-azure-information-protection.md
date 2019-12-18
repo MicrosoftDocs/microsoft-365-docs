@@ -23,7 +23,7 @@ description: "Summary: Apply Azure Information Protection to protect files in a 
 # Protect SharePoint Online files with Azure Information Protection
 
 >[!Note]
->The current solution for files in a highly confidential SharePoint Online team site uses Office 365 sensitivity labels. Please see [this article](protect-sharepoint-online-files-with-sensitivity-label) for the details.
+>The current solution for files in a highly confidential SharePoint Online team site uses Office 365 sensitivity labels. Please see [this article](protect-sharepoint-online-files-with-sensitivity-label.md) for the details.
 >
 
 Use the steps in this article to configure Azure Information Protection to provide encryption and permissions for files. These files can be added to a SharePoint library configured for highly confidential protection. Or, you can open a file directly from the site and use the Azure Information Protection client to add encryption. The encryption and permissions protection travels with a file even when it is downloaded from the site. 
