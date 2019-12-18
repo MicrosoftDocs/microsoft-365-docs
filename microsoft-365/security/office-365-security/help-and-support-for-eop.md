@@ -18,17 +18,17 @@ The technical support resources listed here will help you find answers if you ar
 
 ## Self-support options
 
-Upon logging in, the Office 365 portal provides information about the status of your organization's services. Also, the service health section of Office 365 shows the current status of your services, details about disruptions and outages, and lists planned maintenance times. The Office 365 portal also provides information about known issues and expected resolutions. If you're affected by a service-wide event, then you should see a communication alert (typically accompanied by a bell icon). We recommend that you read and act on any items as appropriate. For more information about the service health area of Office 365, see [Service Health](https://go.microsoft.com/fwlink/?LinkId=394289). You might be able to find more help on your own by using the tools, forums and community sites listed here.
+Upon logging in, the Office 365 portal provides information about the status of your organization's services. Also, the service health section of Office 365 shows the current status of your services, details about disruptions and outages, and lists planned maintenance times. The Office 365 portal also provides information about known issues and expected resolutions. If you're affected by a service-wide event, then you should see a communication alert (typically accompanied by a bell icon). We recommend that you read and act on any items as appropriate. For more information about the service health area of Office 365, see [Service health and continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). You might be able to find more help on your own by using the tools, forums and community sites listed here.
 
-[Product Overview for Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=279912)
+[Product Overview for Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Office 365 and Exchange Online support](https://go.microsoft.com/fwlink/?LinkId=299655)
+[Contact support for business products - Admin Help](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
 
-[Office 365 community](https://go.microsoft.com/fwlink/?LinkId=299656)
+[Office 365 community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Office 365 Do It Yourself (DIY) Troubleshooter](https://go.microsoft.com/fwlink/?LinkId=299657)
+[Microsoft Support and Recovery Assistant (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
 
-[Office 365 Mail Flow Guided Walkthrough](https://go.microsoft.com/fwlink/?LinkId=323470)
+[Mail flow troubleshooter](https://aka.ms/FixEmail)
 
 ## Assisted support from Microsoft
 
@@ -38,7 +38,7 @@ You can get help from Microsoft by starting a new service request within the Mic
 
 If you are an EOP customer and also have a Microsoft Premier Support contract, you can get support through the normal Microsoft Premier Support channels. This allows you to receive access to all processes and resources available to Premier Support customers, such as a Premier Technical Account Manager (TAM) and case submission. Premier Support for Microsoft Online Services extends the Premier Support framework beyond on-premises products to online services, providing you with a unified support experience across all products and services. This service helps ensure that customers can resolve issues quickly and simplifies the task of managing support for different components of an IT infrastructure.
 
-For more information about how Premier Support can help your organization maximize value from your IT investments, see [Microsoft Premier Support](https://go.microsoft.com/fwlink/?LinkId=317437).
+For more information about how Premier Support can help your organization maximize value from your IT investments, see [Premier Support for Partners](https://partner.microsoft.com/support/microsoft-services-premier-support).
 
 ### Ask for help on the web
 

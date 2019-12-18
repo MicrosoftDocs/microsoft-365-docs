@@ -1,7 +1,7 @@
 ---
-title: "Records management in Microsoft 365"
-ms.author: laurawi
-author: laurawi
+title: "Records management"
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin

@@ -1,7 +1,7 @@
 ---
 title: "Restrict access to content by using encryption in sensitivity labels"
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article

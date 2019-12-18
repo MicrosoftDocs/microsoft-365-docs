@@ -1,7 +1,7 @@
 ---
-title: NetworkCommunicationEvents table in the advanced hunting schema 
-description: Learn about network connection events you can query from the NetworkCommunicationEvents table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, networkcommunicationevents, network connection, remote ip, local ip
+title: DeviceNetworkEvents table in the advanced hunting schema 
+description: Learn about network connection events you can query from the DeviceNetworkEvents table of the advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, devicenetworkevents, NetworkCommunicationEvents, network connection, remote ip, local ip
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,22 +17,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# NetworkCommunicationEvents
+# DeviceNetworkEvents
 
 **Applies to:**
 - Microsoft Threat Protection
 
 [!include[Prerelease information](prerelease.md)]
 
-The `NetworkCommunicationEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about network connections and related events. Use this reference to construct queries that return information from this table.
+The `DeviceNetworkEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about network connections and related events. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `EventTime` | datetime | Date and time when the event was recorded |
-| `MachineId` | string | Unique identifier for the machine in the service |
-| `ComputerName` | string | Fully qualified domain name (FQDN) of the machine |
+| `Timestamp` | datetime | Date and time when the event was recorded |
+| `DeviceId` | string | Unique identifier for the machine in the service |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
 | `ActionType` | string | Type of activity that triggered the event |
 | `RemoteIP` | string | IP address that was being connected to |
 | `RemotePort` | int | TCP port on the remote device that was being connected to |
@@ -57,7 +57,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessAccountSid` | string | Security Identifier (SID) of the account that ran the process responsible for the event |
 | `InitiatingProcessIntegrityLevel` | string | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources |
 | `InitiatingProcessTokenElevation` | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
-| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns |
+| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 
 ## Related topics

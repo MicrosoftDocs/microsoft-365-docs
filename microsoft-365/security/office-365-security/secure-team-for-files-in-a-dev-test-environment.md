@@ -82,7 +82,7 @@ Next, you [Connect with the Azure Active Directory PowerShell for Graph module
   
 Fill in your organization name, your location, and a common password, and then run these commands from the PowerShell command prompt or Integrated Script Environment (ISE) to create user accounts and add them to their groups:
   
-```
+```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
 $commonPassword="<common password for all the new accounts>"
@@ -163,7 +163,7 @@ In this phase, you create and configure sensitive and highly confidential teams 
 
 To create a sensitive-level team for members of the marketing group to collaborate on ongoing marketing campaigns:
 
-1. [Create a new private team](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b) with the name **Marketing Campaigns**.
+1. [Create a new private team](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) with the name **Marketing Campaigns**.
 2. Open the **Marketing Campaigns** team.
 3.	In the tool bar for the team, click **Files**.
 4.	Click the ellipsis, and then click **Open in SharePoint**.
@@ -228,7 +228,7 @@ Here is the resulting configuration for the Marketing Campaigns team.
 
 To create a highly confidential-level team for members of the senior leadership team to collaborate on company strategy:
 
-1. [Create a new private team](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b) with the name **Company Strategy**.
+1. [Create a new private team](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) with the name **Company Strategy**.
 2. Open the **Company Strategy** team.
 3.	In the tool bar for the team, click **Files**.
 4.	Click the ellipsis, and then click **Open in SharePoint**.

@@ -1,8 +1,8 @@
-- name: Microsoft 365 Enterprise documentation and resources
+- name: Microsoft 365 for enterprise documentation and resources
   href: index.yml
-- name: Microsoft 365 Enterprise overview
+- name: Microsoft 365 for enterprise overview
   href: microsoft-365-overview.md
-- name: Deploy Microsoft 365 Enterprise
+- name: Deploy Microsoft 365 for enterprise
   href: deploy-microsoft-365-enterprise.md
   items: 
     - name: Deploy foundation infrastructure
@@ -186,7 +186,7 @@
           href: contoso-team-for-top-secret-project.md
         - name: SharePoint site for highly regulated data
           href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Changes to Microsoft 365 Enterprise deployment content
+    - name: Changes to Microsoft 365 for enterprise deployment content
       href: microsoft-365-deploment-guide-changes.md
 - name: Desktop Deployment Center
   href: desktop-deployment-center-home.md
