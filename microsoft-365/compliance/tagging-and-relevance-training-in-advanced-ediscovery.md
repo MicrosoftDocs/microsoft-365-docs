@@ -3,6 +3,7 @@ title: "Tagging and Relevance training in Office 365 Advanced eDiscovery"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 09/14/2017
 audience: Admin
 ms.topic: article
@@ -38,11 +39,9 @@ After Assessment is completed in Advanced eDiscovery, and you enter the Relevanc
     Icons indicating the existence of comments, tags, and family files are displayed in the file view in a bar above the file.
     
 2. Determine the file's relevance for the case issue and tag the file using either the Tagging option icon buttons or keyboard shortcuts, as shown in the following table:
-    
-|
-|
+
 |**Tagging option**|**Description**|**Keyboard shortcut**|**For multiple issues - bulk tag keyboard shortcut**|
-|:-----|:-----|:-----|:-----|
+|-----|-----|-----|-----|
 |R  <br/> |Relevant  <br/> |Z  <br/> |Shift + Z  <br/> |
 |NR  <br/> |Not relevant  <br/> |X  <br/> |Shift + X  <br/> |
 |Skip  <br/> |Skip  <br/> |C  <br/> |Shift + A  <br/> |

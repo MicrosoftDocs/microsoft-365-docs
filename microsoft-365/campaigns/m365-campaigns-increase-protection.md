@@ -26,9 +26,9 @@ description: "Get help with increasing the level of protection in Microsoft 365 
 
 This article helps you increase the protection in your Microsoft 365 subscription to protect against phishing, malware, and other threats. These recommendations are appropriate for organizations with an increased need for security, like political campaigns, law offices, and health care clinics. 
 
-Before you begin, check your Office 365 Secure Score. Office 365 Secure Score analyzes your Office 365 organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Taking the actions recommended in this article increases your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. 
+Before you begin, check your Office 365 Secure Score. Office 365 Secure Score analyzes your Office 365 organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Taking the actions recommended in this article increases your score. The goal isn't to achieve the max score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users. 
 
-For more information, see [Microsoft Secure Score](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-secure-score).
+For more information, see [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
 
 ## Raise the level of protection against malware in mail
@@ -54,11 +54,11 @@ For more information, see [Anti-malware protection](https://go.microsoft.com/fwl
 
 ## Protect against ransomware
 
-Ransomware restricts access to data by encrypting files or locking computer screens. It then attempts to extort money from victims by asking for "ransom," usually in form of cryptocurrencies like Bitcoin, in exchange for access to data. 
+Ransomware restricts access to data by encrypting files or locking computer screens. It then attempts to extort money from victims by asking for "ransom," usually in the form of cryptocurrencies like Bitcoin, in exchange for access to data. 
   
 You can protect against ransomware by creating one or more mail flow rules to block file extensions that are commonly used for ransomware (these were added in the [raise the level of protection against malware in mail](#raise-the-level-of-protection-against-malware-in-mail) step), or to warn users who receive these attachments in email.
 
-In addition to the files that you blocked in the previous step, it is also good practice to create a rule to warn users before opening Office file attachments that include macros. Ransomware can be hidden inside macros, so we'll warn users to not open these files from people they do not know.
+In addition to the files that you blocked in the previous step, it's also good practice to create a rule to warn users before opening Office file attachments that include macros. Ransomware can be hidden inside macros, so warn users to not open these files from people they don't know.
 
 To create a mail transport rule:
   
@@ -119,11 +119,10 @@ To create a mail transport rule, either watch [this short video](https://support
 
 ## Protect your email from phishing attacks
 
-If you've configured one or more custom domains for your Office 365 or Microsoft 365 environment, you can configure targeted anti-phishing protection. ATP anti-phishing protection, part of Office 365 Advanced Threat Protection, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you do not need to do this.
+If you've configured one or more custom domains for your Office 365 or Microsoft 365 environment, you can configure targeted anti-phishing protection. ATP anti-phishing protection, part of Office 365 Advanced Threat Protection, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you don't need to do this.
   
 We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain. 
 
-  
 To create an ATP anti-phishing policy, watch  [this short training video](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c), or complete the following steps:
   
 1. Go to [https://protection.office.com](https://protection.office.com). 
@@ -134,9 +133,9 @@ To create an ATP anti-phishing policy, watch  [this short training video](https:
     
 4. On the **Anti-phishing** page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
     
-5. Specify the name, description, and settings for your policy as recommended in the chart below. See [Learn about ATP anti-phishing policy options](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) for more details. 
+5. Specify the name, description, and settings for your policy as recommended in the chart below. For more information, see [Learn about ATP anti-phishing policy options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies). 
     
-6. After you have reviewed your settings, choose **Create this policy** or **Save**, as appropriate.
+6. After you've reviewed your settings, choose **Create this policy** or **Save**, as appropriate.
     
 
 |**Setting or option**<br/>|**Recommended setting** <br/>|
@@ -150,28 +149,28 @@ To create an ATP anti-phishing policy, watch  [this short training video](https:
 |Add trusted senders and domains  <br/> |Here you can add your own domain, or any other trusted domains.  <br/> |
 |Applied to  <br/> |Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, *contoso.<span><span>com*, in the list, and then select **Add**. Select **Done**.  <br/> |
    
-For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+For more information, see [Set up Office 365 ATP anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
-## Protect against malicious attachments, files and links with Advanced Threat Protection (ATP)
+## Protect against malicious attachments, files, and links with Advanced Threat Protection (ATP)
 
 ![Banner that point to https://aka.ms/aboutM365preview.](../business/media/m365admincenterchanging.png)
 
-First, make sure, in the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> you have the new admin center preview turned on; turn on the toggle next to the text **The new admin center**.
+First, make sure, in the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> that you have the new admin center preview turned on. Turn on the toggle next to the text **The new admin center**.
 
    ![The new admin center preview on.](media/previewon.png)
 
 If you don't see the **Setup** page with cards in your tenant yet, see how to complete these steps in Office 365 Security &amp; Compliance Center. See [Set up ATP safe attachments in the Security & Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) and [Set up ATP Safe Links in the Security & Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
 
 1.  In the left nav, choose **Setup**.
-2. On the **Setup** page choose **View** on the **Increase protection from advanced threats** card.</br></br>
+2. On the **Setup** page, choose **View** on the **Increase protection from advanced threats** card.</br></br>
     ![Choose View on the Increase protection from advanced threats.](media/startatp.png) 
 
 3. On the **Increase protection from advanced threats** page, choose **Get started**.
-4. On the pane that opens, check check-boxes next to **Links and attachments in email**, **Scan files in SharePoint, OneDrive, and Teams**, and **Scan links in Office desktop and Office Online apps** under **Scan items for malicious content**.
+4. On the pane that opens, select the check boxes next to **Links and attachments in email**, **Scan files in SharePoint, OneDrive, and Teams**, and **Scan links in Office desktop and Office Online apps** under **Scan items for malicious content**.
 
       - Under **Links and attachments in email**, Type in All Users, or the specific users whose email you want scanned.
 
-    ![Check all check-boxes in Increase protestion from advanced threats.](media/setatp.png)
+    ![Select all check boxes in Increase protection from advanced threats.](media/setatp.png)
 5. Choose **Create policies** to turn on ATP safe attachments and ATP safe links.
 
 ### Set up ATP safe attachments in the Security & Compliance Center
@@ -192,7 +191,7 @@ To create an ATP safe attachment policy, either watch [this short video](https:/
     
 6. Apply the settings in the following table. 
     
-7. After you have reviewed your settings, choose **Create this policy** or **Save**, as appropriate.
+7. After you review your settings, choose **Create this policy** or **Save**, as appropriate.
     
 
 |**Setting or option**|**Recommended setting** <br/>|
@@ -203,7 +202,7 @@ To create an ATP safe attachment policy, either watch [this short video](https:/
 |Redirect attachment on detection  <br/> |Enable redirection (select this box)          Enter the admin account or a mailbox setup for quarantine.          Apply the above selection if malware scanning for attachments times out or error occurs (select this box).  <br/> |
 |Applied to  <br/> |The recipient domain is . . . select your domain.  <br/> |
    
-For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+For more information, see [Set up Office 365 ATP anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
 ### Set up ATP Safe Links in the Security & Compliance Center
 
@@ -284,9 +283,9 @@ The following figure shows the default policies that are included with Microsoft
 
 You can prevent people in your organization from sharing their calendars, or you can also manage what they can share. For example, you can restrict the sharing to free/busy times only.
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and choose **Settings** \> **Services & add-ins**
-2. On the **Services & add-ins** page choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone. 
-    If you choose the share with anyone, you can decide to also only share free/busy information.
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and choose **Settings** \> **Services & add-ins**.
+2. On the **Services & add-ins** page, choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone. 
+    If you choose the share with anyone option, you can decide to also only share free/busy information.
 
 3. Choose **Save changes** on the bottom of the page.
 

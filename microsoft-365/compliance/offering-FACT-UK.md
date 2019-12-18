@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — Federation Against Copyright Theft (FACT)
+title: Federation Against Copyright Theft (FACT)
 description: Microsoft Azure achieved certification from the Federation Against Copyright Theft in the UK.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -11,9 +11,10 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Federation Against Copyright Theft (FACT)
+# Federation Against Copyright Theft (FACT)
 
 ## FACT overview
 
@@ -49,12 +50,12 @@ Compliance with FACT is voluntary, but Microsoft elected to carry out an indepen
 
 - Federation Against Copyright Theft
 - [Fact Security Certification Program](https://go.microsoft.com/fwlink/?linkid=2099508)
-- [CDSA certification of Azure Media Services](http://aka.ms/cdsa-cert)
-- [Azure ISO 27001 certification](http://aka.ms/Azure-BSI-Cert)
+- [CDSA certification of Azure Media Services](https://aka.ms/cdsa-cert)
+- [Azure ISO 27001 certification](https://aka.ms/Azure-BSI-Cert)
 - [MPAA Assessment](offering-mpaa.md)
 - [Azure Responses to CSA CAIQ v3.0.1](https://aka.ms/csacaiqresponses)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf).

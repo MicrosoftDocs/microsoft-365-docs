@@ -18,8 +18,6 @@ description: Understand the basic structure of Contoso's on-premises IT infrastr
 
 # Contoso's IT infrastructure and business needs
 
-**Summary:** Understand the basic structure of Contoso's on-premises IT infrastructure and how its business needs were met by Microsoft 365 Enterprise.
-
 Contoso has been transitioning from an on-premises, centralized IT infrastructure to a cloud-inclusive one that incorporates cloud-based personal productivity workloads and applications.
 
 ## Contoso's existing IT infrastructure
@@ -110,7 +108,7 @@ Management:
 
 ## Mapping Contoso's business needs to Microsoft 365 Enterprise
 
-Contoso's IT department determined the following mapping of business needs to Microsoft 365 Enterprise E5 features prior to deployment:
+Contoso's IT department determined the following mapping of business needs to Microsoft 365 E5 features prior to deployment:
 
 ||||
 |:-------|:-----|:-----|

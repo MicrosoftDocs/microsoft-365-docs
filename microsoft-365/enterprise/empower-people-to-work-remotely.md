@@ -3,7 +3,7 @@ title: "Empower remote workers"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/10/2019
+ms.date: 10/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -26,7 +26,7 @@ Remote working, also known as teleworking, can span a spectrum that includes:
 
 - Employees that are occasionally away from the office for conferences or client meetings.
 - Some employees that work remotely full-time.
-- A fully remote organization in which tHere's no office and all employees are remote.
+- A fully remote organization in which there is no office and all employees are remote.
 
 To support remote workers, a combination of features in Microsoft 365 Enterprise enables your remote workers in a highly collaborative way, such as:
 
@@ -69,9 +69,9 @@ The following phases step you through deploying the feature of Microsoft 365 Ent
 <a name="poster"></a>
 For a 1-page summary of this scenario, see the [Empower remote workers poster](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf).
 
-[![Empower remote workers poster](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
+[![Empower remote workers poster](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
-You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) or [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17)-sized paper.
 
 
 ## Phase 1: Deploy Microsoft 365 features and capabilities for remote workers

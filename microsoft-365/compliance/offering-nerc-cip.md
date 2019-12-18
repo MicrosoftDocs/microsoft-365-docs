@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — North American Electric Reliability Corporation (NERC)
+title: North American Electric Reliability Corporation (NERC)
 description: Azure and Azure Government are suitable for registered entities deploying certain workloads in the cloud subject to NERC CIP standards.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -11,9 +11,10 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: North American Electric Reliability Corporation (NERC)
+# North American Electric Reliability Corporation (NERC)
 
 ## About the NERC
 
@@ -25,7 +26,7 @@ The North American Electric Reliability Corporation (NERC) is a nonprofit regula
 
 All bulk power system owners, operators, and users must [comply with NERC CIP standards](https://www.nerc.com/pa/comp/Pages/default.aspx). These entities are required to register with NERC. Cloud Service Providers and third-party vendors are not subject to NERC CIP standards; however, the CIP standards include goals that should be considered when [Registered Entities](https://www.nerc.com/pa/comp/Pages/Registration.aspx) use vendors in the operation of the Bulk Electric System (BES). Microsoft customers operating Bulk Electric Systems are wholly responsible for ensuring their own compliance with NERC CIP standards. Neither Microsoft Azure nor Microsoft Azure Government constitutes a BES or BES Cyber Asset.
 
-As stated by NERC in the current set of [CIP standards](http://www.nerc.com/pa/Stand/Reliability%20Standards%20Complete%20Set/RSCompleteSet.pdf) and the NERC [Glossary of Terms](http://www.nerc.com/pa/Stand/Glossary%20of%20Terms/Glossary_of_Terms.pdf), BES Cyber Assets perform real-time functions of monitoring or controlling the BES, and would affect the reliable operation of the BES within 15 minutes of being impaired. To properly accommodate BES Cyber Assets and Protected Cyber Assets in cloud computing, existing definitions in NERC CIP standards would [need to be revised](https://www.nerc.com/pa/Stand/Pages/Project%202016-02%20Modifications%20to%20CIP%20Standards.aspx). However, there are many workloads that deal with CIP sensitive data and do not fall under the 15-minute rule, including the broad category of BES Cyber System Information (BCSI).
+As stated by NERC in the current set of [CIP standards](https://www.nerc.com/pa/Stand/Reliability%20Standards%20Complete%20Set/RSCompleteSet.pdf) and the NERC [Glossary of Terms](https://www.nerc.com/pa/Stand/Glossary%20of%20Terms/Glossary_of_Terms.pdf), BES Cyber Assets perform real-time functions of monitoring or controlling the BES, and would affect the reliable operation of the BES within 15 minutes of being impaired. To properly accommodate BES Cyber Assets and Protected Cyber Assets in cloud computing, existing definitions in NERC CIP standards would [need to be revised](https://www.nerc.com/pa/Stand/Pages/Project%202016-02%20Modifications%20to%20CIP%20Standards.aspx). However, there are many workloads that deal with CIP sensitive data and do not fall under the 15-minute rule, including the broad category of BES Cyber System Information (BCSI).
 
 Azure and Azure Government are suitable for Registered Entities deploying certain workloads subject to NERC CIP standards, including BCSI workloads. Microsoft makes the following documents available to Registered Entities interested in deploying data and workloads subject to NERC CIP compliance obligations in Azure or Azure Government:
 
@@ -69,7 +70,7 @@ To assess the suitability of Azure and Azure Government for data and workloads s
 
 **What workloads can Registered Entities deploy on Azure and Azure Government?**
 
-The NERC [CIP standards](http://www.nerc.com/pa/Stand/Reliability%20Standards%20Complete%20Set/RSCompleteSet.pdf) and [Glossary of Terms](http://www.nerc.com/pa/Stand/Glossary%20of%20Terms/Glossary_of_Terms.pdf) state that BES Cyber Assets perform real-time functions of monitoring or controlling the BES, and that if impaired would, within 15 minutes, affect the reliable operation of the BES. To properly accommodate BES Cyber Assets and Protected Cyber Assets in cloud computing, existing definitions in NERC CIP standards would [need to be revised](https://www.nerc.com/pa/Stand/Pages/Project%202016-02%20Modifications%20to%20CIP%20Standards.aspx). However, there are many workloads that deal with CIP sensitive data and do not fall under the 15-minute rule, including the broad category of BES Cyber System Information (BCSI).
+The NERC [CIP standards](https://www.nerc.com/pa/Stand/Reliability%20Standards%20Complete%20Set/RSCompleteSet.pdf) and [Glossary of Terms](https://www.nerc.com/pa/Stand/Glossary%20of%20Terms/Glossary_of_Terms.pdf) state that BES Cyber Assets perform real-time functions of monitoring or controlling the BES, and that if impaired would, within 15 minutes, affect the reliable operation of the BES. To properly accommodate BES Cyber Assets and Protected Cyber Assets in cloud computing, existing definitions in NERC CIP standards would [need to be revised](https://www.nerc.com/pa/Stand/Pages/Project%202016-02%20Modifications%20to%20CIP%20Standards.aspx). However, there are many workloads that deal with CIP sensitive data and do not fall under the 15-minute rule, including the broad category of BES Cyber System Information (BCSI).
 
 The NERC ERO Enterprise [released](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx) a Compliance Monitoring and Enforcement Program (CMEP) [practice guide](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf) to provide guidance to ERO Enterprise CMEP staff when assessing a Registered Entity’s process to authorize access to designated BCSI storage locations and any access controls the Registered Entity implemented. Moreover, NERC reviewed Azure control implementation details and FedRAMP audit evidence related to NERC CIP-004-6 and CIP-011-2 standards that are applicable to BCSI. Based on the ERO issued practice guide and reviewed FedRAMP controls to ensure that Registered Entities encrypt their data, no additional guidance or clarification is needed for Registered Entities to deploy BCSI and associated workloads in the cloud. However, Registered Entities are ultimately responsible for compliance with NERC CIP standards according to their own facts and circumstances.
 

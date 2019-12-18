@@ -20,9 +20,9 @@ description: Things to consider when developing your cloud aware business contin
 
 This topic provides guidance on developing a business continuity plan which takes Microsoft 365 dependencies into account. Here we recommend methods for analyzing your business functions and identifying the ones which depend on Microsoft 365 services. You'll perform this analysis with the anticipation that there will be service failures and that you have to prepare for those possibilities.
 
-Broadly speaking, business continuity planning involves four aspects, assessment, planning, capability validation,and communication and coordination.
+Broadly speaking, business continuity planning involves four aspects, assessment, planning, capability validation, and communication and coordination.
 
-## Assesment
+## Assessment
 First you must identify the business functions in your org and the services and processes that support them. This includes completing a business impact analysis, where each business function is ranked according to how critical it is and you identify the processes and services that each one depends on. Here's a sample table you can refer to help you get started with your own assessment.
 
 **Sample Business Impact Assessment (BIA)**
@@ -45,7 +45,7 @@ This is a BIA document for `name of the service, system, process, or function`
 |Does the technology have a known executive mandate driving a specific process SLA? If yes, explain in detail.|`details here`|
 |Will the loss or compromise of the data associated with this services trigger a major event? If yes, explain in detail.|`details here`|
 |Does the service have a workaround or alternative in place for some or all of its key functions and features? If yes, explain in detail.|`details here`|
-|Does the service process, store, or transmit customer data (PII)? If yes, explain in detail.|`details here`|
+|Does the service process, store, or transmit customer data, such as personally identifiable information (PII)? If yes, explain in detail.|`details here`|
 |BIA status|`develop your own status classification, here are some examples: planned, started, in-progress, complete, on-hold, expired`|
 |completion date|`the date this BIA was completed`|
 |BIA facilitator|`name of the person or group who is responsible for developing and maintaining this BIA`|
@@ -57,7 +57,7 @@ This is a BIA document for `name of the service, system, process, or function`
 
 Next, you look across business processes to see where any cascading dependency relationships exist. Based on the outcome, you prioritize and form resiliency strategies, and standard operating procedures supporting your strategies.
 
-You can use [Microsoft Service Map](https://docs.microsoft.com/en-us/azure/azure-monitor/insights/service-map) to help you in with this mapping. Microsoft Service Map automatically discovers application components on Windows and Linux systems and maps all TCP dependencies, identifies connections,  and remote third-party systems that the app depends on. It also maps dependencies to areas of your network that are traditionally dark, such as Active Directory.
+You can use [Microsoft Service Map](https://docs.microsoft.com/azure/azure-monitor/insights/service-map) to help you in with this mapping. Microsoft Service Map automatically discovers application components on Windows and Linux systems and maps all TCP dependencies, identifies connections,  and remote third-party systems that the app depends on. It also maps dependencies to areas of your network that are traditionally dark, such as Active Directory.
 
 Here's a sample dependency analysis (DA) you can start from. In your dependency analysis (DA), you will identify and examine the process dependencies. Make sure you include people, suppliers, customers, partnerships and facilities. The data from this analysis will be used to identify gaps between the recovery requirements of a process and the recovery capabilities of supporting dependencies.
 
@@ -90,7 +90,7 @@ During your Business Impact Analysis and Dependency Analysis, you will be mappin
 
 ## Know your external points of integration
 
-Regardless of business model, every company has points of integration with their customers, partners and vendors. The business value supply chain is build on integration with external entities. Improving business continuity in the event of service disruption requires consideration – and protection – of each point of integration.  
+Regardless of business model, every company has points of integration with their customers, partners and vendors. The business value supply chain is built on integration with external entities. Improving business continuity in the event of service disruption requires consideration – and protection – of each point of integration.  
 As you analyze your supply chain, external communications should be considered in the same way internal communications are analyzed. Do your customers rely on your Exchange Online servers as the only method of contacting you? Have you established and made your suppliers aware of alternative communication methods, in the event uptime is impacted? Here's
 a sample table that suggests how to organize your thinking.
 

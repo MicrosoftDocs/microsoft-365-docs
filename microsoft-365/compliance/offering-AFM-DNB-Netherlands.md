@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Dutch Authority for the Financial Markets and the Central Bank of the Netherlands
+title: Dutch Authority for the Financial Markets and the Central Bank of the Netherlands
 description: Microsoft has published guidance to help financial institutions in the Netherlands with cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -11,15 +11,16 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Dutch Authority for the Financial Markets and the Central Bank of the Netherlands
+# Dutch Authority for the Financial Markets and the Central Bank of the Netherlands
 
 ## About the AFM and DNB
 
 The primary financial regulators in the Netherlands are the [Dutch Authority for the Financial Markets](https://afm.nl/en) ([Autoriteit Financiële Markten, AFM](https://afm.nl/)) and the [Central Bank of the Netherlands](https://www.dnb.nl/en/home/index.jsp) ([De Nederlandsche Bank, DNB](https://www.dnb.nl/home/)). The AFM, whose role is comparable to the SEC in the United States, is “the independent supervisory authority for the savings, lending, investment, and insurance markets.” The DNB, within the European System of Central Banks, determines, and implements monetary policy and exercises prudential supervision of financial organizations for the Netherlands.  
   
-Both of these institutions act in concert with the European Banking Authority (EBA), “an independent EU authority that works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+\(EBA-Rec-2017-03\).pdf).  
+Both of these institutions act in concert with the European Banking Authority (EBA), “an independent EU authority that works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf ).  
   
 In general, the laws and guidelines support the point of view that cloud computing involving third-party services qualifies as a form of outsourcing, and financial institutions in the Netherlands must address the associated risks before moving business activities to the cloud. These include:
 
@@ -76,4 +77,4 @@ Yes. The provisions and arrangements to be included in cloud contracts depend on
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/A/E/5/AE505D51-DA54-4B2D-B1BD-C76D9102F36A/AFM-DNB-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/A/E/5/AE505D51-DA54-4B2D-B1BD-C76D9102F36A/AFM-DNB-Compliance.pdf).

@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Trusted Information Security Assessment Exchange (TISAX) Germany
+title: Trusted Information Security Assessment Exchange (TISAX) Germany
 description: An independent, ENX-accredited auditor assessed Microsoft cloud datacenters against TISAX security requirements.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -11,9 +11,10 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Trusted Information Security Assessment Exchange (TISAX) Germany
+# Trusted Information Security Assessment Exchange (TISAX) Germany
 
 ## About TISAX
 
@@ -21,7 +22,7 @@ To help secure the ever-increasing connectivity in the automotive industry, the 
 
 VDA member companies used this instrument both for internal security assessments and for assessments of suppliers, service providers, and other partners that process sensitive information on their behalf. However, because these evaluations were handled individually by each company, it created a burden on partners and duplicated effort on the part of VDA members.
 
-To help streamline evaluations, the VDA set up a common assessment and exchange mechanism, the [Trusted Information Security Assessment Exchange](http://www.enx.com/tisax/) (TISAX). The catalogue of underlying TISAX requirements, Questionnaire for Checking Information Security Assessment and Information Security Management, Vers. 4 ([German](https://www.vda.de/de/services/Publikationen.html) and [English](https://www.vda.de/en/services/Publications.html)), provides common standards for IT security measures, and enables companies registered in TISAX to share assessment results. The VDA entrusted a neutral third party, the [ENX Association](https://portal.enx.com/en-US/en-en/TISAX/tisaxassessmentresults/), with TISAX implementation. In that capacity, it accredits audit providers (auditors), maintains the accreditation criteria and assessment requirements, and monitors the quality of implementation and assessment results.
+To help streamline evaluations, the VDA set up a common assessment and exchange mechanism, the [Trusted Information Security Assessment Exchange](https://www.enx.com/tisax/) (TISAX). The catalogue of underlying TISAX requirements, Questionnaire for Checking Information Security Assessment and Information Security Management, Vers. 4 ([German](https://www.vda.de/de/services/Publikationen.html) and [English](https://www.vda.de/en/services/Publications.html)), provides common standards for IT security measures, and enables companies registered in TISAX to share assessment results. The VDA entrusted a neutral third party, the [ENX Association](https://portal.enx.com/en-US/en-en/TISAX/tisaxassessmentresults/), with TISAX implementation. In that capacity, it accredits audit providers (auditors), maintains the accreditation criteria and assessment requirements, and monitors the quality of implementation and assessment results.
 
 ## Microsoft and TISAX
 
@@ -39,7 +40,7 @@ Microsoft provided a self-assessment of its cloud services, and the auditor perf
 The TISAX assessment focused on the following Microsoft services:
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
-- [Dynamics 365](http://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
+- [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - Intune
 - [Microsoft 365 and Power BI cloud service as included in an Office 365 branded plan or suite](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
@@ -67,7 +68,7 @@ ENX provides certification confirmation only to registered industry representati
 
 ## Resources
 
-- [TISAX Frequently Asked Questions](https://portal.enx.com/en-US/en-en/TISAX/faqs/)
+- [TISAX Frequently Asked Questions](https://portal.enx.com/en-US/TISAX/faqs/)
 - [Volkswagen and Microsoft announce strategic partnership](https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-and-microsoft-announce-strategic-partnership-4234)
 - [Office in your Car: BMW offers Skype for Business](https://news.microsoft.com/de-de/skype-business-ab-sofort-fahrzeugen-von-bmw-verfugbar/) (German)
 - [Connecting vehicles for the long haul: Daimler](https://customers.microsoft.com/story/daimlertrucks)
@@ -77,4 +78,4 @@ ENX provides certification confirmation only to registered industry representati
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/5/C/3/5C32AD74-703F-4B61-A290-B00B96E8DD8D/TISAX-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/5/C/3/5C32AD74-703F-4B61-A290-B00B96E8DD8D/TISAX-Compliance.pdf).

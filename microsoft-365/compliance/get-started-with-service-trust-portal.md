@@ -164,4 +164,4 @@ We can help with questions about the Service Trust Portal, or errors you experie
   
 Your feedback is very important to us. Click on the Feedback button at the bottom of the page to send us comments about what you did or did not like, or suggestions you may have for improving our products or product features.
   
-![](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![What kind of feedback do you have](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

@@ -29,7 +29,7 @@ Here are some strategies and scenarios that show how to mitigate the impact of a
 |Microsoft Teams conference calling is relied upon for general communication and incident management triage.|Establish a backup conferencing solution with a 3rd-party provider.|
 |VoIP phones are used as a secondary method of communication.|Implement non-VoIP phones capable of PSTN calling, especially for network and service operations centers during incidents. Add employee mobile phone numbers to the company directory for enabling critical personnel to be contacted over the cellular network.|
 |OneDrive for Business is relied upon for file storage and user productivity. [Files On-Demand](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-On-Demand-For-The-Enterprise/ba-p/117234) is configured to free up space on local user drives.|OneDrive sync supplies group policies allowing admins to require specific content to be synced locally or free up space when desired. To mitigate the risk of document inaccessibility, configure this policy to sync critical documents locally. Train users to manually apply the “always keep on this device” setting for key documents.|
-|Communication of business disruptions to customers and suppliers relies on Exchange Online.|Public third-party social networks can be used as an alternative means of mass communication.
+|Communication of business disruptions to customers and suppliers rely on Exchange Online.|Public third-party social networks can be used as an alternative means of mass communication.
 
 ## Leveraging mobile app access
 

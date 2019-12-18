@@ -9,7 +9,10 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
+titleSuffix: Microsoft GDPR
 ---
 
 # Microsoft Support and Professional Services and Breach Notification Under the GDPR
@@ -22,13 +25,13 @@ The drive for Microsoft Professional Services’ global data protection incident
 
 ## Data Protection incident response overview 
 
-Microsoft Professional Services is committed to protecting its customers and takes considerable measures to prevent data protection incidents from occurring as a means of maintaining customer trust. A data protection incident in the Professional Services organization is a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data, or Support or Consulting Data, while processed by Microsoft. For Commercial customers that have purchased Premier Support, Unified Support or Microsoft Consulting Services, you should refer to your data protection incident response language in the Professional Services Data Protection Addendum located at <http://aka.ms/professionalservicesdpa/>.
+Microsoft Professional Services is committed to protecting its customers and takes considerable measures to prevent data protection incidents from occurring as a means of maintaining customer trust. A data protection incident in the Professional Services organization is a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data, or Support or Consulting Data, while processed by Microsoft. For Commercial customers that have purchased Premier Support, Unified Support or Microsoft Consulting Services, you should refer to your data protection incident response language in the Professional Services Data Protection Addendum located at <https://aka.ms/professionalservicesdpa/>.
 
 ## Scope & limits of data protection incident response process
 
 Our personal data breach notification process begins when we declare that a [personal data breach] has occurred.
 
-To be declared, the Microsoft data protection incident response team must determine that a data protection incident as defined above has or has very likely occurred. Declaration will occur as soon as all pertinent information is available to determine that a data protection incident has occurred.
+To be declared, the Microsoft data protection incident response team must determine that a data protection incident as defined above has occurred. Declaration will occur as soon as all pertinent information is available to determine that a data protection incident has occurred.
 
 Due to the nature of professional services, some events that seem like Microsoft data protection incidents are not because they occurred through customer’s actions or on customer’s systems. Microsoft does not monitor for or respond to data protection incidents within the customer’s realm of responsibility. However, when Microsoft becomes aware of a customer-driven data protection incident we will classify this as a customer-driven data protection incident, which the data protection incident response team calls an “event,” inform the customer of our observation, and as requested will assist them on their response effort, to the extent required by their interaction with Microsoft. Some examples of customer-driven data protection incidents include inadvertent sending Microsoft the customer’s passwords and other sensitive data to Microsoft, requests to delete data and being the victim of fraud.
 
@@ -49,7 +52,7 @@ Microsoft Professional Services continuously monitors for emerging data protecti
 The detection processes used by Microsoft Professional Services are designed to discover data protection incidents and trigger investigations. For example:
 
 - Security vulnerabilities are reported to the Microsoft-wide reporting system for referral or reported directly to the Professional Services data protection incident response team.
-- Customers submit reports via the [Customer Support Portal](http://support.microsoft.com) that describe suspicious activity.
+- Customers submit reports via the [Customer Support Portal](https://support.microsoft.com) that describe suspicious activity.
 - Professional Services personnel submit escalations. Microsoft employees are trained to identify and escalate potential security issues.
 - For tools and systems used in the process of providing Professional Services, the operations teams use automated system alerts via internal monitoring and alerting frameworks. These alerts could come in the way of signature-based alarms such as antimalware, intrusion detection or via algorithms designed to profile expected activity and alert upon anomalies.
 
@@ -69,11 +72,11 @@ Regular online training is available, and completion is mandatory for all person
 
 When Microsoft Professional Services organization identifies a data protection incident, it follows a documented industry standard response plan, beginning with determination that the data protection incident criteria are met. Where a data protection incident occurs, it is generally declared immediately after Triage but, depending on complexity, the declaration may happen at any point when a level of necessary information is available, including after the investigation stage. On the other hand, the team has discretion to declare a data protection incident based only on reasonable suspicion of occurrence. The team may also alternate between the various stages as the investigation progresses.
 
-Microsoft also completes an internal post-mortem for data protection incidents. As a part of this exercise, sufficiency of response and operating procedures are evaluated, and any updates that may be necessary to the *Data Protection Incident Response Standard Operating Procedure* or related processes are identified and implemented. Internal postmortems for data breaches are highly confidential records not available to customers. Postmortems may, however, be summarized and included in customer event notifications. As part of a routine audit cycle, post-mortem processes are reviewed by external auditors to ensure follow-up occurs.
+Based on the severity level, Microsoft may also complete an internal post-mortem for data protection incidents. As a part of this exercise, sufficiency of response and operating procedures are evaluated, and any updates that may be necessary to the *Data Protection Incident Response Standard Operating Procedure* or related processes are identified and implemented. Internal postmortems for data breaches are highly confidential records not available to customers. Post-mortems may, however, be summarized and included in customer event notifications. As part of a routine audit cycle, post-mortem processes are reviewed by external auditors to ensure follow-up occurs.
 
 ### Notification
 
-When Microsoft Professional Services declares a data protection incident under the GDPR, we target notification to our customers within 72 hours. This 72-hour notice obligation is a policy commitment of Professional Services — not a legal requirement under the GDPR.
+When Microsoft Professional Services declares a data protection incident under the GDPR, we target notification to our customers within 72 hours. 
 
 After the declaration of a data protection incident, the notification process takes place as expeditiously as possible while still considering the security risks of moving quickly. To ensure that notification can be successfully delivered, it is the customer’s responsibility to ensure that the administrative contact information on each applicable account, subscription, and online services portal is correct. While the goal is to provide impacted customers with an accurate, actionable, and timely notice, to achieve the 72-hour notification commitment the initial notification may not include complete details as all details may not be available during the early stages of a data protection incident. In addition, Microsoft may need to withhold some details due to the circumstances of the data protection incident. For instance, it may be necessary to withhold details if the act of providing notification increases risk to other customers or interferes with Microsoft’s or law enforcement’s ability to catch a malicious actor.
 
@@ -90,4 +93,4 @@ When providing notice to customers of a personal data breach, Microsoft will inc
 
 ## Learn more
 
-Find out more about Microsoft Professional Services on the Microsoft Trust Center (<https://www.microsoft.com/trustcenter/professional-services>). 
+Find out more about Microsoft Professional Services (<https://aka.ms/pstrust>). 

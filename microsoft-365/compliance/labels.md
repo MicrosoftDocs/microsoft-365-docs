@@ -1,7 +1,7 @@
 ---
 title: "Overview of retention labels"
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -10,6 +10,7 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
+- SPO_Content
 search.appverid: 
 - MOE150
 - MET150
@@ -67,7 +68,7 @@ Retention labels are independent, reusable building blocks that are included in 
   
 ![Diagram of labels, label policies, and locations](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. When you publish retention labels, they're included in a retention label policy. Please note, retention label names are immmutable and cannot be edited once created.
+1. When you publish retention labels, they're included in a retention label policy. Please note, retention label names are immutable and cannot be edited once created.
 
 
 2. A single retention label can be included in many retention label policies.
@@ -120,17 +121,17 @@ In Exchange Online, retention labels are made available to end users by a proces
     
 2. Run these commands.
     
-  ```
-  $logProps = Export-MailboxDiagnosticLogs <user> -ExtendedProperties
-  ```
+   ```powershell
+   $logProps = Export-MailboxDiagnosticLogs <user> -ExtendedProperties
+   ```
 
-  ```
-  $xmlprops = [xml]($logProps.MailboxLog)
-  ```
+   ```powershell
+   $xmlprops = [xml]($logProps.MailboxLog)
+   ```
 
-  ```
-  $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}
-  ```
+   ```powershell
+   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}
+   ```
 
 In the results, the `ELCLastSuccessTimeStamp` (UTC) property shows when the system last processed your mailbox. If it has not happened since the time you created the policy, the labels are not going to appear. To force processing, run  `Start-ManagedFolderAssistant -Identity <user>`.
     
@@ -254,10 +255,14 @@ You can choose to apply retention labels to content automatically when that cont
     
 - Specific keywords that match a query you create.
     
-![Choose condition page for auto-apply label](media/c0b7a3ef-bda0-494c-941d-f1f93753ecdd.png)
-  
+![Choose condition page for auto-apply label](media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
+
+
 Auto-applying retention labels requires an Office 365 Enterprise E5 subscription, and that it can take up to seven days for auto-apply retention labels to be applied to all content that matches the conditions, as described above.
   
+> [!TIP]
+> See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePont to auto-apply retention labels and implement event-driven retention.
+
 ### Auto-apply retention labels to content with specific types of sensitive information
 
 When you create auto-apply retention labels for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each policy template is preconfigured to look for specific types of sensitive information. For example, the template shown here looks for U.S. ITIN, SSN, and passport numbers. To learn more about DLP, see [Overview of data loss prevention policies](data-loss-prevention-policies.md).
@@ -280,12 +285,12 @@ You can auto-apply labels to content that satisfies certain conditions. The cond
 
 For more information on query syntax, see:
 
-- [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 Query-based labels use the search index to identify content. For more information on valid searchable properties, see:
 
 - [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
-- [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/en-us/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- [Overview of crawled and managed properties in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 Examples queries:
 
@@ -300,9 +305,9 @@ Examples queries:
 
 ## Applying a default retention label to all content in a SharePoint library, folder, or document set
 
-In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location get the default retention label.
+In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location get the default retention label (default labels are an E5 feature).
   
-For a document library, this is done on the **Library settings** page for a document library. When you choose the default retention label, you can also choose to apply it to any existing items in the library. 
+For a document library, this is done on the **Library settings** page for a document library. When you choose the default retention label, you can also choose to apply it to existing items in the library. 
   
 For example, if you have a tag for marketing materials, and you know a specific document library contains only that type of content, you can make the Marketing Materials tag the default for all documents in that library.
   
@@ -310,11 +315,19 @@ For example, if you have a tag for marketing materials, and you know a specific 
   
 If you apply a default retention label to existing items in the library, folder, or document set:
   
-- All items in the library, folder, or document set automatically get the same retention label, **except** for items that have had a retention label applied explicitly to them. Explicitly labeled items keep their existing label. For more information, see the below section on [The principles of retention, or what takes precedence?](#the-principles-of-retention-or-what-takes-precedence).
+- All items in the library, folder, or document set automatically get the same retention label, **except** for items that have had a retention label applied explicitly to them. Explicitly labeled items keep their existing label. For more information, see the below section on [The principles of retention, or what takes precedence](#the-principles-of-retention-or-what-takes-precedence).
     
-- If you change or remove the default retention label for a library, folder, or document set, the retention label's also changed or removed for all items in the library, folder, or document set, **except** items with explicit retention labels. 
+- If you change or remove the default retention label for a library, folder, or document set, the retention label is also changed or removed for all items in the library, folder, or document set, **except** items with explicit retention labels. 
     
 - If you move an item with a default retention label from one library, folder, or document set to another library, folder, or document set, the item keeps its existing default retention label, even if the new location has a different default retention label.
+
+- If the default retention label for a library, folder, or document set declares content as a record (also called a *record label*), then the following characteristics apply:
+
+   - If you change the default retention label to a label that does not declare content as a record, items keep the existing default record label. The new default retention label is not applied to those items. A site collection admin would have to explicitly remove or change the retention label.
+
+   - If you remove the default retention label that declares content as a record, then the record label is not removed from items in the library, folder, or document set. A site collection admin would have to explicitly remove the retention label.
+
+   For more information about retention labels that declare content as a record, see [Overview of records](records.md).
     
 ## Applying a retention label to email by using rules
 

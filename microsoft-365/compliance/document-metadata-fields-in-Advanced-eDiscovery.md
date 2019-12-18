@@ -19,17 +19,27 @@ description: ""
 
 # Document metadata fields in Advanced eDiscovery
 
-The following table lists the metadata fields for documents in a review set in a case in Advanced eDiscovery. The table indicates the name of the metadata field, whether the field can be searched when running a query in a review set, whether the field is present when viewing the file metadata of a selected document in a review set, and whether the field is included when documents are exported.
+The following table lists the metadata fields for documents in a review set in a case in Advanced eDiscovery. The table provides the following information:
 
-| Field name | Searchable field name | Exported field name | Display field name | Description |
-| :- |  :- |  :- |  :- |  :- |
+- The name of the metadata field (in the **Field name** column).
+
+- The name of the property that you can search for when running a [review set query](review-set-search.md) (in the **Searchable field name** column). A blank cell means that you can't search for the field in a review set query.
+
+- The name of the metadata field that included when documents are exported (in the **Exported field name** column).  A blank cell means the meta data field is not included with the exported metadata.
+
+- The name of the metadata field that's displayed when viewing the file metadata of a selected document in a review set (in the **Display field name** column). A blank cell means the meta data field is not included when viewing the file metadata of a document.
+
+- A description of the meta data field (in the **Description column**).
+
+|Field name|Searchable field name|Exported field name|Display field name|Description|
+|:-|:-|:-|:-|:-|
 | Attachment Content Id | AttachmentContentId |  | Attachment Content Id | Attachment content Id of the item. |
 | Attachment Names | AttachmentNames | Attachment_Names | Attachment Names | List of names of attachments. |
 | Attorney client privilege score | AttorneyClientPrivilegeScore |  | Attorney client privilege score | Attorney-client privilege model content score. |
 | Author | Author | Doc_authors | Author | Author from the document metadata. |
-| BCC | Bcc | Email_bcc | BCC | Bcc field for for message types.  Format is **DisplayName \<SMTPAddress>**. |
-| CC | Cc | Email_cc | CC | Cc field for for message types.  Format is **DisplayName \<SMTPAddress>**. |
-| Compliance labels | ComplianceLabels | Compliance_labels | Compliance labels | Compliance labels applied in Office 365. |
+| BCC | Bcc | Email_bcc | BCC | Bcc field for message types.  Format is **DisplayName \<SMTPAddress>**. |
+| CC | Cc | Email_cc | CC | Cc field for message types.  Format is **DisplayName \<SMTPAddress>**. |
+| Compliance labels | ComplianceLabels | Compliance_labels | Compliance labels |[Retention labels](labels.md) applied to content in Office 365. |
 | Compound Path | CompoundPath | Compound_path | Compound Path | Human readable path that describes the source of the item. |
 | Content | Content |  |  | Extracted text of the item. |
 | Conversation Body | Conversation Body |  | Conversation Body | Conversation body of the item. |
@@ -40,7 +50,7 @@ The following table lists the metadata fields for documents in a review set in a
 | Conversation Redaction Burn Time | ConversationRedactionBurnTime |  | Conversation Redaction Burn Time | Date when the PDF version of the conversation was created for Chat. |
 | Document date created | CreatedTime | Doc_date_created | Document date created | Create date from document metadata. |
 | Custodian | Custodian | Custodian | Custodian | Name of the custodian the item was associated with. |
-| Date | Date | Date | Date | Date is a computed field that depends on the file type.<br />**Email**: Sent date<br />**Email attachments**: Last modified date of the document, if not available, the parent's Sent date<br />**Embedded documents**: Last modified date of the document, if not available, the parent's last modified date.<br />**SPO documents (includes modern attachments)**: SharePoint Last modified date, if not available, the documents last modified date<br />**Non Office documents**: Last modified date<br />**Meetings**: Meeting start date<br />**VoiceMail**: Sent date<br />**IM**: Sent date. |
+| Date | Date | Date | Date | Date is a computed field that depends on the file type.<br />**Email**: Sent date<br />**Email attachments**: Last modified date of the document, if not available, the parent's Sent date<br />**Embedded documents**: Last modified date of the document, if not available, the parent's last modified date.<br />**SPO documents (includes modern attachments)**: SharePoint Last modified date, if not available, the documents last modified date<br />**Non-Office documents**: Last modified date<br />**Meetings**: Meeting start date<br />**VoiceMail**: Sent date<br />**IM**: Sent date. |
 | Other paths | Dedupedcompoundpath | Deduped_compound_path | Other paths | List of compound paths of documents that are exact duplicates (email: based on content, documents: based on hash). |
 | Other custodians | DedupedCustodians | Deduped_custodians | Other custodians | List of custodians of documents that are exact duplicates (for email: based on content; for documents: based on hash). |
 | Other file IDs | DedupedFileIds | Deduped_file_IDs | Other file IDs | List of file IDs of documents that are exact duplicates (for email: based on content; for documents: based on hash). |
@@ -68,10 +78,10 @@ The following table lists the metadata fields for documents in a review set in a
 | ExtractedTextLength |  | Extracted_text_length |  | Number of characters in the extracted text. |
 | Family relevance score Case issue 1 |  | Family_relevance_score_case_issue_1 |  | Family relevance score Case issue 1 from Relevance. |
 | FamilyDuplicateSet |  | Family_duplicate_set |  | Numeric identifier for families that are exact duplicates of each other (same content and all the same attachments). |
-| Family ID | FamilyId | Family_ID | Family ID | Family Id groups together all items; for email, this includes the message and all attachments; for documents, this include the document and any embedded items. |
+| Family ID | FamilyId | Family_ID | Family ID | Family Id groups together all items; for email, this includes the message and all attachments; for documents, this includes the document and any embedded items. |
 | Family Size |  | Family_size | Family Size | Number of documents in the family. |
 | File relevance score Case issue 1 |  | File_relevance_score_case_issue_1 |  | File relevance score Case issue 1 from Relevance. |
-| File class | FileClass | File_class | File class | For content from SharePoint and OneDrive: **Document**; for content from Exchange: **Email**or **Attachment**. |
+| File class | FileClass | File_class | File class | For content from SharePoint and OneDrive: **Document**; for content from Exchange: **Email or **Attachment**. |
 | File ID | FileId | File_ID | File ID | Document identifier unique within the case.|
 | File system date created |  | File_system_date_created | File system date created | Created date from file system (only applies to non-Office 365 data). |
 | File system date modified |  | File_system_date_modified | File system date modified | Modified date from file system (only applies to non-Office 365 data). |
@@ -83,7 +93,7 @@ The following table lists the metadata fields for documents in a review set in a
 | Inclusive type | InclusiveType | Inclusive_type | Inclusive type | Inclusive type calculated for analytics: **0** - not inclusive; **1** - inclusive; **2** - inclusive minus; **3** - inclusive copy. |
 | In Reply To Id |  | In_reply_to_ID | In Reply To Id | In reply to Id from the message. |
 | Is Representative | IsRepresentative | Is_representative | Is Representative | One document in every set of exact duplicates is marked as representative. |
-| Item class | ItemClass | Item_class | Item class | Item class supplied by exchange server; for example **IPM.Note** |
+| Item class | ItemClass | Item_class | Item class | Item class supplied by exchange server; for example, **IPM.Note** |
 | Last modified date | LastModifiedDate | Doc_date_modified | Last modified date | Last modified date from document metadata. |
 | Load ID | LoadId | Load_ID | Load ID | Load Id, in which the item was loaded into a review set. |
 | Location | Location | Location | Location | String that indicates the type of location that documents were sourced from;<br />Non-O365 -> Imported Data<br />Teams -> Teams<br />EXO -> Exchange<br />SPO -> SharePoint<br />OneDrive for Business -> OneDrive |
@@ -138,11 +148,11 @@ The following table lists the metadata fields for documents in a review set in a
 | Tags | Tags | Tags | Tags | Tags applied in a review set. |
 | Themes list | ThemesList | Themes_list | Themes list | Themes list as calculated for analytics. |
 | Title | Title | Doc_title | Title | Title from the document metadata. |
-| To | To | Email_to | To | To field for for message types.  Format is **DisplayName\<SmtpAddress>** |
+| To | To | Email_to | To | To field for message types.  Format is **DisplayName\<SmtpAddress>** |
 | Unique in email set | UniqueInEmailSet |  | Unique in email set | False if there's a duplicate of the attachment in its email set. |
 | Was Remediated | WasRemediated | Was_Remediated | Was Remediated | True if the item was remediated, otherwise False. |
 | Word count | WordCount | Word_count | Word count | Number of words in the item. |
 ||||||
 
   > [!NOTE]
-  > For more information about searchable fields when searching directly against Office 365, refer to [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
+  > For more information about searchable properties when searching Office 365 content locations when you're collecting data for an Advanced eDiscovery case, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).

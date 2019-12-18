@@ -43,7 +43,7 @@ Use a tool or web site from a device in that office to determine the public IP a
 If needed, [Step 2](networking-dns-resolution-same-location.md) can help you with this requirement.
 
 <a name="crit-networking-step3"></a>
-## Optional: Unneccessary network hairpins are removed
+## Optional: Unnecessary network hairpins are removed
 
 You examined your network hairpins and determined their impact on performance for all of your offices. You removed network hairpins where possible or worked with your third-party network or security provider to implement optimal Microsoft 365 peering for their network.
 

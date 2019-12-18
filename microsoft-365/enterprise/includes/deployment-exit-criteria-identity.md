@@ -1,4 +1,4 @@
-Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) for additional recommendations on identity infrastructure.
+Also see [Prerequisites](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites) for additional recommendations on identity infrastructure.
 
 <a name="crit-identity-global-admin"></a>
 ### Required: Your global administrator accounts are protected 
@@ -14,7 +14,7 @@ If needed, [Step 1](../identity-create-protect-global-admins.md#identity-global-
 Use these steps to verify that you've protected your global administrator accounts:
 
 1. Run the following Azure Active Directory PowerShell for Graph command at the PowerShell command prompt. You should see only the list of dedicated global administrator accounts.
-   ```
+   ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
 2. Sign in to Office 365 using each of the accounts from step 1. Each sign in must require Azure Multi-Factor Authentication and the strongest form of secondary authentication available in your organization.
@@ -68,7 +68,7 @@ If needed, [Step 2](../identity-secure-your-passwords.md#identity-sso) can help 
 <a name="crit-identity-custom-sign-in"></a>
 ### Optional: The Office 365 sign-in screen is personalized for your organization
 
-You have used [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.
+You have used [Add company branding to your sign-in and Access Panel pages](https://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.
 
 If you skip this option, your users will see a generic Office 365 sign-in screen and might not be confident that they’re signing into your organization’s site.
 
@@ -93,7 +93,7 @@ If needed, [Step 3](../identity-secure-user-sign-ins.md#identity-mfa) can help y
 5.	Delete the test user account.
 
 <a name="crit-identity-ident-prot"></a>
-### Optional: Azure AD Identity Protection is enabled to protect against credential compromise (Microsoft 365 Enterprise E5 only)
+### Optional: Azure AD Identity Protection is enabled to protect against credential compromise (Microsoft 365 E5 only)
 
 You've enabled Azure AD Identity Protection to:
 

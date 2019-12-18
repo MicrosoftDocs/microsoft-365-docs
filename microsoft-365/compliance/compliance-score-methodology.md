@@ -1,5 +1,5 @@
 ---
-title: "Compliance Score Methodology"
+title: "Compliance Score calculation"
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -11,69 +11,70 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal. Compliance Manager enables you to track, assign, and verify regulatory compliance activities related to Microsoft cloud services."
+description: "Understand how Microsoft Compliance Score calculates a personalized score based on actions taken to address risks and improve your compliance posture."
 ---
 
-# Compliance Score Methodology (Preview)
+# Microsoft Compliance Score (Preview) calculation
 
-> [!NOTE]
-> The Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. No service can guarantee that you are compliant with a standard or regulation, and the Compliance Score should not be interpreted as a guarantee in any way.
+> [!IMPORTANT]
+> Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. Recommendations from Compliance Score and Compliance Manager should not be interpreted as a guarantee of compliance. This service is currently in preview and is subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910).
 
-The Compliance Manager dashboard displays a total compliance score for Assessments in each Assessment tile. This is the overall Compliance Score for the Assessment and is the accumulation of points received for each implemented and tested control in the Assessment. For a new Assessment, the Compliance Score has an initial value for the included Microsoft-managed controls tested by independent third parties. The Compliance Score is calculated based on Microsoft-managed action scores and customer-managed action scores. Compliance Score can help prioritize which Assessments and controls to focus on to improve your overall compliance posture.
+## Overview
 
-The displayed Compliance Score values for the control are applied *in their entirety* to the total Compliance Score on a pass/fail basis. Either the control is implemented and passes the subsequent assessment test or it does not. Assigned points are added to the Compliance Score when the Control has:
+The Compliance Score dashboard displays a score that measures your progress in completing improvement actions within controls. Your points accrue when you complete actions.
+
+Your score is calculated based on the completion of Microsoft-managed actions and customer-managed actions. Each action has a different impact on your score, depending on the potential risks involved, so the score can help prioritize which action to focus on to improve your overall compliance posture.
+
+The displayed Compliance Score values for the control are applied *in their entirety* to your total score on a pass/fail basis. Either the control is implemented and passes the subsequent assessment test or it does not. Assigned points are added to Compliance Score when the control has:
 
 - **Implementation Status** equals **Implemented** or **Alternative Implementation** and,
 - **Test Result** equals **Passed**.
 
-## Compliance score
-  
-In Compliance Manager, baseline scores move from the Control level to the Action Item level. Scores are based on the purpose (Detective, Preventative, or Corrective) and enforcement (Discretionary or Mandatory) of the Action Item.
+The sum of points earned by taking improvement actions is the control score. The sum of your control scores is the assessment score. The sum of your assessment scores is your overall compliance score
 
-Action Items are mapped to Controls, and when a Control is mapped to multiple Action Items, the sum of the Action Item Scores is the Control Score. The sum of the Control Score for all Controls in a given Assessment is the Assessment Score. The average score of all Assessments in a Group is the Compliance Score for that group.
+## Initial score based on Microsoft 365 data protection baseline
   
-### Mandatory or discretionary Controls
-  
- **Mandatory Controls** are actions that cannot be bypassed either intentionally or accidentally. An example of a common mandatory control is a centrally managed password policy that sets requirements for password length, complexity, and expiration. Users must comply with these requirements to access the system.
-  
- **Discretionary Controls** rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user.
-  
-### Preventative, detective, or corrective Controls
-  
- **Preventative Controls** are actions that prevent specific risks. For example, protecting information at rest using encryption is a preventative control against attacks, breaches. Separation of duties is a preventative control to manage conflict of interest and to guard against fraud.
-  
- **Detective Controls** are actions that actively monitor systems to identify irregular conditions or behaviors that represent risk or that can be used to detect intrusions or determine if a breach has occurred. System access auditing and privileged administrative actions auditing are types of detective monitoring controls. Regulatory compliance audits are a type of detective control used to find process issues.
-  
-**Corrective Controls** are Controls that try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage, if possible. Privacy incident response is a corrective control to limit damage and restore systems to an operational state after a breach.
-  
-Each Control has an assigned value in Compliance Manager based on the risk that it represents:
+Compliance Score gives you an out-of-the-box score based on the Microsoft 365 data protection baseline, which is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
-|**Type**|**Assigned Score**|
+## How Compliance Score continuously assesses controls
+
+Compliance Score automatically scans through your Microsoft 365 environment and detects your system settings, continuously and automatically updating your technical control status. For example, if you turned on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflects that in the control access solution details. Conversely, if you didn’t turn on MFA, Compliance Score flags that as a recommended action for you to take.
+
+Compliance Score updates your control status every 24 hours. Once you follow a recommendation to implement a control, you will see the control status updated the next day.
+
+During public preview, continuous assessment is available to a portion controls, but not all.
+  
+## Control types and points
+
+Compliance Score tracks two types of controls—Microsoft-managed and customer-managed—each of which have points that contribute to your overall score:
+
+1. **Customer-managed points** contribute to your compliance score based on controls managed by your organization.
+2. **Microsoft-managed points** contribute to your compliance score based on controls managed by Microsoft as a cloud service provider.
+
+Controls are assigned a score value based on whether they are mandatory or discretionary, and whether they are preventative, detective, or corrective—as described below.
+
+### Mandatory and discretionary controls
+
+ - **Mandatory controls** are actions that cannot be bypassed either intentionally or accidentally. An example is a centrally-managed password policy that sets requirements for password length, complexity, and expiration. Users must comply with these requirements to access the system.
+  
+ - **Discretionary controls** rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user.
+  
+### Preventative, detective, and corrective controls
+  
+ - **Preventative controls** address specific risks. For example, protecting information at rest using encryption is a preventative control against attacks and breaches. Separation of duties is a preventative control to manage conflict of interest and guard against fraud.
+  
+ - **Detective controls** actively monitor systems to identify irregular conditions or behaviors that represent risk or that can be used to detect intrusions or determine if a breach occurs. System access auditing and privileged administrative actions auditing are types of detective monitoring controls. Regulatory compliance audits are a type of detective control used to find process issues.
+  
+- **Corrective controls** try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage if possible. Privacy incident response is a corrective control to limit damage and restore systems to an operational state after a breach.
+  
+Each control has an assigned value in Compliance Score based on the risk it represents:
+
+|**Type**|**Assigned score**|
 |:-----|:-----|
-| Preventative Mandatory | 27 |
-| Preventative Discretionary | 9 |
-| Detective Mandatory | 3 |
-| Detective Discretionary | 1 |
-| Corrective Mandatory | 3 |
-| Corrective Discretionary | 1 |
+| Preventative mandatory | 27 |
+| Preventative discretionary | 9 |
+| Detective mandatory | 3 |
+| Detective discretionary | 1 |
+| Corrective mandatory | 3 |
+| Corrective discretionary | 1 |
   
-## Action Item workflow
-
-Here's the basic workflow for a typical Action Item:
-  
-1. The Compliance, Risk, Privacy, and/or Data Protection Officer of an organization assigns a task to someone in the organization to implement a control. That person could be:
-
-    - A business policy owner.
-    - An IT implementer.
-    - Another individual in the organization with responsibility to perform the task.
-
-2. That individual performs the tasks necessary to implement the control, uploads evidence of implementation into Compliance Manager, and marks the Control tied to the Action Item as implemented. Once these tasks are completed, they assign the Action Item to an Assessor for validation.
-
-    Assessors can be:
-
-    - Internal assessors that perform validation of controls within an organization.
-    - External assessors that examine, verify, and certify compliance, such as the third-party independent organizations that audit Microsoft's cloud services.
-
-3. The Assessor validates the control and examines the evidence and marks the control as assessed and the results of the assessment.
-
-Once all the Controls associated with an Assessment are assessed, the Assessment is complete.

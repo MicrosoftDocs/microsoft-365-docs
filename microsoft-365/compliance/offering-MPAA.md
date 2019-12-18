@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Motion Picture Association of America (MPAA)
+title: Motion Picture Association of America (MPAA)
 description: Azure successfully completed a formal assessment by the Motion Picture Association of America.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -11,9 +11,10 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Motion Picture Association of America (MPAA)
+# Motion Picture Association of America (MPAA)
 
 ## MPAA overview
 
@@ -42,7 +43,7 @@ Learn about the benefits of MPAA on the Microsoft Cloud: [Download the MPAA back
 
 **How can I get copies of Microsoft responses to the MPAA audit?**
 
-The [Service Trust Portal](http://aka.ms/stphelp) provides access to Microsoft responses to the Common Guidelines and the Application and Cloud Security Guidelines. You can also review copies of the Azure ISO/IEC 27001 Audit Report and the CDSA CPS Audit Report and Statement of Applicability in the portal.
+The [Service Trust Portal](https://aka.ms/stphelp) provides access to Microsoft responses to the Common Guidelines and the Application and Cloud Security Guidelines. You can also review copies of the Azure ISO/IEC 27001 Audit Report and the CDSA CPS Audit Report and Statement of Applicability in the portal.
 
 **Why is the MPAA important?**
 
@@ -56,13 +57,13 @@ Production facilities, visual effects houses, and other service partners should 
 
 ## Resources
 
-- [Motion Picture Association of America](http://www.mpaa.org/)
-- [MPAA Common Guidelines](http://www.mpaa.org/wp-content/uploads/2015/11/MPAA-Best-Practices-Common-Guidelines_V3_0_2015_04_02_FINAL-r7.pdf)
-- [MPAA Application and Cloud Guidelines](http://www.mpaa.org/wp-content/uploads/2015/12/MPAA-Best-Practices-App-and-Cloud_V1-0-20150507-RELEASE-CANDIDATE-6.docx)
+- [Motion Picture Association of America](https://www.mpaa.org/)
+- [MPAA Common Guidelines](https://www.mpaa.org/wp-content/uploads/2015/11/MPAA-Best-Practices-Common-Guidelines_V3_0_2015_04_02_FINAL-r7.pdf)
+- [MPAA Application and Cloud Guidelines](https://www.mpaa.org/wp-content/uploads/2015/12/MPAA-Best-Practices-App-and-Cloud_V1-0-20150507-RELEASE-CANDIDATE-6.docx)
 - [CSA STAR Azure Self-Assessment](https://www.microsoft.com/TrustCenter/Compliance/CSA-self-assessment)
 - [Azure Responses to CSA CAIQ v3.0.1](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/7/A/1/7A19B051-3399-4222-BEF1-E6E3E0A17961/MPAA_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/7/A/1/7A19B051-3399-4222-BEF1-E6E3E0A17961/MPAA_Backgrounder.pdf).

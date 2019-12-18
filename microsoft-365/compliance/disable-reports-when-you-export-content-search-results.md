@@ -29,7 +29,7 @@ Perform the following procedure on the computer that you'll use to export the re
     
       Save the following text to a Windows registry file by using a filename suffix of .reg; for example, DisableResultsCsv.reg.
     
-      ```
+      ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d False 
       ```
@@ -38,7 +38,7 @@ Perform the following procedure on the computer that you'll use to export the re
     
       Save the following text to a Windows registry file by using a filename suffix of .reg; for example, DisableManifestXml.reg.
     
-      ```
+      ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d False 
       ```
@@ -63,7 +63,7 @@ If you disabled the Results.csv and Manifest.xml reports by creating the .reg fi
     
         Open the DisableResultsCsv.reg file in Notepad, change the value  `False` to  `True`, and then save the file. For example, after you edit the file, it looks like this:
     
-        ```
+        ```text
         Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d True
         ```
@@ -72,7 +72,7 @@ If you disabled the Results.csv and Manifest.xml reports by creating the .reg fi
     
         Open the DisableManifestXml.reg file in Notepad, change the value  `False` to  `True`, and then save the file. For example, after you edit the file, it looks like this:
     
-      ```
+      ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d True
       ```
@@ -86,7 +86,6 @@ If you disabled the Results.csv and Manifest.xml reports by creating the .reg fi
     The Registry Editor displays a message saying that the setting was successfully added to the registry.
   
 ## Frequently asked questions about disabling export reports
-<a name="faqs"> </a>
 
  **What are the Results.csv and Manifest.xml reports?**
   

@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Service Organization Controls (SOC)
+title: Service Organization Controls (SOC)
 description: Microsoft cloud services comply with Service Organization Controls standards for operational security.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -11,9 +11,10 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Service Organization Controls (SOC)
+# Service Organization Controls (SOC)
 
 ## SOC 1, 2, and 3 Reports overview
 
@@ -103,7 +104,7 @@ With the reports, your auditors can compare Microsoft business cloud services re
 
 **How often are Azure SOC reports issued?**
 
-SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters are based on a rolling 12-month run window (audit period) with new reports issued quarterly. The increased audit frequency provides a more timely audit period coverage through a SOC report, which provides greater assurance by an external auditor when compared to a bridge letter. Customers can [download](https://aka.ms/stp) the latest reports from the Service Trust Portal.
+SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters are based on a rolling 12-month run window (audit period) with new reports issued semi-annually (period ends are March 31 and September 30). Bridge letters are issued in January to cover the period of 10/1 – 12/31 and July to cover the period of 4/1 – 6/30. Customers can [download](https://aka.ms/stp) the latest reports from the Service Trust Portal.
 
 **Do I need to conduct my own audit of Microsoft datacenters?**
 
@@ -115,19 +116,19 @@ Yes. When you migrate your applications and data to covered Microsoft cloud serv
 
 **Where do I start with my organization’s own compliance effort?**
 
-The [SOC Toolkit for Service Organizations](http://aka.ms/soc-toolkit) is a helpful resource for understanding SOC reporting processes and promoting your organization’s use of them.
+The [SOC Toolkit for Service Organizations](https://aka.ms/soc-toolkit) is a helpful resource for understanding SOC reporting processes and promoting your organization’s use of them.
 
 ## Resources
 
  - [Better protect your data by using Microsoft cloud services](https://www.microsoft.com/trustcenter/guidance/protect-data)
  - [Service Organization Control (SOC) Reports](https://aka.ms/mssocreports)
- - [SSAE 16 Auditing Standard](http://www.ssae-16.com/)
- - [ISAE 3402 Standard](http://isae3402.com/)
+ - [SSAE 16 Auditing Standard](https://www.ssae-16.com/)
+ - [ISAE 3402 Standard](https://isae3402.com/)
  - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
- - [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
+ - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
  - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
  - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf).

@@ -26,7 +26,7 @@ description: "Share files and videos inside your campaign with Microsoft Teams a
 
 # Share files and videos
 
-When you need to control who can view, and who can edit, your files, you need to store the files in a secure location, where you can make sure that permissions are applied appropriately. You can use Microsoft Teams to store your files, and then share the files either inside or outside of your campaign with Microsoft Teams or by sending SharePoint links. Sending a link rather than an email attachment means that you know who is viewing and modifying the files, and they can't be viewed or modified without your permission. 
+When you need to control who can view and who can edit your files, you need to store the files in a secure location, where you can make sure permissions are applied appropriately. You can use Microsoft Teams to store your files, and then share the files either inside or outside of your campaign by using Microsoft Teams or by sending SharePoint links. Sending a link rather than an email attachment means that you know who is viewing and modifying the files, and they can't be viewed or modified without your permission. 
 
 ![Diagram of a Microsoft Teams window, showing Files tab and Get link on the menu](media/m365-democracy-teams-sharefiles.png)
 
@@ -57,7 +57,7 @@ To share a secure link with a guest, without using Microsoft Teams, follow these
 
 To create and share videos, follow these steps.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWrv0F]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
 Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) to get a quick overview of ways to share your files.
 

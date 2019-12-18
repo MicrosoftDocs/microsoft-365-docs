@@ -17,6 +17,8 @@ description: Create a Microsoft 365 environment to test identity and device acce
 
 # Identity and device access for your Microsoft 365 test environment
 
+*This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
+
 [Identity and device access configurations](microsoft-365-policies-configurations.md) are a set of features and conditional access policies to protect access to all services that are integrated with Azure Active Directory (Azure AD), including Office 365 and Microsoft Intune in Microsoft 365 Enterprise.
 
 To create a test environment that has these policies in place:

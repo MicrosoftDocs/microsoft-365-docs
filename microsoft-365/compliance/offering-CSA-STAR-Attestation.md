@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Cloud Security Alliance (CSA) STAR attestation
+title: Cloud Security Alliance (CSA) STAR attestation
 description: Azure and Intune were awarded Cloud Security Alliance STAR attestation based on an independent audit.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -11,9 +11,10 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Cloud Security Alliance (CSA) STAR attestation
+# Cloud Security Alliance (CSA) STAR attestation
 
 ## CSA STAR attestation overview
 
@@ -48,7 +49,7 @@ Microsoft Azure and Microsoft Intune have been awarded CSA STAR Attestation. STA
 
 **Which industry standards does the CSA CCM align with?**
 
-The CCM corresponds to industry-accepted security standards, regulations, and control frameworks such as ISO/IEC 27001, PCI DSS, HIPAA, AICPA SOC 2, NERC CIP, FedRAMP, NIST, and many more. For the most current list, visit the [CSA website](http://cloudsecurityalliance.org/).
+The CCM corresponds to industry-accepted security standards, regulations, and control frameworks such as ISO/IEC 27001, PCI DSS, HIPAA, AICPA SOC 2, NERC CIP, FedRAMP, NIST, and many more. For the most current list, visit the [CSA website](https://cloudsecurityalliance.org/).
 
 **Where can I see the CSA STAR Attestation for Microsoft cloud services?**
 
@@ -65,7 +66,7 @@ You can download the [CSA STAR Attestation](https://aka.ms/CSASTAR-Attestation) 
 - [Azure standard response for request for information](https://aka.ms/AzureStandardRequestForInformation)
 - [Azure Cloud Security Alliance CAIQ](https://aka.ms/AzureCSACAIQ)
 - [Office 365 Mapping of CSA Cloud Control Matrix](https://aka.ms/Office365CSACloudControlMatrix)
-- [Cloud Security Alliance](http://cloudsecurityalliance.org/)
+- [Cloud Security Alliance](https://cloudsecurityalliance.org/)
 - [CSA Security, Trust & Assurance Registry (STAR)](https://cloudsecurityalliance.org/star/)
 - [SOC 1, 2, and 3 Reports](offering-soc.md)
 - [Cloud Controls Matrix (CCM)](https://cloudsecurityalliance.org/group/cloud-controls-matrix/)
@@ -74,4 +75,4 @@ You can download the [CSA STAR Attestation](https://aka.ms/CSASTAR-Attestation) 
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/0/0/F/00F2766F-00E5-4235-8CE8-90FE657D768F/CSA-STAR-Attestation-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/0/0/F/00F2766F-00E5-4235-8CE8-90FE657D768F/CSA-STAR-Attestation-Compliance.pdf).

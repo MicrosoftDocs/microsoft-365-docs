@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — Commodity Futures Trading Commission (CFTC) Rule 1.31(c-d) United States 
+title: Commodity Futures Trading Commission (CFTC) Rule 1.31(c-d) United States 
 description: An independent assessment firm validated that Azure and Office 365 can help financial firms meet CFTC Rule 1.31 records retention and immutable storage requirements.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -11,9 +11,10 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Commodity Futures Trading Commission (CFTC) Rule 1.31(c-d) United States
+# Commodity Futures Trading Commission (CFTC) Rule 1.31(c-d) United States
 
 ## About CFTC Rule 1.3(c-d)
 
@@ -66,4 +67,4 @@ Archiving in Office 365 helps to preserve a wide range of data, including email,
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf).

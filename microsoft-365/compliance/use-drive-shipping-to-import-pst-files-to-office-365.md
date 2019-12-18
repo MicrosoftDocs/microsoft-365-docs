@@ -1,5 +1,5 @@
 ---
-title: "Use drive shipping to import your organization PST files to Office 365"
+title: "Use drive shipping to import your organization's PST files"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -19,7 +19,7 @@ description: "For administrators: Learn how to bulk-import your organization's P
 "
 ---
 
-# Use drive shipping to import your organization PST files to Office 365
+# Use drive shipping to import your organization's PST files to Office 365
 
 **This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
@@ -60,6 +60,8 @@ For frequently asked questions about using drive shipping to import PST files to
     > Consider creating a new role group in Exchange Online that's specifically intended for importing PST files to Office 365. For the minimum level of privileges required to import PST files, assign the Mailbox Import Export and Mail Recipients roles to the new role group, and then add members. 
   
 - You need to store the PST files that you want to copy to a hard drive on a file server or shared folder in your organization. In Step 2, you run the Azure Import Export tool (WAImportExport.exe) that copies the PST files that are stored on this file server or shared folder to the hard drive.
+
+- Large PST files may impact the performance of the PST import process. So we recommend that each PST file you copy to the hard drive in Step 2 should be no larger than 20 GB.
     
 - Only 2.5-inch solid-state drives (SSDs) or 2.5-inch or 3.5-inch SATA II/III internal hard drives are supported for use with the Office 365 Import service. You can use hard drives up to 10 TB. For import jobs, only the first data volume on the hard drive will be processed. The data volume must be formatted with NTFS. When copying data to a hard drive, you can attach it directly using a 2.5-inch SSD or 2.5-inch or 3.5-inch SATA II/III connector or you can attach it externally using an external 2.5-inch SSD or 2.5-inch or 3.5-inch SATA II/III USB adaptor.
     
@@ -110,12 +112,12 @@ The first step is to download the secure storage key and the tool and that you u
   
 1. Go to [https://protection.office.com/](https://protection.office.com/) and sign in using the credentials for an administrator account in your Office 365 organization. 
     
-2. In the left pane of the Security & Compliance Center, click **Data governance** \> **Import**.
+2. In the left pane of the Security & Compliance Center, click **Information governance** \> **Import** \> **Import PST files**.
     
     > [!NOTE]
     > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the Security & Compliance Center. 
   
-3. On the **Import** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
+3. On the **Import PST files** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     
 4. In the import job wizard, type a name for the PST import job, and then click **Next**. Use lowercase letters, numbers, hyphens, and underscores. You can't use uppercase letters or include spaces in the name.
     
@@ -142,6 +144,8 @@ The first step is to download the secure storage key and the tool and that you u
 ## Step 2: Copy the PST files to the hard drive
 
 The next step is to use the WAImportExport.exe tool to copy PST files to the hard drive. This tool encrypts the hard drive with BitLocker, copies the PSTs to the hard drive, and creates a journal file that stores information about the copy process. To complete this step, the PST files have to be located in a file share or file server in your organization. This is known as the source directory in the following procedure. 
+
+ As previously stated, each PST file that you copy to the hard drive should be no larger than 20 GB. PST files larger than 20 GB may impact the performance of the PST import process that you start in Step 6.
   
 > [!IMPORTANT]
 > After you run the WAImportExport.exe tool the first time for a hard drive, you have to use a different syntax each time after that. This syntax is explained in step 4 of this procedure to copy PST files to the hard drive. 
@@ -155,7 +159,7 @@ The next step is to use the WAImportExport.exe tool to copy PST files to the har
     
 3. Run the following command the first time that you use the WAImportExport.exe to copy PST files to a hard drive.
 
-    ```
+    ```powershell
     WAImportExport.exe PrepImport /j:<Name of journal file> /t:<Drive letter> /id:<Name of session> /srcdir:<Location of PST files> /dstdir:<PST file path> /sk:<Storage account key> /blobtype:BlockBlob /encrypt /logdir:<Log file location>
     ```
 
@@ -175,7 +179,7 @@ The next step is to use the WAImportExport.exe tool to copy PST files to the har
    
     Here's an example of the syntax for the WAImportExport.exe tool using actual values for each parameter:
     
-    ```
+    ```powershell
     WAImportExport.exe PrepImport /j:PSTHDD1.jrn /t:f /id:driveship1 /srcdir:"\\FILESERVER01\PSTs" /dstdir:"ingestiondata/" /sk:"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ==" blobtype:BlockBlob /encrypt /logdir:"c:\users\admin\desktop\PstImportLogs"
     ```
 
@@ -183,13 +187,13 @@ The next step is to use the WAImportExport.exe tool to copy PST files to the har
     
 4. Run this command each subsequent time you run the WAImportExport.ext tool to copy PST files to the same hard drive.
 
-    ```
+    ```powershell
     WAImportExport.exe PrepImport /j:<Name of journal file> /id:<Name of new session> /srcdir:<Location of PST files> /dstdir:<PST file path> /blobtype:BlockBlob 
     ```
 
     Here's an example of the syntax for running subsequent sessions to copy PST files to the same hard drive.
 
-    ```
+    ```powershell
     WAImportExport.exe PrepImport /j:PSTHDD1.jrn /id:driveship2 /srcdir:"\\FILESERVER01\PSTs\SecondBatch" /dstdir:"ingestiondata/" /blobtype:BlockBlob
     ```
 
@@ -201,7 +205,7 @@ After Microsoft data center personnel upload the PST files from the hard drive t
     
 2. Open or save the CSV file to your local computer. The following example shows a completed PST Import mapping file (opened in NotePad). It's much easier to use Microsoft Excel to edit the CSV file.
 
-    ```
+    ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,FILESERVER01/PSTs,annb.pst,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,FILESERVER01/PSTs,annb_archive.pst,annb@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
@@ -241,9 +245,9 @@ The next step is to create the PST Import job in the Import service in Office 36
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your Office 365 organization. 
     
-2. In the left pane of the Security & Compliance Center, click **Data governance** and then click **Import**.
+2. In the left pane of the Security & Compliance Center, click **Information governance** \> **Import** \> **Import PST files**.
     
-3. On the **Import** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
+3. On the **Import PST files** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     
     > [!NOTE]
     > As previously stated, you have to be assigned the appropriate permissions to access the **Import** page in the Security & Compliance Center. 
@@ -298,7 +302,7 @@ The next step is to create the PST Import job in the Import service in Office 36
     
     When the import job is successfully created, a status page is displayed that explains the next steps of the drive shipping process.
     
-16. On the **Import** page, click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to displayed the new drive shipping import job in the list of import jobs. The status is set to **Waiting for tracking number**. You can also click the import job to display the status flyout page, which contains more detailed information about the import job.
+16. On the **Import PST files** page, click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to displayed the new drive shipping import job in the list of import jobs. The status is set to **Waiting for tracking number**. You can also click the import job to display the status flyout page, which contains more detailed information about the import job.
  
 ## Step 5: Ship the hard drive to Microsoft
 
@@ -327,9 +331,9 @@ After you've shipped the hard drive to Microsoft, complete the following procedu
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your Office 365 organization. 
     
-2. In the left pane, click **Data governance** and then click **Import**.
+2. In the left pane, click **Information governance > Import > Import PST files**.
     
-3. On the **Import** page, click the job for the drive shipment that you want to enter the tracking number for. 
+3. On the **Import PST files** page, click the job for the drive shipment that you want to enter the tracking number for. 
     
 4. On the status flyout page, click **Enter tracking number**.
     
@@ -343,19 +347,19 @@ After you've shipped the hard drive to Microsoft, complete the following procedu
     
 6. Click **Save** to save this information for the import job. 
     
-    On the **Import** page, click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the information for your drive shipping import job. Notice that status is now set to **Drives in transit**.
+    On the **Import PST files** page, click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the information for your drive shipping import job. Notice that status is now set to **Drives in transit**.
 
 ## Step 6: Filter data and start the PST Import job
 
-After your hard drive is received by Microsoft, the status for the import job on the **Import** page will change to **Drives received**. Data center personnel use the information in the journal file to upload your PST files to the Azure Storage area for your organization. At this point, the status changes to **Import in-progress**. As previously stated, it will take between 7 and 10 business days after receiving your hard drive to upload the PST files.
+After your hard drive is received by Microsoft, the status for the import job on the **Import PST files** page will change to **Drives received**. Data center personnel use the information in the journal file to upload your PST files to the Azure Storage area for your organization. At this point, the status changes to **Import in-progress**. As previously stated, it will take between 7 and 10 business days after receiving your hard drive to upload the PST files.
   
 After PST files are uploaded to Azure, the status is changed to **Analysis in progress**. This indicates that Office 365 is analyzing the data in the PST files (in a safe and secure manner) to identify the age of the items and the different message types included in the PST files. When the analysis is completed and the data is ready to import, the status for the import job is changed to **Analysis completed**. At this point, you have the option to import all the data contained in the PST files or you can trim the data that's imported by setting filters that control what data gets imported.
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your Office 365 organization. 
     
-2. In the left pane, click **Data governance** > **Import**.
+2. In the left pane, click **Information governance** \> **Import** \> **Import PST files**.
     
-3. On the **Import** page, click **Ready to import to Office 365** for the import job that you created in Step 4. 
+3. On the **Import PST files** page, click **Ready to import to Office 365** for the import job that you created in Step 4. 
     
     ![Click Ready to import to Office 365 next to the import job you created](media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
@@ -379,7 +383,7 @@ After PST files are uploaded to Azure, the status is changed to **Analysis in pr
     
 7. If you chose to import all the data, click **Import data** to start the import job. 
     
-    The status of the import job is displayed on the **Import** page. Click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status information that's displayed in the **Status** column. Click the import job to display the status flyout page, which displays status information about each PST file being imported. When the import is complete and PST files have been imported to user mailboxes, the status will be changed to **Completed**.
+    The status of the import job is displayed on the **Import PST files** page. Click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status information that's displayed in the **Status** column. Click the import job to display the status flyout page, which displays status information about each PST file being imported. When the import is complete and PST files have been imported to user mailboxes, the status will be changed to **Completed**.
 
 ## View a list of the PST files uploaded to Office 365
 
@@ -395,9 +399,9 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
     
 1. Go to [https://protection.office.com/](https://protection.office.com/) and sign in using the credentials for an administrator account in your Office 365 organization. 
     
-2. In the left pane of the Security & Compliance Center, click **Data governance** \> **Import**.
+2. In the left pane of the Security & Compliance Center, click **Information governance > Import > Import PST files**.
     
-3. On the **Import** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
+3. On the **Import PST files** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     
 4. In the import job wizard, type a name for the PST import job, and then click **Next**. Use lowercase letters, numbers, hyphens, and underscores. You can't use uppercase letters or include spaces in the name.
     
@@ -460,7 +464,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
 - Here's an example of the secure storage account key and a BitLocker encryption key. This example also contains the syntax for the WAImportExport.exe command that you run to copy PST files to a hard drive. Be sure to take precautions to protect these just like you would protect passwords or other security-related information.
     
 
-    ```
+    ```text
     Secure storage account key: 
 
     yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ==
@@ -489,7 +493,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
 
   WAImportExport.exe PrepImport /j:PSTHDD1.jrn /id:driveship2 /srcdir:"\\FILESERVER1\PSTs\SecondBatch" /dstdir:"ingestiondata/" /blobtype:BlockBlob
     ```
-   
+
 - As previously explained, the Office 365 Import service turns on the retention hold setting (for an indefinite duration) after PST files are imported to a mailbox. This means the  *RentionHoldEnabled*  property is set to  `True` so that the retention policy assigned to the mailbox won't be processed. This gives the mailbox owner time to manage the newly imported messages by preventing a deletion or archive policy from deleting or archiving older messages. Here are some steps you can take to manage this retention hold: 
     
   - After a certain period of time, you can turn off the retention hold by running the  `Set-Mailbox -RetentionHoldEnabled $false` command. For instructions, see [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/p/?LinkId=544749).

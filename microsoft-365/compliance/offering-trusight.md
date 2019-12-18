@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — TruSight
+title: TruSight
 description: TruSight conducted a comprehensive risk assessment of Microsoft cloud services that were designed to meet the rigorous requirements of its financial services customers.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -11,9 +11,10 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: TruSight
+# TruSight
 
 ## About TruSight
 
@@ -44,7 +45,7 @@ To purchase the *Comprehensive Assessment of Microsoft Cloud* report, contact in
 ## How to implement
 
 - [Risk Assessment & Compliance Guide](https://aka.ms/RiskGovernanceGuide): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
-- [Financial use cases](https://docs.microsoft.com/en-us/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
+- [Financial use cases](https://docs.microsoft.com/azure/industry/financial/): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
 - [US financial services regulation](https://aka.ms/FinServ-Guide-US): How Microsoft online services align with key regulatory expectations for US financial institutions.
 
 ## Frequently asked questions
@@ -64,4 +65,4 @@ To purchase the *Comprehensive Assessment of Microsoft Cloud* report, contact in
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/D/A/D/dad1cf29-5529-4797-9eda-96e5e472e619/TruSight-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/D/A/D/dad1cf29-5529-4797-9eda-96e5e472e619/TruSight-Compliance.pdf).

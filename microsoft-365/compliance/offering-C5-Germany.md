@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Cloud Computing Compliance Controls Catalog (C5)
+title: Cloud Computing Compliance Controls Catalog (C5)
 description: Find out how Azure, Azure Government, and Azure Germany demonstrated proof of compliance with the Cloud Computing Compliance Controls Catalog (C5).
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -11,9 +11,10 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Cloud Computing Compliance Controls Catalog (C5)
+# Cloud Computing Compliance Controls Catalog (C5)
 
 ## C5 overview
 
@@ -63,4 +64,4 @@ Microsoft Cloud Germany is physically based in Germany, adhering to the requirem
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/E/F/6/EF619A4D-C17C-4279-8DC4-79C0620676AB/C5Germany-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/E/F/6/EF619A4D-C17C-4279-8DC4-79C0620676AB/C5Germany-Compliance.pdf).
