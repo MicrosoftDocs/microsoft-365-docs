@@ -17,12 +17,7 @@ description: "Use information barriers to ensure communication compliance using 
 
 ## Overview
 
-
-|||
-|:-------|:-----|
-| ![Click-Throughs icon](./media/information-barriers/Clickthrough_InformationBarriers_Thumbnail.png) | [Show me the essential facts](media/information-barriers/Clickthrough_InformationBarriers.pdf). |
-|||
-
+ [![Click-Through for Information Barriers](./media/information-barriers/Clickthrough_InformationBarriers_Thumbnail.png)](./media/information-barriers/Clickthrough_InformationBarriers.pdf)
 
 <!--
 
