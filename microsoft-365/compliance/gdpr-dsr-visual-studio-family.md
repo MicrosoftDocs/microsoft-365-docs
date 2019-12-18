@@ -15,6 +15,7 @@ ms.collection:
 - M365-security-compliance
 ms.workload:
   - "multiple"
+titleSuffix: Microsoft GDPR
 ---
 # Visual Studio Family Data Subject Requests for the GDPR and CCPA
 

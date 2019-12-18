@@ -11,6 +11,7 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
 # ISO/IEC 20000-1:2011 Information Technology Service Management

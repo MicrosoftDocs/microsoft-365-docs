@@ -3,6 +3,7 @@ title: "Export report fields in Office 365 Advanced eDiscovery"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp

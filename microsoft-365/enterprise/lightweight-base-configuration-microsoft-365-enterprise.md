@@ -38,13 +38,13 @@ We start with an Office 365 E5 trial subscription and then add the Microsoft 365
 
 To start your Office 365 E5 trial subscription, you first need a fictitious company name and a new Microsoft account.
   
-1. We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here: ![](./media/Common-Images/TableLine.png)
+1. We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here: ![Line](./media/Common-Images/TableLine.png)
     
 2. To sign up for a new Microsoft account, go to [https://outlook.com](https://outlook.com) and create an account with a new email account and address. You will use this account to sign up for Office 365.
     
-  - Record the first and last name of your new account here: ![](./media/Common-Images/TableLine.png)
+  - Record the first and last name of your new account here: ![Line](./media/Common-Images/TableLine.png)
     
-  - Record the new email account address here: ![](./media/Common-Images/TableLine.png)@outlook.com
+  - Record the new email account address here: ![Line](./media/Common-Images/TableLine.png)@outlook.com
     
 ### Sign up for an Office 365 E5 trial subscription
 
@@ -53,8 +53,8 @@ To start your Office 365 E5 trial subscription, you first need a fictitious comp
 2. On the **Thank you for choosing Office 365 E5** page, specify, your new email account address in step 1.
 3. In step 2 of the trail subscription process, type the requested information, and then perform the verification.
 4. In step 3, type an organization name and then an account name that will be the global admin for the subscription. 
-5. For step 4, record the sign-in page here (select and copy): ![](./media/Common-Images/TableLine.png) 
-6. Record the user ID here: ![](./media/Common-Images/TableLine.png).onmicrosoft.com  
+5. For step 4, record the sign-in page here (select and copy): ![Line](./media/Common-Images/TableLine.png) 
+6. Record the user ID here: ![Line](./media/Common-Images/TableLine.png).onmicrosoft.com  
    Record the password that you typed in a secure location.
    This value will be referred to as the **Office 365 global administrator name**.
 8. Click **Go to Setup**.
@@ -114,11 +114,11 @@ You might want to print this article to record the specific information that you
 
 Record these values:
   
-- Office 365 global administrator name: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (from step 6 of Phase 1)
+- Office 365 global administrator name: ![Line](./media/Common-Images/TableLine.png).onmicrosoft.com (from step 6 of Phase 1)
     
     Also record the password for this account in a secure location.
     
-- Your trial subscription organization name: ![](./media/Common-Images/TableLine.png) (from step 4 of Phase 1)
+- Your trial subscription organization name: ![Line](./media/Common-Images/TableLine.png) (from step 4 of Phase 1)
     
 - To list the accounts for User 2, User 3, User 4, and User 5, run the following command from the Windows Azure Active Directory Module for Windows PowerShell prompt:
     
@@ -128,13 +128,13 @@ Record these values:
 
     Record the account names here:
     
-  - User 2 account name: user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 2 account name: user2@![Line](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 3 account name: user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 3 account name: user3@![Line](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 4 account name: user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 4 account name: user4@![Line](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 5 account name: user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 5 account name: user5@![Line](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Also record the common password for these accounts in a secure location.
    

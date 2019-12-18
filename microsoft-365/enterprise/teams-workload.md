@@ -38,7 +38,7 @@ For your first set of Teams capabilities, see [Chat, teams, channels, and apps i
 For more advanced Teams capabilities, see:
 
 - [Meetings and Conferencing](https://docs.microsoft.com/microsoftteams/deploy-meetings-microsoft-teams-landing-page)
-- [Cloud voice](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (requires Microsoft 365 Enterprise E5)
+- [Cloud voice](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (requires Microsoft 365 E5)
 
 To monitor your organization's usage of Teams, see:
 

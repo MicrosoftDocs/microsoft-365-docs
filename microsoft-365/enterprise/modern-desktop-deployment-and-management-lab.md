@@ -43,7 +43,7 @@ The lab provides you with an automatically provisioned virtual lab environment, 
 
 PLUS, the lab is designed to be connected to trials for: 
 
-  - Microsoft 365 Enterprise E5
+  - Microsoft 365 E5
 
 Or
   - Office 365 Enterprise E5

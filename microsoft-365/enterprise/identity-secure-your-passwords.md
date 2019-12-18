@@ -22,7 +22,7 @@ description: You need to make your passwords strong and manageable across your o
 <a name="identity-password-prot"></a>
 ## Prevent bad passwords
 
-*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365*
 
 All your users should be using [Microsoft's password guidance](https://www.microsoft.com/research/publication/password-guidance/) to create their user account passwords.
 
@@ -41,7 +41,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 <a name="identity-pw-reset"></a>
 ## Simplify password resets
 
-*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365*
 
 In this section, you'll enable self-service password reset (SSPR) to allow users to reset or unlock their passwords or accounts. To alert you to misuse or abuse, you can use the detailed reporting that tracks when users access the system, along with notifications. You must enable password writeback before you can deploy password resets.
 
