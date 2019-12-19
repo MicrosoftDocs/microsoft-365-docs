@@ -83,7 +83,7 @@ The following sections describe each of the eDiscovery-related RBAC roles listed
 
 ### Case Management
 
-This role lets users create, edit, delete, and control access to eDiscovery cases in the Security & Compliance Center. For more information, see [Manage eDiscovery cases in the Security & Compliance Center](manage-ediscovery-cases.md). As previously explained, a user must be assigned the Case Management role before you can use the **Add-eDiscoveryCaseAdmin** cmdlet to make them an eDiscovery Administrator. 
+This role lets users create, edit, delete, and control access to eDiscovery cases in the Security & Compliance Center. For more information, see [Manage eDiscovery cases in the Security & Compliance Center](ediscovery-cases.md). As previously explained, a user must be assigned the Case Management role before you can use the **Add-eDiscoveryCaseAdmin** cmdlet to make them an eDiscovery Administrator. 
 
 ### Compliance Search
 
