@@ -168,7 +168,7 @@
 
             - name: New Microsoft 365 security center
 
-              href: ./office-365-security/microsoft-security-and-compliance.md
+              href: ./mtp/overview-security-center.md
 
             - name: Permissions in the Security & Compliance Center
 
@@ -664,7 +664,7 @@
 
             - name: Responding to a Compromised Email Account in Office 365
 
-              href: office-365-security/responding-to-a-compromised-email-account.md
+              href: ./office-365-security/responding-to-a-compromised-email-account.md
 
         - name: Mail flow
 

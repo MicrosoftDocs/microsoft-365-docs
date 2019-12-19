@@ -83,7 +83,7 @@ Not all queries are created equal. The following table gives examples of queries
 
 [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
   
-[Run a Content Search in the Office 365 Security &amp; Compliance Center](run-a-content-search-in-the-security-and-compliance-center.md)
+[Run a Content Search](content-search.md)
   
 [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
   
