@@ -229,6 +229,6 @@ This article contains the step-by-step process to deploy a connector that uses t
 
     ![Review connector settings](media/FBCimage56.png)
 
-11. Go to the **Connectors** tab to see the progress of the import process.
+11. Go to the **Connectors** tab in the **Data connectors** page to see the progress of the import process.
 
     ![Go to the Connectors tab to track import process](media/FBCimage58.png)
