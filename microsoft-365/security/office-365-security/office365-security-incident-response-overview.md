@@ -46,7 +46,7 @@ Check back here monthly as more articles will be added over time.
 
 ## Incident response articles
 
-- [Responding to a Compromised Email Account in Office 365](~/compliance/responding-to-a-compromised-email-account.md)
+- [Responding to a Compromised Email Account in Office 365](responding-to-a-compromised-email-account.md)
 
 ## Secure Office 365 like a cybersecurity pro
 
