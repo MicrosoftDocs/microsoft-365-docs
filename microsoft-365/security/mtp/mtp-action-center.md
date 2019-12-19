@@ -23,7 +23,7 @@ ms.custom: autoir
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ## A "single pane of glass" experience
 
