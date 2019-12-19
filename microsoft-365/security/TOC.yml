@@ -168,7 +168,7 @@
 
             - name: New Microsoft 365 security center
 
-              href: ./office-365-security/microsoft-security-and-compliance.md
+              href: ./mtp/overview-security-center.md
 
             - name: Permissions in the Security & Compliance Center
 
