@@ -166,10 +166,6 @@
 
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
 
-            - name: New Microsoft 365 security center
-
-              href: ./office-365-security/microsoft-security-and-compliance.md
-
             - name: Permissions in the Security & Compliance Center
 
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
@@ -664,7 +660,7 @@
 
             - name: Responding to a Compromised Email Account in Office 365
 
-              href: office-365-security/responding-to-a-compromised-email-account.md
+              href: ./office-365-security/responding-to-a-compromised-email-account.md
 
         - name: Mail flow
 
