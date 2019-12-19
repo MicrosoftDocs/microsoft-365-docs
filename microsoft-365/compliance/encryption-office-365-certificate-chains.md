@@ -3,7 +3,7 @@ title: "Office 365 encryption chains"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/26/2019
+ms.date: 12/19/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -19,7 +19,7 @@ description: "View a complete list of root certificates and certificate authorit
 
 # Office 365 encryption chains
 
-Office 365 leverages a number of different certificate providers. The following describes the complete list of known Office 365 root certificates that customers may encounter when accessing Office 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Office 365](https://docs.microsoft.com/en-us/office365/enterprise/plan-for-third-party-ssl-certificates). The following certificate information applies to all worldwide and national cloud instances of Office 365.
+Office 365 leverages a number of different certificate providers. The following describes the complete list of known Office 365 root certificates that customers may encounter when accessing Office 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates). The following certificate information applies to all worldwide and national cloud instances of Office 365.
 
 **ITAR customers (Defense & GCC High):** please contact your Cloud TAM or SDM for the correct P7b package.
 
@@ -770,5 +770,5 @@ sr.symcb.com/sr.crt<br>
 su.symcb.com/su.crt<br>
 <https://www.digicert.com/CACerts/DigiCertGlobalRootCA.crt><br>
 <https://www.digicert.com/CACerts/DigiCertHighAssuranceEVRootCA.crt><br>
-www.microsoft.com/pki/mscorp/msitwww1.crt<br>
-www.microsoft.com/pki/mscorp/msitwww2.crt<br>
+<https://www.microsoft.com/pki/mscorp/msitwww1.crt><br>
+<https://www.microsoft.com/pki/mscorp/msitwww2.crt><br>
