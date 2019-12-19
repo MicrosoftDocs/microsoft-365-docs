@@ -55,6 +55,8 @@ When you apply a sensitivity label to an item either through Microsoft 365 or Az
 
 For more information on sensitivity labels, see: [Overview of sensitivity labels](sensitivity-labels.md)
 
+Sensitivity labels must be enabled for files that are in SharePoint and OneDrive in order for the corresponding data to surface in the data classification page. For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md).
+
 The sensitivity label card shows the number of items (email or document) by sensitivity level.
 
 ![breakdown of content by sensitivity label classification placeholder screenshot](media/data-classification-top-sensitivity-labels-applied.png)
