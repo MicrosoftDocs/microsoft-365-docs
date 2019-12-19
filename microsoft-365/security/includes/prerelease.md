@@ -1,6 +1,6 @@
 ---
 author: mjcaparas
-ms.service: icrosoft-365-enterprise 
+ms.service: microsoft-365-enterprise 
 ms.topic: include
 ms.date: 12/18/2019
 ms.author: macapara
