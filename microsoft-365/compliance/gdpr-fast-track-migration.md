@@ -2,7 +2,6 @@
 title: GDPR
 description: Microsoft technical guidance — FASTTRACK MIGRATIONS TOOLSET FOR SUBMITTING DELETE REQUEST
 keywords: FastTrack Migration, Microsoft 365 Education, Microsoft 365 documentation, GDPR
-author: MohitKumar
 localization_priority: Priority
 Robots:  NOFOLLOW,NOINDEX
 ms.prod: Microsoft-365-enterprise
