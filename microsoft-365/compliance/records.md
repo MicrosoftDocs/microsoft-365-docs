@@ -1,7 +1,7 @@
 ---
 title: "Overview of records"
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -10,6 +10,7 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
+- SPO_Content
 search.appverid: 
 - MOE150
 - MET150
@@ -46,6 +47,10 @@ Keep the following things in mind about records:
 
   - **Records and folders.** You can apply a retention label to a folder in Exchange, SharePoint, and OneDrive. If a folder is labeled as a record, and you move an item into the folder, the item is labeled as a record. When you move the item out of the folder, the item remains labeled as a record.
 
+    Also, if you change the record label that's applied to a folder (in SharePoint and OneDrive) to a retention label that does not declare content as a record, then items in the folder keep their existing  record label.
+
+    For more information about applying retention labels to SharePoint and OneDrive folders, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+
   - **Records can't be deleted**. If a user attempts to delete a record in Exchange, the item is moved to the Recoverable Items folder as described in [How a retention policy works with content in place](retention-policies.md#content-in-mailboxes-and-public-folders).
 
     If a user attempts to delete a record in a SharePoint, an error is displayed say that the item wasn't deleted, and remains in the library.
@@ -68,9 +73,6 @@ When you create a retention label, you have the option to use the retention labe
 
 3. [Publish](labels.md#how-retention-labels-work-with-retention-label-policies) or [auto-apply](labels.md#applying-a-retention-label-automatically-based-on-conditions) the retention label to SharePoint sites and/or OneDrive accounts. 
 
-> [!NOTE]
-> Using a retention label that declares content as a record requires an Office 365 Enterprise E5 license for each user who has permissions to edit the content. Users who simply have read-only access don't require an E5 license.
-
 ### Applying a retention label to content
 
 For Exchange, any user with write-access to the mailbox can apply a record label to an email message. For content in SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply a record label to content. Only a site collection admin can remove or change that record label after it's been applied. As previously explained, a retention label that classifies content as a record can be auto-applied to content.
@@ -82,7 +84,7 @@ Here's what this looks like when a record label is applied to a document on a Sh
 
 ## Record versioning
 
-An essential part of records management is the ability to declare a document as a record and have that record be immutable. At the same time, record immutability prevents collaboration on the document if people need to create subsequent versions. For example, you might declare a sales contract as a record, but then need to update the contract with new terms and declare the latest version as a new record while still retaining the previous record version. For these types of scenarios, SharePoint Online and OneDrive for Business now support *record versioning*.
+An essential part of records management is the ability to declare a document as a record and have that record be immutable. At the same time, record immutability prevents collaboration on the document if people need to create subsequent versions. For example, you might declare a sales contract as a record, but then need to update the contract with new terms and declare the latest version as a new record while still retaining the previous record version. For these types of scenarios, SharePoint Online and OneDrive for Business now support *record versioning*. OneNote notebook folders are not supported.
 
 To use record versioning, the first step is to use the Microsoft 365 compliance center to create and publish retention labels that declare records to all SharePoint sites and/or OneDrive accounts, or publish them to specific SharePoint sites and/or OneDrive accounts. The next step is to apply a published retention record label to a document. When this is done, a document property, called *Record status* is displayed next to the retention label, and the initial record status will be **Locked**. At this point, you can do the following things:
 
@@ -92,13 +94,13 @@ To use record versioning, the first step is to use the Microsoft 365 compliance 
 
   - **Maintain an evergreen document that contains all versions.** By default, each SharePoint and OneDrive document has a version history available on the item menu. In this version history, you can easily see which versions are records and view those documents.
 
-> [!NOTE]
-> Record versioning requires an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been declared as a record in a SharePoint site or OneDrive account. Users who have read-only access don't require a license.
-
 Record versioning is automatically available for any document that has a retention label that declares the item as a record. When a user views the document properties through the details pane, they toggle the **Record status** from **Locked** to **Unlocked**. This single click creates a record in the Records folder in the Preservation Hold library, where it resides for the remainder of its retention period. While the document is unlocked, any user with permissions can edit the file. However, users can't delete the file, because it's considered a declared record. After the necessary changes are made, the user can then toggle the **Record status** from **Unlocked** to **Locked**, so that the document is again declared a record and can't be edited.
 <br/><br/>
 
 :::image type="content" source="media/recordversioning8.png" alt-text="Record status property on document tagged as a record":::
+
+> [!NOTE]
+> Record versioning requires an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been declared a record in a SharePoint site or OneDrive account. Users who have read-only access don't require a license.
 
 ### Locking and unlocking a record
 

@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Canadian Privacy Laws
+title: Canadian Privacy Laws
 description: Azure and Intune can help customers meet their obligations under Canadian privacy laws.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -11,9 +11,10 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Canadian Privacy Laws
+# Canadian Privacy Laws
 
 ## About Canadian Privacy Laws
 
@@ -29,7 +30,7 @@ In general, PIPEDA applies to commercial activities in all provinces and territo
 
 Microsoft Azure and Microsoft Intune are built with established ISO/IEC security standards in mind, and Microsoft maintains technical and organizational measures to protect customer data. These measures comply with the requirements set forth in such established security standards as [ISO/IEC 27001](offering-iso-27001.md) and ISO/IEC 27002, and the code of practice for cloud privacy, [ISO/IEC 27018](offering-ISO-27018.md). Microsoft has assessed its practices in risk, security, and incident management; access control; data integrity protection; and other areas relative to the recommendations from the Office of the Privacy Commissioner of Canada, and has determined that in-scope Azure and Intune services can meet those recommendations. This means that Azure and Intune can help customers meet the requirements of Canadian privacy laws.
 
-To support public- and private-sector organizations that are concerned about data sovereignty, Microsoft has established two datacenters in Canada in Toronto and Quebec City. These datacenters add in-country data residency, failover, and disaster recovery for core customer data at rest as defined in the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+To support public- and private-sector organizations that are concerned about data sovereignty, Microsoft has established two datacenters in Canada in Toronto and Quebec City. These datacenters add in-country data residency, failover, and disaster recovery for core customer data at rest as defined in the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 To assist Canadian customers who are considering outsourcing business functions to the cloud, Microsoft has published [Navigating your way to the cloud: A compliance checklist for financial institutions in Canada](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=626fb641-9dca-45c0-abaf-0a7849c15f81&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides). This document provides an overview of the regulatory landscape, including privacy regulations, and a detailed listing of how Microsoft business cloud services can help organizations meet contractual requirements for material outsourcing arrangements.
 
@@ -48,7 +49,7 @@ To assist Canadian customers who are considering outsourcing business functions 
 
 **Can customers using Azure and Intune comply with PIPEDA and other Canadian privacy laws?**
 
-Microsoft agrees in its [Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) that it complies with laws and regulations that apply to its provision of Microsoft Online Services. However, organizations that use Microsoft business cloud services always remain accountable for adherence to Canadian privacy legislation — the laws are clear that organizations are ultimately responsible for ensuring that any sensitive data they gather is fairly handled and adequately protected.  
+Microsoft agrees in its [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) that it complies with laws and regulations that apply to its provision of Microsoft Online Services. However, organizations that use Microsoft business cloud services always remain accountable for adherence to Canadian privacy legislation — the laws are clear that organizations are ultimately responsible for ensuring that any sensitive data they gather is fairly handled and adequately protected.  
 
 As a result, privacy is a shared responsibility between Microsoft as a cloud service provider and the customer using cloud services. At a high level, this means that customers must ensure that their solutions implemented within Microsoft environments address the 10 principles codified in PIPEDA — for example, getting the consent of individuals to collect their data and safeguarding it with adequate security measures.
 
@@ -69,9 +70,9 @@ PIPEDA doesn’t require Canadian businesses to keep personal information in Can
 - [Summary of privacy laws in Canada](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942) (OPCC)
 - [Privacy at Microsoft](https://privacy.microsoft.com)
 - [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
-- [Privacy considerations in the cloud](http://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
+- [Privacy considerations in the cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/1/9/3/19390188-F5C7-4819-80BB-30B84304E499/CanadianPrivacyLaws-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/1/9/3/19390188-F5C7-4819-80BB-30B84304E499/CanadianPrivacyLaws-Compliance.pdf).

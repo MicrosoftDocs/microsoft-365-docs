@@ -9,8 +9,11 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft GDPR
 ---
 
 # Azure accountability readiness checklist for the GDPR
@@ -121,7 +124,7 @@ For more GDPR-related documentation, visit [https://aka.ms/gdprgetstarted](https
 ||||
 |:-----|:-----|:-------|
 |**ID**|**Description/Link**|
-| 1 <a name="1"> </a> | [Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
+| 1 <a name="1"> </a> | [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 | 2 <a name="2"></a>  | [Azure Security documentation](https://docs.microsoft.com/azure/security/), see Governance and compliance, GDPR |
 | 3 <a name="3"> </a> | [FedRAMP Moderate FedRAMP System Security Plan (SSP)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=e46a519a-bcf6-4dc2-8f60-6d0e4e00a85e&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports) |
 | 4 <a name="4"> </a>   | [Microsoft Cloud Security Policy](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5868ecc8-50b7-4f91-b43f-640e2b99e86e&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)  |
@@ -130,7 +133,7 @@ For more GDPR-related documentation, visit [https://aka.ms/gdprgetstarted](https
 | 7 <a name="7"> </a>   | [Who can access your data and on what terms](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
 | 8 <a name="8"> </a>   | [Contracts for sub-processors: Contracting with Microsoft](https://www.microsoft.com/procurement/supplier-contracting.aspx#SSPA) |
 | 9 <a name="9"> </a>   | [Azure Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure) |
-| 10 <a name="10"> </a> | [Azure and Breach Notification Under the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure) |
+| 10 <a name="10"> </a> | [Azure and Dynamics 365 breach notification under the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics) |
 | 11 <a name="11"> </a> | [Key Information from Azure for Customer Data Protection Impact Assessments](https://aka.ms/DPIAAzure) |
 | 12 <a name="12"> </a> | [SOC 2 Type 2 Audit Report [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |

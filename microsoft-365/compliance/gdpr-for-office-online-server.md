@@ -1,5 +1,6 @@
 ---
 title: "GDPR for Office Online Server and Office Web Apps Server"
+description: "Learn about how to address GDPR requirements on-premises Exchange Server."
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,12 +8,12 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-description: "Learn about how to address GDPR requirements on-premises Exchange Server."
+titleSuffix: Microsoft GDPR
 ---
 
 # GDPR for Office Web Apps Server and Office Online Server
 
-Office Online Server and Office Web Apps Server telemetry data is stored in the form of ULS logs. You can use [ULS Viewer](https://www.microsoft.com/en-us/download/details.aspx?id=44020) to view ULS logs from your on-premises tenant.
+Office Online Server and Office Web Apps Server telemetry data is stored in the form of ULS logs. You can use [ULS Viewer](https://www.microsoft.com/download/details.aspx?id=44020) to view ULS logs from your on-premises tenant.
 
 Every log line contains a CorrelationID. Related log lines share the same CorrelationID. Each CorrelationID is tied to a single SessionID, and one SessionID may be related to many CorrelationIDs. Each SessionID may be related to a single UserID, although some sessions can be anonymous and therefore not have an associated UserID. In order to determine what data is associated with a particular user, it is therefore possible to map from a single UserID to the SessionIDs associated with that user, from those SessionIDs to the associated CorrelationIDs, and from those CorrelationIDs to all the logs in those correlations. See the below diagram for the relationship between the different IDs.
 

@@ -1,5 +1,5 @@
 ---
-title: "Use network upload to import your organization PST files to Office 365"
+title: "Use network upload to import your organization's PST files"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -18,7 +18,7 @@ ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: "For administrators: Learn how to use network upload to bulk-import multiple PST files to user mailboxes in Office 365."
 ---
 
-# Use network upload to import your organization PST files to Office 365
+# Use network upload to import your organization's PST files to Office 365
 
 > [!NOTE]
 > This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)
@@ -56,8 +56,10 @@ You have to perform Step 1 only once to import PST files to Office 365 mailboxes
   
 - The only supported method for importing PST files to Office 365 is to use the Azure AzCopy tool, as described in this topic. You can't use the Azure Storage Explorer to upload PST files directly to the Azure Storage area.
     
-- You need to store the PST files that you want to import to Office 365 on a file server or shared folder in your organization. In Step 2, you run the Azure AzCopy tool that uploads the PST files that are stored on this file server or shared folder to Office 365.
+- You need to store the PST files that you want to import to Office 365 on a file server or shared folder in your organization. In Step 2, you run the Azure AzCopy tool that uploads the PST files that are stored on a file server or shared folder to Office 365.
     
+- Large PST files may impact the performance of the PST import process. So we recommend that each PST file you upload to the Azure Storage location in Step 2 should be no larger than 20 GB.
+
 - This procedure involves copying and saving a copy of a URL that contains an access key. This information will be used in Step 2 to upload your PST files, and in Step 3 if you want to view a list of the PST files uploaded to Office 365. Be sure to take precautions to protect this URL like you would protect passwords or other security-related information. For example, you might save it to a password-protected Microsoft Word document or to an encrypted USB drive. See the [More information](#more-information) section for an example of this combined URL and key. 
     
 - You can import PST files to an inactive mailbox in Office 365. You do this by specifying the GUID of the inactive mailbox in the  `Mailbox` parameter in the PST Import mapping file. See Step 4 on the **Instructions** tab in this topic for information. 
@@ -70,7 +72,7 @@ You have to perform Step 1 only once to import PST files to Office 365 mailboxes
     
     See [Step 4](#step-4-create-the-pst-import-mapping-file) for more information. 
     
-- After PST files are imported to an Office 365 mailbox, the retention hold setting for the mailbox is turned on for an indefinite duration. This means that the retention policy assigned to the mailbox won't be processed until you turn off the retention hold or set a date to turn off the hold. Why do we do this? If messages imported to a mailbox are old, they might be permanently deleted (purged) because their retention period has expired based on the retention settings configured for the mailbox. Placing the mailbox on retention hold gives the mailbox owner time to manage these newly imported messages or give you time to change the retention settings for the mailbox. See the **More info** tab in this topic for suggestions about managing the retention hold. 
+- After PST files are imported to an Office 365 mailbox, the retention hold setting for the mailbox is turned on for an indefinite duration. This means that the retention policy assigned to the mailbox won't be processed until you turn off the retention hold or set a date to turn off the hold. Why do we do this? If messages imported to a mailbox are old, they might be permanently deleted (purged) because their retention period has expired based on the retention settings configured for the mailbox. Placing the mailbox on retention hold gives the mailbox owner time to manage these newly imported messages or give you time to change the retention settings for the mailbox. See the [More information](#more-information) section in this topic for suggestions about managing the retention hold. 
     
 - By default, the maximum message size that can be received by an Office 365 mailbox is 35 MB. That's because the default value for the  *MaxReceiveSize*  property for a mailbox is set to 35 MB. However, the limit for the maximum message receive size in Office 365 is 150 MB. So if you import a PST file that contains an item larger than 35 MB, the Office 365 Import service we will automatically change the value of the  *MaxReceiveSize*  property on the target mailbox to 150 MB. This allows messages up to 150 MB to be imported to user mailboxes. 
     
@@ -86,12 +88,12 @@ The first step is to download and install the Azure AzCopy tool, which is the to
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your Office 365 organization. 
     
-2. In the left pane of the Security & Compliance Center, click **Data governance** \> **Import**.
+2. In the left pane of the Security & Compliance Center, click **Information governance** \> **Import** \> **Import PST files**.
     
     > [!NOTE]
     > You have to be assigned the appropriate permissions to access the **Import** page in the Security & Compliance Center. See the **Before you begin** section for more information. 
     
-3. On the **Import** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
+3. On the **Import PST files** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     
     The import job wizard is displayed.
     
@@ -115,18 +117,20 @@ The first step is to download and install the Azure AzCopy tool, which is the to
 ## Step 2: Upload your PST files to Office 365
 
 Now you're ready to use the AzCopy.exe tool to upload PST files to Office 365. This tool uploads and stores them in an Azure Storage location in the Microsoft cloud. As previously explained, the Azure Storage location that you upload your PST files to resides in the same regional Microsoft datacenter where your Office 365 organization is located. To complete this step, the PST files have to be located in a file share or file server in your organization. This is known as the source directory in this procedure. Each time you run the AzCopy tool, you can specify a different source directory. 
-  
+
+> [!NOTE]
+> As previously stated, each PST file that you upload to the Azure Storage location should be no larger than 20 GB. PST files larger than 20 GB may impact the performance of the PST import process that you start in Step 6.
+
 1. Open a Command Prompt on your local computer.
     
 2. Go to the directory where you installed the AzCopy.exe tool in Step 1. If you installed the tool in the default location, go to `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy`.
     
 3. Run the following command to upload the PST files to Office 365.
 
-    ```
+    ```powershell
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
-  
     ```
- 
+
     > [!IMPORTANT] 
     > You must specify a directory as the source location in the previous command; you can't specify an individual PST file. All PST files in the source directory will be uploaded.
  
@@ -135,16 +139,15 @@ Now you're ready to use the AzCopy.exe tool to upload PST files to Office 365. T
     |**Parameter**|**Description**|**Example**|
     |:-----|:-----|:-----|
     | `/Source:` <br/> |Specifies the source directory in your organization that contains the PST files that will be uploaded to Office 365.  <br/> Be sure to surround the value of this parameter with double-quotation marks (" ").  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
-    | `/Dest:` <br/> |Specifies the SAS URL that you obtained in Step 1.  <br/> Be sure to surround the value of this parameter with double-quotation marks (" ").  <br/> **Tip:** (Optional) You can specify a subfolder in the Azure Storage location to upload the PST files to. You do this by adding a subfolder location (after "ingestiondata") in the SAS URL. The first example doesn't specify a subfolder. That means the PSTs are uploaded to the root (named  *ingestiondata*) of the Azure Storage location. The second example uploads the PST files to a subfolder (named  *PSTFiles*) in the root of the Azure Storage location.  <br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Or  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | `/Dest:` <br/> |Specifies the SAS URL that you obtained in Step 1.  <br/> Be sure to surround the value of this parameter with double-quotation marks (" ").<br/><br/>**Note:** If you use the SAS URL in a script or batch file, you need to watch out for certain characters that need to be escaped. For example, you have to change `%` to `%%` and change `&` to `^&`.<br/><br/>**Tip:** (Optional) You can specify a subfolder in the Azure Storage location to upload the PST files to. You do this by adding a subfolder location (after "ingestiondata") in the SAS URL. The first example doesn't specify a subfolder. That means the PSTs are uploaded to the root (named  *ingestiondata*) of the Azure Storage location. The second example uploads the PST files to a subfolder (named  *PSTFiles*) in the root of the Azure Storage location.  <br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Or  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
     | `/V:` <br/> |Outputs verbose status messages into a log file. By default, the verbose log file is named AzCopyVerbose.log in %LocalAppData%\Microsoft\Azure\AzCopy. If you specify an existing file location for this option, the verbose log will be appended to that file.  <br/> Be sure to surround the value of this parameter with double-quotation marks (" ").  <br/> | `/V:"c:\Users\Admin\Desktop\Uploadlog.log"` <br/> |
     | `/S` <br/> |This optional switch specifies the recursive mode so that the AzCopy tool copies PSTs files that are located in subfolders in the source directory that is specified by the  `/Source:` parameter.  <br/> **Note:** If you include this switch, PST files in subfolders will have a different file pathname in the Azure Storage location after they're uploaded. You'll have to specify the exact file pathname in the CSV file that you create in Step 4.  <br/> | `/S` <br/> |
     | `/Y` <br/> |This required switch allows the use of write-only SAS tokens when you upload the PST files to the Azure Storage location. The SAS URL you obtained in step 1 (and specified in  `/Dest:` parameter) is a write-only SAS URL, which is why you must include this switch. A write-only SAS URL won't prevent you from using the Azure Storage Explorer to view a list of the PST files uploaded to the Azure Storage location.  <br/> | `/Y` <br/> |
-   
+
 Here's an example of the syntax for the AzCopy.exe tool using actual values for each parameter:
     
-```
+```powershell
   AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
-  
 ```
 
 After you run the command, status messages are displayed that show the progress of uploading the PST files. A final status message shows the total number of files that were successfully uploaded.
@@ -195,8 +198,7 @@ After the PST files have been uploaded to the Azure Storage location for your Of
     
 2. Open or save the CSV file to your local computer. The following example shows a completed PST Import mapping file (opened in NotePad). It's much easier to use Microsoft Excel to edit the CSV file.
 
-
-    ```
+    ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst,annb@contoso.onmicrosoft.com,TRUE,,,,,
@@ -209,6 +211,7 @@ After the PST files have been uploaded to the Azure Storage location for your Of
     Exchange,PSTFiles,zrinkam.pst,zrinkam@contoso.onmicrosoft.com,FALSE,,,,,
     Exchange,PSTFiles,zrinkam_archive.pst,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
+    
     The first row, or header row, of the CSV file lists the parameters that will be used by the PST Import service to import the PST files to user mailboxes. Each parameter name is separated by a comma. Each row under the header row represents the parameter values for importing a PST file to a specific mailbox. You need a row for each PST file that you want to import to a user mailbox. Be sure to replace the placeholder data in the mapping file with your actual data.
 
    **Note:** Don't change anything in the header row, including the SharePoint parameters; they will be ignored during the PST Import process. 
@@ -235,9 +238,9 @@ The next step is to create the PST Import job in the Import service in Office 36
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your Office 365 organization. 
     
-2. In the left pane of the Security & Compliance Center, click **Data governance** and then click **Import**.
+2. In the left pane of the Security & Compliance Center, click **Information governance > Import > Import PST files**.
     
-3. On the **Import** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
+3. On the **Import PST files** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New import job**.
     
     **Note:** You have to be assigned the appropriate permissions to access the **Import** page in the Security & Compliance Center to create an import job. See the **Before you begin** section for more information. 
     
@@ -265,7 +268,7 @@ The next step is to create the PST Import job in the Import service in Office 36
     
 10. Click **Save** to submit the job, and then click **Close** after the job is successfully created. 
     
-    A status flyout page is displayed, with a status of **Analysis in progress** and the new import job is displayed in the list on the **Import** page. 
+    A status flyout page is displayed, with a status of **Analysis in progress** and the new import job is displayed in the list on the **Import PST files** page. 
     
 11. Click **Refresh** ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the status information that's displayed in the **Status** column. When the analysis is complete and the data is ready to be imported, the status is changed to **Analysis completed**.
     
@@ -275,7 +278,7 @@ The next step is to create the PST Import job in the Import service in Office 36
 
 After you create the import job in Step 5, Office 365 analyzes the data in the PST files (in a safe and secure manner) by identifying the age of the items and the different message types included in the PST files. When the analysis is completed and the data is ready to import, you have the option to import all the data contained in the PST files or you can trim the data that's imported by setting filters that control what data gets imported.
   
-1. On the **Import** page in the Security & Compliance Center, click **Ready to import to Office 365** for the import job that you created in Step 5. 
+1. On the **Import PST files** page in the Security & Compliance Center, click **Ready to import to Office 365** for the import job that you created in Step 5. 
     
     ![Click Ready to import to Office 365 next to the import job you created](media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
@@ -299,7 +302,7 @@ After you create the import job in Step 5, Office 365 analyzes the data in the P
     
 4. If you chose to import all the data, click **Import data** to start the import job. 
     
-    The status of the import job is display on the **Import** page. Click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status information that's displayed in the **Status** column. Click the import job to display the status flyout page, which displays status information about each PST file being imported. 
+    The status of the import job is display on the **Import PST files** page. Click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status information that's displayed in the **Status** column. Click the import job to display the status flyout page, which displays status information about each PST file being imported. 
 
 ## How the import process works
   
@@ -317,11 +320,11 @@ Here's an illustration and description of the network upload process to import P
     
 3. **Create a PST import mapping file:** After the PST files have been uploaded to the Azure Storage location, the next step is to create a comma-separated value (CSV) file that specifies which user mailboxes the PST files will be imported to, note that a PST file can be imported to a user's primary mailbox or their archive mailbox. The Office 365 Import service uses the information in the CSV file to import the PST files.
     
-4. **Create a PST import job:** The next step is to create a PST import job on the **Import** page in the Security & Compliance Center and submit the PST import mapping file created in the previous step. After you create the import job, Office 365 analyzes the data in the PST files and then gives you an opportunity to set filters that control what data actually gets imported to the mailboxes specified in the PST import mapping file. 
+4. **Create a PST import job:** The next step is to create a PST import job on the **Import PST files** page in the Security & Compliance Center and submit the PST import mapping file created in the previous step. After you create the import job, Office 365 analyzes the data in the PST files and then gives you an opportunity to set filters that control what data actually gets imported to the mailboxes specified in the PST import mapping file. 
     
 5. **Filter the PST data that will be imported to mailboxes:** After the import job is created and started, Office 365 analyzes the data in the PST files (safely and securely) by identifying the age of the items and the different message types included in the PST files. When the analysis is completed and the data is ready to import, you have the option to import all the data contained in the PST files or you can trim the data that's imported by setting filters that control what data gets imported.
     
-6. **Start the PST import job:** After the import job is started, Office 365 uses the information in the PST import mapping file to import the PSTs files from the he Azure Storage location to user mailboxes. Status information about the import job (including information about each PST file being imported) is displayed on the **Import** page in the Security & Compliance Center. When the import job is finished, the status for the job is set to **Complete**.
+6. **Start the PST import job:** After the import job is started, Office 365 uses the information in the PST import mapping file to import the PSTs files from the he Azure Storage location to user mailboxes. Status information about the import job (including information about each PST file being imported) is displayed on the **Import PST files** page in the Security & Compliance Center. When the import job is finished, the status for the job is set to **Complete**.
   
 ## More information
 
@@ -349,7 +352,7 @@ Here's an illustration and description of the network upload process to import P
   
 - Here's an example of the Shared Access Signature (SAS) URL that's obtained in Step 1. This example also contains the syntax for the command that you run in the AzCopy.exe tool to upload PST files to Office 365. Be sure to take precautions to protect the SAS URL just like you would protect passwords or other security-related information.
 
-    ```
+    ```text
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D
 
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y

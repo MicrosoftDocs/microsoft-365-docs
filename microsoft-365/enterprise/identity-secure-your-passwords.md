@@ -22,11 +22,11 @@ description: You need to make your passwords strong and manageable across your o
 <a name="identity-password-prot"></a>
 ## Prevent bad passwords
 
-*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365*
 
-All you users should be using [Microsoft's password guidance](https://www.microsoft.com/research/publication/password-guidance/) to create their user account passwords.
+All your users should be using [Microsoft's password guidance](https://www.microsoft.com/research/publication/password-guidance/) to create their user account passwords.
 
-To prevent users from creating easily determined password, use Azure AD password protection, which uses both a global banned password list and an optional custom banned password list that you specify. For example, you can specify terms that are specific to your organization, such as:
+To prevent users from creating an easily-determined password, use Azure AD password protection, which uses both a global banned password list and an optional custom banned password list that you specify. For example, you can specify terms that are specific to your organization, such as:
 
 - Brand names
 - Product names
@@ -41,7 +41,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 <a name="identity-pw-reset"></a>
 ## Simplify password resets
 
-*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365*
 
 In this section, you'll enable self-service password reset (SSPR) to allow users to reset or unlock their passwords or accounts. To alert you to misuse or abuse, you can use the detailed reporting that tracks when users access the system, along with notifications. You must enable password writeback before you can deploy password resets.
 
@@ -85,7 +85,7 @@ With Microsoft 365 Enterprise, you can customize the appearance of the sign-in a
 
 For more information, see [Add your company branding to Office 365 Sign In page](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
 
-For configuration instructions, see [Add company branding to your sign-in and Access Panel pages](http://aka.ms/aadpaddbranding).
+For configuration instructions, see [Add company branding to your sign-in and Access Panel pages](https://aka.ms/aadpaddbranding).
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-custom-sign-in) for this section.
 

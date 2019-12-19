@@ -34,7 +34,7 @@ description: Learn how to prepare for Windows and Office servicing in your envir
 
 Both Windows 10 and Office 365 ProPlus introduce new servicing options, support models, and update timelines. These changes simplify the process for staying current on the latest features. Along with these updates are new configuration options to enable servicing plans that meet your needs. Let's learn how to prepare for semi-annual channel updates offering new features and capabilities in Windows 10 and Office 365 ProPlus while leveraging new features within System Center Configuration Manager (Current Branch).
 
-[Helping customers shift to Windows 10 and Office 365 ProPlus](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
+[Helping customers shift to Windows 10 and Office 365 ProPlus](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
 ## Update Types
 
@@ -54,9 +54,9 @@ To answer those questions and the rationale for delivering new capabilities more
 
 First, we’ve moved away from the model of the past that would introduce huge waves of change around every three years to now incremental smaller changes with feature updates twice per year. Why? With technology trends moving so fast in addition to rapidly evolving security threats, this keeps experiences and protections current. Some of the security related updates for example can’t just be delivered by monthly security updates or antivirus signature files; they may be low-level changes platform, like virtualization-based security.
 
-[Quick guide to Windows as a service](https://docs.microsoft.com/en-us/windows/deployment/update/waas-quick-start)
+[Quick guide to Windows as a service](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)
 
-[Mitigate threats by using Windows 10 security features](https://docs.microsoft.com/en-us/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10%20%20)
+[Mitigate threats by using Windows 10 security features](https://docs.microsoft.com/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10%20%20)
 
 ### Cumulative Update Model Benefits
 
@@ -66,7 +66,7 @@ With the cumulative model, you’re always one update away from being current an
 
 ### Expanded Validation of Updates
 
-Another advantage is that, before we roll out updates for broad deployment, we first release builds via the Insider programs for [Office](https://products.office.com/en-us/office-insider?tab=Windows-Desktop) and [Windows](https://insider.windows.com/en-us/), and this allows us to gather diagnostic data and feedback ahead of us releasing updates broadly. Now the Insider programs are open to everyone so that you can get ahead of understanding the updates. By the time we release updates we will have received diagnostic data from millions of configurations, so when we do roll out updates, quality is now inherently more predictable
+Another advantage is that, before we roll out updates for broad deployment, we first release builds via the Insider programs for [Office](https://products.office.com/office-insider?tab=Windows-Desktop) and [Windows](https://insider.windows.com/), and this allows us to gather diagnostic data and feedback ahead of us releasing updates broadly. Now the Insider programs are open to everyone so that you can get ahead of understanding the updates. By the time we release updates we will have received diagnostic data from millions of configurations, so when we do roll out updates, quality is now inherently more predictable
 
 AND one more thing, because Office 365 ProPlus Insider builds reflect monthly channel updates, if you are using semi-annual channel for Office to deliver feature updates twice per year aligned to Windows, you can validate those builds early as well using the semi-annual channel targeted releases.
 
@@ -74,29 +74,29 @@ AND one more thing, because Office 365 ProPlus Insider builds reflect monthly ch
 
 We've also thought through how to make the deployment of updates seamless to you. System Center Configuration Manager (Current Branch) is updated frequently to support the roll-out of these updates to Windows and Office and any new capabilities.
 
-[Deploy Windows 10 updates using System Center Configuration Manager](https://docs.microsoft.com/en-us/windows/deployment/update/waas-manage-updates-configuration-manager)
+[Deploy Windows 10 updates using System Center Configuration Manager](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[Manage Office 365 ProPlus with Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+[Manage Office 365 ProPlus with Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## Overview of Windows and Office Channels
 
 Windows 10 offers three servicing channels:
 
-- [**Windows Insider Program**](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#windows-insider) for organizations to test and provide feedback on features shipped in the next feature update
+- [**Windows Insider Program**](https://docs.microsoft.com/windows/deployment/update/waas-overview#windows-insider) for organizations to test and provide feedback on features shipped in the next feature update
 - **Semi-Annual Channel** provides new functionality with Feature Update releases twice per year
 - **Long Term Servicing Channel** is designed only for specialized devices needing a longer servicing option
 
 Office 365 offers four servicing channels:
 
-- [**Office Insider Program**](https://support.office.com/en-us/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) for organizations to test and provide feedback on the newest Office features and functionalities still in development
+- [**Office Insider Program**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) for organizations to test and provide feedback on the newest Office features and functionalities still in development
 - **Monthly Channel** to provide users with the newest Office features as soon as they're available
 - **Semi-Annual Channel** provides new functionality with new features only twice per year
 - **Semi-Annual Channel (Targeted)** is a fully supported build of Office that enables pilot users and application compatibility testers to test and validate the next Semi-Annual Channel
 
 For detailed information about Windows and Office servicing channels please review the below documentation:
 
-- [Overview of Windows as a Service](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels)
-- [Overview of Update Channels for Office 365 ProPlus](https://docs.microsoft.com/en-us/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Overview of Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
+- [Overview of Update Channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 ## Phased Deployment of Updates
 
@@ -132,9 +132,9 @@ As for tooling, you can use policy settings with Windows Update for Business, so
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
-[Windows Semi-Annual Channel](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#semi-annual-channel)
+[Windows Semi-Annual Channel](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Semi-Annual Channel for Office 365 ProPlus](https://docs.microsoft.com/en-us/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Semi-Annual Channel for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 #### Upgrade Task Sequences
 
@@ -146,11 +146,11 @@ A Task Sequence allows you to create custom checks or tasks BEFORE to the instal
 
 If you’re already using task sequences to migrate your Windows 7 machines to Windows 10 and are well-versed with those tools, this is a great place to start and provides ultimate control. While you can use a single task sequence for the entire upgrade, it is quite common that organizations use two task sequences. One task sequence for making sure the machines are ready for the upgrade, that silently pre-stages all the required setup files on target computers, and one to do the actual upgrade. This approach ensures that your user productivity is less impacted.
 
-[Create a task sequence to upgrade an OS in Configuration Manager](https://docs.microsoft.com/en-us/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Create a task sequence to upgrade an OS in Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 #### Semi-annual channel support for feature updates
 
-[As announced in September 2018](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/), support timeline for semi-annual channel updates will use the following model.
+[As announced in September 2018](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/), support timeline for semi-annual channel updates will use the following model.
 
   - All currently supported feature updates of Windows 10 Enterprise and Education, starting with version 1607, will be supported for 30 months from their original release date.
 
@@ -164,7 +164,7 @@ If you’re already using task sequences to migrate your Windows 7 machines to W
 
 If you don’t use Upgrade Task Sequences, you can now run custom actions or apply driver files during feature updates in the Pre-install phase – before setup runs its compatibility checks – or in the pre-commit phase – before the upgrade is applied.
 
-[What's new in Windows 10 setup, version 1803](https://docs.microsoft.com/en-us/windows/whats-new/whats-new-windows-10-version-1803%23windows-setup)
+[What's new in Windows 10 setup, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803%23windows-setup)
 
 ## Next Step 
 

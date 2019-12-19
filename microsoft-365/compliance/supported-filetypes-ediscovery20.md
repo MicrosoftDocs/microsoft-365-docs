@@ -14,13 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: "A list of supported file types in Microsoft 365 Advanced eDiscovery. This includes a list of the image file types that are supported by the OCR functionality in Advanced eDiscovery."
 ---
 
 # Supported file types in Advanced eDiscovery
 
-Advanced eDiscovery supports many file types to many different levels, which are described in the following table. This list isn't finalized, and we'll add new file types as we continue our validation testing. The tables indicates if a file type is supported for text extraction (OCR for images), viewable in the native viewer and also support in the Annotate viewer in Advanced eDiscovery.
-
+Advanced eDiscovery supports many file types to many different levels, which are described in the following tables. This list isn't finalized, and we will add new file types as we continue our validation testing. These tables indicate if a file type is supported for text extraction (and Optical Character Recognition or OCR text extraction for image files), viewable in the native viewer and also support in the Annotate viewer in Advanced eDiscovery.
 
 ## Archive / Container
 
@@ -79,7 +78,7 @@ Advanced eDiscovery supports many file types to many different levels, which are
 
 ## Image
 
-| Mime type | File identification | Metadata extraction | OCR Text extraction | Native viewer | Annotate viewer | Possible Extensions |
+| Mime type | File identification | Metadata extraction | OCR text extraction | Native viewer | Annotate viewer | Possible Extensions |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | image/bmp | Yes | Yes | Yes | Yes | Yes | .bmp |
 | image/emf | Yes | Yes | Yes | Yes | Yes | .emf |
@@ -111,7 +110,7 @@ Advanced eDiscovery supports many file types to many different levels, which are
 | application/onenote | Yes | Yes | Yes | Yes | No | .one |
 ||||||||
 
-## Microsoft Powerpoint
+## Microsoft PowerPoint
 
 | Mime type | File identification | Metadata extraction | Text extraction | Native viewer | Annotate viewer | Possible Extensions |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |

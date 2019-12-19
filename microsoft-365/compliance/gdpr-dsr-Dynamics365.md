@@ -1,7 +1,7 @@
 ---
-title: Dynamics 365 Data Subject Requests for the GDPR
-description: Guide for how to use Microsoft products, services, and administrative tools to help our controller customers find and act on personal data to respond to DSR requests.
-keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
+title: Dynamics 365 Data Subject Requests for the GDPR and CCPA
+description: Guide for how to use Microsoft products, services, and administrative tools to help our controller customers find and act on personal data to respond to DSR and CCPA requests.
+keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,22 +9,27 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection: 
+- GDPR
+- M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft GDPR
 ---
 
-# Dynamics 365 Data Subject Requests for the GDPR
+# Dynamics 365 Data Subject Requests for the GDPR and CCPA
 
 The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called in this document a *Data Subject Rights Request* or DSR request.
 
-The guide discusses how to use Microsoft's products, services, and administrative tools to help our controller customers find and act on personal data to respond to DSR requests. Specifically, this includes how to find, access, and act on personal data that reside in Microsoft's cloud. Here’s a quick overview of the processes outlined in this guide:
+Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR’s Data Subject Rights, such as the right to delete, access and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and “opt-out/ opt-in” requirements for certain data transfers classified as “sales". Sales are broadly defined to include the sharing of data for a valuable consideration. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
+
+The guide discusses how to use Microsoft's products, services, and administrative tools to help our controller customers find and act on personal data to respond to DSR requests. Specifically, this includes how to find, access, and act on personal data or personal information that reside in Microsoft's cloud. Here’s a quick overview of the processes outlined in this guide:
 
 - **Discover:** Use search and discovery tools to more easily find customer- data that may be the subject of a DSR request. Once potentially responsive documents are collected, you can perform one or more of the DSR actions described in the following steps to respond to the request. Alternatively, you may determine that the request doesn't meet your organizations guidelines for responding to DSR requests.
 - **Access:** Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it that can be available to the data subject.
 - **Rectify:** Make changes or implement other requested actions on the personal data, where applicable.
 - **Restrict:** Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can a
 - **Delete:** Permanently remove personal data that resided in Microsoft's cloud.
-- **Export:** Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
+- **Export/Receive (Portability):** Provide an electronic copy (in a machine-readable format) of personal data or personal information to the data subject. Personal information under the CCPA is any information relating to an identified or identifiable person. There is no distinction between a person’s private, public, or work roles. The defined term “personal information” roughly lines up with “personal data” under GDPR. However, the CCPA also includes family and household data. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
 
 Each section in this guide outlines the technical procedures that a data controller organization can take to respond to a DSR request for personal data in Microsoft's cloud
 
@@ -101,7 +106,7 @@ In Dynamics 365 for Marketing, you have the following additional capabilities:
 
 ### Providing a copy of customer data
 
-Customer data in ***Dynamics 365 for Customer Engagement*** can be exported using the comprehensive entity export capabilities. Customer data can be exported to a static Excel file to facilitate a data portability request. Using Excel, you can then edit the personal data to be included in the portability request and then save as a commonly used, machine-readable format such as .csv or .xml.
+Customer data in ***Dynamics 365 for Customer Engagement*** can be exported using the comprehensive entity export capabilities. Customer data can be exported to a static Excel file to facilitate a data portability request. Using Excel, you can then edit the personal data to be included in the portability request and then save as a commonly used, machine-readable format such as .csv or .xml. Dynamics 365 for Customer Engagement records also can be exported via the [Common Data Service Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview).
 
 Additionally, for Dynamics 365 for Marketing a [dedicated API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) is provided that allows customer to build extensions that retrieve additional records of captured customer interactions that may contain personal data. The API loads all the relevant information from the back-end system and assembles it into a single, portable document.
 
@@ -111,7 +116,7 @@ Customer data in ***Dynamics 365 for Finance and Operations*** can be exported u
 
 In ***Dynamics 365 Business Central***, you can make use of two features to provide a copy of customer data to a data subject:
 
-You can export customer data to an Excel file. In Excel, you can then edit the customer data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel.](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data)
+You can export customer data to an Excel file. In Excel, you can then edit the customer data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel.](https://docs.microsoft.com/dynamics365/business-central/about-export-data)
 
 In ***Dynamics 365 for Talent***, you may use [Extend the Person search report](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-extend-person-search-report) to gather information in support of a request for a copy of the data subject's personal data.
 
@@ -127,13 +132,13 @@ Additionally, for Dynamics 365 for Marketing you can also:
 - Update-my-data landing page, by editing single or multiple rows directly
 - Prepare a [subscription centers](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/set-up-subscription-center) page that has as many editable contact fields that can be included. This enables an end user to update their own information as much as possible.
 
-***Dynamics 365 Customer Service Insights*** also provides capabilities that enable organizations to [rectify or make changes to customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary#a=note-about-requests-to-rectify-personal-data).
+***Dynamics 365 Customer Service Insights*** also provides capabilities that enable organizations to [rectify or make changes to customer data](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary).
 
 In ***Dynamics 365 for Finance and Operations***, you may also use of [*customization tools*](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page), but the decision and implementation is your responsibility.
 
 ***Dynamics 365 Business Central*** offers two ways to correct inaccurate or incomplete customer data.
 
-To quickly bulk-edit multiple Business Central records, you can export lists to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/en-us/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to correct multiple records, and then publish the modified data from Excel in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data).
+To quickly bulk-edit multiple Business Central records, you can export lists to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to correct multiple records, and then publish the modified data from Excel in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 
 You can change customer data stored in any field — such as information about a customer in the Customer card — by manually editing the data element containing the target personal data. For details, see [Entering data](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data).
 
@@ -164,7 +169,7 @@ Alternatively, in ***Dynamics 365 for Finance and Operations*** you may use [*cu
 
 In ***Dynamics 365 Business Central***, when a data subject asks you to delete their personal data which happens to be included in your customer data, there are several ways to address this request:
 
-- To quickly bulk-edit multiple Business Central records, you can export data to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/en-us/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to delete multiple records, and then publish these changes from Excel back in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data).
+- To quickly bulk-edit multiple Business Central records, you can export data to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to delete multiple records, and then publish these changes from Excel back in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 - You can delete customer data stored in any field by manually deleting the data element containing the target customer data. For details, see [Entering data](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data).
 - You can directly delete customer data, for example by deleting a contact and then running the Delete Canceled Interaction Log Entries batch job to delete interactions for that contact.
 - You can [delete documents](https://docs.microsoft.com/dynamics365/business-central/admin-manage-documents) containing customer data—for example, memos and posted sales and purchase invoices.
@@ -186,7 +191,7 @@ Both Dynamics 365 for Finance and Operations and ***Dynamics 365 for Talent*** o
 ***Dynamics 365 Business Central*** offers the following features:
 
 - You can export customer data to an Excel file. In Excel, you can then edit the customer data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
-- You can export customer data to an Excel file. In Excel, you can then edit the customer data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel](https://docs.microsoft.com/en-us/dynamics365/business-central/about-export-data).
+- You can export customer data to an Excel file. In Excel, you can then edit the customer data to be included in the portability request, and save it in a commonly used, machine-readable format, such as .csv or .xml. For details, see [Exporting your business data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 
 ### Microsoft Social Engagement
 
@@ -213,7 +218,7 @@ This first step — finding and reviewing the personal data at issue — will he
 #### Social media users (authors)
 
 - To find their personal data, follow the first four steps in [Find and delete an author](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#find-and-delete-an-author).
-- Employees can create Social Engagement rules that search on social platforms for certain defined content; these search rules may contain author names. To make sure that you find these rules, review the social account search rules for the appropriate account such as [Twitter](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/add-rules-search-topic#add-a-twitter-rule), [Instagram](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/add-rules-search-topic#add-an-instagram-rule), and [YouTube](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/add-rules-search-topic#add-a-includetnyoutubeincludestn-youtubemd-rule).
+- Employees can create Social Engagement rules that search on social platforms for certain defined content; these search rules may contain author names. To make sure that you find these rules, review the social account search rules for the appropriate account such as [Twitter](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a-private-messages-rule), [Instagram](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a-custom-sources-rule), and [YouTube](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a--rule).
 - To find author tags for an author, first [filter posts](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/use-filters#add-edit-or-remove-a-filter) by [author](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/understand-filters#authors), and then [view author tags](https://go.microsoft.com/fwlink/?linkid=864795).
 
 ##### Your employees
@@ -240,7 +245,7 @@ To export:
 
 - customer data from user profiles, go to the [admin center](https://portal.office.com/adminportal/home). In the **Admin center**, select **Users.** On the **Active Users** page, search for the user whose data you wish to export. Delete all users except the target user, and then select **Export** to export the data to a .csv file where you can use Excel to view the information.
 - Email addresses of an alert recipient (the only customer data in an alert). follow the steps in [Manage alert recipients as administrator](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator). Then select **Export** to download an Excel list of the alerts that include this recipient.
-- User names from Power BI: [Engagement reporting](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) shows user names in reports of team performance on social media. To export this data, filter by the user in the PowerBI dashboard or [report](https://docs.microsoft.com/power-bi/power-bi-report-add-filter), and [export the data](https://docs.microsoft.com/power-bi/power-bi-visualization-export-data).
+- User names from Power BI: [Engagement reporting](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) shows user names in reports of team performance on social media. To export this data, filter by the user in the PowerBI dashboard or [report](https://docs.microsoft.com/power-bi/power-bi-report-add-filter), and [export the data](https://docs.microsoft.com/power-bi/service-export-to-pbix).
 
 ### Rectifying personal data
 
@@ -315,7 +320,7 @@ To export:
 
 - customer data from user profiles, go to the [admin center](https://portal.office.com/adminportal/home). In the **Admin center**, select **Users.** On the **Active Users** page, search for the user whose data you wish to export. Delete all users except the target user, and then select **Export** to export the data to a .csv file where you can use Excel to view the information.
 - Email addresses of an alert recipient (the only personal data in an alert). Follow the steps in [Manage alert recipients as administrator](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator). Then select **Export** to download an Excel list of the alerts that include this recipient.
-- User names from Power BI: [Engagement reporting](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) shows user names in reports of team performance on social media. To export this data, filter by the user in the PowerBI dashboard or [report](https://docs.microsoft.com/power-bi/power-bi-report-add-filter), and [export the data](https://docs.microsoft.com/power-bi/power-bi-visualization-export-data)
+- User names from Power BI: [Engagement reporting](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) shows user names in reports of team performance on social media. To export this data, filter by the user in the PowerBI dashboard or [report](https://docs.microsoft.com/power-bi/power-bi-report-add-filter), and [export the data](https://docs.microsoft.com/power-bi/service-export-to-pbix)
 
 ## Part 2: Responding to DSRs for system-generated logs
 
@@ -364,8 +369,8 @@ The following table summarizes accessing and exporting system-generated logs:
 
 To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Azure Active Directory account. For instructions about permanently delete a user, see the [Deleting a user](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user) section in this guide. It's important to note that permanently deleting a user account is irreversible once initiated.
 
-Permanently deleting a user account with remove the user’s data from system-generated logs for nearly all Dynamics 365 services within 30 days.
+Permanently deleting a user account removes the user’s data from system-generated logs for nearly all Dynamics 365 services within 30 days.
 
 ## Learn more
 
-- [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

@@ -1,5 +1,6 @@
 ---
 title: "GDPR discovery, protection, and reporting in the Office 365 dev/test environment"
+description: "Demonstrate GDPR capabilities in Office 365."
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -14,7 +15,7 @@ localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
-description: "Demonstrate GDPR capabilities in Office 365."
+titleSuffix: Microsoft GDPR
 ---
 
 # GDPR discovery, protection, and reporting in the Office 365 dev/test environment
@@ -119,7 +120,7 @@ Contoso always refers to customers by using a CCN in internal correspondence, ex
 
     ```
     <?xml version="1.0" encoding="utf-8"?>
-    <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce"> 
+    <RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce"> 
     <RulePack id="GUID1">
     <Version major="1" minor="0" build="0" revision="0" />
     <Publisher id="GUID2" />

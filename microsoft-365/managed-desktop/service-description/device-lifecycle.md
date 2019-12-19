@@ -28,9 +28,9 @@ This topic details the lifecycle of devices as they are added and removed from t
 
 The entire sequence is depicted in this illustration:
 
-![lifecycle timeline](images/non-dark1-edits.PNG)
+![lifecycle timeline: starting with product general availability, "primary availability" lasts for two years. During this time the certification window ends and at some point the device is onboarded. At the end of primary availability, the product is archived and the "grace period" of three years starts. Starting when the device is onboarded, it has a 3-year period of use until it's removed from management. At the end of the grace period we remove the product from the catalog.](images/non-dark1-edits.PNG)
 
-Products remain on the catalog for up to 24 months, but *devices* remain under management for 3 years based on their individual enrollment dates. Effectively, each product has three important dates, but each device has only one. For products, all three of these dates are calculated based on the *approval date*, and therefore we publish these dates upon approval so that you can always look ahead and plan appropriately for the product's entire lifecycle.
+Products remain on the catalog for up to 24 months, but <em>devices</em> remain under management for 3 years based on their individual enrollment dates. Effectively, each product has three important dates, but each device has only one. For products, all three of these dates are calculated based on the <em>approval date</em>, and therefore we publish these dates upon approval so that you can always look ahead and plan appropriately for the product's entire lifecycle.
 
 This table shows example dates for a theoretical product:
 

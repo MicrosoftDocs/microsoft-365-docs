@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States
+title: Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States
 description: An independent assessment firm validated that Azure and Office 365 can help financial firms meet FINRA Rule 4511 records retention and immutable storage requirements.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -11,9 +11,10 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States
+# Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States
 
 ## About FINRA Rule 4511
 
@@ -46,7 +47,7 @@ Archiving in Office 365 helps preserve a wide range of data, including email, vo
 ## Microsoft in-scope cloud services
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
-- [Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
 ## Audits, reports, and certificates
 
@@ -62,13 +63,11 @@ Archiving in Office 365 helps preserve a wide range of data, including email, vo
 
 - **Financial services regulation**: Compliance map of key US regulatory principles for cloud computing and Microsoft online services. [Learn more](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - **Risk Assessment & Compliance Guide**: Create a governance model for risk assessment of Microsoft cloud services, and regulator notification. [Learn more](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-- **Financial use cases**: Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
-
-[Learn more](https://docs.microsoft.com/azure/industry/financial/)
+- **Financial use cases**: Use case overviews, tutorials, and other resources to build Azure solutions for financial services. [Learn more](https://docs.microsoft.com/azure/industry/financial/)
 
 ## Resources
 
-- [Microsoft Financial Services Compliance Program](http://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
+- [Microsoft Financial Services Compliance Program](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
 - [Microsoft business cloud services and financial services](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
@@ -78,4 +77,4 @@ Archiving in Office 365 helps preserve a wide range of data, including email, vo
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/6/B/2/6B20520B-E264-4B58-9EE2-DD6C87D9E254/FINRA-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/6/B/2/6B20520B-E264-4B58-9EE2-DD6C87D9E254/FINRA-Compliance.pdf).

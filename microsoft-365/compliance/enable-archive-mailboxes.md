@@ -23,8 +23,8 @@ description: "Use the Security & Compliance Center in Office 365 to enable archi
   
 Archiving in Office 365 (also called In-Place Archiving) provides users with additional mailbox storage space. After you turn on archive mailboxes, users can access and store messages in their archive mailboxes by using Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App). Users can also move or copy messages between their primary mailbox and their archive mailbox. They can also recover deleted items from the Recoverable Items folder in their archive mailbox by using the Recover Deleted Items tool. 
   
-> [!TIP]
-> Office 365 provides an unlimited amount of archive storage with the auto-expanding archiving feature. When auto-expanding archiving is turned on, and then the initial storage quota in a user's archive mailbox is reached, Office 365 automatically adds additional storage space. This means that users won't run out of mailbox storage space and you won't have to manage anything after you initially enable the archive mailbox and turn on auto-expanding archiving for your organization. For more information, see [Overview of unlimited archiving in Office 365](unlimited-archiving.md). 
+> [!NOTE]
+> The auto-expanding archiving feature in Office 365 provides up to 1 TB of additional storage in archive mailboxes. When auto-expanding  archiving is turned on, and then the initial storage quota in a user's archive mailbox is reached, Office 365 automatically adds additional storage space. This means that users won't run out of mailbox storage space and you won't have to manage anything after you initially enable the archive mailbox and turn on auto-expanding archiving for your organization. For more information, see [Overview of unlimited archiving in Office 365](unlimited-archiving.md). 
   
 ## Before you begin
 
@@ -36,7 +36,7 @@ You have to be assigned the Mail Recipients role in Exchange Online to enable or
     
 2. Sign in to Office 365 using your work or school account.
     
-3. In the left pane of the Security & Compliance Center, click **Data governance** \> **Archive**.
+3. In the left pane of the Security & Compliance Center, click **Information governance** \> **Archive**.
     
     The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
     
@@ -67,7 +67,7 @@ To disable an archive mailbox:
     
 2. Sign in to Office 365 using your work or school account.
     
-3. In the left pane of the Security & Compliance Center, click **Data governance** \> **Archive**.
+3. In the left pane of the Security & Compliance Center, click **Information governance** \> **Archive**.
     
     The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
     
@@ -96,27 +96,27 @@ After you're connected to Exchange Online, you can run the commands in the follo
 
 Run the following command to enable the archive mailbox for a single user.
     
-  ```
+  ```powershell
   Enable-Mailbox -Identity <username> -Archive
   ```
 
 Run the following command to enable the archive mailbox for all users in your organization (whose archive mailbox is currently not enabled).
     
-  ```
+  ```powershell
   Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
   ```
-  
+
 ### Disable archive mailboxes
 
 Run the following command to disable the archive mailbox for a single user.
     
-  ```
+  ```powershell
   Disable-Mailbox -Identity <username> -Archive
   ```
 
 Run the following command to disable the archive mailbox for all users in your organization (whose archive mailbox is currently enabled).
     
-  ```
+  ```powershell
   Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
   ```
 

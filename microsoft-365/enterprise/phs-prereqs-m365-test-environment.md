@@ -3,7 +3,7 @@ title: "Identity and device access prerequisites for password hash synchronizati
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/23/2019
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,6 +16,8 @@ description: Create a Microsoft 365 environment to test identity and device acce
 ---
 
 # Identity and device access prerequisites for password hash synchronization in your Microsoft 365 test environment
+
+*This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
 
 [Identity and device access configurations](microsoft-365-policies-configurations.md) are a set of configurations and conditional access policies to protect access to all services that are integrated with Azure Active Directory (Azure AD), including Office 365 and Enterprise Mobility + Security (EMS) in Microsoft 365 Enterprise.
 
@@ -79,7 +81,7 @@ Test multi-factor authentication only for the User 2 account.
 
 ## Phase 7: Enable Azure AD Identity Protection
 
-Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab Guide](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-enable-and-use-azure-ad-identity-protection). 
+Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab Guide](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
 
 ## Phase 8: Enable modern authentication for Exchange Online and Skype for Business Online
 
@@ -91,13 +93,13 @@ For Skype for Business Online:
 
 2. Run this command.
 
-  ```
+  ```powershell
   Set-CsOAuthConfiguration -ClientAdalAuthOverride Allowed
   ```
 
 3. Verify that the change was successful with this command.
 
-  ```
+  ```powershell
   Get-CsOAuthConfiguration
   ```
 

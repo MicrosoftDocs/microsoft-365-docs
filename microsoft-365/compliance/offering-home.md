@@ -10,6 +10,7 @@ keywords: Microsoft, Microsoft 365, Compliance, Offering
 localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
+titleSuffix: Microsoft Compliance
 ---
 
 # Microsoft compliance offerings
@@ -41,7 +42,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <p><a href="offering-ISO-27701.md">ISO 27701</a></p>
                         <p><a href="offering-ISO-9001.md">ISO 9001</a></p>
                         <p><a href="offering-soc.md">SOC</a></p>
-                        <p><a href="offering-wcag-2-1.md">WCAG 2.1</a></p>
+                        <p><a href="offering-wcag-2-1.md">WCAG</a></p>
                     </div>
                 </div>
             </div>
@@ -59,7 +60,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Government</h3>
+                        <h3>US Government</h3>
                         <p><a href="offering-cjis.md">CJIS</a></p>
                         <p><a href="offering-cnssi-1253.md">CNSSI 1253</a></p>
                         <p><a href="offering-dfars.md">DFARS</a></p>
@@ -125,6 +126,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <p><a href="offering-pci-dss.md">PCI DSS</a></p>
                         <p><a href="offering-rbi-irdai-india.md">RBI + IRDAI (India)</a></p>
                         <p><a href="offering-sec-17a-4.md">SEC 17a-4</a></p>
+                        <p><a href="offering-sec-reg-sci.md">SEC Regulation SCI</a></p>
                         <p><a href="offering-shared-assessments.md">Shared assessments</a></p>
                         <p><a href="offering-sox.md">SOX</a></p>
                         <p><a href="offering-tisax-germany.md">TISAX (Germany)</a></p>
@@ -149,7 +151,8 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <h3>Regional</h3>
                         <p><a href="offering-bir-2012-netherlands.md">BIR 2012 (Netherlands)</a></p>
                         <p><a href="offering-c5-germany.md">C5 (Germany)</a></p>
-                        <p><a href="offering-ccsl-irap-australia.md">CCSL / IRAP (Australia)</a></p>
+                        <p><a href="offering-ccpa.md">CCPA (US-California)</a></p>
+                        <p><a href="offering-ccsl-irap-australia.md">IRAP / CCSL (Australia)</a></p>
                         <p><a href="offering-cs-mark-gold-japan.md">CS Mark Gold (Japan)</a></p>
                         <p><a href="offering-cyber-essentials-plus-uk.md">Cyber Essentials Plus (UK)</a></p>
                         <p><a href="offering-canadian-privacy-laws.md">Canadian Privacy Laws</a></p>

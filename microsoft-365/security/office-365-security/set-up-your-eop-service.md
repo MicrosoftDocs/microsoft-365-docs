@@ -17,7 +17,7 @@ description: "This topic explains how to set up Microsoft Exchange Online Protec
 This topic explains how to set up Microsoft Exchange Online Protection (EOP). If you landed here from the Office 365 domains wizard, go back to the Office 365 domains wizard if you don't want to use Exchange Online Protection. If you're looking for more information on how to configure connectors, see [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> This topic assumes you have on-premises mailboxes and you want to protect them with EOP, which is known as a standalone scenario. If you want to host all of your mailboxes in the cloud with Exchange Online, you don't have to complete all of the steps in this topic. Go to [Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286312) to sign up and purchase cloud mailboxes. If you want to host some of your mailboxes on premises and some in the cloud, this is known as a hybrid scenario. It requires more advanced mail-flow settings. [Exchange Server hybrid deployments](https://docs.microsoft.com/exchange/exchange-hybrid) explains hybrid mail flow and has links to resources that show how to set it up.
+> This topic assumes you have on-premises mailboxes and you want to protect them with EOP, which is known as a standalone scenario. If you want to host all of your mailboxes in the cloud with Exchange Online, you don't have to complete all of the steps in this topic. Go to [Compare Exchange Online plans](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) to sign up and purchase cloud mailboxes. If you want to host some of your mailboxes on premises and some in the cloud, this is known as a hybrid scenario. It requires more advanced mail-flow settings. [Exchange Server hybrid deployments](https://docs.microsoft.com/exchange/exchange-hybrid) explains hybrid mail flow and has links to resources that show how to set it up.
 
 ## What do you need to know before you begin?
 
@@ -25,7 +25,7 @@ This topic explains how to set up Microsoft Exchange Online Protection (EOP). If
 
 - To configure connectors, your account must be an Office 365 Global Admin, or an Exchange Company Administrator (the Organization Management role group). For information, see [Feature permissions in EOP](feature-permissions-in-eop.md).
 
-- If you haven't signed up for EOP, visit [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=282660) and choose to buy or try the service.
+- If you haven't signed up for EOP, visit [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) and choose to buy or try the service.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -34,7 +34,7 @@ This topic explains how to set up Microsoft Exchange Online Protection (EOP). If
 
 ## Step 1: Use the Microsoft 365 admin center to add and verify your domain
 
-1. In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?LinkId=521888), go to **Setup** to add your domain to the service.
+1. In the [Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center), go to **Setup** to add your domain to the service.
 
 2. Follow the steps to add the applicable DNS records to your DNS-hosting provider in order to verify domain ownership.
 
@@ -43,7 +43,7 @@ This topic explains how to set up Microsoft Exchange Online Protection (EOP). If
 
 ## Step 2: Add recipients and optionally enable DBEB
 
-Before configuring your mail to flow to and from the EOP service, we recommend adding your recipients to the service. There are several ways in which you can do this, as documented in [Manage mail users in EOP](manage-mail-users-in-eop.md). Also, if you want to enable Directory Based Edge Blocking (DBEB) in order to enforce recipient verification within the service after adding your recipients, you need to set your domain type to Authoritative. For more information about DBEB, see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
+Before configuring your mail to flow to and from the EOP service, we recommend adding your recipients to the service. There are several ways in which you can do this, as documented in [Manage mail users in EOP](manage-mail-users-in-eop.md). Also, if you want to enable Directory Based Edge Blocking (DBEB) in order to enforce recipient verification within the service after adding your recipients, you need to set your domain type to Authoritative. For more information about DBEB, see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
 ## Step 3: Use the EAC to set up mail flow
 
@@ -55,7 +55,7 @@ Check mail flow between the service and your environment. For more information, 
 
 ## Step 4: Allow inbound port 25 SMTP access
 
-After you configured connectors, wait 72 hours to allow propagation of your DNS-record updates. Following this, restrict inbound port-25 SMTP traffic on your firewall or mail servers to accept mail only from the EOP datacenters, specifically from the IP addresses listed at [Exchange Online Protection IP addresses](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
+After you configured connectors, wait 72 hours to allow propagation of your DNS-record updates. Following this, restrict inbound port-25 SMTP traffic on your firewall or mail servers to accept mail only from the EOP datacenters, specifically from the IP addresses listed at [Exchange Online Protection IP addresses](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges
 ). This protects your on-premises environment by limiting the scope of inbound messages you can receive. Additionally, if you have settings on your mail server that control the IP addresses allowed to connect for mail relay, update those settings as well.
 
 > [!TIP]

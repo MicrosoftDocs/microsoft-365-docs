@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — European Banking Authority (EBA)
+title: European Banking Authority (EBA)
 description: Microsoft guidance to help financial institutions in the EU follow EBA recommendations for cloud adoption.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -11,9 +11,10 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: European Banking Authority (EBA)
+# European Banking Authority (EBA)
 
 ## About the EBA
 
@@ -65,5 +66,5 @@ The Microsoft publication, [Risk Assessment and Compliance Guide for Financial I
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/A/9/3/A93DEE11-4758-4E03-8035-D8C5843B70C2/EBA-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/A/9/3/A93DEE11-4758-4E03-8035-D8C5843B70C2/EBA-Compliance.pdf).
 

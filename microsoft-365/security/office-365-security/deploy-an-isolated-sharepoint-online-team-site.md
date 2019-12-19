@@ -104,18 +104,14 @@ For PowerShell, first [Connect with the Azure Active Directory PowerShell for Gr
   
 Next, use the following command block to add an individual user account to an access group:
   
-```
+```powershell
 $userUPN="<UPN of the user account>"
 $grpName="<display name of the access group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
-
-> [!TIP]
-> For a text file that contains all the PowerShell commands and an Excel configuration worksheet that generates PowerShell commands based on your group and user account names, download the [Isolated SharePoint Online Team Site Deployment Kit](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907). 
-  
 If you stored the UPNs of user accounts for any of the access groups in a text file, you can use the following PowerShell command block to add them all at one time:
   
-```
+```powershell
 $grpName="<display name of the access group>"
 $fileName="<path and name of the file containing the list of account UPNs>"
 $grpID=(Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
@@ -124,7 +120,7 @@ Get-Content $fileName | ForEach { $userUPN=$_; Add-AzureADGroupMember -RefObject
 
 For PowerShell, use the following command block to add an individual group to an access group:
   
-```
+```powershell
 $nestedGrpName="<display name of the group to add to the access group>"
 $grpName="<display name of the access group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $nestedGrpName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
@@ -141,7 +137,7 @@ The results should be the following:
     
 Validate the list of group members for each access group with the Microsoft 365 admin center or with the following PowerShell command block:
   
-```
+```powershell
 $grpName="<display name of the access group>"
 Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID | Sort UserPrincipalName | Select UserPrincipalName,DisplayName,UserType
 ```
@@ -156,7 +152,7 @@ In this phase, you create the isolated SharePoint Online site and configure the 
   
 First, create the SharePoint Online team site with these steps.
   
-1. Sign in to the admin center with an account that will also be used to administer the SharePoint Online team site (a SharePoint Online administrator). For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Sign in to the admin center with an account that will also be used to administer the SharePoint Online team site (a SharePoint Online administrator). For help, see [Where to sign in to Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. In the list of tiles, click **SharePoint**.
     

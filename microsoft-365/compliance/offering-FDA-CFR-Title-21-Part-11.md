@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — Food and Drug Administration CFR Title 21 Part 11
+title: Food and Drug Administration CFR Title 21 Part 11
 description: Microsoft helps customers comply with these US Food and Drug Administration regulations.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -11,15 +11,16 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Food and Drug Administration CFR Title 21 Part 11
+# Food and Drug Administration CFR Title 21 Part 11
 
 ## FDA CFR Title 21 overview
 
 The Code of Federal Regulations (CFR) contains the rules and regulations for executive departments and agencies of the US federal government. Each of the 50 titles of the CFR addresses a different regulated area.
 
-[FDA CFR Title 21](http://aka.ms/FDA-CFR) regulates food and drugs manufactured or consumed in the United States, under the jurisdiction of the Food and Drug Administration (FDA), the Drug Enforcement Administration, and the Office of National Drug Control Policy. The regulations outlined in CFR Title 21 Part 11 set the ground rules for the technology systems that manage information used by organizations subject to FDA oversight. Any technology system that governs such GxP processes as Good Laboratory Practices (GLP), Good Clinical Practices (GCP), and Good Manufacturing Practices (GMP) also requires validation of its adherence to GxP.
+[FDA CFR Title 21](https://aka.ms/FDA-CFR) regulates food and drugs manufactured or consumed in the United States, under the jurisdiction of the Food and Drug Administration (FDA), the Drug Enforcement Administration, and the Office of National Drug Control Policy. The regulations outlined in CFR Title 21 Part 11 set the ground rules for the technology systems that manage information used by organizations subject to FDA oversight. Any technology system that governs such GxP processes as Good Laboratory Practices (GLP), Good Clinical Practices (GCP), and Good Manufacturing Practices (GMP) also requires validation of its adherence to GxP.
 
 CFR Title 21 Part 11 sets requirements to ensure that electronic records and signatures are trustworthy, reliable, and generally equivalent substitutes for paper records and handwritten signatures. It also offers guidelines to improve the security of computer systems in FDA-regulated industries. Subject companies must prove that their processes and products work as they are designed to, and if these process and products change, they must revalidate that proof. The best practices guidelines cover:
 
@@ -33,7 +34,7 @@ Microsoft enterprise cloud services undergo regular independent third-party SOC 
 
 Although these regular audits and certifications do not specifically focus on FDA regulatory compliance, their purpose and objectives are similar in nature to those of CFR Title 21 Part 11, and serve to help ensure the confidentiality, integrity, and availability of data stored in Microsoft cloud services. Our qualification approach is also based on industry best practices, including the International Society for Pharmaceutical Engineering (ISPE) GAMP series of Good Practices Guides and the Pharmaceutical Inspection Cooperation Scheme (PIC/S) Good Practices for Computerized Systems in Regulated GxP Environments.
 
-Customers can request access to the compliance reports, subject to nondisclosure agreement terms and conditions, through their Microsoft account representative, or through the [Service Trust Portal](http://aka.ms/stphelp). In addition, qualification guidelines for Microsoft Azure and Microsoft Office 365 provide a detailed explanation of how Microsoft audit controls correspond to the requirements of CFR Title 21 Part 11, guidance for implementing an FDA qualification strategy, and a description of areas of shared responsibility.
+Customers can request access to the compliance reports, subject to nondisclosure agreement terms and conditions, through their Microsoft account representative, or through the [Service Trust Portal](https://aka.ms/stphelp). In addition, qualification guidelines for Microsoft Azure and Microsoft Office 365 provide a detailed explanation of how Microsoft audit controls correspond to the requirements of CFR Title 21 Part 11, guidance for implementing an FDA qualification strategy, and a description of areas of shared responsibility.
 
 Learn how to accelerate your FDA CFR Title 21 deployment: [Download the Azure FDA 21 qualification guide](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
@@ -64,7 +65,7 @@ Audited controls implemented by Microsoft help ensure the confidentiality, integ
 
 **How can I get copies of the auditor’s reports?**
 
-The [Service Trust Portal](http://aka.ms/stphelp) provides independently audited compliance reports. You can use the portal to request audit reports so that your auditors can compare Microsoft's cloud services results with your own legal and regulatory requirement.
+The [Service Trust Portal](https://aka.ms/stphelp) provides independently audited compliance reports. You can use the portal to request audit reports so that your auditors can compare Microsoft's cloud services results with your own legal and regulatory requirement.
 
 **Can I use Microsoft’s compliance in the certification process for my organization?**
 
@@ -72,20 +73,20 @@ Yes. The independent third-party compliance reports of the IEC/ISO 27001, ISO/IE
 
 **What are Microsoft’s responsibilities for maintaining compliance with this standard?**
 
-Microsoft ensures that its enterprise cloud services meet the terms defined within the governing [Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) and applicable Service Level Agreements (SLAs). These define our responsibility for implementing and maintaining controls adequate to secure and monitor the system.
+Microsoft ensures that its enterprise cloud services meet the terms defined within the governing [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) and applicable Service Level Agreements (SLAs). These define our responsibility for implementing and maintaining controls adequate to secure and monitor the system.
 
 ## Resources
 
 - [Azure GxP Qualification Guidelines](https://aka.ms/gxpcompliance)
-- [Code of Federal Regulations Title 21](http://aka.ms/FDA-CFR)
-- [FDA guidance for industry Part 11: Electronic records and signatures](http://www.fda.gov/RegulatoryInformation/Guidances/ucm125067.htm)
+- [Code of Federal Regulations Title 21](https://aka.ms/FDA-CFR)
+- [FDA guidance for industry Part 11: Electronic records and signatures](https://www.fda.gov/RegulatoryInformation/Guidances/ucm125067.htm)
 - [Qualification guidelines for Azure](https://aka.ms/azurefda21cfrpart11qualguide)
 - [Qualification guidelines for Office 365](https://aka.ms/o365-qualification-guideline)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-- [Microsoft Online Services Terms](http://aka.ms/Online-Services-Terms)
-- [Microsoft Cloud for Government](http://aka.ms/govt-cloud)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
+- [Microsoft Cloud for Government](https://aka.ms/govt-cloud)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf).

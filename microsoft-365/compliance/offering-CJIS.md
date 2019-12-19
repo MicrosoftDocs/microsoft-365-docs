@@ -1,8 +1,8 @@
 ---
-title: Compliance offering — Criminal Justice Information Services (CJIS) Security Policy
+title: Criminal Justice Information Services (CJIS) Security Policy
 description: Microsoft government cloud services adhere to the US Criminal Justice Information Services Security Policy.
 keywords: Microsoft 365, compliance, offerings
-localization_priority: Priority
+localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: robmazz
@@ -11,13 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Criminal Justice Information Services (CJIS) Security Policy
+# Criminal Justice Information Services (CJIS) Security Policy
 
 ## CJIS overview
 
-The Criminal Justice Information Services (CJIS) Division of the US Federal Bureau of Investigation (FBI) gives state, local, and federal law enforcement and criminal justice agencies access to criminal justice information (CJI) — for example, fingerprint records and criminal histories. Law enforcement and other government agencies in the United States must ensure that their use of cloud services for the transmission, storage, or processing of CJI complies with the [CJIS Security Policy](http://aka.ms/cjis-security-policy), which establishes minimum security requirements and controls to safeguard CJI.
+The Criminal Justice Information Services (CJIS) Division of the US Federal Bureau of Investigation (FBI) gives state, local, and federal law enforcement and criminal justice agencies access to criminal justice information (CJI) — for example, fingerprint records and criminal histories. Law enforcement and other government agencies in the United States must ensure that their use of cloud services for the transmission, storage, or processing of CJI complies with the [CJIS Security Policy](https://aka.ms/cjis-security-policy), which establishes minimum security requirements and controls to safeguard CJI.
 
 The CJIS Security Policy integrates presidential and FBI directives, federal laws, and the criminal justice community’s Advisory Policy Board decisions, along with guidance from the National Institute of Standards and Technology (NIST). The Policy is periodically updated to reflect evolving security requirements.
 
@@ -48,13 +49,13 @@ The FBI does not offer certification of Microsoft compliance with CJIS requireme
 
 [Microsoft CJIS Cloud Requirements](https://aka.ms/MicrosoftCJISCloudRequirements)
 
-## CJIS status in the United States
+## CJIS status in the United States (current as of 9/23/2019)
 
-36 states and the District of Columbia with management agreements, highlighted on the map in green include:
+37 states and the District of Columbia with management agreements, highlighted on the map in green include:
 
-Alabama, Alaska, Arkansas, Arizona, California, Colorado, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Maine, Massachusetts, Michigan, Minnesota, Missouri, Montana, New Jersey, New York, Nevada, North Carolina, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington D.C., West Virginia.
+Alabama, Alaska, Arkansas, Arizona, California, Colorado, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Maine, Massachusetts, Michigan, Minnesota, Missouri, Montana, New Jersey, New York, Nevada, North Carolina, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington D.C., West Virginia, Wisconsin.
 
-Microsoft's commitment to meeting the applicable CJIS regulatory controls allows Criminal Justice organizations to implement cloud-based solutions and be compliant with CJIS Security Policy V5.7.
+Microsoft's commitment to meeting the applicable CJIS regulatory controls allows Criminal Justice organizations to implement cloud-based solutions and be compliant with CJIS Security Policy V5.8.
 
 ## Frequently asked questions
 
@@ -66,16 +67,14 @@ Contact your Microsoft account representative for information on the jurisdictio
 
 Microsoft signs an Information Agreement with a state CJIS Systems Agency (CSA); you may request a copy from your state’s CSA. In addition, Microsoft provides customers with in-depth security, privacy, and compliance information. Customers may also review security and compliance reports prepared by independent auditors so they can validate that Microsoft has implemented security controls (such as ISO 27001) appropriate to the relevant audit scope.
 
-States with appropriate CJIS documentation, as of August 2017, include: Alaska, Arizona, Arkansas, California, Colorado, Hawaii, Georgia, Illinois, Indiana, Iowa, Kansas, Kentucky, Massachusetts, Michigan, Minnesota, Missouri, Montana, Nevada, New Jersey, New York, North Carolina, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Virginia, Utah, Vermont, and Washington.
-
 **Where do I start with my agency’s compliance effort?**
 
-[CJIS Security Policy](http://aka.ms/cjis-security-policy) covers the precautions that your agency must take to protect CJI. In addition, your Microsoft account representative can put you in touch with those familiar with the requirements of your jurisdiction
+[CJIS Security Policy](https://aka.ms/cjis-security-policy) covers the precautions that your agency must take to protect CJI. In addition, your Microsoft account representative can put you in touch with those familiar with the requirements of your jurisdiction
 
 ## Resources
 
 - [Criminal Justice Information Services](https://aka.ms/cjis)
-- [CJIS Security Policy](http://aka.ms/cjis-security-policy)
+- [CJIS Security Policy](https://aka.ms/cjis-security-policy)
 - [CJIS security policy version 5.3 backgrounder](https://aka.ms/cjis-backgrounder)
 - [CJIS implementation guidelines for Azure Government](https://aka.ms/cjisimplementationguidelines)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
@@ -84,4 +83,4 @@ States with appropriate CJIS documentation, as of August 2017, include: Alaska, 
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf).

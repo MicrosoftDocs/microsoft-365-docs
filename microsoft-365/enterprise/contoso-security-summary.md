@@ -18,8 +18,6 @@ description: How Contoso is using the security features across Microsoft 365 Ent
 
 # Summary of Microsoft 365 Enterprise security for the Contoso Corporation
 
-**Summary:** How Contoso is using the security features across Microsoft 365 Enterprise.
-
 To obtain the sign-off of the deployment of Microsoft 365 Enterprise by the IT security department, a thorough security review was conducted. Here are Contoso's security requirements for the cloud:
 
 - Use the strongest methods of authentication for employee access to cloud resources
@@ -52,9 +50,9 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Dedicated global administrator accounts with MFA and PIM
 
-  Rather than assign the global admin role to everyday user accounts, Contoso created three, dedicated global administrator accounts with strong passwords and protected them with Azure Multi-Factor Authentication (MFA) and Azure Active Directory (Azure AD) Privileged Identity Management (PIM). PIM is only available with Microsoft 365 Enterprise E5.
+  Rather than assign the global admin role to everyday user accounts, Contoso created three, dedicated global administrator accounts with strong passwords and protected them with Azure Multi-Factor Authentication (MFA) and Azure Active Directory (Azure AD) Privileged Identity Management (PIM). PIM is only available with Microsoft 365 E5.
 
-  Signing in with a global administrator account is only done for specific administrative tasks, the passwords are only known to designated staff, and can only be used within the time configured with Azure AD PIM. 
+  Signing in with a global administrator account is only done for specific administrative tasks, the passwords are only known to designated staff and can only be used within the time configured with Azure AD PIM. 
 
   Contoso's security administrators have assigned lesser admin roles to accounts that are appropriate to that IT person's job function and responsibility.
 
@@ -107,7 +105,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Prevent intranet data leaks with Office 365 Data Loss Prevention
 
-  Contoso has configured [Data Loss Prevention](https://docs.microsoft.com/en-us/microsoft-365/compliance/data-loss-prevention-policies) policies for Exchange Online, SharePoint, and OneDrive for Business to prevent users from accidentally or intentionally sharing sensitive data.
+  Contoso has configured [Data Loss Prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) policies for Exchange Online, SharePoint, and OneDrive for Business to prevent users from accidentally or intentionally sharing sensitive data.
 
 - Prevent device data leaks Windows Information Protection
 
@@ -115,7 +113,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Cloud monitoring with Microsoft Cloud App Security
 
-  Contoso is using [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) to map their cloud environment, monitor its usage, and detect security events and incidents. Microsoft Cloud App Security is only available with Microsoft 365 Enterprise E5.
+  Contoso is using [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) to map their cloud environment, monitor its usage, and detect security events and incidents. Microsoft Cloud App Security is only available with Microsoft 365 E5.
 
 - Device management with Microsoft Intune
 

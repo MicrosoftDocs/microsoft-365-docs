@@ -53,7 +53,7 @@ To help understand configuration options, refer to this list of all settings (as
 You can use the [Windows Defender AV protection Evaluation Guide](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/evaluate-windows-defender-antivirus) to help evaluate the protection level and impact of Windows Defender AV on your network. This can also be useful in creating an initial configuration or as a ‘quick start guide’ and is regularly updated to provide the most useful recommendations for configuring and enabling features to ensure maximum protection.
 
 ### Reporting
-You can obtain reporting by using a configuration tool, such as System Center Configuration Manager or Microsoft Intune. You can also obtain reporting from Update Compliance (OMS) or by consuming Windows event logs in your SIEM. If you have a license for Microsoft Defender ATP, you can also obtain reporting into Windows Defender AV detections and perform basic remediation. For more info, see these resources:
+You can obtain reporting by using a configuration tool, such as Microsoft Endpoint Configuration Manager or Microsoft Intune. You can also obtain reporting from Update Compliance (OMS) or by consuming Windows event logs in your SIEM. If you have a license for Microsoft Defender ATP, you can also obtain reporting into Windows Defender AV detections and perform basic remediation. For more info, see these resources:
 * [Deploy, manage, and report on Windows Defender AV](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus)
 * [Report on Windows Defender AV protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus)
 * [Microsoft Defender ATP portal overview](https://go.microsoft.com/fwlink/?linkid=861596)
@@ -77,7 +77,7 @@ To deploy, manage, and configure Windows Defender Exploit Guard, follow the guid
 You can use a series of evaluation topics to help evaluate the protection level and impact of Windows Defender Exploit Guard on your network. This can also be useful in creating an initial configuration or as a ‘quick start guide’ and the topics and guidance are regularly updated to provide the most useful recommendations for configuring and enabling features to ensure maximum protection. For more info,  [Evaluate Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard).
 
 ### Reporting
-You can obtain reporting by using a configuration tool, such as System Center Configuration Manager or Intune. You can also obtain reporting by consuming Windows event logs in your SIEM. If you have a license for Microsoft Defender ATP, you can also obtain reporting into Windows Defender AV detections and perform basic remediation. For more info, see these resources:
+You can obtain reporting by using a configuration tool, such as Configuration Manager or Intune. You can also obtain reporting by consuming Windows event logs in your SIEM. If you have a license for Microsoft Defender ATP, you can also obtain reporting into Windows Defender AV detections and perform basic remediation. For more info, see these resources:
 * [View Windows Defender Exploit Guard events](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/event-views-exploit-guard)
 * [Microsoft Defender ATP portal overview](https://go.microsoft.com/fwlink/?linkid=861596)
 
@@ -87,7 +87,7 @@ You can perform basic troubleshooting or optionally provide Microsoft with .cab 
 
 <a name="windows10-sec-atp"></a>
 ## Microsoft Defender Advanced Threat Protection
-Microsoft Defender ATP, only available with the Microsoft 365 Enterprise E5 plan, is a security service that enables enterprise customers to detect, investigate, and respond to advanced threats on their networks. For more info about Microsoft Defender ATP, the minimum requirements, and how you can manage this feature, see:
+Microsoft Defender ATP, only available with the Microsoft 365 E5 plan, is a security service that enables enterprise customers to detect, investigate, and respond to advanced threats on their networks. For more info about Microsoft Defender ATP, the minimum requirements, and how you can manage this feature, see:
 
 * [Microsoft Defender ATP](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
 * [Minimum requirements](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/minimum-requirements-windows-defender-advanced-threat-protection)

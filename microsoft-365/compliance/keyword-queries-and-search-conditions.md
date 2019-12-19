@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid: 
 - MOE150
 - MET150
@@ -140,7 +141,7 @@ Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define 
 |**Operator**|**Usage**|**Description**|
 |:-----|:-----|:-----|
 |AND|keyword1 AND keyword2|Returns items that include all of the specified keywords or  `property:value` expressions. For example,  `from:"Ann Beebe" AND subject:northwind` would return all messages sent by Ann Beebe that contained the word northwind in the subject line. <sup>2</sup>|
-|+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> The query  `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the ** AND ** operator. This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
+|+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> The query  `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the **AND** operator. This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
 |OR|keyword1 OR keyword2|Returns items that include one or more of the specified keywords or  `property:value` expressions. <sup>2</sup>|
 |NOT|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> NOT kind:im|Excludes items specified by a keyword or a  `property:value` expression. In the second example excludes messages sent by Ann Beebe. The third example excludes any instant messaging conversations, such as Skype for Business conversations that are saved to the Conversation History mailbox folder. <sup>2</sup>|
 |-|keyword1 -keyword2|The same as the **NOT** operator. So this query returns items that contain  `keyword1` and would exclude items that contain  `keyword2`.|
@@ -187,7 +188,7 @@ Create a condition using common properties when searching mailboxes and sites in
 |Sender/Author|For email, the person who sent a message. For documents, the person cited in the author field from Office documents. You can type more than one name, separated by commas. Two or more values are logically connected by the **OR** operator.|
 |Size (in bytes)|For both email and documents, the size of the item (in bytes).|
 |Subject/Title|For email, the text in the subject line of a message. For documents, the title of the document. As previously explained, the Title property is metadata specified in Microsoft Office documents. You can type the name of more than one subject/title, separated by commas. Two or more values are logically connected by the **OR** operator.|
-|Compliance tag|For both email and documents, labels that have been assigned to messages and documents automatically by label policies or labels that have been manually assigned by users. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. You can type part of the label name and use a wildcard or type the complete label name. For more information, see [Overview of labels in Office 365](labels.md).|
+|Compliance label|For both email and documents, retention labels that have been assigned to messages and documents automatically by label policies or retention labels that have been manually assigned by users. Retention labels are used to classify email and documents for information governance and enforce retention rules based on the settings defined by the label. You can type part of the retention label name and use a wildcard or type the complete label name. For more information, see [Overview of retention labels](labels.md).|
 |||
   
 ### Conditions for mail properties
@@ -308,7 +309,6 @@ This example returns email items or documents that contain the keyword "report",
  `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype="aspx")`
   
 #### Example 3
-<a name="conditionexamples"> </a>
 
 This example returns email messages or calendar meetings that were sent between 12/1/2016 and 11/30/2016 and that contain words that start with "phone" or "smartphone".
   
@@ -375,13 +375,13 @@ Only documents that are shared by using the third option (shared with **Specific
 
 You can use the following keyword query to specifically search for content in Skype for Business conversations:
 
-```
+```powershell
 kind:im
 ```
 
 The previous search query also returns chats from Microsoft Teams. To prevent this, you can narrow the search results to include only Skype for Business conversations by using the following keyword query:
 
-```
+```powershell
 kind:im AND subject:conversation
 ```
 
@@ -389,7 +389,7 @@ The previous keyword query excludes chats in Microsoft Teams because Skype for B
 
 To search for Skype for Business conversations that occurred within a specific date range, use the following keyword query:
 
-```
+```powershell
 kind:im AND subject:conversation AND (received=startdate..enddate)
 ```
 

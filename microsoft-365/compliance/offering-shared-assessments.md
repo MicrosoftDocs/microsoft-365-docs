@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Shared Assessments Program
+title: Shared Assessments Program
 description: Azure and Azure Government support the risk assessment tools of the Shared Assessments program based on their CSA STAR self-assessment.
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -11,9 +11,10 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Shared Assessments Program
+# Shared Assessments Program
 
 ## About Shared Assessments
 

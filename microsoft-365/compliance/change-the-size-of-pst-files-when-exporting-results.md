@@ -18,7 +18,7 @@ description: "You can change the default size of PST files that are downloaded t
 When you use the Office 365 eDiscovery Export tool to export the email results of an eDiscovery search from the different Microsoft eDiscovery tools, the default size of a PST file that can be exported is 10 GB. If you want to change this default size, you can edit the Windows Registry on the computer that you use to export the search results. One reason to do this is so a PST file can fit on removable media, such a DVD, a compact disc, or a USB drive. 
   
 > [!NOTE]
->  The Office 365 eDiscovery Export tool is used to export the search results when using the Content Search tool in the security and compliance center, In-Place eDiscovery in Exchange Online, and the eDiscovery Center in SharePoint Online.
+> The Office 365 eDiscovery Export tool is used to export the search results when using the Content Search tool in the security and compliance center, In-Place eDiscovery in Exchange Online, and the eDiscovery Center in SharePoint Online.
   
 ## Create a registry setting to change the size of PST files when you export eDiscovery search results
 
@@ -28,7 +28,7 @@ Perform the following procedure on the computer that you'll use to export the re
     
 2. Save the following text to a Window registry file by using a filename suffix of .reg; for example, PstExportSize.reg. 
     
-    ```
+    ```text
     Windows Registry Editor Version 5.00
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool]
     "PstSizeLimitInBytes"="1073741824"
@@ -38,7 +38,7 @@ Perform the following procedure on the computer that you'll use to export the re
     
     |**Size in GB (approx.)**|**Size in bytes**|
     |:-----|:-----|
-    |.7 GB (700 MB)  <br/> |751619277  <br/> |
+    |0.7 GB (700 MB)  <br/> |751619277  <br/> |
     |2 GB  <br/> |2147483648  <br/> |
     |4 GB  <br/> |4294967296  <br/> |
     |8 GB  <br/> |8589934592  <br/> |
@@ -63,7 +63,7 @@ The default size of 10 GB was based on customer feedback; 10 GB is a good balanc
   
  **Should I increase or decrease the default size of PST files?**
   
-Customers tend to decrease the size limit so that the search results will fit on removable media that they can physically ship other locations in their organization. We don't recommend that you increase the default size because PST files larger than 10 GB might have corruption issues.
+Customers tend to decrease the size limit so that the search results will fit on removable media that they can physically ship to other locations in their organization. We don't recommend that you increase the default size because PST files larger than 10 GB might have corruption issues.
   
  **What computer do I have to do this on?**
   
@@ -75,4 +75,4 @@ No, you don't have to reboot the computer. But, if the Office 365 eDiscovery Exp
   
  **Does an existing registry key get edited or does a new key get created?**
   
-A new registry key is created the first time you run the .reg file that you created in this procedure. Then the setting is edited each time you change and re-run the .reg edit file.
+A new registry key is created the first time you run the .reg file that you created in this procedure. Then the setting is edited each time you change and rerun the .reg edit file.

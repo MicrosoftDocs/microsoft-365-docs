@@ -1,5 +1,5 @@
 ---
-title: Compliance offering — Center for Internet Security (CIS) Benchmarks
+title: Center for Internet Security (CIS) Benchmarks
 description: The Center for Internet Security (CIS) has published a series of benchmarks for Microsoft products and services
 keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
@@ -11,9 +11,10 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Center for Internet Security (CIS) Benchmarks
+# Center for Internet Security (CIS) Benchmarks
 
 ## About CIS Benchmarks
 
@@ -60,7 +61,7 @@ Get a [complete list of CIS benchmarks](https://www.cisecurity.org/cis-benchmark
 ## How to implement
 
 - [CIS Benchmark for Azure](https://azure.microsoft.com/mediahandler/files/resourcefiles/cis-microsoft-azure-foundations-security-benchmark/CIS_Microsoft_Azure_Foundations_Benchmark_v1.0.0.pdf): Get prescriptive guidance for establishing a secure baseline configuration for Azure.  
-- [Office 365 security best practices](https://docs.microsoft.com/office365/securitycompliance/security-best-practices): Minimize the potential of a data breach or compromised account by following these best practices.
+- [Office 365 security roadmap](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): Minimize the potential of a data breach or compromised account by following this roadmap.
 - [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines): Follow these guidelines for effective use of security baselines in your organization.
 - [CIS Controls Cloud Companion Guide](https://www.cisecurity.org/white-papers/cis-controls-cloud-companion-guide/): Get guidance on applying security best practices in CIS Controls Version 7 to cloud environments.
 
@@ -87,4 +88,4 @@ CIS notes that its “Benchmarks are developed through the generous volunteer ef
 
 ## Download the offering backgrounder
 
-Do you need the backgrounder document for this offering? Download the [PDF](http://download.microsoft.com/download/9/B/7/9B75D846-BDB9-41CB-86FF-F0ADFD15800B/CIS_Benchmarks-Compliance.pdf).
+Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/B/7/9B75D846-BDB9-41CB-86FF-F0ADFD15800B/CIS_Benchmarks-Compliance.pdf).

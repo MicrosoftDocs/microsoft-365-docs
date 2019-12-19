@@ -59,7 +59,7 @@ The first step is to enable the archive mailbox for each user in your organizati
 2. Sign in to Office 365 using your global administrator account.
     
     
-3. In the Security & Compliance Center, go to **Data governance** \> **Archive**.
+3. In the Security & Compliance Center, go to **Information governance** \> **Archive**.
     
     A list of the mailboxes in your organization is displayed and whether the corresponding archive mailbox is enabled or disabled. 
     
@@ -237,7 +237,7 @@ Here are the steps to connect to Exchange Online PowerShell, and then run the Ma
   
 1. On your local computer, open Windows PowerShell and run the following command.
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     ```
 
@@ -245,19 +245,19 @@ Here are the steps to connect to Exchange Online PowerShell, and then run the Ma
     
 2. Run the following command.
     
-    ```
+    ```powershell
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     ```
 
 3. Run the following command.
     
-    ```
+    ```powershell
     Import-PSSession $Session
     ```
 
 4. To verify that you're connected to your Exchange Online organization, run the following command to get a list of all the mailboxes in your organization.
     
-    ```
+    ```powershell
     Get-Mailbox
     ```
 
@@ -266,11 +266,11 @@ Here are the steps to connect to Exchange Online PowerShell, and then run the Ma
   
 5. Run the following two commands to start the Managed Folder Assistant for all user mailboxes in your organization.
     
-    ```
+    ```powershell
     $Mailboxes = Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"}
     ```
 
-    ```
+    ```powershell
     $Mailboxes.Identity | Start-ManagedFolderAssistant
     ```
 
@@ -284,16 +284,18 @@ In Step 4, you have to assign the new retention policy to existing mailboxes. Bu
 
 2. Run the following command to display information about the mailbox plans in your organization.
 
-    ```
+    ```powershell
     Get-MailboxPlan | Format-Table DisplayName,RetentionPolicy,IsDefault
     ```
+    
     Note the mailbox plan that's set as the default.
 
 3. Run the following command to assign the new retention policy that you created in Step 3 (for example, **Alpine House Archive and Retention Policy**) to the default mailbox plan. This example assumes the name of the default mailbox plan is **ExchangeOnlineEnterprise**.
 
-    ```
+    ```powershell
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
     ```
+
 4. You can re-run the command in step 2 to verify that the retention policy assigned to the default mailbox plan was changed.
 
 ## More information
