@@ -105,7 +105,7 @@ To change these setting on the mailbox, replace \<MailboxIdentity\> with the nam
 Set-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" -TrustedListsOnly $false -ContactsTrusted $false
 ```
 
-For detailed syntax, parameter, and required permissions information, see the topics [Get-MailboxJunkEmailConfiguration](https://docs.microsoft.com/en-us/powershell/module/exchange/antispam-antimalware/get-mailboxjunkemailconfiguration) and [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration).
+For detailed syntax, parameter, and required permissions information, see the topics [Get-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-mailboxjunkemailconfiguration) and [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration).
 
 ## Directory synchronization for standalone EOP customers
 
