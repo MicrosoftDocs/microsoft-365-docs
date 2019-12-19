@@ -166,6 +166,10 @@
 
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
 
+            - name: New Microsoft 365 security center
+
+              href: ./mtp/overview-security-center.md
+
             - name: Permissions in the Security & Compliance Center
 
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md

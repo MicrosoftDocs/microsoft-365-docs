@@ -76,7 +76,7 @@ The PowerShell commands for Restricted Users are:
 
 ## For more information
 
-[Responding to a Compromised Email Account in Office 365](responding-to-a-compromised-email-account.md)
+[Responding to a compromised email account](responding-to-a-compromised-email-account.md)
 
 [Understanding the User restricted from sending email alert](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
 
