@@ -15,7 +15,7 @@ description: "Administrators can set up a native connector to import and archive
 
 # Deploy a connector to archive Facebook business pages data
 
-This article contains the step-by-step process to deploy a connector that uses the Office 365 Import service to import data from Facebook business pages to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Facebook connector, see [Use a Facebook business pages connector to archive Facebook data in Microsoft 365](archive-facebook-data-with-sample-connector.md). 
+This article contains the step-by-step process to deploy a connector that uses the Microsoft 365 Import service to import data from Facebook business pages to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Facebook connector, see [Set up a connector to archive Facebook data](archive-facebook-data-with-sample-connector.md). 
 
 ## Step 1: Create an app in Azure Active Directory
 
@@ -59,21 +59,21 @@ This article contains the step-by-step process to deploy a connector that uses t
 
    ![Go to Manifest and copy the AAD application Uri](media/FBCimage10.png)
 
-## Step 2: Deploy connector web service from GitHub reposiotry to your Azure account
+## Step 2: Deploy the connector web service from GitHub to your Azure account
 
-1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) and Click **Deploy to Azure**.
+1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) and click **Deploy to Azure**.
 
     ![Go to the Azure home page](media/FBCimage11.png)
 
-2. After you click **Deploy to Azure**, you will be redirected to Azure portal with a custom template page. Fill in the **Basics** and **Settings** details and then click **Purchase**
+2. After you click **Deploy to Azure**, you will be redirected to an Azure portal with a custom template page. Fill in the **Basics** and **Settings** details and then click **Purchase**.
 
-    - **Subscription** – Select your Azure subscription where you would like the Facebook business pages connector web service to be be deployed
+    - **Subscription** – Select your Azure subscription that you want to deploy the Facebook business pages connector web service to.
     
-    - **Resource group** — Choose are create a new resource group. A resource group is a container that holds related resources for an Azure solution.
+    - **Resource group** — Choose or create a new resource group. A resource group is a container that holds related resources for an Azure solution.
 
-    - **Location** – Choose location.
+    - **Location** – Choose a location.
 
-    - **Web App Name** – Provide a unique name for the connector web app. Name must be in 3 and 18 characters in length. Note that the name that you enter in the **Web App Name** box is used to create the Azure app service URL; for example, if you provide the Web App Name as fbconnector then the Azure app service URL  will be fbconnector.azurewebsites.net.
+    - **Web App Name** – Provide a unique name for the connector web app. Th name must be between 3 and 18 characters in length. This name is used to create the Azure app service URL; for example, if you provide the Web app name of **fbconnector** then the Azure app service URL  will be **fbconnector.azurewebsites.net**.
     
     - **tenantId** – The tenant ID of your Microsoft 365 organization that you copied after creating the Facebook connector app in Azure       Active Directory in Step 1.
     
@@ -84,7 +84,6 @@ This article contains the step-by-step process to deploy a connector that uses t
 3. After the deployment is successful, the page will look similar to the following screenshot:
 
     ![Click Storage and then click Storage account](media/FBCimage13.png)
-
 
 ## Step 3: Register the Facebook app
 
@@ -180,11 +179,11 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 5. Click **Save** to save the connector settings.
 
-## Step 5: Set up a Facebook business pages connector in the Microsoft 365 compliance center
+## Step 5: Set up a Facebook business pages connector
 
 1. Go to <https://compliance.mcirosoft.com> and then click **Data connectors**.
 
-   ![Go to security and compliance center and click Information governance > Import > Archive third-party data](media/FBCimage44.png)
+   ![Go to the Data connectors page in the Microsoft 365 compliance center](media/FBCimage44.png)
 
 2.  Click **View** and then click **Add connector**.
 
@@ -209,7 +208,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
    ![Log in with Facebook](media/FBCimage50.png)
 
-6. A list of the Business pages managed by the Facebook account that you logged in to is displayed. Select the page to archive and then click **Next**.
+6. A list of the business pages managed by the Facebook account that you logged in to is displayed. Select the page to archive and then click **Next**.
 
     ![Select the organization business page that you want to archive](media/FBCimage52.png)
 
@@ -221,14 +220,14 @@ This article contains the step-by-step process to deploy a connector that uses t
 
     ![Apply a filter to import items that are a certain age](media/FBCimage54.png)
 
-9. On the **Set Storage Account** page, select the Office 365 mailbox that the items from the Facebook Business pages that you previously selected will be imported to.
+9. On the **Set Storage Account** page, select the Microsoft 365 mailbox that the items from the Facebook Business pages that you previously selected will be imported to.
 
-    ![Specify an Office 365 mailbox archive items imported from Facebook](media/FBCimage55.png)
+    ![Specify a mailbox to archive items imported from Facebook](media/FBCimage55.png)
 
-10. Review your settings and then click **Finish** to complete the connector setup in the Security & Compliance Center.
+10. Review your settings and then click **Finish** to complete the connector setup in the compliance center.
 
     ![Review connector settings](media/FBCimage56.png)
 
-11. Go to the **Connectors** tab in the **Data connectors** page to see the progress of the import process.
+11. Go to the **Connectors** tab on the **Data connectors** page to see the progress of the import process.
 
-    ![Go to the Connectors tab to track import process](media/FBCimage58.png)
+    ![Go to the Connectors tab to track the import process](media/FBCimage58.png)
