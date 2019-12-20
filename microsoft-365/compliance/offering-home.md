@@ -10,6 +10,7 @@ keywords: Microsoft, Microsoft 365, Compliance, Offering
 localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
+titleSuffix: Microsoft Compliance
 ---
 
 # Microsoft compliance offerings
@@ -41,7 +42,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <p><a href="offering-ISO-27701.md">ISO 27701</a></p>
                         <p><a href="offering-ISO-9001.md">ISO 9001</a></p>
                         <p><a href="offering-soc.md">SOC</a></p>
-                        <p><a href="offering-wcag-2-1.md">WCAG 2.1</a></p>
+                        <p><a href="offering-wcag-2-1.md">WCAG</a></p>
                     </div>
                 </div>
             </div>

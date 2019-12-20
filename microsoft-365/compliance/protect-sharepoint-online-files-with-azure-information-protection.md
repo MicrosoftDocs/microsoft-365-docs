@@ -22,8 +22,10 @@ description: "Summary: Apply Azure Information Protection to protect files in a 
 
 # Protect SharePoint Online files with Azure Information Protection
 
- **Summary:** Apply Azure Information Protection to protect files in a highly confidential SharePoint Online team site.
-  
+>[!Note]
+>The current solution for files in a highly confidential SharePoint Online team site uses Office 365 sensitivity labels. Please see [this article](protect-sharepoint-online-files-with-sensitivity-label.md) for the details.
+>
+
 Use the steps in this article to configure Azure Information Protection to provide encryption and permissions for files. These files can be added to a SharePoint library configured for highly confidential protection. Or, you can open a file directly from the site and use the Azure Information Protection client to add encryption. The encryption and permissions protection travels with a file even when it is downloaded from the site. 
 
 These steps are part of a larger solution for configuring highly confidential protection for SharePoint sites and the files within these sites. For more information, see [Secure SharePoint Online sites and files](../security/office-365-security/secure-sharepoint-online-sites-and-files.md). 
@@ -44,9 +46,7 @@ Next, configure Azure Information Protection with a new scoped policy and sub-la
     
 2. In a separate tab of your browser, go to the Azure portal ([https://portal.azure.com](https://portal.azure.com)).
     
-3. If this is the first time you are configuring Azure Information Protection, see these [instructions](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
-
-4. In the list pane, click **All services**, type **information**, and then click **Azure Information Protection**.
+4. In the search box, type **information**, and then click **Azure Information Protection**.
 
 5. Click **Labels**.
     
@@ -108,6 +108,6 @@ There are two ways you can grant external users access to files protected with A
 
 [Secure SharePoint Online sites and files](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
-[Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

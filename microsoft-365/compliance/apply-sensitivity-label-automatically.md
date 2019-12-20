@@ -1,11 +1,11 @@
 ---
 title: "Apply a sensitivity label to content automatically"
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
-ms.date: 11/01/2019
+ms.date: 12/13/2019
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
@@ -26,9 +26,9 @@ The ability to apply sensitivity labels to content automatically is important be
 
 - You don't need to rely on users to classify all content correctly.
 
-- Users no longer need to know about your policies - they can instead focus on their work.
+- Users no longer need to know about your policies — they can instead focus on their work.
 
-For information about license requirements, see [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
+For information about license requirements, see [Subscription and licensing requirements for sensitivity labels](sensitivity-labels-office-apps.md#subscription-and-licensing-requirements-for-sensitivity-labels).
 
 The auto-labeling settings are available when you create a sensitivity label in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center under **Classification** > **Sensitivity labels**.
 
