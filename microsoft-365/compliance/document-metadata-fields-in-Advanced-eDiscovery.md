@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: "This article defines the metadata fields for documents in a review set in a case in Advanced eDiscovery in Microsoft 365."
 ---
 
 # Document metadata fields in Advanced eDiscovery
