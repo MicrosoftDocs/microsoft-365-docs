@@ -143,10 +143,6 @@ Added new guidance to the following articles about the California Consumer Priva
 [Content search in Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment) (updated)<br>
 [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments) (updated)<br>Added details to both articles about searching for content in SharePoint multi-geo environments.
 
-### Data governance
-
-[Overview of unlimited archiving in Office 365](unlimited-archiving.md#how-auto-expanding-archiving-works) (updated)<br>Added details about how Office 365 adds a maximum of 20 auxiliary archives for a total of 1 TB of additional storage.
-
 ### Data investigations
 
 [Delete items from their original location (Preview)](delete-items-from-original-locations.md) (new)<br>Now available in preview, you can select items in an evidence set and then soft-delete them from their original locations in Exchange, SharePoint, and OneDrive.
