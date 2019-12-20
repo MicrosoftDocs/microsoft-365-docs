@@ -1,5 +1,5 @@
 ---
-title: "eDiscovery cases in the Security & Compliance Center"
+title: "Manage eDiscovery cases in the Security & Compliance Center"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,10 +15,10 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
-description: "Use the Security & Compliance Center to create and manage eDiscovery cases in your organization. You can assign members to the case, place content locations on hold, run Content Searches associated with the case, and the export the search results. You can also prepare case data for further analysis in Advanced eDiscovery."
+description: "Use the Security & Compliance Center to create and manage eDiscovery cases in your organization. You can assign members to the case, place content locations on hold, run Content Searches associated with the case, and the export the search results. You can also prepare case data for further analysis in Office 365 Advanced eDiscovery."
 ---
 
-# eDiscovery cases in the Security & Compliance Center
+# Manage eDiscovery cases in the Security & Compliance Center
 
 You can use eDiscovery cases in the compliance center in Office 365 and Microsoft 365 to control who can create, access, and manage eDiscovery cases in your organization. If your organization has an Office 365 E5 subscription, you can also use eDiscovery cases to analyze search results by using Office 365 Advanced eDiscovery.
   
@@ -140,7 +140,7 @@ After you create a case, the next step is to add members to the case. As previou
   
 ## Step 4: Place content locations on hold
 
-You can use an eDiscovery case to create holds to preserve content that might be relevant to the case. You can place a hold on the mailboxes and OneDrive for Business sites of people who are custodians in the case. You can also place a hold on the group mailbox, SharePoint site, and OneDrive for Business site for an Office 365 Group. Similarly, you can place a hold on the mailbox and site that are associated with Microsoft Teams or Yammer Groups. When you place content locations on hold, content is held until you remove the hold from the content location or until you delete the hold.
+You can use an eDiscovery case to create holds to preserve content that might be relevant to the case. You can place a hold on the mailboxes and OneDrive for Business sites of people who are custodians in the case. You can also place a hold on the group mailbox, SharePoint site, and OneDrive for Business site for an Office 365 Group. Similarly, you can place a hold on the mailboxes and sites that are associated with Microsoft Teams or Yammer Groups. When you place content locations on hold, content is held until you remove the hold from the content location or until you delete the hold.
 
 > [!NOTE]
 > After you place a content location on hold, it takes up to 24 hours for the hold to take effect. 
@@ -178,14 +178,14 @@ To create a hold for an eDiscovery case:
     
     ![Choose the content locations to place on hold](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **Exchange email** - Click **Choose users, groups, or teams** and then click **Choose users, groups, or teams** again. to specify mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for an Office 365 Group, Yammer Group, or a Microsoft Team. Select the user, group, team check box, click **Choose**, and then click **Done**.
+   a. **Exchange email** - Click **Choose users, groups, or teams** and then click **Choose users, groups, or teams** again. to specify mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for a Microsoft Team, a Yammer Group, or an Office 365 Group. Select the user, group, team check box, click **Choose**, and then click **Done**.
     
     > [!NOTE]
     > When you click **Choose users, groups, or teams** to specify mailboxes to place on hold, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add people to this list, type a name (a minimum of 3 characters) in the search box. 
 
-   b. **SharePoint Sites** - Click **Choose sites** and then click **Choose sites** again to specify SharePoint and OneDrive for Business sites to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for an Office 365 Group, Yammer Group, or a Microsoft Team. Click **Choose**, and then click **Done**.
+   b. **SharePoint sites** - Click **Choose sites** and then click **Choose sites** again to specify SharePoint and OneDrive for Business sites to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft Team, a Yammer Group, or a, Office 365 Group. Click **Choose**, and then click **Done**.
     
-    See the [More information](#more-information) section for tips on putting Office 365 Groups, Yammer Groups, and Microsoft Teams on hold. 
+    See the [More information](#more-information) section for tips on putting Microsoft Teams, Yammer Groups, and Office 365 Groups on hold. 
     
     > [!NOTE]
     > In the rare case that a person's user principal name (UPN) is changed, the URL for their OneDrive account will also be changed to incorporate the new UPN. If this happens, you'll have to modify the hold by adding the user's new OneDrive URL and removing the old one. 
@@ -264,7 +264,7 @@ After an eDiscovery case is created and any custodians related to the case are p
     
     ![Locations, locations on hold](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **All locations** - Select this option to search all content locations in your organization. When you select this option, you can choose to search all Exchange mailboxes (which includes the mailboxes for all Office 365 Groups, Yammer Groups, and Microsoft Teams), all SharePoint and OneDrive for Business sites (which includes the sites for all Office 365 Groups, Yammer Groups, and Microsoft Teams), and all public folders.
+    - **All locations** - Select this option to search all content locations in your organization. When you select this option, you can choose to search all Exchange mailboxes (which includes the mailboxes for all Microsoft Teams, Yammer Groups, and Office 365 Groups), all SharePoint and OneDrive for Business sites (which includes the sites for all Microsoft Teams, Yammer Groups, and Office 365 Groups), and all public folders.
     
     - **All locations on hold.** Select this option to search all the content locations that have been placed on hold in the case. If the case contains multiple holds, the content locations from all holds will be searched when you select this option. Additionally, if a content location was placed on a query-based hold, only the items that are on hold will be searched when you run the content search that you're creating in this step. For example, if a user was placed on query-based case hold that preserves items that were sent or created before a specific date, only those items would be searched by using the search criteria of the content search. This is accomplished by connecting the case hold query and the content search query by an **AND** operator. See the [More information](#more-information) section at the end of this article for more details about searching case content. 
     
@@ -280,9 +280,9 @@ After an eDiscovery case is created and any custodians related to the case are p
     
       - When you click **Choose users, groups, or teams** to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, click **Choose users, groups, or teams**, type a name (a minimum of 3 characters) in the search box, select the check box next to the name, and then click **Choose**. 
     
-      - You can add inactive mailboxes, Office 365 Groups, Yammer Groups, Microsoft Teams, and distribution groups to the list of mailboxes to search. Dynamic distribution groups aren't supported. If you add Office 365 Groups, Yammer Groups, or Microsoft Teams, the group or team mailbox is searched; the mailboxes of the group members aren't searche
+      - You can add inactive mailboxes, Microsoft Teams, Yammer Groups, Office 365 Groups, and distribution groups to the list of mailboxes to search. Dynamic distribution groups aren't supported. If you add Microsoft Teams, Yammer Groups, or Office 365 Groups, the group or team mailbox is searched; the mailboxes of the group members aren't searched.
     
-      - To add sites click **Choose sites**, click **Choose sites** again, and then type the URL for each site that you want to search. You can also add the URL for the SharePoint site for Office 365 Groups, Yammer Groups, and Microsoft Teams. 
+      - To add sites click **Choose sites**, click **Choose sites** again, and then type the URL for each site that you want to search. You can also add the URL for the SharePoint site for a Microsoft Team, a Yammer Group, or an Office 365 Group. 
     
 10. After you select the content locations to search, click **Done** and then click **Save**.
     
