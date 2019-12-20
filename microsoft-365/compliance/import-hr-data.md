@@ -18,12 +18,12 @@ description: "Administrators can set up a connector to import employee data thei
 
 ## Before you begin
 
-## Step 1: 
+## Step 1: Create an app in Azure Active Directory
 
-## Step 2: 
+## Step 2: Prepare a CSV mapping file
 
-## Step 3: 
+## Step 3: Create an HR connector
 
-## Step 4: 
+## Step 4: Run the script 
 
-## Step 5: 
+## Step 5: Monitor the HR connector
