@@ -36,7 +36,7 @@ We’ll show Desktop background picture in these instructions. After you’ve st
 4. Select **Deploy** to deploy the change to one of the deployment groups.
 
 > [!NOTE] 
-> The orange caution icon indicates there is a previous group available for deployment as it’s recommended to rollout in order. 
+> The orange caution icon indicates there is a previous group available for deployment as it’s recommended to roll out in order. 
 
 ![Deployment status workspace. Trusted sites pane on the right. In the Deployment groups section are three columns: deployment groups, devices, and status. In the status column, "deploy" is highlighted.](images/1deployedit.png)
 We recommend deploying to deployment groups in this order: Test, First, Fast, and then Broad. 
