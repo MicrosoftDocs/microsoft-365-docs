@@ -63,7 +63,7 @@ SharePoint Online supports encryption of the following file types:
 - The XML Paper Specification (XPS) format
  
 > [!NOTE]
-> IRM protection cannot be applied to the protected documents (like digitally signed PDF files) as SharePoint needs to open the document on upload. 
+> IRM protection cannot be applied to protected documents (like digitally signed PDF files) as SharePoint needs to open the document on upload. 
 
 ## Next steps
 <a name="__toc220831191"> </a>
@@ -73,4 +73,3 @@ Once you've enabled IRM for SharePoint Online, you can start applying rights man
 The new OneDrive sync client for Windows now supports synchronizing IRM-protected SharePoint document libraries and OneDrive locations (as long as the IRM setting for the library isn't set to expire document access rights). For more information, or to get started deploying the new sync client, see [Deploy the new OneDrive sync client for Windows](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668).
   
 [Top of page](#introduction)  
-
