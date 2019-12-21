@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
-title: Microsoft 365 Enterprise documentation and resources # < 60 chars
+title: Microsoft 365 for enterprise documentation and resources # < 60 chars
 summary: Best-in-class productivity apps with intelligent cloud services that transform the way you work. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
 metadata:
-  title: Microsoft 365 Enterprise documentation and resources # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about the product documentation and resources available for Microsoft 365 Enterprise for IT pros, information workers, and partners. # Required; article description that is displayed in search results. < 160 chars.
+  title: Microsoft 365 for enterprise documentation and resources # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about the product documentation and resources available for Microsoft 365 for enterprise for IT pros, information workers, and partners. # Required; article description that is displayed in search results. < 160 chars.
   services: service
   ms.prod: microsoft-365-enterprise
   ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
@@ -23,7 +23,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Learn about Microsoft 365 Enterprise
+    - title: Learn about Microsoft 365 for enterprise
       itemType: get-started
       url: microsoft-365-overview.md
     # Card
@@ -38,8 +38,8 @@ highlightedContent:
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  title: Get help with Microsoft 365 Enterprise and other resources # < 60 chars (optional)
-  summary: Explore Microsoft 365 Enterprise deployment guidance, features, and services. # < 160 chars (optional)
+  title: Get help with Microsoft 365 for enterprise and other resources # < 60 chars (optional)
+  summary: Explore Microsoft 365 for enterprise deployment guidance, features, and services. # < 160 chars (optional)
   items:
     # Card
     - title: Follow the deployment roadmap
@@ -87,7 +87,7 @@ conceptualContent:
           itemType: deploy
           text: Office client and server and Windows migration
     # Card
-    - title: Manage Microsoft 365 Enterprise
+    - title: Manage Microsoft 365 for enterprise
       links:
         - url: https://docs.microsoft.com/windows/deployment/update/
           itemType: how-to-guide

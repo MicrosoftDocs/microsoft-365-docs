@@ -1,5 +1,5 @@
 ---
-title: "Getting started with Microsoft 365 classifiers (preview)"
+title: "Getting started with trainable classifiers (preview)"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
