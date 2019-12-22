@@ -18,7 +18,7 @@ description: ""
 ---
 # Add or remove members from a case
 
-You can add or remove members to manage who can access the case. Users who are added to Reviewer or eDiscovery Manager role groups can be added as members of the case. The eDiscovery Manager who created the case is automatically added as a member.
+You can add or remove members to manage who can access the case. Users who are added to Reviewer or eDiscovery Manager role groups can be added as members of the case. The eDiscovery Manager who created the case is automatically added as a member. See [assign eDiscovery permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions) for more details.
 
 1. From the **Advanced eDiscovery** page, go to your case.
 
