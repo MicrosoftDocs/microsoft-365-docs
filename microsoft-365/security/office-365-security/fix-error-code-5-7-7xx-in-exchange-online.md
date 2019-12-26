@@ -22,11 +22,11 @@ This topic describes what you can do if you see status code 550 5.7.7xx in a non
 
 ## 5.7.705: Tenant has exceeded threshold restriction: What you need to know
 
-Internal senders could see this NDR whenever you try to send mail if your tenant was compromised. This usually occus when the majority of traffic from your tenant has been detected as suspicious and has resulted in a ban on sending ability for the tenant. This can also occur if your users send an large amount of bulk mail from Office 365. As stated in the service description, Exchange Online customers who need to send legitimate bulk commercial email (for example, customer newsletters) should use third-party providers that specialize in these services.
-
-Once your users collectively, as a tenant, send a certain amount of suspicious mail through the service, all users can be prevented from sending any mail until the problem is fixed. Users will receive a Non-Delivery Report (NDR) that states:
+Once your users collectively, as a tenant, send a certain amount of suspicious mail through the service, all users can be prevented from sending any mail until the problem is fixed. This is usually a result of compromise (most common) or sending too much bulk mail. Users will receive a Non-Delivery Report (NDR) that states:
 
 - 550 5.7.705 Access denied, tenant has exceeded threshold
+
+In rare cases, this could also happen if you renew your subscription after it has already run out. The reason for this is because it takes time for the service to sync the new subscription information. This should not take more than a day, but the tenant could be blocked from sending email in the meantime. The best way to prevent this is to make sure the subscription does not run out.
 
 ## 5.7.750: Unregistered Domain Email restriction: What you need to know
 
@@ -48,16 +48,22 @@ There are several things you need to do if your tenant get blocked for sending e
 
 2. Look for unusual connectors. Malicious actors will often create new inbound connectors in your Office 365 tenant to send spam. More information on checking your connectors can be found [here](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector).
 
-3. Lock down your on-premises servers and ensure that they are not compromised.
+3. Check to see [if users have been compromised](responding-to-a-compromised-email-account.md)
+
+4. [Enable MFA](https://docs.microsoft.com/en-us/office365/admin/security-and-compliance/set-up-multi-factor-authentication) for all admins in your tenant.
+
+5. Lock down your on-premises servers and ensure that they are not compromised.
 
    > [!TIP]
    > There are many factors involved here, especially if these are third-party servers. Regardless, you will need to be able confirm that  all mail leaving your servers are legitimate.
 
-4. Once done, you will need to call Microsoft Support and ask to get your tenant unblocked to send from unregistered domains again.  Providing the error code is helpful, but you will need to prove that your environment is secured and that spam will not be sent again. More information on opening a support case can be found [here](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+6. Once done, you will need to call Microsoft Support and ask to get your tenant unblocked to send from unregistered domains again.  Providing the error code is helpful, but you will need to prove that your environment is secured and that spam will not be sent again. More information on opening a support case can be found [here](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ## For more information
 
 [Office 365 email anti-spam protection](anti-spam-protection.md)
+
+[Bulk Mail guidance in the sending limits section of the Exchange Online service description](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 [Email non-delivery reports in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
