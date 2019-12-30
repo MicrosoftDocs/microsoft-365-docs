@@ -2,7 +2,7 @@
 title: "Microsoft 365 Security for Business Decision Makers (BDMs)"
 ms.author: bcarter
 author: brendacarter
-manager: 
+manager: johmar
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -129,7 +129,7 @@ Last, but not least Continuous Monitoring and Auditing of the Microsoft 365 envi
 |Use **Office 365 ATP** tools:<br>•	Threat investigation and response capabilities<br> •	Automated investigation and response |         |![green check mark](../images/green-check-mark.png)|
 |Use **Microsoft Defender ATP**:<br> •	[Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> •	Automated investigation and remediation Secure score <br>•	[Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![green check mark](../images/green-check-mark.png)|
 |Use **Microsoft Cloud App Security** to detect unusual behavior across cloud apps to identify ransomware, compromised users or rogue applications, analyze high-risk usage and remediate automatically to limit the risk to your organization.|         |![green check mark](../images/green-check-mark.png)|
-|Use **Microsoft Azure Sentinel** or your **current SIEM** tool to monitor for threats across your environment. Azure Sentinel is free to use during the preview period. |         |![green check mark](../images/green-check-mark.png)|
+|Use **Microsoft Azure Sentinel** or your current SIEM tool to monitor for threats across your environment. |         |![green check mark](../images/green-check-mark.png)|
 |**Deploy [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)** to monitor and protect against threats targeted to your on-premises Active Directory environment.   |         |![green check mark](../images/green-check-mark.png) |
 |Use the **Azure Security Center** to monitor for threats across hybrid and cloud workloads. Azure Security Center includes a free tier of capabilities and a standard tier of capabilities that are paid for based on resource hours or transactions.|         |         |
 
