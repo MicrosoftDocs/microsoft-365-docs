@@ -27,6 +27,9 @@ Although we empower security administrators to customize their security settings
 
 This topic describes these Microsoft-recommended settings to help protect your Office 365 users.
 
+> [!TIP]
+> There is a new PowerShell Module that you can download called the Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) that helps determine some of these settings. When run as an admin in your tenant, Get-ORCAReport will help generate an assessment of the anti-spam, anti-phish, and other message hygiene settings. You can download this module at https://www.powershellgallery.com/packages/ORCA/.
+
 ## Anti-spam, anti-malware, and anti-phishing protection in EOP
 
 Anti-spam, anti-malware, and anti-phishing are features of EOP that can be configured by admins. We recommend the following configurations.
