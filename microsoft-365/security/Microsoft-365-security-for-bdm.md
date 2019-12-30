@@ -2,7 +2,7 @@
 title: "Microsoft 365 Security for Business Decision Makers (BDMs)"
 ms.author: bcarter
 author: brendacarter
-manager: 
+manager: johmar
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
