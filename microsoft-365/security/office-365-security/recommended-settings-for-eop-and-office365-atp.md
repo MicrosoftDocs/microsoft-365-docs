@@ -27,6 +27,9 @@ Although we empower security administrators to customize their security settings
 
 This topic describes these Microsoft-recommended settings to help protect your Office 365 users.
 
+> [!TIP]
+> There is a new PowerShell Module that you can download called the Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) that helps determine some of these settings. When run as an admin in your tenant, Get-ORCAReport will help generate an assessment of the anti-spam, anti-phish, and other message hygiene settings. You can download this module at https://www.powershellgallery.com/packages/ORCA/.
+
 ## Anti-spam, anti-malware, and anti-phishing protection in EOP
 
 Anti-spam, anti-malware, and anti-phishing are features of EOP that can be configured by admins. We recommend the following configurations.
@@ -75,9 +78,9 @@ There are several other parameters in the Anti-spam policy called Advanced Spam 
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|Outbound spam policy Recipient Limits - External hourly limit|500|400||
-|Outbound spam policy Recipient Limits - Internal hourly limit|1000|800||
-|Outbound spam policy Recipient Limits - Daily limit|1000|800||
+|Outbound spam policy Recipient Limits - External hourly limit|400|500||
+|Outbound spam policy Recipient Limits - Internal hourly limit|800|1000||
+|Outbound spam policy Recipient Limits - Daily limit|800|1000||
 |Action when a user exceeds the limits|Restrict the user from sending mail|Restrict the user from sending mail||
 
 ### EOP anti-malware policy settings
