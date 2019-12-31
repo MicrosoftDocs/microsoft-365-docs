@@ -21,3 +21,9 @@ Advanced eDiscovery v1 (also called Office 365 Advanced eDiscovery) is the versi
 The In-Place eDiscovery and Holds tool in the Exchange admin center is also being retired. This tool is used for searching, holding, and exporting mailbox content in Exchange Online. Similar functionality is available in the Microsoft 365 compliance center.
 
 More information about retiring these legacy eDiscovery tools is coming soon.
+
+
+
+
+
+
