@@ -57,13 +57,13 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 10. Go to **Manifest** and copy the identifierUris (which is also called the AAD application Uri) as highlighted in the following screenshot. Copy the AAD application Uri to a text file or other storage location. You use it in Step 6.
 
-   ![Go to Manifest and copy the AAD application Uri](media/FBCimage10.png)
+    ![Go to Manifest and copy the AAD application Uri](media/FBCimage10.png)
 
 ## Step 2: Deploy the connector web service from GitHub to your Azure account
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) and click **Deploy to Azure**.
 
-    ![Click Deplo to Azure](media/FBCimage11.png)
+    ![Click Deploy to Azure](media/FBCimage11.png)
 
 2. After you click **Deploy to Azure**, you will be redirected to an Azure portal with a custom template page. Fill in the **Basics** and **Settings** details and then click **Purchase**.
 
@@ -79,11 +79,11 @@ This article contains the step-by-step process to deploy a connector that uses t
     
    - **APISecretKey** – You can type any value as the secret. This is used to access the connector web app in Step 5.
    
-    ![Click Create a resource and type storage account](media/FBCimage12.png)
+     ![Click Create a resource and type storage account](media/FBCimage12.png)
 
 3. After the deployment is successful, the page will look similar to the following screenshot:
 
-    ![Click Storage and then click Storage account](media/FBCimage13.png)
+     ![Click Storage and then click Storage account](media/FBCimage13.png)
 
 ## Step 3: Register the Facebook app
 
@@ -181,7 +181,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 ## Step 5: Set up a Facebook business pages connector
 
-1. Go to <https://compliance.mcirosoft.com> and then click **Data connectors**.
+1. Go to <https://compliance.microsoft.com> and then click **Data connectors**.
 
    ![Go to the Data connectors page in the Microsoft 365 compliance center](media/FBCimage44.png)
 
