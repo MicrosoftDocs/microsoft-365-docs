@@ -6,7 +6,7 @@ NOTE: The functionality being retired only applies to the Office 365 cloud versi
 
 As a result, we are announcing the Retirement of the following features.
 
-  - Exchange admin center eDiscovery & In-Place Holds - [<span class="underline">documentation</span>](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
+  - Exchange admin center eDiscovery & In-Place Holds - [<span class="underline">documentation</span>](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
   - MailboxSearch cmdlets
     
@@ -34,7 +34,7 @@ The following provides guidance for each feature being retired, including timeli
 
 As per the original notice announced in July 1, 2017, the Exchange admin center In-Place eDiscovery & Hold functionality is being retired. In-Place eDiscovery & holds allowed users to search, hold and export content from Microsoft Exchange server. Furthermore, it had capabilities to copy search results to a discovery mailbox so content could be reviewed and ultimately produced for legal, regulatory and public requests.
 
-Since all of these capabilities are now available in the [<span class="underline">Microsoft 365 compliance center</span>](https://docs.microsoft.com/en-us/microsoft-365/compliance/microsoft-365-compliance-center) with improved functionality, reliability and broader coverage of data in your Microsoft 365 tenant, you should begin taking advantage of these features immediately. To help in the transition to the new functionality, many alternatives are listed below with links to documentation.
+Since all of these capabilities are now available in the [<span class="underline">Microsoft 365 compliance center</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) with improved functionality, reliability and broader coverage of data in your Microsoft 365 tenant, you should begin taking advantage of these features immediately. To help in the transition to the new functionality, many alternatives are listed below with links to documentation.
 
   - Scope
     
@@ -133,7 +133,7 @@ Since all of these capabilities are now available in the [<span class="underline
 
 **I use the copy search results functionality in the Exchange admin center In-Place eDiscovery & Holds to copy search results to a discovery mailbox for review by attorneys. What options do I have now?**
 
-There are two ways to provide this functionality today. First is to use [Review Sets in Advanced eDiscovery](https://docs.microsoft.com/en-us/microsoft-365/compliance/view-documents-in-review-set). Review sets have many capabilities you would see in a traditional review tool like lightning fast search, tagging, email threading, near duplicate grouping, themes analysis and predictive coding. Alternatively, if you are still interested in using discovery mailboxes for review, you can export from the Microsoft 365 compliance center and then import the data using the [PST import feature](use-network-upload-to-import-pst-files.md) offered by Data Governance.
+There are two ways to provide this functionality today. First is to use [Review Sets in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/view-documents-in-review-set). Review sets have many capabilities you would see in a traditional review tool like lightning fast search, tagging, email threading, near duplicate grouping, themes analysis and predictive coding. Alternatively, if you are still interested in using discovery mailboxes for review, you can export from the Microsoft 365 compliance center and then import the data using the [PST import feature](use-network-upload-to-import-pst-files.md) offered by Data Governance.
 
 **How do I control users that can an eDiscovery manager can search, this was done using RBAC in the past?**
 
@@ -293,7 +293,7 @@ Search-Mailbox is being retired as originally announced in a warning in the cmdl
 
 Advanced eDiscovery v1.0, which is the version of Advanced eDiscovery available in an eDiscovery case by clicking **Switch to Advanced eDiscovery** is being retired in favor of the new [Advanced eDiscovery solution](https://aka.ms/edisco) in the Microsoft 365 compliance center.
 
-The new Advanced eDiscovery solution in Microsoft 365 provides all of the capabilities of the original solution, but now includes a custodian based approach to identifying data within the Microsoft Services, collecting that data and promoting it to a Review Set where reviewers can take advantage of lightning fast search, tagging, and analytics features to help cull relevant documents. Advanced eDiscovery now includes improved processing and native viewers for both Microsoft and non-Microsoft file types, a full list of file types is [here](https://docs.microsoft.com/en-us/microsoft-365/compliance/supported-filetypes-ediscovery20) and supported metadata fields are [here](https://docs.microsoft.com/en-us/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). Also, the new Advanced eDiscovery solution provides robust custodian holds management features to apply holds, notify users of the holds, and track responses right in the application.
+The new Advanced eDiscovery solution in Microsoft 365 provides all of the capabilities of the original solution, but now includes a custodian based approach to identifying data within the Microsoft Services, collecting that data and promoting it to a Review Set where reviewers can take advantage of lightning fast search, tagging, and analytics features to help cull relevant documents. Advanced eDiscovery now includes improved processing and native viewers for both Microsoft and non-Microsoft file types, a full list of file types is [here](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) and supported metadata fields are [here](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). Also, the new Advanced eDiscovery solution provides robust custodian holds management features to apply holds, notify users of the holds, and track responses right in the application.
 
 At this time, we recommended that you begin to transition you eDiscovery workflow to the new Advanced eDiscovery functionality. Although you’ll still be able to access Advanced eDiscovery v1.0 in existing cases, Microsoft Support won’t provide support after July 1, 2020. See the following timeline for more details.
 

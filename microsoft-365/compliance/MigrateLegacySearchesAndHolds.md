@@ -97,13 +97,13 @@ The output will look roughly like the following
 
  
 
-NOTE: This in-place hold period is indefinite (ItemHoldPeriod: Unlimited). This is typical for eDiscovery usage. If the hold has any other value, this is likely used as a preservation policy. Instead of using the eDiscovery cmdlets in the Microsoft 365 Compliance Center, you should instead use [<span class="underline">New-HoldCompliancePolicy</span>](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancepolicy?view=exchange-ps) and [<span class="underline">New-HoldComplianceRule</span>](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancerule?view=exchange-ps). The usages will be similar to New-CaseHoldPolicy & New-CaseHoldRule, but you will be able to specify a timeline and action. Also note, New-HoldCompliancePolicy and New-HoldComplianceRule do not require the use of a compliance case.
+NOTE: This in-place hold period is indefinite (ItemHoldPeriod: Unlimited). This is typical for eDiscovery usage. If the hold has any other value, this is likely used as a preservation policy. Instead of using the eDiscovery cmdlets in the Microsoft 365 Compliance Center, you should instead use [<span class="underline">New-HoldCompliancePolicy</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancepolicy?view=exchange-ps) and [<span class="underline">New-HoldComplianceRule</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancerule?view=exchange-ps). The usages will be similar to New-CaseHoldPolicy & New-CaseHoldRule, but you will be able to specify a timeline and action. Also note, New-HoldCompliancePolicy and New-HoldComplianceRule do not require the use of a compliance case.
 
  
 
 ## Step 4: Create a case in the Microsoft 365 Compliance center
 
-Next, in order to create an eDiscovery hold, we are required to create a case. The following example creates a case with a name of your choice, you will need to replace \[Case Name\] with the case name of your liking. We will store the search in a variable for use later. You can view all of the properties of the case with $case | FL after the case is created.
+Next, in order to create an eDiscovery hold, you are required to create a case. The following example creates a case with a name of your choice, you will need to replace \[Case Name\] with the case name of your liking. We will store the search in a variable for use later. You can view all of the properties of the case with $case | FL after the case is created.
 
  
 
@@ -194,8 +194,8 @@ The Search will be listed under the Searches tab.
 
 ## More information
 
-  - For more information about the Exchange Admin Center In-Place eDiscovery & Holds functionality, [<span class="underline">learn more</span>](https://docs.microsoft.com/en-us/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
+  - For more information about the Exchange Admin Center In-Place eDiscovery & Holds functionality, [<span class="underline">learn more</span>](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
 
-  - For more information about the Microsoft 365 Compliance center, [<span class="underline">learn more</span>](https://docs.microsoft.com/en-us/microsoft-365/compliance/).
+  - For more information about the Microsoft 365 Compliance center, [<span class="underline">learn more</span>](https://docs.microsoft.com/microsoft-365/compliance/).
 
-  - For more information about the PowerShell cmdlets available in the Microsoft 365 Compliance center, [<span class="underline">learn more</span>](https://docs.microsoft.com/en-us/powershell/module/exchange/?view=exchange-ps).
+  - For more information about the PowerShell cmdlets available in the Microsoft 365 Compliance center, [<span class="underline">learn more</span>](https://docs.microsoft.com/powershell/module/exchange/?view=exchange-ps).
