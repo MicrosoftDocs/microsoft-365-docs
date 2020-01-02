@@ -50,9 +50,11 @@ Users might notice and report unusual activity in their Office 365 mailboxes. He
 
 If a user reports any of the above symptoms, you should perform further investigation. The Microsoft 365 Security & Compliance Center and the Azure Portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.
 
-- Office 365 Unified Audit Logs in the Security & Compliance Center - Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search.
+- **Office 365 Unified Audit Logs in the Security & Compliance Center**: Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search.
 
-- Use the Azure AD Sign-in logs and other risk reports that are available in the Azure AD portal. Examine the values in these columns:
+- **Office 365 Admin Audit logs in the EAC**: In Exchange Online, you can use the Exchange admin center (EAC) to search for and view entries in the administrator audit log. The administrator audit log records specific actions, based on Exchange Online PowerShell cmdlets, performed by administrators and users who have been assigned administrative privileges. Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.
+
+- **Azure AD Sign-in logs and other risk reports in the Azure AD portal**: Examine the values in these columns:
 
   - Review IP address
 
@@ -86,7 +88,7 @@ You must perform all the following steps to regain access to your account the so
 - If your on-premises identity is federated with Office 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
 
 > [!TIP]
-> It is highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.  You can learn more [here](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.  You can learn more about MFA [here](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### Step 2 Remove suspicious email forwarding addresses
 
