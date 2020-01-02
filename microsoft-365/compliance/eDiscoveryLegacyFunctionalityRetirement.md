@@ -1,8 +1,8 @@
 **eDiscovery Legacy Functionality Retirement**
 
-Over the years, Microsoft has added eDiscovery functionality that no longer effectively offers an experience that provides access to content stored in Office 365. We've been working hard to incorporate the most current and powerful eDiscovery functionality in the [Microsoft 365 compliance center](https://compliance.microsoft.com). This allows organizations to respond to legal, internal, and other document requests for content across many Office 365 services.
+Over the years, Microsoft has provided eDiscovery tools that let you search, preview, and export email content from Exchange Online. However, these tools no longer offer an effective way to search for non-Exchange content in other Office 365 services, such as SharePoint Online and Office 365 Groups. To address this, Microsoft offers other eDiscovery tools that help you search for a wide variety of Office 365 content. And we've been working hard to incorporate the most current and powerful eDiscovery functionality in the [Microsoft 365 compliance center](https://compliance.microsoft.com). This allows organizations to respond to legal, internal, and other document requests for content across many Office 365 services, including Exchange Online.
 
-As a result of this new and improved eDiscovery functionality in the Microsoft 365 compliance center, we're retiring the following eDiscovery-related features and functionality:
+As a result of this new and improved eDiscovery functionality in the Microsoft 365 compliance center, we're retiring the following eDiscovery-related features and functionality related to searching for email content:
 
 - [In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) and [In-Place Holds](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) in the Exchange admin center.
 
@@ -32,69 +32,64 @@ The following sections in this article provide guidance about each feature being
 
 ## In-Place eDiscovery and In-Place Holds in the Exchange admin center 
 
-As per the original notice announced in July 1, 2017, the Exchange admin center In-Place eDiscovery & Hold functionality is being retired. In-Place eDiscovery & holds allowed users to search, hold and export content from Microsoft Exchange server. Furthermore, it had capabilities to copy search results to a discovery mailbox so content could be reviewed and ultimately produced for legal, regulatory and public requests.
+As per the original announcement on July 1, 2017, the In-Place eDiscovery & Hold functionality in the Exchange admin center (EAC) is being retired. The In-Place eDiscovery & Holds page in the EAC allowed you to search, hold, and export content from Exchange Online. In-Place eDiscovery also let you copy search results to a discovery mailbox so that you or other eDiscovery managers could review content and make it available for legal, regulatory, and public requests.
 
-Since all of these capabilities are now available in the [<span class="underline">Microsoft 365 compliance center</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) with improved functionality, reliability and broader coverage of data in your Microsoft 365 tenant, you should begin taking advantage of these features immediately. To help in the transition to the new functionality, many alternatives are listed below with links to documentation.
+Becuase all of these capabilities (except for copying search results to a discovery mailbox) are now available in the content search, eDiscovery and Advanced eDiscovery tools in the [Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) (with improved functionality, reliability, and support for a wide range of Microsoft 365 services), we recommend that you start using these tools as soon as possible. To help you in the transition to these other eDiscovery tools, the table below lists the tools you can use instead of In-Place eDiscovery and In-Place Hold.
 
-  - Scope
+### Scope of affected organzizations
     
-      - Multitenant
-    
-      -  Go-Locals
-    
-      - ???
+- Office 365 and Microsoft 365 organizations in a multi-tenant datacenter environment
 
-  - Timeline
-    
-      - April 1, 2020 - You won't be able to create new searches and holds, but you can still run, edit and delete existing searches at your own risk. Microsoft Support will no longer provide assistance.
-    
-      - July 1, 2020 - The In-Place eDiscovery & Hold functionality in the Exchange admin center will be placed in a read-only mode. This means you'll only be able to remove existing searches and holds.
+- Office 365 and Microsoft 365 organizations in a GoLocal datacenter environment
 
-  - Alternatives
+### Timeline for retirement
+    
+- April 1, 2020: You won't be able to create new searches and holds, but you can still run, edit, and delete existing searches at your own risk. Microsoft Support will no longer In-Place eDiscovery & Holds in the EAC.
+    
+- July 1, 2020: The In-Place eDiscovery & Holds functionality in the EAC will be placed in a read-only mode. This means you'll only be able to remove existing searches and holds.
+
+### Alternative tools
+
+The following table describes other eDiscovery tools that you can use to replace the existing functionality that's being retired.
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Original use</strong></th>
-<th><strong>Alternative</strong></th>
+<th><strong>Functionality</strong></th>
+<th><strong>Alternative tool</strong></th>
 <th><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Search, export and hold for legal purposes</td>
-<td><a href="https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations"><span class="underline">Manage legal investigations in Office 365</span></a></td>
-<td><p>Core eDiscovery capabilities include functional parity to In-Place eDiscovery &amp; Holds. Most importantly:</p>
+<td>Search, export, and hold for legal purposes</td>
+<td>Core eDiscovery cases in the Microsoft 365 compliance center </td>
+<td><p>Using the capabilities of core eDiscovery cases provide the functional parity to In-Place eDiscovery and In-Place Holds. This includes the following:</p>
 <ul>
-<li><blockquote>
+<li>
 <p>Search scales to millions of locations</p>
-</blockquote></li>
-<li><blockquote>
-<p>Higher reliability of Search, Export and Holds</p>
-</blockquote></li>
-<li><blockquote>
-<p>Includes search for Exchange, SharePoint, OneDrive for Business, Skype for Business, Microsoft Teams and many other Microsoft Office applications</p>
-</blockquote></li>
-</ul></td>
+</li>
+<li>
+<p>Higher reliability for searching, exporting, and placing content on hold</p>
+</li>
+<li>
+<p>Searching for content in for Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Microsoft Teams, Yammer Groups, Office 365 Groups, and other content stored in Office 365 applications</p>
+</li>
+<p>For more information, see <a href="https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations"> Manage legal investigations in Office 365</a></td>
 </tr>
 <tr class="even">
 <td>Hold for retention purposes</td>
-<td><a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies"><span class="underline">Overview of retention policies</span></a></td>
-<td><p>Retention policies is a separate product in the Microsoft 365 compliance center with many improved capabilities, including:</p>
+<td>Retetnion policies in the Microsoft 365 compliance center</td>
+<td><p>You can use Retention policies to retain content and, if desired, delete it after the retention period expires. Other capabilites include:</p>
 <ul>
-<li><blockquote>
-<p>Data import</p>
+<li>
+<p>Applying policies to your entire organization </p>
+</li><li>
+<p>Applying polices to specific content locations such as Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Microsoft Teams, and Office 365 Groups</p></li>
+<li>
+<p>Applying policies to specific users</p>
 </blockquote></li>
-<li><blockquote>
-<p>Full tenant data retention</p>
-</blockquote></li>
-<li><blockquote>
-<p>Records management</p>
-</blockquote></li>
-<li><blockquote>
-<p>Sensitivity labels</p>
-</blockquote></li>
-</ul></td>
+<p>For more information, see <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies"> Overview of retention policies</a></td>
 </tr>
 <tr class="odd">
 <td>Copy search results for email review</td>
