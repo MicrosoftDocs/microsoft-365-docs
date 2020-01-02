@@ -63,6 +63,9 @@ To enable more custom settings or to add custom policies, change the **Custom se
       - Be aware that mails with this X-header might be still moved to mailbox Junk Mail folder due to mailbox junk configuration. You can change this by disabling this feature with Set-MailboxJunkEmailConfiguration.
 
     - **Prepend subject line with text:** Sends the message to the intended recipients but prepends the subject line with the text that you specify in the **Prefix subject line with this text** input box. Using this text as an identifier, you can optionally create rules to filter or route the messages as necessary.
+    
+     > [!NOTE]
+     >  The email will still be routed to Junk folder.
 
     - **Redirect message to email address:** Sends the message to a designated email address instead of to the intended recipients. Specify the "redirect" address in the **Redirect to this email address** input box.
 
