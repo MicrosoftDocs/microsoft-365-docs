@@ -52,6 +52,8 @@ If a user reports any of the above symptoms, you should perform further investig
 
 - Office 365 Unified Audit Logs in the Security & Compliance Center - Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search.
 
+- Office 365 Admin Audit logs in the Exchange admin center- In Exchange Online, you can use the Exchange admin center (EAC) to search for and view entries in the administrator audit log. The administrator audit log records specific actions, based on Exchange Online PowerShell cmdlets, performed by administrators and users who have been assigned administrative privileges. Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.
+
 - Use the Azure AD Sign-in logs and other risk reports that are available in the Azure AD portal. Examine the values in these columns:
 
   - Review IP address
