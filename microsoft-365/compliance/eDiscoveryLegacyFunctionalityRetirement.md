@@ -1,36 +1,36 @@
 **eDiscovery Legacy Functionality Retirement**
 
-Over the years, Microsoft has added eDiscovery functionality in forms and portals where they no longer effectively provide an experience that provide access to all facets of content stored in Office 365. We have been working very hard to incorporate the most exhaustive and up to date functionalities in the [Microsoft 365 compliance center](https://compliance.microsoft.com) which allows organizations to respond to legal, internal and other document requests across all of Office 365.
+Over the years, Microsoft has added eDiscovery functionality that no longer effectively offers an experience that provides access to content stored in Office 365. We've been working hard to incorporate the most current and powerful eDiscovery functionality in the [Microsoft 365 compliance center](https://compliance.microsoft.com). This allows organizations to respond to legal, internal, and other document requests for content across many Office 365 services.
 
-NOTE: The functionality being retired only applies to the Office 365 cloud versions. On-Prem versions will continue to be supported until further notice.
+As a result of this new and improved eDiscovery functionality in the Microsoft 365 compliance center, we're retiring the following eDiscovery-related features and functionality:
 
-As a result, we are announcing the Retirement of the following features.
+- [In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) and [In-Place Holds](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) in the Exchange admin center.
 
-  - Exchange admin center eDiscovery & In-Place Holds - [<span class="underline">documentation</span>](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
+- The Exchange Online PowerShell cmdlets that support In-Place eDiscovery and In-Place Holds (these cmdlets are collectively identified as **-MailboxSearch* cmdlets). This includes the following cmdlets:
 
-  - MailboxSearch cmdlets
-    
-      - [<span class="underline">New-MailboxSearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-mailboxsearch?view=exchange-ps)
-    
-      - [<span class="underline">Start-MailboxSearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-mailboxsearch?view=exchange-ps)
-    
-      - [<span class="underline">Stop-MailboxSearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/stop-mailboxsearch?view=exchange-ps)
-    
-      - [<span class="underline">Set-Mailboxsearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-mailboxsearch?view=exchange-ps)
-    
-      - The following two cmdlets will continue to be available after the dates provided below so you can continue to transition your usage, however Microsoft Support will no longer be able to provide assistance
-        
-          - [<span class="underline">Get-MailboxSearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-mailboxsearch?view=exchange-ps)
-        
-          - [<span class="underline">Remove-MailboxSearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/remove-mailboxsearch?view=exchange-ps)
+  - [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-mailboxsearch)
 
-  - earch Mailbox cmdlet - [<span class="underline">documentation</span>](https://docs.microsoft.com/powershell/module/exchange/mailboxes/search-mailbox?view=exchange-ps)
+  - [Start-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-mailboxsearch)
 
-  - Advanced eDiscovery 1.0 - [<span class="underline">documentation</span>](https://docs.microsoft.com/microsoft-365/compliance/office-365-advanced-ediscovery)
+  - [Stop-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/stop-mailboxsearch)
 
-The following provides guidance for each feature being retired, including timelines and alternative features.
+  - [Set-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-mailboxsearch)
 
-## Exchange admin center eDiscovery & In-Place Holds
+   > [!NOTE]
+   > The [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-mailboxsearch) and [Remove-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/remove-mailboxsearch) cmdlets will be available after the other ****-MailboxSearch*** cmdlets are retired so that you can use them to help in your transition to other eDiscovery and hold tools. However, after a certain date (cited below) Microsoft Support will no longer supports these two cmdlets.
+
+- The GetSearchableMailboxes, SetHoldOnMailboxes, and GetHoldOnMailboxes operations in the Exchange Web Services API.
+  
+- The [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/search-mailbox?view=exchange-ps) cmdlet in Exchange Online PowerShell.
+
+- [Office 365 Advanced eDiscovery v1.0](office-365-advanced-ediscovery.md), which is the first version of Advanced eDiscovery that's accessed through an eDiscovery case in the Office 365 Security & Compliance Center.
+
+> [!NOTE]
+> The eDiscovery functionality being retired only applies to cloud-based versions of Microsoft 365 and Office 365. eDiscovery functionality in on-premises versions of Exchange and SharePoint will still be supported until further notice.
+
+The following sections in this article provide guidance about each feature being retired. This information including timelines and alternative tools that you can use instead of the retired tool.
+
+## In-Place eDiscovery and In-Place Holds in the Exchange admin center 
 
 As per the original notice announced in July 1, 2017, the Exchange admin center In-Place eDiscovery & Hold functionality is being retired. In-Place eDiscovery & holds allowed users to search, hold and export content from Microsoft Exchange server. Furthermore, it had capabilities to copy search results to a discovery mailbox so content could be reviewed and ultimately produced for legal, regulatory and public requests.
 
