@@ -45,7 +45,7 @@ Transport Layer Security (TLS), and SSL that came before TLS, are cryptographic 
     
 - TLS version 1.0 (TLS 1.0)
     
- TLS version 1.3 (TLS 1.3) is not supported by Office 365 yet. TLS 1.0 and TLS 1.1 support will be deprecated October 31, 2018. See [Deprecating support for TLS 1.0 and 1.1 and what this means for you](technical-reference-details-about-encryption.md#TLS11and12deprecation) for more information. 
+ TLS version 1.3 (TLS 1.3) is not supported by Office 365 yet. Since October 31, 2018, support for TLS 1.0 and TLS 1.1 has been deprecated. See [Deprecating support for TLS 1.0 and 1.1 and what this means for you](technical-reference-details-about-encryption.md#TLS11and12deprecation) for more information. 
   
 ## Deprecating support for TLS 1.0 and 1.1 and what this means for you
 <a name="TLS11and12deprecation"> </a>
@@ -102,4 +102,3 @@ A cipher suite is a collection of encryption algorithms that TLS uses to establi
   
 [TLS/SSL Cryptographic Enhancements (Windows IT Center)](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
   
-
