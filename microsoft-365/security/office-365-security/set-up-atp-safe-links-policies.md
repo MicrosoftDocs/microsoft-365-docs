@@ -105,7 +105,7 @@ After you have reviewed (or edited) the default ATP Safe Links policy that appli
 6. Choose **Save**.
 
 > [!NOTE]
-> ATP Safe Links policies with higher priority will take precedence!
+> ATP Safe Links policies with higher priority will take precedence. If a user is subject to two or more polices then only the higher priority policy will take effect.
     
 ## Step 4: Learn about ATP Safe Links policy options
 
