@@ -103,6 +103,9 @@ After you have reviewed (or edited) the default ATP Safe Links policy that appli
   - In the **Applied To** section, choose **The recipient is a member of**, and then choose the group(s) you want to include in your policy. Choose **Add**, and then choose **OK**.
     
 6. Choose **Save**.
+
+> [!NOTE]
+> ATP Safe Links policies with higher priority will take precedence!
     
 ## Step 4: Learn about ATP Safe Links policy options
 
