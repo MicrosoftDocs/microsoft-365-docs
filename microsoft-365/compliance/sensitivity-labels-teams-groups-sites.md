@@ -213,7 +213,7 @@ To view and edit the labels, use the Active sites page in the new SharePoint adm
 
 ## Change site and group settings for a label
 
-As a best practice, don't change settings after you've applied a label to several teams, groups, or sites. If you must make a change, you need to use an Azure AD PowerShell [script](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#enable-this-preview) to manually apply updates. This method ensures that all existing teams, sites, and groups enforce the new setting.
+As a best practice, don't change settings after you've applied a label to several teams, groups, or sites. If you must make a change, you need to use an [Azure AD PowerShell script](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#enable-this-preview) to manually apply updates. This method ensures that all existing teams, sites, and groups enforce the new setting.
 
 ## Support for the new sensitivity labels
 
