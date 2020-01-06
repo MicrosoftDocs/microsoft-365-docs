@@ -100,7 +100,7 @@ Record versioning is automatically available for any document that has a retenti
 ![Record status property on document tagged as a record](media/recordversioning8.png)
 
 > [!NOTE]
-> Record versioning requires an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been declared a record in a SharePoint site or OneDrive account. Users who have read-only access don't require a license.
+> Record versioning requires an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been declared a record in a SharePoint site or OneDrive account. Users who have read-only access don't require this license.
 
 ### Locking and unlocking a record
 
