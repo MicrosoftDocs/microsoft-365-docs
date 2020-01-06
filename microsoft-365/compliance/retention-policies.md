@@ -62,7 +62,7 @@ Notes:
     
 - A retention policy applied to an Office 365 group includes both the group mailbox and site.
 
-- Preservation Hold Library will consume storage quota for the site.
+- Preservation Hold library will consume storage quota for the site.
     
 ### Content in OneDrive accounts and SharePoint sites
 
