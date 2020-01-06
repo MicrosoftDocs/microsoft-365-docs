@@ -26,15 +26,15 @@ Once your users (collectively, as organization) send a certain amount of suspici
 
 `550 5.7.705 Access denied, tenant has exceeded threshold`
 
-In rare cases, this could also happen if you renew your subscription after it has already run out. The reason for this is that it takes time for the service to sync the new subscription information. This should not take more than a day, but the organization could be blocked from sending email in the meantime. The best way to prevent this is to make sure the subscription does not run out.
+In rare cases, this could also happen if you renew your subscription after it has already expired. It takes time for the service to sync the new subscription information (typically, no more than one day), but your organization could be blocked from sending email in the meantime. The best way to prevent this is to make sure your subscription does not expire.
 
 ## 5.7.750: Unregistered Domain Email restriction: What you need to know
 
-Office 365 allows for tenants to relay some messages through Exchange Online Protection (EOP). For example:
+Office 365 allows tenants to relay some messages through Exchange Online Protection (EOP). For example:
 
-- An Office 365 mailbox receives email from an external sender. Mail forwarding is configured on the Office 365 mailbox, so the message goes back out to the user's external email address. This scenario is most common in education environments where students want to leverage their personal email accounts.
+- An Office 365 mailbox receives email from an external sender. Mail forwarding is configured on the Office 365 mailbox, so the message goes back out to the user's external email address. This scenario is most common in education environments where students want to use their personal email accounts to view school-related messages.
 
-- Hybrid envrionments that have on-premises email servers that send email out of EOP.
+- Hybrid envrionments that have on-premises email servers that send outgoing mail through EOP.
 
 ### Problems with unregistered domains
 
