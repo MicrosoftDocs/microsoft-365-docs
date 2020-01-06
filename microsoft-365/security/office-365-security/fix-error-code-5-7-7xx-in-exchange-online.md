@@ -56,12 +56,12 @@ There are several things you need to do if your tenant is blocked from sending e
 
 4. [Enable MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) for all admins in your Office 365 organization.
 
-5. Lock down your on-premises servers and verify that they are not compromised.
+5. Lock down your on-premises email servers and verify that they are not compromised.
 
    > [!TIP]
-   > There are many factors involved here, especially if these are third-party servers. Regardless, you will need to be able confirm that all email leaving your servers is legitimate.
+   > There are many factors here, especially if you're using third-party servers. Regardless, you'll need to verify that all of your outgoing email is now legitimate.
 
-6. Call Microsoft Support and ask to get your tenant unblocked to send from unregistered domains again. The error code is helpful, but you'll need to prove that your environment is secured and incapable of sending spam. To open a support case, see [Contact support for business products - Admin Help](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+6. Call Microsoft Support and ask to get your tenant unblocked to send from unregistered domains again. The error code is helpful, but you'll need to prove that your environment has been secured and is incapable of sending spam. To open a support case, see [Contact support for business products - Admin Help](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ## For more information
 
