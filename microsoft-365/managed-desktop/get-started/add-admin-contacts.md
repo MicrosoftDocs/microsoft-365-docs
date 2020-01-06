@@ -39,7 +39,7 @@ Other | For issues not covered by other areas
 
 **Whoever you choose for these contacts needs to have the knowledge and authority to make decisions for your Microsoft Managed Desktop environment.** When you onboard your Microsoft Managed Desktop environment, you’re prompted to add contacts for your local Helpdesk and Security. 
 
-Admin contacts are required when you [submit a Support request](../working-with-managed-desktop/support.md). You’ll need to have an admin contact for the focus area of the Support request. 
+Admin contacts are required when you [submit a Support request](../service-description/support.md). You’ll need to have an admin contact for the focus area of the Support request. 
 
 **To add admin contacts**
 
