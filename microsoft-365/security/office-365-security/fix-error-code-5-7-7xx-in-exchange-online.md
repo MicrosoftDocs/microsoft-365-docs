@@ -3,7 +3,7 @@ title: "Fix email delivery issues for error code 5.7.7xx in Exchange Online"
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 06/11/2019
+ms.date:
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -22,42 +22,46 @@ This topic describes what you can do if you see status code 550 5.7.7xx in a non
 
 ## 5.7.705: Tenant has exceeded threshold restriction: What you need to know
 
-Once your users collectively, as a tenant, send a certain amount of suspicious mail through the service, all users can be prevented from sending any mail until the problem is fixed. This is usually a result of compromise (most common) or sending too much bulk mail. Users will receive a Non-Delivery Report (NDR) that states:
+Once your users (collectively, as organization) send a certain amount of suspicious email through the service, all users can be prevented from sending any email until the problem is fixed. This is usually the result of a compromise (most common) or sending too much bulk mail. Users will receive an NDR that states:
 
-- 550 5.7.705 Access denied, tenant has exceeded threshold
+`550 5.7.705 Access denied, tenant has exceeded threshold`
 
-In rare cases, this could also happen if you renew your subscription after it has already run out. The reason for this is because it takes time for the service to sync the new subscription information. This should not take more than a day, but the tenant could be blocked from sending email in the meantime. The best way to prevent this is to make sure the subscription does not run out.
+In rare cases, this could also happen if you renew your subscription after it has already run out. The reason for this is that it takes time for the service to sync the new subscription information. This should not take more than a day, but the organization could be blocked from sending email in the meantime. The best way to prevent this is to make sure the subscription does not run out.
 
 ## 5.7.750: Unregistered Domain Email restriction: What you need to know
 
-Office 365 allows for tenants to relay some messages through Exchange Online Protection (EOP). One supported example of this would be when users have an Office 365 mailbox and someone external sends them email but email forwarding is configured so that it goes back out to the user's external mailbox. This is most common in education environments where students want to leverage their personal email interface but still get emails related to school. Another example is when customers are in a hybrid scenario and have on-premises servers that send email out of EOP.
+Office 365 allows for tenants to relay some messages through Exchange Online Protection (EOP). For example:
+
+- An Office 365 mailbox receives email from an external sender. Mail forwarding is configured on the Office 365 mailbox, so the message goes back out to the user's external email address. This scenario is most common in education environments where students want to leverage their personal email accounts.
+
+- Hybrid envrionments that have on-premises email servers that send email out of EOP.
 
 ### Problems with unregistered domains
 
-The problem is when on-premises servers get compromised and end up relaying a large volume of spam out of EOP. In almost all cases, the right connectors are set up but email is being sent from unregistered, also known as unprovisioned, domains. Office 365 does allow a reasonable amount of mail to come from unregistered domains, but an Accepted Domain should be configured in the Admin Center for each domain you plan on sending out of.
+The problem is when compromised on-premises email servers relay a large volume of spam through EOP. In almost all cases, the connectors are set up correctly, but email is being sent from unregistered (also known as unprovisioned) domains. Office 365 allows a reasonable amount of email from unregistered domains, but you should configure every domain that you use to send email as an accepted domain.
 
-Once compromised, tenants will be prevented from sending outbound mail for unregistered domains. Users will receive a Non-Delivery Report (NDR) that states:
+Once compromised, tenants will be prevented from sending outbound email for unregistered domains. Users will receive an NDR that states:
 
-- 550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains
+`550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains`
 
 ## How to unblocking tenant in order to send again
 
-There are several things you need to do if your tenant get blocked for sending email:
+There are several things you need to do if your tenant is blocked from sending email:
 
-1. Make sure that you register all of your domains in Microsoft 365 admin center. More information can be found [here](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Verify that all of your email domains are registered. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) and [Manage accepted domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Look for unusual connectors. Malicious actors will often create new inbound connectors in your Office 365 tenant to send spam. More information on checking your connectors can be found [here](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector).
+2. Look for unusual [connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow). Malicious actors will often create new inbound connectors in your Office 365 organization to send spam. To view your existing connectors, see [Validate connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
-3. Check to see [if users have been compromised](responding-to-a-compromised-email-account.md)
+3. Check for compromised users as described in [Responding to a compromised email account in Office 365](responding-to-a-compromised-email-account.md).
 
-4. [Enable MFA](https://docs.microsoft.com/en-us/office365/admin/security-and-compliance/set-up-multi-factor-authentication) for all admins in your tenant.
+4. [Enable MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) for all admins in your Office 365 organization.
 
-5. Lock down your on-premises servers and ensure that they are not compromised.
+5. Lock down your on-premises servers and verify that they are not compromised.
 
    > [!TIP]
-   > There are many factors involved here, especially if these are third-party servers. Regardless, you will need to be able confirm that  all mail leaving your servers are legitimate.
+   > There are many factors involved here, especially if these are third-party servers. Regardless, you will need to be able confirm that all email leaving your servers is legitimate.
 
-6. Once done, you will need to call Microsoft Support and ask to get your tenant unblocked to send from unregistered domains again.  Providing the error code is helpful, but you will need to prove that your environment is secured and that spam will not be sent again. More information on opening a support case can be found [here](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+6. Call Microsoft Support and ask to get your tenant unblocked to send from unregistered domains again. The error code is helpful, but you'll need to prove that your environment is secured and incapable of sending spam. To open a support case, see [Contact support for business products - Admin Help](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ## For more information
 
