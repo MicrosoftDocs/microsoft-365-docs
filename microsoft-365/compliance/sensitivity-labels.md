@@ -19,9 +19,11 @@ description: "With sensitivity labels, you can classify and help protect your se
 
 # Overview of sensitivity labels
 
-To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall — it roams everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization’s business and compliance policies.
+To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall — it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization’s business and compliance policies.
 
 With sensitivity labels, you can classify and help protect your sensitive content, without hindering your people’s productivity and ability to collaborate.
+
+Example showing sensitivity labels:
 
 ![Sensitivity label on Excel ribbon and status bar](media/Sensitivity-label-in-Excel.png)
 
@@ -87,7 +89,7 @@ After a sensitivity label is applied to an email or document, any configured pro
 
     ![Prompt to assign a required label](media/Sensitivity-label-Prompt-for-required-label.png)
 
-All these options are available when you create a sensitivity label.
+All these options are available when you create a sensitivity label:
 
 ![Options when creating a sensitivity label](media/Sensitivity-label-create-options.png)
 
@@ -146,7 +148,7 @@ With a label policy, you can:
 
 After you create a label policy and assign sensitivity labels to users and groups, those people will see those labels available in the Office apps in an hour or less.
 
-There is no limit to the number of sensitivity labels that you can create and publish, with one exception: If the label applies encryption, there is a maximum of 500 labels. However, as a best practice to minimize admin overheads and reduce complexity for your users, try to keep the number of labels to a minimum. Real-word deployments has proved effectiveness to be reduced when users have more than five main labels and more than five sublabels per main label.
+There is no limit to the number of sensitivity labels that you can create and publish, with one exception: If the label applies encryption, there is a maximum of 500 labels. However, as a best practice to minimize admin overheads and reduce complexity for your users, try to keep the number of labels to a minimum. Real-word deployments have proved effectiveness to be reduced when users have more than five main labels and more than five sublabels per main label.
 
 ### Label policy priority (order matters)
 
