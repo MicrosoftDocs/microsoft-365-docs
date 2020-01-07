@@ -42,7 +42,7 @@ Here’s a summary of the new solutions you’ll find. Keep an eye out for other
 
 > [!NOTE]
 > These solutions are located only in the Microsoft 365 compliance center. They can’t be managed in the Office 365 Security & Compliance Center.
-
+<br/>
 
 |**New solution**|**Description**|**Learn more**|
 |:-----|:-----|:-----|
@@ -56,30 +56,31 @@ Here’s a summary of the new solutions you’ll find. Keep an eye out for other
 If you’ve been using the Office 365 Security & Compliance Center for your compliance needs, you might wonder where some features now live in the new Microsoft 365 compliance center. Here’s a quick roadmap to help find their new homes.
 
 > [!NOTE]
-> Some features are still available only in the Office 365 Security & Compliance Center – these are noted below. But we’re working hard to preview these in the Microsoft 365 compliance center, so stay tuned for updates.
+> Some features are still available only in the Office 365 Security & Compliance Center – these are noted below. But we’re working hard to preview these in the Microsoft 365 compliance center, so stay tuned for updates. 
+<br/>
 
-|**Feature**|**Location in Office 365 Security & Compliance Center**|**Location in the Microsoft 365 compliance center**|**Learn more**|
+|**Feature**|**Office 365 Security & Compliance Center**|**Microsoft 365 compliance center**|**Learn more**|
 |:-----|:-----|:-----|:-----|
-|Advanced eDiscovery|eDiscovery > Advanced eDiscovery <br/> https://protection.office.com/advancedediscoverycases|eDiscovery > Advanced <br/> https://compliance.microsoft.com/advancedediscovery| [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md)|
-|Alert policies|Alerts > Alert policies <br/> https://protection.office.com/alertpolicies|At this time, alert policies are managed only in the Office 365 Security & Compliance Center. |[Alert policies in the security and compliance center](alert-policies.md)|
-|Alerts|Alerts > View alerts <br/> https://protection.office.com/viewalerts|Alerts <br/> https://compliance.microsoft.com/compliancealerts|[Viewing alerts](alert-policies.md#viewing-alerts)|
-|Archive|Information governance > Archive <br/> https://protection.office.com/archiving|Information governance > Archive tab <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive|[Enable archive mailboxes](enable-archive-mailboxes.md)|
-|Audit log search|Search > Audit log search <br/> https://protection.office.com/unifiedauditlog|At this time, you can only search the audit log from the Office 365 Security & Compliance Center.| [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md)|
-|Content search|Search > Content search <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Content search <br/> https://compliance.microsoft.com/contentsearch|[Search for content in Office 365](search-for-content.md)|
-|Data connectors|Information governance > Archive third-party data <br/> https://protection.office.com/nativeconnector| Data connectors <br/> https://compliance.microsoft.com/connectorlanding|[Archive third-party data](archiving-third-party-data.md)|
-|Data loss prevention|Data loss prevention <br/> https://protection.office.com/datalossprevention|Data loss prevention <br/> https://compliance.microsoft.com/datalossprevention|[Overview of data loss prevention](data-loss-prevention-policies.md)|
+|Advanced eDiscovery|eDiscovery > Advanced eDiscovery <br/> https://protection.office.com/advancedediscoverycases |eDiscovery > Advanced <br/> https://compliance.microsoft.com/advancedediscovery | [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md) |
+|Alert policies|Alerts > Alert policies <br/> https://protection.office.com/alertpolicies |At this time, alert policies are managed only in the Office 365 Security & Compliance Center. |[Alert policies in the security and compliance center](alert-policies.md) |
+|Alerts|Alerts > View alerts <br/> https://protection.office.com/viewalerts |Alerts <br/> https://compliance.microsoft.com/compliancealerts |[Viewing alerts](alert-policies.md#viewing-alerts)|
+|Archive|Information governance > Archive <br/> https://protection.office.com/archiving |Information governance > Archive tab <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[Enable archive mailboxes](enable-archive-mailboxes.md)|
+|Audit log search|Search > Audit log search <br/> https://protection.office.com/unifiedauditlog |At this time, you can only search the audit log from the Office 365 Security & Compliance Center.| [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md)|
+|Content search|Search > Content search <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Content search <br/> https://compliance.microsoft.com/contentsearch |[Search for content in Office 365](search-for-content.md) |
+|Data connectors|Information governance > Archive third-party data <br/> https://protection.office.com/nativeconnector | Data connectors <br/> https://compliance.microsoft.com/connectorlanding |[Archive third-party data](archiving-third-party-data.md)|
+|Data loss prevention|Data loss prevention <br/> https://protection.office.com/datalossprevention |Data loss prevention <br/> https://compliance.microsoft.com/datalossprevention |[Overview of data loss prevention](data-loss-prevention-policies.md)|
 |Data subject requests |Data privacy > Data subject requests <br/> https://protection.office.com/dsrcases |Data subject requests <br/> https://compliance.microsoft.com/datasubjectrequest |[Manage GDPR data subject requests with the DSR case tool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > Core <br/> https://compliance.microsoft.com/classicediscovery |[Manage eDiscovery cases](ediscovery-cases.md) |
 |Events|Records management > Events <br/> https://protection.office.com/events |Records management > Events tab <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Overview of event-driven retention](event-driven-retention.md)|
 |File plan|Records management > File plan <br/> https://protection.office.com/fileplan |Records management > File plan tab <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Overview of file plan manager](file-plan-manager.md)|
 |Import PST files|Information governance > Import PST files <br/> https://protection.office.com/importV2 |Information governance > Import tab <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Overview of importing your organization's PST files](importing-pst-files-to-office-365.md)|
-|Label activity explorer|Information governance > Label activity explorer <br/> https://protection.office.com/labelexplorer |Data classification > Activity explorer tab <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer|[View activity on your labeled content (preview)](data-classification-activity-explorer.md)|
+|Label activity explorer|Information governance > Label activity explorer <br/> https://protection.office.com/labelexplorer |Data classification > Activity explorer tab <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[View activity on your labeled content (preview)](data-classification-activity-explorer.md)|
 |Retention labels and label policies |Classification > Retention labels > Labels and Label policies tabs <br/> https://protection.office.com/retentionlabels |Information governance > Labels and Label policies tabs <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Overview of retention labels](labels.md)|
-|Retention policies|Information governance > Retention <br/> https://protection.office.com/retention|Information governance > Retention tab <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Overview of retention policies](retention-policies.md)|
+|Retention policies|Information governance > Retention <br/> https://protection.office.com/retention |Information governance > Retention tab <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Overview of retention policies](retention-policies.md)|
 |Sensitive info types|Classification > Sensitive info types <br/> https://protection.office.com/sensitivetypes |Data classification > Sensitive info types tab <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)|
-|Sensitivity labels and label policies|Classification > Sensitivity labels > Labels and Label policies tabs <br/> https://protection.office.com/sensitivity |Information protection > Labels and Label policies tabs <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies|[Overview of sensitivity labels](sensitivity-labels.md) |
+|Sensitivity labels and label policies|Classification > Sensitivity labels > Labels and Label policies tabs <br/> https://protection.office.com/sensitivity |Information protection > Labels and Label policies tabs <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Overview of sensitivity labels](sensitivity-labels.md) |
 |Service assurance|Service assurance <br/> https://protection.office.com/serviceassurance/dashboard |At this time, service assurance resources can only be accessed in the Office 365 Security & Compliance Center. |[Service assurance in the Security & Compliance Center](service-assurance.md)|
-|Supervision|Supervision <br/> https://protection.office.com/supervisoryreviewv2 |Communication compliance <br/> https://compliance.microsoft.com/TBD |[Communication compliance in Microsoft 365 (preview)](communication-compliance.md) |
+|Supervision|Supervision <br/> https://protection.office.com/supervisoryreviewv2 |Communication compliance <br/> https://compliance.microsoft.com/supervisoryreview |[Communication compliance in Microsoft 365 (preview)](communication-compliance.md) |
 
 ## September 2019
 

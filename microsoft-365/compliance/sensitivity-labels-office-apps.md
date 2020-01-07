@@ -3,7 +3,7 @@ title: "Sensitivity labels in Office apps"
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: 
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -35,7 +35,7 @@ Users must have at least one of the following licenses assigned:
 
 - [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) or above
 
-The Office built-in labeling client supports sensitivity labels with a subscription version of Office. The client doesn't support standalone versions, for example, Office 2016 or Office 2019.
+The Office built-in labeling client supports sensitivity labels with a subscription edition of Office. This labeling client doesn't support standalone editions, such as Office 2016 or Office 2019. To use sensitivity labels with these editions of Office on Windows computers, install the Azure Information Protection unified labeling client.
 
 To use automatic or recommended sensitivity labeling, your users need one of the following licenses:
 
@@ -43,11 +43,13 @@ To use automatic or recommended sensitivity labeling, your users need one of the
 
 - [Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software) or above
 
-- [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/) or above
+- [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/)
 
 ## Support for sensitivity label capabilities in Word, Excel, and PowerPoint
 
-For each capability, the following table lists the minimum version you need for that app. TBD means that you can't use that capability on that platform.
+For each capability, the following table lists the minimum version you need for that app to support sensitivity labels using built-in labeling. TBD means that you can't use that capability on that platform.
+
+Additional capabilities are available when you install the Azure Information Protection unified labeling client, which runs on Windows computers only. For these details, see [Compare the labeling clients for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 |Capability                                                                                                        |Windows Desktop |Mac Desktop |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
@@ -67,6 +69,8 @@ For each capability, the following table lists the minimum version you need for 
 ## Support for sensitivity label capabilities in Outlook
 
 For each capability, the following table lists the minimum version you need for that app. TBD means that you can't use that capability on that platform.
+
+Additional capabilities are available when you install the Azure Information Protection unified labeling client, which runs on Windows computers only. For these details, see [Compare the labeling clients for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 |Capability                                                                                                        |Outlook on Windows Desktop |Outlook on Mac Desktop  |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
