@@ -61,6 +61,8 @@ Notes:
 - Teams (chat) content is stored in Exchange, where the policy is applied based on message type (email or conversation).
     
 - A retention policy applied to an Office 365 group includes both the group mailbox and site.
+
+- Preservation Hold library will consume storage quota for the site.
     
 ### Content in OneDrive accounts and SharePoint sites
 
