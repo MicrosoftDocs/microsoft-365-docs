@@ -131,6 +131,6 @@ When two different assessments in the same group share customer-managed actions,
 
 Learn how to [create groups in Compliance Manager](working-with-compliance-manager.md#groups).
 
-## Next step: beginning setup
+## Next step: begin setup
 
-Sign in, set up permissions, and learn about your Compliance Score dashboard in [Compliance Score setup](compliance-score-setup.md).
+Sign in, set up permissions, and learn about your Compliance Score dashboard at [Compliance Score setup](compliance-score-setup.md).
