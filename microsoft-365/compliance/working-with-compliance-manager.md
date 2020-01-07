@@ -25,11 +25,11 @@ You access Compliance Manager from the Service Trust Portal. Anyone with a Micro
   
 1. Go to [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/).
 
-2. Sign in with your Microsoft service account. This is your Office 365, Microsoft 365, or Azure Active Directory (Azure AD) user account.
+2. Sign in with your Microsoft service account, which is your Office 365, Microsoft 365, or Azure Active Directory (Azure AD) user account.
 
-3. In the Service Trust Portal, select **Compliance Manager**. This is the preview version of Compliance Manager. **Compliance Manager (Classic)** is the link to the previous version of Compliance Manager.
+3. In the Service Trust Portal, we recommend selecting **Compliance Manager**, which is the preview version with the most current features. **Compliance Manager (Classic)** takes you to the previous version of Compliance Manager.
 
-4. When the Non-Disclosure Agreement is displayed, read it, and select **Agree** to continue. You must agree once, and then the Compliance Manager dashboard is displayed.
+4. When the Non-Disclosure Agreement is displayed, read it and select **Agree**, which then displays your Compliance Manager dashboard.
 
 To get you started, an ISO/IEC 27001:2103 Assessment for Office 365 appears by default for your organization.
 
@@ -79,25 +79,35 @@ Secure Score updates can be turned on automatically for all actions, can be turn
 
 ## Groups
 
-Groups allow you to logically organize Assessments and that share common information and workflow tasks between Assessments that have the same or related customer-managed controls. You can group Assessments by year, standard, service, team, division, or agencies within your organization to help minimize customer-managed Actions:
+Groups are containers that allow you to organize Assessments and share common information and workflow tasks between Assessments that have the same or related customer-managed controls.
+
+You can group Assessments in a way that is logical to you, such as by year, standard, service, or based on your organization's teams, divisions, or geographies. Below are two examples of groups:
   
-- **FFIEC IS Assessments 2019**
+- **FFIEC IS Assessments 2020**
   - Office 365 + FFIEC IS
   - Intune + FFIEC IS
 - **Data Security and Privacy Assessments**
   - Office 365 + ISO 27001:2013
   - Office 365 + ISO 27018:2014
 
-When you create a new Assessment, you must create a new group for the Assessment or assign the Assessment to an existing group. Groups cannot be created as stand-alone entities. It's recommended that you determine a grouping strategy for your organization *before* adding new assessments. By default, a Group named "Default Group" is available for your initial Assessments. Groups do not have any security properties. All permissions are associated with Assessments.
+When you create a new Assessment, you must create a new group for the Assessment or assign the Assessment to an existing group. Groups cannot be created as stand-alone entities. We recommend determining a grouping strategy for your organization *before* adding new Assessments. By default, a group named "Default Group" is available for your initial Assessments.
 
-When you work with groups, remember:
+### To create a group:
+
+1. Step 1 ...
+2. Step 2 ... 
+3. Step 3 ...
+
+What to know when working with groups:
   
-- Related assessment controls in different assessments within the same Group automatically update when completed.
-- New groups can copy information from an existing group when you create a new Assessment. Any information added to the Implementation Details and Test Plan and Management Response fields of customer-managed controls from Assessments in the group that you're copying from are copied to the same (or related) customer-managed controls in the new Assessment. If you're adding a new Assessment to an existing group, common information from Assessments in that group are copied to the new Assessment.
 - Group names (also called *Group IDs*) must be unique within your organization.
+- Groups do not have any security properties. All permissions are associated with Assessments.
+- Once you add an Assessment to a group, the grouping cannot be changed. You can rename the assessment group, which changes the name of the assessment grouping for all the assessments associated with that group.
+- Related Assessment controls in different Assessments within the same group automatically update when completed.
+- If you add a new Assessment to an existing group, common information from Assessments in that group are copied to the new Assessment.
+- **CORRECT?:** You can create a new group for a new Assessment by copying information from an existing group. The Assessment in this new group will retain the information in the **Implementation Details** and **Test Plan and Management Response** fields of customer-managed controls as the Assessments in the group you copied.
 - Groups can contain Assessments for the same certification/regulation, but each group can only contain one Assessment for a specific cloud service/certification pair. For example, a group can't contain two Assessments for Office 365 and NIST CSF. A group can contain multiple Assessments for the same cloud service only if the corresponding certification/regulation for each one is different.
-- Once an assessment has been added to an assessment group, the grouping cannot be changed. You can rename the assessment group, which changes the name of the assessment grouping for all the assessments associated with that group. You can create an assessment and a new assessment group and copy information from an existing assessment, which effectively creates a duplicate of that assessment in a different assessment group.
-- Archiving an assessment breaks the relationship between that assessment and the group. Any further updates to other related assessments are no longer reflected in the archived assessment.
+- Hiding an Assessment breaks the relationship between that Assessment and the group. Any further updates to other related Assessments are no longer reflected in the hidden assessment. ([Learn how to hide Assessments.](#hide-a-template-or-an-assessment))
 
 ## Tenant Management
 
