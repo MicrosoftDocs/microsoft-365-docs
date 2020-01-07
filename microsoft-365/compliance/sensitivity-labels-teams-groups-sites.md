@@ -65,7 +65,9 @@ You're now ready to enable the preview of sensitivity labels with Microsoft Team
 
 1. In a PowerShell session, using a work or school account that has global admin privileges, connect to Azure Active Directory. For example, run:
     
-    	Connect-AzureAD
+    ```powershell
+    Connect-AzureAD
+    ````
     
     For full instructions, see [Connect to Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#connect-to-azure-ad).
 
