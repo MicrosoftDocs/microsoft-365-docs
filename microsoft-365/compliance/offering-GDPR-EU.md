@@ -63,9 +63,13 @@ Learn how Microsoft customer INAIL is using Azure Information Protection to clas
 
 Use [Compliance manager](https://go.microsoft.com/fwlink/p/?linkid=2048390) to help perform ongoing risk assessments, get actionable insights, and simplify your compliance processes.
 
-### Security and Compliance Center
+### Microsoft 365 compliance center
 
-The Microsoft 365 [security & compliance centers](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-and-compliance) lets you discover security and compliance controls.
+The [Microsoft 365 compliance center](microsoft-365-compliance-center.md) lets you discover compliance controls.
+
+### Microsoft 365 security center
+
+The [Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) lets you discover security controls.
 
 ### Discover Compliance Solutions
 
