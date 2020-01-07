@@ -48,7 +48,7 @@ Once compromised, tenants will be prevented from sending outbound email for unre
 
 There are several things you need to do if your tenant is blocked from sending email:
 
-1. Verify that all of your email domains are registered. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) and [Manage accepted domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Verify that all of your email domains are registered. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) and [Manage accepted domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 2. Look for unusual [connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow). Malicious actors will often create new inbound connectors in your Office 365 organization to send spam. To view your existing connectors, see [Validate connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
@@ -67,7 +67,7 @@ There are several things you need to do if your tenant is blocked from sending e
 
 [Office 365 email anti-spam protection](anti-spam-protection.md)
 
-[Bulk Mail guidance in the sending limits section of the Exchange Online service description](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
+[Bulk Mail guidance in the sending limits section of the Exchange Online service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 [Email non-delivery reports in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
