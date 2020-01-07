@@ -43,22 +43,22 @@ Encryption uses Azure Rights Management (Azure RMS). Azure RMS uses encryption, 
 
 ## How to turn on encryption for a sensitivity label
 
-To begin, simply toggle **Encryption** to **On**, and then choose whether to:
+To begin, toggle **Encryption** to **On**, and then choose whether to:
 
 - **Assign permissions now**, so that you can determine exactly which users get which permissions to content with that label. For more information, see the next section [Assign permissions now](#assign-permissions-now).
-- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done. For more information, see the below section [Let users assign permissions](#let-users-assign-permissions).
+- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done. For more information, see the [Let users assign permissions](#let-users-assign-permissions) section on this page.
 
-For example, if you have a sensitivity label named **Highly Confidential** that will be applied to your most sensitive content, you may want to decide now who gets what type of permissions to that content.
+For example, if you have a sensitivity label named **Highly Confidential** that will be applied to your most sensitive content, you might want to decide now who gets what type of permissions to that content.
 
-Alternatively, if you have a sensitivity label named **Business Contracts**, and your organization's workflow requires that your people collaborate on this content with different people on an ad hoc basis, you may want to allow your users to decide who gets permissions when they assign the label. This flexibility both helps your users' productivity and reduces the requests for your admins to update or create new sensitivity labels to address specific scenarios.
+Alternatively, if you have a sensitivity label named **Business Contracts**, and your organization's workflow requires that your people collaborate on this content with different people on an ad hoc basis, you might want to allow your users to decide who gets permissions when they assign the label. This flexibility both helps your users' productivity and reduces the requests for your admins to update or create new sensitivity labels to address specific scenarios.
 
 ![Option to add user or admin defined permissions](media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 ## Assign permissions now
 
-Use the options below to control who can access email or documents to which this label is applied. You can:
+Use the following options to control who can access email or documents to which this label is applied. You can:
 
-1. **Allow access to labeled content to expire**, either on a specific date or after a specific number of days after the label is applied. After this time, users won’t be able to open the labeled item. If you specify a date, it is effective midnight on that date in your current time zone. (Note that some email clients may not enforce expiration and show emails past their expiration date, due to their caching mechanisms.)
+1. **Allow access to labeled content to expire**, either on a specific date or after a specific number of days after the label is applied. After this time, users won’t be able to open the labeled item. If you specify a date, it is effective midnight on that date in your current time zone. (Note that some email clients might not enforce expiration and show emails past their expiration date, due to their caching mechanisms.)
 
 2. **Allow offline access** never, always, or for a specific number of days after the label is applied. If you restrict offline access to never or a number of days, when that threshold is reached, users must be reauthenticated and their access is logged. For more information, see the next section on the Rights Management use license.
 
@@ -68,7 +68,7 @@ Use the options below to control who can access email or documents to which this
 
 When a user opens a document or email offline that’s been protected by a sensitivity label, an Azure Rights Management use license for that content is granted to the user. This use license is a certificate that contains the user's usage rights for the document or email, and the encryption key that was used to encrypt the content. The use license also contains an expiration date if this has been set, and how long the use license is valid.
 
-If no expiration date has been set, the default use license validity period for a tenant is 30 days. For the duration of the use license, the user is not reauthenticated or reauthorized for the content. This lets the user continue to open the protected document or email without an Internet connection. When the use license validity period expires, the next time the user accesses the protected document or email, the user must be reauthenticated and reauthorized.
+If no expiration date has been set, the default use license validity period for a tenant is 30 days. For the duration of the use license, the user is not reauthenticated or reauthorized for the content. This process lets the user continue to open the protected document or email without an internet connection. When the use license validity period expires, the next time the user accesses the protected document or email, the user must be reauthenticated and reauthorized.
 
 In addition to reauthentication, the policy and user group membership is reevaluated. This means that users could experience different access results for the same document or email if there are changes in the policy or group membership from when they last accessed the content.
 
@@ -108,9 +108,9 @@ For more information on each specific permission, see [Usage rights and descript
 
 ![Options to choose preset or custom permissions](media/Sensitivity-Choose-permissions-settings.png)
 
-Note that the same label can grant different permissions to different users. For example, a single label can assign some users as Reviewer and a different user as Co-author, as shown below.
+Note that the same label can grant different permissions to different users. For example, a single label can assign some users as Reviewer and a different user as Co-author, as shown in the following screenshot.
 
-To do this, add users or groups, assign them permissions, and save those settings. Then repeat these steps, adding users and assigning them permissions, saving the settings each time. You can do this as often as necessary, to define different permissions for different users.
+To do this, add users or groups, assign them permissions, and save those settings. Then repeat these steps, adding users and assigning them permissions, saving the settings each time. You can repeat this configuration as often as necessary, to define different permissions for different users.
 
 ![Different users with different permissions](media/Sensitivity-Multiple-users-permissions.png)
 
@@ -142,9 +142,9 @@ These options determine in which apps the sensitivity label will appear:
 A sensitivity label that lets users assign permissions can be applied to content only manually by users; it can't be auto-applied or used as a recommended label.
 
 > [!NOTE]
-> Letting users assign permissions requires an Azure Information Protection subscription. To use this feature in Word, PowerPoint, and Excel, you must download and install the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). We're working on native support for this feature in these Office apps, so that they won't require the Azure Information Protection client. Also, the client runs only on Windows, so this feature is not yet supported on Mac, iOS, Android, or Office for the web.
+> Letting users assign permissions requires an Azure Information Protection subscription. To use this feature in Word, PowerPoint, and Excel, you must download and install the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). We're working on native support for this feature in these Office apps, so that they won't require the Azure Information Protection client. Also, this client runs only on Windows, so this feature is not yet supported on Mac, iOS, Android, or Office for the web.
 
-![Encryption settings for user defined permissions](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![Encryption settings for user-defined permissions](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### Outlook restrictions
 
@@ -176,7 +176,7 @@ Before a sensitivity label is applied to content, it's possible that a user alre
 - Custom protection by using the Azure Information Protection unified labeling client.
 - An Azure Rights Management Service (RMS) template that encrypts the content but is not associated with a label.
 
-This table describe what happens to existing encryption when a sensitivity label is applied to that content.
+This table describes what happens to existing encryption when a sensitivity label is applied to that content.
 <br/>
 <br/>
 
@@ -210,5 +210,5 @@ For example, users cannot view protected emails on mobile phones or with Outlook
 
 To ensure that Exchange can support these additional scenarios, see the following:
 
-- For Exchange Online, see the instructions for [Exchange Online: IRM Configuration](https://docs.microsoft.com/azure/information-protection/configure-office365#exchange-online-irm-configuration).
+- For Exchange Online, see the instructions for [Exchange Online: IRM Configuration](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
 - For Exchange on-premises, you must deploy the [RMS connector and configure your Exchange servers](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 
