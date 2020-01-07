@@ -74,9 +74,9 @@ You can review the senders who are spoofing your domain, or external domains, an
 
     ![Screenshot showing access to the anti-spam page](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
 
-4. On the **Anti-spam settings** page in the right pane, select the **Custom** tab, and then scroll down and expand **Spoof intelligence policy**.
+4. On the **Anti-spam settings** page in the right pane, scroll down and expand **Spoof intelligence policy**.
 
-    ![Screenshot showing access to the anti-spam custom settings](../media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![spoof](https://user-images.githubusercontent.com/41186174/71801032-6228f100-3062-11ea-8461-682b910418c2.png)
 
 5. To view the list of senders spoofing your domain, choose **Review new senders** and select the **Your Domains** tab.
 
