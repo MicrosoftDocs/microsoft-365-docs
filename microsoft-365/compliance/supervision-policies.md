@@ -63,8 +63,8 @@ You create supervision policies in the Compliance center. These policies define 
 
 Before you start using supervision, you must determine who needs their communications reviewed. In the policy, user email addresses identify individuals or groups of people to supervise. Some examples of these groups are Office 365 Groups, Exchange-based distribution lists, and Microsoft Teams channels. You also can exclude specific users or groups from supervision with a supervised group or a list of groups.
 
-> [!IMPORTANT]
-> Users monitored by supervision policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.If you don't have an existing Enterprise E5 plan and want to try supervision, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>[!IMPORTANT]
+>Users monitored by supervision policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.If you don't have an existing Enterprise E5 plan and want to try supervision, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### Reviewers
 
@@ -124,11 +124,11 @@ Configure custom keyword dictionaries (or lexicons) to provide simple management
 
 Monitor sent or received email messages in your organization for offensive language. The model uses a combination of machine learning, artificial intelligence, and keywords to identify language in email messages likely to violate anti-harassment and bullying policies. The offensive language model currently supports English keywords and monitors the body of email messages.
 
-> [!NOTE]
-> Create a [data loss prevention policy](create-test-tune-dlp-policy.md) with a [custom keyword dictionary](create-a-keyword-dictionary.md) of blocked terms if you need to:
+>[!NOTE]
+>Create a [data loss prevention policy](create-test-tune-dlp-policy.md) with a [custom keyword dictionary](create-a-keyword-dictionary.md) of blocked terms if you need to:
 >
-> - monitor Microsoft Teams communications in your organization for offensive language
-> - prevent or block offensive language in communications in your organization
+>- monitor Microsoft Teams communications in your organization for offensive language
+>- prevent or block offensive language in communications in your organization
 
 Please note that the model does not provide an exhaustive list of offensive language. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update the model in its discretion. While the model may assist your organization in monitoring offensive language, the model is not intended to provide your organization’s sole means of monitoring or addressing such language. Your organization, not Microsoft, remains responsible for all decisions related to monitoring and blocking offensive language.
 
@@ -231,8 +231,8 @@ Use the supervision reports to see the review activity at the policy and reviewe
 2. Go to either **Reports** \> **Dashboard** or **Supervision** to view the supervision reporting widget for a summary of current supervision policy activity.
 3. Select the **Supervision** widget to open the detailed report page.
 
-> [!NOTE]
-> If you aren't able to access the **Reports** page, check that you're a member of the Supervisory Review role group, as described in [Make supervision available in your organization](configure-supervision-policies.md). Inclusion in this role group lets you create and manage supervision polices and run the report.
+>[!NOTE]
+>If you aren't able to access the **Reports** page, check that you're a member of the Supervisory Review role group, as described in [Make supervision available in your organization](configure-supervision-policies.md). Inclusion in this role group lets you create and manage supervision polices and run the report.
   
 ### How to use the report
 
@@ -256,8 +256,8 @@ Here's a breakdown of the values displayed the **Tag type** column.
 | **In Purview** | The total number (daily) of messages from Exchange, Teams, and third-party data sources scanned by a supervision policy |
 | **Resolved** | The total number of messages from Exchange, Teams, and third-party data sources classified as **Resolved**|
 
-> [!NOTE]
-> Supervision policies must be provisioned before they appear in reports. If policies are deleted, historical data is still shown. However, they're indicated as a "Non-existent policy" and the **Export** function isn't available.
+>[!NOTE]
+>Supervision policies must be provisioned before they appear in reports. If policies are deleted, historical data is still shown. However, they're indicated as a "Non-existent policy" and the **Export** function isn't available.
 
 ## Audit
 
@@ -284,4 +284,3 @@ In addition to information provided in the supervision reports and logs, you can
 ## Ready to get started?
 
 To configure supervision policies for your organization, see [Configure supervision policies](configure-supervision-policies.md).
-
