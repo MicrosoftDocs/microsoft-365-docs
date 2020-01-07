@@ -14,24 +14,24 @@ description:
 
 # Migrate legacy eDiscovery searches and holds to the Microsoft 365 compliance center
 
-The Microsoft 365 compliance center provides an improved experience for eDiscovery usage, including: higher reliability, better performance and many features tailored to eDiscovery workflows including cases to organize your content by matter, review sets to review content and analytics to help cull data for review such as near-duplicate grouping, email threading, themes analysis and predictive coding.
+The Microsoft 365 compliance center provides an improved experience for eDiscovery usage, including: higher reliability, better performance and many features tailored to eDiscovery workflows including cases to organize your content by matter, review sets to review content and analytics to help cull data for review such as near-duplicate grouping, email threading, themes analysis, and predictive coding.
 
-To help customers take advantage of the new and improved functionality, this help topic will provide basic guidance on how to migrate searches and holds from the Exchange admin center to the Microsoft 365 compliance center.
+To help customers take advantage of the new and improved functionality, this article provides basic guidance on how to migrate In-Place eDiscovery searches and holds from the Exchange admin center to the Microsoft 365 compliance center.
 
 > [!NOTE]
 > Because there are many different scenarios, this article provides general guidance to transition searches and holds to a core eDiscovery case in the Microsoft 365 compliance center. Using eDiscovery cases aren't always required, but they add an extra layer of security by letting you assign permissions to control who has access to the eDiscovery cases in your organization.
 
 ## Before you begin
 
-  - You have to be a member of the eDiscovery Manager role group in the Office 365 Security & Compliance Center to run the script described in this topic. You also have to be a member of the Discovery Management role group in the Exchange admin center.
+- You have to be a member of the eDiscovery Manager role group in the Office 365 Security & Compliance Center to run the script described in this topic. You also have to be a member of the Discovery Management role group in the Exchange admin center.
 
-  - The script provides no error handling. The primary purpose of the script examples is provide an overview of the individual moving parts.
+- The script provides no error handling. The primary purpose of the script examples is provide an overview of the individual moving parts.
 
-  - The script creates a new Content Search, but doesn't start it.
+- The script creates a new Content Search, but doesn't start it.
 
-  - This script provides guidance on how to create a hold, the hold policy will be applied through an asynchronous process. When creating a hold, you must create both a CaseHoldPolicy and CaseHoldRule, otherwise the hold will not be created and content locations will not be placed on hold.
+- This script provides guidance on how to create a hold, the hold policy will be applied through an asynchronous process. When creating a hold, you must create both a CaseHoldPolicy and CaseHoldRule, otherwise the hold will not be created and content locations will not be placed on hold.
 
-  - The sample script provided in this topic isn't supported under any Microsoft standard support program or service. The sample script is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample script and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
+- The sample script provided in this topic isn't supported under any Microsoft standard support program or service. The sample script is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample script and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
 
 ## Step 1: Connect to Exchange Online PowerShell and Office 365 Security & Compliance Center PowerShell
 
@@ -45,6 +45,8 @@ $exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri
 Import-PSSession $exoSession -AllowClobber -DisableNameChecking
 ```
 
+You need to run the commands in the following steps in this PowerShell session.
+
 ## Step 2: Get a list of In-Place eDiscovery searches by using Get-MailboxSearch
 
 After you've authenticated, you can get a list of In-Place eDiscovery searches by running the **Get-MailboxSearch** cmdlet. Copy and paste the following command into PowerShell and then run it. A list of searches will be listed with their names and the status of any In-Place Holds.
@@ -53,67 +55,72 @@ After you've authenticated, you can get a list of In-Place eDiscovery searches b
 Get-MailboxSearch
 ```
 
-The cmdlet output will look something like the following:
+The cmdlet output will be similar to the following:
 
 ![PowerShell example Get-MailboxSearch](media/MigrateLegacyeDiscovery1.png)
 
-## Step 3: Get information about the search you want to migrate
+## Step 3: Get information about the In-Place eDiscovery searches and In-Place Holds you want to migrate
 
-Again you will use the **Get-MailboxSearch** cmdlet, but this time to get the important properties of the search. You can store the parameters in a variable for use later. The following examples store the results in a variable and then the second command displays the properties of the search. 
-
- 
+Again you will use the **Get-MailboxSearch** cmdlet, but this time to get the properties of the search. You can store these properties in a variable for use later. The following examples store the results of the **Get-MailboxSearch** cmdlet in a variable and then displays the properties of the search.
 
 ```powershell
 $search = Get-MailboxSearch -Identity "Search 1"
 ```
+
 ```powershell
 $search | FL
 ```
 
-The output of these two commands will look something like the following:
+The output of these two commands will be similar to the following:
 
-![PowerShell example Get-MailboxSearch for individual search](media/MigrateLegacyeDiscovery2.png)
+![Example of PowerShell output from using Get-MailboxSearch for an individual search](media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> This in-place hold period is indefinite (ItemHoldPeriod: Unlimited). This is typical for eDiscovery usage. If the hold has any other value, this is likely used as a preservation policy. Instead of using the eDiscovery cmdlets in Office 365 Security & Compliance Center PowerShell, you should instead use [New-HoldCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancepolicy) and [New-HoldComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancerule). The usages will be similar to New-CaseHoldPolicy & New-CaseHoldRule, but you will be able to specify a timeline and action. Also, using **New-HoldCompliancePolicy** and **New-HoldComplianceRule** don't require the use of an eDiscovery case.
+> The duration of the In-Place Hold in this example is indefinite (*ItemHoldPeriod: Unlimited*). This is typical for eDiscovery and legal investigation scenarios. If the hold duration has is different value than indefinite, the reason is likely because the hold is being used to retain content in a retention scenario. Instead of using the eDiscovery cmdlets in Office 365 Security & Compliance Center PowerShell for retention scenarios, we recommend that you use [New-HoldCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancepolicy) and [New-HoldComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancerule) to retain content. The result of using these cmdlets will be similar to using **New-CaseHoldPolicy** and **New-CaseHoldRule**, but you'll able to specify a retention period and a retention action, such as deleting content after the retention period expires. Also, using the retention cmdlets don't require you to associate the retention holds with an eDiscovery case.
 
 ## Step 4: Create a case in the Microsoft 365 Compliance center
 
-Next, in order to create an eDiscovery hold, you are required to create a case. The following example creates a case with a name of your choice, you will need to replace \[Case Name\] with the case name of your liking. We will store the search in a variable for use later. You can view all of the properties of the case with $case | FL after the case is created.
-
-
+In order to create an eDiscovery hold, you have to create an eDiscovery case to associate the hold with. The following example creates an eDiscovery case using a name of your choice. We will store the properties of the new case in a variable for use later. You can view those properties by running the `$case | FL` command after you create the case.
 
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
 
-![PowerShell New-ComplianceCase example](media/MigrateLegacyeDiscovery3.png)
- 
+![Example of running the New-ComplianceCase command](media/MigrateLegacyeDiscovery3.png)
 
-## Step 5: Create the hold using CaseHoldPolicy & CaseHoldRule
+## Step 5: Create the eDiscovery hold
 
-After the case is created, you can create the hold and associate with the case using the following command. It's important to remember that you must create both a CaseHoldPolicy and CaseHoldRule. If the CaseHoldRule is not created with the policy, the hold will not be created and content will not be placed on hold.
+After the case is created, you can create the hold and associate it with the case that you created in the previous step. It's important to remember that you must create both a case hold policy and a case hold rule. If the case hold rule isn't created after you created case hold policy, the eDiscovery hold will not be created and any content won't be placed on hold.
+
+Run the following commands to re-create the eDiscovery hold that you want to migrate. These examples use the properties from In-Place Hold from Step 3 that you want to migrate.
 
 ```powershell
 $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLocation $search.SourceMailboxes
+```
+
+```powershell
 $rule = New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
 
 ![PowerShell NewCaseHoldPolicy example](media/MigrateLegacyeDiscovery4.png)
 
-## Step 6: Verify the hold policy
+## Step 6: Verify the eDiscovery hold
 
-To make sure there were no issues in creating the hold, it's always a good thing to check to make sure the hold distribution status is successful. To do this, you can simply call Get-CaseHoldPolicy. Note, because calling the $policy variable doesn't automatically update the status, you will need to re-run the cmdlet to make sure distribution is successful. Case hold policies will successfully synchronize in anywhere from 5 minutes, but can take up to 24 hours.
+To make sure there were no issues in creating the hold, it's good to check that the hold distribution status is successful. Distribution means that the hold have been applied to all the content locations specified in the *ExchangeLocation* parameter in the previous step. To do this, you can run the **Get-CaseHoldPolicy** cmdlet. Because the properties saved to the $policy variable that you created in the previous step are not automatically updated, you need to re-run the cmdlet to verify that distribution is successful. It can take between 5 minutes and 24 hours for case hold policies to be successfully distributed.
+
+Run the following command to verify that the eDiscovery hold has been successfully distributed.
 
 ```powershell
-Get-CaseHoldPolicy -Identity $policy.Identity | select name, DistributionStatus
+Get-CaseHoldPolicy -Identity $policy.Identity | Select name, DistributionStatus
 ```
+
+The value of **Success** for the *DistributionStatus* property indicates the hold was successfully placed on the content locations. If the distribution is not yet complete, a value of **Pending** is displayed.
 
 ![PowerShell Get-CaseHoldPolicy example](media/MigrateLegacyeDiscovery5.png)
 
-## Step 6: Create the search
+## Step 7: Create the search
 
-The last step is to create the search. After you are done, you can run the search or just leave it as is to be run at a later time.
+The last step is to re-create the search that you identified in Step 3 and associate it with the case. After you create the search, you can run it by using the **Start-ComplianceSearch** cmdlet or run at a later time.
 
 ```powershell
 New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxes -ContentMatchQuery $search.SearchQuery -Case $case.name
@@ -121,19 +128,21 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ![PowerShell New-ComplianceSearch example](media/MigrateLegacyeDiscovery6.png)
 
-## Step 7: Verify the case, hold and search in the Microsoft 365 Compliance center
+## Step 8: Verify the case, hold, and search in the Microsoft 365 Compliance center
 
-Just one more step to make sure that everything is setup correctly. You can visit the Microsoft 365 compliance center at [https://compliance.microsoft.com](https://compliance.microsoft.com). Once there, click on the eDiscovery tab, then eDiscovery.
+To make sure that everything is set up correctly, go to the Microsoft 365 compliance center at [https://compliance.microsoft.com](https://compliance.microsoft.com), and click **eDiscovery > eDiscovery**.
 
 ![Microsoft 365 Compliance Center eDiscovery](media/MigrateLegacyeDiscovery7.png)
 
-You will find the Hold under the Holds tab. If you click on the hold, you can see details about the hold including who the hold is applied to and the distribution status.
+The case that you created in Step 3 is listed on the **eDiscovery** page. The hold that you created in Step 4 in listed on the **Holds** tab. You can click the hold to see details, including the number of mailboxes the hold is applied to and the distribution status.
 
-![Microsoft 365 Compliance Center eDiscovery Case search](media/MigrateLegacyeDiscovery8.png)
+![eDiscovery Case hold in the Microsoft 365 compliance center](media/MigrateLegacyeDiscovery8.png)
 
-The Search will be listed under the Searches tab.
+The search that you created in Step 7 is listed on the listed on the **Searches** tab of the eDiscovery case.
 
-![Microsoft 365 Compliance Center eDiscovery Case hold](media/MigrateLegacyeDiscovery9.png)
+![eDiscovery case search in the Microsoft 365 compliance center](media/MigrateLegacyeDiscovery9.png)
+
+If you migrate an In-Place eDiscovery search but don't associate it with an eDiscovery case, it will be listed on the Content search page in the Microsoft 365 compliance center.
 
 ## More information
 
