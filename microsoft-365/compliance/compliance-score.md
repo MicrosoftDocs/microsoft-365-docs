@@ -16,7 +16,11 @@ description: "Microsoft Compliance Score helps organizations simplify and automa
 
 # Microsoft Compliance Score (Preview)
 
-Microsoft Compliance Score helps to simplify the way you manage compliance and reduce compliance risks through a user-friendly experience. Compliance Score is now available for public preview in the  [Microsoft 365 compliance center](microsoft-365-compliance-center.md). Read this article to understand what Compliance Score is, how it can help you manage compliance for your organization, and how to get started.
+Microsoft Compliance Score helps to simplify the way you manage compliance and reduce compliance risks through a user-friendly experience. Compliance Score is now available for public preview in the  [Microsoft 365 compliance center](microsoft-365-compliance-center.md).
+
+**In this article:** Read this article to understand what Compliance Score is, how it can help you manage compliance for your organization, and how to get started.
+
+**Learn about recent updates:** Go to the [Compliance Score release notes](compliance-score-release-notes.md) to see what's new and understand known issues with the preview version of Compliance Score.
 
 ## What is Compliance Score
 

@@ -81,7 +81,7 @@ Secure Score updates can be turned on automatically for all actions, can be turn
 
 Groups are containers that allow you to organize Assessments and share common information and workflow tasks between Assessments that have the same or related customer-managed controls.
 
-You can group Assessments in a way that is logical to you, such as by year, standard, service, or based on your organization's teams, divisions, or geographies. Below are two examples of groups:
+You can group Assessments in a way that is logical to you, such as by year, standard, service, or based on your organization's teams, divisions, or geographies. Below are examples of two groups and their underlying Assessments:
   
 - **FFIEC IS Assessments 2020**
   - Office 365 + FFIEC IS
@@ -92,21 +92,23 @@ You can group Assessments in a way that is logical to you, such as by year, stan
 
 We recommend determining a grouping strategy for your organization *before* adding new Assessments. By default, a group named "Default Group" is available for your initial Assessments.
 
-### To create a group:
+### How to create a group
 
-1. Step 1 ...
-2. Step 2 ... 
-3. Step 3 ...
+Groups cannot be created as stand-alone entities. When you create a new Assessment, you must create a new group for the Assessment or assign the Assessment to an existing group. Follow the steps below to create a group:
+
+1. First create a new Assessment by selecting **+ Add Assessment** near the top of your dashboard.
+2. From the **Assessment** flyout pane, enter a title for your Assessment adn select a template from the drop-down menu.
+3. At **Please select a group or add a new group**, select **Add a new group** and enter your group name in the field below.
+4. To copy information from an existing group, toggle the switch for **Would you like to copy the data from an existing group?** to **On.** Select the group you want to copy from the drop-down menu underneath, and select the checkboxes of any fields you would like to carry them over to the new Assessment in your new group.
+5. Select **Save**. When completed, the flyout pane closes and your new group automatically displays on your dashboard.
 
 What to know when working with groups:
   
-- Groups cannot be created as stand-alone entities; when you create a new Assessment, you must create a new group for the Assessment or assign the Assessment to an existing group.
 - Group names (also called *Group IDs*) must be unique within your organization.
 - Groups do not have any security properties. All permissions are associated with Assessments.
 - Once you add an Assessment to a group, the grouping cannot be changed. You can rename the assessment group, which changes the name of the assessment grouping for all the assessments associated with that group.
 - Related Assessment controls in different Assessments within the same group automatically update when completed.
 - If you add a new Assessment to an existing group, common information from Assessments in that group are copied to the new Assessment.
-- **CORRECT?:** You can create a new group for a new Assessment by copying information from an existing group. The Assessment in this new group will retain the information in the **Implementation Details** and **Test Plan and Management Response** fields of customer-managed controls as the Assessments in the group you copied.
 - Groups can contain Assessments for the same certification/regulation, but each group can only contain one Assessment for a specific cloud service/certification pair. For example, a group can't contain two Assessments for Office 365 and NIST CSF. A group can contain multiple Assessments for the same cloud service only if the corresponding certification/regulation for each one is different.
 - Hiding an Assessment breaks the relationship between that Assessment and the group. Any further updates to other related Assessments are no longer reflected in the hidden assessment. ([Learn how to hide Assessments.](#hide-a-template-or-an-assessment))
 
