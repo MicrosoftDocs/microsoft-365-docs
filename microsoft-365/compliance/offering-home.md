@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 compliance offerings
+title: Microsoft compliance offerings
 layout: LandingPage
 description: Learn how Microsoft products and services help your organization meet regulatory compliance standards.
 author: robmazz
@@ -13,7 +13,7 @@ ms.prod: Microsoft-365-enterprise
 titleSuffix: Microsoft Compliance
 ---
 
-# Microsoft 365 compliance offerings
+# Microsoft compliance offerings
 
 Microsoft offers a comprehensive set of compliance offerings to help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
 
