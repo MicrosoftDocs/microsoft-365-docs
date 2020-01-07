@@ -35,7 +35,7 @@ Users must have at least one of the following licenses assigned:
 
 - [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) or above
 
-The Office built-in labeling client supports sensitivity labels with a subscription version of Office. This client doesn't support standalone versions, for example, Office 2016 or Office 2019.
+The Office built-in labeling client supports sensitivity labels with a subscription edition of Office. This labeling client doesn't support standalone editions, such as Office 2016 or Office 2019. To use sensitivity labels with these editions of Office on Windows computers, install the Azure Information Protection unified labeling client.
 
 To use automatic or recommended sensitivity labeling, your users need one of the following licenses:
 
