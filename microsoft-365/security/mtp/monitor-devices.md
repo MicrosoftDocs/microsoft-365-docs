@@ -141,7 +141,7 @@ Intune enrolled device data includes:
 
 ## Monitor and manage ASR rule deployment and detections
 
-[Attack Surface Reduction (ASR) rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) help prevent actions and apps that are typically used by exploit-seeking malware to infect devices. These rules control when and how executables can run. For example, you can prevent JavaScript or VBScript from launching a downloaded executable, block Win32 API calls from Office macros, or block processes that run from USB drives.
+[Attack Surface Reduction (ASR) rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) help prevent actions and apps that are typically used by exploit-seeking malware to infect devices. These rules control when and how executables can run. For example, you can prevent JavaScript or VBScript from launching a downloaded executable, block Win32 API calls from Office macros, or block processes that run from USB drives.
 
 ![Attack surface reductions card](../images/attack-surface-reduction-rules.png)
 
@@ -178,14 +178,12 @@ Microsoft Intune provides management functionality for your ASR rules. If you wa
 
 ### Exclude files from ASR rules
 
-Microsoft 365 security center collects the names of the [files you might want to exclude](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr#add-exclusions-for-a-false-positive) from detections by attack surface reduction rules. 
-By excluding files, you can reduce false positive detections and more confidently deploy attack surface reduction rules in block mode.
+Microsoft 365 security center collects the names of the [files you might want to exclude](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction#exclude-files-and-folders-from-asr-rules) from detections by attack surface reduction rules. By excluding files, you can reduce false positive detections and more confidently deploy attack surface reduction rules in block mode.
 
-The exclusions are managed on Microsoft Intune, but Microsoft 365 security center provides an analysis tool to help you understand the files. 
-To start collecting files for exclusion, go to the **Add exclusions** tab in the **Attack surface reduction rules** report page.
+The exclusions are managed on Microsoft Intune, but Microsoft 365 security center provides an analysis tool to help you understand the files. To start collecting files for exclusion, go to the **Add exclusions** tab in the **Attack surface reduction rules** report page.
 
 >[!NOTE]  
->The tool analyzes detections by all attack surface reduction rules, but [only some rules support exclusions](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules).
+>The tool analyzes detections by all attack surface reduction rules, but [only some rules support exclusions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr).
 
 ![Add exclusions tab](../images/add-exclusions-tab.png)
 

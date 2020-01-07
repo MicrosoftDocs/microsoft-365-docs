@@ -3,7 +3,7 @@ title: "Use sensitivity labels with Microsoft Teams, Office 365 groups, and Shar
 ms.author: krowley
 author: cabailey
 manager: laurawi
-ms.date: 12/13/2019
+ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -65,7 +65,9 @@ You're now ready to enable the preview of sensitivity labels with Microsoft Team
 
 1. In a PowerShell session, using a work or school account that has global admin privileges, connect to Azure Active Directory. For example, run:
     
-    	Connect-AzureAD
+    ```powershell
+    Connect-AzureAD
+    ````
     
     For full instructions, see [Connect to Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#connect-to-azure-ad).
 
@@ -92,7 +94,7 @@ You're now ready to enable the preview of sensitivity labels with Microsoft Team
 
 3. In the same PowerShell session, now connect to the Security & Compliance Center by using a work or school account that has global admin privileges. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-4. Run the following commands:
+4. Run the following commands to synchronize your labels to Azure AD, so that they can used with Office 365 groups:
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -213,7 +215,36 @@ To view and edit the labels, use the Active sites page in the new SharePoint adm
 
 ## Change site and group settings for a label
 
-As a best practice, don't change settings after you've applied a label to several teams, groups, or sites. If you must make a change, you need to use an Azure AD PowerShell script to manually apply updates. This method ensures that all existing teams, sites, and groups enforce the new setting.
+Whenever you make a change to site and group settings for a label, you must run the following PowerShell commands so that your teams, sites, and groups can use the new settings. As a best practice, don't the change site and group settings for a label after you've applied the label to several teams, groups, or sites.
+
+1. Run the following commands to connect to Office 365 Security & Compliance Center PowerShell and get the list of sensitivity labels and their GUIDs.
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $UserCredential
+    Import-PSSession $Session
+    Get-Label |ft Name, Guid
+    ```
+
+2. Make a note of the GUID for the label or labels you have changed.
+
+3. Now connect to Exchange Online PowerShell and run the Get-UnifiedGroup cmdlet, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e": 
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session
+    $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    ```
+
+4. For each group, reapply the sensitivity label, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e":
+    
+    ```powershell
+    foreach ($g in $groups)
+    {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    ```
 
 ## Support for the new sensitivity labels
 

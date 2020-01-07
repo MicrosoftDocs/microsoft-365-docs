@@ -19,8 +19,8 @@ description: "Use this topic to learn more about configuring privileged access m
 
 # Configuring privileged access management in Office 365
 
-> [!IMPORTANT]
-> This topic covers deployment and configuration guidance for features only currently available in Office 365 E5 and Advanced Compliance SKUs.
+>[!IMPORTANT]
+>This topic covers deployment and configuration guidance for features only currently available in Office 365 E5 and Advanced Compliance SKUs.
 
 This topic guides you through enabling and configuring privileged access management in your Office 365 organization. You can use either the Microsoft 365 Admin Center or Exchange Management PowerShell to manage and use privileged access. 
 
@@ -46,8 +46,8 @@ Follow these steps to set up and use privileged access in your Office 365 organi
 
 After approval is granted, the requesting user can execute the intended task and privileged access will authorize and execute the task on behalf of the user. The approval remains valid for the requested duration (default duration is 4 hours), during which the requester can execute the intended task multiple times. All such executions are logged and made available for security and compliance auditing. 
 
-> [!NOTE]
-> If you want to use Exchange Management PowerShell to enable and configure privileged access, follow the steps in [Connect to Exchange Online PowerShell using Multi-Factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) to connect to Exchange Online PowerShell with your Office 365 credentials. You do not need to enable multi-factor authentication for your Office 365 organization to use the steps to enable privileged access while connecting to Exchange Online PowerShell. Connecting with multi-factor authentication creates an OAuth token that is used by privileged access for signing your requests.
+>[!NOTE]
+>If you want to use Exchange Management PowerShell to enable and configure privileged access, follow the steps in [Connect to Exchange Online PowerShell using Multi-Factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) to connect to Exchange Online PowerShell with your Office 365 credentials. You do not need to enable multi-factor authentication for your Office 365 organization to use the steps to enable privileged access while connecting to Exchange Online PowerShell. Connecting with multi-factor authentication creates an OAuth token that is used by privileged access for signing your requests.
 
 <a name="step1"> </a>
 
@@ -84,16 +84,19 @@ After approval is granted, the requesting user can execute the intended task and
 ### In Exchange Management PowerShell
 
 To enable privileged access and to assign the approver's group, run the following command in Exchange Online PowerShell:
-```
+
+```PowerShell
 Enable-ElevatedAccessControl -AdminGroup '<default approver group>' -SystemAccounts @('<systemAccountUPN1>','<systemAccountUPN2>')
 ```
+
 Example:
-```
+
+```PowerShell
 Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', sys2@fabrikamorg.onmicrosoft.com')
 ```
 
-> [!NOTE]
-> System accounts feature is made available to ensure certain automations within your organizations can work without dependency on privileged access, however it is recommended that such exclusions be exceptional and those allowed should be approved and audited regularly.
+>[!NOTE]
+>System accounts feature is made available to ensure certain automations within your organizations can work without dependency on privileged access, however it is recommended that such exclusions be exceptional and those allowed should be approved and audited regularly.
 
 <a name="step3"> </a>
 
@@ -129,11 +132,13 @@ You can create and configure up to 30 privileged access policies for your Office
 
 To create and define an approval policy, run the following command in Exchange Online PowerShell:
 
-```
+```PowerShell
 New-ElevatedAccessApprovalPolicy -Task 'Exchange\<exchange management cmdlet name>' -ApprovalType <Manual, Auto> -ApproverGroup '<default/custom approver group>'
 ```
+
 Example:
-```
+
+```PowerShell
 New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType Manual -ApproverGroup 'mbmanagers@fabrikamorg.onmicrosoft.com'
 ```
 
@@ -170,14 +175,19 @@ Requests for privileged access are valid for up to 24 hours after the request is
 #### In Exchange Management PowerShell
 
 Run the following command in Exchange Online PowerShell to create and submit an approval request to the approver's group:
-```
+
+```PowerShell
 New-ElevatedAccessRequest -Task 'Exchange\<exchange management cmdlet name>' -Reason '<appropriate reason>' -DurationHours <duration in hours>
 ```
+
 Example:
-```
+
+```PowerShell
 New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting to fix the user mailbox error' -DurationHours 4
 ```
+
 ### View status of elevation requests
+
 After an approval request is created, elevation request status can be reviewed in the admin center or in Exchange Management PowerShell using the associated with request ID.
 
 #### In the Microsoft 365 admin center
@@ -193,15 +203,19 @@ After an approval request is created, elevation request status can be reviewed i
 #### In Exchange Management PowerShell
 
 Run the following command in Exchange Online PowerShell to view an approval request status for a specific request ID:
-```
+
+```PowerShell
 Get-ElevatedAccessRequest -Identity <request ID> | select RequestStatus
 ```
+
 Example:
-```
+
+```PowerShell
 Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | select RequestStatus
 ```
 
 ### Approving an elevation authorization request
+
 When an approval request is created, members of the relevant approver group receive an email notification and can approve the request associated with the request ID. The requestor is notified of the request approval or denial via email message.
 
 #### In the Microsoft 365 admin center
@@ -220,25 +234,30 @@ When an approval request is created, members of the relevant approver group rece
 
 To approve an elevation authorization request, run the following command in Exchange Online PowerShell:
 
-```
+```PowerShell
 Approve-ElevatedAccessRequest -RequestId <request id> -Comment '<approval comment>'
 ```
+
 Example:
-```
+
+```PowerShell
 Approve-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<approval comment>'
 ```
 
 To deny an elevation authorization request, run the following command in Exchange Online PowerShell:
 
-```
+```PowerShell
 Deny-ElevatedAccessRequest -RequestId <request id> -Comment '<denial comment>'
 ```
+
 Example:
-```
+
+```PowerShell
 Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<denial comment>'
 ```
 
 ## Delete a privileged access policy in Office 365
+
 If it is no longer needed in your organization, you can delete a privileged access policy.
 
 ### In the Microsoft 365 admin center
@@ -259,7 +278,7 @@ If it is no longer needed in your organization, you can delete a privileged acce
 
 To delete a privileged access policy, run the following command in Exchange Online Powershell:
 
-```
+```PowerShell
 Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
 ```
 
@@ -279,6 +298,6 @@ If needed, you can disable privileged access management for your organization. D
 
 To disable privileged access, run the following command in Exchange Online Powershell:
 
-```
+```PowerShell
 Disable-ElevatedAccessControl
 ```

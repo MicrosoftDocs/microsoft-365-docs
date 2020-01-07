@@ -3,7 +3,7 @@ title: "Submit spam, non-spam, and phishing scam messages to Microsoft for analy
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/19/2019
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -53,8 +53,8 @@ To submit a junk or phishing scam message to Microsoft:
     
 3. Copy and paste the junk or phishing scam message into the new message as an attachment. 
     
-    > [!NOTE]
-    > You can attach multiple messages to the new message. Make sure that all the messages are the same type — either phishing scam messages or junk email messages. > Leave the body of the new message empty. 
+   > [!NOTE]
+   > • You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing scam messages or junk email messages. <br/><br/>• Leave the body of the new message empty. <br/><br/>• Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.
   
 4. Click **Send**.
     
