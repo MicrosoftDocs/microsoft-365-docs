@@ -94,10 +94,10 @@ We recommend determining a grouping strategy for your organization *before* addi
 
 ### How to create a group
 
-Groups cannot be created as stand-alone entities. When you create a new Assessment, you must create a new group for the Assessment or assign the Assessment to an existing group. Follow the steps below to create a group:
+Groups cannot be created as standalone entities. A group must always contain at least one Assessment, so in order to create a group, you must first create an Assessment to put in the group. Follow the steps below to create a group:
 
-1. First create a new Assessment by selecting **+ Add Assessment** near the top of your dashboard.
-2. From the **Assessment** flyout pane, enter a title for your Assessment adn select a template from the drop-down menu.
+1. First, create a new Assessment by selecting **+ Add Assessment** near the top of your dashboard.
+2. From the **Assessment** flyout pane, enter a title for your Assessment and select a template from the drop-down menu.
 3. At **Please select a group or add a new group**, select **Add a new group** and enter your group name in the field below.
 4. To copy information from an existing group, toggle the switch for **Would you like to copy the data from an existing group?** to **On.** Select the group you want to copy from the drop-down menu underneath, and select the checkboxes of any fields you would like to carry them over to the new Assessment in your new group.
 5. Select **Save**. When completed, the flyout pane closes and your new group automatically displays on your dashboard.
