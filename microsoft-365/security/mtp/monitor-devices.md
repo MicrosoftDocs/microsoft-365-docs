@@ -198,7 +198,8 @@ Logs for the ASR rule **Block credential stealing from the Windows local securit
 
 To locate the source app, run the following [advanced hunting query](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) for this specific rule (identified by rule ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2):
 
-```MiscEvents
+```kusto
+MiscEvents
 | where EventTime > ago(7d)
 | where ActionType startswith "Asr"
 | where AdditionalFields contains "9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2"
@@ -212,7 +213,8 @@ To review a file, use the [file information page](https://docs.microsoft.com/win
 
 To locate a detected file in Microsoft Defender Security Center, search for all ASR detections using the following advanced hunting query:
 
-```MiscEvents
+```kusto
+MiscEvents
 | where EventTime > ago(7d)
 | where ActionType startswith "Asr"
 | project FolderPath, FileName, SHA1, InitiatingProcessFolderPath, InitiatingProcessFileName, InitiatingProcessSHA1
