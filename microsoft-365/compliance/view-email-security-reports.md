@@ -220,12 +220,12 @@ If you are not seeing data in your reports, double-check that your policies are 
   
 ## Related topics
 
-[Office 365 Email Anti-Spam Protection](/security/office-365-security/anti-spam-protection.md)
+[Office 365 Email Anti-Spam Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
   
-[Reports and insights in the Office 365 Security &amp; Compliance Center](/security/office-365-security/reports-and-insights-in-security-and-compliance.md)
+[Reports and insights in the Office 365 Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
   
 [Create a schedule for a report in the Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
   
-[Set up and download a custom report in the Security &amp; Compliance Center](/security/office-365-security/set-up-and-download-a-custom-report.md)
+[Set up and download a custom report in the Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-and-download-a-custom-report)
   
 
