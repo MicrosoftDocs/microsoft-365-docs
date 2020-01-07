@@ -29,7 +29,7 @@ ms.topic: article
 ## Obtain user accounts from email addresses
 When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses. To do this use the *local-host* from the email address:
 
-```
+```kusto
 AccountName = tostring(split(SenderFromAddress, "@")[0])
 ```
 
@@ -40,7 +40,7 @@ This normalization technique is used in the succeeding scenarios.
 ### Check if files from a known malicious sender are on your devices
 Assuming you know of an email address sending malicious files, you can run this query to determine if files from this sender exist on your devices. You can use this query, for example, to determine the number of devices affected by a malware distribution campaign.
 
-```
+```kusto
 //Get prevalence of files sent by a malicious sender in your organization
 EmailAttachmentInfo
 | where SenderFromAddress =~ "MaliciousSender@example.com"
@@ -54,7 +54,7 @@ DeviceFileEvents
 ### Review logon attempts after receipt of malicious emails
 This query finds the 10 latest logons performed by email recipients within 30 minutes after they received known malicious emails. You can use this query to check whether the accounts of the email recipients have been compromised.
 
-```
+```kusto
 //Find logons that occurred right after malicious email was received
 let MaliciousEmail=EmailEvents
 | where MalwareFilterVerdict == "Malware" 
@@ -71,7 +71,7 @@ DeviceLogonEvents
 ### Review PowerShell activities after receipt of emails from known malicious sender
 Malicious emails often contain documents and other specially crafted attachments that run PowerShell commands to deliver additional payloads. If you are aware of emails coming from a known malicious sender, you can use this query to list and review PowerShell activities that occurred within 30 minutes after an email was received from the sender .  
 
-```
+```kusto
 //Find PowerShell activities right after email was received from malicious sender
 let x=EmailEvents
 | where SenderFromAddress =~ "MaliciousSender@example.com"
