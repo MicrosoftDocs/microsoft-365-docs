@@ -63,7 +63,7 @@ Use this report enables your organization's security and compliance team to moni
 The **Threat Protection Status** report is a smart report that shows malicious email that was detected and blocked by Exchange Online Protection. This report is useful for viewing email identified as malware or a phishing attempt over time (up to 90 days), and it enables security administrators to identify trends or determine whether policies need adjustments.
 
 > [!NOTE]
-> A Threat Protection Status report is available to customers who have either [Office 365 ATP](/security/office-365-security/office-365-atp.md) or [Exchange Online Protection](/security/office-365-security/exchange-online-protection-eop.md) (EOP); however, the information that is displayed in the Threat Protection Status report for ATP customers will likely contain different data than what EOP customers might see. For example, EOP customers can view information about malware detected in email, but not information about [malicious files detected in SharePoint Online, OneDrive, or Microsoft Teams](/security/office-365-security/atp-for-spo-odb-and-teams.md), an ATP-specific capability. ([Learn more about ATP reports](/security/office-365-security/view-reports-for-atp.md).)
+> A Threat Protection Status report is available to customers who have either [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) or [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop) (EOP); however, the information that is displayed in the Threat Protection Status report for ATP customers will likely contain different data than what EOP customers might see. For example, EOP customers can view information about malware detected in email, but not information about [malicious files detected in SharePoint Online, OneDrive, or Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams), an ATP-specific capability. ([Learn more about ATP reports](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp).)
   
 To view this report, in the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **Threat Protection Status**.
   
@@ -71,7 +71,7 @@ To view this report, in the [Security &amp; Compliance Center](https://protectio
   
 When you first open the Threat Protection Status report, the report shows data for the past seven days by default; however, you can click **Filters** and change the date range for up to 90 days of detail. (If you are using a trial subscription, you might be limited to 30 days' of data.)
 
-This report is useful for viewing the effectiveness and impact of your organization's [Exchange Online Protection features](/security/office-365-security//eop-features.md), and for longer-term trending. 
+This report is useful for viewing the effectiveness and impact of your organization's [Exchange Online Protection features](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features), and for longer-term trending. 
   
 ![Threat Protection Status report filters](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
@@ -117,7 +117,7 @@ When you hover over a wedge in the pie chart, you can see a count of messages se
   
 Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report.
   
-Use the **Show data for** list to choose whether to view data for top senders, receivers, spam recipients, and malware recipients. You can also see who received malware that was detected by [Exchange Online Protection](/security/office-365-security/exchange-online-protection-overview.md). 
+Use the **Show data for** list to choose whether to view data for top senders, receivers, spam recipients, and malware recipients. You can also see who received malware that was detected by [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop). 
   
 ![Use the Show Data For list to view specific information](media/bd91449f-7d42-4749-8666-7b44044049b8.png)
   
@@ -133,7 +133,7 @@ To view this report, in the [Security &amp; Compliance Center](https://protectio
   
 When you hover over a day in the chart, you can see how many spoof mail messages came through.
   
-Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report. To learn more about anti-spoof protection, see [Anti-spoofing protection in Office 365](/security/office-365-security/anti-spoofing-protection.md).
+Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report. To learn more about anti-spoof protection, see [Anti-spoofing protection in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spoofing-protection).
   
 ## Spam Detections report
 
@@ -149,7 +149,7 @@ Click (or tap) the report to open it in a new browser window, where you can get 
   
 ![The Spam Detections report tells you how many spam messages were blocked or filtered out](media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
   
-Below the chart, you'll see a list of spam items that were detected. Select an item to view additional information, such as whether the spam item was inbound or outbound, its message ID, and its recipient. To learn more about anti-spam protection, see [Office 365 email anti-spam protection](/security/office-365-security/anti-spam-protection.md).
+Below the chart, you'll see a list of spam items that were detected. Select an item to view additional information, such as whether the spam item was inbound or outbound, its message ID, and its recipient. To learn more about anti-spam protection, see [Office 365 email anti-spam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
   
 ## Sent and received email report
 
@@ -171,7 +171,7 @@ Below the chart, you'll see a list of email categories, such as **GoodMail**, **
   
 ![This report tells you about anti-malware, anti-spam, and other message detections](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
 
-To learn more about email intelligence, see [Mail flow intelligence in Office 365](/security/office-365-security/mail-flow-intelligence-in-office-365.md).
+To learn more about email intelligence, see [Mail flow intelligence in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365).
   
 ## User-reported messages report
 
