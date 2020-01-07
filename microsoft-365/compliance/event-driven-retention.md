@@ -56,7 +56,7 @@ To successfully use event-driven retention, it's important to understand the rel
     
   - Keywords (for Exchange items). In this example, the organization uses a product code in messages containing product records, so the keyword for Exchange items is the same as the asset ID for SharePoint and OneDrive documents.
     
-  - The date when the event occurred. This date is used as the start of the retention period. This date can only be the current or a future date, not a past date.
+  - The date when the event occurred. This date is used as the start of the retention period. This date can be the current, a past, or a future date.
     
 4. After you create an event, that event date is synced to all of the content that has a label of that event type and that contains the specified asset ID or keyword. Like any label, this syncing can take up to 7 days. In the diagram above, all of the items circled in red have their retention period triggered by this event - in other words, when this product reaches its end of life, that event triggers the retention period for that product's records.
     
