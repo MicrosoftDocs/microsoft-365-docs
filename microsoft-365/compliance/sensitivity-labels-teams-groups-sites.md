@@ -92,7 +92,7 @@ You're now ready to enable the preview of sensitivity labels with Microsoft Team
 
 3. In the same PowerShell session, now connect to the Security & Compliance Center by using a work or school account that has global admin privileges. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-4. Run the following commands:
+4. Run the following commands to synchronize your labels to Azure AD, so that they can used with Office 365 groups:
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -213,7 +213,36 @@ To view and edit the labels, use the Active sites page in the new SharePoint adm
 
 ## Change site and group settings for a label
 
-As a best practice, don't change settings after you've applied a label to several teams, groups, or sites. If you must make a change, you need to use an Azure AD PowerShell script to manually apply updates. This method ensures that all existing teams, sites, and groups enforce the new setting.
+As a best practice, don't change site and group settings for a label after you've applied the label to several teams, groups, or sites. If you must make a change, run the following PowerShell commands to manually apply your updates. This method ensures that all existing teams, sites, and groups use the new settings.
+
+1. Run the following command to get the list of sensitivity labels and their GUIDs.
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $UserCredential
+    Import-PSSession $Session
+    Get-Label |ft Name, Guid
+    ```
+
+2. Make a note of the GUID for the label or labels you have changed.
+
+3. Now connect to Exchange Online PowerShell and run the Get-UnifiedGroup cmdlet, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e": 
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session
+    $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    ```
+
+4. For each group, reapply the sensitivity label GUID. For example:
+    
+    ```powershell
+    foreach ($g in $groups)
+    {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+
 
 ## Support for the new sensitivity labels
 
