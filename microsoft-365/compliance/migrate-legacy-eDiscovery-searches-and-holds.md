@@ -33,10 +33,9 @@ To help customers take advantage of the new and improved functionality, this hel
 
   - The sample script provided in this topic isn't supported under any Microsoft standard support program or service. The sample script is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample script and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
 
-## Step 1: Login to the Exchange Admin Center and Microsoft 365 Compliance center with PowerShell
+## Step 1: Connect to Exchange Online PowerShell and Office 365 Security & Compliance Center PowerShell
 
-The first step is to login to the Exchange Admin Center and the Microsoft 365 Compliance center. You can copy the below script, paste into a PowerShell window and run. You will be prompted for the appropriate credentials when you run this part of the script.
- 
+The first step is to connect to Exchange Online PowerShell and Office 365 Security & Compliance Center PowerShell. You can copy the following script, paste it into a PowerShell window and then run it. You'll be prompted for credentials for the organization that you want to connect to. 
 
 ```powershell
 $UserCredential = Get-Credential
@@ -46,38 +45,37 @@ $exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri
 Import-PSSession $exoSession -AllowClobber -DisableNameChecking
 ```
 
+## Step 2: Get a list of In-Place eDiscovery searches by using Get-MailboxSearch
 
-## Step 2: Get a list of searches from the Exchange Admin Center using Get-MailboxSearch
+After you've authenticated, you can get a list of In-Place eDiscovery searches by running the **Get-MailboxSearch** cmdlet. Copy and paste the following command into PowerShell and then run it. A list of searches will be listed with their names and the status of any In-Place Holds.
 
-After you've authenticated, you can retrieve the search of searches by simply calling Get-MailboxSearch. Copy and paste the following command into PowerShell and execute, a list of searches will be listed with their names and In Place Hold status.
-
- 
 ```powershell
 Get-MailboxSearch
 ```
 
-The output will roughly look like the following
+The cmdlet output will look something like the following:
 
 ![PowerShell example Get-MailboxSearch](media/MigrateLegacyeDiscovery1.png)
 
-## Step 3: Get the output of the search you want to migrate
+## Step 3: Get information about the search you want to migrate
 
-Once again, you will use Get-MailboxSearch, but this time to get the important values of the search. You can store the parameters in a variable for use later, this example will store the results and then print them out. Using | FL will print out the results in the $search variable formatted as a list.
+Again you will use the **Get-MailboxSearch** cmdlet, but this time to get the important properties of the search. You can store the parameters in a variable for use later. The following examples store the results in a variable and then the second command displays the properties of the search. 
 
  
 
 ```powershell
-$search = Get-MailboxSearch -Identity Search 1
+$search = Get-MailboxSearch -Identity "Search 1"
+```
+```powershell
 $search | FL
 ```
- 
 
-The output will look roughly like the following
+The output of these two commands will look something like the following:
 
 ![PowerShell example Get-MailboxSearch for individual search](media/MigrateLegacyeDiscovery2.png)
 
-
-NOTE: This in-place hold period is indefinite (ItemHoldPeriod: Unlimited). This is typical for eDiscovery usage. If the hold has any other value, this is likely used as a preservation policy. Instead of using the eDiscovery cmdlets in the Microsoft 365 Compliance Center, you should instead use [New-HoldCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancepolicy?view=exchange-ps) and [New-HoldComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancerule?view=exchange-ps). The usages will be similar to New-CaseHoldPolicy & New-CaseHoldRule, but you will be able to specify a timeline and action. Also note, New-HoldCompliancePolicy and New-HoldComplianceRule do not require the use of a compliance case.
+> [!NOTE]
+> This in-place hold period is indefinite (ItemHoldPeriod: Unlimited). This is typical for eDiscovery usage. If the hold has any other value, this is likely used as a preservation policy. Instead of using the eDiscovery cmdlets in Office 365 Security & Compliance Center PowerShell, you should instead use [New-HoldCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancepolicy) and [New-HoldComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancerule). The usages will be similar to New-CaseHoldPolicy & New-CaseHoldRule, but you will be able to specify a timeline and action. Also, using **New-HoldCompliancePolicy** and **New-HoldComplianceRule** don't require the use of an eDiscovery case.
 
 ## Step 4: Create a case in the Microsoft 365 Compliance center
 
