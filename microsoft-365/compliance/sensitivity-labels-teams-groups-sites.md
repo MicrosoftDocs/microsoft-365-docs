@@ -244,7 +244,7 @@ Whenever you make a change to site and group settings for a label, you must run 
     ```powershell
     foreach ($g in $groups)
     {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "e48058ea-98e8-4940-8db0-ba1310fd955e"}
-
+    ```
 
 ## Support for the new sensitivity labels
 
