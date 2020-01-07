@@ -16,11 +16,21 @@ description: "Release notes and known issues for Microsoft Compliance Score (pre
 
 # Microsoft Compliance Score (Preview) release notes
 
-The public preview of Microsoft Compliance Score provides you with early access to upcoming functionality and updates.
+The public preview of Microsoft Compliance Score provides you with early access to upcoming functionality and updates. Check this page frequently to learn what's new.
 
 Compliance Score is a new feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that calculates a risk-based score, measuring your progress towards completing recommended actions that help reduce compliance risks.
 
-## Compliance Score and Compliance Manager relationship
+## What's new
+
+### New templates for assessments
+
+New pre-configured templates for assessments are released into production for Compliance Score (Preview) as they become available. Check the [full list of templates here](compliance-score.md#templates). Recently-added templates include:
+
+- ISO 27701:2019
+- IRAP / Australian Government ISM (Preview)
+
+
+### Compliance Score relationship to Compliance Manager
 
 Many of the compliance functions handled in Compliance Manager can now be done in Compliance Score. However some functionality still resides only in Compliance Manager, and some previous functionality in Compliance Manager is altered during the public preview period. 
 

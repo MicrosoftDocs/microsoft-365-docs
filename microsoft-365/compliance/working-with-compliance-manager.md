@@ -90,7 +90,7 @@ You can group Assessments in a way that is logical to you, such as by year, stan
   - Office 365 + ISO 27001:2013
   - Office 365 + ISO 27018:2014
 
-When you create a new Assessment, you must create a new group for the Assessment or assign the Assessment to an existing group. Groups cannot be created as stand-alone entities. We recommend determining a grouping strategy for your organization *before* adding new Assessments. By default, a group named "Default Group" is available for your initial Assessments.
+We recommend determining a grouping strategy for your organization *before* adding new Assessments. By default, a group named "Default Group" is available for your initial Assessments.
 
 ### To create a group:
 
@@ -100,6 +100,7 @@ When you create a new Assessment, you must create a new group for the Assessment
 
 What to know when working with groups:
   
+- Groups cannot be created as stand-alone entities; when you create a new Assessment, you must create a new group for the Assessment or assign the Assessment to an existing group.
 - Group names (also called *Group IDs*) must be unique within your organization.
 - Groups do not have any security properties. All permissions are associated with Assessments.
 - Once you add an Assessment to a group, the grouping cannot be changed. You can rename the assessment group, which changes the name of the assessment grouping for all the assessments associated with that group.
