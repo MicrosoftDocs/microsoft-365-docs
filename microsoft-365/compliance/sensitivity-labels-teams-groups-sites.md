@@ -213,9 +213,9 @@ To view and edit the labels, use the Active sites page in the new SharePoint adm
 
 ## Change site and group settings for a label
 
-As a best practice, don't change site and group settings for a label after you've applied the label to several teams, groups, or sites. If you must make a change, run the following PowerShell commands to manually apply your updates. This method ensures that all existing teams, sites, and groups use the new settings.
+Whenever you make a change to site and group settings for a label, you must run the following PowerShell commands so that your teams, sites, and groups can use the new settings. As a best practice, don't the change site and group settings for a label after you've applied the label to several teams, groups, or sites.
 
-1. Run the following command to get the list of sensitivity labels and their GUIDs.
+1. Run the following commands to connect to Office 365 Security & Compliance Center PowerShell and get the list of sensitivity labels and their GUIDs.
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -237,7 +237,7 @@ As a best practice, don't change site and group settings for a label after you'v
     $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
     ```
 
-4. For each group, reapply the sensitivity label GUID. For example:
+4. For each group, reapply the sensitivity label, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e":
     
     ```powershell
     foreach ($g in $groups)
