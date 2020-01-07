@@ -90,7 +90,8 @@ You can group Assessments in a way that is logical to you, such as by year, stan
   - Office 365 + ISO 27001:2013
   - Office 365 + ISO 27018:2014
 
-We recommend determining a grouping strategy for your organization *before* adding new Assessments. By default, a group named "Default Group" is available for your initial Assessments.
+> [!NOTE]
+> We recommend determining a grouping strategy for your organization *before* adding new Assessments. By default, a group named "Default Group" is available for your initial Assessments.
 
 ### How to create a group
 
