@@ -1,5 +1,5 @@
 ---
-title: "Migrate legacy eDiscovery searches and hold to the Microsoft 365 compliance center"
+title: "Migrate legacy eDiscovery searches and holds to the Microsoft 365 compliance center"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,15 +12,14 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: 
 ---
 
-# Migrate legacy eDiscovery searches and hold to the Microsoft 365 compliance center
-
-##  Overview
+# Migrate legacy eDiscovery searches and holds to the Microsoft 365 compliance center
 
 The Microsoft 365 compliance center provides an improved experience for eDiscovery usage, including: higher reliability, better performance and many features tailored to eDiscovery workflows including cases to organize your content by matter, review sets to review content and analytics to help cull data for review such as near-duplicate grouping, email threading, themes analysis and predictive coding.
 
 To help customers take advantage of the new and improved functionality, this help topic will provide basic guidance on how to migrate searches and holds from the Exchange admin center to the Microsoft 365 compliance center.
 
-Note: Because there are many different scenarios, this topic provides general guidance to transition searches and holds to a Microsoft 365 Compliance case. Compliance cases are not always required, but they add an extra layer of security by providing permissions to cases within a tenant.
+> [!NOTE]
+> Because there are many different scenarios, this article provides general guidance to transition searches and holds to a core eDiscovery case in the Microsoft 365 compliance center. Using eDiscovery cases aren't always required, but they add an extra layer of security by letting you assign permissions to control who has access to the eDiscovery cases in your organization.
 
 ## Before you begin
 

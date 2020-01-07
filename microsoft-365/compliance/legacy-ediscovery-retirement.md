@@ -58,9 +58,14 @@ Becuase all of these capabilities (except for copying search results to a discov
 
 ### Scope of affected organizations
     
-- Office 365 and Microsoft 365 organizations in a multi-tenant datacenter environment
+- Office 365 and Microsoft 365 Enterprise organizations
 
-- Office 365 and Microsoft 365 organizations in a GoLocal datacenter environment
+- Office 365 and Microsoft 365 Education organizations
+
+- Office 365 and Microsoft 365 Government organizations; this includes GCC, GCC High, and DoD
+
+- Office 365 Germany
+
 
 ### Timeline for retirement
     
@@ -70,7 +75,7 @@ Becuase all of these capabilities (except for copying search results to a discov
 
 ### Alternative tools
 
-The following table describes other eDiscovery tools that you can use to replace the existing functionality that's being retired.
+The following table describes other tools that you can use to replace the existing functionality that's being retired.
 
 <table>
 <thead>
@@ -98,8 +103,8 @@ The following table describes other eDiscovery tools that you can use to replace
 </tr>
 <tr class="even">
 <td>Hold for retention purposes</td>
-<td>Retetnion policies in the Microsoft 365 compliance center</td>
-<td><p>You can use Retention policies to retain content and, if desired, delete it after the retention period expires. Other capabilites include:</p>
+<td>Retention policies in the Microsoft 365 compliance center</td>
+<td><p>You can use Retention policies to retain content and, if desired, delete it after the retention period expires. Other capabilities include:</p>
 <ul>
 <li>
 <p>Applying policies to your entire organization </p>
@@ -140,102 +145,107 @@ It's possible to migrate In-Place eDiscovery searches and holds from the EAC by 
 
 ## \*-MailboxSearch cmdlets
 
-As per the original notice announced in July 1, 2017 in the Exchange admin center, the In-Place eDiscovery & Hold functionality and the corresponding **\*-MailboxSearch** cmdlets are being retired. These cmdlets provide users the ability to search, hold, and export mailbox content for legal, regulatory and public requests.
+As per the original notice announced on July 1, 2017 in the Exchange admin center, the In-Place eDiscovery & Hold functionality and the corresponding **\*-MailboxSearch** cmdlets are being retired. These cmdlets provide users the ability to search, hold, and export mailbox content for legal, regulatory and public requests.
 
-Because these capabilities are now available in the [<span class="underline">Microsoft 365 compliance center</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) and Office 365 Security & Compliance Center PowerShell with improved performance and scalability, you should begin taking advantage of the improved cmdlets. These cmdlets include [<span class="underline">\*-ComplianceCase</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase?view=exchange-ps), [<span class="underline">\*-ComplianceSearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch?view=exchange-ps), [<span class="underline">\*-CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy?view=exchange-ps), [<span class="underline">\*-CaseHoldRule</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule?view=exchange-ps), and [<span class="underline">\*-ComplianceSearchAction</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction?view=exchange-ps).
+Because these capabilities are now available in the [<span class="underline">Microsoft 365 compliance center</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) and Office 365 Security & Compliance Center PowerShell with improved performance and scalability, you should using these improved cmdlets. These cmdlets include [<span class="underline">\*-ComplianceCase</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase), [<span class="underline">\*-ComplianceSearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch), [<span class="underline">\*-CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy), [<span class="underline">\*-CaseHoldRule</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule), and [<span class="underline">\*-ComplianceSearchAction</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction).
 
-See the following for guidance on how to use the new and improved capabilities.
+### Scope of affected organizations
+    
+- Office 365 and Microsoft 365 Enterprise organizations
 
-  - Scope
-    
-      - Multitenant
-    
-      - Go-Locals
-    
-      - ???
+- Office 365 and Microsoft 365 Education organizations
 
-  - Timeline
-    
-      - April 1, 2020: You won't be able to create new In-Place eDiscovery searches and In-Place Holds, but you can still run, edit, and delete existing searches and holds at your own risk. Microsoft Support will no longer support these types of searches and holds.
-    
-      - July 1, 2020: The In-Place eDiscovery & Hold functionality in the Exchange admin center will be placed in a read-only mode. This means you'll only be able to remove existing searches and holds.
+- Office 365 and Microsoft 365 Government organizations; this includes GCC, GCC High, and DoD
 
-  - Alternatives
+- Office 365 Germany
+
+### Timeline
+    
+- April 1, 2020: You won't be able to use **New-MailboxSearch** to create new In-Place eDiscovery searches and In-Place Holds, but you can still use cmdlets to run, edit, and delete existing searches and holds at your own risk. Microsoft Support will no longer provide assistance for these types of searches and holds.
+    
+- July 1, 2020: As previously stated, The In-Place eDiscovery & Holds functionality in the EAC will be placed in a read-only mode. That also means that you wont be able to use the **New-MailboxSearch**, **Start-MailboxSearch**, or **Set-MailboxSearch** cmdlets. You'll only be able to get and remove existing searches and holds.
+
+### Alternative tools
+
+The following table describes other tools that you can use to replace the existing functionality that's being retired.
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Original use</strong></th>
-<th><strong>Alternative</strong></th>
+<th><strong>Functionality</strong></th>
+<th><strong>Alternative tools</strong></th>
 <th><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Search and export</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase?view=exchange-ps"><span class="underline">*-ComplianceCase</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>ComplianceSearch and ComplianceSearchAction work in tandem to search and export data. You can create a search estimate with Start-ComplianceSearch and Get-ComplianceSearch and finally, export the data using New-ComplianceSearchAction. The final download of the data still requires a download tool to assemble final results in a useful format.</p>
-<p> </p>
-<p>NOTE: If you use these cmdlets without a case, they will show up in the Content Search tab in the Microsoft 365 compliance center.</p></td>
+<td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and export content. You can create a new search and view the search estimate by using the <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> cmdlets. Then you can use the <strong>New-ComplianceSearchAction</strong> cmdlet to export the search results. You'll still have to use the core eDiscovery tool in the Microsoft 365 compliance center to download those search results to your local computer.</p>
+<p>
+<p><strong>Note:</strong> If you use these cmdlets to create searches that aren't associated with a core eDiscovery case, these searches will be located on the <strong>Content search</strong> page in the Microsoft 365 compliance center.</p></td>
 </tr>
 <tr class="even">
 <td>Hold content in a mailbox</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy?view=exchange-ps"><span class="underline">*-CaseHoldPolicy</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule?view=exchange-ps"><span class="underline">*-CaseHoldRule</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase?view=exchange-ps"><span class="underline">*-ComplianceCase</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy"><span class="underline">*-CaseHoldPolicy</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule"><span class="underline">*-CaseHoldRule</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>Holds in the Microsoft Compliance Center must be associated with a ComplianceCase. First, create the compliance case, then CaseHoldPolicy and last, a CaseHoldRule.</p>
-<p><strong>Note:</strong> Creating a CaseHoldPolicy without a CaseHoldRule will render the hold inoperable until the CaseHoldRule is created and attached to the CaseHoldPolicy. See documentation for more details.</p></td>
+<td><p>Holds in the Microsoft 365 compliance center must be associated with a ComplianceCase. First, create the compliance case, and then create a CaseHoldPolicy and a CaseHoldRule.</p>
+<p><strong>Note:</strong> Creating a CaseHoldPolicy without a creating CaseHoldRule will render the hold inoperable until the CaseHoldRule is created and associated to the CaseHoldPolicy. See the cmdlet documentation for more information.</p></td>
 </tr>
 <tr class="odd">
 <td>Copy search results to a discovery mailbox</td>
 <td>None</td>
-<td>There is no direct replacement for this functionality because it does not provide access to all Microsoft 365 Services. See the corresponding FAQ for Exchange admin center eDiscovery &amp; In-Place Holds for alternatives.</td>
+<td>There's no direct replacement for this functionality because it does not provide access to all Microsoft 365 services. See the following FAQ below for for alternative solutions.</td>
 </tr>
 </tbody>
 </table>
 
-### FAQ
+### FAQs about ***-MailboxSearch** cmdlets
 
-**We used Copy Search to export Email or Instant Messages for purposes other than In-Place eDiscovery, what other options do I have?**
+**We use Copy Search to export email messages or instant Messages for purposes other eDiscovery and legal investigations. What other options do we have after these cmdlets are retired?**
 
-The [<span class="underline">Microsoft Graph APIs</span>](https://developer.microsoft.com/en-us/graph) provide a number of methods for extracting data for analysis and other purposes which are far more resilient and scalable than the **\*-MailboxSearch** cmdlets.
+The [<span class="underline">Microsoft Graph APIs</span>](https://developer.microsoft.com/en-us/graph) provide a number of methods for extracting data for analysis and other purposes that are far more resilient and scalable than the using the **\*-MailboxSearch** cmdlets.
 
-**How can I automate the transition of my searches and holds to the Microsoft 365 compliance center?**
+**How can I migrate my searches and holds to the Microsoft 365 compliance center?**
 
-It is possible to migrate searches and holds from the Exchange admin center In-Place eDiscovery & Holds using PowerShell, see this help topic to learn more - [<span class="underline">Automating migration of Searches & Holds from the Exchange admin center to the Microsoft 365 compliance center</span>](onenote:#Automating%20migration%20of%20Searches%20%20Holds%20from%20the%20Exchange%20Admin%20Center%20to%20the%20Microsoft%20365%20Compliance%20Center&section-id={AC50DB66-61C5-4D74-806C-39FF31F9201C}&page-id={84B2952C-5A28-4B7E-BE3A-C1705BDDCE89}&end&base-path=https://microsoft.sharepoint.com/teams/eDiscoveryvNext/SiteAssets/eDiscovery%20vNext%20Notebook/Marshal's%20Specs.one).
+It's possible to migrate In-Place eDiscovery searches and holds from the Exchange admin center by using a PowerShell script. For more information, see [Migrate legacy eDiscovery searches and holds to the Microsoft 365 compliance center](migrate-legacy-eDiscovery-searches-and-holds.md).
 
 **After the cmdlets are retired, will I still be able to remove or retrieve searches?**
 
-Yes, although we're removing the ability to create and modify searches, you will still be able to use Get-Mailbox search and Remove-Mailbox search until further notice. However, the use of these cmdlets will be at your own risk after the retirement dates and Microsoft support will no longer be able to provide assistance.
-
+Yes, although we're removing the ability to create and modify searches, you'll still be able to use **Get-MailboxSearch** and **Remove-MailboxSearch** until further notice. However, the use of these cmdlets will be at your own risk after the retirement dates and Microsoft Support will no longer be able to provide assistance.
 
 ## Search-Mailbox cmdlet
 
-Search-Mailbox is being retired as originally announced in a warning in the cmdlet output in 2018. Search-Mailbox was originally used to search a user's mailbox and purge malicious content. We recommend you transition your usage to the Microsoft Compliance Center \*-ComplianceSearch & \*-ComplianceSearchAction cmdlets. For a built in security experience, [<span class="underline">Microsoft 365 Security</span>](https://docs.microsoft.com/microsoft-365/security/) provides robust threat protection against email and many other Microsoft services. We are now completing this retirement, see the timeline and alternatives below.
+The **Search-Mailbox** cmdlet in Exchange Online PowerShell is being retired as originally announced in a warning in the cmdlet output starting back in 2018. The **Search-Mailbox** cmdlet was originally used to search a user's mailbox and purge malicious content. We recommend that you start using the **New-ComplianceSearch** and **New-ComplianceSearchAction** cmdlets in Office 365 Security & Compliance Center PowerShell to search for and purge content. For a built-in security experience, the [<span class="underline">Microsoft 365 security features</span>](https://docs.microsoft.com/microsoft-365/security/) provide robust threat protection for email and many other Microsoft services.
 
-  - Scope
-    
-      - Multitenant
-    
-      - Go-Locals
-    
-      - ???
+### Scope of affected organizations
 
-  - Timeline
-    
-      -  pril 1, 2020 - Search-Mailbox cmdlet will no longer be available and Microsoft Support will no longer provide assistance
+- Office 365 and Microsoft 365 Enterprise organizations
 
-  - Alternatives
+- Office 365 and Microsoft 365 Education organizations
+
+- Office 365 and Microsoft 365 Government organizations; this includes GCC, GCC High, and DoD
+
+- Office 365 Germany
+
+### Timeline
+    
+-  April 1, 2020: The **Search-Mailbox** cmdlet will no longer be available and Microsoft Support will no longer provide assistance.
+
+### Alternative tools
+
+The following table describes other tools that you can use to replace the existing functionality that's being retired.
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Original use</strong></th>
-<th><strong>Alternative</strong></th>
+<th><strong>Functionality</strong></th>
+<th><strong>Alternative tools</strong></th>
 <th><strong>Comments</strong></th>
 </tr>
 </thead>
@@ -244,69 +254,66 @@ Search-Mailbox is being retired as originally announced in a warning in the cmdl
 <td>Search a mailbox</td>
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase?view=exchange-ps"><span class="underline">*-ComplianceCase</span></a></p></td>
-<td><p>ComplianceSearch and ComplianceSearchAction cmdlets work together to search and export data. You can create a search estimate with Start-ComplianceSearch and Get-ComplianceSearch and finally, export the data using New-ComplianceSearchAction. The final download of the data still requires a download tool to assemble final results in a useful format.</p>
-<p> </p>
-<p>NOTE: If you use these cmdlets without a case, they will show up in the Content Search tab in the Microsoft 365 compliance center.</p></td>
+<p></a></p></td>
+<td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and export content. You can create a new search and view the search estimate by using the <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> cmdlets. Then you can use the <strong>New-ComplianceSearchAction -Export</strong> command to export the search results. You'll still have to use the core eDiscovery tool in the Microsoft 365 compliance center to download those search results to your local computer.</p></p>
+</td>
 </tr>
 <tr class="even">
 <td>Purge messages from a mailbox</td>
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase?view=exchange-ps"><span class="underline">*-ComplianceCase</span></a></p></td>
-<td><p>ComplianceSearch and ComplianceSearchAction work in tandem to search and purge data. You can create a search estimate with Start-ComplianceSearch and Get-ComplianceSearch and finally, purge the data using New-ComplianceSearchAction specifying the -Purge and -PurgeType parameters.</p>
-<p><strong>Note:</strong> If you use these cmdlets without a case, they will show up in the Content Search tab in the Microsoft 365 compliance center.</p></td>
+<p></p></td>
+<td><p>The ComplianceSearch and ComplianceSearchAction cmdlets work together to help you search and purge content. You can create and run a search with <strong>New-ComplianceSearch</strong> and <strong>New-ComplianceSearch</strong> cmdlets, and then you can purge the content by using <strong>New-ComplianceSearchAction -Purge and -PurgeType</strong> command.</p>
+</td>
 </tr>
 <tr class="odd">
 <td>Copy search results to a discovery mailbox</td>
 <td> </td>
-<td>There is no direct replacement for this functionality since it does not provide access to all Microsoft 365 Services. See the FAQ for Exchange admin center eDiscovery &amp; In-Place Holds for working with this case</td>
+<td>There's no direct replacement for this functionality because it does not provide access to all Microsoft 365 services. See the FAQs in the <strong>*-MailboxSearch cmdlets</strong> section for alternative solutions. </td>
 </tr>
 </tbody>
 </table>
 
-## GetSearchableMailboxes, SetHoldOnMailboxes, GetHoldOnMailboxes Operations in the EWS API
+## GetSearchableMailboxes, SetHoldOnMailboxes, and GetHoldOnMailboxes operations in the EWS API
 
-These three Exchange Web Services APIs are utilized by the Exchange admin center In-Place eDiscovery & Holds user interface and the corresponding **\*-MailboxSearch** cmdlets. They will also be retired as part of retiring the legacy eDiscovery tools.
+These three Exchange Web Services APIs are used by the In-Place eDiscovery & Holds feature in the Exchange admin center and the corresponding **\*-MailboxSearch** cmdlets in Exchange Online PowerShell. They will also be retired as part of retiring the other legacy eDiscovery tools.
 
-  - Scope
-    
-      - Multitenant
-    
-      - Go-Locals
-    
-      - ???
+### Scope of affected organizations
 
-  - Timeline
-    
-      - April 1, 2020 - GetSearchableMailboxes, SetHoldOnMailboxes, GetHoldOnMailboxes Operations will no longer be available, and Microsoft Support will no longer provide assistance.
+- Office 365 and Microsoft 365 Enterprise organizations
 
-  - Alternatives
+- Office 365 and Microsoft 365 Education organizations
 
- 
+- Office 365 and Microsoft 365 Government organizations; this includes GCC, GCC High, and DoD
+
+- Office 365 Germany
+
+### Timeline
+
+- April 1, 2020: The GetSearchableMailboxes, SetHoldOnMailboxes, and GetHoldOnMailboxes operations will no longer be available, and Microsoft Support will no longer provide assistance.
 
 ## Advanced eDiscovery v1.0
 
-Advanced eDiscovery v1.0, which is the version of Advanced eDiscovery available in an eDiscovery case by clicking **Switch to Advanced eDiscovery** is being retired in favor of the new [Advanced eDiscovery solution](https://aka.ms/edisco) in the Microsoft 365 compliance center.
+Advanced eDiscovery v1.0, which is the version of Advanced eDiscovery available in an eDiscovery case by clicking **Switch to Advanced eDiscovery** is being retired. Its functionality has been replaced by the the new [Advanced eDiscovery solution](https://aka.ms/edisco) in the Microsoft 365 compliance center.
 
-The new Advanced eDiscovery solution in Microsoft 365 provides all of the capabilities of the original solution, but now includes a custodian based approach to identifying data within the Microsoft Services, collecting that data and promoting it to a Review Set where reviewers can take advantage of lightning fast search, tagging, and analytics features to help cull relevant documents. Advanced eDiscovery now includes improved processing and native viewers for both Microsoft and non-Microsoft file types, a full list of file types is [here](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) and supported metadata fields are [here](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). Also, the new Advanced eDiscovery solution provides robust custodian holds management features to apply holds, notify users of the holds, and track responses right in the application.
+The new Advanced eDiscovery solution in Microsoft 365 (also known as *Advanced eDiscovery v2.0*) provides all of the capabilities of the original solution, but now includes a custodian-based approach of identifying content in other Microsoft 365 services, collecting that content, and then adding it to a review set where reviewers can take advantage of fast search queries, tagging, and analytics features to help cull relevant documents. Advanced eDiscovery now includes improved processing and native viewers for both Microsoft and non-Microsoft file types, a full list of file types is [here](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) and supported metadata fields are [here](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). Also, the new Advanced eDiscovery solution provide a powerful custodian holds management feature that lets you apply holds to content in different services, notify users of the holds, and track custodian responses, all within an Advanced eDiscovery case.
 
-At this time, we recommended that you begin to transition you eDiscovery workflow to the new Advanced eDiscovery functionality. Although you’ll still be able to access Advanced eDiscovery v1.0 in existing cases, Microsoft Support won’t provide support after July 1, 2020. See the following timeline for more details.
+At this time, we recommended that you begin to transition your eDiscovery workflow to the new Advanced eDiscovery functionality. Although you'll still be able to access Advanced eDiscovery v1.0 in existing cases, Microsoft Support won’t provide support after July 1, 2020. See the following timeline for more details.
 
-  - Scope
+### Scope of affected organizations
     
-      - Multitenant
-    
-      - Go-Locals
-    
-      - ???
+- Office 365 and Microsoft 365 Enterprise organizations
 
-  - Retirement timeline
-    
-      - April 1, 2020: You won't be able to create new Advanced eDiscovery cases.
-    
-      - July 1, 2020: Microsoft Support won’t provide support. Please see [this notice](https://go.microsoft.com/fwlink/?linkid=2113221). You won't be able to add new data (Prepare search results for Advanced eDiscovery) to any cases. You'll be able to continue working with data in existing cases at your own risk.
+- Office 365 and Microsoft 365 Education organizations
 
-  - Alternatives
+- Office 365 Germany
+
+### Timeline
     
-      [Microsoft 365 Advanced eDiscovery Solution](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20)
+- April 1, 2020: You won't be able to create new Advanced eDiscovery v1.0  cases.
+    
+- July 1, 2020: Microsoft Support won’t provide support. Please see [this notice](https://go.microsoft.com/fwlink/?linkid=2113221). You won't be able to add new data (Prepare search results for Advanced eDiscovery) to any cases. You'll be able to continue working with data in existing cases at your own risk.
+
+### Alternative tools
+    
+The [Advanced eDiscovery solution](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) in the Microsoft 365 compliance center.
