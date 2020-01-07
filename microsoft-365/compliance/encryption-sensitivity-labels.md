@@ -210,5 +210,5 @@ For example, users cannot view protected emails on mobile phones or with Outlook
 
 To ensure that Exchange can support these additional scenarios, see the following:
 
-- For Exchange Online, see the instructions for [Exchange Online: IRM Configuration](https://docs.microsoft.com/azure/information-protection/configure-office365#exchange-online-irm-configuration).
+- For Exchange Online, see the instructions for [Exchange Online: IRM Configuration](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
 - For Exchange on-premises, you must deploy the [RMS connector and configure your Exchange servers](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 
