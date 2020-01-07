@@ -91,7 +91,7 @@ Similar to other reports, like the [Threat Protection Status report](#threat-pro
   
 ## Top Malware report
 
-The **Top Malware** report shows the various kinds of malware that was detected by [Exchange Online](/security/office-365-security/eop-features.md). 
+The **Top Malware** report shows the various kinds of malware that was detected by [Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features). 
   
 To view this report, in the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **Top Malware**.
   
