@@ -52,7 +52,7 @@ To enable the attorney-client privilege detection model, your organization has t
 
 ### Step 1: Opt in to attorney-client privilege detection
 
-As previously stated, the attorney-client privilege detection model is in Preview. Therefore a person in your organization eDiscovery Administrator (a member of the eDiscovery Administrator subgroup in the eDiscovery Manager role group) must opt in to make the model available in your Advanced eDiscovery cases.
+A person who is an eDiscovery Administrator in your organization (a member of the eDiscovery Administrator subgroup in the eDiscovery Manager role group) must opt in to make the model available in your Advanced eDiscovery cases.
 
 1. In the Security & Compliance Center, go to **eDiscovery > Advanced eDiscovery**.
 
