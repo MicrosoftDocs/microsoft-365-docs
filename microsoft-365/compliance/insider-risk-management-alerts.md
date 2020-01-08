@@ -55,8 +55,8 @@ Depending on the number and type of active insider risk management policies in y
 To triage an insider risk alert, complete the following steps:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
-2. On the alerts dashboard, select the alert you want to triage.
-3. On the alerts detail pane, you can review the following tabs and triage the alert:
+2. On the Alerts dashboard, select the alert you want to triage.
+3. On the Alerts detail pane, you can review the following tabs and triage the alert:
     - **Overview**: This tab contains general information about the alert and allows you to confirm the alert and create a new case, or allows you to dismiss the alert as benign.
         - **Status**: The status of the alert
         - **Time detected**: The length of time since the alert was generated.
@@ -70,7 +70,7 @@ To triage an insider risk alert, complete the following steps:
 
 ## Search alerts
 
-To search the alert name for a specific word, select the **Search** control and type the word to search. The search will display any policy alert containing the word in the search.
+To search the alert name for a specific word, select the **Search** control and type the word to search. The search results display any policy alert containing the word defined in the search.
 
 ## Create a case for an alert
 

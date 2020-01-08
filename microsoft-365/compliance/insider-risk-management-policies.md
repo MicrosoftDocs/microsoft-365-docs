@@ -14,7 +14,7 @@ ms.collection: m365-security-compliance
 
 # Insider risk management policies (preview)
 
-Insider risk management policies determine which employees are monitored and which types of risk signals are configured for alerts. You can quickly create a policy that applies to all users in your organization, or define individual users or groups for management in a policy. Policies support content priorities to focus policy conditions on multiple or specific Microsoft Teams, SharePoint sites, data sensitivity types, and data labels. You can also choose specific alert signals and how much weight they are assigned within a policy, effectively determining the weight of each alert trigger in the policy. Policies windows allow you to define the time frame to apply the policy to alert activities and are used to determine the duration of the policy once activated. The maximum policy limit is five active policies at the same time. However, you can configure additional policies and activate and deactivate policies as needed.
+Insider risk management policies determine which employees are in-scope and which types of risk signals are configured for alerts. You can quickly create a policy that applies to all users in your organization, or define individual users or groups for management in a policy. Policies support content priorities to focus policy conditions on multiple or specific Microsoft Teams, SharePoint sites, data sensitivity types, and data labels. You can also choose specific alert signals and how much weight they are assigned within a policy, effectively determining the weight of each alert trigger in the policy. Policies windows allow you to define the time frame to apply the policy to alert activities and are used to determine the duration of the policy once activated. The maximum policy limit is five active policies at the same time. However, you can configure additional policies and activate and deactivate policies as needed.
 
 ## Policy dashboard
 
@@ -52,7 +52,7 @@ Complete the following steps to create a new policy:
     - **Name (required)**: Enter a friendly name for the policy
     - **Description (optional)**: Enter a description for the policy.
     - **Select template (required)**: Select one of the templates to define the types of signals monitored by the policy.
-4. On the **Users** page, select **Add user or group** to define which users are subject to the policy. Select **Next** to continue.
+4. On the **Users** page, select **Add user or group** to define which users or Azure Active Directory security and distribution groups are subject to the policy. Select **Next** to continue.
 5. On the **Content priority** page, assign the sources for user activities in one or more of the content sources and then select **Next**:
     - Microsoft Teams: Select **Add Teams group** and select the Microsoft Teams organization you want to prioritize. For example, *"group1@teams.com"*.
     - SharePoint sites: Select **Add SharePoint site** and select the SharePoint organization you want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.

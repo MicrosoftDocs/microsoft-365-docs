@@ -34,7 +34,7 @@ The case queue lists all active and closed cases for your organization, in addit
 - **Time case opened**: The time that has passed since the case was opened.
 - **Total policy violation alerts**: The number of policy matches included in the case. This number may increase if new alerts are added to the case.
 - **Last updated**: The time that has passed since there has been an added case note or change in the case state.
-- **Last updated by**: The name of the risk analyst or data investigator that last updated the case.
+- **Last updated by**: The name of the insider risk management analyst or investigator that last updated the case.
 
 Use the search control to search case names for specific text and use the case filter to sort cases by the following attributes:
 
@@ -78,7 +78,7 @@ Use the search control to search alert names for specific text and use the alert
 
 ### User activity
 
-The **User activity** tab is one of the most powerful tools for internal risk analysis and investigation for cases in the insider risk management solution. This tab is structured to enable quick review of a case, including a historical timeline of alerts, alerts details, the current risk score for the user in the case, and controls to take effective action to contain the risks in the case.
+The **User activity** tab is one of the most powerful tools for internal risk analysis and investigation for cases in the insider risk management solution. This tab is structured to enable quick review of a case, including a historical timeline of all alerts, all alerts details, the current risk score for the user in the case, and controls to take effective action to contain the risks in the case.
 
 ![Insider risk management user activity](media/insider-risk-temp-user-activities.png)
 
@@ -131,7 +131,7 @@ To add a contributor to a case:
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Cases** tab.
 2. Select a case, then select the **Contributors** tab.
 3. Select **Add contributor**.
-4. On the **Add contributor** dialog, start typing the name of the user you want to add and then select the user from the suggested user list. This list is generated from the Active Directory of your tenant subscription.
+4. On the **Add contributor** dialog, start typing the name of the user you want to add and then select the user from the suggested user list. This list is generated from the Azure Active Directory of your tenant subscription.
 5. On the **Add contributor** dialog, select the access level for the contributor. You can select **Permanent** or **Temporary**.
 6. Select **Add** to add the user as a contributor or select **Cancel** close the dialog without adding the user as a contributor.
 
@@ -194,4 +194,4 @@ To resolve a case:
 2. Select a case, then select the **Resolve case** button on the case action toolbar.
 3. On the **Resolve case** dialog, select the **Resolve as** dropdown control to select the resolution classification for the case. The options are **Benign** or **Confirmed policy violation**.
 4. On the **Resolve case** dialog, enter the reasons for the resolution classification in the **Action taken** text field.
-5. Select **REsolve** to close the case or select **Cancel** close the dialog without resolving the case.
+5. Select **Resolve** to close the case or select **Cancel** close the dialog without resolving the case.

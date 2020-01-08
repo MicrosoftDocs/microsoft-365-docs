@@ -29,7 +29,7 @@ Managing and minimizing risk in your organization starts with understanding the 
 
 Employees in the modern workplace have access to create, manage, and share data across a broad spectrum of platforms and services. In most cases, organizations have limited resources and tools to identify and mitigate organization-wide risks while also meeting employee privacy standards.
 
-Insider risk management in Microsoft 365 uses the full breadth of service and 3rd-party signals to help you quickly identify, triage, and remediate risks. By using logs from Office 365 and Azure services, insider risk management allows you to define specific policies to monitor for risk signals. These policies allow you to take action to remediate the associated risk from these activities.
+Insider risk management in Microsoft 365 uses the full breadth of service and 3rd-party signals to help you quickly identify, triage, and take action on risk activity. By using logs from Office 365 and Microsoft Graph, insider risk management allows you to define specific policies to monitor for risk signals. These policies allow you to identify risk activities and to take action to mitigate these risks.
 
 Insider risk management is centered around the following principles:
 
@@ -112,7 +112,7 @@ Insider risk management can help you detect, investigate, and take action to mit
 
 ### Data theft by departing employee
 
-When employees leave an organization, either voluntarily or as the result of termination, there is often legitimate concerns that intellectual property (IP) is at risk. Employees may innocently assume that project data isn't proprietary or they may be tempted to take company data for personal gain and in violation of company policy and legal standards. Insider risk management policies that use the [Departing employee data theft policy template](insider-risk-management-policies.md#policy-templates) automatically detect activities typically associated with this type of theft. With this policy, you'll automatically receive alerts for suspicious activities associated with departing employees theft so you can take appropriate investigative and remediation actions.
+When employees leave an organization, either voluntarily or as the result of termination, there is often legitimate concerns that company, customer, and employee data is at risk. Employees may innocently assume that project data isn't proprietary or they may be tempted to take company data for personal gain and in violation of company policy and legal standards. Insider risk management policies that use the [Departing employee data theft policy template](insider-risk-management-policies.md#policy-templates) automatically detect activities typically associated with this type of theft. With this policy, you'll automatically receive alerts for suspicious activities associated with departing employees theft so you can take appropriate investigative and remediation actions.
 
 ### Intentional or unintentional leak of sensitive or confidential information
 

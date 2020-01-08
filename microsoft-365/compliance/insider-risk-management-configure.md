@@ -14,7 +14,7 @@ ms.collection: m365-security-compliance
 
 # Get started with insider risk management (preview)
 
-Use insider risk management policies to monitor employee activities and to remediate risk alerts in your organization. For more information about how Insider Risk policies can help you manage risk in your organization, see [Insider risk management in Microsoft 365](insider-risk-management.md).
+Use insider risk management policies to monitor employee activities and to take action on risk alerts in your organization. For more information about how Insider Risk policies can help you manage risk in your organization, see [Insider risk management in Microsoft 365](insider-risk-management.md).
 
 ## Before you begin
 
