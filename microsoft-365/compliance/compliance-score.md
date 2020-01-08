@@ -20,7 +20,7 @@ Microsoft Compliance Score helps to simplify the way you manage compliance and r
 
 **In this article:** Read this article to understand what Compliance Score is, how it can help you manage compliance for your organization, and where to begin setting it up for your organization.
 
-**Learn about recent updates:** Go to the [Compliance Score release notes](compliance-score-release-notes.md) to see what's new and understand known issues with the preview version of Compliance Score.
+**Learn about updates:** Go to the [Compliance Score release notes](compliance-score-release-notes.md) to see what's new and known issues with the preview version of Compliance Score.
 
 ## What is Compliance Score
 
