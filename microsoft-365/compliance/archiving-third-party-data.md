@@ -30,7 +30,7 @@ Microsoft 365 lets administrators import and archive third-party data from socia
     
 - **SMS/text messaging:** BlackBerry 
     
-After third-party data is imported, you can apply Microsoft 365 compliance features&mdash;such as Litigation Hold, eDiscovery, In-Place Archiving, Auditing, [Communication compliance](communication-compliance.md), and Microsoft 365 retention policies&mdash;to this data. For example, when a mailbox is placed on Litigation Hold, third-party data is preserved. You can search third-party data by using Microsoft eDiscovery tools. Or you can apply archiving and retention policies to third-party data just like you can for Microsoft data. In short, archiving third-party data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+After third-party data is imported, you can apply Microsoft 365 compliance features&mdash;such as Litigation Hold, eDiscovery, In-Place Archiving, Auditing, Communication compliance, and Microsoft 365 retention policies&mdash;to this data. For example, when a mailbox is placed on Litigation Hold, third-party data is preserved. You can search third-party data by using Microsoft eDiscovery tools. Or you can apply archiving and retention policies to third-party data just like you can for Microsoft data. In short, archiving third-party data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 There are two ways to import and archive third-party data in Microsoft 365:
 
