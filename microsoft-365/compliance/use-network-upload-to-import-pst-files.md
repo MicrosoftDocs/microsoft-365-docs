@@ -25,7 +25,7 @@ description: "For administrators: Learn how to use network upload to bulk-import
   
 Here are the step-by-step instructions required to use network upload to bulk-import multiple PST files to Office 365 mailboxes. For frequently asked questions about using network upload to bulk-import PST files to Office 365 mailboxes, see [FAQs for using network upload to import PST files](faqimporting-pst-files-to-office-365.md#using-network-upload-to-import-pst-files).
   
-[Step 1: Copy the SAS URL and install AzCopy](#step-1-copy-the-sas-url-and-install-azure-azcopy)
+[Step 1: Copy the SAS URL and install AzCopy](#step-1-copy-the-sas-url-and-install-azcopy)
 
 [Step 2: Upload your PST files to Office 365](#step-2-upload-your-pst-files-to-office-365)
 
