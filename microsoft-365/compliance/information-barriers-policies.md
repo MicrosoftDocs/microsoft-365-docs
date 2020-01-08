@@ -46,7 +46,7 @@ When you define policies for information barriers, you'll work with user account
 |[Part 1: Segment users in your organization](#part-1-segment-users)     |- Determine what policies are needed<br/>- Make a list of segments to define<br/>- Identify which attributes to use<br/>- Define segments in terms of policy filters        |
 |[Part 2: Define information barrier policies](#part-2-define-information-barrier-policies)     |- Define your policies (do not apply yet)<br/>- Choose from two kinds (block or allow) |
 |[Part 3: Apply information barrier policies](#part-3-apply-information-barrier-policies)     |- Set policies to active status<br/>- Run the policy application<br/>- View policy status         |
-|(As needed) [Edit a segment or a policy](information-barriers-edit-segments-policies.md.md)    |- Edit a segment<br/>- Edit or remove a policy<br/>- Rerun the policy application<br/>- View policy status         |
+|(As needed) [Edit a segment or a policy](information-barriers-edit-segments-policies.md)    |- Edit a segment<br/>- Edit or remove a policy<br/>- Rerun the policy application<br/>- View policy status         |
 |(As needed) [Troubleshooting](information-barriers-troubleshooting.md)|- Take action when things are not working as expected|
 
 ## Prerequisites
@@ -255,11 +255,11 @@ Resources are available to help you manage your information barrier policies.
 
 - If something goes wrong with information barriers, see [Troubleshooting information barriers](information-barriers-troubleshooting.md).
 
-- To stop policies from being applied, see [Stop a policy application](information-barriers-edit-segments-policies.md.md#stop-a-policy-application).
+- To stop policies from being applied, see [Stop a policy application](information-barriers-edit-segments-policies.md#stop-a-policy-application).
 
-- To remove an information barrier policy, see [Remove a policy](information-barriers-edit-segments-policies.md.md#remove-a-policy).
+- To remove an information barrier policy, see [Remove a policy](information-barriers-edit-segments-policies.md#remove-a-policy).
 
-- To make changes to segments or policies, see [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md.md).
+- To make changes to segments or policies, see [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md).
 
 ## Example: Contoso's departments, segments, and policies
 
