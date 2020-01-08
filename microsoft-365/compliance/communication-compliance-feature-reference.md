@@ -24,8 +24,8 @@ search.appverid:
 
 You create communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. If you have an Office 365 organization, you'll [configure Supervision policies](configure-supervision-policies.md) in the Office 365 Security & Compliance Center. Communication compliance policies define which communications and users are subject to review in your organization, define which custom conditions the communications must meet, and specify who should do reviews. Users included in the **Supervisory Review Administrator** role group can set up policies, and anyone who has this role assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv file that also includes the status of alerts pending review, escalated items, and resolved items. Policies can't be renamed and can be deleted when no longer needed.
 
-> [!NOTE]
-> Supervision policies created in the Office 365 security and compliance center for Office 365 subscriptions cannot migrate to Microsoft 365. If you're migrating from an Office 365 subscription to a Microsoft 365 subscription, you'll need to create new communication compliance polices to replace existing Supervision policies.
+>[!NOTE]
+>Supervision policies created in the Office 365 security and compliance center for Office 365 subscriptions cannot migrate to Microsoft 365. If you're migrating from an Office 365 subscription to a Microsoft 365 subscription, you'll need to create new communication compliance polices to replace existing Supervision policies.
 
 ## Policy templates
 
@@ -41,8 +41,8 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 
 Before you start using communication compliance, you must determine who needs their communications reviewed. In the policy, user email addresses identify individuals or groups of people to supervise. Some examples of these groups are Office 365 Groups, Exchange-based distribution lists, and Microsoft Teams channels. You also can exclude specific users or groups from scanning with a specific exclusion group or a list of groups.
 
-> [!IMPORTANT]
-> Users covered by communication compliance policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.If you don't have an existing Enterprise E5 plan and want to try communication compliance, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>[!IMPORTANT]
+>Users covered by communication compliance policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.If you don't have an existing Enterprise E5 plan and want to try communication compliance, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## Reviewers
 
@@ -193,8 +193,8 @@ If you'd like to create more than a simple text-based email message for notifica
 </html>
 ```
 
-> [!NOTE]
-> HTML href attribute implementation in the communication compliance notification templates currently support only single quotation marks instead of double quotation marks for URL references.
+>[!NOTE]
+>HTML href attribute implementation in the communication compliance notification templates currently support only single quotation marks instead of double quotation marks for URL references.
 
 ## Filters
 
@@ -227,8 +227,8 @@ For communication compliance policies, the following alert policy values are con
 | Threshold | 4 activities |
 | Window | 60 minutes |
 
-> [!Note]
-> The alert policy threshold trigger settings for activities supports a minimum value of 3 or higher for communication compliance policies.
+>[!Note]
+>The alert policy threshold trigger settings for activities supports a minimum value of 3 or higher for communication compliance policies.
 
 You can change the default settings for triggers on number of activities, period for the activities, and for specific users in alert policies on the **Alert policies** page in the Office 365 Security & Compliance Center.
 
@@ -254,8 +254,8 @@ If you'd like to change the severity level assigned in an alert policy for a spe
 
 In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
 
-> [!Important]
-> Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable auditing for your communication compliance policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
+>[!Important]
+>Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable auditing for your communication compliance policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
 
 To view communication compliance policy activities, select the **Export review activities** control on the main page for any policy. This generates an audit file in the .csv format that contains the following information:
 
