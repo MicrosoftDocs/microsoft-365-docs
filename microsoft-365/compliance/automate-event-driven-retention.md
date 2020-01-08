@@ -1,7 +1,7 @@
 ---
 title: "Automate event-driven retention"
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article

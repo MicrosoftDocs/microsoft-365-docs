@@ -88,11 +88,7 @@ A. Yes, you may configure another spam and malware filtering service to protect 
 
  **Q. Does Microsoft have any documentation about how I can protect myself from phishing scams?**
 
-A. Yes we do, please consult the following articles:
-
-[Get help with phishing scams, lottery fraud, and other types of scams](https://go.microsoft.com/fwlink/p/?LinkId=325606)
-
-[Email and web scams: How to help protect yourself](https://go.microsoft.com/fwlink/p/?LinkID=325607)
+A. Yes we do, please read [Protect your privacy on the internet](https://support.microsoft.com/help/4091455)
 
  **Q. Are spam and malware messages being investigated as to who sent them, or being transferred to law enforcement entities?**
 
@@ -120,7 +116,7 @@ A. The guidelines presented below are best practices for sending outbound email 
 
     [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-    [Domains FAQ](/office365/admin/setup/domains-faq)
+    [Domains FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 5. **Signing email with DKIM, sign with relaxed canonicalization.**
 
@@ -154,25 +150,25 @@ A. The guidelines presented below are best practices for sending outbound email 
 
     Double opt-in is the practice of requiring a user to take two actions to sign up for marketing mail:
 
-1. Once when the user clicks on a previously unchecked check box where they opt-in to receive further offers or email messages from the marketer.
+   1. Once when the user clicks on a previously unchecked check box where they opt-in to receive further offers or email messages from the marketer.
 
-2. A second time when the marketer sends a confirmation email to the user's provided email address asking them to click on a time-sensitive link that will complete their confirmation.
+   2. A second time when the marketer sends a confirmation email to the user's provided email address asking them to click on a time-sensitive link that will complete their confirmation.
 
-    Using double opt-in builds a good reputation for bulk email senders.
+      Using double opt-in builds a good reputation for bulk email senders.
 
 10. **Bulk senders should create transparent content for which they can be held accountable:**
 
-1. Verbiage requesting that recipients add the sender to the address book should clearly state that such action is not a guarantee of delivery.
+    1. Verbiage requesting that recipients add the sender to the address book should clearly state that such action is not a guarantee of delivery.
 
-2. When constructing redirects in the body of the message, use a consistent link style.
+    2. When constructing redirects in the body of the message, use a consistent link style.
 
-3. Don't send large images or attachments, or messages that are solely composed of an image.
+    3. Don't send large images or attachments, or messages that are solely composed of an image.
 
-4. When employing tracking pixels (web bugs or beacons), clearly state their presence in your public privacy or P3P settings.
+    4. When employing tracking pixels (web bugs or beacons), clearly state their presence in your public privacy or P3P settings.
 
 11. **Format outbound delivery status notifications.**
 
-    When generating delivery status notification messages, senders should follow the format of a bounce as specified in [RFC 3464](https://go.microsoft.com/fwlink/?LinkId=279715).
+    When generating delivery status notification messages, senders should follow the format of a bounce as specified in [RFC 3464](https://www.ietf.org/rfc/rfc3464.txt).
 
 12. **Remove bounced email addresses for non-existent users.**
 
@@ -184,12 +180,10 @@ A. The guidelines presented below are best practices for sending outbound email 
 
 ## For more information
 
-[Office 365 Email Anti-Spam Protection](https://support.office.com/article/6a601501-a6a8-4559-b2e7-56b59c96a586)
+[Office 365 email anti-spam protection](anti-spam-protection.md)
 
 [Safe sender and blocked sender lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
 
 [Anti-spam message headers](anti-spam-message-headers.md)
 
 [Backscatter messages and EOP](backscatter-messages-and-eop.md)
-
-

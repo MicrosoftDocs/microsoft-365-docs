@@ -1,7 +1,8 @@
 ---
-title: "Microsoft recommendations for EOP and Office 365 ATP security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, etc"
+title: "Microsoft recommendations for EOP and Office 365 ATP security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for ATP, setup ATP, setup EOP, configure ATP, configure EOP, security configuration"
 ms.author: tracyp
 author: MSFTTracyP
+ms.date: 12/12/2019
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -26,6 +27,9 @@ Although we empower security administrators to customize their security settings
 
 This topic describes these Microsoft-recommended settings to help protect your Office 365 users.
 
+> [!TIP]
+> There is a new PowerShell Module that you can download called the Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) that helps determine some of these settings. When run as an admin in your tenant, Get-ORCAReport will help generate an assessment of the anti-spam, anti-phish, and other message hygiene settings. You can download this module at https://www.powershellgallery.com/packages/ORCA/.
+
 ## Anti-spam, anti-malware, and anti-phishing protection in EOP
 
 Anti-spam, anti-malware, and anti-phishing are features of EOP that can be configured by admins. We recommend the following configurations.
@@ -39,7 +43,7 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 |Phishing email detection action|Quarantine message|Quarantine message||
 |High confidence Phish email detection action|Quarantine message|Quarantine message||
 |Bulk email detection action|Move message to Junk Email folder|Quarantine message||
-|Set Bulk email threshold to|6|4|The default value is currently 7, but we recommend that you change it to 6. For details, see [Bulk Complaint Level values](https://docs.microsoft.com/microsoft-365/security/office-365-security/bulk-complaint-level-values).|
+|Set Bulk email threshold to|6|4|The default value is currently 7, but we recommend that you change it to 6. For details, see [Bulk Complaint Level values](bulk-complaint-level-values.md).|
 |Quarantine retention period|30 days|30 days||
 |Safety tips|On|On||
 |Allowed Senders|None|None||
@@ -52,31 +56,31 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 
 There are several other parameters in the Anti-spam policy called Advanced Spam filter that are being deprecated at the time of this writing. Our recommended settings for these are to turn them **OFF** for both Standard and Strict levels:
 
-|Security feature name|
-|---------|
-|IncreaseScoreWithImageLinks|
-|IncreaseScoreWithNumericIps|
-|IncreaseScoreWithRedirectToOtherPort|
-|IncreaseScoreWithBizOrInfoUrls|
-|MarkAsSpamEmptyMessages|
-|MarkAsSpamJavaScriptInHtml|
-|MarkAsSpamFramesInHtml|
-|MarkAsSpamObjectTagsInHtml|
-|MarkAsSpamEmbedTagsInHtml|
-|MarkAsSpamFormTagsInHtml|
-|MarkAsSpamWebBugsInHtml|
-|MarkAsSpamSensitiveWordList|
-|MarkAsSpamFromAddressAuthFail|
-|MarkAsSpamNdrBackscatter|
-|MarkAsSpamSpfRecordHardFail|
+|Security feature name| Comments |
+|---------|---------|
+|IncreaseScoreWithImageLinks| |
+|IncreaseScoreWithNumericIps| |
+|IncreaseScoreWithRedirectToOtherPort| |
+|IncreaseScoreWithBizOrInfoUrls| |
+|MarkAsSpamEmptyMessages| |
+|MarkAsSpamJavaScriptInHtml| |
+|MarkAsSpamFramesInHtml| |
+|MarkAsSpamObjectTagsInHtml| |
+|MarkAsSpamEmbedTagsInHtml| |
+|MarkAsSpamFormTagsInHtml| |
+|MarkAsSpamWebBugsInHtml| |
+|MarkAsSpamSensitiveWordList| |
+|MarkAsSpamFromAddressAuthFail| |
+|MarkAsSpamNdrBackscatter| |
+|MarkAsSpamSpfRecordHardFail| |
 
 #### EOP outbound spam filter policy settings
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|Outbound spam policy Recipient Limits - External hourly limit|500|400||
-|Outbound spam policy Recipient Limits - Internal hourly limit|1000|800||
-|Outbound spam policy Recipient Limits - Daily limit|1000|800||
+|Outbound spam policy Recipient Limits - External hourly limit|400|500||
+|Outbound spam policy Recipient Limits - Internal hourly limit|800|1000||
+|Outbound spam policy Recipient Limits - Daily limit|800|1000||
 |Action when a user exceeds the limits|Restrict the user from sending mail|Restrict the user from sending mail||
 
 ### EOP anti-malware policy settings
@@ -146,8 +150,8 @@ EOP customers get basic anti-phishing as previously described, but Office 365 AT
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |Use ATP Safe Links in Office 365 Apps, Office for iOS and Android|Enabled|Enabled|This falls under the ATP Safe Links Policies that apply to the entire organization|
-Do not track when users click safe links|Disabled|Disabled|This falls under the ATP Safe Links Policies that apply to the entire organization|
-|Do not let users click through safe links to original URL|Enabled|Enabled|This falls under the ATP Safe Links Policies that apply to the entire organization|
+Do not track when users click safe links|Disabled|Disabled|This is for both policies that apply to the entire organization and any policies that apply to specific recipients|
+|Do not let users click through safe links to original URL|Enabled|Enabled|This is for both the policies that apply to the entire organization and any policies that apply to specific recipients|
 |Action for unknown potentially malicious URLs in messages|On|On||
 |Apply real-time URL scanning for suspicious links and links that point to files|Enabled|Enabled||
 |Wait for URL scanning to complete before delivering the message|Enabled|Enabled||
@@ -161,3 +165,14 @@ Do not track when users click safe links|Disabled|Disabled|This falls under the 
 |ATP Safe attachments unknown malware response|Block|Block||
 |Redirect attachment on detection|Enabled|Enabled|Redirect to email address for a security administrator that knows how to determine if the attachment is malware or not|
 |ATP Safe attachments response if malware scanning for attachments times out or error occurs|Enabled|Enabled||
+
+
+## Related topics
+
+- Are you looking for best practices with **Exchange Mail Flow / Exchange Transport Rules**? Please see [this article](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) for details.
+
+- Send suspicious mails, suspected spam, phish, or URLs to Microsoft for scan. Use the **Admin Submissions** directions in [this article](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
+
+- Use these links for info on how to **set up** your [EOP service](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service), and **configure** [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). (Don't forget to see the helpful directions in '[Protect Against Threats in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)'.)
+
+- **Security baselines for Windows** can be found [here](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) for GPO/on-premises options, and for Intune-based security, [here](https://docs.microsoft.com/intune/protect/security-baselines). Finally, a comparison between Microsoft Defender Advanced Threat Protection (ATP) and Windows Intune security baselines can be found [here](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines).

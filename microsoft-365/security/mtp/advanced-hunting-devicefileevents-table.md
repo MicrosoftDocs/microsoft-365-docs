@@ -1,7 +1,7 @@
 ---
-title: FileCreationEvents table in the advanced hunting schema
-description: Learn about file-related events in the FileCreationEvents table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, filecreationevents, files, path, hash, sha1, sha256, md5
+title: DeviceFileEvents table in the advanced hunting schema
+description: Learn about file-related events in the DeviceFileEvents table of the advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, filecreationevents, DeviceFileEvents, files, path, hash, sha1, sha256, md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,22 +17,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# FileCreationEvents
+# DeviceFileEvents
 
 **Applies to:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-The `FileCreationEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about file creation, modification, and other file system events. Use this reference to construct queries that return information from this table.
+The `DeviceFileEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about file creation, modification, and other file system events. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `EventTime` | datetime | Date and time when the event was recorded |
-| `MachineId` | string | Unique identifier for the machine in the service |
-| `ComputerName` | string | Fully qualified domain name (FQDN) of the machine |
+| `Timestamp` | datetime | Date and time when the event was recorded |
+| `DeviceId` | string | Unique identifier for the machine in the service |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
 | `ActionType` | string | Type of activity that triggered the event |
 | `FileName` | string | Name of the file that the recorded action was applied to |
 | `FolderPath` | string | Folder containing the file that the recorded action was applied to |
@@ -57,7 +57,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessParentId` | int | Process ID (PID) of the parent process that spawned the process responsible for the event |
 | `InitiatingProcessParentFileName` | string | Name of the parent process that spawned the process responsible for the event |
 | `InitiatingProcessParentCreationTime` | datetime | Date and time when the parent of the process responsible for the event was started |
-| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns |
+| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | `SensitivityLabel` | string | Label applied to an email, file, or other content to classify it for information protection |
 | `SensitivitySubLabel` | string | Sublabel applied to an email, file, or other content to classify it for information protection; sensitivity sublabels are grouped under sensitivity labels but are treated independently |

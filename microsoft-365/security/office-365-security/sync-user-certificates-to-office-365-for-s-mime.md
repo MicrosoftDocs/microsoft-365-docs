@@ -22,7 +22,7 @@ Before anyone can send S/MIME-protected messages in Exchange Online, the appropr
 
 Begin setting up S/MIME by issuing certificates and publishing them in your local Active Directory Domain Service. For more information, see [Active Directory Certificate Services Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831740(v=ws.11)).
 
-After your certificates are published, use the Azure Active Directory Sync tool to synchronize user data from your on-premises Exchange environment to Office 365. For more information on this process, see [DirSync: Directory Sync Tool Version Release History](https://go.microsoft.com/fwlink/p/?LinkId=392587).
+After your certificates are published, use the Azure AD Connect tool to synchronize user data from your on-premises Exchange environment to Office 365. For more information on this process, see [Azure AD Connect sync: Understand and customize synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
 
 Along with synchronizing other directory data, for S/MIME purposes, the tool will synchronize the  **userCertificate** and **userSMIMECertificate** attributes for each user object so the data can be used to sign and encrypt messages.
 
@@ -30,4 +30,4 @@ Along with synchronizing other directory data, for S/MIME purposes, the tool wil
 
 [S/MIME for message signing and encryption](s-mime-for-message-signing-and-encryption.md)
 
-[Azure Active Directory Sync tool](https://go.microsoft.com/fwlink/p/?LinkId=392587)
+[What is Azure AD Connect?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect)

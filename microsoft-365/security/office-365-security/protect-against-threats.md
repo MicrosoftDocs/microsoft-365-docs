@@ -8,18 +8,18 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.date: 05/09/2019
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 description: "Use this article as a guide to configure your threat protection features now."
 ---
 
 # Protect against threats in Office 365
 
-Office 365 includes a variety of threat protection features. Here's a quick-start guide you can use as a checklist to make sure your threat protection features are set up for your organization. If you're new to threat protection features in Office 365, or you're just not sure where to begin, use the following guidance as a starting point. 
+Office 365 includes a variety of threat protection features. Here's a quick-start guide you can use as a checklist to make sure your threat protection features are set up for your organization. If you're new to threat protection features in Office 365, or you're just not sure where to begin, use the following guidance as a starting point.
 
 > [!IMPORTANT]
 > **Initial recommended settings are included for each kind of policy; however, many options are available, and you can adjust your settings to meet your specific organization's needs**. Allow approximately 30 minutes for your policies or changes to work their way through your datacenter.
@@ -42,7 +42,7 @@ Threat protection features are included in all Office 365 subscriptions; however
 
 ### Roles and permissions
 
-You must be assigned an appropriate role to configure policies in the [Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). The following table includes some examples: 
+You must be assigned an appropriate role to configure policies in the [Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). The following table includes some examples:
 
 |Role or role group|Where to learn more|
 |---------|---------|
@@ -54,7 +54,7 @@ To learn more, see [Permissions in the Office 365 Security &amp; Compliance Cent
 
 ## Part 1 - Anti-malware protection
 
-[Anti-malware protection](anti-malware-protection.md) is available in subscriptions that include [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description). 
+[Anti-malware protection](anti-malware-protection.md) is available in subscriptions that include [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description).
 
 1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** > **Policy** > **Anti-malware**.
 
@@ -76,7 +76,7 @@ Time-of-click protection from malicious URLs and files is available in subscript
 
 ### ATP Safe Attachments policies
 
-To set up [ATP Safe Attachments](atp-safe-attachments.md), you must define at least one ATP Safe Attachments policy. 
+To set up [ATP Safe Attachments](atp-safe-attachments.md), you must define at least one ATP Safe Attachments policy.
 
 1. In the [Security & Compliance Center](https://protection.office.com), choose **Threat management** > **Policy** > **ATP safe attachments**.
 
@@ -86,17 +86,17 @@ To set up [ATP Safe Attachments](atp-safe-attachments.md), you must define at le
 
 4. Specify the following settings:
 
-    - In the **Name** box, type `Block malware`.
+   - In the **Name** box, type `Block malware`.
 
-    - In the response section, choose **Block**.
+   - In the response section, choose **Block**.
 
-    - In the **Redirect attachment** section, select the option **Enable redirect**, and then specify the email address for your organization's security administrator or operator who will review detected files.
+   - In the **Redirect attachment** section, select the option **Enable redirect**, and then specify the email address for your organization's security administrator or operator who will review detected files.
 
-    - In the **Applied to** section, choose **The recipient domain is**. Then, select your domain, choose **Add**, and then click **OK**.
+   - In the **Applied to** section, choose **The recipient domain is**. Then, select your domain, choose **Add**, and then click **OK**.
 
 5. Click **Save**.
 
-6. (**Recommended additional step**) As a global administrator or a SharePoint Online administrator run the **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** cmdlet with the **DisallowInfectedFileDownload** parameter set to  *true* for your Office 365 environment. (This prevents people from opening, moving, copying, or sharing files that are detected as malicious.)  
+6. (**Recommended additional step**) As a global administrator or a SharePoint Online administrator run the **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the **DisallowInfectedFileDownload** parameter set to  *true* for your Office 365 environment. (This prevents people from opening, moving, copying, or sharing files that are detected as malicious.)
 
 To learn more, see [Set up Office 365 ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md) and [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
@@ -114,23 +114,23 @@ To set up [ATP Safe Links](atp-safe-links.md), review and edit your default poli
 
 5. Specify the following settings:
 
-    - In the **Name** box, type a name, such as `Safe Links`.
+   - In the **Name** box, type a name, such as `Safe Links`.
 
-    - In the **Select the action** section, choose **On**.
+   - In the **Select the action** section, choose **On**.
 
-    - Select these options:
+   - Select these options:
 
-        - **Use safe attachments to scan downloadable content** 
+     - **Use safe attachments to scan downloadable content**
 
-        - **Apply safe links to email messages sent within the organization**
+     - **Apply safe links to email messages sent within the organization**
 
-        - **Do not let users click through safe links to original URL**
+     - **Do not let users click through safe links to original URL**
 
-    - In the **Applied to** section, choose **The recipient domain is**. Then, select your domain, choose **Add**, and then click **OK**.
+   - In the **Applied to** section, choose **The recipient domain is**. Then, select your domain, choose **Add**, and then click **OK**.
 
 6. Click **Save**.
 
-To learn more, see [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-links-policies.md). 
+To learn more, see [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-links-policies.md).
 
 ## Part 3 - Anti-phishing protection
 
@@ -142,23 +142,25 @@ To learn more, see [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-l
 
 3. In the **Impersonation** section, click **Edit**, and then specify the following settings:
 
-    - On the **Add users to protect** tab, turn protection on. Then add users, such as your organization's board members, your CEO, CFO, and other senior leaders. (You can type an individual email address, or click to display a list.)
+   - On the **Add users to protect** tab, turn protection on. Then add users, such as your organization's board members, your CEO, CFO, and other senior leaders. (You can type an individual email address, or click to display a list.)
 
-    - On the **Add domains to protect** tab, turn on **Automatically include the domains I own**. If you have custom domains, add those as well.
+   - On the **Add domains to protect** tab, turn on **Automatically include the domains I own**. If you have custom domains, add those as well.
 
-    - On the **Actions** tab, select **Move message to the recipients' Junk Email folders** for both impersonated user and impersonated domain, and turn on safety tips.
+   - On the **Actions** tab, select **Quarantine the message** for both the **impersonated user** and **impersonated domain** options. In addition, turn on impersonation safety tips.
 
-    - On the **Mailbox intelligence** tab, make sure mailbox intelligence is turned on.
+   - On the **Mailbox intelligence** tab, make sure mailbox intelligence is turned on. In addition, turn on mailbox intelligence based impersonation protection. In the **If email is sent by an impersonated user** list, choose **Quarantine the message**.
 
-    - On the **Review your settings** tab, after you have reviewed your settings, click **Save**.
+   - On the **Add trusted senders and domains** tab, specify any trusted senders or domains that you want to add.
+
+   - On the **Review your settings** tab, after you have reviewed your settings, click **Save**.
 
 4. In the **Spoof** section, click **Edit**, and then specify the following settings:
 
-    - On the **Spoofing filter settings** tab, make sure anti-spoofing protection is turned on.
+   - On the **Spoofing filter settings** tab, make sure anti-spoofing protection is turned on.
 
-    - On the **Actions** tab, choose Move message to the recipients' Junk Email folders.
+   - On the **Actions** tab, choose **Quarantine the message**.
 
-    - On the **Review your settings** tab, after you have reviewed your settings, click **Save**. (If you didn't make any changes, click **Cancel**.)
+   - On the **Review your settings** tab, after you have reviewed your settings, click **Save**. (If you didn't make any changes, click **Cancel**.)
 
 5. Close the default policy settings page.
 
@@ -174,9 +176,9 @@ To learn more about your anti-phishing policy options, see [Set up anti-phishing
 
 3. Expand **Default spam filter policy**, click **Edit policy**, and then specify the following settings:
 
-    - In the **Spam and bulk actions** section, set the threshold to a value of 5 or 6.
+   - In the **Spam and bulk actions** section, set the threshold to a value of 5 or 6.
 
-    - In the **Allow lists** section, review (and if necessary, edit) your allowed senders and domains.
+   - In the **Allow lists** section, review (and if necessary, edit) your allowed senders and domains.
 
 4. Click **Save**.
 

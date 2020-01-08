@@ -1,5 +1,5 @@
 ---
-title: "Use a sample connector to archive Twitter data in Office 365 (Preview)"
+title: "Use a sample connector to archive Twitter data (Preview)"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,7 +12,7 @@ ms.collection: M365-security-compliance
 description: "Administrators can set up a native connector to import Twitter data into Office 365. This lets you archive data from third-party data sources in Office 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage the governance of your organization's third-party data."
 ---
 
-# Use a sample connector to archive Twitter data in Office 365 (Preview)
+# Use a sample connector to archive Twitter data (Preview)
 
 The sample connector feature to archive Twitter data in Office 365 is in Preview.
 

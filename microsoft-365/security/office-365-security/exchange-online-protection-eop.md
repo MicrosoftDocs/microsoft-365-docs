@@ -16,7 +16,7 @@ description: "Here are a few things you should be aware of before you start work
 
 Welcome to the Microsoft Exchange Online Protection (EOP) hosted email filtering service. Here are a few things you should be aware of before you start working with EOP and using this content:
 
-- To learn more about EOP, check out the [Exchange Online Protection Service Description](https://go.microsoft.com/fwlink/p/?LinkId=320619). Other useful resources are [Exchange Online Protection overview](exchange-online-protection-overview.md), [EOP general FAQ](eop-general-faq.md), and [EOP features](eop-features.md), as well as the [Exchange Online Protection home page](https://go.microsoft.com/fwlink/?LinkId=279912).
+- To learn more about EOP, check out the [Exchange Online Protection service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Other useful resources are [Exchange Online Protection overview](exchange-online-protection-overview.md), [EOP general FAQ](eop-general-faq.md), and [EOP features](eop-features.md), as well as the [Exchange Online Protection home page](https://products.office.com/exchange/exchange-email-security-spam-protection).
 
 - To get started with EOP, new customers should head for [Set up your EOP service](set-up-your-eop-service.md). This topic provides steps that'll help you get EOP up and running.
 
@@ -62,6 +62,6 @@ The Help content for assisting EOP end users to manage spam consists of the foll
 
 - [Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md): Describes how end users can submit malware that made it past the filters, or submit a file that was incorrectly identified as malware.
 
-- End users can add specific users or domains to a safe sender list or a blocked sender list by configuring their junk email settings in Outlook or Outlook on the web. Note that messages that are sent from blocked senders are marked as spam, not rejected, meaning that they can be retrieved from the Junk Email folder or quarantine (depending on where your admin has configured the service to send spam.) For more information, see [Use the Report Message add-in](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- End users can add specific users or domains to a safe sender list or a blocked sender list by configuring their junk email settings in Outlook or Outlook on the web. Note that messages that are sent from blocked senders are marked as spam, not rejected, meaning that they can be retrieved from the Junk Email folder or quarantine (depending on where your admin has configured the service to send spam.) For more information, see [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 - [Help and support for EOP](help-and-support-for-eop.md) Provides information about obtaining help and technical support.

@@ -28,13 +28,13 @@ Microsoft Exchange Online Protection (EOP) offers many different reports that ca
 
 See the following resources for more information:
 
-- [Office 365 Reports in the admin center - Office 365 groups](https://go.microsoft.com/fwlink/p/?linkid=861610)
+- [Office 365 Reports in the admin center - Office 365 groups](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
 
-- [Office 365 Reports in the Admin Center - Email activity](https://go.microsoft.com/fwlink/p/?linkid=859706)
+- [Office 365 Reports in the Admin Center - Email activity](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
 
-- [Office 365 Reports in the Admin Center - Email apps usage](https://go.microsoft.com/fwlink/p/?linkid=859707)
+- [Office 365 Reports in the Admin Center - Email apps usage](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
 
-- [Office 365 Reports in the Admin Center - Mailbox usage](https://go.microsoft.com/fwlink/p/?linkid=859708)
+- [Office 365 Reports in the Admin Center - Mailbox usage](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
 
 ## Security & compliance reports in the Microsoft 365 admin center
 
@@ -44,17 +44,15 @@ These enhanced reports provide an interactive reporting experience for EOP admin
 
 **EOP**: View information about malware detections, spoofed mail, spam detections, and mail flow to and from your organization.
 
-[View reports for Advanced Threat Protection and Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=852409)
+[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
 
 ## Custom reports using Microsoft Graph
 
-Programmatically create reports that are available in the Microsoft 365 admin center by using Microsoft Graph  See the subtopics of [Working with Office 365 usage reports in Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=865135)
+Programmatically create reports that are available in the Microsoft 365 admin center by using Microsoft Graph. See the subtopics of [Working with Office 365 usage reports in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/report).
 
-## Custom reports using reporting web services
+## Custom reports using Microsoft Graph
 
-Programmatically create reports from the available Exchange Online Protection PowerShell reporting cmdlets by using REST/ODATA2 query filtering.
-
-See [Office 365 Reporting Web Services](https://go.microsoft.com/fwlink/p/?LinkId=279926)
+Programmatically create reports. See [Overview of Microsoft Graph](https://docs.microsoft.com/graph/overview).
 
 ## Message trace
 

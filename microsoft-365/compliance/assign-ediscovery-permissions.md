@@ -42,7 +42,7 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
 
 - You have to be a member of the Organization Management role group or be assigned the Role Management role to assign eDiscovery permissions in the Security & Compliance Center.
     
-- You can use the [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) cmdlet in Security & Compliance Center PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. For more details, see the [More information](#more-information) section. 
+- You can use the [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) cmdlet in Security & Compliance Center PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. For details, see the [More information](#more-information) section. 
     
 ## Assign eDiscovery permissions in the Security & Compliance Center
 
@@ -83,7 +83,7 @@ The following sections describe each of the eDiscovery-related RBAC roles listed
 
 ### Case Management
 
-This role lets users create, edit, delete, and control access to eDiscovery cases in the Security & Compliance Center. For more information, see [Manage eDiscovery cases in the Security & Compliance Center](manage-ediscovery-cases.md). As previously explained, a user must be assigned the Case Management role before you can use the **Add-eDiscoveryCaseAdmin** cmdlet to make them an eDiscovery Administrator. 
+This role lets users create, edit, delete, and control access to eDiscovery cases in the Security & Compliance Center. For more information, see [Manage eDiscovery cases in the Security & Compliance Center](ediscovery-cases.md). As previously explained, a user must be assigned the Case Management role before you can use the **Add-eDiscoveryCaseAdmin** cmdlet to make them an eDiscovery Administrator. 
 
 ### Compliance Search
 
@@ -116,7 +116,10 @@ This role lets users view a list of items that were returned from a Content Sear
 
 ### Review
 
-This role lets users access case data in Office 365 Advanced eDiscovery. The primary purpose of this role is to give users access to Advanced eDiscovery. Users who are assigned this role can see and open the list of cases on the eDiscovery page in the Security & Compliance Center that they're members of. After the user accesses a case in the Security & Compliance Center, they can select **Switch to Advanced eDiscovery** to access and analyze the case data in Advanced eDiscovery. This role doesn't allow the user to preview the results of a content search that's associated with the case or do other content search or case management tasks.
+This role lets users access case data in [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md) (also know as Advanced eDiscovery v1). The primary purpose of this role is to give users access to Office 365 Advanced eDiscovery. Users who are assigned this role can see and open the list of cases on the eDiscovery page in the Security & Compliance Center that they're members of. After the user accesses a case in the Security & Compliance Center, they can select **Switch to Advanced eDiscovery** to access and analyze the case data in Office 365 Advanced eDiscovery. This role doesn't allow the user to preview the results of a content search that's associated with the case or do other content search or case management tasks.
+
+> [!NOTE]
+> At this time, users who are assigned the Review role (or is a member of the Reviewer role group) can't access data in [Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md) (also known as Advanced eDiscovery v2). To add members to a case in Advanced eDiscovery v2 so that they can review case data, a user must be a member of the eDiscovery Manager role group.
 
 ### RMS Decrypt
 

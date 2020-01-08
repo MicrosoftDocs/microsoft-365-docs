@@ -3,7 +3,7 @@ title: "Data classification for your Microsoft 365 Enterprise test environment"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -32,25 +32,25 @@ If you just want to configure Office 365 retention labels in a lightweight way w
 If you want to configure Office 365 retention labels in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testing Office 365 retention labels does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test automated licensing and group membership and experiment with it in an environment that represents a typical organization. 
+> Testing Office 365 retention labels does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test automated licensing and group membership and experiment with it in an environment that represents a typical organization. 
 
 ## Phase 2: Create Office 365 retention labels
 
 In this phase, you create the retention labels for the different levels of retention for SharePoint Online documents folders.
 
-1. Sign in to the [Microsoft 365 compliance portal](https://compliance.microsoft.com) with your global admin account.
+1. Sign in to the [Microsoft 365 security center](https://security.microsoft.com/homepage) with your global admin account.
     
-2. From the **Home - Microsoft 365 compliance** tab of your browser, click **Classifications > Labels**.
+2. From the **Home - Microsoft 365 security** tab of your browser, click **Classification > Retention labels**.
     
-3. Click **Retention labels > Create a label**.
+3. Click **Create a label**.
     
-4. On the **Name your label** pane, type **Internal Public** in **Name your label**, and then click **Next**.
+4. In the **Name your label** pane, type **Internal Public** in **Name your label**, and then click **Next**.
 
-5. On the **File plan descriptors** pane, click **Next**.
+5. In the **File plan descriptors** pane, click **Next**.
     
-6. On the **Label settings** pane, if needed, set **Retention** to **On**, and then click **Next**.
+6. In the **Label settings** pane, if needed, set **Retention** to **On**, and then click **Next**.
     
-7. On the **Review your settings** pane, click **Create the label**.
+7. In the **Review your settings** pane, click **Create the label**.
     
 8. Repeat steps 3-7 for additional labels with these names:
     
@@ -60,13 +60,13 @@ In this phase, you create the retention labels for the different levels of reten
     
   - Highly Confidential
   
-9. From the **Home > Labels** pane, click **Publish labels**.
+9. In the **Retention labels** pane, click **Publish labels**.
     
-10. On the **Choose labels to publish** pane, click **Choose labels to publish**.
+10. In the **Choose labels to publish** pane, click **Choose labels to publish**.
     
-11. On the **Choose labels** pane, click **Add** and select all four labels.
+11. In the **Choose labels** pane, click **Add** and select all four labels.
     
-12. Click **Done**.
+12. Click **Add**, and then click **Done**.
     
 13. On the **Choose labels to publish** pane, click **Next**.
     
@@ -74,7 +74,7 @@ In this phase, you create the retention labels for the different levels of reten
     
 15. On the **Name your policy** pane, type **Example organization** in **Name**, and then click **Next**.
     
-16. On the **Review your settings** pane, click **Publish labels**, and then click **Close**.
+16. On the **Review your settings** pane, click **Publish labels**.
  
 Note that it might take a few minutes for the retention labels to be published.
 
@@ -84,7 +84,7 @@ In this phase, you discover the default retention label behavior for files in th
 
 First, create a sensitive-level SharePoint Online team site:
   
-1. Using a browser on your local computer, sign in to the [Office 365 portal](https://portal.office.com) using your global administrator account.
+1. Using a private instance of your browser, sign in to the [Office 365 portal](https://portal.office.com) using your global admin account.
     
 2. In the list of tiles, click **SharePoint**.
     
@@ -98,7 +98,7 @@ First, create a sensitive-level SharePoint Online team site:
     
 7.  In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.
     
-8. On the **Who do you want to add?** pane, click **Finish**.
+8. In the **Who do you want to add?** pane, click **Finish**.
     
 Next, configure the Documents folder of the SensitiveFiles team site for the Sensitive retention label.
   
@@ -106,7 +106,7 @@ Next, configure the Documents folder of the SensitiveFiles team site for the Sen
     
 2. Click the settings icon, and then click **Library settings**.
     
-3. Under **Permissions and Management**, click **Apply label to items in this library**.
+3. Under **Permissions and Management**, click **Apply label to items in this list or library**. If this option does not appear, your retention labels are not yet published. Try this step at a later time.
     
 4. In **Settings-Apply Label**, select **Sensitive** in the drop-down box, and then click **Save**.
 
@@ -118,13 +118,13 @@ Next, create a new document in the SensitiveFiles site and change its retention 
     
 3. In the menu bar, click **Shared Documents**.
     
-4. Click the Word icon next to the **Document.docx** file name.
+4. Click the vertical ellipsis next to the **Document.docx** file name, and then click **Details**.
     
-5. In the right-hand pane, in the **Properties** section, under **Apply retention label**, note that the document has had the **Sensitive** label automatically applied.
+5. In the right-hand pane, in the **Properties** section, under **Apply retention label**, note that the document has had the **Sensitive** retention label automatically applied.
     
 6. Click **Edit all**.
     
-7. In the **Document.docx** pane, under **Apply label**, select the **Highly Confidential** label, and then click **Save**.
+7. In the **Document.docx** pane, under **Apply retention label**, select the **Highly Confidential** label, and then click **Save**.
 
 See the [Configure classification for your environment](infoprotect-configure-classification.md) step in the **Information protection** phase for information and links to how to deploy Office 365 retention labels in production.
 

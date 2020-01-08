@@ -1,5 +1,5 @@
 ---
-title: "Set up a connector to archive LinkedIn data in Office 365 (Preview)"
+title: "Set up a connector to archive LinkedIn data (Preview)"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,7 +12,7 @@ ms.collection: M365-security-compliance
 description: "Administrators can set up a native connector to import data from a LinkedIn Company Page to Office 365. This lets you archive data from third-party data sources in Office 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage the compliance of your organization's third-party data."
 ---
 
-# Set up a connector to archive LinkedIn data in Office 365 (Preview)
+# Set up a connector to archive LinkedIn data (Preview)
 
 The connector feature to archive data from LinkedIn Company pages in Office 365 is in Preview.
 

@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Each row in the `DeviceTvmSecureConfigurationAssessment` table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Use this reference to check the latest assessment results and determine whether devices are compliant.
 
@@ -30,8 +30,8 @@ For information on other tables in the advanced hunting schema, see [the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `MachineId` | string | Unique identifier for the machine in the service |
-| `ComputerName` | string | Fully qualified domain name (FQDN) of the machine |
+| `DeviceId` | string | Unique identifier for the machine in the service |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
 | `OSPlatform` | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.|
 | `Timestamp` | datetime | Date and time when the record was generated |
 | `ConfigurationId` | string | Unique identifier for a specific configuration |

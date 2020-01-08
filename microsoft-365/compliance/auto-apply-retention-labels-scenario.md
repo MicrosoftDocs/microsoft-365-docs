@@ -1,7 +1,7 @@
 ---
 title: "Manage the lifecycle of product documents stored in SharePoint Online with retention labels"
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article

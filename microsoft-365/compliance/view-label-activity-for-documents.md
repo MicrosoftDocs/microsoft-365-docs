@@ -1,7 +1,7 @@
 ---
 title: "View label activity for documents"
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 5/9/2018
 audience: Admin

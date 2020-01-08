@@ -1,7 +1,7 @@
 ---
-title: MachineNetworkInfo table in the advanced hunting schema
-description: Learn about network configuration information in the MachineNetworkInfo table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, machinenetworkinfo, device, machine, mac, ip, adapter, dns, dhcp, gateway, tunnel
+title: DeviceNetworkInfo table in the advanced hunting schema
+description: Learn about network configuration information in the DeviceNetworkInfo table of the advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, machinenetworkinfo, DeviceNetworkInfo, device, machine, mac, ip, adapter, dns, dhcp, gateway, tunnel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,23 +17,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# MachineNetworkInfo
+# DeviceNetworkInfo
 
 **Applies to:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-The `MachineNetworkInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about networking configuration of machines, including network adapters, IP and MAC addresses, and connected networks or domains. Use this reference to construct queries that return information from this table.
+The `DeviceNetworkInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about networking configuration of machines, including network adapters, IP and MAC addresses, and connected networks or domains. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `EventTime` | datetime | Date and time when the event was recorded |
-| `MachineId` | string | Unique identifier for the machine in the service |
-| `ComputerName` | string | Fully qualified domain name (FQDN) of the machine |
-| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns |
+| `Timestamp` | datetime | Date and time when the event was recorded |
+| `DeviceId` | string | Unique identifier for the machine in the service |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
+| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `NetworkAdapterName` | string | Name of the network adapter |
 | `MacAddress` | string | MAC address of the network adapter |
 | `NetworkAdapterType` | string | Network adapter type. For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |

@@ -98,7 +98,7 @@ Authentication-Results:
 |||
 |:-----|:-----|
 |**Reason**|**Description**|
-|0xx |Message failed composite authentication.<br/>**000** means the message failed DMARC with an action of reject or quarantine.  <br/>**001** means the message failed implicit email authentication. This means that the sending domain did not have email authentication records published, or if they did, they had a weaker failure policy (SPF soft fail or neutral, DMARC policy of p=none).  <br/>**002** means the organization has a policy for the sender/domain pair that is explicitly prohibited from sending spoofed email, this setting is manually set by an administrator.  <br/>**010** means the message failed DMARC with an action of reject or quarantine, and the sending domain is one of your organization's accepted-domains (this is part of self-to-self, or intra-org, spoofing). <br/> |
+|0xx |Message failed composite authentication.<br/>**000** means the message failed DMARC with an action of reject or quarantine.  <br/>**001** means the message failed implicit email authentication. This means that the sending domain did not have email authentication records published, or if they did, they had a weaker failure policy (SPF soft fail or neutral, DMARC policy of p=none).  <br/>**002** means the organization has a policy for the sender/domain pair that is explicitly prohibited from sending spoofed email, this setting is manually set by an administrator.  <br/>**010** means the message failed DMARC with an action of reject or quarantine, and the sending domain is one of your organization's accepted-domains (this is part of self-to-self, or intra-org, spoofing).|
 |1xx, 2xx, 3xx, 4xx, and 5xx|Correspond to various internal codes for why a message passed implicit authentication, or had no authentication but no action was applied.|
 |6xx|Means the message failed implicit email authentication, and the sending domain is one of your organization's accepted domains (this is part of self-to-self, or intra-org, spoofing).|
 
@@ -252,9 +252,9 @@ There are multiple different ways a message can be spoofed (see  [Differentiatin
 
 |**Type of spoof**|**Category**|**Safety tip added?**|**Applies to**|
 |:-----|:-----|:-----|:-----|
-|DMARC fail (quarantine or reject)  <br/> |HSPM (default), may also be SPM or PHSH  <br/> |No (not yet)  <br/> |All Office 365 customers, Outlook.com  <br/> |
-|Self-to-self  <br/> |SPM  <br/> |Yes  <br/> |All Office 365 organizations, Outlook.com  <br/> |
-|Cross-domain  <br/> |SPOOF  <br/> |Yes  <br/> |Office 365 Advanced Threat Protection and E5 customers  <br/> |
+|DMARC fail (quarantine or reject)|HSPM (default), may also be SPM or PHSH|No (not yet)|All Office 365 customers, Outlook.com|
+|Self-to-self|SPM|Yes|All Office 365 organizations, Outlook.com|
+|Cross-domain|SPOOF|Yes|Office 365 Advanced Threat Protection and E5 customers|
 
 ### Changing your anti-spoofing settings
 
@@ -314,8 +314,8 @@ You should only disable anti-spoofing protection if you have another mail server
 ```powershell
 $defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false
-
 ```
+
 > [!IMPORTANT]
 > If the first hop in your email path is Office 365, and you are getting too many legitimate emails marked as spoof, you should first set up your senders that are allowed to send spoofed email to your domain (see the section  *"Managing legitimate senders who are sending unauthenticated email"*  ). If you are still getting too many false positives (that is, legitimate messages marked as spoof), we do NOT recommend disabling anti-spoofing protection altogether. Instead, we recommend choosing Basic instead of High protection. It is better to work through false positives than to expose your organization to spoofed email which could end up imposing significantly higher costs in the long term.
 
@@ -325,15 +325,15 @@ Office 365 keeps track of who is sending unauthenticated email to your organizat
 
 However, as an administrator, you can specify which senders are permitted to send spoofed email, overriding Office 365's decision.
 
-**Method 1 - If your organization owns the domain, set up email authentication**
+#### Method 1 - If your organization owns the domain, set up email authentication
 
 This method can be used to resolve intra-org spoofing, and cross-domain spoofing in cases where you own or interact with multiple tenants. It also helps resolve cross-domain spoofing where you send to other customers within Office 365, and also third parties that are hosted in other providers.
 
 For more details, see [Customers of Office 365](#customers-of-office-365).
 
-**Method 2 - Use Spoof intelligence to configure permitted senders of unauthenticated email**
+#### Method 2 - Use Spoof intelligence to configure permitted senders of unauthenticated email
 
-You can also use [Spoof Intelligence](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) to permit senders to transmit unauthenticated messages to your organization.
+You can also use [Spoof Intelligence](learn-about-spoof-intelligence.md) to permit senders to transmit unauthenticated messages to your organization.
 
 For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is either the sending IP address (divided up into /24 CIDR ranges), or the organizational domain of the PTR record (in the screenshot below, the sending IP might be 131.107.18.4 whose PTR record is outbound.mail.protection.outlook.com, and this would show up as outlook.com for the sending infrastructure).
 
@@ -368,13 +368,13 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 This will now allow bing.com to send unauthenticated email from \*.outlook.com.
 
-**Method 3 - Create an allow entry for the sender/recipient pair**
+#### Method 3 - Create an allow entry for the sender/recipient pair
 
 You can also choose to bypass all spam filtering for a particular sender. For more details, see [How to securely add a sender to an allow list in Office 365](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/).
 
 If you use this method, it will skip spam and some of the phish filtering, but not malware filtering.
 
-**Method 4 - Contact the sender and ask them to set up email authentication**
+#### Method 4 - Contact the sender and ask them to set up email authentication
 
 Because of the problem of spam and phishing, Microsoft recommends all senders set up email authentication. If you know an administrator of the sending domain, contact them and request that they set up email authentication records so you do not have to add any overrides. For more information, see [Administrators of domains that are not Office 365 customers](#administrators-of-domains-that-are-not-office-365-customers)" later in this article.
 
@@ -649,7 +649,7 @@ Microsoft's anti-spoofing technology was initially deployed to its organizations
 
 ### How can I report spam or non-spam messages back to Microsoft?
 
-You can either use the [Report Message Add-in for Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2), or if it isn't installed, [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+You can either use the [Report Message Add-in for Outlook](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2), or if it isn't installed, [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
 
 ### I'm a domain administrator who doesn't know who all my senders are!
 

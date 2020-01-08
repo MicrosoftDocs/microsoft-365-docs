@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 02/07/2018
 audience: ITPro
 ms.topic: overview
-ms.collection: 
+ms.collection:
 - Strat_O365_Enterprise
 - Ent_O365
 - GDPR
@@ -25,11 +25,11 @@ There are many tools that can be used to monitor the use and transport of person
 
 In the illustration:
 
--   Start with Office 365 data loss prevention reports for monitoring personal data in SharePoint Online, OneDrive for Business, and email in transit. These provide the greatest level of detail for monitoring personal data. However, these reports don’t include all services in Office 365.
+- Start with Office 365 data loss prevention reports for monitoring personal data in SharePoint Online, OneDrive for Business, and email in transit. These provide the greatest level of detail for monitoring personal data. However, these reports don’t include all services in Office 365.
 
--   Next, use alert policies and the Office 365 audit log to monitor activity across Office 365 services. Setup ongoing monitoring or search the audit log to investigate an incident. The Office 365 audit log works across Office 365 services — Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, Admin activity, OneDrive for Business, SharePoint Online, mail in transit, and mailboxes at rest. Skype conversations are included in mailboxes at rest.
+- Next, use alert policies and the Office 365 audit log to monitor activity across Office 365 services. Setup ongoing monitoring or search the audit log to investigate an incident. The Office 365 audit log works across Office 365 services — Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, Admin activity, OneDrive for Business, SharePoint Online, mail in transit, and mailboxes at rest. Skype conversations are included in mailboxes at rest.
 
--   Finally, Use Microsoft Cloud App Security to monitor files with sensitive data in other SaaS providers. Coming soon is the ability to use Office 365 sensitive information types and unified labels across Azure Information Protection and Office with Cloud App Security. You can setup policies that apply to all of your SaaS apps or specific apps (like Box). Cloud App Security doesn’t discover files in Exchange Online, including files attached to email.
+- Finally, Use Microsoft Cloud App Security to monitor files with sensitive data in other SaaS providers. Coming soon is the ability to use Office 365 sensitive information types and unified labels across Azure Information Protection and Office with Cloud App Security. You can setup policies that apply to all of your SaaS apps or specific apps (like Box). Cloud App Security doesn’t discover files in Exchange Online, including files attached to email.
 
 ## Office 365 data loss prevention reports
 
@@ -37,23 +37,23 @@ After you create your data loss prevention (DLP) policies, you’ll want to veri
 
 You can use the DLP reports to:
 
--   Focus on specific time periods and understand the reasons for spikes and trends.
+- Focus on specific time periods and understand the reasons for spikes and trends.
 
--   Discover business processes that violate your organization’s DLP policies.
+- Discover business processes that violate your organization’s DLP policies.
 
--   Understand any business impact of the DLP policies.
+- Understand any business impact of the DLP policies.
 
--   View the justifications submitted by users when they resolve a policy tip by overriding the policy or reporting a false positive.
+- View the justifications submitted by users when they resolve a policy tip by overriding the policy or reporting a false positive.
 
--   Verify compliance with a specific DLP policy by showing any matches for that policy.
+- Verify compliance with a specific DLP policy by showing any matches for that policy.
 
--   View a list of files with sensitive data that matches your DLP policies in the details pane.
+- View a list of files with sensitive data that matches your DLP policies in the details pane.
 
 In addition, you can use the DLP reports to fine tune your DLP policies as you run them in test mode.
 
 DLP reports are in the security center and the compliance center. Navigate to Reports \> View reports. Under Data loss prevention (DLP), go to either DLP policy and rule matches or DLP false positives and overrides.
 
-For more information, see [View the reports for data loss prevention](https://support.office.com/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
+For more information, see [View the reports for data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
 
 ![Report showing DLP policy matches](../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -63,9 +63,9 @@ The Office 365 audit log contains events from Exchange Online, SharePoint Online
 
 The security center and compliance center provide two ways to monitor and report against the Office 365 audit log:
 
--   Setup alert policies, view alerts, and monitor trends — Use the alert policy and alert dashboard tools in either the security center or compliance center.
+- Setup alert policies, view alerts, and monitor trends — Use the alert policy and alert dashboard tools in either the security center or compliance center.
 
--   Search the audit log directly — Search for all events in a specified date rage. Or you can filter the results based on specific criteria, such as the user who performed the action, the action, or the target object.
+- Search the audit log directly — Search for all events in a specified date rage. Or you can filter the results based on specific criteria, such as the user who performed the action, the action, or the target object.
 
 Information security and compliance teams can use these tools to proactively review activities performed by both end users and administrators across Office 365 services. Automatic alerts can be configured to send email notifications when certain activities occur on specific site collections - for example when content is shared from sites known to contain GDPR related information. This allows those teams to follow up with users to ensure that corporate security policies are followed, or to provide additional training.
 
@@ -75,17 +75,17 @@ Solutions are available which subscribe to the Unified Audit Logs through the Mi
 
 More information about alert policies and searching the audit log:
 
-- [Alert policies in the Microsoft 365 security and compliance centers](https://support.office.com/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+- [Alert policies in the Microsoft 365 security and compliance centers](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
 
-- [Search the audit log for user and admin activity in Office 365](https://support.office.com/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introduction)
+- [Search the audit log for user and admin activity in Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (introduction)
 
-- [Turn Office 365 audit log search on or off](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+- [Turn Office 365 audit log search on or off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
-- [Search the audit log](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+- [Search the audit log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) (cmdlet)
 
-- [Detailed properties in the Office 365 audit log](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+- [Detailed properties in the Office 365 audit log](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
 
 ## Microsoft Cloud App Security
 
@@ -105,9 +105,9 @@ The second policy blocks downloads of files to any unmanaged device. You choose 
 
 These attribute types are coming soon to Cloud App Security:
 
--   Office 365 sensitive information types
+- Office 365 sensitive information types
 
--   Unified labels across Office 365 and Azure Information Protection
+- Unified labels across Office 365 and Azure Information Protection
 
 ### Cloud App Security dashboard
 
@@ -119,11 +119,11 @@ Note: Be sure to enable ‘Automatically scan files for Azure Information Protec
 
 More information:
 
--   [Deploy Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [Deploy Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
 
--   [More information about Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [More information about Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
--   [Block downloads of sensitive information using the Microsoft Cloud App Security proxy](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
+- [Block downloads of sensitive information using the Microsoft Cloud App Security proxy](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## Example file and activity policies to detect sharing of personal data
 
@@ -192,9 +192,9 @@ Alert when a file containing a credit card number is shared from an approved clo
 
 Similar policies:
 
--   Detect sharing of Files containing PII - Email Address
+- Detect sharing of Files containing PII - Email Address
 
--   Detect sharing of Files containing PII - Passport Number
+- Detect sharing of Files containing PII - Passport Number
 
 ### Detect Customer or HR Data in Box or OneDrive for Business
 
@@ -202,9 +202,9 @@ Alert when a file labeled as Customer Data or HR Data is uploaded to OneDrive fo
 
 Notes:
 
--   Box monitoring requires a connector be configured using the API Connector SDK.
+- Box monitoring requires a connector be configured using the API Connector SDK.
 
--   This policy requires capabilities that are currently in private preview.
+- This policy requires capabilities that are currently in private preview.
 
 <table>
 <thead>
@@ -261,6 +261,6 @@ Notes:
 
 Similar policies:
 
--   Detect large downloads of Customer data or HR Data — Alert when a large number of files containing customer data or HR data have been detected being downloaded by a single user within a short period of time.
+- Detect large downloads of Customer data or HR Data — Alert when a large number of files containing customer data or HR data have been detected being downloaded by a single user within a short period of time.
 
--   Detect Sharing of Customer and HR Data — Alert when files containing Customer or HR Data are shared.
+- Detect Sharing of Customer and HR Data — Alert when files containing Customer or HR Data are shared.

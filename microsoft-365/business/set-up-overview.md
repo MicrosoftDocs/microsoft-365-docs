@@ -27,6 +27,12 @@ description: "Overview of the setup steps for Microsoft 365 Business."
 
 # Overview of setup
 
+Watch a short video about Microsoft 365 Business setup.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+
 Most of the setup steps can be done in the setup wizard, but the other options are also listed.
 
 ## Step 1: Add your domain and users
@@ -45,14 +51,12 @@ Most of the setup steps can be done in the setup wizard, but the other options a
   
   In addition to the security settings in the setup wizard, you can increase your security by adding the following settings:
 
-
 - **Email malware protection**
 - **ATP anti-phishing**
 - **Exchange Online Archiving**
 - **Azure Information Protection (Plan1**)
 
-
-To get started see, [set up advanced security policies](set-up-advanced-security.md).
+To get started, see [set up advanced security policies](set-up-advanced-security.md).
 
 See also [top 10 ways to secure your Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a roadmap of best security practices.
 

@@ -1,5 +1,6 @@
 ---
 title: "Communication compliance feature reference (preview)"
+description: "Feature reference for communication compliance in Microsoft 365. Learn details and specifications for each of the feature components."
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,7 +16,6 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Feature reference for communication compliance in Microsoft 365. Learn details and specifications for each of the feature components."
 ---
 
 # Communication compliance feature reference (preview)
@@ -24,8 +24,8 @@ description: "Feature reference for communication compliance in Microsoft 365. L
 
 You create communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. If you have an Office 365 organization, you'll [configure Supervision policies](configure-supervision-policies.md) in the Office 365 Security & Compliance Center. Communication compliance policies define which communications and users are subject to review in your organization, define which custom conditions the communications must meet, and specify who should do reviews. Users included in the **Supervisory Review Administrator** role group can set up policies, and anyone who has this role assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv file that also includes the status of alerts pending review, escalated items, and resolved items. Policies can't be renamed and can be deleted when no longer needed.
 
-> [!NOTE]
-> Supervision policies created in the Office 365 security and compliance center for Office 365 subscriptions cannot migrate to Microsoft 365. If you're migrating from an Office 365 subscription to a Microsoft 365 subscription, you'll need to create new communication compliance polices to replace existing Supervision policies.
+>[!NOTE]
+>Supervision policies created in the Office 365 security and compliance center for Office 365 subscriptions cannot migrate to Microsoft 365. If you're migrating from an Office 365 subscription to a Microsoft 365 subscription, you'll need to create new communication compliance polices to replace existing Supervision policies.
 
 ## Policy templates
 
@@ -41,8 +41,8 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 
 Before you start using communication compliance, you must determine who needs their communications reviewed. In the policy, user email addresses identify individuals or groups of people to supervise. Some examples of these groups are Office 365 Groups, Exchange-based distribution lists, and Microsoft Teams channels. You also can exclude specific users or groups from scanning with a specific exclusion group or a list of groups.
 
-> [!IMPORTANT]
-> Users covered by communication compliance policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.If you don't have an existing Enterprise E5 plan and want to try communication compliance, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>[!IMPORTANT]
+>Users covered by communication compliance policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.If you don't have an existing Enterprise E5 plan and want to try communication compliance, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## Reviewers
 
@@ -82,12 +82,16 @@ You must configure a third-party connector for your Microsoft 365 organization b
 
 ## Policy settings
 
+### Users
+
+You have the option to select **All users** or to define specific users in a communication compliance policy. Selecting **All users** applies the policy to all users and all groups that any user is included in as a member. Defining specific users applies the policy to the defined users and any groups the defined users are included in as a member.
+
 ### Direction
 
 By default, the **Direction is** condition is displayed and can't be removed. Communication direction settings in a policy are chosen individually or together:
 
-- **Inbound**: You can choose **Inbound** to review communications sent **to** the people you chose to supervise **from** people not included in the policy.
-- **Outbound**: You can choose **Outbound** if you want to review communications sent **from** the people you chose to supervise **to** people not included in the policy.
+- **Inbound**: You can choose **Inbound** to review communications sent **to** the people you chose to supervise.
+- **Outbound**: You can choose **Outbound** if you want to review communications sent **from** the people you chose to supervise.
 - **Internal**: You can choose **Internal** to review communications sent **between** the people you identified in the policy.
 
 ### Sensitive information types
@@ -103,11 +107,11 @@ To learn more about sensitive information details and the patterns included in t
 
 ### Custom keyword dictionaries
 
-Configure custom keyword dictionaries (or lexicons) to provide simple management of keywords specific to your organization or industry. Keyword dictionaries support up to 100,000 terms per dictionary. If needed, you can apply multiple custom keyword dictionaries to a single policy or have a single keyword dictionary per policy. These dictionaries are assigned in a communication compliance policy and can be sourced from a file (such as a .csv or .txt list), or from a list you can [import in the Compliance center](create-a-keyword-dictionary.md).
+Configure custom keyword dictionaries (or lexicons) to provide simple management of keywords specific to your organization or industry. Keyword dictionaries support up to 100,000 terms per dictionary and support any language. If needed, you can apply multiple custom keyword dictionaries to a single policy or have a single keyword dictionary per policy. These dictionaries are assigned in a communication compliance policy and can be sourced from a file (such as a .csv or .txt list), or from a list you can [import in the Compliance center](create-a-keyword-dictionary.md). Use custom dictionaries when you need to support terms or languages specific to your organization and policies.
 
 ### Classifiers
 
-Built-in classifiers scan sent or received messages across all communication channels in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in messages likely to violate anti-harassment policies. Classifiers currently support only English keywords in messages.
+Built-in classifiers scan sent or received messages across all communication channels in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in messages likely to violate anti-harassment policies. Built-in classifiers currently support only English keywords in messages.
 
 Communication compliance built-in classifiers scan communications for terms and sentiment for the following types of language:
 
@@ -189,8 +193,8 @@ If you'd like to create more than a simple text-based email message for notifica
 </html>
 ```
 
-> [!NOTE]
-> HTML href attribute implementation in the communication compliance notification templates currently support only single quotation marks instead of double quotation marks for URL references.
+>[!NOTE]
+>HTML href attribute implementation in the communication compliance notification templates currently support only single quotation marks instead of double quotation marks for URL references.
 
 ## Filters
 
@@ -201,7 +205,7 @@ Communication compliance filters allow you to filter and sort alert messages for
 | **Date** | The date the message was sent or received by a user in your organization. |
 | **File class** | The class of the message based on the message type, either *message* or *attachment*. |
 | **Has attachment** | The attachment presence in the message. |
-| **Item class** | The source of the message based on the message type, email, Microsoft Team chat, Bloonmberg, and so on. |
+| **Item class** | The source of the message based on the message type, email, Microsoft Team chat, Bloonmberg, etc. |
 | **Recipient domains** | The domain to which the message was sent. This is normally your Microsoft 365 subscription domain by default. |
 | **Recipient** | The user to which the message was sent. |
 | **Sender** | The person who sent the message. |
@@ -223,8 +227,8 @@ For communication compliance policies, the following alert policy values are con
 | Threshold | 4 activities |
 | Window | 60 minutes |
 
-> [!Note]
-> The alert policy threshold trigger settings for activities supports a minimum value of 3 or higher for communication compliance policies.
+>[!Note]
+>The alert policy threshold trigger settings for activities supports a minimum value of 3 or higher for communication compliance policies.
 
 You can change the default settings for triggers on number of activities, period for the activities, and for specific users in alert policies on the **Alert policies** page in the Office 365 Security & Compliance Center.
 
@@ -248,7 +252,10 @@ If you'd like to change the severity level assigned in an alert policy for a spe
 
 ## Audit
 
-In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This may be a summary of all activities associated with a defined organizational policy or any time a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
+In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
+
+>[!Important]
+>Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable auditing for your communication compliance policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
 
 To view communication compliance policy activities, select the **Export review activities** control on the main page for any policy. This generates an audit file in the .csv format that contains the following information:
 

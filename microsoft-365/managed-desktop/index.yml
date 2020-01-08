@@ -71,11 +71,14 @@ sections:
       title: "[E-book] Delight your company with a modern workplace"
       image:
         src: https://docs.microsoft.com/media/common/i_guide.svg
+        alt: ""
 - title: Videos
   items:
+  - type: paragraph
+    text: 'Learn about the benefits of Microsoft Managed Desktop from the VP of Technology at the Indiana Pacers.'
   - type: markdown
     text: ">[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]"
-
-
- 
- 
+  - type: paragraph
+    text: 'The General Manager of Microsoft Managed Desktop shares all the highlights of the service at the annual Ignite conference.'
+  - type: markdown
+    text: ">[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]"
