@@ -45,11 +45,13 @@ To use automatic or recommended sensitivity labeling, your users need one of the
 
 - [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/)
 
-## Support for sensitivity label capabilities in Word, Excel, and PowerPoint
+## Support for sensitivity label capabilities in apps
 
-For each capability, the following table lists the minimum version you need for that app to support sensitivity labels using built-in labeling.
+Use the tables in the following sections to identify the minimum version you need to support the different capabilities for sensitivity labels when you use built-in labeling for these apps.
 
 Additional capabilities are available when you install the Azure Information Protection unified labeling client, which runs on Windows computers only. For these details, see [Compare the labeling clients for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
+
+### Label capabilities for Word, Excel, and PowerPoint
 
 |Capability                                                                                                        |Windows Desktop |Mac Desktop |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
@@ -66,11 +68,7 @@ Additional capabilities are available when you install the Azure Information Pro
 |Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents | Under review | Under review | Under review | Under review | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
-## Support for sensitivity label capabilities in Outlook
-
-For each capability, the following table lists the minimum version you need for that app.
-
-Additional capabilities are available when you install the Azure Information Protection unified labeling client, which runs on Windows computers only. For these details, see [Compare the labeling clients for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
+### Label capabilities for Outlook
 
 |Capability                                                                                                        |Outlook on Windows Desktop |Outlook on Mac Desktop  |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
