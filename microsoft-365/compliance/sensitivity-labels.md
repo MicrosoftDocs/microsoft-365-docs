@@ -53,7 +53,7 @@ For Azure Information Protection customers, you can use your Azure Information P
 
 ## What a sensitivity label is
 
-When you assign a sensitivity label to a document or email, it’s like a tag that is:
+When you assign a sensitivity label to a document or email, it’s like a stamp that's applied to content that is:
 
 - **Customizable.** You can create categories for different levels of sensitive content in your organization, such as Personal, Public, General, Confidential, and Highly Confidential.
 
@@ -61,7 +61,7 @@ When you assign a sensitivity label to a document or email, it’s like a tag th
 
 - **Persistent.** After you apply a sensitivity label to content, the label persists in the metadata of that email or document. This means the label roams with the content, including the protection settings, and this data becomes the basis for applying and enforcing policies.
 
-In Office apps, a sensitivity label simply appears as a tag on an email or document.
+In Office apps, a sensitivity label appears like a tag to users on an email or document.
 
 Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](labels.md) applied to it.
 
@@ -238,7 +238,7 @@ Azure Information Protection users can classify and label content on Windows by 
 If you are using Azure Information Protection labels because your tenant isn't yet on the [unified labeling platform](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), we recommend that you avoid creating new labels in other admin centers until you activate unified labeling. For more information about this process, see [How to migrate Azure Information Protection labels to unified sensitivity labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). 
 
 > [!NOTE]
->  Label management for Azure Information Protection labels in the Azure portal is being deprecated **March 31, 2021**. Learn more in the official [deprecation notice](https://techcommunity.microsoft.com/t5/azure-information-protection/deprecation-notice-azure-information-protection-classic-client/ba-p/1092108).
+> Label management for Azure Information Protection labels in the Azure portal is being deprecated **March 31, 2021**. Learn more in the official [deprecation notice](https://techcommunity.microsoft.com/t5/azure-information-protection/deprecation-notice-azure-information-protection-classic-client/ba-p/1092108).
 
 ## Sensitivity labels and the Azure Information Protection client
 

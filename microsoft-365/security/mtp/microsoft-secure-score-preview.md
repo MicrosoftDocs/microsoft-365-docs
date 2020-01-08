@@ -58,21 +58,21 @@ To have permission to access Microsoft Secure Score, you must be assigned one of
 
 With read and write access, you can make changes and directly interact with Secure Score. You can also assign read-only access to other users.
 
-* CompanyAdministrator
-* SecurityAdministrator
-* ExchangeAdmin
-* SharePointAdmin
+* Global administrator
+* Security administrator
+* Exchange administrator
+* SharePoint administrator
 
 ### Read-only roles
 
 With read-only access, you are not able to edit status or notes for an improvement action, edit score zones, or edit custom comparisons.
 
-* HelpdeskAdmin
-* UserAccountAdmin
-* ServiceSupportAdmin
-* SecurityReader
-* SecurityOperator
-* GlobalReader
+* Helpdesk administrator
+* User administrator
+* Service administrator
+* Security reader
+* Security operator
+* Global reader
 
 ### Graph API
 
