@@ -50,18 +50,20 @@ There are several things you need to do if your tenant is blocked from sending e
 
 1. Verify that all of your email domains are registered. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) and [Manage accepted domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Look for unusual [connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow). Malicious actors will often create new inbound connectors in your Office 365 organization to send spam. To view your existing connectors, see [Validate connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
+2. [Enable MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) for all admins in your Office 365 organization.
 
-3. Check for compromised users as described in [Responding to a compromised email account in Office 365](responding-to-a-compromised-email-account.md).
+3. Verify that all of your email domains are registered. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) and [Manage accepted domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-4. [Enable MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) for all admins in your Office 365 organization.
+4. Look for unusual [connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow). Malicious actors will often create new inbound connectors in your Office 365 organization to send spam. To view your existing connectors, see [Validate connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
-5. Lock down your on-premises email servers and verify that they are not compromised.
+5. Check for compromised users as described in [Responding to a compromised email account in Office 365](responding-to-a-compromised-email-account.md).
+
+6. Lock down your on-premises email servers and verify that they are not compromised.
 
    > [!TIP]
    > There are many factors here, especially if you're using third-party servers. Regardless, you'll need to verify that all of your outgoing email is now legitimate.
 
-6. Call Microsoft Support and ask to get your tenant unblocked to send from unregistered domains again. The error code is helpful, but you'll need to prove that your environment has been secured and is incapable of sending spam. To open a support case, see [Contact support for business products - Admin Help](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+7. Call Microsoft Support and ask to get your tenant unblocked to send email again. The error code is helpful, but you'll need to prove that your environment has been secured and is incapable of sending spam. To open a support case, see [Contact support for business products - Admin Help](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ## For more information
 
