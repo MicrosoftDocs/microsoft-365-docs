@@ -33,9 +33,9 @@ Users must have at least one of the following licenses assigned:
 
 - [Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software) or above
 
-- [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/)
+- [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) or above
 
-The Office built-in labeling client supports sensitivity labels with a subscription edition of Office. This labeling client doesn't support standalone editions, such as Office 2016 or Office 2019. To use sensitivity labels with these editions of Office on Windows computers, install the Azure Information Protection unified labeling client.
+The Office built-in labeling client supports sensitivity labels with a subscription edition of Office. This labeling client doesn't support standalone editions of Office, such as Office 2016 or Office 2019. To use sensitivity labels with these editions of Office on Windows computers, install the Azure Information Protection unified labeling client.
 
 To use automatic or recommended sensitivity labeling, your users need one of the following licenses:
 
@@ -43,32 +43,32 @@ To use automatic or recommended sensitivity labeling, your users need one of the
 
 - [Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software) or above
 
-- [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/) or above
+- [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/)
 
 ## Support for sensitivity label capabilities in Word, Excel, and PowerPoint
 
-For each capability, the following table lists the minimum version you need for that app to support sensitivity labels using built-in labeling. TBD means that you can't use that capability on that platform.
+For each capability, the following table lists the minimum version you need for that app to support sensitivity labels using built-in labeling.
 
 Additional capabilities are available when you install the Azure Information Protection unified labeling client, which runs on Windows computers only. For these details, see [Compare the labeling clients for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 |Capability                                                                                                        |Windows Desktop |Mac Desktop |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Manually apply, change, or remove label](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | TBD                                                        |
+|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | Under review                                                        |
 |[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
-|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
-|[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: In roll-out to [Office Insider](https://office.com/insider)                                  | TBD | TBD | TBD | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents | TBD | TBD | TBD | TBD | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
+|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
+|[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: In [Office Insider](https://office.com/insider)                                  | Under review | Under review | Under review | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents | Under review | Under review | Under review | Under review | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 ## Support for sensitivity label capabilities in Outlook
 
-For each capability, the following table lists the minimum version you need for that app. TBD means that you can't use that capability on that platform.
+For each capability, the following table lists the minimum version you need for that app.
 
 Additional capabilities are available when you install the Azure Information Protection unified labeling client, which runs on Windows computers only. For these details, see [Compare the labeling clients for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
@@ -81,9 +81,9 @@ Additional capabilities are available when you install the Azure Information Pro
 |[Mark the content](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21+                 | 4.71+         | 4.0.39+           | Yes               |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.71+         | 4.0.39+           | Yes               |
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.71+         | 4.0.39+           | Yes               |
-|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | TBD                       | TBD                    | TBD           | TBD               | TBD               |
-|[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | TBD                       | TBD                    | TBD           | TBD               | TBD               |
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | TBD                       | TBD                    | TBD           | TBD               | Preview: In roll-out to [Targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide) |
+|[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review                       | Under review                    | Under review           | Under review               | Under review               |
+|[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review                       | Under review                    | Under review           | Under review               | Under review               |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Under review                       | Under review                    | Under review           | Under review               | Preview: In roll-out to [Targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide) |
 |
 
 ## About the Office built-in labeling client
