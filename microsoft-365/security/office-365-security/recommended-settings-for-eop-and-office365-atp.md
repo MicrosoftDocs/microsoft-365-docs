@@ -54,7 +54,7 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 |Zero Hour auto purge|On|On|For both Spam and Phish ZAP|
 |MarkAsSpamBulkMail|On|On|This setting is only available in PowerShell|
 
-There are several other parameters in the Anti-spam policy called Advanced Spam filter that are being deprecated at the time of this writing. Our recommended settings for these are to turn them **OFF** for both Standard and Strict levels:
+There are several other parameters in the Anti-spam policy called Advanced Spam filter that are in the process of being deprecated and our recommended settings for these are to turn them **OFF** for both Standard and Strict levels. More information on the timelines for the depreciation of these features will be communicated outside of this article:
 
 |Security feature name| Comments |
 |---------|---------|
