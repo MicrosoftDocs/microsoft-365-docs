@@ -48,7 +48,7 @@ Once compromised, tenants will be prevented from sending outbound email for unre
 
 There are several things you need to do if your tenant is blocked from sending email:
 
-1. Change the password for your admin accounts. If a tenant is blocked from sending, it is most likely that an admin account was compromised and changing the password is the first step in making sure the attacker stops doing more harm.
+1. Verify that all of your email domains are registered. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) and [Manage accepted domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 2. [Enable MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) for all admins in your Office 365 organization.
 
@@ -69,7 +69,7 @@ There are several things you need to do if your tenant is blocked from sending e
 
 [Office 365 email anti-spam protection](anti-spam-protection.md)
 
-[Bulk Mail guidance in the sending limits section of the Exchange Online service description](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
+[Bulk Mail guidance in the sending limits section of the Exchange Online service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 [Email non-delivery reports in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
