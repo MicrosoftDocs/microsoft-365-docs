@@ -18,7 +18,7 @@ To make this even easier, we offer a guide that walks your users through the ini
 ## To prepare the guide
 
 1. Download the version appropriate to your organization:
-- [Microsoft Managed Desktop - Get started with your device (Get Help version)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v2.pdf) - use this version if your end users will use Microsoft's support system.
+- [Microsoft Managed Desktop - Get started with your device (Get Help version)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) - use this version if your end users will use Microsoft's support system.
 - [Microsoft Managed Desktop - Get started with your device](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) - use this version if your end users will *not* use Microsoft's support system.
 2. Use any app capable of opening PDF files to fill in details relevant to your organization:
     - The name of the network your users should connect to in order to continue setup (Step 3 in the guide)
@@ -28,9 +28,9 @@ To make this even easier, we offer a guide that walks your users through the ini
 
 ## "Ready-to-use guide"
 
-We also provide a more generic version of the guide for those organizations that don't need to customize it. There are two versions, one for organizations using Microsoft's support system (the Get Help app), one for those providing their own internal end-user support.
+We also provide a more generic version of the guide for those organizations that don't need to customize it. There are two versions, one for organizations using Microsoft's support system (the Get Help app), one for those providing alternative support for their users. 
 
-- [Microsoft Managed Desktop - Get started with your device (Get Help version - ready to use)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v2.pdf) - use this version if your end users will use Microsoft's support system.
+- [Microsoft Managed Desktop - Get started with your device (Get Help version - ready to use)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) - use this version if your end users will use Microsoft's support system.
 - [Microsoft Managed Desktop - Get started with your device (ready to use)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) - use this version if your end users will *not* use Microsoft's support system.
 
 At this point, you're ready to move on to deploying apps:

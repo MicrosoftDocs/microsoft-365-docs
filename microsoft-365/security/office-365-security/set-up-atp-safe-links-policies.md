@@ -5,7 +5,7 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 06/26/2019
+ms.date:
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -103,6 +103,9 @@ After you have reviewed (or edited) the default ATP Safe Links policy that appli
   - In the **Applied To** section, choose **The recipient is a member of**, and then choose the group(s) you want to include in your policy. Choose **Add**, and then choose **OK**.
     
 6. Choose **Save**.
+
+> [!NOTE]
+> ATP Safe Links policies with higher priority will take precedence. If a user is subject to two or more polices, only the higher priority policy will take effect.
     
 ## Step 4: Learn about ATP Safe Links policy options
 
@@ -117,8 +120,8 @@ Default policy options apply to everyone in your organization.
 |This option  |Does this  |
 |---------|---------|
 | **Block the following URLs** <br/>    | Enables your organization to have a custom list of URLs that are automatically blocked. When users click a URL in this list, they'll be taken to a [warning page](atp-safe-links-warning-pages.md) that explains why the URL is blocked. To learn more, see [Set up a custom blocked URLs list using Office 365 ATP Safe Links](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
-| **Office 365 ProPlus, Office for iOS and Android** <br/>    | When this option is selected, ATP Safe Links protection is applied to URLs in Word, Excel, and PowerPoint files on Windows or Mac OS, Office documents on iOS, or Android devices, Visio 2016 on Windows, and the web versions of Office apps (Word, PowerPoint, Excel, and OneNote), provided the user has signed into Office 365. |
-| **Don't track when users click ATP Safe Links** <br/>  | When this option is selected, click data for URLs in Word, Excel, PowerPoint, and Visio documents is not stored.  <br/> |
+| **Office 365 ProPlus, Office for iOS and Android** <br/>    | When this option is selected, ATP Safe Links protection is applied to URLs in Word, Excel, and PowerPoint files on Windows or Mac OS, email messages in Outlook, Office documents on iOS or Android devices, Visio 2016 files on Windows, and files open in the web versions of Office apps (Word, PowerPoint, Excel, Outlook, and OneNote), provided the user has signed in to Office 365. |
+| **Don't track when users click ATP Safe Links** <br/>  | When this option is selected, click data for URLs in Word, Excel, PowerPoint, Visio documents, and Outlook email messages is not stored.  <br/> |
 |**Don't let users click through ATP Safe Links to original URL** <br/> |When this option is selected, users cannot proceed past a [warning page](atp-safe-links-warning-pages.md) to a URL that is determined to be malicious.  <br/> |
 
 ### Policies that apply to specific email recipients
