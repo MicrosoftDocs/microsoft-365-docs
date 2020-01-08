@@ -204,9 +204,9 @@
     - name: Archive third-party data
       href: archiving-third-party-data.md
       items: 
-        - name: Use a sample connector to archive Facebook data
+        - name: Set up a connector to archive Facebook data
           href: archive-facebook-data-with-sample-connector.md
-        - name: Use a sample connector to archive Twitter data
+        - name: Set up a connector to archive Twitter data
           href: archive-twitter-data-with-sample-connector.md
         - name: Set up a connector to archive LinkedIn data
           href: archive-linkedin-data.md
