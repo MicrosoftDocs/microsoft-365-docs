@@ -34,7 +34,7 @@ Office 365 allows tenants to relay some messages through Exchange Online Protect
 
 - An Office 365 mailbox receives email from an external sender. Mail forwarding is configured on the Office 365 mailbox, so the message goes back out to the user's external email address. This scenario is most common in education environments where students want to use their personal email accounts to view school-related messages.
 
-- Hybrid envrionments that have on-premises email servers that send outgoing mail through EOP.
+- Hybrid environments that have on-premises email servers that send outgoing mail through EOP.
 
 ### Problems with unregistered domains
 
