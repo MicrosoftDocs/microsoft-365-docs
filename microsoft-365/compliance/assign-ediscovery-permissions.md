@@ -123,7 +123,7 @@ This role lets users access case data in [Office 365 Advanced eDiscovery](office
 
 ### RMS Decrypt
 
-This role lets users decrypt RMS-encrypted email messages when exporting search results or preparing search results for analysis in Advanced eDiscovery. For more information about decrypting search results during export, see [Export Content search results](export-search-results.md).
+This role lets users decrypt rights-protected email messages when exporting search results or preparing search results for analysis in Advanced eDiscovery. For more information about decrypting search results during export, see [Export Content search results](export-search-results.md).
 
 ### Search And Purge
 
