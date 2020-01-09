@@ -11,7 +11,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal. Compliance Manager enables you to track, assign, and verify regulatory compliance activities related to Microsoft cloud services."
+description: "Microsoft Compliance Manager is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal. Compliance Manager enables you to track, assign, and verify regulatory compliance activities related to Microsoft products."
 ---
 
 # Work with Microsoft Compliance Manager (Preview)
@@ -110,7 +110,7 @@ What to know when working with groups:
 - Once you add an Assessment to a group, the grouping cannot be changed. You can rename the assessment group, which changes the name of the assessment grouping for all the assessments associated with that group.
 - Related Assessment controls in different Assessments within the same group automatically update when completed.
 - If you add a new Assessment to an existing group, common information from Assessments in that group are copied to the new Assessment.
-- Groups can contain Assessments for the same certification/regulation, but each group can only contain one Assessment for a specific cloud service/certification pair. For example, a group can't contain two Assessments for Office 365 and NIST CSF. A group can contain multiple Assessments for the same cloud service only if the corresponding certification/regulation for each one is different.
+- Groups can contain Assessments for the same certification or regulation, but each group can only contain one Assessment for a specific product-certification pair. For example, a group can't contain two Assessments for Office 365 and NIST CSF. A group can contain multiple Assessments for the same product only if the corresponding certification or regulation for each one is different.
 - Hiding an Assessment breaks the relationship between that Assessment and the group. Any further updates to other related Assessments are no longer reflected in the hidden assessment. ([Learn how to hide Assessments.](#hide-a-template-or-an-assessment))
 - Groups cannot be deleted.
 
