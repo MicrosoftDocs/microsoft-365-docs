@@ -30,19 +30,19 @@ A. By default, content-filtered messages are sent to the recipients Junk Email f
 
  **Q. Does the service have administrator and end user management of spam-quarantined messages?**
 
-A. As an administrator, you can search for and view details about all quarantined email messages in the Exchange admin center (EAC). After locating the message, you can release it to specific users and optionally report it as a false positive (not junk) to the Microsoft Spam Analysis Team. For more information, see [Find and release quarantined messages as an administrator](find-and-release-quarantined-messages-as-an-administrator.md).
+A. As an administrator, you can search for and view details about all quarantined email messages in the Security and Compliance Center (SCC). After locating the message, you can release it to specific users and optionally report it as a false positive (not junk) to the Microsoft Spam Analysis Team. For more information, see [Find and release quarantined messages as an administrator](find-and-release-quarantined-messages-as-an-administrator.md).
 
 As an end user, you can manage your own spam-quarantined messages via:
 
 - The spam quarantine user interface. For more information, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).
 
- **Q. How do I grant access to the spam quarantine for my end users?**
+ **Q. How do I grant access to quarantine for my end users?**
 
 A. In order to access the end user spam quarantine, end users must have a valid Office 365 user ID and password. EOP customers protecting on-premises mailboxes must be valid email users created via directory synchronization or the EAC. For more information about managing users, EOP admins can refer to [Manage mail users in EOP](manage-mail-users-in-eop.md). For EOP standalone customers, we recommend using directory synchronization and enabling Directory Based Edge Blocking; for more information, see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
- **Q. Can anything other than spam be sent to the quarantine?**
+ **Q. What messages can end users access in quarantine?**
 
-A. Yes. Messages that match a mail flow rule (also known as a transport rule) along with messages identified as phish can also be sent to the administrator quarantine, if that's the configured action. The end user quarantine is for spam only.
+A. End users can access their own phish, spam, and bulk mail. End users cannot access their malware, high confidence phish, or messages that match a mail flow rule (also known as a transport rule); these can only be accessed in the administrator quarantine. 
 
  **Q. For how long are messages kept in the quarantine?**
 
