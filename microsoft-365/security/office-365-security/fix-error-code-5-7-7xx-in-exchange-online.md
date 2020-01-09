@@ -44,7 +44,7 @@ Once compromised, tenants will be prevented from sending outbound email for unre
 
 `550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains`
 
-## How to unblocking tenant in order to send again
+## Unblocking tenant in order to send again
 
 There are several things you need to do if your tenant is blocked from sending email:
 
