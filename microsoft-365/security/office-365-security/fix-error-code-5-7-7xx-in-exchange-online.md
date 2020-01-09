@@ -61,7 +61,7 @@ There are several things you need to do if your tenant is blocked from sending e
 6. Lock down your on-premises email servers and verify that they are not compromised.
 
    > [!TIP]
-   > There are many factors here, especially if you're using third-party servers. Regardless, you'll need to verify that all of your outgoing email is now legitimate.
+   > There are many factors here, especially if you're using third-party servers. Regardless, you'll need to verify that your outgoing mail does not include spam.
 
 7. Call Microsoft Support and ask to get your tenant unblocked to send email again. The error code is helpful, but you'll need to prove that your environment has been secured and is incapable of sending spam. To open a support case, see [Contact support for business products - Admin Help](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
