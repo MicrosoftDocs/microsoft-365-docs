@@ -129,7 +129,7 @@ Groups allow you to organize assessments in a way that is logical to you. For ex
 
 When two different assessments in the same group share customer-managed actions, the completion of implementation details, testing, and status for the action in one assessment automatically synchronizes to the same action in any other assessment in the group. This unifies the assigned improvement actions across the group and reduces duplicating work.
 
-Learn how to [create groups in Compliance Manager](working-with-compliance-manager.md#groups). Once you create groups, you can [filter you Compliance Score dashboard](compliance-score-setup.md#filtering-your-dashboard-view) to your score by one or more groups.
+Learn how to [create groups in Compliance Manager](working-with-compliance-manager.md#groups). Once you create groups, you can [filter you Compliance Score dashboard](compliance-score-setup.md#filtering-your-dashboard-view) to view your score by one or more groups.
 
 ## Next step: begin setup
 
