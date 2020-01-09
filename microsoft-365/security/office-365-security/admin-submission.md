@@ -36,7 +36,7 @@ To submit content to Microsoft click the **New submission** button in the top le
 #### Things to know 
 If the filter was bypassed due to tenant or user settings upon submission information about the policy or setting that allowed or blocked the content will be displayed, but not a rescan result. This is because the original Microsoft verdict was overridden by tenant or user settings. 
 
-If the filter was not bypassed due to one or more policies, the rescan will complete in several minutes. Additional information about the submission can be viewed by clicking on the status link when the status updates to completed located in the table of submissions under the submission graph. This includes the results of the policy check and the rescan verdict. 
+If the filter was not bypassed due to one or more policies, the rescan will complete in several minutes. Additional information about the submission can be viewed by clicking on the status link located in the table of submissions under the submission graph when the status updates to completed. This includes the results of the policy check and the rescan verdict. 
 
 It should be noted this does not run the content through the entire Office 365 ATP filtering stack again but runs a partial rescan based on certain attributes of the mail, URL, or file. Additionally all email submissions must contain a network message ID and belong to the same Office365 tenant that is performing the submission to be valid. 
 
