@@ -47,7 +47,7 @@ To use automatic or recommended sensitivity labeling, your users need one of the
 
 ## Support for sensitivity label capabilities in Word, Excel, and PowerPoint
 
-For each capability, the following tables list the minimum version you need for that app to support sensitivity labels using built-in labeling. New versions are made available at different times for different update channels. For more information, including how to configure your update channel so that you can test a new labeling capability that you're interested in, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/en-us/DeployOffice/overview-of-update-channels-for-office-365-proplus).
+For each capability, the following tables list the minimum version you need for that app to support sensitivity labels using built-in labeling. New versions are made available at different times for different update channels. For more information, including how to configure your update channel so that you can test a new labeling capability that you're interested in, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus).
 
 Additional capabilities are available when you install the Azure Information Protection unified labeling client, which runs on Windows computers only. For these details, see [Compare the labeling clients for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
