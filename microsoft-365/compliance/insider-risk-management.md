@@ -18,6 +18,7 @@ Insider risk management is an internal risk solution in Microsoft 365 that helps
 
 Watch the video below to learn how insider risk management can help your organization prevent, detect, and contain risks while prioritizing your organization values, culture, and employee experience:
 <br>
+<br>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4j9CN]
 
 ## Modern risk pain points
