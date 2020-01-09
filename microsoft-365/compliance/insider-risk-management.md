@@ -17,7 +17,7 @@ ms.collection: m365-security-compliance
 Insider risk management is an internal risk solution in Microsoft 365 that helps minimize internal risks by enabling you to detect, investigate, and take actions for risky activities in your organization. Custom policies allow you to detect and take action on malicious and inadvertent risk activities in your organization, including escalating cases to other Microsoft 365 investigation solutions if needed. Risk analysts in your organization can quickly take appropriate actions to make sure users are compliant with your organization's compliance standards.
 
 Watch the video below to learn how insider risk management can help your organization prevent, detect, and contain risks while prioritizing your organization values, culture, and employee experience:
-
+<br>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4j9CN]
 
 ## Modern risk pain points
