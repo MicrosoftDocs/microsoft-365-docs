@@ -85,9 +85,8 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 3. On the billing profile details page, under **Payment method**, choose one of the following options:
 
-    -If you want to update an existing payment method, select **Edit**.
-    
-    -If you want to add a new payment method, select **Replace**.
+    - If you want to update an existing payment method, select **Edit**.
+    - If you want to add a new payment method, select **Replace**.
 
 4. In the right pane, enter the card details, then choose **Save**.
 
