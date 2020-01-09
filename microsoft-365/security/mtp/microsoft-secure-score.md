@@ -131,6 +131,12 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 To make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
 
+### Improvement action update: Require MFA for all users
+
+To reflect the need for businesses to ensure the upmost security while applying policies that work with their business, Microsoft Secure Score is replacing the improvement action called "Require MFA for all users" with one called "Ensure all users can complete multi-factor authentication for secure access."
+
+ This improvement action will require registering for MFA across your directory and enabling the flexibility to establish the right set of policies that fit your organizational needs. The main goal is to ensure all your users can authenticate with multi-factor authentication or risk-based identity verification prompts, matched with the best policies. Whether that is using security defaults and letting Microsoft decide when to challenge or having multiple CA policies that apply scoped decisions when to challenge, you now have the flexibility to decide and ensure your secure score reflects the improved posture.
+
 ### Removing “not scored” and “review” improvement actions
 
 One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable, and review improvement actions are not measured to the same standard as other improvement actions.  
