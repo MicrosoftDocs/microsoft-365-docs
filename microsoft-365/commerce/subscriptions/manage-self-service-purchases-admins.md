@@ -41,7 +41,7 @@ To disable self-service purchase and prevent the purchase of certain products in
     > [!NOTE]
     > If there are multiple purchases for a product, that product is only listed once, and the **Available quantity** column shows the total of all subscriptions bought for that product.
 
-4. The **Users** list is grouped by the names of people who have made self-service purchases.
+4. The **Users** list is grouped by the names of people who made self-service purchases.
 
 5. To export a list of users with licenses for these subscriptions, choose the subscriptions you want to export, then choose **Export users**.
 
