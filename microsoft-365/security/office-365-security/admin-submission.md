@@ -38,7 +38,7 @@ If the filter was bypassed due to tenant or user settings upon submission inform
 
 If the filter was not bypassed due to one or more policies, the rescan will complete in several minutes. Additional information about the submission can be viewed by clicking on the status link located in the table of submissions under the submission graph when the status updates to completed. This includes the results of the policy check and the rescan verdict. 
 
-It should be noted this does not run the content through the entire Office 365 ATP filtering stack again but runs a partial rescan based on certain attributes of the mail, URL, or file. Additionally all email submissions must contain a network message ID and belong to the same Office365 tenant that is performing the submission to be valid. 
+It should be noted this does not run the content through the entire Office 365 ATP filtering stack again but runs a partial rescan based on certain attributes of the mail, URL, or file. Additionally, all email submissions must contain a network message ID and belong to the same Office 365 tenant that is performing the submission to be valid. 
 
 ### Send a suspect URL to Microsoft
 ![Email submission example](../media/submission-url-flyout.png)
