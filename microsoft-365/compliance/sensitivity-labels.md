@@ -184,11 +184,7 @@ Here’s the basic flow of what the admin, user, and Office app do to make sensi
 
 ## Where sensitivity labels can appear
 
-Sensitivity labels appear in the UI of Office apps. To view the current availability for built-in labeling for specific apps and platforms, use the following tables:
-
-- [Support for sensitivity label capabilities in Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint)
-
-- [Support for sensitivity label capabilities in Outlook](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-outlook)
+Sensitivity labels appear in the UI of Office apps, and can be selected from the **Sensitivity** button on the Home tab of the ribbon. To view the current availability for built-in labeling for specific apps and platforms, see [Support for sensitivity label capabilities in apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 If you use the Azure Information Protection unified labeling client for your Windows computers, additional features are available for sensitivity labels. For more information, see [Compare the labeling clients for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
