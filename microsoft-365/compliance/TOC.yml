@@ -199,23 +199,21 @@
           href: find-copy-and-delete-pst-files-in-your-organization.md
         - name: Filter data when importing PST files
           href: filter-data-when-importing-pst-files.md
-        - name: Use network upload to import RMS-encrypted PST files
-          href: use-network-upload-to-import-rms-encrypted-pst-files.md
         - name: FAQ about importing PST files
           href: faqimporting-pst-files-to-office-365.md
-        - name: Archive third-party data
-          href: archiving-third-party-data.md
-          items: 
-            - name: Use a sample connector to archive Facebook data
-              href: archive-facebook-data-with-sample-connector.md
-            - name: Use a sample connector to archive Twitter data
-              href: archive-twitter-data-with-sample-connector.md
-            - name: Set up a connector to archive LinkedIn data
-              href: archive-linkedin-data.md
-            - name: Set up a connector to archive Instant Bloomberg data
-              href: archive-instant-bloomberg-data.md
-            - name: Work with a partner to archive third-party data
-              href: work-with-partner-to-archive-third-party-data.md
+    - name: Archive third-party data
+      href: archiving-third-party-data.md
+      items: 
+        - name: Set up a connector to archive Facebook data
+          href: archive-facebook-data-with-sample-connector.md
+        - name: Set up a connector to archive Twitter data
+          href: archive-twitter-data-with-sample-connector.md
+        - name: Set up a connector to archive LinkedIn data
+          href: archive-linkedin-data.md
+        - name: Set up a connector to archive Instant Bloomberg data
+          href: archive-instant-bloomberg-data.md
+        - name: Work with a partner to archive third-party data
+          href: work-with-partner-to-archive-third-party-data.md
     - name: Store data
       items: 
         - name: Enable archive mailboxes
