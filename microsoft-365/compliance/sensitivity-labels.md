@@ -3,7 +3,7 @@ title: "Overview of sensitivity labels"
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 01/06/2020
+ms.date: 
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -97,9 +97,9 @@ All these options are available when you create a sensitivity label:
 
 When you create your sensitivity labels in your admin center, they appear in a list on the **Sensitivity** tab on the **Labels** page. In this list, the order of the labels is important because it reflects their priority. You want your most restrictive sensitivity label, such as Highly Confidential, to appear at the **bottom** of the list, and your least restrictive sensitivity label, such as Public, to appear at the **top**.
 
-You can apply just one sensitivity label to a document or email. If you require your users to provide a justification for changing the label to a lower classification, the order of this list identifies the lower classifications.
+You can apply just one sensitivity label to a document or email. If you set an option that requires your users to provide a justification for changing a label to a lower classification, the order of this list identifies the lower classifications. However, this option does not apply to sublabels.
 
-Label priority also applies to sublabels.
+The ordering of sublabels is used with [automatic labeling](apply-sensitivity-label-automatically.md), though. When you configure labels to be applied automatically or as a recommendation, multiple matches can result for more than one label. To determine the label to apply or recommend, the label ordering is used: The last sensitive label is selected, and then if applicable, the last sublabel.
 
 ![Option to create a sublabel](media/Sensitivity-label-sublabel-options.png)
 
@@ -184,11 +184,7 @@ Here’s the basic flow of what the admin, user, and Office app do to make sensi
 
 ## Where sensitivity labels can appear
 
-Sensitivity labels appear in the UI of Office apps. To view the current availability for built-in labeling for specific apps and platforms, use the following tables:
-
-- [Support for sensitivity label capabilities in Word, Excel, and PowerPoint](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint)
-
-- [Support for sensitivity label capabilities in Outlook](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-outlook)
+Sensitivity labels appear in the UI of Office apps, and can be selected from the **Sensitivity** button on the Home tab of the ribbon. To view the current availability for built-in labeling for specific apps and platforms, see [Support for sensitivity label capabilities in apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 If you use the Azure Information Protection unified labeling client for your Windows computers, additional features are available for sensitivity labels. For more information, see [Compare the labeling clients for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 

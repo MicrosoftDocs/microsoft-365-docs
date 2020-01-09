@@ -83,7 +83,7 @@ Now that your query clearly identifies the data you want to locate, you can add 
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
-| top 100 by Timestamp'
+| top 100 by Timestamp
 ```
 
 Click **Run query** to see the results. You can expand the screen view so you can focus on your hunting query and the results.
