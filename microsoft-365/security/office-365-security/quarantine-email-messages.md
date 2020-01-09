@@ -22,12 +22,12 @@ description: "You can set up a quarantine for incoming email messages in Office 
 
 You can set up quarantine for incoming email messages in Office 365 where messages that have been filtered as spam, bulk mail, phishing mail, mail that contains malware, and mail that matched a specified mail flow rule can be kept for later review.
   
-By default, filtered messages are sent to the recipients' Junk Email folder, except for mail that contains malware which is sent to quarantine by default. As an admin, you can set up content filter policies to send all filtered messages to quarantine instead. The different actions that you can take for content-filtered messages depend on the [Configure your spam filter policies](configure-your-spam-filter-policies.md).
+By default, filtered messages are sent to quarantine, except for spam bulk and mail which is sent to the recipients' Junk Email folder by default. As an admin, you can set up content filter policies to send all filtered messages to quarantine instead. The different actions that you can take for content-filtered messages depend on the [Configure your spam filter policies](configure-your-spam-filter-policies.md).
   
 Both users and admins can work with quarantined messages. Users can work with just their own filtered messages in quarantine. Admins can search for and manage quarantined messages for all users.
 
 > [!NOTE]
-> Phish messages and messages quarantined by mail flow rule (also known as transport rule) actions are only available in the admin quarantine.
+> High confidence phish messages and messages quarantined by mail flow rule (also known as transport rule) actions are only available in the admin quarantine. Users can access their own phish, spam, and bulk messages. 
   
 Learn more about working with quarantined messages:
   
