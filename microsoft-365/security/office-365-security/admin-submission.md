@@ -25,7 +25,7 @@ To submit content to Microsoft click the **New submission** button in the top le
 
 ### Submit a questionable email to Microsoft
 ![Email submission example](../media/submission-flyout-email.PNG)
-1. Admin submissions supports email file submissions with the file types .msg, and .eml formats. It also supports submissions via Network Message ID. To submit an email select **email** and specify the email **network message ID** or upload the email file. In order to save an email as a file [follow these instructions when using Outlook](https://support.office.com/en-us/article/save-a-message-as-a-file-4821bcd4-7687-4d6d-a486-b89a291a56e2). 
+1. Admin submissions supports email file submissions with the file types .msg, and .eml formats. It also supports submissions via Network Message ID. To submit an email, select **email** and specify the email **network message ID** or upload the email file. In order to save an email as a file, [follow these instructions when using Outlook](https://support.office.com/article/save-a-message-as-a-file-4821bcd4-7687-4d6d-a486-b89a291a56e2). 
 
 2. Specify the recipient(s) to run the policy check against. The policy check will determine if the email bypassed scanning due to user or tenant level policies. An example would be checking if Safe Senders Policy or an Exchange Transport Rule applied to the specified users. There is also a button to select all recipients to save time.  
 
