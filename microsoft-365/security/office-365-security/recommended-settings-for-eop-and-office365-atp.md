@@ -78,9 +78,9 @@ There are several other parameters in the Anti-spam policy called Advanced Spam 
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|Outbound spam policy Recipient Limits - External hourly limit|400|500||
-|Outbound spam policy Recipient Limits - Internal hourly limit|800|1000||
-|Outbound spam policy Recipient Limits - Daily limit|800|1000||
+|Outbound spam policy Recipient Limits - External hourly limit|500|400||
+|Outbound spam policy Recipient Limits - Internal hourly limit|1000|800||
+|Outbound spam policy Recipient Limits - Daily limit|1000|800||
 |Action when a user exceeds the limits|Restrict the user from sending mail|Restrict the user from sending mail||
 
 ### EOP anti-malware policy settings
