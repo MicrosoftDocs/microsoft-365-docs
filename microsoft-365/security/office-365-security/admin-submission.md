@@ -18,7 +18,7 @@ description: "Learn how to submit suspicious emails, phishing emails, spam email
 # How to submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning
 Admins and security professionals can submit emails by selecting the email file or supplying the network message ID. They can also submit URLs, and files for scanning by Microsoft in Office 365. The submissions section includes User Reported messages and is available to all customers using Exchange Online Protection (EOP) or higher SKUs.
 
-When submitting an email information about any policies, settings, or configurations that may have allowed the incoming email into the tenant will be displayed if those settings overrode the scan verdict. Policies that may have allowed a mail include an individual user's safe sender list as well as tenant level policies such as Exchange Transport Rules (ETR). If the content is determined to be malicious additional information may be displayed on the threats found. Finally customers who have Office365 Advanced Threat Protection (ATP) with Threat Intelligence (TI) will see additional rich data about their submissions similar to what is shown in Threat Explorer. 
+When submitting an email information about any policies, settings, or configurations that may have allowed the incoming email into the tenant will be displayed if those settings overrode the scan verdict. Policies that may have allowed a mail include an individual user's safe sender list as well as tenant level policies such as Exchange Transport Rules (ETR). If the content is determined to be malicious, additional information may be displayed on the threats found. Finally customers who have Office 365 Advanced Threat Protection (ATP) with Threat Intelligence (TI) will see additional rich data about their submissions similar to what is shown in Threat Explorer. 
 
 ## How to direct suspicious content to Microsoft for Office 365 scanning
 To submit content to Microsoft click the **New submission** button in the top left hand side of the submissions page. A flyout on the right side of the page appears with the option to submit either an email, URL, or file. 
@@ -64,4 +64,3 @@ It should be noted this does not run the content through the entire Office 365 A
   
 [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
   
-
