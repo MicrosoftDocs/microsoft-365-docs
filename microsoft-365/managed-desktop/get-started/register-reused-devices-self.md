@@ -41,7 +41,7 @@ Microsoft Managed Desktop identifies each device uniquely by referencing its har
 You can use Microsoft Endpoint Configuration Manager to collect the hardware hashes from existing devices that you want to register with Microsoft Managed Desktop.
 
 > [!IMPORTANT]
-> Any devices you want to get this information for must be running Windows 10, version 1703 or later. You also need a device that is a Configuration Manager client connected to System Center Current Branch site. You also need the Reporting Point Site System role set up in your environment with SQL Server Reporting Services enabled. 
+> Any devices you want to get this information for must be running Windows 10, version 1703 or later. You also need a device that is a Configuration Manager client connected to the Configuration Manager (Current Branch) site. You also need the Reporting Point Site System role set up in your environment with SQL Server Reporting Services enabled. 
 
 If you've met all these prerequisites, you're ready to collect the information by following these steps:
 
@@ -144,7 +144,7 @@ Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistration
 ```
 3. Access any directories where there might be entries for the devices. Remove entries for each device from *all* directories, including Windows Server Active Directory Domain Services and 
 Azure Active Directory. Be aware that this removal could take a few hours to completely process.
-4. Access management services where there might be entries for the devices. Remove entries for each device from *all* management services, including System Center Configuration Manger, Microsoft Intune, and Windows Autopilot. Be aware that this removal could take a few hours to completely process.
+4. Access management services where there might be entries for the devices. Remove entries for each device from *all* management services, including Microsoft Endpoint Configuration Manger, Microsoft Intune, and Windows Autopilot. Be aware that this removal could take a few hours to completely process.
 
 Now you can proceed to [register devices](#register-devices).
 

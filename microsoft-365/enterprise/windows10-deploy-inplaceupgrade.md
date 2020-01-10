@@ -40,7 +40,7 @@ See [Manage Windows upgrades with Upgrade Readiness](https://docs.microsoft.com/
 
 Next, follow the guide to use Configuration Manager (Current Branch) to upgrade Windows 7 or later operating system to Windows 10. As with any high-risk deployment, we recommend backing up user data before proceeding. OneDrive cloud storage is ready to use for licensed Microsoft 365 users and can be used to securely store their files. For more info, see [OneDrive quick start guide](https://aka.ms/ODfBquickstartguide). To access this page, you must sign in as a tenant admin or global admin in an Office 365 or Microsoft 365 tenant.
 
-For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for Configuration Manager](https://aka.ms/supportforwin10sccm).
+For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
 
 **To verify readiness to upgrade Windows**
 
@@ -89,7 +89,7 @@ To create an upgrade task sequence, perform the following steps:
 After you create the upgrade task sequence, you'll need to create a collection that contains the devices you will upgrade.
 
 > [!NOTE]
-> Use the following settings to test the deployment on a single device. You can use different membership rules to include groups of devices when you are ready. For more info, see [How to create collections in Configuration Manager](https://aka.ms/sccm-create-collections).
+> Use the following settings to test the deployment on a single device. You can use different membership rules to include groups of devices when you are ready. For more info, see [How to create collections in Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/collections/create-collections).
 
 1. In the Configuration Manager console, in the **Assets and Compliance** workspace, right-click **Device Collections**, and then select **Create Device Collection**. 
 2. In the Create Device Collection wizard, on the **General** page, enter the following settings and then select **Next**:
