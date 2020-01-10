@@ -9,7 +9,7 @@ ms.collection: M365-modern-desktop
 ---
 
 # Battery insights
-This view provides power, battery, and usage metrics for your Microsoft Managed Desktop devices. For these purposes, an app is considered "in use" if it is running and in focus.
+This view provides power, battery, and app usage metrics for your Microsoft Managed Desktop devices. For these purposes, an app is considered "in use" if it is running and in focus.
 
 To view usage data, select the **Battery** tab.
 
