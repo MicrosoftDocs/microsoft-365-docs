@@ -58,8 +58,6 @@ These views give you the option to export, via a button click (in Email > Phish,
 
 The Overview and Emails views will display information within hours of processing rather than in 24 hours (demand re. increased speeds here has been a clear signal)!
 
-
-
 > [!NOTE]
 > A Threat Protection Status report is available to customers who have either [Office 365 ATP](office-365-atp.md) or [Exchange Online Protection](exchange-online-protection-eop.md) (EOP); however, the information that is displayed in the Threat Protection Status report for ATP customers will likely contain different data than what EOP customers might see. For example, the Threat Protection Status report for ATP customers will contain information about [malicious files detected in SharePoint Online, OneDrive, or Microsoft Teams](atp-for-spo-odb-and-teams.md). Such information is specific to ATP, so customers who have EOP but not ATP will not see those details in their Threat Protection Status report.
   
@@ -78,7 +76,28 @@ By default, the Threat Protection Status report shows data for the past seven da
 You can also use the **View data by** menu to change what information is displayed in the report. 
   
 ![Viewing options for ATP Threat Protection Status report](../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
-  
+
+## URL Protection Status report
+
+This report is based data collected, and threats detected, per click (whereas most other email threat related reports are per message data). This report is designed to show threats that come from hyperlinks in email messages and documents, per click. There are two views:
+
+|  |  |
+|---------|---------|
+|URL click protection action   | See the number of URLs blocked, blocked but overridden with a click-through by a user, overridden with a click-through by a user, and allowed.        |
+|URL click by application     | See the application from which the URL was clicked.        |
+|  |  |
+
+In the details table, you'll be able to see more information regarding click time and user information. Finally, keep in mind the URL Protection Status report shows the protection from ATP Safe Links feature, so only customers who have enabled ATP Safe Links will see data reflected on this report.
+
+> [!NOTE]
+> This is a *protection trend report*, meaning data represents trends in a larger dataset. Reporting isn't available in real time here. For real time URL click data, please continue to use URL Trace.
+
+## Compromised Users report
+
+This report, available to anyone with Exchange Online Protection, shows the number of user accounts marked as Suspicious or Restricted users, data particularly useful as accounts enter either of the states that indicate the user account may be problematic, or even compromised. With frequent use, the Compromised User report can spot spikes, and even trends, in accounts marked in suspicious or restricted states, giving evidence there could be an issue with security and the wellness of your tenant.
+
+![The compromised users report as it appears in Office 365.](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## ATP File Types report
 
 The **ATP File Types** report shows you the type of files detected as malicious by [ATP Safe Attachments](atp-safe-attachments.md).
