@@ -163,7 +163,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <p><a href="offering-eu-model-clauses.md">EU Model Clauses</a></p>
                         <p><a href="offering-eu-us-privacy-shield.md">EU-US Privacy Shield</a></p>
                         <p><a href="https://www.trustcenter.cn/compliance/default.html#GB18030">GB 18030 (China)</a></p>
-                        <p><a href="offering-gdpr-eu.md">GDPR (EU)</a></p>
+                        <p><a href="gdpr.md">GDPR (EU)</a></p>
                         <p><a href="offering-g-cloud-uk.md">G-Cloud (UK)</a></p>
                         <p><a href="https://www.idw.de/the-idw/about-the-idw">IDW PS 951 (Germany)</a></p>
                         <p><a href="offering-ISMS-korea.md">ISMS (Korea)</a></p>

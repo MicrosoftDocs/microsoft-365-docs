@@ -21,6 +21,7 @@ description: "With a data loss prevention (DLP) policy in the Security &amp; Com
 
 # Overview of data loss prevention
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
+<!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
 > Data loss prevention capabilities were recently added to Microsoft Teams chat and channel messages for users licensed for Office 365 Advanced Compliance, which is available as a standalone option and is included in Office 365 E5 and Microsoft 365 E5 Compliance. To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Services Licensing Guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
