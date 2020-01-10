@@ -13,6 +13,7 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft GDPR
 ---
 
 # Data Protection Impact Assessments: Guidance for Data Controllers Using Microsoft Azure

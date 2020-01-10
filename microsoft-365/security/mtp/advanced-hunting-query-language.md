@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-schema-tables.md) specifically structured for advanced hunting. To understand these concepts better, run your first query.
 
@@ -30,7 +30,7 @@ Advanced hunting is based on the [Kusto query language](https://docs.microsoft.c
 
 in the Microsoft 365 security center, go to **Hunting** to run your first query. Use the following example:
 
-```
+```kusto
 // Finds PowerShell execution events that could involve a download.
 DeviceProcessEvents 
 | where Timestamp > ago(7d)
@@ -50,7 +50,7 @@ This is how it will look like in advanced hunting.
 
 The query starts with a short comment describing what it is for. This helps if you later decide to save your query and share it with others in your organization.
 
-```
+```kusto
 // Finds PowerShell execution events that could involve a download.
 DeviceProcessEvents
 ```
@@ -59,19 +59,19 @@ The query itself will typically start with a table name followed by a series of 
 
 The first piped element is a time filter scoped within the previous seven days. Keeping the time range as narrow as possible ensures that queries perform well, return manageable results, and don't time out.
 
-```
+```kusto
 | where Timestamp > ago(7d)
 ```
 
 The time range is immediately followed by a search for files representing the PowerShell application.
 
-```
+```kusto
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
 ```
 
 Afterwards, the query looks for command lines that are typically used with PowerShell to download files.
 
-```
+```kusto
 | where ProcessCommandLine has "Net.WebClient"
         or ProcessCommandLine has "DownloadFile"
         or ProcessCommandLine has "Invoke-WebRequest"
@@ -81,9 +81,9 @@ Afterwards, the query looks for command lines that are typically used with Power
 
 Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. `project` returns specific columns and `top` limits the number of results, making the results well-formatted and reasonably large and easy to process.
 
-```
+```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
-| top 100 by Timestamp'
+| top 100 by Timestamp
 ```
 
 Click **Run query** to see the results. You can expand the screen view so you can focus on your hunting query and the results.

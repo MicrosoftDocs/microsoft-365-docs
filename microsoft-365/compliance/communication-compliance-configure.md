@@ -1,5 +1,6 @@
 ---
-title: "Configure communication compliance for Microsoft 365 (preview)"
+title: "Configure communication compliance (preview)"
+description: "Set up communication compliance policies to configure employee communications for review."
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,10 +16,9 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Set up communication compliance policies to configure employee communications for review."
 ---
 
-# Configure communication compliance for Microsoft 365 (preview)
+# Configure communication compliance in Microsoft 365 (preview)
 
 > [!IMPORTANT]
 > This topic applies to configuring communication compliance in a Microsoft 365 subscription. If you want to configure Supervision policies for an Office 365 subscription, see [Configure supervision for Office 365](supervision-policies.md).
@@ -51,6 +51,10 @@ Follow these steps to set up and use communication compliance in your Microsoft 
 
     Test your communication compliance policy to make sure it functions as desired. It's important to ensure that your compliance strategy is meeting your standards.
 
+- **Step 6 (optional)**: [Enable auditing for your communication compliance policies](#step-6-enable-auditing-for-your-communication-compliance-policies-optional)
+
+    Enable auditing for your organization to record managment activities for communication compliance policies.
+
 ## Step 1: Set up groups for communication compliance (optional)
 
  When you create a communication compliance policy, you define who has their communications reviewed and who performs reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, you can create groups for people who have their communication reviewed and groups for people who review those communications. If you're using groups, you may need several. For example, if you want to monitor communications between two distinct groups of people or if you want to specify a group that isn't going to be supervised.
@@ -71,6 +75,9 @@ For more information about setting up groups, see:
 - [Overview of Office 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## Step 2: Make communication compliance available in your organization (required)
+
+> [!Important]
+> By default, Global Administrators do not have access to communication compliance features. The roles assigned in this step are required before any communication compliance features will be accessible.
 
 To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the **Supervisory Review Administrator** role. Additionally, to investigate and remediate messages with policy matches, you must create a group for reviewers with the **Supervisory Review Administrator**, **Case Management**, and **Review** roles.
 
@@ -161,3 +168,12 @@ Follow these steps to test your communication compliance policy:
 3. Sign in to Microsoft 365 as a reviewer designated in the communication compliance policy. Navigate to **Communication compliance** > **Alerts** to view the alerts for your policies.
 
 4. Remediate the alert using the remediation controls and verify that the alert is properly resolved.
+
+## Step 6: Enable auditing for your communication compliance policies (optional)
+
+After you've tested your policies, you may want to enable auditing so that activities associated with communication compliance management are recorded. This may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes.
+
+When auditing is enabled, communication compliance policies have built-in audit trails for complete readiness for internal or external audits. You can use the **Export review activities** control on the main page for any policy to generate an audit file or view audit activities in the unified audit log if auditing is enabled.
+
+To turn auditing on, click **Start recording user and admin activity** on the **Audit log search** page in the Office 365 Security & Compliance Center. If you don't see this link, auditing has already been turned on for your organization. After you turn auditing on, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this once. For more information about the audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+

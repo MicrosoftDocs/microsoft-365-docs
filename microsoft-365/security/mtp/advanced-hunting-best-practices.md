@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ## Optimize query performance
 Apply these recommendations to get results faster and avoid timeouts while running complex queries:
@@ -47,7 +47,7 @@ To get a unique identifier for a process on a specific machine, use the process 
 The following example query finds processes that access more than 10 IP addresses over port 445 (SMB), possibly scanning for file shares.
 
 Example query:
-```
+```kusto
 DeviceNetworkEvents
 | where RemotePort == 445 and Timestamp > ago(12h) and InitiatingProcessId !in (0, 4)
 | summarize RemoteIPCount=dcount(RemoteIP) by DeviceName, InitiatingProcessId, InitiatingProcessCreationTime, InitiatingProcessFileName
@@ -71,7 +71,7 @@ To create more durable queries using command lines, apply the following practice
 
 The following examples show various ways to construct a query that looks for the file *net.exe* to stop the Windows Defender Firewall service:
 
-```
+```kusto
 // Non-durable query - do not use
 DeviceProcessEvents
 | where ProcessCommandLine == "net stop MpsSvc"

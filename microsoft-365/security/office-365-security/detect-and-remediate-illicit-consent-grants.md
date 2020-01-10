@@ -26,6 +26,7 @@ In an illicit consent grant attack, the attacker creates an Azure-registered app
 ## What does an illicit consent grant attack look like in Office 365?
 
 You need to search the Office 365 **audit log** to find signs, also called Indicators of Compromise (IOC) of this attack. For organizations with many Azure-registered applications and a large user base, the best practice is to review your organizations consent grants on a weekly basis.
+
 ### Steps for finding signs of this attack
 
 1. Open the **Security and Compliance Center** in your Office 365 tenant.

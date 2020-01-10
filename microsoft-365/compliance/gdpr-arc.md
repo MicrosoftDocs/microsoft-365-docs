@@ -12,6 +12,7 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
+titleSuffix: Microsoft GDPR
 ---
 
 # Support your GDPR program with Accountability Readiness Checklists

@@ -55,21 +55,21 @@ To have permission to access Microsoft Secure Score, you must be assigned one of
 
 With read and write access, you can make changes and directly interact with Secure Score. You can also assign read-only access to other users.
 
-* CompanyAdministrator
-* SecurityAdministrator
-* ExchangeAdmin
-* SharePointAdmin
+* Global administrator
+* Security administrator
+* Exchange administrator
+* SharePoint administrator
 
 ### Read-only roles
 
 With read-only access, you are not able to edit status or notes for an improvement action, edit score zones, or edit custom comparisons.
 
-* HelpdeskAdmin
-* UserAccountAdmin
-* ServiceSupportAdmin
-* SecurityReader
-* SecurityOperator
-* GlobalReader
+* Helpdesk administrator
+* User administrator
+* Service administrator
+* Security reader
+* Security operator
+* Global reader
 
 ### Graph API
 
@@ -130,6 +130,21 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 ## What's coming?
 
 To make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
+
+### MFA improvement action updates
+
+To reflect the need for businesses to ensure the upmost security while applying policies that work with their business, Microsoft Secure Score is removing three improvement actions centered around multi-factor authentication, and adding two.
+
+The three that will be removed:
+- Register all users for multi-factor authentication
+- Require MFA for all users
+- Require MFA for Azure AD privileged roles
+
+New improvement actions:
+- Ensure all users can complete multi-factor authentication for secure access
+- Require MFA for administrative roles
+
+ These new improvement actions will require registering your users or admins for multi-factor authentication (MFA) across your directory and establishing the right set of policies that fit your organizational needs. The main goal is have flexibility while ensuring all your users and admins can authenticate with multiple factors or risk-based identity verification prompts. That can take the form of setting security defaults that let Microsoft decide when to challenge users for MFA, or having multiple policies that apply scoped decisions.
 
 ### Removing “not scored” and “review” improvement actions
 

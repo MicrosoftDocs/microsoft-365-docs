@@ -11,6 +11,7 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
 # Securities and Exchange Commission: Regulation Systems Compliance and Integrity (SCI)

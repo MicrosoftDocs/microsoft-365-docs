@@ -22,7 +22,7 @@ description: You can use groups to automate management of some administrative ta
 <a name="identity-self-service-groups"></a>
 ## Allow users to create and manage their own groups
 
-*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365*
 
 In this section, you'll identify Azure Active Directory (Azure AD) groups that can be managed by group owners instead of IT administrators. Known as *self-service group management*, this feature allows group owners who are not assigned an administrative role to create and manage security groups. 
 
@@ -39,7 +39,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 <a name="identity-dyn-groups"></a>
 ## Set up dynamic group membership
 
-*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365*
 
 In this section, you'll create a series of rules that automatically add or remove user accounts as members of an Azure AD group. This is known as *dynamic group membership*. The rules are based on user account attributes, such as Department or Country.
 
@@ -69,7 +69,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 <a name="identity-group-license"></a>
 ## Set up automatic licensing
 
-*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365*
 
 In this section, you'll configure security groups in Azure AD to automatically assign licenses from a set of subscriptions to all the members of the group. This is known as *group-based licensing*. If a user account is added to or removed from the group, the licenses for the group’s subscriptions will be automatically assigned or unassigned from the user account.
 

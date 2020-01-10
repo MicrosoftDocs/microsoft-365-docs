@@ -108,7 +108,7 @@ Management:
 
 ## Mapping Contoso's business needs to Microsoft 365 Enterprise
 
-Contoso's IT department determined the following mapping of business needs to Microsoft 365 Enterprise E5 features prior to deployment:
+Contoso's IT department determined the following mapping of business needs to Microsoft 365 E5 features prior to deployment:
 
 ||||
 |:-------|:-----|:-----|

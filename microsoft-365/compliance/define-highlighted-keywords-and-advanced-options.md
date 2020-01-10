@@ -3,6 +3,7 @@ title: "Define highlighted keywords and advanced options in Office 365 Advanced 
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp

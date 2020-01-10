@@ -82,7 +82,7 @@ Next, you [Connect with the Azure Active Directory PowerShell for Graph module
   
 Fill in your organization name, your location, and a common password, and then run these commands from the PowerShell command prompt or Integrated Script Environment (ISE) to create user accounts and add them to their groups:
   
-```
+```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
 $commonPassword="<common password for all the new accounts>"

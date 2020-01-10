@@ -3,6 +3,7 @@ title: "Understand Assessment in Relevance in Office 365 Advanced eDiscovery"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 09/14/2017
 audience: Admin
 ms.topic: conceptual

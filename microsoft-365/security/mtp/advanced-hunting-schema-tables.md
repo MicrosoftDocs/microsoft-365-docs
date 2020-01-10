@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 The [advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about machines and entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the advanced hunting schema.
 

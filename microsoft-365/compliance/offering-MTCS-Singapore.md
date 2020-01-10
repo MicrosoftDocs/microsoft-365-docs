@@ -11,6 +11,7 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
 # Multi-Tier Cloud Security (MTCS) Standard for Singapore

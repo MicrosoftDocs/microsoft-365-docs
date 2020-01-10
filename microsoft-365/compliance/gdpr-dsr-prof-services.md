@@ -2,7 +2,6 @@
 title: Microsoft Support and Professional Services Data Subject Requests for the GDPR and CCPA
 description: How Microsoft Support and Professional Services handle data subject requests for the GDPR and CCPA. 
 keywords: Professional Services, sMicrosoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -13,6 +12,7 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
+titleSuffix: Microsoft GDPR
 ---
 
 # Microsoft Support and Professional Services Data Subject Requests for the GDPR and CCPA
