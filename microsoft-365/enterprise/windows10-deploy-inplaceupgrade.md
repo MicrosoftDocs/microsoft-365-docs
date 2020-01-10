@@ -22,7 +22,7 @@ The simplest path to upgrade PCs currently running Windows 7 or Windows 8.1 to W
 
 If you have existing computers running Windows 7 or Windows 8.1, we recommend this path if your organization is deploying Windows 10. This leverages the Windows installation program (Setup.exe) to perform an in-place upgrade, which automatically preserves all data, settings, applications, and drivers from the existing operating system version. This requires the least IT effort, because there is no need for any complex deployment infrastructure.
 
-Follow these steps to configure and deploy a Windows 10 Enterprise image using Configuration Manager as an in-place upgrade.
+Follow these steps to configure and deploy a Windows 10 Enterprise image using Microsoft Endpoint Configuration Manager as an in-place upgrade.
 
 ## The Windows 10 deployment with Configuration Manager poster
 
