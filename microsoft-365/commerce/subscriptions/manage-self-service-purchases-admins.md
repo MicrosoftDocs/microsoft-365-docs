@@ -41,7 +41,7 @@ You can also control whether users in your organization can make self-service pu
 
 4. The **Users** list is grouped by the names of people who made self-service purchases.
 
-5. To export a list of users with licenses for these subscriptions, choose the subscriptions you want to export, then choose **Export users**.
+5. To export a list of users with licenses for these subscriptions, choose the subscriptions that you want to export, then choose **Export users**.
 
 ## Disable or enable self-service purchases
 
@@ -63,7 +63,7 @@ You can assign existing licenses or purchase additional subscriptions through ex
 
 2. Go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 
-3. Find and choose the product you want to buy, then choose **Buy**.
+3. Find and choose the product that you want to buy, then choose **Buy**.
 
 4. Complete the remaining steps to complete your purchase.
 

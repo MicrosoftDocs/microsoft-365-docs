@@ -31,7 +31,7 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
-2. Find the subscription you want to buy more or reduce licenses for.
+2. Find the subscription that you want to buy more or reduce licenses for.
 
 3. Choose **Add/remove licenses**.
 
@@ -61,7 +61,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 2. Choose the product that you want to unassign licenses for.
 
-3. Choose the users you want to unassign licenses from.
+3. Choose the users that you want to unassign licenses from.
 
 4. Choose **Unassign licenses**.
 
@@ -71,7 +71,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
-2. Find the subscription you want to cancel.
+2. Find the subscription that you want to cancel.
 
 3. In the **Settings & actions** section, choose **Cancel subscription**.
 
@@ -112,7 +112,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 1. In the admin center, go to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
 
-2. Under **Invoices** select the invoice you want to view.
+2. Under **Invoices** select the invoice that you want to view.
 
 ## Need help? Contact us.
 
