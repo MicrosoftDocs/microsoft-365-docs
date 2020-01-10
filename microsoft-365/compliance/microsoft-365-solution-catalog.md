@@ -52,8 +52,8 @@ The **Insider risk management** section on the home page shows you at a glance h
 
 From here, you'll see cards for the following solutions:
 
-- [Insider risk management](insider-risk-management.md): Allows you to detect and take action on malicious and inadvertent risk activities in your organization, including escalating cases to other Microsoft 365 investigation solutions if needed.
 - [Communication compliance](communication-compliance.md): Minimizes communication risks by helping you automatically capture inappropriate messages, investigate possible policy violations, and take steps to minimize harm.
+- [Insider risk management](insider-risk-management.md): Detect risky activity across your organization to help you quickly identify, investigate, and take action on insider risks and threats.
 
 ## Discovery & response section
 
