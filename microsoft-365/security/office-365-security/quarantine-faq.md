@@ -3,7 +3,7 @@ title: "Quarantine FAQ"
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 06/16/2017
+ms.date:
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -22,7 +22,7 @@ This topic provides frequently asked questions and answers about the hosted quar
 
  **Q. How do I manage malware-quarantined messages in quarantine?**
 
-You need to use the Security &amp; Compliance Center in order to view and work with messages that were sent to quarantine because they contain malware. For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
+You need to use the Security & Compliance Center in order to view and work with messages that were sent to quarantine because they contain malware. For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
 
  **Q. How do I configure the service to send spam-quarantined messages to the quarantine?**
 
@@ -30,7 +30,7 @@ A. By default, content-filtered messages are sent to the recipients Junk Email f
 
  **Q. Does the service have administrator and end user management of spam-quarantined messages?**
 
-A. As an administrator, you can search for and view details about all quarantined email messages in the Security and Compliance Center (SCC). After locating the message, you can release it to specific users and optionally report it as a false positive (not junk) to the Microsoft Spam Analysis Team. For more information, see [Find and release quarantined messages as an administrator](find-and-release-quarantined-messages-as-an-administrator.md).
+A. As an admin, you can search for and view details about all quarantined email messages in the Security and Compliance Center (SCC). After locating the message, you can release it to specific users and optionally report it as a false positive (not junk) to the Microsoft Spam Analysis Team. For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
 
 As an end user, you can manage your own spam-quarantined messages via:
 
@@ -42,7 +42,7 @@ A. In order to access the end user spam quarantine, end users must have a valid 
 
  **Q. What messages can end users access in quarantine?**
 
-A. End users can access their own phish, spam, and bulk mail. End users cannot access their malware, high confidence phish, or messages that match a mail flow rule (also known as a transport rule); these can only be accessed in the administrator quarantine. 
+A. End users can access their own phish, spam, and bulk mail. End users can't access their own malware, high confidence phish, or messages that matched a mail flow rule (also known as a transport rule); these are only available in the admin quarantine. 
 
  **Q. For how long are messages kept in the quarantine?**
 
