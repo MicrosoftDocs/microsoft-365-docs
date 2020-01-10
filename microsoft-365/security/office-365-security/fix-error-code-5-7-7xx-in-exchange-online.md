@@ -44,11 +44,11 @@ Once compromised, tenants will be prevented from sending outbound email for unre
 
 `550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains`
 
-## How to unblocking tenant in order to send again
+## Unblocking tenant in order to send again
 
 There are several things you need to do if your tenant is blocked from sending email:
 
-1. Verify that all of your email domains are registered. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) and [Manage accepted domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Change the password for your admin accounts. If a tenant is blocked from sending, it's most likely that an admin account was compromised. Changing passwords is the first step to prevent the attacker from doing more harm.
 
 2. [Enable MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) for all admins in your Office 365 organization.
 
@@ -61,7 +61,7 @@ There are several things you need to do if your tenant is blocked from sending e
 6. Lock down your on-premises email servers and verify that they are not compromised.
 
    > [!TIP]
-   > There are many factors here, especially if you're using third-party servers. Regardless, you'll need to verify that all of your outgoing email is now legitimate.
+   > There are many factors here, especially if you're using third-party servers. Regardless, you'll need to verify that your outgoing mail does not include spam.
 
 7. Call Microsoft Support and ask to get your tenant unblocked to send email again. The error code is helpful, but you'll need to prove that your environment has been secured and is incapable of sending spam. To open a support case, see [Contact support for business products - Admin Help](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
