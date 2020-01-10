@@ -21,7 +21,7 @@ As a user, you can buy subscriptions to certain products and assign licenses for
 > [!NOTE]
 > You must turn on the new admin center experience.
 
-Your admin has a read-only view into any subscriptions you buy. They can view who has licenses for those subscriptions.
+Your admin has a read-only view into any subscriptions that you buy. They can see the product, purchaser name, subscriptions purchased, expiry date, purchase price, and assigned users for each subscription that you buy.
 
 ## View your subscriptions
 

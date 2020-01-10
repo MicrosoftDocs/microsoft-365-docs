@@ -16,11 +16,9 @@ description: "Admins can learn how to manage self-service purchases made by user
 
 # Manage self-service purchases (Admin)
 
-As an admin, you can see self-service purchases made by people in your organization. You can also see a list of users who have licenses for subscriptions bought through a self-service purchase.
+As an admin, you can see self-service purchases made by people in your organization. You can see the product, purchaser name, subscriptions purchased, expiry date, purchase price, and assigned users for each self-service purchase. If required for your organization, you can turn off self-service purchasing on a per product basis via PowerShell. You have the same data management and access policies over products bought through self-service purchase or centrally.
 
-Because self-service purchases are made by other people in your organization, you can’t see invoices, payment methods, or order history for those subscriptions. You can only see this information for subscriptions you buy. You also can’t make changes to self-service purchases made by users in your organization.
-
-To disable self-service purchase and prevent the purchase of certain products in your organization, use the [AllowSelfServicePurchase](allowselfservicepurchase-powershell.md) parameter value for the **MSCommerce** PowerShell module.
+You can also control whether users in your organization can make self-service purchases. For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
 ## View self-service subscriptions
 
@@ -59,7 +57,7 @@ For more information, see [Use AllowSelfServicePurchase for the MSCommerce Power
 
 ## Centralize licenses under a single subscription
 
-If you want to centralize licenses under one subscription, you can do that. For example, if someone made a self-service purchase and then left your company, you can centralize the people who have licenses for that subscription under a single subscription.
+You can assign existing licenses or purchase additional subscriptions through existing agreements for users assigned to self-service purchases. After you assign these centrally purchased licenses, you can request that purchasers cancel their existing subscriptions.
 
 1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> with your Global admin or Billing admin account.
 
@@ -73,7 +71,7 @@ If you want to centralize licenses under one subscription, you can do that. For 
 
 6. Assign licenses to everyone who has a license in the other subscription. For full steps, see [Assign licenses to users](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
 
-7. If possible, contact the person who bought the self-service purchase subscription and ask them to cancel it.
+7. Contact the person who bought the self-service purchase subscription and ask them to cancel it.
 
 ## Need help? Contact us.
 
