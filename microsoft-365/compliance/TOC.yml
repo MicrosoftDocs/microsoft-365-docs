@@ -34,6 +34,8 @@
           href: insider-risk-management-cases.md
         - name: Review data with the insider risk content explorer (preview)
           href: insider-risk-management-content-explorer.md
+        - name: Add users to insider risk policies (preview)
+          href: insider-risk-management-users.md
         - name: Create insider risk notices (preview)
           href: insider-risk-management-notices.md
     - name: Communication compliance (preview)
