@@ -908,7 +908,7 @@
 
                     - name: Find and release quarantined messages as an administrator
 
-                      href: ./office-365-security/find-and-release-quarantined-messages-as-an-administrator.md
+                      href: ./office-365-security/manage-quarantined-messages-and-files.md
 
                 - name: Troubleshooting and support information
 

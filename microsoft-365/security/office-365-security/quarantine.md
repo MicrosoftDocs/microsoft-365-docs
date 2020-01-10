@@ -22,7 +22,7 @@ The following topics provide information about the hosted quarantine for both Ex
 
 - [Quarantine FAQ](quarantine-faq.md) - Provides general questions and answers about the quarantine for both admins and end users
 
-- [Find and release quarantined messages as an administrator](find-and-release-quarantined-messages-as-an-administrator.md): Describes how admins can find and release any message that resides in the quarantine in the Exchange admin center (EAC), and optionally report it as a false positive (not junk) message to Microsoft.
+- [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md): Describes how admins can find and release any message that resides in the quarantine in the Exchange admin center (EAC), and optionally report it as a false positive (not junk) message to Microsoft.
 
 - [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md): Describes how end users can find and release their own spam-quarantined messages in the spam quarantine user interface, and report them as not junk to Microsoft.
 
