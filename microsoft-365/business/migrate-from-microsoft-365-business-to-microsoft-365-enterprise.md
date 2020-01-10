@@ -69,7 +69,7 @@ This table shows the differences between Microsoft 365 Business and Microsoft 36
 | Office 365 Data Loss Prevention, Azure Information Protection Plan 1	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | Window Information Protection for endpoint DLP	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | **Client Access License (CAL rights)**	| | | 	
-| Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, System Center Configuration Manager, Windows Rights Management)| | 		![Included with Microsoft 365 E3](./media/check-mark.png) | 
+| Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, Microsoft Endpoint Configuration Manager, Windows Rights Management)| | 		![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | **Compliance**		| | | 
 | Unlimited email archiving	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | Compliance Manager	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 

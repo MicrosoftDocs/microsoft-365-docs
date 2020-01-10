@@ -38,7 +38,7 @@ Microsoft Managed Desktop identifies each device uniquely by referencing its har
 
 #### Configuration Manager
 
-You can use System Center Configuration Manager to collect the hardware hashes from existing devices that you want to register with Microsoft Managed Desktop.
+You can use Microsoft Endpoint Configuration Manager to collect the hardware hashes from existing devices that you want to register with Microsoft Managed Desktop.
 
 > [!IMPORTANT]
 > Any devices you want to get this information for must be running Windows 10, version 1703 or later. You also need a device that is a Configuration Manager client connected to System Center Current Branch site. You also need the Reporting Point Site System role set up in your environment with SQL Server Reporting Services enabled. 
