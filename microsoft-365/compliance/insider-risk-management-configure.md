@@ -51,7 +51,7 @@ Insider risk management supports importing user signals and log data imported fr
 
 Visit the [HR data connector solution](https://compliance.microsoft.com/connectorlanding/solution/customhrconnector) in the Microsoft 365 compliance center to configure the connector and to complete this step.
 
-> [!UMPORTANT]
+> [!IMPORTANT]
 > If you plan on configuring a policy using the *Departing employee data theft* template, you need to configure the Microsoft 365 human resources connector to use the full signal detection features of the policy template.
 
 For more information about setting up a human resources data connector, see [archive third-party data in Office 365](archiving-third-party-data.md).
