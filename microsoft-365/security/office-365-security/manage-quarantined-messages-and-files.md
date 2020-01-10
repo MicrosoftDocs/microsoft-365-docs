@@ -3,7 +3,7 @@ title: "Manage quarantined messages and files as an administrator in Office 365"
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
-ms.date: 09/05/2018
+ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -28,7 +28,7 @@ You must have global administrator (GA) permissions in Office 365, or be a membe
 
 ## What permissions are needed to access administrator quarantine?
 
-The permissions to manage quarantine are controlled by membership in **Security  & Compliance Center* role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+The permissions to manage quarantine are controlled by membership in **Security  & Compliance Center* role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 The Security & Compliance role groups that give permissions to manage quarantine are:
 
