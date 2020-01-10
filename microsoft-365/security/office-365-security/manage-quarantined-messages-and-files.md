@@ -26,26 +26,15 @@ By default, Office 365 sends phishing messages and messages containing malware d
 
 You must have global administrator (GA) permissions in Office 365, or be a member of one or more Security & Compliance Center role groups, to work with quarantined messages or quarantined files. See [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) for more information.
 
-> [!IMPORTANT]
-> By default, spam, bulk and phishing messages are kept in quarantine for 30 days. Messages that are quarantined because they matched a mail flow rule are kept in quarantine for 7 days. Malware messages are kept in quarantine for 15 days. You can customize the spam quarantine time in anti-spam settings in the Security & Compliance Center. When Office 365 deletes a message from quarantine, you can't get it back. If you like, you can change the retention period for quarantined messages in your anti-spam filter policies. For more information, see [Setting the quarantine retention period](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime).
+## What permissions are needed to access administrator quarantine?
 
-## What do you need to know before you begin?
+The permissions to manage quarantine are controlled by membership in **Security  & Compliance Center* role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
-Although the quarantine is in the Security & Compliance Center, the permissions to manage messages in the quarantine are controlled by membership in **Exchange Online** role groups. For more information about role groups in Exchange Online, see [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+The Security & Compliance role groups that give permissions to manage quarantine are:
 
-The Exchange Online role groups that give permissions to manage quarantine files are:
-
-- **Organization Management**: Global admins are automatically members of this group.
+- **Quarantine Administrator**
 
 - **Security Administrator**
-
-- **Hygiene Management**
-
-The Exchange Online role groups that give permissions to view quarantine files are:
-
-- **View-Only Organization Management**
-
-- **Security Reader**
 
 ## View your organization's quarantined messages
 

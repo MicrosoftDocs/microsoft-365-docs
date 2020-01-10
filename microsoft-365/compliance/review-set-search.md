@@ -23,7 +23,7 @@ In most cases, it will be useful to be able to dig deeper into the data in a rev
 
 ## Creating and running a query in a review set
 
-To create and run a query on the documents in a review set, click **New query** in the review set. After you name your query and define the conditions, click **Save** to save and run the query. To run a query that has been previously saved, click a saved query. 
+To create and run a query on the documents in a review set, click **New query** in the review set. After you name your query and define the conditions, click **Save** to save and run the query. To run a query that has been previously saved, click a saved query.
 
 ![Review set queries](media/AeDReviewSetQueries.png)
 
