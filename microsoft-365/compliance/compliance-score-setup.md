@@ -67,7 +67,7 @@ The Compliance Score dashboard is designed to provide you an at-a-glance view of
 
 ### Overall compliance score
 
-Your compliance score, featured prominently at the top, shows a percentage based on points achievable for completing improvement actions addressing key data protection standards and regulations. 
+Your compliance score, featured prominently at the top, shows a percentage based on points achievable for completing improvement actions addressing key data protection standards and regulations.
 
 When you come to Compliance Score for the first time, your initial score is based on the built-in Microsoft 365 data protection baseline—a set of controls that includes common industry regulations and standards. Because Compliance Score scans your system of existing Microsoft 365 solutions, it gives an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization.
 
@@ -90,14 +90,14 @@ This section gives you a more detailed view of your score in two different ways:
 
 ### Filtering your dashboard view
 
-You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, type of action, groups, or data protection categories. Filtering your view in this way will also filter the score on your dashboard, showing how many points you’ve achieved out of total possible points based on your filter criteria.
+You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, type of action, [groups of assessments you set up](working-with-compliance-manager.md#groups), or data protection categories. Filtering your view in this way will also filter the score on your dashboard, showing how many points you’ve achieved out of total possible points based on your filter criteria.
 
 To apply filters:
 
 1. Select **Filter** on the upper-right side of the dashboard.
 2. Select your filter criteria from the flyout **Filters** pane, then select **Apply**.
 
-You will see your score adjusted in real-time, and you will only see improvement actions, solutions, and score breakdown information that correspond to your filter criteria. If you sign out of Compliance Score, your filtered view remains when you sign back in.
+Once a filter is applied, you will see your score adjusted in real-time. The compliance score percentage and breakdown information, and the improvement actions and solutions, now only pertain to data covered by your filter criteria. If you sign out of Compliance Score, your filtered view remains when you sign back in.
 
 To remove filters:
 
