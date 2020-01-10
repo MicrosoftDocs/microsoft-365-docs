@@ -26,8 +26,15 @@ By default, Office 365 sends phishing messages and messages containing malware d
 
 You must have global administrator (GA) permissions in Office 365, or be a member of one or more Security & Compliance Center role groups, to work with quarantined messages or quarantined files. See [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) for more information.
 
-> [!IMPORTANT]
->By default, spam, bulk and phishing messages are kept in quarantine for 30 days. Messages that are quarantined because they matched a mail flow rule are kept in quarantine for 7 days. Malware messages are kept in quarantine for 15 days. You can customize the spam quarantine time in anti-spam settings in the Security &amp; Compliance Center. When Office 365 deletes a message from quarantine, you can't get it back. If you like, you can change the retention period for quarantined messages in your anti-spam filter policies. For more information, see [Setting the quarantine retention period](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) in this article.
+## What permissions are needed to access administrator quarantine?
+
+The permissions to manage quarantine are controlled by membership in **Security  & Compliance Center* role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+
+The Security & Compliance role groups that give permissions to manage quarantine are:
+
+- **Quarantine Administrator**
+
+- **Security Administrator**
 
 ## View your organization's quarantined messages
 
@@ -36,9 +43,9 @@ You must have global administrator (GA) permissions in Office 365, or be a membe
 2. In the list on the left, expand **Threat Management**, choose **Review**, and then choose **Quarantine**.
 
     > [!TIP]
-    > To go directly to the **Quarantine** page in the Security &amp; Compliance Center, use this URL: > [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > To go directly to the **Quarantine** page in the Security & Compliance Center, use this URL: > [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
 
-    By default, the Security &amp; Compliance Center displays all email messages that have been quarantined as spam. The messages are sorted from newest to oldest based on the **Date** the message was received. **Sender**, **Subject**, and the expiration date (under **Expires** ) are also displayed for each message. You can sort on a field by clicking the corresponding column header; click a column header a second time to reverse the sort order.
+    By default, the Security & Compliance Center displays all email messages that have been quarantined as spam. The messages are sorted from newest to oldest based on the **Date** the message was received. **Sender**, **Subject**, and the expiration date (under **Expires** ) are also displayed for each message. You can sort on a field by clicking the corresponding column header; click a column header a second time to reverse the sort order.
 
 3. You can view a list of all quarantined messages, or you can reduce the result set by filtering. You can only do bulk operations on up to 100 items, so filtering can also help reduce your result set if you have more than that. You can quickly filter messages for a single quarantine reason by choosing an option from the filter at the top of the page. Options include:
 
@@ -65,13 +72,13 @@ After you find a specific quarantined message, click the message to view details
 2. On the left, expand **Threat Management**, choose **Review**, and then choose **Quarantine**.
 
    > [!TIP]
-   > To go directly to the **Quarantine** page in the Security &amp; Compliance Center, use this URL: > [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+   > To go directly to the **Quarantine** page in the Security & Compliance Center, use this URL: > [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
 
 3. By default, the page displays quarantined email messages. To view quarantined files, set the filters at the top of the page to show **files**, quarantined due to **malware**. You must have admin permissions in Office 365 to work with quarantined files.
 
 4. The files are sorted from newest to oldest based on the date the file was quarantined. The **User** who last modified the file, the **Service** to which the file was posted, the **File Name**, **Location**, **File Size**, and the expiration date ( **Expires**) are also listed for each file. You can sort on a field by clicking a header; click a column header a second time to reverse the sort order.
 
-You can view a list of all quarantined files, or you can search for specific files by filtering. Just like messages, you can only do bulk operations on up to 100 items. Currently, the Security &amp; Compliance Center lets you view and manage files that are in quarantine because they have been identified as containing malware. For tips, see [To filter results and find quarantined messages and files](manage-quarantined-messages-and-files.md#BKMK_AdvSearch) in this article.
+You can view a list of all quarantined files, or you can search for specific files by filtering. Just like messages, you can only do bulk operations on up to 100 items. Currently, the Security & Compliance Center lets you view and manage files that are in quarantine because they have been identified as containing malware. For tips, see [To filter results and find quarantined messages and files](manage-quarantined-messages-and-files.md#BKMK_AdvSearch) in this article.
 
 ## To filter results and find quarantined messages and files
 <a name="BKMK_AdvSearch"> </a>
@@ -106,7 +113,7 @@ Depending on your settings, there may be a lot of quarantined messages and files
 
 ## View details about quarantined messages and files
 
-When you select an item displayed in the quarantine list, you'll see a summary of its properties in the **Details** pane on the right side of the Security &amp; Compliance Center.
+When you select an item displayed in the quarantine list, you'll see a summary of its properties in the **Details** pane on the right side of the Security & Compliance Center.
 
 ### Details displayed for quarantined messages
 
@@ -197,7 +204,7 @@ You can configure how long messages and files will remain in quarantine before t
 2. On the left, expand **Threat Management**, choose **Policy**, and then choose **Anti-spam**.
 
     > [!TIP]
-    > To go directly to the **anti-spam** page in the Security &amp; Compliance Center, use this URL: > [https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
+    > To go directly to the **anti-spam** page in the Security & Compliance Center, use this URL: > [https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
 
 3. Expand the **Default spam filter policy (always ON)** row.
 

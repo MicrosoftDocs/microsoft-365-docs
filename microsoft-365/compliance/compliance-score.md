@@ -16,17 +16,21 @@ description: "Microsoft Compliance Score helps organizations simplify and automa
 
 # Microsoft Compliance Score (Preview)
 
-Microsoft Compliance Score helps to simplify the way you manage compliance and reduce compliance risks through a user-friendly experience. Compliance Score is now available for public preview in the  [Microsoft 365 compliance center](microsoft-365-compliance-center.md). Read this article to understand what Compliance Score is, how it can help you manage compliance for your organization, and how to get started.
+Microsoft Compliance Score helps to simplify the way you manage compliance and reduce compliance risks through a user-friendly experience. Compliance Score is now available for public preview in the  [Microsoft 365 compliance center](microsoft-365-compliance-center.md).
+
+**In this article:** Read this article to understand what Compliance Score is and how to set it up for your organization.
+
+**Learn about updates:** Go to the [Compliance Score release notes](compliance-score-release-notes.md) to see what's new and known issues with the preview version of Compliance Score.
 
 ## What is Compliance Score
 
 Microsoft Compliance Score is a preview feature in the Microsoft 365 compliance center to help you understand your organization’s compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards.
 
-You can use Compliance Score as a tool to track all of your risk assessments. It provides workflow capabilities to help you efficiently perform and complete your risk assessments through a common tool.
+You can use Compliance Score as a tool to track all of your risk assessments. It provides workflow capabilities to help you efficiently complete your risk assessments through a common tool.
 
 If you currently use [Compliance Manager](compliance-manager-overview.md), you’ll notice that Compliance Score is now a standalone feature with a simpler, more user-friendly design to help you manage compliance more easily. 
 
-The main Compliance Score page is your custom dashboard. It shows your current score, helps you see what needs attention, and guides you to actions to improve your score. This is what your Compliance Score dashboard will look like:
+The main Compliance Score page is your custom dashboard. It shows your current score, helps you see what needs attention, and guides you to actions to improve your score. Your Compliance Score dashboard will look like this:
 
 ![Compliance Score - dashboard](media/compliance-score-dashboard.png "Compliance Score dashboard")
 
@@ -53,7 +57,7 @@ Learn more about the relationship between Compliance Score and Compliance Manage
 
 ## Understanding your score
 
-Compliance Score gives you an out-of-the-box score based on the Microsoft 365 data protection baseline, which is a set of controls that includes common industry regulations and standards. While this score is a good starting point for assessing your compliance posture, Compliance Score becomes more powerful for you once you add assessments that are more relevant to your organization.
+Compliance Score gives you an initial score based on the Microsoft 365 data protection baseline. This baseline is a set of controls that includes common industry regulations and standards. While this score is a good starting point for assessing your compliance posture, Compliance Score becomes more powerful once you add assessments that are more relevant to your organization.
 
 For example, if your organization belongs to the financial services industry, you may want to add the FFIEC assessment. If your organization belongs to the healthcare industry, you can add the HIPAA/HITECH assessment. Learn how to [add assessments in Compliance Manager](working-with-compliance-manager.md#assessments).
 
@@ -72,8 +76,8 @@ A control defines how you assess and manage system configuration, organizational
 
 Compliance Score tracks two types of controls:
 
-1. **Microsoft-managed controls**: these are controls for Microsoft cloud services, which Microsoft is responsible for implementing
-2. **Customer-managed controls**: these are controls managed by your organization, which you are responsible for implementing
+1. **Microsoft-managed controls**: controls for Microsoft cloud services, which Microsoft is responsible for implementing
+2. **Customer-managed controls**: controls managed by your organization, which you are responsible for implementing
  
 ### Assessments
 
@@ -121,12 +125,12 @@ The pre-configured templates for Compliance Score are:
 
 ### Groups
 
-Groups allow you to organize assessments in a way that is logical to you. For example, you may choose to group assessments by year, compliance standard, service, teams within your organization, or some other way. 
+Groups allow you to organize assessments in a way that is logical to you. For example, you may choose to group assessments by year, compliance standard, service, teams within your organization, or some other way.
 
 When two different assessments in the same group share customer-managed actions, the completion of implementation details, testing, and status for the action in one assessment automatically synchronizes to the same action in any other assessment in the group. This unifies the assigned improvement actions across the group and reduces duplicating work.
 
-Learn how to [create groups in Compliance Manager](working-with-compliance-manager.md#groups).
+Learn how to [create groups in Compliance Manager](working-with-compliance-manager.md#groups). Once you create groups, you can [filter you Compliance Score dashboard](compliance-score-setup.md#filtering-your-dashboard-view) to view your score by one or more groups.
 
-## Next step
+## Next step: begin setup
 
-Sign in, set up permissions, and learn about your Compliance Score dashboard in [Compliance Score setup](compliance-score-setup.md).
+Sign in, set up permissions, and learn about your Compliance Score dashboard at [Compliance Score setup](compliance-score-setup.md).

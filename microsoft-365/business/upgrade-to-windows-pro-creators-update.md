@@ -1,5 +1,5 @@
 ---
-title: "Upgrade Windows devices to Windows Pro Creators Update"
+title: "Upgrade Windows devices to Windows 10 Pro"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,10 +21,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: "Learn how to upgrade Windows devices to Windows 10 Pro Creators Update. "
+description: "Learn how to upgrade Windows devices to Windows 10 Pro. "
 ---
 
-# Upgrade Windows devices to Windows Pro Creators Update
+# Upgrade Windows devices to Windows 10 Pro
 
 Watch a short video about upgrading Windows devices to Windows 10 Pro.<br><br>
 
@@ -32,9 +32,9 @@ Watch a short video about upgrading Windows devices to Windows 10 Pro.<br><br>
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## Upgrade to Windows 10 Pro Creators update
+## Upgrade to Windows 10 Pro
   
-To upgrade to Windows 10 Pro Creators Update, you have several options. You can:
+To upgrade to Windows 10 Pro, you have several options. You can:
     
 - Install the upgrade from the [Microsoft Software Download site](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; Select this option if the device that you're logged in is on the same device as the one you want to update. 
 
@@ -45,7 +45,7 @@ To upgrade to Windows 10 Pro Creators Update, you have several options. You can:
     - Read the instructions on how to use the tool and create your installation media. 
 
 > [!NOTE]
-> If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business subscription entitles you to a Windows 10 upgrade; you don't require a Product Key.
+> If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business subscription entitles you to a Windows Pro 10 upgrade; you don't require a Product Key.
     
 See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md) to complete setting up Windows 10 devices. 
   

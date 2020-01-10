@@ -79,5 +79,4 @@ You must be familiar with PowerShell cmdlets in order to define, validate, or ed
 
 - [Define policies for information barriers](information-barriers-policies.md)
 
-- [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md.md) 
-
+- [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md) 
