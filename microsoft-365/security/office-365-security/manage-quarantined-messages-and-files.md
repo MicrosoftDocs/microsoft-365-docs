@@ -59,7 +59,7 @@ Advance Threat Protection (ATP) customers can also view, download, and delete qu
 
 2. Verify that **View quarantined** is set to the default value **email**.
 
-3. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
+3. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default columns are marked with an asterisk (<sup>\*</sup>):
 
    - **Received**<sup>\*</sup>
 
@@ -93,7 +93,7 @@ Advance Threat Protection (ATP) customers can also view, download, and delete qu
 
      - **Next 7 days**
 
-     - Custom date range.
+     - A custom date/time range.
 
    - **Received time**
 
@@ -203,7 +203,7 @@ If you don't release or remove the message, it will be deleted after the default
 
 ### Take action on multiple quarantined email messages
 
-When you select multiple quarantined messages in the list (up to 100), the **Bulk actions** flyout pane appears where you can make the following selections:
+When you select multiple quarantined messages in the list (up to 100), the **Bulk actions** flyout pane appears where you can take the following actions:
 
 - **Release messages**: The options are the same as when you release a single message, except you can't select **Release messages to specific recipients**; you can only select **Release message to all recipients** or **Release messages to other people**.
 
@@ -223,7 +223,7 @@ When you're finished, click **Close**.
 
 2. Change **View quarantined** to the default value **files**. You can sort on a field by clicking on an available column header.
 
-3. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
+3. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default columns are marked with an asterisk (<sup>\*</sup>):
 
    - **User**<sup>\*</sup>
 
@@ -253,7 +253,7 @@ When you're finished, click **Close**.
 
      - **Next 7 days**
 
-     - Custom date range.
+     - A custom date/time range.
 
    - **Received time**
 
@@ -305,7 +305,7 @@ If you don't release or remove the files, they will be deleted after the default
 
 ### Actions on multiple quarantined files
 
-When you select multiple quarantined files in the list (up to 100), the **Bulk actions** flyout pane appears where you can make the following selections:
+When you select multiple quarantined files in the list (up to 100), the **Bulk actions** flyout pane appears where you can take the following actions:
 
 - **Release files**
 
