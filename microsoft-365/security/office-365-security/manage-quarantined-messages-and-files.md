@@ -40,7 +40,9 @@ Advance Threat Protection (ATP) customers can also view, download, and delete qu
 
   When a message expires from quarantine, you can't get it back. You can customize the quarantine retention period in your anti-spam policies (also known as content filter policies). For more information, see the [Setting the quarantine retention period](#setting-the-quarantine-retention-period) section later in this topic.
 
-- The permissions to manage messages in the quarantine are controlled by membership in the following role groups in the Security & Compliance Center:
+- You need to be assigned permissions before you can manage the quarantine as an admin. The permissions are controlled by the **Quarantine** role in the Security & Compliance Center. By default, this role is assigned to the following Security & Compliance Center role groups:
+
+  - **Organization Management** (Global admins)
 
   - **Quarantine Administrator**
 
