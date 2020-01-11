@@ -23,6 +23,9 @@ To get their work done, people in your organization collaborate with others both
 
 With sensitivity labels, you can classify and help protect your sensitive content, without hindering your people’s productivity and ability to collaborate.
 
+> [!NOTE]
+> Sensitivity labels aren't available in US Government Community (GCC) organizations.
+
 Example showing sensitivity labels:
 
 ![Sensitivity label on Excel ribbon and status bar](media/Sensitivity-label-in-Excel.png)
