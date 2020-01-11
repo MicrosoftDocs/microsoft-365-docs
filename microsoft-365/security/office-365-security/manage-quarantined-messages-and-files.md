@@ -38,7 +38,7 @@ Advance Threat Protection (ATP) customers can also view, download, and delete qu
 
   - Messages that contain malware: 15 days.
 
-  When a message expires from quarantine, you can't get it back. You can customize the quarantine retention period in your anti-spam policies (also known as content filter policies). For more information, see the [Setting the quarantine retention period](#setting-the-quarantine-retention-period) section later in this topic.
+  When a message expires from quarantine, you can't get it back. You can customize the quarantine retention period in your anti-spam policies (also known as content filter policies). For more information, see the [Configure the default quarantine retention period](#configure-the-default-quarantine-retention-period) section later in this topic.
 
 - You need to be assigned permissions before you can manage the quarantine as an admin. The permissions are controlled by the **Quarantine** role in the Security & Compliance Center. By default, this role is assigned to the following Security & Compliance Center role groups:
 
@@ -199,7 +199,7 @@ After you select a message, you have several options for what to do with the mes
 
   When you're finished, click **Submit**.
 
-If you don't release or remove the message, it will be deleted after the default quarantine retention period expires. To change the quarantine retention period, see the [Setting the quarantine retention period](#setting-the-quarantine-retention-period) section later in this topic.
+If you don't release or remove the message, it will be deleted after the default quarantine retention period expires. To change the quarantine retention period, see the [Configure the default quarantine retention period](#configure-the-default-quarantine-retention-period) section later in this topic.
 
 ### Take action on multiple quarantined email messages
 
