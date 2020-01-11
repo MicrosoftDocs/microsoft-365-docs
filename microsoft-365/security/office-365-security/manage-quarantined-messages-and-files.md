@@ -28,9 +28,11 @@ You must have global administrator (GA) permissions in Office 365, or be a membe
 
 ## What permissions are needed to access administrator quarantine?
 
-The permissions to manage quarantine are controlled by membership in **Security  & Compliance Center* role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+The permissions to manage quarantine are controlled by membership in *Security  & Compliance Center* role groups (specifically, the **Quarantine** role). For more information about roles and role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-The Security & Compliance role groups that give permissions to manage quarantine are:
+The Security & Compliance role groups that give permissions to manage quarantine by default are:
+
+- **Organization Management** (Global admins)
 
 - **Quarantine Administrator**
 
