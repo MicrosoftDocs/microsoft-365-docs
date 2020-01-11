@@ -904,12 +904,6 @@
 
                   href: ./office-365-security/quarantine.md
 
-                  items: 
-
-                    - name: Find and release quarantined messages as an administrator
-
-                      href: ./office-365-security/manage-quarantined-messages-and-files.md
-
                 - name: Troubleshooting and support information
 
                   href: ./office-365-security/troubleshooting-and-support-information.md
