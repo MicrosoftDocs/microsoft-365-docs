@@ -467,6 +467,8 @@ When the legal case or investigation supported by an eDiscovery case is complete
 - The case is still listed on the eDiscovery page in the Security & Compliance Center. The details, holds, searches, and members of a closed case are retained.
     
 - You can edit a case after it's closed. For example, you can add or removing members, create searches, export search results, and prepare search result for analysis in Advanced eDiscovery. The primary difference between active and closed cases is that holds are turned off when a case is closed.
+
+Note: In order to delete a case, the hold needs to be deleted (not just turned off)
     
 To close a case:
   
