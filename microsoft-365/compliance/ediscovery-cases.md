@@ -24,7 +24,7 @@ You can use eDiscovery cases in the compliance center in Office 365 and Microsof
   
 An eDiscovery case allows you to add members to a case, control what types of actions that specific case members can perform, place a hold on content locations relevant to a legal case, and associate multiple Content Searches with a single case. You can also export the results of any Content Search that is associated with a case or prepare search results for analysis in Advanced eDiscovery. eDiscovery cases are a good way to limit who has access to Content Searches and search results for a specific legal case in your organization.
   
-Use the following workflow to set up and use eDiscovery cases in the Security & Compliance Center and Advanced eDiscovery.
+Use the following workflow to set-up and use eDiscovery cases in the Security & Compliance Center and Advanced eDiscovery.
 
 [Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
@@ -90,7 +90,7 @@ For more information about eDiscovery permissions, see [Assign eDiscovery permis
     
     - To assign eDiscovery Administrator permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Administrator**, click **Edit**. Click **Choose eDiscovery Administrator**, click **Edit**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**, select the user that you want to add as an eDiscovery Administrator, and then click **Add**.
     
-4. After you've added all the users, click **Done**, click **Save** to save the changes to the role group, and then click **Close**.
+4. After you have added all the users, click **Done**, click **Save** to save the changes to the role group, and then click **Close**.
 
 ## Step 2: Create a new case
 
@@ -135,7 +135,7 @@ After you create a case, the next step is to add members to the case. As previou
     > [!TIP]
     > If you have a large list of people who can added as members, use the **Search** box to search for a specific person in the list. 
   
-5. After you've selected the people or role groups to add as members of the group, click **Add**.
+5. After you have selected the people or role groups to add as members of the group, click **Add**.
     
     In **Manage this case**, click **Save** to save the new list of case members. 
     
@@ -514,6 +514,30 @@ When you reopen a case, any holds that were in place when the case was closed wo
     
     When the process is complete, the status of the case is changed to **Active** on the **eDiscovery** page. 
   
+## (Optional) Step 11: Delete a case
+
+You can also delete active and closed cases. When you delete a case all searches and exports in the case are deleted, and it's removed from the list of cases on the **eDiscovery** page in the Security & Compliance Center. You can't re-open a deleted case. 
+
+Before you can delete a case (whether it's active or closed), you must first delete *all* holds associated with the case. That includes deleting holds with a status of **Off**. 
+
+To delete a hold:
+
+1. Go the **Holds** tab in case that you want to delete.
+
+2. Click the hold that you want to delete.
+
+3. On the flyout page, click **Delete hold**.
+
+To delete a case:
+
+1. In the Security & Compliance Center, click **eDiscovery** \> **eDiscovery** to display the list of cases in your organization. 
+    
+2. Click the name of the case that you want to delete.
+
+3. Under **Manage case status** on the flyout page, click **Delete case**.
+
+If the case you're trying to delete still contains holds, you'll receive an error message. You'll have to delete all holds associated with the case and then try again to delete the case.
+
 ## More information
 
 - **Are there any limits for eDiscovery cases or holds associated with an eDiscovery case?** The following table lists the limits for eDiscovery cases and case holds.
@@ -553,7 +577,7 @@ When you reopen a case, any holds that were in place when the case was closed wo
     
 - **If a mailbox, SharePoint site, or OneDrive account that is on hold is moved to a different region in a multi-geo environment, will the hold still apply?** In all cases, the content in a mailbox, site, or OneDrive account will still be retained. However, the hold statistics will no longer include items from a content location that's been moved to a different region. To include hold statistics for a content location that's been moved, you have to edit the hold and update the URL (or SMTP address of a mailbox) so that the content location is once again included in the hold statistics. 
     
-- **What about placing a hold on Office 365 Groups and Microsoft Teams?** Microsoft Teams are built on Office 365 Groups. Therefore, placing them on hold in an eDiscovery case is similar. Keep the following things in mind when placing Office 365 Groups and Microsoft Teams on hold. 
+- **What about placing a hold on Office 365 Groups and Microsoft Teams?** Microsoft Teams is built on Office 365 Groups. Therefore, placing them on hold in an eDiscovery case is similar. Keep the following things in mind when placing Office 365 Groups and Microsoft Teams on hold. 
     
   - To place content located in Office 365 Groups and Microsoft Teams on hold, you have to specify the mailbox and SharePoint site that associated with a group or team.
     
