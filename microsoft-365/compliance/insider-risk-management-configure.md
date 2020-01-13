@@ -18,13 +18,15 @@ Use insider risk management policies to monitor employee activities and to take 
 
 ## Before you begin
 
-Before you get started with insider risk management, you should confirm your Microsoft 365 subscription. Users monitored by insider risk management policies must have a Microsoft 365 E5 Compliance license or be included in a Microsoft 365 E5 subscription. If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try Insider Risk, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
+Before you get started with insider risk management, you should confirm your Microsoft 365 subscription. Users monitored by insider risk management policies must have a Microsoft 365 E5 Compliance license or be included in a Microsoft 365 E5 subscription. 
+
+If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try Insider Risk, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
 
 Follow these steps to set up and use insider risk management in your Microsoft 365 organization:
 
 ## Step 1 (required): Enable permissions for insider risk management
 
-Depending on your compliance management role, you'll need specific roles to configure and manage insider risk management features. 
+Depending on your compliance management role, you'll need specific roles to configure and manage insider risk management features.
 
 There are three roles in the **Insider Risk Management** role group:
 
@@ -34,7 +36,7 @@ There are three roles in the **Insider Risk Management** role group:
 | **Insider Risk Management Analysts** | Access to all insider risk management alerts, cases, and notices |
 | **Insider Risk Management Investigators** | Access to all insider risk management alerts, cases, notices, and the Content Explorer for all cases |
 
-To continue with these configuration steps, your tenant administrators must assign you the Insider Risk Management Admins role.
+To continue with these configuration steps, your tenant administrators must assign you the **Insider Risk Management Admins** role.
 
 ## Step 2 (optional): Set up groups for insider risk management
 
@@ -47,14 +49,12 @@ At a minimum, consider creating the following insider risk management groups:
 
 ## Step 3 (optional): Configure the Microsoft 365 human resources data connector
 
-Insider risk management supports importing user signals and log data imported from 3rd-party risk management and human resources platforms. The HR data connector allows you to pull in human resources data from CSV files, including user termination and last employment dates. This data helps drive the alert signals in insider risk management policies and is an important part of configuring full risk management coverage in your organization.
+Insider risk management supports importing user signals and log data imported from 3rd-party risk management and human resources platforms. The Microsoft 365 Human Resources (HR) data connector allows you to pull in human resources data from CSV files, including user termination and last employment dates. This data helps drive the alert signals in insider risk management policies and is an important part of configuring full risk management coverage in your organization.
 
-Visit the [HR data connector solution](https://compliance.microsoft.com/connectorlanding/solution/customhrconnector) in the Microsoft 365 compliance center to configure the connector and to complete this step.
+Visit the [Import data with the HR Connector](import-hr-data.md) topic for step-by-step guidance to configure the Microsoft 365 HR Connector for your organization and to complete this step.
 
 > [!IMPORTANT]
-> If you plan on configuring a policy using the *Departing employee data theft* template, you need to configure the Microsoft 365 human resources connector to use the full signal detection features of the policy template.
-
-For more information about setting up a human resources data connector, see [archive third-party data in Office 365](archiving-third-party-data.md).
+> If you plan on configuring a policy using the *Departing employee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template. If you configure more than one HR Connector for your organization, insider risk management will automatically pull signals from all HR Connectors.
 
 ## Step 4 (required): Create an insider risk management policy
 
