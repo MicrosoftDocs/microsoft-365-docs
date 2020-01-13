@@ -274,6 +274,12 @@ For example, the following example returns the activities for the all the superv
 Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 
+This example returns the update activities for your communication compliance policies:
+
+```PowerShell
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
+```
+
 ## Ready to get started?
 
 To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for your Microsoft 365 organization (preview)](communication-compliance-configure.md).
