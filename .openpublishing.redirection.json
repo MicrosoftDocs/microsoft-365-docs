@@ -278,6 +278,11 @@
       "source_path": "microsoft-365/compliance/use-network-upload-to-import-rms-encrypted-pst-files.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files",
       "redirect_document_id": true
-    }
+    },
+	{
+    "source_path": "microsoft-365/compliance/view-email-security-reports.md",
+    "redirect_url": "https://docs.microsoft.com/microsoft-365/security/view-email-security-reports",
+    "redirect_document_id": true
+	},
   ]
 }
