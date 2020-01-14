@@ -118,7 +118,7 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
 
 ### Create a new role group
 
-1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Office 365 organization.
+1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Office 365 organization.
 
 2. In the Office 365 security and compliance center, go to **Permissions** and then click Add (**+**).
 
