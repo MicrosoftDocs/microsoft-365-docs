@@ -14,15 +14,15 @@ description: "Administrators can set up a data connector to import employee data
 
 # Set up a connector to import HR data
 
-You can set up a data connector in the Microsoft 365 compliance center to import human resources (HR) data, such as the date an employee submitted their resignation and date of the employee's last day. This HR data can then be used by Microsoft information protection solutions, such as the new [insider risk management solution)](insider-risk-management.md), to help protect your organization from malicious activity or data theft inside your organization. Setting up an HR connector consists of creating an app in Azure Active Directory that's used for authentication by connector, creating a CSV mapping files that contains your HR data, creating a data connector in the compliance center, and then running a script (on a scheduled basis) that ingests the HR data in the CSV file to the Microsoft cloud. Then the data connector is used Microsoft compliance solutions (like insider risk management) to access the HR data that was imported to your Microsoft 36 organization.
+You can set up a data connector in the Microsoft 365 compliance center to import human resources (HR) data, such as the date an employee submitted their resignation and date of the employee's last day. This HR data can then be used by Microsoft information protection solutions, such as the new [insider risk management solution](insider-risk-management.md), to help protect your organization from malicious activity or data theft inside your organization. Setting up an HR connector consists of creating an app in Azure Active Directory that's used for authentication by connector, creating a CSV mapping files that contains your HR data, creating a data connector in the compliance center, and then running a script (on a scheduled basis) that ingests the HR data in the CSV file to the Microsoft cloud. Then the data connector is used Microsoft compliance solutions (like insider risk management) to access the HR data that was imported to your Microsoft 36 organization.
 
 ## Before you begin
 
-- Your organization must consent to allow the Office 365 Import service to access data in your organization. To consent to this request, go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of an Microsoft 365 global admin, and then accept the request. You have to complete this step before you can successfully create the HR connector in Step 3.
+- Your organization must consent to allow the Office 365 Import service to access data in your organization. To consent to this request, go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of a Microsoft 365 global admin, and then accept the request. You have to complete this step before you can successfully create the HR connector in Step 3.
 
 - The user who creates the HR connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a new role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
-- You'll need to plan to determine how to retrieve or export the data from your organization's HR system (on a regular basis) and add the CSV file that's described in Step 2. The script that you run in Step 4 will upload the HR data in the CSV file to the Microsoft cloud.
+- You'll need to determine how to retrieve or export the data from your organization's HR system (on a regular basis) and add the CSV file that's described in Step 2. The script that you run in Step 4 will upload the HR data in the CSV file to the Microsoft cloud.
 
 ## Step 1: Create an app in Azure Active Directory
 
@@ -38,7 +38,7 @@ For step-by-step instructions for creating an app in AAD, see [Creating an AAD A
 
 ## Step 2: Prepare a CSV file with your HR data
 
-The next step is create a CSV file that contains information about employees who have left your organization. As explained in the Before You Begin section, you'll need to determine how to generate this CSV file from your organization's HR system. The following example shows a completed CSV file (opened in NotePad) that contains the three required parameters (columns). It's much easier to edit the CSV file in Microsoft Excel.
+The next step is to create a CSV file that contains information about employees who have left your organization. As explained in the Before You Begin section, you'll need to determine how to generate this CSV file from your organization's HR system. The following example shows a completed CSV file (opened in NotePad) that contains the three required parameters (columns). It's much easier to edit the CSV file in Microsoft Excel.
 
 ```text
 EmailAddress,TerminationDate,LastWorkingDate
@@ -46,7 +46,7 @@ sarad@contoso.com,2019-04-23T15:18:02.4675041+05:30,2019-04-29T15:18:02.4675041+
 pilarp@contoso.com,2019-04-24T09:15:49Z,2019-04-29T15:18:02.7117540
 ```
 
-The first row, or header row, of the CSV file lists the required column names. The names used in each column header is up to you (the ones in the previous example are suggestions). However, the same column names you use in the CSV file *must* be specified when you create the HR connector in Step 3. Do not include spaces in the column names.
+The first row, or header row, of the CSV file lists the required column names. The name used in each column header is up to you (the ones in the previous example are suggestions). However, the same column names you use in the CSV file *must* be specified when you create the HR connector in Step 3. Do not include spaces in the column names.
 
 The following table describes each column in the CSV file: 
 
@@ -75,22 +75,9 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
    b. Type a name for the HR connector. 
 
-5. On the **File mapping** page, type the three column header names (also called *parameters* from the CSV file that you created in Step 2 in the appropriate box. The names you type in the boxes are not case sensitive. As previously explained, the names that you type in these boxes must match the parameter names in your CSV file. For example, the following screenshot shows the parameter names from the example in sample CSV file shown in Step 2.
+5. On the **File mapping** page, type the three column header names (also called *parameters* from the CSV file that you created in Step 2 in each of the appropriate boxes. The names are not case-sensitive. As previously explained, the names that you type in these boxes must match the parameter names in your CSV file. For example, the following screenshot shows the parameter names from the example in sample CSV file shown in Step 2.
 
 6. On the **Review** page, review your settings and then click **Finish** to create the connector.
-
-
-•	Go to compliance.microsoft.com
-•	Under Data Connectors> HR> Add Connector
-•	Accept ToS
-•	Add Azure App ID details from Step 1
-•	Provide a unique name to this connector
-•	Specify column names
-•	Finish and note down the Job ID
-  
-
-
-
 
 ## Step 4: Run the script to upload your HR data
 
@@ -133,7 +120,7 @@ The last step in setting up an HR connector is to run a script that will upload 
 
 ### Schedule the script to run automatically
 
-To make sure that the latest HR data from your organization is available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on re-curing basis, such as once a day. This also requires that you update the HR data in the CSV file on a similar (if not the same) re-curing schedule so that it contains the latest information about employees who leave your organization. Again, the goal is to upload the most current HR data so that the HR connector can make it available to the insider risk management solution.
+To make sure that the latest HR data from your organization is available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on recuring basis, such as once a day. This also requires that you update the HR data in the CSV file on a similar (if not the same) recuring schedule so that it contains the latest information about employees who leave your organization. Again, the goal is to upload the most current HR data so that the HR connector can make it available to the insider risk management solution.
 
     
 ## Step 5: Monitor the HR connector
