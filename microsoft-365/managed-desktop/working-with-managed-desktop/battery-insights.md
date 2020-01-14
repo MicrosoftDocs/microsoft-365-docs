@@ -51,6 +51,6 @@ Select the listings in the **Details** column for more information.
 
 ## Battery optimization
 
-Windows 10 offers numerous [device settings](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips) to improve power usage and increase the battery life of your Microsoft Managed Desktop devices. Some of these settings can decrease other Windows functionality, so you'll also have to consider other factors such as the role of the device in your organization. Windows support maintains a list of these settings found here (https://support.microsoft.com/help/20443/windows-10-battery-saving-tips).
+Windows 10 offers numerous [device settings](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips) to improve power usage and increase the battery life of your Microsoft Managed Desktop devices. Some of these settings can decrease other Windows functionality, so you'll also have to consider other factors such as the role of the device in your organization. Windows support maintains a list of these [battery saving tips](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips).
 
 Users can adjust some settings on their own without the need for admin elevation or support. Other settings require support from your organization's IT administrator.
