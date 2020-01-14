@@ -51,8 +51,6 @@ A disposition review can include content in Exchange mailboxes, SharePoint sites
   
 ![Dispositions page in Security and Compliance Center](media/Retention-Dispositions-v2-page.png)
 
-> [!NOTE]
-> When you specify the option **Notify these people when there are items ready to review**, specify a user or mail-enabled security group. Office 365 groups are not supported for this option.
 
 ## Setting up the disposition review by creating a retention label
 
@@ -65,7 +63,10 @@ A disposition review is an option when you create a retention label in Office 36
 For more information about retention labels, see [Overview of retention labels](labels.md).
   
 ![Retention settings for a label](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
-  
+ 
+> [!NOTE]
+> When you specify the option **Notify these people when there are items ready to review**, specify a user or mail-enabled security group. Office 365 groups are not supported for this option.
+
 ## Disposing content
 
 When a reviewer is notified by email that content is ready to review, they can go to the **Disposition** page in the Security &amp; Compliance Center. The reviewers can see how many items for each retention label are awaiting disposition, and then select a retention label to see all content with that label.
