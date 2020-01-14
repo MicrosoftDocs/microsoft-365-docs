@@ -675,7 +675,7 @@
               href: ./office-365-security/enable-the-report-message-add-in.md
 
             - name: Message trace in the Security & Compliance Center
-              
+            
               href: ./office-365-security/message-trace-scc.md
 			  
             - name: View email security reports in the Security & Compliance Center
