@@ -42,9 +42,9 @@ From this card, you can view more information on the Microsoft Defender Security
 
 ### Understand the types of threats that trigger alerts
 
-Microsoft Defender ATP sorts each alert into a category representing a certain stage in the attack chain or a type of threat component. For example, detected threat activity might be categorized into lateral movement to indicate that the activity involved an attempt to reach other devices on the network and has likely occurred after attackers have gained an initial foothold. When detected, a threat component might either be classified broadly as malware, or more specifically as ransomware, credential stealing, or other types of malicious or unwanted software.
+Microsoft Defender ATP sorts each alert into a category representing a certain stage in the attack chain or a type of threat component. For example, a detected threat activity might be categorized as "lateral movement" to indicate that there was an attempt to reach other devices on the network. The activity has also likely occurred after attackers gained an initial foothold. When detected, a threat component might either be classified broadly as malware, or more specifically as ransomware, credential stealing, or other types of malicious or unwanted software.
 
-The **Device threat categories** card shows the distribution of alerts into these categories. You can use this information to identify threat activity, such as attempts at credential theft, which can have more significant impact compared to attempts at social engineering, for example. You can also use this to monitor for potentially destructive threats like ransomware.
+The **Device threat categories** card shows the distribution of alerts into these categories. You can use this information to identify threat activity, such as credential theft attempts, that can have higher impact compared to social engineering attempts. You can also use this information to monitor for potentially destructive threats like ransomware.
 
 ![Device threat categories card](../images/device-threat-categories.png)
 
@@ -111,31 +111,31 @@ Intune enrolled device data includes:
 
 ### Discover devices with malware detections
 
-**Device malware detections** provides the number of Intune enrolled devices with malware that have not been fully resolved due to pending actions, a restart, a full scan or manual user actions, or if the remediation action did not complete successfully.
+**Device malware detections** provide the number of Intune enrolled devices with malware that have not been fully resolved. This can be due to pending actions, a restart, a full scan, manual user actions, or if the remediation action did not complete successfully.
 
 ![Device malware detections card](../images/device-malware-detections.png)
 
 ### Understand the types of malware detected
 
-**Types of malware on devices** shows different kinds of malware that have been detected on devices enrolled in Intune. You can investigate each type in the Microsoft 365 security center.
+**Types of malware on devices** show different kinds of malware that have been detected on devices enrolled in Intune. You can investigate each type in the Microsoft 365 security center.
 
 ![Types of malware on devices card](../images/types-of-malware-on-devices.png)
 
 ### Understand the specific malware detected on your devices
 
-**Malware on devices** provides a list of the specific malware detected on your devices.
+**Malware on devices** provide a list of the specific malware detected on your devices.
 
 ![Malware on devices card](../images/malware-on-devices.png)
 
 ### Understand which devices have the most malware
 
-**Devices with malware detections** shows which devices have the most malware detections. in the Microsoft 365 security center, you can investigate whether malware is active, who uses the device, and its management status in Intune.
+**Devices with malware detections** show which devices have the most malware detections. in the Microsoft 365 security center, you can investigate whether malware is active, who uses the device, and its management status in Intune.
 
 ![Devices with malware detections card](../images/devices-with-malware-detections.png)
 
 ### Understand which users have devices with the most malware
 
-**Users with malware detections** shows users with devices that had the most malware detections. in the Microsoft 365 security center, you can see how many devices are assigned to each user and more information about each device and the type of malware.
+**Users with malware detections** show users with devices that had the most malware detections. In the Microsoft 365 security center, you can see how many devices are assigned to each user and more information about each device and the type of malware.
 
 ![Users with malware detection card](../images/users-with-malware-detections.png)
 
