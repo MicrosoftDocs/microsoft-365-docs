@@ -97,7 +97,7 @@ Specific to the **View-Only Audit Logs** role:
 
 - Office 365 Groups aren't supported for this role. Instead, assign user mailboxes, mail users, or mail-enabled security groups.
 
-For instructions to grant users the **Disposition Management** role and create your new **Disposition Reviewers **role, see [Give users access to the Office 365 Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+For instructions to grant users the **Disposition Management** role and create your new **Disposition Reviewers** role, see [Give users access to the Office 365 Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 ## How long until disposed content is permanently deleted
 
