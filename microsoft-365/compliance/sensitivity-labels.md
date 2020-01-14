@@ -185,6 +185,8 @@ Here’s the basic flow of what the admin, user, and Office app do to make sensi
 
 ![Diagram showing workflow for sensitivity labels](media/Sensitivity-label-flow.png)
 
+For procedural information, see [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md).
+
 ## Where sensitivity labels can appear
 
 Sensitivity labels appear in the UI of Office apps, and can be selected from the **Sensitivity** button on the Home tab of the ribbon. To view the current availability for built-in labeling for specific apps and platforms, see [Support for sensitivity label capabilities in apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
