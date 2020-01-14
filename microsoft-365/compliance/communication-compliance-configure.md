@@ -37,7 +37,7 @@ Follow these steps to set up and use communication compliance in your Microsoft 
 
 - **Step 2 (required)**: [Make communication compliance available in your organization](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    Add yourself to the **Supervisory Review Administrator** role so you can set up policies. You'll also need to create a group with the **Supervisory Review Administrator**, **Case Management**, and **Review** roles to people or groups that will take investigative and remediation action on messages with policy matches. Anyone who has these roles assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Add yourself to the **Supervisory Review Administrator** role so you can set up policies. You'll also need to create a new group with the **Supervisory Review Administrator**, **Case Management**, and **Review** roles to people or groups that will take investigative and remediation action on messages with policy matches. Anyone who has these roles assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Step 3 (required)**: [Set up a communication compliance policy](#step-3-create-a-communication-compliance-policy-required)
 
@@ -83,15 +83,17 @@ To make **Communication compliance** available as a menu option in Microsoft 365
 
 ### Create a new role group
 
-1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Office 365 organization.
+1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Microsoft 365 compliance center, go to **Permissions**. Select the link to view and manage roles in Office 365.
+2. In the Microsoft Office 365 security and compliance center, go to **Permissions**. Select the link to view and manage roles in Office 365.
 
 3. Select **Create**.
 
 4. In the **Name** field, give the new role group a friendly name. Select **Next**.
 
 5. Select **Choose roles** and then select **Add**. Select the checkbox for **Supervisory Review Administrator**, **Case Management**, and **Review**, then select **Add** and **Done**. Select **Next**.
+
+    ![Communication compliance required role groups](media/communication-compliance-role-groups.png)
 
 6. Select **Choose members** and then select **Add**. Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**. Select **Next**.
 
