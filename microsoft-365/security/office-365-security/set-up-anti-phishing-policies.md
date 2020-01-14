@@ -142,7 +142,7 @@ You can delete custom policies that you created by using the Security &amp; Comp
 
 Once your anti-phishing policies are in place, you can see how your threat protection features are working for your organization by viewing reports. See the following resources to learn more:
 
-- [View reports for Office 365 ATP](view-reports-for-atp.md) or [View email security reports](../../compliance/view-email-security-reports.md)
+- [View reports for Office 365 ATP](view-reports-for-atp.md) or [View email security reports](view-email-security-reports.md)
 
 - [Use Threat Explorer (or real-time detections)](threat-explorer.md)
 

@@ -44,7 +44,7 @@ Below is a map of the available services aligned to the [Desktop Deployment](htt
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="step 3" height="144" width="144" /></td>
 <td><p><strong>Office and LOB App Delivery</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a> configuration and deployment, where Microsoft’s FastTrack specialists provide assistance with provisioning user licenses, configuring installation and update settings for Click-to-Run and creating packages if your organization uses System Center Configuration Manager.</p></li>
+<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a> configuration and deployment, where Microsoft’s FastTrack specialists provide assistance with provisioning user licenses, configuring installation and update settings for Click-to-Run and creating packages if your organization uses Microsoft Endpoint Configuration Manager.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -65,7 +65,7 @@ Below is a map of the available services aligned to the [Desktop Deployment](htt
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="step 6" height="144" width="144" /></td>
 <td><p><strong>OS Deployment and Feature Updates </strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>, where Microsoft’s FastTrack specialists provide assistance with provisioning user licenses and configuring Windows Autopilot for new devices, MDM policies for your Windows 10 and other mobile devices, including app deployment; Wi-Fi and VPN profiles; co-management with System Center Configuration Manager and more.</p></li>
+<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>, where Microsoft’s FastTrack specialists provide assistance with provisioning user licenses and configuring Windows Autopilot for new devices, MDM policies for your Windows 10 and other mobile devices, including app deployment; Wi-Fi and VPN profiles; co-management with Microsoft Endpoint Configuration Manager and more.</p></li>
 </ul></td>
 </tr>
 <tr class="even">

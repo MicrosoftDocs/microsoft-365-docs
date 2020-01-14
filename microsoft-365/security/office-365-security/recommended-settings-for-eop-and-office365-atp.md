@@ -54,33 +54,35 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 |Zero Hour auto purge|On|On|For both Spam and Phish ZAP|
 |MarkAsSpamBulkMail|On|On|This setting is only available in PowerShell|
 
-There are several other parameters in the Anti-spam policy called Advanced Spam filter that are being deprecated at the time of this writing. Our recommended settings for these are to turn them **OFF** for both Standard and Strict levels:
+There are several other parameters in the Anti-spam policy called Advanced Spam filter (ASF) that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this topic.
+ 
+ We recommend that you turn these settings **OFF** for both Standard and Strict levels:
 
-|Security feature name| Comments |
+|Security feature name|Comments|
 |---------|---------|
-|IncreaseScoreWithImageLinks| |
-|IncreaseScoreWithNumericIps| |
-|IncreaseScoreWithRedirectToOtherPort| |
-|IncreaseScoreWithBizOrInfoUrls| |
-|MarkAsSpamEmptyMessages| |
-|MarkAsSpamJavaScriptInHtml| |
-|MarkAsSpamFramesInHtml| |
-|MarkAsSpamObjectTagsInHtml| |
-|MarkAsSpamEmbedTagsInHtml| |
-|MarkAsSpamFormTagsInHtml| |
-|MarkAsSpamWebBugsInHtml| |
-|MarkAsSpamSensitiveWordList| |
-|MarkAsSpamFromAddressAuthFail| |
-|MarkAsSpamNdrBackscatter| |
-|MarkAsSpamSpfRecordHardFail| |
+|IncreaseScoreWithImageLinks||
+|IncreaseScoreWithNumericIps||
+|IncreaseScoreWithRedirectToOtherPort||
+|IncreaseScoreWithBizOrInfoUrls||
+|MarkAsSpamEmptyMessages||
+|MarkAsSpamJavaScriptInHtml||
+|MarkAsSpamFramesInHtml||
+|MarkAsSpamObjectTagsInHtml||
+|MarkAsSpamEmbedTagsInHtml||
+|MarkAsSpamFormTagsInHtml||
+|MarkAsSpamWebBugsInHtml||
+|MarkAsSpamSensitiveWordList||
+|MarkAsSpamFromAddressAuthFail||
+|MarkAsSpamNdrBackscatter||
+|MarkAsSpamSpfRecordHardFail||
 
 #### EOP outbound spam filter policy settings
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|Outbound spam policy Recipient Limits - External hourly limit|400|500||
-|Outbound spam policy Recipient Limits - Internal hourly limit|800|1000||
-|Outbound spam policy Recipient Limits - Daily limit|800|1000||
+|Outbound spam policy Recipient Limits - External hourly limit|500|400||
+|Outbound spam policy Recipient Limits - Internal hourly limit|1000|800||
+|Outbound spam policy Recipient Limits - Daily limit|1000|800||
 |Action when a user exceeds the limits|Restrict the user from sending mail|Restrict the user from sending mail||
 
 ### EOP anti-malware policy settings
