@@ -57,7 +57,7 @@ The following table describes each column in the CSV file:
 |**LastWorkingDate**|Specifies the last day of work for the terminated employee. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-After you create the CSV file with the required HR data, store in on a local computer or network location that can be specified when you run the script in Step 4. You should also implement an update strategy so that the CSV file always contains the most current information. See [Schedule the script to run automatically](#schedule-the-script-to-run-automatically).
+After you create the CSV file with the required HR data, store in on a local computer or network location that can be specified when you run the script in Step 4. You should also implement an update strategy so that the CSV file always contains the most current information so that whatever you run the script, the most current employee termination data will be uploaded to the Microsoft cloud.
 
 ## Step 3: Create the HR connector
 
@@ -81,7 +81,7 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 ## Step 4: Run the script to upload your HR data
 
-The last step in setting up an HR connector is to run a script that will upload the HR data in the CSV file (that you created in Step 2) to the Microsoft cloud. After you run the script, the HR connector that you created in Step 3 can access and import the data to your Microsoft 365 organization where it can accessed by other compliance tools, such as the Insider risk management solution.
+The last step in setting up an HR connector is to run a script that will upload the HR data in the CSV file (that you created in Step 2) to the Microsoft cloud. After you run the script, the HR connector that you created in Step 3 can access and import the data to your Microsoft 365 organization where it can accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run automatically on a daily basis so that the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1).
 
