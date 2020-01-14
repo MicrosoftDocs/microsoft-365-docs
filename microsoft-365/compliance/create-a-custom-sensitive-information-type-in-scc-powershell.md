@@ -369,7 +369,10 @@ New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My D
 
     For detailed syntax and parameter information, see [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpsensitiveinformationtyperulepackage).
 
-5. To verify that you've successfully created a new sensitive information type, do any of the following steps:
+> [!NOTE]
+> The limit for custom sensitive information type collections is 10.
+
+4. To verify that you've successfully created a new sensitive information type, do any of the following steps:
 
   - Run the [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet to verify the new rule package is listed:
 
