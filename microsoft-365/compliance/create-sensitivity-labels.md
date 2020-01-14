@@ -1,5 +1,5 @@
 ---
-title: "Overview of sensitivity labels"
+title: "Create and publish sensitivity labels"
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -70,3 +70,17 @@ To edit an existing label policy, select it, and then select **Edit Policy**. Th
 
 > [!TIP]
 > You can use the [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-labelpolicy?view=exchange-ps) PowerShell cmdlet to add and remove labels to and from a label policy, and also specify [advanced settings](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) for the Azure Information Protection unified labeling client. For example, set a different default label for Outlook, and implement pop-up messages in Outlook that warn, justify, or block emails being sent.
+
+## Next steps
+
+To configure and use your sensitivity labels for specific scenarios, see the following articles:
+
+- [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md)
+
+- [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)
+
+- [Use sensitivity labels with teams, groups, and sites](sensitivity-labels-teams-groups-sites.md)
+
+- [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
+
+To monitor how your labels are being used, see [View label usage with label analytics](label-analytics.md).
