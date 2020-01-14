@@ -48,7 +48,7 @@ pilarp@contoso.com,2019-04-24T09:15:49Z,2019-04-29T15:18:02.7117540
 
 The first row, or header row, of the CSV file lists the required column names. The name used in each column header is up to you (the ones in the previous example are suggestions). However, the same column names you use in the CSV file *must* be specified when you create the HR connector in Step 3. Do not include spaces in the column names.
 
-The following table describes each column in the CSV file: 
+The following table describes each column in the CSV file:
 
 |**Column name**|**Description**|
 |:-----|:-----|
@@ -73,7 +73,7 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
    a. Type or paste the AAD application ID for the Azure AD app that you created in Step 1.
 
-   b. Type a name for the HR connector. 
+   b. Type a name for the HR connector.
 
 5. On the **File mapping** page, type the three column header names (also called *parameters* from the CSV file that you created in Step 2 in each of the appropriate boxes. The names are not case-sensitive. As previously explained, the names that you type in these boxes must match the parameter names in your CSV file. For example, the following screenshot shows the parameter names from the example in sample CSV file shown in Step 2.
 
@@ -90,16 +90,16 @@ The last step in setting up an HR connector is to run a script that will upload 
 3. Copy all the lines in the script and then save them to a Windows PowerShell script file by using a filename suffix of `.ps1`; for example, `HRConnectorScript.ps1`.
 
 4. Open a Command Prompt on your local computer.
-    
+
 5. Go to the directory where you saved the script.
-    
+
 6. Run the following command to upload the HR data in the CSV file to the Microsoft cloud; for example:
 
     ```powershell
     .\HRConnector.ps1 -tenantId "<tenantId>" -appId "<appId>"  -appSecret "<appSecret>"  -jobId "<jobId>"  -csvFilePath "<csvFilePath>"
     ```
 
-   The following table describes the AzCopy.exe parameters and their required values. The information you obtained in the previous step is used in the values for these parameters.
+   The following table describes the parameters to use with this script and their required values. The information you obtained in the previous steps is used in the values for these parameters.
 
    |**Parameter**|**Description**
    |:-----|:-----|:-----|
@@ -113,14 +113,50 @@ The last step in setting up an HR connector is to run a script that will upload 
    Here's an example of the syntax for the HR connector script using actual values for each parameter:
 
    ```powershell
-    .\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3"   -appSecret <appSecret>  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458"  -csvFilePath <csvFilePath>
+    .\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458"  -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"
     ```
 
    If the upload is successful, the script displays the **Upload Successful** message.
 
-### Schedule the script to run automatically
 
-To make sure that the latest HR data from your organization is available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on recuring basis, such as once a day. This also requires that you update the HR data in the CSV file on a similar (if not the same) recuring schedule so that it contains the latest information about employees who leave your organization. Again, the goal is to upload the most current HR data so that the HR connector can make it available to the insider risk management solution.
-
-    
 ## Step 5: Monitor the HR connector
+
+## (Optional) Step 6: Schedule the script to run automatically
+
+To make sure that the latest HR data from your organization is available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a recurring basis, such as once a day. This also requires that you update the HR data in the CSV file on a similar (if not the same) schedule so that it contains the latest information about employees who leave your organization. The goal is to upload the most current HR data so that the HR connector can make it available to the insider risk management solution.
+
+You can user the Task Scheduler app in Windows to automatically run the script every day.
+
+1. On your local computer, click the Windows **Start** button and then type **task scheduler**.
+
+2. Click the **Task Scheduler** app to open it.
+
+3. In the **Actions** section, click **Create Task**.
+
+4. On the **General** tab, type a descriptive name for the scheduled task; for example, **HRConnectorScript**. You can also add an optional description. 
+
+5. Under **Security options**, do the following:
+
+   a. Determine whether to run to run the script when you're logged on to the computer or not.
+   
+   b. Make sure that the **Run it with the highest privileges** checkbox is selected.
+
+6. Select the **Triggers** tab, and click **New**.
+
+7. Under **Settings**, select the **Daily** option, and then choose a date and time as starting time to first run the script. Click **Ok**.
+
+8. Select the **Actions** tab, click **New**, and then do the following:
+
+   a. In the **Action** dropdown list, make sure **Start a program** is selected.
+
+   b. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+
+   c. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+
+   d. In the **Start in (optional)** box, paste the folder location of the script that you downloaded and ran in Step 4. For example, `"C:\Users\contosoadmin\Desktop\Scripts"`.ss
+
+   e. Click **Ok** to save the setting on the **Action** tab.
+
+9. In the **Create Task** window, click **Ok** to save the scheduled task.
+
+The new task is displayed in the Task Scheduler library, and will display the last time the script ran. You can also verify the last time the script ran on the flyout page of the corresponding HR connector in the compliance center.
