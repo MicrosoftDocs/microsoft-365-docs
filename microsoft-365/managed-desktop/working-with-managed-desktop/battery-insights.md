@@ -37,15 +37,15 @@ In the **Top energy consumers** area you’ll find the apps in your environment 
 - Network
 - Other
 
-"Other" could include energy consumption by a variety of sources, such as disk activity or mobile broadband usage. {why wouldn't that last go under "network"? Is "network" only wired network adapters or something? Also is "mobile broadband usage" including wifi? Or does that mean only like cell networks?}
+"Other" could include energy consumption by a variety of sources, such as disk activity, mobile broadband usage, and energy lost to internal resistance. 
 
 The apps displayed in **Top energy consumers"
 
-You can filter this view to show only foreground apps, background apps, or both by using the menu in the upper right. Foreground apps are those that involve user interaction, such as selecting something with a mouse. {that COULD have user interaction? Or that have had user interaction? And if the latter, on what time scale? Like if I open Word and then immediately switch focus to a different app and don't use Word, is it still "foreground" for these purposes?}
+You can filter this view to show only foreground apps, background apps, or both by using the menu in the upper right. Foreground apps are those that have had user interaction in the last 28 days, such as selecting something with a mouse.
 
 ## Insights
 
-The **Insights** area shows the top three energy consumers in the CPU and network categories. These items are consuming higher than average energy compared to all Microsoft Managed Desktop deployments. We don't show the display resource because it depends heavily on device usage time and screen brightness settings. {OK? I don't get why this a reason to not show it? Isn't that useful information too? Also, what about Other?}
+The **Insights** area shows the top three energy consumers in the CPU and network categories. These items are consuming higher than average energy compared to all Microsoft Managed Desktop deployments. We don't show the display resource because it depends heavily on device usage time and screen brightness settings. 
 
 Select the listings in the **Details** column for more information.
 
@@ -53,4 +53,4 @@ Select the listings in the **Details** column for more information.
 
 Windows 10 offers numerous [device settings](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips) to improve power usage and increase the battery life of your Microsoft Managed Desktop devices. Some of these settings can decrease other Windows functionality, so you'll also have to consider other factors such as the role of the device in your organization. Windows support maintains a list of these settings found here (https://support.microsoft.com/help/20443/windows-10-battery-saving-tips).
 
-Users can adjust these settings on their own without the need for admin elevation or support. {what if the admin wants to impose particular policies across the org? Or block users from messing with the settings?}
+Users can adjust some settings on their own without the need for admin elevation or support. Other settings require support from your organization's IT administrator.
