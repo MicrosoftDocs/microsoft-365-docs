@@ -9,9 +9,9 @@
         - name: Upgrade subscriptions
           href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: Manage self-service purchases (Users)
-          href: /subscriptions/manage-self-service-purchases-users.md
+          href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-users
         - name: Manage self-service purchases (Admin)
-          href: /subscriptions/manage-self-service-purchases-admins.md
+          href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins
     - name: Manage licenses
       items:
         - name: Buy licenses
