@@ -158,6 +158,14 @@ The following Intune improvement actions will be removed:
 - Require all devices to have advanced security configurations
 - Review blocked devices report weekly
 
+### Removing improvement actions that don't have the same standard of measurement
+
+To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement action.
+
+- Turn on audit data recording
+- Discover risky and non-compliant shadow IT applications
+- Review permissions & block risky OAuth applications connected to your environment
+
 ### MFA improvement action updates
 
 To reflect the need for businesses to ensure the upmost security while applying policies that work with their business, Microsoft Secure Score is removing three improvement actions centered around multi-factor authentication, and adding two.
