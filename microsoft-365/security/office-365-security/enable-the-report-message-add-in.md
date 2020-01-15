@@ -181,7 +181,7 @@ You can review and edit the default settings for the Report Message add-in on th
 
 [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
 
-[View email security reports in the Security &amp; Compliance Center](../../compliance/view-email-security-reports.md)
+[View email security reports in the Security &amp; Compliance Center](view-email-security-reports.md)
 
 [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
 
