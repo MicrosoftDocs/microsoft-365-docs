@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ---
 
-# Turn on Microsoft Threat Protection TEST COPY
+# Turn on Microsoft Threat Protection
 
 **Applies to:**
 - Microsoft Threat Protection
