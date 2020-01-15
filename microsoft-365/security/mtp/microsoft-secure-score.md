@@ -45,7 +45,7 @@ Most are scored in a binary fashion — if you implement the improvement action,
 
 ### Products included in Secure Score
 
-Currently there are recommendations for Office 365 (including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, Intune, and Cloud App Security. Recommendations for other security products, like Azure ATP and Microsoft Defender ATP, are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
+Currently there are recommendations for Office 365 (including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, and Cloud App Security. Recommendations for other security products, like Azure ATP and Microsoft Defender ATP, are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
 
 ## Required permissions
 
@@ -131,16 +131,45 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 To make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
 
+### Removing Intune improvement actions
+
+After an evaluation of the Intune improvement actions, it was decided that they are not helping to represent the security posture of devices in organizations. Instead of focusing on policies, we are working to bring in security controls that directly assess the configuration state of the devices.
+
+The following Intune improvement actions will be removed:
+
+- Enable Microsoft Intune Mobile Device Management
+- Create a Microsoft Intune Compliance Policy for Android
+- Create a Microsoft Intune Compliance Policy for Android for Work
+- Create a Microsoft Intune App Protection Policy for Android
+- Create a Microsoft Intune App Protection Policy for iOS
+- Mark devices with no Microsoft Intune Compliance Policy assigned as not compliant
+- Create a Microsoft Intune Compliance Policy for iOS
+- Create a Microsoft Intune Compliance Policy for macOS
+- Create a Microsoft Intune Compliance Policy for Windows
+- Create a Microsoft Intune Configuration Profile for Android
+- Create a Microsoft Intune Configuration Profile for Android for Work
+- Create a Microsoft Intune Configuration Profile for macOS
+- Create a Microsoft Intune Configuration Profile for iOS
+- Create a Microsoft Intune Configuration Profile for Windows
+- Enable enhanced jailbreak detection in Microsoft Intune
+- Require all devices to be patched, have anti-virus, and firewalls enabled
+- Enable Windows Defender ATP integration into Microsoft Intune
+- Create a Microsoft Intune Windows Information Protection Policy
+- Require all devices to have advanced security configurations
+- Review blocked devices report weekly
+
 ### MFA improvement action updates
 
 To reflect the need for businesses to ensure the upmost security while applying policies that work with their business, Microsoft Secure Score is removing three improvement actions centered around multi-factor authentication, and adding two.
 
 The three that will be removed:
+
 - Register all users for multi-factor authentication
 - Require MFA for all users
 - Require MFA for Azure AD privileged roles
 
 New improvement actions:
+
 - Ensure all users can complete multi-factor authentication for secure access
 - Require MFA for administrative roles
 
