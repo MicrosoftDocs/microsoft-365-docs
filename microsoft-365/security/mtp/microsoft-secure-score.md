@@ -131,9 +131,9 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 To make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
 
-### Removing Intune improvement actions
+### Removing improvement actions from Intune
 
-After an evaluation of the Intune improvement actions, it was decided that they are not helping to represent the security posture of devices in organizations. Instead of focusing on policies, we are working to bring in security controls that directly assess the configuration state of the devices.
+After an evaluation of the Microsoft Secure Score improvement actions provided through Intune, it was decided that they do not provide a useful representation of the security posture of devices in organizations. Instead of focusing on policies, we are working to bring in security controls that directly assess the configuration state of the devices.
 
 The following Intune improvement actions will be removed:
 
