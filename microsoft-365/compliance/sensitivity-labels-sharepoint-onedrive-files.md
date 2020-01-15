@@ -53,16 +53,16 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
     - Close a file after you apply a label, and then reopen the file to make other changes.
 
 - SharePoint doesn't automatically apply the new labels to existing files that you've already encrypted using Azure Information Protection labels. Instead, to get the features to work after you enable this preview, complete these tasks:
+    
+    1. Make sure you have migrated the Azure Information Protection labels to sensitivity labels and published them from the Microsoft 365 compliance center, or equivalent labeling admin center.
+    
+    2. Download the files and upload them to SharePoint.
 
-  - Migrate the Azure Information Protection labels to sensitivity labels and publish them from the Microsoft 365 compliance center, or equivalent labeling admin center.
-
-  - Download the files and upload them to SharePoint.
-
-- SharePoint can't process labels with custom permissions and labels with expiration dates.
+- SharePoint can't process labels with custom permissions or labels that have an expiration date specified as an encryption option.
 
 - When users have edit permissions, the web versions of the Office apps allow copying regardless of the copy policy setting in the label.
 
-- The Azure Information Protection document tracking site and reporting are unsupported​.
+- Tracking and revocation for Azure Information Protection and reporting are unsupported​.
 
 - Office desktop apps and mobile apps don't support coauthoring. Instead, these apps continue to open files in exclusive editing mode.
 
