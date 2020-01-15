@@ -49,23 +49,23 @@ At a minimum, consider creating the following insider risk management groups:
 
 ## Step 3 (optional): Configure the Microsoft 365 human resources data connector
 
-Insider risk management supports importing user signals and log data imported from 3rd-party risk management and human resources platforms. The Microsoft 365 Human Resources (HR) data connector allows you to pull in human resources data from CSV files, including user termination and last employment dates. This data helps drive the alert signals in insider risk management policies and is an important part of configuring full risk management coverage in your organization.
+Insider risk management supports importing user and log data imported from 3rd-party risk management and human resources platforms. The Microsoft 365 Human Resources (HR) data connector allows you to pull in human resources data from CSV files, including user termination and last employment dates. This data helps drive the alert indicators in insider risk management policies and is an important part of configuring full risk management coverage in your organization.
 
 Visit the [Import data with the HR Connector](import-hr-data.md) topic for step-by-step guidance to configure the Microsoft 365 HR Connector for your organization and to complete this step.
 
 > [!IMPORTANT]
-> If you plan on configuring a policy using the *Departing employee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template. If you configure more than one HR Connector for your organization, insider risk management will automatically pull signals from all HR Connectors.
+> If you plan on configuring a policy using the *Departing employee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template. If you configure more than one HR Connector for your organization, insider risk management will automatically pull indicators from all HR Connectors.
 
 ## Step 4 (required): Create an insider risk management policy
 
-Insider risk management policies determine who is monitored and which types of signals are configured for alerts. Before activities can trigger alerts, a policy must be configured.
+Insider risk management policies determine who is monitored and which types of risk indicators are configured for alerts. Before activities can trigger alerts, a policy must be configured.
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. Select **Add Policy** to open the policy wizard
 3. On the **Assign policy name** page, complete the following fields:
     - **Name (required)**: Enter a friendly name for the policy
     - **Description (optional)**: Enter a description for the policy.
-    - **Select template (required)**: Select one of the playbooks to define the types of signals monitored by the policy.
+    - **Select template (required)**: Select one of the playbooks to define the types of risk indicators are monitored by the policy.
 4. Select **Next** to continue.
 5. On the **Users** page, select **Add user or group** to define which users are subject to the policy or select **All users**. Select **Next** to continue.
 6. On the **Content priority** page, assign the sources for user activities:
@@ -78,4 +78,4 @@ Insider risk management policies determine who is monitored and which types of s
 9. On the **Monitoring window** page, choose the time period for the policy. Select **Next** to continue.
 10. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
-After you've completed these steps to create your first insider risk management policy, you'll start to receive alerts from activity signals after about 24 hours. Configure additional policies as needed using the steps in Step 4 of this topic or the steps in [Create a new insider risk policy](insider-risk-management-policies.md#create-a-new-policy).
+After you've completed these steps to create your first insider risk management policy, you'll start to receive alerts from activity indicators after about 24 hours. Configure additional policies as needed using the steps in Step 4 of this topic or the steps in [Create a new insider risk policy](insider-risk-management-policies.md#create-a-new-policy).
