@@ -133,7 +133,7 @@ To make Microsoft Secure Score a better representative of your security posture 
 
 ### Removing improvement actions from Intune
 
-After an evaluation of the Microsoft Secure Score improvement actions provided through Intune, it was decided that they do not provide a useful representation of the security posture of devices in organizations. Instead of focusing on policies, we are working to bring in security controls that directly assess the configuration state of the devices.
+After an evaluation of the Microsoft Secure Score improvement actions supplied from Intune, it was decided that they do not provide a useful representation of the security posture of devices in organizations. Instead of focusing on policies, we are working to bring in security controls that directly assess the configuration state of the devices.
 
 The following Intune improvement actions will be removed:
 
@@ -158,7 +158,7 @@ The following Intune improvement actions will be removed:
 - Require all devices to have advanced security configurations
 - Review blocked devices report weekly
 
-### Removing improvement actions that don't have the same standard of measurement
+### Removing improvement actions that don't meet expectations for reliable measurement
 
 To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement action.
 
