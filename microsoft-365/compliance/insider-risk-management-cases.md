@@ -143,7 +143,7 @@ Risk analysts and investigators can take action on a case in one of several meth
 
 In most cases, employee actions that create policy match alerts are inadvertent or accidental. Sending a reminder notice to the employee via email is an effective method for documenting case review and action, as well as a method to remind employees of corporate policies or point them to refresher training. Notices are generated from [notice templates that you create](insider-risk-management-notices.md) for your insider risk management infrastructure.
 
-It's important to remember that sending a notice to an employee ***does not*** resolve the case as *Closed*. In some cases, you may want to leave a case open after sending a notice to monitor for additional risk activities by the same employee without opening a new case. If you want to resolve a case after sending a notice, you must select the **Resolve case** as a follow-on step after sending a notice.
+It's important to remember that sending a notice to an employee ***does not*** resolve the case as *Closed*. In some cases, you may want to leave a case open after sending a notice to an employee to look for additional risk activities without opening a new case. If you want to resolve a case after sending a notice, you must select the **Resolve case** as a follow-on step after sending a notice.
 
 To send a notice to the employee assigned to a case:
 
