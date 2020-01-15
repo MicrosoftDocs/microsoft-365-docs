@@ -326,7 +326,7 @@ This example returns email messages or calendar meetings that were sent between 
   
 ## Special characters
 
-Some special characters are not included in the search index and therefore are not searchable. This also includes the special characters that represent operators in the search query. Here's a list of special characters that are either replaced by a blank space in the actual search query or cause a search error.
+Some special characters are not included in the search index and therefore are not searchable. This also includes the special characters that represent search operators in the search query. Here's a list of special characters that are either replaced by a blank space in the actual search query or cause a search error.
 
 `+ - = : ! @ # % ^ & ; _ / ? ( ) [ ] { }`
 
