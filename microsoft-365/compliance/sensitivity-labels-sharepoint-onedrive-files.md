@@ -54,7 +54,7 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
 
 - SharePoint doesn't automatically apply the new labels to existing files that you've already encrypted using Azure Information Protection labels. Instead, to get the features to work after you enable this preview, complete these tasks:
 
-  - Migrate the Azure Information Protection labels to sensitivity labels and publish them.
+  - Migrate the Azure Information Protection labels to sensitivity labels and publish them from the Microsoft 365 compliance center, or equivalent labeling admin center.
 
   - Download the files and upload them to SharePoint.
 
