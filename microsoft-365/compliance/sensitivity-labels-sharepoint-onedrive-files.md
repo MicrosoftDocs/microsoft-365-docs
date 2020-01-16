@@ -58,11 +58,13 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
     
     2. Download the files and upload them to SharePoint.
 
-- SharePoint can't process labels with custom permissions or labels that have an expiration date specified as an encryption option.
+- SharePoint can't process encrypted files when the label that applied the encryption has either of the following configurations for encryption:
+    - **Let users assign permissions when they apply the label** and **In Word, PowerPoint, and Excel, prompt users to specify permissions**
+    - **User access to content expires** is set to a value other than **Never**.
 
-- When users have edit permissions, the web versions of the Office apps allow copying regardless of the copy policy setting in the label.
+- For an encrypted document that grants edit permissions to a user, copying can't be blocked in the web versions of the Office apps.
 
-- Tracking, revocation, and reporting for Azure Information Protection are unsupported​.
+- The Azure Information Protection document tracking site is not supported.
 
 - Office desktop apps and mobile apps don't support coauthoring. Instead, these apps continue to open files in exclusive editing mode.
 
