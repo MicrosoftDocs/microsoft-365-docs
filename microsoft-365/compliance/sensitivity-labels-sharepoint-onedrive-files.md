@@ -5,7 +5,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 11/01/2019
+ms.date: 
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
@@ -25,7 +25,7 @@ Previously, when you applied sensitivity labels that included encryption to Offi
 
 - When you download a file from SharePoint or OneDrive, the sensitivity label travels with the file and the settings remain enforced.
 
-- Apply sensitivity labels to Office files, and open and edit files that have sensitivity labels applied (if the label's permissions allow it) by using the web versions of Word, Excel, and PowerPoint. With Word on the web, you can also use Auto labeling when you edit documents.
+- Apply sensitivity labels to Office files, and open and edit files that have sensitivity labels applied (if the label's permissions allow it) by using the web versions of Word, Excel, and PowerPoint. With Word on the web, you can also use auto labeling when you edit documents.
 
 - Office 365 eDiscovery supports full-text search in files that have sensitivity labels applied. Data Loss Prevention (DLP) policies cover content in these files.
 
@@ -34,35 +34,37 @@ Previously, when you applied sensitivity labels that included encryption to Offi
   - FileSensitivityLabelChanged
   - FileSensitivityLabelRemoved
 
-You can also now apply sensitivity labels to Microsoft Teams, Office 365 groups, and SharePoint sites. [Learn more](sensitivity-labels-teams-groups-sites.md).
+You can also now apply sensitivity labels to Microsoft Teams, Office 365 groups, and SharePoint sites. For more information about this separate preview, see [Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md).
 
-If necessary, you can opt out of the preview at any time.
+You always have the choice to opt out of this preview at any time.
 
 ## Requirements
 
-These features work only with [sensitivity labels](sensitivity-labels.md). If you used Azure Information Protection labels, you can convert them to sensitivity labels to enable these features for new files that you upload. [Learn how](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
+These features work with [sensitivity labels](sensitivity-labels.md) only. If you currently have Azure Information Protection labels, first migrate them to sensitivity labels so that you can enable these features for new files that you upload. For instructions, see [How to migrate Azure Information Protection labels to unified sensitivity labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 
-For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on Windows and version 19.002.0107.0008 or later on Mac. Both of these versions were released on January 28, 2019, and are currently released to all rings. [See the OneDrive release notes](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). After you enable this preview, users who run an older version of the sync app will be prompted to update it.
+For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and version 19.002.0107.0008 or later on Mac. Both these versions were released January 28, 2019, and are currently released to all rings. For more information, see the [OneDrive release notes](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). After you enable this preview, users who run an older version of the sync app are prompted to update it.
 
 ## Limitations
 
-- When you enable this preview, users who apply a label to a file by using the Office desktop or mobile apps might be unable to save other changes they make to the file. Instead, the app prompts users to Save As or Discard local changes. To avoid losing work, do one of these actions:
-
-  - To apply labels, use the web versions of the Office apps.
-
-  - Close a file after you apply a label and then reopen the file to make other changes.
+- When you enable this preview, users who change a label to a file in a OneDrive Sync folder might be unable to save other changes they make to the file.  Users see a [red circle with a white cross icon error](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3), and they are asked to save new changes as a separate copy.  In addition to label changes that are initiated by users, the same behavior can occur if an admin changes settings for a published label that's already applied to files downloaded to users' sync client.
+    
+    To avoid losing work for these scenarios, do one of these actions:
+    - To apply labels, use the web versions of the Office apps.
+    - Close a file after you apply a label, and then reopen the file to make other changes.
 
 - SharePoint doesn't automatically apply the new labels to existing files that you've already encrypted using Azure Information Protection labels. Instead, to get the features to work after you enable this preview, complete these tasks:
+    
+    1. Make sure you have migrated the Azure Information Protection labels to sensitivity labels and published them from the Microsoft 365 compliance center, or equivalent labeling admin center.
+    
+    2. Download the files and upload them to SharePoint.
 
-  - Convert the Azure Information Protection labels to sensitivity labels.
+- SharePoint can't process encrypted files when the label that applied the encryption has either of the following configurations for encryption:
+    - **Let users assign permissions when they apply the label** and **In Word, PowerPoint, and Excel, prompt users to specify permissions**
+    - **User access to content expires** is set to a value other than **Never**.
 
-  - Download the files and upload them to SharePoint.
+- For an encrypted document that grants edit permissions to a user, copying can't be blocked in the web versions of the Office apps.
 
-- SharePoint can't process labels with custom permissions and labels with expiration dates.
-
-- When users have edit permissions, the web versions of the Office apps allow copying regardless of the copy policy setting in the label.
-
-- RMS revocation, tracking, and reporting are unsupported​.
+- The Azure Information Protection document tracking site is not supported.
 
 - Office desktop apps and mobile apps don't support coauthoring. Instead, these apps continue to open files in exclusive editing mode.
 
