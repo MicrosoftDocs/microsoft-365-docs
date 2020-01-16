@@ -106,6 +106,8 @@
                       href: mtp/advanced-hunting-deviceimageloadevents-table.md
                     - name: DeviceEvents
                       href: mtp/advanced-hunting-deviceevents-table.md
+                    - name: DeviceFileCertificateInfoBeta
+                      href: mtp/advanced-hunting-devicefilecertificateinfobeta-table.md
                     - name: EmailEvents
                       href: mtp/advanced-hunting-emailevents-table.md
                     - name: EmailAttachmentInfo

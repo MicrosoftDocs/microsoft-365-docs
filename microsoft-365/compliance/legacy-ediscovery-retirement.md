@@ -40,7 +40,7 @@ As a result of this new and improved eDiscovery functionality in the Microsoft 3
    - [GetSearchableMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getsearchablemailboxes-operation)
 
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
-   
+
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
 
 - [Office 365 Advanced eDiscovery v1.0](office-365-advanced-ediscovery.md), which is the first version of Advanced eDiscovery that's accessed through an eDiscovery case in the Office 365 Security & Compliance Center.
@@ -57,7 +57,7 @@ As per the original announcement on July 1, 2017, the In-Place eDiscovery & Hold
 Because all of these capabilities (except for copying search results to a discovery mailbox) are now available in the content search, eDiscovery and Advanced eDiscovery tools in the [Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) (with improved functionality, reliability, and support for a wide range of Microsoft 365 services), we recommend that you start using these tools as soon as possible. To help you in the transition to these other eDiscovery tools, the table below lists the tools you can use instead of In-Place eDiscovery and In-Place Hold.
 
 ### Scope of affected organizations
-    
+
 - Office 365 and Microsoft 365 Enterprise organizations
 
 - Office 365 and Microsoft 365 Education organizations
@@ -66,11 +66,10 @@ Because all of these capabilities (except for copying search results to a discov
 
 - Office 365 Germany
 
-
 ### Timeline for retirement
-    
+
 - April 1, 2020: You won't be able to create new searches and holds, but you can still run, edit, and delete existing searches at your own risk. Microsoft Support will no longer In-Place eDiscovery & Holds in the EAC.
-    
+
 - July 1, 2020: The In-Place eDiscovery & Holds functionality in the EAC will be placed in a read-only mode. This means you'll only be able to remove existing searches and holds.
 
 ### Alternative tools
@@ -126,6 +125,11 @@ The following table describes other tools that you can use to replace the existi
 <p>
 <p>Alternatively, you can export search results to PST files and then use Microsoft 365 Import service to import the PSTs to a discovery mailbox. For step-by-step instruction, see <a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">Use network upload to import PST files to Office 365</a>.
 </tr>
+<tr class="even">
+<td>Restore items from the Recoverable Items folder</td>
+  <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">Restore-RecoverableItems</td>
+  <td>You can restore permanently deleted items (also known as <i>soft-deleted</i> items) in mailboxes, as long as the deleted item retention period for an item hasn't expired. For more information, see <a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">Recoverable Items folder in Exchange Online</a>.</td>
+</tr>
 </tbody>
 </table>
 
@@ -150,7 +154,7 @@ As per the original notice announced on July 1, 2017 in the Exchange admin cente
 Because these capabilities are now available in the [<span class="underline">Microsoft 365 compliance center</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) and Office 365 Security & Compliance Center PowerShell with improved performance and scalability, you should using these improved cmdlets. These cmdlets include [<span class="underline">\*-ComplianceCase</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase), [<span class="underline">\*-ComplianceSearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch), [<span class="underline">\*-CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy), [<span class="underline">\*-CaseHoldRule</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule), and [<span class="underline">\*-ComplianceSearchAction</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction).
 
 ### Scope of affected organizations
-    
+
 - Office 365 and Microsoft 365 Enterprise organizations
 
 - Office 365 and Microsoft 365 Education organizations
@@ -160,9 +164,9 @@ Because these capabilities are now available in the [<span class="underline">Mic
 - Office 365 Germany
 
 ### Timeline
-    
+
 - April 1, 2020: You won't be able to use **New-MailboxSearch** to create new In-Place eDiscovery searches and In-Place Holds, but you can still use cmdlets to run, edit, and delete existing searches and holds at your own risk. Microsoft Support will no longer provide assistance for these types of searches and holds.
-    
+
 - July 1, 2020: As previously stated, The In-Place eDiscovery & Holds functionality in the EAC will be placed in a read-only mode. That also means that you won't be able to use the **New-MailboxSearch**, **Start-MailboxSearch**, or **Set-MailboxSearch** cmdlets. You'll only be able to get and remove existing searches and holds.
 
 ### Alternative tools
@@ -234,7 +238,7 @@ The **Search-Mailbox** cmdlet in Exchange Online PowerShell is being retired as 
 - Office 365 Germany
 
 ### Timeline
-    
+
 -  April 1, 2020: The **Search-Mailbox** cmdlet will no longer be available and Microsoft Support will no longer provide assistance.
 
 ### Alternative tools
@@ -309,11 +313,11 @@ At this time, we recommend that you begin to transition your eDiscovery workflow
 - Office 365 Germany
 
 ### Timeline
-    
+
 - April 1, 2020: You won't be able to create new Advanced eDiscovery v1.0  cases.
-    
-- July 1, 2020: Microsoft Support won’t provide support. See [this notice](https://go.microsoft.com/fwlink/?linkid=2113221). You won't be able to add new data (Prepare search results for Advanced eDiscovery) to any cases. You'll be able to continue working with data in existing cases at your own risk.
+
+- July 1, 2020: You won't be able to add new data (Prepare search results for Advanced eDiscovery) to any cases. You'll be able to continue working with data in existing cases at your own risk. Microsoft Support will no longer provide assistance. 
 
 ### Alternative tools
-    
+
 The [Advanced eDiscovery solution](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) in the Microsoft 365 compliance center.
