@@ -112,7 +112,7 @@ The last step in setting up an HR connector is to run a script that will upload 
 6. Run the following command to upload the HR data in the CSV file to the Microsoft cloud; for example:
 
     ```powershell
-    .\HRConnector.ps1 -tenantId "<tenantId>" -appId "<appId>"  -appSecret "<appSecret>"  -jobId "<jobId>"  -csvFilePath "<csvFilePath>"
+    .\HRConnector.ps1 -tenantId <tenantId> -appId <appId>  -appSecret <appSecret>  -jobId <jobId>  -csvFilePath '<csvFilePath>'
     ```
 
    The following table describes the parameters to use with this script and their required values. The information you obtained in the previous steps is used in the values for these parameters.
@@ -123,13 +123,13 @@ The last step in setting up an HR connector is to run a script that will upload 
    |`appId` |This is the AAD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. | 
    |`appSecret`|This is the AAD application secret for the app that you created in Azure AD in Step 1. This also used for authentication.|
    |`jobId`|This is the Job Id for the HR connector that you created in Step 3. This is used to associate the HR data that is uploaded to the Microsoft cloud with the HR connector.|
-   |`csvFilePath`|This is the file path on the local computer (that you're using to run the script) for the CSV file that you created in Step 2. If the CSV file is located on a shared network location, you'll have to specify the complete file path for that location. |
+   |`csvFilePath`|This is the file path on the local computer (the one you're using to run the script) for the CSV file that you created in Step 2. If the CSV file is located on a shared network location, you'll have to specify the complete file path for that location. Try to avoid spaces in the file path; otherwise use single quotation marks.|
    |||
    
    Here's an example of the syntax for the HR connector script using actual values for each parameter:
 
    ```powershell
-    .\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "29ee526e-f9a7-4e98-a682-67f41bfd643e" -appSecret "MNubVGbcQDkGCnn" -jobId "b8be4a7d-e338-43eb-a69e-c513cd458eba" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"
+    .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
    If the upload is successful, the script displays the **Upload Successful** message.
