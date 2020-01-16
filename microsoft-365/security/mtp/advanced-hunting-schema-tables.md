@@ -41,6 +41,7 @@ The following reference lists all the tables in the schema. Each table name link
 | **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Sign-ins and other authentication events |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL loading events |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
+| **[DeviceFileCertificateInfoBeta](advanced-hunting-devicefilecertificateinfobeta-table.md)** | Certificate information of signed files obtained from certificate verification events on endpoints |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Office 365 email events, including email delivery and blocking events |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Information about files attached to Office 365 emails |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information about URLs on Office 365 emails |
