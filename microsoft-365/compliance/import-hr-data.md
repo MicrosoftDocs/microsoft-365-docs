@@ -63,7 +63,7 @@ After you create the CSV file with the required HR data, store in on a local com
 
 The next step is to create an HR connector in the Microsoft 365 compliance center. After you run the script in Step 4, the HR connector that you create will ingest the HR data from the CSV file to your Microsoft 365 organization. In this step, be sure to copy the JobId that's generated when you create the connector. You'll use the JobId when you run the script.
 
-1. Go to https://compliance.microsoft.com and then click **Data connectors** in the left nav.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** in the left nav.
 
 2. On the **Data connectors (preview)** page under **HR**, click **View**.
 
@@ -71,13 +71,29 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 4. On the **Authentication credentials** page, do the following and then click **Next**:
 
-   a. Type or paste the AAD application ID for the Azure AD app that you created in Step 1.
+   a. Type or paste the AAD application ID for the Azure app that you created in Step 1.
 
    b. Type a name for the HR connector.
 
 5. On the **File mapping** page, type the three column header names (also called *parameters* from the CSV file that you created in Step 2 in each of the appropriate boxes. The names are not case-sensitive. As previously explained, the names that you type in these boxes must match the parameter names in your CSV file. For example, the following screenshot shows the parameter names from the example in sample CSV file shown in Step 2.
 
+   ![Column heading names match the ones in the CSV file](media/HRConnectorWizard3.png)
+
 6. On the **Review** page, review your settings and then click **Finish** to create the connector.
+
+   A status page is displayed that confirms the connector was created. This page also contains the job ID. You'll need this job ID to run the script in the next step. You can copy it from this page or from the flyout page for the connector.
+
+7. Click **Done**. 
+   
+   The new connector is displayed in the list on the **Connectors** tab. 
+
+8. Click the HR connector that you just created to display the flyout page, which contains properties and other information about the connector. 
+
+   ![Flyout page for new HR connector](media/HRConnectorWizard7.png)
+
+   If you haven't already done so, you can copy the values for the **Azure App ID** and **Connector job ID**. You'll need these to run the script in the next step. You can also download the script from the flyout page (or download it using the link in the next step.) 
+
+   You can also click **Edit** to change the Azure App ID or the column header names that you defined on the **File mapping** page.
 
 ## Step 4: Run the script to upload your HR data
 
@@ -85,9 +101,9 @@ The last step in setting up an HR connector is to run a script that will upload 
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1).
 
-2. Click the **Raw** button to display the script in text.
+2. Click the **Raw** button to display the script in text view
 
-3. Copy all the lines in the script and then save them to a Windows PowerShell script file by using a filename suffix of `.ps1`; for example, `HRConnectorScript.ps1`.
+3. Copy all the lines in the script and then save them to a Windows PowerShell script file by using a filename suffix of `.ps1`; for example, `HRConnector.ps1`.
 
 4. Open a Command Prompt on your local computer.
 
@@ -113,13 +129,28 @@ The last step in setting up an HR connector is to run a script that will upload 
    Here's an example of the syntax for the HR connector script using actual values for each parameter:
 
    ```powershell
-    .\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458"  -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"
+    .\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "29ee526e-f9a7-4e98-a682-67f41bfd643e" -appSecret "MNubVGbcQDkGCnn" -jobId "b8be4a7d-e338-43eb-a69e-c513cd458eba" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"
     ```
 
    If the upload is successful, the script displays the **Upload Successful** message.
 
-
 ## Step 5: Monitor the HR connector
+
+After you create the HR connector and run the script to upload your HR data, you can view the connector and upload status in the Microsoft 365 compliance center. If you schedule the script to run automatically on a regular basis, you can also view the current status after the last time the script ran.
+
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
+
+2. Click the **Connectors** tab and then select the HR connector to display the flyout page, which contains the properties and information about the connector.
+
+   ![HR connector flyout page with properties and status](media/HRConnectorFlyout1.png)
+
+3. Under **Progress**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about each time the script runs and uploads the data from the CSV file to the Microsoft cloud. 
+
+   ![HR connector log file displays number rows from CSV file that were uploaded](media/HRConnectorLogFile.png)
+
+   The **RecordsSaved** field indicates the number of rows in the CSV file that uploaded. For example, if the CSV file contains 4 rows, then the value of the **RecordsSaved** fields is 4, if the script successfully uploaded all the rows in the CSV file.
+
+If you've haven't run the script in Step 4, a link to download the script is displayed under **Last import**. You can download the script and then follow the steps in Step 4 to run it.
 
 ## (Optional) Step 6: Schedule the script to run automatically
 
@@ -127,36 +158,48 @@ To make sure that the latest HR data from your organization is available to tool
 
 You can user the Task Scheduler app in Windows to automatically run the script every day.
 
-1. On your local computer, click the Windows **Start** button and then type **task scheduler**.
+1. On your local computer, click the Windows **Start** button and then type **Task Scheduler**.
 
 2. Click the **Task Scheduler** app to open it.
 
 3. In the **Actions** section, click **Create Task**.
 
-4. On the **General** tab, type a descriptive name for the scheduled task; for example, **HRConnectorScript**. You can also add an optional description. 
+4. On the **General** tab, type a descriptive name for the scheduled task; for example, **HR Connector Script**. You can also add an optional description. 
 
 5. Under **Security options**, do the following:
 
-   a. Determine whether to run to run the script when you're logged on to the computer or not.
+   a. Determine whether to run the script only when you're logged on to the computer or run it when your logged on or not.
    
-   b. Make sure that the **Run it with the highest privileges** checkbox is selected.
+   b. Make sure that the **Run with the highest privileges** checkbox is selected.
 
-6. Select the **Triggers** tab, and click **New**.
+6. Select the **Triggers** tab, click **New**, and then do the following things:
 
-7. Under **Settings**, select the **Daily** option, and then choose a date and time as starting time to first run the script. Click **Ok**.
+   a. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will every day at the same specified time.
+   
+   b. Under **Advanced settings**, make sure the **Enabled** checkbox is selected.
+   
+   c. Click **Ok**.
 
-8. Select the **Actions** tab, click **New**, and then do the following:
+7. Select the **Actions** tab, click **New**, and then do the following things:
 
-   a. In the **Action** dropdown list, make sure **Start a program** is selected.
+   ![Action settings to create a new scheduled task for the HR connector script](media/HRConnectorScheduleTask1.png)
 
-   b. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+   a. In the **Action** dropdown list, make sure that **Start a program** is selected.
+
+   b. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`.
 
    c. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
-   d. In the **Start in (optional)** box, paste the folder location of the script that you downloaded and ran in Step 4. For example, `"C:\Users\contosoadmin\Desktop\Scripts"`.ss
+   d. In the **Start in (optional)** box, paste the folder location of the script that you ran in Step 4. For example, `C:\Users\contosoadmin\Desktop\Scripts`.
 
-   e. Click **Ok** to save the setting on the **Action** tab.
+   e. Click **Ok** to save the settings for the new action.
 
-9. In the **Create Task** window, click **Ok** to save the scheduled task.
+8. In the **Create Task** window, click **Ok** to save the scheduled task. You might be prompted to enter your user account credentials.
 
-The new task is displayed in the Task Scheduler library, and will display the last time the script ran. You can also verify the last time the script ran on the flyout page of the corresponding HR connector in the compliance center.
+   The new task is displayed in the Task Scheduler Library.
+
+   ![The new task is displayed in the Task Scheduler Library](media/HRConnectorTaskSchedulerLibrary.png)
+
+   The last time and the next time the script ran is scheduled to run is displayed. You can double-click the task to edit it.
+
+   You can also verify the last time the script ran on the flyout page of the corresponding HR connector in the compliance center.
