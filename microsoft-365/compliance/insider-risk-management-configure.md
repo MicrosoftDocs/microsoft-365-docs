@@ -91,16 +91,7 @@ If you need to create separate role groups for different management roles, compl
 
 For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
-## Step 2 (optional): Set up groups for insider risk management
-
-Before you start using insider risk management, you may want to create security groups for employees that need monitoring if you don't have appropriate Microsoft Active Directory groups already configured. Additionally, you may want to create custom security groups for users who have permission to analyze or investigate alerts, cases, and data and employee investigation escalations.
-
-At a minimum, consider creating the following insider risk management groups:
-
-- **Insider risk analysts**: Employees who triage alerts, open new insider risk management cases, and take actions on cases.
-- **Insider risk investigators**: Employees who triage alerts, open new insider risk management cases, conduct investigative reviews of captured content, and take actions on cases.
-
-## Step 3 (optional): Configure the Microsoft 365 human resources data connector
+## Step 2 (optional): Configure the Microsoft 365 human resources data connector
 
 Insider risk management supports importing user and log data imported from 3rd-party risk management and human resources platforms. The Microsoft 365 Human Resources (HR) data connector allows you to pull in human resources data from CSV files, including user termination and last employment dates. This data helps drive the alert indicators in insider risk management policies and is an important part of configuring full risk management coverage in your organization.
 
@@ -109,7 +100,7 @@ Visit the [Import data with the HR Connector](import-hr-data.md) topic for step-
 >[!IMPORTANT]
 >If you plan on configuring a policy using the *Departing employee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template. If you configure more than one HR Connector for your organization, insider risk management will automatically pull indicators from all HR Connectors.
 
-## Step 4 (optional): Configure the Data Loss Prevention (DLP) policies
+## Step 3 (optional): Configure the Data Loss Prevention (DLP) policies
 
 Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties. When configuring a insider risk management policy with the *Data leaks* template, you have to assign a specific DLP policy to the policy. This helps drive the alert indicators for sensitive information is an important part of configuring full risk management coverage in your organization.
 
@@ -118,7 +109,7 @@ Visit the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) 
 >[!IMPORTANT]
 >If you plan on configuring a policy using the *Data leaks* template, you'll need to configure at least one DLP policy to use the full signal detection features of the policy template. If you configure more than one DLP policy for your organization, you'll need to assign an insider risk management policy per DLP policy.
 
-## Step 5 (required): Create an insider risk management policy
+## Step 4 (required): Create an insider risk management policy
 
 Insider risk management policies includes assigned users and defines which types of risk indicators are configured for alerts. Before activities can trigger alerts, a policy must be configured.
 
@@ -144,4 +135,4 @@ Insider risk management policies includes assigned users and defines which types
 10. Select **Next** to continue.
 11. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
-After you've completed these steps to create your first insider risk management policy, you'll start to receive alerts from activity indicators after about 24 hours. Configure additional policies as needed using the steps in Step 5 of this topic or the steps in [Create a new insider risk policy](insider-risk-management-policies.md#create-a-new-policy).
+After you've completed these steps to create your first insider risk management policy, you'll start to receive alerts from activity indicators after about 24 hours. Configure additional policies as needed using the steps in Step 4 of this topic or the steps in [Create a new insider risk policy](insider-risk-management-policies.md#create-a-new-policy).
