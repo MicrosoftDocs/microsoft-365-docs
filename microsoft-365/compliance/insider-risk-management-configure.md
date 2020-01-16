@@ -29,7 +29,7 @@ Complete these steps to set up and use insider risk management in your Microsoft
 
 ## Step 1 (required): Enable permissions for insider risk management
 
-There are four permission roles used to configure and manage insider risk management:
+There are four permission roles used to configure and manage insider risk management. To continue with these configuration steps, your tenant administrators must first assign you the **Insider Risk Management Admin** role.
 
 | **Role** | **Role permissions** |
 | ---- | ---------------- |
@@ -43,15 +43,13 @@ Depending on the structure of your compliance management team, you have two perm
 1. **Use the default Insider Risk Management role group**: Use this role group to manage insider risk management for your organization by adding all user accounts for designated administrators, analysts, and investigators in a single group. This role group contains all the insider risk management permission roles. This is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users.
 2. **Create different groups for different management roles**: For organizations that need to separate permissions for configuring and managing insider risk management, you'll need to create new role groups and assign appropriate roles and users to the new groups. For example, if you want different permissions for insider risk management analysis and investigations, you'll need to create a group for analysts and a separate group for investigators. For each group, you'll assign the required roles for these responsibilities and then add the users that should be assigned to the group.
 
-Use the following table to assign the required roles to each role group:
+If you decide to configure different groups for different roles, use the following table to assign the required roles to each role group:
 
 | **Group example** | **Required roles** |
 | ---- | ---------------- |
-| **Administrators** | Insider Risk Management Admin role |
-| **Analysts** | Insider Risk Management Analysts role <br> Case Management role |
-| **Investigators** | Insider Risk Management Investigators role <br> Case Management role  |
-
-To continue with these configuration steps, your tenant administrators must first assign you the **Insider Risk Management Admin** role.
+| **Administrators** | *Insider Risk Management Admin* role |
+| **Analysts** | *Insider Risk Management Analysts* role <br> *Case Management* role |
+| **Investigators** | *Insider Risk Management Investigators* role <br> *Case Management* role |
 
 ### Option 1: Add users to the Insider Risk Management role group
 
@@ -61,7 +59,7 @@ If you want to use one role group for all users configuring and managing insider
 
 2. In the Microsoft Office 365 security and compliance center, go to **Permissions**. Select the link to view and manage roles in Office 365.
 
-3. Select the Insider Risk Management role group, then select **Edit role group**.
+3. Select the *Insider Risk Management* role group, then select **Edit role group**.
 
 4. Select **Choose members** from the left navigation pane, then select **Edit**.
 
@@ -83,7 +81,7 @@ If you need to create separate role groups for different management roles, compl
 
 4. In the **Name** field, give the new role group a friendly name. Select **Next**.
 
-5. Select **Choose roles** and then select **Add**. Select the checkbox for the roles you need to assign. For example, if this is a group for insider risk analysts, select **Insider Risk Management Analysts** and **Case Management**, then select **Add** and **Done**. Select **Next**.
+5. Select **Choose roles** and then select **Add**. Select the checkbox for the roles you need to assign. For example, if this is a group for insider risk analysts, select the *Insider Risk Management Analysts* role and the *Case Management* role, then select **Add** and **Done**. Select **Next**.
 
 6. Select **Choose members** and then select **Add**. Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**. Select **Next**.
 
