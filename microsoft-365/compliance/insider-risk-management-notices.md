@@ -33,7 +33,7 @@ If you'd like to create more than a simple text-based email message for notifica
 <html>
 <body>
 <h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
-<p>A recent activity you've performed has generated a risk alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
+<p>A recent activity you've performed has generated a risk alert prohibited by the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
 <p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
 <p>Thank you,</p>
 <p><em>Human Resources</em></p>
@@ -79,7 +79,7 @@ To update an existing insider risk management notice template, complete the foll
 
 To delete an existing insider risk management notice template, complete the following steps:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Notice template** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Notice templates** tab.
 2. On the notice dashboard, select the notice template you want to delete.
 3. Select the **Delete** icon on the toolbar.
 4. To delete the notice template, select **Yes** in the delete dialog. To cancel the deletion, select **Cancel**.
