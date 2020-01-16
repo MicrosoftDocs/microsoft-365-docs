@@ -93,7 +93,7 @@ For more information about role groups and permissions, see [Permissions in the 
 
 Insider risk management supports importing user and log data imported from 3rd-party risk management and human resources platforms. The Microsoft 365 Human Resources (HR) data connector allows you to pull in human resources data from CSV files, including user termination and last employment dates. This data helps drive the alert indicators in insider risk management policies and is an important part of configuring full risk management coverage in your organization.
 
-Visit the [Import data with the HR Connector](import-hr-data.md) topic for step-by-step guidance to configure the Microsoft 365 HR Connector for your organization. After you've configured the HR Connector, return to these configuration steps.
+See the [Import data with the HR Connector](import-hr-data.md) topic for step-by-step guidance to configure the Microsoft 365 HR Connector for your organization. After you've configured the HR Connector, return to these configuration steps.
 
 >[!IMPORTANT]
 >If you plan on configuring a policy using the *Departing employee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template. If you configure more than one HR Connector for your organization, insider risk management will automatically pull indicators from all HR Connectors.
@@ -102,7 +102,7 @@ Visit the [Import data with the HR Connector](import-hr-data.md) topic for step-
 
 Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties. When configuring a insider risk management policy with the *Data leaks* template, you have to assign a specific DLP policy to the policy. This helps drive the alert indicators for sensitive information is an important part of configuring full risk management coverage in your organization.
 
-Visit the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) topic for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
+See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) topic for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
 
 >[!IMPORTANT]
 >If you plan on configuring a policy using the *Data leaks* template, you'll need to configure at least one DLP policy to use the full signal detection features of the policy template. If you configure more than one DLP policy for your organization, you'll need to assign an insider risk management policy per DLP policy.
@@ -124,9 +124,9 @@ Insider risk management policies includes assigned users and defines which types
 4. Select **Next** to continue.
 5. On the **Users** page, select **Add user or group** to define which users are included in the policy or select **All users and mail-enabled groups** checkbox. Select **Next** to continue.
 6. On the **Specify what content to prioritize (optional)** page, you can assign the sources to prioritize for risky user activities:
-    - SharePoint sites: Select a specific or all SharePoint Online sites in your organization.
-    - Sensitive info type:
-    - Sensitivity labels:
+    - SharePoint sites: Select **Add SharePoint site** and select the SharePoint organizations you want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - Sensitive info type: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
+    - Sensitivity labels: Select **Add sensitivity label** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
 7. Select **Next** to continue.
 8. On the **Choose alert indicators** page, you'll see the indicators that are included in the template that you've chosen for this policy. If you selected the *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list.
 9. On the **Select monitoring window** page, you'll define the *In-scope timespan* and *Historic timespan* for the policy.
