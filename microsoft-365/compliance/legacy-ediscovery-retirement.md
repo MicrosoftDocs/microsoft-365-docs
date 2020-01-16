@@ -126,6 +126,11 @@ The following table describes other tools that you can use to replace the existi
 <p>
 <p>Alternatively, you can export search results to PST files and then use Microsoft 365 Import service to import the PSTs to a discovery mailbox. For step-by-step instruction, see <a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">Use network upload to import PST files to Office 365</a>.
 </tr>
+<tr class="even">
+<td>Restore items from the recoverable items folder</td>
+  <td>Restore deleted items in mailboxes</td>
+  <td>For step-by-step instructions, see <a href="https://docs.microsoft.com/en-gb/powershell/module/exchange/mailboxes/Restore-RecoverableItems?view=exchange-ps">Restore-RecoverableItems</a></td>
+</tr>
 </tbody>
 </table>
 
