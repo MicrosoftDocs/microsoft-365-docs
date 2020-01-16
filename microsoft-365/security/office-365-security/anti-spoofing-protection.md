@@ -3,7 +3,7 @@ title: "Anti-spoofing protection in Office 365"
 ms.author: tracyp
 author: MSFTtracyp
 manager: dansimp
-ms.date: 08/30/2019
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -98,7 +98,7 @@ Authentication-Results:
 |||
 |:-----|:-----|
 |**Reason**|**Description**|
-|0xx |Message failed composite authentication.<br/>**000** means the message failed DMARC with an action of reject or quarantine.  <br/>**001** means the message failed implicit email authentication. This means that the sending domain did not have email authentication records published, or if they did, they had a weaker failure policy (SPF soft fail or neutral, DMARC policy of p=none).  <br/>**002** means the organization has a policy for the sender/domain pair that is explicitly prohibited from sending spoofed email, this setting is manually set by an administrator.  <br/>**010** means the message failed DMARC with an action of reject or quarantine, and the sending domain is one of your organization's accepted-domains (this is part of self-to-self, or intra-org, spoofing). <br/> |
+|0xx |Message failed composite authentication.<br/>**000** means the message failed DMARC with an action of reject or quarantine.  <br/>**001** means the message failed implicit email authentication. This means that the sending domain did not have email authentication records published, or if they did, they had a weaker failure policy (SPF soft fail or neutral, DMARC policy of p=none).  <br/>**002** means the organization has a policy for the sender/domain pair that is explicitly prohibited from sending spoofed email, this setting is manually set by an administrator.  <br/>**010** means the message failed DMARC with an action of reject or quarantine, and the sending domain is one of your organization's accepted-domains (this is part of self-to-self, or intra-org, spoofing).|
 |1xx, 2xx, 3xx, 4xx, and 5xx|Correspond to various internal codes for why a message passed implicit authentication, or had no authentication but no action was applied.|
 |6xx|Means the message failed implicit email authentication, and the sending domain is one of your organization's accepted domains (this is part of self-to-self, or intra-org, spoofing).|
 
@@ -108,31 +108,25 @@ By looking at the headers of a message, an administrator or even an end user can
 
 Microsoft differentiates between two different types of spoofing messages:
 
- **Intra-org spoofing**
+#### Intra-org spoofing
 
 Also known as self-to-self spoofing, this occurs when the domain in the From: address is the same as, or aligns with, the recipient domain (when recipient domain is one of your organization's [accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)); or, when the domain in the From: address is part of the same organization.
 
 For example, the following has sender and recipient from the same domain (contoso.com). Spaces are inserted into the email address to prevent spambot harvesting on this page):
 
-From: sender @ contoso.com
-
-To: recipient @ contoso.com
+> From: sender @ contoso.com <br/> To: recipient @ contoso.com
 
 The following has the sender and recipient domains aligning with the organizational domain (fabrikam.com):
 
-From: sender @ foo.fabrikam.com
-
-To: recipient @ bar.fabrikam.com
+> From: sender @ foo.fabrikam.com <br/> To: recipient @ bar.fabrikam.com
 
 The following sender and recipient domains are different (microsoft.com and bing.com), but they belong to the same organization (that is, both are part of the organization's Accepted Domains):
 
-From: sender @ microsoft.com
-
-To: recipient @ bing.com
+> From: sender @ microsoft.com <br/> To: recipient @ bing.com
 
 Messages that fail intra-org spoofing contain the following values in the headers:
 
-X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11
+`X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
 
 The CAT is the category of the message, and it is normally stamped as SPM (spam), but occasionally may be HSPM (high confidence spam) or PHISH (phishing) depending upon what other types of patterns occur in the message.
 
@@ -140,13 +134,13 @@ The SFTY is the safety level of the message, the first digit (9) means the messa
 
 There is no specific reason code for Composite Authentication for intra-org spoofing, that will be stamped later in 2018 (timeline not yet defined).
 
- **Cross-domain spoofing**
+#### Cross-domain spoofing
 
 This occurs when the sending domain in the From: address is an external domain to the receiving organization. Messages that fail Composite Authentication due to cross-domain spoofing contain the following values in the headers:
 
-Authentication-Results: … compauth=fail reason=000/001
+`Authentication-Results: ... compauth=fail reason=000/001`
 
-X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22
+`X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
 
 In both cases, the following red safety tip is stamped in the message, or an equivalent that is customized to the recipient mailbox's language:
 
@@ -166,74 +160,74 @@ The new anti-spoofing protection relies on email authentication (SPF, DKIM, and 
 
 For example, prior to anti-spoofing being deployed, a message may have looked like the following with no SPF record, no DKIM record, and no DMARC record:
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=none
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
   (message not signed) header.d=none; contoso.com; dmarc=none
-  action=none header.from=example.com;
-From: sender @ example.com
+  action=none header.from=fabrikam.com;
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
+
 After anti-spoofing, if you have Office 365 Enterprise E5, EOP, or ATP, the compauth value is stamped:
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=none
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
   (message not signed) header.d=none; contoso.com; dmarc=none
-  action=none header.from=example.com; compauth=fail reason=001
-From: sender @ example.com
+  action=none header.from=fabrikam.com; compauth=fail reason=001
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
-
 ```
 
-If example.com fixed this by setting up an SPF record but not a DKIM record, this would pass composite authentication because the domain that passed SPF aligned with the domain in the From: address:
+If fabrikam.com fixed this by setting up an SPF record but not a DKIM record, this would pass composite authentication because the domain that passed SPF aligned with the domain in the From: address:
 
-```
+```text
 Authentication-Results: spf=pass (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=none
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
   (message not signed) header.d=none; contoso.com; dmarc=bestguesspass
-  action=none header.from=example.com; compauth=pass reason=109
-From: sender @ example.com
+  action=none header.from=fabrikam.com; compauth=pass reason=109
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
 
 Or, if they set up a DKIM record but not an SPF record, this would also pass composite authentication because the domain in the DKIM-Signature that passed aligned with the domain in the From: address:
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; contoso.com; dkim=pass
-  (signature was verified) header.d=outbound.example.com;
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=pass
+  (signature was verified) header.d=outbound.fabrikam.com;
   contoso.com; dmarc=bestguesspass action=none
-  header.from=example.com; compauth=pass reason=109
-From: sender @ example.com
+  header.from=fabrikam.com; compauth=pass reason=109
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
 
-However, a phisher may also set up SPF and DKIM and sign the message with their own domain, but specify a different domain in the From: address. Neither SPF nor DKIM requires the domain to align with the domain in the From: address, so unless example.com published DMARC records, this would not be marked as a spoof using DMARC:
+However, a phisher may also set up SPF and DKIM and sign the message with their own domain, but specify a different domain in the From: address. Neither SPF nor DKIM requires the domain to align with the domain in the From: address, so unless fabrikam.com published DMARC records, this would not be marked as a spoof using DMARC:
 
-```
+```text
 Authentication-Results: spf=pass (sender IP is 5.6.7.8)
   smtp.mailfrom=maliciousDomain.com; contoso.com; dkim=pass
   (signature was verified) header.d=maliciousDomain.com;
-  contoso.com; dmarc=none action=none header.from=example.com;
-From: sender @ example.com
+  contoso.com; dmarc=none action=none header.from=fabrikam.com;
+From: sender @ fabrikam.com
 To: receiver @ contoso.com
 ```
 
-In the email client (Outlook, Outlook on the web, or any other email client), only the From: domain is displayed, not the domain in the SPF or DKIM, and that can mislead the user into thinking the message came from example.com, but actually came from maliciousDomain.com.
+In the email client (Outlook, Outlook on the web, or any other email client), only the From: domain is displayed, not the domain in the SPF or DKIM, and that can mislead the user into thinking the message came from fabrikam.com, but actually came from maliciousDomain.com.
 
 ![Authenticated message but From: domain does not align with what passed SPF or DKIM](../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
 
 For that reason, Office 365 requires that the domain in the From: address aligns with the domain in the SPF or DKIM signature, and if it doesn't, contains some other internal signals that indicates that the message is legitimate. Otherwise, the message would be a compauth fail.
 
-```
+```text
 Authentication-Results: spf=none (sender IP is 5.6.7.8)
   smtp.mailfrom=maliciousDomain.com; contoso.com; dkim=pass
   (signature was verified) header.d=maliciousDomain.com;
   contoso.com; dmarc=none action=none header.from=contoso.com;
   compauth=fail reason=001
 From: sender@contoso.com
-To: someone@example.com
+To: someone@fabrikam.com
 ```
 
 Thus, Office 365 anti-spoofing protects against domains with no authentication, and against domains who set up authentication but mismatch against the domain in the From: address as that is the one that the user sees and believes is the sender of the message. This is true both of domains external to your organization, as well as domains within your organization.
@@ -252,9 +246,9 @@ There are multiple different ways a message can be spoofed (see  [Differentiatin
 
 |**Type of spoof**|**Category**|**Safety tip added?**|**Applies to**|
 |:-----|:-----|:-----|:-----|
-|DMARC fail (quarantine or reject)  <br/> |HSPM (default), may also be SPM or PHSH  <br/> |No (not yet)  <br/> |All Office 365 customers, Outlook.com  <br/> |
-|Self-to-self  <br/> |SPM  <br/> |Yes  <br/> |All Office 365 organizations, Outlook.com  <br/> |
-|Cross-domain  <br/> |SPOOF  <br/> |Yes  <br/> |Office 365 Advanced Threat Protection and E5 customers  <br/> |
+|DMARC fail (quarantine or reject)|HSPM (default), may also be SPM or PHSH|No (not yet)|All Office 365 customers, Outlook.com|
+|Self-to-self|SPM|Yes|All Office 365 organizations, Outlook.com|
+|Cross-domain|SPOOF|Yes|Office 365 Advanced Threat Protection and E5 customers|
 
 ### Changing your anti-spoofing settings
 
@@ -314,10 +308,10 @@ You should only disable anti-spoofing protection if you have another mail server
 ```powershell
 $defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false
-
 ```
+
 > [!IMPORTANT]
-> If the first hop in your email path is Office 365, and you are getting too many legitimate emails marked as spoof, you should first set up your senders that are allowed to send spoofed email to your domain (see the section  *"Managing legitimate senders who are sending unauthenticated email"*  ). If you are still getting too many false positives (that is, legitimate messages marked as spoof), we do NOT recommend disabling anti-spoofing protection altogether. Instead, we recommend choosing Basic instead of High protection. It is better to work through false positives than to expose your organization to spoofed email which could end up imposing significantly higher costs in the long term.
+> If the first hop in your email path is Office 365, and you are getting too many legitimate emails marked as spoof, you should first set up your senders that are allowed to send spoofed email to your domain (see the  [Managing legitimate senders who are sending unauthenticated email](#managing-legitimate-senders-who-are-sending-unauthenticated-email) section in this topic. If you are still getting too many false positives (that is, legitimate messages marked as spoof), we do NOT recommend disabling anti-spoofing protection altogether. Instead, we recommend choosing Basic instead of High protection. It is better to work through false positives than to expose your organization to spoofed email which could end up imposing significantly higher costs in the long term.
 
 ### Managing legitimate senders who are sending unauthenticated email
 
@@ -325,15 +319,15 @@ Office 365 keeps track of who is sending unauthenticated email to your organizat
 
 However, as an administrator, you can specify which senders are permitted to send spoofed email, overriding Office 365's decision.
 
-**Method 1 - If your organization owns the domain, set up email authentication**
+#### Method 1 - If your organization owns the domain, set up email authentication
 
 This method can be used to resolve intra-org spoofing, and cross-domain spoofing in cases where you own or interact with multiple tenants. It also helps resolve cross-domain spoofing where you send to other customers within Office 365, and also third parties that are hosted in other providers.
 
 For more details, see [Customers of Office 365](#customers-of-office-365).
 
-**Method 2 - Use Spoof intelligence to configure permitted senders of unauthenticated email**
+#### Method 2 - Use Spoof intelligence to configure permitted senders of unauthenticated email
 
-You can also use [Spoof Intelligence](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) to permit senders to transmit unauthenticated messages to your organization.
+You can also use [Spoof Intelligence](learn-about-spoof-intelligence.md) to permit senders to transmit unauthenticated messages to your organization.
 
 For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is either the sending IP address (divided up into /24 CIDR ranges), or the organizational domain of the PTR record (in the screenshot below, the sending IP might be 131.107.18.4 whose PTR record is outbound.mail.protection.outlook.com, and this would show up as outlook.com for the sending infrastructure).
 
@@ -345,9 +339,6 @@ You can also use PowerShell to allow specific sender to spoof your domain:
 
 ```powershell
 $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
-```
-
-```powershell
 Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
 ```
 
@@ -368,13 +359,13 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 This will now allow bing.com to send unauthenticated email from \*.outlook.com.
 
-**Method 3 - Create an allow entry for the sender/recipient pair**
+#### Method 3 - Create an allow entry for the sender/recipient pair
 
 You can also choose to bypass all spam filtering for a particular sender. For more details, see [How to securely add a sender to an allow list in Office 365](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/).
 
 If you use this method, it will skip spam and some of the phish filtering, but not malware filtering.
 
-**Method 4 - Contact the sender and ask them to set up email authentication**
+#### Method 4 - Contact the sender and ask them to set up email authentication
 
 Because of the problem of spam and phishing, Microsoft recommends all senders set up email authentication. If you know an administrator of the sending domain, contact them and request that they set up email authentication records so you do not have to add any overrides. For more information, see [Administrators of domains that are not Office 365 customers](#administrators-of-domains-that-are-not-office-365-customers)" later in this article.
 
@@ -438,12 +429,12 @@ If you are unsure whether or not your receiving domain has undergone a recipient
 
 a) First, look at the headers in the message for the recipient domain in the Authentication-Results header:
 
-```
+```text
 Authentication-Results: spf=fail (sender IP is 1.2.3.4)
-  smtp.mailfrom=example.com; office365.contoso.net; dkim=fail
-  (body hash did not verify) header.d=simple.example.com;
+  smtp.mailfrom=fabrikam.com; office365.contoso.net; dkim=fail
+  (body hash did not verify) header.d=simple.fabrikam.com;
   office365.contoso.net; dmarc=none action=none
-  header.from=example.com; compauth=fail reason=001
+  header.from=fabrikam.com; compauth=fail reason=001
 ```
 
 The recipient domain is found in the bold red text above, in this case office365.contoso.net. This may be different that the recipient in the To: header:
@@ -472,29 +463,28 @@ Remember, you don't want to disable anti-spoofing if the domain's first hop in t
 
 ### How to disable anti-spoofing
 
-If you already have an Anti-phishing policy created, set the EnableAntispoofEnforcement parameter to $false:
+If you already have an Anti-phishing policy created, set the *EnableAntispoofEnforcement* parameter to $false:
 
-```
+```powershell
 $name = "<name of policy>"
 Set-AntiphishPolicy -Identity $name -EnableAntiSpoofEnforcement $false
-
 ```
 
 If you don't know the name of the policy (or policies) to disable, you can display them:
 
-```
-Get-AntiphishPolicy | fl Name
+```powershell
+Get-AntiphishPolicy | Format-List Name
 ```
 
 If you don't have any existing anti-phishing policies, you can create one and then disable it (even if you don't have a policy, anti-spoofing is still applied; later on in 2018, a default policy will be created for you and you can then disable that instead of creating one). You will have to do this in multiple steps:
 
-```
+```powershell
 $org = Get-OrganizationConfig
 $name = "My first anti-phishing policy for " + $org.Name
 # Note: If the name is more than 64 characters, you will need to choose a smaller one
 ```
 
-```
+```powershell
 # Next, create a new anti-phishing policy with the default values
 New-AntiphishPolicy -Name $Name
 # Select the domains to scope it to
@@ -504,7 +494,6 @@ $domains = "domain1.com, domain2.com, domain3.com"
 New-AntiphishRule -Name $name -AntiphishPolicy -RecipientDomainIs $domains
 # Finally, scope the anti-phishing policy to the domains
 Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
-
 ```
 
 Disabling anti-spoofing is only available via cmdlet (later it will be available in the Security &amp; Compliance Center). If you do not have access to PowerShell, create a support ticket.
@@ -515,35 +504,21 @@ Remember, this should only be applied to domains that undergo indirect routing w
 
 Individual users are limited in how they can interact with the anti-spoofing safety tip. However, there are several things you can do to resolve common scenarios.
 
-### Common scenario #1 - Discussion lists
+### Common scenario: Discussion lists
 
 Discussion lists are known to have problems with anti-spoofing due to the way they forward the message and modify its contents yet retain the original From: address.
 
-For example, suppose your email address is user @ contoso.com, and you are interested in Bird Watching and join the discussion list birdwatchers @ example.com. When you send a message to the discussion list, you might send it this way:
+For example, suppose Gabriela Laureano (glaureano @ contoso.com) is interested in bird watching and joins the discussion list birdwatchers @ fabrikam.com. When she send a message to the discussion list, it looks like this:
 
-**From:** John Doe \<user @ contoso.com\>
+> **From:** Gabriela Laureano \<glaureano @ contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers @ fabrikam.com\> <br/> 
+**Subject:** Great viewing of blue jays at the top of Mt. Rainier this week <br/><br/>Anyone want to check out the viewing this week from Mt. Rainier?
 
-**To:** Birdwatcher's Discussion List \<birdwatchers @ example.com\>
+When the email list receives the message, they format the message, modify its contents, and replay it to the rest of the members on the discussion list which, is made up of participants from many different email receivers.
 
-**Subject:** Great viewing of blue jays at the top of Mt. Rainier this week
-
-Anyone want to check out the viewing this week from Mt. Rainier?
-
-When the email list receives the message, they format the message, modify its contents, and replay it to the rest of the members on the discussion list which is made up of participants from many different email receivers.
-
-**From:** John Doe \<user @ contoso.com\>
-
-**To:** Birdwatcher's Discussion List \<birdwatchers @ example.com\>
-
-**Subject:** [BIRDWATCHERS] Great viewing of blue jays at the top of Mt. Rainier this week
-
-Anyone want to check out the viewing this week from Mt. Rainier?
-
----
-
+> **From:** Gabriela Laureano \<glaureano @ contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers @ fabrikam.com\> <br/> **Subject:** [BIRDWATCHERS] Great viewing of blue jays at the top of Mt. Rainier this week <br/><br/> Anyone want to check out the viewing this week from Mt. Rainier? <br/><br/> 
 This message was sent to the Birdwatchers Discussion List. You can unsubscribe at any time.
 
-In the above, the replayed message has the same From: address (user @ contoso.com) but the original message has been modified by adding a tag to the Subject line, and a footer to the bottom of the message. This type of message modification is common in mailing lists, and may result in false positives.
+In this example, the replayed message has the same From: address (glaureano @ contoso.com) but the original message has been modified by adding a tag to the Subject line, and a footer to the bottom of the message. This type of message modification is common in mailing lists, and may result in false positives.
 
 If you or someone in your organization is an administrator of the mailing list, you may be able to configure it to pass anti-spoofing checks.
 
@@ -553,13 +528,13 @@ If you or someone in your organization is an administrator of the mailing list, 
 
 - Consider installing updates on your mailing list server to support ARC, see [https://arc-spec.org](https://arc-spec.org/)
 
-If you do not have ownership of the mailing list:
+If you don't own the mailing list:
 
-- You can request the maintainer of the mailing list to implement one of the options above (they should also have email authentication set up for the domain the mailing list is relaying from)
+- You can request the maintainer of the mailing list to implement one of the previous options (they should also have email authentication set up for the domain the mailing list is relaying from).
 
-- You can create mailbox rules in your email client to move messages to the Inbox. You can also request your organization's administrators to set up allow rules, or overrides as discussed in the section Managing legitimate senders who are sending unauthenticated email
+- You can create mailbox rules in your email client to move messages to the Inbox. You can also request your organization's administrators to set up allow rules, or overrides as discussed in the [Managing legitimate senders who are sending unauthenticated email](#managing-legitimate-senders-who-are-sending-unauthenticated-email)section in this topic.
 
-- You can create a support ticket with Office 365 to create an override for the mailing list to treat it as legitimate
+- You can create a support ticket with Office 365 to create an override for the mailing list to treat it as legitimate.
 
 ### Other scenarios
 
@@ -569,7 +544,7 @@ If you do not have ownership of the mailing list:
 
 3. Additionally, if you know who the sender is and are confident they are not being maliciously spoofed, you may reply back to the sender indicating that they are sending messages from a mail server that does not authenticate. This sometimes results in the original sender contacting their IT administrator who will set up the required email authentication records.
 
-When enough senders reply back to domain owners that they should set up email authentication records, it spurs them into taking action. While Microsoft also works with domain owners to publish the required records, it helps even more when individual users request it.
+   When enough senders reply back to domain owners that they should set up email authentication records, it spurs them into taking action. While Microsoft also works with domain owners to publish the required records, it helps even more when individual users request it.
 
 4. Optionally, add the sender to your Safe Senders list. However, be aware that if a phisher spoofs that account, it will be delivered to your mailbox. Therefore, this option should be used sparingly.
 
@@ -605,9 +580,11 @@ If you are a domain administrator but are not an Office 365 customer:
 
 ### What if you don't know who sends email as your domain?
 
-Many domains do not publish SPF records because they do not know who all their senders are. That's okay, you do not need to know who all of them are. Instead, you should get started by publishing an SPF record for the ones you do know of, especially where your corporate traffic is located, and publish a neutral SPF policy, ?all:
+Many domains do not publish SPF records because they do not know who all their senders are. That's okay, you do not need to know who all of them are. Instead, you should get started by publishing an SPF record for the ones you do know of, especially where your corporate traffic is located, and publish a neutral SPF policy, `?all`:
 
-example.com IN TXT "v=spf1 include:spf.example.com ?all"
+```text
+fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
+```
 
 The neutral SPF policy means that any email that comes out of your corporate infrastructure will pass email authentication at all other email receivers. Email that comes from senders you don't know about will fall back to neutral, which is almost the same as publishing no SPF record at all.
 
@@ -617,7 +594,7 @@ Once you've gotten started with an SPF record with a fallback policy of ?all, yo
 
 ### What if you are the owner of a mailing list?
 
-See the section [Common scenario #1 - Discussion lists](#common-scenario-1---discussion-lists).
+See the [Common scenario: Discussion lists](#common-scenario-discussion-lists) section earlier in this topic.
 
 ### What if you are an infrastructure provider such as an Internet Service Provider (ISP), Email Service Provider (ESP), or cloud hosting service?
 
@@ -649,7 +626,7 @@ Microsoft's anti-spoofing technology was initially deployed to its organizations
 
 ### How can I report spam or non-spam messages back to Microsoft?
 
-You can either use the [Report Message Add-in for Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2), or if it isn't installed, [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+You can either use the [Report Message Add-in for Outlook](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2), or if it isn't installed, [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
 
 ### I'm a domain administrator who doesn't know who all my senders are!
 

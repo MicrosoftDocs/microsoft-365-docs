@@ -13,6 +13,7 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft GDPR
 ---
 
 # Dynamics 365 Data Subject Requests for the GDPR and CCPA

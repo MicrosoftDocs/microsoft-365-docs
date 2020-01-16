@@ -136,7 +136,7 @@ Yes! For information on customizing email messages and the OME portal, see Add y
   
 ## Are there any reporting capabilities or insights for encrypted emails?
 
-There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Security & Compliance Center](view-email-security-reports.md).
+There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Security & Compliance Center](../security/office-365-security/view-email-security-reports.md).
   
 ## Can I use message encryption with compliance features such as eDiscovery?
 
@@ -158,7 +158,7 @@ Yes! Encrypted messages are supported for a shared mailbox.
 
 - Users can view attachments that inherit protection from email when they use Outlook for Windows, Outlook for Mac, and Outlook on the web.
 
-The following table shows the supported clients for shared mailboxes.
+The following table lists the supported clients for shared mailboxes.
 
 | Platform | Read mail | View email attachments |
 |----------|-----------|------------------------|

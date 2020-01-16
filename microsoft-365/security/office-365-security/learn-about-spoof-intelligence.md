@@ -74,9 +74,9 @@ You can review the senders who are spoofing your domain, or external domains, an
 
     ![Screenshot showing access to the anti-spam page](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
 
-4. On the **Anti-spam settings** page in the right pane, select the **Custom** tab, and then scroll down and expand **Spoof intelligence policy**.
+4. On the **Anti-spam settings** page in the right pane, scroll down and expand **Spoof intelligence policy**.
 
-    ![Screenshot showing access to the anti-spam custom settings](../media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![spoof](https://user-images.githubusercontent.com/41186174/71801032-6228f100-3062-11ea-8461-682b910418c2.png)
 
 5. To view the list of senders spoofing your domain, choose **Review new senders** and select the **Your Domains** tab.
 
@@ -101,7 +101,7 @@ If you have an Office 365 Enterprise E5 subscription or have separately purchase
 
 In addition to allowing or blocking a particular sender from sending spoofed email into your organization, you can also configure how strict you want the filter to be, and the action to take when a spoofing message is found.
 
-Anti-spoofing protection is applied to email from senders from domains that are external to your Office 365 organization. You can apply the policy to recipients whose mailboxes are licensed for Office 365 Enterprise E5, Advanced Threat Protection and as of October, 2018 EOP customers as well. You manage the anti-spoofing policy along with the other anti-phishing settings. For more information about anti-phishing settings, see [Set up the Office 365 anti-phishing policies](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions).
+Anti-spoofing protection is applied to email from senders from domains that are external to your Office 365 organization. You can apply the policy to recipients whose mailboxes are licensed for Office 365 Enterprise E5, Advanced Threat Protection and as of October, 2018 EOP customers as well. You manage the anti-spoofing policy along with the other anti-phishing settings. For more information about anti-phishing settings, see [Set up Office 365 ATP anti-phishing and anti-phishing policies](set-up-anti-phishing-policies.md).
 
 Office 365 includes default anti-spoofing protection that's always running. This default protection is not visible in the Security &amp; Compliance Center or retrievable through Windows PowerShell cmdlets. You can't modify the default anti-spoofing protection. Instead, you can configure how strictly Office 365 enforces the anti-spoofing protection in each anti-phishing policy that you create.
 

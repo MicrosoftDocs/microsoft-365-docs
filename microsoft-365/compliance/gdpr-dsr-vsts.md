@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 ms.workload:
   - "multiple"
+titleSuffix: Microsoft GDPR
 ---
 # Azure DevOps Services Data Subject Requests for the GDPR and CCPA
 

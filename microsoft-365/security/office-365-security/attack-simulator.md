@@ -42,7 +42,7 @@ Make sure that you and your organization meet the following requirements for Att
 
 - You are an Office 365 global administrator or security administrator
 
-- [Multi-factor authentication/Conditional Access](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) is turned on, for at least the Office 365 global administrator account and security administrators who will be using Attack Simulator. (Ideally, multi-factor authentication/conditional access is turned on for all users in your organization.)
+- [Multi-factor authentication/Conditional Access](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) is turned on, for at least the Office 365 global administrator account and security administrators who will be using Attack Simulator. (Ideally, multi-factor authentication/conditional access is turned on for all users in your organization.)
 
 - Your organization has [Office 365 Advanced Threat Protection Plan 2](office-365-atp.md), with Attack Simulator visible in the Security &amp; Compliance Center (go to **Threat management** \> **Attack simulator**)
 

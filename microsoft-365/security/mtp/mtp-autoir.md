@@ -1,6 +1,6 @@
 ---
-title: Automated investigation and remediation in Microsoft Threat Protection 
-description: Get an overview of automated investigation and remediation capabilities in Microsoft Threat Protection
+title: Automated investigation and response in Microsoft Threat Protection 
+description: Get an overview of automated investigation and response capabilities in Microsoft Threat Protection
 keywords: automated, investigation, alert, trigger, action, remediation
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -18,18 +18,18 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# Automated investigation and remediation (AIR) in Microsoft Threat Protection
+# Automated investigation and response (AIR) in Microsoft Threat Protection
 
 **Applies to:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ## Your virtual analyst
 
 As security alerts are triggered, it’s up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts keep coming in while an investigation is going on. Security operations teams can feel overwhelmed by the sheer volume of threats they must monitor and protect against. 
 
-Imagine having a virtual analyst in your Tier 1 / Tier 2 security operations team. The virtual analyst mimics the ideal steps that security operations would take to investigate and remediate threats. The virtual assistant could work 24x7, with unlimited capacity, and take on a significant load of investigations and threat remediation. Such a virtual assistant could significantly reduce the time to respond, freeing up your security operations team for other important strategic projects. If this scenario sounds like science fiction, it’s not! Such a virtual analyst is part of your Microsoft Threat Protection suite, and its name is *automated investigation and remediation* (AIR).
+Imagine having a virtual analyst in your Tier 1 / Tier 2 security operations team. The virtual analyst mimics the ideal steps that security operations would take to investigate and remediate threats. The virtual assistant could work 24x7, with unlimited capacity, and take on a significant load of investigations and threat remediation. Such a virtual assistant could significantly reduce the time to respond, freeing up your security operations team for other important strategic projects. If this scenario sounds like science fiction, it’s not! Such a virtual analyst is part of your Microsoft Threat Protection suite, and its name is *automated investigation and response* (AIR).
 
 AIR enables your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents. With AIR, you can reduce the cost of dealing with investigation and remediation activities and get the most out of your threat protection suite. AIR helps your security operations team by:
 
@@ -68,5 +68,5 @@ While an investigation is running, any other related alerts that arise are added
 
 ## Next steps
 
-- [Approve or reject actions related to automated investigation and remediation](mtp-autoir-actions.md)
+- [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
 - [Learn more about the Action center](mtp-action-center.md)

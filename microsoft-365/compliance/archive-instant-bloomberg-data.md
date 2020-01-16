@@ -1,5 +1,5 @@
 ---
-title: "Set up a connector to archive Instant Bloomberg data in Office 365"
+title: "Set up a connector to archive Instant Bloomberg data"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,7 +12,7 @@ ms.collection: M365-security-compliance
 description: "Administrators can set up a native connector to import data from the Instant Bloomberg chat tool into Office 365. This lets you archive data from third-party data sources in Office 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive Instant Bloomberg data in Office 365
+# Set up a connector to archive Instant Bloomberg data
 
 Use a native connector in the Security & Compliance Center in Office 365 to import and archive financial services chat data from the [Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) collaboration tool. After you set up and configure a connector, it connects to your organization's Bloomberg secure FTP site (SFTP) once every day, converts the content of chat messages to an email message format, and then imports those items to mailboxes in Office 365.
 
@@ -68,7 +68,7 @@ Many of the implementation steps required to archive Instant Bloomberg data are 
 
 The first step is to obtain a copy of the public keys for Secure Shell (SSH) and Pretty Good Privacy (PGP). You use these keys in Step 2 to configure the Bloomberg SFTP site to allow the connector (that you create in Step 3) to connect to the SFTP site and transfer the Instant Bloomberg chat data to Office 365 mailboxes. You also obtain an IP address in this step, which you use when configuring the Bloomberg SFTP site.
 
-1. Go to <https://protection.office.com> and then click **Data governance \> Import** and then click **Archive third-party data**.
+1. Go to <https://protection.office.com> and then click **Information governance \> Import** > **Archive third-party data**.
 
 2. On the **Archive third-party data** page, click **Add a connector**, and then click **Instant Bloomberg**.
 
@@ -95,7 +95,7 @@ The next step is to use the SSH and PGP public keys and the IP address that you 
 
 The last step is to create an Instant Bloomberg connector in the Security & Compliance Center. The connector uses the information you provide to connect to the Bloomberg SFTP site and transfer chat messages to the corresponding user mailbox boxes in Office 365. 
 
-1. Go to <https://protection.office.com> and then click **Data governance \> Import** and then click **Archive third-party data**.
+1. Go to <https://protection.office.com> and then click **Information governance \> Import** > **Archive third-party data**.
 
 2. On the **Archive third-party data** page, click **Add a connector**, and then click **Instant Bloomberg**.
 

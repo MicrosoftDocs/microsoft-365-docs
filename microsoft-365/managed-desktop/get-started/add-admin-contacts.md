@@ -20,7 +20,7 @@ There are several ways that Microsoft Managed Desktop service communicates with 
 Microsoft Managed Desktop Admin portal requires that people accessing the portal have one of these Azure Active Directory (AD) roles:
 - Global Administrator
 - Intune Service Administrator
-- Billing Administrator
+- Global Reader
 - Service Support Administrator
 
 The Global Administrator must be the one to enroll your organization in Microsoft Managed Desktop. All five roles have the same access within the Admin portal to initiate and view tasks. For more information on assigning these roles in Azure AD, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
@@ -39,7 +39,7 @@ Other | For issues not covered by other areas
 
 **Whoever you choose for these contacts needs to have the knowledge and authority to make decisions for your Microsoft Managed Desktop environment.** When you onboard your Microsoft Managed Desktop environment, you’re prompted to add contacts for your local Helpdesk and Security. 
 
-Admin contacts are required when you [submit a Support request](../working-with-managed-desktop/support.md). You’ll need to have an admin contact for the focus area of the Support request. 
+Admin contacts are required when you [submit a Support request](../service-description/support.md). You’ll need to have an admin contact for the focus area of the Support request. 
 
 **To add admin contacts**
 

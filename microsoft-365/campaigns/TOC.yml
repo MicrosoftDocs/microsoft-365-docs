@@ -16,6 +16,8 @@
       href: ../business/set-up.md?toc=/microsoft-365/campaigns/toc.json
     - name: Sign in
       href: m365-campaigns-sign-in.md
+    - name: Customize sign-in page
+      href: m365-customize-sign-in.md
     - name: Add users
       href: ../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json
 - name: Bump up security protection

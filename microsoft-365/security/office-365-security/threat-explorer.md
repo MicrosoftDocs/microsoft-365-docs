@@ -18,13 +18,13 @@ description: "Learn about Explorer and real-time detections in the Security &amp
 
 # Threat Explorer and real-time detections
 
-If your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **real-time detections** (formerly *real-time reports* — [see what's new](#new-features-in-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** OR **Real-time detections**. 
+If your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **real-time detections** (formerly *real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** OR **Real-time detections**. 
 
 |With ATP Plan 2, you see:  |With ATP Plan 1, you see:  |
 |---------|---------|
 |![Threat explorer](../media/threatmgmt-explorer.png)      |![Real-time detections](../media/threatmgmt-realtimedetections.png)         |
 
-With Explorer (or real-time detections), you have a powerful report that enables your Security Operations team to investigate and respond to threats effectively and efficiently, and it resembles the following image: 
+With Explorer (or real-time detections), you have a powerful report that enables your Security Operations team to investigate and respond to threats effectively and efficiently. The report resembles the following image: 
 
 ![Go to Threat management \> Explorer](../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
@@ -34,13 +34,20 @@ With this report, you can:
 - [Start an automated investigation and response process from a view in Explorer](#start-automated-investigation-and-response) (ATP Plan 2 only)
 - ... [Investigate malicious email, and more](#more-ways-to-use-explorer-or-real-time-detections)!
 
-## New features in real-time detections
+## New features in Threat Explorer and real-time detections
 
-Three new features added into Threat Explorer are outlined below.
+Three new features added into Threat Explorer and real-time detections:
+- [Preview email header and download email body](#preview-email-header-and-download-email-body)
+- [Email timeline](#email-timeline)
+- [Export URL click data](#export-url-click-data)
 
-First, **email header preview, and download of the email body** are new features available in Threat Explorer. Admins will be able to analyse downloaded headers/emails for threats. Because downloading emails can risk the exposure of information, this process is controlled by roles-based access control (RBAC). A new role, called 'Preview' must be added into another Office 365 role group (for example into sec operations, or sec admin) to grant the ability to download mails and preview headers in all-emails view.
+These new features are outlined below.
 
-But Explorer (and real-time detections) also adds fresh new fields designed to give you a more complete picture of where your emails land. Part of the goal of this change is to make hunting easier for Security Ops people, but the net result is knowing the location of problem emails at a glance.
+### Preview email header and download email body
+
+The ability to preview an email header and download the email body are new features available in Threat Explorer. Admins will be able to analyze downloaded headers/email messages for threats. Because downloading email messages can risk the exposure of information, this process is controlled by roles-based access control (RBAC). A new role, *Preview*, must be added to another Office 365 role group (such as Security Operations or Security Administrator) to grant the ability to download mails and preview headers in all-email messages view.
+
+But Explorer (and real-time detections) also adds fresh new fields designed to give you a more complete picture of where your email messages land. Part of the goal of this change is to make hunting easier for Security Ops people, but the net result is knowing the location of problem email messages at a glance.
 
 How is this done? Delivery Status is now broken out into two columns:
 
@@ -64,26 +71,29 @@ Delivery location shows the results of policies and detections that run post-del
 
 - **Inbox or folder**: The email is in inbox or a folder (according to your email rules).
 - **On-prem or external**: The mailbox doesn’t exist on cloud but is on-premises.
-- **Junk folder**: The email in in the Junk folder of a user.
+- **Junk folder**: The email is in the Junk folder of a user.
 - **Deleted items folder**: The email in the Deleted items folder of a user.
 - **Quarantine**: The email in quarantine, and is not in a user’s mailbox.
 - **Failed**: The email failed to reach the mailbox.
-- **Dropped**: The email gets lost somewhere in the Mailflow.
+- **Dropped**: The email gets lost somewhere in the mail flow.
+
+### Email timeline
 
 The **Email Timeline** is another new Explorer feature aimed at making the hunting experience better for admins. It cuts down on randomization because there is less time spent checking different locations to try to understand the event. When multiple events happen at, or close to, the same time on an email, those events will show up in a timeline view. In fact, some events that happen post-delivery to your mail will be captured in the 'Special action' column. Combining the information from the timeline of that mail with the special action taken on the mail post-delivery will give admins insight into how their policies work, where the mail was finally routed, and, in some cases, what the final assessment was.
 
-For more discussion about investigating malicious emails see [Find and investigate malicious email that was delivered in Office 365](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
+For more discussion about investigating malicious email messages, see [Find and investigate malicious email that was delivered in Office 365](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
 
+### Export URL click data
 
-Also, you will now be able to **Export reports for URL clicks** to Microsoft Excel in order to view both their Network Message ID, and their Click Verdict, making the task of understanding where your URL click traffic originated easier. Here's how it works. Starting in Threat Management on the Office 365 quick-launch, click through this chain:
+Also, you will now be able to export reports for URL clicks to Microsoft Excel in order to view both their Network Message ID, and their Click Verdict, making the task of understanding where your URL click traffic originated easier. Here's how it works. Starting in Threat Management on the Office 365 quick-launch, click through this chain:
 
-**Explorer > View Phish > Clicks > Top URLs or URL Top Clicks > Click on any record to open URL flyout**
+**Explorer** > **View Phish** > **Clicks** > **Top URLs or URL Top Clicks** > **Click on any record to open URL flyout**
 
 When you click on a URL in the list, you'll see a new Export button on the fly-out panel. Use this button to move data to an Excel spreadsheet for easier reporting.
 
-You can get to the same location in Real Time Detections like so:
+You can get to the same location in the real-time detections report as follows:
 
-**Explorer > Real Time Detections > View Phish > URLs > Top URLs or Top Clicks > Click on any record to open URL flyout > Navigate to the Clicks Tab.**
+**Explorer** > **Real-time Detections** > **View Phish** > **URLs** > **Top URLs or Top Clicks** > **Click on any record to open URL flyout** > **Navigate to the Clicks Tab.**
 
 > [!TIP]
 > Network Message ID maps the click back to specific mails when you search through Explorer or associated 3rd party tools via Network Message ID. Searching through the Network Message ID will give admins the specific email associated with a click result. On export having, the correlating identification of Network Message ID makes for quicker and more powerful analysis.
@@ -124,11 +134,11 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
 
    - **Top clicks** are the Safe Links wrapped URLs that were clicked, sorted by total click count (this column is also not shown to simplify the view). Total counts by column indicate the Safe Links click verdict count for each clicked URL. In the phish email view, these are more often suspicious or malicious URLs, but could include clean URLs that are in phish messages. URL clicks on unwrapped links will not show up here.
    
-   The two URLs tables show top URLs in phishing emails by delivery action and location, and they show URL clicks that were blocked (or visited despite a warning) so that you can understand what potential bad links were received by users and interacted with by users. From here, you can conduct further analysis. For example, below the chart, you can see the top URLs in emails that were blocked in your organization's environment.
+   The two URL tables show top URLs in phishing email messages by delivery action and location, and they show URL clicks that were blocked (or visited despite a warning) so that you can understand what potential bad links were received by users and interacted with by users. From here, you can conduct further analysis. For example, below the chart, you can see the top URLs in email messages that were blocked in your organization's environment.
    
    ![Explorer URLs that were blocked](../media/ExplorerPhishClickVerdictURLs.png)
    
-   Select a URL to view more detailed information. Note that in the URL flyout dialog, the filtering on emails is removed to show you the full view of the URL's exposure in your environment. This lets you filter down emails in Explorer to ones you are concerned about, find specific URLs that are potential threats, then expand your understanding of the URL exposure in your environment (via the URL details dialog) without having to add URL filters to the Explorer view itself.
+   Select a URL to view more detailed information. **Note**: In the URL flyout dialog, the filtering on email messages is removed to show you the full view of the URL's exposure in your environment. This lets you filter down email messages in Explorer to ones you are concerned about, find specific URLs that are potential threats, then expand your understanding of the URL exposure in your environment (via the URL details dialog) without having to add URL filters to the Explorer view itself.
 
 ## Review email messages reported by users
 
@@ -147,9 +157,9 @@ The report refreshes to show data about email messages that people in your organ
 ## Start automated investigation and response
 
 > [!NOTE]
-> Automated incident response capabilities are available in **Office 365 ATP Plan 2** and **Office 365 E5**.
+> Automated investigation and response capabilities are available in **Office 365 ATP Plan 2** and **Office 365 E5**.
 
-(NEW!) [Automated incident response](automated-investigation-response-office.md) can save your security operations team much time and effort in investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. 
+(NEW!) [Automated investigation and response](automated-investigation-response-office.md) can save your security operations team much time and effort in investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. 
 
 For details on this, see [Example: A security administrator triggers an investigation from Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
@@ -165,7 +175,7 @@ In addition to the scenarios outlined in this article, you have many more report
 You must have [Office 365 ATP](office-365-atp.md) to get Explorer or real-time detections.
 - Explorer is included in Office 365 ATP Plan 2. 
 - The real-time detections report is included in Office 365 ATP Plan 1.
-- Plan to assign licenses for all users who should be protected by ATP. (Explorer or real-time detections will show detection data for licensed users.)
+- Plan to assign licenses for all users who should be protected by Office 365 ATP. (Explorer or real-time detections shows detection data for licensed users.)
 
 To view and use Explorer or real-time detections, you must have appropriate permissions, such as those granted to a security administrator or security reader. 
 

@@ -94,7 +94,7 @@ You can leave the default value **All** selected, or you can select one of the f
 
 - **Failed**: The message was not delivered.
 
-- **Quarantined**: The message was quarantined (as spam, bulk mail, or phishing). For more information, see [Quarantine email messages in Office 365](https://support.office.com/article/4c234874-015e-4768-8495-98fcccfc639b.aspx).
+- **Quarantined**: The message was quarantined (as spam, bulk mail, or phishing). For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
 
 - **Filtered as spam**: The message was identified spam, and was rejected or blocked (not quarantined).
 

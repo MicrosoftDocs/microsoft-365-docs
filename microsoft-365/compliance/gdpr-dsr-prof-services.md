@@ -2,7 +2,6 @@
 title: Microsoft Support and Professional Services Data Subject Requests for the GDPR and CCPA
 description: How Microsoft Support and Professional Services handle data subject requests for the GDPR and CCPA. 
 keywords: Professional Services, sMicrosoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -13,6 +12,7 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
+titleSuffix: Microsoft GDPR
 ---
 
 # Microsoft Support and Professional Services Data Subject Requests for the GDPR and CCPA
@@ -21,7 +21,7 @@ ms.collection:
 
 Microsoft Professional Services includes a diverse group of technical architects, engineers, consultants, and support professionals dedicated to delivering on the Microsoft mission of empowering customers to do more and achieve more. Our Professional Services team includes more than 21,000+ total consultants, Digital Advisors, Premier Support, engineers, and sales professionals working across 191 countries, supporting 46 different languages, managing several million engagements per month, and engaging in customer and partner interactions through on-premise, phone, web, community, and automated tools. The organization brings broad expertise across the Microsoft portfolio, leveraging an extensive network of partners, technical communities, tools, diagnostics, and channels that connect us with our enterprise customers.
 
-Find out more about Microsoft Professional Services by going to the Microsoft Professional Services Security Documentation webpage (<(https://www.microsoft.com/en-us/professionalservices/overview>). Microsoft Professional Services takes its obligations under the General Data Protection Regulation (GDPR) seriously. The information in this document is designed to answer customer questions about how Microsoft’s support and consulting offerings will respond to and assist customers in responding to Data Subject Request (DSR) obligations under GDPR.
+Find out more about Microsoft Professional Services by going to the [Microsoft Professional Services Security Documentation webpage](https://www.microsoft.com/en-us/professionalservices/overview). Microsoft Professional Services takes its obligations under the General Data Protection Regulation (GDPR) seriously. The information in this document is designed to answer customer questions about how Microsoft’s support and consulting offerings will respond to and assist customers in responding to Data Subject Request (DSR) obligations under GDPR.
 
 ### Introduction to DSRs 
 

@@ -11,6 +11,7 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
 # Service Organization Controls (SOC)
@@ -103,7 +104,7 @@ With the reports, your auditors can compare Microsoft business cloud services re
 
 **How often are Azure SOC reports issued?**
 
-SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters are based on a rolling 12-month run window (audit period) with new reports issued quarterly. The increased audit frequency provides a more timely audit period coverage through a SOC report, which provides greater assurance by an external auditor when compared to a bridge letter. Customers can [download](https://aka.ms/stp) the latest reports from the Service Trust Portal.
+SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters are based on a rolling 12-month run window (audit period) with new reports issued semi-annually (period ends are March 31 and September 30). Bridge letters are issued in January to cover the period of 10/1 – 12/31 and July to cover the period of 4/1 – 6/30. Customers can [download](https://aka.ms/stp) the latest reports from the Service Trust Portal.
 
 **Do I need to conduct my own audit of Microsoft datacenters?**
 

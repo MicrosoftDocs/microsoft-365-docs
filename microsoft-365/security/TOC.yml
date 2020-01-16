@@ -5,10 +5,6 @@
       items: 
         - name: Microsoft 365 Security for BDMs
           href: Microsoft-365-security-for-bdm.md
-        - name: Secure Score
-          href: ./mtp/microsoft-secure-score.md
-        - name: Secure Score (preview)
-          href: ./mtp/microsoft-secure-score-preview.md
         - name: Chief Information Security Officer (CISO) workshop training
           href: ./office-365-security/ciso-workshop.md
           items: 
@@ -67,7 +63,7 @@
                   href: mtp/investigate-incidents.md
                 - name: Manage incidents
                   href: mtp/manage-incidents.md
-            - name: Automated investigation and remediation
+            - name: Automated investigation and response
               items: 
                 - name: AIR overview
                   href: mtp/mtp-autoir.md
@@ -92,24 +88,26 @@
                 - name: Understand the schema
                   href: mtp/advanced-hunting-schema-tables.md
                   items: 
-                    - name: MachineInfo
-                      href: mtp/advanced-hunting-machineinfo-table.md
-                    - name: MachineNetworkInfo
-                      href: mtp/advanced-hunting-machinenetworkinfo-table.md
-                    - name: ProcessCreationEvents
-                      href: mtp/advanced-hunting-processcreationevents-table.md
-                    - name: NetworkCommunicationEvents
-                      href: mtp/advanced-hunting-networkcommunicationevents-table.md
-                    - name: FileCreationEvents
-                      href: mtp/advanced-hunting-filecreationevents-table.md
-                    - name: RegistryEvents
-                      href: mtp/advanced-hunting-registryevents-table.md
-                    - name: LogonEvents
-                      href: mtp/advanced-hunting-logonevents-table.md
-                    - name: ImageLoadEvents
-                      href: mtp/advanced-hunting-imageloadevents-table.md
-                    - name: MiscEvents
-                      href: mtp/advanced-hunting-miscevents-table.md
+                    - name: DeviceInfo
+                      href: mtp/advanced-hunting-deviceinfo-table.md
+                    - name: DeviceNetworkInfo
+                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
+                    - name: DeviceProcessEvents
+                      href: mtp/advanced-hunting-deviceprocessevents-table.md
+                    - name: DeviceNetworkEvents
+                      href: mtp/advanced-hunting-devicenetworkevents-table.md
+                    - name: DeviceFileEvents
+                      href: mtp/advanced-hunting-devicefileevents-table.md
+                    - name: DeviceRegistryEvents
+                      href: mtp/advanced-hunting-deviceregistryevents-table.md
+                    - name: DeviceLogonEvents
+                      href: mtp/advanced-hunting-devicelogonevents-table.md
+                    - name: DeviceImageLoadEvents
+                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                    - name: DeviceEvents
+                      href: mtp/advanced-hunting-deviceevents-table.md
+                    - name: DeviceFileCertificateInfoBeta
+                      href: mtp/advanced-hunting-devicefilecertificateinfobeta-table.md
                     - name: EmailEvents
                       href: mtp/advanced-hunting-emailevents-table.md
                     - name: EmailAttachmentInfo
@@ -172,7 +170,7 @@
 
             - name: New Microsoft 365 security center
 
-              href: ./office-365-security/microsoft-security-and-compliance.md
+              href: ./mtp/overview-security-center.md
 
             - name: Permissions in the Security & Compliance Center
 
@@ -564,7 +562,11 @@
 
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
 
-            - name: Understanding latest attack campaigns with threat analytics
+            - name: Campaign Views
+
+              href: ./office-365-security/campaigns.md
+
+            - name: Understanding latest attacks with threat analytics
 
               href: ./mtp/latest-attack-campaigns.md
 
@@ -664,7 +666,7 @@
 
             - name: Responding to a Compromised Email Account in Office 365
 
-              href: office-365-security/responding-to-a-compromised-email-account.md
+              href: ./office-365-security/responding-to-a-compromised-email-account.md
 
         - name: Mail flow
 
@@ -677,6 +679,10 @@
             - name: Message trace in the Security & Compliance Center
 
               href: ./office-365-security/message-trace-scc.md
+              
+            - name: View email security reports in the Security & Compliance Center
+
+              href: ./office-365-security/view-email-security-reports.md
 
             - name: Mail flow insights in the Security & Compliance Center
 

@@ -2,7 +2,7 @@
 title: "Microsoft 365 Security for Business Decision Makers (BDMs)"
 ms.author: bcarter
 author: brendacarter
-manager: 
+manager: johmar
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -20,7 +20,7 @@ This article is organized by priority of work, starting with protecting those ac
 
 [![Thumb image Microsoft 365 BDM security recommendations spreadsheet](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
-Microsoft provides you with the Secure Score tool within your tenant to automatically analyze your security posture based on your regular activities, assign a score, and provide security improvement recommendations. Before taking the actions recommended in this article, take note of your current score and recommendations. The actions recommended in this article will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. See [Microsoft Secure Score](mtp/microsoft-secure-score.md).
+Microsoft provides you with the Secure Score tool within your tenant to automatically analyze your security posture based on your regular activities, assign a score, and provide security improvement recommendations. Before taking the actions recommended in this article, take note of your current score and recommendations. The actions recommended in this article will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment in a way that do not negatively affect productivity for your users. See [Microsoft Secure Score](mtp/microsoft-secure-score.md).
 
 One more thing before we get started . . . be sure to [turn on the Office 365 audit log](../compliance/search-the-audit-log-in-security-and-compliance.md). You’ll need this data later, in the event you need to investigate an incident or a breach. 
 
@@ -41,14 +41,14 @@ The following diagram illustrates these capabilities.
 Additional recommendations:
 - Ensure accounts that are synchronized from on-premises are not assigned admin roles for cloud services. This helps prevent an attacker from leveraging on-premises accounts to gain administrative access to cloud services. 
 - Ensure service accounts are not assigned admin roles. These accounts are often not monitored and set with passwords that do not expire. Start by ensuring the AADConnect and ADFS services accounts are not Global Admins by default.
-- Remove licenses from admin accounts. Unless there is a specific user case to assign licenses to specific admin accounts, remove licenses from these accounts. 
+- Remove licenses from admin accounts. Unless there is a specific use case to assign licenses to specific admin accounts, remove licenses from these accounts. 
 
 ## Reduce the surface of attack
 
 The next focus area is reducing the surface of attack. This can be accomplished with minimal effort and impact to your users and services. By reducing the surface area of attack, attackers have fewer ways to launch an attack against your organization.
 
 Here are some examples:
-- Disable POP3, IMAP, and SMTP protocols. Most modern organizations no longer use these older protocols. You can safely disable these and allow only exceptions as needed. 
+- Disable POP3, IMAP, and SMTP protocols. Most modern organizations no longer use these older protocols. You can safely disable these and allow exceptions only as needed. 
 - Reduce and keep the number of Global Admins in the tenant to the absolute minimum required. This directly reduces the surface area of attack for all Cloud applications. 
 - Retire servers and applications that are no longer used in your environment. 
 - Implement a process for disabling and deleting accounts that are no longer used. 
@@ -129,7 +129,7 @@ Last, but not least Continuous Monitoring and Auditing of the Microsoft 365 envi
 |Use **Office 365 ATP** tools:<br>•	Threat investigation and response capabilities<br> •	Automated investigation and response |         |![green check mark](../images/green-check-mark.png)|
 |Use **Microsoft Defender ATP**:<br> •	[Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> •	Automated investigation and remediation Secure score <br>•	[Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![green check mark](../images/green-check-mark.png)|
 |Use **Microsoft Cloud App Security** to detect unusual behavior across cloud apps to identify ransomware, compromised users or rogue applications, analyze high-risk usage and remediate automatically to limit the risk to your organization.|         |![green check mark](../images/green-check-mark.png)|
-|Use **Microsoft Azure Sentinel** or your **current SIEM** tool to monitor for threats across your environment. Azure Sentinel is free to use during the preview period. |         |![green check mark](../images/green-check-mark.png)|
+|Use **Microsoft Azure Sentinel** or your current SIEM tool to monitor for threats across your environment. |         |![green check mark](../images/green-check-mark.png)|
 |**Deploy [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)** to monitor and protect against threats targeted to your on-premises Active Directory environment.   |         |![green check mark](../images/green-check-mark.png) |
 |Use the **Azure Security Center** to monitor for threats across hybrid and cloud workloads. Azure Security Center includes a free tier of capabilities and a standard tier of capabilities that are paid for based on resource hours or transactions.|         |         |
 

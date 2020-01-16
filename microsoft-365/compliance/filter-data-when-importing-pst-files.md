@@ -57,9 +57,9 @@ After you've created a PST import job, follow these steps to filter the data bef
   
 1. Go to [https://protection.office.com/](https://protection.office.com/) and sign in using the credentials for an administrator account in your Office 365 organization. 
     
-2. Click **Data governance** \> **Import**.
+2. Click **Information governance** \> **Import** \> **Import PST files**.
     
-    The import jobs for your organization are listed on the **Import** page. Note that the **Analysis completed** value in the **Status** column indicates the import jobs that have been analyzed by Office 365 and are ready for you to import. 
+    The import jobs for your organization are listed on the **Import PST files** page. Note that the **Analysis completed** value in the **Status** column indicates the import jobs that have been analyzed by Office 365 and are ready for you to import. 
     
     ![Analysis complete status indicates Office 365 has analyzed the data in PST files](media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
   
@@ -116,7 +116,7 @@ After you've created a PST import job, follow these steps to filter the data bef
     
     b. On the **Import data to Office 365** page, click **Import data** to start the import. Note that the total amount of data that will be imported is displayed. 
     
-6. On the **Import** page, click **Refresh** ![refresh](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png). The status for the import job is displayed in the **Status** column. 
+6. On the **Import PST files** page, click **Refresh** ![refresh](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png). The status for the import job is displayed in the **Status** column. 
     
 7. Click the import the job to display more detailed information, such as the status for each PST file and the filter settings that you configured.
 

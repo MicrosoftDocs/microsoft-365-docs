@@ -3,6 +3,7 @@ title: "Quick setup for Office 365 Advanced eDiscovery"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -25,7 +26,8 @@ This setup section shows an Microsoft 365 Security &amp; Compliance Center eDisc
   
 ## Accessing a case in Advanced eDiscovery
 
-You access Advanced eDiscovery from the Security &amp; Compliance Center. You have to be a member of an eDiscovery case in the Security &amp; Compliance Center to access the case in Advanced eDiscovery. For instructions about assigning eDiscovery case permissions and adding users to an eDiscovery case, see [Manage eDiscovery cases in Office 365](manage-ediscovery-cases.md). 
+
+You access Advanced eDiscovery from the Security &amp; Compliance Center. You have to be a member of an eDiscovery case in the Security &amp; Compliance Center to access the case in Advanced eDiscovery. For instructions about assigning eDiscovery case permissions and adding users to an eDiscovery case, see [Manage eDiscovery cases in Office 365](ediscovery-cases.md). 
   
 To go to a case in Advanced eDiscovery: 
   
