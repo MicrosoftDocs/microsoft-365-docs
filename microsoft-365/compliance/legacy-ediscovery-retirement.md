@@ -316,7 +316,7 @@ At this time, we recommend that you begin to transition your eDiscovery workflow
 
 - April 1, 2020: You won't be able to create new Advanced eDiscovery v1.0  cases.
 
-- July 1, 2020: Microsoft Support won’t provide support. See [this notice](https://go.microsoft.com/fwlink/?linkid=2113221). You won't be able to add new data (Prepare search results for Advanced eDiscovery) to any cases. You'll be able to continue working with data in existing cases at your own risk.
+- July 1, 2020: You won't be able to add new data (Prepare search results for Advanced eDiscovery) to any cases. You'll be able to continue working with data in existing cases at your own risk. Microsoft Support will no longer provide assistance. 
 
 ### Alternative tools
 
