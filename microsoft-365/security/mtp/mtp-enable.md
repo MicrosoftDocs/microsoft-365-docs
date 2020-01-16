@@ -36,7 +36,7 @@ Customers with a Microsoft 365 E5 or equivalent license can use Microsoft Threat
 ## Start using the service
 Turning on the Microsoft Threat Protection service aggregates data from the various integrated services. The data will be processed and stored centrally to identify new insights and to make centralized response workflows possible.
 
-Before you turn the service on, Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) does not show the **Incidents** and the **Action center** options on the menu.
+Before you turn the service on, the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) does not show the **Incidents** and the **Action center** options on the menu.
 
 ![Image of Microsoft 365 security center menu without Microsoft Threat Protection features](../images/mtp-off.png)
 *Microsoft 365 security center with Microsoft Threat Protection turned off*
@@ -66,7 +66,7 @@ Data will be permanently deleted and corresponding features will be removed from
 
 ## Get assistance
 
-Microsoft staff can help provision or deprovision the service and related resources on your tenant. For assistance, [contact premier support](https://go.microsoft.com/fwlink/?LinkID=733758).
+Microsoft staff can help provision or deprovision the service and related resources on your tenant. For assistance, select **Need help?** in the Microsoft 365 security center. When describing your concerns, mention "Microsoft Threat Protection".
 
 ## Related topics
 

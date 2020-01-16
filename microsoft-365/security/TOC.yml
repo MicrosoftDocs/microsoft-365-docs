@@ -677,6 +677,10 @@
             - name: Message trace in the Security & Compliance Center
 
               href: ./office-365-security/message-trace-scc.md
+              
+            - name: View email security reports in the Security & Compliance Center
+
+              href: ./office-365-security/view-email-security-reports.md
 
             - name: Mail flow insights in the Security & Compliance Center
 
