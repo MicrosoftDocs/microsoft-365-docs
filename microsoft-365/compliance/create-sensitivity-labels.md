@@ -37,12 +37,17 @@ First, create and configure the sensitivity labels that you want to make availab
 
 5. When you have created all the labels you need, review their order and if necessary, move them up or down. To change the order of a label, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters) from the overview information.
 
-To edit an existing label, select it, and then select **Edit label**. This starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3.
+To edit an existing label, select it, and then select **Edit label**. This starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3. If the label is already published by using a label policy, no extra steps are needed, but allow up to 24 hours for the changes to replicate to users and locations.
 
 Until you publish your labels, they won't be available to select in apps or for services. To publish the labels, they must be added to a label policy.
 
-> [!TIP]
-> You can use the [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) PowerShell cmdlet with the *LocaleSettings* parameter to specify different languages for your label names and tooltips. Using this cmdlet, you can also specify [advanced settings](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) for the Azure Information Protection unified labeling client. For example, set a label color, and apply a custom property when a label is applied.
+### Additional label settings with Office 365 Security & Compliance Center PowerShell
+
+Additional label settings are available with the [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) cmdlet from [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+
+For example, use the the *LocaleSettings* parameter to specify different languages for your label names and tooltips. 
+
+Using this cmdlet, you can also specify [advanced settings](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) for the Azure Information Protection unified labeling client. These advanced settings include setting a label color, and applying a custom property when a label is applied.
 
 ## Publish sensitivity labels by creating a label policy
 
@@ -68,8 +73,14 @@ Completing the wizard automatically publishes the label policy. To make changes 
 
 To edit an existing label policy, select it, and then select **Edit Policy**. This starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and locations. Allow up to 24 hours for the replication to complete.
 
-> [!TIP]
-> You can use the [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-labelpolicy?view=exchange-ps) PowerShell cmdlet to add and remove labels to and from a label policy, and also specify [advanced settings](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) for the Azure Information Protection unified labeling client. For example, set a different default label for Outlook, and implement pop-up messages in Outlook that warn, justify, or block emails being sent.
+### Additional label policy settings with Office 365 Security & Compliance Center PowerShell
+
+Additional label policy settings are available with the [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) cmdlet from [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+
+Using this cmdlet, you can specify [advanced settings](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) for the Azure Information Protection unified labeling client. These advanced settings include setting a different default label for Outlook, and implement pop-up messages in Outlook that warn, justify, or block emails being sent.
+
+You can also use this cmdlet to add and remove labels to and from a label policy.
+
 
 ## Next steps
 
