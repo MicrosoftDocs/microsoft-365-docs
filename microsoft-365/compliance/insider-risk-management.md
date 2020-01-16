@@ -107,12 +107,7 @@ For more information, see [Insider risk management cases](insider-risk-managemen
 
 After cases are investigated, reviewers can quickly take action to resolve the case or collaborate with other risk stakeholders in your organization. When employees accidentally or inadvertently violate policy conditions, a simple reminder notice can be sent to the employee from notice templates you can configure for your organization. These notices may serve as simple reminders or may direct the employee to refresher training or guidance to help prevent future risky behavior. For more information, see [Insider risk management notice templates](insider-risk-management-notices.md).
 
-In the most serious situations, you may need to share the insider risk management case information with other reviewers in your organization. Insider risk management is tightly integrated with other Microsoft 365 compliance features to help you with end-to-end risk resolution. 
-
-Sharing a case transfers data and management of the case to one of two options:
-
-- **Investigate data**: Data investigation allows you to search for sensitive, malicious, or misplaced data across Microsoft 365 and to take appropriate action to remediate data spillage. Creating a new investigation from an insider risk management case allows other reviewers to properly evaluate the extent of any data spillage. To learn more about data investigation cases, see [Overview of Data Investigations in Microsoft 365](overview-data-investigations.md).
-- **Investigate employee**: Advanced eDiscovery provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It allows legal teams to manage the entire legal hold notification workflow. To learn more about Advanced eDiscovery cases, see [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+In the most serious situations, you may need to share the insider risk management case information with other reviewers in your organization. Insider risk management is tightly integrated with other Microsoft 365 compliance features to help you with end-to-end risk resolution. Escalating a case for investigation allows you to transfer data and management of the case to Advanced eDiscovery in Microsoft 365. Advanced eDiscovery provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It allows legal teams to manage the entire legal hold notification workflow. To learn more about Advanced eDiscovery cases, see [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 ## Scenarios
 
