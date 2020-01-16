@@ -19,7 +19,7 @@ description: "Instructions to create, configure, and publish sensitivity labels 
 
 # Create and configure sensitivity labels and their policies
 
-To create and publish your [sensitivity labels](sensitivity-labels.md), go to your labeling admin center, such as the Microsoft 365 compliance center. You can also use the Microsoft 365 security center, or the Office 365 Security & Compliance Center.
+To create and publish your [sensitivity labels](sensitivity-labels.md), go to your labeling admin center, such as the [Microsoft 365 compliance center](https://compliance.microsoft.com/). You can also use the Microsoft 365 security center, or the Office 365 Security & Compliance Center.
 
 First, create and configure the sensitivity labels that you want to make available in Office apps and for services. Then, create one or more label policies that contain the labels and policy settings that you configure. It's the label policy that publishes the labels and settings for your chosen users and locations.
 
