@@ -104,15 +104,19 @@ Set the “application registries” table configurations to default:
 
 Go to application registries table (Menu > System OAuth > Application Registry) in ServiceNow and find the OAuth entity created by you (name that you assigned it).
 
-### How to validate the Integration User created with the installation checklist for Microsoft 365 Security & Compliance connector
-
-Go to Users Table (Menu > User Administration > Users) in ServiceNow and find the Integration user created by you (name that you assigned it).
+### Logging in as the integration user
 
 Before you authorize the connection between Microsoft 365 security center and ServiceNow, make sure you use the integration user login and password you created in the installation steps. Do not use your personal credentials.
 
-### Installation is complete but don't see tickets and can't share
+1. Go the authorization page in ServiceNow.
+2. If you are signed in with your personal credentials, select the **Not You** link in the upper right-hand corner.
+3. Log in to ServiceNow as the integration user you created previously from the installation checklist.  
+4. Select **Allow** in the ServiceNow page that asks whether the Security + Compliance Connector can connect to your ServiceNow account.
+5. Proceed with the setup steps.
 
-If the installation and setup steps have been completed, but you don't see the ServiceNow cards on the home page and can't share to ServiceNow from Microsoft Secure Score, check the status of the provisioning page at https://security.microsoft.com/ticketProvisioning. Select **Save** and return to the home page. The cards should appear.
+### How to validate the Integration User created with the installation checklist for Microsoft 365 Security & Compliance connector
+
+Go to Users Table (Menu > User Administration > Users) in ServiceNow and find the Integration user created by you (name that you assigned it).
 
 ### Your company has single sign-on enabled which prevents you from connecting to ServiceNow through the Microsoft 365 security center
 
@@ -130,3 +134,7 @@ If your company has enabled single sign-on and you receive an error or login is 
 
 1. Create a user with security admin privileges in Azure Active Directory. The user needs to have the same name and email address as the integration user you created from the Installation Checklist. You can remove the security admin role once login and connection has been completed.
 2. Log in to the Microsoft 365 security center as this user and follow the setup steps.
+
+### Installation is complete but don't see tickets and can't share
+
+If the installation and setup steps have been completed, but you don't see the ServiceNow cards on the home page and can't share to ServiceNow from Microsoft Secure Score, check the status of the provisioning page at https://security.microsoft.com/ticketProvisioning. Select **Save** and return to the home page. The cards should appear.
