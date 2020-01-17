@@ -130,10 +130,6 @@ Insider risk management policies includes assigned users and defines which types
 7. Select **Next** to continue.
 8. On the **Choose alert indicators** page, you'll see the indicators that are included in the template that you've chosen for this policy. If you selected the *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list.
 9. On the **Select monitoring window** page, you'll define the [monitoring window conditions](insider-risk-management-policies.md#monitoring-windows) for the policy. Configure the monitoring windows as appropriate.
-
-    >[!NOTE]
-    >The *Future termination window* and the *Past termination window* monitoring window options are only available if you've chosen the *Departing employee data theft* policy template.
-
 10. Select **Next** to continue.
 11. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 

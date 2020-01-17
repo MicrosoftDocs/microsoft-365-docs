@@ -51,8 +51,10 @@ Policy monitoring windows allow you define time periods that trigger policy acti
 
 - **In-scope timespan**: Available for all policy templates, the *In-scope timespan* is the defined number of days that the window activates **after** a triggering event. The window activates for 1 to 30 days after a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *In-scope timespan* to 30 days. Several months have passed since you configured the policy and a triggering event occurs for one of the users included in the policy. The triggering event activates the *In-scope timespan* and the policy is active for that user for 30 days after the triggering event occurred.
 - **Historic timespan**: Available for all policy templates, the *historic timespan* is the defined number of days that the window activates **before** a triggering event. The window activates for 0 to 180 days before a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Historic timespan* to 90 days. Several months have passed since you configured the policy and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Historic timespan* and the policy gathers historic activities for that user for 90 days prior to the triggering event.
-- **Future termination window**: Available only for the *Departing employee data theft* policy template, the *Future termination window* is the defined number of days that the window activates **after** the user's termination date. The window activates for 5 to 45 days after the termination date for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Future termination window* to 25 days. Several months have passed since you configured the policy and a termination date is imported from the HR Connector for one of the users included in the policy. The termination date activates the *Future termination window* and the policy is active for that user for 25 days after the user's termination date.
-- **Past termination window**: Available only for the *Departing employee data theft* policy template, the *Past termination window* is the defined number of days that the window activates **before** the user's termination date. The window activates for 5 to 45 days after the termination date for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Past termination window* to 15 days. Several months have passed since you configured the policy and a termination date is imported from the HR Connector for one of the users included in the policy. The termination date activates the *Past termination window* and the policy gathers historic activities for that user 15 days before the user's termination date.
+- **Future termination window**: You'll see this setting in the pubic preview, but it isn’t applied to any policies and will be removed for the production release of this solution.
+- **Past termination window**: You'll see this setting in the pubic preview, but it isn’t applied to any policies and will be removed for the production release of this solution.
+
+You'll see this setting in the pubic preview, but it isn’t applied to any policies and will be removed for the production release of this solution.
 
 ## Create a new policy
 
@@ -79,10 +81,6 @@ Complete the following steps to create a new policy:
 7. Select **Next** to continue.
 8. On the **Choose alert indicators** page, you'll see the indicators that are included in the template that you've chosen for this policy. If you selected the *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list.
 9. On the **Select monitoring window** page, you'll define the [monitoring window conditions](insider-risk-management-policies.md#monitoring-windows) for the policy. Configure the monitoring windows as appropriate.
-
-    >[!NOTE]
-    >The *Future termination window* and the *Past termination window* monitoring window options are only available if you've chosen the *Departing employee data theft* policy template.
-
 10. Select **Next** to continue.
 11. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
@@ -107,10 +105,6 @@ Complete the following steps to manage an existing policy:
 8. Select **Next** to continue.
 9. On the **Choose alert indicators** page, you'll see the indicators that are included in the template that you've chosen for this policy. If you selected the *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list.
 10. On the **Select monitoring window** page, you'll define the [monitoring window conditions](insider-risk-management-policies.md#monitoring-windows) for the policy. Configure the monitoring windows as appropriate.
-
-    >[!NOTE]
-    >The *Future termination window* and the *Past termination window* monitoring window options are only available if you've chosen the *Departing employee data theft* policy template.
-
 11. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to update and activate the changes in the policy.
 
 ## Delete a policy
