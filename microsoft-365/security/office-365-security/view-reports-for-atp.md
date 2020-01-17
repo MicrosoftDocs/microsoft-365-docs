@@ -92,12 +92,6 @@ In the details table, you'll be able to see more information regarding click tim
 > [!NOTE]
 > This is a *protection trend report*, meaning data represents trends in a larger dataset. Reporting isn't available in real time here. For real time URL click data, please continue to use URL Trace.
 
-## Compromised Users report
-
-This report, available to anyone with Exchange Online Protection, shows the number of user accounts marked as Suspicious or Restricted users, data particularly useful as accounts enter either of the states that indicate the user account may be problematic, or even compromised. With frequent use, the Compromised User report can spot spikes, and even trends, in accounts marked in suspicious or restricted states, giving evidence there could be an issue with security and the wellness of your tenant.
-
-![The compromised users report as it appears in Office 365.](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
-
 ## ATP File Types report
 
 The **ATP File Types** report shows you the type of files detected as malicious by [ATP Safe Attachments](atp-safe-attachments.md).
