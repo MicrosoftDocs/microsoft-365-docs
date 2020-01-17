@@ -9,7 +9,6 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce 
-ms.custom:
 search.appverid:
 - MET150
 description: "Find answers to commonly asked questions about self-service purchases."
@@ -20,6 +19,8 @@ ms.custom: aka.ms/self-service-purchase-faq
 
 > [!NOTE]
 > The information in this article only applies to Microsoft Power Platform (Power BI, Power Apps and Power Automate) subscriptions.
+
+Self-service purchases are now available for Power BI in the United States.
 
 ## General
 
@@ -35,9 +36,9 @@ Beginning January 14, 2020, self-service purchase, subscription, and license man
 
 In today’s world, end users and departments are increasingly seeking out and buying technology solutions on their own. We’ve received numerous requests from these customers to enable self-service purchase of Power Platform products. We’re responding to this customer need while also balancing the needs of IT administrators, who often times lose visibility and control when individuals within their organization adopt third-party solutions without their knowledge. With the upcoming self-service capability for Power Platform products, IT admins will have complete visibility to all self-service purchases taking place within their organization, and data governance policies set at the organizational level will accrue to subscriptions purchased via self-service. Admins can also assign existing licenses, or purchase additional subscriptions, of Power Platform products through existing agreements and pricing for users assigned to self-service purchases. After assigning these centrally purchased licenses, admins can then request that the purchasers cancel their existing subscriptions. Microsoft is exploring ways to simplify and streamline this process for admins in the future.
 
-### When will self-service purchase for the Power Platform products be available?
+### Which Power Platform products are available for self-service purchase?
 
-Microsoft is launching self-service purchase for Power BI on January 14, 2020, to customers in the United States, with additional markets becoming available in the coming months. Power Apps and Power Automate will be added in the following weeks. This capability will not be available to tenants in the US that are government, nonprofit, or education, at this time.
+Microsoft has launched self-service purchase for Power BI to customers in the United States, with additional markets becoming available in the coming months. Power Apps and Power Automate will be added for customers in the United States on January 28, 2020. This capability will not be available to tenants in the US that are government, nonprofit, or education, at this time.
 
 ### Will self-service purchase be enabled for services beyond the Power Platform products?
 

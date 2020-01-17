@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Enterprise foundation infrastructure deployment strategies"
+title: "Microsoft 365 for enterprise foundation infrastructure deployment strategies"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -13,19 +13,19 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 
-description: Learn some of the ways you can deploy the phases of the foundation infrastructure for Microsoft 365 Enterprise..
+description: Learn some of the ways you can deploy the phases of the foundation infrastructure for Microsoft 365 for enterprise..
 ---
 
-# Microsoft 365 Enterprise foundation infrastructure deployment strategies
+# Microsoft 365 for enterprise foundation infrastructure deployment strategies
 
-There are many ways you can deploy the phases of the [foundation infrastructure](deploy-foundation-infrastructure.md) of Microsoft 365 Enterprise and roll out its capabilities, software, and services to your users. To get you started on the project management of this undertaking, which can be large and complex depending on the size of your organization and its existing infrastructure, consider the following deployment strategies:
+There are many ways you can deploy the phases of the [foundation infrastructure](deploy-foundation-infrastructure.md) of Microsoft 365 for enterprise and roll out its capabilities, software, and services to your users. To get you started on the project management of this undertaking, which can be large and complex depending on the size of your organization and its existing infrastructure, consider the following deployment strategies:
 
 - Serial deployment
 - Parallel deployment with non-overlapping user rollout
 - Parallel deployment with overlapping user rollout
 - Up-front infrastructure and rollout of the end-to-end configuration
 
-Use these strategies for ideas on how to manage the overall project and more quickly realize the business benefits of Microsoft 365 Enterprise.
+Use these strategies for ideas on how to manage the overall project and more quickly realize the business benefits of Microsoft 365 for enterprise.
 
 >[!Note]
 >This article contains assumptions and simplifications for a consistent way to describe the deployment strategies. These deployment strategies are generalized and are not meant to imply any specific timeframes, nor are they meant to apply to all organizations and situations.
@@ -70,14 +70,14 @@ With a serial deployment, you completely roll out a phase, allowing the phase to
 - IT technology dependencies
 - Business change management and end-user resistance
 
-This Gantt chart shows a simplified serial deployment of phases 2-6 of the foundation infrastructure for Microsoft 365 Enterprise.
+This Gantt chart shows a simplified serial deployment of phases 2-6 of the foundation infrastructure for Microsoft 365 for enterprise.
 
 ![The serial deployment of phases 2-6 of the foundation infrastructure](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 To simplify the discussion and example, each phase and deployment segment within each phase are assumed to take the same amount of time.
 
 >[!Note]
->Phase 1: Networking of the Microsoft 365 Enterprise Foundation Infrastructure is an IT department-only phase. Users reap the benefits of optimized connectivity to Microsoft’s cloud resources but are not imposed upon to achieve it.
+>Phase 1: Networking of the Microsoft 365 for enterprise Foundation Infrastructure is an IT department-only phase. Users reap the benefits of optimized connectivity to Microsoft’s cloud resources but are not imposed upon to achieve it.
 >
 
 Here’s a simplified pilot user experience as an example:
@@ -100,7 +100,7 @@ Here’s a simplified end-user experience as an example:
 
 The result is a 90-day cadence between successive user rollouts.
 
-The disadvantage to this deployment strategy is that it can take a long time to fully deploy the Microsoft 365 Enterprise foundation infrastructure.
+The disadvantage to this deployment strategy is that it can take a long time to fully deploy the Microsoft 365 for enterprise foundation infrastructure.
 
 ### Parallel deployment with non-overlapping user rollout (Parallel 1)
 
@@ -131,7 +131,7 @@ Here’s a simplified end-user experience as an example:
 
 The result is a 60-day cadence between successive user rollouts.
 
-The advantage to this deployment strategy is that it can take less time to fully deploy the Microsoft 365 Enterprise foundation infrastructure, without having your IT department and users deal with multiple rollouts the same time.
+The advantage to this deployment strategy is that it can take less time to fully deploy the Microsoft 365 for enterprise foundation infrastructure, without having your IT department and users deal with multiple rollouts the same time.
 
 ### Parallel deployment with overlapping user rollout (Parallel 2)
 
@@ -169,7 +169,7 @@ Here’s a simplified end-user experience as an example:
 
 The result is a 30-day cadence between successive user rollouts.
 
-The advantage to this deployment strategy is that it can take even less time to fully deploy the Microsoft 365 Enterprise foundation infrastructure, still without having end-users deal with multiple rollouts the same time. However, users don’t get a break between successive phases.
+The advantage to this deployment strategy is that it can take even less time to fully deploy the Microsoft 365 for enterprise foundation infrastructure, still without having end-users deal with multiple rollouts the same time. However, users don’t get a break between successive phases.
 
 ### Up-front infrastructure and rollout of the end-to-end configuration
 
@@ -189,4 +189,4 @@ Once the pilot rollout is concluded, the user rollout begins in which each user 
 
 ## Next step
 
-Start your deployment of Microsoft 365 Enterprise with the [foundation infrastructure](deploy-foundation-infrastructure.md).
+Start your deployment of Microsoft 365 for enterprise with the [foundation infrastructure](deploy-foundation-infrastructure.md).

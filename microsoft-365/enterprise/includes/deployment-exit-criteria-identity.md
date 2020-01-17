@@ -1,4 +1,4 @@
-Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) for additional recommendations on identity infrastructure.
+Also see [Prerequisites](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites) for additional recommendations on identity infrastructure.
 
 <a name="crit-identity-global-admin"></a>
 ### Required: Your global administrator accounts are protected 
@@ -93,7 +93,7 @@ If needed, [Step 3](../identity-secure-user-sign-ins.md#identity-mfa) can help y
 5.	Delete the test user account.
 
 <a name="crit-identity-ident-prot"></a>
-### Optional: Azure AD Identity Protection is enabled to protect against credential compromise (Microsoft 365 Enterprise E5 only)
+### Optional: Azure AD Identity Protection is enabled to protect against credential compromise (Microsoft 365 E5 only)
 
 You've enabled Azure AD Identity Protection to:
 

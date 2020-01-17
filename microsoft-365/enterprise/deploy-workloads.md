@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Enterprise workloads and scenarios"
+title: "Microsoft 365 for enterprise workloads and scenarios"
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 10/21/2019
@@ -11,20 +11,20 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
-description: Onboard your organization's users to the productivity workloads of Microsoft 365 Enterprise.
+description: Onboard your organization's users to the productivity workloads of Microsoft 365 for enterprise.
 ---
 
-# Microsoft 365 Enterprise workloads and scenarios
+# Microsoft 365 for enterprise workloads and scenarios
 
-To get the creativity and teamwork benefits of Microsoft 365 Enterprise, deploy these workloads over your foundation infrastructure:
+To get the creativity and teamwork benefits of Microsoft 365 for enterprise, deploy these workloads over your foundation infrastructure:
 
 - [Microsoft Teams](teams-workload.md)
 - [Exchange Online](exchangeonline-workload.md)
 - [SharePoint and OneDrive](sharepoint-online-onedrive-workload.md)
 
-See the [migration](migration-microsoft-365-enterprise-workload.md) article for a general roadmap to migrate your entire organization to Microsoft 365 Enterprise, which includes Microsoft Office client products, on-premises Office Server products, and Microsoft Windows-based devices.
+See the [migration](migration-microsoft-365-enterprise-workload.md) article for a general roadmap to migrate your entire organization to Microsoft 365 for enterprise, which includes Microsoft Office client products, on-premises Office Server products, and Microsoft Windows-based devices.
 
-Scenarios use features and services from across Microsoft 365 Enterprise in an integrated way to address a business need. 
+Scenarios use features and services from across Microsoft 365 for enterprise in an integrated way to address a business need. 
 
 One such need is to ensure that your employees can work productively and securely when they're not directly connected to your intranet. See the [Empower remote workers](empower-people-to-work-remotely.md) scenario for a roadmap to deploy the infrastructure elements and drive remote user adoption for key workloads, such as Teams and Exchange Online.
 
@@ -40,9 +40,9 @@ To protect this data from internal and external threats, see:
 
 These scenarios step you through configuring a Microsoft Teams team or SharePoint site to securely store your most valuable data.
 
-Here are the workloads and scenarios in the overall Microsoft 365 Enterprise deployment guide:
+Here are the workloads and scenarios in the overall Microsoft 365 for enterprise deployment guide:
 
-![The workloads and scenarios in the overall Microsoft 365 Enterprise deployment guide](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![The workloads and scenarios in the overall Microsoft 365 for enterprise deployment guide](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 See the [Microsoft 365 Productivity Library](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary) for additional scenarios. 
 
@@ -59,7 +59,7 @@ See the [Microsoft 365 Productivity Library](https://aka.ms/productivitylibrary)
 | Mobile device management | Your devices can be enrolled and managed. |
 | Information protection | Microsoft 365 information protection features are configured and your sensitivity or Azure Information Protection labels are ready to protect documents and email. |
 
-Remember that this is ideal and can take some time to plan for, configure, test, and pilot, especially in large organizations with existing infrastructure and multiple locations. Completing all of these phases in all locations is not necessary for you to more quickly get business value from Microsoft 365 Enterprise. 
+Remember that this is ideal and can take some time to plan for, configure, test, and pilot, especially in large organizations with existing infrastructure and multiple locations. Completing all of these phases in all locations is not necessary for you to more quickly get business value from Microsoft 365 for enterprise. 
 
 Here are some common workloads to deploy right away: 
 

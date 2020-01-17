@@ -1,5 +1,6 @@
 ---
-title: "Configure communication compliance for Microsoft 365 (preview)"
+title: "Configure communication compliance (preview)"
+description: "Set up communication compliance policies to configure employee communications for review."
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,10 +16,9 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Set up communication compliance policies to configure employee communications for review."
 ---
 
-# Configure communication compliance for Microsoft 365 (preview)
+# Configure communication compliance in Microsoft 365 (preview)
 
 > [!IMPORTANT]
 > This topic applies to configuring communication compliance in a Microsoft 365 subscription. If you want to configure Supervision policies for an Office 365 subscription, see [Configure supervision for Office 365](supervision-policies.md).
@@ -37,7 +37,7 @@ Follow these steps to set up and use communication compliance in your Microsoft 
 
 - **Step 2 (required)**: [Make communication compliance available in your organization](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    Add yourself to the **Supervisory Review Administrator** role so you can set up policies. You'll also need to create a group with the **Supervisory Review Administrator**, **Case Management**, and **Review** roles to people or groups that will take investigative and remediation action on messages with policy matches. Anyone who has these roles assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Add yourself to the **Supervisory Review Administrator** role so you can set up policies. You'll also need to create a new group with the **Supervisory Review Administrator**, **Case Management**, and **Review** roles to people or groups that will take investigative and remediation action on messages with policy matches. Anyone who has these roles assigned can access the **Communication compliance** page in the Microsoft 365 compliance center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Step 3 (required)**: [Set up a communication compliance policy](#step-3-create-a-communication-compliance-policy-required)
 
@@ -50,6 +50,10 @@ Follow these steps to set up and use communication compliance in your Microsoft 
 - **Step 5 (optional)**: [Test your communication compliance policy](#step-5-test-your-communication-compliance-policy-optional)
 
     Test your communication compliance policy to make sure it functions as desired. It's important to ensure that your compliance strategy is meeting your standards.
+
+- **Step 6 (optional)**: [Enable auditing for your communication compliance policies](#step-6-enable-auditing-for-your-communication-compliance-policies-optional)
+
+    Enable auditing for your organization to record managment activities for communication compliance policies.
 
 ## Step 1: Set up groups for communication compliance (optional)
 
@@ -72,19 +76,24 @@ For more information about setting up groups, see:
 
 ## Step 2: Make communication compliance available in your organization (required)
 
+> [!Important]
+> By default, Global Administrators do not have access to communication compliance features. The roles assigned in this step are required before any communication compliance features will be accessible.
+
 To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the **Supervisory Review Administrator** role. Additionally, to investigate and remediate messages with policy matches, you must create a group for reviewers with the **Supervisory Review Administrator**, **Case Management**, and **Review** roles.
 
 ### Create a new role group
 
-1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Office 365 organization.
+1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Microsoft 365 compliance center, go to **Permissions**. Select the link to view and manage roles in Office 365.
+2. In the Microsoft Office 365 security and compliance center, go to **Permissions**. Select the link to view and manage roles in Office 365.
 
 3. Select **Create**.
 
 4. In the **Name** field, give the new role group a friendly name. Select **Next**.
 
 5. Select **Choose roles** and then select **Add**. Select the checkbox for **Supervisory Review Administrator**, **Case Management**, and **Review**, then select **Add** and **Done**. Select **Next**.
+
+    ![Communication compliance required role groups](media/communication-compliance-role-groups.png)
 
 6. Select **Choose members** and then select **Add**. Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**. Select **Next**.
 
@@ -161,3 +170,12 @@ Follow these steps to test your communication compliance policy:
 3. Sign in to Microsoft 365 as a reviewer designated in the communication compliance policy. Navigate to **Communication compliance** > **Alerts** to view the alerts for your policies.
 
 4. Remediate the alert using the remediation controls and verify that the alert is properly resolved.
+
+## Step 6: Enable auditing for your communication compliance policies (optional)
+
+After you've tested your policies, you may want to enable auditing so that activities associated with communication compliance management are recorded. This may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes.
+
+When auditing is enabled, communication compliance policies have built-in audit trails for complete readiness for internal or external audits. You can use the **Export review activities** control on the main page for any policy to generate an audit file or view audit activities in the unified audit log if auditing is enabled.
+
+To turn auditing on, click **Start recording user and admin activity** on the **Audit log search** page in the Office 365 Security & Compliance Center. If you don't see this link, auditing has already been turned on for your organization. After you turn auditing on, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this once. For more information about the audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+

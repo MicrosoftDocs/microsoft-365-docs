@@ -67,7 +67,7 @@ In this section, you'll set up Azure AD Privileged Identity Management (PIM) to 
 
 Instead of your administrator accounts being permanent admins, they become eligible admins. The administrator role is inactive until someone needs it. You'll then complete an activation process to add the administrator role to the administrator account for a specific amount of time. When the time expires, PIM removes the administrator role from the administrator account.
 
-PIM is available with Azure Active Directory Premium P2, which is included with Microsoft 365 Enterprise E5. Alternately, you can purchase individual Azure Active Directory Premium P2 licenses for your administrator accounts.
+PIM is available with Azure Active Directory Premium P2, which is included with Microsoft 365 E5. Alternately, you can purchase individual Azure Active Directory Premium P2 licenses for your administrator accounts.
 
 To enable Azure PIM for your Azure AD tenant and administrator accounts, see the [steps to configure PIM](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
 

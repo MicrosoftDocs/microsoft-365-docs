@@ -1,9 +1,9 @@
 ---
-title: "Changes to Microsoft 365 Enterprise deployment content"
+title: "Changes to Microsoft 365 for enterprise deployment content"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 12/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,7 +16,7 @@ ms.custom:
 description: See the new content and changes to the content in the Microsoft 365 Deployment Guide.
 ---
 
-# Changes to Microsoft 365 Enterprise deployment content
+# Changes to Microsoft 365 for enterprise deployment content
 
 ## December 2019
 
@@ -27,13 +27,13 @@ description: See the new content and changes to the content in the Microsoft 365
 ### Updates and enhancements
 
 - [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files) for the use of sensitivity labels
--  [The lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md) and [The simulated enterprise base configuration](simulated-ent-base-configuration-microsoft-365-enterprise.md) for new trial subscription procedures 
+-  Refresh of the set of [Test Lab Guides](m365-enterprise-test-lab-guides.md) 
 
 ## November 2019
 
 ### New content 
 
-- [Migrate from Microsoft 365 Business to Microsoft 365 Enterprise E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+- [Migrate from Microsoft 365 Business to Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
 
 - [Team for a top-secret project of the Contoso Corporation](contoso-team-for-top-secret-project.md)
 
@@ -61,9 +61,9 @@ description: See the new content and changes to the content in the Microsoft 365
 
   You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) format.
 
-- [The Windows 10 deployment with Microsoft Endpoint Configuration Manager poster](windows10-deploy-inplaceupgrade.md)
+- [The Windows 10 deployment with Configuration Manager poster](windows10-deploy-inplaceupgrade.md)
 
-  [![The Windows 10 deployment with System Center Configuration Manager poster](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
+  [![The Windows 10 deployment with Configuration Manager poster](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
   You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) format.
 
@@ -88,9 +88,9 @@ description: See the new content and changes to the content in the Microsoft 365
  
   [![The SharePoint sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)](teams-sharepoint-online-sites-highly-regulated-data.md)
 
-- [Microsoft 365 Enterprise poster](microsoft-365-overview.md#get-the-big-picture) for new scenarios 
+- [Microsoft 365 for enterprise poster](microsoft-365-overview.md#get-the-big-picture) for new scenarios 
 
-  [![Image for the Microsoft 365 Enterprise poster](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+  [![Image for the Microsoft 365 for enterprise poster](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
 ## September 2019
 
@@ -113,11 +113,11 @@ description: See the new content and changes to the content in the Microsoft 365
 
 ### New content 
 
-- [Transition Your Organization to Microsoft 365 Enterprise poster](migration-microsoft-365-enterprise-workload.md#transition-your-entire-organization)
+- [Transition Your Organization to Microsoft 365 for enterprise poster](migration-microsoft-365-enterprise-workload.md#transition-your-entire-organization)
 
    [![Image for the Transition to Microsoft 365 poster](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
  
-- [Identity infrastructure for Microsoft 365 Enterprise poster](identity-infrastructure.md)
+- [Identity infrastructure for Microsoft 365 for enterprise poster](identity-infrastructure.md)
 
   [![The Identity Infrastructure poster](./media/identity-infrastructure/m365e-identity-arch-poster.png)](media/identity-infrastructure/M365E-ID-Infra.pdf)
 
@@ -133,15 +133,15 @@ description: See the new content and changes to the content in the Microsoft 365
 
 ### Updates and enhancements
 
-- [Microsoft 365 Enterprise poster](microsoft-365-overview.md#get-the-big-picture) for new productivity scenarios
+- [Microsoft 365 for enterprise poster](microsoft-365-overview.md#get-the-big-picture) for new productivity scenarios
 
-   [![Image for the Microsoft 365 Enterprise poster](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+   [![Image for the Microsoft 365 for enterprise poster](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
 ## July 2019
 
 ### New content
 
-- Excel workbook for [Microsoft 365 Enterprise for non-enterprise organizations article](deploy-foundation-infrastructure-non-enterprises.md#onboarding)
+- Excel workbook for [Microsoft 365 for enterprise for non-enterprise organizations article](deploy-foundation-infrastructure-non-enterprises.md#onboarding)
 
 ## May 2019
 
@@ -149,12 +149,12 @@ description: See the new content and changes to the content in the Microsoft 365
 
 - [Foundation Infrastructure poster](deploy-foundation-infrastructure.md#at-a-glance)
 
-  [![Image for the Microsoft 365 Enterprise foundation infrastructure poster](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+  [![Image for the Microsoft 365 for enterprise foundation infrastructure poster](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
   Announcements: [LinkedIn](https://www.linkedin.com/pulse/how-can-i-get-big-picture-microsoft-365-enterprise-joe-davies/)
 
  
-- [Microsoft 365 Enterprise for non-enterprise organizations article](deploy-foundation-infrastructure-non-enterprises.md)
+- [Microsoft 365 for enterprise for non-enterprise organizations article](deploy-foundation-infrastructure-non-enterprises.md)
 
   [![Summary of the infrastructure if your organization uses cloud-only identity](./media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)](deploy-foundation-infrastructure-non-enterprises.md)
 
