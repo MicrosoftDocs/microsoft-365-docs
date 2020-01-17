@@ -11,6 +11,7 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
 # New Zealand Government Cloud Computing Security and Privacy Considerations
@@ -56,7 +57,7 @@ If your agency is required to undertake certification and accreditation of its I
 - [Microsoft Azure compliance in the context of New Zealand security and privacy requirements](https://aka.ms/azurecompliancenewzealand)
 - [NZ Government ICT Strategy 2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [NZ Government requirements for cloud computing](https://aka.ms/NZ-Cloud-Requirements)
-- [Cloud Computing: Information Security and Privacy Considerations (ISPC)](https://aka.ms/NZ-Cloud-Computing-Considerations)
+- [Cloud Computing: Information Security and Privacy Considerations (ISPC)](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Office 365: SEEMail Integration and Reference Architecture](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (additional Microsoft NZ guidance on cloud service adoption)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -11,19 +11,20 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
 # U.S. Section 508
 
 ## About U.S. Section 508
 
-The United States Congress amended the Rehabilitation Act in 1998 and 2000 to require federal agencies to make their electronic and information technology (EIT) products, such as software, hardware, electronic content, and support documentation, accessible to people with disabilities. Section 508 of the United States Workforce Rehabilitation Act of 1973 (29 US Code §794d), as amended, mandates that federal agencies procure, maintain, and use EIT in a manner that ensures federal employees with disabilities have comparable access to, and use of, data and EIT relative to other federal employees.  
-  
-Because it is a major software and cloud-services provider to U.S. federal and state governments, Microsoft is committed to complying with all relevant government standards and compliance controls. By adhering to these [wide-ranging accessibility standards](https://go.microsoft.com/fwlink/?linkid=2052068), Microsoft ensures that all customers — both inside and outside of government — can use Microsoft services and products.
+The United States Congress amended the Rehabilitation Act in 1998 and 2000 to require federal agencies to make their electronic and information technology (EIT) products, such as software, hardware, electronic content, and support documentation, accessible to people with disabilities. Section 508 of the United States Workforce Rehabilitation Act of 1973 (29 US Code §794d), as amended, mandates that federal agencies procure, maintain, and use EIT in a manner that ensures federal employees with disabilities have comparable access to, and use of, data and EIT relative to other federal employees.
+
+Microsoft is a major software and cloud-services provider to U.S. federal and state governments.  To assist government customers in making procurement decisions, Microsoft publishes Accessibility Conformance Reports describing the extent to which our products and services support the criteria of Section 508.  This information can help Microsoft customers determine whether a particular product or service will meet their specific needs.
 
 ## Microsoft and U.S. Section 508
 
-Microsoft’s adherence to U.S. Section 508 regulation points to its commitment to making technology and data accessible for all customers. U.S. Section 508 is the U.S.-specific accessibility requirement that complements EN 301 549 (Europe) and WCAG (international).
+Microsoft’s consideration of U.S. Section 508 in the development of products and services points to its commitment to making technology and data accessible for all customers.
 
 ## Microsoft in-scope cloud services
 

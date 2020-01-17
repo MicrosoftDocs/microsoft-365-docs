@@ -11,6 +11,7 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
 # US Department of Defense (DoD) Provisional Authorization at Impact Levels 2, 4, and 5
@@ -30,7 +31,7 @@ Microsoft’s government cloud services meet the demanding requirements of the U
 - Learn about the benefits of DoD DISA L2, L4, L5 on the Microsoft Cloud: [Download the Department of Defense DISA Backgrounder](https://aka.ms/disa-backgrounder)
 - Learn how to accelerate your DoD DISA L2, L4, L5 deployment with our Azure Security and Compliance Blueprint: [Download the Azure DoD Level 5 security control implementations](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=e391da04-ae17-472c-9634-959c5ce6ba92&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD%20Blueprint)
 
-## [DoD Impact Level 5 Provisional Authorization
+## DoD Impact Level 5 Provisional Authorization
 
 DISA Cloud Service Support has granted a DoD Impact Level 5 PA for Microsoft Azure Government for DoD. DISA has also granted Office 365 U.S. Government Defense a DoD Impact Level 5 PA. Impact Level 5 covers Controlled Unclassified Information (CUI) deemed by law, other government regulations, or the agency that owns the information and needs a higher level of protection than Level 4 provides. It also covers unclassified National Security Systems.
 
@@ -94,7 +95,7 @@ Also, Microsoft offerings outside the FedRAMP-certified boundary that could pote
 ## Resources
 
 - [DoD Cloud Computing Security Requirements Guide (SRG) and other documents](https://public.cyber.mil/dccs/dccs-documents/)
-- [DISA Cloud Service Support](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
+- [DISA Cloud Service Support](https://storefront.disa.mil/kinetic/disa/service-catalog#/forms/cloud-service-support)
 - [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)

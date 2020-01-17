@@ -14,15 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 
 ROBOTS: NOINDEX, NOFOLLOW 
-description: "Opt-in and use the attorney-client privilege detection model to use the machine learning-based detection of privileged content when reviewing content in an Advanced eDiscovery case."
+description: "Use the attorney-client privilege detection model to use the machine learning-based detection of privileged content when reviewing content in an Advanced eDiscovery case."
 ---
 
 # Set up attorney-client privilege detection in Advanced eDiscovery
 
 A major and costly aspect of the review phase of any eDiscovery process is reviewing documents for privileged content. Advanced eDiscovery provides machine learning-based detection of privileged content to make this process more efficient. This feature is called *attorney-client privilege detection*.
-
-> [!NOTE]
-> You must opt in to the attorney-client privilege detection model before you can use it. See [Step 1](#step-1-opt-in-to-attorney-client-privilege-detection) for instructions.
 
 ## How does it work?
 
@@ -34,11 +31,11 @@ When attorney-client privilege detection is enabled, all documents in a review s
 
 The model produces the following three properties for every document:
 
-- **AttorneyClientPrivilegeScore** – The likelihood the document is legal in nature; the values for the score are between **0** and **1**.
+- **AttorneyClientPrivilegeScore:** The likelihood the document is legal in nature; the values for the score are between **0** and **1**.
 
-- **HasAttorney** – This property is set to **true** if one of the document participants is listed in the attorney list; otherwise the value is **false**. The value is also set to **false** if your organization didn't upload an attorney list.
+- **HasAttorney:** This property is set to **true** if one of the document participants is listed in the attorney list; otherwise the value is **false**. The value is also set to **false** if your organization didn't upload an attorney list.
 
-- **IsPrivilege** – This property is set to **true** if the value for **AttorneyClientPrivilegeScore** is above the threshold *or* if the document has an attorney participant; otherwise the value is set to **false**.
+- **IsPrivilege:** This property is set to **true** if the value for **AttorneyClientPrivilegeScore** is above the threshold *or* if the document has an attorney participant; otherwise the value is set to **false**.
 
 These properties (and their corresponding values) are added to the file metadata of the documents in a review set, as shown in the following screenshot:
 
@@ -48,19 +45,19 @@ These three properties are also searchable within a review set. For more informa
 
 ## Set up the attorney-client privilege detection model
 
-To enable the attorney-client privilege detection model, your organization has to opt in and then upload an attorney list.
+To enable the attorney-client privilege detection model, your organization has to turn it on and then upload an attorney list.
 
-### Step 1: Opt in to attorney-client privilege detection
+### Step 1: Turn on attorney-client privilege detection
 
-As previously stated, the attorney-client privilege detection model is in Preview. Therefore a person in your organization eDiscovery Administrator (a member of the eDiscovery Administrator subgroup in the eDiscovery Manager role group) must opt in to make the model available in your Advanced eDiscovery cases.
+A person who is an eDiscovery Administrator in your organization (a member of the eDiscovery Administrator subgroup in the eDiscovery Manager role group) must make the model available in your Advanced eDiscovery cases.
 
 1. In the Security & Compliance Center, go to **eDiscovery > Advanced eDiscovery**.
 
-2. On the **Advanced eDiscovery** home page, in the **Settings** tile, select **Configure experimental features**.
+2. On the **Advanced eDiscovery** home page, in the **Settings** tile, click **Configure global analytics settings**.
 
    ![Select "Configure experimental features"](media/AeDExperimentalFeatures.png)
 
-3. On the **Experimental features** tab, select **Manage attorney-client privilege setting**.
+3. On the **Analytics settings** tab, select **Manage attorney-client privilege setting**.
 
 4. On the **Attorney-client privilege** flyout page, use the toggle to turn on the feature and then select **Save**.
 

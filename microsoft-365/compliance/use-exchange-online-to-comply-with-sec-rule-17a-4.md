@@ -1,7 +1,7 @@
 ---
 title: "Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4"
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -60,7 +60,7 @@ You can lock a retention policy by using PowerShell. For more information, see [
 
 ## Known limitations
 
-We’re aware of a few limitations in Exchange Online. We’re actively working on these and expect to release support for these scenarios in July 2019:
+Currently, there are a few limitations for Exchange Online:
 
 - Item-level auditing is not available in Office 365 Group mailboxes.
 - Threaded communications are not available for Teams chat and channel messages.

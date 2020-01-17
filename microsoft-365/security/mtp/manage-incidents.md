@@ -24,7 +24,7 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Managing incidents is critical in ensuring that threats are contained and addressed. In Microsoft Threat Protection, you have access to managing incidents on devices, users, and mailboxes. 
 

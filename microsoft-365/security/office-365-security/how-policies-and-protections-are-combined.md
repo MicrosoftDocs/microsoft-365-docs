@@ -1,6 +1,6 @@
 ---
 title: How policies and protections are combined when mail is red-flagged
-description: Describes what policies and protections apply when e-mail encounters multiple protections and is scanned by multiple forms of detection.
+description: Describes what policies and protections apply when e-mail encounters multiple protections and is scanned by multiple forms of detection. What policies apply, and what actions to take, when email is marked malware, spam, high confidence spam, phishing, and bulk by EOP, and/or ATP.
 keywords: security, malware, Microsoft 365, M365, security center, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
 ms.author: tracyp
 author: MSFTTracyp
@@ -12,7 +12,6 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: "What policies apply, and what actions to take, when email is marked malware, spam, high confidence spam, phishing, and bulk by EOP, and/or ATP."
 ---
 
 # What policy applies when multiple protection methods and detection scans run on your email

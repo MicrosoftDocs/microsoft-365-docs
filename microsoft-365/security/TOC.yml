@@ -5,10 +5,6 @@
       items: 
         - name: Microsoft 365 Security for BDMs
           href: Microsoft-365-security-for-bdm.md
-        - name: Secure Score
-          href: ./mtp/microsoft-secure-score.md
-        - name: Secure Score (preview)
-          href: ./mtp/microsoft-secure-score-preview.md
         - name: Chief Information Security Officer (CISO) workshop training
           href: ./office-365-security/ciso-workshop.md
           items: 
@@ -110,6 +106,8 @@
                       href: mtp/advanced-hunting-deviceimageloadevents-table.md
                     - name: DeviceEvents
                       href: mtp/advanced-hunting-deviceevents-table.md
+                    - name: DeviceFileCertificateInfoBeta
+                      href: mtp/advanced-hunting-devicefilecertificateinfobeta-table.md
                     - name: EmailEvents
                       href: mtp/advanced-hunting-emailevents-table.md
                     - name: EmailAttachmentInfo
@@ -172,7 +170,7 @@
 
             - name: New Microsoft 365 security center
 
-              href: ./office-365-security/microsoft-security-and-compliance.md
+              href: ./mtp/overview-security-center.md
 
             - name: Permissions in the Security & Compliance Center
 
@@ -206,7 +204,7 @@
 
                   href: ./office-365-security/anti-malware-protection-faq-eop.md
 
-                - name: Anti-spam and anti-malware protection in Office 365
+                - name: Anti-malware protection
 
                   href: ./office-365-security/anti-malware-protection.md
 
@@ -668,7 +666,7 @@
 
             - name: Responding to a Compromised Email Account in Office 365
 
-              href: office-365-security/responding-to-a-compromised-email-account.md
+              href: ./office-365-security/responding-to-a-compromised-email-account.md
 
         - name: Mail flow
 
@@ -681,6 +679,10 @@
             - name: Message trace in the Security & Compliance Center
 
               href: ./office-365-security/message-trace-scc.md
+              
+            - name: View email security reports in the Security & Compliance Center
+
+              href: ./office-365-security/view-email-security-reports.md
 
             - name: Mail flow insights in the Security & Compliance Center
 

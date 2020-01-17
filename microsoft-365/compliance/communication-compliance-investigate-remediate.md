@@ -1,5 +1,6 @@
 ---
 title: "Investigate and remediate communication compliance alerts (preview)"
+description: "Investigate and remediate communication compliance alerts in Microsoft 365."
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,7 +16,7 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "Investigate and remediate communication compliance alerts in Microsoft 365."
+
 ---
 
 # Investigate and remediate communication compliance alerts (preview)

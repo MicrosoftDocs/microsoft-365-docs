@@ -12,6 +12,7 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
+titleSuffix: Microsoft GDPR
 ---
 
 # Microsoft 365 GDPR action plan — Top priorities for your first 30 days, 90 days, and beyond

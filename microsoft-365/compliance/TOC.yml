@@ -58,13 +58,15 @@
         - name: Troubleshooting information barriers
           href: information-barriers-troubleshooting.md
         - name: Edit information barrier policies
-          href: information-barriers-edit-segments-policies.md.md
+          href: information-barriers-edit-segments-policies.md
 - name: Manage information protection
   href: protect-information.md
   items: 
     - name: Sensitivity labels
       href: sensitivity-labels.md
       items: 
+        - name: Create and publish sensitivity labels
+          href: create-sensitivity-labels.md
         - name: Restrict access to content by using encryption in sensitivity labels
           href: encryption-sensitivity-labels.md
         - name: Apply a sensitivity label to content automatically
@@ -199,23 +201,21 @@
           href: find-copy-and-delete-pst-files-in-your-organization.md
         - name: Filter data when importing PST files
           href: filter-data-when-importing-pst-files.md
-        - name: Use network upload to import RMS-encrypted PST files
-          href: use-network-upload-to-import-rms-encrypted-pst-files.md
         - name: FAQ about importing PST files
           href: faqimporting-pst-files-to-office-365.md
-        - name: Archive third-party data
-          href: archiving-third-party-data.md
-          items: 
-            - name: Use a sample connector to archive Facebook data
-              href: archive-facebook-data-with-sample-connector.md
-            - name: Use a sample connector to archive Twitter data
-              href: archive-twitter-data-with-sample-connector.md
-            - name: Set up a connector to archive LinkedIn data
-              href: archive-linkedin-data.md
-            - name: Set up a connector to archive Instant Bloomberg data
-              href: archive-instant-bloomberg-data.md
-            - name: Work with a partner to archive third-party data
-              href: work-with-partner-to-archive-third-party-data.md
+    - name: Archive third-party data
+      href: archiving-third-party-data.md
+      items: 
+        - name: Set up a connector to archive Facebook data
+          href: archive-facebook-data-with-sample-connector.md
+        - name: Set up a connector to archive Twitter data
+          href: archive-twitter-data-with-sample-connector.md
+        - name: Set up a connector to archive LinkedIn data
+          href: archive-linkedin-data.md
+        - name: Set up a connector to archive Instant Bloomberg data
+          href: archive-instant-bloomberg-data.md
+        - name: Work with a partner to archive third-party data
+          href: work-with-partner-to-archive-third-party-data.md
     - name: Store data
       items: 
         - name: Enable archive mailboxes
@@ -852,7 +852,7 @@
           href: offering-iso-9001.md
         - name: SOC
           href: offering-soc.md
-        - name: WCAG 2.1
+        - name: WCAG
           href: offering-wcag-2-1.md
     - name: US Government
       items: 
@@ -1009,7 +1009,7 @@
             - name: FINMA (Switzerland)
               href: offering-finma-switzerland.md
             - name: GDPR (EU)
-              href: offering-gdpr-eu.md
+              href: gdpr.md
             - name: GLBA
               href: offering-glba.md
             - name: HITRUST
@@ -1093,10 +1093,11 @@
             - name: EU U.S. Privacy Shield
               href: offering-eu-us-privacy-shield.md
             - name: GDPR (EU)
-              href: offering-gdpr-eu.md
+              href: gdpr.md
             - name: G-Cloud (UK)
               href: offering-g-cloud-uk.md
             - name: IDW PS 951 (Germany)
+              href: https://www.idw.de/the-idw/about-the-idw
             - name: IT Grundschutz Workbook (Germany)
               href: offering-it-grundschutz-workbook-germany.md
             - name: LOPD (Spain)

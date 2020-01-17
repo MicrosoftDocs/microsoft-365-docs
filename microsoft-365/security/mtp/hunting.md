@@ -1,7 +1,7 @@
 ---
-title: Hunt for other threats in Microsoft 365
+title: Hunt for threats in Microsoft 365
 description: Use threat hunting capabilities in the Microsoft 365 security center to proactively find breaches and other threats
-keywords: security, malware, Microsoft 365, M365, security center, hunt, hunting, Microsoft Defender ATP, Office 365 ATP, Azure ATP, advanced hunting
+keywords: Microsoft 365, M365, Microsoft Threat Protection, MTP, security center, hunt, threat hunting, cyberthreat hunting, Microsoft Defender ATP, Office 365 ATP, Azure ATP, advanced hunting
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
