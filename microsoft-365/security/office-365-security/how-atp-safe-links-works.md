@@ -52,8 +52,6 @@ At a high level, here's how [ATP Safe Links](atp-safe-links.md) protection works
     
 3. When the user clicks on a URL in the document, the link is checked by the ATP Safe Links service.
     
-   - If the URL is to a website that is included in a [custom "Do not rewrite" URLs list](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) for a policy that applies to the user, that user is taken to the website. 
-    
    - If the URL is to a website that is included in the organization's [custom blocked URLs list](set-up-a-custom-blocked-urls-list-wtih-atp.md), the user is taken to a [warning page](atp-safe-links-warning-pages.md).
     
    - If the URL is to a website that has been determined to be malicious, the user is taken to a [warning page](atp-safe-links-warning-pages.md).
