@@ -16,7 +16,7 @@ ms.collection: m365-security-compliance
 
 Insider risk management users are employees in your organization that are included in one or more insider risk management policies. Use the **Users dashboard** to quickly review risk information about employees and to add an employee to an existing insider risk management policy. Each user included in an insider risk management policy has the following information displayed on the **Users dashboard**:
 
-- **Users**: The user name or the pseudonymized identifier for a user.
+- **Users**: The user name for a user.
 - **Risk level**: 
 - **Active alerts**: The number of active alerts for all policies.
 - **Confirmed violations**: The number of cases resolved as *confirmed policy violation* for the user.
@@ -33,9 +33,6 @@ To view more details about risk activity for a user, open the user details pane 
     - **User email**: The email address for the user.
     - **Alias**: The network alias for the user.
     - **Organization or department**: The organization or department for the user.
-
-    >[!NOTE]
-    >User details on the **User profile** tab will not be displayed if pseudonymization is enabled for insider risk management. Only the pseudonymized identifier for the user is displayed when pseudonymization is enabled.
 
 - **User activity** tab
     - **History of recent user activity**: Lists both policy triggering events and risk indicators for user activities. A triggering event may be the acceptance of a resignation date or the last scheduled date of work for the employee. Risk indicators are activities that are determined to have an element of risk and that are matched to policies that the user is included in. Events and risk activities are listed with the most recent item listed first.
