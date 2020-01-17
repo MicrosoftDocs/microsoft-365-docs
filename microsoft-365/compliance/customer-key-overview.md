@@ -28,9 +28,7 @@ Service encryption ensures that content at rest is encrypted at the application 
 
 Customer Key is built on service encryption and lets you provide and control encryption keys. Office 365 then uses these keys to encrypt your data at rest as described in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products.aspx). Customer Key helps you meet compliance obligations because you control the encryption keys that Office 365 uses to encrypt and decrypt data.
   
-Customer Key enhances the ability of your organization to meet the demands of compliance requirements that specify key arrangements with the cloud service provider. With Customer Key, you provide and control the encryption keys for your Office 365 data at-rest at the application level. As a result, you exercise control over your organization's keys. If you decide to exit the service, you revoke your organization's keys. By revoking the keys, the data is unreadable to the service. For all Office 365 services, key revocation is the first step on the path towards data deletion.
-
-With Customer Key, you control your organization's encryption keys and then configure Office 365 to use them to encrypt your data at rest in Microsoft's data centers. In other words, Customer Key allows customers to add a layer of encryption that belongs to them, with their keys. Data at rest includes data from Exchange Online and Skype for Business stored in mailboxes and files stored in SharePoint Online and OneDrive for Business.
+Customer Key enhances the ability of your organization to meet the demands of compliance requirements that specify key arrangements with the cloud service provider. With Customer Key, you provide and control the root encryption keys for your Office 365 data at-rest at the application level. As a result, you exercise control over your organization's keys. If you decide to exit the service, you revoke your organization's root keys. For all Office 365 services, key revocation is the first step on the path towards data deletion. By revoking the keys, the data is unreadable to the service.
 
 ## Customer Key encrypts data at rest in Office 365
 
@@ -52,9 +50,9 @@ Customer Key only encrypts data at rest in the cloud. Customer Key does not work
 > [!WARNING]
 > @REVIEWERS a customer points out in github issues that we never define the dep. we tell them what we DO with it but not what it is. i gave this a whirl please refine this section.
 
-A data encryption policy defines the encryption hierarchy Customer Key uses to encrypt each of the keys you provide as well as the availability key protected by Microsoft. You create one or more DEPs when you set up Customer Key. Next, you assign a DEP to parts of each service that you can encrypt. For example:
+A data encryption policy defines the encryption hierarchy to encrypt data using each of the keys you provide as well as the availability key protected by Microsoft. You create DEPs using Customer Key and assign those to encrypt application data. For example:
 
-**Exchange Online and Skype for Business** You can create up to 50 DEPs for your organization. You assign each mailbox to one DEP. When you assign the DEP, ***encryption doesn't begin automatically, it's triggered by a powershell cmdlet or a mailbox move as described in [Set up Customer Key for Office 365](customer-key-set-up.md). Later, you can reassign the mailbox to another DEP as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses. (For more information, see [Customer Key licensing](#about-customer-key-licensing).)
+**Exchange Online and Skype for Business** You can create up to 50 DEPs for your tenant. You assign DEPs to individual mailboxes. When a DEP is assigned to a mailbox for the first time, it becomes effective when the mailbox moves. Refer to the details in [Set up Customer Key for Office 365](customer-key-set-up.md). Later, you can either refresh the DEP or reassign the mailbox to another DEP as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses in order to assign a DEP. (For more information, see [Customer Key licensing](#about-customer-key-licensing).)
 
 **SharePoint Online, including Team Sites, and OneDrive for Business** You can create up 1 DEP per geo for your organization. If you're not using the multi-geo feature, you can create one DEP. You assign each geo to one DEP. When you assign the DEP, ***encryption doesn't begin automatically, it's triggered by a powershell cmdlet as described in [Set up Customer Key for Office 365](customer-key-set-up.md). Later, you can reassign the mailbox to another DEP as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses. (For more information, see [Customer Key licensing](#about-customer-key-licensing).)
 
@@ -63,23 +61,25 @@ A data encryption policy defines the encryption hierarchy Customer Key uses to e
 > [!WARNING]
 > @KC Add VERY brief into about the keys here then point off to more info about availability keys.
 
-### Customer-managed keys
+### Customer Key
 
-These are keys you provide and store in Azure Key Vault.
+Service encryption uses a key hierarchy. Customer provisions two root keys in Azure Key Vault and grants wrap/unwrap permissions using those keys to O365 Services. Customer then creates DEPs using the root keys. Each DEP creation results into the creation of an availability key and a DEP key. The DEP key gets wrapped with each of the two root keys and the availability key. The DEP key in turn wraps the mailbox key which encrypts the mailbox data. 
 
-The data purge feature is not available with Microsoft-managed keys; only Customer Key offers this ability. For information about the data purge process and key revocation, see [Revoke your keys and start the data purge path process](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process).
+With Customer Key, the customer could request data purge. For information about the data purge process and key revocation, see [Revoke your keys and start the data purge path process](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process).
 
 > [!WARNING]
 > @REVIEWERS! What else to say here? You can generate and store these in a Thales ? HSM or some other mechanism? Move some of the overview material about the keys here? differentiate between the customer keys and the availability key here. Keep this VERY brief.
 
 ### Availability key
 
-The availability key is a Microsoft-managed key (is it?) that provides you with the capability to recover from the unanticipated loss of root keys that you manage. For more information about the availability key, see [Understand the availability key for Office 365 Customer Key](customer-key-availability-key-understand.md).
+The availability key is a root key that is provisioned when you create a data encryption policy. The availability key is stored and protected within Office 365 and is functionally similar to the two root keys that are supplied by you for use with service encryption with Customer Key. For more information about the availability key, see [Understand the availability key for Office 365 Customer Key](customer-key-availability-key-understand.md).
 
 ### Encryption ciphers used by Customer Key
 
 > [!WARNING]
 > **@Reviewers!!** Need to redo these graphics these are placeholders for now. Please confirm the data on them is still accurate. Also, I'd like to remove the "microsoft-managed" from the SPO piece as this will undoubtedly cause confusion. @Jeff McDowell Please verify.
+
+<!-- [BrDesai] Given this is an overview page, I don't think we should talk about enryption ciphers and such details. It is too much details for an overview.
 
 Customer Key uses a variety of encryption ciphers to encrypt keys as shown in the following figures.
 
@@ -105,13 +105,11 @@ BYOK with Azure Information Protection for Exchange Online is offered with the n
 > [!WARNING]
 > @REVIEWERS - This is unusual information for pubs to publish. Normally we link out to marketing content for this. I REALLY want to delete all the rest of this article except the link to the trust center. Please provide me with a link to replace this content. One excellent option would be to ensure that the service description is up to date. I can point there. That would be optimal.
 
-Customer Key is offered in the Office 365 Enterprise Suite, "E5", and the Advanced Compliance SKU. Additionally, you must also purchase the appropriate license for using Azure Key Vault.
-  
-Each user benefiting from Customer Key needs to be licensed if they want to be covered by Customer Key.
+Customer Key is offered in the Office 365 Enterprise Suite, "E5", and the Advanced Compliance SKU. Additionally, you must also purchase the appropriate subscription for using Azure Key Vault.
   
 For SharePoint Online, the Office 365 Administrator who configures Customer Key also needs to be licensed, to perform the setup steps. Additionally, the users that benefit from Customer Key need to be licensed - this includes the site owner and any users accessing files on one or more sites that are encrypted using Customer Key. External users do not need to be licensed to access files on one or more sites that are encrypted using Customer Key.
   
-For Exchange Online, "user" mailboxes and "mail user" mailboxes must be licensed. All others, such as shared mailboxes, are not required to have a license for Customer Key. To check that your Exchange Online mailbox is properly licensed, run the Get-Mailbox cmdlet as follows:
+For Exchange Online, individual "user" mailboxes and "mail user" mailboxes must be licensed. All others, such as shared mailboxes, are not required to have a license for Customer Key. To check that your Exchange Online mailbox is properly licensed, run the Get-Mailbox cmdlet as follows:
   
 ```powershell
 (Get-Mailbox <alias>).PersistedCapabilities
