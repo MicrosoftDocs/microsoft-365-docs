@@ -102,7 +102,7 @@ Set the “application registries” table configurations to default:
 
 ### How to validate the OAuth entity created for Microsoft 365 Security & Compliance connector
 
-Go to application registries table (Menu > System OAuth > Application Registry) in ServiceNow and find the OAuth entity created by you (name that you assigned it).
+Go to application registries table (**Menu > System OAuth > Application Registry**) in ServiceNow and find the OAuth entity created by you, with the name that you assigned it.
 
 ### Logging in as the integration user
 
@@ -116,13 +116,13 @@ Before you authorize the connection between Microsoft 365 security center and Se
 
 ### How to validate the Integration User created with the installation checklist for Microsoft 365 Security & Compliance connector
 
-Go to Users Table (Menu > User Administration > Users) in ServiceNow and find the Integration user created by you (name that you assigned it).
+Go to Users Table **(Menu > User Administration > Users**) in ServiceNow and find the Integration user created by you, with the name that you assigned it.
 
 ### Your company has single sign-on enabled which prevents you from connecting to ServiceNow through the Microsoft 365 security center
 
 If your company has enabled single sign-on and you receive an error or login is unsuccessful, follow one of the two solutions.
 
-#### Logging into ServiceNow as the integration user
+#### Log into ServiceNow as the integration user
 
 1. Navigate back to the authorization page in ServiceNow.
 2. Select the **Not You** link in the upper right-hand corner.
@@ -137,4 +137,5 @@ If your company has enabled single sign-on and you receive an error or login is 
 
 ### Installation is complete but don't see tickets and can't share
 
-If the installation and setup steps have been completed, but you don't see the ServiceNow cards on the home page and can't share to ServiceNow from Microsoft Secure Score, check the status of the provisioning page at https://security.microsoft.com/ticketProvisioning. Select **Save** and return to the home page. The cards should appear.
+If the installation and setup steps have been completed, but you don't see the ServiceNow cards on the home page and can't share to ServiceNow from Microsoft Secure Score, check the status of the provisioning page at https://security.microsoft.com/ticketProvisioning. Select **Authorize** and return to the home page. The cards should appear.
+
