@@ -24,6 +24,8 @@ You can set up a data connector in the Microsoft 365 compliance center to import
 
 - You'll need to determine how to retrieve or export the data from your organization's HR system (on a regular basis) and add the CSV file that's described in Step 2. The script that you run in Step 4 will upload the HR data in the CSV file to the Microsoft cloud.
 
+- The sample script that you run in Step 4 will upload HR data to the Microsoft cloud so that it can be used by other Microsoft tools, such as the insider risk management solution. This sample script isn't supported under any Microsoft standard support program or service. The sample script is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample script and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
+
 ## Step 1: Create an app in Azure Active Directory
 
 The first step is to create and register a new app in Azure Active Directory (AAD). The app will correspond to the HR connector that you create in Step 3.  Creating this app will allow AAD to authenticate the HR connector when it runs and attempts to access your organization. This app will also be used to authenticate the script that you run in Step 4 to upload your HR data to the Microsoft cloud. During the creation of this AAD app, be sure to save the following information. These values will be used in later steps is this process.
@@ -95,21 +97,23 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
    You can also click **Edit** to change the Azure App ID or the column header names that you defined on the **File mapping** page.
 
-## Step 4: Run the script to upload your HR data
+## Step 4: Run the sample script to upload your HR data
 
-The last step in setting up an HR connector is to run a script that will upload the HR data in the CSV file (that you created in Step 2) to the Microsoft cloud. After you run the script, the HR connector that you created in Step 3 can access and import the data to your Microsoft 365 organization where it can accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run automatically on a daily basis so that the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
+The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 2) to the Microsoft cloud. After you run the script, the HR connector that you created in Step 3 can access and import the data to your Microsoft 365 organization where it can accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
-1. Go to [this GitHub site](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1).
+1. Go to [this GitHub site](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) to access the sample script.
 
 2. Click the **Raw** button to display the script in text view
 
-3. Copy all the lines in the script and then save them to a Windows PowerShell script file by using a filename suffix of `.ps1`; for example, `HRConnector.ps1`.
+3. Copy all the lines in the sample script and then save them to a text file.
 
-4. Open a Command Prompt on your local computer.
+4. Modify the sample script for your organization, if necessary.
 
-5. Go to the directory where you saved the script.
+5. Save the text file as a Windows PowerShell script file by using a filename suffix of `.ps1`; for example, `HRConnector.ps1`.
 
-6. Run the following command to upload the HR data in the CSV file to the Microsoft cloud; for example:
+6. Open a Command Prompt on your local computer, and go to the directory where you saved the script.
+
+7. Run the following command to upload the HR data in the CSV file to the Microsoft cloud; for example:
 
     ```powershell
     .\HRConnector.ps1 -tenantId <tenantId> -appId <appId>  -appSecret <appSecret>  -jobId <jobId>  -csvFilePath '<csvFilePath>'
