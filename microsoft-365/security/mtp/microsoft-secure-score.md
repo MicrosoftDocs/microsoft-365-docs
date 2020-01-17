@@ -165,6 +165,7 @@ To ensure that the Microsoft Secure Score is meaningful and that every improveme
 - Turn on audit data recording
 - Discover risky and non-compliant shadow IT applications
 - Review permissions & block risky OAuth applications connected to your environment
+- Set up versioning on SharePoint online document libraries
 
 ### MFA improvement action updates
 
