@@ -173,7 +173,7 @@ While priority matters for sensitivity label policies, it does **not** matter fo
 
 ## How to get started with sensitivity labels
 
-Getting started with sensitivity labels is a quick process:
+Get started with sensitivity labels by following this process:
 
 1. **Define the labels.** First, you want to establish your taxonomy for defining different sensitivity levels of content. Use common names or terms that make sense to your users. For example, you can start with labels such as Personal, Public, General, Confidential, and Highly Confidential. You can use sublabels to group similar labels by category. Also, when you create a label, a tool tip is required, which appears in the Office apps when a user hovers over a label option on the Ribbon.
 
@@ -184,6 +184,8 @@ Getting started with sensitivity labels is a quick process:
 Here’s the basic flow of what the admin, user, and Office app do to make sensitivity labels work.
 
 ![Diagram showing workflow for sensitivity labels](media/Sensitivity-label-flow.png)
+
+For procedural information, see [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md).
 
 ## Where sensitivity labels can appear
 
