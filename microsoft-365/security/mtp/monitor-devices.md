@@ -24,7 +24,7 @@ Get up-to-date alerts about breach activity and other threats on your devices fr
 
 ### Monitor high-impact alerts
 
-Each Microsoft Defender ATP alert has a corresponding severity�high, medium, low, or informational�that indicates its potential impact to your network if left unattended.  
+Each Microsoft Defender ATP alert has a corresponding severity (high, medium, low, or informational) that indicates its potential impact to your network if left unattended.  
 
 Use the **Device alert severity** card to focus specifically on alerts that are more severe and might require immediate response. From this card, you can view more information on the Microsoft Defender Security Center portal.
 
@@ -42,9 +42,9 @@ From this card, you can view more information on the Microsoft Defender Security
 
 ### Understand the types of threats that trigger alerts
 
-Microsoft Defender ATP sorts each alert into a category representing a certain stage in the attack chain or a type of threat component. For example, detected threat activity might be categorized into �lateral movement� to indicate that the activity involved an attempt to reach other devices on the network and has likely occurred after attackers have gained an initial foothold. When detected, a threat component might either be classified broadly as �malware� or more specifically as �ransomware�, �credential stealing� or other types of malicious or unwanted software.
+Microsoft Defender ATP sorts each alert into a category representing a certain stage in the attack chain or a type of threat component. For example, a detected threat activity might be categorized as "lateral movement" to indicate that there was an attempt to reach other devices on the network. The activity has also likely occurred after attackers gained an initial foothold. When detected, a threat component might either be classified broadly as malware, or more specifically as ransomware, credential stealing, or other types of malicious or unwanted software.
 
-The **Device threat categories** card shows the distribution of alerts into these categories. You can use this information to identify threat activity, such as attempts at credential theft, which can have more significant impact compared to attempts at social engineering, for example. You can also use this to monitor for potentially destructive threats like ransomware.
+The **Device threat categories** card shows the distribution of alerts into these categories. You can use this information to identify threat activity, such as credential theft attempts, that can have higher impact compared to social engineering attempts. You can also use this information to monitor for potentially destructive threats like ransomware.
 
 ![Device threat categories card](../images/device-threat-categories.png)
 
@@ -71,14 +71,14 @@ Note: In some cases, classification information is unavailable for certain alert
 
 In addition to classifying whether an alert is true or false during resolution, your security staff can provide a determination, indicating the type of normal or malicious activity that was found while validating the alert.
 
-The **Device alert determination** card shows the determination provided for each alert, specifically:
+The **Device alert determination** card shows the determination provided for each alert.
 
-* **APT** � advanced persistent threat, indicating that the detected activity or threat component is part of a sophisticated breach designed to gain a foothold in the affected network  
-* **Malware** � malicious file or code
-* **Security personnel** � normal activity performed by security staff
-* **Security testing** � activity or components designed to simulate actual threats and expected to trigger security sensors and generate alerts
-* **Unwanted software** � apps and other software that are not considered malicious, but otherwise violate policy or acceptable use standards
-* **Others** � any other determination that does not fall under the provided types
+* **APT**: advanced persistent threat, indicating that the detected activity or threat component is part of a sophisticated breach designed to gain a foothold in the affected network  
+* **Malware**: malicious file or code
+* **Security personnel**: normal activity performed by security staff
+* **Security testing**: activity or components designed to simulate actual threats and expected to trigger security sensors and generate alerts
+* **Unwanted software**: apps and other software that are not considered malicious, but otherwise violate policy or acceptable use standards
+* **Others**: any other determination that does not fall under the provided types
 
 From this card, you can view more information in Microsoft Defender Security Center.
 
@@ -111,31 +111,31 @@ Intune enrolled device data includes:
 
 ### Discover devices with malware detections
 
-**Device malware detections** provides the number of Intune enrolled devices with malware that have not been fully resolved due to pending actions�a restart, a full scan or manual user actions�or if the remediation action did not complete successfully.
+**Device malware detections** provide the number of Intune enrolled devices with malware that have not been fully resolved. This can be due to pending actions, a restart, a full scan, manual user actions, or if the remediation action did not complete successfully.
 
 ![Device malware detections card](../images/device-malware-detections.png)
 
 ### Understand the types of malware detected
 
-**Types of malware on devices** shows different kinds of malware that have been detected on devices enrolled in Intune. You can investigate each type in the Microsoft 365 security center.
+**Types of malware on devices** show different kinds of malware that have been detected on devices enrolled in Intune. You can investigate each type in the Microsoft 365 security center.
 
 ![Types of malware on devices card](../images/types-of-malware-on-devices.png)
 
 ### Understand the specific malware detected on your devices
 
-**Malware on devices** provides a list of the specific malware detected on your devices.
+**Malware on devices** provide a list of the specific malware detected on your devices.
 
 ![Malware on devices card](../images/malware-on-devices.png)
 
 ### Understand which devices have the most malware
 
-**Devices with malware detections** shows which devices have the most malware detections. in the Microsoft 365 security center, you can investigate whether malware is active, who uses the device, and its management status in Intune.
+**Devices with malware detections** show which devices have the most malware detections. in the Microsoft 365 security center, you can investigate whether malware is active, who uses the device, and its management status in Intune.
 
 ![Devices with malware detections card](../images/devices-with-malware-detections.png)
 
 ### Understand which users have devices with the most malware
 
-**Users with malware detections** shows users with devices that had the most malware detections. in the Microsoft 365 security center, you can see how many devices are assigned to each user and more information about each device and the type of malware.
+**Users with malware detections** show users with devices that had the most malware detections. In the Microsoft 365 security center, you can see how many devices are assigned to each user and more information about each device and the type of malware.
 
 ![Users with malware detection card](../images/users-with-malware-detections.png)
 
@@ -149,9 +149,9 @@ The **Attack surface reduction rules** card provides an overview of the deployme
 
 The top bar on the card shows the total number of devices that are in the following deployment modes:
 
-* **Block mode** � devices with at least one rule configured to block detected activity
-* **Audit mode** � devices with no rules set to block detected activity, but has at least one rule set to audit detected activity  
-* **Off** � devices with all ASR rules turned off
+* **Block mode**: devices with at least one rule configured to block detected activity
+* **Audit mode**: devices with no rules set to block detected activity, but has at least one rule set to audit detected activity  
+* **Off**: devices with all ASR rules turned off
 
 The lower part of this card shows settings by rule across your devices. Each bar indicates the number of devices that are set to block or audit detection or have the rule completely turned off.
 
@@ -163,10 +163,10 @@ To view detailed information about ASR rule detections in your network, select *
 
 The chart at the top of the page shows detections over time stacking detections that were either blocked or audited. The table at the bottom lists the most recent detections. Use the following information on the table to understand the nature of the detections:
 
-* **Detected file** � the file, typically a script or a document, whose contents triggered the suspected attack activity
-* **Rule** � name describing the attack activities the rule is designed to catch. Read about existing ASR rules
-* **Source app** � the application that loaded or executed content triggering the suspected attack activity. This could be a legitimate application, such as web browser, an Office application, or a system tool like PowerShell
-* **Publisher** � the vendor that released the source app
+* **Detected file**: the file, typically a script or a document, whose contents triggered the suspected attack activity
+* **Rule**: name describing the attack activities the rule is designed to catch. Read about existing ASR rules
+* **Source app**: the application that loaded or executed content triggering the suspected attack activity. This could be a legitimate application, such as web browser, an Office application, or a system tool like PowerShell
+* **Publisher**: the vendor that released the source app
 
 ### Review device ASR rule settings
 
@@ -207,6 +207,7 @@ MiscEvents
 ```
 
 #### Check files for exclusion
+
 Before excluding a file from ASR, we recommend that you inspect the file to determine if it is indeed not malicious.
 
 To review a file, use the [file information page](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-files) on Microsoft Defender Security Center. The page provides prevalence information as well as the VirusTotal antivirus detection ratio. You can also use the page to submit the file for deep analysis.

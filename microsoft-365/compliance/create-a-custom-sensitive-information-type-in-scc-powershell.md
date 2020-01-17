@@ -349,6 +349,8 @@ Note that in the Security &amp; Compliance Center, you use the **[New-DlpSensiti
   
 ## Upload your rule package
 
+
+
 To upload your rule package, do the following steps:
   
 1. Save it as an .xml file with Unicode encoding.
@@ -358,18 +360,21 @@ To upload your rule package, do the following steps:
 3. Use the following syntax:
 
 ```powershell
-New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte)
+New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte) -ReadCount 0
 ```
 
     This example uploads the Unicode XML file named MyNewRulePack.xml from C:\My Documents.
 
 ```powershell
-New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte)
+New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte) -ReadCount 0
 ```
 
     For detailed syntax and parameter information, see [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpsensitiveinformationtyperulepackage).
 
-5. To verify that you've successfully created a new sensitive information type, do any of the following steps:
+> [!NOTE]
+> The limit for custom sensitive information type collections is 10.
+
+4. To verify that you've successfully created a new sensitive information type, do any of the following steps:
 
   - Run the [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet to verify the new rule package is listed:
 
