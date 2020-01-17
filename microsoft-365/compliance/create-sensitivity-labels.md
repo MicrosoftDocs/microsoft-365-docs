@@ -50,7 +50,7 @@ Use the the *LocaleSettings* parameter for multinational deployments that need t
 ```powershell
 $Languages = @("fr-FR","it-IT","de-DE")
 $DisplayNames=@("Publique","Publico","Oeffentlich")
-$Tooltips = @("texte francais","testo italiano","text deutsch")
+$Tooltips = @("Texte Francais","Testo Italiano","Text Dutsch")
 $label = "Public"
 $DisplayNameLocaleSettings = [PSCustomObject]@{LocaleKey='DisplayName';
 Settings=@(
@@ -63,7 +63,7 @@ Settings=@(
 @{key=$Languages[0];Value=$Tooltips[0];}
 @{key=$Languages[1];Value=$Tooltips[1];}
 @{key=$Languages[2];Value=$Tooltips[2];})}
-et-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSettings  -Depth 10 -Compress) 
+et-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSettings  -Depth 10 -Compress)
 ```
 
 Using this cmdlet, you can also specify [advanced settings](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) for the Azure Information Protection unified labeling client. These advanced settings include setting a label color, and applying a custom property when a label is applied. For the full list, see [Available advanced settings for label policies](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies). 
