@@ -26,9 +26,7 @@ To add or remove column headings for the content queue, use the **Edit columns**
 |:------------------|:----------------|
 | **Author** | The author field from Office documents, which persists if a document is copied. For example, if a user creates a document and the emails it to someone else who then uploads it to SharePoint, the document will still retain the original author. |
 | **Bcc** | Available for email messages, the users in the Bcc message field. |
-| **Caption** | DETAILS NEEDED |
 | **Cc** | Available for email messages, the users in the Cc message field. |
-| **Comments** | DETAILS NEEDED |
 | **Compound path** | Human readable path that describes the source of the item. |
 | **Conversation ID** | Conversation Id from the message. |
 | **Conversation index** | Conversation index from the message. |
@@ -40,11 +38,10 @@ To add or remove column headings for the content queue, use the **Edit columns**
 | **File class** | For content from SharePoint and OneDrive: **Document**; for content from Exchange: **Email or **Attachment**. |
 | **File ID** | Document identifier unique within the case. |
 | **File type icon** | The extension of a file; for example, docx, one, pptx, or xlsx. This is the same property as the FileExtension site property. |
-| **ID** | DETAILS NEEDED |
+| **ID** | The GUID identifier for the file. |
 | **Immutable ID** | Immutable Id as stored in Office 365. |
 | **Inclusive type** | Inclusive type calculated for analytics: **0** - not inclusive; **1** - inclusive; **2** - inclusive minus; **3** - inclusive copy. |
 | **Last modified** | The date that a document was last changed. |
-| **Marked as pivot** | DETAILS NEEDED |
 | **Marked as representative** | One document from each set of exact duplicates is marked as representatives. |
 | **Message kind** | The type of email message to search for. Possible values: contacts, docs, email, external data, faxes, im, journals, meetings, microsoft teams (returns items from chats, meetings, and calls in Microsoft Teams), notes, posts, rssfeeds, tasks, voicemail |
 | **Participants** | List of all participants of a message; for example, Sender, To, Cc, Bcc. |
@@ -56,7 +53,6 @@ To add or remove column headings for the content queue, use the **Edit columns**
 | **Sender/Author** | For email, the person who sent a message. For documents, the person cited in the author field from Office documents. You can type more than one name, separated by commas. Two or more values are logically connected by the OR operator. |
 | **Sent** | The date that an email message was sent by the sender. This is the same property as the Sent email property. |
 | **Size** | For both email and documents, the size of the item (in bytes). |
-| **Source** | DETAILS NEEDED |
 | **Subject** | The text in the subject line of an email message. |
 | **Subject/Title** | For email, the text in the subject line of a message. For documents, the title of the document. As previously explained, the Title property is metadata specified in Microsoft Office documents. You can type the name of more than one subject/title, separated by commas. Two or more values are logically connected by the OR operator. |
 | **Themes list** | Themes list as calculated for analytics. |
@@ -76,20 +72,18 @@ For advanced filter and search tools, expand the **Filter** pane on the left sid
 | **After** |`property>date`| Used with date conditions. Returns items that were sent, received, or modified after the specified date.|
 | **Before** |`property<date`| Used with date conditions. Returns items that were sent, received, or modified before the specified date.|
 | **Between** |`date..date`| Use with date and size conditions. When used with a date condition, returns items there were sent, received, or modified within the specified date range. When used with a size condition, returns items whose size is within the specified range.|
-| **Contains all of** |`(property:value) OR (property:value)`|  |
+| **Contains all of** |`(property:value) OR (property:value)`| Used with conditions for properties that specify a string value. Returns items that contain all of one or more specified string values. |
 | **Contains any of** |`(property:value) OR (property:value)`| Used with conditions for properties that specify a string value. Returns items that contain any part of one or more specified string values.|
 | **Contains none of** |`-property:value`  <br/> `NOT property:value`| Used with conditions for properties that specify a string value. Returns items that don't contain any part of the specified string value.|
 | **Doesn't equal any of** |`-property=value`  <br/> `NOT property=value`| Used with conditions for properties that specify a string value. Returns items that don't contain the specific string.|
-| **End at** | DETAILS NEEDED |
 | **Equals** |`size=value`| Returns items that are equal to the specified size.<sup>1</sup>|
 | **Equals any of** |`(property=value) OR (property=value)`| Used with conditions for properties that specify a string value. Returns items that are an exact match of one or more specified string values.|
-| **Equals none of** |`(property=value) OR (property=value)`|  |
+| **Equals none of** |`(property=value) OR (property=value)`| Used with conditions for properties that specify a string value. Returns items that do not match one or more specified string values. |
 | **Greater than** |`size>value`| Returns items where the specified property is greater than the specified value.<sup>1</sup>|
 | **Greater or equal** |`size>=value`| Returns items where the specified property is greater than or equal to the specified value.<sup>1</sup>|
 | **Less than** |`size<value`| Returns items that are greater than or equal to the specific value.<sup>1</sup>|
 | **Less or equal** |`size<=value`| Returns items that are greater than or equal to the specific value.<sup>1</sup>|
 | **Not equal** |`size<>value`| Returns items that don't equal the specified size.<sup>1</sup>|
-| **Start from** |  |
 
 > [!NOTE]
 > <sup>1</sup> This operator is available only for conditions that use the Size property.
@@ -111,7 +105,6 @@ The following table lists email message property conditions available the conten
 |:---------------------|:----------------|
 | **Bcc** | The Bcc field of an email message. |
 | **Cc** | The Cc field of an email message. |
-| **Email Internet headers** |  |
 | **Email security** | Email Security | Security setting of the message. |
 | **Email sensitivity** | Sensitivity setting of the message. |
 | **Email set ID** | Group ID for all messages in the same email set. |  |
@@ -137,30 +130,24 @@ The following table lists documents property conditions available the content ex
 
 | **Condition option** | **Description** |
 |:---------------------|:----------------|
-| **Annotations** | DETAILS NEEDED |
 | **Attorney-client privilege score** | Attorney-client privilege model content score. |
 | **Author** | The author field from Office documents, which persists if a document is copied. For example, if a user creates a document and the emails it to someone else who then uploads it to SharePoint, the document will still retain the original author. |
-| **Comments** | DETAILS NEEDED |
 | **Compliance labels** | Compliance labels applied in Office 365. |
 | **Compound path** | Human readable path that describes the source of the item. |
 | **Conversation ID** | Conversation Id from the message. |
 | **Created time** | The time the file or email message was created. |
 | **Custodian** | Name of the custodian the item was associated with. |
-| **Data source** | DETAILS NEEDED |
 | **Dominant theme** | Dominant theme as calculated for analytics. |
 | **Family ID** | Family Id groups together all items; for email, this includes the message and all attachments; for documents, this includes the document and any embedded items. |
 | **File class** | For content from SharePoint and OneDrive: **Document**; for content from Exchange: **Email or **Attachment**. |
 | **File types** | The extension of a file; for example, docx, one, pptx, or xlsx. |
 | **Has attorney participant** | True when at least one of the participants is found in the attorney list; otherwise, the value is False. |
-| **Ignored processing errors** | DETAILS NEEDED |
 | **Immutable ID** | Immutable Id as stored in Office 365. |
 | **Inclusive type** | Inclusive type calculated for analytics: **0** - not inclusive; **1** - inclusive; **2** - inclusive minus; **3** - inclusive copy. |
 | **Item class** | Item class supplied by exchange server; for example, **IPM.Note** |
-| **Keywords** | DETAILS NEEDED |
 | **Last modified** | The date that a document was last changed. |
 | **Load ID** | Load Id, in which the item was loaded into a review set. |
 | **Location name** | String that identifies the source of the item.  For exchange, this will be the SMTP address of the mailbox. For SharePoint and OneDrive, the URL to the site collection. |
-| **Marked as pivot** | DETAILS NEEDED |
 | **Marked as representative** | One document from each set of exact duplicates is marked as representatives. |
 | **Native file extension** | Native extension of the item. |
 | **Native file name** | Native file name of the item. |
@@ -172,14 +159,8 @@ The following table lists documents property conditions available the content ex
 | **Relevance score** | Relevance score of a document based on Relevance. |
 | **Relevance tag** | Relevance score of a document based on Relevance. |
 | **Representative ID** | Numeric identifier of each set of exact duplicates. |
-| **Source** | DETAILS NEEDED |
 | **Tags** | Tags applied in a review set. |
 | **Themes list** | Themes list as calculated for analytics. |
 | **Title** | The title of the document. The Title property is metadata that's specified in Office documents. It's different than the file name of the document. |
 | **Was remediated** | True if the item was remediated, otherwise False. |
 | **Word count** | The number of words in a file. |
-| **Work product** | DETAILS NEEDED |
-
-## Guidelines for using conditions
-
-TBD - OUTLINE OF CONFIGURING CONDITIONS WITH EXAMPLE

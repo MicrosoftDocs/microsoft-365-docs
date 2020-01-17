@@ -23,7 +23,7 @@ Use insider risk management policies to identify risky activities and management
 
 Before you get started with insider risk management, you should confirm your Microsoft 365 subscription. Users included in insider risk management policies must have a Microsoft 365 E5 Compliance license or be included in a Microsoft 365 E5 subscription.
 
-If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try Insider risk management, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
+If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
 
 Complete these steps to set up and use insider risk management in your Microsoft 365 organization:
 
@@ -38,7 +38,7 @@ There are four permission roles used to configure and manage insider risk manage
 | **Insider Risk Management Investigators** | Access to all insider risk management alerts, cases, notices, and the Content Explorer for all cases |
 | **Insider Risk Management Viewer** | View-only access to all insider risk management alerts, cases, notices, and the Content Explorer for all cases |
 
-Depending on the structure of your compliance management team, you have two permission options to configure roles to manage insider risk management features. You must choose one of these role management options when configuring insider risk management:
+Depending on the structure of your compliance management team, you have two permission options to configure roles to manage insider risk management features. Choose one of these role management options when configuring insider risk management:
 
 1. **Use the default Insider Risk Management role group**: Use this role group to manage insider risk management for your organization by adding all user accounts for designated administrators, analysts, and investigators in a single group. This role group contains all the insider risk management permission roles. This is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users.
 2. **Create different groups for different management roles**: For organizations that need to separate permissions for configuring and managing insider risk management, you'll need to create new role groups and assign appropriate roles and users to the new groups. For example, if you want different permissions for insider risk management analysis and investigations, you'll need to create a group for analysts and a separate group for investigators. For each group, you'll assign the required roles for these responsibilities and then add the users that should be assigned to the group.
@@ -81,7 +81,7 @@ If you need to create separate role groups for different management roles, compl
 
 4. In the **Name** field, give the new role group a friendly name. Select **Next**.
 
-5. Select **Choose roles** and then select **Add**. Select the checkbox for the roles you need to assign. For example, if this is a group for insider risk analysts, select the *Insider Risk Management Analysts* role and the *Case Management* role, then select **Add** and **Done**. Select **Next**.
+5. Select **Choose roles** and then select **Add**. Select the checkbox for the roles you need to assign. For example, if this group is for insider risk analysts, select the *Insider Risk Management Analysts* role and the *Case Management* role, then select **Add** and **Done**. Select **Next**.
 
 6. Select **Choose members** and then select **Add**. Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**. Select **Next**.
 
@@ -93,14 +93,14 @@ For more information about role groups and permissions, see [Permissions in the 
 
 Insider risk management supports importing user and log data imported from 3rd-party risk management and human resources platforms. The Microsoft 365 Human Resources (HR) data connector allows you to pull in human resources data from CSV files, including user termination and last employment dates. This data helps drive the alert indicators in insider risk management policies and is an important part of configuring full risk management coverage in your organization.
 
-See the [Import data with the HR Connector](import-hr-data.md) topic for step-by-step guidance to configure the Microsoft 365 HR Connector for your organization. After you've configured the HR Connector, return to these configuration steps.
+See the [Set up a connector to import HR data](import-hr-data.md) topic for step-by-step guidance to configure the Microsoft 365 HR Connector for your organization. After you've configured the HR Connector, return to these configuration steps.
 
 >[!IMPORTANT]
 >If you plan on configuring a policy using the *Departing employee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template. If you configure more than one HR Connector for your organization, insider risk management will automatically pull indicators from all HR Connectors.
 
 ## Step 3 (optional): Configure Data Loss Prevention (DLP) policies
 
-Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties. When configuring a insider risk management policy with the *Data leaks* template, you have to assign a specific DLP policy to the policy. This helps drive the alert indicators for sensitive information is an important part of configuring full risk management coverage in your organization.
+Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties. When configuring an insider risk management policy with the *Data leaks* template, you have to assign a specific DLP policy to the policy. This policy helps drive the alert indicators for sensitive information is an important part of configuring full risk management coverage in your organization.
 
 See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) topic for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
 
@@ -109,7 +109,7 @@ See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) to
 
 ## Step 4 (required): Create an insider risk management policy
 
-Insider risk management policies includes assigned users and defines which types of risk indicators are configured for alerts. Before activities can trigger alerts, a policy must be configured.
+Insider risk management policies include assigned users and define which types of risk indicators are configured for alerts. Before activities can trigger alerts, a policy must be configured.
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. Select **Create policy** to open the policy wizard

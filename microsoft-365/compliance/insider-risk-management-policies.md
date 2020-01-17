@@ -23,8 +23,8 @@ The **Policy dashboard** allows you to quickly see the policies in your organiza
 - **Policy name**: The name assigned to the policy in the policy wizard.
 - **Active alerts**: The number of active alerts for each policy.
 - **Confirmed alerts**: The total number of alerts the resulted in cases from the policy in the last 365 days.
-- **Actions taken on alerts**: The total number of alert that were confirmed or dismissed for the last 365 days.
-- **Policy effectiveness**: The 
+- **Actions taken on alerts**: The total number of alerts that were confirmed or dismissed for the last 365 days.
+- **Policy effectiveness**: The percentage determined by total confirmed alerts divided by total actions taken on alerts (which is the sum of alerts that were confirmed or dismissed over the past year).
 - **Active**: The status of the case, either *Yes* or *No*.
 
 ![Insider risk management policy dashboard](media/insider-risk-policy-dashboard.png)
@@ -47,14 +47,12 @@ Insider risk management templates are pre-defined policy conditions that define 
 
 ## Monitoring windows
 
-Policy monitoring windows allow you define time periods that trigger policy activation based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following monitoring windows are available:
+Policy monitoring windows allow you to define time periods that trigger policy activation based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following monitoring windows are available:
 
 - **In-scope timespan**: Available for all policy templates, the *In-scope timespan* is the defined number of days that the window activates **after** a triggering event. The window activates for 1 to 30 days after a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *In-scope timespan* to 30 days. Several months have passed since you configured the policy and a triggering event occurs for one of the users included in the policy. The triggering event activates the *In-scope timespan* and the policy is active for that user for 30 days after the triggering event occurred.
 - **Historic timespan**: Available for all policy templates, the *historic timespan* is the defined number of days that the window activates **before** a triggering event. The window activates for 0 to 180 days before a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Historic timespan* to 90 days. Several months have passed since you configured the policy and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Historic timespan* and the policy gathers historic activities for that user for 90 days prior to the triggering event.
 - **Future termination window**: You'll see this setting in the pubic preview, but it isn’t applied to any policies and will be removed for the production release of this solution.
 - **Past termination window**: You'll see this setting in the pubic preview, but it isn’t applied to any policies and will be removed for the production release of this solution.
-
-You'll see this setting in the pubic preview, but it isn’t applied to any policies and will be removed for the production release of this solution.
 
 ## Create a new policy
 

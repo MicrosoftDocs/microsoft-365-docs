@@ -55,7 +55,7 @@ Identifying and resolving internal risk activities and compliance issues with in
 
 Insider risk management policies are created using pre-defined templates and policy conditions that define what risk indicators are examined in Microsoft 365 feature areas. These conditions include how indicators are used for alerts, what users are included in the policy, which services are prioritized, and the monitoring time period.
 
-You can select from the following policy templates to quickly get started with insider risk management:
+You can select from the following [policy templates](insider-risk-management-policies.md#policy-templates) to quickly get started with insider risk management:
 
 - Departing employee data theft
 - Data leaks
@@ -113,11 +113,11 @@ Insider risk management can help you detect, investigate, and take action to mit
 
 ### Data theft by departing employee
 
-When employees leave an organization, either voluntarily or as the result of termination, there is often legitimate concerns that company, customer, and employee data is at risk. Employees may innocently assume that project data isn't proprietary or they may be tempted to take company data for personal gain and in violation of company policy and legal standards. Insider risk management policies that use the [Departing employee data theft](insider-risk-management-policies.md#policy-templates) policy template automatically detect activities typically associated with this type of theft. With this policy, you'll automatically receive alerts for suspicious activities associated with departing employees theft so you can take appropriate investigative actions. Configuring a Microsoft 365 HR Connector for your organization is required for this policy template.
+When employees leave an organization, either voluntarily or as the result of termination, there is often legitimate concerns that company, customer, and employee data are at risk. Employees may innocently assume that project data isn't proprietary or they may be tempted to take company data for personal gain and in violation of company policy and legal standards. Insider risk management policies that use the [Departing employee data theft](insider-risk-management-policies.md#policy-templates) policy template automatically detect activities typically associated with this type of theft. With this policy, you'll automatically receive alerts for suspicious activities associated with departing employees theft so you can take appropriate investigative actions. Configuring a [Microsoft 365 HR Connector](import-hr-data.md) for your organization is required for this policy template.
 
 ### Intentional or unintentional leak of sensitive or confidential information
 
-In most cases, employees try their best to properly handle sensitive or confidential information. But occasionally employees make mistakes and information is accidentally shared outside your organization or in violation of your information protection policies. Sometimes employees may intentionally leak or share sensitive and confidential information with malicious intent and for potential personal gain. Insider risk management policies created using the [Data leaks](insider-risk-management-policies.md#policy-templates) policy template automatically detect activities typically associated with sharing sensitive or confidential information.
+In most cases, employees try their best to properly handle sensitive or confidential information. But occasionally employees make mistakes and information is accidentally shared outside your organization or in violation of your information protection policies. Sometimes employees may intentionally leak or share sensitive and confidential information with malicious intent and for potential personal gain. Insider risk management policies created using the [Data leaks](insider-risk-management-policies.md#policy-templates) policy template automatically detect activities typically associated with sharing sensitive or confidential information. Configuring at least one Microsoft 365 [Data Loss Protection (DLP) policy](create-test-tune-dlp-policy.md) for your organization is required for this policy template.
 
 ### Actions and behaviors that violate corporate policies
 
