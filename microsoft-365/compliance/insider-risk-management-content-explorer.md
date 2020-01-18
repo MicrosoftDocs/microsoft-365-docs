@@ -105,9 +105,9 @@ The following table lists email message property conditions available the conten
 |:---------------------|:----------------|
 | **Bcc** | The Bcc field of an email message. |
 | **Cc** | The Cc field of an email message. |
-| **Email security** | Email Security | Security setting of the message. |
+| **Email security** | Security setting of the message. |
 | **Email sensitivity** | Sensitivity setting of the message. |
-| **Email set ID** | Group ID for all messages in the same email set. |  |
+| **Email set ID** | Group ID for all messages in the same email set. |
 | **From** | The sender of an email message. |
 | **Has attachment** | Indicates whether a message has an attachment. Use the values **true** or **false**. |
 | **Importance** | The importance of an email message, which a sender can specify when sending a message. By default, messages are sent with normal importance, unless the sender sets the importance as **high** or **low**. |
