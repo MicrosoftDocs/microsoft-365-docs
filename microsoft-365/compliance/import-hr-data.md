@@ -85,7 +85,7 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
    A status page is displayed that confirms the connector was created. This page also contains the job ID. You'll need this job ID to run the script in the next step. You can copy it from this page or from the flyout page for the connector.
 
-7. Click **Done**. 
+7. Click **Done**.
    
    The new connector is displayed in the list on the **Connectors** tab. 
 
@@ -93,7 +93,7 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
    ![Flyout page for new HR connector](media/HRConnectorWizard7.png)
 
-   If you haven't already done so, you can copy the values for the **Azure App ID** and **Connector job ID**. You'll need these to run the script in the next step. You can also download the script from the flyout page (or download it using the link in the next step.) 
+   If you haven't already done so, you can copy the values for the **Azure App ID** and **Connector job ID**. You'll need these to run the script in the next step. You can also download the script from the flyout page (or download it using the link in the next step.)
 
    You can also click **Edit** to change the Azure App ID or the column header names that you defined on the **File mapping** page.
 
@@ -172,7 +172,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 5. Under **Security options**, do the following:
 
-   a. Determine whether to run the script only when you're logged on to the computer or run it when your logged on or not.
+   a. Determine whether to run the script only when you're logged on to the computer or run it when you're logged on or not.
    
    b. Make sure that the **Run with the highest privileges** checkbox is selected.
 
