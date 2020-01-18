@@ -48,7 +48,7 @@ From here, you'll see cards for the following solutions:
 
 The **Insider risk management** section on the home page shows you at a glance how your organization can identify, analyze, and take action on internal risks before they cause harm.
 
-![Microsoft 365 solution catalog insider risk management section](media/m365-solution-catalog-internal-risk-management.png)
+![Microsoft 365 solution catalog insider risk management section](media/m365-solution-catalog-insider-risk-management.png)
 
 From here, you'll see cards for the following solutions:
 
