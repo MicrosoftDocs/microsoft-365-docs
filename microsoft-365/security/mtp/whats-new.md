@@ -29,5 +29,5 @@ The following features are generally available (GA) in the latest release of Mic
 ## March 2019
 
 - [Advanced hunting](hunting.md) <br> Proactively find threats in your organization affecting email and data, devices, and identities.
-- [Microsoft Secure Score](microsoft-secure-score.md) <br> Measurement of an organization’s security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. 
+- [Microsoft Secure Score](microsoft-secure-score.md) <br> Measurement of an organization's security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. 
 - [Reports](monitoring-and-reporting.md) <br>  Features a host of cards covering a variety of areas that security analysts and administrators track as part of their day-to-day operations.
