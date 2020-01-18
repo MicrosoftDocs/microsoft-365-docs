@@ -26,7 +26,7 @@ The Microsoft Junk Email Reporting Add-in for Microsoft Office Outlook offers se
 
 - From within an opened email message
 
-The Junk Email Reporting Add-in helps you submit reports to the Microsoft Exchange Online Protection (EOP) service. If your mailbox is not protected by the service, your junk email report submission will not affect your spam filters. Administrators can learn about more spam settings that apply to a whole organization at [How to prevent good email from being marked as spam in Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) or [How to reduce spam email in Office 365](reduce-spam-email.md). These are helpful if you have administrator-level control and you want to prevent false positives or false negatives.
+The Junk Email Reporting Add-in helps you submit reports to the Microsoft Exchange Online Protection (EOP) service. If your mailbox is not protected by the service, your junk email report submission will not affect your spam filters. Administrators can learn about more spam settings that apply to a whole organization at [How to prevent good email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam) or [How to reduce spam email in Office 365](reduce-spam-email.md). These are helpful if you have administrator-level control and you want to prevent false positives or false negatives.
 
 > [!TIP]
 > You can also submit spam messages directly to Microsoft by using the [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) email address, and false positive (non-spam) messages by using the [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com) email address. For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
@@ -69,6 +69,6 @@ The selected message will be sent to Microsoft for analysis and moved to the Jun
 
 [Troubleshooting and support information](troubleshooting-and-support-information.md)
 
-[How to prevent good email from being marked as spam in Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[How to prevent good email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam)
 
 [How to reduce spam email in Office 365](reduce-spam-email.md)
