@@ -60,7 +60,7 @@ Before you run the commands in PowerShell, you must first [connect to Office 365
 ```powershell
 $Languages = @("fr-FR","it-IT","de-DE")
 $DisplayNames=@("Publique","Publico","Oeffentlich")
-$Tooltips = @("Texte Francais","Testo Italiano","Text Dutsch")
+$Tooltips = @("Texte Francais","Testo Italiano","Deutscher Text")
 $label = "Public"
 $DisplayNameLocaleSettings = [PSCustomObject]@{LocaleKey='DisplayName';
 Settings=@(
