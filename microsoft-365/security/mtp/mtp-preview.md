@@ -24,7 +24,7 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Microsoft 365 Security is constantly being updated to include new feature enhancements and capabilities.
 
