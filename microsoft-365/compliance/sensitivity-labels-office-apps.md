@@ -136,11 +136,11 @@ When you label an email message that has attachments, the attachments don't inhe
 
 To use the Office built-in labeling client in Office on the web, the document must be located in a OneDrive for Business or SharePoint Online instance that has opted-in to the [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## When Office 365 applies marks and encryption to content
+## When Office 365 applies content marking and encryption to content
 
-Office 365 applies content marks or encryption with a sensitivity label differently depending on the application you use.
+Office 365 applies content marking and encryption with a sensitivity label differently, depending on the app you use.
 
-| Application | Content marking | Encryption |
+| App | Content marking | Encryption |
 | --- | --- | --- |
 | Word, Excel, PowerPoint on all platforms | Immediately | Immediately |
 | Outlook for PC and Mac | After Exchange Online sends the email | Immediately |
