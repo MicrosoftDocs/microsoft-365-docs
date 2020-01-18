@@ -27,11 +27,14 @@ First, create and configure the sensitivity labels that you want to make availab
 
 1. In your labeling admin center, navigate to sensitivity labels:
     
-    **Microsoft 365 compliance center**: **Solutions** > **Information protection (preview)**. If you don't immediately see this option, first select **Show all**. 
+    **Microsoft 365 compliance center**: 
+    - **Solutions** > **Information protection (preview)**. If you don't immediately see this option, first select **Show all**. 
     
-    **Microsoft 365 security center**: **Classification** > **Sensitivity labels**.
+    **Microsoft 365 security center**: 
+    - **Classification** > **Sensitivity labels**.
     
-    **Office 365 Security & Compliance Center**: **Classification** > **Sensitivity labels**.
+    **Office 365 Security & Compliance Center**:
+    - **Classification** > **Sensitivity labels**.
 
 2. On the **Labels** tab, select **+ Create a label** to start the **New sensitivity label** wizard.
 
