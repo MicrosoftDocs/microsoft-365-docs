@@ -63,7 +63,7 @@ To submit a junk or phishing scam message to Microsoft:
 
 If a message was incorrectly identified as junk, you can submit the "false positive" message to the Microsoft Spam Analysis Team. The analysts will evaluate and analyze the message. Depending on the results of the analysis, the service-wide spam content filter rules may be adjusted to allow the message through.
   
-Administrators can review more spam setting information that applies to a whole organization. See [How to help ensure that a message isn't marked as spam](../../compliance/prevent-email-from-being-marked-as-spam.md). This information is helpful if you have administrator-level control and you want to prevent false positives.
+Administrators can review more spam setting information that applies to a whole organization. See [How to help ensure that a message isn't marked as spam](prevent-email-from-being-marked-as-spam.md). This information is helpful if you have administrator-level control and you want to prevent false positives.
   
 You can submit non-spam messages in the following ways:
   
@@ -117,7 +117,7 @@ Spam evaluation is an ongoing process that applies regardless of the originating
 
 [Anti-spam and anti-malware protection](anti-spam-and-anti-malware-protection.md)
   
-[How to help ensure that a message isn't marked as spam](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[How to help ensure that a message isn't marked as spam](prevent-email-from-being-marked-as-spam.md)
   
 [Block email spam with the Office 365 spam filter to prevent false negative issues](reduce-spam-email.md)
   
