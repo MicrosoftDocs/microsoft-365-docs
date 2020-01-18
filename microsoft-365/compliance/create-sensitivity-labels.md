@@ -49,7 +49,7 @@ Use the *LocaleSettings* parameter for multinational deployments so that users s
 
 Using this cmdlet, you can also specify [advanced settings](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) for the Azure Information Protection unified labeling client. These advanced settings include setting a label color, and applying a custom property when a label is applied. For the full list, see [Available advanced settings for label policies](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies). 
 
-### Example configuration to configure a sensitivity label for different languages
+#### Example configuration to configure a sensitivity label for different languages
 
 The following example shows the PowerShell configuration for a label named "Public" with placeholder text for the tooltip. In this example, the label name and tooltip text is configured for French, Italian, and German. 
 
