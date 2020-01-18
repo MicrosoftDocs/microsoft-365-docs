@@ -3,7 +3,7 @@ title: "Manage Customer Key for Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 01/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "After you set up Customer Key, learn how to manage it by restoring AKV keys, managing permissions, and managing your data encryption policies."
+description: "After you set up Customer Key, learn how to manage it by restoring AKV keys, and managing permissions and your data encryption policies."
 ---
 
 # Manage Customer Key for Office 365
@@ -37,7 +37,7 @@ If the key vault already contains a key with the same name, the restore operatio
   
 ## Manage key vault permissions
 
-Several cmdlets are available that enable you to view and, if necessary, remove key vault permissions. You might need to remove permissions, for example, when an employee leaves the team. For each of these tasks, you will use Azure PowerShell. For information about Azure Powershell, see [Overview of Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/).
+Several cmdlets are available that enable you to view and, if necessary, remove key vault permissions. You might need to remove permissions, for example, when an employee leaves the team. For each of these tasks, you will use Azure PowerShell. For information about Azure Powershell, see [Overview of Azure PowerShell](https://docs.microsoft.com/powershell/azure/).
 
 To view key vault permissions, run the Get-AzKeyVault cmdlet.
 
@@ -69,14 +69,11 @@ Customer Key handles DEPs differently between the different Office 365 services.
 
 **Exchange Online and Skype for Business:** You can create up to 50 DEPs. For instructions, see [Create a data encryption policy (DEP) for use with Exchange Online and Skype for Business](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business).
 
-**SharePoint Online, OneDrive for Business, and Teams files** A DEP applies to data in one geographic location, also called a _geo_. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP. Normally, you create the DEP when you set up Customer Key. For instructions, see [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo).
+**SharePoint Online, OneDrive for Business, and Teams files:** A DEP applies to data in one geographic location, also called a _geo_. If you use the multi-geo feature of Office 365, you can create one DEP per geo. If you are not using multi-geo, you can create one DEP. Normally, you create the DEP when you set up Customer Key. For instructions, see [Create a data encryption policy (DEP) for each SharePoint Online and OneDrive for Business geo](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo).
 
-> [!WARNING]
-> Isn't it also one DEP for an entire forest for SPO? That means there might be multiple tenants on a DEP? I'm a tad confused now about WHO creates the DEP to be honest. JEFF MCDOWELL please enlighten me. ***For information about creating additional DEPs, refer to the setup instructions*** link
-  
 ### View the DEPs you've created for Exchange Online and Skype for Business
 
-To view a list of all the DEPs you've created for Exchange Online and Skype for Business using the Get-DataEncryptionPolicy PowerShell cmdlet.
+To view a list of all the DEPs you've created for Exchange Online and Skype for Business using the Get-DataEncryptionPolicy PowerShell cmdlet, complete these steps.
 
 1. Using a work or school account that has global administrator permissions in your Office 365 organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
@@ -86,7 +83,7 @@ To view a list of all the DEPs you've created for Exchange Online and Skype for 
   Get-DataEncryptionPolicy
   ```
 
-  For more information about the Get-DataEncryptionPolicy cmdlet, see  [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-dataencryptionpolicy?view=exchange-ps).
+  For more information about the Get-DataEncryptionPolicy cmdlet, see [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-dataencryptionpolicy?view=exchange-ps).
 
 ### Assign a DEP before you migrate a mailbox to the cloud
 
@@ -172,22 +169,9 @@ The output from this cmdlet includes:
 
   - **Rolling:** A key roll is in progress. If the key for the geo is rolling, you'll also be shown information on what percentage of sites have completed the key roll operation so that you can monitor progress.
 
-## Switch to Microsoft-managed keys from Customer Key
-
-> [!IMPORTANT]
-> **@Reviewers!!** Please verify that EXO is still not supported. Also, I need instructions for SPO.
-> **@KCCross!!** EXO has started to roll out Microsoft-managed keys. It is currently available on a limited set of Forests though.
-
- **Exchange Online and Skype for Business:** This is not currently supported.
-  
- **SharePoint Online and OneDrive for Business:** You can revert to using Microsoft-managed keys separately for each geo (if you use the multi-geo feature) or for all your data if your data is in a single geo.
-
 ## Revoke your keys and start the data purge path process
 
-> [!WARNING]
-> @REVIEWERS! Move this to a separate article? it doesn't fit with "learn about the availability key" so i moved it here.
-
-You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key once the datga purge process has been completed.
+You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key once the data purge process completes.
 
 The Office 365 core audits and validates the data purge path. For more information, see the SSAE 18 SOC 2 Report available on the [Service Trust Portal](https://servicetrust.microsoft.com/). In addition, Microsoft recommends the following documents:
 
@@ -217,7 +201,7 @@ To initiate the data purge path for Exchange Online and Skype for Business, comp
 
 1. Once your representative has signed the legal document, return it to Microsoft (usually through an eDoc signature).
 
-    Once Microsoft receives the legal document, Microsoft runs cmdlets to trigger the data purge which results into the deletion of the availability key. Once the data purge process is complete, the data has been purged and is not recoverable. 
+    Once Microsoft receives the legal document, Microsoft runs cmdlets to trigger the data purge which deletes the availability key. Once the data purge process completes, the data has been purged and is not recoverable.
 
 ### Revoke your Customer Keys and the availability key for SharePoint Online, OneDrive for Business, and Teams files
 

@@ -17,9 +17,6 @@ description: "With Customer Key, you control your organization's encryption keys
 
 # Service encryption with Customer Key in Office 365
 
-> [!IMPORTANT]
-> @REVIEWERS - This topic is made up of the OVERVIEW/CONCEPTUAL content from the FAQ. This needs review for content, readability, and especially REDUNDANCY (the faq had lots of that). **AYLA: My goal is to get rid of the FAQ**. This topic will introduce Service encryption (as it relates to customer key), lockbox and customer lockbox (as they relate to Customer Key), Customer Key itself (what it is and isn't), and BYOK (as it relates to Customer Key). This article then introduces the rest of the customer key articles in logical order.
-
 Office 365 provides baseline, volume-level encryption enabled through BitLocker and Distributed Key Manager (DKM). Office 365 offers an added layer of encryption at the application level for your content. This content includes data from Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files. This added layer of encryption is called service encryption.
 
 ## How service encryption, BitLocker, and Customer Key work together
@@ -56,30 +53,11 @@ A data encryption policy defines the encryption hierarchy to encrypt data using 
 
 **SharePoint Online, including Team Sites, and OneDrive for Business** You can create up 1 DEP per geo for your organization. If you're not using the multi-geo feature, you can create one DEP. You assign each geo to one DEP. When you assign the DEP, ***encryption doesn't begin automatically, it's triggered by a powershell cmdlet as described in [Set up Customer Key for Office 365](customer-key-set-up.md). Later, you can reassign the mailbox to another DEP as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses. (For more information, see [Customer Key licensing](#about-customer-key-licensing).)
 
-## About the keys used by Customer Key
+## Leaving the service
 
-> [!WARNING]
-> @KC Add VERY brief into about the keys here then point off to more info about availability keys.
-
-### Customer Key
-
-Service encryption uses a key hierarchy. Customer provisions two root keys in Azure Key Vault and grants wrap/unwrap permissions using those keys to O365 Services. Customer then creates DEPs using the root keys. Each DEP creation results into the creation of an availability key and a DEP key. The DEP key gets wrapped with each of the two root keys and the availability key. The DEP key in turn wraps the mailbox key which encrypts the mailbox data. 
-
-With Customer Key, the customer could request data purge. For information about the data purge process and key revocation, see [Revoke your keys and start the data purge path process](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process).
-
-> [!WARNING]
-> @REVIEWERS! What else to say here? You can generate and store these in a Thales ? HSM or some other mechanism? Move some of the overview material about the keys here? differentiate between the customer keys and the availability key here. Keep this VERY brief.
-
-### Availability key
-
-The availability key is a root key that is provisioned when you create a data encryption policy. The availability key is stored and protected within Office 365 and is functionally similar to the two root keys that are supplied by you for use with service encryption with Customer Key. For more information about the availability key, see [Understand the availability key for Office 365 Customer Key](customer-key-availability-key-understand.md).
+Customer Key assists you in meeting compliance obligations by allowing you to revoke your keys when you leave the Office 365 service. When you revoke your keys as part of leaving the service, the availability key is deleted resulting in cryptographic deletion of your data. Cryptographic deletion mitigates the risk of data remanence which is important for meeting both security and compliance obligations. For information about the data purge process and key revocation, see [Revoke your keys and start the data purge path process](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process).
 
 ### Encryption ciphers used by Customer Key
-
-> [!WARNING]
-> **@Reviewers!!** Need to redo these graphics these are placeholders for now. Please confirm the data on them is still accurate. Also, I'd like to remove the "microsoft-managed" from the SPO piece as this will undoubtedly cause confusion. @Jeff McDowell Please verify.
-
-<!-- [BrDesai] Given this is an overview page, I don't think we should talk about enryption ciphers and such details. It is too much details for an overview.
 
 Customer Key uses a variety of encryption ciphers to encrypt keys as shown in the following figures.
 
@@ -95,46 +73,8 @@ Customer Key uses a variety of encryption ciphers to encrypt keys as shown in th
 
 Both options enable you to provide and control your own encryption keys; however, service encryption with Customer Key for Office 365 encrypts your data at rest, residing in Office 365 servers. BYOK with Azure Information Protection for Exchange Online encrypts your data-in-transit and provides persistent online and offline protection for email messages and attachments for Office 365. Customer Key and BYOK with Azure Information Protection for Exchange Online are complementary, and whether you choose to use Microsoft's service-managed keys or your own keys, encrypting your data-at-rest and in-transit can provide added protection from malicious attacks.
   
-BYOK with Azure Information Protection for Exchange Online is offered with the new Office 365 Message Encryption capabilities. 
+BYOK with Azure Information Protection for Exchange Online is offered with the new Office 365 Message Encryption capabilities.
 
-> [!WARNING]
-> @REVIEWERS - For more information, see *** Azure or OME content?
-
-## About Customer Key licensing
-
-> [!WARNING]
-> @REVIEWERS - This is unusual information for pubs to publish. Normally we link out to marketing content for this. I REALLY want to delete all the rest of this article except the link to the trust center. Please provide me with a link to replace this content. One excellent option would be to ensure that the service description is up to date. I can point there. That would be optimal.
-
-Customer Key is offered in the Office 365 Enterprise Suite, "E5", and the Advanced Compliance SKU. Additionally, you must also purchase the appropriate subscription for using Azure Key Vault.
-  
-For SharePoint Online, the Office 365 Administrator who configures Customer Key also needs to be licensed, to perform the setup steps. Additionally, the users that benefit from Customer Key need to be licensed - this includes the site owner and any users accessing files on one or more sites that are encrypted using Customer Key. External users do not need to be licensed to access files on one or more sites that are encrypted using Customer Key.
-  
-For Exchange Online, individual "user" mailboxes and "mail user" mailboxes must be licensed. All others, such as shared mailboxes, are not required to have a license for Customer Key. To check that your Exchange Online mailbox is properly licensed, run the Get-Mailbox cmdlet as follows:
-  
-```powershell
-(Get-Mailbox <alias>).PersistedCapabilities
-```
-
-If the cmdlet returns the string BPOS_S_EquivioAnalytics, then the mailbox is properly licensed. If not, you must apply the proper license in order to use Customer Key with this mailbox.
-  
-## Customer Key and trial subscriptions
-
-You can't enable Customer Key with a trial subscription. By definition, trial subscriptions have a limited lifetime. Encryption keys that are hosted in trial subscriptions can be lost at the end of the trial lifetime. Because Microsoft cannot and does not prevent customers from putting important customer data in trial subscriptions, the use of Customer Key with trial subscriptions is prohibited.
-  
-## Estimating Customer Key costs
-
-In addition to the licensing required for Customer Key, you will incur a cost for Key Vault usage. [Azure Key Vault pricing details](https://azure.microsoft.com/pricing/details/key-vault/) describes the cost model and assists you with estimating. There is no way to predict the exact cost that you'll incur because usage patterns vary. Experience has shown that the cost is very low and generally falls within the range of $0.002 to $0.005 per user per month plus the cost of HSM-backed keys. The cost also varies according to the logging configuration you choose and the amount of Azure storage you use for Azure Key Vault logs.
-
-## Microsoft's approach to third-party data requests
-
-Customer Key wasn't designed to respond to law enforcement subpoenas. Regulated customers use Customer Key to meet their internal or external compliance obligations. Microsoft takes third-party requests for customer data very seriously. As a cloud service provider, we always advocate for the privacy of customer data. In the event we get a subpoena, we always attempt to redirect the third party to the customer to obtain the information.
-  
-See the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) regarding third-party data requests and for periodic updates about requests that we receive. Also, see "Disclosure of Customer Data" in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products.aspx).
-
-## We welcome your feedback
-
-To provide feedback on Customer Key, including the documentation, send your ideas, suggestions, and perspectives to customerkeyfeedback@microsoft.com.
-  
 ## Related articles
 
 - [Set up Customer Key for Office 365](customer-key-set-up.md)
