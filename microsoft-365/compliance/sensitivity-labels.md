@@ -239,8 +239,8 @@ To learn more about the Microsoft Information Protection SDK, see the [announcem
 
 3. **Define who gets the labels.** After your sensitivity labels are configured, publish them in a label policy to make them available to users and groups. A single label is reusable – you define it once, and then you can include it in several label policies assigned to different users. In an initial testing phase, pilot your sensitivity labels by assigning your label policies to just a few people rather than all users in your organization. When you are ready to roll out the labels across your organization, you can either add more users to the existing label policy, or create a new label policy for your labels and additional users.
 
-Here’s the basic flow of what the admin, user, and Office app do to make sensitivity labels work.
+Basic flow of what the admin, user, and Office apps and services do to make sensitivity labels work.
 
 ![Diagram showing workflow for sensitivity labels](media/Sensitivity-label-flow.png)
 
-For procedural information, see [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md).
+You're now ready to [create and configure sensitivity labels and their policies](create-sensitivity-labels.md).
