@@ -23,7 +23,7 @@ This article describes:
 - Which sensitivity label capabilities are supported by each Office app.
 - What happens when you combine sensitivity labels with other Microsoft security and compliance technologies that work with Office apps.
 - How people in your organization can use sensitivity labels when they work with Office apps for Windows and Office apps for the web.
-- Where to go to get people in your organization started with sensitivity labels.
+- Additional resources to help people in your organization start to use sensitivity labels.
 
 ## Subscription and licensing requirements for sensitivity labels
 
@@ -90,13 +90,11 @@ Additional capabilities are available when you install the Azure Information Pro
 
 The Office built-in labeling client downloads labels and policy settings from the following admin centers:
 
+- Microsoft 365 compliance center
+- Microsoft 365 security center
 - Office 365 Security & Compliance Center
 
-- Microsoft 365 security center
-
-- Microsoft 365 compliance center
-
-To use the Office built-in labeling client, you must have one or more [label policies published](sensitivity-labels.md#what-label-policies-can-do) to users from one of the listed admin centers.
+To use the Office built-in labeling client, you must have one or more [label policies published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to users from one of the listed admin centers.
 
 However, if users have one of the Azure Information Protection clients installed ([unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) or [classic client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), by default, the built-in labeling client is disabled in their Office apps. To use built-in labeling rather than the Azure Information Protection client for Office apps, disable or uninstall the Office add-in for Azure Information Protection:
 
@@ -149,6 +147,6 @@ Office 365 applies content marking and encryption with a sensitivity label diffe
 
 ## More resources
 
-[Frequently asked questions about classification and labeling in Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)
-
 [Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+
+- [Known issues when you apply sensitivity labels to your Office files](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
