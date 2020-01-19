@@ -233,7 +233,7 @@ To learn more about the Microsoft Information Protection SDK, see the [announcem
 
 ## How to get started with sensitivity labels
 
-Get started with sensitivity labels by following this process:
+Get started with sensitivity labels by using the following process:
 
 1. **Define the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. If you don't already have an established taxonomy, consider starting with label names such as Personal, Public, General, Confidential, and Highly Confidential. You can then use sublabels to group similar labels by category. When you create a label, use the  tool tip to help users select the appropriate label. The text you specify for the tool tip appears in Office apps when a user hovers over available labels on the Ribbon.
 
