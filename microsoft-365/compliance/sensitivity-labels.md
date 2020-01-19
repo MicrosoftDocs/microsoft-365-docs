@@ -231,9 +231,7 @@ Using the SDK, you can label and protect content in a way that works with other 
 
 To learn more about the Microsoft Information Protection SDK, see the [announcement on the Tech Community blog](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). You can also learn about [partner solutions that are integrated with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
 
-## How to get started with sensitivity labels
-
-Get started with sensitivity labels by using the following process:
+## Get started with sensitivity labels
 
 1. **Define the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. If you don't already have an established taxonomy, consider starting with label names such as Personal, Public, General, Confidential, and Highly Confidential. You can then use sublabels to group similar labels by category. When you create a label, use the  tool tip to help users select the appropriate label. The text you specify for the tool tip appears in Office apps when a user hovers over available labels on the Ribbon.
 
