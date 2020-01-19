@@ -215,7 +215,7 @@ In Office apps on Android devices, sensitivity labels appear on the **Sensitivit
 
 ![Sensitivity button on Ribbon in Office on Android](media/Sensitivity-label-on-Android.png)
 
-### More information on sensitivity labels in Office apps
+### More information about sensitivity labels in Office apps
 
 - [Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 - [Known issues when you apply sensitivity labels to your Office files](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
@@ -229,9 +229,9 @@ The metadata applied by both sets of labels are compatible, so you don't need to
 
 ## Sensitivity labels and the Azure Information Protection client
 
-When you use sensitivity labels in Office 365 ProPlus apps on Windows computers, Azure Information Protection customers have a choice of using the Azure Information Protection unified labeling client, or use labeling that's built into Office. 
+When you use sensitivity labels in Office 365 ProPlus apps on Windows computers, Azure Information Protection customers have a choice of using the Azure Information Protection client, or use labeling that's built into Office. 
 
-By default, built-in labeling is turned off in these apps when the unified labeling client is installed. For more information, see [About the Office built-in labeling client](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
+By default, built-in labeling is turned off in these apps when the Azure Information Protection client is installed. For more information, see [About the Office built-in labeling client](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
 
 If you need help deciding which labeling client to use, see [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure Information Protection documentation.
 
