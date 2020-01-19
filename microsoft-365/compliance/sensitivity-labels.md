@@ -163,63 +163,15 @@ If you're not seeing the label or label policy setting that you expect for a use
 
 While priority matters for sensitivity label policies, it does **not** matter for retention label policies. As explained in [The principles of retention, or what takes precedence?](labels.md#the-principles-of-retention-or-what-takes-precedence), content can be subject to multiple retention policies.
 
-## How to get started with sensitivity labels
-
-Get started with sensitivity labels by following this process:
-
-1. **Define the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. If you don't already have an established taxonomy, consider starting with label names such as Personal, Public, General, Confidential, and Highly Confidential. You can then use sublabels to group similar labels by category. When you create a label, use the  tool tip to help users select the appropriate label. The text you specify for the tool tip appears in Office apps when a user hovers over available labels on the Ribbon.
-
-2. **Define what each label can do.** Then, configure the protection settings you want associated with each label. For example, you might want lower sensitivity content (such as a “General” label) to have just a header or footer applied, while higher sensitivity content (such as a “Confidential” label) should have a watermark, encryption, and endpoint protection applied.
-
-3. **Define who gets the labels.** After your sensitivity labels are configured, publish them in a label policy to make them available to users and groups. A single label is reusable – you define it once, and then you can include it in several label policies assigned to different users. In an initial testing phase, pilot your sensitivity labels by assigning your label policies to just a few people rather than all users in your organization. When you are ready to roll out the labels across your organization, you can either add more users to the existing label policy, or create a new label policy for your labels and additional users.
-
-Here’s the basic flow of what the admin, user, and Office app do to make sensitivity labels work.
-
-![Diagram showing workflow for sensitivity labels](media/Sensitivity-label-flow.png)
-
-For procedural information, see [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md).
-
 ## Where sensitivity labels can appear
 
-Sensitivity labels appear in the UI of Office apps, and can be selected from the **Sensitivity** button on the ribbon. To view the current availability for built-in labeling for specific apps and platforms, see [Support for sensitivity label capabilities in apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+Sensitivity labels appear in the UI of Office apps, and can be selected from the **Sensitivity** button on the ribbon. An applied label can also be displayed in the Status bar at the bottom of the window. For example:
 
-If you use the Azure Information Protection unified labeling client for your Windows computers, additional features are available for sensitivity labels. For more information, see [Compare the labeling clients for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
+![Sensitivity button on Ribbon in Office on Mac](media/Sensitivity-label-on-Mac.png) 
 
-### Office apps on Windows
+For more information, see [Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 
-In Office apps on devices running Windows, sensitivity labels appear on the **Sensitivity** button, on the **Home** tab on the Ribbon. 
-
-When you use built-in labeling, the label applied also appears in the Status bar at the bottom of the window:
-
-![Sensitivity button on Ribbon in Excel on Windows](media/Sensitivity-label-Sensitivity-button.png)
-
-### Office apps on the web
-
-For information about using sensitivity labels with Office apps on the web, see [Apply sensitivity labels to your documents and email within Office - Web](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
-
-### Office apps on Mac
-
-In Office apps on Mac devices, sensitivity labels appear on the **Sensitivity** button, on the **Home** tab on the Ribbon. The label applied also appears in the Status bar at the bottom of the window:
-
-![Sensitivity button on Ribbon in Office on Mac](media/Sensitivity-label-on-Mac.png)
-
-### Office apps on iOS
-
-In Office apps on iOS devices, sensitivity labels appear on the **Sensitivity** button, on the **Home** tab on the Ribbon. The label applied also appears in the Status bar at the bottom of the window:
-
-![Sensitivity button on Ribbon in Office on iOS](media/Sensitivity-label-on-iOS.png)
-
-### Office apps on Android
-
-In Office apps on Android devices, sensitivity labels appear on the **Sensitivity** button, on the **Home** tab on the Ribbon. The label applied also appears in the Status bar at the bottom of the window:
-
-![Sensitivity button on Ribbon in Office on Android](media/Sensitivity-label-on-Android.png)
-
-### More information about sensitivity labels in Office apps
-
-- [Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-- [Known issues when you apply sensitivity labels to your Office files](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
-- [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md)
+To view the current availability for sensitivity labeling for specific apps and platforms, see [Support for sensitivity label capabilities in apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 ## Sensitivity labels and Azure Information Protection
 
@@ -289,10 +241,18 @@ Using the SDK, you can label and protect content in a way that works with other 
 
 To learn more about the Microsoft Information Protection SDK, see the [announcement on the Tech Community blog](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). You can also learn about [partner solutions that are integrated with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
 
-## Permissions required to create sensitivity labels
+## How to get started with sensitivity labels
 
-Members of your compliance team who will create sensitivity labels need permissions to the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center. By default, your tenant admin has access to these admin centers and can give compliance officers and other people access, without giving them all of the permissions of a tenant admin. For this delegated limited admin access, go to the **Permissions** page of one of these admin centers, and then add members to the **Compliance Data Administrator**, **Compliance Administrator** or **Security Administrator** role group.
+Get started with sensitivity labels by following this process:
 
-For instructions, see [Give users access to the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+1. **Define the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. If you don't already have an established taxonomy, consider starting with label names such as Personal, Public, General, Confidential, and Highly Confidential. You can then use sublabels to group similar labels by category. When you create a label, use the  tool tip to help users select the appropriate label. The text you specify for the tool tip appears in Office apps when a user hovers over available labels on the Ribbon.
 
-These permissions are required only to create and apply labels and a label policy. Policy enforcement does not require access to the content.
+2. **Define what each label can do.** Then, configure the protection settings you want associated with each label. For example, you might want lower sensitivity content (such as a “General” label) to have just a header or footer applied, while higher sensitivity content (such as a “Confidential” label) should have a watermark, encryption, and endpoint protection applied.
+
+3. **Define who gets the labels.** After your sensitivity labels are configured, publish them in a label policy to make them available to users and groups. A single label is reusable – you define it once, and then you can include it in several label policies assigned to different users. In an initial testing phase, pilot your sensitivity labels by assigning your label policies to just a few people rather than all users in your organization. When you are ready to roll out the labels across your organization, you can either add more users to the existing label policy, or create a new label policy for your labels and additional users.
+
+Here’s the basic flow of what the admin, user, and Office app do to make sensitivity labels work.
+
+![Diagram showing workflow for sensitivity labels](media/Sensitivity-label-flow.png)
+
+For procedural information, see [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md).
