@@ -88,7 +88,7 @@ Additional capabilities are available when you install the Azure Information Pro
 
 ## About the Office built-in labeling client
 
-The Office built-in labeling client downloads labels and policy settings from the following admin centers:
+The Office built-in labeling client downloads sensitivity labels and sensitivity label policy settings from the following admin centers:
 
 - Microsoft 365 compliance center
 - Microsoft 365 security center
@@ -96,7 +96,7 @@ The Office built-in labeling client downloads labels and policy settings from th
 
 To use the Office built-in labeling client, you must have one or more [label policies published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to users from one of the listed admin centers.
 
-However, if users have one of the Azure Information Protection clients installed ([unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) or [classic client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), by default, the built-in labeling client is disabled in their Office apps. To use built-in labeling rather than the Azure Information Protection client for Office apps, disable or uninstall the Office add-in for Azure Information Protection:
+However, if users have one of the Azure Information Protection clients installed ([unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) or [classic client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), by default, the built-in labeling client is turned off in their Office apps. To use built-in labeling rather than the Azure Information Protection client for Office apps, disable or uninstall the Office add-in for Azure Information Protection:
 
 1. Complete one of these options:
     
