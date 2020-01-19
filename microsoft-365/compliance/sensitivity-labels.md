@@ -221,15 +221,19 @@ In Office apps on Android devices, sensitivity labels appear on the **Sensitivit
 - [Known issues when you apply sensitivity labels to your Office files](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
 - [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md)
 
-## Sensitivity labels and Azure Information Protection labels
+## Sensitivity labels and Azure Information Protection
+
+If you have deployed labels with Azure Information Protection, use the following sections for guidance before you start to use sensitivity labels.
+
+### Azure Information Protection labels
 
 If you are using Azure Information Protection labels because your tenant isn't yet on the [unified labeling platform](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), we recommend that you avoid creating sensitivity labels until you activate unified labeling. In this scenario, the labels you see in the Azure portal are Azure Information Protection labels rather than sensitivity labels. These labels can't be used by devices running macOS, iOS, or Android. To resolve this, [migrate these labels](/azure/information-protection/configure-policy-migrate-labels) to sensitivity labels.
 
 The metadata applied by both sets of labels are compatible, so you don't need to relabel documents and emails when the migration is complete.
 
-## Sensitivity labels and the Azure Information Protection client
+### Azure Information Protection clients
 
-When you use sensitivity labels in Office 365 ProPlus apps on Windows computers, Azure Information Protection customers have a choice of using the Azure Information Protection client, or use labeling that's built into Office. 
+When you use sensitivity labels in Office 365 ProPlus apps on Windows computers, you have a choice of using an Azure Information Protection client, or use labeling that's built into Office. 
 
 By default, built-in labeling is turned off in these apps when the Azure Information Protection client is installed. For more information, see [About the Office built-in labeling client](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
 
@@ -287,8 +291,8 @@ To learn more about the Microsoft Information Protection SDK, see the [announcem
 
 ## Permissions required to create sensitivity labels
 
-Members of your compliance team who will create sensitivity labels need permissions to the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center. By default, your tenant admin has access to these admin centers and can give compliance officers and other people access, without giving them all of the permissions of a tenant admin. For this delegated limited admin access, go to the **Permissions** page of one of these admin centers, and then add members to the **Compliance Administrator** or **Security Administrator** role group.
+Members of your compliance team who will create sensitivity labels need permissions to the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center. By default, your tenant admin has access to these admin centers and can give compliance officers and other people access, without giving them all of the permissions of a tenant admin. For this delegated limited admin access, go to the **Permissions** page of one of these admin centers, and then add members to the **Compliance Data Administrator**, **Compliance Administrator** or **Security Administrator** role group.
 
-For more information, see [Give users access to the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+For instructions, see [Give users access to the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
 These permissions are required only to create and apply labels and a label policy. Policy enforcement does not require access to the content.
