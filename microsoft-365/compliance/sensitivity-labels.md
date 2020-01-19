@@ -163,16 +163,6 @@ If you're not seeing the label or label policy setting that you expect for a use
 
 While priority matters for sensitivity label policies, it does **not** matter for retention label policies. As explained in [The principles of retention, or what takes precedence?](labels.md#the-principles-of-retention-or-what-takes-precedence), content can be subject to multiple retention policies.
 
-## Where sensitivity labels can appear
-
-Sensitivity labels appear in the UI of Office apps, and can be selected from the **Sensitivity** button on the ribbon. An applied label can also be displayed in the Status bar at the bottom of the window. For example:
-
-![Sensitivity button on Ribbon in Office on Mac](media/Sensitivity-label-on-Mac.png) 
-
-For more information, see [Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-
-To view the current availability for sensitivity labeling for specific apps and platforms, see [Support for sensitivity label capabilities in apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
-
 ## Sensitivity labels and Azure Information Protection
 
 If you have deployed labels with Azure Information Protection, use the following sections for guidance before you start to use sensitivity labels.
