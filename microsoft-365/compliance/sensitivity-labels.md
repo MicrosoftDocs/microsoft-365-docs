@@ -203,13 +203,13 @@ You can also learn about [partner solutions that are integrated with Microsoft I
 
 ## Get started with sensitivity labels
 
-1. **Define the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. If you don't already have an established taxonomy, consider starting with label names such as Personal, Public, General, Confidential, and Highly Confidential. You can then use sublabels to group similar labels by category. When you create a label, use the  tool tip to help users select the appropriate label. The text you specify for the tool tip appears in Office apps when a user hovers over available labels on the Ribbon.
+1. **Create the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. If you don't already have an established taxonomy, consider starting with label names such as Personal, Public, General, Confidential, and Highly Confidential. You can then use sublabels to group similar labels by category. When you create a label, use the  tooltip to help users select the appropriate label.
 
 2. **Define what each label can do.** Then, configure the protection settings you want associated with each label. For example, you might want lower sensitivity content (such as a “General” label) to have just a header or footer applied, while higher sensitivity content (such as a “Confidential” label) should have a watermark, encryption, and endpoint protection applied.
 
-3. **Define who gets the labels.** After your sensitivity labels are configured, publish them in a label policy to make them available to users and groups. A single label is reusable – you define it once, and then you can include it in several label policies assigned to different users. In an initial testing phase, pilot your sensitivity labels by assigning your label policies to just a few people rather than all users in your organization. When you are ready to roll out the labels across your organization, you can either add more users to the existing label policy, or create a new label policy for your labels and additional users.
+3. **Publish the labels.** After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable — you define it once, and then you can include it in several label policies assigned to different users. So for example, for an initial testing phase, you could pilot your sensitivity labels by assigning a label policy to just a few users. Then when you're ready to roll out the labels across your organization, you can create a new label policy for your labels and this time, specify all users.
 
-Basic flow of what the admin, user, and Office apps and services do to make sensitivity labels work.
+Basic flow for what the admin, user, and Office apps and services do to make sensitivity labels work:
 
 ![Diagram showing workflow for sensitivity labels](media/Sensitivity-label-flow.png)
 
