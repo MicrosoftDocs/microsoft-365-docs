@@ -44,7 +44,7 @@ You can use sensitivity labels to:
 
 - **Protect content in third-party apps and services** by using Microsoft Cloud App Security. With Cloud App Security, you can detect, classify, label, and protect content in third-party apps and services, such as SalesForce, Box, or DropBox, even if the third-party app or service does not read or support sensitivity labels.
 
-- **Extend sensitivity labels to third-party apps and services.** With the [Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/), third-party apps can read sensitivity labels and apply protection settings.
+- **Extend sensitivity labels to third-party apps and services.** Using the Microsoft Information Protection SDK, third-party apps can read sensitivity labels and apply protection settings.
 
 - **Classify content without using any protection settings.** You can also simply assign a classification to content (like a sticker) that persists and roams with the content as it's used and shared. You can use this classification to generate usage reports and see activity data for your sensitive content. Based on this information, you can always choose to apply protection settings later.
 
@@ -214,4 +214,6 @@ Basic flow for what the admin, user, and Office apps and services do to make sen
 
 ![Diagram showing workflow for sensitivity labels](media/Sensitivity-label-flow.png)
 
-You're now ready to [create and configure sensitivity labels and their policies](create-sensitivity-labels.md). For more information about using sensitivity labels for Office apps, see [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
+You're now ready to [create and configure sensitivity labels and their policies](create-sensitivity-labels.md). 
+
+For more information about using sensitivity labels for Office apps, see [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
