@@ -187,9 +187,9 @@ By using Cloud App Security (CAS), you can detect, classify, label, and protect 
 
 Cloud App Security works with both Azure Information Protection labels and sensitivity labels:
 
-- If the labeling admin centers have the same labels as those in the Azure portal: Sensitivity labels are used. To select these labels in Cloud App Security, at least one label must be published to at least one user.
+- If the labeling admin centers have the same labels as those in the Azure portal: Sensitivity labels are used. To select these labels in Cloud App Security, at least one label must be [published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to at least one user.
 
-- If the labeling admin centers  don't have the same labels as those in the Azure portal: Sensitivity labels are not used from the labeling admin centers, and instead, labels are retrieved from the Azure portal.
+- If the labeling admin centers don't have the same labels as those in the Azure portal: Sensitivity labels are not used from the labeling admin centers, and instead, Azure Information Protection labels are retrieved from the Azure portal.
 
 For instructions to use Cloud App Security with these labels, see [Automatically apply Azure Information Protection classification labels](https://docs.microsoft.com/cloud-app-security/use-case-information-protection).
 
