@@ -130,7 +130,7 @@ With a label policy, you can:
 
     ![Prompt where users enter a justification](media/Sensitivity-label-justification-required.png)
 
-- **Require users to apply a label to their email and documents.** Also known as mandatory labeling: To help ensure that content is labeled, you can require that a label must be applied before users can save documents and send emails. The label can be assigned manually by the user, automatically as a result of a condition that you configure, or be assigned by default (the default label option described above). Here's the prompt shown in Outlook when a user is required to assign a label.
+- **Require users to apply a label to their email and documents.** Also known as mandatory labeling, you can require that a label must be applied before users can save documents and send emails. Use this option to help increase your labeling coverage. The label can be assigned manually by the user, automatically as a result of a condition that you configure, or be assigned by default (the default label option described above). Here's the prompt shown in Outlook when a user is required to assign a label.
 
     ![Prompt in Outlook asking user to apply required label](media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
