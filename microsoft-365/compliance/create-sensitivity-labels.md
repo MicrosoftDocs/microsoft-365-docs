@@ -96,7 +96,9 @@ Using this cmdlet, you can also specify [advanced settings](https://docs.microso
 
 Completing the wizard automatically publishes the label policy. To make changes to a published policy, simply edit it. There is no specific publish or republish action for you to select.
 
-To edit an existing label policy, select it, and then select **Edit Policy**. This starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and services. Allow up to 24 hours for the replication to complete.
+To edit an existing label policy, select it, and then select **Edit Policy**. This starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and services.
+
+Typically, users see the labels in their Office apps within a couple of hours. However, allow up to 24 hours for your label policies and any changes to them to replicate to all users and services.
 
 ### Additional label policy settings with Office 365 Security & Compliance Center PowerShell
 
