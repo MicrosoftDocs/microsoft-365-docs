@@ -16,24 +16,10 @@
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan for security and compliance in Office 365
       href: plan-for-security-and-compliance.md
-- name: Manage internal risks
-  items: 
+- name: Manage insider risks
+  items:
     - name: Protect user and device access
       href: protect-access-to-data-and-services.md
-    - name: Customer Lockbox
-      href: customer-lockbox-requests.md
-    - name: Privileged access management
-      items: 
-        - name: Learn about privileged access management
-          href: privileged-access-management-overview.md
-        - name: Configure privileged access management
-          href: privileged-access-management-configuration.md
-    - name: Customer Key
-      items: 
-        - name: Controlling your data in Office 365 using Customer Key
-          href: controlling-your-data-using-customer-key.md
-        - name: Service encryption with Customer Key for Office 365 FAQ
-          href: service-encryption-with-customer-key-faq.md
     - name: Communication compliance (preview)
       items: 
         - name: Learn about communication compliance (preview)
@@ -59,6 +45,20 @@
           href: information-barriers-troubleshooting.md
         - name: Edit information barrier policies
           href: information-barriers-edit-segments-policies.md
+    - name: Privileged access management
+      items: 
+        - name: Learn about privileged access management
+          href: privileged-access-management-overview.md
+        - name: Configure privileged access management
+          href: privileged-access-management-configuration.md
+    - name: Customer Key
+      items: 
+        - name: Controlling your data in Office 365 using Customer Key
+          href: controlling-your-data-using-customer-key.md
+        - name: Service encryption with Customer Key for Office 365 FAQ
+          href: service-encryption-with-customer-key-faq.md
+    - name: Customer Lockbox
+      href: customer-lockbox-requests.md
 - name: Manage information protection
   href: protect-information.md
   items: 
@@ -214,6 +214,8 @@
           href: archive-linkedin-data.md
         - name: Set up a connector to archive Instant Bloomberg data
           href: archive-instant-bloomberg-data.md
+        - name: Set up a connector to import HR data
+          href: import-hr-data.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
     - name: Store data
