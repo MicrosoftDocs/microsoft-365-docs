@@ -68,7 +68,7 @@ If you're concerned about spam, phishing, and spoofing in Office 365, use SPF, D
 
 [Anti-spam protection FAQ](anti-spam-protection-faq.md)
 
-[Prevent false positive email marked as spam with a safelist or other techniques](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[Prevent false positive email marked as spam with a safelist or other techniques](prevent-email-from-being-marked-as-spam.md)
 
 [How to set up Office 365 spam filtering to help block junk messages](reduce-spam-email.md)
 

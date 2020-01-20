@@ -34,6 +34,16 @@ You can filter the data by:
 
 You can view the data either as a list or a bar graph.
 
+## Prerequisites
+
+Every account that accesses and uses activity explorer must have a license assigned to it from one of these subscriptions:
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- Advanced Compliance (E5) add-on
+- Advanced Threat Intelligence (E5) add-on
+- Advanced Threat Protection (E5) add-on
+
 ## Activity type
 
 Microsoft 365 monitors and reports on 12 types of activities across SharePoint Online, OneDrive and endpoints. Endpoints are user devices running Windows 10.
