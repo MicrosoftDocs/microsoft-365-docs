@@ -181,47 +181,13 @@ By default, built-in labeling is turned off in these apps when the Azure Informa
 
 If you need help deciding which labeling client to use, see [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure Information Protection documentation.
 
-## Protect content on Windows devices by using endpoint protection in Microsoft Intune
-
-When you create a sensitivity label, you have the option to tell Windows that files with this label need to be protected against data leakage when this content is stored on Windows devices. This option can help ensure that content with this label can be shared or copied only to sanctioned locations, even when it’s stored on an endpoint. In essence, turning on this option for a sensitivity label tells Windows that this is extra critical data that warrants additional usage constraints.
-
-When you turn on this option, Windows can read, understand, and act on sensitivity labels in documents and automatically apply Windows Information Protection (WIP) on content, no matter how it reaches a managed Windows device. This helps protect labeled files from accidental leakage, with or without applying encryption.
-
-For example, Windows can understand that a Word document residing on a user’s machine has a Confidential label applied to it, and WIP can apply an app protection policy to prevent the copying or sharing of the data to any non-work location from that device (such as a personal OneDrive, personal email accounts, social media, or USB drives).
-
-If a user attempts to upload labeled content to a personal Gmail account, they see this message.
-
-![Message that labeled content cannot be copied to Gmail](media/Sensitivity-label-WIP-Gmail.png)
-
-And if a user attempts to save labeled content to a USB drive, they see the following message:
-
-![Message that labeled content cannot be copied to USB drive](media/Sensitivity-label-WIP-USB-drive.png)
-
-### Important prerequisites for using WIP
-
-Before your sensitivity labels can use WIP, you first need to do the prerequisites described here: [How Windows Information Protection protects files with a sensitivity label](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). This topic describes the following prerequisites:
-
-- Make sure you're running Windows 10, version 1809 or later.
-- [Set up Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/), which scans content for a label and applies the corresponding WIP protection. ATP performs some actions independently from WIP, such as reporting anomalies.
-- Create a Windows Information Protection (WIP) policy that applies to endpoint devices. You can do this in either of these locations:
-
-  - [Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
-  - [Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
-
-## Protect content in third-party apps and services by using Microsoft Cloud App Security
+## Sensitivity labels and Microsoft Cloud App Security
 
 Protect content in third-party apps and services by using Cloud App Security (CAS). With CAS, you can detect, classify, label, and protect content in third-party services and apps, such as SalesForce, Box, or Dropbox. For example, Dropbox might not understand a sensitivity label, but CAS can reach out and protect labeled content in that location.
 
 For more information, see [Automatically apply Azure Information Protection classification labels](https://docs.microsoft.com/cloud-app-security/use-case-information-protection).
 
-### Important prerequisites for using CAS
-
-Before your sensitivity labels can use CAS, you first need to do the prerequisites described here: [Automatically apply Azure Information Protection classification labels](https://docs.microsoft.com/cloud-app-security/use-case-information-protection). This topic describes the following prerequisites:
-
-- [Enable Cloud App Security and Azure Information Protection](https://docs.microsoft.com/cloud-app-security/azip-integration) for your tenant.
-- [Connect the app](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) to Cloud App Security.
-
-## Extend sensitivity labels to third-party apps and services by using the Microsoft Information Protection SDK
+## Sensitivity labels and the Microsoft Information Protection SDK
 
 Because a sensitivity label is persisted as clear text in the metadata of a document, third-party apps and services can choose to support identifying and protecting content that contains such a label. Support in other apps and services is always expanding.
 
