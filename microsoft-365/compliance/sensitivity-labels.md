@@ -213,4 +213,4 @@ Basic flow for what the admin, user, and Office apps and services do to make sen
 
 ![Diagram showing workflow for sensitivity labels](media/Sensitivity-label-flow.png)
 
-You're now ready to [create and configure sensitivity labels and their policies](create-sensitivity-labels.md). For more information about using sensitivity labels for Office apps, see [Sensitivity labels in Office apps](sensitivity-labels-office-apps).
+You're now ready to [create and configure sensitivity labels and their policies](create-sensitivity-labels.md). For more information about using sensitivity labels for Office apps, see [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
