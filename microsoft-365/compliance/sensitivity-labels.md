@@ -162,7 +162,7 @@ If you're not seeing the label or label policy setting that you expect for a use
 
 ![Move option on the page for sensitivity label policies](media/sensitivity-label-policy-priority.png)
 
-While priority matters for sensitivity label policies, it does **not** matter for retention label policies. As explained in [The principles of retention, or what takes precedence?](labels.md#the-principles-of-retention-or-what-takes-precedence), content can be subject to multiple retention policies.
+If you use retention labels in addition to sensitivity labels, it's important to remember that priority matters for sensitivity label policies, but not for [retention label policies](labels.md#the-principles-of-retention-or-what-takes-precedence).
 
 ## Sensitivity labels and Azure Information Protection
 
