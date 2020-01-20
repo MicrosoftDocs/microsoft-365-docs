@@ -183,9 +183,15 @@ If you need help deciding which labeling client to use, see [Choose which labeli
 
 ## Sensitivity labels and Microsoft Cloud App Security
 
-Protect content in third-party apps and services by using Cloud App Security (CAS). With CAS, you can detect, classify, label, and protect content in third-party services and apps, such as SalesForce, Box, or Dropbox. For example, Dropbox might not understand a sensitivity label, but CAS can reach out and protect labeled content in that location.
+By using Cloud App Security (CAS), you can detect, classify, label, and protect content in third-party services and apps, such as SalesForce, Box, or Dropbox. 
 
-For more information, see [Automatically apply Azure Information Protection classification labels](https://docs.microsoft.com/cloud-app-security/use-case-information-protection).
+Cloud App Security works with both Azure Information Protection labels and sensitivity labels:
+
+    - If the labeling admin centers have the same labels as those in the Azure portal: Sensitivity labels are used. To select these labels in Cloud App Security, at least one label must be published to at least one user.
+    
+    - If the labeling admin centers  don't have the same labels as those in the Azure portal: Sensitivity labels are not used from the labeling admin centers, and instead, labels are retrieved from the Azure portal.
+
+For instructions to use Cloud App Security with these labels, see [Automatically apply Azure Information Protection classification labels](https://docs.microsoft.com/cloud-app-security/use-case-information-protection).
 
 ## Sensitivity labels and the Microsoft Information Protection SDK
 
