@@ -108,7 +108,7 @@ Don't choose a parent label as the default label, or configure a parent label to
 
 Example of how sublabels display for users:
 
-![Grouped sublabels on the Ribbon](media/Sensitivity-label-grouped-labels.png)
+![Grouped sublabels on the Ribbon](media/Sensitivity-label-grouped-labels2.png)
 
 ### Editing or deleting a sensitivity label
 
