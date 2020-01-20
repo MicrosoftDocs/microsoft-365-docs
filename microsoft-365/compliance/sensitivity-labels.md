@@ -44,7 +44,7 @@ You can use sensitivity labels to:
 
 - **Protect content in third-party apps and services** by using Microsoft Cloud App Security. With Cloud App Security, you can detect, classify, label, and protect content in third-party apps and services, such as SalesForce, Box, or DropBox, even if the third-party app or service does not read or support sensitivity labels.
 
-- **Extend sensitivity labels to third-party apps and services.** With the Microsoft Information Protection SDK, third-party apps on [these platforms](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk) can read sensitivity labels and apply protection settings.
+- **Extend sensitivity labels to third-party apps and services.** With the [Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/), third-party apps can read sensitivity labels and apply protection settings.
 
 - **Classify content without using any protection settings.** You can also simply assign a classification to content (like a sticker) that persists and roams with the content as it's used and shared. You can use this classification to generate usage reports and see activity data for your sensitive content. Based on this information, you can always choose to apply protection settings later.
 
@@ -187,9 +187,9 @@ By using Cloud App Security (CAS), you can detect, classify, label, and protect 
 
 Cloud App Security works with both Azure Information Protection labels and sensitivity labels:
 
-    - If the labeling admin centers have the same labels as those in the Azure portal: Sensitivity labels are used. To select these labels in Cloud App Security, at least one label must be published to at least one user.
-    
-    - If the labeling admin centers  don't have the same labels as those in the Azure portal: Sensitivity labels are not used from the labeling admin centers, and instead, labels are retrieved from the Azure portal.
+- If the labeling admin centers have the same labels as those in the Azure portal: Sensitivity labels are used. To select these labels in Cloud App Security, at least one label must be published to at least one user.
+
+- If the labeling admin centers  don't have the same labels as those in the Azure portal: Sensitivity labels are not used from the labeling admin centers, and instead, labels are retrieved from the Azure portal.
 
 For instructions to use Cloud App Security with these labels, see [Automatically apply Azure Information Protection classification labels](https://docs.microsoft.com/cloud-app-security/use-case-information-protection).
 
@@ -197,9 +197,9 @@ For instructions to use Cloud App Security with these labels, see [Automatically
 
 Because a sensitivity label is persisted as clear text in the metadata of a document, third-party apps and services can choose to support identifying and protecting content that contains such a label. Support in other apps and services is always expanding.
 
-With the [Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/), third-party apps and services can read and apply sensitivity labels and protection to documents. The SDK supports apps on [these platforms](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk).
+With the [Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk), third-party apps and services can read and apply sensitivity labels and protection to documents across many platforms. To learn more, see the [announcement on the Tech Community blog](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
 
-To learn more about the Microsoft Information Protection SDK, see the [announcement on the Tech Community blog](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). You can also learn about [partner solutions that are integrated with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
+You can also learn about [partner solutions that are integrated with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
 
 ## Get started with sensitivity labels
 
