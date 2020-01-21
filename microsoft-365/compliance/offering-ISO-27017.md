@@ -44,6 +44,7 @@ Learn about the benefits of ISO/IEC 27017 on the Microsoft Cloud: [Download the 
 - Genomics
 - Graph
 - Intune
+- Microsoft Managed Desktop
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense, and Office 365 Germany
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
