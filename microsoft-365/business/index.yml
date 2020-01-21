@@ -58,10 +58,10 @@ conceptualContent:
         - url: https://www.microsoft.com/microsoft-365/partners/business
           itemType: overview
           text: Partner page 
-        - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-customer-pitch-deck
+        - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx
           itemType: download
           text: Pitch deck (customer focus)
-        - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-partner-pitch-deck
+        - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
           itemType: download
           text: Pitch deck (partner focus) 
         - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip

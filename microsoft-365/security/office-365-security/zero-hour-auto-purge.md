@@ -96,7 +96,7 @@ For detailed syntax and parameter information, see [Set-HostedContentFilterPolic
 
 ### What happens if a legitimate message is moved to the junk mail folder?
 
-You should follow the normal reporting process for [false-positives](../../compliance/prevent-email-from-being-marked-as-spam.md). The only reason the message would be moved from the inbox to the junk mail folder would be because the service has determined that the message was spam or malicious.
+You should follow the normal reporting process for [false-positives](prevent-email-from-being-marked-as-spam.md). The only reason the message would be moved from the inbox to the junk mail folder would be because the service has determined that the message was spam or malicious.
 
 ### What if I use the Office 365 quarantine instead of the junk mail folder?
 
