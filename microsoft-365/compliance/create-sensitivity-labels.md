@@ -51,14 +51,17 @@ Using this cmdlet, you can also specify [advanced settings](https://docs.microso
 
 #### Example configuration to configure a sensitivity label for different languages
 
-The following example shows the PowerShell configuration for a label named "Public" with placeholder text for the tooltip. In this example, the label name and tooltip text is configured for French, Italian, and German. 
+The following example shows the PowerShell configuration for a label named "Public" with placeholder text for the tooltip. In this example, the label name and tooltip text is configured for French, Italian, and German.
 
 As a result of this configuration, users who have Office apps that use those display languages see their label names and tooltips in the same language. Similarly, if you have the Azure Information Protection unified labeling client installed to label files from File Explorer, users who have those language versions of Windows see their label names and tooltips in their local language when they use the right-click actions for labeling.
 
+For the languages that you need to support, use the Office [language identifiers](https://docs.microsoft.com/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) (also known as language tags), and specify your own translation for the label name and tooltip.
+
 Before you run the commands in PowerShell, you must first [connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
+
 ```powershell
-$Languages = @("fr-FR","it-IT","de-DE")
+$Languages = @("fr-frR","it-it","de-de")
 $DisplayNames=@("Publique","Publico","Oeffentlich")
 $Tooltips = @("Texte Francais","Testo Italiano","Deutscher Text")
 $label = "Public"
