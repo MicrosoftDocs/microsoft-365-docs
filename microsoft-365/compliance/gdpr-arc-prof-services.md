@@ -13,6 +13,7 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft GDPR
 ---
 
 # Microsoft Support and Professional Services accountability readiness checklist for the GDPR

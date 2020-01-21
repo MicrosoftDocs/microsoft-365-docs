@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Enterprise foundation infrastructure for non-enterprises"
+title: "Microsoft 365 for enterprise foundation infrastructure for non-enterprises"
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -12,22 +12,22 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
-description: Step through the simplified phases of the foundation infrastructure for Microsoft 365 Enterprise for non-enterprise organizations.
+description: Step through the simplified phases of the foundation infrastructure for Microsoft 365 for enterprise for non-enterprise organizations.
 ---
 
-# Microsoft 365 Enterprise foundation infrastructure for non-enterprises
+# Microsoft 365 for enterprise foundation infrastructure for non-enterprises
 
-Non-enterprise organizations can also deploy Microsoft 365 Enterprise and realize the business value of an integrated and secure infrastructure that enables teamwork and unlocks creativity. A non-enterprise typically has:
+Non-enterprise organizations can also deploy Microsoft 365 for enterprise and realize the business value of an integrated and secure infrastructure that enables teamwork and unlocks creativity. A non-enterprise typically has:
 
 - A small amount of on-premises IT infrastructure, such as email and file servers and an Active Directory Domain Services (AD DS) domain, or none at all.
 - A small IT staff, most of whom are IT generalists, rather than specialists in a specific technology or workload such as networking or email.
 
-For smaller, non-enterprise organizations, Microsoft offers [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business). However, there are reasons why you might need Microsoft 365 Enterprise, such as:
+For smaller, non-enterprise organizations, Microsoft offers [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business). However, there are reasons why you might need Microsoft 365 for enterprise, such as:
 
 - Your organization needs more or will need more than 300 Microsoft 365 licenses, which is the maximum for Microsoft 365 Business.
 - Your organization needs the advanced productivity, voice, security, and analytics capabilities that are not available with Microsoft 365 Business.
 
-This article steps you through a simplified deployment of the foundation infrastructure of Microsoft 365 Enterprise suitable for your non-enterprise.
+This article steps you through a simplified deployment of the foundation infrastructure of Microsoft 365 for enterprise suitable for your non-enterprise.
 
 ## First, set up your subscription
 
@@ -54,17 +54,17 @@ Here is a visual summary with the Phase 1 element highlighted. **Your organizati
 
 ## Phase 2: Identity
 
-Each employee of your organization must be able to sign in, which requires a user account in the Azure Active Directory (Azure AD) tenant of your Microsoft 365 Enterprise subscription. Groups are then used to contain user accounts and other groups to communicate or gain access to permissioned resources, such as a SharePoint Online site or a team. 
+Each employee of your organization must be able to sign in, which requires a user account in the Azure Active Directory (Azure AD) tenant of your Microsoft 365 for enterprise subscription. Groups are then used to contain user accounts and other groups to communicate or gain access to permissioned resources, such as a SharePoint Online site or a team. 
 
 ### Administrator accounts
 
 Protect your global administrator user accounts by requiring strong passwords and multi-factor authentication (MFA). See [Protect global administrator accounts](identity-create-protect-global-admins.md#protect-global-administrator-accounts) for more information.
 
-If your organization requires high security and you have Microsoft 365 Enterprise E5, use Azure AD Privileged Identity Management to enable just-in-time administrator access. See [Set up on-demand global administrators](identity-create-protect-global-admins.md#identity-pim) for more information.
+If your organization requires high security and you have Microsoft 365 E5, use Azure AD Privileged Identity Management to enable just-in-time administrator access. See [Set up on-demand global administrators](identity-create-protect-global-admins.md#identity-pim) for more information.
 
 ### Recommendations for groups
 
-If you have an on-premises AD DS domain, continue to use those groups in Microsoft 365 Enterprise as groups in Azure AD.
+If you have an on-premises AD DS domain, continue to use those groups in Microsoft 365 for enterprise as groups in Azure AD.
 
 If you don’t have an on-premises AD DS domain, create security groups in Azure AD using these levels of security.
 
@@ -77,7 +77,7 @@ If you don’t have an on-premises AD DS domain, create security groups in Azure
 
 ### Hybrid identity
 
-If you have an on-premises AD DS domain, you need to synchronize the set of user accounts, groups, and contacts of your domain with the Azure AD tenant of your Microsoft 365 Enterprise subscription. For your non-enterprise, you configure Azure AD Connect on a server with password hash synchronization (PHS). See [Synchronize identities](identity-add-user-accounts.md#synchronize-identities-for-hybrid-identity) for more information.
+If you have an on-premises AD DS domain, you need to synchronize the set of user accounts, groups, and contacts of your domain with the Azure AD tenant of your Microsoft 365 for enterprise subscription. For your non-enterprise, you configure Azure AD Connect on a server with password hash synchronization (PHS). See [Synchronize identities](identity-add-user-accounts.md#synchronize-identities-for-hybrid-identity) for more information.
 
 ### More secure user access with Conditional Access policies
 
@@ -107,15 +107,15 @@ Here is the list of Azure AD Conditional Access policies to enable or create.
 |:------|:-----|
 | Baseline policy: Require MFA for admins | This policy applies to admin roles, so no groups need to be specified. This policy just needs to be enabled. All subsequent policies need to be created and enabled. |
 | Block clients that don't support modern authentication | Select “All users” in the policy settings. |
-| Require MFA when sign-in risk is medium or high (requires Microsoft 365 Enterprise E5) | BASELINE |
-| Require MFA when sign-in risk is low, medium, or high (requires Microsoft 365 Enterprise E5) | SENSITIVE |
+| Require MFA when sign-in risk is medium or high (requires Microsoft 365 E5) | BASELINE |
+| Require MFA when sign-in risk is low, medium, or high (requires Microsoft 365 E5) | SENSITIVE |
 | Always require MFA | HIGHLY-REGULATED |
 | Require approved apps on iOS and Android devices | BASELINE, SENSITIVE, HIGHLY-REGULATED |
 | Require compliant PCs | BASELINE |
 | Require compliant PCs and iOS and Android devices | SENSITIVE, HIGHLY-REGULATED |
 |||
 
-Here is the Azure AD Identity Protection (requires Microsoft 365 Enterprise E5) user risk policy to create and enable.
+Here is the Azure AD Identity Protection (requires Microsoft 365 E5) user risk policy to create and enable.
 
 | Azure AD Identity Protection user risk policy | Groups to which it applies |
 |:------|:-----|
@@ -135,11 +135,11 @@ Here are some features that can make group and licensing management easier for y
 | Group-based licensing | Use group membership to automatically assign or unassign licenses to user accounts. See [Group-based licensing](identity-use-group-management.md#set-up-automatic-licensing) for more information. |
 |  |  |
 
-If you are using group-based licensing, create a group named LICENSED to contain user account names that are assigned a Microsoft 365 Enterprise license.
+If you are using group-based licensing, create a group named LICENSED to contain user account names that are assigned a Microsoft 365 for enterprise license.
 
 ### Monitor user access
 
-If you have Microsoft 365 Enterprise E5, you can use Azure AD Identity Protection to monitor and analyze user sign-ins for credential compromise. See [Protect against credential compromise](identity-secure-user-sign-ins.md#protect-against-credential-compromise) for more information.
+If you have Microsoft 365 E5, you can use Azure AD Identity Protection to monitor and analyze user sign-ins for credential compromise. See [Protect against credential compromise](identity-secure-user-sign-ins.md#protect-against-credential-compromise) for more information.
 
 ### Your configuration so far
 
@@ -173,7 +173,7 @@ The new and highlighted cloud-only identity elements include:
 
 ## Phase 3: Windows 10 Enterprise
 
-To ensure that your Windows 10 Enterprise devices are integrated into the identity and security infrastructure of Microsoft 365 Enterprise, here are your options:
+To ensure that your Windows 10 Enterprise devices are integrated into the identity and security infrastructure of Microsoft 365 for enterprise, here are your options:
 
 - Hybrid (you have an on-premises AD DS domain)
 
@@ -208,7 +208,7 @@ The new and highlighted Windows 10 Enterprise elements include:
 
 ## Phase 4: Office 365 ProPlus
 
-Microsoft 365 Enterprise includes Office 365 ProPlus, the subscription version of Microsoft Office. Like Office 2016 or Office 2019, Office 365 ProPlus is installed directly on your client devices. However, Office 365 ProPlus receives updates that include new features on a regular basis. See [About Office 365 ProPlus in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) for more information.
+Microsoft 365 for enterprise includes Office 365 ProPlus, the subscription version of Microsoft Office. Like Office 2016 or Office 2019, Office 365 ProPlus is installed directly on your client devices. However, Office 365 ProPlus receives updates that include new features on a regular basis. See [About Office 365 ProPlus in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) for more information.
 
 For your non-enterprise organization, you manually install Office 365 ProPlus on devices, which can include Windows, iOS, and Android devices. This can be done as part of preparing a new device for use, or by the user as part of their onboarding process.
 
@@ -232,7 +232,7 @@ The new and highlighted Office 365 ProPlus elements include:
 
 ## Phase 5: Mobile device management
 
-Microsoft 365 Enterprise includes Microsoft Intune for mobile device management. With Intune, you can manage Windows, iOS, Android, and macOS devices to protect access to your organization's resources, including your data. Intune uses the user, group, and computer accounts of Azure AD.
+Microsoft 365 for enterprise includes Microsoft Intune for mobile device management. With Intune, you can manage Windows, iOS, Android, and macOS devices to protect access to your organization's resources, including your data. Intune uses the user, group, and computer accounts of Azure AD.
 
 Intune provides two types of mobile device management:
 
@@ -271,7 +271,7 @@ The new and highlighted mobile device management elements include:
 
 ## Phase 6: Information protection
 
-Microsoft 365 Enterprise has a host of information protection features that allow you to treat classifications of data differently by applying different levels of governance, security, and protection. 
+Microsoft 365 for enterprise has a host of information protection features that allow you to treat classifications of data differently by applying different levels of governance, security, and protection. 
 
 For example, normal correspondence between most employees and the documents on which they work need a certain baseline level of protection. Financial records, customer data, and your intellectual property need a higher level of protection.
 
@@ -338,7 +338,7 @@ Custom information types and retention labels are not shown.
 
 ## Onboarding
 
-With your Microsoft 365 Enterprise infrastructure in place, you can easily onboard your employees.
+With your Microsoft 365 for enterprise infrastructure in place, you can easily onboard your employees.
 
 ### A new Windows 10 Enterprise device
 
@@ -385,11 +385,11 @@ For the first time employees sign in to Microsoft 365, instruct them to:
 
 ## End results
 
-Here are the results of configuring the Microsoft 365 Enterprise foundation infrastructure for your non-enterprise organization.
+Here are the results of configuring the Microsoft 365 for enterprise foundation infrastructure for your non-enterprise organization.
 
 ### Infrastructure results
 
-After the build-out and configuration of your Microsoft 365 Enterprise infrastructure, you should have:
+After the build-out and configuration of your Microsoft 365 for enterprise infrastructure, you should have:
 
 - A local Internet connection for each of your offices with sufficient bandwidth supplied by an ISP that uses a regionally local DNS server.
 - For hybrid identity, Azure AD Connect running on a server that synchronizes your on-premises AD DS domain with your Azure AD tenant.
@@ -431,4 +431,4 @@ After their onboarding, each employee should have:
 
 ## Next step
 
-Deploy your [workloads and scenarios](deploy-workloads.md) to take advantage of the features and configuration of your Microsoft 365 Enterprise foundation infrastructure.
+Deploy your [workloads and scenarios](deploy-workloads.md) to take advantage of the features and configuration of your Microsoft 365 for enterprise foundation infrastructure.
