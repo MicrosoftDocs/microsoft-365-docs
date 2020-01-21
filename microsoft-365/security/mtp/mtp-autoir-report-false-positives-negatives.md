@@ -25,7 +25,7 @@ ms.custom: autoir
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Did automated investigation and response capabilities in Microsoft Threat Protection miss or wrongly detect something? You can report your false positive or false negative to Microsoft for further analysis. Use the following table as a guide:
+Did automated investigation and response capabilities in Microsoft Threat Protection miss or wrongly detect something? There are steps you can take. Use the following table as a guide: 
 
 
 |Item  |Detected by  |How to report it  |
