@@ -61,17 +61,47 @@ These permissions are required only to create and configure sensitivity labels a
 To edit an existing label, select it, and then select **Edit label**. This starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3. 
 
 > [!NOTE]
-> If you edit a label that's already published by using a label policy, no extra steps are needed when you finish the wizard. For example, you don't need to add it to a new label policy. However, allow up to 24 hours for the changes to replicate to users and services.
+> If you edit a label that's already published by using a label policy, no extra steps are needed when you finish the wizard. For example, you don't need to add it to a new label policy for the changes to become available to the same users. However, allow up to 24 hours for the changes to replicate to users and services.
 
-Until you publish your labels, they won't be available to select in apps or for services. To publish the labels, they must be added to a label policy.
+Until you publish your labels, they won't be available to select in apps or for services. To publish the labels, they must be [added to a label policy](#publish-sensitivity-labels-by-creating-a-label-policy).
 
 ### Additional label settings with Office 365 Security & Compliance Center PowerShell
 
 Additional label settings are available with the [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) cmdlet from [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
 
-For example, use the the *LocaleSettings* parameter to specify different languages for your label names and tooltips. 
+Use the *LocaleSettings* parameter for multinational deployments so that users see the label name and tooltip in their local language. See the following section for an example configuration. 
 
 Using this cmdlet, you can also specify [advanced settings](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) for the Azure Information Protection unified labeling client. These advanced settings include setting a label color, and applying a custom property when a label is applied. For the full list, see [Available advanced settings for label policies](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies). 
+
+#### Example configuration to configure a sensitivity label for different languages
+
+The following example shows the PowerShell configuration for a label named "Public" with placeholder text for the tooltip. In this example, the label name and tooltip text is configured for French, Italian, and German.
+
+As a result of this configuration, users who have Office apps that use those display languages see their label names and tooltips in the same language. Similarly, if you have the Azure Information Protection unified labeling client installed to label files from File Explorer, users who have those language versions of Windows see their label names and tooltips in their local language when they use the right-click actions for labeling.
+
+For the languages that you need to support, use the Office [language identifiers](https://docs.microsoft.com/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) (also known as language tags), and specify your own translation for the label name and tooltip.
+
+Before you run the commands in PowerShell, you must first [connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+
+
+```powershell
+$Languages = @("fr-fr","it-it","de-de")
+$DisplayNames=@("Publique","Publico","Oeffentlich")
+$Tooltips = @("Texte Français","Testo italiano","Deutscher text")
+$label = "Public"
+$DisplayNameLocaleSettings = [PSCustomObject]@{LocaleKey='DisplayName';
+Settings=@(
+@{key=$Languages[0];Value=$DisplayNames[0];}
+@{key=$Languages[1];Value=$DisplayNames[1];}
+@{key=$Languages[2];Value=$DisplayNames[2];})}
+Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSettings -Depth 3 -Compress)
+$TooltipLocaleSettings = [PSCustomObject]@{LocaleKey='Tooltip';
+Settings=@(
+@{key=$Languages[0];Value=$Tooltips[0];}
+@{key=$Languages[1];Value=$Tooltips[1];}
+@{key=$Languages[2];Value=$Tooltips[2];})}
+Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSettings -Depth 3 -Compress)
+```
 
 ## Publish sensitivity labels by creating a label policy
 
