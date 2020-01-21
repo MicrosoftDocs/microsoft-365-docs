@@ -1,5 +1,5 @@
 ---
-title: "Use a sample connector to archive Facebook data (Preview)"
+title: "Set up a connector to archive Facebook data"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,21 +12,15 @@ ms.collection: M365-security-compliance
 description: "Administrators can set up a native connector to import third-party data from data sources such as Facebook Business pages, Twitter, LinkedIn Company pages, and Instant Bloomberg. This lets you archive data from third-party data sources in Office 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage the governance of your organization's third-party data."
 ---
 
-# Use a sample connector to archive Facebook data (Preview)
+# Set up a connector to archive Facebook data
 
-The sample connector feature to archive Facebook data in Office 365 is in Preview.
-
-Use a sample connector in the Security & Compliance Center in Office 365 to import and archive data from Facebook Business pages to Office 365. After you set up and configure a sample connector, it connects to the Facebook Business page (on a scheduled basis), converts the content of Facebook items to an email message format, and then imports those items to a mailbox in Office 365.
+Use a data connector in the Security & Compliance Center in Office 365 to import and archive data from Facebook Business pages to Office 365. After you set up and configure a connector, it connects to the Facebook Business page (on a scheduled basis), converts the content of Facebook items to an email message format, and then imports those items to a mailbox in Office 365.
 
 After the Facebook data is imported, you can apply Office 365 compliance features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, [Communication compliance](communication-compliance.md), and Office 365 retention policies to the Facebook data. For example, when a mailbox is placed on Litigation Hold or assigned to a retention policy, the Facebook data is preserved. You can search third-party data using Content Search or associate the mailbox where the Facebook data is stored with a custodian in an Advanced eDiscovery case. Using a connector to import and archive Facebook data in Office 365 can help your organization stay compliant with government and regulatory policies.
 
-> [!NOTE]
-> At this time, only the sample connectors for Facebook Business pages and [Twitter](archive-twitter-data-with-sample-connector.md) is available for Preview. More sample connectors are coming soon.
-
-
 ## Prerequisites for setting up a connector for Facebook Business pages
 
-Complete the following prerequisites before you can set up and configure a sample connector in the Security & Compliance Center to import and archive data from your organization's Facebook Business pages. 
+Complete the following prerequisites before you can set up and configure a connector in the Security & Compliance Center to import and archive data from your organization's Facebook Business pages. 
 
 - You need a Facebook account for your organization's business pages (you need to sign in to this account when setting up the connector). Currently, you can only archive data from Facebook Business pages; you can't archive data from individual Facebook profiles.
 
@@ -37,7 +31,7 @@ Complete the following prerequisites before you can set up and configure a sampl
     - [Sign up for a Pay-As-You-Go Azure subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > The [free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md) that's included with your Office 365 subscription doesn't support the sample connectors in the Security & Compliance Center.
+    > The [free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md) that's included with your Office 365 subscription doesn't support the connectors in the Security & Compliance Center.
 
 - Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. To consent to this request, go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of an Office 365 global admin, and then accept the request.
 
