@@ -75,7 +75,7 @@ Before you run the commands in PowerShell, you must first [connect to Office 365
 
 
 ```powershell
-$Languages = @("fr-frR","it-it","de-de")
+$Languages = @("fr-fr","it-it","de-de")
 $DisplayNames=@("Publique","Publico","Oeffentlich")
 $Tooltips = @("Texte Français","Testo italiano","Deutscher text")
 $label = "Public"
