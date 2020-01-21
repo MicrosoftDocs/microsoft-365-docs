@@ -90,7 +90,7 @@ Settings=@(
 @{key=$Languages[0];Value=$Tooltips[0];}
 @{key=$Languages[1];Value=$Tooltips[1];}
 @{key=$Languages[2];Value=$Tooltips[2];})}
-Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSettings  -Depth 10 -Compress)
+Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSettings -Depth 10 -Compress)
 ```
 
 ## Publish sensitivity labels by creating a label policy
