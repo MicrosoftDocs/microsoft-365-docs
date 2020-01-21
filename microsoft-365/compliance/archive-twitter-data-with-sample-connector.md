@@ -1,5 +1,5 @@
 ---
-title: "Use a sample connector to archive Twitter data (Preview)"
+title: "Set up a connector to archive Twitter data"
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,21 +12,15 @@ ms.collection: M365-security-compliance
 description: "Administrators can set up a native connector to import Twitter data into Office 365. This lets you archive data from third-party data sources in Office 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage the governance of your organization's third-party data."
 ---
 
-# Use a sample connector to archive Twitter data (Preview)
+# Set up a connector to archive Twitter data
 
-The sample connector feature to archive Twitter data in Office 365 is in Preview.
+Use a connector in the Security & Compliance Center in Office 365 to import and archive data from Twitter. After you set up and configure a connector, it connects to your organization's Twitter account (on a scheduled basis), converts the content of an item to an email message format, and then imports those items to a mailbox in Office 365.
 
-Use a sample connector in the Security & Compliance Center in Office 365 to import and archive data from Twitter. After you set up and configure a sample connector, it connects to your organization's Twitter account (on a scheduled basis), converts the content of an item to an email message format, and then imports those items to a mailbox in Office 365.
-
-After Twitter data is imported, you can apply Office 365 compliance features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, [Communication compliance](communication-compliance.md), and Office 365 retention policies to the data stored in the mailbox. For example, you can search Twitter data using Content Search or associate the mailbox where the data is stored with a custodian in an Advanced eDiscovery case. Using a sample connector to import and archive Twitter data in Office 365 can help your organization stay compliant with government and regulatory policies.
-
-> [!NOTE]
-> Currently, only the sample connectors for Twitter and [Facebook Business pages](archive-facebook-data-with-sample-connector.md) are available for Preview. More sample connectors are coming soon.
-
+After Twitter data is imported, you can apply Office 365 compliance features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, Communication compliance, and Office 365 retention policies to the data stored in the mailbox. For example, you can search Twitter data using Content Search or associate the mailbox where the data is stored with a custodian in an Advanced eDiscovery case. Using a connector to import and archive Twitter data in Office 365 can help your organization stay compliant with government and regulatory policies.
 
 ## Prerequisites for setting up a connector for Twitter
 
-Complete the following prerequisites before you can set up and configure a sample connector in the Security & Compliance Center to import and archive data from your organization's Twitter account. 
+Complete the following prerequisites before you can set up and configure a connector in the Security & Compliance Center to import and archive data from your organization's Twitter account. 
 
 - You need a Twitter account for your organization; you need to sign in to this account when setting up the connector.
 
@@ -37,7 +31,7 @@ Complete the following prerequisites before you can set up and configure a sampl
     - [Sign up for a Pay-As-You-Go Azure subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > The [free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md) that's included with your Office 365 subscription doesn't support the sample connectors in the Security & Compliance Center.
+    > The [free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md) that's included with your Office 365 subscription doesn't support the connectors in the Security & Compliance Center.
 
 - Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. To consent to this request, go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of an Office 365 global admin, and then accept the request.
 
@@ -45,7 +39,7 @@ Complete the following prerequisites before you can set up and configure a sampl
 
 ## Step 1: Download the pre-built connector app package from GitHub
 
-The first step is to download the source code for the Twitter sample connector app that will use a Twitter API to connect to your Twitter account and extract data so you can import it to Office 365.
+The first step is to download the source code for the Twitter connector app that will use a Twitter API to connect to your Twitter account and extract data so you can import it to Office 365.
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet/releases). 
 2. Under the latest release, select the **SampleConnector.zip** file.
