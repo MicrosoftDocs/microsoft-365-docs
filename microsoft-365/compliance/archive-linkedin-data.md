@@ -14,7 +14,7 @@ description: "Administrators can set up a native connector to import data from a
 
 # Set up a connector to archive LinkedIn data
 
-Use a native connector in the Microsoft 365 compliance center to import and archive data from LinkedIn Company pages. After you set up and configure a connector, it connects to the account for the specific LinkedIn Company page once every 24 hours. The connector converts the messages posted to the Company page to an email message, and then imports those items to a mailbox in Microsoft 365.
+Use a connector in the Microsoft 365 compliance center to import and archive data from LinkedIn Company pages. After you set up and configure a connector, it connects to the account for the specific LinkedIn Company page once every 24 hours. The connector converts the messages posted to the Company page to an email message, and then imports those items to a mailbox in Microsoft 365.
 
 After the LinkedIn Company page data is stored in a mailbox, you can apply Microsoft 365 compliance features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, and Microsoft 365 retention policies to LinkedIn data. For example, you can search for these items using Content Search or associate the storage mailbox with a custodian in an Advanced eDiscovery case. Creating a connector to import and archive LinkedIn data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
@@ -60,4 +60,4 @@ To view more details, select the connector in the list on the **Data connectors*
 
 ## More information
 
-- LinkedIn items are imported to the LinkedIn subfolder of Inbox in the storage mailbox in Microsoft 365. They appear as email messages.
+- LinkedIn items are imported to the LinkedIn subfolder in the inbox of the storage mailbox in Microsoft 365. They appear as email messages.
