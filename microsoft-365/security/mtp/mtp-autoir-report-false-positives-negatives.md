@@ -25,7 +25,7 @@ ms.custom: autoir
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Did automated investigation and response capabilities in Microsoft Threat Protection miss or wrongly detect something? You can report it to Microsoft or adjust your alerts (if needed). Use the following table as a guide: 
+Did [automated investigation and response capabilities](mtp-autoir.md) in Microsoft Threat Protection miss or wrongly detect something? You can report it to Microsoft or adjust your alerts (if needed). Use the following table as a guide: 
 
 
 |Item  |Detected by  |How to report it  |
@@ -39,3 +39,4 @@ Did automated investigation and response capabilities in Microsoft Threat Protec
 
 - [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
 - [Learn more about the Action center](mtp-action-center.md)
+- [Proactively hunt for threats with advanced hunting in Microsoft Threat Protection](advanced-hunting-overview.md)
