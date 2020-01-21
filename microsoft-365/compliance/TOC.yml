@@ -18,8 +18,24 @@
       href: plan-for-security-and-compliance.md
 - name: Manage insider risks
   items:
-    - name: Protect user and device access
-      href: protect-access-to-data-and-services.md
+    - name: Insider risk management (preview)
+      items:
+        - name: Learn about insider risk management (preview)
+          href: insider-risk-management.md
+        - name: Get started with insider risk management (preview)
+          href: insider-risk-management-configure.md
+        - name: Create and manage insider risk policies (preview)
+          href: insider-risk-management-policies.md
+        - name: Investigate insider risk alerts (preview)
+          href: insider-risk-management-alerts.md
+        - name: Take action on insider risk cases (preview)
+          href: insider-risk-management-cases.md
+        - name: Review data with the insider risk content explorer (preview)
+          href: insider-risk-management-content-explorer.md
+        - name: Add users to insider risk policies (preview)
+          href: insider-risk-management-users.md
+        - name: Create insider risk notices (preview)
+          href: insider-risk-management-notices.md
     - name: Communication compliance (preview)
       items: 
         - name: Learn about communication compliance (preview)
@@ -57,6 +73,8 @@
           href: controlling-your-data-using-customer-key.md
         - name: Service encryption with Customer Key for Office 365 FAQ
           href: service-encryption-with-customer-key-faq.md
+    - name: Protect user and device access
+      href: protect-access-to-data-and-services.md
     - name: Customer Lockbox
       href: customer-lockbox-requests.md
 - name: Manage information protection
