@@ -23,6 +23,9 @@ To get their work done, people in your organization collaborate with others both
 
 With sensitivity labels, you can classify and help protect your sensitive content, without hindering your people’s productivity and ability to collaborate.
 
+> [!NOTE]
+> Sensitivity labels aren't available in US Government Community (GCC) organizations.
+
 Example showing sensitivity labels:
 
 ![Sensitivity label on Excel ribbon and status bar](media/Sensitivity-label-in-Excel.png)
@@ -146,7 +149,7 @@ With a label policy, you can:
 
     ![Learn more link on Sensitivity button on Ribbon](media/Sensitivity-label-learn-more.png)
 
-After you create a label policy and assign sensitivity labels to users and groups, those people will see those labels available in the Office apps in an hour or less.
+After you create a label policy that assigns sensitivity labels to users and groups, allow up to 24 hours for these users to see the labels in their Office apps.
 
 There is no limit to the number of sensitivity labels that you can create and publish, with one exception: If the label applies encryption, there is a maximum of 500 labels. However, as a best practice to lower admin overheads and reduce complexity for your users, try to keep the number of labels to a minimum. Real-word deployments have proved effectiveness to be noticeably reduced when users have more than five main labels or more than five sublabels per main label.
 
@@ -170,7 +173,7 @@ While priority matters for sensitivity label policies, it does **not** matter fo
 
 ## How to get started with sensitivity labels
 
-Getting started with sensitivity labels is a quick process:
+Get started with sensitivity labels by following this process:
 
 1. **Define the labels.** First, you want to establish your taxonomy for defining different sensitivity levels of content. Use common names or terms that make sense to your users. For example, you can start with labels such as Personal, Public, General, Confidential, and Highly Confidential. You can use sublabels to group similar labels by category. Also, when you create a label, a tool tip is required, which appears in the Office apps when a user hovers over a label option on the Ribbon.
 
@@ -181,6 +184,8 @@ Getting started with sensitivity labels is a quick process:
 Here’s the basic flow of what the admin, user, and Office app do to make sensitivity labels work.
 
 ![Diagram showing workflow for sensitivity labels](media/Sensitivity-label-flow.png)
+
+For procedural information, see [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md).
 
 ## Where sensitivity labels can appear
 

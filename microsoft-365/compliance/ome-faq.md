@@ -80,7 +80,7 @@ You can still use the previous version of OME, it will not be deprecated at this
   
 ## My organization uses Active Directory Rights Management, can I use this functionality?
 
-No. If you are using Exchange Online with Active Directory Rights Management service (AD RMS), you can't enable these new capabilities right away. Instead, you need to [migrate AD RMS to Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) first. 
+No. If you are using Exchange Online with Active Directory Rights Management service (AD RMS), you can't enable these new capabilities right away. Instead, you need to [migrate AD RMS to Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) first.
   
 ## My organization has an Exchange Hybrid deployment. Can I use this feature?
 
@@ -92,7 +92,7 @@ You can create protected messages from Outlook 2016, and Outlook 2013 for Window
   
 ## What email clients are supported to read and reply to protected emails?
 
-You can read and respond from Outlook for Windows and Mac (2013 and 2016), Outlook on the web, and Outlook mobile (Android and iOS) if you are an Office 365 user. You can also use the iOS native mail client if your organization allows it. If you are a non-Office 365 user, you can read and reply to encrypted messages on the web through your web browser.
+Office 365 users can read and respond from Outlook for Windows and Mac (2013 and 2016), Outlook on the web, and Outlook mobile (Android and iOS). You can also use the iOS native mail client if your organization allows it. If you are a non-Office 365 user, you can read and reply to encrypted messages on the web through your web browser.
   
 ## What file types are supported as attachments in protected emails? Do attachments inherit the protection policies associated with protected emails?
 
@@ -136,7 +136,7 @@ Yes! For information on customizing email messages and the OME portal, see Add y
   
 ## Are there any reporting capabilities or insights for encrypted emails?
 
-There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Security & Compliance Center](view-email-security-reports.md).
+There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Security & Compliance Center](../security/office-365-security/view-email-security-reports.md).
   
 ## Can I use message encryption with compliance features such as eDiscovery?
 
