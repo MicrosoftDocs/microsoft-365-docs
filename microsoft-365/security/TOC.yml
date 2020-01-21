@@ -73,6 +73,8 @@
                   href: mtp/mtp-autoir-results.md
                 - name: Approve or reject pending actions
                   href: mtp/mtp-autoir-actions.md
+                - name: Report false positives/negatives
+                  href: mtp/mtp-autoir-report-false-positives-negatives.md  
             - name: Advanced hunting
               items: 
                 - name: Hunting in Microsoft 365
