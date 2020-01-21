@@ -25,7 +25,18 @@ First, create and configure the sensitivity labels that you want to make availab
 
 ## Create and configure sensitivity labels
 
-1. In your labeling admin center, navigate to **Classification** > **Sensitivity labels**.
+1. In your labeling admin center, navigate to sensitivity labels:
+    
+    - Microsoft 365 compliance center: 
+        - **Solutions** > **Information protection (preview)**
+        
+        If you don't immediately see this option, first select **Show all**. 
+    
+    - Microsoft 365 security center: 
+        - **Classification** > **Sensitivity labels**
+    
+    - Office 365 Security & Compliance Center:
+        - **Classification** > **Sensitivity labels**
 
 2. On the **Labels** tab, select **+ Create a label** to start the **New sensitivity label** wizard.
 
@@ -37,7 +48,10 @@ First, create and configure the sensitivity labels that you want to make availab
 
 5. When you have created all the labels you need, review their order and if necessary, move them up or down. To change the order of a label, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters) from the overview information.
 
-To edit an existing label, select it, and then select **Edit label**. This starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3. If the label is already published by using a label policy, no extra steps are needed, but allow up to 24 hours for the changes to replicate to users and locations.
+To edit an existing label, select it, and then select **Edit label**. This starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3. 
+
+> [!NOTE]
+> If you edit a label that's already published by using a label policy, no extra steps are needed when you finish the wizard. For example, you don't need to add it to a new label policy. However, allow up to 24 hours for the changes to replicate to users and services.
 
 Until you publish your labels, they won't be available to select in apps or for services. To publish the labels, they must be added to a label policy.
 
@@ -81,7 +95,18 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 
 ## Publish sensitivity labels by creating a label policy
 
-1. In your labeling admin center, navigate to **Classification** > **Sensitivity labels**.
+1. In your labeling admin center, navigate to sensitivity labels:
+    
+    - Microsoft 365 compliance center: 
+        - **Solutions** > **Information protection (preview)**
+        
+        If you don't immediately see this option, first select **Show all**. 
+    
+    - Microsoft 365 security center: 
+        - **Classification** > **Sensitivity labels**
+    
+    - Office 365 Security & Compliance Center:
+        - **Classification** > **Sensitivity labels**
 
 2. Select the **Label policies** tab.
 
@@ -101,7 +126,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 
 Completing the wizard automatically publishes the label policy. To make changes to a published policy, simply edit it. There is no specific publish or republish action for you to select.
 
-To edit an existing label policy, select it, and then select **Edit Policy**. This starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and locations. Allow up to 24 hours for the replication to complete.
+To edit an existing label policy, select it, and then select **Edit Policy**. This starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and services.
+
+Typically, users see the labels in their Office apps within a couple of hours. However, allow up to 24 hours for your label policies and any changes to them to replicate to all users and services.
 
 ### Additional label policy settings with Office 365 Security & Compliance Center PowerShell
 
@@ -114,7 +141,7 @@ You can also use this cmdlet to add and remove labels to and from a label policy
 
 ## Next steps
 
-To configure and use your sensitivity labels for specific scenarios, see the following articles:
+To configure and use your sensitivity labels for specific scenarios, use the following articles:
 
 - [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md)
 
