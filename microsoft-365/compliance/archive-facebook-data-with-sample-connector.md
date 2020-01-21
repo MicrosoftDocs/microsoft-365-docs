@@ -41,7 +41,7 @@ Complete the following prerequisites before you can set up and configure a conne
 
 The first step is to register a new app in Azure Active Directory (AAD). This app corresponds to the web app resource that you implement in Step 4 and Step 5 for the Facebook connector. 
 
-For step-by-step instructions, see [Create an app in Azure Active Directory](deploy-facebook-connector.md#step-2-create-an-app-in-azure-active-directory).
+For step-by-step instructions, see [Create an app in Azure Active Directory](deploy-facebook-connector.md#step-1-create-an-app-in-azure-active-directory).
 
 During the completion of this step (by using the previous step-by-step instructions), you'll save the following information to a text file. These values are used in later steps in the deployment process.
 
@@ -61,7 +61,7 @@ The next step is to deploy the source code for the Facebook Business pages conne
 
 2. Click **Deploy to Azure**.
 
-For step-by-step instructions, see [Create an Azure Storage account](deploy-facebook-connector.md#step-3-create-an-azure-storage-account).
+For step-by-step instructions, see [Deploy the connector web service from GitHub to your Azure account](deploy-facebook-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 
 In the step-by-step instructions to complete this step, you provide the following information
 
@@ -75,7 +75,7 @@ After completing this step, be sure to copy the app Service URL (for example, ht
 
 The next step is to create and configure a new app on Facebook. The Facebook business pages connector that you create in Step 5 uses the Facebook web app to interact with the Facebook API to obtain data from your organization's Facebook Business pages.
 
-For step-by-step instructions, see [Register the Facebook app](deploy-facebook-connector.md#step-5-register-the-facebook-app).
+For step-by-step instructions, see [Register the Facebook app](deploy-facebook-connector.md#step-3-register-the-facebook-app).
 
 During the completion of this step (by following the step-by-step instructions), you save the following information to a text file. These values are used to configure the Facebook connector app in Step 4.
 
@@ -89,7 +89,7 @@ During the completion of this step (by following the step-by-step instructions),
 
 The next step is to add configuration settings to the Facebook connector app that you uploaded when you created the Azure web app resource in Step 1. You do this by going to the home page of your connector app and configuring it.
 
-For step-by-step instructions, see [Configure the connector web app](deploy-facebook-connector.md#step-6-configure-the-connector-web-app).
+For step-by-step instructions, see [Configure the Facebook connector app](archive-facebook-data-with-sample-connector.md#step-4-configure-the-facebook-connector-app).
 
 During the completion of this step (by following the step-by-step instructions), you provide the following information (that you've copied to a text file after completing the previous steps):
 
@@ -109,11 +109,11 @@ During the completion of this step (by following the step-by-step instructions),
 
 The final step is to set up the connector in the Microsoft 365 compliance center that will import data from your Facebook Business pages to a specified mailbox in Microsoft 365. After you complete this step, the Office 365 Import service will start importing data from your Facebook Business pages to Microsoft 365. 
 
-For step-by-step instructions, see [Set up a Facebook business pages connector](deploy-facebook-connector.md#step-7-set-up-a-custom-connector-in-the-security--compliance-center). 
+For step-by-step instructions, see [Set up a Facebook business pages connector](deploy-facebook-connector.md#step-5-set-up-a-facebook-business-pages-connector). 
 
 During the completion of this step (by following the step-by-step instructions), you provide the following information (that you've copied to a text file after completing the steps).
 
-- AAD application ID (obtiained in Step 1)
+- AAD application ID (obtained in Step 1)
 
 - Azure app service URL (obtained in Step 2; for example, https://fbconnector.azurewebsites.net)
 
