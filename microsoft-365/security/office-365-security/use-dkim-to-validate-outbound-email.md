@@ -56,9 +56,6 @@ In this article:
 
 - [Next steps: After you set up DKIM for Office 365](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
 
-> [!NOTE]
-> Microsoft 365 supports the user of either 1024- or 2048-bit DKIM. If you're using 1024- and want to configure 2048-bit DKIM stay tuned for steps to rotate your DKIM signing configuration in this article. By the end of 2019, Microsoft will support 2048-bit keys by default, for all customers.
-
 ## How DKIM works better than SPF alone to prevent malicious spoofing in Office 365
 <a name="HowDKIMWorks"> </a>
 
