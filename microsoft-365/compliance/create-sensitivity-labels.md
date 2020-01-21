@@ -51,9 +51,9 @@ First, create and configure the sensitivity labels that you want to make availab
 To edit an existing label, select it, and then select **Edit label**. This starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3. 
 
 > [!NOTE]
-> If you edit a label that's already published by using a label policy, no extra steps are needed when you finish the wizard. For example, you don't need to add it to a new label policy. However, allow up to 24 hours for the changes to replicate to users and services.
+> If you edit a label that's already published by using a label policy, no extra steps are needed when you finish the wizard. For example, you don't need to add it to a new label policy for the changes to become available to the same users. However, allow up to 24 hours for the changes to replicate to users and services.
 
-Until you publish your labels, they won't be available to select in apps or for services. To publish the labels, they must be added to a label policy.
+Until you publish your labels, they won't be available to select in apps or for services. To publish the labels, they must be [added to a label policy](#publish-sensitivity-labels-by-creating-a-label-policy).
 
 ### Additional label settings with Office 365 Security & Compliance Center PowerShell
 
