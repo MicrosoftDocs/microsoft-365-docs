@@ -232,6 +232,8 @@
           href: archive-linkedin-data.md
         - name: Set up a connector to archive Instant Bloomberg data
           href: archive-instant-bloomberg-data.md
+        - name: Set up a connector to import HR data
+          href: import-hr-data.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
     - name: Store data
