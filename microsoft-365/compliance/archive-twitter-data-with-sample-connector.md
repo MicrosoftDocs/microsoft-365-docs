@@ -49,8 +49,7 @@ The first step is to download the source code for the Twitter connector app that
 
 The next step is to register a new app in Azure Active Directory (AAD). This app corresponds to the web app resource that you implement in Step 4 for the Twitter connector. 
 
-For step-by-step instructions, see [Step 2: Create an app in Azure Active Directory](deploy-twitter-connector.md#step-2-create-an-app-in-azure-active-directory).
-
+For step-by-step instructions, see [Create an app in Azure Active Directory](deploy-twitter-connector.md#step-2-create-an-app-in-azure-active-directory)
 During the completion of this step (by following the step-by-step instructions), you'll save the following information to a text file. These values will be used in later steps in the deployment process.
 
 - AAD application ID
@@ -62,7 +61,7 @@ During the completion of this step (by following the step-by-step instructions),
 
 The Twitter connector that you deploy for your organization uploads the items from Twitter to the Azure Storage location that you create in this step. After you create a custom connector in the Security & Compliance Center (in Step 7), the Office 365 Import service will copy the Twitter data from the Azure Storage location to a mailbox in Office 365. As previous explained in the [Prerequisites](#prerequisites-for-setting-up-a-connector-for-twitter) section, you must have a valid Azure subscription to create an Azure Storage account.
 
-For step-by-step instructions, see [Step 3: Create an Azure Storage account](deploy-twitter-connector.md#step-3-create-an-azure-storage-account).
+For step-by-step instructions, see [Create an Azure storage account](deploy-twitter-connector.md#step-3-create-an-azure-storage-account).
 
 During the completion of this step (by following the step-by-step instructions), you save the connection string Uri that is generated. You use this string when creating a web app resource in Azure in Step 4.
 
@@ -70,7 +69,7 @@ During the completion of this step (by following the step-by-step instructions),
 
 The next step is to create a web app resource in Azure for the Twitter connector. 
 
-For step-by-step instructions, see [Step 4: Create a new web app resource in Azure](deploy-twitter-connector.md#step-4-create-a-new-web-app-resource-in-azure).
+For step-by-step instructions, see [Create a new web app resource in Azure](deploy-twitter-connector.md#step-4-create-a-new-web-app-resource-in-azure).
 
 During the completion of this step (by following the step-by-step instructions), you'll provide the following information (that you've copied to a text file after completing the previous steps) when creating the web app resource.
 
@@ -86,7 +85,7 @@ After completing this step, be sure to copy the Azure app service URL (for examp
 
 The next step is to create and configure a developer app on Twitter. The custom connector that you create in Step 7 uses the Twitter app to interact with the Twitter API to obtain data from your organization's Twitter account.
 
-For step-by-step instructions, see [Step 5: Create the Twitter app](deploy-twitter-connector.md#step-5-create-the-twitter-app).
+For step-by-step instructions, see [Create the Twitter app](deploy-twitter-connector.md#step-5-create-the-twitter-app).
 
 During the completion of this step (by following the step-by-step instructions), you save the following information to a text file. These values will be used to configure the Twitter connector app in Step 6.
 
@@ -99,7 +98,7 @@ During the completion of this step (by following the step-by-step instructions),
 
 The next step is to add configurations settings to the Twitter connector app that you uploaded when you created the Azure web app resource in Step 4. You do this by going to the home page of your connector app and configuring it.
 
-For step-by-step instructions, see [Step 6: Configure the connector web app](deploy-twitter-connector.md#step-6-configure-the-connector-web-app).
+For step-by-step instructions, see [Configure the connector web app](deploy-twitter-connector.md#step-6-configure-the-connector-web-app).
 
 During the completion of this step (by following the step-by-step instructions), you'll provide the following information (that you've copied to a text file after completing the previous steps):
 
@@ -115,7 +114,7 @@ During the completion of this step (by following the step-by-step instructions),
 
 The final step is to set up the custom connector in the Security & Compliance Center that imports data from your organization's Twitter account to a specified mailbox in Office 365. After you successfully complete this step, the Office 365 Import service will start importing data from Twitter to Office 365. 
 
-For step-by-step instructions, see [Step 7: Set up a custom connector in the security and compliance center](deploy-twitter-connector.md#step-7-set-up-a-custom-connector-in-the-security-and-compliance-center). 
+For step-by-step instructions, see [Set up a connector in the security and compliance center](deploy-twitter-connector.md#step-7-set-up-a-custom-connector-in-the-security-and-compliance-center). 
 
 During the completion of this step (by following the step-by-step instructions), you'll provide the following information (that you've copied to a text file after completing the steps).
 
