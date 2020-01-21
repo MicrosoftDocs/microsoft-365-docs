@@ -59,7 +59,7 @@ The details depend on whether your Office 365 subscription includes [Exchange On
 
 |If your subscription includes... |You'll see these details |
 |---------|---------|
-|EOP but not Office 365 ATP     |Malicious email that was detected and blocked by EOP<br> See [Threat Protection Status report (EOP)](../../compliance/view-email-security-reports.md#threat-protection-status-report).| 
+|EOP but not Office 365 ATP     |Malicious email that was detected and blocked by EOP<br> See [Threat Protection Status report (EOP)](view-email-security-reports.md#threat-protection-status-report).| 
 |Office 365 ATP |Malicious content and malicious email detected and blocked by EOP and Office 365 ATP<br>Aggregated count of unique email messages with malicious content blocked by the anti-malware engine, [zero-hour auto purge](zero-hour-auto-purge.md), and ATP features (including [Safe Links](atp-safe-links.md), [Safe Attachments](atp-safe-attachments.md), and [ATP anti-phishing](atp-anti-phishing.md)).<br>See [Threat Protection Status report (ATP)](view-reports-for-atp.md#threat-protection-status-report). | 
 
 To view or access the Threat Protection Status widget, you must have permissions to view Advanced Threat Protection reports. To learn more, see [What permissions are needed to view the ATP reports?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
@@ -114,7 +114,7 @@ To view or access the Recent Threat Management Alerts widget, you must have perm
   
 ## Related topics
 
-[View email security reports in the Security &amp; Compliance Center](../../compliance/view-email-security-reports.md)
+[View email security reports in the Security &amp; Compliance Center](view-email-security-reports.md)
   
 [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
   

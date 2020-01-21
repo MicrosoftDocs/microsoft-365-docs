@@ -2,10 +2,18 @@
   href: index.md
   expanded: true
   items:
-    - name: Products and services
+    - name: Manage subscriptions
       items: 
         - name: Manage third-party apps
           href: manage-saas-apps.md
+        - name: Upgrade subscriptions
+          href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: Manage self-service purchases (Users)
+          href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-users
+        - name: Manage self-service purchases (Admin)
+          href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins
+    - name: Manage licenses
+      items:
         - name: Buy licenses
           href: /office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: Assign licenses
@@ -14,10 +22,7 @@
           href: /office365/admin/manage/remove-licenses-from-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: Remove licenses from subscription
           href: /office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-        - name: Upgrade subscriptions
-          href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
     - name: Bills and payments
-      expanded: true
       items: 
         - name: Understand your invoice
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
