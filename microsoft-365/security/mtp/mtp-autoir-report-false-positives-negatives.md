@@ -28,11 +28,11 @@ ms.custom: autoir
 Did automated investigation and response capabilities in Microsoft Threat Protection miss or wrongly detect something? You can report it to Microsoft for further analysis. Use the following table as a guide:
 
 
-|Item  |Service  |How to report it  |
+|Item  |Detected by  |How to report it  |
 |---------|---------|---------|
-|Email     |Office 365         |         |
-|Row2     |         |         |
-|Row3     |         |         |
+|Email <br/>An email attachment <br/>A URL in an email message or Office document      |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
+|File or app on a device falsely detected as malware or as safe    |[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection)         |[Submit a file for malware analysis](https://www.microsoft.com/wdsi/filesubmission)         |
+|Row3     |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security) <br/>Azure Advanced Threat Protection         |         |
 
 
 ## Next steps
