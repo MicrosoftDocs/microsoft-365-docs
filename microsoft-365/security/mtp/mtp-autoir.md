@@ -33,24 +33,26 @@ Imagine having a virtual analyst in your Tier 1 / Tier 2 security operations tea
 
 AIR enables your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents. With AIR, you can reduce the cost of dealing with investigation and remediation activities and get the most out of your threat protection suite. AIR helps your security operations team by:
 
-1.	Determining whether a threat requires action;
-2.	Performing (or recommending) any necessary remediation actions;
-3.	Determining what additional investigations should occur; and
-4.	Repeating the process as necessary for other alerts.
+1. Determining whether a threat requires action;
+2. Performing (or recommending) any necessary remediation actions;
+3. Determining what additional investigations should occur; and
+4. Repeating the process as necessary for other alerts.
 
 ## The automated investigation process
 
 **Alert** > **incident** > **automated investigation** > **verdict** > **remediation action**
 
-At a high level, a triggered alert creates an incident, which can start an automated investigation. That investigation can result in one or more remediation actions. In Microsoft Threat Protection, each automated investigation correlates signals across Azure Advanced Threat Protection (Azure ATP), Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP), and Office 365 Advanced Threat Protection (Office 365 ATP), as summarized in the following table: 
+A triggered alert creates an incident, which can start an automated investigation. That investigation can result in one or more remediation actions. In Microsoft Threat Protection, each automated investigation correlates signals across Azure Advanced Threat Protection (Azure ATP), Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP), and Office 365 Advanced Threat Protection (Office 365 ATP), as summarized in the following table: 
 
 |Entities |Threat protection services  |
 |---------|---------|
 |Devices (also referred to as endpoints)     |[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |Email content (files and messages in mailboxes)     |[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-
 Each investigation generates verdicts (*Malicious*, *Suspicious*, or *Clean*) for each piece of evidence investigated. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization’s security operations team. Pending and completed actions are listed in the [Action center](mtp-action-center.md).
+
+> [!TIP]
+> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
 While an investigation is running, any other related alerts that arise are added to the investigation until it completes. If an incriminated entity is seen elsewhere, the automated investigation will expand its scope to include that entity, and a general security playbook will run. 
 
