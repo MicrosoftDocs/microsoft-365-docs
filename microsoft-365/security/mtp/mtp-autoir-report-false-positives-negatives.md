@@ -25,6 +25,14 @@ ms.custom: autoir
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
+Did automated investigation and response capabilities in Microsoft Threat Protection miss or wrongly detect something? You can report it to Microsoft for further analysis. Use the following table as a guide:
+
+
+|Item  |Service  |How to report it  |
+|---------|---------|---------|
+|Email     |Office 365         |         |
+|Row2     |         |         |
+|Row3     |         |         |
 
 
 ## Next steps
