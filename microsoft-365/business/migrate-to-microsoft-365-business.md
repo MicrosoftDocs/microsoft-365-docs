@@ -63,7 +63,7 @@ It takes Microsoft a few minutes to set up your new service plans. To check on p
 1. Once your plan is ready, you might need to complete some additional setup steps in the admin center. In the navigation pane, select **Home** to complete any additional setup steps.
 
 > [!NOTE]
-> You'll receive a prorated refund for the Ofifce 365 licenses that you no longer need. Your bank account or credit card will be charged about two days after you set up the new plan.
+> You'll receive a prorated refund for the Office 365 licenses that you no longer need. Your bank account or credit card will be charged about two days after you set up the new plan.
   
 ## Protect user devices and files
 

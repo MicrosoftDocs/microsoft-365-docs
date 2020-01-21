@@ -3,7 +3,7 @@ title: "How to help ensure that a message isn't marked as spam"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 01/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,7 +18,7 @@ description: "As an Exchange Online or Exchange Online Protection (EOP) administ
 
 # How to help ensure that a message isn't marked as spam
 
-As an Exchange Online or Exchange Online Protection (EOP) administrator, you can help ensure that an email message traveling through the service isn't marked as spam. See the updated version of the tips and procedures to accomplish this in [How to prevent good email from being marked as spam in Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam).
+As an Exchange Online or Exchange Online Protection (EOP) administrator, you can help ensure that an email message traveling through the service isn't marked as spam. See the updated version of the tips and procedures to accomplish this in [How to prevent good email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md).
 
 ## See also
 

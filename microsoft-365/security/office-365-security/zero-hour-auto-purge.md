@@ -62,7 +62,7 @@ ZAP will not move any message to Quarantine which is in the process of Dynamic D
 
 ## How to see if ZAP moved your message
 
-To determine if ZAP moved your message, you can use either the [Threat Protection Status report](../../compliance/view-email-security-reports.md#threat-protection-status-report) or [Threat Explorer (and real-time detections)](threat-explorer.md).
+To determine if ZAP moved your message, you can use either the [Threat Protection Status report](view-email-security-reports.md#threat-protection-status-report) or [Threat Explorer (and real-time detections)](threat-explorer.md).
 
 ## Disable ZAP
 
@@ -96,7 +96,7 @@ For detailed syntax and parameter information, see [Set-HostedContentFilterPolic
 
 ### What happens if a legitimate message is moved to the junk mail folder?
 
-You should follow the normal reporting process for [false-positives](../../compliance/prevent-email-from-being-marked-as-spam.md). The only reason the message would be moved from the inbox to the junk mail folder would be because the service has determined that the message was spam or malicious.
+You should follow the normal reporting process for [false-positives](prevent-email-from-being-marked-as-spam.md). The only reason the message would be moved from the inbox to the junk mail folder would be because the service has determined that the message was spam or malicious.
 
 ### What if I use the Office 365 quarantine instead of the junk mail folder?
 
