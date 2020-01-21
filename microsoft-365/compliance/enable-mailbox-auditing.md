@@ -38,7 +38,7 @@ Here are some benefits of mailbox auditing on by default:
 
 To verify that mailbox auditing on by default is turned on for your organization, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
 
-```
+```PowerShell
 Get-OrganizationConfig | Format-List AuditDisabled
 ```
 
@@ -145,13 +145,13 @@ Mailbox auditing on by defaults adds a new *DefaultAuditSet* property to all mai
 
 To display the value on user mailboxes or shared mailboxes, replace \<MailboxIdentity\> with the name, alias, email address, or user principal name (username) of the mailbox and run the following command in Exchange Online PowerShell:
 
-```
+```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
 To display the value on Office 365 group mailboxes, replace \<MailboxIdentity\> with the name, alias, or email address of the shared mailbox and run the following command in Exchange Online PowerShell:
 
-```
+```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
 ```
 
@@ -182,19 +182,19 @@ To see the mailbox actions that are currently being logged on user mailboxes or 
 
 #### Owner actions
 
-```
+```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditOwner
 ```
 
 #### Delegate actions
 
-```
+```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditDelegate
 ```
 
 #### Admin actions
 
-```
+```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditAdmin
 ```
 
@@ -219,19 +219,19 @@ You can use two different methods to specify the mailbox actions:
 
 This example changes the admin mailbox actions for the mailbox named "Gabriela Laureano" by overwriting the default actions with SoftDelete and HardDelete.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Gabriela Laureano" -AuditAdmin HardDelete,SoftDelete
 ```
 
 This example adds the MailboxLogin owner action to the mailbox laura@contoso.onmicrosoft.com.
 
-```
+```PowerShell
 Set-Mailbox -Identity laura@contoso.onmicrosoft.com -AuditOwner @{Add="MailboxLogin"}
 ```
 
 This example removes the MoveToDeletedItems delegate action for the Team Discussion mailbox.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Team Discussion" -AuditDelegate @{Remove="MoveToDeletedItems"}
 ```
 
@@ -245,7 +245,7 @@ Regardless of the method you use, customizing the audited mailbox actions on use
 
 If you customized the mailbox actions that are audited on a user mailbox or a shared mailbox, you can restore the default mailbox actions for one or all logon types by using this syntax:
 
-```
+```PowerShell
 Set-Mailbox -Identity <MailboxIdentity> -DefaultAuditSet <Admin | Delegate | Owner>
 ```
 
@@ -255,13 +255,13 @@ You can specify multiple *DefaultAuditSet* values separated by commas
 
 This example restores the default audited mailbox actions for all logon types on the mailbox mark@contoso.onmicrosoft.com.
 
-```
+```PowerShell
 Set-Mailbox -Identity mark@contoso.onmicrosoft.com -DefaultAuditSet Admin,Delegate,Owner
 ```
 
 This example restores the default audited mailbox actions for the Admin logon type on the mailbox chris@contoso.onmicrosoft.com, but leaves the customized audited mailbox actions for the Delegate and Owner logon types.
 
-```
+```PowerShell
 Set-Mailbox -Identity chris@contoso.onmicrosoft.com -DefaultAuditSet Admin
 ```
 
@@ -277,7 +277,7 @@ Restoring he default audited mailbox actions for a logon type has the following 
 
 You can turn off mailbox auditing on by default for your entire organization by running the following command in Exchange Online PowerShell:
 
-```
+```PowerShell
 Set-OrganizationConfig -AuditDisabled $true
 ```
 
@@ -297,7 +297,7 @@ Turning off mailbox auditing on by default has the following results:
 
 To turn mailbox auditing back on for your organization, run the following command in Exchange Online PowerShell:
 
-```
+```PowerShell
 Set-OrganizationConfig -AuditDisabled $false
 ```
 
@@ -315,13 +315,13 @@ However, you can still use the **Set-MailboxAuditBypassAssociation** cmdlet in E
 
 To bypass mailbox audit logging for a specific user, replace \<MailboxIdentity\> with the name, email address, alias, or user principal name (username) of the user and run the following command:
 
-```
+```PowerShell
 Set-MailboxAuditBypassAssociation -Identity <MailboxIdentity> -AuditByPassEnabled $true
 ```
 
 To verify that auditing is bypassed for the specified user, run the following command:
 
-```
+```PowerShell
 Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List AuditByPassEnabled
 ```
 
@@ -329,7 +329,11 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
 
 ## More information
 
-- Only users with E5 licenses or mailboxes where mailbox audit logging was manually enabled by an admin will return mailbox audit log events in audit log searches in the Security & Compliance Center or via the Office 365 Management Activity API.
+- Only the following users will return mailbox audit log events in audit log searches in the Security & Compliance Center or via the Office 365 Management Activity API:
+
+  - Users with E5 licenses.
+
+  - Mailboxes where mailbox audit logging was manually enabled by an admin.
 
   To retrieve mailbox audit log entries for users without E5 licenses, you can:
 
@@ -339,7 +343,7 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
 
     - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-mailboxauditlogsearch) to search the mailbox audit log for specific users and to have the results sent via email to specified recipients.
 
-  - Use the Exchange admin center (EAC) in Exchange Online to do the following:
+  - Use the Exchange admin center (EAC) in Exchange Online to do the following actions:
 
     - [Export mailbox audit logs](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
@@ -368,7 +372,7 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
 
     - You can run the following command in Exchange Online PowerShell to display the size and number of items in the Audits subfolder in the Recoverable Items folder:
 
-      ```
+      ```PowerShell
       Get-MailboxFolderStatistics -Identity <MailboxIdentity> -FolderScope RecoverableItems | Where-Object {$_.Name -eq 'Audits'} | Format-List FolderPath,FolderSize,ItemsInFolder
       ```
 
