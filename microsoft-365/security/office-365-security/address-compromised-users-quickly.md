@@ -24,4 +24,4 @@ As you might already know, [Office 365 Advanced Threat Protection Plan 2](office
 
 Read this article to learn more about the compromised user security playbook and how it can help your organization.
 
-## 
+
