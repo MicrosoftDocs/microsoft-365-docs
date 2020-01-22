@@ -120,8 +120,8 @@ The pre-configured templates for Compliance Score are:
 13. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
 14. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
 15. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-16. [SOC (Service Organization Control) 1](https://go.microsoft.com/fwlink/?linkid=2115184)
-17. [SOC (Service Organization Control) 2](https://go.microsoft.com/fwlink/?linkid=2115184)
+16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
+17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
 > [!NOTE]
 > During public preview, go to Compliance Manager to create and manage your templates.
