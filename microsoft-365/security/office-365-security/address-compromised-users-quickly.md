@@ -22,6 +22,9 @@ As you might already know, [Office 365 Advanced Threat Protection Plan 2](office
 - Limit the scope of a breach when an account is compromised; and 
 - Respond to compromised users more effectively and efficiently.
 
-Read this article to learn more about the compromised user security playbook and how it can help your organization.
+## Compromised user alerts
+
+## Investigate and respond to a compromised user
+
 
 
