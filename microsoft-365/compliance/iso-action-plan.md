@@ -68,4 +68,3 @@ Secure personal data at rest and in transit, detect and respond to data breaches
 ## Learn more
 
 - Microsoft Trust Center: [ISO/IEC 27001:2013 Information Security Management Standards](offering-iso-27001.md)
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
