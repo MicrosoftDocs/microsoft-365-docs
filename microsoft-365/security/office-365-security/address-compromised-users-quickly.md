@@ -17,3 +17,5 @@ description: "Learn how to speed up the process of detecting and addressing comp
 
 # Address compromised user accounts with automated investigation and response
 
+Office 365 Advanced Threat Protection Plan 2 includes powerful automated investigation and response capabilities. Recently, those capabilities were enhanced to include a compromised user security playbook. This enables your organization's security team to:
+- Identify compromised user accounts
