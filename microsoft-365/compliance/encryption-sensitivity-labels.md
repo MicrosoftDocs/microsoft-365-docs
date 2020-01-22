@@ -180,17 +180,16 @@ Before a sensitivity label is applied to content, it's possible that a user alre
 
 This table describes what happens to existing encryption when a sensitivity label is applied to that content. 
 
-The label configuration setting to remove protection is available only in the Azure portal.
 <br/>
 <br/>
 
 | |**User applies a sensitivity label with encryption turned off**|**User applies a sensitivity label with encryption turned on**|**User applies a label with Remove Protection**<sup>1</sup>|
 |:-----|:-----|:-----|:-----|
 |**Do Not Forward**|Email: Encryption is removed<br/>Document: Encryption is preserved|Label encryption is applied|**Do Not Forward** is removed|
-|**Permissions specified by a user**<sup>1</sup>|Encryption is preserved|Label encryption is applied|Encryption is removed|
+|**Permissions specified by a user**|Encryption is preserved|Label encryption is applied|Encryption is removed|
 |**Protection template**|Encryption is preserved|Label encryption is applied|Encryption is removed|
 
-<sup>1</sup>Supported only by the Azure Information Protection unified labeling client.
+<sup>1</sup> This label setting to remove encryption is available only in the Azure portal.
 
 ## Considerations for encrypted content
 
