@@ -74,5 +74,3 @@ These actions take longer and build on previous work.
 ## Learn more
 
 Learn more about [Microsoft and the NIST Cyber Security Framework (CSF)](offering-nist-csf.md), including NIST 800-53.
-
-[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
