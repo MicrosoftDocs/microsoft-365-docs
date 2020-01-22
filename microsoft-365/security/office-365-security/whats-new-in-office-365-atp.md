@@ -58,7 +58,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 ## Office 365 ATP Plan 1 and Plan 2
 
-Did you know that Office 365 ATP is available in two plans? There's Office 365 ATP Plan 1, and Office 365 ATP Plan 2. [Learn more about what each plan includes](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
+Did you know that Office 365 ATP is available in two plans? [Learn more about what each plan includes](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
 ## See also
 
