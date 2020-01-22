@@ -41,6 +41,8 @@ You can also now apply sensitivity labels to Microsoft Teams, Office 365 groups,
 
 You always have the choice to opt out of this preview at any time.
 
+Watch the following video to see these new capabilities in action:
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
 ## Requirements
