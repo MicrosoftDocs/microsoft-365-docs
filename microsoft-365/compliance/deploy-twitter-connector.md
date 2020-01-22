@@ -132,72 +132,58 @@ The Twitter developer app is now ready to use.
 
    ![Click Configure to display sign in page](media/FBCimage42.png)
 
-3. In the Tenant Id box, type or paste your tenant Id (that you obtained in Step 2). In the password box, type or paste the APISecretKey (that you obtained in Step 2), and then click **Set Configuration Settings** to display the **Configuration Details** page.
+3. In the Tenant Id box, type or paste your tenant Id (that you obtained in Step 2). In the password box, type or paste the APISecretKey (that you obtained in Step 2), and then click **Set Configuration Settings** to display the configuration details page.
 
    ![Sign in using tenant Id and API secret key](media/TCimage35.png)
 
-4. Under **Configuration Details**, enter the following configuration settings 
+4. Enter the following configuration settings 
 
-   - **Twitter Api Key** – The app ID for the Twitter application that you created in Step 3.
-   - **Twitter Api Secret Key** – The API secret key for the Twitter application that you created in Step 3.
-   - **Twitter Access Token** – The access token that you created in Step 3.
-   - **Twitter Access Token Secret** – The access token secret that you created in Step 3.
-   - **AAD Application ID** – The application ID for the Azure Active Directory app that you created in Step 1
-   - **AAD Application Secret** – The value for the APISecretKey secret that you created in Step 1.
-   - **AAD Application Uri** – The AAD application Uri obtained in Step 1; for example, `https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213`.
-   - **App Insights Instrumentation Key** – Leave this box blank.
+   - **Twitter Api Key:** The app ID for the Twitter application that you created in Step 3.
+   - **Twitter Api Secret Key:** The API secret key for the Twitter application that you created in Step 3.
+   - **Twitter Access Token:** The access token that you created in Step 3.
+   - **Twitter Access Token Secret:** The access token secret that you created in Step 3.
+   - **AAD Application ID:** The application ID for the Azure Active Directory app that you created in Step 1
+   - **AAD Application Secret:** The value for the APISecretKey secret that you created in Step 1.
 
 5. Click **Save** to save the connector settings.
 
 ## Step 5: Set up Twitter connector in the Microsoft 365 compliance center
 
-1. Go to <https://compliance.mcirosoft.com> and then click **Data connectors**.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** in the left nav.
 
-   ![Go to the Data connectors page in the Microsoft 365 compliance center](media/FBCimage44.png)
+2. On the **Data connectors (preview)** page under **Twitter**, click **View**.
 
-2.  Click **View** and then click **Add connector**.
+3. On the **Twitter** page, click **Add connector**.
 
-    ![Add a Facebook connector configure the connector](media/FBCimage46.png)
+4. On the **Terms of service** page, click **Next**.
 
-3. On the **Add Connector App** page, enter the following information and then click **Validate connector**.
+5. On the **Add credentials for your connector app** page, enter the following information and then click **Validate connection**.
 
-    - In the first box, type a name for the connector, such as **Twitter help handle**.
-    - In the second box, type or paste the Azure app service URL; for example `https://twitterconnector.azurewebsites.net`.
-    - In the third box, type or paste the value of the APISecretKey that you added in Step 2.
-    - In the fourth box, type or paste the value of the Application (client) ID also called as AAD Application ID that you created in Step 1.
+   ![Enter connector app credentials](media/TCimage38.png)
 
-   After the connector is successfully validated, click **Next**.
+    - In the **Name** box, type a name for the connector, such as **Twitter help handle**.
+    - In the **Connector URL** box, type or paste the Azure app service URL; for example `https://twitterconnector.azurewebsites.net`.
+    - In the **Password** box, type or paste the value of the APISecretKey that you created in Step 2.
+    - In the **Azure App ID** box, type or paste the value of the Azure Application App Id (also called the *client ID*) that you obtained in Step 1.
 
-   ![Enter connector app settings](media/TCimage38.png)
+6. After the connector is successfully validated, click **Next**.
 
-4. Type or paste the APISecretKey again and then click  **Login to Connector Service**.
+7. On the **Authorize Microsoft 365 to import data** page, type or paste the APISecretKey again and then click  **Login web app**.
 
-   ![Type API secret key to log into connector service](media/TCimage40.png)
+8. Click **Login with Twitter**.
 
-5. Click **Continue with Twitter**.
-
-6. On the Twitter sign in page, sign in using the credentials for the account for your organization’s Twitter account.
+9. On the Twitter sign in page, sign in using the credentials for your organization’s Twitter account.
 
    ![Sign in to Twitter account](media/TCimage42.png)
 
    After you sign in, the Twitter page will display the following message, "Twitter Connector Job Successfully set up."
 
-7. Click **Finish** to complete setting up the Twitter connector.
+10. Click **Continue** to complete setting up the Twitter connector.
 
-8. On the **Set Filters** page, you can apply a filter to import (and archive) items that are a certain age. Click **Next**.
+11. On the **Set Filters** page, you can apply a filter to import (and archive) items that are a certain age. Click **Next**.
 
-   ![Configure filter to import items of a certain age](media/TCimage44.png)
+12. On the **Choose storage location** page, type the email address of Microsoft 365 mailbox that the Twitter items will be imported to, and then click **Next**.
 
-9. On the **Set Storage Account** page, type the email address of an Microsoft 365 mailbox that the Twitter items will be imported to.
+13. Review your settings and then click **Finish** to complete the connector setup in the compliance center.
 
-    ![Specify an Office 365 mailbox to import Twitter items to](media/TCimage45.png)
-
-10. Review your settings and then click **Finish** to complete the connector setup in the Security & Compliance Center.
-
-    ![Review settings and then click Finish](media/TCimage46.png)
-
-    ![Screen showing that connector setup is complete](media/TCimage47.png)
-
-11. Go to the **Connectors** tab on the **Data connectors** page to see the progress of the import process.
-
-    ![New connector displayed in security and compliance center](media/TCimage48.png)
+14. In the compliance center, go to the **Data connectors** page, and click the **Connectors** tab to see the progress of the import process.
