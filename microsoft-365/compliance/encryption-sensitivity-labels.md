@@ -35,24 +35,27 @@ Finally, as an admin, when you create a sensitivity label, you can choose either
 - **Assign permissions now**, so that you determine exactly which users get which permissions to content with that label.
 - **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
 
-The encryption settings are available when you create a sensitivity label in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center. In the left nav, choose **Classification** > **Sensitivity label** > **Create a label**.
+The encryption settings are available when you [create a sensitivity label](create-sensitivity-labels.md) in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center.
 
 ## How encryption works
 
-Encryption uses Azure Rights Management (Azure RMS). Azure RMS uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)
+Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms).
+
+When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users) from the Azure Information Protection documentation.
 
 ## How to turn on encryption for a sensitivity label
 
-To begin, toggle **Encryption** to **On**, and then choose whether to:
+When you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) toggle **Encryption** to **On**, and then choose whether to:
 
-- **Assign permissions now**, so that you can determine exactly which users get which permissions to content with that label. For more information, see the next section [Assign permissions now](#assign-permissions-now).
-- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done. For more information, see the [Let users assign permissions](#let-users-assign-permissions) section on this page.
+- **Assign permissions now**, so that you can determine exactly which users get which permissions to content that has the label applied. For more information, see the next section [Assign permissions now](#assign-permissions-now).
+- **Let users assign permissions** when your users apply the label to content. With this option, you can allow people in your organization some flexibility that they might need to collaborate and get their work done. For more information, see the [Let users assign permissions](#let-users-assign-permissions) section on this page.
 
 For example, if you have a sensitivity label named **Highly Confidential** that will be applied to your most sensitive content, you might want to decide now who gets what type of permissions to that content.
 
 Alternatively, if you have a sensitivity label named **Business Contracts**, and your organization's workflow requires that your people collaborate on this content with different people on an ad hoc basis, you might want to allow your users to decide who gets permissions when they assign the label. This flexibility both helps your users' productivity and reduces the requests for your admins to update or create new sensitivity labels to address specific scenarios.
 
 ![Option to add user or admin defined permissions](media/sensitivity-label-user-or-admin-defined-permissions.png)
+
 
 ## Assign permissions now
 
@@ -66,22 +69,21 @@ Use the following options to control who can access email or documents to which 
 
 ### Rights Management use license for offline access
 
-When a user opens a document or email offline that’s been protected by a sensitivity label, an Azure Rights Management use license for that content is granted to the user. This use license is a certificate that contains the user's usage rights for the document or email, and the encryption key that was used to encrypt the content. The use license also contains an expiration date if this has been set, and how long the use license is valid.
+When a user opens a document or email that’s been protected by encryption from the Azure Rights Management service, an Azure Rights Management use license for that content is granted to the user. This use license is a certificate that contains the user's usage rights for the document or email, and the encryption key that was used to encrypt the content. The use license also contains an expiration date if this has been set, and how long the use license is valid.
 
 If no expiration date has been set, the default use license validity period for a tenant is 30 days. For the duration of the use license, the user is not reauthenticated or reauthorized for the content. This process lets the user continue to open the protected document or email without an internet connection. When the use license validity period expires, the next time the user accesses the protected document or email, the user must be reauthenticated and reauthorized.
 
-In addition to reauthentication, the policy and user group membership is reevaluated. This means that users could experience different access results for the same document or email if there are changes in the policy or group membership from when they last accessed the content.
+In addition to reauthentication, the encryption settings and user group membership is reevaluated. This means that users could experience different access results for the same document or email if there are changes in the encryption settings or group membership from when they last accessed the content.
 
 To learn how to change the default 30-day setting, see [Rights Management use license](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
 ### Assign permissions to specific users or groups
 
-You can grant permissions to specific people so that only they can interact with the labeled content.
+You can grant permissions to specific people so that only they can interact with the labeled content:
 
-Doing so is a straightforward two-step process:
+1. First, add users or groups that will be assigned permissions to the labeled content.
 
-1. First you add users or groups that will be assigned permissions to the labeled content.
-2. Then you choose which permissions those users have for the labeled content.
+2. Then, you choose which permissions those users should have for the labeled content.
 
 ![Options to assign permissions to users](media/Sensitivity-Assign-permissions-settings.png)
 
@@ -116,11 +118,11 @@ To do this, add users or groups, assign them permissions, and save those setting
 
 #### Rights Management issuer (user applying the sensitivity label) always has Full Control
 
-Encryption for a sensitivity label uses Azure RMS. When a user applies a sensitivity label to protect a document or email by using Azure RMS, that user becomes the Rights Management issuers for that content.
+Encryption for a sensitivity label uses the Azure Rights Management service from Azure Information Protection. When a user applies a sensitivity label to protect a document or email by using encryption, that user becomes the Rights Management issuer for that content.
 
 The Rights Management issuer is always granted Full Control permissions for the document or email, and in addition:
 
-- If the protection settings include an expiration date, the Rights Management issuer can still open and edit the document or email after that date.
+- If the encryption settings include an expiration date, the Rights Management issuer can still open and edit the document or email after that date.
 - The Rights Management issuer can always access the document or email offline.
 - The Rights Management issuer can still open a document after it is revoked.
 
@@ -154,7 +156,7 @@ In Outlook, when a user applies a sensitivity label that lets them assign permis
 
 When the Do Not Forward option is applied to an email, the email is encrypted and recipients must be authenticated. Then, the recipients cannot forward it, print it, or copy from it. For example, in the Outlook client, the Forward button is not available, the Save As and Print menu options are not available, and you cannot add or change recipients in the To, Cc, or Bcc boxes.
 
-Unprotected Office documents that are attached to the email automatically inherit the same restrictions. The usage rights applied to these documents are Edit Content, Edit; Save; View, Open, Read; and Allow Macros. If the user wants different usage rights for an attachment, or the attachment is not an Office document that supports this inherited protection, the user needs to protect the file before attaching it to the email.
+Unencrypted Office documents that are attached to the email automatically inherit the same restrictions. The usage rights applied to these documents are Edit Content, Edit; Save; View, Open, Read; and Allow Macros. If the user wants different usage rights for an attachment, or the attachment is not an Office document that supports this inherited protection, the user needs to protect the file before attaching it to the email.
 
 ### Word, PowerPoint, and Excel permissions
 
@@ -173,8 +175,9 @@ The user can:
 Before a sensitivity label is applied to content, it's possible that a user already encrypted the content by applying some other protection setting. For example, a user might have applied:
 
 - The **Do Not Forward** option.
-- Custom protection by using the Azure Information Protection unified labeling client.
-- An Azure Rights Management Service (RMS) template that encrypts the content but is not associated with a label.
+- Custom protection by using the Azure Information Protection client (classic).
+- User-defined permissions by using the Azure Information Protection client (classic client or unified labeling client)
+- An Azure Rights Management protection template that encrypts the content but is not associated with a label.
 
 This table describes what happens to existing encryption when a sensitivity label is applied to that content.
 <br/>
@@ -183,24 +186,43 @@ This table describes what happens to existing encryption when a sensitivity labe
 | |**User applies a sensitivity label with encryption turned off**|**User applies a sensitivity label with encryption turned on**|**User applies a label with Remove Protection**<sup>1</sup>|
 |:-----|:-----|:-----|:-----|
 |**Do Not Forward**|Email - Protection is removed<br/>Document - Protection is preserved|Label protection is applied|**Do Not Forward** is removed|
-|**Custom protection**<sup>1</sup>|Protection is preserved|Label protection is applied|Custom protection is removed|
-|**Azure RMS template**|Protection is preserved|Label protection is applied|Custom protection is removed|
+|**Custom protection or user-defined protection**<sup>1</sup>|Protection is preserved|Label protection is applied|Custom protection is removed|
+|**Protection template**|Protection is preserved|Label protection is applied|Custom protection is removed|
 
-<sup>1</sup>This is supported only in the Azure Information Protection labeling client.
+<sup>1</sup>This is supported only by the Azure Information Protection labeling client.
 
-## Storing encrypted content in OneDrive and SharePoint
+## Considerations for encrypted content
 
-Be aware that when encryption is applied to files stored in OneDrive and SharePoint, the service cannot process the contents of these files. This means that features such as co-authoring, eDiscovery, search, Delve, and other collaborative features do not work. Also, data loss prevention (DLP) policies can work only with the metadata (including Office 365 labels) but not the contents of encrypted files (such as credit card numbers within files).
+Encrypting your most sensitive documents and emails helps to ensure that only authorized people can access this data. However, there are some considerations to take into account:
 
-This applies only to content stored in OneDrive and SharePoint. In Exchange Online, mail flow rules (also known as transport rules) use the [super user account](https://docs.microsoft.com/azure/information-protection/configure-super-users) so that they can scan encrypted content and enforce DLP policies.
+- If your organization hasn't [enabled sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files):
+    
+    - Search, eDiscovery, and Delve will not work for encrypted files. 
+    - DLP policies work for the metadata of these encrypted files (including retention label information) but not the content of these files (such as credit card numbers within files). 
+
+- For multiple users to edit an encrypted file at the same time, they must all be using Office for the web. If this isn't the case, and the file is already open:
+    
+    - In Office apps (Windows, Mac, Android, and iOS), users see a **File In Use** message with the name of the person who has checked it out for editing. They can then view a read-only copy, save and edit a copy of the file, or cancel.
+    - In Office for the web, users see an error message that they can't edit the document with other people. They can then select **Open in Reading View**.
+
+- The [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) functionality in Office apps (Windows, Mac, Android, and iOS) is disabled for encrypted files. Users see a message that the file has restricted permissions that must be removed before AutoSave can be turned on.
+
+- Encrypted files might take longer to open in Office apps (Windows, Mac, Android, and iOS).
+
+- The following actions for encrypted files aren't supported from Office apps (Windows, Mac, Android, and iOS), and users see an error message that something went wrong. However, SharePoint can be used as an alternative:
+    
+    - View, restore, and save copies of previous versions. As an alternative, users can do these actions in SharePoint when you [enable and configure versioning for a list or library](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37). 
+    - Change the name or location of files. As an alternative, users can [rename a file, folder, or link in a document library](https://support.office.com/article/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) from SharePoint.
+
+For the best collaboration experience, we recommend you use [sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) and Office for the web. 
 
 ## Important prerequisites
 
-Before you can use encryption, you might need to perform these tasks.
+Before you can use encryption, you might need to do some configuration tasks.
 
-### Activating Azure Rights Management
+### Activating protection from Azure Information Protection
 
-To use encryption in sensitivity labels, the Azure Rights Management service needs to be activated in your tenant. In newer tenants, the service is on by default, but you might need to manually activate the service. For more information, see [Activating Azure Rights Management](https://docs.microsoft.com/azure/information-protection/activate-service).
+For sensitivity labels to apply encryption, the protection service (Azure Rights Management) from Azure Information Protection must be activated for your tenant. In newer tenants, this is the default setting, but you might need to manually activate the service. For more information, see [Activating the protection service from Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
 
 ### Configure Exchange for Azure Information Protection
 
