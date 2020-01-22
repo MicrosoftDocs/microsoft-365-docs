@@ -300,7 +300,7 @@ Click one of the following links to go to a specific table.
 |[Role administration activities](#role-administration-activities)|[Directory administration activities](#directory-administration-activities)|[eDiscovery activities](#ediscovery-activities)|
 |[Advanced eDiscovery activities](#advanced-ediscovery-activities)|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Yammer activities](#yammer-activities)|
-|[Microsoft Power Automate activities](#microsoft-flow-activities)|[Microsoft Power Apps activities](#microsoft-powerapps)|[Microsoft Stream activities](#microsoft-stream-activities)|
+|[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|[Microsoft Stream activities](#microsoft-stream-activities)|
 |[Microsoft Forms activities](#microsoft-forms-activities)|[Exchange admin activities](#exchange-admin-audit-log)|||
 ||||
 
@@ -769,7 +769,7 @@ The following table lists the user and admin activities in Yammer that are logge
 
 You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Microsoft Flow audit events now available in Security & Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
 
-### Microsoft Power Apps
+### Microsoft Power Apps activities
 
 You can search the audit log for app-related activities in Power Apps. These activities include creating, launching, and publishing an app. Assigning permissions to apps is also audited. For a description of all Power Apps activities, see [Activity logging for Power Apps](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited).
 
