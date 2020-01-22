@@ -174,7 +174,7 @@ The user can:
 
 Before a sensitivity label is applied to content, it's possible that a user already encrypted the content by applying some other protection setting. For example, a user might have applied:
 
-- The **Do Not Forward** email option.
+- The **Do Not Forward** email encryption option.
 - Permissions specified by a user, such as user-defined permissions when prompted by a label
 - An Azure Rights Management protection template that encrypts the content independently from a label.
 
@@ -185,7 +185,7 @@ This table describes what happens to existing encryption when a sensitivity labe
 
 | |**User applies a sensitivity label with encryption turned off**|**User applies a sensitivity label with encryption turned on**|**User applies a label with Remove Protection**<sup>1</sup>|
 |:-----|:-----|:-----|:-----|
-|**Do Not Forward**|Email: Encryption is removed<br/>Document: Encryption is preserved|Label encryption is applied|**Do Not Forward** is removed|
+|**Do Not Forward**|Email: Encryption is removed<br/>Document: Encryption is preserved|Label encryption is applied|Encryption is removed|
 |**Permissions specified by a user**|Encryption is preserved|Label encryption is applied|Encryption is removed|
 |**Protection template**|Encryption is preserved|Label encryption is applied|Encryption is removed|
 
