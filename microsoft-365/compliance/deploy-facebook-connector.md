@@ -163,17 +163,17 @@ This article contains the step-by-step process to deploy a connector that uses t
  
    ![Click Configure to display a sign in page](media/FBCimage42.png)
 
-3. In the Tenant Id box, type or paste your tenant Id (that you obtained in Step 2). In the password box, type or paste the APISecretKey (that you obtained in Step 2), and then click **Set Configuration Settings** to display the **Configuration Details** page.
+3. In the Tenant Id box, type or paste your tenant Id (that you obtained in Step 2). In the password box, type or paste the APISecretKey (that you obtained in Step 2), and then click **Set Configuration Settings** to display the configuration details page.
 
     ![Sign in using your tenant Id and password and go to configuration details page](media/FBCimage43.png)
 
-4. Under **Configuration Details**, enter the following configuration settings 
+4.Enter the following configuration settings 
 
-   - **Facebook application ID** – The app ID for the Facebook application that you obtained in Step 5.
-   - **Facebook application secret** – The app secret for the Facebook application that you obtained in Step 5.
-   - **Facebook webhooks verify token** – The verify token that you created in Step 5.
-   - **AAD application ID** – The application ID for the Azure Active Directory app that you created in Step 2.
-   - **AAD application secret** – The value for the APISecretKey secret that you created in Step 4.
+   - **Facebook application ID:** The app ID for the Facebook application that you obtained in Step 3.
+   - **Facebook application secret:** The app secret for the Facebook application that you obtained in Step 3.
+   - **Facebook webhooks verify token:** The verify token that you created in Step 3.
+   - **AAD application ID:** The application ID for the Azure Active Directory app that you created in Step 1.
+   - **AAD application secret:** The value for the APISecretKey secret that you created in Step 1.
 
 5. Click **Save** to save the connector settings.
 
