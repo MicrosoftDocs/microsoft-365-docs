@@ -54,7 +54,7 @@ For a complete list of filters and field details, see [Filters](communication-co
 
 5. Select the **Filters** control to open the **Filters** details page.
 
-6. Select one or more checkboxes to enable filters for these alerts.
+6. Select one or more checkboxes to enable filters for these alerts. You can choose from numerous filters, including *Date*, *Sender*, *Subject/Title*, *Classifiers*, and more.
 
 7. If you'd like to save the filter selected as the default filter, select **Save as default**. If you want to use this filter as a saved filter, select **Done**.
 

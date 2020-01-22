@@ -214,6 +214,7 @@ Communication compliance filters allow you to filter and sort alert messages for
 | **Subject/Title** | The message subject or chat title. |
 | **Tags** | The tags assigned to a message, either *Questionable*, *Compliant*, or *Non-compliant*. |
 | **Escalated To** | The user name of the person included as part of a message escalation action. |
+| **Classifiers** | The name of built-in and custom classifiers that apply to the message. Some examples include *Offensive Language*, *Targeted Harassment*, *Profanity*, *Threat*, and more. 
 
 ## Alert policies
 
