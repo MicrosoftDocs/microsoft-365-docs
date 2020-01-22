@@ -59,6 +59,26 @@ To set permissions in the Microsoft 365 compliance center:
 1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com) and sign in with your global admin account.
 2. Select **Permissions** on the left navigation pane. From here, you can view roles and assign permissions.
 
+## Turn on automatic Secure Score updates
+
+By default, all new tenants have [Secure Score](../security/mtp/microsoft-secure-score.md) automatic updates turned on. This means that all actions that are monitored by Secure Score will automatically update the status for the same action in Compliance Score.
+
+Your global administrator can manage this setting to turn off automatic updates for all actions, or set updates for actions individually.
+
+During public preview, you will need to go to the Microsoft Service Trust Portal (where Compliance Manger is located) to manage Secure Score updates.
+
+To manage automatic Secure Score updates, follow these steps:
+
+1. Sign in to the [Service Trust Portal](https://servicetrust.microsoft.com) with your global administrator account.
+
+2. On the Service Trust Portal top menu bar, under **More**, select **Admin** and then choose **Settings**.
+
+4. In the **Secure Score** tab, select the appropriate button to either turn on for all actions, turn off for all actions, or set per action.
+
+**Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager administrator can turn on automatic updates for individual actions, but not for all actions globally.
+
+Read more about [managing Secure Score updates](compliance-manager-release-notes.md#secure-score).
+
 ## Understand the Compliance Score dashboard
 
 The Compliance Score dashboard is designed to provide you an at-a-glance view of your current compliance posture.
