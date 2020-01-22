@@ -30,9 +30,11 @@ The compromised user security playbook enables your organization's security team
 
 ## Keep the following points in mind
 
-- The longer a compromise goes undetected, the larger the potential for widespread impact and cost to your organization, customers, and partners. Early detection and response is critical.
-- Automated investigation and response capabilities can detect a compromised user, but your security operations team will likely need to do some investigation and remediation as well.
-- When a user account is compromised, it might not trigger a suspicious login alert. 
+- Stay on top of your alerts. The longer a compromise goes undetected, the larger the potential for widespread impact and cost to your organization, customers, and partners. Early detection and timely response are critical to mitigate threats.
+- Automation assists but does not replace your security operations team. In particular, automated investigation and response capabilities can detect a compromised user early on, but your security operations team will likely need to engage and do some investigation and remediation.
+- Don't rely on one type of alert. When a user account is compromised, it might not trigger a suspicious login alert. 
+
+## Next steps
 
 
 
