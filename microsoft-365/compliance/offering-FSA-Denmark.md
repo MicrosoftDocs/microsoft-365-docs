@@ -32,7 +32,7 @@ Guidelines issued by the Ministry of Industry, Business, and Financial Affairs:
 
 ## Microsoft and the FSA
 
-To help guide financial institutions in Denmark considering outsourcing business functions to the cloud, Microsoft has published [A compliance checklist for financial institutions in Denmark](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf /5fa5cdde-3219-4e95-946d-0c0d05494362). By reviewing and completing the checklist, financial organizations can adopt Microsoft business cloud services with the confidence that they are complying with applicable regulatory requirements.
+To help guide financial institutions in Denmark considering outsourcing business functions to the cloud, Microsoft has published [a compliance checklist for financial institutions in Denmark](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf). By reviewing and completing the checklist, financial organizations can adopt Microsoft business cloud services with the confidence that they are complying with applicable regulatory requirements.
 
 When Danish financial institutions outsource business activities they must comply with the requirements of the Financial Supervisory Authority (FSA), and work within the broad policy framework of the European Banking Authority (EBA). Specifically, those requirements focus on how contractual agreements between financial services and cloud providers can ensure adequate control of outsourced activities.
 
