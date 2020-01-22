@@ -103,8 +103,6 @@ During the completion of this step (by following the step-by-step instructions),
 
 - Azure Active Directory application secret (the AAD application secret obtained in Step 1)
 
-- Azure Active Directory application Uri (the AAD application Uri obtained in Step 1; for example, `https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)`
-
 ## Step 5: Set up a Facebook business pages connector in the Microsoft 365 compliance center
 
 The final step is to set up the connector in the Microsoft 365 compliance center that will import data from your Facebook Business pages to a specified mailbox in Microsoft 365. After you complete this step, the Office 365 Import service will start importing data from your Facebook Business pages to Microsoft 365. 
