@@ -174,8 +174,6 @@ This article contains the step-by-step process to deploy a connector that uses t
    - **Facebook webhooks verify token** – The verify token that you created in Step 5.
    - **AAD application ID** – The application ID for the Azure Active Directory app that you created in Step 2.
    - **AAD application secret** – The value for the APISecretKey secret that you created in Step 4.
-   - **AAD application Uri** – The AAD application Uri obtained in Step 2; for example, `https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213`.
-   - **App insights instrumentation key** – Leave this box blank.
 
 5. Click **Save** to save the connector settings.
 
