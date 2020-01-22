@@ -174,22 +174,23 @@ The user can:
 
 Before a sensitivity label is applied to content, it's possible that a user already encrypted the content by applying some other protection setting. For example, a user might have applied:
 
-- The **Do Not Forward** option.
-- Custom protection by using the Azure Information Protection client (classic).
-- User-defined permissions by using the Azure Information Protection client (classic client or unified labeling client)
-- An Azure Rights Management protection template that encrypts the content but is not associated with a label.
+- The **Do Not Forward** email option.
+- Permissions specified by a user, such as user-defined permissions when prompted by a label
+- An Azure Rights Management protection template that encrypts the content independently from a label.
 
-This table describes what happens to existing encryption when a sensitivity label is applied to that content.
+This table describes what happens to existing encryption when a sensitivity label is applied to that content. 
+
+The label configuration setting to remove protection is available only in the Azure portal.
 <br/>
 <br/>
 
 | |**User applies a sensitivity label with encryption turned off**|**User applies a sensitivity label with encryption turned on**|**User applies a label with Remove Protection**<sup>1</sup>|
 |:-----|:-----|:-----|:-----|
-|**Do Not Forward**|Email - Protection is removed<br/>Document - Protection is preserved|Label protection is applied|**Do Not Forward** is removed|
-|**Custom protection or user-defined protection**<sup>1</sup>|Protection is preserved|Label protection is applied|Custom protection is removed|
-|**Protection template**|Protection is preserved|Label protection is applied|Custom protection is removed|
+|**Do Not Forward**|Email: Encryption is removed<br/>Document: Encryption is preserved|Label encryption is applied|**Do Not Forward** is removed|
+|**Permissions specified by a user**<sup>1</sup>|Encryption is preserved|Label encryption is applied|Encryption is removed|
+|**Protection template**|Encryption is preserved|Label encryption is applied|Encryption is removed|
 
-<sup>1</sup>This is supported only by the Azure Information Protection labeling client.
+<sup>1</sup>Supported only by the Azure Information Protection unified labeling client.
 
 ## Considerations for encrypted content
 
