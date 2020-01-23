@@ -48,6 +48,7 @@ For step-by-step instructions, see [Create an app in Azure Active Directory](dep
 During the completion of this step (by following the step-by-step instructions), you'll save the following information to a text file. These values will be used in later steps in the deployment process.
 
 - AAD application ID
+- AAD application secret
 - Tenant Id
 
 ## Step 2: Deploy connector web service from GitHub repository to your Azure account
