@@ -118,7 +118,7 @@ A ZAP action does not make any changes to an email's header.
 
 ZAP will not remove messages from mailboxes on hold and so will not take a Move to Quarantine action on messages. Messages will still be moved to the Junk folder if specified by the policy. 
 
-[Click here for more information on mailbox holds.](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/holds/holds?view=exchserver-2019)
+[Click here for more information on mailbox holds.](https://docs.microsoft.com/exchange/policy-and-compliance/holds/holds?view=exchserver-2019)
 
 ## Related Topics
 
