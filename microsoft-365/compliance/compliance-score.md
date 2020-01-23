@@ -136,4 +136,4 @@ Learn how to [create groups in Compliance Manager](working-with-compliance-manag
 
 ## Next step: begin setup
 
-Sign in, set up permissions, and learn about your Compliance Score dashboard at [Compliance Score setup](compliance-score-setup.md).
+Learn how to sign in, set up permissions, and configure updates and dashboard views at [Compliance Score setup](compliance-score-setup.md).
