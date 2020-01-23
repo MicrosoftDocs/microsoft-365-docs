@@ -72,7 +72,7 @@ Microsoft's DMARC TXT record looks something like this:
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1" 
 ```
 
-Microsoft sends its DMARC reports to [Agari](https://agari.com), a 3rd party. Agari collects and analyzes DMARC reports.
+Microsoft sends its DMARC reports to [Agari](https://agari.com), a 3rd party. Agari collects and analyzes DMARC reports. Additionally, Valimail offers [free DMARC monitoring services for Office 365](https://go.valimail.com/microsoft.html).
   
 ## Implement DMARC for inbound mail
 <a name="implementDMARCinbound"> </a>
