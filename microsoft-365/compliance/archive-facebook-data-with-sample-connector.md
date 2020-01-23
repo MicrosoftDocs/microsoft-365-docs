@@ -49,8 +49,6 @@ During the completion of this step (by using the previous step-by-step instructi
 
 - AAD application secret
 
-- AAD application Uri
-
 - Tenant Id
 
 ## Step 2: Deploy the connector web service from GitHub to your Azure account
