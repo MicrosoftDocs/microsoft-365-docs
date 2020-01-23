@@ -39,8 +39,6 @@ In the **Top energy consumers** area you’ll find the apps in your environment 
 
 "Other" could include energy consumption by a variety of sources, such as disk activity, mobile broadband usage, and energy lost to internal resistance. 
 
-The apps displayed in **Top energy consumers"
-
 You can filter this view to show only foreground apps, background apps, or both by using the menu in the upper right. Foreground apps are those that have had user interaction in the last 28 days, such as selecting something with a mouse.
 
 ## Insights
