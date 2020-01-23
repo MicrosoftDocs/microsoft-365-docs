@@ -51,9 +51,6 @@ This article contains the step-by-step process to deploy a connector that uses t
 
    ![Copy and save the secret](media/TCimage09.png)
 
-9. Go to **Manifest** and copy the identifierUris (which is also called the AAD application Uri) as highlighted in the following screenshot. Copy the AAD application Uri to a text file or other storage location. You use it in Step 6.
-
-    ![Copy and save the AAD application Uri](media/TCimage10.png)
 
 ## Step 2: Deploy the connector web service from GitHub to your Azure account
 
