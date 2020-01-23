@@ -26,7 +26,12 @@ ms.custom: autoir
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Did [automated investigation and response capabilities](mtp-autoir.md) in Microsoft Threat Protection miss or wrongly detect something? You can report it to Microsoft, adjust your alerts (if needed), and undo remediation actions that were taken. Use this article as a guide. 
+Did [automated investigation and response capabilities](mtp-autoir.md) in Microsoft Threat Protection miss or wrongly detect something? There are steps you can take to fix it. You can:
+- [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
+- [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and 
+- [Undo remediation actions that were taken](#undo-a-remediation-action-that-was-taken). 
+
+Use this article as a guide. 
 
 ## Report a false positive/negative to Microsoft for analysis
 
