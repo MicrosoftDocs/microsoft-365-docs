@@ -35,7 +35,7 @@ Use this article as a guide.
 
 ## Report a false positive/negative to Microsoft for analysis
 
-|Item  |Detected by  |What to do  |
+|Item missed or wrongly detected |Service  |What to do  |
 |---------|---------|---------|
 |- Email message <br/>- Email attachment <br/>- URL in an email message<br/>- URL in an Office file      |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
 |File or app on a device    |[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection)         |[Submit a file to Microsoft for malware analysis](https://www.microsoft.com/wdsi/filesubmission)         |
@@ -52,7 +52,20 @@ Use this article as a guide.
 
 If a remediation action was taken on an item that is actually clean, your security operations team can undo that in the [Action center](mtp-action-center.md).
 
+> [!IMPORTANT]
+> Make sure you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) before attempting to perform the following task.
 
+1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+
+2. In the navigation pane, choose **Action center**. 
+
+3. On the **History** tab, select an action that you want to undo. This opens a flyout.<br/>
+    > [!TIP]
+    > Use filters to narrow down the list of results. 
+
+4. In the flyout for the selected item, select **Open investigation page**.
+
+5. 
 
 ## Next steps
 
