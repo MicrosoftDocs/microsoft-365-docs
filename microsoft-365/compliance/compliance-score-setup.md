@@ -70,7 +70,9 @@ During public preview, you will need to go to the Microsoft Service Trust Portal
 To manage automatic Secure Score updates, follow these steps:
 
 1. Sign in to the [Service Trust Portal](https://servicetrust.microsoft.com) with your global administrator account.
+
 2. On the Service Trust Portal top menu bar, under **More**, select **Admin** and then choose **Settings**.
+
 3. In the **Secure Score** tab, select the appropriate button to either **turn on for all actions**, **turn off for all actions**, or **set per action.**
 
 If you choose **set per action,** take these additional steps to turn on Secure Score updates for individual actions:
