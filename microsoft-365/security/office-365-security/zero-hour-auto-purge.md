@@ -31,7 +31,7 @@ ZAP is available with the default Exchange Online Protection that is included wi
 
 Office 365 updates anti-spam engine and malware signatures in real-time on a daily basis. However, your users might still get malicious messages delivered to their inboxes for a variety of reasons, including if content is weaponized after being delivered to users. ZAP addresses this by continually monitoring updates to the Office 365 spam and malware signatures. ZAP can find and remove previously delivered messages that are already in users' inboxes.
 
-The ZAP action is seamless for the mailbox user; they are not notified if an email message is moved. Message must not be older than 2 days.
+The ZAP action is seamless for the mailbox user; they are not notified if an email message is moved. 
 
 Allow lists, [mail flow rules](use-transport-rules-to-configure-bulk-email-filtering.md) (also known as transport rules), and end user rules or additional filters take precedence over ZAP.
 
@@ -62,8 +62,8 @@ ZAP will not move any message to Quarantine which is in the process of Dynamic D
 
 ## How to see if ZAP moved your message
 
-To determine if ZAP moved your message, you can use either the [Threat Protection Status report](view-email-security-reports.md#threat-protection-status-report) or [Threat Explorer (and real-time detections)](threat-explorer.md).
-
+To determine if ZAP moved your message, you can use either the [Threat Protection Status report](view-email-security-reports.md#threat-protection-status-report) or [Threat Explorer (and real-time detections)](threat-explorer.md). Note that as a system action, ZAP is not logged in exchange mailbox audit logs. 
+ 
 ## Disable ZAP
 
 To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
@@ -109,6 +109,16 @@ Rules created by admins (mail flow rules) or Block and Allow rules take preceden
 ### What if a message is moved to another folder (e.g. Inbox rule)?
 
 ZAP still works in this case, unless the message has been deleted or is in Junk.
+
+### Does ZAP change the email header?
+
+A ZAP action does not make any changes to an email's header.
+
+### How does ZAP affect mailboxes on Hold?
+
+ZAP will not remove messages from mailboxes on hold and so will not take a Move to Quarantine action on messages. Messages will still be moved to the Junk folder if specified by the policy. 
+
+[Click here for more information on mailbox holds.](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/holds/holds?view=exchserver-2019)
 
 ## Related Topics
 
