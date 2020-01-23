@@ -26,6 +26,16 @@ The compromised user security playbook enables your organization's security team
 
 ## Compromised user alerts
 
+When a user account is compromised, atypical or anomalous behaviors occur. For example, phishing and spam messages might be sent internally from a trusted user account. Office 365 Advanced Threat Protection can detect anomalies in email patterns and collaboration activity within Office 365. When this happens, alerts are triggered, and threat mitigation begins.
+
+For example, here's an alert that was triggered because of suspicious email sending:
+
+IMAGE
+
+And here's an example of an alert that was triggered when a sending limit was reached for a user:
+
+IMAGE
+
 ## Investigate and respond to a compromised user
 
 ## Keep the following points in mind
