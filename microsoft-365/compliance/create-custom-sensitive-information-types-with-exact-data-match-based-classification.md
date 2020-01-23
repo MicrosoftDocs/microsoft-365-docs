@@ -295,6 +295,9 @@ During this phase, you set up a custom security group and user account, and set 
 
 1. Download and install the [EDM Upload Agent](https://go.microsoft.com/fwlink/?linkid=2088639). By default, the installation location should be C:\\Program Files\\Microsoft\\EdmUploadAgent.
 
+> [!TIP]
+> To a get a list out of the supported command parameters, run the agent no arguments. For example 'EdmUploadAgent.exe'.
+
 2. To authorize the EDM Upload Agent, open Windows Command Prompt (as an administrator), and then run the following command:
 
     `EdmUploadAgent.exe /Authorize`

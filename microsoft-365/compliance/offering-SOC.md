@@ -47,6 +47,7 @@ Learn about the benefits of SOC 1, 2, 3 on the Microsoft Cloud: [Download the SO
 - Dynamics 365 and Dynamics 365 U.S. Government [detailed list](https://aka.ms/d365-compliance-list)
 - Graph
 - Intune
+- Microsoft Managed Desktop
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense [detailed list](https://go.microsoft.com/fwlink/p/?LinkID=2077751); Yammer has achieved a SOC 1 Type 1 report
 - Office 365 Germany
@@ -61,6 +62,7 @@ Learn about the benefits of SOC 1, 2, 3 on the Microsoft Cloud: [Download the SO
 - Cloud App Security
 - Graph
 - Intune
+- Microsoft Managed Desktop
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI
