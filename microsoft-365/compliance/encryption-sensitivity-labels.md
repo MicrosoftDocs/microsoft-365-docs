@@ -197,9 +197,9 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 
 - If your organization hasn't [enabled sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md):
     
-    - Users can't open encrypted files using Office on the web. When this capability is enabled, users can use Office on the web to open encrypted files, with some [limitations](sensitivity-labels-sharepoint-onedrive-files.md#limitations) that include encryption that has been applied with an on-premises key (known as "hold your own key, or HYOK), and encryption that has been applied independently from a sensitivity label.
     - Search, eDiscovery, and Delve will not work for encrypted files. 
     - DLP policies work for the metadata of these encrypted files (including retention label information) but not the content of these files (such as credit card numbers within files).
+    - Users can't open encrypted files using Office on the web. When sensitivity labels for Office files in SharePoint and OneDrive is enabled, users can use Office on the web to open encrypted files, with some [limitations](sensitivity-labels-sharepoint-onedrive-files.md#limitations) that include encryption that has been applied with an on-premises key (known as "hold your own key, or HYOK), and encryption that has been applied independently from a sensitivity label.
 
 - For multiple users to edit an encrypted file at the same time, they must all be using Office for the web. If this isn't the case, and the file is already open:
     
