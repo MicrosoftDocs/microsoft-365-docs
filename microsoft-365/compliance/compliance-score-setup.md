@@ -70,10 +70,20 @@ During public preview, you will need to go to the Microsoft Service Trust Portal
 To manage automatic Secure Score updates, follow these steps:
 
 1. Sign in to the [Service Trust Portal](https://servicetrust.microsoft.com) with your global administrator account.
-
 2. On the Service Trust Portal top menu bar, under **More**, select **Admin** and then choose **Settings**.
+3. In the **Secure Score** tab, select the appropriate button to either **turn on for all actions**, **turn off for all actions**, or **set per action.**
 
-4. In the **Secure Score** tab, select the appropriate button to either **turn on for all actions**, **turn off for all actions**, or **set per action.**
+If you choose **set per action,** take these additional steps to turn on Secure Score updates for individual actions:
+
+4. Select **Compliance Manager** from the top menu (note: do not select "Compliance Manager (classic)").
+
+5. Select **Tenant Management** in the upper-right corner of your screen.
+
+6. On the **Customer Actions** pane, find your intended action with an ellipsis (**...**) under the **Affected Actions** column. Click on the ellipses and select **Edit.**
+
+7. Switch the **Secure Score continuous update** toggle switch to **On.**
+
+8. Select **Save.** Secure Score continuous monitoring is now turned on for that action.
 
 **Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager administrator can turn on automatic updates for individual actions, but not for all actions globally.
 
