@@ -73,7 +73,7 @@ To manage automatic Secure Score updates, follow these steps:
 
 2. On the Service Trust Portal top menu bar, under **More**, select **Admin** and then choose **Settings**.
 
-3. In the **Secure Score** tab, select the appropriate button to either **turn on for all actions**, **turn off for all actions**, or **set per action.**
+3. In the **Secure Score** tab, select the corresponding button to either **turn on for all actions**, **turn off for all actions**, or **set per action.**
 
 If you choose **set per action,** take these additional steps to turn on Secure Score updates for individual actions:
 
