@@ -45,7 +45,7 @@ To upgrade to Windows 10 Pro, you have several options. You can:
     - Read the instructions on how to use the tool and create your installation media. 
 
 > [!NOTE]
-> If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business subscription entitles you to a Windows Pro 10 upgrade; you don't require a Product Key.
+> If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business subscription entitles you to a Windows Pro 10 upgrade.
     
 See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md) to complete setting up Windows 10 devices. 
   

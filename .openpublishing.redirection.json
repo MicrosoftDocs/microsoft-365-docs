@@ -283,7 +283,12 @@
       "source_path": "microsoft-365/compliance/view-email-security-reports.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/view-email-security-reports",
       "redirect_document_id": true
-	  },
+    },
+    {
+      "source_path": "microsoft-365/compliance/search-for-and-delete-messagesadmin-help.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization",
+      "redirect_document_id": true
+    },
     {
       "source_path": "compliance/prevent-email-from-being-marked-as-spam.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/prevent-email-from-being-marked-as-spam",
