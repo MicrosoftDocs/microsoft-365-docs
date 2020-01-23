@@ -65,7 +65,15 @@ If a remediation action was taken on an item that is actually clean, your securi
 
 4. In the flyout for the selected item, select **Open investigation page**.
 
-5. 
+   - If the investigation pertains to email content (such as, the entity is a mailbox), investigation details open in the Office 365 Security & Compliance Center ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
+
+   - If the investigation involves a device, investigation details open in the security center ([https://security.microsoft.com](https://security.microsoft.com))
+
+5. In the investigation details view, select the **Actions** tab.
+
+6. Select an item that has status of **Completed**, and look for a link, such as **Approved**, in the **Decisions** column. This opens a flyout with more details about the action.
+
+7. To undo the action, select **Delete remediation**.
 
 ## Next steps
 
