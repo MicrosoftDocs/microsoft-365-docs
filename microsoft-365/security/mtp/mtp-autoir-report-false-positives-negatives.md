@@ -50,7 +50,7 @@ Use this article as a guide.
 
 ## Undo a remediation action that was taken
 
-If a remediation action was taken on an item that is actually clean, your security operations team can undo that in the Action center.
+If a remediation action was taken on an item that is actually clean, your security operations team can undo that in the [Action center](mtp-action-center.md).
 
 
 
