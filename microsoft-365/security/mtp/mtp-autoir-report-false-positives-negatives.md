@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
+ms.date:01/23/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -25,15 +26,24 @@ ms.custom: autoir
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Did [automated investigation and response capabilities](mtp-autoir.md) in Microsoft Threat Protection miss or wrongly detect something? You can report it to Microsoft or adjust your alerts (if needed). Use the following table as a guide: 
+Did [automated investigation and response capabilities](mtp-autoir.md) in Microsoft Threat Protection miss or wrongly detect something? You can report it to Microsoft, adjust your alerts (if needed), and undo remediation actions that were taken. Use this article as a guide. 
 
+## Report a false positive/negative to Microsoft
 
-|Item  |Detected by  |How to report it  |
+|Item  |Detected by  |What to do  |
 |---------|---------|---------|
 |Email message <br/>Email attachment <br/>URL in an email message or Office file      |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
 |File or app on a device    |[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection)         |[Submit a file to Microsoft for malware analysis](https://www.microsoft.com/wdsi/filesubmission)         |
-|Alert triggered by legitimate use <br/>Inaccurate alert    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> or <br/>[Azure Advanced Threat Detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Manage alerts in the Cloud App Security portal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
 
+## Adjust an alert
+
+|Alert |Service |What to do |
+|--------|--------|
+|Alert triggered by legitimate use <br/>Inaccurate alert    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> or <br/>[Azure Advanced Threat Detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Manage alerts in the Cloud App Security portal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
+| | |
+
+
+## Undo a remediation action
 
 ## Next steps
 
