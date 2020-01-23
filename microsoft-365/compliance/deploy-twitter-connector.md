@@ -15,7 +15,7 @@ description: "Administrators can set up a native connector to import and archive
 
 # Deploy a connector to archive Twitter data
 
-This article contains the step-by-step process to deploy a connector that uses the Office 365 Import service to import data from your organization's Twitter account to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Twitter connector, see [Use a sample connector to archive Twitter data in Office 365 (Preview)](archive-twitter-data-with-sample-connector.md). 
+This article contains the step-by-step process to deploy a connector that uses the Office 365 Import service to import data from your organization's Twitter account to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Twitter connector, see [Set up a connector to archive Twitter data ](archive-twitter-data-with-sample-connector.md). 
 
 ## Step 1: Create an app in Azure Active Directory
 
@@ -51,9 +51,6 @@ This article contains the step-by-step process to deploy a connector that uses t
 
    ![Copy and save the secret](media/TCimage09.png)
 
-9. Go to **Manifest** and copy the identifierUris (which is also called the AAD application Uri) as highlighted in the following screenshot. Copy the AAD application Uri to a text file or other storage location. You use it in Step 6.
-
-    ![Copy and save the AAD application Uri](media/TCimage10.png)
 
 ## Step 2: Deploy the connector web service from GitHub to your Azure account
 
@@ -63,19 +60,19 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 2. After you click **Deploy to Azure**, you will be redirected to an Azure portal with a custom template page. Fill in the **Basics** and **Settings** details and then click **Purchase**.
 
-    - **Subscription** – Select your Azure subscription that you want to deploy the Twitter connector web service to.
-    
-    - **Resource group** — Choose or create a new resource group. A resource group is a container that holds related resources for an Azure solution.
+   ![Click Create a resource and type storage account](media/FBCimage12.png)
 
-    - **Location** – Choose a location.
+    - **Subscription:** Select your Azure subscription that you want to deploy the Twitter connector web service to.
+    
+    - **Resource group:** Choose or create a new resource group. A resource group is a container that holds related resources for an Azure solution.
 
-    - **Web App Name** – Provide a unique name for the connector web app. Th name must be between 3 and 18 characters in length. This name is used to create the Azure app service URL; for example, if you provide the Web app name of **twitterconnector** then the Azure app service URL  will be **twitterconnector.azurewebsites.net**.
+    - **Location:** Choose a location.
+
+    - **Web App Name:** Provide a unique name for the connector web app. Th name must be between 3 and 18 characters in length. This name is used to create the Azure app service URL; for example, if you provide the Web app name of **twitterconnector** then the Azure app service URL  will be **twitterconnector.azurewebsites.net**.
     
-    - **tenantId** – The tenant ID of your Microsoft 365 organization that you copied after creating the Facebook connector app in Azure       Active Directory in Step 1.
+    - **tenantId:** The tenant ID of your Microsoft 365 organization that you copied after creating the Facebook connector app in Azure       Active Directory in Step 1.
     
-   - **APISecretKey** – You can type any value as the secret. This is used to access the connector web app in Step 5.
-   
-    ![Click Create a resource and type storage account](media/FBCimage12.png)
+   - **APISecretKey:** You can type any value as the secret. This is used to access the connector web app in Step 5.
 
 3. After the deployment is successful, the page will look similar to the following screenshot:
 
@@ -139,15 +136,20 @@ The Twitter developer app is now ready to use.
 4. Enter the following configuration settings 
 
    - **Twitter Api Key:** The app ID for the Twitter application that you created in Step 3.
+   
    - **Twitter Api Secret Key:** The API secret key for the Twitter application that you created in Step 3.
+   
    - **Twitter Access Token:** The access token that you created in Step 3.
+   
    - **Twitter Access Token Secret:** The access token secret that you created in Step 3.
+   
    - **AAD Application ID:** The application ID for the Azure Active Directory app that you created in Step 1
+   
    - **AAD Application Secret:** The value for the APISecretKey secret that you created in Step 1.
 
 5. Click **Save** to save the connector settings.
 
-## Step 5: Set up Twitter connector in the Microsoft 365 compliance center
+## Step 5: Set up a Twitter connector in the Microsoft 365 compliance center
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** in the left nav.
 
@@ -155,18 +157,21 @@ The Twitter developer app is now ready to use.
 
 3. On the **Twitter** page, click **Add connector**.
 
-4. On the **Terms of service** page, click **Next**.
+4. On the **Terms of service** page, click **Accept**.
 
 5. On the **Add credentials for your connector app** page, enter the following information and then click **Validate connection**.
 
    ![Enter connector app credentials](media/TCimage38.png)
 
     - In the **Name** box, type a name for the connector, such as **Twitter help handle**.
+    
     - In the **Connector URL** box, type or paste the Azure app service URL; for example `https://twitterconnector.azurewebsites.net`.
+    
     - In the **Password** box, type or paste the value of the APISecretKey that you created in Step 2.
+    
     - In the **Azure App ID** box, type or paste the value of the Azure Application App Id (also called the *client ID*) that you obtained in Step 1.
 
-6. After the connector is successfully validated, click **Next**.
+6. After the connection is successfully validated, click **Next**.
 
 7. On the **Authorize Microsoft 365 to import data** page, type or paste the APISecretKey again and then click  **Login web app**.
 
@@ -180,10 +185,12 @@ The Twitter developer app is now ready to use.
 
 10. Click **Continue** to complete setting up the Twitter connector.
 
-11. On the **Set Filters** page, you can apply a filter to import (and archive) items that are a certain age. Click **Next**.
+11. On the **Set filters** page, you can apply a filter to initially import items that are a certain age. Select an age, and then click **Next**.
 
 12. On the **Choose storage location** page, type the email address of Microsoft 365 mailbox that the Twitter items will be imported to, and then click **Next**.
 
-13. Review your settings and then click **Finish** to complete the connector setup in the compliance center.
+13. On the **Provide admin consent**, click **Provide consent** and then follow the steps. You must be a global admin to provide consent for the Office 365 Import service to access data in your organization.
 
-14. In the compliance center, go to the **Data connectors** page, and click the **Connectors** tab to see the progress of the import process.
+14. Click **Next** to review the connector settings and then click **Finish** to complete the connector setup.
+
+15. In the compliance center, go to the **Data connectors** page, and click the **Connectors** tab to see the progress of the import process.
