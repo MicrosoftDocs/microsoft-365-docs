@@ -102,7 +102,7 @@ During the completion of this step (by following the step-by-step instructions),
 
 The final step is to set up the Twitter connector in the Microsoft 365 compliance center that will import data from your organization's Twitter account to a specified mailbox in Microsoft 365. After you complete this step, the Office 365 Import service will start importing data from your organization's Twitter account to Microsoft 365.
 
-For step-by-step instructions, see [Set up Twitter connector in the Microsoft 365 compliance center](deploy-twitter-connector.md#step-5-set-up-twitter-connector-in-the-microsoft-365-compliance-center). 
+For step-by-step instructions, see [Set up a Twitter connector in the Microsoft 365 compliance center](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center). 
 
 During the completion of this step (by following the step-by-step instructions), you'll provide the following information (that you've copied to a text file after completing the steps).
 
