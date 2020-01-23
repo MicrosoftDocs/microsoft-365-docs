@@ -347,8 +347,6 @@
           href: csv-file-for-an-id-list-content-search.md
         - name: Use Content Search to search third-party data
           href: use-content-search-to-search-third-party-data-that-was-imported.md
-        - name: Use Content Search in your eDiscovery workflow
-          href: use-content-search-in-ediscovery.md
         - name: Check your Content Search query for errors
           href: check-your-content-search-query-for-errors.md
         - name: Retry a failed Content Search
