@@ -32,7 +32,7 @@ Here are some benefits of mailbox auditing on by default:
 - You have a consistent mailbox auditing policy across your organization (because you're auditing the same actions for all mailboxes).
 
 > [!NOTE]
->• The important thing to remember about the release of mailbox auditing on by default is: you don't need to do anything to manage mailbox auditing. However, to learn more, customize mailbox auditing from the default settings, or turn it off altogether, this topic can help you. <br><br>• Even when mailbox auditing on by default is turned on, you might notice that mailbox audit events for some users aren't found in audit log searches in the Security & Compliance Center or via the Office 365 Management Activity API. For more information, see the [More information](#more-information) section in this topic.
+>• The important thing to remember about the release of mailbox auditing on by default is: you don't need to do anything to manage mailbox auditing. However, to learn more, customize mailbox auditing from the default settings, or turn it off altogether, this topic can help you. <br><br>• Only mailbox audit events for E5 users are available in audit log searches in the Security & Compliance Center or via the Office 365 Management Activity API. For more information, see the [More information](#more-information) section in this topic.
 
 ## Verify mailbox auditing on by default is turned on
 
@@ -329,11 +329,7 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
 
 ## More information
 
-- Only the following users will return mailbox audit log events in audit log searches in the Security & Compliance Center or via the Office 365 Management Activity API:
-
-  - Users with E5 licenses.
-
-  - Mailboxes where mailbox audit logging was manually enabled by an admin.
+- Although mailbox audit logging on by default is enabled for all organizations, only users with E5 licenses will return mailbox audit log events in [audit log searches in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md) or via the [Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
 
   To retrieve mailbox audit log entries for users without E5 licenses, you can:
 
