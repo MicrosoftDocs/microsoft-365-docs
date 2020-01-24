@@ -1,5 +1,5 @@
 ---
-title: "Investigate and remediate communication compliance alerts (preview)"
+title: "Investigate and remediate communication compliance alerts"
 description: "Investigate and remediate communication compliance alerts in Microsoft 365."
 ms.author: robmazz
 author: robmazz
@@ -19,7 +19,7 @@ search.appverid:
 
 ---
 
-# Investigate and remediate communication compliance alerts (preview)
+# Investigate and remediate communication compliance alerts
 
 After you've configured your communication compliance policies, you'll start to receive alerts in the Microsoft 365 compliance center for message issues that match your policy conditions. Follow the workflow instructions here to investigate and remediate alert issues.
 

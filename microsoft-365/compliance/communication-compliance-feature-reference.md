@@ -1,5 +1,5 @@
 ---
-title: "Communication compliance feature reference (preview)"
+title: "Communication compliance feature reference"
 description: "Feature reference for communication compliance in Microsoft 365. Learn details and specifications for each of the feature components."
 ms.author: robmazz
 author: robmazz
@@ -18,7 +18,7 @@ search.appverid:
 - MOE150
 ---
 
-# Communication compliance feature reference (preview)
+# Communication compliance feature reference
 
 ## Policies
 
@@ -266,7 +266,7 @@ If you'd like to change the severity level assigned in an alert policy for a spe
 In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
 
 >[!Important]
->Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable auditing for your communication compliance policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
+>Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable auditing for your communication compliance policies](communication-compliance-configure.md#step-6-optional-enable-auditing-for-your-communication-compliance-policies).
 
 To view communication compliance policy activities, select the **Export review activities** control on the main page for any policy. This generates an audit file in the .csv format that contains the following information:
 

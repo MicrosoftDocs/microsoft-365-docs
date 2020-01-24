@@ -1,5 +1,5 @@
 ---
-title: "Communication compliance (preview)"
+title: "Communication compliance"
 description: "Learn about communication compliance in Microsoft 365"
 ms.author: robmazz
 author: robmazz
@@ -18,7 +18,7 @@ search.appverid:
 - MOE150
 ---
 
-# Communication compliance in Microsoft 365 (preview)
+# Communication compliance in Microsoft 365
 
 Communication compliance is part of the new insider risk solution set in Microsoft 365 that helps minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's message standards.
 
@@ -107,8 +107,8 @@ Identifying and resolving compliance issues with communication compliance in Mic
 
 In this workflow step, you identify your compliance requirements and configure applicable communication compliance policies. Policy templates are a great way to not only quickly configure a new compliance policy, but to also quickly modify and update policies as your requirements change. For example, you may want to quickly test a policy for offensive language and anti-harassment on communications for a small group of users before configuring a policy for all users in your organization.
 
-> [!Important]
-> By default, Global Administrators do not have access to communication compliance features. To enable permissions for communication compliance features, see [Make communication compliance available in your organization](communication-compliance-configure.md#step-2-make-communication-compliance-available-in-your-organization-required).
+>[!Important]
+>By default, Global Administrators do not have access to communication compliance features. To enable permissions for communication compliance features, see [Make communication compliance available in your organization](communication-compliance-configure.md#step-1-required-make-communication-compliance-available-in-your-organization).
 
 You can choose from the following policy templates in the Microsoft 365 compliance center:
 
