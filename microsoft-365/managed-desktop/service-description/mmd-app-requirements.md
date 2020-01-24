@@ -10,7 +10,7 @@ ms.collection: M365-modern-desktop
 
 # Microsoft Managed Desktop app requirements
 
-<!--This topic is the target for aka.ms/app-req. This is aka link is used from EA agreeement for MMD. do not delete.-->
+<!--This topic is the target for aka.ms/app-req. This is aka link is used from EA agreement for MMD. do not delete.-->
 
 <!--Application addendum -->
  
