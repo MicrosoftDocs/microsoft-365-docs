@@ -172,13 +172,21 @@ The user can:
 
 ## What happens to existing encryption when a label's applied
 
-Before a sensitivity label is applied to content, it's possible that a user already encrypted the content by applying some other protection setting. For example, a user might have applied:
+Before a sensitivity label is applied to content, it's possible that the content is already encrypted. 
+
+For example, a user might have applied:
 
 - The **Do Not Forward** email encryption option.
 - Permissions specified by a user, such as user-defined permissions when prompted by a label
 - An Azure Rights Management protection template that encrypts the content independently from a label.
 
-This table describes what happens to existing encryption when a sensitivity label is applied to that content. 
+The following table identifies what happens to existing encryption when a sensitivity label is applied to that content.
+
+In the cases where the original encryption is replaced or removed, this happens only if the user applying the label has a usage right or role that supports this action:
+- The [usage right](configure-usage-rights.md#usage-rights-and-descriptions) Export or Full Control.
+- The role of [Rights Management issuer or Rights Management owner](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner), or [super user](configure-super-users.md).
+
+If the user doesn't have one of these rights or roles, the label can't be applied and the original encryption is preserved. 
 
 <br/>
 <br/>
@@ -190,6 +198,7 @@ This table describes what happens to existing encryption when a sensitivity labe
 |**Protection template**|Encryption is preserved|Label encryption is applied|Encryption is removed|
 
 <sup>1</sup> This label setting to remove encryption is available only in the Azure portal.
+
 
 ## Considerations for encrypted content
 
