@@ -46,4 +46,4 @@ SharePoint, Exchange, and OneDrive files that are encrypted will not render in t
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](labels.md)
 - [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
-- [Overview of retention policies](retention-policies.md)
+
