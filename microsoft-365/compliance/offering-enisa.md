@@ -36,7 +36,7 @@ Because these self-assessment reports are publicly available, Azure customers ga
 
 ## Microsoft in-scope cloud services
 
-- [AzureLearn](https://aka.ms/AzureCompliance)
+- [Azure](https://aka.ms/AzureCompliance)
 
 ## Audits, reports, and certificates
 
