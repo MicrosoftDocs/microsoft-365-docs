@@ -72,7 +72,7 @@ This table shows the differences between Microsoft 365 Business and Microsoft 36
 | Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, Microsoft Endpoint Configuration Manager, Windows Rights Management)| | 		![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | **Compliance**		| | | 
 | Unlimited email archiving	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
-| Compliance Manager	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
+| Compliance Score/Compliance Manager	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | eDiscovery	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | In-place hold and litigation hold	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | Messaging Records Management (MRM) retention tags and retention policies	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
