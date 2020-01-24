@@ -13,6 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.date: 01/23/2020
 ---
 
 # What's new in Office 365 ATP
@@ -25,6 +26,17 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 > [!TIP]
 > Don't have Office 365 ATP yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).
+
+## January/February 2020
+
+- Enhancements to [Threat Explorer](threat-explorer.md) to enable security operations teams to search and filter on multiple fields while [investigating email](investigate-malicious-email-that-was-delivered.md):
+    - Delivery location and special actions
+    - Directionality (inbound, outbound, or intra-org)
+    - Overrides (user blocking or allowing)
+    - URL threat (malware, phish, spam, or none)
+    - Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)
+    - Granular time filters (day, hour, half-hour) 
+- The **Incidents** widget is now the **Action Center** widget. (In the Office 365 security & compliance center, go to **Threat management** > **Review**.)
 
 ## December 2019
 
