@@ -24,7 +24,7 @@ Please review these release notes so that you have the best experience with this
 
 ## Permissions for accessing content explorer
 
-Access to content explorer is highly restricted because it lets you read the contents of scanned files. Access to content explorer requires membership in the **Content Explorer List Viewer**, and **Content Explorer Content Viewer** role groups. No account has access to content explorer by default. See, [Using data classification content explorer (preview).](data-classification-content-explorer.md#permissions). Compliance admin, data admin or global admin can assign the necessary **Content Explorer List Viewer**, and **Content Explorer Content Viewer** role group membership.
+Access to content explorer is highly restricted because it lets you read the contents of scanned files. Access to content explorer requires membership in the **Content Explorer List Viewer**, and **Content Explorer Content Viewer** role groups. No account has access to content explorer by default. See, [Using data classification content explorer (preview).](data-classification-content-explorer.md#permissions). Global admin, Compliance admin, or Data admin can assign the necessary **Content Explorer List Viewer**, and **Content Explorer Content Viewer** role group membership.
 
 ## Exchange mailbox count
 
