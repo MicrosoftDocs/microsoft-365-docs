@@ -95,7 +95,7 @@ As a data processor, Microsoft ensures that customers are able to meet the GDPRâ
 
 ### Accountability Readiness Checklists for the GDPR
 
-These [checklists](gdpr-arc.md) provide a convenient way to access information you may need to support the GDPR using Microsoft products. You can manage checklist items with the [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile.
+These [checklists](gdpr-arc.md) provide a convenient way to access information you may need to support the GDPR using Microsoft products. You can manage checklist items with [Microsoft Compliance Score](compliance-score.md) by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile.
 
 ## Learn more
 
