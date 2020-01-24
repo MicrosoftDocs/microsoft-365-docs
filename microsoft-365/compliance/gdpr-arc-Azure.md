@@ -25,7 +25,7 @@ This Accountability Readiness Checklist provides a convenient way to access info
 - [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) security techniques requirements.
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) for privacy management requirements.
 
-You can manage the items in this checklist with the Compliance Manager [16] by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile. This control structure is also used to organize the presentation of the internal controls that Microsoft Azure implements to support GDPR, which you can download from the [Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
+You can manage the items in this checklist with the Compliance Score [16] by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile. This control structure is also used to organize the presentation of the internal controls that Microsoft Azure implements to support GDPR, which you can download from the [Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
 
 This control structure is also used to organize the presentation of the [internal controls that Microsoft Dynamics 365 implements to support GDPR](https://aka.ms/gdprcontrols).
 
@@ -139,7 +139,7 @@ For more GDPR-related documentation, visit [https://aka.ms/gdprgetstarted](https
 | 13 <a name="13"> </a> | [Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 14 <a name="14"> </a> | [Microsoft Trust Center Compliance offerings](offering-home.md)  |
 | 15 <a name="15"> </a> | [Privacy and personal data in Intune](https://review.docs.microsoft.com/intune/privacy-personal-data) |
-| 16 <a name="16"> </a> | [Complete downloadable Azure GDPR Control Set](https://aka.ms/GDPRControls) or via [Compliance Manager Tool](https://servicetrust.microsoft.com/ComplianceManager) |
+| 16 <a name="16"> </a> | [Complete downloadable Azure GDPR Control Set](https://aka.ms/GDPRControls) or via [Compliance Score](compliance-score.md) |
 | 17 <a name="17"> </a> | [Microsoft DPO Information](https://aka.ms/GDPRDPO) |
 
 ## Learn more
