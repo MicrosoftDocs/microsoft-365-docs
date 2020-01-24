@@ -27,7 +27,9 @@ The steps in this topic will give you the best chance to recover data that was e
 
 ## Step 1: Verify your backups
 
-If you don't have backups, you can skip this step. Even if you have backups, there's no guarantee that you'll be able to recover your data, but at least you can try.
+If you have offline backups, you can probably restore the encrypted data **after** you've removed the ransomware payload (malware) from your environment.
+
+If you don't have backups, or if your backups were also affected by the ransomware, you can skip this step.
 
 ## Step 2: Disable ActiveSync and OneDrive sync
 
@@ -47,9 +49,9 @@ Pausing OneDrive sync will help protect your cloud data from being updated by po
 
 ## Step 3: Remove the malware from the affected devices
 
-Run a full anti-virus scan with the latest updates on all suspected computers and devices to detect and remove the payload that's associated with the ransomware. Don't forget devices that are synchronizing data, or the target of mapped network drives (those computers and devices need to be scanned, too).
+Run a full antivirus scan with the latest updates on all suspected computers and devices to detect and remove the payload that's associated with the ransomware. Don't forget devices that are synchronizing data, or the target of mapped network drives (those computers and devices need to be scanned, too).
 
-You can use [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) or [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
+You can use [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) or (for older clients) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
 
 An alternative that will also help you remove ransomware or malware is the [Malicious Software Removal Tool (MSRT)](https://www.microsoft.com/download/details.aspx?id=9905).
 
@@ -57,13 +59,13 @@ If these options don't work, you can try [Windows Defender Offline](https://supp
 
 ## Step 4: Recover files on a cleaned computer or device
 
-After you've completed the previous step to prevent the ransomware from encrypting or removing your files, you can use [File History](https://support.microsoft.com/help/17128/windows-8-file-history) in Windows 10 and Windows 8.1 or System Protection in Windows 7 to attempt to recover your local files and folders.
+After you've completed the previous step to remove the ransomware payload from your environment (which will prevent the ransomware from encrypting or removing your files), you can use [File History](https://support.microsoft.com/help/17128/windows-8-file-history) in Windows 10 and Windows 8.1 or System Protection in Windows 7 to attempt to recover your local files and folders.
 
 **Notes**:
 
 - Some ransomware will also encrypt or delete the backup versions, so you can't use File History or System Protection to restore files. If that happens, you need use backups on external drives or devices that were not affected by the ransomware or OneDrive as described in the next section.
 
-- If the folder is synchronized to OneDrive and you are not using the latest version of Windows, there might be some limitations using File History.
+- If a folder is synchronized to OneDrive and you aren't using the latest version of Windows, there might be some limitations using File History.
 
 ## Step 5: Recover your files in your OneDrive for Business
 
@@ -75,7 +77,7 @@ OneDrive for Business will allow you to recover any files you have stored in it.
 
 ## Step 6: Recover deleted email
 
-In the rare case that the ransomware deleted all your email, you can probably the deleted items. For more information, see:
+In the rare case that the ransomware deleted all your email, you can probably recover the deleted items. For more information, see:
 
 - [Recover deleted messages in a user's mailbox](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -83,7 +85,7 @@ In the rare case that the ransomware deleted all your email, you can probably th
 
 ## Step 7: Re-enable Exchange ActiveSync and OneDrive sync
 
-After you've cleaned your computers and devices and recovered your data, you can re-enable ActiveSync and OneDrive sync that you [previously disabled](#step-2-disable-activesync-and-onedrive-sync).
+After you've cleaned your computers and devices and recovered your data, you can re-enable ActiveSync and OneDrive sync that you previously disabled in [Step 2](#step-2-disable-activesync-and-onedrive-sync).
 
 ## Step 8 (Optional): Block OneDrive sync for specific file extensions
 
@@ -125,6 +127,21 @@ You can report phishing message that contain ransomware by following the instruc
 
 - [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 
+- [Ransomware response—to pay or not to pay?](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+
+- [Norsk Hydro responds to ransomware attack with transparency](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+
+- [Ransomware detection and recovering your files in OneDrive](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
+
+- [Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/)
+
+- [Enable or disable macros in Office files](https://support.office.com/article/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
+
+- [Recommended settings for EOP and Office 365 ATP security](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
+
+
+- [A worthy upgrade: Next-gen security on Windows 10 proves resilient against ransomware outbreaks in 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+
 - [No mas, Samas: What's in this ransomware's modus operandi?](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
 
 - [Locky malware, lucky to avoid it](https://www.microsoft.com/security/blog/2016/02/24/locky-malware-lucky-to-avoid-it/)
@@ -134,9 +151,3 @@ You can report phishing message that contain ransomware by following the instruc
 - [The three heads of the Cerberus-like Cerber ransomware](https://www.microsoft.com/security/blog/2016/03/09/the-three-heads-of-the-cerberus-like-cerber-ransomware/)
 
 - [Troldesh ransomware influenced by (the) Da Vinci code](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)
-
-- [Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/)
-
-- [Enable or disable macros in Office files](https://support.office.com/article/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
-
-- [Recommended settings for EOP and Office 365 ATP security](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
