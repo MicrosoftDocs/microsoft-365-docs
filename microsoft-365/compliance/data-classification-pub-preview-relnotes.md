@@ -36,7 +36,11 @@ Private preview customers have seen instances where the deletion of a label that
 
 ## Rendering of encrypted documents
 
-SharePoint, Exchange, and OneDrive files that are encrypted will not render in the content explorer. This is a sensitive issue that requires a balance between the need to see file contents in content explorer and the need to keep the contents encrypted. With the permissions granted by **Content Explorer List Viewer**, and **Content Explorer Content Viewer** role groups, you will see a list view of the files, the file  metadata, and a link you can use to access the content via the web client. 
+SharePoint, Exchange, and OneDrive files that are encrypted will not render in the content explorer. This is a sensitive issue that requires a balance between the need to see file contents in content explorer and the need to keep the contents encrypted. With the permissions granted by **Content Explorer List Viewer**, and **Content Explorer Content Viewer** role groups, you will see a list view of the files, the file  metadata, and a link you can use to access the content via the web client.
+
+## Supported characters in retention label names in SharePoint search
+
+SharePoint search does not support retention label names with `-`, or `_` in them. For example `Label-MIP` and `Label_MIP` are not supported. SharePoint search does support those characters in sensitivity label names and sensitive information type names.
 
 ## See also
 
