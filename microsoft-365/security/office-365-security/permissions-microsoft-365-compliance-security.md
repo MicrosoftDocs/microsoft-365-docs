@@ -147,7 +147,7 @@ By assigning a user to one of the Microsoft 365 compliance or security admin rol
 |Azure Active Directory (Azure AD) and Azure AD Identity Protection|[Azure AD admin roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Azure Advanced Threat Protection|[Azure ATP role groups](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Azure AD admin roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Compliance Score|[Compliance Score roles](https://docs.microsoft.com/en-us/microsoft-365/compliance/compliance-score-setup#set-user-permissions-and-assign-roles)|
+|Compliance Score|[Compliance Score roles](https://docs.microsoft.com/microsoft-365/compliance/compliance-score-setup#set-user-permissions-and-assign-roles)|
 |Exchange Online|[Exchange role-based access control](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)|
 |Intune|[Intune role-based access control](https://docs.microsoft.com/intune/role-based-access-control)|
 |Managed Desktop|[Azure AD admin roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
