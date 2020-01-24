@@ -45,7 +45,7 @@ ENISA IAF.
 
 - [CSA STAR Registry](https://aka.ms/Azure_STAR)
 
-# Additional resources
+## Resources
 
 - [Azure standard response for request for information](https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6)
 - [Microsoft and the CSA STAR Self-Assessment](offering-csa-star-self-assessment.md)
