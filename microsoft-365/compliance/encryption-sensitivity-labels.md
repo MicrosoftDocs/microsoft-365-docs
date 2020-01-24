@@ -183,8 +183,8 @@ For example, a user might have applied:
 The following table identifies what happens to existing encryption when a sensitivity label is applied to that content.
 
 In the cases where the original encryption is replaced or removed, this happens only if the user applying the label has a usage right or role that supports this action:
-- The [usage right](configure-usage-rights.md#usage-rights-and-descriptions) Export or Full Control.
-- The role of [Rights Management issuer or Rights Management owner](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner), or [super user](configure-super-users.md).
+- The [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions) Export or Full Control.
+- The role of [Rights Management issuer or Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner), or [super user](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
 If the user doesn't have one of these rights or roles, the label can't be applied and the original encryption is preserved. 
 
