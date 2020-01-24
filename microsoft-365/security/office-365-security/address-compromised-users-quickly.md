@@ -40,7 +40,7 @@ And here's an example of an alert that was triggered when a sending limit was re
 
 ## Investigate and respond to a compromised user
 
-
+When a user account is compromised, alerts are triggered. And in some cases, that user account is blocked and prevented from sending any further email messages until the issue is resolved by your organization's security operations team. 
 
 ## Keep the following points in mind
 
