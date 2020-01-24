@@ -32,11 +32,11 @@ When a user account is compromised, atypical or anomalous behaviors occur. For e
 
 For example, here's an alert that was triggered because of suspicious email sending:
 
-IMAGE
+![Alert triggered because of suspicious email sending](media/office365atp-suspiciousemailsendalert.jpg)
 
 And here's an example of an alert that was triggered when a sending limit was reached for a user:
 
-IMAGE
+![Alert triggered by sending limit reached](media/office365atp-sendinglimitreached.jpg)
 
 ## Investigate and respond to a compromised user
 
