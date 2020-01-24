@@ -53,7 +53,7 @@ Follow these steps to set up and use communication compliance in your Microsoft 
 
 - **Step 6 (optional)**: [Enable auditing for your communication compliance policies](#step-6-enable-auditing-for-your-communication-compliance-policies-optional)
 
-    Enable auditing for your organization to record managment activities for communication compliance policies.
+    Enable auditing for your organization to record management activities for communication compliance policies.
 
 ## Step 1: Set up groups for communication compliance (optional)
 

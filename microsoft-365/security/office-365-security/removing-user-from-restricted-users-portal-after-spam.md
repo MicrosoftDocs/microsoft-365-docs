@@ -71,7 +71,7 @@ You will be able to Edit the alert to:
 
 ## Checking for and removing restrictions using PowerShell
 The PowerShell commands for Restricted Users are:
-- `Get-BlockedSenderAddress`: Run to retreive the list of users that are restricted from sending email
+- `Get-BlockedSenderAddress`: Run to retrieve the list of users that are restricted from sending email
 - `Remove-BlockedSenderAddress`: Run to remove user(s) from being restricted
 
 ## For more information

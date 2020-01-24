@@ -60,7 +60,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-connector-csharp-aspnet) and click **Deploy to Azure**.
 
-    ![Click Deploy to Azure](media/FBCimage11.png)
+    ![Click Deploy to Azure](media/FBCGithubApp.png)
 
 2. After you click **Deploy to Azure**, you will be redirected to an Azure portal with a custom template page. Fill in the **Basics** and **Settings** details and then click **Purchase**.
 

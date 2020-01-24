@@ -70,7 +70,7 @@ Yes. If your business requires ISO 22301 certification for implementations deplo
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Microsoft Enterprise Business Continuity Management Program Description](https://go.microsoft.com/fwlink/p/?linkid=2092212)
-- [Compliance Manager](https://go.microsoft.com/fwlink/p/?linkid=2092329)
+- [Compliance Score](compliance-score.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder

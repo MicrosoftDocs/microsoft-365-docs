@@ -111,7 +111,7 @@ After a retention policy is assigned to a mailbox or public folder, content can 
 
 Versioning is a feature of all document libraries in SharePoint Online and OneDrive for Business. By default, versioning retains a minimum of 500 major versions, though you can increase this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
-A retain policy (retention policy that retains content instead of delete-only) retains all versions of a document in a SharePoint site collection or OneDrive account. Each time a document subject to a hold or retain policy is edited, a version is copied to the Preservation Hold library. Each time a document subject to a hold or retain policy is deleted, all versions are copied to the Preservation Hold library if versioning is enabled. Each version of a document in the Preservation Hold library exists as a separate item with its own retention period:
+A retain policy (retention policy that retains content instead of delete-only) retains all versions of a document in a SharePoint site collection or OneDrive account. When a document subject to a hold or retain policy is edited for the first time, a version of the original document is copied to the Preservation Hold library. When a document subject to a hold or retain policy is deleted, all versions are copied to the Preservation Hold library if versioning is enabled. Each version of a document in the Preservation Hold library exists as a separate item with its own retention period:
   
 - If the retention policy is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
     
@@ -188,7 +188,7 @@ One of the most powerful features of a retention policy is that by default it ap
     
 - OneDrive accounts
     
-- Office 365 groups (applies to content in the group's mailbox, site, and documents. Support for content in Planner, Yammer, CRM Microsoft Teams, PowerBI, Stream, Exchange, and SharePoint Team Sites is coming soon.)
+- Office 365 groups (applies to content in the group's mailbox and associated SharePoint site.)
     
 - Exchange public folders
     
