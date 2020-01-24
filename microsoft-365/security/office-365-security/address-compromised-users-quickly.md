@@ -17,7 +17,7 @@ description: "Learn how to speed up the process of detecting and addressing comp
 
 # Address compromised user accounts with automated investigation and response
 
-As you might already know, [Office 365 Advanced Threat Protection Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2) includes powerful [automated investigation and response](office-365-air.md) capabilities. These capabilities can save your security operations team a lot of time and effort dealing with threats. Recently, those capabilities were enhanced to include a compromised user security playbook (currently in preview). 
+As you might already know, [Office 365 Advanced Threat Protection Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2) includes powerful [automated investigation and response](office-365-air.md) (AIR) capabilities. Such capabilities can save your security operations team a lot of time and effort dealing with threats. Recently, AIR capabilities were enhanced to include a compromised user security playbook (currently in preview). 
 
 ![Automated investigation for compromised user](media/office365atp-compduserinvestigation.jpg)
 
