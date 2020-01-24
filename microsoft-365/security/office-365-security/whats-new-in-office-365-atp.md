@@ -36,6 +36,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
     - URL threat (malware, phish, spam, or none)
     - Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)
     - Granular time filters (day, hour, half-hour) 
+
 - The **Incidents** widget is now the **Action Center** widget. (In the Office 365 security & compliance center, go to **Threat management** > **Review**.)
 
 ## December 2019
