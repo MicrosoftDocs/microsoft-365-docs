@@ -19,6 +19,8 @@ description: "Learn how to speed up the process of detecting and addressing comp
 
 As you might already know, [Office 365 Advanced Threat Protection Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2) includes powerful [automated investigation and response](office-365-air.md) capabilities. These capabilities can save your security operations team a lot of time and effort dealing with threats. Recently, those capabilities were enhanced to include a compromised user security playbook (currently in preview). 
 
+
+
 The compromised user security playbook enables your organization's security team to:
 - Speed up detection of compromised user accounts;
 - Limit the scope of a breach when an account is compromised; and 
@@ -26,7 +28,7 @@ The compromised user security playbook enables your organization's security team
 
 ## Compromised user alerts
 
-When a user account is compromised, atypical or anomalous behaviors occur. For example, phishing and spam messages might be sent internally from a trusted user account. Office 365 Advanced Threat Protection can detect anomalies in email patterns and collaboration activity within Office 365. When this happens, alerts are triggered, and threat mitigation begins.
+When a user account is compromised, atypical or anomalous behaviors occur. For example, phishing and spam messages might be sent internally from a trusted user account. Office 365 Advanced Threat Protection can detect such anomalies in email patterns and collaboration activity within Office 365. When this happens, alerts are triggered, and the threat mitigation process begins.
 
 For example, here's an alert that was triggered because of suspicious email sending:
 
@@ -37,6 +39,8 @@ And here's an example of an alert that was triggered when a sending limit was re
 IMAGE
 
 ## Investigate and respond to a compromised user
+
+
 
 ## Keep the following points in mind
 
