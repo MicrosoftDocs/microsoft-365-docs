@@ -1,5 +1,5 @@
 ---
-title: "Find and investigate malicious email that was delivered in Office 365"
+title: "Find and investigate malicious email that was delivered in Office 365, remediate, remedy, remediation, "
 keywords: TIMailData-Inline, Security Incident, incident, ATP PowerShell, email malware, compromised users, email phish, email malware, read email headers, read headers, open email headers
 ms.author: deniseb
 author: denisebmsft
@@ -17,7 +17,7 @@ ms.collection:
 description: "Learn how to use threat investigation and response capabilities to find and investigate malicious email."
 ---
 
-# Find and investigate malicious email that was delivered in Office 365
+# Find, investigate, and remediate malicious emails that were delivered in Office 365
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) enables you to investigate activities that put people in your organization at risk, and to take action to protect your organization. For example, if you are part of your organization's security team, you can find and investigate suspicious email messages that were delivered. You can do this by using [Threat Explorer (or real-time detections)](threat-explorer.md).
   
@@ -48,17 +48,55 @@ To perform certain actions, such as viewing message headers or downloading email
 
 ## Find and delete suspicious email that was delivered
 
-Threat Explorer is a powerful report that can serve multiple purposes, such as finding and deleting messages, identifying the IP address of a malicious email sender, or starting an incident for further investigation. The following procedure focuses on using Explorer to find and delete malicious email from recipients mailboxes.
+Threat Explorer is a powerful report that can serve multiple purposes, such as finding and deleting messages, identifying the IP address of a malicious email sender, or starting an incident for further investigation. The following procedure focuses on using Explorer to find and delete malicious email from recipient's mailboxes.
 
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. 
+1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. 
     
-2. In the left navigation, choose **Threat management** \> **Explorer**.
+2. In the left navigation quick-launch, choose **Threat management** \> **Explorer**.
 
     ![Explorer with Delivery Action and Delivery Location fields.](../media/ThreatExFields.PNG)
 
-    You may notice the new **Special actions** column. This feature is aimed at telling admins the outcome of processing an email. The **Special actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.
+    <!-- You may notice the new **Special actions** column. This feature is aimed at telling admins the outcome of processing an email. The **Special actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.-->
 
-3. To view an email timeline, click on the subject of an email message, and then click **Email timeline**. (It appears among other headings on the panel like **Summary** or **Details**.)
+3. **Views in Threat Explorer**: In the **View** menu, choose **All email**.
+
+![Threat explorer View menu, and Email - Malware, Phish, Submissions and All Email options, also Content - Malware.](../media/tp-InvestigateMalEmail-viewmenu.png)
+
+The *Malware* view is currently the default, and captures emails where a malware threat is detected. The *Phish* view operates in the same way, for Phish.
+
+However, *All email* view lists every mail received by the organization, whether threats were detected or not. As you can imagine, this is a lot of data, which is why this view shows a placeholder that asks a filter be applied. (This view is only available for ATP P2 customers.)
+
+*Submissions* view shows up all mails submitted by admin or user that were reported to Microsoft.
+
+4. **Search and filter in Threat Explorer**: Filters appear at the top of the page in the search bar to help admins in their investigations. Notice that multiple filters can be applied at the same time, and multiple comma-separated values added to a filter to narrow down the search. Remember:
+    - Filters do exact matching on most filter conditions.
+    - Subject filter uses a CONTAINS query.
+    - URL filters work with or without protocols (ex. https).
+    - URL domain, URL path, and URL domain and path filters don't require a protocol to filter.
+    - You must click the Refresh icon every time you change the filter values to get relevant results.
+
+5. **Advanced filters**: With these filters, you can build complex queries and filter your data set. Clicking on *Advanced Filters* opens a flyout wit options.
+
+Advanced filtering is a great addition to search capabilities. A boolean **NOT** filter has been introduced on *Recipient*, *Sender* and *Sender domain* to allow admins to investigate by excluding values. This option appears under selection parameter *Contains none of*. **NOT** will let admins exclude alert mailboxes, default reply mailboxes from their investigations, and is useful for cases where admins search for a specific subject (subject="Attention") where the Recipient can be set to *none of defaultMail@contoso.com*. This is an exact value search.
+
+![The Recipients - 'Contains none of' Advanced filter.](../media/tp-InvestigateMalEmail-AdvancedFilter.png)
+
+*Filtering by hours* will help your organization's security team drill down quickly. The shortest allowed time duration is 30 minutes. If you can narrow the suspicious action by time-frame (e.g. it happened 3 hours ago), this will limit the context and help pinpoint the problem.
+
+![The filtering by hours option to narrow the amount of data security teams have to process, and whose shortest duration is 30 minutes.](../media/tp-InvestigateMalEmail-FilterbyHours.png)
+
+6. **Fields in threat explorer**: Threat Explorer exposes a lot more security-related mail information such as *Delivery action*, *Delivery location*, *Special action*, *Directionality*, *Overrides*, and *URL threat*. It also allows your organization's security team to investigate with a higher certainty. 
+
+*Delivery action* is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
+- **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
+- **Junked** (Delivered to junk)– email was sent to either user’s junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
+- **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
+- **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious
+
+
+
+<!-- -->
+4. Click on the subject of an email message, and then click **Email timeline**. (It appears among other headings on the panel like **Summary** or **Details**.)
 
     Once you've opened the email timeline, you should see a table that tells you the post-delivery events for that mail. In the case of no further events for the email, you should see a single event for the original delivery that states a result like **Blocked** with a verdict like **Phish**. The tab also has the option to export the entire email timeline, and this exports all the details on the tab and details on the email (things like Subject, Sender, Recipient, Network, and Message ID).
 
