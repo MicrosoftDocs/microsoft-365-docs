@@ -40,7 +40,7 @@ Because these self-assessment reports are publicly available, Azure customers ga
 
 ## Audits, reports, and certificates
 
-Based on a self-assessment, Microsoft attests to Azure compliance with the CSA CCM framework, thus aligning it with the  
+Microsoft attests to Azure compliance with the CSA CCM framework based on self-assessment, aligning services with the  
 ENISA IAF.
 
 - [CSA STAR Registry](https://aka.ms/Azure_STAR)
