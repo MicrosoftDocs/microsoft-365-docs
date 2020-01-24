@@ -119,7 +119,7 @@ You can use Message trace in the security and compliance center or use the corre
     
 ## Step 6: Prepare the mailboxes
 
-After you review and validate that the search results contains only the messages that must be deleted, you need to collect a list of the email addresses of the impacted mailboxes to use in Step 7 when you run the ComplianceSeearchAction -Purge command. You may also have to prepare the mailboxes before you can permanently delete email messages depending on whether single item recovery is enabled on the mailboxes that contain the spilled data or if any of those mailboxes are on hold.
+After you review and validate that the search results contains only the messages that must be deleted, you need to collect a list of the email addresses of the impacted mailboxes to use in Step 7 when you run the `ComplianceSeearchAction -Purge` command. You may also have to prepare the mailboxes before you can permanently delete email messages depending on whether single item recovery is enabled on the mailboxes that contain the spilled data or if any of those mailboxes are on hold.
   
 ### Get a list of addresses of mailboxes with spilled data
 
