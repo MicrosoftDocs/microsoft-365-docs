@@ -45,7 +45,7 @@ Use this article as a guide.
 |Scenario |Service |What to do |
 |--------|--------|--------|
 |- An alert is triggered by legitimate use <br/>- An alert is inaccurate    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> or <br/>[Azure Advanced Threat Detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Manage alerts in the Cloud App Security portal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
-|A file, IP address, or URL/domain is treated as malware on a device|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) |[Create a custom indicator with an "Allow" action](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
+|A file, IP address, URL, or domain is treated as malware on a device, even though it's safe|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) |[Create a custom indicator with an "Allow" action](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 
 ## Undo a remediation action that was taken
@@ -75,7 +75,7 @@ If a remediation action was taken on an item that is actually clean, your securi
 
 7. To undo the action, select **Delete remediation**.
 
-## Next steps
+## Related articles
 
 - [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
 - [Learn more about the Action center](mtp-action-center.md)
