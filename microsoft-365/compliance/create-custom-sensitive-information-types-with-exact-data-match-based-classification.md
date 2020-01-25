@@ -67,7 +67,7 @@ Setting up and configuring EDM-based classification involves saving sensitive da
 
 2. Structure the sensitive data in the .csv file such that the first row includes the names of the fields used for EDM-based classification. In your .csv file, you might have field names, such as "ssn", "birthdate", "firstname", "lastname", and so on. As an example, our .csv file is called *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN* and more.
 
-3. Define the schema for the database of sensitive information in .xml format (similar to our example below). Name this schema file edm.xml, and configure it such that for each column in the database, there is a line that uses the syntax \<Field name="" searchable=""/\>.
+3. Define the schema for the database of sensitive information in .xml format (similar to our example below). Name this schema file `edm.xml`, and configure it such that for each column in the database, there is a line that uses the syntax `<Field name="" searchable="" />`.
 
       - Use column names for *Field name* values.
       - Use *searchable="true"* for the fields that you want to be searchable up to a maximum of 5 fields. You must designate a minimum of one field as searchable.
@@ -123,7 +123,7 @@ Now that the schema for your database of sensitive information is defined, the n
 
 If you want to make changes to your edm.xml file, such as changing which fields are used for EDM-based classification, follow these steps:
 
-1. Edit your edm.xml file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).
+1. Edit your `edm.xml` file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).
 
 2. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
@@ -179,7 +179,7 @@ You will be prompted to confirm, as follows:
 
 1. Create a rule package in .xml format (with Unicode encoding), similar to the following example. (You can copy, modify, and use our example.)
 
-When you set up your rule package, make sure to correctly reference your .csv file and edm.xml file. You can copy, modify, and use our example. In this sample xml the following fields needs to be customized to create your EDM sensitive type:
+When you set up your rule package, make sure to correctly reference your .csv file and `edm.xml` file. You can copy, modify, and use our example. In this sample xml the following fields needs to be customized to create your EDM sensitive type:
 
 - **RulePack id & ExactMatch id**: Use [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) to generate a GUID.
 
@@ -244,7 +244,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 At this point, you have set up EDM-based classification. The next step is to index the sensitive data, and then upload the indexed data.
 
-Recall from the previous procedure that our PatientRecords schema defines five fields as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*. Our example rule package includes those fields and references the database schema file (edm.xml), with one *ExactMatch* items per searchable field. Consider the following ExactMatch item:
+Recall from the previous procedure that our PatientRecords schema defines five fields as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*. Our example rule package includes those fields and references the database schema file (`edm.xml`), with one *ExactMatch* items per searchable field. Consider the following ExactMatch item:
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
@@ -282,18 +282,18 @@ During this phase, you set up a custom security group and user account, and set 
 
 #### Set up the security group and user account
 
-1. As a global administrator, go to the admin center ([https://admin.microsoft.com](https://admin.microsoft.com/)) and [create a security group](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) called EDM\_DataUploaders.
+1. As a global administrator, go to the admin center ([https://admin.microsoft.com](https://admin.microsoft.com/)) and [create a security group](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) called `EDM_DataUploaders`.
 
-2. Add one or more users to the *EDM\_DataUploaders* security group. (These users will manage the database of sensitive information.)
+2. Add one or more users to the `EDM_DataUploaders` security group. (These users will manage the database of sensitive information.)
 
 3. Make sure each user who is managing the sensitive data is a local admin on the machine used for the EDM Upload Agent.
 
 #### Set up the EDM Upload Agent
 
 >[!NOTE]
-> Before you begin this procedure, make sure that you are a member of the *EDM\_DataUploaders* security group and a local admin on your machine.
+> Before you begin this procedure, make sure that you are a member of the `EDM_DataUploaders` security group and a local admin on your machine.
 
-1. Download and install the [EDM Upload Agent](https://go.microsoft.com/fwlink/?linkid=2088639). By default, the installation location should be C:\\Program Files\\Microsoft\\EdmUploadAgent.
+1. Download and install the [EDM Upload Agent](https://go.microsoft.com/fwlink/?linkid=2088639). By default, the installation location should be `C:\Program Files\Microsoft\EdmUploadAgent`.
 
 > [!TIP]
 > To a get a list out of the supported command parameters, run the agent no arguments. For example 'EdmUploadAgent.exe'.
@@ -308,7 +308,7 @@ The next step is to use the EDM Upload Agent to index the sensitive data, and th
 
 #### Index and upload the sensitive data
 
-Save the sensitive data file (recall our example is *PatientRecords.csv*) to the local drive on the machine. (We saved our example *PatientRecords.csv* file to C:\\Edm\\Data.)
+Save the sensitive data file (recall our example is `PatientRecords.csv`) to the local drive on the machine. (We saved our example `PatientRecords.csv` file to `C:\Edm\Data`.)
 
 To index and upload the sensitive data, run the following command in Windows Command Prompt:
 
