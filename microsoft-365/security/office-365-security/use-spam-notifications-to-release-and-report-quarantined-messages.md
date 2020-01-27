@@ -20,7 +20,7 @@ description: "If your admin enables the notifications for users, you'll receive 
 
 # Use user spam notifications to release and report quarantined messages in Office 365
 
-If your admin enables spam notifications for users, you'll receive a notification message that lists messages addressed to your mailbox that were identified as spam and quarantined instead.
+If your admin enables spam notifications for users, you'll receive a notification message that lists messages addressed to your mailbox that were identified as spam, bulk, or phish and quarantined instead.
 
 > [!TIP]
 > If you're an administrator and want to enable this feature, you can choose the option when you [modify a default anti-spam policy](configure-your-spam-filter-policies.md).
@@ -43,6 +43,6 @@ These are the actions that you can take with a quarantined message:
 
 Be aware of the following:
 
-- Messages that are quarantined because they matched a mail flow rule are not included in user quarantined messages. Only spam-quarantined messages are listed.
+- Malware and high confidence phishing messages and messages that are quarantined because they matched a mail flow rule are not included in user spam notifications. 
 
 - You can only release a message and report it as a false positive (not junk) once.
