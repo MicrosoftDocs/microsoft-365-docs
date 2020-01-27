@@ -51,7 +51,7 @@ Or
 
 ## **Step-by-step labs**
 
-Detailed lab guides take you through multiple deployment and management scenarios, including:
+Detailed lab guides take you through multiple deployment and management scenarios. The labs have been updated for the latest versions of Intune and Configuration Manager (Version 1910).  
 
 ### **Device and App Readiness**
 
@@ -111,9 +111,12 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Office 365 ProPlus update management in Configuration Manager
   - Mobile Device Management applied to Windows 10 using Microsoft Intune
 
+### **NEW! Windows Virtual Desktop**
+  - Windows Virtual Desktop: prepare, deploy, optimze 
+
 ### [**Download the Windows and Office Deployment Lab Kit**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires February 15, 2020. A new version will be published prior to expiration.*
+*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires April 18, 2020. A new version will be published prior to expiration.*
 
 ## **Additional guidance**
 
