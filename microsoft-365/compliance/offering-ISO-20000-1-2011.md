@@ -33,6 +33,7 @@ An independent third-party auditing firm performed a rigorous examination of Mic
 - [Azure and Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Intune
+- Microsoft Managed Desktop
 - Microsoft PowerApps
 - Microsoft Flow
 - Microsoft Graph
@@ -42,7 +43,7 @@ An independent third-party auditing firm performed a rigorous examination of Mic
 
 ## Audits, reports, and certificates
 
-2017 ISO 20000-1 documentation for Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics and Microsoft Datacenters
+2017 ISO 20000-1 documentation for Azure, Intune, Microsoft Managed Desktop, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics and Microsoft Datacenters
 
 - [Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2077810)
 - [Certificate](https://go.microsoft.com/fwlink/p/?linkid=2077815)

@@ -42,7 +42,6 @@ Every account that accesses and uses activity explorer must have a license assig
 - Office 365 (E5)
 - Advanced Compliance (E5) add-on
 - Advanced Threat Intelligence (E5) add-on
-- Advanced Threat Protection (E5) add-on
 
 ## Activity type
 

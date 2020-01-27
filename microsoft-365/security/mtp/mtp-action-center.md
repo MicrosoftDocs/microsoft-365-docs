@@ -66,6 +66,10 @@ The following table lists remediation actions that are currently supported in th
 
     - If the investigation involves a device, investigation details open in the security center ([https://security.microsoft.com](https://security.microsoft.com)). 
 
+
+> [!TIP]
+> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
+
 ## Required permissions for Action center tasks
 
 To approve or reject pending actions in the Action center, you must have permissions assigned as listed in the following table:

@@ -53,9 +53,9 @@ Get a head start on taking advantage of the benefits of the cloud for health dat
 
 ## Accelerate your HIPAA/HITRUST compliance when using Office 365
 
-Use Office 365 to manage health information in a secure and compliant way with Compliance Manager, which enables you to perform risk assessments against health regulations like HIPAA and security control frameworks like NIST CSF and NIST 800-53. You can follow step-by-step guidance to know how to implement and maintain data protection controls that help you meet healthcare compliance obligations.
+Use Office 365 to manage health information in a secure and compliant way with Compliance Score, which enables you to perform risk assessments against health regulations like HIPAA and security control frameworks like NIST CSF and NIST 800-53. You can follow step-by-step guidance to know how to implement and maintain data protection controls that help you meet healthcare compliance obligations.
 
-[Start using Compliance Manager](https://go.microsoft.com/fwlink/p/?linkid=862650)
+[Start using Compliance Score](compliance-score.md)
 
 ## Collaborate with Microsoft in the HITRUST Shared Responsibility Program
 
@@ -90,7 +90,7 @@ When you store your data in a SaaS like Office 365, it’s a shared responsibili
 
 **Does Microsoft provide guidance for my organization to implement appropriate controls when using Office 365?**
 
-Yes, you can find recommended customer actions in Compliance Manager, cross-Microsoft Cloud solutions that help your organization meet complex compliance obligations when using cloud services. Specifically, for HITRUST CSF, we recommend that you perform risk assessments using the NIST 800-53 and NIST CSF assessments in Compliance Manager. In the assessments, we provide you with step-by-step guidance and the Microsoft solutions you can use to implement your data protection controls. You can learn more about Compliance Manager in this [whitepaper](https://resources.office.com/ww-landing-m365e-gdpr-compliance-manager-whitepaper.html?lcid=en-us).
+Yes, you can find recommended customer actions in Compliance Score, cross-Microsoft Cloud solutions that help your organization meet complex compliance obligations when using cloud services. Specifically, for HITRUST CSF, we recommend that you perform risk assessments using the NIST 800-53 and NIST CSF assessments in Compliance Score. In the assessments, we provide you with step-by-step guidance and the Microsoft solutions you can use to implement your data protection controls. You can learn more about Compliance Score in [Microsoft Compliance Score](compliance-score.md).
 
 **How do I engage with Microsoft?**
 
