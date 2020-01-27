@@ -19,7 +19,7 @@ description: "Learn about Safe Documents in Office 365"
 
 # Safe Documents in Office 365 ATP
 
-Safe Documents is a feature in Office 365 Advanced Threat Protection (ATP) that uses [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) to scan attachments in messages.
+Safe Documents is a feature in Office 365 Advanced Threat Protection (ATP) that uses [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) to scan documents and files that are opened in [Protected View](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
 
 ## What do you need to know before you begin?
 
@@ -47,7 +47,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs <$true|$false> -AllowSafeDocsOpen <$true|$f
 
 - The _AllowSafeDocsOpen_ parameter allows or prevents users from leaving Protected View (that is, opening the document) if the document has been identified as malicious.
 
-This example enables Dafe Documents for the entire organization, and prevents users from opening documents that have been identified as malicious.
+This example enables Safe Documents for the entire organization, and prevents users from opening documents that have been identified as malicious from Protected View.
 
 ```powershell
 Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $true
@@ -67,4 +67,16 @@ To verify that you've enabled and configured Safe Documents, do any of the follo
 Get-AtpPolicyForO365 | Format-List *SafeDocs*
 ```
 
-- Send the EICAR Anti-Virus Test File to a user and verify that they can or cannot launch the attachment.
+- Send the EICAR Anti-Virus Test File to a user and verify that they can or can't launch the attachment in Protected View.
+
+  To create the EICAR Anti-Virus Test File, open Notepad, copy the following text into a new text file, and save the file as EICAR.TXT:
+
+  ```text
+  X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*
+  ```
+
+  **Notes**:
+
+  - Verify that this is the only text in the file, which should be 68 bytes in size.
+
+  - Save the file to a custom folder that's excluded from scanning by your computer's antivirus program.
