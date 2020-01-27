@@ -27,7 +27,7 @@ By default, messages that were filtered for phishing, malware, and mail flow rul
 Both users and admins can work with quarantined messages. Users can work with just their own filtered messages in quarantine. Admins can search for and manage quarantined messages for all users.
 
 > [!NOTE]
-> High confidence phish messages and messages quarantined by mail flow rule actions are only available in the admin quarantine. Users can access their own phish, spam, and bulk mail messages. 
+> High confidence phish messages, phish messages, and messages quarantined by mail flow rule actions are only available in the admin quarantine. Users can only access their own spam and bulk mail messages. 
   
 Learn more about working with quarantined messages:
   
