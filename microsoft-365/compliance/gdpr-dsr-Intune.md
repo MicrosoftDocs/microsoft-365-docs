@@ -5,9 +5,9 @@ keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, G
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: dougeby
-author: dougeby
-manager: angrobe
+ms.author: robmazz
+author: robmazz
+manager: laurawi
 audience: itpro
 ms.collection: 
 - GDPR
