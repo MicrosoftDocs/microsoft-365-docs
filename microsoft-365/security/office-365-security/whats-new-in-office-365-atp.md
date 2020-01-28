@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 01/23/2020
+ms.date: 01/28/2020
 ---
 
 # What's new in Office 365 ATP
@@ -37,7 +37,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
     - Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)
     - Granular time filters (day, hour, half-hour) 
 
-- The **Incidents** widget is now the **Action Center** widget. (In the Office 365 security & compliance center, go to **Threat management** > **Review**.)
+- The **Incidents** widget is now the **Action Center** widget. (To view your security widgets, in the Office 365 Security & Compliance Center, go to **Threat management** > **Review**.)
 
 ## December 2019
 
