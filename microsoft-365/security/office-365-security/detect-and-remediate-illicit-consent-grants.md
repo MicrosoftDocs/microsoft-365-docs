@@ -37,7 +37,7 @@ You need to search the Office 365 **audit log** to find signs, also called Indic
 
 4. Filter the results for Consent to application, and Add OAuth2PermissionGrant.
 
-5. Click on the result to see the details of the activity. Click **More Information** to get deatils of the activity. Check to see if IsAdminContent is set to True.
+5. Click on the result to see the details of the activity. Click **More Information** to get details of the activity. Check to see if IsAdminContent is set to True.
 
 > [!NOTE]
 > • It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. <br/><br/> • The length of time that an audit record is retained and searchable in the audit log depends on your Office 365 subscription, and specifically the type of the license that is assigned to a specific user. For more information, see [Audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md).
