@@ -1,5 +1,7 @@
 ---
 title: "Secure Windows 10 devices"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv

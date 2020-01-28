@@ -1,5 +1,7 @@
 ---
 title: "Office 365 Message Encryption (OME) version comparison"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi

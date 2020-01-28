@@ -1,5 +1,7 @@
 ---
 title: "Deploy a connector to archive Twitter data"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

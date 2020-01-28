@@ -1,5 +1,7 @@
 ---
 title: "Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: cabailey
 manager: laurawi

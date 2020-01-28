@@ -1,5 +1,7 @@
 ---
 title: "How Office 365 ATP Safe Attachments works"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp

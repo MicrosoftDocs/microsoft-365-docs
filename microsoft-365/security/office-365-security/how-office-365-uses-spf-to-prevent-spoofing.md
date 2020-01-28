@@ -1,5 +1,7 @@
 ---
 title: "How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

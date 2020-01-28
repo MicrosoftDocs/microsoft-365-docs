@@ -1,5 +1,7 @@
 ---
 title: "Block email spam in EOP Standalone"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt

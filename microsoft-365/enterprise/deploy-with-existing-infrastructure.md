@@ -1,5 +1,7 @@
 ---
 title: Deployment of Microsoft 365 for enterprise with existing infrastructure
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

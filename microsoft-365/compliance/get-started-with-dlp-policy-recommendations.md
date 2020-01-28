@@ -1,5 +1,7 @@
 ---
 title: "Get started with DLP policy recommendations"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
