@@ -1,6 +1,8 @@
 ---
 title: "SharePoint sites for highly regulated data"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/31/2019

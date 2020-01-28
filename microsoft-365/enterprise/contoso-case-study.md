@@ -1,6 +1,8 @@
 ---
 title: "Microsoft 365 Enterprise for the Contoso Corporation"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 11/18/2019

@@ -1,5 +1,7 @@
 ---
 title: "Using data classification activity explorer"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

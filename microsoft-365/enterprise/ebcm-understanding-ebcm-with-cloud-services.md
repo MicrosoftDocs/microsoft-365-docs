@@ -1,6 +1,8 @@
 ---
 title: "Understanding Enterprise Business Continuity Management with cloud services"
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date:

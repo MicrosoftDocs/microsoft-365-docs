@@ -1,5 +1,7 @@
 ---
 title: "Overview of sensitivity labels"
+f1.keywords:
+- CSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi

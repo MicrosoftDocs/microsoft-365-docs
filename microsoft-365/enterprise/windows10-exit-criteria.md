@@ -1,5 +1,7 @@
 ---
 title: "Phase 3: Windows 10 Enterprise infrastructure exit criteria"
+f1.keywords:
+- NOCSH
 ms.author: greglin
 author: greg-lindsay
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Manage schedules for multiple reports in the Security &amp; Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp

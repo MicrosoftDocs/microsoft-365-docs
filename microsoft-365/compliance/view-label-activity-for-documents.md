@@ -1,5 +1,7 @@
 ---
 title: "View label activity for documents"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi

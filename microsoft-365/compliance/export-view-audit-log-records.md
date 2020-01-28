@@ -1,5 +1,7 @@
 ---
 title: "Export, configure, and view audit log records"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

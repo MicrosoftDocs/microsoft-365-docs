@@ -1,5 +1,7 @@
 ﻿---
 title: Step 6 - OS Deployment and Feature Updates
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

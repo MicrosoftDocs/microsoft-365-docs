@@ -1,5 +1,7 @@
 ---
 title: "Service encryption with Customer Key for Office 365 FAQ"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi

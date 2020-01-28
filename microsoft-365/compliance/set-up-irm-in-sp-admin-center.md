@@ -1,5 +1,7 @@
 ---
 title: "Set up Information Rights Management (IRM) in SharePoint admin center"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
