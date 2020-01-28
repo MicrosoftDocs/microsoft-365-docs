@@ -62,8 +62,8 @@ No matter the size of your organization and whether it is a controller or a proc
 
 ## Audits, reports, and certificates
 
- - Azure ISO/IEC 27701 certification
- - Azure ISO/IEC 27701 assessment report
+- [Azure ISO/IEC 27701 certification](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- [Azure ISO/IEC 27701 assessment report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
 
 ## Resources
 
