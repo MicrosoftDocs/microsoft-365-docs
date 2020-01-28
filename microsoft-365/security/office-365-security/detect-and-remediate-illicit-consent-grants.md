@@ -31,7 +31,7 @@ You need to search the Office 365 **audit log** to find signs, also called Indic
 
 1. Open the **Security and Compliance Center** in your Office 365 tenant.
 
-2. Navigate to the **Search** and select **Audit log search**.
+2. Navigate to **Search** and select **Audit log search**.
 
 3. Search (all activities and all users) and enter the start date and end date if required and then click **Search**. 
 
