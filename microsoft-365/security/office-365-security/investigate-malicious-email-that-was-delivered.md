@@ -102,6 +102,10 @@ Advanced filtering is a great addition to search capabilities. A boolean **NOT**
 - **Failed** – The email failed to reach the mailbox.
 - **Dropped** – The email was lost somewhere in the mail flow.
 
+**Directionality**: This option allows your security operations team to filter by the 'direction' a mail comes from, or is going. Directionality values are *Inbound*, *Outbound*, and *Intra-org* (corresponding to mail coming into your org from outside, being sent out of your org, or being sent internally to your org, respectively). This information can help security operations teams spot spoofing and impersonation, because a mismatch between the Directionality value (ex. *Inbound*), and the domain of the sender (which *appears* to be an internal domain) will be evident! The Directionality value is separate, and can differ from, the Message Trace. Results can be exported to spreadsheet.
+
+**Overrides**: This filter takes information that appears on the mail's details tab and uses it to expose where organizational, or user policies, for allowing and blocking mails have been *overridden*. The most important thing about this filter is that it helps your organization's security team see how many supsicious emails were delivered due to configuration. This gives them an opportunity to modify allows and blocks as needed. This result set of this filter can be exported to spreadsheet.
+
 <!-- -->
 4. Click on the subject of an email message, and then click **Email timeline**. (It appears among other headings on the panel like **Summary** or **Details**.)
 
