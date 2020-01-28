@@ -14,7 +14,7 @@ hideEdit: true
 titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offerings: ISO/IEC 27001:2013 Information Security Management Standards
+# ISO/IEC 27001:2013 Information Security Management Standards
 
 ## ISO/IEC 27001 overview
 

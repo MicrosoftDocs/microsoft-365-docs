@@ -28,7 +28,7 @@ After receiving a notification message, end users can choose from the following 
 
 **Block Sender** if you want Office 365 to add the sender to your blocked senders list.
 
-**Release** if the message isn’t spam and you want Office 365 to send the message to your mailbox.
+**Release** if the message isn't spam and you want Office 365 to send the message to your mailbox.
 
 **Review** to navigate to the Quarantine Portal within the Security and Compliance Center if you want to take other actions, such as Preview or Release.
   
