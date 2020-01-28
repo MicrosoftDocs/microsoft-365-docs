@@ -60,6 +60,11 @@ Key points on ISO/IEC 27001 and PIMS:
 
 No matter the size of your organization and whether it is a controller or a processor, your organization should consider pursuing certification, either for your own organization, or requesting it from vendors or suppliers based on your business requirements. This applies especially for processors, sub-processors, and co-controllers that are processing sensitive or high volumes of personal data. In any case, your organization should assess its business needs to determine if certification for its own products and services are suitable.
 
+## Audits, reports, and certificates
+
+- [Azure ISO/IEC 27701 certification](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- [Azure ISO/IEC 27701 assessment report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+
 ## Resources
 
 - [ISO/IEC 27701 (PIMS) for purchase](https://www.iso.org/standard/71670.html)

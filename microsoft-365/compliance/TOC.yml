@@ -34,7 +34,7 @@
           href: insider-risk-management-content-explorer.md
         - name: Add users to insider risk policies (preview)
           href: insider-risk-management-users.md
-        - name: Create insider risk notices (preview)
+        - name: Create insider risk notice templates (preview)
           href: insider-risk-management-notices.md
     - name: Communication compliance (preview)
       items: 
@@ -854,7 +854,7 @@
           href: offering-csa-star-attestation.md
         - name: CSA-STAR certification
           href: offering-csa-star-certification.md
-        - name: CSA-STAR self-Assessment
+        - name: CSA-STAR self-assessment
           href: offering-csa-star-self-assessment.md
         - name: ISO 20000-1-2011
           href: offering-iso-20000-1-2011.md
