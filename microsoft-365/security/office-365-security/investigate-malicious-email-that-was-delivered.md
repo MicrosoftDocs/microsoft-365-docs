@@ -50,9 +50,7 @@ To perform certain actions, such as viewing message headers or downloading email
 
 Threat Explorer is a powerful report that can serve multiple purposes, such as finding and deleting messages, identifying the IP address of a malicious email sender, or starting an incident for further investigation. The following procedure focuses on using Explorer to find and delete malicious email from recipient's mailboxes.
 
-1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. 
-    
-2. In the left navigation quick-launch, choose **Threat management** \> **Explorer**.
+1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. In the left navigation quick-launch, choose **Threat management** \> **Explorer**.
 
     ![Explorer with Delivery Action and Delivery Location fields.](../media/ThreatExFields.PNG)
 
@@ -104,9 +102,29 @@ Advanced filtering is a great addition to search capabilities. A boolean **NOT**
 
 **Directionality**: This option allows your security operations team to filter by the 'direction' a mail comes from, or is going. Directionality values are *Inbound*, *Outbound*, and *Intra-org* (corresponding to mail coming into your org from outside, being sent out of your org, or being sent internally to your org, respectively). This information can help security operations teams spot spoofing and impersonation, because a mismatch between the Directionality value (ex. *Inbound*), and the domain of the sender (which *appears* to be an internal domain) will be evident! The Directionality value is separate, and can differ from, the Message Trace. Results can be exported to spreadsheet.
 
-**Overrides**: This filter takes information that appears on the mail's details tab and uses it to expose where organizational, or user policies, for allowing and blocking mails have been *overridden*. The most important thing about this filter is that it helps your organization's security team see how many supsicious emails were delivered due to configuration. This gives them an opportunity to modify allows and blocks as needed. This result set of this filter can be exported to spreadsheet.
+**Overrides**: This filter takes information that appears on the mail's details tab and uses it to expose where organizational, or user policies, for allowing and blocking mails have been *overridden*. The most important thing about this filter is that it helps your organization's security team see how many suspicious emails were delivered due to configuration. This gives them an opportunity to modify allows and blocks as needed. This result set of this filter can be exported to spreadsheet.
 
-<!-- -->
+|Threat Explorer Overrides  | What they mean  |
+|---------|---------|
+|Allowed by Org Policy     |   Mail was allowed into the mailbox as directed by the organization policy.       |
+|Blocked by Org policy      |  Mail was blocked from delivery to the mailbox as directed by the organization policy.    |
+|File extension blocked by Org Policy     | File was blocked from delivery to the mailbox as directed by the organization policy.        |
+|Allowed by User Policy     | Mail was allowed into the mailbox as directed by the user policy.        |
+|Blocked by User Policy     | Mail was blocked from delivery to the mailbox as directed by the user policy.        |
+
+**URL threat**: The URL threat field has been included on the *details* tab of an email to indicate the threat presented by a URL. Threats presented by a URL can include *Malware*, *Phish*, or *Spam*, and a URL with *no threat* will say *None* in the threats section.
+
+
+
+<!-- HERE -->
+</br>
+
+1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. 
+
+2. In the left navigation quick-launch, choose **Threat management** \> **Explorer**.
+
+3. 
+
 4. Click on the subject of an email message, and then click **Email timeline**. (It appears among other headings on the panel like **Summary** or **Details**.)
 
     Once you've opened the email timeline, you should see a table that tells you the post-delivery events for that mail. In the case of no further events for the email, you should see a single event for the original delivery that states a result like **Blocked** with a verdict like **Phish**. The tab also has the option to export the entire email timeline, and this exports all the details on the tab and details on the email (things like Subject, Sender, Recipient, Network, and Message ID).
