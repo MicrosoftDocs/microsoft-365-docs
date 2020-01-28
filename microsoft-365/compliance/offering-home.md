@@ -159,7 +159,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <p><a href="https://www.trustcenter.cn/compliance/default.html#DJCP">DJCP (China)</a></p>
                         <p><a href="offering-en-301-549-eu.md">EN 301 549 (EU)</a></p>
                         <p><a href="offering-ens-spain.md">ENS (Spain)</a></p>
-                        <p><a href="https://aka.ms/ENISA">ENISA IAF (EU)</a></p>
+                        <p><a href="offering-enisa.md">ENISA IAF (EU)</a></p>
                         <p><a href="offering-eu-model-clauses.md">EU Model Clauses</a></p>
                         <p><a href="offering-eu-us-privacy-shield.md">EU-US Privacy Shield</a></p>
                         <p><a href="https://www.trustcenter.cn/compliance/default.html#GB18030">GB 18030 (China)</a></p>
