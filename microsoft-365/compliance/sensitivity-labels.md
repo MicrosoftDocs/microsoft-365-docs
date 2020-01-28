@@ -69,11 +69,13 @@ Each item of content can have a single sensitivity label applied to it. An item 
 
 ## What sensitivity labels can do
 
-In addition to email and documents, sensitivity labels are available in multiple public preview releases. For more information about how sensitivity labels can be used for files, teams, groups, and sites, see these articles:
-
-- [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md)
-
-- [Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)
+> [!NOTE]
+> In addition to applying labels to emails and documents in Office apps, sensitivity labels are now also available in the following public preview releases:
+> 
+>
+> - [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md)
+>
+> - [Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)
 
 After a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content. With a sensitivity label, you can:
 
