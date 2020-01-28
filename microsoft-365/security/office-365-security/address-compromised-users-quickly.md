@@ -41,22 +41,32 @@ And here's an example of an alert that was triggered when a sending limit was re
 
 ## Investigate and respond to a compromised user
 
-When a user account is compromised, alerts are triggered. And in some cases, that user account is blocked and prevented from sending any further email messages until the issue is resolved by your organization's security operations team. 
-
-### Investigate restricted users
+When a user account is compromised, alerts are triggered. And in some cases, that user account is blocked and prevented from sending any further email messages until the issue is resolved by your organization's security operations team. In other cases, an automated investigation begins which can result in recommended actions that your security team should take.
+- [View and investigate restricted users](#view-and-investigate-restricted-users)
+- [View details about automated investigations](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> You must have appropriate permissions to perform the following task. [Find out how to get AIR and see required permissions](automated-investigation-response-office.md#how-to-get-air).
+> You must have appropriate permissions to perform the following tasks. [Find out how to get AIR and see required permissions](automated-investigation-response-office.md#how-to-get-air).
+
+### View and investigate restricted users
+
+You have a few options for navigating to a list of restricted users. For example, in the Office 365 Security & Compliance Center, you can go to **Threat management** > **Review** > **Restricted Users**. The following procedure describes navigation using the **Alerts** dashboard, which is a good way to see various kinds of alerts that might have been triggered.
 
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in.
 
 2. In the navigation pane, choose **Alerts** > **Dashboard**.
 
 3. In the **Other alerts** widget, choose **Restricted Users**.<br/>
-   ![Other alerts widget](office365-otheralertswidget.jpg)<br/>
-   This opens the list of restricted users. 
+   ![Other alerts widget](media/office365atp-otheralertswidget.jpg)<br/>
+   This opens the list of restricted users.<br/>![Restricted users in Office 365](media/office365atp-restrictedusers.jpg) 
 
-4. Select a user account in the list to view details and take action, such as [releasing the restricted user](removing-user-from-restricted-users-portal-after-spam.md). <br/>![Restricted users in Office 365](media/office365-atp-restrictedusers.jpg)
+4. Select a user account in the list to view details and take action, such as [releasing the restricted user](removing-user-from-restricted-users-portal-after-spam.md). 
+
+### View details about automated investigations
+
+When an automated investigation has begun, you can see its details and results in the Office 365 Security & Compliance Center. Go to **Threat management** > **Investigations**, and then select an investigation to view its details.
+
+To learn more, see [View details of an investigation](office-365-air.md#view-details-of-an-investigation).
 
 ## Keep the following points in mind
 
