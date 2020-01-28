@@ -27,6 +27,8 @@ The compromised user security playbook enables your organization's security team
 - Limit the scope of a breach when an account is compromised; and 
 - Respond to compromised users more effectively and efficiently.
 
+Read this article to learn more about the compromised user security playbook. And see [Girish Chander's blog post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) for additional details.
+
 ## Compromised user alerts
 
 When a user account is compromised, atypical or anomalous behaviors occur. For example, phishing and spam messages might be sent internally from a trusted user account. Office 365 Advanced Threat Protection can detect such anomalies in email patterns and collaboration activity within Office 365. When this happens, alerts are triggered, and the threat mitigation process begins.
