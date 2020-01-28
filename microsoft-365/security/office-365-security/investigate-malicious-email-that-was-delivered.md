@@ -179,7 +179,7 @@ Delivery action is the action taken on an email due to existing policies or dete
 
 - **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
 
-- **Junked** – email was sent to either user’s junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
+- **Junked** – email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
 
 - **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
 
@@ -189,13 +189,13 @@ Delivery location shows the results of policies and detections that run post-del
 
 - **Inbox or folder** – The email is in the inbox or a folder (according to your email rules).
 
-- **On-prem or external** – The mailbox doesn’t exist on cloud but is on-premises.
+- **On-prem or external** – The mailbox doesn't exist on cloud but is on-premises.
 
 - **Junk folder** – The email is in a user's Junk folder.
 
 - **Deleted items folder** – The email is in a user's Deleted items folder.
 
-- **Quarantine** – The email in quarantine, and not in a user’s mailbox.
+- **Quarantine** – The email in quarantine, and not in a user's mailbox.
 
 - **Failed** – The email failed to reach the mailbox.
 
