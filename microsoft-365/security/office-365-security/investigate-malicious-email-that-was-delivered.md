@@ -93,7 +93,14 @@ Advanced filtering is a great addition to search capabilities. A boolean **NOT**
 - **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
 - **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious
 
-
+**Delivery location**: The Delivery location filter is available in order to help admins understand where suspected malicious mail ended-up and what actions were taken on it. The resulting data can be exported to spreadsheet. Possible delivery locations are:
+- ****Inbox or folder** – The email is in the Inbox or a specific folder, according to your email rules.
+- **On-prem or external** – The mailbox doesn’t exist in the Cloud but is on-premises.
+- **Junk folder** – The email is in a user's Junk mail folder.
+- **Deleted items folder** – The email is in a user's Deleted items folder.
+- **Quarantine** – The email in quarantine, and not in a user’s mailbox.
+- **Failed** – The email failed to reach the mailbox.
+- **Dropped** – The email was lost somewhere in the mail flow.
 
 <!-- -->
 4. Click on the subject of an email message, and then click **Email timeline**. (It appears among other headings on the panel like **Summary** or **Details**.)
