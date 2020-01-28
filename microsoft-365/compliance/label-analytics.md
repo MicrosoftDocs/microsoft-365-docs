@@ -1,7 +1,7 @@
 ---
 title: "View label usage with label analytics"
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

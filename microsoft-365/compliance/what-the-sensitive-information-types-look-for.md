@@ -1,7 +1,7 @@
 ---
 title: "What the sensitive information types look for"
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

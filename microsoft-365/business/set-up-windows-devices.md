@@ -1,7 +1,7 @@
 ---
 title: "Set up Windows devices for Microsoft 365 Business users"
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

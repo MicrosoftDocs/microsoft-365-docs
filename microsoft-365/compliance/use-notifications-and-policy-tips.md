@@ -1,7 +1,7 @@
 ---
 title: "Send email notifications and show policy tips for DLP policies"
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

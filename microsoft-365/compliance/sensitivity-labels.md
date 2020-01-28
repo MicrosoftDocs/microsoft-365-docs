@@ -1,7 +1,7 @@
 ---
 title: "Overview of sensitivity labels"
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
