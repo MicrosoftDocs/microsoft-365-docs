@@ -50,11 +50,13 @@ When a user account is compromised, alerts are triggered. And in some cases, tha
 
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in.
 
-2. In the navigation pane, choose Alerts > Dashboard.
+2. In the navigation pane, choose **Alerts** > **Dashboard**.
 
-3. In the Other alerts widget, choose Restricted Users.
+3. In the **Other alerts** widget, choose **Restricted Users**.<br/>
+   ![Other alerts widget](office365-otheralertswidget.jpg)<br/>
+   This opens the list of restricted users. 
 
-
+4. Select a user account in the list to view details and take action, such as [releasing the restricted user](removing-user-from-restricted-users-portal-after-spam.md). <br/>![Restricted users in Office 365](media/office365-atp-restrictedusers.jpg)
 
 ## Keep the following points in mind
 
