@@ -176,11 +176,11 @@ The metadata applied by both sets of labels are compatible, so you don't need to
 
 ### Azure Information Protection clients
 
-When you use sensitivity labels in Office 365 ProPlus apps on Windows computers, you have a choice of using an Azure Information Protection client, or use labeling that's built into Office. 
+When you use sensitivity labels in Office 365 ProPlus apps on Windows computers, you have a choice of using an Azure Information Protection client, or use labeling that's built into Office.
 
-By default, built-in labeling is turned off in these apps when the Azure Information Protection client is installed. For more information, see [About the Office built-in labeling client](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
+By default, built-in labeling is turned off in these apps when the Azure Information Protection client is installed. For more information, including how to change this default behavior, see [About the Office built-in labeling client](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
 
-If you need help deciding which labeling client to use, see [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure Information Protection documentation.
+If you are new to Azure Information Protection, or if you are an existing Azure Information Protection customer that has just migrated your labels, see [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure Information Protection documentation.
 
 ## Sensitivity labels and Microsoft Cloud App Security
 
@@ -188,11 +188,11 @@ By using Cloud App Security (CAS), you can detect, classify, label, and protect 
 
 Cloud App Security works with both Azure Information Protection labels and sensitivity labels:
 
-- If the labeling admin centers have the same labels as those in the Azure portal: Sensitivity labels are used. To select these labels in Cloud App Security, at least one label must be [published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to at least one user.
+- If the labeling admin centers have one or more sensitivity labels [published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to at least one user: Sensitivity labels are used.
 
-- If the labeling admin centers don't have the same labels as those in the Azure portal: Sensitivity labels are not used from the labeling admin centers, and instead, Azure Information Protection labels are retrieved from the Azure portal.
+- If the labeling admin centers don't have sensitivity labels published: Azure Information Protection labels are used.
 
-For instructions to use Cloud App Security with these labels, see [Automatically apply Azure Information Protection classification labels](https://docs.microsoft.com/cloud-app-security/use-case-information-protection).
+For instructions to use Cloud App Security with these labels, see [Azure Information Protection integration](https://docs.microsoft.com/cloud-app-security/azip-integration).
 
 ## Sensitivity labels and the Microsoft Information Protection SDK
 

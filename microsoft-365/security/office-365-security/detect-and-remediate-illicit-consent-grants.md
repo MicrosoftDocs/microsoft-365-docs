@@ -106,7 +106,7 @@ The simplest way to verify the Illicit Consent Grant attack is to run [Get-Azure
 
 The script produces one file named Permissions.csv. Follow these steps to look for illicit application permission grants:
 
-1. In the ConsentType column (column G) search for the value "AllPrinciples". The AllPrincipals permission allows the client application to access everyone’s content in the tenancy. Native Office 365 applications need this permission to work correctly. Every non-Microsoft application with this permission should be reviewed carefully.
+1. In the ConsentType column (column G) search for the value "AllPrinciples". The AllPrincipals permission allows the client application to access everyone's content in the tenancy. Native Office 365 applications need this permission to work correctly. Every non-Microsoft application with this permission should be reviewed carefully.
 
 2. In the Permission column (column F) review the permissions that each delegated application has to content. Look for "Read" and "Write" permission or "*.All" permission, and review these carefully because they may not be appropriate.
 
