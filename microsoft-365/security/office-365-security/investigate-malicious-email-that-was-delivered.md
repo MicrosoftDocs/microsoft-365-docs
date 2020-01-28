@@ -50,7 +50,9 @@ To perform certain actions, such as viewing message headers or downloading email
 
 Threat Explorer is a powerful report that can serve multiple purposes, such as finding and deleting messages, identifying the IP address of a malicious email sender, or starting an incident for further investigation. The following procedure focuses on using Explorer to find and delete malicious email from recipient's mailboxes.
 
-1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. In the left navigation quick-launch, choose **Threat management** \> **Explorer**.
+1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center.
+
+2. In the left navigation quick-launch, choose **Threat management** \> **Explorer**.
 
     ![Explorer with Delivery Action and Delivery Location fields.](../media/ThreatExFields.PNG)
 
@@ -114,9 +116,59 @@ Advanced filtering is a great addition to search capabilities. A boolean **NOT**
 
 **URL threat**: The URL threat field has been included on the *details* tab of an email to indicate the threat presented by a URL. Threats presented by a URL can include *Malware*, *Phish*, or *Spam*, and a URL with *no threat* will say *None* in the threats section.
 
+7. **Email timeline view**: Your security operations team might need to deep-dive into email details to investigate further. The email timeline allows admins to view actions taken on an email from delivery to post-delivery. To view an email timeline, click on the subject of an email message, and then click Email timeline. (It appears among other headings on the panel like Summary or Details.) These results can be exported to spreadsheet.
 
+Email timeline will open to a table that shows all delivery and post-delivery events for the email. If there are no further actions on the email, you should see a single event for the original delivery that states a result, such as *Blocked*, with a verdict like *Phish*. Admins can export the entire email timeline, including all details on the tab and email (such as, Subject, Sender, Recipient, Network, and Message ID). The email timeline cuts down on randomization because there is less time spent checking different locations to try to understand events that happened since the email arrived. When multiple events happen at, or close to, the same time on an email, those events show up in a timeline view.
 
-<!-- HERE -->
+8. **Preview / download**: Threat Explorer gives your security operations team the details they need to investigate suspicious email. Your security operations team can either:
+
+- Check the delivery action and location.
+
+- View the timeline of your email.
+
+##### Check the delivery action and location
+
+In [Threat Explorer (and real-time detections)](threat-explorer.md), you now have **Delivery Action** and **Delivery Location** columns instead of the former **Delivery Status** column. This results in a more complete picture of where your email messages land. Part of the goal of this change is to make hunting easier for security operations, but the net result is knowing the location of problem email messages at a glance.
+
+Delivery Status is now broken out into two columns:
+
+- **Delivery action** - What is the status of this email?
+
+- **Delivery location** - Where was this email routed as a result?
+
+Delivery action is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
+
+- **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
+
+- **Junked** – email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
+
+- **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
+
+- **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious.
+ 
+Delivery location shows the results of policies and detections that run post-delivery. It's linked to a Delivery Action. This field was added to give insight into the action taken when a problem mail is found. Here are the possible values of delivery location:
+
+- **Inbox or folder** – The email is in the inbox or a folder (according to your email rules).
+
+- **On-prem or external** – The mailbox doesn't exist on cloud but is on-premises.
+
+- **Junk folder** – The email is in a user's Junk folder.
+
+- **Deleted items folder** – The email is in a user's Deleted items folder.
+
+- **Quarantine** – The email in quarantine, and not in a user's mailbox.
+
+- **Failed** – The email failed to reach the mailbox.
+
+- **Dropped** – The email gets lost somewhere in the mail flow.
+
+##### View the timeline of your email
+  
+**Email Timeline** is a field in Threat Explorer that makes hunting easier for your security operations team. When multiple events happen at or close to the same time on an email, those events show up in a timeline view. Some events that happen post-delivery to email are captured in the **Special actions** column. Combining information from the timeline of an email message with any special actions that were taken post-delivery gives admins insight into policies and threat handling (such as where the mail was routed, and, in some cases, what the final assessment was).
+
+    
+
+<!-- HERE 
 </br>
 
 1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. 
@@ -193,46 +245,8 @@ To access your message header and email download options, follow these steps:
 
 > [!IMPORTANT]
 > This capability doesn't show up for email messages that were never found in a user's mailbox, which can happen if an email was dropped or its delivery failed. In cases where email messages were deleted from users' mailboxes, admins see a "Mail not found" error message.
+-->
 
-### Check the delivery action and location
-
-In [Threat Explorer (and real-time detections)](threat-explorer.md), you now have **Delivery Action** and **Delivery Location** columns instead of the former **Delivery Status** column. This results in a more complete picture of where your email messages land. Part of the goal of this change is to make hunting easier for security operations, but the net result is knowing the location of problem email messages at a glance.
-
-Delivery Status is now broken out into two columns:
-
-- **Delivery action** - What is the status of this email?
-
-- **Delivery location** - Where was this email routed as a result?
-
-Delivery action is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
-
-- **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
-
-- **Junked** – email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
-
-- **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
-
-- **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious.
- 
-Delivery location shows the results of policies and detections that run post-delivery. It's linked to a Delivery Action. This field was added to give insight into the action taken when a problem mail is found. Here are the possible values of delivery location:
-
-- **Inbox or folder** – The email is in the inbox or a folder (according to your email rules).
-
-- **On-prem or external** – The mailbox doesn't exist on cloud but is on-premises.
-
-- **Junk folder** – The email is in a user's Junk folder.
-
-- **Deleted items folder** – The email is in a user's Deleted items folder.
-
-- **Quarantine** – The email in quarantine, and not in a user's mailbox.
-
-- **Failed** – The email failed to reach the mailbox.
-
-- **Dropped** – The email gets lost somewhere in the mail flow.
-
-### View the timeline of your email
-  
-**Email Timeline** is a field in Threat Explorer that makes hunting easier for your security operations team. When multiple events happen at or close to the same time on an email, those events show up in a timeline view. Some events that happen post-delivery to email are captured in the **Special actions** column. Combining information from the timeline of an email message with any special actions that were taken post-delivery gives admins insight into policies and threat handling (such as where the mail was routed, and, in some cases, what the final assessment was).
   
 ## Related topics
 
