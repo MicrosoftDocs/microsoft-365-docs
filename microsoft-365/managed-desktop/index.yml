@@ -6,9 +6,7 @@ metadata:
   description: 
   keywords: device, app, management
   author: jaimeo
-  f1.keywords:
-- NOCSH
-ms.author: jaimeo
+  ms.author: jaimeo
   ms.topic: landing-page
   ms.devlang: na
   ms.service: m365-md
