@@ -1,5 +1,7 @@
 ---
 title: "Set up Office 365 ATP Safe Links policies"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp

@@ -1,5 +1,7 @@
 ---
 title: "Secure files in Microsoft Teams"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

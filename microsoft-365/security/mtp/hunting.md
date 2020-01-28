@@ -5,6 +5,8 @@ keywords: Microsoft 365, M365, Microsoft Threat Protection, MTP, security center
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: lomayor
 author: lomayor
 manager: dansimp

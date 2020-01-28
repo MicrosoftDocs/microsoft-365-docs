@@ -1,6 +1,8 @@
 ---
 title: "Communication compliance feature reference (preview)"
 description: "Feature reference for communication compliance in Microsoft 365. Learn details and specifications for each of the feature components."
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi

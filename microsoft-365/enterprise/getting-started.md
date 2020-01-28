@@ -1,5 +1,7 @@
 ﻿---
 title: Getting Started - Desktop Deployment
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

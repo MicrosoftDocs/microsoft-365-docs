@@ -1,5 +1,7 @@
 ---
 title: "Step 1: Prepare your network for Microsoft 365"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

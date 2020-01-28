@@ -1,5 +1,7 @@
 ---
 title: "Protect files in teams with retention labels and DLP"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
