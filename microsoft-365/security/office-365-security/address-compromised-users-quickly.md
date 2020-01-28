@@ -43,6 +43,19 @@ And here's an example of an alert that was triggered when a sending limit was re
 
 When a user account is compromised, alerts are triggered. And in some cases, that user account is blocked and prevented from sending any further email messages until the issue is resolved by your organization's security operations team. 
 
+### Investigate restricted users
+
+> [!IMPORTANT]
+> You must have appropriate permissions to perform the following task. [Find out how to get AIR and see required permissions](automated-investigation-response-office.md#how-to-get-air).
+
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in.
+
+2. In the navigation pane, choose Alerts > Dashboard.
+
+3. In the Other alerts widget, choose Restricted Users.
+
+
+
 ## Keep the following points in mind
 
 - **Stay on top of your alerts**. The longer a compromise goes undetected, the larger the potential for widespread impact and cost to your organization, customers, and partners. Early detection and timely response are critical to mitigate threats, and especially when a user's account is compromised. See [Automatically investigate and respond to threats in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) and [Alerts in the Office 365 Security &amp; Compliance Center](alerts.md).
@@ -51,5 +64,9 @@ When a user account is compromised, alerts are triggered. And in some cases, tha
 
 ## Next steps
 
-
+- [Find out how to get AIR and see required permissions](automated-investigation-response-office.md#how-to-get-air)
+- [Learn more about alerts](../../compliance/alert-policies.md)
+- [Manually find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)
+- [Learn about AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
