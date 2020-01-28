@@ -122,9 +122,9 @@ Email timeline will open to a table that shows all delivery and post-delivery ev
 
 8. **Preview / download**: Threat Explorer gives your security operations team the details they need to investigate suspicious email. Your security operations team can either:
 
-- Check the delivery action and location.
+- [Check the delivery action and location](#check-the-delivery-action-and-location).
 
-- View the timeline of your email.
+- [View the timeline of your email](#view-the-timeline-of-your-email).
 
 ##### Check the delivery action and location
 
