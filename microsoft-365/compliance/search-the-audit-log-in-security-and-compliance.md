@@ -1,5 +1,7 @@
 ---
 title: "Search the audit log in the Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -46,13 +48,13 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 - User and admin activity in Yammer
 
-- User and admin activity in Microsoft Flow
+- User and admin activity in Microsoft Power Automate
 
 - User and admin activity in Microsoft Stream
 
 - Analyst and admin activity in Microsoft Workplace Analytics
 
-- User and admin activity in Microsoft PowerApps
+- User and admin activity in Microsoft Power Apps
 
 - User and admin activity in Microsoft Forms
 
@@ -113,7 +115,7 @@ Be sure to read the following items before you start searching the Office 365 au
   |Dynamics 365 CRM|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |eDiscovery|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Exchange Online|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Flow|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Project|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -300,7 +302,7 @@ Click one of the following links to go to a specific table.
 |[Role administration activities](#role-administration-activities)|[Directory administration activities](#directory-administration-activities)|[eDiscovery activities](#ediscovery-activities)|
 |[Advanced eDiscovery activities](#advanced-ediscovery-activities)|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Yammer activities](#yammer-activities)|
-|[Microsoft Flow activities](#microsoft-flow-activities)|[Microsoft PowerApps activities](#microsoft-powerapps)|[Microsoft Stream activities](#microsoft-stream-activities)|
+|[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|[Microsoft Stream activities](#microsoft-stream-activities)|
 |[Microsoft Forms activities](#microsoft-forms-activities)|[Exchange admin activities](#exchange-admin-audit-log)|||
 ||||
 
@@ -765,13 +767,13 @@ The following table lists the user and admin activities in Yammer that are logge
 |Viewed file|FileVisited|User views a file.|
 ||||
 
-### Microsoft Flow activities
+### Microsoft Power Automate activities
 
-You can search the audit log for activities in Microsoft Flow. These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Flow activities, see the blog  [Microsoft Flow audit events now available in Security & Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
+You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Microsoft Flow audit events now available in Security & Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
 
-### Microsoft PowerApps
+### Microsoft Power Apps activities
 
-You can search the audit log for app-related activities in PowerApps. These activities include creating, launching, and publishing an app. Assigning permissions to apps is also audited. For a description of all PowerApps activities, see [Activity logging for PowerApps](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited).
+You can search the audit log for app-related activities in Power Apps. These activities include creating, launching, and publishing an app. Assigning permissions to apps is also audited. For a description of all Power Apps activities, see [Activity logging for Power Apps](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited).
 
 ### Microsoft Stream activities
 

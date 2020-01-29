@@ -1,6 +1,8 @@
 ---
 title: "Identity for the Contoso Corporation"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019

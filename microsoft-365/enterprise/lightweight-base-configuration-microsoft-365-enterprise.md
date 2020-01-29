@@ -1,5 +1,7 @@
 ---
 title: "Lightweight base configuration"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: cabailey
 manager: laurawi
@@ -143,7 +145,7 @@ After a sensitivity label is created and published, it can take up to 24 hours f
 
 3. After this 24 hours wait, use one of the user accounts you specified in step 1 to create a team, Office 365 group, or SharePoint site with the label that you created in step 1.
 
-4. If there are no errors during the creation operation for step 3, publish the label for all users in your tenant. If there are errors, contact Microsoft Support.
+4. If there are no errors during the creation operation for step 3, publish the label for all users in your tenant. If there are errors, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 **Modifying and deleting published labels:**
 
@@ -155,14 +157,14 @@ If you modify or delete a sensitivity label that is included in one or more labe
 
 3. After the 48 hours wait, try creating a team, group, or site and confirm that the label is no longer visible.
 
-4. If the sensitivity label isn't visible, you can now safely modify or delete the label. If the label is still visible, contact Microsoft Support.
+4. If the sensitivity label isn't visible, you can now safely modify or delete the label. If the label is still visible, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ## Troubleshoot sensitivity label deployment
 
 ### Labels not visible after publishing
 If you experience issues when you create a team or Office 365 group after you enable these settings or modify a sensitivity label's description, save the label, wait a few hours, and then try to create the team or group again. For information, see [Schedule roll-out after you create or change a sensitivity label](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
 
-If you are still not able to see the new sensitivity label from SharePoint Online, contact Microsoft Support.
+If you are still not able to see the new sensitivity label from SharePoint Online, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ### Team, group, or SharePoint site creation errors
 If you experience creation errors during the public preview, you have two options:

@@ -1,5 +1,7 @@
 ---
 title: "Reporting and message trace in Exchange Online Protection"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

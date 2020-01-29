@@ -1,5 +1,7 @@
 ---
 title: "What's new in the Microsoft 365 compliance center"
+f1.keywords:
+- NOCSH
 ms.author: brendonb
 author: brendonb
 manager: laurawi
@@ -50,6 +52,7 @@ Here’s a summary of the new solutions you’ll find. Keep an eye out for other
 |Solution catalog (preview) <br/>|The solution catalog is your one-stop-shop for discovering, learning about, and quickly getting started with our compliance and risk management solutions. The catalog is organized into three compliance categories, each containing details about the solutions that make up that category. Categories include Information protection & governance, Insider risk management, and Discovery & response <br/>|[Overview of the solution catalog (preview)](microsoft-365-solution-catalog.md)|
 |Communication compliance (preview) <br/>|Communication compliance is part of the new insider risk management category that helps minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. The solution extends the capabilities of supervision policies in Office 365 by introducing several new enhancements such as intelligent templates, flexible remediation workflows, and actionable insights. <br/>|[Communication compliance in Microsoft 365 (preview)](communication-compliance.md)|
 |Data classification (preview) <br/>|Our new Data classification page contains powerful insights and tools to help you discover and evaluate how sensitive info and labels (retention and sensitivity) are being used in content across your organization. Review content that contains sensitive info or has labels applied, explore label activity across Microsoft 365 locations, create custom sensitive info types, and much more.<br/>|[Data classification overview (preview)](data-classification-overview.md)|
+|Trainable classifiers (preview) <br/>|This powerful new tool uses our machine learning engine to help identify categories of content in your org, like regulatory docs or employee agreements. Once created, classifiers can be used in several compliance solutions to detect related content and classify it, protect it, retain it, and more.<br/>|[Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)|
 
 #### Updated compliance solutions
 

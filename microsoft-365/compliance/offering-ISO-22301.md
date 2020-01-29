@@ -5,6 +5,8 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -35,6 +37,7 @@ Learn about the benefits of ISO/IEC 22301 on the Microsoft Cloud: [Download the 
 - Genomics
 - Graph
 - Intune
+- Microsoft Managed Desktop
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - [Office 365 Commercial, Government, and Education](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
@@ -69,7 +72,7 @@ Yes. If your business requires ISO 22301 certification for implementations deplo
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Microsoft Enterprise Business Continuity Management Program Description](https://go.microsoft.com/fwlink/p/?linkid=2092212)
-- [Compliance Manager](https://go.microsoft.com/fwlink/p/?linkid=2092329)
+- [Compliance Score](compliance-score.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## Download the offering backgrounder

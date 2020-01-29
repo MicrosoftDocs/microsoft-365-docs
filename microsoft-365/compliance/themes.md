@@ -1,5 +1,7 @@
 ---
 title: "Themes"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -23,4 +25,4 @@ When someone composes a document, they do not choose words randomly; they are tr
 
 ## How does Themes work?
 
-Themes analyzes documents with text in a working set to parse out common themes that appear accross the documents. Then, it assigns those themes to the documents in which they appear. It also labels each with words used in the documents that are representative of the theme. Since a document can be about more than one subject matter, in many cases a document has more than one themes assigned to it. The theme that appears most prominently in a document is designated as its dominant theme.
+Themes analyzes documents with text in a working set to parse out common themes that appear across the documents. Then, it assigns those themes to the documents in which they appear. It also labels each with words used in the documents that are representative of the theme. Since a document can be about more than one subject matter, in many cases a document has more than one themes assigned to it. The theme that appears most prominently in a document is designated as its dominant theme.

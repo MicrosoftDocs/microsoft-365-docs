@@ -1,5 +1,7 @@
 ---
 title: "Learn more about spoof intelligence"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

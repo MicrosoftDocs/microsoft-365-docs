@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Compliance Score release notes"
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -26,9 +28,11 @@ Compliance Score is a new feature in the [Microsoft 365 compliance center](micro
 
 New pre-configured templates for assessments are released into production for Compliance Score (Preview) as they become available. Check the [full list of templates here](compliance-score.md#templates). Recently-added templates include:
 
-- ISO 27701:2019
+- Brazil General Data Protection Law (LGPD)
 - IRAP / Australian Government ISM (Preview)
-
+- ISO 27701:2019
+- SOC 1
+- SOC 2
 
 ### Compliance Score relationship to Compliance Manager
 

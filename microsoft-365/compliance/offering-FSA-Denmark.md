@@ -5,6 +5,8 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -32,7 +34,7 @@ Guidelines issued by the Ministry of Industry, Business, and Financial Affairs:
 
 ## Microsoft and the FSA
 
-To help guide financial institutions in Denmark considering outsourcing business functions to the cloud, Microsoft has published [A compliance checklist for financial institutions in Denmark](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf /5fa5cdde-3219-4e95-946d-0c0d05494362). By reviewing and completing the checklist, financial organizations can adopt Microsoft business cloud services with the confidence that they are complying with applicable regulatory requirements.
+To help guide financial institutions in Denmark considering outsourcing business functions to the cloud, Microsoft has published [a compliance checklist for financial institutions in Denmark](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf). By reviewing and completing the checklist, financial organizations can adopt Microsoft business cloud services with the confidence that they are complying with applicable regulatory requirements.
 
 When Danish financial institutions outsource business activities they must comply with the requirements of the Financial Supervisory Authority (FSA), and work within the broad policy framework of the European Banking Authority (EBA). Specifically, those requirements focus on how contractual agreements between financial services and cloud providers can ensure adequate control of outsourced activities.
 
@@ -49,7 +51,7 @@ The Microsoft checklist helps Danish financial firms conducting due-diligence as
 
 ## How to implement
 
-- [Compliance checklist: Denmark](https://www.retsinformation.dk/Forms/R0710.aspx): Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
+- [Compliance checklist: Denmark](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=524cc66f-b292-49e9-aa14-04560401baa0&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides): Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
 - [Risk Assessment & Compliance Guide](https://docs.microsoft.com/azure/industry/financial/): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
 - [Financial use cases](https://www.finanstilsynet.dk/~/media/Lovgivning/Oversat-lovgivning/Executive-orders/1304_251110-pdf.pdf): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
 

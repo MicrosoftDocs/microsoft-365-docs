@@ -1,6 +1,8 @@
 ---
 title: "Supervision policies"
 description: "Learn about supervision policies in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -36,6 +38,16 @@ For a quick overview of Supervision policies, see the [Supervision policy video]
 To learn more about upcoming Supervision feature improvements and availability, see the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
 Want to try the new Communication compliance experience in Microsoft 365? Check out the new and improved features available in [Communication compliance in Microsoft 365 (preview)](communication-compliance.md).
+
+## Transitioning from Supervision in Office 365
+
+Organizations using supervision policies in Office 365 and planning to transition to [communication compliance policies in Microsoft 365](communication-compliance.md) need to understand these important points:
+
+- Both solutions may be used side-by-side in your organization, but policies used in each solution must have unique policy names. Groups and custom keyword dictionaries can be shared between solutions during a transition period.
+- Messages saved in supervision in Office 365 policy matches cannot be moved or shared into communication compliance in Microsoft 365.
+- The supervision solution in Office 365 will be fully replaced by the communication compliance solution in Microsoft 365. We recommend creating new policies in communication compliance that have the same settings as existing supervision policies to use the new investigation and remediation improvements. When transitioning to communication compliance in Microsoft 365, you should plan to export reporting data from supervision in Office 365 if you have internal compliance retention policy requirements.
+
+For retirement information for supervision in Office 365, see the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) for details.
 
 ## Scenarios for supervision policies
 

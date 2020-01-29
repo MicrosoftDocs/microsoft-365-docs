@@ -1,5 +1,7 @@
 ---
 title: "Use user spam notifications to release and report quarantined messages in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -37,7 +39,7 @@ These are the actions that you can take with a quarantined message:
 
 - **Block Sender** if you want Office 365 to add the sender to your blocked senders list.
 
-- **Release** if the message isn’t spam and you want Office 365 to send the message to your mailbox.
+- **Release** if the message isn't spam and you want Office 365 to send the message to your mailbox.
 
 - **Review** to navigate to the Quarantine Portal within the Security and Compliance Center if you want to take other actions, such as Preview or Release.
 

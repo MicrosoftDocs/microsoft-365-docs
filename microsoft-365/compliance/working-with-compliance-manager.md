@@ -1,5 +1,7 @@
 ---
 title: "Work with Microsoft Compliance Manager (Preview)"
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -67,13 +69,25 @@ To add or remove users from Compliance Manager roles.
 
 ### Controlling automatic Secure Score updates
 
-Secure Score updates can be turned on automatically for all actions, can be turned off for all actions, or can be set by individual action.
+Secure Score updates can be turned on automatically for all actions, turned off for all actions, or set by individual action by following these steps.
 
 1. Sign in to the [Service Trust Portal](https://servicetrust.microsoft.com) with your global administrator account.
 
-2. On the Service Trust Portal top menu bar, select **Admin** and then choose **Settings**.
+2. On the Service Trust Portal top menu bar, under **More**, select **Admin** and then choose **Settings**.
 
-4. In the **Secure Score** tab, select the appropriate button for your chosen setting.
+3. In the **Secure Score** tab, select the corresponding button to either **turn on for all actions**, **turn off for all actions**, or **set per action.**
+
+If you choose **set per action,** take these additional steps to turn on Secure Score updates for individual actions:
+
+4. Select **Compliance Manager** from the top menu (note: do not select "Compliance Manager (classic)").
+
+5. Select **Tenant Management** in the upper-right corner of your screen.
+
+6. On the **Customer Actions** pane, find your intended action with an ellipsis (**...**) under the **Affected Actions** column. Click on the ellipses and select **Edit.**
+
+7. Switch the **Secure Score continuous update** toggle switch to **On.**
+
+8. Select **Save.** Secure Score continuous monitoring is now turned on for that action.
 
 **Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager administrator can turn on automatic updates for individual actions, but not for all actions globally.
 

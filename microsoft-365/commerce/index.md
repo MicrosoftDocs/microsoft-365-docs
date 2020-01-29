@@ -6,6 +6,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
+f1.keywords:
+- NOCSH
 ms.author: TrudyHa
 ms.date: 5/29/2019
 ms.topic: conceptual

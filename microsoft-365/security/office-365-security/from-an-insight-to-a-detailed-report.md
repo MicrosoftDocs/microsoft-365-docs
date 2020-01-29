@@ -1,5 +1,7 @@
 ---
 title: "Walkthrough - From an insight to a detailed report"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp

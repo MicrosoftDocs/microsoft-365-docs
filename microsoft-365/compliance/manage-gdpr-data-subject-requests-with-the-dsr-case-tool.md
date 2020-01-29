@@ -1,5 +1,7 @@
 ---
 title: "Manage GDPR data subject requests with the DSR case tool in the Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

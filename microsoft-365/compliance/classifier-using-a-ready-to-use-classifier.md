@@ -1,5 +1,7 @@
 ---
 title: "Using a ready to use classifier (preview)"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -40,7 +42,7 @@ Microsoft has trained and tested a number of classifiers using very large sample
 
 2. Create a dedicated SharePoint Online folder; wait at least an hour for the folder to be added to the search index. Make note of the folder URL.
 
-3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Records management (preview)** > **Label policies** tab.
+3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open **Microsoft 365 compliance center** > **Records management (preview)** > **Label policies** tab.
 
 4. Choose `Auto-apply a label`.
 

@@ -1,6 +1,8 @@
 ---
 title: "GDPR discovery, protection, and reporting in the Office 365 dev/test environment"
 description: "Demonstrate GDPR capabilities in Office 365."
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi

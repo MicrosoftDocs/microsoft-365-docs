@@ -1,5 +1,7 @@
 ---
 title: "Set up new Office 365 Message Encryption capabilities"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: Overview of the Microsoft 365 solution catalog
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -46,13 +48,14 @@ From here, you'll see cards for the following solutions:
 
 ## Insider risk management section
 
-The **Insider risk management** section on the home page shows you at a glance how your organization can identify, analyze, and remediate internal risks before they cause harm.
+The **Insider risk management** section on the home page shows you at a glance how your organization can identify, analyze, and take action on internal risks before they cause harm.
 
-![Microsoft 365 solution catalog insider risk management section](media/m365-solution-catalog-internal-risk-management.png)
+![Microsoft 365 solution catalog insider risk management section](media/m365-solution-catalog-insider-risk-management.png)
 
-From here, you can go to a card for the following solution:
+From here, you'll see cards for the following solutions:
 
-- [Communication compliance](communication-compliance.md): Minimizes communication risks by helping you automatically capture inappropriate messages, investigate possible policy violations, and take steps to remediate.
+- [Communication compliance](communication-compliance.md): Minimizes communication risks by helping you automatically capture inappropriate messages, investigate possible policy violations, and take steps to minimize harm.
+- [Insider risk management](insider-risk-management.md): Detect risky activity across your organization to help you quickly identify, investigate, and take action on insider risks and threats.
 
 ## Discovery & response section
 
@@ -90,6 +93,8 @@ If you are looking for an existing compliance solution and it’s not available 
 ## Next steps
 
 - **Review your Microsoft Compliance Score**, a personalized, risk-based score to help you understand your organization's state of compliance with key standards and regulations. It provides recommended actions you can take to strengthen your overall compliance posture, and provides workflow capabilities to help you efficiently carry out those actions. To learn more, see [Compliance Score (Preview)](compliance-score.md).
+
+- **Configure insider risk management policies** to help minimize internal risks and enable you to detect, investigate, and take action for risky activities in your organization. See [Insider risk management](insider-risk-management.md).
 
 - **Microsoft Information Protection**, learn how Microsoft 365 solutions help you discover, classify, and protect sensitive information wherever it lives or travels.
     - **Get acquainted with and set up Microsoft Cloud App Security**. See [Quickstart: Get started with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).

@@ -1,5 +1,7 @@
 ---
 title: "Phase 4: Office 365 ProPlus"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
