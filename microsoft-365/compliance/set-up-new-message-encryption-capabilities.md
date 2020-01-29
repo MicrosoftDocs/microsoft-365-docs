@@ -79,7 +79,7 @@ You can verify that your Office 365 tenant is properly configured to use the new
      Your results should be similar to:
 
      ```text
-    Results : Acquiring RMS Templates ...
+     Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not
             Forward.
             Verifying encryption ...
@@ -90,7 +90,7 @@ You can verify that your Office 365 tenant is properly configured to use the new
                 - PASS: IRM verified successfully.
 
             OVERALL RESULT: PASS
-    ```
+     ```
 
    - Your Office 365 organization name will replace *Contoso*.
 
