@@ -182,19 +182,13 @@ For example, another user might have applied:
 - An Azure Rights Management protection template that encrypts the content independently from a label.
 - A label that applies encryption with permissions assigned by the administrator.
 
-The following table identifies what happens to existing encryption when a sensitivity label is applied to that content.
-
-<br/>
-<br/>
+The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
 
 | |**User applies a sensitivity label with encryption turned off**|**User applies a sensitivity label with encryption turned on**|**User applies a label with Remove Protection**<sup>1</sup>|
 |:-----|:-----|:-----|:-----|
 |**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|Original encryption is removed|
-
-<br/>
-<br/>
 
 Note that in the cases where the original encryption is replaced or removed, this happens only if the user applying the label has a usage right or role that supports this action:
 - The [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions) Export or Full Control.
@@ -206,7 +200,7 @@ For example, the person who applies Do Not Forward to an email message can relab
 
 ### Email attachments for encrypted email messages
 
-When an email message is encrypted by any method, any unencrypted Office documents that are attached to the email automatically inherit the same encryption settings. 
+When an email message is encrypted by any method, any unencrypted Office documents that are attached to the email automatically inherit the same encryption settings.
 
 Documents that are already encrypted and then added as attachments always preserve their original encryption. 
 
