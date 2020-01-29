@@ -518,7 +518,7 @@ The final step is to provide your partner with the following information so they
     https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
     ```
 
-- The sign in credentials (Office 365 user ID and password) of the third-party data mailbox that you created in Step 2. These credentials are required so that the partner connector can access and import items to user mailboxes and to the third-party data mailbox.
+- The sign-in credentials (Office 365 user ID and password) of the third-party data mailbox that you created in Step 2. These credentials are required so that the partner connector can access and import items to user mailboxes and to the third-party data mailbox.
  
 ## Step 5: Register the third-party data connector in Azure Active Directory
 
@@ -528,7 +528,12 @@ To enable a third-party data connector to connect to Office 365 using the new mo
 
 Here are the steps to access and accept the request to register the connector:
 
-1. Go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign in using the credentials of an Office 365 global administrator.<br/><br/>The following dialog box is displayed. You can expand the carets to review the permissions that will be assigned to the connector.<br/><br/>![The permissions request dialog is displayed](media/O365-ThirdPartyDataConnector-OptIn1.png)
+1. Go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign in using the credentials of an Office 365 global administrator.
+
+   The following dialog box is displayed. You can expand the carets to review the permissions that will be assigned to the connector.
+
+   ![The permissions request dialog is displayed](media/O365-ThirdPartyDataConnector-OptIn1.png)
+
 2. Click **Accept**.
 
 After you accept the request, the [Azure portal](https://portal.azure.com) is displayed. To view the list of applications for your organization, click **Azure Active Directory** > **Enterprise applications**. The Office 365 third-party data connector is listed on the **Enterprise applications** blade.
