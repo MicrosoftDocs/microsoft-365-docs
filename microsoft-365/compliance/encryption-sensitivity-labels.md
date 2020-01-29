@@ -178,7 +178,6 @@ Before a sensitivity label is applied to content, it's possible that the content
 
 For example, another user might have applied:
 
-- The **Do Not Forward** option for emails, which can automatically encrypt Office document attachments.
 - Their own permissions, which include user-defined permissions when prompted by a label, custom permissions by the Azure Information Protection client, and the **Restricted Access** document protection from within an Office app.
 - An Azure Rights Management protection template that encrypts the content independently from a label.
 - A label that applies encryption with permissions assigned by the administrator.
@@ -190,7 +189,6 @@ The following table identifies what happens to existing encryption when a sensit
 
 | |**User applies a sensitivity label with encryption turned off**|**User applies a sensitivity label with encryption turned on**|**User applies a label with Remove Protection**<sup>1</sup>|
 |:-----|:-----|:-----|:-----|
-|**Do Not Forward**|Original encryption is removed from the email message <br /><br /> Original encryption is preserved for any Office attachments|New label encryption is applied to the email message <br /><br /> New label encryption is applied to any Office attachments|Original encryption is removed from the email message <br /><br /> Original encryption is removed from any Office attachments|
 |**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|Original encryption is removed|
@@ -203,9 +201,17 @@ Note that in the cases where the original encryption is replaced or removed, thi
 - The [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions) Export or Full Control.
 - The role of [Rights Management issuer or Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner), or [super user](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
-If the user doesn't have one of these rights or roles, the label can't be applied and the original encryption is preserved. 
+If the user doesn't have one of these rights or roles, the label can't be applied and the original encryption is preserved. The message that the user sees: **You don't have permission to make this change to the sensitivity label. Please contact the content owner.**
 
 For example, the person who applies Do Not Forward to an email message can relabel the thread to replace the encryption or remove it, because they are the Rights Management owner for the email. But with the exception of super users, recipients of this email can't relabel it because they don't have the required usage rights.
+
+
+### Email attachments that inherit encryption
+
+When an email message is encrypted by any method, any unencrypted Office documents that are attached to the email automatically inherit the same encryption settings. However, when an email message is labeled, the label isn't automatically inherited by any attachments.
+
+In this case
+
 
 ## Considerations for encrypted content
 
