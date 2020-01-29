@@ -64,6 +64,5 @@ You can lock a retention policy by using PowerShell. For more information, see [
 
 Currently, there are a few limitations for Exchange Online:
 
-- Item-level auditing is not available in Office 365 Group mailboxes.
 - Threaded communications are not available for Teams chat and channel messages.
 - Likes are not retained for Teams chat and channel messages.
