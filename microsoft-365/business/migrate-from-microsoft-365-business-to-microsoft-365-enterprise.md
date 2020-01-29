@@ -51,7 +51,6 @@ This table shows the differences between Microsoft 365 Business and Microsoft 36
 | Teams	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | OneDrive for Business	| 1 TB storage limit per user	| Unlimited | 
 | Yammer, SharePoint Online, Planner, Stream	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
-| StaffHub	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | Outlook Customer Manager, MileIQ	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| | 
 | **Threat Protection**		| | | 
 | Attack surface reduction capabilities	| [See this list](#threat-protection) | Enterprise management of hardware-based isolation for Microsoft Edge | 
