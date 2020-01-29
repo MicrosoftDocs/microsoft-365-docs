@@ -33,7 +33,7 @@ Microsoft Threat Protection unifies your incident response process by integratin
 ## Check license eligibility and required permissions
 Customers with a Microsoft 365 E5 or equivalent license can use Microsoft Threat Protection. For more information, [read the licensing requirements](prerequisites.md#licensing-requirements).
 
- To be able to turn on Microsoft Threat Protection, you need to be a **global administrator** or a **security administrator** in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+To be able to turn on Microsoft Threat Protection, you need to be a **global administrator** or a **security administrator** in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## Start using the service
 Turning on the Microsoft Threat Protection service aggregates data from the various integrated services. The data will be processed and stored centrally to identify new insights and to make centralized response workflows possible.
