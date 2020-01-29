@@ -1,5 +1,7 @@
 ---
 title: "Service assurance in the Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

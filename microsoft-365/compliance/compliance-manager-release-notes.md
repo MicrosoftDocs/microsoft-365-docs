@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Compliance Manager Release Notes"
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi

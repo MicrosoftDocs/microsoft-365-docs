@@ -1,5 +1,7 @@
 ---
 title: "Protect yourself against phishing and other attacks"
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv

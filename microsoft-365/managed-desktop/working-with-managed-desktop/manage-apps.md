@@ -4,6 +4,8 @@ description: Info about how to update line-of-business apps that are deployed to
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019

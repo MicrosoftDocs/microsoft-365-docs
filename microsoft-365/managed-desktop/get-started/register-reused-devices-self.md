@@ -3,6 +3,8 @@ title: Register existing devices yourself
 description: Register re-used devices you might already have yourself so they can be managed by Microsoft Managed Desktop
 ms.prod: w10
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
 ---

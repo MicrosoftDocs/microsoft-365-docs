@@ -1,5 +1,7 @@
 ---
 title: "Setup overview for Microsoft 365 for Campaigns"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

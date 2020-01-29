@@ -1,5 +1,7 @@
 ---
 title: "Avoid invalid characters in your spam filter rules and the spam filter policy"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

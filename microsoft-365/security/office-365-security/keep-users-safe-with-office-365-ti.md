@@ -1,5 +1,7 @@
 ---
 title: "Keep your organization safe with Office 365 threat investigation and response capabilities"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp

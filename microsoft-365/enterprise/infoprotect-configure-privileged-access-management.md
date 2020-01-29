@@ -1,5 +1,7 @@
 ---
 title: "Step 7: Configure privileged access management for Office 365"
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi

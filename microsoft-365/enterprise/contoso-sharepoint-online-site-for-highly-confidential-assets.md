@@ -1,5 +1,7 @@
 ---
 title: "SharePoint site for highly confidential digital assets of the Contoso Corporation"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

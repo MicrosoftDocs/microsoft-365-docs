@@ -1,5 +1,7 @@
 ---
 title: "Install the Junk Email Reporting Add-in for Microsoft Outlook"
+f1.keywords:
+- NOCSH
 ms.author: MSFTTracyP
 author: tracyp
 manager: dansimp

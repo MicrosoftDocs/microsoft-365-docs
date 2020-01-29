@@ -1,5 +1,7 @@
 ---
 title: "Migrate from Microsoft 365 Business to Microsoft 365 E3"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

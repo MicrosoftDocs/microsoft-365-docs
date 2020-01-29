@@ -1,5 +1,7 @@
 ---
 title: "Use network upload to import your organization's PST files"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

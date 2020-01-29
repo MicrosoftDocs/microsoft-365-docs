@@ -1,5 +1,7 @@
 ---
 title: "Add or remove members from a case"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Fix email delivery issues for error code 5.7.7xx in Exchange Online"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

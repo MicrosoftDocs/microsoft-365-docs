@@ -7,6 +7,8 @@ ms.prod: devops
 ms.topic: article
 ms.date: 06/11/2018
 author: robmazz
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 manager: laurawi
 ms.collection: 
