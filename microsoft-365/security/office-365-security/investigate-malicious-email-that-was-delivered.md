@@ -128,7 +128,7 @@ Email timeline will open to a table that shows all delivery and post-delivery ev
 
 ##### Check the delivery action and location
 
-In [Threat Explorer (and real-time detections)](threat-explorer.md), you now have **Delivery Action** and **Delivery Location** columns instead of the former **Delivery Status** column. This results in a more complete picture of where your email messages land. Part of the goal of this change is to make hunting easier for security operations, but the net result is knowing the location of problem email messages at a glance.
+In [Threat Explorer (and real-time detections)](threat-explorer.md), you now have **Delivery Action** and **Delivery Location** columns instead of the former **Delivery Status** column. This results in a more complete picture of where your email messages land. Part of the goal of this change is to make investigations easier for security operations teams, but the net result is knowing the location of problem email messages at a glance.
 
 Delivery Status is now broken out into two columns:
 
