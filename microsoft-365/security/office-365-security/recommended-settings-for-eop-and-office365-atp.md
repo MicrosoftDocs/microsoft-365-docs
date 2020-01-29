@@ -90,7 +90,7 @@ There are several other parameters in the Anti-spam policy called Advanced Spam 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |Malware Detection Response|No|No|If malware is detected in an email attachment, the message will be quarantined and can be released only by an admin.|
-|"Common Attachment Type Filter" for blocking suspicious file types|On|On||
+|"Common Attachment Types Filter" for blocking suspicious file types|On|On||
 |Malware Zero-hour Auto Purge|On|On||
 |Notify internal senders of the undelivered message|Disabled|Disabled||
 |Notify external senders of the undelivered message|Disabled|Disabled||
