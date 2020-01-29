@@ -1,5 +1,7 @@
 ---
 title: "Create a search"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

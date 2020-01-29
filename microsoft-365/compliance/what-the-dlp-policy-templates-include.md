@@ -1,5 +1,7 @@
 ---
 title: "What the DLP policy templates include"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

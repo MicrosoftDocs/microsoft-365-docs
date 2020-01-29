@@ -1,5 +1,7 @@
 ---
 title: "Search the Office 365 audit log to troubleshoot common scenarios"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

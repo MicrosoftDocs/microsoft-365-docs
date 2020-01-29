@@ -1,5 +1,7 @@
 ---
 title: "Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi

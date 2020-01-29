@@ -1,5 +1,7 @@
 ---
 title: "Office 365 Information Protection for GDPR"
+f1.keywords:
+- CSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi

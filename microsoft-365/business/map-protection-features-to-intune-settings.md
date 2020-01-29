@@ -1,5 +1,7 @@
 ---
 title: "How do protection features in Microsoft 365 Business map to Intune settings"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

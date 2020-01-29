@@ -1,5 +1,7 @@
 ---
 title: "Manage the lifecycle of product documents stored in SharePoint Online with retention labels"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi

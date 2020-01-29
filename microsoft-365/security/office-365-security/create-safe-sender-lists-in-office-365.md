@@ -1,5 +1,7 @@
 ---
 title: "Create safe sender lists in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
