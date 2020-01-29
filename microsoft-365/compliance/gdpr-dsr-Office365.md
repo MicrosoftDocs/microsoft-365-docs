@@ -88,7 +88,7 @@ A quick way to identify the Office 365 applications that people in your organiza
 
 ## Using the Content Search eDiscovery tool to respond to DSRs
 
-When looking for personal data within the larger set of data your organization creates and stores using in Office 365, you may want to first consider which applications people have most likely used to author the data you’re looking for. Microsoft estimates that over 90% of an organization’s data that is stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook. Documents authored in these Office applications, even if purchased through Office 365 ProPlus or an Office perpetual license, are most likely stored on a SharePoint Online site, in a user’s OneDrive for Business account, or in a user’s Exchange Online mailbox. That means you can use the Content Search eDiscovery tool to search (and perform other DSR-related actions) across SharePoint Online sites, OneDrive for Business accounts, and Exchange Online mailboxes (including the sites and mailboxes associated with Office 365 Groups, Microsoft Teams, EDU Assignments, and StaffHub) to find documents and mailbox items that may be relevant to the DSR you’re investigating. You can also use the Content Search tool to discover Customer Data authored in other Office 365 applications.
+When looking for personal data within the larger set of data your organization creates and stores using in Office 365, you may want to first consider which applications people have most likely used to author the data you’re looking for. Microsoft estimates that over 90% of an organization’s data that is stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook. Documents authored in these Office applications, even if purchased through Office 365 ProPlus or an Office perpetual license, are most likely stored on a SharePoint Online site, in a user’s OneDrive for Business account, or in a user’s Exchange Online mailbox. That means you can use the Content Search eDiscovery tool to search (and perform other DSR-related actions) across SharePoint Online sites, OneDrive for Business accounts, and Exchange Online mailboxes (including the sites and mailboxes associated with Office 365 Groups, Microsoft Teams, EDU Assignments) to find documents and mailbox items that may be relevant to the DSR you’re investigating. You can also use the Content Search tool to discover Customer Data authored in other Office 365 applications.
 
 The following table lists the Office 365 applications that people use to create Customer Authored Content and that can be discovered by using Content Search. This section of the DSR guide provides guidance about how to discover, access, export, and delete data created with these Office 365 applications.
 
@@ -629,9 +629,8 @@ While most Customer Data is authored and produced using the applications describ
 | ![Access icon](media/o365-access-64x64.png) <br> [Access](#access) | ![Office icon](media/O365-DSR-Doc_image22.png) <br> [Business App <br> for Office 365](#business-apps-for-office-365) | ![Office icon](media/O365-DSR-Doc_image22.png) <br> [Education](#education)|
 | ![Flow icon](media/o365-flow-64x64.png) <br> [Flow](#flow) | ![Forms icon](media/o365-forms-64x64.png) <br> [Forms](#forms) |![Kaizala icon](media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
 | ![Planner icon](media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps icon](media/o365-powerapps-64x64.png) <br> [Power Apps](#powerapps) |![Power BI icon](media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
-|![Project icon](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher icon](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![StaffHub icon](media/o365-staffhub-64x64.png) <br> [StaffHub](#staffhub) |
-|![Stream icon](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway icon](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard icon](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
-||![Yammer icon](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
+|![Project icon](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher icon](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream icon](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway icon](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard icon](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
+|![Yammer icon](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
 |||
 
 ### Access
@@ -1165,33 +1164,6 @@ You can provide a data subject with the actual Publisher file or as previously e
 #### Delete
 
 You can delete content from a publication, delete entire pages, or delete an entire Publisher file. See [Add or delete pages](https://support.office.com/article/add-or-delete-pages-daf71e39-86e0-4bbc-a186-d5ec70450b08).
-
-### StaffHub
-
-The following sections explain how to use the in-app functionality in Microsoft StaffHub to find, access, export, and delete personal data.
-
-#### Discover
-
-Most data within StaffHub is available to all StaffHub team members and managers. To review data in StaffHub, have a manager or team member go to <https://staffhub.office.com> to look for data that is potentially relevant to the DSR request or have them add you as a member of their team so that you can directly review the StaffHub information for potentially responsive data.
-
-#### Access
-
-After relevant StaffHub content is found, you can view and take screenshots of relevant data that you would like to provide to the data subject from within the application or download it.
-
-- **Scheduling information:** The **Schedule** tab in StaffHub offers both a **People View** and a **Shifts View** that allows you to view daily, weekly, and monthly schedules by team members or by work shifts. These views can be printed or downloaded to Excel by selecting the three dots (ellipsis) in the top-left corner of the StaffHub web app and clicking **Export Schedule**.
-- **Shared files:** All files in StaffHub are stored on SharePoint Online and can thus be discovered, accessed, and exported by using Content Search as previously described above. They can also be viewed from within StaffHub under the tab **Files**.
-- **Messaging:** Currently, messages can be accessed by following the steps about accessing user-specific data in the next item. In the future, all messages in StaffHub will be stored in Microsoft Teams, which means you be able to use the Content Search tool to access them.
-- **User-specific data:** User-specific data consists of user settings, user activity feed and user shift request history, none of which can be viewed by team members or admins. To access or export user-specific data, have the data subject sign in to their StaffHub account to obtain it. Alternatively, if the data subject has left your organization, you can obtain this data by having your admin reset the user password for the data subject to allow you or the admin to sign in to their account.
-- **Kronos:** StaffHub supports connections to [Kronos](https://www.kronos.com/), which is a third-party workforce management tool. StaffHub and Kronos are independent processors and process your organization's data under individual terms that you have signed with each party. If your DSR relates to data held by Kronos, you need to contact Kronos for DSR assistance and vice versa.
-
-#### Delete
-
-- Most in-app data content mastered in StaffHub can be deleted by a team manager from the app itself. As previously stated in the Discover section for StaffHub, you can add yourself to a team as a team manager and delete the data.
-- When a user account is permanently deleted, StaffHub redacts the user's name, phone number, email address, and profile picture within 30 days of the account being deleted.
-
-#### Export
-
-See the [Access](#access-12) section for StaffHub.
 
 ### Stream
 
@@ -1801,4 +1773,5 @@ The following table lists the changes to the Office 365 DSR guide since its init
 |5/8/2019| [Publisher](#publisher)|Added content about responding to DSRs for Publisher.|
 |7/11/2019| [MyAnalytics](#myanalytics)|The ability for an admin to use the DSR case tool in the Office 365 Security & Compliance Center to export MyAnalytics data was removed because all users can now view their data in the MyAnalytics app. |
 |11/6/2019|[Education](#education)|Linked to new topics on using PowerShell scripts to get a list of classes for a specific student and then exporting or deleting their data.|
+|1/28/2020| All | Removed StaffHub from document, StaffHub is retired. |
 ||||
