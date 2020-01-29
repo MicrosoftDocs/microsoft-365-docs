@@ -95,5 +95,8 @@ However, DLP reports need pull data from across Office 365, including Exchange O
       - [Get-DlpDetectionsReport](https://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
     
       - [Get-DlpDetailReport](https://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
-    
+      
+## Limitations of DLP reports
+
+If your organization has a large amount of DLP policies you may have to query by group of policies or filter by DLP policy service, as by default report will return all policies unless filter or query is applied. This is due to the content URL length being exceeded as each policy will add to the length of URL for DLP report and may result in a 500 server error. Improvements are planned in the future where these limits will not apply.    
 
