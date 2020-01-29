@@ -39,9 +39,6 @@ Note that this assessment is specific to Exchange Online. The assessment does no
 
 It’s important to understand that Skype for Business and Teams also store data in Exchange Online. Therefore, the assessment does cover messages from Skype for Business and channel and chat messages from Teams.
 
-> [!NOTE]
-> Item-level auditing is now available for Office 365 Group mailboxes. For more information, see [Manage mailbox auditing](enable-mailbox-auditing).
-
 ## Using Preservation Lock is key to the recommended configuration
 
 Highly regulated industries are often required to store electronic communications to meet the WORM (write once, read many) requirement. The WORM requirement dictates a storage solution in which a record must be:
@@ -69,3 +66,6 @@ Currently, there are a few limitations for Exchange Online:
 
 - Threaded communications are not available for Teams chat and channel messages.
 - Likes are not retained for Teams chat and channel messages.
+
+> [!NOTE]
+> Item-level auditing is now available for Office 365 Group mailboxes. For more information, see [Manage mailbox auditing](enable-mailbox-auditing.md).
