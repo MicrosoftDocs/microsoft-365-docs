@@ -20,7 +20,7 @@ description: "Learn how to speed up the process of detecting and addressing comp
 
 As you might already know, [Office 365 Advanced Threat Protection Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2) includes powerful [automated investigation and response](office-365-air.md) (AIR) capabilities. Such capabilities can save your security operations team a lot of time and effort dealing with threats. Recently, AIR capabilities were enhanced to include a compromised user security playbook (currently in preview). 
 
-![Automated investigation for compromised user](../media/office365atp-compduserinvestigation.jpg) 
+![Automated investigation for a compromised user](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
 The compromised user security playbook enables your organization's security team to:
 - Speed up detection of compromised user accounts;
@@ -35,11 +35,11 @@ When a user account is compromised, atypical or anomalous behaviors occur. For e
 
 For example, here's an alert that was triggered because of suspicious email sending:
 
-![Alert triggered because of suspicious email sending](media/office365atp-suspiciousemailsendalert.jpg)
+![Alert triggered because of suspicious email sending](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
 
 And here's an example of an alert that was triggered when a sending limit was reached for a user:
 
-![Alert triggered by sending limit reached](media/office365atp-sendinglimitreached.jpg)
+![Alert triggered by sending limit reached](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
 
 ## Investigate and respond to a compromised user
 
@@ -59,8 +59,8 @@ You have a few options for navigating to a list of restricted users. For example
 2. In the navigation pane, choose **Alerts** > **Dashboard**.
 
 3. In the **Other alerts** widget, choose **Restricted Users**.<br/>
-   ![Other alerts widget](media/office365atp-otheralertswidget.jpg)<br/>
-   This opens the list of restricted users.<br/>![Restricted users in Office 365](media/office365atp-restrictedusers.jpg) 
+   ![Other alerts widget](/microsoft-365/media/office365atp-otheralertswidget.jpg)<br/>
+   This opens the list of restricted users.<br/>![Restricted users in Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg) 
 
 4. Select a user account in the list to view details and take action, such as [releasing the restricted user](removing-user-from-restricted-users-portal-after-spam.md). 
 
