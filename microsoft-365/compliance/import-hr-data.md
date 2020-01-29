@@ -1,5 +1,7 @@
 ---
 title: "Set up a connector to import HR data"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

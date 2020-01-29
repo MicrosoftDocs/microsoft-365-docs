@@ -1,5 +1,7 @@
 ---
 title: "Set up Azure Rights Management for the previous version of Office 365 Message Encryption"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi

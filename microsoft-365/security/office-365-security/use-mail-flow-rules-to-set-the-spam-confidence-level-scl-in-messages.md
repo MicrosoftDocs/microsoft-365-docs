@@ -1,5 +1,7 @@
 ---
 title: "Use mail flow rules to set the spam confidence level (SCL) in messages"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

@@ -1,5 +1,7 @@
 ---
 title: "Step 5: Use groups for management"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

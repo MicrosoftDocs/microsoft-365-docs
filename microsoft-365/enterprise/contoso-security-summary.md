@@ -1,6 +1,8 @@
 ---
 title: "Summary of Microsoft 365 Enterprise security for the Contoso Corporation"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/02/2019

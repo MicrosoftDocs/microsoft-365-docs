@@ -1,6 +1,8 @@
 ---
 title: "Considerations for your Enterprise Business Continuity Management Plan"
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: 

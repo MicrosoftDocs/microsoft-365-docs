@@ -1,5 +1,7 @@
 ---
 title: "EU Social Security Number or Equivalent ID"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi

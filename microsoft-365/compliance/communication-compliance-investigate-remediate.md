@@ -1,6 +1,8 @@
 ---
 title: "Investigate and remediate communication compliance alerts (preview)"
 description: "Investigate and remediate communication compliance alerts in Microsoft 365."
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi

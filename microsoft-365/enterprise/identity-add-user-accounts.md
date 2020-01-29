@@ -1,5 +1,7 @@
 ---
 title: "Step 4: Add your user accounts"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

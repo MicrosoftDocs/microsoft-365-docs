@@ -1,5 +1,7 @@
 ---
 title: "Detailed properties in the Office 365 audit log"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
