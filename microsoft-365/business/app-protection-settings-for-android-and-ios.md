@@ -1,5 +1,7 @@
 ---
 title: "Set app protection settings for Android or iOS devices"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

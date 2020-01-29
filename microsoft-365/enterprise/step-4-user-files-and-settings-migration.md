@@ -1,5 +1,7 @@
 ﻿---
 title: Step 4 - User Files and Settings Migration
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

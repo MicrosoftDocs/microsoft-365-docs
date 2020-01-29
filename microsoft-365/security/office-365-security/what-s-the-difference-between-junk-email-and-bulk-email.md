@@ -1,5 +1,7 @@
 ---
 title: "What's the difference between junk email and bulk email?"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

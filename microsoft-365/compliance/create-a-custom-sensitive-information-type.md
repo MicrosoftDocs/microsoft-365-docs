@@ -1,5 +1,7 @@
 ---
 title: "Create a custom sensitive information type in the Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

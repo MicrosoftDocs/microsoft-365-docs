@@ -1,5 +1,7 @@
 ---
 title: "Alert policies in the security and compliance center"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

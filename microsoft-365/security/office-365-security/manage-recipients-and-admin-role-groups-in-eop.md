@@ -1,5 +1,7 @@
 ---
 title: "Manage recipients and admin role groups in EOP"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

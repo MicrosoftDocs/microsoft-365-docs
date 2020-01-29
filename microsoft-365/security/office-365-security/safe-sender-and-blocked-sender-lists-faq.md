@@ -1,5 +1,7 @@
 ---
 title: "Safe sender and blocked sender lists in Exchange Online"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

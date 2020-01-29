@@ -1,5 +1,7 @@
 ---
 title: "Revoke email encrypted by Office 365 Advanced Message Encryption"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Customize or create a new sensitive information type"
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi

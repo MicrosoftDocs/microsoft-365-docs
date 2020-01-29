@@ -1,5 +1,7 @@
 ---
 title: "Troubleshooting mail sent to Office 365"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

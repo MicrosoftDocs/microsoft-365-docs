@@ -1,5 +1,7 @@
 ---
 title: "Create a trainable classifier (preview)"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
