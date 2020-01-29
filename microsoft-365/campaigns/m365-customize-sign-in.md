@@ -1,5 +1,7 @@
 ---
 title: "Customize sign-in page with a privacy and consent notice"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

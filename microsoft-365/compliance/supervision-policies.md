@@ -1,6 +1,8 @@
 ---
 title: "Supervision policies"
 description: "Learn about supervision policies in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi

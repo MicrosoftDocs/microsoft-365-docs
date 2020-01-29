@@ -1,5 +1,7 @@
 ---
 title: "Configure IRM to use an on-premises AD RMS server"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Searching cloud-based mailboxes for on-premises users in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

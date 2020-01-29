@@ -1,5 +1,7 @@
 ---
 title: "Search for data in an investigation"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

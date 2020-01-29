@@ -1,5 +1,7 @@
 ---
 title: "Step 3: Secure and manage your user sign-ins"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

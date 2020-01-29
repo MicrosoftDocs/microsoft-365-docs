@@ -1,5 +1,7 @@
 ---
 title: "Close or delete a data investigation"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

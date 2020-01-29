@@ -1,5 +1,7 @@
 ---
 title: "Use the Relevance module to analyze data in evidence"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

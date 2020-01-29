@@ -1,5 +1,7 @@
 ---
 title: "Privacy statement for Office 365 Secure Email Portal"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

@@ -1,5 +1,7 @@
 ---
 title: "Increase threat protection"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

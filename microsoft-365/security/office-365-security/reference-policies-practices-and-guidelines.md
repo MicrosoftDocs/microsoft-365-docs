@@ -1,5 +1,7 @@
 ---
 title: "Reference Policies, practices, and guidelines"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

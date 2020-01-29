@@ -1,5 +1,7 @@
 ---
 title: "Office 365 ProPlus deployment exit criteria"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

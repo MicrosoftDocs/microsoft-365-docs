@@ -1,5 +1,7 @@
 ﻿---
 title: Windows and Office Deployment Lab Kit
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

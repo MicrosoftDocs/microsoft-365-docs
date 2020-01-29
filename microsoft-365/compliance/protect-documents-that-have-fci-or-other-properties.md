@@ -1,5 +1,7 @@
 ---
 title: "Create a DLP policy to protect documents with FCI or other properties"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

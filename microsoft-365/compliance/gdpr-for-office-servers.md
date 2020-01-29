@@ -1,6 +1,8 @@
 ---
 title: "GDPR for Office Servers"
 description: "Learn about how to address GDPR requirements in Office on-premises servers."
+f1.keywords:
+- NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen

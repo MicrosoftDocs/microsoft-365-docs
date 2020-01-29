@@ -1,6 +1,8 @@
 ---
 title: "Configure supervision policies"
 description: "Configure communication supervision for Office 365"
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi

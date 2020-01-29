@@ -1,5 +1,7 @@
 ---
 title: "Set device protection settings for Windows 10 PCs"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
