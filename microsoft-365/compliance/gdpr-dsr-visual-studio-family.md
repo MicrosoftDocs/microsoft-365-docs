@@ -7,9 +7,11 @@ audience: itpro
 ms.prod: visual-studio-family
 ms.topic: article
 ms.date: 05/24/2018
-author: PoulChapman
-ms.author: olholder
-manager: pchapman
+author: robmazz
+f1.keywords:
+- NOCSH
+ms.author: robmazz
+manager: laurawi
 ms.collection: 
 - GDPR
 - M365-security-compliance

@@ -1,5 +1,7 @@
 ---
 title: "Removing a user from the Restricted Users portal after sending spam email"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

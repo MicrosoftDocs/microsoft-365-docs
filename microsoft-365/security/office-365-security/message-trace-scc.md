@@ -1,5 +1,7 @@
 ---
 title: "Message trace in the Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

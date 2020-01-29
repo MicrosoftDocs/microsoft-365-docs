@@ -1,5 +1,7 @@
 ---
 title: "Controlling your data in Office 365 using Customer Key"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi

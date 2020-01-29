@@ -1,5 +1,7 @@
 ---
 title: "Create custom sensitive information types with Exact Data Match"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Create a custom sensitive information type in Security & Compliance Center PowerShell"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

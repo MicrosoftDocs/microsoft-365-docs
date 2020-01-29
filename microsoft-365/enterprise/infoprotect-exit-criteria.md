@@ -1,5 +1,7 @@
 ---
 title: "Information protection infrastructure exit criteria"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

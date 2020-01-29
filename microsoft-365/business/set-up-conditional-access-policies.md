@@ -1,5 +1,7 @@
 ---
 title: "Set up conditional access policies for Microsoft 365 campaigns"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

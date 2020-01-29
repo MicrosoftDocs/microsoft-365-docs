@@ -1,5 +1,7 @@
 ---
 title: "Create a document deletion policy"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi

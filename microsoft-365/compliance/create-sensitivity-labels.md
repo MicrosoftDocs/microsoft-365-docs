@@ -1,5 +1,7 @@
 ---
 title: "Create and publish sensitivity labels"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -64,6 +66,9 @@ To edit an existing label, select it, and then select **Edit label**. This start
 > If you edit a label that's already published by using a label policy, no extra steps are needed when you finish the wizard. For example, you don't need to add it to a new label policy for the changes to become available to the same users. However, allow up to 24 hours for the changes to replicate to users and services.
 
 Until you publish your labels, they won't be available to select in apps or for services. To publish the labels, they must be [added to a label policy](#publish-sensitivity-labels-by-creating-a-label-policy).
+
+> [!IMPORTANT]
+> On this **Labels** tab, do not select the **Publish labels** tab (or the **Publish label** button when you edit a label) unless you need to create a new label policy. You need multiple label policies only if users need different labels or different policy settings. Aim to have as few label policies as possible — it's not uncommon to have just one label policy for the organization.
 
 ### Additional label settings with Office 365 Security & Compliance Center PowerShell
 

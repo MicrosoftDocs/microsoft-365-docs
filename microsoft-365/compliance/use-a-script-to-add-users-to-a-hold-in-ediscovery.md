@@ -1,5 +1,7 @@
 ---
 title: "Use a script to add users to a hold in an eDiscovery case in the Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

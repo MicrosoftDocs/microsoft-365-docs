@@ -1,5 +1,7 @@
 ---
 title: "Using a ready to use classifier (preview)"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

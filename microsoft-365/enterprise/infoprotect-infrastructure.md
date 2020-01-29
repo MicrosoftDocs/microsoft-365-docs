@@ -1,5 +1,7 @@
 ---
 title: "Phase 6: Information protection"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

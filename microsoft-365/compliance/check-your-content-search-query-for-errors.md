@@ -1,5 +1,7 @@
 ---
 title: "Check your Content Search query for errors"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

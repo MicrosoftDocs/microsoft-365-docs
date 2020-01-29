@@ -1,5 +1,7 @@
 ---
 title: "Manage the lifecycle of product documents stored in SharePoint Online with retention labels"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -273,82 +275,38 @@ For this scenario, we use the following flow to trigger the event:
 
 ![Configuring the flow that will trigger the event](media/SPRetention24.png)
 
-To create this flow, start from a SharePoint connector and select the **When an item is created or modified** trigger. Specify the site address and list name, and then add a condition based on when the **In Production** list column value is set to **No** (or equal to false in the condition card). Then add an action based on the built-in HTTP template. Use the values in the following table to configure the HTTP action. You can copy the values for the URI and Body properties from the table below and then paste them into the template.
+To create this flow, start from a SharePoint connector and select the **When an item is created or modified** trigger. Specify the site address and list name, and then add a condition based on when the **In Production** list column value is set to **No** (or equal to false in the condition card). Then add an action based on the built-in HTTP template. Use the values in the following section to configure the HTTP action. You can copy the values for the URI and Body properties from the section below and then paste them into the template.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Parameter</strong></th>
-<th><strong>Value</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Method</td>
-<td>POST</td>
-<tr class="even">
-<td>URI</td>
-<td><a href="https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent">https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Headers</td>
-<td>Key = Content-Type, Value = application/atom+xml</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Body</td>
-<td><p>&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
-<p>&lt;updated&gt;9/9/2017 10:50:00 PM&lt;/updated&gt;</p>
-<p>&lt;content type='application/xml'&gt;</p>
-<p>&lt;m:properties&gt;</p>
-<p>&lt;d:Name&gt;Cessation Production @{triggerBody()?['Product_x0020_Name']?['Value']}&lt;/d:Name&gt;</p>
-<p>&lt;d:EventType&gt;Product Cessation&lt;/d:EventType&gt;</p>
-<p>&lt;d:SharePointAssetIdQuery&gt;ProductName:&quot;@{triggerBody()?['Product_x0020_Name']?['Value']}&quot;&lt;/d:SharePointAssetIdQuery&gt;</p>
-<p>&lt;d:EventDateTime&gt;@{formatDateTime(utcNow(),'yyyy-MM-dd')}&lt;/d:EventDateTime&gt;</p>
-<p>&lt;/m:properties&gt;</p>
-<p>&lt;/content&gt;</p>
-<p>&lt;/entry&gt;</p></td>
-<td></td>
-</tr>
+- **Method**: POST
+- **URI**: https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+- **Body**:
 
-</tbody>
-</table>
+```HTML
+<?xml version='1.0' encoding='utf-8' standalone='yes'>
+<entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
+<category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent'>
+<updated>9/9/2017 10:50:00 PM</updated>
+<content type='application/xml'>
+<m:properties>
+<d:Name>Cessation Production @{triggerBody()?['Product_x0020_Name']?['Value']}</d:Name>
+<d:EventType>Product Cessation&lt;</d:EventType>
+<d:SharePointAssetIdQuery>ProductName:&quot;@{triggerBody()?['Product_x0020_Name']?['Value']}<d:SharePointAssetIdQuery>
+<d:EventDateTime>@{formatDateTime(utcNow(),'yyyy-MM-dd')}</d:EventDateTime>
+</m:properties>
+</content&gt>
+</entry>
+```
 
-The following table describes the parameters within the Body property of the action that must be configured specifically for this scenario. 
+The following section describes the parameters within the *Body* property of the action that must be configured specifically for this scenario.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Parameter</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Name</td>
-<td>This parameter specifies the name of the event that will be created in the security and compliance center. For this scenario, the name is "Cessation Production xxx", where xxx is the value of the ProductName managed property that we created earlier. </th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>EventType</td>
-<td>The value for this parameter corresponds to the event type that the created event will apply to. This event type was defined when you created the retention label. For this scenario, the event type is "Product Cessation".</td>
-</tr>
-<tr class="even">
-<td>SharePointAssetIdQuery</td>
-<td>This parameter defines the Asset Id for the event. Event-based retention needs a unique identifier for the document. We can use Asset Ids to identify the documents that a particular event applies to, or as we do for this scenario, a metadata column, our own Product Name. To do  this, we have to create a new managed property named ProductName that can be used in the KQL query (or we could have used RefinableString00 instead of creating a new managed property). We also need to map this new managed property to the ows_Product_x0020_Name crawled property. Here's a screenshot of this managed property.
+- **Name**: This parameter specifies the name of the event that will be created in the security and compliance center. For this scenario, the name is "Cessation Production xxx", where xxx is the value of the ProductName managed property that we created earlier.
+- **EventType**: The value for this parameter corresponds to the event type that the created event will apply to. This event type was defined when you created the retention label. For this scenario, the event type is "Product Cessation".
+- **SharePointAssetIdQuery**:This parameter defines the Asset Id for the event. Event-based retention needs a unique identifier for the document. We can use Asset Ids to identify the documents that a particular event applies to, or as we do for this scenario, a metadata column, our own Product Name. To do  this, we have to create a new managed property named ProductName that can be used in the KQL query (or we could have used RefinableString00 instead of creating a new managed property). We also need to map this new managed property to the ows_Product_x0020_Name crawled property. Here's a screenshot of this managed property.
 
-<img src="media/SPRetention25.png" style="width:6.49722in;height:0.45069in" /></td>
-</tr>
-<tr class="odd">
-<td>EventDateTime</td>
-<td>This parameter defines the date the event occurs. Use the current date format: <strong>formatDateTime(utcNow(),'yyyy-MM-dd'<strong>)</strong></td>
-</tr>
-</tbody>
-</table>
+    ![Rentention managed property](media/SPRetention25.png)
+
+- **EventDateTime**: This parameter defines the date the event occurs. Use the current date format: *formatDateTime(utcNow(),'yyyy-MM-dd'*)
 
 ### Putting it all together
 
@@ -385,9 +343,3 @@ In the previous screenshot, we can also see that there's another managed propert
 ## Summary
 
 This article illustrated a document management scenario where we automatically applied a retention label based on a site column in SharePoint. Then we used event-based retention and Microsoft Flow to automatically trigger the start of the retention period based on an external event.
-
-## Credits
-
-This scenario was authored by:
-
-Frederic Lapierre<br/>Principal Consultant, Microsoft Services
