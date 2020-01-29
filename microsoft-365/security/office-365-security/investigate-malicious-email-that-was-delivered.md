@@ -60,13 +60,13 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 
 3. **Views in Threat Explorer**: In the **View** menu, choose **All email**.
 
-![Threat explorer View menu, and Email - Malware, Phish, Submissions and All Email options, also Content - Malware.](../media/tp-InvestigateMalEmail-viewmenu.png)
+    ![Threat explorer View menu, and Email - Malware, Phish, Submissions and All Email options, also Content - Malware.](../media/tp-InvestigateMalEmail-viewmenu.png)
 
-The *Malware* view is currently the default, and captures emails where a malware threat is detected. The *Phish* view operates in the same way, for Phish.
+    The *Malware* view is currently the default, and captures emails where a malware threat is detected. The *Phish* view operates in the same way, for Phish.
 
-However, *All email* view lists every mail received by the organization, whether threats were detected or not. As you can imagine, this is a lot of data, which is why this view shows a placeholder that asks a filter be applied. (This view is only available for ATP P2 customers.)
+    However, *All email* view lists every mail received by the organization, whether threats were detected or not. As you can imagine, this is a lot of data, which is why this view shows a placeholder that asks a filter be applied. (This view is only available for ATP P2 customers.)
 
-*Submissions* view shows up all mails submitted by admin or user that were reported to Microsoft.
+    *Submissions* view shows up all mails submitted by admin or user that were reported to Microsoft.
 
 4. **Search and filter in Threat Explorer**: Filters appear at the top of the page in the search bar to help admins in their investigations. Notice that multiple filters can be applied at the same time, and multiple comma-separated values added to a filter to narrow down the search. Remember:
     - Filters do exact matching on most filter conditions.
@@ -77,34 +77,34 @@ However, *All email* view lists every mail received by the organization, whether
 
 5. **Advanced filters**: With these filters, you can build complex queries and filter your data set. Clicking on *Advanced Filters* opens a flyout wit options.
 
-Advanced filtering is a great addition to search capabilities. A boolean **NOT** filter has been introduced on *Recipient*, *Sender* and *Sender domain* to allow admins to investigate by excluding values. This option appears under selection parameter *Contains none of*. **NOT** will let admins exclude alert mailboxes, default reply mailboxes from their investigations, and is useful for cases where admins search for a specific subject (subject="Attention") where the Recipient can be set to *none of defaultMail@contoso.com*. This is an exact value search.
+   Advanced filtering is a great addition to search capabilities. A boolean **NOT** filter has been introduced on *Recipient*, *Sender* and *Sender domain* to allow admins to investigate by excluding values. This option appears under selection parameter *Contains none of*. **NOT** will let admins exclude alert mailboxes, default reply mailboxes from their investigations, and is useful for cases where admins search for a specific subject (subject="Attention") where the Recipient can be set to *none of defaultMail@contoso.com*. This is an exact value search.
 
-![The Recipients - 'Contains none of' Advanced filter.](../media/tp-InvestigateMalEmail-AdvancedFilter.png)
+   ![The Recipients - 'Contains none of' Advanced filter.](../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
-*Filtering by hours* will help your organization's security team drill down quickly. The shortest allowed time duration is 30 minutes. If you can narrow the suspicious action by time-frame (e.g. it happened 3 hours ago), this will limit the context and help pinpoint the problem.
+   *Filtering by hours* will help your organization's security team drill down quickly. The shortest allowed time duration is 30 minutes. If you can narrow the suspicious action by time-frame (e.g. it happened 3 hours ago), this will limit the context and help pinpoint the problem.
 
-![The filtering by hours option to narrow the amount of data security teams have to process, and whose shortest duration is 30 minutes.](../media/tp-InvestigateMalEmail-FilterbyHours.png)
+  ![The filtering by hours option to narrow the amount of data security teams have to process, and whose shortest duration is 30 minutes.](../media/tp-InvestigateMalEmail-FilterbyHours.png)
 
 6. **Fields in threat explorer**: Threat Explorer exposes a lot more security-related mail information such as *Delivery action*, *Delivery location*, *Special action*, *Directionality*, *Overrides*, and *URL threat*. It also allows your organization's security team to investigate with a higher certainty. 
 
-*Delivery action* is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
-- **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
-- **Junked** (Delivered to junk)– email was sent to either user’s junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
-- **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
-- **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious
+    *Delivery action* is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
+    - **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
+    - **Junked** (Delivered to junk)– email was sent to either user’s junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
+    - **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
+    - **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious
 
-**Delivery location**: The Delivery location filter is available in order to help admins understand where suspected malicious mail ended-up and what actions were taken on it. The resulting data can be exported to spreadsheet. Possible delivery locations are:
-- ****Inbox or folder** – The email is in the Inbox or a specific folder, according to your email rules.
-- **On-prem or external** – The mailbox doesn’t exist in the Cloud but is on-premises.
-- **Junk folder** – The email is in a user's Junk mail folder.
-- **Deleted items folder** – The email is in a user's Deleted items folder.
-- **Quarantine** – The email in quarantine, and not in a user’s mailbox.
-- **Failed** – The email failed to reach the mailbox.
-- **Dropped** – The email was lost somewhere in the mail flow.
+    **Delivery location**: The Delivery location filter is available in order to help admins understand where suspected malicious mail ended-up and what actions were taken on it. The resulting data can be exported to spreadsheet. Possible delivery locations are:
+    - **Inbox or folder** – The email is in the Inbox or a specific folder, according to your email rules.
+    - **On-prem or external** – The mailbox doesn’t exist in the Cloud but is on-premises.
+    - **Junk folder** – The email is in a user's Junk mail folder.
+    - **Deleted items folder** – The email is in a user's Deleted items folder.
+    - **Quarantine** – The email in quarantine, and not in a user’s mailbox.
+    - **Failed** – The email failed to reach the mailbox.
+    - **Dropped** – The email was lost somewhere in the mail flow.
 
-**Directionality**: This option allows your security operations team to filter by the 'direction' a mail comes from, or is going. Directionality values are *Inbound*, *Outbound*, and *Intra-org* (corresponding to mail coming into your org from outside, being sent out of your org, or being sent internally to your org, respectively). This information can help security operations teams spot spoofing and impersonation, because a mismatch between the Directionality value (ex. *Inbound*), and the domain of the sender (which *appears* to be an internal domain) will be evident! The Directionality value is separate, and can differ from, the Message Trace. Results can be exported to spreadsheet.
+    **Directionality**: This option allows your security operations team to filter by the 'direction' a mail comes from, or is going. Directionality values are *Inbound*, *Outbound*, and *Intra-org* (corresponding to mail coming into your org from outside, being sent out of your org, or being sent internally to your org, respectively). This information can help security operations teams spot spoofing and impersonation, because a mismatch between the Directionality value (ex. *Inbound*), and the domain of the sender (which *appears* to be an internal domain) will be evident! The Directionality value is separate, and can differ from, the Message Trace. Results can be exported to spreadsheet.
 
-**Overrides**: This filter takes information that appears on the mail's details tab and uses it to expose where organizational, or user policies, for allowing and blocking mails have been *overridden*. The most important thing about this filter is that it helps your organization's security team see how many suspicious emails were delivered due to configuration. This gives them an opportunity to modify allows and blocks as needed. This result set of this filter can be exported to spreadsheet.
+    **Overrides**: This filter takes information that appears on the mail's details tab and uses it to expose where organizational, or user policies, for allowing and blocking mails have been *overridden*. The most important thing about this filter is that it helps your organization's security team see how many suspicious emails were delivered due to configuration. This gives them an opportunity to modify allows and blocks as needed. This result set of this filter can be exported to spreadsheet.
 
 |Threat Explorer Overrides  | What they mean  |
 |---------|---------|
@@ -118,53 +118,53 @@ Advanced filtering is a great addition to search capabilities. A boolean **NOT**
 
 7. **Email timeline view**: Your security operations team might need to deep-dive into email details to investigate further. The email timeline allows admins to view actions taken on an email from delivery to post-delivery. To view an email timeline, click on the subject of an email message, and then click Email timeline. (It appears among other headings on the panel like Summary or Details.) These results can be exported to spreadsheet.
 
-Email timeline will open to a table that shows all delivery and post-delivery events for the email. If there are no further actions on the email, you should see a single event for the original delivery that states a result, such as *Blocked*, with a verdict like *Phish*. Admins can export the entire email timeline, including all details on the tab and email (such as, Subject, Sender, Recipient, Network, and Message ID). The email timeline cuts down on randomization because there is less time spent checking different locations to try to understand events that happened since the email arrived. When multiple events happen at, or close to, the same time on an email, those events show up in a timeline view.
+    Email timeline will open to a table that shows all delivery and post-delivery events for the email. If there are no further actions on the email, you should see a single event for the original delivery that states a result, such as *Blocked*, with a verdict like *Phish*. Admins can export the entire email timeline, including all details on the tab and email (such as, Subject, Sender, Recipient, Network, and Message ID). The email timeline cuts down on randomization because there is less time spent checking different locations to try to understand events that happened since the email arrived. When multiple events happen at, or close to, the same time on an email, those events show up in a timeline view.
 
 8. **Preview / download**: Threat Explorer gives your security operations team the details they need to investigate suspicious email. Your security operations team can either:
 
-- [Check the delivery action and location](#check-the-delivery-action-and-location).
+    - [Check the delivery action and location](#check-the-delivery-action-and-location).
 
-- [View the timeline of your email](#view-the-timeline-of-your-email).
+    - [View the timeline of your email](#view-the-timeline-of-your-email).
 
-##### Check the delivery action and location
+    ##### Check the delivery action and location
 
-In [Threat Explorer (and real-time detections)](threat-explorer.md), you now have **Delivery Action** and **Delivery Location** columns instead of the former **Delivery Status** column. This results in a more complete picture of where your email messages land. Part of the goal of this change is to make investigations easier for security operations teams, but the net result is knowing the location of problem email messages at a glance.
+    In [Threat Explorer (and real-time detections)](threat-explorer.md), you now have **Delivery Action** and **Delivery Location** columns instead of the former **Delivery Status** column. This results in a more complete picture of where your email messages land. Part of the goal of this change is to make investigations easier for security operations teams, but the net result is knowing the location of problem email messages at a glance.
 
-Delivery Status is now broken out into two columns:
+    Delivery Status is now broken out into two columns:
 
-- **Delivery action** - What is the status of this email?
+    - **Delivery action** - What is the status of this email?
 
-- **Delivery location** - Where was this email routed as a result?
+    - **Delivery location** - Where was this email routed as a result?
 
-Delivery action is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
+    Delivery action is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
 
-- **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
+    - **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
 
-- **Junked** – email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
+    - **Junked** – email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
 
-- **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
+    - **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
 
-- **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious.
+    - **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious.
  
-Delivery location shows the results of policies and detections that run post-delivery. It's linked to a Delivery Action. This field was added to give insight into the action taken when a problem mail is found. Here are the possible values of delivery location:
+    Delivery location shows the results of policies and detections that run post-delivery. It's linked to a Delivery Action. This field was added to give insight into the action taken when a problem mail is found. Here are the possible values of delivery location:
 
-- **Inbox or folder** – The email is in the inbox or a folder (according to your email rules).
+    - **Inbox or folder** – The email is in the inbox or a folder (according to your email rules).
 
-- **On-prem or external** – The mailbox doesn't exist on cloud but is on-premises.
+    - **On-prem or external** – The mailbox doesn't exist on cloud but is on-premises.
 
-- **Junk folder** – The email is in a user's Junk folder.
+    - **Junk folder** – The email is in a user's Junk folder.
 
-- **Deleted items folder** – The email is in a user's Deleted items folder.
+    - **Deleted items folder** – The email is in a user's Deleted items folder.
 
-- **Quarantine** – The email in quarantine, and not in a user's mailbox.
+    - **Quarantine** – The email in quarantine, and not in a user's mailbox.
 
-- **Failed** – The email failed to reach the mailbox.
+    - **Failed** – The email failed to reach the mailbox.
 
-- **Dropped** – The email gets lost somewhere in the mail flow.
+    - **Dropped** – The email gets lost somewhere in the mail flow.
 
-##### View the timeline of your email
+    ##### View the timeline of your email
   
-**Email Timeline** is a field in Threat Explorer that makes hunting easier for your security operations team. When multiple events happen at or close to the same time on an email, those events show up in a timeline view. Some events that happen post-delivery to email are captured in the **Special actions** column. Combining information from the timeline of an email message with any special actions that were taken post-delivery gives admins insight into policies and threat handling (such as where the mail was routed, and, in some cases, what the final assessment was).
+    **Email Timeline** is a field in Threat Explorer that makes hunting easier for your security operations team. When multiple events happen at or close to the same time on an email, those events show up in a timeline view. Some events that happen post-delivery to email are captured in the **Special actions** column. Combining information from the timeline of an email message with any special actions that were taken post-delivery gives admins insight into policies and threat handling (such as where the mail was routed, and, in some cases, what the final assessment was).
 
 <!-- Reference material
 
