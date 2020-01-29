@@ -48,7 +48,7 @@ There are two role groups that grant access to Content Explorer:
 
 - **Content Explorer Content viewer**: Membership in this role group allows you to view the contents of each item in the list.
 
-The account you use to access Content explorer must be in one or both of the role groups. These are independent role groups and are not cumulative. For example, if you want to grant an account the ability to view the items and their locations only, grant Content Explorer List viewer rights. If you want that same account to also be able to view the contents of the items in the list, grant Content Explorer Content viewer rights as well.
+The account you use to access Content Explorer must be in one or both of the role groups. These are independent role groups and are not cumulative. For example, if you want to grant an account the ability to view the items and their locations only, grant Content Explorer List viewer rights. If you want that same account to also be able to view the contents of the items in the list, grant Content Explorer Content viewer rights as well.
 Apart from role groups, **Data Classification List viewer** and **Data Classification Content viewer** are user roles which can be added to a new custom role group or any existing role group to manage access to Content Explorer.
 
 ### How to use content explorer
