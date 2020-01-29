@@ -184,11 +184,11 @@ For example, another user might have applied:
 
 The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
 
-| |**User applies a sensitivity label with encryption turned off**|**User applies a sensitivity label with encryption turned on**|**User applies a label with Remove Protection**<sup>1</sup>|
+| |**User applies a sensitivity label with encryption turned off**|**User applies a sensitivity label with encryption turned on**|
 |:-----|:-----|:-----|:-----|
-|**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
-|**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
-|**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|Original encryption is removed|
+|**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|
+|**Protection template**|Original encryption is preserved|New label encryption is applied|
+|**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|
 
 Note that in the cases where the original encryption is replaced or removed, this happens only if the user applying the label has a usage right or role that supports this action:
 - The [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions) Export or Full Control.
