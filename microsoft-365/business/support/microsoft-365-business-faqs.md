@@ -2,6 +2,8 @@
 title: Microsoft 365 Business frequently asked questions 
 description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small, and midsize businesses (SMB). 
 author: Sirkkuw
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 ms.topic: article 
 ms.prod: microsoft-365-business

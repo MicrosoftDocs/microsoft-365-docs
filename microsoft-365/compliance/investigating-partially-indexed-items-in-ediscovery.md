@@ -1,5 +1,7 @@
 ---
 title: "Investigating partially indexed items in Office 365 eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

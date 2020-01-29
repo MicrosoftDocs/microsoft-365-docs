@@ -5,6 +5,8 @@ keywords: Microsoft 365, insider risk, risk management, compliance
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi

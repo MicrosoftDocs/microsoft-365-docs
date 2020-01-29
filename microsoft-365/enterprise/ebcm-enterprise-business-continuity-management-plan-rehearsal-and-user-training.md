@@ -1,6 +1,8 @@
 ---
 title: "Enterprise Business Continuity Management Plan Rehearsal and User Training"
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: 

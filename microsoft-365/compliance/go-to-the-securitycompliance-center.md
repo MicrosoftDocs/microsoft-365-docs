@@ -1,5 +1,7 @@
 ---
 title: "Go to the Office 365 Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi

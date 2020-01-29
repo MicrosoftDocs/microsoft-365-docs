@@ -1,5 +1,7 @@
 ---
 title: "EOP queued, deferred, and bounced messages FAQ"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

@@ -1,5 +1,7 @@
 ---
 title: "Data classification for your Microsoft 365 Enterprise test environment"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

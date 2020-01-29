@@ -1,6 +1,8 @@
 ---
 title: "GDPR for Skype for Business Server"
 description: "Learn about how to address GDPR requirements in on-premises Skype for Business Server and Lync Server."
+f1.keywords:
+- NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen

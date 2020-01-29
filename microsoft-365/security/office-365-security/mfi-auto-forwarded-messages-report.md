@@ -1,5 +1,7 @@
 ---
 title: "Auto-forwarded messages report"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

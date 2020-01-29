@@ -1,5 +1,7 @@
 ---
 title: "Set up your EOP service"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

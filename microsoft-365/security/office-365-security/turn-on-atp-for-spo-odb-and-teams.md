@@ -1,5 +1,7 @@
 ---
 title: "Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp

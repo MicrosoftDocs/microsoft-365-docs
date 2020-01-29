@@ -1,6 +1,8 @@
 ---
 title: "Customer and Cloud Partner Enterprise Business Continuity Responsibilities"
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date:

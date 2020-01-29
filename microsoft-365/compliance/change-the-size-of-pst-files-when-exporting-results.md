@@ -1,5 +1,7 @@
 ---
 title: "Change the size of PST files when exporting eDiscovery search results"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
