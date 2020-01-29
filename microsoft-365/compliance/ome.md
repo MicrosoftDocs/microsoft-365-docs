@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 01/29/2020
 search.appverid:
 - MET150
 ms.collection:
@@ -24,6 +24,22 @@ description: "With Office 365 Message Encryption, your organization can send and
 People often use email to exchange sensitive information, such as financial data, legal contracts, confidential product information, sales reports and projections, patient health information, or customer and employee information. As a result, mailboxes can become repositories for large amounts of potentially sensitive information and information leakage can become a serious threat to your organization.
 
 With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
+
+## Important updates to OME mail flow rules - Action required
+
+We are rolling out improvements to mail authenticity by changing the sender addresses used by OME. Without these improvements, some organizations were rejecting system-generated mail from OME, such as one-time pass code mail and portal replies, because the sender address was from the domain onmicrosoft.com. With this change, these system-generated mails will be sent from your organization's custom domains instead of onmicrosoft.com. In order to implement this improvement, you have to take action.
+
+For Exchange Online, you need to update each mail flow rule that ***SAMSON? - we want to see this all the way through each step***
+
+If you're using third party solutions for mail routing, DLP, threat protection, etc. You'll need to update these addresses in those tools as well. We don't provide those instructions (Samson - need info.) Also, i will not include a list of those products OR links to those products docs.
+
+The email address changes are as follows:
+
+One-time passcode sender address
+old: onetimepasscode@onmicrosoft.com    new: onetimepasscode@<yourdomain.com>
+
+OME replies from the OME portal:
+old: omeportal@onmicrosoft.com    new: omeportal@<yourdomain.com>
 
 The rest of this article applies to the new OME capabilities.
 
