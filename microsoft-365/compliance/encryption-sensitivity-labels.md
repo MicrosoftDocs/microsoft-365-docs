@@ -193,7 +193,6 @@ The following table identifies what happens to existing encryption when a sensit
 |**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|Original encryption is removed|
 
-<sup>1</sup> Currently, the label setting to remove encryption is available only in the Azure portal.
 <br/>
 <br/>
 
@@ -205,13 +204,11 @@ If the user doesn't have one of these rights or roles, the label can't be applie
 
 For example, the person who applies Do Not Forward to an email message can relabel the thread to replace the encryption or remove it, because they are the Rights Management owner for the email. But with the exception of super users, recipients of this email can't relabel it because they don't have the required usage rights.
 
+### Email attachments for encrypted email messages
 
-### Email attachments that inherit encryption
+When an email message is encrypted by any method, any unencrypted Office documents that are attached to the email automatically inherit the same encryption settings. 
 
-When an email message is encrypted by any method, any unencrypted Office documents that are attached to the email automatically inherit the same encryption settings. However, when an email message is labeled, the label isn't automatically inherited by any attachments.
-
-In this case
-
+Documents that are already encrypted and then added as attachments always preserve their original encryption. 
 
 ## Considerations for encrypted content
 
