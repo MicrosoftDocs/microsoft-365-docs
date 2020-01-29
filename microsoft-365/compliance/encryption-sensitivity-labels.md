@@ -176,31 +176,36 @@ The user can:
 
 Before a sensitivity label is applied to content, it's possible that the content is already encrypted. 
 
-For example, a user might have applied:
+For example, another user might have applied:
 
-- The **Do Not Forward** email encryption option.
-- Permissions specified by a user, such as user-defined permissions when prompted by a label
+- The **Do Not Forward** option for emails, which can automatically encrypt Office document attachments.
+- Their own permissions, which include user-defined permissions when prompted by a label, custom permissions by the Azure Information Protection client, and the **Restricted Access** document protection from within an Office app.
 - An Azure Rights Management protection template that encrypts the content independently from a label.
+- A label that applies encryption with permissions assigned by the administrator.
 
 The following table identifies what happens to existing encryption when a sensitivity label is applied to that content.
-
-In the cases where the original encryption is replaced or removed, this happens only if the user applying the label has a usage right or role that supports this action:
-- The [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions) Export or Full Control.
-- The role of [Rights Management issuer or Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner), or [super user](https://docs.microsoft.com/azure/information-protection/configure-super-users).
-
-If the user doesn't have one of these rights or roles, the label can't be applied and the original encryption is preserved. 
 
 <br/>
 <br/>
 
 | |**User applies a sensitivity label with encryption turned off**|**User applies a sensitivity label with encryption turned on**|**User applies a label with Remove Protection**<sup>1</sup>|
 |:-----|:-----|:-----|:-----|
-|**Do Not Forward**|Email: Encryption is removed<br/>Document: Encryption is preserved|Label encryption is applied|Encryption is removed|
-|**Permissions specified by a user**|Encryption is preserved|Label encryption is applied|Encryption is removed|
-|**Protection template**|Encryption is preserved|Label encryption is applied|Encryption is removed|
+|**Do Not Forward**|Original encryption is removed from the email message <br /><br /> Original encryption is preserved for any Office attachments|New label encryption is applied to the email message <br /><br /> New label encryption is applied to any Office attachments|Original encryption is removed from the email message <br /><br /> Original encryption is removed from any Office attachments|
+|**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
+|**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
+|**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|Original encryption is removed|
 
-<sup>1</sup> This label setting to remove encryption is available only in the Azure portal.
+<sup>1</sup> Currently, the label setting to remove encryption is available only in the Azure portal.
+<br/>
+<br/>
 
+Note that in the cases where the original encryption is replaced or removed, this happens only if the user applying the label has a usage right or role that supports this action:
+- The [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions) Export or Full Control.
+- The role of [Rights Management issuer or Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner), or [super user](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+
+If the user doesn't have one of these rights or roles, the label can't be applied and the original encryption is preserved. 
+
+For example, the person who applies Do Not Forward to an email message can relabel the thread to replace the encryption or remove it, because they are the Rights Management owner for the email. But with the exception of super users, recipients of this email can't relabel it because they don't have the required usage rights.
 
 ## Considerations for encrypted content
 
