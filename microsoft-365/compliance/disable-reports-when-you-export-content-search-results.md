@@ -1,5 +1,7 @@
 ---
 title: "Disable reports when you export Content Search results"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

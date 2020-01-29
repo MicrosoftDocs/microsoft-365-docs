@@ -1,5 +1,7 @@
 ---
 title: "Restrict access to content by using encryption in sensitivity labels"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi

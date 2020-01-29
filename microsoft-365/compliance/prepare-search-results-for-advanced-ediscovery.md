@@ -1,5 +1,7 @@
 ---
 title: "Prepare search results for Office 365 Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Step 6: Configure email encryption"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "How Office 365 validates the From address to prevent phishing"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp

@@ -1,5 +1,7 @@
 ---
 title: Payment Services Directive 2 and Strong Customer Authentication for commercial customers
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe

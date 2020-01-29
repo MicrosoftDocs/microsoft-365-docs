@@ -1,5 +1,7 @@
 ---
 title: "Set up a custom blocked URLs list using Office 365 ATP Safe Links"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp

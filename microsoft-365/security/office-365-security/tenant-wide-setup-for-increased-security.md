@@ -1,5 +1,7 @@
 ---
 title: "Configure your Office 365 tenant for increased security"
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Threat Trackers - New and Noteworthy"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp

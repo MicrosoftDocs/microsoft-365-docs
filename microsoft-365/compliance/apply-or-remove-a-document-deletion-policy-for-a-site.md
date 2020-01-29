@@ -1,5 +1,7 @@
 ---
 title: "Apply or remove a document deletion policy for a site"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi

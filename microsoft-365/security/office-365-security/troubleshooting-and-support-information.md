@@ -1,5 +1,7 @@
 ---
 title: "Troubleshooting and support information"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

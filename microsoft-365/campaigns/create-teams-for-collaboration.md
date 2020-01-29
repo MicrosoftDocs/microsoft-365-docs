@@ -1,5 +1,7 @@
 ---
 title: "Create teams for collaboration"
+f1.keywords:
+- NOCSH
 ms.author: stevhord
 author: samanro
 manager: scotv

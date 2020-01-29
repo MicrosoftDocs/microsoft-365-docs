@@ -1,5 +1,7 @@
 ---
 title: "Use the step-by-step guide to add Autopilot devices and profile"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

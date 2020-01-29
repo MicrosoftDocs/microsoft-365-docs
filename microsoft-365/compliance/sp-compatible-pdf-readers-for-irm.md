@@ -1,5 +1,7 @@
 ---
 title: "SharePoint-Compatible PDF readers that support Microsoft Information Rights Management services"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi

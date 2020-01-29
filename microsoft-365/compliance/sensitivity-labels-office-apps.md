@@ -1,5 +1,7 @@
 ---
 title: "Sensitivity labels in Office apps"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
