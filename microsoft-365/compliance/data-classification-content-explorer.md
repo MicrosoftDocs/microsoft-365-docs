@@ -42,7 +42,7 @@ A [retention label](labels.md) allows you to define how long a labeled item is k
 
 ### Permissions
 
-There are two role roups that grant access to Content explorer:
+There are two role groups that grant access to Content Explorer:
 
 - **Content Explorer List viewer**: Membership in this role group allows you to see each item and its location.
 
