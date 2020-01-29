@@ -1,5 +1,7 @@
 ---
 title: "Set up a custom do-not-rewrite URLs list using Office 365 ATP Safe Links"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

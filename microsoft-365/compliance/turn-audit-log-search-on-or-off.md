@@ -1,5 +1,7 @@
 ---
 title: "Turn Office 365 audit log search on or off"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

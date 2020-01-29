@@ -1,5 +1,7 @@
 ---
 title: "Protect user and device access"
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi

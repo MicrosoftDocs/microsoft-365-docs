@@ -1,5 +1,7 @@
 ---
 title: "Simulated cross-premises virtual network in a Microsoft 365 test environment"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Configure end-user spam notifications in Exchange Online"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp

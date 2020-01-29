@@ -1,5 +1,7 @@
 ---
 title: "Anti-spam protection FAQ"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: dansimp

@@ -1,5 +1,7 @@
 ---
 title: "Work with a partner to archive third-party data in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

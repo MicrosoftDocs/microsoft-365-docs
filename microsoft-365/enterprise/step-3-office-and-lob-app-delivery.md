@@ -1,5 +1,7 @@
 ﻿---
 title: Step 3 - Office and LOB App Delivery
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

@@ -1,6 +1,8 @@
 ---
 title: "Communication compliance"
 description: "Learn about communication compliance in Microsoft 365"
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi

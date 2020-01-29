@@ -1,5 +1,7 @@
 ---
 title: "Zero-hour auto purge - protection against spam and malware"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

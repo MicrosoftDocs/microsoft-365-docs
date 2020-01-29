@@ -1,5 +1,7 @@
 ---
 title: "Use Content Search to search third-party data imported to Office 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

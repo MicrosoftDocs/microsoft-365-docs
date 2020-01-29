@@ -1,5 +1,7 @@
 ---
 title: "Delete items from their original location"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

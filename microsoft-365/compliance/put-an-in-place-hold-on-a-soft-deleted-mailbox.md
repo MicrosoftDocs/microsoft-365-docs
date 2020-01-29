@@ -1,5 +1,7 @@
 ---
 title: "Put an In-Place Hold on a soft-deleted mailbox in Exchange Online"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

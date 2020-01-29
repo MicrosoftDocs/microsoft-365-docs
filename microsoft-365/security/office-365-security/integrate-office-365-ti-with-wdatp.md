@@ -1,5 +1,7 @@
 ---
 title: Integrate Office 365 Advanced Threat Protection with Microsoft Defender Advanced Threat Protection
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
