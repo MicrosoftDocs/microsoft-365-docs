@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date:01/23/2020
+ms.date: 01/29/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -50,9 +50,9 @@ Use this article as a guide.
 |A file, IP address, URL, or domain is treated as malware on a device, even though it's safe|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) |[Create a custom indicator with an "Allow" action](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 
-## Undo a remediation action that was taken
+## Undo a remediation action that was taken on a device
 
-If a remediation action was taken on an item that is actually clean, your security operations team can undo that in the [Action center](mtp-action-center.md).
+If a remediation action was taken on a device (such as a Windows 10 device) and the item that is actually clean, your security operations team can undo the remediation action in the [Action center](mtp-action-center.md).
 
 > [!IMPORTANT]
 > Make sure you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) before attempting to perform the following task.
@@ -66,10 +66,6 @@ If a remediation action was taken on an item that is actually clean, your securi
     > Use filters to narrow down the list of results. 
 
 4. In the flyout for the selected item, select **Open investigation page**.
-
-   - If the investigation pertains to email content (such as, the entity is a mailbox), investigation details open in the Office 365 Security & Compliance Center ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
-
-   - If the investigation involves a device, investigation details open in the security center ([https://security.microsoft.com](https://security.microsoft.com))
 
 5. In the investigation details view, select the **Actions** tab.
 
