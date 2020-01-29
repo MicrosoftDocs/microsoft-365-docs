@@ -214,7 +214,7 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 
 - For multiple users to edit an encrypted file at the same time, they must all be using Office for the web. If this isn't the case, and the file is already open:
     
-    - In Office apps (Windows, Mac, Android, and iOS), users see a **File In Use** message with the name of the person who has locked the file for editing. They can then view a read-only copy or save and edit a copy of the file, and receive notification when the file is available.
+    - In Office apps (Windows, Mac, Android, and iOS), users see a **File In Use** message with the name of the person who has checked out the file. They can then view a read-only copy or save and edit a copy of the file, and receive notification when the file is available.
     - In Office for the web, users see an error message that they can't edit the document with other people. They can then select **Open in Reading View**.
 
 - The [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) functionality in Office apps (Windows, Mac, Android, and iOS) is disabled for encrypted files. Users see a message that the file has restricted permissions that must be removed before AutoSave can be turned on.
