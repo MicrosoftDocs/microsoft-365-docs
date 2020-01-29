@@ -1,5 +1,7 @@
 ---
 title: "Walkthrough - From a dashboard to an insight"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp

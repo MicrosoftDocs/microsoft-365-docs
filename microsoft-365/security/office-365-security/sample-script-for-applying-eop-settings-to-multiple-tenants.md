@@ -1,5 +1,7 @@
 ---
 title: "Sample script for applying EOP settings to multiple tenants"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

@@ -1,6 +1,8 @@
 ---
 title: "Identity and device access prerequisites for pass-through authentication in your Microsoft 365 test environment"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 12/12/2019

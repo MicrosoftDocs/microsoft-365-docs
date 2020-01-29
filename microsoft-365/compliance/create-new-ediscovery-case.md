@@ -1,5 +1,7 @@
 ---
 title: "Create a new case in Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Create a DLP policy from a template"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

@@ -5,6 +5,8 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -49,7 +51,7 @@ The Microsoft checklist helps Danish financial firms conducting due-diligence as
 
 ## How to implement
 
-- [Compliance checklist: Denmark](https://www.retsinformation.dk/Forms/R0710.aspx): Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
+- [Compliance checklist: Denmark](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=524cc66f-b292-49e9-aa14-04560401baa0&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides): Financial firms can get help in conducting risk assessments of Microsoft business cloud services.
 - [Risk Assessment & Compliance Guide](https://docs.microsoft.com/azure/industry/financial/): Create a governance model for risk assessment of Microsoft cloud services, and regulator notification.
 - [Financial use cases](https://www.finanstilsynet.dk/~/media/Lovgivning/Oversat-lovgivning/Executive-orders/1304_251110-pdf.pdf): Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
 

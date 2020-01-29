@@ -1,5 +1,7 @@
 ---
 title: "Get Microsoft 365 Business from partner center"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

@@ -1,5 +1,7 @@
 ---
 title: "Safety tips in email messages in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

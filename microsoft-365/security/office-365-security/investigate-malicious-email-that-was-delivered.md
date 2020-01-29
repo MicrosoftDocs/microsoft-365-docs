@@ -1,6 +1,8 @@
 ---
 title: "Find and investigate malicious email that was delivered in Office 365, remediate, remedy, remediation, "
 keywords: TIMailData-Inline, Security Incident, incident, ATP PowerShell, email malware, compromised users, email phish, email malware, read email headers, read headers, open email headers
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -17,7 +19,7 @@ ms.collection:
 description: "Learn how to use threat investigation and response capabilities to find and investigate malicious email."
 ---
 
-# Find, investigate, and remediate malicious emails that were delivered in Office 365
+# Investigate and remediate malicious email that was delivered in Office 365
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) enables you to investigate activities that put people in your organization at risk, and to take action to protect your organization. For example, if you are part of your organization's security team, you can find and investigate suspicious email messages that were delivered. You can do this by using [Threat Explorer (or real-time detections)](threat-explorer.md).
   

@@ -1,5 +1,7 @@
 ---
 title: "Edit information barrier policies"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

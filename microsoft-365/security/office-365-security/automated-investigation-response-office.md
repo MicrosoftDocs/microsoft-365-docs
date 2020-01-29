@@ -1,5 +1,7 @@
 ---
 title: "Automated investigation and response (AIR) in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp

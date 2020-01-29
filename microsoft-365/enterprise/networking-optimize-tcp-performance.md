@@ -1,5 +1,7 @@
 ---
 title: "Step 5: Optimize client and Office 365 service performance"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

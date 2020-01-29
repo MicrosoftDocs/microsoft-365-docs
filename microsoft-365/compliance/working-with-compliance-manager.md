@@ -1,5 +1,7 @@
 ---
 title: "Work with Microsoft Compliance Manager (Preview)"
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
