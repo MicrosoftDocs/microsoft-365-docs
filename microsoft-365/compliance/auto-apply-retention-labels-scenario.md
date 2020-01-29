@@ -343,3 +343,9 @@ In the previous screenshot, we can also see that there's another managed propert
 ## Summary
 
 This article illustrated a document management scenario where we automatically applied a retention label based on a site column in SharePoint. Then we used event-based retention and Microsoft Flow to automatically trigger the start of the retention period based on an external event.
+
+## Credits
+
+This scenario was authored by: 
+
+Frederic Lapierre<br/>Principal Consultant, Microsoft Services
