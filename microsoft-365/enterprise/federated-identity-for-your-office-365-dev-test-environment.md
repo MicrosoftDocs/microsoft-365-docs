@@ -1,5 +1,7 @@
 ---
 title: "Federated identity for your Microsoft 365 test environment"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

@@ -1,6 +1,8 @@
 ---
 title: "Changes to Microsoft 365 for enterprise deployment content"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 12/18/2019

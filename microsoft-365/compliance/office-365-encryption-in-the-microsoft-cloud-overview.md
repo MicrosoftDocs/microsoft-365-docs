@@ -1,5 +1,7 @@
 ---
 title: "Encryption in the Microsoft Cloud"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi

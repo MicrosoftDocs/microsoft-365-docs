@@ -1,5 +1,7 @@
 ---
 title: "Set up mobile devices for Microsoft 365 Business users"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

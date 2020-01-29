@@ -1,5 +1,7 @@
 ---
 title: "Manage quarantined messages and files as an administrator in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp

@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Compliance Score setup"
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi

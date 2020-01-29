@@ -1,5 +1,7 @@
 ---
 title: "Sync user certificates to Office 365 for S/MIME"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

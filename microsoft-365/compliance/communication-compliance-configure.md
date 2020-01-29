@@ -1,6 +1,8 @@
 ---
 title: "Configure communication compliance (preview)"
 description: "Set up communication compliance policies to configure employee communications for review."
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi

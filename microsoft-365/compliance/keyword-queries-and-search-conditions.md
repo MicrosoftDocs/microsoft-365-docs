@@ -1,5 +1,7 @@
 ---
 title: "Keyword queries and search conditions for Content Search"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

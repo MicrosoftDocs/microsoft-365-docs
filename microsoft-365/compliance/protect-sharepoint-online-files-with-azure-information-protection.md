@@ -1,5 +1,7 @@
 ---
 title: "Protect SharePoint Online files with Azure Information Protection"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

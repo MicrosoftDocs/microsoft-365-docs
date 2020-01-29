@@ -1,5 +1,7 @@
 ---
 title: "Step 5: Configure Office 365 Data Loss Prevention"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

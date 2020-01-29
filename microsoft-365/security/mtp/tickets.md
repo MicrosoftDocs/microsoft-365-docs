@@ -5,6 +5,8 @@ keywords: security, Microsoft 365, M365, secure score, security center, ServiceN
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp

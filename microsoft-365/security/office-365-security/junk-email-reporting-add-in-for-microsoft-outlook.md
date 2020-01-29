@@ -1,5 +1,7 @@
 ---
 title: "Junk email reporting add-in for Microsoft Outlook"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

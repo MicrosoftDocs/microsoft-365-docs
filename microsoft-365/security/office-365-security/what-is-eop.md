@@ -1,5 +1,7 @@
 ---
 title: "What is EOP"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt

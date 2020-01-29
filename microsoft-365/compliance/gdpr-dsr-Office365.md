@@ -5,6 +5,8 @@ keywords:  Office 365, DSR, Microsoft 365, Microsoft 365 Education, Microsoft 36
 localization_priority:  Priority
 ms.prod:  Microsoft-365-enterprise
 ms.topic:  article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi

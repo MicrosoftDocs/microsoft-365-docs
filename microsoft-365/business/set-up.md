@@ -1,5 +1,7 @@
 ---
 title: "Set up Microsoft 365 Business"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

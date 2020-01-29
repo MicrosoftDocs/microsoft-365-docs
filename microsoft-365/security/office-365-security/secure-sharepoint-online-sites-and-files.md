@@ -1,5 +1,7 @@
 ---
 title: "Secure SharePoint Online sites and files"
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Get started with data classification (preview)"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
