@@ -1,5 +1,7 @@
 ---
 title: "Privileged access management for your Microsoft 365 Enterprise test environment"
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi

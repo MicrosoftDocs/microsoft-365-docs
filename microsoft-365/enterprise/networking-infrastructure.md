@@ -1,5 +1,7 @@
 ---
 title: "Phase 1: Networking infrastructure for Microsoft 365 Enterprise"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

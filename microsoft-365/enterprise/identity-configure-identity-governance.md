@@ -1,5 +1,7 @@
 ---
 title: "Step 7: Configure identity governance"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "View the reports for data loss prevention"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

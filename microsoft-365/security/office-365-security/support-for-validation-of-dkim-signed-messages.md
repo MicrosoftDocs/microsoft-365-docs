@@ -1,5 +1,7 @@
 ---
 title: "Support for validation of DKIM signed messages"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

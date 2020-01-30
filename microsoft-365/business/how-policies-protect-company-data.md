@@ -1,5 +1,7 @@
 ---
 title: "How policies in Microsoft 365 Business protect company data"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv

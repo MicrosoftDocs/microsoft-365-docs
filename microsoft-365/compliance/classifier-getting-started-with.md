@@ -1,5 +1,7 @@
 ---
 title: "Getting started with trainable classifiers (preview)"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Step 4: Configure traffic bypass"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

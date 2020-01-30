@@ -3,6 +3,8 @@ title: Microsoft compliance offerings
 layout: LandingPage
 description: Learn how Microsoft products and services help your organization meet regulatory compliance standards.
 author: robmazz
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 manager: laurawi
 ms.topic: landing-page

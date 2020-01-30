@@ -1,5 +1,7 @@
 ---
 title: "Best practices for configuring EOP and Office 365 ATP"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

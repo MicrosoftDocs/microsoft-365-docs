@@ -1,5 +1,7 @@
 ---
 title: "Create a keyword dictionary"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
