@@ -35,12 +35,12 @@ If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try i
   
 Complete these steps to set up and use communication compliance in your Microsoft 365 organization:
 
-## Step 1 (required): Make communication compliance available in your organization
+## Step 1 (required): Enable permissions for communication compliance
 
 >[!Important]
 >By default, Global Administrators do not have access to communication compliance features. The roles assigned in this step are required before any communication compliance features will be accessible.
 
-To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the **Supervisory Review Administrator** role. Additionally, to investigate and remediate messages with policy matches, you must create a group for reviewers with the **Supervisory Review Administrator**, **Case Management**, and **Review** roles.
+To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the **Supervisory Review Administrator** role. You must create a new role group for reviewers with the **Supervisory Review Administrator**, **Case Management**, and **Review** roles to investigate and remediate messages with policy matches.
 
 ### Create a new role group
 
