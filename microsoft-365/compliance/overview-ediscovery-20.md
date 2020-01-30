@@ -95,3 +95,6 @@ Use the **Jobs** tab to monitor long-running processes for case-related tasks th
 ## Configuring case settings
 
 Use the **Settings** tab to configure case-wide settings. This includes adding members to a case, closing or deleting a case, and configuring search and analytics settings.
+
+## Advanced eDiscovery Reports
+You can use the Advanced eDiscovery Reports on the Cases page to help your organization track activity and status across your Advanced eDiscovery cases. The Advanced eDiscovery Reports feature aggregates information around custodians, data sources, communications, and cases. You can filter your view based on various criteria and export the aggregated information for further analysis.  For more information, see [Reports in Advanced eDiscovery](ediscovery20-custodian-reports.md).
