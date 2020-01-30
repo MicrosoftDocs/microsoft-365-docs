@@ -123,7 +123,7 @@ On the **Pending disposition** page, you can view both pending and completed dis
   
 - The **Pending disposition** shows items that have reached the end of their retention period and require a disposition review. After reviewing each item, decide if you want to apply a different retention label to it, extend its retention period, or permanently delete it. You can select multiple items.
     
-- The **Disposed items** tab shows dispositions were approved for deletion during a disposition review and are now in the process of being permanently deleted or items marked as records that have now been deleted. Items that had a different retention label applied or their retention period extended as part of a review won't appear here.
+- The **Disposed items** tab shows permanently-deleted items that have already been through a disposition review. They show here because the permanent deletion process can take several days, as noted in the section above. Items that had a different retention label applied, or had their retention period extended as part of a review, won't appear here.
 
 ![Disposition tabs](media/Retention-Disposition-tabs.png)
     
