@@ -1,5 +1,5 @@
 ---
-title: "Advanced eDiscovery dashboard"
+title: "Advanced eDiscovery dashboard for review sets"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,7 +18,7 @@ ms.assetid:
 description: ""
 ---
 
-# Advanced eDiscovery dashboard (preview)
+# Advanced eDiscovery dashboard for review sets (preview)
 
 In some cases, you may have a large volume of documents and emails that need to be reviewed. Before you start your review process, you may want to quickly analyze your corpus to identify trends or key statistics that will help you develop your review strategy. To do this, you can use the Advanced eDiscovery dashboard view to quickly analyze your corpus.
 

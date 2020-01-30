@@ -20,19 +20,21 @@ description: ""
 
 # Advanced eDiscovery reports (preview)
 
-Advanced eDiscovery reports helps you aggregate data across your organization to streamline data analysis and organizational reporting. The Advanced eDiscovery Reports includes several out-of-the-box reports to help you answer questions like:
+Advanced eDiscovery reports help you aggregate case data across your organization to streamline data analysis and organizational reporting. The Advanced eDiscovery reports feature includes several built-in reports to help you answer questions like:
 
-- How many active custodians exist across my organization?
+- How many active custodians are there for all cases in my organization?
 
-- How many data sources are on hold across my organization?
+- How many data sources are on hold for all cases in my organization?
 
-- How many hold notifications have been issued in the last month across all my cases?
+- How many hold notifications have been issued in the last month for all cases in my organization?
 
-- How many active and closed cases exist?
+- How many active and closed cases are there in my organization?
 
 ## Before you begin
 
-To access the Advanced eDiscovery reports, you must be a member of the eDiscovery Admin role group. This will provide you with the necessary permissions to view, filter, and export data within the reports.
+- To access Advanced eDiscovery reports, you must be a member of the eDiscovery Admin role group. This provides you with the necessary permissions to view, filter, and export data within the reports. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+
+- Advanced eDiscovery reports are refreshed daily. As a result, there may be a delay when new cases, custodians, data sources, and communications are created and when they appear in the corresponding report.
 
 To access the Advanced eDiscovery reports:
 
@@ -40,56 +42,74 @@ To access the Advanced eDiscovery reports:
   
 2. Sign into Office 365 using your work or school account.
   
-3. In the Security & Compliance Center, click eDiscovery > Advanced eDiscovery.
+3. In the Security & Compliance Center, click **eDiscovery > Advanced eDiscovery**.
   
-4. On the Advanced eDiscovery page, click the Custodian, Communications, Data Sources, or Cases tab. 
+   On the **Advanced eDiscovery** home page, the Custodian, Communications, Data Source, and Cases reports tabs are displayed across the top of the page. 
   
-5. Click Apply filter to narrow down your results.
+   ![Advanced eDiscovery reports on the home page](media/report-home.png)
+
+5. To view a report, click a report tab, and then if necessary you can do one of the following things:
+
+   ![You can filter or download report data](media/AeDReportsFilterDownload.png)
+
+   a. Click **Filter** to narrow the report data. You can filter on different properties for each report.
   
-6. Select Export to obtain a CSV file of your results.
+   b. Click **Download to CSV** to export the report data to a CSV file.
 
-![Reports Home](media/report-home.png)
+## Case report
 
-> [!NOTE]
-> The Advanced eDiscovery reports are refreshed daily. As a result, there may be a delay when new cases, custodians, data sources, communications are created and when they appear in the corresponding report.
+The Case report aggregates information about active and closed Advance eDiscovery cases in your organization.
 
-## Cases report
+|Column        |Description|
+|:-------------|:-------------|
+|Case ID | Unique identifier for each case.| 
+|Case name | User defined name of the case.|
+|Status | Indicates if the case is active or closed.|
+|Date created | Date when the case was created. Times are in UTC format.|
+|Last modified | Date when the case was closed or last updated. Times are in UTC format.| 
+|||
 
-The Cases report aggregates information about active and closed cases in your organization.
+## Custodian report
 
-| Field        | Description|
+In the eDiscovery workflow, individuals who are the subject of a legal case or investigation are called *data custodians* (or just *custodians*) and are defined as "persons having administrative control of a document or electronic file". The Custodian report helps you identify all the custodians whose data sources are placed on hold for all cases in your organization.
+
+|Column         |Description|
+|:-------------|:-------------|
+|Custodian name| The name of the custodian. |
+|Custodian UPN | The user principal name of the custodian.|
+|Custodian ID | The unique identifier for the custodian within a given case. |
+|Case name | The user defined name of the case.|
+|Hold status | Indicates if the custodian is currently on hold or if they have been released from the case.|
+|Case Id | The unique identifier for the case.|
+|Communication status |Indicates if the custodian was issued a legal hold notification or not. |
+|Custodian added | The date the custodian was added to the case. Times are in UTC format.|
+|||
+
+## Data source report
+
+You can use an Advanced eDiscovery case to create holds to preserve content that may be relevant to the case. Using the Advanced eDiscovery hold capabilities, you can place holds on custodians and their data sources. Additionally, you can place a non-custodial hold on mailboxes and OneDrive for Business accounts. You can use the organization-level data sources report to aggregate details about content locations on hold for all cases in your organization.
+
+|Column        |Description|
 | -------------|-------------|
-| Case Id | Unique identifier for each Advanced eDiscovery case.| 
-| Date Created | Date in which the case was created. Times are in UTC format. |
-| Last Modified | Date in which the case was closed or last updated. Times are in UTC format.| 
-| Case Status | Indicates if the case is active or closed. | 
-|Case Name | User defined name of the case. | 
+|Case ID | Unique identifier for each Advanced eDiscovery case | 
+|Workload | Indicates the type of content location placed on hold (Exchange or SharePoint)
+|Location name | Indicates the URL or SMTP address of the content location | 
+|Custodian ID | If the data source belongs to a custodian, this will show the unqiue identifier for a custodian in a given case. This will be null for non-custodial locations. |
+|Custodian name | Name of the custodian in Active Directory| 
+|Case name | User defined name of the case | 
+|Status | Indicates if the content location is currently on hold | 
+|Hold policy ID | Unique identifier for the hold policy that contains the specific content location | 
+|Hold created date | Indicates the date in which the hold policy was created | 
+|Hold policy name | Name of the hold policy that contains the content location |
+|Hold modified date | Timestamp in which the hold policy was last modified| 
+|Hold last modified by | Name of the user that last modified the hold policy | 
+|||
 
-## Data sources report
-
-You can use an Advanced eDiscovery case to create holds to preserve content that may be relevant to your case. Using the Advanced eDiscovery hold capabilities, you can place holds on custodians and their data sources. Additionally, you can place a non-custodial hold on mailboxes and OneDrive for Business accounts. You can use the organization-level data sources report to aggregate details about content locations on hold across your Advanced eDiscovery cases.
-
-| Field        | Description|
-| -------------|-------------|
-| Case ID | Unique identifier for each Advanced eDiscovery case | 
-| Workload | Indicates the type of content location placed on hold (Exchange or SharePoint)
-| Location name | Indicates the URL or SMTP address of the content location | 
-| Custodian ID | If the data source belongs to a custodian, this will show the unqiue identifier for a custodian in a given case. This will be null for non-custodial locations. |
-| Custodian name | Name of the custodian in Active Directory| 
-| Case name | User defined name of the case | 
-| Status | Indicates if the content location is currently on hold | 
-| Hold policy ID | Unique identifier for the hold policy that contains the specific content location | 
-| Hold created date | Indicates the date in which the hold policy was created | 
-| Hold policy name | Name of the hold policy that contains the content location |
-| Hold modified date | Timestamp in which the hold policy was last modified| 
-| Hold last modified by | Name of the user that last modified the hold policy | 
-
-
-## Communications report
+## Communication report
 
 In some cases, you may issue legal hold notices to notify custodians of their obligation to preserve relevant information. Using the communications report, you can aggregate data on acknowledgements, reminders, escalations, and more.
 
-| Field        | Description|
+|Column         |Description|
 | -------------|-------------|
 | Case ID | Unique identifier for the Advanced eDiscovery case | 
 | Case Name | User defined name of the case | 
@@ -99,24 +119,4 @@ In some cases, you may issue legal hold notices to notify custodians of their ob
 | Issuing Officer | Name of the user that issued the legal hold notification | 
 | Notification Event| Indicates the legal hold notification message sent to the user. Possible values include reminder, escalation, acknowledgement, and hold issuance | 
 | Date Sent | Date in which the communication was issued. For acknowledgements, this indicates the time that the notice was acknowledged by the custodian. Times are in UTC format.|
-
-## Custodians report
-
-In eDiscovery, these individuals are called data custodians (or just custodians) and are defined as "persons having administrative control of a document or electronic file". The Advanced eDiscovery Custodians Report helps you identify custodians that are on hold across your cases. 
-
-| Field        | Description|
-|:-------------|:-------------|
-| Custodian Name| Name of the custodian | 
-| Custodian UPN | User principal name of the custodian|| Custodian ID | Unique identifier for the custodian in a given case | 
-| Case Name | User defined name of the case |
-| Hold Status | Indicates if the custodian is currently on hold or if they have been released from the case | 
-| Case Id | Unqiue identifier for the case | 
-| Communication Status | Indicates if the custodian was issued a legal hold notification | 
-| Custodian added | Date that the custodian was added to the case. Times are in UTC format|
-
-
-
-
-
-
-
+|||
