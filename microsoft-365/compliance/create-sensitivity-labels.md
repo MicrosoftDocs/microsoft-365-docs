@@ -40,7 +40,7 @@ These permissions are required only to create and configure sensitivity labels a
 1. In your labeling admin center, navigate to sensitivity labels:
     
     - Microsoft 365 compliance center: 
-        - **Solutions** > **Information protection (preview)**
+        - **Solutions** > **Information protection**
         
         If you don't immediately see this option, first select **Show all**. 
     
@@ -113,7 +113,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 1. In your labeling admin center, navigate to sensitivity labels:
     
     - Microsoft 365 compliance center: 
-        - **Solutions** > **Information protection (preview)**
+        - **Solutions** > **Information protection**
         
         If you don't immediately see this option, first select **Show all**. 
     
