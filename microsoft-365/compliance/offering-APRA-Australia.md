@@ -26,7 +26,8 @@ The [Australian Prudential Regulation Authority](https://www.apra.gov.au/) (APRA
 
 For financial institutions in Australia that are assessing cloud providers and their services, Microsoft has published:
 
-- [Microsoft response to the APRA Information Paper on Cloud](https://aka.ms/navigatecloudaustralia) - [Microsoft cloud services: a compliance checklist for financial institutions in Australia](https://www.microsoft.com/cms/api/am/binary/RE3ez0C)
+- [Microsoft response to the APRA Information Paper on Cloud](https://aka.ms/navigatecloudaustralia) 
+- [Microsoft cloud services: a compliance checklist for financial institutions in Australia](https://www.microsoft.com/cms/api/am/binary/RE3ez0C)
 - [Microsoft cloud services: compliance with APRA Prudential Standard CPS 234](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OsZg)
 
 Together they demonstrate how financial firms can move data and workloads to Microsoft Azure with the confidence that they are complying with Australian Prudential Regulation Authority (APRA) regulations and guidance.
