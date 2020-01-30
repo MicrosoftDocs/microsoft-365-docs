@@ -83,7 +83,7 @@ After a sensitivity label is applied to an email or document, any configured pro
     
     For more information about the **Encryption** settings when you create or edit a sensitivity label, see [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md).
 
-- **Mark the content** when you use Office apps, by adding watermarks, headers, or footers to email or documents that have the label applied. Watermarks can be applied to documents but not email. For example:
+- **Mark the content** when you use Office apps, by adding watermarks, headers, or footers to email or documents that have the label applied. Watermarks can be applied to documents but not email. Example header and watermark:
     
     ![Watermark and header applied to document](media/Sensitivity-label-watermark-header.png)
     
