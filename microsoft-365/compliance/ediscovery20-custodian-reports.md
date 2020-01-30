@@ -50,7 +50,7 @@ The Advanced eDiscovery Cases Report aggregates information around active and cl
 | -------------|-------------|
 | Case Id | Unique identifier for each Advanced eDiscovery case| 
 | Date Created | Date in which the case was created. Times are in UTC format. |
-| Last Modified | Date in which the case was closed or last updated. Times are in UTC format.$$ | 
+| Last Modified | Date in which the case was closed or last updated. Times are in UTC format.| 
 | Case Status | Indicates if the case is active or closed | 
 |Case Name | User defined name of the case | 
 
@@ -99,7 +99,9 @@ In eDiscovery, these individuals are called data custodians (or just custodians)
 | Hold Status | Indicates if the custodian is currently on hold or if they have been released from the case | 
 | Case Id | Unqiue identifier for the case | 
 | Communication Status | Indicates if the custodian was issued a legal hold notification | 
-| Custodian added | Date that the custodian was added to the case. Times are in UTC format| 
+| Custodian added | Date that the custodian was added to the case. Times are in UTC format|
+
+
 
 
 
