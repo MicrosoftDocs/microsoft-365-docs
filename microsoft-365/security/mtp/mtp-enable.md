@@ -31,7 +31,7 @@ search.appverid:
 Microsoft Threat Protection unifies your incident response process by integrating key capabilities across Microsoft Defender Advanced Threat Protection (ATP), Office 365 ATP, Microsoft Cloud App Security, and Azure ATP. This unified experience adds powerful features you can access in the Microsoft 365 security center.
 
 ## Check license eligibility and required permissions
-Customers with a Microsoft 365 E5 or equivalent license can use Microsoft Threat Protection. For more information, [read the licensing requirements](prerequisites.md#licensing-requirements).
+Customers with Microsoft 365 E5, Microsoft 365 E5 Security, or an equivalent combination of licenses can use Microsoft Threat Protection. For more information, [read the licensing requirements](prerequisites.md#licensing-requirements).
 
 You must be a **global administrator** or a **security administrator** in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to turn on Microsoft Threat Protection.
 

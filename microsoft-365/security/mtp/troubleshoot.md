@@ -30,7 +30,7 @@ This section addresses issues that might arise as you use the Microsoft Threat P
 
 
 ## I don't see Microsoft Threat Protection content
-If you don't see capabilities on the navigation page such as the Incidents, Action Center, or Hunting in your portal, you'll need to verify that your tenant has the appropriate licenses. 
+If you don't see capabilities on the navigation pane such as the Incidents, Action Center, or Hunting in your portal, you'll need to verify that your tenant has the appropriate licenses. 
 
 For more information, see [Prerequisites](prerequisites.md).
 

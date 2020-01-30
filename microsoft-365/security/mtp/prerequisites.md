@@ -31,12 +31,13 @@ search.appverid:
 Learn about the licensing, hardware and software requirements, and other configuration settings to provision and use Microsoft Threat Protection.
 
 ## Licensing requirements
-To use Microsoft Threat Protection, you need a Microsoft 365 E5 license or a combination of various E5 licenses:
+To use Microsoft Threat Protection, you need one of the following licenses or combination of licenses:
 
-- Microsoft 365 E5 
+- Microsoft 365 E5
+- Microsoft 365 E5 Security
 - Office 365 E5, Enterprise Mobility + Security E5, and Windows E5
 
-For detailed product and purchasing information, [go to the Microsoft 365 enterprise page](https://www.microsoft.com/en-us/microsoft-365/enterprise).
+[View Microsoft 365 Enterprise service plans](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
 
 ### Check your existing  licenses
 Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses. In the admin center, go to **Billing** > **Licenses**.
