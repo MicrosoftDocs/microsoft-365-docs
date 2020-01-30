@@ -36,7 +36,7 @@ People regularly send, receive, and share attachments, such as documents, presen
 
 - Make sure that your organization has [Office 365 Advanced Threat Protection](office-365-atp.md).
 
-- Make sure that you have the necessary permissions. To define (or edit) ATP policies, you must be assigned to either Exchange Online Organization Management role (Office 365 Global Administrator is assigned to this role by default) or both Exchange Online Hygiene Management and Security Administrator roles. For more details, see the following table:
+- Make sure that you have the necessary permissions. To define (or edit) ATP policies, you must be assigned either an Exchange Online Organization Management role (Office 365 Global Administrator is assigned to this role by default) or both Exchange Online Hygiene Management and Security Administrator roles. For more details, see the following table:
 
   |Role|Where/how assigned|
   |---------|---------|
