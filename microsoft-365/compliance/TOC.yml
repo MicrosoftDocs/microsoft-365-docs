@@ -150,8 +150,6 @@
           href: document-fingerprinting.md
         - name: DLP functions for sensitive information
           href: what-the-dlp-functions-look-for.md
-        - name: Watch an extended overview of customizing DLP
-          href: https://go.microsoft.com/fwlink/?linkid=852306
     - name: Email encryption
       href: email-encryption.md
       items: 
