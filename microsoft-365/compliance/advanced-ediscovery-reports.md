@@ -44,7 +44,7 @@ To access the Advanced eDiscovery reports:
   
 3. In the Security & Compliance Center, click **eDiscovery > Advanced eDiscovery**.
   
-   On the **Advanced eDiscovery** home page, the Custodian, Communications, Data Source, and Cases reports tabs are displayed across the top of the page. 
+   On the **Advanced eDiscovery** home page, the Case, Custodian, Data Source, and Communications report tabs are displayed across the top of the page. 
   
    ![Advanced eDiscovery reports on the home page](media/report-home.png)
 
