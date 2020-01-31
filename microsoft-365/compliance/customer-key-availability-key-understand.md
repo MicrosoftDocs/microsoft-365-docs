@@ -85,14 +85,28 @@ For SharePoint Online, OneDrive for Business, and Teams files, the availa
 
 This operation is proportional to the number of sites in your organization. Once you call Microsoft to use the availability key, you should be fully online within about four hours.
 
+## How Exchange Online and Skype for Business use the availability key
+
+When customers create a DEP with Customer Key, Office 365 generates a Data Encryption Policy Key (DEP Key) associated to that DEP. The service encrypts the DEP Key three times: once with each of the customer keys and once with the availability key. Only the encrypted versions of the DEP Key are stored, and a DEP Key can only be decrypted with the customer keys or the availability key. The DEP Key is then used to encrypt Mailbox Keys, which are then used to encrypt individual mailboxes. 
+  
+Office 365 follows this process to decrypt and provide data when customers are using the service:
+  
+1. Decrypt the DEP Key using the Customer Key.
+
+2. Use the decrypted DEP Key to decrypt a Mailbox Key.
+
+3. Use the decrypted Mailbox Key to decrypt the mailbox itself, allowing customers to access the data within.
+
+Office 365 decrypts a DEP Key by issuing two decryption requests to Azure Key Vault with a slight offset. The first one to finish furnishes the result, canceling the other request.
+
 ## How SharePoint Online, OneDrive for Business, and Teams files use the availability key
 
 The SharePoint Online and OneDrive for Business architecture and implementation for Customer Key and availability key are different from Exchange Online and Skype for Business.
   
-When a customer moves to customer-managed keys, Office 365 creates a tenant-specific intermediate key (TIK). Office 365 encrypts the TIK twice, once with each of the customer keys, and stores the two encrypted versions of the TIK. Only the encrypted versions of the TIK are stored, and a TIK can only be decrypted with the customer keys. The TIK is then used to encrypt site keys, which are then used to encrypt blob keys. The blobs themselves are encrypted and stored in the Microsoft Azure Blob storage service.
+When a customer moves to customer-managed keys, Office 365 creates a tenant-specific intermediate key (TIK). Office 365 encrypts the TIK twice, once with each of the customer keys, and stores the two encrypted versions of the TIK. Only the encrypted versions of the TIK are stored, and a TIK can only be decrypted with the customer keys. The TIK is then used to encrypt site keys, which are then used to encrypt blob keys (also called file chunk keys). Depending on file size, the service may split a file into multiple file chunks each with a unique key. The blobs (file chunks) themselves are encrypted with the blob keys and stored in the Microsoft Azure Blob storage service.
   
-Office 365 follows this process to access a blob that has customer file data:
-  
+Office 365 follows this process to decrypt and provide customer files when customers are using the service:
+
 1. Decrypt the TIK using the Customer Key.
 
 2. Use the decrypted TIK to decrypt a site key.
@@ -101,7 +115,7 @@ Office 365 follows this process to access a blob that has customer file data:
 
 4. Use the decrypted blob key to decrypt the blob.
 
-Office 365 decrypts a TIK and issues two decryption requests to Azure Key Vault with a slight offset. The first one to finish furnishes the result, canceling the other request.
+Office 365 decrypts a TIK by issuing two decryption requests to Azure Key Vault with a slight offset. The first one to finish furnishes the result, canceling the other request.
   
 In case you lose access to your customer keys, Office 365 also encrypts the TIK with an availability key and stores this along with the TIKs encrypted with each customer key. The TIK encrypted with the availability key is used only when the customer calls Microsoft to enlist the recovery path when they have lost access to their keys, maliciously or accidentally.
   
