@@ -45,9 +45,46 @@ Encryption uses the Azure Rights Management service (Azure RMS) from Azure Infor
 
 When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
-## How to turn on encryption for a sensitivity label
+## Configuring a label for encryption
 
-When you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) toggle **Encryption** to **On**, and then choose whether to:
+When you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), on the **Encryption** page of the wizard, you can select one of the following options:
+
+- **None**: The default setting for a new label. No new encryption is applied.
+- **Apply**: Turns on encryption, and you then specify encryption settings.
+- **Remove**: Removes encryption if the document or email is encrypted.
+
+> [!NOTE]
+> The **Remove** option is supported by the Azure Information Protection unified labeling client only. When you use built-in labeling, a label with this option displays and if selected, the encryption behavior is the same as **None**.
+
+## What happens to existing encryption when a label's applied
+
+Before a sensitivity label is applied to content, it's possible that the content is already encrypted.
+
+For example, another user might have applied:
+
+- Their own permissions, which include user-defined permissions when prompted by a label, custom permissions by the Azure Information Protection client, and the **Restricted Access** document protection from within an Office app.
+- An Azure Rights Management protection template that encrypts the content independently from a label.
+- A label that applies encryption with permissions assigned by the administrator.
+
+The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
+
+| |**User applies a sensitivity label with encryption set to None**|**User applies a sensitivity label with encryption set to Apply**|**User applies a sensitivity label with encryption set to Remove**|
+|:-----|:-----|:-----|:-----|
+|**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
+|**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
+|**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|Original encryption is removed|
+
+Note that in the cases where the original encryption is replaced or removed, this happens only if the user applying the label has a usage right or role that supports this action:
+- The [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions) Export or Full Control.
+- The role of [Rights Management issuer or Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner), or [super user](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+
+If the user doesn't have one of these rights or roles, the label can't be applied and so the original encryption is preserved. The user sees the following message: **You don't have permission to make this change to the sensitivity label. Please contact the content owner.**
+
+For example, the person who applies Do Not Forward to an email message can relabel the thread to replace the encryption or remove it, because they are the Rights Management owner for the email. But with the exception of super users, recipients of this email can't relabel it because they don't have the required usage rights.
+
+## How to configure encryption settings for a sensitivity label
+
+When you select **Apply** on the **Encryption** page of the wizard to create or edit a sensitivity label, then choose whether to:
 
 - **Assign permissions now**, so that you can determine exactly which users get which permissions to content that has the label applied. For more information, see the next section [Assign permissions now](#assign-permissions-now).
 - **Let users assign permissions** when your users apply the label to content. With this option, you can allow people in your organization some flexibility that they might need to collaborate and get their work done. For more information, see the [Let users assign permissions](#let-users-assign-permissions) section on this page.
@@ -85,7 +122,7 @@ You can grant permissions to specific people so that only they can interact with
 
 1. First, add users or groups that will be assigned permissions to the labeled content.
 
-2. Then, you choose which permissions those users should have for the labeled content.
+2. Then, choose which permissions those users should have for the labeled content.
 
 ![Options to assign permissions to users](media/Sensitivity-Assign-permissions-settings.png)
 
@@ -94,6 +131,7 @@ You can grant permissions to specific people so that only they can interact with
 When you assign permissions, you can choose:
 
 - Everyone in your organization (all tenant members). This setting excludes guest accounts.
+- Any authenticated user
 - Any specific user or email-enabled security group, distribution group, Office 365 group, or dynamic distribution group. 
 - Any email address or domain outside your organization, such as gmail.com, hotmail.com, or outlook.com.
 
@@ -172,6 +210,11 @@ The user can:
 
 ![Options for user to protect with custom permissions](media/sensitivity-aip-custom-permissions-dialog.png)
 
+## How to turn off encryption with a sensitivity label
+
+
+
+
 ## What happens to existing encryption when a label's applied
 
 Before a sensitivity label is applied to content, it's possible that the content is already encrypted. 
@@ -184,11 +227,11 @@ For example, another user might have applied:
 
 The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
 
-| |**User applies a sensitivity label with encryption turned off**|**User applies a sensitivity label with encryption turned on**|
+| |**User applies a sensitivity label with encryption set to None**|**User applies a sensitivity label with encryption set to Apply**|**User applies a sensitivity label with encryption set to Remove**|
 |:-----|:-----|:-----|:-----|
-|**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|
-|**Protection template**|Original encryption is preserved|New label encryption is applied|
-|**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|
+|**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
+|**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
+|**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|Original encryption is removed|
 
 Note that in the cases where the original encryption is replaced or removed, this happens only if the user applying the label has a usage right or role that supports this action:
 - The [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions) Export or Full Control.
