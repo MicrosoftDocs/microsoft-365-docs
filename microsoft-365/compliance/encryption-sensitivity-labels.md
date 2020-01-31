@@ -82,6 +82,12 @@ If the user doesn't have one of these rights or roles, the label can't be applie
 
 For example, the person who applies Do Not Forward to an email message can relabel the thread to replace the encryption or remove it, because they are the Rights Management owner for the email. But with the exception of super users, recipients of this email can't relabel it because they don't have the required usage rights.
 
+### Email attachments for encrypted email messages
+
+When an email message is encrypted by any method, any unencrypted Office documents that are attached to the email automatically inherit the same encryption settings.
+
+Documents that are already encrypted and then added as attachments always preserve their original encryption. 
+
 ## How to configure encryption settings for a sensitivity label
 
 When you select **Apply** on the **Encryption** page of the wizard to create or edit a sensitivity label, then choose whether to:
@@ -131,13 +137,22 @@ You can grant permissions to specific people so that only they can interact with
 When you assign permissions, you can choose:
 
 - Everyone in your organization (all tenant members). This setting excludes guest accounts.
-- Any authenticated user
+- Any authenticated users. Make sure you understand the [requirements and limitations](#requirements-and-limitations-for-add-any-authenticated-users) of this setting before selecting it.
 - Any specific user or email-enabled security group, distribution group, Office 365 group, or dynamic distribution group. 
-- Any email address or domain outside your organization, such as gmail.com, hotmail.com, or outlook.com.
+- Any email address or domain outside your organization, such as gmail.com, hotmail.com, or outlook.com. 
 
 When you choose all tenant members or browse the directory, the users or groups must have an email address.
 
 As a best practice, use groups rather than users. This strategy keeps your configuration simpler.
+
+##### Requirements and limitations for **Add any authenticated users**
+
+This setting doesn't restrict who can access the content that the label encrypts, while still encrypting the content and providing you with options to restrict how the content can be used (permissions), and accessed (expiry and offline access). However, the application opening the encrypted content must be able to support the authentication being used. For this reason, federated social providers such as Google, and onetime passcode authentication should be used for email only, and only when you use Exchange Online and the new capabilities from Office 365 Message Encryption. Microsoft accounts can be used with the Azure Information Protection viewer and Office 365 apps. 
+
+Some typical scenarios for the any authenticated users setting:
+- You don't mind who views the content, but you want to restrict how it is used. For example, you don't want the content to be edited, copied, or printed.
+- You don't need to restrict who accesses the content, but you want to be able to confirm who opens it.
+- You have a requirement that the content must be encrypted at rest and in transit, but it doesn't require access controls.
 
 #### Choose permissions
 
@@ -210,42 +225,6 @@ The user can:
 
 ![Options for user to protect with custom permissions](media/sensitivity-aip-custom-permissions-dialog.png)
 
-## How to turn off encryption with a sensitivity label
-
-
-
-
-## What happens to existing encryption when a label's applied
-
-Before a sensitivity label is applied to content, it's possible that the content is already encrypted. 
-
-For example, another user might have applied:
-
-- Their own permissions, which include user-defined permissions when prompted by a label, custom permissions by the Azure Information Protection client, and the **Restricted Access** document protection from within an Office app.
-- An Azure Rights Management protection template that encrypts the content independently from a label.
-- A label that applies encryption with permissions assigned by the administrator.
-
-The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
-
-| |**User applies a sensitivity label with encryption set to None**|**User applies a sensitivity label with encryption set to Apply**|**User applies a sensitivity label with encryption set to Remove**|
-|:-----|:-----|:-----|:-----|
-|**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
-|**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
-|**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|Original encryption is removed|
-
-Note that in the cases where the original encryption is replaced or removed, this happens only if the user applying the label has a usage right or role that supports this action:
-- The [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions) Export or Full Control.
-- The role of [Rights Management issuer or Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner), or [super user](https://docs.microsoft.com/azure/information-protection/configure-super-users).
-
-If the user doesn't have one of these rights or roles, the label can't be applied and so the original encryption is preserved. The user sees the following message: **You don't have permission to make this change to the sensitivity label. Please contact the content owner.**
-
-For example, the person who applies Do Not Forward to an email message can relabel the thread to replace the encryption or remove it, because they are the Rights Management owner for the email. But with the exception of super users, recipients of this email can't relabel it because they don't have the required usage rights.
-
-### Email attachments for encrypted email messages
-
-When an email message is encrypted by any method, any unencrypted Office documents that are attached to the email automatically inherit the same encryption settings.
-
-Documents that are already encrypted and then added as attachments always preserve their original encryption. 
 
 ## Considerations for encrypted content
 
