@@ -64,7 +64,7 @@ If a sensitivity label is applied to unencrypted content, the outcome of the enc
 - **Apply**: The content is encrypted according to the encryption settings.
 - **Remove**: The content isn't encrypted (no encryption to remove).
 
-However, the outcome is more complicated if the content is already encrypted. For example, another user might have applied:
+However, the content might be already encrypted. For example, another user might have applied:
 
 - Their own permissions, which include user-defined permissions when prompted by a label, custom permissions by the Azure Information Protection client, and the **Restricted Access** document protection from within an Office app.
 - An Azure Rights Management protection template that encrypts the content independently from a label.
@@ -78,7 +78,7 @@ The following table identifies what happens to existing encryption when a sensit
 |**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|Original encryption is removed|
 
-Note that in the cases where the original encryption is replaced or removed, this happens only if the user applying the label has a usage right or role that supports this action:
+Note that in the cases where the new label encryption is applied or the original encryption is removed, this happens only if the user applying the label has a usage right or role that supports this action:
 - The [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions) Export or Full Control.
 - The role of [Rights Management issuer or Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner), or [super user](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
