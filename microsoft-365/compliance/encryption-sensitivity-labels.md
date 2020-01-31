@@ -86,7 +86,7 @@ If the user doesn't have one of these rights or roles, the label can't be applie
 
 For example, the person who applies Do Not Forward to an email message can relabel the thread to replace the encryption or remove it, because they are the Rights Management owner for the email. But with the exception of super users, recipients of this email can't relabel it because they don't have the required usage rights.
 
-### Email attachments for encrypted email messages
+#### Email attachments for encrypted email messages
 
 When an email message is encrypted by any method, any unencrypted Office documents that are attached to the email automatically inherit the same encryption settings.
 
@@ -94,7 +94,7 @@ Documents that are already encrypted and then added as attachments always preser
 
 ## How to configure encryption settings for a sensitivity label
 
-When you select **Apply** on the **Encryption** page of the wizard to create or edit a sensitivity label, then choose whether to:
+When you select **Apply** on the **Encryption** page of the wizard to create or edit a sensitivity label, choose whether to:
 
 - **Assign permissions now**, so that you can determine exactly which users get which permissions to content that has the label applied. For more information, see the next section [Assign permissions now](#assign-permissions-now).
 - **Let users assign permissions** when your users apply the label to content. With this option, you can allow people in your organization some flexibility that they might need to collaborate and get their work done. For more information, see the [Let users assign permissions](#let-users-assign-permissions) section on this page.
@@ -151,7 +151,7 @@ As a best practice, use groups rather than users. This strategy keeps your confi
 
 ##### Requirements and limitations for **Add any authenticated users**
 
-This setting doesn't restrict who can access the content that the label encrypts, while still encrypting the content and providing you with options to restrict how the content can be used (permissions), and accessed (expiry and offline access). However, the application opening the encrypted content must be able to support the authentication being used. For this reason, federated social providers such as Google, and onetime passcode authentication should be used for email only, and only when you use Exchange Online and the new capabilities from Office 365 Message Encryption. Microsoft accounts can be used with the Azure Information Protection viewer and Office 365 apps. 
+This setting doesn't restrict who can access the content that the label encrypts, while still encrypting the content and providing you with options to restrict how the content can be used (permissions), and accessed (expiry and offline access). However, the application opening the encrypted content must be able to support the authentication being used. For this reason, federated social providers such as Google, and onetime passcode authentication work for email only, and only when you use Exchange Online and the new capabilities from Office 365 Message Encryption. Microsoft accounts can be used with Office 365 apps and the [Azure Information Protection viewer](https://portal.azurerms.com/#/download).
 
 Some typical scenarios for the any authenticated users setting:
 - You don't mind who views the content, but you want to restrict how it is used. For example, you don't want the content to be edited, copied, or printed.
