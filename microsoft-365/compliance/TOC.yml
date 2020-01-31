@@ -36,15 +36,15 @@
           href: insider-risk-management-users.md
         - name: Create insider risk notice templates (preview)
           href: insider-risk-management-notices.md
-    - name: Communication compliance (preview)
+    - name: Communication compliance
       items: 
-        - name: Learn about communication compliance (preview)
+        - name: Learn about communication compliance
           href: communication-compliance.md
-        - name: Configure communication compliance in Microsoft 365 (preview)
+        - name: Get started with communication compliance
           href: communication-compliance-configure.md
-        - name: Investigate and remediate communication compliance alerts (preview)
+        - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
-        - name: Feature reference for communication compliance (preview)
+        - name: Feature reference for communication compliance
           href: communication-compliance-feature-reference.md
         - name: Supervision policies in Office 365
           href: supervision-policies.md
