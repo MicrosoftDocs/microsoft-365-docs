@@ -454,6 +454,8 @@
               href: tagging-documents.md
             - name: Set up attorney-client privilege detection
               href: attorney-privilege-detection.md
+            - name: Use the review set dashboard (preview)
+              href: advanced-ediscovery-dashboard.md
         - name: Analyze case data
           href: analyzing-data-in-review-set.md
           items: 
