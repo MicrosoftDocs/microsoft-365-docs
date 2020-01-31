@@ -52,7 +52,7 @@ There are two roles that grant access to content explorer:
 
 The account you use to access content explorer must be in one or both of the role groups. These are independent role groups and are not cumulative. For example, if you want to grant an account the ability to view the items and their locations only, grant Content Explorer List viewer rights. If you want that same account to also be able to view the contents of the items in the list, grant Content Explorer Content viewer rights as well.
 
-You can also assign either or both of the roles to a custom role group to tailor access to content explorer. 
+You can also assign either or both of the roles to a custom role group to tailor access to content explorer.
 
 ### How to use content explorer
 
