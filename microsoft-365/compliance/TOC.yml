@@ -494,6 +494,8 @@
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: Conversation review sets
               href: conversation-review-sets.md
+            - name: Advanced eDiscovery reports (preview)
+              href: advanced-ediscovery-reports.md
             - name: Troubleshoot AzCopy
               href: troubleshooting-azcopy.md
     - name: Manage eDiscovery cases

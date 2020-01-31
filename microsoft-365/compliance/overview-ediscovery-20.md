@@ -80,8 +80,11 @@ Use the **Searches** tab to create searches to search the in-place custodial and
 Use the **Review sets** tab to review and analyze the content that you've collected from the live system and added to a review set. A *review set* is a static collection of that data (in other words, an offline copy of data) of custodial data (and if applicable, non-custodial data) that you collected in the previous phase of the eDiscovery workflow. When you add search results to a review set, a process is triggered that extracts files from containers, extracts metadata, and extracts text. When this process is complete, the system builds a new index of all the data collected from custodians and adds it to the review set. After the data is added to the review set, you can run more queries to narrow the case data, view data as text or in the native file format, and annotate, redact, and tag documents in the review set. You can also perform advanced analytics such as identify document duplication, email threading, and themes. After you've culled the data to only what is relevant to the case, you can either download documents directly or export them along with file metadata, annotations, and any tags. For more information, see:
 
 - [View documents in a review set](view-documents-in-review-set.md)
+
 - [Query the data in a review set](review-set-search.md)
+
 - [Tag documents in a review set](tagging-documents.md)
+
 - [Analyze data in a review set](analyzing-data-in-review-set.md)
 
 ## Exporting data for review and presentation
@@ -96,5 +99,6 @@ Use the **Jobs** tab to monitor long-running processes for case-related tasks th
 
 Use the **Settings** tab to configure case-wide settings. This includes adding members to a case, closing or deleting a case, and configuring search and analytics settings.
 
-## Advanced eDiscovery Reports
-You can use the Advanced eDiscovery Reports on the Cases page to help your organization track activity and status across your Advanced eDiscovery cases. The Advanced eDiscovery Reports feature aggregates information around custodians, data sources, communications, and cases. You can filter your view based on various criteria and export the aggregated information for further analysis.  For more information, see [Reports in Advanced eDiscovery](ediscovery20-custodian-reports.md).
+## Advanced eDiscovery reports
+
+You can use the Advanced eDiscovery reports on the home page to help your organization track activity and status across all Advanced eDiscovery cases. The Advanced eDiscovery reports feature aggregates information about cases, custodians, data sources, and communications. You can filter the report data based on various criteria and export the aggregated information to a CSV file for further analysis.  For more information, see [Advanced eDiscovery reports](advanced-ediscovery-reports.md).
