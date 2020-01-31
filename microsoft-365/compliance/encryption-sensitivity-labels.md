@@ -58,11 +58,7 @@ When you [create or edit a sensitivity label](create-sensitivity-labels.md#creat
 
 ### What happens to existing encryption when a label's applied
 
-If a sensitivity label is applied to unencrypted content, the outcome of the encryption options you can select is self-explanatory:
-
-- **None**: The content isn't encrypted.
-- **Apply**: The content is encrypted according to the encryption settings.
-- **Remove**: The content isn't encrypted (no encryption to remove).
+If a sensitivity label is applied to unencrypted content, the outcome of the encryption options you can select is self-explanatory. For example, if encryption is set to **None**, the content remains unencrypted.
 
 However, the content might be already encrypted. For example, another user might have applied:
 
