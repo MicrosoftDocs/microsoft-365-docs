@@ -1,5 +1,5 @@
 ---
-title: "Restrict access to content by using encryption in sensitivity labels"
+title: "Restrict access to content by using sensitivity labels to apply encryption"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,7 +17,7 @@ search.appverid:
 description: "When you create a sensitivity label, you can restrict access to content that the label will be applied to. Sensitivity labels can use encryption to protect content."
 ---
 
-# Restrict access to content by using encryption in sensitivity labels
+# Restrict access to content by using sensitivity labels to apply encryption 
 
 When you create a sensitivity label, you can restrict access to content that the label will be applied to. For example, with the encryption settings for a sensitivity label, you can protect content so that:
 
@@ -256,7 +256,7 @@ For the best collaboration experience for files that are encrypted by a sensitiv
 
 Before you can use encryption, you might need to do some configuration tasks.
 
-### Activating protection from Azure Information Protection
+### Activate protection from Azure Information Protection
 
 For sensitivity labels to apply encryption, the protection service (Azure Rights Management) from Azure Information Protection must be activated for your tenant. In newer tenants, this is the default setting, but you might need to manually activate the service. For more information, see [Activating the protection service from Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
 
