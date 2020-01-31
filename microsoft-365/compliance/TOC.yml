@@ -452,6 +452,8 @@
               href: tagging-documents.md
             - name: Set up attorney-client privilege detection
               href: attorney-privilege-detection.md
+            - name: Use the review set dashboard (preview)
+              href: advanced-ediscovery-dashboard.md
         - name: Analyze case data
           href: analyzing-data-in-review-set.md
           items: 
@@ -492,6 +494,8 @@
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: Conversation review sets
               href: conversation-review-sets.md
+            - name: Advanced eDiscovery reports (preview)
+              href: advanced-ediscovery-reports.md
             - name: Troubleshoot AzCopy
               href: troubleshooting-azcopy.md
     - name: Manage eDiscovery cases
