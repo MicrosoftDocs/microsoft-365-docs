@@ -32,7 +32,7 @@ When a document or email is encrypted, access to the content is restricted, so t
 - Remains encrypted no matter where it resides, inside or outside your organization, even if the file’s renamed.
 - Is encrypted both at rest (for example, in a OneDrive account) and in transit (for example, a sent email).
 
-Finally, as an admin, when you create a sensitivity label, you can choose either to:
+Finally, as an admin, when you configure a sensitivity label to apply encryption, you can choose either to:
 
 - **Assign permissions now**, so that you determine exactly which users get which permissions to content with that label.
 - **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
@@ -56,11 +56,15 @@ When you [create or edit a sensitivity label](create-sensitivity-labels.md#creat
 > [!NOTE]
 > The **Remove** option is supported by the Azure Information Protection unified labeling client only. When you use built-in labeling, a label with this option displays and if selected, the encryption behavior is the same as **None**.
 
-## What happens to existing encryption when a label's applied
+### What happens to existing encryption when a label's applied
 
-Before a sensitivity label is applied to content, it's possible that the content is already encrypted.
+If a sensitivity label is applied to unencrypted content, the outcome of the encryption options you can select is self-explanatory:
 
-For example, another user might have applied:
+- **None**: The content isn't encrypted.
+- **Apply**: The content is encrypted according to the encryption settings.
+- **Remove**: The content isn't encrypted (no encryption to remove).
+
+However, the outcome is more complicated if the content is already encrypted. For example, another user might have applied:
 
 - Their own permissions, which include user-defined permissions when prompted by a label, custom permissions by the Azure Information Protection client, and the **Restricted Access** document protection from within an Office app.
 - An Azure Rights Management protection template that encrypts the content independently from a label.
@@ -68,7 +72,7 @@ For example, another user might have applied:
 
 The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
 
-| |**User applies a sensitivity label with encryption set to None**|**User applies a sensitivity label with encryption set to Apply**|**User applies a sensitivity label with encryption set to Remove**|
+| |**Encryption: None**|**Encryption: Apply**|**Encryption: Remove**|
 |:-----|:-----|:-----|:-----|
 |**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
