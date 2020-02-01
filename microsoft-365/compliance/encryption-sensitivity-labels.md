@@ -54,7 +54,7 @@ When you [create or edit a sensitivity label](create-sensitivity-labels.md#creat
 - **Remove**: Removes encryption if the document or email is encrypted.
 
 > [!NOTE]
-> The **Remove** option is supported by the Azure Information Protection unified labeling client only. When you use built-in labeling, a label with this option displays and if selected, the encryption behavior is the same as **None**.
+> The **Remove** option is supported by the Azure Information Protection unified labeling client only. When you use built-in labeling, a label with this option is visible in Office apps and if selected, the encryption behavior is the same as **None**.
 
 ![Sensitivity label options for encryption](media/encrytion-options-sensitivity-label.png)
 
