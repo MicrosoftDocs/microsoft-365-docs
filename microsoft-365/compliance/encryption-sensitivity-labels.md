@@ -56,6 +56,9 @@ When you [create or edit a sensitivity label](create-sensitivity-labels.md#creat
 > [!NOTE]
 > The **Remove** option is supported by the Azure Information Protection unified labeling client only. When you use built-in labeling, a label with this option displays and if selected, the encryption behavior is the same as **None**.
 
+![Sensitivity label options for encryption](media/encrytion-options-sensitivity-label.png)
+
+
 ### What happens to existing encryption when a label's applied
 
 If a sensitivity label is applied to unencrypted content, the outcome of the encryption options you can select is self-explanatory. For example, if encryption is set to **None**, the content remains unencrypted.
