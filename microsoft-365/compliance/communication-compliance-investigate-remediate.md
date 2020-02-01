@@ -1,5 +1,5 @@
 ---
-title: "Investigate and remediate communication compliance alerts (preview)"
+title: "Investigate and remediate communication compliance alerts"
 description: "Investigate and remediate communication compliance alerts in Microsoft 365."
 f1.keywords:
 - NOCSH
@@ -18,10 +18,9 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-
 ---
 
-# Investigate and remediate communication compliance alerts (preview)
+# Investigate and remediate communication compliance alerts
 
 After you've configured your communication compliance policies, you'll start to receive alerts in the Microsoft 365 compliance center for message issues that match your policy conditions. Follow the workflow instructions here to investigate and remediate alert issues.
 
@@ -66,7 +65,7 @@ For a complete list of filters and field details, see [Filters](communication-co
 
 ### Using near and exact duplicate analysis
 
-Communication compliance policies automatically scan and pre-group near and exact message duplicates without any additional configuration steps. This allows you to quickly remediate similar messages one-by-one or as a group, reducing the message investigation burden for reviewers. As duplicates are detected, the **Near Duplicates** and/or the **Exact Duplicates** controls are displayed in the remediation action toolbar.
+Communication compliance policies automatically scan and pre-group near and exact message duplicates without any additional configuration steps. This view allows you to quickly remediate similar messages one-by-one or as a group, reducing the message investigation burden for reviewers. As duplicates are detected, the **Near Duplicates** and/or the **Exact Duplicates** controls are displayed in the remediation action toolbar.
 
 #### To remediate duplicates
 
@@ -112,5 +111,6 @@ No matter where you start to review alerts or the filtering you configure, the n
     - **Tag as**: Tag the message as *compliant*, *non-compliant*, or as *questionable* as it relates to the policies and standards for your organization. Adding tags and tagging comments can help you micro-filter policy alerts for escalations or as part of other internal review processes. After tagging is complete, you can also choose to resolve the message to move it out of the pending review queue.
     - **Notify**: You can use the **Notify** control to assign a custom notice template to the alert and to send a warning notice to the user. Choose the appropriate notice template, and select **Send** to email a reminder to the employee that sent the message and to resolve the issue.
     - **Escalate**: Using the **Escalate** control, you can choose who else in your organization should review the message. Choose from a list of configured reviewers to send an email notification requesting additional review of the message alert. The selected reviewer can use a link in the email notification to go directly to items escalated to them for review.
+    - **Create a case**: Using the **Create a case** control, you can create a new [Advanced eDiscovery case](overview-ediscovery-20.md) for single or multiple messages. You'll provide a name and notes for the new case, and user who sent the message matching the policy is automatically assigned as the case custodian. You don't need any additional permissions to manage the case. Creating a case does not resolve or create a new tag for the message.
 
 4. **Determine if message details should be archived outside of communication compliance**: Message details can be exported or downloaded if you need to archive the messages in a separate storage solution. Selecting the **Download** control automatically adds selected messages to a .ZIP file that can be saved to storage outside of Microsoft 365.
