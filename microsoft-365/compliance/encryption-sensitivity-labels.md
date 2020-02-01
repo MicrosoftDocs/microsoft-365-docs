@@ -56,6 +56,8 @@ When you [create or edit a sensitivity label](create-sensitivity-labels.md#creat
 > [!NOTE]
 > The **Remove** option is supported by the Azure Information Protection unified labeling client only. When you use built-in labeling, a label with this option is visible in Office apps and if selected, the encryption behavior is the same as **None**.
 
+Configuring the encryption options:
+
 ![Sensitivity label options for encryption](media/encrytion-options-sensitivity-label.png)
 
 
@@ -102,6 +104,8 @@ For example, if you have a sensitivity label named **Highly Confidential** that 
 
 Alternatively, if you have a sensitivity label named **Business Contracts**, and your organization's workflow requires that your people collaborate on this content with different people on an ad hoc basis, you might want to allow your users to decide who gets permissions when they assign the label. This flexibility both helps your users' productivity and reduces the requests for your admins to update or create new sensitivity labels to address specific scenarios.
 
+Choosing whether to assign permissions now or let users assign permissions: 
+
 ![Option to add user or admin defined permissions](media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 
@@ -112,6 +116,8 @@ Use the following options to control who can access email or documents to which 
 1. **Allow access to labeled content to expire**, either on a specific date or after a specific number of days after the label is applied. After this time, users won’t be able to open the labeled item. If you specify a date, it is effective midnight on that date in your current time zone. (Note that some email clients might not enforce expiration and show emails past their expiration date, due to their caching mechanisms.)
 
 2. **Allow offline access** never, always, or for a specific number of days after the label is applied. If you restrict offline access to never or a number of days, when that threshold is reached, users must be reauthenticated and their access is logged. For more information, see the next section on the Rights Management use license.
+
+Settings for access control for encrypted content:
 
 ![Settings for admin defined permissions](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
@@ -132,6 +138,8 @@ You can grant permissions to specific people so that only they can interact with
 1. First, add users or groups that will be assigned permissions to the labeled content.
 
 2. Then, choose which permissions those users should have for the labeled content.
+
+Assigning permissions:
 
 ![Options to assign permissions to users](media/Sensitivity-Assign-permissions-settings.png)
 
