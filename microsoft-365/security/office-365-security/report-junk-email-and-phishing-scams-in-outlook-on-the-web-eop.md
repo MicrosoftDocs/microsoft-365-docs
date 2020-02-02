@@ -33,7 +33,7 @@ To submit a junk mail message to Microsoft:
    > [!NOTE]
    > Alternatively, right-click a message to display a menu, and click **Mark as junk**.
 
-   You can report a junk message from your **Inbox**, **Clutter**, or **Deleted Items** folder.
+   You can report a junk message from your **Inbox** or **Deleted Items** folder.
 
 2. A dialog box opens asking if you want to send a copy of the junk email message to Microsoft for analysis. Click **report** to send the message to the Microsoft Spam Analysis Team. Optionally, select the **Don't show me this message again** check box if you want to automatically submit future junk messages to Microsoft without being prompted.
 
@@ -52,7 +52,7 @@ To submit a phishing scam message to Microsoft:
 
    Alternatively, right-click a message to display a menu, and click **Mark as Phishing**.
 
-   You can report a phishing scam message from your **Inbox**, **Clutter**, or **Deleted Items** folder.
+   You can report a phishing scam message from your **Inbox** or **Deleted Items** folder.
 
 2. For some organizations, a dialog box opens asking if you want to send a copy of the phishing scam email to Microsoft for analysis. Click **report** to send the message to the Microsoft Spam Analysis Team. This reporting option is currently available to a limited number of organizations; you might not be asked to report a phishing scam to Microsoft.
 
