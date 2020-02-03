@@ -27,13 +27,13 @@ With Office 365 Message Encryption, your organization can send and receive encry
 
 ## Important updates to OME to enhance email authenticity - Action required
 
-We are rolling out improvements to OME that enhance the mail authenticity of OME emails by changing the sender addresses used by OME. Without these improvements, some organizations were rejecting system-generated mail from OME, such as one-time pass code mail and portal replies, because the sender address was from the domain messaging.onmicrosoft.com. With this change, these system-generated mails will be sent from your organization's custom domains instead of onmicrosoft.com. In order to implement this improvement, you must update your mail flow rules.
+Starting February, 2020, we are rolling out improvements to OME that enhance the mail authenticity of OME emails by changing the sender addresses used by OME. Without these improvements, some organizations were rejecting system-generated mail from OME, such as one-time pass code mail and portal replies, because the sender address was from the domain messaging.onmicrosoft.com. With this change, these system-generated mails will be sent from your organization's custom domains instead of onmicrosoft.com. In order to implement this improvement, you must update your mail flow rules.
 
 For Exchange Online, you need to update each mail flow rule that is looking for the old OME email addresses, or any address from outside your organization, to look for the new OME addresses. Since the new OME (one-time pass code and portal reply) emails are coming from your custom domain, they no longer qualify as coming from outside the organization.
 
 If you're using third-party solutions that work with with Exchange on-premises or Exchange Online, you'll need to update all your old OME rules to reflect the new OME email addresses. For example, if you had whitelisted the previous OME email addresses, you will need to add the new emails to the list of whitelisted emails.
 
-One-time pass code sender address
+One-time pass code sender address:
 
 - Old address: ``onetimepasscode@messaging.onmicrosoft.com``
 
