@@ -1,5 +1,7 @@
 ---
 title: Manage self-service purchases (Admins)
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe

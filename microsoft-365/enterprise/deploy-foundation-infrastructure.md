@@ -1,6 +1,8 @@
 ---
 title: "Microsoft 365 for enterprise foundation infrastructure"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/19/2019

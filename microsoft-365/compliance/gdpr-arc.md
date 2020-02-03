@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, G
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi

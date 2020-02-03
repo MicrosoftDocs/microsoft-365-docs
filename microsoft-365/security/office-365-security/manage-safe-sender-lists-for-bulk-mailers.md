@@ -1,5 +1,7 @@
 ---
 title: "Manage safe sender lists for bulk mailers"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

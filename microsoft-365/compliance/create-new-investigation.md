@@ -1,5 +1,7 @@
 ---
 title: "Create a new investigation in Data Investigations (Preview)"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

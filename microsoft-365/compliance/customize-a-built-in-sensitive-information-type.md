@@ -1,5 +1,7 @@
 ---
 title: "Customize a built-in sensitive information type"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

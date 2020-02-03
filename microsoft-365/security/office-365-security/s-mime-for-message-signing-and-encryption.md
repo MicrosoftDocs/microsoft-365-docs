@@ -1,5 +1,7 @@
 ---
 title: "S/MIME for message signing and encryption in Exchange Online"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

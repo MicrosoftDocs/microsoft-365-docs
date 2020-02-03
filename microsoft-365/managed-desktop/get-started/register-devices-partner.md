@@ -3,6 +3,8 @@ title: Steps for Partners to register devices
 description: How Partners can register devices so they can be managed by Microsoft Managed Desktop
 ms.prod: w10
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
 ---

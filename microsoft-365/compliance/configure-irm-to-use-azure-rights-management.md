@@ -1,5 +1,7 @@
 ---
 title: "Configure IRM to use Azure Rights Management"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Office 365 encryption chains"
+f1.keywords:
+- NOCSH
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi

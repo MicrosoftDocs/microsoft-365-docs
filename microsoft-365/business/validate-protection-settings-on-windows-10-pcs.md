@@ -1,5 +1,7 @@
 ---
 title: "Validate app protection settings on Windows 10 PCs"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

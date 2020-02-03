@@ -1,5 +1,7 @@
 ---
 title: "Unverified Sender"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -67,7 +69,7 @@ For the '?' in the sender image: As a sender, you should authenticate your messa
 
 For the via tag: As a sender, you should ensure that either the domain in the DKIM signature or the SMTP MAIL FROM is the same as, or is a subdomain of, the domain in the From address.
 
-### Does Outlook.com and Outlook on the web show this for every message that doesn’t pass authentication?
+### Does Outlook.com and Outlook on the web show this for every message that doesn't pass authentication?
 
 Not necessarily. Outlook.com and Outlook on the web may have other properties within the message to authenticate the sender.
 

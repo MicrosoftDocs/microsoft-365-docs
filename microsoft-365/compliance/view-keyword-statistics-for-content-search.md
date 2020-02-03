@@ -1,5 +1,7 @@
 ---
 title: "View keyword statistics for Content Search results"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

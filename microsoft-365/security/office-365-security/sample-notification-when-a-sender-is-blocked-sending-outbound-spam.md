@@ -1,5 +1,7 @@
 ---
 title: "Sample notification when a sender is blocked sending outbound spam"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
