@@ -211,6 +211,8 @@ When the options are supported, use the following table to identify when users s
 |**In Outlook, enforce restrictions equivalent to the Do Not Forward option**|Yes |No |
 |**In Word, PowerPoint, and Excel, prompt users to specify permissions**|No |Yes|
 
+When both settings are selected, the label is therefore visible in both Outlook and in Word, Excel, and PowerPoint.
+
 A sensitivity label that lets users assign permissions can be applied to content only manually by users; it can't be auto-applied or used as a recommended label.
 
 Configuring the user-assigned permissions:
