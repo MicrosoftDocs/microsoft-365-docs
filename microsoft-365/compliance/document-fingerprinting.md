@@ -1,5 +1,7 @@
 ---
 title: "Document Fingerprinting"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

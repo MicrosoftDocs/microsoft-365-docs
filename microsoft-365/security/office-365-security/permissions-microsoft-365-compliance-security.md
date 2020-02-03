@@ -1,5 +1,7 @@
 ---
 title: "Permissions in the Microsoft 365 compliance center and Microsoft 365 security center"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi

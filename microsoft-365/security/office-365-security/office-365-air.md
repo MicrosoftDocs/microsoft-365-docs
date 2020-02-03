@@ -1,6 +1,8 @@
 ---
 title: "Automatically investigate and respond to threats in Office 365"
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp

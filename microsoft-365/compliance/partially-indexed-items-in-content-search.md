@@ -1,5 +1,7 @@
 ---
 title: "Partially indexed items in Content Search in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Create a communications site"
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv

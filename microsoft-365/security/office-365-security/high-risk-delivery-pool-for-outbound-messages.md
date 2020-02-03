@@ -1,5 +1,7 @@
 ---
 title: "High-risk delivery pool for outbound messages"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

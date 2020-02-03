@@ -1,5 +1,7 @@
 ---
 title: "What is the difference between device and app management"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

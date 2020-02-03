@@ -1,5 +1,7 @@
 ---
 title: "Use mail flow rules to see what your users are reporting to Microsoft"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

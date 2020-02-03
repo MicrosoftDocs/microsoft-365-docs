@@ -1,5 +1,7 @@
 ﻿---
 title: Step 1 - Device and App Readiness
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

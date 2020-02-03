@@ -1,5 +1,7 @@
 ---
 title: Close your account
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe

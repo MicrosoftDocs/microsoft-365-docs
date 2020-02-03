@@ -1,5 +1,7 @@
 ---
 title: "Step 2: Secure your passwords"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

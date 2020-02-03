@@ -1,5 +1,7 @@
 ---
 title: "Export a Content Search report"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

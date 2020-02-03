@@ -1,5 +1,7 @@
 ---
 title: "Office 365 Encryption Risks and Protections"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi

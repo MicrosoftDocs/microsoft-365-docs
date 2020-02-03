@@ -1,5 +1,7 @@
 ---
 title: "Monitor for leaks of personal data"
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -25,21 +27,21 @@ There are many tools that can be used to monitor the use and transport of person
 
 In the illustration:
 
-- Start with Office 365 data loss prevention reports for monitoring personal data in SharePoint Online, OneDrive for Business, and email in transit. These provide the greatest level of detail for monitoring personal data. However, these reports don’t include all services in Office 365.
+- Start with Office 365 data loss prevention reports for monitoring personal data in SharePoint Online, OneDrive for Business, and email in transit. These provide the greatest level of detail for monitoring personal data. However, these reports don't include all services in Office 365.
 
 - Next, use alert policies and the Office 365 audit log to monitor activity across Office 365 services. Setup ongoing monitoring or search the audit log to investigate an incident. The Office 365 audit log works across Office 365 services — Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, Admin activity, OneDrive for Business, SharePoint Online, mail in transit, and mailboxes at rest. Skype conversations are included in mailboxes at rest.
 
-- Finally, Use Microsoft Cloud App Security to monitor files with sensitive data in other SaaS providers. Coming soon is the ability to use Office 365 sensitive information types and unified labels across Azure Information Protection and Office with Cloud App Security. You can setup policies that apply to all of your SaaS apps or specific apps (like Box). Cloud App Security doesn’t discover files in Exchange Online, including files attached to email.
+- Finally, Use Microsoft Cloud App Security to monitor files with sensitive data in other SaaS providers. Coming soon is the ability to use Office 365 sensitive information types and unified labels across Azure Information Protection and Office with Cloud App Security. You can setup policies that apply to all of your SaaS apps or specific apps (like Box). Cloud App Security doesn't discover files in Exchange Online, including files attached to email.
 
 ## Office 365 data loss prevention reports
 
-After you create your data loss prevention (DLP) policies, you’ll want to verify that they’re working as you intended and helping you to stay compliant. With the DLP reports in Office 365, you can quickly view the number of DLP policy matches, overrides, or false positives; see whether they’re trending up or down over time; filter the report in different ways; and view additional details by selecting a point on a line on the graph.
+After you create your data loss prevention (DLP) policies, you'll want to verify that they're working as you intended and helping you to stay compliant. With the DLP reports in Office 365, you can quickly view the number of DLP policy matches, overrides, or false positives; see whether they're trending up or down over time; filter the report in different ways; and view additional details by selecting a point on a line on the graph.
 
 You can use the DLP reports to:
 
 - Focus on specific time periods and understand the reasons for spikes and trends.
 
-- Discover business processes that violate your organization’s DLP policies.
+- Discover business processes that violate your organization's DLP policies.
 
 - Understand any business impact of the DLP policies.
 
@@ -111,9 +113,9 @@ These attribute types are coming soon to Cloud App Security:
 
 ### Cloud App Security dashboard
 
-If you haven’t yet started to use Cloud App Security, begin by starting it up. To access Cloud App Security: <https://portal.cloudappsecurity.com>.
+If you haven't yet started to use Cloud App Security, begin by starting it up. To access Cloud App Security: <https://portal.cloudappsecurity.com>.
 
-Note: Be sure to enable ‘Automatically scan files for Azure Information Protection classification labels’ (in General settings) when getting started with Cloud App Security or before you assign labels. After setup, Cloud App Security does not scan existing files again until they are modified.
+Note: Be sure to enable 'Automatically scan files for Azure Information Protection classification labels' (in General settings) when getting started with Cloud App Security or before you assign labels. After setup, Cloud App Security does not scan existing files again until they are modified.
 
 ![Dashboard showing information about alerts](../media/Monitor-for-leaks-of-personal-data-image4.png)
 
@@ -167,7 +169,7 @@ Alert when a file containing a credit card number is shared from an approved clo
 <tr class="odd">
 <td align="left">Content inspection</td>
 <td align="left"><p>Includes files that match a present expression: All countries: Finance: Credit card number</p>
-<p>Don’t require relevant context: unchecked (this will match keywords as well as regex)</p>
+<p>Don't require relevant context: unchecked (this will match keywords as well as regex)</p>
 <p>Includes files with at least 1 match</p>
 <p>Unmask the last 4 characters of the violation: checked</p></td>
 </tr>

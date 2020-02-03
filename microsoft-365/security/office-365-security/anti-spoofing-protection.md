@@ -1,5 +1,7 @@
 ---
 title: "Anti-spoofing protection in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTtracyp
 manager: dansimp

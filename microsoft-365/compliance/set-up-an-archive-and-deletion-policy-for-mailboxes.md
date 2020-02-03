@@ -1,5 +1,7 @@
 ---
 title: "Set up an archive and deletion policy for mailboxes in your Office 365 organization"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Delegated administration FAQ"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

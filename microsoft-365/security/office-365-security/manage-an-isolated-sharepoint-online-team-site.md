@@ -1,5 +1,7 @@
 ---
 title: "Manage an isolated SharePoint Online team site"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
