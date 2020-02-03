@@ -1,5 +1,7 @@
 ---
 title: "Secure Windows 10 computers"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -34,7 +36,7 @@ If you found this video helpful, check out the [complete training series for sma
 ## To secure your Windows 10 PCs
 
 1. Sign in to [Microsoft 365 admin center](https://admin.microsoft.com) by using your global admin credentials. 
-2. On the left nav, select **Setup** and then, under **Sing-in and security**, choose **Secure your Windows 10 computers**. Choose **View** to get started.
+2. On the left nav, select **Setup** and then, under **Sign-in and security**, choose **Secure your Windows 10 computers**. Choose **View** to get started.
 3. On the **Secure your Windows 10 computers** page, read all the information to understand what you are turning on, and what the user impact is.
 
     On the top of the page, choose **Get started**.

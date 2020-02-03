@@ -1,5 +1,7 @@
 ---
 title: "Remove company data from devices"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

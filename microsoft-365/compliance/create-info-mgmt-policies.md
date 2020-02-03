@@ -1,5 +1,7 @@
 ---
 title: "Create and apply information management policies"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

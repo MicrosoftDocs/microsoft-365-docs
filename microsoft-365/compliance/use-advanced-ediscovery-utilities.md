@@ -1,5 +1,7 @@
 ---
 title: "Use Office 365 Advanced eDiscovery utilities"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Deploy teams for three tiers of protection for files"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

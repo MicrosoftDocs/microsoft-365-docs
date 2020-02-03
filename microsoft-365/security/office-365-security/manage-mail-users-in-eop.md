@@ -1,5 +1,7 @@
 ---
 title: "Manage mail users in EOP"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

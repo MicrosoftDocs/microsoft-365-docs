@@ -1,5 +1,7 @@
 ---
 title: "Set up Office 365 ATP Safe Attachments policies"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -88,6 +90,7 @@ As you set up your ATP Safe Attachments policies, you choose from among many opt
 |**Replace**|Removes detected malware attachments  <br/> Notifies recipients that attachments have been removed  <br/> Sends messages with detected malware to [quarantine in Office 365](manage-quarantined-messages-and-files.md) where a security administrator or analyst can review and release (or delete) those messages|Raise visibility to recipients that attachments were removed because of detected malware|
 |**Dynamic Delivery**|Delivers messages immediately  <br/> Replaces attachments with a placeholder file until scanning is complete, and then reattaches the attachments if no malware is detected  <br/> Includes attachment previewing capabilities for most PDFs and Office files during scanning  <br/> Sends messages with detected malware to Quarantine where a security administrator or analyst can review and release (or delete) those messages  <br/> [Learn about Dynamic Delivery and previewing with ATP Safe Attachments](dynamic-delivery-and-previewing.md) <br/> |Avoid message delays while protecting recipients from malicious files  <br/> Enable recipients to preview attachments in safe mode while scanning is taking place|
 |**Enable redirect**|Applies when the Monitor, Block, or Replace option is chosen  <br/> Sends attachments to a specified email address where security administrators or analysts can investigate|Enable security administrators and analysts to research suspicious attachments|
+|**Apply the above selection if malware scanning for attachments times out or error occurs**|Applies the action configured for unasfe attachments to the attachments that cannot be scanned (due to time out or error)|
 
 ## Next steps
 

@@ -1,5 +1,7 @@
 ---
 title: "Configure S/MIME settings in Exchange Online for Outlook on the web"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

@@ -1,5 +1,7 @@
 ---
 title: "Security dashboard overview"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp

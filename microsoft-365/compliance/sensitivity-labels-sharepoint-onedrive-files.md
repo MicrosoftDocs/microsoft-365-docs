@@ -1,5 +1,7 @@
 ---
 title: "Enable sensitivity labels for Office files in SharePoint and OneDrive"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -19,7 +21,7 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 
 # Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)
 
-Previously, when you applied sensitivity labels that included encryption to Office files stored in SharePoint and OneDrive, the service couldn't process the content of these files. Coauthoring, eDiscovery, Data Loss Prevention, search, Delve, and other collaborative features didn't work under these circumstances. This preview enables these features:
+Before this preview, when you applied sensitivity labels that included encryption to Office files stored in SharePoint and OneDrive, the service couldn't process the content of these files. Coauthoring, eDiscovery, Data Loss Prevention, search, Delve, and other collaborative features didn't work under these circumstances. This preview enables these features when the encryption has been applied with a cloud-based key:
 
 - SharePoint recognizes sensitivity labels applied to Word, Excel, and PowerPoint files in SharePoint and OneDrive. SharePoint also enforces the settings that correspond with each label.
 
@@ -34,9 +36,16 @@ Previously, when you applied sensitivity labels that included encryption to Offi
   - FileSensitivityLabelChanged
   - FileSensitivityLabelRemoved
 
+> [!NOTE]
+> If encryption hasn't been applied with a cloud-based key but an on-premises key, a key management topology often referred to as "hold your own key" (HYOK), the SharePoint behavior doesn't change with this preview. 
+
 You can also now apply sensitivity labels to Microsoft Teams, Office 365 groups, and SharePoint sites. For more information about this separate preview, see [Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md).
 
 You always have the choice to opt out of this preview at any time.
+
+Watch the following video (no audio) to see these new capabilities in action:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
 ## Requirements
 

@@ -1,5 +1,7 @@
 ---
 title: "Step 3: Configure increased security for Microsoft 365"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

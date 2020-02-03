@@ -1,5 +1,7 @@
 ---
 title: "Protect work files when a mobile device is lost or stolen"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv

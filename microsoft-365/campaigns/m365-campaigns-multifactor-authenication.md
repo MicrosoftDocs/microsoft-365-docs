@@ -1,5 +1,7 @@
 ---
 title: "Set up multifactor authentication"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: samanro
 manager: scotv

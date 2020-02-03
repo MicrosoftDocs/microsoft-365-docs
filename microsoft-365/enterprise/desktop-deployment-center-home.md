@@ -1,5 +1,7 @@
 ﻿---
 title: Desktop Deployment Center
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

@@ -1,5 +1,7 @@
 ---
 title: "Slow mail flow rules insight"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

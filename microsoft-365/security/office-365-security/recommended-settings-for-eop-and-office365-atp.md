@@ -1,5 +1,7 @@
 ---
 title: "Microsoft recommendations for EOP and Office 365 ATP security settings, recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for ATP, setup ATP, setup EOP, configure ATP, configure EOP, security configuration"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 12/12/2019
@@ -90,7 +92,7 @@ There are several other parameters in the Anti-spam policy called Advanced Spam 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |Malware Detection Response|No|No|If malware is detected in an email attachment, the message will be quarantined and can be released only by an admin.|
-|"Common Attachment Type Filter" for blocking suspicious file types|On|On||
+|"Common Attachment Types Filter" for blocking suspicious file types|On|On||
 |Malware Zero-hour Auto Purge|On|On||
 |Notify internal senders of the undelivered message|Disabled|Disabled||
 |Notify external senders of the undelivered message|Disabled|Disabled||

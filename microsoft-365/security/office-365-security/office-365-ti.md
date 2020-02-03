@@ -1,5 +1,7 @@
 ---
 title: "Office 365 threat investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp

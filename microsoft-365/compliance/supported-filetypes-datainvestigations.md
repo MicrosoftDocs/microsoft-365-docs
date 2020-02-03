@@ -1,5 +1,7 @@
 ---
 title: "Supported file types in Data Investigations (Preview)"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

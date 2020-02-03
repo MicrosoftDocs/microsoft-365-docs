@@ -1,5 +1,7 @@
 ---
 title: "Manage how users access Office documents on mobile devices"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv

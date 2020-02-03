@@ -1,5 +1,7 @@
 ---
 title: "Clone a Content Search"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

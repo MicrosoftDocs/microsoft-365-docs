@@ -1,5 +1,7 @@
 ---
 title: "Walkthrough spoof intelligence insight"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

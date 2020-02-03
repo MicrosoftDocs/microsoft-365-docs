@@ -1,5 +1,7 @@
 ---
 title: "Create custom sensitive information types with Exact Data Match"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -294,6 +296,9 @@ During this phase, you set up a custom security group and user account, and set 
 > Before you begin this procedure, make sure that you are a member of the *EDM\_DataUploaders* security group and a local admin on your machine.
 
 1. Download and install the [EDM Upload Agent](https://go.microsoft.com/fwlink/?linkid=2088639). By default, the installation location should be C:\\Program Files\\Microsoft\\EdmUploadAgent.
+
+> [!TIP]
+> To a get a list out of the supported command parameters, run the agent no arguments. For example 'EdmUploadAgent.exe'.
 
 2. To authorize the EDM Upload Agent, open Windows Command Prompt (as an administrator), and then run the following command:
 
