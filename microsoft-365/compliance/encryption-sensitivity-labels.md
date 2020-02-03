@@ -229,7 +229,7 @@ Unencrypted Office documents that are attached to the email automatically inheri
 
 ### Word, PowerPoint, and Excel permissions
 
-In Word, PowerPoint, and Excel, when a user applies a sensitivity label that lets them assign permissions to a document, they are prompted to specify their choice of users and permissions.
+In Word, PowerPoint, and Excel, when a user applies a sensitivity label that lets them assign permissions to a document, they are prompted to specify their choice of users and permissions when the encryption is applied.
 
 For example, with the Azure Information Protection unified labeling client, users can:
 
@@ -238,6 +238,12 @@ For example, with the Azure Information Protection unified labeling client, user
 - Set an expiration date, after which the selected users cannot access the content. For more information, see the above section [Rights Management use license for offline access](#rights-management-use-license-for-offline-access).
 
 ![Options for user to protect with custom permissions](media/sensitivity-aip-custom-permissions-dialog.png)
+
+For built-in labeling, users see the same dialog box if they select the following:
+
+- Windows: **File** tab > **Info** > **Protect Document** > **Restrict Access** > **Restricted Access**
+
+- MacOS: **Review** tab > **Protection** > **Permissions** > **Restricted Access**
 
 
 ## Considerations for encrypted content
