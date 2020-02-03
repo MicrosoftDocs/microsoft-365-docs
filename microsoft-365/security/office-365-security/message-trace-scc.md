@@ -26,13 +26,9 @@ Message trace in the Security & Compliance Center improves upon the original mes
 
 ## Open message trace
 
-1. [Sign in to Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) with your work or school account.
+1. Open the Office 365 Security & Compliance Center at <https://protection.office.com>.
 
-2. Select the app launcher icon ![Office 365 app launcher icon](../media/0aaa6945-f9a4-4b13-bf5f-d5c5dbe978fb.png) in the upper-left and choose **Admin**.
-
-3. In the lower-left navigation, expand **Admin centers** and select **Security & Compliance**.
-
-4. In the **Security & Compliance** page that opens, expand **Mail flow**, and select **Message trace**.
+2. Expand **Mail flow**, and then select **Message trace**.
 
 ## Message trace page
 
