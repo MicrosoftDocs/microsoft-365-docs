@@ -1,6 +1,8 @@
 ---
 title: "Teams for highly regulated data"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 12/13/2019

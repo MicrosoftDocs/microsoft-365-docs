@@ -1,6 +1,8 @@
 ---
 title: "Microsoft 365 Service Resilience"
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: 

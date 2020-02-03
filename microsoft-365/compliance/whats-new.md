@@ -1,5 +1,7 @@
 ---
 title: "What's new in the Microsoft 365 compliance center"
+f1.keywords:
+- NOCSH
 ms.author: brendonb
 author: brendonb
 manager: laurawi

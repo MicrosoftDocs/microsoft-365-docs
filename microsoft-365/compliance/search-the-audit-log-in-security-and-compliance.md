@@ -1,5 +1,7 @@
 ---
 title: "Search the audit log in the Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -117,6 +119,7 @@ Be sure to read the following items before you start searching the Office 365 au
   |Microsoft Project|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power Apps|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Power BI|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Security & Compliance Center|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |SharePoint Online and OneDrive for Business|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -330,7 +333,7 @@ The following table describes the file and page activities in SharePoint Online 
 |(none)|FileModifiedExtended|This is related to the "Modified file" (FileModified) activity. A FileModifiedExtended event is logged when the same person continually modifies a file for an extended period (up to 3 hours). <br/><br/> The purpose of logging FileModifiedExtended events is to reduce the number of FileModified events that are logged when a file is continually modified. This helps reduce the noise of multiple FileModified records for what is essentially the same user activity, and lets you focus on the initial (and more important) FileModified event.|
 |Moved file|FileMoved|User moves a document from its current location on a site to a new location.|
 |(none)|FilePreviewed|User previews files on a SharePoint or OneDrive for Business site. These events typically occur in high volumes based on a single activity, such as viewing an image gallery.|
-|Performed search query|SearchQueryPerformed|User or system account performs a search in SharePoint or OneDrive for Business. Some common scenarios where a service account performs a search query include applying an eDiscovery hold or retention policy to sites and OneDrive accounts, and when retention or sensitivity labels are auto-applied to site content. In many of these cases, the name of the service account that's logged in the User field of the audit record is **app@sharepoint**. </br></br> **Tip:** The ApplicationDisplayName and EventData fields in the audit record for the Performed search query activity may help you identify the scenario or service that triggered this event.|
+|Performed search query|SearchQueryPerformed|User or system account performs a search in SharePoint or OneDrive for Business. Some common scenarios where a service account performs a search query include applying an eDiscovery hold or retention policy to sites and OneDrive accounts, and when retention or sensitivity labels are auto-applied to site content. In many of these cases, the name of the service account that's logged in the User field of the audit record is **app\@sharepoint**. </br></br> **Tip:** The ApplicationDisplayName and EventData fields in the audit record for the Performed search query activity may help you identify the scenario or service that triggered this event.|
 |Recycled all minor versions of file|FileVersionsAllMinorsRecycled|User deletes all minor versions from the version history of a file. The deleted versions are moved to the site's recycle bin.|
 |Recycled all versions of file|FileVersionsAllRecycled|User deletes all versions from the version history of a file. The deleted versions are moved to the site's recycle bin.|
 |Recycled version of file|FileVersionRecycled|User deletes a version from the version history of a file. The deleted version is moved to the site's recycle bin.|

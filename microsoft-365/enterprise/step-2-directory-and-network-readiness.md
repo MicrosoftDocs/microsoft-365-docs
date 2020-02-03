@@ -1,5 +1,7 @@
 ﻿---
 title: Step 2 - Directory and Network Readiness
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

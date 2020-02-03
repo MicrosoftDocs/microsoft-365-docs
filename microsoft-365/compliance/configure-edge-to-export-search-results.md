@@ -1,5 +1,7 @@
 ---
 title: "Use the Office 365 eDiscovery Export Tool in Microsoft Edge"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

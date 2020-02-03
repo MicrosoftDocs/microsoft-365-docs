@@ -1,5 +1,7 @@
 ---
 title: "Bulk edit Content Searches"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

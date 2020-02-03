@@ -1,5 +1,7 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 1: Microsoft Cybersecurity Briefing"
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp

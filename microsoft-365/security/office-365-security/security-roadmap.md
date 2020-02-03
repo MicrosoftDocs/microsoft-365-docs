@@ -1,5 +1,7 @@
 ---
 title: "Office 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond"
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi

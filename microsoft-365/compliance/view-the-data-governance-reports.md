@@ -1,5 +1,7 @@
 ---
 title: "View the data governance reports"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi

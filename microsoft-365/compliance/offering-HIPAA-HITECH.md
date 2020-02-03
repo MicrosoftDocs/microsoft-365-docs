@@ -5,6 +5,8 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -63,7 +65,7 @@ Learn about the benefits of HIPAA and the HITECH on the Microsoft Cloud: [Read t
 
 Get a head start on taking advantage of the benefits of the cloud for health data solutions with the Azure Security and Compliance Blueprint — HIPAA/HITRUST Health Data and AI. This blueprint provides tools and guidance to get you started building HIPAA/HITRUST solutions today.
 
-[Start using the Azure HIPAA/HITRUST Blueprint](https://aka.ms/healthblueprint)
+[Start using the Azure HIPAA/HITRUST Blueprint](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
 ## Frequently asked questions
 

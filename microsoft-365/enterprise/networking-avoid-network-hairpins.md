@@ -1,5 +1,7 @@
 ---
 title: "Step 3: Avoid network hairpins"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

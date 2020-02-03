@@ -1,5 +1,7 @@
 ---
 title: "SMTP Auth clients report"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

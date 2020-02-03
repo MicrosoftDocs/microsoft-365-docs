@@ -1,5 +1,7 @@
 ---
 title: "Configure permissions filtering for Content Search"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

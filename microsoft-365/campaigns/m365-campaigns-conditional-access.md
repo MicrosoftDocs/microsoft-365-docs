@@ -1,5 +1,7 @@
 ---
 title: "Set up conditional access policies"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

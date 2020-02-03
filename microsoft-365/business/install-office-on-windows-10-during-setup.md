@@ -1,5 +1,7 @@
 ---
 title: "Install Office on Windows 10 during setup"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv

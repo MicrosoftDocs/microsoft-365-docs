@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations"
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi

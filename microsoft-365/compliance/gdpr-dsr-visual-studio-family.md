@@ -8,6 +8,8 @@ ms.prod: visual-studio-family
 ms.topic: article
 ms.date: 05/24/2018
 author: robmazz
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 manager: laurawi
 ms.collection: 

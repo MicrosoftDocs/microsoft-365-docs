@@ -1,5 +1,7 @@
 ---
 title: "View email security reports in the Security &amp; Compliance Center, Compromised users, Encryption, Threat Protection Status, malware detections, Top malware, spam detection, sent and received email, user reported messages, read reports, detection, security data, security information"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp

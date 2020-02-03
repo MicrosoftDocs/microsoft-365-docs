@@ -1,5 +1,7 @@
 ---
 title: "Protect information"
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi

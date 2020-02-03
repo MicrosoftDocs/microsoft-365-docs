@@ -1,5 +1,7 @@
 ---
 title: "Help your users install Office on Windows 10 devices"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

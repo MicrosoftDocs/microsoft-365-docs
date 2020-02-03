@@ -1,5 +1,7 @@
 ---
 title: "Enable the Report Message add-in"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp

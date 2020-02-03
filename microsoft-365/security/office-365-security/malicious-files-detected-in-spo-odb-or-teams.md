@@ -1,5 +1,7 @@
 ---
 title: "View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
