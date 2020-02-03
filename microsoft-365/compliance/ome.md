@@ -45,6 +45,8 @@ OME replies from the OME portal:
 
 - New address: ``omeportal@<yourdomain.com>``
 
+If you route mail from Exchange Online through on-premises Exchange out to recipients who are external to your organization, some third-party systems are returning DMARC errors and not accepting the email. For example, gmail will return a DMARC error if you route your mail this way. To work around this problem, route email directly from Exchange Online to external recipients, bypassing Exchange on-premises.
+
 ## How Office 365 Message Encryption works
 
 The rest of this article applies to the new OME capabilities.
