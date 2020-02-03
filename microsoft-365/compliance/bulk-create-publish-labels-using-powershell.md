@@ -1,5 +1,7 @@
 ---
 title: "Bulk create and publish retention labels by using PowerShell"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 ms.date: 

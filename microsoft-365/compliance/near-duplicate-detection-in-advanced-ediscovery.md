@@ -1,5 +1,7 @@
 ---
 title: "Near duplicate detection"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

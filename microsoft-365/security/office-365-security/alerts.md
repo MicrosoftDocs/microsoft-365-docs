@@ -1,5 +1,7 @@
 ---
 title: "Alerts in the Office 365 Security &amp; Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Step 4: Configure Windows Information Protection"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

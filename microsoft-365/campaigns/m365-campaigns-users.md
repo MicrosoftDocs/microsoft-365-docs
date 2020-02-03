@@ -1,5 +1,7 @@
 ---
 title: "How Microsoft 365 for campaigns affects your users"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

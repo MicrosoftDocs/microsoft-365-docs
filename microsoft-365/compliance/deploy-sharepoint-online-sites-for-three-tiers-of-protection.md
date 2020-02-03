@@ -1,5 +1,7 @@
 ---
 title: "Deploy SharePoint Online sites for three tiers of protection"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

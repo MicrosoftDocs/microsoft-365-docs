@@ -1,5 +1,7 @@
 ---
 title: "Detect and Remediate Outlook rules and custom Forms Injections attacks in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Protect files in teams with sensitivity labels"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

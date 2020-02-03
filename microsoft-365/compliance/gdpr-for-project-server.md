@@ -1,6 +1,8 @@
 ---
 title: "GDPR for Project Server"
 description: "Learn about how to address GDPR requirements in on-premises Project Server."
+f1.keywords:
+- NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen

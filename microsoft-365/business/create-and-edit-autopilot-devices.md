@@ -1,5 +1,7 @@
 ---
 title: "Create and edit AutoPilot devices"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

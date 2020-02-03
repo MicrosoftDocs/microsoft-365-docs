@@ -1,5 +1,7 @@
 ---
 title: "Protect unmanaged Windows 10 PCs and Macs"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv

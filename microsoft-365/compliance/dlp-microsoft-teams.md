@@ -1,5 +1,7 @@
 ---
 title: "Data loss prevention and Microsoft Teams"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

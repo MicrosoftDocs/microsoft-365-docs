@@ -1,5 +1,7 @@
 ---
 title: "Microsoft 365 for campaigns"
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv

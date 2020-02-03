@@ -1,5 +1,7 @@
 ---
 title: "Configure the anti-spam policies"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

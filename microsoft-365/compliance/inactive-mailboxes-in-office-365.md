@@ -1,5 +1,7 @@
 ---
 title: "Overview of inactive mailboxes in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -78,7 +80,7 @@ Conversely, any archive policies (which are retention tags configured with a **M
   
 ## Creating an inactive mailbox
 
-To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license (or an Exchange Online Plan 1 license with an Exchange Online Archiving add-on license) so that a Litigation Hold or Office 365 retention policy can be applied to the mailbox before it's deleted. After the mailbox is deleted, any Exchange Online license associated with it will be available to assign to a new user. Inactive mailboxes don't require ongoing licenses.
+To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license (or an Exchange Online Plan 1 license with an Exchange Online Archiving add-on license) so that a Litigation Hold or Office 365 retention policy can be applied to the mailbox before it's deleted. After the mailbox is deleted, any Exchange Online license associated with it will be available to assign to a new user.
   
 The following table summarizes the process of making an inactive mailbox for different retention scenarios. For more information, see [Manage inactive mailboxes in Office 365](create-and-manage-inactive-mailboxes.md).
   
