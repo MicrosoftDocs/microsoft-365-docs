@@ -113,7 +113,7 @@ To configure DKIM, you will complete these steps:
 
 For each domain for which you want to add a DKIM signature in DNS, you need to publish two CNAME records.
 
-Run the following commands:
+Run the following commands to create the selector records:
 
 ```powershell
     New-DkimSigningConfig -DomainName <domain> -Enabled $false
@@ -125,8 +125,6 @@ Create CNAMEs referenced in Get-DkimSigningConfig output
 ```powershell
     Set-DkimSigningConfig -Identity <domain> -Enabled $true
 ```
-
-The CNAME records in your DNS will point to already created DKIM TXT records that exist in DNS on the Microsoft DNS servers for Office 365.
 
 Office 365 performs automatic key rotation using the two records that you establish. If you have provisioned custom domains in addition to the initial domain in Office 365, you must publish two CNAME records for each additional domain. So, if you have two domains, you must publish two additional CNAME records, and so on.
 
@@ -176,6 +174,9 @@ Host name:			selector2._domainkey
 Points to address or value:	selector2-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:				3600
 ```
+
+> [!NOTE]
+> Creating the second record is important to do but only one of the selectors may be available at the time of creation. In essence, the second selector may point to an address that has not been created yet. It is still recommended that the second CNAME record is created since it will come in handy when the keys rotate and, as an admin, there would be nothing to do and the rotation would be seamless.
 
 ### Enable DKIM signing for your custom domain in Office 365
 <a name="EnableDKIMinO365"> </a>
