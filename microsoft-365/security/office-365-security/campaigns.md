@@ -21,9 +21,6 @@ description: "Learn about Campaign Views in Office 365 Advanced Threat Protectio
 
 # Campaign Views in Office 365 ATP
 
-> [!NOTE]
-> The features described in this topic are currently in preview, and are subject to change.
-
 Campaign Views is a feature in Advanced Threat Protection (ATP) in the Office 365 Security & Compliance Center that identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
 
 - Efficiently investigate and respond to phishing attacks.
@@ -36,9 +33,9 @@ Campaign Views lets you see the big picture of an attack faster and more complet
 
 ## What is a campaign?
 
-A campaign is a coordinated email attack against one or many organizations. Today, email attacks that steal credentials and company data are a big and lucrative business. As technologies increase in an effort to stop attacks, attackers are sophisticated enough to modify their methods in an effort to ensure continued success.
+A campaign is a coordinated email attack against one or many organizations. Email attacks that steal credentials and company data are a big and lucrative industry. As technologies increase in an effort to stop attacks, attackers modify their methods in an effort to ensure continued success.
 
-Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data and experience across the entire Office 365 service world-wide to identify campaigns. The attack information is analyzed and classified according to several factors. For example:
+Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data and experience across the entire Office 365 service world-wide to help identify campaigns. The attack information is analyzed and classified according to several factors. For example:
 
 - **Attack source**: Source IP addresses and sender email domains.
 
@@ -50,11 +47,13 @@ Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malwa
 
 ## Campaign Views the Office 365 Security & Compliance Center
 
-Campaign Views is available in the [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center) at the following locations:
+Campaign Views is available in the [Security & Compliance Center](https://protection.office.com) at the following locations:
 
-- **Threat management** \> **Explorer** \> **View** \> **Phish** \> **Top campaign (Preview)**
+- **Threat management** \> **Campaigns** or **Threat management** \> **Explorer** \> **View** \> **Campaigns**
 
-- **Threat management** \> **Explorer** \> **View** \> **All email** \> **Top campaign (Preview)**
+
+
+- **Threat management** \> **Explorer** \> **View** \> **All email** \> **Campaign**
 
 ![Campaigns overview in the Security & Compliance Center](../media/campaigns-overview.png)
 
@@ -65,7 +64,7 @@ The overview page shows the following information about the campaign:
 
 - **Name**
 
-- **Sample subject**: The subject line of one of the messages in the campaign. Note that _all_ the messages in the campaign will not necessarily have this same subject line.
+- **Sample subject**: The subject line of one of the messages in the campaign. Note that all messages in the campaign will not necessarily have the same subject line.
 
 - **Type**: Currently, this value will always be **Phish**.
 
@@ -73,9 +72,13 @@ The overview page shows the following information about the campaign:
 
 - **Recipients**: The number of users that were targeted by this campaign.
 
-- **Delivered**: The number of users that received messages from this campaign into their Inbox.
+- **Inboxed**: The number of users that received messages from this campaign in their Inbox (not delivered to Junk).
 
-- **ID**: A unique identifier for the campaign.
+- **Clicked**
+
+- **Click Rate**
+
+- **Visited**
 
 When you click on the name of a campaign, the campaign details appears in a flyout.
 
@@ -85,11 +88,19 @@ In the campaign details view, a lot of information is available about the campai
 
 - Campaign information:
 
-  - **ID**: The same unique identifier of the campaign from the overview screen.
+  - **ID**: The unique campaign identifier.
 
   - **Started** and **Ended**: the date range filter you selected.
 
-  - **Impact**: the number of messages sent in the date range you selected, how many were "inboxed" (that is, delivered to the Inbox), and how many users clicked on the URL payload in the phishing message.
+  - **Impact**: The following data for the date range filter you selected:
+  
+    - The total number of recipients.
+
+    - The number of messages that were "Inboxed" (that is, delivered to the Inbox, not to Junk).
+
+    - How many users clicked on the URL payload in the phishing message.
+
+    - Howe many users visited the URL.
 
   - A timeline of campaign activity: When the campaign started and ended, and the volume of messages over time.
 
@@ -107,7 +118,7 @@ The diagram contains the following information:
 
 - **Sender domains**
 
-- **Filter verdicts**: The values here are related to the available anti-phishing and anti-spam filter verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). Of great interest here are the values **Tenant Allow**, which means a configured setting in the organization allowed a message through that would have been otherwise blocked by the service (for example, a domain in the Allowed Senders list).
+- **Filter verdicts**: The values here are related to the available anti-phishing and anti-spam filter verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). Of great interest here is the value **Tenant Allow**, which means a configured setting in the organization allowed a message through that would have otherwise been blocked by the service (for example, a domain in the Allowed Senders list).
 
   - **Tenant Block**: This value indicates that a setting in your organization (for example, a domain entry in the [Blocked Senders list](create-block-sender-lists-in-office-365.md)) both detected the message and determined where it was delivered. For messages that weren't quarantined, review your blocked senders settings to determine why the message was delivered.
 
@@ -115,7 +126,7 @@ The diagram contains the following information:
 
   - **Tenant Allow**
 
-- **Delivery locations**: You'll likely want to investigate messages that were actually delivered to recipients (either to the Inbox or the Junk Email folder), even if users didn't click on the payload URL in the message. You can also remove the quarantined messages from [Quarantine email messages in Office 365](quarantine-email-messages.md).
+- **Delivery locations**: You'll likely want to investigate messages that were actually delivered to recipients (either to the Inbox or the Junk Email folder), even if users didn't click on the payload URL in the message. You can also remove the quarantined messages from quarantine. For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
 
   - **Junk folder**
 
@@ -167,13 +178,11 @@ There are several tabs in the campaign details view that allow you to further in
 
   - **Total Count**
 
-  - **Inboxed Count**
+  - **Inboxed**
 
-  - **Blocked Count**
+  - **Not Inboxed**
 
-  - **DKIM Passed**
-
-  - **DMARC Passed**
+  - **SPF Passed**
 
 - **Payloads**
 
@@ -189,4 +198,4 @@ The buttons in the campaign details view allow you to use the power of Threat Ex
 
 - **Explore campaign**: Opens a new Threat Explorer search tab using the **Campaign ID** value as the search filter.
 
-- **Explore Inbox messages**: Opens a new Threat Explorer search tab using the **Campaign ID** and **Delivery location: Inbox** as the search filter.
+- **Explore Inboxed messages**: Opens a new Threat Explorer search tab using the **Campaign ID** and **Delivery location: Inbox** as the search filter.
