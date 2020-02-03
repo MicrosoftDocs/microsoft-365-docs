@@ -67,12 +67,6 @@
           href: privileged-access-management-overview.md
         - name: Configure privileged access management
           href: privileged-access-management-configuration.md
-    - name: Customer Key
-      items: 
-        - name: Controlling your data in Office 365 using Customer Key
-          href: controlling-your-data-using-customer-key.md
-        - name: Service encryption with Customer Key for Office 365 FAQ
-          href: service-encryption-with-customer-key-faq.md
     - name: Protect user and device access
       href: protect-access-to-data-and-services.md
     - name: Customer Lockbox
