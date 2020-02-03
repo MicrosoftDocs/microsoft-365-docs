@@ -1,5 +1,7 @@
 ---
 title: "Content Search in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -319,7 +321,7 @@ You can use the **ItemClass** email property or the **Type** search condition to
   
     For example, you can use the following search query to return Yammer messages and Yammer praise items:
 
-    ![Use the ItemClass property to seach for Yammer items](media/YammerContentSearch1.png)
+    ![Use the ItemClass property to search for Yammer items](media/YammerContentSearch1.png)
   
   - Alternatively, you can use the **Type** email condition and select **Yammer messages** to return Yammer items. For example, the following search query will return all Yammer conversation items that contain the keyword "confidential". 
 

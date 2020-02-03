@@ -1,5 +1,7 @@
 ---
 title: "Messaging policy and compliance in EOP"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

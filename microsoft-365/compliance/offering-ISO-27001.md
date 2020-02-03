@@ -5,6 +5,8 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +16,7 @@ hideEdit: true
 titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offerings: ISO/IEC 27001:2013 Information Security Management Standards
+# ISO/IEC 27001:2013 Information Security Management Standards
 
 ## ISO/IEC 27001 overview
 
@@ -39,6 +41,7 @@ Learn about the benefits of ISO-Iec-27001 on the Microsoft Cloud: [Download the 
 - Graph
 - Health Bot
 - Intune
+- Microsoft Managed Desktop
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - [Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 Germany
@@ -56,7 +59,7 @@ Audit cycle: Microsoft cloud services are audited at least annually against the 
 
 ### Azure
 
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream, and Microsoft Datacenter — ISO 27001 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2078342)
+- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, Microsoft Managed Desktop, OMS Service Map, PowerApps, Power BI, Stream, and Microsoft Datacenter — ISO 27001 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2078342)
 
 ### Office 365
 
@@ -84,7 +87,7 @@ Audit cycle: Microsoft cloud services are audited at least annually against the 
 
 ### Azure
 
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream, and Microsoft Datacenter — ISO 27001 and 27018 Audit Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2078010)
+- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, Microsoft Managed Desktop, OMS Service Map, PowerApps, Power BI, Stream, and Microsoft Datacenter — ISO 27001 and 27018 Audit Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2078010)
 - [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream, and Microsoft Datacenter — ISO 27001 and 27018 Statement of Applicability (SOA)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 ### Office 365

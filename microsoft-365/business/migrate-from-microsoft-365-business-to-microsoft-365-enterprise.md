@@ -1,5 +1,7 @@
 ---
 title: "Migrate from Microsoft 365 Business to Microsoft 365 E3"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -49,7 +51,6 @@ This table shows the differences between Microsoft 365 Business and Microsoft 36
 | Teams	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | OneDrive for Business	| 1 TB storage limit per user	| Unlimited | 
 | Yammer, SharePoint Online, Planner, Stream	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
-| StaffHub	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | Outlook Customer Manager, MileIQ	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| | 
 | **Threat Protection**		| | | 
 | Attack surface reduction capabilities	| [See this list](#threat-protection) | Enterprise management of hardware-based isolation for Microsoft Edge | 
@@ -72,7 +73,7 @@ This table shows the differences between Microsoft 365 Business and Microsoft 36
 | Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, Microsoft Endpoint Configuration Manager, Windows Rights Management)| | 		![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | **Compliance**		| | | 
 | Unlimited email archiving	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
-| Compliance Manager	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
+| Compliance Score/Compliance Manager	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | eDiscovery	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | In-place hold and litigation hold	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 
 | Messaging Records Management (MRM) retention tags and retention policies	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Microsoft 365 E3](./media/check-mark.png) | 

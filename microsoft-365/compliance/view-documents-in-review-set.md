@@ -1,5 +1,7 @@
 ---
 title: "View documents in a review set"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -80,3 +82,6 @@ The Annotate view provides features that allow users to apply markup on a docume
     
     ![Annotate view
     ](media/Reviewimage1.png)
+
+## Dashboard View 
+The dashboard view allows you to visualize and summarize the data in your search results grid. In this view, you can create custom widgets to make analyzing and reporting on your review set intuitive and easy. Once you have created your widgets, you can interact with them to get item counts or to create a search. 

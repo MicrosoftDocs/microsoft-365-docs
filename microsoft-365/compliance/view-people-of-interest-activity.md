@@ -1,5 +1,7 @@
 ---
 title: "View the audit activity of people of interest"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

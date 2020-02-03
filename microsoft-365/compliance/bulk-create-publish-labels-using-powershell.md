@@ -1,5 +1,7 @@
 ---
 title: "Bulk create and publish retention labels by using PowerShell"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 ms.date: 
@@ -178,7 +180,7 @@ Function Create-Log
     }
     $date = Get-Date -Format 'MMddyyyy_HHmmss'
     $logfilePath = "$logFolderPath\Log_{0}_{1}.txt" -f $LogFunction, $date
-    Write-Verbose "Log file is writen to: $logfilePath"
+    Write-Verbose "Log file is written to: $logfilePath"
     $logfile = New-Item $logfilePath  -type file
     return $logfilePath
 }
@@ -200,7 +202,7 @@ Function Create-ResultCSV
     }
     $date = Get-Date -Format 'MMddyyyy_HHmmss'
     $retfilePath = "$retFolderPath\Result_{0}_{1}.csv" -f $ResultFunction, $date
-    Write-Verbose "Result file is writen to: $retfilePath"
+    Write-Verbose "Result file is written to: $retfilePath"
     $retfile = New-Item $retfilePath  -type file
     return $retfilePath
 }

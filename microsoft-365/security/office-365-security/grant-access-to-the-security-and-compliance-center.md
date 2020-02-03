@@ -1,5 +1,7 @@
 ---
 title: "Give users access to the Office 365 Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

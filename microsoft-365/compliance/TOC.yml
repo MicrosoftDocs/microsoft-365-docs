@@ -34,17 +34,17 @@
           href: insider-risk-management-content-explorer.md
         - name: Add users to insider risk policies (preview)
           href: insider-risk-management-users.md
-        - name: Create insider risk notices (preview)
+        - name: Create insider risk notice templates (preview)
           href: insider-risk-management-notices.md
-    - name: Communication compliance (preview)
+    - name: Communication compliance
       items: 
-        - name: Learn about communication compliance (preview)
+        - name: Learn about communication compliance
           href: communication-compliance.md
-        - name: Configure communication compliance in Microsoft 365 (preview)
+        - name: Get started with communication compliance
           href: communication-compliance-configure.md
-        - name: Investigate and remediate communication compliance alerts (preview)
+        - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
-        - name: Feature reference for communication compliance (preview)
+        - name: Feature reference for communication compliance
           href: communication-compliance-feature-reference.md
         - name: Supervision policies in Office 365
           href: supervision-policies.md
@@ -150,8 +150,6 @@
           href: document-fingerprinting.md
         - name: DLP functions for sensitive information
           href: what-the-dlp-functions-look-for.md
-        - name: Watch an extended overview of customizing DLP
-          href: https://go.microsoft.com/fwlink/?linkid=852306
     - name: Email encryption
       href: email-encryption.md
       items: 
@@ -347,8 +345,6 @@
           href: csv-file-for-an-id-list-content-search.md
         - name: Use Content Search to search third-party data
           href: use-content-search-to-search-third-party-data-that-was-imported.md
-        - name: Use Content Search in your eDiscovery workflow
-          href: use-content-search-in-ediscovery.md
         - name: Check your Content Search query for errors
           href: check-your-content-search-query-for-errors.md
         - name: Retry a failed Content Search
@@ -456,6 +452,8 @@
               href: tagging-documents.md
             - name: Set up attorney-client privilege detection
               href: attorney-privilege-detection.md
+            - name: Use the review set dashboard (preview)
+              href: advanced-ediscovery-dashboard.md
         - name: Analyze case data
           href: analyzing-data-in-review-set.md
           items: 
@@ -496,6 +494,8 @@
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: Conversation review sets
               href: conversation-review-sets.md
+            - name: Advanced eDiscovery reports (preview)
+              href: advanced-ediscovery-reports.md
             - name: Troubleshoot AzCopy
               href: troubleshooting-azcopy.md
     - name: Manage eDiscovery cases
@@ -854,7 +854,7 @@
           href: offering-csa-star-attestation.md
         - name: CSA-STAR certification
           href: offering-csa-star-certification.md
-        - name: CSA-STAR self-Assessment
+        - name: CSA-STAR self-assessment
           href: offering-csa-star-self-assessment.md
         - name: ISO 20000-1-2011
           href: offering-iso-20000-1-2011.md
@@ -1013,7 +1013,7 @@
             - name: EAR (US Export Admin. Reg.)
               href: offering-ear.md
             - name: ENISA IAF (EU)
-              href: https://aka.ms/ENISA
+              href: offering-enisa.md
             - name: EU Model Clauses
               href: offering-eu-model-clauses.md
             - name: EBA (EU)
@@ -1090,6 +1090,8 @@
               href: https://aka.ms/TRUCS-Compliance
         - name: Australia / Pacific
           items: 
+            - name: APRA (Australia)
+              href: offering-APRA-Australia.md
             - name: IRAP/CCSL (Australia)
               href: offering-CCSL-IRAP-Australia.md
             - name: NZ CC Framework (New Zealand)
@@ -1107,7 +1109,7 @@
             - name: ENS (Spain)
               href: offering-ens-spain.md
             - name: ENISA IAF (EU)
-              href: https://aka.ms/ENISA
+              href: offering-enisa.md
             - name: EU Model Clauses
               href: offering-eu-model-clauses.md
             - name: EU U.S. Privacy Shield

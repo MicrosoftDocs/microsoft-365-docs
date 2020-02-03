@@ -1,5 +1,7 @@
 ---
 title: "Upgrade to Microsoft 365 Business from Office 365 Business Premium"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

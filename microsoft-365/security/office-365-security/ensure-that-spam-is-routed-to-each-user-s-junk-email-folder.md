@@ -1,5 +1,7 @@
 ---
 title: "Ensure that spam is routed to each user's Junk Email folder"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

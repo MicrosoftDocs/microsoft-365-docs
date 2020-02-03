@@ -1,5 +1,7 @@
 ---
 title: "Step 2: Configure classification for your environment"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Prepare for Office client deployment by Microsoft 365 Business"
+f1.keywords:
+- CSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

@@ -1,5 +1,7 @@
 ---
 title: "Team for a top-secret project of the Contoso Corporation"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

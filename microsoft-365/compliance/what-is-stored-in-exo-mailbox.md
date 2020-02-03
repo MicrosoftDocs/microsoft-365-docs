@@ -1,5 +1,7 @@
 ---
 title: "Content stored in Exchange Online mailboxes"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

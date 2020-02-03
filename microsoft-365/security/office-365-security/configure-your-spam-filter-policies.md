@@ -1,5 +1,7 @@
 ---
 title: "Configure your spam filter policies"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

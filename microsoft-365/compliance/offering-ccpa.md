@@ -5,6 +5,8 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -46,7 +48,7 @@ As set out in the OST, Microsoft complies with all laws and regulations applicab
 
 Here are a few steps you could take to get ready for the CCPA:
 
-- Start leveraging the GDPR assessment in Compliance Manager as part of your CCPA privacy program.
+- Start leveraging the GDPR assessment in [Compliance Score](compliance-score.md) as part of your CCPA privacy program.
 - Establish a process to efficiently respond to Data Subject Access Requests (DSARs) using the Data Subject Requests tool.
 - Set up label and policies to discover, classify & label, and protect sensitive data with Microsoft Information Protection.
 - Use email encryption capabilities to further control sensitive information.

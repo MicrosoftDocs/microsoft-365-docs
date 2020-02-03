@@ -7,6 +7,8 @@ ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
@@ -87,6 +89,9 @@ When an automated investigation completes, a verdict is reached for every piece 
 |Clean	|Devices or email content	|No remediation actions are needed|
 
 [Review a pending action in the Action center](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
+
+> [!TIP]
+> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
 ## Next steps
 

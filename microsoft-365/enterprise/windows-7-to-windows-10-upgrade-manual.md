@@ -1,5 +1,7 @@
 ---
 title: Windows 7 to Windows 10 manual upgrade guide
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

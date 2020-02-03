@@ -1,5 +1,7 @@
 ---
 title: "Add custodians to an Advanced eDiscovery case"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

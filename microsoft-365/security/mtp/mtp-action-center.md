@@ -7,6 +7,8 @@ ms.prod: M365-security-compliance
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
@@ -65,6 +67,10 @@ The following table lists remediation actions that are currently supported in th
     - If the investigation pertains to email content (such as, the entity is a mailbox), investigation details open in the Office 365 Security & Compliance Center ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
 
     - If the investigation involves a device, investigation details open in the security center ([https://security.microsoft.com](https://security.microsoft.com)). 
+
+
+> [!TIP]
+> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
 ## Required permissions for Action center tasks
 
