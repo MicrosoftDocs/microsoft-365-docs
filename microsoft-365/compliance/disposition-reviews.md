@@ -139,7 +139,9 @@ On the **Pending disposition** page, you can view both pending and completed dis
 
 ### Disposed records that didn't go through disposition review
 
-Records that were disposed of without a disposition review are identified by the type **Records Disposed**:
+Records that were disposed of without a disposition review are identified by the type **Records Disposed**. For example:
+
+![Records that were disposed of without a disposition review](media/records-disposed.png)
 
 Because this feature is gradually rolling out to tenants during February and March 2020, you might not see these records immediately. When you do, this disposition information is kept for up to 7 years after the item was disposed, with a limit of one million items per record for that period.
 
