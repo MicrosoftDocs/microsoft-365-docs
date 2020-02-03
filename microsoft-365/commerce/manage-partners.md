@@ -22,7 +22,7 @@ keywords: partner, solution provider
 
 You can work with Microsoft-certified solution providers (partners) to purchase and manage products and services for your organization or school. There are a few steps involved in getting things set up.
 
-- Admins find and contact a partner using the form at [https://www.microsoft.com/en-us/solution-providers/home](https://www.microsoft.com/en-us/solution-providers/home).
+- Admins find and contact a partner using the form at <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a>.
 - Partners send an email request to customers to establish a partner relationship.
 - Customers accept the invitation in Microsoft 365 admin center and start working with the partner.
 
