@@ -229,9 +229,9 @@ Unencrypted Office documents that are attached to the email automatically inheri
 
 ### Word, PowerPoint, and Excel permissions
 
-In Word, PowerPoint, and Excel, when a user applies a sensitivity label that lets them assign permissions to a document, they are prompted to protect the content as shown below.
+In Word, PowerPoint, and Excel, when a user applies a sensitivity label that lets them assign permissions to a document, they are prompted to specify their choice of users and permissions.
 
-The user can:
+For example, with the Azure Information Protection unified labeling client, users can:
 
 - Select a permission level, such as Viewer (which assigns View Only permission) or Co-Author (which assigns View, Edit, Copy, and Print permissions).
 - Select users, groups, or organizations. This can include people both inside or outside your organizations.
