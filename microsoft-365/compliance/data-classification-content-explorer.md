@@ -44,13 +44,15 @@ A [retention label](labels.md) allows you to define how long a labeled item is k
 
 ### Permissions
 
-There are two roles that grant access to Content explorer:
+There are two roles that grant access to content explorer:
 
-- **Content Explorer List viewer**: Membership in this role allows you to see each item and its location.
+- **Content Explorer List viewer**: Membership in this role group allows you to see each item and its location. The `data classification list viewer` role has been pre-assigned to this role group.
 
-- **Content Explorer Content viewer**: Membership in this role allows you to view the contents of each item in the list.
+- **Content Explorer Content viewer**: Membership in this role group allows you to view the contents of each item in the list. The `data classification content viewer` role has been pre-assigned to this role group.
 
-The account you use to access Content explorer must be in one or both of the roles. These are independent roles and are not cumulative. For example, if you want to grant an account the ability to view the items and their locations only, grant Content Explorer List viewer rights. If you want that same account to also be able to view the contents of the items in the list, grant Content Explorer Content viewer rights as well.
+The account you use to access content explorer must be in one or both of the role groups. These are independent role groups and are not cumulative. For example, if you want to grant an account the ability to view the items and their locations only, grant Content Explorer List viewer rights. If you want that same account to also be able to view the contents of the items in the list, grant Content Explorer Content viewer rights as well.
+
+You can also assign either or both of the roles to a custom role group to tailor access to content explorer.
 
 ### How to use content explorer
 

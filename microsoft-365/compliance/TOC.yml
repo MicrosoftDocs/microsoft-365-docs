@@ -36,15 +36,15 @@
           href: insider-risk-management-users.md
         - name: Create insider risk notice templates (preview)
           href: insider-risk-management-notices.md
-    - name: Communication compliance (preview)
+    - name: Communication compliance
       items: 
-        - name: Learn about communication compliance (preview)
+        - name: Learn about communication compliance
           href: communication-compliance.md
-        - name: Configure communication compliance in Microsoft 365 (preview)
+        - name: Get started with communication compliance
           href: communication-compliance-configure.md
-        - name: Investigate and remediate communication compliance alerts (preview)
+        - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
-        - name: Feature reference for communication compliance (preview)
+        - name: Feature reference for communication compliance
           href: communication-compliance-feature-reference.md
         - name: Supervision policies in Office 365
           href: supervision-policies.md
@@ -150,8 +150,6 @@
           href: document-fingerprinting.md
         - name: DLP functions for sensitive information
           href: what-the-dlp-functions-look-for.md
-        - name: Watch an extended overview of customizing DLP
-          href: https://go.microsoft.com/fwlink/?linkid=852306
     - name: Email encryption
       href: email-encryption.md
       items: 
@@ -454,6 +452,8 @@
               href: tagging-documents.md
             - name: Set up attorney-client privilege detection
               href: attorney-privilege-detection.md
+            - name: Use the review set dashboard (preview)
+              href: advanced-ediscovery-dashboard.md
         - name: Analyze case data
           href: analyzing-data-in-review-set.md
           items: 
@@ -494,6 +494,8 @@
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: Conversation review sets
               href: conversation-review-sets.md
+            - name: Advanced eDiscovery reports (preview)
+              href: advanced-ediscovery-reports.md
             - name: Troubleshoot AzCopy
               href: troubleshooting-azcopy.md
     - name: Manage eDiscovery cases
@@ -1088,6 +1090,8 @@
               href: https://aka.ms/TRUCS-Compliance
         - name: Australia / Pacific
           items: 
+            - name: APRA (Australia)
+              href: offering-APRA-Australia.md
             - name: IRAP/CCSL (Australia)
               href: offering-CCSL-IRAP-Australia.md
             - name: NZ CC Framework (New Zealand)
