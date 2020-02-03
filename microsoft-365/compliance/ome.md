@@ -33,6 +33,8 @@ For Exchange Online, you need to update each mail flow rule that is looking for 
 
 If you're using third-party solutions that work with with Exchange on-premises or Exchange Online, you'll need to update all your old OME rules to reflect the new OME email addresses. For example, if you had whitelisted the previous OME email addresses, you will need to add the new emails to the list of whitelisted emails.
 
+### Changes to OME email addresses
+
 One-time pass code sender address:
 
 - Old address: ``onetimepasscode@messaging.onmicrosoft.com``
@@ -44,6 +46,8 @@ OME replies from the OME portal:
 - Old address: ``omeportal@messaging.onmicrosoft.com``
 
 - New address: ``omeportal@<yourdomain.com>``
+
+### Errors routing mail from Exchange online through Exchange on-premises to external recipients
 
 If you route mail from Exchange Online through on-premises Exchange out to recipients who are external to your organization, some third-party systems are returning DMARC errors and not accepting the email. For example, gmail will return a DMARC error if you route your mail this way. To work around this problem, route email directly from Exchange Online to external recipients, bypassing Exchange on-premises.
 
