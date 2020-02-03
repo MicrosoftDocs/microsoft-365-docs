@@ -41,7 +41,7 @@ Automated systems in Exchange Online and Skype for Business may use the availabi
 
 ### SharePoint Online, OneDrive for Business, and Teams files uses
 
-For SharePoint Online, OneDrive for Business, and Teams files, the availability key is NEVER used outside of the recovery capability and customers must explicitly instruct Microsoft to initiate use of the availability key during a recovery scenario. Automated service operations solely rely on your Customer Keys in Azure Key vault. For in-depth information about how the key hierarchy works for these services, see [How SharePoint Online and OneDrive for Business use the availability key](#how-sharepoint-online-and-onedrive-for-business-use-the-availability-key).
+For SharePoint Online, OneDrive for Business, and Teams files, the availability key is NEVER used outside of the recovery capability and customers must explicitly instruct Microsoft to initiate use of the availability key during a recovery scenario. Automated service operations solely rely on your Customer Keys in Azure Key vault. For in-depth information about how the key hierarchy works for these services, see [[How SharePoint Online, OneDrive for Business, and Teams files use the availability key](#how-sharepoint-online-and-onedrive-for-business-use-the-availability-key)](#how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key).
 
 ## Availability key security
 
@@ -162,13 +162,13 @@ For SharePoint Online, OneDrive for Business, and Teams files, the availa
 
 ### Exchange Online and Skype for Business availability key logging
 
-Recall that Exchange Online and Skype for Business automatically utilize the availability key during transient errors. When this fallback occurs, Office 365 publishes customer-visible logs accessible from the Security and Compliance Center. An audit log record for the availability key operation is generated each time these services switch to using the availability key. A new record type called “Customer Key Service Encryption” with activity type "Fallback to Availability Key" allows admins to filter [Unified Audit Log](https://docs.microsoft.com/en-us/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) search results to view availability key records. The availability key record gets generated only when Customer Key is used to access the data and not for Microsoft service-managed keys.
+Recall that Exchange Online and Skype for Business automatically utilize the availability key during transient errors. When this fallback occurs, Office 365 publishes customer-visible logs accessible from the Security and Compliance Center. An audit log record for the availability key operation is generated each time these services switch to using the availability key. A new record type called “Customer Key Service Encryption” with activity type "Fallback to Availability Key" allows admins to filter [Unified Audit Log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) search results to view availability key records. The availability key record gets generated only when Customer Key is used to access the data and not for Microsoft service-managed keys.
 
 Log records include attributes such as date, time, activity, organization ID, and data encryption policy ID. The record is available as part of Office 365 Unified Audit Logs and is accessible from the Office 365 Security and Compliance Center Audit Log Search tab.
 
 ![Audit log search for availability key events](media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 
-Exchange Online and Skype for Business availability key records use the Office 365 Management Activity [common schema](https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) with added custom parameters: Policy Id, Scope Key Version Id and Request Id.
+Exchange Online and Skype for Business availability key records use the Office 365 Management Activity [common schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) with added custom parameters: Policy Id, Scope Key Version Id and Request Id.
 
 ![Availability key custom parameters](media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
 
