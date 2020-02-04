@@ -52,7 +52,7 @@ You create and manage retention policies on the:
 - **Policies** page in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 - **Retention** page under **Information governance** in the [Office 365 Security &amp; Compliance Center](https://protection.office.com/).
 
-**If you want the ability to review content before it’s permanently deleted,** consider using [retention labels](labels.md) instead of a retention policy. When you create a retention label, you can set up a [disposition review](disposition-reviews.md) to review the content before it is permanently deleted.
+**If you want the ability to review content before it’s permanently deleted,** consider using [retention labels](labels.md) instead of a retention policy. When you create a retention label, you can set up a [disposition review](disposition-reviews.md) to review the content at the end of its retention period.
 
 ## How a retention policy works with content in place
 
