@@ -51,7 +51,9 @@ You create and manage retention policies on the:
 
 - **Policies** page in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 - **Retention** page under **Information governance** in the [Office 365 Security &amp; Compliance Center](https://protection.office.com/).
-  
+
+**If you want the ability to review content before it’s permanently deleted,** consider using [retention labels](labels.md) instead of a retention policy. When you create a retention label, you can set up a [disposition review](disposition-reviews.md) to review the content before it is permanently deleted.
+
 ## How a retention policy works with content in place
 
 When you include a location such as a site or mailbox in a retention policy, the content remains in its original location. People can continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the policy, a copy of the content as it existed when you applied the policy is retained.
