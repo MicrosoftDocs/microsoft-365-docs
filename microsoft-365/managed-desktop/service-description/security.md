@@ -14,7 +14,7 @@ ms.date: 09/24/2018
 
 Microsoft Managed Desktop uses several Microsoft technologies to help secure managed devices and data. Specifically: 
 
-- [Data security](#data-security) - types of data collected by Microsoft Managed Desktop and where it's securely stored
+
 - [Device security](#device-security) – security and protection on Microsoft Managed Desktop devices
 - [Identity and Access Management](#identity-and-access-management) – managing secure use of devices through Azure Active Directory identity services
 - [Network security](#network-security) – VPN information and Microsoft Managed Desktop recommended solution and settings
