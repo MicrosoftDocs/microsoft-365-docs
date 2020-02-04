@@ -44,14 +44,11 @@ Customer Key only encrypts data at rest in the cloud. Customer Key does not work
 
 ## About the data encryption policy (DEP)
 
-> [!WARNING]
-> @REVIEWERS a customer points out in github issues that we never define the dep. we tell them what we DO with it but not what it is. i gave this a whirl please refine this section.
+A data encryption policy defines the encryption hierarchy to encrypt data using each of the keys you provide as well as the availability key protected by Microsoft. You create DEPs using PowerShell cmdlets, which are different for each service, and assign those to encrypt application data. For example:
 
-A data encryption policy defines the encryption hierarchy to encrypt data using each of the keys you provide as well as the availability key protected by Microsoft. You create DEPs using Customer Key and assign those to encrypt application data. For example:
+**Exchange Online and Skype for Business** You can create up to 50 DEPs per tenant. You associate DEPs to your Customer Keys in Azure Key Vault and assign DEPs to individual mailboxes. When you assign a DEP to a mailbox, allow 72 hours for the mailbox to become encrypted with the new DEP. If the mailboxes aren't encrypted after waiting 72 hours from the time you assigned the DEP, initiate a mailbox move. To do this, [connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?redirectedfrom=MSDN&view=exchange-ps) and then use the **New-MoveRequest** cmdlet. Refer to the details in [Set up Customer Key for Office 365](customer-key-set-up.md). Later, you can either refresh the DEP or reassign the mailbox to another DEP as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses in order to assign a DEP. For more information about licensing, see [Before you set up Customer Key](customer-key-set-up.md#before-you-set-up-customer-key).
 
-**Exchange Online and Skype for Business** You can create up to 50 DEPs for your tenant. You assign DEPs to individual mailboxes. When a DEP is assigned to a mailbox for the first time, it becomes effective when the mailbox moves. Refer to the details in [Set up Customer Key for Office 365](customer-key-set-up.md). Later, you can either refresh the DEP or reassign the mailbox to another DEP as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses in order to assign a DEP. For more information about licensing, see [Before you set up Customer Key](customer-key-set-up.md#before-you-set-up-customer-key).
-
-**SharePoint Online, including Team Sites, and OneDrive for Business** You can create up 1 DEP per geo for your organization. If you're not using the multi-geo feature, you can create one DEP. You assign each geo to one DEP. When you assign the DEP, ***encryption doesn't begin automatically, it's triggered by a powershell cmdlet as described in [Set up Customer Key for Office 365](customer-key-set-up.md). Later, you can reassign the mailbox to another DEP as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses. For more information about required licenses, see [Before you set up Customer Key](customer-key-set-up.md#before-you-set-up-customer-key).
+**SharePoint Online, OneDrive for Business, and Teams files** If you're using the multi-geo feature, you can create up to one DEP per geo for your organization. You can use different Customer Keys for each geo. If you're not using the multi-geo feature, you can only create one DEP per tenant. When you assign the DEP, encryption begins automatically but can take some time to complete. Refer to the details in [Set up Customer Key for Office 365](customer-key-set-up.md).
 
 ## Leaving the service
 
@@ -63,17 +60,11 @@ Customer Key uses a variety of encryption ciphers to encrypt keys as shown in th
 
 #### Encryption ciphers used to encrypt keys for Exchange Online and Skype for Business
 
-![Encryption ciphers for Exchange Online Customer Key](media/customerkeyexoencryptcipher.png)
+![Encryption ciphers for Exchange Online Customer Key](media/customerkeyencryptionhierarchiesexchangeskype.png)
 
-#### Encryption ciphers used to encrypt keys for SharePoint Online and OneDrive for Business
+#### Encryption ciphers used to encrypt keys for SharePoint Online, OneDrive for Business, and Teams files
 
-![Encryption ciphers for SharePoint Online Customer Key](media/customerkeyspoencryptcipher.png)
-
-## Use Customer Key and Bring Your Own Key (BYOK) with Azure Information Protection for Exchange Online
-
-Both options enable you to provide and control your own encryption keys; however, service encryption with Customer Key for Office 365 encrypts your data at rest, residing in Office 365 servers. BYOK with Azure Information Protection for Exchange Online encrypts your data-in-transit and provides persistent online and offline protection for email messages and attachments for Office 365. Customer Key and BYOK with Azure Information Protection for Exchange Online are complementary, and whether you choose to use Microsoft's service-managed keys or your own keys, encrypting your data-at-rest and in-transit can provide added protection from malicious attacks.
-  
-BYOK with Azure Information Protection for Exchange Online is offered with the new Office 365 Message Encryption capabilities.
+![Encryption ciphers for SharePoint Online Customer Key](media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## Related articles
 
