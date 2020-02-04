@@ -82,7 +82,7 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
 - If a labeled document is uploaded to SharePoint and the document has been encrypted by using a service principal account, the document can't be opened in Office on the web. Example scenarios include Microsoft Cloud App Security labeling and encryting a file, and a labeled and encrypted file sent to Teams by email.
 
 - Documents that have been encrypted in the following ways can't be opened in Office on the web:
-    - Encryption that uses on-premises key ("hold your own key" or HYOK)
+    - Encryption that uses an on-premises key ("hold your own key" or HYOK)
     - Encryption that was applied independently from a label, for example, by directly applying a Rights Management protection template.
 
 ## Prepare the SharePoint Online Management Shell for the preview
