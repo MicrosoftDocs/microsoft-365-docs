@@ -41,7 +41,7 @@ Automated systems in Exchange Online and Skype for Business may use the availabi
 
 ### SharePoint Online, OneDrive for Business, and Teams files uses
 
-For SharePoint Online, OneDrive for Business, and Teams files, the availability key is NEVER used outside of the recovery capability and customers must explicitly instruct Microsoft to initiate use of the availability key during a recovery scenario. Automated service operations solely rely on your Customer Keys in Azure Key vault. For in-depth information about how the key hierarchy works for these services, see [[How SharePoint Online, OneDrive for Business, and Teams files use the availability key](#how-sharepoint-online-and-onedrive-for-business-use-the-availability-key)](#how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key).
+For SharePoint Online, OneDrive for Business, and Teams files, the availability key is NEVER used outside of the recovery capability and customers must explicitly instruct Microsoft to initiate use of the availability key during a recovery scenario. Automated service operations solely rely on your Customer Keys in Azure Key vault. For in-depth information about how the key hierarchy works for these services, see [How SharePoint Online, OneDrive for Business, and Teams files use the availability key](#how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key).
 
 ## Availability key security
 
@@ -174,7 +174,7 @@ Exchange Online and Skype for Business availability key records use the Office 3
 
 ### SharePoint Online, OneDrive for Business, and Teams files availability key logging
 
-Availability key logging does not yet exist for these services. Recall that the availability key is only activated by Microsoft, when instructed by the customer, for recovery scenarios in scenarios involving SharePoint Online, OneDrive for Business, and Teams files.
+Availability key logging isn't available yet for these services. For SharePoint Online, OneDrive for Business, and Teams files, the availability key is only activated by Microsoft, when instructed by you, for recovery purposes. As a result, you have notice of every event in which the availability key is used for these services.
 
 ## Availability key in the Customer Key hierarchy
   
