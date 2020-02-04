@@ -1,6 +1,6 @@
 ---
-title: How to report false positives or false negatives in AIR in Microsoft Threat Protection 
-description: Was something missed or wrongly detected by AIR in Microsoft Threat Protection? Learn how to submit false positives or false negatives to Microsoft for analysis.
+title: How to report false positives or false negatives in Office 365 automated investigation and response 
+description: Was something missed or wrongly detected by Office 365 Advanced Threat Protection? Learn how to submit false positives or false negatives to Microsoft for analysis.
 keywords: automated, investigation, alert, trigger, action, remediation, false positive, false negative
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/29/2020
+ms.date: 02/03/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -28,7 +28,7 @@ ms.custom: autoir
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Did [automated investigation and response capabilities](mtp-autoir.md) in Microsoft Threat Protection miss or wrongly detect something? There are steps you can take to fix it. You can:
+Did [Automated Investigation and Response (AIR) in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) miss or wrongly detect something? There are steps you can take to fix it. You can:
 - [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and 
 - [Undo remediation actions that were taken on devices](#undo-a-remediation-action-that-was-taken-on-a-device). 
@@ -37,17 +37,15 @@ Use this article as a guide.
 
 ## Report a false positive/negative to Microsoft for analysis
 
-|Item missed or wrongly detected |Service  |What to do  |
-|---------|---------|---------|
-|- Email message <br/>- Email attachment <br/>- URL in an email message<br/>- URL in an Office file      |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
-|File or app on a device    |[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection)         |[Submit a file to Microsoft for malware analysis](https://www.microsoft.com/wdsi/filesubmission)         |
+If Office 365 AIR missed an email message, an email attachment, a URL in an email message, or a URL in an Office file, you can [submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
+
+You can also [Submit a file to Microsoft for malware analysis](https://www.microsoft.com/wdsi/filesubmission).
 
 ## Adjust an alert to prevent false positives from recurring
 
-|Scenario |Service |What to do |
-|--------|--------|--------|
-|- An alert is triggered by legitimate use <br/>- An alert is inaccurate    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> or <br/>[Azure Advanced Threat Detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Manage alerts in the Cloud App Security portal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
-|A file, IP address, URL, or domain is treated as malware on a device, even though it's safe|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) |[Create a custom indicator with an "Allow" action](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
+If an alert is triggered by legitimate use, or the alert is inaccurate, you can [Manage alerts in the Cloud App Security portal](https://docs.microsoft.com/cloud-app-security/managing-alerts).
+
+If your organization is also using [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection), and a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can [create a custom indicator with an "Allow" action](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 
 ## Undo a remediation action that was taken on a device
@@ -75,6 +73,4 @@ If a remediation action was taken on a device (such as a Windows 10 device) and 
 
 ## Related articles
 
-- [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
-- [Learn more about the Action center](mtp-action-center.md)
-- [Proactively hunt for threats with advanced hunting in Microsoft Threat Protection](advanced-hunting-overview.md)
+[Automated investigation and response (AIR) in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
