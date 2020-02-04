@@ -54,6 +54,8 @@ In most cases, if a remediation action was taken on an email message, email atta
 
 ### Undo an action using Threat Explorer
 
+With Threat Explorer, your security operations team can find an email affected by an action and potentially undo the action.
+
 1. 
 
 ### Undo an action using the Action center
