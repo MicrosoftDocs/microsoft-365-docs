@@ -47,10 +47,16 @@ If your organization is using [Microsoft Defender Advanced Threat Protection](ht
 
 ## Undo a remediation action
 
-If a remediation action was taken on an email message, email attachment, or URL, and the item is actually clean, your security operations team can undo the remediation action. 
+In most cases, if a remediation action was taken on an email message, email attachment, or URL, and the item is actually clean, your security operations team can undo the remediation action and take steps to prevent the false positive from recurring. 
 
 > [!IMPORTANT]
-> Make sure you have the necessary permissions before attempting to perform the following task.
+> Make sure you have the necessary permissions before attempting to perform the following tasks.
+
+### Undo an action using Threat Explorer
+
+1. 
+
+### Undo an action using the Action center
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 
