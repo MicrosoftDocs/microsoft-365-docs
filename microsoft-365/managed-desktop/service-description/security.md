@@ -20,19 +20,6 @@ Microsoft Managed Desktop uses several Microsoft technologies to help secure man
 - [Network security](#network-security) – VPN information and Microsoft Managed Desktop recommended solution and settings
 - [Information security](#information-security) – optional available services to further protect sensitive information 
 
-## Data security
-
-Data collected from customer tenants (which enables Microsoft Managed Desktop IT services and operations) is stored in Azure SQL databases in the Microsoft tenant hosted in the United States of America.
-
-For more information, see [Microsoft Azure security](https://docs.microsoft.com/azure/security/azure-database-security-overview).
-
-Listed below are the types of data transmitted from your tenant:
-
-- Device update, usage and reliability data
-- App deployment and reliability data
-- Update and security policy deployment data
-- Users assigned to devices
-- Security logs from your tenant related to the accounts used by Microsoft Managed Desktop to manage the service
 
 
 
