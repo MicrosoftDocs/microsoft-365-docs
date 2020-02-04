@@ -45,6 +45,10 @@ This classification method is particularly well suited to content that isn't eas
 > [!IMPORTANT]
 > Trainable classifiers only work with items that are not encrypted and are in English.
 
+### Licensing requirements
+
+Trainable classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one of these subscriptions to make use of them.
+
 ## Types of classifiers
 
 There are ready to use classifiers and trainable classifiers. Getting a trainable classifier to a publishable state requires a time investment to train it. To help you get started using classifiers, Microsoft 365 comes with a few ready to use classifiers.
