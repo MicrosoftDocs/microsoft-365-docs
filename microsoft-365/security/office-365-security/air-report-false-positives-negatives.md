@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 02/03/2020
+ms.date: 02/04/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -26,7 +26,7 @@ ms.custom: autoir
 **Applies to:**
 - Office 365 Advanced Threat Protection
 
-Did [Automated Investigation and Response (AIR) in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) miss or wrongly detect something? There are steps you can take to fix it. You can:
+Did [automated investigation and response (AIR) capabilities in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) miss or wrongly detect something? There are steps you can take to fix it. You can:
 - [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and 
 - [Undo remediation actions that were taken on devices](#undo-a-remediation-action). 
