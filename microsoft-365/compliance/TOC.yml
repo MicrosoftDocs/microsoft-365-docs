@@ -695,6 +695,8 @@
       href: turn-audit-log-search-on-or-off.md
     - name: Manage mailbox auditing
       href: enable-mailbox-auditing.md
+    - name: Manage audit log retention policies
+      href: audit-log-retention-policies.md
     - name: Detailed properties in the audit log
       href: detailed-properties-in-the-office-365-audit-log.md
     - name: Export, configure, and view audit log records
