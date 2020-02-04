@@ -64,6 +64,9 @@
         "enterprise/**/*.md": "Microsoft 365 Enterprise",
         "campaigns/**/*.md": "Microsoft 365 for Campaigns",
         "business/**/*.md": "Microsoft 365 Business"
+      },
+      "feedback_product_url": {
+        "compliance/**/*.md":"https://office365.uservoice.com/forums/289138-office-365-security-compliance"
       }
     },
     "template": [],
