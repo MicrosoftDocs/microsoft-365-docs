@@ -176,7 +176,7 @@ TTL:				3600
 ```
 
 > [!NOTE]
-> Creating the second record is important to do but only one of the selectors may be available at the time of creation. In essence, the second selector may point to an address that has not been created yet. It is still recommended that the second CNAME record is created since it will come in handy when the keys rotate and, as an admin, there would be nothing to do and the rotation would be seamless.
+> It is important to create the second record but only one of the selectors may be available at the time of creation. In essence, the second selector may point to an address that has not been created yet. It is still recommended that the second CNAME record is created since it will come in handy when the keys rotate and, as an admin, there would be nothing more to do and the rotation would be seamless.
 
 ### Enable DKIM signing for your custom domain in Office 365
 <a name="EnableDKIMinO365"> </a>
