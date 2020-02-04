@@ -173,7 +173,7 @@ The output from this cmdlet includes:
 
 You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key once the data purge process completes.
 
-The Office 365 core audits and validates the data purge path. For more information, see the SSAE 18 SOC 2 Report available on the [Service Trust Portal](https://servicetrust.microsoft.com/). In addition, Microsoft recommends the following documents:
+Office 365 audits and validates the data purge path. For more information, see the SSAE 18 SOC 2 Report available on the [Service Trust Portal](https://servicetrust.microsoft.com/). In addition, Microsoft recommends the following documents:
 
 - [Risk Assessment and Compliance Guide for Financial Institutions in the Microsoft Cloud](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
@@ -183,25 +183,31 @@ The data purge path differs slightly between the different Office 365 services.
 
 ### Revoke your Customer Keys and the availability key for Exchange Online and Skype for Business
 
-To initiate the data purge path for Exchange Online and Skype for Business, complete these steps:
+When you initiate the data purge path for Exchange Online and Skype for Business, you make the request against a DEP. Doing so permanently deletes encrypted data within the mailboxes to which that DEP is assigned. Since you can only run the PowerShell cmdlet against one DEP at a time, consider reassigning a single DEP to all of your mailboxes before you initiate the data purge path.
 
-1. Delete your Customer Key keys in Azure Key Vault. All key vault admins must agree to delete these keys.
+To initiate the data purge path, complete these steps:
 
-1. Using a work or school account that has administrator privileges in your Office 365 organization.
+1. Verify that all the mailboxes that you want to remove from the service are assigned to the correct DEP.
 
-1. From Windows PowerShell, run set-permanentdatapurgerequest as follows:
+2. Remove wrap and unwrap permissions for “Office 365 Exchange Online” from Azure Key Vaults.
+
+3. Using a work or school account that has global administrator privileges in your Office 365 organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+
+4. For each DEP that contains mailboxes that you want to delete, run the Set-DataEncryptionPolicy cmdlet as follows.
 
     ```powershell
-    set-permanentdatapurgerequest TRUE
+    Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested: $true -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact <ContactName – PhoneNumber – EmailAddress>
     ```
 
-1. Contact Microsoft to delete the availability key.
+   If the command fails, ensure that you've removed the Exchange Online permissions from both keys in Azure Key Vault as specified earlier in this task. Once you've set the PermanentDataPurgeRequested attribute to ``true``, you'll no longer be able to assign this DEP to mailboxes.
 
-    When you contact Microsoft to delete the availability key, Microsoft will send you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who is legally authorized to sign the paperwork on behalf of your organization.
+5. Contact Microsoft support and request the Data Purge eDocument.
 
-1. Once your representative has signed the legal document, return it to Microsoft (usually through an eDoc signature).
+    At your request, Microsoft sends you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who is legally authorized to sign the paperwork on behalf of your organization.
 
-    Once Microsoft receives the legal document, Microsoft runs cmdlets to trigger the data purge which deletes the availability key. Once the data purge process completes, the data has been purged and is not recoverable.
+6. Once your representative has signed the legal document, return it to Microsoft (usually through an eDoc signature).
+
+    Once Microsoft receives the legal document, Microsoft runs cmdlets to trigger the data purge which first deletes the policy, marks the mailboxes for permanent deletion, then deletes the availability key. Once the data purge process completes, the data has been purged, is inaccessible to Exchange Online, and is not recoverable.
 
 ### Revoke your Customer Keys and the availability key for SharePoint Online, OneDrive for Business, and Teams files
 

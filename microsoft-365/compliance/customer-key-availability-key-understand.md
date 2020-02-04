@@ -21,9 +21,9 @@ The primary purpose of the availability key is to provide recovery capability fr
 
 Storage and control of the availability key are deliberately different from Azure Key Vault keys for three reasons:
 
-- The availability key provides a recovery, "break-glass" capability in the event that control over both Azure Key Vault keys is lost.
+- The availability key provides a recovery, "break-glass" capability if control over both Azure Key Vault keys is lost.
 - The separation of logical controls and secure storage locations provides defense-in-depth and protects against the loss of all keys, and your data, from a single attack or point of failure.
-- The availability key provides a high-availability capability in the event that Office 365 services are unable to reach keys hosted in Azure Key Vault due to transient errors. This rule only applies to Exchange Online and Skype for Business service encryption. SharePoint Online, OneDrive for Business, and Teams files never use the availability key unless you explicitly instruct Microsoft to initiate the recovery process.
+- The availability key provides a high-availability capability if Office 365 services are unable to reach keys hosted in Azure Key Vault due to transient errors. This rule only applies to Exchange Online and Skype for Business service encryption. SharePoint Online, OneDrive for Business, and Teams files never use the availability key unless you explicitly instruct Microsoft to initiate the recovery process.
 
 Sharing the responsibility to protect your data, using a variety of protections and processes for key management, ultimately reduces the risk that all keys (and therefore your data) will be permanently lost or destroyed. Microsoft provides you with sole authority over the disablement or destruction of the availability key when you leave the service. By design, no one at Microsoft has access to the availability key: it is only accessible by Office 365 service code.
 

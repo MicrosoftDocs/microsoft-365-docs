@@ -448,7 +448,7 @@ Where *MailboxIdParameter* specifies a mailbox. For more information about the S
   
 ### Validate mailbox encryption
 
-Encrypting a mailbox can take some time. For first time policy assignment, the mailbox must also complete the move from one database to another before the service can encrypt the mailbox. We recommend that you wait 72 hours before you attempt to validate encryption after you change a DEP or the first time you assign a DEP to a mailbox.
+Encrypting a mailbox can take some time. For first time policy assignment, the mailbox must also completely move from one database to another before the service can encrypt the mailbox. We recommend that you wait 72 hours before you attempt to validate encryption after you change a DEP or the first time you assign a DEP to a mailbox.
   
 Use the Get-MailboxStatistics cmdlet to determine if a mailbox is encrypted.
   
@@ -458,11 +458,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 The IsEncrypted property returns a value of **true** if the mailbox is encrypted and a value of **false** if the mailbox is not encrypted.
 
-The time to complete mailbox moves depends on the number of mailboxes to which you assign a DEP for the first time, as well as the size of the mailboxes. If the mailboxes have not been encrypted after a week from the time you assigned the DEP, initiate a mailbox move for the unencrypted mailboxes by using the New-MoveRequest cmdlet.
-
-```powershell
-New-MoveRequest <mailbox alias>
-```
+The time to complete mailbox moves depends on the number of mailboxes to which you assign a DEP for the first time, as well as the size of the mailboxes. If the mailboxes have not been encrypted after a week from the time you assigned the DEP, contact Microsoft.
 
 ## Office 365: Setting up Customer Key for SharePoint Online, OneDrive for Business, and Teams files
 

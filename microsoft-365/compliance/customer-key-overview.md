@@ -25,7 +25,7 @@ Service encryption ensures that content at rest is encrypted at the application 
 
 Customer Key is built on service encryption and lets you provide and control encryption keys. Office 365 then uses these keys to encrypt your data at rest as described in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products.aspx). Customer Key helps you meet compliance obligations because you control the encryption keys that Office 365 uses to encrypt and decrypt data.
   
-Customer Key enhances the ability of your organization to meet the demands of compliance requirements that specify key arrangements with the cloud service provider. With Customer Key, you provide and control the root encryption keys for your Office 365 data at-rest at the application level. As a result, you exercise control over your organization's keys. If you decide to exit the service, you revoke your organization's root keys. For all Office 365 services, key revocation is the first step on the path towards data deletion. By revoking the keys, the data is unreadable to the service.
+Customer Key enhances the ability of your organization to meet the demands of compliance requirements that specify key arrangements with the cloud service provider. With Customer Key, you provide and control the root encryption keys for your Office 365 data at-rest at the application level. As a result, you exercise control over your organization's keys. If you decide to exit the service, you revoke access to your organization's root keys. For all Office 365 services, revoking access to the keys is the first step on the path towards data deletion. By revoking access to the keys, the data is unreadable to the service.
 
 ## Customer Key encrypts data at rest in Office 365
 
@@ -46,7 +46,17 @@ Customer Key only encrypts data at rest in the cloud. Customer Key does not work
 
 A data encryption policy defines the encryption hierarchy to encrypt data using each of the keys you provide as well as the availability key protected by Microsoft. You create DEPs using PowerShell cmdlets, which are different for each service, and assign those to encrypt application data. For example:
 
-**Exchange Online and Skype for Business** You can create up to 50 DEPs per tenant. You associate DEPs to your Customer Keys in Azure Key Vault and assign DEPs to individual mailboxes. When you assign a DEP to a mailbox, allow 72 hours for the mailbox to become encrypted with the new DEP. If the mailboxes aren't encrypted after waiting 72 hours from the time you assigned the DEP, initiate a mailbox move. To do this, [connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?redirectedfrom=MSDN&view=exchange-ps) and then use the **New-MoveRequest** cmdlet. Refer to the details in [Set up Customer Key for Office 365](customer-key-set-up.md). Later, you can either refresh the DEP or reassign the mailbox to another DEP as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses in order to assign a DEP. For more information about licensing, see [Before you set up Customer Key](customer-key-set-up.md#before-you-set-up-customer-key).
+KC START HERE***
+
+**Exchange Online and Skype for Business** You can create up to 50 DEPs per tenant. You associate DEPs to your Customer Keys in Azure Key Vault and then assign DEPs to individual mailboxes. When you assign a DEP to a mailbox:
+
+- the mailbox is marked for a mailbox move. Based on priorities in Office 365 as described here [Move requests in the Office 365 service](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service).
+
+- The encryption takes place while the mailbox is moved. Allow 72 hours for the mailbox to become encrypted with the new DEP. If the mailboxes aren't encrypted after waiting 72 hours from the time you assigned the DEP, contact Microsoft.
+
+Later, you can either refresh the DEP or assign a different DEP to the mailbox as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses in order to assign a DEP. For more information about licensing, see [Before you set up Customer Key](customer-key-set-up.md#before-you-set-up-customer-key).
+
+KC END HERE***
 
 **SharePoint Online, OneDrive for Business, and Teams files** If you're using the multi-geo feature, you can create up to one DEP per geo for your organization. You can use different Customer Keys for each geo. If you're not using the multi-geo feature, you can only create one DEP per tenant. When you assign the DEP, encryption begins automatically but can take some time to complete. Refer to the details in [Set up Customer Key for Office 365](customer-key-set-up.md).
 

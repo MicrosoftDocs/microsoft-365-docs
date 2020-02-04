@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Learn how to roll the Customer root keys stored in Azure Key Vault that are used with Office 365 Customer Key. Services include Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files."
+description: "Learn how to roll the customer root keys stored in Azure Key Vault that are used with Office 365 Customer Key. Services include Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files."
 ---
 
 # Roll or rotate a Customer Key or an availability key
