@@ -24,14 +24,12 @@ ms.custom: autoir
 # How to report false positives/negatives in automated investigation and response capabilities
 
 **Applies to:**
-- Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+- Office 365 Advanced Threat Protection
 
 Did [Automated Investigation and Response (AIR) in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) miss or wrongly detect something? There are steps you can take to fix it. You can:
 - [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and 
-- [Undo remediation actions that were taken on devices](#undo-a-remediation-action-that-was-taken-on-a-device). 
+- [Undo remediation actions that were taken on devices](#undo-a-remediation-action). 
 
 Use this article as a guide. 
 
@@ -47,7 +45,7 @@ If an alert is triggered by legitimate use, or the alert is inaccurate, you can 
 
 If your organization is using [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (in addition to Office 365), and a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can [create a custom indicator with an "Allow" action](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
-## Undo a remediation action that was taken on a device
+## Undo a remediation action
 
 If a remediation action was taken on an email message, email attachment, or URL, and the item is actually clean, your security operations team can undo the remediation action. 
 
@@ -71,5 +69,7 @@ If a remediation action was taken on an email message, email attachment, or URL,
 7. To undo the action, select **Delete remediation**.
 
 ## Related articles
+
+[Office 365 Advanced Threat Protection](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp)
 
 [Automated investigation and response (AIR) in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
