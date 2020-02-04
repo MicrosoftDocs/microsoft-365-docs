@@ -45,15 +45,14 @@ You can also [Submit a file to Microsoft for malware analysis](https://www.micro
 
 If an alert is triggered by legitimate use, or the alert is inaccurate, you can [Manage alerts in the Cloud App Security portal](https://docs.microsoft.com/cloud-app-security/managing-alerts).
 
-If your organization is also using [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection), and a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can [create a custom indicator with an "Allow" action](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
-
+If your organization is using [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (in addition to Office 365), and a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can [create a custom indicator with an "Allow" action](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## Undo a remediation action that was taken on a device
 
-If a remediation action was taken on a device (such as a Windows 10 device) and the item that is actually clean, your security operations team can undo the remediation action in the [Action center](mtp-action-center.md).
+If a remediation action was taken on an email message, email attachment, or URL, and the item is actually clean, your security operations team can undo the remediation action. 
 
 > [!IMPORTANT]
-> Make sure you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) before attempting to perform the following task.
+> Make sure you have the necessary permissions before attempting to perform the following task.
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
 
