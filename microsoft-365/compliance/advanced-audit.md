@@ -20,7 +20,7 @@ description: "."
 ---
 
 # Advanced audit in Microsoft 365
-Audit provides visibility into many types of audit activities across different services in Microsoft 365. You can find details on what is currently available [here](https://docs.microsoft.com/en-us/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance). With the release of Advanced audit in Microsoft 365, we are adding new capabilities aimed at powering forensic and compliance investigations. 
+Audit provides visibility into many types of audit activities across different services in Microsoft 365. You can find details on what is currently available [here](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance). With the release of Advanced audit in Microsoft 365, we are adding new capabilities aimed at powering forensic and compliance investigations. 
 
 The following new capabilities are covered in this release.
 - High value events - Mail Accessed. For more information, go to [link](https://products.office.com/)
