@@ -31,7 +31,7 @@ Across your organization, you probably have different types of content that requ
     
 - Work visas that must be **marked as a record** so that they can't be edited or deleted. 
     
-In all of these cases, retention labels in Office 365 can help you take the right actions on the right content. With retention labels, you can classify data across your organization for governance, and enforce retention rules based on that classification.
+In all of these cases, retention labels in Microsoft 365 can help you take the right actions on the right content. With retention labels, you can classify data across your organization for governance, and enforce retention rules based on that classification.
   
 With retention labels, you can:
   
@@ -58,7 +58,7 @@ With retention labels, you can:
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that arrive in that location inherit the default retention label.  
     
-You create retention labels in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center. In the left nav, choose **Classification** > **Retention label** > **Create a label**.
+You create retention labels in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center. 
 
 ## How retention labels work with retention label policies
 
@@ -159,7 +159,7 @@ Retention labels can enforce the same retention actions that a retention policy 
   
 In addition, a retention label has two retention options that are available only in a retention label and not in a retention policy. With a retention label, you can:
   
-- Trigger a disposition review at the end of the retention period, so that SharePoint and OneDrive documents must be reviewed before they can be deleted. For more information, see [Overview of disposition reviews](disposition-reviews.md).
+- Trigger a disposition review at the end of the retention period, so that SharePoint and OneDrive documents must be reviewed before they can be deleted. For more information, see [Disposition of records](disposition-records.md).
     
 - Start the retention period from when the content was labeled, instead of the age of the content or when it was last modified. This option applies only to content in SharePoint sites and OneDrive accounts. For Exchange email, the retention period is always based on the date when the message was sent or received, no matter which option you choose here.
     

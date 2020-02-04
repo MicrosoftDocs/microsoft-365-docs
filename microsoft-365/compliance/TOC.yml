@@ -263,7 +263,7 @@
         - name: Manage the lifecycle of SharePoint documents
           href: auto-apply-retention-labels-scenario.md
     - name: Dispose data
-      href: disposition-reviews.md
+      href: disposition-records.md
     - name: Manage inactive mailboxes
       href: inactive-mailboxes-in-office-365.md
       items: 
@@ -316,7 +316,7 @@
             - name: Automate event-based retention
               href: automate-event-driven-retention.md
         - name: Disposition
-          href: disposition-reviews.md
+          href: disposition-records.md
         - name: More about records management
           items: 
             - name: Watch videos about records management

@@ -70,7 +70,7 @@ When you create a retention label, part of the configuration options include cla
 1. Create a retention label. In the Microsoft 365 compliance center, go to **Records Management** \> **File Plan**. On the **File plan** page, select **Create a label**.
 
 2. On the **Label settings** page in the wizard, choose the option to set the retention label to declare content as a record.<br/>
-
+    
    ![Click Use label to classify content as a Record checkbox](media/recordversioning6.png)
 
 3. [Publish](labels.md#how-retention-labels-work-with-retention-label-policies) or [auto-apply](labels.md#applying-a-retention-label-automatically-based-on-conditions) the retention label to SharePoint sites and/or OneDrive accounts.
