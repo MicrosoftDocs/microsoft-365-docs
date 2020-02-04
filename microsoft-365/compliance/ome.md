@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 02/03/2020
 search.appverid:
 - MET150
 ms.collection:
@@ -25,12 +25,38 @@ People often use email to exchange sensitive information, such as financial data
 
 With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
 
+## Important updates to OME to enhance email authenticity - Action required
+
+Starting February, 2020, we are rolling out improvements to OME that enhance the mail authenticity of OME emails by changing the sender addresses used by OME. Without these improvements, some organizations were rejecting system-generated mail from OME, such as one-time pass code mail and portal replies, because the sender address was from the domain messaging.onmicrosoft.com. With this change, these system-generated mails will be sent from your organization's custom domains instead of onmicrosoft.com. In order to implement this improvement, you must update your mail flow rules.
+
+For Exchange Online, you need to update each mail flow rule that is looking for the old OME email addresses, or any address from outside your organization, to look for the new OME addresses. Since the new OME (one-time pass code and portal reply) emails are coming from your custom domain, they no longer qualify as coming from outside the organization.
+
+If you're using third-party solutions that work with with Exchange on-premises or Exchange Online, you'll need to update all your old OME rules to reflect the new OME email addresses. For example, if you had whitelisted the previous OME email addresses, you will need to add the new emails to the list of whitelisted emails.
+
+### Changes to OME email addresses
+
+One-time pass code sender address:
+
+- Old address: ``onetimepasscode@messaging.onmicrosoft.com``
+
+- New address: ``onetimepasscode@<yourdomain.com>``
+
+OME replies from the OME portal:
+
+- Old address: ``omeportal@messaging.onmicrosoft.com``
+
+- New address: ``omeportal@<yourdomain.com>``
+
+### Errors routing mail from Exchange online through Exchange on-premises to external recipients
+
+If you route mail from Exchange Online through on-premises Exchange out to recipients who are external to your organization, some third-party systems are returning DMARC errors and not accepting the email. For example, gmail will return a DMARC error if you route your mail this way. To work around this problem, route email directly from Exchange Online to external recipients, bypassing Exchange on-premises.
+
+## How Office 365 Message Encryption works
+
 The rest of this article applies to the new OME capabilities.
 
 > [!NOTE]
 > Delegates who have full access permissions to a mailbox can read encrypted messages that are sent to the mailbox.
-
-## How Office 365 Message Encryption works
 
 Office 365 Message Encryption is an online service that's built on Microsoft Azure Rights Management (Azure RMS) which is part of Azure Information Protection. This includes encryption, identity, and authorization policies to help secure your email. You can encrypt messages by using rights management templates, the [Do Not Forward option](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails), and the [encrypt-only option](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
