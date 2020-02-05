@@ -53,20 +53,26 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
     ![The Audit log search page](media/AuditLogRetentionPolicy1.png)
 
-3. Click **New Retention Policy**, complete the following fields on the flyout page, and click **Save** to create a new audit log retention policy.
+3. Click **New Retention Policy**, and then complete the following fields on the flyout page:
 
 
-   a. 
+   a. **Name:** The name of the audit log retention policy. This name must be unique in your organization.
+   
+   b. **Description:** Optional, but helpful to provide information about the policy, such as the record type or workload, users specified in the policy, and the duration.
 
-   b.
-   
-   c.
-   
-   d.
-   
-   e.
-   
-   f.
+   c. **Record types:** The audit record type the policy applies to. If you select more than one record type, you can't select activities in the next dropdown box because the policy will apply to all activities in the selected record types. Also, you can leave this property blank but you must select a user in the **Users** box.
+
+   d. **Activities:** Use this box to choose activities from the record type that you selected. You can choose specific activities to apply the policy to. If you don't choose specific activities, then the policy will apply to all activities of the selected record type.
+
+   e. **Users:** Select one or more use to apply the policy to. If you leave this box blank, then the policy will apply to all users. If you leave the **Record types** blank, then you must select a user.
+
+   f. **Duration:** The amount of time to retain the audit logs that meet the criteria of the policy.
+
+   g. **Priority:** This value determines the order in which audit log retention policies in your organization are processed. A higher value indicates a higher priority. For example, a policy with a priority value of **5** would take priority over a policy with a priority value of **0**. As previously explained, any custom audit log retention policy takes priority over the default policy for your organization.
+
+6. Click **Save** to create a new audit log retention policy.
+
+At this time, the only way to view custom audit log retention policies is to use the **Get-UnifiedAuditRetentionPolicy** cmdlet in Office 365 Security & Compliance Center PowerShell. 
 
 ## Create an audit log retention policy in PowerShell
 
