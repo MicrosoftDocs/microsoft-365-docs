@@ -55,7 +55,7 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
 
 ## Limitations
 
-- When you enable this preview, users who change a label to a file in a OneDrive Sync folder might be unable to save other changes they make to the file.  Users see a [red circle with a white cross icon error](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3), and they are asked to save new changes as a separate copy.  In addition to label changes that are initiated by users, the same behavior can occur if an admin changes settings for a published label that's already applied to files downloaded to users' sync client.
+- When you enable this preview, users who change a label on a file in a OneDrive Sync folder might be unable to save other changes they make to the file.  Users see a [red circle with a white cross icon error](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3), and they are asked to save new changes as a separate copy.  In addition to label changes that are initiated by users, the same behavior can occur if an admin changes settings for a published label that's already applied to files downloaded to users' sync client.
     
     To avoid losing work for these scenarios, do one of these actions:
     - To apply labels, use the web versions of the Office apps.
@@ -78,6 +78,12 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
 - Office desktop apps and mobile apps don't support coauthoring. Instead, these apps continue to open files in exclusive editing mode.
 
 - If a label includes encryption, Microsoft Cloud App Security isn't able to read the label information for the files in SharePoint.
+
+- If a labeled document is uploaded to SharePoint and the document has been encrypted by using a service principal account, the document can't be opened in Office on the web. Example scenarios include Microsoft Cloud App Security labeling and encryting a file, and a labeled and encrypted file sent to Teams by email.
+
+- Documents that have been encrypted in the following ways can't be opened in Office on the web:
+    - Encryption that uses an on-premises key ("hold your own key" or HYOK)
+    - Encryption that was applied independently from a label, for example, by directly applying a Rights Management protection template.
 
 ## Prepare the SharePoint Online Management Shell for the preview
 
