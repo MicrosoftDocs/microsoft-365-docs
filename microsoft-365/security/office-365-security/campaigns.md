@@ -35,7 +35,7 @@ Campaign Views lets you see the big picture of an attack faster and more complet
 
 A campaign is a coordinated email attack against one or many organizations. Email attacks that steal credentials and company data are a big and lucrative industry. As technologies increase in an effort to stop attacks, attackers modify their methods in an effort to ensure continued success.
 
-Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data and experience across the entire Office 365 service world-wide to help identify campaigns. The attack information is analyzed and classified according to several factors. For example:
+Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire Office 365 service to help identify campaigns. We analyze and classify the attack information according to several factors. For example:
 
 - **Attack source**: Source IP addresses and sender email domains.
 
@@ -43,30 +43,32 @@ Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malwa
 
 - **Attack recipients**: Recipient domains, recipient job functions (admins, executives, etc.), company types (large, small, public, private, etc.), and industries.
 
-- **Attack payload**: Malicious links, attachments, or other payloads.
+- **Attack payload**: Malicious links, attachments, or other payloads in the attack messages.
+
+A campaign might be short-lived, or could span several days, weeks, or months with active and inactive periods. A campaign might be launched against your specific organization, or your organization might be part of a larger campaign across multiple companies.
 
 ## Campaign Views the Office 365 Security & Compliance Center
 
-Campaign Views is available in the [Security & Compliance Center](https://protection.office.com) at the following locations:
-
-- **Threat management** \> **Campaigns** or **Threat management** \> **Explorer** \> **View** \> **Campaigns**
-
-
-
-- **Threat management** \> **Explorer** \> **View** \> **All email** \> **Campaign**
+Campaign Views is available in the [Security & Compliance Center](https://protection.office.com) at **Threat management** \> **Campaigns**.
 
 ![Campaigns overview in the Security & Compliance Center](../media/campaigns-overview.png)
 
+You can also get to Campaigns View from:
+
+- **Threat management** \> **Explorer** \> **View** \> **Campaigns**
+
+- **Threat management** \> **Explorer** \> **View** \> **All email** \> **Campaign**
+
 > [!TIP]
-> Currently, the only filtering that's available is the date range. If you don't see any campaign data, try changing the date range.
+> If you don't see any campaign data, try changing the date range.
 
 The overview page shows the following information about the campaign:
 
 - **Name**
 
-- **Sample subject**: The subject line of one of the messages in the campaign. Note that all messages in the campaign will not necessarily have the same subject line.
+- **Sample subject**: The subject line of one of the messages in the campaign. Note that all messages in the campaign will not necessarily have the same subject.
 
-- **Type**: Currently, this value will always be **Phish**.
+- **Type**: Currently, this value is always **Phish**.
 
 - **Subtype**: Where available, the brand that is being phished by this campaign. When the detection is driven by ATP technology, the prefix **ATP-**is added to the subtype value.
 
@@ -74,11 +76,11 @@ The overview page shows the following information about the campaign:
 
 - **Inboxed**: The number of users that received messages from this campaign in their Inbox (not delivered to Junk).
 
-- **Clicked**
+- **Clicked**: The number of users that clicked on the URL in the phishing message.
 
-- **Click Rate**
+- **Click Rate**: The percentage as calculated by "**Clicked** / **Inboxed**". This value is an indicator of the effectiveness of the campaign, and whether the recipients were able to identify the message as phishing and not clicking on the payload URL.
 
-- **Visited**
+- **Visited**: How many users actually made it through to the payload website. If there are **Clicked** values, but Safe Links blocked access to the website, this value will be zero.
 
 When you click on the name of a campaign, the campaign details appears in a flyout.
 
@@ -136,21 +138,21 @@ The diagram contains the following information:
 
 #### URL clicks
 
-There's always the chance that messages delivered to the recipient's Inbox or Junk Email folder can be acted upon by the user (that is, user will click on the malicious URL in the message). If they haven't, that's a small measure of success, although you certainly need to determine why the harmful message was delivered to their mailbox in the first place.
+When a phishing message is delivered to a recipient (to the Inbox or the Junk Email folder), there's always a chance that the user will click on the payload URL. Not clicking on the URL in a delivered message is a small measure of success, but you need to determine why the phishing message was delivered to their mailbox in the first place.
 
-If a user has clicked on the malicious URL, the actions are displayed in the **URL clicks** area of the diagram.
+If a user clicked on the payload URL in the phishing message, the actions are displayed in the **URL clicks** area of the diagram in the campaign details view.
 
 ![Campaign details that contain user URL clicks](../media/campaign-details-with-recipient-actions.png)
 
-- **Safe Links Block**: This value indicates the recipient clicked on the payload URL in the message, but it was blocked by the [ATP Safe Links](atp-safe-links.md) policies in your organization.
+- **Safe Links Block**: Indicates the recipient clicked on the payload URL, but their access to the malicious website was blocked by the [ATP Safe Links](atp-safe-links.md) policies in your organization.
 
-- **Safe Links Block Override**: This value also indicates the recipient clicked on the payload URL in the message, ATP Safe Links tried to stop them, but they were allowed to override the block. You need to investigate your [Safe Links policies](set-up-atp-safe-links-policies.md) to see why users are allowed to override the Safe Links verdict and click on malicious URLs.
+- **Safe Links Block Override**: Also indicates the recipient clicked on the payload URL in the message, ATP Safe Links tried to stop them, but they were allowed to override the block. You need to investigate your [Safe Links policies](set-up-atp-safe-links-policies.md) to see why users are allowed to override the Safe Links verdict and continue to the malicious website.
 
 ### Tabs
 
 There are several tabs in the campaign details view that allow you to further investigate the campaign.
 
-- **URL Clicks**: If the payload URL in the phishing message wasn't clicked, this section will be blank. If a user was able to click on the URL, you
+- **URL Clicks**: If users didn't click on the payload URL in the phishing message, this section will be blank. If a user was able to click on the URL, the following values will be populated:
 
   - **User**<sup>\*</sup>
 
