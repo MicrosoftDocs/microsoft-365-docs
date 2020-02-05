@@ -77,7 +77,7 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
     - URL domain, URL path, and URL domain and path filters don't require a protocol to filter.
     - You must click the Refresh icon every time you change the filter values to get relevant results.
 
-5. **Advanced filters**: With these filters, you can build complex queries and filter your data set. Clicking on *Advanced Filters* opens a flyout wit options.
+5. **Advanced filters**: With these filters, you can build complex queries and filter your data set. Clicking on *Advanced Filters* opens a flyout with options.
 
    Advanced filtering is a great addition to search capabilities. A boolean **NOT** filter has been introduced on *Recipient*, *Sender* and *Sender domain* to allow admins to investigate by excluding values. This option appears under selection parameter *Contains none of*. **NOT** will let admins exclude alert mailboxes, default reply mailboxes from their investigations, and is useful for cases where admins search for a specific subject (subject="Attention") where the Recipient can be set to *none of defaultMail@contoso.com*. This is an exact value search.
 
