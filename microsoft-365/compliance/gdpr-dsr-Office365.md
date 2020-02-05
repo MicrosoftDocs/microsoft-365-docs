@@ -1582,61 +1582,18 @@ The ability to restrict or rectify data in system-generated logs is not supporte
 
 ### Accessing and exporting system-generated logs
 
-Admins can access system-generated logs associated with a particular user’s use of Office 365 services and applications. To access and export system-generated logs:
+The “right of data portability” allows a data subject to request a copy of their personal data in an electronic format (that’s a “structured, commonly used, machine read-able, and interoperable format”) that may be transmitted to another data controller. Azure supports this by enabling your organization to export the data in the native JSON format, to your specified Azure Storage Container.
 
-1. Go to the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) and sign in using the credentials of an Office 365 global administrator.
+>[!IMPORTANT]
+>You must be a tenant administrator to export user data from the tenant.
 
-2. In the **Privacy** drop-down list at the top of the page, click **Data Subject Request**.
+#### Azure Active Directory
 
-3. On the **Data Subject Request** page, under **System Generated Logs**, click **Data Log Export**.
+With respect to Customer Data, Microsoft offers both a portal and in-product experiences providing the enterprise customer’s tenant administrator the capability to manage export requests for identifiable information about an end user.
 
-    The **Data Log Export** is displayed. A list of export data requests submitted by your organization is displayed.
+#### Service-specific interfaces
 
-4. To create a request for a user, click **Create Export Data Request**.
-
-After you create a request, it will be listed on the **Data Log Export** page where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization’s Azure storage location within 30 days of creating the request. The data is saved in common, machine-readable file formats such as JSON or XML. If you don't have an Azure account and Azure storage location, you need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs. For more information, see [Introduction to Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
-
->[!NOTE]
->When you create an Export Data Request, system-generated data for a few applications will not be exported through the Data Log Export tool. To export data for these applications, see [Additional steps to export system-generated log data](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data).
-
-The following summarizes accessing and exporting system-generated logs using the Data Log Export tool:
-
-- **How long does the Microsoft Data Log Export tool take to complete a request?:** This can depend on several factors. Usually it should complete in one or two days, but it can take up to 30 days.
-
-- **What format will the output be in?:** The output is structured machine-readable files such as XML, CSV, or JSON.
-
-- **Who has access to Data Log Export tool to submit access requests for system-generated logs?:** Office 365 global administrators have access to the GDPR Log Manager utility.
-
-- **What data does the Data Log Export tool return?:** The Data Log Export tool returns system-generated logs that Microsoft stores. Exported data spans across various Microsoft services including Office 365, Azure, and Dynamics.
-
-- **How is data returned to the user?:** Data is exported to your organization's Azure storage location; it's up to admins in your organization to determine how they will show/return this data to users.
-
-- **What will data in system-generated logs look like?:** Example of a system-generated log record in JSON format:
-
-   ```JSON
-   [{
-            "DateTime": "2017-04-28T12:09:29-07:00",
-             "AppName": "SharePoint",
-             "Action": "OpenFile",
-             "IP": "154.192.13.131",
-             "DevicePlatform": "Windows 1.0.1607"
-   }]
-   ```
-
->[!NOTE]
->Some features will not allow for the export or deletion of system-generated logs with personal information to maintain the integrity of such information for security and audit reasons.
-
-Product and service usage data for some of Microsoft’s most often-used services, such as Exchange Online, SharePoint Online, Skype for Business, Yammer, and Office 365 Groups can also be retrieved by searching the Office 365 audit log in the Security & Compliance Center. For more information, see [Use the Office 365 audit log search tool in DSR investigations](#use-the-office-365-audit-log-search-tool-in-dsr-investigations) in Appendix A. Using the audit log may be of interest to you because it's possible to assign permissions to other people in your organization (such as your compliance officer) to search the audit log to access this data.
-
-#### National clouds
-
-A global IT admin needs to do the following to export system-generated log data in the following national clouds:
-
-- Office 365 Germany - [Go to the Microsoft Service Trust Portal for Germany](https://aka.ms/MicrosoftSTPGermany) and complete the steps outlined above.
-
-- Office 365 US Government - [Go to the Office 365 admin portal](https://portal.office365.us) and submit a request to Microsoft Support.
-
-- Office 365 operated by 21Vianet (China) - [Go to the Office 365 operated by 21Vianet admin portal](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) and then go to **Commerce** > **Subscription** > **Privacy** > **GDPR** and enter the required information.
+Microsoft provides the ability to discover Customer Data directly via pre-existing application programming interfaces (APIs) or user interfaces (UIs) for specific services. Details are described in the respective services’ reference documentation, describing applicable CRUD (create, read, update, delete) operations.
 
 ### Deleting system-generated logs
 
