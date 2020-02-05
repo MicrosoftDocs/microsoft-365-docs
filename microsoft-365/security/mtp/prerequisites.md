@@ -35,7 +35,8 @@ To use Microsoft Threat Protection, you need one of the following licenses or co
 
 - Microsoft 365 E5
 - Microsoft 365 E5 Security
-- Office 365 E5, Enterprise Mobility + Security E5, and Windows E5
+- Microsoft 365 E3 and [Identity & Threat Protection package](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)
+- Office 365 E5, Enterprise Mobility + Security E5, and Windows 10 Enterprise E5
 
 [View Microsoft 365 Enterprise service plans](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
 
