@@ -28,7 +28,7 @@ Access to content explorer is highly restricted because it lets you read the con
 
 ## Exchange mailbox count
 
-You will notice a small tool tip appear when you drill into Exchange mailboxes. This is to call out the fact that the aggregate count displayed for sensitive information type, sensitivity label and retention label may not exactly match the number of items that you will find inside the mailbox items. This is because the drill down into the folder fetches the live view of content, which is classified, while the aggregated count is calculated.
+You will notice a small tool tip appear when you drill into Exchange mailboxes. This is to call out the fact that the aggregate count displayed for sensitive information type, sensitivity label and retention label may not exactly match the number of items that you will find inside the mailbox. This is because the drill down into the folder fetches the live view of content, which is classified, while the aggregated count is calculated.
 
 ## Seeing GUIDs instead of label names
 
