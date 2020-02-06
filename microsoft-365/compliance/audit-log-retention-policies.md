@@ -23,15 +23,19 @@ description: ""
 
 You can create and manage audit log retention policies in the Security & Compliance Center. Audit log retention policies are part of the new Advanced audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization. You can retain audit logs for up to one year. You can create policies based on the following criteria:
 
-- All activities in one or more Microsoft services
+- All activities in one or more Microsoft 365 services
 
 - Specific activities (in a specific service) performed by all users or by specific users
 
 - A priority level that specifies which policy takes precedence in you have multiple policies in your organization
 
+COMMENT - Should we add a link/ note on SKU requirements here as well
+
 ## Default audit log retention policy
 
 Advanced audit in Microsoft 365 provides a default audit log retention policy for all organizations. This policy retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This default policy retains audit records that contain the value of **Exchange**, **SharePoint**, or **AzureActiveDirectory** for the **Workload** property (which is the service in which the activity occurred). This default policy can't be modified.
+
+COMMENT - this default policy is only applied for users that meet specific license requirement, not all users in the org. Would be good to clarify that.
 
 ## Before you begin
 
@@ -59,7 +63,7 @@ Advanced audit in Microsoft 365 provides a default audit log retention policy fo
    
    b. **Description:** Optional, but helpful to provide information about the policy, such as the record type or workload, users specified in the policy, and the duration.
 
-   c. **Record types:** The audit record type the policy applies to. If you select more than one record type, you can't select activities because the policy will apply to all activities for the selected record types. Also, you leave this property blank, you must select a user in the **Users** box.
+   c. **Record types:** The audit record type the policy applies to. If you select more than one record type, you can't select activities because the policy will apply to all activities for the selected record types. Also, if you leave this property blank, you must select a user in the **Users** box.
 
    d. **Activities:** Use this box to choose activities from the record type that you selected. You can choose specific activities to apply the policy to. If you don't choose specific activities, then the policy will apply to all activities of the selected record type.
 
