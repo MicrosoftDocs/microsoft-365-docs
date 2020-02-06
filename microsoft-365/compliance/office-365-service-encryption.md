@@ -22,7 +22,7 @@ In addition to using volume-level encryption, Exchange Online, Skype for Busines
 
 - Microsoft manages all cryptographic keys. (This option is currently available in SharePoint Online, OneDrive for Business, and Skype for Business.)
 
-- The customer supplies root keys used with service encryption and the customer manages these keys using Azure Key Vault. Microsoft manages all other keys. This option is called Customer Key, and it is currently available for Exchange Online, SharePoint Online, and OneDrive for Business. (Previously referred to as Advanced Encryption with BYOK. See [Enhancing transparency and control for Office 365 customers](http://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) for the original announcement.)
+- The customer supplies root keys used with service encryption and the customer manages these keys using Azure Key Vault. Microsoft manages all other keys. This option is called Customer Key, and it is currently available for Exchange Online, SharePoint Online, and OneDrive for Business. (Previously referred to as Advanced Encryption with BYOK. See [Enhancing transparency and control for Office 365 customers](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) for the original announcement.)
 
 Service encryption provides multiple benefits. For example, Customer Key:
 
@@ -42,12 +42,13 @@ Another benefit of Customer Key is the control you have over the ability of Micr
 
 To learn how to set up Customer Key for Office 365 for Exchange Online, Skype for Business, SharePoint Online, including Team Sites, and OneDrive for Business, see these articles:
 
-- [Controlling your data using Customer Key for Office 365](controlling-your-data-using-customer-key.md)
+- [Service encryption with Customer Key in Office 365](customer-key-overview.md)
+
+- [Set up Customer Key for Office 365](customer-key-set-up.md)
 
 - [Manage Customer Key for Office 365](customer-key-manage.md)
 
 - [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md)
 
 - [Understand the availability key](customer-key-availability-key-understand.md)
-
-- [Service encryption with Customer Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md)
+ 
