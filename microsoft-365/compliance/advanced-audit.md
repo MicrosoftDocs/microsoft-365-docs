@@ -26,7 +26,7 @@ The [unified auditing functionality](search-the-audit-log-in-security-and-compli
 > [!NOTE]
 > Advanced audit is available for organizations with an Office 365 or Microsoft 365 Enterprise E5 subscription. Additionally, a Microsoft 365 E5 Compliance add-on subscription can be assigned to users when per-user licensing is required as is the case for long-term retention of audit logs and high-value audit events.
 
-This article provides an overview of these Advanced Audit capabilities.
+This article provides an overview of these Advanced audit capabilities.
 
 ## Long-term retention of audit logs
 
