@@ -95,7 +95,7 @@ Also note that all disposition actions are audited. To ensure this, you must tur
   
 ## Permissions for disposition
 
-To access the **Disposition** page, reviewers must be assigned the **Disposition Management** role and the **View-Only Audit Logs** role. We recommend creating a new role group called **Disposition Reviewers**, and add these two roles to that role group. [View instructions](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md) for assigning roles and creating role groups.
+To access the **Disposition** page, reviewers must be assigned the **Disposition Management** role and the **View-Only Audit Logs** role. [View instructions](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md) for assigning roles.
 
 Specific to the **View-Only Audit Logs** role:
 
