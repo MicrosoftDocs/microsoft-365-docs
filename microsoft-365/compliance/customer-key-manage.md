@@ -183,29 +183,32 @@ The data purge path differs slightly between the different Office 365 services.
 
 ### Revoke your Customer Keys and the availability key for Exchange Online and Skype for Business
 
-When you initiate the data purge path for Exchange Online and Skype for Business, you make the request against a DEP. Doing so permanently deletes encrypted data within the mailboxes to which that DEP is assigned. Since you can only run the PowerShell cmdlet against one DEP at a time, consider reassigning a single DEP to all of your mailboxes before you initiate the data purge path.
+When you initiate the data purge path for Exchange Online and Skype for Business, you set a permanent data purge request on a DEP. Doing so permanently deletes encrypted data within the mailboxes to which that DEP is assigned.
+
+Since you can only run the PowerShell cmdlet against one DEP at a time, consider reassigning a single DEP to all of your mailboxes before you initiate the data purge path.
+
+> [!WARNING]
+> Do not use the data purge path to delete a subset of your mailboxes. This process is only intended for customers who are exiting the service.
 
 To initiate the data purge path, complete these steps:
 
-1. Verify that all the mailboxes that you want to remove from the service are assigned to the correct DEP.
+1. Remove wrap and unwrap permissions for “O365 Exchange Online” from Azure Key Vaults.
 
-2. Remove wrap and unwrap permissions for “Office 365 Exchange Online” from Azure Key Vaults.
+2. Using a work or school account that has global administrator privileges in your Office 365 organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
-3. Using a work or school account that has global administrator privileges in your Office 365 organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
-
-4. For each DEP that contains mailboxes that you want to delete, run the Set-DataEncryptionPolicy cmdlet as follows.
+3. For each DEP that contains mailboxes that you want to delete, run the Set-DataEncryptionPolicy cmdlet as follows.
 
     ```powershell
-    Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested: $true -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact <ContactName – PhoneNumber – EmailAddress>
+    Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact [<ContactName> –PhoneNumber –EmailAddress]
     ```
 
-   If the command fails, ensure that you've removed the Exchange Online permissions from both keys in Azure Key Vault as specified earlier in this task. Once you've set the PermanentDataPurgeRequested attribute to ``true``, you'll no longer be able to assign this DEP to mailboxes.
+   If the command fails, ensure that you've removed the Exchange Online permissions from both keys in Azure Key Vault as specified earlier in this task. Once you've added the PermanentDataPurgeRequested attribute using the Set-DataEncryptionPolicy cmdlet, you'll no longer be able to assign this DEP to mailboxes.
 
-5. Contact Microsoft support and request the Data Purge eDocument.
+4. Contact Microsoft support and request the Data Purge eDocument.
 
-    At your request, Microsoft sends you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who is legally authorized to sign the paperwork on behalf of your organization.
+    At your request, Microsoft sends you a legal document to acknowledge and authorize data deletion. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who is legally authorized to sign the paperwork on behalf of your organization.
 
-6. Once your representative has signed the legal document, return it to Microsoft (usually through an eDoc signature).
+5. Once your representative has signed the legal document, return it to Microsoft (usually through an eDoc signature).
 
     Once Microsoft receives the legal document, Microsoft runs cmdlets to trigger the data purge which first deletes the policy, marks the mailboxes for permanent deletion, then deletes the availability key. Once the data purge process completes, the data has been purged, is inaccessible to Exchange Online, and is not recoverable.
 
@@ -215,13 +218,13 @@ To initiate the data purge path for SharePoint Online, OneDrive for Business
 
 1. Revoke Azure Key Vault access. All key vault admins must agree to revoke access.
 
-   You do not delete the Azure Key Vault for SharePoint Online. Key vaults may be shared among a number of SharePoint Online tenants and DEPs.
+   You do not delete the Azure Key Vault for SharePoint Online. Key vaults may be shared among several SharePoint Online tenants and DEPs.
 
-1. Contact Microsoft to delete the availability key.
+2. Contact Microsoft to delete the availability key.
 
     When you contact Microsoft to delete the availability key, we'll send you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who's legally authorized to sign the paperwork on behalf of your organization.
 
-1. Once your representative signs the legal document, return it to Microsoft (usually through an eDoc signature).
+3. Once your representative signs the legal document, return it to Microsoft (usually through an eDoc signature).
 
    Once Microsoft receives the legal document, we run cmdlets to trigger the data purge which performs crypto deletion of the tenant key, site key, and all individual per-document keys, irrevocably breaking the key hierarchy. Once the data purge cmdlets complete, your data has been purged.
 
