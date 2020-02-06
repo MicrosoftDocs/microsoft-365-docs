@@ -3,7 +3,7 @@ title: "Service encryption with Customer Key in Office 365"
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 02/05/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -80,8 +80,8 @@ Customer Key uses a variety of encryption ciphers to encrypt keys as shown in th
 
 - [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
 
+- [Learn about the availability key](customer-key-availability-key-understand.md)
+
 - [Customer Lockbox in Office 365](customer-lockbox-requests.md)
 
 - [Office 365 Service Encryption](office-365-service-encryption.md)
-
-- [Learn about the availability key](customer-key-availability-key-understand.md)
