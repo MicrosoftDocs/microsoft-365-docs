@@ -28,6 +28,9 @@ The recommended method to configure a safe sender list is to use mail flow rules
 > [!IMPORTANT]
 > Information on how to create a **Blocked Sender List** is [here](create-block-sender-lists-in-office-365.md).
 
+> [!NOTE]
+> To allow sender domain to send unauthenticated emails (bypass anti-spoofing protection), but not bypassing anti-spam and anti-malware checks, you can add it to [AllowedToSpoof safe sender list]( https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight).
+
 ## Options from most to least recommended
 
 You should always restrict your Allow lists because they bypass many security measures. You must recheck all Allow lists as a part of your standard maintenance, so that you are aware of who is permitted to bypass. The recommendation is to use restrictive mail flow rules where possible.
