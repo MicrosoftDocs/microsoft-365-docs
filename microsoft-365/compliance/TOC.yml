@@ -79,7 +79,7 @@
       items: 
         - name: Create and publish sensitivity labels
           href: create-sensitivity-labels.md
-        - name: Restrict access to content by using encryption in sensitivity labels
+        - name: Restrict access to content by using sensitivity labels to apply encryption
           href: encryption-sensitivity-labels.md
         - name: Apply a sensitivity label to content automatically
           href: apply-sensitivity-label-automatically.md
