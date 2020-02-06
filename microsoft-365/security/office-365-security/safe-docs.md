@@ -41,6 +41,8 @@ Safe Documents is a feature in Office 365 Advanced Threat Protection (ATP) that 
 
 4. When you're finished, click **Save**.
 
+![ATP Safe attachments page](../media/safe-docs.png)
+
 ### Use Exchange Online PowerShell or Exchange Online Protection PowerShell to configure Safe Documents
 
 Use the following syntax:
