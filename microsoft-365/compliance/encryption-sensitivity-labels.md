@@ -68,7 +68,7 @@ If a sensitivity label is applied to unencrypted content, the outcome of the enc
 However, the content might be already encrypted. For example, another user might have applied:
 
 - Their own permissions, which include user-defined permissions when prompted by a label, custom permissions by the Azure Information Protection client, and the **Restricted Access** document protection from within an Office app.
-- An Azure Rights Management protection template that encrypts the content independently from a label.
+- An Azure Rights Management protection template that encrypts the content independently from a label. This category includes mail flow rules that apply encryption by using rights protection.
 - A label that applies encryption with permissions assigned by the administrator.
 
 The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
