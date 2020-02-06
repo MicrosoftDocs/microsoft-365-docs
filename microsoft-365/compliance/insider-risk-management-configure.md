@@ -31,37 +31,26 @@ Complete these steps to set up and use insider risk management in your Microsoft
 
 ## Step 1 (required): Enable permissions for insider risk management
 
-There are four permission roles used to configure and manage insider risk management. To continue with these configuration steps, your tenant administrators must first assign you the **Insider Risk Management Admin** role.
+There are four roles groups used to configure permissions to manage insider risk management features. To continue with these configuration steps, your tenant administrators must first assign you to the **InsiderRiskManagement** or **Insider Risk Management Admin** role group. To access and manage insider risk management features after initial configuration, users must be a member of at least one of the insider risk management role groups.
 
-| **Role** | **Role permissions** |
-| ---- | ---------------- |
-| **Insider Risk Management Admin** | Create, read, update, and delete insider risk management policies <br> Create, read, update, and delete insider risk management permissions and roles |
-| **Insider Risk Management Analysts** | Access to all insider risk management alerts, cases, and notices |
-| **Insider Risk Management Investigators** | Access to all insider risk management alerts, cases, notices, and the Content Explorer for all cases |
-| **Insider Risk Management Viewer** | View-only access to all insider risk management alerts, cases, notices, and the Content Explorer for all cases |
+Depending on the structure of your compliance management team, you have options to assign users to specific role groups to manage different sets of insider risk management features. Choose one of these role group options when configuring insider risk management:
 
-Depending on the structure of your compliance management team, you have two permission options to configure roles to manage insider risk management features. Choose one of these role management options when configuring insider risk management:
+| **Role group** | **Role permissions** |
+| :---- | :---------------- |
+| **InsiderRiskManagement** | Use this role group to manage insider risk management for your organization in a single group. By adding all user accounts for designated administrators, analysts, and investigators, you can configure insider risk management permissions in a single group. This role group contains all the insider risk management permission roles. This is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users.|
+| **InsiderRiskManagementAdmin** | Use this role group to initially configure insider risk management and later to segregate insider risk administrators into a defined group.  Users in this role group can create, read, update, and delete insider risk management policies, global settings, and role group assignments. |
+| **InsiderRiskManagementAnalysts** | Use this group to assign permissions to users that will act as insider risk case analysts. Users in this role group can access to all insider risk management alerts, cases, and notices templates. They cannot access the insider risk Content Explorer. |
+| **InsiderRiskManagementInvestigators** | Use this group to assign permissions to users that will act as insider risk data investigators. Users in this role group can access to all insider risk management alerts, cases, notices templates, and the Content Explorer for all cases. |
 
-1. **Use the default Insider Risk Management role group**: Use this role group to manage insider risk management for your organization by adding all user accounts for designated administrators, analysts, and investigators in a single group. This role group contains all the insider risk management permission roles. This is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users.
-2. **Create different groups for different management roles**: For organizations that need to separate permissions for configuring and managing insider risk management, you'll need to create new role groups and assign appropriate roles and users to the new groups. For example, if you want different permissions for insider risk management analysis and investigations, you'll need to create a group for analysts and a separate group for investigators. For each group, you'll assign the required roles for these responsibilities and then add the users that should be assigned to the group.
+### Add users to an insider risk management role group
 
-If you decide to configure different groups for different roles, use the following table to assign the required roles to each role group:
-
-| **Group example** | **Required roles** |
-| ---- | ---------------- |
-| **Administrators** | *Insider Risk Management Admin* role |
-| **Analysts** | *Insider Risk Management Analysts* role <br> *Case Management* role |
-| **Investigators** | *Insider Risk Management Investigators* role <br> *Case Management* role |
-
-### Option 1: Add users to the Insider Risk Management role group
-
-If you want to use one role group for all users configuring and managing insider risk management, complete the following steps to add users to the default **Insider Risk Management** role group:
+Complete the following steps to add users to an insider risk management role group:
 
 1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Microsoft Office 365 security and compliance center, go to **Permissions**. Select the link to view and manage roles in Office 365.
 
-3. Select the *Insider Risk Management* role group, then select **Edit role group**.
+3. Select the insider risk management role group you want to add users to, then select **Edit role group**.
 
 4. Select **Choose members** from the left navigation pane, then select **Edit**.
 
@@ -70,26 +59,6 @@ If you want to use one role group for all users configuring and managing insider
 6. Select **Add**, then select **Done**.
 
 7. Select **Save** to add the users to the role group. Select **Close** to complete the steps.
-
-### Option 2: Create a new role group
-
-If you need to create separate role groups for different management roles, complete the following steps to create each new group:
-
-1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
-
-2. In the Microsoft Office 365 security and compliance center, go to **Permissions**. Select the link to view and manage roles in Office 365.
-
-3. Select **Create**.
-
-4. In the **Name** field, give the new role group a friendly name. Select **Next**.
-
-5. Select **Choose roles** and then select **Add**. Select the checkbox for the roles you need to assign. For example, if this group is for insider risk analysts, select the *Insider Risk Management Analysts* role and the *Case Management* role, then select **Add** and **Done**. Select **Next**.
-
-6. Select **Choose members** and then select **Add**. Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**. Select **Next**.
-
-7. Select **Create role group** to finish.
-
-For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
 ## Step 2 (required): Enable the Office 365 audit log
 
