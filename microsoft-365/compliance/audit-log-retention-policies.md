@@ -21,7 +21,7 @@ description: ""
 
 # Manage audit log retention policies
 
-You can create and manage audit log retention policies in the Security & Compliance Center. Audit log retention policies are part of the new Advanced Audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization. You can retain audit logs for up to one year. You can create policies based on the following criteria:
+You can create and manage audit log retention policies in the Security & Compliance Center. Audit log retention policies are part of the new Advanced audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization. You can retain audit logs for up to one year. You can create policies based on the following criteria:
 
 - All activities in one or more Microsoft services
 
@@ -31,7 +31,7 @@ You can create and manage audit log retention policies in the Security & Complia
 
 ## Default audit log retention policy
 
-Advanced Audit in Microsoft 365 provides a default audit log retention policy for all organizations. This policy retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This default policy retains any audit records that contain the value of **Exchange**, **SharePoint**, or **AzureActiveDirectory** for the **Workload** property (which is the service in which the activity occurred) in the audit record. 
+Advanced audit in Microsoft 365 provides a default audit log retention policy for all organizations. This policy retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This default policy retains audit records that contain the value of **Exchange**, **SharePoint**, or **AzureActiveDirectory** for the **Workload** property (which is the service in which the activity occurred). This default policy can't be modified.
 
 ## Before you begin
 
@@ -39,7 +39,7 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
 - You can have a maximum of 50 audit log retention policies in your organization.
 
-- All custom audit log retention policies (created by your organization) take priority of the default retention policy. For example, if you create an audit log retention policy for Exchange mailbox activity that has a shorter retention period that one year, audit records for Exchange mailbox activities will be retained for the shorter duration specified by the custom retention policy.
+- All custom audit log retention policies (created by your organization) take priority of the default retention policy. For example, if you create an audit log retention policy for Exchange mailbox activity that has a retention period that's shorter than one year, audit records for Exchange mailbox activities will be retained for the shorter duration specified by the custom policy.
 
 ## Create an audit log retention policy in the Security & Compliance Center
 
