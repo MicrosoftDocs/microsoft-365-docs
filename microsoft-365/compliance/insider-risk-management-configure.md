@@ -91,7 +91,13 @@ If you need to create separate role groups for different management roles, compl
 
 For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
-## Step 2 (optional): Configure the Microsoft 365 human resources data connector
+## Step 2 (required): Enable the Office 365 audit log
+
+Insider risk management uses audit logs for user insights and activities configured in policies. The audit logs are a summary of all activities associated with an insider risk management policy or anytime a policy changes.
+
+For step-by-step instructions to turn on auditing, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+
+## Step 3 (optional): Configure the Microsoft 365 human resources data connector
 
 Insider risk management supports importing user and log data imported from 3rd-party risk management and human resources platforms. The Microsoft 365 Human Resources (HR) data connector allows you to pull in human resources data from CSV files, including user termination and last employment dates. This data helps drive the alert indicators in insider risk management policies and is an important part of configuring full risk management coverage in your organization.
 
@@ -100,7 +106,7 @@ See the [Set up a connector to import HR data](import-hr-data.md) topic for step
 >[!IMPORTANT]
 >If you plan on configuring a policy using the *Departing employee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template. If you configure more than one HR Connector for your organization, insider risk management will automatically pull indicators from all HR Connectors.
 
-## Step 3 (optional): Configure Data Loss Prevention (DLP) policies
+## Step 4 (optional): Configure Data Loss Prevention (DLP) policies
 
 Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties. When configuring an insider risk management policy with the *Data leaks* template, you have to assign a specific DLP policy to the policy. This policy helps drive the alert indicators for sensitive information is an important part of configuring full risk management coverage in your organization.
 
@@ -109,7 +115,7 @@ See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) to
 >[!IMPORTANT]
 >If you plan on configuring a policy using the *Data leaks* template, you'll need to configure at least one DLP policy to use the full signal detection features of the policy template. If you configure more than one DLP policy for your organization, you'll need to assign an insider risk management policy per DLP policy.
 
-## Step 4 (required): Create an insider risk management policy
+## Step 5 (required): Create an insider risk management policy
 
 Insider risk management policies include assigned users and define which types of risk indicators are configured for alerts. Before activities can trigger alerts, a policy must be configured.
 

@@ -53,14 +53,56 @@ Protecting data and preventing data leaks is a constant challenge for most organ
 
 Detecting and taking action to prevent offensive and abusive behavior is a critical component of preventing risk. Built-in offensive language classifiers in Microsoft 365 can scan sent email messages from Exchange Online mailboxes in your organization for different types of compliance issues. These classifiers use a combination of artificial intelligence and keywords to identify language in email likely to violate anti-harassment policies. Use this template to quickly create a policy that uses these classifiers to automatically detect email message content that may be considered abusive or offensive. Insider risk management uses classifiers that scan sent email messages for English language terms and sentiment for offensive language.
 
-## Monitoring windows
+## Policy settings
+
+Insider risk settings apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings* control located at the top of all insider risk management tabs. These settings control privacy, indicators, monitoring windows, and intelligent detections.
+
+### Privacy
+
+Protecting the privacy of users that have policy matches is important and can help promote objectivity in data investigation and analysis reviews for insider risk alerts. For users with insider risk policy matches, you can choose one of the following settings:
+
+- **Show anonymized versions of user names**: User names are anonymized to prevent admins, data investigators, and reviewers from seeing who is associated with policy alerts. For example, a user 'Grace Taylor' would appear with a randomized psuedonym such as 'AnonIS8-988' in all areas of the insider risk management experience. Choosing this setting anonymizes all users with current and past policy matches and applies to all policies. User profile information in the insider risk alert and case details will not be available when this option is chosen. However, user names are displayed when adding new users to existing policies or when assigning users to new policies. If you choose to turn this setting off, user names will be displayed for all users that have current or past policy matches.
+- **Do not show anonymized versions of user names**: User names are displayed for all current and past policy matches for alerts and cases. User profile information (the name, title, alias, and organization or department) is displayed for the user for all insider risk management alerts and cases.
+
+### Indicators
+
+Insider risk policy templates define the type of risk activities that you want to detect and investigate. Each policy template is based on specific indicators that correspond to particular risk activities. Alerts are triggered by policies when users perform activities related to these indicators.
+
+Insider risk management allows you to define areas of interest across all policies within these indicators. While some indicators are requirements for specific policies, all indicators can provide enrichment and depth to configured policies. For example, the *HR events (termination date)* indicator is a requirement to configure a policy with the *Departing employee data theft* template. However, selecting this indicator as global policy setting includes this indicator in policies configured with any policy template. By having this indicator included in other policies, the policy matching and alert process is enhanced and alert risk severity levels for policy matches are calculated with more variables. As a general recommendation, you should select all indicators as the global insider risk management setting. Exceptions would be.....
+
+Use the following table to learn more about each indicator, any requirements, and its uses:
+
+| **Indicator** | **Description** | **Required** | **Uses** |
+|:--------------|:----------------|:-------------|:---------|
+| **HR Events (Termination Date)** |  | *Departing employee data theft* template |  |
+| **Sharing files from SharePoint Online** |  |  |  |
+| **Sharing folders from SharePoint Online** |  |  |  |
+| **Sharing SharePoint Online sites** |  |  |  |
+| **Downloading content from SharePoint Online** |  |  |  |
+| **Emailing outside the organization** |  |  |  |
+| **Copying sensitive of classified to files to USB** |  |  |  |
+| **Copying sensitive or classified files to cloud** |  |  |  |
+| **Printing sensitive or classified documents** |  |  |  |
+| **Tampering with security software** |  |  |  |
+| **Use of unauthorized software** |  |  |  |
+| **Use of offensive language in email** |  |  |  |
+| **Past policy violations** |  |  |  |
+| **Measure anomalous activity** |  |  |  |
+
+### Monitoring windows
 
 Policy monitoring windows allow you to define time periods that trigger policy activation based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following monitoring windows are available:
 
 - **In-scope timespan**: Available for all policy templates, the *In-scope timespan* is the defined number of days that the window activates **after** a triggering event. The window activates for 1 to 30 days after a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *In-scope timespan* to 30 days. Several months have passed since you configured the policy and a triggering event occurs for one of the users included in the policy. The triggering event activates the *In-scope timespan* and the policy is active for that user for 30 days after the triggering event occurred.
 - **Historic timespan**: Available for all policy templates, the *historic timespan* is the defined number of days that the window activates **before** a triggering event. The window activates for 0 to 180 days before a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Historic timespan* to 90 days. Several months have passed since you configured the policy and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Historic timespan* and the policy gathers historic activities for that user for 90 days prior to the triggering event.
-- **Future termination window**: You'll see this setting in the pubic preview, but it isn’t applied to any policies and will be removed for the production release of this solution.
-- **Past termination window**: You'll see this setting in the pubic preview, but it isn’t applied to any policies and will be removed for the production release of this solution.
+
+### Intelligent detections
+
+Intelligent detection settings help refine how the detection of risky activities are processed for alerts. In certain circumstances, you may need to define files types to ignore or you want to enforce a detection level for files to help define a minimum bar for alerts. When using offensive language policies, you may need to increase or decrease the detection sensitivity to control the amount of reported policy matches. Use these settings to control file type exclusions, file volume limits, and the offensive language detection sensitivity:
+
+- **Anomaly detections**: Anomalous detections include settings for file type exclusions and file volume limits.
+    - **File type exclusions**: To exclude specific file types, enter file type extensions separated by commas. For example, to exclude certain types of music files from policy matches you may enter *.aac,.mp3,.wav,.wma* in the **File type exclusions** field.
+- **Offensive language detections**: 
 
 ## Create a new policy
 
