@@ -68,7 +68,7 @@ If a sensitivity label is applied to unencrypted content, the outcome of the enc
 However, the content might be already encrypted. For example, another user might have applied:
 
 - Their own permissions, which include user-defined permissions when prompted by a label, custom permissions by the Azure Information Protection client, and the **Restricted Access** document protection from within an Office app.
-- An Azure Rights Management protection template that encrypts the content independently from a label.
+- An Azure Rights Management protection template that encrypts the content independently from a label. This category includes mail flow rules that apply encryption by using rights protection.
 - A label that applies encryption with permissions assigned by the administrator.
 
 The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
@@ -202,7 +202,7 @@ You can use these options to let users assign permissions when they manually app
 
 - In Word, PowerPoint, and Excel, a user is prompted to select their own permissions for specific users, groups, or organizations. 
     > [!NOTE]
-    > This option for Word, PowerPoint, and Excel is supported by the Azure Information Protection unified labeling client, and is currently rolling out in [preview for Windows and Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). If this option is selected but isn't supported for a user's app, that label doesn't display to the user.
+    > This option for Word, PowerPoint, and Excel is supported by the Azure Information Protection unified labeling client. For apps that use built-in labeling, support is currently rolling out in [preview for Windows and Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). If this option is selected but isn't supported for a user's app, that label doesn't display to the user.
 
 When the options are supported, use the following table to identify when users see the sensitivity label:
 
