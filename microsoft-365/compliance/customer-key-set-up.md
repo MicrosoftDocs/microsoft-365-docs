@@ -138,7 +138,7 @@ Before contacting the Office 365 team, you must perform the following steps for 
    Subscription IDs for which you want to have the mandatory retention period finalized.
    The output of Get-AzProviderFeature for each subscription.
 
-  The Service Level Agreement (SLA) for completion of this process is five business days once Microsoft has been notified (and verified)   that you have registered your subscriptions to use a mandatory retention period.
+   The Service Level Agreement (SLA) for completion of this process is five business days once Microsoft has been notified (and verified) that you have registered your subscriptions to use a mandatory retention period.
 
 4. Once you receive notification from Microsoft that registration is complete, verify the status of your registration by running the Get-AzProviderFeature cmdlet as follows. Perform this action for each subscription.
 

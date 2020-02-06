@@ -196,13 +196,13 @@ To initiate the data purge path, complete these steps:
 
 2. Using a work or school account that has global administrator privileges in your Office 365 organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
-3. For each DEP that contains mailboxes that you want to delete, run the Set-DataEncryptionPolicy cmdlet as follows.
+3. For each DEP that contains mailboxes that you want to delete, run the [Set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-dataencryptionpolicy) cmdlet as follows.
 
     ```powershell
-    Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact [<ContactName> –PhoneNumber –EmailAddress]
+    Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact <ContactName>
     ```
 
-   If the command fails, ensure that you've removed the Exchange Online permissions from both keys in Azure Key Vault as specified earlier in this task. Once you've added the PermanentDataPurgeRequested attribute using the Set-DataEncryptionPolicy cmdlet, you'll no longer be able to assign this DEP to mailboxes.
+   If the command fails, ensure that you've removed the Exchange Online permissions from both keys in Azure Key Vault as specified earlier in this task. Once you've set the PermanentDataPurgeRequested switch using the Set-DataEncryptionPolicy cmdlet, you'll no longer be able to assign this DEP to mailboxes.
 
 4. Contact Microsoft support and request the Data Purge eDocument.
 
