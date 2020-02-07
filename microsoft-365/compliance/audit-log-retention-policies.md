@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: ""
+description: "Audit log retention policies are part of the new Advanced audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization."
 ---
 
 # Manage audit log retention policies
@@ -29,19 +29,20 @@ You can create and manage audit log retention policies in the Security & Complia
 
 - A priority level that specifies which policy takes precedence in you have multiple policies in your organization
 
-COMMENT - Should we add a link/ note on SKU requirements here as well
-
 ## Default audit log retention policy
 
-Advanced audit in Microsoft 365 provides a default audit log retention policy for all organizations. This policy retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This default policy retains audit records that contain the value of **Exchange**, **SharePoint**, or **AzureActiveDirectory** for the **Workload** property (which is the service in which the activity occurred). This default policy can't be modified.
+Advanced audit in Microsoft 365 provides a default audit log retention policy for all organizations. This policy retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This default policy retains audit records that contain the value of **Exchange**, **SharePoint**, or **AzureActiveDirectory** for the **Workload** property (which is the service in which the activity occurred). This default policy can't be modified. See the [More information](#more-information) in this article for a list of record types for each workload included in the default policy.
 
-COMMENT - this default policy is only applied for users that meet specific license requirement, not all users in the org. Would be good to clarify that.
+> [!NOTE]
+> The default audit log retention policy only applies to audit records for activity performed by users who are assigned an Office 365 or Microsoft 365 E5 license or have a Microsoft 365 E5 Compliance add-on license. If you have non-E5 users in your organization, their corresponding audit records are only retained for 90 days.
 
 ## Before you begin
 
 - You have to be assigned the Organization Configuration role in the Security & Compliance Center to create or modify an audit retention policy.
 
 - You can have a maximum of 50 audit log retention policies in your organization.
+
+- To retain an audit log for longer than 90 days, the user who generated the audit log must be assigned an Office 365 or Microsoft 365 E5 license or have a Microsoft 365 E5 Compliance add-on license.
 
 - All custom audit log retention policies (created by your organization) take priority of the default retention policy. For example, if you create an audit log retention policy for Exchange mailbox activity that has a retention period that's shorter than one year, audit records for Exchange mailbox activities will be retained for the shorter duration specified by the custom policy.
 
@@ -120,8 +121,26 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 For more information, see [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-unifiedauditlogretentionpolicy).
 
-## More information 
+## More information
 
 - Use the **Set-UnifiedAuditLogRetentionPolicy** cmdlet in Security & Compliance Center PowerShell to modify an existing audit log retention policy. For more information, see [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/set-unifiedauditlogretentionpolicy).
 
 - Use the **Set-UnifiedAuditLogRetentionPolicy** cmdlet in Security & Compliance Center PowerShell to delete an audit log retention policy. It might take up to 30 minutes of the policy to be completely removed. For more information, see [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/remove-unifiedauditlogretentionpolicy).
+
+- The following table list all the record types (for each workload) included in the default audit log retention policy. This means that audit logs for any operation with this record type are retained for one year, unless an audit log retention policy with a higher priority takes precedence for a specific record type, operation, or user.
+
+
+   |AzureActiveDirectory |Exchange  |SharePoint|
+   |:---------|:---------|:---------|
+   |AzureActiveDirectory|ExchangeAdmin|ComplianceDLPSharePoint|
+   |AzureActiveDirectoryAccountLogon|ExchangeItem|ComplianceDLPSharePointClassification|
+   |AzureActiveDirectoryStsLogon|Campaign|Project|
+   ||ComplianceDLPExchange|SharePoint|
+   ||ComplianceSupervisionExchange|SharePointCommentOperation|
+   ||CustomerKeyServiceEncryption|SharePointContentTypeOperation|
+   ||ExchangeAggregatedOperation|SharePointFieldOperation|
+   ||ExchangeItemAggregated|SharePointFileOperation|
+   ||ExchangeItemGroup|SharePointListOperation|
+   ||InformationBarrierPolicyApplication|SharePointSharingOperation|
+   ||||
+

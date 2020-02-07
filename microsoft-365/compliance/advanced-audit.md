@@ -24,13 +24,13 @@ description: "."
 The [unified auditing functionality](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 provides organizations with visibility into many types of audited activities across many different services in Microsoft 365. Now with the release of Advanced audit in Microsoft 365, we're adding new auditing capabilities that can help your organization with forensic and compliance investigations.
 
 > [!NOTE]
-> Advanced audit is available for organizations with an Office 365 or Microsoft 365 Enterprise E5 subscription. Additionally, a Microsoft 365 E5 Compliance add-on subscription can be assigned to users when per-user licensing is required as is the case for long-term retention of audit logs and high-value audit events.
+> Advanced audit is available for organizations with an Office 365 or Microsoft 365 Enterprise E5 subscription. Additionally, a Microsoft 365 E5 Compliance add-on subscription can be assigned to users for when per-user licensing is required for Advanced audit features as is the case for long-term retention of audit logs and high-value audit events.
 
 This article provides an overview of these Advanced audit capabilities.
 
 ## Long-term retention of audit logs
 
-Advanced audit retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This is accomplished by a default audit log retention policy that retains any audit record that contains the value of **Exchange**, **SharePoint**, or **AzureActiveDirectory** for the **Workload** property (which indicates the service in which the activity occurred) for one year. This can help with on-going forensic or compliance investigations.
+Advanced audit retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This is accomplished by a default audit log retention policy that retains any audit record that contains the value of **Exchange**, **SharePoint**, or **AzureActiveDirectory** for the **Workload** property (which indicates the service in which the activity occurred) for one year. This can help with on-going forensic or compliance investigations. For more information, see the "Default audit log retention policy" section in [Manage audit log retention policies](audit-log-retention-policies.md#default-audit-log-retention-policy).
 
 ## Audit log retention policies
 
@@ -52,17 +52,18 @@ The new MailItemsAccessed mailbox action replaces MessageBind in mailbox auditin
 
 - MessageBind was only configurable for AuditAdmin user logon type; it did not apply to delegate or owner actions. MailItemsAccessed applies to all logon types.
 
-- MessageBind only covered access by a mail client. It didn't apply to sync activities. MailItemsAccessed events are trigger by both bind and sync access types.
+- MessageBind only covered access by a mail client. It didn't apply to sync activities. MailItemsAccessed events are triggered by both bind and sync access types.
 
-- MessageBind actions would trigger multiple audit records to be created when the same email message was accessed, which resulted in "noisy" auditing. In contrast, MailItemsAccessed events are aggregated in fewer audit records.
+- MessageBind actions would trigger multiple audit records to be created when the same email message was accessed, which resulted in auditing "noise". In contrast, MailItemsAccessed events are aggregated in fewer audit records.
 
-For more information about the MailIemsAccessed mailbox action, see 
-
+For more information about mailbox auditing logging, see [Manage mailbox auditing](enable-mailbox-auditing.md).
 
 ## High-bandwidth access to the Office 365 Management Activity API
 
-Organizations that consuming auditing logs through the Office 365 Management Activity API were restricted by throttling limits at publisher level. This means that for a publisher pulling data on behalf of multiple customers, the limit was shared by all those customers.
- 
-With the release of Advanced audit, we're moving from a publisher-level limit to a tenant level limit. The result is that each organization will get their own fully allocated bandwidth quota to access their auditing data. The bandwidth is not a static, predefined limit but will be determined by the number of seats in the tenant with E5 and premium tenants getting more bandwidth than regular tenants
- 
-All organizations will start with a baseline of 2K requests per minute. This limit will be increased depending on an organization's seat count and their licensing subscription. E5 tenants will get twice as much bandwidth as compared to non-E5 organizations. There will also be an upper cap for bandwidth to protect the health of the service. 
+Organizations that access auditing logs through the Office 365 Management Activity API were restricted by throttling limits at the publisher level. This means that for a publisher pulling data on behalf of multiple customers, the limit was shared by all those customers.
+
+With the release of Advanced audit, we're moving from a publisher-level limit to a tenant-level limit. The result is that each organization will get their own fully allocated bandwidth quota to access their auditing data. The bandwidth is not a static, predefined limit but is determined by the number of seats in the organization, and  E5 organizations will get more bandwidth than non-E5 organizations.
+
+All organizations with will initially receive a baseline of 2,000 requests per minute. This limit will be increased depending on an organization's seat count and their licensing subscription. E5 organizations will get twice as much bandwidth as non-E5 organizations. There will also be cap on the maximum bandwidth to protect the health of the service.
+
+For more information, see the "API Throttling" section in [Office 365 Management Activity API reference](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
