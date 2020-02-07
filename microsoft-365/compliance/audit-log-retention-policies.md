@@ -125,22 +125,20 @@ For more information, see [Get-UnifiedAuditLogRetentionPolicy](https://docs.micr
 
 - Use the **Set-UnifiedAuditLogRetentionPolicy** cmdlet in Security & Compliance Center PowerShell to modify an existing audit log retention policy. For more information, see [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/set-unifiedauditlogretentionpolicy).
 
-- Use the **Set-UnifiedAuditLogRetentionPolicy** cmdlet in Security & Compliance Center PowerShell to delete an audit log retention policy. It might take up to 30 minutes of the policy to be completely removed. For more information, see [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/remove-unifiedauditlogretentionpolicy).
+- Use the **Remove-UnifiedAuditLogRetentionPolicy** cmdlet in Security & Compliance Center PowerShell to delete an audit log retention policy. It might take up to 30 minutes for the policy to be completely removed. For more information, see [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/remove-unifiedauditlogretentionpolicy).
 
-- The following table list all the record types (for each workload) included in the default audit log retention policy. This means that audit logs for any operation with this record type are retained for one year, unless an audit log retention policy with a higher priority takes precedence for a specific record type, operation, or user.
-
+- As previously stated, audit records for operations in Azure Active Directory, Exchange, and SharePoint are retained for one year. The following table list all the record types (for each of these services) included in the default audit log retention policy. This means that audit logs for any operation with this record type are retained for one year unless a custom audit log retention policy takes precedence for a specific record type, operation, or user. The Enum value (which is displayed as the value for the RecordType property in an audit record) for each record type is shown in parentheses.
 
    |AzureActiveDirectory |Exchange  |SharePoint|
    |:---------|:---------|:---------|
-   |AzureActiveDirectory|ExchangeAdmin|ComplianceDLPSharePoint|
-   |AzureActiveDirectoryAccountLogon|ExchangeItem|ComplianceDLPSharePointClassification|
-   |AzureActiveDirectoryStsLogon|Campaign|Project|
-   ||ComplianceDLPExchange|SharePoint|
-   ||ComplianceSupervisionExchange|SharePointCommentOperation|
-   ||CustomerKeyServiceEncryption|SharePointContentTypeOperation|
-   ||ExchangeAggregatedOperation|SharePointFieldOperation|
-   ||ExchangeItemAggregated|SharePointFileOperation|
-   ||ExchangeItemGroup|SharePointListOperation|
-   ||InformationBarrierPolicyApplication|SharePointSharingOperation|
+   |AzureActiveDirectory (8)|ExchangeAdmin (1)|ComplianceDLPSharePoint (11)|
+   |AzureActiveDirectoryAccountLogon (9)|ExchangeItem (2)|ComplianceDLPSharePointClassification (33)|
+   |AzureActiveDirectoryStsLogon (15)|Campaign (62)|Project (35)|
+   ||ComplianceDLPExchange (13)|SharePoint (4)|
+   ||ComplianceSupervisionExchange (68)|SharePointCommentOperation (37)|
+   ||CustomerKeyServiceEncryption (69)|SharePointContentTypeOperation (55)|
+   ||ExchangeAggregatedOperation (19)|SharePointFieldOperation (56)|
+   ||ExchangeItemAggregated (50)|SharePointFileOperation (6)|
+   ||ExchangeItemGroup (3)|SharePointListOperation (36)|
+   ||InformationBarrierPolicyApplication (53)|SharePointSharingOperation (14)|
    ||||
-
