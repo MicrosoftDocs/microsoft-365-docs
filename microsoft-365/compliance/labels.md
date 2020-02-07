@@ -310,7 +310,11 @@ Examples queries:
 
 When you choose the option for a trainable classifier, you can select one of the ready to use classifiers, or a classifier that you have trained. Ready to use classifers include **Offensive Language**, **Resumes**, **SourceCode**, **Harassment**, **Profanity**, and **Threat**.
 
+To automatically apply a label by using this option, SharePoint Online sites and mailboxes must have at least 10 MB of data.
+
 For more information about both types of classifers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
+
+For an example configuration, see [How to prepare for and use a ready to use classifier](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-ready-to-use-classifier).
 
 ## Applying a default retention label to all content in a SharePoint library, folder, or document set
 
