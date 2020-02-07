@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 02/03/2020
+ms.date: 02/07/2020
 search.appverid:
 - MET150
 ms.collection:
