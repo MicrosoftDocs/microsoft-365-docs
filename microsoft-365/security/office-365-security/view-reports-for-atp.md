@@ -164,5 +164,7 @@ If you are not seeing data in your ATP reports, double-check that your policies 
 [Create a schedule for a report in the Security &amp; Compliance Center](create-a-schedule-for-a-report.md)
   
 [Set up and download a custom report in the Security &amp; Compliance Center](set-up-and-download-a-custom-report.md)
+
+[Role permissions (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
   
 
