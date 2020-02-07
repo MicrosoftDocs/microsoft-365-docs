@@ -18,6 +18,10 @@ With these dashboards you can find the answers to questions like these:
 - Which apps are most used and during which times?
 - Which apps are causing trouble by crashing or hanging a lot?
 - How is Microsoft Managed Desktop Operations mitigating or resolving such problems?
+- Which apps are consuming the most energy?
+- What's the predicted battery life my devices?
+- What is the current status of security updates on devices?
+- How long did it take for 95% of the devices to get current with the latest security update?
 
 To access these views from the Microsoft 365 Admin Center, select **View details** in the **Reports** area:
 
@@ -41,3 +45,9 @@ Learn more about [reliability insights](reliability-insights.md).
 This view shows you information about the energy consumption of apps and projected battery life for devices in your environment. To view this information, select the **Battery** tab.
 
 Learn more about [Battery insights](battery-insights.md).
+
+## Windows security update insights
+
+This view shows you information about the status of security updates for your Microsoft Managed Desktop devices. To view this information, select the **Windows security udates** tab.
+
+Learn more about [Security update insights](security-update-insights.md).

@@ -21,7 +21,7 @@ For devices to be updated by Windows Update, they must be connected to the Inter
 
 We categorize device activity in the context of Windows Update with these terms:
 
-- <strong>Active:</strong> Devices that have met the minimum usage criteria (six hours, two continuous) for the most recent security update release and have checked in with Intune at least every five days
+- <strong>Active:</strong> Devices that have met the minimum usage criteria (six hours, two continuous) for the most recent security update release and have checked in with Microsoft Intune at least every five days
 - <strong>Synced:</strong> Devices that have checked in with Intune within the last 28 days
 - <strong>Out of sync</strong> – Devices that have <i>not</i> checked in with Intune in the last 28 days
 
@@ -50,3 +50,6 @@ You can view this data for previous update cycles by using the dropdown menu {lo
 
 {we should also explain how all this works for out-of-band security updates....}
 
+The <strong>Updated active devices by deployment group</strong> area offers a different view by showing the progress of the update installation for each of the Microsoft Managed Desktop Deployment groups.
+
+The <strong>Days to reach target</strong> area displays how long it took for 95% of the total number of devices to be updated with the current security update. {maybe we should clarify a little here? Like, say it's 3 days after the update is released--does it show how long it took to get to 95% for the previous release or what does it do after the release and before the 95% occurs?}
