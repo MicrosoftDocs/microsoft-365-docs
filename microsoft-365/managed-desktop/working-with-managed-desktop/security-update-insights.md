@@ -1,0 +1,52 @@
+---
+title: Security update insights
+description:  
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+ms.service: m365-md
+author: jaimeo
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+---
+
+# Security update insights
+This view provides an overview of the status of security updates for your Microsoft Managed Desktop devices. 
+
+To view usage data, select the <strong>Windows security updates insights</strong> tab.
+
+![Usage pane. Device usage graph (percentage usage versus time) in upper left. Application usage table in upper right. Device listing table across the bottom with columns device name, model, serial number, display name, user name, current state (active, low, or inactive), total device usage in hours, and number of active days.](IMAGE.png)
+
+## Device status
+
+For devices to be updated by Windows Update, they must be connected to the Internet and not in a hibernating state for a minimum of six hours, two of which must be continuous. As long as a device is connected and not hibernating, it's considered to be "in use." Although it's possible for a device that doesn't meet these requirements will be updated, devices that do have the highest likelihood of being updated during the current update cycle. 
+
+We categorize device activity in the context of Windows Update with these terms:
+
+- <strong>Active:</strong> Devices that have met the minimum usage criteria (six hours, two continuous) for the most recent security update release and have checked in with Intune at least every five days
+- <strong>Synced:</strong> Devices that have checked in with Intune within the last 28 days
+- <strong>Out of sync</strong> – Devices that have <i>not</i> checked in with Intune in the last 28 days
+
+{I'm not sure a picture would accomplish much here, TBH}
+
+
+
+## Update version status
+
+Microsoft releases security updates every second Tuesday of the month. Each release adding important updates for known security vulnerabilities. Microsoft Managed Desktop ensures that 95% of its managed devices are updated with the latest available cumulative update every month. {careful--the often-spoken-of "latest cumulative update" isn't just security updates, I don't think.}
+
+We categorize the status of security update versions with these terms:
+
+- <strong>Current:</strong> Devices that are running the update released in the current month
+- <strong>Previous:</strong> Devices running the update that was released in the previous month
+- <strong>Older:</strong> Devices running any security update released prior to the previous month
+
+You should see few devices in the <strong>Older</strong> category--a large or growing population probably indicates a systemic problem that you should investigate. {can we suggest a potential example that would cause this?}
+
+
+## Deployment progress
+
+At the beginning of each security update release cycle, Microsoft Managed Desktop takes a snapshot of the device population and sets its deployment target at 95% of that population. The <strong>Deployment progress</strong> area shows a historical trend, updated daily, tracking how closely the update deployment meets this target for each release. This graph only shows devices with <strong>[Active](#device-status)</strong> status.
+
+You can view this data for previous update cycles by using the dropdown menu {located where?}.
+
+{we should also explain how all this works for out-of-band security updates....}
+
