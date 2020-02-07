@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Retention labels in Office 365 can help you take the right actions on the right content. With retention labels, you can classify data across your organization for governance, and enforce retention rules based on that classification. You can also use retention labels to implement records management across Office 365."
+description: "Use retention labels to classify data across your organization for governance, and enforce retention rules based on that classification. You can also use retention labels to implement a records management solution for Microsoft 365."
 ---
 
 # Overview of retention labels
@@ -304,6 +304,10 @@ Examples queries:
     - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
 
 ![Query editor](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+
+### Apply labels to content by using trainable classifers
+
+...
 
 ## Applying a default retention label to all content in a SharePoint library, folder, or document set
 
