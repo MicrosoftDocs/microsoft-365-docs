@@ -106,7 +106,7 @@ Yes. You may use the certifications of Microsoft cloud services as the foundatio
 
 ## Use Microsoft Compliance Score to assess your risk
 
-[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), use the pre-configured [FeDRAMP template](https://go.microsoft.com/fwlink/?linkid=2118102) to help your organization meet the requirements for this regulation.
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), use the pre-configured [FedRAMP template](https://go.microsoft.com/fwlink/?linkid=2118102) to help your organization meet the requirements for this regulation.
 
 ## Resources
 
