@@ -13,11 +13,11 @@ This view provides an overview of the status of security updates for your Micros
 
 To view usage data, select the <strong>Windows security updates insights</strong> tab.
 
-![Usage pane. Device usage graph (percentage usage versus time) in upper left. Application usage table in upper right. Device listing table across the bottom with columns device name, model, serial number, display name, user name, current state (active, low, or inactive), total device usage in hours, and number of active days.](IMAGE.png)
+![Security updates pane](images/update-insights.jpg)
 
 ## Device status
 
-For devices to be updated by Windows Update, they must be connected to the Internet and not in a hibernating state for a minimum of six hours, two of which must be continuous. As long as a device is connected and not hibernating, it's considered to be "in use." Although it's possible for a device that doesn't meet these requirements will be updated, devices that do have the highest likelihood of being updated during the current update cycle. 
+For devices to be updated by Windows Update, they must be connected to the Internet and not hibernating for a minimum of six hours, two of which must be continuous. As long as a device is connected and not hibernating, it's considered to be "in use." Although it's possible that a device that doesn't meet these requirements will be updated, devices that meet them have the highest likelihood of being updated during the current update cycle. 
 
 We categorize device activity in the context of Windows Update with these terms:
 
@@ -46,7 +46,7 @@ You should see few devices in the <strong>Older</strong> category--a large or gr
 
 At the beginning of each security update release cycle, Microsoft Managed Desktop takes a snapshot of the device population and sets its deployment target at 95% of that population. The <strong>Deployment progress</strong> area shows a historical trend, updated daily, tracking how closely the update deployment meets this target for each release. This graph only shows devices with <strong>[Active](#device-status)</strong> status.
 
-You can view this data for previous update cycles by using the dropdown menu {located where?}.
+You can view this data for previous update cycles by using the dropdown menu in the upper right. The period you select in this menu applies to all of the information on the whole page.
 
 {we should also explain how all this works for out-of-band security updates....}
 
