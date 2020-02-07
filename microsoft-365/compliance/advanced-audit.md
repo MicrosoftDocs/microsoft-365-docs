@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "."
+description: "Advanced audit in Microsoft 365 provides new auditing capabilities to help your organization with forensic and compliance investigations."
 ---
 
 # Advanced audit in Microsoft 365
