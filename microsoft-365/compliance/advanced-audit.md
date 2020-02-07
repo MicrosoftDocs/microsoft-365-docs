@@ -62,8 +62,8 @@ For more information about mailbox auditing logging, see [Manage mailbox auditin
 
 Organizations that access auditing logs through the Office 365 Management Activity API were restricted by throttling limits at the publisher level. This means that for a publisher pulling data on behalf of multiple customers, the limit was shared by all those customers.
 
-With the release of Advanced audit, we're moving from a publisher-level limit to a tenant-level limit. The result is that each organization will get their own fully allocated bandwidth quota to access their auditing data. The bandwidth is not a static, predefined limit but is determined by the number of seats in the organization, and  E5 organizations will get more bandwidth than non-E5 organizations.
+With the release of Advanced audit, we're moving from a publisher-level limit to a tenant-level limit. The result is that each organization will get their own fully allocated bandwidth quota to access their auditing data. The bandwidth is not a static, predefined limit but is modeled on a combination of factors including the number of seats in the organization and that E5 organizations will get more bandwidth than non-E5 organizations.
 
-All organizations initially receive a baseline of 2,000 requests per minute. This limit will be increased depending on an organization's seat count and their licensing subscription. E5 organizations will get twice as much bandwidth as non-E5 organizations. There will also be cap on the maximum bandwidth to protect the health of the service.
+All organizations are initially allocated a baseline of 2,000 requests per minute. This limit will dynamically increase depending on an organization's seat count and their licensing subscription. E5 organizations will get approximately twice as much bandwidth as non-E5 organizations. There will also be cap on the maximum bandwidth to protect the health of the service.
 
 For more information, see the "API Throttling" section in [Office 365 Management Activity API reference](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
