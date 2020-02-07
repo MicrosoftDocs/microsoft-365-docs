@@ -82,7 +82,7 @@ Be sure to read the following items before you start searching the Office 365 au
   - **Office 365 or Microsoft 365 E5 or users with a Microsoft 365 E5 Compliance add-on license:** Audit records for Azure Active Directory, Exchange, and SharePoint activity are retained for one year by default. Organizations can also create audit log retention policies to retain audit records for activity in other services for up to one year. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
 
     > [!NOTE]
-    > The roll-out to general availability for the one-year retention of audit records was completed at the end of January 2020. If your organization participated in the private preview program for the one-year retention of audit records, the retention duration for audit records that were generated before the rollout date will not be reset. For example, if an audit record was created in October 2019 and that record was subject to a one-year retention period, it will be retained until October 2020.
+    > If your organization participated in the private preview program for the one-year retention of audit records, the retention duration for audit records that were generated before the general availability rollout date will not be reset.
 
 - If you want to turn off audit log search in Office 365 for your organization, you can run the following command in remote PowerShell connected to your Exchange Online organization:
 
