@@ -70,7 +70,7 @@ The overview page shows the following information about the campaign:
 
 - **Type**: Currently, this value is always **Phish**.
 
-- **Subtype**: Where available, the brand that is being phished by this campaign. When the detection is driven by ATP technology, the prefix **ATP-**is added to the subtype value.
+- **Subtype**: Where available, the brand that is being phished by this campaign. When the detection is driven by ATP technology, the prefix **ATP-** is added to the subtype value.
 
 - **Recipients**: The number of users that were targeted by this campaign.
 
@@ -78,7 +78,7 @@ The overview page shows the following information about the campaign:
 
 - **Clicked**: The number of users that clicked on the URL in the phishing message.
 
-- **Click Rate**: The percentage as calculated by "**Clicked** / **Inboxed**". This value is an indicator of the effectiveness of the campaign, and whether the recipients were able to identify the message as phishing and not clicking on the payload URL.
+- **Click Rate**: The percentage as calculated by "**Clicked** / **Inboxed**". This value is an indicator of the effectiveness of the campaign, and whether the recipients were able to identify the message as phishing and avoid clicking on the payload URL.
 
 - **Visited**: How many users actually made it through to the payload website. If there are **Clicked** values, but Safe Links blocked access to the website, this value will be zero.
 
@@ -141,8 +141,6 @@ The diagram contains the following information:
 When a phishing message is delivered to a recipient (to the Inbox or the Junk Email folder), there's always a chance that the user will click on the payload URL. Not clicking on the URL in a delivered message is a small measure of success, but you need to determine why the phishing message was delivered to their mailbox in the first place.
 
 If a user clicked on the payload URL in the phishing message, the actions are displayed in the **URL clicks** area of the diagram in the campaign details view.
-
-![Campaign details that contain user URL clicks](../media/campaign-details-with-recipient-actions.png)
 
 - **Safe Links Block**: Indicates the recipient clicked on the payload URL, but their access to the malicious website was blocked by the [ATP Safe Links](atp-safe-links.md) policies in your organization.
 
