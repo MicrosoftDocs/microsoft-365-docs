@@ -71,22 +71,6 @@ To verify that you've enabled and configured Safe Documents, do any of the follo
 
 - Run the following command in Exchange Online PowerShell and verify the property values:
 
-```powershell
-Get-AtpPolicyForO365 | Format-List *SafeDocs*
-```
-
-- Send the EICAR Anti-Virus Test File to a user and verify that they can or can't launch the attachment in Protected View.
-
-  To create the EICAR Anti-Virus Test File, open Notepad, copy the following text into a new text file, and save the file as EICAR.TXT:
-
-  ```text
-  X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*
+  ```powershell
+  Get-AtpPolicyForO365 | Format-List *SafeDocs*
   ```
-
-  **Notes**:
-
-  - The EICAR.TXT file is not a virus. The European Institute for Computer Antivirus Research (EICAR) developed this file to safely test anti-virus installations and settings.
-
-  - Verify that this is the only text in the file, which should be 68 bytes in size.
-
-  - In your desktop anti-virus program, be sure to exclude the EICAR.TXT file from scanning (otherwise, the file will be quarantined).
