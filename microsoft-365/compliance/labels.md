@@ -253,12 +253,13 @@ Auto-apply retention labels are powerful because:
     
 You can choose to apply retention labels to content automatically when that content contains:
   
-- Specific types of sensitive information.
+- [Specific types of sensitive information](#auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information)
     
-- Specific keywords that match a query you create.
+- [Specific keywords that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+
+- [A match for classifers (ready to use or trainable)](#auto-apply-labels-to-content-by-using-classifers)
     
 ![Choose condition page for auto-apply label](media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
-
 
 Auto-applying retention labels requires an Office 365 Enterprise E5 subscription, and that it can take up to seven days for auto-apply retention labels to be applied to all content that matches the conditions, as described above.
   
@@ -306,7 +307,7 @@ Examples queries:
 ![Query editor](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
 
-### Apply labels to content by using trainable classifers
+### Auto-apply labels to content by using classifers
 
 When you choose the option for a trainable classifier, you can select one of the ready to use classifiers, or a classifier that you have trained. Ready to use classifers include **Offensive Language**, **Resumes**, **SourceCode**, **Harassment**, **Profanity**, and **Threat**.
 
