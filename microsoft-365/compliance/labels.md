@@ -305,10 +305,6 @@ Examples queries:
 
 ![Query editor](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
-### Apply labels to content by using trainable classifers
-
-...
-
 ## Applying a default retention label to all content in a SharePoint library, folder, or document set
 
 In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location get the default retention label (default labels are an E5 feature).
