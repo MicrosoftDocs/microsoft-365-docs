@@ -695,12 +695,14 @@
   items: 
     - name: Search the audit log
       href: search-the-audit-log-in-security-and-compliance.md
-    - name: Manage alert policies
-      href: alert-policies.md
+    - name: Advanced audit
+      href: advanced-audit.md
     - name: Turn audit log search on or off
       href: turn-audit-log-search-on-or-off.md
     - name: Manage mailbox auditing
       href: enable-mailbox-auditing.md
+    - name: Manage audit log retention policies
+      href: audit-log-retention-policies.md
     - name: Detailed properties in the audit log
       href: detailed-properties-in-the-office-365-audit-log.md
     - name: Export, configure, and view audit log records
@@ -711,6 +713,8 @@
       href: use-sharing-auditing.md
     - name: Search for eDiscovery activities in the audit log
       href: search-for-ediscovery-activities-in-the-audit-log.md
+    - name: Manage alert policies
+      href: alert-policies.md
 - name: Manage compliance risks
   items: 
     - name: Microsoft Service Trust Portal
