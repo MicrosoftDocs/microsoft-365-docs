@@ -26,6 +26,9 @@ Please review these release notes so that you have the best experience with this
 
 Access to content explorer is highly restricted because it lets you read the contents of scanned files. Access to content explorer requires membership in the **Content Explorer List Viewer**, and **Content Explorer Content Viewer** role groups. No account has access to content explorer by default. See, [Using data classification content explorer (preview).](data-classification-content-explorer.md#permissions). Global admin, Compliance admin, or Data admin can assign the necessary **Content Explorer List Viewer**, and **Content Explorer Content Viewer** role group membership.
 
+> [!TIP]
+> The **Content Explorer List Viewer**, and the **Content Explorer Content Viewer** role groups may not appear the permissions page for use while the Role Based Access Controls (RBAC) are being deployed worldwide. If they aren't appearing on the permissions page, you must create a custom role group and assign the `data classification list viewer` role and or the `data classification content viewer` roles to your custom role group.
+
 ## Exchange mailbox count
 
 You will notice a small tool tip appear when you drill into Exchange mailboxes. This is to call out the fact that the aggregate count displayed for sensitive information type, sensitivity label and retention label may not exactly match the number of items that you will find inside the mailbox. This is because the drill down into the folder fetches the live view of content, which is classified, while the aggregated count is calculated.
