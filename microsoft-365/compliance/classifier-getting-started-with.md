@@ -1,5 +1,7 @@
 ---
 title: "Getting started with trainable classifiers (preview)"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -42,6 +44,10 @@ This classification method is particularly well suited to content that isn't eas
 
 > [!IMPORTANT]
 > Trainable classifiers only work with items that are not encrypted and are in English.
+
+### Licensing requirements
+
+Trainable classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one of these subscriptions to make use of them.
 
 ## Types of classifiers
 

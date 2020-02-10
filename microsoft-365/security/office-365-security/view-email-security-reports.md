@@ -1,9 +1,11 @@
 ---
-title: "View email security reports in the Security &amp; Compliance Center"
+title: "View email security reports in the Security &amp; Compliance Center, Compromised users, Encryption, Threat Protection Status, malware detections, Top malware, spam detection, sent and received email, user reported messages, read reports, detection, security data, security information"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/29/2019
+ms.date: 01/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -24,7 +26,8 @@ A variety of reports are available in the [Security &amp; Compliance Center](htt
 ![Dashboard where you see how Advanced Threat Protection is working](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Your email security reports include the following:
-- [Encryption report](#encryption-report) (NEW!)
+- [Compromised Users report (**NEW!**)](#compromised-users-report-new)
+- [Encryption report](#encryption-report)
 - [Threat Protection Status report](#threat-protection-status-report) 
 - [Malware Detections report](#malware-detections-report) 
 - [Top Malware report](#top-malware-report)
@@ -33,10 +36,17 @@ Your email security reports include the following:
 - [Spam Detections report](#spam-detections-report)
 - [Sent and received email report](#sent-and-received-email-report)
 - [User-reported messages report](#user-reported-messages-report)
-    
+
+
+## Compromised Users report (**NEW!**) 
+
+This report, available to anyone with Exchange Online Protection, shows the number of user accounts marked as Suspicious or Restricted users, data particularly useful as accounts enter either of the states that indicate the user account may be problematic, or even compromised. With frequent use, the Compromised User report can spot spikes, and even trends, in accounts marked in suspicious or restricted states, giving evidence there could be an issue with security and the wellness of your tenant.
+
+![The compromised users report as it appears in Office 365.](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## Encryption report
 
-(**NEW!**) The **Encryption report** shows information about email messages that were encrypted, either through your organization's policies, or through end-user controls. Your organization's security team can use information in this report to identify patterns and proactively apply or adjust policies for sensitive email messages.
+The **Encryption report** shows information about email messages that were encrypted, either through your organization's policies, or through end-user controls. Your organization's security team can use information in this report to identify patterns and proactively apply or adjust policies for sensitive email messages.
 
 To view this report, in the Security & Compliance Center, go to **Reports** \> **Dashboard** \> **Encryption report**.
 

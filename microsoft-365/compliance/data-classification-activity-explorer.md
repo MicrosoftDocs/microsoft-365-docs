@@ -1,5 +1,7 @@
 ---
 title: "Using data classification activity explorer"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -33,6 +35,15 @@ You can filter the data by:
 
 
 You can view the data either as a list or a bar graph.
+
+## Prerequisites
+
+Every account that accesses and uses activity explorer must have a license assigned to it from one of these subscriptions:
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- Advanced Compliance (E5) add-on
+- Advanced Threat Intelligence (E5) add-on
 
 ## Activity type
 

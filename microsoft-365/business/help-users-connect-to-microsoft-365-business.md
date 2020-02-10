@@ -1,5 +1,7 @@
 ---
 title: "Help users connect to Microsoft 365 Business"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv

@@ -75,6 +75,8 @@
                   href: mtp/mtp-autoir-results.md
                 - name: Approve or reject pending actions
                   href: mtp/mtp-autoir-actions.md
+                - name: Report false positives/negatives
+                  href: mtp/mtp-autoir-report-false-positives-negatives.md  
             - name: Advanced hunting
               items: 
                 - name: Hunting in Microsoft 365
@@ -108,6 +110,8 @@
                       href: mtp/advanced-hunting-deviceimageloadevents-table.md
                     - name: DeviceEvents
                       href: mtp/advanced-hunting-deviceevents-table.md
+                    - name: DeviceFileCertificateInfoBeta
+                      href: mtp/advanced-hunting-devicefilecertificateinfobeta-table.md
                     - name: EmailEvents
                       href: mtp/advanced-hunting-emailevents-table.md
                     - name: EmailAttachmentInfo
@@ -204,7 +208,7 @@
 
                   href: ./office-365-security/anti-malware-protection-faq-eop.md
 
-                - name: Anti-spam and anti-malware protection in Office 365
+                - name: Anti-malware protection
 
                   href: ./office-365-security/anti-malware-protection.md
 
@@ -774,16 +778,12 @@
 
                   href: ./office-365-security/secure-team-for-files-in-a-dev-test-environment.md
 
-            - name: Secure SharePoint Online sites and files
+            - name: Secure SharePoint Online sites in a dev/test environment
 
-              href: ./office-365-security/secure-sharepoint-online-sites-and-files.md
+              href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
 
               items: 
-
-                - name: Secure SharePoint Online sites in a dev/test environment
-
-                  href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
-
+          
             - name: SIEM server integration
 
               href: ./office-365-security/siem-server-integration.md

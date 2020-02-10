@@ -1,5 +1,7 @@
 ---
 title: "Configure the connection filter policy, Allow list, Block list"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -24,7 +26,7 @@ Most of us have friends and business partners we trust. It can be frustrating to
 
 - A connection filter policy creating a Block list can be thought of as catching less, or untrustworthy accounts in the filter instead.
 
- For more spam settings that apply to the whole organization, take a look at [How to prevent good email from being marked as spam in Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) or [How to reduce spam email in Office 365](reduce-spam-email.md). These are helpful if you have administrator-level control and you want to prevent false positives or false negatives.
+ For more spam settings that apply to the whole organization, take a look at [How to prevent good email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md) or [How to reduce spam email in Office 365](reduce-spam-email.md). These are helpful if you have administrator-level control and you want to prevent false positives or false negatives.
 
 > [!TIP]
 > You may want to pause and read up on how to create [Allow (or safe sender) lists](create-safe-sender-lists-in-office-365.md) and [Block lists](create-block-sender-lists-in-office-365.md).
@@ -152,6 +154,6 @@ This is basically the same rule creation procedure from the previous [Scoping an
 
 [Configure the outbound spam policy](configure-the-outbound-spam-policy.md)
 
-[How to prevent good email from being marked as spam in Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[How to prevent good email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md)
 
 [How to reduce spam email in Office 365](reduce-spam-email.md)

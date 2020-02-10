@@ -5,6 +5,8 @@ keywords: security, malware, Microsoft 365, M365, secure score, security center,
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
@@ -160,11 +162,12 @@ The following Intune improvement actions will be removed:
 
 ### Removing improvement actions that don't meet expectations for reliable measurement
 
-To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement action.
+To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement actions.
 
 - Turn on audit data recording
 - Discover risky and non-compliant shadow IT applications
 - Review permissions & block risky OAuth applications connected to your environment
+- Set up versioning on SharePoint online document libraries
 
 ### MFA improvement action updates
 
@@ -176,7 +179,7 @@ The three that will be removed:
 - Require MFA for all users
 - Require MFA for Azure AD privileged roles
 
-New improvement actions:
+New improvement actions added:
 
 - Ensure all users can complete multi-factor authentication for secure access
 - Require MFA for administrative roles
@@ -195,7 +198,7 @@ To standardize points across multiple experiences, each Secure Score improvement
 
 ### Preview features
 
-The following features will be included in the preview release:
+The following features will be included in the [preview release](microsoft-secure-score-preview.md):
 
 * All new metrics and trends views for CISO and lead level discussions
 * New ways to track and benchmark your score

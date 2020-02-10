@@ -5,6 +5,8 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -28,10 +30,10 @@ The FICIC references globally recognized standards including NIST SP 800-53 foun
 
 NIST Cybersecurity Framework (CSF) is a voluntary Framework that consists of standards, guidelines, and best practices to manage cybersecurity-related risks. Microsoft Cloud services have undergone independent, third-party FedRAMP Moderate and High Baseline audits and are certified according to the FedRAMP standards. Also, through a validated assessment performed by HITRUST, a leading security and privacy standards development and accreditation organization, Office 365 is certified to the objectives specified in the NIST CSF.
 
-Learn how to accelerate your NIST Cybersecurity Framework deployment with Compliance Manager and our Azure Security and Compliance Blueprint:
+Learn how to accelerate your NIST Cybersecurity Framework deployment with Compliance Score and our Azure Security and Compliance Blueprint:
 
 - [Download the Azure Security and Compliance Blueprint - NIST CSF Risk Assessment Checklist](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
-- [Learn more about the NIST CSF assessment for Office 365 in Compliance Manager](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
+- [Learn more about the NIST CSF assessment for Office 365 in Compliance Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
 ## Microsoft in-scope cloud services
 
@@ -51,11 +53,11 @@ The NIST Cybersecurity Framework (CSF) standard can be challenging in the cloud.
 
 - [Start using the Azure NIST CSF Blueprint](https://aka.ms/Azure-Blueprint-DoD-NIST)
 
-## Perform risk assessment on Office 365 using NIST CSF in Compliance Manager
+## Perform risk assessment on Office 365 using NIST CSF in Compliance Score
 
-Cybersecurity remains a critical management issue in the era of digital transforming. To help you implement and verify security controls for your Office 365 tenant, Microsoft provides recommended customer actions in the NIST CSF Assessment in Compliance Manager.
+Cybersecurity remains a critical management issue in the era of digital transforming. To help you implement and verify security controls for your Office 365 tenant, Microsoft provides recommended customer actions in the NIST CSF Assessment in Compliance Score.
 
-- [Start using Compliance Manager](https://aka.ms/compliancemanager)
+- [Start using Compliance Score](compliance-score.md)
 
 ## Frequently asked questions
 
@@ -89,6 +91,10 @@ The in-scope services of NIST CSF certification are Exchange Online Archiving, E
 **Why are some Office 365 services not in the scope of this certification?**
 
 Microsoft provides the most comprehensive offerings compared to other cloud service providers. To keep up with our broad compliance offerings across regions and industries, we include services in the scope of our assurance efforts based on the market demand, customer feedback, and product lifecycle. If a service is not included in the current scope of a specific compliance offering, your organization has the responsibility to assess the risks based on your compliance obligations and determine the way you process data in that service. We continuously collect feedback from customers and work with regulators and auditors to expand our compliance coverage to meet your security and compliance needs.
+
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), use the pre-configured [NIST CSF template](https://go.microsoft.com/fwlink/?linkid=2117917) to help your organization meet the requirements for this regulation.
 
 ## Resources
 

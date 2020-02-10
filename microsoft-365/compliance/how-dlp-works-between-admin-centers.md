@@ -1,5 +1,7 @@
 ---
 title: "How DLP works between the Security & Compliance Center and Exchange admin center"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

@@ -5,6 +5,8 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -32,7 +34,7 @@ Expecting vendors to certify against PIMS will be effective for establishing res
 
 ## Too many regulatory requirements to juggle
 
-ISO/IEC 27701 includes an annex containing the operational controls of the standard that are mapped against relevant requirements in GDPR for controllers and processors. This mapping is just an example of how privacy regulations can be operationalized with the ISO framework. As additional mappings with other regulations become available and are validated, the operational controls from the standard can be transferred directly from regulatory review to implementation. This universal framework allows organizations to reliably operationalize the relevant regulatory requirements without “reinventing the wheel.” A pending open-source project is underway to enable the privacy community to map other regulations and validate existing mappings. Stay tuned for announcement.
+ISO/IEC 27701 includes an annex containing the operational controls of the standard that are mapped against relevant requirements in GDPR for controllers and processors. This mapping is just an example of how privacy regulations can be operationalized with the ISO framework. As additional mappings with other regulations become available and are validated, the operational controls from the standard can be transferred directly from regulatory review to implementation. This universal framework allows organizations to reliably operationalize the relevant regulatory requirements without 'reinventing the wheel.' A pending open-source project is underway to enable the privacy community to map other regulations and validate existing mappings. Stay tuned for announcement.
 
 ## Too costly to audit regulation-by-regulation
 
@@ -59,6 +61,15 @@ Key points on ISO/IEC 27001 and PIMS:
 ## What should your organization do with PIMS?
 
 No matter the size of your organization and whether it is a controller or a processor, your organization should consider pursuing certification, either for your own organization, or requesting it from vendors or suppliers based on your business requirements. This applies especially for processors, sub-processors, and co-controllers that are processing sensitive or high volumes of personal data. In any case, your organization should assess its business needs to determine if certification for its own products and services are suitable.
+
+## Audits, reports, and certificates
+
+- [Azure ISO/IEC 27701 certification](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- [Azure ISO/IEC 27701 assessment report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), use the pre-configured [ISO 27701 template](https://go.microsoft.com/fwlink/?linkid=2117915) to help your organization meet the requirements for this regulation.
 
 ## Resources
 

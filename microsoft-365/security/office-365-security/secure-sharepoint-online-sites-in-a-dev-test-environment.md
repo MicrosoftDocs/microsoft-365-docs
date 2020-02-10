@@ -1,5 +1,7 @@
 ---
 title: "Secure SharePoint Online sites in a dev/test environment"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -309,8 +311,6 @@ Here is the resulting configuration for the Marketing Campaigns and Company Stra
 When you are ready for production deployment of secure SharePoint Online sites, see [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md) for detailed information and links to step-by-step deployment articles.
 
 ## See Also
-
-[Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md)
 
 [Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

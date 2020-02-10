@@ -5,6 +5,8 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -45,6 +47,7 @@ Learn about the benefits of ISO-Iec-27018 on the Microsoft Cloud: [Download the 
 - Graph
 - Health Bot
 - Intune
+- Microsoft Managed Desktop
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - [Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 Germany
@@ -63,9 +66,9 @@ Microsoft cloud and commercial technical support services are audited once a yea
 
 ### Audits and reports
 
-- [Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics, and Microsoft Datacenter — ISO 27001 and 27018 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2078016)
-- [Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics, and Microsoft Datacenter — ISO 27001 and 27018 Audit Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2078020)
-- [Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics, and Microsoft Datacenter — ISO 27001 and 27018 Statement of Applicability (SOA) 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure, Intune, Microsoft Managed Desktop, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics, and Microsoft Datacenter — ISO 27001 and 27018 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2078016)
+- [Azure, Intune, Microsoft Managed Desktop, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics, and Microsoft Datacenter — ISO 27001 and 27018 Audit Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2078020)
+- [Azure, Intune, Microsoft Managed Desktop, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics, and Microsoft Datacenter — ISO 27001 and 27018 Statement of Applicability (SOA) 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 - [Azure — Germany ISO 27018 — Code of Practice for Protecting Personal Data in the Cloud — Certificate](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
 
 ### Office 365
@@ -94,12 +97,12 @@ Microsoft cloud and commercial technical support services are audited once a yea
 
 This code of practice applies to CSPs that process PII under contract for other organizations. At Microsoft, it also applies to the support of those CSPs.
 
-**What is the difference between “personal information controllers” and “personal information processors”?**
+**What is the difference between 'personal information controllers' and 'personal information processors'?**
 
 In the context of ISO/IEC 27018:
 
-- “Controllers” control the collection, holding, processing, or use of personal information; they include those who control it on another company’s behalf.
-- “Processors” process information on behalf of controllers; they do not make decisions as to how to use the information or the purposes of the processing. In providing its enterprise cloud services, Microsoft — as a vendor to you — is an information processor.
+- 'Controllers' control the collection, holding, processing, or use of personal information; they include those who control it on another company’s behalf.
+- 'Processors' process information on behalf of controllers; they do not make decisions as to how to use the information or the purposes of the processing. In providing its enterprise cloud services, Microsoft — as a vendor to you — is an information processor.
 
 **Where can I view Microsoft compliance information for ISO/IEC 27018?**
 
@@ -112,6 +115,10 @@ In the context of ISO/IEC 27018:
 Yes. If compliance with ISO/IEC 27018 is important for your business and implementations deployed on any of Microsoft in-scope enterprise cloud services, you can use Microsoft’s attestation of compliance with ISO/IEC 27018 with Microsoft’s certification for ISO/IEC 27001 in your compliance assessment.
 
 However, you are responsible for engaging an assessor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
+
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), use the pre-configured [ISO 27018 template](https://go.microsoft.com/fwlink/?linkid=2117523) to help your organization meet the requirements for this regulation.
 
 ## Resources
 

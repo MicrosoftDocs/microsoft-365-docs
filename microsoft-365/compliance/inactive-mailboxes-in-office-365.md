@@ -1,5 +1,7 @@
 ---
 title: "Overview of inactive mailboxes in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -28,9 +30,8 @@ When an employee leaves your organization (or goes on an extended leave of absen
   
 But if your organization needs to retain mailbox content for former employees, you can turn the mailbox into an inactive mailbox by placing the mailbox on Litigation Hold or applying an Office 365 retention policy to the mailbox in the Security & Compliance Center and then removing the corresponding Office 365 account. The contents of an inactive mailbox are retained for the duration of the Litigation Hold placed on the mailbox or the retention period of the Office 365 retention policy applied to it before the mailbox was deleted. You can still recover the corresponding user account for a 30-day period. However, after 30 days, the inactive mailbox is retained in Office 365 until the hold or retention policy is removed. 
   
-> [!NOTE]
-> We've postponed the July 1, 2017 deadline for creating new In-Place Holds to make a mailbox inactive. But later this year or early next year, you won't be able to create new In-Place Holds in Exchange Online. At that time, only Litigation Holds and Office 365 retention policies can be used to create an inactive mailbox. However, existing inactive mailboxes that are on In-Place Hold will still be supported, and you can continue to manage the In-Place Holds on inactive mailboxes. This includes changing the duration of an In-Place Hold and permanently deleting an inactive mailbox by removing the In-Place Hold. 
- 
+> [!IMPORTANT]
+> As we continue to invest in different ways to preserve mailbox content, we're announcing the retirement of In-Place Holds in the Exchange admin center. That means you should use Litigation Holds and Office 365 retention policies to create an inactive mailbox. Starting April 1, 2020 you won't be able to create new In-Place Holds in Exchange Online. But you'll still be able to change the hold duration of an In-Place Hold placed on an inactive mailbox. However, starting July 1, 2020, you won't be able to change the hold duration. You'll only be able to delete an inactive mailbox by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will still be preserved until the hold is removed. For more information about the retirement of In-Place Holds, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
   
 ## Inactive mailboxes and Office 365 retention policies
 
@@ -79,7 +80,7 @@ Conversely, any archive policies (which are retention tags configured with a **M
   
 ## Creating an inactive mailbox
 
-To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license (or an Exchange Online Plan 1 license with an Exchange Online Archiving add-on license) so that a Litigation Hold or Office 365 retention policy can be applied to the mailbox before it's deleted. After the mailbox is deleted, any Exchange Online license associated with it will be available to assign to a new user. Inactive mailboxes don't require ongoing licenses.
+To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license (or an Exchange Online Plan 1 license with an Exchange Online Archiving add-on license) so that a Litigation Hold or Office 365 retention policy can be applied to the mailbox before it's deleted. After the mailbox is deleted, any Exchange Online license associated with it will be available to assign to a new user.
   
 The following table summarizes the process of making an inactive mailbox for different retention scenarios. For more information, see [Manage inactive mailboxes in Office 365](create-and-manage-inactive-mailboxes.md).
   

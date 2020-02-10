@@ -1,5 +1,7 @@
 ---
 title: "What's new in the Microsoft 365 compliance center"
+f1.keywords:
+- NOCSH
 ms.author: brendonb
 author: brendonb
 manager: laurawi
@@ -22,7 +24,68 @@ description: "We're continuously adding new features to the Microsoft 365 compli
 We're continuously adding new features to the [Microsoft 365 compliance center](microsoft-365-compliance-center.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, try adding yourself to [targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365).
 
 > [!TIP]
-> Interested in what's going on in other admin centers? Check out these articles:<br>[What's new in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+> Interested in what's going on in other admin centers? Check out these articles:<br>[What's new in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
+And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
+
+## January 2020
+
+The wait is over. We’re pleased to announce that the Microsoft 365 compliance center is available to all customers with Microsoft 365, Office 365, Enterprise Mobility + Security (EMS), and Windows 10 Enterprise plans. Any data or policies you were managing in the Office 365 Security & Compliance Center are available in the compliance center, so no need to jump back and forth.
+
+> [!TIP]
+> Read through last month’s update again for a refresher on some of the [new solutions](#new-compliance-solutions) we previewed recently, as well as a [roadmap](#updated-compliance-solutions) showing where compliance features from the Office 365 Security & Compliance Center now live in Microsoft 365.
+
+Bookmark and head over now to [https://compliance.microsoft.com](https://compliance.microsoft.com) to tour your one-stop-shop for managing compliance across your org...or [read this article](microsoft-365-compliance-center.md) to dig in a bit more.
+
+![Microsoft 365 compliance center home page](media/mcc-home-ga.png)
+
+We also released new and updated solutions this month. Here’s a quick glance at the highlights.
+
+### Now in preview
+
+**Insider risk management (preview)**
+
+We’re happy to announce that our insider risk management solution is now in public preview. In a nutshell, insider risk management helps your organization intelligently identify and take action on insider risks by providing:
+
+- Anonymity controls to help ensure user privacy.
+- Intelligent policy templates with native and third-party indicators that identify insider threats, such as data leaks.
+- Integrated end-to-end investigation workflows that span across IT, HR and legal teams.
+
+We’d love to hear what you think. As you use the solution, leave us feedback so we can make sure we’re meeting your needs as we head toward general availability.
+
+[Learn more about insider risk management](insider-risk-management.md)
+
+### Just launched
+
+**Communication compliance**
+
+Graduating from the preview phase to full availability, communication compliance is a key component of our new insider risk solution set. This robust solution helps minimize communication risks using workflows for detecting, investigating, and taking remediation actions for messages that don’t meet your organization’s standards.
+
+Customer feedback during the preview was fantastic. It resulted in several enhancements, including a first-run experience to get you started, improvements to investigation and remediation actions, and more.
+
+[Learn more about communication compliance](communication-compliance.md)
+
+![Communication compliance page in Microsoft 365 compliance center showing first card of the welcome experience](media/mcc-communication-compliance-page-with-fre.png)
+
+**Data connectors**
+
+Formerly sharing space with other ‘Import’ features in the Office 365 Security & Compliance Center, data connectors now have their very own home in the Microsoft 365 compliance center. Use the new ‘Data connectors’ page to import and archive data from your organization’s human resources (HR) files and various third-party platforms (like Facebook, LinkedIn, Twitter, and Instant Bloomberg) to mailboxes in your Microsoft 365 organization. Once imported, this data can be managed in several compliance solutions, including eDiscovery, insider risk management, communication compliance, audit, retention policies, and more.
+
+[Learn more about data connectors](archiving-third-party-data.md)
+
+![Data connectors page in the Microsoft 365 compliance center](media/mcc-data-connectors-page.png)
+
+### Noteworthy updates
+
+**New assessment templates for Compliance Score (preview)**
+
+Always working hard to help you get ahead of the ever-evolving compliance landscape, our Compliance Score team shipped a new set of templates to help you assess your organization’s compliance posture against recent regulations and get guidance on how to implement more effective controls. You’ll see new templates for:
+
+- ISO/IEC 27701:2019
+- California Consumer Privacy Act (CCPA)
+- Brazil General Data Protection Law (Lei Geral de Proteção de Dados - LGPD)
+- SOC 1 Type 2 and SOC 2 Type 2
+
+[Learn more about Compliance Score templates](compliance-score.md#templates)
 
 ## November & December 2019
 
@@ -50,6 +113,7 @@ Here’s a summary of the new solutions you’ll find. Keep an eye out for other
 |Solution catalog (preview) <br/>|The solution catalog is your one-stop-shop for discovering, learning about, and quickly getting started with our compliance and risk management solutions. The catalog is organized into three compliance categories, each containing details about the solutions that make up that category. Categories include Information protection & governance, Insider risk management, and Discovery & response <br/>|[Overview of the solution catalog (preview)](microsoft-365-solution-catalog.md)|
 |Communication compliance (preview) <br/>|Communication compliance is part of the new insider risk management category that helps minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. The solution extends the capabilities of supervision policies in Office 365 by introducing several new enhancements such as intelligent templates, flexible remediation workflows, and actionable insights. <br/>|[Communication compliance in Microsoft 365 (preview)](communication-compliance.md)|
 |Data classification (preview) <br/>|Our new Data classification page contains powerful insights and tools to help you discover and evaluate how sensitive info and labels (retention and sensitivity) are being used in content across your organization. Review content that contains sensitive info or has labels applied, explore label activity across Microsoft 365 locations, create custom sensitive info types, and much more.<br/>|[Data classification overview (preview)](data-classification-overview.md)|
+|Trainable classifiers (preview) <br/>|This powerful new tool uses our machine learning engine to help identify categories of content in your org, like regulatory docs or employee agreements. Once created, classifiers can be used in several compliance solutions to detect related content and classify it, protect it, retain it, and more.<br/>|[Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)|
 
 #### Updated compliance solutions
 
@@ -65,7 +129,7 @@ If you’ve been using the Office 365 Security & Compliance Center for your comp
 |Alert policies|Alerts > Alert policies <br/> https://protection.office.com/alertpolicies |At this time, alert policies are managed only in the Office 365 Security & Compliance Center. |[Alert policies in the security and compliance center](alert-policies.md) |
 |Alerts|Alerts > View alerts <br/> https://protection.office.com/viewalerts |Alerts <br/> https://compliance.microsoft.com/compliancealerts |[Viewing alerts](alert-policies.md#viewing-alerts)|
 |Archive|Information governance > Archive <br/> https://protection.office.com/archiving |Information governance > Archive tab <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[Enable archive mailboxes](enable-archive-mailboxes.md)|
-|Audit log search|Search > Audit log search <br/> https://protection.office.com/unifiedauditlog |At this time, you can only search the audit log from the Office 365 Security & Compliance Center.| [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md)|
+|Audit log search|Search > Audit log search <br/> https://protection.office.com/unifiedauditlog |Audit <br/> https://compliance.microsoft.com/auditlogsearch| [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md)|
 |Content search|Search > Content search <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Content search <br/> https://compliance.microsoft.com/contentsearch |[Search for content in Office 365](search-for-content.md) |
 |Data connectors|Information governance > Archive third-party data <br/> https://protection.office.com/nativeconnector | Data connectors <br/> https://compliance.microsoft.com/connectorlanding |[Archive third-party data](archiving-third-party-data.md)|
 |Data loss prevention|Data loss prevention <br/> https://protection.office.com/datalossprevention |Data loss prevention <br/> https://compliance.microsoft.com/datalossprevention |[Overview of data loss prevention](data-loss-prevention-policies.md)|

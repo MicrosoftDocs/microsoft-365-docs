@@ -1,5 +1,7 @@
 ---
 title: "Automated investigation and response (AIR) in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -30,7 +32,7 @@ At a high level, the AIR flow works like this:
 |Phase  |What's involved  |
 |---------|---------|
 |1     |An [alert](#alerts) is triggered by an Office event and a [security playbook](#security-playbooks) initiates an automated investigation for selected alerts. <br/><br/>Alternately, a security analyst can [start an automated investigation manually](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer), from an email from [Explorer](threat-explorer.md).        |
-|2     |While an automated investigation runs, it gathers additional data about the email and the entities related to that email – files, URLs, and recipients.  The investigation’s scope can increase, as new related alerts are triggered.         |
+|2     |While an automated investigation runs, it gathers additional data about the email and the entities related to that email – files, URLs, and recipients.  The investigation's scope can increase, as new related alerts are triggered.         |
 |3     |During and after an automated investigation, [details and results](#investigation-graph) are available to view. Results include [recommended actions](#recommended-actions) that can be taken to respond and remediate any threats that were found. In addition, an [playbook log](#playbook-log) is available that tracks all investigation activity.<br/><br/>If your organization is using a custom reporting solution or a third-party solution, you can [use the Office 365 Management Activity API](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions) to view information about automated investigations and threats.         |
 |4     |Your security operations team reviews the investigation results and recommendations, and approves remediation actions. In Office 365, remediation actions are taken only upon approval by your organization's security team.         |
 
@@ -63,7 +65,7 @@ If your organization manages your security alerts through an alert management sy
 
 ## Security playbooks
 
-Security playbooks are back-end policies that are at the heart of automation in Office Advanced Threat Protection and Microsoft Threat Protection. The security playbooks provided in AIR are based on common real-world security scenarios and developed based on feedback from Security Operations teams. A security playbook is launched automatically when specific alerts are triggered within your organization. Once the alert triggers, the associated playbook is run by the Automated Investigation and Response (AIR) system. The investigation steps through analysis of the alert based on that particular alert’s playbook, looking at all the associated metadata (including email messages, users, subjects, senders, etc.). Based on the investigation playbook's findings, AIR recommends a set of actions that your organization's security team can take to control and mitigate the threat. 
+Security playbooks are back-end policies that are at the heart of automation in Office Advanced Threat Protection and Microsoft Threat Protection. The security playbooks provided in AIR are based on common real-world security scenarios and developed based on feedback from Security Operations teams. A security playbook is launched automatically when specific alerts are triggered within your organization. Once the alert triggers, the associated playbook is run by the Automated Investigation and Response (AIR) system. The investigation steps through analysis of the alert based on that particular alert's playbook, looking at all the associated metadata (including email messages, users, subjects, senders, etc.). Based on the investigation playbook's findings, AIR recommends a set of actions that your organization's security team can take to control and mitigate the threat. 
 
 The security playbooks you'll get with AIR are designed to tackle the most frequent threats that organizations encounter today with email. They're based on input from Security Operations and Incident Response teams, including those who help defend Microsoft and our customers' assets.
 
@@ -85,7 +87,7 @@ Further playbooks will be released as they are completed. Visit the [Microsoft 3
 ### Playbooks include investigation and recommendations
 
 In AIR, each security playbook includes: 
-- a root investigation of an email’s entities (files, URLs, recipients, IP addresses, etc.),
+- a root investigation of an email's entities (files, URLs, recipients, IP addresses, etc.),
 - further hunting for similar emails received by the organization 
 - steps taken to identify and correlate other potential threats, and 
 - recommended threat remediation actions.
@@ -112,7 +114,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 |Running | The investigation has started and is conducting its analysis |
 |No Threats Found | The investigation has completed its analysis and no threats were found |
 |Terminated By System | The investigation was not closed and expired after 7 days |
-|Pending Action | The investigation found threats with actions recommended.  The investigation continues running after it’s found initial threats and recommended actions, so you should check the log before approving actions to see if analyzers are still in-progress. |
+|Pending Action | The investigation found threats with actions recommended.  The investigation continues running after it's found initial threats and recommended actions, so you should check the log before approving actions to see if analyzers are still in-progress. |
 |Threats Found | The investigation found threats, but the threats do not have actions available within AIR.  These are user actions where there is no direction AIR action yet. |
 |Remediated | The investigation finished and was fully remediated (all actions were approved) |
 |Partially Remediated | The investigation finished and some of the recommended actions were approved |
@@ -276,8 +278,8 @@ When an automated investigation is running or has completed, you will typically 
 |-----|-----|
 |Block URL (time-of-click) |Protect against emails and documents that contain malicious URLs. This enables the blocking of malicious links and any related webpages via [Safe Links](atp-safe-links.md) when the user clicks a link in an existing Office file or in an older email message. |
 |Soft delete email  |Soft delete specific email messages from a user's mailbox|
-|Soft delete email clusters  |Soft delete malicious email messages matching a query from all users’ mailboxes|
-|Turn off external mail forwarding |Removes forwarding rule from a specific end user’s mailbox|
+|Soft delete email clusters  |Soft delete malicious email messages matching a query from all users' mailboxes|
+|Turn off external mail forwarding |Removes forwarding rule from a specific end user's mailbox|
 
 ## Example: A user-reported phish message launches an investigation playbook
 

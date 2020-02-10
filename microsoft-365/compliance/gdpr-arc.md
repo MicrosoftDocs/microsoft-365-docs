@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, G
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -32,7 +34,7 @@ There is a specific guide for four Microsoft product and services families:
 - [Azure](gdpr-arc-Azure.md)
 - [Microsoft Support and Professional Services](gdpr-arc-prof-services.md)
 
-You can manage the items in this checklist with [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile.
+You can manage the items in this checklist with [Compliance Score](compliance-score.md) by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile.
 
 The checklists include the four basic categories of considerations for a privacy program supporting GDPR listed below, along with example requirements.
 

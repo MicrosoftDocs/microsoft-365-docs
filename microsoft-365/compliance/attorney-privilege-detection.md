@@ -1,5 +1,7 @@
 ---
 title: "Set up attorney-client privilege detection in Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -31,11 +33,11 @@ When attorney-client privilege detection is enabled, all documents in a review s
 
 The model produces the following three properties for every document:
 
-- **AttorneyClientPrivilegeScore** – The likelihood the document is legal in nature; the values for the score are between **0** and **1**.
+- **AttorneyClientPrivilegeScore:** The likelihood the document is legal in nature; the values for the score are between **0** and **1**.
 
-- **HasAttorney** – This property is set to **true** if one of the document participants is listed in the attorney list; otherwise the value is **false**. The value is also set to **false** if your organization didn't upload an attorney list.
+- **HasAttorney:** This property is set to **true** if one of the document participants is listed in the attorney list; otherwise the value is **false**. The value is also set to **false** if your organization didn't upload an attorney list.
 
-- **IsPrivilege** – This property is set to **true** if the value for **AttorneyClientPrivilegeScore** is above the threshold *or* if the document has an attorney participant; otherwise the value is set to **false**.
+- **IsPrivilege:** This property is set to **true** if the value for **AttorneyClientPrivilegeScore** is above the threshold *or* if the document has an attorney participant; otherwise the value is set to **false**.
 
 These properties (and their corresponding values) are added to the file metadata of the documents in a review set, as shown in the following screenshot:
 
@@ -53,11 +55,11 @@ A person who is an eDiscovery Administrator in your organization (a member of th
 
 1. In the Security & Compliance Center, go to **eDiscovery > Advanced eDiscovery**.
 
-2. On the **Advanced eDiscovery** home page, in the **Settings** tile, select **Configure experimental features**.
+2. On the **Advanced eDiscovery** home page, in the **Settings** tile, click **Configure global analytics settings**.
 
    ![Select "Configure experimental features"](media/AeDExperimentalFeatures.png)
 
-3. On the **Experimental features** tab, select **Manage attorney-client privilege setting**.
+3. On the **Analytics settings** tab, select **Manage attorney-client privilege setting**.
 
 4. On the **Attorney-client privilege** flyout page, use the toggle to turn on the feature and then select **Save**.
 

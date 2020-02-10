@@ -6,6 +6,8 @@ manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/11/2018
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom: 
@@ -115,7 +117,7 @@ This guidance shows you how to implement a set of policies to protect access to 
 
 - [Configure your Office 365 tenant for increased security](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): These recommendations apply to baseline security for your Office 365 tenant.
 - [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352): These recommendations include logging, data governance, admin access, and threat protection.
-- [Secure SharePoint Online sites and files](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files):  This set of articles describes how to protect files and sites at appropriate levels for baseline, sensitive, and highly confidential protection.
+
 
 ### Windows 10 and Office 365 ProPlus
 

@@ -1,5 +1,7 @@
 ---
 title: "Configure your spam filter policies"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -133,7 +135,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 ## Fine tuning your spam filter policy to prevent false positives and false negatives
 
-You can enable advanced spam filtering techniques if you want to pursue a more aggressive approach to spam filtering. For general spam settings that apply to the whole organization, take a look at [How to prevent good email from being marked as spam in Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) or [Block email spam with the Office 365 spam filter to prevent false negative issues](reduce-spam-email.md). These are helpful if you have administrator-level control and you want to prevent false positives or false negatives.
+You can enable advanced spam filtering techniques if you want to pursue a more aggressive approach to spam filtering. For general spam settings that apply to the whole organization, take a look at [How to prevent good email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md) or [Block email spam with the Office 365 spam filter to prevent false negative issues](reduce-spam-email.md). These are helpful if you have administrator-level control and you want to prevent false positives or false negatives.
 
 ## Allow/Block Lists
 
@@ -166,7 +168,7 @@ Both Allow and Block lists are configured as part of any customer Anti-spam poli
 
 [Quarantine](quarantine.md)
 
-[How to prevent good email from being marked as spam in Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[How to prevent good email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md)
 
 [How to reduce spam email in Office 365](reduce-spam-email.md)
 

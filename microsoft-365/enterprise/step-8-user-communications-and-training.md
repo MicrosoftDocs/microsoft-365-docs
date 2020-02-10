@@ -1,5 +1,7 @@
 ﻿---
 title: Step 8 - User Communications and Training
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed

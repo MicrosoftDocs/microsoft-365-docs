@@ -1,5 +1,7 @@
 ---
 title: "Export documents from a review set"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -40,7 +42,7 @@ Export allows users to customize the content that is included in the download pa
 
 ### Metadata file
 
-This can be considered your “load file” that contains metadata associated with the files you exported. For a list of fields available in the metadata file, see \[link\]. This file can typically be ingested by 3<sup>rd</sup> party tools downstream.
+This can be considered your "load file" that contains metadata associated with the files you export. For a list of exported fields available in the metadata file, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md). This file can typically be ingested by third-party tools.
 
 ### Tag data
 
@@ -48,17 +50,17 @@ This content would be added as fields in the metadata file. It contains all of t
 
 ### Text files
 
-Text files can be generated for each file exported from a review set. Often times these files are required by service partners as part of ingesting data into 3<sup>rd</sup> party tools downstream.
+Text files can be generated for each file exported from a review set. Often times these files are required by service partners as part of ingesting data into third-party tools.
 
 ### Redacted files
 
-If redacted PDFs are generated during review, these files are available during export. Users can decide whether to export native files only or to replace natives that have redactions with the burned in PDFs.
+If redacted PDF files are generated during review, these files are available during export. You can decide whether to export native files only or to replace the native files that required redaction with the PDF files that contain the actual redactions.
 
-### Export Location
+### Export location
 
 Exported content is delivered to either a Microsoft provided Azure blob or a customer’s blob can be used if the details are provided at export.
 
-### Export Structure
+### Export structure
 
 When content is exported from a review set, the content is organized in the following structure.
 

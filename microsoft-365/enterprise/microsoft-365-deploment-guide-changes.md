@@ -1,6 +1,8 @@
 ---
 title: "Changes to Microsoft 365 for enterprise deployment content"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 12/18/2019
@@ -26,7 +28,6 @@ description: See the new content and changes to the content in the Microsoft 365
 
 ### Updates and enhancements
 
-- [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files) for the use of sensitivity labels
 -  Refresh of the set of [Test Lab Guides](m365-enterprise-test-lab-guides.md) 
 
 ## November 2019

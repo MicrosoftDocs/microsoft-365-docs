@@ -1,5 +1,7 @@
 ---
 title: "Threat Explorer and real-time detections, new to Threat Explorer, changes to Threat Explorer, new to Office 365, Security, Cloud Security, new to Security in ATP, new ATP features"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -58,7 +60,7 @@ Delivery Action is the action taken on an email due to existing policies or dete
 
 |Delivered  |Junked  |Blocked  |Replaced  |
 |---------|---------|---------|---------|
-|Email was delivered to the user's inbox or another folder, and the user can directly access it.    | Email was sent to either user’s Junk folder or Deleted folder, and the user has access to email messages in those folders.       | Any email messages that are quarantined, that failed, or were dropped, and are not accessible by the user.     | Any email messages where malicious attachments were replaced by .txt files that state the attachments were malicious.     |
+|Email was delivered to the user's inbox or another folder, and the user can directly access it.    | Email was sent to either user's Junk folder or Deleted folder, and the user has access to email messages in those folders.       | Any email messages that are quarantined, that failed, or were dropped, and are not accessible by the user.     | Any email messages where malicious attachments were replaced by .txt files that state the attachments were malicious.     |
 
 And here is what the user can see, and what they can't:
 
@@ -70,10 +72,10 @@ And here is what the user can see, and what they can't:
 Delivery location shows the results of policies and detections that run post-delivery. It's linked to a Delivery Action. This field was added to give insight into the action taken when a problem mail is found. Here are the possible values of delivery location:
 
 - **Inbox or folder**: The email is in inbox or a folder (according to your email rules).
-- **On-prem or external**: The mailbox doesn’t exist on cloud but is on-premises.
+- **On-prem or external**: The mailbox doesn't exist on cloud but is on-premises.
 - **Junk folder**: The email is in the Junk folder of a user.
 - **Deleted items folder**: The email in the Deleted items folder of a user.
-- **Quarantine**: The email in quarantine, and is not in a user’s mailbox.
+- **Quarantine**: The email in quarantine, and is not in a user's mailbox.
 - **Failed**: The email failed to reach the mailbox.
 - **Dropped**: The email gets lost somewhere in the mail flow.
 
@@ -195,7 +197,7 @@ To learn more about roles and permissions, see the following resources:
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Feature permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
-## Some differences between Threat Exporter and real-time detections
+## Some differences between Threat Explorer and real-time detections
 
  - The **real-time detections** report is available in Office 365 ATP Plan 1, whereas **Threat Explorer** is available in Office 365 ATP Plan 2.
  - The **real-time detections** report allows you to view detections in real-time. **Threat Explorer** does this as well, but also allows you to view additional details for a given attack.
