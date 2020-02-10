@@ -21,7 +21,7 @@ ms.topic: conceptual
 
 The following features are generally available (GA) in the latest release of Microsoft Threat Protection.
 
-## January 2020
+## February 2020
 - [Incidents](incidents-overview.md) <br> Know exactly where an attack started and other details to help you see the extent of the attack.
 - [Automated investigation and response](mtp-autoir.md) <br> AIR enables your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents.
 - [Advanced hunting enhancements](advanced-hunting-query-emails-devices.md) <br> Proactively hunt for threats across your Windows devices and Office 365 emails. 
