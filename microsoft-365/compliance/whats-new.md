@@ -60,7 +60,7 @@ We’d love to hear what you think. As you use the solution, leave us feedback s
 
 Graduating from the preview phase to full availability, communication compliance is a key component of our new insider risk solution set. This robust solution helps minimize communication risks using workflows for detecting, investigating, and taking remediation actions for messages that don’t meet your organization’s standards.
 
-Customer feedback during the preview was fantastic. It resulted in several enhancements, including a first-run experience to get you started improvements to investigation and remediation actions, and more.
+Customer feedback during the preview was fantastic. It resulted in several enhancements, including a first-run experience to get you started, improvements to investigation and remediation actions, and more.
 
 [Learn more about communication compliance](communication-compliance.md)
 
@@ -68,7 +68,7 @@ Customer feedback during the preview was fantastic. It resulted in several enhan
 
 **Data connectors**
 
-Formerly sharing space with other ‘Import’ features in the Office 365 Security & Compliance Center, data connectors now have their very own home in the Microsoft 365 compliance center. Use the new ‘Data connectors’ page to import and archive data from your organization’s human resources (HR) sources and various third-party platforms (like Facebook, LinkedIn, Twitter, and Instant Bloomberg) to mailboxes in your Microsoft 365 organization. Once imported, this data can be managed in several compliance solutions, including eDiscovery, insider risk management, communication compliance, audit, retention policies, and more.
+Formerly sharing space with other ‘Import’ features in the Office 365 Security & Compliance Center, data connectors now have their very own home in the Microsoft 365 compliance center. Use the new ‘Data connectors’ page to import and archive data from your organization’s human resources (HR) files and various third-party platforms (like Facebook, LinkedIn, Twitter, and Instant Bloomberg) to mailboxes in your Microsoft 365 organization. Once imported, this data can be managed in several compliance solutions, including eDiscovery, insider risk management, communication compliance, audit, retention policies, and more.
 
 [Learn more about data connectors](archiving-third-party-data.md)
 
