@@ -1,5 +1,7 @@
 ---
 title: "Overview of retention labels"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Retention labels in Office 365 can help you take the right actions on the right content. With retention labels, you can classify data across your organization for governance, and enforce retention rules based on that classification. You can also use retention labels to implement records management across Office 365."
+description: "Use retention labels to classify data across your organization for governance, and enforce retention rules based on that classification. You can also use retention labels to implement a records management solution for Microsoft 365."
 ---
 
 # Overview of retention labels

@@ -5,6 +5,8 @@ keywords: change history
 ms.prod: m365-md
 ms.sitesec: library
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal

@@ -776,16 +776,12 @@
 
                   href: ./office-365-security/secure-team-for-files-in-a-dev-test-environment.md
 
-            - name: Secure SharePoint Online sites and files
+            - name: Secure SharePoint Online sites in a dev/test environment
 
-              href: ./office-365-security/secure-sharepoint-online-sites-and-files.md
+              href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
 
               items: 
-
-                - name: Secure SharePoint Online sites in a dev/test environment
-
-                  href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
-
+          
             - name: SIEM server integration
 
               href: ./office-365-security/siem-server-integration.md

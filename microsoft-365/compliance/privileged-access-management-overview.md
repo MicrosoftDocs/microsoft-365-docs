@@ -1,5 +1,7 @@
 ---
 title: "Privileged access management in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -22,7 +24,7 @@ description: "Use this topic to learn more about privileged access management in
 > [!IMPORTANT]
 > This topic covers deployment and configuration guidance for features only currently available in Office 365 E5 and Advanced Compliance SKUs.
 
-Privileged access management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. Privileged access management requires users to request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow. This gives users just-enough-access to perform the task at hand, without risking exposure of sensitive data or critical configuration settings. Enabling privileged access management in Office 365 allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
+Privileged access management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. Privileged access management requires users to request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow. This configuration gives users just-enough-access to perform the task at hand, without risking exposure of sensitive data or critical configuration settings. Enabling privileged access management in Office 365 allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
 
 For a quick overview of the integrated Customer Lockbox and privileged access management workflow, see this [Customer Lockbox and privileged access management in Office 365 video](https://go.microsoft.com/fwlink/?linkid=2066800).
 
@@ -69,18 +71,23 @@ For an approved request, the task is processed by the Exchange Management runspa
 ## Frequently asked questions
 
 ### What SKUs can use privileged access in Office 365?
+
 Privileged access management is available for customers with Office 365 E5 and Advanced Compliance SKUs.
 
 ### When will privileged access support Office 365 workloads beyond Exchange?
+
 Privileged access management will be available in other Office 365 workloads soon. Visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) for more details.
 
 ### My organization needs more than 30 privileged access policies, will this limit be increased?
+
 Yes, raising the current limit of 30 privileged access policies per Office 365 organization is on the feature roadmap.
 
 ### Do I need to be a Global Admin to manage privileged access in Office 365?
-No, you need the Exchange Role Management role assigned to accounts that manage privileged access in Office 365. If you don’t want to configure the Role Management role as a stand-alone account permission, the Global Administrator role includes this role by default and can manage privileged access. Users included in an approvers’ group don't need to be a Global Admin or have the Role Management role assigned to review and approve requests.
+
+No, you need the Exchange Role Management role assigned to accounts that manage privileged access in Office 365. If you don’t want to configure the Role Management role as a stand-alone account permission, the Global Administrator role includes this role by default and can manage privileged access. Users included in an approvers’ group don't need to be a Global Admin or have the Role Management role assigned to review and approve requests with PowerShell.
 
 ### How is privileged access management in Office 365 related to Customer Lockbox?
+
 [Customer Lockbox](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) allows a level of access control for organizations when Microsoft accesses data. Privileged access management in Office 365 allows granular access control within an organization for all Office 365 privileged tasks.
 
 ## Ready to get started?

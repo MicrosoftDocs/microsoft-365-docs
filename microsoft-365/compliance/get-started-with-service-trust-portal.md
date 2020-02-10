@@ -1,5 +1,7 @@
 ---
 title: "Get started with the Microsoft Service Trust Portal"
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi

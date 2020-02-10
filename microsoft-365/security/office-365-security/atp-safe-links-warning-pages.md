@@ -1,5 +1,7 @@
 ---
 title: "Office 365 ATP Safe Links warning pages"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp

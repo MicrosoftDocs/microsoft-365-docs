@@ -5,6 +5,8 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -95,12 +97,12 @@ Microsoft cloud and commercial technical support services are audited once a yea
 
 This code of practice applies to CSPs that process PII under contract for other organizations. At Microsoft, it also applies to the support of those CSPs.
 
-**What is the difference between “personal information controllers” and “personal information processors”?**
+**What is the difference between 'personal information controllers' and 'personal information processors'?**
 
 In the context of ISO/IEC 27018:
 
-- “Controllers” control the collection, holding, processing, or use of personal information; they include those who control it on another company’s behalf.
-- “Processors” process information on behalf of controllers; they do not make decisions as to how to use the information or the purposes of the processing. In providing its enterprise cloud services, Microsoft — as a vendor to you — is an information processor.
+- 'Controllers' control the collection, holding, processing, or use of personal information; they include those who control it on another company’s behalf.
+- 'Processors' process information on behalf of controllers; they do not make decisions as to how to use the information or the purposes of the processing. In providing its enterprise cloud services, Microsoft — as a vendor to you — is an information processor.
 
 **Where can I view Microsoft compliance information for ISO/IEC 27018?**
 
@@ -113,6 +115,10 @@ In the context of ISO/IEC 27018:
 Yes. If compliance with ISO/IEC 27018 is important for your business and implementations deployed on any of Microsoft in-scope enterprise cloud services, you can use Microsoft’s attestation of compliance with ISO/IEC 27018 with Microsoft’s certification for ISO/IEC 27001 in your compliance assessment.
 
 However, you are responsible for engaging an assessor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
+
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), use the pre-configured [ISO 27018 template](https://go.microsoft.com/fwlink/?linkid=2117523) to help your organization meet the requirements for this regulation.
 
 ## Resources
 

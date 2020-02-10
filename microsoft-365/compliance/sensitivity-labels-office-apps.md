@@ -1,5 +1,7 @@
 ---
 title: "Sensitivity labels in Office apps"
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -63,7 +65,7 @@ Additional capabilities are available when you install the Azure Information Pro
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
+|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Preview: Rolling out to [Office Insider](https://office.com/insider)            | Preview: Rolling out to [Office Insider](https://office.com/insider)        | Under review   | Under review         | Under review                                                        |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: In [Office Insider](https://office.com/insider)                                  | Under review | Under review | Under review | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -83,7 +85,7 @@ Additional capabilities are available when you install the Azure Information Pro
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review                       | Under review                    | Under review           | Under review               | Under review               |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review                       | Under review                    | Under review           | Under review               | Under review               |
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Under review                       | Under review                    | Under review           | Under review               | Preview: In roll-out to [Targeted release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide) |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: Rolling out to [Office Insider](https://office.com/insider)                       | Under review                    | Under review           | Under review               | Yes |
 |
 
 ## About the Office built-in labeling client
@@ -147,6 +149,6 @@ Office 365 applies content marking and encryption with a sensitivity label diffe
 
 ## More resources
 
-[Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+- [Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 
 - [Known issues when you apply sensitivity labels to your Office files](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)

@@ -1,5 +1,7 @@
 ---
 title: "Form a query to find sensitive data stored on sites"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi

@@ -1,5 +1,7 @@
 ---
 title: "Manage jobs in Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -49,6 +51,6 @@ The following table describes the different status states for jobs.
 | Submission failed | The job submission failed.  You should attempt to rerun the action that triggered the job. |
 | In progress | The job is in progress, you can monitor the progress of the job in the **Jobs** tab. |
 | Successful | The job was successfully completed. The date and time that the job completed is displayed in the **Completed** column on the **Jobs** tab. |
-| Partially successful | The job was partially successful. |
+| Partially successful | The job was partially successful. This status is typically returned when the job didn't find any partially indexed data (also called *unindexed data*) in some of the custodian data sources.  |
 | Failed | The job failed.  You should attempt to rerun the action that triggered the job. If the job fails a second time, we recommend that you contact Microsoft Support and provide the support information from the job. |
 |||

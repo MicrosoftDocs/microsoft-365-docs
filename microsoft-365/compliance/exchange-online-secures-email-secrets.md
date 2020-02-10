@@ -1,5 +1,7 @@
 ---
 title: "How Exchange Online secures your email secrets"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -35,9 +37,9 @@ For extra protection, DKM technology includes automated key rollover and archivi
 Microsoft uses [Distributed Key Manager](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) to encrypt your secrets in Exchange Online datacenters. For example:
   
 - Email account credentials for connected accounts. Connected accounts are third-party accounts such as Hotmail, Gmail, and Yahoo! mail accounts.
-    
-- Customer key. If you are using [Customer Key in Office 365](controlling-your-data-using-customer-key.md), you'll use [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) to safeguard your secrets.
-    
+
+- Customer key. If you are using [Service encryption with Customer Key in Office 365](customer-key-overview.md), you'll use [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) to safeguard your secrets.
+
 ## Related topics
 
 [Encryption in Office 365](encryption.md)

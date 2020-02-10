@@ -1,5 +1,7 @@
 ---
 title: "Set up a connector to import HR data"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -22,7 +24,7 @@ You can set up a data connector in the Microsoft 365 compliance center to import
 
 - The user who creates the HR connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a new role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
-- You'll need to determine how to retrieve or export the data from your organization's HR system (on a regular basis) and add the CSV file that's described in Step 2. The script that you run in Step 4 will upload the HR data in the CSV file to the Microsoft cloud.
+- You'll need to determine how to retrieve or export the data from your organization's HR system (on a regular basis) and add it to the CSV file that's described in Step 2. The script that you run in Step 4 will upload the HR data in the CSV file to the Microsoft cloud.
 
 - The sample script that you run in Step 4 will upload HR data to the Microsoft cloud so that it can be used by other Microsoft tools, such as the insider risk management solution. This sample script isn't supported under any Microsoft standard support program or service. The sample script is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample script and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
 
@@ -59,7 +61,7 @@ The following table describes each column in the CSV file:
 |**LastWorkingDate**|Specifies the last day of work for the terminated employee. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-After you create the CSV file with the required HR data, store in on a local computer or network location that can be specified when you run the script in Step 4. You should also implement an update strategy so that the CSV file always contains the most current information so that whatever you run the script, the most current employee termination data will be uploaded to the Microsoft cloud.
+After you create the CSV file with the required HR data, store it on the local computer that you run the script on in Step 4. You should also implement an update strategy to make sure the CSV file always contains the most current information so that whatever you run the script, the most current employee termination data will be uploaded to the Microsoft cloud.
 
 ## Step 3: Create the HR connector
 
@@ -99,7 +101,7 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 ## Step 4: Run the sample script to upload your HR data
 
-The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 2) to the Microsoft cloud. After you run the script, the HR connector that you created in Step 3 can access and import the data to your Microsoft 365 organization where it can accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
+The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 2) to the Microsoft cloud. Specifically, the script uploads the data to the HR connector. After you run the script, the HR connector that you created in Step 3 imports the HR data to your Microsoft 365 organization where it can accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) to access the sample script.
 
@@ -127,7 +129,7 @@ The last step in setting up an HR connector is to run a sample script that will 
    |`appId` |This is the AAD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. | 
    |`appSecret`|This is the AAD application secret for the app that you created in Azure AD in Step 1. This also used for authentication.|
    |`jobId`|This is the Job Id for the HR connector that you created in Step 3. This is used to associate the HR data that is uploaded to the Microsoft cloud with the HR connector.|
-   |`csvFilePath`|This is the file path on the local computer (the one you're using to run the script) for the CSV file that you created in Step 2. If the CSV file is located on a shared network location, you'll have to specify the complete file path for that location. Try to avoid spaces in the file path; otherwise use single quotation marks.|
+   |`csvFilePath`|This is the file path on the local computer (the one you're using to run the script) for the CSV file that you created in Step 2. Try to avoid spaces in the file path; otherwise use single quotation marks.|
    |||
    
    Here's an example of the syntax for the HR connector script using actual values for each parameter:
@@ -204,6 +206,6 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
    ![The new task is displayed in the Task Scheduler Library](media/HRConnectorTaskSchedulerLibrary.png)
 
-   The last time and the next time the script ran is scheduled to run is displayed. You can double-click the task to edit it.
+   The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
 
    You can also verify the last time the script ran on the flyout page of the corresponding HR connector in the compliance center.

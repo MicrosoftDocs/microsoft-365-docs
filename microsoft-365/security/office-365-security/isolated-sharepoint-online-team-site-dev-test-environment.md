@@ -1,5 +1,7 @@
 ---
 title: "Isolated SharePoint Online team site dev/test environment"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi

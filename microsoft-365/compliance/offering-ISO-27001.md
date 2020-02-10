@@ -5,6 +5,8 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +16,7 @@ hideEdit: true
 titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offerings: ISO/IEC 27001:2013 Information Security Management Standards
+# ISO/IEC 27001:2013 Information Security Management Standards
 
 ## ISO/IEC 27001 overview
 
@@ -134,6 +136,10 @@ Adopting ISO/IEC 27001 is a strategic commitment. As a starting point, consult t
 **Can I use the ISO/IEC 27001 compliance of Microsoft services in my organization’s certification?**
 
 Yes. If your business requires ISO/IEC 27001 certification for implementations deployed on Microsoft services, you can use the applicable certification in your compliance assessment. You are responsible, however, for engaging an assessor to evaluate the controls and processes within your own organization and your implementation for ISO/IEC 27001 compliance.
+
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), use the pre-configured [ISO 27001 template](https://go.microsoft.com/fwlink/?linkid=2117914) to help your organization meet the requirements for this regulation.
 
 ## Resources
 

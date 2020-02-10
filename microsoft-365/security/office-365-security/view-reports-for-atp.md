@@ -1,9 +1,11 @@
 ---
 title: "View reports for Office 365 Advanced Threat Protection, malware reports, phish reports, compromised accounts, URL protection status, threat reporting, report threats"
+f1.keywords:
+- CSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 01/10/2020
+ms.date: 02/07/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -136,6 +138,7 @@ In order to view and use the reports described in this article, **you must have 
 - For the Security &amp; Compliance Center, you must have one of the following roles assigned:
     - Organization Management
     - Security Administrator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
+    - Security Operator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
     - Security Reader
 
 - For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)):
@@ -161,5 +164,7 @@ If you are not seeing data in your ATP reports, double-check that your policies 
 [Create a schedule for a report in the Security &amp; Compliance Center](create-a-schedule-for-a-report.md)
   
 [Set up and download a custom report in the Security &amp; Compliance Center](set-up-and-download-a-custom-report.md)
+
+[Role permissions (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
   
 

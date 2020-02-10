@@ -1,5 +1,7 @@
 ---
 title: "Detect and Remediate Illicit Consent Grants in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -31,11 +33,13 @@ You need to search the Office 365 **audit log** to find signs, also called Indic
 
 1. Open the **Security and Compliance Center** in your Office 365 tenant.
 
-2. Navigate to the **Search & investigation** node and select **audit log** search.
+2. Navigate to **Search** and select **Audit log search**.
 
-3. Create a search (all activities and all users) and filter the results for Consent to application, and Add OAuth2PermissionGrant.
+3. Search (all activities and all users) and enter the start date and end date if required and then click **Search**. 
 
-4. Examine the Extended Properties and check to see if IsAdminContent is set to True.
+4. Filter the results for Consent to application, and Add OAuth2PermissionGrant.
+
+5. Click on the result to see the details of the activity. Click **More Information** to get details of the activity. Check to see if IsAdminContent is set to True.
 
 > [!NOTE]
 > • It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. <br/><br/> • The length of time that an audit record is retained and searchable in the audit log depends on your Office 365 subscription, and specifically the type of the license that is assigned to a specific user. For more information, see [Audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md).
@@ -106,7 +110,7 @@ The simplest way to verify the Illicit Consent Grant attack is to run [Get-Azure
 
 The script produces one file named Permissions.csv. Follow these steps to look for illicit application permission grants:
 
-1. In the ConsentType column (column G) search for the value "AllPrinciples". The AllPrincipals permission allows the client application to access everyone’s content in the tenancy. Native Office 365 applications need this permission to work correctly. Every non-Microsoft application with this permission should be reviewed carefully.
+1. In the ConsentType column (column G) search for the value "AllPrinciples". The AllPrincipals permission allows the client application to access everyone's content in the tenancy. Native Office 365 applications need this permission to work correctly. Every non-Microsoft application with this permission should be reviewed carefully.
 
 2. In the Permission column (column F) review the permissions that each delegated application has to content. Look for "Read" and "Write" permission or "*.All" permission, and review these carefully because they may not be appropriate.
 

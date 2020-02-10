@@ -5,6 +5,8 @@ keywords: security, malware, Microsoft 365, M365, secure score, security center,
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
@@ -127,6 +129,15 @@ You can view a graph of your organization's score over time in the **History** t
 
 Microsoft Secure Score is a numerical summary of your security posture based on system configurations, user behavior and other security-related measurements; it is not an absolute measurement of how likely your system or data will be breached. Rather, it represents the extent to which you have adopted security controls in your Microsoft environment which can help offset the risk of being breached. No online service is completely immune from security breaches, and secure score should not be interpreted as a guarantee against security breach in any manner.
 
+## What's new?
+To make Microsoft Secure Score a better representative of your security posture we have made some changes.
+
+### Removed “not scored” improvement actions
+
+One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable.  
+
+For these reasons, all improvement actions that were not scored have been removed. No action is needed on your part.
+
 ## What's coming?
 
 To make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
@@ -166,6 +177,11 @@ To ensure that the Microsoft Secure Score is meaningful and that every improveme
 - Discover risky and non-compliant shadow IT applications
 - Review permissions & block risky OAuth applications connected to your environment
 - Set up versioning on SharePoint online document libraries
+- Store user documents in OneDrive for Business
+- Do not allow mailbox delegation
+- Allow anonymous guest sharing links for sites and docs
+- Set up Office 365 ATP Safe Attachment policies
+- Set up Office 365 Safe Links to verify URLs
 
 ### MFA improvement action updates
 
@@ -184,11 +200,11 @@ New improvement actions added:
 
  These new improvement actions will require registering your users or admins for multi-factor authentication (MFA) across your directory and establishing the right set of policies that fit your organizational needs. The main goal is have flexibility while ensuring all your users and admins can authenticate with multiple factors or risk-based identity verification prompts. That can take the form of setting security defaults that let Microsoft decide when to challenge users for MFA, or having multiple policies that apply scoped decisions.
 
-### Removing “not scored” and “review” improvement actions
+### Removing “review” improvement actions
 
-One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable, and review improvement actions are not measured to the same standard as other improvement actions.  
+One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Review improvement actions are not measured to the same standard as other improvement actions.  
 
-For these reasons, all improvement actions that were not scored or required a review cadence will be temporarily removed. No action is needed on your part.
+For these reasons, all improvement actions that required a review cadence will be temporarily removed. No action is needed on your part.
 
 ### Simplification of the point system
 

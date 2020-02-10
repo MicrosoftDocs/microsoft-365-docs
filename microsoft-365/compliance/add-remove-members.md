@@ -1,5 +1,7 @@
 ---
 title: "Add or remove members from a data investigation"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

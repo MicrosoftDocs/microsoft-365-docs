@@ -1,5 +1,7 @@
 ---
 title: "Help and support for EOP"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
