@@ -158,9 +158,8 @@ Both Allow and Block lists are configured as part of any customer Anti-spam poli
 
    - Add unwanted domains to the Domain block list. Click **Edit**![Add Icon](../media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the domains you want to block. You can separate multiple entries using a semi-colon or a new line. Click **Save** to return to the **Block Lists** page.
    
-   
-    > [!NOTE]
-    > In Spam filter policy, you can block entire domains or specific senders, but not wildcards.
+     > [!NOTE]
+     > In the spam filter policy, you can block entire domains or specific senders, but you can't use wildcards (\*). 
 
 > [!TIP]
 > There may be situations where your organization may not agree with the verdict the service provides. In this case, you may want to keep the Allow or Block listing permanent. However, if you are going to put a domain on the Allow list for extended periods of time, you should tell the sender to make sure that their domain is authenticated and set to DMARC reject if it is not.
