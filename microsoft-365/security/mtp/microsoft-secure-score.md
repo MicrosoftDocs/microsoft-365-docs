@@ -168,6 +168,11 @@ To ensure that the Microsoft Secure Score is meaningful and that every improveme
 - Discover risky and non-compliant shadow IT applications
 - Review permissions & block risky OAuth applications connected to your environment
 - Set up versioning on SharePoint online document libraries
+- Store user documents in OneDrive for Business
+- Do not allow mailbox delegation
+- Allow anonymous guest sharing links for sites and docs
+- Set up Office 365 ATP Safe Attachment policies
+- Set up Office 365 Safe Links to verify URLs
 
 ### MFA improvement action updates
 
