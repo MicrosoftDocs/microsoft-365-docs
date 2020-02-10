@@ -129,6 +129,15 @@ You can view a graph of your organization's score over time in the **History** t
 
 Microsoft Secure Score is a numerical summary of your security posture based on system configurations, user behavior and other security-related measurements; it is not an absolute measurement of how likely your system or data will be breached. Rather, it represents the extent to which you have adopted security controls in your Microsoft environment which can help offset the risk of being breached. No online service is completely immune from security breaches, and secure score should not be interpreted as a guarantee against security breach in any manner.
 
+## What's new?
+To make Microsoft Secure Score a better representative of your security posture we have made some changes.
+
+### Removed “not scored” improvement actions
+
+One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable.  
+
+For these reasons, all improvement actions that were not scored have been removed. No action is needed on your part.
+
 ## What's coming?
 
 To make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
