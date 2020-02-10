@@ -28,7 +28,7 @@ If your organization has existing user accounts in an on-premises Active Directo
 
 ## Recommended settings
 
-We empower security adminis to customize their security settings to satisfy the needs of their organization. Although, as a general rule, there are two security levels in EOP and Office 365 ATP that we recommend: Standard and Strict. These settings are listed in the [Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md).
+We empower security admins to customize their security settings to satisfy the needs of their organization. Although, as a general rule, there are two security levels in EOP and Office 365 ATP that we recommend: Standard and Strict. These settings are listed in the [Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md).
 
 ### Miscellaneous/non-policy settings
 
@@ -43,8 +43,8 @@ These settings cover a range of features that are outside of security policies.
 |Schedule Malware and Spam Reports|Yes|Yes||
 |Auto-forwarding to external domains should be disallowed or monitored|Yes|Yes||
 |Unified Auditing should be enabled|Yes|Yes||
-|IMAP connectivity to mailbox|Disabled|Disabled||
-|POP connectivity to mailbox|Disabled|Disabled||
+|[IMAP connectivity to mailbox](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabled|Disabled||
+|[POP connectivity to mailbox](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabled|Disabled||
 |SMTP Authenticated Submission to mailbox|Disabled|Disabled||
 |EWS connectivity to mailbox|Disabled|Disabled||
 |[PowerShell connectivity](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Disabled|Disabled|Available for mailbox users or mail users (user objects returned by the [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) cmdlet).|
