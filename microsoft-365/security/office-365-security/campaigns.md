@@ -120,21 +120,47 @@ The diagram contains the following information:
 
 - **Sender domains**
 
-- **Filter verdicts**: The values here are related to the available anti-phishing and anti-spam filter verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). Of great interest here is the value **Tenant Allow**, which means a configured setting in the organization allowed a message through that would have otherwise been blocked by the service (for example, a domain in the Allowed Senders list).
+- **Filter verdicts**: The values here are related to the available anti-phishing and anti-spam filter verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). The available values are described in the following table:
 
-  - **Tenant Block**: This value indicates that a setting in your organization (for example, a domain entry in the [Blocked Senders list](create-block-sender-lists-in-office-365.md)) both detected the message and determined where it was delivered. For messages that weren't quarantined, review your blocked senders settings to determine why the message was delivered.
+  |Value|Spam filter verdict|Description|
+  |:-----|:-----|:-----|
+  | **Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by the spam filter (for example, by a mail flow rule, also known as a transport rule).<br/><br/>The message skipped spam filtering for other reasons (for example, the sender and recipient appear to be in the same organization).|
+  |**Blocked**|`SFV:SKS`|The message was marked as spam before being evaluated by the spam filter (for example, by a mail flow rule).|
+  |**Detected**|`SFV:SPM`|The message was marked as spam by the spam filter.|
+  |**Not Detected**|`SFV:NSPM`|The message was marked as not spam by the spam filter.|
+  |**Released**|`SFV:SKQ`|The message skipped spam filtering because it was released from quarantine.|
+  |**Tenant Allow**<sup>\*</sup>|`SFV:SKA`|The message skipped spam filtering due to the spam filter policy configuration (for example, the sender or domain was in hte **Sender allow** list).|
+  |**Tenant Block**<sup>\*\*</sup>|`SFV:SKA`|The message was blocked by spam filtering due to the spam filter policy configuration (for example, the sender or domain was in the **Sender block** list).|
+  |**User Allow**<sup>\*</sup>|`SFV:SFE`|The message skipped spam filtering because the sender was in a user's Safe Senders list in Outlook.|
+  |**User Block**<sup>\*\*</sup>|`SFV:BLK`|The message was blocked by spam filtering because the sender was in a user's Blocked Senders list in Outlook.|
+  |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) took action on the delivered message according to your spam filter policy configuration (moved to the Junk Email folder or Quarantined).|
 
-  - **Detected**
+  <sup>\*</sup> Review your spam filter policy configuration settings, because the allowed message would have likely been blocked by the service.
 
-  - **Tenant Allow**
+  <sup>\*\*</sup> Review your spam filter policy configuration settings, because these messages should be quarantined, not delivered.
 
 - **Delivery locations**: You'll likely want to investigate messages that were actually delivered to recipients (either to the Inbox or the Junk Email folder), even if users didn't click on the payload URL in the message. You can also remove the quarantined messages from quarantine. For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
+
+  - **Deleted folder**
+
+  - **Dropped**
+
+  - **External**: The recipient is located in your on-premises email organization.
+
+  - **Failed**
+
+  - **Forwarded**
+
+  - **Inbox**
 
   - **Junk folder**
 
   - **Quarantine**
 
-  - **Inbox**
+  - **Unknown**
+
+> [!NOTE]
+> In all layers that contain more than 10 items, the top 10 items are shown, while the rest are bundled together in **Others**.
 
 #### URL clicks
 
@@ -142,9 +168,15 @@ When a phishing message is delivered to a recipient (to the Inbox or the Junk Em
 
 If a user clicked on the payload URL in the phishing message, the actions are displayed in the **URL clicks** area of the diagram in the campaign details view.
 
-- **Safe Links Block**: Indicates the recipient clicked on the payload URL, but their access to the malicious website was blocked by the [ATP Safe Links](atp-safe-links.md) policies in your organization.
+- **Allowed**
 
-- **Safe Links Block Override**: Also indicates the recipient clicked on the payload URL in the message, ATP Safe Links tried to stop them, but they were allowed to override the block. You need to investigate your [Safe Links policies](set-up-atp-safe-links-policies.md) to see why users are allowed to override the Safe Links verdict and continue to the malicious website.
+- **BlockPage**: The recipient clicked on the payload URL, but their access to the malicious website was blocked by the [ATP Safe Links](atp-safe-links.md) policies in your organization.
+
+- **BlockPageOverride**: The recipient clicked on the payload URL in the message, ATP Safe Links tried to stop them, but they were allowed to override the block. You need to investigate your [Safe Links policies](set-up-atp-safe-links-policies.md) to see why users are allowed to override the Safe Links verdict and continue to the malicious website.
+
+- **PendingDetonationPage**: ATP Safe Attachments is in the process of opening the payload URL in a virtual computer environment, and seeing what happens.
+
+- **PendingDetonationPageOverride**: The recipient was allowed to override the payload detonation process and open the URL without waiting for the results.
 
 ### Tabs
 
@@ -170,11 +202,11 @@ There are several tabs in the campaign details view that allow you to further in
 
   - **Blocked Count**
 
-  - **SPF Passed**
+  - **SPF Passed**: The sender was authenticated by the [Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md). A sender that does not pass SPF validation indicates the sender isn't authenticated, or the message is spoofing a legitimate sender.
 
 - **Senders**
 
-  - **Sender**
+  - **Sender**: This is the actual sender address in the SMTP MAIL FROM command, which is not necessarily the From: email address that users see in their email clients.
 
   - **Total Count**
 
@@ -182,7 +214,9 @@ There are several tabs in the campaign details view that allow you to further in
 
   - **Not Inboxed**
 
-  - **SPF Passed**
+  - **DKIM Passed**: The sender was authenticated by [Domain Keys Identified Mail (DKIM)](support-for-validation-of-dkim-signed-messages.md). A sender that does not pass DKIM validation indicates the sender isn't authenticated, or the message is spoofing a legitimate sender.
+
+  - **DMARC Passed**: The sender was authenticated by [Domain-based Message Authentication, Reporting, and Conformance (DMARC)](use-dmarc-to-validate-email.md). A sender that does not pass DMARC validation indicates the sender isn't authenticated, or the message is spoofing a legitimate sender.
 
 - **Payloads**
 
