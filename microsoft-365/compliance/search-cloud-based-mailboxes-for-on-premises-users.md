@@ -132,7 +132,7 @@ For more information using these cmdlets, see:
 
 ## Known issues
 
-- Currently, you can search, preview, and export content in cloud-based mailboxes for on-premises users, or place a cloud-based mailbox for an on-premises user on a hold associated with an eDiscovery case. You can also apply a retention policy for Teams chats or channel messages to cloud-based mailboxes for on-premises users, but retention policy for other locations (such as Exchange emails, SharePoint sites, etc.) for on-premises user is not supported for now. 
+- Currently, you can search, preview, and export content in cloud-based mailboxes for on-premises users. You can also place a cloud-based mailbox for an on-premises user on a hold associated with an eDiscovery case, and apply a retention policy for Teams chats or channel messages to cloud-based mailboxes for on-premises users. However at this time, you can't apply a retention policy for other other content locations (such as Exchange mailboxes and SharePoint sites) to cloud-based mailboxes for on-premises users. 
 
 
 ## Frequently asked questions
@@ -151,7 +151,7 @@ No. When you migrate the primary mailbox of an on-premises user to the cloud, th
   
  **Can I apply an eDiscovery hold or Office 365 retention policies to on-premises users?**
   
-You can apply eDiscovery hold or retention policies for Teams chats and channel messages to cloud-based mailboxes for on-premises users.
+Yes. You can apply eDiscovery holds or retention policies for Teams chats and channel messages to cloud-based mailboxes for on-premises users.
   
  **Can Content Search find older Teams chats for on-premises users before the time my organization submitted the request to enable this feature?**
   
