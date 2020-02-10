@@ -53,7 +53,7 @@ If you are an Office 365 customer you can manage this feature through the Office
 
   - Add the domain pair through the **Set-PhishFilterPolicy** cmdlet in Exchange Online PowerShell. For details, see [Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) and [Set up Office 365 ATP anti-phishing and anti-phishing policies](set-up-anti-phishing-policies.md).
 
-Additionally, we don't apply the unverified sender treatment if the message was delivered to the Inbox via mail flow rules (also known as transport rules) or Safe Domain List (Anti-Spam Policy).
+Additionally, we don't apply the unverified sender treatment if the message was delivered to the Inbox via mail flow rules (also known as transport rules) or the Safe Domain List (anti-spam policies).
 
 ## Frequently asked questions
 
