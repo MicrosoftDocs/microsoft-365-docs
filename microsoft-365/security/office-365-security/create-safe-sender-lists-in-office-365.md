@@ -26,7 +26,7 @@ If you want to ensure that users receive emails from a particular sender or send
 The recommended method to configure a safe sender list is to use mail flow rules as this presents the most flexibility to ensure that only the right messages get allowed. *Anti-Spam policy email address* and *Domain based allow lists* are not as secure as *IP address-based lists* because domains can easily be spoofed. But anti-spam policy IP based allow lists also present risks as they will allow any domains sent through that IP to bypass spam filtering. Please be careful and monitor *any* exceptions made, carefully.
 
 > [!IMPORTANT]
-> • Information on how to create a **Blocked Sender List** is [here](create-block-sender-lists-in-office-365.md). <br/><br/> • To allow a sender domain to send unauthenticated email (bypass anti-spoofing protection) but not bypass anti-spam and anti-malware checks, you can add it to the [AllowedToSpoof safe sender list]( https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight).
+> • Information on how to create a **Blocked Sender List** is [here](create-block-sender-lists-in-office-365.md). <br/><br/> • To allow a sender domain to send unauthenticated email (bypass anti-spoofing protection) but not bypass anti-spam and anti-malware checks, you can add it to the [AllowedToSpoof safe sender list](walkthrough-spoof-intelligence-insight.md).
 
 ## Options from most to least recommended
 
