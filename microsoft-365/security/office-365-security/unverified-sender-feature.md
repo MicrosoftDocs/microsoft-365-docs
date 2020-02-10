@@ -20,9 +20,9 @@ description: "To prevent phishing messages from reaching your mailbox, Outlook.c
 # Unverified Sender
 
 > [!NOTE]
-> These updates are rolling out now, and might not be available yet for all users. This feature is supported for Enterprise outlook.com and Enterprise Outlook Win32 desktop users. It is not currently available for consumer office 365 users.
+> These updates are rolling out now, and might not be available for all users. This feature is supported for Enterprise Outlook.com and Enterprise Outlook Win32 desktop users. It is not currently available for consumer Office 365 users.
 
-To prevent phishing messages from reaching your mailbox, Office 365 verifies that the sender is who they say they are and mark suspicious messages as junk email.
+To prevent phishing messages from reaching your mailbox, Office 365 verifies that the senders are who they say they are and mark suspicious messages as junk email.
 
 > [!IMPORTANT]
 > When a message is marked as a phishing scam, Outlook displays a warning at the top of the page, but any links in the message can still be opened.
@@ -33,7 +33,7 @@ Outlook shows indicators when the sender of a message either can't be identified
 
 ## You see a '?' in the sender image
 
-When Office 365 can't verify the identity of the sender using email authentication techniques, they display a '?' in the sender photo.
+When Office 365 can't verify the identity of the sender using email authentication techniques, a '?' is displayed in the sender image.
 
 ![Message did not pass verification](../media/message-did-not-pass-verification.jpg)
 
@@ -73,7 +73,7 @@ For the '?' in the sender image: As a sender, you should authenticate your messa
 
 For the via tag: As a sender, you should ensure that either the domain in the DKIM signature or the SMTP MAIL FROM is the same as, or is a subdomain of, the domain in the From address.
 
-### Does Outlook.com and Outlook Win32 on the web show this for every message that doesn't pass authentication?
+### Do Outlook.com and Outlook Win32 desktop show this for every message that doesn't pass authentication?
 
 Not necessarily. Office 365 may have other properties within the message to authenticate the sender.
 
