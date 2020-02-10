@@ -56,20 +56,20 @@ landingContent:
             url: view-the-data-governance-reports.md
 
 # Card (optional)
-  - title: Manage internal risks
+  - title: Manage insider risks
     linkLists:
       - linkListType: overview
         links:
-          - text: Protect user and device access
-            url: protect-access-to-data-and-services.md
-          - text: Privileged access management
-            url: privileged-access-management-overview.md
-          - text: Customer Lockbox
-            url: customer-lockbox-requests.md
+          - text: Insider risk management (preview)
+            url: insider-risk-management.md
           - text: Communication compliance
             url: communication-compliance.md
           - text: Information barriers
             url: information-barriers.md
+          - text: Privileged access management
+            url: privileged-access-management-overview.md
+          - text: Customer Lockbox
+            url: customer-lockbox-requests.md
           - text: Customer Key
             url: customer-key-overview.md
 
