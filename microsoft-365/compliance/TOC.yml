@@ -458,8 +458,6 @@
               href: review-set-search.md
             - name: Tag documents in a review set
               href: tagging-documents.md
-            - name: Set up attorney-client privilege detection
-              href: attorney-privilege-detection.md
             - name: Use the review set dashboard (preview)
               href: advanced-ediscovery-dashboard.md
         - name: Analyze case data
@@ -500,6 +498,8 @@
               href: supported-filetypes-ediscovery20.md
             - name: Document metadata fields
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: Set up attorney-client privilege detection
+              href: attorney-privilege-detection.md           
             - name: Conversation review sets
               href: conversation-review-sets.md
             - name: Advanced eDiscovery reports (preview)
