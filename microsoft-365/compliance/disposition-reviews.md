@@ -32,7 +32,7 @@ When content reaches the end of its retention period, there are several reasons 
     
 When you create a retention label in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center, you can choose to trigger a disposition review at the end of the retention period. In a disposition review:
   
-- The people you choose receive an email notification that they have content to review. These reviewers can be individual users, distribution or security groups, or Office 365 groups. Note that notifications are sent on a weekly basis.
+- The people you choose receive an email notification that they have content to review. Note that notifications are sent on a weekly basis.
     
 - The reviewers go to the **Disposition** page in the Security &amp; Compliance Center to review the content. The reviewers can see how many items for each retention label are awaiting disposition, and then select a retention label to see all content with that label.
     
@@ -67,7 +67,7 @@ For more information about retention labels, see [Overview of retention labels](
 ![Retention settings for a label](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
-> When you specify the option **Notify these people when there are items ready to review**, specify a user or mail-enabled security group. Office 365 groups are not supported for this option.
+> When you specify the option **Notify these people when there are items ready to review**, specify a user. Office 365 groups are not supported for this option.
 
 ## Disposing content
 
@@ -95,15 +95,13 @@ Also note that all disposition actions are audited. To ensure this, you must tur
   
 ## Permissions for disposition
 
-To get access to the **Disposition** page, reviewers must be members of the **Disposition Management** role and the **View-Only Audit Logs** role. We recommend creating a new role group called **Disposition Reviewers**, and add these two roles to that role group. 
+To access the **Disposition** page, reviewers must be assigned the **Disposition Management** role and the **View-Only Audit Logs** role. [View instructions](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md) for assigning roles.
 
 Specific to the **View-Only Audit Logs** role:
 
 - Because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet, you must assign users this role by using the [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), rather than by using the **Permissions** page in the Security & Compliance Center. For instructions, see [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- Office 365 Groups aren't supported for this role. Instead, assign user mailboxes, mail users, or mail-enabled security groups.
-
-For instructions to grant users the **Disposition Management** role and create your new **Disposition Reviewers** role, see [Give users access to the Office 365 Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Office 365 Groups aren't supported for this role. Instead, assign user mailboxes or mail users.
   
 ## How long until disposed content is permanently deleted
 
@@ -123,7 +121,7 @@ On the **Pending disposition** page, you can view both pending and completed dis
   
 - The **Pending disposition** shows items that have reached the end of their retention period and require a disposition review. After reviewing each item, decide if you want to apply a different retention label to it, extend its retention period, or permanently delete it. You can select multiple items.
     
-- The **Disposed items** tab shows dispositions were approved for deletion during a disposition review and are now in the process of being permanently deleted or items marked as records that have now been deleted. Items that had a different retention label applied or their retention period extended as part of a review won't appear here.
+- The **Disposed items** tab shows permanently-deleted items that have already been through a disposition review. They show here because the permanent deletion process can take several days, as noted in the section above. Items that had a different retention label applied, or had their retention period extended as part of a review, won't appear here.
 
 ![Disposition tabs](media/Retention-Disposition-tabs.png)
     
