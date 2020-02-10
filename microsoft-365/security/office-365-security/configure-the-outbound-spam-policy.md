@@ -29,13 +29,15 @@ Outbound spam filtering is always enabled if you use the service for sending out
 ## What do you need to know before you begin?
 <a name="sectionSection0"> </a>
 
-Estimated time to complete: 5 minutes
+- Estimated time to complete: 5 minutes
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam entry in the [Feature Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam entry in the [Feature Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) topic.
 
-The following procedure can also be performed via remote PowerShell. Use the [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy) cmdlet to review your settings, and the [Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy) to edit your outbound spam policy settings. To learn how to use Windows PowerShell to connect to Exchange Online Protection, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell). To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- You can also do the procedures in this topic in remote PowerShell. Use the [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy) cmdlet to review your settings, and the [Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy) to edit your outbound spam policy settings.
 
-## Use the Security And Compliance Center (SCC) to edit the default outbound spam policy
+  To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+
+## Use the Security & Compliance Center (SCC) to edit the default outbound spam policy
 
 Use the following procedure to edit the default outbound spam policy:
 
@@ -55,34 +57,38 @@ Use the following procedure to edit the default outbound spam policy:
 
    The administrator for the domain, who is specified using this setting, will be informed that outbound messages are blocked for this user.  To see what this notification looks like, see [Sample notification when a sender is blocked sending outbound spam](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md).
 
-   > [!NOTE] A system alert is also generated indicating the user has been restricted.  To learn more about the alert and how to recover the user see, [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).
+   > [!NOTE]
+   > A system alert is also generated indicating the user has been restricted. To learn more about the alert and how to recover the user, see [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).
 
 4. Expand the **Recipient limits** section to specify the maximum number of recipients that a user can send to, per hour for internal and external recipients together with the maximum number per day.
 
-    > [!NOTE] The maximum number for any input is 10,000.  For more information see [receiving and sending limits within Exchange online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
+   > [!NOTE]
+   > The maximum number for any input is 10000. For more information see [receiving and sending limits within Exchange online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 7. Specify the **action** to take when a user exceeds the specified limits.  The actions that are possible are as follows:
-    * **Restrict the user from sending mail till the following day**.  Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin and the user will be unable to send any further email until the following day, based on UTC time. There is no way for the administrator to override this block.
 
-    * **Restrict the user from sending mail**.  Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin and the user will be unable to send any further email until the administrator removes the restriction.  In these cases the user will be listed on the [Restricted Users page](removing-user-from-restricted-users-portal-after-spam.md).  Once removed from the list the user will not be restricted again for that day.
+   - **Restrict the user from sending mail till the following day**.  Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin and the user will be unable to send any further email until the following day, based on UTC time. There is no way for the administrator to override this block.
 
-    * **No Action/Alert only**. Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin but no action will be taken to restrict the user.
+   - **Restrict the user from sending mail**.  Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin and the user will be unable to send any further email until the administrator removes the restriction.  In these cases the user will be listed on the [Restricted Users page](removing-user-from-restricted-users-portal-after-spam.md).  Once removed from the list the user will not be restricted again for that day.
+
+   - **No Action/Alert only**. Once any sending limit has been exceeded (internal, external or daily) an alert will be generated for the admin but no action will be taken to restrict the user.
 
 6. Expand the **Applies to** section and then create a condition-based rule to specify the users, groups, and domains to which to apply this policy. You can create multiple conditions, if they are unique.  Note: that users must meet all the conditions when multiple conditions are specified.  
 
-      * To select users, select **The sender is**. In the subsequent dialog box, select one or more senders from your company from the user picker list, and then click add. To add senders who aren't on the list, type their email addresses, and then click Check names. When you are done making your selections, click ok to return to the main screen.
+   - To select users, select **The sender is**. In the subsequent dialog box, select one or more senders from your company from the user picker list, and then click add. To add senders who aren't on the list, type their email addresses, and then click Check names. When you are done making your selections, click ok to return to the main screen.
 
-      * To select groups, select **The sender is a member of**. Then, in the subsequent dialog box, select or specify the groups. Click ok to return to the main screen.
+   - To select groups, select **The sender is a member of**. Then, in the subsequent dialog box, select or specify the groups. Click ok to return to the main screen.
 
-      * To select domains, select **The sender domain is**. Then, in the subsequent dialog box, add the domains. Click ok to return to the main screen.
+   - To select domains, select **The sender domain is**. Then, in the subsequent dialog box, add the domains. Click ok to return to the main screen.
 
-        You can create exceptions within the rule. For example, you can filter messages from all domains except for a certain domain. Click add exception, and then create your exception conditions similar to the way that you created the other conditions.
+   You can create exceptions within the rule. For example, you can filter messages from all domains except for a certain domain. Click add exception, and then create your exception conditions similar to the way that you created the other conditions.
 
-        Applying an outbound spam policy to a group is supported only for Mail Enabled Security Groups.
+   Applying an outbound spam policy to a group is supported only for Mail Enabled Security Groups.
 
 7. Click **save**.
 
 ## To create a custom policy for a specific set of users
+
 1. In the SCC, navigate to **Threat Management** \> **Policy** \> **Anti-spam**
 
 2. Click on the **Create an outbound policy** button.
