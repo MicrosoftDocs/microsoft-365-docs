@@ -196,7 +196,7 @@ One of the most powerful features of a retention policy is that by default it ap
     
 - Exchange public folders
     
-![All locations option](media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
+![Choose locations options for rentention policy](media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
   
 Other important features of an org-wide retention policy include:
   
