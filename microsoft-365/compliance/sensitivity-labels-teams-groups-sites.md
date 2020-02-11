@@ -46,7 +46,7 @@ After you enable and configure this preview, users can additionally see and appl
 
 ## Enable this preview and synchronize labels
 
-This feature uses Azure AD functionality to enable the preview. Follow the instructions in the Azure AD documentation, [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell).
+This feature uses Azure AD functionality to enable the preview. Follow the instructions in the Azure AD documentation: [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell).
 
 Then, in a PowerShell session, connect to the Security & Compliance Center by using a work or school account that has global admin privileges. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
