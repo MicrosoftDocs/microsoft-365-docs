@@ -279,7 +279,7 @@ Although you can't prevent users from creating new groups in apps and services t
     Get-Label |ft Name, Guid  
     ```
 
-6. Make a note of the GUIDs for the sensitivity labels you want to apply to your Office 365 groups. For example, the "General" label.
+6. Make a note of the GUIDs for the sensitivity labels you want to apply to your Office 365 groups.
 
 7. Use the following command as an example to get the list of groups that currently have the classification of "General":
 
