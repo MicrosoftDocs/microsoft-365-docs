@@ -1,5 +1,5 @@
 ---
-title: Overview of the Microsoft 365 compliance center
+title: Microsoft 365 compliance center
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -13,7 +13,7 @@ description: Learn about the Microsoft 365 compliance center, including what it 
 ms.collection: M365-security-compliance
 ---
 
-# Overview of the Microsoft 365 compliance center
+# Microsoft 365 compliance center
 
 ## Overview
 
