@@ -15,9 +15,9 @@ ms.collection:
 description: "Office 365 admins can learn how to recover from a ransomware attack."
 ---
 
-# How to recover from a ransomware attack in Office 365
+# Recover from a ransomware attack in Office 365
 
-Even if you take every precaution to protect your Office 365 organization, you can still fall victim to a ransomware attack. Ransomware is big business, and the attacks are verify sophisticated.
+Even if you take every precaution to protect your Office 365 organization, you can still fall victim to a [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and the attacks are verify sophisticated.
 
 The steps in this topic will give you the best chance to recover data that was encrypted by the ransomware, and will help stop the spread of the infection in your Office 365 organization. Before you get started, consider the following items:
 
@@ -138,7 +138,6 @@ You can report phishing message that contain ransomware by following the instruc
 - [Enable or disable macros in Office files](https://support.office.com/article/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
 - [Recommended settings for EOP and Office 365 ATP security](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
-
 
 - [A worthy upgrade: Next-gen security on Windows 10 proves resilient against ransomware outbreaks in 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 
