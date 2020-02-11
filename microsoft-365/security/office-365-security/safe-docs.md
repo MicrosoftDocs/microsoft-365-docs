@@ -14,10 +14,10 @@ search.appverid:
 ms.assetid:
 ms.collection:
 - M365-security-compliance
-description: "Learn about Safe Documents in Office 365"
+description: "Learn about Safe Documents in Office 365 ATP."
 ---
 
-# Safe Documents in Office 365 ATP
+# Safe Documents in Office 365 Advanced Threat Protection
 
 Safe Documents is a feature in Office 365 Advanced Threat Protection (ATP) that uses [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) to scan documents and files that are opened in [Protected View](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
 
