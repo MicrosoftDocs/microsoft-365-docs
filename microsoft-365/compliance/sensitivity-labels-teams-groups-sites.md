@@ -243,13 +243,13 @@ For more information about the old classification method, see [SharePoint "moder
 
 To convert your old classifications to sensitivity labels, do one of the following:
 
-- Edit existing sensitivity labels that are already published, and specify the label settings you want for sites and groups.
+- Use existing labels: Specify the label settings you want for sites and groups by editing existing sensitivity labels that are already published.
 
-- Create and publish new sensitivity labels that have the same names as your existing classifications.
+- Create new labels: Specify the label settings you want for sites and groups by creating and publishing new sensitivity labels that have the same names as your existing classifications.
 
 Then: 
 
-1. Use PowerShell to apply the sensitivity labels to existing Office 365 groups and SharePoint sites by using name mapping. Use the next section for instructions.
+1. Use PowerShell to apply the sensitivity labels to existing Office 365 groups and SharePoint sites by using name mapping. See the next section for instructions.
 
 2. Remove the old classifications from the existing groups and sites.
 
