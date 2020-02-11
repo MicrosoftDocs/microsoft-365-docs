@@ -159,20 +159,20 @@ For more information, see [Set up Office 365 ATP anti-phishing policies](https:/
 
 First, make sure, in the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> that you have the new admin center preview turned on. Turn on the toggle next to the text **The new admin center**.
 
-   ![The new admin center preview on.](media/previewon.png)
+   ![The new admin center preview on.](../media/previewon.png)
 
 If you don't see the **Setup** page with cards in your tenant yet, see how to complete these steps in Office 365 Security &amp; Compliance Center. See [Set up ATP safe attachments in the Security & Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) and [Set up ATP Safe Links in the Security & Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
 
 1.  In the left nav, choose **Setup**.
 2. On the **Setup** page, choose **View** on the **Increase protection from advanced threats** card.</br></br>
-    ![Choose View on the Increase protection from advanced threats.](media/startatp.png) 
+    ![Choose View on the Increase protection from advanced threats.](../media/startatp.png) 
 
 3. On the **Increase protection from advanced threats** page, choose **Get started**.
 4. On the pane that opens, select the check boxes next to **Links and attachments in email**, **Scan files in SharePoint, OneDrive, and Teams**, and **Scan links in Office desktop and Office Online apps** under **Scan items for malicious content**.
 
       - Under **Links and attachments in email**, Type in All Users, or the specific users whose email you want scanned.
 
-    ![Select all check boxes in Increase protection from advanced threats.](media/setatp.png)
+    ![Select all check boxes in Increase protection from advanced threats.](../media/setatp.png)
 5. Choose **Create policies** to turn on ATP safe attachments and ATP safe links.
 
 ### Set up ATP safe attachments in the Security & Compliance Center
@@ -258,7 +258,7 @@ You must be assigned the Audit Logs role in Exchange Online to turn audit log se
 1. To turn on the audit log search on, go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and then choose **Compliance** under **Admin centers** in the left nav. 
 2. On the **Microsoft 365 compliance** page, choose **More resources**, and then **Open** on the **Office 365 security &amp; center** card.
 
-    ![Choose Open on the Office 365 security & compliance cars.](media/gotosecandcomp.png)
+    ![Choose Open on the Office 365 security & compliance cars.](../media/gotosecandcomp.png)
 3. On the security and compliance page, choose **Search** and then **Audit log search**.
 1. On the top of the **Audit log search** page, choose **Turn on auditing**.
 
@@ -272,14 +272,14 @@ To change the sharing settings for OneDrive and SharePoint:
 2. In the SharePoint admin center, go to **Policies** \> **Sharing**.
 3. On the **Sharing** page, under **File and folder links**, select **Specific people**, and under **Advanced settings for "Anyone" links**, select **These links must expire within this many days**, and type in 14 (or another number of days you want to restrict the link lifetime to).
 
-    ![Choose Specific people and set link expiration to 14 days.](media/anyonelinks.png)
+    ![Choose Specific people and set link expiration to 14 days.](../media/anyonelinks.png)
 
 ## Activity alerts
 
 You can use activity alerts to track admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones. For more information, see [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
 
 The following figure shows the default policies that are included with Microsoft 365 Business. <br/><br/>
-    ![Default alert policies included with Microsoft 365 Business.](media/alertpolicies.png)
+    ![Default alert policies included with Microsoft 365 Business.](../media/alertpolicies.png)
 
 ## Disable or manage calendar sharing
 
@@ -292,10 +292,10 @@ You can prevent people in your organization from sharing their calendars, or you
 3. Choose **Save changes** on the bottom of the page.
 
     The following figure shows calendar sharing not allowed. </br></br>
-    ![Screenshot of showing external calendar sharing as not allowed.](media/nocalendarsharing.png)
+    ![Screenshot of showing external calendar sharing as not allowed.](../media/nocalendarsharing.png)
 
     The following figure shows the settings when calendar sharing is allowed with an email link with only free/busy information.
 
-   ![Screenshot of calendar free/busy sharing with anyone.](media/sharefreebusy.png)
+   ![Screenshot of calendar free/busy sharing with anyone.](../media/sharefreebusy.png)
 
 If your users are allowed to share their calendars, see [these instructions](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for how to share from Outlook on the web.

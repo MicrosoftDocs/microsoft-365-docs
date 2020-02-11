@@ -28,7 +28,7 @@ To submit a junk mail message to Microsoft:
 
 1. Click on the junk message and then click **Junk** on the toolbar. This moves the message to your Junk email folder and adds the sender to your blocked sender list.
 
-   ![Indicate email is junk from Outlook on the web](../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
+   ![Indicate email is junk from Outlook on the web](../../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
 
    > [!NOTE]
    > Alternatively, right-click a message to display a menu, and click **Mark as junk**.
@@ -37,7 +37,7 @@ To submit a junk mail message to Microsoft:
 
 2. A dialog box opens asking if you want to send a copy of the junk email message to Microsoft for analysis. Click **report** to send the message to the Microsoft Spam Analysis Team. Optionally, select the **Don't show me this message again** check box if you want to automatically submit future junk messages to Microsoft without being prompted.
 
-   ![Report junk email to Microsoft from Outlook on the web](../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
+   ![Report junk email to Microsoft from Outlook on the web](../../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
 
    > [!TIP]
    > Even if you select the **Don't show me this message again** check box, you can later change your preferences for reporting junk email by accessing the display settings in Outlook on the web. (You can access these settings through the gear menu next to your sign in name.)
@@ -48,7 +48,7 @@ To submit a phishing scam message to Microsoft:
 
 1. Click on the phishing scam message, click the down arrow next to **Junk**, and then click **Phishing** on the toolbar. Office 365 does not block the sender because senders of phishing scam messages typically impersonate legitimate senders. If you prefer, add the sender to your blocked senders list by following the instructions in the topic [Filter junk email and spam in Outlook on the web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d).
 
-   ![Indicate an email is a phishing scam in Outlook on the web](../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
+   ![Indicate an email is a phishing scam in Outlook on the web](../../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
 
    Alternatively, right-click a message to display a menu, and click **Mark as Phishing**.
 

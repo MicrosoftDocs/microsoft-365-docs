@@ -48,7 +48,7 @@ Make sure that you and your organization meet the following requirements for Att
 
 - Your organization has [Office 365 Advanced Threat Protection Plan 2](office-365-atp.md), with Attack Simulator visible in the Security &amp; Compliance Center (go to **Threat management** \> **Attack simulator**)
 
-    ![Threat management - Attack Simulator](../media/ThreatMgmt-AttackSimulator.png)
+    ![Threat management - Attack Simulator](../../media/ThreatMgmt-AttackSimulator.png)
 
 ## Display name spear-phishing attack
 
@@ -58,7 +58,7 @@ This attack focuses on letting you manipulate who the message appears to have or
 
 ### To simulate a spear-phishing attack
 
-![Compose Email Body](../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+![Compose Email Body](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
 You can craft the rich HTML editor directly in the **Email body** field itself or work with HTML source.
 
@@ -66,15 +66,15 @@ You can craft the rich HTML editor directly in the **Email body** field itself o
 
 2. Specify a meaningful campaign name for the attack or select a template.
 
-   ![Phishing Start Page](../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   ![Phishing Start Page](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
 3. Specify the target recipients. This can be individuals or groups in your organization. Each targeted recipient must have an Exchange Online Mailbox in order for the attack to be successful.
 
-   ![Recipient Selection](../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
+   ![Recipient Selection](../../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
 
 4. Configure the Phishing email details.
 
-   ![Configure email details](../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
+   ![Configure email details](../../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
 
    The HTML formatting can be as complex or basic as your campaign needs. As the email format is HTML, you can insert images and text to enhance believability. You have control on what the received message will look like in the receiving email client.
 

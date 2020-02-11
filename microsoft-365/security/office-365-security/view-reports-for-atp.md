@@ -23,7 +23,7 @@ description: "Find and use reports for Office 365 Advanced Threat Protection in 
 
 If your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) and you have the [necessary permissions](#what-permissions-are-needed-to-view-the-atp-reports), you can use several ATP reports in the Security &amp; Compliance Center. (Go to **Reports** \> **Dashboard**.)
   
-![The Security &amp; Compliance Center dashboard can help you see where Advanced Threat Protection is working](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![The Security &amp; Compliance Center dashboard can help you see where Advanced Threat Protection is working](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 ATP reports include the following:
 - [Threat Protection Status report](#threat-protection-status-report)
@@ -52,11 +52,11 @@ Filters and breakdowns of the information allow for more granular categorization
 > [!TIP]
 > Both the Email > Phish | Malware views have granular breakdowns for the detection technologies shown, with categories like *ATP-generated file reputation*, *File detonation*, *URL detonation*, *Anti-spoof: DMARC failure*, for example, helpful in pinpointing exactly which feature led your organization to catch threats.
 
-![Threat Protection Status report dropdown showing 'break down by'.](../media/tp-threatProtectStatRpt-BreakDownBy.png)
+![Threat Protection Status report dropdown showing 'break down by'.](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
 These views give you the option to export, via a button click (in Email > Phish, Email > Malware, and Content > Malware views). The aggregated data exported to your computer can be opened in Excel.
 
-![This graphic shows Export as an option in the menu for the Malware view, right between Create Schedule, and Request Report.](../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+![This graphic shows Export as an option in the menu for the Malware view, right between Create Schedule, and Request Report.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
 The Overview and Emails views will display information within hours of processing rather than in 24 hours (demand re. increased speeds here has been a clear signal)!
 
@@ -65,19 +65,19 @@ The Overview and Emails views will display information within hours of processin
   
 To view the Threat Protection Status report, in the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **Threat Protection Status**.
   
-![ATP Threat Protection Status report](../media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
+![ATP Threat Protection Status report](../../media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
 To get detailed status for a day, hover over the graph.
   
-![ATP Threat Protection Status data for a day](../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
+![ATP Threat Protection Status data for a day](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
   
 By default, the Threat Protection Status report shows data for the past seven days. However, you can choose **Filters** and change the date range to view data for up to 90 days. (If you are using a trial subscription, you might be limited to 30 days' of data.)
   
-![ATP Threat Protection Status filters](../media/4f703369-642b-402b-9758-b9c828283410.png)
+![ATP Threat Protection Status filters](../../media/4f703369-642b-402b-9758-b9c828283410.png)
   
 You can also use the **View data by** menu to change what information is displayed in the report. 
   
-![Viewing options for ATP Threat Protection Status report](../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
+![Viewing options for ATP Threat Protection Status report](../../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
 
 ## URL Protection Status report
 
@@ -100,11 +100,11 @@ The **ATP File Types** report shows you the type of files detected as malicious 
   
 To view this report, in the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **ATP File Types**.
   
-![ATP File Types report](../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
+![ATP File Types report](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
 When you hover over a particular day, you can see the breakdown of types of malicious files that were detected by [ATP Safe Attachments](atp-safe-attachments.md) and [anti-spam &amp; anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md).
   
-![ATP File Types report data for a day](../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
+![ATP File Types report data for a day](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
   
 ## ATP Message Disposition report
 
@@ -112,11 +112,11 @@ The **ATP Message Disposition** report shows you the actions that were taken for
   
 To view this report, in the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **ATP Message Disposition**.
   
-![ATP Message Disposition Report](../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
+![ATP Message Disposition Report](../../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   
 When you hover over a bar in the chart, you can see what actions were taken for detected email for that day.
   
-![ATP Message Disposition Report data for a day](../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
+![ATP Message Disposition Report data for a day](../../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
   
 ## Additional reports to view
 

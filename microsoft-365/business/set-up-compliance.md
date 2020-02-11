@@ -64,6 +64,6 @@ To manually install the AIP client:
 1. Download **AzinfoProtection_UL.exe** from [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
  
 2. You can verify that the installation worked by viewing a Word document and making sure that the **Sensitivity** option is available on the **Home** tab. 
-<br/>![Protection tab drop-down in a Word document.](media/word-sensitivity.png)
+<br/>![Protection tab drop-down in a Word document.](../media/word-sensitivity.png)
 
 For more information, see [Install the client](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3).

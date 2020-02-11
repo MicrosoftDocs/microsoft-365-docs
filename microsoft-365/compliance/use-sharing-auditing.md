@@ -100,7 +100,7 @@ The first step is to search the Office 365 audit log for sharing events. For mor
     
 4. Under **Activities**, click **Sharing and access request activities** to search for sharing-related events. 
     
-    ![Under Activities, select Sharing and access request activities](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![Under Activities, select Sharing and access request activities](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
 5.  Select a date and time range to find the sharing events that occurred within that period. 
     

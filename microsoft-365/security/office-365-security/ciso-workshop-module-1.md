@@ -18,7 +18,7 @@ description: "Learn more about security principles and recommendations for moder
 
 This module covers overviews on critical security hygiene, Microsoft cybersecurity reference architecture, cybersecurity resilience, Internet of Things (IoT), and operational tech.
 
-- Download PDF summary: [Module 1: Microsoft Cybersecurity Briefing](../media/ciso-workshop-1-cybersecurity-briefing.pdf)
+- Download PDF summary: [Module 1: Microsoft Cybersecurity Briefing](../../media/ciso-workshop-1-cybersecurity-briefing.pdf)
 - Download PowerPoint summary: [Module 1: Microsoft Cybersecurity Briefing](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-1-cybersecurity-briefing.pptx)
 
 ## Part 1: Course Introduction and Overview (9:13)

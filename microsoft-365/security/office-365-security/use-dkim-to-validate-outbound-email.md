@@ -63,7 +63,7 @@ In this article:
 
 SPF adds information to a message envelope but DKIM actually encrypts a signature within the message header. When you forward a message, portions of that message's envelope can be stripped away by the forwarding server. Since the digital signature stays with the email message because it's part of the email header, DKIM works even when a message has been forwarded as shown in the following example.
 
-![Diagram showing a forwarded message passing DKIM authentication where the SPF check fails](../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
+![Diagram showing a forwarded message passing DKIM authentication where the SPF check fails](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
 
 In this example, if you had only published an SPF TXT record for your domain, the recipient's mail server could have marked your email as spam and generated a false positive result. The addition of DKIM in this scenario reduces false positive spam reporting. Because DKIM relies on public key cryptography to authenticate and not just IP addresses, DKIM is considered a much stronger form of authentication than SPF. We recommend using both SPF and DKIM, as well as DMARC in your deployment.
 

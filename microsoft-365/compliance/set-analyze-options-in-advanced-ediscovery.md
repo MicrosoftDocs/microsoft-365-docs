@@ -30,7 +30,7 @@ In Advanced eDiscovery, set the Analyze options prior to running Analyze.
 
 Open **Prepare \> Analyze** \> **Setup**. The following window is displayed.
   
-![Set Analyze Options](media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
+![Set Analyze Options](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
  **Near-duplicates and email threads** Check this box if you want to run the analysis. It is selected by default. 
   
@@ -47,11 +47,11 @@ Open **Prepare \> Analyze** \> **Setup**. The following window is displayed.
     
     For example, if the suggested word is "computer", and you specified "2" as the "Max number of Themes", Advanced eDiscovery will try to generate two themes that relate to the word "computer". The two themes might be "computer software" and "computer hardware", for example. 
     
-    ![Add suggested theme](media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
+    ![Add suggested theme](../media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
   
 1. To view, add, or edit suggested themes, click **Modify**.
     
-2. In the **Suggested themes** panel, click the **Add** ![add icon](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icon to add a theme. In the **Add suggested theme** panel, add the words, separated by commas. 
+2. In the **Suggested themes** panel, click the **Add** ![add icon](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icon to add a theme. In the **Add suggested theme** panel, add the words, separated by commas. 
     
 3. In **Number of themes**, select a value to determine the number of themes Advanced eDiscovery will try to generate for these words (default is 1 theme).
     

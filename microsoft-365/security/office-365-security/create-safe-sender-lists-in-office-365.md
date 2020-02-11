@@ -58,12 +58,12 @@ The action on the rule must follow this pattern:
 
 2. Add an X-Header to say what the rule does. In the example below, you can add a simple header `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. If you have more than one domain in this rule, you can change the header text as appropriate. **When a message skips filtering due to a mail flow rule, it stamps SFV:SKN in the X-Forefront-Antispam-Report header** (**if it's on an IP Allow list, it also stamps IPV:CAL**). This will assist with troubleshooting.
 
-![GUI for bypassing spam filtering.](../media/1-AllowList-SkipFilteringFromContoso.png)
+![GUI for bypassing spam filtering.](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
 > [!CAUTION]
 > Do not configure mail flow rules with only *the sender domain* as a condition to skip spam filtering. This method significantly increases the risk spammers can spoof the sending domain (or impersonate the full email address) skip all spam filtering, sender authentication checks, and the message will arrive in a person's inbox.
 
-![How to set the SCL to minus-one.](../media/2-AllowList-SetsSCLMinus1.png)
+![How to set the SCL to minus-one.](../../media/2-AllowList-SetsSCLMinus1.png)
 
 Do not add domains you own, or popular domains (e.g. `microsoft.com`) to the mail flow rule as a condition. This is considered high risk since it creates opportunities for bad actors to send you mail that would otherwise be filtered out.
 

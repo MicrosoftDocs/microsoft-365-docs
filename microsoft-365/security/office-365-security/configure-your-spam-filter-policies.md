@@ -104,10 +104,10 @@ To enable more custom settings or to add custom policies, change the **Custom se
 
 6. Click **Save**. A summary of your policy settings appears in the right pane.
 
-You can't disable or delete the default policy, and custom policies always take precedence over the default policy. For custom policies, you can select or clear the check boxes in the **ENABLED** column to enable or disable them. By default, all policies are enabled. To delete a custom policy, select the policy, click **Delete** ![Delete icon](../media/ITPro-EAC-DeleteIcon.gif), and then confirm that you want to delete the policy.
+You can't disable or delete the default policy, and custom policies always take precedence over the default policy. For custom policies, you can select or clear the check boxes in the **ENABLED** column to enable or disable them. By default, all policies are enabled. To delete a custom policy, select the policy, click **Delete** ![Delete icon](../../media/ITPro-EAC-DeleteIcon.gif), and then confirm that you want to delete the policy.
 
 > [!TIP]
-> You can change the priority (running order) of your custom policies by clicking the ![Up Arrow Icon](../media/ITPro-EAC-UpArrowIcon.gif) up arrow and ![Down Arrow Icon](../media/ITPro-EAC-DownArrowIcon.gif) down arrow. The policy that has a **PRIORITY** of **0** will run first, followed by **1**, then **2**, and so on.
+> You can change the priority (running order) of your custom policies by clicking the ![Up Arrow Icon](../../media/ITPro-EAC-UpArrowIcon.gif) up arrow and ![Down Arrow Icon](../../media/ITPro-EAC-DownArrowIcon.gif) down arrow. The policy that has a **PRIORITY** of **0** will run first, followed by **1**, then **2**, and so on.
 
 ## Use PowerShell to configure spam filter policies
 
@@ -145,18 +145,18 @@ Both Allow and Block lists are configured as part of any customer Anti-spam poli
 
 1. On the **Allow lists** section, you can specify entries, such as senders or domains, that will always be delivered to the inbox. Email from these entries is not processed by the spam filter.
 
-   - Add trusted senders to the Sender allow list. Click **Edit**![Add Icon](../media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the sender addresses you wish to allow. You can separate multiple entries using a semi-colon or a new line. Click **Save** to return to the **Allow Lists** page.
+   - Add trusted senders to the Sender allow list. Click **Edit**![Add Icon](../../media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the sender addresses you wish to allow. You can separate multiple entries using a semi-colon or a new line. Click **Save** to return to the **Allow Lists** page.
 
-   - Add trusted domains to the Domain allow list. Click **Edit**![Add Icon](../media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the domains you wish to allow. You can separate multiple entries using a semi-colon or a new line. Click **Save** to return to the **Allow Lists** page.
+   - Add trusted domains to the Domain allow list. Click **Edit**![Add Icon](../../media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the domains you wish to allow. You can separate multiple entries using a semi-colon or a new line. Click **Save** to return to the **Allow Lists** page.
 
    > [!CAUTION]
    > You should never list accepted domains (domains that you own) or common domains like Microsoft.com, office.com, etc to an Allow list. This would easily allow spoofers to send mail unrestricted into your organization.
 
 2. On the **Block Lists** page, you can specify entries, such as senders or domains, that will always be marked as spam. The service will apply the configured high confidence spam action on email that matches these entries.
 
-   - Add unwanted senders to the Sender block list. Click **Edit**![Add Icon](../media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the sender addresses you want to block. You can separate multiple entries using a semi-colon or a new line. Click **Save** to return to the **Block Lists** page.
+   - Add unwanted senders to the Sender block list. Click **Edit**![Add Icon](../../media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the sender addresses you want to block. You can separate multiple entries using a semi-colon or a new line. Click **Save** to return to the **Block Lists** page.
 
-   - Add unwanted domains to the Domain block list. Click **Edit**![Add Icon](../media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the domains you want to block. You can separate multiple entries using a semi-colon or a new line. Click **Save** to return to the **Block Lists** page.
+   - Add unwanted domains to the Domain block list. Click **Edit**![Add Icon](../../media/ITPro-EAC-AddIcon.gif), and then in the selection dialog box, add the domains you want to block. You can separate multiple entries using a semi-colon or a new line. Click **Save** to return to the **Block Lists** page.
 
 > [!TIP]
 > There may be situations where your organization may not agree with the verdict the service provides. In this case, you may want to keep the Allow or Block listing permanent. However, if you are going to put a domain on the Allow list for extended periods of time, you should tell the sender to make sure that their domain is authenticated and set to DMARC reject if it is not.

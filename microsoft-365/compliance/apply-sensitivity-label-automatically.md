@@ -34,7 +34,7 @@ For information about license requirements, see [Subscription and licensing requ
 
 The auto-labeling settings are available when you create a sensitivity label in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center under **Classification** > **Sensitivity labels**.
 
-![Auto labeling options for sensitivity labels](media/Sensitivity-labels-Auto-labeling-options.png)
+![Auto labeling options for sensitivity labels](../media/Sensitivity-labels-Auto-labeling-options.png)
 
 ## Apply a sensitivity label automatically based on conditions
 
@@ -42,7 +42,7 @@ One of the most powerful features of sensitivity labels is the ability to apply 
 
 You can choose to apply sensitivity labels to content automatically when that content contains specific types of sensitive information. When you configure a sensitivity label to be applied automatically, you see the same list of sensitive information types as when you create a data loss prevention (DLP) policy. So you can, for example, automatically apply a Highly Confidential label to any content that contains customers' personally identifiable information (PII), such as credit card numbers or social security numbers.
 
-![Options for instance count and match accuracy](media/Sensitivity-labels-instance-count-match-accuracy.png)
+![Options for instance count and match accuracy](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
 After you choose your sensitive information types, you can refine your condition by changing the instance count or match accuracy. For more information, see [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
@@ -50,7 +50,7 @@ Further, you can choose whether a condition must detect all sensitive informatio
 
 When a sensitivity label is automatically applied, the user sees a notification in their Office app. They can choose **OK** to dismiss the notification.
 
-![Notification that a document had a label applied automatically](media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
+![Notification that a document had a label applied automatically](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
 ## Recommend that the user apply a sensitivity label
 
@@ -58,11 +58,11 @@ If you prefer, you can recommend to your users that they apply the label. With t
 
 Recommended labels are supported in Word, PowerPoint, and Excel (and require that the Azure Information Protection unified labeling client is installed).
 
-![Option for recommending a sensitivity label to users](media/Sensitivity-labels-Recommended-label-option.png)
+![Option for recommending a sensitivity label to users](../media/Sensitivity-labels-Recommended-label-option.png)
 
 Here's an example of a prompt when you configure a condition to apply a label as a recommended action, with a custom policy tip. You can choose what text is displayed in the policy tip.
 
-![Prompt to apply a recommended label](media/Sensitivity-label-Prompt-for-required-label.png)
+![Prompt to apply a recommended label](../media/Sensitivity-label-Prompt-for-required-label.png)
 
 ## How automatic or recommended labels are applied
 
