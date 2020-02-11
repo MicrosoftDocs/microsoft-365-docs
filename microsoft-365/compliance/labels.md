@@ -321,7 +321,7 @@ If you apply a default retention label to existing items in the library, folder,
     
 - If you change or remove the default retention label for a library, folder, or document set, the retention label is also changed or removed for all items in the library, folder, or document set, **except** items with explicit retention labels (such as records).
     
-- If you move an item with a default retention label from one library, folder, or document set to another library, folder, or document set, the item keeps its existing default retention label, even if the new location has a different default retention label.
+- If you move an item with a default retention label from one library, folder, or document set to another library, folder, or document set that has a different label, the item will take on the label of its new location.
 
 **Records:** If you apply a default record label to a library, folder, or document set, then a record label is applied to all the individual items within those locations. When you move a new item into a location with a record label, that item is labeled a record. However, if you change the default retention label to a label that doesn't declare content as a record, that action **does not** remove the record label from the individual items; those items retain their record label. Only a site collection admin can explicitly remove or change the retention label of record items.
 
