@@ -22,7 +22,7 @@ ms.custom: aka.ms/self-service-purchase-faq
 > [!NOTE]
 > The information in this article only applies to Microsoft Power Platform (Power BI, Power Apps and Power Automate) subscriptions.
 
-Self-service purchases are now available for Power Platform in the United States, Australia, Canada, and Japan.
+Self-service purchases are now available for Power Platform in the United States.
 
 ## General
 
