@@ -307,7 +307,7 @@
     {
       "source_path": "microsoft-365/compliance/service-encryption-with-customer-key-faq.md",
       "redirect_url": "customer-key-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
