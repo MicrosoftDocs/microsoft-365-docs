@@ -70,28 +70,9 @@ Insider risk policy templates define the type of risk activities that you want t
 
 Insider risk management allows you to define areas of interest across all policies within these indicators. While some indicators are requirements for specific policies, all indicators can provide enrichment and depth to configured policies. For example, the *HR events (termination date)* indicator is a requirement to configure a policy with the *Departing employee data theft* template. However, selecting this indicator as global policy setting includes this indicator in policies configured with any policy template. By having this indicator included in other policies, the policy matching and alert process is enhanced and alert risk severity levels for policy matches are calculated with more variables. As a general recommendation, you should select all indicators as the global insider risk management setting. Exceptions would be.....
 
-Use the following table to learn more about each indicator, any requirements, and its uses:
-
-| **Indicator** | **Description** | **Required** | **Uses** |
-|:--------------|:----------------|:-------------|:---------|
-| **HR Events (Termination Date)** |  | *Departing employee data theft* template |  |
-| **Sharing files from SharePoint Online** |  |  |  |
-| **Sharing folders from SharePoint Online** |  |  |  |
-| **Sharing SharePoint Online sites** |  |  |  |
-| **Downloading content from SharePoint Online** |  |  |  |
-| **Emailing outside the organization** |  |  |  |
-| **Copying sensitive of classified to files to USB** |  |  |  |
-| **Copying sensitive or classified files to cloud** |  |  |  |
-| **Printing sensitive or classified documents** |  |  |  |
-| **Tampering with security software** |  |  |  |
-| **Use of unauthorized software** |  |  |  |
-| **Use of offensive language in email** |  |  |  |
-| **Past policy violations** |  |  |  |
-| **Measure anomalous activity** |  |  |  |
-
 ### Monitoring windows
 
-Policy monitoring windows allow you to define time periods that trigger policy activation based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following monitoring windows are available:
+Policy monitoring windows allow you to define past and future review periods that are triggered after policy matches based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following monitoring windows are available:
 
 - **In-scope timespan**: Available for all policy templates, the *In-scope timespan* is the defined number of days that the window activates **after** a triggering event. The window activates for 1 to 30 days after a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *In-scope timespan* to 30 days. Several months have passed since you configured the policy and a triggering event occurs for one of the users included in the policy. The triggering event activates the *In-scope timespan* and the policy is active for that user for 30 days after the triggering event occurred.
 - **Historic timespan**: Available for all policy templates, the *historic timespan* is the defined number of days that the window activates **before** a triggering event. The window activates for 0 to 180 days before a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Historic timespan* to 90 days. Several months have passed since you configured the policy and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Historic timespan* and the policy gathers historic activities for that user for 90 days prior to the triggering event.
@@ -100,9 +81,20 @@ Policy monitoring windows allow you to define time periods that trigger policy a
 
 Intelligent detection settings help refine how the detection of risky activities are processed for alerts. In certain circumstances, you may need to define files types to ignore or you want to enforce a detection level for files to help define a minimum bar for alerts. When using offensive language policies, you may need to increase or decrease the detection sensitivity to control the amount of reported policy matches. Use these settings to control file type exclusions, file volume limits, and the offensive language detection sensitivity:
 
-- **Anomaly detections**: Anomalous detections include settings for file type exclusions and file volume limits.
-    - **File type exclusions**: To exclude specific file types, enter file type extensions separated by commas. For example, to exclude certain types of music files from policy matches you may enter *.aac,.mp3,.wav,.wma* in the **File type exclusions** field.
-- **Offensive language detections**: 
+#### Anomaly detections
+
+Anomalous detections include settings for file type exclusions and file volume limits.
+
+- **File type exclusions**: To exclude specific file types from all insider risk management policy matching, enter file type extensions separated by commas. For example, to exclude certain types of music files from policy matches you may enter *aac,mp3,wav,wma* in the **File type exclusions** field. Files with these extensions would be ignored by all configured insider risk management policies.
+- **File volume minimum**: 
+
+#### Offensive language detections
+
+To adjust the sensitivity of the offensive language classifier for policies using the *Offensive language in email* template, choose one of the following settings:
+
+- **Low**: The lowest sensitivity level with the broadest range for detection offensive language and sentiment. The probability of false positives for offensive language matching is elevated.
+- **Medium**: The mid-level sensitivity level with a balanced range for detection offensive language and sentiment. The probability of false positives for offensive language matching is average.
+- **High**: The highest sensitivity level with a narrow range for detection offensive language and sentiment. The probability of false positives for offensive language matching is low.
 
 ## Create a new policy
 
