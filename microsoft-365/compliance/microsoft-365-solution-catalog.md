@@ -1,5 +1,5 @@
 ---
-title: Overview of the Microsoft 365 solution catalog
+title: Microsoft 365 solution catalog
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -13,11 +13,11 @@ description: Learn about the Microsoft 365 solution catalog, including what it c
 ms.collection: M365-security-compliance
 ---
 
-# Overview of the Microsoft 365 solution catalog (preview)
+# Microsoft 365 solution catalog
 
 ## Overview
 
-Are you looking for a way to quickly get started with compliance tasks in Microsoft 365? Check out the new [Microsoft 365 solution catalog](https://compliance.microsoft.com/solutioncatalog) to discover, learn, and quickly get started with compliance and risk management solutions.
+Are you looking for a way to quickly get started with compliance tasks in Microsoft 365? Check out the [Microsoft 365 solution catalog](https://compliance.microsoft.com/solutioncatalog) to discover, learn, and quickly get started with compliance and risk management solutions.
 
 Compliance solutions in Microsoft 365 are collections of integrated capabilities you can use to help you manage end-to-end compliance scenarios. A solution's capabilities and tools might include a combination of policies, alerts, reports, and more.
 
@@ -74,32 +74,30 @@ From here, you'll see cards for the following solutions:
 
 ## How do I get this?
 
-- If you don't have the new Microsoft 365 solution catalog already, you'll have it soon. We're enabling the solution catalog for all Microsoft 365 subscriptions in an incremental rollout.
-
-- To visit the Microsoft 365 solution catalog, go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in as a global administrator, compliance administrator, or compliance data administrator. Select **Catalog** in the navigation pane on the left side of the screen to open the catalog home page.
+To visit the Microsoft 365 solution catalog, go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in as a global administrator, compliance administrator, or compliance data administrator. Select **Catalog** in the navigation pane on the left side of the screen to open the catalog home page.
 
 ## Frequently asked questions
 
-**Why don't I see the new Microsoft 365 solution catalog yet?**
+**Why don't I see the Microsoft 365 solution catalog?**
 
-First, make sure that you have the appropriate licenses and permissions. Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) as a global administrator, compliance administrator, or compliance data administrator. If you still don't see the new solution catalog in the left navigation pane yet, you'll have it soon.
+First, make sure that you have the appropriate licenses and permissions. Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) as a global administrator, compliance administrator, or compliance data administrator.
 
 **Some of the compliance features listed on the solution catalog page aren't available in the Microsoft 365 compliance center. What do I do?**
 
-We're still adding functionality to the Microsoft 365 compliance center and the solution catalog. If you can't find a specific solution in the navigation area, it will be accessible when the solution is available in your subscription.
+We're always working to add new functionality to the Microsoft 365 compliance center and the solution catalog. If you can't find a specific solution in the navigation area, it will be accessible when the solution is available in your subscription.
 
 If you are looking for an existing compliance solution and it’s not available in the Microsoft 365 compliance center yet, you can always access solutions in the existing Office 365 security and compliance center by going to [https://protection.office.com](https://protection.office.com). Alternatively, you can click on the **More resources** tab in the left navigation of the Microsoft 365 compliance center and select the Office 365 security and compliance center card.  
 
 ## Next steps
 
-- **Review your Microsoft Compliance Score**, a personalized, risk-based score to help you understand your organization's state of compliance with key standards and regulations. It provides recommended actions you can take to strengthen your overall compliance posture, and provides workflow capabilities to help you efficiently carry out those actions. To learn more, see [Compliance Score (Preview)](compliance-score.md).
+- **Review your Microsoft Compliance Score**, a personalized, risk-based score to help you understand your organization's state of compliance with key standards and regulations. It provides recommended actions you can take to strengthen your overall compliance posture, and provides workflow capabilities to help you efficiently carry out those actions. To learn more, see [Compliance Score (preview)](compliance-score.md).
 
-- **Configure insider risk management policies** to help minimize internal risks and enable you to detect, investigate, and take action for risky activities in your organization. See [Insider risk management](insider-risk-management.md).
+- **Configure insider risk management policies** to help minimize internal risks and enable you to detect, investigate, and take action for risky activities in your organization. See [Insider risk management (preview)](insider-risk-management.md).
+
+- **Learn about and create Communication compliance policies** to quickly identify and remediate corporate code-of-conduct policy violations. See [Communication compliance](communication-compliance.md).
 
 - **Microsoft Information Protection**, learn how Microsoft 365 solutions help you discover, classify, and protect sensitive information wherever it lives or travels.
     - **Get acquainted with and set up Microsoft Cloud App Security**. See [Quickstart: Get started with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
     - **Get started with classifiers**. Classifying content and then labeling it so it can be protected and handled properly is the starting place for the information protection discipline. See [Getting started with trainable classifiers](classifier-getting-started-with.md).
-
-- **Learn about and create Communication compliance policies** to quickly identify and remediate corporate code-of-conduct policy violations. See [Communication compliance in Microsoft 365](communication-compliance.md).
 
 - **Visit your Microsoft 365 solution catalog often**, and make sure to review new solutions to help you with your compliance needs. Sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com) and then select **Catalog** in the left navigation pane.
