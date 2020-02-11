@@ -33,11 +33,7 @@ Content in those sites however, do not inherit the labels for settings such as t
 
 ## About the public preview for Microsoft Teams, Office 365 groups, and SharePoint sites
 
-Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites are gradually rolling out to tenants and might change before final release.
-
-This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
-
-## Overview
+Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites are gradually rolling out to tenants and might change before final release. This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
 
 Before you enable this preview and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
 
@@ -55,14 +51,15 @@ This feature uses Azure AD functionality to enable the preview. Follow the instr
 Then, in a PowerShell session, connect to the Security & Compliance Center by using a work or school account that has global admin privileges. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 Run the following commands to synchronize your labels to Azure AD, so that they can used with Office 365 groups:
-    
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    Execute-AzureAdLabelSync
-    ```
+
+```powershell
+Set-ExecutionPolicy RemoteSigned
+$UserCredential = Get-Credential
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+Import-PSSession $Session -DisableNameChecking
+Execute-AzureAdLabelSync
+```
+
 ## Set site and group settings when you create or edit sensitivity labels
 
 You're now ready to create or edit sensitivity labels that you want to be available for sites and groups. Enabling the preview makes a new page visible in the sensitivity labeling wizards: **Site and group settings**
