@@ -15,8 +15,6 @@ ms.collection: M365-security-compliance
 
 # Microsoft 365 solution catalog
 
-## Overview
-
 Are you looking for a way to quickly get started with compliance tasks in Microsoft 365? Check out the [Microsoft 365 solution catalog](https://compliance.microsoft.com/solutioncatalog) to discover, learn, and quickly get started with compliance and risk management solutions.
 
 Compliance solutions in Microsoft 365 are collections of integrated capabilities you can use to help you manage end-to-end compliance scenarios. A solution's capabilities and tools might include a combination of policies, alerts, reports, and more.
