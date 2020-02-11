@@ -19,11 +19,7 @@ titleSuffix: Microsoft GDPR
 
 # GDPR Breach Notification
 
-The General Data Protection Regulation (GDPR) introduces new rules for organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data for EU residents no matter where you or your enterprise are located. Additional details can be found in the [GDPR Summary topic](gdpr.md).<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrZgG] 
-
-This document leads you to information on the completion of Breach Notifications under the GDPR using Microsoft products and services.
+The General Data Protection Regulation (GDPR) introduces new rules for organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data for EU residents no matter where you or your enterprise are located. Additional details can be found in the [GDPR Summary topic](gdpr.md). This document leads you to information on the completion of Breach Notifications under the GDPR using Microsoft products and services.
 
 ## What constitute a breach of personal data under the GDPR?
 
@@ -42,7 +38,7 @@ Helpful definitions for GDPR terms used in this document:
 
 Microsoft takes its obligations under the General Data Protection Regulation (GDPR) seriously. A security incident/data breach refers to events such as unlawful access to customer’s data stored on Microsoft equipment or in Microsoft facilities, or unauthorized access to such that has the potential to result in the loss, disclosure, or alteration of customer data.
 
-As a data processor, Microsoft ensures that service customers are able to meet the GDPR’s breach notification requirements as data controllers. Our notification provides the information needed to make that assessment. Microsoft notifies customers of any personal data breach, except for those cases where personal data is confirmed to be unintelligible (for example, strongly encrypted data where integrity of the keys is confirmed).
+As a data processor, Microsoft ensures that service customers are able to meet the GDPR’s breach notification requirements as data controllers. Our notification provides the information needed to make that assessment. Microsoft notifies customers of any personal data breach, except for those cases where personal data is confirmed to be unintelligible (for example, encrypted data where integrity of the keys is confirmed).
 
 Data controllers are responsible for assessing risks to data privacy and determining whether a breach requires notification of a customer’s DPA. Microsoft provides the information needed, along with your GDPR compliance policy, to make that assessment.
 
@@ -68,12 +64,16 @@ Details regarding breach notification for specific Microsoft products and servic
     - *Customer Notification*: Microsoft Azure notifies customers and regulatory authorities of data breaches as required. Customer notices are delivered in no more than 72 hours from the time we declared a breach except for the following circumstances:
 
         - Microsoft believes the act of performing a notification increases the risk to other customers.
-        - The 72-hour timeline may leave some incident details available. These will be provided to you as the investigation proceeds.
+        - The 72-hour timeline may leave some incident details available. These details will be provided to you as the investigation proceeds.
 
         Further details can be found in [Customer Notification](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#customer-notification).
 
 3. **[Microsoft Support and Professional Services](gdpr-breach-Microsoft-Support-Professional-Services.md)**  
     The nature of professional services means that some data protection incidents may fall within the customer’s realm of responsibility. When Microsoft Professional Services identifies a data protection incident, it follows documented industry standard response plan as outlined in [Scope & Limits of Data Protection Incident Response Process](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process).
+
+## Breach notification admin tools
+
+- **Set you organization's privacy contact**: Tenant Administrators can use the [Azure Active Directory Admin Portal](https://go.microsoft.com/fwlink/p/?linkid=2052736) to define your organization's privacy contact should Microsoft need to communicate with them.
 
 ## Learn more
 
