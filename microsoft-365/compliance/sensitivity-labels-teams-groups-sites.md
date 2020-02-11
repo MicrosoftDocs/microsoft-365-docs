@@ -164,7 +164,7 @@ When users browse to the site, they can see the name of the label and applied po
 
 ## Manage sensitivity labels in the SharePoint admin center
 
-To view the applied sensitivity labels, use the **Active sites** page in the new SharePoint admin center.
+To view the applied sensitivity labels, use the **Active sites** page in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
 
 ![The Sensitivity column on the Active sites page](media/manage-site-sensitivity-labels.png)
 
