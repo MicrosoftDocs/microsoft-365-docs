@@ -83,16 +83,6 @@ On this new **Site and group settings** page, configure the settings:
 
 If your label isn't already published, now publish it by [adding it to a label policy](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
-## Assign sensitivity labels to Office 365 groups
-
-You're now ready to apply the sensitivity label or labels to Office 365 groups. Return to the Azure AD documentation for instructions:
-
-- [Assign a label to a new group in Azure portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)
-
--  [Assign a label to an existing group in Azure portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
-
--  [Remove a label from an existing group in Azure portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).
-
 ## Sensitivity label management
 
 > [!WARNING]
@@ -124,19 +114,15 @@ If you modify or delete a sensitivity label that is included in one or more labe
 
 4. If the sensitivity label isn't visible, you can now safely modify or delete the label. If the label is still visible, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
-## Troubleshoot sensitivity label deployment
+## Assign sensitivity labels to Office 365 groups
 
-### Labels not visible after publishing
-If you experience issues when you create a team or Office 365 group after you enable these settings or modify a sensitivity label's description, save the label, wait a few hours, and then try to create the team or group again. For information, see [Schedule roll-out after you create or change a sensitivity label](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
+You're now ready to apply the sensitivity label or labels to Office 365 groups. Return to the Azure AD documentation for instructions:
 
-If you are still not able to see the new sensitivity label from SharePoint Online, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+- [Assign a label to a new group in Azure portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)
 
-### Team, group, or SharePoint site creation errors
-If you experience creation errors during the public preview, you have two options:
+-  [Assign a label to an existing group in Azure portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
 
-- Ensure that sensitivity labels are not mandatory for any user.
-
-- You can turn off sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites by using the same instructions from the [Enable this preview](#enable-this-preview-and-synchronize-labels) section on this page. However, to disable the preview, search for the line `$setting["EnableMIPLabels"] = "True"`, and change the **True** value to **False**.
+-  [Remove a label from an existing group in Azure portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).
 
 ## Apply a sensitivity label to a new team
 
@@ -236,6 +222,22 @@ Other apps and services that you can't currently use the sensitivity labels that
 - Teams admin center
 - Microsoft 365 admin center
 - Exchange admin center
+
+## Troubleshoot sensitivity label deployment
+
+Having problems with sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites? 
+
+### Labels not visible after publishing
+If you experience issues when you create a team or Office 365 group after you enable these settings or modify a sensitivity label's description, wait a few hours after saving the label changes, and then try to create the team or group again. For information, see [Schedule roll-out after you create or change a sensitivity label](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
+
+If you are still not able to see the new sensitivity label from SharePoint Online, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+
+### Team, group, or SharePoint site creation errors
+If you experience creation errors during the public preview, you have two options:
+
+- Ensure that sensitivity labels are not mandatory for any user.
+
+- You can turn off sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites by using the same instructions from [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). However, to disable the preview, in step 5, disable the feature by using `$setting["EnableMIPLabels"] = "False"`.
 
 ## Classic Azure AD site classification
 
