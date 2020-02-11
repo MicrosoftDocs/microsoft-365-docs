@@ -73,7 +73,7 @@ Get a head start on taking advantage of the benefits of the cloud for health dat
 
 Microsoft offers qualified companies or their suppliers a BAA that covers in-scope Microsoft services.
 
-For Microsoft cloud services: The [HIPAA Business Associate Agreement](https://aka.ms/BAA) is available via the Online Services Terms by default to all customers who are covered entities or business associates under HIPAA. See “Microsoft in-scope cloud services” on this webpage for the list of cloud services covered by this BAA.
+For Microsoft cloud services: The [HIPAA Business Associate Agreement](https://aka.ms/BAA) is available via the Online Services Terms by default to all customers who are covered entities or business associates under HIPAA. See 'Microsoft in-scope cloud services' on this webpage for the list of cloud services covered by this BAA.
 
 For Microsoft Professional Services services: The HIPAA Business Associate Amendment is available for in-scope Microsoft Professional Services upon request to your Microsoft services representative.
 
@@ -96,6 +96,10 @@ To assist customers with this task, Microsoft has published these guides:
 - *HIPAA/HITECH Act implementation guidance* for [Azure](https://aka.ms/azurehipaaguidance) and for [Dynamics 365 and Office 365](https://go.microsoft.com/fwlink/?LinkID=257510). Written for privacy, security, and compliance officers and others responsible for HIPAA and HITECH Act implementation, they describe concrete steps your organization can take to maintain compliance.
 - [Practical guide to designing secure health solutions using Microsoft Azure](https://aka.ms/azureindustrysecurity) helps you better understand what it takes to successfully adopt a cloud service in a secure manner.
 - [Addressing HIPAA security and privacy requirements in the Microsoft Cloud](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) offers a brief overview of regulation requirements. It also provides a detailed analysis of how Microsoft’s cloud services were built with methodologies that map to those requirements, and guidance on how to build compliance-ready solutions.
+
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), use the pre-configured [HIPAA Office 365 template](https://go.microsoft.com/fwlink/?linkid=2118005) and the [HIPAA Intune template](https://go.microsoft.com/fwlink/?linkid=2118006) to help your organization meet the requirements for this regulation.
 
 ## Resources
 
