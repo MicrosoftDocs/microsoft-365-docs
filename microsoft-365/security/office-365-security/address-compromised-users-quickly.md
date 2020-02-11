@@ -72,15 +72,16 @@ To learn more, see [View details of an investigation](office-365-air.md#view-det
 
 ## Keep the following points in mind
 
-- **Stay on top of your alerts**. The longer a compromise goes undetected, the larger the potential for widespread impact and cost to your organization, customers, and partners. Early detection and timely response are critical to mitigate threats, and especially when a user's account is compromised. See [Automatically investigate and respond to threats in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) and [Alerts in the Office 365 Security &amp; Compliance Center](alerts.md).
-- **Automation assists but does not replace your security operations team**. In particular, automated investigation and response capabilities can detect a compromised user early on, but your security operations team will likely need to engage and do some investigation and remediation. See [Review and approve actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#review-and-approve-actions).
-- **Don't rely on a suspicious login alert as your only indicator**. When a user account is compromised, it might or might not trigger a suspicious login alert. Sometimes it's the series of activities that occur after an account is compromised that triggers an alert.
+- **Stay on top of your alerts**. The longer a compromise goes undetected, the larger the potential for widespread impact and cost to your organization, customers, and partners. Early detection and timely response are critical to mitigate threats, and especially when a user's account is compromised. Need some pointers? See these articles:
+   - [Automatically investigate and respond to threats in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
+   - [Alerts in the Office 365 Security &amp; Compliance Center](alerts.md)
+- **Automation assists but does not replace your security operations team**. In particular, automated investigation and response capabilities can detect a compromised user early on, but your security operations team will likely need to engage and do some investigation and remediation. Need some help with this? See [Review and approve actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#review-and-approve-actions).
+- **Don't rely on a suspicious login alert as your only indicator**. When a user account is compromised, it might or might not trigger a suspicious login alert. Sometimes it's the series of activities that occur after an account is compromised that triggers an alert. Want to know more about alerts? See [Alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
 
 ## Next steps
 
 - [Find out how to get AIR and see required permissions](automated-investigation-response-office.md#how-to-get-air)
-- [Learn more about alerts](../../compliance/alert-policies.md)
-- [Manually find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)
+- [Find and investigate malicious email in Office 365](investigate-malicious-email-that-was-delivered.md)
 - [Learn about AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 - [Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
