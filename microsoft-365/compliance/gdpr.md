@@ -85,8 +85,8 @@ The GDPR 'right of data portability' allows a data subject to request a copy of 
 
 As controller, the GDPR requires you to be able to:
 
-    - Give data subjects a copy of their personal data, together with an explanation of the categories of their data that are being processed, the purposes of that processing, and the categories of third parties to whom their data may be disclosed. 
-    - Help every individual exercise their right to correct inaccurate personal data, erase data or restrict its processing, receive their data in a readable form, and where applicable, fulfill a request to transmit their data to another controller.
+- Give data subjects a copy of their personal data, together with an explanation of the categories of their data that are being processed, the purposes of that processing, and the categories of third parties to whom their data may be disclosed.
+- Help every individual exercise their right to correct inaccurate personal data, erase data or restrict its processing, receive their data in a readable form, and where applicable, fulfill a request to transmit their data to another controller.
 
 **What does the GDPR require and what are the responsibilities of Microsoft as processor?**
 
@@ -114,19 +114,19 @@ Controllers are required to perform a DPIA addressing risks to personal data sec
 
 The GDPR mandates that a DPIA includes:
 
-    - Assessment of the necessity, and proportionality of data processing in relation to the DPIA’s purpose.
-    - An assessment of the risks to the rights and freedoms of data subjects.
-    - Intended measures to address the risks, safeguards, security measures, and mechanisms to ensure the protection of personal data and demonstrate compliance with the GDPR.
+- Assessment of the necessity, and proportionality of data processing in relation to the DPIA’s purpose.
+- An assessment of the risks to the rights and freedoms of data subjects.
+- Intended measures to address the risks, safeguards, security measures, and mechanisms to ensure the protection of personal data and demonstrate compliance with the GDPR.
 
 **What are my responsibilities as a Controller?**
 
 Under the GDPR, as a controller you are required to undertake DPIAs prior to data processing that is likely to result in a high risk to the rights and freedoms of individuals—in particular, processing using new technologies. The GDPR provides the following non-exhaustive list of cases in which DPIAs must be carried out:
 
-    - Automated processing for the purposes of profiling and similar activities that has legal effects or similarly significantly affects data subjects;  
-    - Processing on a large scale of special categories of personal data – data revealing racial or ethnic origin, political opinion, and the like—or of data relating to criminal convictions and offences;  
-    - Systematic monitoring of a publicly accessible area on a large scale.  
+- Automated processing for the purposes of profiling and similar activities that has legal effects or similarly significantly affects data subjects;  
+- Processing on a large scale of special categories of personal data – data revealing racial or ethnic origin, political opinion, and the like—or of data relating to criminal convictions and offences;  
+- Systematic monitoring of a publicly accessible area on a large scale.  
 
-    The GDPR also requires that you must consult with your Data Protection Authority (DPA) before you begin any processing if you cannot identify sufficient processes to minimize high risks to data subjects.
+The GDPR also requires that you must consult with your Data Protection Authority (DPA) before you begin any processing if you cannot identify sufficient processes to minimize high risks to data subjects.
 
 **What are the responsibilities of Microsoft?**
 
@@ -151,9 +151,9 @@ Personal data means any information related to an individual that can be used to
 
 If a breach of personal data that is likely to result in a high risk to the rights and freedoms of individuals (such as discrimination, identity theft, fraud, financial loss, or damage to their reputation) occurs, the GDPR requires you to:
 
-    - Notify the appropriate Data Protection Authority (DPA) within 72 hours of becoming aware of it—for example, after Microsoft notifies you. If you don’t notify the DPA within that time period, you’ll need to explain why to the DPA. This notice to the DPA is required even where there is a risk to individuals that is not likely to result in a high risk.
-    - Notify the data subjects of the breach without undue delay.
-    - Document the breach including a description of the nature of the breach—such as how many people were impacted, the number of data records affected, the consequences of the breach, and any remedial action your organization is proposing or took.
+- Notify the appropriate Data Protection Authority (DPA) within 72 hours of becoming aware of it—for example, after Microsoft notifies you. If you don’t notify the DPA within that time period, you’ll need to explain why to the DPA. This notice to the DPA is required even where there is a risk to individuals that is not likely to result in a high risk.
+- Notify the data subjects of the breach without undue delay.
+- Document the breach including a description of the nature of the breach—such as how many people were impacted, the number of data records affected, the consequences of the breach, and any remedial action your organization is proposing or took.
 
 **What are the responsibilities of Microsoft as the processor?**
 

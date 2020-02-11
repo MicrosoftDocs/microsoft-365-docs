@@ -59,6 +59,17 @@ The checklists include the four basic categories of considerations for a privacy
     - Planning  
     - Information Security Policies
 
+## Customer agreements
+
+- **Online service terms**: You can find Microsoft contractual commitments with regard to the GDPR in the [Online Services Terms](https://go.microsoft.com/fwlink/p/?linkid=2052208).
+- **Microsoft product terms**: Microsoft extends the [GDPR Terms commitments](https://go.microsoft.com/fwlink/p/?linkid=2052213) to all Volume Licensing customers.
+- **Data protection addendum**: Microsoft services [extends the commitments](https://go.microsoft.com/fwlink/p/?linkid=2052215) to Microsoft Consulting Services customers and others.
+
+## GDPR compliance controls
+
+- **Use Compliance Score**: Review and incorporate controls Microsoft uses to support obligations in the GDPR with [Compliance Score](compliance-score.md).
+- **GDPR control mapping**: Access a [comprehensive mapping](https://go.microsoft.com/fwlink/p/?linkid=2052220) of Microsoft controls to GDPR obligations.
+
 ## Learn more
 
 - [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
