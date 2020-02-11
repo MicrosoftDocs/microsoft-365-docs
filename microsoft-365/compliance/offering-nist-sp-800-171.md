@@ -35,7 +35,7 @@ Accredited third-party assessment organizations, Kratos Secureinfo and Coalfire,
 
 NIST SP 800–171 requirements are a subset of NIST SP 800-53, the standard that FedRAMP uses. Appendix D of NIST SP 800–171 provides a direct mapping of its CUI security requirements to the relevant security controls in NIST SP 800-53, for which the in-scope cloud services have already been assessed and authorized under the FedRAMP program.
 
-Any entity that processes or stores US government CUI — research institutions, consulting companies, manufacturing contractors — must comply with the stringent requirements of NIST SP 800–171. This attestation means Microsoft in-scope cloud services can accommodate customers looking to deploy CUI workloads with the assurance that Microsoft is in full compliance. For example, all DoD contractors who process, store, or transmit “covered defense information” using in-scope Microsoft cloud services in their information systems meet the US Department of Defense DFARS clauses that require compliance with the security requirements of NIST SP 800–171.
+Any entity that processes or stores US government CUI — research institutions, consulting companies, manufacturing contractors — must comply with the stringent requirements of NIST SP 800–171. This attestation means Microsoft in-scope cloud services can accommodate customers looking to deploy CUI workloads with the assurance that Microsoft is in full compliance. For example, all DoD contractors who process, store, or transmit 'covered defense information' using in-scope Microsoft cloud services in their information systems meet the US Department of Defense DFARS clauses that require compliance with the security requirements of NIST SP 800–171.
 
 ## Microsoft in-scope cloud services
 
@@ -57,6 +57,10 @@ Any entity that processes or stores US government CUI — research institutions,
 **Can I use Microsoft compliance with NIST SP 800–171 for my organization?**
 
 Yes. Microsoft customers may use the audited controls described in the reports from independent third-party assessment organizations (3PAO) on FedRAMP standards as part of their own FedRAMP and NIST risk analysis and qualification efforts. These reports attest to the effectiveness of the controls Microsoft has implemented in its in-scope cloud services. Customers are responsible for ensuring that their CUI workloads comply with NIST SP 800–171 guidelines.
+
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), use the pre-configured [NIST 800-171 template](https://go.microsoft.com/fwlink/?linkid=2117526) to help your organization meet the requirements for this regulation.
 
 ## Resources
 
