@@ -206,6 +206,6 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
    ![The new task is displayed in the Task Scheduler Library](media/HRConnectorTaskSchedulerLibrary.png)
 
-   The last time and the next time the script ran is scheduled to run is displayed. You can double-click the task to edit it.
+   The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
 
    You can also verify the last time the script ran on the flyout page of the corresponding HR connector in the compliance center.
