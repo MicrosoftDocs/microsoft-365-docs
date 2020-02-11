@@ -36,15 +36,15 @@
           href: insider-risk-management-users.md
         - name: Create insider risk notice templates (preview)
           href: insider-risk-management-notices.md
-    - name: Communication compliance (preview)
+    - name: Communication compliance
       items: 
-        - name: Learn about communication compliance (preview)
+        - name: Learn about communication compliance
           href: communication-compliance.md
-        - name: Configure communication compliance in Microsoft 365 (preview)
+        - name: Get started with communication compliance
           href: communication-compliance-configure.md
-        - name: Investigate and remediate communication compliance alerts (preview)
+        - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
-        - name: Feature reference for communication compliance (preview)
+        - name: Feature reference for communication compliance
           href: communication-compliance-feature-reference.md
         - name: Supervision policies in Office 365
           href: supervision-policies.md
@@ -67,12 +67,6 @@
           href: privileged-access-management-overview.md
         - name: Configure privileged access management
           href: privileged-access-management-configuration.md
-    - name: Customer Key
-      items: 
-        - name: Controlling your data in Office 365 using Customer Key
-          href: controlling-your-data-using-customer-key.md
-        - name: Service encryption with Customer Key for Office 365 FAQ
-          href: service-encryption-with-customer-key-faq.md
     - name: Protect user and device access
       href: protect-access-to-data-and-services.md
     - name: Customer Lockbox
@@ -85,7 +79,7 @@
       items: 
         - name: Create and publish sensitivity labels
           href: create-sensitivity-labels.md
-        - name: Restrict access to content by using encryption in sensitivity labels
+        - name: Restrict access to content by using sensitivity labels to apply encryption
           href: encryption-sensitivity-labels.md
         - name: Apply a sensitivity label to content automatically
           href: apply-sensitivity-label-automatically.md
@@ -150,8 +144,18 @@
           href: document-fingerprinting.md
         - name: DLP functions for sensitive information
           href: what-the-dlp-functions-look-for.md
-        - name: Watch an extended overview of customizing DLP
-          href: https://go.microsoft.com/fwlink/?linkid=852306
+    - name: Customer Key
+      items: 
+        - name: Service encryption with Customer Key in Office 365
+          href: customer-key-overview.md
+        - name: Set up Customer Key for Office 365
+          href: customer-key-set-up.md
+        - name: Manage Customer Key for Office 365
+          href: customer-key-manage.md
+        - name: Roll or rotate a Customer Key or an availability key
+          href: customer-key-availability-key-roll.md
+        - name: Learn about the availability key for Office 365 Customer Key
+          href: customer-key-availability-key-understand.md
     - name: Email encryption
       href: email-encryption.md
       items: 
@@ -198,6 +202,8 @@
           href: data-classification-content-explorer.md
         - name: View label activity (preview)
           href: data-classification-activity-explorer.md
+        - name: Data classification public preview release notes (preview)
+          href: data-classification-pub-preview-relnotes.md
         - name: Getting started with trainable classifiers (preview)
           href: classifier-getting-started-with.md
         - name: Using a ready to use classifier (preview)
@@ -452,8 +458,8 @@
               href: review-set-search.md
             - name: Tag documents in a review set
               href: tagging-documents.md
-            - name: Set up attorney-client privilege detection
-              href: attorney-privilege-detection.md
+            - name: Use the review set dashboard (preview)
+              href: advanced-ediscovery-dashboard.md
         - name: Analyze case data
           href: analyzing-data-in-review-set.md
           items: 
@@ -492,8 +498,12 @@
               href: supported-filetypes-ediscovery20.md
             - name: Document metadata fields
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: Set up attorney-client privilege detection
+              href: attorney-privilege-detection.md           
             - name: Conversation review sets
               href: conversation-review-sets.md
+            - name: Advanced eDiscovery reports (preview)
+              href: advanced-ediscovery-reports.md
             - name: Troubleshoot AzCopy
               href: troubleshooting-azcopy.md
     - name: Manage eDiscovery cases
@@ -687,12 +697,14 @@
   items: 
     - name: Search the audit log
       href: search-the-audit-log-in-security-and-compliance.md
-    - name: Manage alert policies
-      href: alert-policies.md
+    - name: Advanced audit
+      href: advanced-audit.md
     - name: Turn audit log search on or off
       href: turn-audit-log-search-on-or-off.md
     - name: Manage mailbox auditing
       href: enable-mailbox-auditing.md
+    - name: Manage audit log retention policies
+      href: audit-log-retention-policies.md
     - name: Detailed properties in the audit log
       href: detailed-properties-in-the-office-365-audit-log.md
     - name: Export, configure, and view audit log records
@@ -703,6 +715,8 @@
       href: use-sharing-auditing.md
     - name: Search for eDiscovery activities in the audit log
       href: search-for-ediscovery-activities-in-the-audit-log.md
+    - name: Manage alert policies
+      href: alert-policies.md
 - name: Manage compliance risks
   items: 
     - name: Microsoft Service Trust Portal

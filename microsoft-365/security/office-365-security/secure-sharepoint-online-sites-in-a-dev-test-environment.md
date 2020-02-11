@@ -312,8 +312,6 @@ When you are ready for production deployment of secure SharePoint Online sites, 
 
 ## See Also
 
-[Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md)
-
 [Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 
 [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)

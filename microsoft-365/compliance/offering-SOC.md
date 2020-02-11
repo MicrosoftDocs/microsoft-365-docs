@@ -44,15 +44,14 @@ Learn about the benefits of SOC 1, 2, 3 on the Microsoft Cloud: [Download the SO
 
 ### Covered services for SOC 1 and SOC 2
 
-- Azure, Azure Government, and Azure Germany [detailed list](https://aka.ms/AzureCompliance)
+- [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
 - Cloud App Security
-- Dynamics 365 and Dynamics 365 U.S. Government [detailed list](https://aka.ms/d365-compliance-list)
+- [Dynamics 365 and Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Graph
 - Intune
 - Microsoft Managed Desktop
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
-- Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense [detailed list](https://go.microsoft.com/fwlink/p/?LinkID=2077751); Yammer has achieved a SOC 1 Type 1 report
-- Office 365 Germany
+- [Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 - Stream
@@ -60,13 +59,14 @@ Learn about the benefits of SOC 1, 2, 3 on the Microsoft Cloud: [Download the SO
 
 ### Covered services for SOC 3
 
-- Azure, Azure Government, and Azure Germany [detailed list](https://aka.ms/AzureCompliance)
+- [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Graph
 - Intune
 - Microsoft Managed Desktop
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- [Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI
 - Stream
 
@@ -90,11 +90,13 @@ Microsoft cloud services are audited at least annually against SOC 1 (SSAE18, IS
 
 #### Office 365
 
-- [Office 365 SOC 1 SSAE 16 Type II Audit Report](https://aka.ms/office365soc1auditreport)
-- [Office 365 SOC 2 AT 101 Type II Audit Report](https://aka.ms/Office365SOC2AuditReport)
+- [Office 365 Core - SSAE 18 SOC 1 Report](https://aka.ms/o365SOC-1)
+- [Office 365 Core - SSAE 18 SOC 2 Report](https://aka.ms/o365SOC-2)
+- [Office 365 Core - SSAE 18 SOC 3 Report](https://aka.ms/o365SOC-3)
+- [Office 365 Microservices T1 – SSAE 18 SOC2 Type I Report](https://aka.ms/o365-MS-SOC-2-type1)
 - [Office 365 Customer Lockbox SOC 1 SSAE 16 Audit Report](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
-- [Yammer SOC 2 AT 101 Type II Audit Report](https://aka.ms/YammerSOC2AuditReport)
 - [Yammer SOC 2 AT 101 Type I Audit Report](https://aka.ms/YammerSOC2Type1AuditReport)
+- [Yammer SOC 2 Type II Report](https://aka.ms/yammerSOC-2)
 - [See bridge letters and additional audit reports](https://aka.ms/auditreports)
 
 ## Frequently asked questions
@@ -122,17 +124,16 @@ Yes. When you migrate your applications and data to covered Microsoft cloud serv
 
 The [SOC Toolkit for Service Organizations](https://aka.ms/soc-toolkit) is a helpful resource for understanding SOC reporting processes and promoting your organization’s use of them.
 
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), use the pre-configured [SOC 1 template](https://go.microsoft.com/fwlink/?linkid=2117918) and the [SOC 2 template](https://go.microsoft.com/fwlink/?linkid=2117919) to help your organization meet the requirements for this regulation.
+
 ## Resources
 
- - [Better protect your data by using Microsoft cloud services](https://www.microsoft.com/trustcenter/guidance/protect-data)
- - [Service Organization Control (SOC) Reports](https://aka.ms/mssocreports)
- - [SSAE 16 Auditing Standard](https://www.ssae-16.com/)
- - [ISAE 3402 Standard](https://isae3402.com/)
- - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
- - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
- - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
- - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf).
+- [Better protect your data by using Microsoft cloud services](https://www.microsoft.com/trustcenter/guidance/protect-data)
+- [Service Organization Control (SOC) Reports](https://aka.ms/mssocreports)
+- [SSAE 16 Overview](http://ssae16.com/SSAE16_overview.html)
+- [ISAE 3402 Overview](http://isae3402.com/ISAE3402_overview.html)
+- [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
+- [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

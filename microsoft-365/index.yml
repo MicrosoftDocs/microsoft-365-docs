@@ -80,6 +80,6 @@ additionalContent:
           summary: Keep your campaign or business data and communications secure with this recommended configuration for Microsoft 365 Business.
           url: ./campaigns/index.md
         # Card
-        - title: NEW — Microsoft 365 training and certification at Microsoft Learn
-          summary: Brand new learning paths to increase your Microsoft 365 skills and earn certifications.
-          url: https://docs.microsoft.com/learn/m365/
+        - title: Microsoft Managed Desktop
+          summary: Microsoft Managed Desktop brings together Microsoft 365 Enterprise, cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs.
+          url: ./managed-desktop/index.yml
