@@ -130,6 +130,7 @@ You can view a graph of your organization's score over time in the **History** t
 Microsoft Secure Score is a numerical summary of your security posture based on system configurations, user behavior and other security-related measurements; it is not an absolute measurement of how likely your system or data will be breached. Rather, it represents the extent to which you have adopted security controls in your Microsoft environment which can help offset the risk of being breached. No online service is completely immune from security breaches, and secure score should not be interpreted as a guarantee against security breach in any manner.
 
 ## What's new?
+
 To make Microsoft Secure Score a better representative of your security posture we have made some changes.
 
 ### Removed “not scored” improvement actions

@@ -295,19 +295,19 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "compliance/prevent-email-from-being-marked-as-spam.md",
+      "source_path": "microsoft-365/compliance/prevent-email-from-being-marked-as-spam.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/prevent-email-from-being-marked-as-spam",
       "redirect_document_id": true
     },
     {
-      "source_path": "compliance/controlling-your-data-using-customer-key.md",
+      "source_path": "microsoft-365/compliance/controlling-your-data-using-customer-key.md",
       "redirect_url": "customer-key-overview",
       "redirect_document_id": true
     },
     {
-      "source_path": "compliance/service-encryption-with-customer-key-faq.md",
+      "source_path": "microsoft-365/compliance/service-encryption-with-customer-key-faq.md",
       "redirect_url": "customer-key-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
