@@ -23,13 +23,13 @@ description: "You can apply labels to Microsoft Teams, Office 365 groups, and Sh
 
 When you create sensitivity labels in the [Microsoft 365 compliance center](https://protection.office.com/), you can now apply them to containers that include Microsoft Teams, Office 365 groups, and SharePoint sites. Use label settings to control the following options:
 
-- Public/private settings
-- Guest access
-- Access from unmanaged devices
+- Privacy of Office 365 group-connected teams sites (public or private)
+- External users access
+- Access from unmanaged devices 
 
-When you apply this label to a team or group, the label automatically applies the configured options to the connected SharePoint site or Teams site. 
+When you apply this label to a team or group, the label automatically applies the configured options to the connected SharePoint site or team site. 
 
-Content in those sites however, do not inherit the labels for settings such as the label classification, visual markings, or encryption. For this functionality, [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Content in those sites however, do not inherit the labels for settings such as the label name, visual markings, or encryption. For this functionality, [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## About the public preview for Microsoft Teams, Office 365 groups, and SharePoint sites
 
@@ -50,7 +50,7 @@ After you enable and configure this preview, users can additionally see and appl
 
 ## Enable this preview and synchronize labels
 
-This solution uses Azure AD functionality to enable the preview. Follow the instructions in the Azure AD documentation, [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell).
+This feature uses Azure AD functionality to enable the preview. Follow the instructions in the Azure AD documentation, [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell).
 
 Then, in a PowerShell session, connect to the Security & Compliance Center by using a work or school account that has global admin privileges. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
@@ -71,11 +71,11 @@ If you need help creating or editing a sensitivity label, see the instructions f
 
 On this new **Site and group settings** page, configure the settings:
 
-- **Privacy (Public/Private)**: Private means that only approved members in your organization can see what's inside the group. Anyone else in your organization can't see what's in the group. [Learn more](https://support.office.com/article/36236e39-26d3-420b-b0ac-8072d2d2bedc)
+- **Privacy of Office 365 group-connected teams sites**: Choose **Private** when you want only approved members in your organization to access the site, and **Public** when anyone in your organization can access the site.
 
-- **Guest access**: Control whether guests can be added to a group. [Learn about managing guest access in Office 365 Groups](/office365/admin/create-groups/manage-guest-access-in-groups)
+- **External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **Unmanaged devices**: Block or limit access to SharePoint content from devices that aren't hybrid AD joined or compliant with Intune policies. If you select unmanaged devices, you must go to Azure AD to finish setting up the policy. For info, see [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).
+- **Unmanaged devices**: For [unmanaged devices](/sharepoint/control-access-from-unmanaged-devices), allow full access, web only access, or block access completely. 
 
 ![The site and group settings tab](media/edit-sensitivity-label-site-group.png)
 
@@ -87,7 +87,6 @@ On this new **Site and group settings** page, configure the settings:
 If your label isn't already published, now publish it by [adding it to a label policy](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
 You're now ready to apply the sensitivity label or labels to Office 365 groups. Return to the Azure AD documentation for instructions to [assign a label to a new group in Azure portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal) or [assign a label to an existing group in Azure portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal), or if necessary, [remove a label from an existing group in Azure portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).
-
 
 ## Sensitivity label management
 
@@ -136,7 +135,7 @@ If you experience creation errors during the public preview, you have two option
 
 ## Apply a sensitivity label to a new team
 
-Users can select sensitivity labels when they create new teams in Microsoft Teams. When they select the sensitivity level, the privacy setting changes as necessary. Depending on the guest access setting you selected for the label, users can or can't add people outside the organization to the team.
+Users can select sensitivity labels when they create new teams in Microsoft Teams. When they select the sensitivity level, the privacy setting changes as necessary. Depending on the external users access setting you selected for the label, users can or can't add people outside the organization to the team.
 
 [Learn more about sensitivity labels for Teams](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
@@ -148,9 +147,9 @@ After you create the team, the sensitivity label appears in the upper-right corn
 
 The service automatically applies the same sensitivity label to the Office 365 group and the connected SharePoint team site.
 
-## Apply a sensitivity label to a new group
+## Apply a sensitivity label to a new group in Outlook on the web
 
-In Outlook on the web, the new **Sensitivity** box contains published labels. If users want more info, they can click the help icon to read details about the available labels and associated policies.
+In Outlook on the web, when you create a new group, you can select or change the **Sensitivity** option for published labels:
 
 ![Creating a group and selecting an option under Sensitivity](media/sensitivity-label-new-group.png)
 
@@ -170,7 +169,7 @@ When users browse to the site, they can see the name of the label and applied po
 
 ## Manage sensitivity labels in the SharePoint admin center
 
-To view and edit the labels, use the Active sites page in the new SharePoint admin center.
+To view and change the applied sensivitiy labels, use the **Active sites** page in the new SharePoint admin center.
 
 ![The Sensitivity column on the Active sites page](media/manage-site-sensitivity-labels.png)
 
@@ -209,36 +208,35 @@ Whenever you make a change to site and group settings for a label, you must run 
     {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "e48058ea-98e8-4940-8db0-ba1310fd955e"}
     ```
 
-## Support for the new sensitivity labels
+## Support for the sensitivity labels
 
-The following apps and services support the sensitivity labels in this preview:
+You can use the sensitivity labels that you've configured for site and group settings with the following apps and services:
 
-- Microsoft 365 compliance center
-- SharePoint
-- Outlook on the web
+- SharePoint Online
 - Teams
+- Outlook on the web
 - SharePoint admin center
 - Azure AD admin center
 
-You can't use the following apps and services to create Office 365 groups with the new sensitivity labels:
+Other apps and services that you can't currently use the sensitivity labels that you've configured for site and group settings include:
 
 - Outlook for the Mac
-- Outlook mobile  
+- Outlook mobile
 - Outlook desktop for Windows
-- Forms  
-- Dynamics 365  
-- Yammer  
-- Stream  
-- Planner  
-- Project  
-- PowerBI  
-- Teams admin center  
-- Microsoft 365 admin center  
+- Forms
+- Dynamics 365
+- Yammer
+- Stream
+- Planner
+- Project
+- PowerBI
+- Teams admin center
+- Microsoft 365 admin center
 - Exchange admin center
 
-## If you used classic Azure AD site classification
+## Classic Azure AD site classification
 
-Office 365 no longer supports the old classifications for new groups and SharePoint sites when you enable this preview. However, existing groups and sites still display the old classifications unless you convert them. Old classifications include the "modern" sites classification you set up, possibly through Azure AD PowerShell or the PnP Core library, that defined values for the `ClassificationList` setting.
+Office 365 no longer supports the old classifications for new groups and SharePoint sites when you enable this preview. However, existing groups and sites still display the old classifications unless you convert them to use sensitivity labels. Old classifications include the "modern" sites classification you set up, possibly through Azure AD PowerShell or the PnP Core library, that defined values for the `ClassificationList` setting.
 
 For example, in PowerShell:
 
@@ -248,49 +246,35 @@ For example, in PowerShell:
 
 For more information about the old classification method, see [SharePoint "modern" sites classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
-Based on your current deployment, you have two options to convert your old classifications to the new classifications.
+To convert your old classifications to sensitivity labels, do one of the following:
 
-### If you never used sensitivity labels (unified Microsoft Information Protection labels) for files and email
+- Edit existing sensitivity labels that are already published, and specify the label settings you want for sites and groups.
 
-We recommend that you:
+- Create and publish new sensitivity labels that have the same names as your existing classifications.
 
-1. Create new sensitivity labels in the Microsoft 365 compliance center that have the same names as your existing classifications.
-2. Use PowerShell to apply the new labels to existing Office 365 groups and SharePoint sites using name mapping.
-3. Delete the old classifications.
+Then: 
 
-Apps and services that support the new sensitivity labels will show them. You create new teams, groups, and sites with the new labels. Users can still create groups from apps and services that don't support the new labels. However, users can't apply a label to these groups. Use PowerShell to apply the new sensitivity labels to these groups.
+1. Use PowerShell to apply the sensitivity labels to existing Office 365 groups and SharePoint sites by using name mapping. Use the next section for instructions.
 
-You can keep your old classifications; however, we highly recommend using PowerShell to apply the new sensitivity labels to these groups.
+2. Remove the old classifications from the existing groups and sites.
 
-Apps and services that support the new sensitivity labels will get created with the new labels. When users create groups from apps and services that don't support the new labels, they can select a classification.
+Although you can't prevent users from creating new groups in apps and services that don't yet support sensitivity labels, you can run a recurring PowerShell script to look for new groups that users have created with the old classifications, and convert these to use sensitivity labels. 
 
-### If you use sensitivity labels for files and email
+#### Use PowerShell to convert classifications for Office 365 groups to sensitivity labels
 
-As soon as you enable this preview, go to each label in the Microsoft 365 compliance center and apply the policies you want for sites and groups. Users will start seeing your existing labels available for sites and groups.
+1. Ensure that you're running SharePoint Online Management Shell version 16.0.19418.12000 or above. If you already have the latest version, skip to step 4.
 
-### Prepare the SharePoint Online Management Shell before you relabel Office 365 groups
+2. If you have installed a previous version of the SharePoint Online Management Shell from PowerShell gallery, you can update the module by running the following cmdlet.
+    
+    ```PowerShell
+    Update-Module -Name Microsoft.Online.SharePoint.PowerShell
+    ```
 
-Before you apply new labels, ensure that you're running the latest SharePoint Online Management Shell. If you already have the latest version, you can go ahead and [Relabel Office 365 groups with new sensitivity labels](#relabel-office-365-groups-with-new-sensitivity-labels).
+3. If you have installed a previous version of the SharePoint Online Management Shell from the Microsoft Download Center, go to **Add or remove programs** and uninstall the SharePoint Online Management Shell. Then, install the latest SharePoint Online Management Shell from the [Download Center]((https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
-To prepare the SharePoint Online Management Shell for the preview:
+4. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint Online Management Shell. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
-1. If you installed a previous version of the SharePoint Online Management Shell, go to **Add or remove programs** and uninstall “SharePoint Online Management Shell”.
-
-2. In a web browser, go to the Download Center page and [Download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
-
-3. Select your language and then click **Download**.
-
-4. Choose between the x64 and x86 .msi file. Download the x64 file if you run the 64-bit version of Windows or the x86 file if you’re run the 32-bit version. If you don’t know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system).
-
-5. After you download the file, run the file and follow the steps in the Setup Wizard.
-
-### Relabel Office 365 groups with new sensitivity labels
-
-1. Ensure that you're using the latest version of the SharePoint Online Management Shell. For instructions, see [Prepare the SharePoint Online Management Shell before you relabel Office 365 groups](#prepare-the-sharepoint-online-management-shell-before-you-relabel-office-365-groups).
-
-2. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint Online Management Shell. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
-
-3. Run the following command to get the list of sensitivity labels and their GUIDs.
+5. Run the following commands to get the list of sensitivity labels and their GUIDs.
 
     ```PowerShell
     Set-ExecutionPolicy RemoteSigned
@@ -300,19 +284,15 @@ To prepare the SharePoint Online Management Shell for the preview:
     Get-Label |ft Name, Guid  
     ```
 
-4. Make a note of the GUID for the label you want to overwrite. For example, the "General" label.
+6. Make a note of the GUIDs for the sensitivity labels you want to apply to your Office 365 groups. For example, the "General" label.
 
-5. Use the following command to get the list of groups that have the “General” classification. When you run this command, you'll connect to Exchange Online PowerShell and run the Get-UnifiedGroup cmdlet.
+7. Use the following command as an example to get the list of groups that currently have the classification of "General":
 
    ```PowerShell
-   Set-ExecutionPolicy RemoteSigned
-   $UserCredential = Get-Credential
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-   Import-PSSession $Session
    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
    ```
 
-6. For each group, add the new sensitivity label GUID.
+6. For each group, add the new sensitivity label GUID. For example:
 
     ```PowerShell
     foreach ($g in $groups)
