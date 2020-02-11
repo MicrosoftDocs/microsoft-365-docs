@@ -152,9 +152,7 @@ In Outlook on the web, when you create a new group, you can select or change the
 
 ## Apply a sensitivity label to a new site
 
-Admins and end users can select sensitivity labels when they create modern team sites and communication sites.
-
-[Learn how to create a site in the new SharePoint admin center](/sharepoint/create-site-collection)
+Admins and end users can select sensitivity labels when they [create modern team sites and communication sites](/sharepoint/create-site-collection).
 
 When users create modern team and communication sites, a sensitivity label is already selected by default. Users can select the help icon to learn more about the labels.
 
@@ -166,7 +164,7 @@ When users browse to the site, they can see the name of the label and applied po
 
 ## Manage sensitivity labels in the SharePoint admin center
 
-To view and change the applied sensivitiy labels, use the **Active sites** page in the new SharePoint admin center.
+To view the applied sensitivity labels, use the **Active sites** page in the new SharePoint admin center.
 
 ![The Sensitivity column on the Active sites page](media/manage-site-sensitivity-labels.png)
 
