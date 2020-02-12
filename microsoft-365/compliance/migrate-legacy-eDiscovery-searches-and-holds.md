@@ -36,7 +36,7 @@ The first step is to connect to Exchange Online PowerShell and Office 365 Securi
 ```powershell
 $UserCredential = Get-Credential
 $sccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $Session -AllowClobber -DisableNameChecking
+Import-PSSession $sccSession -DisableNameChecking
 $exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
 Import-PSSession $exoSession -AllowClobber -DisableNameChecking
 ```
@@ -88,14 +88,14 @@ $case = New-ComplianceCase -Name "[Case name of your choice]"
 
 After the case is created, you can create the hold and associate it with the case that you created in the previous step. It's important to remember that you must create both a case hold policy and a case hold rule. If the case hold rule isn't created after you created case hold policy, the eDiscovery hold will not be created and any content won't be placed on hold.
 
-Run the following commands to re-create the eDiscovery hold that you want to migrate. These examples use the properties from In-Place Hold from Step 3 that you want to migrate.
+Run the following commands to re-create the eDiscovery hold that you want to migrate. These examples use the properties from In-Place Hold from Step 3 that you want to migrate. The first command creates a new case hold policy and saves the properties to a variable. The second command creates the corresponding case hold rule.
 
 ```powershell
 $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLocation $search.SourceMailboxes
 ```
 
 ```powershell
-$rule = New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
+New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
 
 ![Example of using NewCaseHoldPolicy and NewCaseHoldRule cmdlets](media/MigrateLegacyeDiscovery4.png)
