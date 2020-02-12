@@ -257,7 +257,7 @@ You can choose to apply retention labels to content automatically when that cont
     
 - [Specific keywords that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
-- [A match for classifers](#auto-apply-labels-to-content-by-using-trainable-classifers)
+- [A match for trainable classifers](#auto-apply-labels-to-content-by-using-trainable-classifers)
     
 ![Choose condition page for auto-apply label](media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
