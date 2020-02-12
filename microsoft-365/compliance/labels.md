@@ -39,9 +39,11 @@ With retention labels, you can:
     
 - **Apply retention labels to content automatically** if it matches specific conditions, such as when the content contains: 
     
-  - Specific types of sensitive information.
+    - Specific types of sensitive information.
     
-  - Specific keywords that match a query you create.
+    - Specific keywords that match a query you create.
+    
+    - Pattern matches for a trainable classifier.
     
   The ability to apply retention labels to content automatically is important because:
     
@@ -52,13 +54,13 @@ With retention labels, you can:
    - Users no longer need to know about data governance policies - they can instead focus on their work.
 
   > [!NOTE]
-  > The capability to apply labels automatically requires an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been automatically labeled in a site or their mailbox is selected for automatic labeling. Users who simply have read-only access to content or reply to labeled emails do not require this license.
+  > The capability to apply labels automatically requires a minimum of an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been automatically labeled in a site or their mailbox is selected for automatic labeling. Users who simply have read-only access to content or reply to labeled emails do not require this license.
       
 - **Implement records management across Office 365**, including both email and documents. You can use a retention label to classify content as a record. When this happens, the label can't be changed or removed, and the content can't be edited or deleted. 
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that arrive in that location inherit the default retention label.  
     
-You create retention labels in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center. In the left nav, choose **Classification** > **Retention label** > **Create a label**.
+You create retention labels in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center.
 
 ## How retention labels work with retention label policies
 
@@ -261,7 +263,9 @@ You can choose to apply retention labels to content automatically when that cont
     
 ![Choose condition page for auto-apply label](media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
-Auto-applying retention labels requires a minimum subscription of Office 365 Enterprise E5 subscription, and it can take up to seven days for auto-apply retention labels to be applied to all content that matches the conditions, as described above.
+Auto-applying retention labels that are configured for the first two options requires an Office 365 Enterprise E5 subscription. If you use the option for trainable classifers, this capability has [additional licensing requirements](classifier-getting-started-with.md#licensing-requirements).
+
+It can take up to seven days for auto-apply retention labels to be applied to all content that matches the conditions you've configured.
   
 > [!TIP]
 > See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePont to auto-apply retention labels and implement event-driven retention.
