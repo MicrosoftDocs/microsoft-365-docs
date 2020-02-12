@@ -58,7 +58,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs <$true|$false> -AllowSafeDocsOpen <$true|$f
 This example enables Safe Documents for the entire organization, and prevents users from opening documents that have been identified as malicious from Protected View.
 
 ```powershell
-Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $true
+Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 ```
 
 For detailed syntax and parameter information, see [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-atppolicyforo365).
