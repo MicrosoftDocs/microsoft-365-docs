@@ -261,7 +261,7 @@ You can choose to apply retention labels to content automatically when that cont
     
 ![Choose condition page for auto-apply label](media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
-Auto-applying retention labels requires an Office 365 Enterprise E5 subscription, and that it can take up to seven days for auto-apply retention labels to be applied to all content that matches the conditions, as described above.
+Auto-applying retention labels requires a minimum subscription of Office 365 Enterprise E5 subscription, and it can take up to seven days for auto-apply retention labels to be applied to all content that matches the conditions, as described above.
   
 > [!TIP]
 > See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePont to auto-apply retention labels and implement event-driven retention.
