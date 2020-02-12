@@ -82,8 +82,6 @@ In order to create an eDiscovery hold, you have to create an eDiscovery case to 
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
 
-![Example of running the New-ComplianceCase command](media/MigrateLegacyeDiscovery3.png)
-
 ## Step 5: Create the eDiscovery hold
 
 After the case is created, you can create the hold and associate it with the case that you created in the previous step. It's important to remember that you must create both a case hold policy and a case hold rule. If the case hold rule isn't created after you created case hold policy, the eDiscovery hold will not be created and any content won't be placed on hold.
@@ -97,8 +95,6 @@ $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLo
 ```powershell
 New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
-
-![Example of using NewCaseHoldPolicy and NewCaseHoldRule cmdlets](media/MigrateLegacyeDiscovery4.png)
 
 ## Step 6: Verify the eDiscovery hold
 
