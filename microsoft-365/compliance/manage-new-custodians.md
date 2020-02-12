@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: "Manage custodians in an Advanced eDiscovery case."
 ---
 # Manage custodians in an Advanced eDiscovery case
 
@@ -32,7 +32,7 @@ To view the details about a custodian, click the custodian from the list on the 
 
   - **Display Name** - The name displayed in the address book for the custodian. This is usually the combination of the custodian’s first name, middle initial, and last name.
   
-   - **Mail/SMTP** - The primary SMTP address for the custodian, for example, brianj@contoso.onmicrosoft.com. Note that the custodian's user principal name (UPN) is also listed.
+   - **Mail/SMTP** - The primary SMTP address for the custodian, for example, brianj@contoso.onmicrosoft.com. The custodian's user principal name (UPN) is also listed.
 
   - **Title** - The custodian’s job title.
 
@@ -46,7 +46,7 @@ To view the details about a custodian, click the custodian from the list on the 
 
   - **State** - The state or province in the custodian’s address.
 
-  - **Country/Region** - The country/region where the custodian’s is located.
+  - **Country/Region** - The country/region where the custodian is located.
 
   - **Office** - The office location in the custodian’s place of business.
 
@@ -131,7 +131,7 @@ To release a custodian:
 
 5. Click **Yes** to confirm that you want to release the custodian. 
 
-    Note that status for this user on the **Custodians** tab is set to **Released** and the **Hold status** on the flyout page is changed to **False**. 
+    The status for this user on the **Custodians** tab is set to **Released** and the **Hold status** on the flyout page is changed to **False**. 
 
 > [!NOTE]
 > A custodian might be simultaneously involved in several legal cases. When a custodian is released from a case, the holds and notifications across other matters won't be impacted.
