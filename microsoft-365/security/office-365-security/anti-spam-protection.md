@@ -1,11 +1,11 @@
 ---
-title: "Office 365 email anti-spam protection"
+title: "Anti-spam protection"
 f1.keywords:
 - NOCSH
-ms.author: krowley
-author: kccross
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 6/29/2018
+ms.date:
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -19,19 +19,35 @@ ms.collection:
 description: "Learn about the anti-spam settings and filters that will help you prevent spam in Exchange Online and Office 365. Getting too much spam in Office 365? You can customize your spam filters and anti-spam policy settings."
 ---
 
-# Office 365 email anti-spam protection
+# Anti-spam protection in Office 365
 
-Are you concerned about too much spam in Office 365? We've built multiple spam filters into your Office 365 or Exchange Online Protection (EOP) service, so your email is protected from the moment you receive your first message. In order to help prevent spam in Office 365, you may want to change a protection setting to deal with a specific issue in your organization—say you're receiving a lot of spam from a particular sender, for example—or to simply fine tune your settings so that they're tailored to best meet the needs of your organization. To do this, you can change anti-spam settings in the Office 365 Security &amp; Compliance Center.
+If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, your email messages are automatically protected against spam (unwanted bulk email) by EOP.
 
-This article is intended for Office 365 administrators. If you're not an administrator, but you are an Office 365 user and you want to learn how to deal with spam you receive, this isn't the article you're looking for. Instead, if you use Outlook for PC or Outlook for Mac, start with [Overview of the Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). If you use Outlook on the web, start with [Learn about junk email and phishing](https://support.office.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
+The anti-spam settings in your organization are a balancing act between blocking unwanted messages and allowing legitimate messages. If you configure the anti-spam features too aggressively, you'll likely block too many legitimate messages (false positives). If you configure the anti-spam features too loosely, you likely allow too much spam into your organization. To configure your anti-spam settings, see [Configure the anti-spam policies](configure-the-anti-spam-policies.md).
 
-## These options help you prevent spam in Office 365
+> [!NOTE]
+> This topic is intended for Office 365 admins. For end-user topics, see [Overview of the Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) and [Learn about junk email and phishing](https://support.office.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
 
- **Connection filtering**: When you use connection filtering, Office 365 checks the reputation of the sender before allowing a message to get through. You can create an allow list, or safe sender list, to make sure you receive every message sent to you from a specific IP address or IP address range. You can also create a list of IP addresses from which to block messages, called a block list. For more information, see [Configure the connection filter policy](configure-the-connection-filter-policy.md). If you're concerned about spam in Office 365, use connection filtering to help prevent spam.
+## Anti-spam technologies in EOP
 
-For customers who have Office 365 Enterprise E5 or have purchased Advanced Threat Protection (ATP) licenses, connection filtering is used by spoof intelligence to create allow and block lists of senders who are spoofing your domain. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
+- **Connection filtering**: Allows or blocks messages based on the source email server. The important parts of connection filtering are:
 
- **Spam filtering**: Office 365 checks for message characteristics consistent with spam by using spam filtering. You can change what actions to take on messages identified as spam, and choose whether to filter messages written in specific languages, or sent from specific countries or regions. You can also turn on advanced spam filtering options if you want to pursue an aggressive approach to spam filtering. Additionally, you can configure end-user spam notifications to inform users when messages intended for them were sent to the quarantine instead. (Sending messages to the quarantine is one of the configurable actions.) From these notifications, end users can release false positives and report them to Microsoft for analysis. For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md). In order to help prevent spam in Office 365, use spam filtering, if you're concerned about too much spam in Office 365, use connection filtering to help prevent spam.
+  - **IP Allow List**: Always allow messages from the IP addresses or IP address ranges you specify. Anti-spam filtering is skipped on these incoming messages.
+
+  - **IP Block List**: Always blocks email from the IP addresses or IP address ranges you specify. The incoming messages are rejected, are not marked as spam, and no additional filtering occurs.
+
+  - **Safe list**: The *safe list* is a dynamic allow list in the Microsoft datacenter that requires no customer configuration. Microsoft identifies the trusted senders on the safe list from subscriptions to various third-party lists of trusted email sources. You enable or disable the use of the safe list; you can't configure the senders on the safe list. Anti-spam filtering is skipped on these incoming messages.
+
+  For configuration instructions, see [Configure connection filtering in Office 365](configure-the-connection-filter-policy.md).
+
+  > [!NOTE]
+  > Spoof intelligence uses connection filtering to create allow and block lists of senders who are spoofing your email domain. For more information, see [Learn more about spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
+
+ **Spam filtering (content filtering)**: Office 365 checks for message characteristics consistent with spam by using spam filtering. You can change what actions to take on messages identified as spam, and choose whether to filter messages written in specific languages, or sent from specific countries or regions. You can also turn on advanced spam filtering options if you want to pursue an aggressive approach to spam filtering. Additionally, you can configure end-user spam notifications to inform users when messages intended for them were sent to the quarantine instead. (Sending messages to the quarantine is one of the configurable actions.) From these notifications, end users can release false positives and report them to Microsoft for analysis. For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md). In order to help prevent spam in Office 365, use spam filtering, if you're concerned about too much spam in Office 365, use connection filtering to help prevent spam.
+
+ **Outbound spam filtering**:
+
+ **Spoof intelligence**:
 
 > [!NOTE]
 > For EOP standalone customers: By default, the EOP spam filters send spam-detected messages to each recipients' Junk Email folder. However, in order to ensure that the **Move message to Junk Email folder** action will work with on-premises mailboxes, you must configure two Exchange mail flow rules (also known as transport rules) on your on-premises servers to detect spam headers added by EOP. For details, see [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
