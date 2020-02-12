@@ -46,19 +46,19 @@ After you enable and configure this preview, users can additionally see and appl
 
 ## Enable this preview and synchronize labels
 
-This feature uses Azure AD functionality to enable the preview. Follow the instructions in the Azure AD documentation: [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell).
+1. Because this feature uses Azure AD functionality to enable the preview, follow the instructions in the Azure AD documentation: [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell).
 
-Then, in a PowerShell session, connect to the Security & Compliance Center by using a work or school account that has global admin privileges. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+2. In a PowerShell session, connect to the Security & Compliance Center by using a work or school account that has global admin privileges. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-Run the following commands to synchronize your labels to Azure AD, so that they can used with Office 365 groups:
-
-```powershell
-Set-ExecutionPolicy RemoteSigned
-$UserCredential = Get-Credential
-$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $Session -DisableNameChecking
-Execute-AzureAdLabelSync
-```
+3. Run the following commands to synchronize your labels to Azure AD, so that they can used with Office 365 groups:
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
+    Execute-AzureAdLabelSync
+    ```
 
 ## Set site and group settings when you create or edit sensitivity labels
 
@@ -223,21 +223,6 @@ Other apps and services that you can't currently use the sensitivity labels that
 - Microsoft 365 admin center
 - Exchange admin center
 
-## Troubleshoot sensitivity label deployment
-
-Having problems with sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites? 
-
-### Labels not visible after publishing
-If you experience issues when you create a team or Office 365 group after you enable these settings or modify a sensitivity label's description, wait a few hours after saving the label changes, and then try to create the team or group again. For information, see [Schedule roll-out after you create or change a sensitivity label](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
-
-If you are still not able to see the new sensitivity label from SharePoint Online, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
-
-### Team, group, or SharePoint site creation errors
-If you experience creation errors during the public preview, you have two options:
-
-- Ensure that sensitivity labels are not mandatory for any user.
-
-- You can turn off sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites by using the same instructions from [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). However, to disable the preview, in step 5, disable the feature by using `$setting["EnableMIPLabels"] = "False"`.
 
 ## Classic Azure AD site classification
 
@@ -303,3 +288,20 @@ Although you can't prevent users from creating new groups in apps and services t
     foreach ($g in $groups)
     {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "457fa763-7c59-461c-b402-ad1ac6b703cc"}
     ```
+
+## Troubleshoot sensitivity label deployment
+
+Having problems with sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites? Check the following:
+
+### Labels not visible after publishing
+If you experience issues when you create a team or Office 365 group after you enable these settings or modify a sensitivity label's description, wait a few hours after saving the label changes, and then try to create the team or group again. For information, see [Schedule roll-out after you create or change a sensitivity label](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
+
+If you are still not able to see the new sensitivity label from SharePoint Online, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+
+### Team, group, or SharePoint site creation errors
+If you experience creation errors during the public preview, you have two options:
+
+- Ensure that sensitivity labels are not mandatory for any user.
+
+- You can turn off sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites by using the same instructions from [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). However, to disable the preview, in step 5, disable the feature by using `$setting["EnableMIPLabels"] = "False"`.
+
