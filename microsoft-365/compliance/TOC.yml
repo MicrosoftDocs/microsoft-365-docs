@@ -8,7 +8,7 @@
       href: recently-updated-topics-mcc.md
     - name: Microsoft 365 compliance center
       href: microsoft-365-compliance-center.md
-    - name: Microsoft 365 solution catalog (preview)
+    - name: Microsoft 365 solution catalog
       href: microsoft-365-solution-catalog.md
     - name: Go to the Security & Compliance Center
       href: go-to-the-securitycompliance-center.md
@@ -458,8 +458,6 @@
               href: review-set-search.md
             - name: Tag documents in a review set
               href: tagging-documents.md
-            - name: Set up attorney-client privilege detection
-              href: attorney-privilege-detection.md
             - name: Use the review set dashboard (preview)
               href: advanced-ediscovery-dashboard.md
         - name: Analyze case data
@@ -500,6 +498,8 @@
               href: supported-filetypes-ediscovery20.md
             - name: Document metadata fields
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: Set up attorney-client privilege detection
+              href: attorney-privilege-detection.md           
             - name: Conversation review sets
               href: conversation-review-sets.md
             - name: Advanced eDiscovery reports (preview)
@@ -697,7 +697,7 @@
   items: 
     - name: Search the audit log
       href: search-the-audit-log-in-security-and-compliance.md
-    - name: Advanced audit
+    - name: Advanced Audit
       href: advanced-audit.md
     - name: Turn audit log search on or off
       href: turn-audit-log-search-on-or-off.md
