@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: "When a custodian is added to an Advanced eDiscovery case, any content in Office 365 that was deemed as partially indexed is re-processed to make it fully searchable. "
 ---
 
 # Advanced indexing of custodian data
@@ -26,8 +26,11 @@ When a custodian is added to an Advanced eDiscovery case, any content in Office 
 To learn more about processing support in Office 365 and partially indexed items, see:
 
 - [Supported file types in Advanced eDiscovery](supported-filetypes-ediscovery20.md)
+
 - [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
+
 - [File formats indexed by Exchange Search](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+
 - [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
 ## Viewing Advanced indexing results
@@ -37,11 +40,12 @@ After the Advanced indexing process is completed, you can get an understanding o
 The graph also includes the number of items that require remediation and another graph of errors by file type. For more information, see:
 
 - [Error remediation when processing data](error-remediation.md)
+
 - [Single item error remediation](single-item-error-remediation.md)
 
 ## Updating Advanced indexes for custodians
 
-When a custodian is added to an Advanced eDiscovery case, all partially indexed items are re-processed. However, as time passes, more partially indexed items may be added to a user's mailbox or OneDrive account.  When needed, you can update the indexes.
+When a custodian is added to an Advanced eDiscovery case, all partially indexed items are re-processed. However, as time passes, more partially indexed items may be added to a user's mailbox or OneDrive account.  When needed, you can update the indexes. For more information, see the "Re-index custodian data" section in [Manage custodians in an Advanced eDiscovery case](manage-new-custodians.md#re-index-custodian-data).
 
 > [!NOTE]
 > Updating custodian indexes is a long running process. It's recommended that you don't update indexes more than once per day in a case.

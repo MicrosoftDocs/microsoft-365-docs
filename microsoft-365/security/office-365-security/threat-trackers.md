@@ -50,7 +50,7 @@ Typically Noteworthy trackers will be posted for just a couple of weeks when we 
   
 ### Trending trackers
 
-Trending trackers (formerly called Campaigns) highlight new threats that haven't been seen in your organization's email in the past week.
+Trending trackers (formerly called Campaigns) highlight new threats received in your organization's email in the past week.
   
 ![Example of trending malware campaigns widget](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
   

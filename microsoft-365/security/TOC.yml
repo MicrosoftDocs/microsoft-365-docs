@@ -588,6 +588,10 @@
 
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
 
+            - name: Safe Documents in Office 365 ATP
+
+              href: ./office-365-security/safe-docs.md
+
             - name: Threat Explorer (and real-time detections)
 
               href: ./office-365-security/threat-explorer.md
