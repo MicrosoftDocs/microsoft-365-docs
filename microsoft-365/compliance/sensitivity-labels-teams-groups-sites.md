@@ -41,12 +41,12 @@ Before you enable this preview and configure sensitivity labels for the new sett
 
 After you enable and configure this preview, users can additionally see and apply sensitivity labels to Microsoft Teams, Office 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
 
-![A sensitivity label when creating a team site from SharePoint](media/sensitivity-label-new-team-site.png)
+![A sensitivity label when creating a team site from SharePoint](media/sensitivity-labels-new-team-site.png)
 
 
 ## Enable this preview and synchronize labels
 
-1. Because this feature uses Azure AD functionality to enable the preview, follow the instructions in the Azure AD documentation: [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell).
+1. Because this feature uses Azure AD functionality, follow the instructions in the Azure AD documentation to enable the preview: [Assign sensitivity labels to Office 365 groups in Azure Active Directory (preview)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
 2. In a PowerShell session, connect to the Security & Compliance Center by using a work or school account that has global admin privileges. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
