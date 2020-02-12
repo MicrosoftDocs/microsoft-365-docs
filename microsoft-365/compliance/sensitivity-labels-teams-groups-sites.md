@@ -50,7 +50,7 @@ After you enable and configure this preview, users can additionally see and appl
 
 2. In a PowerShell session, connect to the Security & Compliance Center by using a work or school account that has global admin privileges. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-3. Run the following commands to synchronize your labels to Azure AD, so that they can used with Office 365 groups:
+3. Run the following commands to synchronize your labels to Azure AD, so that they can be used with Office 365 groups:
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -64,7 +64,7 @@ After you enable and configure this preview, users can additionally see and appl
 
 You're now ready to create or edit sensitivity labels that you want to be available for sites and groups. Enabling the preview makes a new page visible in the sensitivity labeling wizards: **Site and group settings**
 
-If you need help creating or editing a sensitivity label, see the instructions from [Create and configure sensitivity labels](create-sensitivity-labels.md#create-and-configure-sensitivity-labels).
+If you need help with creating or editing a sensitivity label, see the instructions from [Create and configure sensitivity labels](create-sensitivity-labels.md#create-and-configure-sensitivity-labels).
 
 On this new **Site and group settings** page, configure the settings:
 
