@@ -30,15 +30,7 @@ The anti-spam settings in your organization are a balancing act between blocking
 
 ## Anti-spam technologies in EOP
 
-- **Connection filtering**: Allows or blocks messages based on the source email server. The important parts of connection filtering are:
-
-  - **IP Allow List**: Always allow messages from the IP addresses or IP address ranges you specify. Anti-spam filtering is skipped on these incoming messages.
-
-  - **IP Block List**: Always blocks email from the IP addresses or IP address ranges you specify. The incoming messages are rejected, are not marked as spam, and no additional filtering occurs.
-
-  - **Safe list**: The *safe list* is a dynamic allow list in the Microsoft datacenter that requires no customer configuration. Microsoft identifies the trusted senders on the safe list from subscriptions to various third-party lists of trusted email sources. You enable or disable the use of the safe list; you can't configure the senders on the safe list. Anti-spam filtering is skipped on these incoming messages.
-
-  For configuration instructions, see [Configure connection filtering in Office 365](configure-the-connection-filter-policy.md).
+- **Connection filtering**: Identifies good and bad email source servers early in the inbound email transmission process via the IP Allow List, IP Block List, and the *safe list* (a dynamic but non-editable list of trusted senders maintained by Microsoft). Learn more at [Configure connection filtering in Office 365](configure-the-connection-filter-policy.md).
 
   > [!NOTE]
   > Spoof intelligence uses connection filtering to create allow and block lists of senders who are spoofing your email domain. For more information, see [Learn more about spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
