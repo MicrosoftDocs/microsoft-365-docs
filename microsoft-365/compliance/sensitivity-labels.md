@@ -216,4 +216,4 @@ You can also learn about [partner solutions that are integrated with Microsoft I
 
 ## Deployment guidance
 
-If you're not sure where to start in your labeling journey, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
+Use our documentation to [get started with sensitivity labels](get-started-with-sensitivity-labels.md).
