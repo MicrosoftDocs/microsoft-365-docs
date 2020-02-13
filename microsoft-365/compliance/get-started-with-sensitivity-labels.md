@@ -20,7 +20,7 @@ description: "Ready to start implementing sensitivity labels to help protect you
 ---
 
 
-## Get started with sensitivity labels
+# Get started with sensitivity labels
 
 If you need some background information about what sensitivity labels are and how they can help you protect your organization's data, See [Learn about sensitivity labels](sensitivity-labels.md).
 
