@@ -79,7 +79,7 @@ On this new **Site and group settings** page, configure the settings:
 > [!IMPORTANT]
 > Only these site and group settings take effect when you apply a label to a team, group, or site. Other label settings, such as encryption and content marking, aren't applied to the content within the team, group, or site.
 > 
-> Similarly, if you create a label and don't turn on these site and group settings, the label will still be available when users create teams, groups, and sites, but it will classify without applying any settings.
+> Similarly, if you create a label and don't turn on these site and group settings, the label will still be available when users create teams, groups, and sites, but only the label name will be applied.
 
 If your label isn't already published, now publish it by [adding it to a label policy](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
