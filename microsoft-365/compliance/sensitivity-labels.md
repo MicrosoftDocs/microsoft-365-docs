@@ -214,18 +214,6 @@ With the [Microsoft Information Protection SDK](https://docs.microsoft.com/infor
 
 You can also learn about [partner solutions that are integrated with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
 
-## Get started with sensitivity labels
+## Deployment guidance
 
-1. **Create the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. If you don't already have an established taxonomy, consider starting with label names such as Personal, Public, General, Confidential, and Highly Confidential. You can then use sublabels to group similar labels by category. When you create a label, use the  tooltip text to help users select the appropriate label.
-
-2. **Define what each label can do.** Configure the protection settings you want associated with each label. For example, you might want lower sensitivity content (such as a “General” label) to have just a header or footer applied, while higher sensitivity content (such as a “Confidential” label) should have a watermark, encryption, and endpoint protection applied.
-
-3. **Publish the labels.** After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable — you define it once, and then you can include it in several label policies assigned to different users. So for example, you could pilot your sensitivity labels by assigning a label policy to just a few users. Then when you're ready to roll out the labels across your organization, you can create a new label policy for your labels and this time, specify all users.
-
-Basic flow for what the admin, user, and Office apps and services do to make sensitivity labels work:
-
-![Diagram showing workflow for sensitivity labels](media/Sensitivity-label-flow.png)
-
-You're now ready to [create and configure sensitivity labels and their policies](create-sensitivity-labels.md). 
-
-For more information about using sensitivity labels for Office apps, see [Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
+If you're not sure where to start in your labeling journey, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
