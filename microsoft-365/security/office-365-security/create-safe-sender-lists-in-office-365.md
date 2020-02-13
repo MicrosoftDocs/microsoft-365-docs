@@ -21,12 +21,12 @@ description: "If you want to be sure that you receive mail from a particular sen
 If you want to ensure that users receive emails from a particular sender or senders because you trust them and their messages, there are multiple methods available that you can choose from. These options include Exchange mail flow rules (also known as transport rules), Outlook Safe Senders, IP Allow Lists, Anti-spam Sender/Domain Allow Lists.
 
 > [!IMPORTANT]
-> While organization allow lists can be used to address false positives, this should be considered a temporary solution and avoided if possible. Managing false positives by using allow lists is not recommended as it can inadvertently open your organization up to spoofing, impersonation, and other attacks. If you will use an allow list for this purpose, you will need to be vigilant and keep the article for [submitting spam, non-spam, and phishing mails to Microsoft for analysis](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis), at the ready.
+> While organization allow lists can be used to address false positives, this should be considered a temporary solution and avoided if possible. Managing false positives by using allow lists is not recommended as it can inadvertently open your organization up to spoofing, impersonation, and other attacks. If you will use an allow list for this purpose, you will need to be vigilant and keep the article for [submitting spam, non-spam, and phishing mails to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md), at the ready.
 
 The recommended method to configure a safe sender list is to use mail flow rules as this presents the most flexibility to ensure that only the right messages get allowed. *Anti-Spam policy email address* and *Domain based allow lists* are not as secure as *IP address-based lists* because domains can easily be spoofed. But anti-spam policy IP based allow lists also present risks as they will allow any domains sent through that IP to bypass spam filtering. Please be careful and monitor *any* exceptions made, carefully.
 
 > [!IMPORTANT]
-> Information on how to create a **Blocked Sender List** is [here](create-block-sender-lists-in-office-365.md).
+> • Information on how to create a **Blocked Sender List** is [here](create-block-sender-lists-in-office-365.md). <br/><br/> • To allow a sender domain to send unauthenticated email (bypass anti-spoofing protection) but not bypass anti-spam and anti-malware checks, you can add it to the [AllowedToSpoof safe sender list](walkthrough-spoof-intelligence-insight.md).
 
 ## Options from most to least recommended
 
@@ -41,7 +41,7 @@ You should always restrict your Allow lists because they bypass many security me
 
 To ensure that only legitimate messages are allowed into your organization the condition should be one of the following:
 
-- Use the sender authentication status of the sending domain. This is done by checking the Authentication-Results header to ensure that it contains "dmarc=pass" or "dmarc=bestguesspass". This ensures that the sending domain has been authenticated and is not being spoofed. Click for more on [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email), and [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) email authentication.
+- Use the sender authentication status of the sending domain. This is done by checking the Authentication-Results header to ensure that it contains "dmarc=pass" or "dmarc=bestguesspass". This ensures that the sending domain has been authenticated and is not being spoofed. Click for more on [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md) email authentication.
 
 - Or, if the sending domain does not have authentication, use the sending domain *plus* a sending IP (or IP range). Ensure that you are *as restrictive as possible*, the goal being that you do this as securely as possible. An IP range larger than /24 is *not* recommended. Avoid adding IP address ranges that belong to consumer services or shared infrastructures.
 
@@ -82,7 +82,7 @@ When it's not possible to use mail flow rules to globally allow a specific sende
 
 ## Use Anti-Spam Policy Sender/Domain Allow lists
 
-The least desirable option is to authorize by sender/domain. This option should be avoided *if at all possible* as it bypasses Spam/Spoof/Phish protection completely and does not evaluate sender authentication. This method increases your risk of receiving mail from bad actors and is best recommended temporarily and only when testing. The detailed steps can be found in [Configure your spam filter policies](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) document.
+The least desirable option is to authorize by sender/domain. This option should be avoided *if at all possible* as it bypasses Spam/Spoof/Phish protection completely and does not evaluate sender authentication. This method increases your risk of receiving mail from bad actors and is best recommended temporarily and only when testing. The detailed steps can be found in [Configure your spam filter policies](configure-your-spam-filter-policies.md) topic.
 
 The maximum limit for these lists is approximately 1000 entries; although, you will only be able to enter 30 entries into the portal. You must use PowerShell to add more than 30 entries.
 
