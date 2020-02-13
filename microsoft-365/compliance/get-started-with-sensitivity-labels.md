@@ -16,9 +16,8 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Ready to start implementing sensitivity labels to help protect your organization's data, but don't know where to start? Read some practical guidance to get you on your labeling journey.
+description: "Ready to start implementing sensitivity labels to help protect your organization's data, but not sure where to start? Read some practical guidance to help get you on your labeling journey.
 ---
-
 
 # Get started with sensitivity labels
 
