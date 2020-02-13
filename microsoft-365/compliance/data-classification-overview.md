@@ -55,7 +55,7 @@ When you apply a sensitivity label to an item either through Microsoft 365 or Az
 - a tag that indicates the value of the item to your org is embedded in the document and will follow it everywhere it goes
 - the presence of the tag enables various protective behaviors, such as mandatory watermarking or encryption. With end point protection enabled you can even prevent an item from leaving your organizational control.
 
-For more information on sensitivity labels, see: [Overview of sensitivity labels](sensitivity-labels.md)
+For more information on sensitivity labels, see: [Learn about sensitivity labels](sensitivity-labels.md)
 
 Sensitivity labels must be enabled for files that are in SharePoint and OneDrive in order for the corresponding data to surface in the data classification page. For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md).
 
