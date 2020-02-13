@@ -1,5 +1,5 @@
 ---
-title: "Overview of sensitivity labels"
+title: "Learn about sensitivity labels"
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -19,9 +19,9 @@ search.appverid:
 description: "With sensitivity labels, you can classify and help protect your sensitive content, while making sure that your people’s productivity and ability to collaborate isn’t hindered. You can use sensitivity labels to apply protection settings that include encryption and watermarks on labeled content."
 ---
 
-# Overview of sensitivity labels
+# Learn about sensitivity labels
 
-To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall — it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization’s business and compliance policies.
+To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization’s business and compliance policies.
 
 With sensitivity labels, you can classify and help protect your organization's data, without hindering your people’s productivity and ability to collaborate.
 
@@ -190,7 +190,7 @@ The metadata applied by both sets of labels are compatible, so you don't need to
 
 When you use sensitivity labels in Office 365 ProPlus apps on Windows computers, you have a choice of using an Azure Information Protection client, or use labeling that's built into Office.
 
-By default, built-in labeling is turned off in these apps when the Azure Information Protection client is installed. For more information, including how to change this default behavior, see [About the Office built-in labeling client](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
+By default, built-in labeling is turned off in these apps when the Azure Information Protection client is installed. For more information, including how to change this default behavior, see [The Office built-in labeling client and the Azure Information Protection client](sensitivity-labels-office-apps.md#the-office-built-in-labeling-client-and-the-azure-information-protection-client).
 
 If you are new to Azure Information Protection, or if you are an existing Azure Information Protection customer that has just migrated your labels, see [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure Information Protection documentation.
 
