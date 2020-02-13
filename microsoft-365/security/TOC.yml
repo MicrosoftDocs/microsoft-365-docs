@@ -552,6 +552,15 @@
 
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
 
+            - name: Automated investigation and response
+                  items:
+                    - name: AIR in Office 365
+                      href: ./office-365-security/automated-investigation-response-office.md
+                    - name: Investigate and respond to threats in Office 365
+                      href: ./office-365-security/office-365-air.md
+                    - name: Handle false positives and false negatives  
+                      href: ./office-365-security/air-report-false-positives-negatives.md
+
             - name: Campaign Views
 
               href: ./office-365-security/campaigns.md
@@ -576,21 +585,9 @@
 
               href: ./office-365-security/attack-simulator.md
 
-            - name: Keep users safe with threat investigation and response
-
-              href: ./office-365-security/keep-users-safe-with-office-365-ti.md
-
-            - name: Automatically investigate and respond to threats in Office 365
-
-              href: ./office-365-security/office-365-air.md
-
             - name: Find and investigate malicious email that was delivered
 
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-
-            - name: Handle false positives and false negatives  
-
-              href: ./office-365-security/air-report-false-positives-negatives.md
 
             - name: Safe Documents in Office 365 ATP
 
