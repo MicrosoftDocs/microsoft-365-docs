@@ -90,7 +90,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Sensitivity labels in Office apps
+        - name: Use Use sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
     - name: Data loss prevention (DLP)
       href: data-loss-prevention-policies.md

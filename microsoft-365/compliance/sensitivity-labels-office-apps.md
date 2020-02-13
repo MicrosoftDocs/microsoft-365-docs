@@ -1,5 +1,5 @@
 ---
-title: "Sensitivity labels in Office apps"
+title: "Use Use sensitivity labels in Office apps"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about how users work with sensitivity labels in Office apps for the desktop, Office apps for mobile, and Office apps for the web. Find out which apps support sensitivity labels."
+description: "Learn about how users work with Use sensitivity labels in Office apps for the desktop, Office apps for mobile, and Office apps for the web. Find out which apps support sensitivity labels."
 ---
 
-# Sensitivity labels in Office apps
+# Use sensitivity labels in Office apps
 
 When you have published sensitivity labels from the Microsoft 365 compliance center or equivalent labeling center, they start to appear in Office apps for users to classify and protect data as it's created or edited.
 
-Use the information in this article to help you successfully manage sensitivity labels in Office apps. For example, the minimum versions of apps you need to support built-in labeling, interactions with the Azure Information Protection unified labeling client, and compatibility with other apps and services.
+Use the information in this article to help you successfully manage Use sensitivity labels in Office apps. For example, the minimum versions of apps you need to support built-in labeling, interactions with the Azure Information Protection unified labeling client, and compatibility with other apps and services.
 
 ## Subscription and licensing requirements for sensitivity labels
 

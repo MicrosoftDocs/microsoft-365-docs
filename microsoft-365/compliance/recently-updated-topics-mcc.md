@@ -112,13 +112,13 @@ Added new guidance to the following articles about the California Consumer Priva
 
 ### Sensitivity labels
 
-[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) (updated)<br>Removed info about upcoming support for recommended labeling in Outlook. Removed duplicate licensing information. Now points to authoritative information in [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
+[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) (updated)<br>Removed info about upcoming support for recommended labeling in Outlook. Removed duplicate licensing information. Now points to authoritative information in [Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
 
 [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md) (new)<br>Guidance for how to prepare SharePoint and OneDrive for the application of sensitivity labels to content stored in those locations.
 
 [Overview of sensitivity labels](sensitivity-labels.md) (updated)<br>Added more detail about support for Office apps on the web, Microsoft Teams, Office 365 groups, SharePoint sites, and Office files in SharePoint and OneDrive.
 
-[Sensitivity labels in Office apps](sensitivity-labels-office-apps.md) (updated)<br>Several updates including details about newly supported apps, subscription and licensing requirements, and interaction between admin-defined templates (like those in Office 365 Message Encryption and sensitivity labels).
+[Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md) (updated)<br>Several updates including details about newly supported apps, subscription and licensing requirements, and interaction between admin-defined templates (like those in Office 365 Message Encryption and sensitivity labels).
 
 [Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md) (new)<br>Details about setting up and applying sensitivity labels in Microsoft Teams, Office 365 groups, and SharePoint sites.
 

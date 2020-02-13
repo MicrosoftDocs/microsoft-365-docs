@@ -40,7 +40,7 @@ You can use sensitivity labels to:
   
 - **Enforce protection settings such as encryption or watermarks on labeled content.** For example, your users can apply a Confidential label to a document or email, and that label can encrypt the content and apply a Confidential watermark.
 
-- **Protect content in Office apps across different platforms and devices.** For a list of supported apps, see [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
+- **Protect content in Office apps across different platforms and devices.** For a list of supported apps, see [Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
 
 - **Prevent sensitive content from leaving your organization on devices running Windows** by using endpoint protection in Microsoft Intune. After a sensitivity label has been applied to content that resides on a Windows device, endpoint protection can prevent that content from being copied to a third-party app, such as Twitter or Gmail. Or being copied to removable storage, such as a USB drive.
 
@@ -228,4 +228,4 @@ Basic flow for what the admin, user, and Office apps and services do to make sen
 
 You're now ready to [create and configure sensitivity labels and their policies](create-sensitivity-labels.md). 
 
-For more information about using sensitivity labels for Office apps, see [Sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
+For more information about using sensitivity labels for Office apps, see [Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md).
