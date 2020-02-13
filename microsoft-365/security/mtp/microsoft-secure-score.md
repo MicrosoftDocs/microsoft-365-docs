@@ -205,11 +205,7 @@ New improvement actions added:
 
 One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Review improvement actions are not measured to the same standard as other improvement actions.  
 
-For these reasons, all improvement actions that required a review cadence will be temporarily removed. No action is needed on your part.
-
-### Simplification of the point system
-
-To standardize points across multiple experiences, each Secure Score improvement action point total will be updated to be worth 10 points or less. It is necessary be more consistent across the wide breather of security controls that we have today and ones that we will be adding in the future. While this is a significant change and you will see a drop in point totals, there will be no change to your security posture.  
+For these reasons, all improvement actions that required a review cadence will be temporarily removed. No action is needed on your part. 
 
 ### Preview features
 
@@ -220,6 +216,7 @@ The following features will be included in the [preview release](microsoft-secur
 * Better tracking and monitoring for score regressions
 * Filter, tag, search, and group your improvement actions
 * Manage towards your future goals using score projections and planned actions
+* Simplification of the points system
 * And more!
 
 ## We want to hear from you
