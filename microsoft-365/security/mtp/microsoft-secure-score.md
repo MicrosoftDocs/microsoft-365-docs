@@ -135,7 +135,7 @@ To make Microsoft Secure Score a better representative of your security posture 
 
 ### Removed “not scored” improvement actions
 
-One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable.  
+One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable.  
 
 For these reasons, all improvement actions that were not scored have been removed. No action is needed on your part.
 
