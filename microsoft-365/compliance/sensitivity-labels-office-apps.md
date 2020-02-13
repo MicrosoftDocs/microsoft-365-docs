@@ -1,5 +1,5 @@
 ---
-title: "Use Use sensitivity labels in Office apps"
+title: "Use sensitivity labels in Office apps"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -84,7 +84,7 @@ Additional capabilities are available when you install the Azure Information Pro
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: Rolling out to [Office Insider](https://office.com/insider)                       | Under review                    | Under review           | Under review               | Yes |
 |
 
-## The Office built-in labeling client and the Azure Information Protection client
+## Office built-in labeling client and the Azure Information Protection client
 
 The Office built-in labeling client downloads sensitivity labels and sensitivity label policy settings from the following admin centers:
 
