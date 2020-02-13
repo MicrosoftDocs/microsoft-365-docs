@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "Advanced eDiscovery jobs help you track the status of long-running processes related to performing various Advanced eDiscovery tasks.
+description: "Advanced eDiscovery jobs help you track the status of long-running processes related to performing various Advanced eDiscovery tasks."
 ---
 
 # Manage jobs in Advanced eDiscovery
