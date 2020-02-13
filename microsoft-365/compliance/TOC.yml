@@ -75,6 +75,7 @@
   href: protect-information.md
   items: 
     - name: Sensitivity labels
+      items:
         - name: Learn about sensitivity labels
           href: sensitivity-labels.md
         - name: Create and publish sensitivity labels
