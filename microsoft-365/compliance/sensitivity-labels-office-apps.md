@@ -21,7 +21,7 @@ description: "Learn about how users work with sensitivity labels in Office apps 
 
 When you have published sensitivity labels from the Microsoft 365 compliance center or equivalent labeling center, they start to appear in Office apps for users to classify and protect data as it's created or edited.
 
-Use the information in this article to help you successfully manage sensitivity labels in Office apps, which includes the minimum versions of apps you need for built-in labeling, and interactions with the Azure Information Protection unified labeling client.
+Use the information in this article to help you successfully manage sensitivity labels in Office apps. For example, the minimum versions of apps you need to support built-in labeling, interactions with the Azure Information Protection unified labeling client, and compatibility with other apps and services.
 
 ## Subscription and licensing requirements for sensitivity labels
 
