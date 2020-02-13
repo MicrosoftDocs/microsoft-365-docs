@@ -74,7 +74,7 @@
                 - name: Approve or reject pending actions
                   href: mtp/mtp-autoir-actions.md
                 - name: Report false positives/negatives
-                  href: mtp/mtp-autoir-report-false-positives-negatives.md  
+                  href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Advanced hunting
               items: 
                 - name: Hunting in Microsoft 365
@@ -183,16 +183,24 @@
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
 
         - name: Protect against threats
-
           href: ./office-365-security/protect-against-threats.md
-
           items: 
-
             - name: Anti-spam and anti-malware protection
-
               href: ./office-365-security/anti-spam-and-anti-malware-protection.md
-
               items: 
+                - name: Anti-malware protection
+                  href: ./office-365-security/anti-malware-protection.md
+                  items:
+                    - name: Anti-malware protection FAQ
+                      href: ./office-365-security/anti-malware-protection-faq-eop.md
+                    - name: Configure anti-malware policies
+                      href: ./office-365-security/configure-anti-malware-policies.md
+                    - name: Submitting malware and non-malware to Microsoft for analysis
+                      href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+                    - name: Recover from a ransomware attack
+                      href: ./office-365-security/recover-from-ransomware.md
+                    - name: Virus detection in SharePoint Online
+                      href: ./office-365-security/virus-detection-in-spo.md
 
                 - name: Advanced spam filtering options
 
@@ -201,14 +209,6 @@
                 - name: High-risk delivery pool for outbound messages
 
                   href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
-
-                - name: Anti-malware protection FAQ
-
-                  href: ./office-365-security/anti-malware-protection-faq-eop.md
-
-                - name: Anti-malware protection
-
-                  href: ./office-365-security/anti-malware-protection.md
 
                 - name: Anti-spam protection FAQ
 
@@ -237,10 +237,6 @@
                 - name: Fighting junk email sent to Office 365
 
                   href: ./office-365-security/fighting-junk-email.md
-
-                - name: Virus detection in SharePoint Online
-
-                  href: ./office-365-security/virus-detection-in-spo.md
 
                 - name: Office 365 email anti-spam protection
 
@@ -277,10 +273,6 @@
                 - name: Manage safe sender lists for bulk mailers
 
                   href: ./office-365-security/manage-safe-sender-lists-for-bulk-mailers.md
-
-                - name: Configure anti-malware policies
-
-                  href: ./office-365-security/configure-anti-malware-policies.md
 
                 - name: Configure the anti-spam policies
 
@@ -329,10 +321,6 @@
                 - name: Admin submissions in Office 365
 
                   href: ./office-365-security/admin-submission.md
-
-                - name: Submitting malware and non-malware to Microsoft for analysis
-
-                  href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
 
                 - name: Use the delist portal to remove yourself from the Office 365 blocked senders list
 
@@ -600,6 +588,10 @@
 
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
 
+            - name: Safe Documents in Office 365 ATP
+
+              href: ./office-365-security/safe-docs.md
+
             - name: Threat Explorer (and real-time detections)
 
               href: ./office-365-security/threat-explorer.md
@@ -681,7 +673,7 @@
             - name: Message trace in the Security & Compliance Center
 
               href: ./office-365-security/message-trace-scc.md
-              
+
             - name: View email security reports in the Security & Compliance Center
 
               href: ./office-365-security/view-email-security-reports.md
@@ -781,7 +773,7 @@
               href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
 
               items: 
-          
+
             - name: SIEM server integration
 
               href: ./office-365-security/siem-server-integration.md
