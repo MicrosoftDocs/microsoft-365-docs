@@ -36,7 +36,9 @@ Basic flow for what the admin, user, and Office apps and services do to make sen
 
 ![Diagram showing workflow for sensitivity labels](../media/Sensitivity-label-flow.png)
 
-Use the following documentation to help get your labeling deployment off the ground.
+
+
+Use the following documentation to help get your labeling deployment off the ground:
 
 |I want to ...|Instructions|
 |----------------|---------------|
