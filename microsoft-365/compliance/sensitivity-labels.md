@@ -87,7 +87,7 @@ After a sensitivity label is applied to an email or document, any configured pro
     
     ![Watermark and header applied to document](media/Sensitivity-label-watermark-header.png)
     
-    Need to check when content markings are applied? See [When Office 365 applies content marking and encryption to content](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content).
+    Need to check when content markings are applied? See [When Office 365 applies content marking and encryption to content](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption).
     
     String lengths: Watermarks are limited to 255 characters. Headers and footers are limited to 1024 characters, except in Excel. Excel has a total limit of 255 characters for headers and footers but this limit includes characters that aren't visible, such as formatting codes. If that limit is reached, the string you enter is not displayed in Excel.
 
