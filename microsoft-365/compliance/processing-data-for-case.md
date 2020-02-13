@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "Processing in Advanced eDiscovery includes "
+description: "Processing in Advanced eDiscovery includes re-indexing of custodian data, the expansion of embedded documents and attachments, and OCR. Processing also includes remediation of indexing errors."
 ---
 
 # Work with processing errors in Advanced eDiscovery
