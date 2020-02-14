@@ -39,14 +39,14 @@ The basic flow for what the admin, user, and Office apps and services do to make
 
 ![Diagram showing workflow for sensitivity labels](../media/Sensitivity-label-flow.png)
 
-## Scenarios for sensitivity labels
+## Common scenarios for sensitivity labels
 
 Use the following documentation to support your sensitivity labeling deployment:
 
 |I want to ...|Documentation|
 |----------------|---------------|
-|Create and publish sensitivity labels to protect my organization's data|[Create and configure sensitivity labels and their policies](create-sensitivity-labels.md)|
-|Encrypt documents and emails with sensitivity labels and restrict how that content can be used|[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
+|Create and publish sensitivity labels that will help protect my organization's data|[Create and configure sensitivity labels and their policies](create-sensitivity-labels.md)|
+|Encrypt documents and emails with sensitivity labels and restrict who can access it and how they can use that content |[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
 |Enable collaboration capabilities in SharePoint (and OneDrive) for documents that are labeled with encryption | [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md)
 |Manage sensitivity labels for Office apps so that content is labeled as it's created |[Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md)|
 |Automatically apply sensitivity labels or recommend labels to users when content is created | [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)|
