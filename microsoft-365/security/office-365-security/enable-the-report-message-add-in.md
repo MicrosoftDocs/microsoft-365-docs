@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
