@@ -56,9 +56,9 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
     ![The Audit log search page](../media/AuditLogRetentionPolicy1.png)
 
-3. Click **New retention policy**, and then complete the following fields on the flyout page:
+3. Click **New audit retention policy**, and then complete the following fields on the flyout page:
 
-    ![Audit log retention policy flyout page](../media/AuditLogRetentionPolicy2.png)
+    ![Audit retention policy flyout page](../media/AuditLogRetentionPolicy2.png)
 
    a. **Name:** The name of the audit log retention policy. This name must be unique in your organization.
    
