@@ -13,7 +13,7 @@ This view provides usage metrics for your Microsoft Managed Desktop devices. For
 
 To view usage data, select the **Usage** tab.
 
-![Usage pane. Device usage graph (percentage usage versus time) in upper left. Application usage table in upper right. Device listing table across the bottom with columns device name, model, serial number, display name, user name, current state (active, low, or inactive), total device usage in hours, and number of active days.](images/insights_usage.png)
+![Usage pane. Device usage graph (percentage usage versus time) in upper left. Application usage table in upper right. Device listing table across the bottom with columns device name, model, serial number, display name, user name, current state (active, low, or inactive), total device usage in hours, and number of active days.](../../media/insights_usage.png)
 
 ## Device usage
 

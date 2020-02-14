@@ -57,7 +57,7 @@ Keep the following things in mind about records:
 
     If a user attempts to delete a record in a SharePoint, an error is displayed say that the item wasn't deleted, and remains in the library.
 
-    ![Message that item wasn't deleted from SharePoint](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
+    ![Message that item wasn't deleted from SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
     If a user attempts to delete a record in OneDrive, the item is moved to the Preservation Hold library as described in [How a retention policy works with content in place](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites).
 
@@ -71,7 +71,7 @@ When you create a retention label, you have the option to use the retention labe
 
 2. On the **Label settings** page in the wizard, choose the option to set the retention label to declare content as a record.<br/>
 
-   ![Click Use label to classify content as a Record checkbox](media/recordversioning6.png)
+   ![Click Use label to classify content as a Record checkbox](../media/recordversioning6.png)
 
 3. [Publish](labels.md#how-retention-labels-work-with-retention-label-policies) or [auto-apply](labels.md#applying-a-retention-label-automatically-based-on-conditions) the retention label to SharePoint sites and/or OneDrive accounts.
 
@@ -86,7 +86,7 @@ For Exchange, any user with write-access to the mailbox can apply a record label
 Here's what this looks like when a record label is applied to a document on a SharePoint site or OneDrive account.
 <br/><br/>
 
-![Details pane for document tagged as a record](media/recordversioning7.png)
+![Details pane for document tagged as a record](../media/recordversioning7.png)
 
 ## Record versioning
 
@@ -103,7 +103,7 @@ To use record versioning, the first step is to use the Microsoft 365 compliance 
 Record versioning is automatically available for any document that has a retention label that declares the item as a record. When a user views the document properties through the details pane, they toggle the **Record status** from **Locked** to **Unlocked**. This single click creates a record in the Records folder in the Preservation Hold library, where it resides for the remainder of its retention period. While the document is unlocked, any user with permissions can edit the file. However, users can't delete the file, because it's considered a declared record. After the necessary changes are made, the user can then toggle the **Record status** from **Unlocked** to **Locked**, so that the document is again declared a record and can't be edited.
 <br/><br/>
 
-![Record status property on document tagged as a record](media/recordversioning8.png)
+![Record status property on document tagged as a record](../media/recordversioning8.png)
 
 > [!NOTE]
 > Record versioning requires an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been declared a record in a SharePoint site or OneDrive account. Users who have read-only access don't require this license.
@@ -113,7 +113,7 @@ Record versioning is automatically available for any document that has a retenti
 After a record label is assigned to a document, any user in the default Members group (the Contribute permission level) can unlock a record or lock an unlocked record.
 <br/><br/>
 
-![Record status shows record document is unlocked](media/recordversioning9.png)
+![Record status shows record document is unlocked](../media/recordversioning9.png)
 
 When a user unlocks a record, the following actions occur:
 
@@ -134,7 +134,7 @@ When a user locks a record, the original document again can't be edited. But it 
 Each time a user unlocks a record, the latest version is copied to the Records folder in the Preservation Hold library, and that version contains the value of **Record** in the **Comments** field of the version history.
 <br/><br/>
 
-![Record shown in the Preservation Hold library](media/recordversioning10.png)
+![Record shown in the Preservation Hold library](../media/recordversioning10.png)
 
 To view the version history, select a document in the document library and then click **Version history** in the item menu.
 
@@ -143,11 +143,11 @@ To view the version history, select a document in the document library and then 
 Records are stored in the Records folder in the Preservation Hold library in the top-level site in the site collection. In the left nav on the top-level site, choose **Site contents** \> **Preservation Hold Library**.
 <br/><br/>
 
-![Preservation Hold library](media/recordversioning11.png)
+![Preservation Hold library](../media/recordversioning11.png)
 
 <br/><br/>
 
-![The Records folder in the Preservation Hold library](media/recordversioning12.png)
+![The Records folder in the Preservation Hold library](../media/recordversioning12.png)
 
 The Preservation Hold library is visible only to site collection admins. Also, the Preservation Hold library doesn't exist by default. It's created only when content subject to a retention label or retention policy is deleted for the first time in the site collection.
 
@@ -156,6 +156,6 @@ The Preservation Hold library is visible only to site collection admins. Also, t
 The actions of locking and unlocking records are logged in the Office 365 audit log. You can search for the specific activities **Changed record status to locked** and **Changed record status to unlocked**, which are located in the **File and page activities** section in the **Activities** dropdown list on the **Audit log search** page in the security and compliance center.
 <br/><br/>
 
-![Search the audit log for record versioning events](media/recordversioning13.png)
+![Search the audit log for record versioning events](../media/recordversioning13.png)
 
 For more information about searching for these events, see the "File and page activities" section in [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).

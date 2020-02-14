@@ -56,14 +56,14 @@ Right-click a value in the result set to quickly enhance your query. You can use
 - Exclude the selected value from the query (`!=`)
 - Get more advanced operators for adding the value to your query, such as `contains`, `starts with` and `ends with` 
 
-![Image of Microsoft Defender ATP advanced hunting result set](../images/advanced-hunting-results-filter.png)
+![Image of Microsoft Defender ATP advanced hunting result set](../../media/advanced-hunting-results-filter.png)
 
 ## Filter the query results
 The filters displayed to the right provide a summary of the result set. Each column has its own section that lists the distinct values found for that column and the number of instances.
 
 Refine your query by selecting the "+" or "-" buttons on the values that you want to include or exclude and then selecting **Run query**.
 
-![Image of advanced hunting filter](../images/advanced-hunting-filter.png)
+![Image of advanced hunting filter](../../media/advanced-hunting-filter.png)
 
 Once you apply the filter to modify the query and then run the query, the results are updated accordingly.
 

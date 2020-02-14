@@ -36,7 +36,7 @@ The wait is over. We’re pleased to announce that the Microsoft 365 compliance 
 
 Bookmark and head over now to [https://compliance.microsoft.com](https://compliance.microsoft.com) to tour your one-stop-shop for managing compliance across your org...or [read this article](microsoft-365-compliance-center.md) to dig in a bit more.
 
-![Microsoft 365 compliance center home page](media/mcc-home-ga.png)
+![Microsoft 365 compliance center home page](../media/mcc-home-ga.png)
 
 We also released new and updated solutions this month. Here’s a quick glance at the highlights.
 
@@ -64,7 +64,7 @@ Customer feedback during the preview was fantastic. It resulted in several enhan
 
 [Learn more about communication compliance](communication-compliance.md)
 
-![Communication compliance page in Microsoft 365 compliance center showing first card of the welcome experience](media/mcc-communication-compliance-page-with-fre.png)
+![Communication compliance page in Microsoft 365 compliance center showing first card of the welcome experience](../media/mcc-communication-compliance-page-with-fre.png)
 
 **Data connectors**
 
@@ -72,7 +72,7 @@ Formerly sharing space with other ‘Import’ features in the Office 365 Securi
 
 [Learn more about data connectors](archiving-third-party-data.md)
 
-![Data connectors page in the Microsoft 365 compliance center](media/mcc-data-connectors-page.png)
+![Data connectors page in the Microsoft 365 compliance center](../media/mcc-data-connectors-page.png)
 
 ### Noteworthy updates
 
@@ -91,7 +91,7 @@ Always working hard to help you get ahead of the ever-evolving compliance landsc
 
 Over the holidays, we started rolling out all the great compliance solutions that were demo’d at Ignite. Most are in a preview state, so test them out and be sure to let us know what you think by opening the Feedback card at the bottom right of the compliance center.
 
-![feedback](media/Feedback_card_MCC.JPG)
+![feedback](../media/Feedback_card_MCC.JPG)
 
 ### Get to know the new neighborhood
 
@@ -179,4 +179,4 @@ We released two new admin roles to help manage security and compliance in your o
 
 No more scrolling through a sea of reports to find the ones you want. You can now search for reports (based on their titles) and filter on categories like ‘Labels’ and ‘Compliance’ and sources like ‘Office 365’ and 'Microsoft Cloud App Security’.
 
-![Screen capture of the search and filter buttons for reports with an applied filter](media/mcc_report_filtering.png)
+![Screen capture of the search and filter buttons for reports with an applied filter](../media/mcc_report_filtering.png)

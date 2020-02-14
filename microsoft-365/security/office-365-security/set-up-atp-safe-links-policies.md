@@ -66,7 +66,7 @@ When you have [Office 365 Advanced Threat Protection](office-365-atp.md), you wi
     
 2. In the left navigation, under **Threat management**, choose **Policy \>** **Safe Links**.
     
-3. In the **Policies that apply to the entire organization** section, select **Default**, and then choose **Edit** (the Edit button resembles a pencil).<br/>![Click Edit to edit your default policy for Safe Links protection](../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
+3. In the **Policies that apply to the entire organization** section, select **Default**, and then choose **Edit** (the Edit button resembles a pencil).<br/>![Click Edit to edit your default policy for Safe Links protection](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
 4. In the **Block the following URLs** section, specify one or more URLs that you want to prevent people in your organization from visiting. (See [Set up a custom blocked URLs list using ATP Safe Links](set-up-a-custom-blocked-urls-list-wtih-atp.md).)
     
@@ -84,7 +84,7 @@ After you have reviewed (or edited) the default ATP Safe Links policy that appli
     
 3. Choose **Safe Links**.
     
-4. In the **Policies that apply to specific recipients** section, choose **New** (the New button resembles a plus sign ( **+**)).<br/>![Choose New to add a Safe Links policy for specific email recipients](../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+4. In the **Policies that apply to specific recipients** section, choose **New** (the New button resembles a plus sign ( **+**)).<br/>![Choose New to add a Safe Links policy for specific email recipients](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
 5. Specify the name, description, and settings for your policy.<br/>**Example:** To set up a policy called "no direct click through" that does not allow people in a certain group in your organization to click through to a specific website without ATP Safe Links protection, you might specify the following recommended settings: 
     
