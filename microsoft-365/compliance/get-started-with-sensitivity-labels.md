@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Ready to start implementing sensitivity labels to help protect your organization's data, but not sure where to start? Read some practical guidance to help get you on your labeling journey.
+description: "Ready to start implementing sensitivity labels to help protect your organization's data, but not sure where to start? Read some practical guidance to help get you on your labeling journey."
 ---
 
 # Get started with sensitivity labels
@@ -48,3 +48,4 @@ Use the following documentation to help get your labeling deployment off the gro
 |Use sensitivity labels in Office apps|[Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md)|
 |Use sensitivity labels to protect content in SharePoint sites|[Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)|
 |Visualize how sensitivity labels are being used|[View label usage with label analytics](label-analytics.md)|
+
