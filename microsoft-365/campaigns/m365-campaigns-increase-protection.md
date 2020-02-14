@@ -155,7 +155,7 @@ For more information, see [Set up Office 365 ATP anti-phishing policies](https:/
   
 ## Protect against malicious attachments, files, and links with Advanced Threat Protection (ATP)
 
-![Banner that point to https://aka.ms/aboutM365preview.](../business/media/m365admincenterchanging.png)
+![Banner that point to https://aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)
 
 First, make sure, in the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> that you have the new admin center preview turned on. Turn on the toggle next to the text **The new admin center**.
 
