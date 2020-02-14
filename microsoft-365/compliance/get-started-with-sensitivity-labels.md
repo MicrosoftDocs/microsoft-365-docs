@@ -53,3 +53,17 @@ Use the following documentation to support your labeling deployment:
 |Use sensitivity labels to protect content in Teams and  SharePoint |[Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)|
 |Visualize how sensitivity labels are being used to report status and fine-tune label configuration|[View label usage with label analytics](label-analytics.md)|
 
+If you are using sensitivity labels with the Azure Information Protection unified labeling client, see the [Azure Information Protection documentation](https://docs.microsoft.com/azure/information-protection) for additional deployment instructions.
+
+
+### End-user documentation
+
+- [Apply sensitivity labels to your files and email in Office](https://support.office.com/article/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+
+- [Known issues with sensitivity labels in Office](https://support.office.com/en-us/article/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+
+- [Automatically apply or recommend sensitivity labels to your files and emails in Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
+
+- [Known issues with automatically applying or recommending sensitivity labels](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
+
+
