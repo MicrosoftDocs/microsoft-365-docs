@@ -192,13 +192,13 @@ When you use sensitivity labels in Office 365 ProPlus apps on Windows computers,
 
 By default, built-in labeling is turned off in these apps when the Azure Information Protection client is installed. For more information, including how to change this default behavior, see [Office built-in labeling client and the Azure Information Protection client](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
 
-Even if you use built-in labeling in Office apps, you can use the Azure Information Protection unified labeling client with sensitivity labels for the following:
+Even when you use built-in labeling in Office apps, you can also use the Azure Information Protection unified labeling client with sensitivity labels for the following:
 
-- A scanner to discover and label sensitive information that's stored on-premises
+- A scanner to discover sensitive information that's stored on-premises, and then optionally, label that content
 
 - Right-click options in File Explorer for users to apply labels to all file types
 
-- A viewer to display encrypted text, images, and PDF documents
+- A viewer to display text, images, and PDF documents that are encrypted
 
 - A PowerShell module to discover sensitive information in files on premises, and apply or remove labels and encryption from these files.
 
