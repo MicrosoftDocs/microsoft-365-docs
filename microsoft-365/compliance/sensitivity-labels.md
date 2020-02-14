@@ -192,11 +192,21 @@ When you use sensitivity labels in Office 365 ProPlus apps on Windows computers,
 
 By default, built-in labeling is turned off in these apps when the Azure Information Protection client is installed. For more information, including how to change this default behavior, see [Office built-in labeling client and the Azure Information Protection client](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
 
+Even when you use built-in labeling in Office apps, you can also use the Azure Information Protection unified labeling client with sensitivity labels for the following:
+
+- A scanner to discover sensitive information that's stored on-premises, and then optionally, label that content
+
+- Right-click options in File Explorer for users to apply labels to all file types
+
+- A viewer to display encrypted files for text, images, or PDF documents
+
+- A PowerShell module to discover sensitive information in files on premises, and apply or remove labels and encryption from these files.
+
 If you are new to Azure Information Protection, or if you are an existing Azure Information Protection customer that has just migrated your labels, see [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure Information Protection documentation.
 
 ## Sensitivity labels and Microsoft Cloud App Security
 
-By using Cloud App Security (CAS), you can detect, classify, label, and protect content in third-party services and apps, such as SalesForce, Box, or Dropbox. 
+By using Cloud App Security (CAS), you can discover, classify, label, and protect content in third-party services and apps, such as SalesForce, Box, or Dropbox. 
 
 Cloud App Security works with both Azure Information Protection labels and sensitivity labels:
 
@@ -208,13 +218,11 @@ For instructions to use Cloud App Security with these labels, see [Azure Informa
 
 ## Sensitivity labels and the Microsoft Information Protection SDK
 
-Because a sensitivity label is persisted as clear text in the metadata of a document, third-party apps and services can choose to support identifying and protecting content that contains such a label. Support in other apps and services is always expanding.
-
-With the [Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk), third-party apps and services can read and apply sensitivity labels and protection to documents across many platforms. To learn more, see the [announcement on the Tech Community blog](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
+Because a sensitivity label is stored as clear text in the metadata of a document, third-party apps and services can read from and write to this labeling metadata to supplement your labeling deployment. Additionally, software developers can use the [Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk) to fully support labeling and encryption capabilities across multiple platforms. To learn more, see the [General Availability announcement on the Tech Community blog](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
 
 You can also learn about [partner solutions that are integrated with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
 
 ## Deployment guidance
 
-Use our documentation to [get started with sensitivity labels](get-started-with-sensitivity-labels.md).
+See [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
 
