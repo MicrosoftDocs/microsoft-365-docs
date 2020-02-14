@@ -1,4 +1,4 @@
-﻿---
+---
 title: Overview of the Microsoft 365 security center
 description: Describes the new home for monitoring and managing security across your Microsoft identities, data, devices, and apps.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps

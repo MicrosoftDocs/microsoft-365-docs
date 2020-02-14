@@ -123,7 +123,7 @@ To delete items from their original locations:
  
 2. Click **Action** and then click **Delete items from original locations**.
 
-   ![Click Action and then click Delete items from original locations](media/DataInvestigationsDeleteItems1.png)
+   ![Click Action and then click Delete items from original locations](../media/DataInvestigationsDeleteItems1.png)
 
 3. On the flyout page, verify the number of items and related child documents that will be deleted, and then click **Delete**.
 

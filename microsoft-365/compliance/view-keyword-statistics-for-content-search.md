@@ -32,9 +32,9 @@ To display statistics for Content Searches:
   
 1. In the Security & Compliance Center, go to **Search** \> **Content search**.
     
-2. In the list of searches, select one or more searches, and then click **Search statistics**![Search Statistics button](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png).
+2. In the list of searches, select one or more searches, and then click **Search statistics**![Search Statistics button](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png).
     
-    ![Select multiple searches and then click Search statistics](media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
+    ![Select multiple searches and then click Search statistics](../media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
   
 3. On the **Search statistics** page, click one of the following links to display statistics about the selected searches. 
     
@@ -42,7 +42,7 @@ To display statistics for Content Searches:
     
     This page displays statistics similar to the ones displayed in the details pane on the **Content search** page. Statistics for all selected searches are displayed. Note that you can also re-run the selected searches from this page to update the statistics. 
     
-    ![Summary of the statistics for the selected searches](media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
+    ![Summary of the statistics for the selected searches](../media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
   
     a.  The name of the Content Search. As previously stated, you can display and compare statistics for multiple searches.
     
@@ -58,7 +58,7 @@ To display statistics for Content Searches:
     
     This page displays statistics about the search query.
     
-    ![Search query statistics for the selected searches](media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
+    ![Search query statistics for the selected searches](../media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
   
     a. The name of the Content Search that the row contains query statistics for.
     
@@ -87,7 +87,7 @@ To display statistics for Content Searches:
     
     This page displays statistics about the number of items that match the search query in each content location that was searched. The top 1,000 locations are displayed. If you view statistics for multiple searches, the top 1,000 locations for each search are displayed. Note that a content location isn't included on this page if it doesn't contain any items that match the search query.
     
-    ![Statistics about the number of items found in the content locations that were searched](media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
+    ![Statistics about the number of items found in the content locations that were searched](../media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   
     a. The name of the content location.
     
@@ -104,11 +104,11 @@ To create a keyword list and view keyword statistics for a Content Search:
   
 1. In the Security & Compliance Center, go to **Search** \> **Content search**.
     
-2. In the list of Content Searches, click and a search, and then click **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+2. In the list of Content Searches, click and a search, and then click **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
     
 3. Click **Query** and then do the following things: 
     
-    ![Click the Show keyword list checkbox and type a keyword in each row](media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
+    ![Click the Show keyword list checkbox and type a keyword in each row](../media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
   
     a. Click the **Show keyword list** check box. 
     
@@ -116,11 +116,11 @@ To create a keyword list and view keyword statistics for a Content Search:
     
 4. After adding the keywords that you want to search and get statistics for, click **Search** to run the revised search. 
     
-5. When the search is completed, select it in the list of searches, and then click **Search statistics** ![Search Statistics button](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png). You can also display and compare keyword statistics for multiple searches.
+5. When the search is completed, select it in the list of searches, and then click **Search statistics** ![Search Statistics button](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png). You can also display and compare keyword statistics for multiple searches.
     
 6. On the **Search statistics** page, click **Query** to display the keyword statistics for the selected searches. 
     
-    ![The statistics for each keyword for the selected searches are displayed](media/e7910fa9-af93-4df9-92d0-e1e3e089e14f.png)
+    ![The statistics for each keyword for the selected searches are displayed](../media/e7910fa9-af93-4df9-92d0-e1e3e089e14f.png)
   
     As shown in the previous screenshot, the statistics for each keyword are displayed; this includes: 
     

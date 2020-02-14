@@ -19,7 +19,7 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 # Phase 1: Networking infrastructure exit criteria
 
-![Phase 1-Networking](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1-Networking](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Make sure your networking infrastructure meets the following required criteria and that you've considered those that are optional.
 
@@ -80,4 +80,4 @@ Your intranet users are now ready to consume Microsoft 365 cloud services over a
 
 |||
 |:-------|:-----|
-|![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [identity](identity-infrastructure.md). |
+|![Phase 2-Identity](../media/deploy-foundation-infrastructure/identity_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [identity](identity-infrastructure.md). |

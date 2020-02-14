@@ -58,7 +58,7 @@ When you [create or edit a sensitivity label](create-sensitivity-labels.md#creat
 
 Configuring the encryption options:
 
-![Sensitivity label options for encryption](media/encrytion-options-sensitivity-label.png)
+![Sensitivity label options for encryption](../media/encrytion-options-sensitivity-label.png)
 
 
 ### What happens to existing encryption when a label's applied
@@ -106,7 +106,7 @@ Alternatively, if you have a sensitivity label named **Business Contracts**, and
 
 Choosing whether to assign permissions now or let users assign permissions: 
 
-![Option to add user or admin defined permissions](media/sensitivity-label-user-or-admin-defined-permissions.png)
+![Option to add user or admin defined permissions](../media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 
 ## Assign permissions now
@@ -119,7 +119,7 @@ Use the following options to control who can access email or documents to which 
 
 Settings for access control for encrypted content:
 
-![Settings for admin defined permissions](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+![Settings for admin defined permissions](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### Rights Management use license for offline access
 
@@ -141,7 +141,7 @@ You can grant permissions to specific people so that only they can interact with
 
 Assigning permissions:
 
-![Options to assign permissions to users](media/Sensitivity-Assign-permissions-settings.png)
+![Options to assign permissions to users](../media/Sensitivity-Assign-permissions-settings.png)
 
 #### Add users or groups
 
@@ -174,13 +174,13 @@ When you choose which permissions to allow for those users or groups, you can se
 
 For more information on each specific permission, see [Usage rights and descriptions](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
-![Options to choose preset or custom permissions](media/Sensitivity-Choose-permissions-settings.png)
+![Options to choose preset or custom permissions](../media/Sensitivity-Choose-permissions-settings.png)
 
 Note that the same label can grant different permissions to different users. For example, a single label can assign some users as Reviewer and a different user as Co-author, as shown in the following screenshot.
 
 To do this, add users or groups, assign them permissions, and save those settings. Then repeat these steps, adding users and assigning them permissions, saving the settings each time. You can repeat this configuration as often as necessary, to define different permissions for different users.
 
-![Different users with different permissions](media/Sensitivity-Multiple-users-permissions.png)
+![Different users with different permissions](../media/Sensitivity-Multiple-users-permissions.png)
 
 #### Rights Management issuer (user applying the sensitivity label) always has Full Control
 
@@ -219,13 +219,13 @@ A sensitivity label that lets users assign permissions can be applied to content
 
 Configuring the user-assigned permissions:
 
-![Encryption settings for user-defined permissions](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![Encryption settings for user-defined permissions](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### Outlook restrictions
 
 In Outlook, when a user applies a sensitivity label that lets them assign permissions to a message, the restrictions are the same as the Do Not Forward option. The user will see the label name and description at the top of the message, which indicates the content's being protected. Unlike Word, PowerPoint, and Excel (see the [next section](#word-powerpoint-and-excel-permissions)), users aren't prompted to select specific permissions.
 
-![Sensitivity label applied to message in Outlook](media/sensitivity-label-outlook-protection-applied.png)
+![Sensitivity label applied to message in Outlook](../media/sensitivity-label-outlook-protection-applied.png)
 
 When the Do Not Forward option is applied to an email, the email is encrypted and recipients must be authenticated. Then, the recipients cannot forward it, print it, or copy from it. For example, in the Outlook client, the Forward button is not available, the Save As and Print menu options are not available, and you cannot add or change recipients in the To, Cc, or Bcc boxes.
 
@@ -241,7 +241,7 @@ For example, with the Azure Information Protection unified labeling client, user
 - Select users, groups, or organizations. This can include people both inside or outside your organizations.
 - Set an expiration date, after which the selected users cannot access the content. For more information, see the above section [Rights Management use license for offline access](#rights-management-use-license-for-offline-access).
 
-![Options for user to protect with custom permissions](media/sensitivity-aip-custom-permissions-dialog.png)
+![Options for user to protect with custom permissions](../media/sensitivity-aip-custom-permissions-dialog.png)
 
 For built-in labeling, users see the same dialog box if they select the following:
 

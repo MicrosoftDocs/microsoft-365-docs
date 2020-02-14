@@ -26,7 +26,7 @@ description: "View device policies and actions by signing in to Microsoft 365 bu
 
 # View and manage policies and devices
 
-[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## View and edit device policies
 
@@ -35,7 +35,7 @@ description: "View device policies and actions by signing in to Microsoft 365 bu
 
     On this page, you can create, edit, change target group, or delete a policy.
 
-    ![Screenshot of the Policies page](media/devicepolicies.png)
+    ![Screenshot of the Policies page](../media/devicepolicies.png)
   
 ## View and manage devices
 
@@ -43,5 +43,5 @@ description: "View device policies and actions by signing in to Microsoft 365 bu
     
     On this page, you can select one or more devices and remove company data. For Windows 10 devices that you have set device protections settings for, you can also choose to reset the device to factory settings.
   
-   ![Manage devices page](media/devicesmanage.png)
+   ![Manage devices page](../media/devicesmanage.png)
 

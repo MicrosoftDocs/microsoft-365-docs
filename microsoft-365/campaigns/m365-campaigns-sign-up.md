@@ -76,7 +76,7 @@ If you already have and existing subscription to Office 365 for business, for ex
 1. In your invitation to Microsoft 365 for Campaigns email, select **ENROLL YOUR ORGANIZATION >**. This takes you to Microsoft 365 sign-up.
 2. On the **Welcome, let's get to know you** page, click or tap **Want to add this to an existing subscription? Sign in**.
     
-    ![Choose Sign in on the upper right corner.](media/addtoexisting.png)
+    ![Choose Sign in on the upper right corner.](../media/addtoexisting.png)
 3. On the sign in page, enter the admin alias for your existing subscription, for example *Alice@VoteContoso<span></span>.org*, choose **Next**, enter your password, and then choose **Sign in**.
 4. On the **How does this look?** enter the number of users you have and choose **Next**. You don't have to enter a promo code here because it is already included in the invitation URL.
 5. On the **How do you want to pay?** page, enter your payment method and choose **Place order**.

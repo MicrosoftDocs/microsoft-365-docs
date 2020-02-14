@@ -59,7 +59,7 @@ Your organization may assign different policies to different site collections. A
     
 This list is view only, for the site collection owner to see all of the available policies and rules. To apply a policy, see the next section.
   
-![View of document deletion policies assigned to a site collection](media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
+![View of document deletion policies assigned to a site collection](../media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
   
 ## Apply or remove a document deletion policy for a site
 
@@ -78,13 +78,13 @@ As a site owner or site collection owner, your organization may have created pol
     
     Only one policy and one rule can be active in a site at one time. Your organization may provide several policies and rules to choose from, or only one policy or rule.
     
-    ![Select Policy option](media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
+    ![Select Policy option](../media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
   
   - **To opt out of a policy** Choose **Opt-Out: Do Note Delete** \> **Save**.
     
     As a site owner, you can opt out of a document deletion policy if you determine that the policy isn't applicable to the content in your site. However, you can't opt out of a policy that has been marked as **Mandatory**.
     
-    ![Opt Out option](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
+    ![Opt Out option](../media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
   
 ## Document deletion policies override other policies
 
@@ -108,7 +108,7 @@ If your site was using content type policies and you now see this message, those
     
 2. Under **Site Administration** \> **Content Type Policy Templates**.
     
-    ![Warning on site that Document Deletion Policies are being used](media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
+    ![Warning on site that Document Deletion Policies are being used](../media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
   
 ### Determine if information management policies are being ignored
 
@@ -116,7 +116,7 @@ If your site was using information management policies and you now see this mess
   
 - For a list or library, on the Ribbon \> **Library** tab \> **Library Settings** \> under **Permissions and Management** \> **Information Management Policy Settings**.
     
-    ![Warning on site that Document Deletion Policies are being used](media/3f043057-a741-4cd8-a165-6d139b986064.png)
+    ![Warning on site that Document Deletion Policies are being used](../media/3f043057-a741-4cd8-a165-6d139b986064.png)
   
 ## See also
 

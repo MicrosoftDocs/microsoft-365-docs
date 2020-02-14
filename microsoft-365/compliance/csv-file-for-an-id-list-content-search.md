@@ -60,7 +60,7 @@ Note that you can use a CSV file from a search that included SharePoint sites an
 
     Here's an example of the a CSV file that's ready to be submitted for a ID list content search.
 
-    ![Example of a CSV file for a targeted content search](media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
+    ![Example of a CSV file for a targeted content search](../media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
 
 6. Save the CSV file or use **Save As** to the save the file with different file name. In both cases, be sure to save the file with the CSV format.
 
@@ -73,9 +73,9 @@ The next step is to create a new ID list Content Search and submit the CSV file 
 
 1. In the Security & Compliance Center, go to **Search** \> **Content search**.
 
-2. On the **Search** page, click the arrow next to ![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New search**, and then click **Search by ID List**.
+2. On the **Search** page, click the arrow next to ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New search**, and then click **Search by ID List**.
 
-    ![Click Search by ID List from the New search dropdown list](media/e65f9942-09b2-4127-865e-e64029a590df.png)
+    ![Click Search by ID List from the New search dropdown list](../media/e65f9942-09b2-4127-865e-e64029a590df.png)
 
 3. On the **Search by ID List** flyout, name the search (and optionally describe it) and then click **Browse** and select the CSV file that you prepared in the previous step.
 
@@ -85,7 +85,7 @@ The next step is to create a new ID list Content Search and submit the CSV file 
 
     Here's an example of the estimated search results and the query that's generated for an ID list search.
 
-    ![Search query for a targeted content search in the details pane](media/dbd9e570-c04b-4056-a8a7-37e9916ec683.png)
+    ![Search query for a targeted content search in the details pane](../media/dbd9e570-c04b-4056-a8a7-37e9916ec683.png)
 
     Note that the number of estimated items displayed in statistics for the ID search should match the number of items that you selected in the CSV file.
 

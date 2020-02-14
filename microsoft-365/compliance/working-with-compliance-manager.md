@@ -45,7 +45,7 @@ Once the administrator assigns Compliance Manager roles to other users, those us
 
 Each Compliance Manager role has slightly different permissions. You can view the permissions assigned to each role, see which users are in which roles, and add or remove users from that role through the Service Trust Portal. Select the **Admin** menu item, and choose **Settings** to view.
   
-![STP Admin menu: Settings selected](media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
+![STP Admin menu: Settings selected](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
 To add or remove users from Compliance Manager roles.
   
@@ -61,11 +61,11 @@ To add or remove users from Compliance Manager roles.
 
 6. To add users to this role, select **Add**. In the **Add Users** dialog, select the user field. You can scroll through the list of available users or begin typing the user name to filter the list based on your search term. Select the user to add that account to the **Add Users** list provisioned with that role. If you would like to add multiple users concurrently, begin typing a user name to filter the list, and then select the user to add to the list. Select **Save** to provision the selected role to these users. 
 
-    ![Compliance Manager — add users](media/compliance-manager-add-users.png)
+    ![Compliance Manager — add users](../media/compliance-manager-add-users.png)
   
 7. To remove users from this role, select the users and select **Delete**.
 
-    ![Compliance Manager — delete users](media/compliance-manager-delete-users.png)
+    ![Compliance Manager — delete users](../media/compliance-manager-delete-users.png)
 
 ### Controlling automatic Secure Score updates
 
@@ -173,7 +173,7 @@ You can’t edit an Owner name, but you can modify the description that is displ
 
 The Customer Actions area shows all the customer actions for all Templates and Assessments in Compliance Manager (Preview).
 
-![Compliance Manager — add users](media/compliance-manager-customer-actions.png "Compliance Manager Customer Actions")
+![Compliance Manager — add users](../media/compliance-manager-customer-actions.png "Compliance Manager Customer Actions")
 
 At a glance, you can see an Action’s title, owner, category, enforcement, and score, and determine if it is integrated with Secure Score. You can expand an Action and select **Read More** to read the Action’s description and access any links in the description. You can also use this interface to enable and disable Secure Score integration on a per-action basis, and to add custom actions. Actions that have Secure Score integration capabilities have an ellipsis (…) next to them (note that custom actions also have an ellipsis next to them).
 
@@ -263,15 +263,15 @@ When you create an Assessment, you have the option to copy information from an e
 
 Here's an example of the Assessment for Office 365 and ISO 27001. The first view illustrates the new Action Items view in Compliance Manager (Preview).
 
-![Compliance Manager Action Items View](media/compliance-manager-action-items.png)
+![Compliance Manager Action Items View](../media/compliance-manager-action-items.png)
 
 The Actions are listed in alphabetical order, and each Action is assigned a score and an owner. Select  the **Read More** link to read the details of each Action. 
 
-![Compliance Manager Action Items View](media/compliance-manager-actions-read-more.png)
+![Compliance Manager Action Items View](../media/compliance-manager-actions-read-more.png)
 
 Select the **Review** link to manage, assign, implement, and test the action. Below is an example Action.
 
-![Compliance Manager Action View](media/compliance-manager-action.png)
+![Compliance Manager Action View](../media/compliance-manager-action.png)
 
 In previous versions of Compliance Manager, the workflow for implementing requirements was performed at the Control level. A compliance officer would assign a control to someone to implement the control. There were two drawbacks to this:
 
@@ -292,7 +292,7 @@ In Compliance Manager (Preview), the workflow process has moved from the Control
 
 Compliance Manager (Preview) also includes the control-based pivot found in previous versions. Select the **Controls Info** dashboard to view it. You can view information for controls at the Assessment and Template level. Below is an example of the Controls Info dashboard for Assessments.
 
-![Compliance Manager Controls Info View](media/compliance-manager-controls-info.png)
+![Compliance Manager Controls Info View](../media/compliance-manager-controls-info.png)
 
 For Assessments, the Controls Info dashboard displays:
 
@@ -308,7 +308,7 @@ For Assessments, the Controls Info dashboard displays:
     - **Your Actions** displays the customer actions that you can perform to satisfy some or all the control’s requirements. Many controls have multiple Actions associated with them, and all Actions associated with a control are displayed here. The Actions here have the same UI as those listed in the Actions dashboard.
     - **Microsoft Actions** displays the list of controls from Microsoft’s internal framework that apply to the selected certification control. For each internal control, select **Implemented** to see Microsoft’s implementation and test details, along with the test result and test date, as shown below.
 
-![Compliance Manager Microsoft Action View](media/compliance-manager-microsoft-action.png)
+![Compliance Manager Microsoft Action View](../media/compliance-manager-microsoft-action.png)
 
 ### Export an Assessment
 
@@ -326,7 +326,7 @@ The assessment report is downloaded as an Excel file in your browser session. Th
 
 When you are finished with a Template or Assessment and no longer need it for compliance purposes, you can hide it from your view. When a Template or Assessment is hidden, it is removed from the default view, and you must select **Include Hidden** checkbox to display it.
 
-![Compliance Manager Hidden Template View](media/compliance-manager-hidden-template.png "Compliance Manager hidden template")
+![Compliance Manager Hidden Template View](../media/compliance-manager-hidden-template.png "Compliance Manager hidden template")
 
 > [!IMPORTANT]
 > Hidden Assessments do not retain their links to uploaded evidence documents. It is highly recommended that you export the Assessment before hiding it to retain links to the evidence documents in the report.
@@ -364,7 +364,7 @@ Controls and Actions are the primary data pivots used in Compliance Manager (Pre
 
 Controls can be viewed from the Controls Info dashboard. Controls represent the requirements from a standard, certification, regulation, or framework. To map these requirements across multiple standards, regulations, etc., and to associate them with Actions, everything is treated as if it were a control framework. For example, like a control framework, regulations, such as HIPAA, have been broken down by section, and the HIPAA controls in Compliance Manager use the same numbering scheme as those sections, as shown below:
 
-![Compliance Manager Microsoft Controls Details](media/compliance-manager-control-details.png)
+![Compliance Manager Microsoft Controls Details](../media/compliance-manager-control-details.png)
 
 There are three types of controls:
 
@@ -400,7 +400,7 @@ This function enables an organization to remove any active or outstanding depend
 
 A Template is the base object in Compliance Manager (Preview) that is associated with a Product and a Certification (for example, standard, regulation, control framework, etc.). Templates can be viewed and added from the Templates dashboard.
 
-![Compliance Manager Microsoft Template Dashboard](media/compliance-manager-template-dashboard.png)
+![Compliance Manager Microsoft Template Dashboard](../media/compliance-manager-template-dashboard.png)
  
 The dashboard displays each Template, along with the Certification and Product associated with the Template, the dates on which the Template was created and last modified, the number of customer and Microsoft-managed controls, the maximum Compliance Score for the Template, and the status of the Template (for example, Approved, Pending Approval, Imported).
 
@@ -591,7 +591,7 @@ You can export an Assessment to an Excel file for compliance stakeholders in you
 2. Select the Group and Assessment in the dropdown menus for the Assessment you want to export.
 3. Select Export. The Assessment export is downloaded as an Excel file.
 
-![Compliance Manager Assessment Excel Report](media/compliance-manager-assessment-report.png)
+![Compliance Manager Assessment Excel Report](../media/compliance-manager-assessment-report.png)
 
 ## Permissions
 

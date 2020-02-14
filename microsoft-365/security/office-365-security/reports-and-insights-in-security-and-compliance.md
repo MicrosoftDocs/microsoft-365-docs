@@ -27,7 +27,7 @@ If you are part of your organization's Office 365 security team and have the nec
 
 Monitoring capabilities available in the Office 365 Security &amp; Compliance Center include smart reports and insights that enable your security and compliance administrators to focus on high-priority issues, such as security attacks or increased suspicious activity. In a dashboard, smart reports and insights resemble the following image:
   
-![In the Security &amp; Compliance Center, choose Reports \> Dashboard](../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+![In the Security &amp; Compliance Center, choose Reports \> Dashboard](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
 In addition to highlighting problem areas, smart reports and insights include recommendations and links to view and explore data and also take quick actions. For example, if your organization suddenly has a high number of email messages being marked as spam by end users, you might be advised to revisit your anti-spam policies to ensure the right level of protection is in place.
   

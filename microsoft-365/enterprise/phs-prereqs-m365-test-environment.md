@@ -41,7 +41,7 @@ There are eight phases to setting up this test environment:
 Follow the instructions in [Password hash synchronization](password-hash-sync-m365-ent-test-environment.md).
 Here is the resulting configuration.
 
-![The simulated enterprise with password hash synchronization test environment](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![The simulated enterprise with password hash synchronization test environment](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
  
 ## Phase 2: Configure Azure AD seamless single sign-on
 

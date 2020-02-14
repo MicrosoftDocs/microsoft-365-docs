@@ -96,14 +96,14 @@ The following table lists the Office 365 applications that people use to create 
 
 | | |
 | :---: | :---:|
-![Calender icon](media/O365-DSR-Doc-Final_image3.png) <br> Calendar | ![SharePoint icon](media/o365-sharepoint-64x64.png) <br> SharePoint  |
-| ![Excel icon](media/o365-excel-64x64.png) <br> Excel | ![Skype for Business icon](media/o365-skypeforbusiness-64x64.png) <br> Skype for Business |
-| ![Office Lens icon](media/o365-lens-64x64.png) <br> Office Lens | ![Tasks icon](media/O365-DSR-Doc-Final_image8.png) <br> Tasks |
-| ![OneDrive icon](media/o365-OneDrive-64x64.png) <br> OneDrive for Business |![Teams icon](media/o365-teams-64x64.png) <br> Teams |
-| ![OneNote icon](media/o365-onenote-64x64.png) <br> OneNote| ![To do icon](media/o365-todo-64x64.png) <br> To Do |
-| ![Outlook icon](media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![Video icon](media/O365-DSR-Doc-Final_image14.png) <br> Video |
-| ![People icon](media/O365-DSR-Doc-Final_image15.png) <br> People | ![Visio icon](media/o365-visio-64x64.png) <br> Visio |
-| ![PowerPoint icon](media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Word icon](media/o365-word-64x64.png) <br> Word
+![Calender icon](../media/O365-DSR-Doc-Final_image3.png) <br> Calendar | ![SharePoint icon](../media/o365-sharepoint-64x64.png) <br> SharePoint  |
+| ![Excel icon](../media/o365-excel-64x64.png) <br> Excel | ![Skype for Business icon](../media/o365-skypeforbusiness-64x64.png) <br> Skype for Business |
+| ![Office Lens icon](../media/o365-lens-64x64.png) <br> Office Lens | ![Tasks icon](../media/O365-DSR-Doc-Final_image8.png) <br> Tasks |
+| ![OneDrive icon](../media/o365-OneDrive-64x64.png) <br> OneDrive for Business |![Teams icon](../media/o365-teams-64x64.png) <br> Teams |
+| ![OneNote icon](../media/o365-onenote-64x64.png) <br> OneNote| ![To do icon](../media/o365-todo-64x64.png) <br> To Do |
+| ![Outlook icon](../media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![Video icon](../media/O365-DSR-Doc-Final_image14.png) <br> Video |
+| ![People icon](../media/O365-DSR-Doc-Final_image15.png) <br> People | ![Visio icon](../media/o365-visio-64x64.png) <br> Visio |
+| ![PowerPoint icon](../media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Word icon](../media/o365-word-64x64.png) <br> Word
 ||
 
 >[!NOTE]
@@ -192,7 +192,7 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![keyword dialog](media/O365-DSR-Doc_image18.png)
+![keyword dialog](../media/O365-DSR-Doc_image18.png)
 
 ##### Example 2
 
@@ -202,7 +202,7 @@ This example returns Excel or Word files on SharePoint Online sites and OneDrive
 
 ***GUI***
 
-![keyword dialog](media/O365-DSR-Doc_image19.png)
+![keyword dialog](../media/O365-DSR-Doc_image19.png)
 
 ##### Example 3
 
@@ -214,7 +214,7 @@ This example returns email messages that contain the specified ID number, which 
 
 ***GUI***
 
-![keyword dialog](media/O365-DSR-Doc_image20.png)
+![keyword dialog](../media/O365-DSR-Doc_image20.png)
 
 #### Working with partially indexed items in Content Search
 
@@ -431,13 +431,13 @@ When you export the results of a Content Search, email items can be downloaded a
 To export and download items:
 
 1. Open the Content Search in the Security & Compliance Center.
-2. On the search fly out page, click ![download icon](media/o365-dsr_image21.png) **More**, and then click **Export results**. You can also export a report.
+2. On the search fly out page, click ![download icon](../media/o365-dsr_image21.png) **More**, and then click **Export results**. You can also export a report.
 3. Complete the sections on the **Export results** fly out page. Be sure to use the scroll bar to view all export options.
 4. Go back to the Content search page in the Security & Compliance Center, and click the **Export** tab.
 5. Click **Refresh** to update the page.
 6. Under the **Name** column, click the export job that you created. The name of the export job is the name of the content search appended with **\_Export**.
 7. On the export fly out page, under **Export key**, **click Copy to clipboard**. You'll use this key in step 10 to download the search results
-8. On the top of the fly out page, click ![download icon](media/o365-dsr_image21.png) **Download results**.
+8. On the top of the fly out page, click ![download icon](../media/o365-dsr_image21.png) **Download results**.
 9. If you're prompted to install the **Microsoft Office 365 eDiscovery Export Tool**, click **Install**.
 10. In the **eDiscovery Export Tool**, paste the export key that you copied in step 7 in the appropriate box.
 11. Click **Browse** to specify the location where you want to download the search result files.
@@ -626,11 +626,11 @@ While most Customer Data is authored and produced using the applications describ
 
 ||||
 |:-----:|:-----:|:-----:|:-----:|
-| ![Access icon](media/o365-access-64x64.png) <br> [Access](#access) | ![Office icon](media/O365-DSR-Doc_image22.png) <br> [Business App <br> for Office 365](#business-apps-for-office-365) | ![Office icon](media/O365-DSR-Doc_image22.png) <br> [Education](#education)|
-| ![Flow icon](media/o365-flow-64x64.png) <br> [Flow](#flow) | ![Forms icon](media/o365-forms-64x64.png) <br> [Forms](#forms) |![Kaizala icon](media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
-| ![Planner icon](media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps icon](media/o365-powerapps-64x64.png) <br> [Power Apps](#powerapps) |![Power BI icon](media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
-|![Project icon](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher icon](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream icon](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway icon](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard icon](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
-|![Yammer icon](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
+| ![Access icon](../media/o365-access-64x64.png) <br> [Access](#access) | ![Office icon](../media/O365-DSR-Doc_image22.png) <br> [Business App <br> for Office 365](#business-apps-for-office-365) | ![Office icon](../media/O365-DSR-Doc_image22.png) <br> [Education](#education)|
+| ![Flow icon](../media/o365-flow-64x64.png) <br> [Flow](#flow) | ![Forms icon](../media/o365-forms-64x64.png) <br> [Forms](#forms) |![Kaizala icon](../media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
+| ![Planner icon](../media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps icon](../media/o365-powerapps-64x64.png) <br> [Power Apps](#powerapps) |![Power BI icon](../media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
+|![Project icon](../media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher icon](../media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream icon](../media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway icon](../media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard icon](../media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
+|![Yammer icon](../media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
 |||
 
 ### Access
