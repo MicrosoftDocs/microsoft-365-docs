@@ -23,10 +23,11 @@ description: "Ready to start implementing sensitivity labels to help protect you
 
 For information about what sensitivity labels are and how they can help you protect your organization's data, see [Learn about sensitivity labels](sensitivity-labels.md).
 
-If you have [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection), determine whether you need to migrate labels to the unified labeling platform, and which labeling client to use:
-
-- [How can I determine if my tenant is on the unified labeling platform?](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
-- [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)
+> [!NOTE]
+> If you have [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection), determine whether you need to migrate labels to the unified labeling platform, and which labeling client to use:
+> 
+> - [How can I determine if my tenant is on the unified labeling platform?](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
+> - [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)
 
 When you're ready to start protecting your organization's data by using sensitivity labels, follow this process:
 
@@ -48,7 +49,7 @@ Use the following documentation to support your labeling deployment:
 |----------------|---------------|
 |Create and publish sensitivity labels to enable labeling solutions that protect my organization's data|[Create and configure sensitivity labels and their policies](create-sensitivity-labels.md)|
 |Encrypt content with sensitivity labels and restrict how that content can be used|[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
-|Enable collaboration capabilities for SharePoint and OneDrive for documents that are labeled with encryption | [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md)
+|Enable collaboration capabilities in SharePoint for documents that are labeled with encryption | [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md)
 |Manage sensitivity labels for Office apps so that content is labeled as it's created |[Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md)|
 |Automatically apply sensitivity labels or recommend labels to users <br /><br />Note: Currently, the ability to automatically apply sensitivity labels is available  when content is created in Office apps and not to stored content | [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)|
 |Use sensitivity labels to protect content in Teams and  SharePoint |[Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)|
