@@ -39,7 +39,7 @@ The basic flow for what the admin, user, and Office apps and services do to make
 
 ![Diagram showing workflow for sensitivity labels](../media/Sensitivity-label-flow.png)
 
-## Common scenarios
+## Supported scenarios
 
 Use the following documentation to support your labeling deployment:
 
