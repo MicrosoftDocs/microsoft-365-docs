@@ -21,9 +21,6 @@ description: "Learn about Campaign Views in Office 365 Advanced Threat Protectio
 
 # Campaign Views in Office 365 ATP
 
-> [!NOTE]
-> The features described in this topic are currently in preview, and are subject to change.
-
 Campaign Views is a feature in Advanced Threat Protection (ATP) in the Office 365 Security & Compliance Center that identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
 
 - Efficiently investigate and respond to phishing attacks.
@@ -36,9 +33,9 @@ Campaign Views lets you see the big picture of an attack faster and more complet
 
 ## What is a campaign?
 
-A campaign is a coordinated email attack against one or many organizations. Today, email attacks that steal credentials and company data are a big and lucrative business. As technologies increase in an effort to stop attacks, attackers are sophisticated enough to modify their methods in an effort to ensure continued success.
+A campaign is a coordinated email attack against one or many organizations. Email attacks that steal credentials and company data are a big and lucrative industry. As technologies increase in an effort to stop attacks, attackers modify their methods in an effort to ensure continued success.
 
-Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data and experience across the entire Office 365 service world-wide to identify campaigns. The attack information is analyzed and classified according to several factors. For example:
+Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire Office 365 service to help identify campaigns. We analyze and classify the attack information according to several factors. For example:
 
 - **Attack source**: Source IP addresses and sender email domains.
 
@@ -46,36 +43,44 @@ Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malwa
 
 - **Attack recipients**: Recipient domains, recipient job functions (admins, executives, etc.), company types (large, small, public, private, etc.), and industries.
 
-- **Attack payload**: Malicious links, attachments, or other payloads.
+- **Attack payload**: Malicious links, attachments, or other payloads in the attack messages.
+
+A campaign might be short-lived, or could span several days, weeks, or months with active and inactive periods. A campaign might be launched against your specific organization, or your organization might be part of a larger campaign across multiple companies.
 
 ## Campaign Views the Office 365 Security & Compliance Center
 
-Campaign Views is available in the [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center) at the following locations:
+Campaign Views is available in the [Security & Compliance Center](https://protection.office.com) at **Threat management** \> **Campaigns**.
 
-- **Threat management** \> **Explorer** \> **View** \> **Phish** \> **Top campaign (Preview)**
+![Campaigns overview in the Security & Compliance Center](../media/campaigns-overview.png)
 
-- **Threat management** \> **Explorer** \> **View** \> **All email** \> **Top campaign (Preview)**
+You can also get to Campaigns View from:
 
-![Campaigns overview in the Security & Compliance Center](../../media/campaigns-overview.png)
+- **Threat management** \> **Explorer** \> **View** \> **Campaigns**
+
+- **Threat management** \> **Explorer** \> **View** \> **All email** \> **Campaign**
 
 > [!TIP]
-> Currently, the only filtering that's available is the date range. If you don't see any campaign data, try changing the date range.
+> If you don't see any campaign data, try changing the date range.
 
 The overview page shows the following information about the campaign:
 
 - **Name**
 
-- **Sample subject**: The subject line of one of the messages in the campaign. Note that _all_ the messages in the campaign will not necessarily have this same subject line.
+- **Sample subject**: The subject line of one of the messages in the campaign. Note that all messages in the campaign will not necessarily have the same subject.
 
-- **Type**: Currently, this value will always be **Phish**.
+- **Type**: Currently, this value is always **Phish**.
 
-- **Subtype**: Where available, the brand that is being phished by this campaign. When the detection is driven by ATP technology, the prefix **ATP-**is added to the subtype value.
+- **Subtype**: Where available, the brand that is being phished by this campaign. When the detection is driven by ATP technology, the prefix **ATP-** is added to the subtype value.
 
 - **Recipients**: The number of users that were targeted by this campaign.
 
-- **Delivered**: The number of users that received messages from this campaign into their Inbox.
+- **Inboxed**: The number of users that received messages from this campaign in their Inbox (not delivered to Junk).
 
-- **ID**: A unique identifier for the campaign.
+- **Clicked**: The number of users that clicked on the URL in the phishing message.
+
+- **Click Rate**: The percentage as calculated by "**Clicked** / **Inboxed**". This value is an indicator of the effectiveness of the campaign, and whether the recipients were able to identify the message as phishing and avoid clicking on the payload URL.
+
+- **Visited**: How many users actually made it through to the payload website. If there are **Clicked** values, but Safe Links blocked access to the website, this value will be zero.
 
 When you click on the name of a campaign, the campaign details appears in a flyout.
 
@@ -85,11 +90,19 @@ In the campaign details view, a lot of information is available about the campai
 
 - Campaign information:
 
-  - **ID**: The same unique identifier of the campaign from the overview screen.
+  - **ID**: The unique campaign identifier.
 
   - **Started** and **Ended**: the date range filter you selected.
 
-  - **Impact**: the number of messages sent in the date range you selected, how many were "inboxed" (that is, delivered to the Inbox), and how many users clicked on the URL payload in the phishing message.
+  - **Impact**: The following data for the date range filter you selected:
+  
+    - The total number of recipients.
+
+    - The number of messages that were "Inboxed" (that is, delivered to the Inbox, not to Junk).
+
+    - How many users clicked on the URL payload in the phishing message.
+
+    - Howe many users visited the URL.
 
   - A timeline of campaign activity: When the campaign started and ended, and the volume of messages over time.
 
@@ -107,39 +120,69 @@ The diagram contains the following information:
 
 - **Sender domains**
 
-- **Filter verdicts**: The values here are related to the available anti-phishing and anti-spam filter verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). Of great interest here are the values **Tenant Allow**, which means a configured setting in the organization allowed a message through that would have been otherwise blocked by the service (for example, a domain in the Allowed Senders list).
+- **Filter verdicts**: The values here are related to the available anti-phishing and anti-spam filter verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). The available values are described in the following table:
 
-  - **Tenant Block**: This value indicates that a setting in your organization (for example, a domain entry in the [Blocked Senders list](create-block-sender-lists-in-office-365.md)) both detected the message and determined where it was delivered. For messages that weren't quarantined, review your blocked senders settings to determine why the message was delivered.
+  |Value|Spam filter verdict|Description|
+  |:-----|:-----|:-----|
+  | **Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by the spam filter (for example, by a mail flow rule, also known as a transport rule).<br/><br/>The message skipped spam filtering for other reasons (for example, the sender and recipient appear to be in the same organization).|
+  |**Blocked**|`SFV:SKS`|The message was marked as spam before being evaluated by the spam filter (for example, by a mail flow rule).|
+  |**Detected**|`SFV:SPM`|The message was marked as spam by the spam filter.|
+  |**Not Detected**|`SFV:NSPM`|The message was marked as not spam by the spam filter.|
+  |**Released**|`SFV:SKQ`|The message skipped spam filtering because it was released from quarantine.|
+  |**Tenant Allow**<sup>\*</sup>|`SFV:SKA`|The message skipped spam filtering due to the spam filter policy configuration (for example, the sender or domain was in hte **Sender allow** list).|
+  |**Tenant Block**<sup>\*\*</sup>|`SFV:SKA`|The message was blocked by spam filtering due to the spam filter policy configuration (for example, the sender or domain was in the **Sender block** list).|
+  |**User Allow**<sup>\*</sup>|`SFV:SFE`|The message skipped spam filtering because the sender was in a user's Safe Senders list in Outlook.|
+  |**User Block**<sup>\*\*</sup>|`SFV:BLK`|The message was blocked by spam filtering because the sender was in a user's Blocked Senders list in Outlook.|
+  |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) took action on the delivered message according to your spam filter policy configuration (moved to the Junk Email folder or Quarantined).|
 
-  - **Detected**
+  <sup>\*</sup> Review your spam filter policy configuration settings, because the allowed message would have likely been blocked by the service.
 
-  - **Tenant Allow**
+  <sup>\*\*</sup> Review your spam filter policy configuration settings, because these messages should be quarantined, not delivered.
 
-- **Delivery locations**: You'll likely want to investigate messages that were actually delivered to recipients (either to the Inbox or the Junk Email folder), even if users didn't click on the payload URL in the message. You can also remove the quarantined messages from [Quarantine email messages in Office 365](quarantine-email-messages.md).
+- **Delivery locations**: You'll likely want to investigate messages that were actually delivered to recipients (either to the Inbox or the Junk Email folder), even if users didn't click on the payload URL in the message. You can also remove the quarantined messages from quarantine. For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
+
+  - **Deleted folder**
+
+  - **Dropped**
+
+  - **External**: The recipient is located in your on-premises email organization.
+
+  - **Failed**
+
+  - **Forwarded**
+
+  - **Inbox**
 
   - **Junk folder**
 
   - **Quarantine**
 
-  - **Inbox**
+  - **Unknown**
+
+> [!NOTE]
+> In all layers that contain more than 10 items, the top 10 items are shown, while the rest are bundled together in **Others**.
 
 #### URL clicks
 
-There's always the chance that messages delivered to the recipient's Inbox or Junk Email folder can be acted upon by the user (that is, user will click on the malicious URL in the message). If they haven't, that's a small measure of success, although you certainly need to determine why the harmful message was delivered to their mailbox in the first place.
+When a phishing message is delivered to a recipient (to the Inbox or the Junk Email folder), there's always a chance that the user will click on the payload URL. Not clicking on the URL in a delivered message is a small measure of success, but you need to determine why the phishing message was delivered to their mailbox in the first place.
 
-If a user has clicked on the malicious URL, the actions are displayed in the **URL clicks** area of the diagram.
+If a user clicked on the payload URL in the phishing message, the actions are displayed in the **URL clicks** area of the diagram in the campaign details view.
 
-![Campaign details that contain user URL clicks](../../media/campaign-details-with-recipient-actions.png)
+- **Allowed**
 
-- **Safe Links Block**: This value indicates the recipient clicked on the payload URL in the message, but it was blocked by the [ATP Safe Links](atp-safe-links.md) policies in your organization.
+- **BlockPage**: The recipient clicked on the payload URL, but their access to the malicious website was blocked by the [ATP Safe Links](atp-safe-links.md) policies in your organization.
 
-- **Safe Links Block Override**: This value also indicates the recipient clicked on the payload URL in the message, ATP Safe Links tried to stop them, but they were allowed to override the block. You need to investigate your [Safe Links policies](set-up-atp-safe-links-policies.md) to see why users are allowed to override the Safe Links verdict and click on malicious URLs.
+- **BlockPageOverride**: The recipient clicked on the payload URL in the message, ATP Safe Links tried to stop them, but they were allowed to override the block. You need to investigate your [Safe Links policies](set-up-atp-safe-links-policies.md) to see why users are allowed to override the Safe Links verdict and continue to the malicious website.
+
+- **PendingDetonationPage**: ATP Safe Attachments is in the process of opening the payload URL in a virtual computer environment, and seeing what happens.
+
+- **PendingDetonationPageOverride**: The recipient was allowed to override the payload detonation process and open the URL without waiting for the results.
 
 ### Tabs
 
 There are several tabs in the campaign details view that allow you to further investigate the campaign.
 
-- **URL Clicks**: If the payload URL in the phishing message wasn't clicked, this section will be blank. If a user was able to click on the URL, you
+- **URL Clicks**: If users didn't click on the payload URL in the phishing message, this section will be blank. If a user was able to click on the URL, the following values will be populated:
 
   - **User**<sup>\*</sup>
 
@@ -159,21 +202,21 @@ There are several tabs in the campaign details view that allow you to further in
 
   - **Blocked Count**
 
-  - **SPF Passed**
+  - **SPF Passed**: The sender was authenticated by the [Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md). A sender that does not pass SPF validation indicates the sender isn't authenticated, or the message is spoofing a legitimate sender.
 
 - **Senders**
 
-  - **Sender**
+  - **Sender**: This is the actual sender address in the SMTP MAIL FROM command, which is not necessarily the From: email address that users see in their email clients.
 
   - **Total Count**
 
-  - **Inboxed Count**
+  - **Inboxed**
 
-  - **Blocked Count**
+  - **Not Inboxed**
 
-  - **DKIM Passed**
+  - **DKIM Passed**: The sender was authenticated by [Domain Keys Identified Mail (DKIM)](support-for-validation-of-dkim-signed-messages.md). A sender that does not pass DKIM validation indicates the sender isn't authenticated, or the message is spoofing a legitimate sender.
 
-  - **DMARC Passed**
+  - **DMARC Passed**: The sender was authenticated by [Domain-based Message Authentication, Reporting, and Conformance (DMARC)](use-dmarc-to-validate-email.md). A sender that does not pass DMARC validation indicates the sender isn't authenticated, or the message is spoofing a legitimate sender.
 
 - **Payloads**
 
@@ -189,4 +232,4 @@ The buttons in the campaign details view allow you to use the power of Threat Ex
 
 - **Explore campaign**: Opens a new Threat Explorer search tab using the **Campaign ID** value as the search filter.
 
-- **Explore Inbox messages**: Opens a new Threat Explorer search tab using the **Campaign ID** and **Delivery location: Inbox** as the search filter.
+- **Explore Inboxed messages**: Opens a new Threat Explorer search tab using the **Campaign ID** and **Delivery location: Inbox** as the search filter.
