@@ -21,7 +21,12 @@ description: "Ready to start implementing sensitivity labels to help protect you
 
 # Get started with sensitivity labels
 
-If you need some background information about what sensitivity labels are and how they can help you protect your organization's data, See [Learn about sensitivity labels](sensitivity-labels.md).
+For information about what sensitivity labels are and how they can help you protect your organization's data, see [Learn about sensitivity labels](sensitivity-labels.md).
+
+If you have Azure Information Protection, you might have questions about whether you need to migrate labels to the unified labeling platform, and which labeling client to use:
+
+- [How can I determine if my tenant is on the unified labeling platform?](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
+- [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)
 
 However, if you're ready to start your labeling journey, follow this process:
 
@@ -31,11 +36,11 @@ However, if you're ready to start your labeling journey, follow this process:
 
 3. **Publish the labels.** After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable — you define it once, and then you can include it in several label policies assigned to different users. So for example, you could pilot your sensitivity labels by assigning a label policy to just a few users. Then when you're ready to roll out the labels across your organization, you can create a new label policy for your labels and this time, specify all users.
 
-Basic flow for what the admin, user, and Office apps and services do to make sensitivity labels work:
+The basic flow for what the admin, user, and Office apps and services do to make sensitivity labels work:
 
 ![Diagram showing workflow for sensitivity labels](../media/Sensitivity-label-flow.png)
 
-
+## Common scenarios
 
 Use the following documentation to help get your labeling deployment off the ground:
 
