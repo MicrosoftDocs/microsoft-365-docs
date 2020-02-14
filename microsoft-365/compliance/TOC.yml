@@ -78,6 +78,8 @@
       items:
         - name: Learn about sensitivity labels
           href: sensitivity-labels.md
+        - name: Get started with sensitivity labels
+          href: get-started-with-sensitivity-labels.md
         - name: Create and publish sensitivity labels
           href: create-sensitivity-labels.md
         - name: Restrict access to content by using sensitivity labels to apply encryption
