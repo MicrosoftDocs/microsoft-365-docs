@@ -198,7 +198,7 @@ Even when you use built-in labeling in Office apps, you can also use the Azure I
 
 - Right-click options in File Explorer for users to apply labels to all file types
 
-- A viewer to display text, images, and PDF documents that are encrypted
+- A viewer to display encrypted files for text, images, or PDF documents
 
 - A PowerShell module to discover sensitive information in files on premises, and apply or remove labels and encryption from these files.
 
@@ -206,7 +206,7 @@ If you are new to Azure Information Protection, or if you are an existing Azure 
 
 ## Sensitivity labels and Microsoft Cloud App Security
 
-By using Cloud App Security (CAS), you can detect, classify, label, and protect content in third-party services and apps, such as SalesForce, Box, or Dropbox. 
+By using Cloud App Security (CAS), you can discover, classify, label, and protect content in third-party services and apps, such as SalesForce, Box, or Dropbox. 
 
 Cloud App Security works with both Azure Information Protection labels and sensitivity labels:
 
