@@ -39,7 +39,7 @@ The basic flow for what the admin, user, and Office apps and services do to make
 
 ![Diagram showing workflow for sensitivity labels](../media/Sensitivity-label-flow.png)
 
-## Supported scenarios for sensitivity labels
+## Scenarios for sensitivity labels
 
 Use the following documentation to support your sensitivity labeling deployment:
 
@@ -49,11 +49,11 @@ Use the following documentation to support your sensitivity labeling deployment:
 |Encrypt documents and emails with sensitivity labels and restrict how that content can be used|[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
 |Enable collaboration capabilities in SharePoint (and OneDrive) for documents that are labeled with encryption | [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md)
 |Manage sensitivity labels for Office apps so that content is labeled as it's created |[Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md)|
-|Automatically apply sensitivity labels or recommend labels to users <br /><br />Note: Currently, the ability to automatically apply sensitivity labels is available  when content is created in Office apps and not to stored content | [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)|
+|Automatically apply sensitivity labels or recommend labels to users when content is created | [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)|
 |Use sensitivity labels to protect content in Teams and  SharePoint |[Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)|
+|Discover, label, and protect files stored in on-premises data stores |[Deploying the Azure Information Protection scanner to automatically classify and protect files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
+|Discover, label, and protect files stored in cloud data stores |[Discover, classify, label, and protect regulated and sensitive data stored in the cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Visualize how sensitivity labels are being used to report status and fine-tune label configuration|[View label usage with label analytics](label-analytics.md)|
-
-If you are using sensitivity labels with the Azure Information Protection unified labeling client, see the [Azure Information Protection documentation](https://docs.microsoft.com/azure/information-protection) for additional deployment instructions.
 
 
 ## End-user documentation for sensitivity labels
