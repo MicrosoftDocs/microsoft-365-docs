@@ -54,7 +54,7 @@ To make **Communication compliance** available as a menu option in Microsoft 365
 
 5. Select **Choose roles** and then select **Add**. Select the checkbox for **Supervisory Review Administrator**, **Case Management**, and **Review**, then select **Add** and **Done**. Select **Next**.
 
-    ![Communication compliance required role groups](media/communication-compliance-role-groups.png)
+    ![Communication compliance required role groups](../media/communication-compliance-role-groups.png)
 
 6. Select **Choose members** and then select **Add**. Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**. Select **Next**.
 

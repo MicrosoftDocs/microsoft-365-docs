@@ -44,7 +44,7 @@ You have to be assigned the Mail Recipients role in Exchange Online to enable or
     
 4. In the list of mailboxes, select the user that you want to enable the archive mailbox for.
     
-    ![Click Enable in the details pane of the selected user to enable the archive mailbox](media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
+    ![Click Enable in the details pane of the selected user to enable the archive mailbox](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
   
 5. In the details pane for the selected user, click **Enable**. 
     
@@ -52,7 +52,7 @@ You have to be assigned the Mail Recipients role in Exchange Online to enable or
     
 6. Click **Yes** to enable the archive mailbox. 
     
-    It might take a few moments to create the archive mailbox. When it's created, **Archive mailbox: enabled** is displayed in the details pane for the selected user. You might have to click **Refresh** ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane. 
+    It might take a few moments to create the archive mailbox. When it's created, **Archive mailbox: enabled** is displayed in the details pane for the selected user. You might have to click **Refresh** ![Refresh icon](../media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane. 
     
 > [!TIP]
 > You can also bulk-enable archive mailboxes by selecting multiple users with disabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Enable** in the details pane. 
@@ -81,7 +81,7 @@ To disable an archive mailbox:
     
 6. Click **Yes** to disable the archive mailbox. 
     
-    It might take a few moments to disable the archive mailbox. When it's disabled, **Archive mailbox: disabled** is displayed in the details pane for the selected user. You might have to click **Refresh** ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane. 
+    It might take a few moments to disable the archive mailbox. When it's disabled, **Archive mailbox: disabled** is displayed in the details pane for the selected user. You might have to click **Refresh** ![Refresh icon](../media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane. 
     
 > [!TIP]
 > You can also bulk-disable archive mailboxes by selecting multiple users with enabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Disable** in the details pane. 

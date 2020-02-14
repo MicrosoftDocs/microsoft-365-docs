@@ -19,7 +19,7 @@ description: The steps to deploy your identity infrastructure for Microsoft 365 
 
 # Phase 2: Identity
 
-![Phase 2: Identity](./media/deploy-foundation-infrastructure/identity_icon.png)
+![Phase 2: Identity](../media/deploy-foundation-infrastructure/identity_icon.png)
 
 In Microsoft 365 Enterprise, a well-planned and executed identity infrastructure paves the way for stronger security and access to your productivity workloads and their data only by authenticated users and devices.
 
@@ -33,9 +33,9 @@ Watch this video for an overview of identity models and authentication for Micro
 >If you’ve already deployed an identity infrastructure, please see the [identity exit criteria](identity-exit-criteria.md) to make sure that you meet the required and optional conditions for Microsoft 365 Enterprise.
 >
 
-For the identity features of each Microsoft 365 Enterprise plan, the role of Azure Active Directory (Azure AD), on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](media/identity-infrastructure/M365E-ID-Infra.pdf).
+For the identity features of each Microsoft 365 Enterprise plan, the role of Azure Active Directory (Azure AD), on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](../media/identity-infrastructure/M365E-ID-Infra.pdf).
 
-[![The Identity Infrastructure poster](./media/identity-infrastructure/m365e-identity-arch-poster.png)](media/identity-infrastructure/M365E-ID-Infra.pdf)
+[![The Identity Infrastructure poster](../media/identity-infrastructure/m365e-identity-arch-poster.png)](../media/identity-infrastructure/M365E-ID-Infra.pdf)
 
 This two-page poster is a quick way to ramp up on identity concepts and configurations for Microsoft 365 Enterprise.
 
@@ -47,12 +47,12 @@ Use the following steps to plan and deploy your new identity infrastructure in t
 
 |||
 |:-------|:-----|
-|![Step 1](./media/stepnumbers/Step1.png)| [Create and protect your global admin accounts](identity-create-protect-global-admins.md) |
-|![Step 2](./media/stepnumbers/Step2.png)| [Secure your passwords](identity-secure-your-passwords.md) |
-|![Step 3](./media/stepnumbers/Step3.png)| [Secure and manage your user sign-ins](identity-secure-user-sign-ins.md) |
-|![Step 4](./media/stepnumbers/Step4.png)| [Add your user accounts](identity-add-user-accounts.md) |
-|![Step 5](./media/stepnumbers/Step5.png)| [Use groups for management](identity-use-group-management.md) |
-|![Step 6](./media/stepnumbers/Step6.png)| [Configure identity governance](identity-configure-identity-governance.md) |
+|![Step 1](../media/stepnumbers/Step1.png)| [Create and protect your global admin accounts](identity-create-protect-global-admins.md) |
+|![Step 2](../media/stepnumbers/Step2.png)| [Secure your passwords](identity-secure-your-passwords.md) |
+|![Step 3](../media/stepnumbers/Step3.png)| [Secure and manage your user sign-ins](identity-secure-user-sign-ins.md) |
+|![Step 4](../media/stepnumbers/Step4.png)| [Add your user accounts](identity-add-user-accounts.md) |
+|![Step 5](../media/stepnumbers/Step5.png)| [Use groups for management](identity-use-group-management.md) |
+|![Step 6](../media/stepnumbers/Step6.png)| [Configure identity governance](identity-configure-identity-governance.md) |
 
 When you've completed these steps, go to the [exit criteria](identity-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise identity.
 
@@ -71,11 +71,11 @@ Learn how IT experts at Microsoft [manage identities and secure access](https://
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [deployed a hybrid identity infrastructure](contoso-identity.md) for Microsoft 365 cloud services.
 
-![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 
 ## Next step
 
 |||
 |:-------|:-----|
-|![Step 1](./media/stepnumbers/Step1.png)| [Create and protect your global admin accounts](identity-create-protect-global-admins.md) |
+|![Step 1](../media/stepnumbers/Step1.png)| [Create and protect your global admin accounts](identity-create-protect-global-admins.md) |

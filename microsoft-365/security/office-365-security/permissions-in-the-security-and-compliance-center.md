@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 07/01/2019
+ms.date: 02/14/2020
 audience: Admin
 ms.topic: conceptual
 f1_keywords:
@@ -25,7 +25,7 @@ The Office 365 Security & Compliance Center lets you grant permissions to people
 
 Permissions in the Security & Compliance Center are based on the Role Based Access Control (RBAC) permissions model. This is the same permissions model that's used by Exchange, so if you're familiar with Exchange, granting permissions in the Security & Compliance Center will be very similar. It's important to remember, however, that Exchange role groups and Security & Compliance Center role groups don't share membership or permissions. While both have an Organization Management role group, they aren't the same. The permissions they grant, and the members of the role groups, are different. There's a list of Security & Compliance Center role groups below.
 
-![Permissions page in the Office 365 Security & Compliance Center](../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
+![Permissions page in the Office 365 Security & Compliance Center](../../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
 
 ## Relationship of members, roles, and role groups
 
@@ -35,7 +35,7 @@ A **role group** is a set of roles that lets people perform their job across the
 
 The Security & Compliance Center includes default role groups for the most common tasks and functions that you'll need to assign people to. We recommend simply adding individual users as **members** to the default role groups.
 
-![Diagram showing relationship of role groups to roles and members](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![Diagram showing relationship of role groups to roles and members](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 You can edit or delete the existing role groups, but we don't recommend this. Instead of editing a default role group, you can copy it, modify it, and then save it with a different name.
 
@@ -93,7 +93,6 @@ Note that the following roles aren't assigned to the Organization Management rol
 |:-----|:-----|:-----|
 |**Audit Logs**|Turn on and configure auditing for the Office 365 organization, view the organization's audit reports, and then export these reports to a file.|Organization Management <br/><br/> Records Management <br/><br/> Security Administrator|
 |**Case Management**|Create, edit, delete, and control access to eDiscovery cases.|Compliance Administrator <br/><br/> eDiscovery Manager <br/><br/> Organization Management|
-|**Data Investigator**|Perform searches on mailboxes, SharePoint Online sites, and OneDrive for Business locations.|Export <br/><br/> RMS Decrypt <br/><br/> Custodian <br/><br/> Communication <br/><br/> Review <br/><br/> Preview <br/><br/> Compliance Search <br/><br/> Data Investigation Management|
 |**Communication**|Manage all communications with the custodians identified in an Advanced eDiscovery case.  Create hold notifications, hold reminders, and escalations to management. Track custodian acknowledgement of hold notifications and manage access to the custodian portal that is used by each custodian in a case to track communications for the cases where they were identified as a custodian.|eDiscovery Manager|
 |**Compliance Administrator**|View and edit settings and reports for compliance features.|Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management|
 |**Compliance Search**|Perform searches across mailboxes and get an estimate of the results.|Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> eDiscovery Manager <br/><br/> Organization Management <br/><br/> Security Operator|

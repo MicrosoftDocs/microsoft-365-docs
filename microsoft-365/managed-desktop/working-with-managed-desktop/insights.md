@@ -21,7 +21,7 @@ With these dashboards you can find the answers to questions like these:
 
 To access these views from the Microsoft 365 Admin Center, select **View details** in the **Reports** area:
 
-![Admin center with Reports area in the upper right including the device reports card and the "view details" link.](images/insights_overview.png)
+![Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)
 
 
 

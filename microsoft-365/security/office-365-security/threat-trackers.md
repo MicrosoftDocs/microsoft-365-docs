@@ -29,11 +29,11 @@ description: "Learn about Threat Trackers, including new Noteworthy Trackers, to
 
 Threat Trackers are informative widgets and views that provide you with intelligence on different cybersecurity issues that might impact your company. For example, you can view information about trending malware campaigns using Threat Trackers.
   
-![Example of Threat Tracker showing malware campaigns](../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
+![Example of Threat Tracker showing malware campaigns](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
   
 Most tracker pages include trending numbers that are updated periodically, widgets to help you understand which issues are the biggest or have grown the most, and a quick link in the **Actions** column that takes you to Explorer, where you can view more detailed information. 
   
-![Example of campaign information in Explorer](../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
+![Example of campaign information in Explorer](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
 Trackers are just a few of the many great features you get with [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Threat Trackers include [Noteworth trackers](#noteworthy-trackers), [Trending trackers](#trending-trackers), [Tracked queries](#tracked-queries), and [Saved queries](#saved-queries).
   
@@ -52,7 +52,7 @@ Typically Noteworthy trackers will be posted for just a couple of weeks when we 
 
 Trending trackers (formerly called Campaigns) highlight new threats received in your organization's email in the past week.
   
-![Example of trending malware campaigns widget](../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
+![Example of trending malware campaigns widget](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
   
 Trending trackers give you an idea of new threats you should review to ensure your broader corporate environment is prepared against attacks.
   
@@ -60,13 +60,13 @@ Trending trackers give you an idea of new threats you should review to ensure yo
 
 Tracked queries leverage your saved queries to periodically assess Office 365 activity in your organization. This gives you event trending, with more to come in the coming months. Tracked queries run automatically, giving you up-to-date information without having to remember to re-run your queries.
   
-![Example of tracked queries with one selected](../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
+![Example of tracked queries with one selected](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
   
 ### Saved queries
 
 Saved queries are also found in the Trackers section. You can use Saved queries to store the common Explorer searches that you want to get back to quicker and repeatedly, without having to re-create the search every time.
   
-![Example of saved queries with one selected](../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
+![Example of saved queries with one selected](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
   
 You can always save a Noteworthy tracker query or any of your own Explorer queries using the **Save query** button at the top of the Explorer page. Anything saved there will show up in the **Saved queries** list on the Tracker page. 
   
@@ -76,13 +76,13 @@ Whether you're reviewing email, content, or Office activities (coming soon), Exp
   
 And remember that you can always provide us feedback on this or other Office 365 security features by clicking on the **Feedback** button in the lower right corner of the [Overview of the Office 365 Security &amp; Compliance Center](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![Office 365 Security &amp; Compliance Center](../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Office 365 Security &amp; Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## Trackers and Office 365 Advanced Threat Protection
 
 With our inaugural Noteworthy threat, we're highlighting advanced malware threats detected by [Office 365 ATP Safe Attachments](atp-safe-attachments.md). If you're an Office 365 Enterprise E5 customer and you're not using [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), you should be - it's included in your subscription. ATP provides value even if you have other security tools filtering email flow with your Office 365 services. However, anti-spam and [Office 365 ATP safe links](atp-safe-links.md) features work best when your main email security solution is through Office 365. 
   
-![ATP in the Security &amp; Compliance Center](../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![ATP in the Security &amp; Compliance Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
 In today's threat-riddled world, running only traditional anti-malware scans means you are not protected well enough against attacks. Today's more sophisticated attackers use commonly available tools to create new, obfuscated, or delayed attacks that won't be recognized by traditional signature-based anti-malware engines. The ATP Safe Attachments feature takes email attachments and detonates them in a virtual environment to determine whether they're safe or malicious. This detonation process opens each file in a virtual computer environment, then watches what happens after the file is opened. Whether it's a PDF, and compressed file, or an Office document, malicious code can be hidden in a file, activating only once the victim opens it on their computer. By detonating and analyzing the file in the email flow, Office 365 ATP capabilities finds these threats based on behaviors, file reputation, and a number of heuristic rules.
   

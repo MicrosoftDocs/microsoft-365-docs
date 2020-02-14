@@ -84,7 +84,7 @@ You need to create the following access groups in Azure AD:
   
 Here is your resulting configuration with the three site access groups.
   
-![The three access groups for your deployment of an isolated SharePoint Online site.](../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
+![The three access groups for your deployment of an isolated SharePoint Online site.](../../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
   
 ### Step 5. Add the user accounts to the access groups
 
@@ -146,7 +146,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 Here is your resulting configuration with the three site access groups populated with user accounts or groups.
   
-![The three access groups populated with user accounts.](../media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
+![The three access groups populated with user accounts.](../../media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
   
 ## Phase 2: Create and configure the isolated team site
 
@@ -216,7 +216,7 @@ The results of these permission settings are:
     
 Here is your resulting configuration with the three SharePoint groups for the site configured to use the three access groups, which are populated with user accounts or Azure AD groups.
   
-![The final configuration of your isolated SharePoint Online site with access groups and user accounts.](../media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
+![The final configuration of your isolated SharePoint Online site with access groups and user accounts.](../../media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
   
 You and the members of the site, through group membership in one of the access groups, can now collaborate using the resources of the site.
   

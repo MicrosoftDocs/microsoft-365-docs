@@ -52,7 +52,7 @@ Microsoft 365 Business is meant for up to 300 licenses. If you need more license
   
 The following diagram describes how admins set up Microsoft 365 Business. It also describes the steps to prepare Windows PCs for Microsoft 365 Business. You can also add new devices in the Microsoft 365 Business admin center with [Windows AutoPilot](add-autopilot-devices-and-profile.md). You can use AutoPilot to set up and pre-configure new devices so that they're ready for productive use as soon as a user signs in with their Microsoft 365 Business credentials.
   
-![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
+![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
 Watch this video for an overview of Microsoft 365 Business setup.<br><br>
 

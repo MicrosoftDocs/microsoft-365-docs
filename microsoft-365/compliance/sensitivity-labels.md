@@ -27,7 +27,7 @@ With sensitivity labels, you can classify and help protect your organization's d
 
 Example showing available sensitivity labels in Excel, from the **Home** tab on the Ribbon. In this example, the applied label displays on the status bar:
 
-![Sensitivity label on Excel ribbon and status bar](media/Sensitivity-label-in-Excel.png)
+![Sensitivity label on Excel ribbon and status bar](../media/Sensitivity-label-in-Excel.png)
 
 Sensitivity labels are supported for tenants in the global (public) cloud only. Currently, sensitivity labels aren't supported for tenants in other clouds such as [national clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
 
@@ -67,7 +67,7 @@ In Office apps, a sensitivity label appears like a tag to users on an email or d
 Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](labels.md) applied to it.
 
 > [!div class="mx-imgBorder"]
-> ![Sensitivity label applied to an email](media/Sensitivity-label-on-email.png)
+> ![Sensitivity label applied to an email](../media/Sensitivity-label-on-email.png)
 
 ## What sensitivity labels can do
 
@@ -85,7 +85,7 @@ After a sensitivity label is applied to an email or document, any configured pro
 
 - **Mark the content** when you use Office apps, by adding watermarks, headers, or footers to email or documents that have the label applied. Watermarks can be applied to documents but not email. Example header and watermark:
     
-    ![Watermark and header applied to document](media/Sensitivity-label-watermark-header.png)
+    ![Watermark and header applied to document](../media/Sensitivity-label-watermark-header.png)
     
     Need to check when content markings are applied? See [When Office 365 applies content marking and encryption to content](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption).
     
@@ -97,7 +97,7 @@ After a sensitivity label is applied to an email or document, any configured pro
 
 - **Apply the label automatically to content that contains sensitive information.** You can choose what types of sensitive information that you want labeled, and the label can either be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays whatever text you choose. For example:
     
-    ![Prompt to assign a required label](media/Sensitivity-label-Prompt-for-required-label.png)
+    ![Prompt to assign a required label](../media/Sensitivity-label-Prompt-for-required-label.png)
     
     For more information about the **Auto-labeling for Office apps** settings when you create or edit a sensitivity label, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
 
@@ -109,7 +109,7 @@ You can apply just one sensitivity label to a document or email. If you set an o
 
 The ordering of sublabels is used with [automatic labeling](apply-sensitivity-label-automatically.md), though. When you configure labels to be applied automatically or as a recommendation, multiple matches can result for more than one label. To determine the label to apply or recommend, the label ordering is used: The last sensitive label is selected, and then if applicable, the last sublabel.
 
-![Option to create a sublabel](media/Sensitivity-label-sublabel-options.png)
+![Option to create a sublabel](../media/Sensitivity-label-sublabel-options.png)
 
 ### Sublabels (grouping labels)
 
@@ -121,7 +121,7 @@ Don't choose a parent label as the default label, or configure a parent label to
 
 Example of how sublabels display for users:
 
-![Grouped sublabels on the Ribbon](media/Sensitivity-label-grouped-labels2.png)
+![Grouped sublabels on the Ribbon](../media/Sensitivity-label-grouped-labels2.png)
 
 ### Editing or deleting a sensitivity label
 
@@ -141,18 +141,18 @@ With a label policy, you can:
 
 - **Require a justification for changing a label.** If content is marked Confidential and a user tries to remove that label or replace it with a lower classification, such as a label named Public, you can require that the user provides a justification to perform this action. Currently, the justification reason isn't sent to [label analytics](label-analytics.md) for the admin to review. However, the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) sends this information to [Azure Information Protection analytics](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
-    ![Prompt where users enter a justification](media/Sensitivity-label-justification-required.png)
+    ![Prompt where users enter a justification](../media/Sensitivity-label-justification-required.png)
 
 - **Require users to apply a label to their email and documents.** Also known as mandatory labeling, you can require that a label must be applied before users can save documents and send emails. Use this option to help increase your labeling coverage. The label can be assigned manually by the user, automatically as a result of a condition that you configure, or be assigned by default (the default label option described above). The prompt shown in Outlook when a user is required to assign a label:
 
-    ![Prompt in Outlook asking user to apply required label](media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
+    ![Prompt in Outlook asking user to apply required label](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
     > [!NOTE]
     > Mandatory labeling requires an Azure Information Protection subscription. To use this feature, you must install the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). This client runs only on Windows, so this feature is not yet supported on Mac, iOS, and Android.
 
 - **Provide help link to a custom help page.** If your users aren’t sure what your sensitivity labels mean or how they should be used, you can provide a Learn More URL that appears at the bottom of the **Sensitivity label** menu in the Office apps:
 
-    ![Learn more link on Sensitivity button on Ribbon](media/Sensitivity-label-learn-more.png)
+    ![Learn more link on Sensitivity button on Ribbon](../media/Sensitivity-label-learn-more.png)
 
 After you create a label policy that assigns sensitivity labels to users and groups, allow up to 24 hours for these users to see the labels in their Office apps.
 
@@ -172,7 +172,7 @@ You can include a user in multiple label policies, and the user will see all the
 
 If you're not seeing the label or label policy setting that you expect for a user or group, and you have waited 24 hours, check the order of the sensitivity label policies. To re-order the label policies, select a sensitivity label policy > choose the ellipsis on the right > **Move down** or **Move up**.
 
-![Move option on the page for sensitivity label policies](media/sensitivity-label-policy-priority.png)
+![Move option on the page for sensitivity label policies](../media/sensitivity-label-policy-priority.png)
 
 If you use retention labels in addition to sensitivity labels, it's important to remember that priority matters for sensitivity label policies, but not for [retention label policies](labels.md#the-principles-of-retention-or-what-takes-precedence).
 
@@ -225,3 +225,4 @@ You can also learn about [partner solutions that are integrated with Microsoft I
 ## Deployment guidance
 
 See [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
+

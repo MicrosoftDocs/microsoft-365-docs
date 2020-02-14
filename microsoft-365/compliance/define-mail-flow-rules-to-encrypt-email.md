@@ -43,7 +43,7 @@ You can define mail flow rules for triggering message encryption with the new OM
 
 3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
 
-4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. In **Name**, type a name for the rule, such as Encrypt mail for DrToniRamos@hotmail.com.
 
@@ -77,7 +77,7 @@ You can define mail flow rules for triggering message encryption with the new OM
 
 4. In the EAC, go to **Mail flow** \> **Rules**.
 
-5. In the list of mail flow rules, select the rule you want to modify to use the new OME capabilities and then choose **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+5. In the list of mail flow rules, select the rule you want to modify to use the new OME capabilities and then choose **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
 6. To enable encryption using the new OME capabilities, from **Do the following**, choose **Modify the message security** and then choose **Apply Office 365 Message Encryption and rights protection**. Select an RMS template from the list, choose **Save** and then choose **OK**.
 
@@ -101,7 +101,7 @@ If you haven't yet moved your Office 365 organization to the new OME capabilitie
 
 3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
 
-4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. In **Name**, type a name for the rule, such as Encrypt mail for DrToniRamos@hotmail.com.
 
@@ -159,7 +159,7 @@ When your email users send encrypted messages, recipients of those messages can 
 
 3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
 
-4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. In **Name**, type a name for the rule, such as Remove encryption from incoming mail.
 
