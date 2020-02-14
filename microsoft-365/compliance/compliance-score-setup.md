@@ -97,7 +97,7 @@ Read more about [managing Secure Score updates](compliance-manager-release-notes
 
 The Compliance Score dashboard is designed to provide you an at-a-glance view of your current compliance posture.
 
-![Compliance Score - dashboard](media/compliance-score-dashboard.png "Compliance Score dashboard")
+![Compliance Score - dashboard](../media/compliance-score-dashboard.png "Compliance Score dashboard")
 
 ### Overall compliance score
 

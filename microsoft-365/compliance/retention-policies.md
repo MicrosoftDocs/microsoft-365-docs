@@ -82,7 +82,7 @@ Note that a user receives an error if they try to delete a library, list, folder
   
 After a retention policy is assigned to a OneDrive account or SharePoint site, content can follow one of two paths:
 
-![Diagram of content lifecycle in SharePoint and OneDrive](media/Retention_Diagram_of_retention_flow_in_sites.png)
+![Diagram of content lifecycle in SharePoint and OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 1. **If the content is modified or deleted** during the retention period, a copy of the original content as it existed when the retention policy was assigned is created in the Preservation Hold library. There, a timer job runs periodically and identifies items whose retention period has expired, and those items are moved to the second-stage Recycle Bin, where they're permanently deleted at the end of 93 days. The second-stage Recycle Bin is not visible to end users (only the first-stage Recycle Bin is), but site collection admins can view and restore content from there.
 
@@ -105,7 +105,7 @@ If a user leaves your organization, and their mailbox is included in a retention
   
 After a retention policy is assigned to a mailbox or public folder, content can follow one of two paths:
 
-![Diagram of retention flow in email and public folders](media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
+![Diagram of retention flow in email and public folders](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **If the item is modified or permanently deleted** by the user (either SHIFT+DELETE or deleted from Deleted Items) during the retention period, the item is moved (or copied, in the case of edit) to the Recoverable Items folder. There, a process runs periodically and identifies items whose retention period has expired, and these items are permanently deleted within 14 days of the end of the retention period. Note that 14 days is the default setting, but it can be configured up to 30 days.
     
@@ -134,7 +134,7 @@ Similarly, if you want to retain content in a mailbox for seven years, and a mes
   
 You can choose whether you want the content to be permanently deleted at the end of the retention period. A retention policy can also delete old content without retaining it. See the next section.
   
-![Retention settings page](media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+![Retention settings page](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
   
 ## Deleting content that's older than a specific age
 
@@ -142,19 +142,19 @@ A retention policy can both retain and then delete content, or delete old conten
   
 If your retention policy deletes content, it's important to understand that the time period specified for a retention policy is calculated from the time when the content was created or modified, not the time since the policy was assigned.
   
-![Deletion settings](media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
+![Deletion settings](../media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
   
 For example, suppose that you create a retention policy that deletes content after three years, and then assign that policy to all OneDrive accounts, which contain a lot of content that was created four or five years ago. In this case, a lot of content will be deleted soon after assigning the retention policy for the first time. For this reason, **a retention policy that deletes content can have a considerable impact on your content**. 
   
 Therefore, before you assign a retention policy to a site collection for the first time, you should first consider the age of the existing content and how the policy may impact that content. You may also want to communicate the new policy to your users before assigning it, to give them time to assess the possible impact. Note this warning that appears when you review the settings for your retention policy just before creating it.
   
-![Warning about deleting content](media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
+![Warning about deleting content](../media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
 ## Advanced settings that apply a policy only to content that meets certain conditions
 
 A retention policy can apply to all content in the locations that it includes, or you can choose to apply a retention policy only to content that contains specific keywords or [specific types of sensitive information](what-the-sensitive-information-types-look-for.md).
   
-![Advanced retention options](media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
+![Advanced retention options](../media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
   
 ### Retain content that contains specific keywords
 
@@ -164,13 +164,13 @@ Support for adding searchable properties (for example, **subject:**) is coming s
   
 Query-based retention uses the search index to identify content.
   
-![Query editor](media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
+![Query editor](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
   
 ### Retain content that contains sensitive information
 
 You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personally identifiable information (PII) such as taxpayer identification numbers, social security numbers, or passport numbers.
   
-![Sensitive information types page](media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
+![Sensitive information types page](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
 Notes:
   
@@ -196,7 +196,7 @@ One of the most powerful features of a retention policy is that by default it ap
     
 - Exchange public folders
     
-![All locations option](media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
+![All locations option](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
   
 Other important features of an org-wide retention policy include:
   
@@ -210,7 +210,7 @@ When you choose locations, you can easily include or exclude an entire location,
   
 Like an org-wide policy, if a policy applies to any combination of entire locations, there is no limit to the number of mailboxes or sites the policy can include. For example, if a policy includes all Exchange email and all SharePoint sites, all sites and mailboxes will be included, no matter how many. And for Exchange, any new mailbox created after the policy is applied will automatically inherit the policy.
  
-![Choose locations page](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
+![Choose locations page](../media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### A policy with specific inclusions or exclusions
 
@@ -230,7 +230,7 @@ Unlike Exchange email, you can't toggle the status of the Skype location on to i
   
 When you choose Skype for Business users, you can quickly include all users by selecting the **Name** box in the column header. However, it's important to understand that each user counts as a specific inclusion in the policy. Therefore, if you include over 1,000 users, the limits noted in the previous section apply. Selecting all Skype users here is not the same as if an org-wide policy were able to include all Skype users by default. 
   
-![Choose Skype users page](media/f1742493-741a-4142-a564-d7d41ab0236a.png)
+![Choose Skype users page](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
 Note that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 
@@ -245,7 +245,7 @@ Teams chats and channel messages are not affected by retention policies applied 
   
 After a retention policy is assigned to a team, chat and channel messages can follow one of two paths:
 
-![Diagram of retention flow for Teams chat and channel messages](media/TeamsRetentionLifecycle.png)
+![Diagram of retention flow for Teams chat and channel messages](../media/TeamsRetentionLifecycle.png)
 
 1. **If a chat or channel message is modified or deleted** by the user during the retention period, the message is moved (or copied, in the case of edit) to the SubstrateHolds folder (which is a hidden folder in every user or group mailbox) and is stored in this folder until the retention period expires. Messages are permanently deleted on the day the retention period expires.
 
@@ -273,7 +273,7 @@ In a Team, files that are shared in chat are stored in the OneDrive account of t
   
 A retention policy that applies to Teams can use [Preservation Lock](#locking-a-retention-policy).
   
-![Teams locations for chat and channel messages](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
+![Teams locations for chat and channel messages](../media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   
 > [!NOTE]
 > If you create retention policies for Skype or Teams locations in your organization, one of those policies is shown as the default folder policy when a user views the properties of a mailbox folder in the Outlook desktop client. This is an incorrect display issue in Outlook and [a known issue](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). What should be displayed as the default folder policy is the mailbox retention policy that's applied to the folder. The Skype or Teams retention policy is not applied to the user's mailbox.  
@@ -304,23 +304,23 @@ First, [connect to Office 365 Security & Compliance Center PowerShell](https://d
 
 Second, to view a list of your retention policies and find the name of the policy that you want to lock, run `Get-RetentionCompliancePolicy`.
 
-![List of retention policies in PowerShell](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+![List of retention policies in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
 Third, to place a Preservation Lock on the retention policy, run `Set-RetentionCompliancePolicy` with the `RestrictiveRetention` parameter set to true. For example:
 
 `Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
 
-![RestrictiveRetention parameter in PowerShell](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+![RestrictiveRetention parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
 
 After you run that cmdlet, you see a confirmation prompt. Choose **Yes to All**.
 
-![Prompt to confirm that you want to lock a retention policy in PowerShell](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+![Prompt to confirm that you want to lock a retention policy in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 A Preservation Lock is now placed on the retention policy. If you run `Get-RetentionCompliancePolicy`, the `RestrictiveRetention` parameter is set to true. For example:
 
 `Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
 
-![Locked policy with all parameters shown in PowerShell](media/retention-policy-preservation-lock-locked-policy.PNG)
+![Locked policy with all parameters shown in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
   
 ## Releasing a retention policy
 
@@ -332,7 +332,7 @@ This 30-day grace period in SharePoint and OneDrive corresponds to the 30-day de
 
 It's possible or even likely that content might have several retention policies applied to it, each with a different action (retain, delete, or both) and retention period. What takes precedence? At the highest level, rest assured that content being retained by one policy can't be permanently deleted by another policy.
   
-![Diagram of the principles of retention](media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![Diagram of the principles of retention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 To understand how different retention policies are applied to content, keep these principles of retention in mind:
   

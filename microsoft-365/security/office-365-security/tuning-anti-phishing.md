@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Tune anti-phishing protection in Office 365"
 f1.keywords:
 - NOCSH

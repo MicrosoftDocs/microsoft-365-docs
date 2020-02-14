@@ -64,7 +64,7 @@ The following table lists the properties that you can search for using a KQL key
 
 Alternatively, you can use a condition card in the Advanced eDiscovery Search tool to add a condition (for selected properties) to a search query. The following screenshot shows the conditions that can be added to a query. The **Group** column indicates whether the property applies to email, site documents, or both (indicated by the value *Common*). This column also identifies the searchable properties that are available after you run the Relevance module.
 
-![Search conditions in the Advanced eDiscovery search tool](media/AeDSearchConditions.png)
+![Search conditions in the Advanced eDiscovery search tool](../media/AeDSearchConditions.png)
 
 For more information about searchable properties, see [Keyword queries and search conditions](keyword-queries-and-search-conditions.md).
   

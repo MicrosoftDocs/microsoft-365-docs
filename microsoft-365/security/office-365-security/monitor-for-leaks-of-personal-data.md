@@ -23,7 +23,7 @@ description: "Learn about three tools you can use to monitor for leaks of person
 
 There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.
 
-![Tools to monitor the use and transport of personaal data](../media/Monitor-for-leaks-of-personal-data-image1.png)
+![Tools to monitor the use and transport of personaal data](../../media/Monitor-for-leaks-of-personal-data-image1.png)
 
 In the illustration:
 
@@ -57,7 +57,7 @@ DLP reports are in the security center and the compliance center. Navigate to Re
 
 For more information, see [View the reports for data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
 
-![Report showing DLP policy matches](../media/Monitor-for-leaks-of-personal-data-image2.png)
+![Report showing DLP policy matches](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
 ## Office 365 audit log and alert policies
 
@@ -99,7 +99,7 @@ To better understand your cloud environment, Cloud App Security investigate feat
 
 For examples, the following illustration demonstrates two Cloud App Security policies that can help with GDPR.
 
-![Example Cloud App Security policies](../media/Monitor-for-leaks-of-personal-data-image3.png)
+![Example Cloud App Security policies](../../media/Monitor-for-leaks-of-personal-data-image3.png)
 
 The first policy alerts when files with a predefined PII attribute or custom expression that you choose is shared outside the organization from the SaaS apps that you choose.
 
@@ -117,7 +117,7 @@ If you haven't yet started to use Cloud App Security, begin by starting it up. T
 
 Note: Be sure to enable 'Automatically scan files for Azure Information Protection classification labels' (in General settings) when getting started with Cloud App Security or before you assign labels. After setup, Cloud App Security does not scan existing files again until they are modified.
 
-![Dashboard showing information about alerts](../media/Monitor-for-leaks-of-personal-data-image4.png)
+![Dashboard showing information about alerts](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 More information:
 

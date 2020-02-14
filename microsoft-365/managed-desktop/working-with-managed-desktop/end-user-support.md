@@ -19,7 +19,7 @@ There are two ways that users in your organization can get help with their Micro
 
 The preferred method for providing support to your users is **Get Help**, an easy-to-use interface built into the end user device.  
 
-![Get Help app icon](images/get-help.png)
+![Get Help app icon](../../media/get-help.png)
 
 This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar. 
 

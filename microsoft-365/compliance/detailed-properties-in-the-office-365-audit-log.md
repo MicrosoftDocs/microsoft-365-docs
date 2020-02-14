@@ -92,4 +92,4 @@ The following table describes the properties that are included (depending on the
 
 The properties described above are also displayed when you click **More information** when viewing the details of a specific event. 
   
-![Click More information to view the detailed properties of the audit log event record](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+![Click More information to view the detailed properties of the audit log event record](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)

@@ -13,7 +13,7 @@ This view provides power, battery, and app usage metrics for your Microsoft Mana
 
 To view usage data, select the **Battery** tab.
 
-![Battery pane: predicted battery life per device model in upper left, top energy consumers (by app) in upper right, insights table across the bottom. Documentation link in upper right.](images/insights_battery.png)
+![Battery pane: predicted battery life per device model in upper left, top energy consumers (by app) in upper right, insights table across the bottom. Documentation link in upper right.](../../media/insights_battery.png)
 
 ## Predicted battery life
 

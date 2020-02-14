@@ -19,7 +19,7 @@ description: Your global admin accounts need special treatment to help keep them
 
 # Step 1: Create and protect your global admin accounts
 
-![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2-Identity](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-global-admin"></a>
 ## Protect global administrator accounts
@@ -54,7 +54,7 @@ The results of this section are:
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  To practice this configuration in a test lab environment, see the [Protect global administrator accounts Test Lab Guide](protect-global-administrator-accounts-microsoft-365-test-environment.md). |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  To practice this configuration in a test lab environment, see the [Protect global administrator accounts Test Lab Guide](protect-global-administrator-accounts-microsoft-365-test-environment.md). |
 |||
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-global-admin) for this section.
@@ -98,7 +98,7 @@ For more information, see the [Privileged access management in Office 365](https
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  To practice this configuration in a test lab environment, see the [Privileged access management Test Lab Guide](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  To practice this configuration in a test lab environment, see the [Privileged access management Test Lab Guide](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
 |||
 
 As an interim checkpoint, see the [exit criteria](identity-exit-criteria.md#crit-identity-pam) corresponding to this step.
@@ -107,5 +107,5 @@ As an interim checkpoint, see the [exit criteria](identity-exit-criteria.md#crit
 
 |||
 |:-------|:-----|
-|![Step 2](./media/stepnumbers/Step2.png)| [Secure your passwords](identity-secure-your-passwords.md) |
+|![Step 2](../media/stepnumbers/Step2.png)| [Secure your passwords](identity-secure-your-passwords.md) |
 

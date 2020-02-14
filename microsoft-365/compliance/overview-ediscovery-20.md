@@ -27,7 +27,7 @@ The Advanced eDiscovery solution in Microsoft 365 builds on the existing eDiscov
 
 The built-in workflow of Advanced eDiscovery aligns with the eDiscovery process outlined by the Electronic Discovery Reference Model (EDRM). 
 
-![The Electronic Discovery Reference Model (EDRM)](media/EDRMv1.png)
+![The Electronic Discovery Reference Model (EDRM)](../media/EDRMv1.png)
 
 (Image source courtesy of edrm.net. The source image was made available under Creative Commons Attribution 3.0 Unported License.)
 
@@ -53,7 +53,7 @@ The following sections describe each step in the built-in workflow in Advanced e
 
 For more information about the end-to-end workflow in Advanced eDiscovery, see this [Microsoft Mechanics video](https://go.microsoft.com/fwlink/?linkid=2066133). 
 
-![Tabs in Advanced eDiscovery follow the EDRM workflow](media/aedisco-homepage-1.png)
+![Tabs in Advanced eDiscovery follow the EDRM workflow](../media/aedisco-homepage-1.png)
 
 ## Managing custodians
 

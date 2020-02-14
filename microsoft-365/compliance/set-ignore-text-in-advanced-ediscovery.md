@@ -103,7 +103,7 @@ Regular expressions are supported for use when defining Ignore Text. The followi
     
 2. In the **Add Ignore Text** dialog, in the **Name** field, type a name for the Ignore Text rule. 
     
-    ![Add ignored text](media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
+    ![Add ignored text](../media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
   
 3. In the **Text** box, type the text to be ignored. The text field allows an unlimited number of characters. 
     
@@ -118,7 +118,7 @@ Regular expressions are supported for use when defining Ignore Text. The followi
     
 7. Click **OK** to save the Ignore Text rule. The defined Ignore Text rule is displayed. 
     
-    ![Set ignored text name](media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
+    ![Set ignored text name](../media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
   
 ## See also
 

@@ -30,7 +30,7 @@ To submit content to Microsoft click the **New submission** button in the top le
 
 ### Submit a questionable email to Microsoft
 
-![Email submission example](../media/submission-flyout-email.PNG)
+![Email submission example](../../media/submission-flyout-email.PNG)
 
 1. To submit an email, select **email** and specify the email **network message ID** or upload the email file.
 
@@ -46,7 +46,7 @@ To submit content to Microsoft click the **New submission** button in the top le
 
 ### Send a suspect URL to Microsoft
 
-![Email submission example](../media/submission-url-flyout.png)
+![Email submission example](../../media/submission-url-flyout.png)
 
 1. To submit a URL select **URL** from the flyout. Type in the full URL including the protocol (**https://**).
 
@@ -56,7 +56,7 @@ To submit content to Microsoft click the **New submission** button in the top le
 
 ### Submit a suspected file to Microsoft
 
-![Email submission example](../media/submission-file-flyout.PNG)
+![Email submission example](../../media/submission-file-flyout.PNG)
 
 1. To submit a file select **File** from the flyout and upload the file you would like to scan.
 

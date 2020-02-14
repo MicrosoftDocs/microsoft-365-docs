@@ -80,7 +80,7 @@ Self-service purchasers can manage their purchases in the limited view of the <a
 
 **View of the limited Microsoft 365 admin center for self-service purchasers:**
 
-![Microsoft 365 admin center screenshot.](../media/MACBillingProductsServicesSelfServicePurchaseIW.png)
+![Microsoft 365 admin center screenshot.](../../media/MACBillingProductsServicesSelfServicePurchaseIW.png)
 
 ## Pricing
 

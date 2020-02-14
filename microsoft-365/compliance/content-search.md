@@ -47,9 +47,9 @@ To have access to the **Content search** page to run searches and preview and ex
     
 2. Click **Search** \> **Content search**.
     
-3. On the **Search** page, click the arrow next to ![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New search**. 
+3. On the **Search** page, click the arrow next to ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New search**. 
     
-    ![The New search dropdown list](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
+    ![The New search dropdown list](../media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
     You can choose one of the following options:
     
@@ -65,7 +65,7 @@ To have access to the **Content search** page to run searches and preview and ex
     
 5. Under **Search query**, specify the following things:
     
-    ![Specify keywords, conditions, and locations to search](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
+    ![Specify keywords, conditions, and locations to search](../media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
    - **Keywords to search for:** Type a search query in **Keywords** box. You can specify keywords, message properties such as sent and received dates, or document properties such as file names or the date that a document was last changed. You can use more complex queries that use a Boolean operator, such as **AND**, **OR**, **NOT**, and **NEAR**. You can also search for sensitive information (such as social security numbers) in documents, or search for documents that have been shared externally. If you leave the keyword box empty, all content located in the specified content locations is included in the search results.
     
@@ -84,7 +84,7 @@ To have access to the **Content search** page to run searches and preview and ex
     
       - **Specific locations:** Use this option to search specific content locations. You can search all content locations for a specific Office 365 service (such as searching all Exchange mailboxes or search all SharePoint sites) or you can search for content in specific locations of any of the Office 365 services that are displayed. 
     
-        ![User interface to choose content locations to search](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
+        ![User interface to choose content locations to search](../media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
          You can also add distribution groups to the list of Exchange mailboxes to search. For distribution groups, the mailboxes of group members are searched. Dynamic distribution groups aren't supported.
     
@@ -101,13 +101,13 @@ To have access to the **Content search** page to run searches and preview and ex
     
 To access this content search again or access other content searches listed on the **Content search** page, select the search and then click **Open**. 
   
-To clear the results or create another search, click ![Add icon](media/O365-MDM-CreatePolicy-AddIcon.gif) **New search**. 
+To clear the results or create another search, click ![Add icon](../media/O365-MDM-CreatePolicy-AddIcon.gif) **New search**. 
   
 ## Preview search results
 
 There are two configuration settings for previewing search results. After you run a new search or open an existing search, click **Individual results** to view the following preview settings: 
   
-![Preview search results settings](media/83519477-1c85-4442-8886-481f186fd758.png)
+![Preview search results settings](../media/83519477-1c85-4442-8886-481f186fd758.png)
   
 1. **Preview results automatically:** This setting displays the search results after you a run a search.
     
@@ -152,7 +152,7 @@ To export search results:
   
 1. On the **Content search** page, click the search that you want to export the search results for. 
     
-2. On the flyout page, click ![Export search results icon](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**, and then click **Export results**. You can also export a search results report.
+2. On the flyout page, click ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**, and then click **Export results**. You can also export a search results report.
     
 3. Complete the sections on the **Export results** fly out page. Be sure to use the scroll bar to view all export options. 
     
@@ -212,21 +212,21 @@ Keep the following things in mind when using the keyword list to create a search
     
     **Incorrect**
     
-    ![The incorrect way to format a keyword list (by pasting the list into the keyword box)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
+    ![The incorrect way to format a keyword list (by pasting the list into the keyword box)](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
     **Correct**
     
-    ![The correct way to format a keyword list (by selecting checkbox and then pasting list)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+    ![The correct way to format a keyword list (by selecting checkbox and then pasting list)](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   
 - You can also prepare a list of keywords or keyword phrases in an Excel file or a plain text file, and then copy and paste your list into the keyword list. To do this, you have to select the **Show keyword list** check box. Then, click the first row in the keyword list and paste your list. Each line from the Excel or text file is pasted into separate row in the keyword list. 
     
 - After you create a query using the keyword list, it's a good idea to verify the search query syntax to make the search query is what you intended. In the search query that's displayed under **Query** in the details pane, the keywords are separated by the text **(c:s)**. This indicates that the keywords are connected by a logical operator similar in functionality to the **OR** operator. Similarly, if your search query includes conditions, the keywords and the conditions are separated by the text **(c:c)**. This indicates that the keywords are connected to the conditions with a logical operator similar in functionality to the **AND** operator. Here's an example of the search query (displayed in the Details pane) that results when using the keyword list and a condition. 
     
-    ![Example of the query that's created when using the keyword list and a condition](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![Example of the query that's created when using the keyword list and a condition](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
 - When you run a content search, Office 365 automatically checks your search query for unsupported characters and for Boolean operators that may not be capitalized. Unsupported characters are often hidden and typically cause a search error or return unintended results. For more information about the unsupported characters that are checked, see [Check your Content Search query for errors](check-your-content-search-query-for-errors.md).
     
-- If you have a search query that contains keywords for non-English characters (such as Chinese characters), you can click **Query language-country/region**![Query language-country/region icon in Content search](media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) and select a language-country culture code value for the search. The default language/region is neutral. How can you tell if you need to change the language setting for a content search? If you're certain content locations contain the non-English characters you're searching for, but the search returns no results, the language setting may be the cause. 
+- If you have a search query that contains keywords for non-English characters (such as Chinese characters), you can click **Query language-country/region**![Query language-country/region icon in Content search](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) and select a language-country culture code value for the search. The default language/region is neutral. How can you tell if you need to change the language setting for a content search? If you're certain content locations contain the non-English characters you're searching for, but the search returns no results, the language setting may be the cause. 
   
 ### Searching OneDrive accounts
 
@@ -294,17 +294,17 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
   In the search results, meeting summaries are identified as **Meeting** in the **Type field**, and call summaries are identified as **Call**. Also, conversations that are part of a Teams channel and 1xN chats are identified as **IM** in the **Type** field.
   
-  ![Teams meetings, calls, and 1xN chats are identified in the Type field](media/O365-ContentSearch-Teams-MessageKind.png)
+  ![Teams meetings, calls, and 1xN chats are identified in the Type field](../media/O365-ContentSearch-Teams-MessageKind.png)
 
 - You can use the **Kind** email property or the **Message kind** search condition to search specifically for content in Teams. 
   
   - To use the **Kind** property as part of the keyword search query, in the **Keywords** box of a search query, type `kind:microsoftteams`.
 
-    ![Use kind:microsoftteams in the Keywords box](media/O365-ContentSearch-Teams-Keywords.png)
+    ![Use kind:microsoftteams in the Keywords box](../media/O365-ContentSearch-Teams-Keywords.png)
   
   - To use a search condition, add the **Message kind** condition and use the value `microsoftteams`. 
 
-    ![Use the Message kind condition with the value microsoftteams.](media/O365-ContentSearch-Teams-MessageKindCondition.png)
+    ![Use the Message kind condition with the value microsoftteams.](../media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
 Conditions are logically connected to the keyword query by the **AND** operator. That means an item must match both the keyword query and the search condition to be returned in the search results. For more information, see the "Guidelines for using conditions" section in [Keyword queries and search conditions for Content Search.](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions)
   
@@ -321,15 +321,15 @@ You can use the **ItemClass** email property or the **Type** search condition to
   
     For example, you can use the following search query to return Yammer messages and Yammer praise items:
 
-    ![Use the ItemClass property to search for Yammer items](media/YammerContentSearch1.png)
+    ![Use the ItemClass property to search for Yammer items](../media/YammerContentSearch1.png)
   
   - Alternatively, you can use the **Type** email condition and select **Yammer messages** to return Yammer items. For example, the following search query will return all Yammer conversation items that contain the keyword "confidential". 
 
-    ![Use the Type condition card to search for Yammer conversation items](media/YammerContentSearch2.png)
+    ![Use the Type condition card to search for Yammer conversation items](../media/YammerContentSearch2.png)
 
 ### Searching inactive mailboxes
 
-You can search inactive mailboxes in a content search. To get a list of the inactive mailboxes in your organization, run the command  `Get-Mailbox -InactiveMailboxOnly` in Exchange Online PowerShell. Alternatively, you can go to **Information governance** \> **Retention** in the Security & Compliance Center, and then click **More**![Navigation Bar ellipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inactive mailboxes**.
+You can search inactive mailboxes in a content search. To get a list of the inactive mailboxes in your organization, run the command  `Get-Mailbox -InactiveMailboxOnly` in Exchange Online PowerShell. Alternatively, you can go to **Information governance** \> **Retention** in the Security & Compliance Center, and then click **More**![Navigation Bar ellipses](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inactive mailboxes**.
   
 Here are a few things to keep in mind when searching inactive mailboxes.
 

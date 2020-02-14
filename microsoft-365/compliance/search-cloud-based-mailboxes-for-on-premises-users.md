@@ -42,7 +42,7 @@ If a Microsoft Teams-enabled user has an on-premises mailbox and their user acco
   
 The following graphic shows the workflow of how Teams chat data for on-premises users is available to search, preview, and export.
   
-![Cloud-based storage for on-premises users in Microsoft Teams](media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Cloud-based storage for on-premises users in Microsoft Teams](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
   
 In addition to this new capability, you can still use Content Search to search, preview, and export Teams content in the cloud-based SharePoint site and Exchange mailbox associated with each Microsoft Team and 1xN Teams chat data in the Exchange Online mailbox for cloud-based users.
 
@@ -66,7 +66,7 @@ After this feature is deployed in your Office 365 organization, the following ch
   
 - The **Add Office app content for on-premises users** checkbox is added under the **Locations** in Content Search. 
     
-    ![The "Add Office app content for on-premises users" checkbox is added to the Content Search UI](media/599e751e-17bd-408d-a18c-127538de6e85.png)
+    ![The "Add Office app content for on-premises users" checkbox is added to the Content Search UI](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
   
 - On-premises users are displayed in the content locations picker that you use to select user mailboxes to search. 
 
@@ -76,7 +76,7 @@ After the feature has been enabled, you can use Content Search in the Security &
   
 1. In the Security & Compliance Center, go to **Search** \> **Content search**
     
-2. On the **Search** page, click ![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New search**.
+2. On the **Search** page, click ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New search**.
     
     As previously explained, the **Add Office app content for on-premises users** checkbox is displayed under **Locations**. It's selected by default.
     
