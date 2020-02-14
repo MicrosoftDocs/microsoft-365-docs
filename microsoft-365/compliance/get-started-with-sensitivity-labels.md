@@ -23,12 +23,12 @@ description: "Ready to start implementing sensitivity labels to help protect you
 
 For information about what sensitivity labels are and how they can help you protect your organization's data, see [Learn about sensitivity labels](sensitivity-labels.md).
 
-If you have Azure Information Protection, you might have questions about whether you need to migrate labels to the unified labeling platform, and which labeling client to use:
+If you have [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection), determine whether you need to migrate labels to the unified labeling platform, and which labeling client to use:
 
 - [How can I determine if my tenant is on the unified labeling platform?](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
 - [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)
 
-However, if you're ready to start your labeling journey, follow this process:
+When you're ready to start protecting your organization's data by using sensitivity labels, follow this process:
 
 1. **Create the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. If you don't already have an established taxonomy, consider starting with label names such as Personal, Public, General, Confidential, and Highly Confidential. You can then use sublabels to group similar labels by category. When you create a label, use the  tooltip text to help users select the appropriate label.
 
@@ -42,7 +42,7 @@ The basic flow for what the admin, user, and Office apps and services do to make
 
 ## Common scenarios
 
-Use the following documentation to help get your labeling deployment off the ground:
+Use the following documentation to support your labeling deployment:
 
 |I want to ...|Documentation|
 |----------------|---------------|
