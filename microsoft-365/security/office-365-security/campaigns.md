@@ -51,7 +51,7 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 
 Campaign Views is available in the [Security & Compliance Center](https://protection.office.com) at **Threat management** \> **Campaigns**.
 
-![Campaigns overview in the Security & Compliance Center](../media/campaigns-overview.png)
+![Campaigns overview in the Security & Compliance Center](../../media/campaigns-overview.png)
 
 You can also get to Campaigns View from:
 

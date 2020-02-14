@@ -55,7 +55,7 @@ Check for duplicate users or distribution list with the same user ID.
 An eDiscovery or content search may yield the following error:
 >This search completed with (#) errors.  Would you like to retry the search on the failed locations?
 
-![Search-specific location fails error screenshot]( media/edisc-tshoot-specific-location-search-fails.png)
+![Search-specific location fails error screenshot](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### Resolution
 
