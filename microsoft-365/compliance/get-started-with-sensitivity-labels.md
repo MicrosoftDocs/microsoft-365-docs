@@ -39,17 +39,31 @@ The basic flow for what the admin, user, and Office apps and services do to make
 
 ![Diagram showing workflow for sensitivity labels](../media/Sensitivity-label-flow.png)
 
-## Supported scenarios
+## Common scenarios for sensitivity labels
 
-Use the following documentation to support your labeling deployment:
+Use the following documentation to support your sensitivity labeling deployment:
 
 |I want to ...|Documentation|
 |----------------|---------------|
-|Create and publish sensitivity labels to protect my organization's data|[Create and configure sensitivity labels and their policies](create-sensitivity-labels.md)|
-|Encrypt documents and emails with sensitivity labels and restrict how that content can be used|[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
+|Create and publish sensitivity labels that will help protect my organization's data|[Create and configure sensitivity labels and their policies](create-sensitivity-labels.md)|
+|Encrypt documents and emails with sensitivity labels and restrict who can access it and how they can use that content |[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
 |Enable collaboration capabilities in SharePoint (and OneDrive) for documents that are labeled with encryption | [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md)
 |Manage sensitivity labels for Office apps so that content is labeled as it's created |[Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md)|
-|Automatically apply sensitivity labels or recommend labels to users <br /><br />Note: Currently, the ability to automatically apply sensitivity labels is available  when content is created in Office apps and not to stored content | [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)|
+|Automatically apply sensitivity labels or recommend labels to users when content is created | [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)|
 |Use sensitivity labels to protect content in Teams and  SharePoint |[Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)|
-|Visualize how sensitivity labels are being used to report status and fine-tune label configuration|[View label usage with label analytics](label-analytics.md)|
+|Discover, label, and protect files stored in on-premises data stores |[Deploying the Azure Information Protection scanner to automatically classify and protect files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
+|Discover, label, and protect files stored in cloud data stores |[Discover, classify, label, and protect regulated and sensitive data stored in the cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|Visualize how sensitivity labels are being used to report deployment status and fine-tune label configuration|[View label usage with label analytics](label-analytics.md)|
+
+
+## End-user documentation for sensitivity labels
+
+- [Apply sensitivity labels to your files and email in Office](https://support.office.com/article/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+
+- [Known issues with sensitivity labels in Office](https://support.office.com/en-us/article/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+
+- [Automatically apply or recommend sensitivity labels to your files and emails in Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
+
+- [Known issues with automatically applying or recommending sensitivity labels](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
+
 
