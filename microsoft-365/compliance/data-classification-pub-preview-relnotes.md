@@ -35,7 +35,7 @@ You will notice a small tool tip appear when you drill into Exchange mailboxes. 
 
 ## Seeing GUIDs instead of label names
 
-Private preview customers have seen instances where the deletion of a label that content has already been stamped with results in label names resolving to a 32-bit GUID in content explorer and activity explorer instead of the label name. 
+Private preview customers have seen instances where the migrated labels or deletion of a label that content has already been stamped with results in label names resolving to a 32-bit GUID in content explorer and activity explorer instead of the label name. 
 
 ## Rendering of encrypted documents
 
