@@ -39,9 +39,9 @@ The basic flow for what the admin, user, and Office apps and services do to make
 
 ![Diagram showing workflow for sensitivity labels](../media/Sensitivity-label-flow.png)
 
-## Supported scenarios
+## Supported scenarios for sensitivity labels
 
-Use the following documentation to support your labeling deployment:
+Use the following documentation to support your sensitivity labeling deployment:
 
 |I want to ...|Documentation|
 |----------------|---------------|
@@ -56,7 +56,7 @@ Use the following documentation to support your labeling deployment:
 If you are using sensitivity labels with the Azure Information Protection unified labeling client, see the [Azure Information Protection documentation](https://docs.microsoft.com/azure/information-protection) for additional deployment instructions.
 
 
-### End-user documentation
+## End-user documentation for sensitivity labels
 
 - [Apply sensitivity labels to your files and email in Office](https://support.office.com/article/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 
