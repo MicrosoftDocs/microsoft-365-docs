@@ -2,7 +2,7 @@
 title: "Get started with sensitivity labels"
 f1.keywords:
 - NOCSH
-ms.author: krowley
+ms.author: cabailey
 author: cabailey
 manager: laurawi
 ms.date: 
