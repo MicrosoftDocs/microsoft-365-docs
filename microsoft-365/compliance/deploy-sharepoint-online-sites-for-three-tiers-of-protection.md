@@ -36,7 +36,7 @@ To create a baseline SharePoint Online team site with public access and permissi
 
 Here is your resulting configuration.
   
-![Baseline-level protection for a public SharePoint Online team site.](media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
+![Baseline-level protection for a public SharePoint Online team site.](../media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
 ### Private
 
@@ -44,7 +44,7 @@ To create a baseline SharePoint Online team site with private access and permiss
   
 Here is your resulting configuration.
   
-![Baseline-level protection for a private SharePoint Online team site.](media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
+![Baseline-level protection for a private SharePoint Online team site.](../media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
 ## Sensitive SharePoint Online team sites
 
@@ -65,7 +65,7 @@ The results of these permission settings are:
 
 Here is your resulting configuration.
   
-![Sensitive-level protection for an isolated SharePoint Online team site.](media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
+![Sensitive-level protection for an isolated SharePoint Online team site.](../media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
 The members of the site, through group membership in one of the access groups, can now securely collaborate on the resources of the site.
   
@@ -89,7 +89,7 @@ The results of these permission settings are:
 
 Here is your resulting configuration.
   
-![Highly confidential-level protection for an isolated SharePoint Online team site.](media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
+![Highly confidential-level protection for an isolated SharePoint Online team site.](../media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
 The members of the site, through group membership in one of the access groups, can now securely collaborate on the resources of the site.
   
@@ -99,8 +99,6 @@ The members of the site, through group membership in one of the access groups, c
 
 ## See also
 
-[Secure SharePoint Online sites and files](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
-  
 [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

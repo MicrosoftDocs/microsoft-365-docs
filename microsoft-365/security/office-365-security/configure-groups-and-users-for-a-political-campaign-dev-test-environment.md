@@ -182,11 +182,11 @@ Use these steps to verify that dynamic group membership and group-based licensin
 
 Record these values for working with the Office 365 and EMS trial subscriptions for this dev/test environment:
 
-- Your trial subscription organization name: ![Underline](../media/Common-Images/TableLine.png)
+- Your trial subscription organization name: ![Underline](../../media/Common-Images/TableLine.png)
 
   For example, for the trial subscription domain name of contoso.onmicrosoft.com, the organization name is "contoso".
 
-- The Office 365 global administrator name: ![Underline](../media/Common-Images/TableLine.png).onmicrosoft.com
+- The Office 365 global administrator name: ![Underline](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   Record the password for this account and the common initial password for the other user accounts in a secure location.
 

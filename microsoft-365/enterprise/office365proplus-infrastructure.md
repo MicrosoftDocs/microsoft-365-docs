@@ -19,7 +19,7 @@ description: The steps to deploy the Office 365 ProPlus infrastructure for Micro
 
 # Phase 4: Office 365 ProPlus
 
-![Phase 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
+![Phase 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon.png)
 
 *This applies to both the E3 and E5 versions of Microsoft 365 Enterprise and Microsoft 365 Education*
 
@@ -70,7 +70,7 @@ Learn how the experts at Microsoft are [deploying and managing updates for Offic
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [deployed Office 365 ProPlus](contoso-o365pp.md).
 
-![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## Next step
 

@@ -24,7 +24,7 @@ To learn more about the different types of classifiers, see [Getting started wit
 
 This timeline reflects a sample deployment.
 
-![trainable-classifier-timeline](media/trainable-classifier-deployment-timeline_border.png)
+![trainable-classifier-timeline](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
 > Opt-in is required the first time for trainable classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content. Contact your global administrator to kick off the opt-in process.
@@ -75,7 +75,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 10. You can now view the details page by choosing the classifier.
 
 
-![trainable classifier ready for testing](media/classifier-trainable-ready-to-test-detail.png)
+![trainable classifier ready for testing](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. Collect at least 200 test content items. Microsoft recommends 10,000 for best results. These should be a mix of items that are strong positives, strong negatives and some that are a little less obvious in their nature. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
@@ -95,13 +95,13 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 16. When the trainable classifier is done processing your test files, the status on the details page will change to `Ready to review`. If you need to increase the test sample size, choose `Add items to test` and allow the trainable classifier to process the additional items.
 
-![ready to review screenshot](media/classifier-trainable-ready-to-review-detail.png)
+![ready to review screenshot](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. Choose `Tested items to review` tab to review items.
 
 18. Microsoft 365 will present 30 items at a time. Review them and in the `We predict this item is "Relevant". Do you agree?` box choose either `Yes` or `No` or `Not sure, skip to next item`. Model accuracy is automatically updated after every 30 items.
 
-![review items box](media/classifier-trainable-review-detail.png)
+![review items box](../media/classifier-trainable-review-detail.png)
 
 19. Review *at least* 200 items.
 
@@ -109,7 +109,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 20. Continue to review until the accuracy reaches at least 70% and the `Publish the classifier` status is `Ready to use`.
 
-![accuracy and ready to publish](media/classifier-trainable-review-ready-to-publish.png)
+![accuracy and ready to publish](../media/classifier-trainable-review-ready-to-publish.png)
 
 21. Publish the classifier.
 

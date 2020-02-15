@@ -74,20 +74,20 @@ You choose to trigger a disposition review as part of a retention label's config
   
 A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Office 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
   
-![Dispositions page in Security and Compliance Center](media/Retention-Dispositions-v2-page.png)
+![Dispositions page in Security and Compliance Center](../media/Retention-Dispositions-v2-page.png)
 
 
 ## Setting up the disposition review by creating a retention label
 
 This is the basic workflow for setting up a disposition review. Note that this flow shows a retention label being published and then manually applied by a user; alternatively, a retention label that triggers a disposition review can be auto-applied to content.
   
-![Chart showing flow of how disposition works](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![Chart showing flow of how disposition works](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
 A disposition review is an option when you create a retention label. This option is not available in a retention policy but only in a retention label that's configured to retain content.
   
 For more information about retention labels, see [Overview of retention labels](labels.md).
   
-![Retention settings for a label](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
+![Retention settings for a label](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
 > When you specify the option **Notify these people when there are items ready to review**, specify a user or mail-enabled security group. Office 365 groups are not supported for this option.
@@ -98,7 +98,7 @@ When a reviewer is notified by email that content is ready to review, they go to
 
 After you select a retention label, you then see all pending dispositions for that label.
 
-![Disposition options](media/Retention-Disposition-options-v2.png)
+![Disposition options](../media/Retention-Disposition-options-v2.png)
 
 You can then: 
   
@@ -140,24 +140,24 @@ From the **Pending disposition** page, you can view both pending and completed d
 
 Records that were disposed of without a disposition review are identified by the type **Records Disposed**. For example:
 
-![Records that were disposed of without a disposition review](media/records-disposed.png)
+![Records that were disposed of without a disposition review](../media/records-disposed.png)
 
 Because this feature is gradually rolling out to tenants during February and March 2020, you might not see these records immediately. When you do, this disposition information is kept for up to 7 years after the item was disposed, with a limit of one million items per record for that period.
 
 If you see the **Count** number nearing this limit of one million, and you need proof of disposition for the record, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
-![Disposition tabs](media/Retention-Disposition-tabs.png)
+![Disposition tabs](../media/Retention-Disposition-tabs.png)
     
 ## Filter the disposition views
 
 You can filter these views by retention label or time range. For pending dispositions, the time range is based on the expiration date. For disposed items, the time range is based on the deletion date.
   
-![Disposition filter options](media/Retention-filter-options.png)
+![Disposition filter options](../media/Retention-filter-options.png)
 
 ### Export the disposition items
 
 In addition, you can export the items in either view as a .csv file that you can open in Excel.
   
-![Exported disposition data in Excel](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
+![Exported disposition data in Excel](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
   
 

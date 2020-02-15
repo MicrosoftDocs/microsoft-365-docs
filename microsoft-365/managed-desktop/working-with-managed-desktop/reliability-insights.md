@@ -13,7 +13,7 @@ ms.collection: M365-modern-desktop
 This view provides you with a health summary of your managed devices. To view reliability data, select the **Reliability** tab.
 
 
-![Reliability pane: reliability across devices in upper left, reliability over time graph in upper right, top issues table across the bottom. Help and feedback buttons in lower right.](images/insights_reliability.png)
+![Reliability pane: reliability across devices in upper left, reliability over time graph in upper right, top issues table across the bottom. Help and feedback buttons in lower right.](../../media/insights_reliability.png)
 
 The **Reliability across devices** section offers a quick health summary of your deployment over the last 14 days by reporting the percentage of devices considered to be “healthy” and the mean time observed since the last reported failure. 
 

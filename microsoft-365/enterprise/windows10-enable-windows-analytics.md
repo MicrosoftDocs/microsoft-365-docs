@@ -16,7 +16,7 @@ ms.author: greglin
 
 # Step 4: Monitor device health and compliance
 
-![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows Analytics uses diagnostic data to provide rich, actionable information to help you gain deep insights into the operational efficiency and health of Windows 10 devices in your environment.
 
@@ -30,4 +30,4 @@ As an interim checkpoint, you can see the [exit criteria](windows10-exit-criteri
 
 |||
 |:-------|:-----|
-|![Step 5](./media/stepnumbers/Step5.png)| [Deploy Windows 10 Enterprise security features](windows10-enable-security-features.md) |
+|![Step 5](../media/stepnumbers/Step5.png)| [Deploy Windows 10 Enterprise security features](windows10-enable-security-features.md) |

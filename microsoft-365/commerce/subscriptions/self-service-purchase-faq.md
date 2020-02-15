@@ -22,7 +22,7 @@ ms.custom: aka.ms/self-service-purchase-faq
 > [!NOTE]
 > The information in this article only applies to Microsoft Power Platform (Power BI, Power Apps and Power Automate) subscriptions.
 
-Self-service purchases are now available for Power Platform in the United States.
+Self-service purchases are now available for Power Platform in the United States, Australia, Canada, and Japan.
 
 ## General
 
@@ -80,7 +80,7 @@ Self-service purchasers can manage their purchases in the limited view of the <a
 
 **View of the limited Microsoft 365 admin center for self-service purchasers:**
 
-![Microsoft 365 admin center screenshot.](../media/MACBillingProductsServicesSelfServicePurchaseIW.png)
+![Microsoft 365 admin center screenshot.](../../media/MACBillingProductsServicesSelfServicePurchaseIW.png)
 
 ## Pricing
 

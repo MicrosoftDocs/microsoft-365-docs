@@ -47,7 +47,7 @@ For more information about these policies, see [What are baseline policies](http
 1. Go to [Azure portal](https://portal.azure.com), and then navigate to **Azure Active Directory** \> **Conditional Access**.
     
     The baseline policies are listed on the page. <br/> <br/>
-    ![Page that lists baseline policies for conditional access.](media/baslinepolicies.png)
+    ![Page that lists baseline policies for conditional access.](../media/baslinepolicies.png)
 1. See the following specific instructions for each policy:
 
   - [Require MFA for admins](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

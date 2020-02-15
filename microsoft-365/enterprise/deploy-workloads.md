@@ -42,7 +42,7 @@ These scenarios step you through configuring a Microsoft Teams team or SharePoin
 
 Here are the workloads and scenarios in the overall Microsoft 365 for enterprise deployment guide:
 
-![The workloads and scenarios in the overall Microsoft 365 for enterprise deployment guide](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![The workloads and scenarios in the overall Microsoft 365 for enterprise deployment guide](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 See the [Microsoft 365 Productivity Library](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary) for additional scenarios. 
 

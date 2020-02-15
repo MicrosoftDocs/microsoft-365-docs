@@ -54,7 +54,7 @@ To make **Communication compliance** available as a menu option in Microsoft 365
 
 5. Select **Choose roles** and then select **Add**. Select the checkbox for **Supervisory Review Administrator**, **Case Management**, and **Review**, then select **Add** and **Done**. Select **Next**.
 
-    ![Communication compliance required role groups](media/communication-compliance-role-groups.png)
+    ![Communication compliance required role groups](../media/communication-compliance-role-groups.png)
 
 6. Select **Choose members** and then select **Add**. Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**. Select **Next**.
 
@@ -62,7 +62,14 @@ To make **Communication compliance** available as a menu option in Microsoft 365
 
 For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
-## Step 2 (optional): Set up groups for communication compliance
+## Step 2 (required): Enable the Office 365 audit log
+
+Communication compliance requires audit logs to show alerts and track remediation actions taken by reviewers. The audit logs are a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes.
+
+For step-by-step instructions to turn on auditing, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+
+
+## Step 3 (optional): Set up groups for communication compliance
 
  When you create a communication compliance policy, you define who has their communications reviewed and who performs reviews. In the policy, you'll use email addresses to identify individuals or groups of people. To simplify your setup, you can create groups for people who have their communication reviewed and groups for people who review those communications. If you're using groups, you may need several. For example, if you want to monitor communications between two distinct groups of people or if you want to specify a group that isn't going to be supervised.
 
@@ -81,7 +88,7 @@ For more information about setting up groups, see:
 - [Manage mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Overview of Office 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## Step 3 (required): Create a communication compliance policy
+## Step 4 (required): Create a communication compliance policy
   
 1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
@@ -115,7 +122,7 @@ For more information about setting up groups, see:
 
 6. The **Your policy was created** page is displayed with guidelines on when policy will be activated and which communications will be captured.
 
-## Step 4 (optional): Create employee notice templates
+## Step 5 (optional): Create employee notice templates
 
 If you want to have the option of responding to a policy alert by sending a reminder notice to the associated employee, you'll need to create at least one notice template in your organization. The notice template fields are editable before they're sent as part of the alert remediation process, and creating a customized notice template for each communication compliance policy is recommended.
 
@@ -135,7 +142,7 @@ If you want to have the option of responding to a policy alert by sending a remi
 
 5. Select **Save** to create and save the notice template.
 
-## Step 5 (optional): Test your communication compliance policy
+## Step 6 (optional): Test your communication compliance policy
 
 After you create a communication compliance policy, it's a good idea to test it to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your data loss prevention (DLP) policies](create-test-tune-dlp-policy.md) if your communication compliance policies include sensitive information types. Make sure you give your policies time to activate so that the communications you want to test are captured.
 
@@ -150,11 +157,3 @@ Follow these steps to test your communication compliance policy:
 3. Sign in to Microsoft 365 as a reviewer designated in the communication compliance policy. Navigate to **Communication compliance** > **Alerts** to view the alerts for your policies.
 
 4. Remediate the alert using the remediation controls and verify that the alert is properly resolved.
-
-## Step 6 (optional): Enable auditing for your communication compliance policies
-
-After you've tested your policies, you may want to enable auditing so that activities associated with communication compliance management are recorded. This audit may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes.
-
-When auditing is enabled, communication compliance policies have built-in audit trails for complete readiness for internal or external audits. You can use the **Export review activities** control on the main page for any policy to generate an audit file or view audit activities in the unified audit log if auditing is enabled.
-
-To turn on auditing, click **Start recording user and admin activity** on the **Audit log search** page in the Office 365 Security & Compliance Center. If you don't see this link, auditing has already been turned on for your organization. After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).

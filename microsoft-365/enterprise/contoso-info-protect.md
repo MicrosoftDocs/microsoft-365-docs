@@ -83,7 +83,7 @@ In conjunction with their identity and mobile device management infrastructure a
 
 Here is Contoso's resulting set of policies for information protection.
 
-![Device, Exchange Online, and SharePoint Conditional Access policies](./media/contoso-info-protect/contoso-info-protect-fig1.png)
+![Device, Exchange Online, and SharePoint Conditional Access policies](../media/contoso-info-protect/contoso-info-protect-fig1.png)
 
 >[!Note]
 >Contoso also configured additional Conditional Access policies for identity and sign-in. See [Identity for the Contoso Corporation](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
@@ -111,7 +111,7 @@ The following table maps Contoso's data levels to information protection feature
 
 Here is Contoso's resulting information protection configuration.
 
-![Contoso's resulting information protection configuration](./media/contoso-info-protect/contoso-info-protect-fig2.png)
+![Contoso's resulting information protection configuration](../media/contoso-info-protect/contoso-info-protect-fig2.png)
 
 ## Next step
 
