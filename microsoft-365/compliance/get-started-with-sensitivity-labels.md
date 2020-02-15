@@ -66,4 +66,6 @@ Use the following documentation to support your sensitivity labeling deployment:
 
 - [Known issues with automatically applying or recommending sensitivity labels](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
+- [Azure Information Protection unified labeling user guide](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-user-guide)
+
 
