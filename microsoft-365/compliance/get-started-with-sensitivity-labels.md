@@ -35,9 +35,19 @@ When you're ready to start protecting your organization's data by using sensitiv
 
 3. **Publish the labels.** After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable — you define it once, and then you can include it in several label policies assigned to different users. So for example, you could pilot your sensitivity labels by assigning a label policy to just a few users. Then when you're ready to roll out the labels across your organization, you can create a new label policy for your labels and this time, specify all users.
 
-The basic flow for what the admin, user, and Office apps and services do to make sensitivity labels work:
+The basic flow for deploying and applying sensitivity labels:
 
 ![Diagram showing workflow for sensitivity labels](../media/Sensitivity-label-flow.png)
+
+## Permissions required to create and manage sensitivity labels
+
+Members of your compliance team who will create sensitivity labels need permissions to the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center. 
+
+By default, global administrators for your tenant have access to these admin centers and can give compliance officers and other people access, without giving them all of the permissions of a tenant admin. For this delegated limited admin access, go to the **Permissions** page of one of these admin centers, and then add members to the **Compliance Data Administrator**, **Compliance Administrator** or **Security Administrator** role group.
+
+Alternatively to using roles, you can create a new role group and add either **Sensitivity Label Administrator** or **Organization Configuration** roles to this group. For instructions, see [Give users access to the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+
+These permissions are required only to create and configure sensitivity labels and their label policies. They are not required to apply the labels in apps or services.
 
 ## Common scenarios for sensitivity labels
 
@@ -51,19 +61,19 @@ Use the following documentation to support your sensitivity labeling deployment:
 |Manage sensitivity labels for Office apps so that content is labeled as it's created |[Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md)|
 |Automatically apply sensitivity labels or recommend labels to users when content is created | [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)|
 |Use sensitivity labels to protect content in Teams and  SharePoint |[Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)|
-|Discover, label, and protect files stored in on-premises data stores |[Deploying the Azure Information Protection scanner to automatically classify and protect files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
-|Discover, label, and protect files stored in cloud data stores |[Discover, classify, label, and protect regulated and sensitive data stored in the cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|Discover, label, and protect files stored in data stores that are on premises |[Deploying the Azure Information Protection scanner to automatically classify and protect files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
+|Discover, label, and protect files stored in data stores that are in the cloud|[Discover, classify, label, and protect regulated and sensitive data stored in the cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Visualize how sensitivity labels are being used to report deployment status and fine-tune label configuration|[View label usage with label analytics](label-analytics.md)|
 
 
 ## End-user documentation for sensitivity labels
 
 - [Apply sensitivity labels to your files and email in Office](https://support.office.com/article/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-
-- [Known issues with sensitivity labels in Office](https://support.office.com/en-us/article/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+    - [Known issues with sensitivity labels in Office](https://support.office.com/en-us/article/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 - [Automatically apply or recommend sensitivity labels to your files and emails in Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
+    - [Known issues with automatically applying or recommending sensitivity labels](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
-- [Known issues with automatically applying or recommending sensitivity labels](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
+- [Azure Information Protection unified labeling user guide](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-user-guide)
 
 
