@@ -24,7 +24,7 @@ Insider risk management users are employees in your organization that are includ
 - **Confirmed violations**: The number of cases resolved as *confirmed policy violation* for the user.
 - **Case**: The current active case for the user.
 
-![Insider risk management users dashboard](media/insider-risk-users-dashboard.png)
+![Insider risk management users dashboard](../media/insider-risk-users-dashboard.png)
 
 ## View user details
 

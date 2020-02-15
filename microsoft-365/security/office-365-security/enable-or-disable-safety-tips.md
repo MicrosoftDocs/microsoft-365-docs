@@ -43,15 +43,15 @@ In this topic:
 
 4. On the **Policy** page, choose **Anti-Spam**.
 
-    ![This screenshot shows how to get to the Anti-spam settings page in the Security &amp; Compliance Center.](../media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
+    ![This screenshot shows how to get to the Anti-spam settings page in the Security &amp; Compliance Center.](../../media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
 
 5. On the **Anti-spam settings** page choose the **Custom** tab.
 
-    ![This screenshot shows the location of the Custom tab on the Anti-spam settings page in the Security &amp; Compliance Center.](../media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
+    ![This screenshot shows the location of the Custom tab on the Anti-spam settings page in the Security &amp; Compliance Center.](../../media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
 
 6. If necessary, choose the **Custom settings** switch to turn on custom settings. If the custom settings switch is set to **Off**, you won't be able to modify spam filter policies.
 
-    ![This screenshot shows custom anti-spam filter policy settings turned off.](../media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
+    ![This screenshot shows custom anti-spam filter policy settings turned off.](../../media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
 
 7. Expand the spam policy you want to modify and then choose **Edit policy**. For example, choose the down arrow next to **Default spam filter policy**. Or, if you want, you can create a new policy by choosing **Add a policy**.
 

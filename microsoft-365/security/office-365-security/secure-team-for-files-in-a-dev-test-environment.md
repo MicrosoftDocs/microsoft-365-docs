@@ -23,7 +23,7 @@ description: "Summary: Create sensitive and highly confidential teams in Microso
 
 This article provides step-by-step instructions to create a dev/test environment that includes the sensitive and highly confidential teams for the [Secure files in Microsoft Teams](secure-files-in-teams.md) solution.
   
-![Sensitive and highly confidential teams in Microsoft Teams for files.](../media/sensitive-highly-confidential-teams-dev-test.png)
+![Sensitive and highly confidential teams in Microsoft Teams for files.](../../media/sensitive-highly-confidential-teams-dev-test.png)
   
 Use this dev/test environment to experiment and fine-tune settings for your specific needs before deploying these types of teams in production.
   
@@ -224,7 +224,7 @@ Next, configure a data loss prevention (DLP) policy that notifies users when the
 
 Here is the resulting configuration for the Marketing Campaigns team.
 
-![Configuration for the Marketing Campaigns team.](../media/sensitive-team-config-dev-test.png)
+![Configuration for the Marketing Campaigns team.](../../media/sensitive-team-config-dev-test.png)
   
 ### Company strategy team site
 
@@ -298,7 +298,7 @@ After creating, publish the new label. If you sign in as a member of the Company
 
 Here is the resulting configuration for the Company Strategy team.
 
-![Configuration for the Company Strategy team.](../media/highlyconfidential-team-config-dev-test.png) 
+![Configuration for the Company Strategy team.](../../media/highlyconfidential-team-config-dev-test.png) 
 
 Files in the documents section of the underlying Company Strategy SharePoint site are assigned the Highly confidential retention label and are subject to the configured DLP policy. Files can also have the Company Strategy sensitivity label assigned.    
   

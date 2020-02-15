@@ -27,7 +27,7 @@ In most cases, it will be useful to be able to dig deeper into the data in a rev
 
 To create and run a query on the documents in a review set, click **New query** in the review set. After you name your query and define the conditions, click **Save** to save and run the query. To run a query that has been previously saved, click a saved query.
 
-![Review set queries](media/AeDReviewSetQueries.png)
+![Review set queries](../media/AeDReviewSetQueries.png)
 
 ## Building a review set query
 
@@ -55,7 +55,7 @@ In addition to condition cards, you can use a KQL-like query language in the Key
 
 In addition to queries that you can save, you can use review set filters to quickly apply additional conditions to a review set query. This helps you further refine the results displayed by a review set query.
 
-![Review set filters](media/AeDReviewSetFilters.png)
+![Review set filters](../media/AeDReviewSetFilters.png)
 
 Filters differ from queries in two significant ways:
 

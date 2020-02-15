@@ -35,7 +35,7 @@ Before doing any work with on-premises data, consult with your legal and complia
 
 The following illustration lists recommended capabilities to use across each of these workloads to discover, classify, protect, and monitor personal data. See the articles in this section for more information.
 
-![](media/gdpr-for-office-servers-image1.png)
+![](../media/gdpr-for-office-servers-image1.png)
 
 ## Illustration description
 

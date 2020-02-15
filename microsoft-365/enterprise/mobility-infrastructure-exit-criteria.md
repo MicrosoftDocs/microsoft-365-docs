@@ -19,7 +19,7 @@ ms.custom: microsoft-intune
 
 # Mobile device management infrastructure exit criteria
 
-![Phase 5: Mobile Device Management](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
+![Phase 5: Mobile Device Management](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
 
 *This applies to the E3 and E5 versions of Microsoft 365 Enterprise*
 
@@ -37,4 +37,4 @@ Your devices are enrolled in Intune and configured with the appropriate policies
 
 |||
 |:-------|:-----|
-|![Phase 6: Information Protection](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [information protection](infoprotect-infrastructure.md). |
+|![Phase 6: Information Protection](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [information protection](infoprotect-infrastructure.md). |

@@ -34,7 +34,7 @@ Download offers a simple way to download content from a review set in Native for
 To download content from a review set, start by selecting the files you want to download then select “Download” under the Actions menu.
 
 ![A screenshot of a computer
-Description automatically generated](media/eDiscoDownload.png)
+Description automatically generated](../media/eDiscoDownload.png)
 
 ## Export documents from a review set
 

@@ -43,13 +43,13 @@ Microsoft Threat Protection's unique cross-product layer augments the individual
 - Automate response to compromise by triggering self-healing for impacted assets through automated remediation
 - Enable security teams to perform detailed and effective threat hunting across endpoint and Office data
 
-![Image of incident overview page](../images/overview-incident.png) <br>
+![Image of incident overview page](../../media/overview-incident.png) <br>
 Cross-product incident (Overview)
 
-![Image of alerts queue](../images/incident-list.png)<br>
+![Image of alerts queue](../../media/incident-list.png)<br>
 All related alerts across the suite products correlated together into a single incident (alerts view)
 
-![Image of incident queue](../images/advanced-hunting.png)<br>
+![Image of incident queue](../../media/advanced-hunting.png)<br>
 Query-based hunting on top of email and endpoint raw data
 
 

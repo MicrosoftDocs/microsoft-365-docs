@@ -92,7 +92,7 @@ To help you the information you need more quickly, Microsoft improvement actions
 
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
-![Secure Score homepage](../media/secure-score/homepage-original.png)
+![Secure Score homepage](../../media/secure-score/homepage-original.png)
 *Figure 1: Microsoft Secure Score overview page*
 
 ## Take action to improve your score
@@ -117,7 +117,7 @@ When you select a specific improvement action, a fly out appears. To complete th
 
 4. Select **Review** because the improvement action requires you to regularly review a part of your environment to gain and retain points. For example, mailbox forwarding rules should be reviewed on a weekly basis to make sure data is not being exfiltrated from your network. You do not need to make any changes, but an action will need to be performed. If you regularly review the rules, you will receive the points. If not, the score is reduced.
 
-![Secure Score improvement action example](../media/secure-score/secure-score1x450.png) ![Secure Score review improvement action example](../media/secure-score/secure-score2x450.png)
+![Secure Score improvement action example](../../media/secure-score/secure-score1x450.png) ![Secure Score review improvement action example](../../media/secure-score/secure-score2x450.png)
 
 *Figures 2 & 3: Improvement action flyouts*
 
@@ -135,7 +135,7 @@ To make Microsoft Secure Score a better representative of your security posture 
 
 ### Removed “not scored” improvement actions
 
-One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable.  
+One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable.  
 
 For these reasons, all improvement actions that were not scored have been removed. No action is needed on your part.
 
@@ -205,11 +205,7 @@ New improvement actions added:
 
 One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Review improvement actions are not measured to the same standard as other improvement actions.  
 
-For these reasons, all improvement actions that required a review cadence will be temporarily removed. No action is needed on your part.
-
-### Simplification of the point system
-
-To standardize points across multiple experiences, each Secure Score improvement action point total will be updated to be worth 10 points or less. It is necessary be more consistent across the wide breather of security controls that we have today and ones that we will be adding in the future. While this is a significant change and you will see a drop in point totals, there will be no change to your security posture.  
+For these reasons, all improvement actions that required a review cadence will be temporarily removed. No action is needed on your part. 
 
 ### Preview features
 
@@ -220,6 +216,7 @@ The following features will be included in the [preview release](microsoft-secur
 * Better tracking and monitoring for score regressions
 * Filter, tag, search, and group your improvement actions
 * Manage towards your future goals using score projections and planned actions
+* Simplification of the points system
 * And more!
 
 ## We want to hear from you

@@ -31,7 +31,7 @@ Cohasset validated that when Exchange Online and the Security & Compliance Cente
 
 You can [download the Cohasset assessment here](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers).
 
-![Title page of downloadable assessment by Cohasset Associates](media/cohasset-associates-assessment.png)
+![Title page of downloadable assessment by Cohasset Associates](../media/cohasset-associates-assessment.png)
 
 ## This assessment is specific to Exchange Online
 

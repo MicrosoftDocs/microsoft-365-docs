@@ -54,25 +54,25 @@ Each industry also has their own set of specialized regulations. Rather than pro
 - **Sensitive protection**: Some customers have a subset of data that must be protected at higher levels, or they may require all data to be protected at a higher level. You can apply increased protection to all or specific data sets in your Office 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.  
 - **Highly regulated**: Some organizations may have a small amount of data that is highly classified, consititutes trade secrets, or is regulated data. Microsoft provides capabilities to help organizations meet these requirements, including added protection for identities and devices.
 
-![Security cone - All customers > Some customers > Specific customers. Broad application to specific application](../images/M365-idquality-threetiers.png)
+![Security cone - All customers > Some customers > Specific customers. Broad application to specific application](../media/M365-idquality-threetiers.png)
 
 This guidance shows you how to implement protection for identities and devices for each of these tiers of protection. Use this guidance as a starting point for your organization and adjust the policies to meet your organization's specific requirements.
 
 It’s important to use consistent levels of protection across your data, identities, and devices. For example, if you implement this guidance, be sure to protect your data at comparable levels. These architecture models show you which capabilities are comparable.
 
 **Identity and device protection for Office 365**<br/>
-![Thumbnail for poster "Identity and device protection for Office 365"](../images/O365_Identity_device_protection_thumb.png)<br/>
+![Thumbnail for poster "Identity and device protection for Office 365"](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)
 
 **File Protection Solutions in Office 365**<br/>
-![Thumbnail for poster "File protection solutions in Office 365"](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
+![Thumbnail for poster "File protection solutions in Office 365"](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
 ## Security and productivity trade-offs
 
 Implementing any security strategy requires trade-offs between security and productivity. It's helpful to evaluate how each decision affects the balance of security, functionality, and ease of use.
 
-![Security triad balancing security, functionality, and ease of use.](media/policies-configurations/security-triad.png)
+![Security triad balancing security, functionality, and ease of use.](../media/policies-configurations/security-triad.png)
 
 The recommendations provided are based on the following principles:
 
