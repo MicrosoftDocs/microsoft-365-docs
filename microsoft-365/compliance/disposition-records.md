@@ -92,7 +92,7 @@ For more information about retention labels, see [Overview of retention labels](
 > [!NOTE]
 > When you specify the option **Notify these people when there are items ready to review**, specify a user or mail-enabled security group. Office 365 groups are not supported for this option.
 
-## Disposing content
+## Disposing of content
 
 When a reviewer is notified by email that content is ready to review, they go to the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center. The reviewers can see how many items for each retention label are awaiting disposition, and then select a retention label to see all content with that label.
 
@@ -136,7 +136,7 @@ From the **Pending disposition** page, you can view both pending and completed d
 
 - The **Disposed items** tab shows permanently-deleted items that have already been through a disposition review, or deleted records that didn't go through a disposition review. They show here because the permanent deletion process can take several days. Items that had a different retention label applied, or had their retention period extended as part of a review, won't appear here.
 
-### Disposed records that didn't go through disposition review
+### Disposed of records that didn't go through disposition review
 
 Records that were disposed of without a disposition review are identified by the type **Records Disposed**. For example:
 
@@ -159,5 +159,14 @@ You can filter these views by retention label or time range. For pending disposi
 In addition, you can export the items in either view as a .csv file that you can open in Excel.
   
 ![Exported disposition data in Excel](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
+
+## Auditing record disposal
+ 
+When records are disposed, an audit entry with the operation name of **RecordDelete** is added to the audit log.
+
+For more information about auditing, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance).
+
+
+
   
 
