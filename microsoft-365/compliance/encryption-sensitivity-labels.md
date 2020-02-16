@@ -39,13 +39,13 @@ Finally, as an admin, when you configure a sensitivity label to apply encryption
 
 The encryption settings are available when you [create a sensitivity label](create-sensitivity-labels.md) in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center.
 
-## How encryption works
+## Understand how the encryption works
 
 Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
 
 When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
-## How to configuring a label for encryption
+## How to configure a label for encryption
 
 [Create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), and on the **Encryption** page of the wizard, select one of the following options:
 
@@ -93,7 +93,7 @@ When an email message is encrypted by any method, any unencrypted Office documen
 
 Documents that are already encrypted and then added as attachments always preserve their original encryption. 
 
-## Configure encryption settings for a sensitivity label
+## Configure encryption settings
 
 When you select **Apply** on the **Encryption** page of the wizard to create or edit a sensitivity label, choose whether to:
 
