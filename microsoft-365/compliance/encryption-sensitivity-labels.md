@@ -47,7 +47,7 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 ## Configuring a label for encryption
 
-When you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), on the **Encryption** page of the wizard, you can select one of the following options:
+[Create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), and on the **Encryption** page of the wizard, select one of the following options:
 
 - **None**: The default setting for a new label. No new encryption is applied.
 - **Apply**: Turns on encryption, and you then specify encryption settings.
