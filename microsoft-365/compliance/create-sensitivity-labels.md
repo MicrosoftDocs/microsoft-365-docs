@@ -25,7 +25,7 @@ To create and publish your [sensitivity labels](sensitivity-labels.md), go to yo
 
 First, create and configure the sensitivity labels that you want to make available in Office apps and for services. Then, create one or more label policies that contain the labels and policy settings that you configure. It's the label policy that publishes the labels and settings for your chosen users and locations.
 
-## Prerequisites
+## Before you begin
 
 The global admin for your organization has full permissions to create and manage all aspects of sensitivity labels. If you aren't signing in as a global admin, see [Permissions required to create and manage sensitivity labels](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
 
