@@ -45,7 +45,7 @@ Encryption uses the Azure Rights Management service (Azure RMS) from Azure Infor
 
 When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
-## Configuring a label for encryption
+## How to configuring a label for encryption
 
 [Create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), and on the **Encryption** page of the wizard, select one of the following options:
 
@@ -93,7 +93,7 @@ When an email message is encrypted by any method, any unencrypted Office documen
 
 Documents that are already encrypted and then added as attachments always preserve their original encryption. 
 
-## How to configure encryption settings for a sensitivity label
+## Configure encryption settings for a sensitivity label
 
 When you select **Apply** on the **Encryption** page of the wizard to create or edit a sensitivity label, choose whether to:
 
