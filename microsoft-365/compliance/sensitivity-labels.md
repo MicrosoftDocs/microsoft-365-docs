@@ -97,7 +97,7 @@ After a sensitivity label is applied to an email or document, any configured pro
 
 - **Protect content in containers such as sites and groups** when you opt into the preview to [use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md).
     
-    Configuration options for the **Site and group settings** page don't display until you opt into the preview. Be aware that this label configuration doesn't result in documents being automatically labeled but instead, the label settings protect content by controlling access to the container where documents are stored. These settings include the privacy level, whether an Office 365 group owner can add guests to the group, and the level of access granted to an unmanaged device.
+    Configuration options for site and group settings don't display until you opt into the preview. Be aware that this label configuration doesn't result in documents being automatically labeled but instead, the label settings protect content by controlling access to the container where documents are stored. These settings include the privacy level, whether an Office 365 group owner can add guests to the group, and the level of access granted to an unmanaged device.
 
 - **Apply the label automatically in Office apps, or recommend a label.** You can choose what types of sensitive information that you want labeled, and the label can either be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays whatever text you choose. For example:
     
