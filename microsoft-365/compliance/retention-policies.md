@@ -229,7 +229,7 @@ Unlike Exchange email, you can't toggle the status of the Skype location on to i
 
 ![Choose Skype location for retention policies](../media/skype-location-retention-policies.png)
   
-When you choose Skype for Business users, you can quickly include all users by selecting the **Name** box in the column header. However, it's important to understand that each user counts as a specific inclusion in the policy. Therefore, if you include over 1,000 users, the limits noted in the previous section apply. Selecting all Skype users here is not the same as if an org-wide policy were able to include all Skype users by default. 
+When you select **Choose users**, you can quickly include all users by selecting the **Name** box in the column header. However, it's important to understand that each user counts as a specific inclusion in the policy. Therefore, if you include over 1,000 users, the limits noted in the previous section apply. Selecting all Skype users here is not the same as if an org-wide policy were able to include all Skype users by default. 
   
 ![Choose Skype users page](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
