@@ -103,7 +103,7 @@ New articles to support the preview release of the insider risk management solut
 
 ### MRM in Exchange Online
 
-[Place a mailbox on retention hold](https://docs.microsoft.com/en-us/Exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold#difference-between-elcprocessingdisabled-and-retentionholdenabled) (updated)<br>Added new section comparing ElcProcessingDisabled and RetentionHoldEnabled mailbox properties and how they affect the processing of the Managed Folder Assistant.
+[Place a mailbox on retention hold](https://docs.microsoft.com/Exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold#difference-between-elcprocessingdisabled-and-retentionholdenabled) (updated)<br>Added new section comparing ElcProcessingDisabled and RetentionHoldEnabled mailbox properties and how they affect the processing of the Managed Folder Assistant.
 
 ### Records management
 
