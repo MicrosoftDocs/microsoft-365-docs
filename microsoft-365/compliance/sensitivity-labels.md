@@ -16,14 +16,14 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "With sensitivity labels, you can classify and help protect your sensitive content, while making sure that your people’s productivity and ability to collaborate isn’t hindered. You can use sensitivity labels to apply protection settings that include encryption and watermarks on labeled content."
+description: "Use sensitivity labels from the Microsoft Information Protection framework, to classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn’t hindered. These labels can apply protection settings that include encryption visual markings such as footers and watermarks."
 ---
 
 # Learn about sensitivity labels
 
 To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization’s business and compliance policies.
 
-With sensitivity labels, you can classify and help protect your organization's data, without hindering your people’s productivity and ability to collaborate.
+Sensitivity labels from the Microsoft Information Protection framework lets you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn’t hindered.
 
 Example showing available sensitivity labels in Excel, from the **Home** tab on the Ribbon. In this example, the applied label displays on the status bar:
 
