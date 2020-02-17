@@ -23,7 +23,7 @@ description: "Use sensitivity labels from the Microsoft Information Protection f
 
 To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization’s business and compliance policies.
 
-Sensitivity labels from the Microsoft Information Protection framework lets you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn’t hindered.
+Sensitivity labels from the Microsoft Information Protection framework let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn’t hindered.
 
 Example showing available sensitivity labels in Excel, from the **Home** tab on the Ribbon. In this example, the applied label displays on the status bar:
 
