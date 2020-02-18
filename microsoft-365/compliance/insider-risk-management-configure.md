@@ -1,5 +1,5 @@
 ---
-title: Get started with insider risk management (preview)
+title: Get started with insider risk management
 description: Configure insider risk management in your organization.
 keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Get started with insider risk management (preview)
+# Get started with insider risk management
 
 Use insider risk management policies to identify risky activities and management tools to take action on risk alerts in your organization. For more information about how insider risk policies can help you manage risk in your organization, see [Insider risk management in Microsoft 365](insider-risk-management.md).
 
