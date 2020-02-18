@@ -786,6 +786,8 @@ The following table lists the user and admin activities in Microsoft Forms that 
 
 Where noted below in the descriptions, some operations contain additional activity parameters.
 
+Note: If Form activity is being performed by a co-author or an anonymous responder, it will be logged slightly differently.  Please see additional section #### Forms activities performed by co-authors and anonymous responders.
+
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Created comment|CreateComment|Form owner adds comment or score to a quiz.|
@@ -819,7 +821,18 @@ Where noted below in the descriptions, some operations contain additional activi
 
 #### Forms activities performed by co-authors and anonymous responders
 
-Jon, please add content here.
+Forms supports collaboration both at design time as well as response analysis side.  Collaborators are known as co-authors and can do almost everything a Form owner can do, except DeleteForm and MoveForm.  
+
+Furthermore, Forms supports creation of a Form that can be responded anonymously without requiring respondents to login.
+
+When Forms activity is being performed in these ways:
+
+|**Activity Type**|**Is user internal to the admin’s tenant?**|**User ID logged**|**Logged into Tenant**|**FormUserType logged**|
+|:-----|:-----|:-----|:-----|:-----|
+|Co-authoring activities|Internal|Real ID|Owner Tenant|Co-author|
+|Co-authoring activities|External|Real ID<br><br>urn:forms:coauthor#a0b1c2d3@forms.office.com<br>The 2nd part of the ID is a hash, which will differ for different users|Coauthor Tenant<br><br>Owner Tenant|Co-author|
+|Response activities|External|Real ID<br><br>urn:forms:external#a0b1c2d3@forms.office.com<br>The 2nd part of the ID is a hash, which will differ for different users|Responder Tenant<br><br>Owner Tenant|Responder
+|Response activities|Anonymous|urn:forms:anonymous#a0b1c2d3@forms.office.com<br>The 2nd part of the ID is a hash, which will differ for different users|Owner Tenant|Responder|||||
 
 
 ### Exchange admin audit log
