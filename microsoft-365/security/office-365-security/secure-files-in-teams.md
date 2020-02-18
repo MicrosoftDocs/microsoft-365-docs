@@ -44,7 +44,7 @@ For more information about these tiers and capabilities recommended for each tie
 
 Recommendations for secured teams draw on a variety of Microsoft 365 capabilities. The following illustration shows the recommended configurations.
 
-![Recommended configuration for teams](../media/secure-team-configurations.png)
+![Recommended configuration for teams](../../media/secure-team-configurations.png)
 
 As illustrated:
 

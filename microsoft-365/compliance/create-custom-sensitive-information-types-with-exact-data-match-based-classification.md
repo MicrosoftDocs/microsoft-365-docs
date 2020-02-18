@@ -33,7 +33,7 @@ But what if you wanted a custom sensitive information type that uses exact data 
 - handle sensitive information more securely; and
 - be used with several Microsoft cloud services.
 
-![EDM-based classification](media/EDMClassification.png)
+![EDM-based classification](../media/EDMClassification.png)
 
 EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily or weekly, and it can contain up to 10 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](data-loss-prevention-policies.md) (DLP) or [Microsoft Cloud App Security file policies](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
 
@@ -468,7 +468,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 9. In the **Name** section, specify a name and description for the rule.
 
-10. In the **Conditions** section, in the **+ Add a condition** list, choose **Content contains sensitive type**.<br/>![Content contains sensitive info types](media/edm-dlp-newrule-conditions.png)<br/>
+10. In the **Conditions** section, in the **+ Add a condition** list, choose **Content contains sensitive type**.<br/>![Content contains sensitive info types](../media/edm-dlp-newrule-conditions.png)<br/>
 
 11. Search for the sensitive information type you created when you set up your rule package, and then choose **+ Add**.  
     Then choose **Done**.

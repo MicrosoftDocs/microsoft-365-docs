@@ -137,7 +137,7 @@ Figure 1 shows the access groups and their membership.
 
 **Figure 1**
 
-![The Office 365 groups and their membership for an isolated SharePoint Online Group site](../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![The Office 365 groups and their membership for an isolated SharePoint Online Group site](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## Phase 3: Create a new ProjectX SharePoint Online team site and isolate it
 
@@ -203,7 +203,7 @@ Figure 2 shows the SharePoint groups and their membership.
 
 **Figure 2**
 
-![The SharePoint Online groups and their membership for an isolated SharePoint Online Group site](../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
+![The SharePoint Online groups and their membership for an isolated SharePoint Online Group site](../../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
 
 Now let's demonstrate access using the Lead Designer user account:
 

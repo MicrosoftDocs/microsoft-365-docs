@@ -41,7 +41,7 @@ The first step towards GDPR compliance is to assess whether the GDPR applies to 
 
 Compliance Score provides tools to track, implement, and manage the auditing controls to help your organization reach compliance against various standards, including GDPR.
 
-![Use Compliance Score and Compliance Manager to view requirements and track progress](Media/Overview-image1.png)
+![Use Compliance Score and Compliance Manager to view requirements and track progress](../media/Overview-image1.png)
 
 For more information, see [Compliance Score](compliance-score.md).
 
@@ -53,7 +53,7 @@ Discover personal data in your environment that is subject to the GDPR. Use Cont
 
 - Optimize sensitive data types and other queries to find all personal data in your environment.
 
-![Use Content Search and sensitive info types to find personal data](Media/Overview-image2.png)
+![Use Content Search and sensitive info types to find personal data](../media/Overview-image2.png)
 
 Sensitive information types define how the automated process recognizes specific information types such as health service numbers and credit card numbers. This article includes a set you can use as a starting point. Many more sensitive information types are coming soon for personal data in EU countries.
 
@@ -63,7 +63,7 @@ For more information, see [Search for and find personal data](search-for-and-fin
 
 Some of the capabilities used for information protection in Office 365 can also be used to protect sensitive data in other SaaS applications.
 
-![Classify, protect, and monitor personal data](Media/Overview-image3.png)
+![Classify, protect, and monitor personal data](../media/Overview-image3.png)
 
 This illustration is described by the rest this section (steps 3-5).
 

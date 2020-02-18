@@ -24,7 +24,7 @@ Create notice templates if you want to send users an email reminder notice for p
 
 The **Notices templates dashboard** displays a list of configured notice templates and allows you to create new notice templates. The notice templates are listed in reverse date order with the most recent notice template listed first.
 
-![Insider risk management notice template dashboard](media/insider-risk-notices-dashboard.png)
+![Insider risk management notice template dashboard](../media/insider-risk-notices-dashboard.png)
 
 ## HTML for notices
 

@@ -62,7 +62,7 @@ Contoso admins created a new Office 365 sensitivity sublabel named **Research Te
 
 Here is the resulting configuration of the **Research** team site for highly confidential assets.
 
-![The resulting configuration of the Research team site for highly confidential assets](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
+![The resulting configuration of the Research team site for highly confidential assets](../media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
 
 Files in folders of the **Research** site are protected by:
 
@@ -72,7 +72,7 @@ Files in folders of the **Research** site are protected by:
 
 Here is an example of a file stored in the **Research** site with the **Research Teams** sensitivity sublabel assigned.
 
-![The resulting configuration of the Research team site for highly confidential assets](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
+![The resulting configuration of the Research team site for highly confidential assets](../media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
 
 
 ## Step 4: Migrated the on-premises SharePoint research data

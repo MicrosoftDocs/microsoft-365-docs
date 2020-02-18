@@ -39,9 +39,11 @@ With retention labels, you can:
     
 - **Apply retention labels to content automatically** if it matches specific conditions, such as when the content contains: 
     
-  - Specific types of sensitive information.
+    - Specific types of sensitive information.
     
-  - Specific keywords that match a query you create.
+    - Specific keywords that match a query you create.
+    
+    - Pattern matches for a trainable classifier.
     
   The ability to apply retention labels to content automatically is important because:
     
@@ -52,23 +54,23 @@ With retention labels, you can:
    - Users no longer need to know about data governance policies - they can instead focus on their work.
 
   > [!NOTE]
-  > The capability to apply labels automatically requires an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been automatically labeled in a site or their mailbox is selected for automatic labeling. Users who simply have read-only access to content or reply to labeled emails do not require this license.
+  > The capability to apply labels automatically requires a minimum of an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been automatically labeled in a site or their mailbox is selected for automatic labeling. Users who simply have read-only access to content or reply to labeled emails do not require this license.
       
 - **Implement records management across Office 365**, including both email and documents. You can use a retention label to classify content as a record. When this happens, the label can't be changed or removed, and the content can't be edited or deleted. 
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that arrive in that location inherit the default retention label.  
     
-You create retention labels in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center. In the left nav, choose **Classification** > **Retention label** > **Create a label**.
+You create retention labels in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center.
 
 ## How retention labels work with retention label policies
 
 Making retention labels available to people in your organization so that they can classify content is a two-step process: first you create the retention labels, and then you publish them to the locations you choose. When you publish retention labels, a retention label policy gets created.
   
-![Diagram of roles and tasks for labels](media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
+![Diagram of roles and tasks for labels](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
   
 Retention labels are independent, reusable building blocks that are included in one or more retention label policies. The primary purpose of a retention label policy is to group a set of retention labels and specify the locations where you want those labels to appear.
   
-![Diagram of labels, label policies, and locations](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
+![Diagram of labels, label policies, and locations](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
 1. When you publish retention labels, they're included in a retention label policy. Please note, retention label names are immutable and cannot be edited once created.
 
@@ -107,13 +109,13 @@ When you publish or auto-apply retention labels, they don't take effect immediat
 
 If you publish retention labels to SharePoint or OneDrive, it can take one day for those retention labels to appear for end users. In addition, if you publish retention labels to Exchange, it can take 7 days for those retention labels to appear for end users, and the mailbox needs to contain at least 10 MB of data.
   
-![Diagram of when manual labels take effect](media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
+![Diagram of when manual labels take effect](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 ### Auto-apply retention labels
 
 If you auto-apply retention labels to content matching specific conditions, it can take seven days for the retention labels to be applied to all existing content that matches the conditions.
   
-![Diagram of when auto-apply labels take effect](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
+![Diagram of when auto-apply labels take effect](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
 ### How to check on the status of retention labels published to Exchange
 
@@ -163,7 +165,7 @@ In addition, a retention label has two retention options that are available only
     
 - Start the retention period from when the content was labeled, instead of the age of the content or when it was last modified. This option applies only to content in SharePoint sites and OneDrive accounts. For Exchange email, the retention period is always based on the date when the message was sent or received, no matter which option you choose here.
     
-![Retention settings with options specific to labels](media/c49118c9-6279-4661-94db-deffa76e27ac.png)
+![Retention settings with options specific to labels](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   
 ## Where published retention labels can appear to end users
 
@@ -185,11 +187,11 @@ The sections below show how labels appear in different apps to people in your or
 
 To label an item in Outlook on the web, right-click the item \> **Assign policy** \> choose the retention label. 
   
-![Assign policy menu in Outlook on the web](media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
+![Assign policy menu in Outlook on the web](../media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
   
 After the retention label is applied, you can view that retention label and what action it takes at the top of the item. If an email is classified and has an associated retention period, you can know at a glance when the email will expire.
   
-![Label assigned to email in Outlook on the web](media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
+![Label assigned to email in Outlook on the web](../media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
   
 You can also apply retention labels to folders, in which case:
   
@@ -205,7 +207,7 @@ You can also apply retention labels to folders, in which case:
 
 To label an item in the Outlook desktop client, select the item. On the **Home** tab on the ribbon, click **Assign Policy**, and then choose the retention label. 
   
-![Assign Policy button](media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
+![Assign Policy button](../media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
   
 You can also right-click an item, click **Assign Policy** in the context menu, and then choose the retention label. 
 
@@ -215,19 +217,19 @@ You can also apply retention labels to folders. This works the same in Outlook 2
   
 ### OneDrive and SharePoint
 
-To label a document (including OneNote files) in OneDrive or SharePoint, select the item \> in the upper-right corner, choose **Open the details pane**![Information pane icon](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Apply retention label** \> choose the retention label. 
+To label a document (including OneNote files) in OneDrive or SharePoint, select the item \> in the upper-right corner, choose **Open the details pane**![Information pane icon](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Apply retention label** \> choose the retention label. 
   
 You can also apply a retention label to a folder or document set, and you can set a default retention label for a document library. See the section below for more information.
   
-![Apply label list for an item in SharePoint](media/151cc83c-da57-45b0-9cd1-fd2f28a31083.png)
+![Apply label list for an item in SharePoint](../media/151cc83c-da57-45b0-9cd1-fd2f28a31083.png)
   
 After a retention label is applied to an item, you can view it in the details pane when that item's selected.
   
-![Applied label shown in Details pane](media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
+![Applied label shown in Details pane](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
   
 You can also create a view of the library that contains the **Labels** column or **Item is a Record** column, so that you can see at a glance the retention labels assigned to all items and which items are records. Note, however, that you can't filter the view by the **Item is a Record** column. 
   
-![Library column for labels shown in custom view](media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
+![Library column for labels shown in custom view](../media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
   
 ### Office 365 groups
 
@@ -241,7 +243,7 @@ In addition, it's not possible to use the Exchange location to include or exclud
 
 One of the most powerful features of retention labels is the ability to apply them automatically to content that matches certain conditions. In this case, people in your organization don't need to apply the retention labels. Office 365 does the work for them.
   
-![Diagram of roles and tasks for auto-apply labels](media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
+![Diagram of roles and tasks for auto-apply labels](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
   
 Auto-apply retention labels are powerful because:
   
@@ -253,14 +255,17 @@ Auto-apply retention labels are powerful because:
     
 You can choose to apply retention labels to content automatically when that content contains:
   
-- Specific types of sensitive information.
+- [Specific types of sensitive information](#auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information)
     
-- Specific keywords that match a query you create.
+- [Specific keywords that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+
+- [A match for trainable classifers](#auto-apply-labels-to-content-by-using-trainable-classifers)
     
-![Choose condition page for auto-apply label](media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
+![Choose condition page for auto-apply label](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
+Auto-applying retention labels that are configured for the first two options requires an Office 365 Enterprise E5 subscription. If you use the option for trainable classifers, this capability has [additional licensing requirements](classifier-getting-started-with.md#licensing-requirements).
 
-Auto-applying retention labels requires an Office 365 Enterprise E5 subscription, and that it can take up to seven days for auto-apply retention labels to be applied to all content that matches the conditions, as described above.
+It can take up to seven days for auto-apply retention labels to be applied to all content that matches the conditions you've configured.
   
 > [!TIP]
 > See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePont to auto-apply retention labels and implement event-driven retention.
@@ -269,7 +274,7 @@ Auto-applying retention labels requires an Office 365 Enterprise E5 subscription
 
 When you create auto-apply retention labels for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each policy template is preconfigured to look for specific types of sensitive information. For example, the template shown here looks for U.S. ITIN, SSN, and passport numbers. To learn more about DLP, see [Overview of data loss prevention policies](data-loss-prevention-policies.md).
   
-![Policy templates with sensitive information types](media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
+![Policy templates with sensitive information types](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
   
 After you select a policy template, you can add or remove any types of sensitive information, and you can change the instance count and match accuracy. In the example shown here, a retention label will be auto-applied only when:
   
@@ -279,7 +284,7 @@ After you select a policy template, you can add or remove any types of sensitive
     
 For more information on these options, see [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
     
-![Options for identifying sensitive information types](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
+![Options for identifying sensitive information types](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
 ### Auto-apply labels to content with keywords or searchable properties
 
@@ -303,7 +308,18 @@ Examples queries:
     - contenttype:contract
     - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
 
-![Query editor](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+![Query editor](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+
+
+### Auto-apply labels to content by using trainable classifers
+
+When you choose the option for a trainable classifier, you can select one of the built-in classifiers, or a custom classifier. The built-in classifers include **Offensive Language**, **Resumes**, **SourceCode**, **Harassment**, **Profanity**, and **Threat**.
+
+To automatically apply a label by using this option, SharePoint Online sites and mailboxes must have at least 10 MB of data.
+
+For more information about trainable classifers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
+
+For an example configuration, see [How to prepare for and use a ready to use classifier](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-ready-to-use-classifier).
 
 ## Applying a default retention label to all content in a SharePoint library, folder, or document set
 
@@ -313,7 +329,7 @@ For a document library, this is done on the **Library settings** page for a docu
   
 For example, if you have a tag for marketing materials, and you know a specific document library contains only that type of content, you can make the Marketing Materials tag the default for all documents in that library.
   
-![Apply label option on library Settings page](media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
+![Apply label option on library Settings page](../media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
   
 If you apply a default retention label to existing items in the library, folder, or document set:
   
@@ -335,7 +351,7 @@ For example, you can create a rule that applies a specific retention label to al
   
 To create a rule, right-click an item \> **Rules** \> **Create Rule** \> **Advanced Options** \> **Rules Wizard** \> **apply retention policy**.
   
-![Rules wizard with option to apply retention policies](media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
+![Rules wizard with option to apply retention policies](../media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
   
 ## Classifying content without applying any actions
 
@@ -343,7 +359,7 @@ When you create a retention label, you can do so without turning on any retentio
   
 For example, you can create a retention label named "Review later" with no actions, and then auto-apply that retention label to content with sensitive information types or queried content.
   
-![Label settings page with retention turned off](media/17ce863b-a823-426e-aaad-83718465f762.png)
+![Label settings page with retention turned off](../media/17ce863b-a823-426e-aaad-83718465f762.png)
   
 ## Using retention labels for records management
     
@@ -365,7 +381,7 @@ After you publish or auto-apply your retention labels, you'll want to verify tha
     
 - **Data governance reports**. With these reports, you can quickly view retention label trends and activity for all content across Exchange, SharePoint, and OneDrive for Business over the past 90 days. For more information, see [View the data governance reports](view-the-data-governance-reports.md).
     
-![Label Activity Explorer](media/671ca0cd-1457-40b4-9917-b663360afd95.png)
+![Label Activity Explorer](../media/671ca0cd-1457-40b4-9917-b663360afd95.png)
   
 ## Using Content Search to find all content with a specific retention label applied to it
 
@@ -373,13 +389,13 @@ After retention labels are assigned to content, either by users or auto-applied,
   
 When you create a content search, choose the **Compliance Tag** condition, and then enter the complete label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
-![Compliance Tag condition](media/82d6af16-59f8-462f-babb-c894b2917018.png)
+![Compliance Tag condition](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
   
 ## The principles of retention, or what takes precedence?
 
 It's possible or even likely that content might have several retention policies applied to it, each with a different action (retain, delete, or both) and retention period. What takes precedence? At the highest level, rest assured that content being retained by one policy can't be permanently deleted by another policy.
   
-![Diagram of the principles of retention](media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![Diagram of the principles of retention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 To understand how different labels with retention actions are applied to content, keep these principles of retention in mind:
   
