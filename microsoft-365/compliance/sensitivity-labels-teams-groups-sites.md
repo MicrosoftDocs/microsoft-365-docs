@@ -59,7 +59,7 @@ After you enable and configure this preview, users can additionally see and appl
     Execute-AzureAdLabelSync
     ```
 
-## Set site and group settings when you create or edit sensitivity labels
+## How to configure site and group settings when you create or edit sensitivity labels
 
 You're now ready to create or edit sensitivity labels that you want to be available for sites and groups. Enabling the preview makes a new page visible in the sensitivity labeling wizards: **Site and group settings**
 
