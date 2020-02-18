@@ -22,7 +22,7 @@ ms.custom: aka.ms/self-service-purchase-faq
 > [!NOTE]
 > The information in this article only applies to Microsoft Power Platform (Power BI, Power Apps and Power Automate) subscriptions.
 
-Self-service purchases are now available for Power Platform in the United States, Australia, Canada, and Japan.
+Self-service purchases are now available for Power Platform in multiple countries.
 
 ## General
 
@@ -141,3 +141,9 @@ Valid users will continue to have full use of the self-service purchase for the 
 ### What’s the role of Microsoft’s partners in self-service purchases?
 
 Partners who have delegated administration privileges can see self-service purchases in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, just like an admin. Partners can help support an organization that wants to centralize products bought through self-service purchases. Additionally, partners may offer solutions to extend the capabilities of a self-service purchase.
+
+## Country availability
+
+### In which countries can I make a self-service purchase?
+
+Self-service purchases are available in the following countries: Australia, Canada, Japan, and the United States.
