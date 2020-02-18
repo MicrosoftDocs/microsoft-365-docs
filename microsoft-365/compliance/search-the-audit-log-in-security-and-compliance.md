@@ -782,11 +782,12 @@ You can search the audit log for activities in Microsoft Stream. These activitie
 
 ### Microsoft Forms activities
 
-The following table lists the user and admin activities in Microsoft Forms that are logged in the Office 365 audit log. Microsoft Forms is a forms/quiz/survey tool used to collect data for anlaysis. 
+The following table lists the user and admin activities in Microsoft Forms that are logged in the Office 365 audit log. Microsoft Forms is a forms/quiz/survey tool used to collect data for analysis. 
 
 Where noted below in the descriptions, some operations contain additional activity parameters.
 
-Note: If Form activity is being performed by a co-author or an anonymous responder, it will be logged slightly differently.  Please see additional section #### Forms activities performed by co-authors and anonymous responders.
+> [!NOTE]
+> If a Forms activity is performed by a co-author or an anonymous responder, it will be logged slightly differently. For more information, see the [Forms activities performed by co-authors and anonymous responders](#forms-activities-performed-by-co-authors-and-anonymous-responders) section.
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -821,19 +822,17 @@ Note: If Form activity is being performed by a co-author or an anonymous respond
 
 #### Forms activities performed by co-authors and anonymous responders
 
-Forms supports collaboration both at design time as well as response analysis side.  Collaborators are known as co-authors and can do almost everything a Form owner can do, except DeleteForm and MoveForm.  
+Forms supports collaboration when forms are being designed and when analyzing responses. A form collaborators is known as a *co-author*. Co-authors can do everything a form owner can do, except delete a form and move a form. Additionally, Forms allows you to create a form that can be responded to anonymously. This means the responder doesn't have to be signed into your organization to respond to a form. 
 
-Furthermore, Forms supports creation of a Form that can be responded anonymously without requiring respondents to login.
+The following table describes the auditing activities and information in the audit record for activities performed by co-authors and anonymous responders.
 
-When Forms activity is being performed in these ways:
-
-|**Activity Type**|**Is user internal to the admin’s tenant?**|**User ID logged**|**Logged into Tenant**|**FormUserType logged**|
+|**Activity type**|**Is user inside your organization?**|**User Id that's logged**|**Logged into Tenant**|**FormUserType logged**|
 |:-----|:-----|:-----|:-----|:-----|
 |Co-authoring activities|Internal|Real ID|Owner Tenant|Co-author|
 |Co-authoring activities|External|Real ID<br><br>urn:forms:coauthor#a0b1c2d3@forms.office.com<br>The 2nd part of the ID is a hash, which will differ for different users|Coauthor Tenant<br><br>Owner Tenant|Co-author|
 |Response activities|External|Real ID<br><br>urn:forms:external#a0b1c2d3@forms.office.com<br>The 2nd part of the ID is a hash, which will differ for different users|Responder Tenant<br><br>Owner Tenant|Responder
-|Response activities|Anonymous|urn:forms:anonymous#a0b1c2d3@forms.office.com<br>The 2nd part of the ID is a hash, which will differ for different users|Owner Tenant|Responder|||||
-
+|Response activities|Anonymous|urn:forms:anonymous#a0b1c2d3@forms.office.com<br>The 2nd part of the ID is a hash, which will differ for different users|Owner Tenant|Responder|
+||||
 
 ### Exchange admin audit log
 
