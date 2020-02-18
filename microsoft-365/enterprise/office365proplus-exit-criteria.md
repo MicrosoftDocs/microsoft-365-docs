@@ -19,7 +19,7 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 # Office 365 ProPlus deployment exit criteria
 
-![Phase 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
+![Phase 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
 
 *This applies to both the E3 and E5 versions of Microsoft 365 Enterprise and Microsoft 365 Education*
 
@@ -57,4 +57,4 @@ Your client devices have the latest versions of Office 365 ProPlus installed and
 
 |||
 |:-------|:-----|
-|![Phase 5: Mobile Device Management](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [mobile device management](mobility-infrastructure.md). |
+|![Phase 5: Mobile Device Management](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [mobile device management](mobility-infrastructure.md). |

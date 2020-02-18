@@ -30,7 +30,7 @@ Do you know which of your Office 365 users are under attack, or worse - compromi
 
 Explorer also helps administrators navigate the relationships between users and mail. Know of a particular mail that was bad? Search for it to see what users received the mail, then follow the series of events and see what those users in turn have done.
 
-![Screen shot of threat explorer in Office 365, colour-coded by malware family](../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
+![Screen shot of threat explorer in Office 365, colour-coded by malware family](../../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
 
 ## Quickly mitigate and recover from threats
 
@@ -38,7 +38,7 @@ Once security administrators have identified something suspicious or malicious h
 
  **UPDATE:** The ability to delete (soft or hard delete) email messages directly from the Incident framework has been added. Previously administrators could only move mails to a user's junk folder, where users could recover the item. With the newly released Delete capabilities, you can now be sure that a malicious or unwanted mail is removed permanently.
 
-![Screen shot of email list of incident remediation](../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
+![Screen shot of email list of incident remediation](../../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
 
 ## Leverage the threat telemetry of Microsoft
 

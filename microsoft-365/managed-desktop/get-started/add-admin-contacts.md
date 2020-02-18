@@ -47,15 +47,15 @@ Admin contacts are required when you [submit a Support request](../service-descr
 
 2.	Under **Support**, select **Admin contacts**. 
 
-    ![Support menu, Admin contacts near the top selected](images/admincontacts.png)
+    ![Support menu, Admin contacts near the top selected](../../media/admincontacts.png)
 
 3. Select **Add**.
 
-    ![Admin portal, Add button, to the left of Export and Refresh](images/adminadd.png)
+    ![Admin portal, Add button, to the left of Export and Refresh](../../media/adminadd.png)
 
 4.	Select an **Area of focus** and enter the info for the contact. 
 
-    ![the list of areas of focus, such as Other, Apps, and Security](images/areaoffocus.png)
+    ![the list of areas of focus, such as Other, Apps, and Security](../../media/areaoffocus.png)
 
 5. Repeat for each area of focus. 
 

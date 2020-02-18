@@ -24,7 +24,7 @@ Your organization needs to manage security and compliance scenarios that span al
 
 After the global administrator assigns these admin roles, the admins have access to features and data that span all services in Microsoft 365, such as the Microsoft 365 security center, Microsoft 365 compliance center, Azure, Office 365, and Enterprise Mobility + Security.
 
-![Permissions page in the Microsoft 365 security center](../media/m365-security-permissions-page.png)
+![Permissions page in the Microsoft 365 security center](../../media/m365-security-permissions-page.png)
 
 ## What the Microsoft 365 roles are
 
@@ -125,13 +125,13 @@ In the Microsoft 365 compliance center and Microsoft 365 security center, when y
 
 For more information, see [View and assign administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
 
-![Link to manage permissions in Azure Active Directory](../media/permissions-manage-in-azure-ad-link.png)
+![Link to manage permissions in Azure Active Directory](../../media/permissions-manage-in-azure-ad-link.png)
 
 ## Managing roles in a service instead of Azure Active Directory
 
 The roles that appear in the Microsoft 365 compliance center and Microsoft 365 security center also appear in the services where they have permissions. For example, you can see these roles in the Office 365 Security & Compliance Center.
 
-![Roles in Office 365 Security & Compliance Center](../media/m365-roles-in-o365-scc.png)
+![Roles in Office 365 Security & Compliance Center](../../media/m365-roles-in-o365-scc.png)
 
 ### Breaking inheritance
 

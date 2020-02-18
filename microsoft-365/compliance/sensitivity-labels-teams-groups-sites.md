@@ -37,11 +37,11 @@ Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites 
 
 Before you enable this preview and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
 
-![A sensitivity label displayed in the Word desktop app](media/sensitivity-label-word.png)
+![A sensitivity label displayed in the Word desktop app](../media/sensitivity-label-word.png)
 
 After you enable and configure this preview, users can additionally see and apply sensitivity labels to Microsoft Teams, Office 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
 
-![A sensitivity label when creating a team site from SharePoint](media/sensitivity-labels-new-team-site.png)
+![A sensitivity label when creating a team site from SharePoint](../media/sensitivity-labels-new-team-site.png)
 
 
 ## Enable this preview and synchronize labels
@@ -74,7 +74,7 @@ On this new **Site and group settings** page, configure the settings:
 
 - **Unmanaged devices**: For [unmanaged devices](/sharepoint/control-access-from-unmanaged-devices), allow full access, web only access, or block access completely. 
 
-![The site and group settings tab](media/edit-sensitivity-label-site-group.png)
+![The site and group settings tab](../media/edit-sensitivity-label-site-group.png)
 
 > [!IMPORTANT]
 > Only these site and group settings take effect when you apply a label to a team, group, or site. Other label settings, such as encryption and content marking, aren't applied to the content within the team, group, or site.
@@ -130,11 +130,11 @@ Users can select sensitivity labels when they create new teams in Microsoft Team
 
 [Learn more about sensitivity labels for Teams](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
-![The privacy setting when creating a new team](media/privacy-setting-new-team.png)
+![The privacy setting when creating a new team](../media/privacy-setting-new-team.png)
 
 After you create the team, the sensitivity label appears in the upper-right corner of all channels.
 
-![The sensitivity label appears on the team](media/privacy-setting-teams.png)
+![The sensitivity label appears on the team](../media/privacy-setting-teams.png)
 
 The service automatically applies the same sensitivity label to the Office 365 group and the connected SharePoint team site.
 
@@ -142,7 +142,7 @@ The service automatically applies the same sensitivity label to the Office 365 g
 
 In Outlook on the web, when you create a new group, you can select or change the **Sensitivity** option for published labels:
 
-![Creating a group and selecting an option under Sensitivity](media/sensitivity-label-new-group.png)
+![Creating a group and selecting an option under Sensitivity](../media/sensitivity-label-new-group.png)
 
 ## Apply a sensitivity label to a new site
 
@@ -150,17 +150,17 @@ Admins and end users can select sensitivity labels when they [create modern team
 
 When users create modern team and communication sites, a sensitivity label is already selected by default. Users can select the help icon to learn more about the labels.
 
-![Creating a site and selecting an option under Sensitivity](media/sensitivity-label-new-communication-site.png)
+![Creating a site and selecting an option under Sensitivity](../media/sensitivity-label-new-communication-site.png)
 
 When users browse to the site, they can see the name of the label and applied policies.
 
-![A site that has a sensitivity label applied](media/sensitivity-label-site.png)
+![A site that has a sensitivity label applied](../media/sensitivity-label-site.png)
 
 ## View sensitivity labels in the SharePoint admin center
 
 To view the applied sensitivity labels, use the **Active sites** page in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
 
-![The Sensitivity column on the Active sites page](media/manage-site-sensitivity-labels.png)
+![The Sensitivity column on the Active sites page](../media/manage-site-sensitivity-labels.png)
 
 [Learn more about managing sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center).
 

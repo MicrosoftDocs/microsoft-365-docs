@@ -37,7 +37,7 @@ For a quick overview of Supervision policies, see the [Supervision policy video]
 
 To learn more about upcoming Supervision feature improvements and availability, see the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
-Want to try the new Communication compliance experience in Microsoft 365? Check out the new and improved features available in [Communication compliance in Microsoft 365 (preview)](communication-compliance.md).
+Want to try the new Communication compliance experience in Microsoft 365? Check out the new and improved features available in [Communication compliance in Microsoft 365](communication-compliance.md).
 
 ## Transitioning from Supervision in Office 365
 
