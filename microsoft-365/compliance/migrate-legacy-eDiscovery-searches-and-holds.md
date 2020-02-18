@@ -76,7 +76,7 @@ The output of these two commands will be similar to the following:
 
 ## Step 4: Create a case in the Microsoft 365 Compliance center
 
-In order to create an eDiscovery hold, you have to create an eDiscovery case to associate the hold with. The following example creates an eDiscovery case using a name of your choice. We will store the properties of the new case in a variable for use later. You can view those properties by running the `$case | FL` command after you create the case.
+To create an eDiscovery hold, you have to create an eDiscovery case to associate the hold with. The following example creates an eDiscovery case using a name of your choice. We will store the properties of the new case in a variable for use later. You can view those properties by running the `$case | FL` command after you create the case.
 
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
@@ -96,11 +96,12 @@ $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLo
 ```powershell
 New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
+
 ![Example of using NewCaseHoldPolicy and NewCaseHoldRule cmdlets](../media/MigrateLegacyeDiscovery4.png)
 
 ## Step 6: Verify the eDiscovery hold
 
-To make sure there were no issues in creating the hold, it's good to check that the hold distribution status is successful. Distribution means that the hold has been applied to all the content locations specified in the *ExchangeLocation* parameter in the previous step. To do this, you can run the **Get-CaseHoldPolicy** cmdlet. Because the properties saved to the *$policy* variable that you created in the previous step are not automatically updated in the variable, you need to rerun the cmdlet to verify that distribution is successful. It can take between 5 minutes and 24 hours for case hold policies to be successfully distributed.
+To make sure there were no issues in creating the hold, it's good to check that the hold distribution status is successful. Distribution means that the hold has been applied to all the content locations specified in the *ExchangeLocation* parameter in the previous step. To do this, you can run the **Get-CaseHoldPolicy** cmdlet. Because the properties saved to the *$policy* variable that you created in the previous step aren't automatically updated in the variable, you need to rerun the cmdlet to verify that distribution is successful. It can take between 5 minutes and 24 hours for case hold policies to be successfully distributed.
 
 Run the following command to verify that the eDiscovery hold has been successfully distributed.
 

@@ -184,7 +184,7 @@ You can easily apply a retention policy to an entire organization, entire locati
   
 ### Org-wide policy
 
-One of the most powerful features of a retention policy is that by default it applies to locations across Office 365, including:
+One of the most powerful features of a retention policy is that it can apply to locations across Office 365, including:
   
 - Exchange email
     
@@ -196,8 +196,9 @@ One of the most powerful features of a retention policy is that by default it ap
     
 - Exchange public folders
     
-![All locations option](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
-  
+
+![All locations option](../media/retention-policies-all-locations.png)
+
 Other important features of an org-wide retention policy include:
   
 - There is no limit to the number of mailboxes or sites the policy can include.
@@ -209,9 +210,7 @@ Other important features of an org-wide retention policy include:
 When you choose locations, you can easily include or exclude an entire location, such as Exchange email or OneDrive accounts. To do so, toggle the **Status** of that location on or off. 
   
 Like an org-wide policy, if a policy applies to any combination of entire locations, there is no limit to the number of mailboxes or sites the policy can include. For example, if a policy includes all Exchange email and all SharePoint sites, all sites and mailboxes will be included, no matter how many. And for Exchange, any new mailbox created after the policy is applied will automatically inherit the policy.
- 
-![Choose locations page](../media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
-  
+
 ### A policy with specific inclusions or exclusions
 
 You can also apply a retention policy to specific users, Office 365 groups, or sites. To do so, toggle the **Status** of that location on, and then use the links to include or exclude specific users, Office 365 groups, or sites. 
@@ -226,9 +225,11 @@ Although these limits exist, understand that you can get over these limits by ap
   
 ### Skype locations
 
-Unlike Exchange email, you can't toggle the status of the Skype location on to include all users, but you can turn on that location and then manually choose the users whose conversations you want to retain.
+Unlike Exchange email, you can't toggle the status of the Skype location on to include all users, but when you turn on that location, you then manually choose the users whose conversations you want to retain:
+
+![Choose Skype location for retention policies](../media/skype-location-retention-policies.png)
   
-When you choose Skype for Business users, you can quickly include all users by selecting the **Name** box in the column header. However, it's important to understand that each user counts as a specific inclusion in the policy. Therefore, if you include over 1,000 users, the limits noted in the previous section apply. Selecting all Skype users here is not the same as if an org-wide policy were able to include all Skype users by default. 
+When you select **Choose users**, you can quickly include all users by selecting the **Name** box in the column header. However, it's important to understand that each user counts as a specific inclusion in the policy. Therefore, if you include over 1,000 users, the limits noted in the previous section apply. Selecting all Skype users here is not the same as if an org-wide policy were able to include all Skype users by default. 
   
 ![Choose Skype users page](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
