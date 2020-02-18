@@ -23,11 +23,11 @@ Safe Documents is a feature in Office 365 Advanced Threat Protection (ATP) that 
 
 ## What do you need to know before you begin?
 
-- This feature is only available to users with the Microsoft 365 E5 or Microsoft 365 E5 Security license
+- This feature is only available to users with the Microsoft 365 E5 or Microsoft 365 E5 Security license.
 
 - Safe Documents is currently available for public preview, available to users that are part of the [Office Insider Program](https://insider.office.com/en-us/join) on the 'Monthly Channel (Targeted)' with Office Version 2002 (12527.20092) or greater. This feature is off by default and will need to be enabled by the Security Administrator.
 
-- Only US Region currently supported for compliant file processing (All files will travel to the US Region for scanning). Support for UK/EU region planned in a future update.
+- Only US Region currently supported for compliant file processing (All files will travel to the US Region for scanning). Support for UK/EU region is planned in a future update.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
