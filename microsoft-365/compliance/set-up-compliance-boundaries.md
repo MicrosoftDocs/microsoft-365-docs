@@ -26,7 +26,7 @@ Compliance boundaries create logical boundaries within an Office 365 organizatio
   
 We use the example in the following illustration to explain how compliance boundaries work.
   
-![Compliance boundaries consist of search permissions filters that control access to agencies and admin role groups that control access to eDiscovery cases](media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
+![Compliance boundaries consist of search permissions filters that control access to agencies and admin role groups that control access to eDiscovery cases](../media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
   
 In this example, Contoso LTD is an Office 365 organization that consists of two subsidiaries, Fourth Coffee and Coho Winery. The business requires that eDiscovery mangers and investigators can only search the Exchange mailboxes, OneDrive accounts, and SharePoint sites in their agency. Also, eDiscovery managers and investigators can only see eDiscovery cases in their agency, and they can only access the cases that they're a member of. Here's how compliance boundaries meet these requirements.
   
@@ -157,9 +157,9 @@ To create a case and assign members:
     
 2. In the list of eDiscovery cases, click the name of the case you created.
     
-3. In the **Manage this case** flyout page, under **Manage role groups**, click ![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Add**.
+3. In the **Manage this case** flyout page, under **Manage role groups**, click ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Add**.
     
-    ![Add a role group as a member of an eDiscovery case](media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
+    ![Add a role group as a member of an eDiscovery case](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
 4. In the list of role groups, select one of the role groups that you created in Step 3, and click **Add**.
     

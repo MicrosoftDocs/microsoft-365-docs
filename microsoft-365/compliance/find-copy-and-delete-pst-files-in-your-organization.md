@@ -28,7 +28,7 @@ Another thing you can do with the PST Collection tool is prevent users from crea
 
 Here's a quick overview of the process of using the PST Collection tool to find, control, collect, and delete PST files in your organization.
   
-![Overview of the PST Collection tool process](media/67a29f27-f83c-4f0a-9df4-7ed92d3086fe.png)
+![Overview of the PST Collection tool process](../media/67a29f27-f83c-4f0a-9df4-7ed92d3086fe.png)
   
 1. **[Step 1: Find PST files on your network](#step-1-find-pst-files-on-your-network)** - When you run the tool to find PST files, you specify a location, such as an organizational unit that contain Active Directory objects for client and server computers. You can also search specific machines or network file shares. When you run the tool, a "lightweight" Collection Agent is installed on the target computers. This agent searches the target computer for PST files and then sends information back to the PST Collection tool about any PST file it finds. The tool creates log files that contains information about the PST files that were found in the specified locations. These files are used when you run the tool in later steps. 
     
@@ -235,7 +235,7 @@ After the PST files that you found and collected have been imported to Exchange 
     
     |****Parameter****|****Description****|****Examples****|
     |:-----|:-----|:-----|
-    | `DataSource` <br/> |Specifies the type of data to search for. Currently, you can use the PST Collection tool to search for PST files. ![spacer](media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
+    | `DataSource` <br/> |Specifies the type of data to search for. Currently, you can use the PST Collection tool to search for PST files. ![spacer](../media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
     | `Mode` <br/> |Specifies the type of operation that the tool will perform. Use the value  `Delete` to delete that PST files that were found when you ran to the tool in the Find mode.  <br/> | `-Mode Delete` <br/> |
     | `JobName` <br/> |Specifies the name of an existing PST Collection job. You have to use this same job name that you used when you ran the tool in the Find mode and the Collect mode in Step 1 and Step 3. This job name is also added to the name of the log file that is created when you run the tool in the Delete mode.  <br/> | `-JobName PstSearch1` <br/> |
     | `ConfigurationLocation` <br/> |Specifies the folder that contains the .xml configuration file that was created when you ran the tool in the Collect mode. Use the same value that you used for this parameter in Step 3.  <br/> | `-ConfigurationLocation "c:\users\admin\ desktop\PSTCollection\Configuration"` <br/> |

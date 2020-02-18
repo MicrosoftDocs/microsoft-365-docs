@@ -81,7 +81,7 @@ When a mailbox is placed on Litigation Hold, items in the Purges subfolder are p
 
 The following illustration shows the subfolders in the Recoverable Items folders and the hold workflow process.
 
-![Litigation Hold life cycle](media/LitigationHoldLifeCycle.png)
+![Litigation Hold life cycle](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
 > If a hold associated with an eDiscovery case is placed on a mailbox, purged items are moved from the Deletions subfolder to the DiscoveryHolds subfolder and are preserved until the mailbox is released from the eDiscovery hold.

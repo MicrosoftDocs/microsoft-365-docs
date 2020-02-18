@@ -56,9 +56,9 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
     
 4. On the **eDiscovery Manager** flyout page, do one of the following based on the eDiscovery permissions that you want to assign. 
   
-    **To make a user an eDiscovery Manager:** Next to **eDiscovery Manager**, select **Edit**. In the **Choose eDiscovery Manager** section, select the **Choose eDiscovery Manager** hyperlink, and then select ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**. Select the user (or users) you want to add as an eDiscovery manager, and then select **Add**. When you're finished adding users, select **Done**. Then, on the **Editing Choose eDiscovery Manager** flyout page, select **Save** to save the changes to the eDiscovery Manager membership.
+    **To make a user an eDiscovery Manager:** Next to **eDiscovery Manager**, select **Edit**. In the **Choose eDiscovery Manager** section, select the **Choose eDiscovery Manager** hyperlink, and then select ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add**. Select the user (or users) you want to add as an eDiscovery manager, and then select **Add**. When you're finished adding users, select **Done**. Then, on the **Editing Choose eDiscovery Manager** flyout page, select **Save** to save the changes to the eDiscovery Manager membership.
   
-    **To make a user an eDiscovery Administrator:** Next to **eDiscovery Manager**, select **Edit**. In the **Choose eDiscovery Administrator** section, Under **eDiscovery Administrators**, select **Choose eDiscovery Administrator**, select **Edit**, and then select ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**. Select the user (or users) you want to add as an **eDiscovery Administrator**, and then  **Add**. When you're finished adding users, select **Done**. Then, on the **Editing Choose eDiscovery Administrator** flyout page, select **Save** to save the changes to the eDiscovery Administrator membership.
+    **To make a user an eDiscovery Administrator:** Next to **eDiscovery Manager**, select **Edit**. In the **Choose eDiscovery Administrator** section, Under **eDiscovery Administrators**, select **Choose eDiscovery Administrator**, select **Edit**, and then select ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add**. Select the user (or users) you want to add as an **eDiscovery Administrator**, and then  **Add**. When you're finished adding users, select **Done**. Then, on the **Editing Choose eDiscovery Administrator** flyout page, select **Save** to save the changes to the eDiscovery Administrator membership.
       
 > [!NOTE]
 > You can also use the **Add-eDiscoveryCaseAdmin** cmdlet to make a user an eDiscovery Administrator. However, the user must be assigned the Case Management role before you can use this cmdlet to make them an eDiscovery Administrator. For more information, see [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
@@ -71,14 +71,14 @@ The following table lists the eDiscovery-related RBAC roles in the Security & Co
     
 |**Role**|**Compliance Administrator**|**eDiscovery Manager & Administrator**|**Organization Management**|**Reviewer**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Case Management <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Compliance Search <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Export <br/> | <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Hold <br/>  |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Preview <br/>  | <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Review <br/>  | <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
-|RMS Decrypt <br/>  ||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
-|Search And Purge <br/> | <br/> | <br/> |![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
+|Case Management <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Compliance Search <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Export <br/> | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Hold <br/>  |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Preview <br/>  | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Review <br/>  | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|RMS Decrypt <br/>  ||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
+|Search And Purge <br/> | <br/> | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
   
 The following sections describe each of the eDiscovery-related RBAC roles listed in the previous table.

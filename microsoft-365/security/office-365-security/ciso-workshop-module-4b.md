@@ -18,7 +18,7 @@ description: "Learn more about security principles and recommendations for moder
 
 This module reviews the evolution and trajectory of the Microsoft Security Operations Centers (SOC), powered by trillions of signals in the Microsoft Intelligent Security Graph.
 
-- Download PDF summary: [Module 4b: Threat Protection Strategy](../media/ciso-workshop-4b-threat-protection-strategy.pdf)
+- Download PDF summary: [Module 4b: Threat Protection Strategy](../../media/ciso-workshop-4b-threat-protection-strategy.pdf)
 - Download PowerPoint summary: [Module 4b: Threat Protection Strategy](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4b-threat-protection-strategy.pptx)
 
 ## Introduction: Threat Protection Strategy (Detect-Respond-Recover) (3:38)

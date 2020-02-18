@@ -26,7 +26,7 @@ description: "A policy tip is a notification or warning that appears when someon
 
 You can use a data loss prevention (DLP) policy to identify, monitor, and protect sensitive information across Office 365. You want people in your organization who work with this sensitive information to stay compliant with your DLP policies, but you don't want to block them unnecessarily from getting their work done. This is where email notifications and policy tips can help.
   
-![Message bar shows policy tip in Excel 2016](media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
+![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
 A policy tip is a notification or warning that appears when someone is working with content that conflicts with a DLP policy—for example, content like an Excel workbook on a OneDrive for Business site that contains personally identifiable information (PII) and is shared with an external user.
   
@@ -40,7 +40,7 @@ In the Office 365 Security &amp; Compliance Center, when you create a DLP policy
     
   - For email in Outlook on the web and Outlook 2013 and later, the policy tip appears at the top of a message above the recipients while the message is being composed.
     
-  - For documents in a OneDrive for Business account or SharePoint Online site, the policy tip is indicated by a warning icon that appears on the item. To view more information, you can select an item and then choose **Information** ![Information pane icon](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) in the upper-right corner of the page to open the details pane. 
+  - For documents in a OneDrive for Business account or SharePoint Online site, the policy tip is indicated by a warning icon that appears on the item. To view more information, you can select an item and then choose **Information** ![Information pane icon](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) in the upper-right corner of the page to open the details pane. 
     
   - For Excel, PowerPoint, and Word documents that are stored on a OneDrive for Business site or SharePoint Online site that's included in the DLP policy, the policy tip appears on the Message Bar and the Backstage view ( **File** menu \> **Info**).
     
@@ -54,7 +54,7 @@ When you create a DLP policy, both email notifications and policy tips are part 
     
 3. In the Security &amp; Compliance Center \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
     
-    ![Create a policy button](media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
+    ![Create a policy button](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
 4. Choose the DLP policy template that protects the types of sensitive information that you need \> **Next**.
     
@@ -78,7 +78,7 @@ When you create a DLP policy, both email notifications and policy tips are part 
     
 9. In the rule editor, under **User notifications**, switch the status on.
     
-    ![User notifications section of rule editor](media/47705927-c60b-4054-a072-ab914f33d15d.png)
+    ![User notifications section of rule editor](../media/47705927-c60b-4054-a072-ab914f33d15d.png)
 
 > [!NOTE]
 > DLP policies apply to all documents that match the policy, whether those documents are new or existing. However, an email notification is only generated when new content matches an existing DLP policy. Existing content is protected, but will not generate a user notification via email.
@@ -94,13 +94,13 @@ For each rule in a DLP policy, you can:
 > [!NOTE]
 >  Email notifications can be sent only to individual recipients—not groups or distribution lists. Only new content will trigger an email notification. Editing existing content will trigger policy tips, but not an email notification. 
   
-![Email notification options](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
+![Email notification options](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
 ### Default email notification
 
 Notifications have a Subject line that begins with the action taken, such as "Notification", "Message Blocked" for email, or "Access Blocked" for documents. If the notification is about a document, the notification message body includes a link that takes you to the site where the document's stored and opens the policy tip for the document, where you can resolve any issues (see the section below about policy tips). If the notification is about a message, the notification includes as an attachment the message that matches a DLP policy.
   
-![Notification message](media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
+![Notification message](../media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
   
 By default, notifications display text similar to the following for an item on a site. The notification text is configured separately for each rule, so the text that's displayed differs depending on which rule is matched.
 
@@ -122,7 +122,7 @@ You can also use the following tokens to help customize the email notification. 
 |%%ContentURL%%  <br/> |The URL of the document on the SharePoint Online site or OneDrive for Business site.  <br/> |
 |%%MatchedConditions%%  <br/> |The conditions that were matched by the content. Use this token to inform people of possible issues with the content.  <br/> |
    
-![Notification message showing where tokens appear](media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
+![Notification message showing where tokens appear](../media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
   
 ## Options for configuring policy tips
 
@@ -136,7 +136,7 @@ For each rule in a DLP policy, you can configure policy tips to:
     
   - Allow the person to report a false positive and override the DLP policy. This information is also logged for reporting, so that you can use false positives to fine tune your rules.
     
-![Policy tip options](media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
+![Policy tip options](../media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
   
 For example, you may have a DLP policy applied to OneDrive for Business sites that detects personally identifiable information (PII), and this policy has three rules:
   
@@ -162,15 +162,15 @@ When a document on a OneDrive for Business site or SharePoint Online site matche
     
 2. If the rule blocks access to the document, the blocked icon appears.
     
-![Policy tip icons on documents in a OneDrive account](media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
+![Policy tip icons on documents in a OneDrive account](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-To take action on a document, you can select an item \> choose **Information** ![Information pane icon](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) in the upper-right corner of the page to open the details pane \> **View policy tip**.
+To take action on a document, you can select an item \> choose **Information** ![Information pane icon](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) in the upper-right corner of the page to open the details pane \> **View policy tip**.
   
 The policy tip lists the issues with the content, and if the policy tips are configured with these options, you can choose **Resolve**, and then **Override** the policy tip or **Report** a false positive. 
   
-![Information pane showing policy tip](media/0a191e70-80f0-4702-90f4-7a5b7aabcaab.png)
+![Information pane showing policy tip](../media/0a191e70-80f0-4702-90f4-7a5b7aabcaab.png)
   
-![Policy tip with option to override](media/e250bff9-41d5-4ce4-82ea-1dc2d043fab1.png)
+![Policy tip with option to override](../media/e250bff9-41d5-4ce4-82ea-1dc2d043fab1.png)
   
 DLP policies are synced to sites and contented is evaluated against them periodically and asynchronously, so there may be a short delay between the time you create the DLP policy and the time you begin to see policy tips. There may be a similar delay from when you resolve or override a policy tip to when the icon on the document on the site goes away.
   
@@ -192,17 +192,17 @@ You can customize the text for policy tips separately from the email notificatio
 
 When you compose a new email in Outlook on the web and Outlook 2013 and later, you'll see a policy tip if you add content that matches a rule in a DLP policy, and that rule uses policy tips. The policy tip appears at the top of the message, above the recipients, while the message is being composed.
   
-![Policy tip at the top of a message being composed](media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
+![Policy tip at the top of a message being composed](../media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
   
 Policy tips work whether the sensitive information appears in the message body, subject line, or even a message attachment as shown here.
   
-![Policy tip showing that an attachment conflicts with a DLP policy](media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
+![Policy tip showing that an attachment conflicts with a DLP policy](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
   
 If the policy tips are configured to allow override, you can choose **Show Details** \> **Override** \> enter a business justification or report a false positive \> **Override**.
   
-![Policy tip in message expanded to show Override option](media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
+![Policy tip in message expanded to show Override option](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
   
-![Policy tip dialog where you can override the policy tip](media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
+![Policy tip dialog where you can override the policy tip](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
   
 Note that when you add sensitive information to an email, there may be latency between when the sensitive information is added and when the policy tip appears.
 
@@ -247,15 +247,15 @@ Depending on how you configure the policy tips in the DLP policy, people can cho
   
 Policy tips appear on the Message Bar.
   
-![Message bar shows policy tip in Excel 2016](media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
+![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
 And policy tips also appear in the Backstage view (on the **File** tab). 
   
-![Backstage shows policy tip in Excel 2016](media/44c561f6-8f3f-4878-b1b0-b7543f8a4120.png)
+![Backstage shows policy tip in Excel 2016](../media/44c561f6-8f3f-4878-b1b0-b7543f8a4120.png)
   
 If policy tips in the DLP policy are configured with these options, you can choose **Resolve** to **Override** a policy tip or **Report** a false positive. 
   
-![Options on policy tip in Backstage in Excel 2016](media/5b3857ba-907e-456e-ae43-888b594c049c.png)
+![Options on policy tip in Backstage in Excel 2016](../media/5b3857ba-907e-456e-ae43-888b594c049c.png)
   
 In each of these Office desktop programs, people can choose to turn off policy tips. If turned off, policy tips that are simple notifications will not appear on the Message Bar or Backstage view (on the **File** tab). However, policy tips about blocking and overriding will still appear, and they will still receive the email notification. In addition, turning off policy tips does not exempt the document from any DLP policies that have been applied to it. 
   

@@ -54,7 +54,7 @@ Visit these reports and dashboards to learn more about the health of your enviro
 |[Threat Explorer (or real-time detections)](threat-explorer.md)|This is also in the **Threat management** section of the security center. If you are investigating or experiencing an attack against your Office 365 tenant, use Explorer (or real-time detections) to analyze threats. Explorer (and the real-time detections report) shows you the volume of attacks over time, and you can analyze this data by threat families, attacker infrastructure, and more. You can also mark any suspicious email for the Incidents list.|
 |Reports — Dashboard|In the **Reports** section of security center, view audit reports for your SharePoint Online and Exchange Online organizations. You can also access Azure Active Directory (Azure AD) user sign-in reports, user activity reports, and the Azure AD audit log from the **View reports** page.|
 
-![Security center Dashboard](../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![Security center Dashboard](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
 
 ## Configure additional Exchange Online tenant-wide settings
 
@@ -117,7 +117,7 @@ More information:
 
 - [What is Cloud App Security?](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 
-![Cloud App Security dashboard](../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+![Cloud App Security dashboard](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
 ## Additional resources
 

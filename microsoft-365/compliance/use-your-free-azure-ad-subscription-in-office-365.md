@@ -32,7 +32,7 @@ Use a private browsing session (not a regular session) to access the Azure porta
 
 2. In the left navigation pane in the Azure portal, click **Azure Active Directory**.
 
-    ![Click Azure Active Directory in the left navigation pane in the Azure portal.](media/97d2d72f-ac20-46ab-898c-851f6009b453.png)
+    ![Click Azure Active Directory in the left navigation pane in the Azure portal.](../media/97d2d72f-ac20-46ab-898c-851f6009b453.png)
 
     The **Azure Active Directory** admin center is displayed.
 

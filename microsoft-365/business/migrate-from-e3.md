@@ -39,25 +39,25 @@ This table shows the differences between Microsoft 365 Business and Office 365 E
 | Office apps<sup>1</sup>	| Office 365 Business	| Office 365 ProPlus | 
 | **Cloud productivity apps**		| | | 
 | Exchange Online and Outlook	| 50 GB storage limit per mailbox and unlimited Exchange Online Archiving	| 100 GB storage limit per mailbox and unlimited Exchange Online Archiving | 
-| Teams	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Office 365 E3](./media/check-mark.png) | 
+| Teams	| ![Included with Microsoft 365 Business](../media/check-mark.png)	| ![Included with Office 365 E3](../media/check-mark.png) | 
 | OneDrive for Business	| 1 TB storage limit per user	| Unlimited | 
-| Yammer, SharePoint Online, Planner, Stream	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Office 365 E3](./media/check-mark.png) | 
-| StaffHub	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Office 365 E3](./media/check-mark.png) | 
-| Outlook Customer Manager, MileIQ	| ![Included with Microsoft 365 Business](./media/check-mark.png)	| | 
+| Yammer, SharePoint Online, Planner, Stream	| ![Included with Microsoft 365 Business](../media/check-mark.png)	| ![Included with Office 365 E3](../media/check-mark.png) | 
+| StaffHub	| ![Included with Microsoft 365 Business](../media/check-mark.png)	| ![Included with Office 365 E3](../media/check-mark.png) | 
+| Outlook Customer Manager, MileIQ	| ![Included with Microsoft 365 Business](../media/check-mark.png)	| | 
 | **Threat Protection**		| | | 
-| Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Included with Microsoft 365 Business](./media/check-mark.png)	| Not included, but can be added on | 
+| Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Included with Microsoft 365 Business](../media/check-mark.png)	| Not included, but can be added on | 
 | **Identity management**		| | | 
-| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities| 	![Included with Microsoft 365 Business](./media/check-mark.png)	|  | 
+| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities| 	![Included with Microsoft 365 Business](../media/check-mark.png)	|  | 
 | **Device and app management**		| | |
-| Microsoft Intune, Windows AutoPilot| 	![Included with Microsoft 365 Business](./media/check-mark.png)	|  |
-| Shared computer activation| 	![Included with Microsoft 365 Business](./media/check-mark.png)	| ![Included with Office 365 E3](./media/check-mark.png)| 
-| Upgrade rights to Windows 10 Pro from Win 7/8.1 Pro licenses| 	![Included with Microsoft 365 Business](./media/check-mark.png)	|| 
+| Microsoft Intune, Windows AutoPilot| 	![Included with Microsoft 365 Business](../media/check-mark.png)	|  |
+| Shared computer activation| 	![Included with Microsoft 365 Business](../media/check-mark.png)	| ![Included with Office 365 E3](../media/check-mark.png)| 
+| Upgrade rights to Windows 10 Pro from Win 7/8.1 Pro licenses| 	![Included with Microsoft 365 Business](../media/check-mark.png)	|| 
 | **Information protection**		| | |
-|Office 365 Data Loss Prevention|	![Included with Microsoft 365 Business](./media/check-mark.png)|![Included with Office 365 E3](./media/check-mark.png)|
-|Azure Information Protection Plan 1, Bitlocker enforcement|![Included with Microsoft 365 Business](./media/check-mark.png)||
-|Azure Information Protection Plan 1, Sensitivity labels|![Included with Microsoft 365 Business](./media/check-mark.png)||
+|Office 365 Data Loss Prevention|	![Included with Microsoft 365 Business](../media/check-mark.png)|![Included with Office 365 E3](../media/check-mark.png)|
+|Azure Information Protection Plan 1, Bitlocker enforcement|![Included with Microsoft 365 Business](../media/check-mark.png)||
+|Azure Information Protection Plan 1, Sensitivity labels|![Included with Microsoft 365 Business](../media/check-mark.png)||
 |**Client Access License (CAL rights)**|||
-|Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Included with Office 365 E3](./media/check-mark.png)|
+|Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Included with Office 365 E3](../media/check-mark.png)|
 
 <sup>1</sup> The Microsoft 365 Business version of the Office apps doesn't include volume activation through Group Policy, app telemetry, update controls, spreadsheet compare and inquire, or business Intelligence.
 

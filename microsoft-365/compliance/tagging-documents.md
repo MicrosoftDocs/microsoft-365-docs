@@ -43,11 +43,11 @@ Advanced eDiscovery provides two types of tags:
 
 In addition to the tag types, the structure of how tags are organization in the tag panel can be used to make tagging documents more intuitive. Tags are grouped by sections. review set search supports the ability to search by tag and by tag section. This means you can create a review set search to retrieve documents tagged with any tag in a section.
 
-![Tag sections in the tag panel](media/Tagtypes.png)
+![Tag sections in the tag panel](../media/Tagtypes.png)
 
 Tags can be further organized by nesting them within a section. For example, if the intent is to identify and tag privileged content, nesting can be used to make it clear that a user can tag a document as “Privileged” and select the type of privilege by checking the appropriate nested tag.
 
-![Nested tags within a tag section](media/Nestingtags.png)
+![Nested tags within a tag section](../media/Nestingtags.png)
 
 ## Applying tags
 
@@ -57,7 +57,7 @@ There are several ways to apply a tag to content.
 
 When viewing a document in a review set, you can display the tags that a review can use by clicking **Coding panel**.
 
-![Click Tag panel to display the tag panel](media/Singledoctag.png)
+![Click Tag panel to display the tag panel](../media/Singledoctag.png)
 
 This will enable you to apply tags to the document displayed in the viewer.
 
@@ -66,7 +66,7 @@ This will enable you to apply tags to the document displayed in the viewer.
 Bulk tagging can be done by selecting multiple files in the results grid and then using the tags in the **Coding panel** similar to tagging single documents. Bulk un-tagging can be done by selecting tags twice; the first click will apply the tag, and the second selection will ensure that tag is cleared for all selected files.
 
 ![A screenshot of a cell phone
-Description automatically generated](media/Bulktag.png)
+Description automatically generated](../media/Bulktag.png)
 
 > [!NOTE]
 > When bulk tagging, the tagging panel will display a count of files that are tagged for each tag in the panel.
@@ -86,4 +86,4 @@ For example, here's how to display the **Coding panel** when using the **Documen
 3. To tag all documents, select all documents in the **Document family** panel, click **Code documents**, and then choose the tags to apply to the entire family of documents.
 
 ![A screenshot of a social media post
-Description automatically generated](media/Relatedtag.png)
+Description automatically generated](../media/Relatedtag.png)
