@@ -140,7 +140,10 @@ Additionally, to create import jobs in the Security & Compliance Center, one of 
   
  **Where is network upload available?**
   
-Network upload is currently available in the United States, Canada, Brazil, the United Kingdom, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, and Australia. Network upload will be available in more regions soon.
+Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, and Australia. Network upload will be available in more regions soon.
+
+> [!NOTE]
+> At this time, network upload of PST files is not available in Germany and Switzerland. This FAQ will be updated when network upload is available in these countries.
   
  **What is the pricing for importing PST files by using network upload?**
   
