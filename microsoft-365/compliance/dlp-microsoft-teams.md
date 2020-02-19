@@ -26,7 +26,12 @@ To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Serv
 
 ## Overview of DLP for Microsoft Teams
 
-Recently, [data loss prevention](data-loss-prevention-policies.md) (DLP) capabilities were extended to include Microsoft Teams chat and channel messages. If your organization has DLP, you can now define policies that prevent people from sharing sensitive information in a Microsoft Teams channel or chat session. Here are some examples of how this protection works:
+Recently, [data loss prevention](data-loss-prevention-policies.md) (DLP) capabilities were extended to include Microsoft Teams chat and channel messages.
+
+> [!NOTE]
+> DLP is not supported, at this time, for private channel messages.
+
+If your organization has DLP, you can now define policies that prevent people from sharing sensitive information in a Microsoft Teams channel or chat session. Here are some examples of how this protection works:
 
 - **Example 1: Protecting sensitive information in messages**. Suppose that someone attempts to share sensitive information in a Teams chat or channel with guests (external users). If you have a DLP policy defined to prevent this, messages with sensitive information that are sent to external users are deleted. This happens automatically, and within seconds, according to how your DLP policy is configured.
 
@@ -45,7 +50,7 @@ In this case, the sender attempted to share a social security number in a Micros
 
 ![Options to resolve blocked message](../media/dlp-teams-blockedmessage-possibleactions.png)
 
-In your organization, you can choose to allow users to override a DLP policy. And, when you configure your DLP policies, you can use the default policy tips, or [customize policy tips](#to-customize-policy-tips) for your organization. 
+In your organization, you can choose to allow users to override a DLP policy. And, when you configure your DLP policies, you can use the default policy tips, or [customize policy tips](#to-customize-policy-tips) for your organization.
 
 Returning to our example, where a sender shared a social security number in a Teams channel, here's what the recipient saw:
 
@@ -59,7 +64,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 1. Go to the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
 
-2. Choose **Data loss prevention** > **Policy**. 
+2. Choose **Data loss prevention** > **Policy**.
 
 3. Select a policy, and next to **Policy settings**, choose **Edit**.
 
@@ -67,7 +72,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 5. On the **User notifications** tab, select **Customize the email text** and/or **Customize the policy tip text** options.<br/>![Customize user notifications and policy tips](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
-6. Specify the text you want to use for email notifications and/or policy tips, and then choose **Save**. 
+6. Specify the text you want to use for email notifications and/or policy tips, and then choose **Save**.
 
 7. On the **Policy settings** tab, choose **Save**.
 
@@ -79,7 +84,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 1. Go to the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
 
-2. Choose **Data loss prevention** > **Policy**. 
+2. Choose **Data loss prevention** > **Policy**.
 
 3. Select a policy, and look at the values under **Locations**. If you see **Teams chat and channel messages**, you're all set. If you don't, click **Edit**.<br/>![Locations for existing policy](../media/dlp-teams-editexistingpolicy.png)<br/>
 
@@ -97,11 +102,11 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 1. Go to the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
 
-2. Choose **Data loss prevention** > **Policy** > **+ Create a policy**. 
+2. Choose **Data loss prevention** > **Policy** > **+ Create a policy**.
 
 3. Choose a [template](data-loss-prevention-policies.md#dlp-policy-templates), and then choose **Next**.<br/>In our example, we chose the U.S. Personally Identifiable Information Data template.<br/>![Privacy template for DLP policy](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
-4. On the **Name your policy** tab, specify a name and description for the policy, and then choose **Next**. 
+4. On the **Name your policy** tab, specify a name and description for the policy, and then choose **Next**.
 
 5. On the **Choose locations** tab, keep the default setting of all locations, or select **Let me choose specific locations**, and then choose **Next**.<br/>If you chose specific locations, select them for your DLP policy, and then choose **Next**.<br/>![DLP policy locations](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
@@ -115,7 +120,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 8. On the **Policy settings** tab, under **Do you want to turn on the policy or test things out first?**, choose whether to turn the policy on, [test it first](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode), or keep it turned off for now, and then choose **Next**.<br/>![Specify whether to turn the policy on](../media/dlp-teams-policysettings-turnonnow.png)<br/>
 
-9. On the **Review your settings** tab, review the settings for your new policy. Choose **Edit** to make changes. When you're finished, choose **Create**. 
+9. On the **Review your settings** tab, review the settings for your new policy. Choose **Edit** to make changes. When you're finished, choose **Create**.
 
 Allow approximately one hour for your new policy to work its way through your data center and sync to user accounts.
 
