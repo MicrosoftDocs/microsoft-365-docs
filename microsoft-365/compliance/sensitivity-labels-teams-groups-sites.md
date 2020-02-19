@@ -29,7 +29,7 @@ When you create sensitivity labels in the [Microsoft 365 compliance center](http
 
 When you apply this label to a team or group, the label automatically applies the configured options to the connected SharePoint site or team site. 
 
-Content in those sites however, do not inherit the labels for settings such as the label name, visual markings, or encryption. For label files in SharePoint sites or team sites, [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Content in those sites however, do not inherit the labels for settings such as the label name, visual markings, or encryption. To label files in SharePoint sites or team sites, [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## About the public preview for Microsoft Teams, Office 365 groups, and SharePoint sites
 
