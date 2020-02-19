@@ -26,8 +26,6 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Protect information
-            url: protect-information.md
           - text: Sensitivity labels
             url: sensitivity-labels.md
           - text: Data loss prevention (DLP)
@@ -42,17 +40,21 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Manage records in Microsoft 365
+          - text: Retention labels
+            url: labels.md         
+          - text: Retention policies
+            url: retention-policies.md
+          - text: Records management
             url: records-management.md
           - text: File plan manager
             url: file-plan-manager.md
-          - text: Retention labels
-            url: labels.md
           - text: Event-based retention
             url: event-driven-retention.md
-          - text: Inactive mailboxes
-            url: inactive-mailboxes-in-office-365.md
-          - text: View data governance reports
+          - text: PST import
+            url: importing-pst-files-to-office-365.md
+          - text: Third-party data connectors
+            url: archiving-third-party-data.md
+          - text: Data governance reports
             url: view-the-data-governance-reports.md
 
 # Card (optional)
