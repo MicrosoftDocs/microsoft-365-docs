@@ -156,7 +156,7 @@ Not at this time.
 
 Yes! Encrypted messages are supported for a shared mailbox.
 
-- Users can open protected mails in a shared mMailbox where the shared mailbox received a protected mail as part of a distribution group.
+- Users can open protected mails in a shared mailbox where the shared mailbox received a protected mail as part of a distribution group.
 
 - Users can view attachments that inherit protection from email when they use Outlook for Windows, Outlook for Mac, and Outlook on the web.
 
