@@ -61,18 +61,18 @@ Insider risk settings apply to all insider risk management policies, regardless 
 
 Protecting the privacy of users that have policy matches is important and can help promote objectivity in data investigation and analysis reviews for insider risk alerts. For users with insider risk policy matches, you can choose one of the following settings:
 
-- **Show anonymized versions of user names**: User names are anonymized to prevent admins, data investigators, and reviewers from seeing who is associated with policy alerts. For example, a user 'Grace Taylor' would appear with a randomized psuedonym such as 'AnonIS8-988' in all areas of the insider risk management experience. Choosing this setting anonymizes all users with current and past policy matches and applies to all policies. User profile information in the insider risk alert and case details will not be available when this option is chosen. However, user names are displayed when adding new users to existing policies or when assigning users to new policies. If you choose to turn this setting off, user names will be displayed for all users that have current or past policy matches.
-- **Do not show anonymized versions of user names**: User names are displayed for all current and past policy matches for alerts and cases. User profile information (the name, title, alias, and organization or department) is displayed for the user for all insider risk management alerts and cases.
+- **Show anonymized versions of usernames**: User names are anonymized to prevent admins, data investigators, and reviewers from seeing who is associated with policy alerts. For example, a user 'Grace Taylor' would appear with a randomized psuedonym such as 'AnonIS8-988' in all areas of the insider risk management experience. Choosing this setting anonymizes all users with current and past policy matches and applies to all policies. User profile information in the insider risk alert and case details will not be available when this option is chosen. However, usernames are displayed when adding new users to existing policies or when assigning users to new policies. If you choose to turn this setting off, usernames will be displayed for all users that have current or past policy matches.
+- **Do not show anonymized versions of usernames**: Usernames are displayed for all current and past policy matches for alerts and cases. User profile information (the name, title, alias, and organization or department) is displayed for the user for all insider risk management alerts and cases.
 
 ### Indicators
 
-Insider risk policy templates define the type of risk activities that you want to detect and investigate. Each policy template is based on specific indicators that correspond to particular risk activities. Alerts are triggered by policies when users perform activities related to these indicators.
+Insider risk policy templates define the type of risk activities that you want to detect and investigate. Each policy template is based on specific indicators that correspond to particular risk activities and alerts are triggered by policies when users perform activities related to these indicators. In some cases, you may want to limit the indicators that are applied to insider risk policies in your organization. You can turn off the indicators for specific areas by disabling them from all insider risk policies.
 
-Insider risk management allows you to define areas of interest across all policies within these indicators. While some indicators are requirements for specific policies, all indicators can provide enrichment and depth to configured policies. For example, the *HR events (termination date)* indicator is a requirement to configure a policy with the *Departing employee data theft* template. However, selecting this indicator as global policy setting includes this indicator in policies configured with any policy template. By having this indicator included in other policies, the policy matching and alert process is enhanced and alert risk severity levels for policy matches are calculated with more variables. As a general recommendation, you should select all indicators as the global insider risk management setting. Exceptions would be.....
+To define the indicators that are displayed in the insider risk policy wizard, select the appropriate indicators in **Insider risk settings** > **Indicators**. The indicators selected on the **Indicators** settings page can be individually configured when creating or editing an insider risk policy in the policy wizard.
 
-### Monitoring windows
+### Policy timeframes
 
-Policy monitoring windows allow you to define past and future review periods that are triggered after policy matches based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following monitoring windows are available:
+Policy timeframes allow you to define past and future review periods that are triggered after policy matches based on events and activities for the insider risk management policy templates. Depending on the policy template you choose, the following policy timeframes are available:
 
 - **In-scope timespan**: Available for all policy templates, the *In-scope timespan* is the defined number of days that the window activates **after** a triggering event. The window activates for 1 to 30 days after a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *In-scope timespan* to 30 days. Several months have passed since you configured the policy and a triggering event occurs for one of the users included in the policy. The triggering event activates the *In-scope timespan* and the policy is active for that user for 30 days after the triggering event occurred.
 - **Historic timespan**: Available for all policy templates, the *historic timespan* is the defined number of days that the window activates **before** a triggering event. The window activates for 0 to 180 days before a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Historic timespan* to 90 days. Several months have passed since you configured the policy and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Historic timespan* and the policy gathers historic activities for that user for 90 days prior to the triggering event.
@@ -85,8 +85,8 @@ Intelligent detection settings help refine how the detection of risky activities
 
 Anomalous detections include settings for file type exclusions and file volume limits.
 
-- **File type exclusions**: To exclude specific file types from all insider risk management policy matching, enter file type extensions separated by commas. For example, to exclude certain types of music files from policy matches you may enter *aac,mp3,wav,wma* in the **File type exclusions** field. Files with these extensions would be ignored by all configured insider risk management policies.
-- **File volume minimum**: 
+- **File type exclusions**: To exclude specific file types from all insider risk management policy matching, enter file type extensions separated by commas. For example, to exclude certain types of music files from policy matches you may enter *aac,mp3,wav,wma* in the **File type exclusions** field. Files with these extensions would be ignored by all insider risk management policies.
+- **File volume cut off limit**: To define a minimum file level before activity alerts are reported in insider risk policies, enter the number of files. For example, you would enter '10' if you do not want to generate insider risk alerts when a user downloads 10 files or less, even if the your policies consider this an anomaly.
 
 #### Offensive language detections
 
@@ -104,7 +104,7 @@ Complete the following steps to create a new policy:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. Select **Create policy** to open the policy wizard
-3. On the **New insider risk policy** page, complete the following fields:
+3. On the **Name your policy and choose a template** page, complete the following fields:
     - **Name (required)**: Enter a friendly name for the policy
     - **Description (optional)**: Enter a description for the policy.
     - **Choose policy template (required)**: Select one of the [policy templates](insider-risk-management-policies.md#policy-templates) to define the types of risk indicators are monitored by the policy.
@@ -113,14 +113,14 @@ Complete the following steps to create a new policy:
     >If you select the *Data leaks* template, you'll need to configure at least one DLP policy that you'll assign later in the wizard. If you select the *Departing employee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template.
 
 4. Select **Next** to continue.
-5. On the **Users** page, select **Add user or group** to define which users are included in the policy or select **All users and mail-enabled groups** checkbox. Select **Next** to continue.
-6. On the **Specify what content to prioritize (optional)** page, you can assign the sources to prioritize for risky user activities:
-    - SharePoint sites: Select **Add SharePoint site** and select the SharePoint organizations you want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
-    - Sensitive info type: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
-    - Sensitivity labels: Select **Add sensitivity label** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
+5. On the **Choose users and groups** page, select **Choose users or groups** to define which users are included in the policy or select **All users and mail-enabled groups** checkbox. Select **Next** to continue.
+6. On the **Specify what content to prioritize (optional)** page, you can assign higher risk scores to detected activity based on where the related content is located, what sensitive info is included, and what sensitivity labels are applied:
+    - SharePoint sites: Select **Choose SharePoint sites** and select the SharePoint organizations you want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - Sensitive info type: Select **Choose sensitive info types** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
+    - Sensitivity labels: Select **Choose sensitivity labels** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
 7. Select **Next** to continue.
-8. On the **Choose alert indicators** page, you'll see the indicators that are included in the template that you've chosen for this policy. If you selected the *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list.
-9. On the **Select monitoring window** page, you'll define the [monitoring window conditions](insider-risk-management-policies.md#monitoring-windows) for the policy. Configure the monitoring windows as appropriate.
+8. On the **Alert indicators** page, you'll see the indicators that you've defined on the **Insider risk settings** > **Indicators** page. If you selected the *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list.
+9. On the **Select monitoring window** page, see the [monitoring window conditions](insider-risk-management-policies.md#monitoring-windows) that you defined on the **Insider risk settings** > **Policy timeframes** page.
 10. Select **Next** to continue.
 11. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
@@ -137,13 +137,13 @@ Complete the following steps to manage an existing policy:
     - **Name**: The friendly name for the policy
     - **Select playbook**: The template used to define the types of risk indicators monitored by the policy.
 5. Enter a new description for the policy in the **Description** field. Select **Next** to continue.
-6. On the **Users** page, select **Add user or group** to define which users are included in the policy or select **All users and mail-enabled groups** checkbox. Select **Next** to continue
+6. On the **Choose users and groups** page, select **Choose users or groups** to define which users are included in the policy or select **All users and mail-enabled groups** checkbox. Select **Next** to continue
 7. On the **Specify what content to prioritize (optional)** page, update the sources to prioritize for risky user activities:
-    - SharePoint sites: Select **Add SharePoint site** and select the SharePoint organizations you want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
-    - Sensitive info type: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
-    - Sensitivity labels: Select **Add sensitivity label** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
+    - SharePoint sites: Select **Choose SharePoint sites** and select the SharePoint organizations you want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - Sensitive info type: Select **Choose sensitive info types** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
+    - Sensitivity labels: Select **Choose sensitivity labels** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
 8. Select **Next** to continue.
-9. On the **Choose alert indicators** page, you'll see the indicators that are included in the template that you've chosen for this policy. If you selected the *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list.
+9. On the **Alert indicators** page, you'll see the indicators that you've defined on the **Insider risk settings** > **Indicators** page. If you selected the *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list.
 10. On the **Select monitoring window** page, you'll define the [monitoring window conditions](insider-risk-management-policies.md#monitoring-windows) for the policy. Configure the monitoring windows as appropriate.
 11. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to update and activate the changes in the policy.
 
