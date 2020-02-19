@@ -58,7 +58,7 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 - User and admin activity in Microsoft Forms
 
-- Sensitivity labeling activity for sites and Outlook on the web
+- User and admin activity for sensitivity labels for sites that use SharePoint Online or Microsoft Teams
 
 ## Before you begin
 
