@@ -117,7 +117,7 @@ Insider risk management policies include assigned users and define which types o
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. Select **Create policy** to open the policy wizard
 3. On the **New insider risk policy** page, complete the following fields:
-    - **Name (required)**: Enter a friendly name for the policy
+    - **Name (required)**: Enter a friendly name for the policy, must be less than 62 characters.
     - **Description (optional)**: Enter a description for the policy.
     - **Choose policy template (required)**: Select one of the [policy templates](insider-risk-management-policies.md#policy-templates) to define the types of risk indicators are monitored by the policy.
 
