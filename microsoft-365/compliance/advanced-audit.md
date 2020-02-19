@@ -24,7 +24,7 @@ description: "Advanced Audit in Microsoft 365 provides new auditing capabilities
 The [unified auditing functionality](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 provides organizations with visibility into many types of audited activities across many different services in Microsoft 365. Now with the release of Advanced Audit in Microsoft 365, we're adding new auditing capabilities that can help your organization with forensic and compliance investigations.
 
 > [!NOTE]
-> Advanced Audit is available for organizations with an Office 365 or Microsoft 365 Enterprise E5 subscription. Additionally, a Microsoft 365 E5 Compliance add-on subscription can be assigned to users for when per-user licensing is required for Advanced Audit features as is the case for long-term retention of audit logs and high-value audit events.
+> Advanced Audit is available for organizations with an Office 365 or Microsoft 365 Enterprise E5 subscription. Additionally, a Microsoft 365 E5 Compliance add-on subscription can be assigned to users for when per-user licensing is required for Advanced Audit features as is the case for long-term retention of audit logs and access to crucial events for investigations.
 
 This article provides an overview of these Advanced Audit capabilities.
 
@@ -44,9 +44,9 @@ All audit records generated in other services that aren't covered by the default
 
 You can also specify how long to retain audit records that match the policy and a priority level so that specific policies will take priority over other policies. Also note that any custom audit log retention policy will take precedence over the default audit retention policy in case you need retain Exchange, SharePoint, or Azure Active Directory audit records for less than a year for some or all the users in your organization. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
 
-## High-value audit events
+## Access to crucial events for investigations
 
-High-value security- and compliance-related audit events are ones that can help you investigate possible breaches or other forensic-related investigations. The first such high-value event that we're releasing is the *MailItemsAccessed* mailbox auditing event. This event is trigger when mail data is accessed by mail protocols and clients. The MailItemsAccessed event can help investigators identify data breaches and determine the scope of messages that may have been compromised. If an attacker gained access to email messages, MailItemsAccessed event will be triggered even if there is no explicit signal that it was actually read (in other words, the type of access such as via bind or sync is recorded in the audit record).
+Crucial security- and compliance-related audit events are ones that can help you investigate possible breaches or other forensic-related investigations. The first crucial event that we're releasing is the *MailItemsAccessed* mailbox auditing event. This event is trigger when mail data is accessed by mail protocols and clients. The MailItemsAccessed event can help investigators identify data breaches and determine the scope of messages that may have been compromised. If an attacker gained access to email messages, MailItemsAccessed event will be triggered even if there is no explicit signal that it was actually read (in other words, the type of access such as via bind or sync is recorded in the audit record).
 
 The new MailItemsAccessed mailbox action replaces MessageBind in mailbox auditing logging in Exchange Online and provides these improvements:
 
