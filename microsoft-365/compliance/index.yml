@@ -80,12 +80,14 @@ landingContent:
         links:
           - text: Advanced eDiscovery
             url: overview-ediscovery-20.md
-          - text: Manage a data investigation
-            url: overview-data-investigations.md
-          - text: Search for content
+          - text: Core eDiscovery
+            url: ediscovery-cases.md
+          - text: Content search
             url: search-for-content.md
-          - text: Search the audit log
-            url: search-the-audit-log-in-security-and-compliance.md
+          - text: Data investigations (preview)
+            url: overview-data-investigations.md
+          - text: Auditing
+            url: search-the-audit-log-in-security-and-compliance.md   
 
     # Card
   - title: Get started with regulatory compliance
