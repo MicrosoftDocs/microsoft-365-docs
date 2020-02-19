@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
+ms.date: 01/28/2020
 ---
 
 # What's new in Office 365 ATP
@@ -28,15 +29,27 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 > [!TIP]
 > Don't have Office 365 ATP yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## January/February 2020
+
+- Enhancements to [Threat Explorer](threat-explorer.md) to enable security operations teams to search and filter on multiple fields while [investigating email](investigate-malicious-email-that-was-delivered.md):
+    - Delivery location and special actions
+    - Directionality (inbound, outbound, or intra-org)
+    - Overrides (user blocking or allowing)
+    - URL threat (malware, phish, spam, or none)
+    - Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)
+    - Granular time filters (day, hour, half-hour) 
+
+- The **Incidents** widget is now the **Action Center** widget. (To view your security widgets, in the Office 365 Security & Compliance Center, go to **Threat management** > **Review**.)
+
 ## December 2019
 
 - [Export URL click data for offline analysis](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP Plan 1 or Plan 2)
 
-- [Campaign Views in Office 365 ATP (**preview**)](campaigns.md)
+- [Use Campaign Views in Office 365 ATP (**preview**)](campaigns.md)
 
 ## November 2019
 
-- [Check out new compromised user detection and response capabilities (**preview**)](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) (Office 365 ATP Plan 2)
+- [Check out new compromised user detection and response capabilities](address-compromised-users-quickly.md) (**preview**) (Office 365 ATP Plan 2)
 
 ## September 2019
 
