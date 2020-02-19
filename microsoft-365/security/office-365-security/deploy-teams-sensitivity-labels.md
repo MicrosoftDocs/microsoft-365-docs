@@ -45,7 +45,7 @@ After creating, publish the new label or sublabel for your users, who can then a
 
 Here is the configuration of the highly confidential team that uses sensitivity labels for file encryption and permissions.
 
-![Baseline-level protection for a public team.](../media/highly-confidential-team-dlp-sensitivity-labels.png)
+![Baseline-level protection for a public team.](../../media/highly-confidential-team-dlp-sensitivity-labels.png)
 
 
 ## See Also

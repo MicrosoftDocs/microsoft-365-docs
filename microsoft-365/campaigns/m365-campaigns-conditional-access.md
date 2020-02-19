@@ -53,13 +53,13 @@ To require that all users sign in with a second form of ID:
 2. On the Setup page, choose **View** in the **Make sign-in more secure** card.
 
 
-    ![Make sign-in more secure card.](media/setupmfa.png)
+    ![Make sign-in more secure card.](../media/setupmfa.png)
 3. On the Make sign-in more secure page, choose **Get started**.
  
 4. On the Strengthen sign-in security pane, select the check boxes next to **Require multi-factor authentication for admins** and **Require users to register for multi-factor authentication and block access if risk is detected**.
     Be sure to exclude the [emergency](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) or "break-glass" admin account from the MFA requirement in the **Find users** box.
     
-    ![Strengthen sing-in security page.](media/requiremfa.png)
+    ![Strengthen sing-in security page.](../media/requiremfa.png)
 
 5. Choose **Create policy** on the bottom of the page.
 
@@ -69,7 +69,7 @@ To require that all users sign in with a second form of ID:
     
     The baseline policies are listed on the page, and you can see that **Require MFA for admins** and **End user protection** are already enabled after you completed the steps in [require MFA](#require-mfa).
 
-    ![Page that lists baseline policies for conditional access.](media/casettings.png)
+    ![Page that lists baseline policies for conditional access.](../media/casettings.png)
 2. See the following specific instructions for each policy:
 
     - [Require MFA for admins](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

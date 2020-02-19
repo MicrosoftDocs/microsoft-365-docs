@@ -26,7 +26,7 @@ description: "Summary: Configure and demonstrate password hash synchronization a
 
 Many organizations use Azure AD Connect and password hash synchronization to synchronize the set of accounts in their on-premises Active Directory Domain Services (AD DS) forest to the set of accounts in the Azure AD tenant of their Microsoft 365 or Office 365 subscription. This article describes how you can add password hash synchronization to your Microsoft 365 test environment, resulting in the following configuration:
   
-![The simulated enterprise with password hash synchronization test environment](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![The simulated enterprise with password hash synchronization test environment](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
 There are two phases to setting up this test environment:
   
@@ -34,13 +34,13 @@ There are two phases to setting up this test environment:
 2. Install and configure Azure AD Connect on APP1.
     
 > [!TIP]
-> Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
 ## Phase 1: Create the Microsoft 365 simulated enterprise test environment
 
 Follow the instructions in [simulated enterprise base configuration for Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md). Here is your resulting configuration.
   
-![The simulated enterprise base configuration](media/password-hash-sync-m365-ent-test-environment/Phase1.png)
+![The simulated enterprise base configuration](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
 This configuration consists of: 
   
@@ -57,7 +57,7 @@ Next, you add the **testlab.**\<your public domain> domain to your Microsoft 365
 
 Here is your resulting configuration.
   
-![The registration of your testlab domain name](media/password-hash-sync-m365-ent-test-environment/Phase2.png)
+![The registration of your testlab domain name](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
   
 This configuration consists of:
 
@@ -124,7 +124,7 @@ Notice that although User1 has domain administrator permissions for the TESTLAB 
 
 Here is your resulting configuration.
 
-![The simulated enterprise with password hash synchronization test environment](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![The simulated enterprise with password hash synchronization test environment](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
 
 This configuration consists of: 
   

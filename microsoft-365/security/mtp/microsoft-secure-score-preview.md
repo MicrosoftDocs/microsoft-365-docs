@@ -95,7 +95,7 @@ To help you the information you need more quickly, Microsoft improvement actions
 
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
-![Secure Score homepage](../media/secure-score/secure-score-homepage.png)
+![Secure Score homepage](../../media/secure-score/secure-score-homepage.png)
 *Figure 1: Microsoft Secure Score overview page*
 
 ## Take action to improve your score
@@ -110,7 +110,7 @@ Ranking is based on the number of remaining points left to achieve, implementati
 
 When you select a specific improvement action, a full page flyout appears.  
 
-![Improvement action flyout example](../media/secure-score/secure-score-improvement-action.png)
+![Improvement action flyout example](../../media/secure-score/secure-score-improvement-action.png)
 *Figure 2: Improvement action flyout example*
 
 To complete the action, you have a few options:

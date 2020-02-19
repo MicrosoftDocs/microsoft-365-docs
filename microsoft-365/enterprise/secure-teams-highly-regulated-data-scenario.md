@@ -40,16 +40,16 @@ The elements of configuration for a team for highly regulated data are:
 
 Here is the resulting configuration with a sensitivity label.
 
-![The secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+![The secure team scenario configuration](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
 
 For a quick overview, watch this short video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a>
-For a 1-page summary of this scenario, see the [Teams for highly regulated data poster](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf).
+For a 1-page summary of this scenario, see the [Teams for highly regulated data poster](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf).
 
-[![Teams for highly regulated data poster](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+[![Teams for highly regulated data poster](../media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
 You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) or [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17)-sized paper.
 
@@ -83,7 +83,7 @@ When you create a private team, here are the default permissions:
 
 Here are the default permissions for the Team Site.
 
-![The default permissions of a Team Site](./media/secure-teams-highly-regulated-data-scenario/secure-team-default-site-permissions.png)
+![The default permissions of a Team Site](../media/secure-teams-highly-regulated-data-scenario/secure-team-default-site-permissions.png)
  
 >[!Note]
 >If you view the \<team name> Owners SharePoint group for the Edit permission level, it does not display \<team name> Owners.
@@ -98,7 +98,7 @@ Permissions maintenance is the same as team member and owner maintenance.
 
 Here’s the resulting configuration so far.
 
-![Step 2 of the secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-step2.png)
+![Step 2 of the secure team scenario configuration](../media/secure-teams-highly-regulated-data-scenario/secure-team-step2.png)
  
 ### Step 3: Configure the underlying SharePoint site for additional security
 
@@ -113,7 +113,7 @@ With these settings, the ability for Team Group members to share the Team Site w
 
 Here’s the resulting configuration so far.
 
-![Step 3 of the secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-step3.png)
+![Step 3 of the secure team scenario configuration](../media/secure-teams-highly-regulated-data-scenario/secure-team-step3.png)
 
  
 ### Step 4: Create a retention label and DLP policy
@@ -126,7 +126,7 @@ Use [these instructions](https://docs.microsoft.com/microsoft-365/security/offic
 
 Here’s the resulting configuration so far.
 
-![Step 4 of the secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
+![Step 4 of the secure team scenario configuration](../media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
  
 ### Step 5: Create a sensitivity label or a sublabel of the highly regulated sensitivity label
 
@@ -147,11 +147,11 @@ Use a sensitivity label when you need a small number of labels for both global u
 
 Here’s the resulting configuration with the new label.
 
-![Step 5 of the secure team scenario configuration](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+![Step 5 of the secure team scenario configuration](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
 
 Here’s the relationship between the sensitivity label and the Team Group.
 
-![Relationship between the Team Group and the label permissions](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-permissions.png)
+![Relationship between the Team Group and the label permissions](../media/secure-teams-highly-regulated-data-scenario/secure-team-label-permissions.png)
 
 
 >[!Note]
@@ -177,7 +177,7 @@ If some staff only need to view the contents of labeled files in the Team Site, 
 
 Here are the resulting permissions on the label.
 
-![Example of custom permissions for viewing labeled files](./media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
+![Example of custom permissions for viewing labeled files](../media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
  
 The site visitors will be able to access the Team Site directly and view the contents of files that have the sublabel applied. But because they are not members of the Team Group, they will not be able to access the team or any of its resources.
 
@@ -190,7 +190,7 @@ With the team in place, it’s time to drive the adoption of this team and its a
 
 Members of the Team Group can access the team and all of its resources, including chats, meetings, and other apps. When working with files from the **Files** section of a channel, members of the Team Group must assign the sensitivity label or sublabel to files created for the secure team. Here’s an example.
 
-![Example of a label applied to a file in a secure team](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
+![Example of a label applied to a file in a secure team](../media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
  
 When the label gets applied to the file it is secured. Members of the Team Group can open it in Teams and collaborate in real time. It is encrypted and includes the Co-Author permissions set to the Team Group members. If the file leaves the site and gets forwarded to a malicious user, they will have to supply credentials of a user account that is member of the Team Group to open the file and view its contents. 
 
@@ -221,7 +221,7 @@ Retrain your users as needed.
 
 To build out your own test environment to test teams for sensitive and highly confidential files, see [these instructions](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment). 
 
-![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
+![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
 
 ## How the Contoso Corporation used a secure team for a top-secret project
 

@@ -51,7 +51,7 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 
 Campaign Views is available in the [Security & Compliance Center](https://protection.office.com) at **Threat management** \> **Campaigns**.
 
-![Campaigns overview in the Security & Compliance Center](../media/campaigns-overview.png)
+![Campaigns overview in the Security & Compliance Center](../../media/campaigns-overview.png)
 
 You can also get to Campaigns View from:
 
@@ -110,7 +110,7 @@ In the campaign details view, a lot of information is available about the campai
 
 Important details about the campaign are presented in a horizontal flow diagram (known as a _Sankey_ diagram) in the **Flow** section. These details will help you to understand the elements of the campaign and the potential impact in your organization.
 
-![Campaign details that don't contain user URL clicks](../media/campaign-details-no-recipient-actions.png)
+![Campaign details that don't contain user URL clicks](../../media/campaign-details-no-recipient-actions.png)
 
 If you hover over a horizontal band in the diagram, you'll see the number of related messages (for example, messages from a particular source IP, messages from the source IP using the specified sender domain, etc.).
 

@@ -47,7 +47,7 @@ To go to a case in Advanced eDiscovery:
 
 The following diagram illustrates the common workflow for managing and using eDiscovery cases in the Security &amp; Compliance Center and Advanced eDiscovery. 
   
-![Diagram shows the Office 365 Advanced eDiscovery workflow of four phases in setup, including setting up users &amp; cases, identifying case data, exporting, and processing, and then the phases of analysis and export to local machine.](media/76589ccc-789d-4581-b3a8-98d339b05979.png)
+![Diagram shows the Office 365 Advanced eDiscovery workflow of four phases in setup, including setting up users &amp; cases, identifying case data, exporting, and processing, and then the phases of analysis and export to local machine.](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   
 This setup section describes the first four steps in the workflow. For a description of the other steps in the workflow, see the following.
   

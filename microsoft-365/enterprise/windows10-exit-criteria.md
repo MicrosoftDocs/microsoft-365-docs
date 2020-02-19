@@ -19,7 +19,7 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 # Phase 3: Windows 10 Enterprise infrastructure exit criteria
 
-![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Make sure your Windows 10 Enterprise infrastructure meets the following required criteria and that you've considered those that are optional.
 
@@ -122,4 +122,4 @@ Your Windows 10 Enterprise infrastructure is ready to begin installation on new 
 
 |||
 |:-------|:-----|
-|![Phase 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [Office 365 ProPlus](office365proplus-infrastructure.md). |
+|![Phase 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [Office 365 ProPlus](office365proplus-infrastructure.md). |

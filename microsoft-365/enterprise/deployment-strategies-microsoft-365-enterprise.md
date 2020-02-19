@@ -49,7 +49,7 @@ The set of users in the pilot rollout are not the same as those in the user roll
 
 This article uses the following graphics to depict these definitions: 
 
-![The graphics to depict the definitions of pilot and user rollout](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
+![The graphics to depict the definitions of pilot and user rollout](../media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
 The shading for the user rollout graphic indicates the percentage across your organization from 0% to 100% using a structured or methodical approach such as groups, departments, or regions.
 
@@ -74,7 +74,7 @@ With a serial deployment, you completely roll out a phase, allowing the phase to
 
 This Gantt chart shows a simplified serial deployment of phases 2-6 of the foundation infrastructure for Microsoft 365 for enterprise.
 
-![The serial deployment of phases 2-6 of the foundation infrastructure](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
+![The serial deployment of phases 2-6 of the foundation infrastructure](../media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 To simplify the discussion and example, each phase and deployment segment within each phase are assumed to take the same amount of time.
 
@@ -109,7 +109,7 @@ The disadvantage to this deployment strategy is that it can take a long time to 
 For this deployment strategy, you start the pilot rollout of the next phase during the last part of the user rollout of the current phase.
 Here is the deployment of phases 2-6 when the pilot rollout occurs as the user rollout of the previous phase is wrapping up.
 
-![The parallel deployment of phases 2-6 with non-overlapping user rollout](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
+![The parallel deployment of phases 2-6 with non-overlapping user rollout](../media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
 The end result is that user rollout for the current phase completes across your organization before the next one starts. Users that are not in pilot rollouts are not dealing with the rollouts of multiple phases at the same time, but pilot rollouts are done in parallel with user rollouts.
 
@@ -144,7 +144,7 @@ For this deployment strategy, you start the:
 
 Here is a simplified comparison between the different deployment strategies.
 
-![The parallel deployment of phases 2-6 with overlapping user rollout](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
+![The parallel deployment of phases 2-6 with overlapping user rollout](../media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
 
 The end result is that:
 
@@ -177,7 +177,7 @@ The advantage to this deployment strategy is that it can take even less time to 
 
 For smaller organizations with the ability to compress phases 2-6 into a single deployment segment, the resulting deployment looks like this:
  
-![p-front infrastructure and rollout of the end-to-end configuration](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
+![p-front infrastructure and rollout of the end-to-end configuration](../media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
 
 The IT department configures the infrastructure for phases 2-6, then rolls out to the pilot users to check for the end-to-end functionality. For example, pilot users get all of this functionality at the same time:
 
