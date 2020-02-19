@@ -308,6 +308,11 @@
       "source_path": "microsoft-365/compliance/service-encryption-with-customer-key-faq.md",
       "redirect_url": "customer-key-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/offering-gdpr-eu.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr",
+      "redirect_document_id": false
     }
   ]
 }

@@ -21,7 +21,7 @@ description: Understand the need for Internet bandwidth for Microsoft 365 Enterp
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![Phase 1-Networking](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1-Networking](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 In Step 1, you must:
 
@@ -37,5 +37,5 @@ As an interim checkpoint, you can see the [exit criteria](networking-exit-criter
 
 |||
 |:-------|:-----|
-|![Step 2](./media/stepnumbers/Step2.png)|[Configure local Internet connections for each office](networking-dns-resolution-same-location.md)|
+|![Step 2](../media/stepnumbers/Step2.png)|[Configure local Internet connections for each office](networking-dns-resolution-same-location.md)|
 

@@ -41,13 +41,13 @@ For more information, see [Introduction to information management policies](intr
 
 To ensure that an information policy is applied to all documents of a certain type within a site collection, consider creating the policy at the site collection level and then later apply the policy to content types. These are referred to as site collection policies. 
   
-1. On the site collection home page \> **Settings**![SharePoint 2016 Settings button on title bar.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Site Settings**.
+1. On the site collection home page \> **Settings**![SharePoint 2016 Settings button on title bar.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Site Settings**.
     
     In a SharePoint group-connected site, click **Settings**, click **Site Contents**, and then click **Site Settings**. 
     
 2. On the Site Settings page, under **Site Collection Administration** \> **Content Type Policy Templates**. 
   
-![Content Type Policy Template link on Site Settings page](media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+![Content Type Policy Template link on Site Settings page](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
 3. On the Policies page \> **Create**. 
     
@@ -64,13 +64,13 @@ Adding an information management policy to a content type makes it easy to assoc
   
  You can also add an information management policy to a content type that is specific to lists. This has the effect of applying the policy only to items in that list that are using the content type. 
   
-1. On the site collection home page \> **Settings**![SharePoint 2016 Settings button on title bar.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Site Settings**.
+1. On the site collection home page \> **Settings**![SharePoint 2016 Settings button on title bar.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Site Settings**.
     
     In a SharePoint group-connected site, click **Settings**, click **Site Contents**, and then click **Site Settings**. 
     
 2. On the Site Settings page, under **Web Designer Galleries** \> **Site content types**.
   
-![Site content types link on Site Settings page](media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
+![Site content types link on Site Settings page](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
   
 3. On the Site Content Type Settings page, select the content type that you want to add a policy to.
     
@@ -80,7 +80,7 @@ Adding an information management policy to a content type makes it easy to assoc
     
 6. In the next sections, select the individual policy features that you want to add to your information management policy. 
   
-![Types of content policies](media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
+![Types of content policies](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
   
 7. To specify a retention period for documents and items that are subject to this policy, choose **Enable Retention**, and then specify the retention period and the actions that you want to occur when the items expire.
     
@@ -156,7 +156,7 @@ You need at least the Manage Lists permission to change the information manageme
     
 3. Under **Permissions and Management**\> **Information management policy settings**.
   
-![Information management policies link on settings page for document library](media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+![Information management policies link on settings page for document library](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
 4. On the Information Management Policy Settings page, make sure that the source of retention for the list or library is set to Library and Folders. 
   
@@ -203,7 +203,7 @@ If information management policies have already been created for your site as si
     
 3. Under **Permissions and Management** \> **Information management policy settings**.
   
-![Information management policies link on settings page for document library](media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+![Information management policies link on settings page for document library](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
 4. Verify that the policy source is set to **Content Types**, and under **Content Type Policies** select the content type you want to apply the policy to. 
     
@@ -232,13 +232,13 @@ You can define an information management policy and then create a template from 
 ### Export a policy
 <a name="__toc260646790"> </a>
 
-1. On the site collection home page, choose **Settings**![Small Settings gear that took the place of Site Settings.](media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Site Settings**.
+1. On the site collection home page, choose **Settings**![Small Settings gear that took the place of Site Settings.](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Site Settings**.
     
     In a SharePoint group-connected site, click **Settings**, click **Site Contents**, and then click **Site Settings**. 
     
 2. On the Site Settings page, under **Site Collection Administration** \> **Content Type Policy Templates**. 
   
-![Content Type Policy Template link on Site Settings page](media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+![Content Type Policy Template link on Site Settings page](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
 3. Choose the policy you want to export \> scroll to the bottom \> **Export**.
     
@@ -251,7 +251,7 @@ You can define an information management policy and then create a template from 
 
 Importing an information management policy enables you to apply it to multiple content types at the site or list level within any given site collection. The benefits of doing this are twofold: you don't have to re-define and apply the policy on each content type, and you can more easily manage policy modifications by making changes to the policy in just one place.
   
-1. On the home page of the site collection to which you want to apply the policy, choose **Settings**![Small Settings gear that took the place of Site Settings.](media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Site Settings**.
+1. On the home page of the site collection to which you want to apply the policy, choose **Settings**![Small Settings gear that took the place of Site Settings.](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Site Settings**.
     
     In a SharePoint group-connected site, click **Settings**, click **Site Contents**, and then click **Site Settings**. 
     

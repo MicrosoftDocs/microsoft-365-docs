@@ -34,19 +34,19 @@ The Export history dialog provides detailed information of selected export batch
     
 2. To the right of the export batch name, select the **Batch history** icon: 
     
-    ![Export batch history icon](media/a14f6ef9-0c3c-4851-b65d-9380f2d8a38a.gif)
+    ![Export batch history icon](../media/a14f6ef9-0c3c-4851-b65d-9380f2d8a38a.gif)
   
     The Batch history dialog is displayed.
     
-    ![Export batch history](media/04c5b75c-348c-491d-b4fe-716659333890.png)
+    ![Export batch history](../media/04c5b75c-348c-491d-b4fe-716659333890.png)
   
 3. If it is necessary to roll back a previous session, click **Undo last session**. Rollback can be performed multiple times, which cancels the last session.
     
-4. If you want to download data at any time from a previously executed export batch session, click the **Download** icon ![Export batch history download icon](media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) next to the desired export batch to be exported. 
+4. If you want to download data at any time from a previously executed export batch session, click the **Download** icon ![Export batch history download icon](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) next to the desired export batch to be exported. 
     
 5. When the **Shared access signature** dialog is displayed, click **Copy to clipboard** to copy the export session data to the local machine, and then click **Close**. The Office 365 Security &amp; Compliance Center **eDiscovery Export Tool** dialog is displayed. 
     
-    ![Export eDiscovery dialog](media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
+    ![Export eDiscovery dialog](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
 6. In the **eDiscovery Export Tool** dialog: 
     

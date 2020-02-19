@@ -111,7 +111,7 @@ Use these steps to apply the retention labels to the documents folders of your u
     
 Here is your resulting configuration.
   
-![Retention labels for the four types of underlying SharePoint sites.](../media/retention-labels.png)
+![Retention labels for the four types of underlying SharePoint sites.](../../media/retention-labels.png)
   
 ## DLP policies for your underlying SharePoint sites
 
@@ -162,7 +162,7 @@ Use these steps to configure a DLP policy that notifies users when they share a 
     
 Here is your resulting configuration for sensitive teams.
   
-![DLP policy for sensitive team using the Sensitive retention label](../media/retention-labels-sensitive-dlp.png)
+![DLP policy for sensitive team using the Sensitive retention label](../../media/retention-labels-sensitive-dlp.png)
   
 Next, use these steps to configure a DLP policy that blocks users when they share a document on an underlying SharePoint site outside the organization.
   
@@ -208,7 +208,7 @@ Next, use these steps to configure a DLP policy that blocks users when they shar
     
 Here is your resulting configuration for high confidentiality team.
   
-![DLP policy for a high confidentiality team using the Highly Confidential retention label](../media/retention-labels-highly-confidential-dlp.png)
+![DLP policy for a high confidentiality team using the Highly Confidential retention label](../../media/retention-labels-highly-confidential-dlp.png)
   
 ## Next step
 

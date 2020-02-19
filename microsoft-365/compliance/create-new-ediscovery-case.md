@@ -45,4 +45,4 @@ description: ""
 
     The **Home** tab for the case is displayed. For example, here's a new case named *Contoso Investigation*.
 
-    ![The Home tab for a new case in Advanced eDiscovery](media/newAeDcase.png)
+    ![The Home tab for a new case in Advanced eDiscovery](../media/newAeDcase.png)

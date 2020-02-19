@@ -30,7 +30,7 @@ description: "Learn about device states in Microsoft 365 Business."
 
 Devices in the **Device actions** list (Admin home \> **Device actions**) can have the following states.
   
-![In the Device actions list, you can see the Devices states.](media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
+![In the Device actions list, you can see the Devices states.](../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
   
 |**Status**|**Description**|
 |:-----|:-----|

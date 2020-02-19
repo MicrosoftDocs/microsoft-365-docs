@@ -16,7 +16,7 @@ ms.author: greglin
 
 # Step 5: Deploy Windows 10 Enterprise security features
 
-![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows 10 provides security features to protect enterprise users, stop cyberthreats, and prevent data loss. 
 

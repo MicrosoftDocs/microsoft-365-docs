@@ -31,11 +31,11 @@ If you want to more options to filter bulk messages, you can create mail flow ru
 
 1. In the Exchange admin center (EAC), go to **Mail flow** \> **Rules**.
 
-2. Click **Add** ![Add Icon](../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
+2. Click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
 
 3. Specify a name for the rule.
 
-4. Click **More options** ![More options icon](../media/ITPro-EAC-MoreOptionsIcon.png). Under **Apply this rule if**, select **The subject or body** \> **subject or body matches these text patterns**.
+4. Click **More options** ![More options icon](../../media/ITPro-EAC-MoreOptionsIcon.png). Under **Apply this rule if**, select **The subject or body** \> **subject or body matches these text patterns**.
 
 5. In the **specify words or phrases** dialog box, add the following regular expressions commonly found in bulk emails, one at a time, and click **OK** when you're done:
 
@@ -83,7 +83,7 @@ If you want to more options to filter bulk messages, you can create mail flow ru
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
-2. Click **Add** ![Add Icon](../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
+2. Click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
 
 3. Specify a name for the rule.
 
