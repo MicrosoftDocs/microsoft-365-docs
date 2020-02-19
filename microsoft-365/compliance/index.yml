@@ -60,7 +60,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Insider risk management (preview)
+          - text: Insider risk management
             url: insider-risk-management.md
           - text: Communication compliance
             url: communication-compliance.md
