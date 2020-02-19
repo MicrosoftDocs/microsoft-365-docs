@@ -306,7 +306,7 @@ Click one of the following links to go to a specific table.
 |[Advanced eDiscovery activities](#advanced-ediscovery-activities)|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Yammer activities](#yammer-activities)|
 |[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|[Microsoft Stream activities](#microsoft-stream-activities)|
-|[Microsoft Forms activities](#microsoft-forms-activities)|[Exchange admin activities](#exchange-admin-audit-log)|[Sensitivity label activities](#sensitivity-label-activities)||
+|[Microsoft Forms activities](#microsoft-forms-activities)|[Sensitivity label activities](#sensitivity-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)||
 ||||
 
 ### File and page activities
@@ -327,7 +327,7 @@ The following table describes the file and page activities in SharePoint Online 
 |Deleted file from recycle bin|FileDeletedFirstStageRecycleBin|User deletes a file from the recycle bin of a site.|
 |Deleted file from second-stage recycle bin|FileDeletedSecondStageRecycleBin|User deletes a file from the second-stage recycle bin of a site.|
 |Deleted record compliance policy label|ComplianceRecordDelete|A document that was classified as a record was deleted. A document is considered a record when a retention label that classifies content as a record is applied to the document.|
-|Detected document sensitivity mismatch|DocumentSensitivityMismatchDetected|User uploads a document classified with a sensitivity label that has a higher priority than the sensitivity label that's applied to the site the document is uploaded to. <br/><br/> This event isn't triggered if the sensitivity label applied to a site has a higher priority than the sensitivity label applied to a document that's uploaded to the site. For more information about sensitivity label priority, see the "Label priority" section in [Learn about sensitivity labels](sensitivity-labels.md#label-priority-order-matters).|
+|Detected document sensitivity mismatch|DocumentSensitivityMismatchDetected|User uploads a document to a site that's protected with a sensitivity label and the document has a lower sensitivity label than the site. <br/><br/> This event isn't triggered if the sensitivity label applied to the site has a higher priority than the sensitivity label applied to a document that's uploaded to the site. For more information about sensitivity label priority, see the "Label priority" section in [Learn about sensitivity labels](sensitivity-labels.md#label-priority-order-matters).|
 |Detected malware in file|FileMalwareDetected|SharePoint anti-virus engine detects malware in a file.|
 |Discarded file checkout|FileCheckOutDiscarded|User discards (or undos) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
 |Downloaded file|FileDownloaded|User downloads a document from a site.|
@@ -346,7 +346,6 @@ The following table describes the file and page activities in SharePoint Online 
 |(none)|PageViewedExtended|This is related to the "Viewed page" (PageViewed) activity. A PageViewedExtended event is logged when the same person continually views a web page for an extended period (up to 3 hours). <br/><br/> The purpose of logging PageViewedExtended events is to reduce the number of PageViewed events that are logged when a page is continually viewed. This helps reduce the noise of multiple PageViewed records for what is essentially the same user activity, and lets you focus on the initial (and more important) PageViewed event.|
 |View signaled by client|ClientViewSignaled|A user’s client (such as website or mobile app) has signaled that the indicated page has been viewed by the user. This activity is often logged following a PagePrefetched event for a page. <br/><br/>**NOTE**: Because ClientViewSignaled events are signaled by the client, rather than the server, it's possible the event may not be logged by the server and therefore may not appear in the audit log. It's also possible that information in the audit record may not be trustworthy. However, because the user’s identity is validated by the token used to create the signal, the user’s identity listed in the corresponding audit record is accurate. |
 |(none)|PagePrefetched|A user’s client (such as website or mobile app) has requested the indicated page to help improve performance if the user browses to it. This event is logged to indicate that the page content has been served to the user’s client. This event isn't a definitive indication that the user navigated to the page. <br/><br/> When the page content is rendered by the client (as per the user’s request) a ClientViewSignaled event should be generated. Not all clients support indicating a pre-fetch, and therefore some pre-fetched activities might instead be logged as PageViewed events.|
-|Detected document sensitivity mismatch|**??**|User uploads a document to a site that's protected with a sensitivity label and the document has a lower sensitivity label than the site |
 ||||
 
 
@@ -821,6 +820,18 @@ Where noted below in the descriptions, some operations contain additional activi
 |Submitted response|SubmitResponse|A user submits a response to a form. <br><br>Property IsInternalForm:boolean indicates if the responder is within the same organization as the form owner.|
 ||||
 
+### Sensitivity label activities 
+
+The following table lists events that result from labeling activities for SharePoint Online and Teams sites.
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Applied sensitivity label to site|SensitivityLabelApplied|A sensitivity label was applied to a SharePoint or Teams site.|
+|Removed sensitivity label from site|SensitivityLabelRemoved|A sensitivity label was removed from a SharePoint or Teams site.|
+|Applied sensitivity label to file|FileSensitivityLabelApplied|A sensitivity label was applied to a document by using Office on the web.|
+|Changed sensitivity label applied to file|FileSensitivityLabelChanged|A different sensitivity label was applied to a document by using Office on the web.|
+|Removed sensitivity label from file|FileSensitivityLabelRemoved|A sensitivity label was removed from a document by using Office on the web.|
+
 ### Exchange admin audit log
 
 Exchange administrator audit logging (which is enabled by default in Office 365) logs an event in the Office 365 audit log when an administrator (or a user who has been assigned administrative permissions) makes a change in your Exchange Online organization. Changes made by using the Exchange admin center or by running a cmdlet in Exchange Online PowerShell are logged in the Exchange admin audit log. Cmdlets that begin with the verbs **Get-**, **Search-**, or **Test-** are not logged in the Office 365 audit log. For more detailed information about admin audit logging in Exchange, see [Administrator audit logging](https://go.microsoft.com/fwlink/p/?LinkID=619225).
@@ -848,18 +859,6 @@ Here are some tips for searching for Exchange admin activities when searching th
 
    Keep in mind that the same Exchange admin activities are logged in both the Exchange admin audit log and Office 365 audit log.
 
-
-### Sensitivity label activities 
-
-The following table lists events that result from labeling activities for SharePoint Online and Teams sites.
-
-|**Friendly name**|**Operation**|**Description**|
-|:-----|:-----|:-----|
-|Applied sensitivity label to site|??|A sensitivity label was applied to a SharePoint or Teams site.|
-|Removed sensitivity label from site|??|A sensitivity label was removed from a SharePoint or Teams site.|
-|Applied sensitivity label to file|??|A sensitivity label was applied to a document by using Office on the web.|
-|Changed sensitivity label applied to file|??|A different sensitivity label was applied to a document by using Office on the web.|
-|Removed sensitivity label from file|??|A sensitivity label was removed from a document by using Office on the web.|
 
 ## Frequently asked questions
 
