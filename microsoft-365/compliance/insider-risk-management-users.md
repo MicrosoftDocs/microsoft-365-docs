@@ -18,8 +18,8 @@ ms.collection: m365-security-compliance
 
 Insider risk management users are employees in your organization that are included in one or more insider risk management policies. Use the **Users dashboard** to quickly review risk information about employees and to add an employee to an existing insider risk management policy. Each user included in an insider risk management policy has the following information displayed on the **Users dashboard**:
 
-- **Users**: The user name for a user.
-- **Risk level**: 
+- **Users**: The username for a user.
+- **Risk level**: The current calculated risk level of the user. This score is calculated every 24 hours and uses the alert risk scores from all active alerts associated to the user.
 - **Active alerts**: The number of active alerts for all policies.
 - **Confirmed violations**: The number of cases resolved as *confirmed policy violation* for the user.
 - **Case**: The current active case for the user.
