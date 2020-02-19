@@ -23,11 +23,14 @@ Use insider risk management policies to identify risky activities and management
 
 ## Before you begin
 
-Before you get started with insider risk management, you should confirm your Microsoft 365 subscription. Users included in insider risk management policies must have a Microsoft 365 E5 Compliance license or be included in a Microsoft 365 E5 subscription.
+Before you get started with insider risk management, you should confirm your Microsoft 365 subscription. To access and use insider risk management, your organization must have one of the following:
+
+- Microsoft 365 E5 subscription (paid or trial version)
+- Microsoft 365 Enterprise E3 subscription with the Microsoft E5 Compliance add-on
+
+Users included in insider risk management policies must have a Microsoft 365 E5 Compliance license or be included in a Microsoft 365 E5 subscription.
 
 If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
-
-Complete these steps to set up and use insider risk management in your Microsoft 365 organization:
 
 ## Step 1 (required): Enable permissions for insider risk management
 
@@ -88,7 +91,24 @@ See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) to
 >[!IMPORTANT]
 >If you plan on configuring a policy using the *Data leaks* template, you'll need to configure at least one DLP policy to use the full signal detection features of the policy template. If you configure more than one DLP policy for your organization, you'll need to assign an insider risk management policy per DLP policy.
 
-## Step 4 (required): Create an insider risk management policy
+## Step 4 (required): Configure insider risk settings
+
+Insider risk settings apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings* control located at the top of all insider risk management tabs. These settings control privacy, indicators, monitoring windows, and intelligent detections.
+
+Before configuring a policy, define the following insider risk settings:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** from the top right corner of any page.
+2. On the **Privacy** page, select a privacy setting for displaying usernames for policy alerts.
+3. On the **Indicators** page, select the alert indicators you want to apply to all insider risk policies.
+
+    >[!IMPORTANT]
+    >In order to receive alerts for risky activity defined in your policies, you must select one or more alerts.
+
+4. On the **Policy timeframes** page, select the timeframes to go into effect for a user when they trigger a match for an insider risk policy.
+5. On the **Intelligent detections** page
+6. Select **Save** to enable the settings for your insider risk policies.
+
+## Step 5 (required): Create an insider risk management policy
 
 Insider risk management policies include assigned users and define which types of risk indicators are configured for alerts. Before activities can trigger alerts, a policy must be configured.
 
