@@ -18,7 +18,7 @@ description: "Learn how to speed up the process of detecting and addressing comp
 
 # Address compromised user accounts with automated investigation and response
 
-[Office 365 Advanced Threat Protection Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2) includes powerful [automated investigation and response](office-365-air.md) (AIR) capabilities. Such capabilities can save your security operations team a lot of time and effort dealing with threats. Recently, AIR capabilities were enhanced to include a compromised user security playbook (currently in preview). 
+[Office 365 Advanced Threat Protection Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2) includes powerful [automated investigation and response](office-365-air.md) (AIR) capabilities. Such capabilities can save your security operations team a lot of time and effort dealing with threats. Microsoft continues to improve security capabilities. Recently, AIR capabilities were enhanced to include a compromised user security playbook (currently in preview). Read this article to learn more about the compromised user security playbook. And see [Girish Chander's blog post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) for additional details.
 
 ![Automated investigation for a compromised user](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -26,8 +26,6 @@ The compromised user security playbook enables your organization's security team
 - Speed up detection of compromised user accounts;
 - Limit the scope of a breach when an account is compromised; and 
 - Respond to compromised users more effectively and efficiently.
-
-Read this article to learn more about the compromised user security playbook. And see [Girish Chander's blog post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) for additional details.
 
 ## Compromised user alerts
 
