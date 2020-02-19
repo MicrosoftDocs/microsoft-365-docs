@@ -91,7 +91,7 @@ The **User activity** tab is one of the most powerful tools for internal risk an
     - **Date** of the risk activity.
     - The **risk activity category**. For example, *Email(s) with attachments sent outside the organization* or *File(s) downloaded from SharePoint Online*.
     - **Risk score** for the alert. This score is the numerical score for the alert risk severity level.
-    - Number of **files** or **emails** associated with the alert. Links to each file or email associated with the risk activity is also available.
+    - Number of events associated with the alert. Links to each file or email associated with the risk activity is also available.
 3. **Risk activity legend**: Across the bottom of the user activity chart, a color-coded legend helps you quickly determine risk category for each alert.
 4. **Risk activity chronology**: The full chronology of all risk alerts associated with the case are listed, including all the details available in the corresponding alert bubble.
 5. **Case actions**: Options for resolving the case are on the case action toolbar. You can resolve a case, send an email notice to the employee, or escalate the case for a data or employee investigation.
