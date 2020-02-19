@@ -71,7 +71,7 @@ Insider risk policy templates define the type of risk activities that you want t
 To define the indicators that are enabled in all policies, navigate to  **Insider risk settings** > **Indicators** and select one or more indicators. The indicators selected on the **Indicators** settings page cannot be individually configured when creating or editing an insider risk policy in the policy wizard.
 
 >[!IMPORTANT]
->In order to receive alerts for risky activity defined in your policies, you must select one or more alerts.
+>In order to receive alerts for risky activity defined in your policies, you must select one or more indicators before configuring an insider risk policy.
 
 ### Policy timeframes
 

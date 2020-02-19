@@ -104,7 +104,7 @@ Before configuring a policy, define the following insider risk settings:
 3. On the **Indicators** page, select the alert indicators you want to apply to all insider risk policies.
 
     >[!IMPORTANT]
-    >In order to receive alerts for risky activity defined in your policies, you must select one or more alerts.
+    >In order to receive alerts for risky activity defined in your policies, you must select one or more indicators.
 
 4. On the **Policy timeframes** page, select the timeframes to go into effect for a user when they trigger a match for an insider risk policy.
 5. On the **Intelligent detections** page
