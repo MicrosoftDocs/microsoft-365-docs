@@ -46,11 +46,11 @@ Buy your licenses by following these steps in the [new admin center](https://doc
 1. Sign into the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 2. Go to the navigation pane and select **Billing** \> **Products & Services**. Find your Office 365 subscription and select it to view the details. 
 
-    ![A screenshot shows how to find and select your subscription in the admin center.](media/FindYourSubscription.png)
+    ![A screenshot shows how to find and select your subscription in the admin center.](../media/FindYourSubscription.png)
 
 3. On the next page, select **Upgrade**. 
 
-      ![A screenshot shows where to select Upgrade in the admin center.](media/SelectUpgrade.png)
+      ![A screenshot shows where to select Upgrade in the admin center.](../media/SelectUpgrade.png)
 
   > [!NOTE]
   > If you see a message that says **Upgrading your subscription is not supported with group-based licensing in Azure Active Directory**, you can safely ignore this unless you have a very large organization. Organizations who have selected this option will be aware that they're using group-based licensing.

@@ -51,7 +51,7 @@ When you sign up for either a free trial, or a subscription, you must enable Azu
 
 The Service Trust Portal features and content are accessible from the main menu.
   
-![Service Trust Portal menu](media/STPMenus1.png)
+![Service Trust Portal menu](../media/STPMenus1.png)
 
 The following sections describe each item in the main menu.
   
@@ -121,13 +121,13 @@ Go to **More > Admin** to access administrative functions that are only availabl
 
 Click the magnifying glass in the upper right-hand corner of the Service Trust Portal page to expand the box, enter your search terms, and press **Enter**. The **Search** page is displayed, with the search term displayed in the search box and the search results listed below.
   
-![Service Trust Portal - Search on Documents with filter applied](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Service Trust Portal - Search on Documents with filter applied](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
 By default, th search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, categories of compliance or security practices, regions, and industries. Click the document name link to download the document.
   
 To list controls from Assessments in Compliance Manager related your search terms, click **Compliance Manager**. The search results show the date the assessment was created, the name of the assessment grouping, the applicable Microsoft Cloud service, and whether the control is Microsoft or Customer Managed. Click the name of the control to view the control in the Assessment in Compliance Manager.
   
-![Service Trust Portal - Search on Compliance Manager Controls](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Service Trust Portal - Search on Compliance Manager Controls](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
 > Service Trust Portal reports and documents are available to download for at least 12 months after publishing or until a new version of document becomes available.
@@ -156,7 +156,7 @@ To access these starter packs, go to **Service Trust Portal > Industries & Regio
 
 The Service Trust Portal enables you to view the page content in different languages. To change the page language, simply click on the globe icon in the lower left corner of the page and select the language of your choice. 
   
-![Service Trust Portal - Localized content options](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Service Trust Portal - Localized content options](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## Feedback
 
@@ -164,4 +164,4 @@ We can help with questions about the Service Trust Portal, or errors you experie
   
 Your feedback is important to us. Click on the Feedback button at the bottom of the page to send us comments about what you did or did not like, or suggestions you may have for improving our products or product features.
   
-![What kind of feedback do you have](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![What kind of feedback do you have](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

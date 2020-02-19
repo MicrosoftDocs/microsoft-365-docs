@@ -63,7 +63,7 @@ Here's a scenario: You want a custom sensitive information type that detects 9-d
 
 1. In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and click **Create**.
 
-    ![Location of Sensitive info types and Create button](media/scc-cust-sens-info-type-new.png)
+    ![Location of Sensitive info types and Create button](../media/scc-cust-sens-info-type-new.png)
 
 2. In the **Choose a name and description** page that opens, enter the following values:
 
@@ -71,7 +71,7 @@ Here's a scenario: You want a custom sensitive information type that detects 9-d
 
   - **Description**: Detect nine-digit Contoso employee ID numbers.
 
-    ![Name and description page](media/scc-cust-sens-info-type-new-name-desc.png)
+    ![Name and description page](../media/scc-cust-sens-info-type-new-name-desc.png)
 
     When you're finished, click **Next**.
 
@@ -95,17 +95,17 @@ Here's a scenario: You want a custom sensitive information type that detects 9-d
 
     - Leave the default **Character proximity** value 300.
 
-    ![Requirements for matching page](media/scc-cust-sens-info-type-new-reqs.png)
+    ![Requirements for matching page](../media/scc-cust-sens-info-type-new-reqs.png)
 
     When you're finished, click **Next**.
 
 4. On the **Review and finalize** page that opens, review the settings and click **Finish**.
 
-    ![Review and finalize page](media/scc-cust-sens-info-type-new-review.png)
+    ![Review and finalize page](../media/scc-cust-sens-info-type-new-review.png)
 
 5. The next page encourages you to test the new custom sensitive information type by clicking **Yes**. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center). To test the rule later, click **No**.
 
-    ![Test recommendation page](media/scc-cust-sens-info-type-new-test.png)
+    ![Test recommendation page](../media/scc-cust-sens-info-type-new-test.png)
 
 ### How do you know this worked?
 
@@ -125,7 +125,7 @@ To verify that you've successfully created a new sensitive information type, do 
 
 In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types**, select the custom sensitive information type that you want to modify, and then click **Edit**.
 
-  ![Location of Sensitive info types and Edit button](media/scc-cust-sens-info-type-edit.png)
+  ![Location of Sensitive info types and Edit button](../media/scc-cust-sens-info-type-edit.png)
 
 The same options are available here as when you created the custom sensitive information type in the Security & Compliance Center. For more information, see [Create custom sensitive information types in the Security & Compliance Center](#create-custom-sensitive-information-types-in-the-security--compliance-center).
 
@@ -149,7 +149,7 @@ To verify that you've successfully modified a sensitive information type, do any
 
 2. In the fly-out that opens, click **Delete** (or **Delete sensitive info types** if you selected more than one).
 
-    ![Location of Sensitive info types and Delete button](media/scc-cust-sens-info-type-delete.png)
+    ![Location of Sensitive info types and Delete button](../media/scc-cust-sens-info-type-delete.png)
 
 3. In the warning message that appears, click **Yes**.
 
@@ -163,14 +163,14 @@ To verify that you've successfully removed a custom sensitive information type, 
 
 2. Select one or more custom sensitive information types to test. In the fly-out that opens, click **Test type** (or **Test sensitive info types** if you selected more than one).
 
-    ![Location of Sensitive info types and Test type button](media/scc-cust-sens-info-type-test.png)
+    ![Location of Sensitive info types and Test type button](../media/scc-cust-sens-info-type-test.png)
 
 3. On the **Upload file to test** page that opens, upload a document to test by dragging and dropping a file or by clicking **Browse** and selecting a file.
 
-    ![Upload file to test page](media/scc-cust-sens-info-type-test-upload.png)
+    ![Upload file to test page](../media/scc-cust-sens-info-type-test-upload.png)
 
 4. Click the **Test** button to test the document for pattern matches in the file.
 
 5. On the **Match results** page, click **Finish**.
 
-    ![Match results](media/scc-cust-sens-info-type-test-results.png)
+    ![Match results](../media/scc-cust-sens-info-type-test-results.png)

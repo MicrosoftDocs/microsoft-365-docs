@@ -58,7 +58,7 @@ Your business data can be compromised in many ways. You and your users can compr
 
 Microsoft 365 Business helps safeguard your data in each of these instances. The security features that protect your business data are detailed in the following figure.
 
-![A figure that shows how M365B protects your business.](media/m365businessvalueadd.png)
+![A figure that shows how M365B protects your business.](../media/m365businessvalueadd.png)
 
 ## How your data and devices are protected
 

@@ -23,7 +23,7 @@ With threat hunting capabilities in the Microsoft 365 security center, you can p
 - Microsoft Defender ATP — [hunt for threats to devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)
 - Azure ATP — [hunt for threats to identities](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)
 
-![Hunting page](../images/hunt.png)
+![Hunting page](../../media/hunt.png)
 
 
 ## Hunt with Microsoft Threat Protection

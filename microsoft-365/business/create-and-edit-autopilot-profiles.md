@@ -39,7 +39,7 @@ A profile applies to a device, or a group of devices,
     
 3. On the **Create profile** page, enter a name for the profile that helps you identify it, for example Marketing. Turn on the setting you want, and then choose **Save**. For more information about AutoPilot profile settings, see [About AutoPilot Profile settings](autopilot-profile-settings.md).
     
-    ![Enter name and turn on settings in the Create profile panel.](media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
+    ![Enter name and turn on settings in the Create profile panel.](../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### Apply profile to a device
 
@@ -49,7 +49,7 @@ After you create a profile, you can apply it to a device or a group of devices. 
     
 2. Select the check box next to a device name, and in the **Device** panel, choose a profile from the **Assigned profile** drop-down list \> **Save**.
     
-    ![In the Device panel, select an Assigned profile to apply it.](media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
+    ![In the Device panel, select an Assigned profile to apply it.](../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
 ## Edit, delete, or remove a profile
 

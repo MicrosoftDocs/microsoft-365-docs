@@ -27,7 +27,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="./media/offering-global-icon.svg" alt="Global icon">
+                            <img src="../media/offering-global-icon.svg" alt="Global icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -58,7 +58,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="./media/offering-government-icon.svg" alt="Government icon">
+                            <img src="../media/offering-government-icon.svg" alt="Government icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -89,7 +89,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="./media/offering-industry-icon.svg" alt="Industry icon">
+                            <img src="../media/offering-industry-icon.svg" alt="Industry icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -146,7 +146,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="./media/offering-region-icon.svg" alt="Regional icon">
+                            <img src="../media/offering-region-icon.svg" alt="Regional icon">
                         </div>
                     </div>
                     <div class="cardText">

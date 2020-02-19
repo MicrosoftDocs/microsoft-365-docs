@@ -42,7 +42,7 @@ If a Microsoft Teams-enabled user has an on-premises mailbox and their user acco
   
 The following graphic shows the workflow of how Teams chat data for on-premises users is available to search, preview, and export.
   
-![Cloud-based storage for on-premises users in Microsoft Teams](media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Cloud-based storage for on-premises users in Microsoft Teams](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
   
 In addition to this new capability, you can still use Content Search to search, preview, and export Teams content in the cloud-based SharePoint site and Exchange mailbox associated with each Microsoft Team and 1xN Teams chat data in the Exchange Online mailbox for cloud-based users.
 
@@ -66,7 +66,7 @@ After this feature is deployed in your Office 365 organization, the following ch
   
 - The **Add Office app content for on-premises users** checkbox is added under the **Locations** in Content Search. 
     
-    ![The "Add Office app content for on-premises users" checkbox is added to the Content Search UI](media/599e751e-17bd-408d-a18c-127538de6e85.png)
+    ![The "Add Office app content for on-premises users" checkbox is added to the Content Search UI](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
   
 - On-premises users are displayed in the content locations picker that you use to select user mailboxes to search. 
 
@@ -76,7 +76,7 @@ After the feature has been enabled, you can use Content Search in the Security &
   
 1. In the Security & Compliance Center, go to **Search** \> **Content search**
     
-2. On the **Search** page, click ![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New search**.
+2. On the **Search** page, click ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New search**.
     
     As previously explained, the **Add Office app content for on-premises users** checkbox is displayed under **Locations**. It's selected by default.
     
@@ -132,9 +132,8 @@ For more information using these cmdlets, see:
 
 ## Known issues
 
-- Currently, you can only search, preview, and export content in cloud-based mailboxes for on-premises users. Placing a cloud-based mailbox for an on-premises user on a hold associated with an eDiscovery case or assigning it to an Office 365 retention policy is not supported. 
+- Currently, you can search, preview, and export content in cloud-based mailboxes for on-premises users. You can also place a cloud-based mailbox for an on-premises user on a hold associated with an eDiscovery case, and apply a retention policy for Teams chats or channel messages to cloud-based mailboxes for on-premises users. However at this time, you can't apply a retention policy for other other content locations (such as Exchange mailboxes and SharePoint sites) to cloud-based mailboxes for on-premises users. 
 
-- The content location picker for eDiscovery holds displays on-premises users and will let you select them. However, as previously explained the hold will not be applied to the on-premises user.
 
 ## Frequently asked questions
 
@@ -152,7 +151,7 @@ No. When you migrate the primary mailbox of an on-premises user to the cloud, th
   
  **Can I apply an eDiscovery hold or Office 365 retention policies to on-premises users?**
   
-No.
+Yes. You can apply eDiscovery holds or retention policies for Teams chats and channel messages to cloud-based mailboxes for on-premises users.
   
  **Can Content Search find older Teams chats for on-premises users before the time my organization submitted the request to enable this feature?**
   

@@ -134,7 +134,7 @@ The result is that items in the inactive mailbox are retained indefinitely or un
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-3. Select the In-Place Hold you want to change, and then select **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+3. Select the In-Place Hold you want to change, and then select **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
     
 4. On the **In-Place eDiscovery &amp; Hold** properties page, select **In-Place Hold**. 
     
@@ -144,7 +144,7 @@ The result is that items in the inactive mailbox are retained indefinitely or un
     
     2. Select **Specify number of days to hold items relative to their received date** to hold items for a specific period. Type the number of days that you want to hold items for. 
     
-    ![Screenshot of changing the duration for an In-Place Hold](media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
+    ![Screenshot of changing the duration for an In-Place Hold](../media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   
 6. Select **Save**.
     

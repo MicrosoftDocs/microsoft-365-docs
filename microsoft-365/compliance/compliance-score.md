@@ -34,7 +34,7 @@ If you currently use [Compliance Manager](compliance-manager-overview.md), youâ€
 
 The main Compliance Score page is your custom dashboard. It shows your current score, helps you see what needs attention, and guides you to actions to improve your score. Your Compliance Score dashboard will look like this:
 
-![Compliance Score - dashboard](media/compliance-score-dashboard.png "Compliance Score dashboard")
+![Compliance Score - dashboard](../media/compliance-score-dashboard.png "Compliance Score dashboard")
 
 ### Simplified compliance management
 
@@ -70,7 +70,7 @@ Learn more about [how your compliance score is calculated and continuously monit
 
 Compliance Score uses several components to help you manage your compliance activities. As you use Compliance Score to assign, test, and monitor compliance activities, itâ€™s helpful to have a basic understanding of these key components. This diagram shows the relationships among them:
 
-![Relationships in Compliance Manager Version 3](media/compliance-manager-relationships.png "Compliance Score components")
+![Relationships in Compliance Manager Version 3](../media/compliance-manager-relationships.png "Compliance Score components")
 
 ### Controls
 

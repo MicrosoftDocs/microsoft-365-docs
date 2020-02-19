@@ -58,7 +58,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
     
 3. In the Security &amp; Compliance Center \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
     
-    ![Create a policy button](media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
+    ![Create a policy button](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
 4. Choose the DLP policy template that protects the types of sensitive information that you need \> **Next**.
     
@@ -66,7 +66,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
     
     When you select a template, you can read the description on the right to learn what types of sensitive information the template protects.
     
-    ![Page for choosing a DLP policy template](media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)
+    ![Page for choosing a DLP policy template](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)
   
 5. Name the policy \> **Next**.
     
@@ -80,7 +80,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
     
     To include only specific SharePoint sites or OneDrive for Business accounts, switch the **Status** to on, and then click the links under **Include** to choose specific sites or accounts. When you apply a policy to a site, the rules configured in that policy are automatically applied to all subsites of that site. 
     
-    ![Options for locations where a DLP policy can be applied](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+    ![Options for locations where a DLP policy can be applied](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
     In this example, to protect sensitive information stored in all OneDrive for Business accounts, turn off the **Status** for both **Exchange email** and **SharePoint sites**, and leave the **Status** on for **OneDrive accounts**.
     
@@ -88,7 +88,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
     
 8. A DLP policy template contains predefined rules with conditions and actions that detect and act upon specific types of sensitive information. You can edit, delete, or turn off any of the existing rules, or add new ones. When done, click **Next**.
     
-    ![Rules expanded in US PII policy template](media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
+    ![Rules expanded in US PII policy template](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
   
     In this example, the U.S. PII Data template includes two predefined rules:
     
@@ -100,23 +100,23 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
     
     So you expand the rule named **Low volume of content detected U.S. PII** \> **Delete rule**.
     
-    ![Delete rule button](media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
+    ![Delete rule button](../media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
   
 9. Now, in this example, you need to add two sensitive information types (U.S. bank account numbers and U.S. driver's license numbers), allow people to override a rule, and change the count to any occurrence. You can do all of this by editing one rule, so select **High volume of content detected U.S. PII** \> **Edit rule**.
     
-    ![Edit rule button](media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
+    ![Edit rule button](../media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
   
 10. To add a sensitive information type, in the **Conditions** section \> **Add or change types**. Then, under **Add or change types** \> choose **Add** \> select **U.S. Bank Account Number** and **U.S. Driver's License Number** \> **Add** \> **Done**.
     
-    ![Option to Add or change types](media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
+    ![Option to Add or change types](../media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
   
-    ![Add or change types pane](media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
+    ![Add or change types pane](../media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
   
 11. To change the count (the number of instances of sensitive information required to trigger the rule), under **Instance count** \> choose the **min** value for each type \> enter 1. The minimum count cannot be empty. The maximum count can be empty; an empty **max** value convert to **any**.
     
     When finished, the min count for all of the sensitive information types should be **1** and the max count should be **any**. In other words, any occurrence of this type of sensitive information will satisfy this condition.
     
-    ![Instance counts for sensitive information types](media/5c6e08cb-59a9-4558-b54b-d899836d4737.png)
+    ![Instance counts for sensitive information types](../media/5c6e08cb-59a9-4558-b54b-d899836d4737.png)
   
 12. For the final customization, you don't want your DLP policies to block people from doing their work when they have a valid business justification or encounter a false positive, so you want the user notification to include options to override the blocking action.
     
@@ -124,7 +124,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
     
     In the **User overrides** section, you can see that overrides for a business justification are turned on, but overrides to report false positives are not. Choose **Override the rule automatically if they report it as a false positive**.
     
-    ![User notifications section and User overrides section](media/62720e7a-a939-4c03-b414-67748f3d64a0.png)
+    ![User notifications section and User overrides section](../media/62720e7a-a939-4c03-b414-67748f3d64a0.png)
   
 13. At the top of the rule editor, change the name of this rule from the default **High volume of content detected U.S. PII** to **Any content detected with U.S. PII** because it's now triggered by any occurrence of its sensitive information types. 
     
@@ -146,7 +146,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
     
 19. Turn on the policies so that the rules are enforced and the content's protected. Continue to monitor the DLP reports and any incident reports or notifications to make sure that the results are what you intend. 
     
-    ![Options for using test mode and turning on policy](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Options for using test mode and turning on policy](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
 20. Review your settings for this policy \> choose **Create**.
     
@@ -174,7 +174,7 @@ You can edit or turn off a DLP policy at any time. Turning off a policy disables
   
 To edit or turn off a DLP policy, on the **Policy** page \> select the policy \> **Edit policy**.
   
-![Edit policy button](media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
+![Edit policy button](../media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
   
 In addition, you can turn off each rule individually by editing the policy and then toggling off the **Status** of that rule, as described above. 
   

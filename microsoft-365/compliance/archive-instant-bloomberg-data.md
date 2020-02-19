@@ -24,7 +24,7 @@ After Instant Bloomberg data is stored in user mailboxes, you can apply Microsof
 
 The following overview explains the process of using a connector to archive Instant Bloomberg chat data in Microsoft 365. 
 
-![Instant Bloomberg import and archive process](media/InstantBloombergDataArchiving.png)
+![Instant Bloomberg import and archive process](../media/InstantBloombergDataArchiving.png)
 
 1. Your organization works with Bloomberg to set up a Bloomberg SFTP site. You'll also work with Bloomberg to configure Instant Bloomberg to copy chat messages to your Bloomberg SFTP site.
 

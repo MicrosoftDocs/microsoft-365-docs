@@ -72,13 +72,13 @@ To view a list of the inactive mailboxes in your organization:
     
 2. Click **Information governance** > **Retention**.
     
-3. On the **Retention** page, click **More**![Navigation Bar ellipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif), and then click **Inactive mailboxes**.
+3. On the **Retention** page, click **More**![Navigation Bar ellipses](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif), and then click **Inactive mailboxes**.
     
-    ![On the Retention page, click More and then click Inactive mailboxes to display a list of inactive mailboxes](media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
+    ![On the Retention page, click More and then click Inactive mailboxes to display a list of inactive mailboxes](../media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
   
     The **Inactive mailboxes** page is displayed. Note the total number of inactive mailboxes in your organization is displayed. 
     
-    ![A list of all inactive mailboxes in your organization is displayed](media/57d9d183-0c6c-4bd8-82e7-115f7b7b6de7.png)
+    ![A list of all inactive mailboxes in your organization is displayed](../media/57d9d183-0c6c-4bd8-82e7-115f7b7b6de7.png)
   
 Alternatively, you can run the following command in Exchange Online PowerShell to display the list of inactive mailboxes.
 
@@ -86,7 +86,7 @@ Alternatively, you can run the following command in Exchange Online PowerShell t
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
-You can click ![Export search results icon](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export** to view or download a CSV file that contains additional information about the inactive mailboxes in your organization. 
+You can click ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export** to view or download a CSV file that contains additional information about the inactive mailboxes in your organization. 
   
 You can also run the following command to export the list of inactive mailboxes and other information to a CSV file. In this example, the CSV file is created in the current directory.
 

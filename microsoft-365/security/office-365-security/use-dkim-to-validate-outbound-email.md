@@ -63,7 +63,7 @@ In this article:
 
 SPF adds information to a message envelope but DKIM actually encrypts a signature within the message header. When you forward a message, portions of that message's envelope can be stripped away by the forwarding server. Since the digital signature stays with the email message because it's part of the email header, DKIM works even when a message has been forwarded as shown in the following example.
 
-![Diagram showing a forwarded message passing DKIM authentication where the SPF check fails](../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
+![Diagram showing a forwarded message passing DKIM authentication where the SPF check fails](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
 
 In this example, if you had only published an SPF TXT record for your domain, the recipient's mail server could have marked your email as spam and generated a false positive result. The addition of DKIM in this scenario reduces false positive spam reporting. Because DKIM relies on public key cryptography to authenticate and not just IP addresses, DKIM is considered a much stronger form of authentication than SPF. We recommend using both SPF and DKIM, as well as DMARC in your deployment.
 
@@ -113,7 +113,7 @@ To configure DKIM, you will complete these steps:
 
 For each domain for which you want to add a DKIM signature in DNS, you need to publish two CNAME records.
 
-Run the following commands:
+Run the following commands to create the selector records:
 
 ```powershell
     New-DkimSigningConfig -DomainName <domain> -Enabled $false
@@ -125,8 +125,6 @@ Create CNAMEs referenced in Get-DkimSigningConfig output
 ```powershell
     Set-DkimSigningConfig -Identity <domain> -Enabled $true
 ```
-
-The CNAME records in your DNS will point to already created DKIM TXT records that exist in DNS on the Microsoft DNS servers for Office 365.
 
 Office 365 performs automatic key rotation using the two records that you establish. If you have provisioned custom domains in addition to the initial domain in Office 365, you must publish two CNAME records for each additional domain. So, if you have two domains, you must publish two additional CNAME records, and so on.
 
@@ -176,6 +174,9 @@ Host name:			selector2._domainkey
 Points to address or value:	selector2-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:				3600
 ```
+
+> [!NOTE]
+> It's important to create the second record, but only one of the selectors may be available at the time of creation. In essence, the second selector might point to an address that hasn't been created yet. We still recommended that you create the second CNAME record, because your key rotation will be seamless and you won't need to do any manual steps yourself.
 
 ### Enable DKIM signing for your custom domain in Office 365
 <a name="EnableDKIMinO365"> </a>
