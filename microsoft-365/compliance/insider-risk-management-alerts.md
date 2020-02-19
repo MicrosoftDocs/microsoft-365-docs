@@ -24,7 +24,7 @@ The insider risk **Alert dashboard** allows you to view and take action on alert
 
 - **Alerts to review**: The total number of alerts needing review and triage are listed, including a breakdown by alert severity.
 - **Open alerts over past 30 days**: The total number of alerts created by policy matches over the last 30 days, sorted by high, medium, and low alert severity levels.
-- **Average time to resolved alerts**: A summary of useful alert statistics:
+- **Average time to resolve alerts**: A summary of useful alert statistics:
     - Average time to resolve high severity alerts, listed in hours, days, or months.
     - Average time to resolve medium severity alerts, listed in hours, days, or months.
     - Average time to resolve low severity alerts, listed in hours, days, or months.
