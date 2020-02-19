@@ -49,5 +49,5 @@ Complete the following steps to add a user to an existing insider risk policy:
 2. Select **Add a user to a policy** on the toolbar.
 3. On the **Add a new user** dialog, start typing a user name in the **User** field. Select the user you want to add to a policy.
 4. Select the dropdown arrow for the **Policy** field to display configured insider risk management policies. Select the policy to add the user to.
-5. Use the **Monitoring window** slider control to define the...... The range for the monitoring window is 5 to 30 days.
+5. Use the **Monitoring window** slider control to define how long the policy is active for this user and is triggered when the user performs the first activity matching the policy The range for the monitoring window is 5 to 30 days.
 6. Select **Add** and then **Confirm** to add the user to the policy.
