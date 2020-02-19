@@ -24,11 +24,11 @@ If your organization has [Office 365 Advanced Threat Protection](office-365-atp.
 
 |With ATP Plan 2, you see:  |With ATP Plan 1, you see:  |
 |---------|---------|
-|![Threat explorer](../media/threatmgmt-explorer.png)      |![Real-time detections](../media/threatmgmt-realtimedetections.png)         |
+|![Threat explorer](../../media/threatmgmt-explorer.png)      |![Real-time detections](../../media/threatmgmt-realtimedetections.png)         |
 
 With Explorer (or real-time detections), you have a powerful report that enables your Security Operations team to investigate and respond to threats effectively and efficiently. The report resembles the following image: 
 
-![Go to Threat management \> Explorer](../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Go to Threat management \> Explorer](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 With this report, you can:
 - [See malware detected by Office 365 security features](#see-malware-detected-in-email-by-technology)
@@ -100,7 +100,7 @@ You can get to the same location in the real-time detections report as follows:
 > [!TIP]
 > Network Message ID maps the click back to specific mails when you search through Explorer or associated 3rd party tools via Network Message ID. Searching through the Network Message ID will give admins the specific email associated with a click result. On export having, the correlating identification of Network Message ID makes for quicker and more powerful analysis.
 
-![tp_ExportClickResultAndNetworkID.png](../../images/tp_ExportClickResultAndNetworkID.png)
+![tp_ExportClickResultAndNetworkID.png](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## See malware detected in email by technology
 
@@ -108,11 +108,11 @@ Suppose you want to see malware detected in email, by Office 365 technology. To 
 
 1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
-2. In the **View** menu, choose **Email** > **Malware**.<br/>![View menu for Explorer](../media/ExplorerViewEmailMalwareMenu.png)<br/>
+2. In the **View** menu, choose **Email** > **Malware**.<br/>![View menu for Explorer](../../media/ExplorerViewEmailMalwareMenu.png)<br/>
 
-3. Click **Sender**, and then choose **Basic** > **Detection technology**.<br/>Your detection technologies are now available as filters for the report.<br/>![Malware detection technologies](../media/ExplorerEmailMalwareDetectionTech.png)<br/> 
+3. Click **Sender**, and then choose **Basic** > **Detection technology**.<br/>Your detection technologies are now available as filters for the report.<br/>![Malware detection technologies](../../media/ExplorerEmailMalwareDetectionTech.png)<br/> 
 
-4. Select an option, and then click the **Refresh** button to apply that filter.<br/>![Selected detection technology](../media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
+4. Select an option, and then click the **Refresh** button to apply that filter.<br/>![Selected detection technology](../../media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
 
 The report refreshes to show the results malware detected in email, using the technology option you selected. From here, you can conduct further analysis.
 
@@ -124,11 +124,11 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
 
 1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
-2. In the **View** menu, choose **Email** > **Phish**.<br/>![View menu for Explorer](../media/ExplorerViewEmailPhishMenu.png)<br/>
+2. In the **View** menu, choose **Email** > **Phish**.<br/>![View menu for Explorer](../../media/ExplorerViewEmailPhishMenu.png)<br/>
 
 3. Click **Sender**, and then choose **URLs** > **Click verdict**.
 
-4. Select one or more options, such as **Blocked** and **Block overridden**, and then click the **Refresh** button that is on the same line as the options to apply that filter. (Don't refresh your browser window.)<br/>![URLs and click verdicts](../media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
+4. Select one or more options, such as **Blocked** and **Block overridden**, and then click the **Refresh** button that is on the same line as the options to apply that filter. (Don't refresh your browser window.)<br/>![URLs and click verdicts](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
     The report refreshes to show two different URL tables on the URL tab under the report:
 
@@ -138,7 +138,7 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
    
    The two URL tables show top URLs in phishing email messages by delivery action and location, and they show URL clicks that were blocked (or visited despite a warning) so that you can understand what potential bad links were received by users and interacted with by users. From here, you can conduct further analysis. For example, below the chart, you can see the top URLs in email messages that were blocked in your organization's environment.
    
-   ![Explorer URLs that were blocked](../media/ExplorerPhishClickVerdictURLs.png)
+   ![Explorer URLs that were blocked](../../media/ExplorerPhishClickVerdictURLs.png)
    
    Select a URL to view more detailed information. **Note**: In the URL flyout dialog, the filtering on email messages is removed to show you the full view of the URL's exposure in your environment. This lets you filter down email messages in Explorer to ones you are concerned about, find specific URLs that are potential threats, then expand your understanding of the URL exposure in your environment (via the URL details dialog) without having to add URL filters to the Explorer view itself.
 
@@ -148,11 +148,11 @@ Suppose that you want to see email messages that users in your organization have
 
 1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
-2. In the **View** menu, choose **Email** > **Submissions**.<br/>![View menu for Explorer](../media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. In the **View** menu, choose **Email** > **Submissions**.<br/>![View menu for Explorer](../../media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. Click **Sender**, and then choose **Basic** > **Report type**.
 
-4. Select an option, such as **Phish**, and then click the **Refresh** button. <br/>![User-reported phish](../media/EmailUserReportedReportType.png)<br/> 
+4. Select an option, such as **Phish**, and then click the **Refresh** button. <br/>![User-reported phish](../../media/EmailUserReportedReportType.png)<br/> 
 
 The report refreshes to show data about email messages that people in your organization have reported as a phishing attempt. You can use this information to conduct further analysis, and if necessary, adjust your [ATP anti-phishing policies](set-up-anti-phishing-policies.md).
 

@@ -19,7 +19,7 @@ description: Add user accounts and groups either directly in the cloud or throug
 
 # Step 4: Add your user accounts
 
-![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2-Identity](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-cloud-only"></a>
 ## Create your user accounts for cloud-only identity
@@ -39,7 +39,7 @@ In this section, you'll synchronize your on-premises Active Directory Domain Ser
 
 Azure AD Connect is the supported Microsoft tool that guides you through synchronizing only the identities you really need from single or multi-forest AD DS environments to your Azure AD tenant. The following figure shows the basic process for Azure AD Connect synchronization.
 
-![How Azure AD Connect synchronizes your on-premises directory with Azure AD](./media/identity-add-user-accounts/azure-ad-connect.png)
+![How Azure AD Connect synchronizes your on-premises directory with Azure AD](../media/identity-add-user-accounts/azure-ad-connect.png)
 
 1. Azure AD Connect running on a server polls AD DS for changes in accounts, groups, and contacts.
 2. Azure AD Connect sends those changes to the Azure AD tenant of your Microsoft 365 subscription.
@@ -71,7 +71,7 @@ Once your on-premises users and groups are present in Azure AD, you can start as
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)<br> [Test Lab Guide: Pass-through authentication](pass-through-auth-m365-ent-test-environment.md) |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)<br> [Test Lab Guide: Pass-through authentication](pass-through-auth-m365-ent-test-environment.md) |
 |||
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-sync) corresponding to this section.
@@ -83,7 +83,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 In this section, you'll install an Azure AD Connect Health agent on each of your on-premises AD DS domain controllers to monitor your identity infrastructure and the synchronization services provided by Azure AD Connect. The monitoring information is made available in an Azure AD Connect Health portal, where you can view alerts, performance monitoring, usage analytics, and other information.
 
-![Components of Azure AD Connect Health](./media/identity-add-user-accounts/identity-azure-ad-connect-health.png)
+![Components of Azure AD Connect Health](../media/identity-add-user-accounts/identity-azure-ad-connect-health.png)
 
 The key design decision of how to use Azure AD Connect Health is based on how you are using Azure AD Connect:
 
@@ -116,11 +116,11 @@ For additional information and configuration instructions, see [Azure AD SSPR wi
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password writeback](password-writeback-m365-ent-test-environment.md) |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password writeback](password-writeback-m365-ent-test-environment.md) |
 |||
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-pw-writeback) for this section.
 
 |||
 |:-------|:-----|
-|![Step 5](./media/stepnumbers/Step5.png)| [Use groups for management](identity-use-group-management.md) |
+|![Step 5](../media/stepnumbers/Step5.png)| [Use groups for management](identity-use-group-management.md) |

@@ -22,7 +22,7 @@ ms.custom: aka.ms/self-service-purchase-faq
 > [!NOTE]
 > The information in this article only applies to Microsoft Power Platform (Power BI, Power Apps and Power Automate) subscriptions.
 
-Self-service purchases are now available for Power Platform in the United States.
+Self-service purchases are now available for Power Platform in multiple countries.
 
 ## General
 
@@ -80,7 +80,7 @@ Self-service purchasers can manage their purchases in the limited view of the <a
 
 **View of the limited Microsoft 365 admin center for self-service purchasers:**
 
-![Microsoft 365 admin center screenshot.](../media/MACBillingProductsServicesSelfServicePurchaseIW.png)
+![Microsoft 365 admin center screenshot.](../../media/MACBillingProductsServicesSelfServicePurchaseIW.png)
 
 ## Pricing
 
@@ -96,7 +96,7 @@ The person who buys the subscription through self-service purchase will be bille
 
 ### What capabilities does an admin have for self-service purchases?
 
-Admins can view all self-service purchases made in their organization in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. They can see the product, purchaser name, subscriptions purchased, expiry date, order history, purchase price, and assigned users for each self-service purchase. If required for their organization, admins will be able to turn off self-service purchasing on a per product basis via PowerShell. Admins have the same data management and access policies over products bought through self-service purchase or centrally.
+Admins can view all self-service purchases made in their organization in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. They can see the product, purchaser name, subscriptions purchased, expiry date, order history, purchase price, and assigned users for each self-service purchase. In the Power Platform Admin Center, admins can also view self-service purchases capacity. If required for their organization, admins will be able to turn off self-service purchasing on a per product basis via PowerShell. Admins have the same data management and access policies over products bought through self-service purchase or centrally.
 
 Admins can also control whether users in their organization can make self-service purchases. For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
@@ -141,3 +141,9 @@ Valid users will continue to have full use of the self-service purchase for the 
 ### What’s the role of Microsoft’s partners in self-service purchases?
 
 Partners who have delegated administration privileges can see self-service purchases in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, just like an admin. Partners can help support an organization that wants to centralize products bought through self-service purchases. Additionally, partners may offer solutions to extend the capabilities of a self-service purchase.
+
+## Country availability
+
+### In which countries can I make a self-service purchase?
+
+Self-service purchases are available in the following countries: Australia, Canada, France, Germany, Japan, the United Kingdom, and the United States.

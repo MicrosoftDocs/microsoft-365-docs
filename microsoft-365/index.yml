@@ -31,7 +31,7 @@ highlightedContent:
       itemType: learn
       url: https://support.office.com/modernworkplace
       # Card
-    - title: Training for small businesses
+    - title: Set up your business in the cloud
       itemType: learn
       url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
     # Card
@@ -55,6 +55,10 @@ additionalContent:
     - title: Get help with Microsoft 365
       summary: Select a card to learn more about Microsoft 365. # 160 chars (optional)
       items:
+         # Card
+        - title: Microsoft 365 admin center
+          summary: Set up and manage your Office 365 and Microsoft 365 for business and enteprise subspcriptions. 
+          url: https://docs.microsoft.com/office365/admin/admin-home/
         # Card
         - title: Microsoft 365 Business
           summary: Designed for small and midsize businesses. Run your business with the latest version of Windows and Office apps like Excel and Outlook. Take advantage of data protection and security that extends to all your business devices. 
@@ -80,6 +84,6 @@ additionalContent:
           summary: Keep your campaign or business data and communications secure with this recommended configuration for Microsoft 365 Business.
           url: ./campaigns/index.md
         # Card
-        - title: NEW — Microsoft 365 training and certification at Microsoft Learn
-          summary: Brand new learning paths to increase your Microsoft 365 skills and earn certifications.
-          url: https://docs.microsoft.com/learn/m365/
+        - title: Microsoft Managed Desktop
+          summary: Microsoft Managed Desktop brings together Microsoft 365 Enterprise, cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs.
+          url: ./managed-desktop/index.yml

@@ -27,7 +27,7 @@ The Advanced eDiscovery solution in Microsoft 365 builds on the existing eDiscov
 
 The built-in workflow of Advanced eDiscovery aligns with the eDiscovery process outlined by the Electronic Discovery Reference Model (EDRM). 
 
-![The Electronic Discovery Reference Model (EDRM)](media/EDRMv1.png)
+![The Electronic Discovery Reference Model (EDRM)](../media/EDRMv1.png)
 
 (Image source courtesy of edrm.net. The source image was made available under Creative Commons Attribution 3.0 Unported License.)
 
@@ -53,7 +53,7 @@ The following sections describe each step in the built-in workflow in Advanced e
 
 For more information about the end-to-end workflow in Advanced eDiscovery, see this [Microsoft Mechanics video](https://go.microsoft.com/fwlink/?linkid=2066133). 
 
-![Tabs in Advanced eDiscovery follow the EDRM workflow](media/aedisco-homepage-1.png)
+![Tabs in Advanced eDiscovery follow the EDRM workflow](../media/aedisco-homepage-1.png)
 
 ## Managing custodians
 
@@ -80,8 +80,11 @@ Use the **Searches** tab to create searches to search the in-place custodial and
 Use the **Review sets** tab to review and analyze the content that you've collected from the live system and added to a review set. A *review set* is a static collection of that data (in other words, an offline copy of data) of custodial data (and if applicable, non-custodial data) that you collected in the previous phase of the eDiscovery workflow. When you add search results to a review set, a process is triggered that extracts files from containers, extracts metadata, and extracts text. When this process is complete, the system builds a new index of all the data collected from custodians and adds it to the review set. After the data is added to the review set, you can run more queries to narrow the case data, view data as text or in the native file format, and annotate, redact, and tag documents in the review set. You can also perform advanced analytics such as identify document duplication, email threading, and themes. After you've culled the data to only what is relevant to the case, you can either download documents directly or export them along with file metadata, annotations, and any tags. For more information, see:
 
 - [View documents in a review set](view-documents-in-review-set.md)
+
 - [Query the data in a review set](review-set-search.md)
+
 - [Tag documents in a review set](tagging-documents.md)
+
 - [Analyze data in a review set](analyzing-data-in-review-set.md)
 
 ## Exporting data for review and presentation
@@ -95,3 +98,7 @@ Use the **Jobs** tab to monitor long-running processes for case-related tasks th
 ## Configuring case settings
 
 Use the **Settings** tab to configure case-wide settings. This includes adding members to a case, closing or deleting a case, and configuring search and analytics settings.
+
+## Advanced eDiscovery reports
+
+You can use the Advanced eDiscovery reports on the home page to help your organization track activity and status across all Advanced eDiscovery cases. The Advanced eDiscovery reports feature aggregates information about cases, custodians, data sources, and communications. You can filter the report data based on various criteria and export the aggregated information to a CSV file for further analysis.  For more information, see [Advanced eDiscovery reports](advanced-ediscovery-reports.md).

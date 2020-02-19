@@ -33,11 +33,11 @@ When you add the results of a search to a review set (the review sets in a case 
 
 To add data to a review set, click a search on the **Searches** tab, and then click **Add results to review set** on the flyout page.
 
-![Adding data to a review set](media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
+![Adding data to a review set](../media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
 
 You can add to an existing review set or create a new review set.  If adding to a new review set, specify the name and then click **Add**.
 
-![Select a review set](media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
+![Select a review set](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
 Adding data to a review set is a long-running process. This process includes gathering items from the original data sources in Office 365 (for example, from mailboxes and sites), copying them to the Azure Storage location (this copying process is also called *ingestion*), and then re-indexing the items. You can track the progress on the **Jobs** tab or on the **Searches** tab by monitoring the status in the **Added data to review set** column. After the review set processing is completed, click the **Review sets** tab in the case, and click the review set to start the process of filtering, reviewing, tagging, and exporting data in the review set.
 

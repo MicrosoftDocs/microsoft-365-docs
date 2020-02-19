@@ -46,11 +46,11 @@ To add a user:
   
     You can enter more information under **Contact information**, choose how you set the password under **Password** setting, and assign roles under **Roles**.
       
-    ![Enter user information in the New user card](media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
+    ![Enter user information in the New user card](../media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
       
     In the Product licenses section, set the **Microsoft 365 Business** product license setting to **On**.
       
-    ![Set the license setting to On position](media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
+    ![Set the license setting to On position](../media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
   
 For  more information about adding users, see [Add users individually or in bulk](https://docs.microsoft.com/office365/admin/add-users/add-users).
   

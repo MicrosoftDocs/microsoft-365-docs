@@ -28,7 +28,7 @@ Advanced eDiscovery provides default advanced parameters for Analyze module sett
   
 1. In the **Prepare \> Analyze \> Setup** tab, click **Advanced settings** (at the bottom of the page). The following panel is displayed. 
     
-    ![Set Analyze advanced settings](media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
+    ![Set Analyze advanced settings](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
 2. In **Near-duplicates and Email threads parameters**, select values for the following as necessary:
     

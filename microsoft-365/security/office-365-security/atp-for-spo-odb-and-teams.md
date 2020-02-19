@@ -30,15 +30,15 @@ People regularly share files and collaborate using SharePoint, OneDrive, and Mic
 
 When a file in SharePoint Online, OneDrive for Business, and Microsoft Teams has been identified as malicious, ATP directly integrates with the file stores to lock that file. The following image shows an example of a malicious file detected in a library.
 
-![Files in OneDrive for Business with one detected as malicious](../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
+![Files in OneDrive for Business with one detected as malicious](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
 Although the blocked file is still listed in the document library and web, mobile, or desktop applications, the blocked file cannot be opened, copied, moved, or shared. People can, however, delete a blocked file. Here's an example of what that looks like on a user's mobile device:
 
-![Deleting a blocked file from OneDrive for Business from the OneDrive mobile app](../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
+![Deleting a blocked file from OneDrive for Business from the OneDrive mobile app](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
 Depending on how Office 365 is configured, people might or might not have the ability to download a blocked file. Here's what downloading a blocked file looks like on a user's mobile device:
 
-![Downloading a blocked file in OneDrive for Business](../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
+![Downloading a blocked file in OneDrive for Business](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
 To learn more, see [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 

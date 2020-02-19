@@ -72,17 +72,17 @@ Be sure to read the following items before you start searching the Office 365 au
   > [!IMPORTANT]
   > If you assign a user the View-Only Audit Logs or Audit Logs role on the **Permissions** page in the Security & Compliance Center, they won't be able to search the Office 365 audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
 
-- When an audited activity is performed by a user or admin, an audit record is generated and stored in the Office 365 audit log for your organization. The length of time that an audit record is retained (and searchable in the audit log) depends on your Office 365 subscription, and specifically the type of the license that is assigned to a specific user.
+- When an audited activity is performed by a user or admin, an audit record is generated and stored in the Office 365 audit log for your organization. The length of time that an audit record is retained (and searchable in the audit log) depends on your Office 365 or Microsoft 365 subscription, and specifically the type of the license that is assigned to a specific user.
 
-  - **Office 365 E3:** Audit records are retained for 90 days. That means you can search the audit log for activities that were performed within the last 90 days.
+  - **Office 365 and Microsoft 365 E3:** Audit records are retained for 90 days. That means you can search the audit log for activities that were performed within the last 90 days.
 
     > [!NOTE]
     > Even when mailbox auditing on by default is turned on, you might notice that mailbox audit events for some users aren't found in audit log searches in the Security & Compliance Center or via the Office 365 Management Activity API. For more information, see [More information about mailbox audit logging](enable-mailbox-auditing.md#more-information).
 
-  - **Office 365 E5:** Audit records are also retained for 90 days. Retaining audit records for one year may eventually be available for E5 users and users with an E3 license and an Office 365 Advanced Compliance add-on license.
+  - **Office 365 or Microsoft 365 E5 or users with a Microsoft 365 E5 Compliance add-on license:** Audit records for Azure Active Directory, Exchange, and SharePoint activity are retained for one year by default. Organizations can also create audit log retention policies to retain audit records for activity in other services for up to one year. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
 
     > [!NOTE]
-    > The private preview program for the one-year retention period for audit records for E5 organizations (or for users in E3 organizations that have Advanced Compliance add-on licenses) is closed to new enrollment. This article will be updated when the one-year retention period is available in public preview or released for general availability.
+    > If your organization participated in the private preview program for the one-year retention of audit records, the retention duration for audit records that were generated before the general availability rollout date will not be reset.
 
 - If you want to turn off audit log search in Office 365 for your organization, you can run the following command in remote PowerShell connected to your Exchange Online organization:
 
@@ -104,28 +104,29 @@ Be sure to read the following items before you start searching the Office 365 au
 
 - If you want to programmatically download data from the Office 365 audit log, we recommend that you use the Office 365 Management Activity API instead of using a PowerShell script. The Office 365 Management Activity API is a REST web service that you can use to develop operations, security, and compliance monitoring solutions for your organization. For more information, see [Office 365 Management Activity API reference](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. The following table shows the time it takes for the different services in Office 365.
+- It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log record to be returned in the results of an audit log search. The following table shows the time it takes for the different services in Office 365.
 
   |**Office 365 service**|**30 minutes**|**24 hours**|
   |:-----|:-----:|:-----:|
-  |Advanced Threat Protection and Threat Intelligence|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Azure Active Directory (user login events)||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Azure Active Directory (admin events)||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Data Loss Prevention|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |eDiscovery|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Exchange Online|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Project|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Stream|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Teams|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power BI|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Security & Compliance Center|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |SharePoint Online and OneDrive for Business|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sway||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Workplace Analytics|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Forms|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Advanced Threat Protection and Threat Intelligence|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Azure Active Directory (user login events)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Azure Active Directory (admin events)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Data Loss Prevention|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Dynamics 365 CRM||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |eDiscovery|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Exchange Online|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Microsoft Project|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Stream|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Teams|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power Apps||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Power BI|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Security & Compliance Center|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |SharePoint Online and OneDrive for Business|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Sway||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Workplace Analytics|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Yammer||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   ||||
 
 - Azure Active Directory (Azure AD) is the directory service for Office 365. The unified audit log contains user, group, application, domain, and directory activities performed in the Microsoft 365 admin center or in the Azure management portal. For a complete list of Azure AD events, see [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).
@@ -157,7 +158,7 @@ Here's the process for searching the audit log in Office 365.
 
     The **Audit log search** page is displayed.
 
-    ![Configure criteria and then click Search to run report](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configure criteria and then click Search to run report](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
 
     > [!NOTE]
     > You have to first turn on audit logging before you can run an audit log search. If the **Start recording user and admin activity** link is displayed, click it to turn on auditing. If you don't see this link, auditing has already been turned on for your organization.
@@ -189,13 +190,13 @@ Here's the process for searching the audit log in Office 365.
 
    The search results are loaded, and after a few moments they are displayed under **Results**. When the search is finished, the number of results found is displayed. A maximum of 5,000 events will be displayed in the **Results** pane in increments of 150 events. If more than 5,000 events meet the search criteria, the most recent 5,000 events are displayed.
 
-   ![The number of results are displayed after the search is finished](media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
+   ![The number of results are displayed after the search is finished](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
 #### Tips for searching the audit log
 
 - You can select specific activities to search for by clicking the activity name. Or you can search for all activities in a group (such as **File and folder activities**) by clicking the group name. If an activity is selected, you can click it to cancel the selection. You can also use the search box to display the activities that contain the keyword that you type.
 
-  ![Click activity group name to select all activities](media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
+  ![Click activity group name to select all activities](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
 - You have to select **Show results for all activities** in the **Activities** list to display events from the Exchange admin audit log. Events from this audit log display a cmdlet name (for example, **Set-Mailbox**) in the **Activity** column in the results. For more information, click the **Audited activities** tab in this topic and then click **Exchange admin activities**.
 
@@ -233,7 +234,7 @@ The results contain the following information about each event returned by the s
 
 You can view more details about an event by clicking the event record in the list of search results. A **Details** page is displayed that contains the detailed properties from the event record. The properties that are displayed depend on the Office 365 service in which the event occurs. To display these details, click **More information**. For descriptions, see [Detailed properties in the Office 365 audit log](detailed-properties-in-the-office-365-audit-log.md).
 
-![Click More information to view the detailed properties of the audit log event record](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+![Click More information to view the detailed properties of the audit log event record](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
 ### Step 3: Filter the search results
 
@@ -249,7 +250,7 @@ To filter the results:
 
 3. Click one of the boxes under a column header and type a word or phrase, depending on the column you're filtering on. The results will dynamically readjust to display the events that match your filter.
 
-   ![Type a word in filter to display events that match the filter](media/542dc323-a997-402c-934b-cc5e218e50bc.png)
+   ![Type a word in filter to display events that match the filter](../media/542dc323-a997-402c-934b-cc5e218e50bc.png)
 
 4. To clear a filter, click the **X** in the filter box or click **Hide filtering**.
 
@@ -324,7 +325,7 @@ The following table describes the file and page activities in SharePoint Online 
 |Deleted file from recycle bin|FileDeletedFirstStageRecycleBin|User deletes a file from the recycle bin of a site.|
 |Deleted file from second-stage recycle bin|FileDeletedSecondStageRecycleBin|User deletes a file from the second-stage recycle bin of a site.|
 |Deleted record compliance policy label|ComplianceRecordDelete|A document that was classified as a record was deleted. A document is considered a record when a retention label that classifies content as a record is applied to the document.|
-|Detected document sensitivity mismatch|DocumentSensitivityMismatchDetected|User uploads a document classified with a sensitivity label that has a higher priority than the sensitivity label that's applied to the site the document is uploaded to. <br/><br/> This event isn't triggered if the sensitivity label applied to a site has a higher priority than the sensitivity label applied to a document that's uploaded to the site. For more information about sensitivity label priority, see the "Label priority" section in [Overview of sensitivity labels](sensitivity-labels.md#label-priority-order-matters).|
+|Detected document sensitivity mismatch|DocumentSensitivityMismatchDetected|User uploads a document classified with a sensitivity label that has a higher priority than the sensitivity label that's applied to the site the document is uploaded to. <br/><br/> This event isn't triggered if the sensitivity label applied to a site has a higher priority than the sensitivity label applied to a document that's uploaded to the site. For more information about sensitivity label priority, see the "Label priority" section in [Learn about sensitivity labels](sensitivity-labels.md#label-priority-order-matters).|
 |Detected malware in file|FileMalwareDetected|SharePoint anti-virus engine detects malware in a file.|
 |Discarded file checkout|FileCheckOutDiscarded|User discards (or undos) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
 |Downloaded file|FileDownloaded|User downloads a document from a site.|
@@ -332,7 +333,7 @@ The following table describes the file and page activities in SharePoint Online 
 |(none)|FileModifiedExtended|This is related to the "Modified file" (FileModified) activity. A FileModifiedExtended event is logged when the same person continually modifies a file for an extended period (up to 3 hours). <br/><br/> The purpose of logging FileModifiedExtended events is to reduce the number of FileModified events that are logged when a file is continually modified. This helps reduce the noise of multiple FileModified records for what is essentially the same user activity, and lets you focus on the initial (and more important) FileModified event.|
 |Moved file|FileMoved|User moves a document from its current location on a site to a new location.|
 |(none)|FilePreviewed|User previews files on a SharePoint or OneDrive for Business site. These events typically occur in high volumes based on a single activity, such as viewing an image gallery.|
-|Performed search query|SearchQueryPerformed|User or system account performs a search in SharePoint or OneDrive for Business. Some common scenarios where a service account performs a search query include applying an eDiscovery hold or retention policy to sites and OneDrive accounts, and when retention or sensitivity labels are auto-applied to site content. In many of these cases, the name of the service account that's logged in the User field of the audit record is **app@sharepoint**. </br></br> **Tip:** The ApplicationDisplayName and EventData fields in the audit record for the Performed search query activity may help you identify the scenario or service that triggered this event.|
+|Performed search query|SearchQueryPerformed|User or system account performs a search in SharePoint or OneDrive for Business. Some common scenarios where a service account performs a search query include applying an eDiscovery hold or retention policy to sites and OneDrive accounts, and when retention or sensitivity labels are auto-applied to site content. In many of these cases, the name of the service account that's logged in the User field of the audit record is **app\@sharepoint**. </br></br> **Tip:** The ApplicationDisplayName and EventData fields in the audit record for the Performed search query activity may help you identify the scenario or service that triggered this event.|
 |Recycled all minor versions of file|FileVersionsAllMinorsRecycled|User deletes all minor versions from the version history of a file. The deleted versions are moved to the site's recycle bin.|
 |Recycled all versions of file|FileVersionsAllRecycled|User deletes all versions from the version history of a file. The deleted versions are moved to the site's recycle bin.|
 |Recycled version of file|FileVersionRecycled|User deletes a version from the version history of a file. The deleted version is moved to the site's recycle bin.|
@@ -738,7 +739,7 @@ The following table lists the user and admin activities in Microsoft Teams that 
 
 If your organization is using the [Patients application](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) in Microsoft Teams, you can search the audit log for activities related to the using the Patients app. If your environment is configured to support Patients app, an additional activity group for these activities is available in the **Activities** picker list.
 
-![Microsoft Teams Healthcare activities in Activities picker list](media/TeamsHealthcareAuditActivities.png)
+![Microsoft Teams Healthcare activities in Activities picker list](../media/TeamsHealthcareAuditActivities.png)
 
 For a description of the Patients app activities, see [Audit logs for Patients app](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
 
@@ -829,7 +830,7 @@ Here are some tips for searching for Exchange admin activities when searching th
 
 - To display events from the Exchange admin audit log, filter the search results and type a **-** (dash) in the **Activity** filter box. This displays cmdlet names, which are displayed in the **Activity** column for Exchange admin events. Then you can sort the cmdlet names in alphabetical order.
 
-  ![Type a dash in the Activities box to filter Exchange admin events](media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+  ![Type a dash in the Activities box to filter Exchange admin events](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
 - To get information about what cmdlet was run, which parameters and parameter values were used, and what objects were affected, you can export the search results by selecting the **Download all results** option. For more information, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
 
@@ -845,10 +846,6 @@ Here are some tips for searching for Exchange admin activities when searching th
 
 ## Frequently asked questions
 
-**Where can I find about the features offered by the auditing service in Office 365?**
-
-For more information about the auditing and reporting features available in Office 365, see [Auditing and Reporting in Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-auditing-and-reporting-overview).
-
 **What are different Office 365 services that are currently audited?**
 
 The most used Office 365 services like Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection, and Power BI are audited. See the [beginning of this article](search-the-audit-log-in-security-and-compliance.md) for a list of services that are audited.
@@ -863,16 +860,13 @@ Most auditing data is available within 30 minutes but it may take up to 24 hours
 
 **How long are the audit records retained for?**
 
-As previously explained, the retention period for audit records depends on your organization's Office 365 subscription.
+As previously explained, the retention period for audit records depends on your organization's Office 365 or Microsoft subscription.
 
-- **Office 365 E3:** Audit records are retained for 90 days.
+  - **Office 365 and Microsoft 365 E3:** Audit records are retained for 90 days. That means you can search the audit log for activities that were performed within the last 90 days.
 
-- **Office 365 E5:** Audit records are also retained for 90 days. Retaining audit records for one year may eventually be available for E5 users and users with an E3 license and an Office 365 Advanced Compliance add-on license.
+  - **Office 365 or Microsoft 365 E5 or users with a Microsoft 365 E5 Compliance add-on license:** Audit records for Azure Active Directory, Exchange, and SharePoint activity are retained for one year by default. Organizations can also create audit log retention policies to retain audit records for activity in other services for up to one year. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
 
-  > [!NOTE]
-  > As previously explained, the private preview program for the one-year retention period for audit records for E5 organizations (or E3 organizations that have Advanced Compliance add-on licenses) is closed to new enrollment. This article will be updated when the one-year retention period is available in public preview or released for general availability.
-
-Also note that the duration of the retention period for audit records is based on per-user licensing. For example, if a user in your organization is assigned an Office 365 E3 or E5 license, then the audit records for activities performed by that user are retained for 90 days.
+Also note that the duration of the retention duration for audit records is based on per-user licensing. For example, if a user in your organization is assigned an Office 365 E3 license, then the audit records for activities performed by that user are retained for 90 days.
 
 **Can I access the auditing data programmatically?**
 
@@ -896,4 +890,6 @@ No. We currently have auditing pipeline deployments in the NA (North America), E
 
 **Is auditing data encrypted?**
 
-Auditing data is stored in Exchange mailboxes (data at rest) in the same region where the auditing pipeline is deployed. This data is not encrypted. However, data in transit is always encrypted.
+Auditing data is stored in Exchange mailboxes (data at rest) in the same region where the unified auditing pipeline is deployed. Mailbox data at rest is not encrypted by Exchange. However, service-level encryption encrypts all mailbox data because Exchange servers in Microsoft datacenters are encrypted via BitLocker. For more information, see [Office 365 Encryption for Skype for Business, OneDrive for Business, SharePoint Online, and Exchange Online](office-365-encryption-for-skype-onedrive-sharepoint-and-exchange.md).
+
+Mail data in transit is always encrypted.

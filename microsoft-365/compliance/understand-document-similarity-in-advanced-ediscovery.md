@@ -40,11 +40,11 @@ However, document F1 may resemble document F3 at a level of only 70%, which is b
   
 The levels of resemblance are illustrated as follows:
   
-![Document similarity](media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
+![Document similarity](../media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
   
 Assume that another document, X1, is now inserted. The resemblance between X1 and E3 is 87%. Similarly, the resemblance between X1 and F1 is 92%. As a result, EquiSet -1, EquiSet -2, and X1 are now combined into one ND set.
   
-![Document Similarity](media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
+![Document Similarity](../media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
   
 > [!NOTE]
 > If any two documents are assigned to one ND set, they will remain together in the same ND set, even if additional documents are added to the set or if the sets are merged. 

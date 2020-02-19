@@ -45,9 +45,10 @@ Learn how to accelerate your FDA CFR Title 21 deployment: [Download the Azure FD
 Although there is no certification for complying with CFR Title 21 Part 11, the following Microsoft enterprise cloud services have undergone independent, third-party audits, which may help customers in their compliance efforts. These services include:
 
 - Azure: Cloud Services, Storage, Traffic Manager, Virtual Machines, and Virtual Network
+- Azure DevOps
 - Intune
 - [Dynamics 365 and Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- [Office 365 and Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Office 365 and Office 365 U.S. Government
 
 ## Audits, reports, and certificates
 

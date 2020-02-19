@@ -19,7 +19,7 @@ description: You need to make your passwords strong and manageable across your o
 
 # Step 2: Secure your passwords
 
-![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2-Identity](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-password-prot"></a>
 ## Prevent bad passwords
@@ -51,7 +51,7 @@ See the [instructions to roll out password reset](https://docs.microsoft.com/azu
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password reset](password-reset-m365-ent-test-environment.md) |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password reset](password-reset-m365-ent-test-environment.md) |
 |||
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-pw-reset) for this section.
@@ -70,7 +70,7 @@ See the [instructions to configure Azure AD Seamless SSO](https://docs.microsoft
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md) |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Azure AD Seamless Single Sign-on](single-sign-on-m365-ent-test-environment.md) |
 |||
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-sso) for this section.
@@ -95,4 +95,4 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 |||
 |:-------|:-----|
-|![Step 3](./media/stepnumbers/Step3.png)| [Secure and manage your user sign-ins](identity-secure-user-sign-ins.md) |
+|![Step 3](../media/stepnumbers/Step3.png)| [Secure and manage your user sign-ins](identity-secure-user-sign-ins.md) |
