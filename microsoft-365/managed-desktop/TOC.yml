@@ -101,7 +101,7 @@
             - name: Battery insights
               href: working-with-managed-desktop/battery-insights.md
             - name: Windows security update insights
-              href: working-with-managed-desktop/security-updates-insights.md
+              href: working-with-managed-desktop/security-update-insights.md
         - name: Admin support
           href: working-with-managed-desktop/admin-support.md
         - name: End user support
