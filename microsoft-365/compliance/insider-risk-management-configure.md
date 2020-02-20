@@ -25,10 +25,10 @@ For more information about how insider risk policies can help you manage risk in
 
 ## Before you begin
 
-Before you get started with insider risk management, you should confirm your Microsoft 365 subscription. To access and use insider risk management, your organization must have one of the following subscriptions:
+Before you get started with insider risk management, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans). To access and use insider risk management, your organization must have one of the following subscriptions:
 
 - Microsoft 365 E5 subscription (paid or trial version)
-- Microsoft 365 Enterprise E3 subscription with the Microsoft E5 Compliance add-on
+- Microsoft 365 Enterprise E3 subscription with the [Microsoft E5 Compliance add-on](https://signup.microsoft.com/signup/?offerid=57806d24-4357-4eff-b0a3-4054ebdf2abe&DL=INFORMATION_PROTECTION_COMPLIANCE&ali=1)
 
 Users included in insider risk management policies must have a Microsoft 365 E5 Compliance license or be included in a Microsoft 365 E5 subscription.
 
@@ -73,16 +73,16 @@ For step-by-step instructions to turn on auditing, see [Turn Office 365 audit lo
 
 ## Step 3 (optional): Configure prerequisites for templates
 
-Some insider risk management templates have prerequisites that must be configured for policy indicators to generate activity alerts:
+Some insider risk management templates have prerequisites that must be configured for policy indicators to generate relevant activity alerts. Configure the appropriate prerequisites depending on the policies you plan to configure for your organization.
 
 ### Configure Microsoft 365 HR Connector
 
-Insider risk management supports importing user and log data imported from 3rd-party risk management and human resources platforms. The Microsoft 365 Human Resources (HR) data connector allows you to pull in human resources data from CSV files, including user termination and last employment dates. This data helps drive the alert indicators in insider risk management policies and is an important part of configuring full risk management coverage in your organization.
+Insider risk management supports importing user and log data imported from 3rd-party risk management and human resources platforms. The Microsoft 365 Human Resources (HR) data connector allows you to pull in human resources data from CSV files, including user termination and last employment dates. This data helps drive alert indicators in insider risk management policies and is an important part of configuring full risk management coverage in your organization.
 
 See the [Set up a connector to import HR data](import-hr-data.md) topic for step-by-step guidance to configure the Microsoft 365 HR Connector for your organization. After you've configured the HR Connector, return to these configuration steps.
 
 >[!IMPORTANT]
->If you plan on configuring a policy using the *Departing employee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template. If you configure more than one HR Connector for your organization, insider risk management will automatically pull indicators from all HR Connectors.
+>If you configure a policy using the *Departing employee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template. If you configure more than one HR Connector for your organization, insider risk management will automatically pull indicators from all HR Connectors.
 
 ### Configure Data Loss Prevention (DLP) policies
 
@@ -91,7 +91,7 @@ Insider risk management supports using DLP policies to help identify the intenti
 See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) topic for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
 
 >[!IMPORTANT]
->If you plan on configuring a policy using the *Data leaks* template, you'll need to configure at least one DLP policy to use the full signal detection features of the policy template. If you configure more than one DLP policy for your organization, you'll need to assign an insider risk management policy per DLP policy.
+>If you configure a policy using the *Data leaks* template, you'll need to configure at least one DLP policy to use the full signal detection features of the policy template. If you configure more than one DLP policy for your organization, you'll need to assign an insider risk management policy per DLP policy.
 
 ## Step 4 (required): Configure insider risk settings
 
