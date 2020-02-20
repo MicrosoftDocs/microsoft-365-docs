@@ -64,7 +64,7 @@ Several of the Office 365 for business plans have add-ons that you can buy for y
 
 3. On the bottom-left corner of the subscription details, select **Add-ons** \> **Buy add-ons**.
 
-    ![Buy add-ons link on the Subscriptions page of the Microsoft 365 admin center.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Buy add-ons link on the Subscriptions page of the Microsoft 365 admin center.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. On the **Purchase services** page, mouse over or tap the add-on subscription that you want to buy, and then select **Buy now**.
 
@@ -86,7 +86,7 @@ Several of the Office 365 for business plans have add-ons that you can buy for y
 
 3. On the bottom-left corner of the subscription details, select **Add-ons** \> **Buy add-ons**.
 
-    ![Buy add-ons link on the Subscriptions page of the Microsoft 365 admin center.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Buy add-ons link on the Subscriptions page of the Microsoft 365 admin center.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. On the **Purchase services** page, mouse over or tap the add-on subscription that you want to buy, and then select **Buy now**.
 
@@ -138,14 +138,14 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
 
 4. Select the **Change quantity** link for the add-on that you want to update. 
 
-    ![Add-ons link and the change quantity link.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
+    ![Add-ons link and the change quantity link.](../admin/media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
 5. Enter the number of user licenses that you need in the box, and then select **Submit**.
 
     > [!TIP]
     > You can also use the up-arrow and down-arrow to change the quantity of user licenses or just enter the number you want in the box.
   
-    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
@@ -161,14 +161,14 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
 
 4. Select the **Change quantity** link for the add-on that you want to update. 
 
-    ![Add-ons link and the change quantity link.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
+    ![Add-ons link and the change quantity link.](../admin/media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
 5. Enter the number of user licenses that you need in the box, and then select **Submit**.
 
     > [!TIP]
     > You can also use the up-arrow and down-arrow to change the quantity of user licenses or just enter the number you want in the box.
   
-    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 
 ::: moniker-end
@@ -196,7 +196,7 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
     > [!TIP]
     > You can also use the up-arrow and down-arrow to change the quantity of licenses or just enter the number you want in the box.
   
-    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
@@ -211,7 +211,7 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
     > [!TIP]
     > You can also use the up-arrow and down-arrow to change the quantity of licenses or just enter the number you want in the box.
   
-    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
