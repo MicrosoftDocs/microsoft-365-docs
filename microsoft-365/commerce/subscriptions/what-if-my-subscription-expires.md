@@ -61,7 +61,7 @@ Before the subscription actually reaches its expiration date, you have a few opt
 
   - If you purchased Office 365 Business with a prepaid card, you can [turn on Recurring billing](renew-your-subscription.md) for your subscription.
 
-  - If you're an Open Volume Licensing customer with a prepaid, one-year subscription, contact your partner to purchase a new product key. You'll receive instructions via email to activate your key in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). To learn how to find a new partner, or the partner you've worked with in the past, see [Find your Office 365 partner or reseller](../manage/find-your-partner-or-reseller.md).
+  - If you're an Open Volume Licensing customer with a prepaid, one-year subscription, contact your partner to purchase a new product key. You'll receive instructions via email to activate your key in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). To learn how to find a new partner, or the partner you've worked with in the past, see [Find your Office 365 partner or reseller](../../admin/manage/find-your-partner-or-reseller.md).
 
   - If you have Office 365 Business, see [Manage recurring billing for your subscription](renew-your-subscription.md).
 
@@ -85,7 +85,7 @@ Before the subscription actually reaches its expiration date, you have a few opt
 
   - If you purchased Office 365 Business with a prepaid card, you can [turn on Recurring billing](renew-your-subscription.md) for your subscription.
 
-  - If you're an Open Volume Licensing customer with a prepaid, one-year subscription, contact your partner to purchase a new product key. You'll receive instructions via email to activate your key in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). To learn how to find a new partner, or the partner you've worked with in the past, see [Find your Office 365 partner or reseller](../manage/find-your-partner-or-reseller.md).
+  - If you're an Open Volume Licensing customer with a prepaid, one-year subscription, contact your partner to purchase a new product key. You'll receive instructions via email to activate your key in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). To learn how to find a new partner, or the partner you've worked with in the past, see [Find your Office 365 partner or reseller](../../admin/manage/find-your-partner-or-reseller.md).
 
   - If you have Office 365 Business, see [Renew Office 365 for business](renew-your-subscription.md).
 
@@ -184,21 +184,21 @@ At this point, you can't reactivate the subscription. However, as a global or bi
 When your trial ends, you won't be able to continue using Office 365 for free. You have a few options:
 
 ::: moniker range="o365-worldwide"
-- **Buy Office 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Office 365. To learn how to convert your trial into a paid subscription, see [Buy your trial version of Office 365 for business](buy-a-subscription-from-your-free-trial.md).
+- **Buy Office 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Office 365. To learn how to convert your trial into a paid subscription, see [Buy your trial version of Office 365 for business](../buy-a-subscription-from-your-free-trial.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-- **Buy Office 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Office 365. To learn how to convert your trial into a paid subscription, see [Buy your trial version of Office 365 for business](buy-a-subscription-from-your-free-trial.md).
+- **Buy Office 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Office 365. To learn how to convert your trial into a paid subscription, see [Buy your trial version of Office 365 for business](../buy-a-subscription-from-your-free-trial.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-- **Buy Office 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Office 365. To learn how to convert your trial into a paid subscription, see [Buy or try subscriptions for Office 365 operated by 21Vianet](../services-in-china/buy-or-try-subscriptions.md).
+- **Buy Office 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Office 365. To learn how to convert your trial into a paid subscription, see [Buy or try subscriptions for Office 365 operated by 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md).
 
 ::: moniker-end
 
-- **Extend your trial.** Need more time to evaluate Office 365? In certain cases, you may be able to [extend your trial](extend-your-trial.md).
+- **Extend your trial.** Need more time to evaluate Office 365? In certain cases, you may be able to [extend your trial](../extend-your-trial.md).
 
 - **Cancel the trial or let it expire.** If you decide not to buy Office 365, you can let your trial expire or [cancel it](cancel-your-subscription.md). Be sure to back up any data you want to keep. Soon after the 30 day grace period, your trial account information and data is permanently erased.
 
@@ -215,7 +215,7 @@ Here's what to expect for you and your users if you cancel a subscription.
 To learn how to cancel, see [Cancel your subscription](cancel-your-subscription.md).
   
 > [!IMPORTANT]
-> If you want your subscription data to be deleted before the typical Disabled period is over, you can request expedited deprovisioning. When you request expedited deprovisioning, your subscription data is deleted within 3 days of cancellation. To use expedited deprovisioning, [call support](../contact-support-for-business-products.md).
+> If you want your subscription data to be deleted before the typical Disabled period is over, you can request expedited deprovisioning. When you request expedited deprovisioning, your subscription data is deleted within 3 days of cancellation. To use expedited deprovisioning, [call support](../../admin/contact-support-for-business-products.md).
 
 > [!NOTE]
 > The information on this page is subject to the [Microsoft Policy Disclaimer and Change Notice](https://go.microsoft.com/fwlink/p/?LinkId=613651). Return to this site periodically to review any changes.
