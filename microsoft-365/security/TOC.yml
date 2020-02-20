@@ -189,7 +189,6 @@
                       href: ./office-365-security/recover-from-ransomware.md
                     - name: Virus detection in SharePoint Online
                       href: ./office-365-security/virus-detection-in-spo.md
-
                 - name: Advanced spam filtering options
                   href: ./office-365-security/advanced-spam-filtering-asf-options.md
                 - name: High-risk delivery pool for outbound messages
@@ -369,8 +368,14 @@
               href: ./office-365-security/campaigns.md
             - name: Understanding latest attacks with threat analytics
               href: ./mtp/latest-attack-campaigns.md
-            - name: Automatically investigate and respond to threats in Office 365
-              href: ./office-365-security/office-365-air.md
+            - name: Automated investigation and response
+              items: 
+                - name: Overview
+                  href: ./office-365-security/office-365-air.md
+                - name: View details and results of an investigation
+                  href: ./office-365-security/air-view-investigation-results.md
+                - name: View and approve remediation mtp/mtp-autoir-actions
+                  href: ./office-365-security/air-remediation-actions.md
             - name: Detect and address compromised user accounts quickly
               href: ./office-365-security/address-compromised-users-quickly.md
             - name: Investigate and remediate malicious email
