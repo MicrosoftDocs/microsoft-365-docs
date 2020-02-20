@@ -18,7 +18,7 @@ search.appverid:
 description: "The data classification dashboard gives you visibility into how much sensitive data has been found and classified in your organization."
 ---
 
-# Know your data - Data classification overview (preview)
+# Know your data - data classification overview (preview)
 
 As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according your your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](labels.md), and sensitive information type classification. There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large numbers of documents and emails that are tagged and classified with one or both of these labels. After you apply  your retention labels and sensitivity labels, you’ll want to see how the labels are being used across your tenant and what is being done with those items. The data classification page provides visibility into that body of content, specifically:
 
