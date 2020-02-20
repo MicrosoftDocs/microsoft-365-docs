@@ -25,11 +25,11 @@ description: "Change subscriptions manually by buying a new subscription and ens
 # Change plans manually
 
 > [!NOTE]
-> This article applies to the new admin center. The new admin center is available to all Microsoft 365 admins, and you can opt in by selecting **Try the new admin center** toggle located at the top of the Home page. For more information, see [About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md). To view the article about the old admin center, see [Switch Office 365 for business plans manually](switch-plans-manually.md).
+> This article applies to the new admin center. The new admin center is available to all Microsoft 365 admins, and you can opt in by selecting **Try the new admin center** toggle located at the top of the Home page. For more information, see [About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md). To view the article about the old admin center, see [Switch Office 365 for business plans manually](switch-plans-manually.md).
 
 ## Step 1: Decide how to change plans
 
-The best way to change all your users from one plan to another is to [use the Upgrade tab](../subscriptions-and-billing/upgrade-to-different-plan.md). Sometimes this isn't possible. Change plans manually instead:
+The best way to change all your users from one plan to another is to [use the Upgrade tab](upgrade-to-different-plan.md). Sometimes this isn't possible. Change plans manually instead:
 
 - If the **Upgrade** tab indicates you can't upgrade the current plan.
 
@@ -40,7 +40,7 @@ The best way to change all your users from one plan to another is to [use the Up
 To continue with a manual change, read [Step 2: Buy a new subscription](#step-2-buy-a-new-subscription) in this topic.
 
 > [!IMPORTANT]
-> If you are changing to a plan with fewer data-related services than your current plan (downgrading), you need to manually back up any data you wish to keep. For more information, see [Back up data before switching O365 for business plans](../subscriptions-and-billing/back-up-data-before-switching-plans.md).
+> If you are changing to a plan with fewer data-related services than your current plan (downgrading), you need to manually back up any data you wish to keep. For more information, see [Back up data before switching O365 for business plans](back-up-data-before-switching-plans.md).
 
 ## Step 2: Buy a new subscription
 
@@ -48,7 +48,7 @@ To continue with a manual change, read [Step 2: Buy a new subscription](#step-2-
 
 OR
 
-**Purchase a new subscription and licenses:** Follow the steps in [Buy another Office 365 for business subscription](../subscriptions-and-billing/buy-another-subscription.md) to buy a new subscription.
+**Purchase a new subscription and licenses:** Follow the steps in [Buy another Office 365 for business subscription](../buy-another-subscription.md) to buy a new subscription.
 
 Make sure you purchase a subscription for the same organization that the users are in now. For example, check the email addresses for the Office 365 users you want to move. If their email addresses include \@contoso.com, you must purchase a new subscription for contoso.com.
 Include a license for each user that you want to move.
@@ -65,7 +65,7 @@ Include a license for each user that you want to move.
     to make sure ten licenses are available.
 
 4. **Need more licenses for the new subscription?**
-   Go to the **Products & services** page and [buy more licenses](../subscriptions-and-billing/buy-licenses.md).
+   Go to the **Products & services** page and [buy more licenses](../licenses/buy-licenses.md).
 
 > [What about the old licenses?](#what-about-the-old-licenses)
 
@@ -74,7 +74,7 @@ Include a license for each user that you want to move.
 - **If you purchased two subscriptions and they are not both listed here**, they may have been purchased for different organizations
     (for different domains). Subscriptions can't cross organization boundaries.
 
-- **If you know you have an additional subscription**, and it's not listed here, or is not active, [call Microsoft support](../contact-support-for-business-products.md).
+- **If you know you have an additional subscription**, and it's not listed here, or is not active, [call Microsoft support](../../admin/contact-support-for-business-products.md).
 
 ### What about the old licenses?
 
@@ -111,9 +111,9 @@ The licenses for the current subscription will be removed later; you'll only pay
 
 ## Step 5: Cancel subscriptions or remove licenses that you no longer need (Optional)
 
-If you moved all users from one subscription to another, and you no longer need the original subscription, you can [cancel the subscription](../subscriptions-and-billing/cancel-your-subscription.md).
+If you moved all users from one subscription to another, and you no longer need the original subscription, you can [cancel the subscription](cancel-your-subscription.md).
 
-If you moved only some users to a different subscription, [remove licenses](../subscriptions-and-billing/remove-licenses-from-subscription.md) that you no longer need.
+If you moved only some users to a different subscription, [remove licenses](../licenses/remove-licenses-from-subscription.md) that you no longer need.
 
 ## Call support to help you change plans
-[Call Microsoft support](../contact-support-for-business-products.md)
+[Call Microsoft support](../../admin/contact-support-for-business-products.md)

@@ -55,4 +55,4 @@ The day your plan upgrade is complete, the billing on your old subscription will
   
 ## Call support to help you upgrade plans
 
-[Call Microsoft Support](../contact-support-for-business-products.md)
+[Call Microsoft Support](../../admin/contact-support-for-business-products.md)
