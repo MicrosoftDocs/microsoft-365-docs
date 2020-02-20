@@ -41,7 +41,34 @@ When an automated investigation occurs in Office 365 Advanced Threat Protection,
 
     ![AIR investigation graph page](../../media/air-investigationgraphpage.png)
 
-4. Use the various tabs to learn more about the investigation.
+   Use the various tabs to learn more about the investigation.
+
+
+## View details about an alert related to an investigation
+
+Certain kinds of alerts trigger automated investigation in Office 365. To learn more, see [Alerts](automated-investigation-response-office.md#alerts). Use the following procedure to view details about an alert that is associated with an automated investigation.
+
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in. This takes you to the the Security & Compliance Center.
+
+2. Go to **Threat management** > **Investigations**.
+
+3. In the list of investigations, select an item in the **ID** column. 
+
+4. With details of an investigation open, select the **Alerts** tab. Any alerts that triggered the investigation are listed here.
+
+5. Select an item in the list. A flyout opens, with details about the alert and links to additional information and actions.
+
+6. Review the information on the flyout, and, depending on the particular alert, take an action, such as **Resolve**, **Suppress**, or **Notify users**. 
+
+    - **Resolve** is equivalent to closing an alert
+    
+    - **Suppress** causes a policy to not trigger alerts for a specified period of time
+    
+    - **Notify users** starts an email with users' email addresses already entered, and enables your security operations team to type a message to those users. (This is similar to sending a message to recipients using [Threat Explorer](threat-explorer.md).)  
+
+## How to use the various tabs
+
+The following sections walk you through the various tabs on the automated investigations page and how you can use the information.
 
 ### Automated investigations page
 
@@ -216,42 +243,3 @@ You can:
 - Approve or reject recommended actions with comments.
 - Export the results to a CSV file.
 - Filter the view.
-
-## Review and approve actions
-
-In Office 365, automated investigations typically result in one or more recommended actions. However, no actions are taken until they are approved by your security operations team. Use the following procedure to review and approve actions.
-
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in. 
-
-2. Go to **Threat management** > **Investigations**.
-
-3. In the list of investigations, select an item in the **ID** column. 
-
-3. On the investigation details view, select the **Actions** tab. Any actions that are pending approval are listed here.
-
-4. Select an item in the list.
-
-5. Select **Approve** to take the recommended action (or **Reject** to close the investigation without taking action).
-
-## View details about an alert related to an investigation
-
-Certain kinds of alerts trigger automated investigation in Office 365. To learn more, see [Alerts](automated-investigation-response-office.md#alerts). Use the following procedure to view details about an alert that is associated with an automated investigation.
-
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in. This takes you to the the Security & Compliance Center.
-
-2. Go to **Threat management** > **Investigations**.
-
-3. In the list of investigations, select an item in the **ID** column. 
-
-4. With details of an investigation open, select the **Alerts** tab. Any alerts that triggered the investigation are listed here.
-
-5. Select an item in the list. A flyout opens, with details about the alert and links to additional information and actions.
-
-6. Review the information on the flyout, and, depending on the particular alert, take an action, such as **Resolve**, **Suppress**, or **Notify users**. 
-
-    - **Resolve** is equivalent to closing an alert
-    
-    - **Suppress** causes a policy to not trigger alerts for a specified period of time
-    
-    - **Notify users** starts an email with users' email addresses already entered, and enables your security operations team to type a message to those users. (This is similar to sending a message to recipients using [Threat Explorer](threat-explorer.md).)  
-
