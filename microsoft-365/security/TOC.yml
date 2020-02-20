@@ -376,6 +376,8 @@
                   href: ./office-365-security/air-view-investigation-results.md
                 - name: View and approve remediation actions
                   href: ./office-365-security/air-remediation-actions.md
+                - name: Integrate AIR with a custom or third-party reporting solution
+                  href: ./office-365-security/air-custom-reporting.md
             - name: Detect and address compromised user accounts quickly
               href: ./office-365-security/address-compromised-users-quickly.md
             - name: Investigate and remediate malicious email
