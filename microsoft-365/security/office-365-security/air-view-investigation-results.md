@@ -19,7 +19,7 @@ description: "During and after an automated investigation in Office 365, you can
 
 # Details and results of an automated investigation in Office 365
 
-When an automated investigation occurs in Office 365 Advanced Threat Protection, details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
+When an [automated investigation](office-365-air.md) occurs in [Office 365 Advanced Threat Protection](office-365-atp.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
 ## View details of an investigation
 
@@ -40,7 +40,6 @@ When an automated investigation occurs in Office 365 Advanced Threat Protection,
     ![AIR investigation graph page](../../media/air-investigationgraphpage.png)
 
    Use the various tabs to learn more about the investigation.
-
 
 ## View details about an alert related to an investigation
 
