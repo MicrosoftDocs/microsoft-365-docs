@@ -405,7 +405,7 @@
                   href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: How ATP works
               items: 
-                - name: How Automated Investigation and Response works
+                - name: How automated investigation and response works
                   href: ./office-365-security/automated-investigation-response-office.md
                 - name: How ATP Safe Links works
                   href: ./office-365-security/how-atp-safe-links-works.md
