@@ -16,13 +16,13 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
+- okr_smb
 search.appverid:
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: "Use the admin center to set up your organization in the cloud, and manage users and subscriptions. Get started by signing in to the account with admin permissions."
-ms.custom: okr_smb
 ---
 
 # About the Microsoft 365 admin center

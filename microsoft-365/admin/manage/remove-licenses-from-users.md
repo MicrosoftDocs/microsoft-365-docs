@@ -21,8 +21,6 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: "Learn how to remove licenses from user accounts."
-search.appverid:
-- MET150
 ---
 
 # Unassign licenses from users
