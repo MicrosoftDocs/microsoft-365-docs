@@ -17,9 +17,9 @@ ms.collection: M365-security-compliance
 description: "Learn about remediation actions in automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
 ---
 
-# Remediation actions in Office 365 Advanced Threat Protection automated investigation and response capabilities
+# Remediation actions in following an automated investigation in Office 365
 
-## Remediation actions
+## Remediation actions overview
 
 [Automated investigation and response capabilities](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) in Office 365 Advanced Threat Protection include certain remediation actions. Whenever an automated investigation is running or has completed, you'll typically see one or more remediation actions that require approval by your security operations team to proceed. The following table summarizes remediation actions currently available in Office 365 Advanced Threat Protection. 
 
