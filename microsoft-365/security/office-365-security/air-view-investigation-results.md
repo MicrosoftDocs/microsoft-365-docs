@@ -241,3 +241,7 @@ You can:
 - Approve or reject recommended actions with comments.
 - Export the results to a CSV file.
 - Filter the view.
+
+## Next steps
+
+- [Review and approve pending actions](air-remediation-actions.md)
