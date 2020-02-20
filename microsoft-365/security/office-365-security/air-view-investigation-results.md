@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 description: "During and after an automated investigation in Office 365, you can view the results and key findings."
 ---
 
-# View the details and results of an automated investigation in Office 365 automated investigation and response
+# Details and results of an automated investigation in Office 365
 
 When an automated investigation occurs in Office 365 Advanced Threat Protection, details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
