@@ -1,5 +1,5 @@
 ---
-title: Insider risk management notice templates (preview)
+title: Insider risk management notice templates
 description: Learn about insider risk management notice templates in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Insider risk management notice templates (preview)
+# Insider risk management notice templates
 
 Insider risk management notice templates allow you to send email messages to employees when their activities generate a policy match and alert. In most cases, employee actions that generate alerts are the result of mistakes or inadvertent activities without ill intent. Notices serve as simple reminders to employees to be more careful or to provide links or information for refresher training or corporate policy resources. Notices can be an important part of your internal compliance training program and can help create a documented audit trail for employees with recurring risk activities.
 
