@@ -19,7 +19,7 @@ description: "Learn how to integrate Office 365 automated investigation and resp
 
 # Use the Office 365 Management Activity API for custom or third-party reporting solutions
 
-If your organization is using a custom or third-party reporting solution, you can view information about automated investigations in that solution by using the Office 365 Management Activity API.
+With [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp), you get [detailed information about automated investigations](air-view-investigation-results.md). However, some organizations also use a custom or third-party reporting solution. If your organization wants to integrate information about automated investigations with such a solution, you can use the Office 365 Management Activity API.
 
 Use the following resources to set this up:
 
@@ -30,10 +30,3 @@ Use the following resources to set this up:
 |[Office 365 Management Activity API reference](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)     |You can use the Office 365 Management Activity API to retrieve information about user, admin, system, and policy actions and events from Office 365 and Azure AD activity logs. Read this article to learn more about how this works.        |
 |[Office 365 Management Activity API schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)     |Get an overview of the [Common schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) and the [Office 365 ATP and threat investigation and response schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) to learn about specific kinds of data available through the Office 365 Management Activity API.         |
 
-## Next steps
-
-- [Find out how to get AIR and see required permissions](automated-investigation-response-office.md#how-to-get-air)
-- [Learn more about alerts](../../compliance/alert-policies.md)
-- [Manually find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)
-- [Learn about AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)
