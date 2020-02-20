@@ -39,7 +39,7 @@ When you purchase a subscription, you can use a promotional code to reduce the p
     
 4. Continue checking out. On the order confirmation page, you'll see your discount code included with the amount. 
     
-At any time after you complete your purchase, you can see the discount created by your promo code on your bill. To learn more, see [View your bill](../subscriptions-and-billing/view-your-bill-or-invoice.md).
+At any time after you complete your purchase, you can see the discount created by your promo code on your bill. To learn more, see [View your](billing-and-payments/view-your-bill-or-invoice.md).
   
 ## Promo code terms
 
@@ -67,8 +67,8 @@ If you receive an error message after you enter your promo code, there may be a 
   
 ## Related articles
 
-[Buy a subscription from your free trial](../subscriptions-and-billing/buy-a-subscription-from-your-free-trial.md)
+[Buy a subscription from your free trial](buy-a-subscription-from-your-free-trial.md)
   
-[Buy another subscription](../subscriptions-and-billing/buy-another-subscription.md)
+[Buy another subscription](buy-another-subscription.md)
   
-[Buy or edit an add-on](../subscriptions-and-billing/buy-or-edit-an-add-on.md)
+[Buy or edit an add-on](buy-or-edit-an-add-on.md)
