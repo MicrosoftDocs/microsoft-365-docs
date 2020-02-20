@@ -72,7 +72,7 @@ A deleted [user](../admin/add-users/add-users.md) is a work or school account th
   
 ## Does deleting a user free up their Office 365 license?
 
-Yes, deleting the user frees up the Office 365 license assigned to that user. You can then assign that license to another user. [Read full article](../subscriptions-and-billing/remove-licenses-from-subscription.md).
+Yes, deleting the user frees up the Office 365 license assigned to that user. You can then assign that license to another user. [Read full article](../commerce/licenses/remove-licenses-from-subscription.md).
   
 ## I had a deleted user listed in Deleted users, and then it disappeared. What happened?
 
