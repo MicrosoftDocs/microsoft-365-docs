@@ -37,7 +37,7 @@ If you have more than one subscription, you can assign licenses to different peo
   
 ## Find out who can assign licenses
 
-Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../add-users/about-admin-roles.md).
+Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   
 |**Admin role**|**Assign a license**|**Remove a license**|**Purchase more licenses**|**Delete an account**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -76,7 +76,7 @@ If your subscription includes any of the following products, each person can ins
 
 You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
   
-- [Create a shared mailbox](../email/create-a-shared-mailbox.md)
+- [Create a shared mailbox](../../admin/email/create-a-shared-mailbox.md)
     
 - [Shared Mailboxes in Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=847433) for all other Office 365 plans. 
     
@@ -86,9 +86,9 @@ You don't need to assign licenses to resource mailboxes, room mailboxes, and sha
     
 ## Articles about managing licenses
 
-- [Assign licenses to users](../manage/assign-licenses-to-users.md)
+- [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md)
     
-- [Remove licenses from users](../manage/remove-licenses-from-users.md)
+- [Remove licenses from users](../../admin/manage/remove-licenses-from-users.md)
     
 - [Buy licenses for your subscription](buy-licenses.md)
     
@@ -98,6 +98,6 @@ You don't need to assign licenses to resource mailboxes, room mailboxes, and sha
     
 - [Remove licenses from your subscription](remove-licenses-from-subscription.md)
     
-- [Resolve license conflicts](../manage/resolve-license-conflicts.md)
+- [Resolve license conflicts](../../admin/manage/resolve-license-conflicts.md)
     
 - [Manage Yammer user licenses](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365)

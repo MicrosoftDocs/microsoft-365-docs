@@ -42,7 +42,7 @@ description: "Learn how to add more licenses to your Office 365 for business sub
 
 3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit change**. For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
-After you purchase new licenses, be sure to [assign the licenses to users](../manage/assign-licenses-to-users.md).
+After you purchase new licenses, be sure to [assign the licenses to users](../../admin/manage/assign-licenses-to-users.md).
 
 ::: moniker-end
 
@@ -83,10 +83,10 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 |Reason  |Description  |Solution  |
 |---------|---------|---------|
 |A credit check is pending. |If a credit check is pending, you'll see a "Pending credit check" message, and you won't be able to buy licenses until the credit check is completed.  | Check back later to see if the credit check has completed. Credit checks typically take up to two working days to complete.<br>After the credit check is complete, you should see the **Add/Remove licenses** link in the **Users** section. If so, go to [Buy licenses for your Office 365 for business subscription](#buy-licenses-for-your-office-365-for-business-subscription). |
-|You activated the subscription using a product key.| If the subscription was purchased and activated using a 25-character product key product key, you'll see the text "Prepaid".  |See [Add licenses to a subscription paid for using a product key](../misc/add-licenses-using-product-key.md). |
-|You bought your subscription through a partner. | If the subscription was purchased via a partner, you'll see the Volume Licensing Service Center (VLSC) link. | See [Add licenses to a subscription purchased through the Volume Licensing Service Center](../misc/add-licenses-bought-through-vlsc.md). |
+|You activated the subscription using a product key.| If the subscription was purchased and activated using a 25-character product key product key, you'll see the text "Prepaid".  |See [Add licenses to a subscription paid for using a product key](add-licenses-using-product-key.md). |
+|You bought your subscription through a partner. | If the subscription was purchased via a partner, you'll see the Volume Licensing Service Center (VLSC) link. | See [Add licenses to a subscription purchased through the Volume Licensing Service Center](add-licenses-bought-through-vlsc.md). |
 |You bought your subscription through a reseller.|| If the subscription was purchased via a Cloud Solution Provider (CSP) partner, you must contact your CSP partner to buy more licenses.        |
-|You have a trial subscription. |A trial version of Office 365 will display the text "Trial". | You must first buy your trial subscription, then you can add more licenses. See [Buy a subscription to Office 365 for business from your free trial](buy-a-subscription-from-your-free-trial.md).|
+|You have a trial subscription. |A trial version of Office 365 will display the text "Trial". | You must first buy your trial subscription, then you can add more licenses. See [Buy a subscription to Office 365 for business from your free trial](../buy-a-subscription-from-your-free-trial.md).|
 
 
   
@@ -95,7 +95,7 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 ### Buying licenses
 
 - You need to be either a Global admin or a Billing admin to buy licenses. For more information, see [About admin roles](../add-users/about-admin-roles.md).
-- To buy a license and add a new user to your subscription at the same time, see [Add users individually or in bulk to Office 365 - Admin Help](../add-users/add-users.md).
+- To buy a license and add a new user to your subscription at the same time, see [Add users individually or in bulk to Office 365 - Admin Help](../../admin/add-users/add-users.md).
 
 ### License availability
 
@@ -116,11 +116,11 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 
 [Understand subscriptions and licenses](subscriptions-and-licenses.md)
 
-[Assign licenses to users](../manage/assign-licenses-to-users.md)
+[Assign licenses to users](../../admin/manage/assign-licenses-to-users.md)
 
-[Buy another subscription](buy-another-subscription.md)
+[Buy another subscription](../buy-another-subscription.md)
 
-[Buy or edit an add-on](buy-or-edit-an-add-on.md)
+[Buy or edit an add-on](../buy-or-edit-an-add-on.md)
 
 [Manage Yammer user licenses](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365)
   
