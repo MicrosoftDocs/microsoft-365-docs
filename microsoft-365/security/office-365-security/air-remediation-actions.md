@@ -19,6 +19,8 @@ description: "Learn about remediation actions in automated investigation and res
 
 # Remediation actions in Office 365 Advanced Threat Protection automated investigation and response capabilities
 
+## Remediation actions
+
 Automated investigation and response capabilities in Office 365 Advanced Threat Protection include certain remediation actions. When an automated investigation is running or has completed, you will typically see one or more remediation actions that require approval to proceed. 
 
 |Action | Description |
@@ -28,6 +30,21 @@ Automated investigation and response capabilities in Office 365 Advanced Threat 
 |Soft delete email clusters  |Soft delete malicious email messages matching a query from all users' mailboxes|
 |Turn off external mail forwarding |Removes forwarding rule from a specific end user's mailbox|
 
-## Next steps
+## Approve (or reject) pending actions
 
-- [View the results of automated investigations](air-view-investigation-results.md)
+![AIR investigations action page](../../media/air-investigationactionspage.png)
+
+While viewing the [details of an investigation](air-view-investigation-results.md), you can approve or reject any pending remediation actions. We recommend doing this as soon as possible so that your automated investigations complete.
+
+> [!IMPORTANT]
+> Appropriate permissions are required to approve or reject remediation actions. See [Required permissions to use AIR capabilities](automated-investigation-response-office.md#required-permissions-to-use-air-capabilities).
+
+1. Select the **Actions** tab.
+
+2. Select an item in the list. (This activates the Approve and Reject buttons.)
+
+3. Review available information for the item(s) you selected, and then either approve or reject the action(s). 
+
+ - **Approve** allows remediation to begin.
+ - **Reject** takes no further action
+ 
