@@ -17,17 +17,17 @@ ms.collection: M365-security-compliance
 description: "Learn about remediation actions in automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
 ---
 
-# Remediation actions in automated investigation and response capabilities in Office 365 Advanced Threat Protection
+# Remediation actions in Office 365 Advanced Threat Protection automated investigation and response capabilities
 
+Automated investigation and response capabilities in Office 365 Advanced Threat Protection include certain remediation actions. When an automated investigation is running or has completed, you will typically see one or more remediation actions that require approval to proceed. 
 
-Automated investigation and response capabilities in Office 365 Advanced Threat Protection include certain remediation actions. Some kinds of remediation actions are taken on devices, also referred to as endpoints. Other remediation actions are taken on email content.
-
-The following remediation actions are currently available as part of automated investigation and response in Office 365: 
-- Soft delete email messages or clusters
-- Block URL (time-of-click)
-- Turn off external mail forwarding    
+|Action | Description |
+|-----|-----|
+|Block URL (time-of-click) |Protect against emails and documents that contain malicious URLs. This enables the blocking of malicious links and any related webpages via [Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links) when the user clicks a link in an existing Office file or in an older email message. |
+|Soft delete email  |Soft delete specific email messages from a user's mailbox|
+|Soft delete email clusters  |Soft delete malicious email messages matching a query from all users' mailboxes|
+|Turn off external mail forwarding |Removes forwarding rule from a specific end user's mailbox|
 
 ## Next steps
 
-- [Approve or reject actions related to automated investigation and response](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
-- [Learn more about the Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
+- [View the results of automated investigations](air-view-investigation-results.md)

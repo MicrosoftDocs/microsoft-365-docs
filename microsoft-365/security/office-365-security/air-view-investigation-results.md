@@ -36,7 +36,6 @@ You can:
 
 The investigation status indicates the progress of the analysis and actions. As the investigation runs, status changes to indicate whether threats were found, and whether actions have been approved. 
 
-
 |Status  |What it means  |
 |---------|---------|
 |Starting | The investigation is queued to begin soon |
@@ -182,7 +181,6 @@ You can:
 |URL reputation investigation |On-demand check on URL reputation from the [Microsoft Intelligent Security Graph](https://www.microsoft.com/security/operations/intelligence) and external threat intelligence sources |
 |User activity investigation |Analyze user activity anomalies in [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) |
 |User-reported emails indicators extraction |Extract indicators from the header, body, and content of [user-reported email](enable-the-report-message-add-in.md) for investigation |
-
 
 ### Recommended actions
 

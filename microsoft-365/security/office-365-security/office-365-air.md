@@ -21,7 +21,7 @@ description: "Get started using automated investigation and response capabilitie
 
 ## Overview
 
-Depending on your subscription, [Office 365 Advanced Threat Protection](office-365-atp.md) can include automated investigation and response (AIR) capabilities that can save your security operations team time and effort in dealing with alerts and threats.
+[Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2 includes powerful automated investigation and response (AIR) capabilities that can save your security operations team time and effort in dealing with alerts and threats.
 
 - To get started using automated investigation and response capabilities in Office 365, use this article. 
 - To get an overview of how it works, see [Automated investigation and response in Office 365](automated-investigation-response-office.md).

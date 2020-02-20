@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# Remediation actions in Microsoft Threat Protection
+# Remediation actions in automated investigation and response capabilities in Microsoft Threat Protection
 
 **Applies to:**
 - Microsoft Threat Protection
