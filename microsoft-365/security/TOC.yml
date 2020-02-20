@@ -67,7 +67,9 @@
               items: 
                 - name: AIR overview
                   href: mtp/mtp-autoir.md
-                - name: Go to the Action center
+                - name: View remediation actions
+                  href: mtp/mtp-remediation-actions.md
+                - name: Visit the Action center
                   href: mtp/mtp-action-center.md
                 - name: View AIR results
                   href: mtp/mtp-autoir-results.md
