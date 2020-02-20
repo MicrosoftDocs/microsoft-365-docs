@@ -24,7 +24,7 @@ description: "Learn how to make your organization more secure against password a
  
 As the admin of an Office 365 organization, you're responsible for setting password policy for users in your organization. Setting password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
   
-To determine how often Office 365 passwords expire in your organization, see [Set password expiration policy for Office 365](../manage/set-password-expiration-policy.md).
+To determine how often Office 365 passwords expire in your organization, see [Set password expiration policy for Office 365](../admin/manage/set-password-expiration-policy.md).
   
 ## Understanding password recommendations
 
