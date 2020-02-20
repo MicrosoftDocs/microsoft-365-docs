@@ -153,5 +153,6 @@ Permissions are granted through certain roles, such as those that are described 
 ## Next steps
 
 - [Get started using AIR in Office 365](office-365-air.md)
+
 - [Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
