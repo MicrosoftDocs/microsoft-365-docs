@@ -38,6 +38,8 @@ At a high level, the AIR flow works like this:
 |3     |During and after an automated investigation, [details and results](air-view-investigation-results.md) are available to view. Results include [recommended actions](air-remediation-actions.md) that can be taken to respond and remediate any threats that were found. In addition, a [playbook log](air-view-investigation-results.md#playbook-log) is available that tracks all investigation activity.<br/><br/>If your organization is using a custom reporting solution or a third-party solution, you can [use the Office 365 Management Activity API](air-custom-reporting.md) to view information about automated investigations and threats.         |
 |4     |Your security operations team reviews the [investigation results and recommendations](air-view-investigation-results.md), and [approves remediation actions](air-remediation-actions.md#approve-or-reject-pending-actions). In Office 365, no actions are taken automatically. Remediation actions are taken only upon approval by your organization's security team.         |
 
+To learn more, see [How AIR works](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office).
+
 ## Next steps
 
 - [Learn more about AIR](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)
