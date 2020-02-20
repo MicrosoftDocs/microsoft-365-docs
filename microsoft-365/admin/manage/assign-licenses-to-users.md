@@ -24,8 +24,6 @@ search.appverid:
 - GEA150
 ms.assetid: 997596b5-4173-4627-b915-36abac6786dc
 description: "Learn how to assign licenses to users, or move users to a new subscription."
-search.appverid:
-- MET150
 ---
 
 # Assign licenses to users
