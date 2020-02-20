@@ -29,26 +29,25 @@ description: "Understand the reasons why sometimes switching plans has to be don
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> This article applies to the old admin center. To view the article about the admin center (preview), see [Why can't I upgrade plans?](why-cant-i-change-plans.md). The preview is available to all Microsoft 365 admins, you can opt in by selecting **Try the preview** toggle located at the top of the Home page. For more information, see [About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md).
+> This article applies to the old admin center. To view the article about the admin center (preview), see [Why can't I upgrade plans?](why-cant-i-change-plans.md). The preview is available to all Microsoft 365 admins, you can opt in by selecting **Try the preview** toggle located at the top of the Home page. For more information, see [About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 If you don't see the **Switch plans** button, your plan can't be switched automatically. In some cases, you might be able to resolve the issue so that you can use the **Switch plans** button, or you might be able to [switch plans manually](switch-plans-manually.md), instead. Position your mouse over the info icon to view a message that explains why the **Switch plans** button is not available. Use the information in this article to resolve the issue.
   
 ::: moniker range="o365-worldwide"
 
- **Need something else?** [Buy another subscription](../subscriptions-and-billing/buy-another-subscription.md) | [Cancel your subscription](../subscriptions-and-billing/cancel-your-subscription.md) | [Subscriptions and billing](../subscriptions-and-billing/subscriptions-and-billing.md) | [Call support](../contact-support-for-business-products.md)
-
+ **Need something else?** [Buy another subscription](../buy-another-subscription.md) | [Cancel your subscription](cancel-your-subscription.md) | [Subscriptions and billing](../subscriptions-and-billing.md) | [Call support](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Need something else?** [Buy another subscription](../subscriptions-and-billing/buy-another-subscription.md) | [Cancel your subscription](../subscriptions-and-billing/cancel-your-subscription.md) | [Call support](../contact-support-for-business-products.md)
+ **Need something else?** [Buy another subscription](../buy-another-subscription.md) | [Cancel your subscription](cancel-your-subscription.md) | [Subscriptions and billing](../subscriptions-and-billing.md) | [Call support](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **Need something else?** [Buy or try subscriptions for Office 365 operated by 21Vianet](../services-in-china/buy-or-try-subscriptions.md) | [Cancel your subscription](../subscriptions-and-billing/cancel-your-subscription.md) | [Call support](../contact-support-for-business-products.md)
+ **Need something else?** [Buy or try subscriptions for Office 365 operated by 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md) | [Cancel your subscription](cancel-your-subscription.md) | [Call support](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
@@ -58,19 +57,19 @@ If you don't see the **Switch plans** button, your plan can't be switched automa
 
 ::: moniker range="o365-worldwide"
 
-To use the **Switch plans** button to switch plans automatically, all of your users need to be assigned valid licenses. If you have assigned more licenses than you have purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../subscriptions-and-billing/resolve-license-conflicts.md). After you have resolved any licensing conflicts, you should see the **Switch plans** button. If not, you can [switch plans manually](switch-plans-manually.md), or [call support](../contact-support-for-business-products.md).
+To use the **Switch plans** button to switch plans automatically, all of your users need to be assigned valid licenses. If you have assigned more licenses than you have purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../../admin/manage/resolve-license-conflicts.md). After you have resolved any licensing conflicts, you should see the **Switch plans** button. If not, you can [switch plans manually](switch-plans-manually.md), or [call support](../../admin/contact-support-for-business-products.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-To use the **Switch plans** button to switch plans automatically, all of your users need to be assigned valid licenses. If you have assigned more licenses than you have purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../subscriptions-and-billing/resolve-license-conflicts.md). After you have resolved any licensing conflicts, you should see the **Switch plans** button. If not, you can [switch plans manually](switch-plans-manually.md), or [call support](../contact-support-for-business-products.md).
+To use the **Switch plans** button to switch plans automatically, all of your users need to be assigned valid licenses. If you have assigned more licenses than you have purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../../admin/manage/resolve-license-conflicts.md). After you have resolved any licensing conflicts, you should see the **Switch plans** button. If not, you can [switch plans manually](switch-plans-manually.md), or [call support](../../admin/contact-support-for-business-products.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-To use the **Switch plans** button to switch plans automatically, all of your users need to be assigned valid licenses. If you have assigned more licenses than you have purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../subscriptions-and-billing/resolve-license-conflicts.md). After you have resolved any licensing conflicts, you should see the **Switch plans** button. If not, you can [switch plans manually](switch-plans-manually.md), or [call support](../contact-support-for-business-products.md).
+To use the **Switch plans** button to switch plans automatically, all of your users need to be assigned valid licenses. If you have assigned more licenses than you have purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../../admin/manage/resolve-license-conflicts.md). After you have resolved any licensing conflicts, you should see the **Switch plans** button. If not, you can [switch plans manually](switch-plans-manually.md), or [call support](../../admin/contact-support-for-business-products.md).
 
 ::: moniker-end
 
@@ -103,11 +102,11 @@ Wait until the credit check has been completed before switching plans. Credit ch
   
 ### Currently, this subscription is not eligible to switch plans.
 
-You can [switch plans manually](switch-plans-manually.md) or [call support](../contact-support-for-business-products.md).
+You can [switch plans manually](switch-plans-manually.md) or [call support](../../admin/contact-support-for-business-products.md).
   
 ### I see a different message than what's listed here.
 
-You can [switch plans manually](switch-plans-manually.md) or [call support](../contact-support-for-business-products.md).
+You can [switch plans manually](switch-plans-manually.md) or [call support](../../admin/contact-support-for-business-products.md).
   
 ## Additional reasons the Switch plans button is unavailable
 
@@ -115,15 +114,15 @@ You can [switch plans manually](switch-plans-manually.md) or [call support](../c
 
 If you've paid for your subscription in advance, you might be able to [switch plans manually](switch-plans-manually.md). However, you won't receive a credit for unused time remaining on your current subscription if you switch plans before the current plan expires.
   
-You can also [call support](../contact-support-for-business-products.md) for help.
+You can also [call support](../../admin/contact-support-for-business-products.md) for help.
   
 ### You have a government or non-profit plan
 
-If you have a government or non-profit plan, you can [switch plans manually](switch-plans-manually.md) or [call support](../contact-support-for-business-products.md) for help.
+If you have a government or non-profit plan, you can [switch plans manually](switch-plans-manually.md) or [call support](../../admin/contact-support-for-business-products.md) for help.
   
 ### 3,000 or more licenses have been purchased and assigned for the subscription
 
-The **Switch plans** button is unavailable for subscriptions that have 3,000 or more licenses assigned to users. However, you might be able to [switch plans manually](switch-plans-manually.md). You can also [call support](../contact-support-for-business-products.md) for help.
+The **Switch plans** button is unavailable for subscriptions that have 3,000 or more licenses assigned to users. However, you might be able to [switch plans manually](switch-plans-manually.md). You can also [call support](../../admin/contact-support-for-business-products.md) for help.
   
 ### The subscription that you want to switch from has a temporary issue
 
@@ -133,11 +132,11 @@ The **Switch plans** button can become temporarily unavailable because the servi
 
 When you switch plans, the plans that are available for you to switch to are displayed based on the services in your current plan. You can only switch to a plan that has the same data-related services, such as Exchange Online or SharePoint Online, or to a higher version of them. This ensures that users don't lose data related to those services during the switch.
   
-If your plan isn't eligible to switch plans automatically, you might be able to [switch plans manually](switch-plans-manually.md), instead. You can also [call support](../contact-support-for-business-products.md) for help.
+If your plan isn't eligible to switch plans automatically, you might be able to [switch plans manually](switch-plans-manually.md), instead. You can also [call support](../../admin/contact-support-for-business-products.md) for help.
   
 > [!NOTE]
 > Manually switching from an Office 365 Small Business, Office 365 Small Business Premium, or Office 365 Midsize Business plan is not supported.
   
 ## Call support to help you switch plans
 
-[Call support](../contact-support-for-business-products.md)
+[Call support](../../admin/contact-support-for-business-products.md)
