@@ -123,7 +123,7 @@ Complete the following steps to create a new policy:
     - Sensitivity labels: Select **Choose sensitivity labels** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
 7. Select **Next** to continue.
 8. On the **Alert indicators** page, you'll see the indicators that you've defined on the **Insider risk settings** > **Indicators** page. If you selected the *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list.
-9. On the **Select monitoring window** page, see the [monitoring window conditions](insider-risk-management-policies.md#monitoring-windows) that you defined on the **Insider risk settings** > **Policy timeframes** page.
+9. On the **Select monitoring window** page, you'll see the [monitoring window conditions](insider-risk-management-policies.md#policy-timeframes) for the policy that you've configured in insider risk settings. If you've selected the *Departing employee data theft* policy template, you can select the *Check for activity post termination* checkbox to detect activity after the termination date imported from the Microsoft 365 HR Connector.
 10. Select **Next** to continue.
 11. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
@@ -147,7 +147,7 @@ Complete the following steps to manage an existing policy:
     - Sensitivity labels: Select **Choose sensitivity labels** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
 8. Select **Next** to continue.
 9. On the **Alert indicators** page, you'll see the indicators that you've defined on the **Insider risk settings** > **Indicators** page. If you selected the *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list.
-10. On the **Select monitoring window** page, you'll define the [monitoring window conditions](insider-risk-management-policies.md#monitoring-windows) for the policy. Configure the monitoring windows as appropriate.
+10. On the **Select monitoring window** page, you'll see the [monitoring window conditions](insider-risk-management-policies.md#policy-timeframes) for the policy that you've configured in insider risk settings. If you've selected the *Departing employee data theft* policy template, you can select the *Check for activity post termination* checkbox to detect activity after the termination date imported from the Microsoft 365 HR Connector.
 11. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to update and activate the changes in the policy.
 
 ## Delete a policy
