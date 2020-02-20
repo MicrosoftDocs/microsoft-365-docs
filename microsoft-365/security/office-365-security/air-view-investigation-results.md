@@ -244,3 +244,5 @@ You can:
 ## Next steps
 
 - [Review and approve pending actions](air-remediation-actions.md)
+
+- [Learn about automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
