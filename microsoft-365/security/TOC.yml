@@ -374,7 +374,7 @@
                   href: ./office-365-security/office-365-air.md
                 - name: View details and results of an investigation
                   href: ./office-365-security/air-view-investigation-results.md
-                - name: View and approve remediation mtp/mtp-autoir-actions
+                - name: View and approve remediation actions
                   href: ./office-365-security/air-remediation-actions.md
             - name: Detect and address compromised user accounts quickly
               href: ./office-365-security/address-compromised-users-quickly.md
