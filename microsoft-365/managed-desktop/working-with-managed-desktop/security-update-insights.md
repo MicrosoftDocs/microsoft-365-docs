@@ -1,5 +1,5 @@
 ---
-title: Security update insights
+title: Windows security update insights
 description:  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -8,10 +8,10 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
 
-# Security update insights
+# Windows security update insights
 This view provides an overview of the status of security updates for your Microsoft Managed Desktop devices. 
 
-To view usage data, select the <strong>Windows security updates insights</strong> tab.
+To view usage data, select the <strong>Windows security updates</strong> tab.
 
 ![Windows security updates pane: bar graphs of device status and update version in left column, update deployment progress over time in center column, and percentage of active devices by deployment group, as well as the number of days taken to reach the 95% deployment target in right column.](../../media/update-insights.jpg)
 
