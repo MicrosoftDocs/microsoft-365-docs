@@ -13,7 +13,7 @@ This view provides an overview of the status of security updates for your Micros
 
 To view usage data, select the <strong>Windows security updates insights</strong> tab.
 
-![Windows security updates pane: bar graphs of device status and update version in left column, update deployment progress over time in center column, and percentage of active devices by deployment group, as well as the number of days taken to reach the 95% deployment target in right column.](../../media/update-insights.png)
+![Windows security updates pane: bar graphs of device status and update version in left column, update deployment progress over time in center column, and percentage of active devices by deployment group, as well as the number of days taken to reach the 95% deployment target in right column.](../../media/update-insights.jpg)
 
 ## Device status
 
@@ -58,4 +58,4 @@ The <strong>Days to reach target</strong> area displays how long it took for 95%
 The bottom of the dashboard is a table showing detailed information for your devices, including the [Device status](#device-status) and the [Update version status](#update-version-status). You can search this list or filter it by any listed value.
 
 
-![Device details table showing columns for device name, assigned user, device status, update version, operating system version, and the date the device last synced.](../../media/update-insights.png)
+![Device details table showing columns for device name, assigned user, device status, update version, operating system version, and the date the device last synced.](../../media/security-update-insights-device-table-sterile.png)
