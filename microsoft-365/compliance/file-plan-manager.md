@@ -24,7 +24,7 @@ File plan manager provides advanced management capabilities for retention labels
 
 To access file plan manager in the security and compliance center, go to **Records management** > **File plan**.
 
-![File plan page](media/file-plan-page.png)
+![File plan page](../media/file-plan-page.png)
 
 ## Accessing file plan manager
 
@@ -84,7 +84,7 @@ On the file plan **Labels** tab, the following additional information and capabi
     - Auto-delete
     - Review required (aka Disposition review)
 
-![Label settings in file plan](media/file-plan-label-columns.png)
+![Label settings in file plan](../media/file-plan-label-columns.png)
 
 ### Retention label file plan descriptors columns
 
@@ -94,11 +94,11 @@ To get you started, file plan manager provides some out-of-box values for: Funct
 
 Here's a view of the file plan descriptors step when creating or editing a retention label.
 
-![File plan descriptors](media/file-plan-descriptors.png)
+![File plan descriptors](../media/file-plan-descriptors.png)
 
 Here's a view of the file plan descriptors columns on the **Labels** tab of file plan manager.
 
-![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
+![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## Export all existing retention labels to analyze and/or perform offline reviews
 
@@ -106,11 +106,11 @@ From file plan manager, you can export the details of all retention labels into 
 
 To export all retention labels: On the **File plan** page, **File plan actions** \> **Export labels**.
 
-![Option to export file plan](media/file-plan-export-labels-option.png)
+![Option to export file plan](../media/file-plan-export-labels-option.png)
 
 A *.csv file containing all existing retention labels will open.
 
-![CSV file showing all retention labels](media/file-plan-csv-file.png)
+![CSV file showing all retention labels](../media/file-plan-csv-file.png)
 
 ## Import retention labels into your file plan
 
@@ -120,13 +120,13 @@ To import new retention labels and modify existing retention labels:
 
 1. On the **File plan** page, go to **File plan actions** > **Import labels**.
 
-   ![Option to import file plan](media/file-plan-import-labels-option.png)
+   ![Option to import file plan](../media/file-plan-import-labels-option.png)
 
-   ![Option to download a blank file plan template](media/file-plan-blank-template-option.png)
+   ![Option to download a blank file plan template](../media/file-plan-blank-template-option.png)
 
 2. Download a blank template to import new retention labels. Alternatively, you can start with the .csv file that is exported when you export the existing retention labels in your organization.
 
-   ![Blank file plan template open in Excel](media/file-plan-blank-template.png)
+   ![Blank file plan template open in Excel](../media/file-plan-blank-template.png)
 
 3. Fill-out the template. The following describes the properties and valid values for each property in the file plan template.<br/>
 
@@ -154,16 +154,16 @@ To import new retention labels and modify existing retention labels:
 
    Here's an example the template containing the information about retention labels.
 
-   ![File plan template with information filled in](media/file-plan-filled-out-template.png)
+   ![File plan template with information filled in](../media/file-plan-filled-out-template.png)
 
 4. Under step 3 on the import file plan wizard page, click **Browse for files** to upload the filled-out template. 
 
    File plan manager will validate the entries and display the import statistics.
 
-   ![File plan import statistics](media/file-plan-import-statistics.png)
+   ![File plan import statistics](../media/file-plan-import-statistics.png)
 
    In the event there is a validation error, file plan import will continue to validate every entry in the import file and display all errors referencing line/row numbers in the import file, copy the displayed error results so that you can easily return to the import file and correct the errors.
 
 5. When the import is complete, return to file plan manager to associate the new retention labels to new or existing retention label policies.
 
-   ![Option to publish labels](media/file-plan-publish-labels-option.png)
+   ![Option to publish labels](../media/file-plan-publish-labels-option.png)

@@ -13,7 +13,7 @@ This view provides an overview of the status of security updates for your Micros
 
 To view usage data, select the <strong>Windows security updates insights</strong> tab.
 
-![Security updates pane](images/update-insights.jpg)
+![Windows security updates pane: bar graphs of device status and update version in left column, update deployment progress over time in center column, and percentage of active devices by deployment group, as well as the number of days taken to reach the 95% deployment target in right column.](../../media/update-insights.png)
 
 ## Device status
 
@@ -25,7 +25,6 @@ We categorize device activity in the context of Windows Update with these terms:
 - <strong>Synced:</strong> Devices that have checked in with Intune within the last 28 days
 - <strong>Out of sync</strong> – Devices that have <i>not</i> checked in with Intune in the last 28 days
 
-{I'm not sure a picture would accomplish much here, TBH}
 
 
 
@@ -53,3 +52,10 @@ You can view this data for previous update cycles by using the dropdown menu in 
 The <strong>Updated active devices by deployment group</strong> area offers a different view by showing the progress of the update installation for each of the Microsoft Managed Desktop Deployment groups.
 
 The <strong>Days to reach target</strong> area displays how long it took for 95% of the total number of devices to be updated with the current security update. {maybe we should clarify a little here? Like, say it's 3 days after the update is released--does it show how long it took to get to 95% for the previous release or what does it do after the release and before the 95% occurs?}
+
+## Device details area
+
+The bottom of the dashboard is a table showing detailed information for your devices, including the [Device status](#device-status) and the [Update version status](#update-version-status). You can search this list or filter it by any listed value.
+
+
+![Device details table showing columns for device name, assigned user, device status, update version, operating system version, and the date the device last synced.](../../media/update-insights.png)

@@ -16,13 +16,13 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: "Manage custodians in an Advanced eDiscovery case."
 ---
 # Manage custodians in an Advanced eDiscovery case
 
 The Custodians tab in Advanced eDiscovery contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in Advanced eDiscovery.
 
-![Manage Custodians](media/CustodianDetails.PNG)
+![Manage Custodians](../media/CustodianDetails.PNG)
 
 ## View custodian details
 
@@ -32,7 +32,7 @@ To view the details about a custodian, click the custodian from the list on the 
 
   - **Display Name** - The name displayed in the address book for the custodian. This is usually the combination of the custodian’s first name, middle initial, and last name.
   
-   - **Mail/SMTP** - The primary SMTP address for the custodian, for example, brianj@contoso.onmicrosoft.com. Note that the custodian's user principal name (UPN) is also listed.
+   - **Mail/SMTP** - The primary SMTP address for the custodian, for example, brianj@contoso.onmicrosoft.com. The custodian's user principal name (UPN) is also listed.
 
   - **Title** - The custodian’s job title.
 
@@ -46,7 +46,7 @@ To view the details about a custodian, click the custodian from the list on the 
 
   - **State** - The state or province in the custodian’s address.
 
-  - **Country/Region** - The country/region where the custodian’s is located.
+  - **Country/Region** - The country/region where the custodian is located.
 
   - **Office** - The office location in the custodian’s place of business.
 
@@ -77,7 +77,7 @@ To update the data sources that are associated with a custodian:
   
 3. Select a custodian from the list and click **Edit** on the flyout page.
 
-    ![Edit Data Sources](media/EditCustodianDataSource.PNG)
+    ![Edit Data Sources](../media/EditCustodianDataSource.PNG)
   
 4. Click **Choose data sources** tab to change the settings for the custodian's Exchange mailbox and OneDrive account, click **Choose data sources**.
   
@@ -87,11 +87,11 @@ To update the data sources that are associated with a custodian:
   
 6. Click **Place custodial holds** to enable or disable the hold for the custodian.
 
-## Resolve custodian processing errors
+## Re-index custodian data
 
 In most eDiscovery workflows for legal investigations, a subset of a custodian's data is searched after the custodian is added to a legal case. Because of very large file sizes or possible data corruption, some items in the data sources associated with a custodian may be partially indexed. Using the [advanced indexing](indexing-custodian-data.md) capability in the Advanced eDiscovery, most partially indexed items can be automatically remediated by re-indexing these items on demand.
 
-When a custodian is added to a case, the data located in the data sources associated with the custodian is automatically re-indexed (by the advanced indexing process). This means you can leave the data in-place instead of having to download and remediate it and then search it offline). However, during the lifecycle of a legal case new data sources might be associated to a custodian. In this case, you re-index the custodian's data by re-running the advanced indexing process to remediate any partially indexed items and update the index for the custodian's data.
+When a custodian is added to a case, the data located in the data sources associated with the custodian is automatically re-indexed (by the advanced indexing process). This means you can leave the data in-place instead of having to download and remediate it and then search it offline). However, during the lifecycle of a legal case new data sources might be associated with a custodian. In this case, you can re-index the custodian's data by re-running the advanced indexing process to remediate any partially indexed items and update the index for the custodian's data.
 
 To trigger the re-indexing process to address partially indexed items:
 
@@ -131,7 +131,7 @@ To release a custodian:
 
 5. Click **Yes** to confirm that you want to release the custodian. 
 
-    Note that status for this user on the **Custodians** tab is set to **Released** and the **Hold status** on the flyout page is changed to **False**. 
+    The status for this user on the **Custodians** tab is set to **Released** and the **Hold status** on the flyout page is changed to **False**. 
 
 > [!NOTE]
 > A custodian might be simultaneously involved in several legal cases. When a custodian is released from a case, the holds and notifications across other matters won't be impacted.
@@ -140,4 +140,4 @@ To release a custodian:
 
 You can use the bulk editor to edit multiple custodians as the same time. To do this, just select two or more custodians on the **Custodians** tab to display the bulk editor and then click one of tasks.
 
-![Flyout page to edit settings of multiple custodians](media/AeDBulkEditCustodians.png)
+![Flyout page to edit settings of multiple custodians](../media/AeDBulkEditCustodians.png)

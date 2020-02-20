@@ -33,7 +33,7 @@ To access and conduct a data investigation, you need be a member of the Data inv
 
 The following sections describe each step in the built-in workflow in Data Investigations (Preview). The following screenshot shows the **Home** tab of an investigation named *High Risk: Finance Documents Leakage*. 
 
-![Workflow in the Data Investigations tool](media/DataInvestigationsWorkflow.png)
+![Workflow in the Data Investigations tool](../media/DataInvestigationsWorkflow.png)
 
 ## Search for sensitive, malicious, or misplaced data
 

@@ -49,11 +49,11 @@ After you prepare the search results in the Security &amp; Compliance Center for
     
 5. On the **Home** page for the case, click **Advanced eDiscovery**. 
     
-    ![Click Switch to Advanced eDiscovery to open the case in Advanced eDiscovery](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+    ![Click Switch to Advanced eDiscovery to open the case in Advanced eDiscovery](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
     The **Connecting to Advanced eDiscovery** progress bar is displayed. When you're connected to Advanced eDiscovery, a list of containers is displayed on the setup page for the case. 
     
-    ![The case is displayed in Advanced eDiscovery](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+    ![The case is displayed in Advanced eDiscovery](../media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
      These containers represent the search results that you prepared for analysis in Advanced eDiscovery in Step 1. Note that the name of the container has the same name as the Content Search in the case in the Security &amp; Compliance Center. The containers in the list are the ones that you prepared. If a different user prepared search results for Advanced eDiscovery, the corresponding containers won't be included in the list. 
     

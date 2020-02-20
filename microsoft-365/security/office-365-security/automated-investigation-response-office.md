@@ -61,7 +61,7 @@ To view alerts, in the Security & Compliance Center, choose **Alerts** > **View 
 
 If your organization manages your security alerts through an alert management system, service management system, or Security Information and Event Management (SIEM) system, you can send Office 365 alerts to that system via either email notification or via the [Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). The investigation alert notifications via email or API include links to access the alerts in the Security & Compliance Center, enabling the assigned security administrator to navigate quickly to the investigation.
 
-![Alerts that link to investigations](../media/air-alerts-page-details.png) 
+![Alerts that link to investigations](../../media/air-alerts-page-details.png) 
 
 ## Security playbooks
 
@@ -98,7 +98,7 @@ Each high-level step includes a number of substeps that are executed to provide 
 
 The automated investigations page shows your organization's investigations and their current states.
 
-![Main investigation page for AIR](../media/air-maininvestigationpage.png) 
+![Main investigation page for AIR](../../media/air-maininvestigationpage.png) 
   
 You can:
 - Navigate directly to an investigation (select an **Investigation ID**).
@@ -127,7 +127,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 When you open a specific investigation, you see the investigation graph page. This page shows all the different entities: email messages, users (and their activities), and devices that were automatically investigated as part of the alert that was triggered.
 
-![AIR investigation graph page](../media/air-investigationgraphpage.png)
+![AIR investigation graph page](../../media/air-investigationgraphpage.png)
 
 You can:
 - Get a visual overview of the current investigation.
@@ -139,7 +139,7 @@ You can:
 
 On the **Alerts** tab for an investigation, you can see alerts relevant to the investigation. Details include the alert that triggered the investigation and other correlated alerts, such as risky sign-in, DLP policy violations, etc., that are correlated to the investigation. From this page, a security analyst can also view additional details on individual alerts.
 
-![AIR alerts page](../media/air-investigationalertspage.png)
+![AIR alerts page](../../media/air-investigationalertspage.png)
 
 You can:
 - Get a visual overview of the current triggering alert and any associated alerts.
@@ -172,14 +172,14 @@ Email counts are calculated at the time of the investigation and some counts are
 
 As an example, consider the following scenario. The first cluster of three email messages were deemed to be phish. Another cluster of similar messages with the same IP and subject was found and considered malicious, as some of them were identified as phish during initial detection. 
 
-![AIR email investigation page](../media/air-investigationemailpage.png)
+![AIR email investigation page](../../media/air-investigationemailpage.png)
 
 You can:
 - Get a visual overview of the current clustering results and threats found.
 - Click a cluster entity or a threat list to open a fly-out page that shows the full alert details.
 - Further investigate the email cluster by clicking the 'Open in Explorer' link at the top of the 'Email cluster details' tab
 
-![AIR investigation email with flyout details](../media/air-investigationemailpageflyoutdetails.png)
+![AIR investigation email with flyout details](../../media/air-investigationemailpageflyoutdetails.png)
 
 > [!NOTE]
 > In the context of email, you may see a volume anomaly threat surface as part of the investigation. A volume anomaly indicates a spike in similar email messages around the investigation event time compared to earlier timeframes. This spike in email traffic with similar characteristics (e.g. subject and sender domain, body similarity and sender IP) is typical of the start of email campaigns or attacks. However, bulk, spam, and legitimate email campaigns commonly share these characteristics. Volume anomalies represent a potential threat, and accordingly could be less severe compared to malware or phish threats that are identified using anti-virus engines, detonation or malicious reputation.
@@ -190,7 +190,7 @@ On the **Users** tab, you can see all the users identified as part of the invest
 
 For example, in the following image, AIR has identified indicators of compromise and anomalies based on a new inbox rule that was created. Additional details (evidence) of the investigation are available through detailed views within this tab. Indicators of compromise and anomalies may also include anomaly detections from [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security).
 
-![AIR investigation users page](../media/air-investigationuserspage.png)
+![AIR investigation users page](../../media/air-investigationuserspage.png)
 
 You can:
 - Get a visual overview of identified user results and risks found.
@@ -200,7 +200,7 @@ You can:
 
 On the **Machines** tab, you can see all the machines identified as part of the investigation. 
 
-![AIR investigation machine page](../media/air-investigationmachinepage.png)
+![AIR investigation machine page](../../media/air-investigationmachinepage.png)
 
 As part of some playbooks, AIR correlates email threats to devices (e.g. Zapped malware). For example, an investigation passes a malicious file hash across to [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 ) to investigate. This allows for automated investigation of relevant machines for your users, to help ensure that threats are addressed both in the cloud and across your endpoints. 
@@ -215,19 +215,19 @@ On the **Entities** tab, you can see the entities identified and analyzed as par
 
 Here, you can see the investigated entities and details of the types of entities, such as email messages, clusters, IP addresses, users, and more. You can also see how many entities were analyzed, and the threats that were associated with each. 
 
-![AIR investigation entities page](../media/air-investigationentitiespage.png)
+![AIR investigation entities page](../../media/air-investigationentitiespage.png)
 
 You can:
 - Get a visual overview of the investigation entities and threats found.
 - Select an entity to open a fly-out page that shows the related entity details.
 
-![AIR investigation entities details](../media/air-investigationsentitiespagedetails.png)
+![AIR investigation entities details](../../media/air-investigationsentitiespagedetails.png)
 
 ### Playbook log
 
 On the **Log** tab, you can see all the playbook steps that have occurred during the investigation. The log captures a complete inventory of all analyzers and actions completed by Office 365 auto-investigation capabilities as part of AIR. It provides a clear view of all the steps taken, including the action itself, a description, and the duration of the actual from start to finish. 
 
-![AIR investigation log page](../media/air-investigationlogpage.png)
+![AIR investigation log page](../../media/air-investigationlogpage.png)
 
 You can:
 - Get see a visual overview of the playbook steps taken.
@@ -261,7 +261,7 @@ On the **Actions** tab, you can see all the playbook actions that are recommende
 
 Actions capture the steps Microsoft recommends you take at the end of an investigation. You can take remediation actions here by selecting one or more actions. Clicking **Approve** allows remediation to begin. (Appropriate permissions are needed - the 'Search And Purge' role is required to run actions from Explorer and AIR). For example, a Security Reader can view actions but not approve them. Note: You do not have to approve every action. If you do not agree with the recommended action or your organization does not choose certain types of actions, then you can choose to **Reject** the actions or simply ignore them and take no action. Approving and/or rejecting all actions lets the investigation fully close (status becomes remediated), while leaving some actions incomplete results in the investigation status changing to a partially remediated state.
 
-![AIR investigations action page](../media/air-investigationactionspage.png)
+![AIR investigations action page](../../media/air-investigationactionspage.png)
 
 You can:
 - Get a visual overview of the playbook-recommended actions.
@@ -314,11 +314,11 @@ In addition to automatic investigations that are triggered by an alert, your org
 
 For example, suppose that you are viewing data in Explorer about user-reported messages. You can select an item in the list of results, and then click **Investigate** from the action menu (assuming you have appropriate remediation permissions).
 
-![User-reported messages in Explorer with Investigate button](../media/Explorer-UserReported-Investigate.png)
+![User-reported messages in Explorer with Investigate button](../../media/Explorer-UserReported-Investigate.png)
 
 As another example, suppose you are viewing data about email messages detected as containing malware, and there are several email messages detected as containing malware. You can select the **Email** tab, select one or more email messages, and then, on the **Actions** menu, select **Investigate**. 
 
-![Starting an investigation for malware in Explorer](../media/Explorer-Malware-Email-ActionsInvestigate.png)
+![Starting an investigation for malware in Explorer](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 Similar to playbooks triggered by an alert, automatic investigations that are triggered from a view in Explorer include a root investigation, steps to identify and correlate threats, and recommended actions to mitigate those threats.
 

@@ -71,7 +71,7 @@ Because Contoso chose to automatically update devices from the cloud, there was 
 
 Here is Contoso’s Office 365 ProPlus installation and ongoing updates deployment architecture.
 
-![Contoso’s Office 365 ProPlus deployment infrastructure](./media/contoso-o365pp/contoso-o365pp-fig1.png)
+![Contoso’s Office 365 ProPlus deployment infrastructure](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
 ## Next step
 

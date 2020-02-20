@@ -28,11 +28,11 @@ In Advanced eDiscovery, one or more issues can be defined within a case. Definin
 
 1. In the **Relevance \> Relevance setup** tab \> select **Issues**.
     
-    ![Relevance Setup issues](media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
+    ![Relevance Setup issues](../media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
   
 2. To add an issue, click the ** + ** icon. The **Add issue** dialog is displayed. 
     
-    ![Relevance setup add issue](media/c8e94982-139a-472a-b85d-282f2d742046.png)
+    ![Relevance setup add issue](../media/c8e94982-139a-472a-b85d-282f2d742046.png)
   
     To edit an issue, click the **Edit** icon. 
     

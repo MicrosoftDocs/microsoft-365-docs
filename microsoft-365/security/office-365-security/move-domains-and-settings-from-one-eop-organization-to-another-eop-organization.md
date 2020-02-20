@@ -23,7 +23,7 @@ Changing business requirements can sometimes require splitting one Microsoft Exc
 
 In the following example, Contoso, Ltd. has merged with Contoso Suites. The following image shows the process of moving domains, mail users and groups, and settings from the source EOP organization (contoso.onmicrosoft.com) to the target EOP organization (contososuites.onmicrosoft.com):
 
-![Move EOP domains and settings](../media/EOP-Move-domains-and-settings.jpg)
+![Move EOP domains and settings](../../media/EOP-Move-domains-and-settings.jpg)
 
 The challenge in moving domains from one organization to another is that a verified domain can't exist in two organizations at the same time. The following steps help you work through this.
 

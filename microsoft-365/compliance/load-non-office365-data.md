@@ -49,11 +49,11 @@ Microsoft Azure Storage Tools installed on a computer that has access to the non
 
 2. Click the **Upload files** button to start the Non-Office 365 data import wizard.
 
-![Upload files](media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
+![Upload files](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
 3. The first step in the wizard simply prepares a secure Azure blob for the files to be uploaded.  After the preparation is complete, click the **Next: Upload files** button.
 
-![Prepare for non-Office 365 data import](media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+![Prepare for non-Office 365 data import](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
 4. In the **Upload files** step, specify the **Path to location of files**, this is where the Non-Office 365 data you plan on importing is located.  Setting the correct location ensures the AzCopy command is properly updated.
 
@@ -62,11 +62,11 @@ Microsoft Azure Storage Tools installed on a computer that has access to the non
 
 5. Copy the predefined command by clicking the **Copy to clipboard** link. Start a windows command prompt, paste the command and press enter.  The files will be uploaded to the secure Azure blob storage for the next step.
 
-![Upload files for non-Office 365 data import](media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+![Upload files for non-Office 365 data import](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-![Use AzCopy to import non-Office 365 data](media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+![Use AzCopy to import non-Office 365 data](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
 6. Finally, return back to the Security & Compliance and click the **Next: Process files** button.  This initiates processing, text extraction, and indexing of the uploaded files.  You can track the progress of processing here or in the **Jobs** tab.  Once completed, the new files are available in the evidence set.  After processing is complete, you can dismiss the wizard.
 
-![Non-Office 365 Import process files](media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+![Non-Office 365 Import process files](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 

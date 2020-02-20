@@ -41,7 +41,7 @@ You don’t need to enable dependent services to get started with Microsoft Team
 
 The following diagram illustrates the set of recommended policies for protecting chat, groups and content in Teams. The pencil icon indicates which policies need to be revisited to be sure that Teams and dependent services are included in the assignment of cloud apps.
 
-![A diagram showing how to use Microsoft Teams on various devices.](../images/identity-access-ruleset-teams.png)
+![A diagram showing how to use Microsoft Teams on various devices.](../media/identity-access-ruleset-teams.png)
 
 These are the dependent services to include in the assignment of cloud apps for Teams:
 
@@ -72,7 +72,7 @@ This table lists the policies that need to be revisited and links to each policy
 
 For reference, the following diagram illustrates the services Teams relies on. For more information and additional illustrations, see [Microsoft Teams and related productivity services in Microsoft 365 for IT architects](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects).
 
-![Diagram showing Teams dependencies on SharePoint Online, OneDrive for Business, and Exchange.](../images/identity-access-logical-architecture-teams.png)
+![Diagram showing Teams dependencies on SharePoint Online, OneDrive for Business, and Exchange.](../media/identity-access-logical-architecture-teams.png)
 
 ## Enabling guest and external access for Teams
 

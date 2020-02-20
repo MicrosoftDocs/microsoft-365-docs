@@ -29,7 +29,7 @@ The insider risk **Alert dashboard** allows you to view and take action on alert
     - Average time to resolve medium severity alerts, listed in hours, days, or months.
     - Average time to resolve low severity alerts, listed in hours, days, or months.
 
-![Insider risk management alert dashboard](media/insider-risk-alerts-dashboard.png)
+![Insider risk management alert dashboard](../media/insider-risk-alerts-dashboard.png)
 
 ## Alert status and severity
 

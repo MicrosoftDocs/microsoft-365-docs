@@ -25,7 +25,7 @@ With these dashboards you can find the answers to questions like these:
 
 To access these views from the Microsoft 365 Admin Center, select **View details** in the **Reports** area:
 
-![Admin center with Reports area in the upper right including the device reports card and the "view details" link.](images/insights_overview.png)
+![Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)
 
 
 
@@ -45,9 +45,12 @@ Learn more about [reliability insights](reliability-insights.md).
 This view shows you information about the energy consumption of apps and projected battery life for devices in your environment. To view this information, select the **Battery** tab.
 
 Learn more about [Battery insights](battery-insights.md).
+<<<<<<< HEAD
 
 ## Windows security update insights
 
 This view shows you information about the status of security updates for your Microsoft Managed Desktop devices. To view this information, select the **Windows security udates** tab.
 
 Learn more about [Security update insights](security-update-insights.md).
+=======
+>>>>>>> 1a67d4a33ad0f1324975e63687d33f950e019d47

@@ -49,7 +49,7 @@ To edit (or define) ATP policies, you must be assigned an appropriate role. The 
 
 2. In the left navigation, under **Threat management** \> **Policy** \> **Safe Links**.
 
-3. In the **Policies that apply to specific recipients** section, choose **New** (the New button resembles a plus sign ( **+**)) to create a new policy. (Alternatively, you can edit an existing policy.)<br/>![Choose New to add a Safe Links policy for specific email recipients](../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. In the **Policies that apply to specific recipients** section, choose **New** (the New button resembles a plus sign ( **+**)) to create a new policy. (Alternatively, you can edit an existing policy.)<br/>![Choose New to add a Safe Links policy for specific email recipients](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
 
 4. Specify a name and description for your policy.
 
