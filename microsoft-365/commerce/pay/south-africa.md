@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Payment information for South Africa
 
-[Find another country or region](../pay-for-your-subscription.md).
+[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).
 
 Please pay in ZAR only and reference invoice number(s) on your payment remittance.
 
