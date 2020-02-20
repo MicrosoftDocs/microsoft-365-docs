@@ -32,7 +32,7 @@ Communication compliance policies in Microsoft 365 help you overcome many modern
 
 In some organizations, there may be a separation of duties between IT support and the compliance management group. Microsoft 365 supports the separation between communication compliance configuration and the configuration of policies for scanning communications. For example, the IT group for an organization may be responsible for setting up role permissions and groups to support communication compliance policies configured and managed by the organization's compliance team.
 
-For a quick overview of communication compliance, see the [Communication compliance video](https://youtu.be/z33ji7a7Zho) on the [Microsoft Mechanics channel](https://www.youtube.com/user/OfficeGarageSeries).
+For a quick overview of communication compliance, see the [Detect workplace harassment and respond with Communication Compliance in Microsoft 365](https://youtu.be/z33ji7a7Zho) video on the [Microsoft Mechanics channel](https://www.youtube.com/user/OfficeGarageSeries).
 
 ## Scenarios for communication compliance
 
