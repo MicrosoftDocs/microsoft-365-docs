@@ -74,7 +74,7 @@ Microsoft 365 is a complete, intelligent solution that includes Office 365, Wind
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
     
-For more information, see [Try or buy a Microsoft 365 subscription](try-or-buy-microsoft-365.md).
+For more information, see [Try or buy a Microsoft 365 subscription](../commerce/try-or-buy-microsoft-365.md).
   
 ## I found a bug or I want to request a feature enhancement. How do I let Microsoft know?
 

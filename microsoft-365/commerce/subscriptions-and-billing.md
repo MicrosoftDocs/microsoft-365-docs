@@ -127,7 +127,7 @@ Get admin help with billing in Office 365 for business.
         </a>
     </li>
     <li>
-        <a href="../contact-support-for-business-products.md">
+        <a href="../admin/contact-support-for-business-products.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -177,7 +177,7 @@ Get admin help with billing in Office 365 for business.
                         <p><a href="billing-and-payments/understand-your-invoice2.md">Understand your invoice</a></p>
                         <p><a href="billing-and-payments/pay-for-your-subscription.md">Pay for your subscription</a></p>
                         <p><a href="billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md">Manage credit cards or bank accounts</a></p>
-                        <p><a href="change-payment-method.md">Change your payment method</a></p>
+                        <p><a href="billing-and-payments/change-payment-method.md">Change your payment method</a></p>
                         <p><a href="billing-and-payments/change-your-billing-addresses.md">Change your billing addresses</a></p>
                         <p><a href="billing-and-payments/what-tax-will-i-be-charged.md">What tax will I be charged?</a></p>
                         <p><a href="billing-and-payments/apply-for-tax-exempt-status.md">Apply for tax exempt status</a></p>
@@ -197,7 +197,7 @@ Get admin help with billing in Office 365 for business.
                         <p><a href="../admin/manage/assign-licenses-to-users.md">Assign licenses to users</a></p>
                         <p><a href="../admin/manage/remove-licenses-from-users.md">Unassign licenses from users</a></p>
                         <p><a href="licenses/remove-licenses-from-subscription.md">Remove licenses from your subscription</a></p>
-                        <p><a href="resolve-license-conflicts.md">Resolve license conflicts</a></p>
+                        <p><a href="../admin/manage/resolve-license-conflicts.md">Resolve license conflicts</a></p>
                     </div>
                 </div>
             </div>

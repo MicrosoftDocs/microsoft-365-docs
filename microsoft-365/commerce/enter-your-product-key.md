@@ -46,20 +46,20 @@ If you purchased Office 365 Business Premium from a retail store, this article h
 5. You can get a new domain, use a domain name you already own, or add a domain later. The steps can vary, so follow the prompts, depending on which option you choose.
 
     > [!NOTE]
-    > If you want to make sure that your subscription is automatically extended at the end of its term, you can add a credit card or bank account, and then [turn on Recurring billing](../subscriptions-and-billing/renew-your-subscription.md#turn-recurring-billing-off-or-on) for that subscription.
+    > If you want to make sure that your subscription is automatically extended at the end of its term, you can add a credit card or bank account, and then [turn on Recurring billing](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) for that subscription.
 
 6. When you're finished, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin center</a> to manage your subscription.
 
 ## Extend the expiration date or add a license to an existing subscription
 
-To use a product key to extend the expiration date or add a license to your existing Office 365 Business Premium subscription, you need a new and unused key for the same Office 365 plan. Entering your original Office 365 product key won't work because a key that has already been redeemed can't be used again. See [Add licenses to or extend a subscription paid for using a product key](add-licenses-using-product-key.md).
+To use a product key to extend the expiration date or add a license to your existing Office 365 Business Premium subscription, you need a new and unused key for the same Office 365 plan. Entering your original Office 365 product key won't work because a key that has already been redeemed can't be used again. See [Add licenses to or extend a subscription paid for using a product key](licenses/add-licenses-using-product-key.md).
 
 ## What's next?
 
-If you're new to Office 365 for business, learn how to [set up Office 365](../setup/setup.md).
+If you're new to Office 365 for business, learn how to [set up Office 365](../admin/setup/setup.md).
   
 ## Still having trouble with product keys?
 
 Check out this list of common errors and solutions: [Problems with your Office 365 for business product key?](product-key-errors-and-solutions.md)
   
-Or, [call Microsoft Support](../contact-support-for-business-products.md).
+Or, [call Microsoft Support](../admin/contact-support-for-business-products.md).

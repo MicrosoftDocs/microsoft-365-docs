@@ -242,8 +242,8 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardText">
                         <h3>Subscribe</h3>
-                        <p><a href="subscriptions-and-billing/buy-a-subscription-from-your-free-trial.md">Buy a subscription from your free trial</a></p>
-                        <p><a href="subscriptions-and-billing/cancel-your-subscription.md">Cancel your subscription</a></p>
+                        <p><a href="../commerce/buy-a-subscription-from-your-free-trial.md">Buy a subscription from your free trial</a></p>
+                        <p><a href="../commerce/subscriptions/cancel-your-subscription.md">Cancel your subscription</a></p>
                     </div>
                 </div>
             </div>
