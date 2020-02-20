@@ -82,7 +82,7 @@ Policy timeframes allow you to define past and future review periods that are tr
 
 ### Intelligent detections
 
-Intelligent detection settings help refine how the detection of risky activities are processed for alerts. In certain circumstances, you may need to define files types to ignore or you want to enforce a detection level for files to help define a minimum bar for alerts. When using offensive language policies, you may need to increase or decrease the detection sensitivity to control the amount of reported policy matches. Use these settings to control file type exclusions, file volume limits, and the offensive language detection sensitivity:
+Intelligent detection settings help refine how the detection of risky activities are processed for alerts. In certain circumstances, you may need to define files types to ignore or you want to enforce a detection level for files to help define a minimum bar for alerts. When using offensive language policies, you may need to increase or decrease the detection sensitivity to control the amount of reported policy matches. Use these settings to control file type exclusions, file volume limits, and the offensive language detection sensitivity.
 
 #### Anomaly detections
 

@@ -95,7 +95,7 @@ See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) to
 
 ## Step 4 (required): Configure insider risk settings
 
-Insider risk settings apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings* control located at the top of all insider risk management tabs. These settings control privacy, indicators, monitoring windows, and intelligent detections.
+Insider risk settings apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings*** control located at the top of all insider risk management tabs. These settings control privacy, indicators, monitoring windows, and intelligent detections.
 
 Before configuring a policy, define the following insider risk settings:
 
@@ -106,9 +106,9 @@ Before configuring a policy, define the following insider risk settings:
     >[!IMPORTANT]
     >In order to receive alerts for risky activity defined in your policies, you must select one or more indicators.
 
-4. On the **Policy timeframes** page, select the timeframes to go into effect for a user when they trigger a match for an insider risk policy.
-5. On the **Intelligent detections** page
-6. Select **Save** to enable the settings for your insider risk policies.
+4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-policies.md#policy-timeframes) to go into effect for a user when they trigger a match for an insider risk policy.
+5. On the **Intelligent detections** page, configure the [anomaly and offensive language detections](insider-risk-management-policies.md#intelligent-detections) for insider risk policies.
+6. Select **Save** to enable these settings for your insider risk policies.
 
 ## Step 5 (required): Create an insider risk management policy
 
@@ -131,8 +131,8 @@ Insider risk management policies include assigned users and define which types o
     - **Sensitive info type**: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
     - **Sensitivity labels**: Select **Add sensitivity label** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
 7. Select **Next** to continue.
-8. On the **Choose alert indicators** page, you'll see the indicators that are included in the template that you've chosen for this policy. If you selected the *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list.
-9. On the **Select monitoring window** page, you'll define the [monitoring window conditions](insider-risk-management-policies.md#monitoring-windows) for the policy. Configure the monitoring windows as appropriate.
+8. On the **Alert indicators** page, you'll see the indicators that you've chosen in the settings for the insider risk policy. If you selected the *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list.
+9. On the **Select monitoring window** page, you'll see the [monitoring window conditions](insider-risk-management-policies.md#policy-timeframes) for the policy that you set in the insider risk settings. If you've selected the *Departing employee data theft* policy template, you can select the *Check for activity post termination* checkbox to detect activity after the termination date imported from the Microsoft 365 HR Connector.
 10. Select **Next** to continue.
 11. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
