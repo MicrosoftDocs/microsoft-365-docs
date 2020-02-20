@@ -170,11 +170,11 @@ Exchange Online and Skype for Business automatically use the availability key du
 
 Log records include attributes such as date, time, activity, organization ID, and data encryption policy ID. The record is available as part of Office 365 Unified Audit Logs and is accessible from the Office 365 Security and Compliance Center Audit Log Search tab.
 
-![Audit log search for availability key events](media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
+![Audit log search for availability key events](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 
 Exchange Online and Skype for Business availability key records use the Office 365 Management Activity [common schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) with added custom parameters: Policy Id, Scope Key Version Id, and Request Id.
 
-![Availability key custom parameters](media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
+![Availability key custom parameters](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
 
 ### SharePoint Online, OneDrive for Business, and Teams files availability key logging
 
@@ -190,11 +190,11 @@ Office 365 uses the availability key to wrap the tier of keys lower in the key h
 
 ### Encryption ciphers used to encrypt keys for Exchange Online and Skype for Business
 
-![Encryption ciphers for Exchange Online Customer Key](media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Encryption ciphers for Exchange Online Customer Key](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 ### Encryption ciphers used to encrypt keys for SharePoint Online and OneDrive for Business
 
-![Encryption ciphers for SharePoint Online Customer Key](media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![Encryption ciphers for SharePoint Online Customer Key](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## Related articles
 

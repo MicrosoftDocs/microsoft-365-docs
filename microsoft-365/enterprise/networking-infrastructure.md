@@ -19,7 +19,7 @@ description: The steps to deploy the networking infrastructure for Microsoft 365
 
 # Phase 1: Networking infrastructure for Microsoft 365 Enterprise
 
-![Phase 1: Networking](./media/deploy-foundation-infrastructure/networking_icon.png)
+![Phase 1: Networking](../media/deploy-foundation-infrastructure/networking_icon.png)
 
 Microsoft 365 Enterprise includes Office 365, Microsoft Intune, and many identity and security services of Microsoft Azure. All of these cloud-based services rely on the security, performance, and reliability of connections from client devices over the Internet or dedicated circuits. To host these services and make them available to customers all over the world, Microsoft has designed a networking infrastructure that emphasizes performance and integration. 
 
@@ -34,11 +34,11 @@ Use the following steps to build out your networking infrastructure for the requ
 
 |||
 |:-------|:-----|
-|![Step 1](./media/stepnumbers/Step1.png)|[Prepare your network for Microsoft 365](networking-provide-bandwidth-cloud-services.md)|
-|![Step 2](./media/stepnumbers/Step2.png)|[Configure local Internet connections for each office](networking-dns-resolution-same-location.md)|
-|![Step 3](./media/stepnumbers/Step3.png)|[Avoid network hairpins](networking-avoid-network-hairpins.md)|
-|![Step 4](./media/stepnumbers/Step4.png)|[Configure traffic bypass](networking-configure-proxies-firewalls.md)|
-|![Step 5](./media/stepnumbers/Step5.png)|[Optimize client and Office 365 service performance](networking-optimize-tcp-performance.md)|
+|![Step 1](../media/stepnumbers/Step1.png)|[Prepare your network for Microsoft 365](networking-provide-bandwidth-cloud-services.md)|
+|![Step 2](../media/stepnumbers/Step2.png)|[Configure local Internet connections for each office](networking-dns-resolution-same-location.md)|
+|![Step 3](../media/stepnumbers/Step3.png)|[Avoid network hairpins](networking-avoid-network-hairpins.md)|
+|![Step 4](../media/stepnumbers/Step4.png)|[Configure traffic bypass](networking-configure-proxies-firewalls.md)|
+|![Step 5](../media/stepnumbers/Step5.png)|[Optimize client and Office 365 service performance](networking-optimize-tcp-performance.md)|
 
 
 When you've completed these steps, go to the [exit criteria](networking-exit-criteria.md) for this phase to ensure that you meet the required and optional conditions for Microsoft 365 Enterprise.
@@ -51,11 +51,11 @@ Peek inside Microsoft and learn how the company [optimized the Microsoft network
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [optimized their network devices and Internet connections](contoso-networking.md) for Microsoft 365 cloud services.
 
-![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## Next step
 
 |||
 |:-------|:-----|
-|![Step 1](./media/stepnumbers/Step1.png)|[Prepare your network for Microsoft 365](networking-provide-bandwidth-cloud-services.md)|
+|![Step 1](../media/stepnumbers/Step1.png)|[Prepare your network for Microsoft 365](networking-provide-bandwidth-cloud-services.md)|
 

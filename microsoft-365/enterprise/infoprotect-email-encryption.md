@@ -22,7 +22,7 @@ description: Understand and configure privileged access management for Office 36
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![Phase 6: Information Protection](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Information Protection](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 There are three types of email encryption in Microsoft 365.
 
@@ -37,7 +37,7 @@ There are three types of email encryption in Microsoft 365.
 
 With OME, your organization can send and receive encrypted email messages between people inside and outside your organization. OME works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view the message.
 
-![OME encryption of email messages](./media/infoprotect-email-encryption/ome-encryption.png)
+![OME encryption of email messages](../media/infoprotect-email-encryption/ome-encryption.png)
 
 You set up transport rules that define the conditions for encryption. When a user sends a message that matches a rule, encryption is applied automatically.
 
@@ -51,7 +51,7 @@ IRM in Microsoft 365 helps you secure your information with additional encryptio
 
 IRM policies are configured within Microsoft 365 and can apply to documents in SharePoint Online and email messages. An IRM-protected email includes the applied policy settings applied and travel with it. 
 
-![IRM protection of email messages](./media/infoprotect-email-encryption/irm-protection.png)
+![IRM protection of email messages](../media/infoprotect-email-encryption/irm-protection.png)
 
 When the recipient opens the email with the included policy, the policy settings are used to decrypt the message and determine what the recipient can do with it. 
 
@@ -61,7 +61,7 @@ For more information, see [Information Rights Management in Exchange Online]( ht
 
 S/MIME is a digital certificate-based email-based protection solution that allows you to both encrypt and digitally sign a message. The message encryption helps ensure that only the intended recipient can open and read the message. A digital signature helps the recipient validate the identity of the sender and determine that only the sender could have sent it.
 
-![S/MIME protection of email messages](./media/infoprotect-email-encryption/smime-protection.png)
+![S/MIME protection of email messages](../media/infoprotect-email-encryption/smime-protection.png)
 
 S/MIME can be used for email to other mailboxes in your Microsoft 365 subscription or to external users.
 Both message encryption and digital signatures are made possible through the use of digital certificates that contain the public and private keys for encrypting or decrypting messages and creating and verifying digital signatures.
@@ -76,4 +76,4 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 |||
 |:-------|:-----|
-|![Step 7](./media/stepnumbers/Step7.png)|[Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)|
+|![Step 7](../media/stepnumbers/Step7.png)|[Configure privileged access management for Office 365](infoprotect-configure-privileged-access-management.md)|

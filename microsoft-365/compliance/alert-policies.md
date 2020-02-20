@@ -32,7 +32,7 @@ Alert policies build on and expand the functionality of activity alerts by letti
 
 Here's a quick overview of how alert policies work and the alerts that are triggers when user or admin activity matches the conditions of an alert policy.
 
-![Overview of how alert policies work](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
+![Overview of how alert policies work](../media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
 
 1. An admin in your organization creates, configures, and turns on an alert policy by using the **Alert policies** page in the security and compliance center. You can also create alert policies by using the **New-ProtectionAlert** cmdlet in Security & Compliance Center PowerShell. To create alert policies, you have to be assigned the Manage Alerts role or the Organization Configuration role in the security and compliance center.
 
@@ -48,7 +48,7 @@ An alert policy consists of a set of rules and conditions that define the user o
 
 To view and create alert policies, go to [https://protection.office.com](https://protection.office.com) and then select **Alerts** \> **Alert policies**.
 
-![In the security and compliance center, select Alerts, then select Alert policies to view and create alert policies](media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
+![In the security and compliance center, select Alerts, then select Alert policies to view and create alert policies](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
 
 An alert policy consists of the following settings and conditions.
 
@@ -61,7 +61,7 @@ An alert policy consists of the following settings and conditions.
 
 - **When the alert is triggered** - You can configure a setting that defines how often an activity can occur before an alert is triggered. This allows you to set up a policy to generate an alert every time an activity matches the policy conditions, when a certain threshold is exceeded, or when the occurrence of the activity the alert is tracking becomes unusual for your organization.
 
-    ![Configure how alerts are triggered, based on when the activity occurs, a threshold, or unusual activity for your organization](media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
+    ![Configure how alerts are triggered, based on when the activity occurs, a threshold, or unusual activity for your organization](../media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
 
     If you select the setting based on unusual activity, Office 365 establishes a baseline value that defines the normal frequency for the selected activity. It takes up to seven days to establish this baseline, during which alerts won't be generated. After the baseline is established, an alert is triggered when the frequency of the activity tracked by the alert policy greatly exceeds the baseline value. For auditing-related activities (such as file and folder activities), you can establish a baseline based on a single user or based on all users in your organization; for malware-related activities, you can establish a baseline based on a single malware family, a single recipient, or all messages in your organization.
 
@@ -136,7 +136,7 @@ When an activity performed by users in your organization matches the settings of
 
 To view alerts, go to [https://protection.office.com](https://protection.office.com) and then select **Alerts** \> **View alerts**.
 
-![In the security and compliance, select Alerts, then select View alerts to view alerts](media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
+![In the security and compliance, select Alerts, then select View alerts to view alerts](../media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
 
 You can use the following filters to view a subset of all the alerts on the **View alerts** page.
 
@@ -172,33 +172,33 @@ To see which category a default alert policy is assigned to, see the table in th
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Audit Logs|||||||
 |Case Management|||||||
-|Compliance Administrator|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Compliance Administrator|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Compliance Search|||||||
 |Device Management|||||||
 |Disposition Management|||||||
-|DLP Compliance Management||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
+|DLP Compliance Management||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
 |Export|||||||
 |Hold|||||||
-|Manage Alerts||||||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Organization Configuration||||||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Manage Alerts||||||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Organization Configuration||||||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Preview|||||||
-|Record Management|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Retention Management|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Record Management|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Retention Management|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |Review|||||||
 |RMS Decrypt|||||||
-|Role Management||||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|Role Management||||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |Search And Purge|||||||
-|Security Administrator||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Security Reader||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Security Administrator||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Security Reader||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
 |Service Assurance View|||||||
 |Supervisory Review Administrator|||||||
 |View-Only Audit Logs|||||||
 |View-Only Device Management|||||||
-|View-Only DLP Compliance Management||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|View-Only Manage Alerts||||||![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|View-Only Recipients|||  ![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
-|View-Only Record Management|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|View-Only Retention Management|![Check mark](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|View-Only DLP Compliance Management||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
+|View-Only Manage Alerts||||||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|View-Only Recipients|||  ![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
+|View-Only Record Management|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|View-Only Retention Management|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |||||||
 
 **Tip:** To view the roles that are assigned to each of the default role groups, run the following commands in Security & Compliance Center PowerShell:
@@ -245,11 +245,11 @@ Organizations that have Microsoft Cloud App Security as part of an Enterprise Mo
 
 To display only Cloud App Security alerts in the security and compliance center, use the **Source** filter and select **Cloud App Security**.
 
-![Use the Source filter to display only Cloud App Security alerts](media/FilterCASAlerts.png)
+![Use the Source filter to display only Cloud App Security alerts](../media/FilterCASAlerts.png)
 
 Similar to an alert triggered by an alert policy in the security and compliance center, you can select a Cloud App Security alert to display a flyout page with details about the alert. The alert includes a link to view the details and manage the alert in the Cloud App Security portal and a link to the corresponding Cloud App Security policy that triggered the alert. See [Monitor alerts in Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts).
 
-![Alert details contain links to the Cloud App Security portal](media/CASAlertDetail.png)
+![Alert details contain links to the Cloud App Security portal](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
 > Changing the status of a Cloud App Security alert in the security and compliance center won't update the resolution status for the same alert in the Cloud App Security portal. For example, if you mark the status of the alert as **Resolved** in the security and compliance center, the status of the alert in the Cloud App Security portal is unchanged. To resolve or dismiss a Cloud App Security alert, manage the alert in the Cloud App Security portal.

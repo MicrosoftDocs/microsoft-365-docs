@@ -19,7 +19,7 @@ description: You can make user sign-ins to Windows devices and to Microsoft 365 
 
 # Step 3: Secure and manage your user sign-ins
 
-![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2-Identity](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 
 <a name="identity-windows-hello"></a>
@@ -50,7 +50,7 @@ For more information, see [Planning a cloud-based Azure Multi-Factor Authenticat
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Azure Multi-Factor Authentication](multi-factor-authentication-microsoft-365-test-environment.md) |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Azure Multi-Factor Authentication](multi-factor-authentication-microsoft-365-test-environment.md) |
 |||
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-mfa) for this section.
@@ -82,11 +82,11 @@ The results of this step are that you've enabled Azure AD Identity Protection an
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
 |||
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-ident-prot) for this section.
 
 |||
 |:-------|:-----|
-|![Step 4](./media/stepnumbers/Step4.png)| [Add your user accounts](identity-add-user-accounts.md) |
+|![Step 4](../media/stepnumbers/Step4.png)| [Add your user accounts](identity-add-user-accounts.md) |

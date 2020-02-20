@@ -39,9 +39,9 @@ If a user has a computer that includes many personal files, you should first mov
   
 1. Go to portal.office.com and sign in with the user's Microsoft 365 Business credentials.
     
-2. Click the app launcher ![The app launcher icon in Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) and go to OneDrive. 
+2. Click the app launcher ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) and go to OneDrive. 
     
-3. Choose **Upload**![Upload](media/d9b963b8-10af-42e2-953d-360301b83d3c.png) in the menu bar, and browse to the files you want to save. 
+3. Choose **Upload**![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) in the menu bar, and browse to the files you want to save. 
     
 To transfer the user profile and important files, you can also use a third-party tool, such as ForensiT. You should upload the resulting files in OneDrive for Business also.
   

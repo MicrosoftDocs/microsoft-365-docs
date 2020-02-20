@@ -69,7 +69,7 @@ Microsoft 365 comes with six ready to use classifiers:
 
 These appear in the **Microsoft 365 compliance center** > **Data classification (preview)** > **Trainable classifiers** view with the status of `Ready to use`.
 
-![classifiers-ready-to-use-classifiers](media/classifiers-ready-to-use-classifiers.png)
+![classifiers-ready-to-use-classifiers](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
 > Please note that the offensive language, harassment, profanity, and threat classifiers only work with searchable text are not exhaustive or complete.  Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While the classifiers may assist your organization in monitoring offensive and other language used, the classifiers do not address consequences of such language and are not intended to provide your organization’s sole means of monitoring or responding to the use of such language. Your organization, and not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, enforcement, blocking, removal and retention of any content identified by a pre-trained classifier.
@@ -78,7 +78,7 @@ These appear in the **Microsoft 365 compliance center** > **Data classification 
 
 Ready to use classifiers don't need to be trained, but you do need to confirm that they will identify the types of content that you need them to before you use them in compliance solutions. Testing a pre-trained classifier follows this flow.
 
-![process flow testing a pre-trained classifier](media/classifier-pre-trained-classifier-flow.png)
+![process flow testing a pre-trained classifier](../media/classifier-pre-trained-classifier-flow.png)
 
 ### Understanding trainable classifiers
 
@@ -91,7 +91,7 @@ When the ready to use classifiers don't meet your needs, you can create and trai
 
 Creating and publishing a trainable classifier for use in compliance solutions, such as retention policies and communication supervision, follows this flow. For more detail on creating a trainable classifier see, [Creating a trainable classifier](classifier-creating-a-trainable-classifier.md).
 
-![process flow trainable classifier](media/classifier-trainable-classifier-flow.png)
+![process flow trainable classifier](../media/classifier-trainable-classifier-flow.png)
 
 ## See also
 

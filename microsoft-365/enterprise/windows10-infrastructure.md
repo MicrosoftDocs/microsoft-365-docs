@@ -16,7 +16,7 @@ ms.author: greglin
 
 # Phase 3: Windows 10 Enterprise
 
-![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
 Microsoft 365 Enterprise includes Windows 10 Enterprise, which gives you the tools to do more and stay secure. Windows 10 Enterprise:
 
@@ -75,10 +75,10 @@ Peek inside Microsoft and learn how the company [deployed Windows 10 Enterprise 
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [deployed Windows 10 Enterprise](contoso-win10.md).
 
-![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## Next step
 
 |||
 |:-------|:-----|
-|![Step 1](./media/stepnumbers/Step1.png)| [Prepare your organization for Windows 10 Enterprise](windows10-prepare-your-org.md) |
+|![Step 1](../media/stepnumbers/Step1.png)| [Prepare your organization for Windows 10 Enterprise](windows10-prepare-your-org.md) |
