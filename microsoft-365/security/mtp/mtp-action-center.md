@@ -25,8 +25,6 @@ ms.custom: autoir
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
 ## A "single pane of glass" experience
 
 ![Action Center](../../media/air-actioncenter.png)
