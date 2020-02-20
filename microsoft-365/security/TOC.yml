@@ -67,9 +67,11 @@
               items: 
                 - name: AIR overview
                   href: mtp/mtp-autoir.md
-                - name: Go to the Action center
+                - name: View remediation actions
+                  href: mtp/mtp-remediation-actions.md
+                - name: Visit the Action center
                   href: mtp/mtp-action-center.md
-                - name: View AIR results
+                - name: View investigation results
                   href: mtp/mtp-autoir-results.md
                 - name: Approve or reject pending actions
                   href: mtp/mtp-autoir-actions.md
@@ -187,7 +189,6 @@
                       href: ./office-365-security/recover-from-ransomware.md
                     - name: Virus detection in SharePoint Online
                       href: ./office-365-security/virus-detection-in-spo.md
-
                 - name: Advanced spam filtering options
                   href: ./office-365-security/advanced-spam-filtering-asf-options.md
                 - name: High-risk delivery pool for outbound messages
@@ -367,6 +368,20 @@
               href: ./office-365-security/campaigns.md
             - name: Understanding latest attacks with threat analytics
               href: ./mtp/latest-attack-campaigns.md
+            - name: Automated investigation and response
+              items: 
+                - name: Overview of AIR
+                  href: ./office-365-security/office-365-air.md
+                - name: View details and results of an investigation
+                  href: ./office-365-security/air-view-investigation-results.md
+                - name: View and approve remediation actions
+                  href: ./office-365-security/air-remediation-actions.md
+                - name: Integrate AIR with a custom or third-party reporting solution
+                  href: ./office-365-security/air-custom-reporting.md
+            - name: Detect and address compromised user accounts quickly
+              href: ./office-365-security/address-compromised-users-quickly.md
+            - name: Investigate and remediate malicious email
+              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: View and read your ATP reports
               href: ./office-365-security/view-reports-for-atp.md
             - name: What ATP Safe Links warning pages mean
@@ -374,15 +389,7 @@
             - name: Use Threat Trackers
               href: ./office-365-security/threat-trackers.md
             - name: Use Attack Simulator in Office 365
-              href: ./office-365-security/attack-simulator.md
-            - name: Keep users safe with threat investigation and response
-              href: ./office-365-security/keep-users-safe-with-office-365-ti.md
-            - name: Automatically investigate and respond to threats in Office 365
-              href: ./office-365-security/office-365-air.md
-            - name: Find and investigate malicious email that was delivered
-              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: Detect and address compromised user accounts quickly
-              href: ./office-365-security/address-compromised-users-quickly.md
+              href: ./office-365-security/attack-simulator.md      
             - name: Safe Documents in Office 365 ATP
               href: ./office-365-security/safe-docs.md
             - name: Threat Explorer (and real-time detections)
@@ -398,6 +405,8 @@
                   href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: How ATP works
               items: 
+                - name: How automated investigation and response works
+                  href: ./office-365-security/automated-investigation-response-office.md
                 - name: How ATP Safe Links works
                   href: ./office-365-security/how-atp-safe-links-works.md
                 - name: How ATP Safe Attachments works
@@ -408,8 +417,7 @@
                   href: ./office-365-security/atp-for-spo-odb-and-teams.md
                 - name: How threat investigation and response works
                   href: ./office-365-security/office-365-ti.md
-                - name: How Automated Investigation and Response works
-                  href: ./office-365-security/automated-investigation-response-office.md
+
         - name: Security incident management
           items: 
             - name: Office 365 Security Incident Response
