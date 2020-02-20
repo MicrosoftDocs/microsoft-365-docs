@@ -92,24 +92,24 @@ If your subscription was purchased through a CSP or partner, you can’t remove 
 
 - You need to be either a Global admin or a User management admin. For more information, see [About admin roles](../add-users/about-admin-roles.md).
 
-- Use these steps to add a license to an existing user account. [Learn how to add a user account and assign a license at the same time](../add-users/add-users.md).
+- Use these steps to add a license to an existing user account. [Learn how to add a user account and assign a license at the same time](../../admin/add-users/add-users.md).
 
 ## Articles about managing licenses for your subscription
 
 - [Understand subscriptions and licenses](subscriptions-and-licenses.md)
 
-- [Remove licenses from users](../manage/remove-licenses-from-users.md)
+- [Remove licenses from users](../../admin/manage/remove-licenses-from-users.md)
 
-- [Assign licenses to users](../manage/assign-licenses-to-users.md)
+- [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md)
 
 - [Buy licenses for your subscription](buy-licenses.md)
 
-- [Buy another subscription](buy-another-subscription.md)
+- [Buy another subscription](../buy-another-subscription.md)
 
-- [Buy or edit an add-on](buy-or-edit-an-add-on.md)
+- [Buy or edit an add-on](../buy-or-edit-an-add-on.md)
 
 - [Manage Yammer user licenses](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365)
 
 ## Related links
 
-[Cancel your subscription](cancel-your-subscription.md)
+[Cancel your subscription](../subscriptions/cancel-your-subscription.md)
