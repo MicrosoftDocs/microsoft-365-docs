@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Payment information for Taiwan
 
-[Find another country or region](../pay-for-your-subscription.md). 
+[Find another country or region](../billing-and-payments/pay-for-your-subscription.md). 
 
 Please pay in N.T. Dollars only and reference invoice number(s) on your payment remittance.
 

@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Payment information for Colombia
 
-[Find another country or region](../pay-for-your-subscription.md).
+[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).
 
 Please pay in Colombian Pesos only. For payment to be processed, your company name and invoice number(s) must be provided on remittance advice.
 

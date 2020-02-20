@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Payment information for China (PRC)
 
-[Find another country or region](../pay-for-your-subscription.md).
+[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).
 
 Please pay in CNY and reference your company name and invoice number(s) on the payment remittance.
 

@@ -28,7 +28,7 @@ description: "Learn how to activate, renew, or add licenses to an Office 365 for
 
 If you purchased Office 365 for business from a [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298), this article is for you. Volume licensing customers who purchased a product key can follow this topic to activate, renew, or add licenses to a subscription.
   
- **Need help immediately?** [Call Microsoft Support](../contact-support-for-business-products.md) . 
+ **Need help immediately?** [Call Microsoft Support](../../admin/contact-support-for-business-products.md) . 
   
  **Need something else?**
  
@@ -52,7 +52,7 @@ If you bought Office 365 from a Microsoft Open License Program, the system autom
   
 ## What's next?
 
-If you're new to Office 365 for business, learn how to [set up Office 365 for your organization](../setup/setup.md).
+If you're new to Office 365 for business, learn how to [set up Office 365 for your organization](../../admin/setup/setup.md).
   
 ## Still having trouble with product keys?
 
@@ -62,4 +62,4 @@ Partners, see [Partners: use a product key to set up a customer subscription](ht
   
 Volume licensing customers can learn more by visiting [Microsoft Volume Licensing Service Center training and resources](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   
-Or, if you want to talk to a person, [call Microsoft Support](../contact-support-for-business-products.md).
+Or, if you want to talk to a person, [call Microsoft Support](../../admin/contact-support-for-business-products.md).

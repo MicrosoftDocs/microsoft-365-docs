@@ -30,7 +30,7 @@ description: "Learn how to renew your Office 365 for business subscription using
 
 This article applies to most paid Office 365 for business subscriptions.
   
-To renew by using a product key that you bought from a retail store or Office 365 partner, see [Find and enter your product key](../misc/enter-your-product-key.md).
+To renew by using a product key that you bought from a retail store or Office 365 partner, see [EFind and enter your product key](../enter-your-product-key.md).
 
 > [!NOTE]
 > Paying by bank account isn't available in some countries or regions.
@@ -117,7 +117,7 @@ If you prepaid for your subscription with a product key, your subscription will 
   
 [What happens to my data and access when mysubscription ends?](what-if-my-subscription-expires.md)
 
-[Add, update, or remove your payment methods](add-update-or-remove-credit-card-or-bank-account.md)
+[Add, update, or remove your payment methods](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 
 [Change your payment method](change-payment-method.md)
   
