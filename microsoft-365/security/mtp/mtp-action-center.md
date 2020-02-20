@@ -25,8 +25,6 @@ ms.custom: autoir
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
 ## A "single pane of glass" experience
 
 ![Action Center](../../media/air-actioncenter.png)
@@ -42,11 +40,6 @@ Your security operations team can operate more effectively and efficiently, beca
 
 ## Remediation actions
 
-The following table lists remediation actions that are currently supported in the Action center: 
-
-|Endpoints remediation actions  |Email remediation actions  |
-|---------|---------|
-|Quarantine file<br/>Remove registry key<br/>Kill process <br/>Stop service <br/>Remove registry key <br/>Disable driver <br/>Remove scheduled task      |Soft delete email messages or clusters<br/>Block URL (time-of-click)<br/>Turn off external mail forwarding          |
 
 ## Go to the Action center
 
