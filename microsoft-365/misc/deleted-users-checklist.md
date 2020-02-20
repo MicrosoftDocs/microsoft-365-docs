@@ -28,26 +28,26 @@ So, you've decided to delete a user from your organization. For example, you can
   
 ## Remove the Office 365 license from the user
 
-You can remove a license from a user by searching for the user on the home page, or from the **Active users** page, and then selecting them. On the **Licenses and Apps** tab, clear the check box for the license you want to remove from the user. [Read full article](../manage/remove-licenses-from-users.md).
+You can remove a license from a user by searching for the user on the home page, or from the **Active users** page, and then selecting them. On the **Licenses and Apps** tab, clear the check box for the license you want to remove from the user. [Read full article](../admin/manage/remove-licenses-from-users.md).
   
 ## Block sign in
 
-You can block the user so they can't sign in to your Office 365 organization. You can search for the user on the home page, or from the **Active users** page, and then select them. At the top of the pane, under the user's name, select the **Block this user** icon, and then select the **Block this user from signing in** check box. [Read full article](../add-users/assign-admin-roles.md).
+You can block the user so they can't sign in to your Office 365 organization. You can search for the user on the home page, or from the **Active users** page, and then select them. At the top of the pane, under the user's name, select the **Block this user** icon, and then select the **Block this user from signing in** check box. [Read full article](../admin/add-users/assign-admin-roles.md).
   
 ## Get their data
 
-You can send this user's email to another employee or user in your organization by following these [steps](../add-users/remove-former-employee.md). You can also back up and save any data from the former employee by following these [steps](../add-users/get-access-to-and-back-up-a-former-user-s-data.md).
+You can send this user's email to another employee or user in your organization by following these [steps](../admin/add-users/remove-former-employee.md). You can also back up and save any data from the former employee by following these [steps](../admin/add-users/get-access-to-and-back-up-a-former-user-s-data.md).
   
 ## Delete user
 
-You can delete the user by searching for the user on the home page, or from the **Deleted users** page. Select the user and select **Delete user**. [Read full article](../add-users/delete-a-user.md).
+You can delete the user by searching for the user on the home page, or from the **Deleted users** page. Select the user and select **Delete user**. [Read full article](../admin/add-users/delete-a-user.md).
   
 ## What to do with the unassigned license
 
-If you have a new employee or person that's joining your organization, you can assign them this license so they can use Office 365. You can search for the user on the home page, or from the **Active users** page, and then select them. On the **Licenses and Apps** tab, select the check box for the license you want to add to the new user. [Read full article](../manage/assign-licenses-to-users.md).
+If you have a new employee or person that's joining your organization, you can assign them this license so they can use Office 365. You can search for the user on the home page, or from the **Active users** page, and then select them. On the **Licenses and Apps** tab, select the check box for the license you want to add to the new user. [Read full article](../admin/manage/assign-licenses-to-users.md).
   
 ## Remove license so you don't have to pay for it
 
-You can also remove license from your subscription so you don't have to pay for it. From the admin center home page, type **subscription** and select **View subscriptions**. Select **Add/remove licenses**. In the **Total licenses** box, enter the total number of licenses that you need for this subscription and then select **Submit change**. For example, if you had 5 licenses and you need to remove 1 of them, you would enter **4**. [Read full article](../subscriptions-and-billing/remove-licenses-from-subscription.md).
+You can also remove license from your subscription so you don't have to pay for it. From the admin center home page, type **subscription** and select **View subscriptions**. Select **Add/remove licenses**. In the **Total licenses** box, enter the total number of licenses that you need for this subscription and then select **Submit change**. For example, if you had 5 licenses and you need to remove 1 of them, you would enter **4**. [Read full article](../commerce/licenses/remove-licenses-from-subscription.md).
   
 

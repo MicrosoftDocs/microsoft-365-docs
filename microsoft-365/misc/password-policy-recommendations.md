@@ -24,7 +24,7 @@ description: "Learn how to make your organization more secure against password a
  
 As the admin of an Office 365 organization, you're responsible for setting password policy for users in your organization. Setting password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
   
-To determine how often Office 365 passwords expire in your organization, see [Set password expiration policy for Office 365](../manage/set-password-expiration-policy.md).
+To determine how often Office 365 passwords expire in your organization, see [Set password expiration policy for Office 365](../admin/manage/set-password-expiration-policy.md).
   
 ## Understanding password recommendations
 
@@ -50,7 +50,7 @@ The primary goal of a more secure password system is password diversity. You wan
     
 - Educate your users to not re-use their organization passwords for non-work related purposes
     
-- Enforce registration for [multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md)
+- Enforce registration for [multi-factor authentication](../admin/security-and-compliance/set-up-multi-factor-authentication.md)
     
 - Enable risk-based multi-factor authentication challenges
     
@@ -104,7 +104,7 @@ One of the most important messages to get across to users in your organization i
 
 Make sure your users update contact and security information, like an alternate email address, phone number, or a device registered for push notifications, so they can respond to security challenges and be notified of security events. Updated contact and security information helps users verify their identity if they ever forget their password, or if someone else tries to take over their account. It also provides an out of band notification channel in the case of security events such as login attempts or changed passwords. 
   
-To learn more, see [Set up multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md).
+To learn more, see [Set up multi-factor authentication](../admin/security-and-compliance/set-up-multi-factor-authentication.md).
   
 ### Enable risk-based multi-factor authentication
 
