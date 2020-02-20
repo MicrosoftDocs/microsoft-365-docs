@@ -26,10 +26,10 @@ description: "Create custom help desk card in the admin center and add customize
 
 As an admin, you can streamline user support by adding customized contact information to the help pane. Users in need of help will be able to access your organization's custom support contact info with the help icon.
   
-To create a custom help desk card, you must be a global admin for Office 365 and have a license to Exchange Online. Learn how to [assign licenses in Office 365 for business](../manage/assign-licenses-to-users.md).
+To create a custom help desk card, you must be a global admin for Office 365 and have a license to Exchange Online. Learn how to [assign licenses in Office 365 for business](../admin/manage/assign-licenses-to-users.md).
 
 > [!NOTE]
-> If you are an admin looking for technical or billing support from Microsoft, see [Contact Office 365 for business support](../contact-support-for-business-products.md). 
+> If you are an admin looking for technical or billing support from Microsoft, see [Contact Office 365 for business support](../admin/contact-support-for-business-products.md). 
 
   
 ### Create the custom help desk card in the admin center
