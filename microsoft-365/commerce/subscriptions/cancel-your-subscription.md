@@ -25,7 +25,7 @@ description: "Learn how to cancel your Office 365 for business or Microsoft 365 
 
 # Cancel your subscription
 
-*Eligibility:* If you have fewer than 25 licenses assigned to users, you can cancel your Office 365 for business trial or paid subscription online in the admin center at any time. If you have more than 25 licenses assigned to users, [call support to cancel your subscription](../contact-support-for-business-products.md).
+*Eligibility:* If you have fewer than 25 licenses assigned to users, you can cancel your Office 365 for business trial or paid subscription online in the admin center at any time. If you have more than 25 licenses assigned to users, [call support to cancel your subscription](../../admin/contact-support-for-business-products.md).
 
 *Refund:* Any prorated credit will be returned to you within the next billing cycle.
 
@@ -34,7 +34,7 @@ description: "Learn how to cancel your Office 365 for business or Microsoft 365 
 
 ## Steps to cancel your subscription
 
-If you added your own domain name to use with your subscription, you must remove the domain before you cancel your subscription. For more information, see [Remove a domain from Office 365](../get-help-with-domains/remove-a-domain.md).
+If you added your own domain name to use with your subscription, you must remove the domain before you cancel your subscription. For more information, see [Remove a domain from Office 365](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ::: moniker range="o365-worldwide"
 
@@ -59,7 +59,7 @@ If you added your own domain name to use with your subscription, you must remove
 
 3. From the **More actions** menu, select **Cancel subscription**.
 
-    ![Close up of the More Actions menu.](../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Close up of the More Actions menu.](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. Review the important dates, provide feedback about why you are cancelling, then select **Cancel subscription**.
 
@@ -75,7 +75,7 @@ If you added your own domain name to use with your subscription, you must remove
 
 3. From the **More actions** menu, select **Cancel subscription**.
 
-    ![Close up of the More Actions menu.](../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Close up of the More Actions menu.](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. Review the important dates, provide feedback about why you are cancelling, then select **Cancel subscription**.
 
@@ -96,7 +96,7 @@ If you set up a custom domain, you added DNS records so the domain would work wi
 
 For example, change the MX record at your DNS host. Email sent to your domain stops coming to your Office 365 address and goes to your new email provider instead. (An MX record determines where email for your domain is sent.)
 
-- If your nameserver (NS) records [are pointing to Office 365 nameservers](../setup/add-domain.md), changes to your MX record don't take effect until you change your NS records to point to your new DNS host (see Step 2).
+- If your nameserver (NS) records [are pointing to Office 365 nameservers](../../admin/setup/add-domain.md), changes to your MX record don't take effect until you change your NS records to point to your new DNS host (see Step 2).
 
 - Before you update the MX record, let your users know the date you plan to switch their email, and the new email provider you plan to use. Also, if your users want to move their existing Office 365 email to the new provider, they must take extra steps.
 
@@ -108,7 +108,7 @@ If you switched your nameserver (NS) records to Office 365 when you set up your 
 
 If you didn't switch NS records when you set up your domain, when you change the MX record, your mail starts going to the new address right away.
 
-For more information, see [How does Office 365 manage my DNS records?](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records). To change your NS records, see [Remove a domain from Office 365](../get-help-with-domains/remove-a-domain.md).
+For more information, see [How does Office 365 manage my DNS records?](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records). To change your NS records, see [Remove a domain from Office 365](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ### Save your data
 

@@ -58,13 +58,13 @@ When you finish checkout, it might take a few minutes to finalize the upgrade. Y
 
 ## The Upgrade tab is empty
 
-If the **Upgrade** tab is empty, you'll see an explanation of why you can't upgrade at this time. You can try to [change plans manually](../misc/change-plans-manually.md) or [call support](../contact-support-for-business-products.md). For more information, see [Why can't I switch Office 365 for business plans?](../misc/why-can-t-i-switch-plans.md).
+If the **Upgrade** tab is empty, you'll see an explanation of why you can't upgrade at this time. You can try to [change plans manually](change-plans-manually.md) or [call support](../../admin/contact-support-for-business-products.md). For more information, see [Why can't I switch Office 365 for business plans?](why-can-t-i-switch-plans.md).
 
 ## I don't see the plan I want
 
 When you use the **Upgrade** tab, the plans that you can upgrade to are displayed based on the services in your current plan. You can only use the **Upgrade** tab to move to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the change.
 
-If you want to move to a plan with fewer services, you can [change plans manually](../misc/change-plans-manually.md), or [call support](../contact-support-for-business-products.md) for help.
+If you want to move to a plan with fewer services, you can [change plans manually](change-plans-manually.md), or [call support](../../admin/contact-support-for-business-products.md) for help.
 
 ## Why some changes take longer
 
@@ -73,7 +73,7 @@ If you want to move to a plan with fewer services, you can [change plans manuall
 **Credit checks when changing plans:** If you pay by invoice, or reach a certain level of cost, a credit check might be required. A credit check can take up to two business days. Users will have full access to their current plan until you move them to the new one. You'll receive a notification if a credit check is required.
 
 ## Call support to help you change plans
-[Call Microsoft support](../contact-support-for-business-products.md)
+[Call Microsoft support](../../admin/contact-support-for-business-products.md)
 
 ## Related articles
 

@@ -42,7 +42,7 @@ If your subscription expires, or was disabled by Microsoft, or if you cancelled 
 
 2. On the **Products & services** page, find the subscription that you want to reactivate. In the **Billing** section, select **Reactivate**.
   
-    If you don't see **Reactivate** as an available action, [call Support](../contact-support-for-business-products.md) to reactivate your subscription.
+    If you don't see **Reactivate** as an available action, [call Support](../../admin/contact-support-for-business-products.md) to reactivate your subscription.
 
 3. Confirm your payment details. You can update your existing payment information here. When you're finished entering your payment method, select **Reactivate**.
 
@@ -62,9 +62,9 @@ If your subscription expires, or was disabled by Microsoft, or if you cancelled 
 
 2. Find the subscription that you want to reactivate, then select **Reactivate**.
 
-    ![Close-up of a Subscription card that says Disabled and Reduced functionality with a Reactivate button.](../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![Close-up of a Subscription card that says Disabled and Reduced functionality with a Reactivate button.](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
-    If you don't see **Reactivate** as an available action, [call Support](../contact-support-for-business-products.md) to reactivate your subscription.
+    If you don't see **Reactivate** as an available action, [call Support](../../admin/contact-support-for-business-products.md) to reactivate your subscription.
 
 3. Enter your payment details. You can update your existing payment information here.
 
@@ -83,9 +83,9 @@ If your subscription expires, or was disabled by Microsoft, or if you cancelled 
 
 2. Find the subscription that you want to reactivate, then select **Reactivate**.
 
-    ![Close-up of a Subscription card that says Disabled and Reduced functionality with a Reactivate button.](../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![Close-up of a Subscription card that says Disabled and Reduced functionality with a Reactivate button.](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
-    If you don't see **Reactivate** as an available action, [call Support](../contact-support-for-business-products.md) to reactivate your subscription.
+    If you don't see **Reactivate** as an available action, [call Support](../../admin/contact-support-for-business-products.md) to reactivate your subscription.
 
 3. Enter your payment details. You can update your existing payment information here.
 
