@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Payment information for Tunisia
 
-[Find another country or region](../pay-for-your-subscription.md). <!--This should go to the parent "Pay for your Office 365 for business subscription" topic-->
+[Find another country or region](../billing-and-payments/pay-for-your-subscription.md). <!--This should go to the parent "Pay for your Office 365 for business subscription" topic-->
 
 Please pay in USD only and reference invoice number(s) on your payment remittance.
 

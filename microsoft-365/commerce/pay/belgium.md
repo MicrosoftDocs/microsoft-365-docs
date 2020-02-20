@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Payment information for Belgium
 
-[Find another country or region](../pay-for-your-subscription.md). 
+[Find another country or region](../billing-and-payments/pay-for-your-subscription.md). 
 
 Please pay in EUR only and reference your invoice number(s) on your invoice remittance.
 

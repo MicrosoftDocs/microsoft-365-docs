@@ -94,7 +94,7 @@ To see if there are provisioning or service health issues, in the Microsoft 365 
 
 ::: moniker-end
 
-If you find that a service is not fully provisioned, or you have a service health issue, please wait a few hours for your service to become available, and try again. If you still have a problem, please [call support](../contact-support-for-business-products.md).
+If you find that a service is not fully provisioned, or you have a service health issue, please wait a few hours for your service to become available, and try again. If you still have a problem, please [call support](../../admin/contact-support-for-business-products.md).
   
 ### You can't switch plans because another plan is in the process of being switched and is pending a credit check.
 

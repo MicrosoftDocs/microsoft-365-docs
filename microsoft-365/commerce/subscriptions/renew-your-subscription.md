@@ -30,7 +30,7 @@ description: "Learn how to renew your Office 365 for business subscription using
 
 This article applies to most paid Office 365 for business subscriptions.
   
-To renew by using a product key that you bought from a retail store or Office 365 partner, see [Find and enter your product key](../misc/enter-your-product-key.md).
+To renew by using a product key that you bought from a retail store or Office 365 partner, see [EFind and enter your product key](../enter-your-product-key.md).
 
 > [!NOTE]
 > Paying by bank account isn't available in some countries or regions.
@@ -75,7 +75,7 @@ If you prepaid for your subscription with a product key, your subscription will 
  
 3. To turn on **Recurring billing**, switch the toggle to **On**.
 
-    ![Close-up of a Subscription card that has Recurring billing turned on.](../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Close-up of a Subscription card that has Recurring billing turned on.](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     You can turn off **Recurring billing** by switching the toggle to **Off**.
 
@@ -98,7 +98,7 @@ If you prepaid for your subscription with a product key, your subscription will 
  
 3. To turn on **Recurring billing**, switch the toggle to **On**.
 
-    ![Close-up of a Subscription card that has Recurring billing turned on.](../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Close-up of a Subscription card that has Recurring billing turned on.](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     You can turn off **Recurring billing** by switching the toggle to **Off**.
 
@@ -113,14 +113,14 @@ If you prepaid for your subscription with a product key, your subscription will 
 
 [Reactivate your subscription](reactivate-your-subscription.md)
   
-[Add, update, or remove a credit card or bank account](add-update-or-remove-credit-card-or-bank-account.md)
+[Add, update, or remove a credit card or bank account](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
   
 [What happens to my data and access when mysubscription ends?](what-if-my-subscription-expires.md)
 
-[Add, update, or remove your payment methods](add-update-or-remove-credit-card-or-bank-account.md)
+[Add, update, or remove your payment methods](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 
 [Change your payment method](change-payment-method.md)
   
-[Enter your product key](../misc/enter-your-product-key.md)
+[Enter your product key](../enter-your-product-key.md)
   
-[Buy your trial version of Office 365 for business](buy-a-subscription-from-your-free-trial.md)
+[Buy your trial version of Office 365 for business](../buy-a-subscription-from-your-free-trial.md)

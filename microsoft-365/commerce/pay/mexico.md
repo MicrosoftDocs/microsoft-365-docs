@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Payment information for Mexico
 
-[Find another country or region](../pay-for-your-subscription.md).
+[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).
 
 Please pay in Mexican Pesos only. For your payment to be processed, your company name and invoice(s) number must be provided on remittance payment.
 

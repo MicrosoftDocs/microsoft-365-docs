@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Payment information for Indonesia
 
-[Find another country or region](../pay-for-your-subscription.md). 
+[Find another country or region](../billing-and-payments/pay-for-your-subscription.md). 
 
 Please pay in IDR only and reference invoice number(s) on your payment remittance.
 

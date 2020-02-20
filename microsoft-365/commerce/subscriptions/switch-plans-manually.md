@@ -28,12 +28,12 @@ description: "Switch Office 365 for business subscriptions manually by buying a 
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> This article applies to the old admin center. To view the article about the new admin center, see [Change plans manually](change-plans-manually.md). The new admin center is available to all Microsoft 365 admins, and you can opt in by selecting the **Try the new admin center** toggle located at the top of the Home page. For more information, see [About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md).
+> This article applies to the old admin center. To view the article about the new admin center, see [Change plans manually](change-plans-manually.md). The new admin center is available to all Microsoft 365 admins, and you can opt in by selecting the **Try the new admin center** toggle located at the top of the Home page. For more information, see [About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 ## Step 1: Decide how to switch plans
 
-The best way to switch all your users from one plan to another is to use the [Use the Switch plans button](../subscriptions-and-billing/switch-to-a-different-plan.md#use-the-switch-plans-button). Sometimes this isn't possible. Do a manual switch instead:
+The best way to switch all your users from one plan to another is to use the [Use the Switch plans button](switch-to-a-different-plan.md#use-the-switch-plans-button). Sometimes this isn't possible. Do a manual switch instead:
   
 - If the **Switch plans** button isn't there.
 
@@ -49,11 +49,11 @@ To continue with a manual switch, read [Step 2: Buy a new subscription](#step-2-
   
 - OR -
   
- **Purchase a new subscription and licenses:** Follow the steps in [Buy another Office 365 for business subscription](../subscriptions-and-billing/buy-another-subscription.md) to buy a new subscription.
+ **Purchase a new subscription and licenses:** Follow the steps in [Buy another Office 365 for business subscription](../buy-another-subscription.md) to buy a new subscription.
   
 Make sure you purchase a subscription for the same organization that the users are in now. For example, check the email addresses for the users you want to move. If their email addresses include @contoso.com, you must purchase a new subscription for contoso.com. Include a license for each user that you want to move.
   
- **If you need help choosing a plan**, see the [Office 365 for business product comparison](https://go.microsoft.com/fwlink/p/?linkid=842056) page, or [call support](../contact-support-for-business-products.md).
+ **If you need help choosing a plan**, see the [Office 365 for business product comparison](https://go.microsoft.com/fwlink/p/?linkid=842056) page, or [call support](../../admin/contact-support-for-business-products.md).
   
 ## Step 3: Check your new subscription and licenses
 
@@ -69,13 +69,13 @@ Make sure you purchase a subscription for the same organization that the users a
 
    **The new Office 365 for business subscription with available licenses**
 
-    ![The subscription page showing the number of licenses for the new subscription.](../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
+    ![The subscription page showing the number of licenses for the new subscription.](../../admin/media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
 3. **Check that you have enough licenses for each user**
 
     Each user needs a license that matches their subscription. So if you want to move ten users to Office 365 Enterprise E5, you'll need to make sure ten licenses are available. In the picture here, ten licenses were purchased for Office 365 Enterprise E5, and all ten licenses are available for assignment.
 
-4. **Need more licenses for the new subscription?** Go to the **Subscriptions** page and [Buy more licenses](../subscriptions-and-billing/buy-licenses.md).
+4. **Need more licenses for the new subscription?** Go to the **Subscriptions** page and [Buy licenses for your Office 365 for business subscription](../licenses/buy-licenses.md).
   
     [What about the old licenses?](#what-about-the-old-licenses)
 
@@ -85,7 +85,7 @@ Make sure you purchase a subscription for the same organization that the users a
 
 - **If you purchased two subscriptions and they are not both listed here**, they may have been purchased for different organizations (for different domains). Subscriptions can't cross organization boundaries.
 
-- **If you know you have an additional subscription**, and it's not listed here, or not listed under **ACTIVE**, [call support](../contact-support-for-business-products.md).
+- **If you know you have an additional subscription**, and it's not listed here, or not listed under **ACTIVE**, [call support](../../admin/contact-support-for-business-products.md).
 
 ### What about the old licenses?
 
@@ -110,7 +110,7 @@ The licenses for the current subscription will be removed later; you'll only pay
     > [!TIP]
     > To limit which services are available to the user, switch the toggles to the **Off** position for the services that you want to remove for that user. For example, if you want the user to have access to all available services except Skype for Business Online, you can switch the toggle for the Skype for Business Online service to the **Off** position.
   
-    ![Setting license assignments for a user.](../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![Setting license assignments for a user.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 5. Switch the toggle to the **Off** position for licenses that this user no longer needs.
 
@@ -136,16 +136,16 @@ The licenses for the current subscription will be removed later; you'll only pay
     > - To limit which services are available to the user, switch to toggles to the **Off** position for the services that you want to remove for that user. For example, if you want the user to have access to all available services except Skype for Business Online, you can switch the toggle for the Skype for Business Online service to the **Off** position.
     > - Any previous license assignments for the selected users will be removed.
   
-    ![Setting license assignments for a user.](../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![Setting license assignments for a user.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. At the bottom of the **Replace existing products** pane, select **Replace** \> **Close**.
 
 ## Step 5: Cancel subscriptions or remove licenses that you no longer need (Optional)
 
-If you moved all users from one subscription to another, and you no longer need the original subscription, you can [cancel the subscription](../subscriptions-and-billing/cancel-your-subscription.md).
+If you moved all users from one subscription to another, and you no longer need the original subscription, you can [cancel the subscription](cancel-your-subscription.md).
   
-If you moved only some users to a different subscription, [remove licenses](../subscriptions-and-billing/remove-licenses-from-subscription.md) that you no longer need.
+If you moved only some users to a different subscription, [remove licenses](../licenses/remove-licenses-from-subscription.md) that you no longer need.
   
 ## Call support to help you switch plans
 
-[Call support](../contact-support-for-business-products.md)
+[Call support](../../admin/contact-support-for-business-products.md)
