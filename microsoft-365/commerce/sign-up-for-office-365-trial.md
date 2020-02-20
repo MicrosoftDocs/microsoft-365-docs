@@ -35,7 +35,7 @@ You can sign up for a trial Office 365 business subscription for free. You can t
 
 4. The signup process may take several minutes to complete. Once it's complete, you'll get more details on how to start using your subscription.
 
-For more information about setting up your account, see [Set up Office 365 for business](../setup/setup.md).
+For more information about setting up your account, see [Set up Office 365 for business](../admin/setup/setup.md).
 
 ## See also
 

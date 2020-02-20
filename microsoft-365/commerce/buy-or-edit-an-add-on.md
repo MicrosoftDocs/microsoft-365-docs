@@ -218,7 +218,7 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
 
 ## Remove an add-on
 
-You can cancel a standalone add-on the same way that you [cancel a subscription](cancel-your-subscription.md). Or you can set **Recurring billing** to off for a standalone add-on by using the steps above. However, you cannot remove a traditional add-on after it's been bought. If you need to remove a traditional add-on, please [contact support for help](../contact-support-for-business-products.md).
+You can cancel a standalone add-on the same way that you [cancel a subscription](subscriptions/cancel-your-subscription.md). Or you can set **Recurring billing** to off for a standalone add-on by using the steps above. However, you cannot remove a traditional add-on after it's been bought. If you need to remove a traditional add-on, please [contact support for help](../admin/contact-support-for-business-products.md).
   
 ## Available add-ons
 

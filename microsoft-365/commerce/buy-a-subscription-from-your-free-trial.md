@@ -160,6 +160,6 @@ If you purchase a different type of subscription that your trial, you will have 
 
 [Extend your trial](extend-your-trial.md)
   
-[Sign up for Office 365](../admin-overview/sign-up-for-office-365.md)
+[Sign up for Office 365](../admin/admin-overview/sign-up-for-office-365.md)
   
-[Switch to a different Office 365 plan or subscription](switch-to-a-different-plan.md)
+[Switch to a different Office 365 plan or subscription](subscriptions/switch-to-a-different-plan.md)

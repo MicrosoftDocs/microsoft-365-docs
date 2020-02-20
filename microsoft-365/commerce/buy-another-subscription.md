@@ -61,7 +61,7 @@ After purchasing a new subscription, you'll need to assign the users who you wan
 
     You'll see the subscriptions that are available to your organization. Any subscriptions that you've already purchased are identified like this.
 
-    ![Banner that shows that a subscription has already been purchased for this organization.](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![Banner that shows that a subscription has already been purchased for this organization.](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)![9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. Mouse over or tap the subscription that you want to buy, and then select **Buy Now**.
 
@@ -108,6 +108,6 @@ After purchasing a new subscription, you'll need to assign the users who you wan
 
 ## Related articles
 
-[Assign licenses to users](../manage/assign-licenses-to-users.md)
+[Assign licenses to users](../admin/manage/assign-licenses-to-users.md)
   
-[Remove licenses from users](../manage/remove-licenses-from-users.md)
+[Remove licenses from users](../admin/manage/remove-licenses-from-users.md)

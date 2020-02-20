@@ -45,7 +45,7 @@ We've starting to roll out the ability to change your payment method from credit
 
 ![Screen capture: Billing section of subscription card with a credit card as the payment method.](media/MAC-BillingEditCreditCard.png)
 
-Want to read more about it? [Change from credit card or bank account to invoice](subscriptions-and-billing/change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)
+Want to read more about it? [Change from credit card or bank account to invoice](../commerce/billing-and-payments/change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)
 
 ### Global reader
 
