@@ -295,4 +295,4 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations Super
 
 ## Ready to get started?
 
-To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for your Microsoft 365 organization (preview)](communication-compliance-configure.md).
+To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for your Microsoft 365 organization](communication-compliance-configure.md).

@@ -75,8 +75,11 @@
   href: protect-information.md
   items: 
     - name: Sensitivity labels
-      href: sensitivity-labels.md
-      items: 
+      items:
+        - name: Learn about sensitivity labels
+          href: sensitivity-labels.md
+        - name: Get started with sensitivity labels
+          href: get-started-with-sensitivity-labels.md
         - name: Create and publish sensitivity labels
           href: create-sensitivity-labels.md
         - name: Restrict access to content by using sensitivity labels to apply encryption
@@ -89,7 +92,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Sensitivity labels in Office apps
+        - name: Use sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
     - name: Data loss prevention (DLP)
       href: data-loss-prevention-policies.md
@@ -697,7 +700,7 @@
   items: 
     - name: Search the audit log
       href: search-the-audit-log-in-security-and-compliance.md
-    - name: Advanced audit
+    - name: Advanced Audit
       href: advanced-audit.md
     - name: Turn audit log search on or off
       href: turn-audit-log-search-on-or-off.md

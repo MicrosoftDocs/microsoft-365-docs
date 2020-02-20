@@ -132,7 +132,7 @@ If you want to release messages to recipients, your options are:
 
 2. Click on a message to select it and then click the **Release Message** icon as shown in the following screen shot.
 
-   ![Shows the quarantine page with the release message icon highlighted and the release options displaying](../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
+   ![Shows the quarantine page with the release message icon highlighted and the release options displaying](../../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
 
    Click **Release selected message and allow sender** from the drop-down list.
 
@@ -152,7 +152,7 @@ If you want to release messages to recipients, your options are:
 
 4. Click **release**.
 
-If you click **Refresh** ![Refresh Icon](../media/ITPro-EAC-RefreshIcon.gif) to refresh your data, and then double-click the message, you should see that it's been released to the intended recipients.
+If you click **Refresh** ![Refresh Icon](../../media/ITPro-EAC-RefreshIcon.gif) to refresh your data, and then double-click the message, you should see that it's been released to the intended recipients.
 
 ### Release one or more quarantined messages to all recipients
 
@@ -179,7 +179,7 @@ If you click **Refresh** ![Refresh Icon](../media/ITPro-EAC-RefreshIcon.gif) to 
 > [!TIP]
 > Help ensure that a message isn't marked as spam by following the steps in [How to help ensure that a message isn't marked as spam](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md).
 
-If you click the **Refresh**![Refresh Icon](../media/ITPro-EAC-RefreshIcon.gif) icon to refresh your data, and then double-click the message, you should see that it's been released to the intended recipients.
+If you click the **Refresh**![Refresh Icon](../../media/ITPro-EAC-RefreshIcon.gif) icon to refresh your data, and then double-click the message, you should see that it's been released to the intended recipients.
 
 ## For more information
 

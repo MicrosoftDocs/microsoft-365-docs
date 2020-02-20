@@ -42,10 +42,10 @@ The Junk Email Reporting Add-in helps you submit reports to the Microsoft Exchan
 1. Right-click the message or messages that you want to report as junk.
 
 2. Select **Junk** and then click **Report Junk**.
-    ![Report junk messages from your Inbox](../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
+    ![Report junk messages from your Inbox](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
 
 3. The **Microsoft Junk E-mail Reporting Add-in** dialog box opens. If you're sure that you want to submit the messages you selected as junk, click **Yes**.
-    ![Confirm report as junk](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+    ![Confirm report as junk](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
 
     > [!NOTE]
     > If you don't want to receive this confirmation message when submitting junk messages, check **Do not show this message again**.
@@ -55,10 +55,10 @@ The selected messages will be sent to Microsoft for analysis and moved to the Ju
 ### To report a junk email message from within an opened message
 
 1. From within an opened message, click the **Report Junk** button on the message ribbon. For example, click **Junk** \> **Report Junk**
-    ![Report a junk email from within a message](../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
+    ![Report a junk email from within a message](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
 
 2. The **Microsoft Junk E-mail Reporting Add-in** dialog box opens. If you're sure that you want to submit the message you selected as junk, click **Yes**.
-    ![Confirm report as junk](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+    ![Confirm report as junk](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
 
     > [!NOTE]
     > If you don't want to receive this confirmation message when submitting junk messages, check **Do not show this message again**.

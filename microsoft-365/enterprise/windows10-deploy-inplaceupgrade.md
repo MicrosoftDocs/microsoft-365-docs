@@ -18,7 +18,7 @@ ms.author: greglin
 
 *This article applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 The simplest path to upgrade PCs currently running Windows 7 or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Configuration Manager (Configuration Manager) task sequence to completely automate the process. 
 
@@ -30,7 +30,7 @@ Follow these steps to configure and deploy a Windows 10 Enterprise image using M
 
 The Configuration Manager poster is one page in landscape mode (17x11). Click the image below to view a PDF in your browser. 
 
-[![Deploy Windows 10 with Configuration Manager poster](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
+[![Deploy Windows 10 with Configuration Manager poster](../media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
 You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) format.
 
@@ -146,4 +146,4 @@ As an interim checkpoint, you can see the [exit criteria](windows10-exit-criteri
 
 |||
 |:-------|:-----|
-|![Step 3](./media/stepnumbers/Step3.png)| [Deploy Windows 10 Enterprise for new devices with Windows Autopilot](windows10-deploy-autopilot.md) |
+|![Step 3](../media/stepnumbers/Step3.png)| [Deploy Windows 10 Enterprise for new devices with Windows Autopilot](windows10-deploy-autopilot.md) |

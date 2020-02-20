@@ -40,7 +40,7 @@ Sensitivity labels must be enabled for files that are in SharePoint and OneDrive
 
 A [retention label](labels.md) allows you to define how long a labeled item is kept and the steps to be taken prior to deleting it. They are applied manually or automatically via policies. They can play a role in helping your organization stay in compliance with legal and regulatory requirements.
 
-![content explorer collapsed screenshot](media/data-classification-content-explorer-1.png)
+![content explorer collapsed screenshot](../media/data-classification-content-explorer-1.png)
 
 ### Permissions
 

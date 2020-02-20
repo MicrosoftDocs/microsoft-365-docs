@@ -18,13 +18,13 @@ ms.collection: m365-security-compliance
 
 Insider risk management users are employees in your organization that are included in one or more insider risk management policies. Use the **Users dashboard** to quickly review risk information about employees and to add an employee to an existing insider risk management policy. Each user included in an insider risk management policy has the following information displayed on the **Users dashboard**:
 
-- **Users**: The user name for a user.
-- **Risk level**: 
+- **Users**: The username for a user.
+- **Risk level**: The current calculated risk level of the user. This score is calculated every 24 hours and uses the alert risk scores from all active alerts associated to the user.
 - **Active alerts**: The number of active alerts for all policies.
 - **Confirmed violations**: The number of cases resolved as *confirmed policy violation* for the user.
 - **Case**: The current active case for the user.
 
-![Insider risk management users dashboard](media/insider-risk-users-dashboard.png)
+![Insider risk management users dashboard](../media/insider-risk-users-dashboard.png)
 
 ## View user details
 
@@ -49,5 +49,5 @@ Complete the following steps to add a user to an existing insider risk policy:
 2. Select **Add a user to a policy** on the toolbar.
 3. On the **Add a new user** dialog, start typing a user name in the **User** field. Select the user you want to add to a policy.
 4. Select the dropdown arrow for the **Policy** field to display configured insider risk management policies. Select the policy to add the user to.
-5. Use the **Monitoring window** slider control to define the...... The range for the monitoring window is 5 to 30 days.
+5. Use the **Monitoring window** slider control to define how long the policy is active for this user and is triggered when the user performs the first activity matching the policy The range for the monitoring window is 5 to 30 days.
 6. Select **Add** and then **Confirm** to add the user to the policy.

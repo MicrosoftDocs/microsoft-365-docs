@@ -56,7 +56,7 @@ When you create a ServiceNow ticket from the Microsoft 365 security center, the 
 
 Navigate to the Microsoft 365 security center home page to see the ServiceNow connection card.
 
-![Do you use ServiceNow](../images/do-you-use-servicenow-250.png)
+![Do you use ServiceNow](../../media/do-you-use-servicenow-250.png)
 
 Select "Connect to ServiceNow" to go to the ServiceNow setup page. Follow the instructions to authorize the Microsoft 365 Connector app.
 
@@ -69,7 +69,7 @@ After you have followed the directions and authorizing the connection, view the 
 
 Once the integration is set up, create ServiceNow tasks based on specific Microsoft Secure Score improvement actions. Go to any improvement action in Secure Score in the Microsoft 365 security center portal, and select the “share” icon. One of the dropdown options is ServiceNow.
 
-![ServiceNow sharing in Secure Score](../images/servicenow-share.png)
+![ServiceNow sharing in Secure Score](../../media/servicenow-share.png)
 
 A task is generated where you can set the priority and edit the name, description, or due date. Once all the required fields are filled in, send the task to ServiceNow.
 
@@ -79,7 +79,7 @@ The task is visible in ServiceNow as a Microsoft 365 Security and Configuration 
 
 Once ServiceNow change management and incident management tickets have been created, they are displayed on cards in the Microsoft 365 security center home page. From these cards, you can create a ticket, view all tickets, or manage the ServiceNow configuration.
 
-![ServiceNow change management tickets](../images/change-management-375.png)  ![ServiceNow incident management tickets](../images/incident-management-375.png)
+![ServiceNow change management tickets](../../media/change-management-375.png)  ![ServiceNow incident management tickets](../../media/incident-management-375.png)
 
 To re-provision or manage your ServiceNow integration in the Microsoft 365 security center, select **Manage ServiceNow configuration** on either of the cards. From there, remove the current ServiceNow connection and customize ticket state names.
 

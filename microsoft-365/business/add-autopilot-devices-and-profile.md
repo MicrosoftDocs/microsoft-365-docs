@@ -39,7 +39,7 @@ Devices must meet these requirements:
     
 ## Use the setup guide to create devices and profiles
 
-[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 If you haven't created device groups or profiles yet, the best way to get started is by using the step-by-step guide. You can also [add devices](create-and-edit-autopilot-devices.md) and [assign profiles](create-and-edit-autopilot-profiles.md) to them without using the guide. 
   
@@ -47,11 +47,11 @@ If you haven't created device groups or profiles yet, the best way to get starte
 
 2. On the left navigation pane, choose **Devices** \> **AutoPilot**.
 
-    ![In the admin center, choose devices and then AutoPilot.](media/AutoPilot.png)
+    ![In the admin center, choose devices and then AutoPilot.](../media/AutoPilot.png)
   
 2. On the **AutoPilot** page, click or tap **Start guide**.
     
-    ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
+    ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
 3. On the **Upload .csv file with list of devices** page, browse to a location where you have the prepared .CSV file, then **Open** \> **Next**. The file must have three headers:
     

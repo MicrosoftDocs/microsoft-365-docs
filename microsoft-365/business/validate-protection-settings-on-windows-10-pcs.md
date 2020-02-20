@@ -33,11 +33,11 @@ After you [set up app protection policies](protection-settings-for-windows-10-de
   
 1. After you sign in with Microsoft 365 Business credentials and connect to Azure AD as described in [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md), go to **Windows Settings** \> **Accounts** \> **Access work or school**. Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.
     
-    ![Click or tap Info on the Connected to Azure AD dialog.](media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
+    ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
 2. On the **Managed by** \<tenant name\> page, you can see the **Connection info** that includes a **Management Server Address** like the one shown in the following figure. 
     
-    ![Managed by page shows connection info of the device manager URL.](media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
+    ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
  **Verify that you cannot paste company data in a non-managed app**
   
@@ -49,7 +49,7 @@ After you [set up app protection policies](protection-settings-for-windows-10-de
     
     You'll receive an error that states the app can't access content.
     
-    ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
+    ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
     You can, however, paste the same content into Word 2016.
     
@@ -65,11 +65,11 @@ After you [set up app protection policies](protection-settings-for-windows-10-de
     
 4. On the **Access work or school** page, choose the **Work or school account**, and then choose **Info**.
     
-    ![Click or tap Info on the Work or school account dialog.](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
+    ![Click or tap Info on the Work or school account dialog.](../media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
   
 5. On the **Access work or school** page, you can see the **Connection info** that includes a **Management Server Address** like the one shown in the following figure, and includes the words  *wip*  and  *mam*  within. 
     
-    ![Managed by page shows connection info URL that includes the words mam and wpi.](media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
+    ![Managed by page shows connection info URL that includes the words mam and wpi.](../media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
   
  **Verify that you cannot paste company data in a non-managed app**
   
@@ -81,7 +81,7 @@ After you [set up app protection policies](protection-settings-for-windows-10-de
     
     You'll receive an error that states App can't access content.
     
-    ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
+    ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
     You can, however, paste the same content into Word 2016.
     

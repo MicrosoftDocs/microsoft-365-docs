@@ -1,5 +1,5 @@
 ---
-title: "Sensitivity labels in Office apps"
+title: "Use sensitivity labels in Office apps"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,18 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about how users work with sensitivity labels in Office apps for the desktop, Office apps for mobile, and Office apps for the web. Find out which apps support sensitivity labels."
+description: "Learn about how users work with Use sensitivity labels in Office apps for the desktop, Office apps for mobile, and Office apps for the web. Find out which apps support sensitivity labels."
 ---
 
-# Sensitivity labels in Office apps
+# Use sensitivity labels in Office apps
 
-This article describes:
+When you have [published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) sensitivity labels from the Microsoft 365 compliance center or equivalent labeling center, they start to appear in Office apps for users to classify and protect data as it's created or edited.
 
-- Requirements for your environment before you apply sensitivity labels to email, files, and attachments.
-- Which sensitivity label capabilities are supported by each Office app.
-- What happens when you combine sensitivity labels with other Microsoft security and compliance technologies that work with Office apps.
-- How people in your organization can use sensitivity labels when they work with Office apps for Windows and Office apps for the web.
-- Additional resources to help people in your organization start to use sensitivity labels.
+Use the information in this article to help you successfully manage sensitivity labels in Office apps. For example, identify the minimum versions of apps you need to support built-in labeling, and understand interactions with the Azure Information Protection unified labeling client and compatibility with other apps and services.
 
 ## Subscription and licensing requirements for sensitivity labels
 
@@ -65,7 +61,7 @@ Additional capabilities are available when you install the Azure Information Pro
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Preview: Rolling out to [Office Insider](https://office.com/insider)            | Preview: Rolling out to [Office Insider](https://office.com/insider)        | Under review   | Under review         | Under review                                                        |
+|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Preview: In [Office Insider](https://office.com/insider)            | Preview: In [Office Insider](https://office.com/insider)        | Under review   | Under review         | Under review                                                        |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: In [Office Insider](https://office.com/insider)                                  | Under review | Under review | Under review | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -88,7 +84,7 @@ Additional capabilities are available when you install the Azure Information Pro
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: Rolling out to [Office Insider](https://office.com/insider)                       | Under review                    | Under review           | Under review               | Yes |
 |
 
-## About the Office built-in labeling client
+## Office built-in labeling client and the Azure Information Protection client
 
 The Office built-in labeling client downloads sensitivity labels and sensitivity label policy settings from the following admin centers:
 
@@ -122,21 +118,24 @@ If you need to convert existing protection templates to labels, use the Azure po
 
 Users can apply just one label at a time for each document or email.
 
-When you label an email message that has attachments, the attachments don't inherit the label. If the attachments had a label they keep that separately applied label. If the attachments didn't have a label, then the attachments remain without a label. However, if the label for the email applies protection, that protection is applied to Office attachments.
+When you label an email message that has attachments, the attachments don't inherit the label:
+
+- If the attachments have a label, they keep that separately applied label.
+- If the attachments don't have a label, the attachments remain without a label. However, if the label for the email applies protection, that protection is applied to Office attachments.
 
 ## Sensitivity label compatibility
 
-**With RMS-enlightened apps**. If you open a labeled _and encrypted_ document or email in an [RMS-enlightened application](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) that doesn't support sensitivity labels, the app still enforces encryption and rights management.
+**With RMS-enlightened apps**: If you open a labeled and encrypted document or email in an [RMS-enlightened application](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) that doesn't support sensitivity labels, the app still enforces encryption and rights management.
 
-**With Azure Information Protection client**. You can view and change sensitivity labels that you apply to documents and emails with the Office built-in labeling client with the Azure Information Protection client, and the other way around.
+**With the Azure Information Protection client**: You can view and change sensitivity labels that you apply to documents and emails with the Office built-in labeling client by using the Azure Information Protection client, and the other way around.
 
-**With other versions of Office**. Any authorized user can open labeled documents and emails in other versions of Office. However, you can only view or change the label in supported Office versions or in the Azure Information Protection client. Supported Office app versions are listed in the tables in this article.
+**With other versions of Office**: Any authorized user can open labeled documents and emails in other versions of Office. However, you can only view or change the label in supported Office versions or by using the Azure Information Protection client. Supported Office app versions are listed in the [previous section](#support-for-sensitivity-label-capabilities-in-apps).
 
 ## Support for SharePoint and OneDrive files protected by sensitivity labels
 
-To use the Office built-in labeling client in Office on the web, the document must be located in a OneDrive for Business or SharePoint Online instance that has opted-in to the [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+To use the Office built-in labeling client with Office on the web for documents in OneDrive for Business or SharePoint Online, make sure you've opted-in to the preview to [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## When Office 365 applies content marking and encryption to content
+## When Office 365 applies content marking and encryption
 
 Office 365 applies content marking and encryption with a sensitivity label differently, depending on the app you use.
 
@@ -147,7 +146,7 @@ Office 365 applies content marking and encryption with a sensitivity label diffe
 | Outlook on the web, iOS, and Android | After Exchange Online sends the email | After Exchange Online sends the email |
 |
 
-## More resources
+## End-user documentation
 
 - [Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 
