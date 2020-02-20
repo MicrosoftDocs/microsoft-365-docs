@@ -48,6 +48,6 @@ While viewing the [details of an investigation](air-view-investigation-results.m
  - **Approve** allows remediation to begin.
  - **Reject** takes no further action
 
-## Next steps
+## Related articles
 
-- [Learn more about Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+[Learn about automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
