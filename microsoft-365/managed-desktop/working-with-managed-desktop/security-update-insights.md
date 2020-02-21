@@ -17,7 +17,7 @@ To view usage data, select the <strong>Windows security updates</strong> tab.
 
 ## Device status
 
-For devices to be updated by Windows Update, they must be connected to the Internet and not hibernating for a minimum of six hours, two of which must be continuous. As long as a device is connected and not hibernating, it's considered to be "in use." Although it's possible that a device that doesn't meet these requirements will be updated, devices that meet them have the highest likelihood of being updated during the current update cycle. 
+For devices to be updated by Windows Update, they must be connected to the Internet and not hibernating for a minimum of six hours, two of which must be continuous. As long as a device is connected and not hibernating, it's considered to be "in use." Although it's possible that a device that doesn't meet these requirements will be updated, devices that meet them have the highest likelihood of being updated. 
 
 We categorize device activity in the context of Windows Update with these terms:
 
@@ -30,7 +30,7 @@ We categorize device activity in the context of Windows Update with these terms:
 
 ## Update version status
 
-Microsoft releases security updates every second Tuesday of the month. Each release adding important updates for known security vulnerabilities. Microsoft Managed Desktop ensures that 95% of its managed devices are updated with the latest available cumulative update every month. {careful--the often-spoken-of "latest cumulative update" isn't just security updates, I don't think.}
+Microsoft releases security updates every second Tuesday of the month. Each release adds important updates for known security vulnerabilities. Microsoft Managed Desktop ensures that 95% of its managed devices are updated with the latest available security update every month. Security updates are sometimes released at other times to urgently address new threats. Microsoft Managed Desktop deploys these updates in a similar fashion.
 
 We categorize the status of security update versions with these terms:
 
@@ -38,7 +38,7 @@ We categorize the status of security update versions with these terms:
 - <strong>Previous:</strong> Devices running the update that was released in the previous month
 - <strong>Older:</strong> Devices running any security update released prior to the previous month
 
-You should see few devices in the <strong>Older</strong> category--a large or growing population probably indicates a systemic problem that you should investigate. {can we suggest a potential example that would cause this?}
+You should see few devices in the <strong>Older</strong> category--a large or growing population probably indicates a systemic problem that you should report to Microsoft Managed Desktop so we can investigate.
 
 
 ## Deployment progress
@@ -47,11 +47,9 @@ At the beginning of each security update release cycle, Microsoft Managed Deskto
 
 You can view this data for previous update cycles by using the dropdown menu in the upper right. The period you select in this menu applies to all of the information on the whole page.
 
-{we should also explain how all this works for out-of-band security updates....}
+The <strong>Updated active devices by deployment group</strong> area offers a different view by showing the progress of the update installation for each of the Microsoft Managed Desktop deployment groups.
 
-The <strong>Updated active devices by deployment group</strong> area offers a different view by showing the progress of the update installation for each of the Microsoft Managed Desktop Deployment groups.
-
-The <strong>Days to reach target</strong> area displays how long it took for 95% of the total number of devices to be updated with the current security update. {maybe we should clarify a little here? Like, say it's 3 days after the update is released--does it show how long it took to get to 95% for the previous release or what does it do after the release and before the 95% occurs?}
+The <strong>Days to reach target</strong> area displays how long it took for 95% of the total number of devices to be updated with the current security update. While deployment is underway, this area displays <strong>Still updating</strong> until the 95% target is reached for the selected update.
 
 ## Device details area
 
