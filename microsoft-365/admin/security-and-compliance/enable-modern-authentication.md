@@ -32,11 +32,10 @@ To enable modern authentication for any Windows devices that have Office 2013 in
   
 To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
   
-|
-|
-|**Registry key**|**Type**|**Value** <br/>|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  <br/> |REG_DWORD  <br/> |1  <br/> |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version  <br/> |REG_DWORD  <br/> |1  <br/> |
+|**Registry key**|**Type**|**Value** |
+|:-------|:------:|--------:|
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
    
 Once you have set the registry keys, you can set Office 2013 devices apps to use [multifactor authentication (MFA)](set-up-multi-factor-authentication.md) with Office 365 
   
@@ -46,10 +45,9 @@ If you're currently signed-in with any of the client apps, you need to sign out 
 
 To disable modern authentication on a device, set the following registry keys on the device:
   
-|
-|
-|**Registry key**|**Type**|**Value** <br/>|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  <br/> |REG_DWORD  <br/> |0  <br/> |
+|**Registry key**|**Type**|**Value**|
+|:-------|:------:|--------:|
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL |REG_DWORD|0|
    
 ## Related articles
 [Sign in to Office 2013 with a second verification method](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx)
