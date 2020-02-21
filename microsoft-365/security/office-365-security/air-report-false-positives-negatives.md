@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 02/04/2020
+ms.date: 02/21/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -60,7 +60,6 @@ With Threat Explorer, your security operations team can find an email affected b
 |---------|---------|---------|
 |An email message was routed to a user's Junk Email folder     |- Move the message to the user's Deleted Items folder<br/>- Move the message to the user's Inbox <br/>- Delete the message          |[Find and investigate malicious email that was delivered in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered) |
 |An email message or a file was quarantined     |- Release the email or file <br/>- Delete the email or file         |[Manage quarantined messages and files as an administrator in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files) |
-|(next scenario here) |(options) |(link) |
 
 
 ### Undo an action using the Action center
