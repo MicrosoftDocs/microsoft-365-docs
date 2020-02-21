@@ -31,7 +31,6 @@ If you're an admin, [admin.microsoft.com](https://admin.microsoft.com) is your g
 
 <ul class="panelContent cardsW">
     <li>
-        <a href=" ">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -49,10 +48,8 @@ If you're an admin, [admin.microsoft.com](https://admin.microsoft.com) is your g
                 </div>
             </div>
         </div>
-        </a>
     </li>
     <li>
-        <a href="  ">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -70,10 +67,8 @@ If you're an admin, [admin.microsoft.com](https://admin.microsoft.com) is your g
                 </div>
             </div>
         </div>
-        </a>
     </li>
     <li>
-        <a href="  ">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -91,27 +86,25 @@ If you're an admin, [admin.microsoft.com](https://admin.microsoft.com) is your g
                 </div>
             </div>
         </div>
-        </a>
     </li>
 </ul>
 
 ## Integrated help
-Help is integrated throughout the admin center, so it's right there when you need it. At the top of many pages, you'll find inline help text that provides an informational overview of the task at hand, as well as links to articles that let you quickly find official documentation for more in-depth learning. 
+Help is integrated throughout the admin center, so it's right there when you need it. At the top of many pages, you'll find inline help text that provides an informational overview of the task at hand, as well as links to articles that let you quickly find official documentation for more in-depth learning.
 
 ![Groups page showing inline help and links to articles](../media/integrated-help.png)
 
 ## Modern self-help powered by AI
 
 Selecting the "Need Help" button in the Microsoft 365 admin center opens our modern self-help experience powered by artificial intelligence. For example, if you search for *verify my domain*, 
-you'll get the steps plus a few articles we think will help you. We use machine learning to surface the closest solution that has been found to be of help to other admins who have entered similar queries. 
+you'll get the steps plus a few articles we think will help you. We use machine learning to surface the closest solution that has been found to be of help to other admins who have entered similar queries.
 
-Or, for those times when you don't quite know how to get something done in your specific situation, use the Support Assistant. This experience is currently available only in English. Just use the toggle at the top of the "Need Help" pane to turn it on. The Support Assistant provides a conversational interface for getting help. Enter your query, and the chatbot will ask clarifying questions to get you to the right answer for your specific situation. Think of it as your virtual helper to discover solutions and complete tasks. 
+Or, for those times when you don't quite know how to get something done in your specific situation, use the Support Assistant. This experience is currently available only in English. Just use the toggle at the top of the "Need Help" pane to turn it on. The Support Assistant provides a conversational interface for getting help. Enter your query, and the chatbot will ask clarifying questions to get you to the right answer for your specific situation. Think of it as your virtual helper to discover solutions and complete tasks.
 
 ![Modern self-help](../media/help-options.png)
- 
-Of course, sometimes questions are best answered by humans. If our modern self-help doesn't have the answer, you always have the option to contact our support agents. 
+
+Of course, sometimes questions are best answered by humans. If our modern self-help doesn't have the answer, you always have the option to contact our support agents.
 
 ## Guides and articles
 
 Additionally, if you're looking for comprehensive deployment guides, quick step-by-step procedures, or PowerShell cmdlets, look us up on the web. We update content frequently and try to provide you with the latest information. Check out our articles and guides at the [Microsoft 365 Documentation](https://docs.microsoft.com/microsoft-365/) site.
-

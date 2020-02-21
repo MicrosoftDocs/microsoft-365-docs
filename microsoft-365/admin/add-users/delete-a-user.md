@@ -58,7 +58,7 @@ Before you begin, think about what you want to do with the user's email and OneD
 |Product licenses  <br/> |You can remove the license from the user and remove it from your subscriptions to stop paying for that license. If you select this option, the license will be removed automatically from your subscriptions.  <br/><br/> **You can't remove the license** if you bought it through a Partner or volume licensing. If you are paying for an annual plan or if you are in the middle of a billing cycle, you won't be able to remove the license from your subscription until your commitment is completed.  <br/> |
 |OneDrive content  <br/> |If the user saved their files to OneDrive, you can give another user access to these files.  <br/><br/> You'll need to move the files you want to keep within the retention period that is set for OneDrive files. **By default, the retention period is 30 days.** If you don't move the files within the retention period after deleting the user, the OneDrive content will be permanently deleted. To increase the number of days that you retain OneDrive files for deleted accounts, see [Set the OneDrive retention for deleted users](https://support.office.com/article/fa1641ea-9f03-4f34-a826-dbd8697e76fe.aspx).  <br/><br/> **Important!** If the deleted user used a personal computer to download files from SharePoint and OneDrive, there's no way for you to wipe those files they stored on their computer. They will continue to have access to any files that were synced from OneDrive.           |
 |Email  <br/> | Giving another user access to the deleted user's email will convert the deleted user's mailbox to a shared mailbox. The new mailbox owner can then access the mailbox and monitor for new email. You'll also have the following options:  <br/>  <br/>Change the display name - We recommend changing the display name so that it will be easy to identify the shared mailbox in the Active users list.  <br/>  Turn on automatic replies - We've already written a polite automatic reply for you. You can send a different automatic replies to people within your organization and people from outside your organization.  <br/> <br/> Clean up aliases - Aliases are additional email addresses for users. Some organizations don't use them, so if you don't have any you don't need to do anything else here. If the user does have aliases, we recommend removing them so that you can re-use those email addresses. Otherwise, you can’t re-use those email addresses until the retention period for deleted mailboxes has passed. By default, a deleted mailbox is recoverable for 30 days. For more information, see  [Delete or restore user mailboxes in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
-|Active Directory  <br/> |If your business uses **Active Directory** that is synchronizing with Azure AD, you need to delete the user account from Active Directory. You can't do it through Office 365. For instructions, see [Delete a User Account](https://go.microsoft.com/fwlink/?linkid=841808).  <br/> |
+|Active Directory  <br/> |If your business uses **Active Directory** that is synchronizing with Azure AD, you need to delete the user account from Active Directory. You can't do it through Office 365. For instructions, see [Delete a User Account](https://go.microsoft.com/fwlink/p/?linkid=841808).  <br/> |
    
 ### Get started
 
@@ -88,9 +88,8 @@ Since the guided experience walks through the steps to delete a user, here's how
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
 ::: moniker-end
-   
-3. Select the user you want to delete, and then select **Delete user**.
-    
+
+2. Select the user you want to delete, and then select **Delete user**.
 
 ## User management admin: Delete one or more users from Office 365
 
@@ -102,8 +101,8 @@ Since the guided experience walks through the steps to delete a user, here's how
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.  
 
 2. Select the names of the users that you want to delete, select **More options** (**...**), and then choose  **Delete user**.
-   <br/>  
-     Although you deleted the user's account, **you're still paying for the license**. See the next procedure to stop paying for the license.  Or, you can assign the license to another user. It won't be assigned to someone automatically.
+
+   Although you deleted the user's account, **you're still paying for the license**. See the next procedure to stop paying for the license.  Or, you can assign the license to another user. It won't be assigned to someone automatically.
 
 ::: moniker-end
 
@@ -112,8 +111,8 @@ Since the guided experience walks through the steps to delete a user, here's how
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 2. Select the names of the users that you want to delete, and in the **Bulk actions** pane, choose **Delete users**.
-   <br/>  
-     Although you deleted the user's account, **you're still paying for the license**. See the next procedure to stop paying for the license.  Or, you can assign the license to another user. It won't be assigned to someone automatically.
+
+   Although you deleted the user's account, **you're still paying for the license**. See the next procedure to stop paying for the license.  Or, you can assign the license to another user. It won't be assigned to someone automatically.
 
 ::: moniker-end
 
@@ -122,11 +121,10 @@ Since the guided experience walks through the steps to delete a user, here's how
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
 2. Select the names of the users that you want to delete, and in the **Bulk actions** pane, choose **Delete users**.
-   <br/>  
-     Although you deleted the user's account, **you're still paying for the license**. See the next procedure to stop paying for the license.  Or, you can assign the license to another user. It won't be assigned to someone automatically.
+
+   Although you deleted the user's account, **you're still paying for the license**. See the next procedure to stop paying for the license.  Or, you can assign the license to another user. It won't be assigned to someone automatically.
 
 ::: moniker-end
-
 
 ### Stop paying for the license
 
@@ -134,18 +132,17 @@ Reducing the number of licenses is a separate step that can only be performed by
   
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page. If you don't see this option, you aren't a global admin or billing admin, and can't do this step. 
-    
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page. If you don't see this option, you aren't a global admin or billing admin, and can't do this step.
+
 2. Select the subscription (if you have more than one) and then select **Add/Remove licenses** to delete the license so you don't pay for it until you hire another person.  
 
    Later when you go through the steps to add another person to your business, you'll be prompted to buy a license at the same time, with just one step!
 
-   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page. If you don't see this option, you aren't a global admin or billing admin, and can't do this step. 
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page. If you don't see this option, you aren't a global admin or billing admin, and can't do this step.
 
 2. Select the subscription (if you have more than one) and then select **Add/Remove licenses** to delete the license so you don't pay for it until you hire another person.  
 
@@ -155,7 +152,7 @@ Reducing the number of licenses is a separate step that can only be performed by
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page. If you don't see this option, you aren't a global admin or billing admin, and can't do this step. 
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page. If you don't see this option, you aren't a global admin or billing admin, and can't do this step.
 
 2. Select the subscription (if you have more than one) and then select **Add/Remove licenses** to delete the license so you don't pay for it until you hire another person.  
 
@@ -163,26 +160,23 @@ Reducing the number of licenses is a separate step that can only be performed by
 
 ::: moniker-end 
 
-   
 ## Delete many users at the same time
 
+See the [Remove-MsolUser](https://go.microsoft.com/fwlink/p/?linkid=842230) PowerShell cmdlet.
 
-See the [Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) PowerShell cmdlet. 
-  
-    
 ## Fix issues with deleting a user
 
 Here are the most common issues people encounter when deleting a user:
   
-- **You get an error message along the lines of "User cannot be deleted. Please try again later."** Doublecheck whether the account has email forwarding set up on it, or it's been converted to a shared mailbox. Both of these will cause that error. Don't delete the account if it has email forwarding or it's been converted to a shared mailbox. 
-    
-- **You don't have the appropriate permissions to delete a user**. Only people who are [Office 365 global admins or user management admins](about-admin-roles.md) can delete users. Usually this is the technical support in your school or business. 
-    
-- **You delete the user but their name continues appear in your global address book**. This happens when a business is using Active Directory. You have to delete the users account from Active Directory. For instructions, see this TechNet article: [Delete a User Account.](https://go.microsoft.com/fwlink/?linkid=841808)
-    
+- **You get an error message along the lines of "User cannot be deleted. Please try again later."** Doublecheck whether the account has email forwarding set up on it, or it's been converted to a shared mailbox. Both of these will cause that error. Don't delete the account if it has email forwarding or it's been converted to a shared mailbox.
+
+- **You don't have the appropriate permissions to delete a user**. Only people who are [Office 365 global admins or user management admins](about-admin-roles.md) can delete users. Usually this is the technical support in your school or business.
+
+- **You delete the user but their name continues appear in your global address book**. This happens when a business is using Active Directory. You have to delete the users account from Active Directory. For instructions, see this TechNet article: [Delete a User Account.](https://go.microsoft.com/fwlink/p/?linkid=841808)
+
 ||
 |:-----|
-|**Do you want to delete Office 365 from your computer? Go to [Cancel your subscription](../subscriptions-and-billing/cancel-your-subscription.md).**|
+|**Do you want to delete Office 365 from your computer? Go to [Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).**|
    
 ## Related articles
 
@@ -194,6 +188,4 @@ Here are the most common issues people encounter when deleting a user:
 
 [Add a new employee to Office 365](add-new-employee.md)
 
-  
-[Delete a User Account](https://go.microsoft.com/fwlink/?linkid=841808): Use these instructions if your business uses **Active Directory** that is synchronizing with Azure AD. You can't do it through Office 365. 
-  
+[Delete a User Account](https://go.microsoft.com/fwlink/p/?linkid=841808): Use these instructions if your business uses **Active Directory** that is synchronizing with Azure AD. You can't do it through Office 365.

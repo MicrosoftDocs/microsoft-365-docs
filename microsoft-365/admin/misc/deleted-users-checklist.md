@@ -36,7 +36,7 @@ You can block the user so they can't sign in to your Office 365 organization. Yo
   
 ## Get their data
 
-You can send this user's email to another employee or user in your organization by following these [steps](../admin/add-users/remove-former-employee.md). You can also back up and save any data from the former employee by following these [steps](../add-users/get-access-to-and-back-up-a-former-user-s-data.md).
+You can send this user's email to another employee or user in your organization by following these [steps](../add-users/remove-former-employee.md). You can also back up and save any data from the former employee by following these [steps](../add-users/get-access-to-and-back-up-a-former-user-s-data.md).
   
 ## Delete user
 
@@ -49,5 +49,3 @@ If you have a new employee or person that's joining your organization, you can a
 ## Remove license so you don't have to pay for it
 
 You can also remove license from your subscription so you don't have to pay for it. From the admin center home page, type **subscription** and select **View subscriptions**. Select **Add/remove licenses**. In the **Total licenses** box, enter the total number of licenses that you need for this subscription and then select **Submit change**. For example, if you had 5 licenses and you need to remove 1 of them, you would enter **4**. [Read full article](../../commerce/licenses/remove-licenses-from-subscription.md).
-  
-
