@@ -56,7 +56,7 @@ As an administrator, you can:
 
 If you prefer a more automated way to manage the lifecycle of your Office 365 Groups you can use expiration policies to expire groups at a specific time interval. The group's owners will get an email 30, 15 and 1 day before the group expiration that allows them to easily renew the group if it's still needed. See: [Office 365 Group Expiration Policy](office-365-groups-expiration-policy.md).
 
-You can administer your groups from the Microsoft 365 admin center or [by using PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell).
+You can administer your groups from the Microsoft 365 admin center or [by using PowerShell](../../enterprise/powershell/manage-office-365-groups-with-powershell).
 
 If you have a lot of users, such as in a large corporation or enterprise, you may have many users who create groups for various purposes. We highly recommend that you review [Plan for governance in Office 365 Groups](plan-for-groups-governance.md) for best practices.
 
@@ -76,7 +76,7 @@ The following limits apply to Office 365 Groups:
 
 The default maximum number of Office 365 Groups that an Office 365 organization can have is currently 500,000, but can be increased by request. For more information on Office 365 Groups limits, see [Office 365 Groups - Admin help](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
 
-Managing your Office 365 Groups is more effective when you have actionable information about Groups usage. The Microsoft 365 Admin Center has a reporting tool that can let you see things such as storage use, how many active Groups you have and even how your users are using the Groups. See: [Office 365 Reports in the admin center](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups) for more information.
+Managing your Office 365 Groups is more effective when you have actionable information about Groups usage. The Microsoft 365 Admin Center has a reporting tool that can let you see things such as storage use, how many active Groups you have and even how your users are using the Groups. See: [Office 365 Reports in the admin center](../activity-reports/office-365-groups) for more information.
 
 ## Which Office 365 plans include Groups?
 
@@ -99,6 +99,6 @@ Office 365 Groups works with Azure Active Directory (AAD). The Groups features y
 
 [Upgrade distribution lists to Office 365 Groups](../manage/upgrade-distribution-lists.md)
 
-[Manage Office 365 Groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[Manage Office 365 Groups with PowerShell](../../enterprise/powershell/manage-office-365-groups-with-powershell)
 
 [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)

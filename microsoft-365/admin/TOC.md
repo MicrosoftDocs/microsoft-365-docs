@@ -117,7 +117,7 @@
 ### [Back up data before switching plans](../commerce/subscriptions/back-up-data-before-switching-plans.md)
 ### [Cancel your subscription](../commerce/subscriptions/cancel-your-subscription.md)
 ### [What if my subscription expires?](../commerce/subscriptions/what-if-my-subscription-expires.md)
-### [Subscriptions and licenses](../commerce/subscriptions/subscriptions-and-licenses.md)
+### [Subscriptions and licenses](../commerce/licenses/subscriptions-and-licenses.md)
 ### [Buy licenses](../commerce/licenses/buy-licenses.md)
 ### [Remove licenses from subscription](../commerce/licenses/remove-licenses-from-subscription.md)
 ## Domains
