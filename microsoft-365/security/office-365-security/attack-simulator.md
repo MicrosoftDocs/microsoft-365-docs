@@ -1,5 +1,5 @@
 ---
-title: "Attack Simulator in Ofice 365 ATP"
+title: "Attack Simulator in Office 365 ATP"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
