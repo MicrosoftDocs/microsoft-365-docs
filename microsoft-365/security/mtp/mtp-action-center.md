@@ -25,8 +25,6 @@ ms.custom: autoir
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
 ## A "single pane of glass" experience
 
 ![Action Center](../../media/air-actioncenter.png)
@@ -39,14 +37,6 @@ The Action center provides a "single pane of glass" experience for tasks, such a
 - Reviewing completed remediation actions.
 
 Your security operations team can operate more effectively and efficiently, because the Action center provides a comprehensive view of Microsoft Threat Protection at work.
-
-## Remediation actions
-
-The following table lists remediation actions that are currently supported in the Action center: 
-
-|Endpoints remediation actions  |Email remediation actions  |
-|---------|---------|
-|Quarantine file<br/>Remove registry key<br/>Kill process <br/>Stop service <br/>Remove registry key <br/>Disable driver <br/>Remove scheduled task      |Soft delete email messages or clusters<br/>Block URL (time-of-click)<br/>Turn off external mail forwarding          |
 
 ## Go to the Action center
 
