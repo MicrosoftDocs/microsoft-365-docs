@@ -92,9 +92,9 @@ You don't need to assign licenses to resource mailboxes, room mailboxes, and sha
     
 - [Buy licenses for your subscription](buy-licenses.md)
     
-- [Buy another subscription](buy-another-subscription.md)
+- [Buy another subscription](../buy-another-subscription.md)
     
-- [Buy or edit an add-on](buy-or-edit-an-add-on.md)
+- [Buy or edit an add-on](../buy-or-edit-an-add-on.md)
     
 - [Remove licenses from your subscription](remove-licenses-from-subscription.md)
     

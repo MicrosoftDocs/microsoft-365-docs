@@ -112,7 +112,7 @@ Here are the steps to add files:
 
     If you have a lot of files or large files to upload to your team site, read these tips on [uploading large or many files to a library](https://support.office.com/article/da549fb1-1fcb-4167-87d0-4693e93cb7a0.aspx#__toc384119242).
 
-    If you need more storage space, see [Change storage space for your subscription](../subscriptions-and-billing/add-storage-space.md).
+    If you need more storage space, see [Change storage space for your subscription](../../commerce/add-storage-space.md).
 
 ### Sync online files with your PC or Mac
 
