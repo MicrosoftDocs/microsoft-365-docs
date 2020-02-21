@@ -83,7 +83,7 @@ To learn more, see [View details of an investigation](air-view-investigation-res
 
 ## Next steps
 
-- [Find out how to get AIR and see required permissions](automated-investigation-response-office.md#how-to-get-air)
+- [Review the required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities)
 
 - [Find and investigate malicious email in Office 365](investigate-malicious-email-that-was-delivered.md)
 
