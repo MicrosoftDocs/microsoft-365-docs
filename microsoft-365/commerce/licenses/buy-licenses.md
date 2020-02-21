@@ -74,11 +74,9 @@ After you purchase new licenses, be sure to [assign the licenses to users](../..
 
 ::: moniker-end
 
-
 ## What if I don't see the Add/Remove licenses link?
 
 This table describes the reasons why the **Add/Remove licenses** link might not be available, and what you can do about it. 
-
 
 |Reason  |Description  |Solution  |
 |---------|---------|---------|
@@ -88,18 +86,16 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 |You bought your subscription through a reseller.|| If the subscription was purchased via a Cloud Solution Provider (CSP) partner, you must contact your CSP partner to buy more licenses.        |
 |You have a trial subscription. |A trial version of Office 365 will display the text "Trial". | You must first buy your trial subscription, then you can add more licenses. See [Buy a subscription to Office 365 for business from your free trial](../buy-a-subscription-from-your-free-trial.md).|
 
-
-  
 ## What you need to know about buying licenses for your Office 365 for business subscription
 
 ### Buying licenses
 
-- You need to be either a Global admin or a Billing admin to buy licenses. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+- You need to be either a Global admin or a Billing admin to buy licenses. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - To buy a license and add a new user to your subscription at the same time, see [Add users individually or in bulk to Office 365 - Admin Help](../../admin/add-users/add-users.md).
 
 ### License availability
 
-- If you pay for your subscription by credit card or bank account, any new licenses that you buy are available immediately after you receive an order confirmation. If you pay by invoice, you might have to wait for a credit check before your new licenses are available to use. 
+- If you pay for your subscription by credit card or bank account, any new licenses that you buy are available immediately after you receive an order confirmation. If you pay by invoice, you might have to wait for a credit check before your new licenses are available to use.
 
   > [!NOTE]
   > Paying by bank account is not available in some countries or regions.
@@ -123,4 +119,3 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 [Buy or edit an add-on](../buy-or-edit-an-add-on.md)
 
 [Manage Yammer user licenses](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365)
-  
