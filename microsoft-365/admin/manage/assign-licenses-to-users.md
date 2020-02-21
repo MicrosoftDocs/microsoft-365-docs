@@ -144,7 +144,7 @@ To change the apps and services a user has access to:
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-    
+
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
 2. Select the box next to the name of the user you want to assign a license to.
@@ -158,7 +158,6 @@ To change the apps and services a user has access to:
 5. At the bottom of the **Product licenses** pane, select **Save** \> **Close** \> **Close**.
 
 ::: moniker-end
-
 
 ## Move users to a different subscription
 
@@ -201,7 +200,7 @@ If you have more than one subscription, and you have users who already have a li
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-    
+
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
 2. Select the boxes next to the names of the users you want to replace existing licenses for.
@@ -230,12 +229,12 @@ If you have more than one subscription, and you have users who already have a li
 
 ## Related articles
 
-[Understand subscriptions and licenses](../subscriptions-and-billing/subscriptions-and-licenses.md)
+[Understand subscriptions and licenses](../../commerce/licenses/subscriptions-and-licenses.md)
 
 [Resolve license conflicts in Office 365 for business](resolve-license-conflicts.md)
 
 [Remove licenses from users](remove-licenses-from-users.md)
 
-[Remove licenses from your subscription](../subscriptions-and-billing/remove-licenses-from-subscription.md)
+[Remove licenses from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md)
 
-[Buy licenses for your subscription](../subscriptions-and-billing/buy-licenses.md)
+[Buy licenses for your subscription](../../commerce/licenses/buy-licenses.md)

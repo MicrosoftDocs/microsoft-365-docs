@@ -41,7 +41,6 @@ If you're an admin, you can verify which subscriptions your organization has by 
 
 ::: moniker-end
   
-
 ::: moniker range="o365-germany"
 
 1. In the admin center, go to the **Billing** \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
@@ -63,7 +62,6 @@ If you're an admin, you can verify which subscriptions your organization has by 
 
 ::: moniker range="o365-21vianet"
 
-
 1. In the admin center, go to the **Billing** \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
 
 2. If you have only one subscription, it will be displayed on the **Subscriptions** page, along with the subscription name, information about the subscription, and its status. In the following screenshot, you can see that I have an Office 365 Business subscription.
@@ -83,4 +81,4 @@ If you're an admin, you can verify which subscriptions your organization has by 
 
 ## Related articles
   
-[Subscriptions and billing](../subscriptions-and-billing/subscriptions-and-billing.md)
+[Subscriptions and billing](../../commerce/subscriptions-and-billing.md)
