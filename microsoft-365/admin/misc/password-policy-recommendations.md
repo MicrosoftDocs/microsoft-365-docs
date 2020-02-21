@@ -24,46 +24,46 @@ description: "Learn how to make your organization more secure against password a
  
 As the admin of an Office 365 organization, you're responsible for setting password policy for users in your organization. Setting password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
   
-To determine how often Office 365 passwords expire in your organization, see [Set password expiration policy for Office 365](../admin/manage/set-password-expiration-policy.md).
+To determine how often Office 365 passwords expire in your organization, see [Set password expiration policy for Office 365](../manage/set-password-expiration-policy.md).
   
 ## Understanding password recommendations
 
 Good password practices fall into a few broad categories:
   
-- **Resisting common attacks** This involves the choice of where users enter passwords (known and trusted devices with good malware detection, validated sites), and the choice of what password to choose (length and uniqueness). 
-    
-- **Containing successful attacks** Containing successful hacker attacks is about limiting exposure to a specific service, or preventing that damage altogether, if a user's password gets stolen. For example, ensuring that a breach of your social networking credentials doesn't make your bank account vulnerable, or not letting a poorly guarded account accept reset links for an important account. 
-    
-- **Understanding human nature** Many valid password practices fail in the face of natural human behaviors. Understanding human nature is critical because research shows that almost every rule you impose on your users will result in a weakening of password quality. Length requirements, special character requirements, and password change requirements all result in normalization of passwords, which makes it easier for attackers to guess or crack passwords. 
-    
+- **Resisting common attacks** This involves the choice of where users enter passwords (known and trusted devices with good malware detection, validated sites), and the choice of what password to choose (length and uniqueness).
+
+- **Containing successful attacks** Containing successful hacker attacks is about limiting exposure to a specific service, or preventing that damage altogether, if a user's password gets stolen. For example, ensuring that a breach of your social networking credentials doesn't make your bank account vulnerable, or not letting a poorly guarded account accept reset links for an important account.
+
+- **Understanding human nature** Many valid password practices fail in the face of natural human behaviors. Understanding human nature is critical because research shows that almost every rule you impose on your users will result in a weakening of password quality. Length requirements, special character requirements, and password change requirements all result in normalization of passwords, which makes it easier for attackers to guess or crack passwords.
+
 ## Password guidelines for administrators
 
 The primary goal of a more secure password system is password diversity. You want your password policy to contain lots of different and hard to guess passwords. Here are a few recommendations for keeping your organization as secure as possible.
   
 - Maintain an 8-character minimum length requirement (longer isn't necessarily better)
-    
+
 - Don't require character composition requirements. For example, \*&amp;(^%$
-    
--  Don't require mandatory periodic password resets for user accounts 
-    
+
+- Don't require mandatory periodic password resets for user accounts
+
 - Ban common passwords, to keep the most vulnerable passwords out of your system
-    
+
 - Educate your users to not re-use their organization passwords for non-work related purposes
-    
+
 - Enforce registration for [multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md)
-    
+
 - Enable risk-based multi-factor authentication challenges
-    
+
 ### Password guidance for your users
 
 Here's some password guidance for users in your organization. Make sure to let your users know about these recommendations and enforce the recommended password policies at the organizational level.
   
 - Don't use a password that is the same or similar to one you use on any other websites
-    
+
 - Don't use a single word, for example, **password**, or a commonly-used phrase like **Iloveyou**
-    
+
 - Make passwords hard to guess, even by those who know a lot about you, such as the names and birthdays of your friends and family, your favorite bands, and phrases you like to use
-    
+
 ## Some common approaches and their negative impacts
 
 These are some of the most commonly used password management practices, but research warns us about the negative impacts of them.
@@ -81,11 +81,11 @@ Password length requirements (greater than about 10 characters) can result in us
 Password complexity requirements reduce key space and cause users to act in predictable ways, doing more harm than good. Most systems enforce some level of password complexity requirements. For example, passwords need characters from all three of the following categories:
   
 - uppercase characters
-    
+
 - lowercase characters
-    
+
 - non-alphanumeric characters
-    
+
 Most people use similar patterns, for example, a capital letter in the first position, a symbol in the last, and a number in the last 2. Cyber criminals know this, so they run their dictionary attacks using the most common substitutions, "$" for "s", "@" for "a," "1" for "l". Forcing your users to choose a combination of upper, lower, digits, special characters has a negative effect. Some complexity requirements even prevent users from using secure and memorable passwords, and force them into coming up with less secure and less memorable passwords.
   
 ## Successful Patterns
@@ -112,18 +112,16 @@ Risk-based multi-factor authentication ensures that when our system detects susp
   
 ## Want to know more? Recommended reading
 
-- [Do Strong Web Passwords Accomplish Anything?](https://go.microsoft.com/fwlink/?LinkID=861008)
-    
-- [Password Portfolios and the Finite-Effort User](https://go.microsoft.com/fwlink/?LinkID=861014)
-    
-- [Preventing Weak Passwords by Reading Users' Minds](https://go.microsoft.com/fwlink/?LinkID=861015)
-    
-- [Choosing Secure Passwords](https://go.microsoft.com/fwlink/?LinkID=861016)
-    
-- [Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/?LinkID=861018)
-    
-- [Worst Passwords of 2015](https://go.microsoft.com/fwlink/?LinkID=861020)
-    
-- [Download files from the web](https://go.microsoft.com/fwlink/?LinkID=861029)
-    
+- [Do Strong Web Passwords Accomplish Anything?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 
+- [Password Portfolios and the Finite-Effort User](https://go.microsoft.com/fwlink/p/?linkid=861014)
+
+- [Preventing Weak Passwords by Reading Users' Minds](https://go.microsoft.com/fwlink/p/?linkid=861015)
+
+- [Choosing Secure Passwords](https://go.microsoft.com/fwlink/p/?linkid=861016)
+
+- [Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/p/?linkid=861018)
+
+- [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
+
+- [Download files from the web](https://go.microsoft.com/fwlink/p/?linkid=861029)

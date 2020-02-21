@@ -24,7 +24,7 @@ description: "Learn how to resolve license conflicts with your Office 365 for bu
 
 # Resolve license conflicts in Office 365 for business
 
-We recommend that you buy the licenses that you need for your subscription before you create new users. That way, a license can be assigned to new users as user accounts are created. If you have already assigned all of your licenses to users, but some of the licenses have expired, or you try to remove a license that is already assigned to a user, you will have license conflicts. For more information, see [Remove licenses from your subscription](../subscriptions-and-billing/remove-licenses-from-subscription.md).
+We recommend that you buy the licenses that you need for your subscription before you create new users. That way, a license can be assigned to new users as user accounts are created. If you have already assigned all of your licenses to users, but some of the licenses have expired, or you try to remove a license that is already assigned to a user, you will have license conflicts. For more information, see [Remove licenses from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md).
   
 ## How do I view license conflicts?
 
@@ -41,7 +41,7 @@ We recommend that you buy the licenses that you need for your subscription befor
 
 ## How do I resolve license conflicts?
 
-You can resolve license conflicts by either [buying more licenses](../subscriptions-and-billing/buy-licenses.md) or by [removing licenses from users who no longer need them](remove-licenses-from-users.md). You can optionally [delete a user account to free a license](../add-users/delete-a-user.md).
+You can resolve license conflicts by either [buying more licenses](../../commerce/licenses/buy-licenses.md) or by [removing licenses from users who no longer need them](remove-licenses-from-users.md). You can optionally [delete a user account to free a license](../add-users/delete-a-user.md).
   
 ## Related articles 
 

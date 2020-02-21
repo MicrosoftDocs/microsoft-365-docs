@@ -52,7 +52,7 @@ No. Only **Global** and **Exchange** administrators can create, edit, or delete 
   
 ## Can I use this to manage my business clients?
 
-You can use Office 365 contacts however you like, but there are limitations. Learn about [other ways to manage contacts](../admin/misc/ways-to-manage-contacts.md)
+You can use Office 365 contacts however you like, but there are limitations. Learn about [other ways to manage contacts](ways-to-manage-contacts.md)
   
 ## How do I bulk import organizational contacts?
 
@@ -60,6 +60,4 @@ Use Windows PowerShell and a CSV (Comma Separated Value) file to bulk import ext
   
 ## What if my question still hasn't been answered?
 
-Visit the rest of our [admin help](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx) or give us your feedback below. 
-  
-
+Visit the rest of our [admin help](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx) or give us your feedback below.
