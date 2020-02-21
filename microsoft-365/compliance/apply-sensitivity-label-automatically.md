@@ -84,9 +84,6 @@ During the preview period, the following apps support classifers for sensitivity
     - PowerPoint
     - Outlook
 
-> [!TIP]
-> For more information about Office Insider, including how to configure your update channel so that you can test this new labeling capability, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). 
-
 For more information about this preview option, see the blog post [Machine Learning based Automatic and recommended labeling on Office Apps](https://microsoft-my.sharepoint.com/:w:/p/shpalta/EZ0miKtkub1DlqFXj8Drl-sBNQdrXfyRseeUnLR6d74wwA?e=d8zFge&CID=275B0D45-9CC7-4B12-A7C2-C3A595B3C230).
 
 ## Recommend that the user apply a sensitivity label
