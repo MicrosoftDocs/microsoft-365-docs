@@ -133,6 +133,8 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 To make Microsoft Secure Score a better representative of your security posture we have made some changes.
 
+To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
+
 ### Removed “not scored” improvement actions
 
 One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable.  

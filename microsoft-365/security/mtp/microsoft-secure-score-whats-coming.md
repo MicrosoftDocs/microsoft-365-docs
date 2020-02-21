@@ -1,5 +1,5 @@
 ---
-title: Microsoft Secure Score
+title: What's coming in Microsoft Secure Score?
 description: Describes Microsoft Secure Score in the Microsoft 365 security center, how details are calculated, and what security admins can expect.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: microsoft-365-enterprise
@@ -22,6 +22,8 @@ search.appverid:
 # What's coming in Microsoft Secure Score?
 
 To make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
+
+To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md)
 
 ## March 2nd 2020
 
@@ -98,3 +100,10 @@ To ensure that the Microsoft Secure Score is meaningful and that every improveme
 
 ### Supporting security defaults for Azure AD improvement actions
 
+Microsoft Secure Score will be updating improvement actions to support [security defaults in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which make it easier to help protect your organization with preconfigured security settings for common attacks.
+
+It will affect the following improvement actions:
+
+- Ensure all users can complete multi-factor authentication for secure access
+- Require MFA for administrative roles
+- Enable policy to block legacy authentication
