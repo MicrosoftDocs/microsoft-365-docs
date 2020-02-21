@@ -44,7 +44,7 @@ Currently there is no official certification for HIPAA or HITECH Act compliance.
 
 Microsoft enterprise cloud services are also covered by FedRAMP assessments. Microsoft Azure and Microsoft Azure Government received a Provisional Authority to Operate from the FedRAMP Joint Authorization Board; Microsoft Dynamics 365 U.S. Government received an Agency Authority to Operate from the US Department of Housing and Urban Development, as did Microsoft Office 365 U.S. Government from the US Department of Health and Human Services.
 
-Learn about the benefits of HIPAA and the HITECH on the Microsoft Cloud: [Read the Zwanger — Pesiri Radiology Customer Story](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)
+To learn how the Microsoft Cloud helps customers support HIPAA and the HITECH requirements, visit [Microsoft Customer Stories](https://customers.microsoft.com).
 
 ## Microsoft in-scope cloud services
 
