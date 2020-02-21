@@ -79,7 +79,7 @@ If your existing plan doesn't include Office, then select from the options below
 
  **Option 1: Switch Office subscriptions**
 
-Switch to a subscription that includes Office. See [Switch to a different Office 365 for business plan](../subscriptions-and-billing/switch-to-a-different-plan.md).
+Switch to a subscription that includes Office. See [Switch to a different Office 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md).
 
 **Option 2: Buy individual, one-time purchases of Office, or buy Office through a volume license**
 

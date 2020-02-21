@@ -56,7 +56,7 @@ After you purchase new licenses, be sure to [assign the licenses to users](../..
 
 3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
-After you purchase new licenses, be sure to [assign the licenses to users](../manage/assign-licenses-to-users.md).
+After you purchase new licenses, be sure to [assign the licenses to users](../../admin/manage/assign-licenses-to-users.md).
 
 ::: moniker-end
 
@@ -70,7 +70,7 @@ After you purchase new licenses, be sure to [assign the licenses to users](../ma
 
 3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
-After you purchase new licenses, be sure to [assign the licenses to users](../manage/assign-licenses-to-users.md).
+After you purchase new licenses, be sure to [assign the licenses to users](../../admin/manage/assign-licenses-to-users.md).
 
 ::: moniker-end
 

@@ -45,6 +45,6 @@ For Office 365 Small Business, depending on your country or region, you may have
   
 For answers to billing questions, see:
   
-- [Change your billing addresses for Office 365 for business](../subscriptions-and-billing/change-your-billing-addresses.md)
+- [Change your billing addresses for Office 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Add, update, or remove a credit card or bank account in Office 365 for business](../subscriptions-and-billing/add-update-or-remove-credit-card-or-bank-account.md)
+- [Add, update, or remove a credit card or bank account in Office 365 for business](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

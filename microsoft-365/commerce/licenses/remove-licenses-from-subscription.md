@@ -26,7 +26,7 @@ description: "Learn how to remove a license from your Office 365 for business su
 
 # Remove licenses from your Office 365 for business subscription
 
-You can't remove a license from a subscription if it's assigned to a user. If you want to remove a license that is currently assigned to someone, you'll need to [remove the license from the user](remove-licenses-from-users.md) before you can remove the license from the subscription.
+You can't remove a license from a subscription if it's assigned to a user. If you want to remove a license that is currently assigned to someone, you'll need to [remove-licenses-from-users](../../admin/manage/remove-licenses-from-users.md)) before you can remove the license from the subscription.
 
 ::: moniker range="o365-worldwide"
 
@@ -90,7 +90,7 @@ If your subscription was purchased through a CSP or partner, you can’t remove 
   
 ## What you need to know about removing licenses from users in Office 365 for business
 
-- You need to be either a Global admin or a User management admin. For more information, see [About admin roles](../add-users/about-admin-roles.md).
+- You need to be either a Global admin or a User management admin. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 - Use these steps to add a license to an existing user account. [Learn how to add a user account and assign a license at the same time](../../admin/add-users/add-users.md).
 

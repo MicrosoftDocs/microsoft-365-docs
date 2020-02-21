@@ -155,8 +155,8 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 
 ## Related articles
 
-[Understand subscriptions and licenses](../subscriptions-and-billing/subscriptions-and-licenses.md)
+[Understand subscriptions and licenses in Office 365 for business](../../commerce/licenses/subscriptions-and-licenses.md)
 
-[Remove licenses from your subscription](../subscriptions-and-billing/remove-licenses-from-subscription.md)
+[Remove licenses from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md)
 
 [Assign licenses to users](assign-licenses-to-users.md)
