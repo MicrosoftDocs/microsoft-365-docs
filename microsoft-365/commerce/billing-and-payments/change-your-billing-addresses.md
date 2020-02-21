@@ -51,7 +51,7 @@ To learn more about your bill or invoice, see [View your bill or invoice](view-y
 
 ::: moniker range="o365-21vianet"
 
-If you're using Office 365 operated by 21Vianet in China, see [View your bill or get Fapiaos for Office 365 operated by 21Vianet](../services-in-china/view-your-bill-or-get-a-fapiao.md).
+If you're using Office 365 operated by 21Vianet in China, see [View your bill or get Fapiaos for Office 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ If you're using Office 365 operated by 21Vianet in China, see [View your bill or
 
 2. Select the subscription you want to change, then select **Change payment details**.
 
-    ![The Payment method section of a Subscription card for a subscription that pays by credit card.](../media/6c9d9cae-6086-4687-a979-bb971f35f1b4.png)
+    ![The Payment method section of a Subscription card for a subscription that pays by credit card.](../../admin/media/6c9d9cae-6086-4687-a979-bb971f35f1b4.png)
   
 3. *Credit card and bank account customers:*  On the **Change payment details** page, select the credit card or bank account that you want to update, select **Edit details**, update your billing address, then select **Submit**.
   
@@ -110,7 +110,7 @@ If you're using Office 365 operated by 21Vianet in China, see [View your bill or
 
 2. Select the subscription you want to change, then select **Change payment details**.
 
-    ![The Payment method section of a Subscription card for a subscription that pays by invoice.](../media/51ab38aa-6e15-4e51-9f27-261c38c98fed.png)
+    ![The Payment method section of a Subscription card for a subscription that pays by invoice.](../../admin/media/51ab38aa-6e15-4e51-9f27-261c38c98fed.png)
   
 3. On the **Change payment details** page, update your billing address, and then select **Submit**.
 
@@ -136,7 +136,7 @@ If you're using Office 365 operated by 21Vianet in China, see [View your bill or
 
 2. Select the subscription you want to change, select **More actions**, then choose **Edit service usage address**.
 
-    ![Close up of the More Actions menu.](../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Close up of the More Actions menu.](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
   
 3. In the **Edit your service usage address** pane, update your address, then select **Submit**.
 
@@ -148,7 +148,7 @@ If you're using Office 365 operated by 21Vianet in China, see [View your bill or
 
 2. Select the subscription you want to change, select **More actions**, then choose **Edit service usage address**.
 
-    ![Close up of the More Actions menu.](../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Close up of the More Actions menu.](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
   
 3. In the **Edit your service usage address** pane, update your address, then select **Submit**.
 
@@ -190,5 +190,5 @@ You can also change the alternate email address of other global and billing admi
 
 [Pay for yoursubscription](pay-for-your-subscription.md)
 
-[Subscriptions and billing - Admin Help](subscriptions-and-billing.md)
+[Subscriptions and billing - Admin Help](../subscriptions-and-billing.md)
 

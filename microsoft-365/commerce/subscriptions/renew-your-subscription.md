@@ -119,7 +119,7 @@ If you prepaid for your subscription with a product key, your subscription will 
 
 [Add, update, or remove your payment methods](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 
-[Change your payment method](change-payment-method.md)
+[Change your payment method](../billing-and-payments/change-payment-method.md)
   
 [Enter your product key](../enter-your-product-key.md)
   

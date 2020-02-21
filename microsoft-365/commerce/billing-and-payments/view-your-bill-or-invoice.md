@@ -35,7 +35,7 @@ If you need help interpreting the charges you see on your bill, see [Understand 
   
  **Not an admin?** Contact your IT administrator for help. 
   
- **Have a problem with your bill?** [Contact support for business products](../contact-support-for-business-products.md).
+ **Have a problem with your bill?** [Contact support for business products](../../admin/contact-support-for-business-products.md).
 
  Watch a short video about viewing your bill or invoice (note that your invoice may appear different from the one in the video). <br><br>
 

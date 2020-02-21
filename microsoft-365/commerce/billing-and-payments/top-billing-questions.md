@@ -31,17 +31,17 @@ description: "Find answers to your top billing questions for Office 365 for busi
 
 Have questions about your billing statement? Here are the answers to the top billing questions.
   
-If you can't find an answer to your question, or you have a problem with your bill, please [contact support](../contact-support-for-business-products.md) for assistance. 
+If you can't find an answer to your question, or you have a problem with your bill, please [contact support](../../admin/contact-support-for-business-products.md) for assistance. 
   
 ::: moniker range="o365-worldwide"
 
-If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your invoice for Office 365 for business](../subscriptions-and-billing/understand-your-invoice2.md).
+If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your invoice for Office 365 for business](understand-your-invoice2.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your invoice for Office 365 for business](../subscriptions-and-billing/understand-your-invoice2.md).
+If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your invoice for Office 365 for business](understand-your-invoice2.md).
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Billing support is provided in English, Monday - Friday, from 6 AM to 5 PM Pacif
     
 - In the United Kingdom, call 0 (800) 032-6417.
     
-For more contact phone numbers by country or region, see [Contact support for business products](../contact-support-for-business-products.md).
+For more contact phone numbers by country or region, see [Contact support for business products](../../admin/contact-support-for-business-products.md).
   
 ::: moniker-end
 
@@ -69,20 +69,20 @@ Billing support is provided in German and English, Monday - Friday, from 9 AM to
   
 - In Germany, call 0800 589 2330.
     
-For more contact phone numbers by country or region, [Contact support for business products](../contact-support-for-business-products.md).
+For more contact phone numbers by country or region, [Contact support for business products](../../admin/contact-support-for-business-products.md).
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-For questions about Office 365 operated by 21Vianet, [Contact support for business products](../contact-support-for-business-products.md).
+For questions about Office 365 operated by 21Vianet, [Contact support for business products](../../admin/contact-support-for-business-products.md).
   
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 ## How do I update my credit card or bank account information?
 
-See [Add, update, or remove a credit card or bank account in Office 365 for business](../subscriptions-and-billing/add-update-or-remove-credit-card-or-bank-account.md).
+See [Add, update, or remove a credit card or bank account in Office 365 for business](add-update-or-remove-credit-card-or-bank-account.md).
   
 > [!NOTE]
 > Paying by bank account is not available in some countries or regions. 
@@ -92,7 +92,7 @@ See [Add, update, or remove a credit card or bank account in Office 365 for busi
 ::: moniker range="o365-germany"
 ## How do I update my credit card or bank account information?
 
-See [Add, update, or remove a credit card or bank account in Office 365 for business](../subscriptions-and-billing/add-update-or-remove-credit-card-or-bank-account.md).
+See [Add, update, or remove a credit card or bank account in Office 365 for business](add-update-or-remove-credit-card-or-bank-account.md).
   
 > [!NOTE]
 > Paying by bank account is not available in some countries or regions. 
@@ -101,12 +101,12 @@ See [Add, update, or remove a credit card or bank account in Office 365 for busi
 
 ## Can I change the method I use to pay for my subscription?
 
-Yes. See [Change your payment method for Office 365 for business](../subscriptions-and-billing/change-payment-method.md).
+Yes. See [Change your payment method for Office 365 for business]change-payment-method.md).
   
 ::: moniker range="o365-worldwide"
 ## Can I change how frequently I pay for my subscription?
 
-Yes, but you'll need to [call support](../contact-support-for-business-products.md) for assistance. 
+Yes, but you'll need to [call support](../../admin/contact-support-for-business-products.md) for assistance. 
 
 ::: moniker-end
 
@@ -138,7 +138,7 @@ Yes. To get your billing statement as an email attachment, use the following ste
 
 ## How do I cancel a subscription?
 
-There are two ways to cancel paid or trial subscriptions: You can cancel online, or cancel by calling support. To learn more about which method you can use, depending on your circumstances, see [Cancel your subscription](../subscriptions-and-billing/cancel-your-subscription.md).
+There are two ways to cancel paid or trial subscriptions: You can cancel online, or cancel by calling support. To learn more about which method you can use, depending on your circumstances, see [Cancel your subscription](../subscriptions/cancel-your-subscription.md).
   
 ## How do I see my current order balance?
 
@@ -146,19 +146,19 @@ The total that is displayed on the Bills page is the invoice balance - the total
   
 ::: moniker range="o365-worldwide"
 
-See [View your bill or invoice for Office 365 for business](../subscriptions-and-billing/view-your-bill-or-invoice.md).
+See [View your bill or invoice for Office 365 for business](view-your-bill-or-invoice.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-See [View your bill or invoice for Office 365 for business](../subscriptions-and-billing/view-your-bill-or-invoice.md).
+See [View your bill or invoice for Office 365 for business](view-your-bill-or-invoice.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-See [View your bill or get Fapiaos in Office 365 operated by 21Vianet](../services-in-china/view-your-bill-or-get-a-fapiao.md).
+See [View your bill or get Fapiaos in Office 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
 
@@ -166,28 +166,28 @@ See [View your bill or get Fapiaos in Office 365 operated by 21Vianet](../servic
 ::: moniker range="o365-worldwide"
 ## What taxes will I be charged?
 
-See [What tax will I be charged for Office 365?](../subscriptions-and-billing/what-tax-will-i-be-charged.md) to find out what tax you're charged, depending on your country or region. 
+See [What tax will I be charged for Office 365?](what-tax-will-i-be-charged.md) to find out what tax you're charged, depending on your country or region. 
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 ## What taxes will I be charged?
 
-See [What tax will I be charged for Office 365?](../subscriptions-and-billing/what-tax-will-i-be-charged.md) to find out what tax you're charged, depending on your country or region. 
+See [What tax will I be charged for Office 365?](what-tax-will-i-be-charged.md) to find out what tax you're charged, depending on your country or region. 
   
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 ## How do I apply for tax exempt status?
 
-You can [Apply for tax exempt status for Office 365 for business](../subscriptions-and-billing/apply-for-tax-exempt-status.md) by providing the proper documentation to Support. 
+You can [Apply for tax exempt status for Office 365 for business](apply-for-tax-exempt-status.md) by providing the proper documentation to Support. 
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 ## How do I apply for tax exempt status?
 
-You can [Apply for tax exempt status for Office 365 for business](../subscriptions-and-billing/apply-for-tax-exempt-status.md) by providing the proper documentation to Support. 
+You can [Apply for tax exempt status for Office 365 for business](apply-for-tax-exempt-status.md) by providing the proper documentation to Support. 
   
 ::: moniker-end
 
@@ -199,7 +199,7 @@ You can [Apply for tax exempt status for Office 365 for business](../subscriptio
   
 2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
 
-To learn more, see [View your bill or invoice for Office 365 for business](../subscriptions-and-billing/view-your-bill-or-invoice.md).
+To learn more, see [View your bill or invoice for Office 365 for business](view-your-bill-or-invoice.md).
 
 ::: moniker-end
 
@@ -209,7 +209,7 @@ To learn more, see [View your bill or invoice for Office 365 for business](../su
   
 2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
 
-To learn more, see [View your bill or invoice for Office 365 for business](../subscriptions-and-billing/view-your-bill-or-invoice.md).
+To learn more, see [View your bill or invoice for Office 365 for business](view-your-bill-or-invoice.md).
 
 ::: moniker-end
 
@@ -219,7 +219,7 @@ To learn more, see [View your bill or invoice for Office 365 for business](../su
   
 2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
 
-To learn more, see [View your bill or get Fapiaos in Office 365 operated by 21Vianet](../services-in-china/view-your-bill-or-get-a-fapiao.md).
+To learn more, see [View your bill or get Fapiaos in Office 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
 
