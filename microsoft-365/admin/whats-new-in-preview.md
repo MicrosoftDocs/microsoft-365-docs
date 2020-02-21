@@ -35,7 +35,7 @@ And if you're interested in what's new in other admin centers:
 ## January 2020 - Happy New Year!
 
 > [!NOTE]
-> Did you know that there's a [What's New in Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2118096) video series on YouTube? It highlights the latest features that we've rolled out to users. Every month, we'll start linking to the latest episode in the [Videos, training, and docs](#videos-training-and-docs) section. <br> <br> Here's January's episode: [January 2020 - What's New in Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2118096)
+> Did you know that there's a [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096) video series on YouTube? It highlights the latest features that we've rolled out to users. Every month, we'll start linking to the latest episode in the [Videos, training, and docs](#videos-training-and-docs) section. <br> <br> Here's January's episode: [January 2020 - What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 ### Dark mode
 
@@ -84,7 +84,7 @@ We've starting to roll out the ability to change your payment method from credit
 
 ![Screen capture: Billing section of subscription card with a credit card as the payment method.](media/MAC-BillingEditCreditCard.png)
 
-Want to read more about it? [Change from credit card or bank account to invoice](subscriptions-and-billing/change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)
+Want to read more about it? [Change from credit card or bank account to invoice](../commerce/billing-and-payments/change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)
 
 ### Global reader
 
