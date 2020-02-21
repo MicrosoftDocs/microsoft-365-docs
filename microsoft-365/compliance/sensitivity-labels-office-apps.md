@@ -118,10 +118,15 @@ If you need to convert existing protection templates to labels, use the Azure po
 
 Users can apply just one label at a time for each document or email.
 
-When you label an email message that has attachments, the attachments don't inherit the label:
+When you label an email message that has attachments, the attachments don't inherit the label with one exception:
 
-- If the attachments have a label, they keep that separately applied label.
-- If the attachments don't have a label, the attachments remain without a label. However, if the label for the email applies protection, that protection is applied to Office attachments.
+- The attachment is an Office document with a label that doesn't apply encryption, and the label you apply to the email message applies encryption. In this case, the emailed Office document inherits the email's label with its encryption settings.
+
+Otherwise: 
+
+- If the attachments have a label, they keep their originally applied label.
+- If the attachments are encrypted without a label, the encryption remains but they aren't labeled.
+- If the attachments don't have a label, they remain unlabeled.
 
 ## Sensitivity label compatibility
 
