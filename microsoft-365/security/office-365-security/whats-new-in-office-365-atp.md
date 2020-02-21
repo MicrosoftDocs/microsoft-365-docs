@@ -41,7 +41,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 - The **Incidents** widget is now the **Action Center** widget. (To view your security widgets, in the Office 365 Security & Compliance Center, go to **Threat management** > **Review**.)
 
-- [Safe Documents in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)
+- [Safe Documents in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(preview)**
 
 ## December 2019
 
