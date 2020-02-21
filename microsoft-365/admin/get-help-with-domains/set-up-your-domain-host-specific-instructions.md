@@ -62,11 +62,10 @@ Or, learn how to [change nameservers to set up Office 365 with any domain regist
 |[Dreamhost](../dns/create-dns-records-at-dreamhost.md)  | [OVH](../dns/create-dns-records-at-ovh.md) |
 |  [Dyn.com](../dns/create-dns-records-at-dyn-com.md) | [Register.com](../dns/create-dns-records-at-register-com.md) |
 | [eNomCentral](../dns/create-dns-records-at-enomcentral.md)| [Register365 for Office 365](../dns/create-dns-records-at-register365.md)  |
-| [Freenom](../dns/create-dns-records-at-freenom.md) | [ Windows-based DNS](../dns/create-dns-records-using-windows-based-dns.md)|
-|[GoDaddy](../dns/create-dns-records-at-godaddy.md)| [Wix](../dns/create-dns-records-at-wix.md)    |
-| [Google Domains](../dns/create-dns-records-at-google-domains.md) | [Yahoo!   Small Business](../dns/create-dns-records-at-yahoo-small-business.md)  |
-|[Hostgator](../dns/create-dns-records-at-hostgator.md)  |                          |
+| [Freenom](../dns/create-dns-records-at-freenom.md) | [ web.com ](../dns/create-dns-records-at-web-com.md)|
+|[GoDaddy](../dns/create-dns-records-at-godaddy.md)|[ Windows-based DNS](../dns/create-dns-records-using-windows-based-dns.md)   |
+| [Google Domains](../dns/create-dns-records-at-google-domains.md) |[Wix](../dns/create-dns-records-at-wix.md) |
+|[Hostgator](../dns/create-dns-records-at-hostgator.md)  | [Yahoo!   Small Business](../dns/create-dns-records-at-yahoo-small-business.md)  |
 
 [I need general instructions, because my domain host isn't on this list. ](create-dns-records-at-any-dns-hosting-provider.md)
    
-
