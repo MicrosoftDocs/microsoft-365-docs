@@ -25,7 +25,7 @@ If you are part of your organization's security team, you can integrate [Office 
   
 The following image shows the **Devices** tab that you'll see when have Microsoft Defender ATP integration enabled:
   
-![When Microsoft Defender ATP is enabled, you can see a list of machines with alerts.](../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+![When Microsoft Defender ATP is enabled, you can see a list of machines with alerts.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
   
 In this example, you can see that the recipients of the email message have four devices and one has an alert. Clicking the link for a device opens its page in the Microsoft Defender Security Center.
   
@@ -43,11 +43,11 @@ Integrating Office 365 ATP with Microsoft Defender ATP is set up by using both t
   
 1. As an Office 365 global administrator or a security administrator, go to [https://protection.office.com](https://protection.office.com) and sign in with your work or school account for Office 365.
     
-2. Choose **Threat management** \> **Explorer**.<br>![Explorer in Threat Management menu](../media/ThreatMgmt-Explorer-nav.png)<br>
+2. Choose **Threat management** \> **Explorer**.<br>![Explorer in Threat Management menu](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
 3. In the upper right corner of the screen, choose **WDATP Settings**.
     
-4. In the Windows Defender ATP connection dialog box, turn on Connect to Windows ATP.<br>![Microsoft Defender ATP connection](../media/Explorer-WDATPConnection-dialog.png)<br>
+4. In the Windows Defender ATP connection dialog box, turn on Connect to Windows ATP.<br>![Microsoft Defender ATP connection](../../media/Explorer-WDATPConnection-dialog.png)<br>
     
 5. Enable the connection in the Microsoft Defender Security Center.
 

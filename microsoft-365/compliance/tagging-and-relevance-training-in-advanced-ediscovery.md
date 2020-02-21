@@ -32,7 +32,7 @@ After Assessment is completed in Advanced eDiscovery, and you enter the Relevanc
 
 1. In the **Relevance \> Tag** tab, the Tagging pane is displayed by default in the left pane and the sample files are displayed, one at a time for tagging. 
     
-    ![Relevance Tag panel](media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
+    ![Relevance Tag panel](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
     In the **Tag** tab, the file's display name is shown. This could be the path, email subject, title, or user-defined name. The ID, file path or text path can be copied by right-clicking on the file's path. 
     
@@ -54,7 +54,7 @@ After Assessment is completed in Advanced eDiscovery, and you enter the Relevanc
     
     Optionally, in the **Tag** tab, click **Tag settings** to set the following options: 
     
-    ![Relevance Tag settings](media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
+    ![Relevance Tag settings](../media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
   - **Bulk tag**: Use this option to assign multiple issues for a file by selecting **All** to set the tag for the selected file for all issues (overrides already tagged issues) or by selecting **The rest** to apply the tag to the remaining untagged issues. The selected option remains in effect for all of this user's cases until changed by that user (setting is per user for all the user's cases). 
     
@@ -76,7 +76,7 @@ The sample files list allows you to view a list of the files in a training sampl
   
 1. In the **Relevance \> Tag** tab, select the Sample files in the left pane drop-down list. The sample files are listed in the left pane. 
     
-    ![Relevance Tag sample files list](media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
+    ![Relevance Tag sample files list](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
 2. Select a specific sample or file number by entering or selecting its number in the **Sample** or **File** boxes. 
     

@@ -38,7 +38,7 @@ All imported files must be added to a load to be processed in Advanced eDiscover
   
 1. In the **Relevance \> Relevance setup** tab, select **Loads**.
     
-    ![Relevance Setup Loads tab](media/278aac7f-655f-462f-852a-6baa5d818768.png)
+    ![Relevance Setup Loads tab](../media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
 2. **Include files**: Select an option for files to include. By default, adding files to the current load is based on the "All files" population.
     

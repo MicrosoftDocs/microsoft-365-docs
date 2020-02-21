@@ -27,7 +27,7 @@ This guidance discusses how to deploy the recommended policies in a newly-provis
 
 The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices. It also indicates where these policies are configured.
 
-![Common policies for configuring identity and device access](../images/Identity_device_access_policies_byplan.png)
+![Common policies for configuring identity and device access](../media/Identity_device_access_policies_byplan.png)
 
 
 The rest of this article describes how to configure these policies. 
@@ -58,13 +58,13 @@ A recommended practice is to create an Azure AD group for conditional access exc
 
 The following diagram provides an example of user assignment and exclusions.
 
-![Example user assignment and exclusions for MFA rules](../images/identity-access-policies-assignment.png)
+![Example user assignment and exclusions for MFA rules](../media/identity-access-policies-assignment.png)
 
 In the illustration the "Top secret project X team" is assigned a conditional access policy that requires MFA *always*. Be judicious when applying higher levels of protection to users. Members of this project team will be required to provide two forms of authentication every time they log on, even if they are not viewing highly-regulated content.  
 
 All Azure AD groups created as part of these recommendations must be created as Office 365 groups. This is specifically important for the deployment of Azure Information Protection (AIP) when securing documents in SharePoint Online.
 
-![Screen capture for creating Office 365 groups](../images/identity-device-AAD-groups.png)
+![Screen capture for creating Office 365 groups](../media/identity-device-AAD-groups.png)
 
 
 ## Require MFA based on sign-in risk
@@ -80,7 +80,7 @@ To create a new conditional access policy:
 
 4. Choose **New policy**.
 
-![Baseline CA policy](./media/secure-email/CA-EXO-policy-1.png)
+![Baseline CA policy](../media/secure-email/CA-EXO-policy-1.png)
 
  The following tables describes the conditional access policy settings to implement for this policy.
 

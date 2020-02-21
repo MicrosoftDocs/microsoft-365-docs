@@ -46,7 +46,7 @@ After you run a Content Search in the Security & Compliance Center, the total nu
 
 To understand your organization's exposure to partially indexed items, you can run a search for all content in all mailboxes (by using a blank keyword query). In the following example below, there are 56,208 (4,830 MB) fully indexed items and 470 (316 MB) partially indexed items.
   
-![Example of search statistics showing partially indexed items](media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
+![Example of search statistics showing partially indexed items](../media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
   
 You can determine the percentage of partially indexed items by using the following calculations.
   
@@ -71,7 +71,7 @@ So in the previous example, 6.54% of the total size of mailbox items are from pa
 
 In cases when you need to examine partially items to validate that they don't contain relevant information, you can [export a content search report](export-a-content-search-report.md) that contains information about partially indexed items. When you export a content search report, be sure to choose one of the export options that includes partially indexed items. 
   
-![Choose the second or third option to export partially indexed items](media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
+![Choose the second or third option to export partially indexed items](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
 When you export content search results or a content search report using one of these options, the export includes a report named Unindexed Items.csv. This report includes most of the same information as the ResultsLog.csv file; however, the Unindexed Items.csv file also includes two fields related to partially indexed items: **Error Tags** and **Error Properties**. These fields contain information about the indexing error for each partially indexed item. Using the information in these two fields can help you determine whether or not the indexing error for a particular impacts your investigation. If it does, you can perform a targeted content search and retrieve and export specific email messages and SharePoint or OneDrive documents so that you can examine them to determine if they're relevant to your investigation. For step-by-step instructions, see [Prepare a CSV file for a targeted Content Search in Office 365](csv-file-for-an-id-list-content-search.md).
   
@@ -171,7 +171,7 @@ The following steps show you how to run a PowerShell script that searches for al
 
 Here's an example fo the output returned by the script.
   
-![Example of output from script that generates a report on your organization's exposure to partially indexed email items](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![Example of output from script that generates a report on your organization's exposure to partially indexed email items](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
 Note the following:
   

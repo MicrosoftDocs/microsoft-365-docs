@@ -29,7 +29,7 @@ In Advanced eDiscovery, the Relevance module includes the Relevance training and
 
 The Relevance workflow is shown and described as follows:
   
-![Relevance workflow](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![Relevance workflow](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **Cycles of assessment and tracking**:
     

@@ -46,11 +46,11 @@ To access the Advanced eDiscovery reports:
   
    On the **Advanced eDiscovery** home page, the Case, Custodian, Data Source, and Communications report tabs are displayed across the top of the page. 
   
-   ![Advanced eDiscovery reports on the home page](media/report-home.png)
+   ![Advanced eDiscovery reports on the home page](../media/report-home.png)
 
 5. To view a report, click a report tab, and then if necessary you can do one of the following things:
 
-   ![You can filter or download report data](media/AeDReportsFilterDownload.png)
+   ![You can filter or download report data](../media/AeDReportsFilterDownload.png)
 
    a. Click **Filter** to narrow the report data. You can filter on different properties for each report.
   

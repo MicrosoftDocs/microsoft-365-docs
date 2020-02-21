@@ -22,7 +22,7 @@ description: "You can configure end-user spam notifications for the default comp
 > [!IMPORTANT]
 > This topic is for Exchange Online Protection (EOP) standalone customers who are protecting on-premises mailboxes. Exchange Online customers who are protecting cloud-hosted mailboxes should read the following topic instead: [Configure end-user spam notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
-You can configure end-user spam notifications for the default company-wide spam filter policy or for custom spam filter policies. Enabling end-user spam notification messages lets your users manage their own spam-quarantined messages. 
+You can configure end-user spam notifications for the default company-wide spam filter policy or for custom spam filter policies. Enabling end-user spam notification messages lets your users manage their own quarantined spam, bulk, and phishing messages. 
   
 End-user spam notifications contain a list of all spam-quarantined messages that the end user has received during a time period that you configure (you can specify a value between 1 and 15 days). You can also configure the language in which the notification message is written.
   
@@ -66,7 +66,7 @@ For information about keyboard shortcuts that may apply to the procedures in thi
   
  **Tip:** If you want to test end-user spam notifications by sending them to a limited set of users before fully implementing them, create a custom content filter policy that enables end-user spam notifications for the domains in which the users reside. Then, in the EAC, under **Mail flow \> rules**, create a mail flow rule (also known as a transport rule) to block messages from quarantine@messaging.microsoft.com (the email address that sends notifications) with exceptions for the users who you want to receive the notifications. The following image is an example of creating an exception for two users (SaraD and AlexD) from domain Contoso.com: 
   
-![Transport rule to test end-user spam notifications](../media/EOP-ESN-testspecificusers.jpg)
+![Transport rule to test end-user spam notifications](../../media/EOP-ESN-testspecificusers.jpg)
   
 ## For more information
 

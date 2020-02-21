@@ -13,7 +13,7 @@ This view provides power, battery, and app usage metrics for your Microsoft Mana
 
 To view usage data, select the **Battery** tab.
 
-![Battery pane: predicted battery life per device model in upper left, top energy consumers (by app) in upper right, insights table across the bottom. Documentation link in upper right.](images/insights_battery.png)
+![Battery pane: predicted battery life per device model in upper left, top energy consumers (by app) in upper right, insights table across the bottom. Documentation link in upper right.](../../media/insights_battery.png)
 
 ## Predicted battery life
 
@@ -28,7 +28,7 @@ The table provides the predicted battery life (in hours), average battery life f
 
 ## Top energy consumers
 
-In the **Top energy consumers** area you’ll find the apps in your environment that consume the most energy in milliWatt-hours (mWh). The apps shown are per specific device, which you select in the **Predicted battery life** section to the left. For example, to see the per-app consumption for your Microsft Surface Book 2 devices, select that row in the battery life area. If you don't select any model, the app consumption data shown is for all apps that we have data for collectively.
+In the **Top energy consumers** area you’ll find the apps in your environment that consume the most energy in milliWatt-hours (mWh). The apps shown are per specific device, which you select in the **Predicted battery life** section to the left. For example, to see the per-app consumption for your Microsoft Surface Book 2 devices, select that row in the battery life area. If you don't select any model, the app consumption data shown is for all apps that we have data for collectively.
 
  For each app, colored segments show you the distribution of the app's energy use among these categories:
 

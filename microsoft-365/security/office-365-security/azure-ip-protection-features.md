@@ -36,7 +36,7 @@ Starting July 1, 2018, Microsoft will enable the protection capability in Azure 
 
 Tenant administrators can check the protection status in the Office 365 administrator portal.
 
-![Screenshot that shows that rights management in Office 365 is activated.](../media/303453c8-e4a5-4875-b49f-e80c3eb7b91e.png)
+![Screenshot that shows that rights management in Office 365 is activated.](../../media/303453c8-e4a5-4875-b49f-e80c3eb7b91e.png)
 
 ## Why are we making this change?
 
@@ -80,6 +80,6 @@ To opt out of the upcoming change, complete these steps:
 
 Once this is enabled, provided you haven't opted out, you can start using the new version of Office 365 Message Encryption which was announced at [Microsoft Ignite 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) and leverages the encryption and protection capabilities of Azure Information Protection.
 
-![Screenshot that shows an OME protected message in Outlook on the web.](../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
+![Screenshot that shows an OME protected message in Outlook on the web.](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
 
 For more information about the new enhancements, see [Office 365 Message Encryption](../../compliance/ome.md).

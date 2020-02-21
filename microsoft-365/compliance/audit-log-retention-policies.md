@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Audit log retention policies are part of the new Advanced audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization."
+description: "Audit log retention policies are part of the new Advanced Audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization."
 ---
 
 # Manage audit log retention policies
 
-You can create and manage audit log retention policies in the Security & Compliance Center. Audit log retention policies are part of the new Advanced audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization. You can retain audit logs for up to one year. You can create policies based on the following criteria:
+You can create and manage audit log retention policies in the Security & Compliance Center. Audit log retention policies are part of the new Advanced Audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization. You can retain audit logs for up to one year. You can create policies based on the following criteria:
 
 - All activities in one or more Microsoft 365 services
 
@@ -31,7 +31,7 @@ You can create and manage audit log retention policies in the Security & Complia
 
 ## Default audit log retention policy
 
-Advanced audit in Microsoft 365 provides a default audit log retention policy for all organizations. This policy retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This default policy retains audit records that contain the value of **AzureActiveDirectory**, **Exchange**, or **SharePoint** for the **Workload** property (which is the service in which the activity occurred). The default policy can't be modified. See the [More information](#more-information) section in this article for a list of record types for each workload that are included in the default policy.
+Advanced Audit in Microsoft 365 provides a default audit log retention policy for all organizations. This policy retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This default policy retains audit records that contain the value of **AzureActiveDirectory**, **Exchange**, or **SharePoint** for the **Workload** property (which is the service in which the activity occurred). The default policy can't be modified. See the [More information](#more-information) section in this article for a list of record types for each workload that are included in the default policy.
 
 > [!NOTE]
 > The default audit log retention policy only applies to audit records for activity performed by users who are assigned an Office 365 or Microsoft 365 E5 license or have a Microsoft 365 E5 Compliance add-on license. If you have non-E5 users in your organization, their corresponding audit records are retained for 90 days.
@@ -54,11 +54,11 @@ Advanced audit in Microsoft 365 provides a default audit log retention policy fo
 
     The **Audit log search** page is displayed.
 
-    ![The Audit log search page](media/AuditLogRetentionPolicy1.png)
+    ![The Audit log search page](../media/AuditLogRetentionPolicy1.png)
 
-3. Click **New retention policy**, and then complete the following fields on the flyout page:
+3. Click **New audit retention policy**, and then complete the following fields on the flyout page:
 
-    ![Audit log retention policy flyout page](media/AuditLogRetentionPolicy2.png)
+    ![Audit retention policy flyout page](../media/AuditLogRetentionPolicy2.png)
 
    a. **Name:** The name of the audit log retention policy. This name must be unique in your organization.
    

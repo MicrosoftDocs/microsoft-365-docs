@@ -40,19 +40,19 @@ First, make sure that the policy applies to the app in which you're going to val
     
 2. Choose **Application policy for Android** for the settings you created at setup, or another policy you created, and verify that it's enforced for Outlook, for example. 
     
-    ![Shows all the apps for which this policy protects files.](media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
+    ![Shows all the apps for which this policy protects files.](../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
   
 ### Validate Require a PIN or a fingerprint to access Office apps
 
 In the **Edit policy** pane, choose **Edit** next to **Office documents access control**, expand **Manage how users access Office files on mobile devices**, and make sure that **Require a PIN or fingerprint to access Office apps** is set to **On**.
   
-![Make sure that the Require a PIN or fingerprint to access Office apps is set to On.](media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
+![Make sure that the Require a PIN or fingerprint to access Office apps is set to On.](../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
 1. In the user's Android device, open Outlook and sign in with the user's Microsoft 365 Business credentials.
     
 2. You'll also be prompted to enter a PIN or use a fingerprint.
     
-    ![Enter a PIN on your Android device to access Office apps.](media/9e8ecfee-8122-4a3a-8918-eece80344310.png)
+    ![Enter a PIN on your Android device to access Office apps.](../media/9e8ecfee-8122-4a3a-8918-eece80344310.png)
   
 ### Validate Reset PIN after number of failed attempts
 
@@ -62,7 +62,7 @@ In the **Edit policy** pane, choose **Edit** next to **Office documents access c
     
 2. Enter an incorrect PIN as many times as specified by the policy. You'll see a prompt that states **PIN Attempt Limit Reached** to reset the PIN. 
     
-    ![After too many incorrect PIN attempts, you need to reset your PIN.](media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
+    ![After too many incorrect PIN attempts, you need to reset your PIN.](../media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
   
 3. Press **Reset PIN**. You'll be prompted to sign in with the user's Microsoft 365 Business credentials, and then required to set a new PIN.
     
@@ -70,17 +70,17 @@ In the **Edit policy** pane, choose **Edit** next to **Office documents access c
 
 In the **Edit policy** pane, choose **Edit** next to **Protection against lost or stolen devices**, expand **Protect work files when devices are lost or stolen**, and make sure that **Force users to save all work files to OneDrive for Business** is set to **On**.
   
-![Verify that Force users to save all work files to OneDrive for Business is set to On.](media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
+![Verify that Force users to save all work files to OneDrive for Business is set to On.](../media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
 1. In the user's Android device, open Outlook and sign in with the user's Microsoft 365 Business credentials, and enter a PIN if requested.
     
 2. Open an email that contains an attachment and tap the down arrow icon next to the attachment's information.
     
-    ![Tap the down arrow next to an attachment to try to save it.](media/b22573bb-91ce-455f-84fa-8feb2846b117.png)
+    ![Tap the down arrow next to an attachment to try to save it.](../media/b22573bb-91ce-455f-84fa-8feb2846b117.png)
   
     You'll see **Cannot save to device** on the bottom of the screen. 
     
-    ![Warning text that indicates cannot save a file locally to an Android.](media/52ca3f3d-7ed0-4a52-9621-4872da6ea9c5.png)
+    ![Warning text that indicates cannot save a file locally to an Android.](../media/52ca3f3d-7ed0-4a52-9621-4872da6ea9c5.png)
   
     > [!NOTE]
     > Saving to OneDrive for Business is not enabled for Android at this time, so you can only see that saving locally is blocked. 
@@ -107,7 +107,7 @@ In the **Edit policy** pane, choose **Edit** next to **Protection against lost o
     
 3. Tap the down arrow icon next to the attachment's info to save it.
     
-    ![Tap the down arrow to save the figure file to the Android device.](media/08a9e21e-4022-45d5-acff-59cface651e7.png)
+    ![Tap the down arrow to save the figure file to the Android device.](../media/08a9e21e-4022-45d5-acff-59cface651e7.png)
   
 4. You may be prompted to allow Outlook to access photos, media, and files on your device. Tap **Allow**.
     
@@ -115,7 +115,7 @@ In the **Edit policy** pane, choose **Edit** next to **Protection against lost o
     
 6. You should see an encrypted photo (or more, if you saved multiple image file attachments) in the list. It may appear in the Pictures list as a gray square with a white exclamation point within a white circle in the center of the gray square.
     
-    ![An encrypted image file in the Gallery app.](media/25936414-bd7e-421d-824e-6e59b877722d.png)
+    ![An encrypted image file in the Gallery app.](../media/25936414-bd7e-421d-824e-6e59b877722d.png)
   
 ## iOS
   
@@ -129,19 +129,19 @@ First, make sure that the policy applies to the app in which you're going to val
     
 2. Choose **Application policy for iOS** for the settings you created at setup, or another policy you created, and verify that it's enforced for Outlook for example. 
     
-    ![Shows all the apps for which this policy protects files.](media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
+    ![Shows all the apps for which this policy protects files.](../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
   
 ### Validate Require a PIN to access Office apps
 
 In the **Edit policy** pane, choose **Edit** next to **Office documents access control**, expand **Manage how users access Office files on mobile devices**, and make sure that **Require a PIN or fingerprint to access Office apps** is set to **On**.
   
-![Make sure that the Require a PIN or fingerprint to access Office apps is set to On.](media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
+![Make sure that the Require a PIN or fingerprint to access Office apps is set to On.](../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
 1. In the user's iOS device, open Outlook and sign in with the user's Microsoft 365 Business credentials.
     
 2. You'll also be prompted to enter a PIN or use a fingerprint.
     
-    ![Enter a PIN on your IOS device to access Office apps.](media/06fc5cf3-9f19-4090-b23c-14bb59805b7a.png)
+    ![Enter a PIN on your IOS device to access Office apps.](../media/06fc5cf3-9f19-4090-b23c-14bb59805b7a.png)
   
 ### Validate Reset PIN after number of failed attempts
 
@@ -151,7 +151,7 @@ In the **Edit policy** pane, choose **Edit** next to **Office documents access c
     
 2. Enter an incorrect PIN as many times as specified by the policy. You'll see a prompt that states **PIN Attempt Limit Reached** to reset the PIN. 
     
-    ![After too many incorrect PIN attempts, you need to reset your PIN.](media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
+    ![After too many incorrect PIN attempts, you need to reset your PIN.](../media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
   
 3. Press **OK**. You'll be prompted to sign in with the user's Microsoft 365 Business credentials, and then required to set a new PIN.
     
@@ -159,13 +159,13 @@ In the **Edit policy** pane, choose **Edit** next to **Office documents access c
 
 In the **Edit policy** pane, choose **Edit** next to **Protection against lost or stolen devices**, expand **Protect work files when devices are lost or stolen**, and make sure that **Force users to save all work files to OneDrive for Business** is set to **On**.
   
-![Verify that Force users to save all work files to OneDrive for Business is set to On.](media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
+![Verify that Force users to save all work files to OneDrive for Business is set to On.](../media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
 1. In the user's iOS device, open Outlook and sign in with the user's Microsoft 365 Business credentials, and enter a PIN if requested.
     
 2. Open an email that contains an attachment, open the attachment and choose **Save** on the bottom of the screen. 
     
-    ![Tap the Save option after you open an attachment to try to save it.](media/b419b070-1530-4f14-86a8-8d89933a2b25.png)
+    ![Tap the Save option after you open an attachment to try to save it.](../media/b419b070-1530-4f14-86a8-8d89933a2b25.png)
   
 3. You should only see an option for OneDrive for Business. If not, tap **Add Account** and select **OneDrive for Business** from the **Add Storage Account** screen. Provide the end user's Microsoft 365 Business to sign in when prompted. 
     

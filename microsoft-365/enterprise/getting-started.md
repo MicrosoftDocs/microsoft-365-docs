@@ -1,4 +1,4 @@
-﻿---
+---
 title: Getting Started - Desktop Deployment
 f1.keywords:
 - NOCSH
@@ -19,14 +19,14 @@ description: Introduction to the Desktop Deployment Process.
 
 # Getting Started - Desktop Deployment
 
-![](media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
+![](../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>Getting Started: People, Process and Technology Guidance</strong></p>
 <p>Discover the benefits of Windows 10 and Office 365 ProPlus, major changes and considerations versus previous deployments, and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></td>
-<td><a href="https://aka.ms/ddev0" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -108,7 +108,7 @@ As in previous upgrades, the User State Migration Tool continues to be a valuabl
 
 **[Step 7: Windows and Office as a Service](https://aka.ms/mdd7)** This represents a major shift in the way you maintain users’ desktop real-estate. With this move to Windows 10 and Office 365 ProPlus you can move to managing Windows and Office as a service. In place of a massive shift in technology every few years, you will continually be bringing new capabilities, experiences, and protections to your user. Semi-annual feature updates deliver new capabilities in the Fall and Spring of each year, while monthly cumulative Quality Updates will contain security, reliability, and bug fixes. While you can opt to deploy the Office 2019 client, we strongly recommend you to move to Office 365 ProPlus. This follows a similar service plan to Windows so your users get updates to the Office apps on a regular basis too.
 
-![](media/getting-started-media/getting-started-media-2.png)
+![](../media/getting-started-media/getting-started-media-2.png)
 
 [Overview of Windows as a service](https://docs.microsoft.com/windows/deployment/update/waas-overview)
 [Overview of Office as a service](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
