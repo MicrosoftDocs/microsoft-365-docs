@@ -45,7 +45,7 @@ You can choose to apply sensitivity labels to content automatically when that co
 ![Label conditions for auto-labeling in Office apps](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> The option for **Classifers** is in preview and gradually rolling out to customers. If you don't see this option, it's not yet available for your tenant.
+> The option for **Classifers** is in preview and requires you to contact Microsoft to enable it for your tenant. For more information about this preview, see the blog post [Machine Learning based Automatic and recommended labeling on Office Apps](https://microsoft-my.sharepoint.com/:w:/p/shpalta/EZ0miKtkub1DlqFXj8Drl-sBNQdrXfyRseeUnLR6d74wwA?e=d8zFge&CID=275B0D45-9CC7-4B12-A7C2-C3A595B3C230).
 
 When this sensitivity label is automatically applied, the user sees a notification in their Office app. They can choose **OK** to dismiss the notification.
 
@@ -83,8 +83,6 @@ During the preview period, the following apps support classifers for sensitivity
     - Excel
     - PowerPoint
     - Outlook
-
-For more information about this preview option, see the blog post [Machine Learning based Automatic and recommended labeling on Office Apps](https://microsoft-my.sharepoint.com/:w:/p/shpalta/EZ0miKtkub1DlqFXj8Drl-sBNQdrXfyRseeUnLR6d74wwA?e=d8zFge&CID=275B0D45-9CC7-4B12-A7C2-C3A595B3C230).
 
 ## Recommend that the user apply a sensitivity label
 
