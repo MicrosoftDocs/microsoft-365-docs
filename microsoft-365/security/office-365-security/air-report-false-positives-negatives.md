@@ -84,6 +84,6 @@ In the Action center, you can see remediation actions that were taken and potent
 
 ## Related articles
 
-[Office 365 Advanced Threat Protection](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp)
+[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 
 [Automated investigation and response (AIR) in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
