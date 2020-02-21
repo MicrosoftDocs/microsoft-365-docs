@@ -77,10 +77,9 @@ Classifying customer data appropriately is the cornerstone of working with perso
 
 Microsoft provides capabilities that assist you in responding to data subject rights requests, and thereby accessing customer data. However, it is your responsibility to ensure that personal data is located and classified appropriately.
 
-***Dynamics 365 for Customer Engagement*** provides multiple methods for you to search for personal data within records such as: Advanced Find Search, Relevance Search, and Search for Records. These functions all enable you to identify (find) personal data.
+***Dynamics 365 for Customer Engagement*** provides multiple methods for you to search for personal data within records such as: Advanced Find Search and Search for Records. These functions all enable you to identify (find) personal data.
 
 - [Advanced Find Search](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)
-- [Relevance Search](https://docs.microsoft.com/dynamics365/customer-engagement/basics/relevance-search-results), which can be saved for future reference using dashboards Relevance search, which can be saved for future reference using dashboards
 - [Search for Records](https://docs.microsoft.com/dynamics365/customer-engagement/basics/search-records) across multiple record types
 
 In Dynamics 365 for Marketing, you have the following additional capabilities:
