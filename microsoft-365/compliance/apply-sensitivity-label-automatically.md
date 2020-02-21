@@ -32,7 +32,7 @@ The ability to apply sensitivity labels to content automatically is important be
 
 Automatic labeling in Office apps for Windows is supported by the Azure Information Protection unified labeling client. For built-in labeling in Office apps, this capability is [in preview for some apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels):
+The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md):
 
 ![Auto labeling options for sensitivity labels](../media/sensitivity-labels-auto-labeling-options.png)
 
