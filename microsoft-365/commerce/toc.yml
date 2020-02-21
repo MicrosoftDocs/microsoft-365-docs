@@ -1,0 +1,44 @@
+- name: Manage commerce purchases and billing
+  href: index.md
+  expanded: true
+  items:
+    - name: Manage subscriptions
+      items: 
+        - name: Manage third-party apps
+          href: manage-saas-apps.md
+        - name: Upgrade subscriptions
+          href: /microsoft-365/commerce/subscriptions/upgrade-to-different-plan
+        - name: Manage self-service purchases (Users)
+          href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-users
+        - name: Manage self-service purchases (Admin)
+          href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins
+    - name: Manage licenses
+      items:
+        - name: Buy licenses
+          href: /microsoft-365/commerce/licenses/buy-licenses
+        - name: Assign licenses
+          href: /microsoft-365/admin/manage/assign-licenses-to-users
+        - name: Unassign licenses
+          href: /microsoft-365/admin/manage/remove-licenses-from-users
+        - name: Remove licenses from subscription
+          href: /microsoft-365/commerce/licenses/remove-licenses-from-subscription
+    - name: Bills and payments
+      items: 
+        - name: Understand your invoice
+          href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
+        - name: Manage payment methods
+          href: /microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account
+        - name: Manage billing profiles
+          href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
+        - name: Payment Services Directive 2 and Strong Customer Authentication
+          href: /microsoft-365/commerce/billing-and-payments/psd2
+    - name: Billing accounts
+      items: 
+        - name: Manage billing accounts
+          href: /microsoft-365/commerce/billing-accounts/manage-billing-accounts
+        - name: Associate a tenant with my billing account
+          href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
+    - name: Manage relationships with my partners
+      href: manage-partners.md
+    - name: Close your account
+      href: close-your-account.md
