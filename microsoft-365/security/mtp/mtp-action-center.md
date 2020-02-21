@@ -38,9 +38,6 @@ The Action center provides a "single pane of glass" experience for tasks, such a
 
 Your security operations team can operate more effectively and efficiently, because the Action center provides a comprehensive view of Microsoft Threat Protection at work.
 
-## Remediation actions
-
-
 ## Go to the Action center
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
