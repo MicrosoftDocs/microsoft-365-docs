@@ -65,7 +65,7 @@ Further, you can choose whether a condition must detect all sensitive informatio
 
 ### Configuring classifers for a label
 
-When you select the **Classifers** option, select one or more of the built-in classifiers:
+When you select the **Classifers** option, select one or more of the built-in classifiers or custom classifers you've created:
 
 ![Options for classifers and sensitivity labels](../media/sensitivity-labels-classifers.png)
 
