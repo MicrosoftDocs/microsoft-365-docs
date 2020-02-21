@@ -27,8 +27,7 @@ description: "Use the admin center to set up your organization in the cloud, and
 
 # About the Microsoft 365 admin center
 
-
-**If you purchased an Office 365 business plan AND you have admin permissions, you have access to the admin center**. This article is for you! 
+**If you purchased an Office 365 business plan AND you have admin permissions, you have access to the admin center**. This article is for you!
 
 **If you are a user or have an Office 365 home plan, you do not have an admin center.** To set up Office 365, go to [Download and install or reinstall Office 365 or Office 2016 on a PC or Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).
 
@@ -36,7 +35,7 @@ You use the admin center to set up your organization in the cloud, manage users,
 
 Watch a short video about the admin center. <br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL]
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
@@ -44,26 +43,26 @@ If you found this video helpful, check out the [complete training series for sma
 
 ::: moniker range="o365-worldwide"
 
-1. Sign in at [admin.microsoft.com](https://admin.microsoft.com) with your admin account.
+1. Sign in at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a> with your admin account.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center </a> with your admin account. 
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center </a> with your admin account.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a> with your admin account. 
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a> with your admin account.
 
 ::: moniker-end
 
 2. Select the app launcher icon in the upper-left and choose **Admin**.
-    
+
     The **Admin** tile appears only to people who have Office 365 [admin permissions](../add-users/about-admin-roles.md). If you don't see the tile, then you don't have permissions to access the admin center for your organization.
-    
+
 ## Admin center features and settings
 
 Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx).
@@ -74,7 +73,7 @@ Here are the features and settings you'll find in the left-hand navigation of th
 |**Users** <br/> |Create and manage users in your organization, like employees or students. You can also set their permission level or reset their passwords.  <br/> |
 |**Groups** <br/> |Create and manage groups in your organization, such as an Office 365 group, distribution group, security group, or shared mailbox. Learn how to [create](../create-groups/create-groups.md) and [manage](../create-groups/manage-groups.md) groups.  <br/> |
 |**Resources** <br/> |Create and manage resources, like a SharePoint site collection. Learn how to [create site collections](https://support.office.com/article/3a3d7ab9-5d21-41f1-b4bd-5200071dd539.aspx).  <br/> |
-|**Billing** <br/> |View, purchase, or cancel subscriptions for your organization. View past billing statements or view the number of assigned licenses to individual users. Learn how to [manage billing](../subscriptions-and-billing/subscriptions-and-billing.md).  <br/> |
+|**Billing** <br/> |View, purchase, or cancel subscriptions for your organization. View past billing statements or view the number of assigned licenses to individual users. Learn how to [manage billing](../../commerce/subscriptions-and-billing.md).  <br/> |
 |**Support** <br/> | View existing service requests or create new ones. Learn more in [Contact support for business products - Admin Help](../contact-support-for-business-products.md). |
 |**Settings** <br/> |Manage global settings for apps like email, sites, and the Office suite. Change your password policy and expiration date. Add and update domain names like contoso.com. Change your organization profile and release preferences. And choose whether partners can access your admin center.  <br/> |
 |**Setup** <br/> |Manage existing domains, turn on and manage multi-factor authentication, manage admin access, migrate user mailboxes to Office 365, manage feature updates, and help users install their Office apps. |
@@ -85,16 +84,15 @@ Here are the features and settings you'll find in the left-hand navigation of th
 ## Common tasks in the admin center
 
 - Manage users: [Add users individually](../add-users/add-users.md), [Delete or restore users](../add-users/delete-a-user.md), or [Reset a user's password](../add-users/reset-passwords.md).
-    
-- Get help with billing: [Billing](../subscriptions-and-billing/subscriptions-and-billing.md)
-    
+
+- Get help with billing: [Billing](../../commerce/subscriptions-and-billing.md)
+
 - See activity reports: [Activity Reports](../activity-reports/activity-reports.md)
-    
+
 - [Create an Office 365 group ](../create-groups/create-groups.md)
 
 - [Manage an Office 365 group](../create-groups/manage-groups.md)
-    
 
 ## See also
 
-[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

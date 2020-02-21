@@ -57,7 +57,7 @@ Watch a quick overview of the three plans best for your business. or scroll down
 Office 365 operated by 21Vianet is designed to meet the needs for secure, reliable and scalable cloud services in China. This service is powered by technology that Microsoft has licensed to 21Vianet. Microsoft does not operate the service itself. 21Vianet operates, provides and manages delivery of the service. 21Vianet is the largest carrier-neutral Internet data center services provider in China, providing hosting, managed network services, and cloud computing infrastructure services. By licensing Microsoft technologies, 21Vianet operates local Office 365 datacenters to provide you the ability to use Office 365 services while keeping your data within China. 21Vianet also provides your subscription and billing services, as well as support.
   
 > [!NOTE]
-> These services are subject to Chinese laws. 
+> These services are subject to Chinese laws.
   
 When you sign up for Office 365 operated by 21Vianet, your team can begin using the latest versions of Word, Excel, PowerPoint, and other Office programs in your business.
   
@@ -76,7 +76,7 @@ Watch a short video about choosing an Office 365 business plan.<br><br>
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-Need help choosing? Sales consultants are available to answer your questions. Just go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) and choose one of the contact support options listed at the left side of the page. 
+Need help choosing? Sales consultants are available to answer your questions. Just go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) and choose one of the contact support options listed at the left side of the page.
   
 ::: moniker-end
 
@@ -94,7 +94,7 @@ Need help choosing? Sales consultants are available to answer your questions. Ju
 
 Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
   
-If you start with a free trial, you can [buy it later](../subscriptions-and-billing/buy-a-subscription-from-your-free-trial.md). All your users and data from the trial will still be there.
+If you start with a free trial, you can [buy it later](../../commerce/buy-a-subscription-from-your-free-trial.md). All your users and data from the trial will still be there.
   
 You don't need to cancel your trial. If you don't buy the trial subscription, it automatically expires at the end of the trial period, and all the information is permanently deleted.
 
@@ -109,7 +109,7 @@ Watch a short video that shows the sign up process.<br><br>
 
 Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
   
-If you start with a free trial, you can [buy it later](../subscriptions-and-billing/buy-a-subscription-from-your-free-trial.md). All your users and data from the trial will still be there.
+If you start with a free trial, you can [buy it later](../../commerce/buy-a-subscription-from-your-free-trial.md). All your users and data from the trial will still be there.
   
 You don't need to cancel your trial. If you don't buy the trial subscription, it automatically expires at the end of the trial period, and all the information is permanently deleted.
   
@@ -118,27 +118,27 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
 ## You'll be asked for the following information when you sign up
 
 - **The address and contact information for your subscription:**
-    
-  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard. 
-    
-  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify. 
-    
+
+  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
+
+  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
+
     > [!NOTE]
-    > The email address you enter here is different from your Office 365 email address (your logon name, below). Because this is where we also send your billing information, we recommend you use an e-mail address that's appropriate for receiving business email. 
+    > The email address you enter here is different from your Office 365 email address (your logon name, below). Because this is where we also send your billing information, we recommend you use an e-mail address that's appropriate for receiving business email.
   
-- **A sign-in name (user ID):** This becomes your initial Office 365 email address, just to get you started quickly. 
-    
+- **A sign-in name (user ID):** This becomes your initial Office 365 email address, just to get you started quickly.
+
     This is the email address you use to sign in. For example, if your business name is Fourth Coffee, you might choose rob@fourthcoffee.onmicrosoft.com for your user ID.
-    
+
     Most people add their own custom domain shortly after they sign up so they can start getting email to it. For example, if you have a custom domain named fourthcoffee.com, you can set up your email address as rob@fourthcoffee.com.
-    
+
 - **Payment information:**
-    
+
     You can pay for your subscription with a credit card. If the cost reaches a certain amount, you may also have the option to pay by invoice.
-    
+
     > [!IMPORTANT]
     >  When you sign up, be sure to choose the best payment option for your organization. Changing payment options involves calling billing support.
 
-    ## See also
-    
-    [Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+## See also
+
+[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
