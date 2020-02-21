@@ -388,8 +388,8 @@
               href: ./office-365-security/atp-safe-links-warning-pages.md
             - name: Use Threat Trackers
               href: ./office-365-security/threat-trackers.md
-            - name: Use Attack Simulator in Office 365
-              href: ./office-365-security/attack-simulator.md      
+            - name: Attack Simulator in Office 365 ATP
+              href: ./office-365-security/attack-simulator.md
             - name: Safe Documents in Office 365 ATP
               href: ./office-365-security/safe-docs.md
             - name: Threat Explorer (and real-time detections)
