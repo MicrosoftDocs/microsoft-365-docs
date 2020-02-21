@@ -56,7 +56,7 @@ As an administrator, you can:
 
 If you prefer a more automated way to manage the lifecycle of your Office 365 Groups you can use expiration policies to expire groups at a specific time interval. The group's owners will get an email 30, 15 and 1 day before the group expiration that allows them to easily renew the group if it's still needed. See: [Office 365 Group Expiration Policy](office-365-groups-expiration-policy.md).
 
-You can administer your groups from the Microsoft 365 admin center or [by using PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/manage-office-365-groups-with-powershell).
+You can administer your groups from the Microsoft 365 admin center or [by using PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell).
 
 If you have a lot of users, such as in a large corporation or enterprise, you may have many users who create groups for various purposes. We highly recommend that you review [Plan for governance in Office 365 Groups](plan-for-groups-governance.md) for best practices.
 
@@ -99,6 +99,6 @@ Office 365 Groups works with Azure Active Directory (AAD). The Groups features y
 
 [Upgrade distribution lists to Office 365 Groups](../manage/upgrade-distribution-lists.md)
 
-[Manage Office 365 Groups with PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Manage Office 365 Groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)

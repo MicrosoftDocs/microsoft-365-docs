@@ -183,7 +183,7 @@ You must be a Global Admin or a Billing Admin to do the tasks described in this 
 
 You must be a Global Admin or a Billing Admin to do the tasks described in this article.
   
- **Not an admin?** Contact your IT administrator for help. [Who has admin permissions in my business?](../../admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
+ **Not an admin?** Contact your IT administrator for help. [Who has admin permissions in my business?](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
   
  **For Office 365 Home, or Personal**, see [Change the payment method or credit card linked to your Microsoft account](https://support.microsoft.com/help/4026594).
   
