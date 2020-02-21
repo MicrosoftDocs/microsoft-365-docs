@@ -29,7 +29,7 @@ Office 365 leverages a number of different certificate providers. The following 
 | **Certificate type** | **P7b download** | **CRL Endpoints** | **OCSP Endpoints** | **AIA Endpoints** |
 | --- | --- | --- | --- | --- |
 | Publicly Trusted Root Certificates | [Office 365 Root Certificate Bundle (P7B)](https://download.microsoft.com/download/A/5/A/A5AE01F3-D19B-4A11-9407-801263CEF72C/O365_Root_Certs_20170321.p7b) | crl.globalsign.net<br>www.d-trust.net | N/A | N/A |
-| Publicly Trusted Intermediate Certificates | [Office 365 Intermediate Certificate Bundle (P7B)​​](https://download.microsoft.com/download/4/D/5/4D5339A4-0A4A-46AB-AE52-B179DEDA4BEC/O365_Intermediate_Certs_20170321.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
+| Publicly Trusted Intermediate Certificates | [Office 365 Intermediate Certificate Bundle (P7B)​​](https://download.microsoft.com/download/4/D/5/4D5339A4-0A4A-46AB-AE52-B179DEDA4BEC/O365_Intermediate_Certs_20170321.p7b) | cdp1.public-trust.com<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com |
 
 Expand the root and intermediate sections below to see additional details about the certificate providers.
 
@@ -48,21 +48,6 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-1)** | D4DE20D05E66FC53FE1A50882C78DB2852CAE474 |
 | **Thumbprint (SHA-256)** | 16AF57A9F676B0AB126095AA5EBADEF22AB31119D644AC95CD4B93DBF3F26AEB |
 | **Pin (SHA-256)** | Y9mvm0exBk1JoQ57f9Vm28jKo5lFm/woKcVxrYxu80o= |
-
-### **CNNIC ROOT**
-
-| **Subject** | CN=CNNIC ROOT<br>O=CNNIC<br>C=CN |
-| --- | --- |
-| **Serial Number** | 49:33:00:01 |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha1RSA |
-| **Validity Not Before** | Apr 16 07:09:14 2007 UTC |
-| **Validity Not After** | Apr 16 07:09:14 2027 UTC |
-| **Subject Key Identifier** | 65:f2:31:ad:2a:f7:f7:dd:52:96:0a:c7:02:c1:0e:ef:a6:d5:3b:11 |
-| **Authority Key Identifier** | keyid:65:f2:31:ad:2a:f7:f7:dd:52:96:0a:c7:02:c1:0e:ef:a6:d5:3b:11 |
-| **Thumbprint (SHA-1)** | 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F |
-| **Thumbprint (SHA-256)** | E28393773DA845A679F2080CC7FB44A3B7A1C3792CB7EB7729FDCB6A8D99AEA7 |
-| **Pin (SHA-256)** | H0IkzshPyZztiB/2/P0+IfjFGcVHqmpd094kcwLOUNE= |
 
 ### **DigiCert Global Root CA**
 
@@ -225,25 +210,6 @@ Expand the root and intermediate sections below to see additional details about 
 | **Pin (SHA-256)** | JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg= |
 
 ## **Office 365 Intermediate Certificate Details**
-
-### **CNNIC SHA256 SSL**
-
-| **Subject** | CN=CNNIC SHA256 SSL <br>O=CNNIC SHA256 SSL <br>C=CN |
-| --- | --- |
-| **Issuer** | CN=CNNIC ROOT <br>O=CNNIC <br>C=CN |
-| **Serial Number** | 49:33:00:7C |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha256RSA |
-| **Validity Not Before** | Dec 18 12:32:18 2014 UTC |
-| **Validity Not After** | Dec 18 12:32:18 2024 UTC |
-| **Subject Key Identifier** | b7:d1:59:8b:8c:0d:06:28:47:23:00:3a:36:04:a5:ee:38:76:53:3c |
-| **Authority Key Identifier** | keyid:65:f2:31:ad:2a:f7:f7:dd:52:96:0a:c7:02:c1:0e:ef:a6:d5:3b:11 |
-| **Thumbprint (SHA-1)** | FC844648FC708433921BE88B18C48787A3E2813E |
-| **Thumbprint (SHA-256)** | FA8B9F99DBB94E7B772AA9190846E777047C15C7A3BF4A1AF9C0CA984A689511 |
-| **Pin (SHA-256)** | dKZRcLDh7hBNZTmTIHOGJ6C2Om/ITjUCPkOnLTnrZXk= |
-| **AIA URLs** | http://www.cnnic.cn/download/cert/CNNICROOT.cer |
-| **CRL URLs** | ldap:///CN=crl1,%20OU=crl,%20O=CNNIC,%20C=CN?certificateRevocationList;binary,authorityRevocationList;binary,deltaRevocationList;binary<br>http://crl.cnnic.cn/download/rootsha2crl/CRL1.crl |
-| **OCSP URLs** | <http://ocspcnnicroot.cnnic.cn> |
 
 ### **D-TRUST SSL Class 3 CA 1 2009**
 
