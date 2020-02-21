@@ -97,7 +97,7 @@ Quick links for the most common admin tasks in Office 365.
         </a>
     </li>
     <li>
-        <a href="../subscriptions-and-billing/cancel-your-subscription.md">
+        <a href="../../commerce/subscriptions/cancel-your-subscription.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

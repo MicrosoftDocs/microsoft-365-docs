@@ -36,8 +36,8 @@ Prepare to roll up your sleeves and block out a chunk of time on your calendar: 
 - You need to combine multiple subscriptions into one new one.
 
 > [!IMPORTANT]
-> If you need to [change your subscription plan](../subscriptions-and-billing/switch-to-a-different-plan.md) and can use the Switch plans wizard, or if you need to transfer to a new subscription plan in the same subscription family even when the Switch plans wizard doesn't work, you don't need to manually transfer your data, and there is no down time.
-  
+> If you need to [change your subscription plan](../../commerce/subscriptions/switch-to-a-different-plan.md) and can use the Switch plans wizard, or if you need to transfer to a new subscription plan in the same subscription family even when the Switch plans wizard doesn't work, you don't need to manually transfer your data, and there is no down time.
+
 |**Tasks**|**Steps**|
 |:-----|:-----|
 |Purchase the plan you want to move to.  <br/> |When you sign up, you specify the company name to use in the initial domain names:  *yourcompany*  .onmicrosoft.com,  *yourcompany*  -public.sharepoint.com, and  *yourcompany*  .sharepoint.com. You need to use a different  *yourcompany*  name than you did for any existing subscriptions.  <br/> > [!NOTE]>  It typically takes a minimum of several months after cancelling a subscription to release the initial domain names that use  *yourcompany*  from our systems. Even if you plan to save all your data from your old Office 365 subscription, and cancel that subscription, the old  *yourcompany*  value is not immediately available for use in a new subscription.           |
@@ -74,7 +74,7 @@ If you have a public website hosted on Office 365, you need to save it and re-cr
 > [!NOTE]
 > If your public website is hosted at a DNS hosting provider, no changes are required. It will not be affected by your transition.
   
-To save a document library or list content from a SharePoint Online environment to file shares or to a local computer, see [Manual migration of SharePoint Online content](https://go.microsoft.com/fwlink/?LinkId=402910).
+To save a document library or list content from a SharePoint Online environment to file shares or to a local computer, see [Manual migration of SharePoint Online content](https://go.microsoft.com/fwlink/p/?LinkId=402910).
   
 > [!NOTE]
 > The Public site migration app can't transfer data to a different subscription.
