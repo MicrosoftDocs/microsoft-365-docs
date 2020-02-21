@@ -26,7 +26,7 @@ ms.custom: okr_SMB
 
 # Apply for tax exempt status for Office 365 for business
 
-If you qualify for tax exempt status in your country or region, please [contact support](../contact-support-for-business-products.md) to create a service request to establish tax exempt status for your subscription. You'll have to provide the following documentation when you submit your request: 
+If you qualify for tax exempt status in your country or region, please [contact support](../../admin/contact-support-for-business-products.md) to create a service request to establish tax exempt status for your subscription. You'll have to provide the following documentation when you submit your request: 
   
 |**Location**|**Documentation**|
 |:-----|:-----|

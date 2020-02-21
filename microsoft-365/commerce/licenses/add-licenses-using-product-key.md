@@ -31,7 +31,7 @@ description: "Learn how to add licenses to your Office 365 subscription."
 Prepaid licenses are issued to you as a 25-character alphanumeric code. After you have purchased the licenses you need, you can add them to your subscription. You can also use a product key to extend the expiration date of your subscription.
 
 > [!NOTE]
-> If you don't want to purchase a new product key, you can always choose to add a credit card or bank account to your subscription to pay for more licenses or to extend your subscription expiration date. For more information, see [Renew Office 365 for business](../subscriptions-and-billing/renew-your-subscription.md).
+> If you don't want to purchase a new product key, you can always choose to add a credit card or bank account to your subscription to pay for more licenses or to extend your subscription expiration date. For more information, see [Renew Office 365 for business](../subscriptions/renew-your-subscription.md).
   
 ## Add licenses to your subscription
 
@@ -155,4 +155,4 @@ Prepaid licenses are issued to you as a 25-character alphanumeric code. After yo
 
 ## Related articles
 
-[Assign licenses to users](../manage/assign-licenses-to-users.md)
+[Assign licenses to users](../../admin/manage/assign-licenses-to-users.md)

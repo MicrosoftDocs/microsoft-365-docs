@@ -28,7 +28,7 @@ e-Invoice is electronic invoice issued by seller after buyer purchases in accord
   
 A sample copy of e-Invoice is included here:
   
-![The Taiwan e-Invoice.](../media/01a275ad-54a9-4b76-ac03-4b288508b161.png)
+![The Taiwan e-Invoice.](../../admin/media/01a275ad-54a9-4b76-ac03-4b288508b161.png)
   
 ## What is my tax rate?
 
@@ -40,7 +40,7 @@ Microsoft will replace current computerized invoice with e-Invoice on **Septembe
   
 ## Where can I find my e-Invoice?
 
-You can view, download, and print your e-Invoice the day after your bill is ready, through your admin center, together with your monthly bill. [View your bill](../subscriptions-and-billing/view-your-bill-or-invoice.md).
+You can view, download, and print your e-Invoice the day after your bill is ready, through your admin center, together with your monthly bill. [View your bill](view-your-bill-or-invoice.md).
   
 ## How do I update my VAT ID?
 
@@ -60,8 +60,8 @@ After you have created your account, you may update your VAT ID through your adm
 
 If your receipt won Lucky Draw (only available to customers without VAT ID), we will send a hard copy directly to the addresses on file by registered mail.
   
-Otherwise, if you need the official paper copy of your e-Invoice, please [contact support](../contact-support-for-business-products.md). After we receive your request, we will mail the paper copy of the e-Invoice to the address on file.
+Otherwise, if you need the official paper copy of your e-Invoice, please [contact support](../../admin/contact-support-for-business-products.md). After we receive your request, we will mail the paper copy of the e-Invoice to the address on file.
   
 ## More questions?
 
-[連絡客戶支援](../contact-support-for-business-products.md)
+[連絡客戶支援](../../admin/contact-support-for-business-products.md)

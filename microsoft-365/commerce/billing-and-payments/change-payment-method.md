@@ -59,7 +59,7 @@ When you buy Office 365 for business, you choose to pay by credit card or bank a
 > [!NOTE]
 > After you switch payment methods, your users will continue to have the same license assignments as before.
   
- **Want to change your payment frequency?** If you want to change how frequently you pay for your subscription, either from annual to monthly or monthly to annual, you'll need to [call Office 365 support](../contact-support-for-business-products.md) for help.
+ **Want to change your payment frequency?** If you want to change how frequently you pay for your subscription, either from annual to monthly or monthly to annual, you'll need to [call Office 365 support](../../admin/contact-support-for-business-products.md) for help.
   
  **Just want to change your credit card or bank account information?** See [Add, update, or remove a credit card or bank account in Office 365 for business](add-update-or-remove-credit-card-or-bank-account.md).
   
@@ -192,7 +192,7 @@ If no credit check is required, use the steps in [Use the new admin center to ch
 
 2. Find the subscription that you want to change. In the **Payment method** section, select **Change payment details**.
 
-    ![The Payment method section of a Subscription card for a subscription that pays by credit card.](../media/6c9d9cae-6086-4687-a979-bb971f35f1b4.png)
+    ![The Payment method section of a Subscription card for a subscription that pays by credit card.](../../admin/media/6c9d9cae-6086-4687-a979-bb971f35f1b4.png)
   
 3. In the **Change payment details** pane, select **Change your payment method**.
 
@@ -266,7 +266,7 @@ When you purchase Office 365 operated by 21Vianet in China, you choose either to
 > [!NOTE]
 > If your subscription costs under a certain amount of money (this amount varies by service location), the invoice payment method is not available as an option. If your subscription costs over a certain amount of money, you will have the option to pay by invoice. A credit check may be required for larger invoice payments.
   
-1. Call [the 21Vianet support team](../contact-support-for-business-products.md).
+1. Call [the 21Vianet support team](../../admin/contact-support-for-business-products.md).
 
 2. Wait while the support agent puts your subscription in a "canceled - reduced functionality" or "expired" state. Don't worry, your users will still be able to use their services during this time.
 

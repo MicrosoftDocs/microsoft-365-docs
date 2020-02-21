@@ -30,7 +30,7 @@ If you already have an Office 365 for business subscription and you want to buy 
   
 When you buy another subscription through the admin center, you're guaranteed that the new subscription will be associated with the same organization (domain name space) as your existing subscription. This makes it easier to move users within your organization between subscriptions or assign them a user license for the additional subscription they need.
   
-After purchasing a new subscription, you'll need to assign the users who you want to use that subscription a user license for it. To learn how, see [Assign licenses to users in Office 365 for business](../manage/assign-licenses-to-users.md).
+After purchasing a new subscription, you'll need to assign the users who you want to use that subscription a user license for it. To learn how, see [Assign licenses to users in Office 365 for business](../../admin/manage/assign-licenses-to-users.md).
   
 ## Buy another subscription
 
