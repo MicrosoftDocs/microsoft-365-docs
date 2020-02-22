@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-ms.date: 02/18/2020
+ms.date: 02/20/2020
 description: "Learn how to speed up the process of detecting and addressing compromised user accounts with automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
 ---
 
@@ -51,7 +51,7 @@ When a user account is compromised, alerts are triggered. And in some cases, tha
 - [View details about automated investigations](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> You must have appropriate permissions to perform the following tasks. [Find out how to get AIR and see required permissions](automated-investigation-response-office.md#how-to-get-air).
+> You must have appropriate permissions to perform the following tasks. See [Required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).
 
 ### View and investigate restricted users
 
@@ -71,7 +71,7 @@ You have a few options for navigating to a list of restricted users. For example
 
 When an automated investigation has begun, you can see its details and results in the Office 365 Security & Compliance Center. Go to **Threat management** > **Investigations**, and then select an investigation to view its details.
 
-To learn more, see [View details of an investigation](office-365-air.md#view-details-of-an-investigation).
+To learn more, see [View details of an investigation](air-view-investigation-results.md#view-details-of-an-investigation).
 
 ## Keep the following points in mind
 
@@ -83,7 +83,7 @@ To learn more, see [View details of an investigation](office-365-air.md#view-det
 
 ## Next steps
 
-- [Find out how to get AIR and see required permissions](automated-investigation-response-office.md#how-to-get-air)
+- [Review the required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities)
 
 - [Find and investigate malicious email in Office 365](investigate-malicious-email-that-was-delivered.md)
 
