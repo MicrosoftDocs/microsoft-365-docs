@@ -714,6 +714,8 @@
       href: export-view-audit-log-records.md
     - name: Use the audit log to investigate common issues
       href: auditing-troubleshooting-scenarios.md
+    - name: Use mailbox auditing records to investigate compromised accounts
+      href: mailitemsaccessed-forensics-investigations.md
     - name: Use sharing auditing in the audit log
       href: use-sharing-auditing.md
     - name: Search for eDiscovery activities in the audit log
