@@ -163,5 +163,4 @@
 ### [Release options in Office 365](manage/release-options-in-office-365.md)
 ### [Message center](manage/message-center.md)
 ### [Try or buy Microsoft 365](../commerce/try-or-buy-microsoft-365.md)
-### [What's next](microsoft-365-whats-next.md)
 ## [Contact support for business products](contact-support-for-business-products.md)
