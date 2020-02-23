@@ -27,9 +27,9 @@ When you create sensitivity labels in the [Microsoft 365 compliance center](http
 - External users access
 - Access from unmanaged devices 
 
-When you apply this label to a team or group, the label automatically applies the configured options to the connected SharePoint site or team site. 
+When you apply this label to one of the supported containers, the label automatically applies the configured options to the connected SharePoint site or team site. 
 
-Content in those sites however, do not inherit the labels for settings such as the label name, visual markings, or encryption. To label files in SharePoint sites or team sites, [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Content in those containers however, do not inherit the labels for settings such as the label name, visual markings, or encryption. To label files in SharePoint sites or team sites, [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## About the public preview for Microsoft Teams, Office 365 groups, and SharePoint sites
 
@@ -69,7 +69,7 @@ On this new **Site and group settings** page, configure the settings:
 
 - **Privacy of Office 365 group-connected teams sites**: The default setting of **Public** is automatically applied to a group-connected site, which means anyone in your organization can access the site. Select **Private** when you want only approved members in your organization to access the site.
     
-    The setting selected replaces a previous privacy setting that might be [configured for the site]*https://support.office.com/article/manage-your-sharepoint-site-settings-8376034d-d0c7-446e-9178-6ab51c58df42), and locks the privacy selection so it can only be changed by applying another sensitivity label. The **Privacy settings** option and is still visible as a site setting but can't be changed.
+    The setting selected replaces a previous privacy setting that might be [configured for the site](https://support.office.com/article/manage-your-sharepoint-site-settings-8376034d-d0c7-446e-9178-6ab51c58df42) or group, and locks the privacy selection so it can only be changed by applying another sensitivity label. The **Privacy settings** option and is still visible in the UI but can't be changed.
 
 - **External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
@@ -289,6 +289,20 @@ Although you can't prevent users from creating new groups in apps and services t
     foreach ($g in $groups)
     {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "457fa763-7c59-461c-b402-ad1ac6b703cc"}
     ```
+
+## Auditing sensitivity label activities
+
+If somebody uploads a document to a site that's protected with a sensitivity label and their document has a [higher priority](sensitivity-labels.md#label-priority-order-matters) sensitivity label than the sensitivity label applied to the site, this action isn't blocked. For example, you've applied the **General** label to a SharePoint site, and somebody uploads to this site a document labeled **Confidential**. Because a sensitivity label with a higher priority identifies content that is more sensitivity than content that has a lower priority order, this situation could be a security concern.
+
+Although the action isn't blocked, it is audited, so you can identify documents that have this misalignment of label priority and take action if needed. For example, delete or move the uploaded document from the site. 
+
+It wouldn't be a security concern if the document has a lower priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled **General** is uploaded to a site labeled **Confidential**. In this scenario, an auditing event isn't generated.
+
+To search the audit log for this event, look for **Detected document sensitivity mismatch** from the **File and page activities** category. 
+
+When somebody adds or removes a sensitivity label to or from a site or group, these activities are also audited. These events can be found in the [Sensitivity label activities](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) category. 
+
+For instructions to search the audit log, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
 
 ## Troubleshoot sensitivity label deployment
 
