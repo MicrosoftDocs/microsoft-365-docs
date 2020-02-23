@@ -126,7 +126,7 @@ You can also use the following tokens to help customize the email notification. 
   
 ## Options for configuring policy tips
 
-For each rule in a DLP policy, you can configure policy tips to:
+For each rule in a DLP policy, you need configure policy tips to:
   
 - Simply notify the person that the content conflicts with a DLP policy, so that they can take action to resolve the conflict. You can use the default text (see the tables below) or enter custom text about your organization's specific policies.
     
