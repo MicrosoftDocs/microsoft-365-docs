@@ -45,7 +45,7 @@ You can choose to apply sensitivity labels to content automatically when that co
 ![Label conditions for auto-labeling in Office apps](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> Currently, the option for **Classifers** is in preview and requires you to submit a form to Microsoft to enable this capability for your tenant. For more information, see the blog post [Machine Learning based Automatic and recommended labeling on Office Apps](https://microsoft-my.sharepoint.com/:w:/p/shpalta/EZ0miKtkub1DlqFXj8Drl-sBNQdrXfyRseeUnLR6d74wwA?e=d8zFge&CID=275B0D45-9CC7-4B12-A7C2-C3A595B3C230).
+> Currently, the option for **Classifers** is in preview and requires you to submit a form to Microsoft to enable this capability for your tenant. For more information, see the blog post [Announcing the limited preview of automatic sensitivity labeling on Office apps using ready-to-use classifiers](https://microsoft-my.sharepoint.com/:w:/p/shpalta/EZ0miKtkub1DlqFXj8Drl-sBNQdrXfyRseeUnLR6d74wwA?e=d8zFge&CID=275B0D45-9CC7-4B12-A7C2-C3A595B3C230).
 
 When this sensitivity label is automatically applied, the user sees a notification in their Office app. They can choose **OK** to dismiss the notification.
 
@@ -65,7 +65,7 @@ Further, you can choose whether a condition must detect all sensitive informatio
 
 ### Configuring classifers for a label
 
-When you select the **Classifers** option, select one or more of the built-in classifiers or custom classifers you've created:
+When you select the **Classifers** option, select one or more of the built-in classifiers:
 
 ![Options for classifers and sensitivity labels](../media/sensitivity-labels-classifers.png)
 
