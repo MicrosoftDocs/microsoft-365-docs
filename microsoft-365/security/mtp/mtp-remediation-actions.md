@@ -35,7 +35,7 @@ The following table summarizes remediation actions that are currently supported 
 
 Remediation actions, whether they're pending approval or are already complete, can be viewed in the [Action Center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).
 
-## Remediation actions following automated investigation
+## Remediation actions follow automated investigations
 
 When an automated investigation completes, a verdict is reached for every piece of evidence involved, and remediation actions are identified. In some cases, remediation actions are taken automatically; in other cases, remediation actions await approval. The following table lists possible verdicts and outcomes:
 
@@ -50,7 +50,6 @@ When an automated investigation completes, a verdict is reached for every piece 
 
 > [!TIP]
 > If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
-
 
 ## Next steps
 
