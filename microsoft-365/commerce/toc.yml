@@ -7,7 +7,7 @@
         - name: Manage third-party apps
           href: manage-saas-apps.md
         - name: Upgrade subscriptions
-          href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+          href: /microsoft-365/commerce/subscriptions/upgrade-to-different-plan
         - name: Manage self-service purchases (Users)
           href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-users
         - name: Manage self-service purchases (Admin)
@@ -15,19 +15,19 @@
     - name: Manage licenses
       items:
         - name: Buy licenses
-          href: /office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+          href: /microsoft-365/commerce/licenses/buy-licenses
         - name: Assign licenses
-          href: /office365/admin/manage/assign-licenses-to-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+          href: /microsoft-365/admin/manage/assign-licenses-to-users
         - name: Unassign licenses
-          href: /office365/admin/manage/remove-licenses-from-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+          href: /microsoft-365/admin/manage/remove-licenses-from-users
         - name: Remove licenses from subscription
-          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+          href: /microsoft-365/commerce/licenses/remove-licenses-from-subscription
     - name: Bills and payments
       items: 
         - name: Understand your invoice
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
         - name: Manage payment methods
-          href: /office365/Admin/subscriptions-and-billing/add-update-or-remove-credit-card-or-bank-account?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+          href: /microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account
         - name: Manage billing profiles
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
         - name: Payment Services Directive 2 and Strong Customer Authentication
