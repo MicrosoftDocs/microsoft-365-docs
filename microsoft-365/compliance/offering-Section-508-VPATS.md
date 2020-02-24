@@ -40,7 +40,7 @@ Microsoft’s consideration of U.S. Section 508 in the development of products a
 
 ## Microsoft accessibility conformance reports
 
-Find [conformance reports](https://go.microsoft.com/fwlink/p/?linkid=2050974) for all our products and services.
+Find [conformance reports](https://cloudblogs.microsoft.com/industry-blog/government/2018/09/11/accessibility-conformance-reports/) for all our products and services.
 
 ## Resources
 
