@@ -1,5 +1,5 @@
 ---
-title: Approve or reject pending actions following automated investigation 
+title: Approve or reject pending actions following an automated investigation 
 description: Use the Action Center to manage actions related to automated investigation and response
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# Approve or reject pending actions from automated investigations
+# Approve or reject pending actions following an automated investigation
 
 **Applies to:**
 - Microsoft Threat Protection
@@ -60,5 +60,7 @@ Pending actions can be reviewed and approved by using one of several methods:
 ## Next steps
 
 - [Learn more about the Action center](mtp-action-center.md)
+
 - [Learn more about incidents](incidents-overview.md)
+
 - [Learn about hunting](advanced-hunting-overview.md)
