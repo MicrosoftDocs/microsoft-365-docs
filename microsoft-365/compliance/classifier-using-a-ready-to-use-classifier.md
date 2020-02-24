@@ -16,7 +16,7 @@ search.appverid:
 description: "Microsoft 365 comes with a number of built-in classifiers you can use to identify and label content across your organization. This topic shows you how to prepare for using these classifiers."
 ---
 
-# Using a ready to use classifier (preview)
+# Using a built-in classifier (preview)
 
 Microsoft has trained and tested a number of classifiers using very large sample data sets, which can help to identify certain categories of content. See [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md). These classifiers show up in the `Ready to use` group by default.
 
