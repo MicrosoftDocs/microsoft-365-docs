@@ -1,5 +1,5 @@
 ---
-title: "Using a ready to use classifier (preview)"
+title: "Using a built-in classifier (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft 365 comes with a number of ready to use machine learning classifiers you can use to identify and label content across your organization. This topic shows you how to prepare for using these ready to use classifiers."
+description: "Microsoft 365 comes with a number of built-in classifiers you can use to identify and label content across your organization. This topic shows you how to prepare for using these classifiers."
 ---
 
 # Using a ready to use classifier (preview)
@@ -28,12 +28,12 @@ Microsoft has trained and tested a number of classifiers using very large sample
 - **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property,
 
 > [!NOTE]
-> Before using ready to use classifiers in your classification and labeling workflow, you should test it against a sample of your organization's content that you feel fits the category to verify that its classification predictions meet your expectations.
+> Before using built-in classifiers in your classification and labeling workflow, you should test it against a sample of your organization's content that you feel fits the category to verify that its classification predictions meet your expectations.
 
 > [!IMPORTANT]
 > Please note that the offensive language, harassment, profanity, and threat classifiers only work with searchable text are not exhaustive or complete. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While the classifiers may assist your organization in monitoring offensive and other language used, the classifiers do not address consequences of such language and are not intended to provide your organization’s sole means of monitoring or responding to the use of such language. Your organization, and not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, enforcement, blocking, removal and retention of any content identified by a pre-trained classifier.
 
-## How to prepare for and use a ready to use classifier
+## How to prepare for and use a built-in classifier
 
 1. Collect disposable test content items that you feel belong in the category of the ready to use classifier (positive matches) and ones that shouldn't be included (negative matches) in the category you're testing.
 
