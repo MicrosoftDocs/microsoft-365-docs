@@ -54,4 +54,5 @@ When an automated investigation completes, a verdict is reached for every piece 
 ## Next steps
 
 - [Approve or reject actions related to automated investigation and response](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
+
 - [Learn more about the Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
