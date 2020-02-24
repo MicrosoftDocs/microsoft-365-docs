@@ -52,10 +52,10 @@ When an automated investigation completes, a verdict is reached for every piece 
 [Review a pending action in the Action center](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
 
 > [!TIP]
-> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
+> If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! [Report false positives/negatives](mtp-autoir-report-false-positives-negatives.md).
 
 ## Next steps
 
-- [Approve or reject actions related to automated investigation and response](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
+- [Approve or reject actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
 
 - [Learn more about the Action center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
