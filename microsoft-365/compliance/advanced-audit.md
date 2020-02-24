@@ -70,11 +70,11 @@ However, it's possible that audit records for MailItemsAccessed actions aren't b
 
 1. In the Microsoft 365 admin center, go to **Users > Active users**, and then select a user.
 
-2. On the user properties flyout page, click **Licenses and Apps**. 
+2. On the user properties flyout page, click **Licenses and Apps**.
 
 3. Expand the **Apps** section, and then do one of the following things:
 
-   a. If the **Microsoft 365 Advanced Auditing** checkbox is not selected, select it, and then click **Save changes.** Audit records for MailItemsAccessed actions should be searchable within 24 hours. 
+   a. If the **Microsoft 365 Advanced Auditing** checkbox is not selected, select it, and then click **Save changes.** Audit records for MailItemsAccessed actions should be searchable within 24 hours.
 
    b. If the **Microsoft 365 Advanced Auditing** checkbox is selected, clear it, and then click **Save changes.** See step 4.
 
@@ -90,3 +90,36 @@ All organizations are initially allocated a baseline of 2,000 requests per minut
 
 For more information, see the "API throttling" section in [Office 365 Management Activity API reference](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
 
+## FAQs for Advanced Audit
+
+**Where can I access Advanced Audit?**
+
+After Advanced Audit is rolled out to your organization, you will be able to create audit log retention policies and search for MailItemsAccessed audit records using the Audit log search tool in the [Office 365 Security & Compliance Center](https://protection.office.com). We're working to roll out Advance Audit to the [Microsoft 365 Compliance Center](https://compliance.microsoft.com).
+
+**Does every user need an E5 license to benefit from Advanced Audit?**
+
+To benefit from user-level Advanced Audit capabilities, a user needs to be assigned an E5 license. There are some capabilities that will check for the appropriate license to expose the feature for the user. For example, if you're trying to retain the audit records for a user who isn't assigned an E5 license for longer than 90 days, the system will return an error message.
+
+**What happens if my organization was in the private preview for one-year retention of audit records?**
+
+Your audit retention policies from the preview program will persist as long as you don't override and change them with custom audit retention policies.
+
+**What if my organization wants to retain audit logs for longer than one year?**
+
+We're exploring options for how and if we can provide longer retention periods for audit records. You can provide any feedback about longer retention of audit records at [Office 365 User Voice](https://office365.uservoice.com/forums/289138-office-365-security-compliance?category_id=137187).
+
+**My organization has an E5 subscription, do I need to do anything to get access to audit records for MailItemsAccessed events?**
+
+For eligible customers, there is no action to get access to MailItemsAccessed events. However, as previously explained in this topic, latency caused by the licensing backfill issue may prevent audit records for MailItemsAccessed event from being returned in an audit log search. If this happens, follow the instructions in the Search for MailItemsAccessed audit records section.
+
+**Are you planning to release additional crucial events this year?**
+
+Yes, we plan to release new events in the coming months. We will post information about these in the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) as we get closer to a release date.
+
+**Are crucial events in Advanced Audit available in the Office 365 Management Activity API?**
+
+Yes. As long as audit records are generated for users with the appropriate license, you'll be able to access these records via the Office 365 Management Activity API.
+
+**Does higher bandwidth mean better latency or higher SLA?**
+
+At this time, high bandwidth provides a better pipeline, especially for organizations with a high volume of auditing signals and significant consumption patterns. This can lead to better latency. But, there isn't an SLA associated with high bandwidth. Standard latencies are documented, and these don't change with the release of Advanced Audit.
