@@ -35,7 +35,11 @@ The following table summarizes remediation actions that are currently supported 
 
 Remediation actions, whether they're pending approval or are already complete, can be viewed in the [Action Center](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).
 
+<<<<<<< Updated upstream
 ## Remediation actions following automated investigation
+=======
+## Remediation actions follow automated investigations
+>>>>>>> Stashed changes
 
 When an automated investigation completes, a verdict is reached for every piece of evidence involved, and remediation actions are identified. In some cases, remediation actions are taken automatically; in other cases, remediation actions await approval. The following table lists possible verdicts and outcomes:
 
