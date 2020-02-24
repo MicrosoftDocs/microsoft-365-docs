@@ -43,7 +43,7 @@ You should see few devices in the <strong>Older</strong> category--a large or gr
 
 ## Deployment progress
 
-At the beginning of each security update release cycle, Microsoft Managed Desktop takes a snapshot of the device population and sets its deployment target at 95% of that population. The <strong>Deployment progress</strong> area shows a historical trend, updated daily, tracking how closely the update deployment meets this target for each release. This graph only shows devices with <strong>[Active](#device-status)</strong> status.
+At the beginning of each security update release cycle, Microsoft Managed Desktop takes a snapshot of the device population and sets its deployment target at 95% of that population. The <strong>Deployment progress</strong> area shows a historical trend, updated daily, tracking how closely the update deployment meets this target for each release. This graph only shows devices with Active status.
 
 You can view this data for previous update cycles by using the dropdown menu in the upper right. The period you select in this menu applies to all of the information on the whole page.
 
