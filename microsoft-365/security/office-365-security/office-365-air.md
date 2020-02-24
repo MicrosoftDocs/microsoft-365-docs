@@ -21,6 +21,8 @@ description: "Get started using automated investigation and response capabilitie
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2 includes powerful automated investigation and response (AIR) capabilities that can save your security operations team time and effort. When certain alerts are triggered, one or more security playbooks initiate, and the automated investigation process begins. This empowers your security operations team to focus on high-priority tasks without losing sight of alerts that are triggered. 
 
+## The overall flow of AIR
+
 At a high level, the AIR flow works like this:
 
 |Step  |What happens  |
