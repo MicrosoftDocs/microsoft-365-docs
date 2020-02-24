@@ -1,5 +1,5 @@
 ---
-title: Automated investigation and response in Microsoft Threat Protection 
+title: Automated investigation and response capabilities in Microsoft Threat Protection 
 description: Get an overview of automated investigation and response capabilities in Microsoft Threat Protection
 keywords: automated, investigation, alert, trigger, action, remediation
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# Automated investigation and response (AIR) in Microsoft Threat Protection
+# Automated investigation and response (AIR) capabilities in Microsoft Threat Protection
 
 **Applies to:**
 - Microsoft Threat Protection
 
-As security alerts are triggered, it’s up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts keep coming in while an investigation is going on. Security operations teams can feel overwhelmed by the sheer volume of threats they must monitor and protect against. Automated investigation and response capabilities (AIR) in Microsoft Threat Protection can help. AIR is like having a virtual analyst in your security operations center.
+As security alerts are triggered, it’s up to your security operations team to look into those alerts and take steps to protect your organization. Prioritizing and investigating alerts can be very time consuming, especially when new alerts keep coming in while an investigation is going on. Security operations teams can feel overwhelmed by the sheer volume of threats they must monitor and protect against. Automated investigation and response (AIR) capabilities in Microsoft Threat Protection can help. AIR is like having a virtual analyst in your security operations center.
 
 ## Your virtual analyst
 
