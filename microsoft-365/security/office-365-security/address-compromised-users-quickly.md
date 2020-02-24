@@ -51,7 +51,7 @@ When a user account is compromised, alerts are triggered. And in some cases, tha
 - [View details about automated investigations](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> You must have appropriate permissions to perform the following tasks. [Find out how to get AIR and see required permissions](automated-investigation-response-office.md#how-to-get-air).
+> You must have appropriate permissions to perform the following tasks. See [Required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).
 
 ### View and investigate restricted users
 
@@ -83,7 +83,7 @@ To learn more, see [View details of an investigation](air-view-investigation-res
 
 ## Next steps
 
-- [Find out how to get AIR and see required permissions](automated-investigation-response-office.md#how-to-get-air)
+- [Review the required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities)
 
 - [Find and investigate malicious email in Office 365](investigate-malicious-email-that-was-delivered.md)
 
