@@ -23,7 +23,7 @@ search.appverid:
 
 To make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
 
-To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md)
+To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
 
 ## March 2nd 2020
 
@@ -53,6 +53,7 @@ The following Intune improvement actions will be removed:
 - Create a Microsoft Intune Windows Information Protection Policy
 - Require all devices to have advanced security configurations
 - Review blocked devices report weekly
+- Set up versioning on SharePoint online document libraries
 
 ### Removing improvement actions that don't meet expectations for reliable measurement
 
@@ -94,7 +95,6 @@ To ensure that the Microsoft Secure Score is meaningful and that every improveme
 - Store user documents in OneDrive for Business
 - Set up Office 365 ATP Safe Attachment policies
 - Set up Office 365 Safe Links to verify URLs
-- Set up versioning on SharePoint online document libraries
 - Do not allow mailbox delegation
 - Allow anonymous guest sharing links for sites and docs
 
