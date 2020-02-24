@@ -69,11 +69,11 @@
               items: 
                 - name: AIR overview
                   href: mtp/mtp-autoir.md
-                - name: View remediation actions
+                - name: Remediation actions
                   href: mtp/mtp-remediation-actions.md
-                - name: Visit the Action center
+                - name: The Action center
                   href: mtp/mtp-action-center.md
-                - name: View investigation results
+                - name: View investigation details and results
                   href: mtp/mtp-autoir-results.md
                 - name: Approve or reject pending actions
                   href: mtp/mtp-autoir-actions.md
