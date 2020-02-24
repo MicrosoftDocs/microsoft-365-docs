@@ -67,9 +67,9 @@ If you need help with creating or editing a sensitivity label, see the instructi
 
 On this new **Site and group settings** page, configure the settings:
 
-- **Privacy of Office 365 group-connected teams sites**: The default setting of **Public** is automatically selected, which means anyone in your organization can access the site where this label is applied. Select **Private** when you want only approved members in your organization to access the site.
+- **Privacy of Office 365 group-connected teams sites**: The default setting of **Public** is automatically selected, which means anyone in your organization can access the team site where this label is applied. Select **Private** when you want only approved members in your organization to access the group's team site. This setting doesn't change the privacy setting for a [SharePoint site](https://support.office.com/article/manage-your-sharepoint-site-settings-8376034d-d0c7-446e-9178-6ab51c58df42).
     
-    The setting selected replaces a previous privacy setting that might be configured for the [site](https://support.office.com/article/manage-your-sharepoint-site-settings-8376034d-d0c7-446e-9178-6ab51c58df42) or [group](https://support.office.com/article/Make-Office-365-groups-public-or-private-c0a991b3-9c56-48b8-bf0f-05530f836b1b), and locks the privacy value so it can be changed only by first removing the sensitivity label.
+    The setting selected replaces a previous privacy setting that might be configured for the group, and locks the privacy value so it can be changed only by first removing the sensitivity label.
 
 - **External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
