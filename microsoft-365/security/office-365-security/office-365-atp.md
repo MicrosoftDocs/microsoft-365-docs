@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/04/2019
+ms.date: 02/24/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -33,7 +33,7 @@ Office 365 Advanced Threat Protection (ATP) safeguards your organization against
 
 - **[Threat investigation and response capabilities](#use-threat-investigation-and-response-capabilities)**: Use leading-edge tools to investigate, understand, simulate, and prevent threats.
 
-- **[Automated investigation and response capabilities](#save-time-with-automated-investigation-and-response)**: Save time and effort investigating and mitigating threats.
+- **[Automated investigation and response capabilities](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**: Save time and effort investigating and mitigating threats.
 
 ## Office 365 ATP Plan 1 and Plan 2
 
@@ -99,7 +99,7 @@ Office 365 ATP Plan 2 includes best-of-class [threat investigation and response 
 
 ## Save time with automated investigation and response
 
-(**NEW!**) When you are investigating a potential cyberattack, time is of the essence. The sooner you can identify and mitigate threats, the better off your organization will be. [Automated investigation and response](automated-investigation-response-office.md) (AIR) capabilities include a set of security playbooks that can be launched automatically, such as when an alert is triggered, or manually, such as from a view in Explorer. AIR can save your security operations team time and effort in mitigating threats effectively and efficiently. To learn more, see [AIR in Office 365](automated-investigation-response-office.md).
+(**NEW!**) When you are investigating a potential cyberattack, time is of the essence. The sooner you can identify and mitigate threats, the better off your organization will be. [Automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) capabilities include a set of security playbooks that can be launched automatically, such as when an alert is triggered, or manually, such as from a view in Explorer. AIR can save your security operations team time and effort in mitigating threats effectively and efficiently. To learn more, see [AIR in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air).
 
 ## Permissions required to use ATP features
 
