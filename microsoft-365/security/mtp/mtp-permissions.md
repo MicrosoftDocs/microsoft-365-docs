@@ -26,7 +26,7 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Accounts assigned the following Azure Active Directory (AD) roles can access Microsoft Threat Protection functionality and data:
 - Global administrator
