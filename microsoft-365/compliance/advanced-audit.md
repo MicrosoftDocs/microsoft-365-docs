@@ -46,7 +46,7 @@ You can also specify how long to retain audit records that match the policy and 
 
 ## Access to crucial events for investigations
 
-Crucial security- and compliance-related audit events are ones that can help you investigate possible breaches or other forensic-related investigations. The first crucial event that we're releasing is the *MailItemsAccessed* mailbox auditing event. This event is trigger when mail data is accessed by mail protocols and clients. The MailItemsAccessed event can help investigators identify data breaches and determine the scope of messages that may have been compromised. If an attacker gained access to email messages, MailItemsAccessed event will be triggered even if there is no explicit signal that it was actually read (in other words, the type of access such as via bind or sync is recorded in the audit record).
+Crucial security- and compliance-related audit events are ones that can help you investigate possible breaches or other forensic-related investigations. The first crucial event that we're releasing is the *MailItemsAccessed* mailbox auditing action. This action is triggered when mail data is accessed by mail protocols and mail clients. The MailItemsAccessed action can help investigators identify data breaches and determine the scope of messages that may have been compromised. If an attacker gained access to email messages, the MailItemsAccessed action will be triggered even if there is no explicit signal that messages were actually read (in other words, the type of access such as a bind or sync is recorded in the audit record).
 
 The new MailItemsAccessed mailbox action replaces MessageBind in mailbox auditing logging in Exchange Online and provides these improvements:
 
@@ -54,9 +54,24 @@ The new MailItemsAccessed mailbox action replaces MessageBind in mailbox auditin
 
 - MessageBind only covered access by a mail client. It didn't apply to sync activities. MailItemsAccessed events are triggered by both bind and sync access types.
 
-- MessageBind actions would trigger multiple audit records to be created when the same email message was accessed, which resulted in auditing "noise". In contrast, MailItemsAccessed events are aggregated in fewer audit records.
+- MessageBind actions would trigger the creation of multiple audit records when the same email message was accessed, which resulted in auditing "noise". In contrast, MailItemsAccessed events are aggregated into fewer audit records.
 
 For more information about mailbox auditing logging, see [Manage mailbox auditing](enable-mailbox-auditing.md).
+
+### Search for MailItemsAccessed audit records
+
+To search for MailItemsAccessed audit records, you can search for the **Accessed mailbox items** activity in the **Exchange mailbox activities** drop-down list in the audit log search tool in the Office 365 security and compliance center.
+
+
+
+You can also run the **Search-UnifiedAuditLog -Operations MailItemsAccessed** or **Search-MailboxAuditLog -Operations MailItemsAccessed** commands in Exchange Online PowerShell.
+
+However, it's possible that audit records for MailItemsAccessed actions aren't being logged in your organization even though Advance Audit has been rolled out to your organization. This may be due to a *licensing backfill* issue, where back-end processing that enables the auditing of MailItemsAccessed action hasn't been fully completed in the Microsoft datacenter for your organization. If you have E5-licensed users in your organization, but audit records for MailItemsAccessed actions aren't being logged, perform the following steps for each E5 user:
+
+1. In the Microsoft 365 admin center, go to **Users > Active users**.
+
+2. Se
+
 
 ## High-bandwidth access to the Office 365 Management Activity API
 
@@ -67,3 +82,4 @@ With the release of Advanced Audit, we're moving from a publisher-level limit to
 All organizations are initially allocated a baseline of 2,000 requests per minute. This limit will dynamically increase depending on an organization's seat count and their licensing subscription. E5 organizations will get approximately twice as much bandwidth as non-E5 organizations. There will also be cap on the maximum bandwidth to protect the health of the service.
 
 For more information, see the "API throttling" section in [Office 365 Management Activity API reference](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
+
