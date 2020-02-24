@@ -60,18 +60,25 @@ For more information about mailbox auditing logging, see [Manage mailbox auditin
 
 ### Search for MailItemsAccessed audit records
 
-To search for MailItemsAccessed audit records, you can search for the **Accessed mailbox items** activity in the **Exchange mailbox activities** drop-down list in the audit log search tool in the Office 365 security and compliance center.
+To search for MailItemsAccessed audit records, you can search for the **Accessed mailbox items** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Office 365 security and compliance center.
 
+![Searching for MailItemsAccessed actions in the audit log search tool](../media/MailItemsAccessedSCC1.png)
 
+You can also run the [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) or [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) commands in Exchange Online PowerShell.
 
-You can also run the **Search-UnifiedAuditLog -Operations MailItemsAccessed** or **Search-MailboxAuditLog -Operations MailItemsAccessed** commands in Exchange Online PowerShell.
+However, it's possible that audit records for MailItemsAccessed actions aren't being logged in your organization (and not showing up in audit log search results) even though Advance Audit has been rolled out to your organization. This may be due to a *licensing backfill* issue, where the back-end processing that enables the auditing of MailItemsAccessed actions hasn't been fully completed in the Microsoft datacenter for your organization. If you have E5-licensed users in your organization, but audit records for MailItemsAccessed actions aren't being logged, perform the following steps for each E5 user:
 
-However, it's possible that audit records for MailItemsAccessed actions aren't being logged in your organization even though Advance Audit has been rolled out to your organization. This may be due to a *licensing backfill* issue, where back-end processing that enables the auditing of MailItemsAccessed action hasn't been fully completed in the Microsoft datacenter for your organization. If you have E5-licensed users in your organization, but audit records for MailItemsAccessed actions aren't being logged, perform the following steps for each E5 user:
+1. In the Microsoft 365 admin center, go to **Users > Active users**, and then select a user.
 
-1. In the Microsoft 365 admin center, go to **Users > Active users**.
+2. On the user properties flyout page, click **Licenses and Apps**. 
 
-2. Se
+3. Expand the **Apps** section, and then do one of the following things:
 
+   a. If the **Microsoft 365 Advanced Auditing** checkbox is not selected, select it, and then click **Save changes.** Audit records for MailItemsAccessed actions should be searchable within 24 hours. 
+
+   b. If the **Microsoft 365 Advanced Auditing** checkbox is selected, clear it, and then click **Save changes.** See step 4.
+
+4. If you cleared the checkbox in step 3, wait 60 minutes, and then repeat step 3a to enable the Microsoft 365 Advanced Auditing app.
 
 ## High-bandwidth access to the Office 365 Management Activity API
 
