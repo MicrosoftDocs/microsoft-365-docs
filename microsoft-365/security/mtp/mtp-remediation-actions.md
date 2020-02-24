@@ -1,6 +1,6 @@
 ---
-title: Remediation actions in automated investigation and response capabilities in Microsoft Threat Protection 
-description: Get an overview of automated investigation and response capabilities in Microsoft Threat Protection
+title: Remediation actions following automated investigations in Microsoft Threat Protection 
+description: Get an overview of remediation actions that follow automated investigations in Microsoft Threat Protection
 keywords: automated, investigation, alert, trigger, action, remediation
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# Remediation actions in automated investigation and response capabilities in Microsoft Threat Protection
+# Remediation actions following automated investigations in Microsoft Threat Protection
 
 **Applies to:**
 - Microsoft Threat Protection
