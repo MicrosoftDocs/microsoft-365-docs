@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 01/28/2020
+ms.date: 02/21/2020
 ---
 
 # What's new in Office 365 ATP
@@ -40,6 +40,8 @@ This article lists new features in the latest release of Office 365 ATP. Feature
     - Granular time filters (day, hour, half-hour) 
 
 - The **Incidents** widget is now the **Action Center** widget. (To view your security widgets, in the Office 365 Security & Compliance Center, go to **Threat management** > **Review**.)
+
+- [Safe Documents in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(preview)**
 
 ## December 2019
 
