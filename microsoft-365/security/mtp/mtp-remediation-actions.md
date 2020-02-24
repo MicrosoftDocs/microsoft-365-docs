@@ -25,7 +25,10 @@ ms.custom: autoir
 **Applies to:**
 - Microsoft Threat Protection
 
-Automated investigation and response capabilities in Microsoft Threat Protection include certain remediation actions. Some kinds of remediation actions are taken on devices, also referred to as endpoints. Other remediation actions are taken on email content.
+
+## Remediation actions
+
+During and after an automated investigation in Microsoft Threat Protection, remediation actions are identified for malicious or suspicious items. Some kinds of remediation actions are taken on devices, also referred to as endpoints. Other remediation actions are taken on email content. Automated investigations complete after remediation actions are taken, approved, or rejected.
 
 The following table summarizes remediation actions that are currently supported in Microsoft Threat Protection: 
 
