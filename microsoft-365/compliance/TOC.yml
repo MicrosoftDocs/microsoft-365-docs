@@ -209,7 +209,7 @@
           href: data-classification-pub-preview-relnotes.md
         - name: Getting started with trainable classifiers (preview)
           href: classifier-getting-started-with.md
-        - name: Using a ready to use classifier (preview)
+        - name: Using a built-in classifier (preview)
           href: classifier-using-a-ready-to-use-classifier.md
         - name: Creating and training a classifier (preview)
           href: classifier-creating-a-trainable-classifier.md

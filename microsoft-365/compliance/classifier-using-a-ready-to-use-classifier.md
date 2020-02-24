@@ -35,7 +35,7 @@ Microsoft has trained and tested a number of classifiers using very large sample
 
 ## How to prepare for and use a built-in classifier
 
-1. Collect disposable test content items that you feel belong in the category of the ready to use classifier (positive matches) and ones that shouldn't be included (negative matches) in the category you're testing.
+1. Collect disposable test content items that you feel belong in the category of the built-in classifier (positive matches) and ones that shouldn't be included (negative matches) in the category you're testing.
 
 > [!IMPORTANT]
 > The sample items must not be encrypted and they must be in English.
@@ -60,7 +60,7 @@ Microsoft has trained and tested a number of classifiers using very large sample
 
 10. Choose your classifier from the list, in this case `Source Code`
 
-11. Name the policy, for example "Source code ready to use classifier test".
+11. Name the policy, for example "Source code built-in classifier test".
 
 12. Choose `Let me choose specific locations`.
 
