@@ -19,7 +19,7 @@ description: "Learn about remediation actions in automated investigation and res
 
 # Remediation actions following an automated investigation in Office 365
 
-## Remediation actions overview
+## Remediation actions
 
 [Automated investigation and response capabilities](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) in Office 365 Advanced Threat Protection include certain remediation actions. Whenever an automated investigation is running or has completed, you'll typically see one or more remediation actions that require approval by your security operations team to proceed. The following table summarizes remediation actions currently available in Office 365 Advanced Threat Protection. 
 
@@ -47,6 +47,8 @@ While viewing the [details of an investigation](air-view-investigation-results.m
  - **Approve** allows remediation to begin.
  - **Reject** takes no further action
 
-## Related articles
+## Next steps
 
-[Learn about automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Learn about the compromised user security playbook](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly)
+
+- [View your ATP reports](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)
