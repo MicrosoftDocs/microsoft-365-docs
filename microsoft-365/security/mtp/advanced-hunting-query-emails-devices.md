@@ -24,7 +24,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 [Advanced hunting](advanced-hunting-overview.md) in Microsoft Threat Protection allows you to proactively hunt for threats across your Windows devices and Office 365 emails. Here are some hunting scenarios and sample queries that can help you explore how you might construct queries covering both devices and emails.
 
