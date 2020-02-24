@@ -36,7 +36,7 @@ Whether a recipient receives a link-based experience or an inline experience dep
 
 Once an email has been revoked, the recipient receives an error when they access the encrypted email through the Office 365 Message Encryption portal: “The message has been revoked by the sender”.
 
-![Screenshot that shows a revoked encrypted email.](media/revoked-encrypted-email.png)
+![Screenshot that shows a revoked encrypted email.](../media/revoked-encrypted-email.png)
 
 ## How to revoke an encrypted email
 

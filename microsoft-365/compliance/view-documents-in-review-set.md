@@ -31,14 +31,14 @@ Advanced eDiscovery displays content via several viewers each with different pur
 This panel can be toggled on/off to display various metadata associated with the document. Although the search results grid can be customized to display specific metadata, there are instances where scrolling horizontally can be difficult while reviewing data. The File metadata panel allows a user to toggle on a view within the viewer.
 
 ![File metadata panel
-](media/Reviewimage2.png)
+](../media/Reviewimage2.png)
 
 ## Native view
 
 The Native viewer displays the richest view of a document. It supports hundreds of file types and is meant to display the truest to native experience possible. For Microsoft Office files, the viewer uses the web version of Office apps to display content such as document comments, Excel formulas, hidden rows/columns, and PowerPoint notes.
 
 ![Native view
-](media/Reviewimage3.png)
+](../media/Reviewimage3.png)
 
 ## Text view
 
@@ -51,10 +51,10 @@ The Text viewer provides a view of the extracted text of a file. It ignores any 
   - Diff view provides a comparison view that highlights textual differences when viewing Near Duplicate documents
 
 ![Text view
-](media/Reviewimage4.png)
+](../media/Reviewimage4.png)
 
 ![Diff view
-](media/Reviewimage5.png)
+](../media/Reviewimage5.png)
 
 ## Annotate view
 
@@ -81,7 +81,7 @@ The Annotate view provides features that allow users to apply markup on a docume
   - Search – user can search within a document and navigate to the various hits within the document
     
     ![Annotate view
-    ](media/Reviewimage1.png)
+    ](../media/Reviewimage1.png)
 
 ## Dashboard View 
 The dashboard view allows you to visualize and summarize the data in your search results grid. In this view, you can create custom widgets to make analyzing and reporting on your review set intuitive and easy. Once you have created your widgets, you can interact with them to get item counts or to create a search. 

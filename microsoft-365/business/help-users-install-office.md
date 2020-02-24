@@ -29,7 +29,7 @@ description: "Help your users install Office apps."
 
 # Help your users install Office on Windows 10 devices
 
-[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 You can quickly and easily install Office on Windows 10 PCs from the Microsoft 365 Business admin center.
   
@@ -54,7 +54,7 @@ If you found this video helpful, check out the [complete training series for sma
 4. On the **Email users a link to download Office** panel, select the users you want to email, and then **Email selected users**.
 
     
-      :::image type="content" source="media/sendemailtousers.png" alt-text="Select users to send email with Office download link.":::
+      :::image type="content" source="../media/sendemailtousers.png" alt-text="Select users to send email with Office download link.":::
 
 ## See also
 

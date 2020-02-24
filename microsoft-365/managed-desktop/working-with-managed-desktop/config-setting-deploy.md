@@ -38,12 +38,12 @@ We’ll show Desktop background picture in these instructions. After you’ve st
 > [!NOTE] 
 > The orange caution icon indicates there is a previous group available for deployment as it’s recommended to roll out in order. 
 
-![Deployment status workspace. Trusted sites pane on the right. In the Deployment groups section are three columns: deployment groups, devices, and status. In the status column, "deploy" is highlighted.](images/1deployedit.png)
+![Deployment status workspace. Trusted sites pane on the right. In the Deployment groups section are three columns: deployment groups, devices, and status. In the status column, "deploy" is highlighted.](../../media/1deployedit.png)
 We recommend deploying to deployment groups in this order: Test, First, Fast, and then Broad. 
 
 When changes complete in each group, the status changes to **Complete**.
 
-![Deployment status workspace with columns for date updated, version, test, first, fast, and broad. The Proxy row is expanded, showing a dated setting flagged as "complete" in each of the four deployment groups.](images/2completeedit.png)
+![Deployment status workspace with columns for date updated, version, test, first, fast, and broad. The Proxy row is expanded, showing a dated setting flagged as "complete" in each of the four deployment groups.](../../media/2completeedit.png)
 
 ## Revert deployment
 
@@ -57,7 +57,7 @@ We’ll show the steps to revert a change using the Desktop background picture a
 3. In **Deployment status** workspace, select the setting you want to revert, and then select the staged deployment to revert.
 4. Under **Need to revert this change?**, select **Revert deployment**.
 
-![Deployment status workspace. Browser start pages is selected, opening a pane on the right side with data about the submitted change and its status. At the bottom is the "need to revert this change" area where you can select "Revert deployment."](images/3revert.png) 
+![Deployment status workspace. Browser start pages is selected, opening a pane on the right side with data about the submitted change and its status. At the bottom is the "need to revert this change" area where you can select "Revert deployment."](../../media/3revert.png) 
 
 ## Additional resources
 - [Configurable settings overview](config-setting-overview.md)

@@ -32,7 +32,7 @@ You can download a .csv file with a report for the selected process.
   
 1. In the **Reports** tab, select an option from the **Report name** list. Select from three **Report name** options: **Relevance decide**, **Themes list,** or **Tagged files**.
     
-    ![eDiscovery Analytics Reports](media/f16aee7a-508f-4acc-99bc-a2c8dec01312.png)
+    ![eDiscovery Analytics Reports](../media/f16aee7a-508f-4acc-99bc-a2c8dec01312.png)
   
 2. Available parameters, and sort and filter options can be set, depending on the selected report. 
     

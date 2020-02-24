@@ -47,7 +47,7 @@ For more information about these tiers and capabilities recommended for each tie
 
 Recommendations for SharePoint Online team sites draw on a variety of Microsoft 365 capabilities. The following illustration shows the recommended configurations for four SharePoint Online team sites.
 
-![Recommended configuration for SharePoint sites](../media/SharePoint-site-configurations.png)
+![Recommended configuration for SharePoint sites](../../media/SharePoint-site-configurations.png)
 
 As illustrated:
 
@@ -137,7 +137,7 @@ Using retention labels is recommended for environments with sensitive and highly
 
 - People in your organization can apply a label manually to content in Outlook on the web, Outlook 2010 and later, OneDrive for Business, SharePoint Online, and Office 365 groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate DLP policy applied.
 
-![Recommended configuration for SharePoint sites](../media/7fed0126-ab4a-4480-922c-681970642339.png)
+![Recommended configuration for SharePoint sites](../../media/7fed0126-ab4a-4480-922c-681970642339.png)
 
 As illustrated, this solution includes creating the following retention labels:
 

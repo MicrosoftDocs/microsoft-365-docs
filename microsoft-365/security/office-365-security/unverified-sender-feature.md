@@ -20,22 +20,22 @@ description: "To prevent phishing messages from reaching your mailbox, Outlook.c
 # Unverified Sender
 
 > [!NOTE]
-> These updates are rolling out now, and might not be available yet for all users. This feature is supported for Enterprise outlook.com users. It is not currently available for consumer outlook.com.
+> These updates are rolling out now, and might not be available for all users. This feature is supported for Enterprise Outlook.com and Enterprise Outlook Win32 desktop users. It is not currently available for consumer Office 365 users.
 
-To prevent phishing messages from reaching your mailbox, Outlook.com and Outlook on the web verify that the sender is who they say they are and mark suspicious messages as junk email.
+To prevent phishing messages from reaching your mailbox, Office 365 verifies that the senders are who they say they are and mark suspicious messages as junk email.
 
 > [!IMPORTANT]
-> When a message is marked as a phishing scam, Outlook.com and Outlook on the web display a warning at the top of the page, but any links in the message can still be opened.
+> When a message is marked as a phishing scam, Outlook displays a warning at the top of the page, but any links in the message can still be opened.
 
 ## How can I identify a suspicious message in my inbox?
 
-Outlook.com and Outlook on the web show indicators when the sender of a message either can't be identified or their identity is different from what you see in the From address.
+Outlook shows indicators when the sender of a message either can't be identified or their identity is different from what you see in the From address.
 
 ## You see a '?' in the sender image
 
-When Outlook.com and Outlook on the web can't verify the identity of the sender using email authentication techniques, they display a '?' in the sender photo.
+When Office 365 can't verify the identity of the sender using email authentication techniques, a '?' is displayed in the sender image.
 
-![Message did not pass verification](../media/message-did-not-pass-verification.jpg)
+![Message did not pass verification](../../media/message-did-not-pass-verification.jpg)
 
 Not every message that fails to authenticate is malicious. However, you should be careful about interacting with messages that don't authenticate if you don't recognize the sender. Or, if you recognize a sender that normally doesn't have a '?' in the sender image, but you suddenly start seeing it, that could be a sign the sender is being spoofed.
 
@@ -45,7 +45,7 @@ If you are an Office 365 customer you can manage this feature through the Office
 
 - In the Security & Compliance Center, global or security administrators can turn the feature on or off, through anti-spoofing protection under the Anti-Phish policy. Additionally, you can use the **Set-AntiPhishPolicy** cmdlet in Exchange Online PowerShell. For details, see [Anti-phishing protection in Office 365](anti-phishing-protection.md) and [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
 
-    ![Editing unauthenticated senders in the graphic interface.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
+    ![Editing unauthenticated senders in the graphic interface.](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - If an admin has identified a false positive, and a sender should not be receiving the unverified sender treatment, one of the following actions can be taken to add the sender to the Spoof Intelligence spoof allow list:
 
@@ -53,25 +53,29 @@ If you are an Office 365 customer you can manage this feature through the Office
 
   - Add the domain pair through the **Set-PhishFilterPolicy** cmdlet in Exchange Online PowerShell. For details, see [Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) and [Set up Office 365 ATP anti-phishing and anti-phishing policies](set-up-anti-phishing-policies.md).
 
-Additionally, we don't apply the unverified sender treatment if the message was delivered to the Inbox via mail flow rules (also known as transport rules), Safe Domain List (Anti-Spam Policy), or Safe Sender List.
+Additionally, we don't apply the unverified sender treatment if the message was delivered to the Inbox via mail flow rules (also known as transport rules) or the Safe Domain List (anti-spam policies).
+
+## How to manage the 'via' tag 
+
+If you are an Office 365 customer you can manage this feature through the Office 365 Security & Compliance center, the same way that you manage the unverified sender treatment. If you add the sender to the Spoof Intelligence spoof allow list, the 'via' treatment will not be applied.
 
 ## Frequently asked questions
 
-### What criteria does Outlook.com and Outlook on the web use to add the '?' and the 'via' properties?
+### What criteria does Outlook.com and Outlook Win32 desktop use to add the '?' and the 'via' properties?
 
 For the '?' in the sender image:  Outlook.com requires that the message pass either SPF or DKIM authentication and receive either a dmarc pass, or a composite authentication pass from Office 365 Spoof Intelligence. For details, see [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) and [Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md).
 
 For the via tag: If the domain in the From address is different from the domain in the DKIM signature or the SMTP MAIL FROM, Outlook.com displays the domain in one of those two fields (preferring the DKIM signature).
 
-### How do I remove the '?'
+### How do I remove the '?' without utilizing the Spoof Intelligence spoof allow list?
 
 For the '?' in the sender image: As a sender, you should authenticate your message with either SPF or DKIM.
 
 For the via tag: As a sender, you should ensure that either the domain in the DKIM signature or the SMTP MAIL FROM is the same as, or is a subdomain of, the domain in the From address.
 
-### Does Outlook.com and Outlook on the web show this for every message that doesn't pass authentication?
+### Do Outlook.com and Outlook Win32 desktop show this for every message that doesn't pass authentication?
 
-Not necessarily. Outlook.com and Outlook on the web may have other properties within the message to authenticate the sender.
+Not necessarily. Office 365 may have other properties within the message to authenticate the sender.
 
 ## Related topics
 

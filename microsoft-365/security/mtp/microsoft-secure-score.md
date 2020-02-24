@@ -92,7 +92,7 @@ To help you the information you need more quickly, Microsoft improvement actions
 
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
-![Secure Score homepage](../media/secure-score/homepage-original.png)
+![Secure Score homepage](../../media/secure-score/homepage-original.png)
 *Figure 1: Microsoft Secure Score overview page*
 
 ## Take action to improve your score
@@ -117,7 +117,7 @@ When you select a specific improvement action, a fly out appears. To complete th
 
 4. Select **Review** because the improvement action requires you to regularly review a part of your environment to gain and retain points. For example, mailbox forwarding rules should be reviewed on a weekly basis to make sure data is not being exfiltrated from your network. You do not need to make any changes, but an action will need to be performed. If you regularly review the rules, you will receive the points. If not, the score is reduced.
 
-![Secure Score improvement action example](../media/secure-score/secure-score1x450.png) ![Secure Score review improvement action example](../media/secure-score/secure-score2x450.png)
+![Secure Score improvement action example](../../media/secure-score/secure-score1x450.png) ![Secure Score review improvement action example](../../media/secure-score/secure-score2x450.png)
 
 *Figures 2 & 3: Improvement action flyouts*
 
@@ -128,6 +128,16 @@ You can view a graph of your organization's score over time in the **History** t
 ## Risk awareness
 
 Microsoft Secure Score is a numerical summary of your security posture based on system configurations, user behavior and other security-related measurements; it is not an absolute measurement of how likely your system or data will be breached. Rather, it represents the extent to which you have adopted security controls in your Microsoft environment which can help offset the risk of being breached. No online service is completely immune from security breaches, and secure score should not be interpreted as a guarantee against security breach in any manner.
+
+## What's new?
+
+To make Microsoft Secure Score a better representative of your security posture we have made some changes.
+
+### Removed “not scored” improvement actions
+
+One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable.  
+
+For these reasons, all improvement actions that were not scored have been removed. No action is needed on your part.
 
 ## What's coming?
 
@@ -168,6 +178,11 @@ To ensure that the Microsoft Secure Score is meaningful and that every improveme
 - Discover risky and non-compliant shadow IT applications
 - Review permissions & block risky OAuth applications connected to your environment
 - Set up versioning on SharePoint online document libraries
+- Store user documents in OneDrive for Business
+- Do not allow mailbox delegation
+- Allow anonymous guest sharing links for sites and docs
+- Set up Office 365 ATP Safe Attachment policies
+- Set up Office 365 Safe Links to verify URLs
 
 ### MFA improvement action updates
 
@@ -186,15 +201,11 @@ New improvement actions added:
 
  These new improvement actions will require registering your users or admins for multi-factor authentication (MFA) across your directory and establishing the right set of policies that fit your organizational needs. The main goal is have flexibility while ensuring all your users and admins can authenticate with multiple factors or risk-based identity verification prompts. That can take the form of setting security defaults that let Microsoft decide when to challenge users for MFA, or having multiple policies that apply scoped decisions.
 
-### Removing “not scored” and “review” improvement actions
+### Removing “review” improvement actions
 
-One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable, and review improvement actions are not measured to the same standard as other improvement actions.  
+One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Review improvement actions are not measured to the same standard as other improvement actions.  
 
-For these reasons, all improvement actions that were not scored or required a review cadence will be temporarily removed. No action is needed on your part.
-
-### Simplification of the point system
-
-To standardize points across multiple experiences, each Secure Score improvement action point total will be updated to be worth 10 points or less. It is necessary be more consistent across the wide breather of security controls that we have today and ones that we will be adding in the future. While this is a significant change and you will see a drop in point totals, there will be no change to your security posture.  
+For these reasons, all improvement actions that required a review cadence will be temporarily removed. No action is needed on your part. 
 
 ### Preview features
 
@@ -205,6 +216,7 @@ The following features will be included in the [preview release](microsoft-secur
 * Better tracking and monitoring for score regressions
 * Filter, tag, search, and group your improvement actions
 * Manage towards your future goals using score projections and planned actions
+* Simplification of the points system
 * And more!
 
 ## We want to hear from you

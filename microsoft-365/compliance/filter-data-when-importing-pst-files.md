@@ -39,7 +39,7 @@ Use the new Intelligent Import feature in the Office 365 Import service to filte
     
 The following graphic shows the Intelligent Import process, and highlights the tasks you perform and the tasks performed by Office 365.
   
-![The Intelligent Import process in Office 365](media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
+![The Intelligent Import process in Office 365](../media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
   
 ## Before you begin
 
@@ -49,7 +49,7 @@ The following graphic shows the Intelligent Import process, and highlights the t
     
   - [Use drive shipping to import PST files to Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
-- After you create an import job by using network upload, the status for the import job on the Import page in the Security & Compliance Center is set to **Analysis in progress**, which means that Office 365 is analyzing the data in the PST files that you uploaded. Click **Refresh**![refresh](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) to update the status for the import job. 
+- After you create an import job by using network upload, the status for the import job on the Import page in the Security & Compliance Center is set to **Analysis in progress**, which means that Office 365 is analyzing the data in the PST files that you uploaded. Click **Refresh**![refresh](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) to update the status for the import job. 
     
 - For drive shipping import jobs, the data will be analyzed by Office 365 after Microsoft data center personnel receive your hard drive and upload the PST files to the Azure storage area for your organization.
   
@@ -63,7 +63,7 @@ After you've created a PST import job, follow these steps to filter the data bef
     
     The import jobs for your organization are listed on the **Import PST files** page. Note that the **Analysis completed** value in the **Status** column indicates the import jobs that have been analyzed by Office 365 and are ready for you to import. 
     
-    ![Analysis complete status indicates Office 365 has analyzed the data in PST files](media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
+    ![Analysis complete status indicates Office 365 has analyzed the data in PST files](../media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
   
 3. Click **Ready to import to Office 365** for the import job that you want to complete. 
     
@@ -73,7 +73,7 @@ After you've created a PST import job, follow these steps to filter the data bef
     
     The **Filter your data** page is displayed. It contains data insights about the data in the PST files for the import job, including information about the age of the data. 
     
-    ![The Filter your data page shows data insights of the PST files for the import job](media/3b537ec0-25a4-45a4-96d5-a429e2a33128.png)
+    ![The Filter your data page shows data insights of the PST files for the import job](../media/3b537ec0-25a4-45a4-96d5-a429e2a33128.png)
   
 5. Based on whether or not you want to trim the data that's imported to Office 365, under **Do you want to filter your data?**, do one of the following:
     
@@ -81,13 +81,13 @@ After you've created a PST import job, follow these steps to filter the data bef
     
     The **Import data to Office 365 page** page is displayed with detailed data insights from the analysis that Office 365 performed. 
     
-    ![Office 365 displays detailed data insights from its analysis of the PST files](media/4881205f-0288-4c32-a440-37e2160295f2.png)
+    ![Office 365 displays detailed data insights from its analysis of the PST files](../media/4881205f-0288-4c32-a440-37e2160295f2.png)
   
     The graph on this page shows the amount of data that will be imported. Information about each message type found in the PST files is displayed in the graph. You can hover the cursor over each bar to display specific information about that message type. There is also a drop-down list with different age values based on the analysis of the PST files. When you select an age in the drop-down list, the graph is updated to show how much data will be imported for the selected age. 
     
     b. To configure addition filters to reduce the amount of data that's imported, click **More filtering options**.
     
-    ![Configure the filters on the More options page to trim the data that's imported](media/3f8d68c3-3fe2-4b4e-9488-b368b98fa9fe.png)
+    ![Configure the filters on the More options page to trim the data that's imported](../media/3f8d68c3-3fe2-4b4e-9488-b368b98fa9fe.png)
   
     You can configure these filters:
     
@@ -95,7 +95,7 @@ After you've created a PST import job, follow these steps to filter the data bef
     
       - **Type** - This section shows all the message types that were found in the PST files for the import job. You can uncheck a box next to a message type that you want to exclude. Note that you can't exclude the Other message type. See the [More information](#more-information) section for a list of mailbox items that are included in the Other category. 
     
-      - **Users** - You can exclude messages that are sent or received by specific people. To exclude people who appear in the From: field, To: field, or the Cc: field of messages, click **Exclude users** next to that recipient type. Type the email address (SMTP address) of the person, click **Add**![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to add them to the list of excluded users for that recipient type, and then click **Save** to save the list of excluded users. 
+      - **Users** - You can exclude messages that are sent or received by specific people. To exclude people who appear in the From: field, To: field, or the Cc: field of messages, click **Exclude users** next to that recipient type. Type the email address (SMTP address) of the person, click **Add**![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to add them to the list of excluded users for that recipient type, and then click **Save** to save the list of excluded users. 
     
         > [!NOTE]
         > Office 365 doesn't show data insights that result from setting the **People** filter. However, if you set this filter to exclude messages sent or received by specific people, those messages will be excluded during the actual import process. 
@@ -104,7 +104,7 @@ After you've created a PST import job, follow these steps to filter the data bef
     
     The data insights on the **Import data to Office 365** page are updated based on your filter settings, including the total amount of data that will be imported based on the filter settings. Note that a summary of the filter settings is also shown. You can click **Edit** next to a filter to change the setting if necessary. 
     
-    ![The data insights are updated based on your filter settings](media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
+    ![The data insights are updated based on your filter settings](../media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
     d. Click **Next**.
     
@@ -118,7 +118,7 @@ After you've created a PST import job, follow these steps to filter the data bef
     
     b. On the **Import data to Office 365** page, click **Import data** to start the import. Note that the total amount of data that will be imported is displayed. 
     
-6. On the **Import PST files** page, click **Refresh** ![refresh](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png). The status for the import job is displayed in the **Status** column. 
+6. On the **Import PST files** page, click **Refresh** ![refresh](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png). The status for the import job is displayed in the **Status** column. 
     
 7. Click the import the job to display more detailed information, such as the status for each PST file and the filter settings that you configured.
 

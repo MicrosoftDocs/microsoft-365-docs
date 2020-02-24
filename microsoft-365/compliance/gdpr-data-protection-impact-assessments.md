@@ -19,11 +19,7 @@ titleSuffix: Microsoft GDPR
 
 # Data Protection Impact Assessment for the GDPR
 
-The General Data Protection Regulation (GDPR) introduces new rules for organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data for EU residents no matter where you or your enterprise are located. Additional details can be found in the [GDPR Summary topic](gdpr.md). <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQE] 
-
-This document guides you to information regarding Data Protection Impact Assessments (DPIAs) under the GDPR when using Microsoft products and services.
+The General Data Protection Regulation (GDPR) introduces new rules for organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data for EU residents no matter where you or your enterprise are located. Additional details can be found in the [GDPR Summary topic](gdpr.md). This document guides you to information regarding Data Protection Impact Assessments (DPIAs) under the GDPR when using Microsoft products and services.
 
 ## Terminology
 
@@ -36,32 +32,36 @@ Helpful definitions for GDPR terms used in this document:
 
 ## What is a DPIA?
 
-The GDPR requires controllers to prepare a Data Protection Impact Assessment (DPIA) for operations that are “likely to result in a high risk to the rights and freedoms of natural persons.” There is nothing inherent in Microsoft products and services that need the creation of a DPIA. However, because Microsoft products and services are highly customizable, a DPIA may be needed depending on the details of your Microsoft configuration. Microsoft has no control over, and little or no insight into such information. You, as a data controller must determine appropriate uses of their data.
+The GDPR requires controllers to prepare a Data Protection Impact Assessment (DPIA) for operations that are 'likely to result in a high risk to the rights and freedoms of natural persons.' There is nothing inherent in Microsoft products and services that need the creation of a DPIA. However, because Microsoft products and services are highly customizable, a DPIA may be needed depending on the details of your Microsoft configuration. Microsoft has no control over, and little or no insight into such information. You, as a data controller must determine appropriate uses of their data.
 
 ## DPIA in Action
 
 The DPIA guidance applies to Office 365, Azure, Dynamics 365, and Microsoft Support and Professional Services. That guidance includes consideration of:
 
-1. **When is a DPIA needed?**: The risk factors listed below should be addressed when considering whether to complete a DPIA. Other potential factors and further details are found in Part 1 of each of the guidelines.  
+**When is a DPIA needed?**
 
-    - A systematic and extensive evaluation of data based on automated processing.  
-    - Processing on a large scale of special categories of data (data revealing information uniquely identifying a natural person), or of personal data relating to criminal convictions and offenses.
-    - Systematic monitoring of a publicly accessible area on a large scale.
+The risk factors listed below should be addressed when considering whether to complete a DPIA. Other potential factors and further details are found in Part 1 of each of the guidelines.  
 
-    The GDPR clarifies “The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional, or lawyer. In such cases, a data protection impact assessment should not be mandatory.”
+- A systematic and extensive evaluation of data based on automated processing.  
+- Processing on a large scale of special categories of data (data revealing information uniquely identifying a natural person), or of personal data relating to criminal convictions and offenses.
+- Systematic monitoring of a publicly accessible area on a large scale.
 
-2. **What is required to complete a DPIA?**: A DPIA should provide specific information about the intended processing, which is detailed in Part 2 of the guidance. That information includes:
+The GDPR clarifies 'The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional, or lawyer. In such cases, a data protection impact assessment should not be mandatory.'
 
-    - Assessment of the necessity, and proportionality of data processing in relation to the purpose of the DPIA.  
-    - Assessment of the risks to the rights and freedoms of natural persons.
-    - Intended measures to address the risks, including safeguards, security measures, and mechanisms to ensure the protection of personal data and demonstrate compliance with the GDPR.
-    - Purposes of processing  
-    - Categories of personal data processed  
-    - Data retention  
-    - Location and transfers of personal data  
-    - Data sharing with third-party subprocessors  
-    - Data sharing with independent third-parties  
-    - Data subject rights
+**What is required to complete a DPIA?**
+
+A DPIA should provide specific information about the intended processing, which is detailed in Part 2 of the guidance. That information includes:
+
+- Assessment of the necessity, and proportionality of data processing in relation to the purpose of the DPIA.  
+- Assessment of the risks to the rights and freedoms of natural persons.
+- Intended measures to address the risks, including safeguards, security measures, and mechanisms to ensure the protection of personal data and demonstrate compliance with the GDPR.
+- Purposes of processing  
+- Categories of personal data processed  
+- Data retention  
+- Location and transfers of personal data  
+- Data sharing with third-party subprocessors  
+- Data sharing with independent third-parties  
+- Data subject rights
 
 ## Additional Considerations
 

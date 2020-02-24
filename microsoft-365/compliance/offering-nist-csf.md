@@ -94,7 +94,7 @@ Microsoft provides the most comprehensive offerings compared to other cloud serv
 
 ## Use Microsoft Compliance Score to assess your risk
 
-[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), use the pre-configured [NIST CSF template](https://go.microsoft.com/fwlink/?linkid=2117917) to help your organization meet the requirements for this regulation.
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [NIST CSF template](https://go.microsoft.com/fwlink/?linkid=2117917) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
 
 ## Resources
 

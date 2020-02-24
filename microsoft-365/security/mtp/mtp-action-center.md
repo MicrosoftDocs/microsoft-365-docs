@@ -25,11 +25,9 @@ ms.custom: autoir
 **Applies to:**
 - Microsoft Threat Protection
 
-
-
 ## A "single pane of glass" experience
 
-![Action Center](../images/air-actioncenter.png)
+![Action Center](../../media/air-actioncenter.png)
 
 Use the Action center to see the results of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and [resulting verdict](mtp-autoir-results.md#remediation-actions-following-automated-investigation), remediation actions occur automatically or upon approval by your organization’s security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
 
@@ -39,14 +37,6 @@ The Action center provides a "single pane of glass" experience for tasks, such a
 - Reviewing completed remediation actions.
 
 Your security operations team can operate more effectively and efficiently, because the Action center provides a comprehensive view of Microsoft Threat Protection at work.
-
-## Remediation actions
-
-The following table lists remediation actions that are currently supported in the Action center: 
-
-|Endpoints remediation actions  |Email remediation actions  |
-|---------|---------|
-|Quarantine file<br/>Remove registry key<br/>Kill process <br/>Stop service <br/>Remove registry key <br/>Disable driver <br/>Remove scheduled task      |Soft delete email messages or clusters<br/>Block URL (time-of-click)<br/>Turn off external mail forwarding          |
 
 ## Go to the Action center
 
@@ -60,9 +50,9 @@ The following table lists remediation actions that are currently supported in th
 
     - The **History** tab lists past investigations and remediation actions that were taken automatically. You can view data for the past day, week, month, or six months.
 
-4. To show only the columns you want to see, select **Customize columns**.<br/>![Action Center in Microsoft Threat Protection](../images/mtp-action-center.png)
+4. To show only the columns you want to see, select **Customize columns**.<br/>![Action Center in Microsoft Threat Protection](../../media/mtp-action-center.png)
 
-5. Select an item in the list to view more details about an investigation. The investigation details view opens.<br/>![Investigation details](../images/mtp-air-investdetails.png)
+5. Select an item in the list to view more details about an investigation. The investigation details view opens.<br/>![Investigation details](../../media/mtp-air-investdetails.png)
 
     - If the investigation pertains to email content (such as, the entity is a mailbox), investigation details open in the Office 365 Security & Compliance Center ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
 

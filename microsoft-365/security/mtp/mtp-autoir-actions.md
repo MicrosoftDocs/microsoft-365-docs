@@ -25,9 +25,7 @@ ms.custom: autoir
 **Applies to:**
 - Microsoft Threat Protection
 
-
-
-When an automated investigation runs, it can result in one or more [remediation actions](mtp-action-center.md#remediation-actions) that require approval to proceed. For example, a cluster of email messages might need to be deleted, or a quarantined file might need to be removed. It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
+When an automated investigation runs, it can result in one or more [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) that require approval to proceed. For example, a cluster of email messages might need to be deleted, or a quarantined file might need to be removed. It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
 
 > [!TIP]
 > If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
@@ -49,11 +47,11 @@ Pending actions can be reviewed and approved by using one of several methods:
 
     - If you select an item in the **Investigation number** column, the investigation details page opens. There, you can view the results of the investigation, and then either approve or reject the recommended action.
  
-    - If you select a row in the list, a flyout opens, where you can view information about that item. <br/>![Approve or reject an action](../images/air-actioncenter-itemselected.png)<br/>Use the links to view an associated alert or an investigation, and approve or reject the action.
+    - If you select a row in the list, a flyout opens, where you can view information about that item. <br/>![Approve or reject an action](../../media/air-actioncenter-itemselected.png)<br/>Use the links to view an associated alert or an investigation, and approve or reject the action.
 
 ## Review a pending action in the investigation details view
 
-![Investigation details](../images/mtp-air-investdetails.png)
+![Investigation details](../../media/mtp-air-investdetails.png)
 
 1. On an [investigation details](mtp-autoir-results.md) page, select the **Pending actions** (or **Actions**) tab. Items that are pending approval are listed here.
 

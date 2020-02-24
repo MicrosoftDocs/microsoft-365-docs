@@ -40,7 +40,7 @@ Microsoft Threat Protection aggregates data from the various integrated services
 
 Before you turn on the service, the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) doesn't show the **Incidents** and the **Action center** options in the navigation pane.
 
-![Image of Microsoft 365 security center navigation pane without Microsoft Threat Protection features](../images/mtp-off.png)
+![Image of Microsoft 365 security center navigation pane without Microsoft Threat Protection features](../../media/mtp-off.png)
 *Microsoft 365 security center with Microsoft Threat Protection turned off*
 
 To turn on Microsoft Threat Protection, select **Settings** in the navigation pane. In the **[Settings page](https://security.microsoft.com/settings)**, go to **Microsoft Threat Protection** > **Opt-in / Opt-out**.
@@ -60,7 +60,7 @@ Once the service is provisioned, it adds:
 - An action center for managing [automated investigation and response](mtp-autoir.md)
 - [Advanced hunting](advanced-hunting-overview.md) capabilities to the existing **Hunting** page
 
-![Image of Microsoft 365 security center navigation pane with Microsoft Threat Protection features](../images/mtp-on.png)
+![Image of Microsoft 365 security center navigation pane with Microsoft Threat Protection features](../../media/mtp-on.png)
 *Microsoft 365 security center with incidents management and other Microsoft Threat Protection capabilities*
 
 ### Getting Azure ATP data

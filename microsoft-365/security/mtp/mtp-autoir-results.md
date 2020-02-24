@@ -25,11 +25,9 @@ ms.custom: autoir
 **Applies to:**
 - Microsoft Threat Protection
 
-
-
 When an automated investigation occurs in Microsoft Threat Protection, details about that investigation are available during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
-![Investigation details](../images/mtp-air-investdetails.png)
+![Investigation details](../../media/mtp-air-investdetails.png)
 
 ## Open the investigation details view
 
@@ -55,7 +53,7 @@ Use an incident details page to view detailed information about an incident, inc
 
 2. In the navigation pane, choose **Incidents**. 
 
-3. Select an item in the list to open the incident details view.<br/>![Incident details](../images/mtp-incidentdetails-tabs.png)
+3. Select an item in the list to open the incident details view.<br/>![Incident details](../../media/mtp-incidentdetails-tabs.png)
 
 4. On the **Investigations** tab, select an investigation in the list.
 
@@ -63,7 +61,7 @@ Use an incident details page to view detailed information about an incident, inc
 
 Use the investigation details view to see past, current, and pending activity pertaining to an investigation. The investigation details view resembles the following image:
 
-![Investigation details](../images/mtp-air-investdetails.png)
+![Investigation details](../../media/mtp-air-investdetails.png)
 
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 

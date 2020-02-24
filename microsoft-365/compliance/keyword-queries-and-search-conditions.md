@@ -267,9 +267,9 @@ Keep the following in mind when using search conditions.
     
 - As previously explained, some condition properties allow you to type multiple values. Each value is logically connected by the **OR** operator. This results in the same logic as having multiple instances of the same condition, where each has a single value. The following illustrations show an example of a single condition with multiple values and an example of multiple conditions (for the same property) with a single value. Both examples result in the same query:  `(filetype="docx") OR (filetype="pptx") OR (filetype="xlsx")`
     
-    ![One condition with multiple values](media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
+    ![One condition with multiple values](../media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
   
-    ![Multiple search conditions for the same property](media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
+    ![Multiple search conditions for the same property](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
   
 > [!TIP]
 > If a condition accepts multiple values, we recommend that you use a single condition and specify multiple values (separated by commas or semi-colons). This helps ensure the query logic that's applied is what you intend. 
@@ -284,7 +284,7 @@ This example returns documents on SharePoint and OneDrive for Business sites tha
   
  **GUI**
   
-![First example of search conditions](media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
+![First example of search conditions](../media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
   
  **Search query syntax**
   
@@ -300,7 +300,7 @@ This example returns email items or documents that contain the keyword "report",
   
  **GUI**
   
-![Second example of search conditions](media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
+![Second example of search conditions](../media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
   
  **Search query syntax**
   
@@ -316,7 +316,7 @@ This example returns email messages or calendar meetings that were sent between 
   
  **GUI**
   
-![Third example of search conditions](media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
+![Third example of search conditions](../media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
   
  **Search query syntax**
   
@@ -375,7 +375,7 @@ As previously explained, you can use the  `SharedWithUsersOWSUser` property so s
   
 Documents must be explicitly shared with a specific user to be returned in search results when using the  `SharedWithUsersOWSUser` property. For example, when a person shares a document in their OneDrive account, they have the option to share it with anyone (inside or outside the organization), share it only with people inside the organization, or share it with a specific person. Here's a screenshot of the **Share** window in OneDrive, that shows the three sharing options. 
   
-![Only files shared with specific people will be returned by a search query that uses the SharedWithUsersOWSUser property](media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
+![Only files shared with specific people will be returned by a search query that uses the SharedWithUsersOWSUser property](../media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
   
 Only documents that are shared by using the third option (shared with **Specific people**) will be returned by a search query that uses the  `SharedWithUsersOWSUser` property. 
 
