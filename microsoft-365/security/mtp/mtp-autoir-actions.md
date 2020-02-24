@@ -30,9 +30,7 @@ When an automated investigation runs, it can result in one or more [remediation 
 > [!TIP]
 > If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
-Pending actions can be reviewed and approved by using one of several methods:
-- [Use the Action center](#review-a-pending-action-in-the-action-center)
-- [Use the investigation details view](#review-a-pending-action-in-the-investigation-details-view)
+Pending actions can be reviewed and approved by using the [Action center](#review-a-pending-action-in-the-action-center) or the [investigation details view](#review-a-pending-action-in-the-investigation-details-view).
 
 > [!NOTE]
 > You must have [appropriate permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions.
