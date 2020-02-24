@@ -27,8 +27,11 @@ ms.custom: autoir
 - Microsoft Threat Protection
 
 Did [automated investigation and response capabilities](mtp-autoir.md) in Microsoft Threat Protection miss or wrongly detect something? There are steps you can take to fix it. You can:
+
 - [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
+
 - [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and 
+
 - [Undo remediation actions that were taken on devices](#undo-a-remediation-action-that-was-taken-on-a-device). 
 
 Use this article as a guide. 
@@ -74,5 +77,7 @@ If a remediation action was taken on a device (such as a Windows 10 device) and 
 ## Related articles
 
 - [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
+
 - [Learn more about the Action center](mtp-action-center.md)
+
 - [Proactively hunt for threats with advanced hunting in Microsoft Threat Protection](advanced-hunting-overview.md)
