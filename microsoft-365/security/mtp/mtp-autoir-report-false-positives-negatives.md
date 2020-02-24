@@ -1,5 +1,5 @@
 ---
-title: How to report false positives or false negatives in AIR in Microsoft Threat Protection 
+title: Handle false positives or false negatives in AIR in Microsoft Threat Protection 
 description: Was something missed or wrongly detected by AIR in Microsoft Threat Protection? Learn how to submit false positives or false negatives to Microsoft for analysis.
 keywords: automated, investigation, alert, trigger, action, remediation, false positive, false negative
 search.appverid: met150
@@ -21,7 +21,7 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# How to report false positives/negatives in automated investigation and response capabilities
+# Handle false positives/negatives in automated investigation and response capabilities
 
 **Applies to:**
 - Microsoft Threat Protection
