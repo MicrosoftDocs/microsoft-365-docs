@@ -73,7 +73,7 @@
                   href: mtp/mtp-remediation-actions.md
                 - name: The Action center
                   href: mtp/mtp-action-center.md
-                - name: View investigation details and results
+                - name: View automated investigation details and results
                   href: mtp/mtp-autoir-results.md
                 - name: Approve or reject pending actions
                   href: mtp/mtp-autoir-actions.md
@@ -374,7 +374,7 @@
               items: 
                 - name: AIR overview
                   href: ./office-365-security/office-365-air.md
-                - name: View investigation details and results
+                - name: View automated investigation details and results
                   href: ./office-365-security/air-view-investigation-results.md
                 - name: Approve or reject pending actions
                   href: ./office-365-security/air-remediation-actions.md
