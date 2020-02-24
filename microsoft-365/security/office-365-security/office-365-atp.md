@@ -51,9 +51,6 @@ The following table summarizes what's included in each plan.
 
 - If your current subscription does not include Office 365 ATP, [contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644), and see how ATP can work for your organization.
 
-> [!TIP]
-> Do you have Microsoft 365 E5 or Microsoft 365 E3 together with Identity & Threat Protection? Consider trying [Microsoft Threat Protection](../mtp/microsoft-threat-protection.md).
-
 ## Configure ATP policies
 
 With Office 365 ATP, your organization's security team can configure protection by defining policies in the Office 365 Security & Compliance Center (Go to [https://protection.office.com](https://protection.office.com) > **Threat management** > **Policy**.)
