@@ -29,7 +29,7 @@ Automated investigation and response capabilities in Microsoft Threat Protection
 
 The following table summarizes remediation actions that are currently supported in Microsoft Threat Protection: 
 
-|Endpoints remediation actions  |Email remediation actions  |
+|Device (endpoint) remediation actions  |Email remediation actions  |
 |---------|---------|
 |Quarantine file<br/>Remove registry key<br/>Kill process <br/>Stop service <br/>Disable driver <br/>Remove scheduled task      |Soft delete email messages or clusters<br/>Block URL (time-of-click)<br/>Turn off external mail forwarding          |
 
