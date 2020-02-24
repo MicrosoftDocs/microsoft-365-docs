@@ -26,7 +26,7 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Learn about the licensing, hardware and software requirements, and other configuration settings to provision and use Microsoft Threat Protection.
 
