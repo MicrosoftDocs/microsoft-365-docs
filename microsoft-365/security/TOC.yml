@@ -372,13 +372,13 @@
               href: ./mtp/latest-attack-campaigns.md
             - name: Automated investigation and response
               items: 
-                - name: Overview of AIR
+                - name: AIR overview
                   href: ./office-365-security/office-365-air.md
-                - name: View details and results of an investigation
+                - name: View investigation details and results
                   href: ./office-365-security/air-view-investigation-results.md
-                - name: View and approve remediation actions
+                - name: Approve or reject pending actions
                   href: ./office-365-security/air-remediation-actions.md
-                - name: Integrate AIR with a custom or third-party reporting solution
+                - name: Integrate AIR with a custom solution or third-party solution
                   href: ./office-365-security/air-custom-reporting.md
             - name: Detect and address compromised user accounts quickly
               href: ./office-365-security/address-compromised-users-quickly.md
