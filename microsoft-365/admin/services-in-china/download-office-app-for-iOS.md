@@ -38,7 +38,7 @@ A few Office app for iOS features are not available for Office 365 operated by 2
 
 ## Download the Office app for iOS
 
-- Download the Office app for iPhones from the [App Store](https://products.office.com/en-us/mobile/office?rtc=2). 
+- Download the Office app for iPhones from the [App Store](https://products.office.com/mobile/office?rtc=2). 
 
 > [!NOTE]
 > The Office app for iOS is currently available for iPhone only. Support for iPad will be added at a later time. 
