@@ -24,8 +24,6 @@ Your organization needs to manage security and compliance scenarios that span al
 
 After the global administrator assigns these admin roles, the admins have access to features and data that span all services in Microsoft 365, such as the Microsoft 365 security center, Microsoft 365 compliance center, Azure, Office 365, and Enterprise Mobility + Security.
 
-![Permissions page in the Microsoft 365 security center](../../media/m365-security-permissions-page.png)
-
 ## What the Microsoft 365 roles are
 
 The roles that appear in the Microsoft 365 compliance center and Microsoft 365 security center are Azure Active Directory roles. These roles are designed to align with job functions in your organization's IT group, making it easy to give a person all the permissions necessary to get their job done.
