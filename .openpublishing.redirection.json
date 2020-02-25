@@ -363,6 +363,11 @@
       "source_path": "microsoft-365/admin/services-in-china/index.md",
       "redirect_url": "services-in-china",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/setup/index.md",
+      "redirect_url": "setup",
+      "redirect_document_id": true
     }
   ]
 }
