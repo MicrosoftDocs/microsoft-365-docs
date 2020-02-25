@@ -1,5 +1,5 @@
 ---
-title: Approve or reject pending actions following automated investigation 
+title: Approve or reject pending actions following an automated investigation 
 description: Use the Action Center to manage actions related to automated investigation and response
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
@@ -20,21 +20,17 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# Approve or reject pending actions from automated investigations
+# Approve or reject pending actions following an automated investigation
 
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
-When an automated investigation runs, it can result in one or more [remediation actions](mtp-action-center.md#remediation-actions) that require approval to proceed. For example, a cluster of email messages might need to be deleted, or a quarantined file might need to be removed. It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
+When an automated investigation runs, it can result in one or more [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) that require approval to proceed. For example, a cluster of email messages might need to be deleted, or a quarantined file might need to be removed. It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
 
 > [!TIP]
 > If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
-Pending actions can be reviewed and approved by using one of several methods:
-- [Use the Action center](#review-a-pending-action-in-the-action-center)
-- [Use the investigation details view](#review-a-pending-action-in-the-investigation-details-view)
+Pending actions can be reviewed and approved by using the [Action center](#review-a-pending-action-in-the-action-center) or the [investigation details view](#review-a-pending-action-in-the-investigation-details-view).
 
 > [!NOTE]
 > You must have [appropriate permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions.
@@ -62,5 +58,7 @@ Pending actions can be reviewed and approved by using one of several methods:
 ## Next steps
 
 - [Learn more about the Action center](mtp-action-center.md)
+
 - [Learn more about incidents](incidents-overview.md)
+
 - [Learn about hunting](advanced-hunting-overview.md)

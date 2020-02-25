@@ -146,7 +146,7 @@ Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistration
 ```
 3. Access any directories where there might be entries for the devices. Remove entries for each device from *all* directories, including Windows Server Active Directory Domain Services and 
 Azure Active Directory. Be aware that this removal could take a few hours to completely process.
-4. Access management services where there might be entries for the devices. Remove entries for each device from *all* management services, including Microsoft Endpoint Configuration Manger, Microsoft Intune, and Windows Autopilot. Be aware that this removal could take a few hours to completely process.
+4. Access management services where there might be entries for the devices. Remove entries for each device from *all* management services, including Microsoft Endpoint Configuration Manager, Microsoft Intune, and Windows Autopilot. Be aware that this removal could take a few hours to completely process.
 
 Now you can proceed to [register devices](#register-devices).
 
