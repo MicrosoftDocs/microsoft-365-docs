@@ -66,21 +66,6 @@ To search for MailItemsAccessed audit records, you can search for the **Accessed
 
 You can also run the [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) or [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) commands in Exchange Online PowerShell.
 
-<CHARU - the below is applicable for all of Advanced AUdit not just MailItemsAccessed so should be moved to a common section>
-   
-It is possible that Advanced audit features such as MailItemsAccessed actions aren't being logged in your organization (and not showing up in audit log search results) even with the right licenses in place. If you are observing this, this is due to Advanced Audit package rollout has not reached your organization yet. This is a temporary licensing backfill issue and will saturate in the next few days. To mitgate this issue, perform the following steps for each E5 user:
-
-1. In the Microsoft 365 admin center, go to **Users > Active users**, and then select a user.
-
-2. On the user properties flyout page, click **Licenses and Apps**.
-
-3. Expand the **Apps** section, and then do one of the following things:
-
-   a. If the **Microsoft 365 Advanced Auditing** checkbox is not selected, select it, and then click **Save changes.** Audit records for MailItemsAccessed actions should be searchable within 24 hours.
-
-   b. If the **Microsoft 365 Advanced Auditing** checkbox is selected, clear it, and then click **Save changes.** See step 4.
-
-4. If you cleared the checkbox in step 3, wait 60 minutes, and then repeat step 3a to enable the Microsoft 365 Advanced Auditing app.
 
 ## High-bandwidth access to the Office 365 Management Activity API
 
@@ -91,6 +76,22 @@ With the release of Advanced Audit, we're moving from a publisher-level limit to
 All organizations are initially allocated a baseline of 2,000 requests per minute. This limit will dynamically increase depending on an organization's seat count and their licensing subscription. E5 organizations will get approximately twice as much bandwidth as non-E5 organizations. There will also be cap on the maximum bandwidth to protect the health of the service.
 
 For more information, see the "API throttling" section in [Office 365 Management Activity API reference](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
+
+## Troubleshoot Advanced Audit
+
+It's possible that Advanced Audit features (such as the ability to create audit log retention policies and the logging of MailItemsAccessed audit records) aren't available in your organization, even with the correct licensing in place. If this is happening in your organization, it's because the Advanced Audit package hasn't yet been rolled out to your organization. This is a temporary *licensing backfill* issue, which should be resolved for affected organizations in the next few days. To mitigate this issue, please perform the following steps for each E5 user:
+
+1. In the Microsoft 365 admin center, go to **Users > Active users**, and then select a user.
+
+2. On the user properties flyout page, click **Licenses and Apps**.
+
+3. Expand the **Apps** section, and then do one of the following things:
+
+   a. If the **Microsoft 365 Advanced Auditing** checkbox is not selected, select it, and then click **Save changes.** Audit records for MailItemsAccessed actions for this user should be searchable within 24 hours.
+
+   b. If the **Microsoft 365 Advanced Auditing** checkbox is selected, clear it, and then click **Save changes.** See step 4.
+
+4. If you cleared the checkbox in step 3, wait 60 minutes, and then repeat step 3a to enable the Microsoft 365 Advanced Auditing app.
 
 ## FAQs for Advanced Audit
 
