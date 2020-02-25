@@ -51,6 +51,8 @@
               href: mtp/data-privacy.md
             - name: Troubleshoot issues
               href: ./mtp/troubleshoot.md
+            - name: Microsoft 365 security portals
+              href: mtp/portals.md
         - name: How-to guides
           items: 
             - name: Turn on Microsoft Threat Protection

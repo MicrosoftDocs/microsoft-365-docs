@@ -17,7 +17,7 @@ search.appverid: met150
 ---
 
 # Microsoft 365 security portals
-While the [Microsoft 365 security center](overview-security-center.md) is the new home for monitoring and managing security across your identities, data, devices, apps, you will need to access various portals for certain specialized tasks.
+While [Microsoft 365 security center](overview-security-center.md) is the new home for monitoring and managing security across your identities, data, devices, apps, you will need to access various portals for certain specialized tasks.
 
 ## Security portals
 
@@ -38,7 +38,6 @@ Security operators and admins can go to the following portals to manage security
 
 While these portals are not specifically for managing security, they support various workloads and tasks that can impact your security. Visit these portals to identities, permissions, device settings, and data handling policies.
 <p></p>
-
 
 | Portal name | Description | Link | 
 |---|---|---| 
