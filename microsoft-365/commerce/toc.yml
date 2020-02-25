@@ -61,11 +61,11 @@
         - name: Change payment frequency
           href: billing-and-payments/change-payment-frequency.md
         - name: Manage billing profiles
-          href: billing-and-payments/manage-billing-profiles
+          href: billing-and-payments/manage-billing-profiles.md
         - name: Change your billing addresses
           href: billing-and-payments/change-your-billing-addresses.md
         - name: Payment Services Directive 2 and Strong Customer Authentication
-          href: billing-and-payments/psd2
+          href: billing-and-payments/psd2.md
     - name: Billing accounts
       items: 
         - name: Manage billing accounts
