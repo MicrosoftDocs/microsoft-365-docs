@@ -328,6 +328,11 @@
       "source_path": "microsoft-365/admin/add-users/index.md",
       "redirect_url": "add-users",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-overview/index.md",
+      "redirect_url": "admin-overview",
+      "redirect_document_id": true
     }
   ]
 }
