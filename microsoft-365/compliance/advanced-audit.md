@@ -94,7 +94,7 @@ For more information, see the "API throttling" section in [Office 365 Management
 
 **Where can I access Advanced Audit?**
 
-After Advanced Audit is rolled out to your organization, you will be able to create audit log retention policies and search for MailItemsAccessed audit records using the Audit log search tool in the [Office 365 Security & Compliance Center](https://protection.office.com). We're working to roll out Advance Audit to the [Microsoft 365 Compliance Center](https://compliance.microsoft.com).
+After Advanced Audit is rolled out to your organization, you will be able to create audit log retention policies and search for MailItemsAccessed audit records using the Audit log search tool in the [Office 365 Security & Compliance Center](https://protection.office.com). We're working to roll out Advanced Audit to the [Microsoft 365 compliance center](https://compliance.microsoft.com) in the coming weeks.
 
 **Does every user need an E5 license to benefit from Advanced Audit?**
 
@@ -112,11 +112,11 @@ We're exploring options for how and if we can provide longer retention periods f
 
 For eligible customers, there is no action to get access to MailItemsAccessed events. However, as previously explained in this topic, latency caused by the licensing backfill issue may prevent audit records for MailItemsAccessed event from being returned in an audit log search. If this happens, follow the instructions in the Search for MailItemsAccessed audit records section.
 
-**Are you planning to release additional crucial events this year?**
+**Are you planning to release additional events this year?**
 
-Yes, we plan to release new events in the coming months. We will post information about these in the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) as we get closer to a release date.
+Yes, we plan to release new events that are crucial to investigations in the coming months. We will post information about these new events in the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) as we get closer to a release date.
 
-**Are crucial events in Advanced Audit available in the Office 365 Management Activity API?**
+**Are the new events in Advanced Audit available in the Office 365 Management Activity API?**
 
 Yes. As long as audit records are generated for users with the appropriate license, you'll be able to access these records via the Office 365 Management Activity API.
 
