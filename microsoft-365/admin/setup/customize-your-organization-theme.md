@@ -25,7 +25,7 @@ description: "Learn to change the default theme of Office 365 and customize it t
 
 Learn how to customize your theme in the Microsoft 365 admin center. As the admin of your Office 365 for business subscription, you can change the default theme that appears in the top navigation bar for everyone in the organization. You can add your company logo and change the colors to match the rest of your brand. You can even add a destination link for users to navigate to when they select your logo. You can see here the default theme and custom theme result in Office 365.
   
-![Default Office 365 theme and Custom Office 365 theme](../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
+![Default Office 365 theme and Custom Office 365 theme](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
   
 ## Customize your theme in the admin center
 

@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Guatemala
 author: cmcatee-MSFT
 f1.keywords:

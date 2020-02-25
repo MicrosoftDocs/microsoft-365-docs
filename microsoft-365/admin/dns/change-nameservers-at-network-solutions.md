@@ -43,25 +43,25 @@ Follow the steps below or [watch the video (start at 0:47)](https://support.offi
     > [!IMPORTANT]
     > Before you select the **Login** button, first choose **Manage My Domain Names** in the **Log In to:** drop-down list.
   
-    ![Choose Manage My Domain Names and log in to Network Solutions](../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
+    ![Choose Manage My Domain Names and log in to Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
 2. Select the check box next to the name of the domain that you are modifying.
     
-    ![Select the check box for your domain](../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
+    ![Select the check box for your domain](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
 3. Select **Edit DNS**.
     
-    ![Select Edit DNS](../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Select Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Select **Manage Advanced DNS Records**.
     
     (You may have to scroll down.)
     
-    ![Select Manage Advanced DNS Records](../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![Select Manage Advanced DNS Records](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
 5. Scroll down to the **Text (TXT Records)** section, and then select **Edit TXT Records**.
     
-    ![Select Edit TXT Records](../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
+    ![Select Edit TXT Records](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
 6. In the boxes for the new record, type or copy and paste the values in the following table.
     
@@ -70,15 +70,15 @@ Follow the steps below or [watch the video (start at 0:47)](https://support.offi
 |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Note**: This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)
    
     
-   ![Type or paste values in the boxes for the new record](../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
+   ![Type or paste values in the boxes for the new record](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
 7. Select **Continue**.
     
-    ![Select Continue](../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
+    ![Select Continue](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
 8. Select **Save Changes**.
     
-    ![Select Save Changes](../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
+    ![Select Save Changes](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
   
 9. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
@@ -121,19 +121,19 @@ Ready to change your NS records so Office 365 can set up your domain? Follow the
     > [!IMPORTANT]
     > Before you select the **Login** button, first choose **Manage My Domain Names** in the **Log In to:** drop-down list. 
   
-    ![Choose Manage My Domain Names and log in to Network Solutions](../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
+    ![Choose Manage My Domain Names and log in to Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
 2. Select the check box next to the name of the domain that you are modifying.
     
-    ![Select the check box for your domain](../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
+    ![Select the check box for your domain](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
 3. Select **Edit DNS**.
     
-    ![Select Edit DNS](../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Select Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Select **Move DNS**.
     
-    ![NetworkSolutionsBP-Redelegate-1-1](../media/e57a30f3-63d5-4bcb-84c6-c8be21c261a2.png)
+    ![NetworkSolutionsBP-Redelegate-1-1](../../media/e57a30f3-63d5-4bcb-84c6-c8be21c261a2.png)
   
 5. Depending on whether or not there are already nameservers listed on the page that is displayed now, continue to one of the two following procedures:
     
@@ -145,7 +145,7 @@ Ready to change your NS records so Office 365 can set up your domain? Follow the
 
 1. On the **Domains** page, in the **Specify Domain Name Servers** section, select **Add More Name Servers**.
     
-    ![NetworkSolutionsBP-Redelegate-1-2-1](../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
+    ![NetworkSolutionsBP-Redelegate-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
 2. On the **Domain Names** page, type or copy and paste the nameserver values from the following table. 
     
@@ -157,15 +157,15 @@ Ready to change your NS records so Office 365 can set up your domain? Follow the
 |**Name Server 2** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
     
-![NetworkSolutionsBP-Redelegate-1-2-2](../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
+![NetworkSolutionsBP-Redelegate-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
 3. Select **Move DNS**.
     
-    ![NetworkSolutionsBP-Redelegate-1-2-3](../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
+    ![NetworkSolutionsBP-Redelegate-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
 4. Select **Save Changes**.
     
-    ![NetworkSolutionsBP-Redelegate-1-2-4](../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
+    ![NetworkSolutionsBP-Redelegate-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Office 365 email and other services will be all set to work with your domain. 
@@ -177,11 +177,11 @@ Ready to change your NS records so Office 365 can set up your domain? Follow the
   
 1. If there are any other nameservers listed, delete each one by selecting it and then pressing the **Delete** key on your keyboard.
     
-    ![NetworkSolutions-BP-Redelegate-1-5](../media/eeb8ad22-bf4a-43a8-b97a-f09c3654d89b.png)
+    ![NetworkSolutions-BP-Redelegate-1-5](../../media/eeb8ad22-bf4a-43a8-b97a-f09c3654d89b.png)
   
 2. Select **Add More Name Servers**.
     
-    ![NetworkSolutionsBP-Redelegate-1-2-1](../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
+    ![NetworkSolutionsBP-Redelegate-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
 3. On the **Domain Names** page, type or copy and paste the nameserver values from the following table.  
     
@@ -193,15 +193,15 @@ Ready to change your NS records so Office 365 can set up your domain? Follow the
 |**Name Server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
     
-![NetworkSolutionsBP-Redelegate-1-2-2](../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
+![NetworkSolutionsBP-Redelegate-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
 4. Select **Move DNS**.
     
-    ![NetworkSolutionsBP-Redelegate-1-2-3](../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
+    ![NetworkSolutionsBP-Redelegate-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
 5. Select **Save Changes.**
     
-    ![NetworkSolutionsBP-Redelegate-1-2-4](../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
+    ![NetworkSolutionsBP-Redelegate-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Office 365 email and other services will be all set to work with your domain.

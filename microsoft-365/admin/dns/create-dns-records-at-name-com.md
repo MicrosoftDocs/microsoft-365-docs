@@ -45,15 +45,15 @@ Before you use your domain with Office 365, we have to make sure that you own it
   
 1. To get started, go to your domains page at name.com by using [this link](https://www.name.com/account/domain). You'll be prompted to log in first.
     
-    ![Name-BP-Configure-1-1](../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
+    ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
 2. Under **My Domains**, select the name of the domain that you want to modify.
     
-    ![Name-BP-Configure-1-2](../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
+    ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
 3. In the **Details** column, select ** DNS Records **. 
     
-    ![Name-BP-Configure-1-3](../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
+    ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
 4. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -64,11 +64,11 @@ Before you use your domain with Office 365, we have to make sure that you own it
     |**Type** <br/> |**Host** <br/> |**Answer** <br/> |**TTL** <br/> |
     |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |
    
-    ![Name-BP-Verify-1-1](../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
+    ![Name-BP-Verify-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
   
 5. Select **Add Record**.
     
-    ![Name-BP-Verify-1-2](../media/816fc60b-17ab-4982-8849-6c3fcf3ca3d6.png)
+    ![Name-BP-Verify-1-2](../../media/816fc60b-17ab-4982-8849-6c3fcf3ca3d6.png)
   
 6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
@@ -98,15 +98,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
 
 1. To get started, go to your domains page at name.com by using [this link](https://www.name.com/account/domain). You'll be prompted to log in first.
     
-    ![Name-BP-Configure-1-1](../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
+    ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
 2. Under **My Domains**, select the name of the domain that you want to modify.
     
-    ![Name-BP-Configure-1-2](../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
+    ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
 3. In the **Details** column, select **DNS Records**. 
     
-    ![Name-BP-Configure-1-3](../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
+    ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
 4. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -116,21 +116,21 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|:-----|:-----|
     |MX  <br/> |(Leave this field empty.)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Office 365 account.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |0  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
    
-   ![Name-BP-Configure-2-1](../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
+   ![Name-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
 5. Select **Add Record**.
     
-    ![Name-BP-Configure-2-2](../media/fd09f161-7cc4-4723-aec2-5fa801bd19e9.png)
+    ![Name-BP-Configure-2-2](../../media/fd09f161-7cc4-4723-aec2-5fa801bd19e9.png)
   
 6. If there are any other MX records, delete each of them by using the following two-step procedure:
     
     For each other MX record, select **Delete** in the **Actions** column. 
     
-    ![Name-BP-Configure-2-3](../media/16734a98-31c4-4023-a2a5-10b7c95bc58e.png)
+    ![Name-BP-Configure-2-3](../../media/16734a98-31c4-4023-a2a5-10b7c95bc58e.png)
   
     To confirm each deletion, select **Delete** in the **Actions** column again. 
     
-    ![Name-BP-Configure-2-4](../media/409c21c5-51f4-4244-bb84-5d32084224b2.png)
+    ![Name-BP-Configure-2-4](../../media/409c21c5-51f4-4244-bb84-5d32084224b2.png)
   
     Repeat this two-step procedure until you have deleted each of the other MX records.
     
@@ -139,15 +139,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
 
 1. To get started, go to your domains page at name.com by using [this link](https://www.name.com/account/domain). You'll be prompted to log in first.
     
-    ![Name-BP-Configure-1-1](../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
+    ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
 2. Under **My Domains**, select the name of the domain that you want to modify.
     
-    ![Name-BP-Configure-1-2](../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
+    ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
 3. In the **Details** column, select **DNS Records**. 
     
-    ![Name-BP-Configure-1-3](../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
+    ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
 4. Add the first CNAME record.
     
@@ -163,11 +163,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |Use the default value (300).  <br/> |
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |Use the default value (300).  <br/> |
    
-   ![Name-BP-Configure-3-1](../media/4e34caaf-b418-40ec-abfa-fe62175a87c2.png)
+   ![Name-BP-Configure-3-1](../../media/4e34caaf-b418-40ec-abfa-fe62175a87c2.png)
   
 5. Select **Add Record** to add the first record. 
     
-    ![Name-BP-Configure-3-2](../media/1053c2a7-07c3-4c1b-b54a-1c02881fb0ec.png)
+    ![Name-BP-Configure-3-2](../../media/1053c2a7-07c3-4c1b-b54a-1c02881fb0ec.png)
   
 6. Add the second CNAME record.
     
@@ -183,15 +183,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
 1. To get started, go to your domains page at name.com by using [this link](https://www.name.com/account/domain). You'll be prompted to log in first.
     
-    ![Name-BP-Configure-1-1](../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
+    ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
 2. Under **My Domains**, select the name of the domain that you want to modify.
 
-    ![Name-BP-Configure-1-2](../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
+    ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
 3. In the **Details** column, select **DNS Records**. 
     
-    ![Name-BP-Configure-1-3](../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
+    ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
 4. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -201,26 +201,26 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |Use the default value (300).  <br/> |
    
-   ![Name-BP-Configure-4-1](../media/cbbfc071-840a-4ffa-a59e-0dfce03063cc.png)
+   ![Name-BP-Configure-4-1](../../media/cbbfc071-840a-4ffa-a59e-0dfce03063cc.png)
   
 5. Select **Add Record**.
     
-    ![Name-BP-Configure-4-2](../media/db1e0e09-2b95-4fc1-88bd-e86da536921f.png)
+    ![Name-BP-Configure-4-2](../../media/db1e0e09-2b95-4fc1-88bd-e86da536921f.png)
   
 ## Add the two SRV records that are required for Office 365
 <a name="BKMK_add_SRV"> </a>
 
 1. To get started, go to your domains page at name.com by using [this link](https://www.name.com/account/domain). You'll be prompted to log in first.
     
-    ![Name-BP-Configure-1-1](../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
+    ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
 2. Under **My Domains**, select the name of the domain that you want to modify.
     
-    ![Name-BP-Configure-1-2](../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
+    ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
 3. In the **Details** column, select **DNS Records+**. 
     
-    ![Name-BP-Configure-1-3](../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
+    ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
 4. Add the first SRV record:
     
@@ -233,11 +233,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |SRV|sip|1|Use the default value (300).|100|tls|443|sipdir.online.lync.com <br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
     |SRV|sipfederationtls|1|Use the default value (300).|100|tcp|5061|sipfed.online.lync.com <br>**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
    
-   ![Name-BP-Configure-5-1](../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
+   ![Name-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   
 5. Select **Add Record**.
 
-    ![Name-BP-Configure-5-2](../media/a804d51d-8f57-4b0b-8bd6-a52eb1c87a97.png)
+    ![Name-BP-Configure-5-2](../../media/a804d51d-8f57-4b0b-8bd6-a52eb1c87a97.png)
   
 6. Add the second SRV record:
 

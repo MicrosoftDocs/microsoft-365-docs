@@ -130,7 +130,7 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
     
 ## Groups in Exchange Online and SharePoint Online
 
-If you want to create groups of users so you can send email to them all at the same time, you can do that in the Exchange admin center by going to **Admin** \> **Exchange** \> **Recipients** \> **Groups**. Next, select **New**![Add](../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png), and select the kind of group you want to create: 
+If you want to create groups of users so you can send email to them all at the same time, you can do that in the Exchange admin center by going to **Admin** \> **Exchange** \> **Recipients** \> **Groups**. Next, select **New**![Add](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png), and select the kind of group you want to create: 
   
 - **Distribution group**: Used to distribute messages to a group of users. It's also called a  *mail-enabled distribution group*, or, in Office 365, a  *distribution list*. For more information, see [Manage distribution groups](https://technet.microsoft.com/library/bb124513.aspx).
     

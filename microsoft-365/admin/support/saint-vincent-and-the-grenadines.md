@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Saint Vincent and the Grenadines
 author: cmcatee-MSFT
 f1.keywords:

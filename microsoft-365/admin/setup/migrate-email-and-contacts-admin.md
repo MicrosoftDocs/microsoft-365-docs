@@ -64,7 +64,7 @@ If you just want contacts, follow these steps:
     
 To start the process, open Outlook and choose **File** \> **Open &amp; Export** \> **Import/Export**.
   
-![File menu in Outlook 2016](../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Open &amp; Export command in Outlook 2016](../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Import/Export button in Outlook 2016](../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
+![File menu in Outlook 2016](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Open &amp; Export command in Outlook 2016](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Import/Export button in Outlook 2016](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
 ## See other email accounts in Outlook
 
@@ -78,7 +78,7 @@ Add an account, such as your private Gmail account, to Outlook.
     
 Need more detailed steps? See [Add an account](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
-[![Screenshot showing Outlook account information page in the backstage view.](../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
+[![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
   
 ## Multiple mailboxes: Admins can bulk import email, contacts, and calendars to Office 365
 
