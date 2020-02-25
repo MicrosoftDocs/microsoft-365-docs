@@ -115,14 +115,20 @@ As a best practice, we recommend  *always*  staying current: uninstall the old A
 2. Right-click on **Windows PowerShell** and select **Run as Administrator**.
     
     ![Open PowerShell as "Run as administrator."](../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
+    
+3. Set the policy to RemoteSigned by using [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy).
+    
+    ```
+    Set-ExecutionPolicy RemoteSigned
+    ```
   
-2. Check installed module:
+4. Check installed module:
     
     ```
     Get-InstalledModule -Name "AzureAD*"
     ```
 
-3. To uninstall a previous version of AzureADPreview or AzureAD, run this command:
+5. To uninstall a previous version of AzureADPreview or AzureAD, run this command:
   
     ```
     Uninstall-Module AzureADPreview
@@ -134,7 +140,7 @@ As a best practice, we recommend  *always*  staying current: uninstall the old A
     Uninstall-Module AzureAD
     ```
 
-4. To install the latest version of AzureADPreview, run this command:
+6. To install the latest version of AzureADPreview, run this command:
   
     ```
     Install-Module AzureADPreview
