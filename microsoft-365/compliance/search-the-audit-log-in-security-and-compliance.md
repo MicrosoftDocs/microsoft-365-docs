@@ -826,18 +826,21 @@ Where noted below in the descriptions, some operations contain additional activi
 
 #### Forms activities performed by co-authors and anonymous responders
 
-Forms supports collaboration when forms are being designed and when analyzing responses. A form collaborators is known as a *co-author*. Co-authors can do everything a form owner can do, except delete a form and move a form. Additionally, Forms allows you to create a form that can be responded to anonymously. This means the responder doesn't have to be signed into your organization to respond to a form. 
+Forms supports collaboration when forms are being designed and when analyzing responses. A form collaborator is known as a *co-author*. Co-authors can do everything a form owner can do, except delete or move a form. Forms also allows you to create a form that can be responded to anonymously. This means the responder doesn't have to be signed into your organization to respond to a form. 
 
 The following table describes the auditing activities and information in the audit record for activities performed by co-authors and anonymous responders.
 
-|**Activity type**|**Is user inside your organization?**|**User Id that's logged**|**Logged into Tenant**|**FormUserType logged**|
+|**Activity type**|**Internal or external user**|**User Id that's logged**|**Organization logged in to**|**Forms user type**|
 |:-----|:-----|:-----|:-----|:-----|
-|Co-authoring activities|Internal|Real ID|Owner Tenant|Co-author|
-|Co-authoring activities|External|Real ID<br><br>urn:forms:coauthor#a0b1c2d3@forms.office.com<br>The 2nd part of the ID is a hash, which will differ for different users|Coauthor Tenant<br><br>Owner Tenant|Co-author|
-|Response activities|External|Real ID<br><br>urn:forms:external#a0b1c2d3@forms.office.com<br>The 2nd part of the ID is a hash, which will differ for different users|Responder Tenant<br><br>Owner Tenant|Responder
-|Response activities|Anonymous|urn:forms:anonymous#a0b1c2d3@forms.office.com<br>The 2nd part of the ID is a hash, which will differ for different users|Owner Tenant|Responder|
+|Co-authoring activities|Internal|UPN|Form owner's org|Co-author|
+|Co-authoring activities|External|UPN<br>|Co-author's org<br>|Co-author|
+|Co-authoring activities|External|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(The second part of the Id is a hash, which will differ for different users)|Form owner's org<br>|Co-author|
+|Response activities|External|UPN<br>|Responder's org<br>|Responder|
+|Response activities|External|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(The second part of the User Id is a hash, which will differ for different users)|Form owner's org|Responder|
+|Response activities|Anonymous|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(The second part of the User Id is a hash, which will differ for different users)|Form owner's org|Responder|
+||||
 
-### Sensitivity label activities 
+### Sensitivity label activities
 
 The following table lists events that result from labeling activities for SharePoint Online and Teams sites.
 
