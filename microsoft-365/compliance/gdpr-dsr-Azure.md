@@ -314,4 +314,5 @@ If you run into issues while exporting or deleting data from the Azure portal, g
 
 ## Learn more
 
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview
+)

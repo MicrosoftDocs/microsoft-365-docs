@@ -24,8 +24,8 @@ titleSuffix: Microsoft GDPR
 Under the General Data Protection Regulation (GDPR), data controllers are required to prepare a Data Protection Impact Assessment (DPIA) for processing operations that are “likely to result in a high risk to the rights and freedoms of natural persons.” There is nothing inherent in Microsoft Office 365 that would necessarily require the creation of a DPIA by a data controller using it.  Rather, whether a DPIA is required will be dependent on the details and context of how the data controller deploys, configures, and uses Office 365.
 
 The purpose of this document is to provide data controllers with information about Office 365 that will help them to determine whether a DPIA is needed and  if so, what details to include. It applies to Office 365 applications and services, including but not limited to Exchange Online, SharePoint Online, OneDrive for Business, Yammer, Skype for Business, and Power BI.  (See, for example, Tables 1 and 2 of the Office 365 Data Subject Request Guide.) 
- 
-## Part 1 — Determining whether a DPIA is needed 
+
+## Part 1 — Determining whether a DPIA is needed
 
 Article 35 of the GDPR requires a data controller to create a Data Protection Impact Assessment “[w]here a type of processing in particular using new technologies, and taking into account the nature, scope, context, and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons.” It further sets out particular factors that would indicate such a high risk, which are discussed in the following table: In determining whether a DPIA is needed, a data controller should consider these factors, along with any other relevant factors, in light of the controller’s specific implementation(s) and use(s) of Office 365.
 
@@ -67,4 +67,5 @@ The table below provides key information from Microsoft that can help with your 
 
 ## Learn more
 
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview
+)

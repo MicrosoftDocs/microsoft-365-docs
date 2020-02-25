@@ -104,4 +104,5 @@ Microsoft Dynamics 365 offering follows the same Technical and Organizational me
 
 ## Learn more
 
-[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview
+)
