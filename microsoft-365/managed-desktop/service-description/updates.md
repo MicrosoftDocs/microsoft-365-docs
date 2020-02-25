@@ -27,7 +27,7 @@ For more information, see [Windows Update for Business: Update types](https://do
 
 Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 
-- **Test**: Used to validate Microsoft Managed Desktop policy changes, operating system updates, feature updates, and other changes pushed to the tenant. There should not be any end users placed in the test group. The test group is exempt from any established service level agreements and end-user support. This group is available for use to validate compatibility of applications with new policy or operating system hanges.  
+- **Test**: Used to validate Microsoft Managed Desktop policy changes, operating system updates, feature updates, and other changes pushed to the tenant. There should not be any end users placed in the test group. The test group is exempt from any established service level agreements and end-user support. This group is available for use to validate compatibility of applications with new policy or operating system changes.  
 - **First**: Contains early software adopters and devices that could be subject to pre-release updates. Devices in this group might experience outages if there are scenarios which were not covered during testing in the test ring.
 - **Fast**: Prioritizes speed over stability. Useful for detecting quality issues before they are offered to the Broad group. This group serves as a next layer of validation but is generally more stable than the Test and First groups. 
 - **Broad**: Last group to have feature and quality updates available. This group contains the majority of users in the tenant, and therefore favors stability over speed in deployment. Testing of apps should be done here as the environment is most stable. 
