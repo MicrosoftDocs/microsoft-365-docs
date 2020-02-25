@@ -59,17 +59,17 @@ To confirm that Microsoft cloud services maintain their compliance with G-Cloud 
 
 ### Dynamics 365
 
-- [Dynamics 365 UK G cloud Risk Environment](https://aka.ms/Dynamics365UKGCloudRiskEnvironment)
+- [Dynamics 365 UK G cloud Risk Environment](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ### Intune
 
-- [Intune UK G cloud Risk Environment](https://aka.ms/IntuneUKGCloudRiskEnvironment)
+- [Intune UK G cloud Risk Environment](https://go.microsoft.com/fwlink/?linkid=2099702)
 - [Intune UK G cloud Residual Risk](https://aka.ms/IntuneUKGCloudResidualRisk)
 - [Azure UK G cloud Security Assessment Summary](https://aka.ms/IntuneUKGCloudSecurityAssessmentSummary)
 
 ### Office 365
 
-- [Office 365 UK G cloud Risk Environment](https://aka.ms/Office365UKGCloudRiskEnvironment)
+- [Office 365 UK G cloud Risk Environment](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ## Accelerate your deployment of UK G-Cloud solutions on Azure
 

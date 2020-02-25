@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/04/2019
+ms.date: 02/24/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -33,7 +33,7 @@ Office 365 Advanced Threat Protection (ATP) safeguards your organization against
 
 - **[Threat investigation and response capabilities](#use-threat-investigation-and-response-capabilities)**: Use leading-edge tools to investigate, understand, simulate, and prevent threats.
 
-- **[Automated investigation and response capabilities](#save-time-with-automated-investigation-and-response)**: Save time and effort investigating and mitigating threats.
+- **[Automated investigation and response capabilities](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**: Save time and effort investigating and mitigating threats.
 
 ## Office 365 ATP Plan 1 and Plan 2
 
@@ -41,7 +41,7 @@ The following table summarizes what's included in each plan.
 
 |Office 365 ATP Plan 1 |Office 365 ATP Plan 2|
 |---------|---------|
-|Configuration, protection, and detection capabilities:<br/>- [Safe Attachments](atp-safe-attachments.md)<br/>- [Safe Links](atp-safe-links.md)<br/>- [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Advanced antiphishing protection](atp-anti-phishing.md)<br/>- [Real-time detections](threat-explorer.md)     |Office 365 ATP Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:<br/>- [Threat Trackers](threat-trackers.md)<br/>- [Threat Explorer](threat-explorer.md)<br/>- [Automated investigation and response](automated-investigation-response-office.md)<br/>- [Attack Simulator](attack-simulator.md)|
+|Configuration, protection, and detection capabilities:<br/>- [Safe Attachments](atp-safe-attachments.md)<br/>- [Safe Links](atp-safe-links.md)<br/>- [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Advanced antiphishing protection](atp-anti-phishing.md)<br/>- [Real-time detections](threat-explorer.md)     |Office 365 ATP Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:<br/>- [Threat Trackers](threat-trackers.md)<br/>- [Threat Explorer](threat-explorer.md)<br/>- [Automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>- [Attack Simulator](attack-simulator.md)|
 
 - Office 365 ATP Plan 2 is included in Office 365 E5, Office 365 A5, and Microsoft 365 E5.
 
@@ -50,9 +50,6 @@ The following table summarizes what's included in each plan.
 - Office 365 ATP Plan 1 and Office 365 ATP Plan 2 are each available as an add-on for certain subscriptions. To learn more, see [Feature availability across ATP plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
 - If your current subscription does not include Office 365 ATP, [contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644), and see how ATP can work for your organization.
-
-> [!TIP]
-> Do you have Microsoft 365 E5 or Microsoft 365 E3 together with Identity & Threat Protection? Consider trying [Microsoft Threat Protection](../mtp/microsoft-threat-protection.md).
 
 ## Configure ATP policies
 
@@ -95,11 +92,11 @@ Office 365 ATP Plan 2 includes best-of-class [threat investigation and response 
 
 - **[Threat Explorer (or real-time detections)](threat-explorer.md)** (also referred to as Explorer) is a real-time report that allows you to identify and analyze recent threats. You can configure Explorer to show data for custom periods.
 
-- **[Attack Simulator](attack-simulator.md)** allows you to run realistic attack scenarios in your organization to identify vulnerabilites. Simulations of current types of attacks are available, including a [display name spear-phishing attack](attack-simulator.md#display-name-spear-phishing-attack), a [password-spray attack](attack-simulator.md#password-spray-attack), a [brute-force password attack](attack-simulator.md#brute-force-password-attack), and more.
+- **[Attack Simulator](attack-simulator.md)** allows you to run realistic attack scenarios in your organization to identify vulnerabilites. Simulations of current types of attacks are available, including a [credential harvest spear-phishing attack](attack-simulator.md#credential-harvest-spear-phishing-attack), a [password-spray attack](attack-simulator.md#password-spray-attack), a [brute-force password attack](attack-simulator.md#brute-force-password-attack), and more.
 
 ## Save time with automated investigation and response
 
-(**NEW!**) When you are investigating a potential cyberattack, time is of the essence. The sooner you can identify and mitigate threats, the better off your organization will be. [Automated investigation and response](automated-investigation-response-office.md) (AIR) capabilities include a set of security playbooks that can be launched automatically, such as when an alert is triggered, or manually, such as from a view in Explorer. AIR can save your security operations team time and effort in mitigating threats effectively and efficiently. To learn more, see [AIR in Office 365](automated-investigation-response-office.md).
+(**NEW!**) When you are investigating a potential cyberattack, time is of the essence. The sooner you can identify and mitigate threats, the better off your organization will be. [Automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) capabilities include a set of security playbooks that can be launched automatically, such as when an alert is triggered, or manually, such as from a view in Explorer. AIR can save your security operations team time and effort in mitigating threats effectively and efficiently. To learn more, see [AIR in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air).
 
 ## Permissions required to use ATP features
 
