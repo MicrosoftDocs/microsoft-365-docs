@@ -340,11 +340,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/admin/create-groups/index.md",
-      "redirect_url": "create-groups",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/admin/email/index.md",
       "redirect_url": "email",
       "redirect_document_id": true
