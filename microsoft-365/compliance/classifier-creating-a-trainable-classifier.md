@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Use trainable classifiers when one of the ready to use box classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. This topic shows you how to create a custom classifier."
+description: "Use trainable classifiers when one of the built-in classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. This topic shows you how to create a custom classifier."
 ---
 
 # Creating a trainable classifier (preview)
