@@ -176,7 +176,7 @@ To add custodians:
 1. Assign custodians to the communication by clicking the checkbox next to their name.
 
     After the communication is created, the notification workflow will automatically apply to the selected custodians.
-   
+
 2. Click **Next** to review the communication settings and details.
 
 >[!NOTE]
@@ -188,7 +188,7 @@ After you review the settings and click **Send** to complete the communication, 
 
 ## Events that trigger notifications
 
-The following table describes events in the case management process that trigger the different of different notifications in the communications workflow are sent to custodians.
+The following table describes events in the case management process that trigger when the different types of notifications are sent to custodians.
 
 |Type of communication|Trigger |
 |:---------|:---------|
