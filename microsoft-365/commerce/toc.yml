@@ -69,7 +69,7 @@
     - name: Billing accounts
       items: 
         - name: Manage billing accounts
-          href: billing-accounts/manage-billing-accounts.md
+          href: manage-billing-accounts.md
         - name: Associate a tenant with my billing account
           href: https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business
     - name: Manage relationships with my partners
