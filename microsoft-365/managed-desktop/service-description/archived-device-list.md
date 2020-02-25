@@ -30,6 +30,8 @@ To be enrolled in Microsoft Managed Desktop a device must be one of the followin
 
 | Model  | Minimum specs  | Additional requirements  | Retirement date |
 |---------|---------|---------|---------|
+| Dell Latitude 5490| 256 GB / Intel i5 / 8 GB RAM | IR camera required | **Jan 9, 2023** |
+| Dell Latitude 7390 7390 2-in-1 / 7490 | 256 GB / Intel i5 / 8 GB RAM   | IR camera required | **Jan 9, 2023** |
 |HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required  | **Feb 15, 2023** |
 |HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS03AV, IR camera required |**May 14, 2023** |
 |HP EliteBook x360 1030 G3| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required |**May 14, 2023** |
