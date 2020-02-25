@@ -373,6 +373,16 @@
       "source_path": "microsoft-365/admin/index.md",
       "redirect_url": "admin-home",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/misc/index.md",
+      "redirect_url": "admin-home",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security-and-compliance/index.md",
+      "redirect_url": "secure-your-business-data",
+      "redirect_document_id": true
     }
   ]
 }
