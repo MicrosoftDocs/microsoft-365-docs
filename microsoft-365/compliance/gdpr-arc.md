@@ -72,5 +72,4 @@ The checklists include the four basic categories of considerations for a privacy
 
 ## Learn more
 
-- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview
-)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

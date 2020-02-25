@@ -101,5 +101,4 @@ The Microsoft Dynamics 365 team may also elect to notify additional Microsoft pe
 
 ## Learn more
 
-- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview
-)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

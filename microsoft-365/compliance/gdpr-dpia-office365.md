@@ -67,5 +67,4 @@ The table below provides key information from Microsoft that can help with your 
 
 ## Learn more
 
-- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview
-)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

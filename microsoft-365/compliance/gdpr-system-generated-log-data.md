@@ -30,7 +30,6 @@ titleSuffix: Microsoft GDPR
 
 ## Learn more
 
-[Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview
-)
+[Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 
 

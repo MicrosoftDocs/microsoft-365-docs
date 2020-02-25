@@ -77,5 +77,4 @@ Details regarding breach notification for specific Microsoft products and servic
 
 ## Learn more
 
-- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview
-)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

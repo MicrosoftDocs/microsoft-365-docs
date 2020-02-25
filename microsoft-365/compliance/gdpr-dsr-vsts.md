@@ -61,8 +61,7 @@ Microsoft is committed to ensuring that your Azure DevOps Services data remains 
 ## See also
 
 - [Microsoft's GDPR commitments to customers of our generally available enterprise software products](https://docs.microsoft.com/legal/gdpr)
-- [Microsoft Trust center](https://www.microsoft.com/trust-center/privacy/gdpr-overview
-)
+- [Microsoft Trust center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [Microsoft privacy dashboard](https://account.microsoft.com/privacy)
 - [Microsoft privacy response center](https://aka.ms/userprivacysite)

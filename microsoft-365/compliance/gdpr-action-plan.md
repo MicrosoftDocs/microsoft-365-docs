@@ -65,5 +65,4 @@ Secure personal data at rest and in transit, detect and respond to data breaches
 - [Guide to the General Data Protection Regulation (GDPR)](https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/) by the Information Commissioner's Office
 - [General Data Protection Regulation (GDPR) FAQs for small organizations](https://ico.org.uk/for-organisations/business/guide-to-the-general-data-protection-regulation-gdpr-faqs/) by the Information Commisioner's Office
 - [Microsoft.com/GDPR](https://www.microsoft.com/trustcenter/Privacy/GDPR)
-- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview
-)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
