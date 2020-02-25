@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
-ms.date: 12/13/2019
+ms.date: 
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
