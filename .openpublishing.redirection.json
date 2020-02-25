@@ -318,6 +318,11 @@
       "source_path": "microsoft-365/security/office-365-security/keep-users-safe-with-office-365-ti.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/index.md",
+      "redirect_url": "activity-reports",
+      "redirect_document_id": true
     }
   ]
 }
