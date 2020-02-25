@@ -348,6 +348,11 @@
       "source_path": "microsoft-365/admin/email/index.md",
       "redirect_url": "email",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/get-help-with-domains/index.md",
+      "redirect_url": "get-help-with-domains",
+      "redirect_document_id": true
     }
   ]
 }
