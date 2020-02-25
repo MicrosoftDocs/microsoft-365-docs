@@ -10,7 +10,7 @@
           href: try-or-buy-microsoft-365.md
         - name: Extend your trial
           href: extend-your-trial.md
-        - name: Buy another subscriptions
+        - name: Buy another subscription
           href: buy-another-subscription.md
         - name: Buy or edit an add on
           href: buy-or-edit-an-add-on.md
@@ -39,7 +39,7 @@
         - name: Buy licenses
           href: licenses/buy-licenses.md
         - name: Assign licenses
-          href: /microsoft-365/admin/manage/assign-licenses-to-users.md
+          href: ../admin/manage/assign-licenses-to-users.md
         - name: Unassign licenses
           href: /microsoft-365/admin/manage/remove-licenses-from-users.md
         - name: Remove licenses from subscription
