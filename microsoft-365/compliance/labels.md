@@ -319,7 +319,7 @@ To automatically apply a label by using this option, SharePoint Online sites and
 
 For more information about trainable classifers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
 
-For an example configuration, see [How to prepare for and use a ready to use classifier](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-ready-to-use-classifier).
+For an example configuration, see [How to prepare for and use a built-in classifier](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-built-in-classifier).
 
 ## Applying a default retention label to all content in a SharePoint library, folder, or document set
 
