@@ -66,7 +66,9 @@ To search for MailItemsAccessed audit records, you can search for the **Accessed
 
 You can also run the [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) or [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) commands in Exchange Online PowerShell.
 
-However, it's possible that audit records for MailItemsAccessed actions aren't being logged in your organization (and not showing up in audit log search results) even though Advance Audit has been rolled out to your organization. This may be due to a *licensing backfill* issue, where the back-end processing that enables the auditing of MailItemsAccessed actions hasn't been fully completed in the Microsoft datacenter for your organization. If you have E5-licensed users in your organization, but audit records for MailItemsAccessed actions aren't being logged, perform the following steps for each E5 user:
+<CHARU - the below is applicable for all of Advanced AUdit not just MailItemsAccessed so should be moved to a common section>
+   
+It is possible that Advanced audit features such as MailItemsAccessed actions aren't being logged in your organization (and not showing up in audit log search results) even with the right licenses in place. If you are observing this, this is due to Advanced Audit package rollout has not reached your organization yet. This is a temporary licensing backfill issue and will saturate in the next few days. To mitgate this issue, perform the following steps for each E5 user:
 
 1. In the Microsoft 365 admin center, go to **Users > Active users**, and then select a user.
 
