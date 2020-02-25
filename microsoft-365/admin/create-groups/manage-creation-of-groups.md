@@ -116,7 +116,7 @@ As a best practice, we recommend  *always*  staying current: uninstall the old A
     
     ![Open PowerShell as "Run as administrator."](../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
     
-3. Set the policy to RemoteSigned
+3. Set the policy to RemoteSigned by using [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy).
     
     ```
     Set-ExecutionPolicy RemoteSigned
