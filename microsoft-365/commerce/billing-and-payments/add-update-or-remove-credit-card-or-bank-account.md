@@ -165,11 +165,11 @@ You must be a Global Admin or a Billing Admin to do the tasks described in this 
 
 2. Pick the subscription you want to pay for with the new credit card or bank account, then select **Update payment details**.
 
-    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Select the drop-down arrow under **Add or select a payment method**, then select **New credit card** or **New bank account**.
 
-    ![The drop-down menu that shows the New credit card and New bank account options.](../../admin/media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
+    ![The drop-down menu that shows the New credit card and New bank account options.](../../media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
   
 4. Enter the information for the new credit card or bank account, then select **Submit**.
 
@@ -196,11 +196,11 @@ You must be a Global Admin or a Billing Admin to do the tasks described in this 
 
 2. Pick the subscription you want to pay for with the new credit card or bank account, then select **Update payment details**.
 
-    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Select the drop-down arrow under **Add or select a payment method**, then select **New credit card** or **New bank account**.
 
-    ![The drop-down menu that shows the New credit card and New bank account options.](../../admin/media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
+    ![The drop-down menu that shows the New credit card and New bank account options.](../../media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
   
 4. Enter the information for the new credit card or bank account, then select **Submit**.
 
@@ -223,17 +223,17 @@ You must be a Global Admin or a Billing Admin to do the tasks described in this 
     > [!NOTE]
     > If another admin purchased the subscription, you won't be able to update the credit card or bank account information for it. If the credit card is about to expire and the other administrator isn't able to update it, you can prevent service interruption if you add a different credit card or new bank account for the subscription.
   
-    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Select the drop-down arrow under **Add or select a payment method**. Select the credit card or bank account that you want to update, then select **Edit details**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Update your credit card or bank account information (name on the credit card or bank account, billing address. phone number, or expiration date) as needed, then select **Submit**.
 
 5. A confirmation message appears. If it doesn't, see [Troubleshooting credit cards and bank accounts](#troubleshooting-credit-cards-and-bank-accounts).
 
-    ![The confirmation message: "Your payment method was successfully updated."](../../admin/media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
+    ![The confirmation message: "Your payment method was successfully updated."](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
 ::: moniker-end
 
@@ -251,17 +251,17 @@ You must be a Global Admin or a Billing Admin to do the tasks described in this 
     > [!NOTE]
     > If another admin purchased the subscription, you won't be able to update the credit card or bank account information for it. If the credit card is about to expire and the other administrator isn't able to update it, you can prevent service interruption if you add a different credit card or new bank account for the subscription.
   
-    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Select the drop-down arrow under **Add or select a payment method**. Select the credit card or bank account that you want to update, then select **Edit details**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Update your credit card or bank account information (name on the credit card or bank account, billing address. phone number, or expiration date) as needed, then select **Submit**.
 
 5. A confirmation message appears. If it doesn't, see [Troubleshooting credit cards and bank accounts](#troubleshooting-credit-cards-and-bank-accounts).
 
-    ![The confirmation message: "Your payment method was successfully updated."](../../admin/media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
+    ![The confirmation message: "Your payment method was successfully updated."](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
 ::: moniker-end
 
@@ -272,21 +272,21 @@ You must be a Global Admin or a Billing Admin to do the tasks described in this 
 
 2. Pick any subscription, then select **Update payment details**.
 
-    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Select the drop-down arrow under **Add or select a payment method**.
 
 4. Select the credit card or bank account, then select **Remove**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 5. Select **Remove** again to delete the credit card or bank account.
 
-    ![The Remove and Cancel buttons.](../../admin/media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
+    ![The Remove and Cancel buttons.](../../media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
   
     > [!NOTE]
     > You won't be able to remove a credit card or bank account if it's currently used to pay for a subscription. If you try, you see a message like this:
-    > ![The error message that appears if you try to remove a payment method currently used to pay for an active subscription.](../../admin/media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
+    > ![The error message that appears if you try to remove a payment method currently used to pay for an active subscription.](../../media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
     > To remove the credit card or bank account, select **Back** and follow the steps in this article to change the credit card or bank account that you use to pay for the subscription. Then try removing the credit card or bank account again.
 
 ::: moniker-end
@@ -298,21 +298,21 @@ You must be a Global Admin or a Billing Admin to do the tasks described in this 
 
 2. Pick any subscription, then select **Update payment details**.
 
-    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Select the drop-down arrow under **Add or select a payment method**.
 
 4. Select the credit card or bank account, then select **Remove**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
 
 5. Select **Remove** again to delete the credit card or bank account.
 
-    ![The Remove and Cancel buttons.](../../admin/media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
+    ![The Remove and Cancel buttons.](../../media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
   
     > [!NOTE]
     > You won't be able to remove a credit card or bank account if it's currently used to pay for a subscription. If you try, you see a message like this:
-    > ![The error message that appears if you try to remove a payment method currently used to pay for an active subscription.](../../admin/media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
+    > ![The error message that appears if you try to remove a payment method currently used to pay for an active subscription.](../../media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
     > To remove the credit card or bank account, select **Back** and follow the steps in this article to change the credit card or bank account that you use to pay for the subscription. Then try removing the credit card or bank account again.
 
 ::: moniker-end
@@ -324,11 +324,11 @@ You must be a Global Admin or a Billing Admin to do the tasks described in this 
 
 2. Pick the subscription that you want to pay for with the new credit card or bank account, then select **Update payment details**.
 
-    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Select the drop-down arrow under **Add or select a payment method** and select the credit card or bank account that you want to use.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Select **Submit**. If the credit card or bank account that you want to use isn't listed yet, pick **New credit card** or **New bank account** to add it.
 
@@ -341,11 +341,11 @@ You must be a Global Admin or a Billing Admin to do the tasks described in this 
 
 2. Pick the subscription that you want to pay for with the new credit card or bank account, then select **Update payment details**.
 
-    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![The Payment method section of the Subscription page that shows the Update payment details link.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Select the drop-down arrow under **Add or select a payment method** and select the credit card or bank account that you want to use.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Select **Submit**. If the credit card or bank account that you want to use isn't listed yet, pick **New credit card** or **New bank account** to add it.
 
