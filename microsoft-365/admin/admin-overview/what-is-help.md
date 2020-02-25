@@ -37,7 +37,7 @@ If you're an admin, [admin.microsoft.com](https://admin.microsoft.com) is your g
                     <a href="what-is-help.md#integrated-help">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -56,7 +56,7 @@ If you're an admin, [admin.microsoft.com](https://admin.microsoft.com) is your g
                     <a href="what-is-help.md#modern-self-help-powered-by-ai">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -75,7 +75,7 @@ If you're an admin, [admin.microsoft.com](https://admin.microsoft.com) is your g
                     <a href="what-is-help.md#guides-and-articles">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
                             </div>
                         </div>
                         <div class="cardText">
