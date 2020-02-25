@@ -319,10 +319,5 @@
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti",
       "redirect_document_id": true
     }
-    {
-      "source_path": "microsoft-365/commerce/billing-accounts/manage-billing-accounts.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/manage-billing-accounts",
-      "redirect_document_id": true
-    }
   ]
 }
