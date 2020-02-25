@@ -66,7 +66,6 @@ To search for MailItemsAccessed audit records, you can search for the **Accessed
 
 You can also run the [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) or [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) commands in Exchange Online PowerShell.
 
-
 ## High-bandwidth access to the Office 365 Management Activity API
 
 Organizations that access auditing logs through the Office 365 Management Activity API were restricted by throttling limits at the publisher level. This means that for a publisher pulling data on behalf of multiple customers, the limit was shared by all those customers.
@@ -79,7 +78,7 @@ For more information, see the "API throttling" section in [Office 365 Management
 
 ## Troubleshoot Advanced Audit
 
-It's possible that Advanced Audit features (such as the ability to create audit log retention policies and the logging of MailItemsAccessed audit records) aren't available in your organization, even with the correct licensing in place. If this is happening in your organization, it's because the Advanced Audit package hasn't yet been rolled out to your organization. This is a temporary *licensing backfill* issue, which should be resolved for affected organizations in the next few days. To mitigate this issue, please perform the following steps for each E5 user:
+It's possible that Advanced Audit features (such as the ability to create audit log retention policies and the logging of MailItemsAccessed audit records) aren't available in your organization, even with the correct licensing in place. If this is happening in your organization, it's because the Advanced Audit package hasn't yet been rolled out to your organization. This is a temporary *licensing backfill* issue, which should be resolved for affected organizations in the next few weeks. To mitigate this issue, please perform the following steps for each E5 user:
 
 1. In the Microsoft 365 admin center, go to **Users > Active users**, and then select a user.
 
