@@ -39,9 +39,9 @@
         - name: Buy licenses
           href: licenses/buy-licenses.md
         - name: Assign licenses
-          href: /microsoft-365/admin/manage/assign-licenses-to-users.md
+          href: ../admin/manage/assign-licenses-to-users.md
         - name: Unassign licenses
-          href: /microsoft-365/admin/manage/remove-licenses-from-users.md
+          href: ../admin/manage/remove-licenses-from-users.md
         - name: Remove licenses from subscription
           href: licenses/remove-licenses-from-subscription.md
         - name: Understand subscriptions and licenses
@@ -71,7 +71,7 @@
         - name: Manage billing accounts
           href: billing-accounts/manage-billing-accounts.md
         - name: Associate a tenant with my billing account
-          href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
+          href: https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business
     - name: Manage relationships with my partners
       href: manage-partners.md
     - name: Close your account
