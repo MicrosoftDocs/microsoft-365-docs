@@ -373,6 +373,11 @@
       "source_path": "microsoft-365/admin/usage-analytics/index.md",
       "redirect_url": "usage-analytics",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/index.md",
+      "redirect_url": "admin-home",
+      "redirect_document_id": true
     }
   ]
 }
