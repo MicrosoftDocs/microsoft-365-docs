@@ -65,11 +65,11 @@ This topic describes how to configure the default connection filter policy in th
 
      - CIDR IP: For example, 192.168.0.1/25. Valid network mask values are /24 through /32. To skip spam filtering for CIDR IP mask values /1 to /23, see the [Skip spam filtering for a CIDR IP outside of the available range](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) section later in this topic.
 
-     To add the IP address or address range, click **Add** ![Add Icon](../media/ITPro-EAC-AddIcon.png). To remove an entry, select the entry in **Allowed IP Address** and then click **Remove** ![Remove](../media/scc-remove-icon.png). When you're finished, click **Save**.
+     To add the IP address or address range, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png). To remove an entry, select the entry in **Allowed IP Address** and then click **Remove** ![Remove](../../media/scc-remove-icon.png). When you're finished, click **Save**.
 
    - **IP Block List**: Click **Edit**. In the **IP Block List** flyout that appears, enter a single IP, IP range, or CIDR IP in the **Address or address range** box as previously described in the **IP Allow List** setting.
 
-     To add the IP address or address range, click **Add** ![Add Icon](../media/ITPro-EAC-AddIcon.png). To remove an entry, select the entry in **Blocked IP Address** and then click **Remove** ![Remove](../media/scc-remove-icon.png). When you're finished, click **Save**.
+     To add the IP address or address range, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png). To remove an entry, select the entry in **Blocked IP Address** and then click **Remove** ![Remove](../../media/scc-remove-icon.png). When you're finished, click **Save**.
 
    - **Turn on safe list**: Enable or disable the use of the safe list to identify known, good senders that will skip spam filtering.
 
