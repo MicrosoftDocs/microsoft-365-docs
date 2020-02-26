@@ -27,7 +27,7 @@ search.appverid:
 - Microsoft Threat Protection
 
 
-The Microsoft Defender Threat Protection service is constantly being updated to include new feature enhancements and capabilities.
+The Microsoft Threat Protection service is constantly being updated to include new feature enhancements and capabilities.
 
 Learn about new features in the Microsoft Threat Protection preview release and be among the first to try upcoming features by turning on the preview experience.
 
