@@ -27,16 +27,16 @@ Before this preview, when you applied sensitivity labels that included encryptio
  
 - For SharePoint to decrypt the file on upload, the user who uploads the labeled and encrypted file must have usage rights to at least view the file. SharePoint doesn't decrypt files that the user can't open outside SharePoint.
 
-- When you download the file from SharePoint or OneDrive, the sensitivity label and any encryption settings are reapplied with the file, and these settings remain enforced wherever the file is saved.
+- When you download or access the file from SharePoint or OneDrive, the sensitivity label and any encryption settings are reapplied with the file, and these settings remain enforced wherever the file is saved.
 
 - Use Office on the web (Word, Excel, PowerPoint) to open and edit Office files that have sensitivity labels that apply encryption. The permissions that were assigned with the encryption are enforced. With Word on the web, you can also use auto labeling when you edit these documents.
 
 - Office 365 eDiscovery supports full-text search for these files. Data Loss Prevention (DLP) policies cover content in these files.
 
 - Three new [audit events](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) are available for monitoring sensitivity labels that are applied using Office on the web:
-  - Applied sensitivity label to file
-  - Changed sensitivity label applied to file
-  - Removed sensitivity label from file
+  - **Applied sensitivity label to file**
+  - **Changed sensitivity label applied to file**
+  - **Removed sensitivity label from file**
 
 > [!NOTE]
 > If encryption hasn't been applied with a cloud-based key but an on-premises key, a key management topology often referred to as "hold your own key" (HYOK), the SharePoint behavior doesn't change with this preview.
@@ -89,7 +89,7 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
     - Encryption that uses an on-premises key ("hold your own key" or HYOK)
     - Encryption that was applied independently from a label, for example, by directly applying a Rights Management protection template.
 
-- If you delete a label that's been applied to a document in SharePoint, rather than remove the label from the applicable label policy, the document when downloaded won't be labeled or encrypted. In comparison, if the labeled document is stored outside SharePoint, the document remains encrypted if the label is deleted. Note that although you might delete labels during a testing phase, it's rare to delete a label in a production environment.
+- If you delete a label that's been applied to a document in SharePoint, rather than remove the label from the applicable label policy, the document when downloaded won't be labeled or encrypted. In comparison, if the labeled document is stored outside SharePoint, the document remains encrypted if the label is deleted. Note that although you might delete labels during a testing phase, it's very rare to delete a label in a production environment.
 
 ## Prepare the SharePoint Online Management Shell for the preview
 
