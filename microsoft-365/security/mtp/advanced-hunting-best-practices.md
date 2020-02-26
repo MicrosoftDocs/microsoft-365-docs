@@ -24,7 +24,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 ## Optimize query performance
 Apply these recommendations to get results faster and avoid timeouts while running complex queries:
