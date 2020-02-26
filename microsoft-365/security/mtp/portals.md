@@ -1,6 +1,6 @@
 ---
 title: Portals used to manage Microsoft 365 security
-description: Find the links to various security administrative portals or centers for managing Microsoft 365 security
+description: Find the right Microsoft security administrative portal or center for managing Microsoft 365 security
 keywords: security, portals, Microsoft 365, M365, security center, admin center, URL, link, MTP, Azure ATP, Office 365 ATP, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, OATP, AATP
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -21,7 +21,7 @@ While [Microsoft 365 security center](overview-security-center.md) is the new ho
 
 ## Security portals
 
-Security operators and admins can go to the following portals to manage security-specific settings, investigate possible threat activities, and respond to active threats.
+Security operators and admins can go to the following portals to manage security-specific settings, investigate possible threat activities, respond to active threats, and collaborate with IT admins to remediate issues.
 <p></p>
 
 | Portal name | Description | Link |
