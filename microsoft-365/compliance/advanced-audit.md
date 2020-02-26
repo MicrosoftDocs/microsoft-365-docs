@@ -78,6 +78,14 @@ For more information, see the "API throttling" section in [Office 365 Management
 
 ## FAQs for Advanced Audit
 
+**Where can I access Advanced Audit?**
+
+After Advanced Audit is rolled out to your organization, you will be able to create audit log retention policies and search for MailItemsAccessed audit records using the Audit log search tool in the [Office 365 Security & Compliance Center](https://protection.office.com). We're working to roll out Advanced Audit to the [Microsoft 365 compliance center](https://compliance.microsoft.com) in the coming weeks.
+
+**Does every user need an E5 license to benefit from Advanced Audit?**
+
+To benefit from user-level Advanced Audit capabilities, a user needs to be assigned an E5 license. There are some capabilities that will check for the appropriate license to expose the feature for the user. For example, if you're trying to retain the audit records for a user who isn't assigned an E5 license for longer than 90 days, the system will return an error message.
+
 **Why don't I see Advanced Audit in my organization, even though we have an E5 subscription and users that are assigned E5 licenses?**
 
 It's possible that Advanced Audit features (such as the ability to create audit log retention policies and the logging of MailItemsAccessed audit records) aren't available in your organization, even with the correct licensing in place. If this is happening to you, it's because the Advanced Audit package hasn't been rolled out to your organization yet. This is a temporary licensing backfill issue, which should be resolved for affected organizations in the next few weeks. To mitigate this issue, please perform the following steps for each E5 user:
@@ -93,14 +101,6 @@ It's possible that Advanced Audit features (such as the ability to create audit 
    b. If the **Microsoft 365 Advanced Auditing** checkbox is selected, clear it, and then click **Save changes.** See step 4.
 
 4. If you cleared the checkbox in step 3, wait 60 minutes, and then repeat step 3a to enable the Microsoft 365 Advanced Auditing app.
-
-**Where can I access Advanced Audit?**
-
-After Advanced Audit is rolled out to your organization, you will be able to create audit log retention policies and search for MailItemsAccessed audit records using the Audit log search tool in the [Office 365 Security & Compliance Center](https://protection.office.com). We're working to roll out Advanced Audit to the [Microsoft 365 compliance center](https://compliance.microsoft.com) in the coming weeks.
-
-**Does every user need an E5 license to benefit from Advanced Audit?**
-
-To benefit from user-level Advanced Audit capabilities, a user needs to be assigned an E5 license. There are some capabilities that will check for the appropriate license to expose the feature for the user. For example, if you're trying to retain the audit records for a user who isn't assigned an E5 license for longer than 90 days, the system will return an error message.
 
 **What happens if my organization was in the private preview for one-year retention of audit records?**
 
