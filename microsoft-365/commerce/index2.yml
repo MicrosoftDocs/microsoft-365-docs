@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: commerce documentation # < 60 chars
+title: Commercial subscriptions and billing documentation # < 60 chars
 summary: Learn how to buy and manage business subscriptions, perform license management tasks, and manage billing and payments for your business accounts with Microsoft. # < 160 chars
 
 metadata:
@@ -58,7 +58,7 @@ landingContent:
             url: subscriptions/renew-your-subscription.md
           - text: Cancel your subscription
             url: subscriptions/cancel-your-subscription.md
-          - text: What happens to my data and access when my subscription ends?
+          - text: What happens if I cancel?
             url: subscriptions/what-happens-if-i-cancel.md
           - text: Reactivate your subscription
             url: subscriptions/reactivate-your-subscription.md
