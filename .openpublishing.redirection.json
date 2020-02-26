@@ -381,12 +381,12 @@
     },
     {
       "source_path": "microsoft-365/security-and-compliance/index.md",
-      "redirect_url": "secure-your-business-data",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data",
       "redirect_document_id": true
     },    {
       "source_path": "microsoft-365/dns/index.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/get-help-with-domains",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/commerce/billing-accounts/manage-billing-accounts.md",
