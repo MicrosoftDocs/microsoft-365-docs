@@ -90,4 +90,5 @@ You can also use the Security and Compliance Center (SCC) to configure end-user 
 ## For more information
 
 [Configure your spam filter policies](configure-your-spam-filter-policies.md)
+[Configure Spam filter using powershell](https://docs.microsoft.com/en-us/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy?view=exchange-ps)
   
