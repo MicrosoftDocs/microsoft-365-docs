@@ -26,6 +26,8 @@ ms.custom: air
 
 An alert is triggered, and a security playbook initiates, which starts an automated investigation. Or, a security analyst triggers an automated investigation while using Threat Explorer. The automated investigation runs, and typically, certain remediation actions are identified. Those actions are reviewed and approved by your security operations team, and the investigation completes. 
 
+The following table walks through the overall flow of AIR, step by step:
+
 |Step  |What happens  |
 |---------|---------|
 |1     |An alert is triggered by an Office event and a [security playbook](automated-investigation-response-office.md#security-playbooks) initiates an automated investigation for selected alerts. <br/><br/>Alternately, a security analyst can [trigger an automated investigation](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) while using [Threat Explorer](threat-explorer.md).        |
