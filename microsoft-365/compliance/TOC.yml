@@ -698,27 +698,30 @@
           href: manage-jobs.md
 - name: Manage auditing and alert policies
   items: 
-    - name: Search the audit log
-      href: search-the-audit-log-in-security-and-compliance.md
+    - name: Unified auditing
+      items:
+        - name: Search the audit log
+          href: search-the-audit-log-in-security-and-compliance.md
+        - name: Turn audit log search on or off
+          href: turn-audit-log-search-on-or-off.md
+        - name: Detailed properties in the audit log
+          href: detailed-properties-in-the-office-365-audit-log.md
+        - name: Export, configure, and view audit log records
+          href: export-view-audit-log-records.md
+        - name: Use the audit log to investigate common issues
+          href: auditing-troubleshooting-scenarios.md
+        - name: Use sharing auditing in the audit log
+          href: use-sharing-auditing.md
+        - name: Search for eDiscovery activities in the audit log
+          href: search-for-ediscovery-activities-in-the-audit-log.md
+    - name: Mailbox auditing
+      href: enable-mailbox-auditing.md
     - name: Advanced Audit
       href: advanced-audit.md
-    - name: Turn audit log search on or off
-      href: turn-audit-log-search-on-or-off.md
-    - name: Manage mailbox auditing
-      href: enable-mailbox-auditing.md
-    - name: Manage audit log retention policies
-      href: audit-log-retention-policies.md
-    - name: Detailed properties in the audit log
-      href: detailed-properties-in-the-office-365-audit-log.md
-    - name: Export, configure, and view audit log records
-      href: export-view-audit-log-records.md
-    - name: Use the audit log to investigate common issues
-      href: auditing-troubleshooting-scenarios.md
-    - name: Use sharing auditing in the audit log
-      href: use-sharing-auditing.md
-    - name: Search for eDiscovery activities in the audit log
-      href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: Manage alert policies
+      items:
+        - name: Manage audit log retention policies
+          href: audit-log-retention-policies.md
+    - name: Alert policies
       href: alert-policies.md
 - name: Manage compliance risks
   items: 
