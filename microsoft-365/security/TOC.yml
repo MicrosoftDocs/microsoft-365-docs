@@ -69,11 +69,11 @@
               items: 
                 - name: AIR overview
                   href: mtp/mtp-autoir.md
-                - name: View remediation actions
+                - name: Remediation actions
                   href: mtp/mtp-remediation-actions.md
-                - name: Visit the Action center
+                - name: The Action center
                   href: mtp/mtp-action-center.md
-                - name: View investigation results
+                - name: View automated investigation details and results
                   href: mtp/mtp-autoir-results.md
                 - name: Approve or reject pending actions
                   href: mtp/mtp-autoir-actions.md
@@ -136,6 +136,8 @@
                   href: mtp/microsoft-secure-score.md
                 - name: Secure Score (preview)
                   href: mtp/microsoft-secure-score-preview.md
+                - name: What's coming
+                  href: mtp/microsoft-secure-score-whats-coming.md
             - name: Reports
               items: 
                 - name: Monitor and view reports
@@ -372,13 +374,13 @@
               href: ./mtp/latest-attack-campaigns.md
             - name: Automated investigation and response
               items: 
-                - name: Overview of AIR
+                - name: AIR overview
                   href: ./office-365-security/office-365-air.md
-                - name: View details and results of an investigation
+                - name: View automated investigation details and results
                   href: ./office-365-security/air-view-investigation-results.md
-                - name: View and approve remediation actions
+                - name: Approve or reject pending actions
                   href: ./office-365-security/air-remediation-actions.md
-                - name: Integrate AIR with a custom or third-party reporting solution
+                - name: Integrate AIR with a custom solution or third-party solution
                   href: ./office-365-security/air-custom-reporting.md
             - name: Detect and address compromised user accounts quickly
               href: ./office-365-security/address-compromised-users-quickly.md

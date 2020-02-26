@@ -20,16 +20,16 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# Go to the Action center to view remediation actions
+# The Action center
 
 **Applies to:**
 - Microsoft Threat Protection
 
-## A "single pane of glass" experience
+Use the Action center to see the results of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and resulting verdict, [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) occur automatically or upon approval by your organization’s security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
 
 ![Action Center](../../media/air-actioncenter.png)
 
-Use the Action center to see the results of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and resulting verdict, [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) occur automatically or upon approval by your organization’s security operations team. All remediation actions, whether they are pending approval or were already approved, are consolidated in the Action center. 
+## A "single pane of glass" experience
 
 The Action center provides a "single pane of glass" experience for tasks, such as:
 - Approving pending remediation actions;
@@ -58,7 +58,6 @@ Your security operations team can operate more effectively and efficiently, beca
 
     - If the investigation involves a device, investigation details open in the security center ([https://security.microsoft.com](https://security.microsoft.com)). 
 
-
 > [!TIP]
 > If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
@@ -77,6 +76,8 @@ To approve or reject pending actions in the Action center, you must have permiss
 ## Next steps 
 
 - [Learn more about incidents in Microsoft Threat Protection](incidents-overview.md)
+
 - [View the results of an automated investigation](mtp-autoir-results.md)
+
 - [Learn about hunting in Microsoft Threat Protection](advanced-hunting-overview.md)
 

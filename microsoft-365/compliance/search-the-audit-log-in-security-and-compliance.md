@@ -514,6 +514,7 @@ The following table lists the activities that can be logged by mailbox audit log
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
+|Accessed mailbox items|MailItemsAccessed|Messages were read or accessed in mailbox. Audit records for this activity are triggered in one of two ways: when a mail client (such as Outlook) performs a bind operation on messages or when mail protocols (such as Exchange ActiveSync or IMAP) sync items in a mail folder. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. Analyzing audit records for this activity is useful when investigating compromised email account. For more information, see the "Access to crucial events for investigations" section in [Advanced Audit](advanced-audit.md#access-to-crucial-events-for-investigations). |
 |Added delegate mailbox permissions|AddMailboxPermissions|An administrator assigned the FullAccess mailbox permission to a user (known as a delegate) to another person's mailbox. The FullAccess permission allows the delegate to open the other person's mailbox, and read and manage the contents of the mailbox.|
 |Added or removed user with delegate access to calendar folder|UpdateCalendarDelegation|A user was added or removed as a delegate to the calendar of another user's mailbox. Calendar delegation gives someone else in the same organization permissions to manage the mailbox owner's calendar.|
 |Added permissions to folder|AddFolderPermissions|A folder permission was added. Folder permissions control which users in your organization can access folders in a mailbox and the messages located in those folders.|
@@ -785,9 +786,12 @@ You can search the audit log for activities in Microsoft Stream. These activitie
 
 ### Microsoft Forms activities
 
-The following table lists the user and admin activities in Microsoft Forms that are logged in the Office 365 audit log. Microsoft Forms is a forms/quiz/survey tool used to collect data for anlaysis. 
+The following table lists the user and admin activities in Microsoft Forms that are logged in the Office 365 audit log. Microsoft Forms is a forms/quiz/survey tool used to collect data for analysis. 
 
 Where noted below in the descriptions, some operations contain additional activity parameters.
+
+> [!NOTE]
+> If a Forms activity is performed by a co-author or an anonymous responder, it will be logged slightly differently. For more information, see the [Forms activities performed by co-authors and anonymous responders](#forms-activities-performed-by-co-authors-and-anonymous-responders) section.
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -820,7 +824,23 @@ Where noted below in the descriptions, some operations contain additional activi
 |Submitted response|SubmitResponse|A user submits a response to a form. <br><br>Property IsInternalForm:boolean indicates if the responder is within the same organization as the form owner.|
 ||||
 
-### Sensitivity label activities 
+#### Forms activities performed by co-authors and anonymous responders
+
+Forms supports collaboration when forms are being designed and when analyzing responses. A form collaborator is known as a *co-author*. Co-authors can do everything a form owner can do, except delete or move a form. Forms also allows you to create a form that can be responded to anonymously. This means the responder doesn't have to be signed into your organization to respond to a form. 
+
+The following table describes the auditing activities and information in the audit record for activities performed by co-authors and anonymous responders.
+
+|**Activity type**|**Internal or external user**|**User Id that's logged**|**Organization logged in to**|**Forms user type**|
+|:-----|:-----|:-----|:-----|:-----|
+|Co-authoring activities|Internal|UPN|Form owner's org|Co-author|
+|Co-authoring activities|External|UPN<br>|Co-author's org<br>|Co-author|
+|Co-authoring activities|External|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(The second part of the Id is a hash, which will differ for different users)|Form owner's org<br>|Co-author|
+|Response activities|External|UPN<br>|Responder's org<br>|Responder|
+|Response activities|External|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(The second part of the User Id is a hash, which will differ for different users)|Form owner's org|Responder|
+|Response activities|Anonymous|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(The second part of the User Id is a hash, which will differ for different users)|Form owner's org|Responder|
+||||
+
+### Sensitivity label activities
 
 The following table lists events that result from labeling activities for SharePoint Online and Teams sites.
 
