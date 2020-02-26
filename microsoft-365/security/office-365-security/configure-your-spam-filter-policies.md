@@ -40,7 +40,7 @@ You can configure spam filter policies in the Office 365 Security & Compliance C
 
 Creating a custom spam filter policy in the Security & Compliance Center creates the spam filter rule and the associated spam filter policy at the same time using the same name for both.
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-Spam**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
 
 2. On the **Anti-spam settings** page, click **Create a policy**.
 
@@ -52,40 +52,37 @@ Creating a custom spam filter policy in the Security & Compliance Center creates
 
 4. (Optional) Expand the **Spam and bulk actions** section, and verify or configure the following settings:
 
-   - **Spam**
+   - **Select the action to take for incoming spam and bulk email**: Select or review the action to take on messages based on the following spam filter verdicts:
 
-   - **High confidence spam**
+     - **Spam**
+     - **High confidence spam**
+     - **Phishing email**
+     - **High confidence phishing email**
+     - **Bulk email**
 
-   - **Phishing email**
+     The spam filter verdicts and the available actions for messages are described in the following table.
 
-   - **High confidence phishing email**
+     - A check mark ( ![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) indicates the action is available (not all actions are available for all spam filter verdicts).
+     - An asterisk ( <sup>\*</sup> ) after the check mark indicates the default action for the spam filter verdict.
+     - For details about suggested values, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
-   - **Bulk email**
-
-     - **Move message to Junk Email folder**: Delivers the message to the Junk Email folder of the specified recipients. This is the default action for **Spam**, **High confidence spam**, and **Bulk email**.
-
-       > [!NOTE]
-       > In hybrid deployments where EOP protects on-premises mailboxes, you need to configure two Exchange mail flow rules (also known as transport rules) in your on-premises Exchange organization so that the on-premises Exchange organization can detect the spam headers that are added to messages by EOP. For details, see how to [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
-
-     - **Add X-header**: Delivers the message to the specified recipients, but adds the specified X-header field (not the value) to the message header. You can use this header field in Inbox rules or mail flow rules to filter or route the message as necessary. You enter the X-header field name in the **Add this X-header text** box.
-
-       An X-header is a user-defined, unofficial header field that exists in the message header. X-headers aren't specifically mentioned in RFC 2822, but the use of an undefined header field starting with `X-` has become an accepted way to add unofficial header fields to a message.
-
-     - **Prepend subject line with text**: Delivers the message to the Junk Email folder of the specified recipients *and* prepends the subject line with the text that you specify in the **Prefix subject line with this text** box. You can use this indicator text in Inbox rules or mail flow rules to filter or route the message as necessary.
-
-     - **Redirect message to email address**: Sends the message to a specified email address instead of the intended recipients. You specify the email address in the **Redirect to this email address** box.
-
-     - **Delete message**: Silently deletes the entire message, including all attachments.
-
-     - **Quarantine message**: Sends the message to quarantine instead of the intended recipients. This is the default action for **Phishing email** and **High confidence phishing email**. Use the **Quarantine** box to specify how long the message should be kept in quarantine.
-
-     - **No action**: This action is only available on **Bulk email**.
+    ||Spam|High<br/>confidence<br/>spam|Phishing<br/>email|High<br/>confidence<br/>phishing<br/>email|Bulk<br/>email|
+    |:---|:---:|:---:|:---:|:---:|:---:|
+    |**Move message to Junk Email folder**: Delivers the message to the Junk Email folder of the specified recipients. <br/><br/> **Note**: <br/> In hybrid deployments where EOP protects on-premises mailboxes, you need to configure two Exchange mail flow rules (also known as transport rules) in your on-premises Exchange organization to detect the EOP spam filter headers that are added to messages. For details, see [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+    |**Add X-header**: Delivers the message to the specified recipients, but adds the specified X-header field (not the value) to the message header. <br/><br/> An X-header is a user-defined, unofficial header field that exists in the message header. <br/><br/> You can use this header field as a condition in Inbox rules or mail flow rules to filter or route the message. You enter the X-header field name in the **Add this X-header text** box.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+    |**Prepend subject line with text**: Delivers the message to the Junk Email folder of the specified recipients *and* prepends the subject line with the text that you specify in the **Prefix subject line with this text** box. <br/><br/> You can use this indicator text in Inbox rules or mail flow rules to filter or route the message as necessary.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+    |**Redirect message to email address**: Sends the message to a specified email address instead of the intended recipients. <br/><br/> You specify the email address in the **Redirect to this email address** box.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+    |**Delete message**: Silently deletes the entire message, including all attachments.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+    |**Quarantine message**: Sends the message to quarantine instead of the intended recipients. <br/><br/> You specify how long the message should be held in quarantine in the **Quarantine** box.|||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+    |**Prepend subject line with text**: Delivers the mess|||
+    |**No action**|||||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+    |||||||
 
    - **Select the threshold**: Specifies the threshold that identifies bulk as spam based on the Bulk Complaint Level (BCL) value of the message. The default value is 7. For more information see [Bulk Complaint Level values](bulk-complaint-level-values.md). This value is meaningful for all **Bulk email** actions except **No action**.
 
-   - **Quarantine**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as an action. After the time period expires, the message is deleted. The default value is 30 days. A valid value is from 1 to 30 days.
+   - **Quarantine**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filter verdict. After the time period expires, the message is deleted. The default value is 30 days. A valid value is from 1 to 30 days.
 
-   - **Add this X-header text**: This box is required and available only if you selected **Add X-header** as the action for **Spam**, **High confidence spam**, **Phishing email**, or **Bulk email** identifications. The value you specify is the header field *name* that's added to the message header. The header field *value* is always `This message appears to be spam`.
+   - **Add this X-header text**: This box is required and available only if you selected **Add X-header** as the action for a spam filter verdict. The value you specify is the header field *name* that's added to the message header. The header field *value* is always `This message appears to be spam`.
 
      A valid value is text without spaces. For example, the value `This-is-my-custom-header` adds the following header field and value to the message: `This-is-my-custom-header: This message appears to be spam.`.
 
@@ -97,15 +94,15 @@ Creating a custom spam filter policy in the Security & Compliance Center creates
 
      Note that messages that contain this X-header might be still delivered to the Junk Mail folder based on the user's junk configuration on their own mailbox. For more information, see [Troubleshooting: A message is delivered to the Junk email folder after passing anti-spam filtering](prevent-email-from-being-marked-as-spam.md#troubleshooting-a-message-is-delivered-to-the-junk-email-folder-after-passing-anti-spam-filtering).
 
-   - **Prepend subject line with this text**: This box is required and available only if you selected **Prepend subject line with text** as the action for **Spam**, **High confidence spam**, **Phishing email**, or **Bulk email** identifications. Enter the text to add to the beginning of the **Subject** field in the message.
+   - **Prepend subject line with this text**: This box is required and available only if you selected **Prepend subject line with text** as the action for a spam filter verdict. Enter the text to add to the beginning of the **Subject** field in the message.
 
-   - **Redirect to this email address**: This box is required and available only if you selected the **Redirect message to email address** as the action for any identification. Enter the email address where you want to deliver the message.
+   - **Redirect to this email address**: This box is required and available only if you selected the **Redirect message to email address** as the action for a spam filter verdict. Enter the email address where you want to deliver the message.
 
    - **Safety Tips**
 
-   - **Spam ZAP**
+   - **Spam ZAP**: Zero-hour auto purge (ZAP) is able to tack action on messages that have already been delivered to an Exchange Online mailbox. By default, ZAP is enabled for spam detections, but you can disable it by clearing the **On** checkbox. For more information about ZAP, see [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md).
 
-   - **Phish ZAP**
+   - **Phish ZAP**: By default, ZAP is enabled for phish detections, but you can disable it by clearing the **On** checkbox.
 
 5. (Optional) Expand the **Allow lists** section to configure message senders by email address or email domain that are allowed to skip spam filtering:
 
