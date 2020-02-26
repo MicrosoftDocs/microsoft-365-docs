@@ -79,7 +79,7 @@ For help with Office 365 ProPlus, see [Troubleshooting tips for Office 365 ProPl
 
 ### Exchange Online requirements
 
-Microsoft Exchange stores the add-in manifests within your organization's tenant. The admin deploying add-ins and the users receiving those add-ins must be on a version of Exchange Online that supports OAuth authentication. By default, Exchange Multi-Tenant and Dedicated VNext deployments support OAuth. 
+Microsoft Exchange stores the add-in manifests within your organization's tenant. The admin deploying add-ins and the users receiving those add-ins must be on a version of Exchange Online that supports OAuth authentication.
   
 Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351) PowerShell cmdlet. 
 
