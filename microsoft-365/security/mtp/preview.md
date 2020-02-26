@@ -42,6 +42,8 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 2. Select **Turn on preview features**. 
 
+3. Select **Save**.
+
 
 ## Preview features
 This section will be updates with a list of features that are in preview as they become available for you to try. 
