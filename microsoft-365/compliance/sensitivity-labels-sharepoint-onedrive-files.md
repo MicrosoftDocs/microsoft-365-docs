@@ -25,7 +25,7 @@ Before this preview, when you applied sensitivity labels that included encryptio
 
 - SharePoint recognizes sensitivity labels applied to Word, Excel, and PowerPoint files in SharePoint and OneDrive: While the file is stored in SharePoint, the encryption from Azure Information Protection is removed so that the file contents can be processed, and then the encryption settings from the label are reapplied when the file is downloaded. For information about how documents are protected before they are downloaded, see [Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md).
  
-- For SharePoint to decrypt the file on upload, the user who uploads the file must have usage rights to at least view the file. SharePoint doesn't decrypt files that the user can't open outside SharePoint.
+- For SharePoint to decrypt the file on upload, the user who uploads the labeled and encrypted file must have usage rights to at least view the file. SharePoint doesn't decrypt files that the user can't open outside SharePoint.
 
 - When you download the file from SharePoint or OneDrive, the sensitivity label and any encryption settings are reapplied with the file, and these settings remain enforced wherever the file is saved.
 
