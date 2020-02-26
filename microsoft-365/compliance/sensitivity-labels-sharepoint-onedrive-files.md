@@ -27,7 +27,7 @@ Before this preview, when you applied sensitivity labels that included encryptio
  
 - For SharePoint to decrypt the file on upload, the user who uploads the file must have usage rights to at least view the file. SharePoint doesn't decrypt files that the user can't open outside SharePoint.
 
-- When you download the file from SharePoint or OneDrive, the sensitivity label and any encryption is reapplied  with the file and the settings remain enforced wherever the file is saved.
+- When you download the file from SharePoint or OneDrive, the sensitivity label and any encryption settings are reapplied with the file, and these settings remain enforced wherever the file is saved.
 
 - Use Office on the web (Word, Excel, PowerPoint) to open and edit Office files that have sensitivity labels that apply encryption. The permissions that were assigned with the encryption are enforced. With Word on the web, you can also use auto labeling when you edit these documents.
 
