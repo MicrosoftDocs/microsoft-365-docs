@@ -25,7 +25,7 @@ Find instructions for purchasing and licensing more Microsoft 365 business apps 
 
 Test one or more apps in your own tenant before you deploy apps to the entire organization.  
   
-1. In the admin center, select **Integrated apps**. 
+1. In the admin center, in the left nav, choose **Settings**, and then **Integrated apps**. 
     
 2. Choose **Edit** to select which apps you’ll test in your own tenant. 
     
