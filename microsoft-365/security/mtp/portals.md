@@ -39,7 +39,7 @@ Security operators and admins can go to the following portals to manage security
 
 ## Portals for other workloads
 
-While these portals are not specifically for managing security, they support various workloads and tasks that can impact your security. Visit these portals to identities, permissions, device settings, and data handling policies.
+While these portals are not specifically for managing security, they support various workloads and tasks that can impact your security. Visit these portals to manage identities, permissions, device settings, and data handling policies.
 <p></p>
 
 | Portal name | Description | Link | 
