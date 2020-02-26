@@ -44,7 +44,7 @@ In addition, the device must also:
 
 - Have an image approved by Microsoft Managed Desktop. When you order devices, make sure you specify that they are being used with Microsoft Managed Desktop.
 - Not have completed the Windows first-run experience.
-- Be registered with Microsoft Managed Destkop using the [Device Registration](https://aka.ms/mmddrhelp) feature
+- Be registered with Microsoft Managed Desktop using the [Device Registration](https://aka.ms/mmddrhelp) feature
 
 #### Additional help
 
