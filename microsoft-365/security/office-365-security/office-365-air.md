@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: "Get started using automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
+ms.custom: air
 ---
 
 # Automated investigation and response (AIR) in Office 365
@@ -23,7 +24,7 @@ description: "Get started using automated investigation and response capabilitie
 
 ## The overall flow of AIR
 
-At a high level, the AIR flow works like this:
+An alert is triggered, and a security playbook initiates, which starts an automated investigation. Or, a security analyst triggers an automated investigation while using Threat Explorer. The automated investigation runs, and typically, certain remediation actions are identified. Those actions are reviewed and approved by your security operations team, and the investigation completes. 
 
 |Step  |What happens  |
 |---------|---------|
