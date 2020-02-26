@@ -1,6 +1,6 @@
 ---
-title: Portals used to manage Microsoft 365 security
-description: Find the right Microsoft security administrative portal or center for managing Microsoft 365 security
+title: Microsoft security portals and admin centers
+description: Find the right Microsoft admin center or portal for managing various services related to Microsoft 365 security
 keywords: security, portals, Microsoft 365, M365, security center, admin center, URL, link, MTP, Azure ATP, Office 365 ATP, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, OATP, AATP
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -16,8 +16,11 @@ ms.topic: article
 search.appverid: met150
 ---
 
-# Microsoft 365 security portals
+# Microsoft security portals and admin centers
 While [Microsoft 365 security center](overview-security-center.md) is the new home for monitoring and managing security across your identities, data, devices, apps, you will need to access various portals for certain specialized tasks.
+
+> [!TIP] 
+> To access various relevant portals from Microsoft 365 security center, select **More resources** in the navigation pane.
 
 ## Security portals
 
@@ -46,6 +49,3 @@ While these portals are not specifically for managing security, they support var
 | Microsoft 365 admin center | Configure Microsoft 365 services; manage roles, licenses, and track updates to your Microsoft 365 services | [admin.microsoft.com](https://admin.microsoft.com/) |
 | Microsoft Endpoint Manager admin center | Use [Microsoft Endpoint Manager](https://docs.microsoft.com/configmgr/) to manage and secure devices using combined Intune and Configuration Manager capabilities | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
 | Microsoft Intune portal | Use [Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune) to deploy device policies and monitor devices for compliance | [portal.azure.com/#blade/Microsoft_Intune_DeviceSettings](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)
-
-> [!TIP] 
-> To access various relevant portals from the Microsoft 365 security center, select **More resources** from the navigation pane.
