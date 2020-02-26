@@ -1973,7 +1973,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ### Format
 
-16 digits which can be formatted or unformatted (dddddddddddddddd) and must pass the Luhn test.
+14 to 16 digits which can be formatted or unformatted (dddddddddddddddd) and must pass the Luhn test.
 
 ### Pattern
 
