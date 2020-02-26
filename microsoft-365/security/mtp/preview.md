@@ -24,7 +24,7 @@ search.appverid:
 # Microsoft Threat Protection preview features
 
 **Applies to:**
-- Microsoft Defender Threat Protection
+- Microsoft Threat Protection
 
 
 The Microsoft Defender Threat Protection service is constantly being updated to include new feature enhancements and capabilities.
