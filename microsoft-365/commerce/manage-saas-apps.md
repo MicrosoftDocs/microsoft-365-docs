@@ -17,7 +17,7 @@ ms.date: 05/31/2019
 
 # Manage third-party app subscriptions for your organization
 
-You can manage licenses and billing for third-party apps in Microsoft 365 admin center with preview mode turned on. Updated features include enhanced subscription management, improved access to billing information, and improved flexibility for managing bills. Subscription management is based on Microsoft’s updated commerce platform. This applies to software-as-a-service apps that customers purchase directly, or from third-party provider.
+You can manage licenses and billing for third-party apps in new Microsoft 365 admin center. Updated features include enhanced subscription management, improved access to billing information, and improved flexibility for managing bills. Subscription management is based on Microsoft’s updated commerce platform. This applies to software-as-a-service apps that customers purchase directly, or from third-party provider.
 
 ## How to get software-as-a-service apps
 There are a few ways to purchase third-party apps.
@@ -50,7 +50,8 @@ Support for third-party apps is available in these regions:
 Admins need to activate third-party apps before assigning them to users. These apps are activated in the third-party publisher’s portal. 
 
 **To activate third-party apps**
-1. Go to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), and turn on **Try the preview**.
+1. Go to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), and make sure that **Try the new admin center 
+ ** toggle is turned on.
 2. Select **Billing** > **Products & services** > **Apps**.
 3. Find and select the app you want to manage. 
 4. Under **Settings & actions**, select **Manage in publisher's portal**. 
@@ -73,7 +74,8 @@ Admins need to activate third-party apps before assigning them to users. They're
 
 **To assign third-party apps**
 
-1. Go to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), and turn on **Try the preview**.
+1. Go to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), and make sure that **Try the new admin center 
+ ** toggle is turned on.
 2. Select **Billing** > **Products & services** > **Apps**.
 3. Find and select the app you want to manage. 
 4. Under **Settings & actions**, select the link to **Manage in publisher’s portal**. 
@@ -83,7 +85,8 @@ Admins can change the number of licenses owned by their organization. This only 
 
 **To change license quantity**
 
-1. Go to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), and turn on **Try the preview**.
+1. Go to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), and make sure that **Try the new admin center 
+ ** toggle is turned on.
 2. Select **Billing** > **Products & services** > **Apps**.
 3. Find and select the app you want to manage. 
 4. Select **Change license quantity**. 
@@ -99,7 +102,8 @@ For more information on billing profiles, see [Understand billing profiles](http
 
 **To change the billing profile on a software-as-a-service app subscription**
 
-1. Go to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), and turn on **Try the preview**.
+1. Go to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), and make sure that **Try the new admin center 
+ ** toggle is turned on.
 2. Select **Billing** > **Products & services** > **Apps**.
 3. Find and select the app you want to manage. 
 4. Next to **Billing profile**, select **Edit**.
@@ -111,7 +115,8 @@ Customers can cancel software-as-a-service app from the app page.
 
 **To cancel software-as-a-service app subscription**
 
-1. Go to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), and turn on **Try the preview**.
+1. Go to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), and make sure that **Try the new admin center 
+ ** toggle is turned on.
 2. Select **Billing** > **Products & services** > **Apps**.
 3. Find and select the app you want to manage. 
 4. Under **Settings & actions**, select **Cancel subscription**.
