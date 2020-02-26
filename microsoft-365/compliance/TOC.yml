@@ -720,7 +720,6 @@
     - name: Mailbox auditing
       href: enable-mailbox-auditing.md
     - name: Advanced Audit
-      href: advanced-audit.md
       items:
         - name: Overview of Advanced Audit
           href: advanced-audit.md
