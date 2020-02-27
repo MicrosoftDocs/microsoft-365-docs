@@ -265,7 +265,7 @@ This label is available only in Outlook and Outlook on the web and you must use 
 
 Your users type the Gmail email address in the **To** box.  Then, they select the label and the Do Not Forward option is automatically added to the email. The result is that recipients cannot forward the email, or print it, copy from it, or save the email outside their mailbox by using the **Save As** option. 
 
-1. On the **Encryption** page, for **Assign permissions now or let users decide?**, select **Let users assign permissions when they apply the label**.
+1. On the **Encryption** page: For **Assign permissions now or let users decide?**, select **Let users assign permissions when they apply the label**.
 
 3. Select the checkbox: **In Outlook, enforce restrictions equivalent to the Do Not Forward option**.
 
