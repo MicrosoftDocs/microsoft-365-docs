@@ -21,7 +21,9 @@ description: "Learn about remediation actions in automated investigation and res
 
 ## Remediation actions
 
-[Automated investigation and response capabilities](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) in Office 365 Advanced Threat Protection include certain remediation actions. Whenever an automated investigation is running or has completed, you'll typically see one or more remediation actions that require approval by your security operations team to proceed. The following table summarizes remediation actions currently available in Office 365 Advanced Threat Protection. 
+[Automated investigation and response capabilities](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) in Office 365 Advanced Threat Protection include certain remediation actions. Whenever an automated investigation is running or has completed, you'll typically see one or more remediation actions that require approval by your security operations team to proceed. 
+
+The following table summarizes remediation actions currently available in [Office 365 Advanced Threat Protection](office-365-atp.md). 
 
 |Action | Description |
 |-----|-----|
