@@ -65,7 +65,7 @@
       items: 
         - name: Learn about privileged access management
           href: privileged-access-management-overview.md
-        - name: Configure privileged access management
+        - name: Get started with privileged access management
           href: privileged-access-management-configuration.md
     - name: Protect user and device access
       href: protect-access-to-data-and-services.md
