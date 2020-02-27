@@ -250,6 +250,131 @@ For built-in labeling, users see the same dialog box if they select the followin
 - MacOS: **Review** tab > **Protection** > **Permissions** > **Restricted Access**
 
 
+## Example configurations
+
+For each example that follows, do the configuration from the Encryption page of the sensitivity label wizard.
+
+### Example 1: Label that applies Do Not Forward to send an encrypted email to a Gmail account
+
+This label is available only in Outlook and Outlook on the web, and is suitable when Exchange Online is configured for the [new capabilities in Office 365 Message Encryption](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). Instruct users to select this label when they need to send a protected email to people using a Gmail account (or any other email account outside your organization). 
+
+Your users type the Gmail email address in the **To** box.  Then, they select the label and the Do Not Forward option is automatically added to the email. The result is that recipients cannot forward the email, or print it, copy from it, or save attachments, or save the email as a different name. 
+
+1. Select **Set user-defined permissions**.
+
+3. Make sure that the following option is selected: **In Outlook apply Do Not Forward**.
+
+4. If selected, clear the following option: **In Word, Excel, PowerPoint and File Explorer prompt user for custom permissions**.
+
+5. Click **Next** and complete the wizard.
+
+
+### Example 2: Label that restricts read-only permission to all users in another organization
+
+This label is suitable for sharing (read-only) very sensitive documents that always require an internet connection to view it. If needed, you can remove the domain name and recipients will not be able to view the document the next time they try to open it.
+
+This label is not suitable for emails.
+
+1. Make sure that the **Set permissions** option is selected, and then select **Add permissions**.
+
+3. On the **Add permissions** pane, select **Enter details**.
+
+4. Enter the name of a domain from the other organization, for example, **fabrikam.com**. Then select **Add**.
+
+5. From **Choose permissions from preset**, select **Viewer**, and then select **OK**.
+
+6. Back on the **Protection** pane, for **Allow offline access setting**, select **Never**.
+
+7. Click **OK** and complete the wizard.
+
+
+### Example 3: Add external users to an existing label that protects content
+
+The new users that you add will be able open documents and emails that have already been protected with this label. The permissions that you grant these users can be different from the permissions that the existing users have.
+
+1. On the **Protection** pane, make sure **Azure (cloud key)** is selected.
+    
+2. Ensure that **Set permissions** is selected, and then select **Add permissions**.
+
+3. On the **Add permissions** pane, select **Enter details**.
+
+4. Enter the email address of the first user (or group) to add, and then select **Add**.
+
+5. Select the permissions for this user (or group).
+
+6. Repeat steps 4 and 5 for each user (or group) that you want to add to this label. Then click **OK**.
+
+7. Click **OK** on the **Protection** pane, and then click **Save** on the **Label** pane.
+
+### Example 4: Label for protected email that supports less restrictive permissions than Do Not Forward
+
+This label cannot be restricted to Outlook but does provide less restrictive controls than using Do Not Forward. For example, you want the recipients to be able to copy from the email or an attachment, or save and edit an attachment.
+
+If you specify external users who do not have an account in Azure AD:
+
+- The label is suitable for email when Exchange Online is using the [new capabilities in Office 365 Message Encryption](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). 
+ 
+- For Office attachments that are automatically protected, these documents are available to view in a browser. To edit these documents, download and edit them with Office 365 apps (Click-to-Run), and a Microsoft account that uses the same email address. [More information](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+
+
+> [!NOTE]
+> Exchange Online is rolling out a new option, [Encrypt-Only](configure-usage-rights.md#encrypt-only-option-for-emails). This option is not available for label configuration. However, when you know who the recipients will be, you can use this example to configure a label with the same set of usage rights. 
+
+When your users specify the email addresses in the **To** box, the addresses must be for the same users that you specify for this label configuration. Because users can belong to groups and have more than one email address, the email address that they specify does not have to match the email address that you specify for the permissions. However, specifying the same email address is the easiest way to ensure that the recipient will be successfully authorized. For more information about how users are authorized for permissions, see [Preparing users and groups for Azure Information Protection](prepare.md). 
+
+1. On the **Protection** pane, make sure that **Azure (cloud key)** is selected.
+    
+2. Make sure **Set permissions** is selected, and select **Add permissions**.
+
+3. On the **Add permissions** pane: To grant permissions to users in your organization, select **Add \<organization name> - All members** to select all users in your tenant. This setting excludes guest accounts. Or, select **Browse directory** to select a specific group. To grant permissions to external users or if you prefer to type the email address, select **Enter details** and type the email address of the user, or Azure AD group, or a domain name.
+    
+    Repeat this step to specify additional users who should have the same permissions.
+
+4. For **Choose permissions from preset**, select **Co-Owner**, **Co-Author**, **Reviewer**, or **Custom** to select the permissions that you want to grant.
+    
+    Note: Do not select **Viewer** for emails and if you do select **Custom**, make sure that you include **Edit and Save**.
+    
+    To select the same permissions that match the new **Encrypt-Only** option from Exchange Online, select **Custom**. Then select all permissions except **Save As, Export (EXPORT)** and **Full Control (OWNER)**.
+
+5. To specify additional users who should have different permissions, repeat steps 3 and 4.
+
+6. Click **OK** on the **Add permissions** pane.
+
+7. Click **OK** on the **Protection** pane, and then click **Save** on the **Label** pane.
+
+
+### Example 5: Label that encrypts content but doesn't restrict who can access it
+
+This configuration has the advantage that you don't need to specify users, groups, or domains to protect an email or document. The content will still be encrypted and you can still specify usage rights, an expiry date, and offline access. Use this configuration only when you do not need to restrict who can open the protected document or email. [More information about this setting](#more-information-about-add-any-authenticated-users)
+
+1. On the **Protection** pane, make sure **Azure (cloud key)** is selected.
+    
+2. Make sure **Set permissions** is selected, and then select **Add permissions**.
+
+3. On the **Add permissions** pane, on the **Select from the list** tab, select **Add any authenticated users**.
+
+4. Select the permissions you want, and click **OK**.
+
+5. Back on the **Protection** pane, configure settings for **File Content Expiration** and **Allow offline access**, if needed, and then click **OK**.
+
+6. On the **Label** pane, select **Save**.
+
+
+### Example 6: Label that applies "Just for me" protection
+
+This configuration offers the opposite of secure collaboration for documents: With the exception of a [super user](configure-super-users.md), only the person who applies the label can open the protected content, without any restrictions. This configuration is often referred to as "Just for me" protection and is suitable when a user wants to save a file to any location and be assured that only they can open it.
+
+The label configuration is deceptively simple:
+
+1. On the **Protection** pane, make sure **Azure (cloud key)** is selected.
+    
+2. Select **OK** without selecting any users, or configuring any settings on this pane.
+    
+    Although you can configure settings for **File Content Expiration** and **Allow offline access**, when you do not specify users and their permisisons, these access settings are not applicable. That's because the person who applies the protection is the [Rights Management issuer](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner) for the content, and this role is exempt from these access restrictions.
+
+3. On the **Label** pane, select **Save**.
+
+
 ## Considerations for encrypted content
 
 Encrypting your most sensitive documents and emails helps to ensure that only authorized people can access this data. However, there are some considerations to take into account:
