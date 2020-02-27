@@ -1,10 +1,9 @@
 ### YamlMime:Landing
 
-title: Commercial subscriptions and billing documentation # < 60 chars
+title: Business subscriptions and billing documentation # < 60 chars
 summary: Learn how to buy and manage business subscriptions, perform license management tasks, and manage billing and payments for your business accounts with Microsoft. # < 160 chars
-
 metadata:
-  title: Commercial subscriptions and billing documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Business subscriptions and billing documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Documentation for business subscriptions with Microsoft # Required; article description that is displayed in search results. < 160 chars.
   ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice # Optional; Remove if no subservice is used.

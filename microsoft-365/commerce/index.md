@@ -1,5 +1,5 @@
 ---
-title: Manage commercial purchases and billing
+title: Manage business subscriptions
 description: Info on managing purchases and billing for commercial customers. 
 ms.prod: w10
 ms.mktglfcycl: manage
