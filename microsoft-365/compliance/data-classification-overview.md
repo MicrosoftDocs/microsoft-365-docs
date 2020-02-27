@@ -30,6 +30,16 @@ As a Microsoft 365 administrator or compliance administrator, you can evaluate a
 
 You can find data classification in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.
 
+
+## Prerequisites
+
+Every account that accesses and uses activity explorer must have a license assigned to it from one of these subscriptions:
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- Advanced Compliance (E5) add-on
+- Advanced Threat Intelligence (E5) add-on
+
 ## Sensitive information types used most in your content
 
 Microsoft 365 comes with many definitions of sensitive information types, such as an item containing a social security number or a credit card number. For more information on sensitive information types, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
