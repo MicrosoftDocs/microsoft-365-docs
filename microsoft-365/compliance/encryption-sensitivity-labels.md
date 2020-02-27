@@ -280,7 +280,7 @@ This label is suitable for sharing very sensitive documents as read-only, and th
 
 This label is not suitable for emails.
 
-1. On the **Encryption** page, for **Assign permissions now or let users decide?**, select **Assign permissions now**.
+1. On the **Encryption** page: For **Assign permissions now or let users decide?**, select **Assign permissions now**.
 
 3. For **Allow offline access**, select **Never**.
 
@@ -303,7 +303,7 @@ This label is not suitable for emails.
 
 The new users that you add will be able open documents and emails that have already been protected with this label. The permissions that you grant these users can be different from the permissions that the existing users have.
 
-1. On the **Encryption** page, for **Assign permissions now or let users decide?**, make sure **Assign permissions now** is selected.
+1. On the **Encryption** page: For **Assign permissions now or let users decide?**, make sure **Assign permissions now** is selected.
 
 2. Select **Assign permissions**.
 
@@ -326,7 +326,7 @@ This configuration has the advantage that you don't need to specify users, group
 
 Use this configuration only when you do not need to restrict who can open the protected document or email. [More information about this setting](#requirements-and-limitations-for-add-any-authenticated-users)
 
-1. On the **Encryption** page, for **Assign permissions now or let users decide?**, make sure **Assign permissions now** is selected.
+1. On the **Encryption** page: For **Assign permissions now or let users decide?**, make sure **Assign permissions now** is selected.
 
 2. Configure settings for **User access to content expires** and **Allow offline access** as required.
 
