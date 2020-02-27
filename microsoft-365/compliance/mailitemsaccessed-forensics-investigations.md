@@ -24,6 +24,8 @@ A compromised user account (also called an *account takeover*) is a type of atta
 
 To help you with investigating compromise email accounts, we're now auditing accesses of mail data by mail protocols and clients with the *MailItemsAccessed* mailbox auditing action. This new audited action will help investigators better understand email data breaches and help you identify the scope of compromises to specific mail items that may been compromised. The goal of using this new auditing action is forensics defensibility to help assert that a specific piece of mail data was not compromised. If an attacker gained access to a specific piece of mail, Exchange Online audits the event even though there is no indication that the mail item was actually read.
 
+We can remove this note, not particulary useful
+
 > [!NOTE]
 > Access to user mailboxes by eDiscovery searches is audited separately in the Microsoft 365 audit log. eDiscovery won't generate MailItemsAccessed audit records. For more information, see [Search for eDiscovery activities in the Microsoft 365 audit log](search-for-ediscovery-activities-in-the-audit-log.md).
 
@@ -41,7 +43,7 @@ See step 2 in the [Use MailItemsAccessed audit records for forensic investigatio
 
 ### Auditing bind access
 
-A bind operation is an individual access to an email message. For bind access, the internet-message-id of individual messages will be recorded in the audit record. The MailItemsAccessed audit action records bind operations and then aggregates into a single audit record. All bind operations that occur within a 2-minute interval are aggregated in a single audit record. in the Folders field within the AuditData property. Each message that was accessed is identified by its internet-message-id. The number of bind operations that were aggregated in the record is displayed in the OperationCount field in the AuditData property.
+A bind operation is an individual access to an email message. For bind access, the internet-message-id of individual messages will be recorded in the audit record. The MailItemsAccessed audit action records bind operations and then aggregates into a single audit record. All bind operations that occur within a 2-minute interval are aggregated in a single audit record in the Folders field within the AuditData property. Each message that was accessed is identified by its internet-message-id. The number of bind operations that were aggregated in the record is displayed in the OperationCount field in the AuditData property.
 
 See step 4 in the [Use MailItemsAccessed audit records for forensic investigations](#use-mailitemsaccessed-audit-records-for-forensic-investigations) section for an example of displaying the bind access type in an audit record.
 
@@ -63,7 +65,10 @@ See step 1 in the [Use MailItemsAccessed audit records for forensic investigatio
 
 ## Use MailItemsAccessed audit records for forensic investigations
 
-The mainstream scenario for the MailItemsAccessed action is in some ways a paradox: Mailbox auditing generates audit records for access to email messages so that you can be confident that email messages haven't been compromised. For this reason, in circumstances where we're not certain that some data has been accessed, we assume that it has by recording all mail access activity.
+We should rephrase this - 
+The mainstream scenario for the MailItemsAccessed action is in some ways a paradox: Mailbox auditing generates audit records for access to email messages so that you can be confident that email messages haven't been compromised. 
+
+For this reason, in circumstances where we're not certain that some data has been accessed, we assume that it has by recording all mail access activity.
 
 Using MailItemsAccessed audit records for forensics purposes is typically performed after a data breach has been resolved and the attacker has been evicted. To begin your investigation, you should identify the set of mailboxes that they have been compromised and determine the time frame when attacker had access to mailboxes in your organization. Then, you can use the **Search-UnifiedAuditLog** or **Search-MailboxAuditLog** cmdlets in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) to search audit records that correspond to the data breach. 
 
