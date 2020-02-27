@@ -27,7 +27,7 @@ This article describes using the capabilities in the new Data Investigations (Pr
 
 ## Permissions
 
-To access and conduct a data investigation, you need be a member of the Data investigator role group. For more information, see [Assign permissions for Data Investigations](permissions.md).
+To access and conduct a data investigation, you need be a member of the Data investigator role group. For more information, see [Assign permissions for Data Investigations](data-investigations-permissions.md).
 
 ## Data Investigations (Preview) workflow 
 
