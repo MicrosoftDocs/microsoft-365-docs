@@ -100,7 +100,6 @@ For more information on billing profiles, see [Understand billing profiles](http
 **To change the billing profile on a software-as-a-service app subscription**
 
 1. Go to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), and make sure that the **Try the new admin center** toggle is turned on.
- ** toggle is turned on.
 2. Select **Billing** > **Products & services** > **Apps**.
 3. Find and select the app you want to manage. 
 4. Next to **Billing profile**, select **Edit**.
