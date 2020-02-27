@@ -12,24 +12,42 @@ localization_priority: Normal
 ms.collection: 
 search.appverid:
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn to deploy Microsoft 365 and Microsoft partner apps to users and groups in your organization by using Integrated apps in the admin center."
+description: "Acquire, test, and deploy third-party partner apps for Microsoft 365 to users and groups in your organization by using Integrated apps in the Microsoft 365 admin center."
 ---
 
 # Test and deploy Microsoft 365 apps in the Microsoft 365 admin center
 
-You have the flexibility to deploy one or more Microsoft or third-party Microsoft partner apps you’ve purchased and licensed for your organization. By regularly deploying all available Microsoft 365 apps to your entire organization, all business groups receive the benefits and convenience of services that make daily business run efficiently.  
+Microsoft 365 Apps give you the flexibility to deploy third-party partner apps from a single location in the Microsoft 365 admin center. The ability to acquire, test, and deploy purchased and licensed apps for Microsoft 365 from the Integrated apps portal provides the convenience and benefits your organization requires to keeps business services updated and running efficiently.  
 
-Find instructions for purchasing and licensing more Microsoft 365 business apps <Blog link here>
+For additional information about purchasing and licensing apps for your organization, see the blog post called [Manage and deploy Microsoft 365 Apps from the Microsoft 365 admin center](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
   
-## Test purchased and licensed apps on your own tenant 
+## Manage Microsoft 365 apps in the admin center 
+
+By choosing Integrated apps in the Microsoft 365 admin center, you can manage and deploy all of your organization's purchased and licensed apps directly from the list of apps in the portal.
+
+1. In the admin center, in the left nav, choose **Settings**, and then choose **Integrated apps**. 
+
+2. Select an app with **Status** of **More apps available**.
+
+3. Choose **Deploy** next to the message at the top of the page that refers to waiting to be deployed.
+
+4. Review the app you’ve selected, and then select **Deploy**. 
+
+5. Choose **Accept Permissions** for the app(s) you want to deploy, and then select **Deploy**.
+
+6. Choose **Accept** to give permission for the app to access all of the Microsoft 365 resources in the list.
+
+7. Review the permissions you accepted, and then select **Deploy**.  
+
+Review the details for your deployment on the confirmation page.  ## Test purchased and licensed apps on your own tenant 
 
 Test one or more apps in your own tenant before you deploy apps to the entire organization.  
   
-1. In the admin center, in the left nav, choose **Settings**, and then **Integrated apps**. 
+1. In the admin center, in the left nav, choose **Settings**, and then choose **Integrated apps**. 
     
-2. Choose **Edit** to select which apps you’ll test in your own tenant. 
+2. Select the name of the app you want to test in your own tenant. 
     
-3. Select **Test deployment**, and then choose **Next**.
+3. Choose the **Users** tab, choose **Test deployment**, and then select **Update**.
 
 4. Read and choose **Accept Permissions**.
 
@@ -39,7 +57,7 @@ Test one or more apps in your own tenant before you deploy apps to the entire or
 
 7.	Review the **Test deployment initiated successfully** confirmation page, and then select **Done**.
 
-In the Microsoft 365 admin center, each deployed app **Status** is **OK** with **Deployment Type** of **Test deployment** and the date you deployed the app.   
+In the Microsoft 365 admin center, each deployed app **Status** is **OK** with **Deployment Type** of **Test deployment** and a **Last modified** date.   
  
 ## Deploy purchased and licensed apps to your organization 
   
@@ -66,27 +84,5 @@ Specific users/groups can be a Microsoft 365 group, a security group, or a distr
 10. Review the **Full deployment initiated successfully** confirmation page, and then select **Done**. 
 
 In the Microsoft 365 admin center, each deployed app **Status** is **OK** with **Deployment Type** of **Test deployment** and the date you deployed the app. 
-
-## Manage Microsoft 365 apps in the admin center 
-
-After app developers complete custom integrations of purchased and licensed apps for your specific installation of Microsoft 365, you can manage deployment of those apps in the admin center.
-
-1. In the admin center, select **Integrated apps** to see a list of the available deployed apps for your organization.
-
-2. Choose an app with **Status** of **More apps available**.
-
-3. Choose **Deploy** next to the message at the top of the page that refers to waiting to be deployed.
-
-4. Review the app you’ve selected, and then select **Deploy**. 
-
-5. Choose **Accept Permissions** for the app(s) you want to deploy, and then select **Deploy**.
-
-6. Choose **Accept** to give permission for the app to access all of the Microsoft 365 resources in the list.
-
-7. Review the permissions you accepted, and then select **Deploy**.  
-
-Review the details for your deployment on the confirmation page.  
-
-
   
   
