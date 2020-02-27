@@ -50,16 +50,16 @@ landingContent:
             url: licenses/remove-licenses-from-subscription.md
 
   # Card
-  - title: Renew or cancel
+  - title: Upgrade, renew, or cancel
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Upgrade to a different plan 
+            url: subscriptions/upgrade-to-different-plan.md
           - text: Renew your subscription
             url: subscriptions/renew-your-subscription.md
           - text: Cancel your subscription
             url: subscriptions/cancel-your-subscription.md
-          - text: What happens if I cancel?
-            url: subscriptions/what-happens-if-i-cancel.md
           - text: Reactivate your subscription
             url: subscriptions/reactivate-your-subscription.md
           - text: Close your account
