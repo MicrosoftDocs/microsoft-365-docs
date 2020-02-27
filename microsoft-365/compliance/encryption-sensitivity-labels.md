@@ -150,7 +150,10 @@ When you assign permissions, you can choose:
 - Everyone in your organization (all tenant members). This setting excludes guest accounts.
 - Any authenticated users. Make sure you understand the [requirements and limitations](#requirements-and-limitations-for-add-any-authenticated-users) of this setting before selecting it.
 - Any specific user or email-enabled security group, distribution group, Office 365 group, or dynamic distribution group. 
-- Any email address or domain outside your organization, such as gmail.com, hotmail.com, or outlook.com. 
+- Any email address or domain. Use this option to specify all users in another organization who uses Azure AD, by entering any domain name from that organization. You can also use this option for social providers, by entering their domain name such as **gmail.com**, **hotmail.com**, or **outlook.com**.
+
+> [!NOTE]
+> If you specify a domain from an organization that uses Azure AD, you can't restrict access to that specific domain. Instead, all verified domains in Azure AD are automatically included for the tenant that owns the domain name you specify.
 
 When you choose all tenant members or browse the directory, the users or groups must have an email address.
 
@@ -273,7 +276,7 @@ Your users type the Gmail email address in the **To** box.  Then, they select th
 
 ### Example 2: Label that restricts read-only permission to all users in another organization
 
-This label is suitable for sharing as read-only, very sensitive documents that always require an internet connection to view it. If you need to stop access to the documents, you can remove the domain name and recipients will not be able to view the document the next time they try to open it.
+This label is suitable for sharing very sensitive documents as read-only, and the documents always require an internet connection to view them.
 
 This label is not suitable for emails.
 
