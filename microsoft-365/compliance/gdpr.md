@@ -51,15 +51,11 @@ The following tasks are involved to meet GDPR standards. Follow the links in the
 
 As mentioned above, the Recommended action plan for GDPR and Accountability Readiness Checklists provide a guide to implementing or assessing GDPR conformance using Microsoft products and services.
 
-## The GDPR in action
-
-This section provides an outline and thinking points on completing the GDPR tasks mentioned above. Completing these tasks may vary depending on your Microsoft configuration.
-
-### Data Subject Request (DSR)
+## Data Subject Request (DSR)
 
 The GDPR grants individuals (or data subjects) certain rights in connection with the processing of their personal data, including the right to correct inaccurate data, erase data or restrict its processing, receive their data and fulfill a request to transmit their data to another controller. The controller is responsible for providing a timely, GDPR consistent reply. For technical details, refer to [Data Subject Requests](gdpr-data-subject-requests.md).  
 
-#### DSR FAQs
+### DSR FAQs
 
 **What actions will be required to complete a DSR?**
 
@@ -100,11 +96,11 @@ You can find a series of GDPR-related articles here. Produced by Microsoft, they
 
 Online Services offers a host of capabilities to enable you, as a controller, to respond to a data subject’s request. Microsoft enterprise online services and administrative controls help you act on personal data responsive to data subject rights requests, allowing you to discover, access, rectify, restrict, delete, and export personal data that resides in the controller-managed data stored in Microsoft’s cloud. Online Services also provides data in machine-readable form should you need it.
 
-### Data Protection Impact Assessment
+## Data Protection Impact Assessment
 
 Under GDPR, data controllers are required to prepare a [Data Protection Impact Assessment](gdpr-data-protection-impact-assessments.md) (DPIA) for processing operations that are 'likely to result in a high risk to the rights and freedoms of natural persons.' There is nothing inherent in Microsoft products and services that need the creation of a DPIA. Rather, it depends on the details of your Microsoft configuration. A list of details that must be considered in Office can be found in [Contents of DPIA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365#part-2--contents-of-a-dpia)
 
-#### DPIA FAQs
+### DPIA FAQs
 
 **When should you conduct a DPIA?**
 
@@ -137,11 +133,11 @@ These privacy reviews tend to be granular — a particular service may receive d
 
 Microsoft, as a processor, has a duty to assist controllers in ensuring compliance with the DPIA requirements laid out in the GDPR. To support our customers, relevant sections of Microsoft’s DPIAs are abstracted and will be provided through this section in future updates with the intent of allowing controllers relying on Microsoft services to leverage the abstracts in order to create their own DPIAs.
 
-### Breach Notification
+## Breach Notification
 
 The GDPR mandates notification requirements for data controllers and processors for a breach of personal data. As a data processor, Microsoft ensures that customers are able to meet the GDPR’s breach notification requirements. Data controllers are responsible for assessing risks to data privacy and determining whether a breach requires notification of a customer’s DPA. Microsoft provides the information needed to make that assessment. More information about how Microsoft detects and responds to a breach of personal data in [Data Breach Notification Under the GDPR](gdpr-breach-notification.md).
 
-#### Breach notification FAQs
+### Breach notification FAQs
 
 **What constitutes a breach of personal data under the GDPR?**
 
@@ -173,7 +169,7 @@ To support you for a breach of personal data Microsoft has:
 
 Microsoft has policies and procedures in place to notify you promptly. To satisfy your notice requirements to the DPA, we will provide a description of the process we used to determine if a breach of personal data has occurred, a description of the nature of the breach and a description of the measures we took to mitigate the breach.
 
-### Accountability Readiness Checklists for the GDPR
+## Accountability Readiness Checklists for the GDPR
 
 These [checklists](gdpr-arc.md) provide a convenient way to access information you may need to support the GDPR using Microsoft products. You can manage checklist items with [Microsoft Compliance Score](compliance-score.md) by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile.
 
