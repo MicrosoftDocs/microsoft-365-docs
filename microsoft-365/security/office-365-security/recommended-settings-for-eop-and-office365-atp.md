@@ -57,8 +57,8 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 |MarkAsSpamBulkMail|On|On|This setting is only available in PowerShell|
 
 There are several other parameters in the Anti-spam policy called Advanced Spam filter (ASF) that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this topic.
- 
- We recommend that you turn these settings **OFF** for both Standard and Strict levels:
+
+We recommend that you turn these settings **OFF** for both Standard and Strict levels:
 
 |Security feature name|Comments|
 |---------|---------|
