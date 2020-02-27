@@ -299,7 +299,7 @@ This label is not suitable for emails.
 7. On the **Encryption** page, select **Next** and complete the wizard.
 
 
-### Example 3: Add external users to an existing label that protects content
+### Example 3: Add external users to an existing label that encrypts content
 
 The new users that you add will be able open documents and emails that have already been protected with this label. The permissions that you grant these users can be different from the permissions that the existing users have.
 
