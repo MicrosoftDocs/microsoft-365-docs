@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ---
 
-# Manage commercial purchases in Microsoft 365 admin center
+# Manage business subscriptions in Microsoft 365 admin center
 
 ## In this section
 
