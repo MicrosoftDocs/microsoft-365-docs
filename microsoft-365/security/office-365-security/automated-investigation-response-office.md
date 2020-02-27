@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: "Get an overview of automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
+ms.custom: air
 ---
 
 # Automated investigation and response (AIR) in Office 365
 
 As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Sometimes, security operations teams can feel overwhelmed by the volume of alerts that are triggered. Automated investigation and response (AIR) capabilities in Office 365 can help. AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond to detected threats. 
 
-This article provides an overview of AIR and its components. When you're ready to get started using AIR, see [Automatically investigate and respond to threats in Office 365](office-365-air.md).
+This article provides an overview of AIR. When you're ready to get started using AIR, see [Automatically investigate and respond to threats in Office 365](office-365-air.md).
 
 ## At a high level
 
