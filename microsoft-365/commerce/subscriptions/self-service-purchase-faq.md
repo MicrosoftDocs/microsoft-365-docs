@@ -146,4 +146,4 @@ Partners who have delegated administration privileges can see self-service purch
 
 ### In which countries can I make a self-service purchase?
 
-Self-service purchases are available in the following countries: Australia, Canada, France, Germany, Japan, the United Kingdom, and the United States.
+Self-service purchases are available in the following countries: Australia, Austria, Belgium, Bulgaria, Canada, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Japan, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, Switzerland, United Kingdom, and United States.

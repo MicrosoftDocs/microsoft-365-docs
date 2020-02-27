@@ -1,5 +1,5 @@
 ---
-title: Insider risk management content explorer (preview)
+title: Insider risk management content explorer
 description: Learn about insider risk management content explorer in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Insider risk management content explorer (preview)
+# Insider risk management content explorer
 
 The insider risk management content explorer allows risk analysts and investigators to examine the context and details of communications captured in alerts. For all alerts, copies of data and message files are archived as a snapshot in time of the items, while maintaining the original files and messages in the storage sources. The copying of data and messages is transparent to the employee associated with the alert and to the owner of the content. The permission settings and access rights for the data are maintained for the copied content and messages and risk analysts and investigators need these permissions and rights if they need to open and view the files. Each file and message is automatically assigned a unique file ID in the insider risk management case for management purposes.
 

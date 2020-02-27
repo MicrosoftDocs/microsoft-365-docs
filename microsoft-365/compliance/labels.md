@@ -313,13 +313,15 @@ Examples queries:
 
 ### Auto-apply labels to content by using trainable classifers
 
-When you choose the option for a trainable classifier, you can select one of the built-in classifiers, or a custom classifier. The built-in classifers include **Offensive Language**, **Resumes**, **SourceCode**, **Harassment**, **Profanity**, and **Threat**.
+When you choose the option for a trainable classifier, you can select one of the built-in classifiers, or a custom classifier. The built-in classifers include **Offensive Language**, **Resumes**, **SourceCode**, **Targeted Harassment**, **Profanity**, and **Threat**:
+
+![Choose trainable classifer](../media/retention-label-classifers.png)
 
 To automatically apply a label by using this option, SharePoint Online sites and mailboxes must have at least 10 MB of data.
 
 For more information about trainable classifers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
 
-For an example configuration, see [How to prepare for and use a ready to use classifier](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-ready-to-use-classifier).
+For an example configuration, see [How to prepare for and use a built-in classifier](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-built-in-classifier).
 
 ## Applying a default retention label to all content in a SharePoint library, folder, or document set
 
@@ -337,7 +339,7 @@ If you apply a default retention label to existing items in the library, folder,
     
 - If you change or remove the default retention label for a library, folder, or document set, the retention label is also changed or removed for all items in the library, folder, or document set, **except** items with explicit retention labels (such as records).
     
-- If you move an item with a default retention label from one library, folder, or document set to another library, folder, or document set, the item keeps its existing default retention label, even if the new location has a different default retention label.
+- If you move an item with a default retention label from one site collection, library, folder, or document set to another site collection, library, folder, or document set that has a different label, the item keeps its existing default retention label, even if the new location has a different default retention label. If the item does not have a label before moving, it will take on the default retention label of the new location.
 
 **Records:** If you apply a default record label to a library, folder, or document set, then a record label is applied to all the individual items within those locations. When you move a new item into a location with a record label, that item is labeled a record. However, if you change the default retention label to a label that doesn't declare content as a record, that action **does not** remove the record label from the individual items; those items retain their record label. Only a site collection admin can explicitly remove or change the retention label of record items.
 

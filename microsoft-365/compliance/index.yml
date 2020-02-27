@@ -33,7 +33,9 @@ landingContent:
           - text: Sensitive information types
             url: custom-sensitive-info-types.md
           - text: Email encryption
-            url: email-encryption.md  
+            url: email-encryption.md
+          - text: Customer Key
+            url: customer-key-overview.md  
 
   # Card
   - title: Manage information governance
@@ -62,7 +64,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Insider risk management (preview)
+          - text: Insider risk management
             url: insider-risk-management.md
           - text: Communication compliance
             url: communication-compliance.md
@@ -72,8 +74,6 @@ landingContent:
             url: privileged-access-management-overview.md
           - text: Customer Lockbox
             url: customer-lockbox-requests.md
-          - text: Customer Key
-            url: customer-key-overview.md
 
   # Card
   - title: Discover and respond
