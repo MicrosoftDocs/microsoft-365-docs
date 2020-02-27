@@ -23,7 +23,7 @@ description: "You can apply labels to Microsoft Teams, Office 365 groups, and Sh
 
 When you create sensitivity labels in the [Microsoft 365 compliance center](https://protection.office.com/), you can now apply them to the following containers: Microsoft Teams, Office 365 groups, and SharePoint sites. Use label settings to control the following options for these containers:
 
-- Privacy of Office 365 group-connected teams sites (public or private)
+- Privacy (public or private) of Office 365 group-connected teams sites
 - External users access
 - Access from unmanaged devices 
 
