@@ -258,7 +258,7 @@ For each example that follows, do the configuration from the **Encryption** page
 
 ### Example 1: Label that applies Do Not Forward to send an encrypted email to a Gmail account
 
-This label is available only in Outlook and Outlook on the web when you use Exchange Online. Instruct users to select this label when they need to send a protected email to people using a Gmail account (or any other email account outside your organization). 
+This label is available only in Outlook and Outlook on the web when you use Exchange Online. Instruct users to select this label when they need to send an encrypted email to people using a Gmail account (or any other email account outside your organization). 
 
 Your users type the Gmail email address in the **To** box.  Then, they select the label and the Do Not Forward option is automatically added to the email. The result is that recipients cannot forward the email, or print it, copy from it, or save the email outside their inbox. 
 
@@ -379,7 +379,7 @@ For sensitivity labels to apply encryption, the protection service (Azure Rights
 
 Exchange does not have to be configured for Azure Information Protection before users can apply labels in Outlook to protect their emails. However, until Exchange is configured for Azure Information Protection, you do not get the full functionality of using Azure Rights Management protection with Exchange.
  
-For example, users cannot view protected emails on mobile phones or with Outlook on the web, protected emails cannot be indexed for search, and you cannot configure Exchange Online DLP for Rights Management protection. 
+For example, users cannot view encrypted emails on mobile phones or with Outlook on the web, encrypted emails cannot be indexed for search, and you cannot configure Exchange Online DLP for Rights Management protection. 
 
 To ensure that Exchange can support these additional scenarios, see the following:
 
