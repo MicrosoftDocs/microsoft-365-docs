@@ -93,7 +93,7 @@ Here are the steps for using MailItemsAccessed audit records to investigate a co
    **Unified audit log**
  
    ```powershell
-   Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$\_.AuditData -like '\*"IsThrottled","Value":"True"\*'} | FL
+   Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '\*"IsThrottled","Value":"True"\*'} | FL
    ```
 
    **Mailbox audit log**
@@ -109,7 +109,7 @@ Here are the steps for using MailItemsAccessed audit records to investigate a co
    **Unified audit log**
 
    ```powershell
-   Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 02/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$\_.AuditData -like '\*"MailAccessType","Value":"Sync"\*'} | FL
+   Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 02/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '\*"MailAccessType","Value":"Sync"\*'} | FL
    ```
 
    **Mailbox audit log**
@@ -137,7 +137,7 @@ Here are the steps for using MailItemsAccessed audit records to investigate a co
    **Unified audit log**
 
    ```powershell
-   Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$\_.AuditData -like '\*"MailAccessType","Value":"Bind"\*'} | FL
+   Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '\*"MailAccessType","Value":"Bind"\*'} | FL
    ```
  
    **Mailbox audit log**
