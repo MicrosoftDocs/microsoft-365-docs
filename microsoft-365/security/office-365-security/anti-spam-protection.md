@@ -32,7 +32,7 @@ The anti-spam settings in your organization are a balancing act between blocking
 
 The anti-spam settings in EOP are made of the following technologies:
 
-- **Connection filtering**: Identifies good and bad email source servers early in the inbound email transmission process via the IP Allow List, IP Block List, and the *safe list* (a dynamic but non-editable list of trusted senders maintained by Microsoft). Learn more at [Configure connection filtering in Office 365](configure-the-connection-filter-policy.md).
+- **Connection filtering**: Identifies good and bad email source servers early in the inbound email transmission process via the IP Allow List, IP Block List, and the *safe list* (a dynamic but non-editable list of trusted senders maintained by Microsoft). You configure these settings in the default connection filter policy. Learn more at [Configure connection filtering in Office 365](configure-the-connection-filter-policy.md).
 
   > [!NOTE]
   > Spoof intelligence uses connection filtering to create allow and block lists of senders who are spoofing your email domain. For more information, see [Learn more about spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
@@ -46,23 +46,23 @@ The anti-spam settings in EOP are made of the following technologies:
 > [!NOTE]
 > For EOP standalone customers: By default, the EOP spam filters send spam-detected messages to each recipients' Junk Email folder. However, in order to ensure that the **Move message to Junk Email folder** action will work with on-premises mailboxes, you must configure two Exchange mail flow rules (also known as transport rules) on your on-premises servers to detect spam headers added by EOP. For details, see [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
-### Spam filter policies in the Office 365 Security & Compliance Center vs Exchange Online PowerShell or Exchange Online Protection PowerShell
+### Anti-spam policies in the Office 365 Security & Compliance Center vs Exchange Online PowerShell or Exchange Online Protection PowerShell
 
-The basic elements of a spam filter policy in EOP are:
+The basic elements of a anti-spam policy in EOP are:
 
 - **The spam filter policy**: Specifies the recipient notification, sender and admin notification, ZAP, and the Common Attachment Types Filter settings.
 
 - **The spam filter rule**: Specifies the priority and recipient filters (who the policy applies to) for a spam filter policy.
 
-The difference between these two elements isn't obvious when you manage spam filter polices in the Security & Compliance Center:
+The difference between these two elements isn't obvious when you manage anti-spam polices in the Security & Compliance Center:
 
-- When you create an spam filter policy in the Security & Compliance Center, you're actually creating a spam filter rule and the associated spam filter policy at the same time using the same name for both.
+- When you create an anti-spam policy in the Security & Compliance Center, you're actually creating a spam filter rule and the associated anti-spam policy at the same time using the same name for both.
 
-- When you modify a spam filter policy in the Security & Compliance Center, settings related to the name, priority, enabled or disabled, and recipient filters modify the spam filter rule. Other settings (recipient notification, sender and admin notification, ZAP, and the Common Attachment Types Filter) modify the associated spam filter policy.
+- When you modify a anti-spam policy in the Security & Compliance Center, settings related to the name, priority, enabled or disabled, and recipient filters modify the spam filter rule. Other settings (actions based on the filter verdict, enabling or disabling ZAP for spam and phish, etc.) modify the associated spam filter policy.
 
-- When you remove an spam filter policy from the Security & Compliance Center, the spam filter rule and the associated spam filter policy are removed.
+- When you remove an anti-spam policy from the Security & Compliance Center, the spam filter rule and the associated spam filter policy are removed.
 
-In Exchange Online PowerShell or Exchange Online Protection PowerShell, the difference between spam filter policies and spam filter rules is apparent. You manage spam filter policies by using the **\*-HostedContentFilterPolicy** cmdlets, and you manage spam filter rules by using the **\*-HostedContentFilterRule** cmdlets.
+In Exchange Online PowerShell or Exchange Online Protection PowerShell, the difference between anti-spam policies and spam filter rules is apparent. You manage spam filter policies by using the **\*-HostedContentFilterPolicy** cmdlets, and you manage spam filter rules by using the **\*-HostedContentFilterRule** cmdlets.
 
 - In PowerShell, you create the spam filter policy first, then you create the spam filter rule that identifies the policy that the rule applies to.
 
@@ -70,17 +70,17 @@ In Exchange Online PowerShell or Exchange Online Protection PowerShell, the diff
 
 - When you remove a spam filter policy from PowerShell, the corresponding spam filter rule isn't automatically removed, and vice versa.
 
-### Default spam filter policy
+### Default anti-spam policy
 
-Every organization has a built-in spam filter policy named Default that has these properties:
+Every organization has a built-in anti-spam policy named Default that has these properties:
 
 - The spam filter policy named Default is applied to all recipients in the organization, even though there's no spam filter rule (recipient filters) associated with the policy.
 
-- The policy named Default has the custom priority value **Lowest** that you can't modify (the policy is always applied last). Any custom spam filter policies that you create always have a higher priority than the policy named Default.
+- The policy named Default has the custom priority value **Lowest** that you can't modify (the policy is always applied last). Any custom policies that you create always have a higher priority than the policy named Default.
 
 - The policy named Default is the default policy (the **IsDefault** property has the value `True`), and you can't delete the default policy.
 
-To increase the effectiveness of spam filtering, you can create custom spam filter policies with stricter settings that are applied to specific users or groups of users
+To increase the effectiveness of spam filtering, you can create custom anti-spam policies with stricter settings that are applied to specific users or groups of users.
 
 
 
