@@ -321,7 +321,7 @@ The new users that you add will be able open documents and emails that have alre
 
 This configuration has the advantage that you don't need to specify users, groups, or domains to encrypt an email or document. The content will still be encrypted and you can still specify usage rights, an expiry date, and offline access. 
 
-Use this configuration only when you do not need to restrict who can open the protected document or email. [More information about this setting](##requirements-and-limitations-for-add-any-authenticated-users)
+Use this configuration only when you do not need to restrict who can open the protected document or email. [More information about this setting](#requirements-and-limitations-for-add-any-authenticated-users)
 
 1. On the **Encryption** page, for **Assign permissions now or let users decide?**, make sure **Assign permissions now** is selected.
 
