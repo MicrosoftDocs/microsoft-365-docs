@@ -332,9 +332,9 @@ Use this configuration only when you do not need to restrict who can open the pr
 
 3. Select **Assign permissions**.
 
-4. On the **Assign permissions** pane, select **Add any authenticated users**. For **Users and groups**, you see **AuthenticatedUsers** automatically added.
+4. On the **Assign permissions** pane, select **Add any authenticated users**. 
     
-    You can't change this value, only delete it, which cancels the **Add any authenticated users** selection.
+    For **Users and groups**, you see **AuthenticatedUsers** automatically added. You can't change this value, only delete it, which cancels the **Add any authenticated users** selection.
 
 5. Select **Choose permissions from present or custom**.
 
