@@ -23,7 +23,7 @@ For additional information about purchasing and licensing Microsoft 365 apps for
   
 ## Manage apps in the Integrated apps list
 
-By choosing Integrated apps in the Microsoft 365 admin center, you can test or fully deploy all of your organization's apps directly from the Integrated apps list of purchased and licensed apps.
+By choosing Integrated apps in the Microsoft 365 admin center, you can manage testing and deployment of all of your organization's apps directly from the Integrated apps list of purchased and licensed apps.
 
 1. In the admin center, in the left nav, choose **Settings**, and then choose **Integrated apps**. 
 
