@@ -292,7 +292,7 @@ This label is not suitable for emails.
 
 5. Select **Choose permissions from present or custom**.
 
-6. On the **Choose permissions from present or custom** pane, select the dropdown box, select **Viewer**, and then select Save.
+6. On the **Choose permissions from present or custom** pane, select the dropdown box, select **Viewer**, and then select **Save**.
 
 6. Back on the **Assign Permissions** pane, select **Save**.
 
