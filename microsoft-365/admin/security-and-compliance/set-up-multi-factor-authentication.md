@@ -83,11 +83,11 @@ All Office 2016 client applications support MFA through the use of the Active Di
 
 2. In the **Active Users** section, Click on  **multi-factor authentication**.
 
-3. On the **Multi-factor authentication** page, select **user** if you are enabling this for one user Or you can peform a **Bulk Update**.
+3. On the **Multi-factor authentication** page, select **user** if you are enabling this for one user or select **Bulk Update** to enable multiple users.
 
 4. CLick on **Enable** under **Quick Steps**.
 
-5. In the Pop-up window, CLickc on **Enable Multi-Factor Authentication**.
+5. In the Pop-up window, CLick on **Enable Multi-Factor Authentication**.
 
 After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
     
