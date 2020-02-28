@@ -327,7 +327,7 @@ The following table describes the file and page activities in SharePoint Online 
 |Deleted file from recycle bin|FileDeletedFirstStageRecycleBin|User deletes a file from the recycle bin of a site.|
 |Deleted file from second-stage recycle bin|FileDeletedSecondStageRecycleBin|User deletes a file from the second-stage recycle bin of a site.|
 |Deleted record compliance policy label|ComplianceRecordDelete|A document that was classified as a record was deleted. A document is considered a record when a retention label that classifies content as a record is applied to the document.|
-|Detected document sensitivity mismatch|DocumentSensitivityMismatchDetected|User uploads a document to a site that's protected with a sensitivity label and the document has a lower sensitivity label than the site. <br/><br/> This event isn't triggered if the sensitivity label applied to the site has a higher priority than the sensitivity label applied to a document that's uploaded to the site. For more information about sensitivity label priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).|
+|Detected document sensitivity mismatch|DocumentSensitivityMismatchDetected|User uploads a document to a site that's protected with a sensitivity label and the document has a higher priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled Confidential is uploaded to a site labeled General. <br/><br/> This event isn't triggered if the document has a lower priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled General is uploaded to a site labeled Confidential. For more information about sensitivity label priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).|
 |Detected malware in file|FileMalwareDetected|SharePoint anti-virus engine detects malware in a file.|
 |Discarded file checkout|FileCheckOutDiscarded|User discards (or undos) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
 |Downloaded file|FileDownloaded|User downloads a document from a site.|
@@ -514,6 +514,7 @@ The following table lists the activities that can be logged by mailbox audit log
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
+|Accessed mailbox items|MailItemsAccessed|Messages were read or accessed in mailbox. Audit records for this activity are triggered in one of two ways: when a mail client (such as Outlook) performs a bind operation on messages or when mail protocols (such as Exchange ActiveSync or IMAP) sync items in a mail folder. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. Analyzing audit records for this activity is useful when investigating compromised email account. For more information, see the "Access to crucial events for investigations" section in [Advanced Audit](advanced-audit.md#access-to-crucial-events-for-investigations). |
 |Added delegate mailbox permissions|AddMailboxPermissions|An administrator assigned the FullAccess mailbox permission to a user (known as a delegate) to another person's mailbox. The FullAccess permission allows the delegate to open the other person's mailbox, and read and manage the contents of the mailbox.|
 |Added or removed user with delegate access to calendar folder|UpdateCalendarDelegation|A user was added or removed as a delegate to the calendar of another user's mailbox. Calendar delegation gives someone else in the same organization permissions to manage the mailbox owner's calendar.|
 |Added permissions to folder|AddFolderPermissions|A folder permission was added. Folder permissions control which users in your organization can access folders in a mailbox and the messages located in those folders.|
@@ -720,7 +721,7 @@ The following table lists the user and admin activities in Microsoft Teams that 
 |Added bot to team|BotAddedToTeam|A user adds a bot to a team.|
 |Added channel|ChannelAdded|A user adds a channel to a team.|
 |Added connector|ConnectorAdded|A user adds a connector to a channel.|
-|Added members|MemberAdded|A team owner adds members to a team or a group chat.|
+|Added members|MemberAdded|A team owner adds members to a team, channel, or group chat.|
 |Added tab|TabAdded|A user adds a tab to a channel.|
 |Changed channel setting|ChannelSettingChanged|The ChannelSettingChanged operation is logged when the following activities are performed by a team member. For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>• Changes the name of a team channel (**Channel name**). <br/><br/>• Changes the description of a team channel (**Channel description**).|
 |Changed organization setting|TeamsTenantSettingChanged|The TeamsTenantSettingChanged operation is logged when the following activities are performed by a global admin (using the Microsoft 365 admin center); note that these activities affect organization-wide Microsoft Teams settings. For more information, see [Administrator settings for Microsoft Teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2). <br/> For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>• Enables or disables Microsoft Teams for the organization (**Microsoft Teams**). <br/><br/>• Enables or disables interoperability between Microsoft Teams and Skype for Business for the organization (**Skype for Business interoperability**). <br/><br/>• Enables or disables the organizational chart view in Microsoft Teams clients (Org chart view**). <br/><br/>• Enables or disables the ability for team members to schedule private meetings (**Private meeting scheduling**). <br/><br/>• Enables or disables the ability for team members to schedule channel meetings (Channel meeting scheduling**). <br/><br/>• Enables or disables video calling in Teams meetings (Video for Skype meetings**). <br/><br/>• Enables or disables screen sharing in Microsoft Teams meetups for the organization (**Screen sharing for Skype meetings**). <br/><br/>• Enables or disables that ability to add animated images (called Giphys) to Teams conversations (Animated images**). <br/><br/>• Changes the content rating setting for the organization (**Content rating**). The content rating restricts the type of animated image that can be displayed in conversations. <br/><br/>• Enables or disables the ability for team members to add customizable images (called custom memes) from the Internet to team conversations (Customizable images from the Internet**). <br/><br/>• Enables or disables the ability for team members to add editable images (called stickers) to team conversations (**Editable images**).<br/><br/>• Enables or disables that ability for team members to use bots in Microsoft Teams chats and channels (Org-wide bots**). <br/><br/>• Enables specific bots for Microsoft Teams. This doesn't include the T-Bot, which is Teams help bot that's available when bots are enabled for the organization (**Individual bots**). <br/><br/>• Enables or disables the ability for team members to add extensions or tabs (**Extensions or tabs**). <br/><br/>• Enables or disables the side-loading of proprietary Bots for Microsoft Teams (**Side loading of Bots**). <br/><br/>• Enables or disables the ability for users to send email messages to a Microsoft Teams channel (**Channel email**).|
@@ -731,7 +732,7 @@ The following table lists the user and admin activities in Microsoft Teams that 
 |Deleted team|TeamDeleted|A team owner deletes a team.|
 |Removed bot from team|BotRemovedFromTeam|A user removes a bot from a team.|
 |Removed connector|ConnectorRemoved|A user removes connector from a channel.|
-|Removed members|MemberRemoved|A team owner removes members from a team or a group chat.|
+|Removed members|MemberRemoved|A team owner removes members from a team, channel, or group chat.|
 |Removed tab|TabRemoved|A user removes a tab from a channel.|
 |Updated connector|ConnectorUpdated|A user modified a connector in a channel.|
 |Updated tab|TabUpdated|A user modified a tab in a channel.|
@@ -785,9 +786,12 @@ You can search the audit log for activities in Microsoft Stream. These activitie
 
 ### Microsoft Forms activities
 
-The following table lists the user and admin activities in Microsoft Forms that are logged in the Office 365 audit log. Microsoft Forms is a forms/quiz/survey tool used to collect data for anlaysis. 
+The following table lists the user and admin activities in Microsoft Forms that are logged in the Office 365 audit log. Microsoft Forms is a forms/quiz/survey tool used to collect data for analysis. 
 
 Where noted below in the descriptions, some operations contain additional activity parameters.
+
+> [!NOTE]
+> If a Forms activity is performed by a co-author or an anonymous responder, it will be logged slightly differently. For more information, see the [Forms activities performed by co-authors and anonymous responders](#forms-activities-performed-by-co-authors-and-anonymous-responders) section.
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -820,7 +824,23 @@ Where noted below in the descriptions, some operations contain additional activi
 |Submitted response|SubmitResponse|A user submits a response to a form. <br><br>Property IsInternalForm:boolean indicates if the responder is within the same organization as the form owner.|
 ||||
 
-### Sensitivity label activities 
+#### Forms activities performed by co-authors and anonymous responders
+
+Forms supports collaboration when forms are being designed and when analyzing responses. A form collaborator is known as a *co-author*. Co-authors can do everything a form owner can do, except delete or move a form. Forms also allows you to create a form that can be responded to anonymously. This means the responder doesn't have to be signed into your organization to respond to a form. 
+
+The following table describes the auditing activities and information in the audit record for activities performed by co-authors and anonymous responders.
+
+|**Activity type**|**Internal or external user**|**User Id that's logged**|**Organization logged in to**|**Forms user type**|
+|:-----|:-----|:-----|:-----|:-----|
+|Co-authoring activities|Internal|UPN|Form owner's org|Co-author|
+|Co-authoring activities|External|UPN<br>|Co-author's org<br>|Co-author|
+|Co-authoring activities|External|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(The second part of the Id is a hash, which will differ for different users)|Form owner's org<br>|Co-author|
+|Response activities|External|UPN<br>|Responder's org<br>|Responder|
+|Response activities|External|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(The second part of the User Id is a hash, which will differ for different users)|Form owner's org|Responder|
+|Response activities|Anonymous|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(The second part of the User Id is a hash, which will differ for different users)|Form owner's org|Responder|
+||||
+
+### Sensitivity label activities
 
 The following table lists events that result from labeling activities for SharePoint Online and Teams sites.
 

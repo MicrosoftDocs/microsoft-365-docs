@@ -313,13 +313,15 @@ Examples queries:
 
 ### Auto-apply labels to content by using trainable classifers
 
-When you choose the option for a trainable classifier, you can select one of the built-in classifiers, or a custom classifier. The built-in classifers include **Offensive Language**, **Resumes**, **SourceCode**, **Harassment**, **Profanity**, and **Threat**.
+When you choose the option for a trainable classifier, you can select one of the built-in classifiers, or a custom classifier. The built-in classifers include **Offensive Language**, **Resumes**, **SourceCode**, **Targeted Harassment**, **Profanity**, and **Threat**:
+
+![Choose trainable classifer](../media/retention-label-classifers.png)
 
 To automatically apply a label by using this option, SharePoint Online sites and mailboxes must have at least 10 MB of data.
 
 For more information about trainable classifers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
 
-For an example configuration, see [How to prepare for and use a ready to use classifier](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-ready-to-use-classifier).
+For an example configuration, see [How to prepare for and use a built-in classifier](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-built-in-classifier).
 
 ## Applying a default retention label to all content in a SharePoint library, folder, or document set
 

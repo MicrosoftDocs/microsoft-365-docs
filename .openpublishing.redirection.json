@@ -318,6 +318,100 @@
       "source_path": "microsoft-365/security/office-365-security/keep-users-safe-with-office-365-ti.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/activity-reports/index.md",
+      "redirect_url": "activity-reports",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users/index.md",
+      "redirect_url": "add-users",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-overview/index.md",
+      "redirect_url": "admin-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/create-groups/index.md",
+      "redirect_url": "create-groups",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/email/index.md",
+      "redirect_url": "email",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/get-help-with-domains/index.md",
+      "redirect_url": "get-help-with-domains",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/manage/index.md",
+      "redirect_url": "manage",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/services-in-china/index.md",
+      "redirect_url": "services-in-china",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/setup/index.md",
+      "redirect_url": "setup",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/usage-analytics/index.md",
+      "redirect_url": "usage-analytics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/index.md",
+      "redirect_url": "admin-home",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/misc/index.md",
+      "redirect_url": "admin-home",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security-and-compliance/index.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data",
+      "redirect_document_id": true
+    },    {
+      "source_path": "microsoft-365/dns/index.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/get-help-with-domains",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/billing-accounts/manage-billing-accounts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/manage-billing-accounts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/index.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/index.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/commerce/licenses/index.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/licenses/buy-licenses",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/commerce/billing-and-payments/index.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account",
+      "redirect_document_id": true
     }
   ]
 }
