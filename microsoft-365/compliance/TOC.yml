@@ -398,8 +398,11 @@
   href: manage-legal-investigations.md
   items: 
     - name: Advanced eDiscovery solution in Microsoft 365
-      href: overview-ediscovery-20.md
       items: 
+        - name: Overview of Advanced eDiscovery
+          href: overview-ediscovery-20.md  
+        - name: Get started with Advanced eDiscovery
+          href: get-started-with-advanced-ediscovery.md  
         - name: Create a new case
           href: create-new-ediscovery-case.md
         - name: Work with custodians

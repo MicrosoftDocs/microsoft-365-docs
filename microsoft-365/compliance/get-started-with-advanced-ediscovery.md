@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "This article describes the new version of Advanced eDiscovery in Microsoft 365."
+description: "This article describes how to get started using Advanced eDiscovery in Microsoft 365. After you complete a few quick steps, the Advanced eDiscovery tool is ready to use."
 ---
 
 # Get started with Advanced eDiscovery
 
 Advanced eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. To get started with Advanced eDiscovery, there's nothing to deploy: you can just start using it. However, there are some prerequisite tasks that an IT admin and eDiscovery manager in your organization have to complete before you or others can start creating and using Advanced eDiscovery cases to manage legal or other types of investigations.
 
-This article discusses the steps necessary set up  Advanced eDiscovery so people in your organization can start using it. This includes ensuring the proper licensing required to access Advanced eDiscovery and add custodians to cases, and assigning permissions to your legal and investigation team so they can access and manage cases. This article also provides a high-level overview of using cases to manage the Advanced eDiscovery workflow for a legal investigation.
+This article discusses the steps necessary setup  Advanced eDiscovery so people in your organization can start using it. This includes ensuring the proper licensing required to access Advanced eDiscovery and add custodians to cases, and assigning permissions to your legal and investigation team so they can access and manage cases. This article also provides a high-level overview of using cases to manage the Advanced eDiscovery workflow for a legal investigation.
 
 ## Step 1: Verify and assign appropriate licenses
 
@@ -50,15 +50,15 @@ Complete the following steps to add users to the eDiscovery Manager role group:
 
 1. Go to [https://protection.office.com/permissions](https://protection.office.com/permissions) and sign in using the credentials for an admin account in your Microsoft 365 organization.
 
-2. On the **Permissions** page, select the **eDiscovery Manager** role group. 
+2. On the **Permissions** page, select the **eDiscovery Manager** role group.
 
 3. On the eDiscovery Manager flyout page, click **Edit** next to the **eDiscovery Manager** section.
 
 4. On the **Choose eDiscovery Manager** page in the edit role group wizard, click **Choose Discovery Manager**.
 
-5. Click **Add** then select the checkbox for all users you want to add to the role group. 
+5. Click **Add** then select the checkbox for all users you want to add to the role group.
 
-6. Click **Add** to added the selected users, and then click **Done**.
+6. Click **Add** to add the selected users, and then click **Done**.
 
 7. Click **Save** to add the users to the role group, and then click **Close** to complete the step.
 
@@ -80,23 +80,46 @@ There are two subgroups in the eDiscovery Manager role group. The difference bet
 
 For more information about eDiscovery permissions and a description of each role that's assigned to the eDiscovery Manager role group, see [Assign eDiscovery permissions in the Security & Compliance Center](assign-ediscovery-permissions.md).
 
+## Step 3: Configure global settings for Advanced eDiscovery
 
+The last step to complete before people in your organization start to create and use cases is to configure global settings that apply to all cases in your organization. At this time, there is one global setting that you can enable (more global settings will be implemented in the future). It's called *attorney-client privilege detection*. When it's enabled, all documents in a review set will be processed by the attorney-client privilege detection model when you analyze the data in the review set. The model uses machine learning to determine the likelihood that the document contains content that is legal in nature. It also compares the participants of documents in a review set with an attorney list (that you submit when setting up the model) to determine if a document has at least one attorney participant.
 
+For more information about setting up and using the attorney-client privilege detection model, see [Set up attorney-client privilege detection in Advanced eDiscovery](attorney-privilege-detection.md).
 
+> [!NOTE]
+> This is optional step that you can perform anytime. Not implementing the attorney-client privilege detection model doesn't prevent you from creating and using Advanced eDiscovery cases.
 
-## Step 3: Create and configure an Advanced eDiscovery case
+## Step 4: Create an Advanced eDiscovery case
 
-## Step 4: 
+The next step is to create a case and start using Advanced eDiscovery. Complete the following steps to create a case and add members. The user who creates the case is automatically added as a member.
 
-## Step 5: 
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions. Members of the Organization Management role group can also create Advanced eDiscovery cases.
 
+2. In the left nave of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Advanced**.
+ 
+3. On the **Advanced eDiscovery** page, click the **Cases** tab, and then click **Create a case**.
+    
+4. On the **New eDiscovery case** flyout page, give the case a name (required), and then type an optional case number and description. The case name must be unique in your organization.
 
-Part 1:Setting up the service (E5 subscription for tenant and per-user licensing for custodians)
-Part 2: Setting up Advanced eDiscovery, which entails assigning RBAC permissions to IT, eDiscovery, and legal people in the org, global analytics settings)
-Part 3: Setting up a case (create case, add members, and optionally implement case-wide settings)
-Part 4: The case workflow
+5. Click **Save** to create the case.
 
+   The new case is created and the **Settings** tab in the new case is displayed. 
 
+6. In the **Access & permissions** tile on the **Settings** tab, click **Select**, and then click **Update**.
+
+7. Click **Update**.
+
+8. On the **Manage this case** flyout page, under **Manage members**, click **Add** to add members to the case.
+
+9. In the list of people, select the check box next to the names of the people that you want to add to the case. As previously explained, be sure that the people you add to the case have been assigned the appropriate eDiscovery permissions.
+
+10. After you've selected the people to add as members of the case, click **Add**.
+
+11. In the **Manage this case** flyout page, click **Save** to save the new list of case members.
+
+12. Click the **Home** tab to go to the case home page.
+
+## The Advanced eDiscovery workflow
 
 1.	Add custodians, custodian data sources, place hold on custodian data sources, manage legal hold notification process.
 2.	Search custodial locations for data relevant to case
