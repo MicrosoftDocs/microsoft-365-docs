@@ -1,5 +1,5 @@
-- name: Manage commerce purchases and billing
-  href: index.md
+- name: Manage subscriptions and billing
+  href: index.yml
   expanded: true
   items:
     - name: Try or buy
