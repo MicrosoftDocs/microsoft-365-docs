@@ -69,19 +69,19 @@ You can change the payment method used to pay for a single subscription.
 
 ## Delete a payment method
 
-You can only delete a payment method that isn’t attached to a subscription or billing profile. This applies to all subscriptions, whatever their status. If your payment method isn't associated with any subscriptions or billing profiles, you can immediately delete it.
-
-If a payment method is attached to any subscriptions or billing profiles, first replace it with an existing payment method, or add a new one, then delete the old payment method.
-
-If the payment method is only associated with a billing profile, change the payment method used for the billing profile, and then delete the payment method.
+You can only delete a payment method that isn’t attached to a subscription or billing profile. This applies to all subscriptions, whatever their status. If the payment method is only associated with a billing profile, change the payment method used for the billing profile, and then delete the payment method.
 
 ### Delete a payment method with no subscriptions or billing profiles attached
+
+If a payment method isn't associated with any subscriptions or billing profiles, you can immediately delete it.
 
 1. In the admin center, go to the **Billing** > **Bills & payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.
 2. Find the payment method to delete, select the three dots, then select **Delete**.
 3. At the bottom of the right pane, select **Delete**.
 
 ### Delete a payment method with subscriptions or billing profiles attached
+
+If a payment method is attached to any subscriptions or billing profiles, first replace it with an existing payment method, or add a new one, then delete the old payment method.
 
 1. In the admin center, go to the **Billing** > **Bills & payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.
 2. Select the row for the payment method to delete. The right pane lists existing subscriptions that use that payment method.
