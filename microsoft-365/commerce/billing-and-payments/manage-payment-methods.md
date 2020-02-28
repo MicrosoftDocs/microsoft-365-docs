@@ -106,7 +106,7 @@ If a payment method is attached to any subscriptions or billing profiles, first 
 
 ## Related articles
 
-[Pay for your Office 365 for business subscription](pay-for-your-subscription.md)
+[Pay for your for business subscription](pay-for-your-subscription.md)
 
 [Manage billing profiles](manage-billing-profiles.md)
 
