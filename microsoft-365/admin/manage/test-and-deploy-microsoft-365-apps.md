@@ -27,19 +27,25 @@ By choosing Integrated apps in the Microsoft 365 admin center, you can manage te
 
 1. In the admin center, in the left nav, choose **Settings**, and then choose **Integrated apps**. 
 
-2. Select an app with **Status** of **More apps available**.
+2. Choose an app with **Status** of **More apps available**.
 
-3. Choose **Deploy** next to the message at the top of the page that refers to waiting to be deployed.
+3. Select **Deploy** at the top of the page next to the message that refers to waiting to be deployed.
 
-4. Review the app you’ve selected, and then select **Deploy**. 
+    Some apps require you to add users before you can select **Deploy**.
 
-5. Choose **Accept Permissions** for the app(s) you want to deploy, and then select **Deploy**.
+    a. Select **Add users**, and select **Full deployment**, and then choose **Entire organization** or **Specific users/groups**.
 
-6. Choose **Accept** to give permission for the app to access all of the Microsoft 365 resources in the list.
+        Specific users/groups can be a Microsoft 365 group, a security group, or a distributed group.
 
-7. Review the permissions you accepted, and then select **Deploy**.  
+        You can also choose **Test deployment** if you prefer to wait to deploy the app to the entire organization.
 
-    Review the details for your deployment on the confirmation page. 
+    b. Select **Update**, **Done**, and now you can select **Deploy** on the **Overview** tab.  
+
+4. Review the app information, and then select **Deploy**. 
+
+5. Select **Done** on the **Deployment completed** page. 
+
+    Review the details of the test or full deployment on the **Overview** tab.
 
 ## Find published apps for test and full deployment 
 
@@ -47,33 +53,31 @@ You can find, test, and fully deploy published apps that do not already appear i
 
 1. In the admin center, in the left nav, choose **Settings**, and then choose **Integrated apps**. 
 
-2. Select **Get apps** above the list.
+2. Select **Get apps** above the list of apps.
 
-3. On the published apps page, select the app you want to deploy by choosing **Get it now**.
+3. On the **Microsoft 365 Apps** published apps page, select the app you want to deploy by choosing **Get it now**.
 
-4. Accept the permissions, and then choose **Continue**.
+4. Accept the permissions, and then select **Continue**.
 
-5. Select **Edit** if you want to deploy only select apps to your organization, or select **Deploy all apps**. 
+5. Select **Deploy** at the top of the page next to the message that refers to waiting to be deployed.
 
-6. Choose **Full deployment**, and then choose **Next**. 
+    Some apps require you to add users before you can select **Deploy**.
 
-    You can also choose **Test deployment** if you're not ready to deploy to your entire organization.
+    a. Select **Add users**, and select **Full deployment**, and then choose **Entire organization** or **Specific users/groups**.
 
-7. Select **Entire organization** or **Specific users/groups**, and then select **Next**. 
+        Specific users/groups can be a Microsoft 365 group, a security group, or a distributed group.
 
-    Specific users/groups can be a Microsoft 365 group, a security group, or a distributed group.
+        You can also choose **Test deployment** if you prefer to wait to deploy the app to the entire organization.
 
-8. Read and accept the terms of use, and select your account to continue deployment. 
+    b. Select **Update**, **Done**, and select **Deploy** on the **Overview** tab.  
 
-7. Choose **Accept** to accept permissions for each app. 
+6. Review the app information, and then select **Deploy**. 
 
-8. Review the permissions you’ve accepted, and then choose **Next**. 
+7. Select **Done** on the **Deployment completed** page. 
 
-9. Review a summary of the apps and users you've chosen.
+    Review the details of the test or full deployment on the **Overview** tab.
 
-10. Review the **Full deployment initiated successfully** confirmation page, and then choose **Done**. 
-
-In the Microsoft 365 admin center, each deployed app **Status** is **OK** with a **Deployment Type** of **Test**, **Full**, or **Custom**, and the date you deployed the app.
+In the Microsoft 365 admin center, each deployed app **Status** is **OK** with a **Deployment Type** of **Test deployment**, **Full deployment**, or **Custom**, and the date you deployed the app.
 
 > [!NOTE]
 > If an app was previously deployed from somewhere other than the Integrated Apps portal, the **Deployment Type** is **Custom.**
