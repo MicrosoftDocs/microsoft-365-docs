@@ -40,7 +40,7 @@ All protected users will have this experience with hazardous URLs:
 
 If the user who sent the link isn’t protected by Office 365 ATP, he or she is free to click the URL on his or her machine and resolve the problem site. This makes it doubly important for Office 365 Administrators to be aware of who their protected users are and should be.
 
-![A Safe Links for Teams page reporting a malicious link and blocking transit to the page.](../media/TP_SafelinksForTeams_Malicious.png)
+![A Safe Links for Teams page reporting a malicious link and blocking transit to the page.](/microsoft-365/media/TP_SafelinksForTeams_Malicious.png)
 
 Clicking the *Go Back* button on this page in Teams will close it out (or may result in a blank page users  can close out). However, clicking on the link again will result in reassessment of the reputation of the site so that this page reappears.
 
