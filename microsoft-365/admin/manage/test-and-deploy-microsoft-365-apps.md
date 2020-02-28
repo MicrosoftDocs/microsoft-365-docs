@@ -33,11 +33,11 @@ By choosing Integrated apps in the Microsoft 365 admin center, you can manage te
 
     Some apps require you to add users before you can select **Deploy**.
 
-    a. Select **Add users**, and select **Full deployment**, and then choose **Entire organization** or **Specific users/groups**.
+    a. Select **Add users**, choose **Full deployment**, and then choose **Entire organization** or **Specific users/groups**.
 
-        Specific users/groups can be a Microsoft 365 group, a security group, or a distributed group.
+    Specific users/groups can be a Microsoft 365 group, a security group, or a distributed group.
 
-        You can also choose **Test deployment** if you prefer to wait to deploy the app to the entire organization.
+    You can also choose **Test deployment** if you prefer to wait to deploy the app to the entire organization.
 
     b. Select **Update**, **Done**, and now you can select **Deploy** on the **Overview** tab.  
 
@@ -63,13 +63,13 @@ You can find, test, and fully deploy published apps that do not already appear i
 
     Some apps require you to add users before you can select **Deploy**.
 
-    a. Select **Add users**, and select **Full deployment**, and then choose **Entire organization** or **Specific users/groups**.
+    a. Select **Add users**, choose **Full deployment**, and then choose **Entire organization** or **Specific users/groups**.
 
-        Specific users/groups can be a Microsoft 365 group, a security group, or a distributed group.
+    Specific users/groups can be a Microsoft 365 group, a security group, or a distributed group.
 
-        You can also choose **Test deployment** if you prefer to wait to deploy the app to the entire organization.
+    You can also choose **Test deployment** if you prefer to wait to deploy the app to the entire organization.
 
-    b. Select **Update**, **Done**, and select **Deploy** on the **Overview** tab.  
+    b. Select **Update**, **Done**, and and now you can select **Deploy** on the **Overview** tab.  
 
 6. Review the app information, and then select **Deploy**. 
 
