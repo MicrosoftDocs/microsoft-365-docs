@@ -1,4 +1,4 @@
-- name: Manage commerce purchases and billing
+- name: Manage subscriptions and billing
   href: index.yml
   expanded: true
   items:
