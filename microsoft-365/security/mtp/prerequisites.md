@@ -26,8 +26,6 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-
-
 Learn about the licensing, hardware and software requirements, and other configuration settings to provision and use Microsoft Threat Protection.
 
 ## Licensing requirements
