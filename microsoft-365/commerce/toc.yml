@@ -1,5 +1,5 @@
 - name: Manage business subscriptions
-  href: index.md
+  href: index.yml
   expanded: true
   items:
     - name: Try or buy
