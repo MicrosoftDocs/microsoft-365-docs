@@ -386,8 +386,8 @@
             href: change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
             href: disable-reports-when-you-export-content-search-results.md
-       - name: Run content search PowerShell scripts
-         items: 
+        - name: Run content search PowerShell scripts
+          items: 
           - name: Use content search for targeted collections
             href: use-content-search-for-targeted-collections.md
           - name: Search the mailbox and OneDrive account for a list of users
