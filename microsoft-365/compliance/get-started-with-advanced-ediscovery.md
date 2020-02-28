@@ -21,15 +21,15 @@ description: "This article describes how to get started using Advanced eDiscover
 
 # Get started with Advanced eDiscovery
 
-Advanced eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. To get started with Advanced eDiscovery, there's nothing to deploy: you can just start using it. However, there are some prerequisite tasks that an IT admin and eDiscovery manager in your organization have to complete before you or others can start creating and using Advanced eDiscovery cases to manage legal or other types of investigations.
+Advanced eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Nothing is needed to deploy Advanced eDiscovery, but there are some prerequisite tasks that an IT admin and eDiscovery manager have to complete before your organization can start to create and use Advanced eDiscovery cases to manage your investigations.
 
-This article discusses the steps necessary setup  Advanced eDiscovery so people in your organization can start using it. This includes ensuring the proper licensing required to access Advanced eDiscovery and add custodians to cases, and assigning permissions to your legal and investigation team so they can access and manage cases. This article also provides a high-level overview of using cases to manage the Advanced eDiscovery workflow for a legal investigation.
+This article discusses the steps necessary to set up Advanced eDiscovery. This includes ensuring the proper licensing required to access Advanced eDiscovery and add custodians to cases, as well as assigning permissions to your legal and investigation team so they can access and manage cases. This article also provides a high-level overview of using cases to manage the Advanced eDiscovery workflow for a legal investigation.
 
 ## Step 1: Verify and assign appropriate licenses
 
 Licensing for Advanced eDiscovery requires the appropriate organization subscription and per-user licensing.
 
-- **Organization subscription:** To access the Advanced eDiscovery tool in the Microsoft 365 compliance center or the Office 365 Security & Compliance Center, your organization must have Office 365 or Microsoft E5 subscription. 
+- **Organization subscription:** To access the Advanced eDiscovery tool in the Microsoft 365 compliance center or the Office 365 Security & Compliance Center, your organization must have Office 365 E5 or Microsoft E5 subscription.
 
 - **Per-user licensing:** To add a user as a custodian in an Advance eDiscovery case, that user must be assigned one of the following licenses, depending on your organization subscription:
 
@@ -82,12 +82,12 @@ For more information about eDiscovery permissions and a description of each role
 
 ## Step 3: Configure global settings for Advanced eDiscovery
 
-The last step to complete before people in your organization start to create and use cases is to configure global settings that apply to all cases in your organization. At this time, there is one global setting that you can enable (more global settings will be implemented in the future). It's called *attorney-client privilege detection*. When it's enabled, all documents in a review set will be processed by the attorney-client privilege detection model when you analyze the data in the review set. The model uses machine learning to determine the likelihood that the document contains content that is legal in nature. It also compares the participants of documents in a review set with an attorney list (that you submit when setting up the model) to determine if a document has at least one attorney participant.
+The last step to complete before people in your organization start to create and use cases is to configure global settings that apply to all cases in your organization. At this time, the only global setting that's available is *attorney-client privilege detection* (more global settings will be available in the future). This setting enables the attorney-client privilege model to run when you analyze data in a review set. The model uses machine learning to determine the likelihood that a document contains content that is legal in nature. It also compares the participants of documents with an attorney list (that you submit when setting up the model) to determine if a document has at least one participant who is an attorney.
 
 For more information about setting up and using the attorney-client privilege detection model, see [Set up attorney-client privilege detection in Advanced eDiscovery](attorney-privilege-detection.md).
 
 > [!NOTE]
-> This is optional step that you can perform anytime. Not implementing the attorney-client privilege detection model doesn't prevent you from creating and using Advanced eDiscovery cases.
+> This is an optional step that you can perform anytime. Not implementing the attorney-client privilege detection model doesn't prevent you from creating and using Advanced eDiscovery cases.
 
 ## Step 4: Create an Advanced eDiscovery case
 
@@ -121,7 +121,33 @@ The next step is to create a case and start using Advanced eDiscovery. Complete 
 
 ## The Advanced eDiscovery workflow
 
-1.	Add custodians, custodian data sources, place hold on custodian data sources, manage legal hold notification process.
+To get you started using Advanced eDiscovery, here's a simple workflow that aligns to the common eDiscovery practices. Within each of these steps, we'll also highlight some the extended Advanced eDiscovery functionality that you can explore.
+
+1. **Add custodians to a case.** The first step after creating a case is to add custodians. A *custodian* is a person having administrative control of a document or electronic file that may be relevant to the case. Here are some things that happen (or that you can do) when you add a custodian to a case:
+
+   - Data in the custodian's Exchange mailbox, OneDrive account, and any Microsoft Teams or Yammer groups that the custodian is a member of can be "marked" as custodial data in the case. 
+   
+   - You can associate other data sources with a custodian (for example, you can associate a SharePoint site or Office 365 Group with a custodian) so this data can be re-indexed, placed on hold, and searched, just like the data in the custodian's mailbox or OneDrive account.
+
+   - Custodian data is re-indexed (by a process called *Advancing indexing*). This helps optimize searching for it in the next step.
+   
+   - You can place a hold on custodian data. This preserves data that may be relevant to the case during the investigation.
+
+   - You can use the communications workflow in Advanced eDiscovery to send a legal hold notification to the case custodians. 
+
+
+
+
+2. **Search custodial data sources for data relevant to the case.**
+
+3. **Add data to a review set.**  
+
+4. **Tag, analyze, cull, redact data in the review set.**
+
+5. **Export and download case data.** 
+
+
+, custodian data sources, place hold on custodian data sources, manage legal hold notification process.
 2.	Search custodial locations for data relevant to case
 3.	Add search results from previous step to review set
 4.	Tag, analyze, cull, redact data in the review set
