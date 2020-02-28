@@ -33,7 +33,7 @@ When you buy business products or services from Microsoft, you can use an existi
 
 ## Update payment method details
 
-You can change the name on the credit or debit card, billing address, or expiration date for an existing payment method. However, you can't change the account number. If the account number has changed, you can [replace it with a different payment method](#replace-a-payment-method), and then [delete the old one](#delete-a-payment-method).
+You can change the name on the credit or debit card, billing address, or expiration date for an existing payment method. However, you can't change the account number. If the account number has changed, [replace it with a different payment method](#replace-a-payment-method), and then [delete the old one](#delete-a-payment-method).
 
 1. In the admin center, go to the **Billing** > **Bills & payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.
 2. Select the row of the payment method to update. In the right pane, select **Edit**.
@@ -41,7 +41,9 @@ You can change the name on the credit or debit card, billing address, or expirat
 
 ## Replace a payment method
 
-When you replace a payment method, you replace it for all subscriptions and billing profiles that use the same payment method. To change the payment method for a single subscription, see [Change a payment method for a single subscription](#change-a-payment-method-for-a-single-subscription). Replacing a payment method doesn’t delete the existing payment method. It’s still available for you to select and use for other subscriptions and billing profiles.
+When you replace a payment method, you replace it for all subscriptions and billing profiles that use the same payment method. Replacing a payment method doesn’t delete the existing payment method. It’s still available for you to select and use for other subscriptions and billing profiles.
+
+To change the payment method for a single subscription, see [Change a payment method for a single subscription](#change-a-payment-method-for-a-single-subscription).
 
 1. In the admin center, go to the **Billing** > **Bills & payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.
 2. Select the row of the payment method to replace. The right pane lists all billing profiles and individual subscriptions that use the selected payment method.
@@ -67,12 +69,16 @@ You can change the payment method used to pay for a single subscription.
 
 ## Delete a payment method
 
-You can only delete a payment method that isn’t attached to a subscription or billing profile. This applies to all subscriptions, whatever their status. If your payment method isn't associated with any subscriptions or billing profiles, you can immediately delete it. If a payment method is attached to any subscriptions or billing profiles, first replace it with an existing payment method, or add a new one, then delete the old payment method. If the payment method is only associated with a billing profile, change the payment method used for the billing profile, and then delete the payment method.
+You can only delete a payment method that isn’t attached to a subscription or billing profile. This applies to all subscriptions, whatever their status. If your payment method isn't associated with any subscriptions or billing profiles, you can immediately delete it.
+
+If a payment method is attached to any subscriptions or billing profiles, first replace it with an existing payment method, or add a new one, then delete the old payment method.
+
+If the payment method is only associated with a billing profile, change the payment method used for the billing profile, and then delete the payment method.
 
 ### Delete a payment method with no subscriptions or billing profiles attached
 
 1. In the admin center, go to the **Billing** > **Bills & payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.
-2. Find the payment method to delete, select the 3 dots, then select **Delete**.
+2. Find the payment method to delete, select the three dots, then select **Delete**.
 3. At the bottom of the right pane, select **Delete**.
 
 ### Delete a payment method with subscriptions or billing profiles attached
@@ -92,7 +98,7 @@ You can only delete a payment method that isn’t attached to a subscription or 
 
 |**Issue**|**Troubleshooting steps**|
 |:----------|:-----|
-|**I get an error message that says, "The browser is currently set to block cookies."** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |Set your browser to allow third-party cookies and try again. |
+|**I get an error message that says, "The browser is currently set to block cookies."** |Set your browser to allow third-party cookies and try again. |
 |**My credit or debit card was declined.** |If you pay by credit or debit card, and your card is declined, you receive an email that says Microsoft was unable to process the payment. Double-check that the card details &mdash; card number, expiration date, name on the card, and address, including city, state, and ZIP code — appear exactly as they do on the card and your statement. You can update your card information and immediately submit the payment by using the **Settle balance** link in the **Billing** section of the subscription details page. For more information, see [What if my credit card was declined and my payment is past due?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due)  <br/><br/>  If you continue to see the "declined" message, contact your bank. It's possible that your card isn't active. If you recently received the card in the mail with an updated expiration date, make sure it's activated. Your bank can also tell you whether your card isn't approved for online, international, or recurring transactions. |
 |**I want to update a card or bank account number.** |You can't change the card or account number on an existing payment method. If your card or account number has changed, [replace it with a different payment method](#replace-a-payment-method), which moves all active subscriptions from the payment method to the new one, then [delete the old payment method](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**I only have one card or bank account on my account and I want to remove it.** |If you only have one payment method, you must [replace it with a new payment method](#replace-a-payment-method) before you can delete it. |
