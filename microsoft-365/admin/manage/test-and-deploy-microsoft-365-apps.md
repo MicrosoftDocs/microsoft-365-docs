@@ -39,7 +39,7 @@ By choosing Integrated apps in the Microsoft 365 admin center, you can manage te
 
 7. Review the permissions you accepted, and then select **Deploy**.  
 
->>Review the details for your deployment on the confirmation page. 
+    Review the details for your deployment on the confirmation page. 
 
 ## Find published apps for test and full deployment 
 
@@ -57,11 +57,11 @@ You can find, test, and fully deploy published apps that do not already appear i
 
 6. Choose **Full deployment**, and then choose **Next**. 
 
->>You can also choose **Test deployment** if you're not ready to deploy to your entire organization.
+    You can also choose **Test deployment** if you're not ready to deploy to your entire organization.
 
 7. Select **Entire organization** or **Specific users/groups**, and then select **Next**. 
 
->>Specific users/groups can be a Microsoft 365 group, a security group, or a distributed group.
+    Specific users/groups can be a Microsoft 365 group, a security group, or a distributed group.
 
 8. Read and accept the terms of use, and select your account to continue deployment. 
 
