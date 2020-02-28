@@ -52,7 +52,7 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
 4. (Optional) Expand the **Spam and bulk actions** section, and verify or configure the following settings:
 
-   - **Select the action to take for incoming spam and bulk email**: Select or review the action to take on messages based on the following spam filter verdicts:
+   - **Select the action to take for incoming spam and bulk email**: Select or review the action to take on messages based on the following spam filtering verdicts:
 
      - **Spam**
      - **High confidence spam**
@@ -60,29 +60,28 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
      - **High confidence phishing email**
      - **Bulk email**
 
-     The spam filter verdicts and the available actions for messages are described in the following table.
+     The spam filtering verdicts and the available actions for messages are described in the following table.
 
-     - A check mark ( ![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) indicates the action is available (not all actions are available for all spam filter verdicts).
-     - An asterisk ( <sup>\*</sup> ) after the check mark indicates the default action for the spam filter verdict.
+     - A check mark ( ![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) indicates the action is available (not all actions are available for all spam filtering verdicts).
+     - An asterisk ( <sup>\*</sup> ) after the check mark indicates the default action for the spam filtering verdict.
      - For details about suggested values, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
     ||Spam|High<br/>confidence<br/>spam|Phishing<br/>email|High<br/>confidence<br/>phishing<br/>email|Bulk<br/>email|
     |:---|:---:|:---:|:---:|:---:|:---:|
-    |**Move message to Junk Email folder**: Delivers the message to the Junk Email folder of the specified recipients. <br/><br/> **Note**: <br/> In hybrid deployments where EOP protects on-premises mailboxes, you need to configure two Exchange mail flow rules (also known as transport rules) in your on-premises Exchange organization to detect the EOP spam filter headers that are added to messages. For details, see [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-    |**Add X-header**: Delivers the message to the specified recipients, but adds the specified X-header field (not the value) to the message header. <br/><br/> An X-header is a user-defined, unofficial header field that exists in the message header. <br/><br/> You can use this header field as a condition in Inbox rules or mail flow rules to filter or route the message. You enter the X-header field name in the **Add this X-header text** box.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-    |**Prepend subject line with text**: Delivers the message to the Junk Email folder of the specified recipients *and* prepends the subject line with the text that you specify in the **Prefix subject line with this text** box. <br/><br/> You can use this indicator text in Inbox rules or mail flow rules to filter or route the message as necessary.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-    |**Redirect message to email address**: Sends the message to a specified email address instead of the intended recipients. <br/><br/> You specify the email address in the **Redirect to this email address** box.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+    |**Move message to Junk Email folder**: Delivers the message to the Junk Email folder. <br/><br/> **Note**: In hybrid deployments where EOP protects on-premises mailboxes, you need to configure two Exchange mail flow rules (also known as transport rules) in your on-premises Exchange organization to detect the EOP spam filter headers that are added to messages. For details, see [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+    |**Add X-header**: Delivers the message, but adds the specified X-header field (not the value) to the message header. <br/>You enter the X-header field name later in the **Add this X-header text** box. <br/><br/> You can use this header field as a condition in Inbox rules or mail flow rules to filter or route the message.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+    |**Prepend subject line with text**: Adds text to the beginning of the message's subject line *and* delivers the message to the Junk Email folder. <br/>You enter the text later in the **Prefix subject line with this text** box. <br/><br/> You can use this indicator text in Inbox rules or mail flow rules to filter or route the message.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+    |**Redirect message to email address**: Sends the message to a specified email address instead of the intended recipients. <br/><br/> You specify the email address later in the **Redirect to this email address** box.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
     |**Delete message**: Silently deletes the entire message, including all attachments.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-    |**Quarantine message**: Sends the message to quarantine instead of the intended recipients. <br/><br/> You specify how long the message should be held in quarantine in the **Quarantine** box.|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-    |**Prepend subject line with text**: Delivers the message and adds the specified text to the beginning of the subject.    |![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+    |**Quarantine message**: Sends the message to quarantine instead of the intended recipients. <br/><br/> You specify how long the message should be held in quarantine later in the **Quarantine** box. <br/><br/> For information quarantine, see the following topics: <ul><li>[Quarantine](quarantine.md)</li><li>[Find and release quarantined messages as an administrator](find-and-release-quarantined-messages-as-an-administrator.md)</li><li>[Configure end-user spam notifications in EOP](configure-end-user-spam-notifications-in-eop.md)</li><li>[Configure end-user spam notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md)</li></ul>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
     |**No action**|||||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
     |
 
-   - **Select the threshold**: Specifies the threshold that identifies bulk as spam based on the Bulk Complaint Level (BCL) value of the message. The default value is 7. For more information see [Bulk Complaint Level values](bulk-complaint-level-values.md). This value is meaningful for all **Bulk email** actions except **No action**.
+   - **Select the threshold**: Specifies the Bulk Complaint Level (BCL) of a message that triggers the action you configured for the **Bulk email** spam filtering verdict. The default value is 7. For more information, see [Bulk Complaint Level values](bulk-complaint-level-values.md) and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md). This BCL threshold value is meaningful for all **Bulk email** actions except **No action**.
 
-   - **Quarantine**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filter verdict. After the time period expires, the message is deleted. The default value is 30 days. A valid value is from 1 to 30 days.
+   - **Quarantine**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted. The default value is 30 days. A valid value is from 1 to 30 days.
 
-   - **Add this X-header text**: This box is required and available only if you selected **Add X-header** as the action for a spam filter verdict. The value you specify is the header field *name* that's added to the message header. The header field *value* is always `This message appears to be spam`.
+   - **Add this X-header text**: This box is required and available only if you selected **Add X-header** as the action for a spam filtering verdict. The value you specify is the header field *name* that's added to the message header. The header field *value* is always `This message appears to be spam`.
 
      A valid value is text without spaces. For example, the value `This-is-my-custom-header` adds the following header field and value to the message: `This-is-my-custom-header: This message appears to be spam.`.
 
@@ -94,161 +93,137 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
      Note that messages that contain this X-header might be still delivered to the Junk Mail folder based on the user's junk configuration on their own mailbox. For more information, see [Troubleshooting: A message is delivered to the Junk email folder after passing anti-spam filtering](prevent-email-from-being-marked-as-spam.md#troubleshooting-a-message-is-delivered-to-the-junk-email-folder-after-passing-anti-spam-filtering).
 
-   - **Prepend subject line with this text**: This box is required and available only if you selected **Prepend subject line with text** as the action for a spam filter verdict. Enter the text to add to the beginning of the **Subject** field in the message.
+   - **Prepend subject line with this text**: This box is required and available only if you selected **Prepend subject line with text** as the action for a spam filtering verdict. Enter the text to add to the beginning of the message's subject line.
 
-   - **Redirect to this email address**: This box is required and available only if you selected the **Redirect message to email address** as the action for a spam filter verdict. Enter the email address where you want to deliver the message.
+   - **Redirect to this email address**: This box is required and available only if you selected the **Redirect message to email address** as the action for a spam filtering verdict. Enter the email address where you want to deliver the message.
 
-   - **Safety Tips**
+   - **Safety Tips**: This value is no longer used.
 
-   - **Spam ZAP**: Zero-hour auto purge (ZAP) is able to tack action on messages that have already been delivered to an Exchange Online mailbox. By default, ZAP is enabled for spam detections, but you can disable it by clearing the **On** checkbox. For more information about ZAP, see [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md).
+   **Zero-hour auto purge** settings: ZAP detects and takes action on messages that have already been delivered to Exchange Online mailboxes. For more information about ZAP, see [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md).
+
+   - **Spam ZAP**: By default, ZAP is enabled for spam detections, but you can disable it by clearing the **On** checkbox.
 
    - **Phish ZAP**: By default, ZAP is enabled for phish detections, but you can disable it by clearing the **On** checkbox.
 
 5. (Optional) Expand the **Allow lists** section to configure message senders by email address or email domain that are allowed to skip spam filtering:
 
+   > [!CAUTION]
+   >  Think very carefully before you add domains here. For more information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
+
 6. (Optional) Expand the **Block lists** section to configure message senders by email address or email domain that are blocked by spam filtering:
+
+   > [!NOTE]
+   > Manually blocking domains isn't dangerous, but it can increase your administrative workload. For more information, see [Create block sender lists in Office 365](create-block-sender-lists-in-office-365.md).
 
 7. (Optional) Expand the **International spam** section to configure the email languages or source countries that are blocked by spam filtering:
 
-8. (Optional) Expand the **Spam properties** section to turn on the following settings that are turned off by default:
+8. The optional **Spam properties** section contains Advanced Spam Filter (ASF) settings that are turned off by default. ASF settings are in the process of being deprecated. The functionality of these ASF settings is being incorporated into other parts of the filtering stack. We recommend that you turn off all ASF settings in any of your anti-spam policies.
 
-   - Expand the **Increase spam score** section to configure the following settings that will increase the spam score of affected messages. Valid values are **Off** (default), **On**, or **Test**.
-
-     - **Image links to remote sites**
-
-     - **URL redirect to other port**
-
-     - **Numeric IP address in URL**
-
-     - **Url to .bix or .info websites**
-
-   - Expand the **Mark as spam** section to configure the following settings that will cause spam filtering to block the affected messages as spam.
-
-     Valid values for the following settings are **Off** (default), **On**, or **Test**.
-
-     - **Empty messages**
-
-     - **JavaScript or VBScript in HTML**
-
-     - **Frame or IFrame tags in HTML**
-
-     - **Object tags in HTML**
-
-     - **Embed tags in HTML**
-
-     - **Form tags in HTML**
-
-     - **Web bugs in HTML**
-
-     - **Apply sensitive word list**
-
-     Valid values for the following settings are on (default) or **Off**:
-
-     - **SPF record: hard fail**
-
-     - **Conditional Sender ID filtering: hard fail**
-
-     - **NDR backscatter**
-
-   - Expand the **Test mode options** section to configure the action if you configured the value **Test** for any of the settings in the previous **Increase spam score** or **Mark as spam** sections. Valid values are:
-
-     - **None** (default)
-
-     - **Add default X-header text**
-
-     - **Send Bcc message**
+   For details about these settings, see [Advanced Spam Filter settings in Office 365](advanced-spam-filtering-asf-options.md).
 
 9. (Required) Expand the **Applied to** section to identify the internal recipients that the policy applies to.
 
     You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
 
-    It's easiest to click **Add a condition** three times to see all of the available conditions. You can click **Remove** ![Remove button](../media/scc-remove-icon.png) to remove any conditions that you don't want to configure.
+    It's easiest to click **Add a condition** three times to see all of the available conditions. You can click **Remove** ![Remove button](../media/scc-remove-icon.png) to remove conditions that you don't want to configure.
 
        - **The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in Office 365. Click in the **Add a tag** box to see and select a domain. Click again the **Add a tag** box to select additional domains if more than one domain is available.
 
        - **Recipient is**: Specifies one or more mailboxes, mail users, or mail contacts in your organization. Click in the **Add a tag** and start typing to filter the list. Click again the **Add a tag** box to select additional recipients.
 
-       - **Recipient is a member of**: Specifies one or more groups in your organization. Click in the **Add a tag** and start typing to filter the list. Click again the **Add a tag** box to select additional recipients.
+       - **Recipient is a member of**: Specifies one or more mail-enabled security groups in your organization. Click in the **Add a tag** and start typing to filter the list. Click again the **Add a tag** box to select additional recipients.
 
      - **Except if**: To add exceptions for the rule, click **Add a condition** three times to see all of the available exceptions. The settings and behavior are exactly like the conditions.
 
 10. When you're finished, click **Save**.
 
-## Access and create spam filter policies
+## Use the Security & Compliance Center to view anti-spam policies
 
-Inside the Anti-spam settings page, the default settings can be viewed in the Standard tab. To change these settings, switch to the **Custom** tab. You will be able to see and configure some of the default settings inside the Default spam filter policy.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
 
-To enable more custom settings or to add custom policies, change the **Custom settings** selector to **On** to enable custom spam filter policies. You can view existing custom policies by expanding them from here.
+2. On the **Anti-spam settings** page, click the drop down next to one of the following anti-spam policies:
 
-## Configure custom spam filter policy settings
+   - The default policy named **Default spam filter policy**.
 
-1. Select and click **Edit policy** if you are editing a policy; otherwise, click on **Create a policy**
+   - A custom policy that you created where the value in the **Type** column is **Custom anti-spam policy**.
 
-2. You can specify a unique name for custom policies but you can not rename the default one. Optionally, you can also specify a more detailed description for any policy.
+3. The policy settings are displayed in the drop down that opens.
 
-3. Under the **Spam and bulk actions** section:
+## Use the Security & Compliance Center to modify anti-spam policies
 
-   - Select an action for the **Spam**, **High confidence spam**, **High confidence phishing email**, **Phishing email**, and **Bulk email** types. The available values are:
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
 
-     - **Move message to Junk Email folder**: Sends the message to the Junk Email folder of the specified recipients. This is the default action for spam, high confidence spam, and bulk.
+2. On the **Anti-spam settings** page, click the drop down next to one of the following anti-spam policies:
 
-       > [!NOTE]
-       > In order for this action to work with on-premises mailboxes, you must configure two Exchange mail flow rules (also known as  transport rules) on your on-premises servers to detect spam headers added by EOP. For details, see how to [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). This step is critical for standalone Exchange Online Protection (EOP) customers.
+   - The default policy named **Default spam filter policy**.
 
-     - **Add X-header**: Sends the message to the specified recipients, but adds X-header text to the message header in order to identify the message as spam. Using this text as an identifier, you can optionally create inbox rules or use a downstream device to act on the message. The default X-header text is **This message appears to be spam**.
+   - A custom policy that you created where the value in the **Type** column is **Custom anti-spam policy**.
 
-       You can customize the X-header text by using the **Add this X-header text** input box. If you customize the X-header text, be aware of the following conditions:
+3. Click **Edit policy**.
 
-       - If you specify only the header in the format \< *header*  \>, where there are no spaces within the \<  *header*  \>, a colon will be appended to the custom text, followed by the default text. For example, if you specify "This-is-my-custom-header," the X-header text will appear as "This-is-my-custom-header: This message appears to be spam."
+For custom anti-spam policies, the available settings in the flyout that appears are identical to those described in the [Use the Security & Compliance Center to create anti-spam policies](#use-the-security--compliance-center-to-create-anti-spam-policies) section.
 
-       - If you include spaces within the custom header text, or if you add the colon yourself (such as "X This is my custom header" or "X-This-is-my-custom-header:"), the X-header text reverts to the default as "X-This-Is-Spam: This message appears to be spam."
+For the default anti-spam policy named **Default spam filter policy**, the **Applied to** section isn't available (the policy applies to everyone), and you can't rename the policy.
 
-       - You can't specify the header text in the format \<*header*\>:\<*value*\>. If you do this, both values before and after the colon will be ignored, and the default X-header text appears instead: "X-This-Is-Spam: This message appears to be spam."
+To enable or disable a policy, set the policy priority order, or configure the end-user quarantine notifications, see the following sections.
 
-       - Be aware that mails with this X-header might be still moved to mailbox Junk Mail folder due to mailbox junk configuration. You can change this by disabling this feature with Set-MailboxJunkEmailConfiguration.
+### Enable or disable anti-spam policies
 
-   - **Prepend subject line with text:** Sends the message to the intended recipients but prepends the subject line with the text that you specify in the **Prefix subject line with this text** input box. Using this text as an identifier, you can optionally create rules to filter or route the messages as necessary.
+You can't disable the default anti-spam policy named **Default spam filter policy**.
 
-     > [!NOTE]
-     > The message will still be routed to the Junk Email folder.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
 
-   - **Redirect message to email address:** Sends the message to a designated email address instead of to the intended recipients. Specify the "redirect" address in the **Redirect to this email address** input box.
+2. On the **Anti-spam settings** page, click the drop down next to a custom policy that you created where the value in the **Type** column is **Custom anti-spam policy**.
 
-   - **Delete message:** Deletes the entire message, including all attachments.
+3. In the drop down that opens, in the **On** column, move the slider to the right to enable a disabled policy. Move the slider to the left to enable a disabled policy.
 
-   - **Quarantine message:** Sends the message to quarantine instead of to the intended recipients. This is the default action for phish. If you select this option, in the **Retain spam for (days)** input box, specify the number of days during which the spam message will be quarantined. (It will automatically be deleted after the time elapses. The default value is 30 days which is the maximum value. The minimum value is 1 day).
+### Set the priority of custom anti-spam policies
 
-     > [!TIP]
-     > For information about how admins can manage email messages in the quarantine, see [Quarantine](quarantine.md) and [Find and release quarantined messages as an administrator](find-and-release-quarantined-messages-as-an-administrator.md). <br/><br/> For information about how to configure spam notification messages for users, see [Configure end-user spam notifications in EOP](configure-end-user-spam-notifications-in-eop.md) or [Configure end-user spam notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md).
+By default, anti-spam policies are given a priority that's based on the order they were created in (newer polices are lower priority than older policies). A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies). No two policies can have the same priority.
 
-   - Configure **Select the threshold** to determine how you want to treat bulk email as spam, based on the Bulk Complaint Level (BCL) of the message. You can choose a threshold setting from 1 to 9, where 1 indicates most bulk email as spam, and 9 allows the most bulk email to be delivered. The service then performs the configured action, such as sending the message to the recipient's Junk Email folder. See [Bulk Complaint Level values](bulk-complaint-level-values.md) and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md) for more details.
+ **Notes**:
 
-4. On the **Spam Properties** page, you can set the Test mode options for the policy by configuring:
+- In the Security & Compliance Center, you can only change the priority of the anti-spam policy after you create it. In PowerShell, you can override the default priority when you create the spam filter rule (which can affect the priority of existing rules).
 
-   - **None** Take no test mode action on the message. This is the default.
+- In the Security & Compliance Center, custom anti-spam policies are displayed in the order they're processed (the first policy has the **Priority** value 0). The default anti-spam policy named **Default spam filter policy** has the priority value **Lowest**, and you can't change it.
 
-   - **Add the default test X-header text** Selecting this option sends the message to the specified recipients, but also adds a special X-header to the message to identify it as having matched a specific advanced spam filtering option.
+To change the priority of a policy, move the policy up or down in the list (you can't directly modify the **Priority** number in the Security & Compliance Center).
 
-   - **Send a Bcc message to this address** Selecting this option sends a blind carbon copy of the message to the email address that you specify in the input box. <br/><br/>For more information about the advanced spam filtering options, including descriptions about each option and the X-header text that is associated with each one, see [Advanced spam filtering  options](advanced-spam-filtering-asf-options.md).
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
 
-5. For custom policies only, click the **Apply to** menu item, and then create a condition-based rule to specify the users, groups, and domains to which to apply this policy. You can create multiple conditions, if they are unique.
+2. On the **Anti-spam settings** page, identify the policies where the value in the **Type** column is **Custom anti-spam policy**. Notice the values in the **Priority** column:
 
-   - To select users, select **The recipient is**. In the subsequent dialog box, select one or more senders from your company from the user picker list, and then click **add**. To add senders who aren't on the list, type their email addresses, and then click **Check names**. In this box, you can also use wildcards for multiple email addresses (for example: \*@ _domainname_). When you are done making your selections, click **ok** to return to the main screen.
+   - The custom anti-spam policy with the highest priority has the value ![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) **0**.
 
-   - To select groups, select **The recipient is a member of**. Then, in the subsequent dialog box, select or specify the groups. Click **ok** to return to the main screen.
+   - The custom anti-spam policy with the lowest priority has the value ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png) **n** (for example, ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png) **3**).
 
-   - To select domains, select **The recipient domain is**. Then, in the subsequent dialog box, add the domains. Click **ok** to return to the main screen.
+   - If you have three or more custom anti-spam policies, the policies in between the highest and lowest priority have values ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png)![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) **n** (for example, ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png)![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) **2**).
 
-     You can create exceptions within the rule. For example, you can filter messages from all domains except for a certain domain. Click **add exception**, and then create your exception conditions similar to the way that you created the other conditions.
+3. Click ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png) or ![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) to move the custom anti-spam policy up or down in the priority list.
 
-     Applying a spam policy to a group is supported only for **Mail Enabled Security Groups**.
+### Configure end-user spam quarantine notifications
 
-6. Click **Save**. A summary of your policy settings appears in the right pane.
+When a spam filtering verdict quarantines a message, you can configure end-user spam notifications to let recipients know what happened to messages that were sent to them. For more information, see [Use end-user spam notifications to release and report spam-quarantined messages](use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md).
 
-You can't disable or delete the default policy, and custom policies always take precedence over the default policy. For custom policies, you can select or clear the check boxes in the **ENABLED** column to enable or disable them. By default, all policies are enabled. To delete a custom policy, select the policy, click **Delete** ![Delete icon](../../media/ITPro-EAC-DeleteIcon.gif), and then confirm that you want to delete the policy.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
 
-> [!TIP]
-> You can change the priority (running order) of your custom policies by clicking the ![Up Arrow Icon](../../media/ITPro-EAC-UpArrowIcon.gif) up arrow and ![Down Arrow Icon](../../media/ITPro-EAC-DownArrowIcon.gif) down arrow. The policy that has a **PRIORITY** of **0** will run first, followed by **1**, then **2**, and so on.
+2. On the **Anti-spam settings** page, click the drop down next to one of the following anti-spam policies:
+
+   - The default policy named **Default spam filter policy**.
+
+   - A custom policy that you created where the value in the **Type** column is **Custom anti-spam policy**.
+
+3. In the drop down that opens, click **Configure end-user spam notifications**.
+
+4. In the **\<Policy Name\>** dialog that opens, configure the following settings:
+
+   - **Enable end-user spam notifications**:
+
+   - **Send end-user spam notifications every (days)**:
+
+   - **Notification language**: Click the drop down an select an available language from the list. The default value is **Default**, which means end-user quarantine notifications use the default language of the EOP organization.
+
+## Use the Security & Compliance Center to remove anti-spam policies
 
 ## Use Exchange Online PowerShell or Exchange Online Protection PowerShell to configure anti-spam policies
 
@@ -277,7 +252,7 @@ Creating an anti-spam policy in PowerShell is a two-step process:
 To create a spam filter policy, use this syntax:
 
 ```PowerShell
-New-HostedContentFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<OptionalComments>"]
+New-HostedContentFilterPolicy -Name "<PolicyName>" <Additional Settings>
 ```
 
 This example creates a spam filter policy named Contoso Spam Filter Policy with the following settings:

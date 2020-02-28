@@ -26,7 +26,7 @@ Most of us have friends and business partners we trust. It can be frustrating to
 
 - **IP Block List**: Block all incoming messages from the source email servers that you specify by IP address or IP address range. The incoming messages are rejected, are not marked as spam, and no additional filtering occurs .For more information about how the IP Block List should fit into your overall blocked senders strategy, see [Create block sender lists in Office 365](create-block-sender-lists-in-office-365.md).
 
-- **Safe list**: The *safe list* is a dynamic allow list in the Microsoft datacenter that requires no customer configuration. Microsoft identifies these trusted senders from subscriptions to various third-party lists of trusted email sources. You enable or disable the use of the safe list; you can't configure the source email servers on the safe list. Spam filtering is skipped on incoming messages from the email servers on the safe list.
+- **Safe list**: The *safe list* is a dynamic allow list in the Microsoft datacenter that requires no customer configuration. Microsoft identifies these trusted email sources from subscriptions to various third-party lists. You enable or disable the use of the safe list; you can't configure the source email servers on the safe list. Spam filtering is skipped on incoming messages from the email servers on the safe list.
 
 This topic describes how to configure the default connection filter policy in the Office 365 Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Office 365 customers; Exchange Online Protection PowerShell for standalone EOP customers). For more information about how EOP uses connection filtering is part of your organization's overall anti-spam settings, see see [Anti-spam protection in Office 365](anti-spam-protection.md).
 
@@ -34,6 +34,8 @@ This topic describes how to configure the default connection filter policy in th
 > The IP Allow List, safe list, and the IP Block List are one part of your overall strategy to allow or block email in your organization. For more information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md), [How to prevent good email messages from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md), and [Create blocked sender lists in Office 365](create-block-sender-lists-in-office-365.md).
 
 ## What do you need to know before you begin?
+
+- You open the Security & Compliance Center at <https://protection.office.com/>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
@@ -47,13 +49,11 @@ This topic describes how to configure the default connection filter policy in th
 
 ## Use the Security & Compliance Center to modify the default connection filter policy
 
-1. Open the Security & Compliance Center at <https://protection.office.com/>.
+1. In the Security & Compliance Center and go to **Threat management** \> **Policy** \> **Anti-Spam**.
 
-2. Go to **Threat management** \> **Policy** \> **Anti-Spam**.
+2. On the **Anti-spam settings** page, click the drop down next to **Connection filter policy**, and then click **Edit policy**.
 
-3. On the **Anti-spam settings** page, click the drop down next to **Connection filter policy (always ON**), and then click **Edit policy**.
-
-4. In the **Default** flyout that appears, configure any of the following settings:
+3. In the **Default** flyout that appears, configure any of the following settings:
 
    - **Description**: Enter optional descriptive text.
 
@@ -73,7 +73,15 @@ This topic describes how to configure the default connection filter policy in th
 
    - **Turn on safe list**: Enable or disable the use of the safe list to identify known, good senders that will skip spam filtering.
 
-5. When you're finished, click **Save**.
+4. When you're finished, click **Save**.
+
+## Use the Security & Compliance Center to view the default connection filter policy
+
+1. In the Security & Compliance Center and go to **Threat management** \> **Policy** \> **Anti-Spam**.
+
+2. On the **Anti-spam settings** page, click the drop down next to the default policy named **Connection filter policy**.
+
+3. The policy settings are displayed in the drop down that opens.
 
 ## Use Exchange Online PowerShell or standalone Exchange Online Protection PowerShell to modify the default connection filter policy
 
@@ -129,7 +137,7 @@ To verify that you've successfully modified the default connection filter policy
 
 ## Additional considerations for the IP Allow List
 
-The following sections identify additional items that you need to know about when you configure your IP Allow List.
+The following sections identify additional items that you need to know about when you configure the IP Allow List.
 
 ### Skip spam filtering for a CIDR IP outside of the available range
 
