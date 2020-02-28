@@ -261,7 +261,7 @@ For each example that follows, do the configuration from the **Encryption** page
 
 ### Example 1: Label that applies Do Not Forward to send an encrypted email to a Gmail account
 
-This label is available only in Outlook and Outlook on the web and you must use Exchange Online. Instruct users to select this label when they need to send an encrypted email to people using a Gmail account (or any other email account outside your organization). 
+This label displays only in Outlook and Outlook on the web, and you must use Exchange Online. Instruct users to select this label when they need to send an encrypted email to people using a Gmail account (or any other email account outside your organization). 
 
 Your users type the Gmail email address in the **To** box.  Then, they select the label and the Do Not Forward option is automatically added to the email. The result is that recipients cannot forward the email, or print it, copy from it, or save the email outside their mailbox by using the **Save As** option. 
 
