@@ -38,6 +38,8 @@ You can only manage payment methods that you've added.
 >
 > You must use a credit card issued from the same country as your tenant.
 
+**Does the interface you see not match the one described in this article?** If so, see [Manage payment methods](manage-payment-methods.md).
+
 ## Add a payment method
 
 1. In the admin center, go to the **Billing** > **Bills & payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.
