@@ -2,9 +2,9 @@
 title: "Detect and Remediate Illicit Consent Grants in Office 365"
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyp
+manager: dansimp
 ms.date:
 audience: ITPro
 ms.topic: article
