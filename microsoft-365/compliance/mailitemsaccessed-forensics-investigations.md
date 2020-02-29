@@ -1,5 +1,5 @@
 ---
-title: "Use mailbox auditing records to investigate compromised accounts"
+title: "Use Advanced Audit to investigate compromised accounts"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

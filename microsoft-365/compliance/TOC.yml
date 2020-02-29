@@ -726,7 +726,7 @@
           href: advanced-audit.md
         - name: Manage audit log retention policies
           href: audit-log-retention-policies.md
-        - name: Investigate compromised accounts
+        - name: Use Advanced Audit to investigate compromised accounts
           href: mailitemsaccessed-forensics-investigations.md
     - name: Alert policies
       href: alert-policies.md
