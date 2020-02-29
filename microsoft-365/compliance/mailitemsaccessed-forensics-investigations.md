@@ -18,16 +18,11 @@ ms.assetid:
 description: "Use the MailItemsAccessed mailbox auditing action to perform forensic investigations of compromised user accounts."
 ---
 
-# Use mailbox auditing records to investigate compromised accounts
+# Use Advanced Audit to investigate compromised accounts
 
 A compromised user account (also called an *account takeover*) is a type of attack when an attacker gains access to a user account and operates as the user. These types of attacks sometimes cause more damage than the attacker may have intended. When investigating compromised email accounts, you have to assume that more mail data was compromised than may be indicated by tracing the attacker's actual presence. Depending on the type of data in email messages, you have to assume that sensitive information was compromised or face regulatory fines unless you can prove that sensitive information wasn't exposed. For example, HIPAA-regulated organizations face significant fines if there is evidence that patient health information (PHI) was exposed. In these cases, attackers are unlikely to be interested in PHI, but organizations still must report data breaches unless they can prove otherwise.
 
 To help you with investigating compromise email accounts, we're now auditing accesses of mail data by mail protocols and clients with the *MailItemsAccessed* mailbox auditing action. This new audited action will help investigators better understand email data breaches and help you identify the scope of compromises to specific mail items that may been compromised. The goal of using this new auditing action is forensics defensibility to help assert that a specific piece of mail data was not compromised. If an attacker gained access to a specific piece of mail, Exchange Online audits the event even though there is no indication that the mail item was actually read.
-
-We can remove this note, not particulary useful
-
-> [!NOTE]
-> Access to user mailboxes by eDiscovery searches is audited separately in the Microsoft 365 audit log. eDiscovery won't generate MailItemsAccessed audit records. For more information, see [Search for eDiscovery activities in the Microsoft 365 audit log](search-for-ediscovery-activities-in-the-audit-log.md).
 
 ## The MailItemsAccessed mailbox auditing action
 
@@ -65,10 +60,7 @@ See step 1 in the [Use MailItemsAccessed audit records for forensic investigatio
 
 ## Use MailItemsAccessed audit records for forensic investigations
 
-We should rephrase this - 
-The mainstream scenario for the MailItemsAccessed action is in some ways a paradox: Mailbox auditing generates audit records for access to email messages so that you can be confident that email messages haven't been compromised. 
-
-For this reason, in circumstances where we're not certain that some data has been accessed, we assume that it has by recording all mail access activity.
+Mailbox auditing generates audit records for access to email messages so that you can be confident that email messages haven't been compromised. For this reason, in circumstances where we're not certain that some data has been accessed, we assume that it has by recording all mail access activity.
 
 Using MailItemsAccessed audit records for forensics purposes is typically performed after a data breach has been resolved and the attacker has been evicted. To begin your investigation, you should identify the set of mailboxes that they have been compromised and determine the time frame when attacker had access to mailboxes in your organization. Then, you can use the **Search-UnifiedAuditLog** or **Search-MailboxAuditLog** cmdlets in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) to search audit records that correspond to the data breach. 
 
