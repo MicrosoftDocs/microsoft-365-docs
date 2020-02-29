@@ -26,24 +26,32 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-
-
 Microsoft Threat Protection unifies your incident response process by integrating key capabilities across Microsoft Defender Advanced Threat Protection (ATP), Office 365 ATP, Microsoft Cloud App Security, and Azure ATP. This unified experience adds powerful features you can access in the Microsoft 365 security center.
 
-## Check license eligibility and required permissions
-Customers with Microsoft 365 E5, Microsoft 365 E5 Security, or an equivalent combination of licenses can use Microsoft Threat Protection. For more information, [read the licensing requirements](prerequisites.md#licensing-requirements).
+To get the best protection and optimize Microsoft Threat Protection, we recommend deploying all applicable supported services on your network. For more information, [read about deploying supported services](deploy-supported-services.md).
 
-You must be a **global administrator** or a **security administrator** in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to turn on Microsoft Threat Protection.
+## Check license eligibility and required permissions
+A valid license or combination of licenses for the following supported services entitles you to use Microsoft Threat Protection in Microsoft 365 security center. 
+
+- Microsoft Defender ATP
+- Office 365 ATP
+- Azure ATP
+- Microsoft Cloud App Security
+
+For specific license information, [read the licensing requirements](prerequisites.md#licensing-requirements).
+
+### Check your role
+You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft Threat Protection. [View your roles in Azure AD](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## Start using the service
 Microsoft Threat Protection aggregates data from the various integrated services. It will process and store data centrally to identify new insights and make centralized response workflows possible.
 
-Before you turn on the service, the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) doesn't show the **Incidents** and the **Action center** options in the navigation pane.
+Before you turn on the service, the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) shows the Microsoft Threat Protection welcome page when you select **Incidents**, **Action center**, or **Hunting** from the navigation pane. These navigation options are not shown if you are not eligible to use Microsoft Threat Protection.
 
-![Image of Microsoft 365 security center navigation pane without Microsoft Threat Protection features](../../media/mtp-off.png)
-*Microsoft 365 security center with Microsoft Threat Protection turned off*
+![Image of the Microsoft Threat Protection welcome page shown if Microsoft Threat Protection has not been turned on](../../media/mtp-off.png)
+*Microsoft Threat Protection welcome page in Microsoft 365 security center*
 
-To turn on Microsoft Threat Protection, select **Settings** in the navigation pane. In the **[Settings page](https://security.microsoft.com/settings)**, go to **Microsoft Threat Protection** > **Opt-in / Opt-out**.
+To turn on Microsoft Threat Protection, simply complete the process from the welcome page. You can also turn on Microsoft Threat Protection by accessing **Settings** ([security.microsoft.com/settings](https://security.microsoft.com/settings)) in the navigation pane and selecting **Microsoft Threat Protection**.
 
 >[!NOTE]
 >If you don't see **Settings** in the navigation pane or couldn't access the page, check your permissions and licenses.
@@ -58,7 +66,7 @@ Once the service is provisioned, it adds:
 
 - [Incidents management](incidents-overview.md)
 - An action center for managing [automated investigation and response](mtp-autoir.md)
-- [Advanced hunting](advanced-hunting-overview.md) capabilities to the existing **Hunting** page
+- [Advanced hunting](advanced-hunting-overview.md) capabilities
 
 ![Image of Microsoft 365 security center navigation pane with Microsoft Threat Protection features](../../media/mtp-on.png)
 *Microsoft 365 security center with incidents management and other Microsoft Threat Protection capabilities*
@@ -80,6 +88,7 @@ Microsoft support staff can help provision or deprovision the service and relate
 
 - [Microsoft Threat Protection overview](microsoft-threat-protection.md)
 - [Licensing requirements and other prerequisites](prerequisites.md)
+- [Deploy supported services](deploy-supported-services.md)
 - [Microsoft Defender ATP overview](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Office 365 ATP overview](../office-365-security/office-365-atp.md)
 - [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
