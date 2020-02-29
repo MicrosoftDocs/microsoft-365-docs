@@ -58,7 +58,7 @@ The difference between these two elements isn't obvious when you manage anti-spa
 
 - When you create an anti-spam policy in the Security & Compliance Center, you're actually creating a spam filter rule and the associated anti-spam policy at the same time using the same name for both.
 
-- When you modify a anti-spam policy in the Security & Compliance Center, settings related to the name, priority, enabled or disabled, and recipient filters modify the spam filter rule. Other settings (actions based on the filter verdict, enabling or disabling ZAP for spam and phish, etc.) modify the associated spam filter policy.
+- When you modify a anti-spam policy in the Security & Compliance Center, settings related to the name, priority, enabled or disabled, and recipient filters modify the spam filter rule. All other settings modify the associated spam filter policy.
 
 - When you remove an anti-spam policy from the Security & Compliance Center, the spam filter rule and the associated spam filter policy are removed.
 
