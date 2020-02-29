@@ -54,7 +54,7 @@ The following Intune improvement actions will be removed:
 - Require all devices to have advanced security configurations
 - Review blocked devices report weekly
 
-### Removing improvement actions that don't meet expectations for reliable measurement
+### Removing improvement actions that don't meet expectations for reliable measurement 
 
 To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement actions.
 
@@ -88,7 +88,7 @@ For these reasons, all improvement actions that required a review cadence will b
 
 ## March 16th 2020
 
-### Removing improvement actions that don't meet expectations for reliable measurement
+### Removing improvement actions that don't meet expectations for reliable measurement or don't provide a useful representation of security posture
 
 To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement actions.
 
@@ -97,6 +97,7 @@ To ensure that the Microsoft Secure Score is meaningful and that every improveme
 - Set up Office 365 Safe Links to verify URLs
 - Do not allow mailbox delegation
 - Allow anonymous guest sharing links for sites and docs
+- Turn on Cloud App Security Console
 
 ### Supporting security defaults for Azure AD improvement actions
 
