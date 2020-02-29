@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Sierra Leone
 author: cmcatee-MSFT
 f1.keywords:

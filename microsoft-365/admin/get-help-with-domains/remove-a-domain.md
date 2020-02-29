@@ -25,7 +25,7 @@ description: "Learn how to remove an old domain from Office 365 and move users a
 
 # Remove a domain from Office 365
 
-Contributors: [![Peter Baumgartner](../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
+Contributors: [![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
   

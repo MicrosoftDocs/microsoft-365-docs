@@ -69,7 +69,7 @@ Make sure you purchase a subscription for the same organization that the users a
 
    **The new Office 365 for business subscription with available licenses**
 
-    ![The subscription page showing the number of licenses for the new subscription.](../../admin/media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
+    ![The subscription page showing the number of licenses for the new subscription.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
 3. **Check that you have enough licenses for each user**
 
@@ -110,7 +110,7 @@ The licenses for the current subscription will be removed later; you'll only pay
     > [!TIP]
     > To limit which services are available to the user, switch the toggles to the **Off** position for the services that you want to remove for that user. For example, if you want the user to have access to all available services except Skype for Business Online, you can switch the toggle for the Skype for Business Online service to the **Off** position.
   
-    ![Setting license assignments for a user.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 5. Switch the toggle to the **Off** position for licenses that this user no longer needs.
 
@@ -136,7 +136,7 @@ The licenses for the current subscription will be removed later; you'll only pay
     > - To limit which services are available to the user, switch to toggles to the **Off** position for the services that you want to remove for that user. For example, if you want the user to have access to all available services except Skype for Business Online, you can switch the toggle for the Skype for Business Online service to the **Off** position.
     > - Any previous license assignments for the selected users will be removed.
   
-    ![Setting license assignments for a user.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. At the bottom of the **Replace existing products** pane, select **Replace** \> **Close**.
 
