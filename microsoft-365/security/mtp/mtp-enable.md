@@ -31,14 +31,9 @@ Microsoft Threat Protection unifies your incident response process by integratin
 To get the best protection and optimize Microsoft Threat Protection, we recommend deploying all applicable supported services on your network. For more information, [read about deploying supported services](deploy-supported-services.md).
 
 ## Check license eligibility and required permissions
-A valid license or combination of licenses for the following supported services entitles you to use Microsoft Threat Protection in Microsoft 365 security center. 
+A Microsoft 365 E5 or E5 Security license or a valid combination of licenses provides access to supported services and entitles you to use Microsoft Threat Protection in Microsoft 365 security center.
 
-- Microsoft Defender ATP
-- Office 365 ATP
-- Azure ATP
-- Microsoft Cloud App Security
-
-For specific license information, [read the licensing requirements](prerequisites.md#licensing-requirements).
+For detailed licensing information, [read the licensing requirements](prerequisites.md#licensing-requirements).
 
 ### Check your role
 You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft Threat Protection. [View your roles in Azure AD](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)

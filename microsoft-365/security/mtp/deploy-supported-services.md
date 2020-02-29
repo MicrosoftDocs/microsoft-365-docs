@@ -31,7 +31,7 @@ search.appverid:
 [Microsoft Threat Protection](microsoft-threat-protection.md) integrates various Microsoft security services to provide centralized detection, prevention, and investigation capabilities against sophisticated attacks. This article describes the supported services, their licensing requirements, the advantages and limitations associated with deploying one or more services, and links to how you can fully deploy them individually.
 
 ## Supported services
-A valid license or combination of licenses for the following supported services entitles you to use Microsoft Threat Protection in Microsoft 365 security center.
+A [Microsoft 365 E5 or E5 Security license or a valid combination of licenses](prerequisites.md#licensing-requirements) provides access to the following supported services and entitles you to use Microsoft Threat Protection in Microsoft 365 security center.
 
 | Supported service | Description |
 | ------ | ------ |
@@ -39,8 +39,6 @@ A valid license or combination of licenses for the following supported services 
 | Office 365 ATP | Advanced protection for your apps and data in Office 365, including email and other collaboration tools |
 | Azure ATP | Safeguard against advanced threats, compromised identities, and malicious insiders using correlated Active Directory signals |
 | Microsoft Cloud App Security | Identifies and combats cyberthreats across your Microsoft and third-party cloud services |
-
-For information about the licenses you need to use Microsoft Threat Protection, [read the licensing requirements](prerequisites.md#licensing-requirements).
 
 ## Deployed services and functionality
 Microsoft Threat Protection provides better visibility, correlation, and remediation as you deploy more supported services.
@@ -60,12 +58,10 @@ The table below lists how each supported service provides additional data, oppor
 | ------ | ------ | ------ |
 | Microsoft Defender ATP | - Endpoint states and raw events<br />- Endpoint detections and alerts, including antivirus, EDR, attack surface reduction<br />- Info on files and other entities observed on endpoints | Endpoints |
 | Office 365 ATP | - Mail and mailbox states and raw events<br />- Email, attachment, and link detections | - Mailboxes<br />- Office 365 accounts |
-| Azure ATP | - Active Directory signals, including authentication events<br />- Behavior identity-related detections | Identities |
+| Azure ATP | - Active Directory signals, including authentication events<br />- Identity-related behavioral detections | Identities |
 | Microsoft Cloud App Security | - Detection of unsanctioned cloud apps & services (shadow IT)<br />- Exposure of data to cloud apps<br />- Threat activity associated cloud apps | Cloud apps |
 
 ## Deploy the services
-While you can always turn on Microsoft Threat Protection with a valid license, we recommend that you deploy at least one of the supported services first.
-
 Deploying each service typically requires provisioning to your tenant and some initial configuration. See the following table to understand how each of these services are deployed.
 
 | Service | Provisioning instructions | Initial configuration |
