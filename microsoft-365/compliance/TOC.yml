@@ -335,8 +335,9 @@
 - name: Manage eDiscovery
   items:
     - name: Content search
-      href: search-for-content.md
       items:
+        - name: Overview of content search
+          href: search-for-content.md
         - name: Use the content search tool
           href: content-search.md
           items: 
@@ -396,11 +397,24 @@
             href: create-report-on-and-delete-multiple-content-searches.md
           - name: Clone a search
             href: clone-a-content-search.md
-
     - name: Core eDiscovery
       items:
-
-
+        - name: Manage eDiscovery cases
+          href: ediscovery-cases.md
+        - name: Core eDiscovery reference
+          items:
+          - name: Assign eDiscovery permissions
+            href: assign-ediscovery-permissions.md
+          - name: Set up compliance boundaries for Core eDiscovery investigations
+            href: set-up-compliance-boundaries.md
+          - name: Use a script to add users to a hold in an eDiscovery case
+            href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
+          - name: Create a report on holds in Core eDiscovery cases
+            href: create-a-report-on-holds-in-ediscovery-cases.md
+          - name: Search and purge spilled data
+            href: data-spillage-scenariosearch-and-purge.md
+          - name: Troubleshoot common eDiscovery issues
+            href: ediscovery-troubleshooting-common-issues.md
     - name: Advanced eDiscovery
       items:
         - name: Overview of Advanced eDiscovery
@@ -498,9 +512,7 @@
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: Advanced eDiscovery reference
           items: 
-            - name: Release notes
-              href: release-notes-ediscovery20.md
-            - name: Limits in Advanced eDiscovery
+            - name: Advanced eDiscovery limits
               href: limits-ediscovery20.md
             - name: Supported file types
               href: supported-filetypes-ediscovery20.md
@@ -514,8 +526,6 @@
               href: advanced-ediscovery-reports.md
             - name: Troubleshoot AzCopy
               href: troubleshooting-azcopy.md
-
-
     - name: Advanced eDiscovery (classic)
       items:
         - name: Overview of Advanced eDiscovery (classic)
@@ -679,35 +689,19 @@
 
  
     
-    - name: Manage eDiscovery cases
-      href: ediscovery-cases.md
-      items: 
-        
-        - name: Use a script to add users to a hold in an eDiscovery case
-          href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-        - name: Create a report on holds in eDiscovery cases
-          href: create-a-report-on-holds-in-ediscovery-cases.md
-    - name: Assign eDiscovery permissions
-      href: assign-ediscovery-permissions.md
-    - name: Set up compliance boundaries for eDiscovery investigations in Office 365
-      href: set-up-compliance-boundaries.md
-    - name: eDiscovery solution series - Data spillage scenario - Search and purge
-      href: data-spillage-scenariosearch-and-purge.md
-    - name: Troubleshoot common eDiscovery issues
-      href: ediscovery-troubleshooting-common-issues.md
+
     
     
     - name: Manage holds
       items: 
-        - name: Create an eDiscovery hold
-          href: ediscovery-cases.md#step-4-place-content-locations-on-hold
+
         - name: Create a Litigation Hold
           href: create-a-litigation-hold.md
-        - name: Delete items in the Recoverable Items folder of cloud-based mailboxes on hold
+        - name: Delete items in the Recoverable Items folder of mailboxes on hold
           href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
         - name: Increase the Recoverable Items quota for mailboxes on hold
           href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
-        - name: How to identify the type of hold placed on an Exchange Online mailbox
+        - name: How to identify the type of hold placed on a mailbox
           href: identify-a-hold-on-an-exchange-online-mailbox.md
         - name: Preserve Bcc and expanded distribution group recipients
           href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
