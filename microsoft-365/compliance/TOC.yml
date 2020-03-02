@@ -472,6 +472,8 @@
               href: create-search-to-collect-data.md
             - name: Build search queries
               href: building-search-queries.md
+            - name: Keyword queries and search conditions
+              href: keyword-queries-and-search-conditions.md
             - name: Search statistics
               href: search-statistics.md
             - name: Add search results to a review set
@@ -535,6 +537,14 @@
               href: attorney-privilege-detection.md           
             - name: Conversation review sets
               href: conversation-review-sets.md
+            - name: Assign eDiscovery permissions
+              href: assign-ediscovery-permissions.md
+            - name: Keyword queries and search conditions
+              href: keyword-queries-and-search-conditions.md
+            - name: Configure search permissions filtering
+              href: permissions-filtering-for-content-search.md
+            - name: Set up compliance boundaries
+              href: set-up-compliance-boundaries.md
             - name: Advanced eDiscovery reports (preview)
               href: advanced-ediscovery-reports.md
             - name: Troubleshoot AzCopy
