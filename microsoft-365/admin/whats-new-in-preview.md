@@ -28,8 +28,8 @@ ms.custom:
 We're continuously adding new features to [the Microsoft 365 admin center](microsoft-365-admin-center-preview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 > [!IMPORTANT]
-> **"Classic" admin center retiring soon**<br>
-When you sign in to https://admin.microsoft.com you'll now go to the new admin center every time. You can still switch back to the classic admin center, but as the new admin center comes to parity (and exceeds it) we will turn off the ability to switch back.<br><br> *Last updated: March 2, 2020*
+> **"Classic" admin center retirement starting in March**<br><br>
+When you sign-in to admin.microsoft.com, you'll now go to the new admin center every time. And in March, we will start disabling the ability to switch back to the classic admin center. For now, you can still switch back, but as the new admin center comes to parity (and exceeds it) we will turn off the switch for all organizations. <br><br> *Last updated: March 2, 2020*
 
 And if you're interested in what's new in other admin centers:
 
