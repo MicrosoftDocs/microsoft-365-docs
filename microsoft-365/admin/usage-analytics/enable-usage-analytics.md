@@ -65,7 +65,7 @@ To initiate the template app, you have to be either a **global administrator**, 
   
 3. In the **Apps** tab, type Microsoft 365 in the search box and then select **Microsoft 365 usage analytics** \> **Get it now**.
 
-    [![Select Get it now](../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
+    [![Select Get it now](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
 4.	Once the app is installed. Click on the tile to open it.
 
@@ -75,7 +75,7 @@ To initiate the template app, you have to be either a **global administrator**, 
     
 7. On the next screen, select **oAuth2** as the **Authentication method** \> **Sign in**. If you choose any other authentication method, the connection to the template app will fail.
     
-    ![Choose oAuth2 as authentication method](../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
+    ![Choose oAuth2 as authentication method](../../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
   
 8. Once the template app is instantiated the Microsoft 365 usage analytics dashboard will be available in Power BI on the web. The initial loading of the dashboard will take between 2 to 30 minutes.
   

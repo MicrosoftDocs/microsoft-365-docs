@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Central African Republic
 author: cmcatee-MSFT
 f1.keywords:

@@ -97,7 +97,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
 5. From the **Modify** drop-down list, choose **MX Record**.
     
-    ![MyDomain-BP-Configure-2-1](../media/bbfba978-8c53-471b-8c9e-8ae62e559d15.png)
+    ![MyDomain-BP-Configure-2-1](../../media/bbfba978-8c53-471b-8c9e-8ae62e559d15.png)
   
 6. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -105,19 +105,19 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|
     |0  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your \<*domain-key*\> from your Office 365 account. > [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![MyDomain-BP-Configure-2-2](../media/3e19cec3-7f3b-493d-81f7-cda30ba007d5.png)
+    ![MyDomain-BP-Configure-2-2](../../media/3e19cec3-7f3b-493d-81f7-cda30ba007d5.png)
   
 7. Select **Add**.
     
-    ![MyDomain-BP-Configure-2-3](../media/1a1951a8-11d7-405d-bef5-285bbb053ce8.png)
+    ![MyDomain-BP-Configure-2-3](../../media/1a1951a8-11d7-405d-bef5-285bbb053ce8.png)
   
 8. If there are any other existing MX records, select **Remove** in the **Action** column for each one to delete it. 
     
-    ![MyDomain-BP-Configure-2-4](../media/42576149-e056-4a81-a5fd-2c5dfac44e2e.png)
+    ![MyDomain-BP-Configure-2-4](../../media/42576149-e056-4a81-a5fd-2c5dfac44e2e.png)
   
 9. Select **OK**.
     
-    ![MyDomain-BP-Configure-2-5](../media/d6b70eb7-b79c-499e-82ff-ecef2e300368.png)
+    ![MyDomain-BP-Configure-2-5](../../media/d6b70eb7-b79c-499e-82ff-ecef2e300368.png)
   
 ## Add the CNAME records that are required for Office 365
 <a name="BKMK_add_CNAME"> </a>
@@ -132,7 +132,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
 5. From the **Modify** drop-down list, choose **CNAME Alias**.
     
-    ![MyDomain-BP-Configure-3-1](../media/628267fc-d37b-42ef-bb92-265284e339ac.png)
+    ![MyDomain-BP-Configure-3-1](../../media/628267fc-d37b-42ef-bb92-265284e339ac.png)
   
 6. Add the first CNAME record.
     
@@ -146,11 +146,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![MyDomain-BP-Configure-3-2](../media/3c8660b3-40bb-453d-8b99-4d22032bc4b3.png)
+    ![MyDomain-BP-Configure-3-2](../../media/3c8660b3-40bb-453d-8b99-4d22032bc4b3.png)
   
 7. Select **Add** to add the first record. 
     
-    ![MyDomain-BP-Configure-3-3](../media/103a1d99-70da-4fdf-9291-7dd058ec6c4a.png)
+    ![MyDomain-BP-Configure-3-3](../../media/103a1d99-70da-4fdf-9291-7dd058ec6c4a.png)
   
 8. Add the second CNAME record.
     
@@ -174,7 +174,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
 5. From the **Modify** drop-down list, choose **TXT/SPF Record**.
     
-    ![MyDomain-BP-Configure-4-1](../media/c461c762-52e6-4fde-b5bc-4dd5e5d62ed3.png)
+    ![MyDomain-BP-Configure-4-1](../../media/c461c762-52e6-4fde-b5bc-4dd5e5d62ed3.png)
   
 6. Under **Content**, in the box for the new record, type or copy and paste the value from the following table.
     
@@ -182,11 +182,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|
     |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
    
-    ![MyDomain-BP-Configure-4-2](../media/17d43106-88e6-47e5-aeba-0f18484acf3e.png)
+    ![MyDomain-BP-Configure-4-2](../../media/17d43106-88e6-47e5-aeba-0f18484acf3e.png)
   
 7. Select **Add**.
     
-    ![MyDomain-BP-Configure-4-3](../media/b3670563-b620-470c-a42b-2c77888981f8.png)
+    ![MyDomain-BP-Configure-4-3](../../media/b3670563-b620-470c-a42b-2c77888981f8.png)
   
 ## Add the two SRV records that are required for Office 365
 <a name="BKMK_add_SRV"> </a>

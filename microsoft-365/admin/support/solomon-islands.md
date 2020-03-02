@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Solomon Islands
 author: cmcatee-MSFT
 f1.keywords:
