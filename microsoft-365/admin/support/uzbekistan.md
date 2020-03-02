@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Uzbekistan
 author: cmcatee-MSFT
 f1.keywords:

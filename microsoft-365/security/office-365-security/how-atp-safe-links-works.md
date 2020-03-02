@@ -17,6 +17,8 @@ description: "The Safe Links feature provides time-of-click verification of hype
 ---
 
 # How Office 365 ATP Safe Links works
+> [!IMPORTANT] 
+> For Office 365 ATP Safe Links to operate correctly, all of the Office 365 services need to be at the same version.
          
 ## How ATP Safe Links works with URLs in email
 

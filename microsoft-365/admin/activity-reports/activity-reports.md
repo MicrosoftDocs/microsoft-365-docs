@@ -53,7 +53,7 @@ Watch this video for on overview: on how you can use the reports:
 ::: moniker-end
 
    
-2. Select **Select a report** at the top of the dashboard to select from a list of all available reports. Or, select an at-a-glance activity widget for a service (email, OneDrive, etc) to see more information. <br/>![The Office 365 Usage dashboard](../media/usage-report-dashboard.png)
+2. Select **Select a report** at the top of the dashboard to select from a list of all available reports. Or, select an at-a-glance activity widget for a service (email, OneDrive, etc) to see more information. <br/>![The Office 365 Usage dashboard](../../media/usage-report-dashboard.png)
   
 ## Who can see reports
 
@@ -159,7 +159,7 @@ If you want to hide user level information when you're generating your reports, 
   
 Your user list will look like this:
   
-![Office 365 reports - anonymized user list](../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Office 365 reports - anonymized user list](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.
   

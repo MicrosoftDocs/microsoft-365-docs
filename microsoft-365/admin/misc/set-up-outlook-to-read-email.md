@@ -59,7 +59,7 @@ Read [full article](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c
 
 After you sign in to Office 365, select **Outlook**.
   
-![The Office 365 home page with the Outlook app highlighted](../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![The Office 365 home page with the Outlook app highlighted](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
 Can't find the app you're looking for? From the app launcher, select **All apps** to see an alphabetical list of the Office 365 apps available to you. From there, you can search for a specific app. 
   

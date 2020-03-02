@@ -119,11 +119,11 @@ Ready to change your NS records so Office 365 can set up your domain? Follow the
 |:-----|:-----|
 |**Name server 1** <br/> |ns1.bdm.microsoftonline.com  <br/> |
    
-   ![Entering a value in the Name server 1 box](../media/34509935-461f-427f-9796-c3cf840bd9be.png)
+   ![Entering a value in the Name server 1 box](../../media/34509935-461f-427f-9796-c3cf840bd9be.png)
   
 2. In the **Additional name servers** drop-down list, choose **My secondary name servers**.
     
-    ![Choosing My secondary name servers in the list](../media/7eb14856-86da-45c2-910c-c72312250a18.png)
+    ![Choosing My secondary name servers in the list](../../media/7eb14856-86da-45c2-910c-c72312250a18.png)
   
 3. In the **Name server 2, 3, and 4** boxes, type or copy and paste the value from the following table. 
     
@@ -133,15 +133,15 @@ Ready to change your NS records so Office 365 can set up your domain? Follow the
 |**Name server 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Entering name server values](../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
+    ![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
 4. Select **Save**.
     
-    ![Selecting Save on the Name Server Settings page](../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
+    ![Selecting Save on the Name Server Settings page](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
 5. In the **Edit DNS Settings** dialog box, select **Yes**.
     
-    ![Selecting Save in the Edit DNS Settings dialog box](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+    ![Selecting Save in the Edit DNS Settings dialog box](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Office 365 email and other services will be all set to work with your domain. 
@@ -153,7 +153,7 @@ Ready to change your NS records so Office 365 can set up your domain? Follow the
   
 1. If there are already nameservers listed in the **Name server** boxes, delete each one by selecting it and then pressing the **Delete** key on your keyboard. 
     
-    ![Deleting name servers](../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
+    ![Deleting name servers](../../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
   
 2. In the **Name server 1, 2, 3, and 4** boxes, type or copy and paste the values from the following table. 
     
@@ -164,15 +164,15 @@ Ready to change your NS records so Office 365 can set up your domain? Follow the
 |**Name server 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Entering name server values](../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
+   ![Entering name server values](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
 3. Select **Save**.
     
-    ![Selecting Save on the Name Server Settings page](../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
+    ![Selecting Save on the Name Server Settings page](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   
 4. In the **Edit DNS Settings** dialog box, select **Yes**.
     
-    ![Selecting Save in the Edit DNS Settings dialog box](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+    ![Selecting Save in the Edit DNS Settings dialog box](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Office 365 email and other services will be all set to work with your domain. 

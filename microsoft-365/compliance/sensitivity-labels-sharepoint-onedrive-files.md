@@ -69,11 +69,13 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
     
     1. Make sure you have migrated the Azure Information Protection labels to sensitivity labels and published them from the Microsoft 365 compliance center, or equivalent labeling admin center.
     
-    2. Download the files and upload them to SharePoint.
+    2. Download the files and then upload them to SharePoint.
 
 - SharePoint can't process encrypted files when the label that applied the encryption has either of the following configurations for encryption:
-    - **Let users assign permissions when they apply the label** and **In Word, PowerPoint, and Excel, prompt users to specify permissions**
+    - **Let users assign permissions when they apply the label** and the checkbox for **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This setting is sometimes referred to as "user-defined permissions".
     - **User access to content expires** is set to a value other than **Never**.
+    
+    For labels with either of these encryption configurations, the labels aren't displayed to users in Office on the web. Additionally, the new capabilities from this preview can't be used with labeled documents that already have these encryption settings. For example, these documents won't be returned in search results, even if they are updated.
 
 - For an encrypted document that grants edit permissions to a user, copying can't be blocked in the web versions of the Office apps.
 

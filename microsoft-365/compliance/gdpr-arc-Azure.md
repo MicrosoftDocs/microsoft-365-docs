@@ -140,7 +140,7 @@ For more GDPR-related documentation, visit [https://aka.ms/gdprgetstarted](https
 | 12 <a name="12"> </a> | [SOC 2 Type 2 Audit Report [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 14 <a name="14"> </a> | [Microsoft Trust Center Compliance offerings](offering-home.md)  |
-| 15 <a name="15"> </a> | [Privacy and personal data in Intune](https://review.docs.microsoft.com/intune/privacy-personal-data) |
+| 15 <a name="15"> </a> | [Privacy and personal data in Intune](https://docs.microsoft.com/intune/privacy-personal-data) |
 | 16 <a name="16"> </a> | [Complete downloadable Azure GDPR Control Set](https://aka.ms/GDPRControls) or via [Compliance Score](compliance-score.md) |
 | 17 <a name="17"> </a> | [Microsoft DPO Information](https://aka.ms/GDPRDPO) |
 
