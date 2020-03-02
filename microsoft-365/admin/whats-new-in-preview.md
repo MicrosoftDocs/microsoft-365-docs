@@ -29,7 +29,7 @@ We're continuously adding new features to [the Microsoft 365 admin center](micro
 
 > [!IMPORTANT]
 > **"Classic" admin center retiring soon**<br>
-When you sign in to https://admin.microsoft.com you'll now go to the new admin center every time. You can still switch back to the classic admin center, but as the new admin center comes to parity (and exceeds it) we will turn off the ability to switch back.<br><br> Last updated: March 2, 2020
+When you sign in to https://admin.microsoft.com you'll now go to the new admin center every time. You can still switch back to the classic admin center, but as the new admin center comes to parity (and exceeds it) we will turn off the ability to switch back.<br><br> *Last updated: March 2, 2020*
 
 And if you're interested in what's new in other admin centers:
 
