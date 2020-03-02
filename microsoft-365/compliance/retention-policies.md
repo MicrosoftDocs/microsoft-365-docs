@@ -47,10 +47,9 @@ When content is subject to a retention policy, people can continue to edit and w
   
 Finally, some organizations have to comply with regulations such as Securities and Exchange Commission (SEC) Rule 17a-4, which requires that after a retention policy is turned on, it cannot be turned off or made less restrictive. To meet this requirement, you can use Preservation Lock. After a policy's been locked, no one (including an administrator) can turn off the policy or make it less restrictive.
   
-You create and manage retention policies on the:
+You create and manage retention policies from the [Microsoft 365 compliance center](https://compliance.microsoft.com/): **Policies** > **Data** > **Retention**
 
-- **Policies** page in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
-- **Retention** page under **Information governance** in the [Office 365 Security &amp; Compliance Center](https://protection.office.com/).
+Alternatively, you can navigate to the same place in the Microsoft 365 compliance center by using **Solutions** > **Information governance** > **Retention** tab. 
 
 **If you want the ability to review content before it’s permanently deleted,** consider using [retention labels](labels.md) instead of a retention policy. When you create a retention label, you can set up a [disposition review](disposition-reviews.md) to review the content at the end of its retention period.
 
@@ -80,17 +79,36 @@ The previous applies to content that exists when the retention policy is applied
   
 Note that a user receives an error if they try to delete a library, list, folder, or site that's subject to a retention policy. A user can delete a folder if they first move or delete any files in the folder that are subject to the policy. Also, the Preservation Hold library is created only when the first item needs to be copied to the library and not when you create the retention policy. Therefore, to test your policy, you first need to edit or delete a document in a site subject to the policy, and then browse to the Preservation Hold library to view the retained copy.
   
-After a retention policy is assigned to a OneDrive account or SharePoint site, content can follow one of two paths:
+After a retention policy is assigned to a OneDrive account or SharePoint site, the outcome depends on whether the retention policy is to retain and delete, to retain only, or delete only:
+
+When the retention policy is to retain and delete:
 
 ![Diagram of content lifecycle in SharePoint and OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 1. **If the content is modified or deleted** during the retention period, a copy of the original content as it existed when the retention policy was assigned is created in the Preservation Hold library. There, a timer job runs periodically and identifies items whose retention period has expired, and those items are moved to the second-stage Recycle Bin, where they're permanently deleted at the end of 93 days. The second-stage Recycle Bin is not visible to end users (only the first-stage Recycle Bin is), but site collection admins can view and restore content from there.
 
     > [!NOTE]
-    > We've recently changed how content is deleted from the Preservation Hold library. To help prevent inadvertent data loss, we no longer permanently delete content from the Preservation Hold library. Instead, we permanently delete content only from the Recycle Bin, so all content from the Preservation Hold library now goes through the second-stage Recycle Bin.
+    > To help prevent inadvertent data loss, content is never deleted from the Preservation Hold library but moves to the second-stage Recycle Bin, where the grace period of 93 days lets admins recover it, if necessary.
     
-2. **If the content is not modified or deleted** during the retention period, it's moved to the first-stage Recycle Bin at the end of the retention period. If a user deletes the content from there or empties this Recycle Bin (also known as purging), the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first- and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first- or second-stage Recycle Bin. The Recycle Bin is not indexed and therefore searches do not find content there. This means that an eDiscovery hold can't locate any content in the Recycle Bin to hold it. 
-    
+2. **If the content is not modified or deleted** during the retention period, it's moved to the first-stage Recycle Bin at the end of the retention period. If a user deletes the content from there or empties this Recycle Bin (also known as purging), the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first-stage and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first-stage or second-stage Recycle Bin. The Recycle Bin is not indexed and therefore searches do not find content there. This means that an eDiscovery hold can't locate any content in the Recycle Bin to hold it. 
+
+When the retention policy is retain-only, or delete-only, the paths are variations of retain and delete:
+
+#### Paths for retain-only retention policy
+
+1. **If the content is modified or deleted** during the retention period, a copy of the original file is created in the Preservation Hold library. However, when the file expires, the timer job doesn't move the file to the second-stage Recycle Bin. Consequently, the file stays in the Preservation Hold library.
+
+2. **If the content is not modified or deleted** during the retention period, nothing happens before and after the retention period; the file remains in its original location.
+
+#### Paths for delete-only retention policy
+
+1. **If the content is deleted** during the retention period, the file is deleted with no special treatment (the file moves to Recyle Bin, and so on). 
+
+2. **If the content is modified** during the retention period, the file isn't copied to the Preservation Hold library. At the end of the retention period, the file is moved to the second-stage Recycle Bin and it's permanently deleted at the end of 93 days. 
+
+3. **If the content is not modified or deleted** during the retention period, it's moved to the first-stage Recycle Bin at the end of the retention period. If a user deletes the content from there or empties this Recycle Bin (also known as purging), the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first-stage and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first-stage or second-stage Recycle Bin. The Recycle Bin is not indexed and therefore searches do not find content there. This means that an eDiscovery hold can't locate any content in the Recycle Bin to hold it.
+
+
 ### Content in mailboxes and public folders
 
 For a user's mail, calendar, and other items, a retention policy is applied at the level of a mailbox. For a public folder, a retention policy is applied at the folder level, not the mailbox level. Both a mailbox and a public folder use the Recoverable Items folder to retain items. Only people whom have been assigned eDiscovery permissions can view items in another user's Recoverable Items folder.
