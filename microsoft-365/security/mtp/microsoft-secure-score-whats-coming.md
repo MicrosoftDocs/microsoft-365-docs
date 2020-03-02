@@ -98,6 +98,7 @@ To ensure that the Microsoft Secure Score is meaningful and that every improveme
 - Do not allow mailbox delegation
 - Allow anonymous guest sharing links for sites and docs
 - Turn on Cloud App Security Console
+- Configure expiration time for external sharing links
 
 ### Supporting security defaults for Azure AD improvement actions
 
