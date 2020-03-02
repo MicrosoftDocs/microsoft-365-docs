@@ -188,7 +188,7 @@ Your Office 365 subscription comes with a powerful set of security capabilities 
 
 ## See also
 
-- [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](/security/office-365-security/detect-and-remediate-outlook-rules-forms-attack.md)
+- [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
 - [Internet Crime Complaint Center](https://www.ic3.gov/preventiontips.aspx)
 
