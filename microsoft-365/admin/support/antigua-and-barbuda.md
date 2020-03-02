@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Antigua and Barbuda
 author: cmcatee-MSFT
 f1.keywords:

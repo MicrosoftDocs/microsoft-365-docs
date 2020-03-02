@@ -225,7 +225,7 @@ To view feature availability across Office 365 plans, see [Office 365 Service De
 
 Scan this QR code to follow us on WeChat and get the latest updates for Office 365 operated by 21Vianet.
 
-![QR Code for updates for Office 365 operated by 21Vianet](media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![QR Code for updates for Office 365 operated by 21Vianet](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 

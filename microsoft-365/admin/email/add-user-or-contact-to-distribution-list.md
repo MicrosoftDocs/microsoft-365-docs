@@ -40,7 +40,7 @@ As the admin of an Office 365 organization, you may need to add one of your user
 
 4. On the **View Members** page, select **Add members**, and select the user or contact you want to add to the distribution group. 
     
-    ![Add members to distribution group](../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
+    ![Add members to distribution group](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. Select **Save** and then **Close**.
 
@@ -56,7 +56,7 @@ As the admin of an Office 365 organization, you may need to add one of your user
   
 4. On the **View Members** page, select **Add members**, and select the user or contact you want to add to the distribution group. 
     
-    ![Add members to distribution group](../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
+    ![Add members to distribution group](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. Select **Save** and then **Close**.
     
@@ -74,7 +74,7 @@ If you haven't created the [contact](../misc/contacts.md) yet, do that first as 
   
 4. On the **View Members** page, select **Add members**, and select the user or contact you want to add to the distribution group. 
     
-    ![Add members to distribution group](../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
+    ![Add members to distribution group](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. Select **Save** and then **Close**.
     

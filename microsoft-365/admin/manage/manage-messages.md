@@ -46,7 +46,7 @@ Use the **Filter** drop-down menu to select a filtered view of messages.
 
 You can select any column heading to sort messages in ascending or descending order. For example, in this diagram the messages are sorted on the **Act by** date.
 
-![Message center view sorted by Act by date](../media/message-center-filter-act-by.png)
+![Message center view sorted by Act by date](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 
@@ -56,7 +56,7 @@ Use the **Views** drop-down menu to select a filtered view of messages.
  
 You can select any column heading to sort messages in ascending or descending order. For example, in this illustration the messages are sorted on the **Act by** date.
 
-![Message center view sorted by Act by date](../media/message-center-old-admin-center1.png)
+![Message center view sorted by Act by date](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 
@@ -66,7 +66,7 @@ Use the **Views** drop-down menu to select a filtered view of messages.
  
 You can select any column heading to sort messages in ascending or descending order. For example, in this illustration the messages are sorted on the **Act by** date.
 
-![Message center view sorted by Act by date](../media/message-center-old-admin-center1.png)
+![Message center view sorted by Act by date](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 

@@ -47,19 +47,19 @@ Follow the steps below or [watch the video](https://support.office.com/article/V
   
 1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
-    ![Sign in](../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
+    ![Sign in](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
 2. Under **Manage Your Domains**, select the name of the domain that you want to edit.
     
-    ![Select a domain](../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
+    ![Select a domain](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
 3. Select the **DNS** tab. 
     
-    ![Select the DNS tab](../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
+    ![Select the DNS tab](../../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
   
 4. Select **Add New**.
     
-    ![Select Add New](../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![Select Add New](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
 5. In the boxes for the new record, select **TXT** for the **Record Type**, and then type or copy and paste the values from the following table.
     
@@ -68,11 +68,11 @@ Follow the steps below or [watch the video](https://support.office.com/article/V
     |Hostname  <br/> |Record Type  <br/> |Value  <br/> |
     |@  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![Type or copy and paste DNS values](../media/3b0d19f9-4138-47a7-aab2-137ad120ded6.png)
+    ![Type or copy and paste DNS values](../../media/3b0d19f9-4138-47a7-aab2-137ad120ded6.png)
   
 6. Select **Save**.
     
-    ![Select Save](../media/07dcf68e-34be-47dc-999e-0216de68cc9c.png)
+    ![Select Save](../../media/07dcf68e-34be-47dc-999e-0216de68cc9c.png)
   
 7. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
@@ -104,19 +104,19 @@ Follow the steps below or [watch the video](https://support.office.com/article/V
   
 1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
-    ![Sign in](../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
+    ![Sign in](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
 2. Under **Manage Your Domains**, select the name of the domain that you want to edit.
     
-    ![Select a domain](../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
+    ![Select a domain](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
 3. Select the **DNS** tab. 
     
-    ![Select the DNS tab](../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
+    ![Select the DNS tab](../../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
   
 4. Select **Add New**.
     
-    ![Select Add New](../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![Select Add New](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
 5. In the boxes for the new record, select **MX** for the **Record Type**, and then type or copy and paste the values from the following table.
     
@@ -124,21 +124,21 @@ Follow the steps below or [watch the video](https://support.office.com/article/V
     |:-----|:-----|:-----|:-----|
     |@  <br/> |MX  <br/> |0  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Office 365 account.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![Type or copy and paste DNS values](../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
+    ![Type or copy and paste DNS values](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
   
 6. Select **Save**.
     
-    ![Select Save](../media/266c30a4-6703-48fb-a919-b510ed966193.png)
+    ![Select Save](../../media/266c30a4-6703-48fb-a919-b510ed966193.png)
   
 7. If there are any other MX records, use the following two-step process to remove each of them:
     
     First, mousing over a record that you want to remove, select **Delete**.
     
-    ![Mouse over and select Delete](../media/2ddf4902-8cd2-4969-a418-2cb592741e86.png)
+    ![Mouse over and select Delete](../../media/2ddf4902-8cd2-4969-a418-2cb592741e86.png)
   
     Second, select **Yes** to confirm each deletion. 
     
-    ![Select Yes to confirm deletion](../media/48756bd5-0205-4c4d-9803-9246795dbf4a.png)
+    ![Select Yes to confirm deletion](../../media/48756bd5-0205-4c4d-9803-9246795dbf4a.png)
   
     Repeat this process until you have deleted all MX records except for the one that you added earlier in this procedure.
     
@@ -149,21 +149,21 @@ Follow the steps below or [watch the video](https://support.office.com/article/V
   
 1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
-    ![Sign in](../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
+    ![Sign in](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
 2. Under **Manage Your Domains**, select the name of the domain that you want to edit.
     
-    ![Select a domain](../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
+    ![Select a domain](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
 3. Select the **DNS** tab. 
     
-    ![Select the DNS tab](../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
+    ![Select the DNS tab](../../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
   
 4. Add the first of the six CNAME records.
     
     Select **Add New**.
     
-    ![Select Add New](../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![Select Add New](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
 5. In the empty boxes for the new record, select **CNAME** for the **Record Type**, and then type or copy and paste the values from the first row in the following table.
     
@@ -175,11 +175,11 @@ Follow the steps below or [watch the video](https://support.office.com/article/V
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![Type or copy and paste DNS values](../media/6ae607f8-d26e-47f0-a0f2-3487d37e8c7f.png)
+    ![Type or copy and paste DNS values](../../media/6ae607f8-d26e-47f0-a0f2-3487d37e8c7f.png)
   
 6. Select **Save**.
     
-    ![Select Save](../media/69aa3546-32de-4c17-a2e2-8c0cd133efaa.png)
+    ![Select Save](../../media/69aa3546-32de-4c17-a2e2-8c0cd133efaa.png)
   
 7. Using the preceding three steps and the values from the other five rows in the table, add each of the other five CNAME records.
     
@@ -193,19 +193,19 @@ Follow the steps below or [watch the video](https://support.office.com/article/V
   
 1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
-    ![Sign in](../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
+    ![Sign in](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
 2. Under **Manage Your Domains**, select the name of the domain that you want to edit.
     
-    ![Select a domain](../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
+    ![Select a domain](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
 3. Select the **DNS** tab. 
     
-    ![Select the DNS tab](../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
+    ![Select the DNS tab](../../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
   
 4. Select **Add New**.
     
-    ![Select Add New](../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![Select Add New](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
 5. In the boxes for the new record, select **TXT** for the **Record Type**, and then type or copy and paste the values from the following table.
     
@@ -213,11 +213,11 @@ Follow the steps below or [watch the video](https://support.office.com/article/V
     |:-----|:-----|:-----|
     |@  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
    
-    ![Type or copy and paste DNS values](../media/ed36b9e0-aaa9-45fb-804d-7d4e82ba0c7f.png)
+    ![Type or copy and paste DNS values](../../media/ed36b9e0-aaa9-45fb-804d-7d4e82ba0c7f.png)
   
 6. Select **Save**.
     
-    ![Select Save](../media/13a395b9-e0e8-4393-b568-5f99b2da39da.png)
+    ![Select Save](../../media/13a395b9-e0e8-4393-b568-5f99b2da39da.png)
   
 ## Add the two SRV records that are required for Office 365
 <a name="BKMK_add_SRV"> </a>
@@ -226,21 +226,21 @@ Follow the steps below or [watch the video](https://support.office.com/article/V
   
 1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
-    ![Sign in](../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
+    ![Sign in](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
 2. Under **Manage Your Domains**, select the name of the domain that you want to edit.
     
-    ![Select a domain](../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
+    ![Select a domain](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
 3. Select the **DNS** tab. 
     
-    ![Select the DNS tab](../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
+    ![Select the DNS tab](../../media/bd727fb4-0b06-426d-9387-42a160aead42.png)
   
 4. Add the first of the two SRV records.
     
     Select **Add New**.
     
-    ![Select Add New](../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![Select Add New](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
 5. In the empty boxes for the new record, select **SRV** for the **Record Type**, and then type or copy and paste the values from the first row in the following table.
     
@@ -249,11 +249,11 @@ Follow the steps below or [watch the video](https://support.office.com/article/V
     |_sip._tls  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls._tcp  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
-    ![Type or copy and paste DNS values](../media/67562cd6-c598-4c37-af53-626f153c0197.png)
+    ![Type or copy and paste DNS values](../../media/67562cd6-c598-4c37-af53-626f153c0197.png)
   
 6. Select **Save**.
     
-    ![Select Save](../media/0d7ec216-9277-4709-b637-e94c8662730f.png)
+    ![Select Save](../../media/0d7ec216-9277-4709-b637-e94c8662730f.png)
   
 7. Using the preceding three steps and the values from the second row in the table, add the other SRV record.
     
