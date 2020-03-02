@@ -33,30 +33,30 @@ Follow these instructions if you want Office 365 to manage your Office 365 DNS r
 
 1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to Sign in and Continue.
     
-    ![Namecheap-BP-Configure-1-1](../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
+    ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
 2. On the **Landing** page, under **Account**, choose **Domain List** from the drop-down list. 
     
-    ![Namecheap-BP-Configure-1-2](../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
+    ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
 3. On the **Domain List** page, find the name of the domain that you want to edit, and then select **Manage**.
     
-    ![Namecheap-BP-Configure-1-3](../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
+    ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
 4. Select **Advanced DNS**.
     
-    ![Namecheap-BP-Configure-1-4](../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
+    ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
 5. In the **HOST RECORDS** section, select **ADD NEW RECORD**.
     
-    ![Namecheap-BP-Configure-1-5](../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
+    ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. In the **Type** drop-down, select **TXT Record**.
     
     > [!NOTE]
     > The **Type** drop-down automatically appears when you select **ADD NEW RECORD**.
   
-    ![Namecheap-BP-Verify-1-1](../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png)
+    ![Namecheap-BP-Verify-1-1](../../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png)
   
 7. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -66,11 +66,11 @@ Follow these instructions if you want Office 365 to manage your Office 365 DNS r
 |:-----|:-----|:-----|:-----|
 |TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Note**: This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
    
-   ![Namecheap-BP-Verify-1-2](../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
+   ![Namecheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
 8. Select the **Save Changes** (check mark) control. 
     
-    ![Namecheap-BP-Verify-1-3](../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png)
+    ![Namecheap-BP-Verify-1-3](../../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png)
   
 9. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
@@ -108,23 +108,23 @@ To complete setting up your domain with Office 365, you change your domain's NS 
   
 1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to Sign in and Continue.
     
-    ![Namecheap-BP-Configure-1-1](../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
+    ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
 2. On the **Landing** page, under **Account**, choose **Domain List** from the drop-down list. 
     
-    ![Namecheap-BP-Configure-1-2](../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
+    ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
 3. On the **Domain List** page, find the name of the domain that you want to edit, and then select **Manage**.
     
-    ![Namecheap-BP-Configure-1-3](../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
+    ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
 4. Select **Domain**.
     
-    ![Namecheap-BP-Redelegate-1-1](../media/59588406-794e-4ae4-8526-35e3111b5791.png)
+    ![Namecheap-BP-Redelegate-1-1](../../media/59588406-794e-4ae4-8526-35e3111b5791.png)
   
 5. Find the **NAMESERVERS** section, and then select **Custom** from the **Namecheap Default** drop-down list. 
     
-    ![Namecheap-BP-Redelegate-1-2](../media/7df56295-fdb3-472f-9442-13f780c2c93e.png)
+    ![Namecheap-BP-Redelegate-1-2](../../media/7df56295-fdb3-472f-9442-13f780c2c93e.png)
   
 6. Depending on whether or not there are already nameservers listed on the page that is displayed now, continue to one of the two following procedures.
     
@@ -133,7 +133,7 @@ To complete setting up your domain with Office 365, you change your domain's NS 
 
 1. Select **ADD NAMESERVER** twice to add two new rows.
     
-    ![Namecheap-BP-Redelegate-1-3-1](../media/e8816bf5-bb59-49d5-bfca-43e502242dc3.png)
+    ![Namecheap-BP-Redelegate-1-3-1](../../media/e8816bf5-bb59-49d5-bfca-43e502242dc3.png)
   
 2. In the **Nameserver** boxes, type or copy and paste the values from the following table.
     
@@ -144,11 +144,11 @@ To complete setting up your domain with Office 365, you change your domain's NS 
 |**Nameserver 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Nameserver 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Namecheap-BP-Redelegate-1-3-2](../media/21d681b7-4f96-4e96-ac27-9534c388537c.png)
+   ![Namecheap-BP-Redelegate-1-3-2](../../media/21d681b7-4f96-4e96-ac27-9534c388537c.png)
   
 3. Select the **Save** (check mark) control. 
     
-    ![Namecheap-BP-Redelegate-1-5](../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
+    ![Namecheap-BP-Redelegate-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Office 365 email and other services will be all set to work with your domain. 
@@ -160,11 +160,11 @@ To complete setting up your domain with Office 365, you change your domain's NS 
   
 1. If there are any other nameservers listed in the **Nameserver** boxes, delete each one by selecting it and then pressing the **Delete** key on your keyboard. 
     
-    ![Namecheap-BP-Redelegate-1-4](../media/3270603a-c4f4-40b7-acad-733d56e2f53c.png)
+    ![Namecheap-BP-Redelegate-1-4](../../media/3270603a-c4f4-40b7-acad-733d56e2f53c.png)
   
 2. Select **ADD NAMESERVER** twice to add two new rows. 
     
-    ![Namecheap-BP-Redelegate-1-3-1](../media/e8816bf5-bb59-49d5-bfca-43e502242dc3.png)
+    ![Namecheap-BP-Redelegate-1-3-1](../../media/e8816bf5-bb59-49d5-bfca-43e502242dc3.png)
   
 3. In the **Nameserver** boxes, type or copy and paste the values from the following table.  
     
@@ -175,11 +175,11 @@ To complete setting up your domain with Office 365, you change your domain's NS 
 |**Nameserver 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Nameserver 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Namecheap-BP-Redelegate-1-3-2](../media/21d681b7-4f96-4e96-ac27-9534c388537c.png)
+   ![Namecheap-BP-Redelegate-1-3-2](../../media/21d681b7-4f96-4e96-ac27-9534c388537c.png)
   
 4. Select the **Save** (check mark) control. 
     
-    ![Namecheap-BP-Redelegate-1-5](../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
+    ![Namecheap-BP-Redelegate-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Office 365 email and other services will be all set to work with your domain.

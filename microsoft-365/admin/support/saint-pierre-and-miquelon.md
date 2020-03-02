@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Saint Pierre and Miquelon
 author: cmcatee-MSFT
 f1.keywords:

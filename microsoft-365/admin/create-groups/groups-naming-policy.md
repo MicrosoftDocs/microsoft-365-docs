@@ -120,7 +120,7 @@ To set up a naming policy:
 5. Choose between **Attribute** and **String** for each line and then specify the attribute or string.
 6. When you have added the prefixes and suffixes that you need, click **Save**.
 
-![Screenshot of the groups naming policy settings in Azure Active Directory](../media/groups-naming-policy-azure.png)
+![Screenshot of the groups naming policy settings in Azure Active Directory](../../media/groups-naming-policy-azure.png)
 
 ## Naming policy experiences across Office 365 apps
 
@@ -130,7 +130,7 @@ The Office 365 apps have been updated to show a preview of the naming policy gro
 
 Outlook on the web (formerly known as Outlook Web App or OWA) shows the naming policy decorated name when the user types a group name or group alias. When an user enters a custom blocked word, an error message is shown in the UI along with the blocked word so that the user can remove it. Outlook on the web experience snapshots are shown below.
 
-![Side by side view of group naming policy in Office 365 Groups](../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
+![Side by side view of group naming policy in Office 365 Groups](../../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
 
 ## Outlook Desktop
 
@@ -140,19 +140,19 @@ Groups created in Outlook desktop are compliant with naming policy. Outlook desk
 
 Microsoft Teams shows the naming policy decorated name when the user types a team name. When a user enters a custom blocked word, an error message is shown along with the blocked word so that the user can remove it.
 
-![Group naming policy in Microsoft Teams blocked example](../media/7c904546-5853-4642-949a-a55dbb004eca.png)
+![Group naming policy in Microsoft Teams blocked example](../../media/7c904546-5853-4642-949a-a55dbb004eca.png)
 
 ## SharePoint
 
 SharePoint shows the naming policy name when the user types a site name or group email address. When an user enters a custom blocked word, an error message is shown, along with the blocked word so that the user can remove it.
 
-![Group naming policy - SharePoint Site blocked name](../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
+![Group naming policy - SharePoint Site blocked name](../../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
 
 ## Microsoft Stream
 
 Microsoft Stream shows the naming policy decorated name when the user types a group name or group email alias. When an user enters a custom blocked word, an error message is shown with the blocked word so the user can remove it.
 
-![Group naming policy blocked example for Microsoft Stream](../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
+![Group naming policy blocked example for Microsoft Stream](../../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
 
 ## Outlook iOS and Android App
 
@@ -162,13 +162,13 @@ Groups created in Outlook apps are compliant with naming policy. Outlook mobile 
 
 Planner is compliant with naming policy. Planner shows the naming policy preview when entering the Plan name. When a user enters a custom blocked word, an error message is shown on creating the plan, so the user can remove the blocked word.
 
-![Group naming policy - create new plan blocked example](../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
+![Group naming policy - create new plan blocked example](../../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
 
 ## Dynamics 365 for Customer Engagement
 
 Dynamics 365 for Customer Engagement is compliant with naming policy. Dynamics 365 shows the naming policy decorated name when the user types a group name or group email alias. When the user enters a custom blocked word, an error message is shown with the blocked word so the user can remove it.
 
-![Dynamics 365](../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
+![Dynamics 365](../../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
 
 ## School Data Sync (SDS)
 

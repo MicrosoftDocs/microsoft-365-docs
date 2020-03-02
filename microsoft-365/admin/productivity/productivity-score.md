@@ -79,7 +79,7 @@ You can access the experience from Microsoft 365 Admin home by choosing **Report
 
 he Productivity Score home page provides the current score and history on a percentage basis, primary insights for areas within each score category supplemented by benchmarks. 
 
-![Productivity score home page](../media/pslanding.png)
+![Productivity score home page](../../media/pslanding.png)
 
 1.**Productivity Score** is listed on a percentage basis as well as in the <numerator>/<denominator> format so you can also see your absolute points (numerator) and maximum possible points  
 1. This pivot allows you to select the score category you want to focus on. In the preview, you can only view **Employee experience**, but the selection will soon expand to include **Technology experience**. 
@@ -108,7 +108,7 @@ Additionally, all insights contain the following elements:
 
 ### Area detail page – Collaborating on content 
 
-![Collaborationg on content page.](../media/pscollab.png)
+![Collaborationg on content page.](../../media/pscollab.png)
 
 Collaborating on content page contains the primary insight from the Productivity Score home page. It has the following components:
 
@@ -129,7 +129,7 @@ The file types considered for collaboration are Word/Excel/PowerPoint/OneNote/PD
 
 ### Area detail page – Working anywhere 
 
-![Work anywhere page.](../media/psflexibility.png)
+![Work anywhere page.](../../media/psflexibility.png)
 
 The Working anywhere page quantifies the users (as a percentage and absolute value) who used at least one productivity app across two or more platforms, which are desktop, mobile and web. Users get scored higher for using more apps and platforms. The apps being considered are Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. The base of the insight are users enabled for Office 365 ProPlus, Exchange, Yammer, Skype or Teams.
 
@@ -142,7 +142,7 @@ The Working anywhere page quantifies the users (as a percentage and absolute val
 
 In order to promote actionability, each supporting insight comes with inline actions that can help transform your employee experience some of which can be configuration changes or awareness campaigns. Clicking on these calls-to-action opens in the recommended actions panel options that you might consider. Currently the actions in the **Collaborating on content** are enabled.
 
-![Collaborate on Office documents page.](../media/psactions1.png)
+![Collaborate on Office documents page.](../../media/psactions1.png)
 
 1. The **View Actions** goes to a pane listing all actions related to Collaborating on content.
 1. **Encourage users to collaborate** goes to a list of instructional videos on collaboration with topics such as co-authoring and @mentions. 
@@ -151,7 +151,7 @@ In order to promote actionability, each supporting insight comes with inline act
 
 Selecting any of the action buttons opens the **Recommended actions** pane on the right that has a summary of each action and a link to the documentation pages.
 
-![Recommended actions pane.](../media/psacttions2.png)
+![Recommended actions pane.](../../media/psacttions2.png)
 
 
 ## We want to hear from you 

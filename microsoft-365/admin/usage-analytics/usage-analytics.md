@@ -44,7 +44,7 @@ The executive summary is a high-level, at-a-glance view of Microsoft 365 for Bus
 
 This summary lets you quickly understand usage patterns in Office and how and where your employees are collaborating.
 
-![Image of the Microsoft 365 usage executive summary.](../media/office365usage-exec-summary.png)
+![Image of the Microsoft 365 usage executive summary.](../../media/office365usage-exec-summary.png)
 
 ## Overview
 

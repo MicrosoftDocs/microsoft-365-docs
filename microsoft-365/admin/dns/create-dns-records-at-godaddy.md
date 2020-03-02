@@ -48,15 +48,15 @@ Follow the steps below.
 
 1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled). You'll be prompted to log in.
 
-    ![GoDaddy-BP-Configure-1-1](../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
+    ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
 2. Under **Domains**, select DNS under the domain that you want to edit.
 
-    ![GoDaddy-BP-Configure-1-2](../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
+    ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
 3. Select **Add**.
 
-    ![GoDaddy-BP-Configure-1-4](../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
+    ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
 4. Choose **TXT (Text)** from the drop-down list. In the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -64,7 +64,7 @@ Follow the steps below.
     |:-----|:-----|:-----|:-----|
     |TXT (Text)|@|MS=ms *XXXXXXXX*<br>**Note**: This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|1 hour  <br>(Select a value from the drop-down list.)|
 
-      ![GoDaddy-BP-Verify-1-0](../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
+      ![GoDaddy-BP-Verify-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
 
 5. Select **Save**.
 
@@ -99,19 +99,19 @@ Follow the steps below.
 
 1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled). You'll be prompted to log in.
 
-    ![GoDaddy-BP-Configure-1-1](../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
+    ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
 2. Under **Domains**, select DNS under the domain that you want to edit.
 
-    ![GoDaddy-BP-Configure-1-2](../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
+    ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
 3. Select **Add**.
 
-    ![GoDaddy-BP-Configure-1-4](../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
+    ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
 4. Choose **MX (Mail Exchanger)** from the drop-down list.
 
-    ![GoDaddy-BP-Configure-2-0](../media/dns/56528642-85842e00-651d-11e9-8dd8-217f468f9a18.png)
+    ![GoDaddy-BP-Configure-2-0](../../media/dns/56528642-85842e00-651d-11e9-8dd8-217f468f9a18.png)
 
 5. In the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -130,20 +130,20 @@ Follow the steps below.
 
 1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled). You'll be prompted to log in.
 
-    ![GoDaddy-BP-Configure-1-1](../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
+    ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
 2. Under **Domains**, select DNS under the domain that you want to edit.
 
-    ![GoDaddy-BP-Configure-1-2](../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
+    ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
 3. Select **Add**.
 
-    ![GoDaddy-BP-Configure-1-4](../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
+    ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
 
 4. Choose **CNAME (Alias)** from the drop-down list.
 
-    ![GoDaddy-BP-Configure-3-0](../media/dns/56528891-e7449800-651d-11e9-8eac-112285b8e38c.png)
+    ![GoDaddy-BP-Configure-3-0](../../media/dns/56528891-e7449800-651d-11e9-8eac-112285b8e38c.png)
 
 5. Create the first CNAME record.
 
@@ -173,19 +173,19 @@ Follow the steps below.
 
 1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled). You'll be prompted to log in.
 
-    ![GoDaddy-BP-Configure-1-1](../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
+    ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
 2. Under **Domains**, select DNS under the domain that you want to edit.
 
-    ![GoDaddy-BP-Configure-1-2](../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
+    ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
 3. Select **Add**.
 
-    ![GoDaddy-BP-Configure-1-4](../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
+    ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
 4. Choose **TXT (Text)** from the drop-down list.
 
-    ![GoDaddy-BP-Configure-4-0](../media/dns/56529449-c0d32c80-651e-11e9-90e9-895aa1c4bbf1.png)
+    ![GoDaddy-BP-Configure-4-0](../../media/dns/56529449-c0d32c80-651e-11e9-90e9-895aa1c4bbf1.png)
 
 5. In the boxes for the new record, type or copy and paste the following values.
 
@@ -195,7 +195,7 @@ Follow the steps below.
     |:-----|:-----|:-----|:-----|
     |TXT (Text)  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |1 hour  <br/> |
 
-    ![GoDaddy-BP-Configure-4-1](../media/7c724f02-c9b3-42ab-b9c0-78959fa6ffad.png)
+    ![GoDaddy-BP-Configure-4-1](../../media/7c724f02-c9b3-42ab-b9c0-78959fa6ffad.png)
 
 6. Select **Save**.
 
@@ -207,19 +207,19 @@ Follow the steps below.
 
 1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled). You'll be prompted to log in.
 
-    ![GoDaddy-BP-Configure-1-1](../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
+    ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
 2. Under **Domains**, select DNS under the domain that you want to edit.
 
-    ![GoDaddy-BP-Configure-1-2](../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
+    ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
 3. Select **Add**.
 
-    ![GoDaddy-BP-Configure-1-4](../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
+    ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
 4. Choose **SRV (Service)** from the drop-down list.
 
-    ![GoDaddy-BP-Configure-5-0](../media/dns/56529669-1dcee280-651f-11e9-8ba2-ecf4fc2f6dca.png)
+    ![GoDaddy-BP-Configure-5-0](../../media/dns/56529669-1dcee280-651f-11e9-8ba2-ecf4fc2f6dca.png)
 
 5. Create the first SRV record.
 
@@ -232,7 +232,7 @@ Follow the steps below.
     |SRV (Service)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
     |SRV (Service)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 hour  <br/> |
 
-    ![GoDaddy-BP-Configure-5-1](../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
+    ![GoDaddy-BP-Configure-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
 
 
 6. Repeat **Step 5** to Create the other SRV record.
