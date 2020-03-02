@@ -117,7 +117,7 @@ If a user leaves your organization and their mailbox is included in a retention 
 
 **OneDrive**
 
-When a user leaves your organization, the admin can delay final deletion of the user's content for 30 or more days (learn how to [manage OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise#manage-onedrive-by-using-the-onedrive-admin-center)). During this period, all sharing access continues to work. When the extra retention period expires, content moves into the Site Collection Recycle Bin for 93 days and is not accessible to anyone except the admin. If a document is marked by a retention policy as a record, it will not be deleted until the retention period is over, after which time the content is permanently deleted.
+When a user leaves your organization, the admin can delay final deletion of the user's content for 30 or more days by creating an extra retention period in the OneDrive settings (learn how to [manage OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise#manage-onedrive-by-using-the-onedrive-admin-center)). During this period, all sharing access continues to work. When the extra retention period expires, content moves into the Site Collection Recycle Bin for 93 days and is not accessible to anyone except the admin. If a document is marked by a retention policy as a record, it will not be deleted until the retention period is over, after which time the content is permanently deleted.
 
 **SharePoint**
 
