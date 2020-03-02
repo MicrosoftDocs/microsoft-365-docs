@@ -235,6 +235,18 @@ When you select **Choose users**, you can quickly include all users by selecting
   
 Note that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 
+## SharePoint locations
+
+Your retention policy can retain content in SharePoint communication sites, team sites that aren't connected by Office 365 groups, and classic sites. Team sites connected by Office 365 groups aren't supported with this option and instead, use the **Office 365 groups** locations.
+
+If you specify sites that aren't supported, these are ignored by the retention policy.
+
+When you specify your locations for SharePoint sites, no validation is done at the time you specify the URL on the **Edit locations** page. However, the sites you specify are validated at the end of the wizard:
+- The site can be found with your permissions. You don't need site admin permissions or access to content in the site, but you must be able to find the site with search permissions.
+- The site is indexed by Search.
+
+If these checks fail, you see a message that this validation failed and you can't create the retention policy.
+
 ### Teams locations
 
 You can use a retention policy to retain chats and channel messages in Teams. Teams chats are stored in a hidden folder in the mailbox of each user included in the chat, and Teams channel messages are stored in a similar hidden folder in the group mailbox for the team. However, it's important to understand that Teams uses an Azure-powered chat service that also stores this data, and by default this service stores the data forever. For this reason, we strongly recommend that you use the Teams location to retain and delete Teams data. Using the Teams location will permanently delete data from both the Exchange mailboxes and the underlying Azure-powered chat service. For more information, see [Overview of security and compliance in Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258).
