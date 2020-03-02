@@ -61,7 +61,8 @@ A couple of changes in the groups area this month:
 
 ### Videos, training and docs
 
-- **What's new in Microsoft 365 video series**: This month, we're focused on new custom search capabilities for SharePoint Online, the Office "What's New" management feature that lets you show or hide specific features from end-users via the in-app help pane, the latest security and compliance updates in Yammer, and more.
+- **What's new in Microsoft 365 video series**: This month, we're focused on custom search capabilities for SharePoint Online, the Office "What's New" management feature that lets you show or hide specific features from end-users via the in-app help pane, the latest security and compliance updates in Yammer, and more. Here's the latest episode: [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+
 - **Docs move**: We combined the Office 365 admin web articles with the Microsoft 365 content and you might've noticed the new URL. For example, this article used to be hosted at: https://docs.microsoft.com/**Office365**/Admin/whats-new-in-preview, but the URL is now https://docs.microsoft.com/**microsoft-365**/admin/whats-new-in-preview. If you've bookmarked pages, the URLs will redirect to the new content repo, but you might want to update your bookmarks.
 
 ## January 2020 - Happy New Year!
