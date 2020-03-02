@@ -27,15 +27,47 @@ ms.custom:
 
 We're continuously adding new features to [the Microsoft 365 admin center](microsoft-365-admin-center-preview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
+> [!IMPORTANT]
+> **"Classic" admin center retiring soon**<br>
+When you sign in to https://admin.microsoft.com you'll now go to the new admin center every time. You can still switch back to the classic admin center, but as the new admin center comes to parity (and exceeds it) we will turn off the ability to switch back.<br><br> Last updated: March 2, 2020
+
 And if you're interested in what's new in other admin centers:
 
 - [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 
+## February 2020
+
+### Featured Feedback Fix: Multi-organization switcher
+
+We received a lot of feedback from partners and admins about the challenges of managing multiple Microsoft cloud orgs. One of our first multi-org management features is the **Organization switcher**, which lets you change between the orgs that you manage in just 2 clicks.
+> [!TIP]
+> You don't have to do anything to make the organization switcher appear as long as you are the Partner of record for at least one other organization or if you've set up a business-to-business (B2B) connection.
+
+1. In the Microsoft 365 admin center, select the org name.
+![Screen capture: top of the Home page showing organization profile name with the switcher icon.](../media/MAC-Organization-switcher.png)
+
+2. In the organization switcher, select the org you want to manage. 
+![Screen capture: top of the Home page showing organization profile name with the switcher icon.](../media/MAC-OrgSwitcherSelected.png)
+
+That's literally it!!!
+
+### Groups
+
+A couple of changes in the groups area this month:
+
+- **Sort by group name**: You can sort the groups list alphabetically, by selecting the **Group name** column.
+- **Restore deleted Office 365 groups** - You don't have to go to the Exchange admin center anymore to restore  deleted Office 365 groups. Go to **Microsoft 365 admin center** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. It'll restore the group back to the **Groups** list and restore the group's email, conversations, notebook, files, and calendar.
+
+### Videos, training and docs
+
+- **What's new in Microsoft 365 video series**: This month, we're focused on new custom search capabilities for SharePoint Online, the Office "What's New" management feature that lets you show or hide specific features from end-users via the in-app help pane, the latest security and compliance updates in Yammer, and more.
+- **Docs move**: We combined the Office 365 admin web articles with the Microsoft 365 content and you might've noticed the new URL. For example, this article used to be hosted at: https://docs.microsoft.com/**Office365**/Admin/whats-new-in-preview, but the URL is now https://docs.microsoft.com/**microsoft-365**/admin/whats-new-in-preview. If you've bookmarked pages, the URLs will redirect to the new content repo, but you might want to update your bookmarks.
+
 ## January 2020 - Happy New Year!
 
 > [!NOTE]
-> Did you know that there's a [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096) video series on YouTube? It highlights the latest features that we've rolled out to users. Every month, we'll start linking to the latest episode in the [Videos, training, and docs](#videos-training-and-docs) section. <br> <br> Here's January's episode: [January 2020 - What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+> Did you know that there's a [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096) video series on YouTube? It highlights the latest features that we've rolled out to users. Every month, we'll start linking to the latest episode in the [Videos, training, and docs](#videos-training-and-docs) section. <br> <br> Here's the latest episode: [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 ### Dark mode
 
