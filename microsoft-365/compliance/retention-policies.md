@@ -245,7 +245,7 @@ When you specify your locations for SharePoint sites, no validation is done at t
 - The site can be found with your permissions. You don't need site admin permissions or access to content in the site, but you must be able to find the site with search permissions.
 - The site is indexed by Search.
 
-If these checks fail, you see a message that this validation failed and you can't create the retention policy.
+If these checks fail, you see a message that validation failed for the URL you entered, and the wizard won't create the retention policy until the validation checks pass. If you see this message, go back in the wizard to change the URL or remove the selected site.
 
 ### Teams locations
 
