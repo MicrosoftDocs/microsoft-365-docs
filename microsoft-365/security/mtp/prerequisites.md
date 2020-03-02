@@ -1,7 +1,7 @@
 ---
 title: Microsoft Threat Protection prerequisites
 description:  Learn about the licensing, hardware and software requirements, and other configuration settings for Microsoft Threat Protection 
-keywords: requirements, prerequisites, hardware, software, browser, MTP, M365, license
+keywords: requirements, prerequisites, hardware, software, browser, MTP, M365, license, E5, A5, EMS, purchase 
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -34,6 +34,9 @@ To use Microsoft Threat Protection, you need *one* of the following licenses or 
 - Microsoft 365 E5
 - Microsoft 365 E5 Security
 - Office 365 E5 and "Enterprise Mobility + Security E5 (EMS E5)" and Windows E5
+- Microsoft 365 A5
+- Microsoft 365 A5 Security
+- Office 365 A5 and "Enterprise Mobility + Security A5 (EMS A5)" and Windows A5
 
 For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 

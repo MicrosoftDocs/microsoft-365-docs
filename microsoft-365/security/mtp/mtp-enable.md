@@ -31,7 +31,7 @@ Microsoft Threat Protection unifies your incident response process by integratin
 To get the best protection and optimize Microsoft Threat Protection, we recommend deploying all applicable supported services on your network. For more information, [read about deploying supported services](deploy-supported-services.md).
 
 ## Check license eligibility and required permissions
-A Microsoft 365 E5 or E5 Security license or a valid combination of licenses provides access to supported services and entitles you to use Microsoft Threat Protection in Microsoft 365 security center.
+A Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combination of licenses provides access to supported services and entitles you to use Microsoft Threat Protection in Microsoft 365 security center.
 
 For detailed licensing information, [read the licensing requirements](prerequisites.md#licensing-requirements).
 
@@ -73,7 +73,7 @@ To share Azure ATP data with Microsoft Threat Protection, ensure that Microsoft 
 ## Turn off Microsoft Threat Protection
 To stop using Microsoft Threat Protection, go to **Settings** > **Microsoft Threat Protection** > **Opt-in / Opt-out** in the Microsoft 365 security center. Unselect **Turn on Microsoft Threat Protection** and save the changes.
 
-Data will be permanently deleted and corresponding features will be removed from the Microsoft 365 security center.
+Corresponding features will be removed from the Microsoft 365 security center.
 
 ## Get assistance
 
