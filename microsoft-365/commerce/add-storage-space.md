@@ -113,14 +113,14 @@ If you haven't yet purchased extra storage for your subscription, you can do tha
 
 2. On the **Subscriptions** page, choose the subscription to which  you want to add storage space, then select **Add-ons**.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > If you don't see **Add-ons**, and your subscription was purchased through a partner, select **Volume Licensing Service Center (VLSC)**.
   
 3. Select **Buy add-ons**.
 
-    ![Buy add-ons link on the Subscriptions page of the admin center.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Buy add-ons link on the Subscriptions page of the admin center.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. On the **Purchase services** page, mouse over or tap **Office 365 Extra File Storage**, then select **Buy now**.
   
@@ -138,14 +138,14 @@ If you haven't yet purchased extra storage for your subscription, you can do tha
 
 2. On the **Subscriptions** page, choose the subscription to which  you want to add storage space, then select **Add-ons**.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > If you don't see **Add-ons**, and your subscription was purchased through a partner, select **Volume Licensing Service Center (VLSC)**.
   
 3. Select **Buy add-ons**.
 
-    ![Buy add-ons link on the Subscriptions page of the admin center.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Buy add-ons link on the Subscriptions page of the admin center.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. On the **Purchase services** page, mouse over or tap **Office 365 Extra File Storage**, then select **Buy now**.
   
@@ -184,14 +184,14 @@ If you have already purchased extra file storage via the **Office 365 Extra File
 
 2. On the **Subscriptions** page, select **Add-ons**.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > If you don't see **Add-ons**, and your subscription was purchased through a partner, select **Volume Licensing Service Center (VLSC)**.
   
 3. Under **Office 365 Extra File Storage**, select **Change quantity**.
 
-    ![Change quantity link.](../admin/media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
+    ![Change quantity link.](../media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
   
 4. In the right pane, enter the total number of gigabytes that you need, then select **Submit**.
 
@@ -207,14 +207,14 @@ If you have already purchased extra file storage via the **Office 365 Extra File
 
 2. On the **Subscriptions** page, select **Add-ons**.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > If you don't see **Add-ons**, and your subscription was purchased through a partner, select **Volume Licensing Service Center (VLSC)**.
   
 3. Under **Office 365 Extra File Storage**, select **Change quantity**.
 
-    ![Change quantity link.](../admin/media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
+    ![Change quantity link.](../media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
   
 4. In the right pane, enter the total number of gigabytes that you need, then select **Submit**.
 

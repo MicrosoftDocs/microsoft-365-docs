@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Tristan da Cunha
 author: cmcatee-MSFT
 f1.keywords:

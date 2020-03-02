@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Heard Island and McDonald Islands
 author: cmcatee-MSFT
 f1.keywords:

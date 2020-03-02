@@ -47,15 +47,15 @@ Follow the steps below or [watch the video (start at 0:46)](https://support.offi
   
 1. To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.
     
-    ![eNom-BP-Configure-1-1](../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
   
 2. Under **my domains**, select the name of the domain that you want to edit.
     
-    ![eNom-BP-Configure-1-2](../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
   
 3. On the **Manage Domain** drop-down list, choose **Host Records**.
     
-    ![eNom-BP-Verify-1-1](../media/6e4184a1-9525-47a6-8a8a-9600126c0db4.png)
+    ![eNom-BP-Verify-1-1](../../media/6e4184a1-9525-47a6-8a8a-9600126c0db4.png)
   
 4. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -66,11 +66,11 @@ Follow the steps below or [watch the video (start at 0:46)](https://support.offi
     |**Host Name** <br/> |**Record Type** <br/> |**Address** <br/> |
     |@  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
        
-   ![eNom-BP-Verify-1-2](../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
+   ![eNom-BP-Verify-1-2](../../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
   
 5. Select **save**.
     
-    ![eNom-BP-Verify-1-3](../media/d6277ab0-5d03-44e0-968f-fd5de1905423.png)
+    ![eNom-BP-Verify-1-3](../../media/d6277ab0-5d03-44e0-968f-fd5de1905423.png)
   
 6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
@@ -103,19 +103,19 @@ Follow the steps below or [watch the video (start at 3:40)](https://support.offi
   
 1. To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.
     
-    ![eNom-BP-Configure-1-1](../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
   
 2. Under **my domains**, select the name of the domain that you want to edit.
     
-    ![eNom-BP-Configure-1-2](../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
   
 3. On the **Manage Domain** drop-down list, choose **Email Settings**.
     
-    ![eNom-BP-Configure-1-3](../media/4b438629-afdf-4a47-ab11-56644cdb6158.png)
+    ![eNom-BP-Configure-1-3](../../media/4b438629-afdf-4a47-ab11-56644cdb6158.png)
   
 4. On the **Service Selection** drop-down list, choose **User (MX)**.
     
-    ![eNom-BP-Configure-1-4](../media/7680ab48-b8d1-4573-b20f-4745a5d7c079.png)
+    ![eNom-BP-Configure-1-4](../../media/7680ab48-b8d1-4573-b20f-4745a5d7c079.png)
   
 5. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -123,19 +123,19 @@ Follow the steps below or [watch the video (start at 3:40)](https://support.offi
     |:-----|:-----|:-----|
     |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Office 365 account.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
        
-   ![eNom-BP-Configure-2-1](../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
+   ![eNom-BP-Configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
   
 6. Select **save**.
     
-    ![eNom-BP-Configure-2-2](../media/cf3058ea-9d30-4747-8cf0-2bc13d5ec6be.png)
+    ![eNom-BP-Configure-2-2](../../media/cf3058ea-9d30-4747-8cf0-2bc13d5ec6be.png)
   
 7. If there are any other existing MX records, select the check boxes for those records to select them.
     
-    ![eNom-BP-Configure-2-3](../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
+    ![eNom-BP-Configure-2-3](../../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
   
 8. Select **delete checked**.
     
-    ![eNom-BP-Configure-2-4](../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
+    ![eNom-BP-Configure-2-4](../../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
   
 ## Add the CNAME records that are required for Office 365
 <a name="BKMK_add_CNAME"> </a>
@@ -144,19 +144,19 @@ Follow the steps below or [watch the video (start at 4:24)](https://support.offi
   
 1. To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.
     
-    ![eNom-BP-Configure-1-1](../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
   
 2. Under **my domains**, select the name of the domain that you want to edit.
     
-    ![eNom-BP-Configure-1-2](../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
   
 3. On the **Manage Domain** drop-down list, choose **Host Records**.
     
-    ![eNom-BP-Configure-1-5](../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
+    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
   
 4. Select **new row**.
     
-    ![eNom-BP-Configure-3-1](../media/a30f0a88-7b09-411e-9133-e7965bcf1de0.png)
+    ![eNom-BP-Configure-3-1](../../media/a30f0a88-7b09-411e-9133-e7965bcf1de0.png)
   
 5. In the boxes for the six new records, type or copy and paste the following values.
     
@@ -170,11 +170,11 @@ Follow the steps below or [watch the video (start at 4:24)](https://support.offi
     |enterpriseregistration  <br/> |CNAME (Alias)  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |
     |enterpriseenrollment  <br/> |CNAME (Alias)  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |
    
-    ![eNom-BP-Configure-3-2](../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
+    ![eNom-BP-Configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
   
 6. Select **save**.
     
-    ![eNom-BP-Configure-3-3](../media/027b57ce-5699-408b-993b-e46a9ac31090.png)
+    ![eNom-BP-Configure-3-3](../../media/027b57ce-5699-408b-993b-e46a9ac31090.png)
   
 ## Add a TXT record for SPF to help prevent email spam
 <a name="BKMK_add_TXT"> </a>
@@ -186,15 +186,15 @@ Follow the steps below or [watch the video (start at 5:12)](https://support.offi
   
 1. To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.
     
-    ![eNom-BP-Configure-1-1](../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
   
 2. Under **my domains**, select the name of the domain that you want to edit.
     
-    ![eNom-BP-Configure-1-2](../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
   
 3. On the **Manage Domain** drop-down list, choose **Host Records**.
     
-    ![eNom-BP-Configure-1-5](../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
+    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
   
 4. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -204,11 +204,11 @@ Follow the steps below or [watch the video (start at 5:12)](https://support.offi
     |:-----|:-----|:-----|
     |@  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
    
-   ![eNom-BP-Configure-4-1](../media/64c68697-258d-4044-84b1-c28f4a402e3b.png)
+   ![eNom-BP-Configure-4-1](../../media/64c68697-258d-4044-84b1-c28f4a402e3b.png)
   
 5. Select **save**.
     
-    ![eNom-BP-Configure-4-2](../media/89f4effa-349e-4734-96a5-cd80b0cecd60.png)
+    ![eNom-BP-Configure-4-2](../../media/89f4effa-349e-4734-96a5-cd80b0cecd60.png)
   
 ## Add the two SRV records that are required for Office 365
 <a name="BKMK_add_SRV"> </a>
@@ -217,19 +217,19 @@ Follow the steps below or [watch the video (start at 5:50)](https://support.offi
   
 1. To get started, go to your domains page at eNom Central by using [this link](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). You'll be prompted to login.
     
-    ![eNom-BP-Configure-1-1](../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
   
 2. Under **my domains**, select the name of the domain that you want to edit.
     
-    ![eNom-BP-Configure-1-2](../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
   
 3. On the **Manage Domain** drop-down list, choose **Host Records**.
     
-    ![eNom-BP-Configure-1-5](../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
+    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
   
 4. To the right of **new row**, select **add SRV or SPF record**.
     
-    ![eNom-BP-Configure-5-1](../media/c73c154d-5aa0-41ef-be25-f43129eb178c.png)
+    ![eNom-BP-Configure-5-1](../../media/c73c154d-5aa0-41ef-be25-f43129eb178c.png)
   
 5. In the boxes for the two new records, type or copy and paste the values from the following table.
     
@@ -238,11 +238,11 @@ Follow the steps below or [watch the video (start at 5:50)](https://support.offi
     |_sip  <br/> |_tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
     |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
    
-    ![eNom-BP-Configure-5-2](../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
+    ![eNom-BP-Configure-5-2](../../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
   
 6. Select **save**
     
-    ![eNom-BP-Configure-5-3](../media/d03b6f75-49f2-471d-978d-d32c47cd6aa7.png)
+    ![eNom-BP-Configure-5-3](../../media/d03b6f75-49f2-471d-978d-d32c47cd6aa7.png)
   
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 

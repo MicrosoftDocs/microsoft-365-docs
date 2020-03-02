@@ -31,7 +31,7 @@ If you have a paid subscription to Office 365, Microsoft Dynamics CRM Online, En
   
 The following figure shows which parts of the sign-in page can be modified in Azure.
   
-![Areas of the Office 365 sign-in page you can customize.](../media/screenshotbranding.png)
+![Areas of the Office 365 sign-in page you can customize.](../../media/screenshotbranding.png)
   
 1. The large illustration and/or its background color
     

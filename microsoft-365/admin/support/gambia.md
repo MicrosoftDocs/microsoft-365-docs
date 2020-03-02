@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Gambia
 author: cmcatee-MSFT
 f1.keywords:
