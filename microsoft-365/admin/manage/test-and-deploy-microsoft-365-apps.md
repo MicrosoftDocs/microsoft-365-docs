@@ -1,5 +1,5 @@
 ---
-title: "Test and deploy Microsoft 365 apps"
+title: "Test and deploy Microsoft 365 Apps"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -15,7 +15,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Find, test, and deploy Microsoft and Microsoft partner apps for users and groups in your organization from the Integrated apps portal in the Microsoft 365 admin center."
 ---
 
-# Test and deploy Microsoft 365 apps in the Microsoft 365 admin center
+# Test and deploy Microsoft 365 Apps in the Microsoft 365 admin center
 
 The Microsoft 365 admin center gives you the flexibility to deploy Microsoft and Microsoft partner apps from a single location. The ability to find, test, and fully deploy purchased and licensed apps by Microsoft and Microsoft partners from the Integrated apps portal provides the convenience and benefits your organization requires to keep business services updated regularly and running efficiently.  
 
