@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Kyrgyzstan
 author: cmcatee-MSFT
 f1.keywords:

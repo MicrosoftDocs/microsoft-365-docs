@@ -104,7 +104,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 
 The verification looks like this:
     
-![Screenshot of PowerShell window showing that guest group access has been set to false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
+![Screenshot of PowerShell window showing that guest group access has been set to false.](../../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
   
 ## Allow or block guest access based on their domain
 

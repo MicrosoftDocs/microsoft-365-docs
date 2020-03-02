@@ -90,11 +90,11 @@ To complete setting up your domain with Office 365, you change your domain's NS 
     
 4. In the **Overview** row, select **Nameservers**.
     
-    ![MyDomain-BP-Redelegate-1-1](../media/49e91235-44b5-46d6-a82e-8f11329db3d6.png)
+    ![MyDomain-BP-Redelegate-1-1](../../media/49e91235-44b5-46d6-a82e-8f11329db3d6.png)
   
 5. In the **Update Name Servers** section, select **Use different name servers**.
     
-    ![MyDomain-BP-Redelegate-1-2-1](../media/f869fb26-54dc-4b66-8378-a78a79b582bd.png)
+    ![MyDomain-BP-Redelegate-1-2-1](../../media/f869fb26-54dc-4b66-8378-a78a79b582bd.png)
   
 6. Depending on whether or not there are already nameservers listed on the page that is displayed now, continue to one of the two following procedures.
     
@@ -102,7 +102,7 @@ To complete setting up your domain with Office 365, you change your domain's NS 
 
 - If the correct nameservers are already listed, you can skip this step.
     
-    ![MyDomain-BP-Redelegate-1-2-2](../media/601f6a46-15bd-4a92-b792-ac628ff86628.png)
+    ![MyDomain-BP-Redelegate-1-2-2](../../media/601f6a46-15bd-4a92-b792-ac628ff86628.png)
   
 ### If the correct nameservers are NOT already listed
 
@@ -111,11 +111,11 @@ To complete setting up your domain with Office 365, you change your domain's NS 
   
 1. Delete the existing nameservers by selecting each entry in the **Nameserver:** field, and then pressing the **Delete** key on your keyboard. 
     
-    ![MyDomain-BP-Redelegate-1-3-1](../media/5024cd27-a2b1-42a2-99e4-5ceb5e6eddb9.png)
+    ![MyDomain-BP-Redelegate-1-3-1](../../media/5024cd27-a2b1-42a2-99e4-5ceb5e6eddb9.png)
   
 2. Select **Add More** twice to add two new Nameserver rows. 
     
-    ![MyDomain-BP-Redelegate-1-3-2](../media/19307893-2f73-4e4d-9221-a5870e09ab48.png)
+    ![MyDomain-BP-Redelegate-1-3-2](../../media/19307893-2f73-4e4d-9221-a5870e09ab48.png)
   
 3. In the boxes for the records, type or copy and paste the nameserver values from the following table.
     
@@ -126,11 +126,11 @@ To complete setting up your domain with Office 365, you change your domain's NS 
 |**Nameserver 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Nameserver 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![MyDomain-BP-Redelegate-1-4](../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
+   ![MyDomain-BP-Redelegate-1-4](../../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
   
 4. Select **Save**.
     
-    ![MyDomain-BP-Redelegate-1-5](../media/48473816-b881-47f0-9344-74622efa3bf8.png)
+    ![MyDomain-BP-Redelegate-1-5](../../media/48473816-b881-47f0-9344-74622efa3bf8.png)
   
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Office 365 email and other services will be all set to work with your domain. 

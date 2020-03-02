@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Turkmenistan
 author: cmcatee-MSFT
 f1.keywords:

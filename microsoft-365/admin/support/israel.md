@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Israel
 author: cmcatee-MSFT
 f1.keywords:
