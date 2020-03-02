@@ -28,7 +28,7 @@ description: "Get the Microsoft 365 Admin app and learn to manage your online or
 
 Are you an admin who's usually on the go? Then check out the [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216). You can use the app to manage your online organization from your phone or tablet. You can get the app from the Apple Store, and from Google Play. <br> 
 
-![Screen capture of the admin mobile app's home page, displaying search, messages, health, and quick links.](../media/admin-mobile-app-darkbg.png)
+![Screen capture of the admin mobile app's home page, displaying search, messages, health, and quick links.](../../media/admin-mobile-app-darkbg.png)
 
 The admin app is a feature-rich app that has over 80 features to help you manage your org when you can't get to a computer. Here's a list of just a few of the tasks you can do from the app:
 

@@ -100,11 +100,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     (You may have to scroll down.)
     
-    ![Select Delete in the Synthetic records section](../media/bd276b5d-5667-4bb1-a233-2dc5194e7ace.png)
+    ![Select Delete in the Synthetic records section](../../media/bd276b5d-5667-4bb1-a233-2dc5194e7ace.png)
   
 6. Select **Delete**.
     
-    ![Select Delete](../media/4413a45a-5b82-4ec6-82c6-0091f5be9696.png)
+    ![Select Delete](../../media/4413a45a-5b82-4ec6-82c6-0091f5be9696.png)
   
 7. In the **Custom resource records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -116,27 +116,27 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|:-----|
     |@  <br/> |MX  <br/> |1H  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> The **0** is the MX priority value. Add it to the beginning of the MX value, separated from the remainder of the value by a space.  <br/> **Note:** Get your \<*domain-key*\> from your Office 365 account.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
    
-    ![Type or paste values in the Custom resource records section](../media/b660ca9e-984d-449f-ae59-a65fe4e2c6bd.png)
+    ![Type or paste values in the Custom resource records section](../../media/b660ca9e-984d-449f-ae59-a65fe4e2c6bd.png)
   
 5. Select **Add**.
     
-    ![Select Add](../media/32f8f23c-0b80-48da-b08e-4e04052971af.png)
+    ![Select Add](../../media/32f8f23c-0b80-48da-b08e-4e04052971af.png)
   
 6. If there are any other Custom MX records, remove them.
     
 1. Select **Edit** in the MX record row. 
     
-    ![Select Edit in the MX record row](../media/acc53ae9-3b8a-421d-8d11-d4a4108b2353.png)
+    ![Select Edit in the MX record row](../../media/acc53ae9-3b8a-421d-8d11-d4a4108b2353.png)
   
 2. For each of the other Custom MX records, select the entry in the **Data** box and then press the **Delete** key on your keyboard to delete that record. 
     
     Continue until you have deleted the **Data** entry for each of the other MX records. 
     
-    ![Delete entries in the Data box](../media/28192089-7b38-4d2e-9d52-9b83422c27d5.png)
+    ![Delete entries in the Data box](../../media/28192089-7b38-4d2e-9d52-9b83422c27d5.png)
   
 7. When you have deleted the **Data** entry for each of the other MX records, select **Save** to save your changes. 
     
-    ![Select Save](../media/bf496d01-ccbe-4800-95f4-7b2283f2e5f6.png)
+    ![Select Save](../../media/bf496d01-ccbe-4800-95f4-7b2283f2e5f6.png)
   
 ## Add the five CNAME records that are required for Office 365
 
@@ -160,11 +160,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |enterpriseregistration  <br/> |CNAME  <br/> |1H  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |1H  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |
    
-    ![Type or paste values in the Custom resource records section](../media/cff9832a-6d57-421f-a183-55320974ed87.png)
+    ![Type or paste values in the Custom resource records section](../../media/cff9832a-6d57-421f-a183-55320974ed87.png)
   
 4. Select **Add**.
     
-    ![Select Add](../media/4a78080a-e0b2-4582-9696-3fe4fea41e91.png)
+    ![Select Add](../../media/4a78080a-e0b2-4582-9696-3fe4fea41e91.png)
   
 5. Add the other four CNAME records.
     
@@ -190,11 +190,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     > [!IMPORTANT]
     > Google Domains stores TXT records as a set that may contain multiple records. When you have at least one other TXT record, such as the TXT record you used to verify your domain, you must add TXT new records to that record set. Any attempt to enter additional TXT records as separate entries will result in a **Duplicate record** error message. 
   
-    ![Select Edit in the TXT record row](../media/eae14850-8d0c-4f29-8587-df8b36129d5f.png)
+    ![Select Edit in the TXT record row](../../media/eae14850-8d0c-4f29-8587-df8b36129d5f.png)
   
 5. Select the **(+)** control. 
     
-    ![Select the plus control](../media/628604cc-d2b2-42a5-bb5b-13c327b85d9f.png)
+    ![Select the plus control](../../media/628604cc-d2b2-42a5-bb5b-13c327b85d9f.png)
   
 6. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -207,11 +207,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     > [!NOTE]
     > We recommend copying and pasting this entry, so that all of the spacing stays correct.           
    
-   ![Type or paste values in the Custom resource records section](../media/4645cc4f-9fcc-4626-9674-072ed6fa34c2.png)
+   ![Type or paste values in the Custom resource records section](../../media/4645cc4f-9fcc-4626-9674-072ed6fa34c2.png)
   
 7. Select **Save**.
     
-    ![Select Save](../media/20c4c926-f062-4048-9265-bf752be54e0c.png)
+    ![Select Save](../../media/20c4c926-f062-4048-9265-bf752be54e0c.png)
   
 ## Add the two SRV records that are required for Office 365
 <a name="BKMK_add_SRV"> </a>
@@ -239,11 +239,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
 
     We recommend copying and pasting this entry, so that all of the spacing stays correct.       
    
-    ![Type or paste values in the Custom resource records section](../media/429d06a9-c0af-4961-b7d2-7a8dea6db37e.png)
+    ![Type or paste values in the Custom resource records section](../../media/429d06a9-c0af-4961-b7d2-7a8dea6db37e.png)
   
 6. Select **Add**.
     
-    ![Select Add](../media/89df6efd-e641-4441-baa2-d9a890424569.png)
+    ![Select Add](../../media/89df6efd-e641-4441-baa2-d9a890424569.png)
   
 7. Add the other SRV record.
     

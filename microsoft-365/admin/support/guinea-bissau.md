@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Guinea-Bissau
 author: cmcatee-MSFT
 f1.keywords:

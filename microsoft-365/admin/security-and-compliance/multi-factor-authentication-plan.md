@@ -72,7 +72,7 @@ The following figure shows how the updated Office 2013 device apps (on Windows) 
     
 This is detailed in the following figure:
   
-![Modern authentication for Office 2013 device apps.](../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
+![Modern authentication for Office 2013 device apps.](../../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
   
 ## Software requirements
 
@@ -86,7 +86,7 @@ To determine whether your Office installation is Click-to-run or MSI-base:
     
 3. For Outlook 2013 Click-to-Run installations, an **Update Options** item is displayed. For MSI-based installations, the **Update Options** item is not displayed. 
     
-    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
+    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
   
 ### Click-to-run based installations
 

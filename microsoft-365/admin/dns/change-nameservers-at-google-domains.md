@@ -95,7 +95,7 @@ To complete setting up your domain with Office 365, you change your domain's NS 
     
 3. On the **Domains** page, in the **Name servers** section, select **Use custom name servers**.
     
-    ![Google-Domains-BP-Redelegate-1-1](../media/e264bc05-5a56-4962-bcaf-e2d999f62278.png)
+    ![Google-Domains-BP-Redelegate-1-1](../../media/e264bc05-5a56-4962-bcaf-e2d999f62278.png)
   
 4. Depending on whether or not there are already nameservers listed on the page that is displayed now, continue to one of the two following procedures:
     
@@ -116,11 +116,11 @@ To complete setting up your domain with Office 365, you change your domain's NS 
 |**Third name server** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Fourth name server** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-Domains-BP-Redelegate-1-2](../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
+   ![Google-Domains-BP-Redelegate-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
   
 2. Select the **+ (add)** control to create an empty row. 
     
-    ![Google-Domains-BP-Redelegate-1-3](../media/ea23e5fc-07e1-4ffc-b8cf-8526867b752d.png)
+    ![Google-Domains-BP-Redelegate-1-3](../../media/ea23e5fc-07e1-4ffc-b8cf-8526867b752d.png)
   
 3. Add the other three Nameserver records.
     
@@ -130,7 +130,7 @@ To complete setting up your domain with Office 365, you change your domain's NS 
     
 4. Select **Save**.
     
-    ![Google-Domains-BP-Redelegate-1-5](../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
+    ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Office 365 email and other services will be all set to work with your domain. 
@@ -142,11 +142,11 @@ To complete setting up your domain with Office 365, you change your domain's NS 
     > [!CAUTION]
     > Follow these steps only if you have existing nameservers other than the four correct nameservers. (That is, delete only any current nameservers that are  *not*  named **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, or **ns4.bdm.microsoftonline.com**.) 
   
-    ![Google-Domains-BP-Redelegate-1-6-1](../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
+    ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   
 2. Delete each one by selecting it, and then pressing the **Delete** key on your keyboard. 
     
-    ![Google-Domains-BP-Redelegate-1-6-2](../media/524e64ad-56e6-4254-8a64-e4a4c3230f89.png)
+    ![Google-Domains-BP-Redelegate-1-6-2](../../media/524e64ad-56e6-4254-8a64-e4a4c3230f89.png)
   
 3. Still in the **Name servers** section, in the **NAME SERVER** rows, type or copy and paste the values from the following table. 
     
@@ -157,11 +157,11 @@ To complete setting up your domain with Office 365, you change your domain's NS 
 |**Third name server** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Fourth name server** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-Domains-BP-Redelegate-1-7](../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
+   ![Google-Domains-BP-Redelegate-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
   
 4. Select the **+(add)** control to create an empty row. 
     
-    ![Google-Domains-BP-Redelegate-1-8](../media/6ce40b1e-8464-443f-a64a-825dc8764590.png)
+    ![Google-Domains-BP-Redelegate-1-8](../../media/6ce40b1e-8464-443f-a64a-825dc8764590.png)
   
 5. Add the other two Nameserver records.
     
@@ -171,7 +171,7 @@ To complete setting up your domain with Office 365, you change your domain's NS 
     
 6. Select **Save**.
     
-    ![Google-Domains-BP-Redelegate-1-5](../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
+    ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Office 365 email and other services will be all set to work with your domain. 

@@ -218,8 +218,9 @@
     - name: Manage information governance
       href: manage-information-governance.md
     - name: Import data
-      href: importing-pst-files-to-office-365.md
       items: 
+        - name: Overview of importing PST files
+          href: importing-pst-files-to-office-365.md
         - name: Use network upload to import PST files
           href: use-network-upload-to-import-pst-files.md
         - name: Use drive shipping to import PST files
@@ -231,8 +232,9 @@
         - name: FAQ about importing PST files
           href: faqimporting-pst-files-to-office-365.md
     - name: Archive third-party data
-      href: archiving-third-party-data.md
       items: 
+        - name: Overview of archiving third-party data
+          href: archiving-third-party-data.md
         - name: Set up a connector to archive Facebook data
           href: archive-facebook-data-with-sample-connector.md
         - name: Set up a connector to archive Twitter data
@@ -276,8 +278,9 @@
     - name: Dispose data
       href: disposition-reviews.md
     - name: Manage inactive mailboxes
-      href: inactive-mailboxes-in-office-365.md
       items: 
+        - name: Overview of inactive mailboxes
+          href: inactive-mailboxes-in-office-365.md
         - name: Create and manage inactive mailboxes
           href: create-and-manage-inactive-mailboxes.md
         - name: Change the hold duration for an inactive mailbox
@@ -727,10 +730,13 @@
     - name: Mailbox auditing
       href: enable-mailbox-auditing.md
     - name: Advanced Audit
-      href: advanced-audit.md
       items:
+        - name: Overview of Advanced Audit
+          href: advanced-audit.md
         - name: Manage audit log retention policies
           href: audit-log-retention-policies.md
+        - name: Use Advanced Audit to investigate compromised accounts
+          href: mailitemsaccessed-forensics-investigations.md
     - name: Alert policies
       href: alert-policies.md
 - name: Manage compliance risks
