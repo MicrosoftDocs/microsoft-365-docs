@@ -1,5 +1,5 @@
 ---
-title: "Configuring privileged access management in Office 365"
+title: "Get started with privileged access management"
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -16,10 +16,10 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Solutions
 ms.assetid: 
-description: "Use this topic to learn more about configuring privileged access management in Office 365"
+description: "Use this topic to learn more about configuring privileged access management."
 ---
 
-# Configuring privileged access management in Office 365
+# Get started with privileged access management
 
 >[!IMPORTANT]
 >This topic covers deployment and configuration guidance for features only currently available in Office 365 E5 and Advanced Compliance SKUs.

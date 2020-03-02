@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for St Helena
 author: cmcatee-MSFT
 f1.keywords:

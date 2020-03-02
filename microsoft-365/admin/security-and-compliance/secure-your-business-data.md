@@ -30,20 +30,20 @@ Microsoft recommends that you complete the tasks listed in the following table t
   
 ||**Task**|**Office 365 Business Premium**|**Microsoft 365 Business**|
 |:-----|:-----|:-----|:-----|
-|1  <br/> |[Set up multi-factor authentication](secure-your-business-data.md#setup) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|2  <br/> |[Train your users](secure-your-business-data.md#train) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|3  <br/> |[Use dedicated admin accounts](secure-your-business-data.md#admin) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|4  <br/> |[Raise the level of protection against malware in mail](secure-your-business-data.md#malware) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|5  <br/> |[Protect against ransomware](secure-your-business-data.md#ransomware) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|6  <br/> |[Stop auto-forwarding for email](secure-your-business-data.md#forwarding) <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|7  <br/> |[Use Office Message Encryption](secure-your-business-data.md#encryption) <br/> ||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|8  <br/> |[Protect your email from phishing attacks](secure-your-business-data.md#phishing) <br/> ||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|9  <br/> |[Protect against malicious attachments and files with ATP Safe Attachments](secure-your-business-data.md#atp) <br/> ||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|10  <br/> |[Protect against phishing attacks with ATP Safe Links](secure-your-business-data.md#phishingatp) <br/> ||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|1  <br/> |[Set up multi-factor authentication](secure-your-business-data.md#setup) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|2  <br/> |[Train your users](secure-your-business-data.md#train) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|3  <br/> |[Use dedicated admin accounts](secure-your-business-data.md#admin) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|4  <br/> |[Raise the level of protection against malware in mail](secure-your-business-data.md#malware) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|5  <br/> |[Protect against ransomware](secure-your-business-data.md#ransomware) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|6  <br/> |[Stop auto-forwarding for email](secure-your-business-data.md#forwarding) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|7  <br/> |[Use Office Message Encryption](secure-your-business-data.md#encryption) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|8  <br/> |[Protect your email from phishing attacks](secure-your-business-data.md#phishing) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|9  <br/> |[Protect against malicious attachments and files with ATP Safe Attachments](secure-your-business-data.md#atp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|10  <br/> |[Protect against phishing attacks with ATP Safe Links](secure-your-business-data.md#phishingatp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
    
 Before you begin, check your [Microsoft 365 Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) in the Microsoft 365 security center. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With additional insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization’s security health.
   
-![Screenshot of Microsoft Secure Score](../media/secure-score.png)
+![Screenshot of Microsoft Secure Score](../../media/secure-score.png)
   
 ## 1: Set up multi-factor authentication
 <a name="setup"> </a>
@@ -205,11 +205,11 @@ Your organization might have configured additional options that apply a label to
 
 In Outlook for PC, select **Options** in the email, and then choose **Permissions**. 
   
-![Email message encryption in Outlook](../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
+![Email message encryption in Outlook](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
   
 In Outlook.com, select **Protect** in the email. The default protection is **Do not forward**. To change this to encrypt, select **Change Permissions** \> **Encrypt**. 
   
-![Email message encryption in Outlook.com](../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
+![Email message encryption in Outlook.com](../../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
   
 ### To receive encrypted email
 
@@ -226,7 +226,7 @@ If you've configured one or more custom domains for your Office 365 or Microsoft
   
 We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain. 
   
-![Creating an ATP anti-phishing policy](../media/security-and-compliance-center.png)
+![Creating an ATP anti-phishing policy](../../media/security-and-compliance-center.png)
   
 To create an ATP anti-phishing policy, view a [short training video](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c), or complete the following steps:
   

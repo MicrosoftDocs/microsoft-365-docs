@@ -104,9 +104,9 @@ Follow the steps below or [watch the video (start at 3:22)](https://support.offi
     
 4. In the **Domain Settings** area, select **Edit DNS Settings**.
     
-5. In the **MX Records** section, in the ** Mail Exchanger (MX Record) ** area, select **Other mail server**.<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-Configure-2-1](../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
+5. In the **MX Records** section, in the ** Mail Exchanger (MX Record) ** area, select **Other mail server**.<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-Configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
   
-6. If there are any MX records already listed, delete each of them by selecting the record and then pressing the **Delete** key on your keyboard.<br/>(If there are no MX records already listed, continue to the next step.)<br/>![1&amp;1-BP-Configure-2-2](../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
+6. If there are any MX records already listed, delete each of them by selecting the record and then pressing the **Delete** key on your keyboard.<br/>(If there are no MX records already listed, continue to the next step.)<br/>![1&amp;1-BP-Configure-2-2](../../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
   
 7. In the boxes for the **MX 1** record, type or copy and paste the values from the following table. 
     
@@ -114,11 +114,11 @@ Follow the steps below or [watch the video (start at 3:22)](https://support.offi
     |:-----|:-----|
     | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  NOTE: Get your \<domain-key\> from your Office 365 account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | 
     
-    ![1 and 1 - configure 2 and 3](../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
+    ![1 and 1 - configure 2 and 3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
-8. Select **Save**.<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-Configure-2-4](../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
+8. Select **Save**.<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-Configure-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
   
-9. In the **Edit DNS Settings** dialog box, select **Yes**.<br/>![Selecting Yes in the Edit DNS Settings dialog box](../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
+9. In the **Edit DNS Settings** dialog box, select **Yes**.<br/>![Selecting Yes in the Edit DNS Settings dialog box](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
 ## Add the six CNAME records that are required for Office 365
 <a name="BKMK_add_CNAME"> </a>
@@ -139,11 +139,11 @@ Follow the steps below or [watch the video (start at 3:57)](https://support.offi
     
 2. Select **Manage domains**.
     
-3. On the **Domain Center** page, find the domain that you want to update, and then select **Manage Subdomains**.<br/>![1&amp;1-BP-Configure-3-0](../media/d570d03f-5c38-463d-809e-5bb9e4fb2777.png) <br/>Now you'll create two subdomains and set an **Alias** value for each.<br/>(This is required because 1&1 IONOS supports only one top-level CNAME record, but Office 365 requires several CNAME records.)<br/>First, you'll create the Autodiscover subdomain.
+3. On the **Domain Center** page, find the domain that you want to update, and then select **Manage Subdomains**.<br/>![1&amp;1-BP-Configure-3-0](../../media/d570d03f-5c38-463d-809e-5bb9e4fb2777.png) <br/>Now you'll create two subdomains and set an **Alias** value for each.<br/>(This is required because 1&1 IONOS supports only one top-level CNAME record, but Office 365 requires several CNAME records.)<br/>First, you'll create the Autodiscover subdomain.
     
 4. In the **Subdomain Overview** section, select **Create Subdomain**.
     
-    ![1&amp;1-BP-Configure-3-1](../media/95c63639-eb80-443d-8951-98e8b6cdcc4f.png)
+    ![1&amp;1-BP-Configure-3-1](../../media/95c63639-eb80-443d-8951-98e8b6cdcc4f.png)
   
 5. In the **Create Subdomain** box for the new subdomain, type or copy and paste only the **Create Subdomain** value from the following table. (You'll add the **Alias** value in a later step.)
 
@@ -151,15 +151,15 @@ Follow the steps below or [watch the video (start at 3:57)](https://support.offi
     |:-----|:-----|
     |autodiscover  <br/> |autodiscover.outlook.com   | 
 
-    ![1&amp;1-BP-Configure-3-2](../media/9be45113-ebaf-48e6-983c-a7e6ff9eea45.png)
+    ![1&amp;1-BP-Configure-3-2](../../media/9be45113-ebaf-48e6-983c-a7e6ff9eea45.png)
   
-6. Select **Create Subdomain**.<br/>![1&amp;1-BP-Configure-3-3](../media/1e7bc874-f174-4597-8c08-df611d16a74d.png)
+6. Select **Create Subdomain**.<br/>![1&amp;1-BP-Configure-3-3](../../media/1e7bc874-f174-4597-8c08-df611d16a74d.png)
   
-7. In the **Subdomain Overview** section, locate the **autodiscover** subdomain that you just created, and then select the **Panel (v)** control for that subdomain. <br/>![1&amp;1-BP-Configure-3-4](../media/10e2e446-3e54-4fb2-8a29-8c442536cc31.png)
+7. In the **Subdomain Overview** section, locate the **autodiscover** subdomain that you just created, and then select the **Panel (v)** control for that subdomain. <br/>![1&amp;1-BP-Configure-3-4](../../media/10e2e446-3e54-4fb2-8a29-8c442536cc31.png)
   
-8. In the **Subdomain Settings** area, select **Edit DNS Settings**. <br/>![1&amp;1-BP-Configure-3-5](../media/5c602118-b89b-4897-9faf-0736be8a6a0d.png)
+8. In the **Subdomain Settings** area, select **Edit DNS Settings**. <br/>![1&amp;1-BP-Configure-3-5](../../media/5c602118-b89b-4897-9faf-0736be8a6a0d.png)
   
-9. In the **A/AAAA Records (IP Addresses)** section, in the **IP address (A Record)** area, select **CNAME**.<br/>![1&amp;1-BP-Configure-3-6](../media/7f57f468-fbee-4440-a53d-3e334d8e5b71.png)
+9. In the **A/AAAA Records (IP Addresses)** section, in the **IP address (A Record)** area, select **CNAME**.<br/>![1&amp;1-BP-Configure-3-6](../../media/7f57f468-fbee-4440-a53d-3e334d8e5b71.png)
   
 10. In the **Alias:** box, type or copy and paste only the **Alias** value from the following table.<br/> 
     
@@ -167,11 +167,11 @@ Follow the steps below or [watch the video (start at 3:57)](https://support.offi
     |:-----|:-----|
     |autodiscover  <br/> |autodiscover.outlook.com   |
 
-    ![1&amp;1-BP-Configure-3-7](../media/afac3118-3337-4f99-98dd-a7ca930230ce.png)
+    ![1&amp;1-BP-Configure-3-7](../../media/afac3118-3337-4f99-98dd-a7ca930230ce.png)
   
-11. Select the check box for the **I am aware** disclaimer.<br/>![1&amp;1-BP-Configure-3-8-1](../media/6c4cac1a-23f2-4ff3-b2d1-3dca908638d2.png)
+11. Select the check box for the **I am aware** disclaimer.<br/>![1&amp;1-BP-Configure-3-8-1](../../media/6c4cac1a-23f2-4ff3-b2d1-3dca908638d2.png)
   
-12. Select **Save**.<br/>![1&amp;1-BP-Configure-3-8-2](../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
+12. Select **Save**.<br/>![1&amp;1-BP-Configure-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
   
   
 ### Additional CNAME records
@@ -266,13 +266,13 @@ Follow the steps below or [watch the video (start at 5:09)](https://support.offi
     |:-----|:-----|:-----|
     |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           | 
     
-    ![TXT record](../media/0b3ba3b4-64b9-4d68-9ee1-04eb3a17d4c5.png)
+    ![TXT record](../../media/0b3ba3b4-64b9-4d68-9ee1-04eb3a17d4c5.png)
   
-7. Select **Save**.<br/>![Add record](../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
+7. Select **Save**.<br/>![Add record](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
   
-8. Select **Save**.<br/>![Save record](../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
+8. Select **Save**.<br/>![Save record](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
   
-9. In the **Edit DNS Settings** dialog box, select **Yes**.<br/>![Selecting Yes in the Edit DNS Settings dialog box](../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
+9. In the **Edit DNS Settings** dialog box, select **Yes**.<br/>![Selecting Yes in the Edit DNS Settings dialog box](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
 ## Add the two SRV records that are required for Office 365
 
@@ -298,13 +298,13 @@ Follow the steps below or [watch the video (start at 5:51)](https://support.offi
     |SRV  <br/> |sip  <br/> |tls  <br/> |(Leave this field empty.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (1 h)  <br/> |
     |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |(Leave this field empty.)  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (1 h)  <br/> |  
     
-    ![1&amp;1-BP-Configure-5-1](../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
+    ![1&amp;1-BP-Configure-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
   
-7. Select **Save**. <br/>![1&amp;1-BP-Configure-5-2](../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
+7. Select **Save**. <br/>![1&amp;1-BP-Configure-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
   
-8. Select **Save**. <br/>![1&amp;1-BP-Configure-5-3](../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
+8. Select **Save**. <br/>![1&amp;1-BP-Configure-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
   
-9. In the **Edit DNS Settings** dialog box, select **Yes**. <br/>![Selecting Yes in the Edit DNS Settings dialog box](../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
+9. In the **Edit DNS Settings** dialog box, select **Yes**. <br/>![Selecting Yes in the Edit DNS Settings dialog box](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
 10. Add the other SRV record. <br/>In the **TXT and SRV Records** section, select **Add Record**. <br/>In the **Add Record** area, create a record using the values from the other row in the table, and then again select **Add**, **Save**, and **Yes** to complete the record. 
     

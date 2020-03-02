@@ -61,7 +61,7 @@ If the group does not have an owner the expiration emails will go to a specified
 
 You can set the policy for all of your groups, only selected groups, or turn it off completely by selecting **None**. Note that currently you can't have different policies for different groups.
 
-![Screenshot of Groups expiration settings in Azure Active Directory](../media/azure-groups-expiration-settings.png)
+![Screenshot of Groups expiration settings in Azure Active Directory](../../media/azure-groups-expiration-settings.png)
 
 ## How expiry works with the retention policy
 

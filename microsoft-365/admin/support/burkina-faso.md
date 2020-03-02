@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Burkina Faso
 author: cmcatee-MSFT
 f1.keywords:

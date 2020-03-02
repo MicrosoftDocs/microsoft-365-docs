@@ -65,7 +65,7 @@
       items: 
         - name: Learn about privileged access management
           href: privileged-access-management-overview.md
-        - name: Configure privileged access management
+        - name: Get started with privileged access management
           href: privileged-access-management-configuration.md
     - name: Protect user and device access
       href: protect-access-to-data-and-services.md
@@ -621,14 +621,15 @@
         - name: Preserve Bcc and expanded distribution group recipients
           href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage data investigations
-  href: overview-data-investigations.md
   items: 
+    - name: Overview of data investigations
+      href: overview-data-investigations.md
     - name: Manage a data spillage incident
       href: manage-data-spillage-incidents.md
+    - name: Assign permissions for data investigations
+      href: data-investigations-permissions.md
     - name: Create a new investigation
       href: create-new-investigation.md
-    - name: Assign permissions for data investigations
-      href: permissions.md
     - name: Search for data in an investigation
       href: search-for-data.md
       items: 
