@@ -54,7 +54,6 @@ After you enable and configure this preview, users can additionally see and appl
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
-    Execute-AzureAdLabelSync
     ```
     
     For full instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
