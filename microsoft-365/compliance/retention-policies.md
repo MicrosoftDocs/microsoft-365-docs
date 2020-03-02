@@ -100,7 +100,7 @@ When the retention policy is retain-only, or delete-only, the paths are variatio
 
 #### Paths for delete-only retention policy
 
-1. **If the content is deleted** during the retention period: The document is deleted with no special treatment (the file moves to Recyle Bin, and so on). 
+1. **If the content is deleted** during the retention period: The document is deleted with no special treatment (the file moves to Recycle Bin, and so on). 
 
 2. **If the content is modified** during the retention period: The document isn't copied to the Preservation Hold library. At the end of the retention period, the document is moved to the second-stage Recycle Bin where it's permanently deleted at the end of 93 days. 
 
