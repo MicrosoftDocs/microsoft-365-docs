@@ -341,7 +341,7 @@
       items:
         - name: Overview of content search
           href: search-for-content.md
-        - name: Use the content search tool
+        - name: Use content search
           href: content-search.md
           items: 
           - name: Keyword queries and search conditions
@@ -364,10 +364,22 @@
             href: use-content-search-to-search-third-party-data-that-was-imported.md
           - name: Check your search query for errors
             href: check-your-content-search-query-for-errors.md
+          - name: Troubleshoot common eDiscovery issues
+            href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
             href: retry-failed-content-search.md
           - name: Preserve Bcc recipients for search
             href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+        - name: Configure content search
+          items: 
+          - name: Configure permissions filtering for content search
+            href: permissions-filtering-for-content-search.md
+          - name: Increase the download speed when exporting search results
+            href: increase-download-speeds-when-exporting-ediscovery-results.md
+          - name: Change the size of PST files when exporting search results
+            href: change-the-size-of-pst-files-when-exporting-results.md
+          - name: Disable reports when you export search results
+            href: disable-reports-when-you-export-content-search-results.md
         - name: Understand content search
           items: 
           - name: Content search limits
@@ -380,16 +392,6 @@
             href: de-duplication-in-ediscovery-search-results.md
           - name: Differences between estimated and actual search results
             href: differences-between-estimated-and-actual-ediscovery-search-results.md
-        - name: Configure content search
-          items: 
-          - name: Configure permissions filtering for content search
-            href: permissions-filtering-for-content-search.md
-          - name: Increase the download speed when exporting search results
-            href: increase-download-speeds-when-exporting-ediscovery-results.md
-          - name: Change the size of PST files when exporting search results
-            href: change-the-size-of-pst-files-when-exporting-results.md
-          - name: Disable reports when you export search results
-            href: disable-reports-when-you-export-content-search-results.md
         - name: Run content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections
@@ -408,16 +410,24 @@
           items:
           - name: Assign eDiscovery permissions
             href: assign-ediscovery-permissions.md
-          - name: Set up compliance boundaries for Core eDiscovery investigations
+          - name: Keyword queries and search conditions
+            href: keyword-queries-and-search-conditions.md
+          - name: Configure search permissions filtering
+            href: permissions-filtering-for-content-search.md
+          - name: Set up compliance boundaries
             href: set-up-compliance-boundaries.md
-          - name: Use a script to add users to a hold in an eDiscovery case
+          - name: Use a script to add users to an eDiscovery hold
             href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-          - name: Create a report on holds in Core eDiscovery cases
+          - name: Create a report on eDiscovery holds
             href: create-a-report-on-holds-in-ediscovery-cases.md
           - name: Search and purge spilled data
             href: data-spillage-scenariosearch-and-purge.md
+          - name: Preserve Bcc recipients for search
+            href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
           - name: Troubleshoot common eDiscovery issues
             href: ediscovery-troubleshooting-common-issues.md
+          - name: Retry a failed search
+            href: retry-failed-content-search.md
     - name: Advanced eDiscovery
       items:
         - name: Overview of Advanced eDiscovery
@@ -689,26 +699,18 @@
           href: document-metadata-fields.md
         - name: Manage jobs
           href: manage-jobs.md
-
- 
-    
-
-    
-    
-    - name: Manage holds
-      items: 
-
-        - name: Create a Litigation Hold
-          href: create-a-litigation-hold.md
-        - name: Delete items in the Recoverable Items folder of mailboxes on hold
-          href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
-        - name: Increase the Recoverable Items quota for mailboxes on hold
-          href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
-        - name: How to identify the type of hold placed on a mailbox
-          href: identify-a-hold-on-an-exchange-online-mailbox.md
-        - name: Preserve Bcc and expanded distribution group recipients
-          href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
-
+- name: Manage holds
+  items: 
+    - name: How to identify the type of hold placed on a mailbox
+      href: identify-a-hold-on-an-exchange-online-mailbox.md
+    - name: Create a Litigation Hold
+      href: create-a-litigation-hold.md
+    - name: Delete items in the Recoverable Items folder of mailboxes on hold
+      href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
+    - name: Increase the Recoverable Items quota for mailboxes on hold
+      href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Preserve Bcc and expanded distribution group recipients
+      href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies
   items: 
     - name: Unified auditing
