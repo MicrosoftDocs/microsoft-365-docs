@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for St Kitts & Nevis
 author: cmcatee-MSFT
 f1.keywords:

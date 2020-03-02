@@ -72,7 +72,7 @@ The simplest way to detect if a user has Office 365 ProPlus installed and has be
   
 If you don't want to use the Activations report, you can ask a user to open an Office application such as Word on their machine, and then choose **File** \> **Account**. Under **Product Information**, you should see **Subscription Product** and **Microsoft Office 365 ProPlus**, as shown in the following image.
 
-![Product information in an Office application](../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
+![Product information in an Office application](../../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
   
 For help with Office 365 ProPlus, see [Troubleshooting tips for Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=846339).
 
@@ -135,18 +135,18 @@ Centralized Deployment supports assignments to individual users, groups, and eve
    
 Take a look at the following example where Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in.
   
-![Diagram of sales department](../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![Diagram of sales department](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
    
 ### Find out if a group contains nested groups
 
 The easiest way to detect if a group contains nested groups is to view the group contact card within Outlook. If you enter the group name within the **To** field of an email and then select the group name when it resolves, it will show you if it contains users or nested groups. In the example below, the **Members** tab of the Outlook contact card for the Test Group shows no users and only two sub groups. 
   
-![Members tab of Outlook contact card](../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Members tab of Outlook contact card](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
   
 You can do the opposite query by resolving the group to see if it's a member of any group. In the example below, you can see under the **Membership** tab of the Outlook contact card that Sub Group 1 is a member of the Test Group. 
   
-![Membership tab of the Outlook contact card](../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Membership tab of the Outlook contact card](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
   
 Alternately, you can use the Azure Active Directory Graph API to run queries to find the list of groups within a group. For more information, see [Operations on groups | Graph API reference](https://go.microsoft.com/fwlink/p/?linkid=846342).
   

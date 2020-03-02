@@ -59,7 +59,7 @@ If you added your own domain name to use with your subscription, you must remove
 
 3. From the **More actions** menu, select **Cancel subscription**.
 
-    ![Close up of the More Actions menu.](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Close up of the More Actions menu.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. Review the important dates, provide feedback about why you are cancelling, then select **Cancel subscription**.
 
@@ -75,7 +75,7 @@ If you added your own domain name to use with your subscription, you must remove
 
 3. From the **More actions** menu, select **Cancel subscription**.
 
-    ![Close up of the More Actions menu.](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Close up of the More Actions menu.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. Review the important dates, provide feedback about why you are cancelling, then select **Cancel subscription**.
 

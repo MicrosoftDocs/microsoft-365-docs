@@ -68,7 +68,7 @@ To change your domain's name servers at your domain registrar's website yourself
 **First nameserver:** Use the name server value assigned by Azure.  
 **Second nameserver:** Use the name server value assigned by Azure.  
 
-![Azure-BP-Redelegate-1-1](../media/3e4805ea-608a-4df9-8f68-1fbf70d13d08.png)
+![Azure-BP-Redelegate-1-1](../../media/3e4805ea-608a-4df9-8f68-1fbf70d13d08.png)
   
 > [!TIP]
 > You should use at least two name server records. If there are any other name servers listed at your domain registrar's website, you should delete them. 
@@ -88,15 +88,15 @@ Before you use your domain with Office 365, we have to make sure that you own it
   
 1. To get started, go to your domains page at Azure by using [this link](https://portal.azure.com ). You'll be prompted to log in first.
     
-    ![Azure-BP-Configure-1-1](../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
+    ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
 2. Using the **search bar** on the **Dashboard** page, type in **DNS zones**. In the results display, select **DNS zones** under the **Services** portion. Once you've been redirected, select the domain that you want to update.
     
-    ![Azure-BP-Configure-1-2](../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
+    ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
 3. On the **Settings** page for your domain, in the **DNS zone** area, select **+ Record set**.
     
-    ![Azure-BP-Configure-1-3](../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
+    ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
 4. In the **Add record set** area, in the boxes for the new record set, select the values from the following table. 
     
@@ -106,7 +106,7 @@ Before you use your domain with Office 365, we have to make sure that you own it
     |:-----|:-----|:-----|:-----|:-----|
     |@  <br/> |TXT  <br/> |1  <br/> |Hours  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![Azure-BP-Verify-1-1](../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
+    ![Azure-BP-Verify-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
 5. Select **OK**.
   
@@ -138,15 +138,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
 
 1. To get started, go to your domains page at Azure by using [this link](https://portal.azure.com ). You'll be prompted to log in first.
     
-    ![Azure-BP-Configure-1-1](../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
+    ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
 2. On the **Dashboard** page, in the **All resources** area, select the domain that you want to update. 
     
-    ![Azure-BP-Configure-1-2](../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
+    ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
 3. On the **Settings** page for your domain, in the **DNS zone** area, select **+ Record set**.
     
-    ![Azure-BP-Configure-1-3](../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
+    ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
 4. In the **Add record set** area, in the boxes for the new record set, select the values from the following table. 
     
@@ -156,44 +156,44 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |@  <br/> |MX  <br/> |1  <br/> |Hours  <br/> |10  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Office 365 account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md)  
    
-    ![Azure-BP-Configure-2-1](../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
+    ![Azure-BP-Configure-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
 5. Select **OK**.
     
-    ![Azure-BP-Configure-2-2](../media/2f24225f-69ac-41dc-91c5-93d327360f74.png)
+    ![Azure-BP-Configure-2-2](../../media/2f24225f-69ac-41dc-91c5-93d327360f74.png)
   
 6. If there are any other MX records listed in the **MX Records** section, you must delete them. 
     
     First, in the **DNS zone** area, select the **MX Record set**.
     
-    ![Azure-BP-Configure-2-3](../media/9890da61-6fcd-4c61-888e-ccbb84f80cd0.png)
+    ![Azure-BP-Configure-2-3](../../media/9890da61-6fcd-4c61-888e-ccbb84f80cd0.png)
   
     Next, select the MX record you want to delete.
     
-    ![Azure-BP-Configure-2-4](../media/afe54f12-66d2-4ff3-80e9-427448e4c32c.png)
+    ![Azure-BP-Configure-2-4](../../media/afe54f12-66d2-4ff3-80e9-427448e4c32c.png)
   
 7. Select the **Context menu (…)**, and then choose **Remove**.
     
-    ![Azure-BP-Configure-2-5](../media/25219e25-bc14-4bc7-84ed-ee65eb28a8ed.png)
+    ![Azure-BP-Configure-2-5](../../media/25219e25-bc14-4bc7-84ed-ee65eb28a8ed.png)
   
 8. Select **Save**.
     
-    ![Azure-BP-Configure-2-6](../media/c6133096-5e43-4637-9c01-b63ee4b03517.png)
+    ![Azure-BP-Configure-2-6](../../media/c6133096-5e43-4637-9c01-b63ee4b03517.png)
   
 ## Add the four CNAME records that are required for Office 365
 <a name="BKMK_add_CNAME"> </a>
 
 1. To get started, go to your domains page at Azure by using [this link](https://portal.azure.com ). You'll be prompted to log in first.
     
-    ![Azure-BP-Configure-1-1](../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
+    ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
 2. On the **Dashboard** page, in the **All resources** area, select the domain that you want to update. 
     
-    ![Azure-BP-Configure-1-2](../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
+    ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
 3. On the **Settings** page for your domain, in the **DNS zone** area, select **+ Record set**.
     
-    ![Azure-BP-Configure-1-3](../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
+    ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
 4. Add the first of the four CNAME records.
     
@@ -208,11 +208,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |lyncdiscover  <br/> |CNAME  <br/> |1  <br/> |Hours  <br/> |webdir.online.lync.com  <br/> |
     
    
-    ![Azure-BP-Configure-3-1](../media/a1c4d869-da97-43b3-952c-d513a20231dc.png)
+    ![Azure-BP-Configure-3-1](../../media/a1c4d869-da97-43b3-952c-d513a20231dc.png)
   
 5. Select **OK**.
     
-    ![Azure-BP-Configure-3-2](../media/b89b51da-1c07-43cf-9fab-75d2e5eb3544.png)
+    ![Azure-BP-Configure-3-2](../../media/b89b51da-1c07-43cf-9fab-75d2e5eb3544.png)
   
 6. Add each of the other three CNAME records.
     
@@ -238,15 +238,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
 1. To get started, go to your domains page at Azure by using [this link](https://portal.azure.com ). You'll be prompted to log in first.
     
-    ![Azure-BP-Configure-1-1](../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
+    ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
 2. On the **Dashboard** page, in the **All resources** area, select the domain that you want to update. 
     
-    ![Azure-BP-Configure-1-2](../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
+    ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
 3. In the **DNS zone** area, select the **TXT record set**.
     
-    ![Azure-BP-Configure-4-1](../media/03095196-5010-4072-8503-79b812084dbf.png)
+    ![Azure-BP-Configure-4-1](../../media/03095196-5010-4072-8503-79b812084dbf.png)
   
 4. In the **Record set properties** area, in the boxes for the new record set, select the values from the following table. 
     
@@ -256,26 +256,26 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|:-----|:-----|
     |@  <br/> |TXT  <br/> |1  <br/> |Hours  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           
 
-    ![Azure-BP-Configure-4-2](../media/78e84c43-e0ce-433f-8e74-9157fb093cca.png)
+    ![Azure-BP-Configure-4-2](../../media/78e84c43-e0ce-433f-8e74-9157fb093cca.png)
   
 5. Select **Save**.
     
-    ![Azure-BP-Configure-4-3](../media/d7421c7f-ea63-4e11-8595-a482b8c165e0.png)
+    ![Azure-BP-Configure-4-3](../../media/d7421c7f-ea63-4e11-8595-a482b8c165e0.png)
   
 ## Add the two SRV records that are required for Office 365
 <a name="BKMK_add_SRV"> </a>
 
 1. To get started, go to your domains page at Azure by using [this link](https://portal.azure.com ). You'll be prompted to log in first.
     
-    ![Azure-BP-Configure-1-1](../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
+    ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
 2. On the **Dashboard** page, in the **All resources** area, select the domain that you want to update. 
     
-    ![Azure-BP-Configure-1-2](../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
+    ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
 3. On the **Settings** page for your domain, in the **DNS zone** area, select **+ Record set**.
     
-    ![Azure-BP-Configure-1-3](../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
+    ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
 4. Add the first of the two SRV records.
     
@@ -288,11 +288,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |_sip._tls  <br/> |SRV  <br/> |1  <br/> |Hours  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls._tcp  <br/> |SRV  <br/> |1  <br/> |Hours  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
 
-    ![Azure-BP-Configure-5-1](../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
+    ![Azure-BP-Configure-5-1](../../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
   
 5. Select **OK**.
     
-    ![Azure-BP-Configure-5-2](../media/a35b6c8a-d001-4b3c-8a67-96b4890e564c.png)
+    ![Azure-BP-Configure-5-2](../../media/a35b6c8a-d001-4b3c-8a67-96b4890e564c.png)
   
 6. Add the other SRV record.
     

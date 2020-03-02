@@ -163,7 +163,7 @@ If you're using Office 365 operated by 21Vianet, sign in at [https://portal.part
 
 1. Select **Mail**.
 
-2. On the Outlook navigation bar, select **Settings**![Settings: update your profile, install software and connect it to the cloud](../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png) \> **Options**.
+2. On the Outlook navigation bar, select **Settings**![Settings: update your profile, install software and connect it to the cloud](../../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png) \> **Options**.
 
 3. In the left pane, select **Mail**, and under **Accounts**, select **Connected accounts**.
 
