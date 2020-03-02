@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid:
 ROBOTS: NOINDEX, NOFOLLOW 
-description: "Data produced by cloud-based apps in Office 365 is stored in a user's Exchange Online mailbox in the Microsoft cloud."
+description: "Data produced by cloud-based apps in Office 365 is stored or associated with a user's Exchange Online mailbox."
 ---
 
 # Content stored in Exchange Online mailboxes
 
-A mailbox in Exchange Online is primarily used to store email-related items such as messages, calendar items, tasks, and notes. But that's changing as more cloud-based Office 365 apps also store their data in a user's mailbox. One advantage of storing data in a mailbox is that you can use the search tools in Content Search, eDiscovery, Advanced eDiscovery, and Data Investigations to find, view, and export the data from these cloud-based apps. The data from some of these apps is stored in hidden folders located in a non-interpersonal message (non-IPM) subtree in the mailbox. This means that the data is hidden from the user's view when they use Outlook or other mail clients to access their mailbox.
+A mailbox in Exchange Online is primarily used to store email-related items such as messages, calendar items, tasks, and notes. But that's changing as more cloud-based Office 365 apps also store their data in a user's mailbox. One advantage of storing data in a mailbox is that you can use the search tools in content search, eDiscovery, Advanced eDiscovery, and Data Investigations to find, view, and export the data from these cloud-based apps. The data from some of these apps is stored in hidden folders located in a non-interpersonal message (non-IPM) subtree in the mailbox. Data from other cloud-based apps may not be directly stored in a user mailbox but it's associated with the user's mailbox and will be returned in a search if that data matches the search query. Regardless of whether cloud-based data is stored or associated with a user mailbox, this data is hidden from the user's view when they use Outlook or other mail clients to access their mailbox.
 
-The following table lists the Office 365 apps that store data in a cloud-based mailbox. The table also describes the type of content that each app stores.
+The following table lists the Office 365 apps that either store data in a cloud-based mailbox or is associated with a cloud-based mailbox. The table also describes the type of content that each app produces.
 
 |Office 365 app  |Description  |
 |:---------|:---------|
@@ -35,7 +35,7 @@ The following table lists the Office 365 apps that store data in a cloud-based m
 |Skype for Business    <br/>  | Conversations in Skype for Business are stored in the Conversation History folder in a user's mailbox. If the mailbox of a participant of a Skype meeting is placed on Litigation Hold or assigned to a retention policy, files attached to a meeting are retained in the participants mailbox.         <br/> |
 |Sway     <br/> |  Sways are stored as an HTML file that is attached to an email message and stored in a hidden folder in the mailbox of the user who created the sway. When you export content from Sway in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following GUID) **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**.       <br/> |
 |Tasks    <br/> |  Tasks in the Tasks app (which are the same tasks as the ones accessible in Outlook) are stored in a user's mailbox.       <br/> |
-|Teams    <br/>  |Conversations that are part of a Teams channel are stored in the mailbox that's associated with the Team. Conversations that are part of the Chat list in Teams (also called *1 x N chats*) are stored in the mailbox of the users who participate in the chat. Also, summary information for meetings and calls in a Teams channel are stored in the mailboxes of users who dialed into the meeting or call. <br/> | 
+|Teams    <br/>  |Conversations that are part of a Teams channel are associated with mailbox that's associated with the Team. Conversations that are part of the Chat list in Teams (also called *1 x N chats*) are associated with the mailbox of the users who participate in the chat. Also, summary information for meetings and calls in a Teams channel are associated with mailboxes of users who dialed into the meeting or call. So when searching for Teams content, you would search the Teams mailbox for content in channel conversations and search user mailboxes for content in 1 x N chats in the chat list.<br/> | 
 |To-Do  <br/> | Tasks (called *to-dos*, which are saved in to-do lists) in the To-Do app are stored in a user's mailbox.        <br/> |
 ||||
 
