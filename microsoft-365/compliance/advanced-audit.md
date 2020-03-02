@@ -56,7 +56,7 @@ The new MailItemsAccessed mailbox action replaces MessageBind in mailbox auditin
 
 - MessageBind actions would trigger the creation of multiple audit records when the same email message was accessed, which resulted in auditing "noise". In contrast, MailItemsAccessed events are aggregated into fewer audit records.
 
-For more information about mailbox auditing logging, see [Manage mailbox auditing](enable-mailbox-auditing.md).
+For information about audit records for MailItemsAccessed activities, see [Use Advanced Audit to investigate compromised accounts](mailitemsaccessed-forensics-investigations.md).
 
 ### Search for MailItemsAccessed audit records
 
