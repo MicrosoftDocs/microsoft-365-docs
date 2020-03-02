@@ -46,7 +46,7 @@ Microsoft publishes WCAG reports that reflect the complete product or service. I
 
 ## Microsoft accessibility conformance reports
 
-Read WCAG reports for [all our products and services](https://go.microsoft.com/fwlink/p/?linkid=205097).
+Read WCAG reports for [all our products and services](https://cloudblogs.microsoft.com/industry-blog/government/2018/09/11/accessibility-conformance-reports/).
 
 ## Resources
 

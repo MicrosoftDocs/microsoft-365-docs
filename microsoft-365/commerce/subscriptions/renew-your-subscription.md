@@ -75,7 +75,7 @@ If you prepaid for your subscription with a product key, your subscription will 
  
 3. To turn on **Recurring billing**, switch the toggle to **On**.
 
-    ![Close-up of a Subscription card that has Recurring billing turned on.](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Close-up of a Subscription card that has Recurring billing turned on.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     You can turn off **Recurring billing** by switching the toggle to **Off**.
 
@@ -98,7 +98,7 @@ If you prepaid for your subscription with a product key, your subscription will 
  
 3. To turn on **Recurring billing**, switch the toggle to **On**.
 
-    ![Close-up of a Subscription card that has Recurring billing turned on.](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Close-up of a Subscription card that has Recurring billing turned on.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     You can turn off **Recurring billing** by switching the toggle to **Off**.
 

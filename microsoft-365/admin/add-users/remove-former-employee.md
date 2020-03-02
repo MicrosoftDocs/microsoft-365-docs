@@ -206,7 +206,7 @@ If your former employee had a organization phone, you can use the Exchange admin
     
 4. Select the user, and under **Mobile Devices**, select **View details**. 
     
-5. On the **Mobile Device Details** page, under **Mobile devices**, select the mobile device, select **Wipe Data**![Wipe Device](../media/1c113a36-53cb-4974-884f-3ecd9535506e.png), and then select **Block**. 
+5. On the **Mobile Device Details** page, under **Mobile devices**, select the mobile device, select **Wipe Data**![Wipe Device](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png), and then select **Block**. 
     
 6. Select **Save**. 
     

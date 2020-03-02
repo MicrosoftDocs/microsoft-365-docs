@@ -47,15 +47,20 @@ After you enable and configure this preview, users can additionally see and appl
 
 1. Because this feature uses Azure AD functionality, follow the instructions in the Azure AD documentation to enable the preview: [Assign sensitivity labels to Office 365 groups in Azure Active Directory (preview)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. In a PowerShell session, connect to the Security & Compliance Center by using a work or school account that has global admin privileges. For instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
-
-3. Run the following commands to synchronize your labels to Azure AD, so that they can be used with Office 365 groups:
+2. In a PowerShell session, connect to the Security & Compliance Center by using a work or school account that has global admin privileges. For example:
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
+    ```
+    
+    For full instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+
+3. Run the following command to synchronize your sensitivity labels to Azure AD, so that they can be used with Office 365 groups:
+    
+    ```powershell
     Execute-AzureAdLabelSync
     ```
 
@@ -82,7 +87,7 @@ On this new **Site and group settings** page, configure the settings:
 > 
 > Similarly, if you create a label and don't turn on these site and group settings, the label will still be available when users create teams, groups, and sites, but only the label name will be applied.
 
-If your label isn't already published, now publish it by [adding it to a label policy](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
+If your sensitivity label isn't already published, now publish it by [adding it to a sensitivity label policy](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). The users who are assigned a sensitivity label policy that includes this label will be able to select it for sites and groups.
 
 ## Sensitivity label management
 

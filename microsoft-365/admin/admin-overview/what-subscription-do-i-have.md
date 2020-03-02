@@ -47,13 +47,13 @@ If you're an admin, you can verify which subscriptions your organization has by 
 
 2. If you have only one subscription, it will be displayed on the **Subscriptions** page, along with the subscription name, information about the subscription, and its status. In the following screenshot, you can see that I have an Office 365 Business subscription.
 
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
+    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
 3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
 
     If you have multiple subscriptions, choose the one for which you want to see detailed information. The subscription card will update with information about that subscription.
 
-    ![The Subscriptions page of the admin center showing a list of multiple subscriptions grouped by their status.](../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
+    ![The Subscriptions page of the admin center showing a list of multiple subscriptions grouped by their status.](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
     > If you have subscriptions that have expired or have been disabled, they'll be listed based on their current state.
@@ -66,13 +66,13 @@ If you're an admin, you can verify which subscriptions your organization has by 
 
 2. If you have only one subscription, it will be displayed on the **Subscriptions** page, along with the subscription name, information about the subscription, and its status. In the following screenshot, you can see that I have an Office 365 Business subscription.
 
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
+    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
 3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
 
     If you have multiple subscriptions, choose the one for which you want to see detailed information. The subscription card will update with information about that subscription.
 
-    ![The Subscriptions page of the admin center showing a list of multiple subscriptions grouped by their status.](../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
+    ![The Subscriptions page of the admin center showing a list of multiple subscriptions grouped by their status.](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
     > If you have subscriptions that have expired or have been disabled, they'll be listed based on their current state.

@@ -99,21 +99,21 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|:-----|:-----|
     |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>**Note:** Get your \<*domain-key*\> from your Office 365 account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
    
-   ![Choose Type from the drop-down list](../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
+   ![Choose Type from the drop-down list](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
   
 5. Select **add record**.
     
-    ![Select Add Record](../media/c7ef9733-1665-4dbf-accc-caadf1574abc.png)
+    ![Select Add Record](../../media/c7ef9733-1665-4dbf-accc-caadf1574abc.png)
   
 6. If there are any other MX records in the **MX (Mail Exchanger)** section, delete each of them. 
     
     For one of the other MX records, select **Delete.**
     
-    ![Select Delete for each additional MX record](../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
+    ![Select Delete for each additional MX record](../../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
   
 7. In the confirmation dialog box, select **OK**.
     
-    ![Select OK](../media/a50df7a3-2906-4cc0-87d4-1231ab234230.png)
+    ![Select OK](../../media/a50df7a3-2906-4cc0-87d4-1231ab234230.png)
   
 8. Use the same process to delete any other MX records that were already listed.
     
@@ -133,11 +133,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     > [!IMPORTANT]
     > You must delete the existing **autodiscover** record  *before*  adding the **autodiscover** record that is required by Office 365. Bluehost does not allow you to maintain two **autodiscover** records simultaneously. 
   
-    ![Select Delete](../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
+    ![Select Delete](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
 5. Select **OK**.
     
-    ![Select OK](../media/0c8f409d-c39f-4ed2-9c95-9af3e61c2411.png)
+    ![Select OK](../../media/0c8f409d-c39f-4ed2-9c95-9af3e61c2411.png)
   
 6. Create the first of the six CNAME records.
     
@@ -153,11 +153,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |enterpriseregistration  <br/> |14400  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |14400  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![Create the first CNAME record](../media/4f12e9b1-9dec-4bc2-aa15-8bffa71fe131.png)
+    ![Create the first CNAME record](../../media/4f12e9b1-9dec-4bc2-aa15-8bffa71fe131.png)
   
 7. Select **add record**.
     
-    ![Select Add Record](../media/c2782250-a9a6-4aee-bb15-f57cb0008587.png)
+    ![Select Add Record](../../media/c2782250-a9a6-4aee-bb15-f57cb0008587.png)
   
 8. Add each of the other five CNAME records.
     
@@ -187,11 +187,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|:-----|
     |@  <br/> |14400  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
    
-    ![Copy the TXT value](../media/b2dabd7a-ee3d-4209-aa1e-0233eb8cf3b9.png)
+    ![Copy the TXT value](../../media/b2dabd7a-ee3d-4209-aa1e-0233eb8cf3b9.png)
   
 5. Select **add record**.
     
-    ![Select Add Record](../media/c050e9a2-2274-4640-8f0f-6752d382df5d.png)
+    ![Select Add Record](../../media/c050e9a2-2274-4640-8f0f-6752d382df5d.png)
   
 ## Add the two SRV records that are required for Office 365
 <a name="BKMK_add_SRV"> </a>
@@ -215,11 +215,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
-    ![Copy the value for the new record](../media/e2911bca-c00b-4b8a-837f-f1d438c474c4.png)
+    ![Copy the value for the new record](../../media/e2911bca-c00b-4b8a-837f-f1d438c474c4.png)
   
 5. Select **add record**.
     
-    ![Select Add Record](../media/0fd6a587-03fd-4bce-8321-b14e6ad21f5c.png)
+    ![Select Add Record](../../media/0fd6a587-03fd-4bce-8321-b14e6ad21f5c.png)
   
 6. Add the other SRV record.
     

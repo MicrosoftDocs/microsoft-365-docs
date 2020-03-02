@@ -32,11 +32,11 @@ Each month you'll receive an email that tells you that your new billing statemen
   
 Your invoice contains two pages. Page 1 is the invoice summary, and contains general information about the invoice, order, amount due, how to make a payment, and how to contact support.
   
-![Page 1 of a sample invoice.](../../admin/media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
+![Page 1 of a sample invoice.](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
   
 Page 2 contains details about the billing activity for each subscription.
   
-![Page 2 of a sample invoice.](../../admin/media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
+![Page 2 of a sample invoice.](../../media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
   
 For descriptions of the fields and terms included in your invoice, see the [Invoice Field Glossary](#invoice-field-glossary) later in this article.
   

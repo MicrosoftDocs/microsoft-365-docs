@@ -192,7 +192,7 @@ If no credit check is required, use the steps in [Use the new admin center to ch
 
 2. Find the subscription that you want to change. In the **Payment method** section, select **Change payment details**.
 
-    ![The Payment method section of a Subscription card for a subscription that pays by credit card.](../../admin/media/6c9d9cae-6086-4687-a979-bb971f35f1b4.png)
+    ![The Payment method section of a Subscription card for a subscription that pays by credit card.](../../media/6c9d9cae-6086-4687-a979-bb971f35f1b4.png)
   
 3. In the **Change payment details** pane, select **Change your payment method**.
 

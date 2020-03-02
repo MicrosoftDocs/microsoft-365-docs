@@ -59,17 +59,17 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
     
 3. On the **Shared mailboxes** page, select **+ Add a mailbox**. Enter a name for the shared mailbox. Then the wizard chooses the email address, but you can edit it.
     
-    ![Name your shared mailbox.](../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
+    ![Name your shared mailbox.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
 4. Select **Add**. It may take a few minutes before you can add members.
 
 5. Under **Next steps**, select **Add members to this mailbox**. Members are the people who will be able to view the incoming mail to this shared mailbox, and the outgoing replies.
 
-   ![Select Add Members](../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
+   ![Select Add Members](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
 6. Select the **+Add members** button. Put a check mark next to the people who you want to use this shared mailbox, and select **Save**.
 
-   ![Assign members to the shared mailbox](../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
+   ![Assign members to the shared mailbox](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Select **Close**.
 
@@ -90,7 +90,7 @@ But what if an admin simply resets the password of the shared mailbox user accou
 
 2. In the list of user accounts, find the account for the shared mailbox (for example, change the filter to **Unlicensed users**).
 
-3. Select the user to open their properties pane, and then select the **Block this user** icon ![Screen shot of the Block this user icon](../media/block-user-icon.png).
+3. Select the user to open their properties pane, and then select the **Block this user** icon ![Screen shot of the Block this user icon](../../media/block-user-icon.png).
 
    **Note**: If the account is already blocked, **Sign in blocked** will appear at the top and the icon will read **Unblock this user**.
 
