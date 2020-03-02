@@ -96,9 +96,9 @@ The next step is to create a case and start using Advanced eDiscovery. Complete 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions. Members of the Organization Management role group can also create Advanced eDiscovery cases.
 
 2. In the left nave of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Advanced**.
- 
+
 3. On the **Advanced eDiscovery** page, click the **Cases** tab, and then click **Create a case**.
-    
+
 4. On the **New eDiscovery case** flyout page, give the case a name (required), and then type an optional case number and description. The case name must be unique in your organization.
 
 5. Click **Save** to create the case.
@@ -121,28 +121,31 @@ The next step is to create a case and start using Advanced eDiscovery. Complete 
 
 ## The Advanced eDiscovery workflow
 
-To get you started using Advanced eDiscovery, here's a simple workflow that aligns to the common eDiscovery practices. Within each of these steps, we'll also highlight some the extended Advanced eDiscovery functionality that you can explore.
+To get you started using Advanced eDiscovery, here's a simple workflow that aligns with common eDiscovery practices. In each of these steps, we'll also highlight some the extended Advanced eDiscovery functionality that you can explore.
 
-1. **Add custodians to a case.** The first step after creating a case is to add custodians. A *custodian* is a person having administrative control of a document or electronic file that may be relevant to the case. Here are some things that happen (or that you can do) when you add a custodian to a case:
+1. **[Add custodians to a case](add-custodians-to-case.md).** The first step after creating a case is to add custodians. A *custodian* is a person having administrative control of a document or electronic file that may be relevant to the case. Here are some things that happen (or that you can do) when you add custodians to a case:
 
-   - Data in the custodian's Exchange mailbox, OneDrive account, and any Microsoft Teams or Yammer groups that the custodian is a member of can be "marked" as custodial data in the case. 
-   
+   - Data in the custodian's Exchange mailbox, OneDrive account, and any Microsoft Teams or Yammer groups that the custodian is a member of can be "marked" as custodial data in the case.
+  
+   - Custodian data is re-indexed (by a process called *Advancing indexing*). This helps optimize searching for it in the next step.
+  
+   - You can place a hold on custodian data. This preserves data that may be relevant to the case during the investigation.
+  
    - You can associate other data sources with a custodian (for example, you can associate a SharePoint site or Office 365 Group with a custodian) so this data can be re-indexed, placed on hold, and searched, just like the data in the custodian's mailbox or OneDrive account.
 
-   - Custodian data is re-indexed (by a process called *Advancing indexing*). This helps optimize searching for it in the next step.
-   
-   - You can place a hold on custodian data. This preserves data that may be relevant to the case during the investigation.
+   - You can use the [communications workflow](managing-custodian-communications.md) in Advanced eDiscovery to send a legal hold notification to custodians.
 
-   - You can use the communications workflow in Advanced eDiscovery to send a legal hold notification to the case custodians. 
+2. **[Search custodial data sources for data relevant to the case](collecting-data-for-ediscovery.md).** After you add custodians to a case, use the built-in search tool to search the custodian data locations for data that may be relevant to the case. You use keywords, properties, and conditions to [build search queries](building-search-queries.md) that return search results with the data that's most likely relevant to the case. You can also:
 
+   - View [search statistics](search-statistics.md) that may help you refine a search query to narrow the results.
 
+   - Preview the search results to quickly verify whether the relevant data is being found.
 
+   - Re-vise a query and re-run the search.
 
-2. **Search custodial data sources for data relevant to the case.**
+3. **[Add data to a review set](add-data-to-review-set.md).** Once you configured and verified a search returns the desired data, the next step is to add the search results to a review set. When you add data to a review set, items are copied from their original location to a secure Azure Storage location. The data is re-indexed again to optimize it for thorough and fast searches when reviewing and analyzing items in the review set. Additionally, you can also [add non-Office 365 data into a review set](load-non-office-365-data-into-a-review-set.md).
 
-3. **Add data to a review set.**  
-
-4. **Tag, analyze, cull, redact data in the review set.**
+4. **Tag, analyze, cull, and redact data in the review set.**
 
 5. **Export and download case data.** 
 
