@@ -22,7 +22,7 @@ description: "Use compliance boundaries to create logical boundaries within an O
 
 # Set up compliance boundaries for eDiscovery investigations in Office 365
 
-The guidance in this article can be applied using cases in either Core eDiscovery or Advanced eDiscovery to manage eDiscovery investigations.
+The guidance in this article can be applied when using either Core eDiscovery or Advanced eDiscovery to manage investigations.
 
 Compliance boundaries create logical boundaries within an Office 365 organization that control the user content locations (such as mailboxes, SharePoint sites, and OneDrive accounts) that eDiscovery managers can search. Also, compliance boundaries control who can access eDiscovery cases used to manage the legal, human resources, or other investigations within your organization. The need for compliance boundaries is often necessary for multi-national corporations that have to respect geographical boarders and regulations and for governments, which are often divided into different agencies. In Office 365, compliance boundaries help you meet these requirements when performing content searches and managing investigations with eDiscovery cases.
   
