@@ -34,11 +34,11 @@ You can configure anti-spam policies in the Office 365 Security & Compliance Cen
 
 - You need to be assigned permissions before you can perform these procedures. To add, modify, and delete anti-spam policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For read-only access to anti-spam policies, you need to be a member of the **Security Reader** role group. For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
+- For our recommended settings for anti-malware policies, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+
 ## Use the Security & Compliance Center to create anti-spam policies
 
 Creating a custom anti-spam policy in the Security & Compliance Center creates the spam filter rule and the associated spam filter policy at the same time using the same name for both.
-
-For details about recommend settings and values, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
 
@@ -62,7 +62,7 @@ For details about recommend settings and values, see [EOP anti-spam policy setti
      - **High confidence phishing email**
      - **Bulk email**
 
-     The spam filtering verdicts and the available actions for messages are described in the following table.
+     The spam filtering verdicts and the available actions are described in the following table.
 
      - A check mark ( ![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) indicates the action is available (not all actions are available for all spam filtering verdicts).
      - An asterisk ( <sup>\*</sup> ) after the check mark indicates the default action for the spam filtering verdict.
@@ -96,7 +96,7 @@ For details about recommend settings and values, see [EOP anti-spam policy setti
 
    - **Redirect to this email address**: This box is required and available only if you selected the **Redirect message to email address** as the action for a spam filtering verdict. Enter the email address where you want to deliver the message. You can enter multiple values separated by semicolons (;).
 
-   - **Safety Tips**:
+   - **Safety Tips**: By default, Safety Tips are enabled, but you can disable them by clearing the **On** checkbox.
 
    **Zero-hour auto purge** settings: ZAP detects and takes action on messages that have already been delivered to Exchange Online mailboxes. For more information about ZAP, see [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md).
 
@@ -341,8 +341,6 @@ Creating an anti-spam policy in PowerShell is a two-step process:
 - A new spam filter policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to a spam filter rule.
 
 #### Step 1: Use PowerShell to create a spam filter policy
-
-For details about recommend settings and values, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 To create a spam filter policy, use this syntax:
 

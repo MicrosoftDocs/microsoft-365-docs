@@ -20,7 +20,7 @@ description: "To make sure that email sent from people you trust isn't blocked, 
 
 # Configure connection filtering in Office 365
 
-Most of us have friends and business partners we trust. It can be frustrating to find email from them in your Junk Email folder, or even blocked entirely as spam. If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, you use connection filtering in EOP (specifically, the default connection filter policy) to identify good or bad source email servers by their IP addresses. The key components of the default connection filter policy are:
+If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, you use connection filtering in EOP (specifically, the default connection filter policy) to identify good or bad source email servers by their IP addresses. The key components of the default connection filter policy are:
 
 - **IP Allow List**: Skip spam filtering for for all incoming messages from the source email servers that you specify by IP address or IP address range. For scenarios where spam filtering might still occur on messages from these sources, see the [Scenarios where messages from sources in the IP Allow List are still filtered](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) section later in this topic. For more information about how the IP Allow List should fit into your overall safe senders strategy, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
 
