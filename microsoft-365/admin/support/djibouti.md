@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Djibouti
 author: cmcatee-MSFT
 f1.keywords:

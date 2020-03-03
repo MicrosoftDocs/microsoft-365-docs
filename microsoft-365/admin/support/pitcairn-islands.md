@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Pitcairn Islands
 author: cmcatee-MSFT
 f1.keywords:
