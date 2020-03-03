@@ -47,7 +47,7 @@ We received a lot of feedback from partners and admins about the challenges of m
 1. In the Microsoft 365 admin center, select the org name.
 ![Screen capture: top of the Home page showing organization profile name with the switcher icon.](../media/MAC-Organization-switcher.png)
 
-2. In the organization switcher, select the org you want to manage. 
+2. In the organization switcher, select the org you want to manage.
 ![Screen capture: top of the Home page showing organization profile name with the switcher icon.](../media/MAC-OrgSwitcherSelected.png)
 
 That's literally it!!!
@@ -57,9 +57,9 @@ That's literally it!!!
 A couple of changes in the groups area this month:
 
 - **Sort by group name**: You can sort the groups list alphabetically, by selecting the **Group name** column.
-- **Restore deleted Office 365 groups** - You don't have to go to the Exchange admin center anymore to restore  deleted Office 365 groups. Go to **Microsoft 365 admin center** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. It'll restore the group back to the **Groups** list and restore the group's email, conversations, notebook, files, and calendar.
+- **Restore deleted Office 365 groups**: You don't have to go to the Exchange admin center anymore to restore  deleted Office 365 groups. Go to **Microsoft 365 admin center** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. It'll restore the group back to the **Groups** list and restore the group's email, conversations, notebook, files, and calendar.
 
-### Videos, training and docs
+### Videos, training, and docs
 
 - **What's new in Microsoft 365 video series**: This month, we're focused on custom search capabilities for SharePoint Online, the Office "What's New" management feature that lets you show or hide specific features from end-users via the in-app help pane, the latest security and compliance updates in Yammer, and more. Here's the latest episode: [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
@@ -74,7 +74,7 @@ A couple of changes in the groups area this month:
 
 When we first rolled out dark mode, it was only available on the Home page. Dark mode is now out of preview and is in Targeted release across most pages in the admin center.
 
-1. First, you'll need to turn on Targeted Release: Go to **Settings** \> **Settings** \> **Organization profile** \> **Release preferences**. 
+1. First, you'll need to turn on Targeted Release: Go to **Settings** \> **Settings** \> **Organization profile** \> **Release preferences**.
 1. And then to turn on dark mode, go to the **Home** page, and then select the **Dark mode** button. (It's next to the **Search** field and this article's **What's new** link.)
 1. For any page that has dark mode available, the button is at the top of the page, next to **The new admin center** toggle.
 
@@ -87,6 +87,7 @@ Admins want control over how Microsoft communicates "What's New" to their users 
 This feature was first released to preview in November, but there have been a few feature updates that you should know about: [Office What's New management preview updates now available](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-preview/ba-p/1020438)
 
 ### Partners
+
 Howdy, Partners! (Couldn't help myself.) We've got an update for you this month, as well. There's a new feature that allows Partners to give CSP customers the option to accept their Microsoft Customer Agreement (MCA) in the **Billing accounts** section of the admin center. In this new experience:
 
 1. The customer receives an invitation email with a link to accept the partner relationship and the MCA.
@@ -96,7 +97,7 @@ Howdy, Partners! (Couldn't help myself.) We've got an update for you this month,
 
 The Resource mailboxes list has been updated to the new style. In the Microsoft 365 admin center, go to **Resources** \> **Rooms & equipment**.
 
-### Videos, training, and docs
+### Videos, training, and docs (January)
 
 Check out the small business admin training that we released in January:
 
@@ -164,7 +165,7 @@ Welcome to the Ignite Edition of the What's new in the Microsoft 365 admin cente
 - [ADMIN - Security, Productivity, and Network Enhancements for Microsoft 365](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/ADMIN-Security-Productivity-and-Network-Enhancements-for/ba-p/964019).
 - [What's New in Microsoft Teams - Ignite 2020](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/What-s-New-in-Microsoft-Teams-Ignite-2019/ba-p/937025).
 
-### Role-based access control 
+### Role-based access control
 
 There have been a lot of changes for Roles in the admin center since we started rolling out in June:
 
@@ -189,12 +190,14 @@ As you know, users can turn on free subscriptions to a myriad of products like P
 Templates allow you to easily add many users by saving and reusing the shared settings for these users. You can save values for roles, licenses assigned, contact information, location, and more. When you use the template to create a new user, they will automatically get the saved value for these settings. Go to **Users** > **Active users**, and then select **User templates** to try it out.
 
 ### Office "What's New" management (Preview)
+
 When an important ‎Office‎ feature is released to an Office app, users will get a "What's new" card to learn about the new feature. If you don't want users to see the card, you can hide it. You can also choose when you'd like users to see the card by showing it. Go to **Settings** > **Office What's New management** to check it out.
 
 ### SharePoint URL change
+
 Technically, this isn't the Microsoft 365 admin center's news to tell, but we're so excited we wanted to make sure you see this news:
 > [!IMPORTANT]
-> You can now get to the SharePoint admin center with a regular URL: https://admin.microsoft.com/SharePoint
+> You can now get to YOUR SharePoint admin center with a regular URL: [https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
 
 For more info, see [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 
@@ -227,8 +230,8 @@ We've got some updates for billing and subscriptions this month:
 
 - Device-based subscriptions: You can assign or unassign **Office 365 ProPlus for Education (device)** licenses to devices in the Microsoft 365 admin center. **Office 365 ProPlus for Education (device)** is an add-on license that will lets you to assign a license to a device. Go to **Billing** > **Products & services** to find and purchase the license.
 - User-based license management: We've updated how you assign licenses in **Users** > **Active users** to the new style. For more information, see:
-    - [Assign licenses to users](manage/assign-licenses-to-users.md)
-    - [Unassign licenses from users](manage/remove-licenses-from-users.md)
+  - [Assign licenses to users](manage/assign-licenses-to-users.md)
+  - [Unassign licenses from users](manage/remove-licenses-from-users.md)
 
 ### Setup page updates
 
@@ -236,7 +239,7 @@ Setup now has categories and sections, including a **Recommended for you** secti
 
 - **Office Advanced Threat Protection** - If your org is licensed to use Office ATP and you haven't configured it or turned it on yet, you'll see this page. Go to **Setup** to try it out.
 
-### Report an issue
+### Report an issue (August)
 
 If you are impacted by an issue that is not showing up on your Service health dashboard, the **Report an issue** feature will provide you with a quick and easy way to let us know. Go to **Health** > **Service health**.
 
@@ -244,23 +247,24 @@ If you are impacted by an issue that is not showing up on your Service health da
 
 ### Message center
 
-The Message center has been updated to the new design and it looks amazing! 
+The Message center has been updated to the new design and it looks amazing!
 
 ![Screen capture: Updated Message center with the 'All active messages' tab selected and the Filter menu opened.](../media/MAC-MessageCenterUpdated.png)
 
 - You can now view **Messages by status**. Just select one of the tabs: **All active messages**, **High importance**, **Unread messages**, and **Dismissed messages**.
 - You can also filter by category **Data privacy**, **Plan for change**, **Prevent or fix issues**, and **Stay informed** message categories.
-- Select a message from the list and you have a few options in the command bar: **Dismiss**, **Mark as read** or **Mark as unread**, or **Share**. 
+- Select a message from the list and you have a few options in the command bar: **Dismiss**, **Mark as read** or **Mark as unread**, or **Share**.
 - And when you open a message, you have even more options:
-    - Copy a link of the message to your clipboard to save it for later or to share it with colleagues. 
-    -  Mark messages as **Read** or **Unread**. 
-    -  Give feedback about a message by selecting **Like** or **Dislike**, a feedback pane opens asking you to provide specific feedback on what you liked or didn't like about this message.
+  - Copy a link of the message to your clipboard to save it for later or to share it with colleagues.
+  - Mark messages as **Read** or **Unread**.
+  - Give feedback about a message by selecting **Like** or **Dislike**, a feedback pane opens asking you to provide specific feedback on what you liked or didn't like about this message.
 
 ### Navigation pane intelligence
 
  The navigation pane now remembers your last actions and shows you the pane in the last state that you left it in. It will also make frequently used items visible by default.
 
 ### Initial setup & the Setup page
+
 We've got some exciting changes to help you get your organization set up. First off, let's discuss the difference between **setup** and the **Setup page**. **Setup** refers to the initial setup wizard that you used to onboard to Microsoft's online services. That usually includes three specific steps: **Connect a domain**, **Add users**, and **Download the Office apps**. The **Setup page** is the page in the admin center that has recommended set up tasks to ensure that you're getting the most out of your subscriptions - like turning on features you've purchased licenses for.
 
 - **Setup** - The initial setup wizard has been updated for **Office 365 for Business** subscriptions. This new design will help new organizations get through the wizard faster and with greater success.
@@ -270,12 +274,12 @@ We've got some exciting changes to help you get your organization set up. First 
 
 - **Software** product type - You can now view software products purchased through a Cloud Service Provider (CSP). To see your downloads and keys, go to **Billing** > **Products & services** > **Software** tab.
 - You can view Modern Azure products and services from the Microsoft 365 admin center, whether you purchased them from Microsoft or a third-party provider. Examples of Modern Azure products included:
-    - Azure Reserved Virtual Instances
-    - Azure Support Plans
-    - Azure Hybrid Use Benefits (AHUB)
-    - Manage Applications
-    - Device Services
-    - Azure Subscriptions
+  - Azure Reserved Virtual Instances
+  - Azure Support Plans
+  - Azure Hybrid Use Benefits (AHUB)
+  - Manage Applications
+  - Device Services
+  - Azure Subscriptions
 
 ### Simplify multi-factor authentication
 
@@ -301,25 +305,30 @@ At the end of June we started rolling out new way to manage admin roles. When it
 
 This new experience makes it easier to see who has admin permissions and to assign roles that grant the right level of access to your admins. And we also added more roles from Azure AD so that you don't waste time going to multiple admin centers.
 What else can you do here?
+
 - Export a list of all admins in your org who are assigned Azure Active Directory roles in Microsoft 365.  
-- View all admins assigned to a specific role, add or remove admins from a specific role, search for roles by name and keyword, and learn more about what each role allows a user to do. 
+- View all admins assigned to a specific role, add or remove admins from a specific role, search for roles by name and keyword, and learn more about what each role allows a user to do.
 - Quickly search for a specific role and create filters.
 
 ### Payment method
+
 We've updated how you pay for your subscriptions. Go to **Billing** > **Bills & payments** > **Payment methods**. You can see your payment methods in a list view. Select any item in the list to remove it, edit it, and easily see which subscription that payment method is associated with.
 
 ## May 2019
 
 ### May's featured fix - Case sensitivity
-Now when you search for shared mailboxes, contacts, resources, and mailbox permissions, your search terms don't have to be case-sensitive. 
+
+Now when you search for shared mailboxes, contacts, resources, and mailbox permissions, your search terms don't have to be case-sensitive.
 
 **User and group management**
 This month, we updated **Block user**, **Reset password**, **Contacts** list view, **Groups** list view, and the **Groups** details pages to the new admin center style.
+
 - With the new **Groups** list view, you get richer data about your groups, and you can customize the way you see your data -- and the groups list remembers how you want to see your data. For example, you can now filter on **Groups with Teams** to see if your groups are part of a Team and you can add the **Teams status** column.
 - The groups list also brings with it all the improvements we made to the list experience in user management, including quick actions and the contextual command bar. 
 
 **Recommendations**<br>
 You might see a new recommendation pop-up in your admin center - we just added 4 new ones. Of course, you'll only see recommendations if we think it will benefit your organization. But don't wait until we show you the recommendation - you can add it from the card library.
+
 - **Password expiry** - We recommend that passwords get set to **Never expire**. And if your org has a different setting, you might just see this recommendation. 
 - **Too many global admins** - Because having too many global admins is a security threat, if you have more than 4 global admins, you'll see this recommendation. We suggest giving users only the access they need to get their job done.
 - **Intune device protection** - If your licenses include Intune and we detect that you either haven't finished setting up Intune or enrolled your devices, we'll recommend that you create an Intune policy to protect your organization's files when users access them from their mobile devices.
@@ -342,22 +351,25 @@ There are two ways you can check it out: <br>
 1. From the **Home** page, select **Add user** from the **User management** card. The wizard opens right there, so you don't have to navigate from any work you're doing on the **Home** page.
 2. Go to **Users** > **Active users**, and then select **Add user** from the command bar.
 <br><br>
+
 We've made a few more changes to **user management**, here's a quick list:
+
 - The **Manage roles** pane has been updated to the new style and is accessible. We've also updated the **Block user** and **Delete user** panes to the new style.
 - **Manage product licenses** changed position in the command bar.
 - Changing a user's photo is now easier. In **Active users** select a user, and then **Change photo** under their picture.
 
 ### But wait! There's more...
+
 - There's a new setup banner on the **Home** page that you'll see if you haven't finished the set up steps, like adding a domain, adding users, and downloading the Office apps.
-- The **Group** list and details pane have been updated to the new style. Go to **Groups** > **Groups** to view the changes. 
-    - Speaking of groups, we've also added a **Microsoft Teams** tab to the groups details pane where you can turn any Office 365 group into a Team. To "teamify" a group select any Office 365 group from the list, select the **Microsoft Teams** tab, and then **Create Team**. If the group is already a Team, you'll get a link to manage it from the **Teams admin center**.
-    - Finally, you can add the **Teams status** to the **groups** list. On the column header, select **Choose columns** > **Teams status** > **Save**.
+- The **Group** list and details pane have been updated to the new style. Go to **Groups** > **Groups** to view the changes.
+  - Speaking of groups, we've also added a **Microsoft Teams** tab to the groups details pane where you can turn any Office 365 group into a Team. To "teamify" a group select any Office 365 group from the list, select the **Microsoft Teams** tab, and then **Create Team**. If the group is already a Team, you'll get a link to manage it from the **Teams admin center**.
+  - Finally, you can add the **Teams status** to the **groups** list. On the column header, select **Choose columns** > **Teams status** > **Save**.
 - **New limited admin roles** - We've release some new admin roles so that you can give users only the access they need.
-    -  **Kaizala admin**: Users in this role have permission to perform all management tasks within Microsoft Kaizala, including create and manage users in Kaizala directory, manage Kaizala groups, manage action cards and connectors, and create service requests.
-    - **Search admin**: Users in this role have full access to all Microsoft Search management features in the Microsoft 365 admin center. Search admins can delegate the Search admin and Search editor roles to users, and create and manage content, like bookmarks, Q&A items, and locations. Additionally, these users can view the Message center, monitor service health, and create service requests.
-    - **Search editor**: Users in this role can create, manage, and delete content for Microsoft Search in the Microsoft 365 admin center, including bookmarks, Q&A items, and locations.
+  - **Kaizala admin**: Users in this role have permission to perform all management tasks within Microsoft Kaizala, including create and manage users in Kaizala directory, manage Kaizala groups, manage action cards and connectors, and create service requests.
+  - **Search admin**: Users in this role have full access to all Microsoft Search management features in the Microsoft 365 admin center. Search admins can delegate the Search admin and Search editor roles to users, and create and manage content, like bookmarks, Q&A items, and locations. Additionally, these users can view the Message center, monitor service health, and create service requests.
+  - **Search editor**: Users in this role can create, manage, and delete content for Microsoft Search in the Microsoft 365 admin center, including bookmarks, Q&A items, and locations.
 - There's a bonanza of **Billing** changes this month...
-    - You can now update the CVV for existing credit cards without having to delete it and add it again. You can update the CVV by going to **Bills** > **Payment methods**.
+  - You can now update the CVV for existing credit cards without having to delete it and add it again. You can update the CVV by going to **Bills** > **Payment methods**.
     - We've made it easier to locate your **Invoices** and understand any billing issues your account may be having. And now you can see your Bills in the web browser instead of having to download the PDF. Go to **Bills** > **Invoices**.
     - On the **Products & services** page, we now aggregate your subscription information if you've got multiple subscriptions of the same type.
 
@@ -391,7 +403,7 @@ This month, we're going to focus on all the improvements we've made to the areas
 
 We re-combined **Licenses and apps** in the user details pane based on your feedback. We initially separated the two features to provide space for the details of all license and all app possibilities. We heard from you that separating licenses and apps into two panes added confusion. We listened, and brought licenses and apps back together into one tab. Now you can make sure that an app is turned off in all licenses assigned to a user in one pane. Milk and cookies. Licenses and apps. We get it now.
 
-Check it out: **Users > Active users > Edit** or **Add user > Licenses and Apps**.
+Check it out: **Users > Active users > Edit** or **Add user > Licenses and Apps**
 
 ## December 2018
 
@@ -413,9 +425,10 @@ Check it out: **Users > Active users > Edit** or **Add user > Licenses and Apps*
   - **Azure Active Directory** - Gives you quick access to common Azure AD tasks like self-serve password resets, customizing sign-in, and adding apps.
 - The **Export users** quick task has been added to command bar on the Active users page. ![Screen capture showing Export users on the command bar next to Refresh.](../media/M365PreviewExportUsersQT.png)
 - Purchase services has additional enhancements for November. And they are ALL good! To get there, go to Billing > Purchase services. <br>![Screen capture showing purchase services page with 3 new enhancements.](../media/M365PreviewBillingPurchasServices.png)
-  > 1.  At the top of the page, you can pivot between Business and Education plans. That will help you find what you're looking for.
-  > 2.  We added a search box so you don't have to scroll endlessly to find what you're looking for.
-  > 3.  Finally, we logically sorted the plans you can purchase into sections that you can expand and collapse. Don't need purchase any of the **Office apps and services**? Collapse that section and focus on Microsoft 365 plans.
+
+  > 1. At the top of the page, you can pivot between Business and Education plans. That will help you find what you're looking for.
+  > 2. We added a search box so you don't have to scroll endlessly to find what you're looking for.
+  > 3. Finally, we logically sorted the plans you can purchase into sections that you can expand and collapse. Don't need purchase any of the **Office apps and services**? Collapse that section and focus on Microsoft 365 plans.
 
 ## October 2018
 
@@ -441,9 +454,9 @@ Check it out: **Users > Active users > Edit** or **Add user > Licenses and Apps*
 
   - It's now easier than ever to assign a product license to your users. Select your purchased product and then you can assign the product. You can also see which users have already been assigned a particular product. <br/>![Product details from Billing in Microsoft 365 admin center preview](../media/82422685-e1b7-4f3f-aea8-1819df9d9311.png)
 
-  - **Switch plans** is now called ** Upgrades ** and finally the subscription upgrades happen behind the scenes so you don't have to watch the upgrade complete. Lastly, there is no longer a license limitation on upgrades.
+  - **Switch plans** is now called **Upgrades** and finally the subscription upgrades happen behind the scenes so you don't have to watch the upgrade complete. Lastly, there is no longer a license limitation on upgrades.
 
-- **User management** We've made a lot of changes to user management to help you get your work done faster. We've updated the ** Active users ** page and the user's details pane. Here's some of the more awesome changes:
+- **User management** We've made a lot of changes to user management to help you get your work done faster. We've updated the **Active users** page and the user's details pane. Here's some of the more awesome changes:
 
   - There's a new design and new layout to the **Active users** page. Don't like the way the list looks? Select **Change view** (next to **Filter**) and you can change the list from **Normal list** to **Compact list**. Compact list is especially helpful if you've got a lot of users in your organization. <br/>![Active users page in preview](../media/4dd9f1c9-ef23-4194-9ff8-5206ba2930f8.png)
 
