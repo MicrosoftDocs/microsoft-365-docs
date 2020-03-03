@@ -1,5 +1,5 @@
 ---
-title: "Buy licenses for your Office 365 for business subscription"
+title: "Manage subscription licenses for your Office 365 for business subscription"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,23 +24,25 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
-description: "Learn how to add more licenses to your Office 365 for business subscription."
+description: "Learn how to add and remove licenses for your Office 365 for business subscription."
 ---
 
-# Buy licenses for your Office 365 for business subscription
+# Manage subscription licenses for your Office 365 for business subscription
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
+## Buy or remove licenses
+
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
-2. On the **Products & services** page, find the subscription to which you want to add licenses, and then select **Add/Remove licenses**.
+2. On the **Products & services** page, find the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**.
 
     [What if I don't see the Add/Remove licenses link?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit change**. For example, if you have 100 licenses and you need to add 5 more, enter 105.
+3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit change**. For example, if you have 100 licenses and you need to add 5 more, enter 105. If you want to remove 5 of them, enter 95.
 
 After you purchase new licenses, be sure to [assign the licenses to users](../../admin/manage/assign-licenses-to-users.md).
 
@@ -50,11 +52,11 @@ After you purchase new licenses, be sure to [assign the licenses to users](../..
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
 
-2. On the **Subscriptions** page, select the subscription to which you want to add licenses, and then select **Add/Remove licenses**.
+2. On the **Subscriptions** page, select the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**.
 
     [What if I don't see the Add/Remove licenses link?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105.
+3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105. If you want to remove 5 of them, enter 95.
 
 After you purchase new licenses, be sure to [assign the licenses to users](../../admin/manage/assign-licenses-to-users.md).
 
@@ -64,11 +66,11 @@ After you purchase new licenses, be sure to [assign the licenses to users](../..
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
 
-2. On the **Subscriptions** page, select the subscription to which you want to add licenses, and then select **Add/Remove licenses**.
+2. On the **Subscriptions** page, select the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**.
 
     [What if I don't see the Add/Remove licenses link?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105.
+3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105. If you want to remove 5 of them, enter 95.
 
 After you purchase new licenses, be sure to [assign the licenses to users](../../admin/manage/assign-licenses-to-users.md).
 
@@ -114,8 +116,14 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md)
 
+[Buy licenses for your subscription](buy-licenses.md)
+
 [Buy another subscription](../buy-another-subscription.md)
 
 [Buy or edit an add-on](../buy-or-edit-an-add-on.md)
 
 [Manage Yammer user licenses](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365)
+
+## Related links
+
+[Cancel your subscription](../subscriptions/cancel-your-subscription.md)
