@@ -31,7 +31,7 @@ description: "Learn how to add and remove licenses for your Office 365 for busin
 
 You can add or remove licenses from your subscriptions using these steps.
 
-You can't remove a license from a subscription if it's assigned to a user. If you want to remove a license that is currently assigned to someone, you'll need to [remove-licenses-from-users](../../admin/manage/remove-licenses-from-users.md) before you can remove the license from the subscription.
+You can't remove a license from a subscription if it's assigned to a user. If you want to remove a license that is currently assigned to someone, you'll need to [Remove licenses from users](../../admin/manage/remove-licenses-from-users.md) before you can remove the license from the subscription.
 
 ::: moniker range="o365-worldwide"
 
@@ -92,7 +92,7 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 |You bought your subscription through a reseller.|| If the subscription was purchased via a Cloud Solution Provider (CSP) partner, you must contact your CSP partner to buy more licenses.        |
 |You have a trial subscription. |A trial version of Office 365 will display the text "Trial". | You must first buy your trial subscription, then you can add more licenses. See [Buy a subscription to Office 365 for business from your free trial](../buy-a-subscription-from-your-free-trial.md).|
 
-## What you need to know about buying licenses for your Office 365 for business subscription
+## What you need to know about buying licenses for your business subscription
 
 ### Buying licenses
 
