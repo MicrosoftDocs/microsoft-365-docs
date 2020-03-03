@@ -21,7 +21,7 @@ description: "Use sensitivity labels to protect content in SharePoint and Micros
 
 # Use sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)
 
-When you create sensitivity labels in the [Microsoft 365 compliance center](https://protection.office.com/), you can now apply them to the following containers: Microsoft Teams sites, Office 365 groups, and SharePoint sites. Use the following label settings to protect the content in those containers:
+When you create sensitivity labels in the [Microsoft 365 compliance center](https://protection.office.com/), you can now apply them to the following containers: Microsoft Teams sites, Office 365 groups, and SharePoint sites. Use the following label settings to help protect the content in those containers:
 
 - Privacy (public or private) of Office 365 group-connected teams sites
 - External users access
@@ -33,7 +33,7 @@ Content in those containers however, do not inherit the labels for settings such
 
 ## About the public preview for Microsoft Teams, Office 365 groups, and SharePoint sites
 
-Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites are gradually rolling out to tenants and might change before final release. This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
+Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites are in gradual rollout to tenants and might change before final release. This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
 
 Before you enable this preview and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
 
@@ -74,9 +74,9 @@ On this new **Site and group settings** page, configure the settings:
 
 - **Privacy of Office 365 group-connected teams sites**: The default setting of **None - let user chose who can access the site** is currently rolling out to tenants. Keep this default setting when you want to protect content in the container by using the sensitivity label, but still let users configure the privacy setting themselves.
     
-    Select **Public** or "Private" to set and lock the privacy setting when you apply this label to the container. Choose **Public** if you want anyone in your organization to access the team site or group where this label is applied, or **Private** if you want access to be restricted to only approved members in your organization. 
+    Select **Public** or**Private** to set and lock the privacy setting when you apply this label to the container. Choose **Public** if you want anyone in your organization to access the team site or group where this label is applied, or **Private** if you want access to be restricted to only approved members in your organization. 
     
-    The **Public** or "Private" setting replaces a previous privacy setting that might be configured for the team or group, and locks the privacy value so it can be changed only by first removing the sensitivity label from the container. After you remove the sensitivity label, the privacy setting from the label remains and users can now change it if necessary.
+    The **Public** or **Private** setting replaces any previous privacy setting that might be configured for the team or group, and locks the privacy value so it can be changed only by first removing the sensitivity label from the container. After you remove the sensitivity label, the privacy setting from the label remains and users can now change it again.
 
 - **External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
@@ -87,7 +87,7 @@ On this new **Site and group settings** page, configure the settings:
 > [!IMPORTANT]
 > Only these site and group settings take effect when you apply a label to a team, group, or site. Other label settings, such as encryption and content marking, aren't applied to the content within the team, group, or site.
 > 
-> Currently rolling out to tenants: If you don't turn on these site and group settings, the label won't be available to select when users create teams, groups, and sites.
+> Gradually rolling out to tenants: Only labels with the site and group settings will be available to select when users create teams, groups, and sites. If you can currently apply a label to a container when the label doesn't have the site and group settings enabled, only the label name is applied to the container.
 
 If your sensitivity label isn't already published, now publish it by [adding it to a sensitivity label policy](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). The users who are assigned a sensitivity label policy that includes this label will be able to select it for sites and groups.
 
