@@ -1,5 +1,5 @@
 ---
-title: "Manage subscription licenses for your Office 365 for business subscription"
+title: "Manage subscription licenses"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -27,14 +27,18 @@ ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: "Learn how to add and remove licenses for your Office 365 for business subscription."
 ---
 
-# Manage subscription licenses for your Office 365 for business subscription
+# Manage subscription licenses
+
+You can add or remove licenses from your subscriptions using these steps.
+
+You can't remove a license from a subscription if it's assigned to a user. If you want to remove a license that is currently assigned to someone, you'll need to [remove-licenses-from-users](../../admin/manage/remove-licenses-from-users.md) before you can remove the license from the subscription.
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
-## Buy or remove licenses
+## What you need to know about buying licenses for your business subscription
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
@@ -114,16 +118,10 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 
 [Understand subscriptions and licenses](subscriptions-and-licenses.md)
 
-[Assign licenses to users](../../admin/manage/assign-licenses-to-users.md)
-
 [Buy licenses for your subscription](buy-licenses.md)
 
 [Buy another subscription](../buy-another-subscription.md)
 
-[Buy or edit an add-on](../buy-or-edit-an-add-on.md)
+[Assign licenses to users](../../admin/manage/assign-licenses-to-users.md)
 
 [Manage Yammer user licenses](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365)
-
-## Related links
-
-[Cancel your subscription](../subscriptions/cancel-your-subscription.md)
