@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "This article describes how to get started using Advanced eDiscovery in Microsoft 365. After you complete a few quick steps, the Advanced eDiscovery tool is ready to use."
+description: "This article describes how to get started using Advanced eDiscovery in Microsoft 365. After you complete a few quick steps, the Advanced eDiscovery tool is ready to use. The first step is to create a case, and then start using Advanced eDiscovery features and functionality."
 ---
 
 # Get started with Advanced eDiscovery
@@ -121,13 +121,13 @@ The next step is to create a case and start using Advanced eDiscovery. Complete 
 
 ## The Advanced eDiscovery workflow
 
-To get you started using Advanced eDiscovery, here's a simple workflow that aligns with common eDiscovery practices. In each of these steps, we'll also highlight some the extended Advanced eDiscovery functionality that you can explore.
+To get you started using Advanced eDiscovery, here's a simple workflow that aligns with [common eDiscovery practices](overview-ediscovery-20.md#alignment-with-edrm). In each of these steps, we'll also highlight some the extended Advanced eDiscovery functionality that you can explore.
 
 1. **[Add custodians to a case](add-custodians-to-case.md).** The first step after creating a case is to add custodians. A *custodian* is a person having administrative control of a document or electronic file that may be relevant to the case. Here are some things that happen (or that you can do) when you add custodians to a case:
 
    - Data in the custodian's Exchange mailbox, OneDrive account, and any Microsoft Teams or Yammer groups that the custodian is a member of can be "marked" as custodial data in the case.
   
-   - Custodian data is re-indexed (by a process called *Advancing indexing*). This helps optimize searching for it in the next step.
+   - Custodian data is re-indexed (by a process called *Advanced indexing*). This helps optimize searching for it in the next step.
   
    - You can place a hold on custodian data. This preserves data that may be relevant to the case during the investigation.
   
@@ -143,15 +143,35 @@ To get you started using Advanced eDiscovery, here's a simple workflow that alig
 
    - Re-vise a query and re-run the search.
 
-3. **[Add data to a review set](add-data-to-review-set.md).** Once you configured and verified a search returns the desired data, the next step is to add the search results to a review set. When you add data to a review set, items are copied from their original location to a secure Azure Storage location. The data is re-indexed again to optimize it for thorough and fast searches when reviewing and analyzing items in the review set. Additionally, you can also [add non-Office 365 data into a review set](load-non-office-365-data-into-a-review-set.md).
+3. **[Add data to a review set](add-data-to-review-set.md).** Once you've configured and verified that a search returns the desired data, the next step is to add the search results to a review set. When you add data to a review set, items are copied from their original location to a secure Azure Storage location. The data is re-indexed again to optimize it for thorough and fast searches when reviewing and analyzing items in the review set. Additionally, you can also [add non-Office 365 data into a review set](load-non-office-365-data-into-a-review-set.md). 
 
-4. **Tag, analyze, cull, and redact data in the review set.**
+   There's also a special kind of review set that you can add data to, called a *conversation review set*. These types of reviews sets provides conversation reconstruction capabilities to reconstruct, review, and export threaded conversations like those in Microsoft Teams. For more information, see [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
+
+4. **Review and analyze data in a review set.** Now that data is in a review set, you can use a wide-variety of tools and capabilities to view and analyze the case data with the goal of reducing the data set to what is most relevant to the case you're investigation. Here's a list of some tools and capabilities that you can use during this process.
+
+   - [View documents](view-documents-in-review-set.md). This includes viewing the metadata for each document in a review set, and viewing the document in its native version or text version.
+
+   - [Create queries and filters](review-set-search.md). You create search queries using a variety of search criteria (including the ability to search all [file metadata properties](document-metadata-fields-in-advanced-ediscovery.md)) to further refine and cull the case data to what is most relevant to the case. You can also use review set filters to quickly apply additional conditions to the results of a search query to further refine those results. 
+
+   - [Create and use tags](tagging-documents.md). You can apply tags to documents in a review set to identify which are responsive (or non-responsive to the case) and then use those tags when creating search queries to include or exclude the tagged documents. You can also tagging to determine which documents to export.
+
+   - [Annotate and redact documents](view-documents-in-review-set.md#annotate-view). You can use the annotation tool in a review to annotate documents and redact content in documents as work product. We generate a PDF version of a annotated or redacted document during review to reduce the risk of exporting the un-redacted native version of the document.
+
+   - Run analytics. 
+
+ 
+
+   - 
+
+   - 
+
+to Tag, search, analyze, filter, and redact data as part of the 
 
 5. **Export and download case data.** 
 
 
 , custodian data sources, place hold on custodian data sources, manage legal hold notification process.
-2.	Search custodial locations for data relevant to case
-3.	Add search results from previous step to review set
-4.	Tag, analyze, cull, redact data in the review set
-5.	Export and download case data
+2.    Search custodial locations for data relevant to case
+3.    Add search results from previous step to review set
+4.    Tag, analyze, cull, redact data in the review set
+5.    Export and download case data
