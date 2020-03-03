@@ -54,7 +54,9 @@
             - name: Troubleshoot issues
               href: ./mtp/troubleshoot.md
         - name: How-to guides
-          items: 
+          items:
+            - name: Deploy supported services
+              href: mtp/deploy-supported-services.md
             - name: Turn on Microsoft Threat Protection
               href: mtp/mtp-enable.md
             - name: Incidents
