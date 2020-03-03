@@ -335,77 +335,6 @@
           items: 
             - name: Watch videos about records management
               href: https://go.microsoft.com/fwlink/?linkid=867039
-- name: Search for content
-  href: search-for-content.md
-  items: 
-    - name: Use Content Search
-      href: content-search.md
-      items: 
-        - name: Keyword queries and search conditions for Content Search
-          href: keyword-queries-and-search-conditions.md
-        - name: View keyword statistics for Content Search results
-          href: view-keyword-statistics-for-content-search.md
-        - name: Export Content Search results
-          href: export-search-results.md
-        - name: Export a Content Search report
-          href: export-a-content-search-report.md
-        - name: Search for and delete email messages
-          href: search-for-and-delete-messages-in-your-organization.md
-        - name: Search the cloud-based mailboxes of on-premises users in Office 365
-          href: search-cloud-based-mailboxes-for-on-premises-users.md
-        - name: Bulk edit multiple Content Searches
-          href: bulk-edit-content-searches.md
-        - name: Prepare a CSV file for an ID list Content Search
-          href: csv-file-for-an-id-list-content-search.md
-        - name: Use Content Search to search third-party data
-          href: use-content-search-to-search-third-party-data-that-was-imported.md
-        - name: Check your Content Search query for errors
-          href: check-your-content-search-query-for-errors.md
-        - name: Retry a failed Content Search
-          href: retry-failed-content-search.md
-        - name: Preserve Bcc recipients for Content Search
-          href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
-    - name: Understand Content Search
-      items: 
-        - name: Limits for Content Search
-          href: limits-for-content-search.md
-        - name: Partially indexed items in Content Search
-          href: partially-indexed-items-in-content-search.md
-        - name: Investigating partially indexed items
-          href: investigating-partially-indexed-items-in-ediscovery.md
-        - name: De-duplication in eDiscovery search results
-          href: de-duplication-in-ediscovery-search-results.md
-        - name: Differences between estimated and actual Content Search results
-          href: differences-between-estimated-and-actual-ediscovery-search-results.md
-    - name: Configure Content Search
-      items: 
-        - name: Configure permissions filtering for Content Search
-          href: permissions-filtering-for-content-search.md
-        - name: Increase the download speed when exporting Content Search results
-          href: increase-download-speeds-when-exporting-ediscovery-results.md
-        - name: Change the size of PST files when exporting Content Search results
-          href: change-the-size-of-pst-files-when-exporting-results.md
-        - name: Disable reports when you export Content Search results
-          href: disable-reports-when-you-export-content-search-results.md
-    - name: Use Content Search PowerShell scripts
-      items: 
-        - name: Use Content Search for targeted collections
-          href: use-content-search-for-targeted-collections.md
-        - name: Use Content Search to search the mailbox and OneDrive for Business site for a list of users
-          href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
-        - name: Create, report on, and delete multiple Content Searches
-          href: create-report-on-and-delete-multiple-content-searches.md
-        - name: Clone a Content Search
-          href: clone-a-content-search.md
-- name: Manage legal investigations
-  href: manage-legal-investigations.md
-  items: 
-    - name: Advanced eDiscovery solution in Microsoft 365
-      items: 
-        - name: Overview of Advanced eDiscovery
-          href: overview-ediscovery-20.md  
-        - name: Get started with Advanced eDiscovery
-          href: get-started-with-advanced-ediscovery.md  
         - name: Work with custodians
           href: managing-custodians.md
           items: 
@@ -444,6 +373,8 @@
               href: create-search-to-collect-data.md
             - name: Build search queries
               href: building-search-queries.md
+            - name: Keyword queries and search conditions
+              href: keyword-queries-and-search-conditions.md
             - name: Search statistics
               href: search-statistics.md
             - name: Add search results to a review set
@@ -497,9 +428,7 @@
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: Advanced eDiscovery reference
           items: 
-            - name: Release notes
-              href: release-notes-ediscovery20.md
-            - name: Limits in Advanced eDiscovery
+            - name: Advanced eDiscovery limits
               href: limits-ediscovery20.md
             - name: Supported file types
               href: supported-filetypes-ediscovery20.md
@@ -509,121 +438,101 @@
               href: attorney-privilege-detection.md           
             - name: Conversation review sets
               href: conversation-review-sets.md
+            - name: Assign eDiscovery permissions
+              href: assign-ediscovery-permissions.md
+            - name: Keyword queries and search conditions
+              href: keyword-queries-and-search-conditions.md
+            - name: Configure search permissions filtering
+              href: permissions-filtering-for-content-search.md
+            - name: Set up compliance boundaries
+              href: set-up-compliance-boundaries.md
             - name: Advanced eDiscovery reports (preview)
               href: advanced-ediscovery-reports.md
             - name: Troubleshoot AzCopy
               href: troubleshooting-azcopy.md
-    - name: Manage eDiscovery cases
-      href: ediscovery-cases.md
-      items: 
-        - name: Office 365 Advanced eDiscovery
+    - name: Advanced eDiscovery (classic)
+      items:
+        - name: Overview of Advanced eDiscovery (classic)
           href: office-365-advanced-ediscovery.md
+        - name: Get started with Advanced eDiscovery (classic)
+          href: quick-setup-for-advanced-ediscovery.md
+        - name: Setting up cases
+          href: set-up-users-and-cases-in-advanced-ediscovery.md
           items: 
-            - name: Getting started in Advanced eDiscovery
-              href: quick-setup-for-advanced-ediscovery.md
-            - name: Setting up cases
-              href: set-up-users-and-cases-in-advanced-ediscovery.md
-              items: 
-                - name: Defining issues for a case
-                  href: define-issues-and-assign-users.md
-            - name: Collecting case data
-              items: 
-                - name: Prepare search results for Advanced eDiscovery
-                  href: prepare-search-results-for-advanced-ediscovery.md
-                - name: Load data into Advanced eDiscovery
-                  href: prepare-data-for-advanced-ediscovery.md
-                - name: Import non-Office 365 content to a case
-                  href: import-non-office-365-data-into-advanced-ediscovery.md
-            - name: Processing case data
-              href: run-the-process-module-in-advanced-ediscovery.md
-              items: 
-                - name: Run the Process module and load data
-                  href: run-the-process-module-and-load-data-in-advanced-ediscovery.md
-                - name: View Process module results
-                  href: view-process-module-results-in-advanced-ediscovery.md
-            - name: Reviewing case data
-              items: 
-                - name: Search and tag case data
-                  href: search-and-tagging.md
-                - name: Making decisions about the review set
-                  href: decision-based-on-the-results-in-advanced-ediscovery.md
-            - name: Analyzing case data
-              href: analyze-case-data-with-advanced-ediscovery.md
-              items: 
-                - name: Run Express Analysis
-                  href: use-express-analysis-in-advanced-ediscovery.md
-                - name: Overview of document similarity (near duplicates)
-                  href: understand-document-similarity-in-advanced-ediscovery.md
-                - name: View the results of analysis
-                  href: view-analyze-results-in-advanced-ediscovery.md
-            - name: Using the Relevance module
-              href: use-relevance-in-advanced-ediscovery.md
-              items: 
-                - name: Overview of Relevance assessment
-                  href: assessment-in-relevance-in-advanced-ediscovery.md
-                - name: Perform Relevance assessment and tagging
-                  href: tagging-and-assessment-in-advanced-ediscovery.md
-                - name: Set up Relevance training
-                  href: manage-relevance-setup-in-advanced-ediscovery.md
-                - name: Perform Relevance training and tagging
-                  href: tagging-and-relevance-training-in-advanced-ediscovery.md
-                - name: Track the Relevance training process
-                  href: track-relevance-analysis-in-advanced-ediscovery.md
-                - name: Test the results of Relevance analysis
-                  href: test-relevance-analysis-in-advanced-ediscovery.md
-                - name: Load additional data for Relevance training
-                  href: set-up-loads-to-add-imported-files.md
-            - name: Exporting case data
-              href: export-case-data-in-advanced-ediscovery.md
-              items: 
-                - name: Export data
-                  href: export-results-in-advanced-ediscovery.md
-                - name: Export report fields
-                  href: export-report-fields-in-advanced-ediscovery.md
-                - name: View batch history and export past results
-                  href: view-batch-history-and-export-past-results.md
-            - name: Configuring Advanced eDiscovery
-              items: 
-                - name: Configure case and organization settings
-                  href: define-case-and-tenant-settings-in-advanced-ediscovery.md
-                - name: Configure analysis settings
-                  href: set-analyze-options-in-advanced-ediscovery.md
-                - name: Configure Ignore Text settings
-                  href: set-ignore-text-in-advanced-ediscovery.md
-                - name: Configure highlighted keywords and other Relevance settings
-                  href: define-highlighted-keywords-and-advanced-options.md
-            - name: Advanced eDiscovery reference
-              items: 
-                - name: Use Advanced eDiscovery utilities
-                  href: use-advanced-ediscovery-utilities.md
-                - name: Run reports
-                  href: run-reports-in-advanced-ediscovery.md
-        - name: Use a script to add users to a hold in an eDiscovery case
-          href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-        - name: Create a report on holds in eDiscovery cases
-          href: create-a-report-on-holds-in-ediscovery-cases.md
-    - name: Assign eDiscovery permissions
-      href: assign-ediscovery-permissions.md
-    - name: Set up compliance boundaries for eDiscovery investigations in Office 365
-      href: set-up-compliance-boundaries.md
-    - name: eDiscovery solution series - Data spillage scenario - Search and purge
-      href: data-spillage-scenariosearch-and-purge.md
-    - name: Troubleshoot common eDiscovery issues
-      href: ediscovery-troubleshooting-common-issues.md
-    - name: Manage holds
-      items: 
-        - name: Create an eDiscovery hold
-          href: ediscovery-cases.md#step-4-place-content-locations-on-hold
-        - name: Create a Litigation Hold
-          href: create-a-litigation-hold.md
-        - name: Delete items in the Recoverable Items folder of cloud-based mailboxes on hold
-          href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
-        - name: Increase the Recoverable Items quota for mailboxes on hold
-          href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
-        - name: How to identify the type of hold placed on an Exchange Online mailbox
-          href: identify-a-hold-on-an-exchange-online-mailbox.md
-        - name: Preserve Bcc and expanded distribution group recipients
-          href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            - name: Defining issues for a case
+              href: define-issues-and-assign-users.md
+        - name: Collecting case data
+          items: 
+            - name: Prepare search results
+              href: prepare-search-results-for-advanced-ediscovery.md
+            - name: Load data into a case
+              href: prepare-data-for-advanced-ediscovery.md
+            - name: Import non-Office 365 content into a case
+              href: import-non-office-365-data-into-advanced-ediscovery.md
+        - name: Processing case data
+          href: run-the-process-module-in-advanced-ediscovery.md
+          items: 
+            - name: Run the Process module and load data
+              href: run-the-process-module-and-load-data-in-advanced-ediscovery.md
+            - name: View Process module results
+              href: view-process-module-results-in-advanced-ediscovery.md
+        - name: Reviewing case data
+          items: 
+            - name: Search and tag case data
+              href: search-and-tagging.md
+            - name: Making decisions about the review set
+              href: decision-based-on-the-results-in-advanced-ediscovery.md
+        - name: Analyzing case data
+          href: analyze-case-data-with-advanced-ediscovery.md
+          items: 
+            - name: Run Express Analysis
+              href: use-express-analysis-in-advanced-ediscovery.md
+            - name: Overview of document similarity (near duplicates)
+              href: understand-document-similarity-in-advanced-ediscovery.md
+            - name: View the results of analysis
+              href: view-analyze-results-in-advanced-ediscovery.md
+        - name: Using the Relevance module
+          href: use-relevance-in-advanced-ediscovery.md
+          items: 
+            - name: Overview of Relevance assessment
+              href: assessment-in-relevance-in-advanced-ediscovery.md
+            - name: Perform Relevance assessment and tagging
+              href: tagging-and-assessment-in-advanced-ediscovery.md
+            - name: Set up Relevance training
+              href: manage-relevance-setup-in-advanced-ediscovery.md
+            - name: Perform Relevance training and tagging
+              href: tagging-and-relevance-training-in-advanced-ediscovery.md
+            - name: Track the Relevance training process
+              href: track-relevance-analysis-in-advanced-ediscovery.md
+            - name: Test the results of Relevance analysis
+              href: test-relevance-analysis-in-advanced-ediscovery.md
+            - name: Load additional data for Relevance training
+              href: set-up-loads-to-add-imported-files.md
+        - name: Exporting case data
+          href: export-case-data-in-advanced-ediscovery.md
+          items: 
+            - name: Export data
+              href: export-results-in-advanced-ediscovery.md
+            - name: Export report fields
+              href: export-report-fields-in-advanced-ediscovery.md
+            - name: View batch history and export past results
+              href: view-batch-history-and-export-past-results.md
+        - name: Configuring Advanced eDiscovery (classic)
+          items: 
+            - name: Configure case and organization settings
+              href: define-case-and-tenant-settings-in-advanced-ediscovery.md
+            - name: Configure analysis settings
+              href: set-analyze-options-in-advanced-ediscovery.md
+            - name: Configure Ignore Text settings
+              href: set-ignore-text-in-advanced-ediscovery.md
+            - name: Configure highlighted keywords and other Relevance settings
+              href: define-highlighted-keywords-and-advanced-options.md
+        - name: Advanced eDiscovery (classic) reference
+          items: 
+            - name: Use Advanced eDiscovery (classic) utilities
+              href: use-advanced-ediscovery-utilities.md
+            - name: Run reports
+              href: run-reports-in-advanced-ediscovery.md
 - name: Manage data investigations
   items: 
     - name: Overview of data investigations
@@ -701,6 +610,18 @@
           href: document-metadata-fields.md
         - name: Manage jobs
           href: manage-jobs.md
+- name: Manage holds
+  items: 
+    - name: How to identify the type of hold placed on a mailbox
+      href: identify-a-hold-on-an-exchange-online-mailbox.md
+    - name: Create a Litigation Hold
+      href: create-a-litigation-hold.md
+    - name: Delete items in the Recoverable Items folder of mailboxes on hold
+      href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
+    - name: Increase the Recoverable Items quota for mailboxes on hold
+      href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Preserve Bcc and expanded distribution group recipients
+      href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies
   items: 
     - name: Unified auditing
