@@ -197,7 +197,7 @@ Run the following command in [Security & Compliance Center PowerShell](https://g
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-After you identify the retention policy, go to the **Date governance** \> **Retention** page in the Security & Compliance Center, edit the retention policy that you identified in the previous step, and remove the mailbox from the list of recipients that are included in the retention policy. 
+After you identify the retention policy, go to the **Information governance** \> **Retention** page in the Security & Compliance Center, edit the retention policy that you identified in the previous step, and remove the mailbox from the list of recipients that are included in the retention policy. 
   
  ### Organization-wide Office 365 retention policies
   
@@ -207,7 +207,7 @@ Organization-wide and Exchange-wide Office 365 retention policies are applied to
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-After you identify the organization-wide Office 365 retention policies, go to the **Date governance** \> **Retention** page in the Security & Compliance Center, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy. 
+After you identify the organization-wide Office 365 retention policies, go to the **Information governance** \> **Retention** page in the Security & Compliance Center, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy. 
 
 ### Office 365 retention labels
 
@@ -342,11 +342,11 @@ Perform the following steps (in the specified sequence) in Exchange Online Power
     
     **Office 365 retention policies applied to specific mailboxes**
     
-    Use the Security & Compliance Center to add the mailbox back to the retention policy. Go to the **Date governance** \> **Retention** page in the Security & Compliance Center, edit the retention policy, and add the mailbox back to the list of recipients that the retention policy is applied to. 
+    Use the Security & Compliance Center to add the mailbox back to the retention policy. Go to the **Information governance** \> **Retention** page in the Security & Compliance Center, edit the retention policy, and add the mailbox back to the list of recipients that the retention policy is applied to. 
     
     **Organization-wide Office 365 retention policies**
     
-    If you removed an organization-wide or Exchange-wide retention policy by excluding it from the policy, then use the Security & Compliance Center to remove the mailbox from the list of excluded users. Go to the **Date governance** \> **Retention** page in the Security & Compliance Center, edit the organization-wide retention policy, and remove the mailbox from the list of excluded recipients. Doing this will re-apply the retention policy to the user's mailbox. 
+    If you removed an organization-wide or Exchange-wide retention policy by excluding it from the policy, then use the Security & Compliance Center to remove the mailbox from the list of excluded users. Go to the **Information governance** \> **Retention** page in the Security & Compliance Center, edit the organization-wide retention policy, and remove the mailbox from the list of excluded recipients. Doing this will re-apply the retention policy to the user's mailbox. 
     
     **eDiscovery case holds**
     
