@@ -401,7 +401,7 @@
     {
       "source_path": "microsoft-365/commerce/subscriptions/subscriptions-and-billing.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/commerce/pay/index.md",
