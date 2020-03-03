@@ -399,6 +399,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/commerce/subscriptions-and-billing.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/commerce/pay/index.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
       "redirect_document_id": true

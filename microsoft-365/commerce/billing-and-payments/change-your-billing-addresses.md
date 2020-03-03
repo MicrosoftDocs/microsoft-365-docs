@@ -190,5 +190,4 @@ You can also change the alternate email address of other global and billing admi
 
 [Pay for yoursubscription](pay-for-your-subscription.md)
 
-[Subscriptions and billing - Admin Help](../subscriptions-and-billing.md)
-
+[Subscriptions and billing - Admin Help](../index.yml)
