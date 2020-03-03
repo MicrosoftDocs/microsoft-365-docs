@@ -84,7 +84,7 @@ The guidance for responding to DSRs for Customer Data is divided into the follow
 
 To help you determine where to search for personal data or what to search for, it helps to identify the Office 365 applications that people in your organization can use to create and store data in Office 365. Knowing this narrows the Office 365 applications that are in-scope for a DSR and helps you determine how to search for and access personal data that's related to a DSR. Specifically, this means whether you can use the Content Search tool or if you'll have to use the in-app functionality of the application the data was created in.
 
-A quick way to identify the Office 365 applications that people in your organization are using to create Customer Data is to determine which applications are included in your organization's Office 365 subscription. To do this, you can access user accounts in the Office 365 admin portal and look at the product licensing information. See [Assign licenses to users](../managed-desktop/get-started/assign-licenses.md).
+A quick way to identify the Office 365 applications that people in your organization are using to create Customer Data is to determine which applications are included in your organization's Office 365 subscription. To do this, you can access user accounts in the Office 365 admin portal and look at the product licensing information. See [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
 
 ## Using the Content Search eDiscovery tool to respond to DSRs
 
@@ -1543,7 +1543,7 @@ Workplace Analytics allows organizations to augment Office 365 data with their o
 
 To assist you with DSRs in Workplace Analytics: 
 
-1. Determine whether your organization is using Workplace Analytics. For more information, see [Assign licenses to users](../managed-desktop/get-started/assign-licenses.md). If your organization is not using Workplace Analytics, there is no further action.
+1. Determine whether your organization is using Workplace Analytics. For more information, see [Assign licenses to users](../admin/manage/assign-licenses-to-users.md). If your organization is not using Workplace Analytics, there is no further action.
 
 2. If your organization is using Workplace Analytics, then see who in your organization has been assigned to the role of Workplace Analytics administrator. You should also determine if the data subject's mailbox is licensed for Workplace Analytics. If necessary, have your Workplace Analytics administrator contact Microsoft Support in handling the following DSR requests: 
 

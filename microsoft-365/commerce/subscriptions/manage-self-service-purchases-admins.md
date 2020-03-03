@@ -71,7 +71,7 @@ You can assign existing licenses or purchase additional subscriptions through ex
 
 5. Follow the steps in [View who has licenses for a self-service purchased subscription](#view-who-has-licenses-for-a-self-service-purchase-subscription) to export a list of users to reference in step 6.
 
-6. Assign licenses to everyone who has a license in the other subscription. For full steps, see [Assign licenses to users](../../managed-desktop/get-started/assign-licenses.md).
+6. Assign licenses to everyone who has a license in the other subscription. For full steps, see [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).
 
 7. Contact the person who bought the self-service purchase subscription and ask them to cancel it.
 
