@@ -81,4 +81,4 @@ If you're an admin, you can verify which subscriptions your organization has by 
 
 ## Related articles
   
-[Subscriptions and billing](../../commerce/subscriptions-and-billing.md)
+[Subscriptions and billing](../../commerce/index.yml)
