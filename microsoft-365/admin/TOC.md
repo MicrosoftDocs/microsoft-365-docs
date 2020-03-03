@@ -94,7 +94,7 @@
 ### [Resolve license conflicts](manage/resolve-license-conflicts.md) 
 ### [Manage messages in the Message center](manage/manage-messages.md) 
 ## Subscriptions and billing
-### [Manage your subscriptions](../commerce/subscriptions-and-billing.md)
+### [Manage your subscriptions](../commerce/index.yml)
 ### [Sign up for an Office 365 trial subscription](../commerce/sign-up-for-office-365-trial.md)
 ### [Extend your trial](../commerce/extend-your-trial.md)
 ### [Buy a subscription from your free trial](../commerce/buy-a-subscription-from-your-free-trial.md)
