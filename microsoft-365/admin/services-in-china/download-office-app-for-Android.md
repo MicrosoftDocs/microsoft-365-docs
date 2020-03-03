@@ -39,12 +39,12 @@ A few Office app for Android features are not available for Office 365 operated 
 ## Download the Office app for Android
 
 - Download the Office app for Android phones and tablets from any of the following stores:
-    o Huawei
-    o Xiaomi
-    o Lenovo
-    o Baidu
-    o OppO
-    o Wandujia
+<br>   o Huawei
+<br>   o Xiaomi
+<br>   o Lenovo
+<br>   o Baidu
+<br>   o OppO
+<br>   o Wandujia
 
 
 ## Security considerations
