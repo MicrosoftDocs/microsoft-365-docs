@@ -60,4 +60,4 @@ Explore these topics about monitoring, reviewing, and responding to your securit
 - [Understand the latest attack campaigns](latest-attack-campaigns.md) and techniques with threat analytics
 
 ## Related topics
-- [Microsoft 365 security portals](portals.md)
+- [Microsoft security portals](portals.md)
