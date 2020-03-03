@@ -143,7 +143,7 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 
 - You can also [delete user accounts](../add-users/delete-a-user.md) that have been assigned a license to make their license available to other users. When you delete a user account, their license is immediately available to be assigned to someone else.
 
-- When a license is removed from a user, data that is associated with that  account is held for 30 days. After the 30-day grace period, the data is deleted and can't be recovered.
+- When a license is removed from a user, data that is associated with that account is held for 30 days. After the 30-day grace period, the data is deleted and can't be recovered.
 
 - Note:  Files that are saved in OneDrive for Business aren't deleted unless the user is deleted from the Microsoft 365 admin center or is removed through Active Directory synchronization. For more information, See [OneDrive retention and deletion](https://docs.microsoft.com/onedrive/retention-and-deletion)
 
