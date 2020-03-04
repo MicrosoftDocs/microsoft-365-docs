@@ -36,7 +36,7 @@ In order to modify your template, you must select from among three actions: **Ad
 
 In the next release of Compliance Score and Compliance Manager, a new process will replace the **copy**  and custom control functionality. You will be able to export an existing template, make changes to it, and import it back into Compliance Manager
 
-In the new process, you will simply go to your **Templates** page in Compliance Manager, select **+ Add template**, and on **Template** flyout pane, select the *new* **Create extension from global template** checkbox.
+In the new process, you will simply go to your **Templates** page in Compliance Manager, select **+ Add template**, and on the **Template** flyout pane, select the *new* **Create extension from global template** checkbox.
 
 From the drop-down menu, you select the pre-configured template as the basis of your template, then in one step upload an Excel file that contains the customizations for your own controls and actions.
 
@@ -46,7 +46,7 @@ Each time the original assessment is updated through the versioning process (out
 
 ## Versioning notice and control
 
-The next release of Compliance Score and Compliance Manager will contain the latest updates for all assessment frameworks and provide a clear way for users to understand and accept all future updates. 
+The next release of Compliance Score and Compliance Manager will contain the most recent updates for all assessment frameworks and provide a clear way for users to understand and accept all future updates. 
 
 Whenever an update is available for an assessment's template or an improvement action, an alert icon notifies you that an update is ready and prompts you to either accept or defer the update.
 
