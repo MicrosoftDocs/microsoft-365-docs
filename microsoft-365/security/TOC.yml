@@ -93,9 +93,10 @@
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: Hunt on devices and emails
                   href: mtp/advanced-hunting-query-emails-devices.md
-                - name: Understand the schema
-                  href: mtp/advanced-hunting-schema-tables.md
-                  items: 
+                - name: Data schema
+                  items:
+                    - name: Understand the schema
+                      href: mtp/advanced-hunting-schema-tables.md
                     - name: DeviceInfo
                       href: mtp/advanced-hunting-deviceinfo-table.md
                     - name: DeviceNetworkInfo
@@ -132,6 +133,12 @@
                       href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
                 - name: Apply query best practices
                   href: mtp/advanced-hunting-best-practices.md
+                - name: Custom detections
+                  items: 
+                    - name: Custom detections overview
+                      href: mtp/custom-detections-overview.md
+                    - name: Custom detection rules
+                      href: mtp/custom-detection-rules.md
             - name: Secure Score
               items: 
                 - name: Secure Score

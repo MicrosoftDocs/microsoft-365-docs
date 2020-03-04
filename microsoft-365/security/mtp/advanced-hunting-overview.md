@@ -40,6 +40,7 @@ We recommend going through several steps to quickly get up and running with adva
 | **Understand the schema** | Get a good, high-level understanding of the tables in the schema and their columns. This will help you determine where to look for data and how to construct your queries. | [Schema reference](advanced-hunting-schema-tables.md) |
 | **Use predefined queries** | Explore collections of predefined queries covering different threat hunting scenarios. | [Use shared queries](advanced-hunting-shared-queries.md)
 | **Optimize queries** | Understand how to create efficient queries and queries that combine data from emails and devices. | [Query best practices](advanced-hunting-shared-queries.md), [Hunt across devices and emails](advanced-hunting-best-practices.md)
+| **Create custom detection rules** | Understand how you can use advanced hunting queries to trigger alerts and apply response actions automatically. | [Custom detections overview](custom-detections-overview.md)
 
 ## Get help as you write queries
 Take advantage of the following functionality to write queries faster:
@@ -73,3 +74,4 @@ Once you apply the filter to modify the query and then run the query, the result
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
+- [Custom detections overview](custom-detections-overview.md)
