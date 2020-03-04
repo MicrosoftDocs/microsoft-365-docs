@@ -72,9 +72,6 @@ The first step is to assign the appropriate eDiscovery-related permissions to pe
     - Access case data in Advanced eDiscovery for any case in the organization.
     
     See the [More information](#more-information) section for reasons why you may want an eDiscovery Administrator in your organization. 
-    
-> [!IMPORTANT]
-> If a person isn't a member of one of these eDiscovery-related role groups, or isn't a member of a role group that's assigned the Reviewer role, you can't add them as a member of an eDiscovery case. 
 
 For more information about eDiscovery permissions, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
@@ -112,32 +109,31 @@ The next step is to create a eDiscovery case. You must be a member of the eDisco
     
     > [!TIP]
     > After you create a new case, you can rename it anytime. Just click the name of the case on the **eDiscovery** page. On the **Manage this case** flyout page, change the name displayed in the box under **Name**, and then save the change. 
-  
 ## Step 3: Add members to a case
 
-After you create a case, the next step is to add members to the case. As previous explained, only users who are members of the Reviewer or eDiscovery Manager role groups can be added as members of the case. The eDiscovery Manager who created the case is automatically added as a member.
+After you create a case, the next step is to add members to the case. The eDiscovery Manager who created the case is automatically added as a member. As previously explained, members have to assign the appropriate eDiscovery permissions so they can access the case after you add them.
   
 1. In the Security & Compliance Center, click **eDiscovery** \> **eDiscovery** to display the list of cases in your organization. 
-    
+
 2. Click the name of the case that you want to add members to.
-    
+
     The **Manage this case** flyout page is displayed. 
-    
+
     ![Manage a case flyout page](../media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
   
 3. Under **Manage members**, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add** to add members to the case. 
-    
+
     You can also choose to add a role group to the case. Under **Manage role groups**, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add**.
-    
+
     > [!NOTE]
     > Role groups control who can assign members to an eDiscovery case. That means you can only assign the role groups that you are a member of to a case.
-    
+
 4. In the list of people or role groups that can be added as members of the case, click the check box next to the names of the people or role groups that you want to add.
-    
+
     > [!TIP]
     > If you have a large list of people who can added as members, use the **Search** box to search for a specific person in the list. 
   
-5. After you have selected the people or role groups to add as members of the group, click **Add**.
+5. After you select the people or role groups to add as members of the group, click **Add**.
     
     In **Manage this case**, click **Save** to save the new list of case members. 
     
@@ -149,7 +145,7 @@ You can use an eDiscovery case to create holds to preserve content that might be
 
 > [!NOTE]
 > After you place a content location on hold, it takes up to 24 hours for the hold to take effect. 
->   
+
 When you create a hold, you have the following options to scope the content that is held in the specified content locations:
   
 - You create an infinite hold where all content is placed on hold. Alternatively, you can create a query-based hold where only content that matches a search query is placed on hold.
