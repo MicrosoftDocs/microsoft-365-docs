@@ -186,6 +186,9 @@ If you have deployed labels with Azure Information Protection, use the following
 
 ### Azure Information Protection labels
 
+> [!NOTE]
+> Label management for Azure Information Protection labels in the Azure portal is being deprecated **March 31, 2021**. Learn more in the official [deprecation notice](https://techcommunity.microsoft.com/t5/azure-information-protection/deprecation-notice-azure-information-protection-classic-client/ba-p/1092108).
+
 If you are using Azure Information Protection labels because your tenant isn't yet on the [unified labeling platform](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), we recommend that you avoid creating sensitivity labels until you activate unified labeling. In this scenario, the labels you see in the Azure portal are Azure Information Protection labels rather than sensitivity labels. These labels can be used by the Azure Information Protection client (classic) on Windows computers, but can't be used by devices running macOS, iOS, or Android. To resolve this, [migrate these labels](/azure/information-protection/configure-policy-migrate-labels) to sensitivity labels. 
 
 The metadata applied by both sets of labels are compatible, so you don't need to relabel documents and emails when the migration is complete.
