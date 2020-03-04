@@ -119,11 +119,13 @@ The next step is to create a case and start using Advanced eDiscovery. Complete 
 
 12. Click the **Home** tab to go to the case home page.
 
-## The Advanced eDiscovery workflow
+## Explore the Advanced eDiscovery workflow
 
 To get you started using Advanced eDiscovery, here's a simple workflow that aligns with [common eDiscovery practices](overview-ediscovery-20.md#alignment-with-edrm). In each of these steps, we'll also highlight some the extended Advanced eDiscovery functionality that you can explore.
 
-1. **[Add custodians to a case](add-custodians-to-case.md).** The first step after creating a case is to add custodians. A *custodian* is a person having administrative control of a document or electronic file that may be relevant to the case. Here are some things that happen (or that you can do) when you add custodians to a case:
+![Advanced eDiscovery workflow](../media/AeDWorkflow.png)
+
+1. **[Add custodians to a case](add-custodians-to-case.md)**. The first step after creating a case is to add custodians. A *custodian* is a person having administrative control of a document or electronic file that may be relevant to the case. Here are some things that happen (or that you can do) when you add custodians to a case:
 
    - Data in the custodian's Exchange mailbox, OneDrive account, and any Microsoft Teams or Yammer groups that the custodian is a member of can be "marked" as custodial data in the case.
   
@@ -135,7 +137,7 @@ To get you started using Advanced eDiscovery, here's a simple workflow that alig
 
    - You can use the [communications workflow](managing-custodian-communications.md) in Advanced eDiscovery to send a legal hold notification to custodians.
 
-2. **[Search custodial data sources for data relevant to the case](collecting-data-for-ediscovery.md).** After you add custodians to a case, use the built-in search tool to search the custodian data locations for data that may be relevant to the case. You use keywords, properties, and conditions to [build search queries](building-search-queries.md) that return search results with the data that's most likely relevant to the case. You can also:
+2. **[Search custodial data sources for data relevant to the case](collecting-data-for-ediscovery.md)**. After you add custodians to a case, use the built-in search tool to search the custodian data locations for data that may be relevant to the case. You use keywords, properties, and conditions to [build search queries](building-search-queries.md) that return search results with the data that's most likely relevant to the case. You can also:
 
    - View [search statistics](search-statistics.md) that may help you refine a search query to narrow the results.
 
@@ -143,11 +145,11 @@ To get you started using Advanced eDiscovery, here's a simple workflow that alig
 
    - Revise a query and re-run the search.
 
-3. **[Add data to a review set](add-data-to-review-set.md).** Once you've configured and verified that a search returns the desired data, the next step is to add the search results to a review set. When you add data to a review set, items are copied from their original location to a secure Azure Storage location. The data is re-indexed again to optimize it for thorough and fast searches when reviewing and analyzing items in the review set. Additionally, you can also [add non-Office 365 data into a review set](load-non-office-365-data-into-a-review-set.md).
+3. **[Add data to a review set](add-data-to-review-set.md)**. Once you've configured and verified that a search returns the desired data, the next step is to add the search results to a review set. When you add data to a review set, items are copied from their original location to a secure Azure Storage location. The data is re-indexed again to optimize it for thorough and fast searches when reviewing and analyzing items in the review set. Additionally, you can also [add non-Office 365 data into a review set](load-non-office-365-data-into-a-review-set.md).
 
    There's also a special kind of review set that you can add data to, called a *conversation review set*. These types of reviews sets provides conversation reconstruction capabilities to reconstruct, review, and export threaded conversations like those in Microsoft Teams. For more information, see [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
 
-4. **Review and analyze data in a review set.** Now that data is in a review set, you can use a wide-variety of tools and capabilities to view and analyze the case data with the goal of reducing the data set to what is most relevant to the case you're investigation. Here's a list of some tools and capabilities that you can use during this process.
+4. **Review and analyze data in a review set**. Now that data is in a review set, you can use a wide-variety of tools and capabilities to view and analyze the case data with the goal of reducing the data set to what is most relevant to the case you're investigation. Here's a list of some tools and capabilities that you can use during this process.
 
    - [View documents](view-documents-in-review-set.md). This includes viewing the metadata for each document in a review set, and viewing the document in its native version or text version.
 
@@ -159,4 +161,4 @@ To get you started using Advanced eDiscovery, here's a simple workflow that alig
 
    - [Analyze case data](analyzing-data-in-review-set.md). The analytics functionality in Advanced eDiscovery is powerful. After you run analytics on the data in review set, we perform analysis such as near duplicate detection, email threading, and themes that can help reduce the volume of documents that you have to review. We also generate an Analytics reports that summarizes the result of running analytics. As previously explained, running analytics also runs [the attorney-client privilege detection model](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
 
-5. **Export and download case data.** A final step after collecting, reviewing, and analyzing case data is to export it out of Advanced eDiscovery for external review or for review by people outside of the investigation team. Exporting data is a two-step process. The first step is to [export](export-documents-from-review-set.md) out the review set and into a different Azure Storage location (one provided by Microsoft or one managed by your organization). Then you use Azure Storage Explorer to download the data to a local computer. In addition to the exported data files, the contains of the export package also contains an export report, a summary report, and an error report.
+5. **Export and download case data**. A final step after collecting, reviewing, and analyzing case data is to export it out of Advanced eDiscovery for external review or for review by people outside of the investigation team. Exporting data is a two-step process. The first step is to [export](export-documents-from-review-set.md) out the review set and into a different Azure Storage location (one provided by Microsoft or one managed by your organization). Then you use Azure Storage Explorer to download the data to a local computer. In addition to the exported data files, the contains of the export package also contains an export report, a summary report, and an error report.
