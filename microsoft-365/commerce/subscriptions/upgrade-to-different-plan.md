@@ -58,7 +58,7 @@ When you finish checkout, it might take a few minutes to finalize the upgrade. Y
 
 ## The Upgrade tab is empty
 
-If the **Upgrade** tab is empty, you'll see an explanation of why you can't upgrade at this time. You can try to [change plans manually](change-plans-manually.md) or [call support](../../admin/contact-support-for-business-products.md). For more information, see [Why can't I switch Office 365 for business plans?](why-can-t-i-switch-plans.md).
+If the **Upgrade** tab is empty, you'll see an explanation of why you can't upgrade at this time. You can try to [change plans manually](change-plans-manually.md) or [call support](../../admin/contact-support-for-business-products.md). For more information, see [Why can't I upgrade plans?](#why-cant-i-upgrade-plans)).
 
 ## I don't see the plan I want
 
@@ -173,6 +173,6 @@ The day your plan upgrade is complete, the billing on your old subscription will
 
 ## Related articles
 
-[Switch to a different Office 365 for business plan](switch-to-a-different-plan.md)
+[Change plans manually](change-plans-manually.md)
 
 [Back up data before switching Office 365 for business plans](back-up-data-before-switching-plans.md)
