@@ -1,11 +1,11 @@
 ---
-title: "Ensure that spam is routed to each user's Junk Email folder"
+title: "Configure EOP to junk spam in hybrid environments"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
+ms.author: chrisda
 author: MSFTTracyP
-manager: dansimp
-ms.date: 7/16/2016
+manager: chrisda
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn how to route spam to user Junk Email folders in Exchange Online Protection."
+description: "Admins can learn how to configure their on-premises Exchange environment to route spam to on-premises users' Junk Email folders if they're using standalone Exchange Online Protection (EOP) in hybrid environments."
 ---
 
 # Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments
