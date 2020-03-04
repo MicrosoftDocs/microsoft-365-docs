@@ -137,7 +137,7 @@
                   items: 
                     - name: Custom detections overview
                       href: mtp/custom-detections-overview.md
-                    - name: Custom detection rules
+                    - name: Create & manage detection rules
                       href: mtp/custom-detection-rules.md
             - name: Secure Score
               items: 

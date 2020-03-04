@@ -44,7 +44,7 @@ We recommend going through several steps to quickly get up and running with adva
 
 ## Get help as you write queries
 Take advantage of the following functionality to write queries faster:
-- **Autosuggest** — as you write queries, advanced hunting provides suggestions. 
+- **Autosuggest** — as you write queries, advanced hunting provides suggestions with IntelliSense. 
 - **Schema reference** — a schema reference that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
 
 ## Drilldown from query results
