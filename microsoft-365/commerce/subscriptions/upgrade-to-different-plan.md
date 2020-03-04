@@ -26,9 +26,11 @@ description: "Learn how to upgrade to a new subscription."
 monikerRange: 'o365-worldwide'
 ---
 
-# Upgrade to a different plan
+# What does upgrading a plan do to my service and billing?
 
-When your business changes, or you need more features, you can upgrade plans. The easiest way to do this is to use the **Upgrade** tab in the admin center. However, using the **Upgrade** tab isn't supported in all situations. In some cases, you might be able to change plans manually.
+When you upgrade plans automatically by using the **Switch plans** button (or the **Upgrade** tab in the new admin center), your services and billing are affected.
+
+When your business changes, or you need more features, you can upgrade plans. The easiest way to do this is to use the **Upgrade** tab in the admin center. However, using the **Upgrade** tab isn't supported in all situations. If you don't see any plans on the **Upgrade** tab, it means your plan can't be upgraded automatically. In some cases, you might be able to resolve the issue so that you can view plans available for upgrade, or you might be able to upgrade or change plans manually, instead.
 
 > [!NOTE]
 > This article applies to the new admin center. If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page. To view the article about the old admin center, see [Switch to a different Office 365 for business plan](switch-to-a-different-plan.md).
@@ -72,13 +74,99 @@ If you want to move to a plan with fewer services, you can [change plans manuall
 
 **Credit checks when changing plans:** If you pay by invoice, or reach a certain level of cost, a credit check might be required. A credit check can take up to two business days. Users will have full access to their current plan until you move them to the new one. You'll receive a notification if a credit check is required.
 
+## Access to services
+
+ **Admins** won't be able to use the admin center while the plan is being upgraded. This can take up to an hour.
+  
+ **Users** will experience no interruption of service. They will continue to have the existing service until the upgrade is fully completed.
+  
+## Users and licenses
+
+Users on the old subscription will automatically be moved to the new subscription.
+  
+If your old subscription includes multiple services, and if you have changed which of these services your users are assigned to, you may want to make note of this before you upgrade plans so that you can recreate these changes afterwards. All users will be given access to all services in the new subscription. For example, if you previously purchased Office 365 Enterprise E3 for all 100 of your users, but unassigned the SharePoint Online service from 50 of them, this change would not be kept after you upgrade plans.
+  
+If you have more than one subscription before you upgrade plans, and have users assigned licenses to more than one subscription, this assignment pattern will be kept as much as possible in the new subscription.
+  
+All user data will be retained during the upgrade, including Exchange mailboxes and SharePoint Online documents, lists, and other information.
+  
+## Billing
+
+The day your plan upgrade is complete, the billing on your old subscription will be turned off and the billing on your new subscription will be turned on. You'll get a prorated credit for any unused service on the old subscription. You'll receive a new invoice that includes the credit for your old subscription within 30 days of upgrading to the new subscription.
+  
+> [!NOTE]
+> The length of time it takes to actually credit your payment account depends on the payment method that was used for the subscription. 
+  
+ **Upgrading from a prepaid subscription before it expires?** If the total cost of your new subscription is greater than or equal to the remaining value of your prepaid subscription, you won't lose any prepaid time. On the checkout page, you'll see a credit for your unused time. However, if the total cost of your new subscription is less than the remaining value of your current prepaid subscription, you'll forfeit some of your unused time. You'll be notified before you checkout, and you can wait to upgrade until closer to your prepaid subscription's expiration date.
+
+ ## Why are there no plans listed to upgrade?
+
+### You can't upgrade subscriptions now because you have more users than licenses.
+
+To upgrade plans automatically, all of your users need to be assigned valid licenses. If you have assigned more licenses than you have
+purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../../admin/manage/resolve-license-conflicts.md). After you have resolved any licensing conflicts, you should see plans listed on the **Upgrade** tab. If not, you can [change plans manually](change-plans-manually.md), or [call support](../../admin/contact-support-for-business-products.md).
+
+### You can't upgrade subscriptions right now because this subscription isn't fully set up or the service isn't available.
+
+For example, if one of the services has an incident, you won't be able to upgrade until all services are healthy. To see if there are
+provisioning or service health issues, in the admin center, go to the **Health** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health</a> page.
+
+If you find that a service is not fully provisioned, or you have a service health issue, please wait a few hours for your service to become available, and try again. If you still have a problem, please [call support](../../admin/contact-support-for-business-products.md).
+
+### You can't upgrade plans because another plan is in the process of being upgraded or is pending a credit check.
+
+Wait until the credit check has been completed before upgrading plans. Credit checks can take up to two working days.
+
+### Currently, this subscription is not eligible to upgrade.
+
+You can [change plans manually](change-plans-manually.md) or [call support](../../admin/contact-support-for-business-products.md).
+
+### I see a different message than what's listed here.
+
+You can [change plans manually](change-plans-manually.md) or [call support](../../admin/contact-support-for-business-products.md).
+
+## Additional reasons you can't Upgrade
+
+### You have two or more plans for the same product
+
+You can only use the **Upgrade** tab if all users subscribe to the same plan. For example, if you have two Office 365 Business Premium plans, you won't be able to automatically upgrade one of them to another plan.
+
+### You have a prepaid plan
+
+If you've paid for your subscription in advance, you might be able to [change plans manually](change-plans-manually.md). However, you won't receive a credit for unused time remaining on your current subscription if you upgrade plans before the current plan expires.
+
+You can also [call support](../../admin/contact-support-for-business-products.md) for help.
+
+### You have a government or non-profit plan
+
+If you have a government or non-profit plan, you can [change plans manually](change-plans-manually.md) or [call support](../../admin/contact-support-for-business-products.md) for help.
+
+### The subscription that you want to upgrade from has a temporary issue
+
+You might not see any plans on the **Upgrade** tab because the service is in the process of upgrading a high volume of plans. Try again in
+about an hour after your first attempt.
+
+### The plan that you want to upgrade to isn't a supported option
+
+When you upgrade plans, the plans that are available for you to upgrade to are displayed based on the services in your current plan. You can only upgrade to a plan that has the same data-related services, such as Exchange Online or SharePoint Online, or to a higher version of them. This ensures that users don\'t lose data related to those services during the upgrade.
+
+If your plan isn't eligible to upgrade plans automatically, you might be able to [change plans manually](change-plans-manually.md),
+instead. You can also [call support](../../admin/contact-support-for-business-products.md) for help.
+
+### Your subscription has an Add-on
+
+If you have an Add-on with your subscription, you might be able to [change plans manually](change-plans-manually.md).
+
+### Your subscription has an unpaid balance
+
+To resolve this, find the subscription on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page, and select the **Pay now** link in the **Billing** section. After the payment has been made, check the **Upgrade** tab again.
+
 ## Call support to help you change plans
+
 [Call Microsoft support](../../admin/contact-support-for-business-products.md)
 
 ## Related articles
 
 [Switch to a different Office 365 for business plan](switch-to-a-different-plan.md)
-
-[What does upgrading Office 365 plans do to my service and billing?](what-does-switching-plans-do-to-my-service-and-billing.md)
 
 [Back up data before switching Office 365 for business plans](back-up-data-before-switching-plans.md)
