@@ -39,15 +39,15 @@ Finally, as an admin, when you configure a sensitivity label to apply encryption
 
 The encryption settings are available when you [create a sensitivity label](create-sensitivity-labels.md) in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center.
 
-## How encryption works
+## Understand how the encryption works
 
 Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
 
 When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
-## Configuring a label for encryption
+## How to configure a label for encryption
 
-When you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), on the **Encryption** page of the wizard, you can select one of the following options:
+[Create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), and on the **Encryption** page of the wizard, select one of the following options:
 
 - **None**: The default setting for a new label. No new encryption is applied.
 - **Apply**: Turns on encryption, and you then specify encryption settings.
@@ -58,7 +58,7 @@ When you [create or edit a sensitivity label](create-sensitivity-labels.md#creat
 
 Configuring the encryption options:
 
-![Sensitivity label options for encryption](media/encrytion-options-sensitivity-label.png)
+![Sensitivity label options for encryption](../media/encrytion-options-sensitivity-label.png)
 
 
 ### What happens to existing encryption when a label's applied
@@ -80,7 +80,7 @@ The following table identifies what happens to existing encryption when a sensit
 |**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|Original encryption is removed|
 
 Note that in the cases where the new label encryption is applied or the original encryption is removed, this happens only if the user applying the label has a usage right or role that supports this action:
-- The [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions) Export or Full Control.
+- The [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export or Full Control.
 - The role of [Rights Management issuer or Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner), or [super user](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
 If the user doesn't have one of these rights or roles, the label can't be applied and so the original encryption is preserved. The user sees the following message: **You don't have permission to make this change to the sensitivity label. Please contact the content owner.**
@@ -93,7 +93,7 @@ When an email message is encrypted by any method, any unencrypted Office documen
 
 Documents that are already encrypted and then added as attachments always preserve their original encryption. 
 
-## How to configure encryption settings for a sensitivity label
+## Configure encryption settings
 
 When you select **Apply** on the **Encryption** page of the wizard to create or edit a sensitivity label, choose whether to:
 
@@ -106,7 +106,7 @@ Alternatively, if you have a sensitivity label named **Business Contracts**, and
 
 Choosing whether to assign permissions now or let users assign permissions: 
 
-![Option to add user or admin defined permissions](media/sensitivity-label-user-or-admin-defined-permissions.png)
+![Option to add user or admin defined permissions](../media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 
 ## Assign permissions now
@@ -119,7 +119,7 @@ Use the following options to control who can access email or documents to which 
 
 Settings for access control for encrypted content:
 
-![Settings for admin defined permissions](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+![Settings for admin defined permissions](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### Rights Management use license for offline access
 
@@ -141,7 +141,7 @@ You can grant permissions to specific people so that only they can interact with
 
 Assigning permissions:
 
-![Options to assign permissions to users](media/Sensitivity-Assign-permissions-settings.png)
+![Options to assign permissions to users](../media/Sensitivity-Assign-permissions-settings.png)
 
 #### Add users or groups
 
@@ -150,7 +150,10 @@ When you assign permissions, you can choose:
 - Everyone in your organization (all tenant members). This setting excludes guest accounts.
 - Any authenticated users. Make sure you understand the [requirements and limitations](#requirements-and-limitations-for-add-any-authenticated-users) of this setting before selecting it.
 - Any specific user or email-enabled security group, distribution group, Office 365 group, or dynamic distribution group. 
-- Any email address or domain outside your organization, such as gmail.com, hotmail.com, or outlook.com. 
+- Any email address or domain. Use this option to specify all users in another organization who uses Azure AD, by entering any domain name from that organization. You can also use this option for social providers, by entering their domain name such as **gmail.com**, **hotmail.com**, or **outlook.com**.
+
+> [!NOTE]
+> If you specify a domain from an organization that uses Azure AD, you can't restrict access to that specific domain. Instead, all verified domains in Azure AD are automatically included for the tenant that owns the domain name you specify.
 
 When you choose all tenant members or browse the directory, the users or groups must have an email address.
 
@@ -158,7 +161,7 @@ As a best practice, use groups rather than users. This strategy keeps your confi
 
 ##### Requirements and limitations for **Add any authenticated users**
 
-This setting doesn't restrict who can access the content that the label encrypts, while still encrypting the content and providing you with options to restrict how the content can be used (permissions), and accessed (expiry and offline access). However, the application opening the encrypted content must be able to support the authentication being used. For this reason, federated social providers such as Google, and onetime passcode authentication work for email only, and only when you use Exchange Online and the new capabilities from Office 365 Message Encryption. Microsoft accounts can be used with Office 365 apps and the [Azure Information Protection viewer](https://portal.azurerms.com/#/download).
+This setting doesn't restrict who can access the content that the label encrypts, while still encrypting the content and providing you with options to restrict how the content can be used (permissions), and accessed (expiry and offline access). However, the application opening the encrypted content must be able to support the authentication being used. For this reason, federated social providers such as Google, and onetime passcode authentication work for email only, and only when you use Exchange Online. Microsoft accounts can be used with Office 365 apps and the [Azure Information Protection viewer](https://portal.azurerms.com/#/download).
 
 Some typical scenarios for the any authenticated users setting:
 - You don't mind who views the content, but you want to restrict how it is used. For example, you don't want the content to be edited, copied, or printed.
@@ -170,17 +173,17 @@ Some typical scenarios for the any authenticated users setting:
 When you choose which permissions to allow for those users or groups, you can select either:
 
 - A [predefined permissions level](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) with a preset group of rights, such as Co-Author or Reviewer.
-- A Custom group of rights, where you choose whichever permissions you want.
+- Custom permissions, where you choose one or more usage rights.
 
-For more information on each specific permission, see [Usage rights and descriptions](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
+For more information to help you select the appropriate permissions, see [Usage rights and descriptions](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
-![Options to choose preset or custom permissions](media/Sensitivity-Choose-permissions-settings.png)
+![Options to choose preset or custom permissions](../media/Sensitivity-Choose-permissions-settings.png)
 
 Note that the same label can grant different permissions to different users. For example, a single label can assign some users as Reviewer and a different user as Co-author, as shown in the following screenshot.
 
 To do this, add users or groups, assign them permissions, and save those settings. Then repeat these steps, adding users and assigning them permissions, saving the settings each time. You can repeat this configuration as often as necessary, to define different permissions for different users.
 
-![Different users with different permissions](media/Sensitivity-Multiple-users-permissions.png)
+![Different users with different permissions](../media/Sensitivity-Multiple-users-permissions.png)
 
 #### Rights Management issuer (user applying the sensitivity label) always has Full Control
 
@@ -202,7 +205,9 @@ You can use these options to let users assign permissions when they manually app
 
 - In Word, PowerPoint, and Excel, a user is prompted to select their own permissions for specific users, groups, or organizations. 
     > [!NOTE]
-    > This option for Word, PowerPoint, and Excel is supported by the Azure Information Protection unified labeling client. For apps that use built-in labeling, support is currently rolling out in [preview for Windows and Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). If this option is selected but isn't supported for a user's app, that label doesn't display to the user.
+    > This option for Word, PowerPoint, and Excel is supported by the Azure Information Protection unified labeling client. For apps that use built-in labeling, support is currently in [preview for Windows and Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). 
+    > 
+    > If this option is selected but isn't supported for a user's app, either that label doesn't display to the user, or (currently rolling out in preview for iOS and Android) the label displays for consistency, but it can't be applied with an explanation message to users.
 
 When the options are supported, use the following table to identify when users see the sensitivity label:
 
@@ -217,13 +222,13 @@ A sensitivity label that lets users assign permissions can be applied to content
 
 Configuring the user-assigned permissions:
 
-![Encryption settings for user-defined permissions](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![Encryption settings for user-defined permissions](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### Outlook restrictions
 
 In Outlook, when a user applies a sensitivity label that lets them assign permissions to a message, the restrictions are the same as the Do Not Forward option. The user will see the label name and description at the top of the message, which indicates the content's being protected. Unlike Word, PowerPoint, and Excel (see the [next section](#word-powerpoint-and-excel-permissions)), users aren't prompted to select specific permissions.
 
-![Sensitivity label applied to message in Outlook](media/sensitivity-label-outlook-protection-applied.png)
+![Sensitivity label applied to message in Outlook](../media/sensitivity-label-outlook-protection-applied.png)
 
 When the Do Not Forward option is applied to an email, the email is encrypted and recipients must be authenticated. Then, the recipients cannot forward it, print it, or copy from it. For example, in the Outlook client, the Forward button is not available, the Save As and Print menu options are not available, and you cannot add or change recipients in the To, Cc, or Bcc boxes.
 
@@ -239,7 +244,7 @@ For example, with the Azure Information Protection unified labeling client, user
 - Select users, groups, or organizations. This can include people both inside or outside your organizations.
 - Set an expiration date, after which the selected users cannot access the content. For more information, see the above section [Rights Management use license for offline access](#rights-management-use-license-for-offline-access).
 
-![Options for user to protect with custom permissions](media/sensitivity-aip-custom-permissions-dialog.png)
+![Options for user to protect with custom permissions](../media/sensitivity-aip-custom-permissions-dialog.png)
 
 For built-in labeling, users see the same dialog box if they select the following:
 
@@ -247,6 +252,97 @@ For built-in labeling, users see the same dialog box if they select the followin
 
 - MacOS: **Review** tab > **Protection** > **Permissions** > **Restricted Access**
 
+
+## Example configurations for the encryption settings
+
+For each example that follows, do the configuration from the **Encryption** page of the wizard when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels). First make sure that the **Encryption** is set to **Apply**:
+
+![Apply encryption option in the sensitivity label wizard](../media/apply-encryption-option.png)
+
+### Example 1: Label that applies Do Not Forward to send an encrypted email to a Gmail account
+
+This label displays only in Outlook and Outlook on the web, and you must use Exchange Online. Instruct users to select this label when they need to send an encrypted email to people using a Gmail account (or any other email account outside your organization). 
+
+Your users type the Gmail email address in the **To** box.  Then, they select the label and the Do Not Forward option is automatically added to the email. The result is that recipients cannot forward the email, or print it, copy from it, or save the email outside their mailbox by using the **Save As** option. 
+
+1. On the **Encryption** page: For **Assign permissions now or let users decide?** select **Let users assign permissions when they apply the label**.
+
+3. Select the checkbox: **In Outlook, enforce restrictions equivalent to the Do Not Forward option**.
+
+4. If selected, clear the checkbox: **In Word, PowerPoint, and Excel, prompt users to specify permissions**.
+
+5. Select **Next** and complete the wizard.
+
+
+### Example 2: Label that restricts read-only permission to all users in another organization
+
+This label is suitable for sharing very sensitive documents as read-only, and the documents always require an internet connection to view them.
+
+This label is not suitable for emails.
+
+1. On the **Encryption** page: For **Assign permissions now or let users decide?** select **Assign permissions now**.
+
+3. For **Allow offline access**, select **Never**.
+
+4. Select **Assign permissions**.
+
+3. On the **Assign permissions** pane, select **Add these email address or domains**.
+
+4. In the text box, enter the name of a domain from the other organization, for example, **fabrikam.com**. Then select **Add**.
+
+5. Select **Choose permissions from present or custom**.
+
+6. On the **Choose permissions from present or custom** pane, select the dropdown box, select **Viewer**, and then select **Save**.
+
+6. Back on the **Assign Permissions** pane, select **Save**.
+
+7. On the **Encryption** page, select **Next** and complete the wizard.
+
+
+### Example 3: Add external users to an existing label that encrypts content
+
+The new users that you add will be able open documents and emails that have already been protected with this label. The permissions that you grant these users can be different from the permissions that the existing users have.
+
+1. On the **Encryption** page: For **Assign permissions now or let users decide?** make sure **Assign permissions now** is selected.
+
+2. Select **Assign permissions**.
+
+3. On the **Assign permissions** pane, select **Add these email address or domains**.
+
+4. In the text box, enter the email address of the first user (or group) to add, and then select **Add**.
+
+5. Select **Choose permissions from present or custom**.
+
+6. On the **Choose permissions from present or custom** pane, select the permissions for this user (or group), and then select **Save**.
+
+7. Back on the **Assign Permissions** pane, repeat steps 3 through 6 for each user (or group) that you want to add to this label. Then click **Save**.
+
+8. On the **Encryption** page, select **Next** and complete the wizard.
+
+
+### Example 4: Label that encrypts content but doesn't restrict who can access it
+
+This configuration has the advantage that you don't need to specify users, groups, or domains to encrypt an email or document. The content will still be encrypted and you can still specify usage rights, an expiry date, and offline access. 
+
+Use this configuration only when you do not need to restrict who can open the protected document or email. [More information about this setting](#requirements-and-limitations-for-add-any-authenticated-users)
+
+1. On the **Encryption** page: For **Assign permissions now or let users decide?** make sure **Assign permissions now** is selected.
+
+2. Configure settings for **User access to content expires** and **Allow offline access** as required.
+
+3. Select **Assign permissions**.
+
+4. On the **Assign permissions** pane, select **Add any authenticated users**. 
+    
+    For **Users and groups**, you see **AuthenticatedUsers** automatically added. You can't change this value, only delete it, which cancels the **Add any authenticated users** selection.
+
+5. Select **Choose permissions from present or custom**.
+
+6. On the **Choose permissions from present or custom** pane, select the dropdown box, select **Viewer**permissions you want, and then select **Save**.
+
+7. Back on the **Assign Permissions** pane, select **Save**.
+
+8. On the **Encryption** page, select **Next** and complete the wizard.
 
 ## Considerations for encrypted content
 
@@ -284,9 +380,9 @@ For sensitivity labels to apply encryption, the protection service (Azure Rights
 
 ### Configure Exchange for Azure Information Protection
 
-Exchange does not have to be configured for Azure Information Protection before users can apply labels in Outlook to protect their emails. However, until Exchange is configured for Azure Information Protection, you do not get the full functionality of using Azure Rights Management protection with Exchange.
+Exchange does not have to be configured for Azure Information Protection before users can apply labels in Outlook to encrypt their emails. However, until Exchange is configured for Azure Information Protection, you do not get the full functionality of using Azure Rights Management protection with Exchange.
  
-For example, users cannot view protected emails on mobile phones or with Outlook on the web, protected emails cannot be indexed for search, and you cannot configure Exchange Online DLP for Rights Management protection. 
+For example, users cannot view encrypted emails on mobile phones or with Outlook on the web, encrypted emails cannot be indexed for search, and you cannot configure Exchange Online DLP for Rights Management protection. 
 
 To ensure that Exchange can support these additional scenarios, see the following:
 

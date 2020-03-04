@@ -22,6 +22,15 @@ description: "Content explorer allows you to natively view labeled items."
 
 The data classification content explorer allows you to natively view the items that were summarized on the overview page.
 
+## Prerequisites
+
+Every account that accesses and uses activity explorer must have a license assigned to it from one of these subscriptions:
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- Advanced Compliance (E5) add-on
+- Advanced Threat Intelligence (E5) add-on
+
 ## Content explorer
 
 Content explorer shows a current snapshot of the items that have a sensitivity label, a retention label or have been classified as a sensitive information type in your organization.
@@ -40,7 +49,7 @@ Sensitivity labels must be enabled for files that are in SharePoint and OneDrive
 
 A [retention label](labels.md) allows you to define how long a labeled item is kept and the steps to be taken prior to deleting it. They are applied manually or automatically via policies. They can play a role in helping your organization stay in compliance with legal and regulatory requirements.
 
-![content explorer collapsed screenshot](media/data-classification-content-explorer-1.png)
+![content explorer collapsed screenshot](../media/data-classification-content-explorer-1.png)
 
 ### Permissions
 
@@ -53,6 +62,8 @@ There are two roles that grant access to content explorer:
 The account you use to access content explorer must be in one or both of the role groups. These are independent role groups and are not cumulative. For example, if you want to grant an account the ability to view the items and their locations only, grant Content Explorer List viewer rights. If you want that same account to also be able to view the contents of the items in the list, grant Content Explorer Content viewer rights as well.
 
 You can also assign either or both of the roles to a custom role group to tailor access to content explorer.
+
+A Global admin, Compliance admin, or Data admin can assign the necessary Content Explorer List Viewer, and Content Explorer Content Viewer role group membership.
 
 ### How to use content explorer
 

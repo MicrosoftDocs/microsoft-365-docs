@@ -18,23 +18,23 @@
       href: plan-for-security-and-compliance.md
 - name: Manage insider risks
   items:
-    - name: Insider risk management (preview)
+    - name: Insider risk management
       items:
-        - name: Learn about insider risk management (preview)
+        - name: Learn about insider risk management
           href: insider-risk-management.md
-        - name: Get started with insider risk management (preview)
+        - name: Get started with insider risk management
           href: insider-risk-management-configure.md
-        - name: Create and manage insider risk policies (preview)
+        - name: Create and manage insider risk policies
           href: insider-risk-management-policies.md
-        - name: Investigate insider risk alerts (preview)
+        - name: Investigate insider risk alerts
           href: insider-risk-management-alerts.md
-        - name: Take action on insider risk cases (preview)
+        - name: Take action on insider risk cases
           href: insider-risk-management-cases.md
-        - name: Review data with the insider risk content explorer (preview)
+        - name: Review data with the insider risk content explorer
           href: insider-risk-management-content-explorer.md
-        - name: Add users to insider risk policies (preview)
+        - name: Add users to insider risk policies
           href: insider-risk-management-users.md
-        - name: Create insider risk notice templates (preview)
+        - name: Create insider risk notice templates
           href: insider-risk-management-notices.md
     - name: Communication compliance
       items: 
@@ -65,7 +65,7 @@
       items: 
         - name: Learn about privileged access management
           href: privileged-access-management-overview.md
-        - name: Configure privileged access management
+        - name: Get started with privileged access management
           href: privileged-access-management-configuration.md
     - name: Protect user and device access
       href: protect-access-to-data-and-services.md
@@ -75,8 +75,11 @@
   href: protect-information.md
   items: 
     - name: Sensitivity labels
-      href: sensitivity-labels.md
-      items: 
+      items:
+        - name: Learn about sensitivity labels
+          href: sensitivity-labels.md
+        - name: Get started with sensitivity labels
+          href: get-started-with-sensitivity-labels.md
         - name: Create and publish sensitivity labels
           href: create-sensitivity-labels.md
         - name: Restrict access to content by using sensitivity labels to apply encryption
@@ -89,7 +92,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Sensitivity labels in Office apps
+        - name: Use sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
     - name: Data loss prevention (DLP)
       href: data-loss-prevention-policies.md
@@ -206,7 +209,7 @@
           href: data-classification-pub-preview-relnotes.md
         - name: Getting started with trainable classifiers (preview)
           href: classifier-getting-started-with.md
-        - name: Using a ready to use classifier (preview)
+        - name: Using a built-in classifier (preview)
           href: classifier-using-a-ready-to-use-classifier.md
         - name: Creating and training a classifier (preview)
           href: classifier-creating-a-trainable-classifier.md
@@ -215,8 +218,9 @@
     - name: Manage information governance
       href: manage-information-governance.md
     - name: Import data
-      href: importing-pst-files-to-office-365.md
       items: 
+        - name: Overview of importing PST files
+          href: importing-pst-files-to-office-365.md
         - name: Use network upload to import PST files
           href: use-network-upload-to-import-pst-files.md
         - name: Use drive shipping to import PST files
@@ -228,8 +232,9 @@
         - name: FAQ about importing PST files
           href: faqimporting-pst-files-to-office-365.md
     - name: Archive third-party data
-      href: archiving-third-party-data.md
       items: 
+        - name: Overview of archiving third-party data
+          href: archiving-third-party-data.md
         - name: Set up a connector to archive Facebook data
           href: archive-facebook-data-with-sample-connector.md
         - name: Set up a connector to archive Twitter data
@@ -273,8 +278,9 @@
     - name: Dispose data
       href: disposition-reviews.md
     - name: Manage inactive mailboxes
-      href: inactive-mailboxes-in-office-365.md
       items: 
+        - name: Overview of inactive mailboxes
+          href: inactive-mailboxes-in-office-365.md
         - name: Create and manage inactive mailboxes
           href: create-and-manage-inactive-mailboxes.md
         - name: Change the hold duration for an inactive mailbox
@@ -618,14 +624,15 @@
         - name: Preserve Bcc and expanded distribution group recipients
           href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage data investigations
-  href: overview-data-investigations.md
   items: 
+    - name: Overview of data investigations
+      href: overview-data-investigations.md
     - name: Manage a data spillage incident
       href: manage-data-spillage-incidents.md
+    - name: Assign permissions for data investigations
+      href: data-investigations-permissions.md
     - name: Create a new investigation
       href: create-new-investigation.md
-    - name: Assign permissions for data investigations
-      href: permissions.md
     - name: Search for data in an investigation
       href: search-for-data.md
       items: 
@@ -695,27 +702,33 @@
           href: manage-jobs.md
 - name: Manage auditing and alert policies
   items: 
-    - name: Search the audit log
-      href: search-the-audit-log-in-security-and-compliance.md
-    - name: Advanced Audit
-      href: advanced-audit.md
-    - name: Turn audit log search on or off
-      href: turn-audit-log-search-on-or-off.md
-    - name: Manage mailbox auditing
+    - name: Unified auditing
+      items:
+        - name: Search the audit log
+          href: search-the-audit-log-in-security-and-compliance.md
+        - name: Turn audit log search on or off
+          href: turn-audit-log-search-on-or-off.md
+        - name: Detailed properties in the audit log
+          href: detailed-properties-in-the-office-365-audit-log.md
+        - name: Export, configure, and view audit log records
+          href: export-view-audit-log-records.md
+        - name: Use the audit log to investigate common issues
+          href: auditing-troubleshooting-scenarios.md
+        - name: Use sharing auditing in the audit log
+          href: use-sharing-auditing.md
+        - name: Search for eDiscovery activities in the audit log
+          href: search-for-ediscovery-activities-in-the-audit-log.md
+    - name: Mailbox auditing
       href: enable-mailbox-auditing.md
-    - name: Manage audit log retention policies
-      href: audit-log-retention-policies.md
-    - name: Detailed properties in the audit log
-      href: detailed-properties-in-the-office-365-audit-log.md
-    - name: Export, configure, and view audit log records
-      href: export-view-audit-log-records.md
-    - name: Use the audit log to investigate common issues
-      href: auditing-troubleshooting-scenarios.md
-    - name: Use sharing auditing in the audit log
-      href: use-sharing-auditing.md
-    - name: Search for eDiscovery activities in the audit log
-      href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: Manage alert policies
+    - name: Advanced Audit
+      items:
+        - name: Overview of Advanced Audit
+          href: advanced-audit.md
+        - name: Manage audit log retention policies
+          href: audit-log-retention-policies.md
+        - name: Use Advanced Audit to investigate compromised accounts
+          href: mailitemsaccessed-forensics-investigations.md
+    - name: Alert policies
       href: alert-policies.md
 - name: Manage compliance risks
   items: 

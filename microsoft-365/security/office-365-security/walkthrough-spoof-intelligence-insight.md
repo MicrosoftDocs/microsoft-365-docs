@@ -45,7 +45,7 @@ This is one of several walkthroughs for the Security &amp; Compliance Center. To
 
 The insight on the dashboard shows you information like this.
   
-![Screenshot of spoof intelligence insight](../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+![Screenshot of spoof intelligence insight](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
   
 This insight has two modes:
   
@@ -77,7 +77,7 @@ The **Spoof Intelligence Insight** page appears showing you a list of senders th
     
 2. Select an item in the table to open a details pane that contains rich information about the domain pair, including why we caught this, what you need to do, a domain summary, WhoIs data about the sender, and similar emails we have seen in your tenant from the same sender. From here, you can also choose to add or remove the domain pair from the **AllowedToSpoof** safe sender list. 
   
-![Screenshot of a domain in the spoof intelligence insight details pane](../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+![Screenshot of a domain in the spoof intelligence insight details pane](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
   
 ## Add or remove a domain from the AllowedToSpoof safe sender list
 

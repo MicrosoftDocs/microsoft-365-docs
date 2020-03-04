@@ -30,7 +30,12 @@ To be enrolled in Microsoft Managed Desktop a device must be one of the followin
 
 | Model  | Minimum specs  | Additional requirements  | Retirement date |
 |---------|---------|---------|---------|
-| HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required  | **Feb 15, 2023** |
+| Dell Latitude 5490| 256 GB / Intel i5 / 8 GB RAM | IR camera required | **Jan 9, 2023** |
+| Dell Latitude 7390 7390 2-in-1 / 7490 | 256 GB / Intel i5 / 8 GB RAM   | IR camera required | **Jan 9, 2023** |
+|HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required  | **Feb 15, 2023** |
+|HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS03AV, IR camera required |**May 14, 2023** |
+|HP EliteBook x360 1030 G3| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required |**May 14, 2023** |
+|HP EliteBook x360 1040 G5| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required | **Oct 23, 2023** |
 |Surface Book 2| 256 GB / Intel i5 / 8 GB RAM | None | **November 16, 2022** |
 |Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | None | **May 20, 2022** |
 |Surface Pro| 256 GB / Intel i5 / 8 GB RAM | None | **Jun 15, 2022** |
@@ -40,7 +45,7 @@ In addition, the device must also:
 
 - Have an image approved by Microsoft Managed Desktop. When you order devices, make sure you specify that they are being used with Microsoft Managed Desktop.
 - Not have completed the Windows first-run experience.
-- Be registered with Microsoft Managed Destkop using the [Device Registration](https://aka.ms/mmddrhelp) feature
+- Be registered with Microsoft Managed Desktop using the [Device Registration](https://aka.ms/mmddrhelp) feature
 
 #### Additional help
 

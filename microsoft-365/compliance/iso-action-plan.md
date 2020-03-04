@@ -21,7 +21,7 @@ The International Organization for Standardization (ISO) is an independent nongo
 
 ISO/IEC 27001 is the international standard for implementing an information security management system (ISMS). An ISMS describes the necessary methods used and evidence associated with requirements that are essential for the reliable management of information asset security in any type of organization.  
 
-This article includes a prioritized action plan you can follow as you work to meet the requirements of ISO/IEC 27001. This action plan was developed in partnership with Protiviti, a Microsoft partner specializing in regulatory compliance. Learn more about how to use this action plan at Microsoft Ignite by attending this session: [Chart your Microsoft 365 compliance path and information protection strategy](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions), presented by Maithili Dandige (Microsoft) and Antonio Maio (Protiviti).
+This article includes a prioritized action plan you can follow as you work to meet the requirements of ISO/IEC 27001. This action plan was developed in partnership with Protiviti, a Microsoft partner specializing in regulatory compliance. Learn more about how to use this action plan at Microsoft Ignite by attending this session: [Chart your Microsoft 365 compliance path and information protection strategy](https://myignite.techcommunity.microsoft.com/videos/65720), presented by Maithili Dandige (Microsoft) and Antonio Maio (Protiviti).
 
 ## Action plan outcomes
 

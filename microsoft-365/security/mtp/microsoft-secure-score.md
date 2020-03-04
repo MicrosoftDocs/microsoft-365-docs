@@ -92,7 +92,7 @@ To help you the information you need more quickly, Microsoft improvement actions
 
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
-![Secure Score homepage](../media/secure-score/homepage-original.png)
+![Secure Score homepage](../../media/secure-score/homepage-original.png)
 *Figure 1: Microsoft Secure Score overview page*
 
 ## Take action to improve your score
@@ -117,7 +117,7 @@ When you select a specific improvement action, a fly out appears. To complete th
 
 4. Select **Review** because the improvement action requires you to regularly review a part of your environment to gain and retain points. For example, mailbox forwarding rules should be reviewed on a weekly basis to make sure data is not being exfiltrated from your network. You do not need to make any changes, but an action will need to be performed. If you regularly review the rules, you will receive the points. If not, the score is reduced.
 
-![Secure Score improvement action example](../media/secure-score/secure-score1x450.png) ![Secure Score review improvement action example](../media/secure-score/secure-score2x450.png)
+![Secure Score improvement action example](../../media/secure-score/secure-score1x450.png) ![Secure Score review improvement action example](../../media/secure-score/secure-score2x450.png)
 
 *Figures 2 & 3: Improvement action flyouts*
 
@@ -133,21 +133,19 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 To make Microsoft Secure Score a better representative of your security posture we have made some changes.
 
+To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
+
 ### Removed “not scored” improvement actions
 
-One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable.  
+One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable.  
 
 For these reasons, all improvement actions that were not scored have been removed. No action is needed on your part.
 
-## What's coming?
+### Removed device improvement actions
 
-To make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
+After an evaluation of the Microsoft Secure Score device category of improvement actions, it was determined that those actions currently assess the policy state and not the configuration state of devices. Since configuration is directly tied to security posture, the existing device actions were determined to not fully represent organizational posture.  We will be removing the current actions in the device category as we work to provide a set of recommendations which directly use diagnostic data to more fully represent device security posture.
 
-### Removing improvement actions from Intune
-
-After an evaluation of the Microsoft Secure Score improvement actions supplied from Intune, it was decided that they do not provide a useful representation of the security posture of devices in organizations. Instead of focusing on policies, we are working to bring in security controls that directly assess the configuration state of the devices.
-
-The following Intune improvement actions will be removed:
+The following improvement actions have been removed:
 
 - Enable Microsoft Intune Mobile Device Management
 - Create a Microsoft Intune Compliance Policy for Android
@@ -170,46 +168,37 @@ The following Intune improvement actions will be removed:
 - Require all devices to have advanced security configurations
 - Review blocked devices report weekly
 
-### Removing improvement actions that don't meet expectations for reliable measurement
+### Removed improvement actions that don't meet expectations for reliable measurement
 
-To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement actions.
+To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we have removed the following improvement actions:
 
 - Turn on audit data recording
 - Discover risky and non-compliant shadow IT applications
 - Review permissions & block risky OAuth applications connected to your environment
 - Set up versioning on SharePoint online document libraries
-- Store user documents in OneDrive for Business
-- Do not allow mailbox delegation
-- Allow anonymous guest sharing links for sites and docs
-- Set up Office 365 ATP Safe Attachment policies
-- Set up Office 365 Safe Links to verify URLs
 
 ### MFA improvement action updates
 
-To reflect the need for businesses to ensure the upmost security while applying policies that work with their business, Microsoft Secure Score is removing three improvement actions centered around multi-factor authentication, and adding two.
+To reflect the need for businesses to ensure the upmost security while applying policies that work with their business, Microsoft Secure Score has removed three improvement actions centered around multi-factor authentication, and added two.
 
-The three that will be removed:
+Removed improvement actions:
 
 - Register all users for multi-factor authentication
 - Require MFA for all users
 - Require MFA for Azure AD privileged roles
 
-New improvement actions added:
+Added improvement actions:
 
 - Ensure all users can complete multi-factor authentication for secure access
 - Require MFA for administrative roles
 
- These new improvement actions will require registering your users or admins for multi-factor authentication (MFA) across your directory and establishing the right set of policies that fit your organizational needs. The main goal is have flexibility while ensuring all your users and admins can authenticate with multiple factors or risk-based identity verification prompts. That can take the form of setting security defaults that let Microsoft decide when to challenge users for MFA, or having multiple policies that apply scoped decisions.
+ These new improvement actions require registering your users or admins for multi-factor authentication (MFA) across your directory and establishing the right set of policies that fit your organizational needs. The main goal is have flexibility while ensuring all your users and admins can authenticate with multiple factors or risk-based identity verification prompts. That can take the form of having multiple policies that apply scoped decisions, or setting security defaults (coming March 16th) that let Microsoft decide when to challenge users for MFA.
 
-### Removing “review” improvement actions
+### Removed “review” improvement actions
 
 One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Review improvement actions are not measured to the same standard as other improvement actions.  
 
-For these reasons, all improvement actions that required a review cadence will be temporarily removed. No action is needed on your part.
-
-### Simplification of the point system
-
-To standardize points across multiple experiences, each Secure Score improvement action point total will be updated to be worth 10 points or less. It is necessary be more consistent across the wide breather of security controls that we have today and ones that we will be adding in the future. While this is a significant change and you will see a drop in point totals, there will be no change to your security posture.  
+For these reasons, all improvement actions that required a review cadence have been temporarily removed. No action is needed on your part.
 
 ### Preview features
 
@@ -220,6 +209,7 @@ The following features will be included in the [preview release](microsoft-secur
 * Better tracking and monitoring for score regressions
 * Filter, tag, search, and group your improvement actions
 * Manage towards your future goals using score projections and planned actions
+* Simplification of the points system
 * And more!
 
 ## We want to hear from you

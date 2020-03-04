@@ -25,7 +25,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 The `AlertEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about Microsoft Defender ATP alerts. Use this reference to construct queries that return information from this table.
 

@@ -31,7 +31,7 @@ highlightedContent:
       itemType: learn
       url: https://support.office.com/modernworkplace
       # Card
-    - title: Training for small businesses
+    - title: Set up your business in the cloud
       itemType: learn
       url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
     # Card
@@ -55,6 +55,10 @@ additionalContent:
     - title: Get help with Microsoft 365
       summary: Select a card to learn more about Microsoft 365. # 160 chars (optional)
       items:
+         # Card
+        - title: Microsoft 365 admin center
+          summary: Set up and manage Office 365 and Microsoft 365 services for your organization. 
+          url: ./admin/admin-home.md
         # Card
         - title: Microsoft 365 Business
           summary: Designed for small and midsize businesses. Run your business with the latest version of Windows and Office apps like Excel and Outlook. Take advantage of data protection and security that extends to all your business devices. 

@@ -24,7 +24,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-schema-tables.md) specifically structured for advanced hunting. To understand these concepts better, run your first query.
 
@@ -48,7 +48,7 @@ DeviceProcessEvents
 
 This is how it will look like in advanced hunting.
 
-![Image of Microsoft Defender ATP advanced hunting query](../images/advanced-hunting-query-example.png)
+![Image of Microsoft Defender ATP advanced hunting query](../../media/advanced-hunting-query-example.png)
 
 The query starts with a short comment describing what it is for. This helps if you later decide to save your query and share it with others in your organization.
 
@@ -125,7 +125,7 @@ Data in advanced hunting tables are generally classified into the following data
 
 The **Get started** section provides a few simple queries using commonly used operators. Try running these queries and making small modifications to them.
 
-![Image of advanced hunting window](../images/advanced-hunting-get-started.png)
+![Image of advanced hunting window](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
 >Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the GitHub query repository.

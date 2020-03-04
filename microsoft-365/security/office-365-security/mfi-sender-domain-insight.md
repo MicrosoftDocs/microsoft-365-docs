@@ -31,15 +31,15 @@ Messages that don't meet the criteria will not be attributed to the organization
 
 The **Fix sender domain** insight shows you email from your on-premises environment that doesn't meet the criteria, helps you to identify potentially compromised machines and user accounts in your on-premises email environment, and helps you to take remediation actions.
 
-![The Fix sender domain insight in the mail flow dashboard in the Security & Compliance Center](../media/sender-domain-insight-selected.png)
+![The Fix sender domain insight in the mail flow dashboard in the Security & Compliance Center](../../media/sender-domain-insight-selected.png)
 
 When you click **View details**, you are taken to another widget with more details as shown in the following diagram:
 
-![The Details widget in the Fix sender domain insight](../media/sender-domain-view-details.png)
+![The Details widget in the Fix sender domain insight](../../media/sender-domain-view-details.png)
 
 You'll see the inbound connector that was used to deliver the messages to Office 365. You can also click **view sample message IDs** to see details for the messages that were sent from your on-premises email environment. Because these messages were rejected by Office 365, you can't use message trace, but you can use the sample message ids to track the messages in your on-premises email environment.
 
-![View sample message ids in the Fix sender domain insight](../media/sender-domain-view-sample-message-ids.png)
+![View sample message ids in the Fix sender domain insight](../../media/sender-domain-view-sample-message-ids.png)
 
 ## See also
 
