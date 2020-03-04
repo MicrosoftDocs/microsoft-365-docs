@@ -36,12 +36,12 @@ If you don't see the **Switch plans** button, your plan can't be switched automa
   
 ::: moniker range="o365-worldwide"
 
- **Need something else?** [Buy another subscription](../buy-another-subscription.md) | [Cancel your subscription](cancel-your-subscription.md) | [Subscriptions and billing](../subscriptions-and-billing.md) | [Call support](../../admin/contact-support-for-business-products.md)
+ **Need something else?** [Buy another subscription](../buy-another-subscription.md) | [Cancel your subscription](cancel-your-subscription.md) | [Subscriptions and billing](../index.yml) | [Call support](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Need something else?** [Buy another subscription](../buy-another-subscription.md) | [Cancel your subscription](cancel-your-subscription.md) | [Subscriptions and billing](../subscriptions-and-billing.md) | [Call support](../../admin/contact-support-for-business-products.md)
+ **Need something else?** [Buy another subscription](../buy-another-subscription.md) | [Cancel your subscription](cancel-your-subscription.md) | [Subscriptions and billing](../index.yml) | [Call support](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
