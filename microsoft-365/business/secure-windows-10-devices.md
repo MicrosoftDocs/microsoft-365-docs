@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: "Learn about default and other settings to secure Windows 10 devices. "
+description: "Learn about configuring the settings of the default device policy that any Windows 10 device will receive upon signing in to their work or school account."
 ---
 
 # Secure Windows 10 devices
