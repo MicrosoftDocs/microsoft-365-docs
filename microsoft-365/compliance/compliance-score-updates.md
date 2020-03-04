@@ -18,29 +18,43 @@ description: "Details on future updates for Microsoft Compliance Score (preview)
 
 # Microsoft Compliance Score (Preview) updates
 
-The public preview of Microsoft Compliance Score provides you with early access to upcoming functionality and updates. This article provides more details about future updates to [Compliance Score](compliance-score.md) and [Compliance Manager](compliance-manager-overview.md).
+The public preview of [Microsoft Compliance Score](compliance-score.md) provides you with early access to upcoming functionality and updates. This article provides details about future updates to Compliance Score and [Compliance Manager](compliance-manager-overview.md), both of which share the same backend (learn more about the [relationship between Compliance Score and Compliance Manager](compliance-score#relationship-to-compliance-manager)).
 
 ## Improved template creation and update processes
 
-The process for creating a custom template based off of pre-configured templates in Compliance Manager will be simplified. This new streamlined experience makes it easier for you to bring your own assessments into Compliance Score by replacing a multi-step process.
+The process for importing, modifying, and exporting templates so that you can create your own custom templates will be simplified. The new experience makes it easier for you to bring your own assessments into Compliance Score and keep them up-to-date.
 
 ### The current process
 
-Right now, when you want to create your own template in Compliance Manager, you go to your **Templates** page, select **+ Add template**, select a template to copy, select dimensions, then upload your template information. This screen is show in image below:
+When you want to create your own template in Compliance Manager, you currently go to your **Templates** page, select **+ Add template**. Then, as shown in the screen image below, check the box to **Copy from an existing template**, select a template to copy, select dimensions, then upload your template information.
 
-![Compliance Score - dashboard](../media/compliance-score-template-update-old.png "Current template update process view")
+![Compliance Score - dashboard](../media/compliance-score-template-update-old.png "Current template copy process")
 
-When you want to modify your template, you must select from among three actions: **Add custom action**, **Attach custom action**, and **Add custom control** and continue further along the process.
+In order to modify your template, you must select from among three actions: **Add custom action**, **Attach custom action**, and **Add custom control** and continue further along the process. When there are updates to the underlying (for example, when there's an update to a regulatory framework), you need to export, modify, and import your custom template all over again.
 
-### The updated process
+### What's changing
 
-This new process replaces the **copy** functionality of Compliance Manager. In the new process, you will go to your **Templates** page and select **+ Add Template**, and on **Template** flyout pane select the new **Create extension from global template** checkbox. From the drop-down menu, you select the pre-configured template as the basis of your template, then in one step upload an Excel file that contains the customizations for your own controls and actions. Each time the original assessment is updated through the versioning process (outlined below), your customized assessment will inherit those updates *and* retain your custom controls.
+In the next release of Compliance Score and Compliance Manager, a new process will replace the **copy**  and custom control functionality. You will be able to export an existing template, make changes to it, and import it back into Compliance Manager
 
-![Compliance Score - dashboard](../media/compliance-score-template-update-new.png "Updated template update process view")
+In the new process, you will simply go to your **Templates** page in Compliance Manager, select **+ Add template**, and on **Template** flyout pane, select the *new* **Create extension from global template** checkbox.
+
+From the drop-down menu, you select the pre-configured template as the basis of your template, then in one step upload an Excel file that contains the customizations for your own controls and actions.
+
+![Compliance Score - dashboard](../media/compliance-score-template-update-new.png "New template creation process")
+
+Each time the original assessment is updated through the versioning process (outlined below), your customized assessment will inherit those updates *and* retain your custom controls.
 
 ## Versioning notice and control
 
-We are providing an easy way to understand and accept updates to Compliance Score assessments. At the GA release, all assessments will receive the most recent updates. From that point onward, whenever an update is available for an assessment's template or an improvement action, an alert icon notifies you that an update is ready and prompts you to either accept or defer the update.
+The next release of Compliance Score and Compliance Manager will contain the latest updates for all assessment frameworks and provide a clear way for users to understand and accept all future updates. 
+
+Whenever an update is available for an assessment's template or an improvement action, an alert icon notifies you that an update is ready and prompts you to either accept or defer the update.
+
+Below is an example of the versioning alert for an assessment:
+![Compliance Score - dashboard](../media/compliance-score-assessment-versioning.png "Assessment version update alert")
+
+Below is an example of the versioning alert for an improvement action:
+![Compliance Score - dashboard](../media/compliance-score-action-versioning.png "Action version update alert")
 
 ## Common actions will synch status across groups
 
@@ -48,8 +62,4 @@ If your organization has multiple groups of assessments, the behavior of actio
 
 ## Language support
 
-Compliance Score will now be available in the following languages in addition to English: Chinese (Simlified), Chinese (Traditional), French, German, Italian, Japanese, Korean, Portuguese (Brazil), Russian, and Spanish.
-
-## Resources
-
-Learn more about Compliance Score.
+Compliance Score will now be available in the following languages in addition to English: Chinese (Simplified), Chinese (Traditional), French, German, Italian, Japanese, Korean, Portuguese (Brazil), Russian, and Spanish.
