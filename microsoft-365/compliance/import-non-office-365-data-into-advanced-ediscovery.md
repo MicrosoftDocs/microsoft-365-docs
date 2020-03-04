@@ -17,7 +17,7 @@ ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: "How to steps to import content that is not stored in O365 into an Azure blob so that it can be analyzed with AeD"
 ---
 
-# Import non-Office 365 content for Advanced eDiscovery analysis
+# Import non-Office 365 content for Advanced eDiscovery (classic) analysis
 
 Not all documents that you may need to analyze with Office 365 Advanced eDiscovery will live in Office 365. With the Non-Office 365 content import feature in Advanced eDiscovery you can upload documents that don't live in Office 365 (except PST files) into a case linked, Azure storage blob and analyze them with Advanced eDiscovery. This procedure shows you how to bring your non-Office 365 documents into Advanced eDiscovery for analysis.
   
