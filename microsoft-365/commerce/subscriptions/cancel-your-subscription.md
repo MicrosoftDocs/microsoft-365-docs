@@ -32,8 +32,6 @@ description: "Learn how to cancel your Office 365 for business or Microsoft 365 
 > [!NOTE]
 > If you have multiple subscriptions to the same product, such as Office 365 Enterprise E3, cancelling one of them will not impact the purchased licenses or services inside the other subscriptions.
 
-If you cancel a subscription before the end of your term, the subscription moves directly into a disabled state. For most subscriptions, in most countries and regions, the disabled state lasts 90 days. Admins can still access and back up data for their organization while the subscription is in the disabled state, but we recommend that admins [back up their data](back-up-data-before-switching-plans.md) before they cancel a subscription, especially if it's their only subscription. Any data that you leave behind may be deleted after 90 days and will be deleted no later than 180 days after cancellation.
-
 ## Steps to cancel your subscription
 
 If you added your own domain name to use with your subscription, you must remove the domain before you cancel your subscription. For more information, see [Remove a domain from Office 365](../../admin/get-help-with-domains/remove-a-domain.md).
@@ -85,7 +83,11 @@ If you added your own domain name to use with your subscription, you must remove
 
 ::: moniker-end
 
-## What to expect for you and your users if you cancel a subscription
+## What happens when you cancel a subscription
+
+If you cancel a subscription before the end of your term, the subscription moves directly into a disabled state. For most subscriptions, in most countries and regions, the disabled state lasts 90 days. Admins can still access and back up data for their organization while the subscription is in the disabled state, but we recommend that admins [back up their data](back-up-data-before-switching-plans.md) before they cancel a subscription, especially if it's their only subscription. Any data that you leave behind may be deleted after 90 days and will be deleted no later than 180 days after cancellation.
+
+### What to expect for you and your users if you cancel a subscription
   
 - **Admin access** Admins can still sign in and access the admin center, and buy other subscriptions as needed. As a global or billing admin, you have 90 days to [reactivate the subscription](reactivate-your-subscription.md) with all data intact. 
     
@@ -138,5 +140,3 @@ If you canceled your subscription, and didn't move users to a different subscrip
 [Renew your subscription](renew-your-subscription.md)
 
 [Reactivate your subscription](reactivate-your-subscription.md)
-
-[Switch to a different plan or subscription](switch-to-a-different-plan.md)
