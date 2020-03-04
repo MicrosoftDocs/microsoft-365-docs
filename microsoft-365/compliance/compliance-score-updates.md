@@ -18,27 +18,27 @@ description: "Details on future updates for Microsoft Compliance Score (preview)
 
 # Microsoft Compliance Score (Preview) updates
 
-The public preview of [Microsoft Compliance Score](compliance-score.md) provides you with early access to upcoming functionality and updates. This article provides details about future updates to Compliance Score and [Compliance Manager](compliance-manager-overview.md), both of which share the same backend (learn more about the [relationship between Compliance Score and Compliance Manager](compliance-score#relationship-to-compliance-manager)).
+The public preview of [Microsoft Compliance Score](compliance-score.md) provides you with early access to upcoming functionality and updates. This article provides details about future updates to Compliance Score and [Compliance Manager](compliance-manager-overview.md), which share the same backend (learn more about the [relationship between Compliance Score and Compliance Manager](compliance-score#relationship-to-compliance-manager)).
 
 ## Improved template creation and update processes
 
-The process for importing, modifying, and exporting templates so that you can create your own custom templates will be simplified. The new experience makes it easier for you to bring your own assessments into Compliance Score and keep them up-to-date.
+The process for importing, modifying, and exporting templates for assessments will be simplified. The new experience makes it easier for you to bring your own assessments into Compliance Score and keep them up-to-date.
 
 ### The current process
 
-When you want to create your own template in Compliance Manager, you currently go to your **Templates** page, select **+ Add template**. Then, as shown in the screen image below, check the box to **Copy from an existing template**, select a template to copy, select dimensions, then upload your template information.
+When you want to create a template in Compliance Manager, there are two ways to do it: by copying an existing template, or by importing template data from Excel into a new template. For example, when you go your **Templates** page, you select **+ Add template**, and then create a brand new template by entering a name, selecting a dimension, and uploading a spreadsheet with template information. Or you have the option to check the box to **Copy from an existing template**, select a template to copy, and verify dimensions, as shown in the image below.
 
 ![Compliance Score - dashboard](../media/compliance-score-template-update-old.png "Current template copy process")
 
-In order to modify your template, you must select from among three actions: **Add custom action**, **Attach custom action**, and **Add custom control** and continue further along the process. When there are updates to the underlying (for example, when there's an update to a regulatory framework), you need to export, modify, and import your custom template all over again.
+If you want to modify, or customize, your template, you must select it from your templates list, select **Add custom control**, and continue  along the process ([view detailed process](/working-with-compliance-manager.md#templates)). When there are updates to the underlying (for example, when there's an update to a regulatory framework), you need to export, modify, and import your custom template again.
 
 ### What's changing
 
-In the next release of Compliance Score and Compliance Manager, a new process will replace the **copy**  and custom control functionality. You will be able to export an existing template, make changes to it, and import it back into Compliance Manager
+There will be a new, simpler process for export an existing template, making changes to it, and importing it back into Compliance Manager. The new process replaces **Copy from an existing template** and **Add custom control** functions.
 
-In the new process, you will simply go to your **Templates** page in Compliance Manager, select **+ Add template**, and on the **Template** flyout pane, select the *new* **Create extension from global template** checkbox.
+In the new process, you will simply go to your **Templates** page in Compliance Manager, select **+ Add template**, and on the **Template** flyout pane, select the **Create extension from global template** checkbox.
 
-From the drop-down menu, you select the pre-configured template as the basis of your template, then in one step upload an Excel file that contains the customizations for your own controls and actions.
+From the drop-down menu, you select the pre-configured template as the basis of your template, then upload an Excel file that contains the customizations for your own controls and actions.
 
 ![Compliance Score - dashboard](../media/compliance-score-template-update-new.png "New template creation process")
 
@@ -46,7 +46,7 @@ Each time the original assessment is updated through the versioning process (out
 
 ## Versioning notice and control
 
-The next release of Compliance Score and Compliance Manager will contain the most recent updates for all assessment frameworks and provide a clear way for users to understand and accept all future updates. 
+The next release of Compliance Score and Compliance Manager will contain the most recent updates for all assessment frameworks and provide a clear way to understand and accept all future updates.
 
 Whenever an update is available for an assessment's template or an improvement action, an alert icon notifies you that an update is ready and prompts you to either accept or defer the update.
 
