@@ -42,7 +42,7 @@ And if you're interested in what's new in other admin centers:
 
 We received a lot of feedback from partners and admins about the challenges of managing multiple Microsoft cloud orgs. One of our first multi-org management features is the **Organization switcher**, which lets you change between the orgs that you manage in just 2 clicks.
 > [!TIP]
-> You don't have to do anything to make the organization switcher appear as long as you are the Partner of record for at least one other organization or if you've set up a business-to-business (B2B) connection.
+> You don't have to do anything to make the organization switcher appear as long as you are the Partner of record for at least one organization.
 
 1. In the Microsoft 365 admin center, select the org name.
 ![Screen capture: top of the Home page showing organization profile name with the switcher icon.](../media/MAC-Organization-switcher.png)
@@ -65,7 +65,7 @@ A couple of changes in the groups area this month:
 
 - **Docs move**: We combined the Office 365 admin web articles with the Microsoft 365 content and you might've noticed the new URL. For example, this article used to be hosted at: **docs.microsoft.com/Office365/Admin/whats-new-in-preview**, but the URL is now: **docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**. If you've bookmarked pages, you should update your links; however, content links will be redirected to the new content repo.
 
-## January 2020 - Happy New Year!
+## January 2020 - Happy New Year
 
 > [!NOTE]
 > Did you know that there's a [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096) video series on YouTube? It highlights the latest features that we've rolled out to users. Every month, we'll start linking to the latest episode in the [Videos, training, and docs](#videos-training-and-docs) section. <br> <br> Here's the latest episode: [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
@@ -205,7 +205,7 @@ For more info, see [What's new in the SharePoint admin center](https://docs.micr
 
 We are ramping up for some exciting feature releases at Ignite 2019, so we're only announcing a few new features that were released in September. But stay tuned for next month's article, it'll be published on the first day of Ignite!
 
-### Featured Feedback Fix – The option to convert the deleted user’s mailbox to a shared mailbox is back!
+### Featured Feedback Fix – The option to convert the deleted user’s mailbox to a shared mailbox is back
 
 We heard your feedback loud and clear and we brought back the ability to give someone else access to a deleted user’s mailbox by converting it to a **shared mailbox**. Adding this back to the delete user wizard lets you decide what to do with the data:
 
@@ -324,12 +324,12 @@ Now when you search for shared mailboxes, contacts, resources, and mailbox permi
 This month, we updated **Block user**, **Reset password**, **Contacts** list view, **Groups** list view, and the **Groups** details pages to the new admin center style.
 
 - With the new **Groups** list view, you get richer data about your groups, and you can customize the way you see your data -- and the groups list remembers how you want to see your data. For example, you can now filter on **Groups with Teams** to see if your groups are part of a Team and you can add the **Teams status** column.
-- The groups list also brings with it all the improvements we made to the list experience in user management, including quick actions and the contextual command bar. 
+- The groups list also brings with it all the improvements we made to the list experience in user management, including quick actions and the contextual command bar.
 
 **Recommendations**<br>
 You might see a new recommendation pop-up in your admin center - we just added 4 new ones. Of course, you'll only see recommendations if we think it will benefit your organization. But don't wait until we show you the recommendation - you can add it from the card library.
 
-- **Password expiry** - We recommend that passwords get set to **Never expire**. And if your org has a different setting, you might just see this recommendation. 
+- **Password expiry** - We recommend that passwords get set to **Never expire**. And if your org has a different setting, you might just see this recommendation.
 - **Too many global admins** - Because having too many global admins is a security threat, if you have more than 4 global admins, you'll see this recommendation. We suggest giving users only the access they need to get their job done.
 - **Intune device protection** - If your licenses include Intune and we detect that you either haven't finished setting up Intune or enrolled your devices, we'll recommend that you create an Intune policy to protect your organization's files when users access them from their mobile devices.
 - **Get monthly Office feature updates** - We've gotten feedback from our very small customers that when they get monthly Office feature updates, their users are  happier. So, if you're a very small business and you're currently get your Office feature updates every six months, you'll see this recommendation.
@@ -358,7 +358,7 @@ We've made a few more changes to **user management**, here's a quick list:
 - **Manage product licenses** changed position in the command bar.
 - Changing a user's photo is now easier. In **Active users** select a user, and then **Change photo** under their picture.
 
-### But wait! There's more...
+### But wait! There's more
 
 - There's a new setup banner on the **Home** page that you'll see if you haven't finished the set up steps, like adding a domain, adding users, and downloading the Office apps.
 - The **Group** list and details pane have been updated to the new style. Go to **Groups** > **Groups** to view the changes.
@@ -373,7 +373,7 @@ We've made a few more changes to **user management**, here's a quick list:
     - We've made it easier to locate your **Invoices** and understand any billing issues your account may be having. And now you can see your Bills in the web browser instead of having to download the PDF. Go to **Bills** > **Invoices**.
     - On the **Products & services** page, we now aggregate your subscription information if you've got multiple subscriptions of the same type.
 
-## March 2019 - We've officially released the admin center!
+## March 2019 - We've officially released the admin center
 
 Well, if you missed the exciting news, we've officially release the new and improved Microsoft 365 admin center! Here's the blog post where we announced it: [The new Microsoft 365 admin center available today](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/The-new-Microsoft-365-admin-center-available-today/ba-p/377870). For March, we'll rely on the blog post for you to check out the features released - plus, you can also read the post for the features that are getting released in the near future, which we're not allowed to do in core content.
 <br> ![Screen capture of the home page of the Microsoft 365 admin center.](../media/M365AC-HomePage.png) <br>
@@ -394,7 +394,7 @@ This month, we're going to focus on all the improvements we've made to the areas
   - Edit the service usage address for your subscriptions
   - And on the Inventory details page, we've added some notification enhancements, we link you to the actual page where you can do the work, and there are more actions on the inventory details card. Go to **Billing** > **Bills** > **View details** on any invoice.
 
-## January 2019 - Happy New Year!
+## January 2019 - Happy New Year
 
 - Still adding in **Services & add-ins** - We've updated more of the **Settings > Services & add-ins** pages. Try Integrated Apps or Reports to see the latest.
 - **Searching for improvements?** Look no further than the **Search** box in the command bar. It's been updated to let you search for tasks. For example, try "password reset" or "add a user".
