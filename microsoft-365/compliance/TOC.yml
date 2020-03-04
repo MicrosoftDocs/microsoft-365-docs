@@ -432,7 +432,7 @@
       items:
         - name: Overview of Advanced eDiscovery
           href: overview-ediscovery-20.md
-        - name: Get stared with Advanced eDiscovery
+        - name: Get started with Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
         - name: Work with custodians
           href: managing-custodians.md
