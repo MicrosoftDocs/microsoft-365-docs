@@ -36,7 +36,7 @@
           href: subscriptions/manage-self-service-purchases-admins.md
     - name: Manage licenses
       items:
-        - name: Manage licenses for your subscription
+        - name: Manage subscription licenses
           href: licenses/buy-licenses.md
         - name: Assign licenses to users
           href: ../admin/manage/assign-licenses-to-users.md
