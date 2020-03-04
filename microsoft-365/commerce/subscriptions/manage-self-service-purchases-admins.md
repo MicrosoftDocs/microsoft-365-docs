@@ -71,7 +71,7 @@ You can assign existing licenses or purchase additional subscriptions through ex
 
 5. Follow the steps in [View who has licenses for a self-service purchased subscription](#view-who-has-licenses-for-a-self-service-purchase-subscription) to export a list of users to reference in step 6.
 
-6. Assign licenses to everyone who has a license in the other subscription. For full steps, see [Assign licenses to users](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+6. Assign licenses to everyone who has a license in the other subscription. For full steps, see [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).
 
 7. Contact the person who bought the self-service purchase subscription and ask them to cancel it.
 
@@ -79,4 +79,4 @@ You can assign existing licenses or purchase additional subscriptions through ex
 
 For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).
 
-If you have questions or need help with self-service purchases, [contact support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+If you have questions or need help with self-service purchases, [contact support](../../admin/contact-support-for-business-products.md).
