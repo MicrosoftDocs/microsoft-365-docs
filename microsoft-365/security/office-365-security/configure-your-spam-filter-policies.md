@@ -96,7 +96,7 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
    - **Redirect to this email address**: This box is required and available only if you selected the **Redirect message to email address** as the action for a spam filtering verdict. Enter the email address where you want to deliver the message. You can enter multiple values separated by semicolons (;).
 
-   - **Safety Tips**: By default, Safety Tips are enabled, but you can disable them by clearing the **On** checkbox.
+   - **Safety Tips**: By default, Safety Tips are enabled, but you can disable them by clearing the **On** checkbox. For more information about Safety Tips, see [Safety tips in email messages in Office 365](safety-tips-in-office-365.md).
 
    **Zero-hour auto purge** settings: ZAP detects and takes action on messages that have already been delivered to Exchange Online mailboxes. For more information about ZAP, see [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md).
 
@@ -198,7 +198,7 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
     - **Recipient is**: Specifies one or more mailboxes, mail users, or mail contacts in your organization. Click in the **Add a tag** and start typing to filter the list. Click again the **Add a tag** box to select additional recipients.
 
-    - **Recipient is a member of**: Specifies one or more mail-enabled security groups in your organization. Click in the **Add a tag** and start typing to filter the list. Click again the **Add a tag** box to select additional recipients.
+    - **Recipient is a member of**: Specifies one or more groups in your organization. Click in the **Add a tag** and start typing to filter the list. Click again the **Add a tag** box to select additional recipients.
 
     - **Except if**: To add exceptions for the rule, click **Add a condition** three times to see all of the available exceptions. The settings and behavior are exactly like the conditions.
 

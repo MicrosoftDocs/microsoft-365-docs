@@ -37,7 +37,7 @@ The anti-spam settings in EOP are made of the following technologies:
   > [!NOTE]
   > Spoof intelligence uses connection filtering to create allow and block lists of senders who are spoofing your email domain. For more information, see [Learn more about spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
 
-- **Spam filtering (content filtering)**: EOP uses the spam filtering verdicts **Spam**, **High confidence spam**, **Bulk email**, **Phishing email** and **High confidence phishing email**. You can configure what to do with messages based on these spam filtering verdicts, and the end-user notification options for messages that were quarantined instead of delivered. For more information, see [Configure anti-spam policies in Office 365](configure-the-anti-spam-policies.md).
+- **Spam filtering (content filtering)**: EOP uses the spam filtering verdicts **Spam**, **High confidence spam**, **Bulk email**, **Phishing email** and **High confidence phishing email** to classify messages. You can configure the actions to take based on these verdicts, and you can configure the end-user notification options for messages that were quarantined instead of delivered. For more information, see [Configure anti-spam policies in Office 365](configure-the-anti-spam-policies.md).
 
  **Outbound spam filtering**: Office 365 also checks to make sure that your users don't send spam. For instance, a user's computer may get infected with malware that causes it to send spam messages, so we build protection against that called *outbound filtering*. You can't turn off outbound filtering, but you can configure the settings described in [Configure the outbound spam policy](configure-the-outbound-spam-policy.md). If you're concerned about too much spam in Office 365, use outbound filtering to help prevent spam in Exchange Online.
 
@@ -48,21 +48,21 @@ The anti-spam settings in EOP are made of the following technologies:
 
 ### Anti-spam policies in the Office 365 Security & Compliance Center vs Exchange Online PowerShell or Exchange Online Protection PowerShell
 
-The basic elements of a anti-spam policy in EOP are:
+The basic elements of an anti-spam policy in EOP are:
 
-- **The spam filter policy**: Specifies the recipient notification, sender and admin notification, ZAP, and the Common Attachment Types Filter settings.
+- **The spam filter policy**: Specifies the actions for spam filtering verdicts and the notification options.
 
 - **The spam filter rule**: Specifies the priority and recipient filters (who the policy applies to) for a spam filter policy.
 
 The difference between these two elements isn't obvious when you manage anti-spam polices in the Security & Compliance Center:
 
-- When you create an anti-spam policy in the Security & Compliance Center, you're actually creating a spam filter rule and the associated anti-spam policy at the same time using the same name for both.
+- When you create an anti-spam policy in the Security & Compliance Center, you're actually creating a spam filter rule and the associated spam filter policy at the same time using the same name for both.
 
-- When you modify a anti-spam policy in the Security & Compliance Center, settings related to the name, priority, enabled or disabled, and recipient filters modify the spam filter rule. All other settings modify the associated spam filter policy.
+- When you modify an anti-spam policy in the Security & Compliance Center, settings related to the name, priority, enabled or disabled, and recipient filters modify the spam filter rule. All other settings modify the associated spam filter policy.
 
 - When you remove an anti-spam policy from the Security & Compliance Center, the spam filter rule and the associated spam filter policy are removed.
 
-In Exchange Online PowerShell or Exchange Online Protection PowerShell, the difference between anti-spam policies and spam filter rules is apparent. You manage spam filter policies by using the **\*-HostedContentFilterPolicy** cmdlets, and you manage spam filter rules by using the **\*-HostedContentFilterRule** cmdlets.
+In Exchange Online PowerShell or standalone Exchange Online Protection PowerShell, the difference between anti-spam policies and spam filter rules is apparent. You manage spam filter policies by using the **\*-HostedContentFilterPolicy** cmdlets, and you manage spam filter rules by using the **\*-HostedContentFilterRule** cmdlets.
 
 - In PowerShell, you create the spam filter policy first, then you create the spam filter rule that identifies the policy that the rule applies to.
 
@@ -81,16 +81,6 @@ Every organization has a built-in anti-spam policy named Default that has these 
 - The policy named Default is the default policy (the **IsDefault** property has the value `True`), and you can't delete the default policy.
 
 To increase the effectiveness of spam filtering, you can create custom anti-spam policies with stricter settings that are applied to specific users or groups of users.
-
-
-
-## Extra information if you receive too much spam in Office 365
-
-The following video provides an overview of configuring spam filtering in EOP.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
-
-For more details, see the [Configure your spam filter policies](configure-your-spam-filter-policies.md) topic.
 
 ## Beyond the basics: More ways to prevent spam in Office 365
 
