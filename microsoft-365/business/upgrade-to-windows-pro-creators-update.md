@@ -19,11 +19,12 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: "Learn how to upgrade Windows devices to Windows 10 Pro. "
+description: "Discover several ways you can upgrade your Windows devices to Windows 10 Pro to enjoy more advanced security and business networking features."
 ---
 
 # Upgrade Windows devices to Windows 10 Pro
