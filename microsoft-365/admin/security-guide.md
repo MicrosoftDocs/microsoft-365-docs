@@ -11,10 +11,11 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.custom:
 - SMB_SuccessCenter
+- MARVEL_SEO_MAR
 search.appverid:
 - MET150
 - MOE150
-description: "Learn easy ways to protect your small business from security threats."
+description: "Learn about security threats your business faces and easy ways you and your employees can protect your data, accounts, and devices."
 ---
 
 # Security info graphic for small businesses
