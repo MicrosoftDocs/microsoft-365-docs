@@ -350,7 +350,9 @@ The following table describes the file and page activities in SharePoint Online 
 
 #### The app\@sharepoint user in audit records
 
-In audit records for some file activities (and other SharePoint-related activities), you may notice the user who performed the activity (identified in the User and UserId fields) is app@sharepoint. This indicates that the "user" who performed the activity was an application that was granted permissions to SharePoint and perform an action on behalf of a user, admin, or service. This process of giving elevated permissions to an app is called App Only access. was accessed but rather just an assertion that the authentication presented to SPO was App-only (as opposed to user only or app+user).
+In audit records for some file activities (and other SharePoint-related activities), you may notice the user who performed the activity (identified in the User and UserId fields) is app@sharepoint. This indicates that the "user" who performed the activity was an application that was granted permissions to SharePoint and perform an action on behalf of a user, admin, or service. This process of giving elevated permissions to an app is called App-Only access. This indicates that the authentication presented to SharePoint was made by an app, instead of a user. authenticated an app (instead of a user) 
+
+was accessed but rather just an assertion that the authentication presented to SPO was App-only (as opposed to user only or app+user).
 
 nvoking SharePoint Online with an App Only access
 
