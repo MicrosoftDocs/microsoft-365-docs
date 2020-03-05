@@ -53,12 +53,18 @@ To view an analytics report for a review set:
 
 3. Click **View report**.
 
-The report has four components from analysis:
+The report has seven components from analysis:
 
-- **Breakdown** - How many email messages, attachments, and loose documents were found in the review set.
+- **Target Population** - How many email messages, attachments, and loose documents were found in the review set.
 
 - **Documents (excluding attachments)** - How many loose documents were pivots, unique near duplicates of a pivot, or an exact duplicate of another document.
 
 - **Emails** - How many email messages were inclusives, inclusive copies, inclusive minuses, or none of the above.
 
 - **Attachments** - How many email attachments were unique or duplicates of another email attachment in the review set.
+
+- **Number of files by type** - How many files were identified by file extension.
+
+- **Documents by source** - Breakdown of content by its original data source.
+
+- **Documents aggregated by process** - Breakdown of content by Review Set processes. 
