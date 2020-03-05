@@ -109,10 +109,9 @@ The next step is to create a eDiscovery case. You must be a member of the eDisco
     
     > [!TIP]
     > After you create a new case, you can rename it anytime. Just click the name of the case on the **eDiscovery** page. On the **Manage this case** flyout page, change the name displayed in the box under **Name**, and then save the change. 
-  
 ## Step 3: Add members to a case
 
-After you create a case, the next step is to add members to the case. The eDiscovery Manager who created the case is automatically added as a member. As previously explained, members have to assigned the appropriate eDiscovery permissions so they can access the case after you add them.
+After you create a case, the next step is to add members to the case. The eDiscovery Manager who created the case is automatically added as a member. As previously explained, members have to assign the appropriate eDiscovery permissions so they can access the case after you add them.
   
 1. In the Security & Compliance Center, click **eDiscovery** \> **eDiscovery** to display the list of cases in your organization. 
 
@@ -124,7 +123,7 @@ After you create a case, the next step is to add members to the case. The eDisco
   
 3. Under **Manage members**, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add** to add members to the case. 
 
-    ou can also choose to add a role group to the case. Under **Manage role groups**, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add**.
+    You can also choose to add a role group to the case. Under **Manage role groups**, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add**.
 
     > [!NOTE]
     > Role groups control who can assign members to an eDiscovery case. That means you can only assign the role groups that you are a member of to a case.
