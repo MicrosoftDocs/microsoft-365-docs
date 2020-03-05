@@ -348,7 +348,7 @@ The following table describes the file and page activities in SharePoint Online 
 |(none)|PagePrefetched|A user's client (such as website or mobile app) has requested the indicated page to help improve performance if the user browses to it. This event is logged to indicate that the page content has been served to the user's client. This event isn't a definitive indication that the user navigated to the page. <br/><br/> When the page content is rendered by the client (as per the user's request) a ClientViewSignaled event should be generated. Not all clients support indicating a pre-fetch, and therefore some pre-fetched activities might instead be logged as PageViewed events.|
 ||||
 
-#### The app@sharepoint system account
+#### The app\@sharepoint system account
 
 In audit records for some file activities, you may notice the user who performed the activity (identified in the User and UserId fields) is **app@sharepoint**. This system account is often identified as the user for audit records that correspond to actions that may require elevated permissions to perform. The app@sharepoint system account often performs actions on behalf of a user, admin, or service that triggered the task. For example, the app@sharepoint system account is often identified as the user for "Performed search query" and "Accessed file" events. That's because the service performs search queries and accesses files when applying eDiscovery holds and retention policy to sites and OneDrive accounts, and auto-applying retention or sensitivity labels to site content.
 
@@ -379,7 +379,7 @@ The following table describes the folder activities in SharePoint Online and One
 
 ### SharePoint list activities
 
-The following table describes activities related to when users interact with lists and list items in SharePoint Online. As previously explained, audit records for some site admin activities will indicate the app@sharepoint system account performed the activity of behalf of the admin who initiated the action. For more information, see [The app@sharepoint system account](#the-appsharepoint-system-account).
+The following table describes activities related to when users interact with lists and list items in SharePoint Online. As previously explained, audit records for some site admin activities will indicate the app@sharepoint system account performed the activity of behalf of the admin who initiated the action. For more information, see [The app\@sharepoint system account](#the-appsharepoint-system-account).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -457,7 +457,7 @@ The following table lists file synchronization activities in SharePoint Online a
 
 ### Site permissions activities
 
-The following table lists events related to assigning permissions in SharePoint and using groups to give (and revoke) access to sites. As previously explained, audit records for some site admin activities will indicate the app@sharepoint system account performed the activity of behalf of the admin who initiated the action. For more information, see [The app@sharepoint system account](#the-appsharepoint-system-account).
+The following table lists events related to assigning permissions in SharePoint and using groups to give (and revoke) access to sites. As previously explained, audit records for some site admin activities will indicate the app@sharepoint system account performed the activity of behalf of the admin who initiated the action. For more information, see [The app\@sharepoint system account](#the-appsharepoint-system-account).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -481,7 +481,7 @@ The following table lists events related to assigning permissions in SharePoint 
 
 ### Site administration activities
 
-The following table lists events that result from site administration tasks in SharePoint Online. As previously explained, audit records for some site admin activities will indicate the app@sharepoint system account performed the activity of behalf of the admin who initiated the action. For more information, see [The app@sharepoint system account](#the-appsharepoint-system-account).
+The following table lists events that result from site administration tasks in SharePoint Online. As previously explained, audit records for some site admin activities will indicate the app@sharepoint system account performed the activity of behalf of the admin who initiated the action. For more information, see [The app\@sharepoint system account](#the-appsharepoint-system-account).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
