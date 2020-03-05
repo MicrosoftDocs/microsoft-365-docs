@@ -47,6 +47,9 @@ Download the Office app for Android phones from any of these China stores:
 - [tencent](https://sj.qq.com/myapp/detail.htm?apkName=com.microsoft.office.officehub)
 - [wandoujia](https://www.wandoujia.com/apps/1502895)
 
+> [!NOTE]
+> The Office app for Android is currently available for phones only. Support for tablets will be added at a later time. 
+
 
 ## Security considerations
 
