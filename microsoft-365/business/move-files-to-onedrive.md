@@ -17,11 +17,12 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
-description: "Learn to move your files to OneDrive."
+description: "Learn how you can move your personal work files and sensitive company files to OneDrive for Business in just a few easy steps."
 ---
 
 # Move files to OneDrive for Business
