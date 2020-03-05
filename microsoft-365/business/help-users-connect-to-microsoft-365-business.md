@@ -20,12 +20,13 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
-description: "Learn what to expect after Business Cloud Suite setup is complete."
+description: "Learn what to expect after Business Cloud Suite setup is complete and your default device policies are in place and ready to apply."
 ---
 
 # Help users connect to Microsoft 365 Business

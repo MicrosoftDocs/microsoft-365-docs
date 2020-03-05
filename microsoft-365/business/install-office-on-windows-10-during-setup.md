@@ -18,12 +18,13 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
-description: "Learn now to automatically deploy Office to Windows 10 devices during setup."
+description: "Discover how, with Microsoft 365 Business, you can automatically make sure users have the latest version of Office on all their Windows 10 devices."
 ---
 
 # Install Office on Windows 10 during setup
