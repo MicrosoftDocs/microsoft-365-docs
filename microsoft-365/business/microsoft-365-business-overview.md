@@ -22,18 +22,19 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "Learn more about Microsoft 365 Business."
+description: "Learn about Microsoft 365 Business, a subscription service that includes Office 365 plus advanced protection for your business against cyber threats."
 ---
 
 # Overview of Microsoft 365 Business
 
 ## What is Microsoft 365 Business
 
-Microsoft 365 Business is a subscription service that includes Office 365 productivity tools plus advanced capabilities to help protect your business against cyberthreats, protect your data, and manage devices.
+Microsoft 365 Business is a subscription service that includes Office 365 productivity tools plus advanced capabilities to help protect your business against cyber threats, protect your data, and manage devices.
 
 Watch this video for a quick overview of Microsoft 365 Business.<br><br>
 
