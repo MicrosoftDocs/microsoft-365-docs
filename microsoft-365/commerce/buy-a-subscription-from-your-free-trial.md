@@ -37,7 +37,7 @@ You've tried Office 365, and now you're ready to buy. You have two options when 
 - [Buy a different plan than your trial](#buy-a-different-plan-than-your-trial)
 
 > [!NOTE]
-> At the end of your free trial period, your trial subscription will automatically convert to a paid subscription. The paid subscription will default to the plan you are currently signed up for. You can still buy a different plan by following the steps in the Buy a different plan than your trial section below.
+> At the end of your free trial period, your trial subscription will automatically convert to a paid subscription. The paid subscription will default to the plan you are currently signed up for. You can still buy a different plan by following the steps in the [Buy a different plan than your trial](#buy-a-different-plan-than-your-trial) section below.
 
 ## Buy the same plan as your trial
 
@@ -89,7 +89,7 @@ It's easy, and, when you buy the same type of subscription as your trial version
 
 ## Buy a different plan than your trial
 
-If you purchase a different type of subscription that your trial, you will have to reassign your user licenses from your trial plan to your new plan (before your 90-day grace period ends after your trial plan expires) in order to retain your data, accounts, and configuration.
+If you purchase a different type of subscription than your trial, you will have to reassign your user licenses from your trial plan to your new plan (before your 90-day grace period ends after your trial plan expires) in order to retain your data, accounts, and configuration.
 
 ::: moniker range="o365-worldwide"
 

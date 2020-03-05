@@ -40,6 +40,10 @@ You can sign up for a trial Office 365 business subscription for free. You can t
 
 For more information about setting up your account, see [Set up Office 365 for business](../admin/setup/setup.md).
 
+## Cancel my trial subscription
+
+If you decide to cancel your trial before the free trial period ends, go to the Microsoft admin center and turn off the auto-renew option in the payment and billing area. The trial will automatically expire when your month is finished and your credit card won't be charged.
+
 ## See also
 
 [Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
