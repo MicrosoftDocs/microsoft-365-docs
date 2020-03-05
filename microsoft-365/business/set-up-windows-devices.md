@@ -19,11 +19,12 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: "Learn how to set up Windows devices running Windows 10 Pro for Microsoft 365 Business users. "
+description: "Learn how to set up Windows devices running Windows 10 Pro for Microsoft 365 Business users, enabling centralized management and security controls."
 ---
 
 # Set up Windows devices for Microsoft 365 Business users
