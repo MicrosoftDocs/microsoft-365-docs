@@ -18,25 +18,23 @@ description: "Details on future updates for Microsoft Compliance Score (preview)
 
 # Microsoft Compliance Score (Preview) updates
 
- This article provides details about future updates to [Microsoft Compliance Score](compliance-score.md) and [Microsoft Compliance Manager](compliance-manager-overview.md) (learn more about their [relationship](compliance-score#relationship-to-compliance-manager)).
+ This article provides details about future updates to [Microsoft Compliance Score](compliance-score.md) and [Microsoft Compliance Manager](compliance-manager-overview.md) (learn more about their [relationship](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)).
 
 ## Improved template creation and update processes
 
-We're simplifying the process for importing, exporting, and modifying templates for assessments. The new experience will make it easier for you to bring your own assessments into Compliance Score and keep them in synch with updates to regulations and certifications.
+We're simplifying the process for importing, exporting, and modifying templates for assessments. The new experience will make it easier for you to bring your own assessments into Compliance Score and keep them current as regulations and certifications are updated.
 
 ### The current process
 
-When you want to create a template in Compliance Manager, there are two ways to do it: by copying an existing template, or by importing template data from Excel into a new template. For example, when you go your **Templates** page, you select **+ Add template**, and then create a brand new template by entering a name, selecting dimensions, and uploading a spreadsheet containing every data point comprising the template. Or you have the option to check the **Copy from an existing template** box, select a template to copy, and verify dimensions, as shown in the image below.
+There are two ways to create a template in Compliance Manager. You can copy an existing template, or you can import template data from an Excel spreadsheet into a new template. For example, when you go your **Templates** page, you select **+ Add template**, and then create a brand new template by entering a name, selecting dimensions, and uploading an Excel file with a specific format and schema. Or you have the option to check the **Copy from an existing template** box, select a template to copy, and verify dimensions, as shown in the image below.
+
+Customizing your template requires a [multi-step process](/working-with-compliance-manager.md#templates) that begins by selecting **Add custom control** after creating your template.
 
 ![Compliance Score - dashboard](../media/compliance-score-template-update-old.png "Current template copy process")
 
-Customizing your template requires a [multi-step process](/working-with-compliance-manager.md#templates) that begins by selecting **Add custom control** on your template.
-
 ### What's changing
 
-We're making it easier for you to create new templates. You can take a pre-configured template provided by Microsoft and add your own actions and controls for greater customization. This customization process will be an easier, one-step **extension** process that allows you to export the template, make all your changes in the same interface, then import your template with all the changes saved. 
-
-In the new process, you will simply go to your **Templates** page in Compliance Manager, select **+ Add template**, and on the **Template** flyout pane, select the **Create extension from global template** checkbox.
+We're making it easier to create new templates. You can take a pre-configured template provided by Microsoft and customize it by adding your own actions and controls. This will be an easier, one-step **extension** process that allows you to export the base template, make all your changes in the same interface, then import the template with all your changes saved. You will simply go to your **Templates** page in Compliance Manager, select **+ Add template**, and on the **Template** flyout pane, and select the **Create extension from global template** checkbox. You'll add your customizations with a new Excel format that is less complex than the current one.
 
 This new process replaces the current **Copy from an existing template** and **Add custom control** functions.
 
@@ -44,13 +42,13 @@ This new process replaces the current **Copy from an existing template** and **A
 
 Each time the original assessment is updated through the versioning process (outlined below), your customized assessment will inherit those updates *and* retain your custom controls.
 
-You can also create your own template entirely from scratch using a newly Excel format that is less complex than the currently required spreadsheet.
+You can also create your own template entirely from scratch using the Excel spreadsheet.
 
 ## Versioning notice and control
 
-The next release of Compliance Score and Compliance Manager will contain the most recent updates for all assessment frameworks and provide a clear way to understand and accept all future updates. ... you will see some guidance updaes; and that is related to frameworks. All assessments will receive the most recent updates.....
+Your organization will receive updated assessments in the next release of Compliance Score and Compliance Manager to help you align with certification and regulation updates. Moving forward, we'll provide a clear way for you to understand and accept all future updates through versioning alerts.
 
-Whenever an update is available for an assessment's template or an improvement action, an alert icon notifies you that an update is ready and prompts you to either accept or defer the update.
+Whenever an update is available for an assessment's template or an improvement action, an alert icon notifies you that an update is ready. When you click on that icon, a pop-up window explains the update and asks you to accept or defer the update.
 
 Below is an example of the versioning alert for an assessment:
 ![Compliance Score - dashboard](../media/compliance-score-assessment-versioning.png "Assessment version update alert")
