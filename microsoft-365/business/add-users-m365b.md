@@ -20,11 +20,12 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
-description: "Learn how to add new users, secure their devices, and assign roles in Microsoft 365 Business."
+description: "Learn the steps to easily add new users, secure their devices, and assign roles in Microsoft 365 Business."
 ---
 
 # Add more users to Microsoft 365 Business
