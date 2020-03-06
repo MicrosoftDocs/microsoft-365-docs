@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: "Discover several ways you can upgrade your Windows devices to Windows 10 Pro to enjoy more advanced security and business networking features."
+description: "Discover ways you can upgrade your Windows devices to Windows 10 Pro to utilize more advanced security and business networking features."
 ---
 
 # Upgrade Windows devices to Windows 10 Pro
