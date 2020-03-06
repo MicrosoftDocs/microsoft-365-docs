@@ -23,7 +23,7 @@ description: ""
 
 There are three ways to export data from a review set:
 
-**Download:** Download (by using a browser) a small set of native files. This is the quickest way to export a small set of data. Thia method preserves the native file names.
+**Download:** Download (by using a browser) a small set of native files. This is the quickest way to export a small set of data. This method preserves the native file names.
 
 **Export:** Customize what data is exported. This includes exporting file metadata, native files, text files, and redacted documents that have been saved to a PDF file. After the exported data is uploaded to an Azure Storage location, you can download it to a local computer. For more information, see: 
 
