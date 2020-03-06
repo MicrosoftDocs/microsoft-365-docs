@@ -18,7 +18,6 @@ hideEdit: true
 titleSuffix: Microsoft GDPR
 ---
 
-
 # Data Protection Impact Assessments: Guidance for Data Controllers Using Microsoft Office 365 
 
 Under the General Data Protection Regulation (GDPR), data controllers are required to prepare a Data Protection Impact Assessment (DPIA) for processing operations that are "likely to result in a high risk to the rights and freedoms of natural persons." There is nothing inherent in Microsoft Office 365 that would necessarily require the creation of a DPIA by a data controller using it.  Rather, whether a DPIA is required will be dependent on the details and context of how the data controller deploys, configures, and uses Office 365.
@@ -37,8 +36,8 @@ Article 35 of the GDPR requires a data controller to create a Data Protection Im
 |A systematic monitoring of a publicly accessible area on a large scale|Office 365 is not designed to conduct or facilitate such monitoring. <br><br> However, a data controller could use it to process data collected through such monitoring. |
 |||
 
-> [!Note]
-> <sup>1</sup> With respect to the criteria that the processing be on a "large scale," Recital 91 of the GDPR clarifies that: "The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional, or lawyer. In such cases, a data protection impact assessment should not be mandatory."
+>[!Note]
+><sup>1</sup> With respect to the criteria that the processing be on a "large scale," Recital 91 of the GDPR clarifies that: "The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional, or lawyer. In such cases, a data protection impact assessment should not be mandatory."
 
 ## Part 2 — Contents of a DPIA
 

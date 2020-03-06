@@ -24,8 +24,8 @@ Under the General Data Protection Regulation (GDPR), data controllers are requir
 
 The purpose of this document is to provide data controllers with information about Microsoft Azure that will help them to determine whether a DPIA is needed and, if so, what details to include.
 
-> [!Note]
-> Microsoft is not providing any legal advice in this document. This document is being provided for informational purposes only. Customers are encouraged to work with their privacy officers and legal counsel to determine the necessity and content of any DPIAs related to their use of Microsoft Azure or any other Microsoft online service.
+>[!Note]
+>Microsoft is not providing any legal advice in this document. This document is being provided for informational purposes only. Customers are encouraged to work with their privacy officers and legal counsel to determine the necessity and content of any DPIAs related to their use of Microsoft Azure or any other Microsoft online service.
 
 ## Part 1 – Determining whether a DPIA is needed
 
