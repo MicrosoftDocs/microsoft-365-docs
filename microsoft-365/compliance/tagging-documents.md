@@ -77,13 +77,13 @@ When reviewing documents, you can use the other review panels to review other ch
 
 For example, here's how to display the **Tagging panel** when using the **Document family** review panel:
 
-1. With the review panel open for a selected document (for example, displaying the list of related content in the **Document family** review panel, click **Tag documents** under the Document Family review panel.
+1. With the review panel open for a selected document (for example, displaying the list of related content in the **Document family** review panel, click **Tag documents** under the document family review panel.
 
-   The tag panel is displayed as a pop-up window.
+   The tagging panel is displayed as a pop-up window.
 
 2. Choose one or more tags to apply the selected document. 
 
-3. To tag all documents, select all documents in the **Document family** panel, click **Tag Documents**, and then choose the tags to apply to the entire family of documents.
+3. To tag all documents, select all documents in the **Document family** panel, click **Tag documents**, and then choose the tags to apply to the entire family of documents.
 
 ![A screenshot of a social media post
 Description automatically generated](../media/Relatedtag.png)
