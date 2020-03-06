@@ -366,7 +366,7 @@ In these and other scenarios, you'll also notice that multiple audit records wit
 
 ### Folder activities
 
-The following table describes the folder activities in SharePoint Online and OneDrive for Business.
+The following table describes the folder activities in SharePoint Online and OneDrive for Business. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -383,7 +383,7 @@ The following table describes the folder activities in SharePoint Online and One
 
 ### SharePoint list activities
 
-The following table describes activities related to when users interact with lists and list items in SharePoint Online. As previously explained, audit records for some site admin activities will indicate the app@sharepoint system account performed the activity of behalf of the admin who initiated the action. For more information, see [The app\@sharepoint system account](#the-appsharepoint-system-account).
+The following table describes activities related to when users interact with lists and list items in SharePoint Online. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -461,7 +461,7 @@ The following table lists file synchronization activities in SharePoint Online a
 
 ### Site permissions activities
 
-The following table lists events related to assigning permissions in SharePoint and using groups to give (and revoke) access to sites. As previously explained, audit records for some site admin activities will indicate the app@sharepoint system account performed the activity of behalf of the admin who initiated the action. For more information, see [The app\@sharepoint system account](#the-appsharepoint-system-account).
+The following table lists events related to assigning permissions in SharePoint and using groups to give (and revoke) access to sites. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -485,7 +485,7 @@ The following table lists events related to assigning permissions in SharePoint 
 
 ### Site administration activities
 
-The following table lists events that result from site administration tasks in SharePoint Online. As previously explained, audit records for some site admin activities will indicate the app@sharepoint system account performed the activity of behalf of the admin who initiated the action. For more information, see [The app\@sharepoint system account](#the-appsharepoint-system-account).
+The following table lists events that result from site administration tasks in SharePoint Online. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
