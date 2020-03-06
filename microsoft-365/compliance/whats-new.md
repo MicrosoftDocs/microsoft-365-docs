@@ -31,7 +31,7 @@ And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/en-us/microsoft-
 
 ### Insider risk management is officially released
 
-Drum roll, please...Insider risk management is now available to organizations with the following subscriptions:
+Drum roll, please...<br>Insider risk management is now available to organizations with the following subscriptions:
 
 - [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) (paid or trial)
 - Microsoft 365 Enterprise E3 subscription with the [Microsoft E5 Compliance add-on](https://go.microsoft.com/fwlink/?linkid=2120432)
@@ -42,7 +42,7 @@ As always, please leave feedback as you use the solution so we can continue to m
 
 ### Records management
 
-This new solution bringing all the records management capabilities under a single umbrella. Highlights include the introduction of records versioning for SharePoint and OneDrive and proof of disposal for records.
+This new solution brings all the records management capabilities under a single umbrella. Highlights include the introduction of records versioning for SharePoint and OneDrive and proof of disposal for records.
 
 ![Records management page in Microsoft 365 compliance center](../media/mcc-records-management-page.png)
 
@@ -50,7 +50,7 @@ This new solution bringing all the records management capabilities under a singl
 
 ### Solution spotlight: Data connectors for Facebook and Twitter
 
-Data connectors [released last month](#just-launched) and we're looking for your help in testing out the following connectors to validate their working as expected.
+Data connectors [released last month](#just-launched) and we're looking for your help in testing out the following connectors.
 
 - [Facebook business pages](archive-facebook-data-with-sample-connector.md). Imports and archives data from Facebook business pages to Microsoft 365. Beneficial for compliance solutions such as records management and eDiscovery.
 - [Twitter](archive-twitter-data-with-sample-connector.md). Imports and archives data from Twitter to Microsoft 365. Beneficial for compliance solutions such as records management and eDiscovery.
