@@ -21,18 +21,20 @@ description: "View a complete list of ITAR root certificates and certificate aut
 
 # Office 365 encryption chains - ITAR
 
-Office 365 leverages a number of different certificate providers. The following describes the complete list of known Office 365 root certificates that ITAR customers (Defense & GCC High) may encounter when accessing Office 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates). The following certificate information applies to all ITAR customers (Defense & GCC High).
+Office 365 leverages a number of different certificate providers. The following describes the complete list of known Office 365 root certificates that **ITAR customers** (Defense & GCC High) may encounter when accessing Office 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates).
+
+The following certificate information applies to **all ITAR customers** (Defense & GCC High).
 
 >[!NOTE]
->For certificate information that applies to worldwide customers, see [Office 365 encryption chains](encryption-office-365-certificate-chains.md).
+>For certificate information that applies to **worldwide customers**, see [Office 365 encryption chains](encryption-office-365-certificate-chains.md).
 
-| **Certificate type** | **P7b download** | **CRL Endpoints** | **OCSP Endpoints** | **AIA Endpoints** |
+| **Certificate type** | **P7b download** | **CRL Endpoints** | **OCSP Endpoints** |
 | --- | --- | --- | --- | --- |
-| Publicly Trusted Root and Intermediate Certificates | [Office 365 ITAR Certificate Bundle (P7B)](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/O365_Chain_Certs_ITAR20200304.p7b) | crl.globalsign.net<br>www.d-trust.net<br>cdp1.public-trust.com<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com |
+| Publicly Trusted Root and Intermediate Certificates | [Office 365 ITAR Certificate Bundle (P7B)](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/O365_Chain_Certs_ITAR20200304.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
 
 Expand the root and intermediate sections below to see additional details about the certificate providers.
 
-## **Office 365 Root Certificate Details**
+## **Office 365 Certificate Details**
 
 ### **Baltimore CyberTrust Root**
 
@@ -96,8 +98,33 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-256)** | 7431E5F4C3C1CE4690774F0B61E05440883BA9A01ED00BA6ABD7806ED3B118CF |
 | **Pin (SHA-256)** | WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18= |
 
+### **DigiCert SHA2 Extended Validation Server CA**
 
+| **Subject** | CN=DigiCert SHA2 Extended Validation Server CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| --- | --- |
+| **Serial Number** | 0C:79:A9:44:B0:8C:11:95:20:92:61:5F:E2:6B:1D:83 |
+| **Public Key Length** | RSA 2048 bits (e 65537) |
+| **Signature Algorithm** | sha256RSA |
+| **Validity Not Before** | Oct 22 00:00:00 2013 UTC |
+| **Validity Not After** | Oct 22 00:00:00 2028 UTC |
+| **Subject Key Identifier** | 3D:D3:50:A5:D6:A0:AD:EE:F3:4A:60:0A:65:D3:21:D4:F8:F8:D6:0F |
+| **Authority Key Identifier** | keyID:b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
+| **Thumbprint (SHA-1)** | 7E2F3A4F8FE8FA8A5730AECA029696637E986F3F |
+| **Thumbprint (SHA-256)** | 403E062A2653059113285BAF80A0D4AE422C848C9F78FAD01FC94BC5B87FEF1A |
 
+### **Entrust Root Certification Authority**
+
+| **Subject** | CN=Entrust Root Certification Authority<br>OU="(c) 2006 Entrust, Inc."<br>OU=www.entrust.net/CPS is incorporated by reference<br>OU=See www.entrust.net/legal-terms<br>O=&quot;Entrust, Inc.&quot;<br>C=US |
+| --- | --- |
+| **Serial Number** | 45:6B:50:54 |
+| **Public Key Length** | RSA 2048 bits (e 65537) |
+| **Signature Algorithm** | sha1RSA |
+| **Validity Not Before** | Nov 27 12:23:42 2006 UTC |
+| **Validity Not After** | Nov 27 12:53:42 2026 UTC |
+| **Subject Key Identifier** | 68:90:E4:67:A4:A6:53:80:C7:86:66:A4:F1:F7:4B:43:FB:84:BD:6D |
+| **Authority Key Identifier** | keyID:68:90:e4:67:a4:a6:53:80:c7:86:66:a4:f1:f7:4b:43:fb:84:bd:6d |
+| **Thumbprint (SHA-1)** | B31EB1B740E36C8402DADC37D44DF5D4674952F9 |
+| **Thumbprint (SHA-256)** | 73C176434F1BC6D5ADF45B0E76E727287C8DE57616C1E6E6141A2B2CBC7D8E4C |
 
 ### **Entrust Root Certification Authority - G2**
 
@@ -126,156 +153,6 @@ Expand the root and intermediate sections below to see additional details about 
 | **Thumbprint (SHA-1)** | 503006091D97D4F5AE39F7CBE7927D7D652D3431 |
 | **Thumbprint (SHA-256)** | 6DC47172E01CBCB0BF62580D895FE2B8AC9AD4F873801E0C10B9C837D21EB177 |
 | **Pin (SHA-256)** | HqPF5D7WbC2imDpCpKebHpBnhs6fG1hiFBmgBGOofTg= |
-
-### **GlobalSign**
-
-| **Subject** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R2 |
-| --- | --- |
-| **Serial Number** | 04:00:00:00:00:01:0F:86:26:E6:0D |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha1RSA |
-| **Validity Not Before** | Dec 15 08:00:00 2006 UTC |
-| **Validity Not After** | Dec 15 08:00:00 2021 UTC |
-| **Subject Key Identifier** | 9b:e2:07:57:67:1c:1e:c0:6a:06:de:59:b4:9a:2d:df:dc:19:86:2e |
-| **Authority Key Identifier** | keyid:9b:e2:07:57:67:1c:1e:c0:6a:06:de:59:b4:9a:2d:df:dc:19:86:2e |
-| **Thumbprint (SHA-1)** | 75E0ABB6138512271C04F85FDDDE38E4B7242EFE |
-| **Thumbprint (SHA-256)** | CA42DD41745FD0B81EB902362CF9D8BF719DA1BD1B1EFC946F5B4C99F42C1B9E |
-| **Pin (SHA-256)** | iie1VXtL7HzAMF+/PVPR9xzT80kQxdZeJ+zduCB3uj0= |
-| **CRL URLs** | http://crl.globalsign.net/root-r2.crl |
-
-### **GlobalSign Root CA**
-
-| **Subject** | CN=GlobalSign Root CA<br>OU=Root CA<br>O=GlobalSign nv-sa<br>C=BE |
-| --- | --- |
-| **Serial Number** | 04:00:00:00:00:01:15:4B:5A:C3:94 |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha1RSA |
-| **Validity Not Before** | Sep 01 12:00:00 1998 UTC |
-| **Validity Not After** | Jan 28 12:00:00 2028 UTC |
-| **Subject Key Identifier** | 60:7b:66:1a:45:0d:97:ca:89:50:2f:7d:04:cd:34:a8:ff:fc:fd:4b |
-| **Thumbprint (SHA-1)** | B1BC968BD4F49D622AA89A81F2150152A41D829C |
-| **Thumbprint (SHA-256)** | EBD41040E4BB3EC742C9E381D31EF2A41A48B6685C96E7CEF3C1DF6CD4331C99 |
-| **Pin (SHA-256)** | K87oWBWM9UZfyddvDfoxL+8lpNyoUB2ptGtn0fv6G2Q= |
-
-### **thawte Primary Root CA - G3**
-
-| **Subject** | CN=thawte Primary Root CA - G3<br>OU=&quot;(c) 2008 thawte, Inc. - For authorized use only&quot;<br>OU=Certification Services Division<br>O=&quot;thawte, Inc.&quot;<br>C=US |
-| --- | --- |
-| **Serial Number** | 60:01:97:B7:46:A7:EA:B4:B4:9A:D6:4B:2F:F7:90:FB |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha256RSA |
-| **Validity Not Before** | Apr 02 00:00:00 2008 UTC |
-| **Validity Not After** | Dec 01 23:59:59 2037 UTC |
-| **Subject Key Identifier** | ad:6c:aa:94:60:9c:ed:e4:ff:fa:3e:0a:74:2b:63:03:f7:b6:59:bf |
-| **Thumbprint (SHA-1)** | F18B538D1BE903B6A6F056435B171589CAF36BF2 |
-| **Thumbprint (SHA-256)** | 4B03F45807AD70F21BFC2CAE71C9FDE4604C064CF5FFB686BAE5DBAAD7FDD34C |
-| **Pin (SHA-256)** | GQbGEk27Q4V40A4GbVBUxsN/D6YCjAVUXgmU7drshik= |
-
-### **VeriSign Class 3 Public Primary Certification Authority - G5**
-
-| **Subject** | CN=VeriSign Class 3 Public Primary Certification Authority - G5<br>OU=&quot;(c) 2006 VeriSign, Inc. - For authorized use only&quot;<br>OU=VeriSign Trust Network<br>O=&quot;VeriSign, Inc.&quot;<br>C=US |
-| --- | --- |
-| **Serial Number** | 18:DA:D1:9E:26:7D:E8:BB:4A:21:58:CD:CC:6B:3B:4A |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha1RSA |
-| **Validity Not Before** | Nov 08 00:00:00 2006 UTC |
-| **Validity Not After** | Jul 16 23:59:59 2036 UTC |
-| **Subject Key Identifier** | 7f:d3:65:a7:c2:dd:ec:bb:f0:30:09:f3:43:39:fa:02:af:33:31:33 |
-| **Thumbprint (SHA-1)** | 4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5 |
-| **Thumbprint (SHA-256)** | 9ACFAB7E43C8D880D06B262A94DEEEE4B4659989C3D0CAF19BAF6405E41AB7DF |
-| **Pin (SHA-256)** | JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg= |
-
-## **Office 365 Intermediate Certificate Details**
-
-### **D-TRUST SSL Class 3 CA 1 2009**
-
-| **Subject** | CN=D-TRUST SSL Class 3 CA 1 2009<br>O=D-Trust GmbH<br>C=DE |
-| --- | --- |
-| **Issuer** | CN=D-TRUST Root Class 3 CA 2 2009<br>O=D-Trust GmbH<br>C=DE |
-| **Subject Alternative Name** | RFC822 Name=info@d-trust.net<br>URL=http://www.d-trust.net |
-| **Serial Number** | 09:90:63 |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha256RSA |
-| **Validity Not Before** | Nov 12 12:46:55 2009 UTC |
-| **Validity Not After** | Nov 05 08:35:58 2029 UTC |
-| **Subject Key Identifier** | 50:19:32:94:9a:c4:b5:04:4d:56:d0:c0:83:21:d5:35:55:b0:b1:7a |
-| **Authority Key Identifier** | keyid:fd:da:14:c4:9f:30:de:21:bd:1e:42:39:fc:ab:63:23:49:e0:f1:84 |
-| **Thumbprint (SHA-1)** | 2FC5DE6528CDBE50A14C382FC1DE524FAABF95FC |
-| **Thumbprint (SHA-256)** | 6AC159B4C2BC8E729F3B84642EF1286BCC80D775FE278C740ADA468D59439025 |
-| **Pin (SHA-256)** | 9w0QP9HzLXkfs+4zENaUFq2XKcQON1oyksoJ+Gg2AZE= |
-| **CRL URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_2009.crl |
-| **OCSP URLs** | http://root-c3-ca2-2009.ocsp.d-trust.net |
-
-### **D-TRUST SSL Class 3 CA 1 EV 2009**
-
-| **Subject** | CN=D-TRUST SSL Class 3 CA 1 EV 2009<br>O=D-Trust GmbH<br>C=DE |
-| --- | --- |
-| **Issuer** | CN=D-TRUST Root Class 3 CA 2 EV 2009<br>O=D-Trust GmbH<br>C=DE |
-| **Subject Alternative Name** | RFC822 Name=info@d-trust.net<br>URL=http://www.d-trust.net |
-| **Serial Number** | 09:90:64 |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha256RSA |
-| **Validity Not Before** | Nov 12 12:52:43 2009 UTC |
-| **Validity Not After** | Nov 05 08:50:46 2029 UTC |
-| **Subject Key Identifier** | ac:ed:a5:9d:7a:a2:b6:43:f1:18:8a:25:6a:6c:b1:cc:a8:f2:5a:d4 |
-| **Authority Key Identifier** | keyid:d3:94:8a:4c:62:13:2a:19:2e:cc:af:72:8a:7d:36:d7:9a:1c:dc:67 |
-| **Thumbprint (SHA-1)** | 1069423D308D0FC54575059638560FC7556E32B3 |
-| **Thumbprint (SHA-256)** | B0935DC04B4E60C0C42DEF7EC57A1B1D8F958D17988E71CC80A8CF5E635BA5B4 |
-| **Pin (SHA-256)** | lv5BNZ5aWd27ooolULDolFTwIaaWjHvG4yyH3rss4X8= |
-| **CRL URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
-| **OCSP URLs** | http://root-c3-ca2-ev-2009.ocsp.d-trust.net |
-
-### **DigiCert Cloud Services CA-1**
-
-| **Subject** | CN=DigiCert Cloud Services CA-1<br>O=DigiCert Inc<br>C=US |
-| --- | --- |
-| **Issuer** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
-| **Serial Number** | 01:9E:C1:C6:BD:3F:59:7B:B2:0C:33:38:E5:51:D8:77 |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha256RSA |
-| **Validity Not Before** | Aug 04 12:00:00 2015 UTC |
-| **Validity Not After** | Aug 04 12:00:00 2030 UTC |
-| **Subject Key Identifier** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
-| **Authority Key Identifier** | keyid:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
-| **Thumbprint (SHA-1)** | 81B68D6CD2F221F8F534E677523BB236BBA1DC56 |
-| **Thumbprint (SHA-256)** | 2F6889961A7CA7067E8BA103C2CF9B9A924F8CA293F11178E23A1978D2F133D3 |
-| **Pin (SHA-256)** | UgpUVparimk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
-| **CRL URLs** | http://crl4.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl3.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP URLs** | http://ocsp.digicert.com |
-
-### **DigiCert SHA2 High Assurance Server CA**
-
-| **Subject** | CN=DigiCert SHA2 High Assurance Server CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
-| --- | --- |
-| **Issuer** | CN=DigiCert High Assurance EV Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
-| **Serial Number** | 04:E1:E7:A4:DC:5C:F2:F3:6D:C0:2B:42:B8:5D:15:9F |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha256RSA |
-| **Validity Not Before** | Oct 22 12:00:00 2013 UTC |
-| **Validity Not After** | Oct 22 12:00:00 2028 UTC |
-| **Subject Key Identifier** | 51:68:ff:90:af:02:07:75:3c:cc:d9:65:64:62:a2:12:b8:59:72:3b |
-| **Authority Key Identifier** | keyid:b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
-| **Thumbprint (SHA-1)** | A031C46782E6E6C662C2C87C76DA9AA62CCABD8E |
-| **Thumbprint (SHA-256)** | 19400BE5B7A31FB733917700789D2F0A2471C0C9D506C0E504C06C16D7CB17C0 |
-| **Pin (SHA-256)** | k2v657xBsOVe1PQRwOsHsw3bsGT2VzIqz5K+59sNQws= |
-| **CRL URLs** | http://crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl |
-| **OCSP URLs** | http://ocsp.digicert.com |
-
-### **DigiCert High Assurance EV Root CA**
-
-| **Subject** | CN=DigiCert High Assurance EV Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
-| --- | --- |
-| **Issuer** | CN=DigiCert High Assurance EV Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
-| **Serial Number** | 0c:79:a9:44:b0:8c:11:95:20:92:61:5f:e2:6b:1d:83 |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha256RSA |
-| **Validity Not Before** | Oct 22 12:00:00 2013 UTC |
-| **Validity Not After** | Oct 22 12:00:00 2048 UTC |
-| **Subject Key Identifier** | 3d:d3:50:a5:d6:a0:ad:ee:f3:4a:60:0a:65:d3:21:d4:f8:f8:d6:0f |
-| **Authority Key Identifier** | keyid:b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
-| **Thumbprint (SHA-1)** | 7e2f3a4f8fe8fa8a5730aeca029696637e986f3f |
-| **CRL URLs** | http://crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl |
-| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### **Entrust Certification Authority - L1C**
 
@@ -418,97 +295,3 @@ Expand the root and intermediate sections below to see additional details about 
 | **Pin (SHA-256)** | RCbqB+W8nwjznTeP4O6VjqcwdxIgI79eBpnBKRr32gc= |
 | **CRL URLs** | http://crl3.digicert.com/Omniroot2025.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
-
-
-## **Additional certificate paths**
-
-The following list includes legacy certificates that aren't included above and will be merged with the list above over time.
-
-evsecure-aia.verisign.com<br>
-sa.symcb.com<br>
-sd.symcb.com<br>
-\*.omniroot.com<br>
-\*.verisign.com<br>
-\*.symcb.com<br>
-\*.symcd.com<br>
-\*.verisign.net<br>
-\*.geotrust.com<br>
-\*.entrust.net<br>
-\*.public-trust.com<br>
-EVIntl-ocsp.verisign.com<br>
-EVSecure-ocsp.verisign.com<br>
-isrg.trustid.ocsp.identrust.com<br>
-ocsp.digicert.com<br>
-ocsp.entrust.net<br>
-ocsp.globalsign.com/ExtendedSSLSHA256CACross<br>
-ocsp.globalsign.com/rootr1<br>
-ocsp.globalsign.com/rootr2<br>
-ocsp2.globalsign.com/rootr3<br>
-ocsp.int-x3.letsencrypt.org/<br>
-ocsp.msocsp.com<br>
-ocsp.omniroot.com/baltimoreroot<br>
-ocsp2.globalsign.com/gsextendvalsha2g3r3<br>
-ocsp2.globalsign.com/gsorganizationvalsha2g2<br>
-ocsp2.globalsign.com/gsorganizationvalsha2g3<br>
-ocsp2.globalsign.com/rootr3<br>
-ocspx.digicert.com<br>
-s2.symcb.com<br>
-sr.symcd.com<br>
-su.symcd.com<br>
-vassg142.ocsp.omniroot.com<br>
-cdp1.public-trust.com/CRL/Omniroot2025.crl<br>
-crl.entrust.net/2048ca.crl<br>
-crl.entrust.net/g2ca.crl<br>
-crl.entrust.net/level1k.crl<br>
-crl.entrust.net/rootca1.crl<br>
-crl.globalsign.com/gs/gsextendvalsha2g3r3.crl<br>
-crl.globalsign.com/gs/gsorganizationvalsha2g2.crl<br>
-crl.globalsign.com/gsorganizationvalsha2g3.crl<br>
-crl.globalsign.com/root.crl<br>
-crl.globalsign.net/root-r2.crl<br>
-crl.globalsign.com/root-r3.crl<br>
-crl.globalsign.net/root.crl<br>
-crl.identrust.com/DSTROOTCAX3CRL.crl<br>
-crl.microsoft.com/pki/mscorp/crl/msitwww1.crl<br>
-crl.microsoft.com/pki/mscorp/crl/msitwww2.crl<br>
-crl3.digicert.com/DigiCertCloudServicesCA-1-g1.crl<br>
-crl3.digicert.com/DigiCertGlobalRootCA.crl<br>
-crl3.digicert.com/sha2-ev-server-g1.crl<br>
-crl3.digicert.com/sha2-ha-server-g5.crl<br>
-crl3.digicert.com/ssca-sha2-g5.crl<br>
-crl4.digicert.com/DigiCertCloudServicesCA-1-g1.crl<br>
-crl4.digicert.com/DigiCertGlobalRootCA.crl<br>
-crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl<br>
-crl4.digicert.com/sha2-ev-server-g1.crl<br>
-crl4.digicert.com/sha2-ha-server-g5.crl<br>
-crl4.digicert.com/ssca-sha2-g5.crl<br>
-EVIntl-crl.verisign.com/EVIntl2006.crl<br>
-EVSecure-crl.verisign.com/pca3-g5.crl<br>
-mscrl.microsoft.com/pki/mscorp/crl/msitwww1.crl<br>
-mscrl.microsoft.com/pki/mscorp/crl/msitwww2.crl<br>
-s1.symcb.com/pca3-g5.crl<br>
-sr.symcb.com/sr.crl<br>
-su.symcb.com/su.crl<br>
-vassg142.crl.omniroot.com/vassg142.crl<br>
-aia.entrust.net/l1k-chain256.cer<br>
-apps.identrust.com/roots/dstrootcax3.p7c<br>
-<https://cacert.a.omniroot.com/vassg142.crt><br>
-<https://cacert.a.omniroot.com/vassg142.der><br>
-<https://cacert.omniroot.com/baltimoreroot.crt><br>
-<https://cacert.omniroot.com/baltimoreroot.der><br>
-cacerts.digicert.com/DigiCertCloudServicesCA-1.crt<br>
-cacerts.digicert.com/DigiCertSHA2ExtendedValidationServerCA.crt<br>
-cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt<br>
-cacerts.digicert.com/DigiCertSHA2SecureServerCA.crt<br>
-cert.int-x3.letsencrypt.org/<br>
-EVIntl-aia.verisign.com/EVIntl2006.cer<br>
-secure.globalsign.com/cacert/gsextendvalsha2g2r2.crt<br>
-secure.globalsign.com/cacert/gsextendvalsha2g3r3.crt<br>
-secure.globalsign.com/cacert/gsorganizationvalsha2g2r1.crt<br>
-secure.globalsign.com/cacert/gsorganizationvalsha2g3.crt<br>
-sr.symcb.com/sr.crt<br>
-su.symcb.com/su.crt<br>
-<https://www.digicert.com/CACerts/DigiCertGlobalRootCA.crt><br>
-<https://www.digicert.com/CACerts/DigiCertHighAssuranceEVRootCA.crt><br>
-<https://www.microsoft.com/pki/mscorp/msitwww1.crt><br>
-<https://www.microsoft.com/pki/mscorp/msitwww2.crt><br>
