@@ -24,7 +24,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured machines. This is made possible by customizable detection rules that automatically trigger alerts as well as response actions.
 

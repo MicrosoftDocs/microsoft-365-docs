@@ -24,7 +24,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Custom detection rules built from [Advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured machines. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
 
@@ -40,12 +40,17 @@ In Microsoft 365 security center, go to **Advanced hunting** and select an exist
 To create a custom detection rule, the query must return the following columns:
 
 - `Timestamp`
-- `DeviceId`, `RecipientEmailAddress`, `SenderFromAddress`, `SenderMailFromAddress`, or `RecipientObjectId`
+- An entity represented by any of the following columns:
+    - `DeviceId`
+    - `RecipientEmailAddress`
+    - `SenderFromAddress` (envelope sender or Return-Path address)
+    - `SenderMailFromAddress` (sender address displayed by email client)
+    - `RecipientObjectId`
 - `ReportId` 
 
 Simple queries, such as those that don't use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.
 
-There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by `DeviceId`, you can still return `Timestamp` and `ReportId` by getting them from the most recent event involving each machine.
+There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by entity under a column such as `DeviceId`, you can still return `Timestamp` and `ReportId` by getting these values from the most recent event involving unique `DeviceId`.
 
 The sample query below counts the number of unique machines (`DeviceId`) with antivirus detections and uses this count to find only the machines with more than five detections. To return the latest `Timestamp` and the corresponding `ReportId`, it uses the `summarize` operator with the `arg_max` function.
 
@@ -79,22 +84,24 @@ When saved, custom detections rules immediately run. They then run again at fixe
 
 Whenever a rule runs, similar detections on the same machine could be aggregated into fewer alerts, so running a rule less frequently can generate fewer alerts. Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
 
-### 3. Select the impacted entities.
-By selecting the impacted entities, ...
+### 3. Choose the impacted entities.
+Identify the columns in your query results where you expect to find main affected or impacted entity. For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses. By identifying the main impacted entity among these addresses, you guide the service on how to aggregate relevant alerts, correlate incidents, and target response actions.
+
+You can select only one column for each entity type (mailbox, user, or device). Columns that are not returned by your query can't be selected.
 
 ### 3. Specify actions on files or machines.
 Your custom detection rule can automatically take actions on files or machines that are returned by the query.
 
 #### Actions on machines
 These actions are applied to machines in the `DeviceId` column of the query results:
-- **Isolate machine** — applies full network isolation, preventing the machine from connecting to any application or service, except for the Microsoft Defender ATP service. [Learn more about machine isolation](respond-machine-alerts.md#isolate-machines-from-the-network)
-- **Collect investigation package** — collects machine information in a ZIP file. [Learn more about the investigation package](respond-machine-alerts.md#collect-investigation-package-from-machines)
+- **Isolate machine** — uses Microsoft Defender ATP to applies full network isolation, preventing the machine from connecting to any application or service. [Learn more about Microsoft Defender ATP machine isolation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
+- **Collect investigation package** — collects machine information in a ZIP file. [Learn more about the Microsoft Defender ATP investigation package](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
 - **Run antivirus scan** — performs a full Windows Defender Antivirus scan on the machine
-- **Initiate investigation** — initiates an [automated investigation](automated-investigations.md) on the machine
+- **Initiate investigation** — initiates an [automated investigation](mtp-autoir.md) on the machine
 
 #### Actions on files
 These actions are applied to files in the `SHA1` or the `InitiatingProcessSHA1` column of the query results:
-- **Allow/Block** — automatically adds the file to your [custom indicator list](manage-indicators.md) so that it is always allowed to run or blocked from running. You can set the scope of this action so that it is taken only on selected machine groups. This scope is independent of the scope of the rule.
+- **Allow/Block** — automatically adds the file to your [Microsoft Defender ATP custom indicator list](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) so that it is always allowed to run or blocked from running. You can set the scope of this action so that it is taken only on selected machine groups. This scope is independent of the scope of the rule.
 - **Quarantine file** — deletes the file from its current location and places a copy in quarantine
 
 ### 4. Click **Create** to save and turn on the rule.
@@ -142,7 +149,6 @@ In the rule details screen (**Hunting** > **Custom detections** > **[Rule name]*
 >To quickly view information and take action on an item in a table, use the selection column [&#10003;] at the left of the table.
 
 ## Related topic
-- [Custom detections overview](overview-custom-detections.md)
+- [Custom detections overview](custom-detections-overview.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the advanced hunting query language](advanced-hunting-query-language.md)
-- [View and organize alerts](alerts-queue.md)
