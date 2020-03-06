@@ -51,10 +51,10 @@ Your organization will receive updated assessments in the next release of Compli
 Whenever an update is available for an assessment's template or an improvement action, an alert icon notifies you that an update is ready. When you click on that icon, a pop-up window explains the update and asks you to accept or defer the update.
 
 Below is an example of the versioning alert for an assessment:
-![Compliance Score - dashboard](../media/compliance-score-assessment-versioning.png "Assessment version update alert")
+![Compliance Score - versioning alert](../media/compliance-score-assessment-versioning.png "Assessment version update alert")
 
-Below is an example of the versioning alert for an improvement action:
-![Compliance Score - dashboard](../media/compliance-score-action-versioning.png "Action version update alert")
+Selecting the alert icon reveals a flyout pane explaining the update and prompting you to accept, as seen below:
+![Compliance Score - versioning flyout](../media/compliance-score-assessment-version-accept.png "Action version update alert")
 
 ## Common actions will synch status across groups
 
