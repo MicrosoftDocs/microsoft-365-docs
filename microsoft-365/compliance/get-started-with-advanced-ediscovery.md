@@ -31,11 +31,11 @@ Licensing for Advanced eDiscovery requires the appropriate organization subscrip
 
 - **Organization subscription:** To access Advanced eDiscovery in the Microsoft 365 compliance center or the Office 365 Security & Compliance Center, your organization must have one of the following:
 
-  - Microsoft 365 E5 or Office 365 E5 subscription.
+  - Microsoft 365 E5 or Office 365 E5 subscription
   
-  - Microsoft 365 E3 subscription with E5 Compliance add-on.
+  - Microsoft 365 E3 subscription with E5 Compliance add-on
   
-  - Office 365 E3 subscription with Advanced Compliance add-on.
+  - Office 365 E3 subscription with Advanced Compliance add-on
 
 - **Per-user licensing:** To add a user as a custodian in an Advance eDiscovery case, that user must be assigned one of the following licenses, depending on your organization subscription:
 
