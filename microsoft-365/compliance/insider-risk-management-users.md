@@ -26,6 +26,9 @@ Insider risk management users are employees in your organization that are includ
 
 ![Insider risk management users dashboard](../media/insider-risk-users-dashboard.png)
 
+>[!NOTE]
+>The number of users displayed on the User dashboard may be limited in some instances, depending on the volume of active alerts and matching policies. Users with active alerts are displayed as the alerts are generated, and there may be rare cases when the maximum number of displayed users is reached. If this happens, users with active alerts who aren’t displayed will be added to the User dashboard as existing user alerts are triaged.
+
 ## View user details
 
 To view more details about risk activity for a user, open the user details pane by double-clicking a user in the **Users dashboard**. On the details pane, you can view the following information:

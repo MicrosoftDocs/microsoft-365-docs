@@ -19,16 +19,17 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: "Learn how to set up Windows devices running Windows 10 Pro for Microsoft 365 Business users. "
+description: "Learn how to set up Windows devices running Windows 10 Pro for Microsoft 365 Business users, enabling centralized management and security controls."
 ---
 
 # Set up Windows devices for Microsoft 365 Business users
 
-## Prerequisites
+## Prerequisites for setting up Windows devices for Microsoft 365 Business users
 
 Before you can set up Windows devices for Microsoft 365 Business users, make sure all the Windows devices are running Windows 10 Pro, version 1703 (Creators Update). Windows 10 Pro is a prerequisite for deploying Windows 10 Business, which is a set of cloud services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business.
   
@@ -120,6 +121,6 @@ Verify that your Azure AD joined Windows 10 devices were upgraded to Windows 10 
 
 To set up your mobile devices, see [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md), To set device protection or app protection policies, see [Manage Microsoft 365 Business](manage.md).
   
-## See also
+## For more on setting up and using Microsoft 365 Business
 
 [Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

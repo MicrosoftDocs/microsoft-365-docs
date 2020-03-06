@@ -2,9 +2,9 @@
 title: "Detect and Remediate Illicit Consent Grants in Office 365"
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyp
+manager: dansimp
 ms.date:
 audience: ITPro
 ms.topic: article
@@ -73,7 +73,7 @@ You can look up the applications to which any individual user has granted permis
 
 5. Select **Applications**.
 
-This will show you the apps that are assigned to the user and what permissions the applcations have.
+This will show you the apps that are assigned to the user and what permissions the applications have.
 
 ### Steps for having your users enumerate their application access
 
@@ -96,7 +96,7 @@ The simplest way to verify the Illicit Consent Grant attack is to run [Get-Azure
 
 1. Sign in to the computer that you will run the script from with local administrator rights.
 
-2. Download or copy the [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script from GitHub to a folder from which you will run the scruipt. This will be the same folder to which the output "permissions.csv" file will be written.
+2. Download or copy the [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script from GitHub to a folder from which you will run the script. This will be the same folder to which the output "permissions.csv" file will be written.
 
 3. Open a PowerShell instance as an administrator and open to the folder you saved the script to.
 

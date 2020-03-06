@@ -37,7 +37,7 @@ If you're an admin, [admin.microsoft.com](https://admin.microsoft.com) is your g
                     <a href="what-is-help.md#integrated-help">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -56,7 +56,7 @@ If you're an admin, [admin.microsoft.com](https://admin.microsoft.com) is your g
                     <a href="what-is-help.md#modern-self-help-powered-by-ai">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -75,7 +75,7 @@ If you're an admin, [admin.microsoft.com](https://admin.microsoft.com) is your g
                     <a href="what-is-help.md#guides-and-articles">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -92,7 +92,7 @@ If you're an admin, [admin.microsoft.com](https://admin.microsoft.com) is your g
 ## Integrated help
 Help is integrated throughout the admin center, so it's right there when you need it. At the top of many pages, you'll find inline help text that provides an informational overview of the task at hand, as well as links to articles that let you quickly find official documentation for more in-depth learning.
 
-![Groups page showing inline help and links to articles](../media/integrated-help.png)
+![Groups page showing inline help and links to articles](../../media/integrated-help.png)
 
 ## Modern self-help powered by AI
 
@@ -101,7 +101,7 @@ you'll get the steps plus a few articles we think will help you. We use machine 
 
 Or, for those times when you don't quite know how to get something done in your specific situation, use the Support Assistant. This experience is currently available only in English. Just use the toggle at the top of the "Need Help" pane to turn it on. The Support Assistant provides a conversational interface for getting help. Enter your query, and the chatbot will ask clarifying questions to get you to the right answer for your specific situation. Think of it as your virtual helper to discover solutions and complete tasks.
 
-![Modern self-help](../media/help-options.png)
+![Modern self-help](../../media/help-options.png)
 
 Of course, sometimes questions are best answered by humans. If our modern self-help doesn't have the answer, you always have the option to contact our support agents.
 

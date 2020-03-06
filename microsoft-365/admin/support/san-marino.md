@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for San Marino
 author: cmcatee-MSFT
 f1.keywords:

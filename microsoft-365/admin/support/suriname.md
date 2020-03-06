@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Suriname
 author: cmcatee-MSFT
 f1.keywords:

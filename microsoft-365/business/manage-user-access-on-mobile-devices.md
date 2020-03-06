@@ -19,12 +19,13 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
-description: "Learn about protection policies that can help secure access to Office apps from mobile devices."
+description: "Learn about protection policies that allow you to manage how users access Office apps and work files from mobile devices."
 ---
 
 # Manage how users access Office documents on mobile devices
