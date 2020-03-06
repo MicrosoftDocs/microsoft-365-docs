@@ -20,11 +20,12 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: "Overview of the setup steps for Microsoft 365 Business."
+description: "Learn the setup steps for Microsoft 365 Business, from subscribing, to adding a domain and users, to setting up security policies, and more."
 ---
 
 # Overview of setup

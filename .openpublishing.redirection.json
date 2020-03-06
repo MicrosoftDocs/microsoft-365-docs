@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/commerce/subscriptions/what-happens-if-i-cancel.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/what-does-switching-plans-do-to-my-service-and-billing.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/subscriptions/upgrade-to-a-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/why-cant-i-change-plans.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/subscriptions/upgrade-to-a-different-plan",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/commerce/licenses/remove-licenses-from-subscription.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/licenses/buy-licenses",
       "redirect_document_id": false

@@ -20,11 +20,12 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: "Help your users install Office apps."
+description: "Help your users install Office apps on Windows 10 devices and easily install Office on Windows 10 PCs from the Microsoft 365 Business admin center."
 ---
 
 # Help your users install Office on Windows 10 devices
@@ -56,6 +57,6 @@ If you found this video helpful, check out the [complete training series for sma
     
       :::image type="content" source="../media/sendemailtousers.png" alt-text="Select users to send email with Office download link.":::
 
-## See also
+## For more on setting up and using Microsoft 365 Business
 
 [Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

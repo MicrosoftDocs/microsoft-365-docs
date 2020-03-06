@@ -53,9 +53,6 @@ With retention labels, you can:
     
    - Users no longer need to know about data governance policies - they can instead focus on their work.
 
-  > [!NOTE]
-  > The capability to apply labels automatically requires a minimum of an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been automatically labeled in a site or their mailbox is selected for automatic labeling. Users who simply have read-only access to content or reply to labeled emails do not require this license.
-      
 - **Implement records management across Office 365**, including both email and documents. You can use a retention label to classify content as a record. When this happens, the label can't be changed or removed, and the content can't be edited or deleted. 
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that arrive in that location inherit the default retention label.  
@@ -263,8 +260,6 @@ You can choose to apply retention labels to content automatically when that cont
     
 ![Choose condition page for auto-apply label](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
-Auto-applying retention labels that are configured for the first two options requires an Office 365 Enterprise E5 subscription. If you use the option for trainable classifers, this capability has [additional licensing requirements](classifier-getting-started-with.md#licensing-requirements).
-
 It can take up to seven days for auto-apply retention labels to be applied to all content that matches the conditions you've configured.
   
 > [!TIP]
@@ -325,7 +320,7 @@ For an example configuration, see [How to prepare for and use a built-in classif
 
 ## Applying a default retention label to all content in a SharePoint library, folder, or document set
 
-In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location get the default retention label (default labels are an E5 feature).
+In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location get the default retention label.
   
 For a document library, this is done on the **Library settings** page for a document library. When you choose the default retention label, you can also choose to apply it to existing items in the library. 
   
