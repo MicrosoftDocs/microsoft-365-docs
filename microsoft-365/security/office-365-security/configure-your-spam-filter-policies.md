@@ -20,7 +20,7 @@ description: "Basic spam filter settings include selecting the action to take on
 
 # Configure anti-spam policies in Office 365
 
-If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, your email messages are automatically protected against spam by EOP. EOP uses anti-spam policies (also known as spam filter policies or content filter policies) as part of your organization's overall defense against spam. For more information, see [Anti-spam protection in Office 365](anti-spam-protection.md).
+If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, inbound email messages are automatically protected against spam by EOP. EOP uses anti-spam policies (also known as spam filter policies or content filter policies) as part of your organization's overall defense against spam. For more information, see [Anti-spam protection in Office 365](anti-spam-protection.md).
 
 Admins can view, edit, and configure (but not delete) the default anti-spam policy. For greater granularity, you can also create custom anti-spam policies that apply to specific users, groups, or domains in your organization. Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.
 
@@ -28,7 +28,7 @@ You can configure anti-spam policies in the Office 365 Security & Compliance Cen
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>.
+- You open the Security & Compliance Center at <https://protection.office.com/>.To go directly to the **Anti-spam settings** page, use <https://protection.office.com/antispam>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
@@ -117,7 +117,7 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
       Repeat these steps as many times as necessary.
 
-      The senders you added appear in the **Allowed Sender** section on the flyout. To delete a sender, click ![Remove button](../../media/scc-remove-icon.png).
+      The senders you added appear in the **Allowed Sender** section on the flyout. To delete a sender, click ![Remove icon](../../media/scc-remove-icon.png).
 
       When you're finished, click **Save**.
 
@@ -129,7 +129,7 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
       Repeat these steps as many times as necessary.
 
-      The domains you added appear in the **Allowed Domain** section on the flyout. To delete a domain, click ![Remove button](../../media/scc-remove-icon.png).
+      The domains you added appear in the **Allowed Domain** section on the flyout. To delete a domain, click ![Remove icon](../../media/scc-remove-icon.png).
 
       When you're finished, click **Save**.
 
@@ -252,11 +252,9 @@ You can't disable the default anti-spam policy.
 
 By default, anti-spam policies are given a priority that's based on the order they were created in (newer polices are lower priority than older policies). A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies). No two policies can have the same priority.
 
- **Notes**:
+Custom anti-spam policies are displayed in the order they're processed (the first policy has the **Priority** value 0). The default anti-spam policy named **Default spam filter policy** has the priority value **Lowest**, and you can't change it.
 
-- In the Security & Compliance Center, you can only change the priority of the anti-spam policy after you create it. In PowerShell, you can override the default priority when you create the spam filter rule (which can affect the priority of existing rules).
-
-- In the Security & Compliance Center, custom anti-spam policies are displayed in the order they're processed (the first policy has the **Priority** value 0). The default anti-spam policy named **Default spam filter policy** has the priority value **Lowest**, and you can't change it.
+ **Note**: In the Security & Compliance Center, you can only change the priority of the anti-spam policy after you create it. In PowerShell, you can override the default priority when you create the spam filter rule (which can affect the priority of existing rules).
 
 To change the priority of a policy, move the policy up or down in the list (you can't directly modify the **Priority** number in the Security & Compliance Center).
 
@@ -334,7 +332,7 @@ Creating an anti-spam policy in PowerShell is a two-step process:
 
 - You can configure the following settings on new spam filter policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:
 
-  - Create the new policy as disabled (_Enabled_ `$false` on the **New-HostedContentFilterPolicy** cmdlet).
+  - Create the new policy as disabled (_Enabled_ `$false` on the **New-HostedContentFilterRule** cmdlet).
 
   - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-HostedContentFilterRule** cmdlet).
 
@@ -432,10 +430,10 @@ To return detailed information about a specific spam filter rule, use this synta
 Get-HostedContentFilterRule -Identity "<RuleName>" | Format-List [<Specific properties to view>]
 ```
 
-This example returns all the property values for the spam filter rule named Executives.
+This example returns all the property values for the spam filter rule named Contoso Executives.
 
 ```PowerShell
-Get-HostedContentFilterRule -Identity "Executives" | Format-List
+Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 ```
 
 For detailed syntax and parameter information, see [Get-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedcontentfilterrule).

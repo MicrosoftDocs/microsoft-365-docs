@@ -23,7 +23,7 @@ description: "Admins can learn how to configure their on-premises Exchange envir
 > [!IMPORTANT]
 > This topic is only for standalone EOP customers in hybrid environments. This topic does not apply to Office 365 customers with Exchange Online mailboxes.
 
-If you're a standalone Exchange Online Protection (EOP) customer in a hybrid environment (you're using EOP to protect mailboxes in an on-premises Exchange organization), you need to configure your on-premises Exchange organization to recognize the spam filtering verdict of EOP, and to act on these messages accordingly.
+If you're a standalone Exchange Online Protection (EOP) customer in a hybrid environment, you need to configure your on-premises Exchange organization to recognize the spam filtering verdict of EOP, and to enforce the default action for spam, which is to deliver the spam messages to the on-premises user's Junk Email folder.
 
 Specifically, you need to create mail flow rules (also known as transport rules) in your on-premises Exchange organization with conditions that find messages with any of the following EOP anti-spam headers and values, and actions that set the spam confidence level (SCL) of those messages to 6:
 
@@ -31,7 +31,7 @@ Specifically, you need to create mail flow rules (also known as transport rules)
 
 - `X-Forefront-Antispam-Report: SFV:SKS` (message marked as spam by mail flow rules in EOP before spam filtering)
 
-- `X-Forefront-Antispam-Report: SFV:SKB` (message marked as spam by spam filtering due to the sender's email address or email domain being in the sender block list or the domain block list)
+- `X-Forefront-Antispam-Report: SFV:SKB` (message marked as spam by spam filtering due to the sender's email address or email domain being in the sender block list or the domain block list in EOP)
 
 For more information about these header values, see [Anti-spam message headers](anti-spam-message-headers.md).
 
@@ -44,7 +44,7 @@ This topic describes how to create these mail flow rules the Exchange admin cent
 
 - You need to be assigned permissions in the on-premises Exchange environment before you can do these procedures. Specifically, you need to be assigned the **Transport Rules** role, which is assigned to the **Organization Management**, **Compliance Management**, and **Records Management** roles by default. For more information, see [Add members to a role group](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group).
 
-- If and when a message is delivered to the Junk Email folder is controlled by a combination of the following settings in an on-premises Exchange organization:
+- If and when a message is delivered to the Junk Email folder in an on-premises Exchange organization is controlled by a combination of the following settings:
 
   - The _SCLJunkThreshold_ parameter value on the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) cmdlet in the Exchange Management Shell. The default value is 4, which means an SCL of 5 or higher should deliver the message to the user's Junk email folder.
 
@@ -100,33 +100,25 @@ Repeat these steps for the remaining EOP spam verdict values (**SFV:SPM**, **SFV
 
 ## Use the Exchange Management Shell to create mail flow rules that set the SCL of EOP spam messages
 
-Use the following syntax:
+Use the following syntax to create the three mail flow rules:
 
-   ```Powershell
-   New-TransportRule -Name "<RuleName>" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6
-   ```
-
-   ```Powershell
-   New-TransportRule -Name "<RuleName>" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKS" -SetSCL 6
-   ```
-
-   ```Powershell
-   New-TransportRule -Name "<RuleName>" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
-   ```
+```Powershell
+New-TransportRule -Name "<RuleName>" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "<EOPSpamFilteringVerdict>" -SetSCL 6
+```
 
 For example:
 
-   ```Powershell
-   New-TransportRule -Name "EOP SFV:SPM to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6
-   ```
+```Powershell
+New-TransportRule -Name "EOP SFV:SPM to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6
+```
 
-   ```Powershell
-   New-TransportRule -Name "EOP SFV:SKS to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKS" -SetSCL 6
-   ```
+```Powershell
+New-TransportRule -Name "EOP SFV:SKS to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKS" -SetSCL 6
+```
 
-   ```Powershell
-   New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
-   ```
+```Powershell
+New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
+```
 
 For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
 
@@ -142,9 +134,9 @@ To verify that you've successfully configured standalone EOP to deliver spam to 
   Get-TransportRule -Identity "<RuleName>" | Format-List
   ```
 
-- In an external email system **that doesn't scan outbound messages for spam**, send a Generic Test for Unsolicited Bulk Email (GTUBE) test message to an affected recipient, and confirm that it's delivered to their Junk Email folder. A GTUBE message is similar to the European Institute for Computer Antivirus Research (EICAR) text file for testing malware settings.
+- In an external email system **that doesn't scan outbound messages for spam**, send a Generic Test for Unsolicited Bulk Email (GTUBE) message to an affected recipient, and confirm that it's delivered to their Junk Email folder. A GTUBE message is similar to the European Institute for Computer Antivirus Research (EICAR) text file for testing malware settings.
 
-  To send a GTUBE message, include the following text in the body of a plain text email message on a single line, without any spaces or line breaks:
+  To send a GTUBE message, include the following text in the body of an email message on a single line, without any spaces or line breaks:
 
   ```text
   XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X

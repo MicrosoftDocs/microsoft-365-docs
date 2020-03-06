@@ -62,9 +62,9 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |_MarkAsSpamBulkMail_|On|On|This setting is only available in PowerShell.|
 |
 
-There are several other Advanced Spam Filter (ASF) settings in the anti-spam policy that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this topic.
+There are several other Advanced Spam Filter (ASF) settings in anti-spam policies that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this topic.
 
-We recommend that you turn these ASF settings **OFF** for both **Standard** and **Strict** levels:
+We recommend that you turn these ASF settings **Off** for both **Standard** and **Strict** levels:
 
 |||
 |----|---|
@@ -86,14 +86,18 @@ We recommend that you turn these ASF settings **OFF** for both **Standard** and 
 |**NDR backscatter** (_MarkAsSpamNdrBackscatter_)||
 |
 
-#### EOP outbound spam filter policy settings
+#### EOP outbound spam policy settings
 
-|Security feature name|Standard|Strict|Comment|
-|---------|---------|---------|---------|
-|Outbound spam policy Recipient Limits - External hourly limit|500|400||
-|Outbound spam policy Recipient Limits - Internal hourly limit|1000|800||
-|Outbound spam policy Recipient Limits - Daily limit|1000|800||
-|Action when a user exceeds the limits|Restrict the user from sending mail|Restrict the user from sending mail||
+To create and configure outbound spam policies, see [Configure outbound spam filtering in Office 365](configure-the-outbound-spam-policy.md).
+
+||||
+|---|---|---|---|
+|**Security feature name**|**Standard**|**Strict**|**Comment**|
+|**Maximum number of recipients per user: External hourly limit** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
+|**Maximum number of recipients per user: Internal hourly limit** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
+|**Maximum number of recipients per user: Daily limit** <br/><br/> _RecipientLimitPerDay_|1000|800||
+|**Action when a user exceeds the limits** <br/><br/> _ActionWhenThresholdReached_|**Restrict the user from sending mail** <br/><br/> `BlockUser`|**Restrict the user from sending mail** <br/><br/> `BlockUser`||
+|
 
 ### EOP anti-malware policy settings
 
@@ -102,7 +106,7 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 |||||
 |---|---|---|---|
 |**Security feature name**|**Standard**|**Strict**|**Comment**|
-|**Malware detection response** <br/><br/> _Action_|No <br/><br/> _DeleteMessage_|No <br/><br/> _DeleteMessage_|If malware is detected in an email attachment, the message is quarantined and can be released only by an admin.|
+|**Do you want to notify recipients if their messages are quarantined?** <br/><br/> _Action_|No <br/><br/> _DeleteMessage_|No <br/><br/> _DeleteMessage_|If malware is detected in an email attachment, the message is quarantined and can be released only by an admin.|
 |**Common Attachment Types Filter** <br/><br/> _EnableFileFilter_|On <br/><br/> `$true`|On <br/><br/> `$true`|This setting quarantines messages that contain executable attachments based on file type, regardless of the attachment content.|
 |**Malware Zero-hour Auto Purge** <br/><br/> _ZapEnabled_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Notify internal senders** of the undelivered message <br/><br/> _EnableInternalSenderNotifications_|Disabled <br/><br/> `$false`|Disabled <br/><br/> `$false`||

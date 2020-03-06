@@ -35,7 +35,7 @@ This topic describes how to configure the default connection filter policy in th
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>.
+- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Anti-spam settings** page, use <https://protection.office.com/antispam>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
@@ -51,7 +51,7 @@ This topic describes how to configure the default connection filter policy in th
 
 1. In the Security & Compliance Center and go to **Threat management** \> **Policy** \> **Anti-Spam**.
 
-2. On the **Anti-spam settings** page, click the drop down next to **Connection filter policy**, and then click **Edit policy**.
+2. On the **Anti-spam settings** page, expand **Connection filter policy** by clicking ![Expand icon](../../media/scc-expand-icon.png), and then click **Edit policy**.
 
 3. In the **Default** flyout that appears, configure any of the following settings:
 
@@ -155,7 +155,7 @@ You can audit the rule, test the rule, activate the rule during a specific time 
 
 Typically, adding an IP address or address range to the IP Allow List means you trust all incoming messages from that email source. But what if that source sends email from multiple domains, and you want to skip spam filtering for some of those domains, but not others? You can't use the IP Allow List alone to do this, but you can use the IP Allow List in combination with a mail flow rule.
 
-For example, the source email server 192.16.1.25 sends email from the domains contoso.com, fabrikam.com, and tailspintoys.com, but you only want to skip spam filtering for messages from senders in fabrikam.com. To do this, use the following steps:
+For example, the source email server 192.168.1.25 sends email from the domains contoso.com, fabrikam.com, and tailspintoys.com, but you only want to skip spam filtering for messages from senders in fabrikam.com. To do this, use the following steps:
 
 1. Add 192.168.1.25 to the IP Allow List.
 
