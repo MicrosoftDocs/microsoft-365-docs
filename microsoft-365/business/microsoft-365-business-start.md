@@ -21,11 +21,12 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "Learn to set up Microsoft 365 Business."
+description: "Learn about Microsoft 365 Business, how to set it up, and how to prepare your users' devices and PCs to ensure they're protected by Microsoft 365 Business."
 ---
 
 # Get started with Microsoft 365 Business

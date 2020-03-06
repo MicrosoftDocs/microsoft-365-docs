@@ -130,6 +130,7 @@
 ## Office 365 operated by 21Vianet
 ### [About Office 365 operated by 21Vianet](services-in-china/services-in-china.md)
 ### [Buy or try subscriptions](services-in-china/buy-or-try-subscriptions.md)
+### [Download the Office app for Android for Office 365 operated by 21Vianet](services-in-china/download-office-app-for-Android.md)
 ### [Download the Office app for iOS for Office 365 operated by 21Vianet](services-in-china/download-office-app-for-iOS.md)
 ### [View your bill or get a Fapiao](services-in-china/view-your-bill-or-get-a-fapiao.md)
 ### [Apply for a Fapiao](services-in-china/apply-for-a-fapiao.md)
