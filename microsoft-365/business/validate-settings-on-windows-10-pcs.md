@@ -19,11 +19,12 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: "Learn how to validate Microsoft 365 Business app protection settings on Windows 10 devices."
+description: "Learn how to verify that Microsoft 365 Business app protection settings took effect on your users' Windows 10 devices."
 ---
 
 # Validate device protection settings on Windows 10 PCs

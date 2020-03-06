@@ -24,10 +24,10 @@ The following features are generally available (GA) in the latest release of Mic
 ## February 2020
 - [Incidents](incidents-overview.md) <br> Know exactly where an attack started and other details to help you see the extent of the attack.
 - [Automated investigation and response](mtp-autoir.md) <br> AIR enables your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents.
-- [Advanced hunting enhancements](advanced-hunting-query-emails-devices.md) <br> Proactively hunt for threats across your Windows devices and Office 365 emails. 
+- [Advanced hunting enhancements](advanced-hunting-overview.md) <br> Proactively hunt for threats across the modern workspace with Kusto Query Language and an security-optimized schema.
 
 ## March 2019
 
-- [Advanced hunting](hunting.md) <br> Proactively find threats in your organization affecting email and data, devices, and identities.
+- Advanced hunting <br> Landing page to various hunting capabilities that let you proactively find threats affecting email and data, devices, and identities.
 - [Microsoft Secure Score](microsoft-secure-score.md) <br> Measurement of an organization's security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. 
 - [Reports](monitoring-and-reporting.md) <br>  Features a host of cards covering a variety of areas that security analysts and administrators track as part of their day-to-day operations.
