@@ -350,26 +350,19 @@ The following table describes the file and page activities in SharePoint Online 
 
 #### The app\@sharepoint user in audit records
 
-In audit records for some file activities (and other SharePoint-related activities), you may notice the user who performed the activity (identified in the User and UserId fields) is app@sharepoint. This indicates that the "user" who performed the activity was an application that was granted permissions to SharePoint and perform an action on behalf of a user, admin, or service. This process of giving elevated permissions to an app is called App-Only access. This indicates that the authentication presented to SharePoint was made by an app, instead of a user. authenticated an app (instead of a user) 
+In audit records for some file activities (and other SharePoint-related activities), you may notice the user who performed the activity (identified in the User and UserId fields) is *app@sharepoint*. This indicates that the "user" who performed the activity was an application. In this case, the application was granted permissions in SharePoint to perform organization-wide actions (such as search a SharePoint site or OneDrive account) on behalf of a user, admin, or service. This process of giving permissions to an application is called *App-Only* access. This indicates that the authentication presented to SharePoint to perform an action was made by an application, instead of a user. This is why the app@sharepoint user is identified in certain audit records.
 
-was accessed but rather just an assertion that the authentication presented to SPO was App-only (as opposed to user only or app+user).
-
-nvoking SharePoint Online with an App Only access
-
-When using SharePoint Online you can define applications in Azure AD and these applications can be granted permissions to SharePoint, 
-
-This system account is often identified as the user for audit records that correspond to actions that may require elevated permissions to perform. The app@sharepoint system account often performs actions on behalf of a user, admin, or service that triggered the task. 
-
-
-For example, app@sharepoint system is often identified as the user for "Performed search query" and "Accessed file" events. That's because the service performs search queries and accesses files when applying eDiscovery holds and retention policy to sites and OneDrive accounts, and auto-applying retention or sensitivity labels to site content.
+For example, app@sharepoint is often identified as the user for "Performed search query" and "Accessed file" events. That's because an application with app-only access in your organization performs search queries and accesses files when applying retention policies to sites and OneDrive accounts.
 
 Here are a few other scenarios where app@sharepoint may be identified in an audit record as the user who performed an activity:
 
-- Office 365 Groups. When a user or admin creates a new group, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group. These tasks are performed on behalf of the user who created the group. 
+- Office 365 Groups. When a user or admin creates a new group, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group. These tasks are performed an application on behalf of the user who created the group.
 
 - Microsoft Teams. Similar to Office 365 groups, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group when a team is created.
 
-In these and other scenarios, you'll notice that multiple audit records with app@sharepoint as the specified user and that correspond to the same user-, admin-, or service-initiated activity are created within a very short time frame (for example, within a few seconds). This also indicates they were probably triggered by the same task. Also, the ApplicationDisplayName and EventData fields in the audit record may help you identify the scenario or service that triggered the event.
+- Compliance features. When an admin implements compliance features, such as retention policies, eDiscovery holds, and auto-applying sensitivity labels.
+
+In these and other scenarios, you'll also notice that multiple audit records with app@sharepoint as the specified user were created within a very short time frame; often, within a few seconds of each other. This also indicates they were probably triggered by the same user-initiated task. Also, the ApplicationDisplayName and EventData fields in the audit record may help you identify the scenario or application that triggered the event.
 
 ### Folder activities
 
