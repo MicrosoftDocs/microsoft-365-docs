@@ -54,6 +54,6 @@ See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-dev
   
 See [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md) to complete setting up Android and iOS devices. 
   
-## See also
+## For more on setting up and using Microsoft 365 Business
 
 [Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

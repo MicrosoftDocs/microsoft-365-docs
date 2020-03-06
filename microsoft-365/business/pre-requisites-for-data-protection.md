@@ -20,14 +20,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
-description: "Learn about what is needed to set up your organization with Microsoft 365 Business and protect work data on your users' devices."
+description: "Learn about the requirements for setting up your organization with Microsoft 365 Business and protecting work data on your users' devices."
 ---
 
 # Prerequisites for protecting data on devices with Microsoft 365 Business
 
 The first step in setting up your organization with Microsoft 365 Business is to make sure you can meet the prerequisites.
   
-## Prerequisites
+## Requirements for setting up your organization with Microsoft 365 Business
 
 - Windows devices must be running Windows 7 Professional, Windows 8 Pro, or Windows 8.1 Pro.
     
