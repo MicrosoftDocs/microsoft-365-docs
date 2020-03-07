@@ -69,10 +69,11 @@ With the query in the query editor, select **Create detection rule** and specify
 - **Detection name** — name of the detection rule
 - **Frequency** — interval for running the query and taking action. [See additional guidance below](#rule-frequency)
 - **Alert title** — title displayed with alerts triggered by the rule
-- **Severity** — potential risk of the component or activity identified by the rule. [Read about alert severities](alerts-queue.md#severity)
-- **Category** — type of threat component or activity, if any. [Read about alert categories](alerts-queue.md#understanding-alert-categories)
+- **Severity** — potential risk of the component or activity identified by the rule
+- **Category** — threat component or activity identified by the rule
+- **MITRE ATT&CK technique** — attack technique identified by the rule as documented in the MITRE ATT&CK framework
 - **Description** — more information about the component or activity identified by the rule 
-- **Recommended actions** — additional actions that responders might take in response to an alert 
+- **Recommended actions** — additional actions that responders might take in response to an alert
 
 #### Rule frequency
 When saved, custom detections rules immediately run. They then run again at fixed intervals based on the frequency you choose. Rules that run less frequently will have longer lookback durations:
@@ -99,13 +100,23 @@ These actions are applied to machines in the `DeviceId` column of the query resu
 - **Run antivirus scan** — performs a full Windows Defender Antivirus scan on the machine
 - **Initiate investigation** — initiates an [automated investigation](mtp-autoir.md) on the machine
 
+### 4. Set the rule scope.
+Set the scope to specify which devices are covered by the rule. The scope influences rules that check devices and doesn't affect rules that check only mailboxes and user accounts or identities.
+
+When setting the scope, you can select:
+
+- All devices
+- Specific device groups
+
+Only data from devices in scope will be queries. Also, actions will be taken only on these devices. 
+
 #### Actions on files
 These actions are applied to files in the `SHA1` or the `InitiatingProcessSHA1` column of the query results:
 - **Allow/Block** — automatically adds the file to your [Microsoft Defender ATP custom indicator list](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) so that it is always allowed to run or blocked from running. You can set the scope of this action so that it is taken only on selected machine groups. This scope is independent of the scope of the rule.
 - **Quarantine file** — deletes the file from its current location and places a copy in quarantine
 
-### 4. Click **Create** to save and turn on the rule.
-When saved, the custom detection rule immediately runs. It runs again every 24 hours to check for matches, generate alerts, and take response actions.
+### 5. Review and turn on the rule.
+After reviewing the rule, click **Create** to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
 
 ## Manage existing custom detection rules
 You can view the list of existing custom detection rules, check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.
@@ -123,7 +134,7 @@ To view all existing custom detection rules, navigate to **Hunting** > **Custom 
 
 To view comprehensive information about a custom detection rule, select the name of rule from the list of rules in **Hunting** > **Custom detections**. This opens a page about the custom detection rule with general information about the rule, including the details of the alert, run status, and scope. It also provides the list of triggered alerts and triggered actions.
 
-![Custom detection rule details page](../../images/custom-detection-details.png)<br>
+![Custom detection rule details page](../../media/custom-detection-details.png)<br>
 *Custom detection rule details*
 
 You can also take the following actions on the rule from this page:
