@@ -120,14 +120,7 @@ All disposition actions can be audited. Turn on auditing at least one day before
 
 Content awaiting a disposition review is deleted only after a reviewer chooses to permanently delete the content. When the reviewer chooses this option, the content in the SharePoint site or OneDrive account becomes eligible for the standard cleanup process described in [How a retention policy works with content in place](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
   
-This means that:
-  
-- Content in a document library will be moved to the first-stage Recycle Bin **within 7 days** of disposition, and then permanently deleted **93 days** after that. The Recycle Bin is not indexed by search and therefore its contents are not available to an eDiscovery hold.
 
-- Content in the Preservation Hold library will be permanently deleted **within 7 days** of disposition.
-
-- Items in an Exchange mailbox will be permanently deleted **within 14 days** of disposition. (Note that 14 days is the default setting but it can be configured up to 30 days.)
-    
 ## View pending dispositions and disposed items
 
 From the **Pending disposition** page, you can view both pending and completed dispositions for a specific retention label: 
