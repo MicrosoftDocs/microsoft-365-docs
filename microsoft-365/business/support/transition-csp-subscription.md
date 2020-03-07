@@ -5,7 +5,7 @@ author: jasongroce
 f1.keywords:
 - NOCSH
 ms.custom:
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 ms.author: jasgro
 ms.topic: article 
 ms.prod: microsoft-365-business
