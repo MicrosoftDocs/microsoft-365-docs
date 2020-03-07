@@ -116,7 +116,7 @@ If you need to convert existing protection templates to labels, use the Azure po
 
 ## Information Rights Management (IRM) options and sensitivity labels
 
-Sensitivity labels that you configure to apply encryption remove the complexity from users to specify their own encryption settings. In Office apps, these individual encryption settings can still be manually configured by users by using Information Rights Management (IRM) options. For example:
+Sensitivity labels that you configure to apply encryption remove the complexity from users to specify their own encryption settings. In many Office apps, these individual encryption settings can still be manually configured by users by using Information Rights Management (IRM) options. For example, on Windows computers:
 
 - For a document:  **File** > **Info** > **Protect Document** > **Restrict Access**
 - for an email: From the **Options** tab > **Encrypt** 
@@ -134,7 +134,7 @@ If the document or email is already labeled, a user can do any of these actions 
 For a more consistent label experience with meaningful reporting, provide user guidance to use labels exclusively. For exception cases where users must assign their own permissions, provide labels that [let users assign their own permissions](encryption-sensitivity-labels.md#let-users-assign-permissions).
 
 > [!NOTE]
-> If users manually remove encryption from a labeled document that's stored in SharePoint or OneDrive and you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), the label encryption will be automatically restored the next time the document is accessed. 
+> If users manually remove encryption from a labeled document that's stored in SharePoint or OneDrive and you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), the label encryption will be automatically restored the next time the document is accessed or downloaded. 
 
 ## Apply sensitivity labels to files, emails, and attachments
 
