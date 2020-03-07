@@ -116,7 +116,7 @@ If you need to convert existing protection templates to labels, use the Azure po
 
 ## Information Rights Management (IRM) options and sensitivity labels
 
-Sensitivity labels that you configure to apply encryption remove the complexity from users to specify their own encryption settings. In many Office apps, these individual encryption settings can still be manually configured by users by using Information Rights Management (IRM) options. For example, on Windows computers:
+Sensitivity labels that you configure to apply encryption remove the complexity from users to specify their own encryption settings. In many Office apps, these individual encryption settings can still be manually configured by users by using Information Rights Management (IRM) options. For example, for Windows apps:
 
 - For a document:  **File** > **Info** > **Protect Document** > **Restrict Access**
 - for an email: From the **Options** tab > **Encrypt** 
