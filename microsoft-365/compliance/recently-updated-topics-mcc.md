@@ -107,7 +107,7 @@ New articles to support the preview release of the insider risk management solut
 
 ### Records management
 
-[Overview of disposition reviews](disposition-reviews.md#permissions-for-disposition) (updated)<br>Resolved a long-standing support issue by clarifying that the View-Only Audit Logs role must be assigned in the Exchange admin center.
+[Overview of disposition reviews](disposition-records.md#permissions-for-disposition) (updated)<br>Resolved a long-standing support issue by clarifying that the View-Only Audit Logs role must be assigned in the Exchange admin center.
 
 ### Sensitivity labels
 

@@ -157,7 +157,7 @@ In addition, you can export the items in either view as a .csv file that you can
  
 When records are disposed, an audit entry with the operation name of **RecordDelete** is added to the audit log.
 
-For more information about auditing, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance).
+For more information about auditing, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
 
 
 
