@@ -67,7 +67,8 @@ If a hold that's associated with an eDiscovery case in the Security & Compliance
 For more information about eDiscovery cases and holds, see [eDiscovery cases](ediscovery-cases.md).
 
 ## Inactive mailboxes and auto-expanding archive
- An inactive mailbox that is configured with an Auto-Expanding Archive cannot be recovered or restored. In scenarios, where it is necessary to recover data for these specific types of mailboxes it is recommended that the data is exported from the mailbox using the Content Search tool and imported to the desired location. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
+ An inactive mailbox that is configured with an auto-expanding archive cannot be recovered or restored. In scenarios where it is necessary to recover data for these specific types of mailboxes, it is recommended that the data is exported from the mailbox using the Content Search tool and imported to the desired location.
+ For step-by-step procedures to search mailboxes and export search results, please see [Content Search in Office 365](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide) and [Export Content Search results](https://docs.microsoft.com/microsoft-365/compliance/export-search-results?view=o365-worldwide).
 
 Content Search in Office 365
 Export Content Search results
