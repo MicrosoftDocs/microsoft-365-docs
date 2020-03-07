@@ -40,20 +40,20 @@ Specifically, you need to look for a header field named **X-Forefront-Antispam-R
 
 - **SFV:SKB**: The message was marked as spam because it matched a block entry in a spam filter policy (for example, blocked senders or blocked sender domains). For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md).
 
-- **SFV:BULK**: The message was identified as bulk email instead of spam by the anti-spam filter. This happens when the Bulk Complaint Level (BCL) value of the message is **greater than** the bulk threshold that's defined in the anti-spam policy settings (a lower BCL value indicates the message is more likely to be spam). You can see the BCL value in the **X-Microsoft-Antispam** header field.
+- **SFV:BULK**: The message was identified as bulk email instead of spam by the anti-spam filter. This happens when the bulk complaint level (BCL) value of the message is **greater than** the bulk threshold that's defined in the anti-spam policy settings (a higher BCL indicates the message is more likely to be spam). You can see the BCL value in the **X-Microsoft-Antispam** header field.
 
   Bulk email (also known as _gray mail_) is undesirable but non-malicious marketing or advertising email that was intentionally or unintentionally requested by the user. Different users have different expectations for how bulk email should be handled, so you can create different policies or rules that allow or block bulk email accordingly. For more information, see the following topics:
 
   - [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
-  - [Bulk Complaint Level values](bulk-complaint-level-values.md)
+  - [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md)
 
 - **CAT:SPOOF** or **CAT:PHISH**: Indicates that the message appears to be spoofed, meaning that the message source cannot be validated and could be suspicious.
 
   If the message was from a spoofed sender, the corresponding legitimate sender will need to verify their email domain's SPF and DKIM records in their public DNS. Check the **Authentication-Results** header field for more information. Although it may be difficult to get all senders to use proper email authentication methods, bypassing these checks can be extremely dangerous and is the top cause of spoofing and phishing messages.
 
 > [!NOTE]
-> • To learn more about other anti-spam message headers and values, see [Anti-spam message headers](anti-spam-message-headers.md). <br/><br/>• Other header fields and values that aren't specifically described are used exclusively by the Microsoft anti-spam team for diagnostic purposes. <br/><br/>• An **X-CustomSpam** header field in the message header indicates the message was marked as spam by Advanced Spam Filtering (ASF). We're in the process of moving ASF functionality to other parts of the filtering stack, and we recommend that you **turn off** the ASF settings that are currently available in anti-spam policies. For more information, see [Advanced spam filtering options](advanced-spam-filtering-asf-options.md).
+> * To learn more about other anti-spam message headers and values, see [Anti-spam message headers](anti-spam-message-headers.md). <br/><br/>* Other header fields and values that aren't specifically described are used exclusively by the Microsoft anti-spam team for diagnostic purposes. <br/><br/>* An **X-CustomSpam** header field in the message header indicates the message was marked as spam by Advanced Spam Filtering (ASF). We're in the process of moving ASF functionality to other parts of the filtering stack, and we recommend that you **turn off** the ASF settings that are currently available in anti-spam policies. For more information, see [Advanced spam filtering options](advanced-spam-filtering-asf-options.md).
 
 ## Solutions for too much spam
 

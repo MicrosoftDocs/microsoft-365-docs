@@ -48,7 +48,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |**Phishing email** detection action <br/><br/> _PhishSpamAction_|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`||
 |**High confidence phishing email** detection action <br/><br/> _HighConfidencePhishAction_|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`||
 |**Bulk email** detection action <br/><br/> _BulkSpamAction_|**Move message to Junk Email folder** <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`||
-|Bulk email threshold <br/><br/> _BulkThreshold_|6|4|The default value is currently 7, but we recommend that you change it to 6. For details, see [Bulk Complaint Level values](bulk-complaint-level-values.md).|
+|Bulk email threshold <br/><br/> _BulkThreshold_|6|4|The default value is currently 7, but we recommend that you change it to 6. For details, see [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md).|
 |Quarantine retention period <br/><br/> _QuarantineRetentionPeriod_|30 days|30 days||
 |**Safety Tips** <br/><br/> _InlineSafetyTipsEnabled_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |Allowed Senders <br/><br/> _AllowedSenders_|None|None||

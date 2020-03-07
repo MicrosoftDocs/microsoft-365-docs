@@ -22,7 +22,7 @@ description: "Outbound spam filtering is always enabled if you use the service f
 
 If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, outbound email messages are automatically checked for spam and unusual sending activity by EOP.
 
-Outbound spam from a user in your organization typically indicates a compromised account. Suspicious outbound messages are marked as spam (regardless of the spam confidence level or SCL) and are routed through the [high-risk-delivery pool](high-risk-delivery-pool-for-outbound-messages.md). Admins are automatically notified of suspicious outbound email activity and blocked users via [alert policies](../../compliance/alert-policies.md).
+Outbound spam from a user in your organization typically indicates a compromised account. Suspicious outbound messages are marked as spam (regardless of the spam confidence level or SCL) and are routed through the [high-risk delivery pool](high-risk-delivery-pool-for-outbound-messages.md) to help protect the reputation of the service (that is, keep Office 365 source email servers off of IP block lists). Admins are automatically notified of suspicious outbound email activity and blocked users via [alert policies](../../compliance/alert-policies.md).
 
 EOP uses outbound spam policies as part of your organization's overall defense against spam. For more information, see [Anti-spam protection in Office 365](anti-spam-protection.md).
 
@@ -40,7 +40,7 @@ You can configure outbound spam policies in the Office 365 Security & Compliance
 
 - For our recommended settings for outbound spam policies, see [EOP outbound spam filter policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings).
 
-- The default [alert policies](../../compliance/alert-policies.md) named **Email sending limit exceeded**, **Suspicious email sending patterns detected**, and **User restricted from sending email** already send email notifications to members of the **TenantAdmins** (**Global admins**) group about unusual outbound email activity and blocked users due to outbound spam. For more information, see [Verify the alert settings for restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)Therefore, consider the **notification** recipients in outbound spam policies as _non-admin_, or _non-global_ recipients to receive notifications about blocked users.
+- The default [alert policies](../../compliance/alert-policies.md) named **Email sending limit exceeded**, **Suspicious email sending patterns detected**, and **User restricted from sending email** already send email notifications to members of the **TenantAdmins** (**Global admins**) group about unusual outbound email activity and blocked users due to outbound spam. For more information, see [Verify the alert settings for restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). We recommend that you use these alert policies instead of the the notification options in outbound spam policies.
 
 ## Use the Security & Compliance Center to create outbound spam policies
 
@@ -79,7 +79,7 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
    - **Notify specific people if a sender is blocked due to sending outbound spam**:
 
      > [!NOTE]
-     > The default [alert policy](../../compliance/alert-policies.md) named **User restricted from sending email** already sends email notifications to members of the **TenantAdmins** (**Global admins**) group blocked users due to outbound spam. We recommend that you use the alert policy rather than this setting in the outbound spam policy to notify admins and other users. For instructions, see [Verify the alert settings for restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).
+     > The default [alert policy](../../compliance/alert-policies.md) named **User restricted from sending email** already sends email notifications to members of the **TenantAdmins** (**Global admins**) group when users are blocked due to exceeding the limits in the **Recipient Limits** section. We recommend that you use the alert policy rather than this setting in the outbound spam policy to notify admins and other users. For instructions, see [Verify the alert settings for restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).
 
      To enable this setting:
 
@@ -99,8 +99,6 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
 
      To disable this setting, clear the check box.
 
-     To see what this notification looks like, see [Sample notification when a sender is blocked sending outbound spam](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md).
-
 5. (Optional) Expand the **Recipient Limits** section to configure the limits and actions for suspicious outbound email messages:
 ]
    - **Maximum number of recipients per user**
@@ -109,11 +107,11 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
 
      - **External hourly limit**: The maximum number of external recipients per hour.
 
-     - **Internal hourly limit**: The maximum number of internal recipeints per hour.
+     - **Internal hourly limit**: The maximum number of internal recipients per hour.
 
      - **Daily limit**: The maximum total number of recipients per day.
 
-   - **Action when a user exceeds the limits above**: Configure the action to take when any one of the **Recipient Limits** are exceeded. For all actions, the recipients specified in the **User restricted from sending email** alert policy and in the **Notify specific people if a sender is blocked due to sending outbound spam** setting in the outbound spam policy (if used) receive email notifications.
+   - **Action when a user exceeds the limits above**: Configure the action to take when any one of the **Recipient Limits** are exceeded. For all actions, the recipients specified in the **User restricted from sending email** alert policy (and in the now redundant **Notify specific people if a sender is blocked due to sending outbound spam** setting in the outbound spam policy receive email notifications.
 
      - **Restrict the user from sending mail till the following day**: This is the default value. Email notifications are sent, and the user will be unable to send any more messages until the following day, based on UTC time. There is no way for the admin to override this block.
 
@@ -123,7 +121,7 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
 
        - The user will be unable to send any more messages until the following day, based on UTC time. There is no way for the admin to override this block.
 
-     - **Restrict the user from sending mail**: Email notifications are sent, the user is added to the [Restricted Users]<https://sip.protection.office.com/restrictedusers> portal in the Security & Compliance Center, and the user can't send email until they're removed from the **Restricted Users** list by an admin. After an admin removes the user from the list, the user won't be restricted again for that day. For instructions, see [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).
+     - **Restrict the user from sending mail**: Email notifications are sent, the user is added to the **[Restricted Users]<https://sip.protection.office.com/restrictedusers>** portal in the Security & Compliance Center, and the user can't send email until they're removed from the **Restricted Users** portal by an admin. After an admin removes the user from the list, the user won't be restricted again for that day. For instructions, see [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).
 
      - **No action, alert only**: Email notifications are sent.
 
@@ -251,14 +249,12 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 This example creates a new outbound spam filter policy named Contoso Executives with the following settings:
 
-- Send notifications to andy@contoso.com.
-
 - The recipient rate limits are restricted to smaller values that the defaults. For more information, see [Sending limits across Office 365 options](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
 
 - After one of the limits is reached, the user is prevented from sending messages.
 
 ```PowerShell
-New-HostedOutboundSpamFilterPolicy -Name "Contoso Executives" -NotifyOutboundSpam $true -NotifyOutboundSpamRecipients andy@contoso.com -RecipientLimitExternalPerHour 400 -RecipientLimitInternalPerHour 800 -RecipientLimitPerDay 800 -ActionWhenThresholdReached BlockUser
+New-HostedOutboundSpamFilterPolicy -Name "Contoso Executives" -RecipientLimitExternalPerHour 400 -RecipientLimitInternalPerHour 800 -RecipientLimitPerDay 800 -ActionWhenThresholdReached BlockUser
 ```
 
 For detailed syntax and parameter information, see [New-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterpolicy).
