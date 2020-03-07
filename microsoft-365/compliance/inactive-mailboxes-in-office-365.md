@@ -66,20 +66,20 @@ If a hold that's associated with an eDiscovery case in the Security & Compliance
   
 For more information about eDiscovery cases and holds, see [eDiscovery cases](ediscovery-cases.md).
 
-## Inactive mailboxes and auto-expanding archive
- An inactive mailbox that is configured with an auto-expanding archive cannot be recovered or restored. In scenarios where it is necessary to recover data for these specific types of mailboxes, it is recommended that the data is exported from the mailbox using the Content Search tool and imported to the desired location.
- For step-by-step procedures to search mailboxes and export search results, please see [Content Search in Office 365](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide) and [Export Content Search results](https://docs.microsoft.com/microsoft-365/compliance/export-search-results?view=o365-worldwide).
-
-Content Search in Office 365
-Export Content Search results
-
-
 ## Inactive mailboxes and Office 365 labels
 
 Labels in Office 365 help you classify email data in your organization for governance, and enforce retention rules based on that classification. A label can be applied to an email item either manually by users or automatically by administrators, and an email item can only have single label assigned to it. If a single email item in a user's mailbox has a label assigned to it (and it's configured to retain or retain and then delete the item) and the mailbox or the user's Office 365 account is deleted, the mailbox becomes an inactive mailbox. Similar to eDiscovery case holds, we don't recommend using labels to make a mailbox inactive. Instead, we recommend that you use a Litigation Hold or an Office 365 retention policy. In the case of labels, you might not realize that a label has been applied to an email item and then inadvertently make an inactive mailbox when you delete the user's account. 
   
 For more information about labels, see [Overview of labels in Office 365](labels.md).
   
+## Inactive mailboxes and auto-expanding archives
+
+An inactive mailbox that's configured with an auto-expanding archive can't be recovered or restored. In situations where it's necessary to recover data from an inactive mailbox with an auto-expanding archive, we recommended that you use the content search tool to export the data from the mailbox and then import to another mailbox. For step-by-step instructions to search an inactive mailbox and export the search results, see:
+
+- [Content Search in Office 365](https://docs.microsoft.com/microsoft-365/compliance/content-search)
+
+- [Export content search results](https://docs.microsoft.com/microsoft-365/compliance/export-search-results)
+
 ## Inactive mailboxes and Exchange MRM retention policies
 
 If an Exchange retention policy (the Messaging Records Management, or MRM, feature in Exchange Online) was applied to mailbox when it was made inactive, any deletion policies (which are retention tags configured with a **Delete** retention action) will continue to be processed on the inactive mailbox. That means items that are tagged with a deletion policy will be moved to the Recoverable Items folder when the retention period expires. Those items are purged from the inactive mailbox when the hold duration expires. If a hold duration isn't specified for the inactive mailbox, items in the Recover Items folder will be retained indefinitely. 
