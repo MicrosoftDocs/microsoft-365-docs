@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date: 3/05/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -30,6 +30,8 @@ If you have [Azure Information Protection](https://docs.microsoft.com/azure/info
 When you're ready to start protecting your organization's data by using sensitivity labels:
 
 1. **Create the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. Use common names or terms that make sense to your users. If you don't already have an established taxonomy, consider starting with label names such as Personal, Public, General, Confidential, and Highly Confidential. You can then use sublabels to group similar labels by category. When you create a label, use the  tooltip text to help users select the appropriate label.
+    
+    For more extensive guidance for defining a classificaton taxonomy, download the white paper, "Data Classification & Sensitivity Label Taxonomy" from the [Service Trust Portal](https://aka.ms/DataClassificationWhitepaper).
 
 2. **Define what each label can do.** Configure the protection settings you want associated with each label. For example, you might want lower sensitivity content (such as a “General” label) to have just a header or footer applied, while higher sensitivity content (such as a “Confidential” label) should have a watermark, encryption, and endpoint protection applied.
 
@@ -56,7 +58,7 @@ Use the following documentation to support your sensitivity labeling deployment:
 |I want to ...|Documentation|
 |----------------|---------------|
 |Create and publish sensitivity labels that will help protect my organization's data|[Create and configure sensitivity labels and their policies](create-sensitivity-labels.md)|
-|Encrypt documents and emails with sensitivity labels and restrict who can access it and how they can use that content |[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
+|Encrypt documents and emails with sensitivity labels and restrict who can access that content and how it can be used |[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
 |Enable collaboration capabilities in SharePoint (and OneDrive) for documents that are labeled with encryption | [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md)
 |Manage sensitivity labels for Office apps so that content is labeled as it's created |[Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md)|
 |Automatically apply sensitivity labels or recommend labels to users when content is created | [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)|
@@ -67,6 +69,8 @@ Use the following documentation to support your sensitivity labeling deployment:
 
 
 ## End-user documentation for sensitivity labels
+
+The most effective end-user documentation will be customized guidance and instructions you provide for the label names and configurations you choose. However, you can use the following resources for basic instructions:   
 
 - [Apply sensitivity labels to your files and email in Office](https://support.office.com/article/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
     - [Known issues with sensitivity labels in Office](https://support.office.com/en-us/article/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)

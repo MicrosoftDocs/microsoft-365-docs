@@ -1,0 +1,81 @@
+### YamlMime:Landing
+
+title: Business subscriptions and billing documentation # < 60 chars
+summary: Learn how to buy and manage business subscriptions, perform license management tasks, and manage billing and payments for your business accounts with Microsoft. # < 160 chars
+metadata:
+  title: Business subscriptions and billing documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to buy and manage business subscriptions, perform license management tasks, and manage billing and payments for your business accounts with Microsoft. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: o365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  ms.collection: commerce # Optional; Remove if no collection is used.
+  author: cmcatee-MSFT #Required; your GitHub user alias, with correct capitalization.
+  ms.author: cmcatee #Required; microsoft alias of author; optional team alias.
+  ms.date: 02/27/2020 #Required; mm/dd/yyyy format.
+  localization_priority: Normal
+  search.appverid: MET150
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Manage bills and payments
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: View your bill
+            url: billing-and-payments/view-your-bill-or-invoice.md
+          - text: Manage payment methods
+            url: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+          - text: Understand your invoice
+            url: billing-and-payments/understand-your-invoice.md
+          - text: Manage billing profiles
+            url: billing-and-payments/manage-billing-profiles.md
+          - text: Manage billing accounts
+            url: manage-billing-accounts.md
+
+  # Card (optional)
+  - title: Manage licenses
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Assign licenses to users
+            url: ../admin/manage/assign-licenses-to-users.md
+          - text: Understand subscriptions and licenses
+            url: licenses/subscriptions-and-licenses.md
+          - text: Buy licenses for your subscription
+            url: licenses/buy-licenses.md
+          - text: Remove licenses from your subscription
+            url: licenses/remove-licenses-from-subscription.md
+
+  # Card
+  - title: Upgrade, renew, or cancel
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Upgrade to a different plan 
+            url: subscriptions/upgrade-to-different-plan.md
+          - text: Renew your subscription
+            url: subscriptions/renew-your-subscription.md
+          - text: Cancel your subscription
+            url: subscriptions/cancel-your-subscription.md
+          - text: Reactivate your subscription
+            url: subscriptions/reactivate-your-subscription.md
+          - text: Close your account
+            url: close-your-account.md
+
+  # Card
+  - title: Try or buy
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Try or buy Microsoft 365
+            url: try-or-buy-microsoft-365.md
+          - text: Buy a subscriptions from your free trial
+            url: buy-a-subscription-from-your-free-trial.md
+          - text: Extend your trial
+            url: extend-your-trial.md
+          - text: Buy a domain name
+            url: ../admin/get-help-with-domains/buy-a-domain-name.md
+            

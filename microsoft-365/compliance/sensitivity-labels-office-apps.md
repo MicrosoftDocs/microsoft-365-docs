@@ -19,9 +19,9 @@ description: "Learn about how users work with Use sensitivity labels in Office a
 
 # Use sensitivity labels in Office apps
 
-When you have published sensitivity labels from the Microsoft 365 compliance center or equivalent labeling center, they start to appear in Office apps for users to classify and protect data as it's created or edited.
+When you have [published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) sensitivity labels from the Microsoft 365 compliance center or equivalent labeling center, they start to appear in Office apps for users to classify and protect data as it's created or edited.
 
-Use the information in this article to help you successfully manage Use sensitivity labels in Office apps. For example, the minimum versions of apps you need to support built-in labeling, interactions with the Azure Information Protection unified labeling client, and compatibility with other apps and services.
+Use the information in this article to help you successfully manage sensitivity labels in Office apps. For example, identify the minimum versions of apps you need to support built-in labeling, and understand interactions with the Azure Information Protection unified labeling client and compatibility with other apps and services.
 
 ## Subscription and licensing requirements for sensitivity labels
 
@@ -61,7 +61,7 @@ Additional capabilities are available when you install the Azure Information Pro
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Preview: In [Office Insider](https://office.com/insider)            | Preview: In [Office Insider](https://office.com/insider)        | Under review   | Under review         | Under review                                                        |
+|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Preview: In [Monthly Channel (Targeted)](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)            | Preview: In [Office Insider](https://office.com/insider)        | Under review   | Under review         | Under review                                                        |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: In [Office Insider](https://office.com/insider)                                  | Under review | Under review | Under review | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -118,10 +118,15 @@ If you need to convert existing protection templates to labels, use the Azure po
 
 Users can apply just one label at a time for each document or email.
 
-When you label an email message that has attachments, the attachments don't inherit the label:
+When you label an email message that has attachments, the attachments don't inherit the label with one exception:
 
-- If the attachments have a label, they keep that separately applied label.
-- If the attachments don't have a label, the attachments remain without a label. However, if the label for the email applies protection, that protection is applied to Office attachments.
+- The attachment is an Office document with a label that doesn't apply encryption, and the label you apply to the email message applies encryption. In this case, the emailed Office document inherits the email's label with its encryption settings.
+
+Otherwise: 
+
+- If the attachments have a label, they keep their originally applied label.
+- If the attachments are encrypted without a label, the encryption remains but they aren't labeled.
+- If the attachments don't have a label, they remain unlabeled.
 
 ## Sensitivity label compatibility
 

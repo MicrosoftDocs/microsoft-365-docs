@@ -184,7 +184,7 @@ You can easily apply a retention policy to an entire organization, entire locati
   
 ### Org-wide policy
 
-One of the most powerful features of a retention policy is that by default it applies to locations across Office 365, including:
+One of the most powerful features of a retention policy is that it can apply to locations across Office 365, including:
   
 - Exchange email
     
@@ -197,7 +197,7 @@ One of the most powerful features of a retention policy is that by default it ap
 - Exchange public folders
     
 
-![All locations option](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
+![All locations option](../media/retention-policies-all-locations.png)
 
 Other important features of an org-wide retention policy include:
   
@@ -210,9 +210,7 @@ Other important features of an org-wide retention policy include:
 When you choose locations, you can easily include or exclude an entire location, such as Exchange email or OneDrive accounts. To do so, toggle the **Status** of that location on or off. 
   
 Like an org-wide policy, if a policy applies to any combination of entire locations, there is no limit to the number of mailboxes or sites the policy can include. For example, if a policy includes all Exchange email and all SharePoint sites, all sites and mailboxes will be included, no matter how many. And for Exchange, any new mailbox created after the policy is applied will automatically inherit the policy.
- 
-![Choose locations page](../media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
-  
+
 ### A policy with specific inclusions or exclusions
 
 You can also apply a retention policy to specific users, Office 365 groups, or sites. To do so, toggle the **Status** of that location on, and then use the links to include or exclude specific users, Office 365 groups, or sites. 
@@ -227,9 +225,11 @@ Although these limits exist, understand that you can get over these limits by ap
   
 ### Skype locations
 
-Unlike Exchange email, you can't toggle the status of the Skype location on to include all users, but you can turn on that location and then manually choose the users whose conversations you want to retain.
+Unlike Exchange email, you can't toggle the status of the Skype location on to include all users, but when you turn on that location, you then manually choose the users whose conversations you want to retain:
+
+![Choose Skype location for retention policies](../media/skype-location-retention-policies.png)
   
-When you choose Skype for Business users, you can quickly include all users by selecting the **Name** box in the column header. However, it's important to understand that each user counts as a specific inclusion in the policy. Therefore, if you include over 1,000 users, the limits noted in the previous section apply. Selecting all Skype users here is not the same as if an org-wide policy were able to include all Skype users by default. 
+When you select **Choose users**, you can quickly include all users by selecting the **Name** box in the column header. However, it's important to understand that each user counts as a specific inclusion in the policy. Therefore, if you include over 1,000 users, the limits noted in the previous section apply. Selecting all Skype users here is not the same as if an org-wide policy were able to include all Skype users by default. 
   
 ![Choose Skype users page](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
@@ -270,7 +270,7 @@ We're continuously working on optimizing retention functionality in Teams, and w
    > [!NOTE]
    > It used to be true that a retention policy couldn't delete Teams content that's less than 30 days old, but we've removed this limitation. Now the retention period for Teams content can be any number of days you choose and as short as one day. If you do have a retention period of one day, it will take up to three days after the retention period expires before messages are permanently deleted.
     
-In a Team, files that are shared in chat are stored in the OneDrive account of the user who shared the file. Files that are uploaded into channels are stored in the SharePoint site for the Team. Therefore, to retain or delete files in a Team, you need to create a retention policy that applies to the SharePoint and OneDrive locations specifically. If you want to apply a policy to the files of just a specific team, you can choose the SharePoint site for the Team and the OneDrive accounts of users in the Team.
+In Teams, files that are shared in chat are stored in the OneDrive account of the user who shared the file. Files that are uploaded into channels are stored in the SharePoint site for the team. Therefore, to retain or delete files in Teams, you need to create a retention policy that applies to OneDrive and Office 365 Group locations. If you want to apply a policy to the files shared in Teams of just a specific user or team, you can choose the OneDrive or Office 365 Group locations and include the specific user or team.
   
 A retention policy that applies to Teams can use [Preservation Lock](#locking-a-retention-policy).
   
@@ -397,7 +397,7 @@ If you were using a preservation policy, that policy has been automatically conv
 
 Members of your compliance team who will create retention policies need permissions to the [Security &amp; Compliance Center](https://protection.office.com/). By default, your tenant admin has access to this location and can give compliance officers and other people access to the [Security &amp; Compliance Center](https://protection.office.com/), without giving them all the permissions of a tenant admin. To do this, we recommend that you go to the **Permissions** page of the [Security &amp; Compliance Center](https://protection.office.com/), edit the **Compliance Administrator** role group, and add members to that role group. 
   
-For more information, see [Give users access to the Office 365 Security & Compliance Center](/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
+For more information, see [Give users access to the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
 
 These permissions are required only to create and apply a retention policy. Policy enforcement does not require access to the content.
   

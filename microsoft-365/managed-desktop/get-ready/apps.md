@@ -18,7 +18,7 @@ ms.collection: M365-modern-desktop
 
 Microsoft includes certain key apps along with the Microsoft 365 E3 or E5 license needed to participate in Microsoft Managed Desktop. However, even though we provide these apps, you still have certain responsibilities and actions to complete.
 
-You can also deploy additional non-Microsoft apps to your end users for self-service through the Company Portal or a required background installation, all using Microsoft Intune’s deployment pipeline. If you have the expertise you can migrate those apps you need yourself; if not either Microsoft Consulting Services (MCS) or non-Microsoft vendors will be happy to help you with a packaging and migration project. For more information about working with MCS, see [Working with Microsoft Consulting Services](apps-MCS.md).
+You can also deploy additional non-Microsoft apps to your end users for self-service through the Company Portal or a required background installation, all using Microsoft Intune’s deployment pipeline. If you have the expertise, you can migrate those apps you need yourself; alternatively, Microsoft Consulting Services (MCS) or non-Microsoft vendors will be happy to help you with a packaging and migration project. For more information about working with MCS, see [Working with Microsoft Consulting Services](apps-MCS.md).
 
 
 ## Apps provided by Microsoft
@@ -39,7 +39,7 @@ There are still certain things you need to do with these apps:
 
 ## Apps you provide
 
-Of course, you probably have a number of other apps you need for your business operations. These can can only be deployed to Microsoft Managed Desktop devices by using Microsoft Intune’s deployment pipeline. If the app needs it you can have them packaged by a vendor (which could be a non-Microsoft vendor or Microsoft Consulting Services (MCS)) or if you have the means, you can package them yourself. You then add these packages to the Microsoft Managed Desktop portal and assign them to Azure Active Directory groups to trigger the deployment. 
+Of course, you probably have a number of other apps you need for your business operations. These can only be deployed to Microsoft Managed Desktop devices by using Microsoft Intune’s deployment pipeline. If the app needs it you can have them packaged by a vendor (which could be a non-Microsoft vendor or Microsoft Consulting Services (MCS)) or if you have the means, you can package them yourself. You then add these packages to the Microsoft Managed Desktop portal and assign them to Azure Active Directory groups to trigger the deployment. 
 
 If you currently deploy your apps by using Microsoft Endpoint Configuration Manager, Microsoft Managed Desktop can provide you with a query to assess your apps and discover which ones are ready for to migrate to Microsoft Intune and which ones might require some adjustment.
 
