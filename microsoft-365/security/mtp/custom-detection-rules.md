@@ -71,7 +71,7 @@ With the query in the query editor, select **Create detection rule** and specify
 - **Alert title** — title displayed with alerts triggered by the rule
 - **Severity** — potential risk of the component or activity identified by the rule
 - **Category** — threat component or activity identified by the rule
-- **MITRE ATT&CK technique** — attack technique identified by the rule as documented in the MITRE ATT&CK framework
+- **MITRE ATT&CK techniques** — one or more attack techniques identified by the rule as documented in the MITRE ATT&CK framework
 - **Description** — more information about the component or activity identified by the rule 
 - **Recommended actions** — additional actions that responders might take in response to an alert
 
