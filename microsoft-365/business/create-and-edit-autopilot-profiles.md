@@ -19,12 +19,13 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: "Learn to create, edit, delete, or remove AutoPilot profiles."
+description: "Learn to create an AutoPilot profile and apply it to a device, as well as edit or delete a profile or remove a profile from a device."
 ---
 
 # Create and edit AutoPilot profiles

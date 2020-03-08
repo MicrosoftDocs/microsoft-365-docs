@@ -1,5 +1,5 @@
 ---
-title: "Buy licenses for your Office 365 for business subscription"
+title: "Manage subscription licenses"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,23 +24,29 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
-description: "Learn how to add more licenses to your Office 365 for business subscription."
+description: "Learn how to add and remove licenses for your Office 365 for business subscription."
 ---
 
-# Buy licenses for your Office 365 for business subscription
+# Manage subscription licenses
+
+You can add or remove licenses from your subscriptions using these steps.
+
+You can't remove a license from a subscription if it's assigned to a user. If you want to remove a license that is currently assigned to someone, you'll need to [remove licenses from users](../../admin/manage/remove-licenses-from-users.md) before you can remove the license from the subscription.
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
+## What you need to know about buying licenses for your business subscription
+
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
-2. On the **Products & services** page, find the subscription to which you want to add licenses, and then select **Add/Remove licenses**.
+2. On the **Products & services** page, find the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**.
 
     [What if I don't see the Add/Remove licenses link?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit change**. For example, if you have 100 licenses and you need to add 5 more, enter 105.
+3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit change**. For example, if you have 100 licenses and you need to add 5 more, enter 105. If you want to remove 5 of them, enter 95.
 
 After you purchase new licenses, be sure to [assign the licenses to users](../../admin/manage/assign-licenses-to-users.md).
 
@@ -50,11 +56,11 @@ After you purchase new licenses, be sure to [assign the licenses to users](../..
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
 
-2. On the **Subscriptions** page, select the subscription to which you want to add licenses, and then select **Add/Remove licenses**.
+2. On the **Subscriptions** page, select the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**.
 
     [What if I don't see the Add/Remove licenses link?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105.
+3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105. If you want to remove 5 of them, enter 95.
 
 After you purchase new licenses, be sure to [assign the licenses to users](../../admin/manage/assign-licenses-to-users.md).
 
@@ -64,11 +70,11 @@ After you purchase new licenses, be sure to [assign the licenses to users](../..
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
 
-2. On the **Subscriptions** page, select the subscription to which you want to add licenses, and then select **Add/Remove licenses**.
+2. On the **Subscriptions** page, select the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**.
 
     [What if I don't see the Add/Remove licenses link?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105.
+3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105. If you want to remove 5 of them, enter 95.
 
 After you purchase new licenses, be sure to [assign the licenses to users](../../admin/manage/assign-licenses-to-users.md).
 
@@ -80,13 +86,13 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 
 |Reason  |Description  |Solution  |
 |---------|---------|---------|
-|A credit check is pending. |If a credit check is pending, you'll see a "Pending credit check" message, and you won't be able to buy licenses until the credit check is completed.  | Check back later to see if the credit check has completed. Credit checks typically take up to two working days to complete.<br>After the credit check is complete, you should see the **Add/Remove licenses** link in the **Users** section. If so, go to [Buy licenses for your Office 365 for business subscription](#buy-licenses-for-your-office-365-for-business-subscription). |
+|A credit check is pending. |If a credit check is pending, you'll see a "Pending credit check" message, and you won't be able to buy licenses until the credit check is completed.  | Check back later to see if the credit check has completed. Credit checks typically take up to two working days to complete.<br>After the credit check is complete, you should see the **Add/Remove licenses** link in the **Users** section. If so, go to [Manage subscription licenses](#manage-subscription-licenses). |
 |You activated the subscription using a product key.| If the subscription was purchased and activated using a 25-character product key product key, you'll see the text "Prepaid".  |See [Add licenses to a subscription paid for using a product key](add-licenses-using-product-key.md). |
 |You bought your subscription through a partner. | If the subscription was purchased via a partner, you'll see the Volume Licensing Service Center (VLSC) link. | See [Add licenses to a subscription purchased through the Volume Licensing Service Center](add-licenses-bought-through-vlsc.md). |
 |You bought your subscription through a reseller.|| If the subscription was purchased via a Cloud Solution Provider (CSP) partner, you must contact your CSP partner to buy more licenses.        |
 |You have a trial subscription. |A trial version of Office 365 will display the text "Trial". | You must first buy your trial subscription, then you can add more licenses. See [Buy a subscription to Office 365 for business from your free trial](../buy-a-subscription-from-your-free-trial.md).|
 
-## What you need to know about buying licenses for your Office 365 for business subscription
+## What you need to know about buying licenses for your business subscription
 
 ### Buying licenses
 
@@ -112,10 +118,10 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 
 [Understand subscriptions and licenses](subscriptions-and-licenses.md)
 
-[Assign licenses to users](../../admin/manage/assign-licenses-to-users.md)
+[Buy licenses for your subscription](buy-licenses.md)
 
 [Buy another subscription](../buy-another-subscription.md)
 
-[Buy or edit an add-on](../buy-or-edit-an-add-on.md)
+[Assign licenses to users](../../admin/manage/assign-licenses-to-users.md)
 
 [Manage Yammer user licenses](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365)

@@ -57,7 +57,7 @@ additionalContent:
       items:
          # Card
         - title: Microsoft 365 admin center
-          summary: Set up and manage your Office 365 and Microsoft 365 for business and enteprise subspcriptions. 
+          summary: Set up and manage Office 365 and Microsoft 365 services for your organization. 
           url: ./admin/admin-home.md
         # Card
         - title: Microsoft 365 Business
