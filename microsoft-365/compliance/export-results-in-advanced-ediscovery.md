@@ -17,7 +17,7 @@ ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: "Learn how to define options for exporting results from Office 365 Advanced eDiscovery, including the procedure for specifying parameters for an export batch. "
 ---
 
-# Export results in Office 365 Advanced eDiscovery
+# Export results in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -189,7 +189,7 @@ The following table lists the output files that are generated when you run an Ex
    
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Viewing batch history and exporting past results](view-batch-history-and-export-past-results.md)
   

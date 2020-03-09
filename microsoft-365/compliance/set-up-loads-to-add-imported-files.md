@@ -19,7 +19,7 @@ description: "Review the steps to add imported files to the last defined load, o
 "
 ---
 
-# Set up loads to add imported files in Office 365 Advanced eDiscovery
+# Set up loads to add imported files in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -134,7 +134,7 @@ Rolling Loads and Catch-up functionality varies as follows:
     
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Defining issues and assigning users](define-issues-and-assign-users.md)
   
