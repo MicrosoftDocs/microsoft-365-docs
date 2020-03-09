@@ -28,7 +28,7 @@ We're simplifying the process for importing, exporting, and modifying templates 
 
 There are two ways to create a template in Compliance Manager. You can copy an existing template, or you can import template data from an Excel spreadsheet into a new template. For example, when you go your **Templates** page, you select **+ Add template**, and then create a brand new template by entering a name, selecting dimensions, and uploading an Excel file with a specific format and schema. Or you have the option to check the **Copy from an existing template** box, select a template to copy, and verify dimensions, as shown in the image below.
 
-Customizing your template requires a [multi-step process](/working-with-compliance-manager.md#templates) that begins by selecting **Add custom control** after creating your template.
+Customizing your template requires a [multi-step process](working-with-compliance-manager.md#templates) that begins by selecting **Add custom control** after creating your template.
 
 ![Compliance Score - dashboard](../media/compliance-score-template-update-old.png "Current template copy process")
 
@@ -56,7 +56,7 @@ Below is an example of the versioning alert for an assessment:
 
 Selecting the alert icon reveals a flyout pane explaining the update and prompting you to accept:
 
-![Compliance Score - versioning flyout](../media/compliance-score-assessment-version-accept.png "Action version update alert")
+![Compliance Score - versioning flyout](../media/compliance-score-assessment-version-accept.png "Assessment update confirmation pane")
 
 ## Common actions will synch status across groups
 
