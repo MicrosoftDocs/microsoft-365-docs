@@ -1,5 +1,5 @@
 ---
-title: "Add more users to Microsoft 365 Business"
+title: "Add more users"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -28,7 +28,7 @@ ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: "Learn the steps to easily add new users, secure their devices, and assign roles in Microsoft 365 Business."
 ---
 
-# Add more users to Microsoft 365 Business
+# Add more users
 
 ## Add new users
 
