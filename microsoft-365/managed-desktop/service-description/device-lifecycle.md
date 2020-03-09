@@ -9,7 +9,7 @@ ms.localizationpriority: normal
 
 # Microsoft Managed Desktop product lifecycle
 
-Microsoft Managed Desktop benefits end-users assuring that they always use devices that offer the best performance, reliability, design, and security capabilities (such as support for features like Windows Hello). To accomplish this, Microsoft Managed Desktop maintains a short catalog of continuously updated [approved devices](device-list.md). 
+Microsoft Managed Desktop benefits end users assuring that they always use devices that offer the best performance, reliability, design, and security capabilities (such as support for features like Windows Hello). To accomplish this, Microsoft Managed Desktop maintains a short catalog of continuously updated [approved devices](device-list.md). 
  
 This topic details the lifecycle of devices as they are added and removed from the approved catalog. 
 
@@ -26,7 +26,7 @@ This topic details the lifecycle of devices as they are added and removed from t
 - [Product retirement](#product-retirement)
 
 
-The entire sequence is depicted in this illustration:
+This illustration shows the entire sequence:
 
 ![lifecycle timeline: starting with product general availability, "primary availability" lasts for two years. During this time the certification window ends and at some point the device is onboarded. At the end of primary availability, the product is archived and the "grace period" of three years starts. Starting when the device is onboarded, it has a 3-year period of use until it's removed from management. At the end of the grace period we remove the product from the catalog.](../../media/non-dark1-edits.PNG)
 
@@ -35,7 +35,7 @@ Products remain on the catalog for up to 24 months, but <em>devices</em> remain 
 This table shows example dates for a theoretical product:
 
 
-|Product  |Approved date  |End of primary availability  |End of eligiblity  |
+|Product  |Approved date  |End of primary availability  |End of eligibility  |
 |---------|---------|---------|---------|
 |Fabrikam Laptop    | 1/1/2017 | 6/1/2019 | 6/1/2022 |
 |Adatum Laptop   | 1/1/2018 | 6/1/2020 | 6/1/2023  |
@@ -59,14 +59,14 @@ During this stage, the Microsoft Managed Desktop engineering team does their eva
   
 Microsoft Managed Desktop will only evaluate devices for certification within their first 6 months of availability. This ensures that we're always focusing our efforts on the latest generation of hardware.
  
-At the end of this phase, Microsoft Managed Desktop adds the product to the [approved list](device-list.md), effectively releasing the product for customer enrollments. Regardless of the date when a device is certified, its **approved date** is be back-dated to the products own general availability date. 
+At the end of this phase, Microsoft Managed Desktop adds the product to the [approved list](device-list.md), effectively releasing the product for customer enrollments. Regardless of the date when a device is certified, its **approved date** is back-dated to the product's own general availability date. 
 
 
 ## Product primary availability period
 
 This period is the core of product availability:
 
-![lifecycle timeline showing primary availibility](../../media/non-dark4-edits.PNG)
+![lifecycle timeline showing primary availability](../../media/non-dark4-edits.PNG)
 
 Any device enrolled during this period receives the full three years of support from Microsoft Managed Desktop (as shown by the blue timeline). This period lasts until an end date set to 24 months from the general availability date.
 
@@ -83,7 +83,7 @@ If you've recently bought a number of approved devices prior to enrolling with M
 
 The Fabrikam Laptop example from the previous table illustrates this situation: 
 
-|Product  |Approved date  |End of primary availability  |End of eligiblity  |
+|Product  |Approved date  |End of primary availability  |End of eligibility  |
 |---------|---------|---------|---------|
 |Fabrikam Laptop    | 6/1/2017 | 6/1/2019 | 6/1/2022 |
 
@@ -100,7 +100,7 @@ Product retirement is the final phase of the lifecycle. In this phase, no new de
 
 A device is out of compliance when its allowed window for Microsoft Managed Desktop management has elapsed. This occurs when the device has reached three years of management or when that product type is removed from the device catalog, whichever occurs first. You should always target your procurement cycles such that new devices are deployed prior to current devices going out of compliance.
 
-The Microsoft Managed Desktop team knows that procurement cycles are long and planned around long-running budgets. To ensure that you're always aware of the state of your device population, we provide a [website](https://aka.ms/mmdportal) that lists every device under management, its age, and a status indicating its compliance. This means you always have the latest information regarding device age and can leverage the report in any procurement planning cycle. 
+The Microsoft Managed Desktop team knows that procurement cycles are long and planned around long-running budgets. To ensure that you're always aware of the state of your device population, we provide a [website](https://aka.ms/mmdportal) that lists every device under management, its age, and a status indicating its compliance. This means you always have the latest information regarding device age and can use the report in any procurement planning cycle. 
 
 
 
