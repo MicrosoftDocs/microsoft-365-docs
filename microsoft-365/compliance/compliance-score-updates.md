@@ -52,7 +52,7 @@ Whenever an update is available for an assessment's template or an improvement a
 
 Below is an example of the versioning alert for an assessment:
 
-![Compliance Score - versioning alert](../media/compliance-score-assessment-versioning.png "Assessment version update alert")
+![Compliance Score - versioning alert](../media/compliance-score-assessment-version.png "Assessment version update alert")
 
 Selecting the alert icon reveals a flyout pane explaining the update and prompting you to accept:
 
