@@ -40,7 +40,7 @@ This new process replaces the current **Copy from an existing template** and **A
 
 ![Compliance Score - dashboard](../media/compliance-score-template-update-new.png "New template creation process")
 
-Each time the original assessment is updated through the versioning process (outlined below), your customized assessment will inherit those updates *and* retain your custom controls.
+Each time the original assessment is updated through the versioning process (outlined below), your customized assessment will inherit those updates and retain your custom controls.
 
 You can also create your own template entirely from scratch using the Excel spreadsheet.
 
@@ -51,14 +51,16 @@ Your organization will receive updated assessments in the next release of Compli
 Whenever an update is available for an assessment's template or an improvement action, an alert icon notifies you that an update is ready. When you click on that icon, a pop-up window explains the update and asks you to accept or defer the update.
 
 Below is an example of the versioning alert for an assessment:
-![Compliance Score - versioning alert](../media/compliance-score-assessment-versioning3.png "Assessment version update alert")
 
-Selecting the alert icon reveals a flyout pane explaining the update and prompting you to accept, as seen below:
-![Compliance Score - versioning flyout](../media/compliance-score-assessment-version-accept3.png "Action version update alert")
+![Compliance Score - versioning alert](../media/compliance-score-assessment-versioning.png "Assessment version update alert")
+
+Selecting the alert icon reveals a flyout pane explaining the update and prompting you to accept:
+
+![Compliance Score - versioning flyout](../media/compliance-score-assessment-version-accept.png "Action version update alert")
 
 ## Common actions will synch status across groups
 
-If your organization has multiple groups of assessments, the behavior of actions that affect your entire organization – in particular, actions marked as type "Technical" – will change. Any duplicate actions across groups will be combined into one single action. That single action will contain all uploaded notes and evidence from the duplicate versions. With this change, actions will behave as they currently do when they belong to the same group; that is, any change made to the action in one group or assessment will now be reflected in all instances. The Implementation Status, Implementation Date, Test Status, and Test Date will reflect the most recently-updated instance of this action.
+If your organization has multiple groups of assessments, the behavior of actions that affect your entire organization – in particular, actions marked as **Technical** – will change. Any duplicate actions across groups will be combined into one single action. That single action will contain all uploaded notes and evidence from the duplicate versions. With this change, actions will behave as they currently do when they belong to the same group; that is, any change made to the action in one group or assessment will now be reflected in all instances. The Implementation Status, Implementation Date, Test Status, and Test Date will reflect the most recently-updated instance of this action.
 
 ## Language support
 
