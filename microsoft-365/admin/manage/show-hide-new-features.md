@@ -20,7 +20,7 @@ search.appverid:
 description: "Decide which features and their What's New content are shown to or hidden from end users in the Office What's New Management Preview panel for Office desktop apps."
 ---
 
-# Manage what end users see
+# Show or hide new features using What's New Management Preview
 
 The Office What's New Management Preview allow your organization to decide which features are shown to or hidden from end users in the Office desktop app. Each release of Office includes new and improved features, and the preview allows you to view new content for each release version and channel, and choose whether to hide or show each feature's What's New content to end users. 
 
@@ -29,7 +29,7 @@ The What's New content in the Office desktop apps highlights an editorially cura
 > [!NOTE]
 > The Global admin and Office Apps admin roles manage the What's New content that users see in their Office apps, as well as all cloud-based policies for Office.
 
-##  Show or hide new features using the Office What's New Management Preview
+##  Show or hide new features 
 
 Admins can preview the What's New content for a channel, and manage the release of the content using the Office What's New Management Preview.
 
