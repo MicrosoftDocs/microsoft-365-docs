@@ -135,7 +135,7 @@ Records that were disposed of without a disposition review are identified by the
 
 ![Records that were disposed of without a disposition review](../media/records-disposed.png)
 
-Because this feature is gradually rolling out to tenants during February and March 2020, you might not see these records immediately. When you do, this disposition information is kept for up to 7 years after the item was disposed, with a limit of one million items per record for that period.
+Because this feature is gradually rolling out to tenants during March 2020, you might not see these records immediately. When you do, this disposition information is kept for up to 7 years after the item was disposed, with a limit of one million items per record for that period.
 
 If you see the **Count** number nearing this limit of one million, and you need proof of disposition for the record, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
