@@ -51,6 +51,9 @@ Alternatively to using roles, you can create a new role group and add either **S
 
 These permissions are required only to create and configure sensitivity labels and their label policies. They are not required to apply the labels in apps or services.
 
+> [!NOTE]
+> **Sensitivity Label Reader** is a new role that's currently rolling out to tenants and initially supported for the PowerShell labeling cmdlets, and later for the admin labeling centers.
+
 ## Common scenarios for sensitivity labels
 
 Use the following documentation to support your sensitivity labeling deployment:
