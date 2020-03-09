@@ -48,7 +48,7 @@ Here are the two ways to think of how Cortana works in your enterprise:
 
 1. New experiences for organizations with Cortana in Office 365: Cortana in Office 365 services are designed to meet the security and compliance needs of organizations: 
 a.    This is a new service and is discussed here in this document. 
-b.    For services subject to the OST, Microsoft is a data processor: Microsoft collects and uses Customer Data from customers only to provide the online services requested by our customers and for the purposes instructed by our customers. Under the EU's General Data Protection Regulation (GDPR), the customer is the data controller of their data. See the Online Services Terms and Introducing more privacy transparency for our commercial cloud customers. 
+b.    For services subject to the OST, Microsoft is a data processor: Microsoft collects and uses Customer Data from customers only to provide the online services requested by our customers and for the purposes instructed by our customers. Under the EU's General Data Protection Regulation (GDPR), the customer is the data controller of their data. See the Online Services Terms and Introducing more privacy transparency for our commercial cloud customers.
 c.    As an example, Play My Emails is a feature of Outlook for iOS and utilizes the Office 365 compliant service. (See below for more information about this feature.)
 
 2. Existing services for consumers: Cortana optional connected services are designed primarily for consumer experiences and are currently delivered in Windows 10 (version 1909 and earlier) and the Cortana app on iOS and Android.
@@ -88,12 +88,6 @@ Cortana sends a personalized briefing email with tasks and commitments you made 
 ### How to opt of Briefing
 
 Admins can configure Briefing for their organization using a toggle in the Microsoft 365 admin center. Individuals can opt out of Cortana's Briefing email by selecting Unsubscribe in the footer of the message. Learn more about Microsoft Compliance offerings.
-
-Compliance is a commitment that Microsoft makes to enterprise customers. [Learn more about the Microsoft compliance framework.](https://go.microsoft.com/fwlink/p/?LinkId=2109173)
-
-Consistent with other Microsoft 365 and Office 365 services, compliant Cortana features are protected and secured subject to the Online Service Terms that includes a set of promises involving protection of user data against accidental loss, alteration, unauthorized disclosure or access, or unlawful destruction. All other Cortana features (i.e., Cortana optional connected services) are subject to the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?LinkId=2109174) and  [Microsoft Privacy Statement.](https://go.microsoft.com/fwlink/p/?LinkId=2109175)
-
-Cortana services are broken into two data categories, **compliant** and **optional connected services**, which you can control.
 
 ## Cortana optional connected services
 
