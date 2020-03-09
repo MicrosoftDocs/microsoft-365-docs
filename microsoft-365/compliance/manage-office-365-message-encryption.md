@@ -168,27 +168,15 @@ For more information about how Office 365 implements encryption for emails and e
    Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $false
    ```
 
-## Ensure all external recipients use the OME Portal to read encrypted mail — Office 365 Advanced Message Encryption only
+## Ensure all external recipients use the OME Portal to read encrypted mail
 
-If you have Office 365 Advanced Message Encryption, you can use custom branding templates to force recipients to receive a wrapper mail that directs them to read encrypted email in the OME Portal instead of using Outlook or Outlook on the web. You might want to do this if you use want greater control over how recipients use the mail they receive. For example, if external recipients view email in the web portal, you can set an expiration date for the email, and you can revoke the email. These features are only supported through the OME Portal. You can use the Encrypt option and the Do Not Forward option when creating the mail flow rules.
+You can use custom branding templates to force recipients to receive a wrapper mail that directs them to read encrypted email in the OME Portal instead of using Outlook or Outlook on the web. You might want to do this if you use want greater control over how recipients use the mail they receive. For example, if external recipients view email in the web portal, you can set an expiration date for the email, and you can revoke the email. These features are only supported through the OME Portal. You can use the Encrypt option and the Do Not Forward option when creating the mail flow rules.
 
-### Create a custom template to force all external recipients to use the OME Portal and for encrypted email to be revocable and expire in 7 days
+### Use a custom template to force all external recipients to use the OME Portal and for encrypted email
 
 1. Use a work or school account that has global administrator permissions in your Office 365 organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Run the New-OMEConfiguration cmdlet:
-
-   ```powershell
-   New-OMEConfiguration -Identity "<template name>" -ExternalMailExpiryInDays 7
-   ```
-
-   where `template name` is the name you want to use for the Office 365 Message Encryption custom branding template. For example,
-
-   ```powershell
-   New-OMEConfiguration -Identity "<One week expiration>" -ExternalMailExpiryInDays 7
-   ```
-
-3. Run the New-TransportRule cmdlet:
+2. Run the New-TransportRule cmdlet:
 
    ```powershell
    New-TransportRule -name "<mail flow rule name>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "<option name>" -ApplyRightsProtectionCustomizationTemplate "<template name>"
@@ -200,18 +188,18 @@ If you have Office 365 Advanced Message Encryption, you can use custom branding 
 
    - `option name` is either `Encrypt` or `Do Not Forward`.
 
-   - `template name` is the name you gave the custom branding template, for example `One week expiration`.
+   - `template name` is the name you gave the custom branding template, for example `OME Configuration`.
 
-   To encrypt all external email with the "One week expiration" template and apply the Encrypt-Only option:
+   To encrypt all external email with the "One week sale" template and apply the Encrypt-Only option:
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "<One week expiration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
    ```
 
-   To encrypt all external email with the "One week expiration" template and apply the Do Not Forward option:
+   To encrypt all external email with the "OME Configuration" template and apply the Do Not Forward option:
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "<One week expiration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
    ```
 
 ## Customize the appearance of email messages and the OME portal

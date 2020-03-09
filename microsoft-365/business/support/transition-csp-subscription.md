@@ -1,11 +1,11 @@
 ---
 title: Transition a Microsoft 365 Business CSP subscription 
-description: "Find out how you can transition a Microsoft 365 Business CSP subscription from preview to general availability (GA)." 
+description: Find out how you can transition a Microsoft 365 Business CSP subscription from preview to general availability (GA).
 author: jasongroce
 f1.keywords:
 - NOCSH
 ms.custom:
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 ms.author: jasgro
 ms.topic: article 
 ms.prod: microsoft-365-business
