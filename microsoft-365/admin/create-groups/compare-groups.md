@@ -1,8 +1,7 @@
 ---
 title: "Compare groups in Office 365"
 ms.reviewer: arvaradh
-f1.keywords:
-- CSH
+f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -28,15 +27,15 @@ In the **Groups** section of the Microsoft 365 admin center, you can create and 
 
 - **Office 365 groups** are used for collaboration between users, both inside and outside your company.
 - **Distribution groups** are used for sending notifications to a group of people.
-- **Security groups** are used for granting access to SharePoint resources.
-- **Mail-enabled security groups** are used for granting access to SharePoint resources, and emailing notifications to those users.
+- **Security groups** are used for granting access to resources such as SharePoint sites.
+- **Mail-enabled security groups** are used for granting access to resources such as SharePoint, and emailing notifications to those users.
 - **Shared mailboxes** are used when multiple people need access to the same mailbox, such as a company information or support email address.
 
 ## Office 365 groups
 
 Office 365 groups are used for collaboration between users, both inside and outside your company. With each Office 365 group, members get a group email and shared workspace for conversations, files, and calendar events, and a Planner.
 
-You can add users external to your company to a group as long as this has been [enabled by the administrator](manage-guest-access-in-groups.md). You can also allow external senders to send email to the group email address.
+You can add people from outside your organization to a group as long as this has been [enabled by the administrator](manage-guest-access-in-groups.md). You can also allow external senders to send email to the group email address.
 
 Office 365 groups can be [configured for dynamic membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type), allowing group members to be added or removed automatically based on user attributes such as department, location, title, etc.
 
@@ -72,7 +71,7 @@ Shared mailboxes can receive external emails if the administrator has enabled th
 
 Users with permissions to the group mailbox can send as or send on behalf of the mailbox email address if the administrator has given that user permissions to do that. This is particularly useful for help and support mailboxes because users can send emails from "Contoso Support" or "Building A Reception Desk."
 
-Currently it's not possible to migrate a shared mailbox to an Office 365 Group. Is this something you want? Let us know. **[Vote here](https://go.microsoft.com/fwlink/?linkid=871518)**
+Currently it's not possible to migrate a shared mailbox to an Office 365 group. Is this something you want? Let us know. **[Vote here](https://go.microsoft.com/fwlink/?linkid=871518)**
 
 ## Related articles
 

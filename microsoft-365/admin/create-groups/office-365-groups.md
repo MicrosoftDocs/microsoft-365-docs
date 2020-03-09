@@ -1,9 +1,8 @@
 ---
-title: "Overview of Office 365 Groups for administrators"
+title: "Overview of Office 365 groups for administrators"
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
-ms.author: v-teflor
+f1.keywords: NOCSH
+ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
@@ -21,9 +20,9 @@ search.appverid:
 description: "Learn about Office 365 Groups."
 ---
 
-# Overview of Office 365 Groups for administrators
+# Overview of Office 365 groups for administrators
 
-Office 365 Groups is the foundational membership service that drives all teamwork across Microsoft 365. With Office 365 Groups, you can give a group of people access to a collection of collaboration resources for those people to share. These resources include:
+Office 365 groups is the foundational membership service that drives all teamwork across Microsoft 365. With Office 365 groups, you can give a group of people access to a collection of collaboration resources for those people to share. These resources include:
 
 - A shared Outlook inbox
 - A shared calendar
@@ -32,19 +31,19 @@ Office 365 Groups is the foundational membership service that drives all teamwor
 - Power BI
 - Yammer (if the group was created from Yammer)
 - A Team (if the group was created from Teams)
-- Roadmap (if you have Project for the web )
+- Roadmap (if you have Project for the web)
 
-With an Office 365 group, you don’t have to manually assign permissions to each of these resources, because adding members to the group automatically gives them the permissions they need to the tools that the group provides.
+With an Office 365 group, you don’t have to manually assign permissions to each of these resources, because adding people to the group automatically gives them the permissions they need to the tools that the group provides.
 
-Any Office 365 user can create a group unless you [limit group creation to a specific set of people](manage-creation-of-groups.md). Note that if you limit group creation, users who cannot create groups will not be able to create SharePoint sites, Planners, or teams. These services need to be able to create a group using the user context. Users can still participate in group activities, such as creating tasks in Planner or responding to conversations in Outlook, provided they are a member of the group.
+Any Office 365 user can create a group unless you [limit group creation to a specific set of people](manage-creation-of-groups.md). Note that if you limit group creation, users who cannot create groups will not be able to create SharePoint sites, Planners, or teams. These services require the people creating them to be able to create a group. Users can still participate in group activities, such as creating tasks in Planner or using Teams chat, provided they are a member of the group.
 
 Groups have the following roles:
 
 - **Owners** - Group owners can add or remove members and have unique permissions like the ability to delete conversations from the shared inbox or change different settings about the group. Group owners can rename the group, update the description or picture and more.
-- **Members** - Members can access everything in the group, but can't change group settings.
-- **Guests** - Group guests are members who are from outside your organization. By default group members can invite guests to join your group, though you can [control that setting](manage-guest-access-in-groups.md).
+- **Members** - Members can access everything in the group, but can't change group settings. By default group members can invite guests to join your group, though you can [control that setting](manage-guest-access-in-groups.md).
+- **Guests** - Group guests are members who are from outside your organization.
 
-Only global admins and user management admins can create and manage groups in the admin center. You can't be a delegated admin (for example, a consultant who is an admin on behalf of).
+Only global admins, user admins, and groups admins can create and manage groups in the Microsoft 365 admin center. You can't be a delegated admin (for example, a consultant who is an admin on behalf of).
 
 As an administrator, you can:
 
@@ -54,7 +53,7 @@ As an administrator, you can:
 - [Manage guest access to groups](manage-guest-access-in-groups.md)
 - [Recover a deleted group](restore-deleted-group.md) (within 30 days of deletion)
 
-If you prefer a more automated way to manage the lifecycle of your Office 365 Groups you can use expiration policies to expire groups at a specific time interval. The group's owners will get an email 30, 15 and 1 day before the group expiration that allows them to easily renew the group if it's still needed. See: [Office 365 Group Expiration Policy](office-365-groups-expiration-policy.md).
+If you prefer a more automated way to manage the lifecycle of your Office 365 groups, you can use expiration policies to expire groups at a specific time interval. The group's owners will get an email 30, 15 and 1 day before the group expiration that allows them to easily renew the group if it's still needed. See: [Office 365 Group Expiration Policy](office-365-groups-expiration-policy.md).
 
 You can administer your groups from the Microsoft 365 admin center or [by using PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell).
 
@@ -62,7 +61,7 @@ If you have a lot of users, such as in a large corporation or enterprise, you ma
 
 ## Group limits
 
-The following limits apply to Office 365 Groups:
+The following limits apply to Office 365 groups:
 
 |Maximum...|Value|
 |:---------|:----|
@@ -74,23 +73,23 @@ The following limits apply to Office 365 Groups:
 |File storage|1 Terabyte + 10 GB per subscribed user + any additional storage purchased. You can purchase an unlimited amount of additional storage.|
 |Group Mailbox size|50 GB|
 
-The default maximum number of Office 365 Groups that an Office 365 organization can have is currently 500,000, but can be increased by request. For more information on Office 365 Groups limits, see [Office 365 Groups - Admin help](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
+The default maximum number of Office 365 groups that an Office 365 organization can have is 500,000, but can be increased by request. For more information on Office 365 groups limits, see [Office 365 Groups - Admin help](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
 
-Managing your Office 365 Groups is more effective when you have actionable information about Groups usage. The Microsoft 365 Admin Center has a reporting tool that can let you see things such as storage use, how many active Groups you have and even how your users are using the Groups. See: [Office 365 Reports in the admin center](../activity-reports/office-365-groups.md) for more information.
+Managing your Office 365 groups is more effective when you have actionable information about groups usage. The Microsoft 365 admin center has a reporting tool that can let you see things such as storage use, how many active groups you have and even how your users are using the groups. See: [Office 365 Reports in the admin center](../activity-reports/office-365-groups.md) for more information.
 
-## Which Office 365 plans include Groups?
+## Which Office 365 plans include groups?
 
-Any Office 365 subscription that has Exchange Online and SharePoint Online will support groups. That includes the Business Essentials and Business Premium plans, and the Enterprise E1, E3 and E5 plans. The Group takes on the licensing of the person who creates the Group (also known as the "organizer" of the Group). As long as the organizer has the proper license for whatever features you want the Group to have, that license will convey to the Group.
+Any Office 365 subscription that has Exchange Online and SharePoint Online will support groups. That includes the Business Essentials and Business Premium plans, and the Enterprise E1, E3 and E5 plans. The group takes on the licensing of the person who creates the group (also known as the "organizer" of the group). As long as the organizer has the proper license for whatever features you want the group to have, that license will convey to the group.
 
 > [!NOTE]
-> For more details about Office 365 service families and plans, please check [Office 365 plan options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> For more details about Office 365 service families and plans, see [Office 365 plan options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
 
-If you have an Exchange-only plan you can still get the shared Inbox and shared Calendar features of groups in Outlook but you won’t get the document library, Planner or any of the other capabilities.
+If you have an Exchange-only plan you can still get the shared inbox and shared calendar features of groups in Outlook but you won’t get the document library, Planner or any of the other capabilities.
 
-Office 365 Groups works with Azure Active Directory (AAD). The Groups features you get depends on which Azure Active Directory subscription you have, and what license(s) is assigned to the organizer of the Group.
+Office 365 groups work with Azure Active Directory (AAD). The groups features you get depends on which Azure Active Directory subscription you have, and what license(s) is assigned to the organizer of the group.
 
 > [!IMPORTANT]
-> For all the Groups features, if you have an Azure AD Premium subscription, users can join the group whether or not they have an AAD P1 license assigned to them. Licensing isn't enforced.
+> For all the groups features, if you have an Azure AD Premium subscription, users can join the group whether or not they have an AAD P1 license assigned to them. Licensing isn't enforced.
 > Periodically we will generate usage reports that tell you which users are missing a license, and need one assigned to them to be compliant with the licensing requirements. For example, let's say a user doesn't have a license and they are added to a group where the naming policy is enforced. The report will flag for you that they need a license.
 
 ## Related articles
