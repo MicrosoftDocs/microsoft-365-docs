@@ -110,7 +110,7 @@ Record versioning is automatically available for any document that has a retenti
 
 ### Locking and unlocking a record
 
-After a record label is assigned to a document, any user in the default Members group (the Contribute permission level) can unlock a record or lock an unlocked record.
+After a record label is assigned to a document, any user with Contribute permissions or a narrower permission level level can unlock a record or lock an unlocked record.
 <br/><br/>
 
 ![Record status shows record document is unlocked](../media/recordversioning9.png)
