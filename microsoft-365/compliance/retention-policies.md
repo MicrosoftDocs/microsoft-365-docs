@@ -52,7 +52,7 @@ You create and manage retention policies on the:
 - **Policies** page in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 - **Retention** page under **Information governance** in the [Office 365 Security &amp; Compliance Center](https://protection.office.com/).
 
-**If you want the ability to review content before it’s permanently deleted,** consider using [retention labels](labels.md) instead of a retention policy. When you create a retention label, you can set up a [disposition review](disposition-reviews.md) to review the content at the end of its retention period.
+**If you want the ability to review content before it's permanently deleted,** consider using [retention labels](labels.md) instead of a retention policy. When you create a retention label, you can set up a [disposition review](disposition-reviews.md) to review the content at the end of its retention period.
 
 ## How a retention policy works with content in place
 
@@ -118,7 +118,7 @@ If a user leaves your organization and the user's mailbox is included in a reten
 
 **OneDrive**
 
-When a user leaves your organization, the admin can delay final deletion of the user's content for 30 or more days by creating an extra retention period in the OneDrive settings (learn how to [manage OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise#manage-onedrive-by-using-the-onedrive-admin-center)). During this period, all sharing access continues to work. When the extra retention period expires, content moves into the Site Collection Recycle Bin for 93 days and is not accessible to anyone except the admin. If a document is marked by a retention policy as a record, it will not be deleted until the retention period is over, after which time the content is permanently deleted.
+If a user leaves your organization, any files that were covered by a retention policy or retention label will remain for the duration of the policy or label. During that time period, all sharing access continues to work. When the retention period expires, content moves into the Site Collection Recycle Bin and is not accessible to anyone except the admin. If a document is marked by a retention policy as a record, it will not be deleted until the retention period is over, after which time the content is permanently deleted.
 
 **SharePoint**
 
@@ -332,7 +332,7 @@ Second, to view a list of your retention policies and find the name of the polic
 
 Third, to place a Preservation Lock on the retention policy, run `Set-RetentionCompliancePolicy` with the `RestrictiveRetention` parameter set to true. For example:
 
-`Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
+`Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true`
 
 ![RestrictiveRetention parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
 
@@ -342,7 +342,7 @@ After you run that cmdlet, you see a confirmation prompt. Choose **Yes to All**.
 
 A Preservation Lock is now placed on the retention policy. If you run `Get-RetentionCompliancePolicy`, the `RestrictiveRetention` parameter is set to true. For example:
 
-`Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
+`Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl`
 
 ![Locked policy with all parameters shown in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
   
