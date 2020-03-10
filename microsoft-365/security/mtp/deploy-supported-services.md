@@ -31,7 +31,7 @@ search.appverid:
 [Microsoft Threat Protection](microsoft-threat-protection.md) integrates various Microsoft security services to provide centralized detection, prevention, and investigation capabilities against sophisticated attacks. This article describes the supported services, their licensing requirements, the advantages and limitations associated with deploying one or more services, and links to how you can fully deploy them individually.
 
 ## Supported services
-A [Microsoft 365 E5, E5 Security, A5, or A5 Security or a valid combination of licenses](prerequisites.md#licensing-requirements) provides access to the following supported services and entitles you to use Microsoft Threat Protection in Microsoft 365 security center.
+A [Microsoft 365 E5, E5 Security, or A5 license or a valid combination of licenses](prerequisites.md#licensing-requirements) provides access to the following supported services and entitles you to use Microsoft Threat Protection in Microsoft 365 security center.
 
 | Supported service | Description |
 | ------ | ------ |

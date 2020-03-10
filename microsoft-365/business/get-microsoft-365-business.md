@@ -18,11 +18,12 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Learn how to purchase Microsoft 365 Business from Microsoft Partner Center." 
+description: "Discover your options for purchasing Microsoft 365 Business and step-by-step instructions for purchasing it from Microsoft Partner Center." 
 ---
 
 # Get Microsoft 365 Business

@@ -20,12 +20,13 @@ ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
-description: "Learn how to troubleshoot AutoPilot device file errors."
+description: "Learn how to troubleshoot errors you might see while working with AutoPilot device files in Microsoft 365 Business."
 ---
 
 # Troubleshoot AutoPilot device errors

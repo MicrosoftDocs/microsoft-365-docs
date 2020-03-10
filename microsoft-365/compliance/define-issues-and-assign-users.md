@@ -17,7 +17,7 @@ ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: "Learn how to add or edit an issue, including assigning users to it, or delete an issue for an eDiscovery case in Office 365 Advanced eDiscovery."
 ---
 
-# Define issues and assign users in Office 365 Advanced eDiscovery
+# Define issues and assign users in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -71,7 +71,7 @@ Issues may be deleted (meaning, removed from the database) only immediately afte
     
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Setting up loads to add imported files](set-up-loads-to-add-imported-files.md)
   
