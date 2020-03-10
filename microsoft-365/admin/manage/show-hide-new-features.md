@@ -20,7 +20,7 @@ search.appverid:
 description: "Decide which features and their What's New content are shown to or hidden from end users in the Office What's New Management for Office desktop apps."
 ---
 
-# Show or hide new features using What's New Management Preview
+# Show or hide new features using What's New Management
 
 Office What's New Management for Win 32 allows your organization to decide which features are shown to or hidden from end users in the Office desktop app. Each release of Office includes new and improved features, and the content preview allows you to view new content for each release version and channel, and choose whether to hide or show each feature's What's New content to end users. 
 
