@@ -135,7 +135,7 @@ For a more consistent label experience with meaningful reporting, provide user g
 
 - For exception cases where users must assign their own permissions, provide labels that [let users assign their own permissions](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 
-- Instead of users manually removing encryption after selecting a label that applies encryption, use sublabels to provide an alternative label with the same classification and visual markings, but no encryption. For example:
+- Instead of users manually removing encryption after selecting a label that applies encryption, provide a sublabel alternative when users need a label with the same classification and visual markings, but no encryption. For example:
     - **Confidential \ All Employees**
     - **Confidential \ Anyone (no encryption)**
 
