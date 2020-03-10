@@ -152,7 +152,8 @@ To get ready for the GDPR, here are some suggestions for next steps to take:
   
 ## Additional resources
 
-[Microsoft Trust Center overview of the GDPR](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft Trust Center overview of the GDPR](https://www.microsoft.com/trust-center/privacy/gdpr-overview
+)
   
 The Official Microsoft Blog: [Microsoft commitment to GDPR](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)
   

@@ -24,7 +24,7 @@ description: "Advanced Audit in Microsoft 365 provides new auditing capabilities
 The [unified auditing functionality](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 provides organizations with visibility into many types of audited activities across many different services in Microsoft 365. Now with the release of Advanced Audit in Microsoft 365, we're adding new auditing capabilities that can help your organization with forensic and compliance investigations.
 
 > [!NOTE]
-> Advanced Audit is available for organizations with an Office 365 or Microsoft 365 Enterprise E5 subscription. Additionally, a Microsoft 365 E5 Compliance add-on subscription can be assigned to users for when per-user licensing is required for Advanced Audit features as is the case for long-term retention of audit logs and access to crucial events for investigations.
+> Advanced Audit is available for organizations with an Office 365 E5 or Microsoft 365 Enterprise E5 subscription. Additionally, a Microsoft 365 E5 Compliance add-on license can be assigned to users for when per-user licensing is required for Advanced Audit features as is the case for long-term retention of audit logs and access to crucial events for investigations.
 
 This article provides an overview of these Advanced Audit capabilities.
 
@@ -56,7 +56,7 @@ The new MailItemsAccessed mailbox action replaces MessageBind in mailbox auditin
 
 - MessageBind actions would trigger the creation of multiple audit records when the same email message was accessed, which resulted in auditing "noise". In contrast, MailItemsAccessed events are aggregated into fewer audit records.
 
-For more information about mailbox auditing logging, see [Manage mailbox auditing](enable-mailbox-auditing.md).
+For information about audit records for MailItemsAccessed activities, see [Use Advanced Audit to investigate compromised accounts](mailitemsaccessed-forensics-investigations.md).
 
 ### Search for MailItemsAccessed audit records
 

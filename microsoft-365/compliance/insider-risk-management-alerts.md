@@ -31,6 +31,9 @@ The insider risk **Alert dashboard** allows you to view and take action on alert
 
 ![Insider risk management alert dashboard](../media/insider-risk-alerts-dashboard.png)
 
+>[!NOTE]
+>Insider risk management uses built-in alert throttling to help protect and optimize your risk investigation and review experience. This throttling guards against issues that might result in an overload of policy alerts, such as misconfigured data connectors or DLP policies. As a result, there might be a delay in displaying new alerts for a user.
+
 ## Alert status and severity
 
 You can triage alerts into one of the following statuses:
