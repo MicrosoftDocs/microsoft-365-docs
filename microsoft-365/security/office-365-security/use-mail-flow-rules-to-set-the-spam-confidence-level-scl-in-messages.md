@@ -1,11 +1,11 @@
 ---
-title: "Use mail flow rules to set the spam confidence level (SCL) in messages"
+title: "Use mail flow rules to the SCL in messages"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 11/17/2014
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,47 +20,50 @@ description: "Admins can learn how to set the SCL of messages in Exchange Online
 
 # Use mail flow rules to set the spam confidence level (SCL) in messages
 
-You can create a mail flow rule (also known as a transport rule) that sets the spam confidence level (SCL) of an email message. The SCL is a measure of how likely a message is to be spam. Spam is unsolicited (and typically unwanted) email messages. The service takes different action on a message depending on its SCL rating. For example, you might want to bypass spam content filtering for messages that are sent from people inside your organization because you trust that a message sent internally from a colleague isn't spam. Using mail flow rules to set the SCL value of a message gives you increased control in handling spam.
+If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP uses anti-spam policies (also known as spam filter policies or content filter policies) to scan inbound messages for spam. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
- **What do you need to know before you begin?**
+If you want to mark specific messages as spam before they're even scanned by spam filtering, or mark messages so they'll skip spam filtering, you can create mail flow rules (also known as transport rules) to identify the messages and set the spam confidence level (SCL). For more information about the SCL, see [Spam confidence level (SCL) in Office 365](spam-confidence-levels.md).
 
-- Estimated time to complete this procedure: 10 minutes.
+> [!CAUTION]
+> Be very careful about allowing messages to skip spam filtering. Attackers can use this loophole to send phishing and other malicious messages into your organization. For more information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow rules" entry in [Feature Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) or [Feature permissions in EOP](feature-permissions-in-eop.md).
+## What do you need to know before you begin?
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- You need to be assigned permissions in Exchange Online before you can do these procedures. Specifically, you need to be assigned the **Transport Rules** role, which is assigned to the **Organization Management**, **Compliance Management**, and **Records Management** roles by default. For more information, see [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-### To create a mail flow rule that sets the SCL of a message
+- To open the EAC in Exchange Online, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
-1. In the Exchange admin center (EAC), choose **Mail flow** \> **Rules**.
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-2. Choose **New**![Add Icon](../../media/ITPro-EAC-AddIcon.gif), and then select **Create a new rule**.
+- For more information about mail flow rules in Exchange Online, see [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-3. Specify a name for the rule.
+## Use the EAC to create a mail flow rule that sets the SCL of a message
 
-4. Choose **More options**, and then under **Apply this rule if**, specify a condition that will trigger the action you'll be setting for this rule (which is to set the SCL value).
+1. In the EAC, go to **Mail flow** \> **Rules**.
 
-   For example, you can set **The sender** \> **is internal/external**, and then in the **select sender location** dialog box, select **Inside the organization**, and choose **ok**.<br/>
-   ![Select sender location](../../media/EOP-ETR-SetSCL-1.jpg)
+2. Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
 
-5. Under **Do the following**, select **Modify the message properties** \> **set the spam confidence level (SCL)**.
+3. In the **New rule** page that opens, configure the following settings:
 
-6. In the **Specify SCL** box, select one of the following values, and choose **OK**:
+   - **Name**: Enter a unique, descriptive name for the rule.
 
-   - **Bypass spam filtering**: This sets the SCL to -1, which means that content filtering won't be performed.
+   - Click **More Options**.
 
-   - **0-4**: The message will be passed along to the content filter for additional processing.
+   - **Apply this rule if**: Select one or more conditions to identify messages. For more information, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-   - **5-6**: The action specified for **Spam** in the applicable content filter policies will be applied. By default, the action is to send the message to the recipient's Junk Email folder.
+   - **Do the following**: Select **Modify the message properties** \> **set the spam confidence level (SCL)**. In the **Specify SCL** dialog that appears, configure one of the following values:
 
-   - **7-9**: The action specified for **High confidence spam** in the applicable content filter policies will be applied. By default, the action is to send the message to the recipient's Junk Email folder.
+   - **Bypass spam filtering**: This sets the SCL to -1, which means the messages will skip spam filtering.
 
-   For more information about configuring your content filter policies, see [Configure your spam filter policies](configure-your-spam-filter-policies.md). For more information about SCL values in the service, see [Spam confidence levels](spam-confidence-levels.md).
+   - **0 to 4**: The message is sent through spam filtering for additional processing.
 
-7. Specify additional properties for the rule, and choose **save**.
+   - **5 or 6**: The message is marked as **Spam**. The action that you've configured for **Spam** filtering verdicts in your anti-spam policies is applied to the message (the default value is **Move message to Junk Email folder**).
 
-   > [!TIP]
-   > For more information about the additional properties you can select or specify for this rule, see [Use the EAC to create mail flow rules](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures#use-the-eac-to-create-mail-flow-rules).
+   - **7 to 9**: The message is marked as **High confidence spam**. The action that you've configured for **High confidence spam** filtering verdicts in your anti-spam policies is applied to the message (the default value is **Move message to Junk Email folder**).
+
+4. Specify any additional properties that you want for the rule. When you're finished, click **Save**
+
+## Use 
 
 ## How do you know this worked?
 
