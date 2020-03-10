@@ -23,7 +23,7 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 
 Before this preview, when you applied sensitivity labels that included encryption to Office files stored in SharePoint and OneDrive, the service couldn't process the content of these files. Coauthoring, eDiscovery, Data Loss Prevention, search, Delve, and other collaborative features didn't work under these circumstances. This preview enables these features for new and changed files that have a sensitivity label applied that includes encryption with a cloud-based key:
 
-- SharePoint recognizes sensitivity labels applied to Word, Excel, and PowerPoint files in SharePoint and OneDrive: While the file is stored in SharePoint, the encryption from Azure Information Protection is removed so that the file contents can be processed, and then the encryption settings from the label are reapplied when the file is downloaded. For information about how documents are protected before they are downloaded, see [Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md).
+- SharePoint recognizes sensitivity labels applied to Word, Excel, and PowerPoint files in SharePoint and OneDrive: While the file is stored in SharePoint, if the label applied encryption, that encryption is removed so that the file contents can be processed by SharePoint. The encryption settings from the label are reapplied whenever the file is downloaded or accessed. For information about how documents are protected before they are downloaded, see [Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md).
  
 - For SharePoint to decrypt the file on upload, the user who uploads the labeled and encrypted file must have usage rights to at least view the file. SharePoint doesn't decrypt files that the user can't open outside SharePoint.
 
@@ -84,6 +84,8 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
 - Office desktop apps and mobile apps don't support coauthoring. Instead, these apps continue to open files in exclusive editing mode.
 
 - If a labeled document is uploaded to SharePoint and the label applied encryption by using an account from a service principal name, the document can't be opened in Office on the web. Example scenarios include Microsoft Cloud App Security and a file sent to Teams by email.
+
+- Users can experience save problems after going offline or into a sleep mode when instead of using Office for the web, they use the desktop and mobile apps for Word, Excel, or PowerPoint. For these users, when they resume their Office app session and try to save changes, they see an upload failure message with an option to save a copy instead of saving the original file. 
 
 - Documents that have been encrypted in the following ways can't be opened in Office on the web:
     - Encryption that uses an on-premises key ("hold your own key" or HYOK)
