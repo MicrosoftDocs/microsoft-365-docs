@@ -118,7 +118,7 @@ Not yet. OneDrive for Business attachments are not supported and end-users can't
   
 ## What email clients support preview of encrypted attachments in protected emails?
 
-When attachments are protected with a protected mail, Outlook clients provide tha ability to preview the document directly. Outlook supports preview of Office documents (Docx, xlsx, pptx, doc, xls, ppt). Outlook on the web supports preview of Office documents (docx, xlsx, pptx) and PDF.  
+When attachments are protected with a protected mail, Outlook clients provide tha ability to preview the document directly. Outlook supports preview of Office documents (docx, xlsx, pptx, doc, xls, ppt). Outlook on the web supports preview of Office documents (docx, xlsx, pptx) and PDF.  
 
 ## Can I automatically encrypt messages by setting up policies?
 
@@ -156,7 +156,7 @@ Not at this time.
 
 Yes! Encrypted messages are supported for a shared mailbox.
 
-- Users can open protected mails in a shared mMailbox where the shared mailbox received a protected mail as part of a distribution group.
+- Users can open protected mails in a shared mailbox where the shared mailbox received a protected mail as part of a distribution group.
 
 - Users can view attachments that inherit protection from email when they use Outlook for Windows, Outlook for Mac, and Outlook on the web.
 
