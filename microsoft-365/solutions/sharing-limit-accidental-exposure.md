@@ -32,7 +32,7 @@ Depending on your needs, you can disable *Anyone* links for specific sites, or f
 To turn off *Anyone* links for your organization
 1. In the SharePoint admin center, in the left navigation, click **Sharing**.
 2. Set the SharePoint external sharing settings to **New and existing guests**.</br>
-   ![Screenshot of SharePoint site external sharing settings](media/sharepoint-organization-external-sharing-controls-new-users.png)
+   ![Screenshot of SharePoint site external sharing settings](../media/sharepoint-organization-external-sharing-controls-new-users.png)
 3. Click **Save**.
 
 To turn off *Anyone* links for a site
@@ -40,7 +40,7 @@ To turn off *Anyone* links for a site
 2. Select the site for the team that you just created.
 3. In the ribbon, click **Sharing**.
 4. Ensure that sharing is set to **New and existing guests**.</br>
-   ![Screenshot of SharePoint site external sharing settings](media/sharepoint-site-external-sharing-settings.png)
+   ![Screenshot of SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
 5. If you made changes, click **Save**.
 
 ## Domain filtering
@@ -58,7 +58,7 @@ To set up a domain allow or deny list for people outside your organization
 2. Under **Advanced settings for external sharing**, select the **Limit external sharing by domain** check box.
 3. Click **Add domains**.
 4. Select whether you want to block domains, type the domains, and click **OK**.</br>
-   ![Screenshot of SharePoint limit external sharing by domain setting](media/sharepoint-sharing-block-domain.png)
+   ![Screenshot of SharePoint limit external sharing by domain setting](../media/sharepoint-sharing-block-domain.png)
 5. Click **Save**.
 
 If you want to limit sharing by domain at a higher level than SharePoint and OneDrive, you can [allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list) in Azure Active Directory. (You must configure the [SharePoint and OneDrive integration with Azure AD B2B Preview](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) for these settings to affect SharePoint and OneDrive.)

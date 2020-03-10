@@ -29,7 +29,7 @@ Sharing in Microsoft 365 is governed at its highest level by the organizational 
 
 Check the organizational relationships settings to ensure that sharing with guests is not blocked.
 
-![Screenshot of Azure Active Directory Organizational Relationships Settings page](media/azure-ad-organizational-relationships-settings.png)
+![Screenshot of Azure Active Directory Organizational Relationships Settings page](../media/azure-ad-organizational-relationships-settings.png)
 
 To set organizational relationship settings
 
@@ -46,7 +46,7 @@ Note the settings in the **Collaboration restrictions** section. Make sure that 
 
 Modern SharePoint sites use Office 365 Groups to control site access. The Office 365 Groups guest settings must be turned on in order for guest access in SharePoint sites to work.
 
-![Screenshot of Office 365 Groups guest settings in  Microsoft 365 admin center](media/office-365-groups-guest-settings.png)
+![Screenshot of Office 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
 
 To set Office 365 Groups guest settings
 
@@ -65,7 +65,7 @@ The organization-level settings determine what settings are available for indivi
 
 If you want to allow unauthenticated file and folder sharing, choose **Anyone**. If you want to ensure that all people outside your organization have to authenticate, choose **New and existing guests**. Choose the most permissive setting that will be needed by any site in your organization.
 
-![Screenshot of SharePoint organization-level sharing settings](media/sharepoint-organization-external-sharing-controls.png)
+![Screenshot of SharePoint organization-level sharing settings](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 To set SharePoint organization level sharing settings
@@ -96,7 +96,7 @@ Check the site-level sharing settings to make sure that they allow the type of a
 
 Note that the site cannot be shared with unauthenticated people (**Anyone** setting), but individual files and folders can.
 
-![Screenshot of SharePoint site external sharing settings](media/sharepoint-site-external-sharing-settings.png)
+![Screenshot of SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
 
 To set site-level sharing settings
 1. In the SharePoint admin center, in the left navigation, expand **Sites** and click **Active sites**.

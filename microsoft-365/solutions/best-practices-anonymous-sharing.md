@@ -30,7 +30,7 @@ To set an expiration date for Anyone links
 1. Open the SharePoint Online admin center.
 2. In the left navigation, click **Sharing**.
 3. Under **Advanced settings for "Anyone" links**, select the **These links must expire within this many days** check box.</br>
-   ![Screenshot of SharePoint organization-level Anyone link expiration settings](media/sharepoint-organization-anyone-link-expiration.png)
+   ![Screenshot of SharePoint organization-level Anyone link expiration settings](../media/sharepoint-organization-anyone-link-expiration.png)
 4. Type a number of days in the box, and then click **Save**.
 
 Note that once an *Anyone* link expires, the file or folder can be re-shared with a new *Anyone* link.
@@ -45,7 +45,7 @@ To set permissions for Anyone links
 1. Open the SharePoint Online admin center.
 2. In the left navigation, click **Sharing**.
 3. Under **Advanced settings for "Anyone" links**, select the file and folder permissions that you want to use.</br>
-   ![Screenshot of SharePoint organization-level Anyone link permissions settings](media/sharepoint-organization-anyone-link-permissions.png)
+   ![Screenshot of SharePoint organization-level Anyone link permissions settings](../media/sharepoint-organization-anyone-link-permissions.png)
 
 With *Anyone* links set to **View**, users can still share files and folders with guests and give them edit permissions by using *Specific people* links. These links require people outside your organization to authenticate as guests, and you can track and audit guest activity on files and folders shared with these links.
 
@@ -58,7 +58,7 @@ You can mitigate this risk by changing the default link setting to a link that o
 To set the default file and folder sharing link
 1. In the SharePoint admin center, in the left navigation, click **Sharing**.
 2. Under **File and folder links**, select **Only people in your organization**.</br>
-   ![Screenshot of SharePoint default link type setting](media/sharepoint-default-sharing-link-company-link.png)
+   ![Screenshot of SharePoint default link type setting](../media/sharepoint-default-sharing-link-company-link.png)
 3. Click **Save**
 
 ## Protect against malicious files
@@ -70,7 +70,7 @@ To turn on safe attachments
 2. In the left navigation, click **Policies**.
 3. Under **Threat protection**, click **ATP safe attachments (Office 365)**.
 4. Select the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** check box, and then click **Save**.</br>
-   ![Screenshot of the safe attachments setting in the Security and Compliance center](media/safe-attachments-setting.png)
+   ![Screenshot of the safe attachments setting in the Security and Compliance center](../media/safe-attachments-setting.png)
 
 ## Add copyright information to your files
 
@@ -83,7 +83,7 @@ To add a footer to a labeled file
 4. Click the **Content marking** tab, and then turn **On** content marking.
 5. Select the check box for the type of text you want to add, and then click **Customize text**.
 6. Type the text that you want added to your documents, select the text options that you want, and then click **Save**.</br>
-   ![Screenshot of the content marking settings for a sensitivity label](media/content-marking-for-anonymous-sharing.png)
+   ![Screenshot of the content marking settings for a sensitivity label](../media/content-marking-for-anonymous-sharing.png)
 7. Click **Save**, and then click **Close**.
 
 With content marking enabled for the label, the text you specified will be added to Office documents when a user applies that label.

@@ -64,7 +64,7 @@ To create an Azure AD terms of use
 1. Sign in to Azure as a Global Administrator, Security Administrator, or Conditional Access Administrator.
 2. Navigate to [Terms of use](https://aka.ms/catou).
 3. Click **New terms**.</br>
-   ![Screenshot of Azure AD new terms of use settings](media/azure-ad-guest-terms-of-use.png)
+   ![Screenshot of Azure AD new terms of use settings](../media/azure-ad-guest-terms-of-use.png)
 4. In the **Name** and **Display name** boxes, type *Guest terms of use*.
 6. For **Terms of use document**, browse to the pdf file that you created and select it.
 7. Select the language for your terms of use document.
@@ -114,7 +114,7 @@ Once the program has been created, we can create a guest access review and assoc
 To set up a guest user access review
 1. On the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade), in the left menu, click **Access reviews**.
 2. Click **New access review**.</br>
-   ![Screenshot of Azure AD access review settings](media/azure-ad-create-access-review.png)
+   ![Screenshot of Azure AD access review settings](../media/azure-ad-create-access-review.png)
 3. In the **Name** box, type *Quarterly guest access review*.
 4. For **Frequency**, choose **Quarterly**.
 5. For **End**, choose **Never**.
@@ -150,7 +150,7 @@ To restrict guests to web-ony access
 10. Under **Assignments**, click **Conditions**.
 11. On the **Conditions** blade, click **Client apps**.
 12. On the **Client apps** blade, click **Yes** for **Configure**, and then select the **Mobile apps and desktop clients** and **Modern authentication clients** settings.</br>
-    ![Screenshot of Azure AD conditional access client apps settings](media/azure-ad-conditional-access-client-mobile.png)
+    ![Screenshot of Azure AD conditional access client apps settings](../media/azure-ad-conditional-access-client-mobile.png)
 13. Click **Done**, and then on the **Conditions** blade, click **Done** again.
 14. Under **Access controls**, click **Grant**.
 15. On the **Grant** blade, select **Require device to be marked as compliant** and **Require Hybrid Azure AD joined device**.
@@ -217,7 +217,7 @@ To create a classification label (Highly confidential)
 13. Leave auto labeling **Off** and click **Next**.
 14. Click **Create**.
 
-![Screenshot of sensitivity labels in the Microsoft 365 Compliance Center](media/microsoft-365-sharing-sensitivity-labels.png)
+![Screenshot of sensitivity labels in the Microsoft 365 Compliance Center](../media/microsoft-365-sharing-sensitivity-labels.png)
 
 Once you've created the labels, the next step is to publish them. 
 
@@ -272,7 +272,7 @@ To create a sensitive information type-based file policy
 8. Under **Inspection method**, choose **Data classification service**.
 9. On the **Choose inspection type** list, choose **Sensitive information type**.
 10. Search for and select the *Project Saturn* sensitivity label, and then click **Done**.</br>
-   ![Screenshot of Cloud App Security inspection method settings](media/mcas-sensitive-info-type-project-saturn.png)
+   ![Screenshot of Cloud App Security inspection method settings](../media/mcas-sensitive-info-type-project-saturn.png)
 11. Under **Governance**, expand **Microsoft SharePoint Online**.
 12. Select the **Apply classification label** check box and select the **Highly Confidential** label.
 13. Click **Create**.
@@ -298,7 +298,7 @@ To create a label-based file policy
 7. Click **Add a filter**.
 8. In the **Select a filter** list, choose **Classification label**, and then select **Azure Information Protection** from the **Select filter...** list.
 9. In the **Select classification label** list, select **Highly Confidential**.</br>
-   ![Screenshot of Cloud App Security policy filter settings](media/mcas-sharepoint-confidential-label-filter.png)
+   ![Screenshot of Cloud App Security policy filter settings](../media/mcas-sharepoint-confidential-label-filter.png)
 10. Under **Governance**, expand **Microsoft SharePoint Online**.
 11. Select the **Send policy-match digest to file owner** and **Remove external users** check boxes.
 12. For the custom notification message, type *This file is highly confidential. Company policy prohibits sharing it with guests*.

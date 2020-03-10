@@ -30,7 +30,7 @@ Azure Active Directory is the directory service used by  Microsoft 365. The Azur
 
 **Navigation:** [Azure Active Directory admin center](https://aad.portal.azure.com) > Azure Active Directory > Organizational relationships > Settings
 
-![Screenshot of Azure Active Directory Organizational Relationships Settings page](media/azure-ad-organizational-relationships-settings.png)
+![Screenshot of Azure Active Directory Organizational Relationships Settings page](../media/azure-ad-organizational-relationships-settings.png)
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
@@ -53,7 +53,7 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 **Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > Settings > Settings > Security & privacy tab > Sharing
 
-![Screenshot of the security and privacy guest sharing setting in the  Microsoft 365 admin center](media/sharepoint-security-privacy-sharing-setting.png)
+![Screenshot of the security and privacy guest sharing setting in the  Microsoft 365 admin center](../media/sharepoint-security-privacy-sharing-setting.png)
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
@@ -63,7 +63,7 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 **Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > Settings > Settings > Office 365 Groups
 
-![Screenshot of Office 365 Groups guest settings in  Microsoft 365 admin center](media/office-365-groups-guest-settings.png)
+![Screenshot of Office 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
@@ -82,7 +82,7 @@ The Teams master guest access switch, **Allow guest access in Teams**, must be *
 
 **Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > Org-wide settings > Guest access
 
-![Screenshot of Teams guest access toggle](media/teams-guest-access-toggle.png)
+![Screenshot of Teams guest access toggle](../media/teams-guest-access-toggle.png)
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
@@ -92,7 +92,7 @@ The Teams master guest access switch, **Allow guest access in Teams**, must be *
 
 **Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > Org-wide settings > Guest access
 
-![Screenshot of Teams guest calling options](media/teams-guest-calling-setting.png)
+![Screenshot of Teams guest calling options](../media/teams-guest-calling-setting.png)
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
@@ -102,7 +102,7 @@ The Teams master guest access switch, **Allow guest access in Teams**, must be *
 
 **Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > Org-wide settings > Guest access
 
-![Screenshot of Teams guest meeting settings](media/teams-guest-meeting-settings.png)
+![Screenshot of Teams guest meeting settings](../media/teams-guest-meeting-settings.png)
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
@@ -114,7 +114,7 @@ The Teams master guest access switch, **Allow guest access in Teams**, must be *
 
 **Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > Org-wide settings > Guest access
 
-![Screenshot of Teams guest messaging settings](media/teams-guest-messaging-settings.png)
+![Screenshot of Teams guest messaging settings](../media/teams-guest-messaging-settings.png)
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
@@ -139,7 +139,7 @@ Because OneDrive is a hierarchy of sites within SharePoint, the organization-lev
 
 **Navigation:** SharePoint admin center > Sharing
 
-![Screenshot of SharePoint organization-level sharing settings](media/sharepoint-organization-external-sharing-controls.png)
+![Screenshot of SharePoint organization-level sharing settings](../media/sharepoint-organization-external-sharing-controls.png)
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
@@ -150,7 +150,7 @@ Because OneDrive is a hierarchy of sites within SharePoint, the organization-lev
 
 **Navigation:** SharePoint admin center > Sharing
 
-![Screenshot of SharePoint organization-level additional sharing settings](media/sharepoint-organization-advanced-sharing-settings.png)
+![Screenshot of SharePoint organization-level additional sharing settings](../media/sharepoint-organization-advanced-sharing-settings.png)
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
@@ -164,7 +164,7 @@ When files and folders are shared in SharePoint and OneDrive, sharing recipients
 
 **Navigation:** SharePoint admin center > Sharing
 
-![Screenshot of SharePoint organization-level files and folders sharing settings](media/sharepoint-organization-files-folders-sharing-settings.png)
+![Screenshot of SharePoint organization-level files and folders sharing settings](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
@@ -179,7 +179,7 @@ If you want to limit who can share with guests in SharePoint and OneDrive, you c
 
 **Navigation:** SharePoint admin center > Sharing > Limit external sharing to specific security groups
 
-![Screenshot of SharePoint organization-level sharing security group settings](media/sharepoint-organization-external-sharing-security-groups.png)
+![Screenshot of SharePoint organization-level sharing security group settings](../media/sharepoint-organization-external-sharing-security-groups.png)
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
@@ -200,7 +200,7 @@ You can set guest sharing permissions for each site in SharePoint. This setting 
 
 **Navigation:** SharePoint admin center > Active sites > select the site > Policies tab > Edit External sharing
 
-![Screenshot of SharePoint site external sharing settings](media/sharepoint-site-external-sharing-settings.png)
+![Screenshot of SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
@@ -212,7 +212,7 @@ You can set defaults for link type and permissions, and expiration settings for 
 
 **Navigation:** SharePoint admin center > Active sites > select the site > Policies tab > Edit External sharing
 
-![Screenshot of SharePoint site-level link sharing settings](media/sharepoint-site-link-sharing-settings.png)
+![Screenshot of SharePoint site-level link sharing settings](../media/sharepoint-site-link-sharing-settings.png)
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
