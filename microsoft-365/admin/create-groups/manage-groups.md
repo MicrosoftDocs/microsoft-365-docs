@@ -111,11 +111,13 @@ Group members can opt out of receiving these emails by choosing to stop followin
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page, and then select the name of the group you want to change. 
+1. In the admin center, expand **Groups**, and then click **Groups**.
 
-2. On the **Settings** tab, select **Send copies of group conversations and events to group members** if you want members to receive copies of group messages and calendar items in their own inbox.
+2. Click the name of the group you want to manage to open the settings pane.
 
-3. Select **Save**.
+3. On the **Settings** tab, select **Send copies of group conversations and events to group members** if you want members to receive copies of group messages and calendar items in their own inbox.
+
+4. Select **Save**.
 
 ::: moniker-end
 
@@ -149,9 +151,11 @@ This option is great if you want to have a company email address such as info@co
  
 ::: moniker range="o365-worldwide"
 
-1. Refresh your admin center page so your new group appears.
+1. In the admin center, expand **Groups**, and then click **Groups**.
 
-2. In the admin center groups list, select the name of the group you want to change, and then on the **Settings** tab, select **Allow external senders to email this group**.
+2. Click the name of the group you want to manage to open the settings pane.
+
+3. In the admin center groups list, select the name of the group you want to change, and then on the **Settings** tab, select **Allow external senders to email this group**.
     
 4. Select **Save**.
 
