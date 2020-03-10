@@ -17,7 +17,7 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: "Learn how the Decide tab in Office 365 Advanced eDiscovery provides data that can help you determine the correct size of the review set of case files. "
 ---
 
-# Decision based on the results in Office 365 Advanced eDiscovery
+# Decision based on the results in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -50,7 +50,7 @@ The expanded Details pane displays additional details. Files in collection figur
   
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
   

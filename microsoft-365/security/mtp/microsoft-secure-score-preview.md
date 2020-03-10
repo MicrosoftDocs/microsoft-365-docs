@@ -24,11 +24,11 @@ search.appverid:
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft Secure Score is a measurement of an organization’s security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
+Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
 
 Secure Score helps organizations:  
 
-* Report on the current state of the organization’s security posture.
+* Report on the current state of the organization's security posture.
 * Improve their security posture by providing discoverability, visibility, guidance, and control.  
 * Compare with benchmarks and establish key performance indicators (KPIs).
 
@@ -87,11 +87,11 @@ To access the Graph API, you need to have one of the following scopes in additio
 
 To help you the information you need more quickly, Microsoft improvement actions are organized into groups:
 
-* Identity (Azure AD accounts & roles, with Azure ATP coming soon)
+* Identity (Azure AD accounts & roles)
 * Data  (Microsoft Information Protection)
-* Device (Microsoft Defender ATP devices)
+* Device (no improvement actions for now)
 * App (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
-* Infrastructure (Azure resources)
+* Infrastructure (no improvement actions for now)
 
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
@@ -163,7 +163,7 @@ New improvement actions:
 
  These new improvement actions will require registering your users or admins for multi-factor authentication (MFA) across your directory and establishing the right set of policies that fit your organizational needs. The main goal is have flexibility while ensuring all your users and admins can authenticate with multiple factors or risk-based identity verification prompts. That can take the form of setting security defaults that let Microsoft decide when to challenge users for MFA, or having multiple policies that apply scoped decisions.
 
-## What’s new? 
+## What's new? 
 
 To make Microsoft Secure Score a better representative of your security posture and improve usability, we have made some changes. Your score and the maximum possible score have changed. However, this does not imply a change in your security posture.
 
@@ -176,7 +176,7 @@ To make Microsoft Secure Score a better representative of your security posture 
 * Manage towards your future goals using score projections and planned actions
 * And more!
 
-### Removed “not scored” and “review” improvement actions
+### Removed "not scored" and "review" improvement actions
 
 One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable, and review improvement actions are not measured to the same standard as other improvement actions.
 

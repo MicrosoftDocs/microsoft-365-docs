@@ -17,11 +17,12 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: "Steps that upgrade your business from Office 365 Business Premium to Microsoft 365 Business."
+description: "Learn the difference between Office 365 Business Premium and Microsoft 365 Business and how you can upgrade to Microsoft 365 Business."
 ---
 
 # Upgrade to Microsoft 365 Business from Office 365 Business Premium

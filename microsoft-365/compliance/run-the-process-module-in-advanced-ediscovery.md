@@ -19,7 +19,7 @@ description: "Learn the guidelines for preparing case files of Office 365 data f
 "
 ---
 
-# Run the Process module in Office 365 Advanced eDiscovery
+# Run the Process module in Advanced eDiscovery (classic)
 
 Case files are loaded into the Advanced eDiscovery during **Prepare** \> **Process**. 
   
@@ -70,7 +70,7 @@ A user-defined label can be associated with a set of files to exclude them from 
   
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Running the Process module and loading data](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
   
