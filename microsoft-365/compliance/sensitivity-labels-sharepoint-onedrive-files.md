@@ -23,11 +23,11 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 
 Before this preview, when you applied sensitivity labels that included encryption to Office files stored in SharePoint and OneDrive, the service couldn't process the content of these files. Coauthoring, eDiscovery, Data Loss Prevention, search, Delve, and other collaborative features didn't work under these circumstances. This preview enables these features for new and changed files that have a sensitivity label applied that includes encryption with a cloud-based key:
 
-- SharePoint recognizes sensitivity labels applied to Word, Excel, and PowerPoint files in SharePoint and OneDrive: While the file is stored in SharePoint, if the label applied encryption, that encryption is removed so that the file contents can be processed by SharePoint. The encryption settings from the label are reapplied whenever the file is downloaded or accessed. For information about how documents are protected before they are downloaded, see [Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md).
- 
-- For SharePoint to decrypt the file on upload, the user who uploads the labeled and encrypted file must have usage rights to at least view the file. SharePoint doesn't decrypt files that the user can't open outside SharePoint.
+- SharePoint recognizes sensitivity labels applied to Word, Excel, and PowerPoint files in SharePoint and OneDrive: While the file is stored in SharePoint, the encryption from Azure Information Protection is removed so that the file contents can be processed. For information about how documents are protected while they are stored in SharePoint, see [Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md).
 
-- When you download or access the file from SharePoint or OneDrive, the sensitivity label and any encryption settings are reapplied with the file, and these settings remain enforced wherever the file is saved.
+- When you download or access this file from SharePoint or OneDrive, the sensitivity label and any encryption settings from the label are reapplied with the file, and these settings remain enforced wherever the file is saved. Because of this behavior, ensure you provide user guidance to use labels exclusively to protect documents. For more information, see [Information Rights Management (RIM) options and sensitivity labels](compliance/sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
+
+- For SharePoint to remove the encryption from the file on upload, the user who uploads the labeled and encrypted file must have usage rights to at least view the file. SharePoint doesn't remove encryption from files if the user can't open them outside SharePoint.
 
 - Use Office on the web (Word, Excel, PowerPoint) to open and edit Office files that have sensitivity labels that apply encryption. The permissions that were assigned with the encryption are enforced. With Word on the web, you can also use auto labeling when you edit these documents.
 
