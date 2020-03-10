@@ -89,7 +89,8 @@ After a retention policy is assigned to a OneDrive account or SharePoint site, c
     > [!NOTE]
     > We've recently changed how content is deleted from the Preservation Hold library. To help prevent inadvertent data loss, we no longer permanently delete content from the Preservation Hold library. Instead, we permanently delete content only from the Recycle Bin, so all content from the Preservation Hold library now goes through the second-stage Recycle Bin.
     
-2. **If the content is not modified or deleted** during the retention period, it's moved to the first-stage Recycle Bin at the end of the retention period. If a user deletes the content from there or empties this Recycle Bin (also known as purging), the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first- and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first- or second-stage Recycle Bin. The Recycle Bin is not indexed and therefore searches do not find content there. This means that an eDiscovery hold can't locate any content in the Recycle Bin to hold it. 
+2. **If the content is not modified or deleted** during the retention period, it's moved to the first-stage Recycle Bin at the end of the retention period. If a user deletes the content from there or empties this Recycle Bin (also known as purging), the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first- and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first- or second-stage Recycle Bin. The Recycle Bin is not 
+3. ed and therefore searches do not find content there. This means that an eDiscovery hold can't locate any content in the Recycle Bin to hold it. 
     
 ### Content in mailboxes and public folders
 
@@ -241,11 +242,9 @@ Your retention policy can retain content in SharePoint communication sites, team
 
 If you specify sites that aren't supported, these are ignored by the retention policy.
 
-When you specify your locations for SharePoint sites, no validation is done at the time you specify the URL on the **Edit locations** page. However, the sites you specify are validated at the end of the wizard:
-- The site can be found with your permissions. You don't need site admin permissions or access to content in the site, but you must be able to find the site with search permissions.
-- The site is indexed by Search.
+When you specify your locations for SharePoint sites, you don't need permissions to access the site and no validation is done at the time you specify the URL on the **Edit locations** page. However, the sites must be indexed and the sites you specify are checked that they exist at the end of the wizard.
 
-If these checks fail, you see a message that validation failed for the URL you entered, and the wizard won't create the retention policy until the validation checks pass. If you see this message, go back in the wizard to change the URL or remove the selected site.
+If this check fails, you see a message that validation failed for the URL you entered, and the wizard won't create the retention policy until the validation check passes. If you see this message, go back in the wizard to change the URL or remove the site.
 
 ### Teams locations
 
@@ -412,15 +411,7 @@ Members of your compliance team who will create retention policies need permissi
 For more information, see [Give users access to the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
 
 These permissions are required only to create and apply a retention policy. Policy enforcement does not require access to the content.
-  
-## Find the PowerShell cmdlets for retention policies
 
-To use the retention policy cmdlets, you need to:
-  
-1. [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
-    
-2. Use these [Office 365 Security &amp; Compliance Center cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
-    
 ## More information
 
 - [Overview of labels](labels.md)
