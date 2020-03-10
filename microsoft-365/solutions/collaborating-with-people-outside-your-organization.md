@@ -1,0 +1,45 @@
+﻿---
+title: "Collaborating with people outside your organization"
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
+audience: ITPro
+ms.topic: article
+ms.service: sharepoint-online
+ms.collection: SPO_Content
+localization_priority: Normal
+f1.keywords: NOCSH
+description: "Learn how to configure Microsoft 365 for collaboration with people outside your organization."
+---
+
+# Collaborating with people outside your organization
+
+By default, in Microsoft 365, sharing with people outside your organization is enabled for SharePoint and OneDrive, but disabled for Teams. Many SharePoint and OneDrive external sharing scenarios work without further configuration. To confirm the settings for a scenario that you're using, or enable a new one, choose from the following options:
+
+- [Collaborate on documents](collaborate-on-documents.md) - Learn how to configure Microsoft 365 to allow sharing and collaboration with people outside your organization (both guests and unauthenticated users) on files and folders.
+- [Collaborate in a site](collaborate-in-a-site.md) - Learn how to configure Microsoft 365 to enable sharing SharePoint sites with guests.
+- [Collaborate as a team](collaborate-as-a-team.md) - Learn how to configure Microsoft 365 to enable guest collaboration in Teams.
+
+For a comprehensive look at the guest sharing settings available across Microsoft 365, see [Microsoft 365 guest sharing settings reference](microsoft-365-guest-settings.md).
+
+## Secure your environment
+
+Once you've enabled the scenario that you want to use for sharing with people outside your organization, consider additional safeguards to help protect your content from accidental or intentional inappropriate sharing.
+
+- [Best practices for sharing files and folders with unauthenticated users](best-practices-anonymous-sharing.md) - Learn about best practices for sharing with unauthenticated users.
+- [Limit accidental exposure](sharing-limit-accidental-exposure.md) - Learn how to reduce the chances of accidentally sharing sensitive content with people outside your organization.
+- [Create a secure guest sharing environment](create-a-secure-guest-sharing-environment.md)) - Learn about the tools provided in Microsoft 365 to help ensure that sharing with people outside your organization is done in a safe and secure manner and meets your governance requirements.
+
+## Collaborate with partner companies
+
+When you're working on a large project that involves many guests from another organization, or if you have an ongoing vendor relationship in which guests are often changing, you can use entitlement management in Azure Active Directory to simplify guest management and allow the partner company to share in that responsibility. See [Create a B2B extranet with managed guests](b2b-extranet.md) for details.
+
+## Limit sharing
+
+If some of the sharing features in Microsoft 365 conflict with your governance policies, see [Limit sharing in Microsoft 365](microsoft-365-limit-sharing.md) to learn about options for limiting sharing.
+
+## See Also
+
+[Intro to file collaboration in Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
+
+[Plan file collaboration in SharePoint with Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)
