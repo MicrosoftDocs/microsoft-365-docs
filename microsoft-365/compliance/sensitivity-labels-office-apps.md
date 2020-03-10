@@ -131,7 +131,13 @@ When users initially label a document or email, they can always override your la
 
 If the document or email is already labeled, a user can do any of these actions if the content isn't already encrypted, or they have the [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export or Full Control. 
 
-For a more consistent label experience with meaningful reporting, provide user guidance to use labels exclusively. For exception cases where users must assign their own permissions, provide labels that [let users assign their own permissions](encryption-sensitivity-labels.md#let-users-assign-permissions).
+For a more consistent label experience with meaningful reporting, provide user guidance to use labels exclusively. For example:
+
+- For exception cases where users must assign their own permissions, provide labels that [let users assign their own permissions](encryption-sensitivity-labels.md#let-users-assign-permissions). 
+
+- Instead of users manually removing encryption after selecting a label that applies encryption, use sublabels to provide an alternative label with the same classification and visual markings, but no encryption. For example:
+    - **Confidential \ All Employees**
+    - **Confidential \ Anyone (no encryption)**
 
 > [!NOTE]
 > If users manually remove encryption from a labeled document that's stored in SharePoint or OneDrive and you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), the label encryption will be automatically restored the next time the document is accessed or downloaded. 
