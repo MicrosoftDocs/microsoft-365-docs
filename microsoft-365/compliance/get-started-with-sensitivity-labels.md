@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 3/05/2020
+ms.date: 
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -50,6 +50,9 @@ By default, global administrators for your tenant have access to these admin cen
 Alternatively to using roles, you can create a new role group and add either **Sensitivity Label Administrator** or **Organization Configuration** roles to this group. For instructions, see [Give users access to the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
 These permissions are required only to create and configure sensitivity labels and their label policies. They are not required to apply the labels in apps or services.
+
+> [!NOTE]
+> **Sensitivity Label Reader** is a new role that's currently rolling out to tenants and initially supported for the PowerShell labeling cmdlets, and later for the admin labeling centers.
 
 ## Common scenarios for sensitivity labels
 
