@@ -40,7 +40,7 @@ There are two different scenarios for automatically applying a sensitivity label
 
 - **Service-side labeling when content is stored (in SharePoint Online or OneDrive for Business) or emailed (from Exchange Online)**: Use auto-labeling with SharePoint, OneDrive, and Exchange, currently in preview. 
     
-    This scenario doesn't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in test mode to help ensure the correct labeling of content before deployment. This is reactive labeling, for content that isn't already labeled and the document is already saved and the email sent by the user (but not yet sent from the organization). These two conditions are sometimes referred to as "data at rest" and "data in transit" respectively.
+    This scenario doesn't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before deployment. This is reactive labeling, for content that isn't already labeled and the document is already saved and the email sent by the user (but not yet sent from the organization). These two conditions are sometimes referred to as "data at rest" and "data in transit" respectively.
     
     For instructions, see [How to configure auto-labeling for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-for-sharepoint-onedrive-and-exchange)
 
@@ -130,7 +130,67 @@ Remember, you can't apply a parent label (a label with sublabels) to content. Ma
 ## How to configure auto-labeling for SharePoint, OnDrive, and Exchange
 
 > [!NOTE]
-> This functionality is currently in preview and subject to change. To try it, you must have at least one active Office 365 E5 license in your tenant.
+> This functionality is currently in preview and subject to change.
+
+### Prerequisites
+
+- At least one active Office 365 E5 license in your tenant.
+
+- To auto-label files in SharePoint and OneDrive, the file mustn't be open by another process or user.
+
+- Auditing for Office 365 is turned on, which is a requirement for simulation mode. For instructions, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).
+
+-  If you plan to use [custom sensitive information types](custom-sensitive-info-types.md) rather than the built-in sensitivity types: 
+    - Custom sensitivity information types are evaluated for content that is created after the custom sensitivity information types are saved. 
+    - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
+
+- You already have one or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policy. For these labels:
+    - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction. 
+    - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), these are not applied with auto-labeling policies.
+
+### Learn about simulation mode
+
+Simulation mode is unique to auto-labeling policies and woven into the workflow. You can't automatically label documents and emails until your policy has run at least one simulation.
+
+The simulated deployment runs like the WhatIf parameter for PowerShell. You see results reported as if the auto-labeling policy had applied your selected label, using the rules that you defined. You can then refine your rules for accuracy if needed, and rerun the simulation.
+
+Simulation mode also lets you gradually increase the scope of your auto-labeling policy before deployment. For example, you might start with a single location, such as a SharePoint site, with a single document library. Then, with iterative changes, increase the scope to multiple sites, and then to another location, such as OneDrive.
+
+Finally, you can use simulation mode to provide an approximation of the time needed to run, to help you plan and schedule your deployment.
 
 
+### How to create an auto-labeling policy
 
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to sensitivity labels:
+    
+    - **Solutions** > **Information protection**
+    
+    If you don't immediately see this option, first select **Show all**.
+
+2. Select the **Auto-labeling (preview)** tab.
+
+3. Select **+ Create policy**.
+
+4. For the page **Choose info you want this label applied to**: Select one of the templates, such as **Financial** or **Privacy**. You can refine your search by using the **Show options for** dropdown. Or, select **Custom policy** if the templates don't meet your requirements. Select **Next**.
+
+5. For the page **Name your auto-labeling policy**: Provide a unique name, and optionally a description to help identify the automatically applied label, locations, and conditions that identify the content to label.
+
+6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint sites, and OneDrive. Then select **Next**.
+
+7. For the **Define policy settings** page: Keep the default of **Find content that contains** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced settings**. Then select **Next**.
+    
+    The rules use conditions that include sensitive information types and optionally, the content is shared:
+    - For sensitive information types, you can select both built-in and custom sensitive information types.
+    - For the shared options, you can choose **only with people inside my organization** or **with people outside my organization**.
+    
+8. For the **Set up rules to define what content is labeled** page: Select **+ Create rule** and then select **Next**.
+
+9. On the **Create rule** page, name and define your rule, using sensitive information types or the sharing option, and then select **Save**.
+
+10. Back on the **Set up rules to define what content is labeled** page: Select **+ Create rule** again if you need another rule to identify the content to label, and repeat the previous step. When you have defined all the rules you need, and confirmed their status is on, select **Next**.
+
+11. For the **Choose a label to auto-apply** page: Select **+ Choose a label**, select a label from the **Choose a sensitivity label** pane, and then select **Next**.
+
+12. For the **Choose a mode for the policy** page: Select **Test it out** if you're ready to run the auto-labeling policy now, in simulation mode. Otherwise, select **Leave it turned off**. Select **Next**. 
+
+13. For the **Summary** page: Select **Submit**.
