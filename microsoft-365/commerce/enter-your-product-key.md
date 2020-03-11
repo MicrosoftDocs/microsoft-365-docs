@@ -1,5 +1,5 @@
 ---
-title: "Enter your product key for Office 365 Business Premium"
+title: "Enter your product key for Microsoft 365 Business Standard"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,13 +21,13 @@ search.appverid:
 - BEA160
 ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
-description: "Learn how to redeem an Office 365 Business Premium product key purchased at a retail store." 
+description: "Learn how to redeem an Microsoft 365 Business Standard product key purchased at a retail store." 
 ms.custom: okr_SMB
 ---
 
-# Enter your product key for Office 365 Business Premium
+# Enter your product key for Microsoft 365 Business Standard
 
-If you purchased Office 365 Business Premium from a retail store, this article helps you activate your subscription. 
+If you purchased Microsoft 365 Business Standard from a retail store, this article helps you activate your subscription. 
   
  **Need something else?**
  **For help with Office 365 Home, or Personal**, see [Using product keys with Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
@@ -52,7 +52,7 @@ If you purchased Office 365 Business Premium from a retail store, this article h
 
 ## Extend the expiration date or add a license to an existing subscription
 
-To use a product key to extend the expiration date or add a license to your existing Office 365 Business Premium subscription, you need a new and unused key for the same Office 365 plan. Entering your original Office 365 product key won't work because a key that has already been redeemed can't be used again. See [Add licenses to or extend a subscription paid for using a product key](licenses/add-licenses-using-product-key.md).
+To use a product key to extend the expiration date or add a license to your existing Microsoft 365 Business Standard subscription, you need a new and unused key for the same Office 365 plan. Entering your original Office 365 product key won't work because a key that has already been redeemed can't be used again. See [Add licenses to or extend a subscription paid for using a product key](licenses/add-licenses-using-product-key.md).
 
 ## What's next?
 

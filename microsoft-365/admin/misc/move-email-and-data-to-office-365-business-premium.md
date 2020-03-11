@@ -1,5 +1,5 @@
 ---
-title: "Move email and data to Office 365 Business Premium"
+title: "Move email and data to Microsoft 365 Business Standard"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -23,9 +23,9 @@ ROBOTS: NOINDEX
 description: "Learn to move data over to your new business identity."
 ---
 
-# Move email and data to Office 365 Business Premium
+# Move email and data to Microsoft 365 Business Standard
 
-When you upgrade to Office 365 Business Premium, we give you a brand new  *business identity*. You get a new email account, and a separate OneDrive account for your business data. 
+When you upgrade to Microsoft 365 Business Standard, we give you a brand new  *business identity*. You get a new email account, and a separate OneDrive account for your business data. 
   
 If you want to move some of your personal data over to your new business identity, follow the instructions below.
   

@@ -39,7 +39,7 @@ There are three ways to get Microsoft 365 Business:
 **Need something different?** You can:
 - [Upgrade your Office 365 plan to Microsoft 365 Business](migrate-to-microsoft-365-business.md).
 - [Get a free trial](https://go.microsoft.com/fwlink/p/?linkid=2102309) of Microsoft 365 Business for one month.
-- [Sign up for Office 365 Business Premium](https://go.microsoft.com/fwlink/p/?LinkID=510935) if you need a plan with fewer features. Find out what each business plan includes at [products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397).
+- [Sign up for Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkID=510935) if you need a plan with fewer features. Find out what each business plan includes at [products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397).
 - [Sign up for a home or family plan](https://go.microsoft.com/fwlink/?linkid=2109398) if you're not buying for a business. 
 
 ## Sign up steps

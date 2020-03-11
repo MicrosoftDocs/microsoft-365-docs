@@ -65,7 +65,7 @@ Can't find the app you're looking for? From the app launcher, select **All apps*
   
 ## How do I know if my subscription includes Office apps?
 
-Office 365 Business Premium and Office 365 Business include Office apps. For details see [Office 365 Business plans](https://go.microsoft.com/fwlink/p/?LinkId=723731), or [Office 365 Enterprise plans](https://go.microsoft.com/fwlink/p/?LinkId=800029).
+Microsoft 365 Business Standard and Office 365 Business include Office apps. For details see [Office 365 Business plans](https://go.microsoft.com/fwlink/p/?LinkId=723731), or [Office 365 Enterprise plans](https://go.microsoft.com/fwlink/p/?LinkId=800029).
   
 ## How do I determine what subscription I have?
 

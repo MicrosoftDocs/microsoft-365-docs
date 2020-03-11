@@ -17,9 +17,9 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Determine whether Office 365 E3, Office 365 Business Premium, or Microsoft 365 Business is right for your business."
+description: "Determine whether Office 365 E3, Microsoft 365 Business Standard, or Microsoft 365 Business Premium is right for your business."
 ---
 
 # What subscription is right for your small business?
 
-Microsoft offers several plans for small businesses. The recommended subscriptions are either Office 365 Business Premium or Microsoft 365 Business with up to 300 users. Microsoft 365 Business offers more security features than Office 365 Business Premium for an added cost.
+Microsoft offers several plans for small businesses. The recommended subscriptions are either Microsoft 365 Business Standard or Microsoft 365 Business Premium with up to 300 users. Microsoft 365 Business Premium offers more security features than Microsoft 365 Business Standard for an added cost.

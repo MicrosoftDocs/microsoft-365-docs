@@ -39,7 +39,7 @@ If you're looking for how to change company profile information, such as organiz
 
 5. Choose **Save**.
   
-For Office 365 Enterprise, Office 365 Business Premium, and Office 365 Business Essentials, when you first signed up as an admin for Office 365, depending on the country or region of the users in your organization, your users might be automatically signed up to receive product-related communications.
+For Office 365 Enterprise, Microsoft 365 Business Standard, and Microsoft 365 Business Basic, when you first signed up as an admin for Office 365, depending on the country or region of the users in your organization, your users might be automatically signed up to receive product-related communications.
   
 For Office 365 Small Business, depending on your country or region, you may have been automatically signed up to receive product-related communications.
   

@@ -1,5 +1,5 @@
 ---
-title: "Upgrade to Microsoft 365 Business from Office 365 Business Premium"
+title: "Upgrade to Microsoft 365 Business from Microsoft 365 Business Standard"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: "Learn the difference between Office 365 Business Premium and Microsoft 365 Business and how you can upgrade to Microsoft 365 Business."
+description: "Learn the difference between Microsoft 365 Business Standard and Microsoft 365 Business and how you can upgrade to Microsoft 365 Business."
 ---
 
-# Upgrade to Microsoft 365 Business from Office 365 Business Premium
+# Upgrade to Microsoft 365 Business from Microsoft 365 Business Standard
 
-If you have an [Office 365 for business subscription](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2), for example, Office 365 Business Premium, you can easily upgrade to Microsoft 365 Business. Upgrade to Microsoft 365 Business if you want to add: 
+If you have an [Office 365 for business subscription](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2), for example, Microsoft 365 Business Standard, you can easily upgrade to Microsoft 365 Business. Upgrade to Microsoft 365 Business if you want to add: 
 - Windows 10 Pro (to PCs running Windows 8 or later)
 - Simple controls that manage business data on devices
 - Advanced security capabilities.
 Find out more about Microsoft 365 Business at [Microsoft.com](https://www.microsoft.com/microsoft-365/business)
 
-## What's the difference between Office 365 Business Premium and Microsoft 365 Business?
+## What's the difference between Microsoft 365 Business Standard and Microsoft 365 Business?
 We've added a side-by-side comparison of these two plans to the [Microsoft 365 Business Service Description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description). 
 
 ## Before you get started

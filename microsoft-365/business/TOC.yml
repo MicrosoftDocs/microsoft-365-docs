@@ -73,7 +73,7 @@
           href: protection-settings-for-windows-10-devices.md
     - name: Migrate to Microsoft 365 Business
       items: 
-        - name: Migrate from Office 365 Business Premium
+        - name: Migrate from Microsoft 365 Business Standard
           href: migrate-to-microsoft-365-business.md
         - name: Migrate from Office 365 E3
           href: migrate-from-e3.md

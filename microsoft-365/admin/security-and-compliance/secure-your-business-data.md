@@ -28,7 +28,7 @@ If you are a small or medium-size organization using one of Microsoft's business
   
 Microsoft recommends that you complete the tasks listed in the following table that apply to your service plan. 
   
-||**Task**|**Office 365 Business Premium**|**Microsoft 365 Business**|
+||**Task**|**Microsoft 365 Business Standard**|**Microsoft 365 Business**|
 |:-----|:-----|:-----|:-----|
 |1  <br/> |[Set up multi-factor authentication](secure-your-business-data.md#setup) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |2  <br/> |[Train your users](secure-your-business-data.md#train) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
