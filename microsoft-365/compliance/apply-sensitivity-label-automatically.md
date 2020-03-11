@@ -179,10 +179,20 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 7. For the **Define policy settings** page: Keep the default of **Find content that contains** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced settings**. Then select **Next**.
     
-    The rules use conditions that include sensitive information types and optionally, the content is shared:
+    The rules use conditions that include sensitive information types and sharing options:
     - For sensitive information types, you can select both built-in and custom sensitive information types.
     - For the shared options, you can choose **only with people inside my organization** or **with people outside my organization**.
     
+    If your only location is **Exchange**, or if you select **Advanced settings**, there are additional conditions that you can select:
+    - Sender IP address is
+    - Recipient domain is
+    - Recipient is
+    - Attachment's file extension is
+    - Attachment is password protected
+    - Document property is
+    - Any email attachment's content could not be scanned
+    - Any email attachment's content didn't complete scanning
+
 8. For the **Set up rules to define what content is labeled** page: Select **+ Create rule** and then select **Next**.
 
 9. On the **Create rule** page, name and define your rule, using sensitive information types or the sharing option, and then select **Save**.
@@ -193,4 +203,12 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 12. For the **Choose a mode for the policy** page: Select **Test it out** if you're ready to run the auto-labeling policy now, in simulation mode. Otherwise, select **Leave it turned off**. Select **Next**. 
 
-13. For the **Summary** page: Select **Submit**.
+13. For the **Summary** page: Review the configuration of the your auto-labeling policy and make any changes that needed, and complete the wizard.
+
+Now on the **Information Protection** page, **Auto-labeling (preview)** tab, you see your auto-labeling policy in the **Testing** section. Select your policy to see the details of the configuration and status (for example, still testing or test complete). Select the **Matched items** tab to see which emails or documents matched the rules that you specified.
+
+You can modify your policy directly from this interface by selecting the **Edit** option.
+
+When you're ready to run the policy without simulation, select **Turn On**.
+
+You can also see the results of your auto-labeling policy by using 
