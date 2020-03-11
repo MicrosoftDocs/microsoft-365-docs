@@ -34,15 +34,15 @@ Customizing your template requires a [multi-step process](working-with-complianc
 
 ### What's changing
 
-We're making it easier to create new templates. You can take a pre-configured template provided by Microsoft and customize it by adding your own actions and controls. This will be an easier, one-step **extension** process that allows you to export the base template, make all your changes in the same interface, then import the template with all your changes saved. You will simply go to your **Templates** page in Compliance Manager, select **+ Add template**, and on the **Template** flyout pane, and select the **Create extension from global template** checkbox. You'll add your customizations with a new Excel format that is less complex than the current one.
+We're making it easier to create new templates. You can take a pre-configured template provided by Microsoft and customize it by adding your own actions and controls. This will be an easier, one-step **extension** process that allows you make all your changes in place, then import the template with all your changes saved. You will simply go to your **Templates** page in Compliance Manager, select **+ Add template**, and on the **Template** flyout pane, and select the **Create extension from global template** checkbox. You'll add your customizations with a new Excel format that is less complex than the current one.
 
 This new process replaces the current **Copy from an existing template** and **Add custom control** functions.
 
-![Compliance Score - dashboard](../media/compliance-score-template-update-new.png "New template creation process")
-
 Each time the original assessment is updated through the versioning process (outlined below), your customized assessment will inherit those updates and retain your custom controls.
 
-You can also create your own template entirely from scratch using the Excel spreadsheet.
+![Compliance Score - dashboard](../media/compliance-score-template-update-new.png "New template creation process")
+
+If you create your own templates with Excel, we are making it easier for you to modify to them. A simplified process will alow you to export your template, make changes in the same workbook, then import it with your changes saved.
 
 ## Versioning notice and control
 
