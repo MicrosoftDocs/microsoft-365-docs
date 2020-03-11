@@ -131,7 +131,7 @@ When users initially label a document or email, they can always override your la
 
 If the document or email is already labeled, a user can do any of these actions if the content isn't already encrypted, or they have the [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export or Full Control. 
 
-For a more consistent label experience with meaningful reporting, provide appropriate labels and guidance for users to apply labels exclusively. For example:
+For a more consistent label experience with meaningful reporting, provide appropriate labels and guidance for users to apply only labels to protect documents. For example:
 
 - For exception cases where users must assign their own permissions, provide labels that [let users assign their own permissions](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 
