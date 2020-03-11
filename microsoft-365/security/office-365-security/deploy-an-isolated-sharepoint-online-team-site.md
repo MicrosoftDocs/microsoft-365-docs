@@ -163,12 +163,17 @@ First, create the SharePoint Online team site with these steps.
 4. On the **Create a site** page, click **Team site**.
     
 5. In **Site name**, type a name for the team site. 
+
+6. In **Group owner**, specify the owner of the associated Office 365 Group.
+
+> [!NOTE]
+> Group owner is automatically included as site admin, therefore can manage group membership and have full access to the site. 
     
-6. In **Team site description,** type an optional description of the purpose of the site.
+7. In **Team site description,** type an optional description of the purpose of the site.
     
-7. In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.
+8. In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.
     
-8. On the **Who do you want to add?** pane, click **Finish**.
+9. On the **Who do you want to add?** pane, click **Finish**.
     
 Next, from the new SharePoint Online team site, configure permissions.
   
