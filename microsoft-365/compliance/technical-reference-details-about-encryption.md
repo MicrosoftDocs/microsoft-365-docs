@@ -109,5 +109,5 @@ A cipher suite is a collection of encryption algorithms that TLS uses to establi
   
 [TLS/SSL Cryptographic Enhancements (Windows IT Center)](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
   
- [Preparing for TLS 1.2 in Office 365 and Office 365 GCC](https://docs.microsoft.com/en-us/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
+ [Preparing for TLS 1.2 in Office 365 and Office 365 GCC](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
 
