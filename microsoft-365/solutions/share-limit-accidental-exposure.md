@@ -6,6 +6,7 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
+ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords: NOCSH
 description: "Learn how to limit accidental exposure of information when sharing files with people outside your organization."
@@ -79,6 +80,6 @@ Note that this affects files, folders, and sites, but not Office 365 groups or T
 
 ## See Also
 
-[Create a secure guest sharing environment](create-a-secure-guest-sharing-environment.md)
+[Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)
 
 [Best practices for sharing files and folders with anonymous users](best-practices-anonymous-sharing.md)

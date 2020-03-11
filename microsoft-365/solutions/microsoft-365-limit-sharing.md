@@ -142,7 +142,7 @@ To turn off *Anyone* links at the organization level
 2. Under **External sharing**, drag the SharePoint slider down to **New and existing guests**.
 3. Click **Save**.
 
-    ![Screenshot of SharePoint site-level sharing settings](../media/sharepoint-guest-sharing-new-and-existing-guests.png)
+    ![Screenshot of SharePoint site-level sharing settings](../media/sharepoint-guest-sharing-new-existing-guests.png)
 
 To turn off *Anyone* links for a site
 1. In the SharePoint admin center, under **Sites**, click **Active sites**.
@@ -150,7 +150,7 @@ To turn off *Anyone* links for a site
 3. On the **Policies** tab, under **External sharing** click **Edit**.
 4. Under **External sharing**, choose **New and existing guests**, and then click **Save**.
 
-    ![Screenshot of SharePoint site-level sharing settings](../media/sharepoint-site-external-sharing-settings-new-and-existing-guests.png)
+    ![Screenshot of SharePoint site-level sharing settings](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
 
 ## *People in your organization* sharing links
 

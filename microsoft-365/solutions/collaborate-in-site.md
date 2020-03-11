@@ -6,6 +6,7 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
+ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: "Learn how to collaborate with guests in a SharePoint site."
@@ -127,9 +128,9 @@ To invite guests to a group
 
 [Best practices for sharing files and folders with unauthenticated users](best-practices-anonymous-sharing.md)
 
-[Limit accidental exposure to files when sharing with guests](sharing-limit-accidental-exposure.md)
+[Limit accidental exposure to files when sharing with guests](share-limit-accidental-exposure.md)
 
-[Create a secure guest sharing environment](create-a-secure-guest-sharing-environment.md)
+[Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)
 
 [Create a B2B extranet with managed guests](b2b-extranet.md)
 

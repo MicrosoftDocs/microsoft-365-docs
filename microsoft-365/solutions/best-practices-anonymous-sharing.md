@@ -6,6 +6,7 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
+ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords: NOCSH
 description: "Learn best practices for sharing files and folders with unauthenticated users."
@@ -18,7 +19,7 @@ Unauthenticated sharing (*Anyone* links) can be convenient and is useful in vari
 Usually, not all content in an organization is appropriate for unauthenticated sharing. This article covers the options available to help you create an environment where your users can use unauthenticated sharing of files and folders, but where there are safeguards in place to help protect your organization's content.
 
 > [!NOTE]
-> For unauthenticated sharing to work, you must enable it for your organization and for the individual site or team that you'll be using. See [Collaborating with people outside your organization](collaborating-with-people-outside-your-organization.md) for the scenario that you want to enable.
+> For unauthenticated sharing to work, you must enable it for your organization and for the individual site or team that you'll be using. See [Collaborating with people outside your organization](collaborate-with-people-outside-your-organization.md) for the scenario that you want to enable.
 
 ## Set an expiration date for Anyone links
 
@@ -93,6 +94,6 @@ With content marking enabled for the label, the text you specified will be added
 
 [Overview of sensitivity labels](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
 
-[Limit accidental exposure to files when sharing with guests](sharing-limit-accidental-exposure.md)
+[Limit accidental exposure to files when sharing with guests](share-limit-accidental-exposure.md)
 
-[Create a secure guest sharing environment](create-a-secure-guest-sharing-environment.md)
+[Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)

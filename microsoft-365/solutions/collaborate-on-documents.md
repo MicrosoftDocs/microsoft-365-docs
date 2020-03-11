@@ -103,4 +103,4 @@ Guest sharing settings are now configured, so users can now share files and fold
 
 [Best practices for sharing files and folders with unauthenticated users](best-practices-anonymous-sharing.md)
 
-[Limit accidental exposure to files when sharing with guests](sharing-limit-accidental-exposure.md)
+[Limit accidental exposure to files when sharing with guests](share-limit-accidental-exposure.md)
