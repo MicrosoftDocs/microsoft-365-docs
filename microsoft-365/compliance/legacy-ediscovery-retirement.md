@@ -273,8 +273,8 @@ The following table describes other tools that you can use to replace the existi
 </td>
 </tr>
 <tr class="odd">
-<td>Delete bulk junk email from a mailbox</td>
-<td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Set up an archive and deletion policy for mailboxes in your Office 365 organization</span></a></p>
+<td>Delete bulk email from a mailbox</td>
+<td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Set up an archive and deletion policy for mailboxes</span></a></p>
 <p></p></td>
 <td><p>Admins can create an archiving and deletion policy that automatically moves items to a user's archive mailbox and automatically deletes items from the mailbox.</p>
 </td>
