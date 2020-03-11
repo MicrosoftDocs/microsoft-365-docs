@@ -42,7 +42,7 @@ There are two different scenarios for automatically applying a sensitivity label
     
     This scenario doesn't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before deployment. This is reactive labeling, for content that isn't already labeled and the document is already saved and the email sent by the user (but not yet sent from the organization). These two conditions are sometimes referred to as "data at rest" and "data in transit" respectively.
     
-    For instructions, see [How to configure auto-labeling for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-for-sharepoint-onedrive-and-exchange)
+    For instructions, see [How to configure auto-labeling for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-for-sharepoint-ondrive-and-exchange)
 
 
 ## How to configure auto-labeling for Office apps
