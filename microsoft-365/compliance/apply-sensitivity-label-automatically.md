@@ -66,11 +66,11 @@ Use the following table to help you identify the differences in behavior for the
 |Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
 |Label incoming email|No |Yes (encryption not applied) |
 
-### How multiple conditions are evaluated when they apply to more than one label
+## How multiple conditions are evaluated when they apply to more than one label
 
 The labels are ordered for evaluation according to their position that you specify in the policy: The label positioned first has the lowest position (least sensitive) and the label positioned last has the highest position (most sensitive). For more information on priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
 
-### Don't configure a parent label to be applied automatically or recommended
+## Don't configure a parent label to be applied automatically or recommended
 
 Remember, you can't apply a parent label (a label with sublabels) to content. Make sure that you don't configure a parent label to be auto-applied or recommended, because the parent label won't be applied to content in Office apps that use the Azure Information Protection unified labeling client. For more information on parent labels and sublabels, see [Sublabels (grouping labels)](sensitivity-labels.md#sublabels-grouping-labels).
 
@@ -93,7 +93,7 @@ When this sensitivity label is automatically applied, the user sees a notificati
 
 ![Notification that a document had a label applied automatically](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
-### Configuring sensitive info types for a label
+## Configuring sensitive info types for a label
 
 When you select the **Sensitive info types** option, you see the same list of sensitive information types as when you create a data loss prevention (DLP) policy. So you can, for example, automatically apply a Highly Confidential label to any content that contains customers' personally identifiable information (PII), such as credit card numbers or social security numbers:
 
@@ -105,7 +105,7 @@ Further, you can choose whether a condition must detect all sensitive informatio
 
 ![Options for instance count and match accuracy](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### Configuring classifers for a label
+## Configuring classifers for a label
 
 When you select the **Classifers** option, select one or more of the built-in classifiers:
 
@@ -126,7 +126,7 @@ During the preview period, the following apps support classifers for sensitivity
     - PowerPoint
     - Outlook
 
-### Recommend that the user applies a sensitivity label
+## Recommend that the user applies a sensitivity label in Office apps
 
 If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label isn't suitable for their content.
 
@@ -138,9 +138,9 @@ Here's an example of a prompt when you configure a condition to apply a label as
 
 ![Prompt to apply a recommended label](../media/Sensitivity-label-Prompt-for-required-label.png)
 
-### How automatic or recommended labels are applied
+## How automatic or recommended labels are applied in Office apps
 
-- Automatic labeling applies to Word, Excel, and PowerPoint when you save a document, and to Outlook when you send an email. The conditions detect sensitive information in the body text in documents and emails, and to headers and footers — but not in the subject line or attachments of email.
+- Automatic labeling for Office apps applies to Word, Excel, and PowerPoint when you save a document, and to Outlook when you send an email. The conditions detect sensitive information in the body text in documents and emails, and to headers and footers — but not in the subject line or attachments of email.
 
 - You can't use automatic labeling for documents and emails that were previously manually labeled, or previously automatically labeled with a higher sensitivity. Remember, you can only apply a single sensitivity label to a document or email (in addition to a single retention label).
 
@@ -153,7 +153,7 @@ Here's an example of a prompt when you configure a condition to apply a label as
 > [!NOTE]
 > This functionality is currently in preview and subject to change.
 
-### Prerequisites
+### Prerequisites for auto-labeling
 
 - At least one of the following licenses in your tenant:
     - Microsoft 365 (E5) 
@@ -183,7 +183,7 @@ Simulation mode also lets you gradually increase the scope of your auto-labeling
 Finally, you can use simulation mode to provide an approximation of the time needed to run your auto-labeling policy, to help you plan and schedule when to run it without simulation mode.
 
 
-### How to create an auto-labeling policy
+## How to create an auto-labeling policy
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to sensitivity labels:
     
@@ -237,6 +237,11 @@ You can modify your policy directly from this interface by selecting the **Edit*
 
 When you're ready to run the policy without simulation, select **Turn On**.
 
-You can also see the results of your auto-labeling policy by using [Content Explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
-- Content Explorer List viewer lets you see a file's label but not the file's contents.
-- Content Explorer Content viewer lets you see the file's contents.
+You can also see the results of your auto-labeling policy by using [content explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
+- **Content Explorer List viewer** lets you see a file's label but not the file's contents.
+- **Content Explorer Content viewer** lets you see the file's contents.
+
+> [!TIP]
+> You can also use content explorer to identify locations that have unlabeled documents that contain sensitive information. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as conditions.
+
+
