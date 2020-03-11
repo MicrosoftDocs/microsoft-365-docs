@@ -106,7 +106,7 @@ You can [change plans manually](change-plans-manually.md) or [call support](../.
 
 #### You have two or more plans for the same product
 
-You can only use the **Upgrade** tab if all users subscribe to the same plan. For example, if you have two Office 365 Business Premium plans, you won't be able to automatically upgrade one of them to another plan.
+You can only use the **Upgrade** tab if all users subscribe to the same plan. For example, if you have two Microsoft 365 Business Standard plans, you won't be able to automatically upgrade one of them to another plan.
 
 #### You have a prepaid plan
 

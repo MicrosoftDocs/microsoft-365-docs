@@ -34,7 +34,7 @@ If you purchased Office 365 for business from a [Microsoft Open License Program]
  
  **For help with Office 365 Home, or Personal**, see [Using product keys with Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).
   
- **For help with Office 365 Business Premium purchased from a retail store**, see [Enter your product key purchased from a retail store](enter-your-product-key.md). 
+ **For help with Microsoft 365 Business Standard purchased from a retail store**, see [Enter your product key purchased from a retail store](enter-your-product-key.md). 
   
 ## Activate, renew, or add licenses to a subscription purchased from Microsoft Open
 

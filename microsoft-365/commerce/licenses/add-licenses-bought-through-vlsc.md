@@ -26,7 +26,7 @@ description: "Learn how to add licenses to your Office 365 subscription purchase
 
 # Add licenses to a subscription purchased through the Volume Licensing Service Center
 
-Licenses for Office 365 Business Essentials, Office 365 Business, Office 365 Business Premium, and the Office 365 Enterprise plans need to be purchased through the third party partner that you originally purchased Office 365 from. If the partner that the subscription was purchased from is known by Microsoft, you can find out how to contact your partner using the following procedure.
+Licenses for Microsoft 365 Business Basic, Office 365 Business, Microsoft 365 Business Standard, and the Office 365 Enterprise plans need to be purchased through the third party partner that you originally purchased Office 365 from. If the partner that the subscription was purchased from is known by Microsoft, you can find out how to contact your partner using the following procedure.
 
 ::: moniker range="o365-worldwide"
 

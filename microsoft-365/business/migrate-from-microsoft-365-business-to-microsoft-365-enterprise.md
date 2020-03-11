@@ -135,9 +135,9 @@ You don't need to make any changes to your current Intune configuration before m
 Microsoft 365 Business includes Windows 10 Business, which you can install with Windows AutoPilot. When you migrate to Microsoft 365 E3, each user license includes Windows 10 Enterprise E3, which you can also install with Windows Autopilot.
 
 <a name="office-365-business"></a>
-### Office 365 Business
+###  Microsoft 365 Apps for business
 
-Your Office 365 Business client installed on your devices will automatically begin to use the features of Office 365 ProPlus. After migration, you can now use:
+Your Microsoft 365 Apps for business client installed on your devices will automatically begin to use the features of Office 365 ProPlus. After migration, you can now use:
 
  - Volume activation through Group Policy
  - App telemetry

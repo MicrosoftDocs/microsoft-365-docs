@@ -102,10 +102,10 @@ PCs managed with Microsoft 365 Business are protected with Windows Defender, whi
  
 Windows 10 Business also includes Windows Defender Exploit Guard, a new set of intrusion prevention capabilities. One of its features, Controlled folder access, stops ransomware by locking down folders and preventing unauthorized apps from accessing a user’s important files. 
 
-### What's the difference between Office 365 Business Premium, Microsoft 365 Business, and Microsoft 365 Enterprise? 
+### What's the difference between Microsoft 365 Business Standard, Microsoft 365 Business, and Microsoft 365 Enterprise? 
 Microsoft has various productivity and security management offerings that small to medium-sized customers may consider when upgrading their desktop and device infrastructure, each bringing increasingly powerful features and functionality. 
 
-**Office 365 Business Premium** delivers best-in-class productivity with Office 365 apps and services, but doesn't include the application protection and device management capabilities of Microsoft 365 Business.
+**Microsoft 365 Business Standard** delivers best-in-class productivity with Office 365 apps and services, but doesn't include the application protection and device management capabilities of Microsoft 365 Business.
 
 **Microsoft 365 Business** combines Office 365 apps and services with advanced security capabilities to help protect your business against advanced cyberthreats, safeguard your data and manage your devices. It includes a simplified management console through which device and data policies may be administered. Many small to medium-sized businesses can be best served with Microsoft 365 Business. 
  
@@ -145,7 +145,7 @@ Windows AutoPilot is a service that streamlines the deployment of new Windows 10
 ## Compatibility
 
 ### Can I add Office 365 add-ons to Microsoft 365 Business? 
-All the add-ons that can be added to Office 365 Business Premium can be added to Microsoft 365 Business. This means that you can purchase Office 365 Cloud App Security, Advanced Compliance, Threat Intelligence, MyAnalytics, PowerBI Pro, and Audio Conferencing. 
+All the add-ons that can be added to Microsoft 365 Business Standard can be added to Microsoft 365 Business. This means that you can purchase Office 365 Cloud App Security, Advanced Compliance, Threat Intelligence, MyAnalytics, PowerBI Pro, and Audio Conferencing. 
  
 ### Can I add Phone System and Calling Plans to Microsoft 365 Business? 
 No, Phone System and Calling Plan are reserved for customers who have more advanced needs. Customers who require these capabilities should look at Microsoft 365 Enterprise offerings. 
@@ -176,7 +176,7 @@ Microsoft provides a wide selection of resources for CSP partners to market, sel
 [https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business).
 
 ### What up-sell opportunities does Microsoft 365 Business give partners? 
-Microsoft 365 Business allows partners to maintain their trusted advisor position with customers by creating a solid and secure platform upon which to sell additional services and to upgrade existing products and services. Microsoft 365 Business provides an opportunity to have an upgrade discussion with customers now using Exchange Server, Exchange Online, or Office 365 Business Essentials. Partners may also gain more revenue from increased managed services and/or peruser support fees. 
+Microsoft 365 Business allows partners to maintain their trusted advisor position with customers by creating a solid and secure platform upon which to sell additional services and to upgrade existing products and services. Microsoft 365 Business provides an opportunity to have an upgrade discussion with customers now using Exchange Server, Exchange Online, or Microsoft 365 Business Basic. Partners may also gain more revenue from increased managed services and/or peruser support fees. 
  
 With the new Windows AutoPilot feature included in Microsoft 365 Business, partners who have been reluctant to sell new Windows devices because of deployment logistics and costs will find this opportunity much more attractive. Customers who are confident in the security of their on-premises and mobile devices are also more likely to invest in more services, such as Dynamics 365. 
  

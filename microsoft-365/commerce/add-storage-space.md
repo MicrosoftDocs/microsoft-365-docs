@@ -248,9 +248,9 @@ Office 365 Extra File Storage is available for the following subscriptions:
 
 - SharePoint Online Plan 2
 
-- Office 365 Business Essentials
+- Microsoft 365 Business Basic
 
-- Office 365 Business Premium
+- Microsoft 365 Business Standard
 
 - Microsoft 365 Business
 

@@ -28,11 +28,11 @@ You can sign up for a trial Office 365 business subscription for free. You can t
 > [!NOTE]
 > You'll need a credit card when you sign up for a trial if your business is currently located in the United States, Japan, Canada and Australia. At the end of your free trial period, your trial subscription will automatically convert to a paid subscription. Your credit card will not be billed until the end of the trial period.
 
-## Sign up for an Office 365 Business Premium trial subscription
+## Sign up for an Microsoft 365 Business Standard trial subscription
 
 1. To sign up for an Office 365 business trial subscription, go to the [Office Products site](https://www.aka.ms/office365signup). 
     
-2. Select the plan you want to sign up for, such as **Office 365 Business Premium**, scroll down the page, and select **Try free for 1 month**.
+2. Select the plan you want to sign up for, such as **Microsoft 365 Business Standard**, scroll down the page, and select **Try free for 1 month**.
     
 3. On the next page, follow the steps to set up your account.
 

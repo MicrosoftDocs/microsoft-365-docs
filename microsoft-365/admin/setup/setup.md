@@ -24,20 +24,20 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
-description: "Learn how to set up your Office 365 Business Premium, Office 365 Business Essentials, Office 365 Business, or Office 365 Education subscription."
+description: "Learn how to set up your Microsoft 365 Business Standard, Microsoft 365 Business Basic, Office 365 Business, or Office 365 Education subscription."
 ---
 
 # Set up Office 365 for business
 
-Follow these steps to get your business or [nonprofit](https://go.microsoft.com/fwlink/p/?LinkId=627221) up and running with [Office 365 Business Premium](https://go.microsoft.com/fwlink/p/?LinkId=627220), Office 365 Business Essentials, Office 365Business, or Office 365 Education.
+Follow these steps to get your business or [nonprofit](https://go.microsoft.com/fwlink/p/?LinkId=627221) up and running with [Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220), Microsoft 365 Business Basic, Office 365Business, or Office 365 Education.
   
 Not a business? See [Set up for Office 365 Home or Office 365 Personal](https://support.office.com/article/65415a24-3cbf-4f30-901d-9bf9eba7fce2.aspx).
   
 ## Business Premium
   
- *These steps are for businesses and [nonprofits](https://go.microsoft.com/fwlink/p/?LinkId=627221) that have the **[Office 365 Business Premium plan.](https://go.microsoft.com/fwlink/p/?LinkId=627220)***
+ *These steps are for businesses and [nonprofits](https://go.microsoft.com/fwlink/p/?LinkId=627221) that have the **[Microsoft 365 Business Standard plan.](https://go.microsoft.com/fwlink/p/?LinkId=627220)***
 
-Watch a short video about setting up Office 365 Business Premium.<br><br>
+Watch a short video about setting up Microsoft 365 Business Standard.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/913be1ad-bae1-40c0-9ded-15bb477b828b]
 
@@ -47,7 +47,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 1. To sign up for an Office 365 business plan, go to the [Office Products site](https://www.aka.ms/office365signup) and select **Buy now**.
 
-2. Choose the plan you want to sign up for, such as **Office 365 Business Premium**.
+2. Choose the plan you want to sign up for, such as **Microsoft 365 Business Standard**.
 
 3. Follow the steps to sign up for an Office 365 business plan.
 
@@ -105,7 +105,7 @@ More at [Use a public website](https://support.office.com/article/3325d50e-d131-
   
 ## Business Essentials
   
-*Use these steps to set up your **[Office 365 Business Essentials](https://go.microsoft.com/fwlink/p/?LinkId=627218)** subscription. With this plan, you connect to Office 365 online. You don't install the Office apps.*
+*Use these steps to set up your **[Microsoft 365 Business Basic](https://go.microsoft.com/fwlink/p/?LinkId=627218)** subscription. With this plan, you connect to Office 365 online. You don't install the Office apps.*
 
 ### 1. Create Office 365 accounts and add your domain
 
