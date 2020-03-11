@@ -99,7 +99,7 @@ A cipher suite is a collection of encryption algorithms that TLS uses to establi
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/128  <br/> |
    
 ## Related topics
-[TLS Cipher Suites in Windows 10 v1903](https://docs.microsoft.com/en-us/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
+[TLS Cipher Suites in Windows 10 v1903](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
 
 [Encryption in Office 365](encryption.md)
   
