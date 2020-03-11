@@ -51,7 +51,7 @@ There are two different scenarios for automatically applying a sensitivity label
     - Incoming email is labeled if there is a match with your auto-labeling conditions. However, if the label is configured for encryption, that encryption isn't applied.
 
 
-### Compare client-side labeling for Office apps with service-side labeling for SharePoint, OneDrive, and Exchange
+## Compare auto-labeling for Office apps with auto-labeling policies
 
 Use the following table to help you identify the differences in behavior for the two complementary automatic labeling solutions:
 
