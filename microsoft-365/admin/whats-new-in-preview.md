@@ -31,12 +31,10 @@ We're continuously adding new features to [the Microsoft 365 admin center](micro
 > **"Classic" admin center retirement starting in March**<br><br>
 When you sign-in to admin.microsoft.com, you'll now go to the new admin center every time. And in March, we will start disabling the ability to switch back to the classic admin center. For now, you can still switch back, but as the new admin center comes to parity (and exceeds it) we will turn off the switch for all organizations. <br><br> *Last updated: March 2, 2020*
 
-And if you're interested in what's new in other areas of the Microsoft cloud, check out these What's New articles:
+And if you're interested in what's new in other admin centers:
 
-- [Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
-- [SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
-- [Intune](https://docs.microsoft.com/intune/fundamentals/whats-new)
-- [Office 365](https://support.office.com/article/O95c8d81d-08ba-42c1-914f-bca4603e1426)
+- [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
+- [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 
 ## February 2020
 
