@@ -38,11 +38,11 @@ There are two different scenarios for automatically applying a sensitivity label
     
     For instructions, see [How to configure auto-labeling for Office apps](#how-to-configure-auto-labeling-for-office-apps).
 
-- **Service-side labeling when content is stored (in SharePoint Online) or emailed (from Exchange Online)**: Use auto-labeling with SharePoint and Exchange, currently in preview. 
+- **Service-side labeling when content is stored (in SharePoint Online or OneDrive for Business) or emailed (from Exchange Online)**: Use auto-labeling with SharePoint, OneDrive, and Exchange, currently in preview. 
     
-    This scenario doesn't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in test mode to help ensure the correct labeling of content before deployment. This is reactive labeling, for content that isn't already labeled and the document is already saved and the email sent by the user (but not yet sent from the organization).
+    This scenario doesn't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in test mode to help ensure the correct labeling of content before deployment. This is reactive labeling, for content that isn't already labeled and the document is already saved and the email sent by the user (but not yet sent from the organization). These two conditions are sometimes referred to as "data at rest" and "data in transit" respectively.
     
-    For instructions, see [How to configure auto-labeling for SharePoint and Exchange](#how-to-configure-autolabeling-for-sharepoint-and-exchange)
+    For instructions, see [How to configure auto-labeling for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-for-sharepoint-onedrive-and-exchange)
 
 
 ## How to configure auto-labeling for Office apps
@@ -127,4 +127,10 @@ The labels are ordered for evaluation according to their position that you speci
 
 Remember, you can't apply a parent label (a label with sublabels) to content. Make sure that you don't configure a parent label to be auto-applied or recommended, because the parent label won't be applied to content in Office apps that use the Azure Information Protection unified labeling client. For more information on parent labels and sublabels, see [Sublabels (grouping labels)](sensitivity-labels.md#sublabels-grouping-labels).
 
-## How to configure auto-labeling for SharePoint and Exchange
+## How to configure auto-labeling for SharePoint, OnDrive, and Exchange
+
+> [!NOTE]
+> This functionality is currently in preview and subject to change. To try it, you must have at least one active Office 365 E5 license in your tenant.
+
+
+
