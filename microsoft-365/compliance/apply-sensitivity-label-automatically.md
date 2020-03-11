@@ -55,16 +55,15 @@ There are two different scenarios for automatically applying a sensitivity label
 
 Use the following table to help you identify the differences in behavior for the two complementary automatic labeling solutions:
 
-||Label setting: Auto-labeling for Office apps |Policy: Auto-labeling|
+|Feature or behavior|Label setting: Auto-labeling for Office apps |Policy: Auto-labeling|
 |:-----|:-----|:-----|:-----|
 |Restrict by location|No |Yes |
 |Conditions: Trainable classifers|Yes (limited preview) |No |
 |Conditions: Sharing options and additional options for email|No |Yes |
-|Recommendations and user overrides)|Yes |No |
-|When the label is applied|Documents: On save<br/><br/>Email: Sent from mailbox |Documents: Not in use<br/><br/>Email: Processed (outbound and inbound) from Exchange |
+|Recommendations and user overrides|Yes |No |
 |Simulation mode|No |Yes |
-|Can override existing label|Yes if existing label has a lower priority |No |
-|Can override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
+|Override existing label|Yes if existing label has a lower priority |No |
+|Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
 |Label incoming email|No |Yes (encryption not applied) |
 
 ### How multiple conditions are evaluated when they apply to more than one label
