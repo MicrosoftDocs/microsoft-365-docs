@@ -36,26 +36,26 @@ There are two different scenarios for automatically applying a sensitivity label
     
     This scenario supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. This is proactive labeling, with very little delay because the label is applied as soon as the document is saved, or the emai is sent.
     
-    For instructions, see [How to configure auto-labeling for Office apps](#how-to-configure-auto-labeling-for-office-apps).
+    For configuration instructions, see [How to configure auto-labeling for Office apps](#how-to-configure-auto-labeling-for-office-apps) on this page.
 
 - **Service-side labeling when content is stored (in SharePoint Online or OneDrive for Business) or emailed (processed by Exchange Online)**: Use an auto-labeling policy for SharePoint, OneDrive, and Exchange, currently in preview. 
     
     This scenario doesn't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label. This is reactive labeling, for content that isn't already labeled and the document is already saved, and the email is processed by Exchange. These two conditions are sometimes referred to as "data at rest" and "data in transit" respectively.
     
-    For instructions, see [How to configure auto-labeling for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-for-sharepoint-ondrive-and-exchange)
+    For configuration instructions, see [How to configure auto-labeling for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-for-sharepoint-ondrive-and-exchange) ont his page.
     
     Specific to auto-labeling for Exchange:
-    - If you have Exchange mail flow rules that apply IRM encryption: If content is identified by both a mail flow rule and an auto-labeling policy, the label and any encryption settings from the label are applied to that content.
-    - If you have DLP rules that apply IRM encryption: If content is identified by both a DLP rule and an auto-labeling policy, the encryption settings only from the label are applied. The content is not labeled.
+    - If you have Exchange mail flow rules that apply IRM encryption: When content is identified by both a mail flow rule and an auto-labeling policy, the label and any encryption settings from the label are applied to that content.
+    - If you have DLP rules that apply IRM encryption: When content is identified by both a DLP rule and an auto-labeling policy, the encryption settings only from the label are applied. The content is not labeled.
     - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
-    - Incoming email is labeled if there is a match, but if the label is configured for encryption, that encryption isn't applied.
+    - Incoming email is labeled if there is a match with your auto-labeling conditions. However, if the label is configured for encryption, that encryption isn't applied.
 
 
 ### Compare client-side labeling for Office apps with service-side labeling for SharePoint, OneDrive, and Exchange
 
 Use the following table to help you identify the differences in behavior for the two complementary automatic labeling solutions:
 
-|Label setting: Auto-labeling for Office apps |Policy: Auto-labeling|
+||Label setting: Auto-labeling for Office apps |Policy: Auto-labeling|
 |:-----|:-----|:-----|:-----|
 |Restrict by location|No |Yes |
 |Conditions: Trainable classifers|Yes (limited preview) |No |
