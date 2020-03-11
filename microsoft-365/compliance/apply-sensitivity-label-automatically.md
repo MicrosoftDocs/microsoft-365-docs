@@ -155,13 +155,16 @@ Here's an example of a prompt when you configure a condition to apply a label as
 
 ### Prerequisites
 
-- At least one active Office 365 (E5) or Advanced Compliance (E5) add-on license in your tenant.
+- At least one of the following licenses in your tenant:
+    - Microsoft 365 (E5) 
+    - Office 365 (E5)
+    - Advanced Compliance (E5) add-on 
 
 - To auto-label files in SharePoint and OneDrive, the file mustn't be open by another process or user.
 
-- Auditing for Office 365 is turned on, which is a requirement for simulation mode. For instructions, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).
+- Auditing for Office 365 must be turned on as a requirement for simulation mode. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).
 
--  If you plan to use [custom sensitive information types](custom-sensitive-info-types.md) rather than the built-in sensitivity types: 
+- If you plan to use [custom sensitive information types](custom-sensitive-info-types.md) rather than the built-in sensitivity types: 
     - Custom sensitivity information types are evaluated for content that is created after the custom sensitivity information types are saved. 
     - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
 
