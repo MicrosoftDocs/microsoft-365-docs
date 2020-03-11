@@ -32,65 +32,60 @@ We know that organizations today are using a diverse toolset. There’s the team
 
 If users feel the IT-provided tools do not fit their needs, they will likely download their favorite consumer app which supports their scenarios. Although this process allows users to get started quickly, it leads to a frustrating user experience across the organization with multiple logins, difficulty sharing, and no single place to view content. This concept is referred to as “Shadow IT” and poses a significant risk to organizations. It reduces the ability to uniformly manage user access, ensure security, and service compliance needs.
 
-Office 365 Groups empowers users and reduces the risk of shadow IT by providing in a single step many of the tools needed to collaborate. Office 365 Groups lets you choose a set of people with which you wish to collaborate, and easily set up a collection of resources for those people to share. Manually assigning permissions to resources is a thing of the past as adding members to the Group automatically grants the needed permissions to all assets provided by the group.
+Office 365 Groups empowers users and reduces the risk of shadow IT by providing in a single step many of the tools needed to collaborate. Office 365 Groups lets you choose a set of people with whom you wish to collaborate, and easily set up a collection of resources for those people to share. Manually assigning permissions to resources is a thing of the past as adding members to the group automatically grants the needed permissions to all assets provided by the group.
 
 ## Technical Architecture
 
-There are three main communication modalities supported by Office 365 Groups. Groups can be created within these experiences and used across the Office 365 suite:
-- [Outlook](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2): collaboration through email with a shared group inbox and calendar
-- [Microsoft Teams](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2): a persistent chat-based workspace where you can have informal, real-time, conversations around a variety of topics, organized by specific sub-groups
-- [Yammer](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2): enterprise social experience for collaboration
+There are three main communication methods supported by Office 365 groups. Groups can be created within these experiences and used across Office 365:
+- Outlook: collaboration through email with a shared group inbox and calendar
+- Microsoft Teams: a persistent-chat-based workspace where you can have informal, real-time, conversations around a variety of topics, organized by specific sub-groups
+- Yammer: enterprise social experience for collaboration
 
 > [!NOTE]
-> Creating a new group via other teamwork applications - such as SharePoint, Planner or Stream - will create a Group with an Outlook communication modality with the ability to connect to Microsoft Teams.
+> Creating a new group via other teamwork applications - such as SharePoint, Planner or Stream - will create a group with an Outlook inbox and the ability to connect to Microsoft Teams.
 
-Depending on where a Group is created, certain resources are provisioned automatically, such as:
-- [Inbox](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22) - For email conversations between your members. This inbox has an email address and can be set to accept messages from people outside the group and even outside your organization, much like a traditional distribution list.
+Depending on where a group is created, certain resources are provisioned automatically, such as:
+- [Inbox](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22) - For email conversations between group members. This inbox has an email address and can be set to accept messages from people outside the group and even outside your organization, much like a traditional distribution list.
  - [Calendar](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a) – For scheduling events related to the group
-- [SharePoint Team Site](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e) – A central repository for information, links and content relating to your group
-- [SharePoint Document Library](https://support.office.com/article/share-group-files-749bc73b-90c9-4760-9b6f-9aa1cf01b403) – A central place for the group to store and share files
-- [OneNote Notebook](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97) – For gathering ideas, research, and information
+- [SharePoint team site](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e) – A central repository for information, links and content relating to your group
+- [SharePoint document library](https://support.office.com/article/share-group-files-749bc73b-90c9-4760-9b6f-9aa1cf01b403) – A central place for the group to store and share files
+- [OneNote notebook](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97) – For gathering ideas, research, and information
 - [Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc) – For assigning and managing project tasks among your group members
-- [Yammer Group](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) – A common place to have conversations and share information
+- [Yammer group](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) – A common place to have conversations and share information
 - Microsoft Teams – A chat-based workspace in Office 365
 
 To learn more about which resources are created for each group, visit [Learn about Office 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 > [!NOTE]
-> When a new Office 365 Group is created via Yammer or Teams, the group isn't visible in Outlook or the address book because the primary communication between those users happens in their respective clients.
-
-> [!IMPORTANT]
-> When a new Yammer group is created, the Office 365 group does not create a group mailbox or calendar resource. Therefore, a Yammer group cannot be connected to Microsoft Teams. See [Yammer and Groups](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups)
+> When a new Office 365 Group is created via Yammer or Teams, the group isn't visible in Outlook or the address book because the primary communication between those users happens in their respective clients. Yammer groups cannot be connected to Microsoft Teams.
 
 ## Where to start a conversation
 There are multiple places to have a conversation within Office 365. Understanding where to start a conversation can help organizations define a strategy for communication.
 
-![image desc](../../media/02.png)
+![image desc](../../media/03.png)
 
 - Teams: chat-based workspace (high velocity collaboration) – inner loop
    - Built for collaboration with the people you work with every day
   - Puts information at the fingertips of users in a single experience
   - Add tabs, connectors and bots
-  - Live chat, audio/video conferencing, recorded meetings.
+  - Live chat, audio/video conferencing, recorded meetings
 
 - Yammer: connect across the org (enterprise social) – outer loop
-  - Communities of Practice - Cross-functional groups of people who share a common interest or expertise but are not necessarily working together on a day-to-day basis
+  - Communities of practice - Cross-functional groups of people who share a common interest or expertise but are not necessarily working together on a day-to-day basis
   - Leadership connection, learning communities, role-based communities
 
-- Outlook Groups: modern DL (email-based collaboration)
+- Outlook groups: modern DL (email-based collaboration)
   - Ubiquitous for targeted communication
-  - Upgrade DLs to Office 365 Groups – [Why you should upgrade?](https://support.office.com/article/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+  - Upgrade DLs to Office 365 groups – [Why you should upgrade?](https://support.office.com/article/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
-- SharePoint – Core content collaboration experience for all Office 365 Groups
-  - Every Group gets a connected SharePoint team site
+- SharePoint – Core content collaboration experience for all Office 365 groups
+  - Every group gets a connected SharePoint team site
   - Share content, create customized pages and author news
-  - [Connect](https://docs.microsoft.com/sharepoint/dev/features/groupify/groupify-overview) existing SharePoint team sites to new Office 365 Groups
-
-![image desc](../../media/03.png)
+  - [Connect](https://docs.microsoft.com/sharepoint/dev/features/groupify/groupify-overview) existing SharePoint team sites to new Office 365 groups
 
 ##  Managing and governing Office 365 at scale
 
-Office 365 Groups has a rich set of tools to implement any governance capabilities your organization might require. The following section describes the capabilities, recommends best practices, and provides guidance to ask the right questions to determine the requirements for governance, and how to meet them.
+Office 365 groups has a rich set of tools to implement any governance capabilities your organization might require. The following section describes the capabilities, recommends best practices, and provides guidance to ask the right questions to determine the requirements for governance, and how to meet them.
 
 **In this section**:
 - [Control who can create Office 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/plan-for-groups-governance#control-who-can-create-office-365-groups)
@@ -102,18 +97,18 @@ Office 365 Groups has a rich set of tools to implement any governance capabiliti
 - [Upgrade traditional collaboration tools](https://docs.microsoft.com/office365/admin/create-groups/plan-for-groups-governance#upgrade-traditional-collaboration-tools)
 - [Groups reporting](https://docs.microsoft.com/office365/admin/create-groups/plan-for-groups-governance#groups-reporting)
 
-### <a name="control-who-can-create-office-365-groups"></a>Control who can create Office 365 Groups
-Groups can be created by end-users from multiple end-points including Outlook, SharePoint, Microsoft Teams, and other environments.
+### <a name="control-who-can-create-office-365-groups"></a>Control who can create Office 365 groups
+Groups can be created by end-users from multiple end-points including Outlook, SharePoint, Teams, and other environments.
 
 ![image desc](../../media/04.png)
 > [!Tip]
 >- Strongly consider self-service to empower group owners.
 >- Document and communicate how to request a group.
 >- Revisit who can create groups during your cloud journey.
->- Consider using dynamic membership to configure Security group’s members to control group creation.
->- Assess which groups scenarios can managed via a dynamic membership and allow self-service for the rest.
+>- Consider using dynamic membership to configure security group’s members to control group creation.
+>- Assess which groups scenarios can be managed via a dynamic membership and allow self-service for the rest.
 
-There are three primary models of provisioning in Groups: Open, IT-led or Controlled. The following table describes the advantages of each model.
+There are three primary models of provisioning in groups: open, IT-led, and controlled. The following table describes the advantages of each model.
 
 | Model          | Advantages                                                   |
 | -------------- | ------------------------------------------------------------ |
