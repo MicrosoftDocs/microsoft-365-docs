@@ -156,10 +156,9 @@ EOP customers get basic anti-phishing as previously described, but Office 365 AT
 |Enable anti-spoofing protection|On|On||
 |Enable Unauthenticated Sender (tagging)|On|On||
 |If email is sent by someone who's not allowed to spoof your domain|Move message to the recipients' Junk Email folders|Quarantine the message||
-|EnableAuthenticationSafetyTip|True|True|This setting is only available in PowerShell|
-|EnableAuthenticationSoftPassSafetyTip|False|True|This setting is only available in PowerShell|
 |EnableSuspiciousSafetyTip|False|True|This setting is only available in PowerShell|
 |TreatSoftPassAsAuthenticated|True|False|This setting is only available in PowerShell|
+
 
 |Advanced settings security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
