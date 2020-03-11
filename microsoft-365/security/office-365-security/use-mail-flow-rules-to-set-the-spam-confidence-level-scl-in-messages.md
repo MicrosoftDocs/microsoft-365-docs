@@ -24,16 +24,11 @@ If you're an Office 365 customer with mailboxes in Exchange Online or a standalo
 
 If you want to mark specific messages as spam before they're even scanned by spam filtering, or mark messages so they'll skip spam filtering, you can create mail flow rules (also known as transport rules) to identify the messages and set the spam confidence level (SCL). For more information about the SCL, see [Spam confidence level (SCL) in Office 365](spam-confidence-levels.md).
 
-> [!CAUTION]
-> Be very careful about allowing messages to skip spam filtering. Attackers can use this loophole to send phishing and other malicious messages into your organization. For more information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
-
 ## What do you need to know before you begin?
 
 - You need to be assigned permissions in Exchange Online before you can do these procedures. Specifically, you need to be assigned the **Transport Rules** role, which is assigned to the **Organization Management**, **Compliance Management**, and **Records Management** roles by default. For more information, see [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
 - To open the EAC in Exchange Online, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
-
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - For more information about mail flow rules in Exchange Online, see [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
@@ -55,15 +50,16 @@ If you want to mark specific messages as spam before they're even scanned by spa
 
    - **Bypass spam filtering**: This sets the SCL to -1, which means the messages will skip spam filtering.
 
+     > [!CAUTION]
+     > Be very careful about allowing messages to skip spam filtering. Attackers can use this vulnerability to send phishing and other malicious messages into your organization. The mail flow rules requires more than just the sender's email address or domain. For more information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
+
    - **0 to 4**: The message is sent through spam filtering for additional processing.
 
    - **5 or 6**: The message is marked as **Spam**. The action that you've configured for **Spam** filtering verdicts in your anti-spam policies is applied to the message (the default value is **Move message to Junk Email folder**).
 
    - **7 to 9**: The message is marked as **High confidence spam**. The action that you've configured for **High confidence spam** filtering verdicts in your anti-spam policies is applied to the message (the default value is **Move message to Junk Email folder**).
 
-4. Specify any additional properties that you want for the rule. When you're finished, click **Save**
-
-## Use 
+4. Specify any additional properties that you want for the rule. When you're finished, click **Save**.
 
 ## How do you know this worked?
 
