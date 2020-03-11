@@ -28,8 +28,8 @@ description: "Learn how to share sites and files with people outside the organiz
 To collaborate with people outside your organization, you can share entire sites or specific files externally. If you want to get straight to setting up sharing, choose the scenario you want to enable:
 
 - [Collaborate with guests on a document](https://docs.microsoft.com/Office365/Enterprise/collaborate-on-documents)
-- [Collaborate with guests in a site](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-a-site)
-- [Collaborate with guests in a team](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-a-team)
+- [Collaborate with guests in a site](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
+- [Collaborate with guests in a team](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
   
 ## Deciding how to share your content
 

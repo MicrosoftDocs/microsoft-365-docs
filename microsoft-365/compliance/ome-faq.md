@@ -110,7 +110,8 @@ Yes! You can enable encryption for PDF attachments for your Office 365 organizat
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. Messages inherit the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. If an Outlook or Outlook on the web user attaches an unprotected PDF attachment to a protected message, the message inherits the protection of the message. Users can only open the encrypted attachments in applications that support protected PDFs (for example, the OME Portal and the Azure Information Protection Viewer).
+PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. For all Outlook clients, messages and unprotected PDF attachments inherit the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Also, if an Outlook on the web user attaches an unprotected PDF document and applies protection to message, the message inherits the protection of the message. Users can only open the encrypted attachments in applications that support protected PDFs (for example, the OME Portal and the Azure Information Protection Viewer).
+
   
 ## Are OneDrive for Business attachments supported?
 
