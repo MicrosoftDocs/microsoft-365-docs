@@ -20,11 +20,11 @@ description: "When you create a sensitivity label, you can automatically assign 
 
 # Apply a sensitivity label to content automatically
 
-When you create a sensitivity label, you can automatically assign that label to content when it contains sensitive information, or you can prompt users to apply the label that you recommend.
+When you create a sensitivity label, you can automatically assign that label to content when it matches conditions that you specify.
 
 The ability to apply sensitivity labels to content automatically is important because:
 
-- You don't need to train your users on all of your classifications.
+- You don't need to train your users when to use each of your classifications.
 
 - You don't need to rely on users to classify all content correctly.
 
@@ -32,7 +32,7 @@ The ability to apply sensitivity labels to content automatically is important be
 
 There are two different scenarios for automatically applying a sensitivity label:
 
-- **Client-side labeling when content is created or in use by users**: Use auto-labeling for Office apps (Word, Excel, PowerPoint, and Outlook. 
+- **Client-side labeling when content is saved by users**: Use auto-labeling for Office apps (Word, Excel, PowerPoint, and Outlook. 
     
     This scenario supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. This is proactive labeling, with very little delay because the label is applied as soon as the document is saved, or the emai is sent.
     
@@ -40,10 +40,32 @@ There are two different scenarios for automatically applying a sensitivity label
 
 - **Service-side labeling when content is stored (in SharePoint Online or OneDrive for Business) or emailed (from Exchange Online)**: Use auto-labeling with SharePoint, OneDrive, and Exchange, currently in preview. 
     
-    This scenario doesn't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before deployment. This is reactive labeling, for content that isn't already labeled and the document is already saved and the email sent by the user (but not yet sent from the organization). These two conditions are sometimes referred to as "data at rest" and "data in transit" respectively.
+    This scenario doesn't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before deployment. This is reactive labeling, for content that isn't already labeled and the document is already saved and the email sent. These two conditions are sometimes referred to as "data at rest" and "data in transit" respectively.
     
     For instructions, see [How to configure auto-labeling for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-for-sharepoint-ondrive-and-exchange)
+    
+    Specific to auto-labeling for Exchange:
+    - If you have Exchange mail flow rules that apply IRM encryption: If content is identified by both a mail flow rule and an auto-labeling policy, the label and any encryption settings from the label are applied to that content.
+    - If you have DLP rules that apply IRM encryption: If content is identified by both a DLP rule and an auto-labeling policy, the encryption settings only from the label are applied. The content is not labeled.
+    - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
+    - Incoming email is labeled if there is a match, but if the label is configured for encryption, that encryption isn't applied.
 
+
+### Compare client-side labeling for Office apps with service-side labeling for SharePoint, OneDrive, and Exchange
+
+Use the following table to help you identify the differences in behavior for the two complementary automatic labeling solutions:
+
+|Label setting: Auto-labeling for Office apps |Policy: Auto-labeling|
+|:-----|:-----|:-----|:-----|
+|Restrict by location|No |Yes |
+|Conditions: Trainable classifers|Yes (limited preview) |No |
+|Conditions: Sharing options and additional options for email|No |Yes |
+|Recommendations and user overrides)|Yes |No |
+|When the label is applied|Documents: On save<br/><br/>Email: Sent from mailbox |Documents: Not in use<br/><br/>Email: Processed (outbound and inbound) from Exchange |
+|Simulation mode|No |Yes |
+|Can override existing label|Yes if existing label has a lower priority |No |
+|Can override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
+|Label incoming email|No |Yes (encryption not applied) |
 
 ## How to configure auto-labeling for Office apps
 
@@ -134,7 +156,7 @@ Remember, you can't apply a parent label (a label with sublabels) to content. Ma
 
 ### Prerequisites
 
-- At least one active Office 365 E5 license in your tenant.
+- At least one active Office 365 (E5) or Advanced Compliance (E5) add-on license in your tenant.
 
 - To auto-label files in SharePoint and OneDrive, the file mustn't be open by another process or user.
 
@@ -146,17 +168,17 @@ Remember, you can't apply a parent label (a label with sublabels) to content. Ma
 
 - You already have one or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policy. For these labels:
     - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction. 
-    - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), these are not applied with auto-labeling policies.
+    - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), these are not applied to documents. Headers and footers will be applied to emails (watermarks are not supported for email).
 
 ### Learn about simulation mode
 
 Simulation mode is unique to auto-labeling policies and woven into the workflow. You can't automatically label documents and emails until your policy has run at least one simulation.
 
-The simulated deployment runs like the WhatIf parameter for PowerShell. You see results reported as if the auto-labeling policy had applied your selected label, using the rules that you defined. You can then refine your rules for accuracy if needed, and rerun the simulation.
+The simulated deployment runs like the WhatIf parameter for PowerShell. You see results reported as if the auto-labeling policy had applied your selected label, using the rules that you defined. You can then refine your rules for accuracy if needed, and rerun the simulation. However, because auto-labeling for Exchange applies to emails that are sent and received, rather than emails stored in mailboxes, don't expect results for email in a simulation to be consistent unless you're able to send and receive the exact same email messages.
 
 Simulation mode also lets you gradually increase the scope of your auto-labeling policy before deployment. For example, you might start with a single location, such as a SharePoint site, with a single document library. Then, with iterative changes, increase the scope to multiple sites, and then to another location, such as OneDrive.
 
-Finally, you can use simulation mode to provide an approximation of the time needed to run, to help you plan and schedule your deployment.
+Finally, you can use simulation mode to provide an approximation of the time needed to run your auto-labeling policy, to help you plan and schedule when to run it without simulation mode.
 
 
 ### How to create an auto-labeling policy
@@ -211,4 +233,6 @@ You can modify your policy directly from this interface by selecting the **Edit*
 
 When you're ready to run the policy without simulation, select **Turn On**.
 
-You can also see the results of your auto-labeling policy by using 
+You can also see the results of your auto-labeling policy by using [Content Explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
+- Content Explorer List viewer lets you see a file's label but not the file's contents.
+- Content Explorer Content viewer lets you see the file's contents.
