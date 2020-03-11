@@ -20,7 +20,12 @@ description: Understand how planning and implementing business continuity looks 
 
 # Enterprise business continuity management (EBCM) with cloud services
 
-As part of your organizations digital transformation, you need to revisit and update your disaster recovery and business continuity plans to account for the business process that depend on Microsoft 365 Cloud services. Microsoft 365 Cloud services, like Exchange Online, SharePoint Online and OneDrive for Business are designed and operated to be highly resilient. Even with this resilience, service incidents do occur. When they do, your organization should be prepared and have a well-defined business continuity strategy.
+As part of your organizations digital transformation, you need to revisit and update your disaster recovery and business continuity plans to account for the business process that depend on Microsoft 365 Cloud services. Microsoft 365 Cloud services, like Exchange Online, SharePoint Online and OneDrive for Business are designed and operated to be highly resilient.
+
+> [!NOTE]
+> You can learn more about Microsoft's own EBCM plan in the [Enterprise Business Continuity Management Program whitepaper](https://go.microsoft.com/fwlink/?linkid=2121521). Login is required.
+
+Even with this resilience, service incidents do occur. When they do, your organization should be prepared and have a well-defined business continuity strategy.
 
 If you haven't updated your plans yet this series of topics helps you to plan your strategy so your services can fail to a known state. These topics highlight key considerations for improving your continuity readiness.
 
