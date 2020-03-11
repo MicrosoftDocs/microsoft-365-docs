@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
-description: "View technical details about encyption in Office 365."
+description: "View technical details about encryption in Office 365."
 ---
 
 # Technical reference details about encryption in Office 365
