@@ -46,9 +46,7 @@ We're also making it easier to modify your own existing templates. You can expor
 
 Your organization will receive updated assessments in the next release of Compliance Score and Compliance Manager to help you align with certification and regulation updates. We'll provide a clear way for you to understand and accept all future updates through versioning alerts.
 
-Whenever an update is available for an assessment's template or an improvement action, an alert icon notifies you that an update is ready. When you click on that icon, a pop-up window explains the update and asks you to accept or defer the update.
-
-Below is an example of the versioning alert for an assessment:
+Whenever an update is available for an assessment's template or an improvement action, an alert icon notifies you that an update is ready. When you click on that icon, a pop-up window explains the update and prompts you to accept. Below is an example of the versioning alert for an assessment:
 
 ![Compliance Score - versioning alert](../media/compliance-score-assessment-version.png "Assessment version update alert")
 
