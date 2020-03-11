@@ -34,7 +34,7 @@ There are two different scenarios for automatically applying a sensitivity label
 
 - **Client-side labeling when content is created or in use by users**: Use auto-labeling for Office apps (Word, Excel, PowerPoint, and Outlook. 
     
-    This scenario supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. This is proactive labeling, with very little delay because the label is applied when the document is saved, or the email sent.
+    This scenario supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. This is proactive labeling, with very little delay because the label is applied as soon as the document is saved, or the emai is sent.
     
     For instructions, see [How to configure auto-labeling for Office apps](#how-to-configure-auto-labeling-for-office-apps).
 
@@ -101,7 +101,7 @@ During the preview period, the following apps support classifers for sensitivity
 
 If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label isn't suitable for their content.
 
-Recommended labels are supported for Word, PowerPoint, and Excel.
+Recommended labels are supported for Word, Excel, and PowerPoint.
 
 ![Option for recommending a sensitivity label to users](../media/Sensitivity-labels-Recommended-label-option.png)
 
