@@ -32,15 +32,15 @@ The ability to apply sensitivity labels to content automatically is important be
 
 There are two different scenarios for automatically applying a sensitivity label:
 
-- **Client-side labeling when content is saved by users**: Use auto-labeling for Office apps (Word, Excel, PowerPoint, and Outlook. 
+- **Client-side labeling when documents are saved by users or they send emails**: Use a label that's configured for auto-labeling for Office apps (Word, Excel, PowerPoint, and Outlook). 
     
     This scenario supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. This is proactive labeling, with very little delay because the label is applied as soon as the document is saved, or the emai is sent.
     
     For instructions, see [How to configure auto-labeling for Office apps](#how-to-configure-auto-labeling-for-office-apps).
 
-- **Service-side labeling when content is stored (in SharePoint Online or OneDrive for Business) or emailed (from Exchange Online)**: Use auto-labeling with SharePoint, OneDrive, and Exchange, currently in preview. 
+- **Service-side labeling when content is stored (in SharePoint Online or OneDrive for Business) or emailed (processed by Exchange Online)**: Use an auto-labeling policy for SharePoint, OneDrive, and Exchange, currently in preview. 
     
-    This scenario doesn't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before deployment. This is reactive labeling, for content that isn't already labeled and the document is already saved and the email sent. These two conditions are sometimes referred to as "data at rest" and "data in transit" respectively.
+    This scenario doesn't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label. This is reactive labeling, for content that isn't already labeled and the document is already saved, and the email is processed by Exchange. These two conditions are sometimes referred to as "data at rest" and "data in transit" respectively.
     
     For instructions, see [How to configure auto-labeling for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-for-sharepoint-ondrive-and-exchange)
     
@@ -66,6 +66,14 @@ Use the following table to help you identify the differences in behavior for the
 |Can override existing label|Yes if existing label has a lower priority |No |
 |Can override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
 |Label incoming email|No |Yes (encryption not applied) |
+
+### How multiple conditions are evaluated when they apply to more than one label
+
+The labels are ordered for evaluation according to their position that you specify in the policy: The label positioned first has the lowest position (least sensitive) and the label positioned last has the highest position (most sensitive). For more information on priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
+
+### Don't configure a parent label to be applied automatically or recommended
+
+Remember, you can't apply a parent label (a label with sublabels) to content. Make sure that you don't configure a parent label to be auto-applied or recommended, because the parent label won't be applied to content in Office apps that use the Azure Information Protection unified labeling client. For more information on parent labels and sublabels, see [Sublabels (grouping labels)](sensitivity-labels.md#sublabels-grouping-labels).
 
 ## How to configure auto-labeling for Office apps
 
@@ -133,21 +141,13 @@ Here's an example of a prompt when you configure a condition to apply a label as
 
 ### How automatic or recommended labels are applied
 
-- Automatic labeling applies to Word, Excel, and PowerPoint when you save a document, and to Outlook when you send an email. These conditions detect sensitive information in the body text in documents and emails, and to headers and footers — but not in the subject line or attachments of email.
+- Automatic labeling applies to Word, Excel, and PowerPoint when you save a document, and to Outlook when you send an email. The conditions detect sensitive information in the body text in documents and emails, and to headers and footers — but not in the subject line or attachments of email.
 
 - You can't use automatic labeling for documents and emails that were previously manually labeled, or previously automatically labeled with a higher sensitivity. Remember, you can only apply a single sensitivity label to a document or email (in addition to a single retention label).
 
 - Recommended labeling applies to Word, Excel, and PowerPoint when you save documents.
 
 - You can't use recommended labeling for documents that were previously labeled with a higher sensitivity. When the content's already labeled with a higher sensitivity, the user won't see the prompt with the recommendation and policy tip.
-
-### How multiple conditions are evaluated when they apply to more than one label
-
-The labels are ordered for evaluation according to their position that you specify in the policy: The label positioned first has the lowest position (least sensitive) and the label positioned last has the highest position (most sensitive). For more information on priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
-
-### Don't configure a parent label to be applied automatically or recommended
-
-Remember, you can't apply a parent label (a label with sublabels) to content. Make sure that you don't configure a parent label to be auto-applied or recommended, because the parent label won't be applied to content in Office apps that use the Azure Information Protection unified labeling client. For more information on parent labels and sublabels, see [Sublabels (grouping labels)](sensitivity-labels.md#sublabels-grouping-labels).
 
 ## How to configure auto-labeling for SharePoint, OnDrive, and Exchange
 
@@ -218,6 +218,8 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 8. For the **Set up rules to define what content is labeled** page: Select **+ Create rule** and then select **Next**.
 
 9. On the **Create rule** page, name and define your rule, using sensitive information types or the sharing option, and then select **Save**.
+    
+    The configuration options for sensitive information types are the same as those you select for auto-labeling for Office apps. If you need more information, see [Configuring sensitive info types for a label](#configuring-sensitive-info-types-for-a-label).
 
 10. Back on the **Set up rules to define what content is labeled** page: Select **+ Create rule** again if you need another rule to identify the content to label, and repeat the previous step. When you have defined all the rules you need, and confirmed their status is on, select **Next**.
 
