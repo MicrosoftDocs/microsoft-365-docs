@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
-description: "Learn how to access Azure Active Directory, which is include in your organization's paid subscription to Office 365."
+description: "Learn how to access Azure Active Directory, which is included in your organization's paid subscription to Office 365."
 ---
 
 # Use your free Azure Active Directory subscription in Office 365
