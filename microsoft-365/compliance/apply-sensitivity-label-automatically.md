@@ -30,15 +30,28 @@ The ability to apply sensitivity labels to content automatically is important be
 
 - Users no longer need to know about your policies — they can instead focus on their work.
 
+There are two different scenarios for automatically applying a sensitivity label:
+
+- **Client-side labeling when content is created or in use by users**: Use auto-labeling for Office apps (Word, Excel, PowerPoint, and Outlook. 
+    
+    This scenario supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. This is proactive labeling, with very little delay because the label is applied when the document is saved, or the email sent.
+    
+    For instructions, see [How to configure auto-labeling for Office apps](#how-to-configure-auto-labeling-for-office-apps).
+
+- **Service-side labeling when content is stored (in SharePoint Online) or emailed (from Exchange Online)**: Use auto-labeling with SharePoint and Exchange, currently in preview. 
+    
+    This scenario doesn't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in test mode to help ensure the correct labeling of content before deployment. This is reactive labeling, for content that isn't already labeled and the document is already saved and the email sent by the user (but not yet sent from the organization).
+    
+    For instructions, see [How to configure auto-labeling for SharePoint and Exchange](#how-to-configure-autolabeling-for-sharepoint-and-exchange)
+
+
+## How to configure auto-labeling for Office apps
+
 Automatic labeling in Office apps for Windows is supported by the Azure Information Protection unified labeling client. For built-in labeling in Office apps, this capability is [in preview for some apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md):
 
 ![Auto labeling options for sensitivity labels](../media/sensitivity-labels-auto-labeling-options.png)
-
-## How to configure auto-labeling for Office apps
-
-One of the most powerful features of sensitivity labels is the ability to apply them automatically to content that matches certain conditions. In this case, people in your organization don't need to apply the sensitivity labels — Office 365 does the work for them.
 
 You can choose to apply sensitivity labels to content automatically when that content contains specific types of sensitive information. Choose from a list of sensitive info types or classifers:
 
@@ -84,7 +97,7 @@ During the preview period, the following apps support classifers for sensitivity
     - PowerPoint
     - Outlook
 
-## Recommend that the user apply a sensitivity label
+### Recommend that the user applies a sensitivity label
 
 If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label isn't suitable for their content.
 
@@ -96,7 +109,7 @@ Here's an example of a prompt when you configure a condition to apply a label as
 
 ![Prompt to apply a recommended label](../media/Sensitivity-label-Prompt-for-required-label.png)
 
-## How automatic or recommended labels are applied
+### How automatic or recommended labels are applied
 
 - Automatic labeling applies to Word, Excel, and PowerPoint when you save a document, and to Outlook when you send an email. These conditions detect sensitive information in the body text in documents and emails, and to headers and footers — but not in the subject line or attachments of email.
 
@@ -106,10 +119,12 @@ Here's an example of a prompt when you configure a condition to apply a label as
 
 - You can't use recommended labeling for documents that were previously labeled with a higher sensitivity. When the content's already labeled with a higher sensitivity, the user won't see the prompt with the recommendation and policy tip.
 
-## How multiple conditions are evaluated when they apply to more than one label
+### How multiple conditions are evaluated when they apply to more than one label
 
 The labels are ordered for evaluation according to their position that you specify in the policy: The label positioned first has the lowest position (least sensitive) and the label positioned last has the highest position (most sensitive). For more information on priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
 
-## Don't configure a parent label to be applied automatically or recommended
+### Don't configure a parent label to be applied automatically or recommended
 
 Remember, you can't apply a parent label (a label with sublabels) to content. Make sure that you don't configure a parent label to be auto-applied or recommended, because the parent label won't be applied to content in Office apps that use the Azure Information Protection unified labeling client. For more information on parent labels and sublabels, see [Sublabels (grouping labels)](sensitivity-labels.md#sublabels-grouping-labels).
+
+## How to configure auto-labeling for SharePoint and Exchange
