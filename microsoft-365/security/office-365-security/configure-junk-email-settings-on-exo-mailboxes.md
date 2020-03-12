@@ -40,7 +40,7 @@ Admins can use Exchange Online PowerShell to disable, enable, and view the statu
 
 - You can only use Exchange Online PowerShell to perform these procedures. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions before you can perform this procedure or procedures. Specifically, you need the **Mail Recipients** role (which is assigned to the **Organization Management**, **Recipient Management**, and **Custom Mail Recipients** role groups by default) or the **User Options** role (which is assigned to the **Organization Management** and **Help Desk** role groups by default). To add users to role groups in Exchange Online, see [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).
+- You need to be assigned permissions before you can do these procedures. Specifically, you need the **Mail Recipients** role (which is assigned to the **Organization Management**, **Recipient Management**, and **Custom Mail Recipients** role groups by default) or the **User Options** role (which is assigned to the **Organization Management** and **Help Desk** role groups by default). To add users to role groups in Exchange Online, see [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Note that a user with default permissions can do these same procedures on their own mailbox, as long as they have [access to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 ## Use Exchange Online PowerShell to enable or disable the junk email rule in a mailbox
 
@@ -65,7 +65,7 @@ This example disables the junk email rule on all user mailboxes in the organizat
 $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All | foreach {Set-MailboxJunkEmailConfiguration $_.Name -Enabled $false}
 ```
 
-For more information, see [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration).
+For detailed syntax and parameter information, see [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration).
 
  **Notes**:
 
@@ -99,8 +99,14 @@ The safelist collection on a mailbox includes the Safe Senders list, the Safe Re
 |_BlockedSendersAndDomains_|**Move email from these senders or domains to my Junk Email folder**|
 |_ContactsTrusted_|**Trust email from my contacts**|
 |_TrustedListsOnly_|**Only trust email from addresses in my Safe senders and domains list and Safe mailing lists**|
-|_TrustedSendersAndDomains_ <br/> _TrustedRecipientsAndDomains_|**Don't move email from these senders to my Junk Email folder**|
+|_TrustedSendersAndDomains_<sup>\*</sup>|**Don't move email from these senders to my Junk Email folder**|
 |
+
+<sup>\*</sup>**Notes**:
+
+- In Exchange Online, domains values in the Safe Senders list or _TrustedSendersAndDomains_ parameter aren't recognized, so only use email addresses. In standalone EOP with directory synchronization, domain values aren't synchronized by default, but you can enable synchronization for domain values. For more information, see [KB3019657](https://support.microsoft.com/help/3019657/domains-on-the-outlook-safe-senders-list-aren-t-recognized-by-exchange).
+
+- You can't directly modify the Safe Recipients list by using the **Set-MailboxJunkEmailConfiguration** cmdlet (the _TrustedRecipientsAndDomains_ parameter doesn't work). You modify the Safe Senders list, and those changes are synchronized to the Safe Recipients list.
 
 To configure the safelist collection on a mailbox, use the following syntax:
 
@@ -108,30 +114,18 @@ To configure the safelist collection on a mailbox, use the following syntax:
 Set-MailboxJunkEmailConfiguration <MailboxIdentity> -BlockedSendersAndDomains <EmailAddresses | $null> -ContactsTrusted <$true | $false> -TrustedListsOnly <$true | $false> -TrustedSendersAndDomains  <EmailAddresses | $null>
 ```
 
-To enter multiple values and overwrite any existing entries for the _BlockedSendersAndDomains_ and _TrustedSendersAndDomains_ parameters, use the following syntax: `"<EmailAddress1>","<EmailAddress2>"...`. To add or remove one or more values without affecting other existing entries, use the following syntax: `@{Add="<EmailAddress1>","<EmailAddress2>"... ; Remove="<EmailAddress3>","<EmailAddress4>...}`
+To enter multiple values and overwrite any existing entries for the _BlockedSendersAndDomains_ and _TrustedSendersAndDomains_ parameters, use the following syntax: `"<Value1>","<Value2>"...`. To add or remove one or more values without affecting other existing entries, use the following syntax: `@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
 
 This example configures the following settings for the safelist collection on Ori Epstein's mailbox:
 
-- Adds the value shopping@fabrikam.com to the Blocked Senders list.
+- Add the value shopping@fabrikam.com to the Blocked Senders list.
 
-- Removes the value chris@fourthcoffee.com from the Safe Senders list and the Safe Recipients list.
+- Remove the value chris@fourthcoffee.com from the Safe Senders list and the Safe Recipients list.
 
 - Configures contacts in the Contacts folder to be treated as trusted senders.
 
 ```PowerShell
 Set-MailboxJunkEmailConfiguration "Ori Epstein" -BlockedSendersAndDomains @{Add="shopping@fabrikam.com"} -TrustedSendersAndDomains @{Remove="chris@fourthcoffee.com"} -ContactsTrusted $true
-```
-
-This example empties the Blocked Senders list for all user mailboxes in the Organizational Unit named North America in the contoso.com domain.
-
-```PowerShell
-Get-Mailbox -RecipientTypeDetails UserMailbox -OrganizationalUnit "contoso.com/North America" | Set-MailboxJunkEmailConfiguration -BlockedSendersAndDomains $null
-```
-
-This example adds michelle@tailspintoys.com to the Safe Senders list and Safe Recipients list on all user mailboxes in the mailbox database named MDB 01.
-
-```PowerShell
-Get-Mailbox -RecipientTypeDetails UserMailbox -Database "MDB 01" | Set-MailboxJunkEmailConfiguration -TrustedSendersAndDomains @{Add="michelle@tailspintoys.com"}
 ```
 
 This example removes the domain contoso.com from the Blocked Senders list in all user mailboxes in the organization.
@@ -140,17 +134,15 @@ This example removes the domain contoso.com from the Blocked Senders list in all
 $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All | foreach {Set-MailboxJunkEmailConfiguration $_.Name -BlockedSendersAndDomains @{Remove="contoso.com"}}
 ```
 
-For more information, see [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration).
+For detailed syntax and parameter information, see [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration).
 
  **Notes**:
 
 - If the user has never opened their mailbox, you might receive an error when you run the previous commands. To suppress this error for bulk operations, add `-ErrorAction SlientlyContinue` to the **Set-MailboxJunkEmailConfiguration** command.
 
-- Disabling the junk email rule in the mailbox prevents the rule from moving messages to the Junk Email folder or keeping messages out of the Junk Email folder based on the safelist collection. However, you can still configure the safelist collection, and the Outlook Junk Email Filter is able to use the safelist collection to move messages to the Inbox or the Junk Email folder. For more information, see the [About junk email settings in Outlook](configure-antispam-settings.md#OutlookSettings) section in this topic.
+- Even if the junk email rule is disabled on the mailbox, you can still configure the safelist collection, and the Outlook Junk Email Filter is able to move messages to the Inbox or the Junk Email folder. For more information, see the [About junk email settings in Outlook](configure-antispam-settings.md#OutlookSettings) section in this topic.
 
-- You can't directly modify the Safe Recipients list by using the **Set-MailboxJunkEmailConfiguration** cmdlet. You modify the Safe Senders list, and those changes are synchronized to the Safe Recipients list.
-
-- The Outlook Junk Email Filter has additional safelist collection settings (for example, **Automatically add people I email to the Safe Senders list**, and separate configuration of the Safe Senders list and Safe Recipients list). For more information, see [Use Junk Email Filters to control which messages you see](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077).
+- The Outlook Junk Email Filter has additional safelist collection settings (for example, **Automatically add people I email to the Safe Senders list**). For more information, see [Use Junk Email Filters to control which messages you see](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077).
 
 ### How do you know this worked?
 
@@ -162,7 +154,7 @@ To verify that you have successfully configured the safelist collection on a mai
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List trusted*,contacts*,blocked*
   ```
 
-    If the list of email addresses is too long, use this syntax:
+  If the list of values is too long, use this syntax:
 
   ```PowerShell
   (Get-MailboxJunkEmailConfiguration -Identity <MailboxIdentity>).BlockedSendersAndDomains
@@ -174,11 +166,11 @@ To enable, disable, and configure the client-side Junk Email Filter settings tha
 
 When the Outlook Junk Email Filter is set to the default value **No automatic filtering** in **Home** \> **Junk** \> **Junk E-Mail Options** \> **Options**, Outlook doesn't attempt to classify massages as spam, but still uses the safelist collection (the Safe Senders list, Safe Recipients list, and Blocked Senders list) to move messages to the Junk Email folder after delivery. For more information about these settings, see [Overview of the Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 
-When the Outlook Junk Email Filter is set to **Low** or **High**, the Outlook Junk Email Filter uses its own SmartScreen filter technology to identify and move spam to the Junk Email folder. This spam classification is separate from the spam confidence level (SCL) that's determined by EOP. In fact, Outlook ignores the EOP SCL (unless EOP marked the message to skip spam filtering) and uses its own criteria to determine whether the message is spam. Of course, it's possible that the spam verdict from EOP and Outlook might be the same. For more information about these settings, see [Change the level of protection in the Junk Email Filter](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b).
+When the Outlook Junk Email Filter is set to **Low** or **High**, the Outlook Junk Email Filter uses its own SmartScreen filter technology to identify and move spam to the Junk Email folder. This spam classification is separate from the spam confidence level (SCL) that's determined by EOP. In fact, Outlook ignores the SCL from EOP (unless EOP marked the message to skip spam filtering) and uses its own criteria to determine whether the message is spam. Of course, it's possible that the spam verdict from EOP and Outlook might be the same. For more information about these settings, see [Change the level of protection in the Junk Email Filter](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b).
 
 > [!NOTE]
 > In November 2016, Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook. The existing SmartScreen spam definitions were left in place, but their effectiveness will likely degrade over time. For more information, see [Deprecating support for SmartScreen in Outlook and Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332).
 
-So, the Outlook Junk Email Filter is able to use the mailbox's safelist collection and its own spam classification to move messages to the Junk Email folder, even if the junk email rule is disabled in the mailbox. The only difference is whether the junk email rule in the Exchange Online mailbox or the Junk Email Filter in the Outlook client moves the message to the Junk Email folder.
+So, the Outlook Junk Email Filter is able to use the mailbox's safelist collection and its own spam classification to move messages to the Junk Email folder, even if the junk email rule is disabled in the mailbox.
 
 Outlook and Outlook on the web both support the safelist collection. The safelist collection is saved in the Exchange Online mailbox, so changes to the safelist collection in Outlook appear in Outlook on the web, and vice-versa.
