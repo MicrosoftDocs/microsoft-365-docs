@@ -20,7 +20,7 @@ titleSuffix: Microsoft Compliance
 
 ## About the PDPA
 
-In agreement with the Argentine National Constitution, the [Personal Data Protection Act 25.326](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) was executed in 2000 to help protect the privacy of personal data, and to give individuals access to any information stored in public and private databases and registries. The Argentine Agency of Access to Public Information ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip), AAIP) within the Chief of Ministries’ Cabinet is responsible for enforcing this law.
+In agreement with the Argentine National Constitution, the [Personal Data Protection Act 25.326](http://www.jus.gob.ar/media/3201023/personal_data_protection_act25326.pdf) (PDPA) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) was executed in 2000 to help protect the privacy of personal data, and to give individuals access to any information stored in public and private databases and registries. The Argentine Agency of Access to Public Information ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip), AAIP) within the Chief of Ministries’ Cabinet is responsible for enforcing this law.
 
 The PDPA aligns with the European legislative model for protecting data privacy, and Argentina was the first country in Latin America to achieve an “adequacy” qualification for data transfers from the EU.
 

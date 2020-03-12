@@ -41,16 +41,24 @@
           items: 
             - name: What is Microsoft Threat Protection?
               href: mtp/microsoft-threat-protection.md
+            - name: What's new in Microsoft Threat Protection
+              href: mtp/whats-new.md
+            - name: Preview features
+              href: mtp/preview.md
             - name: Microsoft 365 security center
               href: mtp/overview-security-center.md
             - name: Prerequisites
               href: mtp/prerequisites.md
             - name: Data security and privacy
               href: mtp/data-privacy.md
+            - name: Microsoft security portals
+              href: mtp/portals.md
             - name: Troubleshoot issues
               href: ./mtp/troubleshoot.md
         - name: How-to guides
-          items: 
+          items:
+            - name: Deploy supported services
+              href: mtp/deploy-supported-services.md
             - name: Turn on Microsoft Threat Protection
               href: mtp/mtp-enable.md
             - name: Incidents
@@ -67,11 +75,11 @@
               items: 
                 - name: AIR overview
                   href: mtp/mtp-autoir.md
-                - name: View remediation actions
+                - name: Remediation actions
                   href: mtp/mtp-remediation-actions.md
-                - name: Visit the Action center
+                - name: The Action center
                   href: mtp/mtp-action-center.md
-                - name: View investigation results
+                - name: View automated investigation details and results
                   href: mtp/mtp-autoir-results.md
                 - name: Approve or reject pending actions
                   href: mtp/mtp-autoir-actions.md
@@ -79,8 +87,6 @@
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Advanced hunting
               items: 
-                - name: Hunting in Microsoft 365
-                  href: mtp/hunting.md
                 - name: Advanced hunting overview
                   href: mtp/advanced-hunting-overview.md
                 - name: Learn the query language
@@ -134,6 +140,8 @@
                   href: mtp/microsoft-secure-score.md
                 - name: Secure Score (preview)
                   href: mtp/microsoft-secure-score-preview.md
+                - name: What's coming
+                  href: mtp/microsoft-secure-score-whats-coming.md
             - name: Reports
               items: 
                 - name: Monitor and view reports
@@ -370,13 +378,13 @@
               href: ./mtp/latest-attack-campaigns.md
             - name: Automated investigation and response
               items: 
-                - name: Overview of AIR
+                - name: AIR overview
                   href: ./office-365-security/office-365-air.md
-                - name: View details and results of an investigation
+                - name: View automated investigation details and results
                   href: ./office-365-security/air-view-investigation-results.md
-                - name: View and approve remediation actions
+                - name: Approve or reject pending actions
                   href: ./office-365-security/air-remediation-actions.md
-                - name: Integrate AIR with a custom or third-party reporting solution
+                - name: Integrate AIR with a custom solution or third-party solution
                   href: ./office-365-security/air-custom-reporting.md
             - name: Detect and address compromised user accounts quickly
               href: ./office-365-security/address-compromised-users-quickly.md

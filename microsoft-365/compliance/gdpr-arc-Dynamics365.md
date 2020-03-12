@@ -147,5 +147,5 @@ For more GDPR-related documentation, visit https://aka.ms/gdprgetstarted.
 
 ## Learn more
 
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [Secure Trust Portal](https://aka.ms/gdprgetstarted)

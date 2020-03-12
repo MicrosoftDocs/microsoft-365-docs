@@ -337,8 +337,8 @@ A **custom_data** value that starts with `S:SFA` is from the spam filter agent. 
 |`DI=SQ`|The message was quarantined.|
 |`DI=SD`|The message was deleted.|
 |`DI=SJ`|The message was sent to the recipient's Junk Email folder.|
-|`DI=SN`|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).|
-|`DI=SO`|The message was routed through the normal outbound delivery pool.|
+|`DI=SN`|The message was routed through the normal outbound delivery pool.|
+|`DI=SO`|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).|
 |`SFS=[a]|SFS=[b]`|This denotes that spam rules were matched.|
 |`IPV=CAL`|The message was allowed through the spam filters because the IP address was specified in an IP Allow list in the connection filter.|
 |`H=<EHLOstring>`|The HELO or EHLO string of the connecting email server.|

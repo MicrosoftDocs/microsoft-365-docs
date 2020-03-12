@@ -17,11 +17,12 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: "Learn how to use Microsoft 365 Business to remove company data from user devices or Windows PCs. "
+description: "Discover how to use Microsoft 365 Business to remove company data that your users have on their devices or Windows PCs."
 ---
 
 # Remove company data from devices
