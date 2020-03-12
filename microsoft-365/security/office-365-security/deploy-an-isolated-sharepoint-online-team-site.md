@@ -67,13 +67,13 @@ You need to create the following access groups in Azure AD:
     
 4. On the **New Group** blade:
     
-  - Select **Security** in **Group type**.
-    
-  - Type the group name in **Name**.
-    
-  - Type a description of the group in **Group description**.
-    
-  - Select **Assigned** in **Membership type**.
+    - Select **Security** in **Group type**.
+
+    - Type the group name in **Name**.
+
+    - Type a description of the group in **Group description**.
+
+    - Select **Assigned** in **Membership type**.
     
 5. Click **Create**, and then close the **Group** blade.
     
