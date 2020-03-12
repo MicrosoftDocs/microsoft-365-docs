@@ -66,7 +66,7 @@ Deploying each service typically requires provisioning to your tenant and some i
 
 | Service | Provisioning instructions | Initial configuration |
 | ------ | ------ | ------ |
-| Microsoft Defender ATP | [Validate licensing provisioning and complete set up for Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/licensing) | *See provisioning instructions* |
+| Microsoft Defender ATP | [Microsoft Defender ATP deployment guide](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *See provisioning instructions* |
 | Office 365 ATP | *None, provisioned with Office 365* | [Configure ATP policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
 | Azure ATP | [Quickstart: Create your Azure ATP instance](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *See provisioning instructions* |
 | Microsoft Cloud App Security | *None* | [Quickstart: Get started with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
