@@ -51,7 +51,7 @@ You have to perform Step 1 only once to import PST files to Office 365 mailboxes
     
     Or
     
-  - You have to be a global administrator in your Office 365 organization.
+  - You have to be a global administrator in your organization.
     
   > [!TIP]
     > Consider creating a new role group in Exchange Online that's specifically intended for importing PST files to Office 365. For the minimum level of privileges required to import PST files, assign the Mailbox Import Export and Mail Recipients roles to the new role group, and then add members.
@@ -88,7 +88,7 @@ The first step is to download and install the AzCopy tool, which is the tool tha
 > [!IMPORTANT]
 > To import PST files using the network upload method and command syntax documented in this article, you must use the version of AzCopy that can be downloaded in step 6b in the following procedure. You can also download that same version of AzCopy from [here](https://aka.ms/downloadazcopy). Using a different version of AzCopy isn't supported.
   
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your Office 365 organization. 
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your organization. 
     
 2. In the left pane of the Security & Compliance Center, click **Information governance** \> **Import** \> **Import PST files**.
     
@@ -118,7 +118,7 @@ The first step is to download and install the AzCopy tool, which is the tool tha
  
 ## Step 2: Upload your PST files to Office 365
 
-Now you're ready to use the AzCopy.exe tool to upload PST files to Office 365. This tool uploads and stores them in an Azure Storage location in the Microsoft cloud. As previously explained, the Azure Storage location that you upload your PST files to resides in the same regional Microsoft datacenter where your Office 365 organization is located. To complete this step, the PST files have to be located in a file share or file server in your organization. This is known as the source directory in this procedure. Each time you run the AzCopy tool, you can specify a different source directory. 
+Now you're ready to use the AzCopy.exe tool to upload PST files to Office 365. This tool uploads and stores them in an Azure Storage location in the Microsoft cloud. As previously explained, the Azure Storage location that you upload your PST files to resides in the same regional Microsoft datacenter where your organization is located. To complete this step, the PST files have to be located in a file share or file server in your organization. This is known as the source directory in this procedure. Each time you run the AzCopy tool, you can specify a different source directory. 
 
 > [!NOTE]
 > As previously stated, each PST file that you upload to the Azure Storage location should be no larger than 20 GB. PST files larger than 20 GB may impact the performance of the PST import process that you start in Step 6.
@@ -194,7 +194,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
   
 ## Step 4: Create the PST Import mapping file
 
-After the PST files have been uploaded to the Azure Storage location for your Office 365 organization, the next step is to create a comma-separated value (CSV) file that specifies which user mailboxes the PST files will be imported to. You'll submit this CSV file in the next step when you create a PST Import job.
+After the PST files have been uploaded to the Azure Storage location for your organization, the next step is to create a comma-separated value (CSV) file that specifies which user mailboxes the PST files will be imported to. You'll submit this CSV file in the next step when you create a PST Import job.
   
 1. [Download a copy of the PST Import mapping file](https://go.microsoft.com/fwlink/p/?LinkId=544717).
     
@@ -238,7 +238,7 @@ After the PST files have been uploaded to the Azure Storage location for your Of
 
 The next step is to create the PST Import job in the Import service in Office 365. As previously explained, you submit the PST Import mapping file that you created in Step 4. After you create the job, Office 365 analyzes the data in the PST files and then gives you an opportunity to filter the data that actually gets imported to the mailboxes specified in the PST import mapping file (see [Step 6](#step-6-filter-data-and-start-the-pst-import-job)).
   
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your Office 365 organization. 
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your organization. 
     
 2. In the left pane of the Security & Compliance Center, click **Information governance > Import > Import PST files**.
     
@@ -316,7 +316,7 @@ Here's an illustration and description of the network upload process to import P
   
 1. **Download the PST import tool and key to private Azure Storage location:** The first step is to download the AzCopy command-line tool and an access key used to upload the PST files to an Azure Storage location in the Microsoft cloud. You obtain these from the **Import** page in the Security & Compliance Center. The key (called a secure access signature (SAS) key, provides you with the necessary permissions to upload PST files to a private and secure Azure Storage location. This access key is unique to your organization and helps prevent unauthorized access to your PST files after they're uploaded to the Microsoft cloud. Importing PST files to Office 365 doesn't require your organization to have a separate Azure subscription. 
     
-2. **Upload the PST files to the Azure Storage location:** The next step is to use the AzCopy.exe tool (downloaded in step 1) to upload and store your PST files in an Azure Storage location that resides in the same regional Microsoft datacenter where your Office 365 organization is located. To upload them, the PST files that you want to import to Office 365 have to be located in a file share or file server in your organization.
+2. **Upload the PST files to the Azure Storage location:** The next step is to use the AzCopy.exe tool (downloaded in step 1) to upload and store your PST files in an Azure Storage location that resides in the same regional Microsoft datacenter where your organization is located. To upload them, the PST files that you want to import to Office 365 have to be located in a file share or file server in your organization.
     
     There's an optional step that you can perform to view the list of PST files after they're uploaded to the Azure Storage location.
     
@@ -376,4 +376,4 @@ Here's an illustration and description of the network upload process to import P
     
    - You can configure the retention hold so that it's turned off on some date in the future. You do this by running the **Set-Mailbox -EndDateForRetentionHold *date*** command. For example, assuming that today's date is June 1, 2016 and you want the retention hold turned off in 30 days, you would run the following command:  **Set-Mailbox -EndDateForRetentionHold 7/1/2016**. In this scenario, you would leave the  **RetentionHoldEnabled**  property set to  *True*. For more information, see [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
     
-   - You can change the settings for the retention policy that's assigned to the mailbox so that older items that were imported won't be immediately deleted or moved to the user's archive mailbox. For example, you could lengthen the retention age for a deletion or archive policy that's assigned to the mailbox. In this scenario, you would turn off the retention hold on the mailbox after you changed the settings of the retention policy. For more information, see [Set up an archive and deletion policy for mailboxes in your Office 365 organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
+   - You can change the settings for the retention policy that's assigned to the mailbox so that older items that were imported won't be immediately deleted or moved to the user's archive mailbox. For example, you could lengthen the retention age for a deletion or archive policy that's assigned to the mailbox. In this scenario, you would turn off the retention hold on the mailbox after you changed the settings of the retention policy. For more information, see [Set up an archive and deletion policy for mailboxes in your organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md).

@@ -15,13 +15,13 @@ description: "Admins can learn about the mail flow map report in the mail flow d
 
 # Mail flow map report
 
-This report gives insights as to how mail flows through your Office 365 organization. You can use this information to learn patterns, identify anomalies, and fix issues as they arise.
+This report gives insights as to how mail flows through your organization. You can use this information to learn patterns, identify anomalies, and fix issues as they arise.
 
 ![The Mail flow map report in the mail flow dashboard in the Security & Compliance Center](../../media/mail-flow-map-selected.png)
 
 ## Mail flow map widget
 
-By default, the mail flow map shows the high level mail flow pattern from the previous day. You can use the left and right arrows for different days. Hovering your mouse cursor over each area in the report will show the volume of mail to and from your Office 365 organization as shown in the following diagram:
+By default, the mail flow map shows the high level mail flow pattern from the previous day. You can use the left and right arrows for different days. Hovering your mouse cursor over each area in the report will show the volume of mail to and from your organization as shown in the following diagram:
 
 ![Left and right arrows in the Mail flow map widget](../../media/mail-flow-map-widget.png)
 

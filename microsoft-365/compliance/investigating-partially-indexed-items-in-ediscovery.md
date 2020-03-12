@@ -30,7 +30,7 @@ A Content Search that you run from the Security & Compliance Center automaticall
     
 - The file type is supported for indexing but an indexing error occurred for a specific file
     
-Although it varies, most Office 365 organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed. The reason for the difference between the volume versus size is that larger files have a higher probability of containing content that can't be completely indexed.
+Although it varies, most organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed. The reason for the difference between the volume versus size is that larger files have a higher probability of containing content that can't be completely indexed.
   
 ## Why does the partially indexed item count change for a search?
 
@@ -65,7 +65,7 @@ By using the search results from the previous example, .84% of all mailboxes ite
 
 `(316 MB/4830 MB) x 100 = 6.54%`
 
-So in the previous example, 6.54% of the total size of mailbox items are from partially indexed items. As previously stated, most Office 365 organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed.
+So in the previous example, 6.54% of the total size of mailbox items are from partially indexed items. As previously stated, most organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed.
 
 ## Working with partially indexed items
 

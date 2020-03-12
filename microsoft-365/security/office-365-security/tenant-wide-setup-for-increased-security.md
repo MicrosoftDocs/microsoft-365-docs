@@ -25,7 +25,7 @@ This topic walks you through recommended configuration for tenant-wide settings 
 
 ## Check Office 365 Secure Score
 
-Office 365 Secure Score analyzes your Office 365 organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Adjusting some tenant-wide settings will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. See [Microsoft Secure Score](../mtp/microsoft-secure-score.md).
+Office 365 Secure Score analyzes your organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Adjusting some tenant-wide settings will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment that do not negatively affect productivity for your users. See [Microsoft Secure Score](../mtp/microsoft-secure-score.md).
 
 ## Tune threat management policies in the Microsoft 365 security center
 

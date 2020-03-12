@@ -32,7 +32,7 @@ You can remove a license from a user by searching for the user on the home page,
   
 ## Block sign in
 
-You can block the user so they can't sign in to your Office 365 organization. You can search for the user on the home page, or from the **Active users** page, and then select them. At the top of the pane, under the user's name, select the **Block this user** icon, and then select the **Block this user from signing in** check box. [Read full article](../add-users/assign-admin-roles.md).
+You can block the user so they can't sign in to your organization. You can search for the user on the home page, or from the **Active users** page, and then select them. At the top of the pane, under the user's name, select the **Block this user** icon, and then select the **Block this user from signing in** check box. [Read full article](../add-users/assign-admin-roles.md).
   
 ## Get their data
 

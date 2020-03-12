@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your Office 365 organization. "
+description: "Use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. "
 ---
 
 # Search the audit log in the Security & Compliance Center
 
 ## Introduction
 
-Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Office 365 Security & Compliance Center to search the unified audit log to view user and administrator activity in your Office 365 organization. Why a unified audit log? Because you can search for the following types of user and admin activity in Office 365:
+Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Office 365 Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of user and admin activity in Office 365:
 
 - User activity in SharePoint Online and OneDrive for Business
 
@@ -493,12 +493,12 @@ The following table lists events that result from site administration tasks in S
 |Added exempt user agent|ExemptUserAgentSet|A SharePoint or global administrator added a user agent to the list of exempt user agents in the SharePoint admin center.|
 |Added geo location admin|GeoAdminAdded|A SharePoint or global administrator added a user as a geo admin of a location.|
 |Allowed user to create groups|AllowGroupCreationSet|Site administrator or owner adds a permission level to a site that allows a user assigned that permission to create a group for that site.|
-|Cancelled site geo move|SiteGeoMoveCancelled|A SharePoint or global administrator successfully cancels a SharePoint or OneDrive site geo move. The Multi-Geo capability lets an Office 365 organization span multiple Office 365 datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Cancelled site geo move|SiteGeoMoveCancelled|A SharePoint or global administrator successfully cancels a SharePoint or OneDrive site geo move. The Multi-Geo capability lets an organization span multiple Office 365 datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
 |Changed a sharing policy|SharingPolicyChanged|A SharePoint or global administrator changed a SharePoint sharing policy by using the Office 365 admin portal, SharePoint admin portal, or SharePoint Online Management Shell. Any change to the settings in the sharing policy in your organization will be logged. The policy that was changed is identified in the **ModifiedProperties** field in the detailed properties of the event record.|
 |Changed device access policy|DeviceAccessPolicyChanged|A SharePoint or global administrator changed the unmanaged devices policy for your organization. This policy controls access to SharePoint, OneDrive, and Office 365 from devices that aren't joined to your organization. Configuring this policy requires an Enterprise Mobility + Security subscription. For more information, see [Control access from unmanaged devices](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).|
 |Changed exempt user agents|CustomizeExemptUsers|A SharePoint or global administrator customized the list of exempt user agents in the SharePoint admin center. You can specify which user agents to exempt from receiving an entire web page to index. This means when a user agent you've specified as exempt encounters an InfoPath form, the form will be returned as an XML file, instead of an entire web page. This makes indexing InfoPath forms faster.|
 |Changed network access policy|NetworkAccessPolicyChanged|A SharePoint or global administrator changed the location-based access policy (also called a trusted network boundary) in the SharePoint admin center or by using SharePoint Online PowerShell. This type of policy controls who can access SharePoint and OneDrive resources in your organization based on authorized IP address ranges that you specify. For more information, see [Control access to SharePoint Online and OneDrive data based on network location](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f).|
-|Completed site geo move|SiteGeoMoveCompleted|A site geo move that was scheduled by a global administrator in your organization was successfully completed. The Multi-Geo capability lets an Office 365 organization span multiple Office 365 datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Completed site geo move|SiteGeoMoveCompleted|A site geo move that was scheduled by a global administrator in your organization was successfully completed. The Multi-Geo capability lets an organization span multiple Office 365 datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
 |Created Sent To connection|SendToConnectionAdded|A SharePoint or global administrator creates a new Send To connection on the Records management page in the SharePoint admin center. A Send To connection specifies settings for a document repository or a records center. When you create a Send To connection, a Content Organizer can submit documents to the specified location.|
 |Created site collection|SiteCollectionCreated|A SharePoint or global administrator creates a site collection in your SharePoint Online organization or a user provisions their OneDrive for Business site.|
 |Deleted orphaned hub site|HubSiteOrphanHubDeleted|A SharePoint or global administrator deleted an orphan hub site, which is a hub site that doesn't have any sites associated with it. An orphaned hub is likely caused by the deletion of the original hub site.|
@@ -514,7 +514,7 @@ The following table lists events that result from site administration tasks in S
 |Removed allowed data location|AllowedDataLocationDeleted|A SharePoint or global administrator removed an allowed data location in a multi-geo environment.|
 |Removed geo location admin|GeoAdminDeleted|A SharePoint or global administrator removed a user as a geo admin of a location.|
 |Renamed site|SiteRenamed|Site administrator or owner renames a site|
-|Scheduled site geo move|SiteGeoMoveScheduled|A SharePoint or global administrator successfully schedules a SharePoint or OneDrive site geo move. The Multi-Geo capability lets an Office 365 organization span multiple Office 365 datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Scheduled site geo move|SiteGeoMoveScheduled|A SharePoint or global administrator successfully schedules a SharePoint or OneDrive site geo move. The Multi-Geo capability lets an organization span multiple Office 365 datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
 |Set host site|HostSiteSet|A SharePoint or global administrator changes the designated site to host personal or OneDrive for Business sites.|
 |Set storage quota for geo location|GeoQuotaAllocated|A SharePoint or global administrator configured the storage quota for a geo location in a multi-geo environment.|
 |Unjoined site from hub site|HubSiteUnjoined|A site owner disassociates their site from a hub site.|
@@ -626,25 +626,25 @@ The following table lists Azure AD role administration activities that are logge
 |:-----|:-----|:-----|
 |Add member to Role|Add role member to role|Added a user to an admin role in Office 365.|
 |Removed a user from a directory role|Remove role member from role|Removed a user to from an admin role in Office 365.|
-|Set company contact information|Set company contact information|Updated the company-level contact preferences for your Office 365 organization. This includes email addresses for subscription-related email sent by Office 365, and technical notifications about Office 365 services.|
+|Set company contact information|Set company contact information|Updated the company-level contact preferences for your organization. This includes email addresses for subscription-related email sent by Office 365, and technical notifications about Office 365 services.|
 ||||
 
 ### Directory administration activities
 
-The following table lists Azure AD directory and domain-related activities that are logged when an administrator manages their Office 365 organization in the Microsoft 365 admin center or in the Azure management portal.
+The following table lists Azure AD directory and domain-related activities that are logged when an administrator manages their organization in the Microsoft 365 admin center or in the Azure management portal.
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
-|Added domain to company|Add domain to company|Added a domain to your Office 365 organization.|
-|Added a partner to the directory|Add partner to company|Added a partner (delegated administrator) to your Office 365 organization.|
-|Removed domain from company|Remove domain from company|Removed a domain from your Office 365 organization.|
-|Removed a partner from the directory|Remove partner from company|Removed a partner (delegated administrator) from your Office 365 organization.|
-|Set company information|Set company information|Updated the company information for your Office 365 organization. This includes email addresses for subscription-related email sent by Office 365, and technical notifications about Office 365 services.|
-|Set domain authentication|Set domain authentication|Changed the domain authentication setting for your Office 365 organization.|
-|Updated the federation settings for a domain|Set federation settings on domain|Changed the federation (external sharing) settings for your Office 365 organization.|
-|Set password policy|Set password policy|Changed the length and character constraints for user passwords in your Office 365 organization.|
+|Added domain to company|Add domain to company|Added a domain to your organization.|
+|Added a partner to the directory|Add partner to company|Added a partner (delegated administrator) to your organization.|
+|Removed domain from company|Remove domain from company|Removed a domain from your organization.|
+|Removed a partner from the directory|Remove partner from company|Removed a partner (delegated administrator) from your organization.|
+|Set company information|Set company information|Updated the company information for your organization. This includes email addresses for subscription-related email sent by Office 365, and technical notifications about Office 365 services.|
+|Set domain authentication|Set domain authentication|Changed the domain authentication setting for your organization.|
+|Updated the federation settings for a domain|Set federation settings on domain|Changed the federation (external sharing) settings for your organization.|
+|Set password policy|Set password policy|Changed the length and character constraints for user passwords in your organization.|
 |Turned on Azure AD sync|Set DirSyncEnabled flag on company|Set the property that enables a directory for Azure AD Sync.|
-|Updated domain|Update domain|Updated the settings of a domain in your Office 365 organization.|
+|Updated domain|Update domain|Updated the settings of a domain in your organization.|
 |Verified domain|Verify domain|Verified that your organization is the owner of a domain.|
 |Verified email verified domain|Verify email verified domain|Used email verification to verify that your organization is the owner of a domain.|
 ||||
@@ -707,7 +707,7 @@ Audit logging for Power BI isn't enabled by default. To search for Power BI acti
 
 ### Microsoft Workplace Analytics activities
 
-Workplace Analytics provides insight into how groups collaborate across your Office 365 organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
+Workplace Analytics provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -930,7 +930,7 @@ No. These are the only two ways to get data from the Office 365 auditing service
 
 **Do I need to individually enable auditing in each service that I want to capture audit logs for?**
 
-In most Office 365 services, auditing is enabled by default after you initially turn on auditing for your Office 365 organization (as described in the [Before you begin](#before-you-begin) section in this article).
+In most Office 365 services, auditing is enabled by default after you initially turn on auditing for your organization (as described in the [Before you begin](#before-you-begin) section in this article).
 
 **Does the Office 365 auditing service support de-duplication of records?**
 

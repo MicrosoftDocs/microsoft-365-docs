@@ -44,7 +44,7 @@ Office 365 Message Encryption leverages the protection capabilities in Azure Inf
 
 ## Does this impact me?
 
-If your Office 365 organization has purchased an eligible Office 365 license, then your tenant will be impacted by this change.
+If your organization has purchased an eligible Office 365 license, then your tenant will be impacted by this change.
 
  **IMPORTANT!** If you're using Active Directory Rights Management Services (AD RMS) in your on-premises environment, you must either opt-out of this change immediately or migrate to Azure Information Protection before we roll out this change within the next 30 days. For information on how to opt-out, see "I use AD RMS, how do I opt out?" later in this article. If you prefer to migrate, see [Migrating from AD RMS to Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
@@ -68,7 +68,7 @@ For more information about these registry configurations, see [Enabling client-s
 
 To opt out of the upcoming change, complete these steps:
 
-1. Using a work or school account that has global administrator permissions in your Office 365 organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Run the Set-IRMConfiguration cmdlet using the following syntax:
 

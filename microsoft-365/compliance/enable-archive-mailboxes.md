@@ -142,4 +142,4 @@ Run the following command to disable the archive mailbox for all users in your o
     
   - [Default Retention Policy in Exchange Online ](https://go.microsoft.com/fwlink/?linkid=839418)
     
-  - [Set up an archive and deletion policy for mailboxes in your Office 365 organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+  - [Set up an archive and deletion policy for mailboxes in your organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

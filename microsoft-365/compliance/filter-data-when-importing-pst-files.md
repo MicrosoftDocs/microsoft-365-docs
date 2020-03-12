@@ -57,7 +57,7 @@ The following graphic shows the Intelligent Import process, and highlights the t
 
 After you've created a PST import job, follow these steps to filter the data before you import it to Office 365.
   
-1. Go to [https://protection.office.com/](https://protection.office.com/) and sign in using the credentials for an administrator account in your Office 365 organization. 
+1. Go to [https://protection.office.com/](https://protection.office.com/) and sign in using the credentials for an administrator account in your organization. 
     
 2. Click **Information governance** \> **Import** \> **Import PST files**.
     

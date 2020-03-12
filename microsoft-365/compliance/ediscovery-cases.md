@@ -287,7 +287,7 @@ After an eDiscovery case is created and any custodians related to the case are p
     
 10. After you select the content locations to search, click **Done** and then click **Save**.
     
-11. On the **New search** page, click **Save** and then type a name for the search. Content Searches associated with a case must have names that are unique within your Office 365 organization. 
+11. On the **New search** page, click **Save** and then type a name for the search. Content Searches associated with a case must have names that are unique within your organization. 
     
 12. Click **Save &amp; run** to save the search settings. 
     

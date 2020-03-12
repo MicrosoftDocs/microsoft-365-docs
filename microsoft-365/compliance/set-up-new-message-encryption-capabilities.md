@@ -16,14 +16,14 @@ ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
-description: "New Office 365 Message Encryption capabilities built on top of Azure Information Protection, your organization can use protected email communication with people inside and outside your organization. The new OME capabilities work with other Office 365 organizations, Outlook.com, Gmail, and other email services."
+description: "New Office 365 Message Encryption capabilities built on top of Azure Information Protection, your organization can use protected email communication with people inside and outside your organization. The new OME capabilities work with other organizations, Outlook.com, Gmail, and other email services."
 ---
 
 # Set up new Office 365 Message Encryption capabilities
 
-The new Office 365 Message Encryption (OME) capabilities allow organizations to share protected email with anyone on any device. Users can exchange protected messages with other Office 365 organizations, as well as non-Office 365 customers using Outlook.com, Gmail, and other email services.
+The new Office 365 Message Encryption (OME) capabilities allow organizations to share protected email with anyone on any device. Users can exchange protected messages with other organizations, as well as non-Office 365 customers using Outlook.com, Gmail, and other email services.
 
-Follow the steps below to ensure that the new OME capabilities are available in your Office 365 organization.
+Follow the steps below to ensure that the new OME capabilities are available in your organization.
 
 ## Verify that Azure Rights Management is active
 
@@ -94,7 +94,7 @@ You can verify that your Office 365 tenant is properly configured to use the new
             OVERALL RESULT: PASS
      ```
 
-   - Your Office 365 organization name will replace *Contoso*.
+   - Your organization name will replace *Contoso*.
 
    - The default template names may be different from those displayed above. See [Configuring and managing templates for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-templates) for more.
 
@@ -106,7 +106,7 @@ You can verify that your Office 365 tenant is properly configured to use the new
 
 ## Next steps: Define mail flow rules to use new OME capabilities
 
-If there are previously configured mail flow rules to encrypt email in your Office 365 organization, you need to update the existing rules to use the new OME capabilities. For new deployments, you need to create new mail flow rules.
+If there are previously configured mail flow rules to encrypt email in your organization, you need to update the existing rules to use the new OME capabilities. For new deployments, you need to create new mail flow rules.
 
 >[!IMPORTANT]
 >If you do not update existing mail flow rules, your users will continue to receive encrypted mail that uses the previous HTML attachment format, instead of the new seamless OME experience.

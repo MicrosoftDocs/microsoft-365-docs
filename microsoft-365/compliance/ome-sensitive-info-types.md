@@ -29,7 +29,7 @@ Sign in to the Exchange admin center (EAC) and go to **Mail flow** > **Rules**. 
 
 ### To create the policy by using mail flow rules in PowerShell
 
-Use a work or school account that has global administrator permissions in your Office 365 organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell). Use the Set-IRMConfiguration and New-TransportRule cmdlets to create the policy.
+Use a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell). Use the Set-IRMConfiguration and New-TransportRule cmdlets to create the policy.
 
 ## Example mail flow rule created with PowerShell
 

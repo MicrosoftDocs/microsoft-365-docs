@@ -25,7 +25,7 @@ description: "Set up email forwarding to one or more email accounts using Office
 
 # Configure email forwarding in Office 365
   
-As the admin of an Office 365 organization, you might have company requirements to set up email forwarding for a user's mailbox. Email forwarding lets you forward email messages sent to a user's mailbox to another user's mailbox inside or outside of your organization.
+As the admin of an organization, you might have company requirements to set up email forwarding for a user's mailbox. Email forwarding lets you forward email messages sent to a user's mailbox to another user's mailbox inside or outside of your organization.
 
   
 ## Configure email forwarding

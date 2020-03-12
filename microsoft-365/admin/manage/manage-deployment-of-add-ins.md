@@ -25,7 +25,7 @@ description: "Learn to deploy add-ins to users and groups in your organization b
 
 Office add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). As an admin, you can deploy Office add-ins for the users in your organization. You can do this using the Centralized Deployment feature in the Microsoft 365 admin center.
   
-Centralized Deployment is the recommended and most feature-rich way for most admins to deploy add-ins to users and groups within an organization. For more information on how to determine if your organization can support Centralized Deployment, see [Determine if Centralized Deployment of add-ins works for your Office 365 organization](centralized-deployment-of-add-ins.md).
+Centralized Deployment is the recommended and most feature-rich way for most admins to deploy add-ins to users and groups within an organization. For more information on how to determine if your organization can support Centralized Deployment, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
   
 Centralized Deployment provides the following benefits:
   
@@ -52,7 +52,7 @@ Depending on the size of the target audience, you may want to add or remove roll
   
 ## Deploy an Office add-in using the admin center
 
-Before you begin, see [Determine if Centralized Deployment of add-ins works for your Office 365 organization](centralized-deployment-of-add-ins.md).
+Before you begin, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
 
   
 1. In the admin center, go to the **Settings** \> **Add-ins** page.

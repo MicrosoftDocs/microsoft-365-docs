@@ -15,7 +15,7 @@ description: "Admins can learn about the mail flow dashboard in the Security & C
 
 # Mail flow insights in the Security & Compliance Center
 
-Admins can use mail flow dashboard in the Security & Compliance Center to discover trends, insights and take actions to fix issues related to mail flow in their Office 365 organization.
+Admins can use mail flow dashboard in the Security & Compliance Center to discover trends, insights and take actions to fix issues related to mail flow in their organization.
 
 The insights, reports, and widgets that are available in the mail flow dashboard are:
 

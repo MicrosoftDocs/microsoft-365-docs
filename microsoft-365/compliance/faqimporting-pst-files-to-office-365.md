@@ -38,7 +38,7 @@ Additionally, to create import jobs in the Security & Compliance Center, one of 
     
     Or
     
-- You have to be a global administrator in your Office 365 organization.
+- You have to be a global administrator in your organization.
     
 > [!TIP]
 > Consider creating a new role group in Exchange Online that's specifically intended for importing PST files to Office 365. For the minimum level of privileges required to import PST files, assign the Mailbox Import Export and Mail Recipients roles to the new role group, and then add members. 
@@ -112,7 +112,7 @@ Additionally, to create import jobs in the Security & Compliance Center, one of 
     
     Or
     
-- You have to be a global administrator in your Office 365 organization.
+- You have to be a global administrator in your organization.
     
 > [!TIP]
 > Consider creating a new role group in Exchange Online that's specifically intended for importing PST files to Office 365. For the minimum level of privileges required to import PST files, assign the Mailbox Import Export and Mail Recipients roles to the new role group, and then add members. 

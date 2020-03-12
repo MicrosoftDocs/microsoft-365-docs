@@ -68,7 +68,7 @@ After the mailbox is placed on hold or an Office 365 retention policy is applied
 
 To view a list of the inactive mailboxes in your organization:
   
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your Office 365 organization. 
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your organization. 
     
 2. Click **Information governance** > **Retention**.
     

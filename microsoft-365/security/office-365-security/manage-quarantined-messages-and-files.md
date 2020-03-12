@@ -42,7 +42,7 @@ The Security & Compliance role groups that give permissions to manage quarantine
 
 ## View your organization's quarantined messages
 
-1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your Office 365 organization, sign into Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign into Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
 2. In the list on the left, expand **Threat Management**, choose **Review**, and then choose **Quarantine**.
 
@@ -71,7 +71,7 @@ After you find a specific quarantined message, click the message to view details
 
 ## View your organization's quarantined files
 
-1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your Office 365 organization, sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
 2. On the left, expand **Threat Management**, choose **Review**, and then choose **Quarantine**.
 
@@ -203,7 +203,7 @@ You can configure how long messages and files will remain in quarantine before t
 
 ### To modify the quarantine retention period for the default spam filter policy in the Security and Compliance Center
 
-1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your Office 365 organization, sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
 2. On the left, expand **Threat Management**, choose **Policy**, and then choose **Anti-spam**.
 

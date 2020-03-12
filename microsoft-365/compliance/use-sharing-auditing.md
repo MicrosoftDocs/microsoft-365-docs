@@ -24,7 +24,7 @@ description: "Sharing is a key activity in SharePoint Online and OneDrive for Bu
 
 # Use sharing auditing in the audit log
 
-Sharing is a key activity in SharePoint Online and OneDrive for Business, and it's widely used in Office 365 organizations. Administrators can use sharing auditing in the audit log to determine how sharing is used in their organization. 
+Sharing is a key activity in SharePoint Online and OneDrive for Business, and it's widely used in organizations. Administrators can use sharing auditing in the audit log to determine how sharing is used in their organization. 
   
 ## The SharePoint Sharing schema
 

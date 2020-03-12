@@ -63,7 +63,7 @@ The Microsoft Office 365 services are also available in the following national c
 
 ### Hybrid deployments
 
-Your Office 365 organization may consist of Microsoft offerings that are a combination of cloud-based services and on-premises server products. In general, a hybrid deployment is typically the sharing of user accounts (identity management) and resources (such as mailboxes, web sites, and data) that exist in the cloud and on-premises. Common hybrid scenarios include:
+Your organization may consist of Microsoft offerings that are a combination of cloud-based services and on-premises server products. In general, a hybrid deployment is typically the sharing of user accounts (identity management) and resources (such as mailboxes, web sites, and data) that exist in the cloud and on-premises. Common hybrid scenarios include:
 
 - Exchange hybrid deployments, where some users have an on-premises mailbox and other users have Exchange Online mailboxes.
 - SharePoint hybrid deployments, where site and file servers are on-premises and OneDrive for Business accounts are in Office 365.
@@ -552,7 +552,7 @@ Here's a quick overview of this process:
 1. Create and run a Content Search to find the items that you want to delete from the user mailbox. You may have to rerun the search to narrow that search results so that only the items that you want to delete are returned in the search results.
 2. Use the **New-ComplianceSearchAction** **-Purge** command in Office 365 PowerShell to soft-delete that are  returned by the Content Search that was created in the previous step.
 
-For detailed instructions, see [Search for and delete email messages in your Office 365 organization](https://support.office.com/article/Search-for-and-delete-email-messages-in-your-Office-365-organization-Admin-Help-3526fd06-b45f-445b-aed4-5ebd37b3762a).
+For detailed instructions, see [Search for and delete email messages in your organization](https://support.office.com/article/Search-for-and-delete-email-messages-in-your-Office-365-organization-Admin-Help-3526fd06-b45f-445b-aed4-5ebd37b3762a).
 
 #### Hard-delete mailbox items
 
@@ -595,7 +595,7 @@ Like the soft-deletion and hard-deletion of data that was described in the previ
 - When you initially delete a user account (by deleting the user in the admin center or in the Azure portal), the user account is soft-deleted, and moved the Recycle Bin in Azure for up to 30 days. At this point, the user account can be restored.
 - If you permanently deleted the user account, the user account is hard-deleted and removed from the Recycle Bin in Azure. At this point, the user account can't be restored, and any data associated with the user account will be permanently removed from the Microsoft cloud. System-generated logs about the data subject will be deleted after the user account is hard-deleted.
 
-Here's the high-level process for deleting a user from your Office 365 organization.
+Here's the high-level process for deleting a user from your organization.
 
 1. Go to the admin center or the Azure portal and locate the user.
 
@@ -613,7 +613,7 @@ You can't hard-delete a user in the Office 365 admin portal.
 One thing to understand when deleting a user is what happens to the user's Exchange Online mailbox. After the user account is hard-deleted (in step 3 in the previous process) the deleted user's mailbox isn't automatically purged from Office 365. It takes up to 60 days after the user account is hard-deleted to permanently remove it from Office 365. Here's the mailbox lifecycle after the user account is deleted and a description of the state of the mailbox data during that time:
 
 - **Day 1 — Day 30** — The mailbox can be fully restored by restoring the soft-deleted user account.
-- **Day 31 — Day 60** — For 30 days after the user account is hard-deleted, an admin in your organization can recover the data in the mailbox and import it into a different mailbox. This provides Office 365 organizations the ability to recover the mailbox data if necessary.
+- **Day 31 — Day 60** — For 30 days after the user account is hard-deleted, an admin in your organization can recover the data in the mailbox and import it into a different mailbox. This provides organizations the ability to recover the mailbox data if necessary.
 - **Day 61 – Day 90** - An admin can no longer recover the data in the mailbox. The mailbox data will be marked for permanent removal, and it takes up to 30 more days for the mailbox data to be purged from Office 365.
 
 If you determine that this mailbox lifecycle doesn't meet your organization's requirements for responding to a DSR deletion request, you can [contact Microsoft Support](https://support.microsoft.com/) *after* you hard-delete the user account, and request Microsoft to manually initiate the process to permanently remove the mailbox data. This process to permanently remove mailbox data starts automatically after day 61 in the lifecycle, so there would be no reason to contact Microsoft after this point in the lifecycle.
@@ -923,7 +923,7 @@ To add yourself as an owner of a flow.
 
 1. Go to <https://admin.flow.microsoft.com>
 2. Sign in with your Office 365 credentials.
-3. On the **Environments** page, click the environment for the flows that you want to access. Office 365 organizations have a default environment.
+3. On the **Environments** page, click the environment for the flows that you want to access. organizations have a default environment.
 4. On the page for the environment that you selected, click **Resources**, and then click **Flows.** A list of all flows in the environment is displayed.
 5. Click **View details** for the flow that you want to add yourself as a member.
 6. Under **Owners**, click **Manage sharing**.

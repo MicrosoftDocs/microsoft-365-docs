@@ -159,7 +159,7 @@ The following table describes the properties that are included when you click **
 |ClientRequestId  <br/> | For eDiscovery activities, this property is typically blank.  <br/> |
 |CmdletVersion  <br/> |The build number for the version of the Security & Compliance Center running in your organization.  <br/> |
 |CreationTime  <br/> |The date and time in Coordinated Universal Time (UTC) when the eDiscovery activity was completed.  <br/> |
-|EffectiveOrganization  <br/> |The name of the your Office 365 organization.  <br/> |
+|EffectiveOrganization  <br/> |The name of the your organization.  <br/> |
 |ExchangeLocations  <br/> |The Exchange Online mailboxes that are included in a content search or placed on hold in an eDiscovery case.  <br/> |
 |Exclusions  <br/> |Mailbox or site locations that are excluded from a content search or a hold in an eDiscovery case.  <br/> |
 |ExtendedProperties  <br/> |Additional properties from a content search, a content search action, or hold in an eDiscovery case, such as the object GUID and the corresponding cmdlet and cmdlet parameters that were used when the activity was performed.  <br/> |
@@ -168,7 +168,7 @@ The following table describes the properties that are included when you click **
 |ObjectId  <br/> |The GUID or name of the object (for example, a Content Search or an eDiscovery case) that was created, changed, or deleted by the activity listed in the Operation property. This object is also identified in the Item column in the audit log search results.  <br/> |
 |ObjectType  <br/> |The type of eDiscovery object that the user created, deleted, or modified; for example a content search action (preview, export, or purge), an eDiscovery case, or a content search.  <br/> |
 |Operation  <br/> |The name of the operation that corresponds to the eDiscovery activity that was performed.  <br/> |
-|OrganizationId  <br/> |The GUID for your Office 365 organization.  <br/> |
+|OrganizationId  <br/> |The GUID for your organization.  <br/> |
 |Parameters  <br/> |The name and value for the parameters that were used with the corresponding cmdlet.  <br/> |
 |PublicFolderLocations  <br/> |The public folder locations in Exchange Online that are included in a content search or placed on hold in an eDiscovery case.  <br/> |
 |Query  <br/> |The search query associated with the activity, such as a content search or a query-based hold.  <br/> |

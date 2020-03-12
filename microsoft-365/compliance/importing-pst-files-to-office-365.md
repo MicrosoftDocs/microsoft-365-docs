@@ -25,11 +25,11 @@ description: "For administrators: Learn about using the Import service in the Se
 > [!NOTE]
 > This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)
 
-You can use the Import service in the Security & Compliance Center to quickly bulk-import PST files to Exchange Online mailboxes in your Office 365 organization. There are two ways you can import PST files to Office 365:
+You can use the Import service in the Security & Compliance Center to quickly bulk-import PST files to Exchange Online mailboxes in your organization. There are two ways you can import PST files to Office 365:
 
-- **Network upload** ![Cloud upload](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - Upload the PST files over the network to a temporary Azure Storage location in the Microsoft cloud. Then you use the Office 365 Import service to import the PST data to mailboxes in your Office 365 organization. 
+- **Network upload** ![Cloud upload](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - Upload the PST files over the network to a temporary Azure Storage location in the Microsoft cloud. Then you use the Office 365 Import service to import the PST data to mailboxes in your organization. 
 
-- **Drive shipping** ![Hard disk](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - Copy the PST files to a BitLocker-encrypted hard drive and then physically ship the drive to Microsoft. When Microsoft receives the hard drive, data center personnel upload the data to a temporary Azure Storage location in the Microsoft cloud. Then you use the Office 365 Import service to import the data to mailboxes in your Office 365 organization.
+- **Drive shipping** ![Hard disk](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - Copy the PST files to a BitLocker-encrypted hard drive and then physically ship the drive to Microsoft. When Microsoft receives the hard drive, data center personnel upload the data to a temporary Azure Storage location in the Microsoft cloud. Then you use the Office 365 Import service to import the data to mailboxes in your organization.
 
 ## Step-by-step instructions
   
@@ -49,7 +49,7 @@ Here's an illustration and description of the complete PST import process. The i
     
 2. **Upload or copy the PST files** - The next step depends on whether you're using network upload or drive shipping to import PST files. In both cases, you'll use the tool and secure storage key that you obtained in the previous step.
     
-    - **Network upload:** The AzCopy.exe tool (downloaded in step 1) is used to upload and store your PST files in an Azure Storage location in the Microsoft cloud. The Azure Storage location that you upload your PST files to resides in the same regional Microsoft datacenter where your Office 365 organization is located.
+    - **Network upload:** The AzCopy.exe tool (downloaded in step 1) is used to upload and store your PST files in an Azure Storage location in the Microsoft cloud. The Azure Storage location that you upload your PST files to resides in the same regional Microsoft datacenter where your organization is located.
     
       To upload them, the PST files that you want to import to Office 365 have to be located in a file share or file server in your organization.
     
@@ -63,7 +63,7 @@ Here's an illustration and description of the complete PST import process. The i
     
     - You physically ship the hard drive to a Microsoft data center (the shipping address for the Microsoft data center is displayed when the import job is created).
     
-    - When Microsoft receives the hard drive, data center personnel will upload the PST files on the hard drive to the Azure Storage location for your organization. As previously explained, your PST files are uploaded to a Azure Storage location that resides in the same regional Microsoft datacenter where your Office 365 organization is located.
+    - When Microsoft receives the hard drive, data center personnel will upload the PST files on the hard drive to the Azure Storage location for your organization. As previously explained, your PST files are uploaded to a Azure Storage location that resides in the same regional Microsoft datacenter where your organization is located.
     
       > [!NOTE]
       > The PST files on the hard drive are uploaded to Azure within 7 to 10 business days after Microsoft receives the hard drive.
@@ -102,7 +102,7 @@ Here's an illustration and description of the complete PST import process. The i
     
 ## Importing SharePoint data to Office 365
 
-You can also import files and documents to SharePoint sites and OneDrive accounts in your Office 365 organization. For more information, see the following articles:
+You can also import files and documents to SharePoint sites and OneDrive accounts in your organization. For more information, see the following articles:
 
 - [Migrate to SharePoint Online](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
 
@@ -133,7 +133,7 @@ Additionally, to create import jobs in the Security & Compliance Center, one of 
 
     Or
     
-- You have to be a global administrator in your Office 365 organization.
+- You have to be a global administrator in your organization.
 
 > [!TIP]
 > Consider creating a new role group in Exchange Online that's specifically intended for importing PST files to Office 365. For the minimum level of privileges required to import PST files, assign the Mailbox Import Export and Mail Recipients roles to the new role group, and then add members. 
@@ -205,7 +205,7 @@ Additionally, to create import jobs in the Security & Compliance Center, one of 
     
     Or
     
-- You have to be a global administrator in your Office 365 organization.
+- You have to be a global administrator in your organization.
     
 > [!TIP]
 > Consider creating a new role group in Exchange Online that's specifically intended for importing PST files to Office 365. For the minimum level of privileges required to import PST files, assign the Mailbox Import Export and Mail Recipients roles to the new role group, and then add members. 

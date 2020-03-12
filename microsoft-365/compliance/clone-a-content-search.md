@@ -45,7 +45,7 @@ Why clone Content Searches?
 
 The script in this step will create a new Content Search by cloning an existing one. When you run this script, you'll be prompted for the following information:
   
-- **Your user credentials** - The script will use your credentials to connect to the Security & Compliance Center for your Office 365 organization with Windows PowerShell. As previously stated, you have to be a member of the eDiscovery Manager role group in the Security & compCompliance Center to run the script. 
+- **Your user credentials** - The script will use your credentials to connect to the Security & Compliance Center for your organization with Windows PowerShell. As previously stated, you have to be a member of the eDiscovery Manager role group in the Security & compCompliance Center to run the script. 
     
 - **The name of the existing search** - This is the Content Search that you want to clone. 
     

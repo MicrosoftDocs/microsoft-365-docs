@@ -23,7 +23,7 @@ description: "Determine if your Office 365 tenant and users meet the requirement
 
 # Determine if Centralized Deployment of add-ins works for your organization
 
-Centralized Deployment is the recommended and most feature-rich way for most customers to deploy Office add-ins to users and groups within your Office 365 organization. If you're an admin, use this guidance to determine if your tenant and users meet the requirements so that you can use Centralized Deployment.
+Centralized Deployment is the recommended and most feature-rich way for most customers to deploy Office add-ins to users and groups within your organization. If you're an admin, use this guidance to determine if your tenant and users meet the requirements so that you can use Centralized Deployment.
 Centralized Deployment supports Windows, Mac, iOS, Android and Online Office apps.
 It can take up to 12 hours for an add-in to show up for client for all users.
   

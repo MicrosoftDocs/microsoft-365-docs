@@ -18,7 +18,7 @@ description: "This article gives you information on managing settings for your u
 
 # Office 365 user email settings
 
-As the admin of an Office 365 organization, there are email settings you can manage on your users. This article gives you information on managing these settings.
+As the admin of an organization, there are email settings you can manage on your users. This article gives you information on managing these settings.
 
 ## Summary of email settings
 

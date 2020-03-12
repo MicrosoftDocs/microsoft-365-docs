@@ -52,11 +52,11 @@ There are several things you need to do if your tenant is blocked from sending e
 
 1. Change the password for your admin accounts. If a tenant is blocked from sending, it's most likely that an admin account was compromised. Changing passwords is the first step to prevent the attacker from doing more harm.
 
-2. [Enable MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) for all admins in your Office 365 organization.
+2. [Enable MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) for all admins in your organization.
 
 3. Verify that all of your email domains are registered. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) and [Manage accepted domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-4. Look for unusual [connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow). Malicious actors will often create new inbound connectors in your Office 365 organization to send spam. To view your existing connectors, see [Validate connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
+4. Look for unusual [connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow). Malicious actors will often create new inbound connectors in your organization to send spam. To view your existing connectors, see [Validate connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
 5. Check for compromised users as described in [Responding to a compromised email account in Office 365](responding-to-a-compromised-email-account.md).
 

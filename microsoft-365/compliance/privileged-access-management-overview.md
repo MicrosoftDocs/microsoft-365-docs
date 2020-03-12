@@ -80,7 +80,7 @@ Privileged access management will be available in other Office 365 workloads soo
 
 ### My organization needs more than 30 privileged access policies, will this limit be increased?
 
-Yes, raising the current limit of 30 privileged access policies per Office 365 organization is on the feature roadmap.
+Yes, raising the current limit of 30 privileged access policies per organization is on the feature roadmap.
 
 ### Do I need to be a Global Admin to manage privileged access in Office 365?
 

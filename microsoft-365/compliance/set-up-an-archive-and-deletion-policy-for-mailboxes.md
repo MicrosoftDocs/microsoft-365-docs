@@ -1,5 +1,5 @@
 ---
-title: "Set up an archive and deletion policy for mailboxes in your Office 365 organization"
+title: "Set up an archive and deletion policy for mailboxes in your organization"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,7 +21,7 @@ ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: "Create an archiving and deletion policy in Office 365  that automatically moves items to a user's archive mailbox."
 ---
 
-# Set up an archive and deletion policy for mailboxes in your Office 365 organization
+# Set up an archive and deletion policy for mailboxes in your organization
 
  In Office 365, admins can create an archiving and deletion policy that automatically moves items to a user's archive mailbox and automatically deletes items from the mailbox. The admin does this by creating a retention policy that's assigned to mailboxes, and moves items to a user's archive mailbox after a certain period of time and that also deletes items from the mailbox after they reach a certain age limit. The actual rules that determine what items are moved or deleted and when that happens are called retention tags. Retention tags are linked to a retention policy, that in turn is assigned to a user's mailbox. A retention tag applies retention settings to individual messages and folders in a user's mailbox. It defines how long a message remains in the mailbox and what action is taken when the message reaches the specified retention age. When a message reaches its retention age, it's either moved to the user's archive mailbox or it's deleted. 
   
@@ -43,7 +43,7 @@ You can follow some or all of the steps in this article to set up an archive and
   
 ## Before you begin
 
-- You have to be a global administrator in your Office 365 organization to perform the steps in this topic. 
+- You have to be a global administrator in your organization to perform the steps in this topic. 
     
 -  When you create a new user account in Office 365 and assign the user an Exchange Online license, a mailbox is automatically created for the user. When the mailbox is created, it's automatically assigned a default retention policy, named Default MRM Policy. In this article, you will create a new retention policy and then assign it to user mailboxes, replacing the Default MRM policy. A mailbox can have only one retention policy assigned to it at any one time.
     

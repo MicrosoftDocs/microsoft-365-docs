@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
-description: "Learn how to configure Domain-based Message Authentication, Reporting, and Conformance (DMARC) to validate messages sent from your Office 365 organization."
+description: "Learn how to configure Domain-based Message Authentication, Reporting, and Conformance (DMARC) to validate messages sent from your organization."
 ---
 
 # Use DMARC to validate email in Office 365

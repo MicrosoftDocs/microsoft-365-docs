@@ -23,7 +23,7 @@ description: "Learn how to add an Office 365 user or contact to a distribution g
 
 # Add a user or contact to an Office 365 distribution group
 
-As the admin of an Office 365 organization, you may need to add one of your users or contacts to a distribution group (see [Create distribution groups in Office 365](../setup/create-distribution-lists.md).) For example, you can add employees or external partners or vendors to an email distribution group.
+As the admin of an organization, you may need to add one of your users or contacts to a distribution group (see [Create distribution groups in Office 365](../setup/create-distribution-lists.md).) For example, you can add employees or external partners or vendors to an email distribution group.
   
 ## Add a user or contact to a distribution group
 

@@ -92,7 +92,7 @@ Note that the following roles aren't assigned to the Organization Management rol
 
 |**Role**|**Description**|**Default role group assignments**|
 |:-----|:-----|:-----|
-|**Audit Logs**|Turn on and configure auditing for the Office 365 organization, view the organization's audit reports, and then export these reports to a file.|Organization Management <br/><br/> Records Management <br/><br/> Security Administrator|
+|**Audit Logs**|Turn on and configure auditing for the organization, view the organization's audit reports, and then export these reports to a file.|Organization Management <br/><br/> Records Management <br/><br/> Security Administrator|
 |**Case Management**|Create, edit, delete, and control access to eDiscovery cases.|Compliance Administrator <br/><br/> eDiscovery Manager <br/><br/> Organization Management|
 |**Communication**|Manage all communications with the custodians identified in an Advanced eDiscovery case.  Create hold notifications, hold reminders, and escalations to management. Track custodian acknowledgement of hold notifications and manage access to the custodian portal that is used by each custodian in a case to track communications for the cases where they were identified as a custodian.|eDiscovery Manager|
 |**Compliance Administrator**|View and edit settings and reports for compliance features.|Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management|

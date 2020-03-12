@@ -32,7 +32,7 @@ Here are some of the key tasks users can do when they are assigned to the Exchan
   
 - [Recover deleted items in a user mailbox - Admin Help](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
     
-- [Set up an archive and deletion policy for mailboxes in your Office 365 organization](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
+- [Set up an archive and deletion policy for mailboxes in your organization](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
     
 - Set up mailbox features such as the mailbox sharing policy: how users can share calendar and contacts information with others outside of your organization. 
     

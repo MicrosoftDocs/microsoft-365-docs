@@ -70,7 +70,7 @@ You can review the senders who are spoofing your domain, or external domains, an
 
 1. Go to the [Security &amp; Compliance Center](https://protection.office.com).
 
-2. Sign in to Office 365 with your work or school account. Your account must have administrator credentials in your Office 365 organization.
+2. Sign in to Office 365 with your work or school account. Your account must have administrator credentials in your organization.
 
 3. In the Security &amp; Compliance Center, expand **Threat Management** \> **Policy** \> **Anti-spam**.
 
@@ -103,7 +103,7 @@ If you have an Office 365 Enterprise E5 subscription or have separately purchase
 
 In addition to allowing or blocking a particular sender from sending spoofed email into your organization, you can also configure how strict you want the filter to be, and the action to take when a spoofing message is found.
 
-Anti-spoofing protection is applied to email from senders from domains that are external to your Office 365 organization. You can apply the policy to recipients whose mailboxes are licensed for Office 365 Enterprise E5, Advanced Threat Protection and as of October, 2018 EOP customers as well. You manage the anti-spoofing policy along with the other anti-phishing settings. For more information about anti-phishing settings, see [Set up Office 365 ATP anti-phishing and anti-phishing policies](set-up-anti-phishing-policies.md).
+Anti-spoofing protection is applied to email from senders from domains that are external to your organization. You can apply the policy to recipients whose mailboxes are licensed for Office 365 Enterprise E5, Advanced Threat Protection and as of October, 2018 EOP customers as well. You manage the anti-spoofing policy along with the other anti-phishing settings. For more information about anti-phishing settings, see [Set up Office 365 ATP anti-phishing and anti-phishing policies](set-up-anti-phishing-policies.md).
 
 Office 365 includes default anti-spoofing protection that's always running. This default protection is not visible in the Security &amp; Compliance Center or retrievable through Windows PowerShell cmdlets. You can't modify the default anti-spoofing protection. Instead, you can configure how strictly Office 365 enforces the anti-spoofing protection in each anti-phishing policy that you create.
 
@@ -113,7 +113,7 @@ Even though the anti-spoofing policy appears under the anti-phishing policy in t
 
 1. Go to the [Security &amp; Compliance Center](https://protection.office.com).
 
-2. Sign in to Office 365 with your work or school account. Your account must have administrator credentials in your Office 365 organization.
+2. Sign in to Office 365 with your work or school account. Your account must have administrator credentials in your organization.
 
 3. In the Security &amp; Compliance Center, expand **Threat Management** \> **Policy** \> **Anti-phishing**.
 

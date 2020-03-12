@@ -52,9 +52,9 @@ You must file a request with Microsoft Support to enable your organization to us
   
 Include the following information when you submit the request to Microsoft Support:
   
-- The default domain name of your Office 365 organization.
+- The default domain name of your organization.
 
-- The tenant name and tenant ID of your Office 365 organization. You can find these in the Azure Active Directory portal (under **Manage** \> **Properties**). See [Find your Office 365 tenant ID](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
+- The tenant name and tenant ID of your organization. You can find these in the Azure Active Directory portal (under **Manage** \> **Properties**). See [Find your Office 365 tenant ID](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
 
 - The following title or description of the purpose of the support request: "Enable Application Content Search for On-premises Users". This helps route the request to the Office 365 eDiscovery engineering team who will implement the request.
 
@@ -62,7 +62,7 @@ After the engineering change is made, Microsoft Support will send you an estimat
   
 ### What happens after this feature is enabled?
 
-After this feature is deployed in your Office 365 organization, the following changes are made in Content Search and in searches associated with an eDiscovery case in the Security & Compliance Center:
+After this feature is deployed in your organization, the following changes are made in Content Search and in searches associated with an eDiscovery case in the Security & Compliance Center:
   
 - The **Add Office app content for on-premises users** checkbox is added under the **Locations** in Content Search.
 
@@ -138,7 +138,7 @@ For more information using these cmdlets, see:
 
  **Where are cloud-based mailboxes for on-premises users located?**
   
-Cloud-based mailboxes are created and stored in the same datacenter as your Office 365 organization.
+Cloud-based mailboxes are created and stored in the same datacenter as your organization.
   
  **Are there any other requirements other than submitting a support request?**
   

@@ -23,7 +23,7 @@ Office 365 requires messages sending from internal on-premises email environment
 
 - In your configuration, one of the following statements is true:
 
-  - The sender's email domain is registered in your Office 365 organization. For more information, see Add Domains in Office 365.
+  - The sender's email domain is registered in your organization. For more information, see Add Domains in Office 365.
 
   - Your on-premises email server is configured to use a certificate to send email to Office 365, the certificate contains or exactly matches a domain name that you've registered in Office 365, and you've created a certificate based connector in Office 365 with that domain. 
 

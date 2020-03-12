@@ -48,7 +48,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 ## Best practices to stay protected
 
-- On a monthly basis, run [Secure Score](../mtp/microsoft-secure-score.md) to assess your Office 365 organization's security settings.
+- On a monthly basis, run [Secure Score](../mtp/microsoft-secure-score.md) to assess your organization's security settings.
 
 - Periodically review the [Spoof intelligence report](learn-about-spoof-intelligence.md) and [enable anti-spoofing protection in the anti-phishing policy](learn-about-spoof-intelligence.md#configuring-the-anti-spoofing-policy) to **quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
 
