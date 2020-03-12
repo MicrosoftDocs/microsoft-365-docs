@@ -62,7 +62,7 @@ In addition to the [required licenses and permissions](information-barriers.md#r
 
 - **Scoped directory search**. Before you define your organization's first information barrier policy, you must [enable scoped directory search in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Wait at least 24 hours after enabling scoped directory search before you set up or define information barrier policies.
 
-- **Audit logging**. In order to look up the status of a policy application, audit logging must be turned on. We recommend doing this before you begin to define segments or policies. To learn more, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).
+- **Audit logging**. In order to look up the status of a policy application, audit logging must be turned on. We recommend doing this before you begin to define segments or policies. To learn more, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
 
 - **No address book policies**. Before you define and apply information barrier policies, make sure no Exchange address book policies are in place. (Information barriers are based on address book policies, but the two kinds of policies are not interchangeable.) If you do have such policies, make sure to [remove your address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) first.
 

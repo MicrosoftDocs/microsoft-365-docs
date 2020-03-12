@@ -1,5 +1,5 @@
 ---
-title: "Search for eDiscovery activities in the Office 365 audit log"
+title: "Search for eDiscovery activities in the audit log"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: "Learn how to search the Office 365 audit log for events that are logged when compliance administrators perform Content Search and eDiscovery case tasks in the Security & Compliance Center."
+description: "Learn how to search the audit log for events that are logged when compliance administrators perform Content Search and eDiscovery case tasks in the Security & Compliance Center."
 ---
 
-# Search for eDiscovery activities in the Office 365 audit log
+# Search for eDiscovery activities in the audit log
 
-Content Search and eDiscovery-related activities that are performed in Security & Compliance Center or by running the corresponding Windows PowerShell cmdlets are logged in the Office 365 audit log. Events are logged when administrators or compliance administrators (or any user that's assigned eDiscovery permissions) perform the following Content Search and eDiscovery-related tasks in the Security & Compliance Center:
+Content Search and eDiscovery-related activities that are performed in Security & Compliance Center or by running the corresponding Windows PowerShell cmdlets are logged in the audit log. Events are logged when administrators or compliance administrators (or any user that's assigned eDiscovery permissions) perform the following Content Search and eDiscovery-related tasks in the Security & Compliance Center:
   
 - Creating and managing eDiscovery cases
     
@@ -33,11 +33,11 @@ Content Search and eDiscovery-related activities that are performed in Security 
 > [!IMPORTANT]
 > The activities described in this article are only the result of eDiscovery tasks performed by using the Security & Compliance Center. eDiscovery tasks that were performed by using the In-Place eDiscovery tool in Exchange Online or the eDiscovery Center in SharePoint Online aren't included. 
   
-For more information about searching the Office 365 audit log, the permissions that are required, and exporting search results, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+For more information about searching the audit log, the permissions that are required, and exporting search results, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
 ## How to search for and view eDiscovery activities
 
-Currently, you have to do a few specific things to view eDiscovery activities in the Office 365 audit log. Here's how.
+Currently, you have to do a few specific things to view eDiscovery activities in the audit log. Here's how.
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     

@@ -138,7 +138,7 @@ You can search the following types of content locations with the Content Search 
 
 - Begin by searching all content locations in your organization (which you can search in a single search) to quickly determine which content locations contain items that match your search query. Then you can rerun the search and narrow the search scope to the specific locations that contain relevant items.
 - Use search statistics to identify the top locations that contain items that match your search query. See [View keyword statistics for Content Search results](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
-- Search the Office 365 audit log for recent file and folder activities performed by the user who is the subject of the DSR. Searching the audit log returns a list of auditing records that contain the name and location of resources the user has recently interacted with. You may be able to use this information to build a content search query. See [Search the audit log in the Office 365 Security & Compliance Center](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
+- Search the audit log for recent file and folder activities performed by the user who is the subject of the DSR. Searching the audit log returns a list of auditing records that contain the name and location of resources the user has recently interacted with. You may be able to use this information to build a content search query. See [Search the audit log in the Office 365 Security & Compliance Center](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 
 #### Building search queries to find personal data
 
@@ -1650,7 +1650,7 @@ To help prepare your organization to undertake DSR investigations using Office 3
 
 - Use the DSR eDiscovery case tool in the Office 365 Security & Compliance Center to manage DSR investigations
 - Set up Compliance Boundaries to limit the scope of Content Searches
-- Use the Office 365 audit log search tool in DSR investigations
+- Use the audit log search tool in DSR investigations
 
 ### Use the DSR case tool to manage DSR investigations
 
@@ -1703,7 +1703,7 @@ Here's a high-level overview of how to implement Compliance Boundaries (together
 
 For step-by-step instructions, see [Set up compliance boundaries for eDiscovery investigations in Office 365](https://support.office.com/article/1b45c82f-26c8-44fb-9f3b-b45436fe2271).
 
-### Use the Office 365 audit log search tool in DSR investigations
+### Use the audit log search tool in DSR investigations
 
 IT admins can use the audit log search tool in the Security & Compliance Center to identity documents, files, and other Office 365 resources that users have created, accessed, changed, or deleted. Searching for this kind activity can be useful in DSR investigations. For example, in SharePoint Online and OneDrive for Business, auditing events are logged when users perform these activities:
 

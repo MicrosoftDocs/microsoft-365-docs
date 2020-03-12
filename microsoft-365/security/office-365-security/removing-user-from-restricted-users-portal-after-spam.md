@@ -62,7 +62,7 @@ You complete this task in the Security & Compliance Center (SCC). [Go to the Sec
 A "User restricted from sending email" alert is available as a policy under the Office 365 Security & Compliance Alert policies page. This was formerly the outbound spam policy but is now native to the Office 365 alerting platform. Go to [Alert policies in the Security & Compliance Center](../../compliance/alert-policies.md) for more information on alerts.
 
 > [!IMPORTANT]
-> For alerts to work, audit log search must to be turned on. See how to [Turn Office 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md) for more information.
+> For alerts to work, audit log search must to be turned on. See how to [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md) for more information.
 
 The policy for this alert is a default one and comes with every Office 365 tenant and does not need to be set up. It is considered a High severity alert and will email the configured TenantAdmins group when the alert is fired whenever a user has been restricted from sending mail. Admins can update the group notified when this alert happens by going to the alert under the SCC portal > Alerts > Alert policies > Users restricted from sending email.
 

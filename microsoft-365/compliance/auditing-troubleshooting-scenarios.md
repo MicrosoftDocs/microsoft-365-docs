@@ -1,5 +1,5 @@
 ---
-title: "Search the Office 365 audit log to troubleshoot common scenarios"
+title: "Search the audit log to troubleshoot common scenarios"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "You can use the Office 365 audit log search tool to help you troubleshoot common issues such as investigating a compromised account, finding out who set up email forwarding for a mailbox, or determining why an external user successfully logged in to your organization."
+description: "You can use the audit log search tool to help you troubleshoot common issues such as investigating a compromised account, finding out who set up email forwarding for a mailbox, or determining why an external user successfully logged in to your organization."
 ---
 
-# Search the Office 365 audit log to investigate common support issues
+# Search the audit log to investigate common support issues
 
-This article describes how to use the Office 365 audit log search tool to help you investigate common support issues. This includes using the audit log to:
+This article describes how to use the audit log search tool to help you investigate common support issues. This includes using the audit log to:
 
 - Find the IP address of the computer used to access a compromised account
 - Determine who set up email forwarding for a mailbox
@@ -28,13 +28,13 @@ This article describes how to use the Office 365 audit log search tool to help y
 - Determine if a user created an inbox rule
 - Investigate why there was a successful login by a user outside your organization
 
-## Using the Office 365 audit log search tool
+## Using the audit log search tool
 
 Each of the troubleshooting scenarios described in this article is based on using the audit log search tool in the Office 365 security and compliance center. This section lists the permissions required to search the audit log and describes the steps to access and run audit log searches. Each scenario section explains how to configure an audit log search query and what to look for in the detailed information in the audit records that match the search criteria.
 
 ### Permissions required to use the audit log search tool
 
-You must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the Office 365 audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Manage role groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+You must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Manage role groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
 ### Running audit log searches
 
@@ -193,7 +193,7 @@ d. The **UserId** field indicates the user who created the inbox rule specified 
 
 ## Investigate why there was a successful login by a user outside your organization
 
-When reviewing audit records in the Office 365 audit log, you may see records that indicate an external user was authenticated by Azure Active Directory and successfully logged in to your organization. For example, an admin in contoso.onmicrosoft.com may see an audit record showing that a user from a different Office 365 organization (for example, fabrikam.onmicrosoft.com) successfully logged into contoso.onmicrosoft.com. Similarly, you may see audit records that indicate users with a Microsoft Account (MSA), such as an Outlook.com or Live.com, successfully logged in to your organization. In these situations, the audited activity is **User logged In**. 
+When reviewing audit records in the audit log, you may see records that indicate an external user was authenticated by Azure Active Directory and successfully logged in to your organization. For example, an admin in contoso.onmicrosoft.com may see an audit record showing that a user from a different Office 365 organization (for example, fabrikam.onmicrosoft.com) successfully logged into contoso.onmicrosoft.com. Similarly, you may see audit records that indicate users with a Microsoft Account (MSA), such as an Outlook.com or Live.com, successfully logged in to your organization. In these situations, the audited activity is **User logged In**. 
 
 This behavior is by design. Azure Active Directory (Azure AD), the directory service in Office 365, allows something called *pass-through authentication* when an external user tries to access a SharePoint site or a OneDrive location in your organization. When the external user tries to do this, they're prompted to enter their Office 365 credentials. Azure AD uses the credentials to authenticate the user, meaning only Azure AD verifies that the user is who they say they are. The indication of the successful login in the audit record is the result of Azure AD authenticating the user. The successful login doesn't mean that the user was able to access any resources or perform any other actions in your organization. It only indicates that the user was authenticated by Azure AD. In order for a pass-through user to access SharePoint or OneDrive resources, a user in your organization would have to explicitly share a resource with the external user by sending them a sharing invitation or anonymous sharing link. 
 
@@ -231,6 +231,6 @@ Here are two examples scenarios that would result in a successful **User logged 
 
     In addition to the **User logged in** activities, other audit records may be returned, such ones that indicate a user in your organization shared resources with the external user and whether the external user accessed, modified, or downloaded a document that was shared with them.
 
-- Search for SharePoint sharing activities that would indicate a file was shared with the external user identified by a **User logged in** audit record. For more information, see [Use sharing auditing in the Office 365 audit log](use-sharing-auditing.md).
+- Search for SharePoint sharing activities that would indicate a file was shared with the external user identified by a **User logged in** audit record. For more information, see [Use sharing auditing in the audit log](use-sharing-auditing.md).
 
 - Export the audit log search results that contain records relevant to your investigation so that you can use Excel to search for other activities related to the external user. For more information, see  [Export, configure, and view audit log records](export-view-audit-log-records.md).

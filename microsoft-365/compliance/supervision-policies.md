@@ -275,7 +275,7 @@ Here's a breakdown of the values displayed the **Tag type** column.
 
 In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This may be a summary of all supervisory activities associated with a defined policy or anytime a supervision policy changes. Supervision policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every action monitored by your supervision policies provide proof of supervisory procedures.
 
-The following supervision policy activities are audited and available in the unified Office 365 audit logs:
+The following supervision policy activities are audited and available in the unified audit logs:
 
 |**Activity**|**Associated commands**|
 |:-----|:-----|

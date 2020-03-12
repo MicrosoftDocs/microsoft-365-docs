@@ -29,7 +29,7 @@ Make sure that the following requirements are met:
   
 - Your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
     
-- [Office 365 audit logging](../../compliance/turn-audit-log-search-on-or-off.md) is turned on for your organization. 
+- [audit logging](../../compliance/turn-audit-log-search-on-or-off.md) is turned on for your organization. 
     
 - Your organization has policies defined for anti-spam, anti-malware, anti-phishing, and so on. See [Protect against threats in Office 365](protect-against-threats.md).
     

@@ -346,7 +346,7 @@ Here's an illustration and description of the network upload process to import P
     
   - Using [Office 365 retention policies](retention-policies.md) to control how long the data that you imported will be retained, and what action to take after the retention period expires. 
     
-  - Searching the [Office 365 audit log](search-the-audit-log-in-security-and-compliance.md) for mailbox-related events that affect the data that you imported. 
+  - Searching the [audit log](search-the-audit-log-in-security-and-compliance.md) for mailbox-related events that affect the data that you imported. 
     
   - Importing data to [inactive mailboxes](create-and-manage-inactive-mailboxes.md) to archive data for compliance purposes. 
     

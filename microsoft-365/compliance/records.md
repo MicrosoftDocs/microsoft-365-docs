@@ -153,7 +153,7 @@ The Preservation Hold library is visible only to site collection admins. Also, t
 
 ### Searching the audit log for record versioning events
 
-The actions of locking and unlocking records are logged in the Office 365 audit log. You can search for the specific activities **Changed record status to locked** and **Changed record status to unlocked**, which are located in the **File and page activities** section in the **Activities** dropdown list on the **Audit log search** page in the security and compliance center.
+The actions of locking and unlocking records are logged in the audit log. You can search for the specific activities **Changed record status to locked** and **Changed record status to unlocked**, which are located in the **File and page activities** section in the **Activities** dropdown list on the **Audit log search** page in the security and compliance center.
 <br/><br/>
 
 ![Search the audit log for record versioning events](../media/recordversioning13.png)
