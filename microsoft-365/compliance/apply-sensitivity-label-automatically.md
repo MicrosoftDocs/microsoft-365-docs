@@ -148,10 +148,9 @@ Here's an example of a prompt when you configure a condition to apply a label as
 
 - You can't use recommended labeling for documents that were previously labeled with a higher sensitivity. When the content's already labeled with a higher sensitivity, the user won't see the prompt with the recommendation and policy tip.
 
-## How to configure auto-labeling for SharePoint, OnDrive, and Exchange
-
+## How to configure auto-labeling for SharePoint, OnDrive, and Exchange 
 > [!NOTE]
-> This functionality is currently in preview and subject to change.
+> Auto-labeling policies are currently in public preview and subject to change.
 
 ### Prerequisites for auto-labeling
 
