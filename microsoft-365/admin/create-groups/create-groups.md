@@ -1,5 +1,5 @@
 ---
-title: "Create an Office 365 group in the admin center"
+title: "Create a group in the admin center"
 ms.reviewer: arvaradh
 f1.keywords:
 - CSH
@@ -22,7 +22,7 @@ ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: "Learn to create and delete Office 365 groups, add and remove group members, and customize how the group works."
 ---
 
-# Create an Office 365 group in the Microsoft 365 admin center
+# Create a group in the Microsoft 365 admin center
   
 While users can create an Office 365 group from Outlook or other apps, as an admin, you may need to create or delete groups, add or remove members, and customize how they work. The Microsoft 365 admin center is the place to do this. 
 

@@ -1,5 +1,5 @@
 ---
-title: "Compare groups in Office 365"
+title: "Compare groups"
 ms.reviewer: arvaradh
 f1.keywords:
 - CSH
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
-description: "Learn about the types of groups you can use in Office 365."
+description: "Learn about the types of groups you can use."
 ---
 
 # Compare groups

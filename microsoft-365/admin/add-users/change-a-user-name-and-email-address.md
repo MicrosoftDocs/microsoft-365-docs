@@ -1,5 +1,5 @@
 ---
-title: "Change a user name and email address in Office 365"
+title: "Change a user name and email address"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: "Learn how a global admin can change a user's Office 365 email address and display name. "
+description: "Learn how a global admin can change a user's email address and display name. "
 ---
 
-# Change a user name and email address in Office 365
+# Change a user name and email address
 
-You may need to change someone's Office 365 email address and display name if, for example, they get married and their last name changes.
+You may need to change someone's email address and display name if, for example, they get married and their last name changes.
 
 ::: moniker range="o365-worldwide"
 

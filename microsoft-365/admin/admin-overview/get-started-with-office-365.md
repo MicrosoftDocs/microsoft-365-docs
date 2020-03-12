@@ -1,5 +1,5 @@
 ---
-title: "Get started with Office 365 for business"
+title: "Get started with Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
-description: "Learn how to set up and use Office 365 on your computer, phone, and tablet."
+description: "Learn how to set up and use Microsoft 365 on your computer, phone, and tablet."
 ---
 
 # Get started
 
-Your organization recently got Office 365, and now you need to use it so you can start reading email, sharing documents, and more. Learn how to set up and use Office 365 on your computer, phone, and tablet.
+Your organization recently got Microsoft 365, and now you need to use it so you can start reading email, sharing documents, and more. Learn how to set up and use Microsoft 365 on your computer, phone, and tablet.
   
 ::: moniker range="o365-worldwide"
 

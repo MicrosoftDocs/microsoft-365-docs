@@ -1,5 +1,5 @@
 ---
-title: "Let users reset their own passwords in Office 365"
+title: "Let users reset their own passwords"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee

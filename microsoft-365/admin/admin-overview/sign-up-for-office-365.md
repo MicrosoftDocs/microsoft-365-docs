@@ -1,5 +1,5 @@
 ---
-title: "How to sign up for Office 365 - Admin Help"
+title: "How to sign up - Admin Help"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -25,14 +25,14 @@ search.appverid:
 - GEA150
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
-description: "Understand what you need to know before you go through the sign up process for Office 365. "
+description: "Understand what you need to know before you go through the sign up process for Microsoft 365. "
 ---
 
-# How to sign up for Office 365 - Admin Help
+# How to sign up - Admin Help
 
 ::: moniker range="o365-worldwide"
 
-Sign up for Office 365 for business so your team can begin using the latest versions of Word, Excel, PowerPoint, and other Office programs in your business.
+Sign up for Microsoft 365 for business so your team can begin using the latest versions of Word, Excel, PowerPoint, and other Office programs in your business.
   
 Watch a quick overview of the three Office 365 for business plans, or scroll down for more info.
 <br><br>

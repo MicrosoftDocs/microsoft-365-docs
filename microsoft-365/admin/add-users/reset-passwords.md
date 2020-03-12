@@ -1,5 +1,5 @@
 ---
-title: "Reset Office 365 business passwords"
+title: "Reset business passwords"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,10 +25,10 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: "Learn how to reset password for a user in Office 365 business subscription. "
+description: "Learn how to reset password for a user in Microsoft 365 business subscription. "
 ---
 
-# Reset Office 365 business passwords
+# Reset business passwords
 
 Watch a short video about resetting user passwords.<br><br>
 

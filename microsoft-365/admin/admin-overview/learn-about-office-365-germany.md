@@ -1,5 +1,5 @@
 ---
-title: "Learn about Office 365 Germany"
+title: "Learn about Microsoft 365 Germany"
 f1.keywords:
 - NOCSH
 ms.author: loreenl
@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
-description: "Learn about Office 365 Germany."
+description: "Learn about Microsoft 365 Germany."
 ---
 
 > [!NOTE]
-> Office 365 Germany is no longer accepting new customers or deploying new services. The new cloud regions in Germany, available in the first quarter of 2020 for Microsoft 365 and Office 365, will provide both core customer data residency within Germany, as well as full connectivity to the Microsoft global cloud network. 
+> Microsoft 365 Germany is no longer accepting new customers or deploying new services. The new cloud regions in Germany, available in the first quarter of 2020 for Microsoft 365, will provide both core customer data residency within Germany, as well as full connectivity to the Microsoft global cloud network. 
 >
 
-# Learn about Office 365 Germany
+# Learn about Microsoft 365 Germany
 
-Office 365 Germany was a differentiated option to the Office 365 services available across Europe. It helped to address the needs of the most regulated customers in Germany, the European Union (EU), and the European Free Trade Association (EFTA) by delivering our industry-leading productivity services for digital work, from German datacenters, with data residency in Germany, and strict data access and control measures via a unique data trustee model governed by German law.
+Microsoft 365 Germany was a differentiated option to the Microsoft 365 services available across Europe. It helped to address the needs of the most regulated customers in Germany, the European Union (EU), and the European Free Trade Association (EFTA) by delivering our industry-leading productivity services for digital work, from German datacenters, with data residency in Germany, and strict data access and control measures via a unique data trustee model governed by German law.
   
 The data trustee, T-Systems International, an independent German company and subsidiary of Deutsche Telekom, controls physical and logical access to customer data. Customer data cannot be accessed without approval from or supervision by the data trustee, which is governed by German law.
   

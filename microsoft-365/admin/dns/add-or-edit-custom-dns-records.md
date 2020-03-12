@@ -1,5 +1,5 @@
 ---
-title: "Add or edit custom DNS records in Office 365"
+title: "Add or edit custom DNS records"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,10 +20,10 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
-description: "Learn how to edit or add a custom DNS record in Office 365. "
+description: "Learn how to edit or add a custom DNS record in Microsoft 365. "
 ---
 
-# Add or edit custom DNS records in Office 365
+# Add or edit custom DNS records
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
 

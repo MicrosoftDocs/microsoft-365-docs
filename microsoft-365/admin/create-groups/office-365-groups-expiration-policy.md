@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Group Expiration Policy"
+title: "Group Expiration Policy"
 ms.reviewer: arvaradh
 f1.keywords:
 - NOCSH
@@ -21,7 +21,7 @@ search.appverid:
 description: "Learn about Office 365 Groups expiration policies."
 ---
 
-# Office 365 Group Expiration Policy
+# Group Expiration Policy
 
 With the increase in usage of Office 365 Groups, administrators and users need a way to clean up unused groups. Expiration policies can help remove inactive groups from the system and make things cleaner.
 
