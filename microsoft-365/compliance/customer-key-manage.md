@@ -137,14 +137,6 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 The IsEncrypted property returns a value of **true** if the mailbox is encrypted and a value of **false** if the mailbox is not encrypted.
 
-The time to complete mailbox moves depends on the size of the mailbox. If Customer Key hasn't completely encrypted the mailbox after 72 hours from the time you assign a new DEP, initiate a mailbox move. To do this, use the New-MoveRequest cmdlet and provide the alias of the mailbox. For example:
-  
-```powershell
-New-MoveRequest <alias>
-```
-
-For more information about this cmdlet, see [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest?view=exchange-ps).
-
 ### Verify encryption completes for SharePoint Online, OneDrive for Business, and Teams files
 
 Check on the status of encryption by running the Get-SPODataEncryptionPolicy cmdlet as follows:
