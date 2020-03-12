@@ -261,6 +261,8 @@ With PowerShell, you can view status of user accounts, segments, policies, and p
 |The most recent information barrier policy application     | Use the **Get-InformationBarrierPoliciesApplicationStatus** cmdlet. <p>Syntax: `Get-InformationBarrierPoliciesApplicationStatus`<p>    This will display information about whether policy application completed, failed, or is in progress.       |
 |All information barrier policy applications|Use `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>This will display information about whether policy application completed, failed, or is in progress.|
 
+<!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
+
 ## What if I need to remove or change policies?
 
 Resources are available to help you manage your information barrier policies.

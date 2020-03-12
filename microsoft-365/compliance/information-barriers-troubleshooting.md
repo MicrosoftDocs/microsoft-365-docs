@@ -166,6 +166,9 @@ Make sure that your organization does not have [Exchange address book policies](
 
 3. [View status of user accounts, segments, policies, or policy application](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application).
 
+
+<!-- edit in new troubleshooting issue from dhanas here -->
+
 ## Related topics
 
 [Define policies for information barriers in Microsoft Teams](information-barriers-policies.md)
