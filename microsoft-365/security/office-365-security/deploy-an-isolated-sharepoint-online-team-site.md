@@ -166,7 +166,7 @@ First, create the SharePoint Online team site with these steps.
    
 6. In **Site name**, type a name for the team site. 
     
-7. In **Primary administrator**, type the account that will be used the administer the site.
+7. In **Primary administrator**, type the account that you are logged in with.
  
 8. Click **Finish**.
     
