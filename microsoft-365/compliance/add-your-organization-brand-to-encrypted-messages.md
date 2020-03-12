@@ -17,7 +17,7 @@ ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
-description: "As an Office 365 global administrator, you can apply your organization's branding to  your organization's encrypted email messages and to the contents of the encryption portal."
+description: "As a global administrator, you can apply your organization's branding to  your organization's encrypted email messages and to the contents of the encryption portal."
 ---
 
 # Add your organization's brand to your encrypted messages

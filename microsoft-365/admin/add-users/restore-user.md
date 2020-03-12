@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: "Learn how to restore deleted Office 365 user accounts and all associated data."
+description: "Learn how to restore deleted user accounts and all associated data."
 ---
 
 # Restore a user in Office 365

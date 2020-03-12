@@ -45,7 +45,7 @@ The insights, reports, and widgets that are available in the mail flow dashboard
 
 The mail flow dashboard is available to:
 
-- Members of the **Office 365 global administrator** role.
+- Members of the **global administrator** role.
 
 - Members of **Office 365 Exchange administrator** role.
 
@@ -57,7 +57,7 @@ The mail flow dashboard is available to:
 
   - The user won't have access to the Office 365 admin portal.
 
-For more information about the Office 365 global administrator role, see [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+For more information about the global administrator role, see [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
 For information on assigning Security & Compliance Center roles to users, see [Give users access to the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center).
 

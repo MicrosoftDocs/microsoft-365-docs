@@ -21,7 +21,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 ## Step 1: Create an app in Azure Active Directory
 
-1. Go to <https://portal.azure.com> and sign in using the credentials of an Office 365 global admin account.
+1. Go to <https://portal.azure.com> and sign in using the credentials of a global admin account.
 
    ![Sign in to Azure](../media/TCimage01.png)
 

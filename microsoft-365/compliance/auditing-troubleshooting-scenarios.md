@@ -75,7 +75,7 @@ Here's how to configure an audit log search query for this scenario:
 **Activities:** If relevant to your case, select a specific activity to search for. For troubleshooting compromised accounts, consider selecting the **User signed in to mailbox** activity under **Exchange mailbox activities**. This returns auditing records showing the IP address that was use when signing in to the mailbox. Otherwise, leave this field blank to return audit records for all activities. 
 
 > [!TIP]
-> Leaving this field blank will  return **UserLoggedIn** activities, which is an Azure Active Directory activity that indicates that someone has signed in to an Office 365 user account. Use filtering in the search results to display the **UserLoggedIn** audit records.
+> Leaving this field blank will  return **UserLoggedIn** activities, which is an Azure Active Directory activity that indicates that someone has signed in to an user account. Use filtering in the search results to display the **UserLoggedIn** audit records.
 
 **Start date** and **End date:** Select a date range that's applicable to your investigation.
 

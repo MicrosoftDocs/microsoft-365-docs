@@ -243,7 +243,7 @@ Here are the steps to connect to Exchange Online PowerShell, and then run the Ma
     $UserCredential = Get-Credential
     ```
 
-    In the **Windows PowerShell Credential Request** dialog box, type the user name and password for your Office 365 global admin account, and then click **OK**.
+    In the **Windows PowerShell Credential Request** dialog box, type the user name and password for your global admin account, and then click **OK**.
     
 2. Run the following command.
     

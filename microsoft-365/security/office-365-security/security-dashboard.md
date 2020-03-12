@@ -33,7 +33,7 @@ Depending on what your organization's Office 365 subscription includes, the Secu
 To view the Security Dashboard, in the [Office 365 Security &amp; Compliance Center](../../compliance/go-to-the-securitycompliance-center.md), go to **Threat management** \> **Dashboard**.
   
 > [!NOTE]
-> You must be an Office 365 global administrator, a security administrator, or a security reader to view the Security Dashboard. Some widgets require additional permissions to view. To learn more, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
+> You must be a global administrator, a security administrator, or a security reader to view the Security Dashboard. Some widgets require additional permissions to view. To learn more, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
 ## Threat Management Summary
 

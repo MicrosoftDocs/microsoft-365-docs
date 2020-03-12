@@ -3,7 +3,7 @@ Also see [Prerequisites](https://docs.microsoft.com/microsoft-365/enterprise/ide
 <a name="crit-identity-global-admin"></a>
 ### Required: Your global administrator accounts are protected 
 
-You've [protected your Office 365 global administrator accounts](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) to thwart  credential compromise by attackers that can lead to breaches of your Microsoft 365 subscription.
+You've [protected your global administrator accounts](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) to thwart  credential compromise by attackers that can lead to breaches of your Microsoft 365 subscription.
 
 If you skip this requirement, your global administrator accounts can be susceptible to attack and compromise, allowing an attacker to gain system-wide access to your data for harvesting, destruction, or ransom.
 

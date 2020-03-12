@@ -18,7 +18,7 @@ description: "The permissions required to perform tasks to manage Microsoft Exch
 
 The permissions required to perform tasks to manage Exchange Online Protection (EOP) vary depending on the feature you are managing.
 
-To set up EOP, you must be an Office 365 Global Admin, or an Exchange Company Administrator (the Organization Management role group).
+To set up EOP, you must be a global admin, or an Exchange Company Administrator (the Organization Management role group).
 
 ## Exchange Online Protection permissions
 

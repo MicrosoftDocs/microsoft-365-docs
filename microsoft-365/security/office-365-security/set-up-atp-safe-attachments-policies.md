@@ -38,11 +38,11 @@ People regularly send, receive, and share attachments, such as documents, presen
 
 - Make sure that your organization has [Office 365 Advanced Threat Protection](office-365-atp.md).
 
-- Make sure that you have the necessary permissions. To define (or edit) ATP policies, you must be assigned either an Exchange Online Organization Management role (Office 365 Global Administrator is assigned to this role by default) or both Exchange Online Hygiene Management and Security Administrator roles. For more details, see the following table:
+- Make sure that you have the necessary permissions. To define (or edit) ATP policies, you must be assigned either an Exchange Online Organization Management role (global administrator is assigned to this role by default) or both Exchange Online Hygiene Management and Security Administrator roles. For more details, see the following table:
 
   |Role|Where/how assigned|
   |---------|---------|
-  |Office 365 Global Administrator |The person who signs up to buy Office 365 is a global admin by default. (See [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)|
+  |global administrator |The person who signs up to buy Office 365 is a global admin by default. (See [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)|
   |Security Administrator |Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
   |Exchange Online Organization Management, Exchange Online Hygiene Management |Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
 
@@ -70,7 +70,7 @@ People regularly send, receive, and share attachments, such as documents, presen
 
    - In the response section, choose the **Dynamic Delivery** option. ([Learn more about Dynamic Delivery and previewing with ATP Safe Attachments](dynamic-delivery-and-previewing.md).)
 
-   - In the **Redirect attachment** section, select the option to enable redirect and type the email address of your Office 365 global administrator, security administrator, or security analyst who will investigate malicious attachments.
+   - In the **Redirect attachment** section, select the option to enable redirect and type the email address of your global administrator, security administrator, or security analyst who will investigate malicious attachments.
 
    - In the **Applied To** section, choose **The recipient domain is**, and then select your domain. Choose **Add**, and then choose **OK**.
 

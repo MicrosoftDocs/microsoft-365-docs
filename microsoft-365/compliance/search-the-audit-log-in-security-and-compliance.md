@@ -86,7 +86,7 @@ Be sure to read the following items before you start searching the audit log.
     > [!NOTE]
     > If your organization participated in the private preview program for the one-year retention of audit records, the retention duration for audit records that were generated before the general availability rollout date will not be reset.
 
-- If you want to turn off audit log search in Office 365 for your organization, you can run the following command in remote PowerShell connected to your Exchange Online organization:
+- If you want to turn off audit log search for your organization, you can run the following command in remote PowerShell connected to your Exchange Online organization:
 
   ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
@@ -98,7 +98,7 @@ Be sure to read the following items before you start searching the audit log.
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
-  For more information, see [Turn off audit log search in Office 365](turn-audit-log-search-on-or-off.md).
+  For more information, see [Turn off audit log search](turn-audit-log-search-on-or-off.md).
 
 - As previously stated, the underlying cmdlet used to search the audit log is an Exchange Online cmdlet, which is **Search-UnifiedAuditLog**. That means you can use this cmdlet to search the audit log instead of using the **Audit log search** page in the Security & Compliance Center. You have to run this cmdlet in remote PowerShell connected to your Exchange Online organization. For more information, see [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
 
@@ -580,10 +580,10 @@ The following table lists user administration activities that are logged when an
 
 |**Activity**|**Operation**|**Description**|
 |:-----|:-----|:-----|
-|Added user|Add user|An Office 365 user account was created.|
+|Added user|Add user|An user account was created.|
 |Changed user license|Change user license|The license assigned to a user what changed. To see what licenses were changes, see the corresponding **Updated user** activity.|
 |Changed user password|Change user password|Administrator changed the password for a user.|
-|Deleted user|Delete user|An Office 365 user account was deleted.|
+|Deleted user|Delete user|An user account was deleted.|
 |Reset user password|Reset user password|Administrator reset the password for a user.|
 |Set property that forces user to change password|Set force change user password|Administrator set the property that forces a user to change their password the next time the user sign in to Office 365.|
 |Set license properties|Set license properties|Administrator modifies the properties of a licensed assigned to a user.|

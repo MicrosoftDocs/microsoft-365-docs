@@ -40,7 +40,7 @@ Trackers are just a few of the many great features you get with [Office 365 Adva
 To view and use your Threat Trackers for your organization, go to the Security &amp; Compliance Center ([https://protection.office.com](https://protection.office.com)) and choose **Threat management** \> **Threat tracker**.
   
 > [!NOTE]
-> To use Threat Trackers, you must be an Office 365 global administrator, security administrator, or security reader. See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
+> To use Threat Trackers, you must be a global administrator, security administrator, or security reader. See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
 ### Noteworthy trackers
 
@@ -92,7 +92,7 @@ The new Noteworthy threat filter highlights items that were recently detected th
 
 - If your organization doesn't already have these Office 365 Threat Investigation and Response capabilities, see [How do we get Office 365 Threat Investigation and Response capabilities?](office-365-ti.md).
     
-- Make sure that your security team has the correct roles and permissions assigned. You must be an Office 365 global administrator, or have the Security Administrator or Search and Purge role assigned in the Security &amp; Compliance Center. See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Make sure that your security team has the correct roles and permissions assigned. You must be a global administrator, or have the Security Administrator or Search and Purge role assigned in the Security &amp; Compliance Center. See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
 - Watch for the new Trackers to show up in your Office 365 environment. When available, you'll find your Trackers [here](https://protection.office.com/). Go to **Threat management** \> **Threat trackers**.
     

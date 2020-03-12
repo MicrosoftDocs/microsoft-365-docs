@@ -43,7 +43,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Change a user's email address
 
-You must be an [Office 365 global admin](about-admin-roles.md) to do these steps. 
+You must be a [global admin](about-admin-roles.md) to do these steps. 
 
 ::: moniker range="o365-worldwide"
  
@@ -97,7 +97,7 @@ If you get an error message, see [Resolve error messages](#resolve-error-message
     
     **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
-    Also, you'll only see this option if you're an Office 365 global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
+    Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
   
 4. You'll see a big yellow warning that you're about to change the person's sign-in information. Select **Save**, then **Close**.
     
@@ -125,7 +125,7 @@ If you get an error message, see [Resolve error messages](#resolve-error-message
     
     **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
-    Also, you'll only see this option if you're an Office 365 global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
+    Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
   
 4. You'll see a big yellow warning that you're about to change the person's sign-in information. Select **Save**, then **Close**.
     
@@ -153,7 +153,7 @@ If you get an error message, see [Resolve error messages](#resolve-error-message
     
     **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
-    Also, you'll only see this option if you're an Office 365 global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
+    Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
   
 4. You'll see a big yellow warning that you're about to change the person's sign-in information. Select **Save**, then **Close**.
     
@@ -223,7 +223,7 @@ If you get the error message " **A parameter cannot be found that matches parame
   
 ### "We're sorry, the user couldn't be edited. Review the user information and try again"
 
-If you get the error message " **We're sorry, the user couldn't be edited. Review the user information and try again**." it means you aren't an Office 365 global admin and you don't have permissions to change the user name. Find the global admin in your business and ask them to make the change.
+If you get the error message " **We're sorry, the user couldn't be edited. Review the user information and try again**." it means you aren't a global admin and you don't have permissions to change the user name. Find the global admin in your business and ask them to make the change.
 
 
 ## What to do with old email addresses

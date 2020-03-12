@@ -151,7 +151,7 @@ After rolling out to your entire organization, you must continue to employ your 
 Here are some suggested activities:
 
 - See [Success factors for Office 365](https://aka.ms/successfactors) to learn about general best practices for cloud service adoption. 
-- See [Office 365 activity reports](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) to understand Office 365 service usage across your organization. If you aren’t an Office 365 global admin for your organization, ask someone who is a global admin to grant Reports Reader permissions to your user account so you can access activity reports.
+- See [Office 365 activity reports](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) to understand Office 365 service usage across your organization. If you aren’t a global admin for your organization, ask someone who is a global admin to grant Reports Reader permissions to your user account so you can access activity reports.
 - Monitor your feedback venue (a public channel in a central Teams team or Yammer) for issues and feedback from individuals about their experiences with SharePoint. Address questions and issues as quickly as you can to prevent frustrated individuals and demonstrate support for the rollout.
 - Identify and nurture champions in each business group and highlight their accomplishments and best practices when using SharePoint. Reflect their successes out to the organization to show project success and adoption. Endorsement by technical leaders within a business group can exert a powerful influence over leadership and peers.
 

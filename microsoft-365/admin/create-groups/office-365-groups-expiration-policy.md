@@ -48,7 +48,7 @@ It's important to know that expiration is turned off by default. Administrators 
 
 |Role|What they can do|
 |---------|---------|
-|Office 365 global admin (in Azure, the Company administrator), User administrator|Create, read, update, or delete the Office 365 groups expiration policy settings.|
+|Global admin (in Azure, the Company administrator), User administrator|Create, read, update, or delete the Office 365 groups expiration policy settings.|
 |User|Renew or [restore](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) an Office 365 Group that they own|
 
 ## How to set the expiration policy
