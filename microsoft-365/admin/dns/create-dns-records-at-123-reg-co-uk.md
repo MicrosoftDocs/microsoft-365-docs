@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at 123-reg.co.uk for Office 365"
+title: "Create DNS records at 123-reg.co.uk"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,10 +19,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
-description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at 123-reg.co.uk for Office 365."
+description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at 123-reg.co.uk for Microsoft 365."
 ---
 
-# Create DNS records at 123-reg.co.uk for Office 365
+# Create DNS records at 123-reg.co.uk
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
   
