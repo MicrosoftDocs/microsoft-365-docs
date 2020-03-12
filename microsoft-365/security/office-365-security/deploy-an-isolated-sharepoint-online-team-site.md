@@ -167,7 +167,7 @@ First, create the SharePoint Online team site with these steps.
 6. In **Group owner**, specify the owner of the associated Office 365 Group.
 
 > [!NOTE]
-> Group owner is automatically included as site admin, therefore can manage group membership and have full access to the site. 
+> Group owner is automatically included as a site admin and can therefore manage group membership and have full access to the site. 
     
 7. In **Team site description,** type an optional description of the purpose of the site.
     
@@ -237,6 +237,5 @@ When you need to change site access group membership or create a document folder
   
 [Manage an isolated SharePoint Online team site](manage-an-isolated-sharepoint-online-team-site.md)
   
-
 
 
