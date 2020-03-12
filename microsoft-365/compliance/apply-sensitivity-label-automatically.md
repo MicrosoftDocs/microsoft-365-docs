@@ -169,7 +169,7 @@ Here's an example of a prompt when you configure a condition to apply a label as
 
 - You already have one or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policy. For these labels:
     - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction. 
-    - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), these are not applied to documents. Headers and footers will be applied to emails (watermarks are not supported for email).
+    - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), these are not applied to documents or emails.
 
 ### Learn about simulation mode
 
