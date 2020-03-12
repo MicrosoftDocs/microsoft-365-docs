@@ -150,7 +150,7 @@ Here is your resulting configuration with the three site access groups populated
   
 ## Phase 2: Create and configure the isolated team site
 
-In this phase, you create the isolated SharePoint Online site and configure the permissions for the default SharePoint Online permission levels to use your new Azure AD-based access groups.
+In this phase, you create the isolated SharePoint Online site and configure the permissions for the default SharePoint Online permission levels to use your new Azure AD-based access groups. By default, new team sites include an Office 365 group and other related resources, but in this case, we'll create a team site without an Office 365 group. This allows maintaining permissions entirely through SharePoint.
   
 First, create the SharePoint Online team site with these steps.
   
