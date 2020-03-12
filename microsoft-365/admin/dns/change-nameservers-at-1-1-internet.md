@@ -1,10 +1,5 @@
 ---
-title: "
-
-
-
-
-"
+title: "Change nameservers to set up Office 365 with 1&1 IONOS"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
