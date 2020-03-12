@@ -1,5 +1,5 @@
 ---
-title: "Office 365 ProPlus deployment exit criteria"
+title: "Microsoft 365 Apps for enterprise deployment exit criteria"
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,16 +14,16 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom:
-description: Ensure that your configuration meets Microsoft 365 Enterprise criteria for Office 365 ProPlus infrastructure.
+description: Ensure that your configuration meets Microsoft 365 Enterprise criteria for Microsoft 365 Apps for enterprise infrastructure.
 ---
 
-# Office 365 ProPlus deployment exit criteria
+# Microsoft 365 Apps for enterprise deployment exit criteria
 
-![Phase 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
+![Phase 4: Microsoft 365 Apps for enterprise](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
 
 *This applies to both the E3 and E5 versions of Microsoft 365 Enterprise and Microsoft 365 Education*
 
-Ensure that your configuration meets the following required criteria for Office 365 ProPlus infrastructure.
+Ensure that your configuration meets the following required criteria for Microsoft 365 Apps for enterprise infrastructure.
 
 - Assessment of infrastructure and environment is complete, including:
 
@@ -35,17 +35,17 @@ Ensure that your configuration meets the following required criteria for Office 
 
 - Deployment plan is complete, including:
 
-    - How to deploy Office 365 ProPlus
-    - How to manage updates to Office 365 ProPlus
+    - How to deploy Microsoft 365 Apps for enterprise
+    - How to manage updates to Microsoft 365 Apps for enterprise
     - Whether to deploy and install from a local source on your network or from the cloud
     - Which client devices get which update channels
     - Installation packages defined
     - All client devices assigned to deployment groups
     - Which Office applications, architectures, and languages go to which client devices
 
-- Deployment of Office 365 ProPlus is complete, including:
+- Deployment of Microsoft 365 Apps for enterprise is complete, including:
 
-    - All client devices have Office 365 ProPlus installed
+    - All client devices have Microsoft 365 Apps for enterprise installed
     - All client devices are in the appropriate update channel and are receiving updates
     - All client devices have the appropriate languages installed or available
 
@@ -53,7 +53,7 @@ Ensure that your configuration meets the following required criteria for Office 
 
 ## Results and next steps
 
-Your client devices have the latest versions of Office 365 ProPlus installed and will receive ongoing updates.
+Your client devices have the latest versions of Microsoft 365 Apps for enterprise installed and will receive ongoing updates.
 
 |||
 |:-------|:-----|

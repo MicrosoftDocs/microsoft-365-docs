@@ -29,7 +29,7 @@ It can take up to 12 hours for an add-in to show up for client for all users.
   
 ## Requirements
 
-Centralized deployment of add-ins requires that the users are using Office 365 ProPlus (and are signed into Office using their Organizational ID), and have Exchange Online and active Exchange Online mailboxes. Your subscription'd directory must either be in, or federated to Azure Active Directory.
+Centralized deployment of add-ins requires that the users are using Microsoft 365 Apps for enterprise (and are signed into Office using their Organizational ID), and have Exchange Online and active Exchange Online mailboxes. Your subscription'd directory must either be in, or federated to Azure Active Directory.
 You can view specific requirements for Office and Exchange below, or use the [Office 365 Centralized Deployment Compatibility Checker](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker).
 
 Centralized Deployment doesn't support the following:
@@ -49,11 +49,11 @@ Centralized Deployment doesn't support the following:
 ### Office Requirements
 
 - For Word, Excel, and PowerPoint add-ins, your users must be using one of the following:
-  - On a Windows device, Version 1704 or later of Office 365 ProPlus.
+  - On a Windows device, Version 1704 or later of Microsoft 365 Apps for enterprise.
   - On a Mac, Version 15.34 or later.
       - On iOS (iPad only), Version 2.9.18010804 or later.
 - For Outlook, your users must be using one of the following: 
-  - Version 1701 or later of Office 365 ProPlus.
+  - Version 1701 or later of Microsoft 365 Apps for enterprise.
   - Version 1808 or later of Office Professional Plus 2019 or Office Standard 2019.
   - Version 16.0.4494.1000 or later of Office Professional Plus 2016 (MSI) or Office Standard 2016 (MSI)\*
   - Version 15.0.4937.1000 or later of Office Professional Plus 2013 (MSI) or Office Standard 2013 (MSI)\*
@@ -64,17 +64,17 @@ Centralized Deployment doesn't support the following:
     *MSI versions of Outlook show admin-installed add-ins in the appropriate Outlook ribbon, not the "My add-ins" section.
     
 
-#### Find out if Office 365 ProPlus is installed
+#### Find out if Microsoft 365 Apps for enterprise is installed
 
-To use Office 365 ProPlus, a user must have an Office 365 account and must have been assigned a license. For more information, see [Overview of Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=846328).
+To use Microsoft 365 Apps for enterprise, a user must have an Office 365 account and must have been assigned a license. For more information, see [Overview of Microsoft 365 Apps for enterprise](https://go.microsoft.com/fwlink/p/?linkid=846328).
 
-The simplest way to detect if a user has Office 365 ProPlus installed and has been using it recently is to use the Microsoft Office Activations report, which is available in the Microsoft 365 admin center. The report provides a list of all users who have activated Office 365 ProPlus within the last 7 days, 30 days, 90 days, or 180 days. For centralized deployment purposes, the desktop activations for Windows or Mac are the important columns in the report. You can export the report to Excel. For more information about the report, see [Office 365 Reports in the Admin Center - Microsoft Office activations](../activity-reports/microsoft-office-activations.md).
+The simplest way to detect if a user has Microsoft 365 Apps for enterprise installed and has been using it recently is to use the Microsoft Office Activations report, which is available in the Microsoft 365 admin center. The report provides a list of all users who have activated Microsoft 365 Apps for enterprise within the last 7 days, 30 days, 90 days, or 180 days. For centralized deployment purposes, the desktop activations for Windows or Mac are the important columns in the report. You can export the report to Excel. For more information about the report, see [Office 365 Reports in the Admin Center - Microsoft Office activations](../activity-reports/microsoft-office-activations.md).
   
-If you don't want to use the Activations report, you can ask a user to open an Office application such as Word on their machine, and then choose **File** \> **Account**. Under **Product Information**, you should see **Subscription Product** and **Microsoft Office 365 ProPlus**, as shown in the following image.
+If you don't want to use the Activations report, you can ask a user to open an Office application such as Word on their machine, and then choose **File** \> **Account**. Under **Product Information**, you should see **Subscription Product** and **Microsoft Microsoft 365 Apps for enterprise**, as shown in the following image.
 
 ![Product information in an Office application](../../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
   
-For help with Office 365 ProPlus, see [Troubleshooting tips for Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=846339).
+For help with Microsoft 365 Apps for enterprise, see [Troubleshooting tips for Microsoft 365 Apps for enterprise](https://go.microsoft.com/fwlink/p/?linkid=846339).
 
 
 ### Exchange Online requirements

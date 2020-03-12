@@ -56,7 +56,7 @@ The following table lists what automatically happens when you assign a license t
 |Exchange Online  <br/> |A mailbox is created for that person.  <br/> |
 |SharePoint Online  <br/> |Edit permissions to the default SharePoint Online team site are assigned to that person.  <br/> |
 |Skype for Business Online  <br/> |The person will have access to the features associated with the license.  <br/> |
-|Office 365 ProPlus  <br/> |The person will be able to download Microsoft Office on up to 5 Macs or PCs, 5 tablets, and 5 smartphones.  <br/> |
+|Microsoft 365 Apps for enterprise  <br/> |The person will be able to download Microsoft Office on up to 5 Macs or PCs, 5 tablets, and 5 smartphones.  <br/> |
    
 ## How many devices can people install Office on?
 
@@ -66,7 +66,7 @@ If your subscription includes any of the following products, each person can ins
     
 - Microsoft 365 Business Standard
     
-- Office 365 ProPlus
+- Microsoft 365 Apps for enterprise
     
 - Office 365 Enterprise E3
     

@@ -110,7 +110,7 @@ To set up [ATP Safe Links](atp-safe-links.md), review and edit your default poli
 
 2. Double-click the **Default** policy.
 
-3. In the **Use safe links in** section, select the option **Office 365 ProPlus, Office for iOS and Android**, and then click **Save**.
+3. In the **Use safe links in** section, select the option **Microsoft 365 Apps for enterprise, Office for iOS and Android**, and then click **Save**.
 
 4. In the **Policies that apply to specific recipients** section, click the plus sign (**+**).
 

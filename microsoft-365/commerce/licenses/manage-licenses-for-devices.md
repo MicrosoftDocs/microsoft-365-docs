@@ -26,7 +26,7 @@ If you have Office 365 ProPlus for Education (device), you can assign licenses t
 > [!IMPORTANT]
 > Office 365 ProPlus for Education (device) is only available to Education A3 and A5 volume licensing customers.
 
-To begin, you create a group in the Azure Active Directory admin center, and then assign devices to the group. To learn more about device licensing, including device requirements, what types of groups you can use, and how to configure Office 365 ProPlus to use device licensing, see [Device licensing for Office 365 ProPlus for Education customers](https://go.microsoft.com/fwlink/p/?linkid=2094216).
+To begin, you create a group in the Azure Active Directory admin center, and then assign devices to the group. To learn more about device licensing, including device requirements, what types of groups you can use, and how to configure Microsoft 365 Apps for enterprise to use device licensing, see [Device licensing for Office 365 ProPlus for Education customers](https://go.microsoft.com/fwlink/p/?linkid=2094216).
 
 > [!IMPORTANT]
 > You must be a Global admin to complete the tasks in this article.

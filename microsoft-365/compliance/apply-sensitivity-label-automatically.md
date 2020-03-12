@@ -73,7 +73,7 @@ For more information about these classifers, see [Getting started with trainable
 
 During the preview period, the following apps support classifers for sensitivity labels:
 
-- Office 365 ProPlus desktop apps for Windows, from [Office Insider](https://office.com/insider):
+- Microsoft 365 Apps for enterprise desktop apps for Windows, from [Office Insider](https://office.com/insider):
     - Word
     - Excel
     - PowerPoint

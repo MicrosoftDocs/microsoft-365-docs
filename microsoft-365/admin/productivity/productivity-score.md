@@ -131,7 +131,7 @@ The file types considered for collaboration are Word/Excel/PowerPoint/OneNote/PD
 
 ![Work anywhere page.](../../media/psflexibility.png)
 
-The Working anywhere page quantifies the users (as a percentage and absolute value) who used at least one productivity app across two or more platforms, which are desktop, mobile and web. Users get scored higher for using more apps and platforms. The apps being considered are Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. The base of the insight are users enabled for Office 365 ProPlus, Exchange, Yammer, Skype or Teams.
+The Working anywhere page quantifies the users (as a percentage and absolute value) who used at least one productivity app across two or more platforms, which are desktop, mobile and web. Users get scored higher for using more apps and platforms. The apps being considered are Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. The base of the insight are users enabled for Microsoft 365 Apps for enterprise, Exchange, Yammer, Skype or Teams.
 
 1. **Why it matters** provides a summary from research linking usage of multiple platforms to higher productivity. **Read the research from Forrester** goes to a research article that provides more context on how working across is conducive to increased productivity.
 1. Supporting insight on **Email anywhere** quantifies number of users in your organization using Outlook across platforms within base of users active on Outlook.

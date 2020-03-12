@@ -25,7 +25,7 @@ description: Introduction to the Desktop Deployment Process.
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>Getting Started: People, Process and Technology Guidance</strong></p>
-<p>Discover the benefits of Windows 10 and Office 365 ProPlus, major changes and considerations versus previous deployments, and best practices to ensure a smooth transition to Windows 10 and Office 365 ProPlus.</p></td>
+<p>Discover the benefits of Windows 10 and Microsoft 365 Apps for enterprise, major changes and considerations versus previous deployments, and best practices to ensure a smooth transition to Windows 10 and Microsoft 365 Apps for enterprise.</p></td>
 <td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
@@ -34,27 +34,27 @@ description: Introduction to the Desktop Deployment Process.
 >In this series we will explain the best ways to use existing tools and introduce you to new technologies, services, and methods enabled by the Cloud.  To see the full desktop deployment process, visit the [Desktop Deployment Center](https://aka.ms/HowToShift).
 >
 
-Welcome to the Desktop Deployment Center, our central place to learn how to help you plan and make the shift to Windows 10 and Office 365 ProPlus. This will allow you take advantage of a secure workspace, powered by the latest productivity, teamwork, and collaboration experiences.
+Welcome to the Desktop Deployment Center, our central place to learn how to help you plan and make the shift to Windows 10 and Microsoft 365 Apps for enterprise. This will allow you take advantage of a secure workspace, powered by the latest productivity, teamwork, and collaboration experiences.
 
 If you haven’t deployed a new desktop environment for a while, the good news is much about the deployment process has improved. Challenges of the past, such as application compatibility, are much less of an issue today. New tools, as well as insight delivered from the Cloud, enable you to move forward with confidence faster and more efficiently than ever before.
 
-In this introduction we’ll outline what has changed and go on a tour of the Desktop Deployment Wheel. This will guide you through the recommended steps for your shift to Windows 10 and Office 365 ProPlus, detailing how to leverage your existing tools and processes while adopting modern management technology and approaches along the way.
+In this introduction we’ll outline what has changed and go on a tour of the Desktop Deployment Wheel. This will guide you through the recommended steps for your shift to Windows 10 and Microsoft 365 Apps for enterprise, detailing how to leverage your existing tools and processes while adopting modern management technology and approaches along the way.
 
 ## Why upgrade?
 
 In combination, Windows 10 and the Microsoft Intelligence Cloud enhance your ability to deliver the most empowering and secure workspace for your users while allowing you to simplify your supporting infrastructure.
 
-One of the key tenants of modern management practices is devices that are always up-to-date. Through this series you will read about new capabilities that are being delivered to help you move to Windows 10 and Office 365 ProPlus while staying current with the semi-annual releases of both.
+One of the key tenants of modern management practices is devices that are always up-to-date. Through this series you will read about new capabilities that are being delivered to help you move to Windows 10 and Microsoft 365 Apps for enterprise while staying current with the semi-annual releases of both.
 
 [Windows 10 for the IT Pro](https://www.microsoft.com/itpro/windows-10)
 
-[About Office 365 ProPlus in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
+[About Microsoft 365 Apps for enterprise in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
 
 ## What has Changed
 
 Let’s start by taking a look at what has changed and improved since your last desktop deployment. If you haven’t shifted your desktop environment in a while you’re likely using Windows 7 and Office 2010 or Office 2013. If you are, you'll notice a few things have evolved since your last major upgrade. Here are some of the core changes:
 
-**Identity and Access:** Windows 10 and Office 365 ProPlus, with its connectivity to cloud productivity, security, and management services, has a new Identity and Access Management service at its core: Azure Active Directory (Azure AD). This enables single sign-on and secure connectivity across your cloud services, meaning that you are going to need Azure AD in place to take advantage of Microsoft 365 services such as Office 365, Intune, or Windows Autopilot.
+**Identity and Access:** Windows 10 and Microsoft 365 Apps for enterprise, with its connectivity to cloud productivity, security, and management services, has a new Identity and Access Management service at its core: Azure Active Directory (Azure AD). This enables single sign-on and secure connectivity across your cloud services, meaning that you are going to need Azure AD in place to take advantage of Microsoft 365 services such as Office 365, Intune, or Windows Autopilot.
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 
@@ -68,13 +68,13 @@ Let’s start by taking a look at what has changed and improved since your last 
 
 [Windows Autopilot](https://www.microsoft.com/windowsforbusiness/windows-autopilot)
 
-**Click-to-Run Deployments:** When provisioning Office desktop apps, Office 365 ProPlus is the preferred option. This gives you access to the newest innovations in Office as they are developed, so you won’t need to wait years before getting new capabilities. You’ll also use a new installation called Click-to-Run.
+**Click-to-Run Deployments:** When provisioning Office desktop apps, Microsoft 365 Apps for enterprise is the preferred option. This gives you access to the newest innovations in Office as they are developed, so you won’t need to wait years before getting new capabilities. You’ll also use a new installation called Click-to-Run.
 
 Click-to-Run is quite different from the MSI-based packages of the past. Click-to-Run is faster, lighter, and supports updates in the background to keep your users to be up and running. It is still a local copy of Office and you can continue to use your existing deployment tools, like Microsoft Endpoint Configuration Manager, to provision and configure the apps.
 
-[Deployment guide for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Deployment guide for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 
-**Semi-Annual Updates:** Once you have moved to Windows 10 and Office 365 ProPlus, updates are delivered semi-annually with new features. But with Microsoft able to deliver insights from the cloud to help, you can quickly and confidently roll out these updates to hundreds or thousands of devices. Like an in-place upgrade, the Feature Update preserves apps, data, and configurations from the previous release.
+**Semi-Annual Updates:** Once you have moved to Windows 10 and Microsoft 365 Apps for enterprise, updates are delivered semi-annually with new features. But with Microsoft able to deliver insights from the cloud to help, you can quickly and confidently roll out these updates to hundreds or thousands of devices. Like an in-place upgrade, the Feature Update preserves apps, data, and configurations from the previous release.
 
 ## The Deployment Process Wheel
 
@@ -88,7 +88,7 @@ Before you get started, you’ll want to create a high-level plan and get the ne
 
 [BranchCache vs. Peer Cache](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**[Step 3: Office and Line of Business App Delivery](https://aka.ms/mdd3)** While Windows continues to support MSI-based installations it also now supports newer installations mechanisms, optimized for automated deployment and continuous updates. Office 365 ProPlus and Office 2019 clients use Click-to-Run installation technology. You may want to make a range of UWP apps available, and you may increasingly find yourself deploying third-party apps and in-house developed Line of Business Apps that use the new MSIX-based packaging apps. This step ensures your apps are ready for automated deployments, and that you are set up for success whether your apps deploy using Click-to-Run, MSIX, conventional MSI-based, or are UWP apps deployed from a Microsoft Store from Business you set up.
+**[Step 3: Office and Line of Business App Delivery](https://aka.ms/mdd3)** While Windows continues to support MSI-based installations it also now supports newer installations mechanisms, optimized for automated deployment and continuous updates. Microsoft 365 Apps for enterprise and Office 2019 clients use Click-to-Run installation technology. You may want to make a range of UWP apps available, and you may increasingly find yourself deploying third-party apps and in-house developed Line of Business Apps that use the new MSIX-based packaging apps. This step ensures your apps are ready for automated deployments, and that you are set up for success whether your apps deploy using Click-to-Run, MSIX, conventional MSI-based, or are UWP apps deployed from a Microsoft Store from Business you set up.
 
 [MSIX Intro](https://blogs.msdn.microsoft.com/sgern/2018/06/15/msix-intro/)
 
@@ -98,7 +98,7 @@ As in previous upgrades, the User State Migration Tool continues to be a valuabl
 
 [Redirect and move Windows known folders to OneDrive](https://docs.microsoft.com/onedrive/redirect-known-folders)
 
-**[Step 5: Security and Compliance](https://aka.ms/mdd5)** Security and Compliance is an area with a lot upside when moving to Windows 10 and Office 365 ProPlus. It is important you familiarize yourself with the new built-in capabilities and compare that with what you already have. For example, new capabilities in Windows 10 using virtualization-based security can prevent credential theft, protect against browser-based exploits and malicious code execution by isolating core processes and secrets from the operating system. In addition, cloud services like Advanced Threat Protection give you a unified platform for security hardening, post-breach detection, investigation, and response. Advanced Threat Protection can also safeguard you against malicious email attachments, unsafe hyperlinks and more.
+**[Step 5: Security and Compliance](https://aka.ms/mdd5)** Security and Compliance is an area with a lot upside when moving to Windows 10 and Microsoft 365 Apps for enterprise. It is important you familiarize yourself with the new built-in capabilities and compare that with what you already have. For example, new capabilities in Windows 10 using virtualization-based security can prevent credential theft, protect against browser-based exploits and malicious code execution by isolating core processes and secrets from the operating system. In addition, cloud services like Advanced Threat Protection give you a unified platform for security hardening, post-breach detection, investigation, and response. Advanced Threat Protection can also safeguard you against malicious email attachments, unsafe hyperlinks and more.
 
 [Microsoft Security](https://www.microsoft.com/security/default.aspx)
 
@@ -106,7 +106,7 @@ As in previous upgrades, the User State Migration Tool continues to be a valuabl
 
 [Introduction to operating system deployment in Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-**[Step 7: Windows and Office as a Service](https://aka.ms/mdd7)** This represents a major shift in the way you maintain users’ desktop real-estate. With this move to Windows 10 and Office 365 ProPlus you can move to managing Windows and Office as a service. In place of a massive shift in technology every few years, you will continually be bringing new capabilities, experiences, and protections to your user. Semi-annual feature updates deliver new capabilities in the Fall and Spring of each year, while monthly cumulative Quality Updates will contain security, reliability, and bug fixes. While you can opt to deploy the Office 2019 client, we strongly recommend you to move to Office 365 ProPlus. This follows a similar service plan to Windows so your users get updates to the Office apps on a regular basis too.
+**[Step 7: Windows and Office as a Service](https://aka.ms/mdd7)** This represents a major shift in the way you maintain users’ desktop real-estate. With this move to Windows 10 and Microsoft 365 Apps for enterprise you can move to managing Windows and Office as a service. In place of a massive shift in technology every few years, you will continually be bringing new capabilities, experiences, and protections to your user. Semi-annual feature updates deliver new capabilities in the Fall and Spring of each year, while monthly cumulative Quality Updates will contain security, reliability, and bug fixes. While you can opt to deploy the Office 2019 client, we strongly recommend you to move to Microsoft 365 Apps for enterprise. This follows a similar service plan to Windows so your users get updates to the Office apps on a regular basis too.
 
 ![](../media/getting-started-media/getting-started-media-2.png)
 
@@ -117,7 +117,7 @@ As in previous upgrades, the User State Migration Tool continues to be a valuabl
 
 ## Next Step
 
-Now you know what’s new and different in Windows 10 and Office 365 ProPlus, and we have walked through our recommended deployment process wheel. With this taste for the end-to-end guidance and tools available for you to make the shift to Windows 10 and Office 365 ProPlus, let’s get started.
+Now you know what’s new and different in Windows 10 and Microsoft 365 Apps for enterprise, and we have walked through our recommended deployment process wheel. With this taste for the end-to-end guidance and tools available for you to make the shift to Windows 10 and Microsoft 365 Apps for enterprise, let’s get started.
 
 ## [Step 1: Device and App Readiness](https://aka.ms/mdd1)
 

@@ -55,10 +55,10 @@
               href: windows10-enable-security-features.md
             - name: Windows 10 Enterprise exit criteria
               href: windows10-exit-criteria.md
-        - name: Phase 4 - Office 365 ProPlus
+        - name: Phase 4 - Microsoft 365 Apps for enterprise
           href: office365proplus-infrastructure.md
           items: 
-            - name: Office 365 ProPlus exit criteria
+            - name: Microsoft 365 Apps for enterprise exit criteria
               href: office365proplus-exit-criteria.md
         - name: Phase 5 - Mobile device management
           href: mobility-infrastructure.md
@@ -174,7 +174,7 @@
           href: contoso-identity.md
         - name: Windows 10 Enterprise
           href: contoso-win10.md
-        - name: Office 365 ProPlus
+        - name: Microsoft 365 Apps for enterprise
           href: contoso-o365pp.md
         - name: Mobile device management
           href: contoso-mdm.md

@@ -27,7 +27,7 @@ While our goal is to deliver all commercial features and functionality to custom
 
 These are the existing gaps between Azure Information Protection for Office 365 operated by 21Vianet and our commercial offerings as of July 2019:
 
-- Information Rights Management (IRM) is supported only for Office 365 ProPlus (build 11731.10000 or higher). Office 2010, Office 2013, and other Office 2016 versions are not supported.
+- Information Rights Management (IRM) is supported only for Microsoft 365 Apps for enterprise (build 11731.10000 or higher). Office 2010, Office 2013, and other Office 2016 versions are not supported.
 
 - Migration from Active Directory Rights Management Services (AD RMS) to Azure Information Protection is currently not available.
   

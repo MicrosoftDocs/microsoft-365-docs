@@ -35,7 +35,7 @@ The Report Message add-in works with most Office 365 subscriptions and the follo
  - Outlook 2013 SP1
  - Outlook 2016
  - Outlook 2016 for Mac
- - Outlook included with Office 365 ProPlus
+ - Outlook included with Microsoft 365 Apps for enterprise
 
 The Report Message add-in is currently not available for:
 

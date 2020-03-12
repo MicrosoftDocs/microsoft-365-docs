@@ -208,28 +208,28 @@ The new and highlighted Windows 10 Enterprise elements include:
 | ![The Volume Licensing Service Center](../media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | The Volume Licensing Service Center, which provides images for new installations of Windows 10 Enterprise, and the Windows Update for Business service, which provides the latest updates. |
 |||
 
-## Phase 4: Office 365 ProPlus
+## Phase 4: Microsoft 365 Apps for enterprise
 
-Microsoft 365 for enterprise includes Office 365 ProPlus, the subscription version of Microsoft Office. Like Office 2016 or Office 2019, Office 365 ProPlus is installed directly on your client devices. However, Office 365 ProPlus receives updates that include new features on a regular basis. See [About Office 365 ProPlus in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) for more information.
+Microsoft 365 for enterprise includes Microsoft 365 Apps for enterprise, the subscription version of Microsoft Office. Like Office 2016 or Office 2019, Microsoft 365 Apps for enterprise is installed directly on your client devices. However, Microsoft 365 Apps for enterprise receives updates that include new features on a regular basis. See [About Microsoft 365 Apps for enterprise in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) for more information.
 
-For your non-enterprise organization, you manually install Office 365 ProPlus on devices, which can include Windows, iOS, and Android devices. This can be done as part of preparing a new device for use, or by the user as part of their onboarding process.
+For your non-enterprise organization, you manually install Microsoft 365 Apps for enterprise on devices, which can include Windows, iOS, and Android devices. This can be done as part of preparing a new device for use, or by the user as part of their onboarding process.
 
 In either case, the administrator or the user signs in to the Office 365 portal at https://portal.office.com. On the **Microsoft Office Home** tab, click **Install Office** and step through the installation process.
 
-Feature updates to Office 365 ProPlus are downloaded monthly by each computer on which it is installed. There is typically no need in a non-enterprise organization to set up an infrastructure to distribute Office 365 ProPlus updates. 
+Feature updates to Microsoft 365 Apps for enterprise are downloaded monthly by each computer on which it is installed. There is typically no need in a non-enterprise organization to set up an infrastructure to distribute Microsoft 365 Apps for enterprise updates. 
 
 ### Your configuration so far
 
-Here is a visual summary of the Office 365 ProPlus phase with the new elements highlighted.
+Here is a visual summary of the Microsoft 365 Apps for enterprise phase with the new elements highlighted.
 
-![Your organization after the Office 365 ProPlus phase](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
+![Your organization after the Microsoft 365 Apps for enterprise phase](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
-The new and highlighted Office 365 ProPlus elements include:
+The new and highlighted Microsoft 365 Apps for enterprise elements include:
  
 |||
 |:------:|:-----|
-| ![Office 365 ProPlus installed on devices](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 ProPlus installed on devices, with an on-premises laptop as an example. |
-| ![The Office Content Delivery Network (CDN) for Office 365 ProPlus](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | The Office Content Delivery Network (CDN) for Office 365 ProPlus, which devices access for Office 365 ProPlus updates. |
+| ![Microsoft 365 Apps for enterprise installed on devices](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Microsoft 365 Apps for enterprise installed on devices, with an on-premises laptop as an example. |
+| ![The Office Content Delivery Network (CDN) for Microsoft 365 Apps for enterprise](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | The Office Content Delivery Network (CDN) for Microsoft 365 Apps for enterprise, which devices access for Microsoft 365 Apps for enterprise updates. |
 |||
 
 ## Phase 5: Mobile device management
@@ -383,7 +383,7 @@ For the first time employees sign in to Microsoft 365, instruct them to:
 
 1. Sign into their devices with their user account credentials.
 2. Using a browser, sign in to the Office 365 portal at https://portal.office.com.
-3. From the **Office 365 Home** tab, click **Install Office** to install Office 365 ProPlus on their device.
+3. From the **Office 365 Home** tab, click **Install Office** to install Microsoft 365 Apps for enterprise on their device.
 
 ## End results
 
@@ -428,7 +428,7 @@ After their onboarding, each employee should have:
 - A Windows 10 Enterprise device that:
    - Is joined to the Azure AD tenant (cloud-only) or to both the Azure AD tenant and your AD DS domain (hybrid).
    - Automatically updates itself with the latest Windows 10 Enterprise product improvements and security enhancements.
-   - Has Office 365 ProPlus installed, which automatically updates itself with the latest Office product improvements and security enhancements.
+   - Has Microsoft 365 Apps for enterprise installed, which automatically updates itself with the latest Office product improvements and security enhancements.
    - Is enrolled in Intune and subject to Intune device compliance policies and app protection policies.
 
 ## Next step

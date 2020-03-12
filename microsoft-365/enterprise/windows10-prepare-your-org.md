@@ -29,8 +29,8 @@ Before upgrading your devices to Windows 10 Enterprise, consider the following:
   If you have Active Directory on-premises, you can [sync it with Microsoft 365](identity-add-user-accounts.md#identity-sync) to create user accounts in Azure AD, the cloud directory used by Microsoft 365. With this method, you can create accounts for users and for security groups you use to manage permissions to resources (like SharePoint Online site collections or documents). Synchronizing your Active Directory with Microsoft 365 won’t assign licenses to the users.
 - **You don't need to license users at this time** <br>
   Before users can use Microsoft 365 services or install software from the Microsoft 365 portal, they need product licenses. As a global or user management admin, you can directly assign products licenses in Microsoft 365 either individually or in bulk. You can also use [group-based licensing](identity-use-group-management.md#identity-group-license) to automatically assign licenses when users are added to a particular group. 
-- **You install Office 365 ProPlus separately** <br>
-  Obtaining a Microsoft 365 license does not automatically install Office 365 ProPlus on your client computers. See [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md) for more information. 
+- **You install Microsoft 365 Apps for enterprise separately** <br>
+  Obtaining a Microsoft 365 license does not automatically install Microsoft 365 Apps for enterprise on your client computers. See [Phase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md) for more information. 
 
 ## Set Windows diagnostics data level
 

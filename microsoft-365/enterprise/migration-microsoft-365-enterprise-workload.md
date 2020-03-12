@@ -20,7 +20,7 @@ Most enterprise organizations have a heterogeneous environment with multiple rel
 
 To maximize the business value of the Microsoft 365 Enterprise integrated suite of products, begin planning and implementing a strategy to migrate releases of:
 
-- The Office client installed on your computers to Office 365 ProPlus
+- The Office client installed on your computers to Microsoft 365 Apps for enterprise
 - Office servers installed on your servers to their equivalent services in Office 365
 - Windows 7 and Windows 8.1 on your devices to Windows 10 Enterprise
 
@@ -44,7 +44,7 @@ In many organizations both large and small, you might be using a combination of 
 - Are not optimally enabled to leverage Microsoft’s cloud technologies and help you digitally transform your business.
 - Do not contain new features.
  
-Microsoft 365 Enterprise includes Office 365 ProPlus, a version of the Office client products that is available with a Microsoft 365 Enterprise license and is installed and updated from the Microsoft cloud. Office 365 ProPlus includes security updates and the latest features. See [About Office 365 ProPlus in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) for more information.
+Microsoft 365 Enterprise includes Microsoft 365 Apps for enterprise, a version of the Office client products that is available with a Microsoft 365 Enterprise license and is installed and updated from the Microsoft cloud. Microsoft 365 Apps for enterprise includes security updates and the latest features. See [About Microsoft 365 Apps for enterprise in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) for more information.
 
 ### Office 2007
 
@@ -54,9 +54,9 @@ Rather than upgrading your computers running Office 2007 with Office 2010, Offic
 
 1. Obtaining and assigning a Microsoft 365 license for your users.
 2. Uninstalling Office 2007 on their computers.
-3. Installing Office 365 ProPlus, either individually or in conjunction with an IT rollout. For more information, see [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md).
+3. Installing Microsoft 365 Apps for enterprise, either individually or in conjunction with an IT rollout. For more information, see [Phase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md).
 
-Office 365 ProPlus installs updates automatically and can take advantage of cloud-based services in Office 365 for enhanced security and productivity.
+Microsoft 365 Apps for enterprise installs updates automatically and can take advantage of cloud-based services in Office 365 for enhanced security and productivity.
 
 ### Office 2010
 
@@ -66,9 +66,9 @@ Rather than upgrading your computers running Office 2010 with Office 2013 or Off
 
 1. Obtaining and assigning a Microsoft 365 license for your users.
 2. Uninstalling Office 2010 on their computers.
-3. Installing Office 365 ProPlus, either individually or in conjunction with an IT rollout. For more information, see [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md).
+3. Installing Microsoft 365 Apps for enterprise, either individually or in conjunction with an IT rollout. For more information, see [Phase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md).
 
-Office 365 ProPlus installs both security and new feature updates automatically and can take advantage of cloud-based services in Microsoft 365 for enhanced security and productivity.
+Microsoft 365 Apps for enterprise installs both security and new feature updates automatically and can take advantage of cloud-based services in Microsoft 365 for enhanced security and productivity.
 
 ### Office 2013 and Office 2016
 
@@ -78,9 +78,9 @@ Rather than keep updating your computers with the latest security updates for Of
 
 1. Obtaining and assigning a Microsoft 365 license for your users.
 2. Uninstalling Office 2013 or Office 2016 on their computers.
-3. Installing Office 365 ProPlus, either individually or in conjunction with an IT rollout. For more information, see [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md).
+3. Installing Microsoft 365 Apps for enterprise, either individually or in conjunction with an IT rollout. For more information, see [Phase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md).
 
-Office 365 ProPlus installs both security and new feature updates automatically and can take advantage of cloud-based services in Microsoft 365 for enhanced security and productivity.
+Microsoft 365 Apps for enterprise installs both security and new feature updates automatically and can take advantage of cloud-based services in Microsoft 365 for enhanced security and productivity.
 
 ## Migration for Microsoft Office server products
 
@@ -158,7 +158,7 @@ You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-do
 
 See how IT experts at Microsoft migrated the company to Microsoft 365 Enterprise with these resources: 
 
-- [Deploying and updating Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
+- [Deploying and updating Microsoft Microsoft 365 Apps for enterprise](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft migrates 150,000 mailboxes to Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [SharePoint to the cloud: Learn how Microsoft ran its own migration](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [Deploying Windows 10 at Microsoft as an in-place upgrade](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)

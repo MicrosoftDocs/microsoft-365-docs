@@ -119,9 +119,9 @@ This guidance shows you how to implement a set of policies to protect access to 
 - [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352): These recommendations include logging, data governance, admin access, and threat protection.
 
 
-### Windows 10 and Office 365 ProPlus
+### Windows 10 and Microsoft 365 Apps for enterprise
 
-Windows 10 and Office 365 ProPlus is the recommended client environment for PCs. We recommend Windows 10, as Azure is designed to provide the smoothest experience possible for both on-premises and Azure AD. Windows 10 also includes advanced security capabilities that can be managed through Intune. Office 365 ProPlus includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for conditional access. These apps also include enhanced security and compliance tools.
+Windows 10 and Microsoft 365 Apps for enterprise is the recommended client environment for PCs. We recommend Windows 10, as Azure is designed to provide the smoothest experience possible for both on-premises and Azure AD. Windows 10 also includes advanced security capabilities that can be managed through Intune. Microsoft 365 Apps for enterprise includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for conditional access. These apps also include enhanced security and compliance tools.
 
 ## Applying these capabilities across the three tiers of protection
 

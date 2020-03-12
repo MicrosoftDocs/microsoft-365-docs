@@ -21,7 +21,7 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ms.custom: 
 - MACDashWhatsNew
----
+---'
 
 # What's new in the Microsoft 365 admin center
 
@@ -122,7 +122,7 @@ Want to read more about it? [Change from credit card or bank account to invoice]
 
 ### Global reader
 
-We mentioned the Global reader role in the [October 2019 - Ignite Edition](#october-2019---ignite-edition), but as it’s rolling out more broadly, let’s discuss some details:
+We mentioned the Global reader role in the [October 2019 - Ignite Edition](#october-2019---ignite-edition), but as it's rolling out more broadly, let's discuss some details:
 
 - The Global reader role is the read-only counterpart to the Global admin role. The Global reader can see everything that the Global admin has permission to do.
 - With a few exceptions, like some compliance and security features, Global readers have access to view all of the Microsoft cloud admin centers that your org is licensed to use.
@@ -130,7 +130,7 @@ We mentioned the Global reader role in the [October 2019 - Ignite Edition](#octo
 - You can also combine the global reader role with another role that has fewer permissions. For example, a small business owner might be assigned the **Billing admin** + **Global reader** roles so that they can pay the bills and stay on top of changes to their cloud organization.
 - Global readers can go to any page in the Microsoft 365 admin center. When they open an editable page,  there will be a warning at the top telling them that they don't have permission to save changes, and the save button will be disabled.
 
-We’d love to get your feedback about the global reader role and any of the role-based permissions that you’d like to see in the future. [Give feedback for role-based permissions](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/10115430-have-a-consistent-experience-when-assigning-admin)
+We'd love to get your feedback about the global reader role and any of the role-based permissions that you'd like to see in the future. [Give feedback for role-based permissions](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/10115430-have-a-consistent-experience-when-assigning-admin)
 
 ### New Settings page
 
@@ -145,7 +145,7 @@ In November, we released quite a few learning paths to [Microsoft Learn](https:/
 
 - [Microsoft 365 fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/)
 - [Extend Office fundamentals](https://docs.microsoft.com/learn/paths/extend-office-fundamentals/)
-- [Microsoft 365 - Modernize your enterprise deployment with Windows 10 and Office 365 ProPlus](https://docs.microsoft.com/learn/paths/m365-getmodern/)
+- [Microsoft 365 - Modernize your enterprise deployment with Windows 10 and Microsoft 365 Apps for enterprise](https://docs.microsoft.com/learn/paths/m365-getmodern/)
 - [Manage your enterprise deployment with Microsoft 365](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
 - [Upgrade Microsoft Office for IT at scale](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
 - [Deliver remote desktops and apps from Azure with Windows Virtual Desktop
@@ -205,9 +205,9 @@ For more info, see [What's new in the SharePoint admin center](https://docs.micr
 
 We are ramping up for some exciting feature releases at Ignite 2019, so we're only announcing a few new features that were released in September. But stay tuned for next month's article, it'll be published on the first day of Ignite!
 
-### Featured Feedback Fix – The option to convert the deleted user’s mailbox to a shared mailbox is back
+### Featured Feedback Fix – The option to convert the deleted user's mailbox to a shared mailbox is back
 
-We heard your feedback loud and clear and we brought back the ability to give someone else access to a deleted user’s mailbox by converting it to a **shared mailbox**. Adding this back to the delete user wizard lets you decide what to do with the data:
+We heard your feedback loud and clear and we brought back the ability to give someone else access to a deleted user's mailbox by converting it to a **shared mailbox**. Adding this back to the delete user wizard lets you decide what to do with the data:
 
 - Email: Give someone else access to the deleted user's mailbox by converting it to a shared mailbox.
 - Files: Save their OneDrive files and give someone else access.
@@ -421,7 +421,7 @@ Check it out: **Users > Active users > Edit** or **Add user > Licenses and Apps*
 
 - We've added cards for the dashboard. Just go to the admin center and select **Add card** to see the new cards:
   - **Office 365 Active users report** - Monitor the usage of the Office 365 services you've purchased.
-  - **Office 365 software** - Install or deploy Office 365 ProPlus software and see how many licensed users have activated it.
+  - **Office 365 software** - Install or deploy Microsoft 365 Apps for enterprise software and see how many licensed users have activated it.
   - **Azure Active Directory** - Gives you quick access to common Azure AD tasks like self-serve password resets, customizing sign-in, and adding apps.
 - The **Export users** quick task has been added to command bar on the Active users page. ![Screen capture showing Export users on the command bar next to Refresh.](../media/M365PreviewExportUsersQT.png)
 - Purchase services has additional enhancements for November. And they are ALL good! To get there, go to Billing > Purchase services. <br>![Screen capture showing purchase services page with 3 new enhancements.](../media/M365PreviewBillingPurchasServices.png)

@@ -139,7 +139,7 @@ To enable MFA, you have to complete the following:
   
  **Known issues:**
   
-[Office 2013 and Office 365 ProPlus modern authentication : Things to know before onboarding](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
+[Office 2013 and Microsoft 365 Apps for enterprise modern authentication : Things to know before onboarding](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
   
  **Troubleshooting Azure Multi-Factor Authentication:**
   
@@ -155,7 +155,7 @@ See [Troubleshoot Azure MFA](https://support.microsoft.com/help/2937344/troubles
   
  **Client access filtering:**
   
-[Office 2013 and Office 365 ProPlus modern authentication and client access filtering policies : Things to know before onboarding](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
+[Office 2013 and Microsoft 365 Apps for enterprise modern authentication and client access filtering policies : Things to know before onboarding](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
   
  **Which apps support MFA?**
   

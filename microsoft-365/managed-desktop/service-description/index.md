@@ -9,14 +9,14 @@ ms.localizationpriority: normal
 
 # Microsoft Managed Desktop service description
 
-Microsoft Managed Desktop is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows 10 Enterprise edition, Office 365 ProPlus, and Microsoft security services, including:
+Microsoft Managed Desktop is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows 10 Enterprise edition, Microsoft 365 Apps for enterprise, and Microsoft security services, including:
 
 - Simplified enrollment of new devices
 - Configuration of devices
 - Features to keep users and devices secure, including Windows Hello, BitLocker, SecureBoot, and virtualization-based security according to Microsoft best practices
 - Device security monitoring and remediation services
 - App compatibility, through [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
-- Management of updates for Windows 10 and Office 365 ProPlus apps
+- Management of updates for Windows 10 and Microsoft 365 Apps for enterprise apps
 - Analytical data about device and app usage
 - IT support for your end users
 - Operational support for IT pros

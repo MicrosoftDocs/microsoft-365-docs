@@ -29,7 +29,7 @@ Microsoft 365 Business has everything you need for your small business, combinin
 
 For example, your business has grown and needs more than 300 licenses (congratulations, by the way).
 
-Or, your business needs enterprise features, such as Office 365 ProPlus, Windows 10 Enterprise E3, or Enterprise Client Access Licenses (CALs).
+Or, your business needs enterprise features, such as Microsoft 365 Apps for enterprise, Windows 10 Enterprise E3, or Enterprise Client Access Licenses (CALs).
 
 Upgrading is easy: you can start the upgrade [from the Admin center](../commerce/subscriptions/upgrade-to-different-plan.md). All your data and configuration in your current subscription is maintained. There's nothing for you to do to prepare for the migration and nothing to do afterward, except take advantage of the new features.
 
@@ -45,7 +45,7 @@ This table shows the differences between Microsoft 365 Business and Microsoft 36
 |:-------|:-----|:-----|
 | **On-premises**        | | | 
 | Windows 10    | Windows 10 Business  |     Windows 10 Enterprise E3| 
-| Office apps*    | [Office 365 Business](#office-365-business)    | Office 365 ProPlus | 
+| Office apps*    | [Office 365 Business](#office-365-business)    | Microsoft 365 Apps for enterprise | 
 | **Cloud productivity apps**        | | | 
 | Exchange Online and Outlook    | 50 GB storage limit per mailbox and unlimited Exchange Online archiving    | 100 GB storage limit per mailbox and unlimited Exchange Online archiving | 
 | Teams    | ![Included with Microsoft 365 Business](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
@@ -137,7 +137,7 @@ Microsoft 365 Business includes Windows 10 Business, which you can install with 
 <a name="office-365-business"></a>
 ###  Microsoft 365 Apps for business
 
-Your Microsoft 365 Apps for business client installed on your devices will automatically begin to use the features of Office 365 ProPlus. After migration, you can now use:
+Your Microsoft 365 Apps for business client installed on your devices will automatically begin to use the features of Microsoft 365 Apps for enterprise. After migration, you can now use:
 
  - Volume activation through Group Policy
  - App telemetry

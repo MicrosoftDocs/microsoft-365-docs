@@ -28,7 +28,7 @@ For a defined end-to-end path for deployment, you can use these phases to plan f
 |![Phase 1: Networking](../media/deploy-foundation-infrastructure/networking_icon-small.png)|[Phase 1: Networking](networking-infrastructure.md)| Your network is optimized for access to Microsoft 365's cloud-based services. |
 |![Phase 2: Identity](../media/deploy-foundation-infrastructure/identity_icon-small.png)|[Phase 2: Identity](identity-infrastructure.md)| Your admin accounts are protected, your users and groups are synchronized, and your user authentication is strong. |
 |![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)| Your existing Windows-based computers can upgrade to Windows 10 Enterprise and new devices are installed with Windows 10 Enterprise. |
-|![Phase 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Your existing users of Microsoft Office can upgrade to Office 365 ProPlus. |
+|![Phase 4: Microsoft 365 Apps for enterprise](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md)| Your existing users of Microsoft Office can upgrade to Microsoft 365 Apps for enterprise. |
 |![Phase 5: Mobile device management](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Phase 5: Mobile device management](mobility-infrastructure.md)| Your devices can be enrolled and managed. |
 |![Phase 6: Information protection](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6: Information protection](infoprotect-infrastructure.md)| Office 365 security features are enabled and your labels and policies are ready to protect documents and email. |
 
@@ -85,7 +85,7 @@ For example, you create the settings for:
 |:-------|:-----|
 | Identity | Account synchronization and groups for identity-based conditional access policies. |
 | Windows 10 Enterprise | Groups to automatically upgrade computers running Windows 7 or Windows 8.1 to Windows 10 Enterprise in place. |
-| Office 365 ProPlus | Groups to automatically deploy Office 365 ProPlus for users with Office 2010, Office 2013, or Office 2016. |
+| Microsoft 365 Apps for enterprise | Groups to automatically deploy Microsoft 365 Apps for enterprise for users with Office 2010, Office 2013, or Office 2016. |
 | Mobile device management | Groups for device enrollment and device-based conditional access policies. |
 | Information protection | Groups for Office 365 sensitivity labels. |
 
@@ -95,11 +95,11 @@ When you are ready to rollout elements of this infrastructure to users, you:
 |:-------|:-----|
 | Identity | Add user accounts to the groups for identity-based conditional access policies. |
 | Windows 10 Enterprise | Add accounts to the groups to automatically deploy Windows 10 Enterprise in place for users with Windows 7 or Windows 8.1. |
-| Office 365 ProPlus | Add user accounts to the groups to automatically deploy Office 365 ProPlus for users with Office 2010, Office 2013, or Office 2016. |
+| Microsoft 365 Apps for enterprise | Add user accounts to the groups to automatically deploy Microsoft 365 Apps for enterprise for users with Office 2010, Office 2013, or Office 2016. |
 | Mobile device management | Add accounts to the groups for device enrollment and device-based conditional access policies. |
 | Information protection | Add user accounts to the groups for sensitivity labels. |
 
-Once phases or elements of the foundation infrastructure are completed, tested, and piloted, you can roll out installed software, such as Windows 10 Enterprise and Office 365 ProPlus, and cloud-based services and protections, such as device enrollment and conditional access policies, to your users in the manner that best fits your business goals and IT resources.
+Once phases or elements of the foundation infrastructure are completed, tested, and piloted, you can roll out installed software, such as Windows 10 Enterprise and Microsoft 365 Apps for enterprise, and cloud-based services and protections, such as device enrollment and conditional access policies, to your users in the manner that best fits your business goals and IT resources.
 
 ## Deployment and project management strategies
 
