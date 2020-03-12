@@ -27,9 +27,9 @@ description: "Learn how to share sites and files with people outside the organiz
 
 To collaborate with people outside your organization, you can share entire sites or specific files externally. If you want to get straight to setting up sharing, choose the scenario you want to enable:
 
-- [Collaborate with guests on a document](collaborate-on-documents.md)
-- [Collaborate with guests in a site](collaborate-in-site.md)
-- [Collaborate with guests in a team](collaborate-as-team.md)
+- [Collaborate with guests on a document](../solutions/collaborate-on-documents.md)
+- [Collaborate with guests in a site](../solutions/collaborate-in-site.md)
+- [Collaborate with guests in a team](../solutions/collaborate-as-team.md)
   
 ## Deciding how to share your content
 
