@@ -71,7 +71,7 @@ Updated articles to clarify support for Microsoft Managed Desktop:<br>
 
 ### Content search and core eDiscovery
 
-[Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md) (new)<br>Detailed info about the retirement of In-Place eDiscovery, In-Place Holds, and the Search-Mailbox cmdlet in Exchange Online and the retirement of Office 365 Advanced eDiscovery v1.0.
+[Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md) (new)<br>Detailed info about the retirement of In-Place eDiscovery, In-Place Holds, and the Search-Mailbox cmdlet in Exchange Online and the retirement of Advanced eDiscovery v1.0.
 
 [Migrate legacy eDiscovery searches and holds to the Microsoft 365 compliance center](migrate-legacy-eDiscovery-searches-and-holds.md) (new)<br>Guidance on how to migrate In-Place eDiscovery searches and holds from the Exchange admin center to the Microsoft 365 compliance center.
 

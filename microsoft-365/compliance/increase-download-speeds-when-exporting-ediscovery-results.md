@@ -18,7 +18,7 @@ description: "Learn how to configure the Windows Registry to increase the data t
 
 # Increase the download speed when exporting eDiscovery search results from Office 365
 
-When you use the Office 365 eDiscovery Export tool to download the results of a Content Search in the Security & Compliance Center or download data from Office 365 Advanced eDiscovery, the tool starts a certain number of concurrent export operations to download the data to your local computer. By default, the number of concurrent operations is set to 8 times the number of cores in the computer you're using to download the data. For example, if you have a dual core computer (meaning two central processing units on one chip), the default number of concurrent export operations is 16. To increase the data transfer throughput and speed-up the download process, you can increase the number of concurrent operations by configuring a Windows Registry setting on the computer that you use to download the search results. To speed-up the download process, we recommend that you start with a setting of 24 concurrent operations.
+When you use the Office 365 eDiscovery Export tool to download the results of a Content Search in the Security & Compliance Center or download data from Advanced eDiscovery, the tool starts a certain number of concurrent export operations to download the data to your local computer. By default, the number of concurrent operations is set to 8 times the number of cores in the computer you're using to download the data. For example, if you have a dual core computer (meaning two central processing units on one chip), the default number of concurrent export operations is 16. To increase the data transfer throughput and speed-up the download process, you can increase the number of concurrent operations by configuring a Windows Registry setting on the computer that you use to download the search results. To speed-up the download process, we recommend that you start with a setting of 24 concurrent operations.
   
 If you download search results over a low-bandwidth network, increasing this setting might have a negative impact. Alternatively, you might be able to increase the setting to more than 24 concurrent operations in a high-bandwidth network (the maximum number of concurrent operations is 48). After you configure this registry setting, you might have to change it to find the optimal number of concurrent operations for your environment.
   
@@ -63,5 +63,5 @@ Perform the following procedure on the computer that you'll use to download sear
     
   - [Export Content Search results](export-search-results.md)
     
-  - [Export results in Office 365 Advanced eDiscovery](export-results-in-advanced-ediscovery.md)
+  - [Export results in Advanced eDiscovery](export-results-in-advanced-ediscovery.md)
     

@@ -1,5 +1,5 @@
 ---
-title: "View batch history and export past results in Office 365 Advanced eDiscovery"
+title: "View batch history and export past results in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
-description: "Learn how to view detailed information for selected export batch sessions and how to undo the last export session in Office 365 Advanced eDiscovery. 
+description: "Learn how to view detailed information for selected export batch sessions and how to undo the last export session in Advanced eDiscovery. 
 "
 ---
 

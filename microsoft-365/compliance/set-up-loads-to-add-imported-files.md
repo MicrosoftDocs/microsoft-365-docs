@@ -1,5 +1,5 @@
 ---
-title: "Set up loads to add imported files in Office 365 Advanced eDiscovery"
+title: "Set up loads to add imported files in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: "Review the steps to add imported files to the last defined load, or batch, of files before performing Relevance training in Office 365 Advanced eDiscovery. 
+description: "Review the steps to add imported files to the last defined load, or batch, of files before performing Relevance training in Advanced eDiscovery. 
 "
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Use Express Analysis in Office 365 Advanced eDiscovery"
+title: "Use Express Analysis in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
-description: "Learn how to run the Express analysis mode of Office 365 Advanced eDiscovery"
+description: "Learn how to run the Express analysis mode of Advanced eDiscovery"
 ---
 
 # Use Express Analysis in Advanced eDiscovery (classic) 

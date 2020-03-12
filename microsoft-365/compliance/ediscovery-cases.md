@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
-description: "Use the Security & Compliance Center to create and manage eDiscovery cases in your organization. You can assign members to the case, place content locations on hold, run Content Searches associated with the case, and the export the search results. You can also prepare case data for further analysis in Office 365 Advanced eDiscovery."
+description: "Use the Security & Compliance Center to create and manage eDiscovery cases in your organization. You can assign members to the case, place content locations on hold, run Content Searches associated with the case, and the export the search results. You can also prepare case data for further analysis in Advanced eDiscovery."
 ---
 
 # Manage eDiscovery cases in the Security & Compliance Center
 
-You can use eDiscovery cases in the compliance center in Office 365 and Microsoft 365 to control who can create, access, and manage eDiscovery cases in your organization. If your organization has an Office 365 E5 subscription, you can also use eDiscovery cases to analyze search results by using Office 365 Advanced eDiscovery.
+You can use eDiscovery cases in the compliance center in Office 365 and Microsoft 365 to control who can create, access, and manage eDiscovery cases in your organization. If your organization has an Office 365 E5 subscription, you can also use eDiscovery cases to analyze search results by using Advanced eDiscovery.
   
 An eDiscovery case allows you to add members to a case, control what types of actions that specific case members can perform, place a hold on content locations relevant to a legal case, and associate multiple Content Searches with a single case. You can also export the results of any Content Search that is associated with a case or prepare search results for analysis in Advanced eDiscovery. eDiscovery cases are a good way to limit who has access to Content Searches and search results for a specific legal case in your organization.
   
@@ -449,7 +449,7 @@ To go to a case in Advanced eDiscovery:
     
 4. To load the search result data from a container to the case in Advanced eDiscovery, select a container and click **Process**.
     
-    For information about how to process containers, see [Run the Process module and load data in Office 365 Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md).
+    For information about how to process containers, see [Run the Process module and load data in Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md).
     
 > [!TIP]
 > Click **Switch to eDiscovery** to go back to the same case in the Security & Compliance Center. 

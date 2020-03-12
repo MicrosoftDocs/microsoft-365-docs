@@ -1,5 +1,5 @@
 ---
-title: "Use Office 365 Advanced eDiscovery utilities"
+title: "Use Advanced eDiscovery utilities"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
-description: "Learn about the utilities in Office 365 Advanced eDiscovery, including case log, clear data, process errors, modify Relevance, and transparency analysis. 
+description: "Learn about the utilities in Advanced eDiscovery, including case log, clear data, process errors, modify Relevance, and transparency analysis. 
 "
 ---
 
