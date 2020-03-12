@@ -58,7 +58,7 @@ If you're an Office 365 global administrator or an Exchange Online administrator
 
 3. Review the terms of use and privacy policy. Then choose **Continue**.
 
-4. Sign in to Office 365 using your work or school account (for business use) or your Microsoft account (for personal use).
+4. Sign in using your work or school account (for business use) or your Microsoft account (for personal use).
 
 After the add-in is installed and enabled, you'll see the following icons:
 

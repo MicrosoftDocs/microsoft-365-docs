@@ -52,7 +52,7 @@ Service assurance is accessible by using the Security & Compliance Center. Here'
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account. 
+2. Sign in using your work or school account. 
     
 3. In the left pane, select **Service assurance**. Next, [Choose your industry and regional settings](service-assurance.md#Chooseyourindustryregional) and [Onboard other Service assurance users or groups](service-assurance.md#addother).
     

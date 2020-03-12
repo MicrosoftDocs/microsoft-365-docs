@@ -33,6 +33,6 @@ Here's the most direct way to get to the Security & Compliance Center:
   
 1. Go to [https://protection.office.com](https://protection.office.com).
 
-2. Sign in to Office 365 using your work or school account.
+2. Sign in using your work or school account.
 
 ![Office 365 Security & Compliance Center home page](../media/f1d35324-ac44-4f59-96a7-b11767b43201.png)

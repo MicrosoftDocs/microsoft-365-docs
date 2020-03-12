@@ -82,7 +82,7 @@ For step-by-step instructions, see [Assign eDiscovery permissions in the Officeâ
 
 The next step is to create a DSR case. When you create a case, you can choose to start the built-in search or you can create the case without starting the search. The following procedure instructs you to create the case without starting the search and then show you how to add members to the case.
   
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in to Office 365 using your work or school account. 
+1. Go to [https://protection.office.com](https://protection.office.com) and Sign in using your work or school account. 
     
 2. In the Security & Compliance Center, click **Data privacy** \> **Data subject requests**, and then click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **New DSR case**.
     

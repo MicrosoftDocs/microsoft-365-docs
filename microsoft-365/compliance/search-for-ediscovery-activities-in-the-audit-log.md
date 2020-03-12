@@ -41,7 +41,7 @@ Currently, you have to do a few specific things to view eDiscovery activities in
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account.
+2. Sign in using your work or school account.
     
 3. In the left pane, click **Search**, and then click **Audit log search**.
     

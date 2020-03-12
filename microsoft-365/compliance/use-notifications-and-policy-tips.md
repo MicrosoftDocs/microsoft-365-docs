@@ -50,7 +50,7 @@ When you create a DLP policy, you can enable **User notifications**. When enable
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account. You're now in the Office 365 Security &amp; Compliance Center.
+2. Sign in using your work or school account. You're now in the Office 365 Security &amp; Compliance Center.
     
 3. In the Security &amp; Compliance Center \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
     

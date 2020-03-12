@@ -105,7 +105,7 @@ Before you can use the audit log to track requests for Customer Lockbox, there a
 
 1. Go to [https://protection.office.com](https://protection.office.com).
   
-2. Sign in to Office 365 using your work or school account.
+2. Sign in using your work or school account.
 
 3. In the left pane of the Security & Compliance Center, choose **Search & investigation** > **Audit log search**.
 
