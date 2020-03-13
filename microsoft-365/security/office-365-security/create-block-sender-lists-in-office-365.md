@@ -36,7 +36,7 @@ In contrast, you also have several options to always allow email from specific s
 
 ## Use Outlook Blocked Senders
 
-When only a small number of users received unwanted email, users or admins can add the unwanted sender email addresses to the Blocked Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+When only a small number of users received unwanted email, users or admins can add the sender email addresses to the Blocked Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 When messages are successfully blocked due to a user's Blocked Senders list, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:BLK`.
 
