@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: "Learn how to route traffic to an existing public website hosted outside of Office 365, if you have set Office 365 to manage DNS records for your custom domain."
+description: "Learn how to route traffic to an existing public website hosted outside of Microsoft 365, if you have set Microsoft 365 to manage DNS records for your custom domain."
 ---
 
 # Update DNS records to keep your website with your current hosting provider
 
- **If you manage your domain's Office 365 records at your DNS hosting provider**, you don't have to worry about the steps in this topic. Your website stays where it is and people can still get to it. 
+ **If you manage your domain's Microsoft 365 records at your DNS hosting provider**, you don't have to worry about the steps in this topic. Your website stays where it is and people can still get to it. 
   
- **If Office 365 manages your DNS records**, to route traffic to an existing public website hosted outside of Office 365, after you add your domain to Office 365, do the following: 
+ **If Microsoft 365 manages your DNS records**, to route traffic to an existing public website hosted outside of Microsoft 365, after you add your domain to Microsoft 365, do the following: 
   
 ## Update DNS records in the Microsoft 365 admin center
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
@@ -59,7 +59,7 @@ In addition, you can create a CNAME record to help customers find your website.
     
 Finally, do the following:
   
-[Update your domain's NS records](https://support.office.com/article/a46bec33-2c78-4f45-a96c-b64b2a5bae22.aspx) to point to Office 365. 
+[Update your domain's NS records](https://support.office.com/article/a46bec33-2c78-4f45-a96c-b64b2a5bae22.aspx) to point to Microsoft 365. 
   
-When the NS records have been updated to point to Office 365, your domain is all set up. Email will be routed to Office 365, and traffic to your website address will continue to go to your current website host.
+When the NS records have been updated to point to Microsoft 365, your domain is all set up. Email will be routed to Microsoft 365, and traffic to your website address will continue to go to your current website host.
  

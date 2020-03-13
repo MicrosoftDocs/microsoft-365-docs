@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at easyDNS for Office 365"
+title: "Create DNS records at easyDNS"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -18,16 +18,16 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
-description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at easyDNS for Office 365."
+description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at easyDNS for Microsoft 365."
 ---
 
-# Create DNS records at easyDNS for Office 365
+# Create DNS records at easyDNS
 
 [Check the Domains FAQ ](../setup/domains-faq.md) if you don't find what you're looking for. 
   
-You'll need to add all of the following DNS records at your registrar's website to route mail to Office 365, use your domain for Teams and Skype for Business, and so on.
+You'll need to add all of the following DNS records at your registrar's website to route mail to Microsoft 365, use your domain for Teams and Skype for Business, and so on.
   
-NOTE: SRV Records are currently NOT available under all easyDNS service packages. You may need to upgrade to a higher service level with easyDNS to add SRV records which are required for Office 365 Skype for Business.
+NOTE: SRV Records are currently NOT available under all easyDNS service packages. You may need to upgrade to a higher service level with easyDNS to add SRV records which are required for Microsoft 365 Skype for Business.
   
 ## Verify that you own the domain with a TXT record
 
@@ -47,9 +47,9 @@ NOTE: SRV Records are currently NOT available under all easyDNS service packages
     
 6. Check to make sure the record is correct, and then select **CONFIRM**. 
     
-7. Wait a few minutes before you continue, so that the record you just created can propagate across the Internet and be detected by Office 365.
+7. Wait a few minutes before you continue, so that the record you just created can propagate across the Internet and be detected by Microsoft 365.
     
-8. Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+8. Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record.
     
 9. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
     
@@ -59,7 +59,7 @@ NOTE: SRV Records are currently NOT available under all easyDNS service packages
     
 12. On the **Verify domain** page, select **Verify**. 
     
-## Add an MX record to route email to Office 365
+## Add an MX record to route email to Microsoft 365
 
 1. Go to [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) and log in with your credentials. 
     
@@ -120,7 +120,7 @@ NOTE: SRV Records are currently NOT available under all easyDNS service packages
     
 6. Check to make sure the record is correct, and then select **CONFIRM**. 
     
-## Add the two SRV records that are required for Office 365
+## Add the two SRV records that are required for Microsoft 365
 
 NOTE: SRV Records are currently NOT available under easyDNS' Domain Plus service level. You may need to upgrade to a higher service level with easyDNS to add SRV records 
   

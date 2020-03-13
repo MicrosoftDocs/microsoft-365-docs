@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at Network Solutions for Office 365"
+title: "Create DNS records at Network Solutions"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,10 +19,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
-description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Network Solutions for Office 365."
+description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Network Solutions for Microsoft 365."
 ---
 
-# Create DNS records at Network Solutions for Office 365
+# Create DNS records at Network Solutions
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
   
@@ -32,17 +32,17 @@ These are the main records to add. Follow the steps below or [watch the video](h
   
 - [Add a TXT record for verification](#add-a-txt-record-for-verification)
     
-- [Add an MX record so email for your domain will come to Office 365](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
+- [Add an MX record so email for your domain will come to Microsoft 365](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
     
-- [Add the CNAME records that are required for Office 365](#add-the-cname-records-that-are-required-for-office-365)
+- [Add the CNAME records that are required for Microsoft 365](#add-the-cname-records-that-are-required-for-office-365)
     
 - [Add a TXT record for SPF to help prevent email spam](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Add the two SRV records that are required for Office 365](#add-the-two-srv-records-that-are-required-for-office-365)
+- [Add the two SRV records that are required for Microsoft 365](#add-the-two-srv-records-that-are-required-for-office-365)
     
-After you add these records at Network Solutions, your domain will be set up to work with Office 365 services.
+After you add these records at Network Solutions, your domain will be set up to work with Microsoft 365 services.
   
-To learn about webhosting and DNS for websites with Office 365, see [Use a public website with Office 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+To learn about webhosting and DNS for websites with Microsoft 365, see [Use a public website with Microsoft 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
   
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -50,7 +50,7 @@ To learn about webhosting and DNS for websites with Office 365, see [Use a publi
 ## Add a TXT record for verification
 <a name="BKMK_verify"> </a>
 
-Before you use your domain with Office 365, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Office 365 that you own the domain.
+Before you use your domain with Microsoft 365, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft 365 that you own the domain.
   
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
@@ -86,7 +86,7 @@ Follow the steps below or [watch the video (start at 0:47)](https://support.offi
     
     |**Host**|**TTL**|**Text**|
     |:-----|:-----|:-----|
-    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)   |
+    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)   |
        
     ![Type or paste values in the boxes for the new record](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
@@ -100,9 +100,9 @@ Follow the steps below or [watch the video (start at 0:47)](https://support.offi
   
 9. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+When Microsoft 365 finds the correct TXT record, your domain is verified.
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
     
@@ -121,7 +121,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
-## Add an MX record so email for your domain will come to Office 365
+## Add an MX record so email for your domain will come to Microsoft 365
 <a name="BKMK_add_MX"> </a>
 
 Follow the steps below or [watch the video (start at 3:51)](https://support.office.com/article/Video-Create-DNS-records-at-Network-Solutions-for-Office-365-c49698c2-6991-47fb-b5ac-18e49a505099?ui=en-US&amp;rs=en-US&amp;ad=US).
@@ -155,7 +155,7 @@ Follow the steps below or [watch the video (start at 3:51)](https://support.offi
     
     |**Priority**|**TTL**|**Mail Server**|
     |:-----|:-----|:-----|
-    |10  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |3600  <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Office 365 account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
+    |10  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |3600  <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft 365 account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![Type or paste values in the boxes for the new record](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
@@ -179,7 +179,7 @@ Follow the steps below or [watch the video (start at 3:51)](https://support.offi
     
     ![Select Save Changes](../../media/24432ec6-666b-4612-9488-37c06437959b.png)
   
-## Add the CNAME records that are required for Office 365
+## Add the CNAME records that are required for Microsoft 365
 <a name="BKMK_add_CNAME"> </a>
 
 Follow the steps below or [watch the video (start at 4:43)](https://support.office.com/article/Video-Create-DNS-records-at-Network-Solutions-for-Office-365-c49698c2-6991-47fb-b5ac-18e49a505099?ui=en-US&amp;rs=en-US&amp;ad=US).
@@ -233,7 +233,7 @@ Follow the steps below or [watch the video (start at 4:43)](https://support.offi
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Instead, add the required Office 365 values to the current record so that you have a  *single*  SPF record that includes both sets of values. 
+> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft 365. Instead, add the required Microsoft 365 values to the current record so that you have a  *single*  SPF record that includes both sets of values. 
   
 Follow the steps below or [watch the video (start at 5:35)](https://support.office.com/article/Video-Create-DNS-records-at-Network-Solutions-for-Office-365-c49698c2-6991-47fb-b5ac-18e49a505099?ui=en-US&amp;rs=en-US&amp;ad=US).
   
@@ -278,7 +278,7 @@ Follow the steps below or [watch the video (start at 5:35)](https://support.offi
     
     ![Select Save Changes](../../media/600b8c6d-184f-4213-a50e-8f119ebf3ff0.png)
   
-## Add the two SRV records that are required for Office 365
+## Add the two SRV records that are required for Microsoft 365
 <a name="BKMK_add_SRV"> </a>
 
 Follow the steps below or [watch the video (start at 6:18)](https://support.office.com/article/Video-Create-DNS-records-at-Network-Solutions-for-Office-365-c49698c2-6991-47fb-b5ac-18e49a505099?ui=en-US&amp;rs=en-US&amp;ad=US).
