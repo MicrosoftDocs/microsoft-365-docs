@@ -47,15 +47,15 @@ Learn how to customize your theme in the Microsoft 365 admin center. As the admi
     > [!NOTE]
     > Images that contain text may not display as expected. Built-in elements that appear on the right and left sides of the navigation bar can vary across services, and your text may be obscured by those elements. Due to the dynamic nature of the navigation bar, at this time we are unable to provide guidance for image padding that would result in a consistent experience. 
     
-  - **Navigation bar color**: Select a color to use for the background of the navigation bar. The appears at the top on every page.
-    
-  - **Text and icons**: Select a color to use for the text and icons on the top navigation bar.
-    
-  - **Accent color**: Select a color to use for the navigation bar button hover color and page accents like buttons and text on certain applications.
+    - **Navigation bar color**: Select a color to use for the background of the navigation bar. The appears at the top on every page.
 
-   - **Prevent users from overriding theme**: Flip this toggle to prevent users from choosing their own theme from our theme selection. This does not prevent users from being able to set a high contrast theme.
-      
-  - **Show the user name**: Choose whether to show a user's full name at the entry point to the account manager in the top right of the page when the user is signed in. By default, users will see their photo or their initials if a photo hasn't been uploaded.
+    - **Text and icons**: Select a color to use for the text and icons on the top navigation bar.
+
+    - **Accent color**: Select a color to use for the navigation bar button hover color and page accents like buttons and text on certain applications.
+
+     - **Prevent users from overriding theme**: Flip this toggle to prevent users from choosing their own theme from our theme selection. This does not prevent users from being able to set a high contrast theme.
+
+    - **Show the user name**: Choose whether to show a user's full name at the entry point to the account manager in the top right of the page when the user is signed in. By default, users will see their photo or their initials if a photo hasn't been uploaded.
     
 4. Select **Save changes**.
     
