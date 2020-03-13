@@ -150,20 +150,15 @@ You can also define segments using a "not equals" parameter, denoted as **-ne**,
 |---------|---------|
 |`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`    |`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` <p>In this example, we defined a segment called *NotSales* that includes everyone who is not in *Sales*. The **-ne** portion of the cmdlet refers to "not equals."  |
 
-<!-- text change line 153, add you can define complex goup filters using logical AND and OR after the comma -->
+In addition to defining segments using "equals" or "not equals", you can define a segment using both "equals" and "not equals" parameters. You can also define complex group filters using logical *AND* and *OR* operators.
 
-In addition to defining segments using "equals" or "not equals", you can define a segment using both "equals" and "not equals" parameters.
-
-<!-- take  from 'New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter  ""MemberOf and add as syntax column in front of 164-166 -->
 
 |Example  |
 |---------|
-|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` <p>In this example, we defined a segment called *LocalFTE* that includes people who are locally located and whose positions are not listed as *Temporary*.    |
-
-<!-- add this to the table add in the example column in the immediatley preceding table-->
-"MemberOf -eq 'group1@contoso.com'' -and Memberof -ne 'group3@contoso.com'"
-"MemberOf -eq 'group2@contoso.com'' -or MemberOf -ne 'group3@contoso.com'"
-"(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"
+|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` <p>In this example, we defined a segment called *LocalFTE* that includes people who are located locally and whose positions are not listed as *Temporary*.    |
+ |`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and Memberof -ne 'group3@contoso.com'"`|  <!-- need to add explanatory text-->
+|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "MemberOf -eq 'group2@contoso.com'' -or MemberOf -ne 'group3@contoso.com'"` | <!-- need to add explanatory text-->
+|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`|  <!-- need to add explanatory text-->
 
 
 > [!TIP]
