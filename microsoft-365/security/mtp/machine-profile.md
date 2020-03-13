@@ -5,8 +5,8 @@ keywords: security, malware, Microsoft 365, M365, Microsoft Threat Protection, M
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: lomayor
-author: lomayor
+ms.author: v-maave
+author: martyav
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance  
@@ -38,7 +38,7 @@ The Machine profile tabs allow you to toggle through an overview of security det
 
 The default tab in the main area of the page presents an overview of the most important security information about that device.
 
-Here, you can find cards a chart of the device's risk level and active alerts, any currently logged on users, a brief list of most and least frequent users, and security assessments that detail the device's exposure level, security recommendations, affected software, and discovered vulnerabilities.
+Here, you can find a chart of the device's risk level and active alerts, any currently logged on users, a brief list of most and least frequent users, and security assessments that detail the device's exposure level, security recommendations, affected software, and discovered vulnerabilities.
 
 ### Alerts tab
 
