@@ -52,6 +52,9 @@ To perform certain actions, such as viewing message headers or downloading email
 
 Threat Explorer is a powerful report that can serve multiple purposes, such as finding and deleting messages, identifying the IP address of a malicious email sender, or starting an incident for further investigation. The following procedure focuses on using Explorer to find and delete malicious email from recipient's mailboxes.
 
+> [!NOTE]
+> Default searches in Explorer don't currently include Zapped items.  This applies to all views, for example malware or phish views. To include Zapped items you need to add a 'Delivery action' set to include 'Removed by ZAP'. If you include all options, you'll see all delivery action results, including Zapped items.
+
 1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center.
 
 2. In the left navigation quick-launch, choose **Threat management** \> **Explorer**.
