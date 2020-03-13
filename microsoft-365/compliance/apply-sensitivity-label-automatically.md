@@ -42,7 +42,7 @@ There are two different scenarios for automatically applying a sensitivity label
     
     This scenario doesn't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label. This is reactive labeling, for content that isn't already labeled and the document is already saved, and the email is processed by Exchange. These two conditions are sometimes referred to as "data at rest" and "data in transit" respectively.
     
-    For configuration instructions, see [How to configure auto-labeling for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-for-sharepoint-ondrive-and-exchange) ont his page.
+    For configuration instructions, see [How to configure auto-labeling for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-for-sharepoint-onedrive-and-exchange) ont his page.
     
     Specific to auto-labeling for Exchange:
     - If you have Exchange mail flow rules that apply IRM encryption: When content is identified by both a mail flow rule and an auto-labeling policy, the label and any encryption settings from the label are applied to that content.
@@ -148,7 +148,7 @@ Here's an example of a prompt when you configure a condition to apply a label as
 
 - You can't use recommended labeling for documents that were previously labeled with a higher sensitivity. When the content's already labeled with a higher sensitivity, the user won't see the prompt with the recommendation and policy tip.
 
-## How to configure auto-labeling for SharePoint, OnDrive, and Exchange 
+## How to configure auto-labeling for SharePoint, OneDrive, and Exchange
 > [!NOTE]
 > Auto-labeling policies are currently in public preview and subject to change.
 
