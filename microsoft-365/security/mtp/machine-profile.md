@@ -5,8 +5,8 @@ keywords: security, malware, Microsoft 365, M365, Microsoft Threat Protection, M
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: lomayor
-author: lomayor
+ms.author: v-maave
+author: martyav
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance  
