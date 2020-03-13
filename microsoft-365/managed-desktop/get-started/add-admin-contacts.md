@@ -13,7 +13,7 @@ ms.collection: M365-modern-desktop
 There are several ways that Microsoft Managed Desktop service communicates with customers. To streamline communication and ensure we’re checking with the right people, you need to provide a set of admin contacts. Microsoft Managed Desktop IT Operations will contact these people for assistance troubleshooting issues for your tenant.
 
 > [!IMPORTANT]
-> You might have already added these contacts in the Admin portal. If so, take a moment now to double-check that the contact list is accurate, since Microsoft Managed Desktop **must** be able to reach them if a severe incident occurs.
+> You might have already added these contacts in the Admin portal. If so, take a moment now to double-check that the contact list is accurate, since Microsoft Managed Desktop **must** be able to reach them if a severe incident occurs
 
 ## Azure Active Directory access for Microsoft Managed Desktop Admin portal
 
