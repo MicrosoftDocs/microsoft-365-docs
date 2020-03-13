@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at Freenom for Office 365"
+title: "Create DNS records at Freenom for Microsoft"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
-description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Freenom for Office 365."
+description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Freenom for Microsoft."
 ---
 
-# Create DNS records at Freenom for Office 365
+# Create DNS records at Freenom for Microsoft
 
 [Check the Domains FAQ ](../setup/domains-faq.md) if you don't find what you're looking for. 
   
 > [!CAUTION]
-> The Freenom website doesn't support SRV records, which means that several Skype for Business Online and Outlook Web App features won't work. No matter which Office 365 plan you use, there are significant service limitations, and you may want to switch to a different DNS hosting provider. 
+> The Freenom website doesn't support SRV records, which means that several Skype for Business Online and Outlook Web App features won't work. No matter which Microsoft plan you use, there are significant service limitations, and you may want to switch to a different DNS hosting provider. 
   
-If despite the service limitations, you choose to manage your own Office 365 DNS records at Freenom, follow the steps in this article to verify your domain and set up DNS records for email and other services.
+If despite the service limitations, you choose to manage your own Microsoft DNS records at Freenom, follow the steps in this article to verify your domain and set up DNS records for email and other services.
   
-To learn about webhosting and DNS for websites with Office 365, see [Use a public website with Office 365](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
+To learn about webhosting and DNS for websites with Microsoft, see [Use a public website with Microsoft](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -39,7 +39,7 @@ To learn about webhosting and DNS for websites with Office 365, see [Use a publi
 ## Add a TXT record for verification
 <a name="bkmk_txt"> </a>
 
-Before you use your domain with Office 365, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Office 365 that you own the domain.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
@@ -68,7 +68,7 @@ Before you use your domain with Office 365, we have to make sure that you own it
     
     |**Name**|**Type**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|
-    |(leave blank)  <br/> |TXT  <br/> |3600 (seconds)  <br/> |MS=msXXXXXXXX  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(leave blank)  <br/> |TXT  <br/> |3600 (seconds)  <br/> |MS=msXXXXXXXX  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Freenom TXT values for verification](../../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
   
@@ -78,11 +78,11 @@ Before you use your domain with Office 365, we have to make sure that you own it
   
 8. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+When Microsoft finds the correct TXT record, your domain is verified.
   
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
+1. In the Microsoft admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
     
 2. On the **Domains** page, select the domain that you are verifying. 
@@ -100,7 +100,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
-## Add an MX record so email for your domain will come to Office 365
+## Add an MX record so email for your domain will come to Microsoft
 <a name="bkmk_mx"> </a>
 
 1. To get started, go to your domains page in Freenom by using [this link](https://my.freenom.com/). You'll be prompted to log in.
@@ -135,7 +135,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     |**Name**|**Type**|**TTL**|**Target**|**Priority**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(leave blank)  <br/> |MX (Mail Exchanger)  <br/> |3600 (seconds)  <br/> |\<domain-key\>.mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Office 365 account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9) <br/> |
+    |(leave blank)  <br/> |MX (Mail Exchanger)  <br/> |3600 (seconds)  <br/> |\<domain-key\>.mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9) <br/> |
    
    ![Freenom MX record](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
@@ -145,7 +145,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
 10. If there are any other MX records, delete them all. For each record, select **Delete**. When the message **Do you really want to remove this entry?** appears, select **OK**.
     
-## Add the CNAME records that are required for Office 365
+## Add the CNAME records that are required for Microsoft
 <a name="bkmk_cname"> </a>
 
 1. To get started, go to your domains page in Freenom by using [this link](https://my.freenom.com/). You'll be prompted to log in.
@@ -192,7 +192,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Instead, add the required Office 365 values to the current record so that you have a  *single*  SPF record that includes both sets of values. 
+> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. 
 
 1. To get started, go to your domains page in Freenom by using [this link](https://my.freenom.com/). You'll be prompted to log in.
     
