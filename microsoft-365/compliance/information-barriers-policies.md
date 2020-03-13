@@ -15,7 +15,7 @@ localization_priority: None
 description: "Learn how to define policies for information barriers in Microsoft Teams."
 ---
 
-# Define policies for information barriers
+# Define information barrier policies
 
 ## Overview
 
@@ -117,7 +117,7 @@ Determine which attributes in your organization's directory data you'll use to d
 
 ### Define segments using PowerShell
 
-Defining segments does not effect users; it just sets the stage for information barrier policies to be defined and then applied.
+Defining segments does not impact users; it just sets the stage for information barrier policies to be defined and then applied.
 
 1. Use the **New-OrganizationSegment** cmdlet with the **UserGroupFilter** parameter that corresponds to the [attribute](information-barriers-attributes.md) you want to use.
 
