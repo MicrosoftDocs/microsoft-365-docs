@@ -1,5 +1,5 @@
 ---
-title: "Office 365 user email settings"
+title: "User email settings"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,20 +16,20 @@ ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: "This article gives you information on managing settings for your users."
 ---
 
-# Office 365 user email settings
+# User email settings
 
 As the admin of an organization, there are email settings you can manage on your users. This article gives you information on managing these settings.
 
 ## Summary of email settings
 
-This table explains the various email settings you can change for a user in Office 365.
+This table explains the various email settings you can change for a user in Microsoft 365.
 
 
 |Mail setting|Description  |
 |---------|---------|
-|Mailbox permissions| **Read and manage** allows you to set whether people can read and manage other people's mailboxes. You can also set **Send as** and **Send on behalf** permissions for a person. Check out [Give mailbox permissions to another user in Office 365 - Admin Help](../add-users/give-mailbox-permissions-to-another-user.md) for more details. |
-|Email apps| Email apps allows you to choose the apps a user can use to access their Office 365 email. |
+|Mailbox permissions| **Read and manage** allows you to set whether people can read and manage other people's mailboxes. You can also set **Send as** and **Send on behalf** permissions for a person. Check out [Give mailbox permissions to another user in Microsoft 365 - Admin Help](../add-users/give-mailbox-permissions-to-another-user.md) for more details. |
+|Email apps| Email apps allows you to choose the apps a user can use to access their Microsoft 365 email. |
 |Show in global address list| Show in global address list allows you to enable or disable the visibility of the user's mailbox in the organization's address list. |
-|Email forwarding|Email forwarding allows you to add a forwarding email address to a user. You might want to do this if the person has multiple email addresses and they want to receive emails at all their email addresses. Check out [Configure email forwarding in Office 365](configure-email-forwarding.md) for more details.|
+|Email forwarding|Email forwarding allows you to add a forwarding email address to a user. You might want to do this if the person has multiple email addresses and they want to receive emails at all their email addresses. Check out [Configure email forwarding in Microsoft 365](configure-email-forwarding.md) for more details.|
 |Automatic replies|Automatic replies allows you to set an automatic reply when someone sends an email to the person's email address. You might want to do this if an employee leaves your company and you want to let the email sender know.|
 |More actions| **Convert to shared mailbox** allows you to convert the user's mailbox to a shared mailbox. You might do this if the person leaves your organization and you want to keep their mailbox data around for a while. Check out [Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) and [Open and use a shared mailbox](https://support.office.com/article/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).</br>**Edit Exchange properties** allows you to manage additional Exchange Online tasks using the Exchange admin center. Read about [managing user mailboxes in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|

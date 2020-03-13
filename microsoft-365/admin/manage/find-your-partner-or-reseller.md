@@ -1,5 +1,5 @@
 ---
-title: "Find your Office 365 partner or reseller"
+title: "Find your partner or reseller"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: "Learn how to find a new Office 365 partner, or get contact information for a partner you've worked with in the past. "
+description: "Learn how to find a new Microsoft 365 partner, or get contact information for a partner you've worked with in the past. "
 ---
 
-# Find your Office 365 partner or reseller
+# Find your partner or reseller
 
-As an admin, you can work with a partner to purchase, activate, and renew Office 365 subscriptions through a Microsoft Open Volume Licensing program. 
+As an admin, you can work with a partner to purchase, activate, and renew Microsoft 365 subscriptions through a Microsoft Open Volume Licensing program. 
   
  **Not sure if Open Volume Licensing is for you?** Check out the [Microsoft Open Programs overview](https://go.microsoft.com/fwlink/p/?LinkId=613298).
   
 ## Find a new partner or reseller
 
-If you're ready to buy or renew Office 365 through Open Volume Licensing, or you simply want more information about working with a partner, choose an option below. 
+If you're ready to buy or renew Microsoft 365 through Open Volume Licensing, or you simply want more information about working with a partner, choose an option below. 
   
 - [Search for a partner using Microsoft PinPoint](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     

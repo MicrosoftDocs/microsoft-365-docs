@@ -1,5 +1,5 @@
 ---
-title: "Find your domain registrar for Office 365"
+title: "Find your domain registrar"
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -23,7 +23,7 @@ ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: "Learn to find your domain registrar and DNS hosting provider using  InterNIC search."
 ---
 
-# Find your domain registrar for Office 365
+# Find your domain registrar
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
   

@@ -1,5 +1,5 @@
 ---
-title: "Buy a domain name in Office 365"
+title: "Buy a domain name"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,11 +20,11 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
-description: "Learn how to buy a domain name in Office 365."
+description: "Learn how to buy a domain name in Microsoft 365."
 ms.custom: okr_smb
 ---
 
-# Buy a domain name in Office 365
+# Buy a domain name
 
  *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators* or *regular users* won't be able to make these changes.*  
 
@@ -82,23 +82,23 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 
 ::: moniker range="o365-21vianet"
-## How to buy a domain for Office 365 operated by 21Vianet
+## How to buy a domain for Microsoft 365 operated by 21Vianet
 
 
 
-If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Office 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
+If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Microsoft 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
   
-To set up a domain in Office 365, you must own a domain and change some of the DNS records for your domain.
+To set up a domain in Microsoft 365, you must own a domain and change some of the DNS records for your domain.
   
 > [!CAUTION]
-> Some domain registrars or DNS hosting providers do not allow creating all the DNS records required by Office 365. The following list of hosting providers supports all the needed records. If you're thinking of using a different hosting provider, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
+> Some domain registrars or DNS hosting providers do not allow creating all the DNS records required by Microsoft 365. The following list of hosting providers supports all the needed records. If you're thinking of using a different hosting provider, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
-After you register your domain (at a domain registrar), you sign in to Office 365 as an admin and set up your domain so you can use it with your email address and other services..
+After you register your domain (at a domain registrar), you sign in to Microsoft 365 as an admin and set up your domain so you can use it with your email address and other services..
   
 > [!NOTE]
-> The SharePoint Online Public Website information in this article only applies if your organization purchased Office 365 prior to March 9, 2015. 
+> The SharePoint Online Public Website information in this article only applies if your organization purchased Microsoft 365 prior to March 9, 2015. 
 
-## Domain registrars that support all DNS records required for Office 365
+## Domain registrars that support all DNS records required for Microsoft 365
 
 - [Oray](https://oray.com/)
     
@@ -112,8 +112,8 @@ After you register your domain (at a domain registrar), you sign in to Office 36
 
 ## Related articles
 
-[Add a domain to Office 365](../setup/add-domain.md)
+[Add a domain to Microsoft 365](../setup/add-domain.md)
 
 [Domains FAQ](../setup/domains-faq.md)
 
-[Get help with Office 365 domains](get-help-with-domains.md)
+[Get help with Microsoft 365 domains](get-help-with-domains.md)

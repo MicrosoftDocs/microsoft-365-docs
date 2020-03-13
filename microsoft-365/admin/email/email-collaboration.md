@@ -1,5 +1,5 @@
 ---
-title: "Email collaboration in Office 365"
+title: "Email collaboration"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -27,7 +27,7 @@ ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: "Learn about the various types of groups and how to use them with the various collaboration features of Office 365."
 ---
 
-# Email collaboration in Office 365
+# Email collaboration
 
 Office 365 encourages collaboration through Groups in Outlook, distribution lists (also called distribution groups), shared mailboxes, and public folders. Each of these options has a different purpose, user experience, and feature set. What to use depends on what the user needs to do and which tools your organization provides.
   

@@ -1,5 +1,5 @@
 ---
-title: "Configure email forwarding in Office 365"
+title: "Configure email forwarding"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,7 +23,7 @@ ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: "Set up email forwarding to one or more email accounts using Office365."
 ---
 
-# Configure email forwarding in Office 365
+# Configure email forwarding
   
 As the admin of an organization, you might have company requirements to set up email forwarding for a user's mailbox. Email forwarding lets you forward email messages sent to a user's mailbox to another user's mailbox inside or outside of your organization.
 
@@ -36,7 +36,7 @@ As the admin of an organization, you might have company requirements to set up e
     
 - Email forwarding requires that the  *from*  account has a license. If you're setting up email forwarding because the user has left your organization, another option is to [convert their mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md). This way several people can access it. However, a shared mailbox cannot exceed 50GB. 
     
-You must be an Exchange administrator or Global administrator in Office 365 to do these steps. For more information, see the topic [About admin roles](../add-users/about-admin-roles.md).
+You must be an Exchange administrator or Global administrator in Microsoft 365 to do these steps. For more information, see the topic [About admin roles](../add-users/about-admin-roles.md).
 
 ::: moniker range="o365-worldwide"
 

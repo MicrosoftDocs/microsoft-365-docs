@@ -1,5 +1,5 @@
 ---
-title: "Gather the information you need to create Office 365 DNS records"
+title: "Gather the information you need to create DNS records"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,11 +20,11 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: "Learn to find the values/information you need to create DNS records for Office 365. "
+description: "Learn to find the values/information you need to create DNS records for Microsoft 365. "
 ms.custom: okr_smb
 ---
 
-# Gather the information you need to create Office 365 DNS records
+# Gather the information you need to create DNS records
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
   
@@ -32,9 +32,9 @@ ms.custom: okr_smb
 
 1. In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
     
-    If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page. 
+    If you're using Microsoft 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page. 
     
-    If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
+    If you're using Microsoft 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
     
 2. On the **Domains** page, select your domain, then select **Start setup**. You'll go back to the domains setup wizard to see the specific value you need to add.
     
@@ -44,17 +44,17 @@ ms.custom: okr_smb
     
 5. Go to [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md), and select your DNS host from the list of registrars to see the step-by-step instructions.
     
-6. Follow the steps for creating the TXT record (or MX record) at your DNS host, then verify the domain back in Office 365.
+6. Follow the steps for creating the TXT record (or MX record) at your DNS host, then verify the domain back in Microsoft 365.
 
-7. Remove the TXT record (or MX record) from your DNS host once the domain is verified in Office 365.
+7. Remove the TXT record (or MX record) from your DNS host once the domain is verified in Microsoft 365.
     
 ### Step 2: Find the MX record value for email and more
 
 1. In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
     
-    If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page. 
+    If you're using Microsoft 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page. 
     
-    If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
+    If you're using Microsoft 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
     
 2. On the **Domains** page, select your domain. 
     

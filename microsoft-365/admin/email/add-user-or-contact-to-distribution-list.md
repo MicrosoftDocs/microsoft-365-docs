@@ -1,5 +1,5 @@
 ---
-title: "Add a user or contact to an Office 365 distribution group"
+title: "Add a user or contact to a distribution group"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
-description: "Learn how to add an Office 365 user or contact to a distribution group. For example, you can add an employee, partner, or a vendor to your email distribution group."
+description: "Learn how to add a Microsoft 365 user or contact to a distribution group. For example, you can add an employee, partner, or a vendor to your email distribution group."
 ---
 
-# Add a user or contact to an Office 365 distribution group
+# Add a user or contact to a distribution group
 
-As the admin of an organization, you may need to add one of your users or contacts to a distribution group (see [Create distribution groups in Office 365](../setup/create-distribution-lists.md).) For example, you can add employees or external partners or vendors to an email distribution group.
+As the admin of an organization, you may need to add one of your users or contacts to a distribution group (see [Create distribution groups in Microsoft 365](../setup/create-distribution-lists.md).) For example, you can add employees or external partners or vendors to an email distribution group.
   
 ## Add a user or contact to a distribution group
 
@@ -87,6 +87,6 @@ If you haven't created the [contact](../misc/contacts.md) yet, do that first as 
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
   
-Learn how to [send email as a distribution group in Office 365](../manage/send-email-as-distribution-list.md).
+Learn how to [send email as a distribution group in Microsoft 365](../manage/send-email-as-distribution-list.md).
   
 

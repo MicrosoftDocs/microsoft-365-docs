@@ -1,5 +1,5 @@
 ---
-title: "Transfer data manually between two Office 365 accounts"
+title: "Transfer data manually between two accounts"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,15 +17,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
-description: "Find how to transfer data manually between two Office 365 accounts when you changed the plan or company name, or combined multiple subscriptions into one."
+description: "Find how to transfer data manually between two Microsoft 365 accounts when you changed the plan or company name, or combined multiple subscriptions into one."
 ---
 
-# Transfer data manually between two Office 365 accounts
+# Transfer data manually between two accounts
 
-Prepare to roll up your sleeves and block out a chunk of time on your calendar: transferring data between two Office 365 accounts is a manual, complicated, and time-consuming process. This is not an automated or supported process. We'll get you started.
+Prepare to roll up your sleeves and block out a chunk of time on your calendar: transferring data between two Microsoft 365 accounts is a manual, complicated, and time-consuming process. This is not an automated or supported process. We'll get you started.
   
 > [!CAUTION]
-> There will be down time during the process where email, Skype for Business and a public website hosted on Office 365 won't work. Users will get new user names and passwords, and they'll need to reset up Outlook.
+> There will be down time during the process where email, Skype for Business and a public website hosted on Microsoft 365 won't work. Users will get new user names and passwords, and they'll need to reset up Outlook.
 
 **Only transfer data manually using the instructions in this topic if one of the following applies:**
   
@@ -40,28 +40,28 @@ Prepare to roll up your sleeves and block out a chunk of time on your calendar: 
 
 |**Tasks**|**Steps**|
 |:-----|:-----|
-|Purchase the plan you want to move to.  <br/> |When you sign up, you specify the company name to use in the initial domain names:  *yourcompany*  .onmicrosoft.com,  *yourcompany*  -public.sharepoint.com, and  *yourcompany*  .sharepoint.com. You need to use a different  *yourcompany*  name than you did for any existing subscriptions.  <br/> > [!NOTE]>  It typically takes a minimum of several months after cancelling a subscription to release the initial domain names that use  *yourcompany*  from our systems. Even if you plan to save all your data from your old Office 365 subscription, and cancel that subscription, the old  *yourcompany*  value is not immediately available for use in a new subscription.           |
-|Remove your custom domain from your old Office 365 subscription.  <br/> | Follow the [required steps before you remove a domain](remove-a-domain.md) to remove the domain name from user email addresses and remove DNS records for email and Lync for the custom domain. If you host your public website on Office 365, you'll also need to remove the CNAME record that points to it.  <br/> > [!IMPORTANT]>  After you remove the MX record that routes email to this custom domain, email will stop working until you have added the domain to your new account, set up the new MX record, and set up your users. When you remove the DNS records for Lync, Lync will stop working. And after you remove the CNAME record that points to your public website, it will not be available.           [Remove the domain](remove-a-domain.md) .  <br/> |
+|Purchase the plan you want to move to.  <br/> |When you sign up, you specify the company name to use in the initial domain names:  *yourcompany*  .onmicrosoft.com,  *yourcompany*  -public.sharepoint.com, and  *yourcompany*  .sharepoint.com. You need to use a different  *yourcompany*  name than you did for any existing subscriptions.  <br/> > [!NOTE]>  It typically takes a minimum of several months after cancelling a subscription to release the initial domain names that use  *yourcompany*  from our systems. Even if you plan to save all your data from your old Microsoft 365 subscription, and cancel that subscription, the old  *yourcompany*  value is not immediately available for use in a new subscription.           |
+|Remove your custom domain from your old Microsoft 365 subscription.  <br/> | Follow the [required steps before you remove a domain](remove-a-domain.md) to remove the domain name from user email addresses and remove DNS records for email and Lync for the custom domain. If you host your public website on Microsoft 365, you'll also need to remove the CNAME record that points to it.  <br/> > [!IMPORTANT]>  After you remove the MX record that routes email to this custom domain, email will stop working until you have added the domain to your new account, set up the new MX record, and set up your users. When you remove the DNS records for Lync, Lync will stop working. And after you remove the CNAME record that points to your public website, it will not be available.           [Remove the domain](remove-a-domain.md) .  <br/> |
 |Set up your custom domain for your new subscription, and set up your users.  <br/> | Set up your new subscription, including creating the required DNS records for your custom domain.  <br/>  Create your users, with email addresses on your custom domain.  <br/> |
 |Transfer data from your old subscription to your new subscription.  <br/> | Sign in to both accounts in separate browser windows:  <br/>  Right-click the Internet Explorer icon, and open two InPrivate browser windows. You can use different credentials in the two windows to sign in on both accounts.  <br/> [Transfer administrative settings between subscriptions](#email) <br/> [Transfer team site structure and data](#transfer-team-site-structure-and-data) <br/> [Transfer a public website between subscriptions](#transfer-a-public-website-between-subscriptions) <br/> [Transfer administrative settings between subscriptions](#email) <br/> |
-|Cancel the subscription for the plan you're done with by calling Microsoft Support for Office 365.  <br/> | Verify that your new subscription is working and all data has been transferred.  <br/>  [Contact customer support](../contact-support-for-business-products.md) to cancel your old subscription.  <br/> |
+|Cancel the subscription for the plan you're done with by calling Microsoft Support for Microsoft 365.  <br/> | Verify that your new subscription is working and all data has been transferred.  <br/>  [Contact customer support](../contact-support-for-business-products.md) to cancel your old subscription.  <br/> |
 
 ## Transfer administrative settings between subscriptions
 
 Go to the following pages on each account, and set up the new account based on the old account's settings.
   
-If you are transferring data from Office 365 to Office 365 Midsize Business or Office 365 Enterprise, the admin pages are structured differently. Watch a [Video: Introducing Office 365 Enterprise](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx), and go to the following places to look at admin settings.
+If you are transferring data from Microsoft 365 to Microsoft 365 Midsize Business or Microsoft 365 Enterprise, the admin pages are structured differently. Watch a [Video: Introducing Microsoft 365 Enterprise](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx), and go to the following places to look at admin settings.
   
-For Office 365 Enterprise and Office 365 Midsize Business:
+For Microsoft 365 Enterprise and Microsoft 365 Midsize Business:
   
 |**Location**|**Purpose**|
 |:-----|:-----|
-|**Admin** \> **Office 365** \> **Service settings** <br/> |Select each tab for settings for mail, sites, Lync, user software, passwords, community, rights management, and mobile.  <br/> |
+|**Admin** \> **Microsoft 365** \> **Service settings** <br/> |Select each tab for settings for mail, sites, Lync, user software, passwords, community, rights management, and mobile.  <br/> |
 |**Admin** \> **Exchange** <br/> | Exchange Online settings  <br/> |
 |**Admin** \> **SharePoint** <br/> | SharePoint Online settings  <br/> |
 |**Admin** \> **Skype for Business** <br/> |Additional Skype for Business settings  <br/> |
 
-For Office 365 Small Business
+For Microsoft 365 Small Business
   
 |**Location**|**Purpose**|
 |:-----|:-----|
@@ -69,7 +69,7 @@ For Office 365 Small Business
 
 ## Transfer a public website between subscriptions
 
-If you have a public website hosted on Office 365, you need to save it and re-create it on your new subscription.
+If you have a public website hosted on Microsoft 365, you need to save it and re-create it on your new subscription.
   
 > [!NOTE]
 > If your public website is hosted at a DNS hosting provider, no changes are required. It will not be affected by your transition.
