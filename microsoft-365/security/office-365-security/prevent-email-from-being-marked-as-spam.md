@@ -30,7 +30,7 @@ You can resolve many issues with false positives by viewing the email message he
 
 Specifically, you need to look for a header field named **X-Forefront-Antispam-Report**. The important values to look for are:
 
-- **SFV:SPM**: The message was marked as spam by the anti-spam filter (also known as the _content filter_). For more information, see [Office 365 email anti-spam protection](anti-spam-protection.md).
+- **SFV:SPM**: The message was marked as spam by anti-spam filtering (also known as spam filtering or content filtering). For more information, see [Office 365 email anti-spam protection](anti-spam-protection.md).
 
 - **SFV:BLK**: The message was marked as spam because the sender's email address is on the **recipient's** Blocked Senders list. For more information, see [Filter junk email and spam in Outlook on the web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d) and [Overview of the Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 
@@ -53,7 +53,7 @@ Specifically, you need to look for a header field named **X-Forefront-Antispam-R
   If the message was from a spoofed sender, the corresponding legitimate sender will need to verify their email domain's SPF and DKIM records in their public DNS. Check the **Authentication-Results** header field for more information. Although it may be difficult to get all senders to use proper email authentication methods, bypassing these checks can be extremely dangerous and is the top cause of spoofing and phishing messages.
 
 > [!NOTE]
-> * To learn more about other anti-spam message headers and values, see [Anti-spam message headers](anti-spam-message-headers.md). <br/><br/>* Other header fields and values that aren't specifically described are used exclusively by the Microsoft anti-spam team for diagnostic purposes. <br/><br/>* An **X-CustomSpam** header field in the message header indicates the message was marked as spam by Advanced Spam Filtering (ASF). We're in the process of moving ASF functionality to other parts of the filtering stack, and we recommend that you **turn off** the ASF settings that are currently available in anti-spam policies. For more information, see [Advanced spam filtering options](advanced-spam-filtering-asf-options.md).
+> <ul><li>To learn more about other anti-spam message headers and values, see [Anti-spam message headers](anti-spam-message-headers.md).</li><li>Other header fields and values that aren't specifically described are used exclusively by the Microsoft anti-spam team for diagnostic purposes.</li><li>An **X-CustomSpam** header field in the message header indicates the message was marked as spam by the Advanced Spam Filter (ASF) settings in anti-spam policies. We're in the process of moving ASF functionality to other parts of the filtering stack, and we recommend that you **turn off** the ASF settings that are currently available in anti-spam policies. For more information, see [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md)</li></ul>.
 
 ## Solutions for too much spam
 

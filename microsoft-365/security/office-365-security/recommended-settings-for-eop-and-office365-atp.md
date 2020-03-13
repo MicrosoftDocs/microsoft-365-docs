@@ -25,7 +25,7 @@ description: "What are best practices for Exchange Online Protection (EOP) and A
 Although we empower security administrators to customize their security settings, there are two security levels in EOP and Office 365 ATP that we recommend: **Standard** and **Strict**. Each customer's environment and needs are different, but we believe that these levels of mail filtering configurations will help prevent unwanted mail from reaching your employees' inbox in most situations.
 
 > [!IMPORTANT]
-> The Junk Email Configuration has to be enabled on the mailbox in order for filtering to work properly. This is enabled by default, but should be checked if filtering does not seem to be working. Read [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) to find out more.
+> The junk email rule needs to be enabled on a mailbox in order for filtering to work properly. It's enabled by default, but you should check it if filtering does not seem to be working. For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 This topic describes these Microsoft-recommended settings to help protect your Office 365 users.
 
@@ -64,7 +64,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 
 There are several other Advanced Spam Filter (ASF) settings in anti-spam policies that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this topic.
 
-We recommend that you turn these ASF settings **Off** for both **Standard** and **Strict** levels:
+We recommend that you turn these ASF settings **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
 
 |||
 |----|---|

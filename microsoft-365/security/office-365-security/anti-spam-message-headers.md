@@ -55,7 +55,7 @@ After accessing the message header information, search for **X-Forefront-Antispa
 |SFV:SKS|The message was marked as spam prior to being processed by spam filtering (for example, the message was marked as SCL 5 to 9 by a mail flow rule).|
 |SFV:SPM|The message was marked as spam by spam filtering.|
 |SRV:BULK|The message was identified as bulk email by spam filtering and the bulk complaint level (BCL) threshold. When the _MarkAsSpamBulkMail_ parameter is `On` (it's on by default), a bulk email message is marked as high confidence spam (SCL 9). For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).|
-|X-CustomSpam: \[ASFOption\]|The message matched an Advanced Spam Filter (ASF) setting. To see the X-header value for each ASF setting, see [Advanced Spam Filter settings in Office 365](advanced-spam-filtering-asf-options.md).|
+|X-CustomSpam: \[ASFOption\]|The message matched an Advanced Spam Filter (ASF) setting. To see the X-header value for each ASF setting, see [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).|
 |
 
 ## X-Microsoft-Antispam message header fields

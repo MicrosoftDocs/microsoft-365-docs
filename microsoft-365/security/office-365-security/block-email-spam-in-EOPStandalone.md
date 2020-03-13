@@ -36,13 +36,13 @@ Customize your Office 365 spam filter by adding the sender IP address to the con
 
 ### Block bulk mail with mail flow rules (transport rules) or the spam filter
 
-Is the spam primarily bulk mail, for example, newsletters or promotions? You can customize the spam filter in Office 365 if you [Use mail flow rules to configure bulk email filtering](use-transport-rules-to-configure-bulk-email-filtering.md) or turn on the **Bulk mail** setting in your spam filter's [Advanced spam filtering options](advanced-spam-filtering-asf-options.md). In the Exchange admin center, get started by clicking **Protection** \> **Content filter** and then double click the filter policy you want to adjust. Click **Spam and bulk mail actions** to adjust the settings, as shown here.
+Is the spam primarily bulk mail, for example, newsletters or promotions? You can customize the spam filter in Office 365 if you [Use mail flow rules to configure bulk email filtering](use-transport-rules-to-configure-bulk-email-filtering.md) or turn on the **Bulk mail** setting in your spam filter's [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md). In the Exchange admin center, get started by clicking **Protection** \> **Content filter** and then double click the filter policy you want to adjust. Click **Spam and bulk mail actions** to adjust the settings, as shown here.
 
 ![Setting the bulk mail filter in Exchange Online](../../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
 
 ### Block email spam using spam filter block lists
 
-[Configure your spam filter policies](configure-your-spam-filter-policies.md) to add the sender address to the sender block list or domain to the domain block list in the spam filter. Emails from a sender or domain on a spam filter block list will marked as spam.
+[Configure your spam filter policies](configure-your-spam-filter-policies.md) to add the sender address to the blocked sender list or domain to the blocked domain list in the spam filter. Emails from a sender or domain on a spam filter block list will marked as spam.
 
 ## Email users can also help ensure that false negative and email spam is blocked with Office 365 spam filter
 

@@ -18,7 +18,7 @@ ms.collection:
 description: "The Advanced Spam Filter (ASF) settings in anti-spam policies (also known as spam filter policies or content filter policies) allow admins to identify messages that contain specific message properties that are commonly used in spam. Depending on the property, ASF detections will either mark the message as Spam or High confidence spam."
 ---
 
-# Advanced Spam Filter settings in Office 365
+# Advanced Spam Filter (ASF) settings in Office 365
 
 > [!NOTE]
 > ASF settings that are currently available in anti-spam policies are in the process of being deprecated. We recommend that you don't use these settings in anti-spam policies. The functionality of these ASF settings is being incorporated into other parts of the filtering stack. For more information, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).

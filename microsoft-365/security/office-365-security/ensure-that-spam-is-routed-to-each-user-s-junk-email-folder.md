@@ -23,7 +23,7 @@ description: "Admins can learn how to configure their on-premises Exchange envir
 > [!IMPORTANT]
 > This topic is only for standalone EOP customers in hybrid environments. This topic does not apply to Office 365 customers with Exchange Online mailboxes.
 
-If you're a standalone Exchange Online Protection (EOP) customer in a hybrid environment, you need to configure your on-premises Exchange organization to recognize the spam filtering verdict of EOP, and to enforce the default action for spam, which is to deliver the spam messages to the on-premises user's Junk Email folder.
+If you're a standalone Exchange Online Protection (EOP) customer in a hybrid environment, you need to configure your on-premises Exchange organization to recognize and translate the spam filtering verdicts of EOP, so the junk email rule in the on-premises mailbox can move messages to the Junk Email folder.
 
 Specifically, you need to create mail flow rules (also known as transport rules) in your on-premises Exchange organization with conditions that find messages with any of the following EOP anti-spam headers and values, and actions that set the spam confidence level (SCL) of those messages to 6:
 
@@ -31,7 +31,7 @@ Specifically, you need to create mail flow rules (also known as transport rules)
 
 - `X-Forefront-Antispam-Report: SFV:SKS` (message marked as spam by mail flow rules in EOP before spam filtering)
 
-- `X-Forefront-Antispam-Report: SFV:SKB` (message marked as spam by spam filtering due to the sender's email address or email domain being in the sender block list or the domain block list in EOP)
+- `X-Forefront-Antispam-Report: SFV:SKB` (message marked as spam by spam filtering due to the sender's email address or email domain being in the blocked sender list or the blocked domain list in EOP)
 
 For more information about these header values, see [Anti-spam message headers](anti-spam-message-headers.md).
 
@@ -50,10 +50,10 @@ This topic describes how to create these mail flow rules the Exchange admin cent
 
   - The _SCLJunkThreshold_ parameter value on the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) cmdlet in the Exchange Management Shell. The default value is blank ($null), which means the organization setting is used.
 
-  - Whether the junk email rule is enabled on the mailbox (the _Enabled_ parameter value is $true on the [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) cmdlet in the Exchange Management Shell). The junk email rule is what actually moves the message to the Junk Email folder after delivery. By default, the junk email rule is enabled on mailboxes.
-  
   For details, see [Exchange spam confidence level (SCL) thresholds](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl).
 
+  - Whether the junk email rule is enabled on the mailbox (the _Enabled_ parameter value is $true on the [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) cmdlet in the Exchange Management Shell). It's the junk email rule that actually moves the message to the Junk Email folder after delivery. By default, the junk email rule is enabled on mailboxes. For more information, see [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
+  
 - To open the EAC on an Exchange Server, see [Exchange admin center in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). To open the Exchange Management Shell, see [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
 
 - For more information about mail flow rules in on-premises Exchange, see the following topics:
