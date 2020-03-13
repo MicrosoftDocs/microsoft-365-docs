@@ -21,7 +21,7 @@ If you're an Office 365 customer with mailboxes in Exchange Online or a standalo
 
 The best method to block senders varies on the scope of impact. For a single user, the right solution could be Outlook Blocked Senders. For many users, one of the other options would be more appropriate. The following options are ranked by both impact scope and breadth. The list goes from narrow to broad, but *read the specifics* for full recommendations.
 
-1. Outlook Blocked Senders
+1. Outlook Blocked Senders (the Blocked Senders list that's stored in each mailbox)
 
 2. Blocked sender lists or blocked domain lists (anti-spam policies)
 
@@ -34,11 +34,11 @@ The best method to block senders varies on the scope of impact. For a single use
 
 In contrast, you also have several options to always allow email from specific sources using _safe sender lists_. For more information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
 
-## Use Outlook Blocked Senders (end-user managed)
+## Use Outlook Blocked Senders
 
-When only a small number of users received unwanted email, you should use Outlook Blocked Senders, because only the affected users are impacted. For instructions, see [Block senders or unblock senders in Outlook on the web](https://support.office.com/article/9bf812d4-6995-4d19-901a-76d6e26939b0) or [Overview of the Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
+When only a small number of users received unwanted email, users or admins can add the unwanted sender email addresses to the Blocked Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-When messages are successfully blocked due to Blocked Senders, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:BLK`.
+When messages are successfully blocked due to a user's Blocked Senders list, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:BLK`.
 
 > [!NOTE]
 > If the unwanted messages are newsletters from a reputable and recognizable source, unsubscribing from the email is another option to stop the user from receiving the messages.

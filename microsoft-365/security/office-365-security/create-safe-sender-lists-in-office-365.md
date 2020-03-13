@@ -76,11 +76,11 @@ The following example assumes you need email from contoso.com to skip spam filte
 
 ![Mail flow rule settings in the EAC for bypassing spam filtering.](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
-## Use Outlook Safe Senders (end-user managed)
+## Use Outlook Safe Senders
 
-Instead of admin configuration at the organization level, end users can also allow email senders through Outlook Safe Senders. For instructions, see [Block senders or unblock senders in Outlook on the web](https://support.office.com/article/9bf812d4-6995-4d19-901a-76d6e26939b0) or [Overview of the Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
+Instead of configuration at the organization level, users or admins can add the trusted sender email addresses to the Blocked Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-When messages are successfully allowed due to Safe Senders, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:SFE`, which indicates that spam, spoof, and phish filtering were bypassed.
+When messages skip spam filtering due to a user's Safe Senders list, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:SFE`, which indicates that spam, spoof, and phish filtering were bypassed.
 
 ## Use the IP Allow List
 
