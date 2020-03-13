@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 3/12/2020
+ms.date: 3/11/2020
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
