@@ -22,15 +22,15 @@ description: "Administrators can import third-party data from  social media plat
 
 Microsoft 365 lets administrators import and archive third-party data from social media platforms, instant messaging platforms, and document collaboration platforms, to mailboxes in your Microsoft 365 organization. Examples of third-party data sources that you can import to Microsoft 365 include the following services: 
   
-- **Social:** Facebook, LinkedIn, Twitter, and Yammer 
+- **Social:** Facebook, LinkedIn, Twitter, and Yammer
 
-- **Instant messaging:** Yahoo Messenger, GoogleTalk, and Cisco Jabber 
+- **Instant messaging:** ICE Chat, Yahoo Messenger, and GoogleTalk
 
-- **Document collaboration:** Box and DropBox 
+- **Document collaboration:** Box and DropBox
 
-- **Vertical industries:** Customer Relationship Management (such as Salesforce Chatter) and Financial Services (such as Bloomberg and Thomson Reuters) 
+- **Vertical industries:** Customer Relationship Management (such as Salesforce Chatter) and Financial Services (such as Bloomberg and Thomson Reuters)
 
-- **SMS/text messaging:** BlackBerry 
+- **SMS/text messaging:** BlackBerry
 
 After third-party data is imported, you can apply Microsoft 365 compliance features&mdash;such as Litigation Hold, eDiscovery, In-Place Archiving, Auditing, Communication compliance, and retention policies&mdash;to this data. For example, when a mailbox is placed on Litigation Hold, third-party data is preserved. You can search third-party data by using Microsoft eDiscovery tools. Or you can apply archiving and retention policies to third-party data just like you can for Microsoft data. In short, archiving third-party data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
@@ -45,6 +45,8 @@ There are two ways to import and archive third-party data in Microsoft 365:
    - **LinkedIn:** [Set up a connector to archive LinkedIn data](archive-linkedin-data.md)
 
    - **Instant Bloomberg:** [Set up a connector to archive Instant Bloomberg data](archive-instant-bloomberg-data.md)
+
+   - **ICE Chat:** [Set up a connector to archive ICE Chat data (preview)](archive-icechat-data.md)
 
    - **HR data:** [Set up a connector to import HR data](import-hr-data.md)
 
