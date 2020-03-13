@@ -35,18 +35,18 @@ Learn how to customize your theme in the Microsoft 365 admin center. As the admi
 
 3. On the **Customs themes** panel, change the theme elements you want for your organization:
     
-  - **Use a custom logo image**: Choose whether to use an image from a URL or to upload an image. If you use a URL, please ensure that the URL uses HTTPS and is 200 x 30 pixels of any format of any size. You may upload a logo under 10 KB that is 200 x 30 pixels in JPG, PNG, GIF, or SVG format.
+    - **Use a custom logo image**: Choose whether to use an image from a URL or to upload an image. If you use a URL, please ensure that the URL uses HTTPS and is 200 x 30 pixels of any format of any size. You may upload a logo under 10 KB that is 200 x 30 pixels in JPG, PNG, GIF, or SVG format.
 
-    > [!NOTE]
-    > For the logo to appear in the SharePoint mobile app, use only SVG images. Images uploaded in any other format don’t display in the app. Logos are not clickable in the SharePoint Mobile app.
-    
-  - **Make logo clickable**: You may use your logo in the navigation bar as a link to any company resource. You may enter the URL for the logo here, starting with http:// or https://. This is optional.
-    
-  - **Select background image**: Select the image and upload your own JPG, PNG, or GIF with a resolution of 1366 x 50 pixels, no larger than 15 KB. The background image appears in the top navigation bar on every page.
-    
-    > [!NOTE]
-    > Images that contain text may not display as expected. Built-in elements that appear on the right and left sides of the navigation bar can vary across services, and your text may be obscured by those elements. Due to the dynamic nature of the navigation bar, at this time we are unable to provide guidance for image padding that would result in a consistent experience. 
-    
+      > [!NOTE]
+      > For the logo to appear in the SharePoint mobile app, use only SVG images. Images uploaded in any other format don’t display in the app. Logos are not clickable in the SharePoint Mobile app.
+
+    - **Make logo clickable**: You may use your logo in the navigation bar as a link to any company resource. You may enter the URL for the logo here, starting with http:// or https://. This is optional.
+
+    - **Select background image**: Select the image and upload your own JPG, PNG, or GIF with a resolution of 1366 x 50 pixels, no larger than 15 KB. The background image appears in the top navigation bar on every page.
+
+      > [!NOTE]
+      > Images that contain text may not display as expected. Built-in elements that appear on the right and left sides of the navigation bar can vary across services, and your text may be obscured by those elements. Due to the dynamic nature of the navigation bar, at this time we are unable to provide guidance for image padding that would result in a consistent experience. 
+
     - **Navigation bar color**: Select a color to use for the background of the navigation bar. The appears at the top on every page.
 
     - **Text and icons**: Select a color to use for the text and icons on the top navigation bar.
