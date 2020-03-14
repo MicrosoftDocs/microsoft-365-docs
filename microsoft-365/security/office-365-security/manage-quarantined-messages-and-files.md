@@ -34,7 +34,7 @@ Admins in organizations with Advance Threat Protection (ATP) can also view, down
 
   - Messages quarantined by anti-spam policies (spam, phishing, and bulk email): 30 days. This is the default and maximum value. To configure this value, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
-  - Messages quarantined by mail flow rules (the rule action is **Deliver the message to the hosted quarantine**): The quarantine value in the default anti-spam policy, which you can modify, and which is also 30 days by default..
+  - Messages quarantined by mail flow rules (the rule action is **Deliver the message to the hosted quarantine**): The quarantine value in the default anti-spam policy, which you can modify, and which is also 30 days by default.
 
   - Messages that contain malware: 15 days.
 
