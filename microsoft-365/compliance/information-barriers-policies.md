@@ -64,7 +64,7 @@ In addition to the [required licenses and permissions](information-barriers.md#r
 
 - Audit logging - In order to look up the status of a policy application, audit logging must be turned on. We recommend doing this before you begin to define segments or policies. To learn more, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).
 
-- No address book policies -  Before you define and apply information barrier policies, make sure no Exchange address book policies are in place. Information barriers are based on address book policies, but the two kinds of policies are not compatible. If you do have such policies, make sure to [remove your address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) first. Once information barrier policies are enabled, all users ***who are not included*** in an information barrier segment will see the [hierarchical address book](https://docs.microsoft.com/en-us/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange online.   
+- No address book policies -  Before you define and apply information barrier policies, make sure no Exchange address book policies are in place. Information barriers are based on address book policies, but the two kinds of policies are not compatible. If you do have such policies, make sure to [remove your address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) first. Once information barrier policies are enabled and you have hierarchical address book enabled, all users ***who are not included*** in an information barrier segment will see the [hierarchical address book](https://docs.microsoft.com/en-us/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange online.   
 
 - PowerShell -  Currently, information barrier policies are defined and managed in the Office 365 Security & Compliance Center using PowerShell cmdlets. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the AzureRM module.
     - [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
@@ -156,13 +156,13 @@ In addition to defining segments using "equals" or "not equals", you can define 
 |Example  |
 |---------|
 |`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` <p>In this example, we defined a segment called *LocalFTE* that includes people who are located locally and whose positions are not listed as *Temporary*.    |
- |`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and Memberof -ne 'group3@contoso.com'"`|  <!-- need to add explanatory text-->
-|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "MemberOf -eq 'group2@contoso.com'' -or MemberOf -ne 'group3@contoso.com'"` | <!-- need to add explanatory text-->
-|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`|  <!-- need to add explanatory text-->
+ |`New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`|  <p>In this example, we defined a segment called *Segment1* that includes people who are members of group1@contoso.com and not members of group3@contoso.com.
+|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com'' -or MemberOf -ne 'group3@contoso.com'"` | In this example, we defined a segment called *Segment2* that includes people who are members of group2@contoso.com and not members of group3@contoso.com.
+|`New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`|  In this example, we defined a segment called *Segment1and2* that includes people members of group1@contoso.com and group2@contoso.com and not members of group3@contoso.com.
 
 
 > [!TIP]
-> If possible, use segment definitions that include "-eq" or "-ne". Try not to define complex segment definitions. 
+> If possible, use segment definitions that include "-eq" or "-ne". Try not to define complex segment definitions.
 
 ## Part 2: Define information barrier policies
 

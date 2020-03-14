@@ -168,9 +168,11 @@ Make sure that your organization does not have [Exchange address book policies](
 
 ## Issue: Information barrier policy not applied to all designated users
 
-After you have defined segments, defined information barrier policies, and have attempted to apply those policies, you find that the policy is applying to some recipients, but not to others.
+After you have defined segments, defined information barrier policies, and have attempted to apply those policies, you may find that the policy is applying to some recipients, but not to others.
 When you run the `Get-InformationBarrierPoliciesApplicationStatus` cmdlet, search the output for text like this.
 
+> Identity: `<application guid>`
+>
 > Total Recipients: 81527
 >
 > Failed Recipients: 2
@@ -181,20 +183,27 @@ When you run the `Get-InformationBarrierPoliciesApplicationStatus` cmdlet, searc
 
 ### What to do
 
-1. Search in the audit log for `application guid`. You can copy this PowerShell code and modify for your variables.
+1. Search in the audit log for `<application guid>`. You can copy this PowerShell code and modify for your variables.
 
 ```powershell
-$s = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(`application guid`)} 
+$DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
 ```
 
-2. Check the detailed output from the audit log for the `"UserId"` and `"ErrorDetails"`. This will give you the reason for the failure. You can copy this PowerShell code and modify for your variables.
+2. Check the detailed output from the audit log for the values of the `"UserId"` and `"ErrorDetails"` fields. This will give you the reason for the failure. You can copy this PowerShell code and modify for your variables.
 
 ```powershell
-   $s[1] |fl
+   $DetailedLogs[1] |fl
 ```
+ For example:
 
-3. Usually, you will find that a user has been included in more than one segment. Once you resolve this conflict, run this process again.
+> "UserId":  User1
+> 
+>"ErrorDetails":"Status: IBPolicyConflict. Error: IB  segment               "segment id1" and IB segment "segment id2" has conflict and cannot be assigned to the recipient. 
 
+3. Usually, you will find that a user has been included in more than one segment. You can fix this by updating the `-UserGroupFilter` value in `OrganizationSegments`.
+
+<!-- 4. Run  the Rerun apply information barrier policies this cmdlet again. link to information-barrier-policies.md## Part 3: Apply information barrier policies-->
+ 
 
 ## Related topics
 
