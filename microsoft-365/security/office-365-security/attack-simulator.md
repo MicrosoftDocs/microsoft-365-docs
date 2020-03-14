@@ -181,7 +181,7 @@ If you're going to use one of the built-in templates or create the email message
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>All of the URLs are intentionally http, not https.</li><li>A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign.</li><li>You are required to select a URL. For **Spear Phishing (Attachment)** campaigns, you can remove the link from the body of the message in the next step (otherwise, the message will contain both a link **and** an attachment).</li></ul>
+     > <ul><li>All of the URLs are intentionally http, not https.</li><li>A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign.</li><li>You are required to select a URL. For <b>Spear Phishing (Attachment)</b> campaigns, you can remove the link from the body of the message in the next step (otherwise, the message will contain both a link <b>and</b> an attachment).</li></ul>
 
    - **Attachment Type**: This setting is only available in **Spear Phishing (Attachment)** campaigns. Click the drop down and select **.DOCX** or **.PDF** from the list.
 
@@ -215,7 +215,7 @@ A *password attack* tries to guess passwords for user accounts in an organizatio
 
 In Attack Simulator, two different types of password attack campaigns are available for you to test the complexity of your users' passwords:
 
-- **Brute force password (dictionary attack)**: A *brute force** or *dictionary* attack uses a large dictionary file of passwords on a user account with the hope that one of them will work (many passwords against one account). Incorrect password lock-outs help deter brute force password attacks.
+- **Brute force password (dictionary attack)**: A *brute force* or *dictionary* attack uses a large dictionary file of passwords on a user account with the hope that one of them will work (many passwords against one account). Incorrect password lock-outs help deter brute force password attacks.
 
   For the dictionary attack, you can specify one or many passwords to try (manually entered or in an uploaded file), and you can specify one or many users.
 
