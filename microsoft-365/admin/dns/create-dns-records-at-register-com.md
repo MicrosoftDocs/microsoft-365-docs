@@ -110,7 +110,7 @@ Follow the steps below or [watch the video (start at 3:32)](https://support.offi
     
 5. Scroll to the **Advanced Technical Settings** section, and then select **Edit Mail Exchanger Records**.
     
-    ![Select Edit Mail Exchanger Records](../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
+    ![Select Edit Mail Exchanger Records](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
   
 6. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -120,19 +120,19 @@ Follow the steps below or [watch the video (start at 3:32)](https://support.offi
     |:-----|:-----|:-----|
     |@  <br/> |High  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Note:** Get your \<*domain-key*\> from your Office 365 account. <br> [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![Copy and paste the value from the table](../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
+    ![Copy and paste the value from the table](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
 7. If there were any other MX records already listed, select each of those records to be deleted.
     
-    ![Select each record to delete](../media/0708d03e-346f-4ae7-8cc4-01589efc00ce.png)
+    ![Select each record to delete](../../media/0708d03e-346f-4ae7-8cc4-01589efc00ce.png)
   
 8. Select **Continue**.
     
-    ![Select Continue](../media/6ef6ce01-ce21-4e3c-8209-4aa9a3dd4b76.png)
+    ![Select Continue](../../media/6ef6ce01-ce21-4e3c-8209-4aa9a3dd4b76.png)
   
 9. On the next page, select **Continue** again to confirm and save your changes. 
     
-    ![Select Continue](../media/adba4a60-bf61-44fc-9ad9-360e66f8a2ee.png)
+    ![Select Continue](../../media/adba4a60-bf61-44fc-9ad9-360e66f8a2ee.png)
   
 ## Add the CNAME records that are required for Office 365
 <a name="BKMK_add_CNAME"> </a>
@@ -149,11 +149,11 @@ Follow the steps below or [watch the video (start at 4:23)](https://support.offi
     
 5. Scroll to the **Advanced Technical Settings** section, and then select **Edit Domain Aliases Records**.
     
-    ![Select Edit Domain Aliases Records](../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
+    ![Select Edit Domain Aliases Records](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
   
 6. Select **Add more domain aliases**.
     
-    ![Select Add more domains aliases](../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
+    ![Select Add more domains aliases](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
   
 7. Add the required CNAME records.
     
@@ -167,15 +167,15 @@ Follow the steps below or [watch the video (start at 4:23)](https://support.offi
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/>  <br/> |
     |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/>  <br/> |
    
-     ![Copy and paste the DNS values from the table](../media/0e2b36b2-8a0b-4019-addf-301763f9a626.png)
+     ![Copy and paste the DNS values from the table](../../media/0e2b36b2-8a0b-4019-addf-301763f9a626.png)
   
 8. When you have added all of the CNAME records that you need, select **Continue**.
     
-    ![Select Continue](../media/1942612b-338a-48fa-a45d-2d5434516723.png)
+    ![Select Continue](../../media/1942612b-338a-48fa-a45d-2d5434516723.png)
   
 9. On the next page, select **Continue** again to confirm and save your changes. 
     
-    ![Select Continue](../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
+    ![Select Continue](../../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
   
 ## Add a TXT record for SPF to help prevent email spam
 <a name="BKMK_add_TXT"> </a>
@@ -195,7 +195,7 @@ Follow the steps below or [watch the video (start at 5:12)](https://support.offi
     
 5. Scroll to the **Advanced Technical Settings** section, and then select **Edit TXT Records (SPF)**.
     
-    ![Select Edit TXT Records (SPF)](../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
+    ![Select Edit TXT Records (SPF)](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
   
 6. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -203,15 +203,15 @@ Follow the steps below or [watch the video (start at 5:12)](https://support.offi
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.  |
    
-     ![Copy and paste the values from the table](../media/b1dc5036-c13c-4306-b1e3-5a38a74643b7.png)
+     ![Copy and paste the values from the table](../../media/b1dc5036-c13c-4306-b1e3-5a38a74643b7.png)
   
 7. Select **Continue**.
     
-    ![Select Continue](../media/08250c98-1a86-48a8-ad94-f96cf338126b.png)
+    ![Select Continue](../../media/08250c98-1a86-48a8-ad94-f96cf338126b.png)
   
 8. On the next page, select **Continue** again to confirm and save your changes. 
     
-    ![Select Continue](../media/56be3b0a-dc71-471c-9be3-6ab927296f67.png)
+    ![Select Continue](../../media/56be3b0a-dc71-471c-9be3-6ab927296f67.png)
   
 ## Add the two SRV records that are required for Office 365
 <a name="BKMK_add_SRV"> </a>
@@ -228,7 +228,7 @@ Follow the steps below or [watch the video (start at 5:55)](https://support.offi
     
 5. Scroll to the **Advanced Technical Settings** section, and then select **Edit SRV Records**.
     
-    ![Select Edit SRV Records](../media/73c149ae-f0d6-460e-880a-7e04a995acc3.png)
+    ![Select Edit SRV Records](../../media/73c149ae-f0d6-460e-880a-7e04a995acc3.png)
   
 6. Add the first of the two SRV records:
     
@@ -241,11 +241,11 @@ Follow the steps below or [watch the video (start at 5:55)](https://support.offi
     |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
     |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
-    ![Copy and paste the values from the table](../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
+    ![Copy and paste the values from the table](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   
 7. Select **Add more SRV records**.
     
-    ![Select Add more SRV records](../media/823c6bd2-4af7-4079-bf8c-8d35a5c6730f.png)
+    ![Select Add more SRV records](../../media/823c6bd2-4af7-4079-bf8c-8d35a5c6730f.png)
   
 8. Add the second SRV record:
     
@@ -253,11 +253,11 @@ Follow the steps below or [watch the video (start at 5:55)](https://support.offi
     
 9. When you have added both of the SRV records, select **Continue**.
     
-    ![Select Continue](../media/008b255a-42d3-442d-83ea-3ffcb7c8fc5d.png)
+    ![Select Continue](../../media/008b255a-42d3-442d-83ea-3ffcb7c8fc5d.png)
   
 10. On the next page, select **Continue** again to confirm and save your changes. 
     
-    ![Select Continue](../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
+    ![Select Continue](../../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records in Office 365](../get-help-with-domains/find-and-fix-issues.md). 

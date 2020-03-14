@@ -45,9 +45,9 @@ We would love for you to participate in the new Microsoft 365 admin center so yo
     
 ### Switch to the new admin center and back again
 
-- When the new Microsoft 365 admin center is available to you, you can opt in by selecting the **Try the new admin center** toggle located at the top of the Home page. If you sign out of the admin center, we'll remember your selection and you'll sign back in to the new admin center. <br/><br/>![The new admin center toggle from the old admin center](media/admin-center-toggle-off.png) 
+- When the new Microsoft 365 admin center is available to you, you can opt in by selecting the **Try the new admin center** toggle located at the top of the Home page. If you sign out of the admin center, we'll remember your selection and you'll sign back in to the new admin center. <br/><br/>![The new admin center toggle from the old admin center](../media/admin-center-toggle-off.png) 
   
-- Switch back to the old admin center from the Home page by turning the toggle to **Off**. <br/><br/>![The new admin center toggle turned on](media/admin-center-toggle-on.png)
+- Switch back to the old admin center from the Home page by turning the toggle to **Off**. <br/><br/>![The new admin center toggle turned on](../media/admin-center-toggle-on.png)
 
 While in the new admin center, you can give Microsoft feedback about your experience by selecting **Give feedback** right next to the **Need help?** button at the bottom of every page. Tell us what you like and what we could do better. In addition, you may get pop-up surveys from time-to-time asking about your overall impressions or a particular experience that's newly released. You can also give feedback at the end of this article by selecting **Was this information helpful?**
   

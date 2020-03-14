@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Sao Tome and Principe
 author: cmcatee-MSFT
 f1.keywords:

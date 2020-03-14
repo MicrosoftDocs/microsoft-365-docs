@@ -94,18 +94,18 @@ To complete setting up your domain with Office 365, you change your domain's NS 
     
 4. Select the **Nameserver** record set. 
     
-    ![Select the recordset](../media/24e618e4-0a16-43a2-9886-f4f5dac79374.png)
+    ![Select the recordset](../../media/24e618e4-0a16-43a2-9886-f4f5dac79374.png)
   
 5. In the **NS - Name server** record set in the **Value** box, delete all of the nameservers by selecting them all and then pressing the **Delete** key on your keyboard. 
     
     > [!CAUTION]
     > Follow these steps only if you have existing nameservers other than the four correct nameservers. (That is, delete only any current nameservers that are  *not*  named **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, or **ns4.bdm.microsoftonline.com**.) 
   
-    ![Select and delete all of the nameservers in the Value box](../media/ecf1e897-fa7d-4abc-b00b-bf55b8ed2139.png)
+    ![Select and delete all of the nameservers in the Value box](../../media/ecf1e897-fa7d-4abc-b00b-bf55b8ed2139.png)
   
 6. In the **TTL (Seconds):** area, select **1h** (1 Hour). 
     
-    ![Select 1H for one hour](../media/c70070e1-4bde-41a7-b271-9d22c475edf6.png)
+    ![Select 1H for one hour](../../media/c70070e1-4bde-41a7-b271-9d22c475edf6.png)
   
 7. Still in the **NS - Name server** record set, in the **Value** box, type or copy and paste the **First line** value from the following table, then press the **Enter** key on your keyboard and type or copy and paste the next **line** value. 
     
@@ -119,11 +119,11 @@ To complete setting up your domain with Office 365, you change your domain's NS 
 |**Third line** <br/> |ns3.bdm.microsoftonline.com.  <br/> **This value MUST end with a period (.)** <br/> |
 |**Fourth line** <br/> |ns4.bdm.microsoftonline.com.  <br/> **This value MUST end with a period (.)** <br/> |
    
-   ![Type or paste the First line value in the Value box](../media/b63f41e0-51ef-4ab2-a4b8-ee7380e5ab35.png)
+   ![Type or paste the First line value in the Value box](../../media/b63f41e0-51ef-4ab2-a4b8-ee7380e5ab35.png)
   
 8. Select **Save Record Set**.
     
-    ![Select Save Record Set](../media/ab3c0558-bb7c-41e4-871e-ea82f1553476.png)
+    ![Select Save Record Set](../../media/ab3c0558-bb7c-41e4-871e-ea82f1553476.png)
   
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Office 365 email and other services will be all set to work with your domain. 

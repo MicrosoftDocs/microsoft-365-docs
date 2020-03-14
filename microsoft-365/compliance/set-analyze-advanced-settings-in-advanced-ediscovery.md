@@ -44,7 +44,7 @@ Advanced eDiscovery provides default advanced parameters for Analyze module sett
     
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Understanding document similarity](understand-document-similarity-in-advanced-ediscovery.md)
   

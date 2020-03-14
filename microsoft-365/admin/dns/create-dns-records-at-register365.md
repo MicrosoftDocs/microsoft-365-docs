@@ -57,13 +57,13 @@ Before you use your domain with Office 365, we have to make sure that you own it
   
 1. To get started, go to your domains page at Register365 by using [this link](https://admin.register365.com/dns/). You'll be prompted to log in first.
     
-    ![The Control Panel log in page](../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
+    ![The Control Panel log in page](../../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
   
 2. On the **Dashboard** page, find the name of the domain that you're updating, and then choose **DNS Settings** from the drop-down list. 
     
     (You may have to scroll down.)
     
-    ![Selecting DNS Settings in the list](../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
+    ![Selecting DNS Settings in the list](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -77,13 +77,13 @@ Before you use your domain with Office 365, we have to make sure that you own it
     |:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![Entering values on the Add/Modify DNS Zone page](../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
+    ![Entering values on the Add/Modify DNS Zone page](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
   
 4. Select **Save**.
     
     (You may have to scroll down.)
     
-    ![Select Save](../media/157cfb98-d5d0-48a3-8dd1-c4e759c2f8a8.png)
+    ![Select Save](../../media/157cfb98-d5d0-48a3-8dd1-c4e759c2f8a8.png)
   
 5. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
@@ -113,13 +113,13 @@ When Office 365 finds the correct TXT record, your domain is verified.
 
 1. To get started, go to your domains page at Register365 by using [this link](https://admin.register365.com/dns/). You'll be prompted to log in first.
     
-    ![The Control Panel log in page](../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
+    ![The Control Panel log in page](../../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
   
 2. On the **Dashboard** page, find the name of the domain that you're updating, and then choose **DNS Settings** from the drop-down list. 
     
     (You may have to scroll down.)
     
-    ![Selecting DNS Settings in the list](../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
+    ![Selecting DNS Settings in the list](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. On the **Add/Modify DNS Zone** page, in the **Mail exchange records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -129,36 +129,36 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |1  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Office 365 account.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)     |
    
-    ![Entering values on the Add/Modify DNS Zone page](../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
+    ![Entering values on the Add/Modify DNS Zone page](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
 4. Select **Save**.
     
     (You may have to scroll down.)
     
-    ![Select Save](../media/0e565fb0-a126-4a48-8ff7-2c2d79d4af32.png)
+    ![Select Save](../../media/0e565fb0-a126-4a48-8ff7-2c2d79d4af32.png)
   
 5. If there are any other MX records in the **Mail exchange records** section, delete each one by selecting it and then pressing the **Delete** key on your keyboard. 
     
-    ![Deleting records in the Mail exchange records section](../media/8cc37e4f-2e85-4242-af0e-78149434167f.png)
+    ![Deleting records in the Mail exchange records section](../../media/8cc37e4f-2e85-4242-af0e-78149434167f.png)
   
 6. Select **Save**.
     
     (You may have to scroll down.)
     
-    ![Select Save](../media/1fb69bb5-b5df-4060-adf1-eb26cfaa6c4f.png)
+    ![Select Save](../../media/1fb69bb5-b5df-4060-adf1-eb26cfaa6c4f.png)
   
 ## Add the six CNAME records that are required for Office 365
 <a name="BKMK_add_CNAME"> </a>
 
 1. To get started, go to your domains page at Register365 by using [this link](https://admin.register365.com/dns/). You'll be prompted to log in first.
     
-    ![The Control Panel log in page](../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
+    ![The Control Panel log in page](../../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
   
 2. On the **Dashboard** page, find the name of the domain that you're updating, and then choose **DNS Settings** from the drop-down list. 
     
     (You may have to scroll down.)
     
-    ![Selecting DNS Settings in the list](../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
+    ![Selecting DNS Settings in the list](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new records, type or copy and paste the values from the following table. 
     
@@ -176,11 +176,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![Entering values on the Add/Modify DNS Zone page](../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
+    ![Entering values on the Add/Modify DNS Zone page](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
   
 4. Select **Save**.
     
-    ![Select Save](../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
+    ![Select Save](../../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
   
 ## Add a TXT record for SPF to help prevent email spam
 <a name="BKMK_add_TXT"> </a>
@@ -190,13 +190,13 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
 1. To get started, go to your domains page at Register365 by using [this link](https://admin.register365.com/dns/). You'll be prompted to log in first.
     
-    ![The Control Panel log in page](../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
+    ![The Control Panel log in page](../../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
   
 2. On the **Dashboard** page, find the name of the domain that you're updating, and then choose **DNS Settings** from the drop-down list. 
     
     (You may have to scroll down.)
     
-    ![Selecting DNS Settings in the list](../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
+    ![Selecting DNS Settings in the list](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -210,26 +210,26 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
    
-    ![Entering values on the Add/Modify DNS Zone page](../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
+    ![Entering values on the Add/Modify DNS Zone page](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
   
 4. Select **Save**.
     
     (You may have to scroll down.)
     
-    ![Select Save](../media/1d8da122-4861-4ca3-bc9b-d01f18557d4c.png)
+    ![Select Save](../../media/1d8da122-4861-4ca3-bc9b-d01f18557d4c.png)
   
 ## Add the two SRV records that are required for Office 365
 <a name="BKMK_add_SRV"> </a>
 
 1. To get started, go to your domains page at Register365 by using [this link](https://admin.register365.com/dns/). You'll be prompted to log in first.
     
-    ![The Control Panel log in page](../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
+    ![The Control Panel log in page](../../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
   
 2. On the **Dashboard** page, find the name of the domain that you're updating, and then choose **DNS Settings** from the drop-down list. 
     
     (You may have to scroll down.)
     
-    ![Selecting DNS Settings in the list](../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
+    ![Selecting DNS Settings in the list](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. On the **Add/Modify DNS Zone** page, in the **Service records** section, in the boxes for the new records, type or copy and paste the values from the following table. 
     
@@ -240,13 +240,13 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
-    ![Entering values in the Service records section](../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
+    ![Entering values in the Service records section](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
 4. Select **Save**.
     
     (You may have to scroll down.)
     
-    ![Select Save](../media/3b80757c-01e1-492d-b2ce-f721d71f7235.png)
+    ![Select Save](../../media/3b80757c-01e1-492d-b2ce-f721d71f7235.png)
   
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 

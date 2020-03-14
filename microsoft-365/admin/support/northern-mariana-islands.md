@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Northern Mariana Islands
 author: cmcatee-MSFT
 f1.keywords:

@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Jan Mayen
 author: cmcatee-MSFT
 f1.keywords:

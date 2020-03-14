@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Indonesia
 author: cmcatee-MSFT
 f1.keywords:

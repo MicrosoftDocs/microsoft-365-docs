@@ -1,6 +1,26 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/commerce/subscriptions/what-happens-if-i-cancel.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/what-does-switching-plans-do-to-my-service-and-billing.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/subscriptions/upgrade-to-a-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions/why-cant-i-change-plans.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/subscriptions/upgrade-to-a-different-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/licenses/remove-licenses-from-subscription.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/licenses/buy-licenses",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/enterprise/using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md",
       "redirect_url": "https://docs.microsoft.com/office365/enterprise/microsoft-azure-architectures-for-sharepoint-2013",
       "redirect_document_id": false
@@ -270,6 +290,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/mtp/hunting.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/security/office-365-security/index.md",
       "redirect_url": "eop-features",
       "redirect_document_id": false
@@ -287,6 +312,11 @@
     {
       "source_path": "microsoft-365/compliance/search-for-and-delete-messagesadmin-help.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/create-new-ediscovery-case.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/get-started-with-advanced-ediscovery",
       "redirect_document_id": true
     },
     {
@@ -397,6 +427,11 @@
       "source_path": "microsoft-365/commerce/subscriptions/index.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/index",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/commerce/subscriptions-and-billing.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/index",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/commerce/pay/index.md",

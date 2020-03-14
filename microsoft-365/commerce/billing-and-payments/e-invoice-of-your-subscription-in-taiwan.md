@@ -28,7 +28,7 @@ e-Invoice is electronic invoice issued by seller after buyer purchases in accord
   
 A sample copy of e-Invoice is included here:
   
-![The Taiwan e-Invoice.](../../admin/media/01a275ad-54a9-4b76-ac03-4b288508b161.png)
+![The Taiwan e-Invoice.](../../media/01a275ad-54a9-4b76-ac03-4b288508b161.png)
   
 ## What is my tax rate?
 

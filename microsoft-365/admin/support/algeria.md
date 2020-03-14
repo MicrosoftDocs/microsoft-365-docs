@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Algeria
 author: cmcatee-MSFT
 f1.keywords:

@@ -1,5 +1,5 @@
-- name: Manage commerce purchases and billing
-  href: index.md
+- name: Manage business subscriptions
+  href: index.yml
   expanded: true
   items:
     - name: Try or buy
@@ -10,7 +10,7 @@
           href: try-or-buy-microsoft-365.md
         - name: Extend your trial
           href: extend-your-trial.md
-        - name: Buy another subscriptions
+        - name: Buy another subscription
           href: buy-another-subscription.md
         - name: Buy or edit an add on
           href: buy-or-edit-an-add-on.md
@@ -20,12 +20,12 @@
       items: 
         - name: Upgrade subscriptions
           href: subscriptions/upgrade-to-different-plan.md
-        - name: Cancel your subscription
-          href: subscriptions/cancel-your-subscription.md
-        - name: Reactivate your subscription
-          href: subscriptions/reactivate-your-subscription.md
         - name: Renew your subscription
           href: subscriptions/renew-your-subscription.md
+        - name: Reactivate your subscription
+          href: subscriptions/reactivate-your-subscription.md
+        - name: Cancel your subscription
+          href: subscriptions/cancel-your-subscription.md
         - name: What if my subscription expires?
           href: subscriptions/what-if-my-subscription-expires.md
         - name: Manage third-party apps
@@ -36,14 +36,12 @@
           href: subscriptions/manage-self-service-purchases-admins.md
     - name: Manage licenses
       items:
-        - name: Buy licenses
+        - name: Manage subscription licenses
           href: licenses/buy-licenses.md
-        - name: Assign licenses
+        - name: Assign licenses to users
           href: ../admin/manage/assign-licenses-to-users.md
-        - name: Unassign licenses
+        - name: Unassign licenses from users`
           href: ../admin/manage/remove-licenses-from-users.md
-        - name: Remove licenses from subscription
-          href: licenses/remove-licenses-from-subscription.md
         - name: Understand subscriptions and licenses
           href: licenses/subscriptions-and-licenses.md
     - name: Bills and payments
@@ -76,3 +74,5 @@
       href: manage-partners.md
     - name: Close your account
       href: close-your-account.md
+    - name: Contact support
+      href: ../admin/contact-support-for-business-products.md

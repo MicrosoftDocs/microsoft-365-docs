@@ -39,7 +39,7 @@ As Microsoft 365 admin, the **Reports** dashboard shows you data on the usage of
 
 You can get a view into your user's Yammer activity by looking at the Activity and Users charts.
   
-![Yammer Activity report](../media/92e8b2c6-166a-4154-9824-3fb6bbedf0db.JPG)
+![Yammer Activity report](../../media/92e8b2c6-166a-4154-9824-3fb6bbedf0db.JPG)
   
 The activity report contains the following information.
   
@@ -49,13 +49,13 @@ The activity report contains the following information.
     
 - You can view the **Activity** chart to understand the trend of the amount of Yammer activity going on in your organization. You can understand the split of messages posted, read, or liked. 
     
-    ![Activity view in the Yammer activity report](../media/76983516-2c5f-43a1-a5e3-c414e9f17638.JPG)
+    ![Activity view in the Yammer activity report](../../media/76983516-2c5f-43a1-a5e3-c414e9f17638.JPG)
   
   - On the **Activity** chart, the Y axis is the count of activity of the messages posted, read, or liked. 
     
 - You can view the **User** chart to understand the trend of the amount of unique users who are generating the Yammer activities. You can look at the trend of users posting, reading, or liking Yammer messages. 
     
-    ![Users view in the Yammer activity report](../media/b1098162-7b79-430f-bfe4-9d3957d56885.JPG)
+    ![Users view in the Yammer activity report](../../media/b1098162-7b79-430f-bfe4-9d3957d56885.JPG)
   
   - On the **Users** activity chart, the Y axis is the user posting, reading, or liking Yammer messages. 
     
@@ -63,7 +63,7 @@ The activity report contains the following information.
     
 - You can filter the series you see on the chart by selecting an item in the legend. For example, on the **Activity** chart, select **Posted**, **Read**, or **Liked** to see only the info related to each one. 
     
-    ![Posted, Read, and Liked options](../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
+    ![Posted, Read, and Liked options](../../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
   
     Changing this selection doesn't change the info in the grid table.
     
@@ -71,7 +71,7 @@ The activity report contains the following information.
     
     You can use the menu to filter and sort the data.
     
-    ![Menu options for Yammer reports](../media/9d32240c-f1ff-400b-9c4e-a21b48651530.JPG)
+    ![Menu options for Yammer reports](../../media/9d32240c-f1ff-400b-9c4e-a21b48651530.JPG)
   
     You can also add and remove columns. The available columns are:
     

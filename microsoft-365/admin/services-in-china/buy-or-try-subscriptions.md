@@ -43,11 +43,11 @@ You can buy a subscription right away, or you can try Office 365 for up to 30 da
 
 2. If you're not already on the start page, select **Office 365** in the top-left hand corner.
 
-    ![Button to navigate to the Office 365 Start Page](../media/2fc597ab-ae33-4e5a-aec1-e60e48beac62.png)
+    ![Button to navigate to the Office 365 Start Page](../../media/2fc597ab-ae33-4e5a-aec1-e60e48beac62.png)
 
 3. At the top right-hand corner of the page, under the navigation bar, select **Purchase**.
 
-    ![Button to purchase your Office 365 trial](../media/73fba4ad-6879-460b-8ef1-f2efb2ee4104.png)
+    ![Button to purchase your Office 365 trial](../../media/73fba4ad-6879-460b-8ef1-f2efb2ee4104.png)
 
 4. On the **Purchase subscriptions** page, you'll see the different plans that you can buy. The plan that you've been trying is identified by the **In Trial** banner.
 

@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Wallis and Futuna
 author: cmcatee-MSFT
 f1.keywords:
