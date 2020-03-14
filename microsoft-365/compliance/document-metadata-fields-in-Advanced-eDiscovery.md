@@ -107,7 +107,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Native Extension|NativeExtension|Native_extension|Native extension of the item.|
 |Native file name|NativeFileName|Native_file_name|Native file name of the item.|
 |NativeMD5||Native_MD5|MD5 hash of file stream.|
-|ND/ET Sort: Excluding attachments|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenation of the email thread (ET) set and Near-duplicate (ND) set. This field is used for efficient sorting at review time. A **D** prefixed to ND sets and an **E** is prefixed to ET sets.|
+|ND/ET Sort: Excluding attachments|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenation of the email thread (ET) set and Near-duplicate (ND) set. This field is used for efficient sorting at review time. A **D** is prefixed to ND sets and an **E** is prefixed to ET sets.|
 |ND/ET Sort: Including attachments|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concatenation of an email thread (ET) set and near-duplicate (ND) set. This field is used for efficient sorting at review time. A **D** is prefixed to ND sets and an **E** is prefixed to ET sets. Each email item in an ET set is followed by its appropriate attachments.|
 |Normalized relevance score Case issue 1||Normalized_relevance_score_case_issue_1|Normalized relevance score Case issue 1 from Relevance.|
 |O365 authors||O365_authors|Author from SharePoint.|
