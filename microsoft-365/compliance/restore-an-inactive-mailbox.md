@@ -1,5 +1,5 @@
 ---
-title: "Restore an inactive mailbox in Office 365"
+title: "Restore an inactive mailbox"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,7 +18,7 @@ ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: "If a new employee or another user needs access to the contents of an inactive mailbox in Office 365, you can restore (or merge) the contents of the inactive mailbox to an existing mailbox."
 ---
 
-# Restore an inactive mailbox in Office 365
+# Restore an inactive mailbox
 
 An inactive mailbox (which is a type of soft-deleted mailbox) is used to retain a former employee's email after he or she leaves your organization. If another employee takes on the job responsibilities of the departed employee or if that employee returns to your organization, there are two ways that you can make the contents of the inactive mailbox available to a user:
   

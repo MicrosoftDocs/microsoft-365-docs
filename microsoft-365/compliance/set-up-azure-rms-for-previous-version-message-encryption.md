@@ -1,5 +1,5 @@
 ---
-title: "Set up Azure Rights Management for the previous version of Office 365 Message Encryption"
+title: "Set up Azure Rights Management for the previous version of Message Encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,7 +17,7 @@ ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: "The previous version of Office 365 Message Encryption depends on Microsoft Azure Rights Management (previously known as Windows Azure Active Directory Rights Management)."
 ---
 
-# Set up Azure Rights Management for the previous version of Office 365 Message Encryption
+# Set up Azure Rights Management for the previous version of Message Encryption
 
 This topic describes the steps you need to follow in order to activate and then set up Azure Rights Management (RMS), part of Azure Information Protection, for use with the previous version of Office 365 Message Encryption (OME).
 

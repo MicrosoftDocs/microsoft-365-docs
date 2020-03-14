@@ -1,5 +1,5 @@
 ---
-title: "Enable or disable safety tips in Office 365"
+title: "Enable or disable safety tips"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -18,7 +18,7 @@ ms.collection:
 description: "Tells Office 365 and EOP admins how to enable and disable safety tips in email messages."
 ---
 
-# Enable or disable safety tips in Office 365
+# Enable or disable safety tips
 
 Exchange Online Protection (EOP) adds, or stamps, a safety tip to email messages that it delivers. These safety tips provide recipients with a quick, visual way to determine if a message is from a safe, verified sender, if the message has been marked as spam by Office 365, if the message contains something suspicious such as a phishing scam, or if external images have been blocked. Office 365 and EOP-standalone admins can edit a spam policy setting to enable or disable safety tips from being displayed in email in Outlook and other desktop email clients.
 

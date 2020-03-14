@@ -1,5 +1,5 @@
 ---
-title: "How to reduce spam email in Office 365"
+title: "How to reduce spam email"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -21,7 +21,7 @@ ms.collection:
 description: "Learn the most common ways to help reduce spam and junk mail in Office 365."
 ---
 
-# How to reduce spam email in Office 365
+# How to reduce spam email
 
  **Are you getting too much spam in Office 365? Do this.**
 

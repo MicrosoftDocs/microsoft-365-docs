@@ -1,5 +1,5 @@
 ---
-title: "Buy or edit an add-on for Office 365 for business"
+title: "Buy or edit an add-on"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,7 +24,7 @@ description: "Learn how to purchase an add-on to add additional functionality to
 ms.custom: okr_SMB
 ---
 
-# Buy or edit an add-on for Office 365 for business
+# Buy or edit an add-on
 
 Several of the Office 365 for business plans have add-ons that you can buy for your subscription. An add-on provides additional functionality to the subscription that you buy it for.
 

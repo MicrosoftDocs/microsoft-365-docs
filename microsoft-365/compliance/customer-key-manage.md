@@ -1,5 +1,5 @@
 ---
-title: "Manage Customer Key for Office 365"
+title: "Manage Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,7 +15,7 @@ ms.collection:
 description: "After you set up Customer Key, learn how to manage it by restoring AKV keys, and managing permissions and your data encryption policies."
 ---
 
-# Manage Customer Key for Office 365
+# Manage Customer Key
 
 After you've set up Customer Key for Office 365, you can manage your keys as described in this article. Learn more about Customer Key in the related topics.
 
@@ -192,7 +192,7 @@ Since you can only run the PowerShell cmdlet against one DEP at a time, consider
 
 To initiate the data purge path, complete these steps:
 
-1. Remove wrap and unwrap permissions for “O365 Exchange Online” from Azure Key Vaults.
+1. Remove wrap and unwrap permissions for "O365 Exchange Online" from Azure Key Vaults.
 
 2. Using a work or school account that has global administrator privileges in your organization, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 

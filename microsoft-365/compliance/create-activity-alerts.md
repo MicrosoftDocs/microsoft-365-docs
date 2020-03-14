@@ -1,5 +1,5 @@
 ---
-title: "Create activity alerts in the Office 365"
+title: "Create activity alerts"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,7 +19,7 @@ ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: "Add and manage activity alerts in the security and compliance center so that Office 365 will send you email notifications when users perform specific activities in Office 365."
 ---
 
-# Create activity alerts in the Office 365
+# Create activity alerts
 
 You can create an activity alert that will send you an email notification when users perform specific activities in Office 365. Activity alerts are similar to searching for events in the audit log, except that you'll be sent an email message when an event for an activity that you've created an alert for happens. 
   

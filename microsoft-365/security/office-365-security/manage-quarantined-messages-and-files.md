@@ -1,5 +1,5 @@
 ---
-title: "Manage quarantined messages and files as an administrator in Office 365"
+title: "Manage quarantined messages and files as an administrator"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -20,7 +20,7 @@ ms.collection:
 description: "As an admin, you can view, release, and report false positive quarantined messages in Office 365. You can set up policies so that Office 365 filters messages and sends them to quarantine for several reasons: Because they were identified as spam, bulk, phishing, malware, or because they matched a mail flow rule. "
 ---
 
-# Manage quarantined messages and files as an administrator in Office 365
+# Manage quarantined messages and files as an administrator
 
 As an admin, you can view, release, and delete quarantined messages, and report false positive quarantined messages in Office 365. You can also view, download, and delete quarantined files captured by Advance Threat Protection (ATP) for SharePoint Online, OneDrive for Business, and Microsoft Teams. You can set up policies so that Office 365 filters messages and sends them to quarantine for several reasons: Because they were identified as spam, bulk mail, phishing mail, containing malware, or because they matched a mail flow rule.
 

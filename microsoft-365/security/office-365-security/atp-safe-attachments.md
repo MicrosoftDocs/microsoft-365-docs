@@ -1,5 +1,5 @@
 ---
-title: "Office 365 ATP Safe Attachments"
+title: "ATP Safe Attachments"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,7 +19,7 @@ ms.collection:
 description: "The Safe Attachments feature provides time-of-click verification of email attachments. Use Safe Attachments to protect your organization from malicious files people send or receive in email."
 ---
 
-# Office 365 ATP Safe Attachments
+# ATP Safe Attachments
 
 ## Overview of Office 365 ATP Safe Attachments
 

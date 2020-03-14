@@ -1,5 +1,5 @@
 ---
-title: "Filter data when importing PST files to Office 365"
+title: "Filter data when importing PST files"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,7 +19,7 @@ description: "Use the new Intelligent Import feature in the Office 365 Import se
 "
 ---
 
-# Filter data when importing PST files to Office 365
+# Filter data when importing PST files
 
 Use the new Intelligent Import feature in the Office 365 Import service to filter the items in PST files that actually get imported to the target mailboxes. Here's how it works:
   

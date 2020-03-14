@@ -1,5 +1,5 @@
 ---
-title: "Set up a custom do-not-rewrite URLs list using Office 365 ATP Safe Links"
+title: "Set up a custom do-not-rewrite URLs list using ATP Safe Links"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,7 +19,7 @@ ms.collection:
 description: "When you set up your ATP safe links policies, you can include a do-not-rewrite' list of URLs to enable some people in your organization to visit sites that you include in your list."
 ---
 
-# Set up a custom do-not-rewrite URLs list using Office 365 ATP Safe Links
+# Set up a custom do-not-rewrite URLs list using ATP Safe Links
 
 > [!IMPORTANT]
 > This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are a home user looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).

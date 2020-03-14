@@ -1,5 +1,5 @@
 ---
-title: "Searching cloud-based mailboxes for on-premises users in Office 365"
+title: "Searching cloud-based mailboxes for on-premises users"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,7 +19,7 @@ ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: "Use the Content Search tool in the Security & Compliance Center to search for and export MicrosoftTeams chat data (called 1xN chats) for on-premises users in an Exchange hybrid deployment."
 ---
 
-# Searching cloud-based mailboxes for on-premises users in Office 365
+# Searching cloud-based mailboxes for on-premises users
 
 If your organization has an Exchange hybrid deployment (or your organization synchronizes an on-premises Exchange organization with Office 365) and has enabled Microsoft Teams, users can use the Teams chat application for instant messaging. For a cloud-based user, the Teams chat data (also called *1xN chats*) is saved to their primary cloud-based mailbox. When an on-premises user uses the Team chat application, their primary mailbox is located on-premises. To get around this limitation, Microsoft has released a new feature where a cloud-based storage area (called a cloud-based mailbox for on-premises users) is created to store Teams chat data for on-premises users. This lets you use the Content Search tool in the Security & Compliance Center to search and export Teams chat data for on-premises users. 
   

@@ -1,5 +1,5 @@
 ---
-title: "View the results of an automated investigation in Office 365"
+title: "View the results of an automated investigation"
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 description: "During and after an automated investigation in Office 365, you can view the results and key findings."
 ---
 
-# Details and results of an automated investigation in Office 365
+# Details and results of an automated investigation
 
 When an [automated investigation](office-365-air.md) occurs in [Office 365 Advanced Threat Protection](office-365-atp.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 

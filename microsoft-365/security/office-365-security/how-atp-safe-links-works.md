@@ -1,5 +1,5 @@
 ---
-title: "How Office 365 ATP Safe Links works"
+title: "How ATP Safe Links works"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,7 +16,7 @@ ms.collection:
 description: "The Safe Links feature provides time-of-click verification of hyperlinks in Office documents and in email messages. Read this article to learn how ATP Safe Links works."
 ---
 
-# How Office 365 ATP Safe Links works
+# How ATP Safe Links works
 > [!IMPORTANT] 
 > For Office 365 ATP Safe Links to operate correctly, all of the Office 365 services need to be at the same version.
          

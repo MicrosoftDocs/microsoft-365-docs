@@ -1,5 +1,5 @@
 ---
-title: "Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams"
+title: "Turn on ATP for SharePoint, OneDrive, and Microsoft Teams"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -20,7 +20,7 @@ ms.collection:
 description: "Learn how to turn on ATP for SharePoint, OneDrive, and Teams, including how to set alerts for detected files."
 ---
 
-# Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams
+# Turn on ATP for SharePoint, OneDrive, and Microsoft Teams
 
 > [!IMPORTANT]
 > This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are a home user looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).

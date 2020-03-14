@@ -1,5 +1,5 @@
 ---
-title: "Partially indexed items in Content Search in Office 365"
+title: "Partially indexed items in Content Search"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -24,7 +24,7 @@ description: "Learn about unindexed items in Exchange and SharePoint that you ca
 "
 ---
 
-# Partially indexed items in Content Search in Office 365
+# Partially indexed items in Content Search
 
 A Content Search that you run from the Security & Compliance Center in Office 365 automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. In Exchange, a partially indexed item typically contains a file—of a file type that can't be indexed—that is attached to an email message. Here are some other reasons why items can't be indexed for search and are returned as partially indexed items when you run a search: 
   

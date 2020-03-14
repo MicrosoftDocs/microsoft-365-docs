@@ -1,5 +1,5 @@
 ---
-title: "Revoke email encrypted by Office 365 Advanced Message Encryption"
+title: "Revoke email encrypted by Advanced Message Encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -18,7 +18,7 @@ search.appverid:
 description: "As an Office 365 administrator, you can revoke certain emails that were encrypted with Office 365 Advanced Message Encryption."
 ---
 
-# Revoke email encrypted by Office 365 Advanced Message Encryption
+# Revoke email encrypted by Advanced Message Encryption
 
 Email revocation is offered as part of Office 365 Advanced Message Encryption. Office 365 Advanced Message Encryption is included in [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (Nonprofit Staff Pricing), Office 365 Enterprise E5 (Nonprofit Staff Pricing), and Office 365 Education A5. If your organization has a subscription that does not include Office 365 Advanced Message Encryption, you can purchase it with the Microsoft 365 E5 Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or the Office 365 Advanced Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or Office 365 SKUs.
 
@@ -34,7 +34,7 @@ Whether a recipient receives a link-based experience or an inline experience dep
 
 ## Recipient experience for revoked encrypted emails
 
-Once an email has been revoked, the recipient receives an error when they access the encrypted email through the Office 365 Message Encryption portal: “The message has been revoked by the sender”.
+Once an email has been revoked, the recipient receives an error when they access the encrypted email through the Office 365 Message Encryption portal: "The message has been revoked by the sender".
 
 ![Screenshot that shows a revoked encrypted email.](../media/revoked-encrypted-email.png)
 
@@ -89,7 +89,7 @@ To verify whether you can revoke a particular email message by using Windows Pow
      ```text
      Subject        IsRevocable
      -------        -----------
-     “Test message” True
+     "Test message" True
      ```
 
 ### Step 3. Revoke the mail

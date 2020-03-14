@@ -1,5 +1,5 @@
 ---
-title: "Protect against threats in Office 365"
+title: "Protect against threats"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,7 +19,7 @@ ms.collection:
 description: "Use this article as a guide to configure your threat protection features now."
 ---
 
-# Protect against threats in Office 365
+# Protect against threats
 
 Office 365 includes a variety of threat protection features. Here's a quick-start guide you can use as a checklist to make sure your threat protection features are set up for your organization. If you're new to threat protection features in Office 365, or you're just not sure where to begin, use the following guidance as a starting point.
 

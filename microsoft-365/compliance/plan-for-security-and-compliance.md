@@ -1,5 +1,5 @@
 ---
-title: "Plan for security &amp; compliance in Office 365"
+title: "Plan for security &amp; compliance"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,7 +18,7 @@ description: "Landing page for Plan Security and Compliance"
 ms.collection: M365-security-compliance 
 ---
 
-# Plan for security &amp; compliance in Office 365
+# Plan for security &amp; compliance
 
 Managing security and compliance is a partnership. You are responsible for protecting your data, identities, and devices, while Microsoft vigorously protects Office 365 services. You can use Office 365 and Enterprise Mobility + Security (EMS) together to help you achieve the appropriate level of protection for your organization.
   

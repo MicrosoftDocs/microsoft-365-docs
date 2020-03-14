@@ -1,5 +1,5 @@
 ---
-title: "Set up new Office 365 Message Encryption capabilities"
+title: "Set up new Message Encryption capabilities"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -19,7 +19,7 @@ ms.collection:
 description: "New Office 365 Message Encryption capabilities built on top of Azure Information Protection, your organization can use protected email communication with people inside and outside your organization. The new OME capabilities work with other organizations, Outlook.com, Gmail, and other email services."
 ---
 
-# Set up new Office 365 Message Encryption capabilities
+# Set up new Message Encryption capabilities
 
 The new Office 365 Message Encryption (OME) capabilities allow organizations to share protected email with anyone on any device. Users can exchange protected messages with other organizations, as well as non-Office 365 customers using Outlook.com, Gmail, and other email services.
 

@@ -1,5 +1,5 @@
 ---
-title: "Safety tips in email messages in Office 365"
+title: "Safety tips in email messages"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,7 +19,7 @@ ms.collection:
 description: "Introduces safety tips for email messages filtered by the EOP and Office 365 spam filter."
 ---
 
-# Safety tips in email messages in Office 365
+# Safety tips in email messages
 
 Exchange Online Protection (EOP) and Office 365 protect you with spam, phishing, and malware prevention. Today, some of these attacks are so well crafted that they look legitimate. Sending messages to the Junk Email folder isn't always enough. Now, when you check your email in Outlook or Outlook on the web, EOP automatically checks the sender and adds a safety tip to the top of the email.
 

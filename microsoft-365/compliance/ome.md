@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Message Encryption"
+title: "Message Encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -19,7 +19,7 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: "With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Email message encryption helps ensure that only intended recipients can view message content."
 ---
 
-# Office 365 Message Encryption
+# Message Encryption
 
 People often use email to exchange sensitive information, such as financial data, legal contracts, confidential product information, sales reports and projections, patient health information, or customer and employee information. As a result, mailboxes can become repositories for large amounts of potentially sensitive information and information leakage can become a serious threat to your organization.
 

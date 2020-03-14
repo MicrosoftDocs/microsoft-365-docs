@@ -1,5 +1,5 @@
 ---
-title: "Delete an inactive mailbox in Office 365"
+title: "Delete an inactive mailbox"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,7 +18,7 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: "When you no longer need to preserve the contents of an Office 365 inactive mailbox, you can permanently delete the inactive mailbox by removing the hold. After removing the hold, the inactive mailbox is marked for deletion and is permanently deleted after it's processed."
 ---
 
-# Delete an inactive mailbox in Office 365
+# Delete an inactive mailbox
 
 An inactive mailbox is used to preserve a former employee's email after he or she leaves your organization. When you no longer need to preserve the contents of an inactive mailbox, you can permanently delete the inactive mailbox by removing the hold. Also, it's possible that multiple holds might be placed on an inactive mailbox. For example, an inactive mailbox might be placed on Litigation Hold and on one or more In-Place Holds. Additionally, an Office 365 retention policy (created in the security and compliance center in Office 365 or Microsoft 365) might be applied to the inactive mailbox. You have to remove all holds and Office 365 retention policies from an inactive mailbox to delete it. After you remove the holds and retention policies, the inactive mailbox is marked for deletion and is permanently deleted after it's processed.
   

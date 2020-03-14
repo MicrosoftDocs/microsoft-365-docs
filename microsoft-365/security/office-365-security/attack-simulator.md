@@ -1,5 +1,5 @@
 ---
-title: "Attack Simulator in Office 365 ATP"
+title: "Attack Simulator in ATP"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,7 +18,7 @@ ms.collection:
 description: "As a global administrator, you can use Attack Simulator to run realistic attack scenarios in your organization. This can help you identify and find vulnerable users before a real attack hits your business."
 ---
 
-# Attack Simulator in Office 365 ATP
+# Attack Simulator in ATP
 
 **Summary** If you are a global administrator or a security administrator and your organization has Office 365 Advanced Threat Protection Plan 2, which includes [Threat Investigation and Response capabilities](office-365-ti.md), you can use Attack Simulator to run realistic attack scenarios in your organization. This can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
 

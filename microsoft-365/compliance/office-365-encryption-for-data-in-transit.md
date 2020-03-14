@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Encryption for Data in Transit"
+title: "Encryption for Data in Transit"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -18,7 +18,7 @@ ms.collection:
 description: "Summary: A brief explanation of how Microsoft encrypts data in transit."
 ---
 
-# Office 365 encryption for data in transit
+# Encryption for data in transit
 
 In addition to protecting customer data at rest, Microsoft uses encryption technologies to protect Office 365 customer data in transit. 
 

@@ -1,5 +1,5 @@
 ---
-title: "Set up compliance boundaries for eDiscovery investigations in Office 365"
+title: "Set up compliance boundaries for eDiscovery investigations"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,7 +20,7 @@ ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: "Use compliance boundaries to create logical boundaries within an organization that control the user content locations that an eDiscovery manager can search. Compliance boundaries use search permissions filtering (also called compliance security filters) to control what mailboxes, SharePoint sites, and OneDrive accounts can be searched by specific users."
 ---
 
-# Set up compliance boundaries for eDiscovery investigations in Office 365
+# Set up compliance boundaries for eDiscovery investigations
 
 The guidance in this article can be applied when using either Core eDiscovery or Advanced eDiscovery to manage investigations.
 

@@ -1,5 +1,5 @@
 ---
-title: "Overview of inactive mailboxes in Office 365"
+title: "Overview of inactive mailboxes"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,7 +20,7 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: "Learn about retaining mailbox content for former employees by turning the mailbox into an inactive mailbox. You can do this by placing the mailbox on Litigation Hold or applying an Office 365 retention policy to the mailbox and then removing the corresponding Office 365 account."
 ---
 
-# Overview of inactive mailboxes in Office 365
+# Overview of inactive mailboxes
 
 Your organization might need to retain former employees' email after they leave the organization. Depending on your organization's retention requirements, you might need to retain mailbox content for a few months or years after employment ends, or you might need to retain mailbox content indefinitely. Regardless of how long you need to retain email, you can create inactive mailboxes in Office 365 to retain the mailbox of former employees. 
   

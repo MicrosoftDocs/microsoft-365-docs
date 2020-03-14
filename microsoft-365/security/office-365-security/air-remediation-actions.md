@@ -1,5 +1,5 @@
 ---
-title: "Remediation actions in Office 365 automated investigation and response"
+title: "Remediation actions in automated investigation and response"
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 description: "Learn about remediation actions in automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
 ---
 
-# Remediation actions following an automated investigation in Office 365
+# Remediation actions following an automated investigation
 
 ## Remediation actions
 

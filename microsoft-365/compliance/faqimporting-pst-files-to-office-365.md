@@ -1,5 +1,5 @@
 ---
-title: "FAQ about importing PST files to Office 365"
+title: "FAQ about importing PST files"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,7 +18,7 @@ ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: "Frequently asked questions for administrators about using the Office 365 Import Service to import your organization's PST files to Office 365 mailboxes. "
 ---
 
-# FAQ about importing PST files to Office 365
+# FAQ about importing PST files
 
 **This article is for administrators. Do you want to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)**|
    

@@ -1,5 +1,5 @@
 ---
-title: "Create and manage inactive mailboxes in Office 365"
+title: "Create and manage inactive mailboxes"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,7 +20,7 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: "You can create an inactive mailbox in Office 365 by applying a hold or Office 365 retention policy to the mailbox and then deleting the corresponding user account. Items in an inactive mailbox are retained for the duration of the hold or retention policy that was applied to it before it was made inactive. To permanently delete an inactive mailbox, just remove the hold or retention policy."
 ---
 
-# Create and manage inactive mailboxes in Office 365
+# Create and manage inactive mailboxes
 
 Office 365 makes it possible for you to retain the contents of deleted mailboxes. This feature is called [inactive mailboxes](inactive-mailboxes-in-office-365.md). Inactive mailboxes allow you to retain former employees' email after they leave your organization. A mailbox becomes inactive when a Litigation Hold or an Office 365 retention policy (created in the security and compliance center in Office 365 or Microsoft 365) is applied to the mailbox before the corresponding user account is deleted. The contents of an inactive mailbox are retained for the duration of the hold that was placed on the mailbox before it was made inactive. This allows administrators, compliance officers, and records managers to use Content Search to search and export the contents of an inactive mailbox. Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
   

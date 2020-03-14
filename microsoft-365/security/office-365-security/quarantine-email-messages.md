@@ -1,5 +1,5 @@
 ---
-title: "Quarantine email messages in Office 365"
+title: "Quarantine email messages"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -20,7 +20,7 @@ ms.collection:
 description: "You can set up a quarantine for incoming email messages in Office 365 where incoming email messages that have been filtered as spam, bulk, phishing mail, and malware can be kept for later review."
 ---
 
-# Quarantine email messages in Office 365
+# Quarantine email messages
 
 You can set up quarantine for incoming email messages in Office 365 where messages that have been filtered as spam, bulk mail, phishing mail, mail that contains malware, and mail that matched a specified mail flow rule (also known as a trasport rule) can be kept for later review.
   

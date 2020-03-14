@@ -1,5 +1,5 @@
 ---
-title: "Enable unlimited archiving in Office 365 — Admin Help"
+title: "Enable unlimited archiving — Admin Help"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,7 +20,7 @@ ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: "For administrators: Learn how to enable auto-expanding archiving in Office 365, which provides your users with unlimited storage for their Exchange Online mailboxes. You can enable auto-expanding archiving for your entire organization or just for specific users."
 ---
 
-# Enable unlimited archiving in Office 365 — Admin Help
+# Enable unlimited archiving — Admin Help
 
 You can use the Exchange Online auto-expanding archiving feature in Office 365 to enable unlimited storage space for archive mailboxes. When auto-expanding archiving is turned on, additional storage space is automatically added to a user's archive mailbox when it approaches the storage limit. The result is unlimited mailbox storage capacity. You can turn on auto-expanding archiving for everyone in your organization or just for specific users. For more information about auto-expanding archiving, see [Overview of unlimited archiving in Office 365](unlimited-archiving.md).
 

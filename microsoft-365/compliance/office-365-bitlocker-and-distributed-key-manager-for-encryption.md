@@ -1,5 +1,5 @@
 ---
-title: "Office 365 BitLocker for Encryption"
+title: "BitLocker for Encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley

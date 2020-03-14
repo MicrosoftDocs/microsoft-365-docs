@@ -1,5 +1,5 @@
 ---
-title: "Increase the download speed when exporting eDiscovery search results from Office 365"
+title: "Increase the download speed when exporting eDiscovery search results"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: "Learn how to configure the Windows Registry to increase the data throughput when downloading search results and search data from the Security & Compliance Center and Advanced eDiscovery in Office 365."
 ---
 
-# Increase the download speed when exporting eDiscovery search results from Office 365
+# Increase the download speed when exporting eDiscovery search results
 
 When you use the Office 365 eDiscovery Export tool to download the results of a Content Search in the Security & Compliance Center or download data from Advanced eDiscovery, the tool starts a certain number of concurrent export operations to download the data to your local computer. By default, the number of concurrent operations is set to 8 times the number of cores in the computer you're using to download the data. For example, if you have a dual core computer (meaning two central processing units on one chip), the default number of concurrent export operations is 16. To increase the data transfer throughput and speed-up the download process, you can increase the number of concurrent operations by configuring a Windows Registry setting on the computer that you use to download the search results. To speed-up the download process, we recommend that you start with a setting of 24 concurrent operations.
   

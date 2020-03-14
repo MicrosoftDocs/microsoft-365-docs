@@ -1,5 +1,5 @@
 ---
-title: "Control outbound spam in Office 365"
+title: "Control outbound spam"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,7 +19,7 @@ ms.collection:
 description: "If your organization sends a lot of bulk mail that's marked as spam, you could get blocked from sending email with Office 365. Read this article to learn more about why this happens and what you can do about it."
 ---
 
-# Control outbound spam in Office 365
+# Control outbound spam
 
 We take managing outbound spam seriously because ours is a shared service.  There are many customers behind a shared pool of resources, where if one customer sends outbound spam, it can degrade the outbound IP reputation of the service and affects the successful deliverability of email for other customers.
 

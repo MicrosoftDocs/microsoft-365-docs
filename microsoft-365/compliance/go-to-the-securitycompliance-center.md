@@ -1,5 +1,5 @@
 ---
-title: "Go to the Office 365 Security & Compliance Center"
+title: "Go to the Security & Compliance Center"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,7 +18,7 @@ ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: "Before you can use the Security & Compliance Center, you need the right permissions. Your work or school account must either be assigned the global administrator role or have been assigned to one or more Security & Compliance Center role groups by a global administrator."
 ---
 
-# Go to the Office 365 Security & Compliance Center
+# Go to the Security & Compliance Center
 
 Before you can use the Security & Compliance Center, you need the right permissions. Your work or school account must either be assigned the global administrator role or have been assigned to one or more Security & Compliance Center role groups by a global administrator:
   

@@ -1,5 +1,5 @@
 ---
-title: "Campaigns Views in Office 365 ATP"
+title: "Campaigns Views in ATP"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,7 +19,7 @@ ms.collection:
 description: "Learn about Campaign Views in Office 365 Advanced Threat Protection."
 ---
 
-# Campaign Views in Office 365 ATP
+# Campaign Views in ATP
 
 Campaign Views is a feature in Advanced Threat Protection (ATP) in the Office 365 Security & Compliance Center that identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
 

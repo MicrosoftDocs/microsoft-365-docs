@@ -1,5 +1,5 @@
 ---
-title: "Search the audit log for user and admin activity in Office 365"
+title: "Search the audit log for user and admin activity"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: "The audit log is a unified audit log. Why a unified audit log? Because events from most Office 365 services that you're organization subscribes to are recorded in a single audit log that you can search. That means you can search for user and admin activity in these services:"
 ---
 
-# Search the audit log for user and admin activity in Office 365
+# Search the audit log for user and admin activity
 
 The audit log is a unified audit log. Why a unified audit log? Because events from most Office 365 services that you're organization subscribes to are recorded in a single audit log that you can search. That means you can search for user and admin activity in these services: 
   

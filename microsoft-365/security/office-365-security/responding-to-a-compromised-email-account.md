@@ -1,5 +1,5 @@
 ---
-title: "Responding to a Compromised Email Account in Office 365"
+title: "Responding to a Compromised Email Account"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 description: "Learn how to recognize and respond to a compromised email account in Office 365"
 ---
-# Responding to a Compromised Email Account in Office 365
+# Responding to a Compromised Email Account
 
 **Summary** Learn how to recognize and respond to a compromised email account in Office 365.
 

@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Encryption for Skype, OneDrive, SharePoint, and Exchange"
+title: "Encryption for Skype, OneDrive, SharePoint, and Exchange"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -19,7 +19,7 @@ ms.collection:
 description: "Summary: A description of encryption for Skype, OneDrive, SharePoint, and Exchange Online."
 ---
 
-# Office 365 Encryption for Skype for Business, OneDrive for Business, SharePoint Online, and Exchange Online
+# Encryption for Skype for Business, OneDrive for Business, SharePoint Online, and Exchange Online
 
 Office 365 is a highly secure environment that offers extensive protection in multiple layers: physical data center security, network security, access security, application security, and data security.
 
@@ -80,4 +80,4 @@ Exchange Online uses BitLocker for all mailbox data, and the BitLocker configura
 
 In addition to service-encryption, Office 365 supports Customer Key, which is built on top of service-encryption. Customer Key is a Microsoft-managed key option for Exchange Online service encryption that is also on Microsoft's roadmap. This method of encryption provides increased protection not afforded by BitLocker because it provides separation of server administrators and the cryptographic keys necessary for decryption of data, and because the encryption is applied directly to the data (in contrast with BitLocker, which applies encryption at the logical disk volume) any customer data copied from an Exchange server remains encrypted.
 
-The scope for Exchange Online service encryption is customer data that is stored at rest within Exchange Online. (Skype for Business stores nearly all user-generated content within the user’s Exchange Online mailbox and therefore inherits the service encryption feature of Exchange Online.)
+The scope for Exchange Online service encryption is customer data that is stored at rest within Exchange Online. (Skype for Business stores nearly all user-generated content within the user's Exchange Online mailbox and therefore inherits the service encryption feature of Exchange Online.)

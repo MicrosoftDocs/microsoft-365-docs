@@ -1,5 +1,5 @@
 ---
-title:  Office 365 Data Subject Requests Under the GDPR and CCPA
+title:  Data Subject Requests Under the GDPR and CCPA
 description: Understand the user rights under GDPR and CCPA and how Office 365 helps enterprises find and act on data in response to DSRs.
 keywords:  Office 365, DSR, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
 localization_priority:  Priority
@@ -17,7 +17,7 @@ ms.collection:
 titleSuffix: Microsoft GDPR
 ---
 
-# Office 365 Data Subject Requests for the GDPR and CCPA
+# Data Subject Requests for the GDPR and CCPA
 
 ## Introduction to DSRs
 

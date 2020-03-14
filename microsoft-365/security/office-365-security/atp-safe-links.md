@@ -1,5 +1,5 @@
 ---
-title: "Office 365 ATP Safe Links"
+title: "ATP Safe Links"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -26,7 +26,7 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: "The Safe Links feature provides time-of-click verification of hyperlinks in Office documents and in email messages. Use Safe links to protect your organization from phishing and other attacks."
 ---
 
-# Office 365 ATP Safe Links
+# ATP Safe Links
 
 ## Overview of Office 365 ATP Safe Links
 
