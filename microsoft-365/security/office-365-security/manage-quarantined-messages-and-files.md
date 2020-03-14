@@ -20,21 +20,21 @@ description: "As an admin, you can view, release, and report false positive quar
 
 # Manage quarantined messages and files as an admin in Office 365
 
-As an admin in Office 365, you can view, release, and delete quarantined email messages, and report false positive quarantined messages.
+Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
 
-By default, phishing messages or that contain malware are sent directly to quarantine. Other filtered messages are sent to users' Junk Email folder unless you've set up a policy to send them to quarantine. You can set up policies to quarantine messages that were identified as spam, bulk mail, phishing mail, containing malware, or because they matched a mail flow rule (also known as a transport rule).
+Admins can view, release, and delete quarantined messages all types of quarantined messages for all users. Admins can also report false positive quarantined messages. Only admins can manage messages that were quarantined as malware, phishing, or as a result of mail flow rules (also known as transport rules). Admins can also report false positive quarantined messages.
 
-Advance Threat Protection (ATP) customers can also view, download, and delete quarantine files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
+Admins in organizations with Advance Threat Protection (ATP) can also view, download, and delete quarantine files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 
 ## What do you need to know before you begin?
 
-- To open the Office 365 Security & Compliance Center, see [Go to the Office 365 Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+- To open the Office 365 Security & Compliance Center, go to <https://protection.office.com>. To open the Quarantine page directly, go to <https://protection.office.com/quarantime>.
 
 - Quarantined messages are retained for a default period of time before they're automatically deleted:
 
-  - Spam quarantined messages: 30 days.
+  - Messages quarantined by anti-spam policies (spam, phishing, and bulk email): 30 days. This is the default and maximum value. To configure this value, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
-  - Messages matching conditions in mail flow rules: Up to 30 days.
+  - Messages quarantined by mail flow rules (the rule action is **Deliver the message to the hosted quarantine**): The quarantine value in the default anti-spam policy, which you can modify, and which is also 30 days by default..
 
   - Messages that contain malware: 15 days.
 
@@ -50,12 +50,11 @@ Advance Threat Protection (ATP) customers can also view, download, and delete qu
 
   For more information, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## View quarantined email
+## Use the Security & Compliance Center to manage quarantined email messages
+
+### View quarantined email
 
 1. In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
-
-   > [!TIP]
-   > To go directly to the **Quarantine** page, open [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine).
 
 2. Verify that **View quarantined** is set to the default value **email**.
 
@@ -129,7 +128,7 @@ Advance Threat Protection (ATP) customers can also view, download, and delete qu
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
-### View quarantined message details
+#### View quarantined message details
 
 When you select an email message in the list, the following message details appear in the **Details** flyout pane:
 
@@ -151,7 +150,7 @@ When you select an email message in the list, the following message details appe
 
 - **Not yet released to**: All email addresses (if any) to which the message has not yet been released.
 
-## Take action on quarantined email
+### Take action on quarantined email
 
 After you select a message, you have several options for what to do with the messages in the **Details** flyout pane:
 
@@ -173,9 +172,9 @@ After you select a message, you have several options for what to do with the mes
 
   - You can't release a message to the same recipient more than once.
 
-  - Only recipients who haven't received the message will appear in the list of potential recipients
+  - Only recipients who haven't received the message will appear in the list of potential recipients.
 
-- **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Office 365 to complete this task).Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:
+- **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Office 365 to complete this task). Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:
 
 - **Preview message**: In the flyout pane that appears, choose one of the following options:
 
@@ -201,7 +200,7 @@ After you select a message, you have several options for what to do with the mes
 
 If you don't release or remove the message, it will be deleted after the default quarantine retention period expires. To change the quarantine retention period, see the [Configure the default quarantine retention period](#configure-the-default-quarantine-retention-period) section later in this topic.
 
-### Take action on multiple quarantined email messages
+#### Take action on multiple quarantined email messages
 
 When you select multiple quarantined messages in the list (up to 100), the **Bulk actions** flyout pane appears where you can take the following actions:
 
@@ -211,15 +210,16 @@ When you select multiple quarantined messages in the list (up to 100), the **Bul
 
 When you're finished, click **Close**.
 
-## View quarantined files
+## ATP Only: Use the Security & Compliance Center to manage quarantined files
 
 > [!NOTE]
-> The procedures and features in section are available only to ATP Plan 1 and Plan 2 subscribers.
+> The procedures for quarantined files in this section are available only to ATP Plan 1 and Plan 2 subscribers.
+
+In organizations with ATP, admins can managed quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
+
+### View quarantined files
 
 1. In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
-
-   > [!TIP]
-   > To go directly to the **Quarantine** page, open [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine).
 
 2. Change **View quarantined** to the default value **files**. You can sort on a field by clicking on an available column header.
 
@@ -261,7 +261,7 @@ When you're finished, click **Close**.
 
 After you find a specific quarantined file, select the file to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
-### View quarantined file details
+#### View quarantined file details
 
 When you select a file in the list, the following file details appear in the **Details** flyout pane:
 
@@ -291,7 +291,7 @@ When you select a file in the list, the following file details appear in the **D
 
 - **Secure Hash Algorithm 256-bit (SHA-256) value**: You can use this hash value to identify the file in other reputation stores or in other locations in your environment.
 
-## Take action on quarantined files
+### Take action on quarantined files
 
 When you select a file in the list, you can take the following actions on the file in the **Details** flyout pane:
 
@@ -303,7 +303,7 @@ When you select a file in the list, you can take the following actions on the fi
 
 If you don't release or remove the files, they will be deleted after the default quarantine retention period expires.
 
-### Actions on multiple quarantined files
+#### Actions on multiple quarantined files
 
 When you select multiple quarantined files in the list (up to 100), the **Bulk actions** flyout pane appears where you can take the following actions:
 
@@ -312,22 +312,3 @@ When you select multiple quarantined files in the list (up to 100), the **Bulk a
 - **Delete files**:  After you click **Yes** in the warning that appears, the files are immediately deleted.
 
 When you're finished, click **Close**.
-
-### Configure the default quarantine retention period
-
-You can configure how long messages and files will remain in quarantine before they expire. The maximum value is 30 days.
-
-This procedure modifies the retention period for the default spam filter policy. To modify a custom spam filter policy, select that policy in Step 2.
-
-1. In the Security and Compliance Center, go to **Threat Management** \> **Policy** \> **Anti-spam**.
-
-   > [!TIP]
-   > To go directly to the **Anti-spam settings** page, open [https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam).
-
-2. On the **Anti-spam settings** page that opens, expand the **Default spam filter policy (always ON)** row and click **Edit policy**.
-
-3. In the the flyout pane that appears, expand **Spam and bulk actions**.
-
-4. In the **Quarantine** section, in the **Retain spam for (days)** box, enter the new quarantine retention period. The maximum value is 30 days.
-
-5. When you're finished, click **Save** at the bottom of the flyout pane.
