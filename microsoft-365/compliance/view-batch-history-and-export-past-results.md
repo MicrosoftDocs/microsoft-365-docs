@@ -19,7 +19,7 @@ description: "Learn how to view detailed information for selected export batch s
 "
 ---
 
-# View batch history and export past results in Office 365 Advanced eDiscovery
+# View batch history and export past results in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -58,7 +58,7 @@ The Export history dialog provides detailed information of selected export batch
     
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Exporting results ](export-results-in-advanced-ediscovery.md)
 

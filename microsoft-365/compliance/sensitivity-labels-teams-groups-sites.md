@@ -16,24 +16,24 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "You can apply labels to Microsoft Teams, Office 365 groups, and SharePoint sites."
+description: "Use sensitivity labels to protect content in SharePoint and Microsoft Teams sites, and Office 365 groups."
 ---
 
-# Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)
+# Use sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)
 
-When you create sensitivity labels in the [Microsoft 365 compliance center](https://protection.office.com/), you can now apply them to the following containers: Microsoft Teams, Office 365 groups, and SharePoint sites. Use label settings to control the following options for these containers:
+When you create sensitivity labels in the [Microsoft 365 compliance center](https://protection.office.com/), you can now apply them to the following containers: Microsoft Teams sites, Office 365 groups, and SharePoint sites. Use the following label settings to help protect the content in those containers:
 
 - Privacy (public or private) of Office 365 group-connected teams sites
 - External users access
 - Access from unmanaged devices 
 
-When you apply this label to one of the supported containers, the label automatically applies the configured options to the connected SharePoint site or team site. 
+When you apply this label to a supported container, the label automatically applies the configured options to the connected site or group. 
 
-Content in those containers however, do not inherit the labels for settings such as the label name, visual markings, or encryption. To label files in SharePoint sites or team sites, [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Content in those containers however, do not inherit the labels for settings such as the label name, visual markings, or encryption. So that users can label their documents in SharePoint sites or team sites, [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## About the public preview for Microsoft Teams, Office 365 groups, and SharePoint sites
 
-Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites are gradually rolling out to tenants and might change before final release. This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
+Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites are in gradual rollout to tenants and might change before final release. This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
 
 Before you enable this preview and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
 
@@ -72,9 +72,11 @@ If you need help with creating or editing a sensitivity label, see the instructi
 
 On this new **Site and group settings** page, configure the settings:
 
-- **Privacy of Office 365 group-connected teams sites**: The default setting of **Public** is automatically selected, which means anyone in your organization can access the team site where this label is applied. Select **Private** when you want only approved members in your organization to access the group's team site. 
+- **Privacy of Office 365 group-connected teams sites**: The default setting of **None - let user chose who can access the site** is currently rolling out to tenants. Keep this default setting when you want to protect content in the container by using the sensitivity label, but still let users configure the privacy setting themselves.
     
-    The setting selected replaces a previous privacy setting that might be configured for the group, and locks the privacy value so it can be changed only by first removing the sensitivity label from the team site or group. After you remove the sensitivity label, the privacy setting from the label remains and you can now change it if necessary.
+    Select **Public** or**Private** to set and lock the privacy setting when you apply this label to the container. Choose **Public** if you want anyone in your organization to access the team site or group where this label is applied, or **Private** if you want access to be restricted to only approved members in your organization. 
+    
+    The **Public** or **Private** setting replaces any previous privacy setting that might be configured for the team or group, and locks the privacy value so it can be changed only by first removing the sensitivity label from the container. After you remove the sensitivity label, the privacy setting from the label remains and users can now change it again.
 
 - **External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
@@ -85,9 +87,11 @@ On this new **Site and group settings** page, configure the settings:
 > [!IMPORTANT]
 > Only these site and group settings take effect when you apply a label to a team, group, or site. Other label settings, such as encryption and content marking, aren't applied to the content within the team, group, or site.
 > 
-> Similarly, if you create a label and don't turn on these site and group settings, the label will still be available when users create teams, groups, and sites, but only the label name will be applied.
+> Gradually rolling out to tenants: Only labels with the site and group settings will be available to select when users create teams, groups, and sites. If you can currently apply a label to a container when the label doesn't have the site and group settings enabled, only the label name is applied to the container.
 
 If your sensitivity label isn't already published, now publish it by [adding it to a sensitivity label policy](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). The users who are assigned a sensitivity label policy that includes this label will be able to select it for sites and groups.
+
+From the label policy, only the policy setting **Apply this label by default to documents and email** is applicable when you apply this label to containers. Other policy settings are not applied, which include mandatory labeling, requiring user justification, and a link to the custom help page.
 
 ## Sensitivity label management
 
@@ -110,7 +114,7 @@ After a sensitivity label is created and published, it can take up to 24 hours f
 
 **Modifying and deleting published labels:**
 
-If you modify or delete a sensitivity label that is included in one or more label policies, these actions can result in creation failures for all teams, groups, and sites. To avoid this situation, use the following guidance:
+If you modify or delete a sensitivity label with the site and group settings enabled, and that label is included in one or more label policies, these actions can result in creation failures for all teams, groups, and sites. To avoid this situation, use the following guidance:
 
 1. Remove the sensitivity label from all label policies that include the label.
 
@@ -132,7 +136,7 @@ You're now ready to apply the sensitivity label or labels to Office 365 groups. 
 
 ## Apply a sensitivity label to a new team
 
-Users can select sensitivity labels when they create new teams in Microsoft Teams. When they select the sensitivity level, the privacy setting changes as necessary. Depending on the external users access setting you selected for the label, users can or can't add people outside the organization to the team.
+Users can select sensitivity labels when they create new teams in Microsoft Teams. When they select the label from the **Sensitivity** dropdown, the privacy setting might change to reflect the label configuration. Depending on the external users access setting you selected for the label, users can or can't add people outside the organization to the team.
 
 [Learn more about sensitivity labels for Teams](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
@@ -152,13 +156,13 @@ In Outlook on the web, when you create a new group, you can select or change the
 
 ## Apply a sensitivity label to a new site
 
-Admins and end users can select sensitivity labels when they [create modern team sites and communication sites](/sharepoint/create-site-collection).
-
-When users create modern team and communication sites, a sensitivity label is already selected by default. Users can select the help icon to learn more about the labels.
+Admins and end users can select sensitivity labels when they [create modern team sites and communication sites](/sharepoint/create-site-collection), and expand **Advanced settings**:
 
 ![Creating a site and selecting an option under Sensitivity](../media/sensitivity-label-new-communication-site.png)
 
-When users browse to the site, they can see the name of the label and applied policies.
+The dropdown box displays the label names for the selection, and the help icon displays all the label names with their tooltip, which can help users determine the correct label to apply.
+
+When the label is applied, and users browse to the site, they see the name of the label and applied policies. For example, this site has been labeled as **Confidential**, and the privacy setting is set to **Private**:
 
 ![A site that has a sensitivity label applied](../media/sensitivity-label-site.png)
 
@@ -314,14 +318,14 @@ For instructions to search the audit log, see [Search the audit log in the Secur
 Having problems with sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites? Check the following:
 
 ### Labels not visible after publishing
-If you experience issues when you create a team or Office 365 group after you enable these settings or modify a sensitivity label's description, wait a few hours after saving the label changes, and then try to create the team or group again. For information, see [Schedule roll-out after you create or change a sensitivity label](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
+If you experience issues when you create a site or Office 365 group after you enable these settings or modify a sensitivity label's name or tooltip, wait a few hours after saving the label changes, and then try to create the team or group again. For information, see [Schedule roll-out after you create or change a sensitivity label](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
 
-If you are still not able to see the new sensitivity label from SharePoint Online, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+If you still can't see the new sensitivity label from SharePoint Online, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ### Team, group, or SharePoint site creation errors
-If you experience creation errors during the public preview, you have two options:
+If you experience creation errors during the public preview, you can turn off sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites by using the same instructions from [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). However, to disable the preview, in step 5, disable the feature by using `$setting["EnableMIPLabels"] = "False"`.
 
-- Ensure that sensitivity labels are not mandatory for any user.
+## Additional resources
 
-- You can turn off sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites by using the same instructions from [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). However, to disable the preview, in step 5, disable the feature by using `$setting["EnableMIPLabels"] = "False"`.
+See the webinar recording and answered questions for [Using Sensitivity labels with Microsoft Teams, O365 Groups and SharePoint Online sites](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
 

@@ -28,7 +28,7 @@ Looking for the Exchange Online version of this topic? See [Exchange admin cente
 
 ## Accessing the EAC
 
-In most cases, EOP customers will access the EAC through the Microsoft 365 admin center. You can find a link to EOP in the drop-down menu in the **Admin** tile, which is next to the **Me** tile. Click the **Admin** tile and select **Exchange Online Protection** from the drop down menu to be taken to the EAC.
+In most cases, EOP customers will access the EAC through the Microsoft 365 admin center. You can find a link to EOP in the drop-down menu in the **Admin** tile, which is next to the **Me** tile. Click the **Admin** tile and select **Exchange Online Protection** from the drop-down menu to be taken to the EAC.
 
 You can also access the EAC sign in page directly via the following URL: `https://admin.protection.outlook.com/ecp/<companydomain>`. For example, `https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`. After specifying your user credentials you will be taken directly into the EAC.
 
