@@ -67,7 +67,7 @@ After you have followed the directions and authorizing the connection, view the 
 
 ## Create a task and share it to ServiceNow
 
-Once the integration is set up, create ServiceNow tasks based on specific Microsoft Secure Score improvement actions. Go to any improvement action in Secure Score in the Microsoft 365 security center portal, and select the “share” icon. One of the dropdown options is ServiceNow.
+Once the integration is set up, create ServiceNow tasks based on specific Microsoft Secure Score improvement actions. Go to any improvement action in Secure Score in the Microsoft 365 security center portal, and select the "share" icon. One of the dropdown options is ServiceNow.
 
 ![ServiceNow sharing in Secure Score](../../media/servicenow-share.png)
 
@@ -95,7 +95,7 @@ The app assumes any admin on the ServiceNow instance can create and read OAuth e
 
 **ServiceNow recommends that users keep default functionality.**
 
-Set the “application registries” table configurations to default:
+Set the "application registries" table configurations to default:
 
 * Label = Application Registeries
 * Name = oauth_entity
@@ -136,6 +136,10 @@ If your company has enabled single sign-on and you receive an error or login is 
 
 1. Create a user with security admin privileges in Azure Active Directory. The user needs to have the same name and email address as the integration user you created from the Installation Checklist. You can remove the security admin role once login and connection has been completed.
 2. Log in to the Microsoft 365 security center as this user and follow the setup steps.
+
+### IP filtering
+
+If you have enabled IP filtering, you may need to explicitly allow IP addresses. See the [IP Address Access Control page](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/login/task/t_AccessControl.html) on ServiceNow for information on how to allow IP ranges on ServiceNow. See [url] for a list of IP addresses to allow.
 
 ### Installation is complete but don't see tickets and can't share
 
