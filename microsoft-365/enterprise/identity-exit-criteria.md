@@ -113,7 +113,7 @@ If needed, [Step 3](identity-secure-user-sign-ins.md#identity-mfa) can help you 
 
 1.	Create a test user account and assign them a license. 
 2.	Configure Azure Multi-Factor Authentication for the test user account with the additional verification method that you are using for actual user accounts, such as sending a text message to your phone. 
-3.	Sign in to the Office 36 portal with the test user account.
+3.	Sign in to the Office 365 portal with the test user account.
 4.	Verify that MFA prompts you for the additional verification information and results in a successful authentication. 
 5.	Delete the test user account.
 

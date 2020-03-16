@@ -35,8 +35,6 @@ To use Microsoft Threat Protection, you need *one* of the following licenses or 
 - Microsoft 365 E5 Security
 - Office 365 E5 and "Enterprise Mobility + Security E5 (EMS E5)" and Windows E5
 - Microsoft 365 A5
-- Microsoft 365 A5 Security
-- Office 365 A5 and "Enterprise Mobility + Security A5 (EMS A5)" and Windows A5
 
 For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 
@@ -50,6 +48,9 @@ Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.
 
 ## Browser requirements
 Access Microsoft Threat Protection in the Microsoft 365 security center using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.
+
+## Microsoft Threat Protection for US Government Community Cloud and US Government Community Cloud High (GCC High) customers
+Currently, Microsoft Threat Protection is not available to US GCC and GCC High customers. 
 
 ## Related topics
 - [Microsoft Threat Protection overview](microsoft-threat-protection.md)
