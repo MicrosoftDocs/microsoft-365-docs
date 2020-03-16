@@ -57,9 +57,7 @@ Office 365 AIR capabilities are included in [Office 365 Advanced Threat Protecti
 - [Mail flow rules](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-transport-rules-to-configure-bulk-email-filtering) and [zero-hour auto purge](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge)
 - [Audit log search](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
-
 Certain [default alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) can trigger automated investigations. These include the following:
-
 - A potentially malicious URL click is detected
 - An email message is reported by a user as phish
 - Email messages containing malware are removed after delivery
@@ -78,6 +76,6 @@ Permissions are granted through certain roles, such as those that are described 
 
 ## Related articles
 
-- [Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
-
 - [Automated investigation and remediation in Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+
+- [Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
