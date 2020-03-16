@@ -148,14 +148,14 @@ You can also define segments using a "not equals" parameter, denoted as **-ne**,
 
 |Syntax  |Example  |
 |---------|---------|
-|`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`    |`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` <p>In this example, we defined a segment called *NotSales* that includes everyone who is not in *Sales*. The **-ne** portion of the cmdlet refers to "not equals."  |
+|`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`   | <p>In this example, we defined a segment called *NotSales* that includes everyone who is not in *Sales*. The **-ne** portion of the cmdlet refers to "not equals."  |
 
 In addition to defining segments using "equals" or "not equals", you can define a segment using both "equals" and "not equals" parameters. You can also define complex group filters using logical *AND* and *OR* operators.
 
 
-|Example  |
-|---------|
-|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` <p>In this example, we defined a segment called *LocalFTE* that includes people who are located locally and whose positions are not listed as *Temporary*.    |
+|Syntax    |Example  |
+|---------|---------|
+|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` |<p>In this example, we defined a segment called *LocalFTE* that includes people who are located locally and whose positions are not listed as *Temporary*.    |
  |`New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`|  <p>In this example, we defined a segment called *Segment1* that includes people who are members of group1@contoso.com and not members of group3@contoso.com.
 |`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com'' -or MemberOf -ne 'group3@contoso.com'"` | In this example, we defined a segment called *Segment2* that includes people who are members of group2@contoso.com and not members of group3@contoso.com.
 |`New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`|  In this example, we defined a segment called *Segment1and2* that includes people members of group1@contoso.com and group2@contoso.com and not members of group3@contoso.com.
