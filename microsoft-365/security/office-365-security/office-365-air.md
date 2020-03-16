@@ -57,7 +57,7 @@ Office 365 AIR capabilities are included in [Office 365 Advanced Threat Protecti
 - [Mail flow rules](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-transport-rules-to-configure-bulk-email-filtering) and [zero-hour auto purge](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge)
 - [Audit log search](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
-In addition to your Office 365 ATP policies, you'll want to review and potentially configure your organization's [alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies). Certain [default alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) can trigger automated investigations. These include the following:
+In addition to your Office 365 ATP policies, you'll want to review and potentially configure your organization's [alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies). Office 365 provides built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Some of the [default alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) can trigger automated investigations. These include the following:
 - A potentially malicious URL click is detected
 - An email message is reported by a user as phish
 - Email messages containing malware are removed after delivery
