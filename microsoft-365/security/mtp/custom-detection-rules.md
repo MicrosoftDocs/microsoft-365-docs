@@ -29,30 +29,34 @@ ms.topic: article
 Custom detection rules built from [Advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured machines. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
 
 > [!NOTE]
-> To create or manage custom detection rules, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
+> **[TBD STUB]** To create or manage custom detection rules, you need the XXXX permission, which is available to XXXX rules.
 
 ## Create a custom detection rule
 ### 1. Prepare the query.
 
-In Microsoft 365 security center, go to **Advanced hunting** and select an existing query or create a new query. When using an new query, run the query to identify errors and understand possible results.
+In Microsoft 365 security center, go to **Advanced hunting** and select an existing query or create a new query. When using a new query, run the query to identify errors and understand possible results.
 
 #### Required columns in the query results
 To create a custom detection rule, the query must return the following columns:
 
 - `Timestamp`
-- An entity represented by any of the following columns:
+- An entity represented by one of the following columns:
     - `DeviceId`
+    - `DeviceName`
+    - `RemoteDeviceName`
     - `RecipientEmailAddress`
     - `SenderFromAddress` (envelope sender or Return-Path address)
     - `SenderMailFromAddress` (sender address displayed by email client)
     - `RecipientObjectId`
-- `ReportId` 
+
+>[!NOTE]
+>Support for additional entities will be added as new tables are added to the schema.
 
 Simple queries, such as those that don't use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.
 
-There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by entity under a column such as `DeviceId`, you can still return `Timestamp` and `ReportId` by getting these values from the most recent event involving unique `DeviceId`.
+There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by entity under a column such as `DeviceId`, you can still return `Timestamp` by getting these values from the most recent event involving each unique `DeviceId`.
 
-The sample query below counts the number of unique machines (`DeviceId`) with antivirus detections and uses this count to find only the machines with more than five detections. To return the latest `Timestamp` and the corresponding `ReportId`, it uses the `summarize` operator with the `arg_max` function.
+The sample query below counts the number of unique machines (`DeviceId`) with antivirus detections and uses this count to find only the machines with more than five detections. To return the latest `Timestamp`, it uses the `summarize` operator with the `arg_max` function.
 
 ```kusto
 DeviceEvents
@@ -61,7 +65,6 @@ DeviceEvents
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 | where count_ > 5
 ```
-
 ### 2. Create new rule and provide alert details.
 
 With the query in the query editor, select **Create detection rule** and specify the following alert details:
@@ -71,7 +74,7 @@ With the query in the query editor, select **Create detection rule** and specify
 - **Alert title** — title displayed with alerts triggered by the rule
 - **Severity** — potential risk of the component or activity identified by the rule
 - **Category** — threat component or activity identified by the rule
-- **MITRE ATT&CK techniques** — one or more attack techniques identified by the rule as documented in the MITRE ATT&CK framework
+- **MITRE ATT&CK techniques** — one or more attack techniques identified by the rule as documented in the [MITRE ATT&CK framework](https://attack.mitre.org/)
 - **Description** — more information about the component or activity identified by the rule 
 - **Recommended actions** — additional actions that responders might take in response to an alert
 
@@ -100,6 +103,12 @@ These actions are applied to machines in the `DeviceId` column of the query resu
 - **Run antivirus scan** — performs a full Windows Defender Antivirus scan on the machine
 - **Initiate investigation** — initiates an [automated investigation](mtp-autoir.md) on the machine
 
+#### Actions on files
+This **Quarantine file** action is applied to files in the `SHA1`, `InitiatingProcessSHA1`, `SHA256`, or `InitiatingProcessSHA256` column of the query results. This action deletes the file from its current location and places a copy in quarantine.
+
+> [!NOTE]
+> The allow or block action for custom detection rules is currently not supported on Microsoft Threat Protection.
+
 ### 4. Set the rule scope.
 Set the scope to specify which devices are covered by the rule. The scope influences rules that check devices and doesn't affect rules that check only mailboxes and user accounts or identities.
 
@@ -109,11 +118,6 @@ When setting the scope, you can select:
 - Specific device groups
 
 Only data from devices in scope will be queries. Also, actions will be taken only on these devices. 
-
-#### Actions on files
-These actions are applied to files in the `SHA1` or the `InitiatingProcessSHA1` column of the query results:
-- **Allow/Block** — automatically adds the file to your [Microsoft Defender ATP custom indicator list](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) so that it is always allowed to run or blocked from running. You can set the scope of this action so that it is taken only on selected machine groups. This scope is independent of the scope of the rule.
-- **Quarantine file** — deletes the file from its current location and places a copy in quarantine
 
 ### 5. Review and turn on the rule.
 After reviewing the rule, click **Create** to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
