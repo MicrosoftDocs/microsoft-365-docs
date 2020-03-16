@@ -48,7 +48,7 @@ To learn more, see [How AIR works](https://docs.microsoft.com/microsoft-365/secu
 
 ## How to get AIR
 
-Office 365 AIR capabilities are included in [Office 365 Advanced Threat Protection Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2). However, your Office 365 ATP policies should be configured in order for AIR to work as expected. These include:
+Office 365 AIR capabilities are included in [Office 365 Advanced Threat Protection Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2). However, your [Office 365 ATP policies should be configured](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) in order for AIR to work as expected. These include:
 - [Antimalware protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies)
 - [Safe Attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies)
 - [Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies)
@@ -57,13 +57,15 @@ Office 365 AIR capabilities are included in [Office 365 Advanced Threat Protecti
 - [Mail flow rules](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-transport-rules-to-configure-bulk-email-filtering) and [zero-hour auto purge](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge)
 - [Audit log search](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
-Certain [default alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) can trigger automated investigations. These include the following:
+In addition to your Office 365 ATP policies, you'll want to review and potentially configure your organization's [alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies). Certain [default alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) can trigger automated investigations. These include the following:
 - A potentially malicious URL click is detected
 - An email message is reported by a user as phish
 - Email messages containing malware are removed after delivery
 - Email messages containing phish URLs are removed after delivery
 - Suspicious email sending patterns are detected
 - A user is restricted from sending email
+
+[Learn more about alerts and AIR](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office).
 
 ## Required permissions to use AIR capabilities
 
