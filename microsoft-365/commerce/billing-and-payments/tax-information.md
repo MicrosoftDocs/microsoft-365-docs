@@ -105,6 +105,30 @@ You might qualify for VAT zero-rating:
 
 - **If you're in Ireland and you have relevant valid VAT exemption certification:** Microsoft Ireland Operations Ltd. may be entitled to exempt the transaction from VAT. If you don't, Microsoft Ireland Operations Ltd. applies the current Irish VAT rate, whether you provide a VAT ID or not.
 
+#### Add your VAT ID (EU countries only)
+
+::: moniker range="o365-worldwide"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+
+2. Find the subscription card for the subscription you want to update.
+
+3. In the **Settings & Actions** section, select **Edit service usage address**.
+
+4. On the **Edit your service usage address** page, enter your VAT ID in the **VAT number** box, and then select **Save**.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+  
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
+
+2. Select the subscription name, and then select **More actions** \> **Edit VAT number**.
+  
+3. On the **Edit your service usage address** page, enter your VAT ID in the **VAT number** box, and then select **Submit**.
+
+::: moniker-end
+
 ### Asia Pacific countries (APAC)
 
 If you're billed by the Microsoft Regional Sales office, "Microsoft Regional Sales" appears on your invoice, and you're usually not charged a consumption or Value-Added Tax (VAT) tax unless it is a domestic sale.
@@ -150,36 +174,9 @@ Have the following documentation ready:
 | Ireland | 13B/56A Tax Exemption Certificate|
 | International organizations that hold tax exemption | Certification / letter confirmation from local tax authorities |
 | Puerto Rico | Certificado de Compras Exentas |
-
-### Add your VAT ID (EU countries only)
-
-::: moniker range="o365-worldwide"
-  
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
-
-2. Find the subscription card for the subscription you want to update.
-
-3. In the **Settings & Actions** section, select **Edit service usage address**.
-
-4. On the **Edit your service usage address** page, enter your VAT ID in the **VAT number** box, and then select **Save**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-  
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-
-2. Select the subscription name, and then select **More actions** \> **Edit VAT number**.
-  
-3. On the **Edit your service usage address** page, enter your VAT ID in the **VAT number** box, and then select **Submit**.
-
-::: moniker-end
   
 ## Related articles
   
 [View your bill](view-your-bill-or-invoice.md)
   
-[Understand your invoice](understand-your-invoice2.md)
+[Understand your invoice](understand-your-invoice.md)
