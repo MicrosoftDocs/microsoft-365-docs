@@ -132,7 +132,7 @@ Beside the main content area of the Machine profile page is the sidebar.
 
 The sidebar provides some important basic information in small subsections which can be toggled open or closed:
 
-* Any tags associated with the device
+* **Tags** - Any tags associated with the device
 * **Security info** - Open incidents, active alerts, exposure level and risk level
 * **Device details** - Domain, OS, Asset group, health state, data sensitivity, and IP addresses
 * **Network activity** - Timestamps for the first time and last time the device was seen on the network
@@ -141,7 +141,11 @@ This section also includes the name and exposure level of the device, and an ico
 
 ## Response actions
 
-The response actions available to you on the profile page include:
+Response actions offer a quick way to defend against and analyze threats.
+
+![Image of sidebar tab for Machine profile](../../media/mtp-machine-profile/actions.PNG)
+
+The response actions available to you here include:
 
 * **Manage tags** - Updates custom tags you have applied to this device.
 * **Isolate machine** - Isolates the machine from your organization's network while keeping it connected to Microsoft Defender Advanced Threat Protection. You can choose to allow Outlook, Teams, and Skype for Business to run while the machine is isolated, for communication purposes.
