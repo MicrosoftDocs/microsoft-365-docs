@@ -24,11 +24,15 @@ You can find in-depth information about what software it is running, any past an
 
 The Machine profile page can be accessed by directly selecting a device name on the Machines list or by choosing **Open Machine page** on the Machines list flyout.
 
-Once you have the page open, you'll find that it is broken up into two sections.
+Once you have the page open, you'll find that it is broken up into three sections.
 
-The sidebar lists basic details about the device.
+![Image of machine profile page with (1) Tab area (2) Sidebar and (3) Actions highlighted in red](../../media/mtp-machine-profile/mtp-machine-profile-all.png)
 
-The main content area contains seven tabs that you can toggle through to view different kinds of information about the machine. There are also action links in this area, for common administrative tasks.
+The main content area (1), contains seven tabs that you can toggle through to view different kinds of information about the machine.
+
+The sidebar (2) lists basic details about the machine.
+
+There are also response actions available in a header (3) before the sidebar and main content sections. You can use these actions to perform common security-related tasks.
 
 ## Tabs
 
@@ -38,15 +42,21 @@ The Machine profile tabs allow you to toggle through an overview of security det
 
 The default tab in the main area of the page presents an overview of the most important security information about that device.
 
+![Image of overview tab for Machine profile](../../media/mtp-machine-profile/overview.png)
+
 Here, you can find a chart of the device's risk level and active alerts, any currently logged on users, a brief list of most and least frequent users, and security assessments that detail the device's exposure level, security recommendations, affected software, and discovered vulnerabilities.
 
 ### Alerts tab
 
 The **Alerts** tab contains a list of alerts that have been reported on that device.
 
+![Image of alerts tab for Machine profile](../../media/mtp-machine-profile/alerts.png)
+
 You can customize the number of items displayed, as well as which columns are displayed for each item. The default behavior is to list 30 items per page, and have 11 columns toggled on to display.
 
-The columns in this tab include information on the severity of the threat that triggered the alert, as well as status, investigation state, and who if anyone the alert has been assigned to.
+The columns in this tab include information on the severity of the threat that triggered the alert, as well as status, investigation state, and who if anyone the alert has been assigned to. 
+
+The impacted entities column refers to the machine (entity) whose profile you are currently viewing, plus any other machines in your network that are affected.
 
 Selecting an item from this list will open a link to the selected alert.
 
@@ -56,17 +66,21 @@ This list can be filtered by severity, status, or assignee.
 
 The **Timeline** includes a interactive, chronological chart of events raised on the device. By moving the highlighted area of the chart, you can view events over different ranges of time. You can also type in a custom range of dates.
 
-Below the chart is a list of events for that range of time.
+Below the chart is a list of events for that range of dates.
 
-The number of items displayed and the columns on the list can both be customized. The default columns list the event time, active user, action type, entities, and additional information about the event.
+![Image of timeline tab for Machine profile](../../media/mtp-machine-profile/timeline.png)
 
-Selecting an item from the list will open a flyout displaying an Event entities graph, showing the parent and child processes that triggered the event to fire.
+The number of items displayed and the columns on the list can both be customized. The default columns list the event time, active user, action type, entities (processes), and additional information about the event.
+
+Selecting an item from the list will open a flyout displaying an Event entities graph, showing the parent and child processes that triggered the event.
 
 This list can be filtered by the specific kind of event; for example, Registry events or Smart Screen Events.
 
 ### Security recommendations tab
 
 The **Security recommendations** tab lists actions you can take to protect the device. Selecting an item on this list will open a flyout where you can get instructions on how to apply the recommendation.
+
+![Image of security recommendations tab for Machine profile](../../media/mtp-machine-profile/security-recs.png)
 
 As with the previous tabs, the number of items displayed per page and which columns are visible can be customized.
 
@@ -75,6 +89,8 @@ The default view includes columns that detail the security weaknesses addressed,
 ### Software inventory
 
 The **Software inventory** tab lists software installed on the device.
+
+![Image of software inventory tab for Machine profile](../../media/mtp-machine-profile/software-inventory.png)
 
 The default view displays the software vendor, installed version number, number of known software weaknesses, threat insights, product code, and tags. The number of items displayed and which columns are displayed can both be customized.
 
@@ -86,6 +102,8 @@ This list can be filtered by product code.
 
 The **Discovered vulnerabilities** tab lists any Common Vulnerabilities and Exploits (CVEs) that may affect the device.
 
+![Image of discovered vulnerabilities tab for Machine profile](../../media/mtp-machine-profile/discovered-vulnerabilities.png)
+
 The default view lists the severity of the CVE, the Common Vulnerability Score (CVS), the software related to the CVE, when the CVE was published, when the CVE was last updated, and threats associated with the CVE.
 
 As with the previous tabs, the number of items displayed and which columns are visible can be customized.
@@ -96,6 +114,8 @@ Selecting an item from this list will open a flyout that describes the CVE.
 
 The **Missing KBs** tab lists any Microsoft Updates that have yet to be applied to the machine. The "KBs" in question are [Knowledge Base articles](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) which describe these updates; for example, [KB4551762](https://support.microsoft.com/en-us/help/4551762/windows-10-update-kb4551762).
 
+![Image of missing kbs tab for Machine profile](../../media/mtp-machine-profile/missing-kbs.png)
+
 The default view lists the bulletin containing the updates, OS version, products affected, CVEs addressed, the KB number, and tags.
 
 The number of items displayed per page and which columns are displayed can be customized.
@@ -104,25 +124,30 @@ Selecting an item will open a flyout that links to the update.
 
 ## Sidebar
 
-Beside the main content area of the Machine profile page is the sidebar. The sidebar provides some important basic information:
+Beside the main content area of the Machine profile page is the sidebar.
 
-* Name and exposure level of the device, and an icon to indicate if it is currently active
+![Image of sidebar tab for Machine profile](../../media/mtp-machine-profile/sidebar.png)
+
+The sidebar provides some important basic information in small subsections which can be toggled open or closed:
+
 * Any tags associated with the device
 * **Security info** - Open incidents, active alerts, exposure level and risk level
 * **Device details** - Domain, OS, Asset group, health state, data sensitivity, and IP addresses
 * **Network activity** - Timestamps for the first time and last time the device was seen on the network
 
+This section also includes the name and exposure level of the device, and an icon to indicate if it is currently active on the network.
+
 ## Response actions
 
-The actions available to you on the profile page include:
+The response actions available to you on the profile page include:
 
-* Manage tags - Updates custom tags you have applied to this device.
-* Isolate machine - Isolates the machine from your organization's network while keeping it connected to Microsoft Defender Advanced Threat Protection. You can choose to allow Outlook, Teams, and Skype for Business to run while the machine is isolated, for communication purposes.
-* Restrict app execution - Prevents applications that are not signed by Microsoft from running
-* Run antivirus scan - Updates Windows Defender Antivirus definitions and immediately runs an antivirus scan. Choose between Quick scan or Full scan.
-* Collect investigation package - Gathers information about the machine. When the investigation is completed, you can download it.
-* Initiate Live Response session - Loads a remote shell on the machine for [in-depth security investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response).
-* Initiate automated investigation - Automatically [investigates and remediates threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). You can also set up automated investigations to trigger for certain alerts.
+* **Manage tags** - Updates custom tags you have applied to this device.
+* **Isolate machine** - Isolates the machine from your organization's network while keeping it connected to Microsoft Defender Advanced Threat Protection. You can choose to allow Outlook, Teams, and Skype for Business to run while the machine is isolated, for communication purposes.
+* **Restrict app execution** - Prevents applications that are not signed by Microsoft from running
+* **Run antivirus scan** - Updates Windows Defender Antivirus definitions and immediately runs an antivirus scan. Choose between Quick scan or Full scan.
+* **Collect investigation package** - Gathers information about the machine. When the investigation is completed, you can download it.
+* **Initiate Live Response session** - Loads a remote shell on the machine for [in-depth security investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response).
+* **Initiate automated investigation** - Automatically [investigates and remediates threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Although you can trigger automated investigations to run from this page, you can also set up this response to trigger for certain alerts.
 
 ## Related topics
 
