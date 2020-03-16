@@ -105,6 +105,9 @@ You might qualify for VAT zero-rating:
 
 - **If you're in Ireland and you have relevant valid VAT exemption certification:** Microsoft Ireland Operations Ltd. may be entitled to exempt the transaction from VAT. If you don't, Microsoft Ireland Operations Ltd. applies the current Irish VAT rate, whether you provide a VAT ID or not.
 
+
+#### Add your VAT ID (EU countries only)
+
 ::: moniker range="o365-worldwide"
 
 #### Add your VAT ID (EU countries only)
