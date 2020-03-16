@@ -139,7 +139,7 @@ If your company has enabled single sign-on and you receive an error or login is 
 
 ### IP filtering
 
-If you have enabled IP filtering, you may need to explicitly allow IP addresses. See the [IP Address Access Control page](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/login/task/t_AccessControl.html) on ServiceNow for information on how to allow IP ranges on ServiceNow. See [url] for a list of IP addresses to allow.
+If you have enabled IP filtering, you may need to explicitly allow IP addresses. See [IP Address Access Control](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/login/task/t_AccessControl.html) on ServiceNow for information on how to allow IP ranges on ServiceNow. See [url] for a list of IP addresses to allow.
 
 ### Installation is complete but don't see tickets and can't share
 
