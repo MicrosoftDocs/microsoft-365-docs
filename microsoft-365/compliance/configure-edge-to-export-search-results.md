@@ -11,7 +11,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "You have to enable ClickOnce support to use the newest version of Microsoft Edge to export search results from Content Search and eDiscovery in the security and compliance center."
+description: "You have to enable ClickOnce support to use the newest version of Microsoft Edge to download search results from Content Search and eDiscovery in the security and compliance center."
 ---
 
 # Use the Office 365 eDiscovery Export Tool in Microsoft Edge
