@@ -89,7 +89,7 @@ When saved, custom detections rules immediately run. They then run again at fixe
 Whenever a rule runs, similar detections on the same machine could be aggregated into fewer alerts, so running a rule less frequently can generate fewer alerts. Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
 
 ### 3. Choose the impacted entities.
-Identify the columns in your query results where you expect to find main affected or impacted entity. For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses. By identifying the main impacted entity among these addresses, you guide the service on how to aggregate relevant alerts, correlate incidents, and target response actions.
+Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses. By identifying the main impacted entity among these addresses, you guide the service on how to aggregate relevant alerts, correlate incidents, and target response actions.
 
 You can select only one column for each entity type (mailbox, user, or device). Columns that are not returned by your query can't be selected.
 
@@ -98,7 +98,7 @@ Your custom detection rule can automatically take actions on files or machines t
 
 #### Actions on machines
 These actions are applied to machines in the `DeviceId` column of the query results:
-- **Isolate machine** — uses Microsoft Defender ATP to applies full network isolation, preventing the machine from connecting to any application or service. [Learn more about Microsoft Defender ATP machine isolation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
+- **Isolate machine** — uses Microsoft Defender ATP to apply full network isolation, preventing the machine from connecting to any application or service. [Learn more about Microsoft Defender ATP machine isolation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
 - **Collect investigation package** — collects machine information in a ZIP file. [Learn more about the Microsoft Defender ATP investigation package](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
 - **Run antivirus scan** — performs a full Windows Defender Antivirus scan on the machine
 - **Initiate investigation** — initiates an [automated investigation](mtp-autoir.md) on the machine
@@ -117,7 +117,7 @@ When setting the scope, you can select:
 - All devices
 - Specific device groups
 
-Only data from devices in scope will be queries. Also, actions will be taken only on these devices. 
+Only data from devices in scope will be queried. Also, actions will be taken only on those devices.
 
 ### 5. Review and turn on the rule.
 After reviewing the rule, click **Create** to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
