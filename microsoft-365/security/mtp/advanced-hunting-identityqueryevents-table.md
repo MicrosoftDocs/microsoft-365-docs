@@ -36,16 +36,16 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Application` | string | Application that performed the recorded action |
 | `Query` | string | Full or partial query string |
 | `QueryObject` | string | Name of the user, group, device, domain, or any other entity type being queried |
-| `Protocol` | string | IP protocol used, whether TCP or UDP |
+| `Protocol` | string | Protocol used during the communication |
 | `AccountName` | string | User name of the account |
 | `AccountDomain` | string | Domain of the account |
 | `AccountUpn` | string | User principal name (UPN) of the account |
 | `AccountSid` | string | Security Identifier (SID) of the account |
 | `AccountObjectId` | string | Unique identifier for the account in Azure AD |
 | `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
-| `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
-| `IPAddress` | string | IP addressed assigned to the endpoint and used during related network communications |
-| `Location` | string | Geographic location of the IP address indicated by a 2-letter country code |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the endpoint |
+| `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
+| `Location` | string | City, country, or other geographic location associated with the event |
 
 ## Related topics
 - [Proactively hunt for threats](advanced-hunting-overview.md)

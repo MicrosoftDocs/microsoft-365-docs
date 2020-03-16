@@ -35,7 +35,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ActionType` | string | Type of activity that triggered the event |
 | `LogonType` | string | Type of logon session, specifically:<br><br> - **Interactive** - User physically interacts with the machine using the local keyboard and screen<br><br> - **Remote interactive (RDP) logons** - User interacts with the machine remotely using Remote Desktop, Terminal Services, Remote Assistance, or other RDP clients<br><br> - **Network** - Session initiated when the machine is accessed using PsExec or when shared resources on the machine, such as printers and shared folders, are accessed<br><br> - **Batch** - Session initiated by scheduled tasks<br><br> - **Service** - Session initiated by services as they start |
 | `Application` | string | Application that performed the recorded action |
-| `Protocol` | string | IP protocol used, whether TCP or UDP |
+| `Protocol` | string | Protocol used during the communication |
 | `AccountName` | string | User name of the account |
 | `AccountDomain` | string | Domain of the account |
 | `AccountUpn` | string | User principal name (UPN) of the account |
@@ -45,8 +45,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
 | `DeviceType` | string | Type of device |
 | `OSPlatform` | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
-| `IPAddress` | string | IP addressed assigned to the endpoint and used during related network communications |
-| `Location` | string | Geographic location of the IP address indicated by a 2-letter country code |
+| `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
+| `Location` | string | City, country, or other geographic location associated with the event |
 | `Isp` | string | Internet service provider (ISP) associated with the endpoint IP address |
 
 ## Related topics
