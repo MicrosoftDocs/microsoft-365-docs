@@ -353,7 +353,7 @@
           - name: Export a search report
             href: export-a-content-search-report.md
           - name: Use Microsoft Edge to export search results
-            href: configure-edge-to-export-search-results
+            href: configure-edge-to-export-search-results.md
           - name: Search for and delete email messages
             href: search-for-and-delete-messages-in-your-organization.md
           - name: Search the cloud-based mailboxes of on-premises users
