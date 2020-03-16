@@ -11,31 +11,30 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
-description: "You have to enable ClickOnce support to use Microsoft Edge to export search results from Content Search and eDiscovery in the security and compliance center."
+description: "You have to enable ClickOnce support to use the newest version of Microsoft Edge to export search results from Content Search and eDiscovery in the security and compliance center."
 ---
 
 # Use the Office 365 eDiscovery Export Tool in Microsoft Edge
 
-As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. To continue using the Microsoft Office 365 eDiscovery Export Tool to download Content Search or eDiscovery search results, you either need to use [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) or enable ClickOnce support in Microsoft Edge.
+As a result of recent changes to the newest version of Microsoft Edge, ClickOnce support is no longer enabled by default. To continue using the Microsoft Office 365 eDiscovery Export Tool to download Content Search or eDiscovery search results, you either need to use [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) or enable ClickOnce support in the newest version of Microsoft Edge.
 
-## How to enable ClickOnce support in Microsoft Edge
+## Enable ClickOnce support in Microsoft Edge
 
-1. In Microsoft Edge, navigate to **edge://flags/#edge-click-once**.
+1. In Microsoft Edge, go to **edge://flags/#edge-click-once**.
 
 2. If the existing value is set to **Default** or **Disabled** in the dropdown list, change it to **Enabled**.
-    
+
    ![](../media/ClickOnceimage1.png)
 
 3. Scroll down to the bottom of the browser window and click **Restart** to restart Edge.
 
    ![](../media/ClickOnceimage2.png)
 
-**Note:** Organizations can use Group Policy to disable ClickOnce support. To check if there is an organizational policy for ClickOnce support, navigate to **edge://policy**. The following screenshot shows that ClickOnce is enabled across the entire organization. If this policy value is set to **false**, you will need to contact an admin in your organization.
+**Note:** Organizations can use Group Policy to disable ClickOnce support. To check if there is an organizational policy for ClickOnce support, go to **edge://policy**. The following screenshot shows that ClickOnce is enabled across the entire organization. If this policy value is set to **false**, you will need to contact an admin in your organization.
 
 ![](../media/ClickOnceimage3.png)
 
-## Install and run the Office 365 eDiscovery Export Tool
+## Install and run the eDiscovery Export Tool
 
 1. Click **Download results** on the flyout page of an export in Content Search or an eDiscovery case.
 
