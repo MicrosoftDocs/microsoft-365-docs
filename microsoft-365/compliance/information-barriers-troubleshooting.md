@@ -202,7 +202,7 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
 
 3. Usually, you will find that a user has been included in more than one segment. You can fix this by updating the `-UserGroupFilter` value in `OrganizationSegments`.
 
-4. Re-apply information barrier policies using these procedures [Information Barriers policies](information-barriers-policies.md#part-3:-apply-information-barrier-policies).
+4. Re-apply information barrier policies using these procedures [Information Barriers policies](information-barriers-policies.md#part-3-apply-information-barrier-policies).
 
 ## Related topics
 
