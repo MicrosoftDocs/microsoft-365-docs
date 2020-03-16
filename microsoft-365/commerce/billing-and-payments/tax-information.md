@@ -134,17 +134,6 @@ You might qualify for VAT zero-rating:
 
 ::: moniker-end
 
-
-::: moniker range="o365-21vianet"
-  
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-
-2. Select the subscription name, and then select **More actions** \> **Edit VAT number**.
-  
-3. On the **Edit your service usage address** page, enter your VAT ID in the **VAT number** box, and then select **Submit**.
-
-::: moniker-end
-
 ### Asia Pacific countries (APAC)
 
 If you're billed by the Microsoft Regional Sales office, "Microsoft Regional Sales" appears on your invoice, and you're usually not charged a consumption or Value-Added Tax (VAT) tax unless it is a domestic sale.
