@@ -18,7 +18,9 @@ search.appverid: met150
 
 The Microsoft 365 security portal provides you with Machine profile pages, so you can assess the health and status of devices on your network. Each Machine profile page contains a wealth of information about the device.
 
-You can find in-depth information about what software it is running, any past and present security events or alerts, and find links to relevant software patches. You can also use the Machine profile to perform common security-related tasks, and quickly review basic details about the device.
+You can review in-depth information about what software it is running, any past and present security events or alerts, and find links to relevant software patches. 
+
+You can also use the Machine profile to perform common security-related tasks, and quickly review basic details about the device.
 
 ## Navigating the Machine profile page
 
@@ -28,19 +30,19 @@ Once you have the page open, you'll find that it is broken up into three section
 
 ![Image of machine profile page with (1) Tab area (2) Sidebar and (3) Actions highlighted in red](../../media/mtp-machine-profile/mtp-machine-profile-all.png)
 
-The main content area (1), contains seven tabs that you can toggle through to view different kinds of information about the machine.
+The main content area (1) contains seven tabs that you can toggle through to view different kinds of information about the machine.
 
 The sidebar (2) lists basic details about the machine.
 
-There are also response actions available in a header (3) before the sidebar and main content sections. You can use these actions to perform common security-related tasks.
+There are also response actions available in a header (3) before the sidebar and main content sections. You can use the actions in this header to perform common security-related tasks.
 
-## Tabs
+## Tabs section
 
 The Machine profile tabs allow you to toggle through an overview of security details about the machine, and tables containing a list of alerts, a timeline, a list of security recommendations, a software inventory, a list of discovered vulnerabilities, and missing KBs (security updates).
 
 ### Overview tab
 
-The default tab in the main area of the page presents an overview of the most important security information about that device.
+The default tab is **Overview**. It provides a quick look at the most important security fact about the device.
 
 ![Image of overview tab for Machine profile](../../media/mtp-machine-profile/overview.png)
 
@@ -48,7 +50,7 @@ Here, you can find a chart of the device's risk level and active alerts, any cur
 
 ### Alerts tab
 
-The **Alerts** tab contains a list of alerts that have been reported on that device.
+The **Alerts** tab contains a list of alerts that have been reported on the device.
 
 ![Image of alerts tab for Machine profile](../../media/mtp-machine-profile/alerts.png)
 
@@ -56,7 +58,7 @@ You can customize the number of items displayed, as well as which columns are di
 
 The columns in this tab include information on the severity of the threat that triggered the alert, as well as status, investigation state, and who if anyone the alert has been assigned to. 
 
-The impacted entities column refers to the machine (entity) whose profile you are currently viewing, plus any other machines in your network that are affected.
+The *impacted entities* column refers to the machine (entity) whose profile you are currently viewing, plus any other machines in your network that are affected.
 
 Selecting an item from this list will open a link to the selected alert.
 
@@ -64,9 +66,9 @@ This list can be filtered by severity, status, or assignee.
 
 ### Timeline tab
 
-The **Timeline** includes a interactive, chronological chart of events raised on the device. By moving the highlighted area of the chart, you can view events over different ranges of time. You can also type in a custom range of dates.
+The **Timeline** tab includes a interactive, chronological chart of events raised on the device. By moving the highlighted area of the chart, you can view events over different ranges of time. You can also type in a custom range of dates.
 
-Below the chart is a list of events for that range of dates.
+Below the chart is a list of events for the selected range of dates.
 
 ![Image of timeline tab for Machine profile](../../media/mtp-machine-profile/timeline.png)
 
@@ -114,7 +116,7 @@ Selecting an item from this list will open a flyout that describes the CVE.
 
 The **Missing KBs** tab lists any Microsoft Updates that have yet to be applied to the machine. The "KBs" in question are [Knowledge Base articles](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) which describe these updates; for example, [KB4551762](https://support.microsoft.com/en-us/help/4551762/windows-10-update-kb4551762).
 
-![Image of missing kbs tab for Machine profile](../../media/mtp-machine-profile/missing-kbs.png)
+![Image of missing kbs tab for Machine profile](../../media/mtp-machine-profile/missing-kbs.PNG)
 
 The default view lists the bulletin containing the updates, OS version, products affected, CVEs addressed, the KB number, and tags.
 
@@ -147,7 +149,8 @@ The response actions available to you on the profile page include:
 * **Run antivirus scan** - Updates Windows Defender Antivirus definitions and immediately runs an antivirus scan. Choose between Quick scan or Full scan.
 * **Collect investigation package** - Gathers information about the machine. When the investigation is completed, you can download it.
 * **Initiate Live Response session** - Loads a remote shell on the machine for [in-depth security investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response).
-* **Initiate automated investigation** - Automatically [investigates and remediates threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Although you can trigger automated investigations to run from this page, you can also set up this response to trigger for certain alerts.
+* **Initiate automated investigation** - Automatically [investigates and remediates threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Although you can manually trigger automated investigations to run from this page, [certain alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) trigger automatic investigations on their own.
+* **Action center** - View the status of submitted actions. Only available if another action has already been selected.
 
 ## Related topics
 
