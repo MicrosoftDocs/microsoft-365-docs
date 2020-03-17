@@ -303,7 +303,7 @@ Click one of the following links to go to a specific table.
 |[Site administration activities](#site-administration-activities)|[Exchange mailbox activities](#exchange-mailbox-activities)|[Sway activities](#sway-activities)|
 |[User administration activities](#user-administration-activities)|[Azure AD group administration activities](#azure-ad-group-administration-activities)|[Application administration activities](#application-administration-activities)|
 |[Role administration activities](#role-administration-activities)|[Directory administration activities](#directory-administration-activities)|[eDiscovery activities](#ediscovery-activities)|
-|[Advanced eDiscovery activities](#advanced-ediscovery-activities)|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
+|[Advanced eDiscovery activities](#advanced-ediscovery-activities)|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#workplace-analytics-activities)|
 |[Briefing email activities](#briefing-email-activities)|[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|
 |[Yammer activities](#yammer-activities)|[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|
 |[Microsoft Stream activities](#microsoft-stream-activities)|[Microsoft Forms activities](#microsoft-forms-activities)|[Sensitivity label activities](#sensitivity-label-activities)|
@@ -706,7 +706,7 @@ You can search the audit log for activities in Power BI. For information about P
 
 Audit logging for Power BI isn't enabled by default. To search for Power BI activities in the Office 365 audit log, you have to enable auditing in the Power BI admin portal. For instructions, see the "Audit logs" section in [Power BI admin portal](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
 
-### Microsoft Workplace Analytics activities
+### Workplace Analytics activities
 
 Workplace Analytics provides insight into how groups collaborate across your Office 365 organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
@@ -730,7 +730,7 @@ The following table lists the activities in Briefing email that are logged in th
 
 - [Overview of Briefing email](https://docs.microsoft.com/Briefing/be-overview)
 
-- [Configure the Briefing email](https://docs.microsoft.com/Briefing/be-admin)
+- [Configure Briefing email](https://docs.microsoft.com/Briefing/be-admin)
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
