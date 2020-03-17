@@ -304,9 +304,10 @@ Click one of the following links to go to a specific table.
 |[User administration activities](#user-administration-activities)|[Azure AD group administration activities](#azure-ad-group-administration-activities)|[Application administration activities](#application-administration-activities)|
 |[Role administration activities](#role-administration-activities)|[Directory administration activities](#directory-administration-activities)|[eDiscovery activities](#ediscovery-activities)|
 |[Advanced eDiscovery activities](#advanced-ediscovery-activities)|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Yammer activities](#yammer-activities)|
-|[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|[Microsoft Stream activities](#microsoft-stream-activities)|
-|[Microsoft Forms activities](#microsoft-forms-activities)|[Sensitivity label activities](#sensitivity-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)||
+|[Briefing email activities](#briefing-email-activities)|[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|
+|[Yammer activities](#yammer-activities)|[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|
+|[Microsoft Stream activities](#microsoft-stream-activities)|[Microsoft Forms activities](#microsoft-forms-activities)|[Sensitivity label activities](#sensitivity-label-activities)|
+|[Exchange admin activities](#exchange-admin-audit-log)||
 ||||
 
 ### File and page activities
@@ -722,6 +723,21 @@ Workplace Analytics provides insight into how groups collaborate across your Off
 |Uploaded organization data|UploadedOrgData|Admin uploaded organizational data file.|
 |Viewed Explore|ViewedExplore|Analyst viewed visualizations in one or more Explore page tabs.|
 ||||
+
+### Briefing email activities
+
+The following table lists the activities in Briefing email that are logged in the Office 365 audit log. For more information about Briefing email, see:
+
+- [Overview of Briefing email](https://docs.microsoft.com/Briefing/be-overview)
+
+- [Configure the Briefing email](https://docs.microsoft.com/Briefing/be-admin)
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Updated organization privacy settings|UpdatedOrganizationBriefingSettings|Admin updates the organization's privacy settings for Briefing email. |
+|Updated user privacy settings|UpdatedUserBriefingSettings|Admin updates the user privacy settings for Briefing email. (question from Markjjo: I assume this activity is triggered when an admin runs Set-UserBriefingConfig cmdlet. Is this activity also triggered if a user chooses to Unsubscribe and opt out of Briefing email? If so, I would also state that here.|
+||||
+
 
 ### Microsoft Teams activities
 
