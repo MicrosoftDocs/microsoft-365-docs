@@ -69,11 +69,7 @@ After you've completed the previous step to remove the ransomware payload from y
 
 ## Step 5: Recover your files in your OneDrive for Business
 
-OneDrive for Business will allow you to recover any files you have stored in it. You have two options:
-
-- Use the [OneDrive website](https://support.office.com/article/159cad6d-d76e-4981-88ef-de6e96c93893).
-
-- If a large number of files were affected, you can create a support request for a "Site Collection Restore". This request can restore files from up to 14 days in the past.
+Files Restore in OneDrive for Business allows you to restore your entire OneDrive to a previous point in time within the last 30 days. For more information, see [Restore your OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 ## Step 6: Recover deleted email
 

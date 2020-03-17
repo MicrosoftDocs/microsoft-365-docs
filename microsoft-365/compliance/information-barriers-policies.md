@@ -1,4 +1,4 @@
----
+0---
 title: "Define information barrier policies"
 f1.keywords:
 - NOCSH
@@ -15,7 +15,7 @@ localization_priority: None
 description: "Learn how to define policies for information barriers in Microsoft Teams."
 ---
 
-# Define policies for information barriers
+# Define information barrier policies
 
 ## Overview
 
@@ -30,15 +30,15 @@ This article describes how to plan, define, implement, and manage information ba
 
 When you define policies for information barriers, you'll work with user account attributes, segments, "block" and/or "allow" policies, and policy application.
 
-- **User account attributes** are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details. 
+- User account attributes are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details. 
 
-- **Segments** are sets of users that are defined in the Office 365 Security & Compliance Center using a selected **user account attribute**. (See the [list of supported attributes](information-barriers-attributes.md).) 
+- Segments are sets of users that are defined in the Office 365 Security & Compliance Center using a selected **user account attribute**. (See the [list of supported attributes](information-barriers-attributes.md).) 
 
-- **Information barrier policies** determine communication limits or restrictions. When you define information barrier policies, you choose from two kinds of policies:
+- Information barrier policies determine communication limits or restrictions. When you define information barrier policies, you choose from two kinds of policies:
     - "Block" policies prevent one segment from communicating with another segment.
     - "Allow" policies allow one segment to communicate with only certain other segments.
 
-- **Policy application** is done after all information barrier policies are defined, and you are ready to apply them in your organization.
+- Policy application is done after all information barrier policies are defined, and you are ready to apply them in your organization.
 
 ## The work flow at a glance
 
@@ -55,22 +55,22 @@ When you define policies for information barriers, you'll work with user account
 
 In addition to the [required licenses and permissions](information-barriers.md#required-licenses-and-permissions), make sure that the following requirements are met: 
      
-- **Directory data**. Make sure that your organization's structure is reflected in directory data. To do this, make sure that user account attributes, such as group membership, department name, etc. are populated correctly in Azure Active Directory (or Exchange Online). To learn more, see the following resources:
+- Directory data - Make sure that your organization's structure is reflected in directory data. To do this, make sure that user account attributes, such as group membership, department name, etc. are populated correctly in Azure Active Directory (or Exchange Online). To learn more, see the following resources:
   - [Attributes for information barrier policies](information-barriers-attributes.md)
   - [Add or update a user's profile information using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
-- **Scoped directory search**. Before you define your organization's first information barrier policy, you must [enable scoped directory search in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Wait at least 24 hours after enabling scoped directory search before you set up or define information barrier policies.
+- Scoped directory search - Before you define your organization's first information barrier policy, you must [enable scoped directory search in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Wait at least 24 hours after enabling scoped directory search before you set up or define information barrier policies.
 
-- **Audit logging**. In order to look up the status of a policy application, audit logging must be turned on. We recommend doing this before you begin to define segments or policies. To learn more, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
+- Audit logging - In order to look up the status of a policy application, audit logging must be turned on. We recommend doing this before you begin to define segments or policies. To learn more, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).
 
-- **No address book policies**. Before you define and apply information barrier policies, make sure no Exchange address book policies are in place. (Information barriers are based on address book policies, but the two kinds of policies are not interchangeable.) If you do have such policies, make sure to [remove your address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) first.
+- No address book policies -  Before you define and apply information barrier policies, make sure no Exchange address book policies are in place. Information barriers are based on address book policies, but the two kinds of policies are not compatible. If you do have such policies, make sure to [remove your address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) first. Once information barrier policies are enabled and you have hierarchical address book enabled, all users ***who are not included*** in an information barrier segment will see the [hierarchical address book](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange online.
 
-- **PowerShell**. Currently, information barrier policies are defined and managed in the Office 365 Security & Compliance Center using PowerShell cmdlets. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the AzureRM module.
+- PowerShell -  Currently, information barrier policies are defined and managed in the Office 365 Security & Compliance Center using PowerShell cmdlets. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the AzureRM module.
     - [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [Install the Azure PowerShell module](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
-- **Admin consent for information barriers in Microsoft Teams**. When your policies are in place, information barriers can remove people from chat sessions they are not supposed to be in. This helps ensure your organization remains compliant with policies and regulations. Use the following procedure to enable information barrier policies to work as expected in Microsoft Teams. 
+- Admin consent for information barriers in Microsoft Teams -  When your policies are in place, information barriers can remove people from chat sessions they are not supposed to be in. This helps ensure your organization remains compliant with policies and regulations. Use the following procedure to enable information barrier policies to work as expected in Microsoft Teams. 
 
    1. Run the following PowerShell cmdlets:
 
@@ -117,7 +117,7 @@ Determine which attributes in your organization's directory data you'll use to d
 
 ### Define segments using PowerShell
 
-Defining segments does not effect users; it just sets the stage for information barrier policies to be defined and then applied.
+Defining segments does not impact users; it just sets the stage for information barrier policies to be defined and then applied.
 
 1. Use the **New-OrganizationSegment** cmdlet with the **UserGroupFilter** parameter that corresponds to the [attribute](information-barriers-attributes.md) you want to use.
 
@@ -148,16 +148,21 @@ You can also define segments using a "not equals" parameter, denoted as **-ne**,
 
 |Syntax  |Example  |
 |---------|---------|
-|`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`    |`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` <p>In this example, we defined a segment called *NotSales* that includes everyone who is not in *Sales*. The **-ne** portion of the cmdlet refers to "not equals."  |
+|`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`   | <p>In this example, we defined a segment called *NotSales* that includes everyone who is not in *Sales*. The **-ne** portion of the cmdlet refers to "not equals."  |
 
-In addition to defining segments using "equals" or "not equals", you can define a segment using both "equals" and "not equals" parameters.
+In addition to defining segments using "equals" or "not equals", you can define a segment using both "equals" and "not equals" parameters. You can also define complex group filters using logical *AND* and *OR* operators.
 
-|Example  |
-|---------|
-|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"` <p>In this example, we defined a segment called *LocalFTE* that includes people who are locally located and whose positions are not listed as *Temporary*.    |
+
+|Syntax    |Example  |
+|---------|---------|
+|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` |<p>In this example, we defined a segment called *LocalFTE* that includes people who are located locally and whose positions are not listed as *Temporary*.    |
+ |`New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`|  <p>In this example, we defined a segment called *Segment1* that includes people who are members of group1@contoso.com and not members of group3@contoso.com.
+|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com'' -or MemberOf -ne 'group3@contoso.com'"` | In this example, we defined a segment called *Segment2* that includes people who are members of group2@contoso.com and not members of group3@contoso.com.
+|`New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`|  In this example, we defined a segment called *Segment1and2* that includes people members of group1@contoso.com and group2@contoso.com and not members of group3@contoso.com.
+
 
 > [!TIP]
-> If possible, use segment definitions that include "-eq" or "-ne". Try not to define complex segment definitions. 
+> If possible, use segment definitions that include "-eq" or "-ne". Try not to define complex segment definitions.
 
 ## Part 2: Define information barrier policies
 
@@ -250,6 +255,8 @@ With PowerShell, you can view status of user accounts, segments, policies, and p
 |Information barrier policies     |Use the **Get-InformationBarrierPolicy** cmdlet. <p> Syntax: `Get-InformationBarrierPolicy` <p>This will display a list of information barrier policies that were defined, and their status.       |
 |The most recent information barrier policy application     | Use the **Get-InformationBarrierPoliciesApplicationStatus** cmdlet. <p>Syntax: `Get-InformationBarrierPoliciesApplicationStatus`<p>    This will display information about whether policy application completed, failed, or is in progress.       |
 |All information barrier policy applications|Use `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>This will display information about whether policy application completed, failed, or is in progress.|
+
+<!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 
 ## What if I need to remove or change policies?
 

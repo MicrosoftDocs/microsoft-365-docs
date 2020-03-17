@@ -23,7 +23,12 @@ description: "Learn how to recognize and remediate the illicit consent grants at
 
 ## What is the illicit consent grant attack in Office 365?
 
-In an illicit consent grant attack, the attacker creates an Azure-registered application that requests access to data such as contact information, email, or documents. The attacker then tricks an end user into granting that application consent to access their data either through a phishing attack, or by injecting illicit code into a trusted website. After the illicit application has been granted consent, it has account-level access to data without the need for an organizational account. Normal remediation steps, like resetting passwords for breached accounts or requiring Multi-Factor Authentication (MFA) on accounts, are not effective against this type of attack, since these are third-party applications and are external to the organization. These attacks leverage an interaction model which presumes the entity that is calling the information is automation and not a human.
+In an illicit consent grant attack, the attacker creates an Azure-registered application that requests access to data such as contact information, email, or documents. The attacker then tricks an end user into granting that application consent to access their data either through a phishing attack, or by injecting illicit code into a trusted website. After the illicit application has been granted consent, it has account-level access to data without the need for an organizational account. Normal remediation steps, like resetting passwords for breached accounts or requiring Multi-Factor Authentication (MFA) on accounts, are not effective against this type of attack, since these are third-party applications and are external to the organization. 
+
+These attacks leverage an interaction model which presumes the entity that is calling the information is automation and not a human.
+
+> [!IMPORTANT]
+> Do you suspect you're experiencing problems with illicit consent-grants from an app, right now? Microsoft Cloud App Security (MCAS) has tools to detect, investigate, and remediate your OAuth apps. This MCAS article has a tutorial that outlines how to go about [investigating risky OAuth apps](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth). You can also set [OAuth app policies](https://docs.microsoft.com/cloud-app-security/app-permission-policy) to investigate app-requested permissions, which users are authorizing these apps, and widely approve or ban these permissions requests.
 
 ## What does an illicit consent grant attack look like in Office 365?
 
@@ -42,7 +47,7 @@ You need to search the Office 365 **audit log** to find signs, also called Indic
 5. Click on the result to see the details of the activity. Click **More Information** to get details of the activity. Check to see if IsAdminContent is set to True.
 
 > [!NOTE]
-> * It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. <br/><br/> * The length of time that an audit record is retained and searchable in the audit log depends on your Office 365 subscription, and specifically the type of the license that is assigned to a specific user. For more information, see [Audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> * It can take from 30 minutes up to 24 hours for the corresponding audit log entry to be displayed in the search results after an event occurs. <br/><br/> The length of time that an audit record is retained and searchable in the audit log depends on your Office 365 subscription, and specifically the type of the license that is assigned to a specific user. For more information, see [Audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 If this value is true, it indicates that someone with Global Administrator access may have granted broad access to data. If this is unexpected, take steps to [confirm an attack](#how-to-confirm-an-attack).
 
 ## How to confirm an attack
@@ -92,7 +97,7 @@ The simplest way to verify the Illicit Consent Grant attack is to run [Get-Azure
 - Local Administrator on the computer from which will run the scripts.
 
 > [!IMPORTANT]
-> We highly recommend that you require multi-factor authentication on your administrative account. This script supports MFA authentication.
+> We ***highly recommend*** that you require multi-factor authentication on your administrative account. This script supports MFA authentication.
 
 1. Sign in to the computer that you will run the script from with local administrator rights.
 
