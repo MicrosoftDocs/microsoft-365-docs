@@ -1,7 +1,7 @@
 ---
 title: "Manage quarantined messages and files as an admin in Office 365"
-ms.author: tracyp
-author: MSFTTracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date:
 audience: Admin
@@ -28,17 +28,19 @@ Admins in organizations with Advance Threat Protection (ATP) can also view, down
 
 ## What do you need to know before you begin?
 
-- To open the Office 365 Security & Compliance Center, go to <https://protection.office.com>. To open the Quarantine page directly, go to <https://protection.office.com/quarantime>.
+- To open the Office 365 Security & Compliance Center, go to <https://protection.office.com>. To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.
+
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - Quarantined messages are retained for a default period of time before they're automatically deleted:
 
   - Messages quarantined by anti-spam policies (spam, phishing, and bulk email): 30 days. This is the default and maximum value. To configure this value, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
-  - Messages quarantined by mail flow rules (the rule action is **Deliver the message to the hosted quarantine**): The quarantine value in the default anti-spam policy, which you can modify, and which is also 30 days by default.
+  - Messages quarantined by mail flow rules (the rule action is **Deliver the message to the hosted quarantine**): 30 days. You can't change this value.
 
   - Messages that contain malware: 15 days.
 
-  When a message expires from quarantine, you can't get it back. You can customize the quarantine retention period in your anti-spam policies (also known as content filter policies). For more information, see the [Configure the default quarantine retention period](#configure-the-default-quarantine-retention-period) section later in this topic.
+  When a message expires from quarantine, you can't get it back.
 
 - You need to be assigned permissions before you can manage the quarantine as an admin. The permissions are controlled by the **Quarantine** role in the Security & Compliance Center. By default, this role is assigned to the following Security & Compliance Center role groups:
 
@@ -58,7 +60,7 @@ Admins in organizations with Advance Threat Protection (ATP) can also view, down
 
 2. Verify that **View quarantined** is set to the default value **email**.
 
-3. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default columns are marked with an asterisk (<sup>\*</sup>):
+3. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
 
    - **Received**<sup>\*</sup>
 
@@ -72,6 +74,8 @@ Admins in organizations with Advance Threat Protection (ATP) can also view, down
 
    - **Policy type**<sup>\*</sup>
 
+   - **Expires**<sup>\*</sup>
+
    - **Recipient**
 
    - **Message ID**
@@ -81,6 +85,8 @@ Admins in organizations with Advance Threat Protection (ATP) can also view, down
    - **Size**
 
    - **Direction**
+
+   When you're finished, click **Save**, or click **Set to default**.
 
 4. To filter the results, click **Filter**. The available filters are:
 
@@ -92,9 +98,9 @@ Admins in organizations with Advance Threat Protection (ATP) can also view, down
 
      - **Next 7 days**
 
-     - A custom date/time range.
+     - **Custom**: Enter a **Start date** and **End date**.
 
-   - **Received time**
+   - **Received time**: Enter a **Start date** and **End date**.
 
    - **Quarantine reason**:
 
@@ -112,7 +118,9 @@ Admins in organizations with Advance Threat Protection (ATP) can also view, down
 
    - **Email recipient**: All users or only messages sent to you. End users can only manage quarantined messages sent to them.
 
-5. Use **Sort results by** and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
+   To clear the filter, click **Clear**. To hide the filter flyout, click **Filter** again.
+
+5. Use **Sort results by** (the **Message ID** button by default) and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
 
    - **Message ID**: The globally unique identifier of the message.
 
@@ -127,6 +135,14 @@ Admins in organizations with Advance Threat Protection (ATP) can also view, down
    After you've entered the search criteria, click ![Refresh button](../media/scc-quarantine-refresh.png) **Refresh** to filter the results.
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
+
+#### Export message results
+
+1. Select the messages you're interested in, and click **Export results**.
+
+2. Click **Yes** in the confirmation message that warns you to keep the browser window open.
+
+3. When your export is ready, you can name and choose the download location for the .csv file.
 
 #### View quarantined message details
 
@@ -261,6 +277,14 @@ In organizations with ATP, admins can managed quarantined files in SharePoint On
 
 After you find a specific quarantined file, select the file to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
+#### Export file results
+
+1. Select the files you're interested in, and click **Export results**.
+
+2. Click **Yes** in the confirmation message that warns you to keep the browser window open.
+
+3. When your export is ready, you can name and choose the download location for the .csv file.
+
 #### View quarantined file details
 
 When you select a file in the list, the following file details appear in the **Details** flyout pane:
@@ -312,3 +336,17 @@ When you select multiple quarantined files in the list (up to 100), the **Bulk a
 - **Delete files**:  After you click **Yes** in the warning that appears, the files are immediately deleted.
 
 When you're finished, click **Close**.
+
+## Use Exchange Online PowerShell or standalone Exchange Online Protection PowerShell to view and manage quarantined messages and files
+
+The cmdlets you use to view and manages messages and files in quarantine are:
+
+- [Delete-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/delete-quarantinemessage)
+
+- [Export-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/export-quarantinemessage)
+
+- [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage)
+
+- [Preview-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/preview-quarantinemessage) Note that this cmdlet is only for messages, not malware files from ATP for SharePoint Online, OneDrive for Business, or Teams.
+
+- [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage)
