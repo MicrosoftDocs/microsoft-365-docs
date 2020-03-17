@@ -819,7 +819,7 @@
     - name: Industry vertical guidance
       items: 
         - name: Financial services security and compliance
-          href: financial-services-secure-collaboration.md
+          href: ../solutions/financial-services-secure-collaboration.md
 - name: Regulatory compliance action plans
   items: 
     - name: ISO - Recommended action plan
