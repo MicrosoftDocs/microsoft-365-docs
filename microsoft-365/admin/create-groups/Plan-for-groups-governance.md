@@ -178,7 +178,7 @@ A naming policy can help you and your users identify the function of the group, 
 - [Preview Features for Group Naming](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/NamingPolicy)
 
 ### <a name="group-expiration-policy"></a>Group expiration policy
-Administrators can specify an expiration period and any group that reaches the end of that period, and is not renewed, will be deleted. The expiration period begins when the group is created, or on the date it was last renewed. Group owners will automatically be sent an email before the expiration that allows them to renew the group for another expiration interval.
+Administrators can specify an expiration period and any group that reaches the end of that period, and is not renewed, will be deleted. The expiration period begins when the group is created, or on the date it was last renewed. Group owners will automatically be sent an email before the expiration that allows them to renew the group for another expiration interval. Active groups renew automatically.
 
 Once you set a group to expire:
 - Owners of the group are notified to renew the group as the expiration nears
@@ -195,7 +195,7 @@ Once you set a group to expire:
 
 |         |         |         |
 |---------|---------|---------|
-|![image desc](../../media/decision_point.png)|Decision points|<ul><li>Does your organization require specifying an expiration date for teams?</li><li>Determine the strategy for dealing with orphan groups?</li></ul>|
+|![image desc](../../media/decision_point.png)|Decision points|<ul><li>Does your organization require specifying an expiration date for teams?</li><li>Determine the strategy for dealing with orphan groups.</li></ul>|
 |![image desc](../../media/next_steps.png)|Next steps|<ul><li>Document your organization’s requirements for group expiration, data retention, and archiving.</li><li>Plan to implement these requirements as part of your groups rollout.</li><li>Plan to implement a custom job to report on groups that have single owners or are ownerless. </li></ul>|
 
 > [!Important]
@@ -219,13 +219,12 @@ Admins can control whether to allow guest access to Office 365 Groups for their 
 
 
 #### *Resources*
+- [Collaborating with people outside your organization](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 - [Manage guest access in Office 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups)
 - [Guest access in Office 365 groups](https://support.office.com/article/Guest-access-in-Office-365-Groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
-- [Guest access in Office 365 groups – Admin Help](https://support.office.com/article/Guest-access-to-Office-365-groups-Admin-Help-7c713d74-a144-4eab-92e7-d50df526ff96)
 - [Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 - [Azure Active Directory Terms of Use feature](https://docs.microsoft.com/azure/active-directory/active-directory-tou)
 - [Google Federation  ](https://docs.microsoft.com/azure/active-directory/b2b/google-federation)
-- [Authorize guest access in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-dependencies)
 
 ### <a name="group-policies--information-protection"></a>Group policies & information protection
 Office 365 groups is built on the advanced security and compliance capabilities of Office 365 and supports classifications, auditing and reporting, compliance content search, e-discovery, Legal Hold, and retention policies.
@@ -238,7 +237,7 @@ Office 365 groups is built on the advanced security and compliance capabilities 
 |         |         |         |
 |---------|---------|---------|
 |![image desc](../../media/decision_point.png)|Decision points|<ul><li>Does your organization have specific usage requirements that need to be communicated to all users?</li><li>Does your organization require the classifications of all content?</li><li>Does your organization require content to be retained for a specific period of time?</li><li>Does your organization require specific data retention policies be ap-plied to groups?</li><li>Does your organization expect to require the ability to archive inactive groups to preserve the content?</li><li>Do group creators need the ability to assign organization-specific classifications to teams?</li></ul>|
-|![image desc](../../media/next_steps.png)|Next steps|<ul><li>Document your organization’s usage guidelines for Groups</li><li>Document your organization’s requirements for classification.</li><li>Determine the policies to be enforced based on the classification e.g. sensitivity, retention, guest access</li><li>Define the sensitivity labels for your organization and what protection settings you want associated.</li><li>Define a label policy to control which users and groups see those labels.</li><li>Configure the [Groups sensitivity label preview](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) and start classifying the groups in your organization.</li><li>Plan to implement these requirements as a part of your groups rollout.</li></ul>|
+|![image desc](../../media/next_steps.png)|Next steps|<ul><li>Document your organization's usage guidelines for Groups</li><li>Document your organization’s requirements for classification.</li><li>Determine the policies to be enforced based on the classification e.g. sensitivity, retention, guest access.</li><li>Define the sensitivity labels for your organization and what protection settings you want associated.</li><li>Define a label policy to control which users and groups see those labels.</li><li>Configure the [Groups sensitivity label preview](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) and start classifying the groups in your organization.</li><li>Plan to implement these requirements as a part of your groups rollout.</li></ul>|
 
 
 #### *Resources*
@@ -263,14 +262,14 @@ For years organizations have relied on distribution groups to communicate and co
 
 |         |         |         |
 |---------|---------|---------|
-|![image desc](../../media/decision_point.png)|Decision points|<ul><li>Does your organization have distribution lists that are [not eligible](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists#how-do-i-check-which-dls-are-eligible-for-upgrade) for upgrade?<li>Determine which type of group is the distribution list best migrated to?</li></ul>|
+|![image desc](../../media/decision_point.png)|Decision points|<ul><li>Does your organization have distribution lists that are [not eligible](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists#how-do-i-check-which-dls-are-eligible-for-upgrade) for upgrade?<li>Determine which type of group is the distribution list best migrated to.</li></ul>|
 |![image desc](../../media/next_steps.png)|Next steps|<ul><li>Identify which distribution lists would be candidates for upgrading to Office 365 Groups.</li><li>Analyze your existing SharePoint team sites to see which sites are ready to be group-connected.</li><li>Let other teams in your company know that you upgraded your distribution group and what steps you took to make it successful!</li></ul>|
 
 
 #### *Resources*
 - [Upgrade Distribution Lists (DL) to groups in Outlook](https://aka.ms/whyupgradedls):
 - [Why you should upgrade your DL to groups in Outlook](https://aka.ms/whyupgradedls)
-- Upgrade with one click via Exchange admin center or via [PowerShell scripts](https://support.office.com/article/Migrate-distribution-lists-to-Office-365-Groups-Admin-help-787d7a75-e201-46f3-a242-f698162ff09f?ui=en-US&rs=en-US&ad=US)
+- Upgrade with one click via Exchange admin center or via [PowerShell scripts](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)
 - [Migrate distribution lists to Office 365 Groups - Admin help](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 - [Connect existing SharePoint sites to Office 365 groups:](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group)
 - [Analyze and use the scanner data](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group-scanner)
