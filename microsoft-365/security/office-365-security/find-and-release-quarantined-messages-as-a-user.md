@@ -16,21 +16,26 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: "As an Office 365 user, you can manage your own spam-quarantined messages in one of two ways: by responding to spam notifications sent to you directly (if your admin has set up this feature), or by using the spam quarantine feature in the Security & Compliance Center."
+description: "As an Office 365 user, you can view, release, and delete your quarantined messages (messages where you are a recipient, and spam filtering quarantined the message as spam or bulk email). You view and manage your quarantined messages in the Security & Compliance Center."
 ---
 
 # Find and release quarantined messages as a user in Office 365
 
-As an Office 365 user, you can manage messages that were sent to quarantine instead of sent to you in one of two ways: by [responding to spam notifications sent to you directly](use-spam-notifications-to-release-and-report-quarantined-messages.md) (if your admin has set this up), or by using the Security & Compliance Center.
+Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
 
-> [!NOTE]
-> For admin access to quarantine, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
+As a user, you can view, release, and delete your quarantined messages (messages where you are a recipient, and spam filtering quarantined the message as spam or bulk email). You view and manage your quarantined messages in the Security & Compliance Center.
 
 ## What do you need to know before you begin?
 
 - To open the Office 365 Security & Compliance Center, go to <https://protection.office.com>. To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.
 
-- Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies). The default and maximum value is 30 days. Messages that have expired from quarantine are unrecoverable.
+- Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies). The default and maximum value is 30 days. Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+
+- Admins can also [enable end-user quarantine notifications](configure-your-spam-filter-policies.md) in anti-spam policies. As of October 2019, you can no longer release quarantined messages directly from these notifications. You can click **Review** in the notification, which will take you to Quarantine in the Security & Compliance Center.
+
+- Messages that were quarantined for phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. For more information, see [Find and release quarantined messages as an admin in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).
+
+- You can only release a message and report it as a false positive (not junk) once.
 
 ## View your quarantined messages
 
@@ -88,9 +93,7 @@ As an Office 365 user, you can manage messages that were sent to quarantine inst
 
 4. Use **Sort results by** (the **Message ID** button by default) and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
 
-   - **Message ID**: The globally unique identifier of the message. If you select a message in the list, the **Message ID** value appears in the **Details flyout pane that appears.
-
-     Admins can use [message trace](message-trace-scc.md) to look for a message that was sent to a user in your organization.
+   - **Message ID**: The globally unique identifier of the message. If you select a message in the list, the **Message ID** value appears in the **Details** flyout pane that appears. Admins can use [message trace](message-trace-scc.md) to find messages and their corresponding Message ID values.
 
    - **Sender email address**: A single sender's email address.
 
@@ -134,7 +137,7 @@ When you select an email message in the list, the following message details appe
 
 ### Take action on quarantined email
 
-After you select a message, you have several options for what to do with the messages in the **Details** flyout pane:
+After you select a message, you have options for what to do with the messages in the **Details** flyout pane:
 
 - **Release message**: In the flyout pane that appears, choose whether to **Report messages to Microsoft for analysis**. This is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive. 
 
