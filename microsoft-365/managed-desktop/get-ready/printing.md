@@ -1,6 +1,6 @@
 ---
 title: Prepare printing resources for Microsoft Managed Desktop 
-description:  Important steps to make sure printing works smoothly
+description:  Important steps to make sure printing work smoothly
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -11,7 +11,7 @@ ms.collection: M365-modern-desktop
 
 # Prepare printing resources for Microsoft Managed Desktop
 
-As you get ready to join Microsoft Managed Desktop, you should evaluate your printing requirements and determine the right approach for your environment. These are the options:
+As you get ready to join Microsoft Managed Desktop, you should evaluate your printing requirements and determine the right approach for your environment. You have these options:
  
 - Deploy the Microsoft hybrid cloud print solution to make it easy for Microsoft Managed Desktop devices to discover printers. For more information, see [Deploy Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
 - Deploy printers directly through use of a custom PowerShell script. To do this, follow the steps in the [Set up local printers](#set-up-local-printers) section.
@@ -21,7 +21,7 @@ In all cases, if printer drivers are required that are not automatically availab
 
 ## Set up local printers
 
-If you've decided to deploy printers by using a custom PoerShell script and have prepared the printing resources, follow these steps to have shared printers deployed:
+If you've decided to deploy printers by using a custom PowerShell script and have prepared the printing resources, follow these steps to have shared printers deployed:
 
 1.	Navigate to the Microsoft Managed Desktop portal.
 2.	Submit a request labeled *Printer deployment* in the **Support > Support requests** section of the Admin Portal, providing these details:
