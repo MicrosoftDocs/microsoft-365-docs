@@ -34,6 +34,6 @@ The following table summarizes the remediation actions that are currently availa
 
 ## Next steps
 
-- [Learn about the compromised user security playbook](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly)
+- [View pending or completed remediation actions following an automated investigation in Office 365](air-review-approve-pending-completed-actions.md)
 
-- [View your ATP reports](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)
+- [Details and results of an automated investigation in Office 365](air-view-investigation-results.md)
