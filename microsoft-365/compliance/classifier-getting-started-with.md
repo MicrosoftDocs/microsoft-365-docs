@@ -31,7 +31,7 @@ This category of classification mechanisms includes finding content by:
 - keywords or metadata values (keyword query language)
 - using previously identified patterns of sensitive information like social security, credit card or bank account numbers [(sensitive information types)](what-the-sensitive-information-types-look-for.md)
 - Recognizing an item because it's a variation on a template [(document finger printing)](document-fingerprinting.md)
-- using the presence of exact strings [(exact data match)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- using the presence of exact strings [(exact data match)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).'
 
 Sensitivity and retention labels can then be automatically applied to make the content available for use in [data loss prevention (DLP)](data-loss-prevention-policies.md) and [retention policies](retention-policies.md).
 
