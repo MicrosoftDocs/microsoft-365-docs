@@ -8,7 +8,7 @@
         - name: Sign up for Office 365
           href: admin-overview/sign-up-for-office-365.md
         - name: Video training
-          href: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+          href: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
         - name: About the admin center
           href: admin-overview/about-the-admin-center.md
         - name: What subscription do I have?
@@ -186,9 +186,9 @@
         - name: Unassign licenses from users
           href: manage/remove-licenses-from-users.md
         - name: Resolve license conflicts
-          href: manage/resolve-license-conflicts.md)
+          href: manage/resolve-license-conflicts.md
         - name: Manage messages in the Message center
-          href: manage/manage-messages.md)
+          href: manage/manage-messages.md
     - name: Subscriptions and billing
       items: 
         - name: Manage your subscriptions
