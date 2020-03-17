@@ -42,12 +42,8 @@ While viewing the [details of an investigation](air-view-investigation-results.m
  - **Approve** allows remediation to begin.
  - **Reject** takes no further action
 
-## View completed actions
-
-
-
 ## Next steps
 
-- [Learn about the compromised user security playbook](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly)
+- [Details and results of an automated investigation in Office 365](air-view-investigation-results.md)
 
-- [View your ATP reports](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)
+- [Use Threat Explorer](threat-explorer.md)
