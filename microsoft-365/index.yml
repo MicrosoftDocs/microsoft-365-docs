@@ -58,7 +58,7 @@ additionalContent:
          # Card
         - title: Microsoft 365 admin center
           summary: Set up and manage Office 365 and Microsoft 365 services for your organization. 
-          url: ./admin/admin-home.md
+          url: ./admin/admin-home.yml
         # Card
         - title: Microsoft 365 Business
           summary: Designed for small and midsize businesses. Run your business with the latest version of Windows and Office apps like Excel and Outlook. Take advantage of data protection and security that extends to all your business devices. 
