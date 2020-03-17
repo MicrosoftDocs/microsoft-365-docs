@@ -85,7 +85,7 @@ These countries can provide their VAT number or local equivalent on their billin
 
 ## What tax will I be charged?
 
-Find out what tax you're charged in the following regions. You can also [apply for tax exempt status](apply-for-tax-exempt-status.md) by providing the proper documentation to Support.
+Find out what tax you're charged in the following regions. You can also [apply for tax exempt status](tax-information.md#apply-for-tax-exempt-status) by providing the proper documentation to Support.
   
 ### Europe, the Middle East, and Africa (EMEA)
 
