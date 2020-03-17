@@ -62,7 +62,16 @@ Microsoft 365 comes with six built-in classifiers:
 
 - **Offensive Language**: detects text items that contain profanities, slurs, taunts, and disguised expressions (which are expressions that have the same meaning as a more offensive term).
 - **Resumes**: detects items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information.
-- **SourceCode**: detects items that contain a set of instructions and statements written in widely used computer programming languages.
+- **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub.
+
+|language name|||||
+|---------|---------|---------|---------|---------|
+|ActionScript|C        |C#       |C++     |Clojure  |
+|CoffeeScript|CSS     |Go       |Haskell |HTML     |
+|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+|Perl     |PHP      |Python   |R        |Ruby     |
+|Scala    |Shell    |Swift    |Tex      |Vim Script|
+
 - **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability.
 - **Profanity**: detects a specific category of offensive language text items that contain expressions that embarrass most people.
 - **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property.
