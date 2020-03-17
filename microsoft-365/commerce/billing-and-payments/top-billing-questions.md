@@ -52,13 +52,13 @@ If you need help interpreting the charges you see on your bill or understanding 
 Billing support is provided in English, Monday - Friday, from 6 AM to 5 PM Pacific Time (UTC-8), and from 5 AM to 9 PM in Australia (UTC+8).
   
 - In the United States, call 1 (800) 865-9408.
-    
+
 - In Australia, call 1 (800) 197-503.
-    
+
 - In Canada, call 1 (800) 865-9408.
-    
+
 - In the United Kingdom, call 0 (800) 032-6417.
-    
+
 For more contact phone numbers by country or region, see [Contact support for business products](../../admin/contact-support-for-business-products.md).
   
 ::: moniker-end
@@ -68,7 +68,7 @@ For more contact phone numbers by country or region, see [Contact support for bu
 Billing support is provided in German and English, Monday - Friday, from 9 AM to 5 PM Berlin (UTC+1).
   
 - In Germany, call 0800 589 2330.
-    
+
 For more contact phone numbers by country or region, [Contact support for business products](../../admin/contact-support-for-business-products.md).
   
 ::: moniker-end
@@ -101,7 +101,7 @@ See [Add, update, or remove a credit card or bank account in Office 365 for busi
 
 ## Can I change the method I use to pay for my subscription?
 
-Yes. See [Change your payment method for Office 365 for business]change-payment-method.md).
+Yes. See [Change your payment method for Office 365 for business](change-payment-method.md).
   
 ::: moniker range="o365-worldwide"
 ## Can I change how frequently I pay for my subscription?
@@ -116,11 +116,11 @@ Yes, but you'll need to [call support](../../admin/contact-support-for-business-
 Yes. To get your billing statement as an email attachment, use the following steps:
   
 1. In the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page, or select **Billing** \> **Billing notifications**.
-    
+
 2. Under **Receive billing statement as email attachment?**, switch the toggle to **On**.
-    
+
     You can stop receiving the billing statement emails at any time by switching the toggle to **Off**.
-    
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -146,13 +146,13 @@ The total that is displayed on the Bills page is the invoice balance - the total
   
 ::: moniker range="o365-worldwide"
 
-See [View your bill or invoice for Office 365 for business](view-your-bill-or-invoice.md).
+See [View your bill or invoice](view-your-bill-or-invoice.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-See [View your bill or invoice for Office 365 for business](view-your-bill-or-invoice.md).
+See [View your bill or invoice](view-your-bill-or-invoice.md).
 
 ::: moniker-end
 
@@ -162,7 +162,6 @@ See [View your bill or get Fapiaos in Office 365 operated by 21Vianet](../../adm
 
 ::: moniker-end
 
-  
 ::: moniker range="o365-worldwide"
 ## What taxes will I be charged?
 
@@ -199,7 +198,7 @@ You can [Apply for tax-exempt status](tax-information.md#apply-for-tax-exempt-st
   
 2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
 
-To learn more, see [View your bill or invoice for Office 365 for business](view-your-bill-or-invoice.md).
+To learn more, see [View your bill or invoice](view-your-bill-or-invoice.md).
 
 ::: moniker-end
 
@@ -209,7 +208,7 @@ To learn more, see [View your bill or invoice for Office 365 for business](view-
   
 2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
 
-To learn more, see [View your bill or invoice for Office 365 for business](view-your-bill-or-invoice.md).
+To learn more, see [View your bill or invoice](view-your-bill-or-invoice.md).
 
 ::: moniker-end
 
