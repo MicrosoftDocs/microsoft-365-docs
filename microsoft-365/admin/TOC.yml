@@ -186,9 +186,9 @@
         - name: Unassign licenses from users
           href: manage/remove-licenses-from-users.md
         - name: Resolve license conflicts
-          href: manage/resolve-license-conflicts.md)
+          href: manage/resolve-license-conflicts.md
         - name: Manage messages in the Message center
-          href: manage/manage-messages.md)
+          href: manage/manage-messages.md
     - name: Subscriptions and billing
       items: 
         - name: Manage your subscriptions
