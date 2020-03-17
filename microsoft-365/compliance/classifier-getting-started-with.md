@@ -72,6 +72,7 @@ Microsoft 365 comes with six built-in classifiers:
 |Perl     |PHP      |Python   |R        |Ruby     |
 |Scala    |Shell    |Swift    |Tex      |Vim Script|
 
+
 - **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability.
 - **Profanity**: detects a specific category of offensive language text items that contain expressions that embarrass most people.
 - **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property.
