@@ -24,10 +24,10 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
-description: "Find answers to your top billing questions for Office 365 for business subscription."
+description: "Find answers to your top billing questions for your business subscription."
 ---
 
-# Top billing questions for Office 365 for business
+# Top billing questions for business subscriptions
 
 Have questions about your billing statement? Here are the answers to the top billing questions.
   
@@ -35,13 +35,13 @@ If you can't find an answer to your question, or you have a problem with your bi
   
 ::: moniker range="o365-worldwide"
 
-If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your invoice for Office 365 for business](understand-your-invoice2.md).
+If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your invoice](understand-your-invoice2.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your invoice for Office 365 for business](understand-your-invoice2.md).
+If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your invoice](understand-your-invoice2.md).
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ For questions about Office 365 operated by 21Vianet, [Contact support for busine
 ::: moniker range="o365-worldwide"
 ## How do I update my credit card or bank account information?
 
-See [Add, update, or remove a credit card or bank account in Office 365 for business](add-update-or-remove-credit-card-or-bank-account.md).
+See [Manage payment methods](manage-payment-methods.md).
   
 > [!NOTE]
 > Paying by bank account is not available in some countries or regions.
@@ -92,16 +92,16 @@ See [Add, update, or remove a credit card or bank account in Office 365 for busi
 ::: moniker range="o365-germany"
 ## How do I update my credit card or bank account information?
 
-See [Add, update, or remove a credit card or bank account in Office 365 for business](add-update-or-remove-credit-card-or-bank-account.md).
+See [Manage payment methods](manage-payment-methods.md).
   
 > [!NOTE]
-> Paying by bank account is not available in some countries or regions. 
+> Paying by bank account is not available in some countries or regions.
   
 ::: moniker-end
 
 ## Can I change the method I use to pay for my subscription?
 
-Yes. See [Change your payment method for Office 365 for business](change-payment-method.md).
+Yes. See [Change your payment method](change-payment-method.md).
   
 ::: moniker range="o365-worldwide"
 ## Can I change how frequently I pay for my subscription?
@@ -172,7 +172,7 @@ See [What tax will I be charged?](tax-information.md#what-tax-will-i-be-charged)
 ::: moniker range="o365-germany"
 ## What taxes will I be charged?
 
-See [What tax will I be charged for Office 365?](tax-information.md#what-tax-will-i-be-charged) to find out what tax you're charged, depending on your country or region.
+See [What tax will I be charged?](tax-information.md#what-tax-will-i-be-charged) to find out what tax you're charged, depending on your country or region.
   
 ::: moniker-end
 
@@ -224,4 +224,4 @@ To learn more, see [View your bill or get Fapiaos in Office 365 operated by 21Vi
 
 ## Why don't I see any bills?
 
-If you have only trial subscriptions or if you used a prepaid product key that you bought at a retail store or from an Office 365 partner, you won't have any bills.
+If you have only trial subscriptions or if you used a prepaid product key that you bought at a retail store or from a partner, you won't have any bills.
