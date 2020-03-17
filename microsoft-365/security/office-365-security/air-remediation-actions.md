@@ -21,16 +21,16 @@ description: "Learn about remediation actions in automated investigation and res
 
 ## Remediation actions
 
-[Automated investigation and response capabilities](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) in Office 365 Advanced Threat Protection include certain remediation actions. Whenever an automated investigation is running or has completed, you'll typically see one or more remediation actions that require approval by your security operations team to proceed. 
+[Automated investigation and response capabilities](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) in [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP) Plan 2 include certain remediation actions. Whenever an automated investigation is running or has completed, you'll typically see one or more remediation actions that require approval by your security operations team to proceed. 
 
-The following table summarizes remediation actions currently available in [Office 365 Advanced Threat Protection](office-365-atp.md). 
+The following table summarizes the remediation actions that are currently available in Office 365 ATP. 
 
 |Action | Description |
 |-----|-----|
-|Block URL (time-of-click) |Protect against emails and documents that contain malicious URLs. This enables the blocking of malicious links and any related webpages via [Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links) when the user clicks a link in an existing Office file or in an older email message. |
-|Soft delete email  |Soft delete specific email messages from a user's mailbox|
-|Soft delete email clusters  |Soft delete malicious email messages matching a query from all users' mailboxes|
-|Turn off external mail forwarding |Removes forwarding rule from a specific end user's mailbox|
+|Block URL (time-of-click) |Protects against email messages and documents that contain malicious URLs. This enables the blocking of malicious links and any related webpages via [Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links) when the user clicks a link in an existing Office file or in an older email message. |
+|Soft delete email  |Soft delete specific email messages from a user's mailbox. <br/>A soft-deleted message is moved to a user's Recoverable Items folder and is retained until the deleted item retention period expires. |
+|Soft delete email clusters  |Soft delete malicious email messages matching a query from all users' mailboxes. <br/>Soft-deleted messages are moved to users' Recoverable Items folder and are retained until the deleted item retention period expires. |
+|Turn off external mail forwarding |Removes a forwarding rule from a specific end user's mailbox.|
 
 ## Next steps
 
