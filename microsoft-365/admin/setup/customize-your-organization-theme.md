@@ -59,7 +59,7 @@ Learn how to customize your theme in the Microsoft 365 admin center. As the admi
     
 4. Select **Save changes**.
     
-You'll see your new theme on the admin center right away and after a short delay, you'll see it throughout Office 365, including pages in Outlook, SharePoint, and SharePoint mobile apps for iOS and Android. The following image highlights those theme elements you can customize for Sharepoint mobile apps.
+You'll see your new theme on the admin center right away and after a short delay, you'll see it throughout Office 365, including pages in Outlook, SharePoint, [SharePoint mobile app for iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a), and [SharePoint mobile app for Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). The following image highlights those theme elements you can customize for Sharepoint mobile apps.
 
 ![Default Office 365 theme and Custom Office 365 theme for SharePoint mobile apps]()
 
