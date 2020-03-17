@@ -55,7 +55,7 @@ During and after an automated investigation process, your security team can do t
 
 - [View the results details of an investigation](air-view-investigation-results.md#view-details-of-an-investigation)
 
-- [Review and approve actions as a result of an investigation](air-remediation-actions.md#approve-or-reject-pending-actions)
+- [Review and approve actions as a result of an investigation](air-review-approve-pending-completed-actions.md)
 
 > [!TIP]
 > For more details, see [How AIR works](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office).
