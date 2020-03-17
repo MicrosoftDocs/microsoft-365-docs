@@ -54,7 +54,7 @@
         - name: Prepare certificates and network profiles
           href: get-ready/certs-wifi-lan.md
         - name: Prepare printing resources
-        - href: get-ready/printing.md
+          href: get-ready/printing.md
         - name: Prepare apps
           href: get-ready/apps.md
           items: 
