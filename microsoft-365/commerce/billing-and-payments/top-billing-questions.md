@@ -24,14 +24,14 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
-description: "Find answers to your top billing questions for Office 365 for business subscription. "
+description: "Find answers to your top billing questions for Office 365 for business subscription."
 ---
 
 # Top billing questions for Office 365 for business
 
 Have questions about your billing statement? Here are the answers to the top billing questions.
   
-If you can't find an answer to your question, or you have a problem with your bill, please [contact support](../../admin/contact-support-for-business-products.md) for assistance. 
+If you can't find an answer to your question, or you have a problem with your bill, please [contact support](../../admin/contact-support-for-business-products.md) for assistance.
   
 ::: moniker range="o365-worldwide"
 
@@ -85,7 +85,7 @@ For questions about Office 365 operated by 21Vianet, [Contact support for busine
 See [Add, update, or remove a credit card or bank account in Office 365 for business](add-update-or-remove-credit-card-or-bank-account.md).
   
 > [!NOTE]
-> Paying by bank account is not available in some countries or regions. 
+> Paying by bank account is not available in some countries or regions.
   
 ::: moniker-end
 
@@ -106,7 +106,7 @@ Yes. See [Change your payment method for Office 365 for business]change-payment-
 ::: moniker range="o365-worldwide"
 ## Can I change how frequently I pay for my subscription?
 
-Yes, but you'll need to [call support](../../admin/contact-support-for-business-products.md) for assistance. 
+Yes, but you'll need to [call support](../../admin/contact-support-for-business-products.md) for assistance.
 
 ::: moniker-end
 
@@ -129,11 +129,11 @@ Yes. To get your billing statement as an email attachment, use the following ste
 Yes. To get your billing statement as an email attachment, use the following steps:
   
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
-    
+
 2. Under **Receive billing statement as email attachment?**, switch the toggle to **On**.
-    
+
     You can stop receiving the billing statement emails at any time by switching the toggle to **Off**.
-    
+
 ::: moniker-end
 
 ## How do I cancel a subscription?
@@ -166,28 +166,28 @@ See [View your bill or get Fapiaos in Office 365 operated by 21Vianet](../../adm
 ::: moniker range="o365-worldwide"
 ## What taxes will I be charged?
 
-See [What tax will I be charged for Office 365?](what-tax-will-i-be-charged.md) to find out what tax you're charged, depending on your country or region. 
+See [What tax will I be charged?](tax-information.md#what-tax-will-i-be-charged) to find out what tax you're charged, depending on your country or region.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 ## What taxes will I be charged?
 
-See [What tax will I be charged for Office 365?](what-tax-will-i-be-charged.md) to find out what tax you're charged, depending on your country or region. 
+See [What tax will I be charged for Office 365?](tax-information.md#what-tax-will-i-be-charged) to find out what tax you're charged, depending on your country or region.
   
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 ## How do I apply for tax exempt status?
 
-You can [Apply for tax exempt status for Office 365 for business](apply-for-tax-exempt-status.md) by providing the proper documentation to Support. 
+You can [Apply for tax-exempt status](tax-information.md#apply-for-tax-exempt-status) by providing the proper documentation to Support.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 ## How do I apply for tax exempt status?
 
-You can [Apply for tax exempt status for Office 365 for business](apply-for-tax-exempt-status.md) by providing the proper documentation to Support. 
+You can [Apply for tax-exempt status](tax-information.md#apply-for-tax-exempt-status) by providing the proper documentation to Support.
   
 ::: moniker-end
 
