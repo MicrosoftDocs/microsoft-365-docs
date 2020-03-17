@@ -816,6 +816,10 @@
           href: gdpr-for-office-online-server.md
         - name: GDPR for on-premises Windows Server file shares
           href: gdpr-for-on-premises-file-shares.md
+    -name: Industry vertical guidance
+      items: 
+        - name: Financial services security and compliance
+          href: financial-services-secure-collaboration.md
 - name: Regulatory compliance action plans
   items: 
     - name: ISO - Recommended action plan
