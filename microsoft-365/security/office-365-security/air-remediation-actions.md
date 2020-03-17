@@ -32,23 +32,6 @@ The following table summarizes remediation actions currently available in [Offic
 |Soft delete email clusters  |Soft delete malicious email messages matching a query from all users' mailboxes|
 |Turn off external mail forwarding |Removes forwarding rule from a specific end user's mailbox|
 
-## Approve (or reject) pending actions
-
-![AIR investigations action page](../../media/air-investigationactionspage.png)
-
-While viewing the [details of an investigation](air-view-investigation-results.md), you can approve or reject any pending remediation actions. We recommend doing this as soon as possible so that your automated investigations complete.
-
-> [!IMPORTANT]
-> Appropriate permissions are required to approve or reject remediation actions. See [Required permissions to use AIR capabilities](office-365-air.md#required-permissions-to-use-air-capabilities).
-
-1. Select the **Actions** tab.
-
-2. Select an item in the list. (This activates the Approve and Reject buttons.)
-
-3. Review available information for the item(s) you selected, and then either approve or reject the action(s). 
- - **Approve** allows remediation to begin.
- - **Reject** takes no further action
-
 ## Next steps
 
 - [Learn about the compromised user security playbook](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly)
