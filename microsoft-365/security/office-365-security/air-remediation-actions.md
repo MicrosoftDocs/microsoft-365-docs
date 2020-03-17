@@ -32,6 +32,9 @@ The following table summarizes the remediation actions that are currently availa
 |Soft delete email clusters  |Soft delete malicious email messages matching a query from all users' mailboxes. <br/>Soft-deleted messages are moved to users' Recoverable Items folder and are retained until the deleted item retention period expires. |
 |Turn off external mail forwarding |Removes a forwarding rule from a specific end user's mailbox.|
 
+> [!NOTE]
+> In Office 365 ATP, no remediation actions are taken automatically. Remediation actions are taken only upon approval by your organization's security team. 
+
 ## Next steps
 
 - [View pending or completed remediation actions following an automated investigation in Office 365](air-review-approve-pending-completed-actions.md)
