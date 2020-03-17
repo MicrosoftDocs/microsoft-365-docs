@@ -18,7 +18,7 @@ search.appverid: met150
 
 The Microsoft 365 security portal provides you with Machine profile pages, so you can assess the health and status of devices on your network. Each Machine profile page contains a wealth of information about the device.
 
-You can review in-depth information about what software it is running, any past and present security events or alerts, and find links to relevant software patches. 
+You can review in-depth information about what software it is running, any past and present security events or alerts, and find links to relevant software patches.
 
 You can also use the Machine profile to perform common security-related tasks, and quickly review basic details about the device.
 
@@ -56,7 +56,7 @@ The **Alerts** tab contains a list of alerts that have been reported on the devi
 
 You can customize the number of items displayed, as well as which columns are displayed for each item. The default behavior is to list 30 items per page, and have 11 columns toggled on to display.
 
-The columns in this tab include information on the severity of the threat that triggered the alert, as well as status, investigation state, and who if anyone the alert has been assigned to. 
+The columns in this tab include information on the severity of the threat that triggered the alert, as well as status, investigation state, and who if anyone the alert has been assigned to.
 
 The *impacted entities* column refers to the machine (entity) whose profile you are currently viewing, plus any other machines in your network that are affected.
 
@@ -114,7 +114,7 @@ Selecting an item from this list will open a flyout that describes the CVE.
 
 ### Missing KBs
 
-The **Missing KBs** tab lists any Microsoft Updates that have yet to be applied to the machine. The "KBs" in question are [Knowledge Base articles](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) which describe these updates; for example, [KB4551762](https://support.microsoft.com/en-us/help/4551762/windows-10-update-kb4551762).
+The **Missing KBs** tab lists any Microsoft Updates that have yet to be applied to the machine. The "KBs" in question are [Knowledge Base articles](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) which describe these updates; for example, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
 ![Image of missing kbs tab for Machine profile](../../media/mtp-machine-profile/missing-kbs.PNG)
 
