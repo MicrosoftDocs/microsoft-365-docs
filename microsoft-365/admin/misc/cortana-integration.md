@@ -46,7 +46,13 @@ Consistent with other Microsoft 365 and Office 365 services, Cortana in Office 3
 ## How does Microsoft store, retain, process, and use Customer Data in Cortana?
 
 The table below describes the data handling for Cortana in Office 365.
-TABLE
+|    | |
+|---------|---------|
+|**Storage**     |    - Customer Data is stored on Microsoft servers inside the Office 365 cloud. Your data is part of your tenant. - Speech audio is not retained.     |
+|**Stays in Geo**     |    - Customer Data is stored on Microsoft servers inside the Office 365 cloud in Geo. Your data is part of your tenant.     |
+|**Retention**     |    - Customer Data is deleted when the account is closed by the tenant administrator or when a GDPR Data Subject Rights deletion request is made. - Speech audio is not retained.     |
+|**Processing and Confidentiality**     |   - Personnel engaged in the processing of Customer Data and personal data (i) will process such data only on instructions from Customer, and (ii) will be obligated to maintain the confidentiality and security of such data even after their engagement ends.       |
+|**Usage**     |    - Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. Machine learning to develop and improve models is one of those purposes. Machine learning is done inside the Office 365 cloud, and there is no human viewing, review or labeling of your Customer Data. - Your data is not used to target advertising.     |
 
 ## Cortana in Office 365 features
 
