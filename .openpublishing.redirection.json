@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "microsoft-365/commerce/billing-and-payments/what-tax-will-i-be-charged.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billings-and-payments/tax-information",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/tax-information",
       "redirect_document_id": true
     },
     {
