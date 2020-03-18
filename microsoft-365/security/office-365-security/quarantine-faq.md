@@ -32,11 +32,11 @@ A. By default, messages that are classified as spam or bulk email by spam filter
 
 ## Q: How do I give users access to the quarantine?
 
-A. A user must have a valid account to access their own messages in quarantine. Standalone EOP customers protecting on-premises mailboxes require that users are represented as mail users in EOP (manually created or created via directory synchronization). For more information about managing users in standalone EOP environments, see [Manage mail users in EOP](manage-mail-users-in-eop.md).
+A. A user must have a valid account to access their own messages in quarantine. Standalone EOP requires that users are represented as mail users in EOP (manually created or created via directory synchronization). For more information about managing users in standalone EOP environments, see [Manage mail users in EOP](manage-mail-users-in-eop.md).
 
 ## Q: What messages can end users access in quarantine?
 
-A. Users can access spam and bulk email messages where they are a recipient. End users can't access quarantined malware, phishing or messages that were quarantined because of the **Move message to hosted quarantine** action in mail flow rules (also known as transport rules). For more information about users accessing quarantined messages, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).
+A. Users can access spam, bulk email, and (as of April, 2020) phishing messages where they are a recipient. End users can't access quarantined malware, high confidence phishing or messages that were quarantined because of the **Deliver the message to the hosted quarantine** action in mail flow rules (also known as transport rules). For more information about users accessing quarantined messages, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).
 
 ## Q: How long are messages kept in the quarantine?
 
@@ -56,10 +56,10 @@ Admins can use the the [Get-QuarantineMessage](https://docs.microsoft.com/powers
 
 A. Wildcards aren't supported in the Security & Compliance Center. For example, when searching for a sender, you need to specify the full email address. But, you can use wildcards in Exchange Online PowerShell or Exchange Online Protection PowerShell.
 
-For example, run the following command to find quarantined messages from all senders in the domain contoso.com:
+For example, run the following command to find spam quarantined messages from all senders in the domain contoso.com:
 
 ```powershell
-$CQ = Get-QuarantineMessage | where {$_.SenderAddress -like "*@contoso.com"}
+$CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
 ```
 
 Then, run the following command to release those messages to all original recipients:

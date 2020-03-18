@@ -23,17 +23,19 @@ description: "As an Office 365 user, you can view, release, and delete your quar
 
 Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
 
-As a user, you can view, release, and delete your quarantined messages (messages where you are a recipient, and spam filtering quarantined the message as spam or bulk email). You view and manage your quarantined messages in the Security & Compliance Center.
+As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam, bulk email, or (as of April, 2020) phishing. You can also report false positives to Microsoft.
+
+You view and manage your quarantined messages in the Security & Compliance Center.
 
 ## What do you need to know before you begin?
 
 - To open the Office 365 Security & Compliance Center, go to <https://protection.office.com>. To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.
 
-- Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies). The default and maximum value is 30 days. Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+- Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies). Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
-- Admins can also [enable end-user quarantine notifications](configure-your-spam-filter-policies.md) in anti-spam policies. As of October 2019, you can no longer release quarantined messages directly from these notifications. You can click **Review** in the notification, which will take you to Quarantine in the Security & Compliance Center.
+- Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md) in anti-spam policies. As of October 2019, you can no longer release quarantined messages directly from these notifications. You can click **Review** in the notification, which will take you to Quarantine in the Security & Compliance Center. For more information, see [End-user spam notifications in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-- Messages that were quarantined for phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. For more information, see [Find and release quarantined messages as an admin in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).
+- Messages that were quarantined for high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. For more information, see [Find and release quarantined messages as an admin in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).
 
 - You can only release a message and report it as a false positive (not junk) once.
 
@@ -89,6 +91,8 @@ As a user, you can view, release, and delete your quarantined messages (messages
 
      - **Spam**
 
+     - **Phish** (As of April, 2020)
+
    To clear the filter, click **Clear**. To hide the filter flyout, click **Filter** again.
 
 4. Use **Sort results by** (the **Message ID** button by default) and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
@@ -125,7 +129,7 @@ When you select an email message in the list, the following message details appe
 
 - **Subject**
 
-- **Quarantine reason**: Shows if a message has been identified as **Spam**or **Bulk**.
+- **Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk** or (as of April, 2020) **Phish**.
 
 - **Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.
 
@@ -139,7 +143,7 @@ When you select an email message in the list, the following message details appe
 
 After you select a message, you have options for what to do with the messages in the **Details** flyout pane:
 
-- **Release message**: In the flyout pane that appears, choose whether to **Report messages to Microsoft for analysis**. This is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive. 
+- **Release message**: In the flyout pane that appears, choose whether to **Report messages to Microsoft for analysis**. This is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive.
 
   When you're finished, click **Release messages**.
 
@@ -153,7 +157,7 @@ After you select a message, you have options for what to do with the messages in
 
 - **Download message**: In the flyout pane that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.
 
-- **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted without being sent to the original recipients.
+- **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted.
 
 When you're finished, click **Close**.
 

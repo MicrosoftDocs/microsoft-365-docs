@@ -15,16 +15,18 @@ search.appverid:
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
-description: "As an admin, you can view, release, and report false positive quarantined messages in Office 365. You can set up policies so that Office 365 filters messages and sends them to quarantine for several reasons: Because they were identified as spam, bulk, phishing, malware, or because they matched a mail flow rule."
+description: "Admins can view, release, and delete all types of quarantined messages for all users. Only admins can manage messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (transport rules)."
 ---
 
 # Manage quarantined messages and files as an admin in Office 365
 
 Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
 
-Admins can view, release, and delete all types of quarantined messages for all users. Admins can also report false positive quarantined messages. Only admins can manage messages that were quarantined as malware, phishing, or as a result of mail flow rules (also known as transport rules). Admins can also report false positive quarantined messages.
+Admins can view, release, and delete all types of quarantined messages for all users. Only admins can manage messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). Admins can also report false positives to Microsoft.
 
-Admins in organizations with Office 365 Advance Threat Protection (ATP) can also view, download, and delete quarantine files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
+Admins in organizations with Office 365 Advance Threat Protection (ATP) can also view, download, and delete quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
+
+You view and manage quarantined messages in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Office 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).
 
 ## What do you need to know before you begin?
 
@@ -32,15 +34,7 @@ Admins in organizations with Office 365 Advance Threat Protection (ATP) can also
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can manage the quarantine as an admin. The permissions are controlled by the **Quarantine** role in the Security & Compliance Center. By default, this role is assigned to the following Security & Compliance Center role groups:
-
-  - **Organization Management** (Global admins)
-
-  - **Quarantine Administrator**
-
-  - **Security Administrator**
-
-  For more information, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions before you can manage the quarantine as an admin. The permissions are controlled by the **Quarantine** role in the Security & Compliance Center. By default, this role is assigned to the **Organization Management** (Global admins), **Quarantine Administrator**, and **Security Administrator** role groups in the Security & Compliance Center. For more information, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Quarantined messages are retained for a default period of time before they're automatically deleted:
 
@@ -50,7 +44,7 @@ Admins in organizations with Office 365 Advance Threat Protection (ATP) can also
 
   - Messages that contain malware: 15 days.
 
-  When a message expires from quarantine, you can't get it back.
+  When a message expires from quarantine, you can't recover it.
 
 ## Use the Security & Compliance Center to manage quarantined email messages
 
