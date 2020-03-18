@@ -208,7 +208,7 @@ After you select a message, you have several options for what to do with the mes
 
   When you're finished, click **Submit**.
 
-If you don't release or remove the message, it will be deleted after the default quarantine retention period expires. To change the quarantine retention period, see the [Configure the default quarantine retention period](#configure-the-default-quarantine-retention-period) section later in this topic.
+If you don't release or remove the message, it will be deleted after the default quarantine retention period expires.
 
 #### Take action on multiple quarantined email messages
 
