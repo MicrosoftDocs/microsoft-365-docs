@@ -54,7 +54,7 @@ Gather this information:
 
 1. Ensure that you're familiar with the SFP syntax in the following table.
 
-   ||**If you're using...**|**Common for Office 365 customers?**|**Add this...**|
+   ||**If you're using...**|**Common for customers?**|**Add this...**|
    |:-----|:-----|:-----|:-----|
    |1|Any email system (required)|Common. All SPF TXT records start with this value|v=spf1|
    |2|Exchange Online|Common|include:spf.protection.outlook.com|

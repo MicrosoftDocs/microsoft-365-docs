@@ -66,7 +66,7 @@ The proportion of small-to-medium sized companies that are not in the Fortune 50
 
 This is a big problem because while enterprises may not be aware of how email authentication works, phishers do understand and take advantage of the lack of it.
 
-For information on setting up SPF, DKIM, and DMARC, see the section "*Customers of Office 365"*  later on in this document.
+For information on setting up SPF, DKIM, and DMARC, see the section "*Customers of Microsoft 365 for business"*  later on in this document.
 
 ## Stopping spoofing with implicit email authentication
 
@@ -74,7 +74,7 @@ Because phishing and spear phishing is such a problem, and because of the limite
 
 To accomplish this, Microsoft has built numerous extensions to regular email authentication including sender reputation, sender/recipient history, behavioral analysis, and other advanced techniques. A message sent from a domain that doesn't publish email authentication will be marked as spoof unless it contains other signals to indicate that it is legitimate.
 
-By doing this, end users can have confidence that an email sent to them has not been spoofed, senders can be confident that nobody is impersonating their domain, and customers of Office 365 can offer even better protection such as Impersonation protection.
+By doing this, end users can have confidence that an email sent to them has not been spoofed, senders can be confident that nobody is impersonating their domain, and customers of Microsoft 365 for business can offer even better protection such as Impersonation protection.
 
 To see Microsoft's general announcement, see [A Sea of Phish Part 2 - Enhanced Anti-spoofing in Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
 
@@ -150,7 +150,7 @@ In both cases, the following red safety tip is stamped in the message, or an equ
 
 It's only by looking at the From: address and knowing what your recipient email is, or by inspecting the email headers, that you can differentiate between intra-org and cross-domain spoofing.
 
-## How customers of Office 365 can prepare themselves for the new anti-spoofing protection
+## How customers of Microsoft 365 for business can prepare themselves for the new anti-spoofing protection
 
 ### Information for administrators
 
@@ -248,7 +248,7 @@ There are multiple different ways a message can be spoofed (see  [Differentiatin
 
 |**Type of spoof**|**Category**|**Safety tip added?**|**Applies to**|
 |:-----|:-----|:-----|:-----|
-|DMARC fail (quarantine or reject)|HSPM (default), may also be SPM or PHSH|No (not yet)|All Office 365 customers, Outlook.com|
+|DMARC fail (quarantine or reject)|HSPM (default), may also be SPM or PHSH|No (not yet)|All customers, Outlook.com|
 |Self-to-self|SPM|Yes|All Office 365 organizations, Outlook.com|
 |Cross-domain|SPOOF|Yes|Office 365 Advanced Threat Protection and E5 customers|
 
@@ -325,7 +325,7 @@ However, as an administrator, you can specify which senders are permitted to sen
 
 This method can be used to resolve intra-org spoofing, and cross-domain spoofing in cases where you own or interact with multiple tenants. It also helps resolve cross-domain spoofing where you send to other customers within Office 365, and also third parties that are hosted in other providers.
 
-For more details, see [Customers of Office 365](#customers-of-office-365).
+For more details, see [Customers of Microsoft 365 for business](#customers-of-office-365).
 
 #### Method 2 - Use Spoof intelligence to configure permitted senders of unauthenticated email
 
@@ -369,7 +369,7 @@ If you use this method, it will skip spam and some of the phish filtering, but n
 
 #### Method 4 - Contact the sender and ask them to set up email authentication
 
-Because of the problem of spam and phishing, Microsoft recommends all senders set up email authentication. If you know an administrator of the sending domain, contact them and request that they set up email authentication records so you do not have to add any overrides. For more information, see [Administrators of domains that are not Office 365 customers](#administrators-of-domains-that-are-not-office-365-customers)" later in this article.
+Because of the problem of spam and phishing, Microsoft recommends all senders set up email authentication. If you know an administrator of the sending domain, contact them and request that they set up email authentication records so you do not have to add any overrides. For more information, see [Administrators of domains that are not customers](#administrators-of-domains-that-are-not-office-365-customers)" later in this article.
 
 While it may be difficult at first to get sending domains to authenticate, over time, as more and more email filters start junking or even rejecting their email, it will cause them to set up the proper records to ensure better delivery.
 
@@ -554,9 +554,9 @@ If you don't own the mailing list:
 
 If you are an administrator who currently sends messages to Microsoft, either Office 365 or Outlook.com, you should ensure that your email is properly authenticated otherwise it may be marked as spam or phish.
 
-### Customers of Office 365
+### Customers of Microsoft 365 for business
 
-If you are an Office 365 customer and you use Office 365 to send outbound email:
+If you are a customer and you use Office 365 to send outbound email:
 
 - For your domains, [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
@@ -566,9 +566,9 @@ If you are an Office 365 customer and you use Office 365 to send outbound email:
 
 Microsoft does not provide detailed implementation guidelines for each of SPF, DKIM, and DMARC. However, there is a lot of information published online. There are also 3rd party companies dedicated to helping your organization set up email authentication records.
 
-### Administrators of domains that are not Office 365 customers
+### Administrators of domains that are not customers
 
-If you are a domain administrator but are not an Office 365 customer:
+If you are a domain administrator but are not a customer:
 
 - You should set up SPF to publish your domain's sending IP addresses, and also set up DKIM (if available) to digitally sign messages. You may also consider setting up DMARC records.
 
@@ -622,7 +622,7 @@ At first, there will be some messages that are marked as spam. However, over tim
 
 Microsoft itself first adopted this feature several weeks before deploying it to the rest of its customers. While there was disruption at first, it gradually declined.
 
-### Will Microsoft bring this feature to Outlook.com and non-Advanced Threat Protection customers of Office 365?
+### Will Microsoft bring this feature to Outlook.com and non-Advanced Threat Protection customers of Microsoft 365 for business?
 
 Microsoft's anti-spoofing technology was initially deployed to its organizations that had an Office 365 Enterprise E5 subscription or had purchased the Office 365 Advanced Threat Protection (ATP) add-on for their subscription. As of October, 2018 we've extended the protection to organizations that have Exchange Online Protection (EOP) as well. In the future, we may release it for Outlook.com. However, if we do, there may be some capabilities that are not applied such as reporting and custom overrides.
 
@@ -632,7 +632,7 @@ You can either use the [Report Message Add-in for Outlook](https://support.offic
 
 ### I'm a domain administrator who doesn't know who all my senders are!
 
-Please see [Administrators of domains that are not Office 365 customers](#administrators-of-domains-that-are-not-office-365-customers).
+Please see [Administrators of domains that are not customers](#administrators-of-domains-that-are-not-office-365-customers).
 
 ### What happens if I disable anti-spoofing protection for my organization, even though Office 365 is my primary filter?
 

@@ -40,7 +40,7 @@ Follow the steps below if you want to set user passwords to expire after a speci
 1. In the admin center, go to the **Settings** \> **Settings**.
 
 2. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Security & privacy</a> page.
- If you aren't an Office 365 global admin, you won't see the Security and privacy option.
+ If you aren't a global admin, you won't see the Security and privacy option.
   
 3. Select **Password expiration policy**.
   

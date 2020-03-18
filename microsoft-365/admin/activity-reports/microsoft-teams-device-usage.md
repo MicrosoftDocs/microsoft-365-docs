@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Reports in the admin center - Microsoft Teams device usage"
+title: "Microsoft 365 Reports in the admin center - Microsoft Teams device usage"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,10 +20,10 @@ search.appverid:
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
 
-description: "Gain insights into the Microsoft Teams apps used in your organization by getting the Microsoft Teams app usage report from Office 365 Reports."
+description: "Gain insights into the Microsoft Teams apps used in your organization by getting the Microsoft Teams app usage report from Microsoft 365 Reports."
 ---
 
-# Office 365 Reports in the admin center - Microsoft Teams device usage
+# Microsoft 365 Reports in the admin center - Microsoft Teams device usage
 
 The Office 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the Microsoft Teams app usage report, you can gain insights into the Microsoft Teams apps that are used in your organization.
   
@@ -41,7 +41,7 @@ The Office 365 **Reports** dashboard shows you the activity overview across the 
 
 You can get a view into Microsoft Teams app usage by looking at the **Users** and **Distribution** charts. 
   
-![Office 365 reports - Microsoft Teams app usage](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
+![Microsoft 365 reports - Microsoft Teams app usage](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
   
 |||
 |:-----|:-----|

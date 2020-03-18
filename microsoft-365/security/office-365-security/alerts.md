@@ -31,13 +31,13 @@ Alerts in Office 365 are in the Security &amp; Compliance Center. Here's how to 
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account. 
+2. Sign in using your work or school account. 
     
 3. In the left pane, click **Alerts** to see the alerts features. 
     
  **To go to the Security &amp; Compliance Center using the Office 365 app launcher:**
   
-1. Sign in to Office 365 using your work or school account. 
+1. Sign in using your work or school account. 
     
 2. Click the app launcher  in the upper left corner, and then click **Security &amp; Compliance**.
     

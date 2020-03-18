@@ -20,7 +20,7 @@ titleSuffix: Microsoft Compliance
 
 ## HIPAA and the HITECH Act overview
 
-The Health Insurance Portability and Accountability Act (HIPAA) is a US healthcare law that establishes requirements for the use, disclosure, and safeguarding of individually identifiable health information. It applies to covered entities — doctors’ offices, hospitals, health insurers, and other healthcare companies — with access to patients’ protected health information (PHI), as well as to business associates, such as cloud service and IT providers, that process PHI on their behalf. (Most covered entities do not carry out functions such as claims or data processing on their own; they rely on business associates to do so.)
+The Health Insurance Portability and Accountability Act (HIPAA) is a US healthcare law that establishes requirements for the use, disclosure, and safeguarding of individually identifiable health information. It applies to covered entities — doctors' offices, hospitals, health insurers, and other healthcare companies — with access to patients' protected health information (PHI), as well as to business associates, such as cloud service and IT providers, that process PHI on their behalf. (Most covered entities do not carry out functions such as claims or data processing on their own; they rely on business associates to do so.)
 
 The law regulates the use and dissemination of PHI in four general areas:
 
@@ -38,7 +38,7 @@ The HITECH Breach Notification Final Rule, which requires giving notice to indiv
 
 ## Microsoft and HIPAA and the HITECH Act
 
-HIPAA regulations require that covered entities and their business associates — in this case, Microsoft when it provides services, including cloud services, to covered entities — enter into contracts to ensure that those business associates will adequately protect PHI. These contracts, or BAAs, clarify and limit how the business associate can handle PHI, and set forth each party’s adherence to the security and privacy provisions set forth in HIPAA and the HITECH Act. Once a BAA is in place, Microsoft customers — covered entities — can use its services to process and store PHI.
+HIPAA regulations require that covered entities and their business associates — in this case, Microsoft when it provides services, including cloud services, to covered entities — enter into contracts to ensure that those business associates will adequately protect PHI. These contracts, or BAAs, clarify and limit how the business associate can handle PHI, and set forth each party's adherence to the security and privacy provisions set forth in HIPAA and the HITECH Act. Once a BAA is in place, Microsoft customers — covered entities — can use its services to process and store PHI.
 
 Currently there is no official certification for HIPAA or HITECH Act compliance. However, those Microsoft services covered under the BAA have undergone audits conducted by accredited independent auditors for the Microsoft ISO/IEC 27001 certification.
 
@@ -52,7 +52,7 @@ To learn how the Microsoft Cloud helps customers support HIPAA and the HITECH re
 - Cloud App Security
 - Microsoft Health Bot Service
 - Microsoft Stream
-- Microsoft Professional Services: Premier and On Premises for Azure, Dynamics 365, Intune, and for medium business and enterprise customers of Office 365
+- Microsoft Professional Services: Premier and On Premises for Azure, Dynamics 365, Intune, and for medium business and enterprise customers of Microsoft 365 for business
 - [Dynamics 365 and Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Intune
@@ -77,15 +77,15 @@ For Microsoft cloud services: The [HIPAA Business Associate Agreement](https://a
 
 For Microsoft Professional Services services: The HIPAA Business Associate Amendment is available for in-scope Microsoft Professional Services upon request to your Microsoft services representative.
 
-**Does having a BAA with Microsoft ensure my organization’s compliance with HIPAA and the HITECH Act?**
+**Does having a BAA with Microsoft ensure my organization's compliance with HIPAA and the HITECH Act?**
 
 No. By offering a BAA, Microsoft helps support your HIPAA compliance, but using Microsoft services does not on its own achieve it. Your organization is responsible for ensuring that you have an adequate compliance program and internal processes in place, and that your particular use of Microsoft services aligns with HIPAA and the HITECH Act.
 
-**Can Microsoft modify my organization’s BAA?**
+**Can Microsoft modify my organization's BAA?**
 
-Microsoft cannot modify the HIPAA BAA, because Microsoft services are consistent for all customers and so must follow the same procedures for everyone. However, to create the BAA for Microsoft’s HIPAA-regulated customers and its services, Microsoft collaborated with some of the leading US medical schools and their HIPAA privacy counsel, as well as other public- and private-sector HIPAA-covered entities.
+Microsoft cannot modify the HIPAA BAA, because Microsoft services are consistent for all customers and so must follow the same procedures for everyone. However, to create the BAA for Microsoft's HIPAA-regulated customers and its services, Microsoft collaborated with some of the leading US medical schools and their HIPAA privacy counsel, as well as other public- and private-sector HIPAA-covered entities.
 
-**How can I get copies of the auditor’s reports?**
+**How can I get copies of the auditor's reports?**
 
 The [Service Trust Portal](https://www.microsoft.com/trustcenter/STP/default.aspx) provides independently audited compliance reports. You can use the portal to request audit reports so that your auditors can compare Microsoft's cloud services results with your own legal and regulatory requirements.
 
@@ -95,11 +95,11 @@ To assist customers with this task, Microsoft has published these guides:
 
 - *HIPAA/HITECH Act implementation guidance* for [Azure](https://aka.ms/azurehipaaguidance) and for [Dynamics 365 and Office 365](https://go.microsoft.com/fwlink/?LinkID=257510). Written for privacy, security, and compliance officers and others responsible for HIPAA and HITECH Act implementation, they describe concrete steps your organization can take to maintain compliance.
 - [Practical guide to designing secure health solutions using Microsoft Azure](https://aka.ms/azureindustrysecurity) helps you better understand what it takes to successfully adopt a cloud service in a secure manner.
-- [Addressing HIPAA security and privacy requirements in the Microsoft Cloud](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) offers a brief overview of regulation requirements. It also provides a detailed analysis of how Microsoft’s cloud services were built with methodologies that map to those requirements, and guidance on how to build compliance-ready solutions.
+- [Addressing HIPAA security and privacy requirements in the Microsoft Cloud](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) offers a brief overview of regulation requirements. It also provides a detailed analysis of how Microsoft's cloud services were built with methodologies that map to those requirements, and guidance on how to build compliance-ready solutions.
 
 ## Use Microsoft Compliance Score to assess your risk
 
-[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [HIPAA Office 365 template](https://go.microsoft.com/fwlink/?linkid=2118005) and the [HIPAA Intune template](https://go.microsoft.com/fwlink/?linkid=2118006) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [HIPAA Office 365 template](https://go.microsoft.com/fwlink/?linkid=2118005) and the [HIPAA Intune template](https://go.microsoft.com/fwlink/?linkid=2118006) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
 
 ## Resources
 

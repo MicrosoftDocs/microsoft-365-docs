@@ -32,7 +32,7 @@ After you've created a well-formed XML file, you can upload it to Office 365 by 
 
 ## Important disclaimer
 <!-- this is worded much better than the previous one is -->
-Due to the variances in customer environments and content match requirements, Microsoft Support cannot assist in providing custom content-matching definitions; e.g., defining custom classifications or regular expression (also known as RegEx) patterns. For custom content-matching development, testing, and debugging, Office 365 customers will need to rely upon internal IT resources, or use an external consulting resource such as Microsoft Consulting Services (MCS). Support engineers can provide limited support for the feature, but cannot provide assurances that any custom content-matching development will fulfill the customer's requirements or obligations.  As an example of the type of support that can be provided, sample regular expression patterns may be provided for testing purposes. Or, support can assist with troubleshooting an existing RegEx pattern which is not triggering as expected with a single specific content example.
+Due to the variances in customer environments and content match requirements, Microsoft Support cannot assist in providing custom content-matching definitions; e.g., defining custom classifications or regular expression (also known as RegEx) patterns. For custom content-matching development, testing, and debugging, customers will need to rely upon internal IT resources, or use an external consulting resource such as Microsoft Consulting Services (MCS). Support engineers can provide limited support for the feature, but cannot provide assurances that any custom content-matching development will fulfill the customer's requirements or obligations.  As an example of the type of support that can be provided, sample regular expression patterns may be provided for testing purposes. Or, support can assist with troubleshooting an existing RegEx pattern which is not triggering as expected with a single specific content example.
 
  For more information about the Boost.RegEx (formerly known as RegEx++) engine that's used for processing the text, see [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
     
@@ -44,79 +44,79 @@ Here's the sample XML of the rule package that we'll create in this topic. Eleme
 <?xml version="1.0" encoding="UTF-16"?>
 <RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
 <RulePack id="DAD86A92-AB18-43BB-AB35-96F7C594ADAA">
-	<Version build="0" major="1" minor="0" revision="0"/>
-	<Publisher id="619DD8C3-7B80-4998-A312-4DF0402BAC04"/>
-	<Details defaultLangCode="en-us">
-		<LocalizedDetails langcode="en-us">
-			<PublisherName>Contoso</PublisherName>
-			<Name>Employee ID Custom Rule Pack</Name>
-			<Description>
-			This rule package contains the custom Employee ID entity.
-			</Description>
-		</LocalizedDetails>
-	</Details>
+    <Version build="0" major="1" minor="0" revision="0"/>
+    <Publisher id="619DD8C3-7B80-4998-A312-4DF0402BAC04"/>
+    <Details defaultLangCode="en-us">
+        <LocalizedDetails langcode="en-us">
+            <PublisherName>Contoso</PublisherName>
+            <Name>Employee ID Custom Rule Pack</Name>
+            <Description>
+            This rule package contains the custom Employee ID entity.
+            </Description>
+        </LocalizedDetails>
+    </Details>
 </RulePack>
 <Rules>
 <!-- Employee ID -->
-	<Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="70">
-		<Pattern confidenceLevel="60">
-			<IdMatch idRef="Regex_employee_id"/>
-		</Pattern>
-		<Pattern confidenceLevel="70">
-			<IdMatch idRef="Regex_employee_id"/>
-			<Match idRef="Func_us_date"/>
-		</Pattern>
-		<Pattern confidenceLevel="80">
-			<IdMatch idRef="Regex_employee_id"/>
-			<Match idRef="Func_us_date"/>
-			<Any minMatches="1">
-				<Match idRef="Keyword_badge" minCount="2"/>
-				<Match idRef="Keyword_employee"/>
-			</Any>
-			<Any minMatches="0" maxMatches="0">
-				<Match idRef="Keyword_false_positives_local"/>
-				<Match idRef="Keyword_false_positives_intl"/>
-			</Any>
-		</Pattern>
-	</Entity>
-	<Regex id="Regex_employee_id">(\s)(\d{9})(\s)</Regex>
-	<Keyword id="Keyword_employee">
-		<Group matchStyle="word">
-			<Term>Identification</Term>
-			<Term>Contoso Employee</Term>
-		</Group>
-	</Keyword>
-	<Keyword id="Keyword_badge">
-		<Group matchStyle="string">
-			<Term>card</Term>
-			<Term>badge</Term>
-			<Term caseSensitive="true">ID</Term>
-		</Group>
-	</Keyword>
-	<Keyword id="Keyword_false_positives_local">
-		<Group matchStyle="word">
-			<Term>credit card</Term>
-			<Term>national ID</Term>
-		</Group>
-	</Keyword>
-	<Keyword id="Keyword_false_positives_intl">
-		<Group matchStyle="word">
-			<Term>identity card</Term>
-			<Term>national ID</Term>
-			<Term>EU debit card</Term>
-		</Group>
-	</Keyword>
-	<LocalizedStrings>
-		<Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB378">
-			<Name default="true" langcode="en-us">Employee ID</Name>
-			<Description default="true" langcode="en-us">
-			A custom classification for detecting Employee IDs.
-			</Description>
-			<Description default="false" langcode="de-de">
-			Description for German locale.
-			</Description>
-		</Resource>
-	</LocalizedStrings>
+    <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="70">
+        <Pattern confidenceLevel="60">
+            <IdMatch idRef="Regex_employee_id"/>
+        </Pattern>
+        <Pattern confidenceLevel="70">
+            <IdMatch idRef="Regex_employee_id"/>
+            <Match idRef="Func_us_date"/>
+        </Pattern>
+        <Pattern confidenceLevel="80">
+            <IdMatch idRef="Regex_employee_id"/>
+            <Match idRef="Func_us_date"/>
+            <Any minMatches="1">
+                <Match idRef="Keyword_badge" minCount="2"/>
+                <Match idRef="Keyword_employee"/>
+            </Any>
+            <Any minMatches="0" maxMatches="0">
+                <Match idRef="Keyword_false_positives_local"/>
+                <Match idRef="Keyword_false_positives_intl"/>
+            </Any>
+        </Pattern>
+    </Entity>
+    <Regex id="Regex_employee_id">(\s)(\d{9})(\s)</Regex>
+    <Keyword id="Keyword_employee">
+        <Group matchStyle="word">
+            <Term>Identification</Term>
+            <Term>Contoso Employee</Term>
+        </Group>
+    </Keyword>
+    <Keyword id="Keyword_badge">
+        <Group matchStyle="string">
+            <Term>card</Term>
+            <Term>badge</Term>
+            <Term caseSensitive="true">ID</Term>
+        </Group>
+    </Keyword>
+    <Keyword id="Keyword_false_positives_local">
+        <Group matchStyle="word">
+            <Term>credit card</Term>
+            <Term>national ID</Term>
+        </Group>
+    </Keyword>
+    <Keyword id="Keyword_false_positives_intl">
+        <Group matchStyle="word">
+            <Term>identity card</Term>
+            <Term>national ID</Term>
+            <Term>EU debit card</Term>
+        </Group>
+    </Keyword>
+    <LocalizedStrings>
+        <Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB378">
+            <Name default="true" langcode="en-us">Employee ID</Name>
+            <Description default="true" langcode="en-us">
+            A custom classification for detecting Employee IDs.
+            </Description>
+            <Description default="false" langcode="de-de">
+            Description for German locale.
+            </Description>
+        </Resource>
+    </LocalizedStrings>
 </Rules>
 </RulePackage>
 ```
@@ -333,7 +333,7 @@ The Version element is also important. When you upload your rule package for the
   </RulePack>
   
  <Rules>
-	. . .
+    . . .
  </Rules>
 </RulePackage>
 

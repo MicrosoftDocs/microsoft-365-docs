@@ -50,7 +50,7 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
 
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account.
+2. Sign in using your work or school account.
     
 3. In the left pane of the security and compliance center, select **Permissions**, and then select the checkbox next to **eDiscovery Manager**.
     

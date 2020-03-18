@@ -79,7 +79,7 @@ For more information about eDiscovery permissions, see [Assign eDiscovery permis
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account.
+2. Sign in using your work or school account.
     
 3. In the Security & Compliance Center, click **Permissions**, and then do one of the following based on the eDiscovery permissions that you want to assign.
     
@@ -97,7 +97,7 @@ The next step is to create a eDiscovery case. You must be a member of the eDisco
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account.
+2. Sign in using your work or school account.
     
 3. In the Security & Compliance Center, click **eDiscovery** \> **eDiscovery**, and then click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Create a case**.
     

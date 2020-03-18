@@ -22,13 +22,13 @@ description: "Users need to be assigned permissions in the Office 365 Security &
 
 # Give users access to the Office 365 Security & Compliance Center
 
-Users need to be assigned permissions in the Office 365 Security & Compliance Center before they can manage any of its security or compliance features. As an Office 365 global admin or member of the OrganizationManagement role group in the Security & Compliance Center, you can give these permissions to users. Users will only be able to manage the security or compliance features that you give them access to.
+Users need to be assigned permissions in the Office 365 Security & Compliance Center before they can manage any of its security or compliance features. As a global admin or member of the OrganizationManagement role group in the Security & Compliance Center, you can give these permissions to users. Users will only be able to manage the security or compliance features that you give them access to.
 
 For more information about the different permissions you can give to users in the Security & Compliance Center, check out [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## What do you need to know before you begin?
 
-- You need to be an Office 365 global admin, or a member of the OrganizationManagement role group in the Security & Compliance Center, to complete the steps in this article.
+- You need to be a global admin, or a member of the OrganizationManagement role group in the Security & Compliance Center, to complete the steps in this article.
 
 - Role groups for the Security & Compliance Center might have similar names to the role groups in Exchange Online, but they're not the same.
 

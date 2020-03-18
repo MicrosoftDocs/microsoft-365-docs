@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Reports in the admin center - Yammer groups activity report"
+title: "Microsoft 365 Reports in the admin center - Yammer groups activity report"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,7 +21,7 @@ ms.assetid: 94dd92ec-ea73-43c6-b51f-2a11fd78aa31
 description: "Get the Yammer groups activity report to know about the number of Yammer groups being created and used in your organization, and their activity."
 ---
 
-# Office 365 Reports in the admin center - Yammer groups activity report
+# Microsoft 365 Reports in the admin center - Yammer groups activity report
 
 The Office 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the Yammer groups activity report, you can gain insights into the activity of Yammer groups in your organization and see how many Yammer groups are being created and used.
   

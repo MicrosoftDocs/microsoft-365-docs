@@ -34,7 +34,7 @@ Office 365 Groups is the foundational membership service that drives all teamwor
 - A Team (if the group was created from Teams)
 - Roadmap (if you have Project for the web )
 
-With an Office 365 group, you don’t have to manually assign permissions to each of these resources, because adding members to the group automatically gives them the permissions they need to the tools that the group provides.
+With an Office 365 group, you don't have to manually assign permissions to each of these resources, because adding members to the group automatically gives them the permissions they need to the tools that the group provides.
 
 Any Office 365 user can create a group unless you [limit group creation to a specific set of people](manage-creation-of-groups.md). Note that if you limit group creation, users who cannot create groups will not be able to create SharePoint sites, Planners, or teams. These services need to be able to create a group using the user context. Users can still participate in group activities, such as creating tasks in Planner or responding to conversations in Outlook, provided they are a member of the group.
 
@@ -76,7 +76,7 @@ The following limits apply to Office 365 Groups:
 
 The default maximum number of Office 365 Groups that an Office 365 organization can have is currently 500,000, but can be increased by request. For more information on Office 365 Groups limits, see [Office 365 Groups - Admin help](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
 
-Managing your Office 365 Groups is more effective when you have actionable information about Groups usage. The Microsoft 365 Admin Center has a reporting tool that can let you see things such as storage use, how many active Groups you have and even how your users are using the Groups. See: [Office 365 Reports in the admin center](../activity-reports/office-365-groups.md) for more information.
+Managing your Office 365 Groups is more effective when you have actionable information about Groups usage. The Microsoft 365 Admin Center has a reporting tool that can let you see things such as storage use, how many active Groups you have and even how your users are using the Groups. See: [Microsoft 365 Reports in the admin center](../activity-reports/office-365-groups.md) for more information.
 
 ## Which Office 365 plans include Groups?
 
@@ -85,7 +85,7 @@ Any Office 365 subscription that has Exchange Online and SharePoint Online will 
 > [!NOTE]
 > For more details about Office 365 service families and plans, please check [Office 365 plan options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
 
-If you have an Exchange-only plan you can still get the shared Inbox and shared Calendar features of groups in Outlook but you won’t get the document library, Planner or any of the other capabilities.
+If you have an Exchange-only plan you can still get the shared Inbox and shared Calendar features of groups in Outlook but you won't get the document library, Planner or any of the other capabilities.
 
 Office 365 Groups works with Azure Active Directory (AAD). The Groups features you get depends on which Azure Active Directory subscription you have, and what license(s) is assigned to the organizer of the Group.
 

@@ -41,7 +41,7 @@ Not every message that fails to authenticate is malicious. However, you should b
 
 ## How to manage which messages receive the unverified sender treatment 
 
-If you are an Office 365 customer you can manage this feature through the Office 365 Security & Compliance Center.
+If you are a customer you can manage this feature through the Office 365 Security & Compliance Center.
 
 - In the Security & Compliance Center, global or security administrators can turn the feature on or off, through anti-spoofing protection under the Anti-Phish policy. Additionally, you can use the **Set-AntiPhishPolicy** cmdlet in Exchange Online PowerShell. For details, see [Anti-phishing protection in Office 365](anti-phishing-protection.md) and [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
 
@@ -57,7 +57,7 @@ Additionally, we don't apply the unverified sender treatment if the message was 
 
 ## How to manage the 'via' tag 
 
-If you are an Office 365 customer you can manage this feature through the Office 365 Security & Compliance center, the same way that you manage the unverified sender treatment. If you add the sender to the Spoof Intelligence spoof allow list, the 'via' treatment will not be applied.
+If you are an customer you can manage this feature through the Office 365 Security & Compliance center, the same way that you manage the unverified sender treatment. If you add the sender to the Spoof Intelligence spoof allow list, the 'via' treatment will not be applied.
 
 ## Frequently asked questions
 

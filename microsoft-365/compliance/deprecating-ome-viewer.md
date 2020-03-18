@@ -34,7 +34,7 @@ With this change, users will no longer be able to download the Office 365 Messag
   
 ## Why this change was made
 
-The new version of OME no longer requires a mobile app to read protected email messages and attachments. Office 365 customers using the new OME capabilities can view the protected message in Outlook mobile and non-Office 365 customers can view protected messages in a browser.
+The new version of OME no longer requires a mobile app to read protected email messages and attachments. Customers using the new OME capabilities can view the protected message in Outlook mobile and non-customers can view protected messages in a browser.
   
 Requiring users to download a mobile app is another hurdle for customers to view protected messages. The new Office 365 Message Encryption capabilities provide a better mobile experience.
   

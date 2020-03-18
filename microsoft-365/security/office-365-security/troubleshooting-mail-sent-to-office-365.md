@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
-description: "This article provides troubleshooting information for senders who are experiencing issues when trying to send email to inboxes in Office 365 and best practices for bulk mailing to Office 365 customers."
+description: "This article provides troubleshooting information for senders who are experiencing issues when trying to send email to inboxes in Office 365 and best practices for bulk mailing to customers."
 ---
 
 # Troubleshooting mail sent to Office 365
 
-This article provides troubleshooting information for senders who are experiencing issues when trying to send email to inboxes in Office 365 and best practices for bulk mailing to Office 365 customers.
+This article provides troubleshooting information for senders who are experiencing issues when trying to send email to inboxes in Office 365 and best practices for bulk mailing to customers.
 
 ## Troubleshooting common problems with mail delivery to Office 365
 
@@ -131,7 +131,7 @@ Marketing emails, especially newsletters, should always include a way of unsubsc
 
  `This email was sent to example@contoso.com by sender@fabrikam.com.`
 
- `Update Profile/Email Address | Instant removal with SafeUnsubscribe™ | Privacy Policy`
+ `Update Profile/Email Address | Instant removal with SafeUnsubscribe&trade; | Privacy Policy`
 
 Some senders include this option by requiring recipients to send an email to a certain alias with "Unsubscribe" in the subject. This is not preferable to the one-click example above. If you do choose to require recipients to send a mail, ensure that when they click the link, all the required fields are pre-populated.
 

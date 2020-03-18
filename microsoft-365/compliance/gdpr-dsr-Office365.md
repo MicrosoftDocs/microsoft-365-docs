@@ -1331,7 +1331,7 @@ To assign administrator or owner permissions to a SharePoint Online site so that
 
 #### OneDrive for Business
 
-An Office 365 global admin can access a user's OneDrive for Business account by using the .
+An global admin can access a user's OneDrive for Business account by using the .
 
 1. Sign in to Office 365 with your global admin credentials.
 2. Go to the admin center.
@@ -1341,7 +1341,7 @@ An Office 365 global admin can access a user's OneDrive for Business account by 
 
 ### Gaining access to an Exchange Online mailbox to make changes to data
 
-An Office 365 global admin can assign themselves the permissions necessary to open and edit (or delete) items in another user's mailbox, as if they were the mailbox owner. A global admin can also assign these permissions to another user. Specifically, the global admin needs to add the **Read and manage** permission, which is the Full Access permission in Exchange Online. For details, see:
+A global admin can assign themselves the permissions necessary to open and edit (or delete) items in another user's mailbox, as if they were the mailbox owner. A global admin can also assign these permissions to another user. Specifically, the global admin needs to add the **Read and manage** permission, which is the Full Access permission in Exchange Online. For details, see:
 
 - [Give mailbox permissions to another user in Office 365](https://support.office.com/article/Give-mailbox-permissions-to-another-user-in-Office-365-Admin-Help-1DBCF12F-A9DE-4D1D-B0B3-A227F8A736D8)
 - [Access another person's mailbox](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081)
@@ -1439,7 +1439,7 @@ Another way to restrict the processing of personal data is to temporarily remove
 
 Because most Office documents are on a SharePoint Online or OneDrive for Business site, here's a high-level process for removing documents from sites and then re-importing them.
 
-1. Get a copy of the document that is the subject of the restriction request. You may have to request either access to the site or ask an Office 365 global admin or a site collection administrator to provide you with a copy of the document.
+1. Get a copy of the document that is the subject of the restriction request. You may have to request either access to the site or ask a global admin or a site collection administrator to provide you with a copy of the document.
 2. Store the document in an on-premises location (such as a file server or a file share) or another location other than your Office 365 tenant in the Microsoft cloud.
 3. Permanently delete (purge) the original document from Office 365. This is a 3-step process:
 
@@ -1563,7 +1563,7 @@ To restrict processing for a specific user, you can remove their Workplace Analy
 
 If a data subject would like to be removed from a Workplace Analytics report or set of reports, you can delete the report. It is your responsibility to delete users from any organizational data that you used to generate the report, and reupload the data. All data about the user is removed when a user account is "hard-deleted" from Azure Active Directory. 
 
-To remove the personal data of a data subject, an Office 365 global administrator can take the following steps: 
+To remove the personal data of a data subject, a global administrator can take the following steps: 
 
 1. Remove the Workplace Analytics license from the data subject.
 2. Delete the Azure Active Directory (AAD) entry for the data subject. (For more information, see [Delete a user](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user).)

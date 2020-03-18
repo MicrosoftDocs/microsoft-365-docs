@@ -21,7 +21,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 ## Step 1: Create an app in Azure Active Directory
 
-1. Go to <https://portal.azure.com> and sign in using the credentials of an Office 365 global admin account.
+1. Go to <https://portal.azure.com> and sign in using the credentials of a global admin account.
 
     ![Create app in AAD](../media/FBCimage1.png)
 
@@ -86,7 +86,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 ## Step 3: Register the Facebook app
 
-1. Go to <https://developers.facebook.com>, log in using the credentials for the account for your organization’s Facebook Business pages, and then click **Add New App**.
+1. Go to <https://developers.facebook.com>, log in using the credentials for the account for your organization's Facebook Business pages, and then click **Add New App**.
 
    ![Add a new app for Facebook business page](../media/FBCimage25.png)
 
