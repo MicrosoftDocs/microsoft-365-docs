@@ -1,7 +1,7 @@
 ---
 title: Create and manage custom detection rules in Microsoft Threat Protection
 description: Learn how to create and manage custom detections rules based on advanced hunting queries
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, rules, schema, kusto, microsoft 365, Microsoft Threat Protection
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, rules, schema, kusto, microsoft 365, Microsoft Threat Protection, RBAC, permissions, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -28,8 +28,21 @@ ms.topic: article
 
 Custom detection rules built from [Advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured machines. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
 
+## Required permissions for managing custom detections
+
+To manage custom detections, you need to be assigned one of these roles:
+
+- **Security administrator** — the security administrator or security admin role is an [Azure Active Directory role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) for managing various security settings in Microsoft 365 security center and various portals and services.
+
+- **Security operator** —  the security operator role is an [Azure Active Directory role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) for managing alerts and has global read-only access on security-related features, including all information in Microsoft 365 security center. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off on Microsoft Defender ATP. If you have RBAC configured, you also need the **manage security settings** permission on Microsoft Defender ATP.
+
+To manage required permissions, a **global administrator** can do the following:
+
+- Assign the **security administrator** or **security operator** role in [Microsoft 365 admin center](https://admin.microsoft.com/) under **Roles** > **Security admin**.
+- Check RBAC settings for Microsoft Defender ATP in [Microsoft Defender Security Center](https://securitycenter.windows.com/) under **Settings** > **Permissions** > **Roles**. Select the corresponding role to assign the **manage security settings** permission.
+
 > [!NOTE]
-> **[TBD STUB]** To create or manage custom detection rules, you need the XXXX permission, which is available to XXXX rules.
+> To manage custom detections, **security operators** will need the **manage security settings** permission in Microsoft Defender ATP if RBAC is turned on.
 
 ## Create a custom detection rule
 ### 1. Prepare the query.
@@ -48,7 +61,10 @@ To create a custom detection rule, the query must return the following columns:
     - `SenderFromAddress` (envelope sender or Return-Path address)
     - `SenderMailFromAddress` (sender address displayed by email client)
     - `RecipientObjectId`
-
+    - `AccountSid`
+    - `InitiatingProcessAccountSid`
+    - `InitiatingProcessAccountUpn`
+    - `InitiatingProcessAccountObjectId`
 >[!NOTE]
 >Support for additional entities will be added as new tables are added to the schema.
 
@@ -86,7 +102,7 @@ When saved, custom detections rules immediately run. They then run again at fixe
 - **Every 3 hours** — checks data from the past 6 hours
 - **Every hour** — checks data from the past 2 hours
 
-Whenever a rule runs, similar detections on the same machine could be aggregated into fewer alerts, so running a rule less frequently can generate fewer alerts. Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
+Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
 
 ### 3. Choose the impacted entities.
 Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses. By identifying the main impacted entity among these addresses, you guide the service on how to aggregate relevant alerts, correlate incidents, and target response actions.
