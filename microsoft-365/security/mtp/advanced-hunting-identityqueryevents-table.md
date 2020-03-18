@@ -33,7 +33,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | datetime | Date and time when the event was recorded |
 | `ActionType` | string | Type of activity that triggered the event |
 | `Application` | string | Application that performed the recorded action |
-| `Query` | string | Type of the query: QueryGroup, QueryUser, or EnumerateUsers |
+| `Query` | string | Type of query: QueryGroup, QueryUser, or EnumerateUsers |
 | `QueryObject` | string | Name of the user, group, device, domain, or any other entity type being queried |
 | `Protocol` | string | Protocol used during the communication |
 | `AccountName` | string | User name of the account |
