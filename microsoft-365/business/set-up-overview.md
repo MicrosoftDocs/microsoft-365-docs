@@ -72,7 +72,7 @@ After you run the set up wizard, you will want to proctect all the Windwos 10 co
 
 When you join a Windows 10 device to Azure AD, the policies you set for Windows 10 computers get applied to it. For more information, see [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md).
 
-## Step 4: Install Office 365 Business
+## Step 4: Install Microsoft 365 Apps for business
 - You can automatically install Office in the Windows devices by using the [setup wizard](set-up.md#deploy-office-365-client-apps).
 - Let users [install Office apps](https://docs.microsoft.com/office365/admin/setup/install-applications) for Windows and devices.
      

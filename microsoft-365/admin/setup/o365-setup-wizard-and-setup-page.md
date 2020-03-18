@@ -34,7 +34,7 @@ The setup wizard provides a guided walkthrough for setting up the basic Microsof
 
 To set up your account, go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), select **Setup** in the left navigation pane, and then select **Guided setup** on the **Setup** page.
 
-![Start the Office 365 Business setup wizard](../../media/o365b-guided-setup.png)
+![Start the Microsoft 365 Apps for business setup wizard](../../media/o365b-guided-setup.png)
 
 The setup wizard guides you through the following steps:
 

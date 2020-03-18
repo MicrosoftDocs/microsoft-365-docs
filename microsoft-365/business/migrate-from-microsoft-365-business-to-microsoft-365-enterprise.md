@@ -45,7 +45,7 @@ This table shows the differences between Microsoft 365 Business and Microsoft 36
 |:-------|:-----|:-----|
 | **On-premises**        | | | 
 | Windows 10    | Windows 10 Business  |     Windows 10 Enterprise E3| 
-| Office apps*    | [Office 365 Business](#office-365-business)    | Microsoft 365 Apps for enterprise | 
+| Office apps*    | [Microsoft 365 Apps for business](#office-365-business)    | Microsoft 365 Apps for enterprise | 
 | **Cloud productivity apps**        | | | 
 | Exchange Online and Outlook    | 50 GB storage limit per mailbox and unlimited Exchange Online archiving    | 100 GB storage limit per mailbox and unlimited Exchange Online archiving | 
 | Teams    | ![Included with Microsoft 365 Business](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 

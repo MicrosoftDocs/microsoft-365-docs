@@ -36,7 +36,7 @@ The GDPR is all about data and how it's used. Think of data as having a life cyc
   
 The GDPR is concerned with the following types of data: 
   
-- **Personal data:** If you can link data to an individual and identify them, then that data is considered personal with respect to the GDPR. Examples of personal data include name, address, date of birth, and IP address. The GDPR considers even encoded information (also known as “pseudonymous” information) to be personal data, regardless of how obscure or technical the data is, if the data can be linked to an individual.
+- **Personal data:** If you can link data to an individual and identify them, then that data is considered personal with respect to the GDPR. Examples of personal data include name, address, date of birth, and IP address. The GDPR considers even encoded information (also known as "pseudonymous" information) to be personal data, regardless of how obscure or technical the data is, if the data can be linked to an individual.
     
 - **Sensitive personal data** This is data that adds more details to personal data. Examples include religion, trade union membership, ethnic origin, and so on. Sensitive personal data also includes biometric data and DNA. Under GDPR, sensitive data has more stringent protection rules than personal data. 
     
@@ -104,7 +104,7 @@ Under the GDPR, if you collect data you are affected to some extent. The GDPR ha
   
 - **Data Controller:** An individual or organization (you can have joint controllers) that decides how, what, and why data is collected. They may store it using another company's cloud servers. For example, a website that collects customer data is a controller. 
     
-- **Data Processor:** An individual or organization that stores data on behalf of the controller(s) and processes these data upon request. For example, Office 365 Business data storage acts as a processor and is fully GDPR compliant. 
+- **Data Processor:** An individual or organization that stores data on behalf of the controller(s) and processes these data upon request. For example, Microsoft 365 Apps for business data storage acts as a processor and is fully GDPR compliant. 
     
     An organization or system can act as both a controller and a processor. Microsoft 365 Business can act as both and complies with the GDPR.
     

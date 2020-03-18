@@ -54,7 +54,7 @@ If you use PowerShell to bulk create your users, then you'll need to run [Set-Cl
 
 As an admin, you can re-enable Clutter using Exchange PowerShell. Once this is done, Focused Inbox will be turned off and Clutter will be active again. 
   
- **If you're using Outlook on the web with an Microsoft 365 business subscription:**
+ **If you're using Outlook on the web with a Microsoft 365 Business Premium subscription:**
   
 - If user currently has Clutter enabled: 
     

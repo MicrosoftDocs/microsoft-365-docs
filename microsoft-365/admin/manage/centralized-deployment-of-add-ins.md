@@ -44,7 +44,7 @@ Centralized Deployment doesn't support the following:
    
 - Deployment of Component Object Model (COM) or Visual Studio Tools for Office (VSTO) add-ins
     
-- Deployments of Office 365 that do not include Exchange such as Office 365 Business
+- Deployments of Microsoft 365 that do not include Exchange such as Microsoft 365 Apps for business
 
 ### Office Requirements
 

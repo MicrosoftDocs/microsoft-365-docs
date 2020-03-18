@@ -12,7 +12,7 @@
 | 12/23/2019 | [Change a user name and email address in Office 365](/Office365/Admin/add-users/change-a-user-name-and-email-address?view=o365-worldwide) | modified |
 | 12/23/2019 | [Let users reset their own passwords in Office 365](/Office365/Admin/add-users/let-users-reset-passwords?view=o365-worldwide) | modified |
 | 12/23/2019 | [Remove a former employee from Office 365](/Office365/Admin/add-users/remove-former-employee?view=o365-worldwide) | modified |
-| 12/23/2019 | [Reset Office 365 business passwords](/Office365/Admin/add-users/reset-passwords?view=o365-worldwide) | modified |
+| 12/23/2019 | [Reset Microsoft 365 Apps for business passwords](/Office365/Admin/add-users/reset-passwords?view=o365-worldwide) | modified |
 | 12/23/2019 | [About the Microsoft 365 admin center](/Office365/Admin/admin-overview/about-the-admin-center?view=o365-worldwide) | modified |
 | 12/23/2019 | [Create organization-wide signatures and disclaimers](/Office365/Admin/setup/create-signatures-and-disclaimers?view=o365-worldwide) | modified |
 | 12/23/2019 | [Set up Office 365 file storage and sharing](/Office365/Admin/setup/set-up-file-storage-and-sharing?view=o365-worldwide) | modified |
@@ -49,7 +49,7 @@
 | 1/10/2020 | [Get access to and back up a former user's data](/Office365/Admin/add-users/get-access-to-and-back-up-a-former-user-s-data?view=o365-worldwide) | modified |
 | 1/10/2020 | [Give mailbox permissions to another user in Office 365 - Admin Help](/Office365/Admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide) | modified |
 | 1/10/2020 | [Remove a former employee from Office 365](/Office365/Admin/add-users/remove-former-employee?view=o365-worldwide) | modified |
-| 1/10/2020 | [Reset Office 365 business passwords](/Office365/Admin/add-users/reset-passwords?view=o365-worldwide) | modified |
+| 1/10/2020 | [Reset Microsoft 365 Apps for business passwords](/Office365/Admin/add-users/reset-passwords?view=o365-worldwide) | modified |
 | 1/10/2020 | [Restore a user in Office 365](/Office365/Admin/add-users/restore-user?view=o365-worldwide) | modified |
 | 1/10/2020 | [About the Microsoft 365 admin center](/Office365/Admin/admin-overview/about-the-admin-center?view=o365-worldwide) | modified |
 | 1/10/2020 | [Get started with Office 365 for business](/Office365/Admin/admin-overview/get-started-with-office-365?view=o365-worldwide) | modified |

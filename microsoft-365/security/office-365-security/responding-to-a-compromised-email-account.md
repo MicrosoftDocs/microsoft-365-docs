@@ -15,20 +15,20 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Learn how to recognize and respond to a compromised email account in Office 365"
+description: "Learn how to recognize and respond to a compromised email account in Microsoft 365"
 ---
 # Responding to a Compromised Email Account
 
-**Summary** Learn how to recognize and respond to a compromised email account in Office 365.
+**Summary** Learn how to recognize and respond to a compromised email account in Microsoft 365.
 
-## What is a Compromised Email Account in Office 365?
+## What is a Compromised Email Account in Microsoft 365?
 
-Access to Office 365 mailboxes, data and other services, is controlled through the use of credentials, for example a user name and password or PIN. When someone other than the intended user steals those credentials, the stolen credentials are considered to be compromised. With them the attacker can sign in as the original user and perform illicit actions.
-Using the stolen credentials, the attacker can access the user's Office 365 mailbox, SharePoint folders, or files in the user's OneDrive. One action commonly seen is the attacker sending emails as the original user to recipients both inside and outside of the organization. When the attacker emails data to external recipients, this is called data exfiltration.
+Access to Microsoft 365 mailboxes, data and other services, is controlled through the use of credentials, for example a user name and password or PIN. When someone other than the intended user steals those credentials, the stolen credentials are considered to be compromised. With them the attacker can sign in as the original user and perform illicit actions.
+Using the stolen credentials, the attacker can access the user's Microsoft 365 mailbox, SharePoint folders, or files in the user's OneDrive. One action commonly seen is the attacker sending emails as the original user to recipients both inside and outside of the organization. When the attacker emails data to external recipients, this is called data exfiltration.
 
-## Symptoms of a Compromised Office 365 Email Account
+## Symptoms of a Compromised Microsoft 365 Email Account
 
-Users might notice and report unusual activity in their Office 365 mailboxes. Here are some common symptoms:
+Users might notice and report unusual activity in their Microsoft 365 mailboxes. Here are some common symptoms:
 
 - Suspicious activity, such as missing or deleted emails.
 
@@ -66,7 +66,7 @@ If a user reports any of the above symptoms, you should perform further investig
 
   - sign-in success or failure
 
-## How to secure and restore email function to a suspected compromised Office 365 account and mailbox
+## How to secure and restore email function to a suspected compromised Microsoft 365 account and mailbox
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
 
@@ -79,7 +79,7 @@ You must perform all the following steps to regain access to your account the so
 > [!WARNING]
 > Do not send the new password to the intended user through email as the attacker still has access to the mailbox at this point.
 
-1. Follow the Reset an Office 365 business password for someone else procedures in [Reset Office 365 business passwords](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
+1. Follow the Reset a Microsoft 365 Apps for business password for someone else procedures in [Reset Microsoft 365 Apps for business passwords](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
 
 **Notes**:
 
@@ -87,7 +87,7 @@ You must perform all the following steps to regain access to your account the so
 
 - Don't reuse any of your last five passwords. Even though the password history requirement lets you reuse a more recent password, you should select something that the attacker can't guess.
 
-- If your on-premises identity is federated with Office 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
+- If your on-premises identity is federated with Microsoft 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
 
 > [!TIP]
 > We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.  You can learn more about MFA [here](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
@@ -176,9 +176,9 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 
 3. Make sure that your contact information, such as telephone numbers and addresses, is correct.
 
-## Secure Office 365 like a cybersecurity pro
+## Secure Microsoft 365 like a cybersecurity pro
 
-Your Office 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Office 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Office 365 tenant.
+Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.
 
 - Tasks to accomplish in the first 30 days.  These have immediate affect and are low-impact to your users.
 
@@ -188,7 +188,7 @@ Your Office 365 subscription comes with a powerful set of security capabilities 
 
 ## See also
 
-- [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
 - [Internet Crime Complaint Center](https://www.ic3.gov/preventiontips.aspx)
 

@@ -28,7 +28,7 @@ ms.custom: okr_SMB
 
 If you're an admin, you can verify which subscriptions your organization has by going to the admin center.
   
- **Not an admin?** See [What Microsoft 365 business product or license do I have?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
+ **Not an admin?** See [What Microsoft 365 for business product or license do I have?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
 
 ::: moniker range="o365-worldwide"
 
