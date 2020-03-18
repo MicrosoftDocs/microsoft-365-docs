@@ -374,16 +374,16 @@
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: Campaign Views
               href: ./office-365-security/campaigns.md
-            - name: Understanding latest attacks with threat analytics
-              href: ./mtp/latest-attack-campaigns.md
             - name: Automated investigation and response
               items: 
                 - name: AIR overview
                   href: ./office-365-security/office-365-air.md
-                - name: View automated investigation details and results
-                  href: ./office-365-security/air-view-investigation-results.md
-                - name: Approve or reject pending actions
+                - name: Remediation actions
                   href: ./office-365-security/air-remediation-actions.md
+                - name: View details and results of an automated investigation
+                  href: ./office-365-security/air-view-investigation-results.md
+                - name: Review and approve (or reject) pending actions
+                  href: ./office-365-security/air-review-approve-pending-completed-actions.md
                 - name: Integrate AIR with a custom solution or third-party solution
                   href: ./office-365-security/air-custom-reporting.md
             - name: Detect and address compromised user accounts quickly
@@ -392,6 +392,8 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: View and read your ATP reports
               href: ./office-365-security/view-reports-for-atp.md
+            - name: Understanding latest attacks with threat analytics
+              href: ./mtp/latest-attack-campaigns.md
             - name: What ATP Safe Links warning pages mean
               href: ./office-365-security/atp-safe-links-warning-pages.md
             - name: Use Threat Trackers
