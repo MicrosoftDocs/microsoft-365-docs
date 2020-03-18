@@ -1,7 +1,6 @@
 ---
 title: "Manage who can create Office 365 Groups"
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
 author: MikePlumleyMSFT
@@ -29,7 +28,7 @@ description: "Learn how to control which users can create Office 365 Groups."
   
 Because it's so easy for users to create Office 365 Groups, you aren't inundated with requests to create them on behalf of other people. Depending on your business, however, you might want to control who has the ability to create groups.
   
-This article explains how to disable the ability to create groups **in all Office 365 services that use groups**: 
+This article explains how to disable the ability to create groups in all Office 365 services that use groups, including:
   
 - Outlook
     
@@ -74,7 +73,7 @@ If you're a member of one of these roles, you can create Office 365 Groups for r
 To manage who creates Groups, the following people need Azure AD Premium licenses or Azure AD Basic EDU licenses assigned to them:
 
 - The admin who configures these group creation settings
-- The members of the security group who are allowed to create Groups
+- The members of the security group who are allowed to create groups
 
 The following people don't need Azure AD Premium or Azure AD Basic EDU licenses assigned to them:
 
@@ -87,7 +86,7 @@ Only one security group in your organization can be used to control who is able 
 Admins in the roles listed above do not need to be members of this group: they retain their ability to create groups.
 
 > [!IMPORTANT]
-> Be sure to use a **security group** to restrict who can create groups. If you try to use an Office 365 Group, members won't be able to create a group from SharePoint because it checks for a security group. 
+> Be sure to use a **security group** to restrict who can create groups. If you try to use an Office 365 group, members won't be able to create a group from SharePoint because it checks for a security group. 
     
 1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
 
@@ -95,7 +94,7 @@ Admins in the roles listed above do not need to be members of this group: they r
 
 3. Choose **Security** as the group type. Remember the name of the group! You'll need it later.
   
-4. Finish setting up the security group, adding people or other security groups who you want to be able to create Groups in your org.
+4. Finish setting up the security group, adding people or other security groups who you want to be able to create groups in your org.
     
 For detailed instructions, see [Create, edit, or delete a security group in the Microsoft 365 admin center](../email/create-edit-or-delete-a-security-group.md).
   
