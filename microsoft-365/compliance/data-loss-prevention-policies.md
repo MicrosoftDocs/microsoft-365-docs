@@ -175,6 +175,8 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. This report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
   
 ![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+
+DLP scans email differently from items in SharePoint Online or OneDrive for Business. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there is a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
   
 ## Grouping and logical operators
 
