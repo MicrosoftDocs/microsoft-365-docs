@@ -734,8 +734,8 @@ The following table lists the activities in Briefing email that are logged in th
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
-|Updated organization privacy settings|UpdatedOrganizationBriefingSettings|Admin updates the organization's privacy settings for Briefing email. |
-|Updated user privacy settings|UpdatedUserBriefingSettings|Admin updates the user privacy settings for Briefing email. |
+|Updated organization privacy settings|UpdatedOrganizationBriefingSettings|Admin updates the organization privacy settings for Briefing email. |
+|Updated user privacy settings|UpdatedUserBriefingSettings|Admin updates the user privacy settings for Briefing email.
 ||||
 
 
