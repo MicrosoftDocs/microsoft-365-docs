@@ -47,11 +47,11 @@ Consistent with other Microsoft 365 and Office 365 services, Cortana in Office 3
 
 |**Name**|**Description**|
 |:-----|:-----|
-|**Storage**  <br/> | - Customer Data is stored on Microsoft servers inside the Office 365 cloud. Your data is part of your tenant. - Speech audio is not retained.  <br/> |
-|**Stays in Geo**  <br/> |- Customer Data is stored on Microsoft servers inside the Office 365 cloud in Geo. Your data is part of your tenant.  <br/> |
-|**Retention**  <br/> |- Customer Data is deleted when the account is closed by the tenant administrator or when a GDPR Data Subject Rights deletion request is made. - Speech audio is not retained.  <br/> |
-|**Processing and Confidentiality**  <br/> |- Personnel engaged in the processing of Customer Data and personal data (i) will process such data only on instructions from Customer, and (ii) will be obligated to maintain the confidentiality and security of such data even after their engagement ends.  <br/> |
-|**Usage**  <br/> |- Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. Machine learning to develop and improve models is one of those purposes. Machine learning is done inside the Office 365 cloud, and there is no human viewing, review or labeling of your Customer Data. - Your data is not used to target advertising.  <br/> |
+|**Storage**  <br/> |Customer Data is stored on Microsoft servers inside the Office 365 cloud. Your data is part of your tenant. <br/> Speech audio is not retained.  <br/> |
+|**Stays in Geo**  <br/> |Customer Data is stored on Microsoft servers inside the Office 365 cloud in Geo. Your data is part of your tenant.  <br/> |
+|**Retention**  <br/> |Customer Data is deleted when the account is closed by the tenant administrator or when a GDPR Data Subject Rights deletion request is made. <br/> Speech audio is not retained.  <br/> |
+|**Processing and Confidentiality**  <br/> |Personnel engaged in the processing of Customer Data and personal data (i) will process such data only on instructions from Customer, and (ii) will be obligated to maintain the confidentiality and security of such data even after their engagement ends.  <br/> |
+|**Usage**  <br/> |Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. Machine learning to develop and improve models is one of those purposes. Machine learning is done inside the Office 365 cloud, and there is no human viewing, review or labeling of your Customer Data. <br/> Your data is not used to target advertising.  <br/> |
 
 ## Cortana in Office 365 features
 
@@ -77,7 +77,7 @@ Cortana sends a personalized briefing email with tasks and commitments you made 
 
 Admins can configure Briefing for their organization using a [toggle](https://docs.microsoft.com/en-us/briefing/be-admin) in the Microsoft 365 admin center. Individuals can opt out of Cortana's Briefing email by selecting Unsubscribe in the footer of the message. We'll continue to introduce more Cortana in Office 365 features to help increase your organization's productivity. Learn more about [Microsoft Compliance offerings](https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-home).
 
-## How is Cortana in Office 365 different from other Cortana experiences I may have used?**
+## How is Cortana in Office 365 different from other Cortana experiences I may have used?
 
 Here are the two ways to think of how Cortana works in your enterprise.
 
