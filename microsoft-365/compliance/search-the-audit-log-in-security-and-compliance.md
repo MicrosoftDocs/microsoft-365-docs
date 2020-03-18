@@ -735,7 +735,7 @@ The following table lists the activities in Briefing email that are logged in th
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Updated organization privacy settings|UpdatedOrganizationBriefingSettings|Admin updates the organization's privacy settings for Briefing email. |
-|Updated user privacy settings|UpdatedUserBriefingSettings|Admin updates the user privacy settings for Briefing email. (question from Markjjo: I assume this activity is triggered when an admin runs Set-UserBriefingConfig cmdlet. Is this activity also triggered if a user chooses to Unsubscribe and opt out of Briefing email? If so, I would also state that here.|
+|Updated user privacy settings|UpdatedUserBriefingSettings|Admin updates the user privacy settings for Briefing email. |
 ||||
 
 
