@@ -1,0 +1,119 @@
+### YamlMime:Landing
+
+title: Office 365 manage documation # < 60 chars
+summary: Quick links for the most common admin tasks in Office 365. # < 160 chars
+
+metadata:
+  title: Office 365 manage documation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Quick links for the most common admin tasks in Office 365.  # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: o365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  ms.collection: 
+  - Adm_O365
+  - Adm_TOC
+  author: wingtofree #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-qingao #Required; microsoft alias of author; optional team alias.
+  ms.date: 03/06/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Microsoft Teams
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of Microsoft Teams
+            url: https://go.microsoft.com/fwlink/p/?linkid=863169
+          - text: Microsoft Teams
+            url: https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams
+          - text: Skype for Business Online Admin
+            url: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online
+      - linkListType: how-to-guide
+        links:
+          - text: Allow users to contact external Skype for Business users
+            url: https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users
+          - text: Let Skype for Business users add Skype contacts
+            url: https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-skype-for-business-online/let-skype-for-business-users-add-skype-contacts 
+          - text: Set up Skype for Business Online
+            url: https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-skype-for-business-online/set-up-skype-for-business-online
+          - text: Install Skype for Business on a PC
+            url: https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb
+          - text: Troubleshooting 
+            url: https://docs.microsoft.com/SkypeForBusiness/set-up-skype-for-business-online/troubleshoot-problems-with-skype-for-business-online
+
+  # Card (optional)
+  - title: SharePoint
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: SharePoint Online
+            url: https://docs.microsoft.com/sharepoint/sharepoint-online
+      - linkListType: how-to-guide
+        links:
+          - text: Turn external sharing on or off for SharePoint Online
+            url: https://docs.microsoft.com/sharepoint/turn-external-sharing-on-or-off
+          - text: Create and manage sites
+            url: https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center
+          - text: Intranet planning guide
+            url: https://docs.microsoft.com/sharepoint/planning-hub-sites
+          - text: Manage site creation
+            url: https://docs.microsoft.com/sharepoint/manage-site-creation
+          - text: Customize the search experience
+            url: https://docs.microsoft.com/sharepoint/overview-of-search
+  
+  # Card (optional)
+  - title: Email
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Email in Office 365 for business
+            url: https://docs.microsoft.com/en-us/microsoft-365/admin/email/email?view=o365-worldwide
+      - linkListType: how-to-guide
+        links:
+          - text: Add a new employee
+            url: https://docs.microsoft.com/en-us/microsoft-365/admin/add-users/add-users?view=o365-worldwide
+          - text: Fix email messages when they won't send
+            url: https://support.office.com/article/97748418-bbd5-4743-a05b-581f22a466dd
+          - text: Troubleshooting 
+            url: https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues
+
+  # Card (optional)
+  - title: Yammer
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Yammer admin HELP
+            url: https://docs.microsoft.com/yammer/yammer-landing-page
+      - linkListType: how-to-guide
+        links:
+          - text: Office 365 sign-in for Yammer
+            url: https://docs.microsoft.com/yammer/manage-yammer-users/office-365-sign-in
+          - text: Manage Yammer users from Office 365
+            url: https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle
+          - text: Enforce Office 365 identity for Yammer users
+            url: https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity
+          - text: Embed a Yammer feed into a SharePoint site
+            url: https://docs.microsoft.com/yammer/integrate-yammer-with-other-apps/embed-a-feed-into-a-sharepoint-site
+
+  # Card (optional)
+  - title: OneDrive
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: OneDrive in Office 365
+            url: https://support.office.com/article/3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb
+      - linkListType: how-to-guide
+        links:
+          - text: Get the OneDrive sync client and mobile apps
+            url: https://go.microsoft.com/fwlink/p/?LinkId=798319
+          - text: Sync files with the OneDrive sync client in Windows
+            url: https://support.office.com/article/615391c4-2bd3-4aae-a42a-858262e42a49
+          - text: Manage sharing in OneDrive and SharePoint
+            url: https://docs.microsoft.com/onedrive/manage-sharing
+          - text: Set the default storage space for OneDrive users
+            url: https://docs.microsoft.com/onedrive/set-default-storage-space
+          - text: Fix OneDrive sync problems
+            url: https://support.office.com/article/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2
