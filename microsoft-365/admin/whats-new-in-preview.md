@@ -122,7 +122,7 @@ Want to read more about it? [Change from credit card or bank account to invoice]
 
 ### Global reader
 
-We mentioned the Global reader role in the [October 2019 - Ignite Edition](#october-2019---ignite-edition), but as it’s rolling out more broadly, let’s discuss some details:
+We mentioned the Global reader role in the [October 2019 - Ignite Edition](#october-2019---ignite-edition), but as it's rolling out more broadly, let's discuss some details:
 
 - The Global reader role is the read-only counterpart to the Global admin role. The Global reader can see everything that the Global admin has permission to do.
 - With a few exceptions, like some compliance and security features, Global readers have access to view all of the Microsoft cloud admin centers that your org is licensed to use.
@@ -130,7 +130,7 @@ We mentioned the Global reader role in the [October 2019 - Ignite Edition](#octo
 - You can also combine the global reader role with another role that has fewer permissions. For example, a small business owner might be assigned the **Billing admin** + **Global reader** roles so that they can pay the bills and stay on top of changes to their cloud organization.
 - Global readers can go to any page in the Microsoft 365 admin center. When they open an editable page,  there will be a warning at the top telling them that they don't have permission to save changes, and the save button will be disabled.
 
-We’d love to get your feedback about the global reader role and any of the role-based permissions that you’d like to see in the future. [Give feedback for role-based permissions](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/10115430-have-a-consistent-experience-when-assigning-admin)
+We'd love to get your feedback about the global reader role and any of the role-based permissions that you'd like to see in the future. [Give feedback for role-based permissions](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/10115430-have-a-consistent-experience-when-assigning-admin)
 
 ### New Settings page
 
@@ -205,9 +205,9 @@ For more info, see [What's new in the SharePoint admin center](https://docs.micr
 
 We are ramping up for some exciting feature releases at Ignite 2019, so we're only announcing a few new features that were released in September. But stay tuned for next month's article, it'll be published on the first day of Ignite!
 
-### Featured Feedback Fix – The option to convert the deleted user’s mailbox to a shared mailbox is back
+### Featured Feedback Fix – The option to convert the deleted user's mailbox to a shared mailbox is back
 
-We heard your feedback loud and clear and we brought back the ability to give someone else access to a deleted user’s mailbox by converting it to a **shared mailbox**. Adding this back to the delete user wizard lets you decide what to do with the data:
+We heard your feedback loud and clear and we brought back the ability to give someone else access to a deleted user's mailbox by converting it to a **shared mailbox**. Adding this back to the delete user wizard lets you decide what to do with the data:
 
 - Email: Give someone else access to the deleted user's mailbox by converting it to a shared mailbox.
 - Files: Save their OneDrive files and give someone else access.
