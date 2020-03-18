@@ -60,8 +60,9 @@ The following reference lists all the tables in the schema. Each table name link
 
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
+- [Work with query results](advanced-hunting-query-results.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

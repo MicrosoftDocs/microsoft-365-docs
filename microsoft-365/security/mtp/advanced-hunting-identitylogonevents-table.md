@@ -24,7 +24,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-The `IdentityLogonEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about authentication activities recorded by Azure Active Directory and other Microsoft online services. Use this reference to construct queries that return information from this table.
+The `IdentityLogonEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about authentication activities recorded by Azure Active Directory and other Microsoft cloud apps and services. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 

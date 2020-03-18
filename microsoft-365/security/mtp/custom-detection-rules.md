@@ -78,7 +78,7 @@ The sample query below counts the number of unique machines (`DeviceId`) with an
 DeviceEvents
 | where Timestamp > ago(7d)
 | where ActionType == "AntivirusDetection"
-| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
+| summarize Timestamp = max(Timestamp), count() by DeviceId
 | where count_ > 5
 ```
 ### 2. Create new rule and provide alert details.

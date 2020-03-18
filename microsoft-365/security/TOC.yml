@@ -91,6 +91,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Learn the query language
                   href: mtp/advanced-hunting-query-language.md
+                - name: Work with query results
+                  href: mtp/advanced-hunting-query-results.md
                 - name: Use shared queries
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: Hunt on devices and emails
