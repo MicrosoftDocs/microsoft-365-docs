@@ -1,5 +1,5 @@
 ---
-title: "Get started with Microsoft 365 Business"
+title: "Get started with Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -29,7 +29,7 @@ ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Learn about Microsoft 365 Business, how to set it up, and how to prepare your users' devices and PCs to ensure they're protected by Microsoft 365 Business."
 ---
 
-# Get started with Microsoft 365 Business
+# Get started with Microsoft 365 for business
 
 ## What is Microsoft 365 Business
 
@@ -103,8 +103,8 @@ If you retain a local Active Directory that contains some on-premises resources 
     
 ## See also
 
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Microsoft 365 for business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Manage Microsoft 365 Business](manage.md)[Migrate to Microsoft 365 Business](migrate-to-microsoft-365-business.md)
+[Manage Microsoft 365 for business](manage.md)[Migrate to Microsoft 365 Business](migrate-to-microsoft-365-business.md)
 
 [Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

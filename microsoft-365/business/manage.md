@@ -1,5 +1,5 @@
 ---
-title: "Manage Microsoft 365 Business"
+title: "Manage Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,10 +20,10 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: "Learn to manage Microsoft 365 Business related admin tasks, mobile devices, Windows 10 PCs, and many such tasks."
+description: "Learn to Manage Microsoft 365 for business related admin tasks, mobile devices, Windows 10 PCs, and many such tasks."
 ---
 
-# Manage Microsoft 365 Business
+# Manage Microsoft 365 for business
 
 ## General Microsoft 365 Business admin tasks
 

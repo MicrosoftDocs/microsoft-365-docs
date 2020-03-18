@@ -44,9 +44,9 @@ When you add devices, you also need to add them to a Profile. A profile is used 
   
 ## Related articles
 
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Microsoft 365 for business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Get started with Microsoft 365 Business](https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364)
+[Get started with Microsoft 365 for business](https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364)
   
-[Manage Microsoft 365 Business](https://support.office.com/article/27ff1678-865a-4707-8145-e1155aa815d6)
+[Manage Microsoft 365 for business](https://support.office.com/article/27ff1678-865a-4707-8145-e1155aa815d6)
   
