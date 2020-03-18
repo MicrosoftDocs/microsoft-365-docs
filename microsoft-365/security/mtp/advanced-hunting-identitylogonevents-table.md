@@ -17,7 +17,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # IdentityLogonEvents
@@ -25,7 +24,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 **Applies to:**
 - Microsoft Threat Protection
 
-The `IdentityLogonEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about authentication activities recorded by Active Directory. Use this reference to construct queries that return information from this table.
+The `IdentityLogonEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about authentication activities recorded and other Microsoft online services. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
