@@ -42,7 +42,7 @@ At a high level, an alert is triggered, and a security playbook starts and autom
 
     If your organization is using a custom reporting solution or a third-party solution, you can [use the Office 365 Management Activity API](air-custom-reporting.md) to view information about automated investigations and threats.
 
-4. Your security operations team reviews the [investigation results and recommendations](air-view-investigation-results.md), and [approves or rejects remediation actions](air-remediation-actions.md#approve-or-reject-pending-actions). 
+4. Your security operations team reviews the [investigation results and recommendations](air-view-investigation-results.md), and [approves or rejects remediation actions](air-review-approve-pending-completed-actions.md). 
 
     As pending remediation actions are approved (or rejected), the automated investigation completes.
 
@@ -55,7 +55,7 @@ During and after an automated investigation process, your security team can do t
 
 - [View the results details of an investigation](air-view-investigation-results.md#view-details-of-an-investigation)
 
-- [Review and approve actions as a result of an investigation](air-remediation-actions.md#approve-or-reject-pending-actions)
+- [Review and approve actions as a result of an investigation](air-review-approve-pending-completed-actions.md)
 
 > [!TIP]
 > For more details, see [How AIR works](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office).
