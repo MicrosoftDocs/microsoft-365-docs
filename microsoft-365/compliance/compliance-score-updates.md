@@ -32,7 +32,7 @@ There are two ways to create a template in Compliance Manager. You can copy an e
 
 ### What's changing
 
-We're making it easier for you to create new templates. In a one-step **extension** process, you can add a spreadsheet with your actions and controls to an existing Microsoft template to make your own customized version. At your **Templates** page in Compliance Manager, select **+ Add template**. On the **Template** flyout pane, select the **Create extension from global template** checkbox, as shown in the image below. You'll then add customizations using a new Excel format that is less complex than the current one. This new process replaces the current **Copy from an existing template** and **Add custom control** functions.
+We're making it easier for you to create new templates. In a one-step **extension** process, you can add a spreadsheet with your actions and controls to an existing Microsoft template to make your own customized version. On the **Template** flyout pane, select the **Create extension from global template** checkbox, as shown in the image below. You'll then add customizations using a new Excel format that is less complex than the current one. This new process replaces the current **Copy from an existing template** and **Add custom control** functions.
 
 Each time the original assessment is updated through the versioning process outlined below, your customized assessment will inherit those updates and keep your custom controls.
 
@@ -42,9 +42,9 @@ We're also making it easier to modify your own existing templates. You can expor
 
 ## Versioning notice and control
 
-Your organization will receive updated assessments in the next release of Compliance Score and Compliance Manager to help you align with certification and regulation updates. We'll provide a clear way for you to understand and accept all future updates through versioning alerts.
+Your organization will receive updated assessments in the next release of Compliance Score and Compliance Manager to help you align with certification and regulation updates.
 
-Whenever an update is available for an assessment's template or an improvement action, an alert icon notifies you that an update is ready. When you click on that icon, a pop-up window explains the update and prompts you to accept. Below is an example of the versioning alert for an assessment:
+Going forward, whenever an update is available for an assessment's template or an improvement action, an alert icon notifies you that an update is ready. When you click on that icon, a pop-up window explains the update and prompts you to accept. Below is an example of the versioning alert for an assessment:
 
 ![Compliance Score - versioning alert](../media/compliance-score-assessment-version.png "Assessment version update alert")
 
@@ -54,7 +54,7 @@ Selecting the alert icon reveals a flyout pane explaining the update and prompti
 
 ## Common actions will synch status across groups
 
-If your organization has multiple groups of assessments, the behavior of actions that affect your entire organization – in particular, actions marked as **Technical** – will change. Any duplicate actions across groups will be combined into one single action. That single action will contain all uploaded notes and evidence from the duplicate versions. With this change, technical actions will behave as they currently do when they belong to the same group. Any change made to the action in one group or assessment will now be reflected in all instances. The Implementation Status, Implementation Date, Test Status, and Test Date will reflect the most recent updates.
+If your organization has multiple groups of assessments, the behavior of **Technical** actions (that is, actions affecting your entire organization) will change. Any duplicate actions across groups will be combined into one single action. That single action will contain all uploaded notes and evidence from the duplicate versions. With this change, technical actions will behave as they currently do when they belong to the same group. Any change made to the action in one group or assessment will now be reflected in all instances. The **Implementation Status**, **Implementation Dat**, **Test Status**, and **Test Date** will reflect the most recent updates.
 
 ## Language support
 
