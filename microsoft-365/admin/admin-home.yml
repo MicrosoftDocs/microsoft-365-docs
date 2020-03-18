@@ -1,0 +1,92 @@
+### YamlMime:Landing
+
+title: Microsoft 365 administrator documation # < 60 chars
+summary: Learn about resources available for Microsoft 365 administrators. # < 160 chars
+
+metadata:
+  title: Microsoft 365 administrator documation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about resources available for  Microsoft 365 administrators. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: o365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  ms.collection: 
+  - Adm_O365
+  - Adm_TOC
+  author: wingtofree #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-qingao #Required; microsoft alias of author; optional team alias.
+  ms.date: 03/05/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About admin center
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is admin center
+            url: admin-overview/admin-overview.md
+      - linkListType: whats-new
+        links:
+          - text: Get new features
+            url: manage/stay-on-top-of-updates.md
+
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Plan your setup
+            url: setup/plan-your-setup.md
+          - text: Set up Office 365
+            url: setup/setup.md
+          - text: Add a domain to Office 365
+            url: setup/add-domain.md
+          - text: Migrate email and contacts to Office 365
+            url: setup/migrate-email-and-contacts-admin.md
+          - text: Set up Office 365 file storage and sharing
+            url: setup/set-up-file-storage-and-sharing.md
+          - text: Add users
+            url: add-users/add-users.md
+          - text: Set up multi-factor authentication
+            url: security-and-compliance/set-up-multi-factor-authentication.md
+
+  # Card
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Fix Office install issues
+            url: https://support.office.com/article/troubleshoot-installing-office-35ff2def-e0b2-4dac-9784-4cf212c1f6c2
+          - text: Fix Outlook and Office 365 problems with the Microsoft Support and Recovery Assistant
+            url: https://support.office.com/article/about-the-microsoft-support-and-recovery-assistant-e90bb691-c2a7-4697-a94f-88836856c72f
+          - text: Fix email issues
+            url: https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues
+          - text: Fix OneDrive for Business sync issues
+            url: https://go.microsoft.com/fwlink/?linkid=866431
+
+  # Card
+  - title: Subscribe
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Buy a subscription from your free trial
+            url: https://docs.microsoft.com/microsoft-365/commerce/buy-a-subscription-from-your-free-trial
+          - text: Cancel your subscription
+            url: https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription?
+
+  # Card
+  - title: Learn more
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Microsoft Teams documentation
+            url: https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams
+          - text: Office 365 Enterprise documentation
+            url: https://docs.microsoft.com/Office365/Enterprise    
+          - text: Office 365 Training Center
+            url: https://support.office.com/office-training-center
+          - text: Get started with Microsoft 365
+            url: https://docs.microsoft.com/en-us/learn/m365/ 
