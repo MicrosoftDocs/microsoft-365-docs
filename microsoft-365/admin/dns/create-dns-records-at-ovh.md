@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at OVH for Office 365"
+title: "Create DNS records at OVH for Microsoft"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,10 +19,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
-description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at OVH for Office 365."
+description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at OVH for Microsoft."
 ---
 
-# Create DNS records at OVH for Office 365
+# Create DNS records at OVH for Microsoft
 
 [Check the Domains FAQ](../setup/domains-faq.md) if you don't find what you're looking for. 
   
@@ -30,19 +30,19 @@ If OVH is your DNS hosting provider, follow the steps in this article to verify 
   
 These are the main records to add. 
   
-- [Create DNS records at OVH for Office 365](#create-dns-records-at-ovh-for-office-365)
+- [Create DNS records at OVH for Microsoft](#create-dns-records-at-ovh-for-office-365)
     
-- [Add an MX record so email for your domain will come to Office 365](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
+- [Add an MX record so email for your domain will come to Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
     
-- [Add the CNAME records that are required for Office 365](#add-the-cname-records-that-are-required-for-office-365)
+- [Add the CNAME records that are required for Microsoft](#add-the-cname-records-that-are-required-for-office-365)
     
 - [Add a TXT record for SPF to help prevent email spam](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Add the two SRV records that are required for Office 365](#add-the-two-srv-records-that-are-required-for-office-365)
+- [Add the two SRV records that are required for Microsoft](#add-the-two-srv-records-that-are-required-for-office-365)
     
-After you add these records at OVH, your domain will be set up to work with Office 365 services.
+After you add these records at OVH, your domain will be set up to work with Microsoft services.
   
-To learn about webhosting and DNS for websites with Office 365, see [Use a public website with Office 365](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
+To learn about webhosting and DNS for websites with Microsoft, see [Use a public website with Microsoft](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
   
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -50,7 +50,7 @@ To learn about webhosting and DNS for websites with Office 365, see [Use a publi
 ## Add a TXT record for verification
 <a name="bkmk_txt"> </a>
 
-Before you use your domain with Office 365, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Office 365 that you own the domain.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
@@ -79,7 +79,7 @@ Before you use your domain with Office 365, we have to make sure that you own it
     
     |**Record type**|**Sub-domain**|**TTL**|**Value**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |(leave blank)  <br/> |3600 (seconds)  <br/> |MS=msxxxxxxxx  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
+    |TXT  <br/> |(leave blank)  <br/> |3600 (seconds)  <br/> |MS=msxxxxxxxx  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. Select **Confirm**. 
     
@@ -87,9 +87,9 @@ Before you use your domain with Office 365, we have to make sure that you own it
   
 8. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+When Microsoft finds the correct TXT record, your domain is verified.
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
     
@@ -108,7 +108,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
-## Add an MX record so email for your domain will come to Office 365
+## Add an MX record so email for your domain will come to Microsoft
 <a name="bkmk_mx"> </a>
 
 1. To get started, go to your domains page in OVH by using [this link](https://www.ovh.com/manager/). You'll be prompted to log in.
@@ -138,7 +138,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
     |**Record type**|**Sub-domain**|**TTL**|**Priority**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(leave blank)  <br/> |3600 (seconds﻿)  <br/> |10  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **Note:** Get your  *\<domain-key\>*  from your Office 365 account.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(leave blank)  <br/> |3600 (seconds﻿)  <br/> |10  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![OVH MX record for mail](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -156,7 +156,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
 10. Select **Confirm**.
     
-## Add the CNAME records that are required for Office 365
+## Add the CNAME records that are required for Microsoft
 <a name="bkmk_cname"> </a>
 
 1. To get started, go to your domains page in OVH by using [this link](https://www.ovh.com/manager/). You'll be prompted to log in.
@@ -207,7 +207,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Instead, add the required Office 365 values to the current record so that you have a  *single*  SPF record that includes both sets of values. 
+> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. 
   
 1. To get started, go to your domains page in OVH by using [this link](https://www.ovh.com/manager/). You'll be prompted to log in.
     
@@ -243,7 +243,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     ![OVH Add TXT record for SPF and Confirm](../../media/649eefeb-3227-49e3-98a0-1ce19c42fa54.png)
   
-## Add the two SRV records that are required for Office 365
+## Add the two SRV records that are required for Microsoft
 <a name="bkmk_srv"> </a>
 
 1. To get started, go to your domains page in OVH by using [this link](https://www.ovh.com/manager/). You'll be prompted to log in.

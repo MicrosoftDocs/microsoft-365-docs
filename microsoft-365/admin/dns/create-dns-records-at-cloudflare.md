@@ -62,7 +62,7 @@ To change your domain's name servers at your domain registrar's website yourself
 3. Save your changes.
     
 > [!NOTE]
-> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Office 365 email and other services will be all set to work with your domain. 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
 ## Add a TXT record for verification
 <a name="BKMK_verify"> </a>

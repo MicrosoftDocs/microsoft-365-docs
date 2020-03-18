@@ -51,7 +51,7 @@ For instructions, see [Add users individually or in bulk to Office 365 - Admin H
 
 Unless you sent it to their personal email address, print out the employee's Office 365 sign in name and password, and hand it to them. Or tell them the information over the phone.
   
-Because they won't yet have access to their Office 365 email, don't send the information to that email address.
+Because they won't yet have access to their email, don't send the information to that email address.
   
 ## Step 3: Explain where to sign in 
 

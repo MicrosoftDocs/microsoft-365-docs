@@ -46,7 +46,7 @@ Mail is delivered to the mail exchange server with the lowest preference number 
     
 ## How can I validate SPF records for my domain?
 
-It's important that you have or create **only one TXT record for SPF**. If you already have an SPF record, you should append the new Office 365 values to it, rather than create a new one. After you've added or updated your SPF record for Office 365 email, you should check to make sure that the syntax is correct with one of these tools: 
+It's important that you have or create **only one TXT record for SPF**. If you already have an SPF record, you should append the new Office 365 values to it, rather than create a new one. After you've added or updated your SPF record for Microsoft email, you should check to make sure that the syntax is correct with one of these tools: 
   
 - [SPF Record Testing Tools](http://www.kitterman.com/spf/validate.html)
     
@@ -435,7 +435,7 @@ You can, but there are limitations:
         
     2. Perform the following tests:
         
-    3. Test local Office 365 email. For example, send an email to User B. This email should be delivered immediately. In this scenario, the message will not be routed to User B's mailbox on your original server because Office 365 sees the mailbox as being local.
+    3. Test local Microsoft email. For example, send an email to User B. This email should be delivered immediately. In this scenario, the message will not be routed to User B's mailbox on your original server because Office 365 sees the mailbox as being local.
         
     4. Test email to someone who's on the other email system. For example, send an email to User C. This email should be delivered to User C's mailbox on your original mail server.
         

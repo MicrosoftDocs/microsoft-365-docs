@@ -1,6 +1,6 @@
 ---
 title: EmailEvents table in the advanced hunting schema
-description: Learn about events associated with Office 365 emails in the EmailEvents table of the advanced hunting schema
+description: Learn about events associated with Microsoft emails in the EmailEvents table of the advanced hunting schema
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailEvents, network message id, sender, recipient, attachment id, attachment name, malware verdict, phishing verdict, attachment count, link count, url count
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

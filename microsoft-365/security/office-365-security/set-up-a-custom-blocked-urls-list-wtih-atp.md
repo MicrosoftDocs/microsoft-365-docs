@@ -28,7 +28,7 @@ With [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), your orga
   
 ![This site is blocked](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
-The blocked URLs list is defined by your organization's Office 365 security team, and that list applies to everyone in the organization who is covered by Office 365 ATP Safe Links policies. 
+The blocked URLs list is defined by your organization's Microsoft 365 for business security team, and that list applies to everyone in the organization who is covered by Office 365 ATP Safe Links policies. 
   
 Read this article to learn how to set up your organization's custom blocked URLs list for [ATP Safe Links in Office 365](atp-safe-links.md).
   

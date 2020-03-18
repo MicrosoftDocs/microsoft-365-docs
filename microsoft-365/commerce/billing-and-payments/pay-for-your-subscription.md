@@ -88,7 +88,7 @@ If your subscription costs over a certain amount of money (this amount varies by
 If you pay by invoice for your subscription, you'll get an email that says your billing statement is ready to view. This email does not contain a copy of your billing statement. However, you can also choose to [Receive a copy of your billing statement in email](#receive-a-copy-of-your-billing-statement-in-email). Your billing statement includes details about your options for making a payment. If you enter a purchase order (PO) number when you buy a subscription, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
 
 > [!NOTE]
-> By default, your organization's billing notifications are sent to the Office 365 email address and the alternate email address of every global and billing admin in your organization. To change the alternate email address, see [Change your billing addresses](change-your-billing-addresses.md).
+> By default, your organization's billing notifications are sent to the Microsoft email address and the alternate email address of every global and billing admin in your organization. To change the alternate email address, see [Change your billing addresses](change-your-billing-addresses.md).
 
 ### Can I pay my bill online?
 

@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at Yahoo! Small Business for Office 365"
+title: "Create DNS records at Yahoo! Small Business for Microsoft"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,10 +19,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
-description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Yahoo! Small Business for Office 365."
+description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Yahoo! Small Business for Microsoft."
 ---
 
-# Create DNS records at Yahoo! Small Business for Office 365
+# Create DNS records at Yahoo! Small Business for Microsoft
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
   
@@ -84,5 +84,5 @@ You must create your Aabaco account before you can [create DNS records](../get-h
     
     ![The sign-in page for Aabaco Small Business](../../media/4ef3cfc3-26da-4e03-932b-9346ef217848.png)
   
-Now that you have created your Aabaco account, you can [Create DNS records at Aabaco Small Business for Office 365](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Now that you have created your Aabaco account, you can [Create DNS records at Aabaco Small Business for Microsoft](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
   
