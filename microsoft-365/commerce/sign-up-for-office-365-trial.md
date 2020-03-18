@@ -46,4 +46,4 @@ If you decide to cancel your trial before the free trial period ends, go to the 
 
 ## See also
 
-[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

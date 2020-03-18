@@ -99,4 +99,4 @@ Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to report an
   
 ## See also
 
-[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

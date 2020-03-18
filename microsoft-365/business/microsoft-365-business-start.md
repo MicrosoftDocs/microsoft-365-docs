@@ -107,4 +107,4 @@ If you retain a local Active Directory that contains some on-premises resources 
   
 [Manage Microsoft 365 Business](manage.md)[Migrate to Microsoft 365 Business](migrate-to-microsoft-365-business.md)
 
-[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

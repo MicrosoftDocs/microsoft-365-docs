@@ -106,7 +106,7 @@ Check out the small business admin training that we released in January:
 - [Get help or support](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
 - [Delete a user](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
 - [Choose a Microsoft subscription](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Overview of Microsoft 365 Business security](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [Overview of Microsoft 365 for business security](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## November and December 2019
 
