@@ -82,7 +82,7 @@ Now that you're the admin, you may want to do the following:
 |Add or remove licenses  <br/> |You can [add more licenses](../../commerce/licenses/buy-licenses.md) for users who aren't using Office 365 yet, or [remove licenses from users](../manage/remove-licenses-from-users.md) that you don't want using your organization's Office 365 subscription.  <br/> |
 |Contact others who already signed up  <br/> |Reach out to the other users and let them know that you're managing their Office 365 subscription and that they've been upgraded. [Follow these steps](../add-users/add-users.md) to see a list of **Active Users** and their email addresses.  <br/> |
 |Start using Office 365  <br/> |Visit the [Office 365 Learning Center](https://support.office.com/learn/office365-for-business) and learn how to sign in, check email, share documents, and more. You and your users can use this site to get started with Office 365.  <br/> |
-|Manage your Office 365 subscription  <br/> |Visit [Office 365 Admin help center](../admin-home.md) and learn common administrative tasks like adding and removing users, resetting passwords, and setting up mobile devices.  <br/> |
+|Manage your Office 365 subscription  <br/> |Visit [Office 365 Admin help center](../admin-home.yml) and learn common administrative tasks like adding and removing users, resetting passwords, and setting up mobile devices.  <br/> |
 
 ## Still need help?
 

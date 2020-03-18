@@ -1,5 +1,5 @@
 - name: Admin home
-  href: admin-home.md
+  href: admin-home.yml
   items: 
     - name: Overview
       items: 
@@ -86,7 +86,7 @@
     - name: Email
       items: 
         - name: Email in Office 365
-          href: email/email.md
+          href: email/email.yml
         - name: Office 365 user email settings
           href: email/office-365-user-email-settings.md
         - name: Add another email alias for a user
@@ -154,7 +154,7 @@
     - name: Manage
       items: 
         - name: Manage Office 365
-          href: manage/manage.md
+          href: manage/manage.yml
         - name: Change contact preferences
           href: manage/change-contact-preferences.md
         - name: Change address, contact, and more
@@ -202,7 +202,7 @@
     - name: Domains
       items: 
         - name: Domains in Office 365
-          href: get-help-with-domains/get-help-with-domains.md
+          href: get-help-with-domains/get-help-with-domains.yml
         - name: What is a domain?
           href: get-help-with-domains/what-is-a-domain.md
         - name: Buy a domain name
