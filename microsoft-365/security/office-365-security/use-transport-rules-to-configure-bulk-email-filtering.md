@@ -33,7 +33,7 @@ This topic explains how create these mail flow rules in the Exchange admin cente
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- For more information about mail flow rules in Exchange Online, see the following topics:
+- For more information about mail flow rules in Exchange Online and standalone EOP, see the following topics:
 
   - [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
@@ -41,11 +41,11 @@ This topic explains how create these mail flow rules in the Exchange admin cente
 
   - [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- The list of words and text patterns that are used to identify bulk mail isn't exhaustive; you can add and remove entries as necessary. However, it's a good starting point.
+- The list of words and text patterns that are used to identify bulk mail in the examples aren't exhaustive; you can add and remove entries as necessary. However, they are a good starting point.
 
 - The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.
 
-- The following procedures mark a bulk message as spam for your entire organization. However, you can add another condition to apply these rules only to specific recipients, so you can use aggressive filtering on a select few users who are highly targeted, while the rest of your users (who mostly get the bulk email they signed up for) aren't impacted.
+- The following procedures mark a bulk message as spam for your entire organization. However, you can add another condition to apply these rules only to specific recipients, so you can use aggressive filtering on a few, highly targeted users, while the rest of your users (who mostly get the bulk email they signed up for) aren't impacted.
 
 ## Use the EAC to create mail flow rules that filter bulk email
 
@@ -59,7 +59,7 @@ This topic explains how create these mail flow rules in the Exchange admin cente
 
    - Click **More Options**.
 
-   - **Apply this rule if**: Configure one of the following settings:
+   - **Apply this rule if**: Configure one of the following settings to look for content in messages using regular expressions (RegEx) or words or phrases:
 
      - **The subject or body** \> **subject or body matches these text patterns**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat as many times as necessary.
 
@@ -125,7 +125,7 @@ This topic explains how create these mail flow rules in the Exchange admin cente
 
    - **Do the following**: Select **Modify the message properties** \> **set the spam confidence level (SCL)**. In the **Specify SCL** dialog that appears, configure one of the following settings:
 
-     - To mark messages as **Spam**, select **5** or **6**. The action that you've configured for **Spam** filtering verdicts in your anti-spam policies is applied to the messages (the default value is **Move message to Junk Email folder**).
+     - To mark messages as **Spam**, select **6**. The action that you've configured for **Spam** filtering verdicts in your anti-spam policies is applied to the messages (the default value is **Move message to Junk Email folder**).
 
      - To mark messages as **High confidence spam** select **9**. The action that you've configured for **High confidence spam** filtering verdicts in your anti-spam policies is applied to the messages (the default value is **Move message to Junk Email folder**).
 

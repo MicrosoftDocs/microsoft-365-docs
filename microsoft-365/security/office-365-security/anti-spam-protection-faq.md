@@ -41,13 +41,13 @@ A. A zero-day spam variant is a first generation, previously unknown variant of 
 
 ## Q. Do I need to configure the service to provide anti-spam protection?
 
-A. After you sign up for the service and add your domain, anti-spam filtering is automatically enabled. By default, spam filtering is tuned to protect you without needing any additional configuration (aside from the previously noted exception for standalone EOP standalone customers). As an admin, you can edit the default spam filtering settings to best meet the needs of your organization. For greater granularity, you can also create anti-spam policies and outbound anti-spam policies that are applied to specified users, groups, or domains in your organization. Custom policies always take precedence over the default policy, but you can change the priority (that is, the running order) of your custom policies.
+A. After you sign up for the service and add your domain, spam filtering is automatically enabled. By default, spam filtering is tuned to protect you without needing any additional configuration (aside from the previously noted exception for standalone EOP standalone customers in hybrid environments). As an admin, you can edit the default spam filtering settings to best meet the needs of your organization. For greater granularity, you can also create anti-spam policies and outbound anti-spam policies that are applied to specified users, groups, or domains in your organization. Custom policies always take precedence over the default policy, but you can change the priority (that is, the running order) of your custom policies.
 
 For more information, see the following topics:
 
 [Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md)
 
-[Configure the connection filter policy](configure-the-connection-filter-policy.md)
+[Configure anti- policy](configure-the-connection-filter-policy.md)
 
 [Configure your spam filter policies](configure-your-spam-filter-policies.md)
 
@@ -59,7 +59,7 @@ A. It may take up to 1 hour for the changes to take effect.
 
 ## Q. Is bulk email filtering automatically enabled?
 
-A. Yes. For more information about bulk email, see [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+A. Yes. For more information about bulk email, see [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
 ## Q. Does the service provide URL filtering?
 
@@ -91,13 +91,13 @@ You can send a notification to a specified email address when a sender is blocke
 
 A. Yes. Although we recommend that you point your MX record to Office 365, we realize that there are legitimate business reasons to route your email to somewhere other than Office 365 first.
 
-- **Inbound**: Change your MX records to point to the third-party provider, and then redirect the messages to EOP for additional processing. For more information, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- **Inbound**: Change your MX records to point to the third-party provider, and then redirect the messages to EOP for additional processing. For more information, see [Enhanced Filtering for connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 - **Outbound**: Configure smart host routing from Office 365 to the destination third-party provider.
 
 ## Q. Does Microsoft have any documentation about how I can protect myself from phishing scams?
 
-A. Yes we do, please read [Protect your privacy on the internet](https://support.microsoft.com/help/4091455)
+A. Yes. For more information, see [Protect your privacy on the internet](https://support.microsoft.com/help/4091455)
 
 ## Q. Are spam and malware messages being investigated as to who sent them, or being transferred to law enforcement entities?
 

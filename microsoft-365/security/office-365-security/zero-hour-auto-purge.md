@@ -1,5 +1,5 @@
 ---
-title: "Zero-hour auto purge (ZAP) - protection against spam and malware"
+title: "Zero-hour auto purge (ZAP) - retroactive protection against spam, malware, and phishing."
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,20 +18,20 @@ search.appverid:
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
-description: "Zero-hour auto purge (ZAP) is an email protection feature that detects messages with spam or malware that have already been delivered to your users' inboxes, and then renders the malicious content harmless. How ZAP does this depends on the type of malicious content detected."
+description: "Zero-hour auto purge (ZAP) is an email protection feature in Office 365 that detects spam, malware, or phishing messages that have already been delivered to Exchange Online. How ZAP does this depends on the type of malicious content detected."
 ---
 
 # Zero-hour auto purge (ZAP) - protection against spam and malware in Office 365
 
 ## Overview
 
-Zero-hour auto purge (ZAP) is an email protection feature in Office 365 that retroactively detects and neutralizes malicious messages (phish, spam, or malware) that have already been delivered to the Inbox of Exchange Online mailboxes. How ZAP does this depends on the type of malicious content. Messages can be zapped due to content, URLs, or attachments.
+Zero-hour auto purge (ZAP) is an email protection feature in Office 365 that retroactively detects and neutralizes malicious phishing, spam, or malware messages that have already been delivered to Exchange Online mailboxes.
 
 ZAP is available with the default Exchange Online Protection (EOP) that's included with any Office 365 subscription that contains Exchange Online mailboxes. ZAP doesn't work in standalone EOP environments that protect on-premises Exchange mailboxes.
 
 ## How ZAP works
 
-Office 365 updates spam and malware signatures in real-time on a daily basis. However, users can still receive malicious messages in their Inbox for a variety of reasons, including if content is weaponized after being delivered to users. ZAP addresses this issue by continually monitoring updates to the Office 365 spam and malware signatures. ZAP can find and remove messages that are already in a user's Inbox.
+Office 365 updates spam and malware signatures in real-time on a daily basis. However, users can still receive malicious messages for a variety of reasons, including if content is weaponized after being delivered to users. ZAP addresses this issue by continually monitoring updates to the Office 365 spam and malware signatures. ZAP can find and remove messages that are already in a user's mailbox.
 
 The ZAP action is seamless for the user; they aren't notified if a message is detected and moved.
 
@@ -45,102 +45,67 @@ Malware ZAP is enabled by default in anti-malware policies. For more information
 
 ### Phish ZAP
 
-For **read or unread messages** that are identified as phish after delivery, the ZAP outcome depends on the action that's configured for a **Phishing email** spam filtering verdict in the applicable anti-spam policy. The available spam filtering verdict actions for phish and their possible ZAP outcomes are described in the following list:
+For **read or unread messages** that are identified as phish after delivery, the ZAP outcome depends on the action that's configured for a **Phishing email** filtering verdict in the applicable anti-spam policy. The available filtering verdict actions for phish and their possible ZAP outcomes are described in the following list:
 
 - **Add X-Header**, **Prepend subject line with text**: ZAP takes no action on the message.
 
-- **Move message to Junk Email**: ZAP moves the message to the Junk Email folder as long as the 
+- **Move message to Junk Email**: ZAP moves the message to the Junk Email folder, as long as the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Redirect message to email address**, **Delete message**, **Quarantine message**: ZAP quarantines the message. Only admins can view and manage phish messages from quarantine.
+- **Redirect message to email address**, **Delete message**, **Quarantine message**: ZAP quarantines the message. Only admins can view and manage phish quarantined messages.
 
-By default, phish ZAP is enabled in anti-spam policies, and the default action for the spam filtering verdict **Phishing email** is **Quarantine message**, which means phish ZAP quarantines the message.
+By default, phish ZAP is enabled in anti-spam policies, and the default action for the **Phishing email** filtering verdict is **Quarantine message**, which means phish ZAP quarantines the message by default.
 
 For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
 ### Spam ZAP
 
-For **unread messages** that are identified as spam after delivery, the ZAP outcome depends on the action that's configured for a **Spam** spam filtering verdict in the applicable anti-spam policy. The available spam filtering verdict actions for spam and their possible ZAP outcomes are described in the following list:
+For **unread messages** that are identified as spam after delivery, the ZAP outcome depends on the action that's configured for the **Spam** filtering verdict in the applicable anti-spam policy. The available filtering verdict actions for spam and their possible ZAP outcomes are described in the following list:
 
 - **Add X-Header**, **Prepend subject line with text**: ZAP takes no action on the message.
 
-- **Move message to Junk Email**: ZAP moves the message to the Junk Email folder.
+- **Move message to Junk Email**: ZAP moves the message to the Junk Email folder, as long as the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Redirect message to email address**, **Delete message**, **Quarantine message**: ZAP quarantines the message. End-users and admins can view and manage spam messages from quarantine.
+- **Redirect message to email address**, **Delete message**, **Quarantine message**: ZAP quarantines the message. End-users can view and manage their own spam quarantined messages.
 
-By default, spam ZAP is enabled in anti-spam policies, and the default action for the spam filtering verdict **Spam** is **Move message to Junk Email folder**, which means spam ZAP moves **unread** messages to the Junk Email folder.
+By default, spam ZAP is enabled in anti-spam policies, and the default action for the **Spam** filtering verdict is **Move message to Junk Email folder**, which means spam ZAP moves **unread** messages to the Junk Email folder by default.
 
 For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
 ### ZAP considerations for Office 365 Advanced Threat Protection (ATP)
 
-ZAP will not quarantine any message that's in the process of [Dynamic Delivery](dynamic-delivery-and-previewing.md) scanning, or where malware filtering has already replaced the attachment with the **Malware Alert Text.txt** file. If a phish or spam signal is received for these types of messages and the Spam policy / Phish action is set to take some action (Move to Junk, Redirect, Delete, Quarantine) then ZAP will default to a 'Move to Junk' action.
-
-
-ZAP to take a 'Move to Junk' action on a message, the user must have their junk email protection enabled, with the default junk mail settings. (See [Change the level of protection in the Junk Email Filter](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b) for details about user options in Outlook.)
-
-
-In Office 365 Advanced Thread Protection (ATP), if we get a malware signal for a message that's in the process of [Dynamic Delivery](dynamic-delivery-and-previewing.md), ZAP will move the message to the Junk Email folder. This allows Dynamic Delivery to finish scanning the message, and to take the appropriate action on the message.
-
+ZAP will not quarantine any message that's in the process of [Dynamic Delivery](dynamic-delivery-and-previewing.md) scanning, or where malware filtering has already replaced the attachment with the **Malware Alert Text.txt** file. If a phish or spam signal is received for these types of messages, and the filtering verdict in the anti-spam policy is set to take some action on the message (Move to Junk, Redirect, Delete, Quarantine) then ZAP will default to a 'Move to Junk' action.
 
 ## How to see if ZAP moved your message
 
-To determine if ZAP moved your message, you can use either the [Threat Protection Status report](view-email-security-reports.md#threat-protection-status-report) or [Threat Explorer (and real-time detections)](threat-explorer.md). Note that as a system action, ZAP is not logged in exchange mailbox audit logs.
+To determine if ZAP moved your message, you can use either the [Threat Protection Status report](view-email-security-reports.md#threat-protection-status-report) or [Threat Explorer (and real-time detections)](threat-explorer.md). Note that as a system action, ZAP is not logged in the Exchange mailbox audit logs.
 
-## Disable ZAP
+## ZAP FAQ
 
-To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+### Q: What happens if a legitimate message is moved to the Junk Email folder?
 
-### Disable Malware ZAP**
+A: You should follow the normal reporting process for [false-positives](prevent-email-from-being-marked-as-spam.md). The only reason the message would be moved from the Inbox to the Junk Email folder would be because the service has determined that the message was spam or malicious.
 
-Malware ZAP can be disabled through the *ZapEnabled* parameter on the [Set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy) cmdlet in Exchange Online PowerShell or Exchange Online Protection PowerShell. Malware ZAP can also be enabled or disabled by editing the Malware Policy in the Security and Compliance Center.
+### Q: What if I use the Office 365 quarantine instead of the Junk Mail folder?
 
-This example disables ZAP in the malware filter policy named "Test".
+A: ZAP will take action on a message based on the configuration your anti-spam policies as described earlier in this topic.
 
-```Powershell
-Set-MalwareFilterPolicy -Identity Test -ZapEnabled $false
-```
+### Q: What if I'm using mail flow rules or allowed/blocked sender lists?
 
-For detailed syntax and parameter information, see [Set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy).
+A: Mail flow rules or block and allow organizational settings take precedence. These messages are excluded from ZAP.
 
-### Disable Phish ZAP and Spam ZAP
+### Q: What if a message is moved to another folder (e.g. Inbox rules)?
 
-To disable Phish and Spam ZAP for your O365 tenant, or a set of users, use the *PhishZapEnabled* and *SpamZapEnabled* parameters of [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy), an EOP cmdlet.
+A: ZAP still works as long as the message hasn't been deleted or moved to the Junk Email folder.
 
-In the following example, phish and spam ZAP are disabled for a content filter policy named "Test".
+### Q: Does ZAP change the message header?
 
-```Powershell
-Set-HostedContentFilterPolicy -Identity Test -PhishZapEnabled $false -SpamZapEnabled $false
-```
+A: A ZAP action does not make any changes to the message header.
 
-For detailed syntax and parameter information, see [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy).
+### Q: How does ZAP affect mailboxes on hold?
 
-## FAQ
+A: ZAP won't quarantine messages from mailboxes on hold. ZAP can move messages to the Junk Email folder based on the action that's configured for a spam or phishing verdict in anti-spam policies.
 
-### What happens if a legitimate message is moved to the junk mail folder?
-
-You should follow the normal reporting process for [false-positives](prevent-email-from-being-marked-as-spam.md). The only reason the message would be moved from the inbox to the junk mail folder would be because the service has determined that the message was spam or malicious.
-
-### What if I use the Office 365 quarantine instead of the junk mail folder?
-
-ZAP will take action according to the configuration of the Phish and Spam action settings in your Anti-spam policy. See above for more details on Malware, Phish, and Spam ZAP.
-
-### What if I have a custom mail flow rule (Block/ Allow Rule)?
-
-Rules created by admins (mail flow rules) or Block and Allow rules take precedence. Such messages are excluded from the feature criteria so the mail flow will follow the rule action (Block/Allow Rule).
-
-### What if a message is moved to another folder (e.g. Inbox rule)?
-
-ZAP still works in this case, unless the message has been deleted or is in Junk.
-
-### Does ZAP change the email header?
-
-A ZAP action does not make any changes to an email's header.
-
-### How does ZAP affect mailboxes on Hold?
-
-ZAP will not remove messages from mailboxes on hold and so will not take a Move to Quarantine action on messages. Messages will still be moved to the Junk folder if specified by the policy.
-
-[Click here for more information on mailbox holds.](https://docs.microsoft.com/exchange/policy-and-compliance/holds/holds?view=exchserver-2019)
+For more information about holds in Exchange Online, see [In-Place Hold and Litigation Hold in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds).
 
 ## Related Topics
 
