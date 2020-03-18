@@ -19,7 +19,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Work with advanced hunting query results in Microsoft Threat Protection
+# Work with advanced hunting query results
 
 **Applies to:**
 - Microsoft Threat Protection
@@ -34,13 +34,13 @@ While you can construct your [advanced hunting](advanced-hunting-overview.md) qu
 - Tweak your queries directly from the results or apply filters
 
 ## View query results as tables or charts
-By default, advanced hunting displays query results as tabular data. You can display the same data as a visualization or chart to extract additional insights. 
+By default, advanced hunting displays query results as tabular data. You can display the same data as a visualization or chart. 
 
-To render charts, advanced hunting automatically identifies columns of interest and numeric values that to aggregate. Advanced hunting supports the following views: 
+To render charts, advanced hunting automatically identifies columns of interest and numeric values to aggregate. Advanced hunting supports the following views: 
 
 | View type | Description |
-| -- | -- | -- |
-| **Table** | N/A, displays the query results in tabular format | N/A |
+| -- | -- |
+| **Table** | N/A, displays the query results in tabular format |
 | **Column chart** | Renders a series of unique items on the x-axis as vertical bars whose lengths represent numeric values from another column |
 | **Stacked column chart** | Renders a series of unique items on the x-axis as stacked vertical bars whose lengths represent numeric values from one or more other columns |
 | **Pie chart** | Renders sectional pies representing unique items. The size of each pie represents numeric values from another column. |
