@@ -77,30 +77,31 @@ Cortana sends a personalized briefing email with tasks and commitments you made 
 
 Admins can configure Briefing for their organization using a [toggle](https://docs.microsoft.com/en-us/briefing/be-admin) in the Microsoft 365 admin center. Individuals can opt out of Cortana's Briefing email by selecting Unsubscribe in the footer of the message. We'll continue to introduce more Cortana in Office 365 features to help increase your organization's productivity. Learn more about [Microsoft Compliance offerings](https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-home).
 
-### How is Cortana in Office 365 different from other Cortana experiences I may have used?**
+## How is Cortana in Office 365 different from other Cortana experiences I may have used?**
 
-Here are the two ways to think of how Cortana works in your enterprise:
+Here are the two ways to think of how Cortana works in your enterprise.
 
-1. **New experiences for organizations with Cortana in Office 365**: Cortana in Office 365 services are designed to meet the security and compliance needs of organizations:
+**New experiences for organizations with Cortana in Office 365: Cortana in Office 365 services are designed to meet the security and compliance needs of organizations.**
 
-a.    This is a new service and is discussed here in this document.
+1. This is a new service and is discussed here in this document.
 
-b.    For services subject to the Online Services Terms, Microsoft is a data processor: Microsoft collects and uses Customer Data from customers only to provide the online services requested by our customers and for the purposes instructed by our customers. Under the EU's General Data Protection Regulation (GDPR), the customer is the data controller of their data. See the [Online Services Terms](https://www.microsoft.com/en-us/licensing/product-licensing/products) and [Introducing more privacy transparency for our commercial cloud customers](https://blogs.microsoft.com/eupolicy/2019/11/18/introducing-privacy-transparency-commercial-cloud-customers/).
+2. For services subject to the Online Services Terms, Microsoft is a data processor: Microsoft collects and uses Customer Data from customers only to provide the online services requested by our customers and for the purposes instructed by our customers. Under the EU's General Data Protection Regulation (GDPR), the customer is the data controller of their data. See the [Online Services Terms](https://www.microsoft.com/en-us/licensing/product-licensing/products) and [Introducing more privacy transparency for our commercial cloud customers](https://blogs.microsoft.com/eupolicy/2019/11/18/introducing-privacy-transparency-commercial-cloud-customers/).
 
-c.    As an example, Play My Emails is a Cortana service that your users can connect to through Outlook for iOS and utilizes Cortana in Office 365.
+3. As an example, Play My Emails is a Cortana service that your users can connect to through Outlook for iOS and utilizes Cortana in Office 365.
 
-d.    Admins will always have controls for optional connected experiences for Cortana, similar to optional connected experiences while using Office ProPlus applications.
+4. Admins will always have controls for optional connected experiences for Cortana, similar to optional connected experiences while using Office ProPlus applications.
 
-2. **Existing services for consumers**: Cortana optional connected services are designed primarily for consumer experiences and are currently delivered in Windows 10 (version 1909 and earlier) and the Cortana app on iOS and Android.
+**Existing services for consumers: Cortana optional connected services are designed primarily for consumer experiences and are currently delivered in Windows 10 (version 1909 and earlier) and the Cortana app on iOS and Android.**
 
-a.    These experiences enable features such as weather, news, and traffic.
+1. These experiences enable features such as weather, news, and traffic.
 
-b.    admins can control whether Cortana in Windows 10 (version 1909 and earlier) and the Cortana app on iOS and Android are able to allow Cortana to connect to Office 365 tenant data.
+2. Admins can control whether Cortana in Windows 10 (version 1909 and earlier) and the Cortana app on iOS and Android are able to allow Cortana to connect to Office 365 tenant data.
 
+**Turn off Cortana access to Microsoft hosted data**
 1. In the Microsoft 365 admin center, select **Settings** > **Settings** and select **Cortana**.
 
 2. Select the checkbox for **Allow Cortana optional connected experiences to use your organizations's Microsoft hosted data** to disable Cortana connected experiences.
 
 3. Select **Save changes**.
 
-c.    For services governed by the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?LinkId=2109174) and [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement), Microsoft is the data controller. As the data controller, Microsoft uses data to improve products and services in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement).
+For services governed by the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?LinkId=2109174) and [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement), Microsoft is the data controller. As the data controller, Microsoft uses data to improve products and services in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement).
