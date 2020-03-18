@@ -68,9 +68,13 @@
                 - name: Prioritize incidents
                   href: mtp/incident-queue.md
                 - name: Investigate incidents
-                  href: mtp/investigate-incidents.md
-                - name: Manage incidents
-                  href: mtp/manage-incidents.md
+                  items:
+                    - name: Investigate incidents
+                      href: mtp/investigate-incidents.md
+                    - name: Manage incidents
+                      href: mtp/manage-incidents.md
+                    - name: Machine profile page
+                      href: mtp/machine-profile.md
             - name: Automated investigation and response
               items: 
                 - name: AIR overview
@@ -383,7 +387,7 @@
                 - name: View details and results of an automated investigation
                   href: ./office-365-security/air-view-investigation-results.md
                 - name: Review and approve (or reject) pending actions
-                  href: ./office-365-security/air-remediation-actions.md
+                  href: ./office-365-security/air-review-approve-pending-completed-actions.md
                 - name: Integrate AIR with a custom solution or third-party solution
                   href: ./office-365-security/air-custom-reporting.md
             - name: Detect and address compromised user accounts quickly
@@ -561,9 +565,6 @@
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
                 - name: Quarantine
                   href: ./office-365-security/quarantine.md
-                  items: 
-                    - name: Find and release quarantined messages as an administrator
-                      href: ./office-365-security/find-and-release-quarantined-messages-as-an-administrator.md
                 - name: Troubleshooting and support information
                   href: ./office-365-security/troubleshooting-and-support-information.md
                   items: 
