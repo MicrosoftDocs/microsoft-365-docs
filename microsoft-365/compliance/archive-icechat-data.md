@@ -98,11 +98,11 @@ The last step is to create an ICE Chat connector in the Microsoft 365 compliance
 
 6. After the connection is validated, click **Next**.
 
-7. On the **User mapping** page, enable automatic user mapping and provide custom user mapping as required
+7. On the **Map external users to Microsoft 365 users** page, enable automatic user mapping and provide custom user mapping as required. You can download a copy of the user mapping CSV file on this page. You can add the user mappings to the file and then upload it.
 
    > [!NOTE]
-   > As previously explained, custom mapping file CSV file contains the ICE Chat UUID and corresponding Microsoft 365 mailbox address for each user. If you enable automatic user mapping and provide a custom mapping, for every chat item, the connector will first look at custom mapping file. If it doesn't find a valid Microsoft 365 user that corresponds to a user's ICE Chat UUID, the connector will import the item to the mailboxes for the users specified in the *SenderEmail* and *RecipientEmail* properties of the chat item. If the connector doesn't find a valid Microsoft 365 user via automatic or custom user mapping, the item won't be imported.
+   > As previously explained, custom mapping file CSV file contains the ICE Chat UUID and corresponding Microsoft 365 mailbox address for each user. If you enable automatic user mapping and provide a custom mapping, for every chat item, the connector will first look at custom mapping file. If it doesn't find a valid Microsoft 365 user that corresponds to a user's ICE Chat UUID, the connector will import the item to the mailboxes for the users specified in the *SenderEmail* and *RecipientEmail* properties of the chat item. If the connector doesn't find a valid Microsoft 365 user by either automatic or custom user mapping, the item won't be imported.
 
-8. Click **Next**, review your settings, and then click **Prepare** to create the connector.
+8. Click **Next**, review your settings, and then click **Finish** to create the connector.
 
 9. Go to the **Data connectors** page to see the progress of the import process for the new connector.
