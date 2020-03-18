@@ -85,6 +85,9 @@ If you choose to include or exclude specific SharePoint sites or OneDrive accoun
   
 ### Rules
 
+> [!NOTE]
+> The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
+
 Rules are what enforce your business requirements on your organization's content. A policy contains one or more rules, and each rule consists of conditions and actions. For each rule, when the conditions are met, the actions are taken automatically. Rules are executed sequentially, starting with the highest-priority rule in each policy.
   
 A rule also provides options to notify users (with policy tips and email notifications) and admins (with email incident reports) that content has matched the rule.
@@ -551,4 +554,3 @@ However, DLP reports need pull data from across Office 365, including Exchange O
     
 - [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
     
-
