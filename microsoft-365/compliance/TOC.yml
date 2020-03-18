@@ -259,8 +259,14 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Retain data
       items: 
-        - name: Retention policies
+        - name: Use retention policies for stored content
           href: retention-policies.md
+        - name: Retention policies for SharePoint
+          href: retention-policies-sharepoint.md
+        - name: Retention policies for Microsoft Teams
+          href: retention-policies-teams.md
+        - name: Retention policies for Exchange
+          href: retention-policies-exchange.md
         - name: File plan manager
           href: file-plan-manager.md
         - name: Retention labels
