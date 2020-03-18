@@ -68,9 +68,13 @@
                 - name: Prioritize incidents
                   href: mtp/incident-queue.md
                 - name: Investigate incidents
-                  href: mtp/investigate-incidents.md
-                - name: Manage incidents
-                  href: mtp/manage-incidents.md
+                  items:
+                    - name: Investigate incidents
+                      href: mtp/investigate-incidents.md
+                    - name: Manage incidents
+                      href: mtp/manage-incidents.md
+                    - name: Machine profile page
+                      href: mtp/machine-profile.md
             - name: Automated investigation and response
               items: 
                 - name: AIR overview
