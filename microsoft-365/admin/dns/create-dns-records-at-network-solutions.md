@@ -32,13 +32,13 @@ These are the main records to add. Follow the steps below or [watch the video](h
   
 - [Add a TXT record for verification](#add-a-txt-record-for-verification)
     
-- [Add an MX record so email for your domain will come to Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
+- [Add an MX record so email for your domain will come to Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
-- [Add the CNAME records that are required for Microsoft](#add-the-cname-records-that-are-required-for-office-365)
+- [Add the CNAME records that are required for Microsoft](#add-the-cname-records-that-are-required-for-microsoft)
     
 - [Add a TXT record for SPF to help prevent email spam](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Add the two SRV records that are required for Microsoft](#add-the-two-srv-records-that-are-required-for-office-365)
+- [Add the two SRV records that are required for Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
 After you add these records at Network Solutions, your domain will be set up to work with Microsoft services.
   

@@ -30,15 +30,15 @@ If OVH is your DNS hosting provider, follow the steps in this article to verify 
   
 These are the main records to add. 
   
-- [Create DNS records at OVH for Microsoft](#create-dns-records-at-ovh-for-office-365)
+- [Create DNS records at OVH for Microsoft](#create-dns-records-at-ovh-for-microsoft)
     
-- [Add an MX record so email for your domain will come to Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
+- [Add an MX record so email for your domain will come to Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
-- [Add the CNAME records that are required for Microsoft](#add-the-cname-records-that-are-required-for-office-365)
+- [Add the CNAME records that are required for Microsoft](#add-the-cname-records-that-are-required-for-microsoft)
     
 - [Add a TXT record for SPF to help prevent email spam](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Add the two SRV records that are required for Microsoft](#add-the-two-srv-records-that-are-required-for-office-365)
+- [Add the two SRV records that are required for Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
 After you add these records at OVH, your domain will be set up to work with Microsoft services.
   

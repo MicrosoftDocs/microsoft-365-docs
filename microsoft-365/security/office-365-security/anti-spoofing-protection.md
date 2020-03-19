@@ -325,7 +325,7 @@ However, as an administrator, you can specify which senders are permitted to sen
 
 This method can be used to resolve intra-org spoofing, and cross-domain spoofing in cases where you own or interact with multiple tenants. It also helps resolve cross-domain spoofing where you send to other customers within Office 365, and also third parties that are hosted in other providers.
 
-For more details, see [Customers of Microsoft 365 for business](#customers-of-office-365).
+For more details, see [Customers of Microsoft 365 for business](#customers-of-microsoft-365).
 
 #### Method 2 - Use Spoof intelligence to configure permitted senders of unauthenticated email
 
@@ -369,7 +369,7 @@ If you use this method, it will skip spam and some of the phish filtering, but n
 
 #### Method 4 - Contact the sender and ask them to set up email authentication
 
-Because of the problem of spam and phishing, Microsoft recommends all senders set up email authentication. If you know an administrator of the sending domain, contact them and request that they set up email authentication records so you do not have to add any overrides. For more information, see [Administrators of domains that are not customers](#administrators-of-domains-that-are-not-office-365-customers)" later in this article.
+Because of the problem of spam and phishing, Microsoft recommends all senders set up email authentication. If you know an administrator of the sending domain, contact them and request that they set up email authentication records so you do not have to add any overrides. For more information, see [Administrators of domains that are not customers](#administrators-of-domains-that-are-not-customers)" later in this article.
 
 While it may be difficult at first to get sending domains to authenticate, over time, as more and more email filters start junking or even rejecting their email, it will cause them to set up the proper records to ensure better delivery.
 
@@ -632,7 +632,7 @@ You can either use the [Report Message Add-in for Outlook](https://support.offic
 
 ### I'm a domain administrator who doesn't know who all my senders are!
 
-Please see [Administrators of domains that are not customers](#administrators-of-domains-that-are-not-office-365-customers).
+Please see [Administrators of domains that are not customers](#administrators-of-domains-that-are-not-customers).
 
 ### What happens if I disable anti-spoofing protection for my organization, even though Office 365 is my primary filter?
 
