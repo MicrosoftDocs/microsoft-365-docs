@@ -130,7 +130,13 @@ The following table describes other tools that you can use to replace the existi
 <p>
 <p>Alternatively, you can export search results to PST files and then use Microsoft 365 Import service to import the PSTs to a discovery mailbox. For step-by-step instruction, see <a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">Use network upload to import PST files to Office 365</a>.
 </tr>
-<tr class="even">
+<tr class=even>
+  <td>Copy messages to another users mailbox so they have access to those messages</td>
+  <td>https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-permissions-for-recipients</td>
+  <td>To give access to another user's mail, as in such cases as an employee who has left your organization, the supported methodology for this is to grant access to that user's mailbox instead of copying to a shared mailbox or any other mailbox.</td>
+  
+  </tr>
+<tr class="odd">
 <td>Restore items from the Recoverable Items folder</td>
   <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">Restore-RecoverableItems</td>
   <td>You can restore permanently deleted items (also known as <i>soft-deleted</i> items) in mailboxes, as long as the deleted item retention period for an item hasn't expired. For more information, see <a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">Recoverable Items folder in Exchange Online</a>.</td>
@@ -211,6 +217,13 @@ The following table describes other tools that you can use to replace the existi
 <td>None</td>
 <td>There's no direct replacement for this functionality because it does not provide access to all Microsoft 365 services. See the following FAQ below for alternative solutions.</td>
 </tr>
+  <tr class=even>
+  <td>Copy messages to another users mailbox so they have access to those messages</td>
+  <td>https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-permissions-for-recipients</td>
+  <td>To give access to another user's mail, as in such cases as an employee who has left your organization, the supported methodology for this is to grant access to that user's mailbox instead of copying to a shared mailbox or any other mailbox.</td>
+  
+  </tr>
+
 </tbody>
 </table>
 
