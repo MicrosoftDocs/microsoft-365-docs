@@ -225,7 +225,7 @@
                   href: ./office-365-security/how-policies-and-protections-are-combined.md
                 - name: How to reduce spam email in Office 365
                   href: ./office-365-security/reduce-spam-email.md
-                - name: Control outbound spam in Office 365
+                - name: Control outbound spam
                   href: ./office-365-security/outbound-spam-controls.md
                 - name: Block email spam with the Office 365 spam filter to prevent false negative issues
                   href: ./office-365-security/reduce-spam-email.md

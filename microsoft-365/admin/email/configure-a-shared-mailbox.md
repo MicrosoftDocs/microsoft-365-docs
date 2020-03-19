@@ -117,7 +117,7 @@ By default, messages sent from the shared mailbox aren't saved to the Sent Items
 If you want to allow everyone to see the Sent email, in the admin center, edit the shared mailbox settings, and select **Sent items** \> **Edit**.
 
 
-## Choose the apps that a shared mailbox can use to access Office 365 email
+## Choose the apps that a shared mailbox can use to access Microsoft email
 
 ::: moniker range="o365-worldwide"
 

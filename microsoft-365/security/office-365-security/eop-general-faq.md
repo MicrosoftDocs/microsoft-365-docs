@@ -72,7 +72,7 @@ A. Any size. The EOP network has sufficient capacity to accommodate your growth,
 
 **What permissions do I need to set up EOP?**
 
-In order to configure EOP, you must be an Office 365 Global Admin, or an Exchange Company Administrator (the Organization Management role group).
+In order to configure EOP, you must be a global admin, or an Exchange Company Administrator (the Organization Management role group).
 
 **Q. How do I know my data and private information are safe?**
 

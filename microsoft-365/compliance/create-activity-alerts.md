@@ -42,7 +42,7 @@ You can create an activity alert that will send you an email notification when u
 
 1. Go to [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
-2. Sign in to Office 365 using your work or school account.
+2. Sign in using your work or school account.
     
 3. On the **Activity alerts** page, click ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New**.
 
@@ -81,7 +81,7 @@ You can turn off an activity alert so that an email notification isn't sent. Aft
   
 1. Go to Go to [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
-2. Sign in to Office 365 using your work or school account.
+2. Sign in using your work or school account.
     
 3. In the list of activity alerts for your organization, click the alert that you want to turn off.
     

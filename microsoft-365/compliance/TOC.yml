@@ -157,7 +157,7 @@
           href: customer-key-manage.md
         - name: Roll or rotate a Customer Key or an availability key
           href: customer-key-availability-key-roll.md
-        - name: Learn about the availability key for Office 365 Customer Key
+        - name: Learn about the availability key for Customer Key
           href: customer-key-availability-key-understand.md
     - name: Email encryption
       href: email-encryption.md

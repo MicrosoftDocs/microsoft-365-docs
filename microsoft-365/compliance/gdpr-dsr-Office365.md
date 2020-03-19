@@ -84,7 +84,7 @@ The guidance for responding to DSRs for Customer Data is divided into the follow
 
 To help you determine where to search for personal data or what to search for, it helps to identify the Office 365 applications that people in your organization can use to create and store data in Office 365. Knowing this narrows the Office 365 applications that are in-scope for a DSR and helps you determine how to search for and access personal data that's related to a DSR. Specifically, this means whether you can use the Content Search tool or if you'll have to use the in-app functionality of the application the data was created in.
 
-A quick way to identify the Office 365 applications that people in your organization are using to create Customer Data is to determine which applications are included in your organization's Office 365 subscription. To do this, you can access user accounts in the Office 365 admin portal and look at the product licensing information. See [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
+A quick way to identify the Office 365 applications that people in your organization are using to create Customer Data is to determine which applications are included in your organization's Microsoft 365 for business subscription. To do this, you can access user accounts in the Office 365 admin portal and look at the product licensing information. See [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
 
 ## Using the Content Search eDiscovery tool to respond to DSRs
 
@@ -579,7 +579,7 @@ In addition to deleting personal data in response to a DSR deletion request, a d
 
 After you delete an Office 365 user account:
 
-- The user can no longer sign-in to Office 365 or access any of your organization's Office 365 resources, such as their OneDrive for Business account, SharePoint Online sites, or their Exchange Online mailbox.
+- The user can no longer sign-in to Office 365 or access any of your organization's Microsoft resources, such as their OneDrive for Business account, SharePoint Online sites, or their Exchange Online mailbox.
 - Personal data, such as email address, alias, phone number, and mailing address, that's associated with the user account is deleted
 - Some Office 365 apps remove information about the user. For example, in Microsoft Flow, the deleted user is removed from the list of owners for a shared flow.
 - System-generated logs about the data subject will be deleted 30 days after the user account is deleted. For more information, see the section [Deleting system-generated logs](#deleting-system-generated-logs).
@@ -1331,7 +1331,7 @@ To assign administrator or owner permissions to a SharePoint Online site so that
 
 #### OneDrive for Business
 
-An Office 365 global admin can access a user's OneDrive for Business account by using the .
+An global admin can access a user's OneDrive for Business account by using the .
 
 1. Sign in to Office 365 with your global admin credentials.
 2. Go to the admin center.
@@ -1341,7 +1341,7 @@ An Office 365 global admin can access a user's OneDrive for Business account by 
 
 ### Gaining access to an Exchange Online mailbox to make changes to data
 
-An Office 365 global admin can assign themselves the permissions necessary to open and edit (or delete) items in another user's mailbox, as if they were the mailbox owner. A global admin can also assign these permissions to another user. Specifically, the global admin needs to add the **Read and manage** permission, which is the Full Access permission in Exchange Online. For details, see:
+A global admin can assign themselves the permissions necessary to open and edit (or delete) items in another user's mailbox, as if they were the mailbox owner. A global admin can also assign these permissions to another user. Specifically, the global admin needs to add the **Read and manage** permission, which is the Full Access permission in Exchange Online. For details, see:
 
 - [Give mailbox permissions to another user in Office 365](https://support.office.com/article/Give-mailbox-permissions-to-another-user-in-Office-365-Admin-Help-1DBCF12F-A9DE-4D1D-B0B3-A227F8A736D8)
 - [Access another person's mailbox](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081)
@@ -1412,7 +1412,7 @@ If your organization determines later that a restriction no longer applies, you 
 
 ### Removing the license for an Office 365 application
 
-As previously explained, licenses for all Office 365 applications that are included in your organization's Office 365 subscription are assigned to all users by default. If necessary to restrict,  access to data that's subject to a DSR, an IT admin can use the Office 365 admin portal temporarily turn off a user's license for an application. If a user then tries to use that application, they'll receive an unlicensed product notification or a message saying they no longer have access. For details, see [Remove licenses from users in Office 365 for business](https://support.office.com/article/Remove-licenses-from-users-in-Office-365-for-business-9B497C85-D0A4-4735-80FA-D3565BC05BD1).
+As previously explained, licenses for all Office 365 applications that are included in your organization's Microsoft 365 for business subscription are assigned to all users by default. If necessary to restrict,  access to data that's subject to a DSR, an IT admin can use the Office 365 admin portal temporarily turn off a user's license for an application. If a user then tries to use that application, they'll receive an unlicensed product notification or a message saying they no longer have access. For details, see [Remove licenses from users in Office 365 for business](https://support.office.com/article/Remove-licenses-from-users-in-Office-365-for-business-9B497C85-D0A4-4735-80FA-D3565BC05BD1).
 
 **Notes:**
 
@@ -1439,7 +1439,7 @@ Another way to restrict the processing of personal data is to temporarily remove
 
 Because most Office documents are on a SharePoint Online or OneDrive for Business site, here's a high-level process for removing documents from sites and then re-importing them.
 
-1. Get a copy of the document that is the subject of the restriction request. You may have to request either access to the site or ask an Office 365 global admin or a site collection administrator to provide you with a copy of the document.
+1. Get a copy of the document that is the subject of the restriction request. You may have to request either access to the site or ask a global admin or a site collection administrator to provide you with a copy of the document.
 2. Store the document in an on-premises location (such as a file server or a file share) or another location other than your Office 365 tenant in the Microsoft cloud.
 3. Permanently delete (purge) the original document from Office 365. This is a 3-step process:
 
@@ -1563,7 +1563,7 @@ To restrict processing for a specific user, you can remove their Workplace Analy
 
 If a data subject would like to be removed from a Workplace Analytics report or set of reports, you can delete the report. It is your responsibility to delete users from any organizational data that you used to generate the report, and reupload the data. All data about the user is removed when a user account is "hard-deleted" from Azure Active Directory. 
 
-To remove the personal data of a data subject, an Office 365 global administrator can take the following steps: 
+To remove the personal data of a data subject, a global administrator can take the following steps: 
 
 1. Remove the Workplace Analytics license from the data subject.
 2. Delete the Azure Active Directory (AAD) entry for the data subject. (For more information, see [Delete a user](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user).)

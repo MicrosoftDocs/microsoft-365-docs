@@ -154,7 +154,7 @@ Here's the process for searching the audit log in Office 365.
     > [!TIP]
     > Use a private browsing session (not a regular session) to access the Security & Compliance Center because this will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Internet Explorer or Microsoft Edge, just press CTRL+SHIFT+P. To open a private browsing session in Google Chrome (called an incognito window), press CTRL+SHIFT+N.
 
-2. Sign in to Office 365 using your work or school account.
+2. Sign in using your work or school account.
 
 3. In the left pane of the Security & Compliance Center, click **Search**, and then click **Audit log search**.
 
@@ -912,7 +912,7 @@ Most auditing data is available within 30 minutes but it may take up to 24 hours
 
 **How long are the audit records retained for?**
 
-As previously explained, the retention period for audit records depends on your organization's Office 365 or Microsoft 365 enterprise subscription.
+As previously explained, the retention period for audit records depends on your organization's Microsoft 365 for business subscription.
 
   - **Office 365 E3 and Microsoft 365 E3:** Audit records are retained for 90 days. That means you can search the audit log for activities that were performed within the last 90 days.
 

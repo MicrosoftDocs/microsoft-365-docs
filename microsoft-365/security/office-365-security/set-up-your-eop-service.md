@@ -25,7 +25,7 @@ This topic explains how to set up Microsoft Exchange Online Protection (EOP). If
 
 - Estimated time to complete this task: 1 hour
 
-- To configure connectors, your account must be an Office 365 Global Admin, or an Exchange Company Administrator (the Organization Management role group). For information, see [Feature permissions in EOP](feature-permissions-in-eop.md).
+- To configure connectors, your account must be a global admin, or an Exchange Company Administrator (the Organization Management role group). For information, see [Feature permissions in EOP](feature-permissions-in-eop.md).
 
 - If you haven't signed up for EOP, visit [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) and choose to buy or try the service.
 

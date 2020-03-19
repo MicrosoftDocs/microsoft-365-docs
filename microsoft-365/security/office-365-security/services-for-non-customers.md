@@ -22,7 +22,7 @@ description: "To help maintain user trust in the use of email, Microsoft has put
 
 Email abuse, junk email, and fraudulent emails (phishing) continue to burden the entire email ecosystem. To help maintain user trust in the use of email, Microsoft has put in place various policies and technologies to help protect our users. However, Microsoft understands that legitimate email should not be negatively affected. Therefore, we have established a suite of services to help senders improve their ability to deliver email to Office 365 users by proactively managing their sending reputation.
 
-This overview provides information about benefits we provide to your organization even if you aren't an Office 365 customer.
+This overview provides information about benefits we provide to your organization even if you aren't a customer.
 
 ## Sender solutions
 
@@ -45,7 +45,7 @@ Microsoft offers several support options for people having trouble sending mail 
 
 - Read the [Microsoft community forums](https://community.office365.com/f/).
 
-- Contact the Office 365 customer you're trying to email using another method and ask them to contact Microsoft Support and open a support ticket on your behalf. In some cases, for legal reasons, Microsoft Support must communicate directly with the sender who owns the IP space that is being blocked. However, non-customers typically can't open support tickets.
+- Contact the customer you're trying to email using another method and ask them to contact Microsoft Support and open a support ticket on your behalf. In some cases, for legal reasons, Microsoft Support must communicate directly with the sender who owns the IP space that is being blocked. However, non-customers typically can't open support tickets.
 
   For more information about Microsoft Technical support for Office 365, see [Support](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support).
 

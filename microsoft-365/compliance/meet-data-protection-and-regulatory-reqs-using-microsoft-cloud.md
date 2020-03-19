@@ -695,7 +695,7 @@ Compliance Manager is designed to be regularly updated to keep pace with changes
     
 - A **Minor** change is an insignificant change to a Customer Actions, such as fixing a typo or formatting issues, or updating or correcting hyperlinks. Minor changes generally do not require the control to be re-evaluated; however, we do recommend that you review the updated Customer Action.
   
-### Office 365 Customer-Managed Controls - Change Log for July 2018
+### Customer-managed controls - Change Log for July 2018
 
 |**Control ID**|**Assessment**|**Type of change**|**Description of change**|**Recommended actions for customers**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -705,7 +705,7 @@ Compliance Manager is designed to be regularly updated to keep pace with changes
 45 C.F.R.  § 164.316(b)(2)(iii)| Office 365: HIPAA|Major|Added HITECH control to HIPAA Assessment for Office 365|Review the added control and recommended Customer Actions<br/>|
 |
 
-### Office 365 Customer-Managed Controls - Change Log for April 2018
+### Customer-managed controls - Change Log for April 2018
 
 |**GDPR**|**HIPAA**|**ISO 27001**|**ISO 27018**|**NIST 800-53**|**NIST 800-171**|**Type of change**|**Description of change**|**Recommended actions for customers**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|

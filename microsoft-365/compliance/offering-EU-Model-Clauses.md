@@ -42,7 +42,7 @@ Learn about the benefits of European Union Model Clauses on the Microsoft Cloud
 
 - [Azure and Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
-- Microsoft Professional Services: Premier and On Premises for Azure, Dynamics 365, Intune, and for Medium Business and Enterprise customers of Office 365
+- Microsoft Professional Services: Premier and On Premises for Azure, Dynamics 365, Intune, and for Medium Business and Enterprise customers of Microsoft 365 for business
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune: Cloud service portion of the Intune Add-on Product and Mobile Device Management for Office 365
 - Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
@@ -72,9 +72,9 @@ Compliance is a contractual commitment. Microsoft Standard Contractual Clauses a
 
 **What is a "sub-processor"?**
 
-A "sub-processor" is someone who processes personal data following the data controller’s instructions, and the terms of the EU Model Clauses and the subcontract. Microsoft customers—independent software vendors (ISVs), in particular — are sometimes themselves data processors. In those instances, Microsoft is the sub-processor.
+A "sub-processor" is someone who processes personal data following the data controller's instructions, and the terms of the EU Model Clauses and the subcontract. Microsoft customers—independent software vendors (ISVs), in particular — are sometimes themselves data processors. In those instances, Microsoft is the sub-processor.
 
-**Where do I start with my own organization’s compliance efforts?**
+**Where do I start with my own organization's compliance efforts?**
 
 You can enter an agreement such, as the [Online Services Terms](https://aka.ms/Online-Services-Terms), or explore amending your existing agreement to incorporate the Standard Contractual Clauses.
 

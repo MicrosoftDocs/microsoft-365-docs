@@ -1,5 +1,5 @@
 ---
-title: "Change a user name and email address in Office 365"
+title: "Change a user name and email address"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: "Learn how a global admin can change a user's Office 365 email address and display name. "
+description: "Learn how a global admin can change a user's email address and display name. "
 ---
 
 # Change a user name and email address in Office 365
 
-You may need to change someone's Office 365 email address and display name if, for example, they get married and their last name changes.
+You may need to change someone's email address and display name if, for example, they get married and their last name changes.
 
 ::: moniker range="o365-worldwide"
 
@@ -97,7 +97,7 @@ If you get an error message, see [Resolve error messages](#resolve-error-message
     
     **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
-    Also, you'll only see this option if you're an Office 365 global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
+    Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
   
 4. You'll see a big yellow warning that you're about to change the person's sign-in information. Select **Save**, then **Close**.
     
@@ -125,7 +125,7 @@ If you get an error message, see [Resolve error messages](#resolve-error-message
     
     **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
-    Also, you'll only see this option if you're an Office 365 global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
+    Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
   
 4. You'll see a big yellow warning that you're about to change the person's sign-in information. Select **Save**, then **Close**.
     
@@ -153,7 +153,7 @@ If you get an error message, see [Resolve error messages](#resolve-error-message
     
     **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
-    Also, you'll only see this option if you're an Office 365 global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
+    Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
   
 4. You'll see a big yellow warning that you're about to change the person's sign-in information. Select **Save**, then **Close**.
     
@@ -223,7 +223,7 @@ If you get the error message " **A parameter cannot be found that matches parame
   
 ### "We're sorry, the user couldn't be edited. Review the user information and try again"
 
-If you get the error message " **We're sorry, the user couldn't be edited. Review the user information and try again**." it means you aren't an Office 365 global admin and you don't have permissions to change the user name. Find the global admin in your business and ask them to make the change.
+If you get the error message " **We're sorry, the user couldn't be edited. Review the user information and try again**." it means you aren't a global admin and you don't have permissions to change the user name. Find the global admin in your business and ask them to make the change.
 
 
 ## What to do with old email addresses

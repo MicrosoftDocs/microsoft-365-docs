@@ -255,7 +255,7 @@ If your former employee had a organization phone, you can use the Exchange admin
 ## Block a former employee's access to email (Exchange Online)
 <a name="bkmk_block_email"> </a>
 
-If you have Office 365 email as part of your Office 365 subscription, you need to log in to the Exchange admin center to follow these steps to block your former employee from accessing their email.
+If you have email as part of your Microsoft 365 for business subscription, you need to log in to the Exchange admin center to follow these steps to block your former employee from accessing their email.
   
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.

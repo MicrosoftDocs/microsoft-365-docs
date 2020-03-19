@@ -35,7 +35,7 @@ Use the **Personal info** page to change your name, mobile phone number, and alt
 
 2. In the header, select your profile icon \> **My account** \> **Personal info**.
 
-3. In the **Contact details** section, select Edit. Update your mobile, phone, and alternate email address. Make sure you use something different from your Office 365 email address for your alternate email address.
+3. In the **Contact details** section, select Edit. Update your mobile, phone, and alternate email address. Make sure you use something different from your Microsoft email address for your alternate email address.
 
     > [!IMPORTANT]
     > The alternate email address and the mobile phone number are needed for resetting your admin password (not your computer admin password).

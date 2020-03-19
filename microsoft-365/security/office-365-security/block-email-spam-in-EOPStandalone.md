@@ -82,6 +82,6 @@ The EOP service is designed to honor the user's safe and blocked senders, if the
 
 ## See Also
 
-[Office 365 Email Anti-Spam Protection](anti-spam-protection.md)
+[Microsoft Email Anti-Spam Protection](anti-spam-protection.md)
 
 [Prevent false positive email marked as spam with a safelist or other techniques](prevent-email-from-being-marked-as-spam.md)

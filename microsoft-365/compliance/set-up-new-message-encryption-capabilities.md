@@ -21,7 +21,7 @@ description: "New Office 365 Message Encryption capabilities built on top of Azu
 
 # Set up new Office 365 Message Encryption capabilities
 
-The new Office 365 Message Encryption (OME) capabilities allow organizations to share protected email with anyone on any device. Users can exchange protected messages with other Office 365 organizations, as well as non-Office 365 customers using Outlook.com, Gmail, and other email services.
+The new Office 365 Message Encryption (OME) capabilities allow organizations to share protected email with anyone on any device. Users can exchange protected messages with other Office 365 organizations, as well as non-customers using Outlook.com, Gmail, and other email services.
 
 Follow the steps below to ensure that the new OME capabilities are available in your Office 365 organization.
 

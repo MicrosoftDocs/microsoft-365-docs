@@ -21,7 +21,7 @@ description: "Get an overview of reports and insights avialable in the Security 
 
 # Smart reports and insights in the Office 365 Security &amp; Compliance Center
 
-If you are part of your organization's Office 365 security team and have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md), you can access a variety of reports, including smart reports and insights. Read this article to get an overview of these reports and insights, and where to go to learn more about specific reports.
+If you are part of your organization's Microsoft for 365 for business security team and have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md), you can access a variety of reports, including smart reports and insights. Read this article to get an overview of these reports and insights, and where to go to learn more about specific reports.
       
 ## Smart reports and insights overview
 
