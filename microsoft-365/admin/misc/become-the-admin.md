@@ -66,7 +66,7 @@ YouTube: [3 steps to do an IT Admin Takeover for Power BI and Office 365](https:
 
 [Admin takeover in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Get help with Office 365 domains](../get-help-with-domains/get-help-with-domains.yml)
+[Get help with Office 365 domains](../get-help-with-domains/get-help-with-domains.md)
 
 [Using self-service sign up in your organization](self-service-sign-up.md)
   
