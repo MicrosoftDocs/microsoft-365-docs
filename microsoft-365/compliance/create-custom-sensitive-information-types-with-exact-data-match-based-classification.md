@@ -71,49 +71,49 @@ Setting up and configuring EDM-based classification involves saving sensitive da
 
 3. Define the schema for the database of sensitive information in .xml format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax: 
 
-`\<Field name="" searchable=""/\>`.
+      `\<Field name="" searchable=""/\>`.
 
-- Use column names for *Field name* values.
-- Use *searchable="true"* for the fields that you want to be searchable up to a maximum of 5 fields. You must designate a minimum of one field as searchable.
+      - Use column names for *Field name* values.
+      - Use *searchable="true"* for the fields that you want to be searchable up to a maximum of 5 fields. You must designate a minimum of one field as searchable.
 
-As an example, the following .xml file defines the schema for a patient records database, with five fields specified as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*.
+      As an example, the following .xml file defines the schema for a patient records database, with five fields specified as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*.
 
-(You can copy, modify, and use our example.)
+      (You can copy, modify, and use our example.)
 
- ```xml
-<EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
-      <DataStore name="PatientRecords" description="Schema for patient records" version="1">
-            <Field name="PatientID" searchable="true" />
-            <Field name="MRN" searchable="true" />
-            <Field name="FirstName" />
-            <Field name="LastName" />
-            <Field name="SSN" searchable="true" />
-            <Field name="Phone" searchable="true" />
-            <Field name="DOB" searchable="true" />
-            <Field name="Gender" />
-            <Field name="Address" />
-      </DataStore>
-</EdmSchema>
-```
+       ```xml
+      <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+            <DataStore name="PatientRecords" description="Schema for patient records" version="1">
+                  <Field name="PatientID" searchable="true" />
+                  <Field name="MRN" searchable="true" />
+                  <Field name="FirstName" />
+                  <Field name="LastName" />
+                  <Field name="SSN" searchable="true" />
+                  <Field name="Phone" searchable="true" />
+                  <Field name="DOB" searchable="true" />
+                  <Field name="Gender" />
+                  <Field name="Address" />
+            </DataStore>
+      </EdmSchema>
+      ```
 
 4. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 5. To upload the database schema, run the following cmdlets, one at a time:
 
-```powershell
-$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
-New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
-```
+      ```powershell
+      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
+      New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
+      ```
 
-You will be prompted to confirm, as follows:
+      You will be prompted to confirm, as follows:
 
-> Confirm
->
-> Are you sure you want to perform this action?
->
-> New EDM Schema for the data store 'patientrecords' will be imported.
->
-> \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
+      > Confirm
+      >
+      > Are you sure you want to perform this action?
+      >
+      > New EDM Schema for the data store 'patientrecords' will be imported.
+      >
+      > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
 
 > [!TIP]
 > If you want your changes to occur without confirmation, in Step 5, use this cmdlet instead: New-DlpEdmSchema -FileData $edmSchemaXml
