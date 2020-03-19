@@ -23,14 +23,14 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: "Learn how to renew your Office 365 for business subscription using a product key and turn on or off the recurring billing. "
+description: "Learn how to renew your Office 365 for business subscription using a product key and turn on or off recurring billing."
 ---
 
 # Renew Office 365 for business
 
 This article applies to most paid Office 365 for business subscriptions.
   
-To renew by using a product key that you bought from a retail store or Office 365 partner, see [EFind and enter your product key](../enter-your-product-key.md).
+To renew by using a product key that you bought from a retail store or Office 365 partner, see [Find and enter your product key](../enter-your-product-key.md).
 
 > [!NOTE]
 > Paying by bank account isn't available in some countries or regions.
@@ -112,15 +112,9 @@ If you prepaid for your subscription with a product key, your subscription will 
 ## Related articles
 
 [Reactivate your subscription](reactivate-your-subscription.md)
-  
-[Add, update, or remove a credit card or bank account](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
-  
-[What happens to my data and access when mysubscription ends?](what-if-my-subscription-expires.md)
+
+[Enter your product key](../enter-your-product-key.md)
+
+[What happens to my data and access when my subscription ends?](what-if-my-subscription-expires.md)
 
 [Add, update, or remove your payment methods](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
-
-[Change your payment method](../billing-and-payments/change-payment-method.md)
-  
-[Enter your product key](../enter-your-product-key.md)
-  
-[Buy your trial version of Office 365 for business](../buy-a-subscription-from-your-free-trial.md)
