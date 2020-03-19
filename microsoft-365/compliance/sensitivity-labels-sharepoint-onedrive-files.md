@@ -120,6 +120,8 @@ To enable the preview, use the Set-SPOTenant cmdlet:
 
 1. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
+Note: Multi-Geo tenants must run the EnableAIPIntegration cmdlet by logging in to each of their geo location's admin centers.
+
 2. Run the following command:
 
     ```PowerShell
