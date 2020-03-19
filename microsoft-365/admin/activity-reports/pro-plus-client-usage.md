@@ -40,7 +40,7 @@ For example, you can understand the activity of each user licensed to user ProPl
 
 You can get a view into your user's email activity by looking at the **Activity** and **Users** charts. 
 
-![ProPlus client usage report](../../media/adminformsactivity.png)
+![ProPlus client usage report](../../media/proplususagenumbers.png)
 
 |||
 |:-----|:-----|
@@ -49,7 +49,7 @@ You can get a view into your user's email activity by looking at the **Activity*
 |3.  <br/> |The **Users** view shows the number of ProPlus users per app.  <br/> |
 |4.  <br/> |The **Platforms** The Distribution view shows you the number of unique users by platform over the selected time period. <br/> |
 |5.<br/>|On the **Users** chart, the Y axis is the number of unique users. X axis is the date that the unique users are active on. On the **Platforms** chart the Y axis ia the number of unique users, X axis is the date on which an app was used on a given platform.<br/>|
-|6.<br/>|You can filter the series you see on the chart by selecting an item in the legend. For example, on the Users chart, select designers, responders, or total users to see only the info related to each one. Changing this selection doesn't change the info in the grid table below it.|
+|6.<br/>|You can filter the series you see on the chart by selecting an item in the legend. For example, on the **Users** chart, select Outlook, Word, Excel, PowerPoint, OneDrive,or Teams to see only the info related to each one. Changing this selection doesn't change the info in the grid table below it.|
 |7.<br/>|The table shows you a breakdown of the activities at the per-user level.The legends are:<br/><br/>**Username** is the email address of the user who performed the activity on Microsoft Forms.<br/>**Last activity date (UTC)** is the latest date a ProPlus app activity was performed by the user for the selected date range. To see activity that occurred on a specific date, select the date directly in the chart.<br/><br/>This will filter the table to display file activity data only for users who performed the activity on that specific day.<br/><br/>**Activity on platforms** is the count of ProPlus activity on a specific platfrom.|
 |8.<br/>|Select the **Manage columns** icon to add or remove columns from the report.|
 |9.<br/>|You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data for all users and enables you to do simple aggregation, sorting and filtering for further analysis. If you have less than 100 users, you can sort and filter within the table in the report itself. If you have more than 100 users, in order to filter and sort, you will need to export the data.|
