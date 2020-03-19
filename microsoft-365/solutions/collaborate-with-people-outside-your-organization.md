@@ -14,6 +14,15 @@ description: "Learn how to configure Microsoft 365 for collaboration with people
 
 # Collaborating with people outside your organization
 
+The external sharing capabilities in Microsoft 365 provide an opportunity for people in your organization to collaborate with partners, vendors, customers, and others who don't have an account in your directory. You can share entire teams or sites with people outside your organization, or just individual files.
+
+Collaborating with people outside your organization consists of two major components:
+
+- **Enable sharing** - Configure the sharing controls across Azure Active Directory, Teams, Office 365 groups, and SharePoint to allow the level of sharing that you want for your organization.
+- **Enable additional security** - While the basic sharing features can be configured to require people outside your organization to authenticate, Microsoft 365 provides many additional security and compliance features to help you protect your data and maintain your governance policies while sharing externally.
+
+## Enable sharing
+
 By default, in Microsoft 365, sharing with people outside your organization is enabled for SharePoint and OneDrive, but disabled for Teams. Many SharePoint and OneDrive external sharing scenarios work without further configuration. To confirm the settings for a scenario that you're using, or enable a new one, choose from the following options:
 
 - [Collaborate on documents](collaborate-on-documents.md) - Learn how to configure Microsoft 365 to allow sharing and collaboration with people outside your organization (both guests and unauthenticated users) on files and folders.
@@ -22,7 +31,7 @@ By default, in Microsoft 365, sharing with people outside your organization is e
 
 For a comprehensive look at the guest sharing settings available across Microsoft 365, see [Microsoft 365 guest sharing settings reference](microsoft-365-guest-settings.md).
 
-## Secure your environment
+## Enable additional security
 
 Once you've enabled the scenario that you want to use for sharing with people outside your organization, consider additional safeguards to help protect your content from accidental or intentional inappropriate sharing.
 
