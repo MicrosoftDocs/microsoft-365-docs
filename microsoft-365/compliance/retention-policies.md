@@ -81,6 +81,20 @@ For more information about specific workloads, see the following articles:
 - [Learn about retention policies for Microsoft Teams](retention-policies-teams.md)
 - [Learn about retention policies for Exchange](retention-policies-exchange.md)
 
+### When a user leaves the organization 
+
+**Exchange**:  
+
+If a user leaves your organization and the user's mailbox is included in a retention policy, the mailbox becomes an inactive mailbox when the user's Office 365 account is deleted. The contents of an inactive mailbox are still subject to any retention policy that was placed on the mailbox before it was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md). 
+
+**OneDrive**:
+
+If a user leaves your organization, any files subject to a retention policy or containing retention labels will remain for the duration of the policy or label. During that time period, all sharing access continues to work. When the retention period expires, content moves into the Site Collection Recycle Bin and is not accessible to anyone except the admin. If a document is marked by a retention policy as a record, it will not be deleted until the retention period is over, after which time the content is permanently deleted. 
+
+**SharePoint**:
+
+When a user leaves your organization, any content created by that user is not affected because SharePoint is considered a collaborative environment, unlike a user's mailbox or OneDrive account.
+
 ## Permissions
 
 Members of your compliance team who will create and manage retention policies need permissions to the [Microsoft 365 Compliance Center]((https://compliance.microsoft.com/). By default, your tenant admin has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To do this, we recommend that you go to the **Permissions** page of the [Microsoft 365 Compliance Center](https://compliance.microsoft.com/), edit the **Compliance administrator** admin role, and add members to that role group. 
@@ -293,7 +307,7 @@ You must use PowerShell to lock a retention policy:
     
 3. To place a Preservation Lock on a retention policy, run `Set-RetentionCompliancePolicy` with the `RestrictiveRetention` parameter set to true. For example:
     
-    	Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true
+    	Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
     
     ![RestrictiveRetention parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
@@ -301,6 +315,11 @@ You must use PowerShell to lock a retention policy:
     
     ![Prompt to confirm that you want to lock a retention policy in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
+A Preservation Lock is now placed on the retention policy. If you run `Get-RetentionCompliancePolicy`, the `RestrictiveRetention` parameter is set to true. For example:
+
+`Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl`
+
+![Locked policy with all parameters shown in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
   
 ## Releasing a retention policy
 
@@ -357,15 +376,8 @@ If you were using a preservation policy to retain data in mailboxes, SharePoint 
 
 You can find any configured preservation policies on the **Policies** page in the [Microsoft 365 compliance center](https://compliance.microsoft.com/), or on the **Retention** page under **Information governance** in the [Security &amp; Compliance Center](https://protection.office.com/). You can edit a preservation policy to change the retention period, but you can't make other changes, such as adding or removing locations. 
   
-## Find the PowerShell cmdlets for retention policies
 
-To use the retention policy cmdlets:
-  
-1. [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
-    
-2. Use these [Office 365 Security &amp; Compliance Center cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
-    
-## More information
+## Related information
 
 - [Overview of labels](labels.md)
 - [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
