@@ -196,8 +196,8 @@ When you set up your rule package, make sure to correctly reference your .csv fi
 - **Match:** This field points to additional evidence found in proximity of idMatch.
   - Matches: You provide any field name in EDM Schema for DataStore.
 - **Resource:** This section specifies the name and description for sensitive type in multiple locales.
-  - idRef: You provide GUID for ExactMatch id.
-  - Name & des Editing the schema criptions: customize as required.
+  - idRef: You provide GUID for ExactMatch ID.
+  - Name & descriptions: customize as required.
 
 ```xml
 <RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
