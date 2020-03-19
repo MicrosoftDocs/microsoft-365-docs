@@ -46,5 +46,5 @@ Devices in the **Device actions** list (Admin home \> **Device actions**) can ha
 |Wipe canceled  <br/> |Factory wipe was canceled.  <br/> |
 |Unhealthy  <br/> |An action is pending (or in progress), but the device hasn't checked in for 30+ days.  <br/> |
 |Delete pending  <br/> |Delete action is pending.  <br/> |
-|Discovered  <br/> |Microsoft 365 Business has detected the device.  <br/> |
+|Discovered  <br/> |Microsoft 365 Business Premium has detected the device.  <br/> |
    

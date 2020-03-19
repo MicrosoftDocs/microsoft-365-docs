@@ -57,6 +57,6 @@ If you found this video helpful, check out the [complete training series for sma
     
       :::image type="content" source="../media/sendemailtousers.png" alt-text="Select users to send email with Office download link.":::
 
-## For more on setting up and using Microsoft 365 Business
+## For more on setting up and using Microsoft 365 Business Premium
 
 [Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

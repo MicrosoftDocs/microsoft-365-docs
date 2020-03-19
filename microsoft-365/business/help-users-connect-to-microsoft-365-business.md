@@ -1,5 +1,5 @@
 ---
-title: "Help users connect to Microsoft 365 Business"
+title: "Help users connect to Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -29,14 +29,14 @@ ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
 description: "Learn what to expect after Business Cloud Suite setup is complete and your default device policies are in place and ready to apply."
 ---
 
-# Help users connect to Microsoft 365 Business
+# Help users connect to Microsoft 365 Business Premium
 
 After you complete setup, your default device policies are in place and ready to apply. On mobile devices, users download Office apps. Policies are then applied when the user signs in with their work or school account. There's a bit more work to do before policies apply to Windows PCs, such as an in-place upgrade. See and share the following topics to help users get set up and connected:
   
-[Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md)
+[Set up Windows devices for Microsoft 365 Business Premium users](set-up-windows-devices.md)
   
 [Use the step-by-step guide to add Autopilot devices and profile](add-autopilot-devices-and-profile.md)
   
-[Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md)
+[Set up mobile devices for Microsoft 365 Business Premium users](set-up-mobile-devices.md)
   
 
