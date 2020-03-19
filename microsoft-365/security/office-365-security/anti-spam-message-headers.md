@@ -65,7 +65,7 @@ The following table describes useful fields in the **X-Microsoft-Antispam** mess
 |||
 |---|---|
 |**Header field**|**Description**|
-|BCL|The bulk complaint level (BCL) of the message. A higher BCL indicates bulk mail message (also known as gray mail) is more likely to generate complaints (and is therefore more likely to be spam). For more information, see [Bulk complaint level (BCL) in Office 365)](bulk-complaint-level-values.md).|
+|BCL|The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message (also known as _gray mail_) is more likely to generate complaints (and is therefore more likely to be spam). For more information, see [Bulk complaint level (BCL) in Office 365)](bulk-complaint-level-values.md).|
 |
 
 ## Authentication-results message header
@@ -84,7 +84,7 @@ For SPF, the following syntax applies.
 spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
 ```
 
-**Examples: SPF check stamp
+##### Examples: SPF check stamp
 
 ```text
 spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
@@ -99,7 +99,7 @@ For DKIM, the following syntax applies.
 dkim=<pass|fail (reason)|none> header.d=<domain>
 ```
 
-**Examples: DKIM check stamp
+##### Examples: DKIM check stamp
 
 ```text
 dkim=pass (signature was verified) header.d=contoso.com
@@ -114,7 +114,7 @@ For DMARC, the following syntax applies.
 dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
 ```
 
-#### Examples: DMARC check stamp
+##### Examples: DMARC check stamp
 
 ```text
 dmarc=pass action=none header.from=contoso.com

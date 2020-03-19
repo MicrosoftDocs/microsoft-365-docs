@@ -4,10 +4,10 @@ description: Describes what policies and protections apply when e-mail encounter
 keywords: security, malware, Microsoft 365, M365, security center, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 03/26/2019
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# What policy applies when multiple protection methods and detection scans run on your email
+# Priority of What policy applies when multiple protection methods and detection scans run on your email
 
 Potentially, your incoming mail may be flagged by multiple forms of protection (for example both EOP *and* ATP), and multiple detection scans (such as spam *and* phishing). This is possible because there are ATP Anti-phishing policies for ATP customers, and EOP Anti-phishing policies for EOP customers. This also means the message may navigate multiple detection scans for malware, phishing, and user-impersonation, for example. Given all this activity, there may be some confusion as to which policy applies.
 
@@ -24,28 +24,27 @@ In general, a policy applied to a message is identified in the **X-Forefront-Ant
 
 The Policies below apply to _all organizations_.
 
-|Priority |Policy  |Category  |Where Managed |
-|---------|---------|---------|---------|
-|1     | Malware      | MALW      | Malware policy   |
-|2     | Phishing     | PHSH     | Configure your spam filter policies     |
-|3     | High confidence spam      | HSPM        | Configure your spam filter policies        |
-|4     | Spoofing        | SPOOF        | Anti-phishing policy, spoof intelligence        |
-|5     | Spam         | SPM         | Configure your spam filter policies         |
-|6     | Bulk         | BULK        | Configure your spam filter policies         |
+|||||
+|---|---|---|---|
+|**Priority**|**Name**|**Category**|**Where to manage**|
+|1|Malware|CAT:MALW|[Configure anti-malware policies in Office 365](configure-anti-malware-policies.md)|
+|2|Phishing|CAT:PHSH|[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)|
+|3|High confidence spam|CAT:HSPM|[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)|
+|4|Spoofing|CAT:SPOOF|Anti-phishing policy, spoof intelligence|
+|5|Spam|CAT:SPM|[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)|
+|6|Bulk|CAT:BULK|[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)|
+|7<sup>\*</sup>|Domain Impersonation|DIMP|[Set up Office 365 ATP anti-phishing and anti-phishing policies](set-up-anti-phishing-policies.md)|
+|8<sup>\*</sup>|User Impersonation|UIMP|[Set up Office 365 ATP anti-phishing and anti-phishing policies](set-up-anti-phishing-policies.md)|
+|
 
-In addition, these policies apply to _organizations with ATP_.
-
-|Priority |Policy  |Category  |Where Managed |
-|---------|---------|---------|---------|
-|7     | Domain Impersonation         | DIMP         | Set up Office 365 ATP anti-phishing and anti-phishing policies        |
-|8     | User Impersonation        | UIMP         | Set up Office 365 ATP anti-phishing and anti-phishing policies         |
+<sup>\*</sup> These capabilities are only available in Office 365 Advanced Threat Protection (ATP).
 
 As an example, if you have two policies with their respective priorities:
 
-|Policy  |Priority  |User/Domain Impersonation  |Anti-spoofing  |
-|---------|---------|---------|---------|
-|A     | 1        | On        |Off         |
-|B     | 2        | Off        | On        |
+|Policy|Priority|User/Domain Impersonation|Anti-spoofing|
+|---|---|---|---|
+|A|1|On|Off|
+|B|2|Off|On|
 
 If a message comes in identified as both _user impersonation_ and _spoofing_ (see anti-spoofing in the table above), and the same set of users scoped to policy A is scoped to policy B, then the message is flagged and treated as a _spoof_. However, no action is applied because though spoof runs at a higher priority (4) than User Impersonation (8), Anti-spoofing is turned off.
 

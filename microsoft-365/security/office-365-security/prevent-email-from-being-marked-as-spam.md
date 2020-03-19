@@ -40,7 +40,7 @@ Specifically, you need to look for a header field named **X-Forefront-Antispam-R
 
 - **SFV:SKB**: The message was marked as spam because it matched a block senders entry in an anti-spam policy (for example, the blocked senders list or the blocked domains list). For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md).
 
-- **SFV:BULK**: The message was identified as bulk email instead of spam by spam filtering. This happens when the bulk complaint level (BCL) value of the message is **greater than** the bulk threshold that's defined in the anti-spam policy settings (a higher BCL indicates the message is more likely to be spam). You can see the BCL value in the **X-Microsoft-Antispam** header field.
+- **SFV:BULK**: The message was identified as bulk email instead of spam by spam filtering. This happens when the bulk complaint level (BCL) value of the message is **greater than** the bulk threshold that's defined in the anti-spam policy settings (a higher BCL indicates the message is more likely to be spam). You can see the BCL in the **X-Microsoft-Antispam** header field.
 
   Bulk mail (also known as _gray mail_) is undesirable but non-malicious marketing or advertising email that was intentionally or unintentionally requested by the user. Different users have different expectations for how bulk email should be handled, so you can create different policies or rules that allow or block bulk mail accordingly. For more information, see the following topics:
 
