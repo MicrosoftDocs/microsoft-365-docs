@@ -2,8 +2,8 @@
 title: "Quarantine FAQ"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
@@ -15,57 +15,57 @@ search.appverid:
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
-description: "This topic provides frequently asked questions and answers about the hosted quarantine."
+description: "Answers to frequently asked questions about quarantine in Office 365."
 ---
 
-# Quarantine FAQ
+# Quarantine FAQ in Office 365
 
-This topic provides frequently asked questions and answers about the hosted quarantine. Answers are applicable for Microsoft Exchange Online and Exchange Online Protection customers.
+This topic provides frequently asked questions and answers about quarantine for Office 365 customers with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) customers without Exchange Online mailboxes.
 
- **Q. How do I manage malware-quarantined messages in quarantine?**
+## Q: How do I manage messages that were quarantined for malware?
 
-You need to use the Security & Compliance Center in order to view and work with messages that were sent to quarantine because they contain malware. For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
+Only admins can manage messages that were quarantined for malware. For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
 
- **Q. How do I configure the service to send spam-quarantined messages to the quarantine?**
+## Q: How do I quarantine spam?
 
-A. By default, content-filtered messages are sent to the recipients Junk Email folder. However, admins can configure content filter policies to send spam-quarantined messages to the quarantine instead. For more information about the different actions that can be performed on content-filtered messages, see [Configure your spam filter policies](configure-your-spam-filter-policies.md).
+A. By default, messages that are classified as spam or bulk email by spam filtering are delivered to the user's mailbox, and are moved to the Junk Email folder. But you can create and configure anti-spam policies to quarantine spam or bulk email messages instead. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
- **Q. Does the service have administrator and end user management of spam-quarantined messages?**
+## Q: How do I give users access to the quarantine?
 
-A. As an admin, you can search for and view details about all quarantined email messages in the Security and Compliance Center (SCC). After locating the message, you can release it to specific users and optionally report it as a false positive (not junk) to the Microsoft Spam Analysis Team. For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
+A. A user must have a valid account to access their own messages in quarantine. Standalone EOP requires that users are represented as mail users in EOP (manually created or created via directory synchronization). For more information about managing users in standalone EOP environments, see [Manage mail users in EOP](manage-mail-users-in-eop.md).
 
-As an end user, you can manage your own spam-quarantined messages via:
+## Q: What messages can end users access in quarantine?
 
-- The spam quarantine user interface. For more information, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).
+A. Users can access spam, bulk email, and (as of April, 2020) phishing messages where they are a recipient. End users can't access quarantined malware, high confidence phishing or messages that were quarantined because of the **Deliver the message to the hosted quarantine** action in mail flow rules (also known as transport rules). For more information about users accessing quarantined messages, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).
 
- **Q. How do I grant access to quarantine for my end users?**
+## Q: How long are messages kept in the quarantine?
 
-A. In order to access the end user spam quarantine, end users must have a valid user ID and password. EOP customers protecting on-premises mailboxes must be valid email users created via directory synchronization or the EAC. For more information about managing users, EOP admins can refer to [Manage mail users in EOP](manage-mail-users-in-eop.md). For EOP standalone customers, we recommend using directory synchronization and enabling Directory Based Edge Blocking; for more information, see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
+A. You configure how long spam, phishing, and bulk email messages are kept in the quarantine by using anti-spam policies. The default is 30 days, which is also the maximum. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)
 
- **Q. What messages can end users access in quarantine?**
+For messages that were quarantined by the mail flow rule action **Deliver the message to the hosted quarantine**, the messages are kept in quarantine for 30 days. You can't configure this duration.
 
-A. End users can access their own phish, spam, and bulk mail. End users can't access their own malware, high confidence phish, or messages that matched a mail flow rule (also known as a transport rule); these are only available in the admin quarantine. 
+After the time period expires, the messages are deleted and are not recoverable.
 
- **Q. For how long are messages kept in the quarantine?**
+## Q: Can I release or report more than one quarantined message at a time?
 
-A. By default, spam-quarantined messages are kept in the quarantine for 30 days, while quarantined messages that matched a mail flow rule are kept in the quarantine for up to 30 days based on the retention period set in your default content filter policy. After this period of time the messages are deleted and are not retrievable. The retention period for quarantined messages that matched a mail flow rule is not configurable. However, the retention period for spam-quarantined messages can be lowered via the **Retain spam for (days)** setting in your content filter policies. For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md).
+A. In the Security & Compliance Center, you can select and release up to 100 messages at a time.
 
- **Q. Can I release or report more than one quarantined message at a time?**
+Admins can use the the [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) and [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) cmdlets in Exchange Online PowerShell or standalone Exchange Online Protection PowerShell to find and release quarantined messages in bulk, and to report false positives in bulk.
 
-A. Yes, up to 100 messages can be released at one time in the Quarantine portal. In addition, admins can create a remote Windows PowerShell script to accomplish this task. Use the [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) cmdlet to search for messages, and the [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) cmdlet to release them.
+## Q: Are wildcards supported when searching for quarantined messages? Can I search for quarantined messages for a specific domain?
 
- **Q. Are wildcards supported when searching for quarantined messages? Can I search for quarantined messages for a specific domain?**
+A. Wildcards aren't supported in the Security & Compliance Center. For example, when searching for a sender, you need to specify the full email address. But, you can use wildcards in Exchange Online PowerShell or Exchange Online Protection PowerShell.
 
-A. Wildcards are not supported when specifying search criteria in the Exchange admin center. For example, when searching for a sender, you must specify the full email address.
-
-Using remote Windows PowerShell, admins can specify the [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) cmdlet to search for quarantined messages for a specific domain (for example, contoso.com):
+For example, run the following command to find spam quarantined messages from all senders in the domain contoso.com:
 
 ```powershell
-Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
+$CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
 ```
 
-The results can be passed to the [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) cmdlet. Include the -ReleaseToAll parameter to release the message to all recipients. Once a message is released, it can't be released again.
+Then, run the following command to release those messages to all original recipients:
 
 ```powershell
-Get-QuarantineMessage | ? {$_.Senderaddress -like "*@contoso.com"}
+$CQ | foreach {Release-QuarantineMessage -Identity $CQ.Identity -ReleaseToAll}
 ```
+
+After you release a message, you can't release it again.
