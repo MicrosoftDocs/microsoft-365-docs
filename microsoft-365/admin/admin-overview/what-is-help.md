@@ -3,11 +3,11 @@ title: "How to get help in the Microsoft 365 admin center"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
--layout: LandingPage
+layout: LandingPage
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-- ms.topic: landing-page
+ms.topic: landing-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
