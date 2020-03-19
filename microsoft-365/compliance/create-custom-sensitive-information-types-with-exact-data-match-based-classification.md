@@ -80,7 +80,7 @@ Setting up and configuring EDM-based classification involves saving sensitive da
 
       (You can copy, modify, and use our example.)
 
-       ```xml
+      ```xml
       <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
             <DataStore name="PatientRecords" description="Schema for patient records" version="1">
                   <Field name="PatientID" searchable="true" />
@@ -133,26 +133,26 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
 
 3. To update your database schema, run the following cmdlets, one at a time:
 
-```powershell
-$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
-Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
-```
+      ```powershell
+      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
+      Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
+      ```
 
-You will be prompted to confirm, as follows:
+      You will be prompted to confirm, as follows:
 
-> Confirm
->
-> Are you sure you want to perform this action?
->
-> EDM Schema for the data store 'patientrecords' will be updated.
->
-> \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
+      > Confirm
+      >
+      > Are you sure you want to perform this action?
+      >
+      > EDM Schema for the data store 'patientrecords' will be updated.
+      >
+      > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
 
-> [!TIP]
-> If you want your changes to occur without confirmation, in Step 3, use this cmdlet instead: Set-DlpEdmSchema -FileData $edmSchemaXml
+      > [!TIP]
+      > If you want your changes to occur without confirmation, in Step 3, use this cmdlet instead: Set-DlpEdmSchema -FileData $edmSchemaXml
 
-> [!NOTE]
-> It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
+      > [!NOTE]
+      > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
 
 ## Removing the schema for EDM-based classification
 
