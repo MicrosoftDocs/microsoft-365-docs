@@ -518,7 +518,7 @@ The final step is to provide your partner with the following information so they
     https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
     ```
 
-- The sign-in credentials (Office 365 user ID and password) of the third-party data mailbox that you created in Step 2. These credentials are required so that the partner connector can access and import items to user mailboxes and to the third-party data mailbox.
+- The sign-in credentials (Microsoft 365 user ID and password) of the third-party data mailbox that you created in Step 2. These credentials are required so that the partner connector can access and import items to user mailboxes and to the third-party data mailbox.
  
 ## Step 5: Register the third-party data connector in Azure Active Directory
 

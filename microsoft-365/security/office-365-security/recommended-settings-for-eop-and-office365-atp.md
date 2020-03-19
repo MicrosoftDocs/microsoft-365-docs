@@ -27,7 +27,7 @@ Although we empower security administrators to customize their security settings
 > [!IMPORTANT]
 > The Junk Email Configuration has to be enabled on the mailbox in order for filtering to work properly. This is enabled by default, but should be checked if filtering does not seem to be working. Read [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) to find out more. 
 
-This topic describes these Microsoft-recommended settings to help protect your Office 365 users.
+This topic describes these Microsoft-recommended settings to help protect your users.
 
 > [!TIP]
 > There is a new PowerShell Module that you can download called the Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) that helps determine some of these settings. When run as an admin in your tenant, Get-ORCAReport will help generate an assessment of the anti-spam, anti-phish, and other message hygiene settings. You can download this module at https://www.powershellgallery.com/packages/ORCA/.
