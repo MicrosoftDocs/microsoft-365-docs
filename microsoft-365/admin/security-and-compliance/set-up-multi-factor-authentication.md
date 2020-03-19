@@ -26,7 +26,7 @@ monikerRange: 'o365-worldwide'
 
 # Set up multi-factor authentication
   
-Every new Office 365 for business or Microsoft 365 Business subscription will automatically have security defaults turned on. This means that every user will have to set up multi-factor authentication (MFA) and install the Authenticator app on their mobile device. For more information, see [Set up 2-step verification for Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
+Every new Microsoft 365 for business subscription will automatically have security defaults turned on. This means that every user will have to set up multi-factor authentication (MFA) and install the Authenticator app on their mobile device. For more information, see [Set up 2-step verification for Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
 
 The following nine administrator roles will be required to perform additional authentication every time they sign in:
 - Global administrator
@@ -45,7 +45,7 @@ All other users will be asked to perform additional authentication when needed. 
 > You must be a global admin to set up or modify multi-factor authentication. <br><br>
 > If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
-If you have previously set up MFA with baseline policies, [you must turn them off and turn on security defaults](#move-from-baseline-policies-to-security-defaults). However, if you have Microsoft 365 Business or your subscription includes [Azure Active Directory Premium 1, or Azure Active Directory Premium 2](https://azure.microsoft.com/pricing/details/active-directory/), you can also set up [conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) policies. To use conditional access policies, you need to make sure [modern authentication is enabled](#enable-multi-factor-authentication-for-your-organization).
+If you have previously set up MFA with baseline policies, [you must turn them off and turn on security defaults](#move-from-baseline-policies-to-security-defaults). However, if you have Microsoft 365 Business Premium or your subscription includes [Azure Active Directory Premium 1, or Azure Active Directory Premium 2](https://azure.microsoft.com/pricing/details/active-directory/), you can also set up [conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) policies. To use conditional access policies, you need to make sure [modern authentication is enabled](#enable-multi-factor-authentication-for-your-organization).
 
 ## Manage security defaults
 
@@ -101,6 +101,6 @@ To check your MA status for Exchange Online, please visit [Enable modern authent
 
 ## Related articles
 
-[Top 10 ways to secure Office 365 and Microsoft 365 Business plans](secure-your-business-data.md)
+[Top 10 ways to secure Microsoft 365 for business plans](secure-your-business-data.md)
 
 [Enable Modern Authentication for Office 2013 on Windows devices](enable-modern-authentication.md)

@@ -25,14 +25,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: "Help your users install Office apps on Windows 10 devices and easily install Office on Windows 10 PCs from the Microsoft 365 Business admin center."
+description: "Help your users install Office apps on Windows 10 devices and easily install Office on Windows 10 PCs from the Microsoft 365 admin center."
 ---
 
 # Help your users install Office on Windows 10 devices
 
 [![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-You can quickly and easily install Office on Windows 10 PCs from the Microsoft 365 Business admin center.
+You can quickly and easily install Office on Windows 10 PCs from the Microsoft 365 admin center.
   
 To understand how this works with previously installed Office apps, read [Prepare for Office client installation](prepare-for-office-client-deployment.md) before you get started.
 

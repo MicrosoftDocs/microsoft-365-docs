@@ -71,7 +71,7 @@ The Microsoft 365 subscription that your organization is upgraded to depends on 
 |:-----|:-----|
 |**How the wizard was launched** <br/> |**Subscription options** <br/> |
 |By using the Admin tile in the app launcher  <br/> |Microsoft 365 Business Basic  <br/> |
-|By choosing **Upgrade to Microsoft 365** in Skype Meetings  <br/> |Microsoft 365 Business Basic or Microsoft 365 Business Standard  <br/> |
+|By choosing **Upgrade to Microsoft 365 for business** in Skype Meetings  <br/> |Microsoft 365 Business Basic or Microsoft 365 Business Standard  <br/> |
    
 ## What's next?
 

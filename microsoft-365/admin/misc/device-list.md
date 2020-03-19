@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
-description: "Learn how to make a CSV file for AutoPilo tin Microsoft 365 Business."
+description: "Learn how to make a CSV file for AutoPilot in Microsoft 365 for business."
 ---
 
 # Device list CSV-file
