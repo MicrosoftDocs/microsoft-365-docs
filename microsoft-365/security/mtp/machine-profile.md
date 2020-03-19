@@ -24,9 +24,7 @@ You can also use the Machine profile to perform common security-related tasks, a
 
 ## Navigating the Machine profile page
 
-The Machine profile page can be accessed by directly selecting a device name on the Machines list or by choosing **Open Machine page** on the Machines list flyout.
-
-Once you have the page open, you'll find that it is broken up into three sections.
+The machine profile page is broken up into three sections.
 
 ![Image of machine profile page with (1) Tab area (2) Sidebar and (3) Actions highlighted in red](../../media/mtp-machine-profile/mtp-machine-profile-all.png)
 
