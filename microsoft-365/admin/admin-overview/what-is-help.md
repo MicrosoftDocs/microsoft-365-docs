@@ -28,20 +28,12 @@ description: "Learn about all the ways you can get help using the Microsoft 365 
 
 If you're an admin, [admin.microsoft.com](https://admin.microsoft.com) is your go-to place to manage and make the most of your Microsoft 365 subscription. Sometimes you may not find the right task, need more context before embarking on a task flow, or simply may not be sure of the scope and impact of your actions as an admin. To cover those situations, we provide modern help and intelligent assistance throughout the Microsoft 365 admin center in these ways:
 
-
-
-
-
-
-
-
-
 <ul class="panelContent cardsW">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
-                    <a href="what-is-help.md#integrated-help">
+                    <a href="what-is-help.md">
                         <div class="cardImageOuter">
                             <div class="cardImage">
                                 <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
