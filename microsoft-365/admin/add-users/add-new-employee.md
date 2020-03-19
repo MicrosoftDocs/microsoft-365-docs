@@ -71,7 +71,7 @@ And here's a quick reference to help get them started:
   
 |**Task**|**Find the details**|
 |:-----|:-----|
-|Sign in to Office  <br/> |Go to [https://www.office.com](https://www.office.com), select **Sign in**, and then enter your Office 365 user ID and password.  <br/> |
+|Sign in to Office  <br/> |Go to [https://www.office.com](https://www.office.com), select **Sign in**, and then enter your user ID and password.  <br/> |
 |Install Office apps onto your computer.  <br/><br/> |When you sign in, the home page has a link to download and install apps like Word and Outlook.  Select **Install Office**.         For instructions, see [How to install Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).  <br/> |
 |Set up your email in Outlook 2016 .  <br/> |Once Office apps are installed on your computer, set up your email. For instructions, see [How to setup Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).  <br/> |
 |Set up Skype for Business so you can connect with co-workers or business partners in your company or around the world. You can start conversations with IM, voice, or video calls.  <br/> |[Install Skype for Business on your computer](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx).  <br/> <br/>To learn how to use Skype for Business, [watch a video.](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>Have you set up Skype for Business so your employees can contact people external to your business who are using the free Skype app? If not, tell your new employee so they know what to expect when using Skype for Business.  <br/> |

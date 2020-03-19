@@ -20,7 +20,7 @@ description: "To prevent phishing messages from reaching your mailbox, Outlook.c
 # Unverified Sender
 
 > [!NOTE]
-> These updates are rolling out now, and might not be available for all users. This feature is supported for Enterprise Outlook.com and Enterprise Outlook Win32 desktop users. It is not currently available for consumer Office 365 users.
+> These updates are rolling out now, and might not be available for all users. This feature is supported for Enterprise Outlook.com and Enterprise Outlook Win32 desktop users. It is not currently available for consumer Microsoft 365 users.
 
 To prevent phishing messages from reaching your mailbox, Office 365 verifies that the senders are who they say they are and mark suspicious messages as junk email.
 

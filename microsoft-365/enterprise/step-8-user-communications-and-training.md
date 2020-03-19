@@ -40,7 +40,7 @@ The good news is if you are moving from Windows 7 and Office 2010 or Office 2013
 
 ## Getting ready for new experiences
 
-Starting with Office, if you’re deploying Microsoft 365 Apps for enterprise for the first time, this is when you can communicate the benefits of signing in to Office apps and saving files to OneDrive or SharePoint locations to enable easier sharing, reduce file branching and enable real-time co-authoring.
+Starting with Office, if you're deploying Microsoft 365 Apps for enterprise for the first time, this is when you can communicate the benefits of signing in to Office apps and saving files to OneDrive or SharePoint locations to enable easier sharing, reduce file branching and enable real-time co-authoring.
 
 Detailed communication and training templates are available for these and other local or browser-based apps, like Teams and Planner.
 
@@ -56,7 +56,7 @@ There are also visible security and compliance controls that your users may be e
 
 For example, if you've enabled Multi-factor Authentication, this uses Azure AD --and protects user sign-in to resources by leveraging a phone app or PIN to securely access services. And Azure Information Protection makes it easy for users to classify and label documents.
 
-[Set up multi-factor authentication for Office 365 users](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Set up multi-factor authentication for users](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 These are just a handful of new capabilities that will be experienced by your users and some may catch them by surprise – either in a positive or less positive way. And these surprises – especially if they alter the normal work flow – can result in more calls and tickets for you or your helpdesk.
 
@@ -72,15 +72,15 @@ To help minimize the risk associated with changes in the user experience, we rec
 
 Phased deployment using deployment rings is the concept of starting with small groups then broadened deployment scale in a measured way over time. Normally by the time a communication and training plan is drafted, these rings and their members should be formed. This way, you can reduce potential risk and validate your approach as you continually open the deployment valve, or pause activities if needed, for example, when you see more helpdesk calls come in than expected.
 
-Deployment rings are best created in cooperation with business units and their managers. You’ll want an understanding of critical dates and times to avoid when deploying or making changes. Without careful planning and buy-in from stakeholders, it will be difficult to get users on-board and comfortable with any changes coming their way.
+Deployment rings are best created in cooperation with business units and their managers. You'll want an understanding of critical dates and times to avoid when deploying or making changes. Without careful planning and buy-in from stakeholders, it will be difficult to get users on-board and comfortable with any changes coming their way.
 
 ![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
 
 ### Phase 1: The IT Team and Early Adopter Insiders 
 
-It’s usually best to begin your deployment with the IT team and enthusiastic early adopters, who volunteer for early access. With these “insiders” you can test your communications, the impacts of change and the effectiveness of your communications and training. During this phase, IT runs small pilots, learns troubleshooting and automation techniques to help during broader deployment phases.
+It's usually best to begin your deployment with the IT team and enthusiastic early adopters, who volunteer for early access. With these "insiders" you can test your communications, the impacts of change and the effectiveness of your communications and training. During this phase, IT runs small pilots, learns troubleshooting and automation techniques to help during broader deployment phases.
 
-It’s important to have engaged members in the initial pilot phase, to make sure they are documenting their observations and feeding back to the process. Also, it’s good to have champions outside the IT team that help extend organic, word-of-mouth communication of new capabilities, and they’ll often be first line of support when users in later phases need help.
+It's important to have engaged members in the initial pilot phase, to make sure they are documenting their observations and feeding back to the process. Also, it's good to have champions outside the IT team that help extend organic, word-of-mouth communication of new capabilities, and they'll often be first line of support when users in later phases need help.
 
 ### Phase 2: Pilot 
 
@@ -90,7 +90,7 @@ Remember, all PCs in this phase and future phases should be logging up to the An
 
 For this phase it is especially important to communicate changes and help users take advantage of new capabilities. Users can often de-prioritize or ignore email or other communications coming from IT – so it helps to meet with management to get their help in communicating change and drive adoption of new tools and technology.
 
-You’ll also need their input on timeframes to avoid, so you can minimize user disruption – for example the finance team may be particularly sensitive at the end of fiscal quarters or product development teams during a product launch.
+You'll also need their input on timeframes to avoid, so you can minimize user disruption – for example the finance team may be particularly sensitive at the end of fiscal quarters or product development teams during a product launch.
 
 In parallel to planning for devices, users, departments and timing, you can start to build your communication and training plans, as well as begin compiling content or engaging outside resources to help train users.
 
@@ -100,31 +100,31 @@ To help your effort in pulling together training content, you can access a compr
 
 [Microsoft FastTrack Productivity Library](https://www.microsoft.com/microsoft-365/success/?rtc=2)
 
-There are hundreds of topics, based on what’s important to your organization, including: creating more impactful content, sharing sites and content, transforming teamwork and unlocking productivity with modern devices.
+There are hundreds of topics, based on what's important to your organization, including: creating more impactful content, sharing sites and content, transforming teamwork and unlocking productivity with modern devices.
 
-Also, if you are using Microsoft 365 or Office 365, there is good chance that you’re eligible for help with driving user adoption via Microsoft’s FastTrack service. Representatives guide you through adoption best practices as you go through the Microsoft 365 – Windows, Office and EMS – rollout process.
+Also, if you are using Microsoft 365 or Office 365, there is good chance that you're eligible for help with driving user adoption via Microsoft's FastTrack service. Representatives guide you through adoption best practices as you go through the Microsoft 365 – Windows, Office and EMS – rollout process.
 
 #### Microsoft IT Showcase 
 
-Microsoft’s IT Showcase series is another great resource for Windows 10 deployment-related content. It includes timelines and schedules, digital promotion templates, email templates and Intranet content. These are based on materials used for Microsoft’s own deployment of Windows 10 and has been modified for any organization to use.
+Microsoft's IT Showcase series is another great resource for Windows 10 deployment-related content. It includes timelines and schedules, digital promotion templates, email templates and Intranet content. These are based on materials used for Microsoft's own deployment of Windows 10 and has been modified for any organization to use.
 
 [Preparing your organization for a seamless Windows 10 deployment](https://www.microsoft.com/itshowcase/windows10deployment)
 
-These components and services together can be fine-tuned during the pilot phase. And as you start to realize what’s resonating with users on the training side of things, which devices to target and via Analytics and which devices or user groups to avoid or delay, you can begin to broaden your deployment in later phases using a data- and experience-driven approach.
+These components and services together can be fine-tuned during the pilot phase. And as you start to realize what's resonating with users on the training side of things, which devices to target and via Analytics and which devices or user groups to avoid or delay, you can begin to broaden your deployment in later phases using a data- and experience-driven approach.
 
-As your pilot expands, you’ll want to document and publish frequently asked questions and self-service content to help proactively reduce support tickets and helpdesk activities.
+As your pilot expands, you'll want to document and publish frequently asked questions and self-service content to help proactively reduce support tickets and helpdesk activities.
 
 ![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
 
 ### Phase 3 and beyond: Broad Production deployment 
 
-By the time you reach broad deployment phases, you’ll have refined your processes, communication, training and self-service tools. Now you can use the diagnostic data collected to target more and more PCs.
+By the time you reach broad deployment phases, you'll have refined your processes, communication, training and self-service tools. Now you can use the diagnostic data collected to target more and more PCs.
 
 Deploy at a rate that is manageable to your IT department, help desk, users and network capacity. You can always go back to Step 2 in the deployment process wheel to optimize your network even further using peer to peer cache, LEDBAT and other techniques to facilitate faster transfer of deployment-related data.
 
 In addition to the diagnostic data that you monitor via the analytics tools, you can also monitor Office 365 and Microsoft 365 service usage in a granular way with detailed usage reports in by workload in the admin center and using the admin dashboards via Power BI. These are great tools to help set and track goals as you roll-out new tools for working together – like Microsoft Teams – or new ways to share files – like OneDrive.
 
-New technology acceptance and adoption will go on long after every PC in your organization has Windows 10 and Microsoft 365 Apps for enterprise installed. And users won’t necessarily change how they work – without taking the time to inform and train them of new capabilities. Finally, with the new servicing models providing new capabilities on an ongoing semi-annual schedule for Windows and optionally a monthly schedule for Office, communication will be continual.
+New technology acceptance and adoption will go on long after every PC in your organization has Windows 10 and Microsoft 365 Apps for enterprise installed. And users won't necessarily change how they work – without taking the time to inform and train them of new capabilities. Finally, with the new servicing models providing new capabilities on an ongoing semi-annual schedule for Windows and optionally a monthly schedule for Office, communication will be continual.
 
 ## Previous Step 
 

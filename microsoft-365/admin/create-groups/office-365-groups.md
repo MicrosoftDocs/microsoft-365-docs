@@ -36,7 +36,7 @@ Office 365 Groups is the foundational membership service that drives all teamwor
 
 With an Office 365 group, you don't have to manually assign permissions to each of these resources, because adding members to the group automatically gives them the permissions they need to the tools that the group provides.
 
-Any Office 365 user can create a group unless you [limit group creation to a specific set of people](manage-creation-of-groups.md). Note that if you limit group creation, users who cannot create groups will not be able to create SharePoint sites, Planners, or teams. These services need to be able to create a group using the user context. Users can still participate in group activities, such as creating tasks in Planner or responding to conversations in Outlook, provided they are a member of the group.
+Any user can create a group unless you [limit group creation to a specific set of people](manage-creation-of-groups.md). Note that if you limit group creation, users who cannot create groups will not be able to create SharePoint sites, Planners, or teams. These services need to be able to create a group using the user context. Users can still participate in group activities, such as creating tasks in Planner or responding to conversations in Outlook, provided they are a member of the group.
 
 Groups have the following roles:
 
@@ -80,7 +80,7 @@ Managing your Office 365 Groups is more effective when you have actionable infor
 
 ## Which Office 365 plans include Groups?
 
-Any Office 365 subscription that has Exchange Online and SharePoint Online will support groups. That includes the Business Essentials and Business Premium plans, and the Enterprise E1, E3 and E5 plans. The Group takes on the licensing of the person who creates the Group (also known as the "organizer" of the Group). As long as the organizer has the proper license for whatever features you want the Group to have, that license will convey to the Group.
+Any Microsoft 365 or Office 365 subscription that has Exchange Online and SharePoint Online will support groups. That includes the Business Essentials and Business Premium plans, and the Enterprise E1, E3 and E5 plans. The Group takes on the licensing of the person who creates the Group (also known as the "organizer" of the Group). As long as the organizer has the proper license for whatever features you want the Group to have, that license will convey to the Group.
 
 > [!NOTE]
 > For more details about Office 365 service families and plans, please check [Office 365 plan options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)

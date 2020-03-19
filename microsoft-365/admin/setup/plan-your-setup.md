@@ -33,7 +33,7 @@ When you're ready to run the setup wizard and move your domain to Microsoft 365,
   
 - List of people you want to add to Microsoft 365. Even if you've already added them to Microsoft 365, if you're updating your domain information, you need to enter their names here.
 
-- How you're going to notify your employees of their Office 365 user ID and password so they can sign in. Are you going to call them with the info? Or send it to their personal email address? They won't have access to their email, so you can't use that.
+- How you're going to notify your employees of their user ID and password so they can sign in. Are you going to call them with the info? Or send it to their personal email address? They won't have access to their email, so you can't use that.
 
 - If you have a domain name for your organization (such as contoso.com) **and** you plan on using Microsoft email, you'll need to know where your domain is registered and have sign-in information.
 

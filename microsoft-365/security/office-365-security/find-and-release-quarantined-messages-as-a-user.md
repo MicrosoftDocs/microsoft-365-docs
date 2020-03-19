@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: "As an Office 365 user, you can manage your own spam-quarantined messages in one of two ways: by responding to spam notifications sent to you directly (if your admin has set up this feature), or by using the spam quarantine feature in the Security &amp; Compliance Center."
+description: "As a Microsoft 365 user, you can manage your own spam-quarantined messages in one of two ways: by responding to spam notifications sent to you directly (if your admin has set up this feature), or by using the spam quarantine feature in the Security &amp; Compliance Center."
 ---
 
 # Find and release quarantined messages as a user
 
-As an Office 365 user, you can manage messages that were sent to quarantine instead of sent to you in one of two ways: by [responding to spam notifications sent to you directly](use-spam-notifications-to-release-and-report-quarantined-messages.md) (if your admin has set this up), or by using the Security &amp; Compliance Center.
+As a Microsoft 365 user, you can manage messages that were sent to quarantine instead of sent to you in one of two ways: by [responding to spam notifications sent to you directly](use-spam-notifications-to-release-and-report-quarantined-messages.md) (if your admin has set this up), or by using the Security &amp; Compliance Center.
 
 > [!NOTE]
 > If you're an admin, you can [manage quarantined messages](manage-quarantined-messages-and-files.md) for other people in your organization.

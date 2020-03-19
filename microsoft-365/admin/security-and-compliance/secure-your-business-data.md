@@ -68,7 +68,7 @@ To set up multi-factor authentication:
 
 After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
   
-For full details and complete recommendations, see [Set up multi-factor authentication for Office 365 users](set-up-multi-factor-authentication.md).
+For full details and complete recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
   
 ## 2: Train your users
 <a name="train"> </a>

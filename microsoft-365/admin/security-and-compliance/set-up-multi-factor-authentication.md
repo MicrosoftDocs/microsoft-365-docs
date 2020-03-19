@@ -1,5 +1,5 @@
 ---
-title: "Set up multi-factor authentication for Office 365 users"
+title: "Set up multi-factor authentication for users"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,7 +20,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-description: "Learn how to use security defaults to set up multi-factor authentication for Office 365 users."
+description: "Learn how to use security defaults to set up multi-factor authentication for users."
 monikerRange: 'o365-worldwide'
 ---
 

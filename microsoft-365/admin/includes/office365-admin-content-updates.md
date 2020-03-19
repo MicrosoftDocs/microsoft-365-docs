@@ -141,7 +141,7 @@
 | 1/10/2020 | [Quick help Ways to manage contacts](/Office365/Admin/misc/ways-to-manage-contacts?view=o365-worldwide) | modified |
 | 1/10/2020 | [What happens if I cancel a subscription?](/Office365/Admin/misc/what-happens-if-i-cancel?view=o365-worldwide) | modified |
 | 1/10/2020 | [Why can't I switch Office 365 for business plans?](/Office365/Admin/misc/why-can-t-i-switch-plans?view=o365-worldwide) | modified |
-| 1/10/2020 | [Set up multi-factor authentication for Office 365 users](/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
+| 1/10/2020 | [Set up multi-factor authentication for users](/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
 | 1/10/2020 | [Buy or try subscriptions for Office 365 operated by 21Vianet](/Office365/Admin/services-in-china/buy-or-try-subscriptions?view=o365-21vianet) | modified |
 | 1/10/2020 | [Create DNS records for Office 365 when you manage your DNS records](/Office365/Admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) | modified |
 | 1/10/2020 | [What's the purpose of the Office 365 CNAME record for MSOID?](/Office365/Admin/services-in-china/purpose-of-cname?view=o365-21vianet) | modified |
@@ -180,7 +180,7 @@
 | 1/14/2020 | [Cancel your subscription](/Office365/Admin/subscriptions-and-billing/cancel-your-subscription?view=o365-worldwide) | modified |
 | 1/14/2020 | [Customize the reports in Microsoft 365 usage analytics](/Office365/Admin/usage-analytics/customize-reports?view=o365-worldwide) | modified |
 | 1/15/2020 | [Add, update, or remove your payment methods](/Office365/Admin/subscriptions-and-billing/add-update-or-remove-credit-card-or-bank-account?view=o365-worldwide) | modified |
-| 1/17/2020 | [Set up multi-factor authentication for Office 365 users](/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
+| 1/17/2020 | [Set up multi-factor authentication for users](/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
 
 
 ## Week of January 20, 2020
@@ -189,5 +189,5 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 1/21/2020 | [Set the password expiration policy for your organization](/Office365/Admin/manage/set-password-expiration-policy?view=o365-worldwide) | modified |
-| 1/21/2020 | [Set up multi-factor authentication for Office 365 users](/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
+| 1/21/2020 | [Set up multi-factor authentication for users](/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
 | 1/21/2020 | [Upgrade your Office 365 for business users to the latest Office client](/Office365/Admin/setup/upgrade-users-to-latest-office-client?view=o365-worldwide) | modified |

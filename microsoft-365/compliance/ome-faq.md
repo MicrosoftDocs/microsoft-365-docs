@@ -94,7 +94,7 @@ You can create protected messages from Outlook 2016, and Outlook 2013 for Window
   
 ## What email clients are supported to read and reply to protected emails?
 
-Office 365 users can read and respond from Outlook for Windows and Mac (2013 and 2016), Outlook on the web, and Outlook mobile (Android and iOS). You can also use the iOS native mail client if your organization allows it. If you are a non-Office 365 user, you can read and reply to encrypted messages on the web through your web browser.
+Microsoft 365 users can read and respond from Outlook for Windows and Mac (2013 and 2016), Outlook on the web, and Outlook mobile (Android and iOS). You can also use the iOS native mail client if your organization allows it. If you are not a Microsoft 365 user, you can read and reply to encrypted messages on the web through your web browser.
   
 ## What file types are supported as attachments in protected emails? Do attachments inherit the protection policies associated with protected emails?
 
