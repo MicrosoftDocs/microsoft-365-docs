@@ -40,9 +40,9 @@ You can't remove a license from a subscription if it's assigned to a user. If yo
 
 ## What you need to know about buying licenses for your business subscription
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
-2. On the **Products & services** page, find the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**.
+2. On the **Your products** page, find the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**.
 
     [What if I don't see the Add/Remove licenses link?](#what-if-i-dont-see-the-addremove-licenses-link)
 

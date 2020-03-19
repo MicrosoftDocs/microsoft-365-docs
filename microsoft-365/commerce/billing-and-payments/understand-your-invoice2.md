@@ -101,9 +101,9 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 
 ### Use the new admin center to change your purchase order number
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
-2. If you’re in **Table** view, select **Cards** to switch views.
+2. If you're in **Table** view, select **Cards** to switch views.
 
 3. Find the subscription that you want to change.
 

@@ -46,7 +46,7 @@ If you prepaid for your subscription with a product key, your subscription will 
 > [!NOTE]
 > If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Choose the subscription for which you want to manage recurring billing.
  
@@ -58,7 +58,7 @@ If you prepaid for your subscription with a product key, your subscription will 
 
     > [!NOTE]
     > - You can only change the **Recurring billing** setting for active subscriptions. If your subscription has already expired or is disabled, you will need to [reactivate it](reactivate-your-subscription.md) before you can turn **Recurring billing** on or off.
-    > - When **Recurring billing** is turned off, the subscription isn't cancelled right away. It remains active until it expires. You can view the expiration date in the **Billing** section of the subscription details on the **Products & services** page.
+    > - When **Recurring billing** is turned off, the subscription isn't cancelled right away. It remains active until it expires. You can view the expiration date in the **Billing** section of the subscription details on the **Your products** page.
     > - To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).
 
 ::: moniker-end

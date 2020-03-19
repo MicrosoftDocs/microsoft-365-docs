@@ -24,7 +24,7 @@ A billing account is created when you sign up to try or buy Microsoft products. 
 The Microsoft 365 admin center currently supports the following type of billing accounts:
 
 - Microsoft Online Services Program: This billing account is created when you sign up for a Microsoft 365 subscription directly.
-- Microsoft Products & Services Agreement (MPSA) Program: This billing account is created when your organization signs an MPSA Volume Licensing agreement to purchase software and online services.
+- Microsoft Your products Agreement (MPSA) Program: This billing account is created when your organization signs an MPSA Volume Licensing agreement to purchase software and online services.
 - Microsoft Customer Agreement: This billing account is created when your organization works with a Microsoft representative, an authorized partner, or purchases independently.
 
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page provides a view of your commercial accounts with Microsoft. By default, your organization has at least one billing account associated with an agreement that is accepted either at the time of a direct purchase, or through a Volume Licensing arrangement.

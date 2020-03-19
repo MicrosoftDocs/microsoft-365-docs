@@ -27,11 +27,11 @@ Your admin has a read-only view into any subscriptions that you buy. They can se
 
 ## View your subscriptions
 
-You can view a list of all self-service purchased subscriptions that you bought. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+You can view a list of all self-service purchased subscriptions that you bought. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 ## How to buy more or reduce licenses
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription that you want to buy more or reduce licenses for.
 
@@ -71,7 +71,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ## Cancel a subscription
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription that you want to cancel.
 

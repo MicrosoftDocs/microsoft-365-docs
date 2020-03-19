@@ -35,7 +35,7 @@ If your organization uses Active Directory that synchronizes with Azure AD, dele
 
 ## Step 2: Cancel all active subscriptions
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. If the subscriptions list is in **Table** view, on the right, select **Cards**.
 
@@ -47,7 +47,7 @@ If your organization uses Active Directory that synchronizes with Azure AD, dele
 
 ## Step 3: Delete all disabled subscriptions
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. If the subscriptions list is in **Table** view, on the right, select **Cards**.
 
@@ -65,7 +65,7 @@ If your organization uses Active Directory that synchronizes with Azure AD, dele
 
 2. Choose **Multi-factor authentication**.
 
-3. On the multi-factor authentication page, disable all accounts except for the global admin account that you’re currently using.
+3. On the multi-factor authentication page, disable all accounts except for the global admin account that you're currently using.
 
 You can also <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#use-powershell">use PowerShell to disable multi-factor authentication for multiple users</a>.
 

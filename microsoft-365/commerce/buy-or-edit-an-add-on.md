@@ -28,7 +28,6 @@ ms.custom: okr_SMB
 
 Several of the Office 365 for business plans have add-ons that you can buy for your subscription. An add-on provides additional functionality to the subscription that you buy it for.
 
-
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
@@ -100,22 +99,21 @@ Several of the Office 365 for business plans have add-ons that you can buy for y
 
 ::: moniker-end
 
-
 ## Update an add-on
 
-The steps that you use to update an add-on depend on whether the add-on is a traditional add-on, or a standalone add-on. 
+The steps that you use to update an add-on depend on whether the add-on is a traditional add-on, or a standalone add-on.
 
 *Traditional add-ons* are linked to a specific subscription. If you cancel the subscription, the associated add-on is also cancelled.
   
-*Standalone add-ons* are not linked to a specific subscription. Standalone add-ons appear as a separate subscription on the **Subscriptions** page (or on the **Products & services** page in the new admin center), and have their own expiration date. You manage a standalone add-on the same way that you manage any other subscription.
+*Standalone add-ons* are not linked to a specific subscription. Standalone add-ons appear as a separate subscription on the **Subscriptions** page (or on the **Your products** page in the new admin center), and have their own expiration date. You manage a standalone add-on the same way that you manage any other subscription.
   
 ### Update a traditional add-on
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
-2. On the **Products & services** page, select the subscription for which you want to update an add-on.
+2. On the **Your products** page, select the subscription for which you want to update an add-on.
 
 3. Select **Add-ons**. The add-ons that you have purchased are shown.
 
@@ -124,7 +122,6 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
 5. Enter the quantity change you want for the subscription, then select **Submit change**.
 
 ::: moniker-end
-
 
 ::: moniker range="o365-germany"
 
@@ -170,16 +167,15 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
   
     ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
-
 ::: moniker-end
 
 ### Update a standalone add-on
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
-2. On the **Products & services** page, select the add-on subscription that you want to update, and then select **Add/Remove licenses**.
+2. On the **Your products** page, select the add-on subscription that you want to update, and then select **Add/Remove licenses**.
 
 3. Enter the number of licenses that you need in the box, and then select **Submit change**.
 
@@ -214,7 +210,6 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
     ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
-
 
 ## Remove an add-on
 

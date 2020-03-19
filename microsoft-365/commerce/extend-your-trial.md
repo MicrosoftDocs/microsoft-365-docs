@@ -32,9 +32,9 @@ Do you need more time to try out the features of Office 365 for business before 
 > [!NOTE]
 > If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
-2. On the **Products & services** page, find the trial subscription that you want to extend. In the **Settings & Actions** section, select **Extend trial**.
+2. On the **Your products** page, find the trial subscription that you want to extend. In the **Settings & Actions** section, select **Extend trial**.
 
 3. Review the extension information, and if necessary, change your payment method. When you're finished, select **Extend trial**.
 

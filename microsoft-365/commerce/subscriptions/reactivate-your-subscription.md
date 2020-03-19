@@ -38,9 +38,9 @@ If your subscription expires, or was disabled by Microsoft, or if you cancelled 
 > [!NOTE]
 > If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
-2. On the **Products & services** page, find the subscription that you want to reactivate. In the **Billing** section, select **Reactivate**.
+2. On the **Your products** page, find the subscription that you want to reactivate. In the **Billing** section, select **Reactivate**.
   
     If you don't see **Reactivate** as an available action, [call Support](../../admin/contact-support-for-business-products.md) to reactivate your subscription.
 

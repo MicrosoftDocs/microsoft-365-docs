@@ -55,7 +55,7 @@ Include a license for each user that you want to move.
 
 ## Step 3: Check your new subscription and licenses
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. **Verify that both subscriptions are listed and active**
    The subscription that you're moving users from and the subscription that you're moving users to must be listed together. If the new subscription isn't there when you first check, try again later. Check that both subscriptions are active. [The new subscription isn't listed, or isn't active](#the-new-subscription-isnt-listed-or-isnt-active).
@@ -65,7 +65,7 @@ Include a license for each user that you want to move.
     to make sure ten licenses are available.
 
 4. **Need more licenses for the new subscription?**
-   Go to the **Products & services** page and [buy more licenses](../licenses/buy-licenses.md).
+   Go to the **Your products** page and [buy more licenses](../licenses/buy-licenses.md).
 
 > [What about the old licenses?](#what-about-the-old-licenses)
 
