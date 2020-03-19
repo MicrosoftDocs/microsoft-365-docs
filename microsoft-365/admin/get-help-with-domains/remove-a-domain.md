@@ -224,7 +224,7 @@ Still not working? Your domain might need to be manually removed. [Give us a cal
 
 [Domains FAQ](../setup/domains-faq.md)
 
-[Get help with Microsoft 365 domains](get-help-with-domains.md)
+[Get help with Office 365 domains](get-help-with-domains.md)
 
 [Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
