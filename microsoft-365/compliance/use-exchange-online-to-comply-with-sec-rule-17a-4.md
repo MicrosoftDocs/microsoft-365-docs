@@ -58,7 +58,7 @@ Preservation Lock can help you meet the SEC 17a-4 regulatory requirements.
 
 ## How to set up Preservation Lock
 
-You can lock a retention policy by using PowerShell. For more information, see [Locking a retention policy](retention-policies.md#locking-a-retention-policy).
+You can lock a retention policy by using PowerShell. For more information, see [Use Preservation Lock to comply with regulatory requirements](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
 
 ## Known limitations
 

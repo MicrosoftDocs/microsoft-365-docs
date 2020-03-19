@@ -54,7 +54,7 @@ Consider using [retention labels](labels.md) to supplement retention policies. B
 - Start the retention period from when the content was labeled, rather than the age of the content or when it was last modified.
 - Use trainable classifers to identify content to label.
 - Immediately apply a default label for SharePoint documents.
-- Declare content a record as part of the label settings, and then have [records management](records-managemnet.md) control that includes [event-based retention](event-driven-retention.md) to trigger the start of the retention period, and [disposition review](disposition-reviews.md) to review the content before it's permanently deleted.
+- Declare content a record as part of the label settings, and then have [records management](records-management.md) control that includes [event-based retention](event-driven-retention.md) to trigger the start of the retention period, and [disposition review](disposition-reviews.md) to review the content before it's permanently deleted.
 
 ## How a retention policy works with content in place
 
@@ -211,7 +211,7 @@ You can easily apply a retention policy to an entire organization, entire locati
   
 ### Org-wide policy
 
-One of the most powerful features of a retention policy is that it can apply to locations across Office 365, including:
+ne of the most powerful features of a retention policy is that it can apply to locations across Office 365, including:
   
 - Exchange email
     
