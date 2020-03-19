@@ -159,7 +159,7 @@ If you want to hide user level information when you're generating your reports, 
   
 Your user list will look like this:
   
-![Office 365 reports - anonymized user list](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Microsoft 365 reports - anonymized user list](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.
   

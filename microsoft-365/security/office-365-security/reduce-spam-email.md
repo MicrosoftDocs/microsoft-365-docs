@@ -23,7 +23,7 @@ description: "Learn the most common ways to help reduce spam and junk mail in Of
 
 # How to reduce spam email
 
- **Are you getting too much spam in Office 365? Do this.**
+ **Are you getting too much spam? Do this.**
 
 We strongly recommend that you report False Negative messages by [using the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) to help us improve our filters. Additionally, you can submit the message using [Submissions Explorer](admin-submission.md).
 

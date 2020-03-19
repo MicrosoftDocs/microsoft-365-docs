@@ -20,7 +20,7 @@ description: "Summary: A brief explanation of how Microsoft encrypts data in tra
 
 # Encryption for data in transit
 
-In addition to protecting customer data at rest, Microsoft uses encryption technologies to protect Office 365 customer data in transit. 
+In addition to protecting customer data at rest, Microsoft uses encryption technologies to protect customer data in transit. 
 
 Data is in transit:
 

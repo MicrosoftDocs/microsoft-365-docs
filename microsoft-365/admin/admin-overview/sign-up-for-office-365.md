@@ -124,9 +124,9 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
   - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 
     > [!NOTE]
-    > The email address you enter here is different from your Office 365 email address (your logon name, below). Because this is where we also send your billing information, we recommend you use an e-mail address that's appropriate for receiving business email.
+    > The email address you enter here is different from your Microsoft 365 for business email address (your logon name, below). Because this is where we also send your billing information, we recommend you use an e-mail address that's appropriate for receiving business email.
   
-- **A sign-in name (user ID):** This becomes your initial Office 365 email address, just to get you started quickly.
+- **A sign-in name (user ID):** This becomes your initial Microsoft email address, just to get you started quickly.
 
     This is the email address you use to sign in. For example, if your business name is Fourth Coffee, you might choose rob@fourthcoffee.onmicrosoft.com for your user ID.
 

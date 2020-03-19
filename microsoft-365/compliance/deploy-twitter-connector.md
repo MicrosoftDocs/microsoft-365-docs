@@ -179,7 +179,7 @@ The Twitter developer app is now ready to use.
 
 8. Click **Login with Twitter**.
 
-9. On the Twitter sign in page, sign in using the credentials for your organization’s Twitter account.
+9. On the Twitter sign in page, sign in using the credentials for your organization's Twitter account.
 
    ![Sign in to Twitter account](../media/TCimage42.png)
 

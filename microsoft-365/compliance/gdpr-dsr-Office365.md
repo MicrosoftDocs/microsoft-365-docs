@@ -84,7 +84,7 @@ The guidance for responding to DSRs for Customer Data is divided into the follow
 
 To help you determine where to search for personal data or what to search for, it helps to identify the Office 365 applications that people in your organization can use to create and store data in Office 365. Knowing this narrows the Office 365 applications that are in-scope for a DSR and helps you determine how to search for and access personal data that's related to a DSR. Specifically, this means whether you can use the Content Search tool or if you'll have to use the in-app functionality of the application the data was created in.
 
-A quick way to identify the Office 365 applications that people in your organization are using to create Customer Data is to determine which applications are included in your organization's Office 365 subscription. To do this, you can access user accounts in the Office 365 admin portal and look at the product licensing information. See [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
+A quick way to identify the Office 365 applications that people in your organization are using to create Customer Data is to determine which applications are included in your organization's Microsoft 365 for business subscription. To do this, you can access user accounts in the Office 365 admin portal and look at the product licensing information. See [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
 
 ## Using the Content Search eDiscovery tool to respond to DSRs
 
@@ -579,7 +579,7 @@ In addition to deleting personal data in response to a DSR deletion request, a d
 
 After you delete an user account:
 
-- The user can no longer sign-in to Office 365 or access any of your organization's Office 365 resources, such as their OneDrive for Business account, SharePoint Online sites, or their Exchange Online mailbox.
+- The user can no longer sign-in to Office 365 or access any of your organization's Microsoft resources, such as their OneDrive for Business account, SharePoint Online sites, or their Exchange Online mailbox.
 - Personal data, such as email address, alias, phone number, and mailing address, that's associated with the user account is deleted
 - Some Office 365 apps remove information about the user. For example, in Microsoft Flow, the deleted user is removed from the list of owners for a shared flow.
 - System-generated logs about the data subject will be deleted 30 days after the user account is deleted. For more information, see the section [Deleting system-generated logs](#deleting-system-generated-logs).
@@ -1331,7 +1331,7 @@ To assign administrator or owner permissions to a SharePoint Online site so that
 
 #### OneDrive for Business
 
-A global admin can access a user's OneDrive for Business account by using the .
+An global admin can access a user's OneDrive for Business account by using the .
 
 1. Sign in to Office 365 with your global admin credentials.
 2. Go to the admin center.
@@ -1412,7 +1412,7 @@ If your organization determines later that a restriction no longer applies, you 
 
 ### Removing the license for an Office 365 application
 
-As previously explained, licenses for all Office 365 applications that are included in your organization's Office 365 subscription are assigned to all users by default. If necessary to restrict,  access to data that's subject to a DSR, an IT admin can use the Office 365 admin portal temporarily turn off a user's license for an application. If a user then tries to use that application, they'll receive an unlicensed product notification or a message saying they no longer have access. For details, see [Remove licenses from users in Office 365 for business](https://support.office.com/article/Remove-licenses-from-users-in-Office-365-for-business-9B497C85-D0A4-4735-80FA-D3565BC05BD1).
+As previously explained, licenses for all Office 365 applications that are included in your organization's Microsoft 365 for business subscription are assigned to all users by default. If necessary to restrict,  access to data that's subject to a DSR, an IT admin can use the Office 365 admin portal temporarily turn off a user's license for an application. If a user then tries to use that application, they'll receive an unlicensed product notification or a message saying they no longer have access. For details, see [Remove licenses from users in Office 365 for business](https://support.office.com/article/Remove-licenses-from-users-in-Office-365-for-business-9B497C85-D0A4-4735-80FA-D3565BC05BD1).
 
 **Notes:**
 

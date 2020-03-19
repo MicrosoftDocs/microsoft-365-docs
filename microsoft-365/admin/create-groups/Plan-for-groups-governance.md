@@ -283,7 +283,7 @@ For years organizations have relied on distribution groups to communicate and co
 - [SharePoint Modernization Scanner](https://github.com/SharePoint/sp-dev-modernization/tree/master/Tools/SharePoint.Modernization) (a tool located on GitHub)
 
 ### <a name="groups-reporting"></a>Groups reporting
-The Office 365 Reports dashboard shows you the activity overview across the Office 365 products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product.
+The Microsoft 365 Reports dashboard shows you the activity overview across the Office 365 products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product.
 > [!TIP]
 >- You can use the Groups activity reports to gain insights into the activity of Office 365 Groups in your organization and see how many Groups are being created and used.
 >-The Office 365 groups report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days.
@@ -299,7 +299,7 @@ The Office 365 Reports dashboard shows you the activity overview across the Offi
 
 
 #### *Resources*
-- [Office 365 Reports in the admin center](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
+- [Microsoft 365 Reports in the admin center](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
 - [Office 365 Adoption content pack](https://support.office.com/article/Office-365-Adoption-Content-Pack-77ff780d-ab19-4553-adea-09cb65ad0f1f)
 - [Azure AD content pack](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-power-bi-content-pack-how-to)
 - [Microsoft Graph groups activity API](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/office_365_groups_activity_reports)

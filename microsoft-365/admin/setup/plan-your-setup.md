@@ -33,9 +33,9 @@ When you're ready to run the setup wizard and move your domain to Microsoft 365,
   
 - List of people you want to add to Microsoft 365. Even if you've already added them to Microsoft 365, if you're updating your domain information, you need to enter their names here.
 
-- How you're going to notify your employees of their Microsoft 365 user ID and password so they can sign in. Are you going to call them with the info? Or send it to their personal email address? They won't have access to their Microsoft 365 email, so you can't use that.
+- How you're going to notify your employees of their Office 365 user ID and password so they can sign in. Are you going to call them with the info? Or send it to their personal email address? They won't have access to their email, so you can't use that.
 
-- If you have a domain name for your organization (such as contoso.com) **and** you plan on using Microsoft 365 email, you'll need to know where your domain is registered and have sign-in information.
+- If you have a domain name for your organization (such as contoso.com) **and** you plan on using Microsoft email, you'll need to know where your domain is registered and have sign-in information.
 
 ## What happens when you run the Microsoft 365 setup wizard
 
@@ -44,7 +44,7 @@ The setup wizard walks you through installing the Microsoft 365 apps on your com
 > [!NOTE]
 > If you need to [Assign admin roles in Microsoft 365 for business](../add-users/assign-admin-roles.md) to the users you add in the wizard, you can do that later on the **Users** page. 
   
-If you don't complete the setup wizard, you can complete setup tasks at any time from [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) > **Setup**. From here you can migrate email and contacts from another email service, change the domain of your admin account, manage your billing information, add or remove users, reset passwords, and do other business functions. For more information about the differences between the setup wizard and the **Setup** page, see [Differences between the Microsoft 365 setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
+If you don't complete the setup wizard, you can complete setup tasks at any time from [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) > **Setup**. From here you can migrate email and contacts from another email service, change the domain of your admin account, manage your billing information, add or remove users, reset passwords, and do other business functions. For more information about the differences between the setup wizard and the **Setup** page, see [Differences between the Office 365 setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
 
 If you get stuck at any point, call us. [We're here to help!](../contact-support-for-business-products.md)
   
@@ -92,7 +92,7 @@ If you're going to use Microsoft 365 for your email:
 
 - After you update your domain host, the changes typically take effect in just an hour or two. But be aware that it can sometimes take up to 72 hours for the changes to update across the internet.
 
-- Because you might have email downtime, we recommend you plan to switch to Microsoft 365 email during an evening or weekend when you receive fewer emails.
+- Because you might have email downtime, we recommend you plan to switch to Microsoft email during an evening or weekend when you receive fewer emails.
 
 ### Plan to move your existing email, contacts, and calendar
   

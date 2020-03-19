@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at DNSMadeEasy"
+title: "Create DNS records at DNSMadeEasy for Microsoft"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,26 +19,26 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e158b079-b054-4b7e-8e01-e55169ce18d7
-description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at DNSMadeEasy for Microsoft 365."
+description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at DNSMadeEasy for Microsoft."
 ---
 
-# Create DNS records at DNSMadeEasy
+# Create DNS records at DNSMadeEasy for Microsoft
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
   
 If DNSMadeEasy is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
   
-After you add these records at DNSMadeEasy, your domain will be set up to work with Microsoft 365 services.
+After you add these records at DNSMadeEasy, your domain will be set up to work with Microsoft services.
   
-To learn about webhosting and DNS for websites with Microsoft 365, see [Use a public website with Microsoft 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+To learn about webhosting and DNS for websites with Microsoft, see [Use a public website with Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
   
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records in Microsoft 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Add a TXT record for verification
 <a name="BKMK_verify"> </a>
 
-Before you use your domain with Microsoft 365, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft 365 that you own the domain.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
@@ -59,17 +59,17 @@ Before you use your domain with Microsoft 365, we have to make sure that you own
     ||||
     |:-----|:-----|:-----|
     |**Name** <br/> |**Value** <br/> |**TTL** <br/> |
-    |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |1800  <br/> |
+    |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |1800  <br/> |
    
 5. Select **Submit**.
     
 6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record.
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record.
   
-When Microsoft 365 finds the correct TXT record, your domain is verified.
+When Microsoft finds the correct TXT record, your domain is verified.
   
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
+1. In the Microsoft admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
     
 2. On the **Domains** page, select the domain that you are verifying. 
@@ -79,9 +79,9 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
 4. On the **Verify domain** page, select **Verify**.
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records in Microsoft 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
-## Add an MX record so email for your domain will come to Microsoft 365
+## Add an MX record so email for your domain will come to Microsoft
 <a name="BKMK_add_MX"> </a>
 
 1. To get started, go to your domains page at DNSMadeEasy by using [this link](https://cp.dnsmadeeasy.com/). You'll be prompted to login first.
@@ -104,7 +104,7 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
     
     |**Name**|**Server**|**MX Level**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your \<*domain-key*\> from your Microsoft 365 account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |1800  <br/> |
+    |(Leave this field empty.)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your \<*domain-key*\> from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |1800  <br/> |
    
     ![DNSMadeEasy-BP-Configure-2-2](../../media/69b53af9-1eec-435c-8434-1b6058c1ec82.png)
   
@@ -124,7 +124,7 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
     
     ![DNSMadeEasy-BP-Configure-2-5](../../media/03c405e5-868f-468f-b6d2-046d27b201fb.png)
   
-## Add the five CNAME records that are required for Microsoft 365
+## Add the five CNAME records that are required for Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 1. To get started, go to your domains page at DNSMadeEasy by using [this link](https://cp.dnsmadeeasy.com/). You'll be prompted to login first.
@@ -165,7 +165,7 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft 365. Instead, add the required Microsoft 365 values to the current record so that you have a  *single*  SPF record that includes both sets of values. Need examples? Check out these [External Domain Name System records for Microsoft 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). To validate your SPF record, you can use one of these[SPF validation tools](../setup/domains-faq.md). 
+> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. Need examples? Check out these [External Domain Name System records for Microsoft](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). To validate your SPF record, you can use one of these[SPF validation tools](../setup/domains-faq.md). 
   
 1. To get started, go to your domains page at DNSMadeEasy by using [this link](https://cp.dnsmadeeasy.com/). You'll be prompted to login first.
     
@@ -189,7 +189,7 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
     
     ![DNSMadeEasy-BP-Configure-4-3](../../media/8a1c53c3-1222-4127-a190-70f6f5059433.png)
   
-## Add the two SRV records that are required for Microsoft 365
+## Add the two SRV records that are required for Microsoft
 <a name="BKMK_add_SRV"> </a>
 
 1. To get started, go to your domains page at DNSMadeEasy by using [this link](https://cp.dnsmadeeasy.com/). You'll be prompted to login first.
@@ -222,6 +222,6 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
     In the **SRV Records** section, select the **(+)** control ( **Add new**), create a record by using the values from the next row in the table, and then again select **Submit** to complete that record. 
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records in Microsoft 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 

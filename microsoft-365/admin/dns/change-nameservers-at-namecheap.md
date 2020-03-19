@@ -1,5 +1,5 @@
 ---
-title: "Change nameservers to set up Microsoft 365 with Namecheap"
+title: "Change nameservers to set up Microsoft with Namecheap"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84f467f6-28cf-40f0-94d0-a2a27ddfc2e7
-description: "Learn to set up your Microsoft 365 custom domain with Namecheap if you want Microsoft 365 to manage your DNS records. "
+description: "Learn to set up your Microsoft custom domain with Namecheap if you want Microsoft to manage your DNS records. "
 ---
 
-# Change nameservers to set up Microsoft 365 with Namecheap
+# Change nameservers to set up Microsoft with Namecheap
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.
   
-Follow these instructions if you want Microsoft 365 to manage your Microsoft 365 DNS records for you. (If you prefer, you can [manage all your Microsoft 365 DNS records at Namecheap](create-dns-records-at-namecheap.md).)
+Follow these instructions if you want Microsoft to manage your DNS records for you. (If you prefer, you can [manage all your Microsoft DNS records at Namecheap](create-dns-records-at-namecheap.md).)
   
     
 ## Add a TXT record for verification
@@ -64,7 +64,7 @@ Follow these instructions if you want Microsoft 365 to manage your Microsoft 365
     
 |**Type**|**Host**|**Value**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Note**: This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
+|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Note**: This is an example. Use your specific **Destination or Points to Address** value here, from the table.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
    
    ![Namecheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
@@ -74,9 +74,9 @@ Follow these instructions if you want Microsoft 365 to manage your Microsoft 365
   
 9. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record.
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request a search for the record.
   
-When Microsoft 365 finds the correct TXT record, your domain is verified.
+When Microsoft finds the correct TXT record, your domain is verified.
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
@@ -98,10 +98,10 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
   
 ## Change your domain's nameserver (NS) records
 
-To complete setting up your domain with Microsoft 365, you change your domain's NS records at your domain registrar to point to the Microsoft 365 primary and secondary name servers. This sets up Microsoft 365 to update the domain's DNS records for you. We'll add all records so that email, Skype for Business Online, and your public website work with your domain, and you'll be all set.
+To complete setting up your domain with Microsoft, you change your domain's NS records at your domain registrar to point to the Microsoft primary and secondary name servers. This sets up Microsoft to update the domain's DNS records for you. We'll add all records so that email, Skype for Business Online, and your public website work with your domain, and you'll be all set.
   
 > [!CAUTION]
-> When you change your domain's NS records to point to the Microsoft 365 name servers, all the services that are currently associated with your domain are affected. For example, all email sent to your domain (like rob@ *your_domain*  .com) will start coming to Microsoft 365 after you make this change. 
+> When you change your domain's NS records to point to the Microsoft name servers, all the services that are currently associated with your domain are affected. For example, all email sent to your domain (like rob@ *your_domain*  .com) will start coming to Microsoft after you make this change. 
   
 > [!IMPORTANT]
 >  When you have completed the steps in this section, the  *only*  nameservers that should be listed are these four: >  ns1.bdm.microsoftonline.com >  ns2.bdm.microsoftonline.com >  ns3.bdm.microsoftonline.com >  ns4.bdm.microsoftonline.com >  The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the  *correct*  nameservers if they are not already in the list. 
@@ -151,7 +151,7 @@ To complete setting up your domain with Microsoft 365, you change your domain's 
     ![Namecheap-BP-Redelegate-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
-> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft 365 email and other services will be all set to work with your domain. 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
 ### If there ARE nameservers already listed
 
@@ -182,4 +182,4 @@ To complete setting up your domain with Microsoft 365, you change your domain's 
     ![Namecheap-BP-Redelegate-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
-> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft 365 email and other services will be all set to work with your domain.
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain.

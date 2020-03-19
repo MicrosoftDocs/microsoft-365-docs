@@ -37,7 +37,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 The following procedure can also be performed via remote PowerShell. Use the Get-BlockedSenderAddress cmdlet to get the list of restricted users and Remove-BlockedSenderAddress to remove the restriction. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-## Remove restrictions for a blocked Office 365 email account
+## Remove restrictions for a blocked Microsoft email account
 
 You complete this task in the Security & Compliance Center (SCC). [Go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md) for more details about SCC. You need to be in the **Organization Management** or the **Security Administrator** role group in order to perform these functions. [Go to Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) for more details about SCC role groups.
 

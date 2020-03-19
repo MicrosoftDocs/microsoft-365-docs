@@ -35,7 +35,7 @@ If you're looking for how to change company profile information, such as organiz
 3. Choose the types of product-related communications you want to receive.
 
 4. Type the business phone, business mobile phone, or business email where you want to receive these communications.
-    You can use any email address, including your Office 365 email address, to receive these communications. If you don't add an email address for contact preferences, your alternate email address (on the **Personal info** page) will be used.
+    You can use any email address, including your Microsoft email address, to receive these communications. If you don't add an email address for contact preferences, your alternate email address (on the **Personal info** page) will be used.
 
 5. Choose **Save**.
   

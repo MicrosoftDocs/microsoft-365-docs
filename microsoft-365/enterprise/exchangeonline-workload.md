@@ -17,7 +17,7 @@ description: Step through the process of planning for, rolling out, and driving 
 
 *This workload is included in both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-Exchange Online is your primary cloud service for email and calendaring that helps your users collaborate in ways that do not require real-time chatting or centralized document storage. Exchange Online is a key element of the Built for Teamwork value of Microsoft 365 Enterprise. Exchange Online lets you accomplish more and work more effectively with the well-known Outlook application, no matter what device you’re on.
+Exchange Online is your primary cloud service for email and calendaring that helps your users collaborate in ways that do not require real-time chatting or centralized document storage. Exchange Online is a key element of the Built for Teamwork value of Microsoft 365 Enterprise. Exchange Online lets you accomplish more and work more effectively with the well-known Outlook application, no matter what device you're on.
 
 Exchange Online also has advanced security capabilities including anti-malware and anti-spam filtering to protect mailboxes and data loss prevention capabilities that prevent users from mistakenly sending sensitive information to unauthorized people. Exchange Online security is a key element of the Intelligent Security value of Microsoft 365 Enterprise.
 
@@ -26,7 +26,7 @@ If you are brand new to Exchange Online, see [Microsoft Exchange Online](https:/
 The following phases and steps guide you through the process of envisioning the role of Exchange Online in your organization, onboarding your organization to Exchange Online through a series of progressive rollouts, and driving usage of Exchange Online and its value to your end users.
 
 >[!Note]
->These deployment instructions should be followed only after you’ve completed [Phase 2-Identity of the Microsoft 365 Enterprise foundation infrastructure](identity-infrastructure.md).
+>These deployment instructions should be followed only after you've completed [Phase 2-Identity of the Microsoft 365 Enterprise foundation infrastructure](identity-infrastructure.md).
 >
 
 ## Phase 1: Envision your Exchange Online deployment
@@ -50,7 +50,7 @@ Exchange Online can be used for different purposes. You need to figure out which
 One way to see the benefits of Exchange Online is to examine how individuals, a team, or v-team interact today, and then find an appropriate scenario that provides easier ways to communicate, schedule meetings, and collaborate. Keep in mind that [Microsoft Teams](teams-workload.md) might be a better choice for some of your collaboration scenarios.
 
 #### Result
-A list of Exchange Online scenarios that address your organization’s needs for communication, scheduling, and short-lived collaboration.
+A list of Exchange Online scenarios that address your organization's needs for communication, scheduling, and short-lived collaboration.
 
 ## Phase 2: Onboard
 
@@ -151,7 +151,7 @@ After rolling out Exchange Online to your entire organization, you must continue
 Here are some suggested activities:
 
 - See [Success factors for Office 365](https://aka.ms/successfactors) to learn about general best practices for cloud service adoption. 
-- See [Office 365 activity reports](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) to understand Office 365 service usage across your organization. If you aren’t a global admin for your organization, ask someone who is a global admin to grant Reports Reader permissions to your user account so you can access activity reports.
+- See [Office 365 activity reports](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) to understand Office 365 service usage across your organization. If you aren't a global admin for your organization, ask someone who is a global admin to grant Reports Reader permissions to your user account so you can access activity reports.
 - Monitor your feedback venue (a public channel in a central Teams team or Yammer) for issues and feedback from individuals about their experiences with Exchange Online. Address questions and issues as quickly as you can to prevent frustrated individuals and demonstrate support for the rollout.
 - Identify and nurture champions in each business group and highlight their best practices using Outlook. Reflect their successes out to the organization to show project success and adoption. Endorsement by technical leaders within a business group can exert a powerful influence over leaders and peers.
 

@@ -231,7 +231,7 @@ Scan this QR code to follow us on WeChat and get the latest updates for Microsof
 
 ::: moniker range="o365-germany"
 
-This article applies to customers of Microsoft 365 Germany, which has domains ending onmicrosoft.de. For more information, see [Learn about Microsoft 365 Germany](admin-overview/learn-about-office-365-germany.md).
+This article applies to customers of Microsoft 365 for business Germany, which has domains ending onmicrosoft.de. For more information, see [Learn about Office 365 Germany](admin-overview/learn-about-office-365-germany.md).
 
 As an admin for Microsoft 365 Germany, you get free access to our knowledgeable support agents for help resolving technical issues, as well as for pre-sales, account, and billing support. You can also contact us on behalf of Microsoft 365 Germany users in your organization.
 

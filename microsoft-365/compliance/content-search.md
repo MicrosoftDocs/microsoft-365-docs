@@ -43,7 +43,7 @@ After you run a Content Search, the number of content locations and an estimated
 
 To have access to the **Content search** page to run searches and preview and export search results, an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the Security & Compliance Center. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your Office 365 email address and password.
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your Microsoft email address and password.
     
 2. Click **Search** \> **Content search**.
     

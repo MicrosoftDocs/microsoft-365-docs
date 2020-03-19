@@ -111,7 +111,7 @@ For example, change the MX record at your DNS host. Email sent to your domain st
 
 - If your nameserver (NS) records [are pointing to Office 365 nameservers](../../admin/setup/add-domain.md), changes to your MX record don't take effect until you change your NS records to point to your new DNS host (see Step 2).
 
-- Before you update the MX record, let your users know the date you plan to switch their email, and the new email provider you plan to use. Also, if your users want to move their existing Office 365 email to the new provider, they must take extra steps.
+- Before you update the MX record, let your users know the date you plan to switch their email, and the new email provider you plan to use. Also, if your users want to move their existing Microsoft email to the new provider, they must take extra steps.
 
 - On the day you change the MX record, follow the rest of the steps in this article.
 

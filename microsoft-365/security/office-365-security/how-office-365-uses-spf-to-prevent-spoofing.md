@@ -115,7 +115,7 @@ If you set up mail when you set up Microsoft 365, you already created an SPF TXT
 v=spf1 include:spf.protection.outlook.com -all
 ```
 
-If you're a fully-hosted Microsoft 365 customer, that is, you have no on-premises mail servers that send outbound mail, this is the only SPF TXT record that you need to publish for Microsoft 365.
+If you're a fully-hosted customer, that is, you have no on-premises mail servers that send outbound mail, this is the only SPF TXT record that you need to publish for Office 365.
 
 If you have a hybrid deployment (that is, you have some mailboxes on-premises and some hosted in Microsoft 365), or if you're an Exchange Online Protection (EOP) standalone customer (that is, your organization uses EOP to protect your on-premises mailboxes), you should add the outbound IP address for each of your on-premises edge mail servers to the SPF TXT record in DNS.
 

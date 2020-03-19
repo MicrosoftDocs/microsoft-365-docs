@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at Hostgator"
+title: "Create DNS records at Hostgator for Microsoft"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,10 +19,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
-description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Hostgator for Microsoft 365."
+description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Hostgator for Microsoft."
 ---
 
-# Create DNS records at Hostgator
+# Create DNS records at Hostgator for Microsoft
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
   
@@ -31,12 +31,12 @@ If Hostgator is your DNS hosting provider, follow the steps in this article to v
 > [!IMPORTANT]
 > You must perform the first procedurebelow, [Point your domain to your hosting account](#point-your-domain-to-your-hosting-account), before you add DNS records by using any of the other procedures in this article. 
 
-After you make all of these changes at Hostgator, your domain will be set up to work with Microsoft 365 services.
+After you make all of these changes at Hostgator, your domain will be set up to work with Microsoft services.
   
-To learn about webhosting and DNS for websites with Microsoft 365, see [Use a public website with Microsoft 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+To learn about webhosting and DNS for websites with Microsoft, see [Use a public website with Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
   
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records in Microsoft 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Point your domain to your hosting account
 <a name="BKMK_PointDomain"> </a>
@@ -65,7 +65,7 @@ Follow these steps to associate your domain and hosting accounts.
 > [!IMPORTANT]
 > Before you perform this procedure, you must first perform the procedure in the first section of this article, [Point your domain to your hosting account](#point-your-domain-to-your-hosting-account). 
   
-Before you use your domain with Microsoft 365, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft 365 that you own the domain.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
@@ -75,7 +75,7 @@ Before you use your domain with Microsoft 365, we have to make sure that you own
     (Each hosted account at Hostgator is assigned a unique cPanel address. Your cPanel address should look like this: https://YourSiteAddress:secure-port-number. The sign-up email you received from Hostgator will specify that address, and a cPanel link is also available on the **Hosting** page.)
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft 365, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft 365](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md). 
   
 2. On the **Control Panel** page, in the **Domains** area, select **Advanced Zone Editor**.
     
@@ -86,15 +86,15 @@ Before you use your domain with Microsoft 365, we have to make sure that you own
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-    |Use your  *domain_name*. (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
+    |Use your  *domain_name*. (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. Select **Add Record**.
     
 5. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record.
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record.
   
-When Microsoft 365 finds the correct TXT record, your domain is verified.
+When Microsoft finds the correct TXT record, your domain is verified.
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
     
@@ -105,9 +105,9 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
 4. On the **Verify domain** page, select **Verify**.
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records in Microsoft 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
-## Add an MX record so email for your domain will come to Microsoft 365
+## Add an MX record so email for your domain will come to Microsoft
 <a name="BKMK_add_MX"> </a>
 
 > [!IMPORTANT]
@@ -118,7 +118,7 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
     (Each hosted account at Hostgator is assigned a unique cPanel address. Your cPanel address should look like this: https://YourSiteAddress:secure-port-number. The sign-up email you received from Hostgator will specify that address, and a cPanel link is also available on the **Hosting** page.)
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft 365, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft 365](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md). 
   
 2. On the **Control Panel** page, in the **Email** area, select **MX Entry**.
     
@@ -131,7 +131,7 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
     
     |**Priority**|**Destination**|
     |:-----|:-----|
-    |0  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your \< *domain-key*  \> from your Microsoft 365 account.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your \< *domain-key*  \> from your Microsoft account.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
   
 6. Select **Add New Record**.
    
@@ -139,7 +139,7 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
 7. If there are any other MX records in the **MX Records** section, remove each of them. 
 
     
-## Add the six CNAME records that are required for Microsoft 365
+## Add the six CNAME records that are required for Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 > [!IMPORTANT]
@@ -150,7 +150,7 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
     (Each hosted account at Hostgator is assigned a unique cPanel address. Your cPanel address should look like this: https://YourSiteAddress:secure-port-number. The sign-up email you received from Hostgator will specify that address, and a cPanel link is also available on the **Hosting** page.)
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft 365, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft 365](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md). 
   
 2. On the **Control Panel** page, in the **Domains** area, select **Advanced Zone Editor**.
     
@@ -181,7 +181,7 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft 365. Instead, add the required Microsoft 365 values to the current record so that you have a single SPF record that includes both sets of values. Need examples? Check out these [External Domain Name System records for Microsoft 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
+> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a single SPF record that includes both sets of values. Need examples? Check out these [External Domain Name System records for Microsoft](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
   
 > [!IMPORTANT]
 > Before you perform this procedure, you must first perform the procedure in the first section of this article, [Point your domain to your hosting account](#point-your-domain-to-your-hosting-account). 
@@ -191,7 +191,7 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
     (Each hosted account at Hostgator is assigned a unique cPanel address. Your cPanel address should look like this: https://YourSiteAddress:secure-port-number. The sign-up email you received from Hostgator will specify that address, and a cPanel link is also available on the **Hosting** page.)
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft 365, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft 365](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md). 
   
 2. On the **Control Panel** page, in the **Domains** area, select **Advanced Zone Editor**.
     
@@ -205,7 +205,7 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
   
 4. Select **Add Record**.
     
-## Add the two SRV records that are required for Microsoft 365
+## Add the two SRV records that are required for Microsoft
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
@@ -216,7 +216,7 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
     (Each hosted account at Hostgator is assigned a unique cPanel address. Your cPanel address should look like this: https://YourSiteAddress:secure-port-number. The sign-up email you received from Hostgator will specify that address, and a cPanel link is also available on the **Hosting** page.)
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft 365, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft 365](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md). 
   
 2. On the **Control Panel** page, in the **Domains** area, select **Advanced Zone Editor**.
 
@@ -241,4 +241,4 @@ When Microsoft 365 finds the correct TXT record, your domain is verified.
     In the **Add a Record** section, create a record by using the values from the next row in the table, and then again select **Add Record** to complete that record. 
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records in Microsoft 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 

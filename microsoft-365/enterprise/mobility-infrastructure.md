@@ -30,7 +30,7 @@ In this phase, you enroll your devices in Intune, and create and enforce policie
 
 ## Step 1: Plan for your scenario
 
-One of the main reasons to manage mobile devices is to secure and protect your organization's resources. [Common ways to use Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios) lists some real-world examples, including securing Office 365 email and data.
+One of the main reasons to manage mobile devices is to secure and protect your organization's resources. [Common ways to use Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios) lists some real-world examples, including securing Microsoft email and data.
 
 Intune gives you options to manage access to your organization using Mobile Device Management (MDM) or Mobile Application Management (MAM). MDM is when users "enroll" their devices in Intune. Once enrolled, they are managed devices, and can receive any policies, rules, and settings used by your organization. For example, you can install specifics apps, create a password policy, install a VPN connection, and more.
 
@@ -74,7 +74,7 @@ This step focuses on setting up Intune and getting it ready for you to manage yo
 
 ## Step 4: Enroll devices
 
-To manage devices, the devices must be enrolled in Intune. As an administrator, you’ll set up enrollment restrictions and policies for your users and devices. Each device platform (iOS, Android, macOS, and Windows) has a variety of options. You can have your users enroll themselves. Or, you can automate enrollment so users simply sign in to the device.
+To manage devices, the devices must be enrolled in Intune. As an administrator, you'll set up enrollment restrictions and policies for your users and devices. Each device platform (iOS, Android, macOS, and Windows) has a variety of options. You can have your users enroll themselves. Or, you can automate enrollment so users simply sign in to the device.
 
 Enrollment is a key step when using Intune. [Enroll devices](https://docs.microsoft.com/intune/device-enrollment) lists the steps for the different devices.
 

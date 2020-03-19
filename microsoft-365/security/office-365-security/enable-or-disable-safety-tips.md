@@ -99,4 +99,4 @@ If you disabled safety tips but are still seeing them in your email messages, ch
 
 - Safety tips are on by default for every one who uses EOP, this includes everyone who has Office 365. In order to disable safety tips from showing up in email, you must disable them by using a spam filter policy as described in this topic. Once you've set up the policy, ensure that it is enabled. For information on enabling spam filter policies, see [Configure your spam filter policies](configure-your-spam-filter-policies.md).
 
-For more ways to combat spam and phishing, see [Office 365 Email Anti-Spam Protection](anti-spam-protection.md).
+For more ways to combat spam and phishing, see [Microsoft Email Anti-Spam Protection](anti-spam-protection.md).

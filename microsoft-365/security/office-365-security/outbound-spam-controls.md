@@ -63,7 +63,7 @@ The Messaging, Mobile, Malware Anti-Abuse Working Group (MAAWG) publishes its me
 
 [Sample notification when a sender is blocked sending outbound spam](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
 
-[Office 365 email anti-spam protection](anti-spam-protection.md)
+[Microsoft email anti-spam protection](anti-spam-protection.md)
 
 [Anti-spoofing protection in Office 365](anti-spoofing-protection.md)
 

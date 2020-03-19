@@ -48,7 +48,7 @@ SharePoint can be used for different purposes. You need to figure out which purp
 
 See the list of scenarios and capabilities at [SharePoint](https://products.office.com/sharepoint/collaboration ).
 
-The following business pillars can address your organization’s needs:
+The following business pillars can address your organization's needs:
 
 |||
 |:-----|:-----|
@@ -68,7 +68,7 @@ One way to see the benefits of SharePoint is to examine how individuals, a team,
 Highly regulated data is subject to regional regulations or is the most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy. You can configure a SharePoint site for restricted access, data classification, data loss prevention, and encryption for this type of data. For the details, see [Microsoft Teams and SharePoint sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 #### Result
-A list of SharePoint scenarios that address your organization’s needs for document storage and sharing, content management, collaboration, and security.
+A list of SharePoint scenarios that address your organization's needs for document storage and sharing, content management, collaboration, and security.
 
 ## Phase 2: Onboard
 
@@ -88,8 +88,8 @@ Use [Migrate to SharePoint](https://docs.microsoft.com/sharepointmigration/migra
 
 For a better understanding of security in SharePoint, review the following resources:
 
-- 	[How SharePoint and OneDrive safeguard your data in the cloud](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
-- 	[Data Encryption in OneDrive and SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
+-     [How SharePoint and OneDrive safeguard your data in the cloud](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
+-     [Data Encryption in OneDrive and SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### Result
 
@@ -151,7 +151,7 @@ After rolling out to your entire organization, you must continue to employ your 
 Here are some suggested activities:
 
 - See [Success factors for Office 365](https://aka.ms/successfactors) to learn about general best practices for cloud service adoption. 
-- See [Office 365 activity reports](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) to understand Office 365 service usage across your organization. If you aren’t a global admin for your organization, ask someone who is a global admin to grant Reports Reader permissions to your user account so you can access activity reports.
+- See [Office 365 activity reports](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) to understand Office 365 service usage across your organization. If you aren't a global admin for your organization, ask someone who is a global admin to grant Reports Reader permissions to your user account so you can access activity reports.
 - Monitor your feedback venue (a public channel in a central Teams team or Yammer) for issues and feedback from individuals about their experiences with SharePoint. Address questions and issues as quickly as you can to prevent frustrated individuals and demonstrate support for the rollout.
 - Identify and nurture champions in each business group and highlight their accomplishments and best practices when using SharePoint. Reflect their successes out to the organization to show project success and adoption. Endorsement by technical leaders within a business group can exert a powerful influence over leadership and peers.
 

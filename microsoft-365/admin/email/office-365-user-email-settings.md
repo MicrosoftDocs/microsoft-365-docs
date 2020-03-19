@@ -27,8 +27,8 @@ This table explains the various email settings you can change for a user in Micr
 
 |Mail setting|Description  |
 |---------|---------|
-|Mailbox permissions| **Read and manage** allows you to set whether people can read and manage other people's mailboxes. You can also set **Send as** and **Send on behalf** permissions for a person. Check out [Give mailbox permissions to another user in Microsoft 365 - Admin Help](../add-users/give-mailbox-permissions-to-another-user.md) for more details. |
-|Email apps| Email apps allows you to choose the apps a user can use to access their Microsoft 365 email. |
+|Mailbox permissions| **Read and manage** allows you to set whether people can read and manage other people's mailboxes. You can also set **Send as** and **Send on behalf** permissions for a person. Check out [Give mailbox permissions to another user in Office 365 - Admin Help](../add-users/give-mailbox-permissions-to-another-user.md) for more details. |
+|Email apps| Email apps allows you to choose the apps a user can use to access their Microsoft email. |
 |Show in global address list| Show in global address list allows you to enable or disable the visibility of the user's mailbox in the organization's address list. |
 |Email forwarding|Email forwarding allows you to add a forwarding email address to a user. You might want to do this if the person has multiple email addresses and they want to receive emails at all their email addresses. Check out [Configure email forwarding in Microsoft 365](configure-email-forwarding.md) for more details.|
 |Automatic replies|Automatic replies allows you to set an automatic reply when someone sends an email to the person's email address. You might want to do this if an employee leaves your company and you want to let the email sender know.|

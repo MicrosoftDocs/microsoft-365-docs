@@ -65,7 +65,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 2. Choose **File** \> **Info** \> **Add Account**.
 
-3. Enter your Microsoft 365 email address and select **Connect**.
+3. Enter your Microsoft email address and select **Connect**.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
   
@@ -141,7 +141,7 @@ For migration options, see [Migrate email and contacts](migrate-email-and-contac
   
 ### 3. Connect email accounts
 
-In addition to managing your Microsoft 365 email in Outlook, you can connect other email accounts to Outlook, too, such as your Gmail and Yahoo accounts. This lets you manage all of your email in one place. You can connect up to 5 email accounts to Outlook.
+In addition to managing your Microsoft email in Outlook, you can connect other email accounts to Outlook, too, such as your Gmail and Yahoo accounts. This lets you manage all of your email in one place. You can connect up to 5 email accounts to Outlook.
   
 ::: moniker range="o365-worldwide"
 
@@ -222,7 +222,7 @@ To take a tour of Microsoft 365 and learn how to use all the Office mobile apps,
   
 ## Business
   
-*The **[Microsoft 365 Apps for business Plan](https://go.microsoft.com/fwlink/p/?LinkId=627219)** plan does not include Office 365 email or Skype for Business. In these setup steps, we show you how to add your existing email account (such as Gmail) to Outlook.*
+*The **[Microsoft 365 Apps for business polan](https://go.microsoft.com/fwlink/p/?LinkId=627219)** plan does not include email or Skype for Business. In these setup steps, we show you how to add your existing email account (such as Gmail) to Outlook.*
 
 ### 1. Add users
 

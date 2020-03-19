@@ -69,7 +69,7 @@ There are several things you need to do if your tenant is blocked from sending e
 
 ## For more information
 
-[Office 365 email anti-spam protection](anti-spam-protection.md)
+[Microsoft email anti-spam protection](anti-spam-protection.md)
 
 [Bulk Mail guidance in the sending limits section of the Exchange Online service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 

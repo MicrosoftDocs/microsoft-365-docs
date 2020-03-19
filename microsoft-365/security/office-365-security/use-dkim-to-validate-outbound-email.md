@@ -28,7 +28,7 @@ Basically, you use a private key to encrypt the header in your domain's outgoing
 
 Office 365 automatically sets up DKIM for its initial 'onmicrosoft.com' domains. That means you don't need to do anything to set up DKIM for any initial domain names (for example, litware.onmicrosoft.com). For more information about domains, see [Domains FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain).
 
-You can choose to do nothing about DKIM for your custom domain too. If you don't set up DKIM for your custom domain, Office 365 creates a private and public key pair, enables DKIM signing, and then configures the Office 365 default policy for your custom domain. While this is sufficient coverage for most Office 365 customers, you should manually configure DKIM for your custom domain in the following circumstances:
+You can choose to do nothing about DKIM for your custom domain too. If you don't set up DKIM for your custom domain, Office 365 creates a private and public key pair, enables DKIM signing, and then configures the Office 365 default policy for your custom domain. While this is sufficient coverage for most customers, you should manually configure DKIM for your custom domain in the following circumstances:
 
 - You have more than one custom domain in Office 365
 

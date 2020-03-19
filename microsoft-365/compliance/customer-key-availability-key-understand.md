@@ -1,5 +1,5 @@
 ---
-title: "Learn about the availability key for Office 365 Customer Key"
+title: "Learn about the availability key for Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -10,10 +10,10 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: "Learn about the availability key used to recover lost Office 365 Customer Keys."
+description: "Learn about the availability key used to recover lost Customer Keys."
 ---
 
-# Learn about the availability key for Office 365 Customer Key
+# Learn about the availability key for Customer Key
 
 The availability key is a root key automatically generated and provisioned when you create a data encryption policy. Office 365 stores and protects the availability key. The availability key is functionally like the two root keys that you supply for service encryption with Customer Key. The availability key wraps the keys one tier lower in the key hierarchy. Unlike the keys that you provide and manage in Azure Key Vault, you can't directly access the availability key. Office 365 automated services manage the availability key programatically. These services initiate automated operations that never involve direct access to the availability key.
 
@@ -164,7 +164,7 @@ Automated systems in Office 365 process all data as it flows through the system 
 
 ### Exchange Online and Skype for Business availability key logging
 
-When Exchange Online and Skype for Business accesses availability key to provide service, office 365 publishes customer-visible logs accessible from the Security and Compliance Center. An audit log record for the availability key operation is generated each time the service uses the availability key. A new record type called “Customer Key Service Encryption” with activity type "Fallback to Availability Key" allows admins to filter [Unified Audit Log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) search results to view availability key records.
+When Exchange Online and Skype for Business accesses availability key to provide service, office 365 publishes customer-visible logs accessible from the Security and Compliance Center. An audit log record for the availability key operation is generated each time the service uses the availability key. A new record type called "Customer Key Service Encryption" with activity type "Fallback to Availability Key" allows admins to filter [Unified Audit Log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) search results to view availability key records.
 
 Log records include attributes such as date, time, activity, organization ID, and data encryption policy ID. The record is available as part of Office 365 Unified Audit Logs and is accessible from the Office 365 Security and Compliance Center Audit Log Search tab.
 

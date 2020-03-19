@@ -1,5 +1,5 @@
 ---
-title: "Add or edit custom DNS records"
+title: "Add or edit custom DNS records in Microsoft"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
-description: "Learn how to edit or add a custom DNS record in Microsoft 365. "
+description: "Learn how to edit or add a custom DNS record in Microsoft. "
 ---
 
-# Add or edit custom DNS records
+# Add or edit custom DNS records in Microsoft
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
 
-1. Sign in to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.   
+1. Sign in to the Microsoft admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.   
 
-2. Go to the **Settings** \> **Domains** page.
+2. Go to the **Settings**  > **Domains** page.
 
 3. On the **Domains** page, select a domain. 
     
@@ -41,7 +41,7 @@ description: "Learn how to edit or add a custom DNS record in Microsoft 365. "
 
 ## Related articles
 
-[Gather the information you need to create Office 365 DNS records](../get-help-with-domains/information-for-dns-records.md)
+[Gather the information you need to create Microsoft DNS records](../get-help-with-domains/information-for-dns-records.md)
 
 [DNS basics](../get-help-with-domains/dns-basics.md)
 

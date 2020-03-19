@@ -55,7 +55,7 @@ The URL points to a site that has been identified as malicious.  <br/> We recomm
 
 ### A site is blocked
 
-The URL is blocked for your organization. There are several reasons why a URL might be blocked. We recommend that you contact your organization's Office 365 administrator.
+The URL is blocked for your organization. There are several reasons why a URL might be blocked. We recommend that you contact your organization's Microsoft 365 for business administrator.
 
 ![This site is blocked](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 

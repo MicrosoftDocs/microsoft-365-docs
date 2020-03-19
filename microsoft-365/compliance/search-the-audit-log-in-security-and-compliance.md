@@ -912,7 +912,7 @@ Most auditing data is available within 30 minutes but it may take up to 24 hours
 
 **How long are the audit records retained for?**
 
-As previously explained, the retention period for audit records depends on your organization's Office 365 or Microsoft 365 enterprise subscription.
+As previously explained, the retention period for audit records depends on your organization's Microsoft 365 for business subscription.
 
   - **Office 365 E3 and Microsoft 365 E3:** Audit records are retained for 90 days. That means you can search the audit log for activities that were performed within the last 90 days.
 

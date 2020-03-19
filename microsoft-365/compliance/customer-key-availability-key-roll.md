@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Learn how to roll the customer root keys stored in Azure Key Vault that are used with Office 365 Customer Key. Services include Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files."
+description: "Learn how to roll the customer root keys stored in Azure Key Vault that are used with the Customer Key. Services include Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files."
 ---
 
 # Roll or rotate a Customer Key or an availability key
@@ -29,7 +29,7 @@ Microsoft does not expose direct control of the availability key to customers. F
 
 ## Request a new version of each existing root key you want to roll
 
-When you roll a key, you request a new version of an existing key. To request a new version of an existing key, you use the same cmdlet, [Add-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey), with the same syntax that you used to create the key in the first place. After you’ve finished rolling any key associated with a Data Encryption Policy (DEP), you run another cmdlet to ensure that Customer Key begins using the new key. Do this step in each Azure Key Vault (AKV).
+When you roll a key, you request a new version of an existing key. To request a new version of an existing key, you use the same cmdlet, [Add-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey), with the same syntax that you used to create the key in the first place. After you've finished rolling any key associated with a Data Encryption Policy (DEP), you run another cmdlet to ensure that Customer Key begins using the new key. Do this step in each Azure Key Vault (AKV).
 
 For example:
 

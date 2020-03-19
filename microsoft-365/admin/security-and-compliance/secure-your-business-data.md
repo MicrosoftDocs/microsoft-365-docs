@@ -213,7 +213,7 @@ In Outlook.com, select **Protect** in the email. The default protection is **Do 
   
 ### To receive encrypted email
 
-If the recipient has Outlook 2013 or Outlook 2016 and an Office 365 email account, they'll see an alert about the item's restricted permissions in the Reading pane. After opening the message, the recipient can view the message just like any other.
+If the recipient has Outlook 2013 or Outlook 2016 and a Microsoft email account, they'll see an alert about the item's restricted permissions in the Reading pane. After opening the message, the recipient can view the message just like any other.
   
 If the recipient is using another email client or email account, such as Gmail or Yahoo, they'll see a link that lets them either sign in to read the email message or request a one-time passcode to view the message in a web browser. If users aren't receiving the email, have them check their Spam or Junk folder. 
   

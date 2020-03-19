@@ -22,7 +22,7 @@ description: "As a global administrator, you can apply your organization's brand
 
 # Add your organization's brand to your encrypted messages
 
-As an Exchange Online or Exchange Online Protection administrator, you can apply your company branding to customize the look of your organization's Office 365 Message Encryption email messages and the contents of the encryption portal. Using the Get-OMEConfiguration and Set-OMEConfiguration Windows PowerShell cmdlets, you can customize the following aspects of the viewing experience for recipients of encrypted email messages:
+As an Exchange Online or Exchange Online Protection administrator, you can apply your company branding to customize the look of your organization's Microsoft 365 for business Message Encryption email messages and the contents of the encryption portal. Using the Get-OMEConfiguration and Set-OMEConfiguration Windows PowerShell cmdlets, you can customize the following aspects of the viewing experience for recipients of encrypted email messages:
   
 - Introductory text of the email that contains the encrypted message
 
@@ -164,7 +164,7 @@ For information on how to create an Exchange mail flow rule that applies encrypt
 6. In **Apply this rule if**, select the condition **The sender is located inside the organization** as well as other conditions you want from the list of available conditions. For example, you might want to apply a particular branding template to:
 
    - All encrypted emails sent from members of the finance department
-   - Encrypted emails sent with a certain keyword such as “External” or “Partner”
+   - Encrypted emails sent with a certain keyword such as "External" or "Partner"
    - Encrypted emails sent to a particular domain
 
 7. From **Do the following**, select **Modify the message security** > **Apply custom branding to OME messages**. Next, from the drop-down, select a branding template from those you created or modified.

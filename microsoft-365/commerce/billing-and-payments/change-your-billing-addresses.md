@@ -156,7 +156,7 @@ If you're using Microsoft 365 operated by 21Vianet in China, see [View your bill
 
 ## Change the alternate email address your billing notifications are sent to
 
-By default, your organization's billing notifications are sent to the Microsoft 365 email address and the alternate email address of every global and billing admin in your organization. Each admin can change their alternate email address by updating their profile information.
+By default, your organization's billing notifications are sent to the Microsoft email address and the alternate email address of every global and billing admin in your organization. Each admin can change their alternate email address by updating their profile information.
   
 1. Sign in to Microsoft 365 with your work or school account as a global admin. [Learn how to sign in](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 

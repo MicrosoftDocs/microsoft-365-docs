@@ -86,7 +86,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 ## Step 3: Register the Facebook app
 
-1. Go to <https://developers.facebook.com>, log in using the credentials for the account for your organization’s Facebook Business pages, and then click **Add New App**.
+1. Go to <https://developers.facebook.com>, log in using the credentials for the account for your organization's Facebook Business pages, and then click **Add New App**.
 
    ![Add a new app for Facebook business page](../media/FBCimage25.png)
 

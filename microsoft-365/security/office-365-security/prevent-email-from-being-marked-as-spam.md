@@ -20,7 +20,7 @@ description: "Learn how to prevent false positives and keep real email out of ju
 
 # How to prevent good email messages from being marked as spam
 
- **Is your real email getting marked as spam in Office 365? Do this.**
+ **Is your real email getting marked as spam? Do this.**
 
 If a good incoming email message is marked as spam (a _false positive_) in Office 365, Exchange Online, or standalone Exchange Online Protection (EOP), you should report the message to Microsoft by using the [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Additionally, you can submit the message using [Submissions Explorer](admin-submission.md).
 
@@ -30,7 +30,7 @@ You can resolve many issues with false positives by viewing the email message he
 
 Specifically, you need to look for a header field named **X-Forefront-Antispam-Report**. The important values to look for are:
 
-- **SFV:SPM**: The message was marked as spam by the anti-spam filter (also known as the _content filter_). For more information, see [Office 365 email anti-spam protection](anti-spam-protection.md).
+- **SFV:SPM**: The message was marked as spam by the anti-spam filter (also known as the _content filter_). For more information, see [Microsoft email anti-spam protection](anti-spam-protection.md).
 
 - **SFV:BLK**: The message was marked as spam because the sender's email address is on the **recipient's** Blocked Senders list. For more information, see [Filter junk email and spam in Outlook on the web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d) and [Overview of the Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 

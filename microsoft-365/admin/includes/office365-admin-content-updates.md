@@ -25,22 +25,22 @@
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 1/10/2020 | [Office 365 Reports in the admin center - Active Users](/Office365/Admin/activity-reports/active-users?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Active Users](/Office365/Admin/activity-reports/active-users?view=o365-worldwide) | modified |
 | 1/10/2020 | [Activity Reports in the Microsoft 365 admin center](/Office365/Admin/activity-reports/activity-reports?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Email activity](/Office365/Admin/activity-reports/email-activity?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Email apps usage](/Office365/Admin/activity-reports/email-apps-usage?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Mailbox usage](/Office365/Admin/activity-reports/mailbox-usage?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Microsoft Office activations](/Office365/Admin/activity-reports/microsoft-office-activations?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Microsoft Teams device usage](/Office365/Admin/activity-reports/microsoft-teams-device-usage?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Microsoft Teams user activity](/Office365/Admin/activity-reports/microsoft-teams-user-activity?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Office 365 groups](/Office365/Admin/activity-reports/office-365-groups?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - OneDrive for Business activity](/Office365/Admin/activity-reports/onedrive-for-business-activity?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - OneDrive for Business usage](/Office365/Admin/activity-reports/onedrive-for-business-usage?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - SharePoint activity](/Office365/Admin/activity-reports/sharepoint-activity?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - SharePoint site usage](/Office365/Admin/activity-reports/sharepoint-site-usage?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Yammer activity report](/Office365/Admin/activity-reports/yammer-activity-report?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Yammer device usage report](/Office365/Admin/activity-reports/yammer-device-usage-report?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Yammer groups activity report](/Office365/Admin/activity-reports/yammer-groups-activity-report?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Email activity](/Office365/Admin/activity-reports/email-activity?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Email apps usage](/Office365/Admin/activity-reports/email-apps-usage?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Mailbox usage](/Office365/Admin/activity-reports/mailbox-usage?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Microsoft Office activations](/Office365/Admin/activity-reports/microsoft-office-activations?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Microsoft Teams device usage](/Office365/Admin/activity-reports/microsoft-teams-device-usage?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Microsoft Teams user activity](/Office365/Admin/activity-reports/microsoft-teams-user-activity?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Office 365 groups](/Office365/Admin/activity-reports/office-365-groups?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - OneDrive for Business activity](/Office365/Admin/activity-reports/onedrive-for-business-activity?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - OneDrive for Business usage](/Office365/Admin/activity-reports/onedrive-for-business-usage?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - SharePoint activity](/Office365/Admin/activity-reports/sharepoint-activity?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - SharePoint site usage](/Office365/Admin/activity-reports/sharepoint-site-usage?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Yammer activity report](/Office365/Admin/activity-reports/yammer-activity-report?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Yammer device usage report](/Office365/Admin/activity-reports/yammer-device-usage-report?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Yammer groups activity report](/Office365/Admin/activity-reports/yammer-groups-activity-report?view=o365-worldwide) | modified |
 | 1/10/2020 | [About admin roles in the Microsoft 365 admin center](/Office365/Admin/add-users/about-admin-roles?view=o365-worldwide) | modified |
 | 1/10/2020 | [Add users individually or in bulk to Office 365](/Office365/Admin/add-users/add-users?view=o365-worldwide) | modified |
 | 1/10/2020 | [About admin roles](/Office365/Admin/add-users/admin-roles-page?view=o365-worldwide) | modified |

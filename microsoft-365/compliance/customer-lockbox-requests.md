@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Customer Lockbox Requests"
+title: "Customer Lockbox Requests"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -63,7 +63,7 @@ The following steps outline the typical workflow when a Microsoft engineer initi
 
 ## Turn Customer Lockbox requests on or off
 
-You can turn on Customer Lockbox controls in the Microsoft 365 admin center. When you turn on Customer Lockbox, Microsoft must obtain your organization’s approval before accessing any of your tenant's content.
+You can turn on Customer Lockbox controls in the Microsoft 365 admin center. When you turn on Customer Lockbox, Microsoft must obtain your organization's approval before accessing any of your tenant's content.
 
 1. Using a work or school account that has either the global administrator or the **Customer Lockbox access approver** role assigned, go to [https://admin.microsoft.com](https://admin.microsoft.com) and sign in.
 
@@ -174,7 +174,7 @@ The actions performed by a Microsoft engineer after a Customer Lockbox request i
 
 Customer Lockbox is currently supported in Exchange Online, SharePoint Online, and OneDrive for Business.
 
-#### Is Customer Lockbox available to all Office 365 customers?
+#### Is Customer Lockbox available to all customers?
 
 Customer Lockbox is included with the Microsoft 365 or Office 365 E5 subscriptions and can be added to other plans with an Information Protection and Compliance or an Advanced Compliance add-on subscription. Please see [Plans and pricing](https://products.office.com/business/office-365-enterprise-e5-business-software) for more information.
 

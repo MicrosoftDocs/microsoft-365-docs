@@ -124,6 +124,6 @@ ZAP will not remove messages from mailboxes on hold and so will not take a Move 
 
 ## Related Topics
 
-[Office 365 Email Anti-Spam Protection](anti-spam-protection.md)
+[Microsoft Email Anti-Spam Protection](anti-spam-protection.md)
 
 [Block email spam with the Office 365 spam filter to prevent false negative issues](reduce-spam-email.md)

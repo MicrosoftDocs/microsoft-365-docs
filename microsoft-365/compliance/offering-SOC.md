@@ -24,13 +24,13 @@ Increasingly, businesses outsource basic functions such as data storage and acce
 
 Service audits based on the SOC framework fall into two categories — SOC 1 and SOC 2 — that apply to in-scope Microsoft cloud services.
 
-A SOC 1 audit, intended for CPA firms that audit financial statements, evaluates the effectiveness of a CSP’s internal controls that affect the financial reports of a customer using the provider’s cloud services. The Statement on Standards for Attestation Engagements (SSAE 18) and the International Standards for Assurance Engagements No. 3402 (ISAE 3402) are the standards under which the audit is performed, and is the basis of the SOC 1 report.
+A SOC 1 audit, intended for CPA firms that audit financial statements, evaluates the effectiveness of a CSP's internal controls that affect the financial reports of a customer using the provider's cloud services. The Statement on Standards for Attestation Engagements (SSAE 18) and the International Standards for Assurance Engagements No. 3402 (ISAE 3402) are the standards under which the audit is performed, and is the basis of the SOC 1 report.
 
-A SOC 2 audit gauges the effectiveness of a CSP’s system based on the AICPA Trust Service Principles and Criteria. An Attest Engagement under Attestation Standards (AT) Section 101 is the basis of SOC 2 and SOC 3 reports.
+A SOC 2 audit gauges the effectiveness of a CSP's system based on the AICPA Trust Service Principles and Criteria. An Attest Engagement under Attestation Standards (AT) Section 101 is the basis of SOC 2 and SOC 3 reports.
 
-At the conclusion of a SOC 1 or SOC 2 audit, the service auditor renders an opinion in a SOC 1 Type 2 or SOC 2 Type 2 report, which describes the CSP’s system and assesses the fairness of the CSP’s description of its controls. It also evaluates whether the CSP’s controls are designed appropriately, were in operation on a specified date, and were operating effectively over a specified time period.
+At the conclusion of a SOC 1 or SOC 2 audit, the service auditor renders an opinion in a SOC 1 Type 2 or SOC 2 Type 2 report, which describes the CSP's system and assesses the fairness of the CSP's description of its controls. It also evaluates whether the CSP's controls are designed appropriately, were in operation on a specified date, and were operating effectively over a specified time period.
 
-Auditors can also create a SOC 3 report — an abbreviated version of the SOC 2 Type 2 audit report — for users who want assurance about the CSP’s controls but don’t need a full SOC 2 report. A SOC 3 report can be conferred only if the CSP has an unqualified audit opinion for SOC 2.
+Auditors can also create a SOC 3 report — an abbreviated version of the SOC 2 Type 2 audit report — for users who want assurance about the CSP's controls but don't need a full SOC 2 report. A SOC 3 report can be conferred only if the CSP has an unqualified audit opinion for SOC 2.
 
 ## Microsoft and SOC 1, 2, and 3 Reports
 
@@ -94,7 +94,7 @@ Microsoft cloud services are audited at least annually against SOC 1 (SSAE18, IS
 - [Office 365 Core - SSAE 18 SOC 2 Report](https://aka.ms/o365SOC-2)
 - [Office 365 Core - SSAE 18 SOC 3 Report](https://aka.ms/o365SOC-3)
 - [Office 365 Microservices T1 – SSAE 18 SOC2 Type I Report](https://aka.ms/o365-MS-SOC-2-type1)
-- [Office 365 Customer Lockbox SOC 1 SSAE 16 Audit Report](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
+- [Customer Lockbox SOC 1 SSAE 16 Audit Report](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
 - [Yammer SOC 2 AT 101 Type I Audit Report](https://aka.ms/YammerSOC2Type1AuditReport)
 - [Yammer SOC 2 Type II Report](https://aka.ms/yammerSOC-2)
 - [See bridge letters and additional audit reports](https://aka.ms/auditreports)
@@ -106,7 +106,7 @@ Microsoft cloud services are audited at least annually against SOC 1 (SSAE18, IS
 With the reports, your auditors can compare Microsoft business cloud services results with your own legal and regulatory requirements.
 
 - You can see all SOC reports through the [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx).
-- Azure DevOps Service customers that can’t access [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx) can email [Azure DevOps](mailto:AzureDevOpsSOCReport@microsoft.com) for its SOC 1 and SOC 2 reports. This email is to request Azure DevOps SOC reports only.
+- Azure DevOps Service customers that can't access [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx) can email [Azure DevOps](mailto:AzureDevOpsSOCReport@microsoft.com) for its SOC 1 and SOC 2 reports. This email is to request Azure DevOps SOC reports only.
 
 **How often are Azure SOC reports issued?**
 
@@ -116,17 +116,17 @@ SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerA
 
 No. Microsoft shares the independent audit reports and certifications with customers so that they can verify Microsoft compliance with its security commitments.
 
-**Can I use Microsoft’s compliance in my organization’s certification process?**
+**Can I use Microsoft's compliance in my organization's certification process?**
 
 Yes. When you migrate your applications and data to covered Microsoft cloud services, you can build on the audits and certifications that Microsoft holds. The independent reports attest to the effectiveness of controls that Microsoft has implemented to help maintain the security and privacy of your data.
 
-**Where do I start with my organization’s own compliance effort?**
+**Where do I start with my organization's own compliance effort?**
 
-The [SOC Toolkit for Service Organizations](https://aka.ms/soc-toolkit) is a helpful resource for understanding SOC reporting processes and promoting your organization’s use of them.
+The [SOC Toolkit for Service Organizations](https://aka.ms/soc-toolkit) is a helpful resource for understanding SOC reporting processes and promoting your organization's use of them.
 
 ## Use Microsoft Compliance Score to assess your risk
 
-[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [SOC 1 template](https://go.microsoft.com/fwlink/?linkid=2117918) and the [SOC 2 template](https://go.microsoft.com/fwlink/?linkid=2117919) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [SOC 1 template](https://go.microsoft.com/fwlink/?linkid=2117918) and the [SOC 2 template](https://go.microsoft.com/fwlink/?linkid=2117919) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
 
 ## Resources
 

@@ -1,5 +1,5 @@
 ---
-title: "Change nameservers to set up Microsoft 365 with 1&1 IONOS"
+title: "Change nameservers to set up Microsoft with 1&1 IONOS"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -144,7 +144,7 @@ Ready to change your NS records so Microsoft 365 can set up your domain? Follow 
     ![Selecting Save in the Edit DNS Settings dialog box](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
-> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft 365 email and other services will be all set to work with your domain. 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
 ### If there ARE nameservers already listed
 
@@ -175,7 +175,7 @@ Ready to change your NS records so Microsoft 365 can set up your domain? Follow 
     ![Selecting Save in the Edit DNS Settings dialog box](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
-> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft 365 email and other services will be all set to work with your domain. 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
 
 
