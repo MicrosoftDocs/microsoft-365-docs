@@ -1,5 +1,5 @@
 ---
-title:  Office 365 Data Subject Requests Under the GDPR and CCPA
+title:  Data Subject Requests Under the GDPR and CCPA
 description: Understand the user rights under GDPR and CCPA and how Office 365 helps enterprises find and act on data in response to DSRs.
 keywords:  Office 365, DSR, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
 localization_priority:  Priority
@@ -17,7 +17,7 @@ ms.collection:
 titleSuffix: Microsoft GDPR
 ---
 
-# Office 365 Data Subject Requests for the GDPR and CCPA
+# Data Subject Requests for the GDPR and CCPA
 
 ## Introduction to DSRs
 
@@ -63,7 +63,7 @@ The Microsoft Office 365 services are also available in the following national c
 
 ### Hybrid deployments
 
-Your Office 365 organization may consist of Microsoft offerings that are a combination of cloud-based services and on-premises server products. In general, a hybrid deployment is typically the sharing of user accounts (identity management) and resources (such as mailboxes, web sites, and data) that exist in the cloud and on-premises. Common hybrid scenarios include:
+Your organization may consist of Microsoft offerings that are a combination of cloud-based services and on-premises server products. In general, a hybrid deployment is typically the sharing of user accounts (identity management) and resources (such as mailboxes, web sites, and data) that exist in the cloud and on-premises. Common hybrid scenarios include:
 
 - Exchange hybrid deployments, where some users have an on-premises mailbox and other users have Exchange Online mailboxes.
 - SharePoint hybrid deployments, where site and file servers are on-premises and OneDrive for Business accounts are in Office 365.
@@ -88,7 +88,7 @@ A quick way to identify the Office 365 applications that people in your organiza
 
 ## Using the Content Search eDiscovery tool to respond to DSRs
 
-When looking for personal data within the larger set of data your organization creates and stores using in Office 365, you may want to first consider which applications people have most likely used to author the data you're looking for. Microsoft estimates that over 90% of an organization's data that is stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook. Documents authored in these Office applications, even if purchased through Office 365 ProPlus or an Office perpetual license, are most likely stored on a SharePoint Online site, in a user's OneDrive for Business account, or in a user's Exchange Online mailbox. That means you can use the Content Search eDiscovery tool to search (and perform other DSR-related actions) across SharePoint Online sites, OneDrive for Business accounts, and Exchange Online mailboxes (including the sites and mailboxes associated with Office 365 Groups, Microsoft Teams, EDU Assignments) to find documents and mailbox items that may be relevant to the DSR you're investigating. You can also use the Content Search tool to discover Customer Data authored in other Office 365 applications.
+When looking for personal data within the larger set of data your organization creates and stores using in Office 365, you may want to first consider which applications people have most likely used to author the data you're looking for. Microsoft estimates that over 90% of an organization's data that is stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook. Documents authored in these Office applications, even if purchased through Microsoft 365 Apps for enterprise or an Office perpetual license, are most likely stored on a SharePoint Online site, in a user's OneDrive for Business account, or in a user's Exchange Online mailbox. That means you can use the Content Search eDiscovery tool to search (and perform other DSR-related actions) across SharePoint Online sites, OneDrive for Business accounts, and Exchange Online mailboxes (including the sites and mailboxes associated with Office 365 Groups, Microsoft Teams, EDU Assignments) to find documents and mailbox items that may be relevant to the DSR you're investigating. You can also use the Content Search tool to discover Customer Data authored in other Office 365 applications.
 
 The following table lists the Office 365 applications that people use to create Customer Authored Content and that can be discovered by using Content Search. This section of the DSR guide provides guidance about how to discover, access, export, and delete data created with these Office 365 applications.
 
@@ -138,7 +138,7 @@ You can search the following types of content locations with the Content Search 
 
 - Begin by searching all content locations in your organization (which you can search in a single search) to quickly determine which content locations contain items that match your search query. Then you can rerun the search and narrow the search scope to the specific locations that contain relevant items.
 - Use search statistics to identify the top locations that contain items that match your search query. See [View keyword statistics for Content Search results](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
-- Search the Office 365 audit log for recent file and folder activities performed by the user who is the subject of the DSR. Searching the audit log returns a list of auditing records that contain the name and location of resources the user has recently interacted with. You may be able to use this information to build a content search query. See [Search the audit log in the Office 365 Security & Compliance Center](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
+- Search the audit log for recent file and folder activities performed by the user who is the subject of the DSR. Searching the audit log returns a list of auditing records that contain the name and location of resources the user has recently interacted with. You may be able to use this information to build a content search query. See [Search the audit log in the Office 365 Security & Compliance Center](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 
 #### Building search queries to find personal data
 
@@ -552,7 +552,7 @@ Here's a quick overview of this process:
 1. Create and run a Content Search to find the items that you want to delete from the user mailbox. You may have to rerun the search to narrow that search results so that only the items that you want to delete are returned in the search results.
 2. Use the **New-ComplianceSearchAction** **-Purge** command in Office 365 PowerShell to soft-delete that are  returned by the Content Search that was created in the previous step.
 
-For detailed instructions, see [Search for and delete email messages in your Office 365 organization](https://support.office.com/article/Search-for-and-delete-email-messages-in-your-Office-365-organization-Admin-Help-3526fd06-b45f-445b-aed4-5ebd37b3762a).
+For detailed instructions, see [Search for and delete email messages in your organization](https://support.office.com/article/Search-for-and-delete-email-messages-in-your-Office-365-organization-Admin-Help-3526fd06-b45f-445b-aed4-5ebd37b3762a).
 
 #### Hard-delete mailbox items
 
@@ -571,13 +571,13 @@ Your organization might determine that items being permanently deleted when the 
 
 ## Deleting a user
 
-In addition to deleting personal data in response to a DSR deletion request, a data subject's "right to be forgotten" may also be fulfilled by deleting their Office 365 user account. Here are some reasons that you might want to delete a user:
+In addition to deleting personal data in response to a DSR deletion request, a data subject's "right to be forgotten" may also be fulfilled by deleting their user account. Here are some reasons that you might want to delete a user:
 
 - The data subject has left (or is in the process of leaving) your organization.
 - The data subject has requested that you delete system-generated logs that have been collected about them. Examples of data in system-generated logs include Office 365 app and service usage data, information about search requests performed by the data subject, and data generated by product and services as a product of system functionality and interaction by users or other systems. For more information, see [Part 3: Responding to DSRs for system-generated Logs](#part-3-responding-to-dsrs-for-system-generated-logs) in this guide.
 - Permanently prevent the data subject from accessing or processing data in Office 365 (as opposed to temporarily restriction access by the methods described in the section [Responding to DSR restriction requests](#responding-to-dsr-restriction-requests).
 
-After you delete an Office 365 user account:
+After you delete an user account:
 
 - The user can no longer sign-in to Office 365 or access any of your organization's Microsoft resources, such as their OneDrive for Business account, SharePoint Online sites, or their Exchange Online mailbox.
 - Personal data, such as email address, alias, phone number, and mailing address, that's associated with the user account is deleted
@@ -588,14 +588,14 @@ After you delete an Office 365 user account:
 >After you delete a user account, that person will lose the ability to sign in to Office 365 and the ability to sign in to any products or services for which he or she formerly relied upon for a work or school account. That person would also be unable to initiate any DSR requests through Microsoft directly in instances where Microsoft is the data controller. For more information, see the [Product and services authenticated with an Org ID for which Microsoft is a data controller](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller) section in Part 4 of this guide.
 
 >[!NOTE]
->In the event that you are a customer currently engaged in FastTrack migrations, deleting the Office 365 user account will not delete the data copy held by the Microsoft FastTrack team, which is held for the sole purpose of completing the migration. If, during the migration, you would like the Microsoft FastTrack team to also delete the data copy, you can [submit a request](https://go.microsoft.com/fwlink/?linkid=874544). In the ordinary course of business, Microsoft FastTrack will delete all data copies once the migration is complete.
+>In the event that you are a customer currently engaged in FastTrack migrations, deleting the user account will not delete the data copy held by the Microsoft FastTrack team, which is held for the sole purpose of completing the migration. If, during the migration, you would like the Microsoft FastTrack team to also delete the data copy, you can [submit a request](https://go.microsoft.com/fwlink/?linkid=874544). In the ordinary course of business, Microsoft FastTrack will delete all data copies once the migration is complete.
 
 Like the soft-deletion and hard-deletion of data that was described in the previous section on deleting personal data, when you delete a user account, there is also a soft-deleted and hard-deleted state.
 
 - When you initially delete a user account (by deleting the user in the admin center or in the Azure portal), the user account is soft-deleted, and moved the Recycle Bin in Azure for up to 30 days. At this point, the user account can be restored.
 - If you permanently deleted the user account, the user account is hard-deleted and removed from the Recycle Bin in Azure. At this point, the user account can't be restored, and any data associated with the user account will be permanently removed from the Microsoft cloud. System-generated logs about the data subject will be deleted after the user account is hard-deleted.
 
-Here's the high-level process for deleting a user from your Office 365 organization.
+Here's the high-level process for deleting a user from your organization.
 
 1. Go to the admin center or the Azure portal and locate the user.
 
@@ -613,7 +613,7 @@ You can't hard-delete a user in the Office 365 admin portal.
 One thing to understand when deleting a user is what happens to the user's Exchange Online mailbox. After the user account is hard-deleted (in step 3 in the previous process) the deleted user's mailbox isn't automatically purged from Office 365. It takes up to 60 days after the user account is hard-deleted to permanently remove it from Office 365. Here's the mailbox lifecycle after the user account is deleted and a description of the state of the mailbox data during that time:
 
 - **Day 1 — Day 30** — The mailbox can be fully restored by restoring the soft-deleted user account.
-- **Day 31 — Day 60** — For 30 days after the user account is hard-deleted, an admin in your organization can recover the data in the mailbox and import it into a different mailbox. This provides Office 365 organizations the ability to recover the mailbox data if necessary.
+- **Day 31 — Day 60** — For 30 days after the user account is hard-deleted, an admin in your organization can recover the data in the mailbox and import it into a different mailbox. This provides organizations the ability to recover the mailbox data if necessary.
 - **Day 61 – Day 90** - An admin can no longer recover the data in the mailbox. The mailbox data will be marked for permanent removal, and it takes up to 30 more days for the mailbox data to be purged from Office 365.
 
 If you determine that this mailbox lifecycle doesn't meet your organization's requirements for responding to a DSR deletion request, you can [contact Microsoft Support](https://support.microsoft.com/) *after* you hard-delete the user account, and request Microsoft to manually initiate the process to permanently remove the mailbox data. This process to permanently remove mailbox data starts automatically after day 61 in the lifecycle, so there would be no reason to contact Microsoft after this point in the lifecycle.
@@ -729,7 +729,7 @@ You can delete the following types of Bookings data in response to a DSR deletin
 
 Business owners and admins can also delete their customer's data by using the Business center privacy portal. See [Export or delete user data using Business center privacy portal](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8).
 
-Additionally, you can delete business owner and staff data, you can delete the corresponding Office 365 user account. See the section  [Deleting a user](#deleting-a-user).
+Additionally, you can delete business owner and staff data, you can delete the corresponding user account. See the section  [Deleting a user](#deleting-a-user).
 
 #### Listings
 
@@ -910,7 +910,7 @@ An admin's ability to add themselves as an owner of a Flow requires an account w
 
 - Flow/PowerApps Plan 2 license (paid or trial)
 
-- [Office 365 global administrator\
+- [Global administrator\
   ](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)
 
     or
@@ -923,7 +923,7 @@ To add yourself as an owner of a flow.
 
 1. Go to <https://admin.flow.microsoft.com>
 2. Sign in with your Office 365 credentials.
-3. On the **Environments** page, click the environment for the flows that you want to access. Office 365 organizations have a default environment.
+3. On the **Environments** page, click the environment for the flows that you want to access. organizations have a default environment.
 4. On the page for the environment that you selected, click **Resources**, and then click **Flows.** A list of all flows in the environment is displayed.
 5. Click **View details** for the flow that you want to add yourself as a member.
 6. Under **Owners**, click **Manage sharing**.
@@ -1086,7 +1086,7 @@ PowerApps is a service for building apps that can be shared and used within your
 To help facilitate a DSR request related to PowerApps, you can use the administration operations exposed in the [PowerApps Admin Center](https://admin.powerapps.com/) and [PowerApps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804). Access to these tools requires an account with the following permissions:
 
 - A paid PowerApps Plan 2 license or a PowerApps Plan 2 trial license. You can sign up for a 30-day trial license [here](https://web.powerapps.com/trial).
-- [Office 365 global administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)
+- [Global administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)
     or
 - [Azure Active Directory global administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
 
@@ -1263,7 +1263,7 @@ The following sections explain how to use the in-app functionality in Microsoft 
 
 #### Discover
 
-From the Yammer admin center, a Yammer verified admin (Office 365 global admin or verified admin set up in Yammer) can export data pertaining to a given user. The export includes the messages and files posted and modified by the user, and information about topics and groups created by the user. When a user-specific data export is run, the admin will also receive an inbox message with the user's account activity data that they can provide to the user if they so choose. For detailed instructions, see [Yammer Enterprise: Privacy](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf).
+From the Yammer admin center, a Yammer verified admin (global admin or verified admin set up in Yammer) can export data pertaining to a given user. The export includes the messages and files posted and modified by the user, and information about topics and groups created by the user. When a user-specific data export is run, the admin will also receive an inbox message with the user's account activity data that they can provide to the user if they so choose. For detailed instructions, see [Yammer Enterprise: Privacy](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf).
 
 User-specific exports are for a single network, so if the user is in an external Yammer network, the admin must export data for that external network, and for the home network.
 
@@ -1628,7 +1628,7 @@ This guide is dedicated to the topic of how to find and act on personal data to 
 
 Parts 1–3 of this guide covers products and services for which Microsoft is a data processor to your organization, and thus DSR capability is made available to your tenant administrator. There are various circumstances where your organization's users may use their work or school account (also referred to as "Azure Active Directory ID" or "AAD") to sign in to Microsoft products and services for which Microsoft is a data controller. For all such products and services, your users need to initiate their own data subject requests directly to Microsoft and Microsoft will fulfill the requests directly to the user. By design, products and services involving storage of user-authored content enable users to access, export, rectify, and delete their user-authored content as part of the inherent functionality of the products. Scenarios where this may apply include the following:
 
-- **Optional connected online services:** Office 365 ProPlus makes certain optional connected online services available to the user. The list of services and related user controls are listed [here](https://support.office.com/article/microsoft-s-other-connected-services-92c234f1-dc91-4dc1-925d-6c90fc3816d8). You can decide whether you would like to allow your end users to use these services. For more information, see [How admins can manage controller services in Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/manage-controller-services-office-365-proplus). If these optional services process personal data, Microsoft is a data controller for these services.
+- **Optional connected online services:** Microsoft 365 Apps for enterprise makes certain optional connected online services available to the user. The list of services and related user controls are listed [here](https://support.office.com/article/microsoft-s-other-connected-services-92c234f1-dc91-4dc1-925d-6c90fc3816d8). You can decide whether you would like to allow your end users to use these services. For more information, see [How admins can manage controller services in Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/manage-controller-services-office-365-proplus). If these optional services process personal data, Microsoft is a data controller for these services.
 - **User feedback:** If your users elect to provide feedback on Microsoft products and services, Microsoft is a data controller for such feedback to the extent it contains personal data. Microsoft fulfills any data subject requests for feedback collected by Microsoft (including feedback managed by Microsoft subprocessors) except in cases where Microsoft has instructed users not to include personal data during the feedback collection process. Exceptions: If Microsoft has instructed users not to include personal data during the feedback collection process, Microsoft relies on that instruction and will assume that no personal data has been provided. Users who have created a separate account with third-party feedback service providers need to fulfill their DSR directly with those providers.
 - **Windows authenticated via work or school account:** If your organization has purchased Windows licenses, and your users authenticate to organization-provided Windows with their work or school account, Microsoft acts as a data controller.
 - **User-acquired products or services:** If you allow your users, acting in their individual capacity, to acquire Microsoft products or services that use AAD for authentication (for example, Office add-ons or applications available in a Microsoft Store), Microsoft may be a data controller. For any such Microsoft products or services, users need to contact Microsoft directly to initiate a DSR.
@@ -1650,7 +1650,7 @@ To help prepare your organization to undertake DSR investigations using Office 3
 
 - Use the DSR eDiscovery case tool in the Office 365 Security & Compliance Center to manage DSR investigations
 - Set up Compliance Boundaries to limit the scope of Content Searches
-- Use the Office 365 audit log search tool in DSR investigations
+- Use the audit log search tool in DSR investigations
 
 ### Use the DSR case tool to manage DSR investigations
 
@@ -1703,7 +1703,7 @@ Here's a high-level overview of how to implement Compliance Boundaries (together
 
 For step-by-step instructions, see [Set up compliance boundaries for eDiscovery investigations in Office 365](https://support.office.com/article/1b45c82f-26c8-44fb-9f3b-b45436fe2271).
 
-### Use the Office 365 audit log search tool in DSR investigations
+### Use the audit log search tool in DSR investigations
 
 IT admins can use the audit log search tool in the Security & Compliance Center to identity documents, files, and other Office 365 resources that users have created, accessed, changed, or deleted. Searching for this kind activity can be useful in DSR investigations. For example, in SharePoint Online and OneDrive for Business, auditing events are logged when users perform these activities:
 

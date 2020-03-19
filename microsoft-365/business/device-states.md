@@ -35,9 +35,9 @@ Devices in the **Device actions** list (Admin home \> **Device actions**) can ha
   
 |**Status**|**Description**|
 |:-----|:-----|
-|Managed by Intune  <br/> |Managed by Microsoft 365 Business.  <br/> |
-|Retire pending  <br/> |Microsoft 365 Business is getting ready to remove company data from the device.  <br/> |
-|Retire in progress  <br/> |Microsoft 365 Business is currently removing company data from the device.  <br/> |
+|Managed by Intune  <br/> |Managed by Microsoft 365 Business Premium.  <br/> |
+|Retire pending  <br/> |Microsoft 365 Business Premium is getting ready to remove company data from the device.  <br/> |
+|Retire in progress  <br/> |Microsoft 365 Business Premium is currently removing company data from the device.  <br/> |
 |Retire failed  <br/> | Remove company data action failed.  <br/> |
 |Retire canceled  <br/> |Retire action was canceled.  <br/> |
 |Wipe pending  <br/> |Waiting for factory reset to start.  <br/> |
@@ -46,5 +46,5 @@ Devices in the **Device actions** list (Admin home \> **Device actions**) can ha
 |Wipe canceled  <br/> |Factory wipe was canceled.  <br/> |
 |Unhealthy  <br/> |An action is pending (or in progress), but the device hasn't checked in for 30+ days.  <br/> |
 |Delete pending  <br/> |Delete action is pending.  <br/> |
-|Discovered  <br/> |Microsoft 365 Business has detected the device.  <br/> |
+|Discovered  <br/> |Microsoft 365 Business Premium has detected the device.  <br/> |
    

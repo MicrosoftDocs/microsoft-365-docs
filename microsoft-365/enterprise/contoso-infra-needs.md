@@ -131,7 +131,7 @@ Contoso's IT department determined the following mapping of business needs to Mi
 | Compliance |  |  |
 |  | Adhere to regional regulatory requirements | GDPR features in Office 365 |
 | Management |  |  |
-|  | Lower the IT overhead for installing client updates | Deployment rings <BR> Windows 10 Enterprise updates <BR> Office 365 ProPlus updates |
+|  | Lower the IT overhead for installing client updates | Deployment rings <BR> Windows 10 Enterprise updates <BR> Microsoft 365 Apps for enterprise updates |
 ||||
 
 ## Next step

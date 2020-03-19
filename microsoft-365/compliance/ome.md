@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Message Encryption"
+title: "Message Encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -19,7 +19,7 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: "With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Email message encryption helps ensure that only intended recipients can view message content."
 ---
 
-# Office 365 Message Encryption
+# Message Encryption
 
 People often use email to exchange sensitive information, such as financial data, legal contracts, confidential product information, sales reports and projections, patient health information, or customer and employee information. As a result, mailboxes can become repositories for large amounts of potentially sensitive information and information leakage can become a serious threat to your organization.
 
@@ -58,7 +58,7 @@ Office 365 Advanced Message Encryption lets you create multiple branding templat
 
 Advanced Message Encryption in Office 365 helps you meet compliance obligations that require more flexible control over external recipient's access to encrypted emails. With Advanced Message Encryption in Office 365, as an administrator, you can control sensitive emails shared outside the organization with automatic policies that detect sensitive information types (e.g. PII, Financial or Health IDs) or keywords to enhance protection by expiring access through a secure web portal to encrypted emails. Additionally, as an admin you can further control encrypted emails accessed externally through an Office 365 web portal by revoking access to an email any time.
 
-Message revocation and expiration only work for emails that your users send to recipients outside your Office 365 organization. In addition, the recipients must access the email through the web portal. To ensure the recipient uses the portal to receive email, you set up a custom branding template that applies the wrapper. Then, you apply the branding template in a mail flow rule. For more information about Advanced Message Encryption, see [Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md).
+Message revocation and expiration only work for emails that your users send to recipients outside your organization. In addition, the recipients must access the email through the web portal. To ensure the recipient uses the portal to receive email, you set up a custom branding template that applies the wrapper. Then, you apply the branding template in a mail flow rule. For more information about Advanced Message Encryption, see [Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md).
 
 ## Defining rules for Office 365 Message Encryption
 
@@ -76,7 +76,7 @@ If you're ready to get started using the new OME capabilities within your organi
 
 With Office 365 Message Encryption, users can send encrypted email from Outlook and Outlook on the web. Additionally, admins can set up mail flow rules in Office 365 to automatically encrypt emails based on keyword matching or other conditions.
 
-Recipients of encrypted messages who are in Office 365 organizations will be able to read those messages seamlessly in any version Outlook, including Outlook for PC, Outlook for Mac, Outlook on the web, Outlook for iOS, and Outlook for Android. Users that receive encrypted messages on other email clients can view the messages in the OME portal.
+Recipients of encrypted messages who are in organizations will be able to read those messages seamlessly in any version Outlook, including Outlook for PC, Outlook for Mac, Outlook on the web, Outlook for iOS, and Outlook for Android. Users that receive encrypted messages on other email clients can view the messages in the OME portal.
 
 For detailed guidance about how to send and view encrypted messages, take a look at these articles:
 
@@ -85,7 +85,7 @@ For detailed guidance about how to send and view encrypted messages, take a look
 |Read this article...|If you are...|
 |[Learn about protected messages in Office 365](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx)|An end user that wants to learn more about how encrypted messages work and what options are available to you.|
 |[How do I open a protected message?](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)|An end user that wants to read a protected message that was sent to you. This article includes information about reading messages in several versions of Outlook and from different email accounts, including those outside of Office 365 such as gmail and Yahoo! accounts.|
-|[Send, view, and reply to encrypted messages in Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)|An end user that wants to send, view, or reply to an encrypted message from Outlook. Even if you're not a member of an Office 365 organization, you still receive notification of encrypted messages sent to you in Outlook. Use this article for instructions on how to view and reply to encrypted messages sent from Office 365.|
+|[Send, view, and reply to encrypted messages in Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)|An end user that wants to send, view, or reply to an encrypted message from Outlook. Even if you're not a member of an organization, you still receive notification of encrypted messages sent to you in Outlook. Use this article for instructions on how to view and reply to encrypted messages sent from Office 365.|
 |[Send a digitally signed or encrypted message](https://support.office.com/article/a18ecf7f-a7ac-4edd-b02e-687b05eff547)|An end user that wants to send, view, or reply to encrypted messages using Outlook for Mac. This article also covers using encryption methods other than OME, such as S/MIME.|
 |[View encrypted messages on your Android device](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb)|An end user who has received a message encrypted with Office 365 Message Encryption on your Android device, you can use the free OME Viewer app to view the message and send an encrypted reply. This article explains how.|
 |[View encrypted messages on your iPhone or iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf)|An end user who has received a message encrypted with Office 365 Message Encryption on your iPhone or iPad, you can use the free OME Viewer app to view the message and send an encrypted reply. This article explains how.|

@@ -17,7 +17,7 @@ description: "Admins can learn about queue alerts and Queues in the mail flow da
 
 ## Queue alerts
 
-When messages can't be sent from your Office 365 organization to your on-premises or partner email servers using connectors, the messages are queued in Office 365. Common examples that cause this condition are:
+When messages can't be sent from your organization to your on-premises or partner email servers using connectors, the messages are queued in Office 365. Common examples that cause this condition are:
 
 - The connector is incorrectly configured.
 

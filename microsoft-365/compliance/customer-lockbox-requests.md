@@ -49,7 +49,7 @@ The following steps outline the typical workflow when a Microsoft engineer initi
 
    Anyone who is assigned the [Customer Lockbox access approver](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) admin role in Microsoft 365 admin center can approve Customer Lockbox requests.
 
-6. The approver signs in to the Microsoft 365 admin center and approves the request. This step triggers the creation of an audit record available by searching the Office 365 audit log. For more information, see [Auditing Customer Lockbox requests](#auditing-customer-lockbox-requests).
+6. The approver signs in to the Microsoft 365 admin center and approves the request. This step triggers the creation of an audit record available by searching the audit log. For more information, see [Auditing Customer Lockbox requests](#auditing-customer-lockbox-requests).
 
    If the customer rejects the request or doesn't approve the request within 12 hours, the request expires and no access is granted to the Microsoft engineer.
 
@@ -59,7 +59,7 @@ The following steps outline the typical workflow when a Microsoft engineer initi
 7. After the approver from the organization approves the request, the Microsoft engineer receives the approval message, logs into the tenant in Exchange Online, and fixes the customer's issue. Microsoft engineers have the requested duration to fix the issue after which the access is automatically revoked.
 
 > [!NOTE]
-> All actions performed by a Microsoft engineer are logged in the Office 365 audit log. You can search for and review these audit records.
+> All actions performed by a Microsoft engineer are logged in the audit log. You can search for and review these audit records.
 
 ## Turn Customer Lockbox requests on or off
 
@@ -97,7 +97,7 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 ## Auditing Customer Lockbox requests
 
-Audit records that correspond to the Customer Lockbox requests are logged in the Office 365 audit log. You can access these logs by using the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Office 365 Security & Compliance Center. Actions related to a accepting or denying a Customer Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the Office 365 audit log. You can search for and review these audit records.
+Audit records that correspond to the Customer Lockbox requests are logged in the audit log. You can access these logs by using the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Office 365 Security & Compliance Center. Actions related to a accepting or denying a Customer Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the audit log. You can search for and review these audit records.
 
 ### Search the audit log for activity related to Customer Lockbox requests
 
@@ -139,7 +139,7 @@ Before you can use the audit log to track requests for Customer Lockbox, there a
 
 ### Audit record for a Customer Lockbox access request
 
-When a person in your organization approves or denies a Customer Lockbox request, an audit record is logged in the Office 365 audit log. This record contains the following information.
+When a person in your organization approves or denies a Customer Lockbox request, an audit record is logged in the audit log. This record contains the following information.
 
 | Audit record property| Description|
 |:---------- |:----------|

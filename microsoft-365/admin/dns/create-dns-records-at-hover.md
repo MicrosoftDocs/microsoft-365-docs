@@ -76,7 +76,7 @@ Follow the steps below or [watch the video](https://support.office.com/article/V
   
 7. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record.
   
 When Microsoft finds the correct TXT record, your domain is verified.
   

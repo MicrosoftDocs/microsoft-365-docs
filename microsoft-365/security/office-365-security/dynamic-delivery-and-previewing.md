@@ -1,5 +1,5 @@
 ---
-title: "Dynamic Delivery and previewing with Office 365 ATP Safe Attachments"
+title: "Dynamic Delivery and previewing with ATP Safe Attachments"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,7 +19,7 @@ ms.collection:
 description: "When you set up your ATP safe attachments policies, you choose Dynamic Delivery to avoid message delays and enable people to preview attachments that are being scanned."
 ---
 
-# Dynamic Delivery and previewing with Office 365 ATP Safe Attachments
+# Dynamic Delivery and previewing with ATP Safe Attachments
 
 ## Overview
 

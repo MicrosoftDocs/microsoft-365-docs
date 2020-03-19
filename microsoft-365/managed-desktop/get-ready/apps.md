@@ -23,19 +23,19 @@ You can also deploy additional non-Microsoft apps to your end users for self-ser
 
 ## Apps provided by Microsoft
 
-Included with your Microsoft Managed Desktop license are 64-bit versions of the apps in the Office 365 ProPlus Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, and OneNote.) Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but you can request them to be added. For more information about these apps, see [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md).
+Included with your Microsoft Managed Desktop license are 64-bit versions of the apps in the Microsoft 365 Apps for enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, and OneNote.) Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but you can request them to be added. For more information about these apps, see [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md).
 
 ### What Microsoft does to support the apps we provide
 
-Microsoft will provide full service for the deployment, update, and support for the included Office 365 ProPlus apps. Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but Microsoft Managed Desktop will provide deployment groups allowing your IT administrator to manage licenses and deploy these applications appropriately for your organization. Microsoft will support end users of these applications through the Microsoft Managed Desktop support channels.
+Microsoft will provide full service for the deployment, update, and support for the included Microsoft 365 Apps for enterprise apps. Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but Microsoft Managed Desktop will provide deployment groups allowing your IT administrator to manage licenses and deploy these applications appropriately for your organization. Microsoft will support end users of these applications through the Microsoft Managed Desktop support channels.
 
 ### What you need to do to support the apps we provide
 
 There are still certain things you need to do with these apps:
 
-- **Assign licenses** - You are responsible for obtaining and assigning the appropriate licenses to end users for Office 365 ProPlus.
+- **Assign licenses** - You are responsible for obtaining and assigning the appropriate licenses to end users for Microsoft 365 Apps for enterprise.
 - **Add users to security groups** - If you're using Microsoft Project or Visio, your IT administrator must add those users to the appropriate deployment groups. IT administrators are also responsible for reclaiming licenses from those users if they leave the company.
-- **Deploy Office 365 Addons** - If you need any Addons for any of the Office 365 ProPlus apps, deploy them centrally like any other Windows 32 app. 
+- **Deploy Office 365 Addons** - If you need any Addons for any of the Microsoft 365 Apps for enterprise apps, deploy them centrally like any other Windows 32 app. 
 
 ## Apps you provide
 

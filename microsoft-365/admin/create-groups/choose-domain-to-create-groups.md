@@ -28,7 +28,7 @@ description: "Learn to choose the domain to use when creating Office 365 groups 
   
 If your organization needs users to create their groups in domains other than the default accepted domain of your business, you can allow this by configuring email address policies (EAPs) using PowerShell.
   
-Before you can run the PowerShell cmdlets, download and install a module that will let you talk to your Office 365 organization. Check out [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
+Before you can run the PowerShell cmdlets, download and install a module that will let you talk to your organization. Check out [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
   
 ## Example scenarios
 

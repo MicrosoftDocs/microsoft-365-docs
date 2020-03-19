@@ -1,5 +1,5 @@
 ---
-title: "Create block sender lists in Office 365"
+title: "Create block sender lists"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,7 +15,7 @@ search.appverid:
 description: "Block sender list options include Outlook Blocked Senders, Anti-Spam Sender/Domain Block Lists, IP Block Lists, and Exchange mail flow rules (transport rules)."
 ---
 
-# Create block sender lists in Office 365
+# Create block sender lists
 
 Sometimes it's necessary to block unwanted email from senders. There are several methods available to choose from. These options include Outlook Blocked Senders, Anti-Spam Sender/Domain Block Lists, IP Block Lists, and Exchange mail flow rules (also known as transport rules).
 

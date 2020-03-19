@@ -24,7 +24,7 @@ ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: "Learn how a global admin can change a user's email address and display name. "
 ---
 
-# Change a user name and email address in Office 365
+# Change a user name and email address
 
 You may need to change someone's email address and display name if, for example, they get married and their last name changes.
 
@@ -43,7 +43,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Change a user's email address
 
-You must be an [Office 365 global admin](about-admin-roles.md) to do these steps. 
+You must be a [global admin](about-admin-roles.md) to do these steps. 
 
 ::: moniker range="o365-worldwide"
  

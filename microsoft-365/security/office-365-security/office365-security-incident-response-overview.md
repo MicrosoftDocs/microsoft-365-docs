@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Security Incident Response"
+title: "Security Incident Response"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,7 +18,7 @@ search.appverid:
 description: "This solution tells you what the most common cybersecurity attacks might look like in Office 365 and how to respond to them"
 ---
 
-# Office 365 Security Incident Response
+# Security Incident Response
 
  **Summary:** This solution tells you what the indicators are for the most common cybersecurity attacks in Office 365, how to positively confirm any given attack, and how to respond to it.
 

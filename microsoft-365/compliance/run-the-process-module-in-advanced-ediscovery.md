@@ -1,5 +1,5 @@
 ---
-title: "Run the Process module in Office 365 Advanced eDiscovery"
+title: "Run the Process module in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: "Learn the guidelines for preparing case files of Office 365 data for analysis with Office 365 Advanced eDiscovery. 
+description: "Learn the guidelines for preparing case files of Office 365 data for analysis with Advanced eDiscovery. 
 "
 ---
 

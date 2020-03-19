@@ -44,7 +44,7 @@ Before you [create a shared mailbox](create-a-shared-mailbox.md), here are some 
 
 - **Admin roles:** Users with global admin or Exchange admin roles can create shared mailboxes.
 
-- **Subscription requirements:** To create a shared mailbox, you need to subscribe to an Office 365 for business plan that includes email (the Exchange Online service). The Microsoft 365 Apps for business subscription doesn't include email; Microsoft 365 Business Standard does.
+- **Subscription requirements:** To create a shared mailbox, you need to subscribe to a Microsoft 365 for business plan that includes email (the Exchange Online service). The Microsoft 365 Apps for business subscription doesn't include email; Microsoft 365 Business Standard does.
 
 - **Signing in:** A shared mailbox is not intended for direct sign-in by its associated user account. You should always block sign-in for the shared mailbox account and keep it blocked.
 

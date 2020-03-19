@@ -1,5 +1,5 @@
 ---
-title: "Search for content in Office 365"
+title: "Search for content"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: "Use the Content Search eDiscovery tool in the Security & Compliance Center to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business."
 ---
 
-# Search for content in Office 365
+# Search for content
 
 Use the Content Search tool in the Security & Compliance Center to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in Office 365 collaboration tools such as Microsoft Teams and Office 365 Groups.
   

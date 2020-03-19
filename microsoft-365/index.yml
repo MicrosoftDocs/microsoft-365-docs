@@ -60,7 +60,7 @@ additionalContent:
           summary: Set up and manage Office 365 and Microsoft 365 services for your organization. 
           url: ./admin/admin-home.yml
         # Card
-        - title: Microsoft 365 Business
+        - title: Microsoft 365 Business Premium
           summary: Designed for small and midsize businesses. Run your business with the latest version of Windows and Office apps like Excel and Outlook. Take advantage of data protection and security that extends to all your business devices. 
           url: ./business/index.yml
         # Card
@@ -81,7 +81,7 @@ additionalContent:
           url: ./security/index.yml
         # Card
         - title: Microsoft 365 for Campaigns
-          summary: Keep your campaign or business data and communications secure with this recommended configuration for Microsoft 365 Business.
+          summary: Keep your campaign or business data and communications secure with this recommended configuration for Microsoft 365 for business.
           url: ./campaigns/index.md
         # Card
         - title: Microsoft Managed Desktop

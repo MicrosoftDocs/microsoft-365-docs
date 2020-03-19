@@ -130,7 +130,7 @@ This role lets users decrypt rights-protected email messages when exporting sear
 
 ### Search And Purge
 
-This role lets users perform bulk removal of data matching the criteria of a content search. For more information, see [Search for and delete email messages in your Office 365 organization](search-for-and-delete-messages-in-your-organization.md). 
+This role lets users perform bulk removal of data matching the criteria of a content search. For more information, see [Search for and delete email messages in your organization](search-for-and-delete-messages-in-your-organization.md). 
 
 ## More information
 

@@ -13,7 +13,7 @@ search.appverid: MET150
 mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: "For Office 365, Azure, and Dynamics 365 Online regulatory compliance reports, to see third-party audits, find out how Microsoft keeps customer data safe, and how you can be compliant with ISO, HIPAA, NIST, FINRA, GDPR, and FedRAMP when you use these online services."
+description: "For Microsoft 365, Azure, and Dynamics 365 Online regulatory compliance reports, to see third-party audits, find out how Microsoft keeps customer data safe, and how you can be compliant with ISO, HIPAA, NIST, FINRA, GDPR, and FedRAMP when you use these online services."
 ---
 
 # Get started with the Microsoft Service Trust Portal
@@ -26,7 +26,7 @@ The Service Trust Portal contains details about Microsoft's implementation of co
   
 **Existing customers can access the Service Trust Portal** at [https://aka.ms/STP](https://aka.ms/STP) with one of the following online subscriptions (trial or paid): 
   
-- Office 365
+- Microsoft 365
 
 - Dynamics 365
 
@@ -39,7 +39,7 @@ The Service Trust Portal contains details about Microsoft's implementation of co
   
 To create a new account or to create a trial account, use one of the following sign-up forms (also used for trial accounts) to get access to the STP.
   
-- Sign up for a new [Office 365 Business trial account](https://go.microsoft.com/fwlink/p/?LinkID=507653) or a new [Office 365 Enterprise trial account](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+- Sign up for a new [Microsoft 365 Apps for business trial account](https://go.microsoft.com/fwlink/p/?LinkID=507653) or a new [Office 365 Enterprise trial account](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
 - Sign up for a new [Dynamics 365 trial account](https://go.microsoft.com/fwlink/?LinkId=252780)
 
@@ -61,7 +61,7 @@ The **Service Trust Portal** link displays the home page. It provides a quick wa
 
 ### Compliance Manager
 
-Compliance Manager is a workflow-based risk assessment tool that helps you track, assign, and verify your organization's regulatory compliance activities related to Microsoft Cloud services, such as Office 365, Dynamics 365, and Azure. Use Compliance Manager to manage regulatory compliance within the shared responsibility model of the cloud. Depending on the version of Compliance Manager you want to use, see the following articles for more information:
+Compliance Manager is a workflow-based risk assessment tool that helps you track, assign, and verify your organization's regulatory compliance activities related to Microsoft Cloud services, such as Microsoft 365, Dynamics 365, and Azure. Use Compliance Manager to manage regulatory compliance within the shared responsibility model of the cloud. Depending on the version of Compliance Manager you want to use, see the following articles for more information:
 
 - [Microsoft Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 

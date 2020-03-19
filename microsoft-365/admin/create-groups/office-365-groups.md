@@ -1,5 +1,5 @@
 ---
-title: "Overview of Office 365 Groups for administrators"
+title: "Overview of Groups for administrators"
 ms.reviewer: arvaradh
 f1.keywords:
 - NOCSH
@@ -21,7 +21,7 @@ search.appverid:
 description: "Learn about Office 365 Groups."
 ---
 
-# Overview of Office 365 Groups for administrators
+# Overview of Groups for administrators
 
 Office 365 Groups is the foundational membership service that drives all teamwork across Microsoft 365. With Office 365 Groups, you can give a group of people access to a collection of collaboration resources for those people to share. These resources include:
 
@@ -74,7 +74,7 @@ The following limits apply to Office 365 Groups:
 |File storage|1 Terabyte + 10 GB per subscribed user + any additional storage purchased. You can purchase an unlimited amount of additional storage.|
 |Group Mailbox size|50 GB|
 
-The default maximum number of Office 365 Groups that an Office 365 organization can have is currently 500,000, but can be increased by request. For more information on Office 365 Groups limits, see [Office 365 Groups - Admin help](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
+The default maximum number of Office 365 Groups that an organization can have is currently 500,000, but can be increased by request. For more information on Office 365 Groups limits, see [Office 365 Groups - Admin help](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
 
 Managing your Office 365 Groups is more effective when you have actionable information about Groups usage. The Microsoft 365 Admin Center has a reporting tool that can let you see things such as storage use, how many active Groups you have and even how your users are using the Groups. See: [Microsoft 365 Reports in the admin center](../activity-reports/office-365-groups.md) for more information.
 

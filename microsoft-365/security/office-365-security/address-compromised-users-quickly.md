@@ -1,5 +1,5 @@
 ---
-title: "Address compromised user accounts with automated investigation and response in Office 365 Advanced Threat Protection"
+title: "Address compromised user accounts with automated investigation and response"
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection, compromised
 ms.author: deniseb
 author: denisebmsft

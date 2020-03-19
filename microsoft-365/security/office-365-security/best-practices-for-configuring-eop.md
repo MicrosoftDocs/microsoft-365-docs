@@ -1,5 +1,5 @@
 ---
-title: "Best practices for configuring EOP and Office 365 ATP"
+title: "Best practices for configuring EOP and ATP"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -14,7 +14,7 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: "Follow these best-practice recommendations for Exchange Online Protection (EOP) in order to set yourself up for success and avoid common configuration errors."
 ---
 
-# Best practices for configuring EOP and Office 365 ATP
+# Best practices for configuring EOP and ATP
 
 Follow these best-practice recommendations for Exchange Online Protection (EOP) in order to set yourself up for success and avoid common configuration errors. This topic assumes that you've already completed the setup process. If you haven't completed EOP setup, see [Set up your EOP service](set-up-your-eop-service.md).
 

@@ -1,5 +1,5 @@
 ---
-title: "Run the Process module and load data in Office 365 Advanced eDiscovery"
+title: "Run the Process module and load data in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: "Learn how to use the Office 365 Security &amp; Compliance Center to access Office 365 Advanced eDiscovery and run the Process module for a case. 
+description: "Learn how to use the Office 365 Security &amp; Compliance Center to access Advanced eDiscovery and run the Process module for a case. 
 "
 ---
 

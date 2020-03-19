@@ -91,7 +91,7 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
     
 13. Choose **Save** when finished. 
     
-## Limitations of Office 365 organization wide signatures
+## Limitations of organization wide signatures
 
 You can't do the following with Office 365 signatures:
   

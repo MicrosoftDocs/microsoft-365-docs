@@ -1,5 +1,5 @@
 ---
-title: "SIEM integration with Office 365 Advanced Threat Protection"
+title: "SIEM integration with Advanced Threat Protection"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -19,7 +19,7 @@ ms.collection:
 description: "Integrate your organization's SIEM server with Office 365 Advanced Threat Protection and related threat events in the Office 365 Activity Management API."
 ---
 
-# SIEM integration with Office 365 Advanced Threat Protection
+# SIEM integration with Advanced Threat Protection
 
 If your organization is using a security incident and event management (SIEM) server, you can integrate Office 365 Advanced Threat Protection with your SIEM server. SIEM integration enables you to view information, such as malware or phish detected by Office 365 Advanced Protection, in your SIEM server reports. To set up SIEM integration, you use the [Office 365 Activity Management API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 

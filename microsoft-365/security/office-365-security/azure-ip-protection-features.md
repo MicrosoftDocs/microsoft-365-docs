@@ -1,5 +1,5 @@
 ---
-title: "Protection features in Azure Information Protection rolling out to existing Office 365 tenants"
+title: "Protection features in Azure Information Protection rolling out to existing tenants"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -18,7 +18,7 @@ ms.collection:
 description: "To help with the initial step in protecting your information, starting July 2018 all Azure Information Protection eligible tenants will have the protection features in Azure Information Protection turned on by default. The protection features in Azure Information Protection were formerly known in Office 365 as Rights Management or Azure RMS. If your organization has an Office E3 service plan or a higher service plan you will now get a head start protecting information through Azure Information Protection when we roll out these features."
 ---
 
-# Protection features in Azure Information Protection rolling out to existing Office 365 tenants
+# Protection features in Azure Information Protection rolling out to existing tenants
 
 To help with the initial step in protecting your information, starting July 2018 all Azure Information Protection eligible tenants will have the protection features in Azure Information Protection turned on by default. The protection features in Azure Information Protection were formerly known in Office 365 as Rights Management or Azure RMS. If your organization has an Office E3 service plan or a higher service plan you will now get a head start protecting information through Azure Information Protection when we roll out these features.
 
@@ -44,7 +44,7 @@ Office 365 Message Encryption leverages the protection capabilities in Azure Inf
 
 ## Does this impact me?
 
-If your Office 365 organization has purchased an eligible Office 365 license, then your tenant will be impacted by this change.
+If your organization has purchased an eligible Office 365 license, then your tenant will be impacted by this change.
 
  **IMPORTANT!** If you're using Active Directory Rights Management Services (AD RMS) in your on-premises environment, you must either opt-out of this change immediately or migrate to Azure Information Protection before we roll out this change within the next 30 days. For information on how to opt-out, see "I use AD RMS, how do I opt out?" later in this article. If you prefer to migrate, see [Migrating from AD RMS to Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
@@ -68,7 +68,7 @@ For more information about these registry configurations, see [Enabling client-s
 
 To opt out of the upcoming change, complete these steps:
 
-1. Using a work or school account that has global administrator permissions in your Office 365 organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Run the Set-IRMConfiguration cmdlet using the following syntax:
 

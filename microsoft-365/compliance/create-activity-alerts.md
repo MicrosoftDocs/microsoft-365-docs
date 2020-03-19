@@ -1,5 +1,5 @@
 ---
-title: "Create activity alerts in the Office 365"
+title: "Create activity alerts"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,9 +19,9 @@ ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: "Add and manage activity alerts in the security and compliance center so that Office 365 will send you email notifications when users perform specific activities in Office 365."
 ---
 
-# Create activity alerts in the Office 365
+# Create activity alerts
 
-You can create an activity alert that will send you an email notification when users perform specific activities in Office 365. Activity alerts are similar to searching for events in the Office 365 audit log, except that you'll be sent an email message when an event for an activity that you've created an alert for happens. 
+You can create an activity alert that will send you an email notification when users perform specific activities in Office 365. Activity alerts are similar to searching for events in the audit log, except that you'll be sent an email message when an event for an activity that you've created an alert for happens. 
   
  **Why use activity alerts instead of searching the audit log?** There might be certain kinds of activity or activity performed by specific users that you really want to know about. Instead of having to remember to search the audit log for those activities, you can use activity alerts to have Office 365 send you an email message when users perform those activities. For example, you can create an activity alert to notify you when a user deletes files in SharePoint or you can create an alert to notify you when a user permanently deletes messages from their mailbox. The email notification sent to you includes information about which activity was performed and the user who performed it. 
 
@@ -34,7 +34,7 @@ You can create an activity alert that will send you an email notification when u
     
 - You (or another admin) must first turn on audit logging for your organization before you can start using activity alerts. To do this, just click **Start recording user and admin activity** on the **Activity alerts** page. (If you don't see this link, auditing has already been turned on for your organization.) You can also turn on auditing on the **Audit log search** page in the Security & Compliance Center (go to **Search** \> **Audit log search**). You only have to do this once for your organization.
   
-- You can create alerts for the same activities that you can search for in the Office 365 audit log. See the [More information](#more-information) section for a list of common scenarios (and the specific activity to monitor) that you can create alerts for. 
+- You can create alerts for the same activities that you can search for in the audit log. See the [More information](#more-information) section for a list of common scenarios (and the specific activity to monitor) that you can create alerts for. 
     
 - You can use the **Activity alerts** page in the Security & Compliance Center to create alerts only for activity performed by users who are listed in your organization's address book. You can't use this page to create alerts for activity performed by external users who aren't listed in the address book. 
     
@@ -61,7 +61,7 @@ You can create an activity alert that will send you an email notification when u
 
     d. **Send this alert when** - Click **Send this alert when** and then configure these two fields:
     
-    - **Activities** - Click the drop-down list to display the activities that you can create an alert for. This is the same activities list that's displayed when you search the Office 365 audit log. You can select one or more specific activities or you can click the activity group name to select all activities in the group. For a description of these activities, see the "Audited activities" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities). When a user performs any of the activities that you've added to the alert, an email notification is sent. 
+    - **Activities** - Click the drop-down list to display the activities that you can create an alert for. This is the same activities list that's displayed when you search the audit log. You can select one or more specific activities or you can click the activity group name to select all activities in the group. For a description of these activities, see the "Audited activities" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities). When a user performs any of the activities that you've added to the alert, an email notification is sent. 
     
      - **Users** - Click this box and then select one or more users. If the users in this box perform the activities that you added to the **Activities** box, an alert will be sent. Leave the **Users** box blank to send an alert when any user in your organization performs the activities specified by the alert. 
 
@@ -108,7 +108,7 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
     |:-----|:-----|:-----|
     |Views a document on a site.  <br/> |Accessed file  <br/> |File and folder activities  <br/> |
     |Edits or changes a document.  <br/> |Modified file  <br/> |File and folder activities  <br/> |
-    |Shares a document with a user outside of your organization.  <br/> |Share file, folder, or site  <br/> And  <br/> Created sharing invitation  <br/> For more information, see [Use sharing auditing in the Office 365 audit log](use-sharing-auditing.md).  <br/> |Sharing and access request activities  <br/> |
+    |Shares a document with a user outside of your organization.  <br/> |Share file, folder, or site  <br/> And  <br/> Created sharing invitation  <br/> For more information, see [Use sharing auditing in the audit log](use-sharing-auditing.md).  <br/> |Sharing and access request activities  <br/> |
     |Uploads or downloads a document.  <br/> |Uploaded file  <br/> And/or  <br/> Downloaded file  <br/> |File and folder activities  <br/> |
     |Changes the access permissions to a site.  <br/> |Modified site permissions  <br/> |Site administration activities  <br/> |
 

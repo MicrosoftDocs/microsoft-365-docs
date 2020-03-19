@@ -22,7 +22,7 @@ description: How a fictional but representative global organization has adopted 
 
 Microsoft 365 Enterprise is Microsoft’s premier cloud offering that combines local and cloud-based productivity apps and services with Windows 10 Enterprise and advanced security features into a complete, intelligent solution that that empowers everyone to be creative and work together, securely. 
 
-The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Office 365 ProPlus, mobile device management, information protection, and security. 
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
 
 The overall goal of Contoso for Microsoft 365 Enterprise is to accelerate their digital transformation by using cloud services to bring together its employees, partners, data, and processes to create customer value and maintain its competitive advantage in a digital-first world.
 
@@ -48,9 +48,9 @@ See these articles for the details:
 
   Contoso's Windows 10 Enterprise infrastructure deploys and automatically installs updates for devices running their primary PC and device operating system.
 
-- [Office 365 ProPlus](contoso-o365pp.md)
+- [Microsoft 365 Apps for enterprise](contoso-o365pp.md)
 
-  Contoso Office 365 ProPlus infrastructure deploys and automatically installs updates for the Microsoft Office suite of productivity software.
+  Contoso Microsoft 365 Apps for enterprise infrastructure deploys and automatically installs updates for the Microsoft Office suite of productivity software.
 
 - [Mobile device management](contoso-mdm.md)
 

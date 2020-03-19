@@ -1,5 +1,5 @@
 ---
-title: "Service encryption with Customer Key in Office 365"
+title: "Service encryption with Customer Key"
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,7 +15,7 @@ ms.collection:
 description: "With Customer Key, you control your organization's encryption keys and then configure Office 365 to use them to encrypt your data at rest in Microsoft's data centers."
 ---
 
-# Service encryption with Customer Key in Office 365
+# Service encryption with Customer Key
 
 Office 365 provides baseline, volume-level encryption enabled through BitLocker and Distributed Key Manager (DKM). Office 365 offers an added layer of encryption at the application level for your content. This content includes data from Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files. This added layer of encryption is called service encryption.
 

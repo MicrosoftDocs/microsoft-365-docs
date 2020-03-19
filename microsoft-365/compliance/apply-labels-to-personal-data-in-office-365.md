@@ -1,5 +1,5 @@
 ---
-title: "Apply labels to personal data in Office 365"
+title: "Apply labels to personal data"
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -19,30 +19,30 @@ search.appverid:
 description: "Learn how to use Office labels as part of your GDPR protection plan."
 ---
 
-# Apply labels to personal data in Office 365
+# Apply labels to personal data
 
  Use this topic if you're using classification labels as part of your GDPR protection plan. 
 
-If you're using labels for protection of personal data in Office 365, Microsoft recommends you start with [retention labels](labels.md). With retention labels, you can:
+If you're using labels for protection of personal data in Microsoft 365, Microsoft recommends you start with [retention labels](labels.md). With retention labels, you can:
 - Use Advanced Data Governance to automatically apply labels based on sensitive information types or other criteria.
 - Use retention labels with data loss prevention to apply protection. 
 - Use labels with eDiscovery and Content Search. 
 
-Cloud App Security doesn't currently support retention labels, but you can use Office 365 sensitive information types with Cloud App Security to monitor personal data that resides in other SaaS apps.
+Cloud App Security doesn't currently support retention labels, but you can use Microsoft 365 sensitive information types with Cloud App Security to monitor personal data that resides in other SaaS apps.
 
-[Sensitivity labels](sensitivity-labels.md) are currently recommended for applying labels to files on premises and in other cloud services and providers. These are also recommended for files in Office 365 that require Azure Information Protection encryption for data protection, such as trade secret files.
+[Sensitivity labels](sensitivity-labels.md) are currently recommended for applying labels to files on premises and in other cloud services and providers. These are also recommended for files in Microsoft 365 that require Azure Information Protection encryption for data protection, such as trade secret files.
 
-At this time, using Azure Information Protection to apply encryption is not recommended for files in Office 365 with data that is subject to the GDPR. Office 365 services currently cannot read into AIP-encrypted files. Therefore, the service can’t find sensitive data in these files.
+At this time, using Azure Information Protection to apply encryption is not recommended for files in Microsoft 365 with data that is subject to the GDPR. Microsoft 365 services currently cannot read into AIP-encrypted files. Therefore, the service can't find sensitive data in these files.
 
-Retention labels can be applied to mail in Exchange Online and these labels work with Office 365 data loss prevention. 
+Retention labels can be applied to mail in Exchange Online and these labels work with Microsoft 365 data loss prevention. 
 
-![Office 365 labels and Azure Information Protection labels](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Microsoft 365 labels and Azure Information Protection labels](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
 In the illustration:
 
 -   Use retention labels for personal data and for highly regulated and trade secret files in SharePoint Online and OneDrive for Business.
--   Office 365 sensitive information types can be used within Office 365 and with Cloud App Security to monitor personal data that resides in other SaaS apps.
+-   Microsoft 365 sensitive information types can be used within Microsoft 365 and with Cloud App Security to monitor personal data that resides in other SaaS apps.
 -   Use sensitivity labels for highly regulated and trade secret files, Exchange Online email, files in other SaaS services, files in on-premises datacenters, and files in other cloud providers.
 
 
@@ -75,7 +75,7 @@ For accessibility, the following table provides the same examples in the illustr
 <p>. . . to documents with this label . . .</p>
 <p>Customer data</p></td>
 <td align="left"><p>Alert when files with these attributes . . .</p>
-<p>Choose one or more attributes: predefined PII attribute, Office 365 sensitive information type, sensitivity label (AIP), custom expression</p>
+<p>Choose one or more attributes: predefined PII attribute, Microsoft 365 sensitive information type, sensitivity label (AIP), custom expression</p>
 <p>. . . in any sanctioned SaaS app are shared outside the organization</p><p>Note: Retention labels are currently not supported in Cloud App Security.</td>
 </tr>
 <tr class="even">
@@ -96,7 +96,7 @@ For accessibility, the following table provides the same examples in the illustr
 
 For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment. It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.
 
-The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here’s what you need to know.
+The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here's what you need to know.
 
 ### One label at a time
 
@@ -195,8 +195,8 @@ The following illustration shows how to create an auto-apply label for the Custo
 
 In the illustration:
 
-- The “Customer data” label is created.
+- The "Customer data" label is created.
 
 - The desired sensitive information types for GDPR are listed: Belgium National Number, Credit Card Number, Croatia Identity Card Number, Finland National ID.
 
-- Create an auto-apply policy assigns the label “Customer data” to any file that includes one of the sensitive information types that you add to the policy.
+- Create an auto-apply policy assigns the label "Customer data" to any file that includes one of the sensitive information types that you add to the policy.

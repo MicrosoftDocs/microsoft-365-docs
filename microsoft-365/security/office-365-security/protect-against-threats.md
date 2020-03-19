@@ -1,5 +1,5 @@
 ---
-title: "Protect against threats in Office 365"
+title: "Protect against threats"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,7 +19,7 @@ ms.collection:
 description: "Use this article as a guide to configure your threat protection features now."
 ---
 
-# Protect against threats in Office 365
+# Protect against threats
 
 Office 365 includes a variety of threat protection features. Here's a quick-start guide you can use as a checklist to make sure your threat protection features are set up for your organization. If you're new to threat protection features in Office 365, or you're just not sure where to begin, use the following guidance as a starting point.
 
@@ -48,7 +48,7 @@ You must be assigned an appropriate role to configure policies in the [Security 
 
 |Role or role group|Where to learn more|
 |---------|---------|
-|Office 365 Global Administrator|[About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|global administrator|[About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
 |Security Administrator|[Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Exchange Online Organization Management|[Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>and<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 
@@ -110,7 +110,7 @@ To set up [ATP Safe Links](atp-safe-links.md), review and edit your default poli
 
 2. Double-click the **Default** policy.
 
-3. In the **Use safe links in** section, select the option **Office 365 ProPlus, Office for iOS and Android**, and then click **Save**.
+3. In the **Use safe links in** section, select the option **Microsoft 365 Apps for enterprise, Office for iOS and Android**, and then click **Save**.
 
 4. In the **Policies that apply to specific recipients** section, click the plus sign (**+**).
 
@@ -202,7 +202,7 @@ To learn more, see [Zero-hour auto purge - protection against spam and malware](
 
 ### Audit logging for reporting and investigation
 
-Audit logging is available in subscriptions that include [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description). In order to view data in threat protection reports, such as the [Security Dashboard](security-dashboard.md), [email security reports](view-email-security-reports.md), and [Explorer](threat-explorer.md), audit logging must be turned on for your organization. To learn more, see [Turn Office 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+Audit logging is available in subscriptions that include [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description). In order to view data in threat protection reports, such as the [Security Dashboard](security-dashboard.md), [email security reports](view-email-security-reports.md), and [Explorer](threat-explorer.md), audit logging must be turned on for your organization. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## Post-setup tasks
 

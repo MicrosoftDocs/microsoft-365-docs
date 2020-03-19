@@ -1,5 +1,5 @@
 ---
-title: "Fighting junk email sent to Office 365"
+title: "Fighting junk email"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,7 +18,7 @@ ms.collection:
 description: "Microsoft's email safety roadmap involves an unmatched cross-product approach. Exchange Online Protection (EOP) anti-spam and anti-phishing filtering technology is being applied across Microsoft's email platforms to provide users with the latest anti-spam and anti-phishing tools and innovations throughout the network. The goal for EOP is to offer a comprehensive and usable email service that helps detect and protect users from junk email, fraudulent email threats (phishing), and malware."
 ---
 
-# Fighting junk email sent to Office 365
+# Fighting junk email
 
 Microsoft's email safety roadmap involves an unmatched cross-product approach. Exchange Online Protection (EOP) anti-spam and anti-phishing filtering technology is being applied across Microsoft's email platforms to provide users with the latest anti-spam and anti-phishing tools and innovations throughout the network. The goal for EOP is to offer a comprehensive and usable email service that helps detect and protect users from junk email, fraudulent email threats (phishing), and malware.
   

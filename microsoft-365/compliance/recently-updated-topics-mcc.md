@@ -71,7 +71,7 @@ Updated articles to clarify support for Microsoft Managed Desktop:<br>
 
 ### Content search and core eDiscovery
 
-[Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md) (new)<br>Detailed info about the retirement of In-Place eDiscovery, In-Place Holds, and the Search-Mailbox cmdlet in Exchange Online and the retirement of Office 365 Advanced eDiscovery v1.0.
+[Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md) (new)<br>Detailed info about the retirement of In-Place eDiscovery, In-Place Holds, and the Search-Mailbox cmdlet in Exchange Online and the retirement of Advanced eDiscovery v1.0.
 
 [Migrate legacy eDiscovery searches and holds to the Microsoft 365 compliance center](migrate-legacy-eDiscovery-searches-and-holds.md) (new)<br>Guidance on how to migrate In-Place eDiscovery searches and holds from the Exchange admin center to the Microsoft 365 compliance center.
 
@@ -288,7 +288,7 @@ Added new guidance to the following articles about the California Consumer Priva
 
 [Manage mailbox auditing](enable-mailbox-auditing.md#more-information) (updated)<br>Added details about how mailbox audit log events are available only for users with E5 licenses or mailboxes where mailbox auditing was manually turned on by an admin. Also new guidance about using the **Search-MailboxAuditLog** cmdlet in Exchange Online PowerShell to search the mailbox audit log for users without E5 licenses.
 
-[Search the Office 365 audit log to troubleshoot common scenarios](auditing-troubleshooting-scenarios.md#investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization) (updated)<br>New section about using pass-through authentication to investigate successful logins by external users.
+[Search the audit log to troubleshoot common scenarios](auditing-troubleshooting-scenarios.md#investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization) (updated)<br>New section about using pass-through authentication to investigate successful logins by external users.
 
 ### Content Search & eDiscovery
 

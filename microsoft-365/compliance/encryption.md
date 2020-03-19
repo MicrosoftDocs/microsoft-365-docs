@@ -1,5 +1,5 @@
 ---
-title: "Encryption in Office 365"
+title: "Encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -20,7 +20,7 @@ ms.collection:
 description: "With Office 365, your content is encrypted at rest and in transit with the strongest encryption, protocols, and technologies available. Get an overview of encryption in Office 365."
 ---
 
-# Encryption in Office 365
+# Encryption
 
 Encryption is an important part of your file protection and information protection strategy. This article provides an overview of encryption for Office 365. Get help with encryption tasks like how to set up encryption for your organization and how to password-protect Office documents.
   

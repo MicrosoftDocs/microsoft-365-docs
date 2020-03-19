@@ -65,7 +65,7 @@ For more details, see [Compliance Solutions](https://products.office.com/busines
 To [define or edit information barrier policies](information-barriers-policies.md), you must be assigned one of the following roles:
 
 - Microsoft 365 global administrator
-- Office 365 global administrator
+- global administrator
 - Compliance administrator
 - IB Compliance Management (this is a new role!)
 

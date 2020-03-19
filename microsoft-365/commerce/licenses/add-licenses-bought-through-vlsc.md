@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 82ba88fa-ebdf-4d44-a7b3-cea82b25d71a
 ROBOTS: NOINDEX
-description: "Learn how to add licenses to your Office 365 subscription purchased through the third-party partner, recognized by Microsoft."
+description: "Learn how to add licenses to your Microsoft 365 subscription purchased through the third-party partner, recognized by Microsoft."
 ---
 
 # Add licenses to a subscription purchased through the Volume Licensing Service Center
 
-Licenses for Microsoft 365 Business Basic, Office 365 Business, Microsoft 365 Business Standard, and the Office 365 Enterprise plans need to be purchased through the third party partner that you originally purchased Office 365 from. If the partner that the subscription was purchased from is known by Microsoft, you can find out how to contact your partner using the following procedure.
+Licenses for Microsoft 365 Business Basic, Microsoft 365 Apps for business, Microsoft 365 Business Standard, and the Office 365 Enterprise plans need to be purchased through the third party partner that you originally purchased Microsoft 365 from. If the partner that the subscription was purchased from is known by Microsoft, you can find out how to contact your partner using the following procedure.
 
 ::: moniker range="o365-worldwide"
 

@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Group Expiration Policy"
+title: "Group Expiration Policy"
 ms.reviewer: arvaradh
 f1.keywords:
 - NOCSH
@@ -21,7 +21,7 @@ search.appverid:
 description: "Learn about Office 365 Groups expiration policies."
 ---
 
-# Office 365 Group Expiration Policy
+# Group Expiration Policy
 
 With the increase in usage of Office 365 Groups, administrators and users need a way to clean up unused groups. Expiration policies can help remove inactive groups from the system and make things cleaner.
 
@@ -48,7 +48,7 @@ It's important to know that expiration is turned off by default. Administrators 
 
 |Role|What they can do|
 |---------|---------|
-|Office 365 global admin (in Azure, the Company administrator), User administrator|Create, read, update, or delete the Office 365 groups expiration policy settings.|
+|Global admin (in Azure, the Company administrator), User administrator|Create, read, update, or delete the Office 365 groups expiration policy settings.|
 |User|Renew or [restore](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) an Office 365 Group that they own|
 
 ## How to set the expiration policy

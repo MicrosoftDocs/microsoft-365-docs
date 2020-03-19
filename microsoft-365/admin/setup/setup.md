@@ -24,10 +24,10 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
-description: "Learn how to set up your Microsoft 365 Business Standard, Microsoft 365 Business Basic, Office 365 Business, or Office 365 Education subscription."
+description: "Learn how to set up your Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365 Apps for business, or Office 365 Education subscription."
 ---
 
-# Set up Office 365 for business
+# Set up Microsoft 365 for business
 
 Follow these steps to get your business or [nonprofit](https://go.microsoft.com/fwlink/p/?LinkId=627221) up and running with [Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220), Microsoft 365 Business Basic, Office 365Business, or Office 365 Education.
   
@@ -45,15 +45,15 @@ If you found this video helpful, check out the [complete training series for sma
 
 ### 1. Sign up and set up
 
-1. To sign up for an Office 365 business plan, go to the [Office Products site](https://www.aka.ms/office365signup) and select **Buy now**.
+1. To sign up for a Microsoft 365 for business plan, go to the [Office Products site](https://www.aka.ms/office365signup) and select **Buy now**.
 
 2. Choose the plan you want to sign up for, such as **Microsoft 365 Business Standard**.
 
-3. Follow the steps to sign up for an Office 365 business plan.
+3. Follow the steps to sign up for a Microsoft 365 for business plan.
 
     When the signup process is complete, you'll be directed to the admin center, where you'll follow a wizard to install Office apps, add your domain, add users, and assign licenses. After you complete the initial setup, you can use the **Setup** page in the admin center to continue setting up and configuring the services that come with your subscriptions.
 
-    For more information about the Office 365 setup wizard and the admin center **Setup** page, see [Difference between the Office 365 setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
+    For more information about the Microsoft 365 setup wizard and the admin center **Setup** page, see [Difference between the Office 365 setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
 
 ### 2. Set up Outlook for email
 
@@ -93,7 +93,7 @@ More at [Import email with Outlook](https://support.office.com/article/6a3771d4-
   
 ### 4. Use a public website
 
-Office 365 doesn't include a public website for your business. If you want to set one up, consider using a Microsoft partner, such as GoDaddy or WIX.
+Microsoft 365 doesn't include a public website for your business. If you want to set one up, consider using a Microsoft partner, such as GoDaddy or WIX.
   
 1. From the admin center, go to **Resources**, and then select **Public website**.
 
@@ -107,9 +107,9 @@ More at [Use a public website](https://support.office.com/article/3325d50e-d131-
   
 *Use these steps to set up your **[Microsoft 365 Business Basic](https://go.microsoft.com/fwlink/p/?LinkId=627218)** subscription. With this plan, you connect to Office 365 online. You don't install the Office apps.*
 
-### 1. Create Office 365 accounts and add your domain
+### 1. Create Microsoft 365 accounts and add your domain
 
-In this step, you use the Setup wizard to create Office 365 accounts for your users and add your own domain. The wizard lets you personalize everyone's user ID and email for your business, like rob@contoso.com.
+In this step, you use the Setup wizard to create Microsoft 365 accounts for your users and add your own domain. The wizard lets you personalize everyone's user ID and email for your business, like rob@contoso.com.
   
 ::: moniker range="o365-worldwide"
 
@@ -119,23 +119,23 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=202
 
 ::: moniker range="o365-germany"
 
-If you're using Office 365 Germany, go to [this admin center](https://go.microsoft.com/fwlink/p/?linkid=848041).
+If you're using Microsoft 365 Germany, go to [this admin center](https://go.microsoft.com/fwlink/p/?linkid=848041).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-If you're using Office 365 operated by 21Vianet, go to [this admin center.](https://go.microsoft.com/fwlink/p/?linkid=850627).
+If you're using Microsoft 365 operated by 21Vianet, go to [this admin center.](https://go.microsoft.com/fwlink/p/?linkid=850627).
 
 ::: moniker-end
 
 To start the wizard, select **Go to setup**.
 
-   To learn more, see [Add users and domain to Office 365](add-domain.md).
+   To learn more, see [Add users and domain to Microsoft 365](add-domain.md).
   
 ### 2. Import email
 
-Move your existing email and contacts from other email systems to your Office 365 mailbox so you can see it all in one place.
+Move your existing email and contacts from other email systems to your Microsoft 365 mailbox so you can see it all in one place.
   
 For migration options, see [Migrate email and contacts](migrate-email-and-contacts-admin.md).
   
@@ -145,19 +145,19 @@ In addition to managing your Microsoft email in Outlook, you can connect other e
   
 ::: moniker range="o365-worldwide"
 
-Sign in to Office 365 with your work or school account at [https://www.office.com/signin](https://www.office.com/signin).
+Sign in to Microsoft 365 with your work or school account at [https://www.office.com/signin](https://www.office.com/signin).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-If you're using Office 365 Germany, sign in at [https://portal.office.de](https://portal.office.de).
+If you're using Microsoft 365 Germany, sign in at [https://portal.office.de](https://portal.office.de).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-If you're using Office 365 operated by 21Vianet, sign in at [https://portal.partner.microsoftonline.cn](https://portal.partner.microsoftonline.cn).
+If you're using Microsoft 365 operated by 21Vianet, sign in at [https://portal.partner.microsoftonline.cn](https://portal.partner.microsoftonline.cn).
 
 ::: moniker-end
 
@@ -176,7 +176,7 @@ If you're using Office 365 operated by 21Vianet, sign in at [https://portal.part
     > [!IMPORTANT]
     > If you get a message that Outlook couldn't connect to the server for your other account, select **Back** and make sure you entered the correct email address and password for your account. **Typos are really common!**
 
-Need more detailed steps or help? See [Connect email accounts in Outlook on the web (Office 365)](https://support.office.com/article/d7012ff0-924f-4f78-8aca-c3912d886c4d.aspx).
+Need more detailed steps or help? See [Connect email accounts in Outlook on the web (Microsoft 365)](https://support.office.com/article/d7012ff0-924f-4f78-8aca-c3912d886c4d.aspx).
   
 ### 4. Install Skype for Business
 
@@ -190,13 +190,13 @@ Go to [https://admin.microsoft.com/OLS/MySoftware.aspx](https://admin.microsoft.
 
 ::: moniker range="o365-germany"
 
-If you're using Office 365 Germany, go to [https://portal.office.de/OLS/MySoftware.aspx](https://portal.office.de/OLS/MySoftware.aspx).
+If you're using Microsoft 365 Germany, go to [https://portal.office.de/OLS/MySoftware.aspx](https://portal.office.de/OLS/MySoftware.aspx).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-If you're using Office 365 operated by 21Vianet, go to [https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx](https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx).
+If you're using Microsoft 365 operated by 21Vianet, go to [https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx](https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx).
 
 ::: moniker-end
 
@@ -206,11 +206,11 @@ If you're using Office 365 operated by 21Vianet, go to [https://portal.partner.m
 
 ### 5. Store files online
 
-Office 365 makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
+Microsoft 365 makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Microsoft 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
   
-Everyone gets a **OneDrive** cloud storage location automatically when you create Office 365 accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
+Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft 365 accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
   
-1. On your computer, use File Explorer to open OneDrive. Or, from [Office 365](https://www.office.com), open **OneDrive** from the app launcher.
+1. On your computer, use File Explorer to open OneDrive. Or, from [Microsoft 365](https://www.office.com), open **OneDrive** from the app launcher.
 
 2. View and upload personal files, or share documents or folders by selecting **Share** and then either inviting others to view the documents or sending them a link. To learn more, see [Share OneDrive files and folders](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07.aspx#OS_Type=OneDrive_-_Business).
 
@@ -218,7 +218,7 @@ More at [Upload files to a library](https://support.office.com/article/da549fb1-
   
 ### Get started using Office
 
-To take a tour of Office 365 and learn how to use all the Office mobile apps, see [Get started](../admin-overview/get-started-with-office-365.md).
+To take a tour of Microsoft 365 and learn how to use all the Office mobile apps, see [Get started](../admin-overview/get-started-with-office-365.md).
   
 ## Business
   
@@ -236,13 +236,13 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=202
 
 ::: moniker range="o365-germany"
 
-If you're using Office 365 Germany, go to [this admin center](https://go.microsoft.com/fwlink/p/?linkid=848041).
+If you're using Microsoft 365 Germany, go to [this admin center](https://go.microsoft.com/fwlink/p/?linkid=848041).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-If you're using Office 365 operated by 21Vianet, go to [this admin center.](https://go.microsoft.com/fwlink/p/?linkid=850627).
+If you're using Microsoft 365 operated by 21Vianet, go to [this admin center.](https://go.microsoft.com/fwlink/p/?linkid=850627).
 
 ::: moniker-end
 
@@ -260,13 +260,13 @@ Go to [https://admin.microsoft.com/OLS/MySoftware.aspx](https://admin.microsoft.
 
 ::: moniker range="o365-germany"
 
-If you're using Office 365 Germany, go to [https://portal.office.de/OLS/MySoftware.aspx](https://portal.office.de/OLS/MySoftware.aspx).
+If you're using Microsoft 365 Germany, go to [https://portal.office.de/OLS/MySoftware.aspx](https://portal.office.de/OLS/MySoftware.aspx).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-If you're using Office 365 operated by 21Vianet, go to [https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx](https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx).
+If you're using Microsoft 365 operated by 21Vianet, go to [https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx](https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx).
 
 ::: moniker-end
 
@@ -278,17 +278,17 @@ Need more detailed steps or want to install the 64-bit version of Office? See [S
   
 ### 3. Set up mobile
 
-Install Office on your mobile device, and set up Outlook to work with your new Office 365 mailbox. Everyone on your team will need to do this step. Each person can install the Office mobile apps on up to 5 phones and 5 tablets.
+Install Office on your mobile device, and set up Outlook to work with your new Microsoft 365 mailbox. Everyone on your team will need to do this step. Each person can install the Office mobile apps on up to 5 phones and 5 tablets.
   
 Get the steps for your device: [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.office.com/article/9bccc8b8-a321-4d0d-a45e-6e06a3438e43.aspx)
   
 ### 4. Store files online
 
-Office 365 makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
+Microsoft 365 makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Microsoft 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
   
-Everyone gets a **OneDrive** cloud storage location automatically when you create Office 365 accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
+Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft 365 accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
   
-1. On your computer, use File Explorer to open OneDrive. Or, from [Office 365](https://www.office.com), open **OneDrive** from the app launcher.
+1. On your computer, use File Explorer to open OneDrive. Or, from [Microsoft 365](https://www.office.com), open **OneDrive** from the app launcher.
 
 2. View and upload personal files, or share documents or folders by selecting **Share** and then either inviting others to view the documents or sending them a link. To learn more, see [Share OneDrive files and folders](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07.aspx#OS_Type=OneDrive_-_Business).
   
@@ -296,7 +296,7 @@ More at [Upload files to a library](https://support.office.com/article/da549fb1-
   
 ### Get started using Office
 
-To take a tour of Office 365 and learn how to use all the Office mobile apps, see [Get started](../admin-overview/get-started-with-office-365.md).
+To take a tour of Microsoft 365 and learn how to use all the Office mobile apps, see [Get started](../admin-overview/get-started-with-office-365.md).
   
 ## Education
   
@@ -376,4 +376,4 @@ For other countries, see [Contact support for business products - Admin Help](..
   
 ## See also
 
-[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

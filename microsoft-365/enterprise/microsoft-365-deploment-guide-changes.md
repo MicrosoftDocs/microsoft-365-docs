@@ -82,7 +82,7 @@ description: See the new content and changes to the content in the Microsoft 365
 
 ### Updates and enhancements
 
-- Refresh of [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)
+- Refresh of [Phase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md)
 - Refresh of the [Contoso case study](contoso-case-study.md)
 - Refresh of the [Microsoft Teams](teams-workload.md), [Exchange Online](exchangeonline-workload.md), and [SharePoint Online](sharepoint-online-onedrive-workload.md) workloads
 - Refresh of the [SharePoint sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md) scenario

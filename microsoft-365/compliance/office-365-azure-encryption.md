@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Encryption in Azure"
+title: "Encryption in Azure"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -18,7 +18,7 @@ ms.collection:
 description: "Summary: An explanation of encryption in Azure."
 ---
 
-# Office 365 encryption in Azure
+# Encryption in Azure
 
 ## Introduction
 

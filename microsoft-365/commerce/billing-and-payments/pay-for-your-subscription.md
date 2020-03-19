@@ -1,5 +1,5 @@
 ---
-title: "Pay for your Office 365 for business subscription"
+title: "Pay for your subscription"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: "Learn what payment options are available to pay for your Office 365 for business subscription."
+description: "Learn what payment options are available to pay for your Microsoft 365 for business subscription."
 ms.custom: 
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 ---
 
-# Pay for your Office 365 for business subscription
+# Pay for your subscription
 
 When you set up your subscription, you can choose to pay by using credit card or bank account payments, or to pay by invoice using check or electronic funds transfer (EFT). Whichever method you choose, that is the payment method we will continue to use for subsequent billing periods, unless you [change your payment method](change-payment-method.md).
 
@@ -272,7 +272,7 @@ You can choose to receive a copy of your billing statement as an email attachmen
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 
-    If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
+    If you're using Microsoft 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
 
 2. Under **Receive billing statement as email attachment?**, switch the toggle to **On**.
 

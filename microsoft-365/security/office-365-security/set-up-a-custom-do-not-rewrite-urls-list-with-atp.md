@@ -1,5 +1,5 @@
 ---
-title: "Set up a custom do-not-rewrite URLs list using Office 365 ATP Safe Links"
+title: "Set up a custom do-not-rewrite URLs list using ATP Safe Links"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,7 +19,7 @@ ms.collection:
 description: "When you set up your ATP safe links policies, you can include a do-not-rewrite' list of URLs to enable some people in your organization to visit sites that you include in your list."
 ---
 
-# Set up a custom do-not-rewrite URLs list using Office 365 ATP Safe Links
+# Set up a custom do-not-rewrite URLs list using ATP Safe Links
 
 > [!IMPORTANT]
 > This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are a home user looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -36,7 +36,7 @@ To edit (or define) ATP policies, you must be assigned an appropriate role. The 
 
 |Role  |Where/how assigned  |
 |---------|---------|
-|Office 365 Global Administrator |The person who signs up to buy Office 365 is a global admin by default. (See [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)         |
+|global administrator |The person who signs up to buy Office 365 is a global admin by default. (See [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)         |
 |Security Administrator |Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online Organization Management |Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 

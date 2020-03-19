@@ -1,5 +1,5 @@
 ---
-title: "Filter data when importing PST files to Office 365"
+title: "Filter data when importing PST files"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,7 +19,7 @@ description: "Use the new Intelligent Import feature in the Office 365 Import se
 "
 ---
 
-# Filter data when importing PST files to Office 365
+# Filter data when importing PST files
 
 Use the new Intelligent Import feature in the Office 365 Import service to filter the items in PST files that actually get imported to the target mailboxes. Here's how it works:
   
@@ -57,7 +57,7 @@ The following graphic shows the Intelligent Import process, and highlights the t
 
 After you've created a PST import job, follow these steps to filter the data before you import it to Office 365.
   
-1. Go to [https://protection.office.com/](https://protection.office.com/) and sign in using the credentials for an administrator account in your Office 365 organization. 
+1. Go to [https://protection.office.com/](https://protection.office.com/) and sign in using the credentials for an administrator account in your organization. 
     
 2. Click **Information governance** \> **Import** \> **Import PST files**.
     

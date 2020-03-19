@@ -24,7 +24,7 @@ This article is organized by priority of work, starting with protecting those ac
 
 Microsoft provides you with the Secure Score tool within your tenant to automatically analyze your security posture based on your regular activities, assign a score, and provide security improvement recommendations. Before taking the actions recommended in this article, take note of your current score and recommendations. The actions recommended in this article will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment in a way that do not negatively affect productivity for your users. See [Microsoft Secure Score](mtp/microsoft-secure-score.md).
 
-One more thing before we get started . . . be sure to [turn on the Office 365 audit log](../compliance/search-the-audit-log-in-security-and-compliance.md). You’ll need this data later, in the event you need to investigate an incident or a breach. 
+One more thing before we get started . . . be sure to [turn on the audit log](../compliance/search-the-audit-log-in-security-and-compliance.md). You’ll need this data later, in the event you need to investigate an incident or a breach. 
 
 ## Protect privileged accounts
 
@@ -126,7 +126,7 @@ Last, but not least Continuous Monitoring and Auditing of the Microsoft 365 envi
 
 |Recommendation |E3 |E5 |
 |---------|---------|---------|
-|Ensure the **Office 365 audit log** is turned on.|![green check mark](../media/green-check-mark.png)|![green check mark](../media/green-check-mark.png)|
+|Ensure the **audit log** is turned on.|![green check mark](../media/green-check-mark.png)|![green check mark](../media/green-check-mark.png)|
 |**Review Secure Score weekly** — Secure score is a central location to access the Security status of your Office 365 tenant and take actions based on Secure score recommendations. It is recommended to perform this check weekly.|![green check mark](../media/green-check-mark.png)|![green check mark](../media/green-check-mark.png)|
 |Use **Office 365 ATP** tools:<br>•	Threat investigation and response capabilities<br> •	Automated investigation and response |         |![green check mark](../media/green-check-mark.png)|
 |Use **Microsoft Defender ATP**:<br> •	[Endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> •	Automated investigation and remediation Secure score <br>•	[Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![green check mark](../media/green-check-mark.png)|

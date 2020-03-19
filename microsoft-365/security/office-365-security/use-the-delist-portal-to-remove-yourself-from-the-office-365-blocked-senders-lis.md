@@ -1,5 +1,5 @@
 ---
-title: "Use the delist portal to remove yourself from the Office 365 blocked senders list"
+title: "Use the delist portal to remove yourself from the blocked senders list"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,7 +18,7 @@ ms.collection:
 description: "Are you getting an error message when you try to send an email to a recipient whose email address is in Office 365? If you think you should not be receiving the error message, you can use the delist portal to remove yourself from the Office 365 blocked senders list."
 ---
 
-# Use the delist portal to remove yourself from the Office 365 blocked senders list
+# Use the delist portal to remove yourself from the blocked senders list
 
 Are you getting an error message when you try to send an email to a recipient whose email address is in Office 365? If you think you should not be receiving the error message, you can use the delist portal to remove yourself from the Office 365 blocked senders list.
 

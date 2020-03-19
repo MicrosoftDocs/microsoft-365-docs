@@ -22,9 +22,9 @@ ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: "Learn how to get access to on-premises resources like line of business apps, file shares, and printers from an Azure Active Directory joined Windows 10 device."
 ---
 
-# Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business
+# Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business Premium
 
-Any Windows 10 device that is Azure Active Directory joined has access to all cloud-based resources, such as your Office 365 apps, and can be protected by Microsoft 365 Business. You can also allow access to on-premises resources like line of business (LOB) apps, file shares, and printers. To allow access, use [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to synchronize your on-premises Active Directory with Azure Active Directory. 
+Any Windows 10 device that is Azure Active Directory joined has access to all cloud-based resources, such as your Office 365 apps, and can be protected by Microsoft 365 Business Premium. You can also allow access to on-premises resources like line of business (LOB) apps, file shares, and printers. To allow access, use [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to synchronize your on-premises Active Directory with Azure Active Directory. 
 
 To learn more, see [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 The steps are also summarized in the following sections.
@@ -38,9 +38,9 @@ Complete the following steps to enable your organization's Azure AD joined devic
   
 1. To synchronize your users, groups, and contacts from local Active Directory into Azure Active Directory, run the Directory synchronization wizard and Azure AD Connect as described in [Set up directory synchronization for Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846).
     
-2. After the directory synchronization is complete, make sure your organization's Windows 10 devices are Azure AD joined. This step is done individually on each Windows 10 device. See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md) for details. 
+2. After the directory synchronization is complete, make sure your organization's Windows 10 devices are Azure AD joined. This step is done individually on each Windows 10 device. See [Set up Windows devices for Microsoft 365 Business Premium users](set-up-windows-devices.md) for details. 
     
-3. Once the Windows 10 devices are Azure AD joined, each user must reboot their devices and sign in with their Microsoft 365 Business credentials. All devices now have access to on-premises resources as well.
+3. Once the Windows 10 devices are Azure AD joined, each user must reboot their devices and sign in with their Microsoft 365 Business Premium credentials. All devices now have access to on-premises resources as well.
     
 No additional steps are required to get access to on-premises resources for Azure AD joined devices. This functionality is built into Windows 10. 
 

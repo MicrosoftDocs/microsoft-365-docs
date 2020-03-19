@@ -15,7 +15,7 @@ ms.collection: Strat_O365_Enterprise
 description: "Summary: Understand data resiliency in Microsoft Office 365."
 ---
 
-# Customer-managed encryption features in Office 365
+# Customer-managed encryption features
 
 Along with the encryption technologies in Office 365 managed by Microsoft, Office 365 also works with additional encryption technologies that you can manage and configure, such as:
 

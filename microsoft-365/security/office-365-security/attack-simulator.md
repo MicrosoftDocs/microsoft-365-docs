@@ -1,5 +1,5 @@
 ---
-title: "Attack Simulator in Office 365 ATP"
+title: "Attack Simulator in ATP"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: "Use Attack Simulator to run simulated phishing and password attacks in your Office 365 E5 or ATP Plan 2 organization, which can help you identify vulnerable users before a real attack hits your business."
+description: "As a global administrator, you can use Attack Simulator to run realistic attack scenarios in your organization. This can help you identify and find vulnerable users before a real attack hits your business."
 ---
 
-# Attack Simulator in Office 365 ATP
+# Attack Simulator in ATP
 
-Attack Simulator in Office 365 Advanced Threat Protection Plan 2 (ATP Plan 2) allows you to run realistic, but simulated phishing and password attack campaigns in your organization. You can use the results of campaigns to identify and train vulnerable users.
+**Summary** If you are a global administrator or a security administrator and your organization has Office 365 Advanced Threat Protection Plan 2, which includes [Threat Investigation and Response capabilities](office-365-ti.md), you can use Attack Simulator to run realistic attack scenarios in your organization. This can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
 
 ## What do you need to know before you begin?
 
@@ -34,7 +34,7 @@ Attack Simulator in Office 365 Advanced Threat Protection Plan 2 (ATP Plan 2) al
 
 - Your account needs to be configured for multi-factor authentication (MFA) to create and manage campaigns in Attack Simulator. For instructions, see [Set up multi-factor authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
-- You can only run phishing or password attack campaigns on users with mailboxes in Exchange Online.
+For an attack to be successfully launched, make sure that the account you are using to run simulated attacks is using multi-factor authentication. In addition, you must be a global administrator or a security administrator. (To learn more about roles and permissions, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).)
 
 - Phishing campaigns will collect and process events for 30 days. Historical campaign data will be available for up to 90 days after you launch the campaign.
 
@@ -44,11 +44,11 @@ Attack Simulator in Office 365 Advanced Threat Protection Plan 2 (ATP Plan 2) al
 
 *Phishing* is a generic term for email attacks that try to steal sensitive information in messages that appear to be from legitimate or trusted senders. *Spear phishing* is a targeted phishing attack that uses very focused and customized content that's specifically tailored to the targeted recipients (typically, after reconnaissance on the recipients by the attacker).
 
-For more information about phishing and spear phishing, see [Phishing](https://docs.microsoft.com/windows/security/threat-protection/intelligence/phishing).
+- You are a global administrator or security administrator
 
 In Attack Simulator, two different types of spear phishing campaigns are available:
 
-- **Spear phishing (credentials harvest)**: The attack tries to convince the recipients to click a URL in the message. If they click the link, users are asked to enter their credentials. If they do, they're taken to one of the following locations:
+- [Multi-factor authentication/Conditional Access](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) is turned on, for at least the global administrator account and security administrators who will be using Attack Simulator. (Ideally, multi-factor authentication/conditional access is turned on for all users in your organization.)
 
   - A default page that explains this was a just a test, and gives tips for recognizing phishing messages.
 

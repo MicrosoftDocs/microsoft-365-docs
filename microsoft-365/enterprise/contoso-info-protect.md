@@ -103,7 +103,7 @@ The following table maps Contoso's data levels to information protection feature
 
 |||||
 |:-------|:-----|:-----|:-----|
-| | **Office 365** | **Windows 10 and Office 365 ProPlus** | **EMS** |
+| | **Office 365** | **Windows 10 and Microsoft 365 Apps for enterprise** | **EMS** |
 | Level 1: Baseline  | SharePoint and Exchange Online Conditional Access policies <BR> Permissions on SharePoint sites | Sensitivity labels <BR> BitLocker <BR> Windows Information Protection | Device Conditional Access policies and Mobile Application Management policies |
 | Level 2: Sensitive | Level 1 plus: <BR> <BR> Sensitivity labels <BR> Office 365 retention labels on SharePoint sites <BR> Office 365 Data Loss Prevention for SharePoint and Exchange Online <BR> Isolated SharePoint sites  | Level 1 plus: <BR> <BR> Sensitivity labels on digital assets  | Level 1 |
 | Level 3: Highly regulated | Level 2 plus: <BR><BR> Bring Your Own Key (BYOK) encryption and protection for trade secret information <BR> Azure Key Vault for line of business applications that interact with Office 365 services | Level 2 | Level 1 |

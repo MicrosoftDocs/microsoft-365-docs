@@ -1,5 +1,5 @@
 ---
-title: "Email encryption in Office 365"
+title: "Email encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -19,7 +19,7 @@ ms.collection:
 description: "Compare encryption options in Office 365 including Office Message Encryption (OME), S/MIME, Information Rights Management (IRM), and learn about Transport Layer Security (TLS)."
 ---
 
-# Email encryption in Office 365
+# Email encryption
 
 This article compares encryption options in Office 365 including Office Message Encryption (OME), S/MIME, Information Rights Management (IRM), and introduces Transport Layer Security (TLS).
   

@@ -1,5 +1,5 @@
 ---
-title: "Set up compliance boundaries for eDiscovery investigations in Office 365"
+title: "Set up compliance boundaries for eDiscovery investigations"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: "Use compliance boundaries to create logical boundaries within an Office 365 organization that control the user content locations that an eDiscovery manager can search. Compliance boundaries use search permissions filtering (also called compliance security filters) to control what mailboxes, SharePoint sites, and OneDrive accounts can be searched by specific users."
+description: "Use compliance boundaries to create logical boundaries within an organization that control the user content locations that an eDiscovery manager can search. Compliance boundaries use search permissions filtering (also called compliance security filters) to control what mailboxes, SharePoint sites, and OneDrive accounts can be searched by specific users."
 ---
 
-# Set up compliance boundaries for eDiscovery investigations in Office 365
+# Set up compliance boundaries for eDiscovery investigations
 
 The guidance in this article can be applied when using either Core eDiscovery or Advanced eDiscovery to manage investigations.
 
-Compliance boundaries create logical boundaries within an Office 365 organization that control the user content locations (such as mailboxes, SharePoint sites, and OneDrive accounts) that eDiscovery managers can search. Also, compliance boundaries control who can access eDiscovery cases used to manage the legal, human resources, or other investigations within your organization. The need for compliance boundaries is often necessary for multi-national corporations that have to respect geographical boarders and regulations and for governments, which are often divided into different agencies. In Office 365, compliance boundaries help you meet these requirements when performing content searches and managing investigations with eDiscovery cases.
+Compliance boundaries create logical boundaries within an organization that control the user content locations (such as mailboxes, SharePoint sites, and OneDrive accounts) that eDiscovery managers can search. Also, compliance boundaries control who can access eDiscovery cases used to manage the legal, human resources, or other investigations within your organization. The need for compliance boundaries is often necessary for multi-national corporations that have to respect geographical boarders and regulations and for governments, which are often divided into different agencies. In Office 365, compliance boundaries help you meet these requirements when performing content searches and managing investigations with eDiscovery cases.
   
 We use the example in the following illustration to explain how compliance boundaries work.
   
 ![Compliance boundaries consist of search permissions filters that control access to agencies and admin role groups that control access to eDiscovery cases](../media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
   
-In this example, Contoso LTD is an Office 365 organization that consists of two subsidiaries, Fourth Coffee and Coho Winery. The business requires that eDiscovery mangers and investigators can only search the Exchange mailboxes, OneDrive accounts, and SharePoint sites in their agency. Also, eDiscovery managers and investigators can only see eDiscovery cases in their agency, and they can only access the cases that they're a member of. Here's how compliance boundaries meet these requirements.
+In this example, Contoso LTD is an organization that consists of two subsidiaries, Fourth Coffee and Coho Winery. The business requires that eDiscovery mangers and investigators can only search the Exchange mailboxes, OneDrive accounts, and SharePoint sites in their agency. Also, eDiscovery managers and investigators can only see eDiscovery cases in their agency, and they can only access the cases that they're a member of. Here's how compliance boundaries meet these requirements.
   
 - The search permissions filtering functionality in Content Search controls the content locations that eDiscovery managers and investigators can search. This means eDiscovery managers and investigators in the Fourth Coffee agency can only search content locations in the Fourth Coffee subsidiary. The same restriction applies to the Coho Winery subsidiary.
     
@@ -74,7 +74,7 @@ The next step is to file a request with Microsoft Support to synchronize the Azu
   
 Include the following information when you submit the request to Microsoft support:
   
-- The default domain name of your Office 365 organization
+- The default domain name of your organization
     
 - The name of the Azure Active Directory attribute (from Step 1)
     

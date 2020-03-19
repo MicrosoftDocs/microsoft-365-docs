@@ -1,5 +1,5 @@
 ---
-title: "Export results in Office 365 Advanced eDiscovery"
+title: "Export results in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
-description: "Learn how to define options for exporting results from Office 365 Advanced eDiscovery, including the procedure for specifying parameters for an export batch. "
+description: "Learn how to define options for exporting results from Advanced eDiscovery, including the procedure for specifying parameters for an export batch. "
 ---
 
 # Export results in Advanced eDiscovery (classic)
@@ -193,7 +193,7 @@ The following table lists the output files that are generated when you run an Ex
   
 [Viewing batch history and exporting past results](view-batch-history-and-export-past-results.md)
   
-[Quick setup for Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
+[Quick setup for Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
 
 [Export report fields](export-report-fields-in-advanced-ediscovery.md)
   

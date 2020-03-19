@@ -1,5 +1,5 @@
 ---
-title: "Use your free Azure Active Directory subscription in Office 365"
+title: "Use your free Azure Active Directory subscription"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,7 +18,7 @@ ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: "Learn how to access Azure Active Directory, which is included in your organization's paid subscription to Office 365."
 ---
 
-# Use your free Azure Active Directory subscription in Office 365
+# Use your free Azure Active Directory subscription
 
 If your organization has a paid subscription to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Microsoft Azure Active Directory. You and other admins can use Azure AD to create and manage user and group accounts. To use Azure AD, just go to the Azure portal and sign in using your Office 365 account.
 

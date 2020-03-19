@@ -1,5 +1,5 @@
 ---
-title: "Content Search in Office 365"
+title: "Content Search"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,9 +21,9 @@ ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: "Use the Content Search tool in the compliance center in Office 365 or Microsoft 365 to search for content in mailboxes, SharePoint Online sites, OneDrive accounts, Microsoft Teams, Office 365 groups, Yammer Groups, and Skype for Business Conversations. You can use keyword search queries and search conditions to narrow the search results. Then you can preview and export search results. Content Search is also an effective tool to search for content related to a GDPR data subject request."
 ---
 
-# Content Search in Office 365
+# Content Search
 
-You can use the Content Search eDiscovery tool in the compliance center in Office 365 or Microsoft 365 to search for in-place items such as email, documents, and instant messaging conversations in your Office 365 organization. Use this tool to search for items in these Office 365 services:
+You can use the Content Search eDiscovery tool in the compliance center in Office 365 or Microsoft 365 to search for in-place items such as email, documents, and instant messaging conversations in your organization. Use this tool to search for items in these Office 365 services:
   
 - Exchange Online mailboxes and public folders
     
@@ -191,7 +191,7 @@ See the following sections for more information about content searches.
 
 - For a description of the limits that are applied to the Content Search feature, see [Limits for Content Search](limits-for-content-search.md).
     
-- Microsoft collects performance information for Content Searches run by all Office 365 organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for a Content Search based on the number of mailboxes included in the search.
+- Microsoft collects performance information for Content Searches run by all organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for a Content Search based on the number of mailboxes included in the search.
     
 |**Number of mailboxes**|**Average search time**|
 |:-----|:-----|

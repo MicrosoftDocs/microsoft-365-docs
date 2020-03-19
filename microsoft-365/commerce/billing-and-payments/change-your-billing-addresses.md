@@ -1,5 +1,5 @@
 ---
-title: "Change your billing addresses for Office 365 for business"
+title: "Change your billing addresses"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,11 +21,11 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
-description: "Learn how to update your billing addresses for Office 365 for business. You can also update the email address used to receive billing notifications."
+description: "Learn how to update your billing addresses for Microsoft 365 for business. You can also update the email address used to receive billing notifications."
 ms.custom: okr_SMB
 ---
 
-# Change your billing addresses for Office 365 for business
+# Change your billing addresses
 
 Your bill or invoice contains three addresses:
   
@@ -51,7 +51,7 @@ To learn more about your bill or invoice, see [View your bill or invoice](view-y
 
 ::: moniker range="o365-21vianet"
 
-If you're using Office 365 operated by 21Vianet in China, see [View your bill or get Fapiaos for Office 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
+If you're using Microsoft 365 operated by 21Vianet in China, see [View your bill or get Fapiaos for Microsoft 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
 
@@ -114,7 +114,7 @@ If you're using Office 365 operated by 21Vianet in China, see [View your bill or
   
 3. On the **Change payment details** page, update your billing address, and then select **Submit**.
 
-    You can [Change your payment method for Office 365 operated by 21Vianet](change-payment-method.md) from Invoice to Online payment using Alipay or China UnionPay, or vice versa.
+    You can [Change your payment method for Microsoft 365 operated by 21Vianet](change-payment-method.md) from Invoice to Online payment using Alipay or China UnionPay, or vice versa.
 
 ::: moniker-end
 
@@ -158,7 +158,7 @@ If you're using Office 365 operated by 21Vianet in China, see [View your bill or
 
 By default, your organization's billing notifications are sent to the Microsoft email address and the alternate email address of every global and billing admin in your organization. Each admin can change their alternate email address by updating their profile information.
   
-1. Sign in to Office 365 with your work or school account as a global admin. [Learn how to sign in](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Sign in to Microsoft 365 with your work or school account as a global admin. [Learn how to sign in](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Select the **User icon**, then select **My account**.
   
@@ -174,9 +174,9 @@ You can also change the alternate email address of other global and billing admi
   
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 
-    If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
+    If you're using Microsoft 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
 
-    If you're using Office 365 operated by 21Vianet, go to this  <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing Notifications</a> page.
+    If you're using Microsoft 365 operated by 21Vianet, go to this  <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing Notifications</a> page.
 
 2. On the **Billing notifications** page, select the admin you want to change.
 

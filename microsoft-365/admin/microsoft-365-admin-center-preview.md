@@ -70,7 +70,7 @@ Yes. The new admin center is fully functional and has all the capabilities of th
 
 Microsoft 365 is a complete, intelligent solution that includes Office 365, Windows 10, and Enterprise Mobility + Security that empowers everyone to be creative and work together, securely. The following Microsoft 365 subscriptions are available in the admin center for you to try or buy now:
   
-- Microsoft 365 Business
+- Microsoft 365 for business
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
     

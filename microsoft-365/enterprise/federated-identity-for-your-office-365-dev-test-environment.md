@@ -356,7 +356,7 @@ Use these steps to configure Azure AD Connect and your Office 365 subscription f
     
 3. On the **Additional tasks** page, click **Change user sign-in**, and then click **Next**.
     
-4. On the **Connect to Azure AD** page, type your Office 365 global administrator account name and password, and then click **Next**.
+4. On the **Connect to Azure AD** page, type your global administrator account name and password, and then click **Next**.
     
 5. On the **User sign-in** page, click **Federation with AD FS**, and then click **Next**.
     

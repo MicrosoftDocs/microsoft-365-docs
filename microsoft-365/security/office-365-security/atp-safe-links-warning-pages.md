@@ -1,5 +1,5 @@
 ---
-title: "Office 365 ATP Safe Links warning pages"
+title: "ATP Safe Links warning pages"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,7 +18,7 @@ ms.collection:
 description: "Get an overview of warning pages that you might see when Office 365 Advanced Threat Protection is at work."
 ---
 
-# Office 365 ATP Safe Links warning pages
+# ATP Safe Links warning pages
 
 > [!IMPORTANT]
 > This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are using Outlook.com, Office 365 Home, or Office 365 Personal, and you're looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).

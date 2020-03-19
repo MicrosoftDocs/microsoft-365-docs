@@ -14,7 +14,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: 
-description: Learn how to prepare your end users for Windows 10 and Office 365 ProPlus with use communications and training.
+description: Learn how to prepare your end users for Windows 10 and Microsoft 365 Apps for enterprise with use communications and training.
 ---
 
 # Step 8: User Communications and Training
@@ -25,7 +25,7 @@ description: Learn how to prepare your end users for Windows 10 and Office 365 P
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>Step 8: User Communication and Training</strong></p>
-<p>Make sure your users are informed about new experiences and new ways of working as you shift your PCs to Windows 10 and Office 365 ProPlus. Learn how to take advantage of user adoption assistance with Microsoft FastTrack, training materials and communication templates, as well as new ways to monitor user acceptance and usage.</p></td>
+<p>Make sure your users are informed about new experiences and new ways of working as you shift your PCs to Windows 10 and Microsoft 365 Apps for enterprise. Learn how to take advantage of user adoption assistance with Microsoft FastTrack, training materials and communication templates, as well as new ways to monitor user acceptance and usage.</p></td>
 <td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -40,7 +40,7 @@ The good news is if you are moving from Windows 7 and Office 2010 or Office 2013
 
 ## Getting ready for new experiences
 
-Starting with Office, if you’re deploying Office 365 ProPlus for the first time, this is when you can communicate the benefits of signing in to Office apps and saving files to OneDrive or SharePoint locations to enable easier sharing, reduce file branching and enable real-time co-authoring.
+Starting with Office, if you’re deploying Microsoft 365 Apps for enterprise for the first time, this is when you can communicate the benefits of signing in to Office apps and saving files to OneDrive or SharePoint locations to enable easier sharing, reduce file branching and enable real-time co-authoring.
 
 Detailed communication and training templates are available for these and other local or browser-based apps, like Teams and Planner.
 
@@ -124,7 +124,7 @@ Deploy at a rate that is manageable to your IT department, help desk, users and 
 
 In addition to the diagnostic data that you monitor via the analytics tools, you can also monitor Office 365 and Microsoft 365 service usage in a granular way with detailed usage reports in by workload in the admin center and using the admin dashboards via Power BI. These are great tools to help set and track goals as you roll-out new tools for working together – like Microsoft Teams – or new ways to share files – like OneDrive.
 
-New technology acceptance and adoption will go on long after every PC in your organization has Windows 10 and Office 365 ProPlus installed. And users won’t necessarily change how they work – without taking the time to inform and train them of new capabilities. Finally, with the new servicing models providing new capabilities on an ongoing semi-annual schedule for Windows and optionally a monthly schedule for Office, communication will be continual.
+New technology acceptance and adoption will go on long after every PC in your organization has Windows 10 and Microsoft 365 Apps for enterprise installed. And users won’t necessarily change how they work – without taking the time to inform and train them of new capabilities. Finally, with the new servicing models providing new capabilities on an ongoing semi-annual schedule for Windows and optionally a monthly schedule for Office, communication will be continual.
 
 ## Previous Step 
 

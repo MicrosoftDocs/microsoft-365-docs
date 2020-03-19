@@ -29,7 +29,7 @@ Make sure that the following requirements are met:
   
 - Your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
     
-- [Office 365 audit logging](../../compliance/turn-audit-log-search-on-or-off.md) is turned on for your organization. 
+- [audit logging](../../compliance/turn-audit-log-search-on-or-off.md) is turned on for your organization. 
     
 - Your organization has policies defined for anti-spam, anti-malware, anti-phishing, and so on. See [Protect against threats in Office 365](protect-against-threats.md).
     
@@ -41,12 +41,12 @@ To perform certain actions, such as viewing message headers or downloading email
 
 |Activity  |Role group |Preview role needed?  |
 |---------|---------|---------|
-|Use Threat Explorer (and real-time detections) to analyze threats ​    |Office 365 Global Administrator <br> Security Administrator <br> Security Reader     | No   |
-|Use Threat Explorer (and real-time detections) to view headers for email messages ​as well as preview and download quarantined email messages    |Office 365 Global Administrator <br> Security Administrator <br>Security Reader   |       No  |
-|Use Threat Explorer to view headers and download email messages delivered to mailboxes     |Office 365 Global Administrator <br>Security Administrator <br> Security Reader <br> Preview   |   Yes      |
+|Use Threat Explorer (and real-time detections) to analyze threats ​    |Global Administrator <br> Security Administrator <br> Security Reader     | No   |
+|Use Threat Explorer (and real-time detections) to view headers for email messages ​as well as preview and download quarantined email messages    |Global Administrator <br> Security Administrator <br>Security Reader   |       No  |
+|Use Threat Explorer to view headers and download email messages delivered to mailboxes     |Global Administrator <br>Security Administrator <br> Security Reader <br> Preview   |   Yes      |
 
 > [!NOTE]
-> *Preview* is a role and not a role group; the Preview role must be added to an existing role group for Office 365. The Office 365 Global Administrator role is assigned the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and the Security Administrator and Security Reader roles are assigned in the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). To learn more about roles and permissions, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> *Preview* is a role and not a role group; the Preview role must be added to an existing role group for Office 365. The Global Administrator role is assigned the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and the Security Administrator and Security Reader roles are assigned in the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). To learn more about roles and permissions, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## Find and delete suspicious email that was delivered
 

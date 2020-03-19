@@ -59,7 +59,7 @@ Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), 
 
 - **In the United Kingdom, call 0800 032 6417.**
 
-If your Office 365 or Microsoft 365 Business support phone number isn't listed above, use the drop-down menu below to choose your country or region.
+If your Microsoft 365 or Microsoft 365 Business Premium support phone number isn't listed above, use the drop-down menu below to choose your country or region.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
@@ -67,7 +67,7 @@ To learn how to open a service request, select the **Online support** tab above.
 
 ## [In-store support](#tab/instore)
 
-You can now make an appointment at your local Microsoft Store with an Answer Desk expert to help resolve your Office 365 or Microsoft 365 issue.
+You can now make an appointment at your local Microsoft Store with an Answer Desk expert to help resolve your Microsoft 365 issue.
 
 1. Go to the [Microsoft Stores schedule](https://go.microsoft.com/fwlink/?LinkID=2041482) page, and select **Schedule an appointment**.
 
@@ -81,23 +81,23 @@ You can now make an appointment at your local Microsoft Store with an Answer Des
 
 ::: moniker range="o365-21vianet"
 
-With every subscription of Office 365 operated by 21Vianet, 21Vianet support provides technical, pre-sales, billing and subscription support. Support is available both online through the Office 365 operated by 21Vianet portal, and by telephone for both paid and trial subscriptions.
+With every subscription of Microsoft 365 operated by 21Vianet, 21Vianet support provides technical, pre-sales, billing and subscription support. Support is available both online through the Microsoft 365 operated by 21Vianet portal, and by telephone for both paid and trial subscriptions.
 
-Authorized administrators can use the Office 365 operated by 21Vianet portal to submit service requests online and access support telephone numbers. For instructions, see [Contact support](#contact-support).
+Authorized administrators can use the Microsoft 365 operated by 21Vianet portal to submit service requests online and access support telephone numbers. For instructions, see [Contact support](#contact-support).
 
-The 21Vianet Office 365 technical support team troubleshoots only those issues that are related to Office 365 operated by 21Vianet. Issues that originate in customer networks fall outside of the Office 365 support boundaries, and in these cases, customers must work with their networking team for assistance.
+The 21Vianet Microsoft 365 technical support team troubleshoots only those issues that are related to Microsoft 365 operated by 21Vianet. Issues that originate in customer networks fall outside of the Microsoft 365 support boundaries, and in these cases, customers must work with their networking team for assistance.
 
 ### Community and self-service support options
 
-Self-service support is available for all Office 365 operated by 21Vianet users, and includes troubleshooting tools and videos, help articles and videos, as well as forums and wikis in the [Office 365 community](https://go.microsoft.com/fwlink/p/?linkid=842838). For more self-help resources, see [Learn about Office 365 operated by 21Vianet](/services-in-china/services-in-china.md).
+Self-service support is available for all Microsoft 365 operated by 21Vianet users, and includes troubleshooting tools and videos, help articles and videos, as well as forums and wikis in the [Microsoft 365 community](https://go.microsoft.com/fwlink/p/?linkid=842838). For more self-help resources, see [Learn about Microsoft 365 operated by 21Vianet](/services-in-china/services-in-china.md).
 
 ### Pre-sales support
 
-Pre-sales support for Office 365 operated by 21Vianet provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. Pre-sales support can be accessed using the same phone number as with technical support. For instructions, see [Contact support](#contact-support).
+Pre-sales support for Microsoft 365 operated by 21Vianet provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. Pre-sales support can be accessed using the same phone number as with technical support. For instructions, see [Contact support](#contact-support).
 
 ### Billing and subscription management support
 
-Assistance for billing and subscription management issues is available online or by telephone during China business hours (Beijing Time), Monday through Friday. Billing and subscription management support can be accessed using the same phone number and online service request process as with technical support. The support telephone number can be found on the Office 365 operated by 21Vianet portal. For instructions, see [Contact support](#contact-support).
+Assistance for billing and subscription management issues is available online or by telephone during China business hours (Beijing Time), Monday through Friday. Billing and subscription management support can be accessed using the same phone number and online service request process as with technical support. The support telephone number can be found on the Microsoft 365 operated by 21Vianet portal. For instructions, see [Contact support](#contact-support).
 
 Here are some examples of billing and subscription management issues:
 
@@ -115,11 +115,11 @@ Here are some examples of billing and subscription management issues:
 
 ### Technical support
 
-Technical support for Office 365 operated by 21Vianet subscriptions provides assistance with basic installation, setup, and general technical usage. Some examples of these issues are listed in the following table.
+Technical support for Microsoft 365 operated by 21Vianet subscriptions provides assistance with basic installation, setup, and general technical usage. Some examples of these issues are listed in the following table.
 
 | Support category | Examples |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Installation and setup | Exchange Online  <ul><li>Office 365 mailbox migration</li><li>Recipient configuration (mailbox permissions, configuring mail forwarding, configuring shared mailbox)</li><li>Autodiscover configuration</li></ul> SharePoint Online <ul><li>Permissions and user groups</li><li>Configuration of external users</li></ul> Skype for Business Online  <ul><li>Installation and creating contacts</li></ul> Office 365 ProPlus  <ul><li>Installation and setup</li></ul> |
+| Installation and setup | Exchange Online  <ul><li>Microsoft 365 mailbox migration</li><li>Recipient configuration (mailbox permissions, configuring mail forwarding, configuring shared mailbox)</li><li>Autodiscover configuration</li></ul> SharePoint Online <ul><li>Permissions and user groups</li><li>Configuration of external users</li></ul> Skype for Business Online  <ul><li>Installation and creating contacts</li></ul> Microsoft 365 Apps for enterprise  <ul><li>Installation and setup</li></ul> |
 | Configuration | Service configuration issues  <ul><li>Single sign-on (SSO)</li><li>Active Directory synchronization</li></ul> |
 
 > [!NOTE]
@@ -159,7 +159,7 @@ Severity B/C: 9:00 ~24:00 (Beijing Time) a day, 365 days.
 ### Contact support
 
 > [!NOTE]
-> Assisted support options are for admins of Office 365 subscribed organizations only. If you use Office 365 but you're not an admin, you can still get support in the community forums, or by contacting your admin.
+> Assisted support options are for admins of Microsoft 365 subscribed organizations only. If you use Microsoft 365 but you're not an admin, you can still get support in the community forums, or by contacting your admin.
 
 #### Open an online request
 
@@ -175,9 +175,9 @@ Call support. If you encounter any problem with online request, phone support is
 
 #### Administrator roles and responsibilities
 
-People with administrator roles are the only ones in the customer's organization authorized to access the Admin section of the Office 365 operated by 21Vianet portal and to communicate directly with 21Vianet about Office 365 service requests.
+People with administrator roles are the only ones in the customer's organization authorized to access the Admin section of the Microsoft 365 operated by 21Vianet portal and to communicate directly with 21Vianet about Microsoft 365 service requests.
 
-With Office 365 you can designate several types of administrators who serve different functions. This service description uses the generic title administrator to refer to all categories of administrators. For more information about the types of administrator roles, see [Assign admin roles in Office 365 for business](add-users/assign-admin-roles.md).
+With Microsoft 365 you can designate several types of administrators who serve different functions. This service description uses the generic title administrator to refer to all categories of administrators. For more information about the types of administrator roles, see [Assign admin roles in Microsoft 365 for business](add-users/assign-admin-roles.md).
 
 The administrator is:
 
@@ -219,13 +219,13 @@ The administrator is expected to provide initial assistance for the customer's u
 
 ### Feature availability
 
-To view feature availability across Office 365 plans, see [Office 365 Service Description](https://go.microsoft.com/fwlink/p/?linkid=846911)
+To view feature availability across Microsoft 365 plans, see [Microsoft 365 Service Description](https://go.microsoft.com/fwlink/p/?linkid=846911)
 
 ### Follow us on WeChat
 
-Scan this QR code to follow us on WeChat and get the latest updates for Office 365 operated by 21Vianet.
+Scan this QR code to follow us on WeChat and get the latest updates for Microsoft 365 operated by 21Vianet.
 
-![QR Code for updates for Office 365 operated by 21Vianet](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![QR Code for updates for Microsoft 365 operated by 21Vianet](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 
@@ -233,14 +233,14 @@ Scan this QR code to follow us on WeChat and get the latest updates for Office 3
 
 This article applies to customers of Microsoft 365 for business Germany, which has domains ending onmicrosoft.de. For more information, see [Learn about Office 365 Germany](admin-overview/learn-about-office-365-germany.md).
 
-As an admin for Office 365 Germany, you get free access to our knowledgeable support agents for help resolving technical issues, as well as for pre-sales, account, and billing support. You can also contact us on behalf of Office 365 Germany users in your organization.
+As an admin for Microsoft 365 Germany, you get free access to our knowledgeable support agents for help resolving technical issues, as well as for pre-sales, account, and billing support. You can also contact us on behalf of Microsoft 365 Germany users in your organization.
 
 > [!NOTE]
-> All of the support options below are for Microsoft Cloud Germany. For more information about how Microsoft uses the data that you provide when you contact Microsoft Office 365 support, please see the [privacy statement](https://go.microsoft.com/fwlink/p/?LinkId=512132).
+> All of the support options below are for Microsoft Cloud Germany. For more information about how Microsoft uses the data that you provide when you contact Microsoft Microsoft 365 support, please see the [privacy statement](https://go.microsoft.com/fwlink/p/?LinkId=512132).
 
 ### Get assisted support
 
-Assisted support options are for admins of Office 365 Germany subscribed organizations only. If you use Office 365 Germany at work or school, but you're not an admin, you can still get support in the community forums, or by contacting your admin or IT department.
+Assisted support options are for admins of Microsoft 365 Germany subscribed organizations only. If you use Microsoft 365 Germany at work or school, but you're not an admin, you can still get support in the community forums, or by contacting your admin or IT department.
 
 - **Open an online request.** Save time by starting your service request online. In the admin center, choose **Support** \> **New service request.** We'll help you find a solution or connect you to an expert who will contact you by email or phone.
 
@@ -253,6 +253,6 @@ Assisted support options are for admins of Office 365 Germany subscribed organiz
 
 ### Let our community help
 
-You can also [search the Office 365 for business community forums](https://go.microsoft.com/fwlink/p/?LinkId=518605) to find known issues and trending topics, or to post a new question. The community forums are monitored by trained Microsoft support agents who can help resolve your issue.
+You can also [search the Microsoft 365 for business community forums](https://go.microsoft.com/fwlink/p/?LinkId=518605) to find known issues and trending topics, or to post a new question. The community forums are monitored by trained Microsoft support agents who can help resolve your issue.
 
 ::: moniker-end

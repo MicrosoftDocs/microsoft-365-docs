@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Groups naming policy"
+title: "Groups naming policy"
 ms.reviewer: arvaradh
 f1.keywords:
 - NOCSH
@@ -23,7 +23,7 @@ ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: "Learn how to create a naming policy for Office 365 groups."
 ---
 
-# Office 365 Groups naming policy
+# Groups naming policy
 
 You use a group naming policy to enforce a consistent naming strategy for groups created by users in your organization. A naming policy can help you and your users identify the function of the group, membership, geographic region, or who created the group. The naming policy can also help categorize groups in the address book. You can use the policy to block specific words from being used in group names and aliases.
 

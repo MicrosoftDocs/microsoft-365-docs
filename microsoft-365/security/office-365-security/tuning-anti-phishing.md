@@ -1,5 +1,5 @@
 ---
-title: "Tune anti-phishing protection in Office 365"
+title: "Tune anti-phishing protection"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,7 +14,7 @@ search.appverid:
 description: "Admins can learn to identify the reasons why and how a phishing messages got through, and what to do to prevent more phishing messages in the future."
 ---
 
-# Tune anti-phishing protection in Office 365
+# Tune anti-phishing protection
 
 Although Office 365 comes with a variety of anti-phishing features that are enabled by default, it's possible that some phishing messages could still get through to your mailboxes. This topic describes what you can do to discover why a phishing message got through, and what you can do to adjust the anti-phishing settings in your Exchange Online organization _without accidentally making things worse_.
 
@@ -48,7 +48,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 ## Best practices to stay protected
 
-- On a monthly basis, run [Secure Score](../mtp/microsoft-secure-score.md) to assess your Office 365 organization's security settings.
+- On a monthly basis, run [Secure Score](../mtp/microsoft-secure-score.md) to assess your organization's security settings.
 
 - Periodically review the [Spoof intelligence report](learn-about-spoof-intelligence.md) and [enable anti-spoofing protection in the anti-phishing policy](learn-about-spoof-intelligence.md#configuring-the-anti-spoofing-policy) to **quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
 

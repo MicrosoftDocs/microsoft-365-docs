@@ -1,5 +1,5 @@
 ---
-title: "Use Content Search to search third-party data imported to Office 365"
+title: "Use Content Search to search third-party imported data"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: "Use the Content Search eDiscovery tool to search for items imported to mailboxes in Office 365 from a third-party data source. You can create a query to search for all imported items or create a query to search for specific third-party data types. This article lists the values you can use in a keyword query to search the third-party data types that you can import to Office 365."
 ---
 
-# Use Content Search to search third-party data imported to Office 365
+# Use Content Search to search third-party imported data
 
 You can use the [Content Search eDiscovery tool](content-search.md) in the Security & Compliance Center to search for items imported to mailboxes in Office 365 from a third-party data source. You can create a query to search all imported third-party data items or you can create a query to search specific third-party data items. Also, you can also create a query-based Office 365 retention policy or a query-based eDiscovery hold to preserve third-party data in Office 365. 
   

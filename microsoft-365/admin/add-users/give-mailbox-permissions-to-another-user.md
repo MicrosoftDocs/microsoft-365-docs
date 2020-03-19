@@ -1,5 +1,5 @@
 ---
-title: "Give mailbox permissions to another user in Office 365 - Admin Help"
+title: "Give mailbox permissions to another user - Admin Help"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,7 +23,7 @@ ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Learn how to give a user the right to access another user's mailbox. This will give the user the right to read mails and send mails from the other user's mailbox. "
 ---
 
-# Give mailbox permissions to another user in Office 365 - Admin Help
+# Give mailbox permissions to another user - Admin Help
 
 ::: moniker range="o365-worldwide"
 

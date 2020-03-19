@@ -22,7 +22,7 @@ ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
 description: "Learn how you can set up Microsoft to manage the DNS records of your custom domain at Hostgator."
 ---
 
-# Change nameservers to set up Office 365 with Hostgator
+# Change nameservers to set up Microsoft 365 with Hostgator
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.
   

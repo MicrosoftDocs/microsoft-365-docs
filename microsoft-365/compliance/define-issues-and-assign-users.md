@@ -1,5 +1,5 @@
 ---
-title: "Define issues and assign users in Office 365 Advanced eDiscovery"
+title: "Define issues and assign users in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
-description: "Learn how to add or edit an issue, including assigning users to it, or delete an issue for an eDiscovery case in Office 365 Advanced eDiscovery."
+description: "Learn how to add or edit an issue, including assigning users to it, or delete an issue for an eDiscovery case in Advanced eDiscovery."
 ---
 
 # Define issues and assign users in Advanced eDiscovery (classic)

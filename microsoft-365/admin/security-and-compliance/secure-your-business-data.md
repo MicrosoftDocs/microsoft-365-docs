@@ -22,13 +22,13 @@ ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments. "
 ---
 
-# Top 10 ways to secure Office 365 and Microsoft 365 Business plans
+# Top 10 ways to secure Microsoft 365 for business plans
 
 If you are a small or medium-size organization using one of Microsoft's business plans and your type of organization is targeted by cyber criminals and hackers, use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409).
   
 Microsoft recommends that you complete the tasks listed in the following table that apply to your service plan. 
   
-||**Task**|**Microsoft 365 Business Standard**|**Microsoft 365 Business**|
+||**Task**|**Microsoft 365 Business Standard**|**Microsoft 365 Business Premium**|
 |:-----|:-----|:-----|:-----|
 |1  <br/> |[Set up multi-factor authentication](secure-your-business-data.md#setup) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |2  <br/> |[Train your users](secure-your-business-data.md#train) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
@@ -311,7 +311,7 @@ To modify the default policy:
   
 1. On the Safe links page, under **Policies that apply to the entire organization**, select the **Default** policy. 
     
-2. Under **Settings that apply to content except email**, select **Office 365 ProPlus, Office for iOS and Android**.
+2. Under **Settings that apply to content except email**, select **Microsoft 365 Apps for enterprise, Office for iOS and Android**.
     
 3. Select **Save**. 
     

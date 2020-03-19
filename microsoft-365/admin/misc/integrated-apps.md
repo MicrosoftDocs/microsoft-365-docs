@@ -37,7 +37,7 @@ Here's how to turn Integrated Apps on or off.
 ## More info on Integrated Apps
 <a name="__toc379982114"> </a>
 
-An integrated app can be created from within your own organization, or it can come from another Office 365 organization or a third-party.
+An integrated app can be created from within your own organization, or it can come from another organization or a third-party.
 
 When Integrated Apps is turned on and an app is used, the app asks for permission to set the level of access it needs when it accesses the user's information. A user can give access only to apps they own that access their Office 365 information. They can't give an app access to any other user's information.
 

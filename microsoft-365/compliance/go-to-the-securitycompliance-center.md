@@ -1,5 +1,5 @@
 ---
-title: "Go to the Office 365 Security & Compliance Center"
+title: "Go to the Security & Compliance Center"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,14 +15,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
-description: "Before you can use the Security & Compliance Center, you need the right permissions. Your work or school account must either be assigned the Office 365 global administrator role or have been assigned to one or more Security & Compliance Center role groups by a global administrator."
+description: "Before you can use the Security & Compliance Center, you need the right permissions. Your work or school account must either be assigned the global administrator role or have been assigned to one or more Security & Compliance Center role groups by a global administrator."
 ---
 
-# Go to the Office 365 Security & Compliance Center
+# Go to the Security & Compliance Center
 
-Before you can use the Security & Compliance Center, you need the right permissions. Your work or school account must either be assigned the Office 365 global administrator role or have been assigned to one or more Security & Compliance Center role groups by a global administrator:
+Before you can use the Security & Compliance Center, you need the right permissions. Your work or school account must either be assigned the global administrator role or have been assigned to one or more Security & Compliance Center role groups by a global administrator:
   
-- For more information about the Office 365 global administrator role, see [About Office 365 admin roles](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+- For more information about the global administrator role, see [About Office 365 admin roles](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
 
 - For information on assigning Security & Compliance Center roles to other users, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 

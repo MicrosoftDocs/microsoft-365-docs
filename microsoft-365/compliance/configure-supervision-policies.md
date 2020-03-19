@@ -32,7 +32,7 @@ Use supervision policies to capture employee communications for examination by i
 >Users monitored by supervision policies must have a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription, or be included in a Microsoft 365 E5 subscription.
 >If you don't have an existing Enterprise E5 plan and want to try supervision, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
-Follow these steps to set up and use supervision in your Office 365 organization:
+Follow these steps to set up and use supervision in your organization:
   
 - **Step 1 (optional)**: [Set up groups for supervision](#step-1-set-up-groups-for-supervision-optional)
 
@@ -48,7 +48,7 @@ Follow these steps to set up and use supervision in your Office 365 organization
 
 - **Step 4 (required)**: [Set up a supervision policy](#step-4-set-up-a-supervision-policy-required)
 
-    You create supervision policies in the Office 365 security and compliance center. These policies define which communications are subject to review in your organization and specifies who performs reviews. Communications include email and Microsoft Teams communications, and 3rd-party platform communications (such as Facebook, Twitter, etc.). Supervision policies created in Office 365 organizations are not supported in communication supervision in Microsoft 365 subscriptions.
+    You create supervision policies in the Office 365 security and compliance center. These policies define which communications are subject to review in your organization and specifies who performs reviews. Communications include email and Microsoft Teams communications, and 3rd-party platform communications (such as Facebook, Twitter, etc.). Supervision policies created in organizations are not supported in communication supervision in Microsoft 365 subscriptions.
 
 - **Step 5 (optional)**: [Test your communication supervision policy](#step-5-test-your-supervision-policy-optional)
 
@@ -110,7 +110,7 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
   
 ### Add members to the Supervisory Review role group
 
-1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Office 365 organization.
+1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your organization.
 
 2. In the Office 365 security and compliance center, go to **Permissions**.
 
@@ -120,7 +120,7 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
 
 ### Create a new role group
 
-1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Office 365 organization.
+1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your organization.
 
 2. In the Office 365 security and compliance center, go to **Permissions** and then click Add (**+**).
 
@@ -157,7 +157,7 @@ Use a text editor (like Notepad), to create a file that includes the keyword ter
 
 ## Step 4: Set up a supervision policy (required)
   
-1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your Office 365 organization.
+1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your organization.
 
 2. In the Office 365 security and compliance center, select **Supervision**.
   

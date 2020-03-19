@@ -1,5 +1,5 @@
 ---
-title: "Tagging and Assessment in Office 365 Advanced eDiscovery"
+title: "Tagging and Assessment in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
-description: "Review the steps to perform Assessment training, including tagging files, and reviewing assessment results in Office 365 Advanced eDiscovery.
+description: "Review the steps to perform Assessment training, including tagging files, and reviewing assessment results in Advanced eDiscovery.
 "
 ---
 

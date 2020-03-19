@@ -1,5 +1,5 @@
 ---
-title: "Remove a former employee from Office 365"
+title: "Remove a former employee"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -26,7 +26,7 @@ ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: "Follow this checklist to remove an employee from Office 365 and secure data. "
 ---
 
-# Remove a former employee from Office 365
+# Remove a former employee
   
 ## Sign out now!
 

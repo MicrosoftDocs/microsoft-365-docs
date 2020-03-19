@@ -65,11 +65,11 @@ Complete the following steps to add users to an insider risk management role gro
 
 7. Select **Save** to add the users to the role group. Select **Close** to complete the steps.
 
-## Step 2 (required): Enable the Office 365 audit log
+## Step 2 (required): Enable the audit log
 
 Insider risk management uses audit logs for user insights and activities configured in policies. The audit logs are a summary of all activities associated with an insider risk management policy or anytime a policy changes.
 
-For step-by-step instructions to turn on auditing, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
 
 ## Step 3 (optional): Configure prerequisites for templates
 

@@ -1,5 +1,5 @@
 ---
-title: "Buy a subscription to Office 365 for business from your free trial"
+title: "Buy a subscription to Microsoft 365 for business from your free trial"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
-description: "Purchase an Office 365 for business subscription. You can buy the same type of subscription that you tried, or a different plan."
+description: "Purchase a Microsoft 365 for business subscription. You can buy the same type of subscription that you tried, or a different plan."
 ---
 
-# Buy a subscription to Office 365 for business from your free trial
+# Buy a subscription to Microsoft 365 for business from your free trial
 
-You've tried Office 365, and now you're ready to buy. You have two options when buying Office 365 from your trial version:
+You've tried Microsoft 365, and now you're ready to buy. You have two options when buying Microsoft 365 from your trial version:
   
 - [Buy the same plan as your trial](#buy-the-same-plan-as-your-trial)
 - [Buy a different plan than your trial](#buy-a-different-plan-than-your-trial)
@@ -160,6 +160,6 @@ If you purchase a different type of subscription than your trial, you will have 
 
 [Extend your trial](extend-your-trial.md)
   
-[Sign up for Office 365](../admin/admin-overview/sign-up-for-office-365.md)
+[Sign up for Microsoft 365](../admin/admin-overview/sign-up-for-office-365.md)
   
-[Switch to a different Office 365 plan or subscription](subscriptions/switch-to-a-different-plan.md)
+[Switch to a different Microsoft 365 plan or subscription](subscriptions/switch-to-a-different-plan.md)

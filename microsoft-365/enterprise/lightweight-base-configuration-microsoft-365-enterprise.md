@@ -58,7 +58,7 @@ To start your Office 365 E5 trial subscription, you first need a fictitious comp
 5. For step 4, record the sign-in page here (select and copy): ![Line](../media/Common-Images/TableLine.png) 
 6. Record the user ID here: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com  
    Record the password that you typed in a secure location.
-   This value will be referred to as the **Office 365 global administrator name**.
+   This value will be referred to as the **global administrator name**.
 8. Click **Go to Setup**.
 9. In Office 365 E5 Setup, click **Continue using *your organization*.onmicrosoft.com for email and signing in**, and then click **Exit and continue later**.
 
@@ -72,7 +72,7 @@ In this phase, you configure your Office 365 subscription with additional users 
   
 Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) to connect to your Office 365 subscription with the Azure Active Directory PowerShell for Graph module from your computer.
     
-In the **Windows PowerShell Credential Request** dialog box, type the Office 365 global administrator name (example: jdoe@contosotoycompany.onmicrosoft.com) and password.
+In the **Windows PowerShell Credential Request** dialog box, type the global administrator name (example: jdoe@contosotoycompany.onmicrosoft.com) and password.
   
 Fill in your organization name (example: contosotoycompany), the two-character country code for your location, a common account password, and then run the following commands from the PowerShell prompt:
 
@@ -116,7 +116,7 @@ You might want to print this article to record the specific information that you
 
 Record these values:
   
-- Office 365 global administrator name: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com (from step 6 of Phase 1)
+- global administrator name: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com (from step 6 of Phase 1)
     
     Also record the password for this account in a secure location.
     
@@ -286,7 +286,7 @@ Next, join the WIN10 computer to the Azure AD tenant of your Microsoft 365 E5 su
     
 6. Close the settings window.
     
-Next, install Office 365 ProPlus on the WIN10 computer.
+Next, install Microsoft 365 Apps for enterprise on the WIN10 computer.
   
 1. Open the Microsoft Edge browser and sign in to the Office portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
@@ -304,7 +304,7 @@ This includes the WIN10 computer that has:
 
 - Joined the Azure AD tenant of your Microsoft 365 E5 subscription.
 - Enrolled as an Azure AD device in Microsoft Intune (EMS).
-- Has Office 365 ProPlus installed.
+- Has Microsoft 365 Apps for enterprise installed.
   
 You are now ready to experiment with additional features of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
   

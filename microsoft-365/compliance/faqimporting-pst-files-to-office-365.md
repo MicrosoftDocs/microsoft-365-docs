@@ -1,5 +1,5 @@
 ---
-title: "FAQ about importing PST files to Office 365"
+title: "FAQ about importing PST files"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,7 +18,7 @@ ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: "Frequently asked questions for administrators about using the Office 365 Import Service to import your organization's PST files to Office 365 mailboxes. "
 ---
 
-# FAQ about importing PST files to Office 365
+# FAQ about importing PST files
 
 **This article is for administrators. Do you want to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)**|
    
@@ -38,7 +38,7 @@ Additionally, to create import jobs in the Security & Compliance Center, one of 
     
     Or
     
-- You have to be a global administrator in your Office 365 organization.
+- You have to be a global administrator in your organization.
     
 > [!TIP]
 > Consider creating a new role group in Exchange Online that's specifically intended for importing PST files to Office 365. For the minimum level of privileges required to import PST files, assign the Mailbox Import Export and Mail Recipients roles to the new role group, and then add members. 
@@ -112,7 +112,7 @@ Additionally, to create import jobs in the Security & Compliance Center, one of 
     
     Or
     
-- You have to be a global administrator in your Office 365 organization.
+- You have to be a global administrator in your organization.
     
 > [!TIP]
 > Consider creating a new role group in Exchange Online that's specifically intended for importing PST files to Office 365. For the minimum level of privileges required to import PST files, assign the Mailbox Import Export and Mail Recipients roles to the new role group, and then add members. 

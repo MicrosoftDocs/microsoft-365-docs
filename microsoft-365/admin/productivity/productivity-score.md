@@ -59,7 +59,7 @@ Your score is updated daily and reflects user actions completed in the last 28 d
 
 ## Access and required permissions 
 
-For the employee experience, you must have a subscription to an Office 365 for business plan or a Microsoft 365 Business plan with multiple users. 
+For the employee experience, you must have a subscription to a Microsoft 365 for business plan with multiple users. 
 
 To have permission to access Microsoft Productivity Score, you must have of the following roles: 
 
@@ -102,8 +102,8 @@ All area detail pages follow the following structure:
 Additionally, all insights contain the following elements: 
 
 - Header: Key takeaway or outcome tracked for each insight;
-- Summary: Further explanation of why the measures in the insight are important for your organization’s productivity. 
-- Data visualization: Visually quantifies your organization’s position with regard to the measures in the insight with benchmarks as applicable.
+- Summary: Further explanation of why the measures in the insight are important for your organization's productivity. 
+- Data visualization: Visually quantifies your organization's position with regard to the measures in the insight with benchmarks as applicable.
 - Actions: Contextual action that can help drive more of the desired outcome per the insight and thus improve your score.
 
 ### Area detail page – Collaborating on content 
@@ -131,7 +131,7 @@ The file types considered for collaboration are Word/Excel/PowerPoint/OneNote/PD
 
 ![Work anywhere page.](../../media/psflexibility.png)
 
-The Working anywhere page quantifies the users (as a percentage and absolute value) who used at least one productivity app across two or more platforms, which are desktop, mobile and web. Users get scored higher for using more apps and platforms. The apps being considered are Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. The base of the insight are users enabled for Office 365 ProPlus, Exchange, Yammer, Skype or Teams.
+The Working anywhere page quantifies the users (as a percentage and absolute value) who used at least one productivity app across two or more platforms, which are desktop, mobile and web. Users get scored higher for using more apps and platforms. The apps being considered are Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. The base of the insight are users enabled for Microsoft 365 Apps for enterprise, Exchange, Yammer, Skype or Teams.
 
 1. **Why it matters** provides a summary from research linking usage of multiple platforms to higher productivity. **Read the research from Forrester** goes to a research article that provides more context on how working across is conducive to increased productivity.
 1. Supporting insight on **Email anywhere** quantifies number of users in your organization using Outlook across platforms within base of users active on Outlook.

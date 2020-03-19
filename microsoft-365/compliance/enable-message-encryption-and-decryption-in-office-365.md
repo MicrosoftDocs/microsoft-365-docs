@@ -1,5 +1,5 @@
 ---
-title: "Enable message encryption and decryption in Office 365"
+title: "Enable message encryption and decryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,7 +16,7 @@ ms.collection:
 description: "Office 365 Message Encryption lets email users send encrypted messages to people inside our outside their organization. As an administrator, you can enable Office 365 Message Encryption by creating mail flow rules (also known as transport rules) that set the conditions for encryption."
 ---
 
-# Enable message encryption and decryption in Office 365
+# Enable message encryption and decryption
 
 Office 365 Message Encryption lets email users send encrypted messages to people inside our outside their organization. As an administrator, you can enable Office 365 Message Encryption by creating mail flow rules (also known as transport rules) that set the conditions for encryption. When one of your users sends a message that matches the conditions of the rule, the message is encrypted.
   

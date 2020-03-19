@@ -1,5 +1,5 @@
 ---
-title: "Detect and Remediate Illicit Consent Grants in Office 365"
+title: "Detect and Remediate Illicit Consent Grants"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 description: "Learn how to recognize and remediate the illicit consent grants attack in Office 365."
 ---
-# Detect and Remediate Illicit Consent Grants in Office 365
+# Detect and Remediate Illicit Consent Grants
 
 **Summary**  Learn how to recognize and remediate the illicit consent grants attack in Office 365.
 

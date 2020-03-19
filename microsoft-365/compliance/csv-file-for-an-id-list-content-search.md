@@ -1,5 +1,5 @@
 ---
-title: "Prepare a CSV file for an ID list Content Search in Office 365"
+title: "Prepare a CSV file for an ID list Content Search"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: "Use the Results.csv or Unindexed Items.csv file from an existing Content Search to create an ID list search that returns a specific email messages. ID list searches are typically used to return partially indexed mailbox items."
 ---
 
-# Prepare a CSV file for an ID list Content Search in Office 365
+# Prepare a CSV file for an ID list Content Search
 
 You can search for specific mailbox email messages and other mailbox items using a list of Exchange IDs. To create an ID list search (formally called a targeted search), you submit a comma separated value (CSV) file that identifies the specific mailbox items to search for. For this CSV file you use the **Results.csv** file or the **Unindexed Items.csv** file that are included when you export the Content Search results or export a Content Search report from and existing Content Search. Then you edit one of these files to indicate the specific items to search for, and then create a new ID list search and submit the CSV file.
 

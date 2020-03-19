@@ -19,11 +19,11 @@ description: Learn about and where to access the Windows and Office Deployment L
 
 # Windows and Office Deployment Lab Kit
 
-These downloadable hands-on labs focus on Windows 10 deployment and Office 365 deployment along with related configuration and management considerations post-deployment. This training is highly recommended for organizations preparing for Windows 7 end of life, but also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Included are guides for Windows 10, Office 365 ProPlus, Enterprise Mobility + Security and related products and services.
+These downloadable hands-on labs focus on Windows 10 deployment and Office 365 deployment along with related configuration and management considerations post-deployment. This training is highly recommended for organizations preparing for Windows 7 end of life, but also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Included are guides for Windows 10, Microsoft 365 Apps for enterprise, Enterprise Mobility + Security and related products and services.
 
-These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
+These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Microsoft 365 Apps for enterprise. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
 
-As part of the [Desktop Deployment](https://www.aka.ms/howtoshift) process for Windows 10 and Office 365 ProPlus, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.
+As part of the [Desktop Deployment](https://www.aka.ms/howtoshift) process for Windows 10 and Microsoft 365 Apps for enterprise, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.
 
 The lab kit is free to download and uses trial software.
 
@@ -69,8 +69,8 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 ### **Office and LOB App Delivery**
 
-  - Office 365 ProPlus deployment using Microsoft Endpoint Configuration Manager
-  - Office 365 ProPlus deployment using Microsoft Intune
+  - Microsoft 365 Apps for enterprise deployment using Microsoft Endpoint Configuration Manager
+  - Microsoft 365 Apps for enterprise deployment using Microsoft Intune
   - App deployment and management using Microsoft Intune
   - App deployment and self-service installation using Microsoft Store for Business
   - Desktop Bridge application conversion to UWP
@@ -110,7 +110,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 ### **Windows and Office Servicing**
 
   - Software update management using Configuration Manager
-  - Office 365 ProPlus update management in Configuration Manager
+  - Microsoft 365 Apps for enterprise update management in Configuration Manager
   - Mobile Device Management applied to Windows 10 using Microsoft Intune
 
 ### **NEW! Windows Virtual Desktop**
@@ -130,7 +130,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
   - [<span class="underline">Plan for Windows 10 deployment</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Deployment guide for Office 365 ProPlus</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Deployment guide for Microsoft 365 Apps for enterprise</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
   - [<span class="underline">Getting Started with Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

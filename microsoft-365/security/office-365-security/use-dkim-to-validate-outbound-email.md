@@ -18,7 +18,7 @@ ms.collection:
 description: "Summary: This article describes how you use DomainKeys Identified Mail (DKIM) with Office 365 to ensure that destination email systems trust messages sent from your custom domain."
 ---
 
-# Use DKIM to validate outbound email sent from your custom domain in Office 365
+# Use DKIM to validate outbound email sent from your custom domain
 
  **Summary:** This article describes how you use DomainKeys Identified Mail (DKIM) with Office 365 to ensure that destination email systems trust messages sent outbound from your custom domain.
 

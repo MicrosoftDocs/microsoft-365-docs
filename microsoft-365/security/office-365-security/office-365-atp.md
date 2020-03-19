@@ -104,7 +104,7 @@ To access ATP features in the Security & Compliance Center, you must be assigned
 
 |Role or role group|Resources to learn more|
 |---------|---------|
-|Office 365 Global Administrator (this can be assigned in either Azure Active Directory or in the Office 365 Security & Compliance Center) |[About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|global administrator (this can be assigned in either Azure Active Directory or in the Office 365 Security & Compliance Center) |[About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
 |Security Administrator (this can be assigned in either Azure Active Directory or the Office 365 Security & Compliance Center) |[Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online Organization Management (this is assigned in Exchange Online)|[Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |Search and Purge (this is assigned only in the Office 365 Security & Compliance Center) |[Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md|

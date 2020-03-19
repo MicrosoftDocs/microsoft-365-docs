@@ -1,5 +1,5 @@
 ---
-title: "Plan for Office 365 Groups governance"
+title: "Plan for Groups governance"
 ms.reviewer: johasand
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ search.appverid:
 description: "Learn how to plan for Office 365 Groups governance."
 ---
 
-# Plan for governance in Office 365 Groups
+# Plan for governance in Groups
 
 Office 365 Groups has a rich set of tools to implement any governance capabilities your organization might require. This article guides IT Pros to ask the right questions to determine their requirements for governance and how to meet them based on their organizational profile.
 

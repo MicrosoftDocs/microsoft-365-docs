@@ -21,7 +21,7 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ms.custom: 
 - MACDashWhatsNew
----
+---'
 
 # What's new in the Microsoft 365 admin center
 
@@ -106,7 +106,7 @@ Check out the small business admin training that we released in January:
 - [Get help or support](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
 - [Delete a user](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
 - [Choose a Microsoft subscription](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Overview of Microsoft 365 Business security](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [Overview of Microsoft 365 for business security](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## November and December 2019
 
@@ -145,7 +145,7 @@ In November, we released quite a few learning paths to [Microsoft Learn](https:/
 
 - [Microsoft 365 fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/)
 - [Extend Office fundamentals](https://docs.microsoft.com/learn/paths/extend-office-fundamentals/)
-- [Microsoft 365 - Modernize your enterprise deployment with Windows 10 and Office 365 ProPlus](https://docs.microsoft.com/learn/paths/m365-getmodern/)
+- [Microsoft 365 - Modernize your enterprise deployment with Windows 10 and Microsoft 365 Apps for enterprise](https://docs.microsoft.com/learn/paths/m365-getmodern/)
 - [Manage your enterprise deployment with Microsoft 365](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
 - [Upgrade Microsoft Office for IT at scale](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
 - [Deliver remote desktops and apps from Azure with Windows Virtual Desktop
@@ -421,7 +421,7 @@ Check it out: **Users > Active users > Edit** or **Add user > Licenses and Apps*
 
 - We've added cards for the dashboard. Just go to the admin center and select **Add card** to see the new cards:
   - **Office 365 Active users report** - Monitor the usage of the Office 365 services you've purchased.
-  - **Office 365 software** - Install or deploy Office 365 ProPlus software and see how many licensed users have activated it.
+  - **Office 365 software** - Install or deploy Microsoft 365 Apps for enterprise software and see how many licensed users have activated it.
   - **Azure Active Directory** - Gives you quick access to common Azure AD tasks like self-serve password resets, customizing sign-in, and adding apps.
 - The **Export users** quick task has been added to command bar on the Active users page. ![Screen capture showing Export users on the command bar next to Refresh.](../media/M365PreviewExportUsersQT.png)
 - Purchase services has additional enhancements for November. And they are ALL good! To get there, go to Billing > Purchase services. <br>![Screen capture showing purchase services page with 3 new enhancements.](../media/M365PreviewBillingPurchasServices.png)

@@ -144,7 +144,7 @@ If you want to check which DLs are eligible for upgrade just run the following c
 
 ### Who can run the upgrade scripts?
 
-People with Office 365 global admin or Exchange admin rights.
+People with global admin or Exchange admin rights.
 
 ### Why is the contact card still showing a distribution list? What should I do to prevent a upgraded distribution list from showing up in my auto suggest list?
 

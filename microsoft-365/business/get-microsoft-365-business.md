@@ -23,28 +23,28 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Discover your options for purchasing Microsoft 365 Business and step-by-step instructions for purchasing it from Microsoft Partner Center." 
+description: "Discover your options for purchasing Microsoft 365 Business Premium and step-by-step instructions for purchasing it from Microsoft Partner Center." 
 ---
 
-# Get Microsoft 365 Business
+# Get Microsoft 365 Business Premium
 
-## Get Microsoft 365 Business from Microsoft
+## Get Microsoft 365 Business Premium from Microsoft
 
-If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).
+If you don't have a partner and want to get Microsoft 365 Business Premium, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).
 
-See [sign up for Microsoft 365 Business](sign-up.md) for detailed instructions.
+See [sign up for Microsoft 365 Business Premium](sign-up.md) for detailed instructions.
 
-You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) to buy Microsoft 365 Business and get setup help.
+You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) to buy Microsoft 365 Business Premium and get setup help.
   
-## Get Microsoft 365 Business from Microsoft Partner Center
+## Get Microsoft 365 Business Premium from Microsoft Partner Center
 
 1. Sign in at [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=849910) by using the credentials you created when you enrolled to the Cloud Service Provider (CSP) program. 
     
-2. On the Partner Dashboard, choose **Customers**, then select your customer or add a new customer before you get Microsoft 365 Business.
+2. On the Partner Dashboard, choose **Customers**, then select your customer or add a new customer before you get Microsoft 365 Business Premium.
     
     ![In the Microsoft Partner center, add a customer.](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. On the customer's **Subscription** page, select **Add subscription**, choose the Small business option under Catalog, and then choose **Microsoft 365 Business**.
+3. On the customer's **Subscription** page, select **Add subscription**, choose the Small business option under Catalog, and then choose **Microsoft 365 Business Premium**.
     
     Select the number of licenses you need (up to 300). If you have more than 300 users, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) instead. 
     

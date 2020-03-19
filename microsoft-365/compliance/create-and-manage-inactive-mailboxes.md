@@ -1,5 +1,5 @@
 ---
-title: "Create and manage inactive mailboxes in Office 365"
+title: "Create and manage inactive mailboxes"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
-description: "You can create an inactive mailbox in Office 365 by applying a hold or Office 365 retention policy to the mailbox and then deleting the corresponding Office 365 user account. Items in an inactive mailbox are retained for the duration of the hold or retention policy that was applied to it before it was made inactive. To permanently delete an inactive mailbox, just remove the hold or retention policy."
+description: "You can create an inactive mailbox in Office 365 by applying a hold or Office 365 retention policy to the mailbox and then deleting the corresponding user account. Items in an inactive mailbox are retained for the duration of the hold or retention policy that was applied to it before it was made inactive. To permanently delete an inactive mailbox, just remove the hold or retention policy."
 ---
 
-# Create and manage inactive mailboxes in Office 365
+# Create and manage inactive mailboxes
 
-Office 365 makes it possible for you to retain the contents of deleted mailboxes. This feature is called [inactive mailboxes](inactive-mailboxes-in-office-365.md). Inactive mailboxes allow you to retain former employees' email after they leave your organization. A mailbox becomes inactive when a Litigation Hold or an Office 365 retention policy (created in the security and compliance center in Office 365 or Microsoft 365) is applied to the mailbox before the corresponding Office 365 user account is deleted. The contents of an inactive mailbox are retained for the duration of the hold that was placed on the mailbox before it was made inactive. This allows administrators, compliance officers, and records managers to use Content Search to search and export the contents of an inactive mailbox. Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
+Office 365 makes it possible for you to retain the contents of deleted mailboxes. This feature is called [inactive mailboxes](inactive-mailboxes-in-office-365.md). Inactive mailboxes allow you to retain former employees' email after they leave your organization. A mailbox becomes inactive when a Litigation Hold or an Office 365 retention policy (created in the security and compliance center in Office 365 or Microsoft 365) is applied to the mailbox before the corresponding user account is deleted. The contents of an inactive mailbox are retained for the duration of the hold that was placed on the mailbox before it was made inactive. This allows administrators, compliance officers, and records managers to use Content Search to search and export the contents of an inactive mailbox. Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
   
 > [!IMPORTANT]
 > As we continue to invest in different ways to preserve mailbox content, we're announcing the retirement of In-Place Holds in the Exchange admin center. That means you should use Litigation Holds and Office 365 retention policies to create an inactive mailbox. Starting April 1, 2020 you won't be able to create new In-Place Holds in Exchange Online. But you'll still be able to change the hold duration of an In-Place Hold placed on an inactive mailbox. However, starting July 1, 2020, you won't be able to change the hold duration. You'll only be able to delete an inactive mailbox by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will still be preserved until the hold is removed. For more information about the retirement of In-Place Holds, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
@@ -31,7 +31,7 @@ Office 365 makes it possible for you to retain the contents of deleted mailboxes
 
 - To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license so that a Litigation Hold or an Office 365 retention policy can be applied to the mailbox before it's deleted. Exchange Online Plan 2 licenses are part of an Office 365 Enterprise E3 and E5 subscription. If a mailbox is assigned an Exchange Online Plan 1 or Exchange Online Kiosk license (which are part of an Office 365 E1 and F1 subscription respectively), you would have to assign it a separate Exchange Online Archiving license so that a hold can be applied to the mailbox before it's deleted. For more information, see [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
-- The licenses associated with the deleted Exchange Online mailbox will be available after you delete the corresponding Office 365 user account. You can then [assign those licenses to another user](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc). 
+- The licenses associated with the deleted Exchange Online mailbox will be available after you delete the corresponding user account. You can then [assign those licenses to another user](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc). 
 
 - If a Litigation Hold or an Office 365 retention policy (that's configured to retain or retain and then delete content) isn't applied to a mailbox before it's deleted, the contents of the mailbox won't be retained or discoverable. However, the deleted mailbox can be recovered within 30 days of deletion, but the mailbox and its contents will be permanently deleted after 30 days if it isn't recovered.
 
@@ -39,13 +39,13 @@ Office 365 makes it possible for you to retain the contents of deleted mailboxes
   
 ## Create an inactive mailbox
 
-Making a mailbox inactive involves two steps: 1) placing the mailbox on Litigation Hold or applying an Office 365 retention policy to it, and 2) deleting the mailbox or corresponding Office 365 user account. After the mailbox is inactive, its contents are retained until the hold or retention policy is removed.
+Making a mailbox inactive involves two steps: 1) placing the mailbox on Litigation Hold or applying an Office 365 retention policy to it, and 2) deleting the mailbox or corresponding user account. After the mailbox is inactive, its contents are retained until the hold or retention policy is removed.
   
 ### Step 1: Place a mailbox on Litigation Hold or apply an Office 365 retention policy
 
 Placing a mailbox on Litigation Hold or applying an Office 365 retention policy (that's configured to retain or retain and then delete content) retains the contents in the mailbox before it's deleted. Both types of holds will retain all mailbox content, including deleted items and original versions of modified items. Deleted and modified items are retained in the inactive mailbox for a specified period, or until you permanently delete the inactive mailbox by removing the hold or retention policy that's applied to the inactive mailbox.
   
-If a hold is already placed on a mailbox, or if an Office 365 retention policy is already applied to a mailbox, then all you have to do is delete the corresponding Office 365 user account as explained in Step 2.
+If a hold is already placed on a mailbox, or if an Office 365 retention policy is already applied to a mailbox, then all you have to do is delete the corresponding user account as explained in Step 2.
   
 For step-by-step procedures for placing a mailbox on Litigation Hold or applying an Office 365 retention policy, see:
   
@@ -58,7 +58,7 @@ For step-by-step procedures for placing a mailbox on Litigation Hold or applying
   
 ### Step 2: Delete the mailbox
 
-After the mailbox is placed on hold or an Office 365 retention policy is applied to it, the next step is to delete the mailbox. The best way to delete a mailbox is to delete the corresponding Office 365 user account in the Microsoft 365 admin center. For information about deleting Office 365 user accounts, see [Delete a user from your organization](https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e).
+After the mailbox is placed on hold or an Office 365 retention policy is applied to it, the next step is to delete the mailbox. The best way to delete a mailbox is to delete the corresponding user account in the Microsoft 365 admin center. For information about deleting user accounts, see [Delete a user from your organization](https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e).
   
 > [!NOTE]
 > You can also delete the mailbox by using the **Remove-Mailbox** cmdlet in Exchange Online PowerShell. For more information, see [Delete or restore user mailboxes in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856287). 
@@ -68,7 +68,7 @@ After the mailbox is placed on hold or an Office 365 retention policy is applied
 
 To view a list of the inactive mailboxes in your organization:
   
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your Office 365 organization. 
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your organization. 
     
 2. Click **Information governance** > **Retention**.
     

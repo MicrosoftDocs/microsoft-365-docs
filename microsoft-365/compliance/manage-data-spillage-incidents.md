@@ -32,7 +32,7 @@ This article provides a list of instructions on how to permanently delete items 
 
 ## Scenario
 
-You're informed of a data spillage incident where an employee unknowingly shared a highly confidential document with multiple people through email. You want to quickly assess who received this document, both inside and outside of your organization. After you've investigate the incident, you plan to share your findings with other investigators to review, and then permanently remove the spilled data from your Office 365 organization. After the investigation is complete, you want to remove all evidence. 
+You're informed of a data spillage incident where an employee unknowingly shared a highly confidential document with multiple people through email. You want to quickly assess who received this document, both inside and outside of your organization. After you've investigate the incident, you plan to share your findings with other investigators to review, and then permanently remove the spilled data from your organization. After the investigation is complete, you want to remove all evidence. 
 
 > [!IMPORTANT]
 > While you'll be able to permanently remove the spilled data within your own organization, any data spilled outside your organization can't be removed with these capabilities.

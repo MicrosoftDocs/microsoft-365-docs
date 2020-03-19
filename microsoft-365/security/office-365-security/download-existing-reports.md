@@ -24,7 +24,7 @@ In the [Security &amp; Compliance Center](https://protection.office.com), severa
 ## Download existing reports
 
 > [!IMPORTANT]
-> Make sure that you have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. 
+> Make sure that you have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In general, global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. 
   
 1. In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Reports for download**.
     

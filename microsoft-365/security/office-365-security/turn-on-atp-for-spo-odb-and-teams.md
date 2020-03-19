@@ -1,5 +1,5 @@
 ---
-title: "Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams"
+title: "Turn on ATP for SharePoint, OneDrive, and Microsoft Teams"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -20,7 +20,7 @@ ms.collection:
 description: "Learn how to turn on ATP for SharePoint, OneDrive, and Teams, including how to set alerts for detected files."
 ---
 
-# Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams
+# Turn on ATP for SharePoint, OneDrive, and Microsoft Teams
 
 > [!IMPORTANT]
 > This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are a home user looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -31,13 +31,13 @@ To define (or edit) ATP policies, you must be assigned an appropriate role. Some
 
 |Role|Where/how assigned|
 |---------|---------|
-|Office 365 Global Administrator|The person who signs up to buy Office 365 is a global admin by default. (See [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)|
+|global administrator|The person who signs up to buy Office 365 is a global admin by default. (See [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)|
 |Security Administrator|Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online Organization Management|Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
 
 ## Turn on ATP for SharePoint, OneDrive, and Microsoft Teams
 
-**Before you begin this procedure, make sure that audit logging is already turned on for your Office 365 environment**. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn Office 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+**Before you begin this procedure, make sure that audit logging is already turned on for your Office 365 environment**. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 1. Go to [https://protection.office.com](https://protection.office.com), and sign in with your work or school account.
 

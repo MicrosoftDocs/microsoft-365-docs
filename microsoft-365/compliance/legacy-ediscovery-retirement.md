@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW 
-description: "In-Place eDiscovery and In-Place Hold (and the corresponding PowerShell cmdlets) in Exchange Online will be retired in the first half of 2020. The Search-Mailbox cmdlet and Office 365 Advanced eDiscovery v1.0 are also being retired within the same time period."
+description: "In-Place eDiscovery and In-Place Hold (and the corresponding PowerShell cmdlets) in Exchange Online will be retired in the first half of 2020. The Search-Mailbox cmdlet and Advanced eDiscovery v1.0 are also being retired within the same time period."
 ---
 
 # Retirement of legacy eDiscovery tools
@@ -47,7 +47,7 @@ As a result of this new and improved eDiscovery functionality in the Microsoft 3
    
    - [SearchMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/searchmailboxes-operation)
 
-- [Office 365 Advanced eDiscovery v1.0](office-365-advanced-ediscovery.md), which is the first version of Advanced eDiscovery that's accessed through an eDiscovery case in the Office 365 Security & Compliance Center.
+- [Advanced eDiscovery v1.0](office-365-advanced-ediscovery.md), which is the first version of Advanced eDiscovery that's accessed through an eDiscovery case in the Office 365 Security & Compliance Center.
 
 > [!NOTE]
 > The eDiscovery functionality being retired only applies to cloud-based versions of Microsoft 365 and Office 365. eDiscovery functionality in on-premises versions of Exchange and SharePoint will still be supported until further notice.

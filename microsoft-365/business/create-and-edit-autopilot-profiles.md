@@ -34,7 +34,7 @@ description: "Learn to create an AutoPilot profile and apply it to a device, as 
 
 A profile applies to a device, or a group of devices,
   
-1. In the Microsoft 365 Business Admin center, choose **Devices** \> **AutoPilot**.
+1. In the Microsoft 365 admin center, choose **Devices** \> **AutoPilot**.
   
 2. On the **AutoPilot** page, choose the **Profiles** tab \> **Create profile**.
     

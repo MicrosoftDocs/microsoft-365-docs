@@ -67,7 +67,7 @@ conceptualContent:
           text: Windows 10 Enterprise
         - url: https://docs.microsoft.com/deployoffice/plan-office-365-proplus
           itemType: deploy
-          text: Office 365 ProPlus
+          text: Microsoft 365 Apps for enterprise
         - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
           itemType: deploy
           text: Microsoft Intune
@@ -94,7 +94,7 @@ conceptualContent:
           text: Windows 10 Enterprise
         - url: https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus
           itemType: concept
-          text: Office 365 ProPlus
+          text: Microsoft 365 Apps for enterprise
         - url: https://docs.microsoft.com/intune/apps/app-management
           itemType: get-started
           text: Apps with Intune

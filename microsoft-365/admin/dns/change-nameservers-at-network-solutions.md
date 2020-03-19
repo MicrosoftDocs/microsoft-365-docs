@@ -67,7 +67,7 @@ Follow the steps below or [watch the video (start at 0:47)](https://support.offi
     
 |**Host**|**TTL**|**Text**|
 |:-----|:-----|:-----|
-|@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Note**: This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)
+|@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Note**: This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)
    
     
    ![Type or paste values in the boxes for the new record](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
@@ -82,7 +82,7 @@ Follow the steps below or [watch the video (start at 0:47)](https://support.offi
   
 9. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record.
   
 When Microsoft finds the correct TXT record, your domain is verified.
   

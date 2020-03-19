@@ -1,5 +1,5 @@
 ---
-title: "Alerts in the Office 365 Security &amp; Compliance Center"
+title: "Alerts in the Security &amp; Compliance Center"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,9 +19,9 @@ ms.collection:
 description: "Find out about alerts you can set to help with security in Office 365."
 ---
 
-# Alerts in the Office 365 Security &amp; Compliance Center
+# Alerts in the Security &amp; Compliance Center
 
-Use the alerts features in the Office 365 Security &amp; Compliance Center to view and manage alerts for your Office 365 organization, including managing advanced alerts as part of [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
+Use the alerts features in the Office 365 Security &amp; Compliance Center to view and manage alerts for your organization, including managing advanced alerts as part of [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
   
 ## How to get to the Office 365 alerts features
 
@@ -51,7 +51,7 @@ The following table describes the tools that are available under **Alerts** in t
   
 |**Tool**|**Description**|
 |:-----|:-----|
-|[Manage alerts](../../compliance/create-activity-alerts.md) <br/> |Use activity alerts to send email notifications to yourself or other administrators when users perform specific activities in Office 365. Activity alerts are similar to searching the Office 365 audit log for events, except that you'll be sent an email message when an event that you've created an alert for occurs.  <br/> |
+|[Manage alerts](../../compliance/create-activity-alerts.md) <br/> |Use activity alerts to send email notifications to yourself or other administrators when users perform specific activities in Office 365. Activity alerts are similar to searching the audit log for events, except that you'll be sent an email message when an event that you've created an alert for occurs.  <br/> |
 |[Manage advanced alerts ](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) <br/> |Use the **Manage advanced alerts** feature of Office 365 Cloud App Security to set up policies that can alert you to suspicious and anomalous activity in Office 365. After you're alerted, you can investigate situations that are potentially problematic and, if needed, take action to address security issues.  <br/> |
    
 

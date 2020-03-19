@@ -122,4 +122,4 @@ Your Windows 10 Enterprise infrastructure is ready to begin installation on new 
 
 |||
 |:-------|:-----|
-|![Phase 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [Office 365 ProPlus](office365proplus-infrastructure.md). |
+|![Phase 4: Microsoft 365 Apps for enterprise](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md). |

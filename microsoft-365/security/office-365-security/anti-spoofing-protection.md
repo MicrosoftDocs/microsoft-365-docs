@@ -1,5 +1,5 @@
 ---
-title: "Anti-spoofing protection in Office 365"
+title: "Anti-spoofing protection"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -20,7 +20,7 @@ localization_priority: Priority
 description: "This article describes how Office 365 mitigates against phishing attacks that use forged sender domains, that is, domains that are spoofed. It accomplishes this by analyzing the messages and blocking the ones that can be authenticated neither by using standard email authentication methods, nor other sender reputation techniques. This change was implemented to reduce the number of phishing attacks to which organizations in Office 365 are exposed."
 ---
 
-# Anti-spoofing protection in Office 365
+# Anti-spoofing protection
 
 This article describes how Office 365 mitigates against phishing attacks that use forged sender domains, that is, domains that are spoofed. It accomplishes this by analyzing the messages and blocking the ones that cannot be authenticated using standard email authentication methods, nor other sender reputation techniques. This change was implemented to reduce the number of phishing attacks to which organizations in Office 365 are exposed.
 

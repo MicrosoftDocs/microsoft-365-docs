@@ -1,5 +1,5 @@
 ---
-title: "Create safe sender lists in Office 365"
+title: "Create safe sender lists"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,7 +16,7 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: "If you want to be sure that you receive mail from a particular sender, because you trust them and their messages, you can adjust your allow list in a spam filter policy."
 ---
 
-# Create safe sender lists in Office 365
+# Create safe sender lists
 
 If you want to ensure that users receive emails from a particular sender or senders because you trust them and their messages, there are multiple methods available that you can choose from. These options include Exchange mail flow rules (also known as transport rules), Outlook Safe Senders, IP Allow Lists, Anti-spam Sender/Domain Allow Lists.
 
@@ -26,7 +26,7 @@ If you want to ensure that users receive emails from a particular sender or send
 The recommended method to configure a safe sender list is to use mail flow rules as this presents the most flexibility to ensure that only the right messages get allowed. *Anti-Spam policy email address* and *Domain based allow lists* are not as secure as *IP address-based lists* because domains can easily be spoofed. But anti-spam policy IP based allow lists also present risks as they will allow any domains sent through that IP to bypass spam filtering. Please be careful and monitor *any* exceptions made, carefully.
 
 > [!IMPORTANT]
-> • Information on how to create a **Blocked Sender List** is [here](create-block-sender-lists-in-office-365.md). <br/><br/> • To allow a sender domain to send unauthenticated email (bypass anti-spoofing protection) but not bypass anti-spam and anti-malware checks, you can add it to the [AllowedToSpoof safe sender list](walkthrough-spoof-intelligence-insight.md).
+> * Information on how to create a **Blocked Sender List** is [here](create-block-sender-lists-in-office-365.md). <br/><br/> * To allow a sender domain to send unauthenticated email (bypass anti-spoofing protection) but not bypass anti-spam and anti-malware checks, you can add it to the [AllowedToSpoof safe sender list](walkthrough-spoof-intelligence-insight.md).
 
 ## Options from most to least recommended
 
@@ -87,4 +87,4 @@ The least desirable option is to authorize by sender/domain. This option should 
 The maximum limit for these lists is approximately 1000 entries; although, you will only be able to enter 30 entries into the portal. You must use PowerShell to add more than 30 entries.
 
 > [!IMPORTANT]
-> • Configuring Anti-Spam polices to *allow sender/allow domain* will result in messages skipping spam filtering for a) messages from senders in the allow list, or b) any senders from an allowed domain. This method significantly increases the risk spammers can spoof the sending domain (or impersonate the full email address) which skips all spam filtering, sender authentication checks, and will send the message directly into a person's inbox. <br/><br/>• Do not add domains you own or popular domains (e.g. `microsoft.com`) to the mail flow rule as a condition. This method is considered high risk since it creates opportunities for bad actors to send you mail that would otherwise be filtered out, increasing risk. <br/><br/>• Information on how to create a **Blocked Sender List** is [here](create-block-sender-lists-in-office-365.md).
+> * Configuring Anti-Spam polices to *allow sender/allow domain* will result in messages skipping spam filtering for a) messages from senders in the allow list, or b) any senders from an allowed domain. This method significantly increases the risk spammers can spoof the sending domain (or impersonate the full email address) which skips all spam filtering, sender authentication checks, and will send the message directly into a person's inbox. <br/><br/>* Do not add domains you own or popular domains (e.g. `microsoft.com`) to the mail flow rule as a condition. This method is considered high risk since it creates opportunities for bad actors to send you mail that would otherwise be filtered out, increasing risk. <br/><br/>* Information on how to create a **Blocked Sender List** is [here](create-block-sender-lists-in-office-365.md).

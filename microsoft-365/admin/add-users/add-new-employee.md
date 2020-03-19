@@ -1,5 +1,5 @@
 ---
-title: "Add a new employee to Office 365"
+title: "Add a new employee to Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -22,13 +22,13 @@ ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: "Add new employees to Office 365 for business for email, Skype, and Office apps."
 ---
 
-# Add a new employee to Office 365
+# Add a new employee to Microsoft 365
 
-This article helps you onboard a new employee to Office 365 for business. We assume you're an Admin and you've already [completed Office 365 set up](../setup/setup.md), and now you have someone new joining your company.
+This article helps you onboard a new employee to Microsoft 365 for business. We assume you're an Admin and you've already [completed Microsoft 365 set up](../setup/setup.md), and now you have someone new joining your company.
   
-You're in the right place if your new employee needs Office 365, and you're using an [Office 365 plan](https://products.office.com/business/compare-office-365-for-business-plans) that lets you install Office apps like Word and Excel on a computer. 
+You're in the right place if your new employee needs Office 365, and you're using a [Microsoft 365 plan](https://products.office.com/business/compare-office-365-for-business-plans) that lets you install Office apps like Word and Excel on a computer. 
   
- **Not an admin?** [Learn your way around Office 365](https://support.office.com/article/9b7306d3-8d61-4794-bb6f-6520f65956d9.aspx) helps business and home users with Office 365 set up. 
+ **Not an admin?** [Learn your way around Microsoft 365](https://support.office.com/article/9b7306d3-8d61-4794-bb6f-6520f65956d9.aspx) helps business and home users with Office 365 set up. 
   
  **No Office apps in your plan?** Follow the steps below, but skip the sections for installing apps. Use the [Online versions of Office](https://support.office.com/article/91a4ec74-67fe-4a84-a268-f6bdf3da1804.aspx) instead. 
   
@@ -36,12 +36,12 @@ Here's a quick overview:
   
 |**Step**|**Why do this?**|
 |:-----|:-----|
-|[Step 1: Create an Office 365 account for the employee](#step-1-create-an-office-365-account-for-the-employee) <br/> |Each time a new employee joins your business, create an account for them so they can start using Office 365.  <br/> |
+|[Step 1: Create a Microsoft 365 account for the employee](#step-1-create-an-office-365-account-for-the-employee) <br/> |Each time a new employee joins your business, create an account for them so they can start using Office 365.  <br/> |
 |[Step 2: Give the employee their user ID and password](#step-2-give-the-employee-their-user-id-and-password) <br/> |When you create an account, you'll get an ID and password that you can pass to your employee so they can sign in.  <br/> |
 |[Step 3: Explain where to sign in](#step-3-explain-where-to-sign-in) <br/> |The sign in location is [https://www.office.com](https://www.office.com) <br/> |
 |[Step 4: Help your employee get started](#step-4-help-your-employee-get-started) <br/> |Let your employee know how to use OneDrive or any team sites in your organization.  <br/> |
    
-## Step 1: Create an Office 365 account for the employee
+## Step 1: Create a Microsoft 365 account for the employee
 
 
 For instructions, see [Add users individually or in bulk to Office 365 - Admin Help](add-users.md). When you set up your new employee, you can choose to send log-in details to the employee's personal account. This way, they'll receive an email from Microsoft Online Service Team that tells them how to log in to Office 365.
@@ -83,8 +83,8 @@ And here's a quick reference to help get them started:
 ## Related articles
 
 
-[Remove a former employee from Office 365](remove-former-employee.md)
+[Remove a former employee from Microsoft 365](remove-former-employee.md)
   
-[Add users individually or in bulk to Office 365](add-users.md)
+[Add users individually or in bulk to Microsoft 365](add-users.md)
   
 

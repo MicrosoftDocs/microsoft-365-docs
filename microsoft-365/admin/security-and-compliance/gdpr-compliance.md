@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
-description: "Learn how Microsoft 365 Business can help you with the General Data Protection Regulation (GDPR) process."
+description: "Learn how Microsoft 365 for business can help you with the General Data Protection Regulation (GDPR) process."
 ---
 
 # GDPR simplified: A guide for your small business
 
- *Using Microsoft 365 Business to mitigate and manage GDPR compliance* 
+ *Using Microsoft 365 for business to mitigate and manage GDPR compliance* 
   
 The General Data Protection Regulation (GDPR) is a European Union (EU) regulation that mandates how an organization should handle personal data. The GDPR is due to come into force on May 25, 2018. If your business sells to, provides services to, or employs citizens of the European Union, then the [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) will affect you. 
   
-This article helps you understand what the GDPR is, why it came about, and how Microsoft 365 Business can help your organization comply with the GDPR.
+This article helps you understand what the GDPR is, why it came about, and how Microsoft 365 for business can help your organization comply with the GDPR.
   
 ## A quick overview of the GDPR
 
@@ -36,7 +36,7 @@ The GDPR is all about data and how it's used. Think of data as having a life cyc
   
 The GDPR is concerned with the following types of data: 
   
-- **Personal data:** If you can link data to an individual and identify them, then that data is considered personal with respect to the GDPR. Examples of personal data include name, address, date of birth, and IP address. The GDPR considers even encoded information (also known as “pseudonymous” information) to be personal data, regardless of how obscure or technical the data is, if the data can be linked to an individual.
+- **Personal data:** If you can link data to an individual and identify them, then that data is considered personal with respect to the GDPR. Examples of personal data include name, address, date of birth, and IP address. The GDPR considers even encoded information (also known as "pseudonymous" information) to be personal data, regardless of how obscure or technical the data is, if the data can be linked to an individual.
     
 - **Sensitive personal data** This is data that adds more details to personal data. Examples include religion, trade union membership, ethnic origin, and so on. Sensitive personal data also includes biometric data and DNA. Under GDPR, sensitive data has more stringent protection rules than personal data. 
     
@@ -82,7 +82,7 @@ You should also make sure that personal data that you collect is protected. This
 
 The first question to ask yourself is: Do you collect personal data anywhere on your site? For example, you might have a contact form that asks for a name and email address. If you want to send marketing emails, make sure you add an 'opt-in' checkbox that explains exactly what you will use the data for. Only if the recipient checks that box can you use their personal data for marketing purposes.
   
-Also, check that the database that stores the data is protected. Your web hosting company or cloud storage vendor will be able to advise on this. If you use Microsoft 365 Business, storage of data is GDPR-compliant. 
+Also, check that the database that stores the data is protected. Your web hosting company or cloud storage vendor will be able to advise on this. If you use Microsoft 365 for business, storage of data is GDPR-compliant. 
   
 ### My company is outside Europe. Does the GDPR really affect us?
 
@@ -96,7 +96,7 @@ Consider the following examples:
     
 - An international charity collects data about donors and uses it to send out updates and requests for donations. The GDPR states: '...the processing of personal data for direct marketing purposes may be regarded as carried out for a legitimate interest." However, the responsibility is on the organization to prove their interests override those of the data subject. The company (or in this case, the charitable organization) should always get informed, explicit, opt-in consent.
     
-The GDPR also applies if customer data moves across borders. If you use cloud computing for data storage, you will need to make sure the service is fully GDPR-compliant. It can get complicated if data storage is in locations that have a poor record of data protection. If you use Microsoft 365 Business, we have the correct legal documentation in place to cover GDPR requirements.
+The GDPR also applies if customer data moves across borders. If you use cloud computing for data storage, you will need to make sure the service is fully GDPR-compliant. It can get complicated if data storage is in locations that have a poor record of data protection. If you use Microsoft 365 for business, we have the correct legal documentation in place to cover GDPR requirements.
   
 ### Sure, I collect data, but some other company stores it. Does that get me off the hook?
 
@@ -104,9 +104,9 @@ Under the GDPR, if you collect data you are affected to some extent. The GDPR ha
   
 - **Data Controller:** An individual or organization (you can have joint controllers) that decides how, what, and why data is collected. They may store it using another company's cloud servers. For example, a website that collects customer data is a controller. 
     
-- **Data Processor:** An individual or organization that stores data on behalf of the controller(s) and processes these data upon request. For example, Office 365 Business data storage acts as a processor and is fully GDPR compliant. 
+- **Data Processor:** An individual or organization that stores data on behalf of the controller(s) and processes these data upon request. For example, Microsoft 365 Apps for business data storage acts as a processor and is fully GDPR compliant. 
     
-    An organization or system can act as both a controller and a processor. Microsoft 365 Business can act as both and complies with the GDPR.
+    An organization or system can act as both a controller and a processor. Microsoft 365 for business can act as both and complies with the GDPR.
     
 ### Can I still send out marketing emails to my old customers?
 
@@ -118,25 +118,25 @@ The GDPR doesn't just affect customer data; it extends to employee data, too. Ne
   
 As for existing employees and new employee contracts, a signature at the end of a contract does not necessarily assume consent, especially when a non-affirmative clause is used in a contract. In this case, you must capture consent in an explicit manner associated with the clause. What this means depends on your employee contract, but you can use "legitimate interest" in some cases and add an employee data processing notice to make sure your employees are aware of what you will do with their data.
   
-## Satisfy privacy concerns using Microsoft 365 Business
+## Satisfy privacy concerns using Microsoft 365 for business
 
 Becoming compliant with the GDPR is about making sure that personal data is protected. The GDPR has a concept known as Privacy by Design and Default. This means that data protection should be "baked in" to a system and a product so that satisfying privacy concerns is second nature. 
   
-Like their larger counterparts, a small business needs convenience without sacrificing security. Microsoft 365 Business is designed for companies of fewer than 300 employees. Small companies can use Microsoft cloud-based tools to improve business productivity. With Microsoft 365 Business, a small business can manage emails, documentation, and even meetings and events. It also has built-in security measures and device management, which are vital for GDPR compliance.
+Like their larger counterparts, a small business needs convenience without sacrificing security. Microsoft 365 for business is designed for companies of fewer than 300 employees. Small companies can use Microsoft cloud-based tools to improve business productivity. With Microsoft 365 for business, a small business can manage emails, documentation, and even meetings and events. It also has built-in security measures and device management, which are vital for GDPR compliance.
   
-Microsoft 365 Business can help you with the GDPR process in the following ways:
+Microsoft 365 for business can help you with the GDPR process in the following ways:
   
 - **Discover:** An important step to GDPR compliance is knowing what data you have. 
     
-- **Manage:** Controlling access to data and managing its use is an integral part of GDPR. Microsoft 365 Business protects business data based on policies you want to apply to devices. Device management is vital in an age where employees work remotely. Microsoft 365 Business includes device management features that makes sure data is protected across all devices. For example, you can specify that all Windows 10 devices in your business are protected via Windows Defender. 
+- **Manage:** Controlling access to data and managing its use is an integral part of GDPR. Microsoft 365 for business protects business data based on policies you want to apply to devices. Device management is vital in an age where employees work remotely. Microsoft 365 for business includes device management features that makes sure data is protected across all devices. For example, you can specify that all Windows 10 devices in your business are protected via Windows Defender. 
     
-- **Protect:** Microsoft 365 Business is designed for security. Its device management and data protection controls work across your business network, including remote devices, to help keep data secure. Microsoft 365 Business offers controls such as privacy settings in Office applications and encryption of documents. With Microsoft 365 Business, you can perform GDPR compliance monitoring to make sure you have the right level of protection set. 
+- **Protect:** Microsoft 365 for business is designed for security. Its device management and data protection controls work across your business network, including remote devices, to help keep data secure. Microsoft 365 for business offers controls such as privacy settings in Office applications and encryption of documents. With Microsoft 365 for business, you can perform GDPR compliance monitoring to make sure you have the right level of protection set. 
     
-- **Report:** The GDPR places a lot of emphasis on reporting. Even a business with a single employee, if that business processes large amounts of data, is required to document and report on their procedures. Microsoft 365 Business takes the headache out of reporting requirements for smaller organizations. 
+- **Report:** The GDPR places a lot of emphasis on reporting. Even a business with a single employee, if that business processes large amounts of data, is required to document and report on their procedures. Microsoft 365 for business takes the headache out of reporting requirements for smaller organizations. 
     
     Tools such as audit logs allow you to track and report on data movement. Reports include classifying the data you collect and store, what you do with the data, and transfers of the data. 
     
-Customers, employees, and clients are becoming more aware of the importance of data privacy and now expect a company or organization to respect that privacy. Microsoft 365 Business provides you with the tools to achieve and maintain GDPR compliance without a massive upheaval to your business.
+Customers, employees, and clients are becoming more aware of the importance of data privacy and now expect a company or organization to respect that privacy. Microsoft 365 for business provides you with the tools to achieve and maintain GDPR compliance without a massive upheaval to your business.
   
 ## Next steps
 
@@ -144,7 +144,7 @@ To get ready for the GDPR, here are some suggestions for next steps to take:
   
 - Evaluate your GDPR program with [Accountability Readiness Checklists](https://docs.microsoft.com/microsoft-365/compliance/gdpr-arc).
     
-- Investigate [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business) as a solution for achieving and maintaining compliance with GDPR. 
+- Investigate [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business) as a solution for achieving and maintaining compliance with GDPR. 
    
 
 > [!IMPORTANT]

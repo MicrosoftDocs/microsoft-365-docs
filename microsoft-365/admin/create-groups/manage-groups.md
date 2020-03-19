@@ -1,5 +1,5 @@
 ---
-title: "Manage Office 365 group in the admin center"
+title: "Manage a group in the admin center"
 ms.reviewer: arvaradh
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: "Learn to manage Office 365 groups, including adding remove group members, editing the email address, group name, or description, and customizing how the group works."
 ---
 
-# Manage an Office 365 group in the Microsoft 365 admin center
+# Manage a group in the Microsoft 365 admin center
 
 After you have [created an Office 365 group](create-groups.md) and added group members, you can configure your group. You can edit the group name or description, manage owners or members, and specify whether external senders can email the group and whether to send copies of group conversations to members. 
 

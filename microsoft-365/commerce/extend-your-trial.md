@@ -1,5 +1,5 @@
 ---
-title: "Extend your trial for Office 365 for business"
+title: "Extend your trial"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
-description: "Learn how to extend your trial subscription for another 30day period."
+description: "Learn how to extend your trial subscription for another 30-day period."
 ---
 
-# Extend your trial for Office 365 for business
+# Extend your trial
 
-Do you need more time to try out the features of Office 365 for business before buying? If your trial subscription is within 15 days of expiring and the trial hasn't been extended before then you can extend your trial for another 30 day period. You can only do this one time.
+Do you need more time to try out the features of Microsoft 365 for business before buying? If your trial subscription is within 15 days of expiring and the trial hasn't been extended before then you can extend your trial for another 30 day period. You can only do this one time.
 
 ::: moniker range="o365-worldwide"
 
@@ -63,4 +63,4 @@ Do you need more time to try out the features of Office 365 for business before 
 ::: moniker-end
 
 
-When you're ready to buy, see [Buy your trial version of Office 365 for business](buy-a-subscription-from-your-free-trial.md).
+When you're ready to buy, see [Buy your trial version of Microsoft 365 for business](buy-a-subscription-from-your-free-trial.md).

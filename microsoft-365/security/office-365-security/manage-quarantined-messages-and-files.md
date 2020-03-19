@@ -1,5 +1,5 @@
 ---
-title: "Manage quarantined messages and files as an administrator in Office 365"
+title: "Manage quarantined messages and files as an administrator"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -20,7 +20,7 @@ ms.collection:
 description: "As an admin, you can view, release, and report false positive quarantined messages in Office 365. You can set up policies so that Office 365 filters messages and sends them to quarantine for several reasons: Because they were identified as spam, bulk, phishing, malware, or because they matched a mail flow rule. "
 ---
 
-# Manage quarantined messages and files as an administrator in Office 365
+# Manage quarantined messages and files as an administrator
 
 As an admin, you can view, release, and delete quarantined messages, and report false positive quarantined messages in Office 365. You can also view, download, and delete quarantined files captured by Advance Threat Protection (ATP) for SharePoint Online, OneDrive for Business, and Microsoft Teams. You can set up policies so that Office 365 filters messages and sends them to quarantine for several reasons: Because they were identified as spam, bulk mail, phishing mail, containing malware, or because they matched a mail flow rule.
 
@@ -42,7 +42,7 @@ The Security & Compliance role groups that give permissions to manage quarantine
 
 ## View your organization's quarantined messages
 
-1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your Office 365 organization, sign into Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign into Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
 2. In the list on the left, expand **Threat Management**, choose **Review**, and then choose **Quarantine**.
 
@@ -71,7 +71,7 @@ After you find a specific quarantined message, click the message to view details
 
 ## View your organization's quarantined files
 
-1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your Office 365 organization, sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
 2. On the left, expand **Threat Management**, choose **Review**, and then choose **Quarantine**.
 
@@ -203,7 +203,7 @@ You can configure how long messages and files will remain in quarantine before t
 
 ### To modify the quarantine retention period for the default spam filter policy in the Security and Compliance Center
 
-1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your Office 365 organization, sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
 2. On the left, expand **Threat Management**, choose **Policy**, and then choose **Anti-spam**.
 

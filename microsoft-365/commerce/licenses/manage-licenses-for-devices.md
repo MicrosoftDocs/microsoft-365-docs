@@ -17,7 +17,7 @@ ms.collection:
 description: "Learn how to assign licenses to groups for use with devices."
 ms.custom: okr_SMB
 search.appverid:
-- MET150
+- MET150let-users-reset-passwords.md
 ---
 # Manage licenses for devices
 

@@ -1,5 +1,5 @@
 ---
-title: "Increase threat protection for Microsoft 365 Business"
+title: "Increase threat protection for Microsoft 365 for Business"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -26,7 +26,7 @@ description: "Set up Office 365 Advanced Threat Protection and safeguard sensiti
 
 This article helps you increase the protection in your Microsoft 365 subscription to protect against phishing, malware, and other threats. These recommendations are appropriate for organizations with an increased need for security, like law offices and health care clinics.
 
-Before you begin, check your Office 365 Secure Score. Office 365 Secure Score analyzes your Office 365 organization's security based on your regular activities and security settings, and assigns a score. Begin by taking note of your current score. To increase your score, complete the actions recommended in this article. The goal isn't to achieve the maximum score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users. 
+Before you begin, check your Office 365 Secure Score. Office 365 Secure Score analyzes your organization's security based on your regular activities and security settings, and assigns a score. Begin by taking note of your current score. To increase your score, complete the actions recommended in this article. The goal isn't to achieve the maximum score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users. 
 
 For more information, see [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
@@ -177,8 +177,6 @@ To create an ATP safe attachment policy, either watch [this short video](https:/
    
 For more information, see [Set up Office 365 ATP anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
-
-
 ## Protect against phishing attacks with ATP Safe Links
 
 Hackers sometimes hide malicious websites in links in email or other files. Office 365 ATP Safe Links (ATP Safe Links), part of Office 365 Advanced Threat Protection, can help protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents. Protection is defined through ATP Safe Links policies.
@@ -201,7 +199,7 @@ To modify the default policy:
   
 1. On the Safe links page, under **Policies that apply to the entire organization**, select the **Default** policy. 
     
-2. Under **Settings that apply to content except email**, select **Office 365 ProPlus, Office for iOS and Android**.
+2. Under **Settings that apply to content except email**, select **Microsoft 365 Apps for enterprise, Office for iOS and Android**.
     
 3. Select **Save**. 
     

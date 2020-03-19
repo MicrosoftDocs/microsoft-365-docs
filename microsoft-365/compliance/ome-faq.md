@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Message Encryption FAQ"
+title: "Message Encryption FAQ"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,7 +16,7 @@ ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: "Have a question about how the new message protection capabilities in Office 365 work? Check for an answer here."
 ---
 
-# Office 365 Message Encryption FAQ
+# Message Encryption FAQ
 
 Have a question about how the new message protection capabilities in Office 365 work? Check for an answer here. Also, take a look at [Frequently asked questions about data protection in Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/faqs-rms) for answers to questions about the data protection service, Azure Rights Management, in Azure Information Protection.
 
@@ -69,7 +69,7 @@ The new capabilities for Office 365 Message Encryption are an evolution of the e
 |**Sending an encrypted email**|Only through Exchange mail flow rules|End-user initiated from Outlook for Windows, Outlook for Mac, or Outlook on the web; or through Exchange mail flow rules|End-user initiated from Outlook for Windows, Outlook for Mac, or Outlook on the web; or through mail flow rules|
 |**Rights management**|-|Do Not Forward option and custom templates|Do Not Forward option, encrypt-only option, default and custom templates|
 |**Supported recipient type**|External recipients only|Internal recipients only|Internal and external recipients|
-|**Experience for recipient**|External recipients received an HTML message that they downloaded and opened in a browser or downloaded mobile app.|Internal recipients only received encrypted email in Outlook for Windows, Outlook for Mac, and Outlook on the web.|Internal and external recipients receive email in Outlook for Windows, Outlook for Mac, Outlook on the web, Outlook for Android, and Outlook for iOS, or through a web portal, regardless of whether or not they are in the same Office 365 organization or in any Office 365 organization. The OME portal requires no separate download.|
+|**Experience for recipient**|External recipients received an HTML message that they downloaded and opened in a browser or downloaded mobile app.|Internal recipients only received encrypted email in Outlook for Windows, Outlook for Mac, and Outlook on the web.|Internal and external recipients receive email in Outlook for Windows, Outlook for Mac, Outlook on the web, Outlook for Android, and Outlook for iOS, or through a web portal, regardless of whether or not they are in the same organization or in any organization. The OME portal requires no separate download.|
 |**Bring Your Own Key support**|Not available|Not available| BYOK supported|
 
 ## How do I enable the new OME capabilities for my organization?
@@ -104,7 +104,7 @@ If a file format is supported, such as a Word, Excel, or PowerPoint file, the fi
   
 ## Are PDF file attachments supported?
 
-Yes! You can enable encryption for PDF attachments for your Office 365 organizations. To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+Yes! You can enable encryption for PDF attachments for your organizations. To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true

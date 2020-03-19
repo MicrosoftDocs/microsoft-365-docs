@@ -1,5 +1,5 @@
 ---
-title: "Use user spam notifications to release and report quarantined messages in Office 365"
+title: "Use user spam notifications to release and report quarantined messages"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -20,7 +20,7 @@ ms.collection:
 description: "If your admin enables the notifications for users, you'll receive a notification message that lists messages sent to your mailbox that were identified as spam, bulk, or phishing messages. You can release or report messages after being notified."
 ---
 
-# Use user spam notifications to release and report quarantined messages in Office 365
+# Use user spam notifications to release and report quarantined messages
 
 If your admin enables spam notifications for users, you'll receive a notification message that lists messages addressed to your mailbox that were identified as spam, bulk, or phish and quarantined instead.
 

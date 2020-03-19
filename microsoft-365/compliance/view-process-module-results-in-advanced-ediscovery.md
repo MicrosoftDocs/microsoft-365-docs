@@ -1,5 +1,5 @@
 ---
-title: "View Process module results in Office 365 Advanced eDiscovery"
+title: "View Process module results in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: "Learn about how to find the results of a Process Module run in Office 365 Advanced eDiscovery, including task status and process summary. 
+description: "Learn about how to find the results of a Process Module run in Advanced eDiscovery, including task status and process summary. 
 "
 ---
 

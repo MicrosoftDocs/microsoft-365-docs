@@ -1,5 +1,5 @@
----
-title: "Top billing questions for Office 365 for business"
+0-00--
+title: "Top billing questions for Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,10 +24,10 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
-description: "Find answers to your top billing questions for your business subscription."
+description: "Find answers to your top billing questions for Microsoft 365 for business subscription. "
 ---
 
-# Top billing questions for business subscriptions
+# Top billing questions for Microsoft 365 for business
 
 Have questions about your billing statement? Here are the answers to the top billing questions.
   
@@ -75,7 +75,7 @@ For more contact phone numbers by country or region, [Contact support for busine
 
 ::: moniker range="o365-21vianet"
 
-For questions about Office 365 operated by 21Vianet, [Contact support for business products](../../admin/contact-support-for-business-products.md).
+For questions about Microsoft 365 operated by 21Vianet, [Contact support for business products](../../admin/contact-support-for-business-products.md).
   
 ::: moniker-end
 
@@ -158,7 +158,7 @@ See [View your bill or invoice](view-your-bill-or-invoice.md).
 
 ::: moniker range="o365-21vianet"
 
-See [View your bill or get Fapiaos in Office 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
+See [View your bill or get Fapiaos in Microsoft 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
 
@@ -218,7 +218,7 @@ To learn more, see [View your bill or invoice](view-your-bill-or-invoice.md).
   
 2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
 
-To learn more, see [View your bill or get Fapiaos in Office 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
+To learn more, see [View your bill or get Fapiaos in Microsoft 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
 

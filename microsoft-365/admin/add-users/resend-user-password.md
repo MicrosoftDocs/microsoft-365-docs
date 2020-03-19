@@ -1,5 +1,5 @@
 ---
-title: "Resend a user's password in Office 365 - Admin Help"
+title: "Resend a user's password - Admin Help"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: "Learn how to reset password and send a notification email to a new Office 365 user. "
+description: "Learn how to reset password and send a notification email to a new Microsoft 365 user. "
 ---
 
-# Resend a user's password in Office 365 - Admin Help
+# Resend a user's password - Admin Help
 
-This article explains how to resend the notification email to a new user in Office 365. You do this by resetting the user's password.
+This article explains how to resend the notification email to a new user in Microsoft 365. You do this by resetting the user's password.
   
 You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps. 
   

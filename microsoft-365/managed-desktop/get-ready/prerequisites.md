@@ -44,7 +44,7 @@ Microsoft Managed Desktop requires certain license options in order to function.
 |Microsoft Intune | - Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Security Add-on<br>- Enterprise Mobility + Security E5<br>- Enterprise Mobility + Security E3<br>- Microsoft Intune  |  Necessary to register devices, deploy updates, and manage devices       |
 |Windows 10 Enterprise  |- Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Security Add-on<br>- Windows 10 Enterprise E3<br>- Windows 10 Enterprise E5 | Provides enterprise features of Windows 10       |
 |Microsoft Defender Advanced Threat Protection | - Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Security Add-on<br>- Windows 10 Enterprise E5<br>- Microsoft Defender Advanced Threat Protection   |  Provides detection, monitoring, alerting and response to threats  |
-|Office 365 ProPlus  |- Microsoft 365 E5<br>- Microsoft 365 E3<br>- Office 365 E5<br>- Office 365 E3| Activates Office and productivity and collaboration tools    |
+|Microsoft 365 Apps for enterprise  |- Microsoft 365 E5<br>- Microsoft 365 E3<br>- Office 365 E5<br>- Office 365 E3| Activates Office and productivity and collaboration tools    |
 
 > [!TIP]
 > Your Microsoft Account Manager will help you review your current licenses and service plans and find the most efficient path for you to get any additional licenses or service plans you might need, while avoiding duplication.

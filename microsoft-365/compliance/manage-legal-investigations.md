@@ -1,5 +1,5 @@
 ---
-title: "Manage legal investigations in Office 365"
+title: "Manage legal investigations"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,7 +17,7 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: "Use eDiscovery cases in the Security & Compliance Center in Office 365 to manage your organization's legal investigation. If you have an E5 subscription, you can further analyze case data by using the text analytics, machine learning, and predictive coding capabilities of Advanced eDiscovery."
 ---
 
-# Manage legal investigations in Office 365
+# Manage legal investigations
 
 Organizations have many reasons to respond to a legal case involving certain executives or other employees in your organization. This might involve quickly finding and retaining for further investigation-specific information in email, documents, instant messaging conversations, and other content locations used by people in their day-to-day work tasks. You can perform these and many other similar activities by using the eDiscovery case tools in the security and compliance center.
   

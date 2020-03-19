@@ -1,5 +1,5 @@
 ---
-title: "Automated investigation and response (AIR) in Office 365"
+title: "Automated investigation and response (AIR)"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -17,7 +17,7 @@ description: "Get an overview of automated investigation and response capabiliti
 ms.custom: air
 ---
 
-# Automated investigation and response (AIR) in Office 365
+# Automated investigation and response (AIR)
 
 As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Sometimes, security operations teams can feel overwhelmed by the volume of alerts that are triggered. Automated investigation and response (AIR) capabilities in Office 365 can help. AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond to detected threats. 
 

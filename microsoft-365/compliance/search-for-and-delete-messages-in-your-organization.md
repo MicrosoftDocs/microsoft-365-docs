@@ -1,5 +1,5 @@
 ---
-title: "Search for and delete email messages in your Office 365 organization"
+title: "Search for and delete email messages in your organization"
 f1.keywords:
 - NOCSH
 ms.author: markjjo

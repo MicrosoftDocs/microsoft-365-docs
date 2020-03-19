@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Advanced Message Encryption"
+title: "Advanced Message Encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -18,7 +18,7 @@ search.appverid:
 description: "Advanced Message Encryption in Office 365 helps organizations meet their compliance obligations by enabling admins to do even more with protected messages."
 ---
 
-# Office 365 Advanced Message Encryption
+# Advanced Message Encryption
 
 Office 365 Advanced Message Encryption is included in [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (Nonprofit Staff Pricing), Office 365 Enterprise E5 (Nonprofit Staff Pricing), and Office 365 Education A5. If your organization has a subscription that does not include Office 365 Advanced Message Encryption, you can purchase it with the Microsoft 365 E5 Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or the Office 365 Advanced Compliance SKU add-on for Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), or Office 365 SKUs.
 

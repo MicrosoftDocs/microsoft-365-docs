@@ -1,5 +1,5 @@
 ---
-title: "Overview of unlimited archiving in Office 365"
+title: "Overview of unlimited archiving"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,7 +19,7 @@ ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: "Learn about auto-expanding archiving in Office 365, which provides unlimited archive storage for Exchange Online mailboxes."
 ---
 
-# Overview of unlimited archiving in Office 365
+# Overview of unlimited archiving
 
 In Office 365, archive mailboxes provide users with additional mailbox storage space. After a user's archive mailbox is enabled, up to 100 GB of additional storage is available. In the past, when the 100-GB storage quota was reached, organizations had to contact Microsoft to request additional storage space for an archive mailbox. That's no longer the case.
 
