@@ -325,7 +325,7 @@ However, as an administrator, you can specify which senders are permitted to sen
 
 This method can be used to resolve intra-org spoofing, and cross-domain spoofing in cases where you own or interact with multiple tenants. It also helps resolve cross-domain spoofing where you send to other customers within Office 365, and also third parties that are hosted in other providers.
 
-For more details, see [Customers of Microsoft 365 for business](#customers-of-microsoft-365).
+For more details, see [Customers of Microsoft 365 for business](#customers-of-microsoft-365-for-business).
 
 #### Method 2 - Use Spoof intelligence to configure permitted senders of unauthenticated email
 
