@@ -38,4 +38,4 @@ To prevent this message from being filtered, you can:
 
 - **As a user**: Add the `RFC 5322.From` address as a Safe Sender in Outlook.
 
-- **As an admin**: Set up a [mail flow rule](anti-spam-protection.md#beyond-the-basics-more-ways-to-prevent-spam) (also known as a transport rule).
+- **As an admin**: Set up a mail flow rule (also known as a transport rule).

@@ -42,19 +42,9 @@ In order to protect you from getting too much spam, Exchange Online Protection (
 
 - **Point your DNS records to Office 365**: In order for EOP to provide the best protection, your mail exchanger (MX) DNS record(s) for all domains must be pointed to Office 365 -- and only to Office 365. See [Create DNS records for Office 365 when you manage your DNS records](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23).
 
-- **Enable the junk mail rule on all mailboxes** By default, the spam filtering action is set to **Move message to Junk Email folder**. If this is the preferred and current spam policy action, then each mailbox [must also have the junk mail rule enabled](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). To check, you can run the **Get-MailboxJunkEmailConfiguration** cmdlet on one or more mailboxes. For example, you might check all mailboxes by running the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+- **Verify the junk email rule is enabled in Exchange Online mailboxes**: The default actions for **Spam**, **High confidence spam** and **Bulk email** spam filtering verdicts in anti-spam policies is **Move message to Junk Email folder**. The messages are delivered to the mailbox, but they're only moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-  ```powershell
-  Get-MailboxJunkEmailConfiguration -Identity * | Where {$_.Enabled -eq $false}
-  ```
-
-  When viewing the output, the **Enabled** property value should be `True`. If it's `False`, you can run the following command to change it:
-
-  ```powershell
-  Set-MailboxJunkEmailConfiguration -Identity $values.UserPrincipalName -Enabled $true
-  ```
-
-- **Create mail flow rules in on-premises Exchange Server**: If you are using Exchange Online Protection, but your mailboxes are located in on-premises Exchange Server, then you will need to create a couple of mail flow rules in on-premises Exchange Server. See the [instructions for EOP-only](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj900470(v=exchg.150)).
+- **Standalone EOP: create mail flow rules in on-premises Exchange for EOP spam filtering verdicts**: In standalone EOP environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
 - **Mark bulk email as spam**: Bulk email is email which users may have signed up for, but may still be undesirable. In the message header, find the BCL (Bulk Confidence Level) property in the X-Microsoft-Antispam header. If the BCL value is less than the threshold set in the spam filter, you may want to adjust the threshold to instead mark these types of bulk messages as spam. Different users have different tolerances and preferences for [how bulk email](https://docs.microsoft.com/office365/SecurityCompliance/bulk-complaint-level-values) is handled. You can create different policies or rules for different user preferences.
 
