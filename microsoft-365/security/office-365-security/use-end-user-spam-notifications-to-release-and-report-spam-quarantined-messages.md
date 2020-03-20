@@ -35,4 +35,4 @@ You can perform the following actions on each message:
 - **Report as Not Junk**: Clicking this link sends a copy of the message to Microsoft for analysis. The spam team evaluates and analyzes the message, and, depending on the results of the analysis, adjusts the anti-spam filter rules to allow the message through.
 
 > [!NOTE]
-> Messages that are quarantined due to a mail flow rule (also known as a ) match are not included in end user spam quarantined messages. Only spam-quarantined messages are listed. <br/><br/>  You can only release a message and report it as a false positive (not junk) once.
+> Messages that are quarantined due to a mail flow rule (also known as a transport rule) match are not included in end user spam quarantined messages. Only spam-quarantined messages are listed. <br/><br/>  You can only release a message and report it as a false positive (not junk) once.
