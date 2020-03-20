@@ -274,7 +274,7 @@ If you'd like to change the severity level assigned in an alert policy for a spe
 In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This information may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
 
 >[!Important]
->Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](communication-compliance-configure#step-2-required-enable-the-office-365-audit-log).
+>Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log).
 
 To view communication compliance policy activities, select the **Export review activities** control on the main page for any policy. This action generates an audit file in the .csv format that contains the following information:
 
