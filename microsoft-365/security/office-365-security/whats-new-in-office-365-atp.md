@@ -41,7 +41,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 - The **Incidents** widget is now the **Action Center** widget. (To view your security widgets, in the Office 365 Security & Compliance Center, go to **Threat management** > **Review**.)
 
-- [Safe Documents in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(preview)**
+- [Safe Documents in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(preview)**
 
 ## December 2019
 
@@ -55,7 +55,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 ## September 2019
 
-- [Employ automated investigation and response capabilities in Office 365](automated-investigation-response-office.md) (Office 365 ATP Plan 2)
+- [Employ automated investigation and response capabilities](automated-investigation-response-office.md) (Office 365 ATP Plan 2)
 
 - [Integrate with Office 365 ATP automated investigation and response events using the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP Plan 2)
 

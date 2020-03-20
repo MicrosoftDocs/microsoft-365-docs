@@ -49,7 +49,7 @@ where  _IP address_ is the IP address of the computer on which the mail server r
 
 5. In the delist portal, click **Delist IP**.
 
-    After the IP address is removed from the blocked senders list, email messages from that IP address will be delivered to recipients who use Office 365. So, make sure you're confident that email sent from that IP address won't be abusive or malicious; otherwise, the IP address might be blocked again.
+    After the IP address is removed from the blocked senders list, email messages from that IP address will be delivered to recipients who use Microsoft 365. So, make sure you're confident that email sent from that IP address won't be abusive or malicious; otherwise, the IP address might be blocked again.
 
     > [!NOTE]
     > It may take up to 24 hours or results can vary widely before restrictions are removed.
