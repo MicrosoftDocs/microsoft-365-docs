@@ -87,7 +87,7 @@ This topic explains how create these mail flow rules in the Exchange admin cente
 
        - `click (here to|the) unsubscribe`
 
-      To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.png).
+      To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).
 
        When you're finished, click **OK**.
 
@@ -119,7 +119,7 @@ This topic explains how create these mail flow rules in the Exchange admin cente
 
        - `You are receiving this email because you are subscribed`
 
-      To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.png).
+      To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).
 
        When you're finished, click **OK**.
 

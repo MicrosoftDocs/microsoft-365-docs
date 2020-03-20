@@ -126,6 +126,8 @@ Safe sender lists and safe domain lists in anti-spam policies in EOP inspect bot
 
 To prevent this message from being filtered, you can take the following steps:
 
-- Add blueyonder@news.blueyonderairlines.com (the `5322.From` address) as an [Outlook Safe Sender](#use-outlook-safe-senders-end-user-managed).
+- Add blueyonder@news.blueyonderairlines.com (the `5322.From` address) as an Outlook Safe Sender.
 
-- [Use a mail flow rule](#recommended-use-mail-flow-rules) with a condition that looks for messages from blueyonder@news.blueyonderairlines.com (the `5322.From` address, blueyonder.airlines@margiestravel.com (the `5321.MailFrom`), or both. For more information, see [Senders in mail flow rule conditions in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions#senders).
+- [Use a mail flow rule](#recommended-use-mail-flow-rules) with a condition that looks for messages from blueyonder@news.blueyonderairlines.com (the `5322.From` address, blueyonder.airlines@margiestravel.com (the `5321.MailFrom`), or both.
+
+For more information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).

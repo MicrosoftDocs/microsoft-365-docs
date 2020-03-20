@@ -34,7 +34,7 @@ The following sections describe the ASF settings and options that are available 
 
 For each ASF setting, the following options are available in anti-spam policies:
 
-- **On**: ASF adds the corresponding X-header field to the message, and either marks the message as **Spam** (SCL 5 or 6 for [Increase spam score settings](increase-spam-score-settings)) or **High confidence spam** (SCL 9 for [Mark as spam settings](#mark-as-spam-settings)).
+- **On**: ASF adds the corresponding X-header field to the message, and either marks the message as **Spam** (SCL 5 or 6 for [Increase spam score settings](#increase-spam-score-settings)) or **High confidence spam** (SCL 9 for [Mark as spam settings](#mark-as-spam-settings)).
 
 - **Off**: The ASF setting is disabled. This is the default value, and we recommend that you don't change it.
 
