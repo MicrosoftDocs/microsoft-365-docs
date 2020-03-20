@@ -1,5 +1,5 @@
 ---
-title: "Remove users from the Restricted Users portal"
+title: "Remove blocked users from the Restricted Users portal"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,7 +20,7 @@ ms.collection:
 description: "Admins can learn how to remove users from the Restricted Users portal in Office 365. Users are added to the Restricted Users portal for sending outbound spam, typically as a result of account compromise."
 ---
 
-# Remove users from the Restricted Users portal in Office 365
+# Remove blocked users from the Restricted Users portal in Office 365
 
 If a user exceeds one of the outbound sending limits as specified in [the service limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or in [outbound spam policies](configure-the-outbound-spam-policy.md), the user is restricted from sending email, but they can still receive email.
 
@@ -34,7 +34,7 @@ Admins can remove users from the Restricted Senders portal in the Security & Com
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>.To go directly to the **Anti-spam settings** page, use <https://protection.office.com/restrictedusers>.
+- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Restricted Users** page, use <https://protection.office.com/restrictedusers>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 

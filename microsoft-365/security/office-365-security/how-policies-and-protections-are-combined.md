@@ -55,8 +55,8 @@ For example, consider the following anti-phishing policies **that apply to the s
   |
 
 1. The message is marked and treated as spoof, because spoofing has a higher priority (4) than user impersonation (8).
-2. Policy A is applied to the users because it has the higher priority value than Priority B.
-3. Based on the settings in Policy A, no action is taken on the message, because anti-spoofing is turned off.
+2. Policy A is applied to the users because it has a higher priority than Priority B.
+3. Based on the settings in Policy A, no action is taken on the message, because anti-spoofing is turned off in the policy.
 4. Anti-spam policy processing stops, so Policy B is never applied to the users.
 
 Because there's a potential to have many users in many custom policies of the same type, consider the following design guidelines for custom policies:

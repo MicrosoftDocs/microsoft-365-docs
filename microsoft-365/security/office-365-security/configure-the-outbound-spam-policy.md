@@ -1,5 +1,5 @@
 ---
-title: "Configure the outbound spam policy"
+title: "Configure outbound spam filtering"
 f1.keywords:
 - NOCSH
 ms.author: chrisda

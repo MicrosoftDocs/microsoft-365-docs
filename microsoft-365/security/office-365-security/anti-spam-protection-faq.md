@@ -1,5 +1,5 @@
 ---
-title: "Anti-spam protection FAQ"
+title: "Anti-spam protection in Office 365 FAQ"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -18,7 +18,7 @@ ms.collection:
 description: "This topic provides frequently asked questions and answers about anti-spam protection. Answers are applicable for Microsoft Exchange Online and Exchange Online Protection (EOP) customers."
 ---
 
-# Anti-spam protection FAQ
+# Anti-spam protection in Office 365 FAQ
 
 This topic provides frequently asked questions and answers about anti-spam protection for Office 365 customers with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) customers without Exchange Online mailboxes.
 
