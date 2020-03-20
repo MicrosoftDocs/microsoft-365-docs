@@ -20,18 +20,18 @@ description: "This introductory document will help you understand Exchange Onlin
 
 # What is Exchange Online Protection (EOP)
 
-Exchange Online Protection (EOP) is a cloud-based email filtering service that helps protect your organization against spam and malware. If you have mailboxes in Office 365, they are automatically protected by EOP since it is part of the service. This includes organizations that have mailboxes in both Office 365 and on-premise, which is commonly known as a hybrid scenario. EOP standalone is also available for customers who do not have mailboxes in the cloud but want to protect their on-premises mailboxes.
+Exchange Online Protection (EOP) is a cloud-based email filtering service that helps protect your organization against spam and malware. If you have mailboxes in Microsoft 365, they are automatically protected by EOP since it is part of the service. This includes organizations that have mailboxes in both Microsoft 365 and on-premise, which is commonly known as a hybrid scenario. EOP standalone is also available for customers who do not have mailboxes in the cloud but want to protect their on-premises mailboxes.
 
 EOP attempts to filter out junk, keeping your Inbox clear of content that users don't want to see. Normally, junk mail is delivered to the Junk Email folder. Some users like to check to make sure the filtering is doing what they want so the Junk Email folder is an easy way for users to check on their own.  
 
 > [!TIP]
-> It is a good thing when junk or otherwise bad email goes into the Junk Email folder automatically. The service will do what is necessary based on what the default or the custom admin settings state. In other words, users should not worry about seeing a lot of spam mail in the Junk Email folder. If admins prefer to move all junk out of sight, then the Quarantine should be configured. For more details, see the [Quarantine email messages in Office 365](quarantine-email-messages.md) article.
+> It is a good thing when junk or otherwise bad email goes into the Junk Email folder automatically. The service will do what is necessary based on what the default or the custom admin settings state. In other words, users should not worry about seeing a lot of spam mail in the Junk Email folder. If admins prefer to move all junk out of sight, then the Quarantine should be configured. For more details, see the [Quarantine email messages](quarantine-email-messages.md) article.
 
 ## Important terms
 
-**Inbound**: Messages that are coming into Office 365.
+**Inbound**: Messages that are coming into Microsoft 365.
 
-**Outbound**: Messages that are going out of Office 365.
+**Outbound**: Messages that are going out of Microsoft 365.
 
 **Internal**: Messages that are from someone inside the organization to someone inside the organization. This includes customers who are in hybrid scenarios and one mailbox could be on-premises and the other mailbox is in the cloud.
 

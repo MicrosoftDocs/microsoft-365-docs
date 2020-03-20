@@ -21,7 +21,7 @@ description: "Learn how to find and use email security reports for your organiza
 
 # View email security reports in the Security &amp; Compliance Center
 
-A variety of reports are available in the [Security &amp; Compliance Center](https://protection.office.com) to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Office 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Security &amp; Compliance Center by going to **Reports** \> **Dashboard**.
+A variety of reports are available in the [Security &amp; Compliance Center](https://protection.office.com) to help you see how email security features, such as anti-spam, anti-malware, and encryption features are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Security &amp; Compliance Center by going to **Reports** \> **Dashboard**.
   
 ![Dashboard where you see how Advanced Threat Protection is working](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
@@ -42,7 +42,7 @@ Your email security reports include the following:
 
 This report, available to anyone with Exchange Online Protection, shows the number of user accounts marked as Suspicious or Restricted users, data particularly useful as accounts enter either of the states that indicate the user account may be problematic, or even compromised. With frequent use, the Compromised User report can spot spikes, and even trends, in accounts marked in suspicious or restricted states, giving evidence there could be an issue with security and the wellness of your tenant.
 
-![The compromised users report as it appears in Office 365.](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![The compromised users report](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
 ## Encryption report
 
@@ -64,9 +64,9 @@ And, you can use the **View data by** menu to change the view to see counts of e
 
 ![Encryption report view data by menu](../../media/encryptionreport-viewdataby.png)
 
-With the flexibility of the new Encryption report, you can view trends and take appropriate actions. For example, if you see a high number of email messages encrypted by users, you might want to add an encryption policy to automate encryption for certain use cases. (To get help with that, see [Define mail flow rules to encrypt email messages in Office 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).) As another example, if you have a number of encryption templates available but no one is using them, you might explore whether users need training for that feature. 
+With the flexibility of the new Encryption report, you can view trends and take appropriate actions. For example, if you see a high number of email messages encrypted by users, you might want to add an encryption policy to automate encryption for certain use cases. (To get help with that, see [Define mail flow rules to encrypt email messages in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).) As another example, if you have a number of encryption templates available but no one is using them, you might explore whether users need training for that feature. 
 
-Use this report enables your organization's security and compliance team to monitor how message encryption is being used, and whether further actions are needed. To learn more about encryption, see [Email encryption in Office 365](../../compliance/email-encryption.md).
+Use this report enables your organization's security and compliance team to monitor how message encryption is being used, and whether further actions are needed. To learn more about encryption, see [Email encryption in Microsoft 365](../../compliance/email-encryption.md).
 
 ## Threat Protection Status report
 
@@ -181,7 +181,7 @@ Below the chart, you'll see a list of email categories, such as **GoodMail**, **
   
 ![This report tells you about anti-malware, anti-spam, and other message detections](../../media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
 
-To learn more about email intelligence, see [Mail flow intelligence in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365).
+To learn more about email intelligence, see [Mail flow intelligence in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365).
   
 ## User-reported messages report
 
@@ -200,7 +200,7 @@ To view this report, in the [Security &amp; Compliance Center](https://protectio
 ![In the Security &amp; Compliance Center, choose Threat management \> Review \> User reported messages](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
   
 > [!IMPORTANT]
-> In order for the User-reported messages report to work correctly, **audit logging must be turned on** for your Office 365 environment. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). 
+> In order for the User-reported messages report to work correctly, **audit logging must be turned on** for your Microsoft 365 environment. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). 
   
 ## What permissions are needed to view these reports?
 
@@ -226,7 +226,7 @@ To learn more, see the following resources:
    
 ## What if the reports aren't showing data?
 
-If you are not seeing data in your reports, double-check that your policies are set up correctly. To learn more, see [Protect against threats in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
+If you are not seeing data in your reports, double-check that your policies are set up correctly. To learn more, see [Protect against threats in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
   
 ## Related topics
 

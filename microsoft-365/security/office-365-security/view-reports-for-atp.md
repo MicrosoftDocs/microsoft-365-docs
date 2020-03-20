@@ -102,7 +102,7 @@ To view this report, in the [Security &amp; Compliance Center](https://protectio
   
 ![ATP File Types report](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
-When you hover over a particular day, you can see the breakdown of types of malicious files that were detected by [ATP Safe Attachments](atp-safe-attachments.md) and [anti-spam &amp; anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md).
+When you hover over a particular day, you can see the breakdown of types of malicious files that were detected by [ATP Safe Attachments](atp-safe-attachments.md) and [anti-spam &amp; anti-malware protection](anti-spam-and-anti-malware-protection.md).
   
 ![ATP File Types report data for a day](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
   
