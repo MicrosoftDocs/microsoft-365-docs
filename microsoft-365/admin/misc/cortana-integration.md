@@ -61,7 +61,7 @@ The table below describes the data handling for Cortana in Office 365.
 
 ### Play My Emails
 
-Play My Emails (as connected to through Outlook mobile) is a voice-driven, hands-free experience for users to listen to their inbox via the speakers on their phone, headphones, or connected audio device. Users can ask Cortana to read their recent emails aloud, and ask Cortana to take actions such as flag, archive, delete, and skip messages. This feature is especially helpful to catch up on your email while commuting or on the go. When the user talks to Cortana in Play My Emails, the speech audio request goes directly to Cortana in Office 365. A text to speech readout of the user's email is processed inside the Office 365 cloud. During this process, no Office 365 data is processed on the user's mobile device and no new email data is saved. A transcript of spoken commands (i.e. "mark as read," "next," "flag," etc.) may be retained in accordance with the Data Protection Terms in the [Microsoft Online Services Terms](https://www.microsoft.com/en-us/licensing/product-licensing/products).
+Play My Emails (as connected to through Outlook mobile) is a voice-driven, hands-free experience for users to listen to their inbox via the speakers on their phone, headphones, or connected audio device. Users can ask Cortana to read their recent emails aloud, and ask Cortana to take actions such as flag, archive, delete, and skip messages. This feature is especially helpful to catch up on your email while commuting or on the go. When the user talks to Cortana in Play My Emails, the speech audio request goes directly to Cortana in Office 365. A text to speech readout of the user's email is processed inside the Office 365 cloud. During this process, no Office 365 data is processed on the user's mobile device and no new email data is saved. A transcript of spoken commands (i.e. "mark as read," "next," "flag," etc.) may be retained in accordance with the Data Protection Terms in the [Online Services Terms](https://www.microsoft.com/en-us/licensing/product-licensing/products).
 
 Cortana will call out when an email is protected and briefly pause before reading the message to give users enough time to pause playback or skip to the next message. Similar to a private phone call, users should exercise caution when initiating playback in locations where confidential information could potentially be overheard. In these instances, it's recommended that employees of your organization wear headphones in appropriate environments when using Play My Emails in Outlook mobile.
 
@@ -109,11 +109,11 @@ Here are the two ways to think of how Cortana works in your enterprise:
 
 2. Tenant admins can control whether Cortana in Windows 10 (version 1909 and earlier) and the Cortana app on iOS and Android are able to allow Cortana to connect to Office 365 tenant data.
 
-Turn off Cortana access to Microsoft hosted data
+Turn off Cortana access to your organization's Microsoft hosted data
 
 1. In the Microsoft 365 admin center, select **Settings** > **Services** and select **Cortana**.
 
-2. Unselect the checkbox for **Allow Cortana optional connected experiences to use your organizations's Microsoft hosted data** to disable Cortana connected experiences.
+2. Unselect the checkbox for **Allow these Cortana optional connected experiences to use your organization's Microsoft hosted data** to disable Cortana connected experiences.
 
 3. Select **Save changes**.
 
