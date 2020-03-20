@@ -51,7 +51,7 @@ It will help your Office 365 anti-spam efforts to prevent false negatives and ju
 ![Blocking a sender in Outlook on the web](../../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 
 > [!NOTE]
-> For more detailed information about safe sender lists, see [Safe sender and blocked sender lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
+> For more detailed information about safe sender lists, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
 
 ## EOP-only customers: Set up directory synchronization
 
@@ -83,5 +83,3 @@ The EOP service is designed to honor the user's safe and blocked senders, if the
 ## See Also
 
 [Office 365 Email Anti-Spam Protection](anti-spam-protection.md)
-
-[Prevent false positive email marked as spam with a safelist or other techniques](prevent-email-from-being-marked-as-spam.md)

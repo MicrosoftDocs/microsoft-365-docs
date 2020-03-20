@@ -42,7 +42,7 @@ Rules inside EOP are set to handle email messages with various SCL ratings. If a
 
 #### EOP filters
 
-In addition to spam filtering technologies, EOP also gives the system administrator the ability to set filter levels to further customize the delivery of email to their user accounts. Administrators can easily add a sender or domain name to the Safe Senders and Domains List so that the email from that sender or domain is never treated as junk regardless of the content of the message. For information, see [Safe sender and blocked sender lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
+In addition to spam filtering technologies, EOP also gives the system administrator the ability to set filter levels to further customize the delivery of email to their user accounts. Administrators can easily add a sender or domain name to the Safe Senders and Domains List so that the email from that sender or domain is never treated as junk regardless of the content of the message. For information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
 
 ### Phishing protection
 

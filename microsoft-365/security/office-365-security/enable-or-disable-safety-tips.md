@@ -26,12 +26,6 @@ Office 365 enables safety tips by default for your organization and we recommend
 
 To see examples and to learn about the information displayed in safety tips, see [Safety tips in email messages in Office 365.](safety-tips-in-office-365.md)
 
-In this topic:
-
-- [To enable or disable safety tips by using the Office 365 Security &amp; Compliance Center](enable-or-disable-safety-tips.md#SandCCsafetytip)
-
-- [To enable or disable safety tips by using PowerShell](enable-or-disable-safety-tips.md#pshellsafetytip)
-
 ## To enable or disable safety tips by using the Office 365 Security &amp; Compliance Center
 <a name="SandCCsafetytip"> </a>
 
