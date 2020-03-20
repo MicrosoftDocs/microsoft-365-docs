@@ -43,16 +43,22 @@
               href: mtp/microsoft-threat-protection.md
             - name: What's new in Microsoft Threat Protection
               href: mtp/whats-new.md
+            - name: Preview features
+              href: mtp/preview.md
             - name: Microsoft 365 security center
               href: mtp/overview-security-center.md
             - name: Prerequisites
               href: mtp/prerequisites.md
             - name: Data security and privacy
               href: mtp/data-privacy.md
+            - name: Microsoft security portals
+              href: mtp/portals.md
             - name: Troubleshoot issues
               href: ./mtp/troubleshoot.md
         - name: How-to guides
-          items: 
+          items:
+            - name: Deploy supported services
+              href: mtp/deploy-supported-services.md
             - name: Turn on Microsoft Threat Protection
               href: mtp/mtp-enable.md
             - name: Incidents
@@ -62,18 +68,22 @@
                 - name: Prioritize incidents
                   href: mtp/incident-queue.md
                 - name: Investigate incidents
-                  href: mtp/investigate-incidents.md
-                - name: Manage incidents
-                  href: mtp/manage-incidents.md
+                  items:
+                    - name: Investigate incidents
+                      href: mtp/investigate-incidents.md
+                    - name: Manage incidents
+                      href: mtp/manage-incidents.md
+                    - name: Machine profile page
+                      href: mtp/machine-profile.md
             - name: Automated investigation and response
               items: 
                 - name: AIR overview
                   href: mtp/mtp-autoir.md
-                - name: View remediation actions
+                - name: Remediation actions
                   href: mtp/mtp-remediation-actions.md
-                - name: Visit the Action center
+                - name: The Action center
                   href: mtp/mtp-action-center.md
-                - name: View investigation results
+                - name: View automated investigation details and results
                   href: mtp/mtp-autoir-results.md
                 - name: Approve or reject pending actions
                   href: mtp/mtp-autoir-actions.md
@@ -81,8 +91,6 @@
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Advanced hunting
               items: 
-                - name: Hunting in Microsoft 365
-                  href: mtp/hunting.md
                 - name: Advanced hunting overview
                   href: mtp/advanced-hunting-overview.md
                 - name: Learn the query language
@@ -136,6 +144,8 @@
                   href: mtp/microsoft-secure-score.md
                 - name: Secure Score (preview)
                   href: mtp/microsoft-secure-score-preview.md
+                - name: What's coming
+                  href: mtp/microsoft-secure-score-whats-coming.md
             - name: Reports
               items: 
                 - name: Monitor and view reports
@@ -368,19 +378,17 @@
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: Campaign Views
               href: ./office-365-security/campaigns.md
-            - name: Understanding latest attacks with threat analytics
-              href: ./mtp/latest-attack-campaigns.md
             - name: Automated investigation and response
               items: 
-                - name: Overview of AIR
+                - name: AIR overview
                   href: ./office-365-security/office-365-air.md
-                - name: View details and results of an investigation
-                  href: ./office-365-security/air-view-investigation-results.md
-                - name: View and approve remediation actions
+                - name: Remediation actions
                   href: ./office-365-security/air-remediation-actions.md
-                - name: Handle false positives/negatives
-                  href: ./office-365-security/air-report-false-positives-negatives.md
-                - name: Integrate AIR with a custom or third-party reporting solution
+                - name: View details and results of an automated investigation
+                  href: ./office-365-security/air-view-investigation-results.md
+                - name: Review and approve (or reject) pending actions
+                  href: ./office-365-security/air-review-approve-pending-completed-actions.md
+                - name: Integrate AIR with a custom solution or third-party solution
                   href: ./office-365-security/air-custom-reporting.md
             - name: Detect and address compromised user accounts quickly
               href: ./office-365-security/address-compromised-users-quickly.md
@@ -388,12 +396,14 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: View and read your ATP reports
               href: ./office-365-security/view-reports-for-atp.md
+            - name: Understanding latest attacks with threat analytics
+              href: ./mtp/latest-attack-campaigns.md
             - name: What ATP Safe Links warning pages mean
               href: ./office-365-security/atp-safe-links-warning-pages.md
             - name: Use Threat Trackers
               href: ./office-365-security/threat-trackers.md
-            - name: Use Attack Simulator in Office 365
-              href: ./office-365-security/attack-simulator.md      
+            - name: Attack Simulator in Office 365 ATP
+              href: ./office-365-security/attack-simulator.md
             - name: Safe Documents in Office 365 ATP
               href: ./office-365-security/safe-docs.md
             - name: Threat Explorer (and real-time detections)
@@ -555,9 +565,6 @@
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
                 - name: Quarantine
                   href: ./office-365-security/quarantine.md
-                  items: 
-                    - name: Find and release quarantined messages as an administrator
-                      href: ./office-365-security/find-and-release-quarantined-messages-as-an-administrator.md
                 - name: Troubleshooting and support information
                   href: ./office-365-security/troubleshooting-and-support-information.md
                   items: 

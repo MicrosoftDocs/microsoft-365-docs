@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Puerto Rico
 author: cmcatee-MSFT
 f1.keywords:

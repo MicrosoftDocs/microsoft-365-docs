@@ -22,7 +22,7 @@ description: "Get an overview of how your organization is adopting Microsoft 365
 
 # Microsoft 365 usage analytics
 ---
-Microsoft 365 usage analytics is also available for Microsoft 365 US Government Community.
+Microsoft 365 usage analytics is not yet available for Microsoft 365 US Government Community.
  
 ## Overview of Microsoft 365 usage analytics
 
@@ -44,7 +44,7 @@ The executive summary is a high-level, at-a-glance view of Microsoft 365 for Bus
 
 This summary lets you quickly understand usage patterns in Office and how and where your employees are collaborating.
 
-![Image of the Microsoft 365 usage executive summary.](../media/office365usage-exec-summary.png)
+![Image of the Microsoft 365 usage executive summary.](../../media/office365usage-exec-summary.png)
 
 ## Overview
 

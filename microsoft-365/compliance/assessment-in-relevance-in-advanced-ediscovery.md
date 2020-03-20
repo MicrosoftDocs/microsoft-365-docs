@@ -18,7 +18,7 @@ ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: "Get an overview of the Assessment stage and its role in determining the richness of issues during Relevance training in Office 365 Advanced eDiscovery."
 ---
 
-# Understand Assessment in Relevance in Office 365 Advanced eDiscovery
+# Understand Assessment in Relevance in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -50,7 +50,7 @@ You can accept the Relevance recommendations or adjust the current margin of err
   
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Tagging and Assessment](tagging-and-assessment-in-advanced-ediscovery.md)
   

@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Saint Lucia
 author: cmcatee-MSFT
 f1.keywords:

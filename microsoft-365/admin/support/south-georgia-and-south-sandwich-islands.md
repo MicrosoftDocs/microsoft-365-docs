@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for South Georgia and South Sandwich Islands
 author: cmcatee-MSFT
 f1.keywords:

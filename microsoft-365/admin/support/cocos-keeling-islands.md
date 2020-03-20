@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Cocos (Keeling) Islands
 author: cmcatee-MSFT
 f1.keywords:

@@ -19,11 +19,12 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- seo-marvel-mar
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: "Learn how to upgrade Windows devices to Windows 10 Pro. "
+description: "Discover ways you can upgrade your Windows devices to Windows 10 Pro to utilize more advanced security and business networking features."
 ---
 
 # Upgrade Windows devices to Windows 10 Pro
@@ -53,6 +54,6 @@ See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-dev
   
 See [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md) to complete setting up Android and iOS devices. 
   
-## See also
+## For more on setting up and using Microsoft 365 Business
 
 [Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

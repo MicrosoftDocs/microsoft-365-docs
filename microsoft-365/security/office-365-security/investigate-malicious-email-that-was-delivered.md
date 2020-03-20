@@ -1,5 +1,5 @@
 ---
-title: "Find and investigate malicious email that was delivered in Office 365, remediate, remedy, remediation, "
+title: "Find and investigate malicious email that was delivered in Office 365, remediate, remedy, remediation, threat protection, threat explorer, protection"
 keywords: TIMailData-Inline, Security Incident, incident, ATP PowerShell, email malware, compromised users, email phish, email malware, read email headers, read headers, open email headers
 f1.keywords:
 - NOCSH
@@ -27,7 +27,7 @@ description: "Learn how to use threat investigation and response capabilities to
 
 Make sure that the following requirements are met:
   
-- Your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) and [licenses are assigned to users](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+- Your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
     
 - [Office 365 audit logging](../../compliance/turn-audit-log-search-on-or-off.md) is turned on for your organization. 
     
@@ -51,6 +51,9 @@ To perform certain actions, such as viewing message headers or downloading email
 ## Find and delete suspicious email that was delivered
 
 Threat Explorer is a powerful report that can serve multiple purposes, such as finding and deleting messages, identifying the IP address of a malicious email sender, or starting an incident for further investigation. The following procedure focuses on using Explorer to find and delete malicious email from recipient's mailboxes.
+
+> [!NOTE]
+> Default searches in Explorer don't currently include Zapped items.  This applies to all views, for example malware or phish views. To include Zapped items you need to add a 'Delivery action' set to include 'Removed by ZAP'. If you include all options, you'll see all delivery action results, including Zapped items.
 
 1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center.
 
@@ -91,16 +94,16 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 
     *Delivery action* is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
     - **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
-    - **Junked** (Delivered to junk)– email was sent to either user’s junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
+    - **Junked** (Delivered to junk)– email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
     - **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
     - **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious
 
     **Delivery location**: The Delivery location filter is available in order to help admins understand where suspected malicious mail ended-up and what actions were taken on it. The resulting data can be exported to spreadsheet. Possible delivery locations are:
     - **Inbox or folder** – The email is in the Inbox or a specific folder, according to your email rules.
-    - **On-prem or external** – The mailbox doesn’t exist in the Cloud but is on-premises.
+    - **On-prem or external** – The mailbox doesn't exist in the Cloud but is on-premises.
     - **Junk folder** – The email is in a user's Junk mail folder.
     - **Deleted items folder** – The email is in a user's Deleted items folder.
-    - **Quarantine** – The email in quarantine, and not in a user’s mailbox.
+    - **Quarantine** – The email in quarantine, and not in a user's mailbox.
     - **Failed** – The email failed to reach the mailbox.
     - **Dropped** – The email was lost somewhere in the mail flow.
 

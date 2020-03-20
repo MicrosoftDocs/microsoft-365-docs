@@ -57,8 +57,8 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 |MarkAsSpamBulkMail|On|On|This setting is only available in PowerShell|
 
 There are several other parameters in the Anti-spam policy called Advanced Spam filter (ASF) that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this topic.
- 
- We recommend that you turn these settings **OFF** for both Standard and Strict levels:
+
+We recommend that you turn these settings **OFF** for both Standard and Strict levels:
 
 |Security feature name|Comments|
 |---------|---------|
@@ -140,10 +140,9 @@ EOP customers get basic anti-phishing as previously described, but Office 365 AT
 |Enable anti-spoofing protection|On|On||
 |Enable Unauthenticated Sender (tagging)|On|On||
 |If email is sent by someone who's not allowed to spoof your domain|Move message to the recipients' Junk Email folders|Quarantine the message||
-|EnableAuthenticationSafetyTip|True|True|This setting is only available in PowerShell|
-|EnableAuthenticationSoftPassSafetyTip|False|True|This setting is only available in PowerShell|
 |EnableSuspiciousSafetyTip|False|True|This setting is only available in PowerShell|
 |TreatSoftPassAsAuthenticated|True|False|This setting is only available in PowerShell|
+
 
 |Advanced settings security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|

@@ -54,7 +54,7 @@ Use the following workflow to set-up and use eDiscovery cases in the Security & 
 
 The first step is to assign the appropriate eDiscovery-related permissions to people so you can add them to an eDiscovery case in Step 2. You have to be a member of the Organization Management role group (or be assigned the Role Management role) in the Security & Compliance Center to assign eDiscovery permissions. The following list describes the eDiscovery-related role groups in the Security & Compliance Center. 
   
-- **Reviewer.** This role group has the most restrictive eDiscovery-related permissions. The primary purpose of this role group is to allow members to view and access case data in [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md) (also known as *Advanced eDiscovery v1*). Members of this group can only see and open the list of the cases on the **eDiscovery** page in the Security & Compliance Center that they are members of. After the user accesses a case in the security and compliance center, they can click **Switch to Advanced eDiscovery** to access and analyze the case data in Advanced eDiscovery. They can't create cases, add members to a case, create holds, create searches, preview search results, export search results, or prepare results for Advanced eDiscovery. 
+- **Reviewer.** This role group has the most restrictive eDiscovery-related permissions. The primary purpose of this role group is to allow members to view and access case data in [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md) (also known as *Advanced eDiscovery v1*). Members of this group can only see and open the list of the cases on the **eDiscovery** page in the Security & Compliance Center that they are members of. After the user accesses a case in the security and compliance center, they can click **Switch to Advanced eDiscovery** to access and analyze the case data in Advanced eDiscovery. They can't create cases, add members to a case, create holds, create searches, preview search results, export search results, or prepare results for Advanced eDiscovery. 
 
    > [!NOTE]
    > At this time, users who are member of the Reviewer role group can't access data in [Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md) (also known as *Advanced eDiscovery v2*). To add members to a case in Advanced eDiscovery v2 so that they can review case data, a user must be a member of the eDiscovery Manager role group.
@@ -72,9 +72,6 @@ The first step is to assign the appropriate eDiscovery-related permissions to pe
     - Access case data in Advanced eDiscovery for any case in the organization.
     
     See the [More information](#more-information) section for reasons why you may want an eDiscovery Administrator in your organization. 
-    
-> [!IMPORTANT]
-> If a person isn't a member of one of these eDiscovery-related role groups, or isn't a member of a role group that's assigned the Reviewer role, you can't add them as a member of an eDiscovery case. 
 
 For more information about eDiscovery permissions, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
@@ -112,32 +109,31 @@ The next step is to create a eDiscovery case. You must be a member of the eDisco
     
     > [!TIP]
     > After you create a new case, you can rename it anytime. Just click the name of the case on the **eDiscovery** page. On the **Manage this case** flyout page, change the name displayed in the box under **Name**, and then save the change. 
-  
 ## Step 3: Add members to a case
 
-After you create a case, the next step is to add members to the case. As previous explained, only users who are members of the Reviewer or eDiscovery Manager role groups can be added as members of the case. The eDiscovery Manager who created the case is automatically added as a member.
+After you create a case, the next step is to add members to the case. The eDiscovery Manager who created the case is automatically added as a member. As previously explained, members have to assign the appropriate eDiscovery permissions so they can access the case after you add them.
   
 1. In the Security & Compliance Center, click **eDiscovery** \> **eDiscovery** to display the list of cases in your organization. 
-    
+
 2. Click the name of the case that you want to add members to.
-    
+
     The **Manage this case** flyout page is displayed. 
-    
+
     ![Manage a case flyout page](../media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
   
 3. Under **Manage members**, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add** to add members to the case. 
-    
+
     You can also choose to add a role group to the case. Under **Manage role groups**, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add**.
-    
+
     > [!NOTE]
     > Role groups control who can assign members to an eDiscovery case. That means you can only assign the role groups that you are a member of to a case.
-    
+
 4. In the list of people or role groups that can be added as members of the case, click the check box next to the names of the people or role groups that you want to add.
-    
+
     > [!TIP]
     > If you have a large list of people who can added as members, use the **Search** box to search for a specific person in the list. 
   
-5. After you have selected the people or role groups to add as members of the group, click **Add**.
+5. After you select the people or role groups to add as members of the group, click **Add**.
     
     In **Manage this case**, click **Save** to save the new list of case members. 
     
@@ -149,7 +145,7 @@ You can use an eDiscovery case to create holds to preserve content that might be
 
 > [!NOTE]
 > After you place a content location on hold, it takes up to 24 hours for the hold to take effect. 
->   
+
 When you create a hold, you have the following options to scope the content that is held in the specified content locations:
   
 - You create an infinite hold where all content is placed on hold. Alternatively, you can create a query-based hold where only content that matches a search query is placed on hold.
@@ -550,7 +546,14 @@ If the case you're trying to delete still contains holds, you'll receive an erro
   |Maximum number of case holds for an organization  <br/> |10,000  <br/> |
   |Maximum number of mailboxes in a single case hold  <br/> |1,000  <br/> |
   |Maximum number of SharePoint and OneDrive for Business sites in a single case hold  <br/> |100  <br/> |
-   
+  |Maximum number of cases displayed on the eDiscovery home page, and the maximum number of items displayed on the Holds, Searches, and Export tabs within a case. <sup>1</sup> |1,000|
+  |||
+
+   > [!NOTE]
+   > <sup>1</sup> To view a list of more than 1,000 cases, holds, searches, or exports, you can use the corresponding Office 365 Security & Compliance PowerShell cmdlet:<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)
+
+
+
 - **What about cases that were created on the case management page in Advanced eDiscovery?** You can access a list of older Advanced eDiscovery cases by clicking the link at the bottom on the **eDiscovery** page in the Security & Compliance Center. However, to do any work in an older case, you have to contact Office 365 Support and request that the case be moved to a new eDiscovery case in the Security & Compliance Center. 
     
 - **Why create an eDiscovery Administrator?** As previously explained, an eDiscovery Administrator is member of the eDiscovery Manager role group who can view and access all eDiscovery cases in your organization. This ability to access all the eDiscovery cases has two important purposes:

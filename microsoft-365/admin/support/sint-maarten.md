@@ -1,4 +1,4 @@
-﻿---                                
+---                                
 title: Support information for Sint Maarten
 author: cmcatee-MSFT
 f1.keywords:

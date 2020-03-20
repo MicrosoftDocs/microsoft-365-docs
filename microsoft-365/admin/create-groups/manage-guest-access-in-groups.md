@@ -38,8 +38,8 @@ Once approved, the guest user is added to the directory and the group.
 
 Guest access in groups is often used as part of a broader scenario that includes SharePoint or Teams. These services have their own guest sharing settings. For complete instructions for setting up guest sharing across groups, SharePoint, and Teams, see:
 
-- [Collaborate with guests in a site](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-a-site)
-- [Collaborate with guests in a team](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-a-team)
+- [Collaborate with guests in a site](../../solutions/collaborate-in-site.md)
+- [Collaborate with guests in a team](../../solutions/collaborate-as-team.md)
 
 ## Manage groups guest access
 
@@ -104,7 +104,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 
 The verification looks like this:
     
-![Screenshot of PowerShell window showing that guest group access has been set to false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
+![Screenshot of PowerShell window showing that guest group access has been set to false.](../../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
   
 ## Allow or block guest access based on their domain
 
