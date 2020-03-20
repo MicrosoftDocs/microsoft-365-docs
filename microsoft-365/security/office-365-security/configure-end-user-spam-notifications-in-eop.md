@@ -70,5 +70,5 @@ For information about keyboard shortcuts that may apply to the procedures in thi
   
 ## For more information
 
-[Configure your spam filter policies](configure-your-spam-filter-policies.md)
+[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)
   
