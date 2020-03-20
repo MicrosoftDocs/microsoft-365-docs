@@ -43,7 +43,7 @@ Cortana in Office 365 processes queries from the user, Office data needed to ful
 
 ## What is the governance model for Customer Data in Cortana in Office 365?
 
-Consistent with other Microsoft 365 and Office 365 services, Cortana in Office 365 is secured and subject to the Online Services Terms. This includes a set of promises for protection of Customer Data against accidental loss, alteration, unauthorized disclosure or access, or unlawful destruction. Customer Data is also subject to strict access limitations. Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. See the table below for details.
+Consistent with other Microsoft 365 and Office 365 services, Cortana in Office 365 is secured and subject to the [Online Services Terms (OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products). This includes a set of promises for protection of Customer Data against accidental loss, alteration, unauthorized disclosure or access, or unlawful destruction. Customer Data is also subject to strict access limitations. Microsoft uses Customer Data only to provide the services agreed upon, and for purposes that are compatible with those services. See the table below for details.
 
 ## How does Microsoft store, retain, process, and use Customer Data in Cortana?
 
@@ -81,7 +81,7 @@ Individuals can opt out of Play My Emails using the following steps.
 
 Cortana sends a personalized briefing email with tasks and commitments you made with a convenient way to mark them as **Done**"** or schedule focus time to get them done. It also includes a summary of your meetings and relevant documents for your day. Cortana extracts information from a user's Office 365 messages and stores it in their Office 365 mailbox until it's consolidated into Briefing email. At no time is personal data accessible outside of your Office 365 mailbox.
 
-### How to opt of Briefing email
+### How to opt out of Briefing email
 
 Admins can configure Briefing for their organization using a [toggle](https://docs.microsoft.com/en-us/briefing/be-admin) in the Microsoft 365 admin center. Individuals can opt out of Cortana's Briefing email by selecting Unsubscribe in the footer of the message.
 
@@ -93,7 +93,7 @@ Learn more about [Microsoft Compliance offerings](https://docs.microsoft.com/en-
 
 Here are the two ways to think of how Cortana works in your enterprise:
 
-New experiences for organizations with Cortana in Office 365: Cortana in Office 365 services are designed to meet the security and compliance needs of organizations.
+**New experiences for organizations with Cortana in Office 365**: Cortana in Office 365 services are designed to meet the security and compliance needs of organizations.
 
 1. This is a new service and is discussed here in this document.
 
@@ -103,7 +103,7 @@ New experiences for organizations with Cortana in Office 365: Cortana in Office 
 
 4. Admins will always have controls for optional connected experiences for Cortana, similar to optional connected experiences while using Office ProPlus applications.
 
-Existing services for consumers: Cortana optional connected services are designed primarily for consumer experiences and are currently delivered in Windows 10 (version 1909 and earlier) and the Cortana app on iOS and Android.
+**Existing services for consumers**: Cortana optional connected services are designed primarily for consumer experiences and are currently delivered in Windows 10 (version 1909 and earlier) and the Cortana app on iOS and Android.
 
 1. These experiences enable features such as weather, news, and traffic.
 
