@@ -50,6 +50,8 @@ While users can create an Office 365 group from Outlook or other apps, as an adm
 
 Once the group has been created, you can add members and configure additional settings.
 
+::: moniker range="o365-worldwide"
+
 Users can [add themselves or request approval](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.
 
 1. In the admin center, refresh the page so your new group appears, and then select the name of the group that you want to add members to.
@@ -63,6 +65,36 @@ Users can [add themselves or request approval](https://support.office.com/articl
 5. Select **Close** three times. 
     
 The group will appear in Outlook with members assigned to it.
+
+::: moniker-end
+::: moniker range="o365-germany"
+Users can [add themselves or request approval](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.
+1. In the admin center, refresh the page so your new group appears, select **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>, and then select the group that you want to add members to.
+    
+2. Next to **Members**, select **Edit**.
+3. Select **Add members**.
+    
+4. Select the users you want to add, and then select **Save**.
+    
+5. Select **Close** three times. 
+    
+The group will appear in Outlook with members assigned to it.
+  
+::: moniker-end
+::: moniker range="o365-21vianet"
+Users can [add themselves or request approval](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.
+1. In the admin center, refresh the page so your new group appears, select **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>, and then select the group that you want to add members to.
+    
+2. Next to **Members**, select **Edit**.
+3. Select **Add members**.
+    
+4. Select the users you want to add, and then select **Save**.
+    
+5. Select **Close** three times. 
+    
+The group will appear in Outlook with members assigned to it.
+  
+::: moniker-end
 
 ## Who can delete email from the Group inbox?
 
