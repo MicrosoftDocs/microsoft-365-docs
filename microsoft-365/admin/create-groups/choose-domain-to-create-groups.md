@@ -107,7 +107,7 @@ There are a few more things to know:
     
 - Admins and users can also modify domains when they create groups.
     
-- Group of users is determined using the standard queries (User properties) that are already available. Check out [Filterable properties for the -RecipientFilter parameter](https://go.microsoft.com/fwlink/p/?LinkId=785918) for supported filterable pproperties. 
+- Group of users is determined using the standard queries (User properties) that are already available. Check out [Filterable properties for the -RecipientFilter parameter](https://go.microsoft.com/fwlink/p/?LinkId=785918) for supported filterable properties. 
     
 - If you don't configure any EAPs for groups, then the default accepted domain is selected for group creation.
     
