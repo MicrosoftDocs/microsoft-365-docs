@@ -191,7 +191,7 @@ If you encounter either of these scenarios, you can create a mail flow rule with
 
 [Safe sender and blocked sender lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
 
-[Configure your spam filter policies](configure-your-spam-filter-policies.md)
+[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)
 
 [Configure the outbound spam policy](configure-the-outbound-spam-policy.md)
 

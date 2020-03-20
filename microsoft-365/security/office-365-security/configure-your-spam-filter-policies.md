@@ -638,4 +638,4 @@ There will be times when our filters will miss the message or it takes time for 
 
 [How to reduce spam email in Office 365](reduce-spam-email.md)
 
-[Spam confidence levels](spam-confidence-levels.md)
+[Spam confidence level (SCL) in Office 365](spam-confidence-levels.md)

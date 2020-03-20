@@ -49,7 +49,7 @@ For more information, see the following topics:
 
 [Configure anti- policy](configure-the-connection-filter-policy.md)
 
-[Configure your spam filter policies](configure-your-spam-filter-policies.md)
+[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)
 
 [Configure the outbound spam policy](configure-the-outbound-spam-policy.md)
 

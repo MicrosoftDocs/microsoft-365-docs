@@ -38,7 +38,7 @@ Specifically, you need to look for a header field named **X-Forefront-Antispam-R
 
   Admins can run a message trace to see if a mail flow rule is responsible for the high SCL value. For more information, see [Message trace in the Security & Compliance Center](message-trace-scc.md).
 
-- **SFV:SKB**: The message was marked as spam because it matched a block senders entry in an anti-spam policy (for example, the blocked senders list or the blocked domains list). For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md).
+- **SFV:SKB**: The message was marked as spam because it matched a block senders entry in an anti-spam policy (for example, the blocked senders list or the blocked domains list). For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
 - **SFV:BULK**: The message was identified as bulk email instead of spam by spam filtering. This happens when the bulk complaint level (BCL) value of the message is **greater than** the bulk threshold that's defined in the anti-spam policy settings (a higher BCL indicates the message is more likely to be spam). You can see the BCL in the **X-Microsoft-Antispam** header field.
 
@@ -61,7 +61,7 @@ In order for spam filtering to be the most effective, an admin needs to configur
 
 ### For admins
 
-- **Point your email domain's MX record to Office 365**: In order for Office 365 to provide protection, the MX record for all email domains in Office 365 must point to Office 365, and only to Office 365 (that is, email for recipients in those domains is always delivered to Office 365 first). If the MX record points to some other location (for example, a third-party anti-spam solution or appliance), Office 365 can't provide spam filtering for your users. In this scenario, you need to configure Enhanced Filtering for connectors (also known as _skip listing_. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+- **Point your email domain's MX record to Office 365**: In order for Office 365 to provide protection, the MX record for all email domains in Office 365 must point to Office 365, and only to Office 365 (that is, email for recipients in those domains is always delivered to Office 365 first). If the MX record points to some other location (for example, a third-party anti-spam solution or appliance), Office 365 can't provide spam filtering for your users. In this scenario, you need to configure Enhanced Filtering for connectors (also known as _skip listing_. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 - **Turn on the report message add-in for users**: We strongly recommend that you enable the Report Message add-in for you users. For instructions, see [Enable the Report Message add-in](enable-the-report-message-add-in.md).
 

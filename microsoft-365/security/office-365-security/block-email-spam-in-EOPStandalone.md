@@ -42,7 +42,7 @@ Is the spam primarily bulk mail, for example, newsletters or promotions? You can
 
 ### Block email spam using spam filter block lists
 
-[Configure your spam filter policies](configure-your-spam-filter-policies.md) to add the sender address to the blocked sender list or domain to the blocked domain list in the spam filter. Emails from a sender or domain on a spam filter block list will marked as spam.
+[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md) to add the sender address to the blocked sender list or domain to the blocked domain list in the spam filter. Emails from a sender or domain on a spam filter block list will marked as spam.
 
 ## Email users can also help ensure that false negative and email spam is blocked with Office 365 spam filter
 

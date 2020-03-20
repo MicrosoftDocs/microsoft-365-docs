@@ -1,5 +1,5 @@
 ---
-title: "Outbound spam controls in Office 365"
+title: "Outbound spam protection in Office 365"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,7 +19,7 @@ ms.collection:
 description: "Admins can learn about how Office 365 and Exchange Online Protection (EOP) protects customers from outbound spam, and what to do if you need to send mass mailings."
 ---
 
-# Outbound spam controls in Office 365
+# Outbound spam protection in Office 365
 
 We take managing outbound spam seriously, because Office 365 (Exchange Online or standalone Exchange Online Protection (EOP) without Exchange Online mailboxes) is an online service where many customers use a shared pool of resources. One Office 365 customer intentionally or unintentionally sending spam from their organization can degrade the reputation of the whole service, and can affect email delivery for other customers.
 
