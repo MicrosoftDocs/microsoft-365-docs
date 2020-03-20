@@ -48,3 +48,32 @@ It will affect the following improvement actions:
 - Ensure all users can complete multi-factor authentication for secure access
 - Require MFA for administrative roles
 - Enable policy to block legacy authentication
+
+## April 21st 2020
+
+### Removing improvement actions that don't meet expectations for reliable measurement or don't provide a useful representation of security posture
+
+To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement actions.
+
+- Delete/block accounts not used in last 30 days
+- Designate fewer than 5 global admins
+- Apply IRM protections to documents
+- Apply Data Loss Prevention policies
+
+### Adding additional control support in the preview version
+- Do not allow users to grant consent to unmanaged applications (currently available in released version)
+
+#### Support for additional Microsoft Cloud App Security improvement actions
+- Disable Print spooler service on domain controllers
+- Modify unsecure Kerberos delegations to prevent impersonation
+- Protect and manage local admin passwords with Microsoft LAPS
+- Reduce lateral movement path risk to sensitive entities
+- Remove dormant accounts from sensitive groups
+- Remove unsecure SID history attributes from entities
+- Resolve unsecure account attributes
+- Stop clear text credentials exposure
+- Stop legacy protocols communication
+- Stop weak cipher usage
+
+#### Support for Microsoft Defender ATP Threat & Vulnerability Management (TVM) security recommendations
+- All released security recommendations supplied by TVM will now also be available in Microsoft Secure Score

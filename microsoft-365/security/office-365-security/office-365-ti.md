@@ -27,7 +27,7 @@ Threat investigation and response capabilities in [Office 365 Advanced Threat Pr
 - Providing insights and knowledge to help security operations prevent cyberattacks against their organization
 - Employing [automated investigation and response in Office 365](automated-investigation-response-office.md) for critical email-based threats
     
-Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Office 365 Security &amp; Compliance Center. These insights can help your organization's security team protect Office 365 users from email- or file-based attacks. The capabilities help monitor signals and gather data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and your security operations team can use this information to understand and respond to threats against your organization and protect your intellectual property.
+Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Office 365 Security &amp; Compliance Center. These insights can help your organization's security team protect users from email- or file-based attacks. The capabilities help monitor signals and gather data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and your security operations team can use this information to understand and respond to threats against your organization and protect your intellectual property.
 
 ## Get acquainted with threat investigation and response tools
 

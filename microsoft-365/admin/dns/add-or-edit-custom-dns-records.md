@@ -45,6 +45,6 @@ description: "Learn how to edit or add a custom DNS record in Microsoft. "
 
 [DNS basics](../get-help-with-domains/dns-basics.md)
 
-[Get help with Office 365 domains](../get-help-with-domains/get-help-with-domains.yml)
+[Get help with Office 365 domains](../get-help-with-domains/get-help-with-domains.md)
 
 

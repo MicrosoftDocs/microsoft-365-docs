@@ -77,13 +77,13 @@ In addition, if you plan to use Office 365 Message Encryption in a GCC High envi
 
 Senders can manually encrypt emails in Outlook for PC and Mac and Outlook on the web, or organizations can set up a policy to encrypt emails using Exchange mail flow rules.
 
-Recipients inside GCC High receive the same inline reading experience in Outlook for PC and Mac and Outlook on the web as all other Office 365 users.
+Recipients inside GCC High receive the same inline reading experience in Outlook for PC and Mac and Outlook on the web as all other users.
 
 ### Encrypted email from GCC High to Non-GCC High recipients
 
 Senders inside GCC High can send encrypted email outside of the GCC High boundary.
 
-All recipients outside GCC High, including commercial Office 365 users, Outlook.com users, and other users of other email providers such as Gmail and Yahoo, receive a wrapper mail. This wrapper mail redirects the recipient to the OME Portal where the recipient can read and reply to message.
+All recipients outside GCC High, including commercial Microsoft 365 users, Outlook.com users, and other users of other email providers such as Gmail and Yahoo, receive a wrapper mail. This wrapper mail redirects the recipient to the OME Portal where the recipient can read and reply to message.
 
 ## Coexistence of legacy OME and the new capabilities in the same tenant
 

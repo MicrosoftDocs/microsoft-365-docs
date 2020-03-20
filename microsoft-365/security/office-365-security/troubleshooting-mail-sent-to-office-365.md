@@ -107,9 +107,9 @@ You received the NDR because suspicious activity has been detected from the IP a
 
  In order to receive messages from our users, make sure your network allows connections from the IP addresses that EOP uses in our datacenters. For more information, see [Exchange Online Protection IP addresses](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
-## Best practices for bulk emailing to Office 365 users
+## Best practices for bulk emailing to Microsoft 365 users
 
-If you often conduct bulk email campaigns to Office 365 users and want to ensure that your emails arrive in a safe and timely manner, follow the tips in this section.
+If you often conduct bulk email campaigns to Microsoft 365 users and want to ensure that your emails arrive in a safe and timely manner, follow the tips in this section.
 
 ### Ensure that the From: name reflects who is sending the message
 

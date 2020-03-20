@@ -46,11 +46,11 @@ You can export the admin list as well as search and filter by role.
 Read the content below to learn about the different admin roles and what tasks the roles can perform in your organization.
 
 > [!NOTE]
-This isn’t an exhaustive list of all the permissions that these roles have. Select the **Learn more** link for more information about each role.
+This isn't an exhaustive list of all the permissions that these roles have. Select the **Learn more** link for more information about each role.
 
 ### Exchange admin
 
-Assign the Exchange admin role to users who need to view and manage your user’s email mailboxes, Office 365 groups and Exchange Online. They can also open and manage service requests to Microsoft support. [Learn more](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
+Assign the Exchange admin role to users who need to view and manage your user's email mailboxes, Office 365 groups and Exchange Online. They can also open and manage service requests to Microsoft support. [Learn more](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
 
 ### Global admin
 
@@ -78,7 +78,7 @@ Assign the Teams admin role to users who you want to access and manage the Teams
 
 ### User admin
 
-Assign the user admin role to users who you want to access and manage user password resets and manage Office 365 users and groups. They can also open and manage service requests to Microsoft support. [Learn more](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Assign the user admin role to users who you want to access and manage user password resets and manage users and groups. They can also open and manage service requests to Microsoft support. [Learn more](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ::: moniker range="o365-worldwide"
 
