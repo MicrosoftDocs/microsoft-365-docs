@@ -36,7 +36,7 @@ While you can construct your [advanced hunting](advanced-hunting-overview.md) qu
 ## View query results as tables or charts
 By default, advanced hunting displays query results as tabular data. You can display the same data as a visualization or chart.
 
-![Image of advanced hunting query results displayed as a stacked chart](../../media/advanced-hunting-stacked-chart.png)
+![Image of advanced hunting query results displayed as a stacked chart](../../media/advanced-hunting-stacked-chart.jpg)
 *Query results for alerts by platform and severity displayed as a stacked chart*
 
 To render charts, advanced hunting automatically identifies columns of interest and numeric values to aggregate. Advanced hunting supports the following views: 
@@ -52,10 +52,10 @@ To render charts, advanced hunting automatically identifies columns of interest 
 | **Scatter chart** | Plots numeric values for a series of unique items |
 | **Area chart** | Plots numeric values for a series of unique items and fills the sections below the plotted values |
 
-![Image of advanced hunting query results displayed as a line chart](../../media/advanced-hunting-line-chart.png)
+![Image of advanced hunting query results displayed as a line chart](../../media/advanced-hunting-line-chart.jpg)
 *Line chart showing the number of events involving a specific file over time*
 
-![Image of advanced hunting query results displayed as a pie chart](../../media/advanced-hunting-pie-chart.png)
+![Image of advanced hunting query results displayed as a pie chart](../../media/advanced-hunting-pie-chart.jpg)
 *Pie chart showing distribution of phishing emails by sender domain*
 
 
