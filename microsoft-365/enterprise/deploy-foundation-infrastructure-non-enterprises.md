@@ -24,10 +24,10 @@ Non-enterprise organizations can also deploy Microsoft 365 for enterprise and re
 - A small amount of on-premises IT infrastructure, such as email and file servers and an Active Directory Domain Services (AD DS) domain, or none at all.
 - A small IT staff, most of whom are IT generalists, rather than specialists in a specific technology or workload such as networking or email.
 
-For smaller, non-enterprise organizations, Microsoft offers [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business). However, there are reasons why you might need Microsoft 365 for enterprise, such as:
+For smaller, non-enterprise organizations, Microsoft offers [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business). However, there are reasons why you might need Microsoft 365 for enterprise, such as:
 
-- Your organization needs more or will need more than 300 Microsoft 365 licenses, which is the maximum for Microsoft 365 Business.
-- Your organization needs the advanced productivity, voice, security, and analytics capabilities that are not available with Microsoft 365 Business.
+- Your organization needs more or will need more than 300 Microsoft 365 licenses, which is the maximum for Microsoft 365 for business.
+- Your organization needs the advanced productivity, voice, security, and analytics capabilities that are not available with Microsoft 365 for business.
 
 This article steps you through a simplified deployment of the foundation infrastructure of Microsoft 365 for enterprise suitable for your non-enterprise.
 

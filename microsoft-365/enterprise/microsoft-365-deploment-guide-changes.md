@@ -34,7 +34,7 @@ description: See the new content and changes to the content in the Microsoft 365
 
 ### New content 
 
-- [Migrate from Microsoft 365 Business to Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+- [Migrate from Microsoft 365 Business Premium to Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
 
 - [Team for a top-secret project of the Contoso Corporation](contoso-team-for-top-secret-project.md)
 

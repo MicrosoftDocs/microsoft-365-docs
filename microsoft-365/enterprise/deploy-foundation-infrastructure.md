@@ -107,7 +107,7 @@ To give you some ideas on how to approach the project management of the differen
 
 ## Deployment for non-enterprises
 
-If your organization is smaller and Microsoft 365 Business is not suitable for you, see [deployment for non-enterprises](deploy-foundation-infrastructure-non-enterprises.md) for a simplified deployment method.
+If your organization is smaller and Microsoft 365 for business is not suitable for you, see [deployment for non-enterprises](deploy-foundation-infrastructure-non-enterprises.md) for a simplified deployment method.
 
 
 ## Next step
