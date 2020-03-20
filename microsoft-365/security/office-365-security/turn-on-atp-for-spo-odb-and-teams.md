@@ -31,13 +31,13 @@ To define (or edit) ATP policies, you must be assigned an appropriate role. Some
 
 |Role|Where/how assigned|
 |---------|---------|
-|global administrator|The person who signs up to buy Office 365 is a global admin by default. (See [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)|
+|global administrator|The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)|
 |Security Administrator|Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online Organization Management|Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
 
 ## Turn on ATP for SharePoint, OneDrive, and Microsoft Teams
 
-**Before you begin this procedure, make sure that audit logging is already turned on for your Office 365 environment**. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+**Before you begin this procedure, make sure that audit logging is already turned on for your Microsoft 365 environment**. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 1. Go to [https://protection.office.com](https://protection.office.com), and sign in with your work or school account.
 
@@ -59,7 +59,7 @@ To define (or edit) ATP policies, you must be assigned an appropriate role. Some
 
    - Setting the parameter to *false* blocks all actions except Delete and Download. People can choose to accept the risk and download a detected file.
 
-7. Allow up to 30 minutes for your changes to spread to all Office 365 datacenters.
+7. Allow up to 30 minutes for your changes to spread to all Microsoft 365 datacenters.
 
 8. (Recommended) Proceed to set up alerts for detected files.
 
@@ -95,4 +95,4 @@ To learn more about alerts, see [Create activity alerts in the Office 365 Securi
 
 1. [View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 
-2. [Manage quarantined messages and files as an administrator in Office 365](manage-quarantined-messages-and-files.md)
+2. [Manage quarantined messages and files as an administrator in Microsoft 365](manage-quarantined-messages-and-files.md)

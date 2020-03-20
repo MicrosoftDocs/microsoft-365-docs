@@ -22,7 +22,7 @@ description: "To prevent phishing messages from reaching your mailbox, Outlook.c
 > [!NOTE]
 > These updates are rolling out now, and might not be available for all users. This feature is supported for Enterprise Outlook.com and Enterprise Outlook Win32 desktop users. It is not currently available for consumer Microsoft 365 users.
 
-To prevent phishing messages from reaching your mailbox, Office 365 verifies that the senders are who they say they are and mark suspicious messages as junk email.
+To prevent phishing messages from reaching your mailbox, Microsoft 365 verifies that the senders are who they say they are and mark suspicious messages as junk email.
 
 > [!IMPORTANT]
 > When a message is marked as a phishing scam, Outlook displays a warning at the top of the page, but any links in the message can still be opened.
@@ -33,7 +33,7 @@ Outlook shows indicators when the sender of a message either can't be identified
 
 ## You see a '?' in the sender image
 
-When Office 365 can't verify the identity of the sender using email authentication techniques, a '?' is displayed in the sender image.
+When Microsoft 365 can't verify the identity of the sender using email authentication techniques, a '?' is displayed in the sender image.
 
 ![Message did not pass verification](../../media/message-did-not-pass-verification.jpg)
 
@@ -43,7 +43,7 @@ Not every message that fails to authenticate is malicious. However, you should b
 
 If you are a customer you can manage this feature through the Office 365 Security & Compliance Center.
 
-- In the Security & Compliance Center, global or security administrators can turn the feature on or off, through anti-spoofing protection under the Anti-Phish policy. Additionally, you can use the **Set-AntiPhishPolicy** cmdlet in Exchange Online PowerShell. For details, see [Anti-phishing protection in Office 365](anti-phishing-protection.md) and [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
+- In the Security & Compliance Center, global or security administrators can turn the feature on or off, through anti-spoofing protection under the Anti-Phish policy. Additionally, you can use the **Set-AntiPhishPolicy** cmdlet in Exchange Online PowerShell. For details, see [Anti-phishing protection](anti-phishing-protection.md) and [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
 
     ![Editing unauthenticated senders in the graphic interface.](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
@@ -63,7 +63,7 @@ If you are an customer you can manage this feature through the Office 365 Securi
 
 ### What criteria does Outlook.com and Outlook Win32 desktop use to add the '?' and the 'via' properties?
 
-For the '?' in the sender image:  Outlook.com requires that the message pass either SPF or DKIM authentication and receive either a dmarc pass, or a composite authentication pass from Office 365 Spoof Intelligence. For details, see [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) and [Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md).
+For the '?' in the sender image:  Outlook.com requires that the message pass either SPF or DKIM authentication and receive either a dmarc pass, or a composite authentication pass from Office 365 Spoof Intelligence. For details, see [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) and [Use DKIM to validate outbound email sent from your custom domain](use-dkim-to-validate-outbound-email.md).
 
 For the via tag: If the domain in the From address is different from the domain in the DKIM signature or the SMTP MAIL FROM, Outlook.com displays the domain in one of those two fields (preferring the DKIM signature).
 
@@ -75,7 +75,7 @@ For the via tag: As a sender, you should ensure that either the domain in the DK
 
 ### Do Outlook.com and Outlook Win32 desktop show this for every message that doesn't pass authentication?
 
-Not necessarily. Office 365 may have other properties within the message to authenticate the sender.
+Not necessarily. Microsoft 365 may have other properties within the message to authenticate the sender.
 
 ## Related topics
 
