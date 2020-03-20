@@ -34,7 +34,7 @@ While you can construct your [advanced hunting](advanced-hunting-overview.md) qu
 - Tweak your queries directly from the results or apply filters
 
 ## View query results as tables or charts
-By default, advanced hunting displays query results as tabular data. You can display the same data as a visualization or chart.
+By default, advanced hunting displays query results as tabular data. You can also display the same data as chart.
 
 ![Image of advanced hunting query results displayed as a stacked chart](../../media/advanced-hunting-stacked-chart.jpg)
 *Query results for alerts by platform and severity displayed as a stacked chart*
