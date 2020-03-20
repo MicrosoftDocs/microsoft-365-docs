@@ -143,7 +143,7 @@ To view this report, in the [Security &amp; Compliance Center](https://protectio
   
 When you hover over a day in the chart, you can see how many spoof mail messages came through.
   
-Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report. To learn more about anti-spoof protection, see [Anti-spoofing protection in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spoofing-protection).
+Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report. To learn more about anti-spoof protection, see [Anti-spoofing protection in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spoofing-protection).
   
 ## Spam Detections report
 
