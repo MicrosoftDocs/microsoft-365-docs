@@ -67,7 +67,9 @@ Users can [add themselves or request approval](https://support.office.com/articl
 The group will appear in Outlook with members assigned to it.
 
 ::: moniker-end
+
 ::: moniker range="o365-germany"
+
 Users can [add themselves or request approval](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.
 1. In the admin center, refresh the page so your new group appears, select **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>, and then select the group that you want to add members to.
     
@@ -81,7 +83,9 @@ Users can [add themselves or request approval](https://support.office.com/articl
 The group will appear in Outlook with members assigned to it.
   
 ::: moniker-end
+
 ::: moniker range="o365-21vianet"
+
 Users can [add themselves or request approval](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.
 1. In the admin center, refresh the page so your new group appears, select **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>, and then select the group that you want to add members to.
     
