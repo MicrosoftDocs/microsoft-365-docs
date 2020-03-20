@@ -33,7 +33,7 @@ To find out what Microsoft 365 Business Premium includes, watch a [short video](
 
 There are three ways to get Microsoft 365 Business Premium:
 - **Buy Microsoft 365 Business Premium and complete your own setup**: To purchase Microsoft 365 Business Premium online, [follow the steps below](#sign-up-steps).
-- **For Microsoft partners**: If you're a partner, see [Get Microsoft 365 Business Premium from Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
+- **For Microsoft partners**: If you're a partner, see [Get Microsoft 365 Business Premium from Microsoft Partner Center](get-microsoft-365-business.md).
 - **Get help at a Microsoft store**: Head to a [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2109652). Microsoft stores can help you with questions about plans, help you purchase a plan that suits your business needs, and help you complete your setup.
 
 **Need something different?** You can:

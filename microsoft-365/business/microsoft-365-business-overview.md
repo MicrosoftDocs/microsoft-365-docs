@@ -101,7 +101,7 @@ To see the full list of security features, see [Microsoft 365 for business secur
 
 ## Get Microsoft 365 for business
 
-- If you have a partner, they'll get Microsoft 365 for business: [Get Microsoft 365 for business from Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
+- If you have a partner, they'll get Microsoft 365 for business: [Get Microsoft 365 for business from Microsoft Partner Center](get-microsoft-365-business.md).
 
 - If you don't have a partner and want to get Microsoft 365 for business, you can [buy it here](https://www.microsoft.com/microsoft-365/business) and follow the [sign up](sign-up.md) instructions.
 
