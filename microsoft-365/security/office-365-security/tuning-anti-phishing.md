@@ -16,11 +16,11 @@ description: "Admins can learn to identify the reasons why and how a phishing me
 
 # Tune anti-phishing protection
 
-Although Office 365 comes with a variety of anti-phishing features that are enabled by default, it's possible that some phishing messages could still get through to your mailboxes. This topic describes what you can do to discover why a phishing message got through, and what you can do to adjust the anti-phishing settings in your Exchange Online organization _without accidentally making things worse_.
+Although Microsoft 365 comes with a variety of anti-phishing features that are enabled by default, it's possible that some phishing messages could still get through to your mailboxes. This topic describes what you can do to discover why a phishing message got through, and what you can do to adjust the anti-phishing settings in your Exchange Online organization _without accidentally making things worse_.
 
 ## First things first: deal with any compromised accounts and make sure you block any more phishing messages from getting through
 
-If a recipient's account was compromised as a result of the phishing message, follow the steps in [Responding to a compromised email account in Office 365](responding-to-a-compromised-email-account.md).
+If a recipient's account was compromised as a result of the phishing message, follow the steps in [Responding to a compromised email account in Microsoft 365](responding-to-a-compromised-email-account.md).
 
 If your subscription includes Advanced Threat Protection (ATP), you can use [Office 365 Threat Intelligence](office-365-ti.md) to identify other users who also received the phishing message. You have additional options to block phishing messages:
 
@@ -34,7 +34,7 @@ Verify these ATP features are turned on.
 
 ## Report the phishing message to Microsoft
 
-Reporting phishing messages is helpful in tuning the filters that are used to protect all customers in Office 365.
+Reporting phishing messages is helpful in tuning the filters that are used to protect all customers.
 
 Send the phishing message _as an attachment_ in a new, otherwise empty message to **phish@office365.microsoft.com**. Don't just forward the original message; otherwise, we can't examine the original message headers. Or, you can use the [Report Message](https://docs.microsoft.com/office365/securitycompliance/enable-the-report-message-add-in) add-in in Outlook or Outlook on the web (formerly known as Outlook Web App).
 
@@ -54,9 +54,9 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - Periodically review the [Threat Protection Status report](view-reports-for-atp.md#threat-protection-status-report).
 
-- Some customers inadvertently allow phishing messages through by putting their own domains in the Allow sender or Allow domain list in anti-spam policies. If you choose to do this, you must use extreme caution. Although this configuration will allow some legitimate messages through, it will also allow malicious messages that would normally be blocked by the Office 365 spam and/or phish filters.
+- Some customers inadvertently allow phishing messages through by putting their own domains in the Allow sender or Allow domain list in anti-spam policies. If you choose to do this, you must use extreme caution. Although this configuration will allow some legitimate messages through, it will also allow malicious messages that would normally be blocked by the spam and/or phish filters.
 
-  The best way to deal with legitimate messages that are blocked by Office 365 (false positives) that involve senders in your domain is to fully and completely configure the SPF, DKIM, and DMARC records in DNS for _all_ of your email domains in Office 365:
+  The best way to deal with legitimate messages that are blocked by Microsoft 365 (false positives) that involve senders in your domain is to fully and completely configure the SPF, DKIM, and DMARC records in DNS for _all_ of your email domains:
 
   - Verify that your SPF record identifies _all_ sources of email for senders in your domain (don't forget third-party services!).
 
@@ -64,13 +64,13 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
   For configuration instructions, see:
   
-  - [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  - [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  - [Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md)
+  - [Use DKIM to validate outbound email sent from your custom domain](use-dkim-to-validate-outbound-email.md)
 
-  - [Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md)
+  - [Use DMARC to validate email](use-dmarc-to-validate-email.md)
 
-- Whenever possible, we recommend that you deliver email for your domain directly to Office 365. In other words, point your Office 365 domain's MX record to Office 365. Exchange Online Protection (EOP) is able to provide the best protection for your cloud users when their mail is delivered directly to Office 365. If you must use a third-party email hygiene system in front of EOP, ensure you have followed the guidance [here](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud).
+- Whenever possible, we recommend that you deliver email for your domain directly to Microsoft 365. In other words, point your Office 365 domain's MX record to Microsoft 365. Exchange Online Protection (EOP) is able to provide the best protection for your cloud users when their mail is delivered directly to Office 365. If you must use a third-party email hygiene system in front of EOP, ensure you have followed the guidance [here](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud).
 
 - Multi factor authentication (MFA) is a really good way to prevent compromised accounts. You should strongly consider enabling MFA for all of your users. For a phased approach, start by enabling MFA for your most sensitive users (admins, executives, etc.) before you enable MFA for everyone. For instructions, see [Set up multi-factor authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
