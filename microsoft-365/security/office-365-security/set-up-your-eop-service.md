@@ -63,7 +63,7 @@ After you configured connectors, wait 72 hours to allow propagation of your DNS-
 > [!TIP]
 > Configure settings on the SMTP server with a connection time out of 60 seconds. This setting is acceptable for most situations, allowing for some delay in the case of a message sent with a large attachment, for example.
 
-## Step 5: Use the Shell to ensure that spam is routed to each user's junk email folder
+## Step 5: Ensure that spam is routed to each user's Junk Email folder
 
 To ensure that spam (junk) email is routed correctly to each user's Junk Email folder, you must perform a couple of configuration steps. The steps are provided in [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
