@@ -135,13 +135,41 @@ To make Microsoft Secure Score a better representative of your security posture 
 
 To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
-### Removed "not scored" improvement actions
+### March 2020
+
+#### Supporting security defaults for Azure AD improvement actions
+
+Microsoft Secure Score will be updating improvement actions to support [security defaults in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which make it easier to help protect your organization with pre-configured security settings for common attacks.
+
+It will affect the following improvement actions:
+
+- Ensure all users can complete multi-factor authentication for secure access
+- Require MFA for administrative roles
+- Enable policy to block legacy authentication
+
+#### Removed improvement actions that don't meet expectations for reliable measurement or don't provide a useful representation of security posture
+
+To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement actions.
+
+- Store user documents in OneDrive for Business
+- Set up Office 365 ATP Safe Attachment policies
+- Set up Office 365 Safe Links to verify URLs
+- Do not allow mailbox delegation
+- Allow anonymous guest sharing links for sites and docs
+- Turn on Cloud App Security Console
+- Configure expiration time for external sharing links
+- Turn on audit data recording
+- Discover risky and non-compliant shadow IT applications
+- Review permissions & block risky OAuth applications connected to your environment
+- Set up versioning on SharePoint online document libraries
+
+#### Removed "not scored" improvement actions
 
 One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable.  
 
 For these reasons, all improvement actions that were not scored have been removed. No action is needed on your part.
 
-### Removed device improvement actions
+#### Removed device improvement actions
 
 After an evaluation of the Microsoft Secure Score device category of improvement actions, it was determined that those actions currently assess the policy state and not the configuration state of devices. Since configuration is directly tied to security posture, the existing device actions were determined to not fully represent organizational posture.  We will be removing the current actions in the device category as we work to provide a set of recommendations which directly use diagnostic data to more fully represent device security posture.
 
@@ -168,16 +196,7 @@ The following improvement actions have been removed:
 - Require all devices to have advanced security configurations
 - Review blocked devices report weekly
 
-### Removed improvement actions that don't meet expectations for reliable measurement
-
-To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we have removed the following improvement actions:
-
-- Turn on audit data recording
-- Discover risky and non-compliant shadow IT applications
-- Review permissions & block risky OAuth applications connected to your environment
-- Set up versioning on SharePoint online document libraries
-
-### MFA improvement action updates
+#### MFA improvement action updates
 
 To reflect the need for businesses to ensure the upmost security while applying policies that work with their business, Microsoft Secure Score has removed three improvement actions centered around multi-factor authentication, and added two.
 
@@ -194,7 +213,7 @@ Added improvement actions:
 
  These new improvement actions require registering your users or admins for multi-factor authentication (MFA) across your directory and establishing the right set of policies that fit your organizational needs. The main goal is have flexibility while ensuring all your users and admins can authenticate with multiple factors or risk-based identity verification prompts. That can take the form of having multiple policies that apply scoped decisions, or setting security defaults (coming March 16th) that let Microsoft decide when to challenge users for MFA.
 
-### Removed "review" improvement actions
+#### Removed "review" improvement actions
 
 One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Review improvement actions are not measured to the same standard as other improvement actions.  
 
