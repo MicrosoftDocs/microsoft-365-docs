@@ -26,14 +26,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
-description: "Learn how to troubleshoot errors you might see while working with AutoPilot device files in Microsoft 365 Business."
+description: "Learn how to troubleshoot errors you might see while working with AutoPilot device files in Microsoft 365 Business Premium."
 ---
 
 # Troubleshoot AutoPilot device errors
 
 ## Device file error messages
 
-Here's info on some of the errors you might see while working with AutoPilot device files in Microsoft 365 Business. 
+Here's info on some of the errors you might see while working with AutoPilot device files in Microsoft 365 Business Premium. 
   
 |**Error code**|**Fix to try**|
 |:-----|:-----|

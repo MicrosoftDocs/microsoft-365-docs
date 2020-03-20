@@ -1,5 +1,5 @@
 ---
-title: "Sign up for Microsoft 365 Business"
+title: "Sign up for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -24,21 +24,21 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Learn what Microsoft 365 Business includes, and get step-by-step guidance in signing up for Microsoft 365 Business."
+description: "Learn what Microsoft 365 Business Premium includes, and get step-by-step guidance in signing up for Microsoft 365 Business Premium."
 ---
 
-# Sign up for Microsoft 365 Business
+# Sign up for Microsoft 365 Business Premium
 
-To find out what Microsoft 365 Business includes, watch a [short video](https://go.microsoft.com/fwlink/?linkid=2109651) and see the [Overview](microsoft-365-business-overview.md).
+To find out what Microsoft 365 Business Premium includes, watch a [short video](https://go.microsoft.com/fwlink/?linkid=2109651) and see the [Overview](microsoft-365-business-overview.md).
 
-There are three ways to get Microsoft 365 Business:
-- **Buy Microsoft 365 Business and complete your own setup**: To purchase Microsoft 365 Business online, [follow the steps below](#sign-up-steps).
-- **For Microsoft partners**: If you're a partner, see [Get Microsoft 365 Business from Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
+There are three ways to get Microsoft 365 Business Premium:
+- **Buy Microsoft 365 Business Premium and complete your own setup**: To purchase Microsoft 365 Business Premium online, [follow the steps below](#sign-up-steps).
+- **For Microsoft partners**: If you're a partner, see [Get Microsoft 365 Business Premium from Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
 - **Get help at a Microsoft store**: Head to a [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2109652). Microsoft stores can help you with questions about plans, help you purchase a plan that suits your business needs, and help you complete your setup.
 
 **Need something different?** You can:
-- [Upgrade your Office 365 plan to Microsoft 365 Business](migrate-to-microsoft-365-business.md).
-- [Get a free trial](https://go.microsoft.com/fwlink/p/?linkid=2102309) of Microsoft 365 Business for one month.
+- [Upgrade your Office 365 plan to Microsoft 365 Business Premium](migrate-to-microsoft-365-business.md).
+- [Get a free trial](https://go.microsoft.com/fwlink/p/?linkid=2102309) of Microsoft 365 Business Premium for one month.
 - [Sign up for Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkID=510935) if you need a plan with fewer features. Find out what each business plan includes at [products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397).
 - [Sign up for a home or family plan](https://go.microsoft.com/fwlink/?linkid=2109398) if you're not buying for a business. 
 
@@ -54,7 +54,7 @@ To sign up and purchase Microsoft 365 for your business, complete the following 
 
 1. On the [Microsoft 365 for business page](https://go.microsoft.com/fwlink/?linkid=2109654), select **See plans & pricing**. 
 2. On the next page, find out the monthly cost, and then scroll down the page to find out more about what's included in Microsoft 365 Business. Under Microsoft 365 Business, select **Buy now**.
-3. On the **Thank you for choosing Microsoft 365 Business** page, enter your information to get started.
+3. On the **Thank you for choosing Microsoft 365 Business Premium** page, enter your information to get started.
 4. In **step 1**, enter an email address that you already use. This can be your current work email address or any address you want Microsoft to use to communicate with you during setup. It is also the address where we'll send you information about your bill and renewals. Then select, **Set up account**.
 5. In **step 2**, enter your name, business phone number, company name, and location. Your Country or Region determines the exact services you receive from Microsoft, and can't be changed after you complete this step. Select **Next**.
     > [!NOTE]

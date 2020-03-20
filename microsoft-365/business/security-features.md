@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Business security and compliance features"
+title: "Microsoft 365 Business Premium security and compliance features"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
-description: "Learn about the security features that come with Microsoft 365 Business to help safeguard your data on PCs, phones, and tablets."
+description: "Learn about the security features that come with Microsoft 365 Business Premium to help safeguard your data on PCs, phones, and tablets."
 ---
 
-# Microsoft 365 Business security and compliance features
+# Microsoft 365 Business Premium security and compliance features
 
-Microsoft 365 Business offers simplified security features to help safeguard your data on PCs, phones, and tablets.
+Microsoft 365 Business Premium offers simplified security features to help safeguard your data on PCs, phones, and tablets.
     
 ## Microsoft 365 admin center security features
 
 [![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-You can manage many of the Microsoft 365 Business security features in the admin center, which gives you a simplified way to turn these features on or off. In the admin center, you can do the following:
+You can manage many of the Microsoft 365 Business Premium security features in the admin center, which gives you a simplified way to turn these features on or off. In the admin center, you can do the following:
   
 - [Set application management settings for Android or iOS devices](app-protection-settings-for-android-and-ios.md) . 
     
@@ -57,7 +57,7 @@ You can manage many of the Microsoft 365 Business security features in the admin
     
 ## Additional security features 
 
-Advanced features in Microsoft 365 Business are available to help you protect your business against cyber-threats and safeguard sensitive information.
+Advanced features in Microsoft 365 Business Premium are available to help you protect your business against cyber-threats and safeguard sensitive information.
   
 - **[Office 365 Advanced Threat Protection](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
     
@@ -90,7 +90,7 @@ Advanced features in Microsoft 365 Business are available to help you protect yo
     
 ## Compliance features
 
-Your Microsoft 365 Business subscription includes features that help you maintain compliance and regulatory standards.
+Your Microsoft 365 Business Premium subscription includes features that help you maintain compliance and regulatory standards.
 
 - **[Overview of data loss prevention policies](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)** (DLP). 
     
@@ -102,7 +102,7 @@ Your Microsoft 365 Business subscription includes features that help you maintai
     
 - **[Sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 Business includes all the features of [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). With this plan, you can create **Sensitivity labels** that allow you to control access to sensitive information in email and documents, with controls like "Do not forward" and "Do not copy." You can also classify sensitive information as "Confidential" and specify how classified information can be shared outside and inside the business. Enterprise-grade encryption is easy to apply to email and documents to keep your information private. You can also install the Azure Information Protection client add-in for Office apps. For more information, see [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). For Sensitivity labels, install the **AzInfoProtection_UL.exe**.
+   Microsoft 365 Business Premium includes all the features of [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). With this plan, you can create **Sensitivity labels** that allow you to control access to sensitive information in email and documents, with controls like "Do not forward" and "Do not copy." You can also classify sensitive information as "Confidential" and specify how classified information can be shared outside and inside the business. Enterprise-grade encryption is easy to apply to email and documents to keep your information private. You can also install the Azure Information Protection client add-in for Office apps. For more information, see [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). For Sensitivity labels, install the **AzInfoProtection_UL.exe**.
 
 You can manage these features in the Security &amp; Compliance center and the Intune admin center. Over time the simplified controls will be added to the Microsoft 365 admin center.
   
@@ -111,11 +111,11 @@ You can manage these features in the Security &amp; Compliance center and the In
 
  ### Are these security features available in all markets?
   
-Yes, these features are available in all markets where Microsoft 365 Business is sold.
+Yes, these features are available in all markets where Microsoft 365 Business Premium is sold.
   
 ### How do I find the Security &amp; Compliance center?
   
-1. [Sign in to Microsoft 365 Business](https://portal.microsoft.com/) by using your admin credentials. 
+1. [Sign in to Microsoft 365 Business Premium](https://portal.microsoft.com/) by using your admin credentials. 
     
 2. In the left nav, locate **Admin centers** and expand it. 
     

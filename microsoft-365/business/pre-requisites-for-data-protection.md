@@ -1,5 +1,5 @@
 ---
-title: "Prerequisites for protecting data on devices with Microsoft 365 Business"
+title: "Prerequisites for protecting data on devices with Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,14 +20,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
-description: "Learn about the requirements for setting up your organization with Microsoft 365 Business and protecting work data on your users' devices."
+description: "Learn about the requirements for setting up your organization with Microsoft 365 for business and protecting work data on your users' devices."
 ---
 
-# Prerequisites for protecting data on devices with Microsoft 365 Business
+# Prerequisites for protecting data on devices with Microsoft 365 for business
 
-The first step in setting up your organization with Microsoft 365 Business is to make sure you can meet the prerequisites.
+The first step in setting up your organization with Microsoft 365 for business is to make sure you can meet the prerequisites.
   
-## Requirements for setting up your organization with Microsoft 365 Business
+## Requirements for setting up your organization with Microsoft 365 for business
 
 - Windows devices must be running Windows 7 Professional, Windows 8 Pro, or Windows 8.1 Pro.
     
@@ -35,10 +35,10 @@ The first step in setting up your organization with Microsoft 365 Business is to
     
     If you're running Windows 10 Home, then you must **purchase** Windows  10 Pro. See [upgrade Windows 10 Home to Windows 10 Pro](https://support.office.com/article/0aee10c1-4d34-43ee-a325-579c6c2df90e?ui=en-US&rs=en-US&ad=US) for instructions. 
     
-- Remove devices from mobile management solutions (Mobile Iron, AirWatch, and so on). You'll enroll all the people in your organization in Microsoft 365 Business mobile management.
+- Remove devices from mobile management solutions (Mobile Iron, AirWatch, and so on). You'll enroll all the people in your organization in Microsoft 365 for business mobile management.
     
 - Apple iOS 8.0 and later.
     
     Google Android 4.0 and later (including Samsung KNOX Standard 4.0 and higher). For more information, see [Intune supported devices](https://go.microsoft.com/fwlink/p/?linkid=852307).
     
-- If you have existing Office applications on user computers, read [prepare for Office client installation](prepare-for-office-client-deployment.md) to understand steps you might need to take before you can set up Microsoft 365 Business to install Office 2016 on user computers. 
+- If you have existing Office applications on user computers, read [prepare for Office client installation](prepare-for-office-client-deployment.md) to understand steps you might need to take before you can set up Microsoft 365 for business to install Office 2016 on user computers. 

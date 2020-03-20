@@ -1,5 +1,5 @@
 ---
-title: "Set up Microsoft 365 Business"
+title: "Set up Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -28,12 +28,12 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: "Discover the setup steps for Microsoft 365 Business, including adding a domain and users, setting up security policies, and more."
+description: "Discover the setup steps for Microsoft 365 Business Premium, including adding a domain and users, setting up security policies, and more."
 ---
 
-# Set up Microsoft 365 Business in the setup wizard
+# Set up Microsoft 365 Business Premium in the setup wizard
 
-Watch this video for an overview of Microsoft 365 Business setup.<br><br>
+Watch this video for an overview of Microsoft 365 Business Premium setup.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
@@ -43,7 +43,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 [![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-When you purchase Microsoft 365 Business, you have the option of using a domain you own, or buying one during the [sign-up](sign-up.md).
+When you purchase Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the [sign-up](sign-up.md).
 
 - If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
 
@@ -77,11 +77,11 @@ You can add users in the wizard, but you can also [add users later](add-users-m3
 
 #### Add users in the wizard
 
-Any users you add in the wizard get automatically assigned a Microsoft 365 Business license.
+Any users you add in the wizard get automatically assigned a Microsoft 365 Business Premium license.
 
 ![Screenshot of the Add new users page in the wizard](../media/addnewuserspage.png)
 
-1. If your Microsoft 365 Business subscription has existing users (for example, if you used Azure AD Connect), you get an option to assign licenses to them now. Go ahead and add licenses to them as well.
+1. If your Microsoft 365 Business Premium subscription has existing users (for example, if you used Azure AD Connect), you get an option to assign licenses to them now. Go ahead and add licenses to them as well.
 
 2. After you've added the users, you'll also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
 
@@ -125,7 +125,7 @@ On the left nav, select **Setup** and then, under **Sing-in and security**, choo
 
 If you chose to automatically install Office apps during setup, the apps will install on the Windows 10 devices once the users have signed in to Azure AD from their Windows devices, using their work credentials.
 
-To install Office on mobile iOS or Android devices, see [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md).
+To install Office on mobile iOS or Android devices, see [Set up mobile devices for Microsoft 365 Business Premium users](set-up-mobile-devices.md).
 
 You can also install Office individually. See [install Office on a PC or Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) for instructions.
 

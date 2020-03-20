@@ -20,50 +20,50 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Learn how to move your business to Microsoft 365 Business from Office 365 E3."
+description: "Learn how to move your business to Microsoft 365 Business Premium from Office 365 E3."
 ---
 
-# Migrating from Office 365 E3 to Microsoft 365 Business 
+# Migrating from Office 365 E3 to Microsoft 365 Business Premium 
 
-Microsoft 365 Business has everything you need for your small business, combining the best-in-class cloud-based productivity apps with simple device management and security. If you currently have an Office 365 E3 subscription, but don't have more than 300 employees, consider switching to Microsoft 365 Business for added security features.
+Microsoft 365 Business Premium has everything you need for your small business, combining the best-in-class cloud-based productivity apps with simple device management and security. If you currently have an Office 365 E3 subscription, but don't have more than 300 employees, consider switching to Microsoft 365 Business for added security features.
 
 Migrating is easy: First you switch licenses and all your data and user information in your current subscription is maintained. After the migration, you'll need to set up the features that are added in Microsoft 365 Business.
 
-## Differences between Office 365 E3 and Microsoft 365 Business
+## Differences between Office 365 E3 and Microsoft 365 Business Premium
 
-This table shows the differences between Microsoft 365 Business and Office 365 E3.
+This table shows the differences between Microsoft 365 Business Premium and Office 365 E3.
 
-| Feature    | Support in Microsoft 365 Business    | Support in Office 365 E3 | 
+| Feature    | Support in Microsoft 365 Business Premium    | Support in Office 365 E3 | 
 |:-------|:-----|:-----|
 | **On-premises**        | | | 
 | Office apps<sup>1</sup>    | Microsoft 365 Apps for business    | Microsoft 365 Apps for enterprise | 
 | **Cloud productivity apps**        | | | 
 | Exchange Online and Outlook    | 50 GB storage limit per mailbox and unlimited Exchange Online Archiving    | 100 GB storage limit per mailbox and unlimited Exchange Online Archiving | 
-| Teams    | ![Included with Microsoft 365 Business](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
+| Teams    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
 | OneDrive for Business    | 1 TB storage limit per user    | Unlimited | 
-| Yammer, SharePoint Online, Planner, Stream    | ![Included with Microsoft 365 Business](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
-| StaffHub    | ![Included with Microsoft 365 Business](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
-| Outlook Customer Manager, MileIQ    | ![Included with Microsoft 365 Business](../media/check-mark.png)    | | 
+| Yammer, SharePoint Online, Planner, Stream    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
+| StaffHub    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png) | 
+| Outlook Customer Manager, MileIQ    | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Threat Protection**        | | | 
-| Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Included with Microsoft 365 Business](../media/check-mark.png)    | Not included, but can be added on | 
+| Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
 | **Identity management**        | | | 
-| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business](../media/check-mark.png)    |  | 
+| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
 | **Device and app management**        | | |
-| Microsoft Intune, Windows AutoPilot|     ![Included with Microsoft 365 Business](../media/check-mark.png)    |  |
-| Shared computer activation|     ![Included with Microsoft 365 Business](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png)| 
-| Upgrade rights to Windows 10 Pro from Win 7/8.1 Pro licenses|     ![Included with Microsoft 365 Business](../media/check-mark.png)    || 
+| Microsoft Intune, Windows AutoPilot|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    |  |
+| Shared computer activation|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png)| 
+| Upgrade rights to Windows 10 Pro from Win 7/8.1 Pro licenses|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    || 
 | **Information protection**        | | |
-|Office 365 Data Loss Prevention|    ![Included with Microsoft 365 Business](../media/check-mark.png)|![Included with Office 365 E3](../media/check-mark.png)|
-|Azure Information Protection Plan 1, Bitlocker enforcement|![Included with Microsoft 365 Business](../media/check-mark.png)||
-|Azure Information Protection Plan 1, Sensitivity labels|![Included with Microsoft 365 Business](../media/check-mark.png)||
+|Office 365 Data Loss Prevention|    ![Included with Microsoft 365 Business Premium](../media/check-mark.png)|![Included with Office 365 E3](../media/check-mark.png)|
+|Azure Information Protection Plan 1, Bitlocker enforcement|![Included with Microsoft 365 Business Premium](../media/check-mark.png)||
+|Azure Information Protection Plan 1, Sensitivity labels|![Included with Microsoft 365 Business Premium](../media/check-mark.png)||
 |**Client Access License (CAL rights)**|||
 |Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Included with Office 365 E3](../media/check-mark.png)|
 
-<sup>1</sup> The Microsoft 365 Business version of the Office apps doesn't include volume activation through Group Policy, app telemetry, update controls, spreadsheet compare and inquire, or business Intelligence.
+<sup>1</sup> The Microsoft 365 Business Premium version of the Office apps doesn't include volume activation through Group Policy, app telemetry, update controls, spreadsheet compare and inquire, or business Intelligence.
 
 ## Migration
 
-To migrate your subscription, see [Change plans manually](../commerce/subscriptions/change-plans-manually.md) for instructions if you want to move just a few people to Microsoft 365 Business. You can also [upgrade everyone automatically](../commerce/subscriptions/upgrade-to-different-plan.md), or work with a partner to move your E3 subscription and licenses to a Microsoft 365 Business subscription.
+To migrate your subscription, see [Change plans manually](../commerce/subscriptions/change-plans-manually.md) for instructions if you want to move just a few people to Microsoft 365 Business Premium. You can also [upgrade everyone automatically](../commerce/subscriptions/upgrade-to-different-plan.md), or work with a partner to move your E3 subscription and licenses to a Microsoft 365 Business Premium subscription.
 The following sections describe the changes you need to make, if any, and what you can do after the migration.
 
 ### Office 365 E3 subscription configuration and data
@@ -82,9 +82,9 @@ If your Windows aren't already on Windows Pro Creator update, [upgrade them to W
 > [!NOTE]
 > If you set up Office 365 MDM policies and devices, those devices will be listed on the **Devices** page in the Microsoft 365 admin center. Any policies you set up will show up in the list of classic policies in the [Intune portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).
 
-After you have assigned licenses to Microsoft 365 Business, you can start protecting the users' devices and files.
+After you have assigned licenses to Microsoft 365 Business Premium, you can start protecting the users' devices and files.
 
-If you upgraded everyone in your organization to Microsoft 365 Business, you'll see the setup wizard on the Home page, and can follow the [Set up Microsoft 365 Business in the setup wizard](set-up.md) steps to protect files and mobile devices.
+If you upgraded everyone in your organization to Microsoft 365 Business Premium, you'll see the setup wizard on the Home page, and can follow the [Set up Microsoft 365 Business Premium in the setup wizard](set-up.md) steps to protect files and mobile devices.
 
 You can also complete these steps on the Devices page:
   
@@ -104,13 +104,13 @@ You can also complete these steps on the Devices page:
   
 4. Once you set up policies, you and your employees can set up devices:
     
-  - See [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md) for steps for Windows devices. 
+  - See [Set up Windows devices for Microsoft 365 Business Premium users](set-up-windows-devices.md) for steps for Windows devices. 
     
-  - See [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md) for steps for Android phones and iPhones. 
+  - See [Set up mobile devices for Microsoft 365 Business Premium users](set-up-mobile-devices.md) for steps for Android phones and iPhones. 
 
 ### Threat protection
 
-After migrating to Microsoft 365 Business, you have Office 365 ATP. See [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) for an overview. To set up, see [set up ATP safe links](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), [set up ATP safe attachments](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), and [set up ATP anti-phishing](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c).
+After migrating to Microsoft 365 Business Premium, you have Office 365 ATP. See [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) for an overview. To set up, see [set up ATP safe links](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), [set up ATP safe attachments](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), and [set up ATP anti-phishing](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### Sensitivity labels
 

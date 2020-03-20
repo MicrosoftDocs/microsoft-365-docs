@@ -25,23 +25,23 @@ description: "Learn to Manage Microsoft 365 for business related admin tasks, mo
 
 # Manage Microsoft 365 for business
 
-## General Microsoft 365 Business admin tasks
+## General Microsoft 365 for business admin tasks
 
-Most of the [admin content](https://docs.microsoft.com/office365/admin/admin-home) for Office 365 for business also applies to Microsoft 365 Business.
+Most of the [admin content](https://docs.microsoft.com/office365/admin/admin-home) for Office 365 for business also applies to Microsoft 365 for business.
 
-- [Add more users to Microsoft 365 Business](add-users-m365b.md)
+- [Add more users to Microsoft 365 for business](add-users-m365b.md)
     
 - [View policies and devices](view-policies-and-devices.md)
     
-- [Microsoft 365 Business security features](security-features.md)
+- [Microsoft 365 for business security features](security-features.md)
     
-- [How do protection features in Microsoft 365 Business map to Intune settings](map-protection-features-to-intune-settings.md)
+- [How do protection features in Microsoft 365 for business map to Intune settings](map-protection-features-to-intune-settings.md)
     
-See the following sections on how to use Microsoft 365 Business to protect your organization's data on PCs and mobile devices.
+See the following sections on how to use Microsoft 365 for business to protect your organization's data on PCs and mobile devices.
   
 ## Manage mobile devices
 
-- [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md)
+- [Set up mobile devices for Microsoft 365 for business users](set-up-mobile-devices.md)
     
 - [Set app protection settings for Android or iOS devices](app-protection-settings-for-android-and-ios.md)
     
@@ -51,9 +51,9 @@ See the following sections on how to use Microsoft 365 Business to protect your 
     
 ## Manage Windows 10 PCs
 
-- [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md)
+- [Set up Windows devices for Microsoft 365 for business users](set-up-windows-devices.md)
 
-    Read [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md) before you auto-install Office. 
+    Read [Prepare for Office client deployment by Microsoft 365 for business](prepare-for-office-client-deployment.md) before you auto-install Office. 
     
 - [Set device protection settings for Windows 10 devices](protection-settings-for-windows-10-pcs.md)
     
@@ -69,7 +69,7 @@ See the following sections on how to use Microsoft 365 Business to protect your 
     
 ### Use AutoPilot to deploy Windows 10 devices
 
-The following topics describe how you can use Windows AutoPilot in Microsoft 365 Business to pre-configure Windows 10 devices.
+The following topics describe how you can use Windows AutoPilot in Microsoft 365 for business to pre-configure Windows 10 devices.
   
 - [Use the step-by-step guide to add Autopilot devices and profile](add-autopilot-devices-and-profile.md)
     
@@ -85,12 +85,12 @@ The following topics describe how you can use Windows AutoPilot in Microsoft 365
     
 ## Set up and prerequisite information
 
-- [Prerequisites for protecting data on devices with Microsoft 365 Business](pre-requisites-for-data-protection.md)
+- [Prerequisites for protecting data on devices with Microsoft 365 for business](pre-requisites-for-data-protection.md)
     
-- [Set up Microsoft 365 Business by using the setup wizard](set-up.md)
+- [Set up Microsoft 365 for business by using the setup wizard](set-up.md)
     
-- [Migrate to Microsoft 365 Business](migrate-to-microsoft-365-business.md)
+- [Migrate to Microsoft 365 for business](migrate-to-microsoft-365-business.md)
     
-- [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-devices.md)
+- [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business](manage-windows-devices.md)
     
 - [Additional security features](security-features.md#additional-security-features)
