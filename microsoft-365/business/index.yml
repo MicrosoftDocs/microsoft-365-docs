@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
-title: Microsoft 365 Business resources # < 60 chars
+title: Microsoft 365 Business Premium resources # < 60 chars
 summary: Microsoft 365 Business is a subscription service that includes Office 365 productivity tools plus advanced capabilities to help protect your business against cyberthreats, protect your data, and manage the devices. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
 metadata:
-  title: Microsoft 365 Business resources # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Microsoft 365 Business Premium resources # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: description # Required; article description that is displayed in search results. < 160 chars.
   ms.service: o365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
@@ -20,14 +20,14 @@ conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
   #Card
-    - title: What is Microsoft 365 Business?
+    - title: What is Microsoft 365 Business Premium?
       links:
         - url: microsoft-365-business-overview.md
           itemType: overview
           text: Overview
         - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
           itemType: video
-          text: Microsoft 365 Business training
+          text: Microsoft 365 Business Premium training
         - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
           itemType: overview
           text: Compare plans
@@ -38,7 +38,7 @@ conceptualContent:
           itemType: reference
           text: FAQ
   #Card
-    - title: Set up Microsoft 365 Business
+    - title: Set up Microsoft 365 Business Premium
       links:
         - url: set-up.md
           itemType: how-to-guide
@@ -185,7 +185,7 @@ conceptualContent:
       links:
         - url: sign-up.md
           itemType: get-started
-          text: Sign up for Microsoft 365 Business
+          text: Sign up for Microsoft 365 Business Premium
         - url: migrate-to-microsoft-365-business.md
           itemType: how-to-guide
           text: Migrate from Microsoft 365 Business Standard 

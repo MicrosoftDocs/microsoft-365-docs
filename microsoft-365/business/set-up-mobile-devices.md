@@ -1,5 +1,5 @@
 ---
-title: "Set up mobile devices for Microsoft 365 Business users"
+title: "Set up mobile devices for Microsoft 365 for business users"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,10 +23,10 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: "Install Office on an iPhone or an Android phone, and your work files in Office apps will be protected by Microsoft 365 Business."
+description: "Install Office on an iPhone or an Android phone, and your work files in Office apps will be protected by Microsoft 365 for business."
 ---
 
-# Set up mobile devices for Microsoft 365 Business users
+# Set up mobile devices for Microsoft 365 for business users
 
 Follow the instructions in the tabs to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 Business.
 
@@ -36,7 +36,7 @@ The example is for Outlook, but applies for any other Office apps you want to in
 
 ## [iPhone](#tab/iPhone)
   
-Watch a short video on how to set up Office apps on iOS devices with Microsoft 365 Business.<br><br>
+Watch a short video on how to set up Office apps on iOS devices with Microsoft 365 for business.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
@@ -54,7 +54,7 @@ When the installation is done, tap the **Open** button to open Outlook and then 
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-Enter your work email address on the **Add Email Account** screen \> **Add Account**, and then enter your Microsoft 365 Business credentials \> **Sign in**.
+Enter your work email address on the **Add Email Account** screen \> **Add Account**, and then enter your Microsoft 365 for business credentials \> **Sign in**.
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -82,7 +82,7 @@ Enter Microsoft Outlook in the Google Play search box and tap **Install**. Once 
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-In the Outlook app, tap **Get Started**, then add your Microsoft 365 Business email account \> **Continue**, and sign in with your organization credentials.
+In the Outlook app, tap **Get Started**, then add your Microsoft 365 for business email account \> **Continue**, and sign in with your organization credentials.
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   

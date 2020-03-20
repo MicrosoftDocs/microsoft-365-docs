@@ -1,10 +1,10 @@
-- name: Microsoft 365 Business
+- name: Microsoft 365 Business Premium
   items: 
     - name: Microsoft 365
       href: index.yml
-    - name: What is Microsoft 365 Business?
+    - name: What is Microsoft 365 Business Premium?
       href: microsoft-365-business-overview.md
-    - name: Get Microsoft 365 Business
+    - name: Get Microsoft 365 Business Premium
       href: sign-up.md
     - name: Pre-requisites for data protection
       href: pre-requisites-for-data-protection.md
@@ -12,7 +12,7 @@
       items: 
         - name: Overview of setup
           href: set-up-overview.md
-        - name: Set up Microsoft 365 Business
+        - name: Set up Microsoft 365 Business Premium
           href: set-up.md
         - name: Secure Windows 10 computers
           href: secure-win-10-pcs.md
@@ -71,7 +71,7 @@
               href: validate-settings-on-windows-10-pcs.md
         - name: App protection settings for Windows 10 PCs
           href: protection-settings-for-windows-10-devices.md
-    - name: Migrate to Microsoft 365 Business
+    - name: Migrate to Microsoft 365 Business Premium
       items: 
         - name: Migrate from Microsoft 365 Business Standard
           href: migrate-to-microsoft-365-business.md
@@ -99,7 +99,7 @@
           href: autopilot-profile-settings.md
         - name: Device states
           href: device-states.md
-    - name: Microsoft 365 Business FAQ
+    - name: Microsoft 365 Business Premium FAQ
       href: support/microsoft-365-business-faqs.md
 - name: Office 365 Enterprise
   href: https://docs.microsoft.com/office365/enterprise

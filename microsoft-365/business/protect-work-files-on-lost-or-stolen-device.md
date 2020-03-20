@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
-description: "Learn about the settings available in Microsoft 365 Business to protect work files if a user's device is lost or stolen."
+description: "Learn about the settings available in Microsoft 365 for business to protect work files if a user's device is lost or stolen."
 ---
 
 # Protect work files when a mobile device is lost or stolen

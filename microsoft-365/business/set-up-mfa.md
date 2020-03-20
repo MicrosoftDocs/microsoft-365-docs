@@ -19,7 +19,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Set up multi-factor authentication for Microsoft 365 Business."
+description: "Set up multi-factor authentication for Microsoft 365 Business Premium."
 ---
 
 # Multi-factor authentication

@@ -21,12 +21,12 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Learn how to secure Windows 10 PCs after you have set up Microsoft 365 Business."
+description: "Learn how to secure Windows 10 PCs after you have set up Microsoft 365 for business."
 ---
 
 # Secure Windows 10 computers
 
-After you have [set up](set-up.md) Microsoft 365 Business, it is time to protect the Windows 10 computers in your org from theft, and malicious threats like viruses and malware.
+After you have [set up](set-up.md) Microsoft 365 for business, it is time to protect the Windows 10 computers in your org from theft, and malicious threats like viruses and malware.
 Watch this video for an overview of how to set up policies to secure your Windows 10 computers.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 

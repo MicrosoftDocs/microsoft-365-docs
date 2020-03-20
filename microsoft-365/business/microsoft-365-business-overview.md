@@ -1,5 +1,5 @@
 ---
-title: "Overview of Microsoft 365 Business"
+title: "Overview of Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -27,24 +27,24 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "Learn about Microsoft 365 Business, a subscription service that includes Office 365 plus advanced protection for your business against cyber threats."
+description: "Learn about Microsoft 365 for business, a subscription service that includes Office 365 plus advanced protection for your business against cyber threats."
 ---
 
-# Overview of Microsoft 365 Business
+# Overview of Microsoft 365 for business
 
-## What is Microsoft 365 Business
+## What is Microsoft 365 for business
 
-Microsoft 365 Business is a subscription service that includes Office 365 productivity tools plus advanced capabilities to help protect your business against cyber threats, protect your data, and manage devices.
+Microsoft 365 for business is a subscription service that includes Office 365 productivity tools plus advanced capabilities to help protect your business against cyber threats, protect your data, and manage devices.
 
-Watch this video for a quick overview of Microsoft 365 Business.<br><br>
+Watch this video for a quick overview of Microsoft 365 for business.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
 
-Microsoft 365 Business is meant for up to 300 licenses. If you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information.
+Microsoft 365 for business is meant for up to 300 licenses. If you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information.
 
-See the [Microsoft 365 Business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) for the entire list of features.
+See the [Microsoft 365 for business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) for the entire list of features.
   
 ## Small business security needs
 
@@ -57,13 +57,13 @@ Your business data can be compromised in many ways. You and your users can compr
 - Email vulnerabilities, including sharing sensitive data, phishing attempts, malware, and so on.
 - When people who should not, can access documents with sensitive information.
 
-Microsoft 365 Business helps safeguard your data in each of these instances. The security features that protect your business data are detailed in the following figure.
+Microsoft 365 for business helps safeguard your data in each of these instances. The security features that protect your business data are detailed in the following figure.
 
 ![A figure that shows how M365B protects your business.](../media/m365businessvalueadd.png)
 
 ## How your data and devices are protected
 
-Microsoft 365 Business helps **defended against threats** by:
+Microsoft 365 for business helps **defended against threats** by:
 
 - Scanning links in emails and documents in real time to block unsafe web sites (ATP Safe Links).
 
@@ -97,15 +97,15 @@ Your **devices are secured** by:
 
 - Using simplified controls to manage policies for all the Windows 10 PCs in your company, enforcing BitLocker encryption and automatically installing critical Windows updates (Enforce Windows update policies).
 
-To see the full list of security features, see [Microsoft 365 Business security features](security-features.md). After you [Set up Microsoft 365 Business](set-up.md), see [increase threat protection](increase-threat-protection.md) and [set up compliance features](set-up-compliance.md) to get started with the security features that aren't included as a part of the guided setup. Read also [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a good overview on how to set up protections against cyber criminals and hackers.
+To see the full list of security features, see [Microsoft 365 for business security features](security-features.md). After you [Set up Microsoft 365 for business](set-up.md), see [increase threat protection](increase-threat-protection.md) and [set up compliance features](set-up-compliance.md) to get started with the security features that aren't included as a part of the guided setup. Read also [Top 10 ways to secure Office 365 and Microsoft 365 for business plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a good overview on how to set up protections against cyber criminals and hackers.
 
-## Get Microsoft 365 Business
+## Get Microsoft 365 for business
 
-- If you have a partner, they'll get Microsoft 365 Business: [Get Microsoft 365 Business from Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
+- If you have a partner, they'll get Microsoft 365 for business: [Get Microsoft 365 for business from Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
 
-- If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/microsoft-365/business) and follow the [sign up](sign-up.md) instructions.
+- If you don't have a partner and want to get Microsoft 365 for business, you can [buy it here](https://www.microsoft.com/microsoft-365/business) and follow the [sign up](sign-up.md) instructions.
 
-- You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer) to both buy Microsoft 365 Business and get set-up help.
+- You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer) to both buy Microsoft 365 for business and get set-up help.
 
     > [!NOTE]
     > This link is for stores in U.S. only

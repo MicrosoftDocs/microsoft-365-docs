@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
-description: "Discover how, with Microsoft 365 Business, you can automatically make sure users have the latest version of Office on all their Windows 10 devices."
+description: "Discover how, with Microsoft 365 Business Premium, you can automatically make sure users have the latest version of Office on all their Windows 10 devices."
 ---
 
 # Install Office on Windows 10 during setup
 
 ![Banner that point to https://aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)
 
-This setting is off by default. You can turn it on to make sure users have the latest version of Office on all their Windows 10 devices, but first verify that all prerequisites are met. Users must be licensed for Microsoft 365 Business for this setting to push the software to the device, in addition to other requirements described in [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md).
+This setting is off by default. You can turn it on to make sure users have the latest version of Office on all their Windows 10 devices, but first verify that all prerequisites are met. Users must be licensed for Microsoft 365 Business Premium for this setting to push the software to the device, in addition to other requirements described in [Prepare for Office client deployment by Microsoft 365 Business Premium](prepare-for-office-client-deployment.md).
   
 We recommend that you accept the default setting during setup.

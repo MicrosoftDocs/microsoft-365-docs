@@ -1,5 +1,5 @@
 ---
-title: "Set up Windows devices for Microsoft 365 Business users"
+title: "Set up Windows devices for Microsoft 365 Business Premium users"
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -24,16 +24,16 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: "Learn how to set up Windows devices running Windows 10 Pro for Microsoft 365 Business users, enabling centralized management and security controls."
+description: "Learn how to set up Windows devices running Windows 10 Pro for Microsoft 365 Business Premium users, enabling centralized management and security controls."
 ---
 
-# Set up Windows devices for Microsoft 365 Business users
+# Set up Windows devices for Microsoft 365 Business Premium users
 
-## Prerequisites for setting up Windows devices for Microsoft 365 Business users
+## Prerequisites for setting up Windows devices for Microsoft 365 Business Premium users
 
-Before you can set up Windows devices for Microsoft 365 Business users, make sure all the Windows devices are running Windows 10 Pro, version 1703 (Creators Update). Windows 10 Pro is a prerequisite for deploying Windows 10 Business, which is a set of cloud services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business.
+Before you can set up Windows devices for Microsoft 365 Business Premium users, make sure all the Windows devices are running Windows 10 Pro, version 1703 (Creators Update). Windows 10 Pro is a prerequisite for deploying Windows 10 Business, which is a set of cloud services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business.
   
-If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business subscription entitles you to a Windows 10 upgrade.
+If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business Premium subscription entitles you to a Windows 10 upgrade.
   
 For more information on how to upgrade Windows devices to Windows 10 Pro Creators Update, follow the steps in this topic: [Upgrade Windows devices to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
   
@@ -47,7 +47,7 @@ If you found this video helpful, check out the [complete training series for sma
   
 ## Join Windows 10 devices to your organization's Azure AD
 
-When all Windows devices in your organization have either been upgraded to Windows 10 Pro Creators Update or are already running Windows 10 Pro Creators Update, you can join these devices to your organization's Azure Active Directory. Once the devices are joined, they'll be automatically upgraded to Windows 10 Business, which is part of your Microsoft 365 Business subscription.
+When all Windows devices in your organization have either been upgraded to Windows 10 Pro Creators Update or are already running Windows 10 Pro Creators Update, you can join these devices to your organization's Azure Active Directory. Once the devices are joined, they'll be automatically upgraded to Windows 10 Business, which is part of your Microsoft 365 Business Premium subscription.
   
 ### For a brand new, or newly upgraded, Windows 10 Pro device
 
@@ -57,7 +57,7 @@ For a brand new device running Windows 10 Pro Creators Update, or for a device t
     
     ![On the How would you like to set up page, choose Set up for an organization](../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
-2. Here, choose **Set up for an organization** and then enter your username and password for Microsoft 365 Business. 
+2. Here, choose **Set up for an organization** and then enter your username and password for Microsoft 365 Business Premium. 
     
 3. Finish Windows 10 device setup.
     
@@ -103,13 +103,13 @@ To verify your sync status, on the **Access work or school** page in **Settings*
   
 On the Sync status page, click Sync to get the latest mobile device management policies onto the PC.
   
-To start using the Microsoft 365 Business account, go to the Windows **Start** button, right-click your current account picture, and then **Switch account**. Sign in by using your organization email and password.
+To start using the Microsoft 365 Business Premium account, go to the Windows **Start** button, right-click your current account picture, and then **Switch account**. Sign in by using your organization email and password.
   
 ![Click Info button to view synchronization status](../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
 ## Verify the device is upgraded to Windows 10 Business
 
-Verify that your Azure AD joined Windows 10 devices were upgraded to Windows 10 Business as part of your Microsoft 365 Business subscription.
+Verify that your Azure AD joined Windows 10 devices were upgraded to Windows 10 Business as part of your Microsoft 365 Business Premium subscription.
   
 1. Go to **Settings** \> **System** \> **About**.
     
@@ -119,8 +119,8 @@ Verify that your Azure AD joined Windows 10 devices were upgraded to Windows 10 
   
 ## Next steps
 
-To set up your mobile devices, see [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md), To set device protection or app protection policies, see [Manage Microsoft 365 for business](manage.md).
+To set up your mobile devices, see [Set up mobile devices for Microsoft 365 Business Premium users](set-up-mobile-devices.md), To set device protection or app protection policies, see [Manage Microsoft 365 for business](manage.md).
   
-## For more on setting up and using Microsoft 365 Business
+## For more on setting up and using Microsoft 365 Business Premium
 
 [Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
