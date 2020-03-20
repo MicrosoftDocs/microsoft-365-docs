@@ -338,8 +338,11 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
 
   To retrieve mailbox audit log entries for users without E5 licenses, you can:
 
-  - Use audit log searches in the Security & Compliance Center or via the Office 365 Management Activity API **after** you've manually enabled mailbox auditing on the individual mailboxes.
-
+  - Manually enable mailbox auditing on individual mailboxes (run the command, `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`). After you do this, you can use audit log searches in the Security & Compliance Center or via the Office 365 Management Activity API.
+  
+    > [!NOTE]
+    > If mailbox auditing already appears to be enabled on the mailbox, but your searches return no results, change the value of the _AuditEnabled_ parameter to `$false` and then back to `$true`.
+  
   - Use the following cmdlets in Exchange Online PowerShell:
 
     - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) to search the mailbox audit log for specific users.
