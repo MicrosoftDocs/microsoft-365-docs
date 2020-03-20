@@ -252,7 +252,7 @@ Office 365 Extra File Storage is available for the following subscriptions:
 
 - Microsoft 365 Business Standard
 
-- Microsoft 365 Business
+- Microsoft 365 Business Premium
 
 - Microsoft 365 E3
 
