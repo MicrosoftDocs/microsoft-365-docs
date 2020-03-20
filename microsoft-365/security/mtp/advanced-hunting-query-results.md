@@ -1,7 +1,7 @@
 ---
 title: Work with advanced hunting query results in Microsoft Threat Protection
 description: Make the most of the query results returned by advanced hunting in Microsoft Threat Protection
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, schema, kusto, microsoft 365, Microsoft Threat Protection, visualization, charts, filters, drill-down
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, schema, kusto, microsoft 365, Microsoft Threat Protection, visualization, chart, filters, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -34,7 +34,7 @@ While you can construct your [advanced hunting](advanced-hunting-overview.md) qu
 - Tweak your queries directly from the results or apply filters
 
 ## View query results as tables or charts
-By default, advanced hunting displays query results as tabular data. You can also display the same data as chart.
+By default, advanced hunting displays query results as tabular data. You can also display the same data as a chart.
 
 ![Image of advanced hunting query results displayed as a stacked chart](../../media/advanced-hunting-stacked-chart.jpg)
 *Query results for alerts by platform and severity displayed as a stacked chart*
@@ -43,11 +43,11 @@ To render charts, advanced hunting automatically identifies columns of interest 
 
 | View type | Description |
 | -- | -- |
-| **Table** | N/A, displays the query results in tabular format |
-| **Column chart** | Renders a series of unique items on the x-axis as vertical bars whose lengths represent numeric values from another column |
-| **Stacked column chart** | Renders a series of unique items on the x-axis as stacked vertical bars whose lengths represent numeric values from one or more other columns |
-| **Pie chart** | Renders sectional pies representing unique items. The size of each pie represents numeric values from another column. |
-| **Donut chart** | Renders sectional arcs representing unique items. The length of each arc represents numeric values from another column. |
+| **Table** | Displays the query results in tabular format |
+| **Column chart** | Renders a series of unique items on the x-axis as vertical bars whose heights represent numeric values from another field |
+| **Stacked column chart** | Renders a series of unique items on the x-axis as stacked vertical bars whose heights represent numeric values from one or more other fields |
+| **Pie chart** | Renders sectional pies representing unique items. The size of each pie represents numeric values from another field. |
+| **Donut chart** | Renders sectional arcs representing unique items. The length of each arc represents numeric values from another field. |
 | **Line chart** | Plots numeric values for a series of unique items and connects the plotted values |
 | **Scatter chart** | Plots numeric values for a series of unique items |
 | **Area chart** | Plots numeric values for a series of unique items and fills the sections below the plotted values |
@@ -80,7 +80,7 @@ Right-click a value in the result set to quickly enhance your query. You can use
 ## Filter the query results
 The filters displayed to the right provide a summary of the result set. Each column has its own section that lists the distinct values found for that column and the number of instances.
 
-Refine your query by selecting the "+" or "-" buttons on the values that you want to include or exclude and then selecting **Run query**.
+Refine your query by selecting the `+` or `-` buttons on the values that you want to include or exclude and then selecting **Run query**.
 
 ![Image of advanced hunting filter](../../media/advanced-hunting-filter.png)
 
