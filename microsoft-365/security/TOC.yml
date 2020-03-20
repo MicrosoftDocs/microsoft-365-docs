@@ -280,10 +280,6 @@
                   href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: Block email spam in EOP Standalone
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
-                - name: Configure end-user spam notifications in EOP
-                  href: ./office-365-security/configure-end-user-spam-notifications-in-eop.md
-                - name: Configure end-user spam notifications in Exchange Online
-                  href: ./office-365-security/configure-end-user-spam-notifications-in-exchange-online.md
                 - name: Report junk email and phishing scams in Outlook on the web
                   href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                 - name: Protect on-premises mailboxes with Exchange Online Protection
@@ -547,8 +543,6 @@
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
                     - name: Mail flow intelligence in Office 365
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
-                - name: Quarantine
-                  href: ./office-365-security/quarantine.md
                 - name: Troubleshooting and support information
                   href: ./office-365-security/troubleshooting-and-support-information.md
                   items: 
