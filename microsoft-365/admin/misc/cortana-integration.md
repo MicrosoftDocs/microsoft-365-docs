@@ -25,7 +25,7 @@ description: "Learn how to use Cortana, when it is integrated with Office 365. Y
 
 Cortana, your personal productivity assistant, offers AI-powered experiences to save time and focus attention on what matters most. Cortana will help your users increase their personal productivity for their whole day across both work and life. When signed in with valid work or school accounts, users can get cloud-based Cortana assistance services within the Office 365 productivity tools. Cortana in Office 365 meets Office 365's enterprise-level privacy, security, and compliance promises.
 
-As a personal productivity assistant, Cortana is designed to deliver features that safely and securely process and reason over Office 365 data like emails, files, chats, etc., to save time, increase efficiency, and enhance your users' productivity. 
+As a personal productivity assistant, Cortana is designed to deliver features that safely and securely process and reason over Office 365 data like emails, files, chats, etc., to save time, increase efficiency, and enhance your users' productivity.
 
 Moving forward, we are focusing Cortana on enterprise productivity.
 
