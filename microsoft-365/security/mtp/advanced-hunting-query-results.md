@@ -34,7 +34,10 @@ While you can construct your [advanced hunting](advanced-hunting-overview.md) qu
 - Tweak your queries directly from the results or apply filters
 
 ## View query results as tables or charts
-By default, advanced hunting displays query results as tabular data. You can display the same data as a visualization or chart. 
+By default, advanced hunting displays query results as tabular data. You can display the same data as a visualization or chart.
+
+![Image of advanced hunting query results displayed as a stacked chart](../../media/advanced-hunting-stacked-chart.png)
+*Query results for alerts by platform and severity displayed as a stacked chart*
 
 To render charts, advanced hunting automatically identifies columns of interest and numeric values to aggregate. Advanced hunting supports the following views: 
 
@@ -48,6 +51,13 @@ To render charts, advanced hunting automatically identifies columns of interest 
 | **Line chart** | Plots numeric values for a series of unique items and connects the plotted values |
 | **Scatter chart** | Plots numeric values for a series of unique items |
 | **Area chart** | Plots numeric values for a series of unique items and fills the sections below the plotted values |
+
+![Image of advanced hunting query results displayed as a line chart](../../media/advanced-hunting-line-chart.png)
+*Line chart showing the number of events involving a specific file over time*
+
+![Image of advanced hunting query results displayed as a pie chart](../../media/advanced-hunting-pie-chart.png)
+*Pie chart showing distribution of phishing emails by sender domain*
+
 
 ## Export tables and charts
 After running a query, select **Export** to save the results to local file. Your chosen view determines how the results are exported:
@@ -65,7 +75,7 @@ Right-click a value in the result set to quickly enhance your query. You can use
 - Exclude the selected value from the query (`!=`)
 - Get more advanced operators for adding the value to your query, such as `contains`, `starts with` and `ends with` 
 
-![Image of Microsoft Defender ATP advanced hunting result set](../../media/advanced-hunting-results-filter.png)
+![Image of advanced hunting result set](../../media/advanced-hunting-results-filter.png)
 
 ## Filter the query results
 The filters displayed to the right provide a summary of the result set. Each column has its own section that lists the distinct values found for that column and the number of instances.
