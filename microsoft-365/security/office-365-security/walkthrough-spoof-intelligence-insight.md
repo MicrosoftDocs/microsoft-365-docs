@@ -63,11 +63,11 @@ A  *domain pair*  is a combination of the "From:" address and the sending infras
     
  **Suspicious domain pairs** include: 
   
-- **High-confidence spoof**. Office 365 received strong signals that these domains are suspicious, based on the historical sending patterns and the reputation score of the domains. Office 365 is highly confident that the domains are spoofing and that messages sent from these domains are less likely to be legitimate. 
+- **High-confidence spoof**. Microsoft 365 received strong signals that these domains are suspicious, based on the historical sending patterns and the reputation score of the domains. Microsoft 365 is highly confident that the domains are spoofing and that messages sent from these domains are less likely to be legitimate. 
     
-- **Moderate confidence spoof**. Office 365 received moderate signals that these domains are suspicious, based on historical sending patterns and the reputation score of the domains. Office 365 is moderately confident that the domains are spoofing and that messages sent from these domains are legitimate. This bucket has a greater chance of containing false positives (FPs) than the high-confidence spoof bucket. 
+- **Moderate confidence spoof**. Microsoft 365 received moderate signals that these domains are suspicious, based on historical sending patterns and the reputation score of the domains. Microsoft 365 is moderately confident that the domains are spoofing and that messages sent from these domains are legitimate. This bucket has a greater chance of containing false positives (FPs) than the high-confidence spoof bucket. 
     
- **Non-suspicious domain pairs** include **rescued spoof**. Rescued spoof are domains that have failed the explicit authentication checks ( [SPF](https://docs.microsoft.com/office365/SecurityCompliance/how-office-365-uses-spf-to-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email), [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)) but passed our extended authentication checks. As a result of this, Office 365 rescued the mail on your behalf and no anti-spoofing action was taken on the mail. 
+ **Non-suspicious domain pairs** include **rescued spoof**. Rescued spoof are domains that have failed the explicit authentication checks ( [SPF](https://docs.microsoft.com/office365/SecurityCompliance/how-office-365-uses-spf-to-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email), [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)) but passed our extended authentication checks. As a result of this, Microsoft 365 rescued the mail on your behalf and no anti-spoofing action was taken on the mail. 
   
 ## View detailed information about suspicious domain pairs from the spoof intelligence insight
 
@@ -89,7 +89,7 @@ This modifies the unique domain pair combination of the spoofed domain and the s
 
 [Learn more about spoof intelligence](learn-about-spoof-intelligence.md)
   
-[Anti-spoofing protection in Office 365](anti-spoofing-protection.md)
+[Anti-spoofing protection](anti-spoofing-protection.md)
   
 [Walkthrough - From a dashboard to an insight](from-a-dashboard-to-an-insight.md)
   

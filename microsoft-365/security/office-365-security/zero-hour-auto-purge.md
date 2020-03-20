@@ -31,7 +31,7 @@ ZAP is available with the default Exchange Online Protection that is included wi
 
 ## How ZAP works
 
-Office 365 updates anti-spam engine and malware signatures in real-time on a daily basis. However, your users might still get malicious messages delivered to their inboxes for a variety of reasons, including if content is weaponized after being delivered to users. ZAP addresses this by continually monitoring updates to the Office 365 spam and malware signatures. ZAP can find and remove previously delivered messages that are already in users' inboxes.
+Microsoft 365 updates anti-spam engine and malware signatures in real-time on a daily basis. However, your users might still get malicious messages delivered to their inboxes for a variety of reasons, including if content is weaponized after being delivered to users. ZAP addresses this by continually monitoring updates to the spam and malware signatures. ZAP can find and remove previously delivered messages that are already in users' inboxes.
 
 The ZAP action is seamless for the mailbox user; they are not notified if an email message is moved. 
 
@@ -126,4 +126,4 @@ ZAP will not remove messages from mailboxes on hold and so will not take a Move 
 
 [Microsoft Email Anti-Spam Protection](anti-spam-protection.md)
 
-[Block email spam with the Office 365 spam filter to prevent false negative issues](reduce-spam-email.md)
+[Block email spam with the Microsoft 365 spam filter to prevent false negative issues](reduce-spam-email.md)
