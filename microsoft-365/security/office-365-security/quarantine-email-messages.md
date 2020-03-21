@@ -1,5 +1,5 @@
 ---
-title: "Quarantine email messages in Office 365"
+title: "Quarantine in Office 365"
 f1.keywords:
 - NOCSH
 ms.author: tracyp

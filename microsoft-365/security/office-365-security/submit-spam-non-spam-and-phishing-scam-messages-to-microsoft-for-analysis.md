@@ -31,7 +31,7 @@ Admins can send email, url, and attachments to Microsoft for review. See [Admin 
 
 If you receive a message that passed through the spam filters that and should be classified as junk or a phishing scam, you can submit the "false negative" message to the Microsoft Spam Analysis and Microsoft Phishing Analysis teams, as appropriate. The analysts will review the message and add it to the service-wide filters if it meets the classification criteria.
 
-For more spam settings that apply to the whole organization, see [Block email spam with the Office 365 spam filter to prevent false negative issues](reduce-spam-email.md). This article contains tips to help prevent false negatives.
+For more spam settings that apply to the whole organization, see [Anti-spam protection in Office 365](anti-spam-protection.md). This article contains tips to help prevent false negatives.
 
 You can submit junk email messages in the following ways:
 
@@ -54,16 +54,16 @@ To submit a junk or phishing scam message to Microsoft:
 3. Copy and paste the junk or phishing scam message into the new message as an attachment.
 
    > [!NOTE]
-   > • You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing scam messages or junk email messages. <br/><br/>• Leave the body of the new message empty. <br/><br/>• Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.
+   > * You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing scam messages or junk email messages. <br/><br/>* Leave the body of the new message empty. <br/><br/>* Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.
 
 4. Click **Send**.
 
 ## Submit messages that were tagged as junk but should have been allowed through
 
 If a message was incorrectly identified as junk, you can submit the "false positive" message to the Microsoft Spam Analysis Team. The analysts will evaluate and analyze the message. Depending on the results of the analysis, the service-wide spam content filter rules may be adjusted to allow the message through.
-  
-Administrators can review more spam setting information that applies to a whole organization. See [How to help ensure that a message isn't marked as spam](prevent-email-from-being-marked-as-spam.md). This information is helpful if you have administrator-level control and you want to prevent false positives.
-  
+
+Administrators can review more spam setting information that applies to a whole organization. See [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md). This information is helpful if you have administrator-level control and you want to prevent false positives.
+
 You can submit non-spam messages in the following ways:
 
 - If you use the **Move message to Junk Email folder** action when you configure your content filters (this is the default action), users can release false positive messages in their Outlook or Outlook on the web (formerly known as Outlook Web App) Junk Email folder.
@@ -109,14 +109,3 @@ After they review this information, the spam team might make changes to the serv
 [Microsoft Exchange Spam team video](https://youtu.be/-TpX_-GMC7o?hd=1)
 
 Spam evaluation is an ongoing process that applies regardless of the originating language or character set. Because a spam message can be vague or even lack text in the subject or message body, the spam team relies on other message characteristics to perform filtering. This means that after the spam team flags a given message as spam and makes the necessary changes to its rule base, that message will be blocked in the future until its characteristics have been modified enough to avoid our filters. New spam rules are deployed continuously. Time frames for rules on individual submissions vary depending on the quantity and quality of submissions. Because new spam rules are set globally for all customers, not all individual spam submissions will result in a new spam rule.
-
-## For more information
-
-[Anti-spam and anti-malware protection](anti-spam-and-anti-malware-protection.md)
-  
-[How to help ensure that a message isn't marked as spam](prevent-email-from-being-marked-as-spam.md)
-  
-[Block email spam with the Office 365 spam filter to prevent false negative issues](reduce-spam-email.md)
-  
-
-[Block email spam with the Office 365 spam filter to prevent false negative issues](reduce-spam-email.md)

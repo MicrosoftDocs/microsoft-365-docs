@@ -210,14 +210,18 @@
                       href: ./office-365-security/configure-your-spam-filter-policies.md
                     - name: Configure the connection filter policy
                       href: ./office-365-security/configure-the-connection-filter-policy.md
-                    - name: Create-block-sender-lists-in-office-365
+                    - name: Create block sender lists
                       href: ./office-365-security/Create-block-sender-lists-in-office-365.md
-                    - name: Create-safe-sender-lists-in-office-365
+                    - name: Create safe sender lists
                       href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
                     - name: Spam confidence level (SCL)
                       href: ./office-365-security/spam-confidence-levels.md
                     - name: Bulk complaint level (SCL)
                       href: ./office-365-security/bulk-complaint-level-values.md
+                    - name: Configure junk email settings on Exchange Online mailboxes
+                      href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
+                    - name: End-user spam notifications
+                      href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
                     - name: Use mail flow rules to set the SCL in messages
                       href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
                     - name: Advanced Spam Filter (ASF) settings
@@ -276,10 +280,6 @@
                   href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: Block email spam in EOP Standalone
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
-                - name: Configure end-user spam notifications in EOP
-                  href: ./office-365-security/configure-end-user-spam-notifications-in-eop.md
-                - name: Configure end-user spam notifications in Exchange Online
-                  href: ./office-365-security/configure-end-user-spam-notifications-in-exchange-online.md
                 - name: Report junk email and phishing scams in Outlook on the web
                   href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                 - name: Protect on-premises mailboxes with Exchange Online Protection
@@ -290,15 +290,15 @@
                   href: ./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md
                 - name: What's the difference between junk email and bulk email?
                   href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
-            - name: Quarantine email messages in Office 365
+            - name: Quarantine
               href: ./office-365-security/quarantine-email-messages.md
               items: 
-                - name: Manage quarantined messages and files as an administrator
+                - name: Quarantine FAQ
+                  href: ./office-365-security/quarantine-faq.md
+                - name: Manage quarantined messages and files as an admin
                   href: ./office-365-security/manage-quarantined-messages-and-files.md
                 - name: Find and release quarantined messages as a user
                   href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
-                - name: Quarantine FAQ for Office 365
-                  href: ./office-365-security/quarantine-faq.md
             - name: Email validation and authentication
               items: 
                 - name: How Office 365 uses SPF to prevent spoofing
@@ -543,8 +543,6 @@
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
                     - name: Mail flow intelligence in Office 365
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
-                - name: Quarantine
-                  href: ./office-365-security/quarantine.md
                 - name: Troubleshooting and support information
                   href: ./office-365-security/troubleshooting-and-support-information.md
                   items: 
