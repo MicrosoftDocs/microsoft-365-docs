@@ -22,7 +22,7 @@ description: "Learn about the new Microsoft 365 admin center."
 
 # About the new Microsoft 365 admin center
 
-The new Microsoft 365 admin center is built for IT teams as a simplified way to manage your Microsoft 365 and Office 365 services. The admin center provides a tailored experience based on the unique needs of your role or organization, improves efficiency for everyday tasks, and provides actionable insights that help you make data-driven decisions to deliver a better experience for your users.
+The new Microsoft 365 admin center is built for IT teams as a simplified way to manage your Microsoft 365 services. The admin center provides a tailored experience based on the unique needs of your role or organization, improves efficiency for everyday tasks, and provides actionable insights that help you make data-driven decisions to deliver a better experience for your users.
   
 The Microsoft 365 admin center is the common entry point for all Microsoft 365 admins and can be accessed at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339). Specialist workspaces, like Security or Device management, allow for more granular control. For more information about how the admin centers will work together, see [What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) later in this article. 
   
