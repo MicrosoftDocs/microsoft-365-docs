@@ -263,7 +263,7 @@ You can choose to apply retention labels to content automatically when that cont
 It can take up to seven days for auto-apply retention labels to be applied to all content that matches the conditions you've configured.
   
 > [!TIP]
-> See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePont to auto-apply retention labels and implement event-driven retention.
+> See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-driven retention.
 
 ### Auto-apply retention labels to content with specific types of sensitive information
 
