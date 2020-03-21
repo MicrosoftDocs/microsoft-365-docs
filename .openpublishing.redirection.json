@@ -331,7 +331,7 @@
     },
     {
       "source_path": "microsoft-365/compliance/prevent-email-from-being-marked-as-spam.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/prevent-email-from-being-marked-as-spam",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection",
       "redirect_document_id": true
     },
     {
@@ -481,7 +481,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/fighting-junk-email.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/prevent-email-from-being-marked-as-spam.md",
