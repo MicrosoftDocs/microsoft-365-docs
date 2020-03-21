@@ -38,7 +38,7 @@ Getting your domain set up to work with Microsoft 365 can be challenging. The DN
     
 - [Outlook isn't working?](#outlook-isnt-working)
     
-- [Everyone's email got switched to Microsoft 365 and you only wanted YOUR email to switch?](#everyones-email-got-switched-to-office-365-and-you-only-wanted-your-email-to-switch)
+- [Everyone's email got switched to Microsoft 365 and you only wanted YOUR email to switch?](#everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch)
 
 - [Can't confirm non-profit or school account status?](#cant-confirm-non-profit-or-school-account-status)
 
