@@ -454,29 +454,52 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/security/office-365-security/configure-the-anti-spam-policies.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
-      "redirect_document_id": true
+      "redirections": [
+        {
+          "source_path": "microsoft-365/security/office-365-security/configure-the-anti-spam-policies.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/security/office-365-security/configure-end-user-spam-notifications-in-eop.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies#configure-end-user-spam-notifications",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/security/office-365-security/configure-end-user-spam-notifications-in-exchange-online.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies#configure-end-user-spam-notifications",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/security/office-365-security/enable-or-disable-safety-tips.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/security/office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
+          "redirect_document_id": true
+        }
+      ]
     },
     {
-      "source_path": "microsoft-365/security/office-365-security/configure-end-user-spam-notifications-in-eop.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies#configure-end-user-spam-notifications",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/security/office-365-security/configure-end-user-spam-notifications-in-exchange-online.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies#configure-end-user-spam-notifications",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/security/office-365-security/enable-or-disable-safety-tips.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/security/office-365-security/fighting-junk-email.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection",
-      "redirect_document_id": true
+      "redirections": [
+        {
+          "source_path": "microsoft-365/security/office-365-security/fighting-junk-email.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/security/office-365-security/prevent-email-from-being-marked-as-spam.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/security/office-365-security/reduce-spam-email.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection",
+          "redirect_document_id": true
+        }
+      ]
     },
     {
       "source_path": "microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-an-administrator.md",
@@ -489,33 +512,22 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/security/office-365-security/manage-safe-sender-lists-for-bulk-mailers.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/security/office-365-security/prevent-email-from-being-marked-as-spam.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection",
-      "redirect_document_id": true
+      "redirections": [
+        {
+          "source_path": "microsoft-365/security/office-365-security/manage-safe-sender-lists-for-bulk-mailers.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365",
+          "redirect_document_id": true
+        },
+        {
+          "source_path": "microsoft-365/security/office-365-security/safe-sender-and-blocked-sender-lists-faq.md",
+          "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365",
+          "redirect_document_id": true
+        }
+       ]
     },
     {
       "source_path": "microsoft-365/security/office-365-security/quarantine.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/quarantine-email-messages",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/security/office-365-security/reduce-spam-email.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/security/office-365-security/safe-sender-and-blocked-sender-lists-faq.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365",
       "redirect_document_id": true
     },
     {
