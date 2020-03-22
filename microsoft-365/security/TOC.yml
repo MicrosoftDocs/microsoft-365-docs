@@ -68,9 +68,13 @@
                 - name: Prioritize incidents
                   href: mtp/incident-queue.md
                 - name: Investigate incidents
-                  href: mtp/investigate-incidents.md
-                - name: Manage incidents
-                  href: mtp/manage-incidents.md
+                  items:
+                    - name: Investigate incidents
+                      href: mtp/investigate-incidents.md
+                    - name: Manage incidents
+                      href: mtp/manage-incidents.md
+                    - name: Machine profile page
+                      href: mtp/machine-profile.md
             - name: Automated investigation and response
               items: 
                 - name: AIR overview
@@ -218,70 +222,58 @@
                       href: ./office-365-security/recover-from-ransomware.md
                     - name: Virus detection in SharePoint Online
                       href: ./office-365-security/virus-detection-in-spo.md
-                - name: Advanced spam filtering options
-                  href: ./office-365-security/advanced-spam-filtering-asf-options.md
-                - name: High-risk delivery pool for outbound messages
-                  href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
-                - name: Anti-spam protection FAQ
-                  href: ./office-365-security/anti-spam-protection-faq.md
-                - name: Avoid invalid characters in your spam filter rules and the spam filter policy
-                  href: ./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md
-                - name: Safe sender and blocked sender lists in Exchange Online
-                  href: ./office-365-security/safe-sender-and-blocked-sender-lists-faq.md
-                - name: Safety tips in email messages in Office 365
-                  href: ./office-365-security/safety-tips-in-office-365.md
-                - name: Sample notification when a sender is blocked sending outbound spam
-                  href: ./office-365-security/sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md
-                - name: Use end-user spam notifications to release and report spam-quarantined messages
-                  href: ./office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md
-                - name: Fighting junk email sent to Office 365
-                  href: ./office-365-security/fighting-junk-email.md
-                - name: Office 365 email anti-spam protection
+                - name: Anti-spam protection
                   href: ./office-365-security/anti-spam-protection.md
+                  items:
+                    - name: Anti-spam protection FAQ
+                      href: ./office-365-security/anti-spam-protection-faq.md
+                    - name: Configure anti-spam policies
+                      href: ./office-365-security/configure-your-spam-filter-policies.md
+                    - name: Configure the connection filter policy
+                      href: ./office-365-security/configure-the-connection-filter-policy.md
+                    - name: Create block sender lists
+                      href: ./office-365-security/Create-block-sender-lists-in-office-365.md
+                    - name: Create safe sender lists
+                      href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
+                    - name: Spam confidence level (SCL)
+                      href: ./office-365-security/spam-confidence-levels.md
+                    - name: Bulk complaint level (SCL)
+                      href: ./office-365-security/bulk-complaint-level-values.md
+                    - name: Configure junk email settings on Exchange Online mailboxes
+                      href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
+                    - name: End-user spam notifications
+                      href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
+                    - name: Use mail flow rules to set the SCL in messages
+                      href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
+                    - name: Advanced Spam Filter (ASF) settings
+                      href: ./office-365-security/advanced-spam-filtering-asf-options.md
+                    - name: Configure standalone EOP to deliver spam to the Junk Email folder
+                      href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
+                - name: Outbound spam protection
+                  href: ./office-365-security/outbound-spam-controls.md
+                  items:
+                    - name: Configure outbound spam filtering
+                      href: ./office-365-security/configure-the-outbound-spam-policy.md
+                    - name: High-risk delivery pool for outbound messages
+                      href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
+                    - name: Remove blocked users from the Restricted Users portal
+                      href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
+                - name: Anti-spam message headers
+                  href: ./office-365-security/anti-spam-message-headers.md
                 - name: How policies and protections are combined
                   href: ./office-365-security/how-policies-and-protections-are-combined.md
-                - name: How to reduce spam email in Office 365
-                  href: ./office-365-security/reduce-spam-email.md
-                - name: Control outbound spam in Office 365
-                  href: ./office-365-security/outbound-spam-controls.md
-                - name: Block email spam with the Office 365 spam filter to prevent false negative issues
-                  href: ./office-365-security/reduce-spam-email.md
                 - name: Zero-hour auto purge - protection against spam and malware
                   href: ./office-365-security/zero-hour-auto-purge.md
-                - name: Ensure that spam is routed to each user's Junk Email folder
-                  href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
+                - name: Safety tips in email messages
+                  href: ./office-365-security/safety-tips-in-office-365.md
                 - name: Report junk email messages to Microsoft
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
-                - name: Manage safe sender lists for bulk mailers
-                  href: ./office-365-security/manage-safe-sender-lists-for-bulk-mailers.md
-                - name: Configure the anti-spam policies
-                  href: ./office-365-security/configure-the-anti-spam-policies.md
-                - name: Create-block-sender-lists-in-office-365
-                  href: ./office-365-security/Create-block-sender-lists-in-office-365.md
-                - name: Create-safe-sender-lists-in-office-365
-                  href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
-                - name: Configure your spam filter policies
-                  href: ./office-365-security/configure-your-spam-filter-policies.md
-                - name: Configure the connection filter policy
-                  href: ./office-365-security/configure-the-connection-filter-policy.md
-                - name: Configure the outbound spam policy
-                  href: ./office-365-security/configure-the-outbound-spam-policy.md
-                - name: Removing a user from the Restricted Users portal after sending spam email
-                  href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
-                - name: Spam confidence levels
-                  href: ./office-365-security/spam-confidence-levels.md
-                - name: Fix Error Code 5.7.7xx in Exchange Online
-                  href: ./office-365-security/fix-error-code-5-7-7xx-in-exchange-online.md
-                - name: Use mail flow rules to set the spam confidence level (SCL) in messages
-                  href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
                 - name: Submit spam, non-spam, and phishing scam messages to Microsoft for analysis
                   href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                 - name: Admin submissions in Office 365
                   href: ./office-365-security/admin-submission.md
                 - name: Use the delist portal to remove yourself from the Office 365 blocked senders list
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-                - name: Anti-spam message headers
-                  href: ./office-365-security/anti-spam-message-headers.md
             - name: Anti-phishing protection in Office 365
               href: ./office-365-security/anti-phishing-protection.md
               items: 
@@ -309,10 +301,6 @@
                   href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: Block email spam in EOP Standalone
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
-                - name: Configure end-user spam notifications in EOP
-                  href: ./office-365-security/configure-end-user-spam-notifications-in-eop.md
-                - name: Configure end-user spam notifications in Exchange Online
-                  href: ./office-365-security/configure-end-user-spam-notifications-in-exchange-online.md
                 - name: Report junk email and phishing scams in Outlook on the web
                   href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                 - name: Protect on-premises mailboxes with Exchange Online Protection
@@ -323,17 +311,15 @@
                   href: ./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md
                 - name: What's the difference between junk email and bulk email?
                   href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
-            - name: Quarantine email messages in Office 365
+            - name: Quarantine
               href: ./office-365-security/quarantine-email-messages.md
               items: 
-                - name: Manage quarantined messages and files as an administrator
+                - name: Quarantine FAQ
+                  href: ./office-365-security/quarantine-faq.md
+                - name: Manage quarantined messages and files as an admin
                   href: ./office-365-security/manage-quarantined-messages-and-files.md
                 - name: Find and release quarantined messages as a user
                   href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
-                - name: Quarantine FAQ for Office 365
-                  href: ./office-365-security/quarantine-faq.md
-                - name: Use user spam notifications to release and report quarantined messages in Office 365
-                  href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
             - name: Email validation and authentication
               items: 
                 - name: How Office 365 uses SPF to prevent spoofing
@@ -366,8 +352,6 @@
                       href: ./office-365-security/set-up-and-download-a-custom-report.md
                     - name: Download existing reports
                       href: ./office-365-security/download-existing-reports.md
-                - name: Enable or disable safety tips in Office 365
-                  href: ./office-365-security/enable-or-disable-safety-tips.md
                 - name: View information about malicious files
                   href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Advanced Threat Protection
@@ -404,7 +388,7 @@
                 - name: View details and results of an automated investigation
                   href: ./office-365-security/air-view-investigation-results.md
                 - name: Review and approve (or reject) pending actions
-                  href: ./office-365-security/air-remediation-actions.md
+                  href: ./office-365-security/air-review-approve-pending-completed-actions.md
                 - name: Integrate AIR with a custom solution or third-party solution
                   href: ./office-365-security/air-custom-reporting.md
             - name: Detect and address compromised user accounts quickly
@@ -580,11 +564,6 @@
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
                     - name: Mail flow intelligence in Office 365
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
-                - name: Quarantine
-                  href: ./office-365-security/quarantine.md
-                  items: 
-                    - name: Find and release quarantined messages as an administrator
-                      href: ./office-365-security/find-and-release-quarantined-messages-as-an-administrator.md
                 - name: Troubleshooting and support information
                   href: ./office-365-security/troubleshooting-and-support-information.md
                   items: 
