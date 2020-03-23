@@ -32,24 +32,23 @@ The ability to apply sensitivity labels to content automatically is important be
 
 There are two different scenarios for automatically applying a sensitivity label:
 
-- **Client-side labeling when documents are saved by users or they send emails**: Use a label that's configured for auto-labeling for Office apps (Word, Excel, PowerPoint, and Outlook). 
+- **Client-side labeling when users open documents or send emails**: Use a label that's configured for auto-labeling for Office apps (Word, Excel, PowerPoint, and Outlook). 
     
-    This scenario supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. This is proactive labeling, with very little delay because the label is applied as soon as the document is saved, or the emai is sent.
+    This scenario supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. This client-side labeling has minimal delay for documents because the label is applied as soon as the document is saved. However, not all client apps support auto-labeling. This capability is supported by the Azure Information Protection unified labeling client, and [some versions of Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps). 
     
     For configuration instructions, see [How to configure auto-labeling for Office apps](#how-to-configure-auto-labeling-for-office-apps) on this page.
 
-- **Service-side labeling when content is stored (in SharePoint Online or OneDrive for Business) or emailed (processed by Exchange Online)**: Use an auto-labeling policy for SharePoint, OneDrive, and Exchange, currently in preview. 
+- **Service-side labeling when content is already saved (in SharePoint Online or OneDrive for Business) or emailed (processed by Exchange Online)**: Use an auto-labeling policy for SharePoint, OneDrive, and Exchange - currently in preview. 
     
-    This scenario doesn't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label. This is reactive labeling, for content that isn't already labeled and the document is already saved, and the email is processed by Exchange. These two conditions are sometimes referred to as "data at rest" and "data in transit" respectively.
+    This scenario is sometimes referred to as auto-classification with sensitivity labels. You might also hear it referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes). Because the configuration is service-side, there's no dependency on specific versions of apps. As a result, this capability is organization-wide and suitable for labeling at scale. Auto-labeling policies don't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label.
     
     For configuration instructions, see [How to configure auto-labeling for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-for-sharepoint-onedrive-and-exchange) ont his page.
     
     Specific to auto-labeling for Exchange:
-    - If you have Exchange mail flow rules that apply IRM encryption: When content is identified by both a mail flow rule and an auto-labeling policy, the label and any encryption settings from the label are applied to that content.
-    - If you have DLP rules that apply IRM encryption: When content is identified by both a DLP rule and an auto-labeling policy, the encryption settings only from the label are applied. The content is not labeled.
+    - Unlike manually labeling or auto-labeling with Office apps, Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
+    - If you have Exchange mail flow rules or data loss prevention (DLP policies that apply IRM encryption: When content is identified by an auto-labeling policy, any matches from the Exchange mail flow rules or DLP policies are ignored.
     - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
-    - Incoming email is labeled if there is a match with your auto-labeling conditions. However, if the label is configured for encryption, that encryption isn't applied.
-
+    - Incoming email is labeled when there is a match with your auto-labeling conditions. However, if the label is configured for encryption, that encryption isn't applied.
 
 ## Compare auto-labeling for Office apps with auto-labeling policies
 
@@ -57,14 +56,20 @@ Use the following table to help you identify the differences in behavior for the
 
 |Feature or behavior|Label setting: Auto-labeling for Office apps |Policy: Auto-labeling|
 |:-----|:-----|:-----|:-----|
+|App dependency|[Yes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
+|Automatically override existing label| No | Yes only if lower priority label applied by auto-labeling for Office apps|
 |Restrict by location|No |Yes |
 |Conditions: Trainable classifers|Yes (limited preview) |No |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
 |Simulation mode|No |Yes |
-|Apply visual markings |Yes |No |
+|Exchange attachments checked for conditions|No | Yes|
+|Apply visual markings |Yes |Yes (email only) |
 |Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
 |Label incoming email|No |Yes (encryption not applied) |
+
+> [!NOTE]
+> When content has been manually labeled, that label will never be replaced by automatic labeling. However, service-side automatic labeling can replace a lower priority label that was applied by using client-side automatic labeling.
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
@@ -159,6 +164,8 @@ Here's an example of a prompt when you configure a condition to apply a label as
     - Office 365 (E5)
     - Advanced Compliance (E5) add-on 
 
+- You have [enabled sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md).
+
 - To auto-label files in SharePoint and OneDrive, the file mustn't be open by another process or user.
 
 - Auditing for Office 365 must be turned on as a requirement for simulation mode. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).
@@ -167,9 +174,9 @@ Here's an example of a prompt when you configure a condition to apply a label as
     - Custom sensitivity information types are evaluated for content that is created after the custom sensitivity information types are saved. 
     - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
 
-- You already have one or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policy. For these labels:
+- One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policy. For these labels:
     - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction. 
-    - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), these are not applied to documents or emails.
+    - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), note that these are not applied to documents.
 
 ### Learn about simulation mode
 
