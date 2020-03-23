@@ -201,9 +201,9 @@
     - name: Understand data classification (preview)
       href: data-classification-overview.md
       items: 
-        - name: View labeled content (preview)
+        - name: Get started with content explorer (preview)
           href: data-classification-content-explorer.md
-        - name: View label activity (preview)
+        - name: Get started with activity explorer (preview)
           href: data-classification-activity-explorer.md
         - name: Data classification public preview release notes (preview)
           href: data-classification-pub-preview-relnotes.md
