@@ -57,10 +57,14 @@ Use the `summarize` operator to obtain a numeric count of the values you want to
 AlertInfo
 | summarize Total = count() by Severity
 ```
-The result is automatically rendered in a column or pie chart that is easy to understand.
+When rendered as a column chart, the chart is meaningful and easy to understand.
+
+**[SCREENSHOT]**
 
 #### Alert severity by operating system
-If you want to look at more values, such as how alert severity is distributed across endpoint operating systems (OS), you can add more columns to summarize. The query below uses a `join` operator to pull in OS information from the `DeviceInfo` table and then uses `summarize` to count values in both the `OSPlatform` and `Severity` columns.
+You could also use the `summarize` operator to prepare results for charting values from multiple columns. For example, you might want to understand how alert severities are distributed across endpoint operating systems (OS). 
+
+The query below uses a `join` operator to pull in OS information from the `DeviceInfo` table, and then uses `summarize` to count values in both the `OSPlatform` and `Severity` columns:
 
 ```kusto
 AlertInfo
@@ -68,13 +72,13 @@ AlertInfo
 | join DeviceInfo on DeviceId
 | summarize Count = count() by OSPlatform, Severity 
 ```
-The results are best visualized using a stacked column chart.
+These results are best visualized using a stacked column chart:
 
 ![Image of advanced hunting query results displayed as a stacked chart](../../media/advanced-hunting-stacked-chart.jpg)
 *Query results for alerts by OS and severity displayed as a stacked chart*
 
 #### Phishing emails across top ten sender domains
-If you are dealing with a list of values that isn’t finite, use the `Top` operator to chart only the unique values with the most instances. For example, to get the top ten sender domains with the most phishing emails, use the query below.
+If you're dealing with a list of values that isn’t finite, you can use the `Top` operator to chart only the values with the most instances. For example, to get the top ten sender domains with the most phishing emails, use the query below:
 
 ```kusto
 EmailEvents
@@ -82,13 +86,13 @@ EmailEvents
 | summarize Count = count() by SenderFromDomain
 | top 10 by Count
 ```
-A pie chart can effectively show distribution across the top domains.
+Use the pie chart view to effectively show distribution across the top domains:
 
 ![Image of advanced hunting query results displayed as a pie chart](../../media/advanced-hunting-pie-chart.jpg)
 *Pie chart showing distribution of phishing emails across top sender domains*
 
 #### File activities over time
-You can check for the events involving a particular indicator over time using `summarize`. Using the `bin()` function with `summarize`, the query below counts events involving the file `invoice.doc` at 30 minute intervals to show spikes in file activity.
+Using the `summarize` operator with the `bin()` function, you can check for events involving a particular indicator over time. The query below counts events involving the file `invoice.doc` at 30 minute intervals to show spikes in activity related to that file:
 
 ```kusto
 AppFileEvents
@@ -97,10 +101,10 @@ AppFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
+The line chart below clearly highlights time periods with more activity involving `invoice.doc`: 
 
 ![Image of advanced hunting query results displayed as a line chart](../../media/advanced-hunting-line-chart.jpg)
 *Line chart showing the number of events involving a file over time*
-
 
 
 ## Export tables and charts
