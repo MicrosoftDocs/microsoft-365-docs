@@ -1,7 +1,6 @@
 ---
 title: "Manage who can create Office 365 Groups"
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
 author: MikePlumleyMSFT
@@ -29,7 +28,7 @@ description: "Learn how to control which users can create Office 365 Groups."
   
 Because it's so easy for users to create Office 365 Groups, you aren't inundated with requests to create them on behalf of other people. Depending on your business, however, you might want to control who has the ability to create groups.
   
-This article explains how to disable the ability to create groups **in all Office 365 services that use groups**: 
+This article explains how to disable the ability to create groups in all Office 365 services that use groups, including:
   
 - Outlook
     
@@ -74,7 +73,7 @@ If you're a member of one of these roles, you can create Office 365 Groups for r
 To manage who creates Groups, the following people need Azure AD Premium licenses or Azure AD Basic EDU licenses assigned to them:
 
 - The admin who configures these group creation settings
-- The members of the security group who are allowed to create Groups
+- The members of the security group who are allowed to create groups
 
 The following people don't need Azure AD Premium or Azure AD Basic EDU licenses assigned to them:
 
@@ -87,7 +86,7 @@ Only one security group in your organization can be used to control who is able 
 Admins in the roles listed above do not need to be members of this group: they retain their ability to create groups.
 
 > [!IMPORTANT]
-> Be sure to use a **security group** to restrict who can create groups. If you try to use an Office 365 Group, members won't be able to create a group from SharePoint because it checks for a security group. 
+> Be sure to use a **security group** to restrict who can create groups. If you try to use an Office 365 group, members won't be able to create a group from SharePoint because it checks for a security group. 
     
 1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
 
@@ -95,62 +94,21 @@ Admins in the roles listed above do not need to be members of this group: they r
 
 3. Choose **Security** as the group type. Remember the name of the group! You'll need it later.
   
-4. Finish setting up the security group, adding people or other security groups who you want to be able to create Groups in your org.
+4. Finish setting up the security group, adding people or other security groups who you want to be able to create groups in your org.
     
 For detailed instructions, see [Create, edit, or delete a security group in the Microsoft 365 admin center](../email/create-edit-or-delete-a-security-group.md).
-  
-## Step 2: Install the preview version of the Azure Active Directory PowerShell for Graph
+ 
+## Step 2: Run PowerShell commands
 
-These procedures require the preview version of the Azure Active Directory PowerShell for Graph. The GA version will not work.
+You must use the preview version of [Azure Active Directory PowerShell for Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:
+
+- If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) and follow the instructions to install the public preview release.
+
+- If you have the 2.0 general availability version of the Azure AD PowerShell module (AzureAD) installed, you must uninstall it by running `Uninstall-Module AzureAD` in your PowerShell session, and then install the preview version by running `Install-Module AzureADPreview`.
+
+- If you have already installed the preview version, run `Install-Module AzureADPreview` to make sure it's the latest version of this module.
 
 
-> [!IMPORTANT]
-> You cannot install both the preview and GA versions on the same computer at the same time. You can install the module on Windows 10, Windows Server 2016.
-
-  
-As a best practice, we recommend  *always*  staying current: uninstall the old AzureADPreview or old AzureAD version and get the latest one. 
-  
-1. In your search bar, type Windows PowerShell.
-    
-2. Right-click on **Windows PowerShell** and select **Run as Administrator**.
-    
-    ![Open PowerShell as "Run as administrator."](../../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
-    
-3. Set the policy to RemoteSigned by using [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy).
-    
-    ```
-    Set-ExecutionPolicy RemoteSigned
-    ```
-  
-4. Check installed module:
-    
-    ```
-    Get-InstalledModule -Name "AzureAD*"
-    ```
-
-5. To uninstall a previous version of AzureADPreview or AzureAD, run this command:
-  
-    ```
-    Uninstall-Module AzureADPreview
-    ```
-
-    or
-  
-    ```
-    Uninstall-Module AzureAD
-    ```
-
-6. To install the latest version of AzureADPreview, run this command:
-  
-    ```
-    Install-Module AzureADPreview
-    ```
-
-    At the message about an untrusted repository, type **Y**. It will take a minute or so for the new module to install.
-
-Leave the PowerShell window open for Step 3, below.
-  
-## Step 3: Run PowerShell commands
 
 Copy the script below into a text editor, such as Notepad, or the [Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
