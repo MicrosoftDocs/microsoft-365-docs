@@ -97,7 +97,7 @@ When this sensitivity label is automatically applied, the user sees a notificati
 
 ![Notification that a document had a label applied automatically](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
-## Configuring sensitive info types for a label
+### Configuring sensitive info types for a label
 
 When you select the **Sensitive info types** option, you see the same list of sensitive information types as when you create a data loss prevention (DLP) policy. So you can, for example, automatically apply a Highly Confidential label to any content that contains customers' personally identifiable information (PII), such as credit card numbers or social security numbers:
 
@@ -109,7 +109,7 @@ Further, you can choose whether a condition must detect all sensitive informatio
 
 ![Options for instance count and match accuracy](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-## Configuring classifers for a label
+### Configuring classifers for a label
 
 When you select the **Classifers** option, select one or more of the built-in classifiers:
 
@@ -130,7 +130,7 @@ During the preview period, the following apps support classifers for sensitivity
     - PowerPoint
     - Outlook
 
-## Recommend that the user applies a sensitivity label in Office apps
+### Recommend that the user applies a sensitivity label in Office apps
 
 If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label isn't suitable for their content.
 
@@ -142,7 +142,7 @@ Here's an example of a prompt when you configure a condition to apply a label as
 
 ![Prompt to apply a recommended label](../media/Sensitivity-label-Prompt-for-required-label.png)
 
-## When automatic or recommended labels are applied in Office apps
+### When automatic or recommended labels are applied in Office apps
 
 - Automatic labeling for Office apps applies to Word, Excel, and PowerPoint when you save a document, and to Outlook when you send an email. The conditions detect sensitive information in the body text in documents and emails, and to headers and footers — but not in the subject line or attachments of email.
 
@@ -177,7 +177,7 @@ Here's an example of a prompt when you configure a condition to apply a label as
     - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction. 
     - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), note that these are not applied to documents.
 
-## Learn about simulation mode
+### Learn about simulation mode
 
 Simulation mode is unique to auto-labeling policies and woven into the workflow. You can't automatically label documents and emails until your policy has run at least one simulation.
 
@@ -188,7 +188,7 @@ Simulation mode also lets you gradually increase the scope of your auto-labeling
 Finally, you can use simulation mode to provide an approximation of the time needed to run your auto-labeling policy, to help you plan and schedule when to run it without simulation mode.
 
 
-## Creating an auto-labeling policy
+### Creating an auto-labeling policy
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to sensitivity labels:
     
