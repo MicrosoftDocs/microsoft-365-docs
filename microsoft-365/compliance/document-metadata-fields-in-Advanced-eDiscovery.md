@@ -32,7 +32,7 @@ The following table lists the metadata fields for documents in a review set in a
 - **Description:** A description of the metadata field.
 
 > [!NOTE]
-> The *Keywords* field in Review Set search use the Keyword Query Language (KQL).  The fields listed in the *Searchable field name* can be used in the *Keywords* field to form complex queries wihtout using the query builder in the user interface. For more detailed information, see [Keyword Query Language syntax reference](https://go.microsoft.com/fwlink/?LinkId=269603).
+> The **Keywords** field in [review set search](https://docs.microsoft.com/microsoft-365/compliance/review-set-search) uses Keyword Query Language (KQL). The fields listed in the **Searchable field name** column can be used in the **Keywords** field in a review set search to form complex queries without you having to use the query builder. For more information about KQL, see [Keyword Query Language syntax reference](https://go.microsoft.com/fwlink/?LinkId=269603).
 
 |**Field name** and **Display field name**|**Searchable field name**|**Exported field name**|**Description**|
 |:-----|:-----|:-----|:-----|
