@@ -24,7 +24,7 @@ keywords: billing accounts, organization info, invoices
 
 The invoice provides a summary of your charges and instructions for payment. You can [view your online invoice](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
 
-If you only have an Office 365 subscription, see [View your invoice for Office 365 for business](view-your-bill-or-invoice.md).
+If you only have an Office 365 subscription, see [Understand your invoice for Office 365 for business](understand-your-invoice2.md).
 
 ## Understand the invoice header
 
@@ -105,6 +105,48 @@ see more details for each item. The online invoice includes:
 2. To download the .pdf version of your invoice, choose **Download invoice PDF** in the row for the invoice you want to see.
 
 3. To view your online invoice, choose an invoice from the list. You can also download the .pdf from the invoice details page.
+
+## Invoice FAQ
+
+### When is my Invoice available?
+
+Some invoices are generated within 24 hours of the purchase, while others are generated at the end of the billing period and include all items from that period.
+
+### How do I pay the amount due on my Invoice?
+
+Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit card, it is automatically charged within 10 days of the invoice date. If your payment method is by check or wire transfer, see the information under **Payment Instructions** in the PDF.
+
+### What's the difference between Sold To, Ship To, Service usage, and Bill To addresses?
+
+- **Sold To:** The legal entity responsible for payment and identified on the invoice. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](tax-information.md).
+- **Ship To:** The address at which the customer receives products or services. There can be many Ship To addresses per legal entity.
+- **Service usage:** Similar to the Ship To address, this is the address where customers use digital products and services. Customers can have multiple Service usage addresses per legal entity.
+- **Bill To:** The address where the physical invoice is sent, if applicable. There can be multiple Bill to addresses per legal entity, but only one Bill to address per billing profile.
+
+### How is the Ship To address used in my tax calculation?
+
+The Ship To/Usage address associated with each customer location is used to determine what tax rates are applied.
+
+### What are "Billed amount" and "Amount due?"
+
+- **Billed amount:** The total amount for the purchase you made.
+- **Amount due:** The remaining balance for what you owe.
+
+### What is the difference between "'Service period" and "Billing period?"
+
+- **Service period:** The time period during which you're charged to use the service.
+- **Billing period:** The time period since the last invoice date.
+
+### How do I view and print my bill?
+
+1. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, select an invoice date range.
+2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
+
+To learn more, see [View your bill or invoice](view-your-bill-or-invoice.md).
+
+### Why don't I see Azure prepayment as a payment method?
+
+Azure prepayment is available as a payment method only for eligible Azure product and services.
 
 ## Need help? Contact support.
 
