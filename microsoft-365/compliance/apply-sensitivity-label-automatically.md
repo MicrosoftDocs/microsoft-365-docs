@@ -142,7 +142,7 @@ Here's an example of a prompt when you configure a condition to apply a label as
 
 ![Prompt to apply a recommended label](../media/Sensitivity-label-Prompt-for-required-label.png)
 
-## How automatic or recommended labels are applied in Office apps
+## When automatic or recommended labels are applied in Office apps
 
 - Automatic labeling for Office apps applies to Word, Excel, and PowerPoint when you save a document, and to Outlook when you send an email. The conditions detect sensitive information in the body text in documents and emails, and to headers and footers — but not in the subject line or attachments of email.
 
@@ -177,7 +177,7 @@ Here's an example of a prompt when you configure a condition to apply a label as
     - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction. 
     - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), note that these are not applied to documents.
 
-### Learn about simulation mode
+## Learn about simulation mode
 
 Simulation mode is unique to auto-labeling policies and woven into the workflow. You can't automatically label documents and emails until your policy has run at least one simulation.
 
@@ -188,7 +188,7 @@ Simulation mode also lets you gradually increase the scope of your auto-labeling
 Finally, you can use simulation mode to provide an approximation of the time needed to run your auto-labeling policy, to help you plan and schedule when to run it without simulation mode.
 
 
-## Create an auto-labeling policy
+## Creating an auto-labeling policy
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to sensitivity labels:
     
