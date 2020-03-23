@@ -1,8 +1,7 @@
 ---
 title: "Add or remove members from Office 365 groups"
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -25,18 +24,12 @@ description: "Learn how to add a member to a group, remove member from group, an
 
 # Add or remove members from Office 365 groups using the admin center
 
-::: moniker range="o365-worldwide"
+In Office 365, group members typically create their own groups, add themselves to groups they want to join, or are invited by group owners. If group ownership changes, or if you determine that a member should be added or removed, as the admin you can also make that change. Only a global administrator, Exchange administrator, Groups administrator, or user administrator can make these changes. [What is an Office 365 group?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page. 
-
-::: moniker-end
-
-In Office 365, Group members typically create their own Groups, add themselves to Groups they want to join, or are invited by Group owners. If Group ownership changes, or if you determine that a member should be added or removed, as the admin you can also make that change. Only a global administrator, Exchange administrator, Groups administrator, or user administrator can make these changes. [What is an Office 365 Group?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+> [!TIP]
+> If you're not an admin, you can [add or remove members using Outlook](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx). 
   
- **Tip**: If you're not an admin, you can [add or remove members using Outlook](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx). 
-  
-## Add a member to a Group in the admin center
+## Add a member to a group in the admin center
 
 ::: moniker range="o365-worldwide"
 
@@ -80,7 +73,7 @@ In Office 365, Group members typically create their own Groups, add themselves t
 
 ::: moniker-end
 
-## Add a Group to a member in the admin center
+## Add a group to a member in the admin center
 
 ::: moniker range="o365-worldwide"
 
@@ -126,7 +119,7 @@ In Office 365, Group members typically create their own Groups, add themselves t
 
 
 
-## Remove a member from a Group in the admin center
+## Remove a member from a group in the admin center
 
 > [!NOTE]
 > When you remove a member from a private group, it takes 5 minutes for the person to be blocked from the group (after membership changes are fully replicated among domain controllers). 
@@ -173,7 +166,7 @@ In Office 365, Group members typically create their own Groups, add themselves t
 
 ::: moniker-end
 
-## Manage Group owner status
+## Manage group owner status
 
 By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.
   

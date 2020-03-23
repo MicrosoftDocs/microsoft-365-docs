@@ -243,6 +243,6 @@ You can:
 
 ## Next steps
 
-- [Review and approve pending actions](air-remediation-actions.md)
+- [Review and approve pending actions](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)
 
 - [Learn about automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
