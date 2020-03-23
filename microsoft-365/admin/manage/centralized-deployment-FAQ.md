@@ -30,7 +30,7 @@ Centralized deployment of add-ins requires that users are using Office 365 ProPl
  
 Centralized Deployment is not available for Outlook with Exchange Online mailboxes. 
  
-You can use the [Office 365 Centralized Deployment Compatibility Checker](https://docs.microsoft.com/en-us/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
+You can use the [Office 365 Centralized Deployment Compatibility Checker](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
   
 ## How do you target add-in user assignments with Centralized Deployment?  
 
@@ -41,7 +41,7 @@ Centralized Deployment supports assignments to individual users, groups, and eve
 
 It is better to use groups assignments instead of individual user assignment for easier management.
  
-For more details, see [User and Group assignments](https://docs.microsoft.com/en-us/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#user-and-group-assignments).  
+For more details, see [User and Group assignments](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#user-and-group-assignments).  
    
 ## How long does it take for add-ins to show up for all users?  
 
@@ -49,21 +49,21 @@ It can take up to 12 hours for an add-in to show up for all users. It can take t
   
 ## As an administrator, how do I manage the user access to add-ins for my organization?
 
-For easy deployment of add-ins to users, groups, or to your entire organization, we recommend administrators use Centralized Deployment.    
-  
-For more information about managing user access, see [Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)](https://docs.microsoft.com/en-us/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook) and [Specify the administrators and users who can install and manage add-ins for Outlook](https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins?redirectedfrom=MSDN).
+For easy deployment of add-ins to users, groups, or to your entire organization, we recommend administrators use Centralized Deployment.
+
+For more information about managing user access, see [Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook) and [Specify the administrators and users who can install and manage add-ins for Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins?redirectedfrom=MSDN).
 
 ## Will Centralized Deployment provide admins the flexibility to choose the deployment method for Outlook add-ins?  
 
-Yes. Centralized Deployment provides admins the flexibility to choose one of three deployment methods for Outlook add-ins during add-in deployment: 
-  
+Yes. Centralized Deployment provides admins the flexibility to choose one of three deployment methods for Outlook add-ins during add-in deployment:
+
 **Fixed (Default)**  
 The add-in is deployed automatically to the assigned users, and they cannot remove it.  
  
-**Available** 
+**Available**
 Users can install the add-in in Outlook by choosing Home > Get More add-ins > Admin-managed.   
  
-**Optional** 
+**Optional**
 The add-in is deployed automatically to the assigned users, but they can choose to remove it.  
 
 ## Are admins required to update Office Store add-ins?  
@@ -74,19 +74,19 @@ No. An Office Store add-in updates to end users without any admin intervention. 
 
 Yes. Admins can upload a new manifest file to support metadata changes for admin-deployed LOB add-ins. The add-in updates the next time the Office applications starts. The web application can change at any time.  
  
-For more information, see [line-of-business add-in](https://docs.microsoft.com/en-us/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#security-of-office-add-ins).  
+For more information, see [line-of-business add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#security-of-office-add-ins).  
 
 ## Can admins turn off add-ins?  
 
 Yes. Admins can turn on or off the add-ins they deploy for all users from the Microsoft admin center.
 
-For more information, see [Add-in states](https://docs.microsoft.com/en-us/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#add-in-states).  
+For more information, see [Add-in states](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#add-in-states).  
 
 ##  Can admins delete or remove add-ins?
 
 Yes. Admins can delete add-ins they deployed for all users from the Microsoft admin center.
 
-For more information, see [Delete the add-in](https://docs.microsoft.com/en-us/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#delete-the-add-in). 
+For more information, see [Delete the add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#delete-the-add-in). 
   
 ## Can admins deploy paid add-ins from the Office Store using Centralized Deployment? 
 
@@ -100,4 +100,4 @@ You must have the Global admin role to manage add-ins. If you're the person who 
  
 Your subscription comes with a set of admin roles that you can assign to other users in your organization. Each admin role maps to common business functions and gives people in your organization permissions to perform specific tasks in the Microsoft 365 admin center.  
  
-For more information, see [Assign admin roles](https://docs.microsoft.com/en-us/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).  
+For more information, see [Assign admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).  
