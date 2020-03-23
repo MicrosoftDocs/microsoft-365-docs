@@ -57,7 +57,6 @@ Use the following table to help you identify the differences in behavior for the
 |Feature or behavior|Label setting: Auto-labeling for Office apps |Policy: Auto-labeling|
 |:-----|:-----|:-----|:-----|
 |App dependency|[Yes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
-|Automatically override existing label| No | Yes only if lower priority label applied by auto-labeling for Office apps|
 |Restrict by location|No |Yes |
 |Conditions: Trainable classifers|Yes (limited preview) |No |
 |Conditions: Sharing options and additional options for email|No |Yes |
@@ -69,7 +68,7 @@ Use the following table to help you identify the differences in behavior for the
 |Label incoming email|No |Yes (encryption not applied) |
 
 > [!NOTE]
-> When content has been manually labeled, that label will never be replaced by automatic labeling. However, service-side automatic labeling can replace a lower priority label that was applied by using client-side automatic labeling.
+> When content has been manually labeled, that label will never be replaced by automatic labeling. However, service-side automatic labeling can replace a [lower priority label](sensitivity-labels.md#label-priority-order-matters ) that was applied by using client-side automatic labeling.
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
