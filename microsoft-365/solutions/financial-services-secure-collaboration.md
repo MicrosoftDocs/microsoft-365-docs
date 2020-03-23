@@ -100,44 +100,50 @@ FINRA's findings and observations for Digital Communications relate directly to 
 
 As employees work, they may move from application to application or across multiple locations and devices.Access to data must be authenticated at each step along the way. The authentication process must support a strong protocol and multiple factors of authentication (such as one-time SMS pass code, authenticator app, and certificate) to ensure that identities haven't been compromised. Finally, enforcing risk-based access policies is critical to protecting financial data and applications from insider threats, inadvertent data leaks and data exfiltration.
 
-Microsoft 365 provides a secure identity platform with [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/) where identities are centrally stored and securely managed Azure AD, along with a host of related Microsoft 365 security services, forms the basis for providing employees with the access they need to work securely while also protecting the organization from threats.
+Microsoft 365 provides a secure identity platform with [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/) where identities are centrally stored and securely managed. Azure AD, along with a host of related Microsoft 365 security services, forms the basis for providing employees with the access they need to work securely while also protecting the organization from threats.
 
-[Azure Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) is built into the platform and provides an additional proof of authentication to help confirm user identity when accessing sensitive financial data and applications. Azure MFA requires at least two forms of authentication, such as a password plus a known mobile device It supports several second factor authentication options, including: the Microsoft Authenticator app, a one-time passcode delivered via SMS or receiving a phone call where a user must enter a PIN In the event a password is somehow compromised, a potential hacker would still need the user's phone to gain access to organizational data In addition, Microsoft 365 uses Modern Authentication as a key protocol, which brings the same strong and rich authentication experience from web browsers to the collaboration tools that employees use day to day, including Microsoft Outlook and the Microsoft Office suite of applications.
+[Azure Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) is built into the platform and provides an additional proof of authentication to help confirm user identity when they access sensitive financial data and applications. Azure MFA requires at least two forms of authentication, such as a password plus a known mobile device. It supports several second-factor authentication options, including:
+
+- The Microsoft Authenticator app
+- A one-time passcode delivered via SMS
+- A phone call where a user must enter a PIN
+
+Ia password is somehow compromised, a potential hacker would still need the user's phone to gain access to organizational data. In addition, Microsoft 365 uses Modern Authentication as a key protocol, which brings the same strong and rich authentication experience from web browsers to the collaboration tools that employees use day to day, including Microsoft Outlook and the other Microsoft Office applications.
 
 #### Passwordless
 
-Passwords are the weakest link in a security chain and a single point of failure without any additional verification. Microsoft supports a broad range of authentication options to fit the needs of financial institutions.
+Passwords are the weakest link in a security chain. They can be a single point of failure if there's no additional verification. Microsoft supports a broad range of authentication options to fit the needs of financial institutions.
 
-Passwordless methods help make MFA more convenient for users While not all MFA is passwordless, passwordless technologies employ multi-factor authentication. Microsoft, Google, and other leaders in the industry have been developing standards to enable a simpler and stronger authentication experience across the web and mobile devices in a group called FIDO (Fast IDentity Online). The recently developed FIDO2 standard enables users to authenticate easily and securely without requiring a password in order to eliminate phishing.
+Passwordless methods help make MFA more convenient for users. While not all MFA is passwordless, passwordless technologies employ multi-factor authentication. Microsoft, Google, and other leaders in the industry have been developing standards to enable a simpler and stronger authentication experience across the web and mobile devices in a group called FIDO (Fast IDentity Online). The recently developed FIDO2 standard enables users to authenticate easily and securely without requiring a password to eliminate phishing.
 
 Microsoft MFA credentials that are "passwordless" include:
-* [Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/user-help/user-help-auth-app-overview): For flexibility, convenience, and cost, we recommend using the Microsoft Authenticator mobile app. Microsoft Authenticator supports biometrics, push notifications, and onetime passcodes for any Azure AD-connected app and is available from the Apple and Android app stores
-*  [Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview): For a built-in experience on the PC, we recommend using Windows Hello. It uses biometric information (e.g. face or fingerprint) to sign in automatically.  
+* [Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/user-help/user-help-auth-app-overview): For flexibility, convenience, and cost, we recommend using the Microsoft Authenticator mobile app. Microsoft Authenticator supports biometrics, push notifications, and one-time passcodes for any Azure AD-connected app. It's available from the Apple and Android app stores.
+*  [Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview): For a built-in experience on the PC, we recommend using Windows Hello. It uses biometric information (such as face or fingerprint) to sign in automatically.  
 * [FIDO2 Security keys](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key) are now available from several Microsoft partners: Yubico, Feitian Technologies, and HID Global in a USB, NFC-enabled badge, or biometric key.
 
-[Azure AD Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/) provides a robust solution for automating access control decisions and enforcing organizational policies to protect company assets. A classic example is when a financial planner wishes to access an application with sensitive customer data, and they are automatically required to perform a multi-factor authentication to specifically access that application and require access be from a corporatemanaged device' Azure Conditional Access brings together signals about a user's access request, such as properties about the user, the device, location, network, and the application the user is trying to access, and it dynamically evaluates attempts to access the application against configured policies. If user or device risk is elevated, or other conditions are not met, Azure AD can automatically enforce policy such as requiring MFA, requiring a secure password reset, restricting or even blocking access This helps ensure that sensitive organizational assets are protected in dynamically changing environments.
+[Azure AD Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/) provides a robust solution for automating access control decisions and enforcing organizational policies to protect company assets. A classic example is when a financial planner wants to access an application that has sensitive customer data. They are automatically required to perform a multi-factor authentication to specifically access that application, and and access must be from a corporate-managed device. Azure Conditional Access brings together signals about a user's access request, such as properties about the user, the device, location, network, and the application the user is trying to access. It dynamically evaluates attempts to access the application against configured policies. If user or device risk is elevated, or other conditions are not met, Azure AD can automatically enforce policies, such as requiring MFA, requiring a secure password reset, or restricting or even blocking access. This helps ensure that sensitive organizational assets are protected in dynamically changing environments.
  
-Azure AD, and the related Microsoft 365 security services, provide the foundation upon which a modern cloud collaboration platform can be rolled out to financial institutions so that access to data and applications can be strongly secured and regulator compliance obligations can be met To summarize, these tools provide the following key capabilities:
+Azure AD, and the related Microsoft 365 security services, provide the foundation on which a modern cloud collaboration platform can be rolled out to financial institutions so that access to data and applications can be strongly secured, and regulator compliance obligations can be met. These tools provide the following key capabilities:
 
-* Centrally store and securely manage user identities
-* Use a strong authentication protocol including multi-factor authentication to authenticate users on access requests and provide a consistent and robust authentication experience across any application
-* Dynamically validate policies on all access requests, incorporating multiple signals into the policy decision-making process, including identity, user/group membership, application, device, network, location, and real-time risk score
-* Validate granular policies based on user behavior and file properties and dynamically enforce additional security measures when required
-* Identify shadow IT in the organization, and allow InfoSec teams to sanction or block cloud applications
-* Monitor and control access to Microsoft and non-Microsoft cloud applications
-* Proactively protect against email phishing and ransomware attacks
+* Centrally store and securely manage user identities.
+* Use a strong authentication protocol, including multi-factor authentication, to authenticate users on access requests and provide a consistent and robust authentication experience across any application.
+* Dynamically validate policies on all access requests, incorporating multiple signals into the policy decision-making process, including identity, user/group membership, application, device, network, location, and real-time risk score.
+* Validate granular policies based on user behavior and file properties and dynamically enforce additional security measures when required.
+* Identify shadow IT in the organization, and allow InfoSec teams to sanction or block cloud applications.
+* Monitor and control access to Microsoft and non-Microsoft cloud applications.
+* Proactively protect against email phishing and ransomware attacks.
 
 #### Azure AD Identity Protection
-While Conditional Access protects resources from suspicious requests, identity protection goes further by providing ongoing risk detection and remediation of suspicious user accounts Identity protection keeps you informed 24/7 of suspicious user and sign-in behavior in your environment. Its automatic response proactively prevents compromised identities from being abused.
+While Conditional Access protects resources from suspicious requests, identity protection goes further by providing ongoing risk detection and remediation of suspicious user accounts. Identity protection keeps you informed of suspicious user and sign-in behavior in your environment around the clock. Its automatic response proactively prevents compromised identities from being abused.
  
 Identity Protection is a tool that allows organizations to accomplish three key tasks:
 * Automate the detection and remediation of identity-based risks.
-* Investigate risks using data in the portal
+* Investigate risks using data in the portal.
 * Export risk detection data to third-party utilities for further analysis.
 
-Identity Protection uses the learnings Microsoft has acquired from its position in organizations with Azure AD, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users Microsoft analyzes 65 trillion signals per day to identify and protect customers from threats The signals generated by and fed to Identity Protection, can be further fed into tools like Conditional Access to make access decisions, or fed back to a security information and event management (SIEM) tool for further investigation based on your organization's enforced policies.
+Identity Protection uses knowledge that Microsoft has acquired from its position in organizations with Azure AD, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users. Microsoft analyzes 65 trillion signals per day to identify and protect customers from threats. The signals generated by and fed to Identity Protection can be further fed into tools like Conditional Access to make access decisions. Or they can be fed back to a security information and event management (SIEM) tool for further investigation based on your organization's enforced policies.
 
-Identity Protection help organizations automatically protect against identity compromise by taking advantage of cloud intelligence powered by advanced detections based on heuristics, User and Entity Behavior Analytics (UEBA), and machine learning (ML) across the Microsoft ecosystem.
+Identity Protection help organizations automatically protect against identity compromise by taking advantage of cloud intelligence powered by advanced detections based on heuristics, user and entity behavior nalytics (UEBA), and machine learning (ML) across the Microsoft ecosystem.
 
 GRAPHIC
  
@@ -145,7 +151,7 @@ GRAPHIC
 Microsoft 365 allows all organizations to identify sensitive data within the organization through a combination of powerful capabilities, including:
 
 * **Microsoft Information Protection (MIP)** for both user-based classification and automated classification of sensitive data
-* **Office 365 Data Loss Prevention (DLP)** for automated identification of sensitive data using sensitive data types (ie regular expressions) and keywords, and policy enforcement
+* **Office 365 Data Loss Prevention (DLP)** for automated identification of sensitive data using sensitive data types (in other words, regular expressions) and keywords and policy enforcement
 
 [Microsoft Information Protection (MIP)](https://docs.microsoft.com/information-protection/) enables organizations to classify documents and emails intelligently with sensitivity labels Sensitivity labels can be applied manually by users to documents within the Microsoft Office applications and to emails within Microsoft Outlook. Sensitivity labels can in turn automatically apply document markings, protection through encryption, and rights management enforcement Sensitivity labels may also be applied automatically, by configuring policies which use keywords and sensitive data types (credit card numbers, social insurance numbers, identity numbers, etc.) to automatically find and classify sensitive data.
 
