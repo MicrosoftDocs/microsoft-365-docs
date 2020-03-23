@@ -310,7 +310,7 @@ Examples queries:
 
 When you choose the option for a trainable classifier, you can select one of the built-in classifiers, or a custom classifier. The built-in classifiers include **Offensive Language**, **Resumes**, **SourceCode**, **Targeted Harassment**, **Profanity**, and **Threat**:
 
-![Choose trainable classifer](../media/retention-label-classifers.png)
+![Choose trainable classifier](../media/retention-label-classifers.png)
 
 To automatically apply a label by using this option, SharePoint Online sites and mailboxes must have at least 10 MB of data.
 
