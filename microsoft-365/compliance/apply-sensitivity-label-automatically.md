@@ -45,9 +45,9 @@ There are two different scenarios for automatically applying a sensitivity label
     For configuration instructions, see [How to configure auto-labeling for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-for-sharepoint-onedrive-and-exchange) ont his page.
     
     Specific to auto-labeling for Exchange:
-    - Unlike manually labeling or auto-labeling with Office apps, Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
-    - If you have Exchange mail flow rules or data loss prevention (DLP policies that apply IRM encryption: When content is identified by an auto-labeling policy, any matches from the Exchange mail flow rules or DLP policies are ignored.
-    - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
+    - Unlike manual labeling or auto-labeling with Office apps, Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
+    - If you have Exchange mail flow rules or data loss prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
+    - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling and the sender has the [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export or Full Control.
     - Incoming email is labeled when there is a match with your auto-labeling conditions. However, if the label is configured for encryption, that encryption isn't applied.
 
 ## Compare auto-labeling for Office apps with auto-labeling policies
