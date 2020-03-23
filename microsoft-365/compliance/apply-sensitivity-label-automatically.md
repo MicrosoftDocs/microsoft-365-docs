@@ -64,7 +64,7 @@ Use the following table to help you identify the differences in behavior for the
 |Simulation mode|No |Yes |
 |Exchange attachments checked for conditions|No | Yes|
 |Apply visual markings |Yes |Yes (email only) |
-|Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
+|Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes if the user has the minimum usage right of Export (email only) |
 |Label incoming email|No |Yes (encryption not applied) |
 
 > [!NOTE]
