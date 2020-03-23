@@ -68,7 +68,7 @@ Use the following table to help you identify the differences in behavior for the
 |Label incoming email|No |Yes (encryption not applied) |
 
 > [!NOTE]
-> When content has been manually labeled, that label will never be replaced by automatic labeling. However, service-side automatic labeling can replace a [lower priority label](sensitivity-labels.md#label-priority-order-matters) that was applied by using client-side automatic labeling.
+> When content has been manually labeled, that label will never be replaced by automatic labeling. However, auto-labeling policies can replace a [lower priority label](sensitivity-labels.md#label-priority-order-matters) that was applied by using auto-labeling for Office apps.
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
