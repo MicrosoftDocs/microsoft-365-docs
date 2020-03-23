@@ -251,6 +251,6 @@ You can also see the results of your auto-labeling policy by using [content expl
 - **Content Explorer Content viewer** lets you see the file's contents.
 
 > [!TIP]
-> You can also use content explorer to identify locations that have unlabeled documents that contain sensitive information. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as conditions.
+> You can also use content explorer to identify locations that have unlabeled documents that contain sensitive information. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.
 
 
