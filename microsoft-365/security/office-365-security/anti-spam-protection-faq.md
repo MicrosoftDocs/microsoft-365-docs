@@ -184,13 +184,3 @@ A. The guidelines presented below are best practices for sending outbound email 
 - **Use Hotmail's Smart Network Data Services (SNDS) program.**
 
   Hotmail uses a program called Smart Network Data Services that allows senders to check complaints submitted by end users. The SNDS is the primary portal for troubleshooting delivery problems to Hotmail.
-
-## For more information
-
-[Office 365 email anti-spam protection](anti-spam-protection.md)
-
-[Safe sender and blocked sender lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
-
-[Anti-spam message headers](anti-spam-message-headers.md)
-
-[Backscatter messages and EOP](backscatter-messages-and-eop.md)
