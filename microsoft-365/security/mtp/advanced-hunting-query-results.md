@@ -59,6 +59,9 @@ AlertInfo
 ```
 When rendered as a column chart, the chart is meaningful and easy to understand.
 
+![Image of advanced hunting query results displayed as a column chart](../../media/advanced-hunting-column-chart.jpg)
+*Query results for alerts by severity displayed as a column chart*
+
 **[SCREENSHOT]**
 
 #### Alert severity by operating system
