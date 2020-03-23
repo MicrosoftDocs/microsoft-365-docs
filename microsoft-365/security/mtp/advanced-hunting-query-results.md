@@ -33,13 +33,8 @@ While you can construct your [advanced hunting](advanced-hunting-overview.md) qu
 - Drill down to detailed entity information
 - Tweak your queries directly from the results or apply filters
 
-## View query results as tables or charts
-By default, advanced hunting displays query results as tabular data. You can also display the same data as a chart.
-
-![Image of advanced hunting query results displayed as a stacked chart](../../media/advanced-hunting-stacked-chart.jpg)
-*Query results for alerts by platform and severity displayed as a stacked chart*
-
-To render charts, advanced hunting automatically identifies columns of interest and numeric values to aggregate. Advanced hunting supports the following views: 
+## View query results as a table or chart
+By default, advanced hunting displays query results as tabular data. You can also display the same data as a chart. Advanced hunting supports the following views:
 
 | View type | Description |
 | -- | -- |
@@ -52,11 +47,60 @@ To render charts, advanced hunting automatically identifies columns of interest 
 | **Scatter chart** | Plots numeric values for a series of unique items |
 | **Area chart** | Plots numeric values for a series of unique items and fills the sections below the plotted values |
 
-![Image of advanced hunting query results displayed as a line chart](../../media/advanced-hunting-line-chart.jpg)
-*Line chart showing the number of events involving a specific file over time*
+### Construct queries for effective charts
+When rendering charts, advanced hunting automatically identifies columns of interest and the numeric values to aggregate. To get sensible charts, you can construct queries so that they return and aggregate the values you want to see visualized. Here are some sample queries and the resulting charts.
+
+#### Alerts by severity
+Use the `summarize` operator to obtain a numeric count of the values you want to chart. The query below uses the `summarize` operator to get the number of alerts by severity.
+
+```kusto
+AlertInfo
+| summarize Total = count() by Severity
+```
+The result is automatically rendered in a column or pie chart that is easy to understand.
+
+#### Alert severity by operating system
+If you want to look at more values, such as how alert severity is distributed across endpoint operating systems (OS), you can add more columns to summarize. The query below uses a `join` operator to pull in OS information from the `DeviceInfo` table and then uses `summarize` to count values in both the `OSPlatform` and `Severity` columns.
+
+```kusto
+AlertInfo
+| join AlertEvidence on AlertId
+| join DeviceInfo on DeviceId
+| summarize Count = count() by OSPlatform, Severity 
+```
+The results are best visualized using a stacked column chart.
+
+![Image of advanced hunting query results displayed as a stacked chart](../../media/advanced-hunting-stacked-chart.jpg)
+*Query results for alerts by OS and severity displayed as a stacked chart*
+
+#### Phishing emails across top ten sender domains
+If you are dealing with a list of values that isn’t finite, use the `Top` operator to chart only the unique values with the most instances. For example, to get the top ten sender domains with the most phishing emails, use the query below.
+
+```kusto
+EmailEvents
+| where PhishFilterVerdict == "Phish"
+| summarize Count = count() by SenderFromDomain
+| top 10 by Count
+```
+A pie chart can effectively show distribution across the top domains.
 
 ![Image of advanced hunting query results displayed as a pie chart](../../media/advanced-hunting-pie-chart.jpg)
-*Pie chart showing distribution of phishing emails by sender domain*
+*Pie chart showing distribution of phishing emails across top sender domains*
+
+#### File activities over time
+You can check for the events involving a particular indicator over time using `summarize`. Using the `bin()` function with `summarize`, the query below counts events involving the file `invoice.doc` at 30 minute intervals to show spikes in file activity.
+
+```kusto
+AppFileEvents
+| AppFileEvents
+| union DeviceFileEvents
+| where FileName == "invoice.doc"
+| summarize FileCount = count() by bin(Timestamp, 30m)
+```
+
+![Image of advanced hunting query results displayed as a line chart](../../media/advanced-hunting-line-chart.jpg)
+*Line chart showing the number of events involving a file over time*
+
 
 
 ## Export tables and charts
