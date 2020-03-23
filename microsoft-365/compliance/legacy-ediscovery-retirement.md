@@ -131,9 +131,9 @@ The following table describes other tools that you can use to replace the existi
 <p>Alternatively, you can export search results to PST files and then use Microsoft 365 Import service to import the PSTs to a discovery mailbox. For step-by-step instruction, see <a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">Use network upload to import PST files to Office 365</a>.
 </tr>
 <tr class=even>
-  <td>Copy messages to another users mailbox so they have access to those messages</td>
-  <td>https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-permissions-for-recipients</td>
-  <td>To give access to another user's mail, as in such cases as an employee who has left your organization, the supported methodology for this is to grant access to that user's mailbox instead of copying to a shared mailbox or any other mailbox.</td>
+  <td>Copy messages from one mailbox to a different mailbox</td>
+  <td>[Assign permissions to a mailbox](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)</td>
+  <td>To give a person access to another user's email (such as when an employee leaves your organization and you need to give another person access to the former employee's email), we recommended that you assign that person permissions to access the former employee's mailbox. So instead of copying mailbox items to another user mailbox or a shared mailbox, just assign a user permissions to access the source mailbox.</td>
   
   </tr>
 <tr class="odd">
@@ -218,9 +218,9 @@ The following table describes other tools that you can use to replace the existi
 <td>There's no direct replacement for this functionality because it does not provide access to all Microsoft 365 services. See the following FAQ below for alternative solutions.</td>
 </tr>
   <tr class=even>
-  <td>Copy messages to another users mailbox so they have access to those messages</td>
-  <td>https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-permissions-for-recipients</td>
-  <td>To give access to another user's mail, as in such cases as an employee who has left your organization, the supported methodology for this is to grant access to that user's mailbox instead of copying to a shared mailbox or any other mailbox.</td>
+  <td>Copy messages from one mailbox to a different mailbox</td>
+  <td>[Assign permissions to a mailbox](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)</td>
+  <td>To give a person access to another user's email (such as when an employee leaves your organization and you need to give another person access to the former employee's email), we recommended that you assign that person permissions to access the former employee's mailbox. So instead of copying mailbox items to another user mailbox or a shared mailbox, just assign a user permissions to access the source mailbox.</td>
   
   </tr>
 
