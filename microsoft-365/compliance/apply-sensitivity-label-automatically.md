@@ -196,7 +196,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     If you don't immediately see this option, first select **Show all**.
 
-2. Select the **Auto-labeling (preview)** tab.
+2. Select the **Auto-labeling (preview)** tab:
+    
+    ![Auto-labeling (preview) tab](../media/auto-labeling-tab.png)
 
 3. Select **+ Create policy**.
 
