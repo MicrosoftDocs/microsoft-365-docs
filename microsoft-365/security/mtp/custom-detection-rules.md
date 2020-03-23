@@ -26,7 +26,7 @@ ms.topic: article
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Custom detection rules built from [Advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured machines. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
+Custom detection rules built from [Advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured endpoints. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
 
 ## Required permissions for managing custom detections
 
@@ -34,7 +34,7 @@ To manage custom detections, you need to be assigned one of these roles:
 
 - **Security administrator** — the security administrator or security admin role is an [Azure Active Directory role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) for managing various security settings in Microsoft 365 security center and various portals and services.
 
-- **Security operator** —  the security operator role is an [Azure Active Directory role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) for managing alerts and has global read-only access on security-related features, including all information in Microsoft 365 security center. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off on Microsoft Defender ATP. If you have RBAC configured, you also need the **manage security settings** permission on Microsoft Defender ATP.
+- **Security operator** —  the security operator role is an [Azure Active Directory role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) for managing alerts and has global read-only access on security-related features, including all information in Microsoft 365 security center. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender ATP. If you have RBAC configured, you also need the **manage security settings** permission for Microsoft Defender ATP.
 
 To manage required permissions, a **global administrator** can do the following:
 
@@ -53,7 +53,7 @@ In Microsoft 365 security center, go to **Advanced hunting** and select an exist
 To create a custom detection rule, the query must return the following columns:
 
 - `Timestamp`
-- An entity represented by one of the following columns:
+- One of the following device, user, or mailbox columns:
     - `DeviceId`
     - `DeviceName`
     - `RemoteDeviceName`
@@ -66,11 +66,11 @@ To create a custom detection rule, the query must return the following columns:
     - `InitiatingProcessAccountUpn`
     - `InitiatingProcessAccountObjectId`
 >[!NOTE]
->Support for additional entities will be added as new tables are added to the schema.
+>Support for additional entities will be added as new tables are added to the [advanced hunting schema](advanced-hunting-schema-tables.md).
 
 Simple queries, such as those that don't use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.
 
-There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by entity under a column such as `DeviceId`, you can still return `Timestamp` by getting these values from the most recent event involving each unique `DeviceId`.
+There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by entity under a column such as `DeviceId`, you can still return `Timestamp` by getting it from the most recent event involving each unique `DeviceId`.
 
 The sample query below counts the number of unique machines (`DeviceId`) with antivirus detections and uses this count to find only the machines with more than five detections. To return the latest `Timestamp`, it uses the `summarize` operator with the `arg_max` function.
 

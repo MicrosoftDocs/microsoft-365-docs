@@ -28,7 +28,7 @@ ms.topic: article
 
 While you can construct your [advanced hunting](advanced-hunting-overview.md) queries to return very precise information, you can also work with the query results to gain further insight and investigate specific activities and indicators. You can take the following actions on your query results:
 
-- View results as a table or charts
+- View results as a table or chart
 - Export tables and charts
 - Drill down to detailed entity information
 - Tweak your queries directly from the results or apply filters
@@ -48,7 +48,7 @@ By default, advanced hunting displays query results as tabular data. You can als
 | **Area chart** | Plots numeric values for a series of unique items and fills the sections below the plotted values |
 
 ### Construct queries for effective charts
-When rendering charts, advanced hunting automatically identifies columns of interest and the numeric values to aggregate. To get sensible charts, you can construct queries so that they return and aggregate the values you want to see visualized. Here are some sample queries and the resulting charts.
+When rendering charts, advanced hunting automatically identifies columns of interest and the numeric values to aggregate. To get meaningful charts, construct your queries to return the specific values you want to see visualized. Here are some sample queries and the resulting charts.
 
 #### Alerts by severity
 Use the `summarize` operator to obtain a numeric count of the values you want to chart. The query below uses the `summarize` operator to get the number of alerts by severity.
@@ -57,15 +57,13 @@ Use the `summarize` operator to obtain a numeric count of the values you want to
 AlertInfo
 | summarize Total = count() by Severity
 ```
-When rendered as a column chart, the chart is meaningful and easy to understand.
+When rendering the results, a column chart displays each severity value as a separate column:
 
 ![Image of advanced hunting query results displayed as a column chart](../../media/advanced-hunting-column-chart.jpg)
 *Query results for alerts by severity displayed as a column chart*
 
-**[SCREENSHOT]**
-
 #### Alert severity by operating system
-You could also use the `summarize` operator to prepare results for charting values from multiple columns. For example, you might want to understand how alert severities are distributed across endpoint operating systems (OS). 
+You could also use the `summarize` operator to prepare results for charting values from multiple fields. For example, you might want to understand how alert severities are distributed across operating systems (OS). 
 
 The query below uses a `join` operator to pull in OS information from the `DeviceInfo` table, and then uses `summarize` to count values in both the `OSPlatform` and `Severity` columns:
 
@@ -99,7 +97,6 @@ Using the `summarize` operator with the `bin()` function, you can check for even
 
 ```kusto
 AppFileEvents
-| AppFileEvents
 | union DeviceFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
