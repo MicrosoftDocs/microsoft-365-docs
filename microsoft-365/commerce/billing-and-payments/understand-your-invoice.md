@@ -116,11 +116,9 @@ Some invoices are generated within 24 hours of the purchase, while others are ge
 
 Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit card, it is automatically charged within 10 days of the invoice date. If your payment method is by check or wire transfer, see the information under **Payment Instructions** in the PDF.
 
-### What's the difference between Sold To, Ship To, Service usage, and Bill To addresses?
+### What's the difference between "Sold to" and "Bill to" addresses?
 
 - **Sold To:** The legal entity responsible for payment and identified on the invoice. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](tax-information.md).
-- **Ship To:** The address at which the customer receives products or services. There can be many Ship To addresses per legal entity.
-- **Service usage:** Similar to the Ship To address, this is the address where customers use digital products and services. Customers can have multiple Service usage addresses per legal entity.
 - **Bill To:** The address where the physical invoice is sent, if applicable. There can be multiple Bill to addresses per legal entity, but only one Bill to address per billing profile.
 
 ### How is the Ship To address used in my tax calculation?
