@@ -105,7 +105,7 @@ When saved, a new or edited custom detection rule immediately runs and checks fo
 Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
 
 ### 3. Choose the impacted entities.
-Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses. By identifying the main impacted entity among these addresses, you guide the service on how to aggregate relevant alerts, correlate incidents, and target response actions.
+Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses. Identifying which of these columns represent the main impacted entity helps the service aggregate relevant alerts, correlate incidents, and target response actions.
 
 You can select only one column for each entity type (mailbox, user, or device). Columns that are not returned by your query can't be selected.
 
@@ -120,7 +120,7 @@ These actions are applied to machines in the `DeviceId` column of the query resu
 - **Initiate investigation** — initiates an [automated investigation](mtp-autoir.md) on the machine
 
 #### Actions on files
-This **Quarantine file** action is applied to files in the `SHA1`, `InitiatingProcessSHA1`, `SHA256`, or `InitiatingProcessSHA256` column of the query results. This action deletes the file from its current location and places a copy in quarantine.
+When selected, the **Quarantine file** action is taken on files in the `SHA1`, `InitiatingProcessSHA1`, `SHA256`, or `InitiatingProcessSHA256` column of the query results. This action deletes the file from its current location and places a copy in quarantine.
 
 > [!NOTE]
 > The allow or block action for custom detection rules is currently not supported on Microsoft Threat Protection.
