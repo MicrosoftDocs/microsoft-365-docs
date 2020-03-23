@@ -42,7 +42,7 @@ There are two different methods for automatically applying a sensitivity label:
     
     This method is sometimes referred to as auto-classification with sensitivity labels. You might also hear it referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes). Because the configuration is service-side, there's no dependency on specific versions of apps. As a result, this capability is organization-wide and suitable for labeling at scale. Auto-labeling policies don't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label.
     
-    For configuration instructions, see [How to configure auto-labeling for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-for-sharepoint-onedrive-and-exchange) ont his page.
+    For configuration instructions, see [How to configure auto-labeling for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-for-sharepoint-onedrive-and-exchange) on this page.
     
     Specific to auto-labeling for Exchange:
     - Unlike manual labeling or auto-labeling with Office apps, Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
@@ -240,11 +240,11 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     Unlike auto-labeling for Office apps, there's no separate publish option. However, as with publishing labels, allow up to 24 hours for the auto-labeling policy to replicate throughout your organization.
 
-Now on the **Information Protection** page, **Auto-labeling (preview)** tab, you see your auto-labeling policy in the **Testing** section. Select your policy to see the details of the configuration and status (for example, still testing or test complete). Select the **Matched items** tab to see which emails or documents matched the rules that you specified.
+Now on the **Information protection** page, **Auto-labeling (preview)** tab, you see your auto-labeling policy in the **Testing** section. Select your policy to see the details of the configuration and status (for example, still testing or test complete). Select the **Matched items** tab to see which emails or documents matched the rules that you specified.
 
-You can modify your policy directly from this interface by selecting the **Edit** option.
+You can modify your policy directly from this interface by selecting the **Edit** option at the top of the page.
 
-When you're ready to run the policy without simulation, select **Turn On**.
+When you're ready to run the policy without simulation, select the **Turn On** option.
 
 You can also see the results of your auto-labeling policy by using [content explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
 - **Content Explorer List viewer** lets you see a file's label but not the file's contents.
