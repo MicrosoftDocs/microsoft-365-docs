@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 08/06/2019
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
