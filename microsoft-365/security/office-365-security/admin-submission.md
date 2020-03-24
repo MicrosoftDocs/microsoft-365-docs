@@ -36,7 +36,7 @@ To submit content to Microsoft click the **New submission** button in the top le
 
 2. Specify the recipient(s) that you would like to run the policy check against. The policy check will determine if the email bypassed scanning due to user or tenant level policies.
 
-3. Specify if the email should have been blocked or not. If the email should have been blocked, specify if it should have been blocked as Spam, Phishing, or Malware. If you are not sure what type it might be, use your best judgement.
+3. Specify if the email should have been blocked or not. If the email should have been blocked, specify if it should have been blocked as Spam, Phishing, or Malware. If you are not sure what type it might be, use your best judgment.
 
    - If the filter was bypassed due to policies upon submission, you'll see information about that policy.
 
