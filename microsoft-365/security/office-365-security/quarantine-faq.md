@@ -65,7 +65,7 @@ $CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contos
 Then, run the following command to release those messages to all original recipients:
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $CQ.Identity -ReleaseToAll}
+$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
 ```
 
 After you release a message, you can't release it again.

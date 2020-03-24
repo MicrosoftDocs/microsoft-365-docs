@@ -33,9 +33,9 @@ You view and manage your quarantined messages in the Security & Compliance Cente
 
 - Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies). Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
-- Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md) in anti-spam policies. As of October 2019, you can no longer release quarantined messages directly from these notifications. You can click **Review** in the notification, which will take you to Quarantine in the Security & Compliance Center. For more information, see [End-user spam notifications in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+- Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in anti-spam policies. As of October 2019, you can no longer release quarantined messages directly from these notifications. You can click **Review** in the notification, which will take you to Quarantine in the Security & Compliance Center. For more information about the notifications, see [End-user spam notifications in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-- Messages that were quarantined for high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. For more information, see [Find and release quarantined messages as an admin in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).
+- Messages that were quarantined for high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
 
 - You can only release a message and report it as a false positive (not junk) once.
 

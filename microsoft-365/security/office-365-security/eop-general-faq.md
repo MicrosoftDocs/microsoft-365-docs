@@ -24,8 +24,6 @@ Here we answer the most common general questions about the Microsoft Exchange On
 
 - [Anti-spam protection FAQ](anti-spam-protection-faq.md)
 
-- [Safe sender and blocked sender lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
-
 - [Quarantine FAQ](quarantine-faq.md)
 
 - [Anti-malware protection FAQ](anti-malware-protection-faq-eop.md)

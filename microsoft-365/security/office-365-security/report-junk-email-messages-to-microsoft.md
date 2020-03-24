@@ -28,7 +28,11 @@ The Microsoft Junk Email Reporting Add-in for Microsoft Office Outlook offers se
 
 - From within an opened email message
 
+<<<<<<< HEAD
 The Junk Email Reporting Add-in helps you submit reports to the Microsoft Exchange Online Protection (EOP) service. If your mailbox is not protected by the service, your junk email report submission will not affect your spam filters. Administrators can learn about more spam settings that apply to a whole organization at [How to prevent good email from being marked as spam](prevent-email-from-being-marked-as-spam.md) or [How to reduce spam email in Office 365](reduce-spam-email.md). These are helpful if you have administrator-level control and you want to prevent false positives or false negatives.
+=======
+The Junk Email Reporting Add-in helps you submit reports to the Microsoft Exchange Online Protection (EOP) service. If your mailbox is not protected by the service, your junk email report submission will not affect your spam filters. Administrators can learn about more spam settings that apply to a whole organization at [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md) and [Create blocked sender lists in Office 365](create-block-sender-lists-in-office-365.md). These are helpful if you have administrator-level control and you want to prevent false positives or false negatives.
+>>>>>>> cc1f3200bf63489c8c397aad316ee5a36d6c8d3d
 
 > [!TIP]
 > You can also submit spam messages directly to Microsoft by using the [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) email address, and false positive (non-spam) messages by using the [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com) email address. For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
@@ -64,6 +68,7 @@ The selected messages will be sent to Microsoft for analysis and moved to the Ju
     > If you don't want to receive this confirmation message when submitting junk messages, check **Do not show this message again**.
 
 The selected message will be sent to Microsoft for analysis and moved to the Junk Email folder. To confirm that the message has been submitted, open your **Sent Items** folder to view the submitted message.
+<<<<<<< HEAD
 
 ## For more information
 
@@ -74,3 +79,5 @@ The selected message will be sent to Microsoft for analysis and moved to the Jun
 [How to prevent good email from being marked as spam](prevent-email-from-being-marked-as-spam.md)
 
 [How to reduce spam email in Office 365](reduce-spam-email.md)
+=======
+>>>>>>> cc1f3200bf63489c8c397aad316ee5a36d6c8d3d

@@ -127,9 +127,9 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
    - **Quarantine**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted. The default value is 30 days. A valid value is from 1 to 30 days. For information about quarantine, see the following topics:
 
-     - [Quarantine](quarantine.md)
-     - [Find and release quarantined messages as an administrator](find-and-release-quarantined-messages-as-an-administrator.md)
-     - [Configure end-user spam notifications in EOP](configure-end-user-spam-notifications-in-eop.md)
+     - [Quarantine in Office 365](quarantine-email-messages.md)
+     - [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md)
+     - [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md)
 
    - **Add this X-header text**: This box is required and available only if you selected **Add X-header** as the action for a spam filtering verdict. The value you specify is the header field *name* that's added to the message header. The header field *value* is always `This message appears to be spam`.
 
@@ -317,9 +317,9 @@ To change the priority of a policy, move the policy up or down in the list (you 
 
 3. Click ![Up Arrow icon](../../media/ITPro-EAC-UpArrowIcon.png) or ![Down Arrow icon](../../media/ITPro-EAC-DownArrowIcon.png) to move the custom anti-spam policy up or down in the priority list.
 
-### Configure end-user spam quarantine notifications
+### Configure end-user spam notifications
 
-When a spam filtering verdict quarantines a message, you can configure end-user spam notifications to let recipients know what happened to messages that were sent to them. For more information, see [Use end-user spam notifications to release and report spam-quarantined messages](use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md).
+When a spam filtering verdict quarantines a message, you can configure end-user spam notifications to let recipients know what happened to messages that were sent to them. For more information about these notifications, see [End-user spam notifications in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
 
@@ -627,6 +627,7 @@ There will be times when our filters will miss the message or it takes time for 
 
 > [!TIP]
 > There may be situations where your organization may not agree with the verdict the service provides. In this case, you may want to keep the Allow or Block listing permanent. However, if you are going to put a domain on the Allow list for extended periods of time, you should tell the sender to make sure that their domain is authenticated and set to DMARC reject if it is not.
+<<<<<<< HEAD
 
 ## For more information
 
@@ -639,3 +640,5 @@ There will be times when our filters will miss the message or it takes time for 
 [How to reduce spam email in Office 365](reduce-spam-email.md)
 
 [Spam confidence level (SCL) in Office 365](spam-confidence-levels.md)
+=======
+>>>>>>> cc1f3200bf63489c8c397aad316ee5a36d6c8d3d

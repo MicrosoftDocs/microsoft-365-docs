@@ -20,6 +20,7 @@ description: "As an Exchange Online or Exchange Online Protection (EOP) administ
 
 # How to help ensure that a message isn't marked as spam
 
+<<<<<<< HEAD
 As an Exchange Online or Exchange Online Protection (EOP) administrator, you can help ensure that an email message traveling through the service isn't marked as spam. See the updated version of the tips and procedures to accomplish this in [How to prevent good email from being marked as spam](prevent-email-from-being-marked-as-spam.md).
 
 ## See also
@@ -27,3 +28,10 @@ As an Exchange Online or Exchange Online Protection (EOP) administrator, you can
 [Safe sender and blocked sender lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
 
 [Microsoft email anti-spam protection](anti-spam-protection.md)
+=======
+As an Exchange Online or Exchange Online Protection (EOP) administrator, you can help ensure that an email message traveling through the service isn't marked as spam. See the updated version of the tips and procedures to accomplish this in [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
+
+## See also
+
+[Anti-spam protection in Office 365](anti-spam-protection.md)
+>>>>>>> cc1f3200bf63489c8c397aad316ee5a36d6c8d3d
