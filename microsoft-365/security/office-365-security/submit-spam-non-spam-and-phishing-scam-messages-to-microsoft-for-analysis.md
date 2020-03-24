@@ -20,6 +20,9 @@ description: "You and your users can submit false negative and false positive sp
 
 # Submit spam, non-spam, and phishing scam messages to Microsoft for analysis
 
+> [!TIP]
+> The recommended reporting process is in the Office 365 Security & Compliance portal using the Submissions feature. Admins can send email, url, or attachments to Microsoft for review. For more informaiton, see [Admin submissions in Office 365 ATP](admin-submission.md). You can use the following process if you do not have access to the Office 365 tenant.
+
 It can be frustrating when users in your organization receive junk messages (spam) or phishing scam messages in their Inbox, or if they don't receive a legitimate email message because it's marked as junk. We're constantly fine-tuning our spam filters to be more accurate. You and your users can help this process by submitting false negative and false positive spam messages to Microsoft for analysis. A "false negative" is a spam message that should have been but was not identified as spam. A "false positive" is a legitimate email message that was incorrectly identified as spam.
 
 > [!NOTE]
@@ -74,11 +77,11 @@ You can submit non-spam messages in the following ways:
 
 - If you use the **Quarantine message** action instead of the **Move message to Junk Email folder** action when you configure your content filters:
 
-  - Administrators can release spam-quarantined messages and report them as false positives from the Exchange admin center. For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
+  - Administrators can release spam-quarantined messages and report them as false positives from the Quarantine portal For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
 
   - Users can release their own spam-quarantined messages and report them as false positives through the following channels:
 
-  - The Exchange admin center (EAC) user interface. For more information, see [Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md).
+  - The Quarantine user interface. For more information, see [Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md).
 
   - End-user spam notification messages (if they're enabled by your administrator).
 
@@ -90,7 +93,7 @@ Use the same procedure as described in the [Use email to submit junk (spam) or p
 
 ## Spam evaluation and rules deployment
 
-The spam analysis team examines messages that you submit, and adjusts the spam filters to prevent future junk mail. As a result, Office 365 spam filters areconstantly refined. Any submitted items are evaluated at the network-wide level. False positive submissions are examined and assessed for possible rule adjustment to allow future messages through the spam filters. Therefore, notifying the service of false positives and also false negatives (unfiltered spam) is advantageous for you and all customers who use the global network. The spam team examines indicators within each submitted message, such as the following:
+The spam analysis team examines messages that you submit, and adjusts the spam filters to prevent future junk mail. As a result, Office 365 spam filters are constantly refined. Any submitted items are evaluated at the network-wide level. False positive submissions are examined and assessed for possible rule adjustment to allow future messages through the spam filters. Therefore, notifying the service of false positives and also false negatives (unfiltered spam) is advantageous for you and all customers who use the global network. The spam team examines indicators within each submitted message, such as the following:
 
 - From address
 
@@ -103,9 +106,5 @@ The spam analysis team examines messages that you submit, and adjusts the spam f
 - Frequency of transmission
 
 - Other trends and patterns
-
-After they review this information, the spam team might make changes to the service's spam filtering layers. For more information about the spam team, you can watch the following English-only video:
-
-[Microsoft Exchange Spam team video](https://youtu.be/-TpX_-GMC7o?hd=1)
 
 Spam evaluation is an ongoing process that applies regardless of the originating language or character set. Because a spam message can be vague or even lack text in the subject or message body, the spam team relies on other message characteristics to perform filtering. This means that after the spam team flags a given message as spam and makes the necessary changes to its rule base, that message will be blocked in the future until its characteristics have been modified enough to avoid our filters. New spam rules are deployed continuously. Time frames for rules on individual submissions vary depending on the quantity and quality of submissions. Because new spam rules are set globally for all customers, not all individual spam submissions will result in a new spam rule.

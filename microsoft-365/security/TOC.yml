@@ -73,8 +73,6 @@
                       href: mtp/investigate-incidents.md
                     - name: Manage incidents
                       href: mtp/manage-incidents.md
-                    - name: Machine profile page
-                      href: mtp/machine-profile.md
             - name: Automated investigation and response
               items: 
                 - name: AIR overview
@@ -95,13 +93,28 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Learn the query language
                   href: mtp/advanced-hunting-query-language.md
+                - name: Work with query results
+                  href: mtp/advanced-hunting-query-results.md
                 - name: Use shared queries
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: Hunt on devices and emails
                   href: mtp/advanced-hunting-query-emails-devices.md
-                - name: Understand the schema
-                  href: mtp/advanced-hunting-schema-tables.md
-                  items: 
+                - name: Data schema
+                  items:
+                    - name: Understand the schema
+                      href: mtp/advanced-hunting-schema-tables.md
+                    - name: AlertInfo
+                      href: mtp/advanced-hunting-alertinfo-table.md
+                    - name: AlertEvidence
+                      href: mtp/advanced-hunting-alertevidence-table.md
+                    - name: AccountInfo
+                      href: mtp/advanced-hunting-accountinfo-table.md
+                    - name: EmailEvents
+                      href: mtp/advanced-hunting-emailevents-table.md
+                    - name: EmailAttachmentInfo
+                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
+                    - name: EmailUrlInfo
+                      href: mtp/advanced-hunting-emailurlinfo-table.md
                     - name: DeviceInfo
                       href: mtp/advanced-hunting-deviceinfo-table.md
                     - name: DeviceNetworkInfo
@@ -122,12 +135,6 @@
                       href: mtp/advanced-hunting-deviceevents-table.md
                     - name: DeviceFileCertificateInfoBeta
                       href: mtp/advanced-hunting-devicefilecertificateinfobeta-table.md
-                    - name: EmailEvents
-                      href: mtp/advanced-hunting-emailevents-table.md
-                    - name: EmailAttachmentInfo
-                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
-                    - name: EmailUrlInfo
-                      href: mtp/advanced-hunting-emailurlinfo-table.md
                     - name: DeviceTvmSecureConfigurationAssessment
                       href: mtp/advanced-hunting-tvm-configassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
@@ -136,8 +143,20 @@
                       href: mtp/advanced-hunting-tvm-softwareinventory-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
                       href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
+                    - name: AppFileEvents
+                      href: mtp/advanced-hunting-appfileevents-table.md
+                    - name: IdentityLogonEvents
+                      href: mtp/advanced-hunting-identitylogonevents-table.md
+                    - name: IdentityQueryEvents
+                      href: mtp/advanced-hunting-identityqueryevents-table.md
                 - name: Apply query best practices
                   href: mtp/advanced-hunting-best-practices.md
+                - name: Custom detections
+                  items: 
+                    - name: Custom detections overview
+                      href: mtp/custom-detections-overview.md
+                    - name: Create & manage detection rules
+                      href: mtp/custom-detection-rules.md
             - name: Secure Score
               items: 
                 - name: Secure Score
