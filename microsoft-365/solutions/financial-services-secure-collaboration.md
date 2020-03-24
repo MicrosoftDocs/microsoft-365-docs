@@ -319,7 +319,7 @@ Microsoft 365 provides the tenant [restrictions](https://docs.microsoft.com/en-u
 
 :::image type="content" source="../media/clo1717-corporate-office-001.jpg" alt-text="GRAPHIC":::
  
-## Conclusion 
+## Conclusion
 
 Microsoft 365 and Teams provide an integrated and comprehensive solution for financial services companies, enabling simple yet powerful cloud-based collaboration and communications capabilities across the enterprise. By using security and compliance technologies from Microsoft 365, institutions can operate in a more secure and compliant manner  with robust security controls to protect data, identities, devices, and applications from various operational risks, including cybersecurity and insider risks. Microsoft 365 provides a fundamentally secure platform on which financial services organizations can achieve more while protecting their company, employees, and customers.
 
