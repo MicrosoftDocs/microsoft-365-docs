@@ -14,20 +14,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: "Get an overview of automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
+ms.custom: air
 ---
 
 # Automated investigation and response (AIR) in Office 365
 
 As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Sometimes, security operations teams can feel overwhelmed by the volume of alerts that are triggered. Automated investigation and response (AIR) capabilities in Office 365 can help. AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond to detected threats. 
 
-This article provides an overview of AIR and its components. When you're ready to get started using AIR, see [Automatically investigate and respond to threats in Office 365](office-365-air.md).
-
-> [!TIP]
-> Do you have Microsoft 365 E5 or Microsoft 365 E3 together with Identity & Threat Protection? Consider trying [Microsoft Threat Protection](../mtp/microsoft-threat-protection.md).
+This article provides an overview of AIR. When you're ready to get started using AIR, see [Automatically investigate and respond to threats in Office 365](office-365-air.md).
 
 ## At a high level
 
-As alerts are triggered, security playbooks go into effect. Depending on the situation, an [automated investigation process](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) can begin. During and after an automated investigation, [remediation actions](air-remediation-actions.md) are recommended. No actions are taken automatically in Office 365 Advanced Threat Protection. Your security operations team reviews, and then [approves or rejects each remediation action](air-remediation-actions.md#approve-or-reject-pending-actions), and when this is done, each investigation completes. All of these activities are tracked and viewable in the Office 365 Security & Compliance Center (see [View details of an investigation](air-view-investigation-results.md#view-details-of-an-investigation)).
+As alerts are triggered, security playbooks go into effect. Depending on the situation, an [automated investigation process](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) can begin. During and after an automated investigation, [remediation actions](air-remediation-actions.md) are recommended. No actions are taken automatically in Office 365 Advanced Threat Protection. Your security operations team reviews, and then [approves or rejects each remediation action](air-review-approve-pending-completed-actions.md), and when this is done, each investigation completes. All of these activities are tracked and viewable in the Office 365 Security & Compliance Center (see [View details of an investigation](air-view-investigation-results.md#view-details-of-an-investigation)).
 
 The following sections provide more details about alerts, security playbooks, and examples of AIR in action.
 
@@ -127,28 +125,6 @@ As another example, suppose you are viewing data about email messages detected a
 ![Starting an investigation for malware in Explorer](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 Similar to playbooks triggered by an alert, automatic investigations that are triggered from a view in Explorer include a root investigation, steps to identify and correlate threats, and recommended actions to mitigate those threats.
-
-## How to get AIR
-
-Office 365 AIR is included in the following subscriptions:
-
-- Microsoft 365 E5
-- Office 365 E5
-- Microsoft Threat Protection
-- Office 365 Advanced Threat Protection Plan 2
-
-If you don't have any of these subscriptions, [start a free trial](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US).
-
-To learn more about feature availability, visit the [Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
-
-## Required permissions to use AIR capabilities
-
-Permissions are granted through certain roles, such as those that are described in the following table: 
-
-|Task |Role(s) required |
-|--|--|
-|To set up AIR features |One of the following roles: <br/>- **Global Administrator**<br/>- **Security Administrator** <br/>These roles can be assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
-|To approve or reject recommended actions|One of the following roles, assigned in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) or in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)):<br/>- **Global Administrator** <br/>- **Security Administrator**<br/>- **Security Reader** <br/>--- and ---<br/>- **Search and Purge** (this role is assigned only in the [Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). You might have to create a new role group there and add the Search and Purge role to that new role group.)
 
 ## Next steps
 

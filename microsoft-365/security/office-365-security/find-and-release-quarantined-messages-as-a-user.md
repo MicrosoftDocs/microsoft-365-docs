@@ -2,10 +2,10 @@
 title: "Find and release quarantined messages as a user in Office 365"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 05/19/2018
+ms.date:
 audience: Consumer/IW
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,99 +16,159 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: "As an Office 365 user, you can manage your own spam-quarantined messages in one of two ways: by responding to spam notifications sent to you directly (if your admin has set up this feature), or by using the spam quarantine feature in the Security &amp; Compliance Center."
+description: "As an Office 365 user, you can view, release, and delete your quarantined messages (messages where you are a recipient, and spam filtering quarantined the message as spam or bulk email). You view and manage your quarantined messages in the Security & Compliance Center."
 ---
 
 # Find and release quarantined messages as a user in Office 365
 
-As an Office 365 user, you can manage messages that were sent to quarantine instead of sent to you in one of two ways: by [responding to spam notifications sent to you directly](use-spam-notifications-to-release-and-report-quarantined-messages.md) (if your admin has set this up), or by using the Security &amp; Compliance Center.
+Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
 
-> [!NOTE]
-> If you're an admin, you can [manage quarantined messages](manage-quarantined-messages-and-files.md) for other people in your organization.
+As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam, bulk email, or (as of April, 2020) phishing. You can also report false positives to Microsoft.
 
-## View messages that were sent to quarantine instead of to you
+You view and manage your quarantined messages in the Security & Compliance Center.
 
-1. Sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md) using your work or school account.
+## What do you need to know before you begin?
 
-2. On the left, expand **Threat Management**, choose **Review**, and then choose **Quarantine**.
+- To open the Office 365 Security & Compliance Center, go to <https://protection.office.com>. To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.
 
-    > [!TIP]
-    > To go directly to the **Quarantine** page in the Security &amp; Compliance Center, use this URL: [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+- Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies). Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
-By default, the Security &amp; Compliance Center displays all email messages that have been quarantined as spam. The messages are sorted from newest to oldest based on the **Date** the message was received. **Sender**, **Subject**, and the expiration date (under **Expires** ) are also displayed for each message. You can sort on a field by clicking the corresponding column header; click a column header a second time to reverse the sort order.
+- Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in anti-spam policies. As of October 2019, you can no longer release quarantined messages directly from these notifications. You can click **Review** in the notification, which will take you to Quarantine in the Security & Compliance Center. For more information about the notifications, see [End-user spam notifications in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-You can view a list of all quarantined messages, or you can search for specific messages by filtering. You can only do bulk operations on up to 100 items, so filtering can also help reduce your result set if you have more than that. You can quickly filter messages for a single quarantine reason by choosing an option from the drop-down list. Options include:
+- Messages that were quarantined for high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
 
-- Mail identified as spam. These quarantined messages are shown by default.
+- You can only release a message and report it as a false positive (not junk) once.
 
-- Mail identified as bulk mail.
+## View your quarantined messages
 
-After you find a specific quarantined message, click the message to view details about it, and take actions. You can release the message to your mailbox, preview the message, download the message, or delete the message from quarantine immediately.
+1. In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.
 
-> [!NOTE]
-> You must have admin permissions in Office 365 to work with quarantined messages that were sent to other users.
+2. You can sort the results by clicking on an available column header. Click **Modify columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
 
-## To filter and find quarantined messages
+   - **Received**<sup>\*</sup>
 
-If you have a lot of quarantined items, you can reduce the number to a manageable set by filtering them.
+   - **Sender**<sup>\*</sup>
 
-1. On the **Quarantine** page, choose whether you want to view **spam** or **bulk** quarantined messages.
+   - **Subject**<sup>\*</sup>
 
-2. Under **Sort results by**, choose any combination of conditions by setting the appropriate filter or filters (you can't use wildcards at this time). There are several conditions you can choose, including the following:
+   - **Quarantine reason**<sup>\*</sup>
 
-   - **Message ID**: Use this to select a specific message when you know the message ID.
+   - **Released?**<sup>\*</sup>
 
-     For example, if a specific message is sent by, or intended for, a user in your organization, but it never reached its destination, you can search for the message by using a message trace (see [Message trace in the Security & Compliance Center](message-trace-scc.md)). If you discover that the message was sent to quarantine, perhaps because it matched a mail flow rule or was identified as spam, you can then easily find this message in quarantine by specifying its Message ID. Be sure to include the full Message ID string. This might include angle brackets (\<\>), for example:
+   - **Policy type**<sup>\*</sup>
 
-     `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`
+   - **Expires**<sup>\*</sup>
 
-   - **Sender email address**: Choose to filter by a single sender email address.
+   - **Recipient**
 
-   - **Recipient email address**: Choose to filter by a single recipient email address.
+   - **Message ID**
 
-   - **Subject**: Enter the subject of an email address you want to find.
+   - **Policy name**
 
-   - **Date range**: You can choose to filter by the date the message was sent to quarantine. You can specify the date or a date range, including the time.
+   - **Size**
 
-   - **Expiration date**: To filter by expiration date, choose **Advanced filter**. You can select messages that will be deleted from quarantine within the next 24 hours ( **Today**), within the next 48 hours ( **Next 2 days**), within the next week ( **Next 7 days**), or you can select a custom time interval.
+   - **Direction**
 
-     > [!IMPORTANT]
-     > By default, spam and bulk messages are kept in quarantine for 30 days. However, this time period is configurable and your admin might have set a different quarantine retention period. When Office 365 deletes a message from quarantine, you can't get it back.
+   When you're finished, click **Save**, or click **Set to default**.
 
-## View details for a specific message
+3. To filter the results, click **Filter**. The available filters are:
 
-After you select a message, you'll see a summary of the message properties in a pane on the right side of the page.
+   - **Expires time**: Filter messages by when they will expire from quarantine:
 
-- **Message ID**: The unique identifier for the message.
+     - **Today**
 
-- **Sender Address**: Who sent the message.
+     - **Next 2 days**
 
-- **Received**: The date the message was received.
+     - **Next 7 days**
 
-- **Subject**: The text of the Subject line in the message.
+     - **Custom**: Enter a **Start date** and **End date**.
 
-- **Quarantine reason**: Shows if a message has been identified as **Spam** or **Bulk**.
+   - **Received time**: Enter a **Start date** and **End date**.
 
-- **Expires**: The date when the message will be deleted from quarantine.
+   - **Quarantine reason**:
+
+     - **Bulk**
+
+     - **Spam**
+
+     - **Phish** (As of April, 2020)
+
+   To clear the filter, click **Clear**. To hide the filter flyout, click **Filter** again.
+
+4. Use **Sort results by** (the **Message ID** button by default) and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
+
+   - **Message ID**: The globally unique identifier of the message. If you select a message in the list, the **Message ID** value appears in the **Details** flyout pane that appears. Admins can use [message trace](message-trace-scc.md) to find messages and their corresponding Message ID values.
+
+   - **Sender email address**: A single sender's email address.
+
+   - **Recipient email address**: A single recipient's email address.
+
+   - **Subject**: Use the entire subject of the message. The search is not case-sensitive.
+
+   After you've entered the search criteria, click ![Refresh button](../media/scc-quarantine-refresh.png) **Refresh** to filter the results.
+
+After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
+
+### Export message results
+
+1. Select the messages you're interested in, and click **Export results**.
+
+2. Click **Yes** in the confirmation message that warns you to keep the browser window open.
+
+3. When your export is ready, you can name and choose the download location for the .csv file.
+
+### View quarantined message details
+
+When you select an email message in the list, the following message details appear in the **Details** flyout pane:
+
+- **Message ID**: The globally unique identifier for the message.
+
+- **Sender address**
+
+- **Received**: The date/time when the message was received.
+
+- **Subject**
+
+- **Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk** or (as of April, 2020) **Phish**.
+
+- **Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.
+
+- **Expires**: The date/time when the message will be automatically and permanently deleted from quarantine.
 
 - **Released to**: All email addresses (if any) to which the message has been released.
 
-- **Not yet released to**: All email addresses (if any) to which the message has not been released. You can choose **Release** if you want to release the message to your mailbox (more about releasing messages in the next section).
+- **Not yet released to**: All email addresses (if any) to which the message has not yet been released.
 
-You can get even more details about the message by choosing one of the following options:
+### Take action on quarantined email
 
-- **View message header**: Choose this to see the message header text. To analyze the header in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose Open in a new tab if you don't want to leave Office 365 to complete this task). Paste the message header onto the page in the Message Header Analyzer section, and choose Analyze headers.
+After you select a message, you have options for what to do with the messages in the **Details** flyout pane:
 
-- **Preview message**: Lets you see raw or HTML versions of the message body text. In the HTML view, links are disabled.
+- **Release message**: In the flyout pane that appears, choose whether to **Report messages to Microsoft for analysis**. This is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive.
 
-## Manage your quarantined messages
+  When you're finished, click **Release messages**.
 
-After you select a message or group of messages, you have several options for managing messages in quarantine.
+- **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Office 365 to complete this task). Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:
 
-- Do nothing. If you choose to do nothing, the message will be deleted by Office 365 automatically upon expiration. Remember, when Office 365 deletes a message from quarantine, you can't get it back.
+- **Preview message**: In the flyout pane that appears, choose one of the following options:
 
-- **Release message**: Release a quarantined message (or set of messages) so that the message is sent to your mailbox. When you release a message, you have the option to report the message to Microsoft for analysis.
+  - **Source view**: Shows the HTML version of the message body with all links disabled.
+  
+  - **Text view**: Shows the message body in plain text.
 
-    When you choose to report a message, also called reporting a message as a false positive, the message is reported to the Microsoft Spam Analysis Team. The team evaluates and analyzes false positive messages, and, depending on the results of the analysis, the service-wide spam content filter rules may be adjusted to allow these messages through.
+- **Download message**: In the flyout pane that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.
 
-- **Remove from quarantine**: Deletes the message immediately from quarantine without releasing the message to your mailbox.
+- **Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted.
+
+When you're finished, click **Close**.
+
+If you don't release or remove the message, it will be deleted after the default quarantine retention period expires.
+
+#### Take action on multiple quarantined email messages
+
+When you select multiple quarantined messages in the list (up to 100), the **Bulk actions** flyout pane appears where you can take the following actions:
+
+- **Release messages**: The options are the same as when you release a single message, except you can't select **Release messages to specific recipients**; you can only select **Release message to all recipients** or **Release messages to other people**.
+
+- **Delete messages**:  After you click **Yes** in the warning that appears, the message are immediately deleted without being sent to the original recipients.
+
+When you're finished, click **Close**.

@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about how users work with Use sensitivity labels in Office apps for the desktop, Office apps for mobile, and Office apps for the web. Find out which apps support sensitivity labels."
+description: "Learn about how users work with sensitivity labels in Office apps for the desktop, Office apps for mobile, and Office apps for the web. Find out which apps support sensitivity labels."
 ---
 
 # Use sensitivity labels in Office apps
@@ -53,6 +53,8 @@ Additional capabilities are available when you install the Azure Information Pro
 
 ### Sensitivity label capabilities in Word, Excel, and PowerPoint
 
+For iOS and Android: Where these have a minimum version listed, the sensitivity label capability is also supported with the [Office app](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
+
 |Capability                                                                                                        |Windows Desktop |Mac Desktop |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Manually apply, change, or remove label](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -61,7 +63,7 @@ Additional capabilities are available when you install the Azure Information Pro
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Preview: In [Office Insider](https://office.com/insider)            | Preview: In [Office Insider](https://office.com/insider)        | Under review   | Under review         | Under review                                                        |
+|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Preview: In [Monthly Channel (Targeted)](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)            | Preview: In [Office Insider](https://office.com/insider)        | Under review   | Under review         | Under review                                                        |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: In [Office Insider](https://office.com/insider)                                  | Under review | Under review | Under review | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -114,14 +116,47 @@ Administrator-defined [protection templates](https://docs.microsoft.com/azure/in
 
 If you need to convert existing protection templates to labels, use the Azure portal and the following instructions: [To convert templates to labels](https://docs.microsoft.com/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels).
 
+## Information Rights Management (IRM) options and sensitivity labels
+
+Sensitivity labels that you configure to apply encryption remove the complexity from users to specify their own encryption settings. In many Office apps, these individual encryption settings can still be manually configured by users by using Information Rights Management (IRM) options. For example, for Windows apps:
+
+- For a document:  **File** > **Info** > **Protect Document** > **Restrict Access**
+- for an email: From the **Options** tab > **Encrypt** 
+  
+When users initially label a document or email, they can always override your label configuration settings with their own encryption settings. For example:
+
+- A user applies the **Confidential \ All Employees** label to a document and this label is configured to apply encryption settings for all users in the organization. This user then manually configures the IRM settings to restrict access to a user outside your organization. The end result is a document that's labeled **Confidential \ All Employees** and encrypted, but users in your organization can't open it as expected.
+
+- A user applies the **Confidential \ Recipients Only** label to an email and this email is configured to apply the encryption setting of **Do Not Forward**. This user then manually configures the IRM settings so that the email is unrestricted. The end result is the email can be forwarded by recipients, despite having the **Confidential \ Recipients Only** label.
+
+- A user applies the **General** label to a document, and this label isn't configured to apply encryption. This user then manually configures the IRM settings to restrict access to the document. The end result is a document that's labeled **General** but that also applies encryption so that some users can't open it as expected.
+
+If the document or email is already labeled, a user can do any of these actions if the content isn't already encrypted, or they have the [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export or Full Control. 
+
+For a more consistent label experience with meaningful reporting, provide appropriate labels and guidance for users to apply only labels to protect documents. For example:
+
+- For exception cases where users must assign their own permissions, provide labels that [let users assign their own permissions](encryption-sensitivity-labels.md#let-users-assign-permissions). 
+
+- Instead of users manually removing encryption after selecting a label that applies encryption, provide a sublabel alternative when users need a label with the same classification, but no encryption. Such as:
+    - **Confidential \ All Employees**
+    - **Confidential \ Anyone (no encryption)**
+
+> [!NOTE]
+> If users manually remove encryption from a labeled document that's stored in SharePoint or OneDrive and you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), the label encryption will be automatically restored the next time the document is accessed or downloaded. 
+
 ## Apply sensitivity labels to files, emails, and attachments
 
 Users can apply just one label at a time for each document or email.
 
-When you label an email message that has attachments, the attachments don't inherit the label:
+When you label an email message that has attachments, the attachments don't inherit the label with one exception:
 
-- If the attachments have a label, they keep that separately applied label.
-- If the attachments don't have a label, the attachments remain without a label. However, if the label for the email applies protection, that protection is applied to Office attachments.
+- The attachment is an Office document with a label that doesn't apply encryption, and the label you apply to the email message applies encryption. In this case, the emailed Office document inherits the email's label with its encryption settings.
+
+Otherwise: 
+
+- If the attachments have a label, they keep their originally applied label.
+- If the attachments are encrypted without a label, the encryption remains but they aren't labeled.
+- If the attachments don't have a label, they remain unlabeled.
 
 ## Sensitivity label compatibility
 

@@ -29,7 +29,7 @@ Use communication compliance policies to capture employee communications for exa
 
 ## Before you begin
 
-Before you get started with communication compliance, you should confirm your Microsoft 365 subscription. Users included in communication compliance policies must have a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in a Microsoft 365 E5 subscription.
+Before you get started with communication compliance, you should confirm your Microsoft 365 subscription. Users included in communication compliance policies must have a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription, or be included in a Microsoft 365 E5 subscription.
 
 If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
   
@@ -40,7 +40,7 @@ Complete these steps to set up and use communication compliance in your Microsof
 >[!Important]
 >By default, Global Administrators do not have access to communication compliance features. The roles assigned in this step are required before any communication compliance features will be accessible.
 
-To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the **Supervisory Review Administrator** role. You must create a new role group for reviewers with the **Supervisory Review Administrator**, **Case Management**, and **Review** roles to investigate and remediate messages with policy matches.
+To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the **Supervisory Review Administrator** role. You must create a new role group for reviewers with the **Supervisory Review Administrator**, **Case Management**, **Compliance Administrator**, and **Review** roles to investigate and remediate messages with policy matches.
 
 ### Create a new role group
 
@@ -52,9 +52,9 @@ To make **Communication compliance** available as a menu option in Microsoft 365
 
 4. In the **Name** field, give the new role group a friendly name. Select **Next**.
 
-5. Select **Choose roles** and then select **Add**. Select the checkbox for **Supervisory Review Administrator**, **Case Management**, and **Review**, then select **Add** and **Done**. Select **Next**.
+5. Select **Choose roles** and then select **Add**. Select the checkbox for **Supervisory Review Administrator**, **Case Management**, **Compliance Administrator**, and **Review**, then select **Add** and **Done**. Select **Next**.
 
-    ![Communication compliance required role groups](../media/communication-compliance-role-groups.png)
+    ![Communication compliance required role groups](../media/communication-compliance-role-groups-1.png)
 
 6. Select **Choose members** and then select **Add**. Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**. Select **Next**.
 
@@ -78,7 +78,7 @@ Use the following chart to help you configure groups in your organization for co
 | **Policy Member** | **Supported Groups** | **Unsupported Groups** |
 |:-----|:-----|:-----|
 |Supervised users <br> Non-supervised users | Distribution groups <br> Office 365 groups | Dynamic distribution groups |
-| Reviewers | Mail-enabled security groups  | Distribution groups <br> Dynamic distribution groups |
+| Reviewers | None | Distribution groups <br> Dynamic distribution groups <br> Mail-enabled security groups |
   
 When you select an Office 365 group for supervised users, the policy monitors the content of the shared Office 365 mailbox and the Microsoft Teams channels associated with the group. When you select a distribution list, the policy monitors individual user mailboxes.
 
@@ -102,13 +102,13 @@ For more information about setting up groups, see:
 
     - Confirm or update the policy name. Policy names cannot be changed once the policy is created.
     - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.
-    - Choose the reviewers for the policy. Reviewers can be individual users or [mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). All reviewers must have mailboxes hosted on Exchange Online.
+    - Choose the reviewers for the policy. Reviewers can be individual users or [mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). All reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow.
     - Choose a limited condition field, usually a sensitive info type or keyword dictionary to apply to the policy.
 
     If you choose to use the policy wizard to create a custom policy, you will:
 
     - Give the policy a name and description. Policy names can't be changed once the policy is created.
-    - Choose the users or groups to supervise, including all users in your organization, specific users and groups, or other users and groups you'd like to exclude. -
+    - Choose the users or groups to supervise, including all users in your organization, specific users and groups, or other users and groups you'd like to exclude.
     - Choose the reviewers for the policy. Reviewers can be individual users or [mail-enabled security groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). All reviewers must have mailboxes hosted on Exchange Online.
     - Choose the communication channels to scan, including Exchange, Microsoft Teams, or Skype for Business. You'll also choose to scan third-party sources if you've configured a connector in Microsoft 365.
     - Choose the communication direction to monitor, including inbound, outbound, or internal communications.

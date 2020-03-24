@@ -47,12 +47,14 @@
           href: get-ready/prerequisites.md
         - name: Prepare network
           href: get-ready/network.md
-        - name: Prepare on-premises resources access for Microsoft Managed Desktop
+        - name: Prepare on-premises resources access
           href: get-ready/authentication.md
-        - name: Prepare mapped drives for Microsoft Managed Desktop
+        - name: Prepare mapped drives
           href: get-ready/mapped-drives.md
-        - name: Prepare certificates and network profiles for Microsoft Managed Desktop
+        - name: Prepare certificates and network profiles
           href: get-ready/certs-wifi-lan.md
+        - name: Prepare printing resources
+          href: get-ready/printing.md
         - name: Prepare apps
           href: get-ready/apps.md
           items: 
@@ -100,6 +102,8 @@
               href: working-with-managed-desktop/reliability-insights.md
             - name: Battery insights
               href: working-with-managed-desktop/battery-insights.md
+            - name: Windows security update insights
+              href: working-with-managed-desktop/security-update-insights.md
         - name: Admin support
           href: working-with-managed-desktop/admin-support.md
         - name: End user support

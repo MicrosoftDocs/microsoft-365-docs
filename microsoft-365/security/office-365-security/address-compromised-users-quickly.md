@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-ms.date: 02/20/2020
+ms.date: 02/25/2020
 description: "Learn how to speed up the process of detecting and addressing compromised user accounts with automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
 ---
 
 # Address compromised user accounts with automated investigation and response
 
-[Office 365 Advanced Threat Protection Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2) includes powerful [automated investigation and response](office-365-air.md) (AIR) capabilities. Such capabilities can save your security operations team a lot of time and effort dealing with threats. Microsoft continues to improve security capabilities. Recently, AIR capabilities were enhanced to include a compromised user security playbook (currently in preview). Read this article to learn more about the compromised user security playbook. And see the blog post [Speed up time to detect and respond to user compromise and limit breach scope with Office 365 ATP](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) for additional details.
+[Office 365 Advanced Threat Protection Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) includes powerful [automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) capabilities. Such capabilities can save your security operations team a lot of time and effort dealing with threats. Microsoft continues to improve security capabilities. Recently, AIR capabilities were enhanced to include a compromised user security playbook (currently in preview). Read this article to learn more about the compromised user security playbook. And see the blog post [Speed up time to detect and respond to user compromise and limit breach scope with Office 365 ATP](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) for additional details.
 
 ![Automated investigation for a compromised user](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -51,7 +51,7 @@ When a user account is compromised, alerts are triggered. And in some cases, tha
 - [View details about automated investigations](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> You must have appropriate permissions to perform the following tasks. [Find out how to get AIR and see required permissions](automated-investigation-response-office.md#how-to-get-air).
+> You must have appropriate permissions to perform the following tasks. See [Required permissions to use AIR capabilities](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air?view=o365-worldwide#required-permissions-to-use-air-capabilities).
 
 ### View and investigate restricted users
 
@@ -65,13 +65,13 @@ You have a few options for navigating to a list of restricted users. For example
    ![Other alerts widget](/microsoft-365/media/office365atp-otheralertswidget.jpg)<br/>
    This opens the list of restricted users.<br/>![Restricted users in Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg) 
 
-4. Select a user account in the list to view details and take action, such as [releasing the restricted user](removing-user-from-restricted-users-portal-after-spam.md). 
+4. Select a user account in the list to view details and take action, such as [releasing the restricted user](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam). 
 
 ### View details about automated investigations
 
 When an automated investigation has begun, you can see its details and results in the Office 365 Security & Compliance Center. Go to **Threat management** > **Investigations**, and then select an investigation to view its details.
 
-To learn more, see [View details of an investigation](air-view-investigation-results.md#view-details-of-an-investigation).
+To learn more, see [View details of an investigation](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results).
 
 ## Keep the following points in mind
 
@@ -83,9 +83,9 @@ To learn more, see [View details of an investigation](air-view-investigation-res
 
 ## Next steps
 
-- [Find out how to get AIR and see required permissions](automated-investigation-response-office.md#how-to-get-air)
+- [Review the required permissions to use AIR capabilities](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air?view=o365-worldwide#required-permissions-to-use-air-capabilities)
 
-- [Find and investigate malicious email in Office 365](investigate-malicious-email-that-was-delivered.md)
+- [Find and investigate malicious email in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide)
 
 - [Learn about AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 

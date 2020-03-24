@@ -141,9 +141,9 @@ With a label policy, you can:
 
 - **Choose which users and groups see the labels.** Labels can be published to any email-enabled security group, Office 365 group, or dynamic distribution group.
 
-- **Apply a default label** to all new documents and email created by the users and groups included in the label policy. Consider using a default label to set a base level of protection settings that you want applied to all your content. However, without user training and other controls, this setting can also result in inaccurate labeling. 
+- **Apply a default label** to all new documents and email created by the users and groups included in the label policy. This option also applies to containers, if you've [enabled sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md). Users can always change the default label if it's not the right label for their document or email. Consider using a default label to set a base level of protection settings that you want applied to all your content. However, without user training and other controls, this setting can also result in inaccurate labeling. 
 
-- **Require a justification for changing a label.** If content is marked Confidential and a user tries to remove that label or replace it with a lower classification, such as a label named Public, you can require that the user provides a justification to perform this action. Currently, the justification reason isn't sent to [label analytics](label-analytics.md) for the admin to review. However, the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) sends this information to [Azure Information Protection analytics](https://docs.microsoft.com/azure/information-protection/reports-aip).
+- **Require a justification for changing a label.** If a user tries to remove a label or replace it with a label that has a lower order number, you can require the user provides a justification to perform this action. For example, a user opens a document labeled Confidential (order number 3) and replaces that label with one named Public (order number 1). Currently, the justification reason isn't sent to [label analytics](label-analytics.md) for the admin to review. However, the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) sends this information to [Azure Information Protection analytics](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
     ![Prompt where users enter a justification](../media/Sensitivity-label-justification-required.png)
 
@@ -185,6 +185,9 @@ If you use retention labels in addition to sensitivity labels, it's important to
 If you have deployed labels with Azure Information Protection, use the following sections for guidance before you start to use sensitivity labels.
 
 ### Azure Information Protection labels
+
+> [!NOTE]
+> Label management for Azure Information Protection labels in the Azure portal is being deprecated **March 31, 2021**. Learn more from the official [deprecation notice](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
 If you are using Azure Information Protection labels because your tenant isn't yet on the [unified labeling platform](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), we recommend that you avoid creating sensitivity labels until you activate unified labeling. In this scenario, the labels you see in the Azure portal are Azure Information Protection labels rather than sensitivity labels. These labels can be used by the Azure Information Protection client (classic) on Windows computers, but can't be used by devices running macOS, iOS, or Android. To resolve this, [migrate these labels](/azure/information-protection/configure-policy-migrate-labels) to sensitivity labels. 
 
