@@ -1,5 +1,5 @@
 ---
-title: "Top 10 tasks for security teams to to support working at home"
+title: "Top 10 tasks for security teams to to support working from home"
 f1.keywords:
 - CSH
 ms.author: bcarter
@@ -14,7 +14,7 @@ ms.collection:
 description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments. "
 ---
 
-# Top 10 tasks for security teams to support working at home
+# Top 10 tasks for security teams to support working from home
 
 If you are like [Microsoft](https://www.microsoft.com/en-us/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) and suddenly find yourself supporting a primarily home-based workforce, we want to help you ensure your organization is working as securely as possible. This article prioritizes tasks to help security teams implement the most important security capabilities as quickly as possible. 
 
@@ -23,24 +23,24 @@ If you are a small or medium-size organization using one of Microsoft's business
 - [Microsoft 365 for Campaigns](office-365-security/campaigns.md) (includes a recommended security configuration for Microsoft 365 Business)
 
   
-Microsoft recommends that you complete the tasks listed in the following table that apply to your service plan. 
+Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. 
   
 ||**Task**|**E3**|**E5**|
 |:-----|:-----|:-----|:-----|
 |1      |Enable Azure Multi-Factor Authentication       |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |2     | Protect against threats in Office 365  |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |3      |  Configure Office 365 Advanced Threat Protection    |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
-|4      |      |      |      | 
-|5      |      |      |      | 
-|6      |      |      |      | 
-|7      |      |      |      | 
-|8      |      |      |      | 
+|4      | Configure Azure Advanced Threat Protection (ATP)     |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
+|5     |   Turn on Microsoft Advanced Threat Protection   |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|6      |  Configure risk-based MFA with Azure AD Identity Protection    |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
+|7      | Configure Intune App protection for phones and tablets    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|8      |  Enroll PCs into device management and require compliant PCs    | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9      |      |      |      | 
 |10     |      |      |      | 
 
 
    
-Before you begin, check your [Microsoft 365 Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) in the Microsoft 365 security center. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With additional insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
+Before you begin, check your [Microsoft 365 Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) in the Microsoft 365 security center. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. The recommended tasks in this article will raise your score.
   
 ![Screenshot of Microsoft Secure Score](../media/secure-score.png)
   
@@ -85,10 +85,25 @@ Your Global Administrator can configure these protections:
 You'll need to work with your Exchange Online administrator and SharePoint Online administrator to configure ATP for these workloads:
 - [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
 
-## 4:
+## 4: Configure Azure Advanced Threat Protection
+
+[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on this next because it protects your on-prem and your cloud infrastructure, has no dependencies or prerequisites, and can provide immediate benefit.
 
 
-## 5:
+- See [Azure ATP Quickstarts](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/install-atp-step1) to get setup quickly 
+- Watch [Video: Introduction to Azure ATP](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
+- Review the [three phases of Azure ATP deployment](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
+
+## 5: Turn on Microsoft Advanced Threat Protection
+
+Now that you have Office 365 ATP and Azure ATP configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Azure ATP, Office 365 ATP, Microsoft Defender ATP, and Microsoft Cloud App Security) into a single pane of glass experience. 
+
+
+After you have configured one or more of your advanced threat protection services, turn on MTP. New features are added continually to MTP; consider opting in to receive preview features.
+
+- [Learn more about MTP](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)
+- [Turn on MTP](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide)
+- [Opt in for preview features](https://docs.microsoft.com/microsoft-365/security/mtp/preview?view=o365-worldwide)
 
 
 ## 6:
