@@ -24,22 +24,15 @@ Please pay in CAD only and reference your invoice number(s) on your payment remi
 
 **Payee:** Microsoft
 
-**Mailing Address:**
-
+**Mailing Address:**  
 Bank of America, Lockbox 910430, PO Box 4090, STN A, Toronto ON M5W 0E9, Canada
 
 ## Electronic Funds Transfer
 
-**Bank:** Bank of America, Toronto
-
-**SWIFT Code:** BOFACATT
-
-**Account Number:** 45571239
-
-**Account Name:** Microsoft
-
-**Bank ID:** 241
-
-**Branch:** 56792
-
-**Routing/Transit #:** 024156792
+**Bank:** Bank of America, Toronto  
+**SWIFT Code:** BOFACATT  
+**Account Number:** 45571239  
+**Account Name:** Microsoft  
+**Bank ID:** 241  
+**Branch:** 56792  
+**Routing/Transit #:** 024156792  
