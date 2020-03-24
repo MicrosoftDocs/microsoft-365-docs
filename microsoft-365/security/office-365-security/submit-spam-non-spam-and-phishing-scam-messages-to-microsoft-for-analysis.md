@@ -1,5 +1,5 @@
 ---
-title: "Submit spam, non-spam, and phishing scam messages to Microsoft for analysis"
+title: "Manually submit messages to Microsoft for analysis"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,21 +18,19 @@ ms.collection:
 description: "You and your users can submit false negative and false positive spam messages to Microsoft for analysis. "
 ---
 
-# Submit spam, non-spam, and phishing scam messages to Microsoft for analysis
+# Manually submit messages to Microsoft for analysis
 
 > [!TIP]
-> The recommended reporting process is in the Office 365 Security & Compliance portal using the Submissions feature. Admins can send email, url, or attachments to Microsoft for review. For more informaiton, see [Admin submissions in Office 365 ATP](admin-submission.md). You can use the following process if you do not have access to the Office 365 tenant.
+> The recommended way to submit email messages, URLs, or attachments to Microsoft is using the Submissions feature in the Office 365 Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md). You can use the procedures in this topic if you don't have access to the Office 365 tenant.
 
-It can be frustrating when users in your organization receive junk messages (spam) or phishing scam messages in their Inbox, or if they don't receive a legitimate email message because it's marked as junk. We're constantly fine-tuning our spam filters to be more accurate. You and your users can help this process by submitting false negative and false positive spam messages to Microsoft for analysis. A "false negative" is a spam message that should have been but was not identified as spam. A "false positive" is a legitimate email message that was incorrectly identified as spam.
+It can be frustrating when users in your organization receive junk messages (spam) or phishing messages in their Inbox, or if they don't receive a legitimate email message because it's marked as junk. We're constantly fine-tuning our spam filters to be more accurate. You and your users can help this process by submitting false negatives (bad mail allowed) and false positives (good mail blocked) messages to Microsoft for analysis.
 
 > [!NOTE]
 > Because of the high volume of submissions that we receive, we may not be able to answer all requests for analysis.
 
-Admins can send email, url, and attachments to Microsoft for review. See [How to submit suspected spam, phish, URLs, and files to Microsoft using Admin Submissions](admin-submission.md).
+## Submit false negatives
 
-## Submit junk or phishing messages that passed through the spam filters
-
-If you receive a message that passed through the spam filters that and should be classified as junk or a phishing scam, you can submit the "false negative" message to the Microsoft Spam Analysis and Microsoft Phishing Analysis teams, as appropriate. The analysts will review the message and add it to the service-wide filters if it meets the classification criteria.
+If you receive a message that passed through spam filtering that and should be classified as junk or a phishing scam, you can submit the message to the Microsoft Spam Analysis and Microsoft Phishing Analysis teams, as appropriate. The analysts will review the message and add it to the service-wide filters if it meets the classification criteria.
 
 For more spam settings that apply to the whole organization, see [Anti-spam protection in Office 365](anti-spam-protection.md). This article contains tips to help prevent false negatives.
 
@@ -57,7 +55,7 @@ To submit a junk or phishing scam message to Microsoft:
 3. Copy and paste the junk or phishing scam message into the new message as an attachment.
 
    > [!NOTE]
-   > * You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing scam messages or junk email messages. <br/><br/>* Leave the body of the new message empty. <br/><br/>* Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.
+   > <ul><li>You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing scam messages or junk email messages.</li><li>Leave the body of the new message empty.<li></li>Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.</li></ul>
 
 4. Click **Send**.
 

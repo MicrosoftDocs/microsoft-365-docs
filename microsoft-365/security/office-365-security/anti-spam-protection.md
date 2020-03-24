@@ -56,7 +56,7 @@ It's possible that good messages can be identified as spam (also known as false 
 
 Here are some best practices that apply to either scenario:
 
-- Always submit misclassified messages to Microsoft. Admins can use [Submissions Explorer](admin-submission.md), or users can report messages by using the [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Always submit misclassified messages to Microsoft. Admins can use [Submissions Explorer](admin-submission.md), or users can report messages by using the [Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 - **Examine the anti-spam message headers**: These values will tell you why a message was marked as spam, or why it skipped spam filtering. For more information, see [Anti-spam message headers](anti-spam-message-headers.md).
 

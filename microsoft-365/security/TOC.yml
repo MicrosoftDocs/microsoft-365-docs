@@ -266,7 +266,7 @@
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
                 - name: Submit spam, non-spam, and phishing scam messages to Microsoft for analysis
                   href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
-                - name: Submit suspected spam, phish, URLs, and files to Microsoft
+                - name: Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft
                   href: ./office-365-security/admin-submission.md
                 - name: Junk email reporting add-in for Microsoft Outlook
                   href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
@@ -344,14 +344,8 @@
                   href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: Block email spam in EOP Standalone
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
-                - name: Report junk email and phishing scams in Outlook on the web
-                  href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                 - name: Protect on-premises mailboxes with Exchange Online Protection
                   href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
-                - name: Install the Junk Email Reporting Add-in for Microsoft Outlook
-                  href: ./office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md
-                - name: Turn off junk email reporting in Outlook on the web
-                  href: ./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md
                 - name: Configure standalone EOP to deliver spam to the Junk Email folder
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
         - name: Advanced Threat Protection
