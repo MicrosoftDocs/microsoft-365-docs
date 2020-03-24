@@ -23,20 +23,22 @@ If you are a small or medium-size organization using one of Microsoft's business
 - [Microsoft 365 for Campaigns](office-365-security/campaigns.md) (includes a recommended security configuration for Microsoft 365 Business)
 
   
-For customers using our enterprise plans, Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. 
+For customers using our enterprise plans, Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. If, instead of purchasing a Microsoft 365 enterprise plan, you are combining subscriptions, note the following:
+- Microsoft 365 E3 includes Enterprise Mobility + Security (EMS) E3 and Azure AD P1
+- Microsoft 365 E5 includes EMS E5 and Azure AD P2
   
-||**Task**|**E3**|**E5**|
-|:-----|:-----|:-----|:-----|
-|1      |Enable Azure Multi-Factor Authentication       |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|2     | Protect against threats in Office 365  |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
-|3      |  Configure Office 365 Advanced Threat Protection    |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
-|4      | Configure Azure Advanced Threat Protection (ATP)     |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
-|5     |   Turn on Microsoft Advanced Threat Protection   |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|6      |  Configure risk-based MFA with Azure AD Identity Protection    |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
-|7      | Configure Intune App protection for phones and tablets    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
-|8     | Configure MFA and conditional access for guests, including Intune app protection     |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|9      |  Enroll PCs into device management and require compliant PCs    | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
-|10     |      |      |      | 
+||**Task**| All Office 365 Enterprise plans|**Microsoft 365 E3** |**Microsoft 365 E5**|
+|:-----|:-----|:-----|:-----|:-----|
+|1      |Enable Azure Multi-Factor Authentication   |   ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|2     | Protect against threats in Office 365  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|3      |  Configure Office 365 Advanced Threat Protection  |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
+|4      | Configure Azure Advanced Threat Protection (ATP)   |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
+|5     |   Turn on Microsoft Advanced Threat Protection  |  |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|6      |  Configure risk-based MFA with Azure AD Identity Protection  |   |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
+|7      | Configure Intune App protection for phones and tablets |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|8     | Configure MFA and conditional access for guests, including Intune app protection  |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|9      |  Enroll PCs into device management and require compliant PCs   |  | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
+|10   |   |      |      |      | 
 
 
    
