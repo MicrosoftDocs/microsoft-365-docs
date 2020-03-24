@@ -143,7 +143,7 @@ Default policy options apply to everyone in your organization.
    
 ## Next steps
 
-Once your ATP Safe Links policies are in place, you can see how ATP is working for your orgnization by viewing reports. See the following resources to learn more:
+Once your ATP Safe Links policies are in place, you can see how ATP is working for your organization by viewing reports. See the following resources to learn more:
 
 - [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
 
