@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 3/5/2020
+ms.date: 3/24/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
