@@ -73,8 +73,6 @@
                       href: mtp/investigate-incidents.md
                     - name: Manage incidents
                       href: mtp/manage-incidents.md
-                    - name: Machine profile page
-                      href: mtp/machine-profile.md
             - name: Automated investigation and response
               items: 
                 - name: AIR overview
@@ -95,13 +93,28 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Learn the query language
                   href: mtp/advanced-hunting-query-language.md
+                - name: Work with query results
+                  href: mtp/advanced-hunting-query-results.md
                 - name: Use shared queries
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: Hunt on devices and emails
                   href: mtp/advanced-hunting-query-emails-devices.md
-                - name: Understand the schema
-                  href: mtp/advanced-hunting-schema-tables.md
-                  items: 
+                - name: Data schema
+                  items:
+                    - name: Understand the schema
+                      href: mtp/advanced-hunting-schema-tables.md
+                    - name: AlertInfo
+                      href: mtp/advanced-hunting-alertinfo-table.md
+                    - name: AlertEvidence
+                      href: mtp/advanced-hunting-alertevidence-table.md
+                    - name: AccountInfo
+                      href: mtp/advanced-hunting-accountinfo-table.md
+                    - name: EmailEvents
+                      href: mtp/advanced-hunting-emailevents-table.md
+                    - name: EmailAttachmentInfo
+                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
+                    - name: EmailUrlInfo
+                      href: mtp/advanced-hunting-emailurlinfo-table.md
                     - name: DeviceInfo
                       href: mtp/advanced-hunting-deviceinfo-table.md
                     - name: DeviceNetworkInfo
@@ -122,12 +135,6 @@
                       href: mtp/advanced-hunting-deviceevents-table.md
                     - name: DeviceFileCertificateInfoBeta
                       href: mtp/advanced-hunting-devicefilecertificateinfobeta-table.md
-                    - name: EmailEvents
-                      href: mtp/advanced-hunting-emailevents-table.md
-                    - name: EmailAttachmentInfo
-                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
-                    - name: EmailUrlInfo
-                      href: mtp/advanced-hunting-emailurlinfo-table.md
                     - name: DeviceTvmSecureConfigurationAssessment
                       href: mtp/advanced-hunting-tvm-configassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
@@ -136,8 +143,20 @@
                       href: mtp/advanced-hunting-tvm-softwareinventory-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
                       href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
+                    - name: AppFileEvents
+                      href: mtp/advanced-hunting-appfileevents-table.md
+                    - name: IdentityLogonEvents
+                      href: mtp/advanced-hunting-identitylogonevents-table.md
+                    - name: IdentityQueryEvents
+                      href: mtp/advanced-hunting-identityqueryevents-table.md
                 - name: Apply query best practices
                   href: mtp/advanced-hunting-best-practices.md
+                - name: Custom detections
+                  items: 
+                    - name: Custom detections overview
+                      href: mtp/custom-detections-overview.md
+                    - name: Create & manage detection rules
+                      href: mtp/custom-detection-rules.md
             - name: Secure Score
               items: 
                 - name: Secure Score
@@ -210,14 +229,18 @@
                       href: ./office-365-security/configure-your-spam-filter-policies.md
                     - name: Configure the connection filter policy
                       href: ./office-365-security/configure-the-connection-filter-policy.md
-                    - name: Create-block-sender-lists-in-office-365
+                    - name: Create block sender lists
                       href: ./office-365-security/Create-block-sender-lists-in-office-365.md
-                    - name: Create-safe-sender-lists-in-office-365
+                    - name: Create safe sender lists
                       href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
                     - name: Spam confidence level (SCL)
                       href: ./office-365-security/spam-confidence-levels.md
                     - name: Bulk complaint level (SCL)
                       href: ./office-365-security/bulk-complaint-level-values.md
+                    - name: Configure junk email settings on Exchange Online mailboxes
+                      href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
+                    - name: End-user spam notifications
+                      href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
                     - name: Use mail flow rules to set the SCL in messages
                       href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
                     - name: Advanced Spam Filter (ASF) settings
@@ -276,10 +299,6 @@
                   href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: Block email spam in EOP Standalone
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
-                - name: Configure end-user spam notifications in EOP
-                  href: ./office-365-security/configure-end-user-spam-notifications-in-eop.md
-                - name: Configure end-user spam notifications in Exchange Online
-                  href: ./office-365-security/configure-end-user-spam-notifications-in-exchange-online.md
                 - name: Report junk email and phishing scams in Outlook on the web
                   href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                 - name: Protect on-premises mailboxes with Exchange Online Protection
@@ -290,15 +309,15 @@
                   href: ./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md
                 - name: What's the difference between junk email and bulk email?
                   href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
-            - name: Quarantine email messages in Office 365
+            - name: Quarantine
               href: ./office-365-security/quarantine-email-messages.md
               items: 
-                - name: Manage quarantined messages and files as an administrator
+                - name: Quarantine FAQ
+                  href: ./office-365-security/quarantine-faq.md
+                - name: Manage quarantined messages and files as an admin
                   href: ./office-365-security/manage-quarantined-messages-and-files.md
                 - name: Find and release quarantined messages as a user
                   href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
-                - name: Quarantine FAQ for Office 365
-                  href: ./office-365-security/quarantine-faq.md
             - name: Email validation and authentication
               items: 
                 - name: How Office 365 uses SPF to prevent spoofing
@@ -543,8 +562,6 @@
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
                     - name: Mail flow intelligence in Office 365
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
-                - name: Quarantine
-                  href: ./office-365-security/quarantine.md
                 - name: Troubleshooting and support information
                   href: ./office-365-security/troubleshooting-and-support-information.md
                   items: 

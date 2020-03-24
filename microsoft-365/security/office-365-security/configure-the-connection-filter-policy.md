@@ -31,7 +31,7 @@ If you're an Office 365 customer with mailboxes in Exchange Online or a standalo
 This topic describes how to configure the default connection filter policy in the Office 365 Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Office 365 customers; Exchange Online Protection PowerShell for standalone EOP customers). For more information about how EOP uses connection filtering is part of your organization's overall anti-spam settings, see see [Anti-spam protection in Office 365](anti-spam-protection.md).
 
 > [!NOTE]
-> The IP Allow List, safe list, and the IP Block List are one part of your overall strategy to allow or block email in your organization. For more information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md), [How to prevent good email messages from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md), and [Create blocked sender lists in Office 365](create-block-sender-lists-in-office-365.md).
+> The IP Allow List, safe list, and the IP Block List are one part of your overall strategy to allow or block email in your organization. For more information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md) and [Create blocked sender lists in Office 365](create-block-sender-lists-in-office-365.md).
 
 ## What do you need to know before you begin?
 
@@ -186,15 +186,3 @@ If you encounter either of these scenarios, you can create a mail flow rule with
 ||
 |:-----|
 |![The short icon for LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Office 365?** Discover free video courses for **Office 365 admins and IT pros**, brought to you by LinkedIn Learning.|
-
-## For more information
-
-[Safe sender and blocked sender lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
-
-[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)
-
-[Configure the outbound spam policy](configure-the-outbound-spam-policy.md)
-
-[How to prevent good email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md)
-
-[How to reduce spam email in Office 365](reduce-spam-email.md)
