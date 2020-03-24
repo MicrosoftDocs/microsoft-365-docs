@@ -815,11 +815,11 @@ The following table lists the quarantine activities that you can search for in t
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
-|Deleted quarantine message|QuarantineDelete|<add_description_here>|
-|Exported quarantine message|QuarantineExport|<add_description_here>|
-|Previewed quarantine message|QuarantinePreview|<add_description_here>|
-|Released quarantine message|QuarantineRelease|<add_description_here>|
-|Viewed quarantine message's header|QuarantineViewHeader|<add_description_here>|
+|Deleted quarantine message|QuarantineDelete|A user deleted an email message that was deemed to be harmful.|
+|Exported quarantine message|QuarantineExport|A user exported an email message that was deemed to be harmful.|
+|Previewed quarantine message|QuarantinePreview|A user previewed an email message that was deemed to be harmful.|
+|Released quarantine message|QuarantineRelease|A user released an email message from quarantine that was deemed to be harmful.|
+|Viewed quarantine message's header|QuarantineViewHeader|A user viewed the header an email message that was deemed to be harmful.|
 ||||
 
 ### Microsoft Forms activities
