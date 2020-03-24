@@ -11,7 +11,8 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: "Learn more about security principles and recommendations for modernizing security in your organization."
+description: "In this module, learn about threat protection strategies found through the evolution and trajectory of the Microsoft Security Operations Centers (SOC)."
+ms.custom: seo-marvel-<mar>
 ---
 
 # CISO Workshop Module 4b: Threat Protection Strategy 

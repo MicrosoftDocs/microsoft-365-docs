@@ -12,7 +12,8 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: "The Safe Attachments feature provides time-of-click verification of email attachments. Use Safe Attachments to protect your organization from malicious files people send or receive in email."
+description: "Learn how you can keep your organization safe from malicious files using ATP Safe Attachments for Office 365."
+ms.custom: seo-marvel-<mar>
 ---
 
 # How Office 365 ATP Safe Attachments works

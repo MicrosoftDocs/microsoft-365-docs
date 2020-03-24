@@ -11,7 +11,8 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: "Learn more about security principles and recommendations for modernizing security in your organization."
+description: "In this module, learn how to protect sensitive information using automatic classification and persistent encryption across devices."
+ms.custom: seo-marvel-<seo>
 ---
 
 # CISO Workshop Module 5: Information Protection

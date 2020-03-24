@@ -11,7 +11,8 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: "Learn more about security principles and recommendations for modernizing security in your organization."
+description: "This module contains overviews of cybersecurity topics, such as cybersecurity resilience, critical security hygiene, and the Internet of Things (IoT)."
+ms.custom: seo-marvel-<mar>
 ---
 
 # CISO Workshop Module 1: Microsoft Cybersecurity Briefing
