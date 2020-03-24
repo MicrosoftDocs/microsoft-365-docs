@@ -11,7 +11,8 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: "Learn more about security principles and recommendations for modernizing security in your organization."
+description: "In this module, learn about different aspects of security management, such as meeting productivity and security goals."
+ms.custom: seo-marvel-<mar>
 ---
 
 # CISO Workshop Module 2: Security Management 

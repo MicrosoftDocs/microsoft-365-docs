@@ -11,7 +11,8 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: "Learn more about security principles and recommendations for modernizing security in your organization."
+description: "In this module, learn how to better protect corporate data inside and outside your network perimeter with identity and zero trust user access strategies."
+ms.custom: seo-marvel-<mar>
 ---
 
 # CISO Workshop Module 3: Identity and Zero Trust User Access

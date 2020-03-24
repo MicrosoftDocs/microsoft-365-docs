@@ -1,5 +1,5 @@
 ---
-title: "Automated investigation and response (AIR) in Office 365"
+title: "Automated investigation and response (AIR) - Getting Started"
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
@@ -16,9 +16,10 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: "Get started using automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
 ms.custom: air
+ - seo-marvel-<mar>
 ---
 
-# Automated investigation and response (AIR) in Office 365
+# Get started using Automated investigation and response (AIR) in Office 365
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) Plan 2 includes powerful automated investigation and response (AIR) capabilities that can save your security operations team time and effort. As alerts are triggered, it's up to your security operations team to review, prioritize, and respond to those alerts. Keeping up with the volume of incoming alerts can be overwhelming. Automating some of this can help. With AIR, your security operations team can focus on higher-priority tasks without losing sight of alerts that are triggered.
 
