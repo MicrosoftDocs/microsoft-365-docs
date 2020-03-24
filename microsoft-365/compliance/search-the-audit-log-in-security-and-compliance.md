@@ -306,8 +306,8 @@ Click one of the following links to go to a specific table.
 |[Advanced eDiscovery activities](#advanced-ediscovery-activities)|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Yammer activities](#yammer-activities)|
 |[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|[Microsoft Stream activities](#microsoft-stream-activities)|
-|[Quarantine activities](#quarantine-activities)|[Microsoft Forms activities](#microsoft-forms-activities)|[Sensitivity label activities](#sensitivity-label-activities)|
-|[Exchange admin activities](#exchange-admin-audit-log)|||
+|[Content explorer activities](#content-explorer-activities)|[Quarantine activities](#quarantine-activities)|[Microsoft Forms activities](#microsoft-forms-activities)
+|[Sensitivity label activities](#sensitivity-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)|||
 ||||
 
 ### File and page activities
