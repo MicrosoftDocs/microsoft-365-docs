@@ -23,7 +23,7 @@ If you are a small or medium-size organization using one of Microsoft's business
 - [Microsoft 365 for Campaigns](office-365-security/campaigns.md) (includes a recommended security configuration for Microsoft 365 Business)
 
   
-Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. 
+For customers using our enterprise plans, Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. 
   
 ||**Task**|**E3**|**E5**|
 |:-----|:-----|:-----|:-----|
