@@ -58,7 +58,7 @@ Troubleshoot general issues and trends by using the reports in the admin center.
 
 ## Reporting False Positive and False Negatives to Microsoft
 
-Admins should submit false negatives (spam) and false positives (non-spam) to Microsoft via our Admin Submissions portal. Emails, files, and URLs can be submitted to help admins determine why we delivered or did not deliver messages to end-users. For details, see [How to submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning](admin-submission.md).
+Admins should submit false negatives (spam) and false positives (non-spam) to Microsoft via our Admin Submissions portal. Emails, files, and URLs can be submitted to help admins determine why we delivered or did not deliver messages to end-users. For details, see [How to submit suspected spam, phish, URLs, and files to Microsoft using Admin Submissions](admin-submission.md).
 
 End-users can also directly report false negatives (spam) and false positives (non-spam) to Microsoft for analysis when they disagree with verdicts given. For details, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
 

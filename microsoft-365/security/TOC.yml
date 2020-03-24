@@ -247,7 +247,7 @@
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
                 - name: Submit spam, non-spam, and phishing scam messages to Microsoft for analysis
                   href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
-                - name: Admin submissions in Office 365
+                - name: Submit suspected spam, phish, URLs, and files to Microsoft
                   href: ./office-365-security/admin-submission.md
                 - name: Junk email reporting add-in for Microsoft Outlook
                   href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
