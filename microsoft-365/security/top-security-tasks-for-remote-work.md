@@ -34,10 +34,10 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 |3      |  Configure Office 365 Advanced Threat Protection  |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4      | Configure Azure Advanced Threat Protection (ATP)   |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |5     |   Turn on Microsoft Advanced Threat Protection  |  |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|6      |   |   |      |        | 
-|7      | Configure Intune App protection for phones and tablets |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
-|8     | Configure MFA and conditional access for guests, including Intune app protection  |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|9      |  Enroll PCs into device management and require compliant PCs   |  | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
+|6      | Configure Intune App protection for phones and tablets |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|7     | Configure MFA and conditional access for guests, including Intune app protection  |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|8      |  Enroll PCs into device management and require compliant PCs   |  | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
+|9      |   |   |      |        | 
 |10   |   |      |      |      | 
 
 
