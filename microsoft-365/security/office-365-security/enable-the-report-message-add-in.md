@@ -18,34 +18,42 @@ ms.collection:
 description: "Learn how to enable the Report Message add-in for Outlook and Outlook on the web, for individual users or your entire organization."
 ---
 
-# Enable the Report Message add-in
+# Enable the Report Message add-in in Office 365
 
 > [!NOTE]
-> The Report Message add-in for Outlook and Outlook on the web is not exactly the same thing as the [Outlook Junk Email Filter](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)[Outlook Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), although both can be used to mark email as junk, not junk, or a phishing attempt. The difference is, the Report Message add-in for Outlook and Outlook on the web notifies Microsoft about misclassified email, whereas the Outlook Junk Email Filter is used to organize email messages in a user's mailbox.
+> The Report Message add-in is different from the [Outlook Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). The Report Message add-in notifies Microsoft about misclassified email, while the Outlook Junk Email Filter organizes email messages in a user's mailbox.
 
-## Overview
-
-The Report Message add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report misclassified email, whether safe or malicious, to Microsoft and its affiliates for analysis. Microsoft uses these submissions to improve the effectiveness of email protection technologies. In addition, if your organization is using [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.
+The Report Message add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report misclassified email (good email marked as bad, or bad email allowed) to Microsoft and its affiliates for analysis. Microsoft uses these submissions to improve the effectiveness of email protection technologies.
 
 For example, suppose that people are reporting a lot of messages as phishing. This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated. Or, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-your-spam-filter-policies.md).
 
-The Report Message add-in works with most Office 365 subscriptions and the following products:
+In addition, if your organization is using [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.
 
-- Outlook on the web
-- Outlook 2013 SP1 or later
-- Outlook 2016 for Mac
-- Outlook included with Office 365 ProPlus
-
-The Report Message add-in is currently not available for:
-
-- Mailboxes in on-premises Exchange organizations
-- GCC, GCC HIGH, or DoD subscriptions
-
-Your existing web browser should work with the Report Message add-in; however, if you notice the add-in is not available or not working as expected, try a different browser.
+Admins can enable the Report Message add-in for the organization, and individual users can install it for themselves.
 
 If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).
 
 If you're an Office 365 global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization). The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).
+
+## What do you need to know before you begin?
+
+- The Report Message add-in works with most Office 365 subscriptions and the following products:
+
+  - Outlook on the web
+  - Outlook 2013 SP1 or later
+  - Outlook 2016 for Mac
+  - Outlook included with Office 365 ProPlus
+
+- The Report Message add-in is currently not available for:
+
+  - Mailboxes in on-premises Exchange organizations
+  - GCC, GCC HIGH, or DoD subscriptions
+
+- Your existing web browser should work with the Report Message add-in. But, if you notice the add-in is not available or not working as expected, try a different browser.
+
+- For organizational installs, the organization needs to be configured to use OAuth authentication. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
+
+- Admins need to be a member of the Global admins role group. For more information, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## Get the Report Message add-in for yourself
 
@@ -74,23 +82,17 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 ## Get and enable the Report Message add-in for your organization
 
-These procedures have the following requirements:
+1. In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>, and then click **Deploy Add-In**.
 
-- You need to be a member of the **Global admins** group. For more information, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-
-- Exchange must be configured to use OAuth authentication To learn more, see [Exchange requirements (Centralized Deployment of add-ins)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).
-
-1. In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> and click **Deploy Add-In**.
+   ![Services and add-ins page in the Microsoft 365 admin center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.
 
-3. On the next page, click **Choose from the store**, and then click **Next**.
+3. On the next page, click **Choose from the Store**.
 
-4. On the **Select add-in** page that appears, click in the **Search** box, type Report Message and then click **Search** ![Search icon](../../media/search-icon.png). Find **Report Message** in the results, and then click **Add**.
+   ![Deploy a new add-in page](../../media/NewAddInScreen2.png)
 
-   ![Search for Report Message and then choose Add](../../media/NewAddInScreen3.png)
-
-5. In the dialog that appears review the license terms and privacy policy, and then click **Continue**.
+4. In the **Select add-in** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** in the list of results, next to the **Report Message Add-In**, choose **Add**.
 
 6. In the **Configure add-in** page that appears, configure the following settings:
 

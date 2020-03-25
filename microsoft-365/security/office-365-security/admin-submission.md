@@ -61,11 +61,3 @@ To submit content to Microsoft click the **New submission** button in the top le
 1. To submit a file select **File** from the flyout and upload the file you would like to scan.
 
 2. Click the **Submit** button.
-
-## Related topics
-
-[Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)
-
-[Protect against threats in Office 365](protect-against-threats.md)
-
-[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
