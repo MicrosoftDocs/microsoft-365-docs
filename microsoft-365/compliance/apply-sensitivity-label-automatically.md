@@ -96,7 +96,7 @@ Here's an example of a prompt when you configure a condition to apply a label as
 
 ## How automatic or recommended labels are applied
 
-The implementation of automatic and recommended labeling in Office apps depend on whether you're using labeling that's built into Office, or the Azure Information protection unified labeling client.  In both cases, however:
+The implementation of automatic and recommended labeling in Office apps depend on whether you're using labeling that's built into Office, or the Azure Information Protection unified labeling client.  In both cases, however:
 
 - You can't use automatic labeling for documents and emails that were previously manually labeled, or previously automatically labeled with a higher sensitivity. Remember, you can only apply a single sensitivity label to a document or email (in addition to a single retention label).
 
