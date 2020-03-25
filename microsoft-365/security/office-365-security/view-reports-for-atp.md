@@ -3,8 +3,8 @@ title: "View reports for Office 365 Advanced Threat Protection, malware reports,
 f1.keywords:
 - CSH
 ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: tracyp
+author: msfttracyp
 ms.date: 02/07/2020
 audience: ITPro
 ms.topic: article
