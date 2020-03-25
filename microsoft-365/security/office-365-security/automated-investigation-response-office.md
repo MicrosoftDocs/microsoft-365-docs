@@ -116,9 +116,10 @@ Remediation is the final phase of the playbook. During this phase, remediation s
 
 In addition to automatic investigations that are triggered by an alert, your organization's security operations team can trigger an automatic investigation from a view in [Threat Explorer](threat-explorer.md).
 
-For example, suppose that you are using the **Malware** view in Threat Explorer. You can select an item in the list of results, and then click **Investigate** from the action menu (assuming you have appropriate remediation permissions).
+For example, suppose that you are using the **Malware** view in Threat Explorer. Using the tabs below the chart, you select the **Email** tab. If you select one or more items in the list, the **+ Actions** button activates. 
 
-![User-reported messages in Explorer with Investigate button](../../media/Explorer-UserReported-Investigate.png)
+
+You can select an item in the list of results, and then click **Investigate** from the action menu (assuming you have appropriate remediation permissions).
 
 As another example, suppose you are viewing data about email messages detected as containing malware, and there are several email messages detected as containing malware. You can select the **Email** tab, select one or more email messages, and then, on the **Actions** menu, select **Investigate**. 
 
