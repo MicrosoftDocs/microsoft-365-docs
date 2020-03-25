@@ -806,7 +806,7 @@ The following table lists the activities in content explorer that are logged in 
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
-|Accessed item|AccessedItem|An admin (or a user who's a member of the Content Explorer Content Viewer role group) uses content explorer to view an email message or SharePoint/OneDrive document.|
+|Accessed item|LabelContentExplorerAccessedItem|An admin (or a user who's a member of the Content Explorer Content Viewer role group) uses content explorer to view an email message or SharePoint/OneDrive document.|
 ||||
 
 ### Quarantine activities

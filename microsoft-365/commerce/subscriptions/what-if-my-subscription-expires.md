@@ -85,9 +85,9 @@ Before the subscription actually reaches its expiration date, you have a few opt
 
   - If you purchased Microsoft 365 Apps for business with a prepaid card, you can [turn on Recurring billing](renew-your-subscription.md) for your subscription.
 
-  - If you're an Open Volume Licensing customer with a prepaid, one-year subscription, contact your partner to purchase a new product key. You'll receive instructions via email to activate your key in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). To learn how to find a new partner, or the partner you've worked with in the past, see [Find your Microsoft 365 partner or reseller](../../admin/manage/find-your-partner-or-reseller.md).
+  - If you're an Open Volume Licensing customer with a prepaid, one-year subscription, contact your partner to purchase a new product key. You'll receive instructions via email to activate your key in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). To learn how to find a new partner, or the partner you've worked with in the past, see [Find your partner or reseller](../../admin/manage/find-your-partner-or-reseller.md).
 
-  - If you have Microsoft 365 Apps for business, see [Renew Microsoft 365 for business](renew-your-subscription.md).
+  - If you have Microsoft 365 Apps for business, see [Renew your subscription](renew-your-subscription.md).
 
 - **Let the subscription expire.**
 
@@ -138,7 +138,7 @@ Here's what you can expect when your subscription is in each state.
 
 In this state, users have normal access to the Microsoft 365 portal, Office applications, and services such as email and SharePoint Online.
   
-As an admin, you still have access to the admin center. Don't worry—global or billing admins can [reactivate the subscription](reactivate-your-subscription.md) and continue using Microsoft 365. If you don't reactivate, be sure to [back up your data](back-up-data-before-switching-plans.md).
+As an admin, you still have access to the admin center. Don't worry—global or billing admins can [reactivate the subscription](reactivate-your-subscription.md) and continue using Office 365. If you don't reactivate, be sure to [back up your data](back-up-data-before-switching-plans.md).
   
 ### State: Disabled
   

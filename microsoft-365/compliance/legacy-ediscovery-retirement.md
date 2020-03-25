@@ -132,7 +132,7 @@ The following table describes other tools that you can use to replace the existi
 </tr>
 <tr class=even>
   <td>Copy messages from one mailbox to a different mailbox</td>
-  <td>[Assign permissions to a mailbox](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Assign permissions to a mailbox</a></td>
   <td>To give a person access to another user's email (such as when an employee leaves your organization and you need to give another person access to the former employee's email), we recommended that you assign that person permissions to access the former employee's mailbox. So instead of copying mailbox items to another user mailbox or a shared mailbox, just assign a user permissions to access the source mailbox.</td>
   
   </tr>
@@ -219,7 +219,7 @@ The following table describes other tools that you can use to replace the existi
 </tr>
   <tr class=even>
   <td>Copy messages from one mailbox to a different mailbox</td>
-  <td>[Assign permissions to a mailbox](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Assign permissions to a mailbox</a></td>
   <td>To give a person access to another user's email (such as when an employee leaves your organization and you need to give another person access to the former employee's email), we recommended that you assign that person permissions to access the former employee's mailbox. So instead of copying mailbox items to another user mailbox or a shared mailbox, just assign a user permissions to access the source mailbox.</td>
   
   </tr>
