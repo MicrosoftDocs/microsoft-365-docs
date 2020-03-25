@@ -33,8 +33,13 @@ When you sign-in to admin.microsoft.com, you'll now go to the new admin center e
 
 And if you're interested in what's new in other admin centers:
 
+- [What's New in Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
+- [What's New in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+
+## March 2020
+First off, we hope that everyone is safe and staying healthy right now. 
 
 ## February 2020
 
