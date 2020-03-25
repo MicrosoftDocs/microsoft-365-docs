@@ -30,7 +30,7 @@ description: "Learn how to renew your Office 365 for business subscription using
 
 This article applies to most paid Office 365 for business subscriptions.
   
-To renew by using a product key that you bought from a retail store or Office 365 partner, see [EFind and enter your product key](../enter-your-product-key.md).
+To renew by using a product key that you bought from a retail store or Office 365 partner, see [Find and enter your product key](../enter-your-product-key.md).
 
 > [!NOTE]
 > Paying by bank account isn't available in some countries or regions.
