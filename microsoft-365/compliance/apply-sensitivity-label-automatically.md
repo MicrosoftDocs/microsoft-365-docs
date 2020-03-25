@@ -46,6 +46,11 @@ There are two different methods for automatically applying a sensitivity label:
     
     For configuration instructions, see [How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) on this page.
     
+    Specific to auto-labeling for SharePoint and OneDrive:
+    - Maximum number of 25,000 files (Word, PowerPoint, or Excel) in your tenant per day
+    - Maximum number of 10 sites collections across all policies
+    - Maximum number of 10 policies across your tenant
+
     Specific to auto-labeling for Exchange:
     - Unlike manual labeling or auto-labeling with Office apps, Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
     - If you have Exchange mail flow rules or data loss prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
