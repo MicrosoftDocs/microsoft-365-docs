@@ -87,7 +87,7 @@ Each high-level step includes a number of substeps that are executed to provide 
 
 ## Example: A user-reported phish message launches an investigation playbook
 
-When a user in your organization submits an email message and reports it to Microsoft by using the [Report Message add-in for Outlook or Outlook Web App](enable-the-report-message-add-in.md), the report is also sent to your system and is visible in Explorer in the User-reported view. This user-reported message now triggers a system-based informational alert, which automatically launches the investigation playbook.
+Suppose that a user in your organization receives an email that they think is a phishing attempt. The user, trained to report such messages, uses the [Report Message add-in for Outlook or Outlook Web App](enable-the-report-message-add-in.md) to send it to Microsoft for analysis. The submission is also sent to your system and is visible in Explorer in the **Submissions** view (formerly referred to as the **User-reported** view). In addition, the user-reported message now triggers a system-based informational alert, which automatically launches the investigation playbook.
 
 During the root investigation phase, various aspects of the email are assessed. These include:
 - A determination about what type of threat it might be;
@@ -116,7 +116,7 @@ Remediation is the final phase of the playbook. During this phase, remediation s
 
 In addition to automatic investigations that are triggered by an alert, your organization's security operations team can trigger an automatic investigation from a view in [Threat Explorer](threat-explorer.md).
 
-For example, suppose that you are viewing data in Explorer about user-reported messages. You can select an item in the list of results, and then click **Investigate** from the action menu (assuming you have appropriate remediation permissions).
+For example, suppose that you are using the **Malware** view in Threat Explorer. You can select an item in the list of results, and then click **Investigate** from the action menu (assuming you have appropriate remediation permissions).
 
 ![User-reported messages in Explorer with Investigate button](../../media/Explorer-UserReported-Investigate.png)
 
