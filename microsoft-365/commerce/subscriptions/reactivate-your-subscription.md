@@ -24,7 +24,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
-description: "Learn how to reactivate your Office 365 subscription when it expires, or if Microsoft disables it, or you cancel it in the middle."
+description: "Learn how to reactivate your subscription when it expires, or if Microsoft disables it, or you cancel it in the middle."
 ---
 
 # Reactivate your subscription

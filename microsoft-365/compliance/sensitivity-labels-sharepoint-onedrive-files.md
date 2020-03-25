@@ -119,12 +119,15 @@ Before you enable the preview, ensure that you're running SharePoint Online Mana
 To enable the preview, use the Set-SPOTenant cmdlet:
 
 1. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+    
+    Note: If you have Office 365 Multi-Geo, use the -Url parameter with [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps), and specify the SharePoint Online Administration Center site URL for one of your geo-locations.
 
 2. Run the following command:
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
+3. For Office 365 Multi-Geo: Repeat steps 1 and 2 for each of your remaining geo-locations.
 
 ## Schedule roll-out after you create or change a sensitivity label
 

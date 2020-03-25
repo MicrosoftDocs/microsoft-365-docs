@@ -23,9 +23,7 @@ description: "As an Office 365 user, you can view, release, and delete your quar
 
 Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
 
-As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam, bulk email, or (as of April, 2020) phishing. You can also report false positives to Microsoft.
-
-You view and manage your quarantined messages in the Security & Compliance Center.
+As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam, bulk email, or (as of April, 2020) phishing. You view and manage your quarantined messages in the Security & Compliance Center or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## What do you need to know before you begin?
 
@@ -33,9 +31,9 @@ You view and manage your quarantined messages in the Security & Compliance Cente
 
 - Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies). Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
-- Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md) in anti-spam policies. As of October 2019, you can no longer release quarantined messages directly from these notifications. You can click **Review** in the notification, which will take you to Quarantine in the Security & Compliance Center. For more information, see [End-user spam notifications in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+- Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in anti-spam policies. Users can release spam quarantined messages but not phish quarantined messages directly from these notifications. For more information, see [End-user spam notifications in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-- Messages that were quarantined for high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. For more information, see [Find and release quarantined messages as an admin in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).
+- Messages that were quarantined for high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
 
 - You can only release a message and report it as a false positive (not junk) once.
 

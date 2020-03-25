@@ -1,12 +1,10 @@
 ---
 title: "Manage guest access in Office 365 Groups"
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 12/18/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -30,7 +28,7 @@ When it's turned on, group members can invite guest users to an Office 365 group
 
 > [!Note]
 > Yammer Enterprise networks that are in Native Mode or the [EU Geo](https://go.microsoft.com/fwlink/?linkid=2107357) do not support network guests.
-> Office 365 Connected Yammer Groups do not currently support guest access, but you can create non-connected, external groups in your Yammer network. See [Create and manage external groups in Yammer](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx) for instructions.
+> Office 365 Connected Yammer groups do not currently support guest access, but you can create non-connected, external groups in your Yammer network. See [Create and manage external groups in Yammer](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx) for instructions.
 
 ### Edit guest information
 
@@ -45,11 +43,9 @@ Guest access in groups is often used as part of a broader scenario that includes
 
 If you want to enable or disable guest access in groups, you can do so in the Microsoft 365 admin center.
 
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services & add-ins</a> page.
-
-2. Select **Office 365 Groups**.
+1. In the admin center, go to the **Settings** \> **Settings** and select **Office 365 Groups**.
   
-3. On the **Office 365 Groups** page, choose whether you want to let people outside your organization access group resources or let group owners add people outside your organization to groups.
+2. On the **Office 365 Groups** page, choose whether you want to let people outside your organization access group resources or let group owners add people outside your organization to groups.
 
 ## Add guests to an Office 365 group from the admin center
 
@@ -57,7 +53,7 @@ If the guest already exists in your directory, you can add them to your groups f
   
 1. In the admin center, go to the **Groups** > **Groups** page.
   
-2. Select the group you want to add the guest to, and select **View all and manage members** on the **Members** tab. 
+2. Click the group you want to add the guest to, and select **View all and manage members** on the **Members** tab. 
   
 4. Select **Add members**, and choose the name of the guest you want to add.
     
@@ -71,7 +67,7 @@ If you want to edit any of a guest's information, you can [Add or update a user'
 
 If you want to allow guest access to most groups, but have some where you want to prevent guest access, you can block guest access for individual groups by using Microsoft PowerShell.
 
-You must use the preview version of [Azure Active Directory PowerShell for Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:
+You must use the preview version of [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:
 
 - If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) and follow the instructions to install the public preview release.
 
