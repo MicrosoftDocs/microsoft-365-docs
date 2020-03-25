@@ -49,7 +49,7 @@ There are two different methods for automatically applying a sensitivity label:
     Specific to auto-labeling for Exchange:
     - Unlike manual labeling or auto-labeling with Office apps, Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
     - If you have Exchange mail flow rules or data loss prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
-    - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling and the sender has the [usage right](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export or Full Control.
+    - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
     - Incoming email is labeled when there is a match with your auto-labeling conditions. However, if the label is configured for encryption, that encryption isn't applied.
 
 ## Compare auto-labeling for Office apps with auto-labeling policies
@@ -66,7 +66,7 @@ Use the following table to help you identify the differences in behavior for the
 |Simulation mode|No |Yes |
 |Exchange attachments checked for conditions|No | Yes|
 |Apply visual markings |Yes |Yes (email only) |
-|Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes if the user has the minimum usage right of Export (email only) |
+|Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
 |Label incoming email|No |Yes (encryption not applied) |
 
 > [!NOTE]
