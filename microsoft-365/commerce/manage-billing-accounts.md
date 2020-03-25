@@ -19,7 +19,7 @@ description: "Learn about billing accounts and how to manage them."
 
 # Manage billing accounts
 
-A billing account is created when you sign up to try or buy Microsoft products. You use your billing account to manage your account settings, invoices, payment methods, and purchases. You can have access to multiple billing accounts. For example, you signed up for Microsoft 365 directly, or you have access to your organization’s Enterprise Agreement, Microsoft Product & Services Agreement or Microsoft Customer Agreement. For each of these scenarios, you would have a separate billing account.
+A billing account is created when you sign up to try or buy Microsoft products. You use your billing account to manage your account settings, invoices, payment methods, and purchases. You can have access to multiple billing accounts. For example, you signed up for Microsoft 365 directly, or you have access to your organization's Enterprise Agreement, Microsoft Product & Services Agreement or Microsoft Customer Agreement. For each of these scenarios, you would have a separate billing account.
 
 The Microsoft 365 admin center currently supports the following type of billing accounts:
 
@@ -37,21 +37,21 @@ The following table lists the important terms that you see in the **Billing acco
 
 | Field name | Description |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sold-to address | The legal entity responsible for payment and identified on the invoice. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](#tax-information). |
+| Sold-to address | The legal entity responsible for payment and identified on the invoice. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](billing-and-payments/tax-information.md). |
 | Segment | A read-only field that identifies the business segment of your organization (Commercial, Education, Government, or Non-profit). |
 | Account status | A read-only field that specifies the status of your commercial account with Microsoft. |
-| Tax ID | If you are outside the United States, you must provide a VAT or local equivalent. For more information, see [Tax information](#tax-information). |
+| Tax ID | If you are outside the United States, you must provide a VAT or local equivalent. For more information, see [Tax information](billing-and-payments/tax-information.md). |
 | Agreement | When a billing account is created, either through a direct purchase or a Volume Licensing arrangement, a signatory for the organization accepts, or signs, an agreement that outlines the terms & conditions of the account. If applicable, this view lists an agreement history. If you're required to accept updated terms, a link for **Approve agreement** is displayed. |
 | Billing profiles | A billing profile defines properties of your invoice, like who receives the bill, how the bill is delivered, payment terms, and a PO number. To distribute billing across your organization, you can create multiple billing profiles and identify the appropriate billing profile at the time of purchase. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, [Manage billing profiles](billing-and-payments/manage-billing-profiles.md). |
 
-> [!NOTE] 
-> If you want to change the **Sold-to** name or address, but don’t see an **Edit** link, you must  [contact support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) to change it. Requests for a **Sold-to** name change will require a credit check. When you contact support, have one of the following documents ready:
+> [!NOTE]
+> If you want to change the **Sold-to** name or address, but don't see an **Edit** link, you must  [contact support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) to change it. Requests for a **Sold-to** name change will require a credit check. When you contact support, have one of the following documents ready:
 >
-> - External announcement document that indicates any change in the company’s name or corporate structure
+> - External announcement document that indicates any change in the company's name or corporate structure
 > - Government issued document or registration letter
-> - Print out of the local company’s registry
+> - Print out of the local company's registry
 >
-> Support can help with name and address changes where only the customer name changes, but the entity remains the same. Documentation provided should clearly indicate that only the entity’s name has changed. If the change is related to any transaction, like a sale of business, or a divestiture or “spinoff” of a Customer Affiliate, please contact your Microsoft Seller.
+> Support can help with name and address changes where only the customer name changes, but the entity remains the same. Documentation provided should clearly indicate that only the entity's name has changed. If the change is related to any transaction, like a sale of business, or a divestiture or "spinoff" of a Customer Affiliate, please contact your Microsoft Seller.
 
 ## Shipping addresses
 
@@ -66,90 +66,10 @@ You can provide others with access to the billing account in the Microsoft 365 a
 - **Billing account reader** &mdash; Can view accounts.
 
 > [!Note]
-> Billing account roles only apply to billing accounts, and don’t apply to other Microsoft 365 admin center scenarios.
+> Billing account roles only apply to billing accounts, and don't apply to other Microsoft 365 admin center scenarios.
 
-## Tax information
+## Related articles
 
-Taxes for Microsoft 365 admin center purchases that you make through Microsoft are determined by your business address, or, if it’s different, by your shipping address. If you are in the United States, you must provide a Federal Employer Identification Number (FEIN).
+[Tax information](billing-and-payments/tax-information.md)
 
-Businesses in these countries can provide their VAT number:
-
-:::row:::
-    :::column:::
-- Austria
-- Belgium
-- Bulgaria
-- Croatia
-- Cyprus
-- Czech Republic
-- Denmark
-- Estonia
-- Finland
-- France
-- Germany
-- Greece
-- Hungary
-- Ireland
-- Italy
-- Latvia
-    :::column-end:::
-    :::column:::
-- Liechtenstein
-- Lithuania
-- Luxembourg
-- Malta
-- Monaco
-- Netherlands
-- Norway
-- Poland
-- Portugal
-- Romania
-- Slovakia
-- South Africa
-- Spain
-- Sweden
-- Switzerland
-- United Kingdom
-    :::column-end:::
-:::row-end:::
-
-These countries can provide their VAT number or local equivalent on their billing account information.
-
-|Market| Tax identifier |
-|------|----------------|
-| Australia | ABN (optional) |
-| Brazil | CNPJ (required) |
-| India | GSTIN (optional), PAN ID (required) |
-| Isle of Man | VAT ID (optional) |
-| New Zealand | GST Registration number (optional) |
-| Monaco | VAT ID (optional) |
-| Taiwan | VAT ID (optional) |
-
-> [!Note]
-> If you need to contact support, have your FEIN, VAT number, or local equivalent ready to give to the support agent.
-
-## Tax-exempt status
-
-If you qualify for tax-exempt status in your market, [start a service request](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) to establish tax exempt status for your organization.
-
-Have the following documentation ready:
-
-|Country or locale | Documentation |
-|------------------|----------------|
-| United States | Sales Tax Exemption Certificate |
-| Canada | Certificate of Exemption (or equivalent letter of authorization) |
-| Ireland | 13B/56A Tax Exemption Certificate|
-| International organizations that hold tax exemption | Certification / letter confirmation from local tax authorities |
-| Puerto Rico | Certificado de Compras Exentas |
-
-## Calculate taxes
-
-Sales taxes are calculated against the unit price, and then aggregated.
-
-For example:
-
->*(unit price X tax rate) X quantity = total sales tax*
-
--or-
-
->($1.29 X 0.095) X 100 = $12.25
+[Manage billing profiles](billing-and-payments/manage-billing-profiles.md)
