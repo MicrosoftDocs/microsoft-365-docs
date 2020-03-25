@@ -48,13 +48,13 @@ To view status and detailed information about files that were detected by Office
     
 4. Choose an available action.
     
-  - Choose **Release file** to unblock the file. 
-    
-    Select **Send report to Microsoft** to report the file as a false positive to Microsoft. 
-    
-  - Choose **Download file** to investigate the file further. 
-    
-  - Choose **Remove from quarantine** to remove the file from the list of quarantined items. If you choose this option, you must also delete the file from its respective library in SharePoint Online, OneDrive for Business, or Microsoft Teams. This option does not unblock a file from being opened or shared. 
+    - Choose **Release file** to unblock the file. 
+
+      Select **Send report to Microsoft** to report the file as a false positive to Microsoft. 
+
+    - Choose **Download file** to investigate the file further. 
+
+    - Choose **Remove from quarantine** to remove the file from the list of quarantined items. If you choose this option, you must also delete the file from its respective library in SharePoint Online, OneDrive for Business, or Microsoft Teams. This option does not unblock a file from being opened or shared. 
     
 5. Choose **Close** to close the details for a selected item. 
   
