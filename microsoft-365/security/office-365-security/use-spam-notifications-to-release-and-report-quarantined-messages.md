@@ -1,11 +1,11 @@
 ---
-title: "Use user spam notifications to release and report quarantined messages in Office 365"
+title: "End-user spam notifications in Office 36"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 03/14/2019
+ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,34 +17,30 @@ search.appverid:
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
-description: "If your admin enables the notifications for users, you'll receive a notification message that lists messages sent to your mailbox that were identified as spam, bulk, or phishing messages. You can release or report messages after being notified."
+description: "When an admin enables end-user spam notifications in anti-spam policies, message recipients will receive periodic notifications about their quarantined messages."
 ---
 
-# Use user spam notifications to release and report quarantined messages in Office 365
+# End-user spam notifications in Office 365
 
-If your admin enables spam notifications for users, you'll receive a notification message that lists messages addressed to your mailbox that were identified as spam, bulk, or phish and quarantined instead.
+Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
 
-> [!TIP]
-> If you're an administrator and want to enable this feature, you can choose the option when you [modify a default anti-spam policy](configure-your-spam-filter-policies.md).
+By default, end-user spam notifications are disabled in anti-spam policies. When an admin [enables end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications), recipients will receive periodic notifications about their messages that were quarantined as spam, bulk email, or (as of April, 2020) phishing.
 
-The message you receive includes the number of spam-quarantined messages you have, and the date and time (in Universal Coordinated Time or UTC) of the last message in the list. The list includes the following for each message:
+> [!NOTE]
+> Messages that were quarantined as high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
 
-- **Sender** The send name and email address of the quarantined message.
+An end-user spam notification contains the following information for each quarantined message:
 
-- **Subject** The subject line text of the quarantined message.
+- **Sender**: The send name and email address of the quarantined message.
 
-- **Date** The date and time (in UTC) that the message was quarantined.
+- **Subject**: The subject line text of the quarantined message.
 
-These are the actions that you can take with a quarantined message:
+- **Date**: The date and time (in UTC) that the message was quarantined.
 
-- **Block Sender** if you want Office 365 to add the sender to your blocked senders list.
+- **Block Sender**: Click this link to add the sender to your Blocked Senders list. For more information, see [Block a mail sender in Outlook](https://support.office.com/article/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
-- **Release** if the message isn't spam and you want Office 365 to send the message to your mailbox.
+- **Release**: For spam (not phish) messages, you can release the message here without going to Quarantine the Security & Compliance Center.
 
-- **Review** to navigate to the Quarantine Portal within the Security and Compliance Center if you want to take other actions, such as Preview or Release.
+- **Review**: Click this link to go to Quarantine in the Security & Compliance Center, where you can release, delete or report your quarantined messages. For more information, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).
 
-Be aware of the following:
-
-- Malware and high confidence phishing messages and messages that are quarantined because they matched a mail flow rule are not included in user spam notifications. 
-
-- You can only release a message and report it as a false positive (not junk) once.
+![Example end-user spam notification](../../media/end-user-spam-notification.png)
