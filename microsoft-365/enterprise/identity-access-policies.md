@@ -43,7 +43,7 @@ To give you time to accomplish these tasks, we recommend implementing the baseli
 |        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass conditional access rules, so it's important to block these|
 |        |[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account|
 |        |[Define app protection policies](#define-app-protection-policies)|One policy per platform (iOS, Android, Windows).|
-|        |[[Require approved apps](#require-approved-apps)](#require-apps-that-support-intune-app-protection-policies)|Enforces mobile app protection for phones and tablets|
+|        |[Require apps that support Intune app protection policies](#require-apps-that-support-intune-app-protection-policies)|Enforces mobile app protection for phones and tablets|
 |        |[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform|
 |        |[Require compliant PCs](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Enforces Intune management of PCs|
 |**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-based-on-sign-in-risk)| |
