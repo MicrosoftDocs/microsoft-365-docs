@@ -34,7 +34,7 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 |3      |  Configure Office 365 Advanced Threat Protection  |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4      | Configure Azure Advanced Threat Protection (ATP)   |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |5     |   Turn on Microsoft Advanced Threat Protection  |  |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|6      |  Configure risk-based MFA with Azure AD Identity Protection  |   |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
+|6      |   |   |      |        | 
 |7      | Configure Intune App protection for phones and tablets |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |8     | Configure MFA and conditional access for guests, including Intune app protection  |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |9      |  Enroll PCs into device management and require compliant PCs   |  | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
@@ -49,12 +49,17 @@ Before you begin, check your [Microsoft 365 Secure Score](https://docs.microsoft
 ## 1: Enable Azure Multi-Factor Authentication (MFA)
 The single best thing you can do to improve security for employees working from home is to turn on MFA. If you don't already have processes in place, treat this as an emergency pilot and make sure you have support folks ready to help employees who get stuck. As you probably can't distribute hardware security devices, use Windows Hello biometrics and smartphone authentication apps like Microsoft Authenticator.
 
-[Enable Azure Multi-Factor Authentication](https://docs.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-azure-mfa)
+Normally, Microsoft recommends you give users 14 days to register their device for Multi-Factor Authentication before requiring MFA. However, if your workforce is suddenly working from home, go ahead and require MFA as a security priority and be prepared to help users who need it. 
 
 
-After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
-  
-Later, you can implement more sophisticated access controls using conditional access, Azure Active Directory Identity Protection (for risk-based access), Intune App protection, and device compliance. These take a bit more time.
+|Plan  |Recommendation  |
+|---------|---------|
+|Office 365 plans (without Azure AD P1 or P2)     |[Enable Security defaults in Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.   |
+|Microsoft 365 E3 (with Azure AD P1)     | Use [Common Conditional Access policies](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block legacy authentication](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 (with Azure AD P2)     | Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](../enterprise/identity-access-policies.md) by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Block clients that don't support modern authentication](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [High risk users must change password](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+| | |
+
+
   
 ## 2: Protect against threats in Office 365
 
