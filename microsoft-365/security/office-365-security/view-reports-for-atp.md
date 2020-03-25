@@ -4,6 +4,7 @@ f1.keywords:
 - CSH
 ms.author: tracyp
 author: msfttracyp
+manager: dansimp
 ms.date: 02/07/2020
 audience: ITPro
 ms.topic: article
