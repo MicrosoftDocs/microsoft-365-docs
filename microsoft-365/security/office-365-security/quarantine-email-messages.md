@@ -6,8 +6,8 @@ title: "Quarantine in Office 365"
 >>>>>>> cc1f3200bf63489c8c397aad316ee5a36d6c8d3d
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date:
 audience: Admin
