@@ -16,15 +16,20 @@ search.appverid: met150
 
 # Machine profile page
 
-The Microsoft 365 security portal provides you with Machine profile pages, so you can assess the health and status of devices on your network. Each Machine profile page contains a wealth of information about the device.
+The Microsoft 365 security portal provides you with Machine profile pages, so you can assess the health and status of devices on your network and in the cloud. The page displays a wealth of information, gathered from the [Microsoft Defender Advanced Threat Protect](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) platform, or from the cloud-based [Azure Advanced Threat Protection](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp) platform.
 
-You can review in-depth information about what software it is running, any past and present security events or alerts, and find links to relevant software patches.
+> [!IMPORTANT]
+> The machine profile page for a device will differ slightly, based upon the platform the device is enrolled. Devices that have been enrolled in both platforms will display information from both.
 
-You can also use the Machine profile to perform common security-related tasks, and quickly review basic details about the device.
+From the Machine profile, you can review in-depth information about what software the device is running, any past and present security events or alerts, and find links to relevant software patches.
+
+You can also use the Machine profile to perform some common security-related tasks, and quickly review basic details about the device.
 
 ## Navigating the Machine profile page
 
-The machine profile page is broken up into three sections.
+You can access the Machine profile page for any device, by selecting the device name on the Incidents list, Incidents overview page, or the Incidents list flyout.
+
+The page is broken up into three sections.
 
 ![Image of machine profile page with (1) Tab area (2) Sidebar and (3) Actions highlighted in red](../../media/mtp-machine-profile/mtp-machine-profile-all.png)
 
