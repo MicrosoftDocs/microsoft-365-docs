@@ -46,6 +46,8 @@
           href: communication-compliance-investigate-remediate.md
         - name: Feature reference for communication compliance
           href: communication-compliance-feature-reference.md
+        - name: Case study - Contoso quickly configures an offensive language policy 
+          href: communication-compliance-case-study.md
         - name: Supervision policies in Office 365
           href: supervision-policies.md
         - name: Configure supervision policies for Office 365
