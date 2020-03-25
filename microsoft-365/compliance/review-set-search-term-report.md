@@ -1,5 +1,7 @@
 ---
 title: "Generate search term report for a review set"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -41,7 +43,7 @@ Then, select up to three pivots to report on, and click on **Generate**, which w
 
 Pivots are how the report will be organized. Consider the following example.
 
-- The saved query retrieves 10 documents: doc1 thru doc10.
+- The saved query retrieves 10 documents: doc1 through doc10.
 
 - doc1, doc2, doc3, doc4, doc5, doc6, and doc7 contain the term "eDiscovery".
 

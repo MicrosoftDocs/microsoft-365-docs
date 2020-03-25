@@ -1,6 +1,8 @@
 ---
 title: "Networking for the Contoso Corporation"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -38,7 +40,7 @@ The elements of Contoso's network that links their offices across the globe are 
 
 Figure 1 shows Contoso's networking infrastructure and its connections to the Internet.
 
-![Contoso's network](./media/contoso-networking/contoso-networking-fig1.png)
+![Contoso's network](../media/contoso-networking/contoso-networking-fig1.png)
  
 **Figure 1: Contoso's network**
 
@@ -71,7 +73,7 @@ Contoso has architected its line of business application and server intranet inf
 
 Figure 2 shows the percentage of network traffic when accessing servers across Contoso’s intranet.
 
-![Contoso's infrastructure for internal applications](./media/contoso-networking/contoso-networking-fig2.png)
+![Contoso's infrastructure for internal applications](../media/contoso-networking/contoso-networking-fig2.png)
  
 **Figure 2: Contoso's infrastructure for internal applications**
 

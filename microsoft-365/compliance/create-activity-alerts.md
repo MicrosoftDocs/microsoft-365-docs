@@ -1,5 +1,7 @@
 ---
 title: "Create activity alerts in the Office 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -42,12 +44,12 @@ You can create an activity alert that will send you an email notification when u
     
 2. Sign in to Office 365 using your work or school account.
     
-3. On the **Activity alerts** page, click ![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New**.
+3. On the **Activity alerts** page, click ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New**.
 
    The flyout page to create an activity alert is displayed.
 
     
-    ![Create an activity alert](media/53888bd5-9fa2-4398-8ccc-1a9dc72517ac.png)
+    ![Create an activity alert](../media/53888bd5-9fa2-4398-8ccc-1a9dc72517ac.png)
   
 4. Complete the following fields to create an activity alert:
     
@@ -69,7 +71,7 @@ You can create an activity alert that will send you an email notification when u
     
     The new alert is displayed in the list on the **Activity alerts** page. 
     
-    ![A list of alerts is displayed on the Activity alerts page](media/02b774f2-1719-41de-bbc9-5e5b7576f335.png)
+    ![A list of alerts is displayed on the Activity alerts page](../media/02b774f2-1719-41de-bbc9-5e5b7576f335.png)
   
     The status of the alert is set to **On**. Note that the recipients who will received an email notification when an alert is sent are also listed. 
   
@@ -93,7 +95,7 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
 
 - Here's an example of the email notification that is sent to the users that are specified in the Sent this alert to field (and listed under **Recipients** on the **Activity alerts** page ) in the Security & Compliance Center. 
     
-    ![Example of an email notifcation sent for an activity alert](media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
+    ![Example of an email notifcation sent for an activity alert](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
   
 - Here's are some common document and email activities that you can create an activity alerts for. The tables describes the activity, the name of the activity to create an alert for, and the name of the activity group that the activity is listed under in the **Activities** drop-down list. To see a complete list of the activities that you can create activity alerts for, see the "Audited activities" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities).
     

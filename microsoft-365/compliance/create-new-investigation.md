@@ -1,5 +1,7 @@
 ---
 title: "Create a new investigation in Data Investigations (Preview)"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -43,4 +45,4 @@ description: ""
 
     The **Home** tab for the investigation is displayed. For example, here's a new investigation named *Critical: Tax document and finance data leakage*.
 
-    ![The Home tab for a new investigation in Data Investigations](media/NewDataInvestigations.png)
+    ![The Home tab for a new investigation in Data Investigations](../media/NewDataInvestigations.png)

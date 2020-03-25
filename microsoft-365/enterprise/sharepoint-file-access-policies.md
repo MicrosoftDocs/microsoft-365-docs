@@ -5,6 +5,8 @@ author: BrendaCarter
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.date: 06/07/2018
 ms.reviewer: martincoetzer
@@ -29,7 +31,7 @@ In addition to implementing this guidance, be sure to configure SharePoint sites
 
 The following diagram illustrates the set of recommended policies for protecting files in SharePoint Online and OneDrive for Business. It indicates which policies should be updated or newly created to add protection for SharePoint Online and OneDrive for Business.
 
-![Summary of policies for SharePoint Online and OneDrive](../images/identity-access-ruleset-sharepoint.png)
+![Summary of policies for SharePoint Online and OneDrive](../media/identity-access-ruleset-sharepoint.png)
 
 If you included SharePoint Online when you created the common policies, you only need to create the new policies. When configuring conditional access rules, SharePoint Online includes OneDrive for Business.
 
@@ -71,7 +73,7 @@ It's important to understand that SharePoint site permissions are typically base
 
 The following illustration provides an example of how SharePoint device access policies protect access to sites.
 
-![How SharePoint device access policies protect sites](../images/SharePoint-rules-scenario.png)
+![How SharePoint device access policies protect sites](../media/SharePoint-rules-scenario.png)
 
 In the illustration:
 

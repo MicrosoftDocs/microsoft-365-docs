@@ -1,5 +1,7 @@
 ---
 title: "Upgrade to Microsoft 365 Business from Office 365 Business Premium"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -15,11 +17,12 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: "Steps that upgrade your business from Office 365 Business Premium to Microsoft 365 Business."
+description: "Learn the difference between Office 365 Business Premium and Microsoft 365 Business and how you can upgrade to Microsoft 365 Business."
 ---
 
 # Upgrade to Microsoft 365 Business from Office 365 Business Premium
@@ -44,11 +47,11 @@ Buy your licenses by following these steps in the [new admin center](https://doc
 1. Sign into the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 2. Go to the navigation pane and select **Billing** \> **Products & Services**. Find your Office 365 subscription and select it to view the details. 
 
-    ![A screenshot shows how to find and select your subscription in the admin center.](media/FindYourSubscription.png)
+    ![A screenshot shows how to find and select your subscription in the admin center.](../media/FindYourSubscription.png)
 
 3. On the next page, select **Upgrade**. 
 
-      ![A screenshot shows where to select Upgrade in the admin center.](media/SelectUpgrade.png)
+      ![A screenshot shows where to select Upgrade in the admin center.](../media/SelectUpgrade.png)
 
   > [!NOTE]
   > If you see a message that says **Upgrading your subscription is not supported with group-based licensing in Azure Active Directory**, you can safely ignore this unless you have a very large organization. Organizations who have selected this option will be aware that they're using group-based licensing.
@@ -63,7 +66,7 @@ It takes Microsoft a few minutes to set up your new service plans. To check on p
 1. Once your plan is ready, you might need to complete some additional setup steps in the admin center. In the navigation pane, select **Home** to complete any additional setup steps.
 
 > [!NOTE]
-> You'll receive a prorated refund for the Ofifce 365 licenses that you no longer need. Your bank account or credit card will be charged about two days after you set up the new plan.
+> You'll receive a prorated refund for the Office 365 licenses that you no longer need. Your bank account or credit card will be charged about two days after you set up the new plan.
   
 ## Protect user devices and files
 

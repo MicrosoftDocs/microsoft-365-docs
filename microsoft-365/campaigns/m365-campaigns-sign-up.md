@@ -1,5 +1,7 @@
 ---
 title: "Sign up for Microsoft 365 for Campaigns"
+f1.keywords:
+- NOCSH
 ms.author: supotter
 author: supotter
 manager: scotv
@@ -74,18 +76,15 @@ If you already have and existing subscription to Office 365 for business, for ex
 1. In your invitation to Microsoft 365 for Campaigns email, select **ENROLL YOUR ORGANIZATION >**. This takes you to Microsoft 365 sign-up.
 2. On the **Welcome, let's get to know you** page, click or tap **Want to add this to an existing subscription? Sign in**.
     
-    ![Choose Sign in on the upper right corner.](media/addtoexisting.png)
+    ![Choose Sign in on the upper right corner.](../media/addtoexisting.png)
 3. On the sign in page, enter the admin alias for your existing subscription, for example *Alice@VoteContoso<span></span>.org*, choose **Next**, enter your password, and then choose **Sign in**.
 4. On the **How does this look?** enter the number of users you have and choose **Next**. You don't have to enter a promo code here because it is already included in the invitation URL.
 5. On the **How do you want to pay?** page, enter your payment method and choose **Place order**.
 
-After you have completed these steps, you're ready to [assign the new licenses](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) to your campaign staff. 
+After you have completed these steps, you're ready to [assign the new licenses](../admin/manage/assign-licenses-to-users.md) to your campaign staff.
 
 
 ## What's next?
 - [Set up Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to complete your Microsoft 365 for Campaigns set up. 
 - [Add users](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) to your plan. Include the campaign candidate, all senior campaign staff, and anyone who will have access to sensitive campaign or party information.
 - [Bump up protection for your campaign](m365-campaigns-security-overview.md)
-
-
-

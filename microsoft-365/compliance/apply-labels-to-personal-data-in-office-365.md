@@ -1,5 +1,7 @@
 ---
 title: "Apply labels to personal data in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -34,7 +36,7 @@ At this time, using Azure Information Protection to apply encryption is not reco
 
 Retention labels can be applied to mail in Exchange Online and these labels work with Office 365 data loss prevention. 
 
-![Office 365 labels and Azure Information Protection labels](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Office 365 labels and Azure Information Protection labels](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
 In the illustration:
@@ -48,7 +50,7 @@ In the illustration:
 
 The following illustration shows how retention labels and sensitive information types can be used in label policies, data loss prevention policies, and with Cloud App Security policies.
 
-![Office labels and sensitive information types](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
+![Office labels and sensitive information types](../media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
 For accessibility, the following table provides the same examples in the illustration.
 
@@ -189,7 +191,7 @@ Create labels and policies in the security center or the compliance center.
 
 The following illustration shows how to create an auto-apply label for the Customer data label.
 
-![Create and apply a label for customer data](Media/Apply-labels-to-personal-data-in-Office-365-image3.png)
+![Create and apply a label for customer data](../media/Apply-labels-to-personal-data-in-Office-365-image3.png)
 
 In the illustration:
 

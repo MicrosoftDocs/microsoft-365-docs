@@ -6,14 +6,17 @@ audience: itpro
 ms.prod: devops
 ms.topic: article
 ms.date: 06/11/2018
-author: jitojo
-ms.author: jominana
-manager: douge
+author: robmazz
+f1.keywords:
+- NOCSH
+ms.author: robmazz
+manager: laurawi
 ms.collection: 
 - GDPR
 - M365-security-compliance
 ms.workload:
   - "multiple"
+titleSuffix: Microsoft GDPR
 ---
 # Azure DevOps Services Data Subject Requests for the GDPR and CCPA
 
@@ -58,7 +61,7 @@ Microsoft is committed to ensuring that your Azure DevOps Services data remains 
 ## See also
 
 - [Microsoft's GDPR commitments to customers of our generally available enterprise software products](https://docs.microsoft.com/legal/gdpr)
-- [Microsoft Trust center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [Microsoft privacy dashboard](https://account.microsoft.com/privacy)
 - [Microsoft privacy response center](https://aka.ms/userprivacysite)

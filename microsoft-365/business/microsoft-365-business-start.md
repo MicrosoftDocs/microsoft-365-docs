@@ -1,5 +1,7 @@
 ---
 title: "Get started with Microsoft 365 Business"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,11 +21,12 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "Learn to set up Microsoft 365 Business."
+description: "Learn about Microsoft 365 Business, how to set it up, and how to prepare your users' devices and PCs to ensure they're protected by Microsoft 365 Business."
 ---
 
 # Get started with Microsoft 365 Business
@@ -50,7 +53,7 @@ Microsoft 365 Business is meant for up to 300 licenses. If you need more license
   
 The following diagram describes how admins set up Microsoft 365 Business. It also describes the steps to prepare Windows PCs for Microsoft 365 Business. You can also add new devices in the Microsoft 365 Business admin center with [Windows AutoPilot](add-autopilot-devices-and-profile.md). You can use AutoPilot to set up and pre-configure new devices so that they're ready for productive use as soon as a user signs in with their Microsoft 365 Business credentials.
   
-![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
+![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
 Watch this video for an overview of Microsoft 365 Business setup.<br><br>
 

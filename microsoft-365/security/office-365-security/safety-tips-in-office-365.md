@@ -1,5 +1,7 @@
 ---
 title: "Safety tips in email messages in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -25,25 +27,25 @@ The safety tip—a color-coded message—will warn you about potentially harmful
 
 - Suspicious mail (red safety tip).
 
-    ![Screenshot that shows a red safety tip.](../media/5078a0be-e556-44a1-b169-09d780d26898.png)
+    ![Screenshot that shows a red safety tip.](../../media/5078a0be-e556-44a1-b169-09d780d26898.png)
 
     A red safety tip in an email means that the message you received contains something suspicious, such as a phishing scam. We recommend that you delete this kind of email message from your inbox without opening it.
 
 - Spam (yellow safety tip).
 
-    ![Screenshot that shows a yellow safety tip.](../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
+    ![Screenshot that shows a yellow safety tip.](../../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
 
     A yellow safety tip in an email means that the message has been marked as spam. If you don't recognize and trust the sender of the message, don't download any attachments or pictures and don't click any links in the message. In Outlook on the web, you can click **It's not spam** in the yellow bar of a junk mail item to move the message to your inbox. If the yellow safety tip appears on a message that was delivered to your inbox, it's probably there because you've disabled moving spam to your Junk Email folder.
 
 - Safe mail (green safety tip).
 
-    ![Screenshot that shows a green safety tip.](../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
+    ![Screenshot that shows a green safety tip.](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
     In addition to unsafe messages, we'll also tell you about valid messages from senders we trust with a green safety tip. A green safety tip in an email means that we checked the sender of the message and verified that it's safe. Microsoft maintains this list of trusted senders which includes financial organizations and others that are frequently spoofed or impersonated.
 
 - Unfiltered mail (gray safety tip).
 
-    ![Screenshot that shows a gray safety tip.](../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
+    ![Screenshot that shows a gray safety tip.](../../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
 
     We'll also tell you when we skipped checking a mail because it's from a sender you trust on your Safe Senders list or if a mail flow rule exists to bypass filtering.
 
@@ -51,11 +53,6 @@ The safety tip—a color-coded message—will warn you about potentially harmful
 
 ## Working with safety tips
 
-Safety tips are always enabled for Outlook on the web, even though not every message will receive one. Office 365 admins can turn safety tips off for other email clients such as Outlook. For more information, see [Enable or disable safety tips in Office 365](enable-or-disable-safety-tips.md).
+Safety tips are always enabled for Outlook on the web, even though not every message will receive one. Office 365 admins can turn safety tips off for other email clients such as Outlook. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
 If you disagree with how Office 365 and EOP categorized a message (that is, it's not spam or it's not legitimate), you can submit the messages for analysis to help make your experience better. For more information, see [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). You can also click on the Feedback link in the safety tip to submit comments directly to Microsoft to help us improve.
-
-## See also
-
-[Enable or disable safety tips in Office 365](enable-or-disable-safety-tips.md)
-

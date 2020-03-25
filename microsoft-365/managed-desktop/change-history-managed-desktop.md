@@ -5,6 +5,8 @@ keywords: change history
 ms.prod: m365-md
 ms.sitesec: library
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
@@ -13,6 +15,23 @@ ms.localizationpriority: normal
 # Change history for Microsoft Managed Desktop documentation
 
 This topic lists new and updated topics in the [Microsoft Managed Desktop documentation](index.yml). "Updated" topics are those which have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## January 2020
+New or changed topic | Description
+--- | ---
+[Get your users ready to use devices](get-started/get-started-devices.md)| Updated topic
+[Add and verify admin contacts in the Admin portal](get-started/add-admin-contacts.md) | Updated topic
+[Device configuration](service-description/device-policies.md) | Updated topic
+
+
+## December 2019
+New or changed topic | Description
+--- | ---
+[Admin support for Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Updated topic
+[Microsoft Managed Desktop devices](service-description/device-list.md) | Updated topic
+[Microsoft Managed Desktop archived devices](service-description/archived-device-list.md) | Updated topic
+
+
 
 ## November 2019
 New or changed topic | Description

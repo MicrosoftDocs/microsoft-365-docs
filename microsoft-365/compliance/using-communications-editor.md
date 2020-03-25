@@ -1,5 +1,7 @@
 ---
 title: "Use the communications editor"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

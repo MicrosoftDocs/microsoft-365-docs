@@ -1,5 +1,7 @@
 ---
 title: "Use Content Search in Office 365 for targeted collections"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -194,7 +196,7 @@ If you're getting mailbox folder IDs, the script connects to Exchange Online by 
   
 Here's an example of the output returned by the script for mailbox folders.
   
-![Example of the  list of mailbox folders and folder IDs returned by the script](media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
+![Example of the  list of mailbox folders and folder IDs returned by the script](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
   
 The example in Step 2 shows the query used to search the Purges subfolder in the user's Recoverable Items folder.
   
@@ -204,7 +206,7 @@ If you're getting the path of the **documentlink** property from SharePoint or O
   
 Here's an example of the output returned by the script for site folders.
   
-![Example of the list of documentlink names for site folders returned by the script](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![Example of the list of documentlink names for site folders returned by the script](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
 ## Step 2: Use a folder ID or documentlink to perform a targeted collection
 
@@ -214,7 +216,7 @@ After you've run the script to collect a list of folder IDs or documentlinks for
     
 2. Sign in to Office 365 using the account and credentials that you used to run the script in Step 1.
     
-3. In the left pane of the Security & Compliance Center, click **Search** \> **Content search**, and then click **New** ![Add icon](media/O365-MDM-CreatePolicy-AddIcon.gif).
+3. In the left pane of the Security & Compliance Center, click **Search** \> **Content search**, and then click **New** ![Add icon](../media/O365-MDM-CreatePolicy-AddIcon.gif).
     
 4. On the **New search** page, type a name for the Content Search. This name has to be unique in your organization. 
     
@@ -232,7 +234,7 @@ After you've run the script to collect a list of folder IDs or documentlinks for
     
     For example, the query in the following screenshot will search for any item in the Purges subfolder in the user's Recoverable Items folder (the value of the `folderid` property for the Purges subfolder is shown in the screenshot in Step 1):
     
-    ![Paste the folderid or documentlink in to the keyword box of the search query](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![Paste the folderid or documentlink in to the keyword box of the search query](../media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. Click **Search** to start the targeted collection search. 
   

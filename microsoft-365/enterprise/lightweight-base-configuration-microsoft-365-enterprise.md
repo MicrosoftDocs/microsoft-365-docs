@@ -1,5 +1,7 @@
 ---
 title: "Lightweight base configuration"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -23,14 +25,14 @@ description: Use this Test Lab Guide to create a lightweight test environment fo
 
 This article provides you with step-by-step instructions to create a simplified environment with a Microsoft 365 E5 subscription and a computer running Windows 10 Enterprise. 
 
-![The lightweight Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![The lightweight Microsoft 3656 Enterprise test environment](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 Use the resulting environment to test the features and functionality of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
 
-![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
 
 ## Phase 1: Create your Office 365 E5 subscription
 
@@ -38,13 +40,13 @@ We start with an Office 365 E5 trial subscription and then add the Microsoft 365
 
 To start your Office 365 E5 trial subscription, you first need a fictitious company name and a new Microsoft account.
   
-1. We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here: ![](./media/Common-Images/TableLine.png)
+1. We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here: ![Line](../media/Common-Images/TableLine.png)
     
 2. To sign up for a new Microsoft account, go to [https://outlook.com](https://outlook.com) and create an account with a new email account and address. You will use this account to sign up for Office 365.
     
-  - Record the first and last name of your new account here: ![](./media/Common-Images/TableLine.png)
+  - Record the first and last name of your new account here: ![Line](../media/Common-Images/TableLine.png)
     
-  - Record the new email account address here: ![](./media/Common-Images/TableLine.png)@outlook.com
+  - Record the new email account address here: ![Line](../media/Common-Images/TableLine.png)@outlook.com
     
 ### Sign up for an Office 365 E5 trial subscription
 
@@ -53,8 +55,8 @@ To start your Office 365 E5 trial subscription, you first need a fictitious comp
 2. On the **Thank you for choosing Office 365 E5** page, specify, your new email account address in step 1.
 3. In step 2 of the trail subscription process, type the requested information, and then perform the verification.
 4. In step 3, type an organization name and then an account name that will be the global admin for the subscription. 
-5. For step 4, record the sign-in page here (select and copy): ![](./media/Common-Images/TableLine.png) 
-6. Record the user ID here: ![](./media/Common-Images/TableLine.png).onmicrosoft.com  
+5. For step 4, record the sign-in page here (select and copy): ![Line](../media/Common-Images/TableLine.png) 
+6. Record the user ID here: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com  
    Record the password that you typed in a secure location.
    This value will be referred to as the **Office 365 global administrator name**.
 8. Click **Go to Setup**.
@@ -114,11 +116,11 @@ You might want to print this article to record the specific information that you
 
 Record these values:
   
-- Office 365 global administrator name: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (from step 6 of Phase 1)
+- Office 365 global administrator name: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com (from step 6 of Phase 1)
     
     Also record the password for this account in a secure location.
     
-- Your trial subscription organization name: ![](./media/Common-Images/TableLine.png) (from step 4 of Phase 1)
+- Your trial subscription organization name: ![Line](../media/Common-Images/TableLine.png) (from step 4 of Phase 1)
     
 - To list the accounts for User 2, User 3, User 4, and User 5, run the following command from the Windows Azure Active Directory Module for Windows PowerShell prompt:
     
@@ -128,13 +130,13 @@ Record these values:
 
     Record the account names here:
     
-  - User 2 account name: user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 2 account name: user2@![Line](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 3 account name: user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 3 account name: user3@![Line](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 4 account name: user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 4 account name: user4@![Line](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 5 account name: user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 5 account name: user5@![Line](../media/Common-Images/TableLine.png).onmicrosoft.com
     
     Also record the common password for these accounts in a secure location.
    
@@ -185,7 +187,7 @@ Your test environment now has:
     
 Here is your resulting configuration, which adds Microsoft 365 E5, which includes both Office 365 and Enterprise Security + Management (EMS).
   
-![Phase 3 of the Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Phase 3 of the Microsoft 3656 Enterprise test environment](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 ## Phase 4: Create a Windows 10 Enterprise computer
 
@@ -296,7 +298,7 @@ Next, install Office 365 ProPlus on the WIN10 computer.
     
 Here is your resulting environment.
 
-![Phase 5 of the Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Phase 5 of the Microsoft 3656 Enterprise test environment](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 This includes the WIN10 computer that has:
 

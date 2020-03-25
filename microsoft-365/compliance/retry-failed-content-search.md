@@ -1,5 +1,7 @@
 ---
 title: "Retry a Content Search to resolve a content location error"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -39,7 +41,7 @@ When searching a large number of mailboxes, the search is distributed across tho
 
 Restarting the search will often result in similar errors on different servers. Instead of restarting the search, click the **Retry** button that is displayed at the top of the search results page.
 
-![Click the Retry button to resolve content location errors](media/retrycontentsearch3.png)
+![Click the Retry button to resolve content location errors](../media/retrycontentsearch3.png)
 
 This will result in the retrying the search only for the mailboxes that failed. When you retry the search, the other results that were successfully returned are retained.
 

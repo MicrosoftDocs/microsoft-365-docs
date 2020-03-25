@@ -1,5 +1,7 @@
 ---
 title: "Restore an inactive mailbox in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -69,7 +71,7 @@ Use the **New-MailboxRestoreRequest** cmdlet with the  _SourceMailbox_ and  _Tar
 
 ## Restore the archive from an inactive mailbox
 
-If an inactive mailbox has an archive mailbox, you can also restore it to the archive mailbox of an existing mailbox. To restore the archive from an inactive mailbox, you have to add the  _SourceIsArchive_ and  _TargetIsAchive_ switches to the command used to restore an inactive mailbox. 
+If an inactive mailbox has an archive mailbox, you can also restore it to the archive mailbox of an existing mailbox. To restore the archive from an inactive mailbox, you have to add the  _SourceIsArchive_ and  _TargetIsAchive_ switches to the command used to restore an inactive mailbox.
   
 1. Create a variable that contains the properties of the inactive mailbox.
 
@@ -77,7 +79,7 @@ If an inactive mailbox has an archive mailbox, you can also restore it to the ar
     $InactiveMailbox = Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox>
     ```
 
-    > [!IMPORTANT]
+    > [!NOTE]
     > In the previous command, use the value of the **DistinguishedName** or **ExchangeGUID** property to identify the inactive mailbox. These properties are unique for each mailbox in your organization, whereas it's possible that an active and an inactive mailbox might have the same primary SMTP address. 
   
 2. Restore the contents of the archive from the inactive mailbox (source archive) to the archive of an existing mailbox (target archive). In this example, the contents from the source archive are copied to a folder named "Inactive Mailbox Archive" in the archive of the target mailbox.
@@ -88,7 +90,7 @@ If an inactive mailbox has an archive mailbox, you can also restore it to the ar
 
 ## More information
 
-- **What's the main difference between recovering and restoring an inactive mailbox?** When you recover an inactive mailbox, the mailbox is basically converted to a new mailbox, the contents and folder structure of the inactive mailbox are retained, and the mailbox is linked to a new user account. After it's recovered, the inactive mailbox no longer exists, and any changes made to the content in the new mailbox will affect the content that was originally on hold in the inactive mailbox. Conversely, when you restore an inactive mailbox, the contents are merely copied to another mailbox. The inactive mailbox is preserved and remains an inactive mailbox. Any changes made to the content in the target mailbox won't affect the original content held in the inactive mailbox. The inactive mailbox can still be searched by using the [Content Search tool](run-a-content-search-in-the-security-and-compliance-center.md) in the Security & Compliance Center, its contents can be restored to another mailbox, or it can be recovered or deleted at a later date.
+- **What's the main difference between recovering and restoring an inactive mailbox?** When you recover an inactive mailbox, the mailbox is basically converted to a new mailbox, the contents and folder structure of the inactive mailbox are retained, and the mailbox is linked to a new user account. After it's recovered, the inactive mailbox no longer exists, and any changes made to the content in the new mailbox will affect the content that was originally on hold in the inactive mailbox. Conversely, when you restore an inactive mailbox, the contents are merely copied to another mailbox. The inactive mailbox is preserved and remains an inactive mailbox. Any changes made to the content in the target mailbox won't affect the original content held in the inactive mailbox. The inactive mailbox can still be searched by using the [Content Search tool](content-search.md), its contents can be restored to another mailbox, or it can be recovered or deleted at a later date.
 
 - **How do you find inactive mailboxes?** To get a list of the inactive mailboxes in your organization and display information that is useful for restoring an inactive mailbox, you can run this command.
 
@@ -118,8 +120,8 @@ If an inactive mailbox has an archive mailbox, you can also restore it to the ar
 
     **Folder hierarchy in the target mailbox when the TargetRootFolder parameter isn't used**
 
-    ![Screenshot when TargetRootFolder parameter isn't used](media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
+    ![Screenshot when TargetRootFolder parameter isn't used](../media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
   
     **Folder hierarchy in the target mailbox when the TargetRootFolder parameter is used**
 
-    ![Screenshot when TargetRootFolder parameter is used](media/300da592-7323-48db-b8a4-07012259d113.png)
+    ![Screenshot when TargetRootFolder parameter is used](../media/300da592-7323-48db-b8a4-07012259d113.png)

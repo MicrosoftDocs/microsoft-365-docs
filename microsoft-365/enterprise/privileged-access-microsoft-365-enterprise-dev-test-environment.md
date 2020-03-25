@@ -1,5 +1,7 @@
 ---
 title: "Privileged access management for your Microsoft 365 Enterprise test environment"
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -21,10 +23,10 @@ description: Use this Test Lab Guide to enable privileged access management your
 
 With the instructions in this article, you configure privileged access management to increase security in your Microsoft 365 Enterprise test environment.
 
-![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-> [!TIP]
-> Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+>[!TIP]
+>Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 
@@ -32,8 +34,8 @@ If you just want to configure privileged access management in a lightweight way 
   
 If you want to configure privileged access management in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
   
-> [!NOTE]
-> Testing privileged access management does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an AD DS forest. It is provided here as an option so that you can test privileged access management and experiment with it in an environment that represents a typical organization. 
+>[!NOTE]
+>Testing privileged access management does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an AD DS forest. It is provided here as an option so that you can test privileged access management and experiment with it in an environment that represents a typical organization. 
 
 ## Phase 2: Configure privileged access management
 
@@ -69,8 +71,8 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### Create a new privileged access policy for the New-JournalRule task
 
-> [!NOTE]
-> If you haven't already completed the Steps 1 and 2 from Phase 2 of this guide, be sure follow the steps to create an approver's group named "Privilege Access Approvers" and to enable privileged access in your test environment.
+>[!NOTE]
+>If you haven't already completed the Steps 1 and 2 from Phase 2 of this guide, be sure follow the steps to create an approver's group named "Privilege Access Approvers" and to enable privileged access in your test environment.
 
 1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) using credentials the Global Admin account for your test environment.
 

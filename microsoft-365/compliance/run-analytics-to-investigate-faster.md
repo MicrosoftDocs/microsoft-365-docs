@@ -1,5 +1,7 @@
 ---
 title: "Run analytics to investigate faster"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

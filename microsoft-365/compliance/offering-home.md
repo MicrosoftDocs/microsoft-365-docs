@@ -3,6 +3,8 @@ title: Microsoft compliance offerings
 layout: LandingPage
 description: Learn how Microsoft products and services help your organization meet regulatory compliance standards.
 author: robmazz
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 manager: laurawi
 ms.topic: landing-page
@@ -10,6 +12,7 @@ keywords: Microsoft, Microsoft 365, Compliance, Offering
 localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
+titleSuffix: Microsoft Compliance
 ---
 
 # Microsoft compliance offerings
@@ -24,7 +27,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="./media/offering-global-icon.svg" alt="Global icon">
+                            <img src="../media/offering-global-icon.svg" alt="Global icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -41,7 +44,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <p><a href="offering-ISO-27701.md">ISO 27701</a></p>
                         <p><a href="offering-ISO-9001.md">ISO 9001</a></p>
                         <p><a href="offering-soc.md">SOC</a></p>
-                        <p><a href="offering-wcag-2-1.md">WCAG 2.1</a></p>
+                        <p><a href="offering-wcag-2-1.md">WCAG</a></p>
                     </div>
                 </div>
             </div>
@@ -55,7 +58,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="./media/offering-government-icon.svg" alt="Government icon">
+                            <img src="../media/offering-government-icon.svg" alt="Government icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -86,7 +89,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="./media/offering-industry-icon.svg" alt="Industry icon">
+                            <img src="../media/offering-industry-icon.svg" alt="Industry icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -143,7 +146,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="./media/offering-region-icon.svg" alt="Regional icon">
+                            <img src="../media/offering-region-icon.svg" alt="Regional icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -158,12 +161,13 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <p><a href="https://www.trustcenter.cn/compliance/default.html#DJCP">DJCP (China)</a></p>
                         <p><a href="offering-en-301-549-eu.md">EN 301 549 (EU)</a></p>
                         <p><a href="offering-ens-spain.md">ENS (Spain)</a></p>
-                        <p><a href="https://aka.ms/ENISA">ENISA IAF (EU)</a></p>
+                        <p><a href="offering-enisa.md">ENISA IAF (EU)</a></p>
                         <p><a href="offering-eu-model-clauses.md">EU Model Clauses</a></p>
                         <p><a href="offering-eu-us-privacy-shield.md">EU-US Privacy Shield</a></p>
                         <p><a href="https://www.trustcenter.cn/compliance/default.html#GB18030">GB 18030 (China)</a></p>
-                        <p><a href="offering-gdpr-eu.md">GDPR (EU)</a></p>
+                        <p><a href="gdpr.md">GDPR (EU)</a></p>
                         <p><a href="offering-g-cloud-uk.md">G-Cloud (UK)</a></p>
+                        <p><a href="https://www.idw.de/the-idw/about-the-idw">IDW PS 951 (Germany)</a></p>
                         <p><a href="offering-ISMS-korea.md">ISMS (Korea)</a></p>
                         <p><a href="offering-it-grundschutz-workbook-germany.md">IT Grundschutz Workbook (Germany)</a></p>
                         <p><a href="offering-lopd-spain.md">LOPD (Spain)</a></p>

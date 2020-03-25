@@ -3,6 +3,8 @@ title: Register existing devices yourself
 description: Register re-used devices you might already have yourself so they can be managed by Microsoft Managed Desktop
 ms.prod: w10
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
 ---
@@ -38,10 +40,10 @@ Microsoft Managed Desktop identifies each device uniquely by referencing its har
 
 #### Configuration Manager
 
-You can use System Center Configuration Manager to collect the hardware hashes from existing devices that you want to register with Microsoft Managed Desktop.
+You can use Microsoft Endpoint Configuration Manager to collect the hardware hashes from existing devices that you want to register with Microsoft Managed Desktop.
 
 > [!IMPORTANT]
-> Any devices you want to get this information for must be running Windows 10, version 1703 or later. You also need a device that is a Configuration Manager client connected to System Center Current Branch site. You also need the Reporting Point Site System role set up in your environment with SQL Server Reporting Services enabled. 
+> Any devices you want to get this information for must be running Windows 10, version 1703 or later. You also need a device that is a Configuration Manager client connected to the Configuration Manager (Current Branch) site. You also need the Reporting Point Site System role set up in your environment with SQL Server Reporting Services enabled. 
 
 If you've met all these prerequisites, you're ready to collect the information by following these steps:
 
@@ -144,7 +146,7 @@ Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistration
 ```
 3. Access any directories where there might be entries for the devices. Remove entries for each device from *all* directories, including Windows Server Active Directory Domain Services and 
 Azure Active Directory. Be aware that this removal could take a few hours to completely process.
-4. Access management services where there might be entries for the devices. Remove entries for each device from *all* management services, including System Center Configuration Manger, Microsoft Intune, and Windows Autopilot. Be aware that this removal could take a few hours to completely process.
+4. Access management services where there might be entries for the devices. Remove entries for each device from *all* management services, including Microsoft Endpoint Configuration Manager, Microsoft Intune, and Windows Autopilot. Be aware that this removal could take a few hours to completely process.
 
 Now you can proceed to [register devices](#register-devices).
 
@@ -204,7 +206,7 @@ Your file needs to include the **exact same column headings** as the sample one 
 
 From the Microsoft Managed Desktop [Azure Portal](https://aka.ms/mmdportal), select **Devices** in the left navigation pane. Select **+ Register devices**; the fly-in opens:
 
-[![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 
 
 [//]: # (Sadly this isn't true. We can remove this note - but leaving it now until we have a chance to chat about it.)

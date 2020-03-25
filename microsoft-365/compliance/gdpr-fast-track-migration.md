@@ -2,11 +2,12 @@
 title: GDPR
 description: Microsoft technical guidance — FASTTRACK MIGRATIONS TOOLSET FOR SUBMITTING DELETE REQUEST
 keywords: FastTrack Migration, Microsoft 365 Education, Microsoft 365 documentation, GDPR
-author: MohitKumar
 localization_priority: Priority
 Robots:  NOFOLLOW,NOINDEX
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: mohitku
 author: MohitKumar
 manager: laurawi
@@ -14,6 +15,7 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
+titleSuffix: Microsoft GDPR
 ---
 
 # FastTrack Migration Toolset for Submitting Delete Request
@@ -42,9 +44,9 @@ Microsoft supports the initial release of this  toolset in the Windows platform 
 
 This toolset is available in the PowerShell Gallery on the PowerShell console application.  To locate and load this cmdlet module, first open PowerShell in administrator mode so it has the appropriate permissions to install the module. If you have not used PowerShell previously go to your Windows Task Bar and in the search box type “PowerShell”. Select the console app using right-click and choose **Run as administrator**, then click **Yes** to run Windows PowerShell.
 
-![PowerShell — Run as administrator](media/fasttrack-powershell_image.png)
+![PowerShell — Run as administrator](../media/fasttrack-powershell_image.png)
 
-![PowerShell — Allow app to make changes](media/fasttrack-run-powershell_image.png)
+![PowerShell — Allow app to make changes](../media/fasttrack-run-powershell_image.png)
 
 Now that the console is open, you need to set permissions for script execution. Type the following command to allow the scripts to run:
 ‘Set-ExecutionPolicy — ExecutionPolicy: Bypass — Scope: Process’
@@ -53,7 +55,7 @@ You will be prompted to confirm this action, as the administrator can change the
 
 ***Set Execution Policy***
 
-![Set Execution Policy Change in PowerShell](media/powershell-set-execution-policy_image.png)
+![Set Execution Policy Change in PowerShell](../media/powershell-set-execution-policy_image.png)
 
 Now that the console is set to allow the script,  run this next command to install the module:
 
@@ -108,4 +110,5 @@ Get-FastTrackGdprDsrRequest -TransactionID: “YourTransactionID”
 
 
 ## Learn more
-[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview
+)

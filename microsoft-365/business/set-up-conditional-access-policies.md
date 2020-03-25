@@ -1,5 +1,7 @@
 ---
 title: "Set up conditional access policies for Microsoft 365 campaigns"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -16,11 +18,12 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to set  up conditional access policies for Microsoft 365 Campaigns."
+description: "Learn how to set up conditional access policies for Microsoft 365 Campaigns to add substantial additional security."
 ---
 
 # Set up conditional access policies
@@ -45,7 +48,7 @@ For more information about these policies, see [What are baseline policies](http
 1. Go to [Azure portal](https://portal.azure.com), and then navigate to **Azure Active Directory** \> **Conditional Access**.
     
     The baseline policies are listed on the page. <br/> <br/>
-    ![Page that lists baseline policies for conditional access.](media/baslinepolicies.png)
+    ![Page that lists baseline policies for conditional access.](../media/baslinepolicies.png)
 1. See the following specific instructions for each policy:
 
   - [Require MFA for admins](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

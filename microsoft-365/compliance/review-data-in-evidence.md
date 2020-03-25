@@ -1,5 +1,7 @@
 ---
 title: "Review the data in evidence"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -42,14 +44,14 @@ This view displays various metadata properties associated with the selected docu
 
 Here's an example of the file metadata for a document. For more information about the metadata fields, see [Document metadata fields in Data Investigations (Preview)](document-metadata-fields.md).
 
-![File metadata panel](media/Reviewimage2.png)
+![File metadata panel](../media/Reviewimage2.png)
 
 ## Native view
 
 The Native viewer displays the most accurate view of a document in it's native format. Native view is supported for hundreds of file types and is meant to display documents in the truest native experience possible. For Microsoft Office files, the Native viewer uses the web version of Office apps. This allows you to view content such as comments in different Office documents, formulas and hidden rows/columns in Excel, and the Notes view in PowerPoint.
 
 ![Native view
-](media/Reviewimage3.png)
+](../media/Reviewimage3.png)
 
 ## Text view
 
@@ -64,12 +66,12 @@ The Text viewer provides a view of the extracted text of a file. It ignores any 
 **Example of line counter and search hit highlighting in text and scrollbar**
 
 ![Text view
-](media/Reviewimage4.png)
+](../media/Reviewimage4.png)
 
 **Example of the diff view**
 
 ![Diff view
-](media/Reviewimage5.png)
+](../media/Reviewimage5.png)
 
 ## Annotate view
 
@@ -95,7 +97,7 @@ The Annotate view also provides the following navigation functionality:
 
 **Example of Annotate view**
 
-![Annotate view](media/Reviewimage1.png)
+![Annotate view](../media/Reviewimage1.png)
 
 > [!NOTE]
 > Annotations are applied to a copy of the document that was added to the evidence set. The original documents in the live service aren't annotated.

@@ -1,5 +1,7 @@
 ---
 title: "Team for a top-secret project of the Contoso Corporation"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -61,7 +63,7 @@ Contoso admins created a new Office 365 sensitivity label named **Project 2X** t
 
 Here is the resulting configuration of the Project 2X team.
 
-![The resulting configuration of the Project 2X team](./media/contoso-team-for-highly-confidential-assets/final-config.png)
+![The resulting configuration of the Project 2X team](../media/contoso-team-for-highly-confidential-assets/final-config.png)
  
 Files in the Documents section of the underlying Project 2X SharePoint site were protected by:
 
@@ -72,7 +74,7 @@ Files in the Documents section of the underlying Project 2X SharePoint site were
 
 Here is an example of a file stored in the underlying Project 2X site with the Highly Regulated retention label and the Project 2X sensitivity label assigned.
 
-![An example of a file stored in the underlying Project 2X site](./media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)
+![An example of a file stored in the underlying Project 2X site](../media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)
  
 ## Step 4: Trained Project 2X team members
 

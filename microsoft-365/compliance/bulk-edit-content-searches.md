@@ -1,5 +1,7 @@
 ---
 title: "Bulk edit Content Searches"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -23,13 +25,13 @@ For more information about using the Search Statistics tool, see [View keyword s
 
 1. Go to [https://protection.office.com](https://protection.office.com), and then select **Search** \> **Content search**.
     
-2. In the list of searches, select one or more searches, and then select **Bulk Search Editor** ![Bulk Search Editor button](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png).
+2. In the list of searches, select one or more searches, and then select **Bulk Search Editor** ![Bulk Search Editor button](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png).
     
-    ![Select one or more searches and then select Bulk search editor](media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
+    ![Select one or more searches and then select Bulk search editor](../media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
   
     The following information is displayed on the **Queries** page of the Bulk Search Editor. 
     
-    ![The Bulk search editor page displays the queries for the selected searches](media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
+    ![The Bulk search editor page displays the queries for the selected searches](../media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
   
     a. The **Search** column displays the name of the Content Search. As previously stated, you can edit the query for multiple searches. 
     
@@ -64,7 +66,7 @@ Here are some tips for editing queries using the Bulk Search Editor:
     
     The following information is displayed on the **Locations** page of the Bulk Search Editor. 
     
-    ![Select Enable bulk location editor and then select Locations to add or remove content locations](media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
+    ![Select Enable bulk location editor and then select Locations to add or remove content locations](../media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
   
     a. **Mailboxes to search** This section displays a column for each selected Content Search and a row for each mailbox that's included in the search. A check mark indicates that the mailbox is included in the search. You can add mailboxes to a search by typing the email address of the mailbox in a blank row and then selecting the check box for the Content Search that you want to add it to. Or you can remove a mailbox from a search by clearing the check box.
     

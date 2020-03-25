@@ -1,6 +1,8 @@
 ---
 title: "Customer and Cloud Partner Enterprise Business Continuity Responsibilities"
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date:
@@ -48,7 +50,7 @@ Microsoft maintains multiple channels for service status communications that cus
  
 Providing access to Microsoft 365 online services is a partnership between your organization and Microsoft. The following chart summarizes the balance of responsibility for both Microsoft and the customer during a service incident and during regular operations.
 
-![balance of customer and Microsoft responsibilities](media/ebcm/responsibilities.png)
+![balance of customer and Microsoft responsibilities](../media/ebcm/responsibilities.png)
 
 ## Your environment - service continuity
 When thinking about your continuity plan, be mindful of events which may impact your organization and it's overall ability to communicate. At a high level there are three factors that could impact your business.
@@ -64,6 +66,6 @@ Microsoft publishes [network connectivity principles](https://docs.microsoft.com
 Many collaboration solutions are dependent on systems, such as the company wide area network (WAN). When those systems are not available, how would your organization respond?
 This graphic represents issues that may impact more than one area. The accompanying table provides examples to consider
 
-![venn-diagram](media/ebcm/venn-diagram.png)
+![venn-diagram](../media/ebcm/venn-diagram.png)
 
 Your continuity plans should consider each of these areas. For example: If you require users to be on the corporate network and there is a snowstorm, how do those users gain access to key resources? If the snow prevents travel into the office and service engineers are required to connect to the corporate network, is there a policy mandating they have their corporate laptops in their possession at home?

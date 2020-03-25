@@ -1,5 +1,7 @@
 ---
 title: "Manage jobs in Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: "Advanced eDiscovery jobs help you track the status of long-running processes related to performing various Advanced eDiscovery tasks."
 ---
 
 # Manage jobs in Advanced eDiscovery
@@ -34,7 +36,7 @@ Here's a list of the jobs (which are typically long-running processes) that are 
 |Preparing data for export | A user exports documents from a review set. When the export process is complete, they can download the exported data to a local computer. For more information, see [Export case data](exporting-data-ediscover20.md). | 
 |Preparing for error resolution |When a user selects a file and creates a new error remediation in the Error view on the **Processing** tab of a case, the first step in the process is to upload the file that has the processing error to an Azure Storage location in the Microsoft cloud. This job tracks the progress of the upload process. For more information about the error remediation workflow, see [Error remediation when processing data](error-remediation.md). | 
 |Preparing search preview | After a  user creates and runs a new search (or reruns an existing search), the search tool prepares a sample subset of items (that match the search query) that can be previewed. Previewing search results help you determine the effectiveness of the search.  For more information, see [Collect data for a case](collecting-data-for-ediscovery.md#view-search-results-and-statistics). | 
-|Re-indexing custodian data | When you add a custodian to a case, all partially indexed items in the custodian's selected data sources are reindexed by a process called *Advanced indexing*. This job is also triggered when you click **Update index** in Index view on the **Processing** tab of a case. For more information, see [Advanced indexing of custodian data](indexing-custodian-data.md).
+|Re-indexing custodian data | When you add a custodian to a case, all partially indexed items in the custodian's selected data sources are reindexed by a process called *Advanced indexing*. This job is also triggered when you click **Update index** on the **Processing** tab of a case, and when you update the index for a specific custodian on the custodian properties flyout page. For more information, see [Advanced indexing of custodian data](indexing-custodian-data.md).
 |Running analytics | A user analyzes data in a review set by running Advanced eDiscovery analytics tools such as near duplicate detection, email threading analysis, and themes analysis. For more information, see [Analyze data in a review set](analyzing-data-in-review-set.md). | 
 |Tagging documents | This job is triggered when a user clicks **Start tagging job** in the **Tagging panel** when reviewing documents in a review set. A user can start this job after tagging documents in a review set and then bulk-selecting them in the view document panel. For more information, see [Tag documents in a review set](tagging-documents.md). | 
 |||
@@ -49,6 +51,6 @@ The following table describes the different status states for jobs.
 | Submission failed | The job submission failed.  You should attempt to rerun the action that triggered the job. |
 | In progress | The job is in progress, you can monitor the progress of the job in the **Jobs** tab. |
 | Successful | The job was successfully completed. The date and time that the job completed is displayed in the **Completed** column on the **Jobs** tab. |
-| Partially successful | The job was partially successful. |
+| Partially successful | The job was partially successful. This status is typically returned when the job didn't find any partially indexed data (also called *unindexed data*) in some of the custodian data sources.  |
 | Failed | The job failed.  You should attempt to rerun the action that triggered the job. If the job fails a second time, we recommend that you contact Microsoft Support and provide the support information from the job. |
 |||

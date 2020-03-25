@@ -1,5 +1,7 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 5: Information Protection"
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -16,7 +18,7 @@ description: "Learn more about security principles and recommendations for moder
 
 Learn how to protect sensitive information wherever it goes with automatic classification and persistent encryption across devices. Includes information on continuous monitoring of data across mobile devices, cloud services, and other corporate assets.
 
-- Download PDF summary: [Module 5: Information Protection](../media/ciso-workshop-5-information-protection-strategy.pdf)
+- Download PDF summary: [Module 5: Information Protection](../../media/ciso-workshop-5-information-protection-strategy.pdf)
 - Download PowerPoint summary: [Module 5: Information Protection](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-5-information-protection-strategy.pptx)
 
 ## Introduction: Information Protection (3:04)

@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, G
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,6 +14,7 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
+titleSuffix: Microsoft GDPR
 ---
 
 # Microsoft Support and Professional Services and Breach Notification Under the GDPR
@@ -92,4 +95,4 @@ When providing notice to customers of a personal data breach, Microsoft will inc
 
 ## Learn more
 
-Find out more about Microsoft Professional Services (<https://aka.ms/pstrust>). 
+Find out more about Microsoft Professional Services (<https://aka.ms/pstrust>).

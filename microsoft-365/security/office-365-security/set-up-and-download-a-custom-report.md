@@ -1,5 +1,7 @@
 ---
 title: "Set up and download a custom report in the Security &amp; Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -27,11 +29,11 @@ In the [Security &amp; Compliance Center](https://protection.office.com), severa
   
 1. In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard**.
     
-2. Choose a report. (For this example, we'll use the Message Disposition Report.)<br/>![Choose Request Report to download a report](../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
+2. Choose a report. (For this example, we'll use the Message Disposition Report.)<br/>![Choose Request Report to download a report](../../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   
 3. In the upper left corner of the report, choose **Request report**.
     
-4. In the **Request report** dialog box, specify a name, start date, and end date for the report. Then choose **Next**.<br/>![In the Security &amp; Compliance Center, choose Reports \> Reports for download](../media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
+4. In the **Request report** dialog box, specify a name, start date, and end date for the report. Then choose **Next**.<br/>![In the Security &amp; Compliance Center, choose Reports \> Reports for download](../../media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
   
 5. Specify any filters you want to use for the report. (For example, you might specify a client IP address for the Message Disposition Report.) Then choose **Next**.
     

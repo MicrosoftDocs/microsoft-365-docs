@@ -1,8 +1,11 @@
 ---
 title: "Tagging and Assessment in Office 365 Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 09/14/2017
 audience: Admin
 ms.topic: article
@@ -16,7 +19,7 @@ description: "Review the steps to perform Assessment training, including tagging
 "
 ---
 
-# Tagging and Assessment in Office 365 Advanced eDiscovery
+# Tagging and Assessment in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -29,7 +32,7 @@ This section describes the procedure for the Advanced eDiscovery Relevance Asses
     
     For example purposes in this procedure, a sample assessment set of 500 files is created and the **Tag** tab is displayed, which contains the Tagging panel, displayed file content and other tagging options. 
     
-    ![Relevance Tag tab for Assessment](media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
+    ![Relevance Tag tab for Assessment](../media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
   
 2. Review each file in the sample, determine the file's relevance for each case issue, and tag the file using the Relevance (R), Not relevant (NR) and Skip buttons in the **Tagging panel** pane. 
     
@@ -40,14 +43,14 @@ This section describes the procedure for the Advanced eDiscovery Relevance Asses
     
     The Assessment current error margin and richness are calculated and displayed in the **Relevance Track** tab, with expanded details per issue, as shown below. More details about this dialog are described in the later section "Reviewing Assessments results". 
     
-    ![Relevance Track - Assessment](media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
+    ![Relevance Track - Assessment](../media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
     > [!TIP]
     > By default, we recommend that you proceed to the default Next step when the Assessment progress indicator for the issue has completed, indicating that the assessment sample was reviewed and sufficient relevant files were tagged. > Otherwise, if you want to view the **Track** tab results and control the margin of error and the next step, click **Modify** adjacent to **Next Step**, select **Continue assessment**, and then click **OK**. 
   
 1. Click **Modify** to the right of the **Assessment** check box to view and specify assessment parameters per issue. An **Assessment level** dialog for each issue is displayed, as shown in the following example: 
     
-    ![Assessment level case issue](media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
+    ![Assessment level case issue](../media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
   
     The following parameters for the issue are calculated and displayed in the **Assessment level** dialog: 
     
@@ -65,7 +68,7 @@ This section describes the procedure for the Advanced eDiscovery Relevance Asses
     
 3. Click **Advanced** in the **Assessment level** dialog to see the following additional parameters and details: 
     
-    ![Assessment Level Case Issue advanced view](media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
+    ![Assessment Level Case Issue advanced view](../media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
   
     **Estimated richness**: Estimated richness according to the current assessment results
     
@@ -85,7 +88,7 @@ This section describes the procedure for the Advanced eDiscovery Relevance Asses
     
     When there are multiple issues, after all issues have been reviewed or adjusted, an **Assessment level: summary** dialog is displayed, as shown in the following example. 
     
-    ![Assessment level summary](media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
+    ![Assessment level summary](../media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
   
     Upon successful completion of assessment, proceed to the next stage in Relevance training.
     
@@ -118,7 +121,7 @@ In the absence of statistically based stabilization, there will be results with 
   
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
   

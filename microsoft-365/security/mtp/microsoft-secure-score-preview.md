@@ -5,6 +5,8 @@ keywords: security, malware, Microsoft 365, M365, secure score, security center,
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
@@ -22,11 +24,11 @@ search.appverid:
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft Secure Score is a measurement of an organization’s security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
+Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
 
 Secure Score helps organizations:  
 
-* Report on the current state of the organization’s security posture.
+* Report on the current state of the organization's security posture.
 * Improve their security posture by providing discoverability, visibility, guidance, and control.  
 * Compare with benchmarks and establish key performance indicators (KPIs).
 
@@ -48,7 +50,7 @@ Each improvement action is worth 10 points or less. Most are scored in a binary 
 
 ### Products included in Secure Score
 
-Currently there are recommendations for Office 365 (including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, Intune, Microsoft Defender ATP, and Cloud App Security. Recommendations for other security products are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
+Currently there are recommendations for Office 365 (including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, Microsoft Defender ATP, and Cloud App Security. Recommendations for other security products are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
 
 ## Required permissions
 
@@ -58,21 +60,21 @@ To have permission to access Microsoft Secure Score, you must be assigned one of
 
 With read and write access, you can make changes and directly interact with Secure Score. You can also assign read-only access to other users.
 
-* CompanyAdministrator
-* SecurityAdministrator
-* ExchangeAdmin
-* SharePointAdmin
+* Global administrator
+* Security administrator
+* Exchange administrator
+* SharePoint administrator
 
 ### Read-only roles
 
 With read-only access, you are not able to edit status or notes for an improvement action, edit score zones, or edit custom comparisons.
 
-* HelpdeskAdmin
-* UserAccountAdmin
-* ServiceSupportAdmin
-* SecurityReader
-* SecurityOperator
-* GlobalReader
+* Helpdesk administrator
+* User administrator
+* Service administrator
+* Security reader
+* Security operator
+* Global reader
 
 ### Graph API
 
@@ -85,15 +87,15 @@ To access the Graph API, you need to have one of the following scopes in additio
 
 To help you the information you need more quickly, Microsoft improvement actions are organized into groups:
 
-* Identity (Azure AD accounts & roles, with Azure ATP coming soon)
+* Identity (Azure AD accounts & roles)
 * Data  (Microsoft Information Protection)
-* Device (Microsoft Defender ATP devices)
+* Device (no improvement actions for now)
 * App (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
-* Infrastructure (Azure resources)
+* Infrastructure (no improvement actions for now)
 
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
-![Secure Score homepage](../media/secure-score/secure-score-homepage.png)
+![Secure Score homepage](../../media/secure-score/secure-score-homepage.png)
 *Figure 1: Microsoft Secure Score overview page*
 
 ## Take action to improve your score
@@ -108,7 +110,7 @@ Ranking is based on the number of remaining points left to achieve, implementati
 
 When you select a specific improvement action, a full page flyout appears.  
 
-![Improvement action flyout example](../media/secure-score/secure-score-improvement-action.png)
+![Improvement action flyout example](../../media/secure-score/secure-score-improvement-action.png)
 *Figure 2: Improvement action flyout example*
 
 To complete the action, you have a few options:
@@ -144,7 +146,24 @@ In the **Metrics & trends** tab, there are several graphs and charts to give you
 
 Microsoft Secure Score is a numerical summary of your security posture based on system configurations, user behavior and other security related measurements; it is not an absolute measurement of how likely your system or data will be breached. Rather, it represents the extent to which you have adopted security controls in your Microsoft environment which can help offset the risk of being breached. No online service is completely immune from security breaches, and secure score should not be interpreted as a guarantee against security breach in any manner.
 
-## What’s new? 
+## What's coming?
+
+### MFA improvement action updates
+
+To reflect the need for businesses to ensure the upmost security while applying policies that work with their business, Microsoft Secure Score is removing three improvement actions centered around multi-factor authentication, and adding two.
+
+The three that will be removed:
+- Register all users for multi-factor authentication
+- Require MFA for all users
+- Require MFA for Azure AD privileged roles
+
+New improvement actions:
+- Ensure all users can complete multi-factor authentication for secure access
+- Require MFA for administrative roles
+
+ These new improvement actions will require registering your users or admins for multi-factor authentication (MFA) across your directory and establishing the right set of policies that fit your organizational needs. The main goal is have flexibility while ensuring all your users and admins can authenticate with multiple factors or risk-based identity verification prompts. That can take the form of setting security defaults that let Microsoft decide when to challenge users for MFA, or having multiple policies that apply scoped decisions.
+
+## What's new? 
 
 To make Microsoft Secure Score a better representative of your security posture and improve usability, we have made some changes. Your score and the maximum possible score have changed. However, this does not imply a change in your security posture.
 
@@ -157,7 +176,7 @@ To make Microsoft Secure Score a better representative of your security posture 
 * Manage towards your future goals using score projections and planned actions
 * And more!
 
-### Removed “not scored” and “review” improvement actions
+### Removed "not scored" and "review" improvement actions
 
 One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable, and review improvement actions are not measured to the same standard as other improvement actions.
 

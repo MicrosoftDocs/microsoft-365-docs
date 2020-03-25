@@ -1,8 +1,11 @@
 ---
 title: "Import non-Office 365 content for Advanced eDiscovery analysis"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,7 +17,7 @@ ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: "How to steps to import content that is not stored in O365 into an Azure blob so that it can be analyzed with AeD"
 ---
 
-# Import non-Office 365 content for Advanced eDiscovery analysis
+# Import non-Office 365 content for Advanced eDiscovery (classic) analysis
 
 Not all documents that you may need to analyze with Office 365 Advanced eDiscovery will live in Office 365. With the Non-Office 365 content import feature in Advanced eDiscovery you can upload documents that don't live in Office 365 (except PST files) into a case linked, Azure storage blob and analyze them with Advanced eDiscovery. This procedure shows you how to bring your non-Office 365 documents into Advanced eDiscovery for analysis.
   
@@ -42,7 +45,8 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
     
 ## Upload non-Office 365 content into Advanced eDiscovery
 
-1. As an eDiscovery Manager or eDiscovery Administrator, open **eDiscovery**, and open the case that the non-Office 365 data will be uploaded to. If you need to create a case, see [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](manage-ediscovery-cases.md)
+
+1. As an eDiscovery Manager or eDiscovery Administrator, open **eDiscovery**, and open the case that the non-Office 365 data will be uploaded to. If you need to create a case, see [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](ediscovery-cases.md)
     
 2. Click **Switch to Advanced eDiscovery**
     
@@ -79,6 +83,4 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
     > Once the container is successfully processed in Advanced eDiscovery, you will no longer be able to add new content to the SAS storage in Azure. If you collect additional content and you want to add it to the case for Advanced eDiscovery analysis, you must create a new **Non-Office 365 data** container and repeat this procedure. 
   
     > [!NOTE]
-    > If the container  *does not process successfully due to folder naming issues*  and you then fix the issues, you will still have to create a new container and the reconnect and upload again using the procedures in this article. 
-  
-
+    > If the container  *does not process successfully due to folder naming issues*  and you then fix the issues, you will still have to create a new container and the reconnect and upload again using the procedures in this article.

@@ -1,5 +1,7 @@
 ---
 title: "Office 365 Message Encryption FAQ"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -80,7 +82,7 @@ You can still use the previous version of OME, it will not be deprecated at this
   
 ## My organization uses Active Directory Rights Management, can I use this functionality?
 
-No. If you are using Exchange Online with Active Directory Rights Management service (AD RMS), you can't enable these new capabilities right away. Instead, you need to [migrate AD RMS to Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) first. 
+No. If you are using Exchange Online with Active Directory Rights Management service (AD RMS), you can't enable these new capabilities right away. Instead, you need to [migrate AD RMS to Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) first.
   
 ## My organization has an Exchange Hybrid deployment. Can I use this feature?
 
@@ -92,7 +94,7 @@ You can create protected messages from Outlook 2016, and Outlook 2013 for Window
   
 ## What email clients are supported to read and reply to protected emails?
 
-You can read and respond from Outlook for Windows and Mac (2013 and 2016), Outlook on the web, and Outlook mobile (Android and iOS) if you are an Office 365 user. You can also use the iOS native mail client if your organization allows it. If you are a non-Office 365 user, you can read and reply to encrypted messages on the web through your web browser.
+Office 365 users can read and respond from Outlook for Windows and Mac (2013 and 2016), Outlook on the web, and Outlook mobile (Android and iOS). You can also use the iOS native mail client if your organization allows it. If you are a non-Office 365 user, you can read and reply to encrypted messages on the web through your web browser.
   
 ## What file types are supported as attachments in protected emails? Do attachments inherit the protection policies associated with protected emails?
 
@@ -108,7 +110,8 @@ Yes! You can enable encryption for PDF attachments for your Office 365 organizat
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. Messages inherit the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. If an Outlook or Outlook on the web user attaches an unprotected PDF attachment to a protected message, the message inherits the protection of the message. Users can only open the encrypted attachments in applications that support protected PDFs (for example, the OME Portal and the Azure Information Protection Viewer).
+PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. For all Outlook clients, messages and unprotected PDF attachments inherit the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Also, if an Outlook on the web user attaches an unprotected PDF document and applies protection to message, the message inherits the protection of the message. Users can only open the encrypted attachments in applications that support protected PDFs (for example, the OME Portal and the Azure Information Protection Viewer).
+
   
 ## Are OneDrive for Business attachments supported?
 
@@ -116,7 +119,7 @@ Not yet. OneDrive for Business attachments are not supported and end-users can't
   
 ## What email clients support preview of encrypted attachments in protected emails?
 
-When attachments are protected with a protected mail, Outlook clients provide tha ability to preview the document directly. Outlook supports preview of Office documents (Docx, xlsx, pptx, doc, xls, ppt). Outlook on the web supports preview of Office documents (docx, xlsx, pptx) and PDF.  
+When attachments are protected with a protected mail, Outlook clients provide tha ability to preview the document directly. Outlook supports preview of Office documents (docx, xlsx, pptx, doc, xls, ppt). Outlook on the web supports preview of Office documents (docx, xlsx, pptx) and PDF.  
 
 ## Can I automatically encrypt messages by setting up policies?
 
@@ -136,7 +139,7 @@ Yes! For information on customizing email messages and the OME portal, see Add y
   
 ## Are there any reporting capabilities or insights for encrypted emails?
 
-There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Security & Compliance Center](view-email-security-reports.md).
+There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Security & Compliance Center](../security/office-365-security/view-email-security-reports.md).
   
 ## Can I use message encryption with compliance features such as eDiscovery?
 
@@ -154,7 +157,7 @@ Not at this time.
 
 Yes! Encrypted messages are supported for a shared mailbox.
 
-- Users can open protected mails in a shared mMailbox where the shared mailbox received a protected mail as part of a distribution group.
+- Users can open protected mails in a shared mailbox where the shared mailbox received a protected mail as part of a distribution group.
 
 - Users can view attachments that inherit protection from email when they use Outlook for Windows, Outlook for Mac, and Outlook on the web.
 

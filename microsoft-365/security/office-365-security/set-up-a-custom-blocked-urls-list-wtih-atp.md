@@ -1,5 +1,7 @@
 ---
 title: "Set up a custom blocked URLs list using Office 365 ATP Safe Links"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -24,7 +26,7 @@ description: "Learn how to set up a list of blocked URLs for your organization u
 
 With [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), your organization can have a custom list of website addresses (URLs) that are blocked. When a URL is blocked, people who click on links to the blocked URL are taken to a [warning page](atp-safe-links-warning-pages.md) that resembles the following image: 
   
-![This site is blocked](../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![This site is blocked](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
 The blocked URLs list is defined by your organization's Office 365 security team, and that list applies to everyone in the organization who is covered by Office 365 ATP Safe Links policies. 
   
@@ -51,7 +53,7 @@ To edit (or define) ATP policies, you must be assigned one of the roles describe
     
 2. In the left navigation, under **Threat management**, choose **Policy** \> **Safe Links**.
     
-3. In the **Policies that apply to the entire organization** section, select **Default**, and then choose **Edit** (the Edit button resembles a pencil).<br/>![Click Edit to edit your default policy for Safe Links protection](../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>This enables you to view your list of blocked URLs. At first, you might not have any URLs listed here.<br/>![Blocked URLs list in the default Safe Links policy](../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
+3. In the **Policies that apply to the entire organization** section, select **Default**, and then choose **Edit** (the Edit button resembles a pencil).<br/>![Click Edit to edit your default policy for Safe Links protection](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>This enables you to view your list of blocked URLs. At first, you might not have any URLs listed here.<br/>![Blocked URLs list in the default Safe Links policy](../../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
   
 4. Select the **Enter a valid URL** box, type a URL, and then choose the plus sign (**+**). 
 

@@ -5,12 +5,15 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
 # Federal Financial Institutions Examination Council (FFIEC)
@@ -50,6 +53,10 @@ Azure and Office 365 SOC attestation reports.
 **Can I use Microsoft compliance with SOC standards to meet the FFIEC compliance obligations for my institution?**
 
 To help you meet these obligations, Microsoft supplies the specifics about our compliance with SOC standards as described above. However, ultimately, it is up to you to determine whether our services comply with the specific laws and regulations applicable to your institution. The FFIEC also advises that “users of audit reports or reviews should not rely solely on the information contained in the report to verify the internal control environment of the TSP. They should use additional verification and monitoring procedures as discussed more fully in the [Outsourcing Technology Booklet](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) of the FFIEC IT Examination Handbook.”
+
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [FFIEC Office 365 template](https://go.microsoft.com/fwlink/?linkid=2117912) and the [FFIEC Intune template](https://go.microsoft.com/fwlink/?linkid=2118101) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
 
 ## Resources
 

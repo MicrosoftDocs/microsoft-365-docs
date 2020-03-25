@@ -1,5 +1,7 @@
 ---
 title: "Set up Information Rights Management (IRM) in SharePoint admin center"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -31,7 +33,7 @@ After activating the Rights Management service, sign in to the SharePoint admin 
   
 1. Sign in to Office 365 as a global admin or SharePoint admin.
     
-2. Select the app launcher icon ![The app launcher icon in Office 365](media/e5aee650-c566-4100-aaad-4cc2355d909f.png) in the upper-left and choose **Admin** to open the Microsoft 365 admin center. (If you don't see the Admin tile, you don't have Office 365 administrator permissions in your organization.) 
+2. Select the app launcher icon ![The app launcher icon in Office 365](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) in the upper-left and choose **Admin** to open the Microsoft 365 admin center. (If you don't see the Admin tile, you don't have Office 365 administrator permissions in your organization.) 
     
 3. In the left pane, choose **Admin centers** \> **SharePoint**.
     
@@ -61,7 +63,10 @@ SharePoint Online supports encryption of the following file types:
 - The Office Open XML formats for the following Microsoft Office programs: Word, Excel, and PowerPoint
     
 - The XML Paper Specification (XPS) format
-    
+ 
+> [!NOTE]
+> IRM protection cannot be applied to protected documents (like digitally signed PDF files) as SharePoint needs to open the document on upload. 
+
 ## Next steps
 <a name="__toc220831191"> </a>
 
@@ -70,4 +75,3 @@ Once you've enabled IRM for SharePoint Online, you can start applying rights man
 The new OneDrive sync client for Windows now supports synchronizing IRM-protected SharePoint document libraries and OneDrive locations (as long as the IRM setting for the library isn't set to expire document access rights). For more information, or to get started deploying the new sync client, see [Deploy the new OneDrive sync client for Windows](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668).
   
 [Top of page](#introduction)  
-

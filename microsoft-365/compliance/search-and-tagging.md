@@ -1,8 +1,11 @@
 ---
 title: "Search and Tagging"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -61,13 +64,13 @@ The following table lists the properties that you can search for using a KQL key
 
 Alternatively, you can use a condition card in the Advanced eDiscovery Search tool to add a condition (for selected properties) to a search query. The following screenshot shows the conditions that can be added to a query. The **Group** column indicates whether the property applies to email, site documents, or both (indicated by the value *Common*). This column also identifies the searchable properties that are available after you run the Relevance module.
 
-![Search conditions in the Advanced eDiscovery search tool](media/AeDSearchConditions.png)
+![Search conditions in the Advanced eDiscovery search tool](../media/AeDSearchConditions.png)
 
 For more information about searchable properties, see [Keyword queries and search conditions](keyword-queries-and-search-conditions.md).
   
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
   

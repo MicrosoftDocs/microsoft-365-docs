@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Compliance Score setup"
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -59,15 +61,47 @@ To set permissions in the Microsoft 365 compliance center:
 1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com) and sign in with your global admin account.
 2. Select **Permissions** on the left navigation pane. From here, you can view roles and assign permissions.
 
+## Configure automatic Secure Score updates
+
+By default, all new tenants have [Secure Score](../security/mtp/microsoft-secure-score.md) automatic updates turned on. This means that all actions that are monitored by Secure Score will automatically update the status for the same action in Compliance Score.
+
+Your global administrator can manage this setting to turn off automatic updates for all actions, or set updates for actions individually.
+
+During public preview, you will need to go to the Microsoft Service Trust Portal (where Compliance Manger is located) to manage Secure Score updates.
+
+To manage automatic Secure Score updates, follow these steps:
+
+1. Sign in to the [Service Trust Portal](https://servicetrust.microsoft.com) with your global administrator account.
+
+2. On the Service Trust Portal top menu bar, under **More**, select **Admin** and then choose **Settings**.
+
+3. In the **Secure Score** tab, select the corresponding button to either **turn on for all actions**, **turn off for all actions**, or **set per action.**
+
+If you choose **set per action,** take these additional steps to turn on Secure Score updates for individual actions:
+
+4. Select **Compliance Manager** from the top menu (note: do not select "Compliance Manager (classic)").
+
+5. Select **Tenant Management** in the upper-right corner of your screen.
+
+6. On the **Customer Actions** pane, find your intended action with an ellipsis (**...**) under the **Affected Actions** column. Click on the ellipses and select **Edit.**
+
+7. Switch the **Secure Score continuous update** toggle switch to **On.**
+
+8. Select **Save.** Secure Score continuous monitoring is now turned on for that action.
+
+**Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager administrator can turn on automatic updates for individual actions, but not for all actions globally.
+
+Read more about [managing Secure Score updates](compliance-manager-release-notes.md#secure-score).
+
 ## Understand the Compliance Score dashboard
 
 The Compliance Score dashboard is designed to provide you an at-a-glance view of your current compliance posture.
 
-![Compliance Score - dashboard](media/compliance-score-dashboard.png "Compliance Score dashboard")
+![Compliance Score - dashboard](../media/compliance-score-dashboard.png "Compliance Score dashboard")
 
 ### Overall compliance score
 
-Your compliance score, featured prominently at the top, shows a percentage based on points achievable for completing improvement actions addressing key data protection standards and regulations. 
+Your compliance score, featured prominently at the top, shows a percentage based on points achievable for completing improvement actions addressing key data protection standards and regulations.
 
 When you come to Compliance Score for the first time, your initial score is based on the built-in Microsoft 365 data protection baseline—a set of controls that includes common industry regulations and standards. Because Compliance Score scans your system of existing Microsoft 365 solutions, it gives an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization.
 
@@ -90,14 +124,14 @@ This section gives you a more detailed view of your score in two different ways:
 
 ### Filtering your dashboard view
 
-You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, type of action, groups, or data protection categories. Filtering your view in this way will also filter the score on your dashboard, showing how many points you’ve achieved out of total possible points based on your filter criteria.
+You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, type of action, [groups of assessments you set up](working-with-compliance-manager.md#groups), or data protection categories. Filtering your view in this way will also filter the score on your dashboard, showing how many points you’ve achieved out of total possible points based on your filter criteria.
 
 To apply filters:
 
 1. Select **Filter** on the upper-right side of the dashboard.
 2. Select your filter criteria from the flyout **Filters** pane, then select **Apply**.
 
-You will see your score adjusted in real-time, and you will only see improvement actions, solutions, and score breakdown information that correspond to your filter criteria. If you sign out of Compliance Score, your filtered view remains when you sign back in.
+Once a filter is applied, you will see your score adjusted in real-time. The compliance score percentage and breakdown information, and the improvement actions and solutions, now only pertain to data covered by your filter criteria. If you sign out of Compliance Score, your filtered view remains when you sign back in.
 
 To remove filters:
 

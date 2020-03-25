@@ -1,5 +1,7 @@
 ---
 title: "Working with Microsoft Compliance Score"
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -188,7 +190,7 @@ On this page you can quickly view important information about each assessment:
 
 ### Default assessments
 
-By default, you will see the Microsoft 365 data protection baseline assessment on the assessments page. If you want to add more assessments to cover other regulations and standards, you can manage assessments in Compliance Manager. Compliance Score provides more than ten out-of-box assessments,  including ones for GDPR, CCPA, ISO 27001, ISO 27018, NIST 800-53, NIST 800-171, NIST CSF, CSA CCM, FFIEC, HIPAA/HITECH, and FedRAMP.
+By default, you will see the Microsoft 365 data protection baseline assessment on the assessments page. Compliance Score also provides several out-of-box assessments ([view the full list](compliance-score.md#templates)). If you want to add more assessments to cover additional regulations and standards, you can do this in Compliance Manager.
 
 ### Managing assessments
 

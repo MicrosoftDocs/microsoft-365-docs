@@ -5,6 +5,8 @@ keywords: security, malware, Microsoft 365, M365, security center, threat analyt
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp

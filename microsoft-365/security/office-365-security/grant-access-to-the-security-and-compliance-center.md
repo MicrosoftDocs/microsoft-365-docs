@@ -1,5 +1,7 @@
 ---
 title: "Give users access to the Office 365 Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -42,9 +44,9 @@ For more information about the different permissions you can give to users in th
 
 3. In the Security & Compliance Center, go to **Permissions**.
 
-4. From the list, choose the role group that you want to add the user to and click **Edit** ![Edit icon](../media/O365-MDM-CreatePolicy-EditIcon.gif).
+4. From the list, choose the role group that you want to add the user to and click **Edit** ![Edit icon](../../media/O365-MDM-CreatePolicy-EditIcon.gif).
 
-5. In the role group's properties page under **Members**, click **Add**![Add Icon](../media/ITPro-EAC-AddIcon.gif) and select the name of the user (or users) you want to add.
+5. In the role group's properties page under **Members**, click **Add**![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and select the name of the user (or users) you want to add.
 
 6. When you've selected all of the users you want to add to the role group, click **add-\>** and then **OK**.
 

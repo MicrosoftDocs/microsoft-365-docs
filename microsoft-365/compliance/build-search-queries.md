@@ -1,5 +1,7 @@
 ---
 title: "Build search queries"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -21,7 +23,7 @@ description: "Use keywords and conditions to narrow the search scope when search
 
 When building search queries, you can use keywords to find specific content and conditions to narrow the scope of the search to return items that are most relevant to your investigation.
 
-![Use keywords and conditions to narrow the results of a search](media/SearchQueryBox.png)
+![Use keywords and conditions to narrow the results of a search](../media/SearchQueryBox.png)
 
 ## Keyword searches
 
@@ -29,7 +31,7 @@ Type a keyword query in the **Keywords** box in the search query. You can specif
     
 Alternatively, you can select the **Show keyword list** check box and then type a keyword or keyword phrase in each row. If you do this, the keywords in each row are connected by a logical operator (represented as *c:s*) that is similar in functionality to the **OR** operator in the search query that's created. This means that items that contain any keyword in any row are included in the search results.
 
-![Use the keyword list to get statistics on each keyword in the query](media/KeywordListSearch.png)
+![Use the keyword list to get statistics on each keyword in the query](../media/KeywordListSearch.png)
 
 Why use the keyword list? You can get statistics that show how many items match each keyword in the keyword list. This can help you quickly identify the keywords that are the most (and least) effective. You can also use a keyword phrase (surrounded by parentheses) in a row in the keywords list. For more information about search statistics, see [Search statistics](search-statistics.md).
 

@@ -1,5 +1,7 @@
 ---
 title: "Create and manage inactive mailboxes in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -22,17 +24,17 @@ description: "You can create an inactive mailbox in Office 365 by applying a hol
 
 Office 365 makes it possible for you to retain the contents of deleted mailboxes. This feature is called [inactive mailboxes](inactive-mailboxes-in-office-365.md). Inactive mailboxes allow you to retain former employees' email after they leave your organization. A mailbox becomes inactive when a Litigation Hold or an Office 365 retention policy (created in the security and compliance center in Office 365 or Microsoft 365) is applied to the mailbox before the corresponding Office 365 user account is deleted. The contents of an inactive mailbox are retained for the duration of the hold that was placed on the mailbox before it was made inactive. This allows administrators, compliance officers, and records managers to use Content Search to search and export the contents of an inactive mailbox. Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
   
-> [!NOTE]
-> We've postponed the July 1, 2017 deadline for creating new In-Place Holds to make a mailbox inactive. But later this year or early next year, you won't be able to create new In-Place Holds in Exchange Online. At that time, only Litigation Holds and Office 365 retention policies can be used to create an inactive mailbox. However, existing inactive mailboxes that are on In-Place Hold will still be supported, and you can continue to manage the In-Place Holds on inactive mailboxes. This includes changing the duration of an In-Place Hold and permanently deleting an inactive mailbox by removing the In-Place Hold. 
+> [!IMPORTANT]
+> As we continue to invest in different ways to preserve mailbox content, we're announcing the retirement of In-Place Holds in the Exchange admin center. That means you should use Litigation Holds and Office 365 retention policies to create an inactive mailbox. Starting April 1, 2020 you won't be able to create new In-Place Holds in Exchange Online. But you'll still be able to change the hold duration of an In-Place Hold placed on an inactive mailbox. However, starting July 1, 2020, you won't be able to change the hold duration. You'll only be able to delete an inactive mailbox by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will still be preserved until the hold is removed. For more information about the retirement of In-Place Holds, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
   
 ## Before you begin
 
 - To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license so that a Litigation Hold or an Office 365 retention policy can be applied to the mailbox before it's deleted. Exchange Online Plan 2 licenses are part of an Office 365 Enterprise E3 and E5 subscription. If a mailbox is assigned an Exchange Online Plan 1 or Exchange Online Kiosk license (which are part of an Office 365 E1 and F1 subscription respectively), you would have to assign it a separate Exchange Online Archiving license so that a hold can be applied to the mailbox before it's deleted. For more information, see [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153).
-    
+
 - The licenses associated with the deleted Exchange Online mailbox will be available after you delete the corresponding Office 365 user account. You can then [assign those licenses to another user](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc). 
-    
+
 - If a Litigation Hold or an Office 365 retention policy (that's configured to retain or retain and then delete content) isn't applied to a mailbox before it's deleted, the contents of the mailbox won't be retained or discoverable. However, the deleted mailbox can be recovered within 30 days of deletion, but the mailbox and its contents will be permanently deleted after 30 days if it isn't recovered.
-    
+
 - For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). For more information about Office 365 retention policies, see [Overview of retention policies in Office 365](retention-policies.md).
   
 ## Create an inactive mailbox
@@ -70,13 +72,13 @@ To view a list of the inactive mailboxes in your organization:
     
 2. Click **Information governance** > **Retention**.
     
-3. On the **Retention** page, click **More**![Navigation Bar ellipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif), and then click **Inactive mailboxes**.
+3. On the **Retention** page, click **More**![Navigation Bar ellipses](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif), and then click **Inactive mailboxes**.
     
-    ![On the Retention page, click More and then click Inactive mailboxes to display a list of inactive mailboxes](media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
+    ![On the Retention page, click More and then click Inactive mailboxes to display a list of inactive mailboxes](../media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
   
     The **Inactive mailboxes** page is displayed. Note the total number of inactive mailboxes in your organization is displayed. 
     
-    ![A list of all inactive mailboxes in your organization is displayed](media/57d9d183-0c6c-4bd8-82e7-115f7b7b6de7.png)
+    ![A list of all inactive mailboxes in your organization is displayed](../media/57d9d183-0c6c-4bd8-82e7-115f7b7b6de7.png)
   
 Alternatively, you can run the following command in Exchange Online PowerShell to display the list of inactive mailboxes.
 
@@ -84,7 +86,7 @@ Alternatively, you can run the following command in Exchange Online PowerShell t
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
-You can click ![Export search results icon](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export** to view or download a CSV file that contains additional information about the inactive mailboxes in your organization. 
+You can click ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export** to view or download a CSV file that contains additional information about the inactive mailboxes in your organization. 
   
 You can also run the following command to export the list of inactive mailboxes and other information to a CSV file. In this example, the CSV file is created in the current directory.
 

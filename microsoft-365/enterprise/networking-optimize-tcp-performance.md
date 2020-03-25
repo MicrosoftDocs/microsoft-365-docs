@@ -1,5 +1,7 @@
 ---
 title: "Step 5: Optimize client and Office 365 service performance"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +21,7 @@ description: Configure TCP settings and Office 365 services for better performan
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![Phase 1-Networking](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1-Networking](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 You can increase performance by fine tuning the way that the Transmission Control Protocol (TCP) works between client devices and Office 365 services.
 

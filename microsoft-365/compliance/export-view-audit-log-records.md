@@ -1,5 +1,7 @@
 ---
 title: "Export, configure, and view audit log records"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -29,7 +31,7 @@ The first step is to search the audit log and then export the results in a comma
     
 2. Click **Export results** and select **Download all results**. 
     
-   ![Click Download all results](media/ExportAuditSearchResults.png)
+   ![Click Download all results](../media/ExportAuditSearchResults.png)
 
    This option to exports all the audit records from the audit log search you ran in step 1, and downloads the raw data from the audit log to a CSV file. 
 
@@ -37,7 +39,7 @@ The first step is to search the audit log and then export the results in a comma
 
 3. Click **Save > Save as** and save the CSV file to your local computer. It takes a while to download many search results. This is typically the case when searching for all activities or a broad date range. A message at the bottom of the windows is displayed when the CSV file is finished downloading.
  
-   ![Message displayed when the CSV file is finished downloading](media/ExportAuditSearchResultsFinish.png)
+   ![Message displayed when the CSV file is finished downloading](../media/ExportAuditSearchResultsFinish.png)
 
 > [!NOTE]
   > You can download a maximum of 50,000 entries to a CSV file from a single audit log search. If 50,000 entries are downloaded to the CSV file, you can probably assume there are more than 50,000 events that met the search criteria. To export more than this limit, try using a date range to reduce the number of audit log records. You might have to run multiple searches with smaller date ranges to export more than 50,000 entries.
@@ -50,29 +52,29 @@ The next step is to use the JSON transform feature in the Power Query Editor in 
     
 2.  On the **Data** tab, in the **Get & Transform Data** ribbon group, click **From Text/CSV**.
 
-    ![On the Data tab, click From Text/CSV](media/JSONTransformOpenCSVFile.png)
+    ![On the Data tab, click From Text/CSV](../media/JSONTransformOpenCSVFile.png)
 
 3. Open the CSV file that you downloaded in Step 1.
     
 4. In the window that's displayed, click **Transform Data**.
 
-   ![Click Transform Data](media/JSONOpenPowerQuery.png)
+   ![Click Transform Data](../media/JSONOpenPowerQuery.png)
 
 The CSV file is opened in the **Query Editor**. There are four columns: **CreationDate**, **UserIds**, **Operations**, and **AuditData**. The **AuditData** column is a JSON object that contains multiple properties. The next step is to create a column for each property in the JSON object.
     
 5. Right-click the title in the **AuditData** column, click **Transform**, and then click **JSON**. 
  
-   ![Right-click the AuditData column, click Transform, and then select JSON](media/JSONTransform.png)
+   ![Right-click the AuditData column, click Transform, and then select JSON](../media/JSONTransform.png)
 
 6. In the upper-right corner of the **AuditData** column, click the expand icon.
     
-   ![In the AuditData column, click the expand icon](media/JSONTransformExpandIcon.png)
+   ![In the AuditData column, click the expand icon](../media/JSONTransformExpandIcon.png)
 
    A partial list of the properties in the JSON objects in the **AuditData** column is displayed.
 
 7. Click **Load more** to display all properties in the JSON objects in the **AuditData** column.
 
-   ![Click Load more to display all properties in JSON object](media/JSONTransformLoadJSONProperties.png)
+   ![Click Load more to display all properties in JSON object](../media/JSONTransformLoadJSONProperties.png)
 
    You can unselect the checkbox next to any property that you don't want to include. Eliminating columns that aren't useful for your investigation is a good way to reduce the amount of data displayed in the audit log. 
 

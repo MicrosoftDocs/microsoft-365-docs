@@ -1,5 +1,7 @@
 ---
 title: "Search statistics"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -21,7 +23,7 @@ description: ""
 
 An effective way to validate your search results when investigation a data incident is to view the statistics about your search results to make sure they align with your expectations. When a search as finished running, the following high-level statistics are displayed under **Status** on the search details flyout page:
 
-![Search statisics on search details flyout page](media/SearchDetailsFlyout.png)
+![Search statisics on search details flyout page](../media/SearchDetailsFlyout.png)
 
 - The estimated number and size of items that matched the search criteria.
 
@@ -31,7 +33,7 @@ An effective way to validate your search results when investigation a data incid
 
 To view more detailed statistics, click **Statistics** on the search details flyout page. On the **Search statistics** page, you can view the search summary, the top location that contained items that matched the search results, and detailed statistics about the search query.
 
-![Search statistics dropdown list](media/SearchStatisticsDropDownList.png)
+![Search statistics dropdown list](../media/SearchStatisticsDropDownList.png)
 
 ## Summary
 

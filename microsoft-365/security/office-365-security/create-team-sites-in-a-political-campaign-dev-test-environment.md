@@ -1,5 +1,7 @@
 ---
 title: "Create team sites in a political campaign dev/test environment"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -366,9 +368,7 @@ Next, configure Azure Information Protection with a new scoped policy and sub-la
     
 2. In a separate tab of your browser, go to the Azure portal ([https://portal.azure.com](https://portal.azure.com)).
     
-3. If this is the first time you are configuring Azure Information Protection, see these [instructions](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
-    
-4. In the list pane, click **All services**, type **information**, and then click **Azure Information Protection**.
+4. In the search pane, type **information**, and then click **Azure Information Protection**.
 
 5. Click **Labels**.
     

@@ -1,8 +1,11 @@
 ---
 title: "View Process module results in Office 365 Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -16,7 +19,7 @@ description: "Learn about how to find the results of a Process Module run in Off
 "
 ---
 
-# View Process module results in Office 365 Advanced eDiscovery
+# View Process module results in Advanced eDiscovery (classic)
 
 After **Prepare** \> **Process** is initiated, you can view progress and results. 
   
@@ -27,7 +30,7 @@ After **Prepare** \> **Process** is initiated, you can view progress and results
 
 In **Prepare** \> **Process** \> **Results**, the page shows the current status (if Process is currently running) or the last Process status task status as shown in the following example.
   
-![Process module task status](media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
+![Process module task status](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
 The displayed tasks may vary depending on the Process options selected. 
   
@@ -75,7 +78,7 @@ The panes present a graphical display of imported file statistics, as follows:
     
     If the marking of **Pre-tagged** files failed, that is also noted. 
     
-![Process module summary](media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
+![Process module summary](../media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
   
 ## Process summary accumulated and last charts
 
@@ -99,11 +102,11 @@ The right bar, Processed, includes:
 
 In Prepare \> Process \> Results \> Last process errors, details of the errors in the last session or action performed are displayed.
   
-![Process module errors](media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
+![Process module errors](../media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Running the Process module and loading data](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

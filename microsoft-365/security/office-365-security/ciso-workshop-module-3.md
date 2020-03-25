@@ -1,5 +1,7 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 3:Identity, and Access Management"
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -16,8 +18,8 @@ description: "Learn more about security principles and recommendations for moder
 
 Learn how to advance zero trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter.
 
-- Download PDF summary: [Module 3: Identity and Zero Trust User Access](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
-- Download PowerPoint summary: [Module 3: Identity and Access Management](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
+- Download PDF summary: [Module 3: Identity and Zero Trust User Access](../../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
+- Download PowerPoint summary: [Module 3: Identity and Access Management](../../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
 
 ## Part 1: Identity and Zero Trust History (9:33)
 

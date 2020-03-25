@@ -1,5 +1,7 @@
 ---
 title: "Delete items from their original location"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -46,22 +48,22 @@ Perform the following steps to delete items from their original location:
  
 2. Click **Action** and then click **Delete items from original locations**.
 
-   ![Click Action and then click Delete items from original locations](media/DataInvestigationsDeleteItems1.png)
+   ![Click Action and then click Delete items from original locations](../media/DataInvestigationsDeleteItems1.png)
 
 3. On the flyout page, verify the number of items and related child documents that will be deleted, and then click **Delete**.
 
-   ![The flyout page displays the number of items and any attached documents that are selected for deletion](media/DataInvestigationsDeleteItems2.png)
+   ![The flyout page displays the number of items and any attached documents that are selected for deletion](../media/DataInvestigationsDeleteItems2.png)
 
    > [!NOTE]
    > In the previous screenshot, the number of items indicates the number of items that are selected for deletion. The number of documents indicates to total number of items including any files that are attached to a parent item. For example, if you select one email message and that message has an attached Word document, the number of items and documents displayed under **Selected documents only** would be **1 items (2 documents)**.
 
 You can track the progress of the **Delete items from original locations** job on the **Jobs** tab. Click the job to display the flyout page.
 
-![Flyout page for Delete items from original locations job](media/DataInvestigationsDeleteItems3.png)
+![Flyout page for Delete items from original locations job](../media/DataInvestigationsDeleteItems3.png)
 
 When the items in the job are deleted, the job status is set to **Successful**. The time and date of the completed job is also displayed.
 
-![Completed delete items job](media/DataInvestigationsDeleteItems4.png)
+![Completed delete items job](../media/DataInvestigationsDeleteItems4.png)
 
 > [!NOTE]
 > You may receive a status of **Partially Successful** for the **Delete items from original locations** job. There are a number of situations that result in this job status. For more information, see the [Partially successful deletions](#partially-successful-deletions) section in this article.

@@ -1,7 +1,9 @@
 ---
 title: "How content is identified for data-governance recommendations"
+f1.keywords:
+- NOCSH
 ms.author: brendonb
-author: laurawi
+author: cabailey
 manager: laurawi
 ms.date: 1/15/2019
 audience: Admin

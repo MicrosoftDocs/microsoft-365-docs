@@ -6,6 +6,8 @@ robots:  "NOINDEX,NOFOLLOW"
 ms.localizationpriority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,6 +16,7 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft GDPR
 ---
 
 # Data Protection Impact Assessments: Guidance for Data Controllers Using Microsoft Professional Services

@@ -1,5 +1,7 @@
 ---
 title: "Smart reports and insights in the Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -25,7 +27,7 @@ If you are part of your organization's Office 365 security team and have the nec
 
 Monitoring capabilities available in the Office 365 Security &amp; Compliance Center include smart reports and insights that enable your security and compliance administrators to focus on high-priority issues, such as security attacks or increased suspicious activity. In a dashboard, smart reports and insights resemble the following image:
   
-![In the Security &amp; Compliance Center, choose Reports \> Dashboard](../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+![In the Security &amp; Compliance Center, choose Reports \> Dashboard](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
 In addition to highlighting problem areas, smart reports and insights include recommendations and links to view and explore data and also take quick actions. For example, if your organization suddenly has a high number of email messages being marked as spam by end users, you might be advised to revisit your anti-spam policies to ensure the right level of protection is in place.
   
@@ -48,7 +50,7 @@ A wide variety of reports are available in the Security &amp; Compliance Center.
 |**Data governance** <br/> Information about how labels are applied, labels classified as records, label trends, and more  <br/> |In the Security &amp; Compliance Center, go to **Information governance** \> **Dashboard** <br/> |[View the data governance reports](../../compliance/view-the-data-governance-reports.md) <br/> |
 |**Threat management dashboard** (this is also referred to as the Security dashboard and the Threat Intelligence dashboard)  <br/> Threat detections, malware trends, top targeted users, details about sent and received email messages, and more  <br/> |In the Security &amp; Compliance Center, go to **Threat management** \> **Dashboard** <br/> |[Security dashboard overview](security-dashboard.md) <br/> |
 |**Threat explorer** (also referred to as Explorer) or **Real-time detections** <br/> Suspected malware detected in email and files in Office 365  <br/> |In the Security &amp; Compliance Center, go to **Threat management** \> **Explorer** or **Real-time detections**<br/> |[Threat Explorer (or real-time detections)](threat-explorer.md) <br/> |
-|**Advanced Threat Protection and email security reports** <br/> Email security and threat protection reports (including malware, spam, phishing, and spoofing reports)  <br/> |In the Security &amp; Compliance Center, go to **Reports** \> **Dashboard** <br/> |[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md) <br/><br/> [View email security reports in the Security &amp; Compliance Center](../../compliance/view-email-security-reports.md) <br/> |
+|**Advanced Threat Protection and email security reports** <br/> Email security and threat protection reports (including malware, spam, phishing, and spoofing reports)  <br/> |In the Security &amp; Compliance Center, go to **Reports** \> **Dashboard** <br/> |[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md) <br/><br/> [View email security reports in the Security &amp; Compliance Center](view-email-security-reports.md) <br/> |
 |**Mail flow** <br/> Information about sent and received email messages, recent alerts, top senders and recipients, email forwarding reports, and more  <br/> |In the Security &amp; Compliance Center, go to **Mail flow** \> **Dashboard** <br/> |[Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md)<br/> |
 |**GDPR compliance** <br/> Information about GDPR compliance, including links to data subjects, label trends, and active &amp; closed cases  <br/> |In the Security &amp; Compliance Center, go to **Data privacy** \> **GDPR dashboard** <br/> |[Office 365 Information Protection for GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
 |**Audit log** <br/> Information about Office 365 activities, users, files or folders, and more  <br/> |In the Security &amp; Compliance Center, go to **Search &amp; investigation** \> **Audit log search** <br/> |[Search the audit log in the Office 365 Security &amp; Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |

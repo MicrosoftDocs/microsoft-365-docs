@@ -1,5 +1,7 @@
 ---
 title: "Download export jobs from a data investigation"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -37,7 +39,7 @@ The next step is to obtain the shared access signature (SAS) URL that's generate
 
 3. On the flyout page, under **Locations**, copy the SAS URL that's displayed. If necessary, you can save it to a file so you can access it in Step 3.
  
-   ![Copy the SAS URL displayed under Locations](media/eDiscoExportJob.png)
+   ![Copy the SAS URL displayed under Locations](../media/eDiscoExportJob.png)
 
 ## Step 3: Connect to the Azure Storage location
 
@@ -47,15 +49,15 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
 2. Click the **Add account** icon. Alternatively, you can right-click **Storage Accounts**.
 
-   ![Click the Add account icon](media/AzureStorageConnect.png)
+   ![Click the Add account icon](../media/AzureStorageConnect.png)
 
 3.  On the **Connect to Azure Storage** page, click **Use a shared access signature (SAS) URI** and then click **Next**.
 
-    ![Click Use a shared access signature (SAS) URI and then click Next](media/AzureStorageConnect2.png)
+    ![Click Use a shared access signature (SAS) URI and then click Next](../media/AzureStorageConnect2.png)
 
 4.  On the **Attach with SAS URI** page, click in the URI box, and then paste the SAS URL that you obtained in Step 2. 
 
-    ![Paste the SAS URL in the URI box](media/AzureStorageConnect3.png)
+    ![Paste the SAS URL in the URI box](../media/AzureStorageConnect3.png)
 
     Notice that a portion of the SAS URL is displayed in the **Display name** box. This will be used as the display name of the container that's created under the **Storage accounts** after you connect to the storage location. This name consists of the ID of the data investigation is from and a unique identifier. You can keep the default display name or change it. If you change it, the display name must be unique.
 
@@ -63,13 +65,13 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
     The **Connection summary** page is displayed.
    
-    ![Click Connect on the Connection summary page to connect to the Azure Storage location](media/AzureStorageConnect4.png)
+    ![Click Connect on the Connection summary page to connect to the Azure Storage location](../media/AzureStorageConnect4.png)
 
 6. On the **Connection summary** page, review the connection information, and then click **Connect**. 
 
     The **Blob containers** node (under **Storage Accounts** > **(Attached Containers)** \> is opened. 
 
-    ![Export jobs in the Blobs containers node](media/AzureStorageConnect5.png)
+    ![Export jobs in the Blobs containers node](../media/AzureStorageConnect5.png)
 
     It contains a container named with the display name from step 4. This container contains a folder for each export job that you've created. These folders are named with an ID that corresponds to the ID of the export job. You can find these export IDs (and the name of the export) under **Support information** on the flyout page for each **Preparing data for export** job listed on the **Jobs** tab.
 
@@ -77,7 +79,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
    A list of folders and export reports is displayed.
    
-    ![The export folder contains exported files and export reports](media/AzureStorageConnect6.png)
+    ![The export folder contains exported files and export reports](../media/AzureStorageConnect6.png)
 
    The export job folder contains the following items. The actual items in the export folder are determined by the export options configured when the export job was created. For more information, see [Export documents from a review set](export-documents-from-review-set.md).
 
@@ -101,7 +103,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
     The Azure Storage Explorer starts the export process. The status of the downloading the exported items is displayed in the **Activities** pane. A message is displayed when the download is finished.
 
-    ![A message is displayed when the download is finished](media/AzureStorageConnect8.png)
+    ![A message is displayed when the download is finished](../media/AzureStorageConnect8.png)
 
 > [!NOTE]
 > Instead of downloading the entire export job, you can select specific items to download. And instead of downloading items, you can double-click an item to view it.

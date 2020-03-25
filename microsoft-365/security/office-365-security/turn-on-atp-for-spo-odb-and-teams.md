@@ -1,5 +1,7 @@
 ---
 title: "Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -41,11 +43,11 @@ To define (or edit) ATP policies, you must be assigned an appropriate role. Some
 
 2. In the Office 365 Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Safe Attachments**.
 
-   ![In the Security & Compliance Center, choose Threat management \> Policy](../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+   ![In the Security & Compliance Center, choose Threat management \> Policy](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
 
 3. Select **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams**.
 
-   ![Turn on Advanced Threat Protection for SharePoint Online, OneDrive for Business, and Microsoft Teams](../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+   ![Turn on Advanced Threat Protection for SharePoint Online, OneDrive for Business, and Microsoft Teams](../../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
 
 4. Click **Save**.
 

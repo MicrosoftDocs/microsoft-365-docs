@@ -1,5 +1,7 @@
 ---
 title: "EOP general FAQ"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -21,8 +23,6 @@ Here we answer the most common general questions about the Microsoft Exchange On
 - [Delegated administration FAQ](delegated-administration-faq.md)
 
 - [Anti-spam protection FAQ](anti-spam-protection-faq.md)
-
-- [Safe sender and blocked sender lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
 
 - [Quarantine FAQ](quarantine-faq.md)
 

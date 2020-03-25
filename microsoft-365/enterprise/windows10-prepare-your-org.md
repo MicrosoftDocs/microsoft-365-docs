@@ -9,6 +9,8 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
+f1.keywords:
+- NOCSH
 ms.author: josephd
 ---
 
@@ -16,7 +18,7 @@ ms.author: josephd
 
 *This article applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Before upgrading your devices to Windows 10 Enterprise, consider the following:
 
@@ -62,7 +64,7 @@ As an interim checkpoint, you can see the [exit criteria](windows10-exit-criteri
 
 |||
 |:-------|:-----|
-|![Step 2](./media/stepnumbers/Step2.png)| [Deploy Windows 10 Enterprise for existing devices as an in-place upgrade](windows10-deploy-inplaceupgrade.md) |
+|![Step 2](../media/stepnumbers/Step2.png)| [Deploy Windows 10 Enterprise for existing devices as an in-place upgrade](windows10-deploy-inplaceupgrade.md) |
 
 
 

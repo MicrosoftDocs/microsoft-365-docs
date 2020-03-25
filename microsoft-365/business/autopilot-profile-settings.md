@@ -1,5 +1,7 @@
 ---
 title: "About AutoPilot Profile settings"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv

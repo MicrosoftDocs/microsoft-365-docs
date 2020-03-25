@@ -1,5 +1,7 @@
 ---
 title: "Secure SharePoint Online sites in a dev/test environment"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -22,7 +24,7 @@ description: "Summary: Create sensitive and highly confidential SharePoint Onlin
 
 This article provides step-by-step instructions to create a dev/test environment that includes the sensitive and highly confidential SharePoint sites for the [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md) solution.
 
-![Sensitive and highly confidential SharePoint Online sites for files.](../media/sensitive-highly-confidential-sp-sites-dev-test.png)
+![Sensitive and highly confidential SharePoint Online sites for files.](../../media/sensitive-highly-confidential-sp-sites-dev-test.png)
 
 Use this dev/test environment to experiment and fine-tune settings for your specific needs before deploying these types of team sites in production.
 
@@ -302,15 +304,13 @@ Files in the documents section of the Company Strategy SharePoint team site are 
 
 Here is the resulting configuration for the Marketing Campaigns and Company Strategy team sites.
 
-![Sensitive and highly confidential SharePoint Online sites for files.](../media/sensitive-highly-confidential-sp-sites-dev-test.png)
+![Sensitive and highly confidential SharePoint Online sites for files.](../../media/sensitive-highly-confidential-sp-sites-dev-test.png)
 
 ## Next step
 
 When you are ready for production deployment of secure SharePoint Online sites, see [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md) for detailed information and links to step-by-step deployment articles.
 
 ## See Also
-
-[Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md)
 
 [Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

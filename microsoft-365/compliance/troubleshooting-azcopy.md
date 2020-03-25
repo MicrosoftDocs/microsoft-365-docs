@@ -1,5 +1,7 @@
 ---
 title: "Troubleshoot AzCopy in Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -21,7 +23,7 @@ description: ""
 
 When loading non-Office 365 data or documents for error remediation in Advanced eDiscovery, the user interface supplies an Azure AzCopy command that contains parameters with the location of where the files that you want to upload are stored and the Azure storage location that the files will be uploaded to. To upload your documents, you copy this command and then run it in a Command Prompt on your local computer.  The follow screenshot shows an example of an AzCopy command:
 
-![Upload non-Office 365 files](media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
+![Upload non-Office 365 files](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
 Usually the command that's provided works when you run it. However, there may be cases when the command that's displayed will not run successfully. Here's a few possible reasons.
 

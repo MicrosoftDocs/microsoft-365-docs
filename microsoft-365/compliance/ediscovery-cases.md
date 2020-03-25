@@ -1,5 +1,7 @@
 ---
-title: "eDiscovery cases in the Security & Compliance Center"
+title: "Manage eDiscovery cases in the Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
-description: "Use the Security & Compliance Center to create and manage eDiscovery cases in your organization. You can assign members to the case, place content locations on hold, run Content Searches associated with the case, and the export the search results. You can also prepare case data for further analysis in Advanced eDiscovery."
+description: "Use the Security & Compliance Center to create and manage eDiscovery cases in your organization. You can assign members to the case, place content locations on hold, run Content Searches associated with the case, and the export the search results. You can also prepare case data for further analysis in Office 365 Advanced eDiscovery."
 ---
 
-# eDiscovery cases in the Security & Compliance Center
+# Manage eDiscovery cases in the Security & Compliance Center
 
 You can use eDiscovery cases in the compliance center in Office 365 and Microsoft 365 to control who can create, access, and manage eDiscovery cases in your organization. If your organization has an Office 365 E5 subscription, you can also use eDiscovery cases to analyze search results by using Office 365 Advanced eDiscovery.
   
 An eDiscovery case allows you to add members to a case, control what types of actions that specific case members can perform, place a hold on content locations relevant to a legal case, and associate multiple Content Searches with a single case. You can also export the results of any Content Search that is associated with a case or prepare search results for analysis in Advanced eDiscovery. eDiscovery cases are a good way to limit who has access to Content Searches and search results for a specific legal case in your organization.
   
-Use the following workflow to set up and use eDiscovery cases in the Security & Compliance Center and Advanced eDiscovery.
+Use the following workflow to set-up and use eDiscovery cases in the Security & Compliance Center and Advanced eDiscovery.
 
 [Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
@@ -52,7 +54,10 @@ Use the following workflow to set up and use eDiscovery cases in the Security & 
 
 The first step is to assign the appropriate eDiscovery-related permissions to people so you can add them to an eDiscovery case in Step 2. You have to be a member of the Organization Management role group (or be assigned the Role Management role) in the Security & Compliance Center to assign eDiscovery permissions. The following list describes the eDiscovery-related role groups in the Security & Compliance Center. 
   
-- **Reviewer.** This role group has the most restrictive eDiscovery-related permissions. The primary purpose of this role group is to allow members to view and access case data in Office 365 Advanced eDiscovery. Members of this group can only see and open the list of the cases on the **eDiscovery** page in the Security & Compliance Center that they are members of. After the user accesses a case in the security and compliance center, they can click **Switch to Advanced eDiscovery** to access and analyze the case data in Advanced eDiscovery. They can't create cases, add members to a case, create holds, create searches, preview search results, export search results, or prepare results for Advanced eDiscovery. 
+- **Reviewer.** This role group has the most restrictive eDiscovery-related permissions. The primary purpose of this role group is to allow members to view and access case data in [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md) (also known as *Advanced eDiscovery v1*). Members of this group can only see and open the list of the cases on the **eDiscovery** page in the Security & Compliance Center that they are members of. After the user accesses a case in the security and compliance center, they can click **Switch to Advanced eDiscovery** to access and analyze the case data in Advanced eDiscovery. They can't create cases, add members to a case, create holds, create searches, preview search results, export search results, or prepare results for Advanced eDiscovery. 
+
+   > [!NOTE]
+   > At this time, users who are member of the Reviewer role group can't access data in [Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md) (also known as *Advanced eDiscovery v2*). To add members to a case in Advanced eDiscovery v2 so that they can review case data, a user must be a member of the eDiscovery Manager role group.
     
 - **eDiscovery Manager.** Members of this role group can create and manage eDiscovery cases. They can add and remove members, place content locations on hold, create and edit Content Searches associated with a case, export the results of a Content Search, and prepare search results for analysis in Advanced eDiscovery. There are two subgroups in this role group. The difference between these subgroups is based on scope.
     
@@ -67,9 +72,6 @@ The first step is to assign the appropriate eDiscovery-related permissions to pe
     - Access case data in Advanced eDiscovery for any case in the organization.
     
     See the [More information](#more-information) section for reasons why you may want an eDiscovery Administrator in your organization. 
-    
-> [!IMPORTANT]
-> If a person isn't a member of one of these eDiscovery-related role groups, or isn't a member of a role group that's assigned the Reviewer role, you can't add them as a member of an eDiscovery case. 
 
 For more information about eDiscovery permissions, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
@@ -81,13 +83,13 @@ For more information about eDiscovery permissions, see [Assign eDiscovery permis
     
 3. In the Security & Compliance Center, click **Permissions**, and then do one of the following based on the eDiscovery permissions that you want to assign.
     
-    - To assign Reviewer permissions, select the **Reviewer** role group, and then next to **Members**, click **Edit**. Click **Choose members**, click **Edit**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**, select the user that you want to add to the Reviewer role group, and then click **Add**.
+    - To assign Reviewer permissions, select the **Reviewer** role group, and then next to **Members**, click **Edit**. Click **Choose members**, click **Edit**, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add**, select the user that you want to add to the Reviewer role group, and then click **Add**.
     
-    - To assign eDiscovery Manager permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Manager**, click **Edit**. Click **Choose eDiscovery Manager**, click **Edit**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) ** Add **, select the user that you want to add as an eDiscovery Manager, and then click **Add**.
+    - To assign eDiscovery Manager permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Manager**, click **Edit**. Click **Choose eDiscovery Manager**, click **Edit**, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) ** Add **, select the user that you want to add as an eDiscovery Manager, and then click **Add**.
     
-    - To assign eDiscovery Administrator permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Administrator**, click **Edit**. Click **Choose eDiscovery Administrator**, click **Edit**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**, select the user that you want to add as an eDiscovery Administrator, and then click **Add**.
+    - To assign eDiscovery Administrator permissions, select the **eDiscovery Manager** role group, and then next to **eDiscovery Administrator**, click **Edit**. Click **Choose eDiscovery Administrator**, click **Edit**, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add**, select the user that you want to add as an eDiscovery Administrator, and then click **Add**.
     
-4. After you've added all the users, click **Done**, click **Save** to save the changes to the role group, and then click **Close**.
+4. After you have added all the users, click **Done**, click **Save** to save the changes to the role group, and then click **Close**.
 
 ## Step 2: Create a new case
 
@@ -97,42 +99,41 @@ The next step is to create a eDiscovery case. You must be a member of the eDisco
     
 2. Sign in to Office 365 using your work or school account.
     
-3. In the Security & Compliance Center, click **eDiscovery** \> **eDiscovery**, and then click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Create a case**.
+3. In the Security & Compliance Center, click **eDiscovery** \> **eDiscovery**, and then click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Create a case**.
     
 4. On the **New Case** page, give the case a name, type an optional description, and then click **Save**. The case name must be unique in your organization.
     
-    ![Create a case](media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
+    ![Create a case](../media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
   
     The new case is displayed in the list of cases on the **eDiscovery** page. You can hover the cursor over a case name to display information about the case, including the status of the case (**Active** or **Closed**), the description of the case (that was created in the previous step), and when the case was changed last and who changed it.
     
     > [!TIP]
     > After you create a new case, you can rename it anytime. Just click the name of the case on the **eDiscovery** page. On the **Manage this case** flyout page, change the name displayed in the box under **Name**, and then save the change. 
-  
 ## Step 3: Add members to a case
 
-After you create a case, the next step is to add members to the case. As previous explained, only users who are members of the Reviewer or eDiscovery Manager role groups can be added as members of the case. The eDiscovery Manager who created the case is automatically added as a member.
+After you create a case, the next step is to add members to the case. The eDiscovery Manager who created the case is automatically added as a member. As previously explained, members have to assign the appropriate eDiscovery permissions so they can access the case after you add them.
   
 1. In the Security & Compliance Center, click **eDiscovery** \> **eDiscovery** to display the list of cases in your organization. 
-    
+
 2. Click the name of the case that you want to add members to.
-    
+
     The **Manage this case** flyout page is displayed. 
-    
-    ![Manage a case flyout page](media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
+
+    ![Manage a case flyout page](../media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
   
-3. Under **Manage members**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add** to add members to the case. 
-    
-    You can also choose to add a role group to the case. Under **Manage role groups**, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add**.
-    
+3. Under **Manage members**, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add** to add members to the case. 
+
+    You can also choose to add a role group to the case. Under **Manage role groups**, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add**.
+
     > [!NOTE]
     > Role groups control who can assign members to an eDiscovery case. That means you can only assign the role groups that you are a member of to a case.
-    
+
 4. In the list of people or role groups that can be added as members of the case, click the check box next to the names of the people or role groups that you want to add.
-    
+
     > [!TIP]
     > If you have a large list of people who can added as members, use the **Search** box to search for a specific person in the list. 
   
-5. After you've selected the people or role groups to add as members of the group, click **Add**.
+5. After you select the people or role groups to add as members of the group, click **Add**.
     
     In **Manage this case**, click **Save** to save the new list of case members. 
     
@@ -140,11 +141,11 @@ After you create a case, the next step is to add members to the case. As previou
   
 ## Step 4: Place content locations on hold
 
-You can use an eDiscovery case to create holds to preserve content that might be relevant to the case. You can place a hold on the mailboxes and OneDrive for Business sites of people who are custodians in the case. You can also place a hold on the group mailbox, SharePoint site, and OneDrive for Business site for an Office 365 Group. Similarly, you can place a hold on the mailbox and site that are associated with Microsoft Teams. When you place content locations on hold, content is held until you remove the hold from the content location or until you delete the hold.
+You can use an eDiscovery case to create holds to preserve content that might be relevant to the case. You can place a hold on the mailboxes and OneDrive for Business sites of people who are custodians in the case. You can also place a hold on the group mailbox, SharePoint site, and OneDrive for Business site for an Office 365 Group. Similarly, you can place a hold on the mailboxes and sites that are associated with Microsoft Teams or Yammer Groups. When you place content locations on hold, content is held until you remove the hold from the content location or until you delete the hold.
 
 > [!NOTE]
 > After you place a content location on hold, it takes up to 24 hours for the hold to take effect. 
->   
+
 When you create a hold, you have the following options to scope the content that is held in the specified content locations:
   
 - You create an infinite hold where all content is placed on hold. Alternatively, you can create a query-based hold where only content that matches a search query is placed on hold.
@@ -162,13 +163,13 @@ To create a hold for an eDiscovery case:
     
 3. On the **Home** page for the case, click the **Hold** tab. 
     
-    ![Click the Hold tab](media/3fef2db4-36de-4517-a34d-82f47b82d9bf.png)
+    ![Click the Hold tab](../media/3fef2db4-36de-4517-a34d-82f47b82d9bf.png)
   
-4. On the **Hold** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Create**.
+4. On the **Hold** page, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Create**.
     
 5. On the **Name your hold** page, give the hold a name. The name of the hold must be unique in your organization. 
     
-    ![Give your hold a unique name](media/7e15ea63-abd1-4f14-a29c-7ecfb9571d2c.png)
+    ![Give your hold a unique name](../media/7e15ea63-abd1-4f14-a29c-7ecfb9571d2c.png)
   
 6. (Optional) In the **Description** box, add a description of the hold. 
     
@@ -176,32 +177,32 @@ To create a hold for an eDiscovery case:
     
 8. Choose the content locations that you want to place on hold. You can place mailboxes, sites, and public folders on hold.
     
-    ![Choose the content locations to place on hold](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
+    ![Choose the content locations to place on hold](../media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **Exchange email.** Click **Choose users, groups, or teams** and then click **Choose users, groups, or teams** again. to specify mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for an Office 365 Group or a Microsoft Team. Select the user, group, team check box, click **Choose**, and then click **Done**.
+   a. **Exchange email** - Click **Choose users, groups, or teams** and then click **Choose users, groups, or teams** again. to specify mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for a Microsoft Team, a Yammer Group, or an Office 365 Group. Select the user, group, team check box, click **Choose**, and then click **Done**.
     
     > [!NOTE]
     > When you click **Choose users, groups, or teams** to specify mailboxes to place on hold, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add people to this list, type a name (a minimum of 3 characters) in the search box. 
-  
-   b. **SharePoint Sites.** Click **Choose sites** and then click **Choose sites** again to specify SharePoint and OneDrive for Business sites to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for an Office 365 Group or a Microsoft Team. Click **Choose**, and then click **Done**.
+
+   b. **SharePoint sites** - Click **Choose sites** and then click **Choose sites** again to specify SharePoint and OneDrive for Business sites to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft Team, a Yammer Group, or a, Office 365 Group. Click **Choose**, and then click **Done**.
     
-    See the [More information](#more-information) section for tips on putting Office 365 Groups and Microsoft Teams on hold. 
+    See the [More information](#more-information) section for tips on putting Microsoft Teams, Yammer Groups, and Office 365 Groups on hold. 
     
     > [!NOTE]
     > In the rare case that a person's user principal name (UPN) is changed, the URL for their OneDrive account will also be changed to incorporate the new UPN. If this happens, you'll have to modify the hold by adding the user's new OneDrive URL and removing the old one. 
   
-   c. **Exchange public folders.** Move the toggle switch ![Toggle control](media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to the **All** position to put all public folders in your Exchange Online organization on hold. You can't choose specific public folders to put on hold. Leave the toggle switch set to **None** if you don't want to put a hold on public folders.
+   c. **Exchange public folders.** Move the toggle switch ![Toggle control](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to the **All** position to put all public folders in your Exchange Online organization on hold. You can't choose specific public folders to put on hold. Leave the toggle switch set to **None** if you don't want to put a hold on public folders.
     
 9. When you're done adding content locations to the hold, click **Next**.
     
 10. To create a query-based hold with conditions, complete the following. Otherwise, click **Next**
     
-    ![Create a query-based hold with conditions](media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
+    ![Create a query-based hold with conditions](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
     
        a. In the box under **Keywords**, type a search query in the box so that only the content that meets the search criteria is placed on hold. You can specify keywords, message properties, or document properties, such as file names. You can also use more complex queries that use a Boolean operator, such as **AND**, **OR**, or **NOT**. If you leave the keyword box empty, then all content located in the specified content locations will be placed on hold.
     
-    b. Click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **Add conditions** to add one or more conditions to narrow the search query for the hold. Each condition adds a clause to the KQL search query that is created and run when you create the hold. For example, you can specify a date range so that email or site documents that were created within the date ranged are placed on hold. A condition is logically connected to the keyword query (specified in the keyword box) by the **AND** operator. That means that items have to satisfy both the keyword query and the condition to be placed on hold.
+    b. Click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add conditions** to add one or more conditions to narrow the search query for the hold. Each condition adds a clause to the KQL search query that is created and run when you create the hold. For example, you can specify a date range so that email or site documents that were created within the date ranged are placed on hold. A condition is logically connected to the keyword query (specified in the keyword box) by the **AND** operator. That means that items have to satisfy both the keyword query and the condition to be placed on hold.
 
     For more information about creating a search query and using conditions, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
     
@@ -213,7 +214,7 @@ To create a hold for an eDiscovery case:
 
 After a while, information about the new hold is displayed in the details pane on the **Holds** page for the selected hold. This information includes the number of mailboxes and sites on hold and statistics about the content that was placed on hold, such as the total number and size of items placed on hold and the last time the hold statistics were calculated. These hold statistics help you identify how much content that's related to the eDiscovery case is being held. 
   
-![Hold statistics](media/575cfe0a-9210-4ae4-8df8-65665d66712e.png)
+![Hold statistics](../media/575cfe0a-9210-4ae4-8df8-65665d66712e.png)
   
 Keep the following things in mind about hold statistics:
   
@@ -221,7 +222,7 @@ Keep the following things in mind about hold statistics:
     
 - The number of items on hold also includes unindexed items found in the content locations. If you create a query-based hold, all unindexed items in the content locations are placed on hold. This includes unindexed items that don't match the search criteria of a query-based hold and unindexed items that might fall outside of a date range condition. This is different than what happens when you run a Content Search, in which unindexed items that don't match the search query or are excluded by a date range condition aren't included in the search results. For more information about unindexed items, see [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md).
     
-- You can get the latest hold statistics by clicking **Update statistics** to re-run a search estimate that calculates the current number of items on hold. If necessary, click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) in the toolbar to update the hold statistics in the details pane. 
+- You can get the latest hold statistics by clicking **Update statistics** to re-run a search estimate that calculates the current number of items on hold. If necessary, click **Refresh**![Refresh icon](../media/O365-MDM-Policy-RefreshIcon.gif) in the toolbar to update the hold statistics in the details pane. 
     
 - It's normal for the number of items on hold to increase over time because users whose mailbox or site is on hold are typically sending or receiving new email message and creating new SharePoint and OneDrive for Business documents.
     
@@ -238,19 +239,19 @@ After an eDiscovery case is created and any custodians related to the case are p
     
 3. On the **Home** page for the case, click the **Search** tab. 
     
-    ![Search tab](media/2e15fe32-1a2e-4588-ad0b-5d96f77cece9.png)
+    ![Search tab](../media/2e15fe32-1a2e-4588-ad0b-5d96f77cece9.png)
   
-4. On the **Search** page, click ![Add Icon](media/ITPro-EAC-AddIcon.gif) **New search**. 
+4. On the **Search** page, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **New search**. 
     
 5. On the **New search** page, you can add keywords and conditions to create the search query. 
     
-    ![New search](media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
+    ![New search](../media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
 6. You can specify keywords, message properties, such as sent and received dates, or document properties, such as file names or the date that a document was last changed. You can use more complex queries that use a Boolean operator, such as **AND**, **OR**, **NOT**, **NEAR**, or **ONEAR**. You can also search for sensitive information (such as social security numbers) in documents, or search for documents that have been shared externally. If you leave the keyword box empty, all content located in the specified content locations will be included in the search results. 
     
 7. You can click the **Show keyword list** check box and the type a keyword in each row. If you do this, the keywords on each row are connected by the **OR** operator in the search query that's created. 
     
-    ![Keyword list](media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
+    ![Keyword list](../media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
   
     Why use the keyword list? You can get statistics that show how many items match each keyword. This can help you quickly identify which keywords are the most (and least) effective. You can also use a keyword phrase (surrounded by parentheses) in a row. For more information about search statistics, see [View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md).
     
@@ -262,15 +263,15 @@ After an eDiscovery case is created and any custodians related to the case are p
     
 9. Under **Locations: locations on hold**, choose the content locations that you want to search. You can search mailboxes, sites, and public folders in the same search.
     
-    ![Locations, locations on hold](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
+    ![Locations, locations on hold](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **All locations.** Select this option to search all content locations in your organization. When you select this option, you can choose to search all Exchange mailboxes (which includes the mailboxes for all Office 365 Groups and Microsoft Teams), all SharePoint and OneDrive for Business sites (which includes the sites for all Office 365 Groups and Microsoft Teams), and all public folders.
+    - **All locations** - Select this option to search all content locations in your organization. When you select this option, you can choose to search all Exchange mailboxes (which includes the mailboxes for all Microsoft Teams, Yammer Groups, and Office 365 Groups), all SharePoint and OneDrive for Business sites (which includes the sites for all Microsoft Teams, Yammer Groups, and Office 365 Groups), and all public folders.
     
     - **All locations on hold.** Select this option to search all the content locations that have been placed on hold in the case. If the case contains multiple holds, the content locations from all holds will be searched when you select this option. Additionally, if a content location was placed on a query-based hold, only the items that are on hold will be searched when you run the content search that you're creating in this step. For example, if a user was placed on query-based case hold that preserves items that were sent or created before a specific date, only those items would be searched by using the search criteria of the content search. This is accomplished by connecting the case hold query and the content search query by an **AND** operator. See the [More information](#more-information) section at the end of this article for more details about searching case content. 
     
     - **Specific locations.** Select this option to select the mailboxes and sites that you want to search. When you select this option and click **Modify**, a list of locations appears. You can choose to search any or all users, groups, teams, or site locations.
     
-      ![Select specific locations](media/97469b15-7be1-4aee-be27-f8343636152c.png)
+      ![Select specific locations](../media/97469b15-7be1-4aee-be27-f8343636152c.png)
   
       You can also choose to search all public folders in your organization, but if you select this option and search any content location that's on hold, any query from a query-based case hold won't be applied to the search query. In other words, all content in a location is searched, not just the content that is preserved by a query-based case hold.
     
@@ -280,9 +281,9 @@ After an eDiscovery case is created and any custodians related to the case are p
     
       - When you click **Choose users, groups, or teams** to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, click **Choose users, groups, or teams**, type a name (a minimum of 3 characters) in the search box, select the check box next to the name, and then click **Choose**. 
     
-      - You can add inactive mailboxes, Office 365 Groups, Microsoft Teams, and distribution groups to the list of mailboxes to search. Dynamic distribution groups aren't supported. If you add Office 365 Groups or Microsoft Teams, the group or team mailbox is searched. The mailboxes of the group members aren't searched.
+      - You can add inactive mailboxes, Microsoft Teams, Yammer Groups, Office 365 Groups, and distribution groups to the list of mailboxes to search. Dynamic distribution groups aren't supported. If you add Microsoft Teams, Yammer Groups, or Office 365 Groups, the group or team mailbox is searched; the mailboxes of the group members aren't searched.
     
-      - To add sites click **Choose sites**, click **Choose sites** again, and then type the URL for each site that you want to search. You can also add the URL for the SharePoint site for Office 365 Groups and Microsoft Teams. 
+      - To add sites click **Choose sites**, click **Choose sites** again, and then type the URL for each site that you want to search. You can also add the URL for the SharePoint site for a Microsoft Team, a Yammer Group, or an Office 365 Group. 
     
 10. After you select the content locations to search, click **Done** and then click **Save**.
     
@@ -294,7 +295,7 @@ After an eDiscovery case is created and any custodians related to the case are p
     
     The search begins. After a while, an estimate of the search results is displayed in the details pane. The estimate includes the total size and number of items that matched the search criteria. The search estimate also includes the number of unindexed items in the content locations that were searched. The number of unindexed items that don't meet the search criteria will be included in the search statistics displayed in the details pane. If an unindexed item matches the search query (because other message or document properties meet the search criteria), it won't be included in the estimated number of unindexed items. If an unindexed item is excluded by the search criteria, it also won't be included in the estimate of unindexed items.
     
-  After the search is completed, you can preview the search results. If necessary, click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane. 
+  After the search is completed, you can preview the search results. If necessary, click **Refresh**![Refresh icon](../media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane. 
     
 ## Step 6: Export the results of a Content Search associated with a case
 
@@ -310,11 +311,11 @@ You can export the results of a [single search associated with a case](#export-t
     
 3. On the **Home** page for the case, click **Search**.
     
-4. In the list of searches for the case, click the search that you want to export search results from, click ![Export search results icon](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**, and then select **Export results** from the drop-down list. 
+4. In the list of searches for the case, click the search that you want to export search results from, click ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**, and then select **Export results** from the drop-down list. 
     
     The **Export results** page is displayed. 
     
-    ![Export results page](media/ab0bb46d-310b-4374-8644-717146df6676.png)
+    ![Export results page](../media/ab0bb46d-310b-4374-8644-717146df6676.png)
   
     The workflow to export the results from a Content Search associated with a case is that same as exporting the search results for a search on the **Content search** page. For step-by-step instructions, see [Export Content Search results](export-search-results.md).
     
@@ -323,9 +324,9 @@ You can export the results of a [single search associated with a case](#export-t
   
 5. Click the **Export** tab to display the list of export jobs that exist for that case. 
     
-    ![Export tab](media/1b84c45e-4ec9-4ecd-9e07-eaf8fc4cc307.png)
+    ![Export tab](../media/1b84c45e-4ec9-4ecd-9e07-eaf8fc4cc307.png)
   
-    You might have to click **Refresh**![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the list of export jobs so that it shows the export job that you created. Export jobs have the same name as the corresponding Content Search with **_Export** appended to the end of search name. 
+    You might have to click **Refresh**![Refresh icon](../media/O365-MDM-Policy-RefreshIcon.gif) to update the list of export jobs so that it shows the export job that you created. Export jobs have the same name as the corresponding Content Search with **_Export** appended to the end of search name. 
     
 6. Click the export job that you just created to display status information in the details pane. This information includes the percentage of items that have been transferred to an Azure Storage area in the Microsoft cloud.
     
@@ -351,10 +352,10 @@ As an alternative to exporting the results of a single Content Search associated
   
 5. After you select the searches, the **Bulk actions** page appears. 
     
-    ![On the Bulk Actions page, click Export results](media/f34e3707-a9c1-494f-91a4-da1165aa730a.png)
+    ![On the Bulk Actions page, click Export results](../media/f34e3707-a9c1-494f-91a4-da1165aa730a.png)
   
     
-6. Click ![Export search results icon](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export results**.
+6. Click ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export results**.
 
 7. On the **Export results** page, give the export a unique name, select output options, and choose how your content will be exported. Click **Export**.
     
@@ -365,9 +366,9 @@ As an alternative to exporting the results of a single Content Search associated
   
 8. After you start the export, click the **Export** tab to display the list of export jobs for that case. 
     
-    ![Export tab, multiple searches](media/b9505e1b-559f-4a8c-96b3-a3f734753926.png)
+    ![Export tab, multiple searches](../media/b9505e1b-559f-4a8c-96b3-a3f734753926.png)
   
-    You might have to click **Refresh** ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) to update the list of export jobs to display the export job that you created. The searches that were included in the export job are listed in the **Searches** column. 
+    You might have to click **Refresh** ![Refresh icon](../media/O365-MDM-Policy-RefreshIcon.gif) to update the list of export jobs to display the export job that you created. The searches that were included in the export job are listed in the **Searches** column. 
     
 8. Click the export job that you just created to display status information in the details pane. This information includes the percentage of items that have been transferred to an Azure Storage area in the Microsoft cloud.
     
@@ -406,9 +407,9 @@ When you prepare search results for Advanced eDiscovery, optical character recog
     
 3. On the **Home** page for the case, click **Search**, and then select the search.
     
-4. In the details pane, click ![Export search results icon](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**, and then click **Prepare for Advanced eDiscovery**.
+4. In the details pane, click ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**, and then click **Prepare for Advanced eDiscovery**.
     
-    ![Prepare your results for Advanced eDiscovery](media/b6548ff0-a6e9-42b1-9ae4-5c15146f5690.png)
+    ![Prepare your results for Advanced eDiscovery](../media/b6548ff0-a6e9-42b1-9ae4-5c15146f5690.png)
   
 5. On the **Prepare for Advanced eDiscovery** page, choose to prepare one of the following: 
     
@@ -438,11 +439,11 @@ To go to a case in Advanced eDiscovery:
     
 3. On the **Home** page for the case, click **Switch to Advanced eDiscovery**.
     
-    ![Select Switch to Advanced eDiscovery](media/d7e31558-e79c-4782-b841-2b735568a576.png)
+    ![Select Switch to Advanced eDiscovery](../media/d7e31558-e79c-4782-b841-2b735568a576.png)
   
     The **Connecting to Advanced eDiscovery** progress bar is displayed. When you're connected to Advanced eDiscovery, a list of containers is displayed on the page. 
     
-    ![Advanced eDiscorvery progress bar](media/4a84273d-765b-44b8-9006-c20e810ea393.png)
+    ![Advanced eDiscorvery progress bar](../media/4a84273d-765b-44b8-9006-c20e810ea393.png)
   
     These containers represent the search results that you prepared for analysis in Advanced eDiscovery in Step 7. The name of the container has the same name as Content Search in the case in the Security & Compliance Center. The containers in the list are the ones that you prepared. If a different user prepared search results for Advanced eDiscovery, the corresponding containers won't be included in the list.
     
@@ -473,7 +474,7 @@ To close a case:
     
     The **Manage this case** flyout page is displayed. 
     
-3. Under **Manage case status**, click ![Remove the peek button](media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) **Close case**.
+3. Under **Manage case status**, click ![Remove the peek button](../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) **Close case**.
     
     A warning is displayed saying that the holds associated with the case will be turned off.
     
@@ -483,7 +484,7 @@ To close a case:
     
 5. Close the **Manage this case** page. 
     
-6. On the **eDiscovery** page, click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status of the closed case. It might take up to 60 minutes for the closing process to complete. 
+6. On the **eDiscovery** page, click ![Refresh icon](../media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status of the closed case. It might take up to 60 minutes for the closing process to complete. 
     
     When the process is complete, the status of the case is changed to **Closed** on the **eDiscovery** page. Click the name of the case again to display the **Manage this case** flyout page, which contains information about when the case was closed and who closed it. 
      
@@ -507,10 +508,34 @@ When you reopen a case, any holds that were in place when the case was closed wo
     
 5. Close the **Manage this case** page. 
     
-6. On the **eDiscovery** page, click ![Refresh icon](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status of the reopened case. It might take up to 60 minutes for the reopening process to complete. 
+6. On the **eDiscovery** page, click ![Refresh icon](../media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status of the reopened case. It might take up to 60 minutes for the reopening process to complete. 
     
     When the process is complete, the status of the case is changed to **Active** on the **eDiscovery** page. 
   
+## (Optional) Step 11: Delete a case
+
+You can also delete active and closed cases. When you delete a case all searches and exports in the case are deleted, and it's removed from the list of cases on the **eDiscovery** page in the Security & Compliance Center. You can't re-open a deleted case. 
+
+Before you can delete a case (whether it's active or closed), you must first delete *all* holds associated with the case. That includes deleting holds with a status of **Off**. 
+
+To delete a hold:
+
+1. Go the **Holds** tab in case that you want to delete.
+
+2. Click the hold that you want to delete.
+
+3. On the flyout page, click **Delete hold**.
+
+To delete a case:
+
+1. In the Security & Compliance Center, click **eDiscovery** \> **eDiscovery** to display the list of cases in your organization. 
+    
+2. Click the name of the case that you want to delete.
+
+3. Under **Manage case status** on the flyout page, click **Delete case**.
+
+If the case you're trying to delete still contains holds, you'll receive an error message. You'll have to delete all holds associated with the case and then try again to delete the case.
+
 ## More information
 
 - **Are there any limits for eDiscovery cases or holds associated with an eDiscovery case?** The following table lists the limits for eDiscovery cases and case holds.
@@ -521,7 +546,14 @@ When you reopen a case, any holds that were in place when the case was closed wo
   |Maximum number of case holds for an organization  <br/> |10,000  <br/> |
   |Maximum number of mailboxes in a single case hold  <br/> |1,000  <br/> |
   |Maximum number of SharePoint and OneDrive for Business sites in a single case hold  <br/> |100  <br/> |
-   
+  |Maximum number of cases displayed on the eDiscovery home page, and the maximum number of items displayed on the Holds, Searches, and Export tabs within a case. <sup>1</sup> |1,000|
+  |||
+
+   > [!NOTE]
+   > <sup>1</sup> To view a list of more than 1,000 cases, holds, searches, or exports, you can use the corresponding Office 365 Security & Compliance PowerShell cmdlet:<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)
+
+
+
 - **What about cases that were created on the case management page in Advanced eDiscovery?** You can access a list of older Advanced eDiscovery cases by clicking the link at the bottom on the **eDiscovery** page in the Security & Compliance Center. However, to do any work in an older case, you have to contact Office 365 Support and request that the case be moved to a new eDiscovery case in the Security & Compliance Center. 
     
 - **Why create an eDiscovery Administrator?** As previously explained, an eDiscovery Administrator is member of the eDiscovery Manager role group who can view and access all eDiscovery cases in your organization. This ability to access all the eDiscovery cases has two important purposes:
@@ -550,7 +582,7 @@ When you reopen a case, any holds that were in place when the case was closed wo
     
 - **If a mailbox, SharePoint site, or OneDrive account that is on hold is moved to a different region in a multi-geo environment, will the hold still apply?** In all cases, the content in a mailbox, site, or OneDrive account will still be retained. However, the hold statistics will no longer include items from a content location that's been moved to a different region. To include hold statistics for a content location that's been moved, you have to edit the hold and update the URL (or SMTP address of a mailbox) so that the content location is once again included in the hold statistics. 
     
-- **What about placing a hold on Office 365 Groups and Microsoft Teams?** Microsoft Teams are built on Office 365 Groups. Therefore, placing them on hold in an eDiscovery case is similar. Keep the following things in mind when placing Office 365 Groups and Microsoft Teams on hold. 
+- **What about placing a hold on Office 365 Groups and Microsoft Teams?** Microsoft Teams is built on Office 365 Groups. Therefore, placing them on hold in an eDiscovery case is similar. Keep the following things in mind when placing Office 365 Groups and Microsoft Teams on hold. 
     
   - To place content located in Office 365 Groups and Microsoft Teams on hold, you have to specify the mailbox and SharePoint site that associated with a group or team.
     
@@ -590,7 +622,5 @@ When you reopen a case, any holds that were in place when the case was closed wo
     
     > [!NOTE]
     > The capability to retain Wiki content for a Microsoft Team or team channel (when you place the team's SharePoint site on hold) was released on June 22, 2017. If a team site is on hold, the Wiki content will be retained starting on that date. However, if a team site is on hold and the Wiki content was deleted before June 22, 2017, the Wiki content was not retained. 
-  
-  - When you place a hold on a Microsoft Team, the hold doesn't apply to private channel messages. Only messages in standard channels are preserved. Support for preserving private channel messages is coming soon.
 
 - **How do I find the URL for OneDrive for Business sites?** To collect a list of the URLs for the OneDrive for Business sites in your organization so you can add them to a hold or search associated with an eDiscovery case, see [Create a list of all OneDrive locations in your organization](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). This script in this article creates a text file that contains a list of all OneDrive sites. To run this script, you have to install and use the SharePoint Online Management Shell. Be sure to append the URL for your organization's MySite domain to each OneDrive site that you want to search. This is the domain that contains all your OneDrive; for example,  `https://contoso-my.sharepoint.com`. Here's an example of a URL for a user's OneDrive site:  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.

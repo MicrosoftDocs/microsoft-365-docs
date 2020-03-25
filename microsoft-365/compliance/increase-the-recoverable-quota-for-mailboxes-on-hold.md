@@ -1,5 +1,7 @@
 ---
 title: "Increase the Recoverable Items quota for mailboxes on hold"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -89,15 +91,15 @@ You can use the EAC or Exchange Online PowerShell to create a retention policy.
   
 ### Use the EAC to create a retention policy
   
-1. In the EAC, go to **Compliance management** \> **Retention policies**, and then click **Add** ![Add Icon](media/ITPro-EAC-AddIcon.gif).
+1. In the EAC, go to **Compliance management** \> **Retention policies**, and then click **Add** ![Add Icon](../media/ITPro-EAC-AddIcon.gif).
     
 2. On the **New retention policy** page, under **Name**, type a name that describes the purpose of the retention policy; for example, **MRM Policy for Mailboxes on Hold**. 
     
-3. Under **Retention tags**, click **Add** ![Add Icon](media/ITPro-EAC-AddIcon.gif).
+3. Under **Retention tags**, click **Add** ![Add Icon](../media/ITPro-EAC-AddIcon.gif).
     
 4. In the list of retention tags, select the Recoverable Items RPT that you created in Step 1, and then click **Add**.
     
-    ![Select the custom Recoverable Items retention tag](media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
+    ![Select the custom Recoverable Items retention tag](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
   
 5. Select additional retention tags to add to the retention policy. For example, you might want to add the same tags that are included in the Default MRM Policy.
     
@@ -107,7 +109,7 @@ You can use the EAC or Exchange Online PowerShell to create a retention policy.
     
     Notice that the retention tags linked to the retention policy are displayed in the details pane.
     
-    ![Retention tags linked to the retention policy are displayed in the details pane](media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
+    ![Retention tags linked to the retention policy are displayed in the details pane](../media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
   
 ### Use Exchange Online PowerShell to create a retention policy
   
@@ -132,7 +134,7 @@ The last step is to apply the new retention policy that you created in Step 2 to
   
 1. Go to **Recipients** \> **Mailboxes**.
     
-2. In the list view, select the mailbox you want to apply the retention policy to, and then click **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+2. In the list view, select the mailbox you want to apply the retention policy to, and then click **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
     
 3. On the **User Mailbox** page, click **Mailbox features**.
     

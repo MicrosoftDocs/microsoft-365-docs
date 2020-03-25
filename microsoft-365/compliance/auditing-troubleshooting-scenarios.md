@@ -1,5 +1,7 @@
 ---
 title: "Search the Office 365 audit log to troubleshoot common scenarios"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -42,7 +44,7 @@ This section describes the basics for creating and running audit log searches. U
     
     The **Audit log search** page is displayed. 
     
-    ![Configure criteria and then select Search to run the search](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configure criteria and then select Search to run the search](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
 4. You can configure the following search criteria. Each troubleshooting scenario in this article recommends specific guidance for configuring these fields.
     
@@ -99,11 +101,11 @@ Here's how to configure an audit log search query for this scenario:
 
 After you run the search, select **Filter results** on the search results page. In the box under **Activity** column header, type **Set-Mailbox** so that only audit records related to the **Set-Mailbox** cmdlet are displayed.
 
-![Filtering the results of an audit log search](media/emailforwarding1.png)
+![Filtering the results of an audit log search](../media/emailforwarding1.png)
 
 At this point, you have to look at the details of each audit record to determine if the activity is related to email forwarding. Select the audit record to display the **Details** flyout page, and then select **More information**. The following screenshot and descriptions highlight the information that indicates email forwarding was set on the mailbox.
 
-![Detailed information from the audit record](media/emailforwarding2.png)
+![Detailed information from the audit record](../media/emailforwarding2.png)
 
 a. In the **ObjectId** field, the alias of the mailbox that email forwarding was set on is displayed. This mailbox is also displayed on the **Item** column in the search results page.
 
@@ -145,11 +147,11 @@ After you run the search, you can filter the search results to display the audit
 
 **Example of AffectedItems field for soft-deleted item**
 
-![Audit record for soft-deleted item](media/softdeleteditem.png)
+![Audit record for soft-deleted item](../media/softdeleteditem.png)
 
 **Example of AffectedItems field for hard-deleted item**
 
-![Audit record for hard-deleted email item](media/harddeleteditem.png)
+![Audit record for hard-deleted email item](../media/harddeleteditem.png)
 
 ### Recover deleted email items
 
@@ -179,7 +181,7 @@ Here's how to configure an audit log search query for this scenario:
 
 After you run the search, any audit records for this activity are displayed in the search results. Select an audit record to display the **Details** flyout page, and then select **More information**. Information about the inbox rule settings is displayed in the **Parameters** field. The following screenshot and descriptions highlight the information about inbox rules.
 
-![Audit record for new inbox rule](media/NewInboxRuleRecord.png)
+![Audit record for new inbox rule](../media/NewInboxRuleRecord.png)
 
 a. In the **ObjectId** field, the full name of the inbox rule is displayed. This name includes the alias of the user's mailbox (for example, SaraD) and the name of the inbox rule (for example, "Move messages from admin").
 
@@ -200,7 +202,7 @@ This behavior is by design. Azure Active Directory (Azure AD), the directory ser
 
 Here's an example and descriptions of relevant properties in an audit record for a **User logged In** event that is a result of pass-through authentication. Select the audit record to display the **Details** flyout page, and then select **More information**.
 
-![Example of audit record for successful pass-thru authentication](media/PassThroughAuth1.png)
+![Example of audit record for successful pass-thru authentication](../media/PassThroughAuth1.png)
 
    a. This field indicates that the user who attempted to access a resource in your organization wasn't found in your organization's Azure AD.
 
@@ -225,7 +227,7 @@ Here are two examples scenarios that would result in a successful **User logged 
 
 - Search the audit log for activities performed by the external user identified in the **User logged in** audit record. Type the UPN for the external user in the **Users** box and use a date range if relevant to your scenario. For example, you can create a search using the following search criteria:
 
-   ![Search for all activities performed by the external user](media/PassThroughAuth2.png)
+   ![Search for all activities performed by the external user](../media/PassThroughAuth2.png)
 
     In addition to the **User logged in** activities, other audit records may be returned, such ones that indicate a user in your organization shared resources with the external user and whether the external user accessed, modified, or downloaded a document that was shared with them.
 

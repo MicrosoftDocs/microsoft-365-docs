@@ -1,5 +1,7 @@
 ---
 title: "Step 4: Configure traffic bypass"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +21,7 @@ description: Understand and configure web browsers and edge devices for traffic 
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![Phase 1-Networking](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1-Networking](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Because general Internet traffic can be risky, typical organization networks enforce security with edge devices such as proxy servers, SSL Break and Inspect, packet inspection devices, and data loss prevention systems. Read about some of the issues with network interception devices at [Using third-party network devices or solutions on Office 365 traffic](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
 
@@ -41,7 +43,7 @@ Microsoft recommends that you:
 
 Here are these recommendations in your network infrastructure.
 
-![Recommentations for optimizing on-premises traffic](./media/networking-configure-proxies-firewalls/bypassing-edge-devices.png)
+![Recommentations for optimizing on-premises traffic](../media/networking-configure-proxies-firewalls/bypassing-edge-devices.png)
 
 Edge devices include firewalls, SSL Break and Inspect, packet inspection devices, and data loss prevention systems. To configure and update the configurations of edge devices, you can use a script or a REST call to consume a structured list of endpoints from the Office 365 Endpoints web service. For more information, see [Office 365 IP Address and URL Web service](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
 
@@ -54,7 +56,7 @@ As an interim checkpoint, you can see the [exit criteria](networking-exit-criter
 
 |||
 |:-------|:-----|
-|![Step 5](./media/stepnumbers/Step5.png)|[Optimize client and Office 365 service performance](networking-optimize-tcp-performance.md) |
+|![Step 5](../media/stepnumbers/Step5.png)|[Optimize client and Office 365 service performance](networking-optimize-tcp-performance.md) |
 
 
 

@@ -1,5 +1,7 @@
 ---
 title: "Content stored in Exchange Online mailboxes"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,27 +16,27 @@ search.appverid:
 - MET150
 ms.assetid:
 ROBOTS: NOINDEX, NOFOLLOW 
-description: "Data produced by cloud-based apps in Office 365 is stored in a user's Exchange Online mailbox in the Microsoft cloud."
+description: "Data produced by cloud-based apps in Office 365 is stored or associated with a user's Exchange Online mailbox."
 ---
 
 # Content stored in Exchange Online mailboxes
 
-A mailbox in Exchange Online is primarily used to store email-related items such as messages, calendar items, tasks, and notes. But that's changing as more cloud-based Office 365 apps also store their data in a user's mailbox. One advantage of storing data in a mailbox is that you can use the search tools in Content Search, eDiscovery, Advanced eDiscovery, and Data Investigations to find, view, and export the data from these cloud-based apps. The data from some of these apps is stored in hidden folders located in a non-interpersonal message (non-IPM) subtree in the mailbox. This means that the data is hidden from the user's view when they use Outlook or other mail clients to access their mailbox.
+A mailbox in Exchange Online is primarily used to store email-related items such as messages, calendar items, tasks, and notes. But that's changing as more cloud-based Office 365 apps also store their data in a user's mailbox. One advantage of storing data in a mailbox is that you can use the search tools in content search, Core eDiscovery, Advanced eDiscovery, and Data Investigations to find, view, and export the data from these cloud-based apps. The data from some of these apps is stored in hidden folders located in a non-interpersonal message (non-IPM) subtree in the mailbox. Data from other cloud-based apps might not be stored _in_ the mailbox, but it's _associated with_ the mailbox, and is returned in searches (if that data matches the search query). Regardless of whether cloud-based data is stored in or associated with a user mailbox, the data is typically not visible in an email client when a user opens their mailbox.
 
-The following table lists the Office 365 apps that store data in a cloud-based mailbox. The table also describes the type of content that each app stores.
+The following table lists the Office 365 apps that either stores or associates data with a cloud-based mailbox. The table also describes the type of content that each app produces.
 
-|Office 365 app  |Description  |
+|Office 365 app|Description|
 |:---------|:---------|
-|Forms     <br/> |Forms (stored as a PDF file) and responses to a form (stored in a CSV file) are attached to email messages and stored in a hidden folder in the mailbox of the user who created the form. When you export content from Forms in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following globally unique identified (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.        <br/> |
-|Office 365 Groups    <br/>|  Email messages, calendar items, contacts (People), notes, and tasks are stored in the mailbox that's associated with an Office 365 group.       <br/> |
-|Outlook/Exchange Online<br/>|  Email messages, calendar items, contacts (People), notes, and tasks are stored in a user's mailbox.       <br/> |
-|People    <br/> |  Contacts in the People app (which are the same contacts as the ones accessible in Outlook) are stored in a user's mailbox.      <br/> |
-|Class Schedule     <br/> |   Plans created in Class Schedule are stored in the mailbox of the corresponding Office 365 Group that is provisioned when a new plan is created. The alias for the group mailbox is the name of the plan.      <br/> |
-|Skype for Business    <br/>  | Conversations in Skype for Business are stored in the Conversation History folder in a user's mailbox. If the mailbox of a participant of a Skype meeting is placed on Litigation Hold or assigned to a retention policy, files attached to a meeting are retained in the participants mailbox.         <br/> |
-|Sway     <br/> |  Sways are stored as an HTML file that is attached to an email message and stored in a hidden folder in the mailbox of the user who created the sway. When you export content from Sway in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following GUID) **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**.       <br/> |
-|Tasks    <br/> |  Tasks in the Tasks app (which are the same tasks as the ones accessible in Outlook) are stored in a user's mailbox.       <br/> |
-|Teams    <br/>  |Conversations that are part of a Teams channel are stored in the mailbox that's associated with the Team. Conversations that are part of the Chat list in Teams (also called *1 x N chats*) are stored in the mailbox of the users who participate in the chat. Also, summary information for meetings and calls in a Teams channel are stored in the mailboxes of users who dialed into the meeting or call. <br/> | 
-|To-Do  <br/> | Tasks (called *to-dos*, which are saved in to-do lists) in the To-Do app are stored in a user's mailbox.        <br/> |
+|Forms|Forms (stored as a PDF file) and responses to a form (stored in a CSV file) are attached to email messages and stored in a hidden folder in the mailbox of the user who created the form. When you export content from Forms in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following globally unique identified (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
+|Office 365 Groups|Email messages, calendar items, contacts (People), notes, and tasks are stored in the mailbox that's associated with an Office 365 group.|
+|Outlook/Exchange Online|Email messages, calendar items, contacts (People), notes, and tasks are stored in a user's mailbox.|
+|People|Contacts in the People app (which are the same contacts as the ones accessible in Outlook) are stored in a user's mailbox.|
+|Class Schedule|Plans created in Class Schedule are stored in the mailbox of the corresponding Office 365 Group that is provisioned when a new plan is created. The alias for the group mailbox is the name of the plan.|
+|Skype for Business|Conversations in Skype for Business are stored in the Conversation History folder in a user's mailbox. If the mailbox of a participant of a Skype meeting is placed on Litigation Hold or assigned to a retention policy, files attached to a meeting are retained in the participants mailbox.|
+|Sway|Sways are stored as an HTML file that is attached to an email message and stored in a hidden folder in the mailbox of the user who created the sway. When you export content from Sway in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following GUID) **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**.|
+|Tasks|Tasks in the Tasks app (which are the same tasks as the ones accessible in Outlook) are stored in a user's mailbox.|
+|Teams|Conversations that are part of a Teams channel are associated with the Teams mailbox. Conversations that are part of the Chat list in Teams (also called *1 x N chats*) are associated with the mailbox of the users who participate in the chat. Also, summary information for meetings and calls in a Teams channel are associated with mailboxes of users who dialed into the meeting or call. So when searching for Teams content, you would search the Teams mailbox for content in channel conversations and search user mailboxes for content in 1 x N chats.| 
+|To-Do|Tasks (called *to-dos*, which are saved in to-do lists) in the To-Do app are stored in a user's mailbox.|
 ||||
 
 > [!NOTE]

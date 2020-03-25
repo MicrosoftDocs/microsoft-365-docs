@@ -1,6 +1,8 @@
 ---
 title: "Empower remote workers"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/24/2019
@@ -67,9 +69,9 @@ To meet these criteria for remote workers, use the following Microsoft 365 Enter
 The following phases step you through deploying the feature of Microsoft 365 Enterprise for remote access and driving adoption for remote workers. If you have already deployed elements of these phases, ensure that they meet the stated requirements before moving on to the next element.
 
 <a name="poster"></a>
-For a 1-page summary of this scenario, see the [Empower remote workers poster](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf).
+For a 1-page summary of this scenario, see the [Empower remote workers poster](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf).
 
-[![Empower remote workers poster](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
+[![Empower remote workers poster](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
 You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) or [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17)-sized paper.
 
@@ -91,7 +93,7 @@ For [Phase 2: Identity](identity-infrastructure.md), deploy the following for us
 
 Here's the resulting configuration with the identity elements highlighted.
 
-![Identity elements for remote workers](./media/empower-people-to-work-remotely/remote-workers-id-phase.png)
+![Identity elements for remote workers](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
 For [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md), deploy:
 
@@ -100,13 +102,13 @@ For [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md), deploy:
 
 Here's the resulting configuration with Windows 10 Enterprise devices.
 
-![Windows 10 Enterprise elements for remote workers](./media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
+![Windows 10 Enterprise elements for remote workers](../media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
  
 For [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md), deploy the infrastructure to install Office 365 ProPlus or upgrade your currently installed Office suite, such as Office 2010 or Office 2013, to Office 365 ProPlus on your organization devices. This will give your users the best security and collaborative experiences.
 
 Here's the resulting configuration with Office 365 ProPlus installed on devices.
 
-![Office 365 ProPlus elements for remote workers](./media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
+![Office 365 ProPlus elements for remote workers](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
  
 For [Phase 5: Mobile device management](mobility-infrastructure.md), deploy Intune device and app management for:
 
@@ -116,7 +118,7 @@ For [Phase 5: Mobile device management](mobility-infrastructure.md), deploy Intu
 
 Here's the resulting configuration with Intune enrolled devices and policies highlighted.
 
-![Mobile device management elements for remote workers](./media/empower-people-to-work-remotely/remote-workers-mdm-phase.png)
+![Mobile device management elements for remote workers](../media/empower-people-to-work-remotely/remote-workers-mdm-phase.png)
  
 For [Phase 6: Information protection](infoprotect-infrastructure.md), design and configure protection for your digital assets with:
 
@@ -125,13 +127,13 @@ For [Phase 6: Information protection](infoprotect-infrastructure.md), design and
 
 Here's the resulting configuration with DLP policies and sensitivity labels highlighted.
 
-![Information protection elements for remote workers](./media/empower-people-to-work-remotely/remote-workers-ip-phase.png)
+![Information protection elements for remote workers](../media/empower-people-to-work-remotely/remote-workers-ip-phase.png)
  
 For access to on-premises apps, you can use [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy), which requires a hybrid identity environment.
 
 Here's the resulting configuration with the application proxy components highlighted.
 
-![Application proxy elements for remote workers](./media/empower-people-to-work-remotely/remote-workers-app-proxy.png)
+![Application proxy elements for remote workers](../media/empower-people-to-work-remotely/remote-workers-app-proxy.png)
  
 ### Step 2: Workloads for remote workers
 
@@ -143,7 +145,7 @@ For [SharePoint and OneDrive](sharepoint-online-onedrive-workload.md), deploy Sh
 
 Here's the resulting configuration with the workloads highlighted.
 
-![Microsoft 365 workloads for remote workers](./media/empower-people-to-work-remotely/remote-workers-workloads.png)
+![Microsoft 365 workloads for remote workers](../media/empower-people-to-work-remotely/remote-workers-workloads.png)
  
 ### Deployment results
 
@@ -162,11 +164,11 @@ When offline (not connected to the Internet), your remote workers can change loc
 
 Here's the resulting configuration for remote workers of your organization if you use hybrid identity.
 
-![Final configuration for an organization with hybrid identity](./media/empower-people-to-work-remotely/remote-workers-hybrid.png) 
+![Final configuration for an organization with hybrid identity](../media/empower-people-to-work-remotely/remote-workers-hybrid.png) 
  
 Here's the resulting configuration for remote workers your organization if you use cloud-only identity.
 
-![Final configuration for an organization with cloud-only identity](./media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
+![Final configuration for an organization with cloud-only identity](../media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
 
 ## Phase 2: Drive user adoption for remote workers
 

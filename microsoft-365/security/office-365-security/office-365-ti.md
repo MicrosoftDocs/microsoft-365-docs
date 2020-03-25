@@ -1,9 +1,11 @@
 ---
 title: "Office 365 threat investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/04/2019
+ms.date: 12/09/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -40,7 +42,7 @@ Threat investigation and response capabilities surface in the Security &amp; Com
 
 Use the Threat dashboard (this is also referred to as the [Security dashboard](security-dashboard.md)) to quickly see what threats have been addressed, and as a visual way to report to business decision makers how Office 365 services are securing your business.
   
-![Threat Dashboard](../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
+![Threat Dashboard](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
 To view and use this dashboard, in the Office 365 Security &amp; Compliance Center, go to **Threat management** \> **Dashboard**.
   
@@ -48,7 +50,7 @@ To view and use this dashboard, in the Office 365 Security &amp; Compliance Cent
 
 Use [Threat Explorer (and real-time detections)](threat-explorer.md) to analyze threats, see the volume of attacks over time, and analyze data by threat families, attacker infrastructure, and more. Threat Explorer (also referred to as Explorer) is the starting place for any security analyst's investigation workflow.
   
-![Threat explorer](../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
+![Threat explorer](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
 To view and use this report, in the Office 365 Security &amp; Compliance Center, go to **Threat management** \> **Explorer**.
   
@@ -56,11 +58,11 @@ To view and use this report, in the Office 365 Security &amp; Compliance Center,
 
 Use the Incidents list (this is also called Investigations) to see a list of in flight security incidents. Incidents are used to track threats such as suspicious email messages, and to conduct further investigation and remediation.
   
-![List of current Threat Incidents in Office 365](../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
+![List of current Threat Incidents in Office 365](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
   
 To view the list of current incidents for your organization, in the Security &amp; Compliance Center, go to **Threat management** \> **Review** \> **Incidents**.
   
-![In the Security &amp; Compliance Center, choose Threat management \> Review](../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+![In the Security &amp; Compliance Center, choose Threat management \> Review](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
 ### Attack Simulator
 
@@ -74,7 +76,7 @@ Use automated investigation and response (AIR) capabilities to save time and eff
 
 As part of the Office 365 Advanced Threat Protection Plan 2 offering, security analysts can review details about a known threat. This is useful to determine whether there are additional preventative measures/steps that can be taken to keep users safe.
   
-![Security Trends showing information about recent threats](../media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
+![Security Trends showing information about recent threats](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
   
 ## How do we get these capabilities?
 
@@ -82,7 +84,7 @@ Office 365 threat investigation and response capabilities are included in Office
 
 ## Required roles and permissions
 
-Office 365 Advanced Threat Protection uses role-based access control. Permissions are assigned through roles in Azure Active Directory, the Microsoft 365 admin center, or the Office 365 Security & Compliance Center.
+Office 365 Advanced Threat Protection uses role-based access control. Permissions are assigned through certain roles in Azure Active Directory, the Microsoft 365 admin center, or the Office 365 Security & Compliance Center.
 
 > [!TIP]
 > Although some roles, such as Security Administrator, can be assigned in the Office 365 Security & Compliance Center, consider using either the Microsoft 365 admin center or Azure Active Directory instead. For information about roles, role groups, and permissions, see the following resources:

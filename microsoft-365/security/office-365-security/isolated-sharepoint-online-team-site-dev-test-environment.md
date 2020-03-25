@@ -1,5 +1,7 @@
 ---
 title: "Isolated SharePoint Online team site dev/test environment"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -66,7 +68,7 @@ Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsof
 
 To create the new access groups for the ProjectX SharePoint Online team site, run these commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:
 
-```
+```powershell
 $groupName="ProjectX-Members"
 $groupDesc="People allowed to collaborate for ProjectX."
 New-MsolGroup -DisplayName $groupName -Description $groupDesc
@@ -80,7 +82,7 @@ New-MsolGroup -DisplayName $groupName -Description $groupDesc
 
 Fill in your organization name (example: contosotoycompany), the two-character country code for your location, and then run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:
 
-```
+```powershell
 $orgName="<organization name>"
 $loc="<two-character country code, such as US>"
 $licAssignment= $orgName + ":ENTERPRISEPREMIUM"
@@ -92,7 +94,7 @@ From the display of the **New-MsolUser** command, note the generated password fo
 
 Run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:
 
-```
+```powershell
 $userName= "researcher@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "Lead Researcher" -FirstName Lead -LastName Researcher -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment -ForceChangePassword $false
 ```
@@ -101,7 +103,7 @@ From the display of the **New-MsolUser** command, note the generated password fo
 
 Run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:
 
-```
+```powershell
 $userName= "devvp@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "Development VP" -FirstName Development -LastName VP -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment -ForceChangePassword $false
 ```
@@ -110,7 +112,7 @@ From the display of the **New-MsolUser** command, note the generated password fo
 
 Next, to add the new accounts to the new access groups, run these PowerShell commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:
 
-```
+```powershell
 $grpName="ProjectX-Members"
 $userUPN="designer@" + $orgName + ".onmicrosoft.com"
 Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $grpName }).ObjectID -GroupMemberObjectId (Get-MsolUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -GroupMemberType "User"
@@ -135,7 +137,7 @@ Figure 1 shows the access groups and their membership.
 
 **Figure 1**
 
-![The Office 365 groups and their membership for an isolated SharePoint Online Group site](../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![The Office 365 groups and their membership for an isolated SharePoint Online Group site](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## Phase 3: Create a new ProjectX SharePoint Online team site and isolate it
 
@@ -201,7 +203,7 @@ Figure 2 shows the SharePoint groups and their membership.
 
 **Figure 2**
 
-![The SharePoint Online groups and their membership for an isolated SharePoint Online Group site](../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
+![The SharePoint Online groups and their membership for an isolated SharePoint Online Group site](../../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
 
 Now let's demonstrate access using the Lead Designer user account:
 

@@ -1,5 +1,7 @@
 ---
 title: "Enable unlimited archiving in Office 365 — Admin Help"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -95,7 +97,7 @@ Keep the following things in mind after you enable auto-expanding archiving:
     
 - Similarly, the values for the  *ArchiveQuota*  and  *ArchiveWarningQuota*  mailbox properties aren't changed when you enable auto-expanding archiving. In fact, when you enable auto-expanding archiving for a user mailbox and the  *AutoExpandingArchiveEnabled*  property is set to  `True`, the  *ArchiveQuota*  and  *ArchiveWarningQuota*  properties are ignored. Here's an example of these mailbox properties after auto-expanding archiving is enabled for a user's mailbox. 
     
-    ![ArchiveQuota and ArchiveWarningQuota properties are ignored after you enable auto-expanding archiving](media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
+    ![ArchiveQuota and ArchiveWarningQuota properties are ignored after you enable auto-expanding archiving](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
   
 ## More information
@@ -119,4 +121,4 @@ Keep the following things in mind after you enable auto-expanding archiving:
 - Administrators can't adjust the storage quota.
 
 > [!IMPORTANT]
-> Auto-expanding archiving is only supported for mailboxes used for individual users or shared mailboxes with a growth rate that doesn't exceed 1 GB per day. Using journaling, transport rules, or auto-forwarding rules to copy messages to an archive mailbox for the purposes of archiving is not permitted. A user's archive mailbox is intended for just that user. Microsoft reserves the right to deny unlimited archiving in instances where a user's archive mailbox is used to store archive data for other users.
+> Auto-expanding archiving is only supported for mailboxes used for individual users or shared mailboxes with a growth rate that doesn't exceed 1 GB per day. Using journaling, transport rules, or auto-forwarding rules to copy messages to an archive mailbox for the purposes of archiving is not permitted. A user's archive mailbox is intended for just that user. Microsoft reserves the right to deny unlimited archiving in instances where a user's archive mailbox is used to store archive data for other users or in other cases of inappropriate use.

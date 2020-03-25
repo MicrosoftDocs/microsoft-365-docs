@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\microsoft-365",
-    "\\microsoft-365\\security",
     "\\microsoft-365\\security\\mtp"
   ],
-  "SelectedNode": "\\microsoft-365\\security\\mtp\\data-privacy.md",
+  "SelectedNode": "\\microsoft-365\\security",
   "PreviewInSolutionExplorer": false
 }

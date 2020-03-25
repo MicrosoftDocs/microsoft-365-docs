@@ -1,5 +1,5 @@
 ---
-title: View the details and results of an automated investigation
+title: Details and results of an automated investigation
 description: During and after an automated investigation, you can view the results and key findings
 keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.appverid: met150
@@ -7,6 +7,8 @@ ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
@@ -18,16 +20,14 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# View the details and results of an automated investigation
+# Details and results of an automated investigation
 
 **Applies to:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
-
 When an automated investigation occurs in Microsoft Threat Protection, details about that investigation are available during and after the automated investigation process. If you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
-![Investigation details](../images/mtp-air-investdetails.png)
+![Investigation details](../../media/mtp-air-investdetails.png)
 
 ## Open the investigation details view
 
@@ -53,7 +53,7 @@ Use an incident details page to view detailed information about an incident, inc
 
 2. In the navigation pane, choose **Incidents**. 
 
-3. Select an item in the list to open the incident details view.<br/>![Incident details](../images/mtp-incidentdetails-tabs.png)
+3. Select an item in the list to open the incident details view.<br/>![Incident details](../../media/mtp-incidentdetails-tabs.png)
 
 4. On the **Investigations** tab, select an investigation in the list.
 
@@ -61,7 +61,7 @@ Use an incident details page to view detailed information about an incident, inc
 
 Use the investigation details view to see past, current, and pending activity pertaining to an investigation. The investigation details view resembles the following image:
 
-![Investigation details](../images/mtp-air-investdetails.png)
+![Investigation details](../../media/mtp-air-investdetails.png)
 
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 
@@ -75,21 +75,9 @@ In the Investigation details view, you can see information on the **Investigatio
 |Log	|Provides a detailed view of all steps taken during the investigation, along with status.|
 |Pending actions	|Lists items that require approval to proceed.|
 
-## Remediation actions following automated investigation
-
-When an automated investigation completes, a verdict is reached for every piece of evidence involved, and remediation actions are identified. In some cases, remediation actions are taken automatically; in other cases, remediation actions await approval. The following table lists possible verdicts and outcomes:
-
-|Verdict	|Area	|Outcomes|
-|------|------|------|
-|Malicious	|Devices (endpoints)	|Remediation actions are taken automatically|
-|Malicious	|Email content (URLs or attachments) | Recommended remediation actions are pending approval|
-|Suspicious	|Devices or email content |Recommended remediation actions are pending approval|
-|Clean	|Devices or email content	|No remediation actions are needed|
-
-[Review a pending action in the Action center](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
-
 ## Next steps
 
 - [Get an overview of Action center permissions](mtp-action-center.md#required-permissions-for-action-center-tasks)
+
 - [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
 

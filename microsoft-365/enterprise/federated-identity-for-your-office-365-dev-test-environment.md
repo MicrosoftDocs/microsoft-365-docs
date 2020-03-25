@@ -1,5 +1,7 @@
 ---
 title: "Federated identity for your Microsoft 365 test environment"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -28,7 +30,7 @@ Office 365 supports federated identity. This means that instead of performing th
   
 This article describes how you can configure federated authentication for your Microsoft 365 or Office 365 test environment, resulting in the following:
 
-![The federated authentication for Microsoft 365 test environment](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
+![The federated authentication for Microsoft 365 test environment](../media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
   
 This configuration consists of: 
   
@@ -36,7 +38,7 @@ This configuration consists of:
     
 - A simplified organization intranet connected to the Internet, consisting of five virtual machines on a subnet of an Azure virtual network (DC1, APP1, CLIENT1, ADFS1, and PROXY1). Azure AD Connect runs on APP1 to synchronize the list of accounts in the Active Directory Domain Services domain to Office 365. PROXY1 receives the incoming authentication requests. ADFS1 validates credentials with DC1 and issues security tokens.
     
-There are five phases to setting up this dev/test environment:
+There are five phases to setting up this test environment:
   
 1. Create the simulated enterprise test environment with password hash synchronization.
     
@@ -55,7 +57,7 @@ There are five phases to setting up this dev/test environment:
 
 Follow the instructions in [password hash synchronization for Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.
   
-![The simulated enterprise with password hash synchronization test environment](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase1.png)
+![The simulated enterprise with password hash synchronization test environment](../media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase1.png)
   
 This configuration consists of: 
   
@@ -104,7 +106,7 @@ Restart-Computer
 
 Here is your resulting configuration.
   
-![The AD FS server added to the DirSync for Microsoft 365 test environment](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase2.png)
+![The AD FS server added to the DirSync for Microsoft 365 test environment](../media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase2.png)
   
 ## Phase 3: Create the web proxy server
 
@@ -171,7 +173,7 @@ These commands create an internal DNS A record so that virtual machines on the A
   
 Here is your resulting configuration.
   
-![The web application proxy server added to the DirSync for Microsoft 365 test environment](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
+![The web application proxy server added to the DirSync for Microsoft 365 test environment](../media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
   
 ## Phase 4: Create a self-signed certificate and configure ADFS1 and PROXY1
 

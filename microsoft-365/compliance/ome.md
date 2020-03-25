@@ -1,5 +1,7 @@
 ---
 title: "Office 365 Message Encryption"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -7,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 02/07/2020
 search.appverid:
 - MET150
 ms.collection:
@@ -23,12 +25,12 @@ People often use email to exchange sensitive information, such as financial data
 
 With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content.
 
+## How Office 365 Message Encryption works
+
 The rest of this article applies to the new OME capabilities.
 
 > [!NOTE]
 > Delegates who have full access permissions to a mailbox can read encrypted messages that are sent to the mailbox.
-
-## How Office 365 Message Encryption works
 
 Office 365 Message Encryption is an online service that's built on Microsoft Azure Rights Management (Azure RMS) which is part of Azure Information Protection. This includes encryption, identity, and authorization policies to help secure your email. You can encrypt messages by using rights management templates, the [Do Not Forward option](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails), and the [encrypt-only option](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 

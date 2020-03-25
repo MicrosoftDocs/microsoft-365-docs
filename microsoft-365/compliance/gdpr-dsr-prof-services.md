@@ -2,10 +2,11 @@
 title: Microsoft Support and Professional Services Data Subject Requests for the GDPR and CCPA
 description: How Microsoft Support and Professional Services handle data subject requests for the GDPR and CCPA. 
 keywords: Professional Services, sMicrosoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,6 +14,7 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
+titleSuffix: Microsoft GDPR
 ---
 
 # Microsoft Support and Professional Services Data Subject Requests for the GDPR and CCPA
@@ -125,7 +127,7 @@ In discovering relevant data and obtaining Microsoft’s assistance, a customer 
 
 To identify specific engagements, customers need to search across their engagements. For Premier customers, the Contract Service Manager (“CSM”) for a customer has visibility across all Support Requests (SRs) that are created under that Contract Schedule. For Non-Premier, equivalent support engagement portals are available, such as through Online Services support areas.
 
-![Search in SMC](media/Prof-Serv-DSR-Doc-Final_image3.png)The CSM can go to the portal at Support.Microsoft.Com ([https://support.microsoft.com/\<local language code\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) (“SMC”) and select and review Support Requests. (Note: In the URL, please substitute for your local language code).
+![Search in SMC](../media/Prof-Serv-DSR-Doc-Final_image3.png)The CSM can go to the portal at Support.Microsoft.Com ([https://support.microsoft.com/\<local language code\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) (“SMC”) and select and review Support Requests. (Note: In the URL, please substitute for your local language code).
 
 >[!IMPORTANT]
 >In addition to the case history in SMC, customers may also have personal data of an end user in files that was collected by Microsoft (or, with customer’s permission, removed from the Online Service) during a support engagement. Examples may include copies of customer’s exchange mailboxes, Azure VMs, or databases. This personal data may or may not be mentioned in the case history (i.e. ticket) for a particular engagement. To review that data, the Customer Contact must be a specific authenticated (via AAD or MSA) Support Request contact that has received a URL for a workspace in Microsoft Support Data Transfer and Management tool (DTM). A Customer Contact will have access to the files, but no global view is available, and SMC will not indicate if files exist.

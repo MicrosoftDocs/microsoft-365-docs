@@ -1,5 +1,7 @@
 ---
 title: "Legacy information for Office 365 Message Encryption"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -46,7 +48,7 @@ When someone sends an email message in Exchange Online that matches an encryptio
   
 The following diagram summarizes the passage of an email message through the encryption and decryption process.
   
-![Diagram showing the path of an encrypted email](media/O365-Office365MessageEncryption-Concept.png)
+![Diagram showing the path of an encrypted email](../media/O365-Office365MessageEncryption-Concept.png)
   
 For more information, see [Service information for legacy Office 365 Message Encryption prior to the release of the new OME capabilities](legacy-information-for-message-encryption.md#LegacyServiceInfo).
   
@@ -80,7 +82,7 @@ You can also revert back to the default look and feel at any time.
   
 The following example shows a custom logo for ContosoPharma in the email attachment:
   
-![Sample of the view encrypted message page](media/TA-OME-3attachment2.jpg)
+![Sample of the view encrypted message page](../media/TA-OME-3attachment2.jpg)
   
  **To customize encryption email messages and the encryption portal with your organization's brand**
   

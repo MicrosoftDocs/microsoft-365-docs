@@ -1,5 +1,7 @@
 ---
 title: "Manage information governance"
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi

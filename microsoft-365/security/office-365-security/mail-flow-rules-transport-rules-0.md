@@ -1,5 +1,7 @@
 ---
 title: "Mail flow rules (transport rules) in Exchange Online Protection"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

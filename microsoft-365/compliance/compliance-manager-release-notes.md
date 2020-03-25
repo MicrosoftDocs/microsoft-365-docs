@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Compliance Manager Release Notes"
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -51,7 +53,7 @@ The following sections cover known issues to be resolved in upcoming releases of
 - When new assessments are created, scores automatically include Microsoft-managed control scores and Secure Score integration.
 - Any actions that are not supported by Secure Score integration can be manually implemented. A manual implementation will factor into the score for that action's group.
 
-### Microsoft-managed Controls
+### Microsoft-managed controls
 
 - The test date for Microsoft-managed controls isn't appearing in the UI, even when included in the Assessment. To see test date information, you must export the Assessment.
 

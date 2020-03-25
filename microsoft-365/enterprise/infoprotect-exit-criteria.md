@@ -1,5 +1,7 @@
 ---
 title: "Information protection infrastructure exit criteria"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,7 +19,7 @@ description: Examine the criteria for information protection-based services and 
 
 # Information protection infrastructure exit criteria
 
-![Phase 6: Information Protection](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Information Protection](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Make sure your information protection infrastructure meets the following required criteria and that you've considered those that are optional.
 

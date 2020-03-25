@@ -1,5 +1,7 @@
 ---
 title: "Exchange Online Protection overview"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -31,7 +33,7 @@ The following list describes how you can use EOP for messaging protection:
 
 To understand how EOP works, it helps to see how it processes incoming email:
 
-![Email process diagram.](../media/GitHubBugs/emailprocessingineop1.png)
+![Email process diagram.](../../media/GitHubBugs/emailprocessingineop1.png)
 
 An incoming message initially passes through connection filtering, which checks the sender's reputation and inspects the message for malware. The majority of spam is stopped at this point and deleted by EOP. Messages continue through policy filtering, where messages are evaluated against custom mail flow rules (also known as transport rules) that you create or enforce from a template. For example, you can have a rule that sends a notification to a manager when mail arrives from a specific sender. (Data loss prevention checks also occur at this point, if you have that feature; for information about feature availability, see the [Exchange Online Protection service description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).) Next, messages pass through content filtering, where content is checked for terminology or properties common to spam. A message determined to be spam by the content filter can be sent to a user's Junk Email folder or to the quarantine, among other options (including Inbox or custom folder), based on your settings. After a message passes all of these protection layers successfully, it's delivered to the recipient.
 

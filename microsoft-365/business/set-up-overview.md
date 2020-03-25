@@ -1,5 +1,7 @@
 ---
 title: "Overview of setup"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,14 +20,21 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: "Overview of the setup steps for Microsoft 365 Business."
+description: "Learn the setup steps for Microsoft 365 Business, from subscribing, to adding a domain and users, to setting up security policies, and more."
 ---
 
 # Overview of setup
+
+Watch a short video about Microsoft 365 Business setup.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Most of the setup steps can be done in the setup wizard, but the other options are also listed.
 
@@ -45,14 +54,12 @@ Most of the setup steps can be done in the setup wizard, but the other options a
   
   In addition to the security settings in the setup wizard, you can increase your security by adding the following settings:
 
-
 - **Email malware protection**
 - **ATP anti-phishing**
 - **Exchange Online Archiving**
 - **Azure Information Protection (Plan1**)
 
-
-To get started see, [set up advanced security policies](set-up-advanced-security.md).
+To get started, see [increase threat protection](increase-threat-protection.md) and [set up compliance features](set-up-compliance.md).
 
 See also [top 10 ways to secure your Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a roadmap of best security practices.
 

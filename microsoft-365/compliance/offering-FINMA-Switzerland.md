@@ -5,12 +5,15 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
 # Financial Market Supervisory Authority (FINMA) Switzerland
@@ -19,7 +22,7 @@ hideEdit: true
 
 The [Financial Market Supervisory Authority](https://www.finma.ch/en) ([Eidgenössische Finanzmarktaufsicht](https://www.finma.ch/de/), FINMA) is the regulator of independent financial markets in Switzerland and is responsible for ensuring that Swiss financial markets function effectively. It has prudential supervision over banks, insurance companies, exchanges, securities dealers, and other financial institutions.
 
-The FINMA published [Circular 2018/3 Outsourcing–banks and insurers](https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/rundschreiben/finma-rs-2018-03.pdf?la=en) to define the requirements that banks, securities dealers, and insurance companies must abide by when they outsource to a service provider any functions that are significant to the company’s business activities. Any company that outsources its business activities is accountable to the FINMA just as it would be if it carried out the outsourced functions itself.
+The FINMA published [Circular 2018/3 Outsourcing–banks and insurers](https://www.finma.ch/en/~/media/finma/dokumente/rundschreiben-archiv/2018/rs-18-03/finma-rs-2018-03---20170921.pdf?la=en) to define the requirements that banks, securities dealers, and insurance companies must abide by when they outsource to a service provider any functions that are significant to the company’s business activities. Any company that outsources its business activities is accountable to the FINMA just as it would be if it carried out the outsourced functions itself.
 
 ## Microsoft and FINMA
 

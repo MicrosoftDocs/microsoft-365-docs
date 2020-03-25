@@ -1,9 +1,11 @@
 ---
 title: "Identity and device access prerequisites for password hash synchronization in your Microsoft 365 test environment"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 04/23/2019
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -39,7 +41,7 @@ There are eight phases to setting up this test environment:
 Follow the instructions in [Password hash synchronization](password-hash-sync-m365-ent-test-environment.md).
 Here is the resulting configuration.
 
-![The simulated enterprise with password hash synchronization test environment](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![The simulated enterprise with password hash synchronization test environment](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
  
 ## Phase 2: Configure Azure AD seamless single sign-on
 
@@ -81,7 +83,7 @@ Test multi-factor authentication only for the User 2 account.
 
 ## Phase 7: Enable Azure AD Identity Protection
 
-Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab Guide](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-enable-and-use-azure-ad-identity-protection). 
+Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab Guide](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
 
 ## Phase 8: Enable modern authentication for Exchange Online and Skype for Business Online
 

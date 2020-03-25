@@ -1,5 +1,7 @@
 ---
 title: "Responding to a Compromised Email Account in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -22,7 +24,7 @@ description: "Learn how to recognize and respond to a compromised email account 
 ## What is a Compromised Email Account in Office 365?
 
 Access to Office 365 mailboxes, data and other services, is controlled through the use of credentials, for example a user name and password or PIN. When someone other than the intended user steals those credentials, the stolen credentials are considered to be compromised. With them the attacker can sign in as the original user and perform illicit actions.
-Using the stolen credentials, the attacker can access the user’s Office 365 mailbox, SharePoint folders, or files in the user's OneDrive. One action commonly seen is the attacker sending emails as the original user to recipients both inside and outside of the organization. When the attacker emails data to external recipients, this is called data exfiltration.
+Using the stolen credentials, the attacker can access the user's Office 365 mailbox, SharePoint folders, or files in the user's OneDrive. One action commonly seen is the attacker sending emails as the original user to recipients both inside and outside of the organization. When the attacker emails data to external recipients, this is called data exfiltration.
 
 ## Symptoms of a Compromised Office 365 Email Account
 
@@ -50,9 +52,11 @@ Users might notice and report unusual activity in their Office 365 mailboxes. He
 
 If a user reports any of the above symptoms, you should perform further investigation. The Microsoft 365 Security & Compliance Center and the Azure Portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.
 
-- Office 365 Unified Audit Logs in the Security & Compliance Center - Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search.
+- **Office 365 Unified Audit Logs in the Security & Compliance Center**: Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search.
 
-- Use the Azure AD Sign-in logs and other risk reports that are available in the Azure AD portal. Examine the values in these columns:
+- **Office 365 Admin Audit logs in the EAC**: In Exchange Online, you can use the Exchange admin center (EAC) to search for and view entries in the administrator audit log. The administrator audit log records specific actions, based on Exchange Online PowerShell cmdlets, performed by administrators and users who have been assigned administrative privileges. Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.
+
+- **Azure AD Sign-in logs and other risk reports in the Azure AD portal**: Examine the values in these columns:
 
   - Review IP address
 
@@ -86,7 +90,7 @@ You must perform all the following steps to regain access to your account the so
 - If your on-premises identity is federated with Office 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
 
 > [!TIP]
-> It is highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.  You can learn more [here](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.  You can learn more about MFA [here](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### Step 2 Remove suspicious email forwarding addresses
 
@@ -184,7 +188,7 @@ Your Office 365 subscription comes with a powerful set of security capabilities 
 
 ## See also
 
-- [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](/security/office-365-security/detect-and-remediate-outlook-rules-forms-attack.md)
+- [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
 - [Internet Crime Complaint Center](https://www.ic3.gov/preventiontips.aspx)
 

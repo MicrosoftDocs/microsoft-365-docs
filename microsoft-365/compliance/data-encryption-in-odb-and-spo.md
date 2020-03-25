@@ -1,5 +1,7 @@
 ---
 title: "Data Encryption in OneDrive for Business and SharePoint Online"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi

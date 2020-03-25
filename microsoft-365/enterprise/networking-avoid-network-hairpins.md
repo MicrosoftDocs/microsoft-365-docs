@@ -1,5 +1,7 @@
 ---
 title: "Step 3: Avoid network hairpins"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,11 +21,11 @@ description: Understand and remove network hairpins for better performance.
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![Phase 1-Networking](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1-Networking](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 A [network hairpin](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3) happens when traffic bound for a destination is first directed to another intermediate location, such as an on-premises security stack, cloud access broker, or cloud-based web gateway. Here is an example.
 
-![Example of a network hairpin](./media/networking-avoid-network-hairpins/network-hairpin-example.png)
+![Example of a network hairpin](../media/networking-avoid-network-hairpins/network-hairpin-example.png)
 
 A network hairpin could also be caused by poor routing on the Internet due to network service providers. 
 
@@ -39,7 +41,7 @@ If you use cloud-based network or security services for your Microsoft 365 traff
 
 Whenever possible, configure your edge routers to send trusted Microsoft 365 traffic directly, instead of proxying or tunneling through a third-party cloud or cloud-based network security vendor that processes your Internet traffic. 
 
-![Example of a bypassing a network hairpin](./media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
+![Example of a bypassing a network hairpin](../media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
 
 As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step3) for this step.
 
@@ -47,4 +49,4 @@ As an interim checkpoint, you can see the [exit criteria](networking-exit-criter
 
 |||
 |:-------|:-----|
-|![Step 4](./media/stepnumbers/Step4.png)|[Configure traffic bypass](networking-configure-proxies-firewalls.md)|
+|![Step 4](../media/stepnumbers/Step4.png)|[Configure traffic bypass](networking-configure-proxies-firewalls.md)|

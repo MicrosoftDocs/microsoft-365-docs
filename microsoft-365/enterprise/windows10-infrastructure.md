@@ -9,12 +9,14 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
+f1.keywords:
+- NOCSH
 ms.author: greglin
 ---
 
 # Phase 3: Windows 10 Enterprise
 
-![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
 Microsoft 365 Enterprise includes Windows 10 Enterprise, which gives you the tools to do more and stay secure. Windows 10 Enterprise:
 
@@ -34,7 +36,7 @@ There are multiple ways you can deploy Windows 10 Enterprise for your organizati
 
 | Deployment scenario | When to use it |
 |:--- |:--- |
-| [Using Microsoft Endpoint Configuration Manager as an in-place upgrade](windows10-deploy-inplaceupgrade.md) | Select this option if you need to upgrade Windows 7 or Windows 8.1 computers to the <a href="https://aka.ms/windows-10-release-information" target="_blank">current version</a> of Windows 10 Enterprise and your computers are currently managed with <a href="https://aka.ms/introtosccm" target="_blank">Configuration Manager (Current branch)</a>. |
+| [Using Microsoft Endpoint Configuration Manager as an in-place upgrade](windows10-deploy-inplaceupgrade.md) | Select this option if you need to upgrade Windows 7 or Windows 8.1 computers to the <a href="https://aka.ms/windows-10-release-information" target="_blank">current version</a> of Windows 10 Enterprise and your computers are currently managed with <a href="https://docs.microsoft.com/configmgr/core/understand/introduction" target="_blank">Configuration Manager (Current branch)</a>. |
 | [Using Windows Autopilot](windows10-deploy-autopilot.md) | Select this option if you are setting up new Windows computers that have Windows 10 Enterprise, version 1703 or later pre-installed. End users will initiate setup using your desired configuration by entering their work or school account credentials. |
 
 If these deployment scenarios do not fit the needs of your organization, you can learn about other scenarios and understand the capabilities and limitations of each in [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). You can also <a href="https://aka.ms/planforwin10deployment" target="_blank">plan for Windows 10 deployment</a> on your own.
@@ -73,10 +75,10 @@ Peek inside Microsoft and learn how the company [deployed Windows 10 Enterprise 
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [deployed Windows 10 Enterprise](contoso-win10.md).
 
-![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## Next step
 
 |||
 |:-------|:-----|
-|![Step 1](./media/stepnumbers/Step1.png)| [Prepare your organization for Windows 10 Enterprise](windows10-prepare-your-org.md) |
+|![Step 1](../media/stepnumbers/Step1.png)| [Prepare your organization for Windows 10 Enterprise](windows10-prepare-your-org.md) |

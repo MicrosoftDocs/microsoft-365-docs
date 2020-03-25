@@ -1,5 +1,7 @@
 ---
 title: "Learn more about spoof intelligence"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -72,17 +74,17 @@ You can review the senders who are spoofing your domain, or external domains, an
 
 3. In the Security &amp; Compliance Center, expand **Threat Management** \> **Policy** \> **Anti-spam**.
 
-    ![Screenshot showing access to the anti-spam page](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
+    ![Screenshot showing access to the anti-spam page](../../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
 
-4. On the **Anti-spam settings** page in the right pane, select the **Custom** tab, and then scroll down and expand **Spoof intelligence policy**.
+4. On the **Anti-spam settings** page in the right pane, scroll down and expand **Spoof intelligence policy**.
 
-    ![Screenshot showing access to the anti-spam custom settings](../media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![spoof](https://user-images.githubusercontent.com/41186174/71801032-6228f100-3062-11ea-8461-682b910418c2.png)
 
 5. To view the list of senders spoofing your domain, choose **Review new senders** and select the **Your Domains** tab.
 
     If you've already reviewed senders, and want to change some of your previous choices, you can choose **Show me senders I already reviewed** instead. In either case, the following panel appears.
 
-    ![Screenshot showing access to the spoofed senders tab](../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+    ![Screenshot showing access to the spoofed senders tab](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
     Each spoofed user is displayed in a separate row so that you can choose whether to allow or block the sender from spoofing each user individually.
 
@@ -90,7 +92,7 @@ You can review the senders who are spoofing your domain, or external domains, an
 
     To set the policy for domains you do not own, select the **External Domains** tab. Change any sender to **Yes** in the **Allowed to Spoof** column to permit that sender to send unauthenticated email into your organization. Alternatively, if you think Office 365 has made a mistake in permitting the sender to send spoofed email, change the **Allowed to spoof** column to **No**.
 
-    ![Screenshot showing whether a sender is allowed to spoof](../media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
+    ![Screenshot showing whether a sender is allowed to spoof](../../media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
 
 6. Choose **Save** to save any changes.
 
@@ -121,7 +123,7 @@ Even though the anti-spoofing policy appears under the anti-phishing policy in t
 
 6. Next, configure the actions to take when a message is detected as a cross-domain spoof. The default behavior is to move the message to the recipient's junk email folder. The other option is to send the message to the quarantine. For more information about managing messages sent to quarantine, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
 
-    ![Screenshot showing anti-spoofing policy edit options](../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
+    ![Screenshot showing anti-spoofing policy edit options](../../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
 
 7. Make your choice and then choose **Save**.
 

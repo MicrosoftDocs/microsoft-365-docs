@@ -1,5 +1,7 @@
 ---
 title: "Phase 3: Windows 10 Enterprise infrastructure exit criteria"
+f1.keywords:
+- NOCSH
 ms.author: greglin
 author: greg-lindsay
 manager: laurawi
@@ -17,7 +19,7 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 # Phase 3: Windows 10 Enterprise infrastructure exit criteria
 
-![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Make sure your Windows 10 Enterprise infrastructure meets the following required criteria and that you've considered those that are optional.
 
@@ -106,7 +108,7 @@ You deployed Windows Defender Exploit Guard to protect your devices running Wind
 If needed, [Step 5](windows10-enable-security-features.md#windows10-sec-eg) can help you with this requirement.
 
 <a name="crit-windows10-step5c"></a>
-## Required: You are using Microsoft Defender Advanced Threat Protection (Microsoft 365 Enterprise E5 only)
+## Required: You are using Microsoft Defender Advanced Threat Protection (Microsoft 365 E5 only)
 
 You deployed Microsoft Defender Advanced Threat Protection (ATP) to detect, investigate, and respond to advanced threats against your network and devices running Windows 10 Enterprise. 
 
@@ -120,4 +122,4 @@ Your Windows 10 Enterprise infrastructure is ready to begin installation on new 
 
 |||
 |:-------|:-----|
-|![Phase 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [Office 365 ProPlus](office365proplus-infrastructure.md). |
+|![Phase 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [Office 365 ProPlus](office365proplus-infrastructure.md). |

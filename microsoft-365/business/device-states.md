@@ -1,5 +1,7 @@
 ---
 title: "Device states"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -16,19 +18,20 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: "Learn about device states in Microsoft 365 Business."
+description: "Learn about the various device states in the Device actions list in Admin home in Microsoft 365 Business."
 ---
 
 # Device states
 
 Devices in the **Device actions** list (Admin home \> **Device actions**) can have the following states.
   
-![In the Device actions list, you can see the Devices states.](media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
+![In the Device actions list, you can see the Devices states.](../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
   
 |**Status**|**Description**|
 |:-----|:-----|

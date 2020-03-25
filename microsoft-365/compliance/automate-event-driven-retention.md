@@ -1,7 +1,9 @@
 ---
 title: "Automate event-driven retention"
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -114,13 +116,13 @@ In addition to this, the retention period needs to be calculated for each of the
 
 The diagram below shows how there can be multiple labels that are associated with a single event. Here all the files under Worker’s compensation label and all the files under Employee benefits label are both associated with a single event, which is the employee leaving the organization. Each of these different files has different retention clocks. So, when an employee leaves the organization, these files within each label experience a different retention period. Triggering all these different retention clocks for each file type or label for each employee is a very challenging task. Imagine doing this for multiple employees.
 
-![Diagram of event type, event, and labels](media/automate-event-driven-retention-event-diagram-employee-leaving.png)
+![Diagram of event type, event, and labels](../media/automate-event-driven-retention-event-diagram-employee-leaving.png)
 
 Hence an automated process to trigger these different retention clocks for multiple employees will be time-saving, error-free, and extremely efficient.
 
 **Configuring Automated Event Based Retention for this scenario:**
 
-![Diagram of roles and actions for scenario of employee leaving org](media/automate-event-driven-retention-employee-termination-diagram.png)
+![Diagram of roles and actions for scenario of employee leaving org](../media/automate-event-driven-retention-employee-termination-diagram.png)
 
   - Admin creates employee folders to the Document set such as Jane Doe, John Smith.
 
@@ -144,9 +146,9 @@ Hence an automated process to trigger these different retention clocks for multi
 
 Step 1- Create a flow to create an event using the Microsoft 365 REST API
 
-![Using Flow to create an event](media/automate-event-driven-retention-flow-1.png)
+![Using Flow to create an event](../media/automate-event-driven-retention-flow-1.png)
 
-![Using flow to call the REST API](media/automate-event-driven-retention-flow-2.png)
+![Using flow to call the REST API](../media/automate-event-driven-retention-flow-2.png)
 
 ##### Create an event
 
@@ -416,7 +418,7 @@ A Customer Relationship Management (CRM) system can work with Microsoft 365 and 
 
 **Configuring Automated Event Based Retention for this scenario:**
 
-![Diagram of roles and tasks for contract expiration scenario](media/automate-event-driven-retention-contract-expiration.png)
+![Diagram of roles and tasks for contract expiration scenario](../media/automate-event-driven-retention-contract-expiration.png)
 
   - Admin creates a SharePoint library with various folders for each contract type.
 
@@ -444,7 +446,7 @@ An Enterprise Resource Planning (ERP) system can work with Microsoft 365 and Mic
 
 **Configuring Automated Event Based Retention for this scenario:**
 
-![Diagram of roles and tasks for product lifecycle scenario](media/automate-event-driven-retention-product-lifecycle-expiration.png)
+![Diagram of roles and tasks for product lifecycle scenario](../media/automate-event-driven-retention-product-lifecycle-expiration.png)
 
   - Admin creates product folders in the Document set such as Product 1, Product 2, and so on.
 

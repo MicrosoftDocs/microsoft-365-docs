@@ -1,9 +1,11 @@
 ---
-title: "Quarantine email messages in Office 365"
-ms.author: tracyp
-author: MSFTTracyP
+title: "Quarantine in Office 365"
+f1.keywords:
+- NOCSH
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 6/29/2018
+ms.date:
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,26 +17,25 @@ search.appverid:
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
-description: "You can set up a quarantine for incoming email messages in Office 365 where incoming email messages that have been filtered as spam, bulk, phishing mail, and malware can be kept for later review."
+description: "Quarantine in Office 365 holds potentially dangerous or unwanted messages. Admins and end-users can access quarantine."
 ---
 
-# Quarantine email messages in Office 365
+# Quarantine in Office 365
 
-You can set up quarantine for incoming email messages in Office 365 where messages that have been filtered as spam, bulk mail, phishing mail, mail that contains malware, and mail that matched a specified mail flow rule can be kept for later review.
-  
-By default, filtered messages are sent to the recipients' Junk Email folder, except for mail that contains malware which is sent to quarantine by default. As an admin, you can set up content filter policies to send all filtered messages to quarantine instead. The different actions that you can take for content-filtered messages depend on the [Configure your spam filter policies](configure-your-spam-filter-policies.md).
-  
-Both users and admins can work with quarantined messages. Users can work with just their own filtered messages in quarantine. Admins can search for and manage quarantined messages for all users.
+If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, quarantine is available to hold potentially dangerous or unwanted messages.
 
-> [!NOTE]
-> Phish messages and messages quarantined by mail flow rule (also known as transport rule) actions are only available in the admin quarantine.
-  
-Learn more about working with quarantined messages:
-  
-- [Manage quarantined messages as an administrator](manage-quarantined-messages-and-files.md)
+Anti-malware policies automatically quarantine a message if *any* attachment is found to contain malware. For more information, see [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
 
-- [Find and release quarantined messages as a user](find-and-release-quarantined-messages-as-a-user.md)
+By default, anti-spam polices quarantine phishing messages, and deliver spam and bulk email messages to the user's Junk Email folder. But, you can also create and customize anti-spam policies to quarantine spam and bulk-email messages. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
-- [Use user spam notifications to release and report spam-quarantined messages](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+Both users and admins can work with quarantined messages:
 
-- [Quarantine FAQ](quarantine-faq.md)
+- Admins can work with all types of quarantined messages for all users. Only admins can work with messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
+
+- Users can work with quarantined messages where they are a recipient if the message was quarantined as spam, bulk email, or (as of April, 2020) phishing. For more information, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).
+
+  To prevent users from managing their own quarantined phishing messages, admins can configure a different action for the **Phishing email** filtering verdict in anti-spam policies. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+
+- Admins and users can report false positives to Microsoft in quarantine.
+
+For more information about, quarantine, see [Quarantine FAQ](quarantine-faq.md).

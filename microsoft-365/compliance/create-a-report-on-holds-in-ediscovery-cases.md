@@ -1,5 +1,7 @@
 ---
 title: "Create a report on holds in eDiscovery cases in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -169,7 +171,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
     Here's an example of running the CaseHoldsReport.ps1 script. 
     
-    ![The output after running the CaseHoldsReport.ps1 script](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![The output after running the CaseHoldsReport.ps1 script](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## More information
 

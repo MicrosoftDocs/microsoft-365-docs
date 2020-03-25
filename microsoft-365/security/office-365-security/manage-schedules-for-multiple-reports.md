@@ -1,5 +1,7 @@
 ---
 title: "Manage schedules for multiple reports in the Security &amp; Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -23,7 +25,7 @@ In the Security &amp; Compliance Center, several [reports and insights](reports-
 > [!IMPORTANT]
 > Make sure that you have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. 
   
-![In the Security &amp; Compliance Center, choose Reports \> Manage schedules](../media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
+![In the Security &amp; Compliance Center, choose Reports \> Manage schedules](../../media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in. This takes you to the Security & Compliance Center.
 

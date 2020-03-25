@@ -1,5 +1,7 @@
 ---
 title: "Step 5: Configure Office 365 Data Loss Prevention"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +21,7 @@ description: Understand and deploy Office 365 Data Loss Prevention in Microsoft 
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![Phase 6: Information Protection](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Information Protection](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 With data loss prevention (DLP) policies in the Office 365 Security & Compliance center, you can identify, monitor, and automatically protect sensitive information across Microsoft 365. With DLP policies, you can:
 
@@ -53,6 +55,6 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 |||
 |:-------|:-----|
-|![Step 6](./media/stepnumbers/Step6.png)|[Configure email encryption](infoprotect-email-encryption.md)|
+|![Step 6](../media/stepnumbers/Step6.png)|[Configure email encryption](infoprotect-email-encryption.md)|
 
 

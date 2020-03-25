@@ -1,8 +1,11 @@
 ---
 title: "Export report fields in Office 365 Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -14,7 +17,7 @@ ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: "Describes all the fields that are included in the Export reports for Advanced eDiscovery."
 ---
 
-# Export report fields in Office 365 Advanced eDiscovery
+# Export report fields in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -129,7 +132,7 @@ The following table lists the fields for each export template.
    
 ## Related Topics
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Exporting case data with Advanced eDiscovery](export-case-data-in-advanced-ediscovery.md)
   

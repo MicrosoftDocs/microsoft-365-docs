@@ -1,7 +1,9 @@
 ---
 title: "Overview of event-driven retention"
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -42,9 +44,9 @@ A label based on an event has the same capabilities as any label in Office 365. 
 
 To successfully use event-driven retention, it's important to understand the relationship between event types, labels, events, and asset IDs as illustrated here. An explanation follows the diagram.
   
-![Diagram of event type, labels, events, and asset IDs](media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
+![Diagram of event type, labels, events, and asset IDs](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
   
-![Diagram of event type, labels, events, and asset IDs](media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
+![Diagram of event type, labels, events, and asset IDs](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
 1. You create labels for different types of content and then associate them with a type of event. For example, labels for different types of product files and records are associated with an event type named Product Lifetime because those records must be retained for 10 years from the time the product reaches its end of life.
     
@@ -56,7 +58,7 @@ To successfully use event-driven retention, it's important to understand the rel
     
   - Keywords (for Exchange items). In this example, the organization uses a product code in messages containing product records, so the keyword for Exchange items is the same as the asset ID for SharePoint and OneDrive documents.
     
-  - The date when the event occurred. This date is used as the start of the retention period. This date can only be the current or a future date, not a past date.
+  - The date when the event occurred. This date is used as the start of the retention period. This date can be the current, a past, or a future date.
     
 4. After you create an event, that event date is synced to all of the content that has a label of that event type and that contains the specified asset ID or keyword. Like any label, this syncing can take up to 7 days. In the diagram above, all of the items circled in red have their retention period triggered by this event - in other words, when this product reaches its end of life, that event triggers the retention period for that product's records.
     
@@ -68,7 +70,7 @@ Finally, remember that each label has its own retention settings. In this exampl
 
 Here's the high-level workflow for event-driven retention. More detailed steps follow below.
   
-![Diagram of workflow for setting up event-driven retention](media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
+![Diagram of workflow for setting up event-driven retention](../media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
   
 > [!TIP]
 > See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePont to auto-apply retention labels and implement event-driven retention.
@@ -87,7 +89,7 @@ Also note that event-driven retention requires retention settings that:
     
 - Delete the content automatically or trigger a disposition review at the end of the retention period.
     
-![Option to base a label on an event](media/a4902281-5196-4194-9737-f30231d95861.png)
+![Option to base a label on an event](../media/a4902281-5196-4194-9737-f30231d95861.png)
   
 ### Step 2: Choose an event type for that label
 
@@ -97,13 +99,13 @@ For example, if you create an event type named Product Lifetime, you'll create e
   
 Note that once you choose an event type and create the label, the event type cannot be changed.
   
-![Options to create or choose an event type](media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
+![Options to create or choose an event type](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
 ### Step 3: Publish or auto-apply the label
 
 Just like any label, you need to publish or auto-apply an event-based label, so that it's manually or automatically applied to content. You can do this under **Classification** > **Retention labels** page.
   
-![Options to publish or auto-apply retention label](media/options-to-publish-auto-apply-retention-label.png)
+![Options to publish or auto-apply retention label](../media/options-to-publish-auto-apply-retention-label.png)
 
 ### Step 4: Enter an asset ID
 
@@ -117,7 +119,7 @@ After an event-driven label is applied to content, you can enter an asset ID for
     
 Understand that Asset ID is simply another document property in SharePoint and OneDrive for Business. Your organization may already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event - see Step 6 below. The important point is that your organization must use some property:value combination in the document properties to associate that item with an event type.
   
-![Text box to enter an Asset ID](media/6d31628e-7162-4370-a8d7-de704aafa350.png)
+![Text box to enter an Asset ID](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### Step 5: Create an event
 
@@ -127,7 +129,7 @@ When a particular instance of that event type occurs - for example, a product re
 
 When you create the event, choose the same event type used by the label in step 2 - for example, Product Lifetime. Only content with labels applied to it of that event type will have its retention period triggered.
   
-![Option in Event settings to choose an event type](media/11663591-5628-419e-9537-61eb8f5c741f.png)
+![Option in Event settings to choose an event type](../media/11663591-5628-419e-9537-61eb8f5c741f.png)
   
 ### Step 7: Enter keywords or an asset ID
 
@@ -141,7 +143,7 @@ For Exchange items, you can include keywords. You can refine your query by using
   
 Finally, choose the date when the event occurred; this date is used as the start of the retention period. After you create an event, that event date is synced to all of the content with a label of that event type, asset ID, and keywords. Like any label, this syncing can take up to 7 days.
   
-![Event settings page](media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
+![Event settings page](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
   
 ## Use Content Search to find all content with a specific label or asset ID
 

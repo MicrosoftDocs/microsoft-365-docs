@@ -1,5 +1,7 @@
 ---
 title: "Turn Office 365 audit log search on or off"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -46,7 +48,7 @@ You can use the Security & Compliance Center or PowerShell to turn on audit log 
 
 2. Click **Turn on auditing**.
     
-    ![Click Turn on auditing](media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
+    ![Click Turn on auditing](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
     The banner is updated to say the audit log is being prepared and that you can search for user and admin activity in a few hours.
     

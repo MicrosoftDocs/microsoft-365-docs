@@ -1,5 +1,7 @@
 ---
 title: "Walkthrough - From a detailed report to an insight"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -27,13 +29,13 @@ This is one of several walkthroughs for the Security &amp; Compliance Center. To
 
 Let's walk through the flow from a detailed report to an insight and actions. (This is a brief [anti-spam and anti-malware](anti-spam-and-anti-malware-protection.md) example.) 
   
-1. We begin with [Security &amp; Compliance Center](https://protection.office.com) reports. (Go to **Reports** \> **Dashboard**.) <br/>![In the Security &amp; Compliance Center, go to Reports \> Dashboard](../media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. We begin with [Security &amp; Compliance Center](https://protection.office.com) reports. (Go to **Reports** \> **Dashboard**.) <br/>![In the Security &amp; Compliance Center, go to Reports \> Dashboard](../../media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
-2. We choose a report to get a more detailed view. (Choose a report, such as the **Threat Protection Status** report.)<br/>![Threat Protection Status report showing insights](../media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
+2. We choose a report to get a more detailed view. (Choose a report, such as the **Threat Protection Status** report.)<br/>![Threat Protection Status report showing insights](../../media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
 3. We notice an insights indicator in the chart as well as below the report. Positioning the mouse pointer on the insights marker gives some additional details. (Hover over the insights marker to see additional details.)
     
-4. Clicking either the insights marker in the chart or the insights widget about malware below the chart opens a details pane. (Below the chart, select the insights widget.)<br/>![Details for insights about malware](../media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>The details pane provides information and recommendations to consider, including reviewing policies, conducting further exploration, and editing status. ([Learn more about anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md).)
+4. Clicking either the insights marker in the chart or the insights widget about malware below the chart opens a details pane. (Below the chart, select the insights widget.)<br/>![Details for insights about malware](../../media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>The details pane provides information and recommendations to consider, including reviewing policies, conducting further exploration, and editing status. ([Learn more about anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md).)
     
 In this way, we can move from a detailed report to an insight and recommended actions. 
   

@@ -1,5 +1,7 @@
 ---
 title: "Export a Content Search report"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -93,7 +95,7 @@ The first step is to prepare the report for downloading to your computer exporti
     The search results report is prepared for downloading, which means the report documents will be uploaded to the Azure Storage area in the Microsoft cloud. When the report is ready for download, the **Download report** link is displayed under **Export report to a computer** in the details pane. 
     
 > [!NOTE]
-> You can also export a report for a Content Search that's associated with an eDiscovery case. To do this, go to **eDiscovery** \> **eDiscovery**, select a case, and click **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). On the **Searches** page, select a search, and then click **Export** ![Export search results icon](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> **Export a report**. 
+> You can also export a report for a Content Search that's associated with an eDiscovery case. To do this, go to **eDiscovery** \> **eDiscovery**, select a case, and click **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). On the **Searches** page, select a search, and then click **Export** ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> **Export a report**. 
   
 ## Step 2: Download the report
 
@@ -131,7 +133,7 @@ The next step is to download the report from the Azure Storage area to your loca
     The **eDiscovery Export Tool** displays status information about the export process, including an estimate of the number (and size) of the remaining items to be downloaded. When the export process is complete, you can access the files in the location where they were downloaded. 
     
 > [!NOTE]
-> You can download the report for a Content Search that's associated with an eDiscovery case. To do this, go to **eDiscovery** \> **eDiscovery**, select a case, and click **Edit** ![Edit icon](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). On the **Exports** page, select an report export, and then click **Download report** in the details pane. 
+> You can download the report for a Content Search that's associated with an eDiscovery case. To do this, go to **eDiscovery** \> **eDiscovery**, select a case, and click **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). On the **Exports** page, select an report export, and then click **Download report** in the details pane. 
   
 ## What's included in the report
 

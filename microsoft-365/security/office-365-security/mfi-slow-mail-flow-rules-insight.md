@@ -1,5 +1,7 @@
 ---
 title: "Slow mail flow rules insight"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -24,11 +26,11 @@ Inefficient mail flow rules (also known as transport rules) can lead to mail flo
 
 The insight will help you to identify and fine-tune mail flow rules to help reduce mail flow delays.
 
-![A slow mail flow rules insight in the mail flow dashboard in the Security & Compliance Center](../media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![A slow mail flow rules insight in the mail flow dashboard in the Security & Compliance Center](../../media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
 When you click **View details**, a flyout pane appears where you can review the rule. In the flyout pane, can also click **view sample messages** to see what kind of messages are impacted by the rule.
 
-![Flyout pane after clicking View details in a slow mail flow rules insight in the mail flow dashboard](../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+![Flyout pane after clicking View details in a slow mail flow rules insight in the mail flow dashboard](../../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
 
 ## See also
 

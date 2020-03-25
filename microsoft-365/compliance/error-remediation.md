@@ -1,5 +1,7 @@
 ---
 title: "Error remediation when processing data for an investigation"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -34,15 +36,15 @@ Use the following workflow to remediate files with errors in Data Investigations
 
 3. Click **+ New error remediation**.
 
-    ![Error remediation](media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+    ![Error remediation](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
     The error remediation session begins, starting with a preparation stage where the files with errors are copied to a secure Azure location so that they can be downloaded.
 
-    ![Preparing error remediation](media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![Preparing error remediation](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
 4. After the preparation is completed, click **Next: Download files** to proceed with download.
 
-    ![Download files](media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![Download files](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
 5. To download files, specify the **Destination path for download**. This is a path on your local computer where the file should be downloaded.  The default path, %USERPROFILE%\Downloads\errors, points to the logged-in user's downloads folder; this can be changed as needed.
 
@@ -56,7 +58,7 @@ Use the following workflow to remediate files with errors in Data Investigations
 
     The files will be downloaded.
 
-    ![Preparing error remediation](media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![Preparing error remediation](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > If you have issues running this command, see [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -68,13 +70,13 @@ Use the following workflow to remediate files with errors in Data Investigations
 
 8. Now, return to Data Investigations (Preview) and click **Next: Upload files**.  This will move to the next step where you can now upload the files.
 
-    ![Upload Files](media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![Upload Files](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. Specify the location of the remediated files in the **Path to location of files** text box, then click **Copy to clipboard**.
 
 10. Paste the command into a Windows Command Prompt and press **Enter** to upload the files.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Finally, return to Data Investigations (Preview) and click **Next: Process files**.
 

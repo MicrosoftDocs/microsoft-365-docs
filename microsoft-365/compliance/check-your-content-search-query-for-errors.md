@@ -1,5 +1,7 @@
 ---
 title: "Check your Content Search query for errors"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,7 +19,7 @@ description: "Check your keyword query for Content Search for errors and typos, 
 
 When you create or edit a Content Search, you can have Office 365 check your query for unsupported characters and lowercase Boolean operators. How? Just click **Check query for typos** on the query page of a Content Search. 
   
-![Click "Check query for typos" to check your search query for unsupported characters](media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
+![Click "Check query for typos" to check your search query for unsupported characters](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   
 Here's a list of the unsupported characters that we check for. Unsupported characters are often hidden, and they typically cause a search error or return unintended results.
   
@@ -33,7 +35,7 @@ Here's a list of the unsupported characters that we check for. Unsupported chara
 
 If unsupported characters are found in your query, a warning message is displayed that says unsupported characters were found and suggests an alternative. You then have the option keep the original query or replace it with the suggested revised query. Here's an example of the warning message that's displayed after you click **Check query for typos** for the search query in the previous screenshot. Notice that the original query contains smart quotes and lowercase Boolean operators. 
   
-![A warning message is displayed with a suggested revision for your query](media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
+![A warning message is displayed with a suggested revision for your query](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
   
 ## How to prevent unsupported characters in your search queries
 

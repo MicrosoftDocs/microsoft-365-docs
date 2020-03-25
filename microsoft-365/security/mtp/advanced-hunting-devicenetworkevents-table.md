@@ -1,13 +1,15 @@
 ---
 title: DeviceNetworkEvents table in the advanced hunting schema 
 description: Learn about network connection events you can query from the DeviceNetworkEvents table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, devicenetworkevents, NetworkCommunicationEvents, network connection, remote ip, local ip
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, devicenetworkevents, NetworkCommunicationEvents, network connection, remote ip, local ip
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+f1.keywords:
+- NOCSH
 ms.author: lomayor
 author: lomayor
 ms.localizationpriority: medium
@@ -22,7 +24,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+
 
 The `DeviceNetworkEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about network connections and related events. Use this reference to construct queries that return information from this table.
 
@@ -39,7 +41,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `RemoteUrl` | string | URL or fully qualified domain name (FQDN) that was being connected to |
 | `LocalIP` | string | IP address assigned to the local machine used during communication |
 | `LocalPort` | int | TCP port on the local machine used during communication |
-| `Protocol` | string | IP protocol used, whether TCP or UDP |
+| `Protocol` | string | Protocol used during the communication |
 | `LocalIPType` | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | `RemoteIPType` | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |

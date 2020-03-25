@@ -1,6 +1,8 @@
 ---
 title: "Contoso's IT infrastructure and business needs"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -26,7 +28,7 @@ Contoso uses a mostly centralized on-premises IT infrastructure, with applicatio
 
 Figure 1 shows a headquarters office with application datacenters, a DMZ, and the Internet.
 
-![Contoso's existing IT infrastructure](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Contoso's existing IT infrastructure](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 **Figure 1: Contoso's existing IT infrastructure**
  
@@ -108,7 +110,7 @@ Management:
 
 ## Mapping Contoso's business needs to Microsoft 365 Enterprise
 
-Contoso's IT department determined the following mapping of business needs to Microsoft 365 Enterprise E5 features prior to deployment:
+Contoso's IT department determined the following mapping of business needs to Microsoft 365 E5 features prior to deployment:
 
 ||||
 |:-------|:-----|:-----|

@@ -1,5 +1,7 @@
 ---
 title: "How Office 365 ATP Safe Links works"
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,6 +17,8 @@ description: "The Safe Links feature provides time-of-click verification of hype
 ---
 
 # How Office 365 ATP Safe Links works
+> [!IMPORTANT] 
+> For Office 365 ATP Safe Links to operate correctly, all of the Office 365 services need to be at the same version.
          
 ## How ATP Safe Links works with URLs in email
 
@@ -31,9 +35,7 @@ At a high level, here's how [ATP Safe Links](atp-safe-links.md) protection works
 5. The user opens an email message, and clicks on a URL in the email message.
     
 6. The ATP Safe Links feature immediately checks the URL before opening the website. The URL is identified as blocked, malicious, or safe.
-    
-   - If the URL is to a website that is included in a [custom "Do not rewrite" URLs list](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) for a policy that applies to the user, the website opens. 
-    
+        
    - If the URL is to a website that is included in the organization's [custom blocked URLs list](set-up-a-custom-blocked-urls-list-wtih-atp.md), a [warning page](atp-safe-links-warning-pages.md) opens. 
     
    - If the URL is to a website that has been determined to be malicious, a [warning page](atp-safe-links-warning-pages.md) opens. 
@@ -51,8 +53,6 @@ At a high level, here's how [ATP Safe Links](atp-safe-links.md) protection works
 2. A user opens a Word, Excel, PowerPoint, OneNote (in the browser), or Visio (on desktop), and signs in to Office 365 Enterprise using their work or school account. The document contains URLs.
     
 3. When the user clicks on a URL in the document, the link is checked by the ATP Safe Links service.
-    
-   - If the URL is to a website that is included in a [custom "Do not rewrite" URLs list](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) for a policy that applies to the user, that user is taken to the website. 
     
    - If the URL is to a website that is included in the organization's [custom blocked URLs list](set-up-a-custom-blocked-urls-list-wtih-atp.md), the user is taken to a [warning page](atp-safe-links-warning-pages.md).
     

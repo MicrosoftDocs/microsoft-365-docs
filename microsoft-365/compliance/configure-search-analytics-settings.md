@@ -1,5 +1,7 @@
 ---
 title: "Configure search and analytics settings"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

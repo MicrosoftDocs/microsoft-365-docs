@@ -1,5 +1,7 @@
 ---
 title: "eDiscovery in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -33,7 +35,7 @@ The following table contains links to topics that will help you use the Content 
   
 |**Topic**|**Description**|
 |:-----|:-----|
-|[Run a Content Search in the Security & Compliance Center](run-a-content-search-in-the-security-and-compliance-center.md) <br/> |Learn how to use the Content Search tool to search mailboxes, public folders, Office 365 Groups, Microsoft Teams, SharePoint Online sites, One Drive for Business locations, and Skype for Business conversations in your Office 365 organization in a single search.  <br/> |
+|[Run a Content Search](content-search.md) <br/> |Learn how to use the Content Search tool to search mailboxes, public folders, Office 365 Groups, Microsoft Teams, SharePoint Online sites, One Drive for Business locations, and Skype for Business conversations in your Office 365 organization in a single search.  <br/> |
 |[Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md) <br/> |Learn about the email and file properties and search conditions you can use to search for content in mailboxes and sites in your Office 365 organization.  <br/> |
 |[View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md) <br/> |Learn how to use search statistics to display and compare the statistics for one or more content searches, and to configure new and existing searches to return statistics for each keyword in the search query.  <br/> |
 |[Bulk edit Content Searches in the Security & Compliance Center](bulk-edit-content-searches.md) <br/> |Learn how to bulk edit the search queries and content locations of one or more Content Searches.  <br/> |
@@ -59,7 +61,7 @@ The following table contains links to topics that will help you use eDiscovery c
   
 |**Topic**|**Description**|
 |:-----|:-----|
-|[Manage eDiscovery cases in the Security & Compliance Center](manage-ediscovery-cases.md) <br/> |Learn how to create and manage eDiscovery cases in the Security & Compliance Center.  <br/> |
+|[Manage eDiscovery cases in the Security & Compliance Center](ediscovery-cases.md) <br/> |Learn how to create and manage eDiscovery cases in the Security & Compliance Center.  <br/> |
 |[Assign eDiscovery permissions in the Office 365 Security & Compliance Center](assign-ediscovery-permissions.md) <br/> |Learn how to assign eDiscovery permissions in the Security & Compliance Center. You can assign permissions to let users create eDiscovery cases, create holds associated with an eDiscovery case, run Content Searches, preview search results, and export search results.  <br/> |
 |[Create a report on holds in eDiscovery cases in Office 365](create-a-report-on-holds-in-ediscovery-cases.md) <br/> |Learn how to use the Windows PowerShell script in this article to generate a report that contains information about all the holds that are associated with eDiscovery cases in the Security & Compliance Center.  <br/> |
 |[Use a script to add users to a hold in an eDiscovery case in the Security & Compliance Center](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |Learn how to use the Windows PowerShell script in this article to quickly add the mailboxes and OneDrive for Business sites for a list of users to a new hold that's associated with an eDiscovery case in the Security & Compliance Center.  <br/> |

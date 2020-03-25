@@ -1,5 +1,7 @@
 ---
 title: "View label usage with label analytics"
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -29,7 +31,7 @@ For example, with label analytics, you can view the:
 
 You can find label analytics in the [Microsoft 365 compliance center](https://compliance.microsoft.com/labelanalytics) or [Microsoft 365 security center](https://security.microsoft.com/labelanalytics) > **Classification** > **Label analytics**.
 
-![Label analytics page](media/label-analytics-page.png)
+![Label analytics page](../media/label-analytics-page.png)
 
 ## Sensitivity label usage
 
@@ -43,7 +45,7 @@ For sensitivity label usage:
 - To see the count for each top label, point to the bar graph and read the tool tip that appears.
 - The report shows where sensitivity labels are applied per app (whereas retention labels are shown per location).
 
-![Sensitivity label usage report](media/sensitivity-label-usage-report.png)
+![Sensitivity label usage report](../media/sensitivity-label-usage-report.png)
 
 ## Retention label usage
 
@@ -56,7 +58,7 @@ For retention label usage:
 - The report shows where retention labels are applied per location (whereas sensitivity labels are shown per app).
 - For retention labels, this is a summary of the all-time data in your tenant; it’s not filtered to a specific date range. By contrast, the [Label Activity Explorer](view-label-activity-for-documents.md) shows data from only the past 30 days.
 
-![Retention label usage report](media/retention-label-usage-report.png)
+![Retention label usage report](../media/retention-label-usage-report.png)
 
 ## View all content with a specific retention label
 
@@ -64,15 +66,15 @@ From the retention label usage report, you can quickly explore all content with 
 
 First, choose **View Details** at the bottom of the report.
 
-![View Details option at bottom of retention label usage report](media/retention-label-usage-view-details.png)
+![View Details option at bottom of retention label usage report](../media/retention-label-usage-view-details.png)
 
 Then choose a retention label > **Explore items** in the right pane.
 
-![Explore items option in right pane](media/retention-label-usage-explore-items.png)
+![Explore items option in right pane](../media/retention-label-usage-explore-items.png)
 
 For that label, you can choose the **Activity** tab to view a count of items with that label by location.
 
-![Activity tab for a retention label](media/retention-label-usage-activity-tab.png)
+![Activity tab for a retention label](../media/retention-label-usage-activity-tab.png)
 
 You can also choose the **Items with this label** tab. Then you can drill into specific locations:
 
@@ -81,7 +83,7 @@ You can also choose the **Items with this label** tab. Then you can drill into s
 
 When you choose a mailbox or site collection, you can view a list of items with that retention label in that location.
 
-![Items with this label tab showing all items with that retention label](media/retention-label-usage-content-explorer.png)
+![Items with this label tab showing all items with that retention label](../media/retention-label-usage-content-explorer.png)
 
 ## Permissions
 

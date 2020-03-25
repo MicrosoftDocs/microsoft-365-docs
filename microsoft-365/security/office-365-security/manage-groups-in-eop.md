@@ -1,5 +1,7 @@
 ---
 title: "Manage groups in EOP"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -48,7 +50,7 @@ You can create two types of groups for your Exchange organization:
 
 1. In the EAC, go to **Recipients** \> **Groups**.
 
-2. Click **New** ![Add Icon](../media/ITPro-EAC-AddIcon.gif), and then click **Distribution group** or **Security group**, depending on your needs.
+2. Click **New** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif), and then click **Distribution group** or **Security group**, depending on your needs.
 
 3. On the **New distribution group** or **New security group** page, configure the following settings:
 
@@ -58,12 +60,12 @@ You can create two types of groups for your Exchange organization:
 
    - **Description**: Type a description of the group so that people will know the purpose of the group.
 
-   - **Owners**: By default, the person who creates the group is the owner. You can add an owner by choosing **Add** ![Add Icon](../media/ITPro-EAC-AddIcon.gif). All groups must have at least one owner.
+   - **Owners**: By default, the person who creates the group is the owner. You can add an owner by choosing **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif). All groups must have at least one owner.
 
      > [!NOTE]
      > Owners don't have to be members of the group.
 
-   - **Members**: Use this section to add group members and to specify whether approval is required for people to join or leave the group. To add members to the group, click **Add** ![Add Icon](../media/ITPro-EAC-AddIcon.gif).
+   - **Members**: Use this section to add group members and to specify whether approval is required for people to join or leave the group. To add members to the group, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif).
 
 4. Click **OK** to return to the original page.
 
@@ -75,9 +77,9 @@ You can create two types of groups for your Exchange organization:
 
 2. Do one of the following steps:
 
-   - To edit a group: In the list of groups, click the group that you want to view or change, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.gif). You can update general settings, add or remove group owners, and add or remove group members as needed.
+   - To edit a group: In the list of groups, click the group that you want to view or change, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.gif). You can update general settings, add or remove group owners, and add or remove group members as needed.
 
-   - To remove a group: Select the group and click **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif).
+   - To remove a group: Select the group and click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif).
 
 3. When you're finished making your changes, click **Save**.
 

@@ -1,5 +1,7 @@
 ---
 title: "Export Content Search results"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -260,11 +262,11 @@ Here's more information about exporting search results.
     
     To export partially indexed items from all content locations for a search, configure the search to return all items (by removing any keywords from the search query) and then export only partially indexed items when you export the search results.
     
-    ![Use the third export option to export only unindexed items](media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
+    ![Use the third export option to export only unindexed items](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
 - When exporting search results from SharePoint or OneDrive for Business sites, the ability to export unindexed items also depends on the export option that you select and whether a site that was searched contains an indexed item that matches the search criteria. For example, if you search specific SharePoint or OneDrive for Business sites and no search results are found, then no unindexed items from those sites will be exported if you choose the second export option to export both indexed and unindexed items. If an indexed item from a site does match the search criteria, then all unindexed items from that site will be exported when exporting both indexed and unindexed items. The following illustration describes the export options based on whether a site contains an indexed item that matches the search criteria.
     
-    ![Choose the export option based on whether a site contains an indexed item that matches the search criteria](media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
+    ![Choose the export option based on whether a site contains an indexed item that matches the search criteria](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
     a. Only indexed items that match the search criteria are exported. No partially indexed items are exported.

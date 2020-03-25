@@ -1,5 +1,7 @@
 ---
 title: "Microsoft Compliance Score FAQ"
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -36,7 +38,7 @@ Compliance Score and Compliance Manager share the same backend, but they are in 
 
 Compliance Score is useful for everyone in your organization who plays a role in monitoring compliance and carrying out activities to help comply with regulatory standards. With Compliance Score, you don't need to be familiar with regulations and standards to help improve your organization's data protection. Compliance Score is the optimal starting place for all users. From here, you can see your compliance score, learn which recommended actions can help minimize risks, and, in many cases, launch right into the solutions to take those actions.
 
-For now, Compliance Manager is the place where users can manage assessments and create custom templates to build assessments. Learn more about [which actions are supported only by Compliance Manager](compliance-score-release-notes.md#compliance-score-and-compliance-manager-relationship) during public preview.
+For now, Compliance Manager is the place where users can manage assessments and create custom templates to build assessments. Learn more about [which actions are supported only by Compliance Manager](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager) during public preview.
 
 ## If I have a high score, does it mean I'm fully compliant?
 

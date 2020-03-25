@@ -1,5 +1,7 @@
 ---
 title: "Microsoft 365 Business security and compliance features"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -15,11 +17,12 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
-description: "Learn about the security features that come with Microsoft 365 Business."
+description: "Learn about the security features that come with Microsoft 365 Business to help safeguard your data on PCs, phones, and tablets."
 ---
 
 # Microsoft 365 Business security and compliance features
@@ -28,7 +31,7 @@ Microsoft 365 Business offers simplified security features to help safeguard you
     
 ## Microsoft 365 Business admin center security features
 
-[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 You can manage many of the Microsoft 365 Business security features in the admin center, which gives you a simplified way to turn these features on or off. In the admin center, you can do the following:
   
@@ -116,6 +119,6 @@ Yes, these features are available in all markets where Microsoft 365 Business is
     
 2. In the left nav, locate **Admin centers** and expand it. 
     
-    ![In the left nav in the Microsoft 365 admin center, choose Admin centers.](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
+    ![In the left nav in the Microsoft 365 admin center, choose Admin centers.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
 3. Choose **Security &amp; Compliance** to go to Security &amp; compliance center.

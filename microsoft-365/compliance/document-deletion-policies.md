@@ -1,7 +1,9 @@
 ---
 title: "Overview of document deletion policies"
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -33,7 +35,7 @@ Document deletion policies are powerful yet flexible—for example, you can:
     
 You create and manage document deletion policies by using the Document Deletion Policy Center. Alternatively, you can create the policy center manually by [creating the site collection](https://go.microsoft.com/fwlink/p/?LinkID=404342) and choosing **Compliance Policy Center** on the **Enterprise** tab. Each tenant can have only one Document Deletion Policy Center. 
   
-![Home page of Document Deletion Policy Center](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![Home page of Document Deletion Policy Center](../media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## When to use document deletion policies
 
@@ -49,7 +51,7 @@ Each type of policy works best for a specific type of site or data. For example,
   
 Document deletion policies don't replace records management or information management policies, which work best with structured data and content types. Instead, you should use document deletion policies when you need to broadly manage the automatic deletion of unstructured data such as OneDrive for Business sites and team sites.
   
-![Diagram showing retention options for site content](media/IP-Retention-policies-for-site-content.png)
+![Diagram showing retention options for site content](../media/IP-Retention-policies-for-site-content.png)
   
 If you apply a document deletion policy to a site that already uses content type policies or information management policies for a list or library, those policies are ignored while the document deletion policy is in effect. This means you should plan for a site to use only policies meant for structured or unstructured content, not both. For more information on how document deletion policies override other policies, see [Apply or remove a document deletion policy for a site](apply-or-remove-a-document-deletion-policy-for-a-site.md).
   
@@ -67,13 +69,13 @@ A document deletion policy contains one or more delete rules that specify:
     
 If a policy contains more than one rule, site owners can select the rule that best applies to their content.
   
-![New deletion rule page](media/IP-New-deletion-rule.png)
+![New deletion rule page](../media/IP-New-deletion-rule.png)
   
 ## Policies and assignments
 
 After you create a document deletion policy, you can assign it to a site collection template — for example, you can assign a policy to the OneDrive for Business template so that it includes every user's OneDrive site. When you assign a policy to a site collection template, this applies to all site collections already created from that template, in addition to any site collections created from that template in the future.
   
-![Choose a template page showing OneDrive option](media/IP-Choose-a-template.png)
+![Choose a template page showing OneDrive option](../media/IP-Choose-a-template.png)
   
 You can also assign a policy to a specific site collection— doing so overrides any policies that have been assigned to that site collection template. For example, you may assign policies to the Team Site template, but then override them by applying a different set of policies to a specific site collection created from that template.
   
@@ -99,7 +101,7 @@ The basic relationship is this:
   
 A site collection or a site collection template can have one or more policies assigned to it, and each of those policies can have one or more rules. However, there can be only one policy that's active per site, and there can be only one deletion rule that's active at any time for the libraries within the site.
   
-![Diagram showing relationship between policies](media/IP-Two-policies-four-rules.png)
+![Diagram showing relationship between policies](../media/IP-Two-policies-four-rules.png)
   
 ## Document deletion policies are inherited
 

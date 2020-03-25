@@ -1,5 +1,7 @@
 ---
 title: "Office 365 Encryption for Skype, OneDrive, SharePoint, and Exchange"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -69,7 +71,7 @@ List Items are smaller chunks of customer data that are created ad-hoc or that c
 
 In OneDrive for Business and SharePoint Online, there are two scenarios in which data enters and exits the datacenters.
 
-- **Client communication with the server** - Communication to OneDrive for Business across the Internet uses SSL/TLS connections. All SSL connections are established using 2048-bit keys.
+- **Client communication with the server** - Communication to SharePoint Online and OneDrive for Business across the Internet uses TLS connections.
 - **Data movement between datacenters** - The primary reason to move data between datacenters is for geo-replication to enable disaster recovery. For instance, SQL Server transaction logs and blob storage deltas travel along this pipe. While this data is already transmitted by using a private network, it is further protected with best-in-class encryption.
 
 ## Exchange Online

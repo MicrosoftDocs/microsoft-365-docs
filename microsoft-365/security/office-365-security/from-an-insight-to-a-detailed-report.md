@@ -1,5 +1,7 @@
 ---
 title: "Walkthrough - From an insight to a detailed report"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -27,13 +29,13 @@ This is one of several walkthroughs for the [Security &amp; Compliance Center](h
 
 Let's walk through the flow from the dashboard to an insight to a detailed report for data exploration. (This is a brief [data loss prevention](../../compliance/data-loss-prevention-policies.md) example.) 
   
-1. We begin with a dashboard in the [Security &amp; Compliance Center](https://protection.office.com). (Go to **Reports** \> **Dashboard**.)<br/>![In the Security &amp; Compliance Center, choose Reports \> Dashboard](../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+1. We begin with a dashboard in the [Security &amp; Compliance Center](https://protection.office.com). (Go to **Reports** \> **Dashboard**.)<br/>![In the Security &amp; Compliance Center, choose Reports \> Dashboard](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
-2. In the upper left corner of the dashboard, next to **Top insights &amp; recommendations**, we have a link. (Click **View all**.)<br/>![In the Security &amp; Compliance Center, choose Reports \> Dashboard to see your top insights](../media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>This takes us to a list of insights for our organization.<br/>![In the Security &amp; Compliance Center, you can view all insights in a list](../media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
+2. In the upper left corner of the dashboard, next to **Top insights &amp; recommendations**, we have a link. (Click **View all**.)<br/>![In the Security &amp; Compliance Center, choose Reports \> Dashboard to see your top insights](../../media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>This takes us to a list of insights for our organization.<br/>![In the Security &amp; Compliance Center, you can view all insights in a list](../../media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
   
-3. Selecting an item in the list opens a pane where we can view more details about that item. (Click an item.)<br/>![Details for a selected insight](../media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>We see recommended actions we should consider, such as reviewing policies. ([Learn more about data loss prevention policies](../../compliance/data-loss-prevention-policies.md).)
+3. Selecting an item in the list opens a pane where we can view more details about that item. (Click an item.)<br/>![Details for a selected insight](../../media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>We see recommended actions we should consider, such as reviewing policies. ([Learn more about data loss prevention policies](../../compliance/data-loss-prevention-policies.md).)
     
-4. We also have a link to view more details. (Click **See related activity in Explorer**.)<br/>This takes us to a report type called [Threat Explorer (and real-time detections)](threat-explorer.md), where we can apply filters and drill into specific details.<br/>![Explorer view with more detail about a selected insight](../media/3ad15b15-7158-44b7-beda-013351bd868e.png)
+4. We also have a link to view more details. (Click **See related activity in Explorer**.)<br/>This takes us to a report type called [Threat Explorer (and real-time detections)](threat-explorer.md), where we can apply filters and drill into specific details.<br/>![Explorer view with more detail about a selected insight](../../media/3ad15b15-7158-44b7-beda-013351bd868e.png)
   
 In this way, we can move easily from an insight into its underlying details, and make more informed decisions about data loss prevention for an organization.
   

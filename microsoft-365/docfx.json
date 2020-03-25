@@ -6,6 +6,7 @@
           "**/*.md",
           "**/*.yml"
         ],
+        "group": "office365",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -31,6 +32,7 @@
           "**/*.xls",
           "**/*.xlsx"
         ],
+        "group": "office365",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -39,6 +41,12 @@
         ]
       }
     ],
+    "groups": {
+      "office365": {
+        "dest": "o365-dest",
+        "moniker_range": "=o365-worldwide || =o365-21vianet || =o365-germany"
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
@@ -55,7 +63,22 @@
       "rmca14",
       "claydetels19"
     ],
-    "fileMetadata": {},
+    "fileMetadata": {
+      "titleSuffix": {
+        "compliance/**/*.md": "Microsoft 365 Compliance",
+        "security/mtp/**/*.md": "Microsoft 365 security",
+        "security/office-365-security/**/*.md": "Office 365",
+        "managed-desktop/**/*.md": "Microsoft Managed Desktop",
+        "enterprise/**/*.md": "Microsoft 365 Enterprise",
+        "campaigns/**/*.md": "Microsoft 365 for Campaigns",
+        "business/**/*.md": "Microsoft 365 Business",
+        "admin/**/*.md": "Microsoft 365 admin"
+      },
+      "feedback_product_url": {
+        "compliance/**/*.md":"https://office365.uservoice.com/forums/289138-office-365-security-compliance",
+        "security/**/*.md":"https://office365.uservoice.com/forums/289138-office-365-security-compliance"
+      }
+    },
     "template": [],
     "dest": "microsoft-365-docs",
     "markdownEngineName": "markdig"

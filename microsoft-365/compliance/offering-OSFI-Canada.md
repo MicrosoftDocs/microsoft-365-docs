@@ -5,21 +5,24 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
 # Office of the Superintendent of Financial Institutions (OSFI) Canada
 
 ## About the OSFI
 
-The [Office of the Superintendent of Financial Institutions](http://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (OSFI) is an independent agency of the Government of Canada responsible for the prudential regulation and supervision of federally regulated financial institutions and pension plans in Canada.
+The [Office of the Superintendent of Financial Institutions](https://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (OSFI) is an independent agency of the Government of Canada responsible for the prudential regulation and supervision of federally regulated financial institutions and pension plans in Canada.
 
-In its oversight role, OSFI published the B-10 Guidelines for [Outsourcing of Business Activities, Functions, and Processes](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx). They established “prudent practices, procedures, or standards” for federally regulated financial institutions to evaluate and manage the risk associated with outsourcing their business to a service provider. A subsequent OSFI memorandum, [New technology-based outsourcing requirements](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx), reminded these institutions that the B-10 Guidelines remain current and that they must meet OSFI expectations for material outsourcing arrangements.
+In its oversight role, OSFI published the B-10 Guidelines for [Outsourcing of Business Activities, Functions, and Processes](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx). They established “prudent practices, procedures, or standards” for federally regulated financial institutions to evaluate and manage the risk associated with outsourcing their business to a service provider. A subsequent OSFI memorandum, [New technology-based outsourcing requirements](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx), reminded these institutions that the B-10 Guidelines remain current and that they must meet OSFI expectations for material outsourcing arrangements.
 
 In addition, the use of cloud services by financial institutions must comply with the [Personal Information Protection and Electronic Documents Act](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA), and in some instances, provincial data privacy laws.
 
@@ -27,7 +30,7 @@ In addition, the use of cloud services by financial institutions must comply wit
 
 To help guide financial institutions in Canada considering outsourcing business functions to the cloud, Microsoft has published [Navigating your way to the cloud: A compliance checklist for financial institutions in Canada](https://aka.ms/Azure-Canada-Compliance). By reviewing and completing the checklist, financial organizations can adopt Microsoft business cloud services with the confidence that they are complying with applicable regulatory requirements.
 
-When Canadian financial institutions outsource business activities, they must comply with the B-10 Guidelines for [Outsourcing of Business Activities, Functions, and Processes](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) published by the Office of the Superintendent of Financial Institutions (OSFI), as well as Canadian privacy laws, including the [Personal Information Protection and Electronic Documents Act](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA).
+When Canadian financial institutions outsource business activities, they must comply with the B-10 Guidelines for [Outsourcing of Business Activities, Functions, and Processes](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) published by the Office of the Superintendent of Financial Institutions (OSFI), as well as Canadian privacy laws, including the [Personal Information Protection and Electronic Documents Act](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA).
 
 The Microsoft checklist helps Canadian financial firms conducting due-diligence assessments of Microsoft business cloud services and includes:
 
@@ -53,7 +56,7 @@ The Microsoft checklist helps Canadian financial firms conducting due-diligence 
 
 No. There is no requirement for prior notification, consultation, or approval. The use of public cloud computing is permitted, subject always to compliance with OSFI requirements.
 
-The [OSFI B-10 Guidelines](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) indicate that OSFI expects a financial institution to design a risk management program that applies to all of its outsourcing arrangements, with risk mitigation commensurate with the associated risks. However, only material outsourcing arrangements need to be documented by a written contract that addresses safeguards identified in the guidelines. Part 2 of the Microsoft [checklist](https://aka.ms/Azure-Canada-Compliance) (page 53) maps these against the sections in Microsoft contractual documents where they are addressed.
+The [OSFI B-10 Guidelines](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx) indicate that OSFI expects a financial institution to design a risk management program that applies to all of its outsourcing arrangements, with risk mitigation commensurate with the associated risks. However, only material outsourcing arrangements need to be documented by a written contract that addresses safeguards identified in the guidelines. Part 2 of the Microsoft [checklist](https://aka.ms/Azure-Canada-Compliance) (page 53) maps these against the sections in Microsoft contractual documents where they are addressed.
 
 **Are there any mandatory terms that must be included in the contract with the cloud services provider?**
 

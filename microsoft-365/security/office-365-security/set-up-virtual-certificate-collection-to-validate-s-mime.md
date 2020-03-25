@@ -1,5 +1,7 @@
 ---
 title: "Set up virtual certificate collection in Exchange Online to validate S/MIME"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp

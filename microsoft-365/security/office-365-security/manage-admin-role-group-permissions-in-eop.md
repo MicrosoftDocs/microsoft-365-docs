@@ -1,5 +1,7 @@
 ---
 title: "Manage admin role group permissions in EOP"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -31,9 +33,9 @@ In Microsoft Exchange Online Protection (EOP), you can use the Exchange admin ce
 
 ## Use the EAC to assign members to admin role groups
 
-1. In the EAC, go to **Permissions** \> **Admin roles**, click the role group that you want to add the user or users to, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.gif).
+1. In the EAC, go to **Permissions** \> **Admin roles**, click the role group that you want to add the user or users to, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.gif).
 
-2. Under Members, click **Add** ![Add Icon](../media/ITPro-EAC-AddIcon.gif). The Select Members window will appear.
+2. Under Members, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif). The Select Members window will appear.
 
 3. Search for the user or users that you wish to add, or select them from the list.
 
@@ -46,9 +48,9 @@ In Microsoft Exchange Online Protection (EOP), you can use the Exchange admin ce
 
 ## Use the EAC to remove members from admin role groups
 
-1. In the EAC, go to **Permissions** \> **Admin Roles**, click the role group that you want to remove a user or users from, and then click **Edit** ![Edit icon](../media/ITPro-EAC-EditIcon.gif).
+1. In the EAC, go to **Permissions** \> **Admin Roles**, click the role group that you want to remove a user or users from, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.gif).
 
-2. Under Members, select the user or users that you want to remove and click **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif).
+2. Under Members, select the user or users that you want to remove and click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif).
 
 3. Click **Save** to save the change to the role group and return to the **Admin Roles** page. To verify that you've successfully removed the user from the administrator role group, make sure the member is no longer displayed under Members in the details pane for the selected role group.
 

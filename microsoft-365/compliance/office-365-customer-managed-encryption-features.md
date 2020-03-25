@@ -1,5 +1,7 @@
 ---
 title: "Office 365 Customer-managed encryption features"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi

@@ -5,12 +5,15 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
 # Federal Risk and Authorization Management Program (FedRAMP)
@@ -91,7 +94,7 @@ FISMA is a federal law that requires US federal agencies and their partners to p
 
 **To whom does FedRAMP apply?**
 
-“FedRAMP is mandatory for federal agency cloud deployments and service models at the low and moderate risk impact levels.” Any federal agency that wants to engage a CSP may be required to meet FedRAMP specifications. In addition, companies that employ cloud technologies in products or services used by the federal government may be required to obtain an ATO.
+'FedRAMP is mandatory for federal agency cloud deployments and service models at the low and moderate risk impact levels.' Any federal agency that wants to engage a CSP may be required to meet FedRAMP specifications. In addition, companies that employ cloud technologies in products or services used by the federal government may be required to obtain an ATO.
 
 **Where does my agency start its own compliance effort?**
 
@@ -100,6 +103,10 @@ For an overview of the steps federal agencies must take to successfully navigate
 **Can I use Microsoft compliance in my agency’s authorization process?**
 
 Yes. You may use the certifications of Microsoft cloud services as the foundation for any program or initiative that requires an ATO from a federal government agency. However, you need to achieve your own authorizations for components outside these services.
+
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [FedRAMP template](https://go.microsoft.com/fwlink/?linkid=2118102) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
 
 ## Resources
 

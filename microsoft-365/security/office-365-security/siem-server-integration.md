@@ -1,5 +1,7 @@
 ---
 title: " Security Information and Event Management (SIEM) server integration with Microsoft 365 services and applications"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp

@@ -9,6 +9,8 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
+f1.keywords:
+- NOCSH
 ms.author: greglin
 ---
 
@@ -16,7 +18,7 @@ ms.author: greglin
 
 *This article applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 If you have new Windows 10 PCs, you can use Windows Autopilot to customize the out-of-box-experience (OOBE) for your organization and deploy a new system with apps and settings already configured. There are no images to deploy, no drivers to inject, and no infrastructure to manage. Users can go through the deployment process independently, without the need consult their IT administrator.
 
@@ -26,7 +28,7 @@ You can set up and pre-configure new Windows 10 devices and get them ready for p
 
 The Windows Autopilot poster is two pages in portrait mode (11x17). Click the image below to view a PDF in your browser. 
 
-[![Deploy Windows 10 with Autopilot poster](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://docs.microsoft.com/windows/deployment/media/Windows10AutopilotFlowchart.pdf)
+[![Deploy Windows 10 with Autopilot poster](../media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://docs.microsoft.com/windows/deployment/media/Windows10AutopilotFlowchart.pdf)
 
 You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) format.
 
@@ -107,4 +109,4 @@ As an interim checkpoint, you can see the [exit criteria](windows10-exit-criteri
 
 |||
 |:-------|:-----|
-|![Step 4](./media/stepnumbers/Step4.png)| [Monitor device health and compliance](windows10-enable-windows-analytics.md) |
+|![Step 4](../media/stepnumbers/Step4.png)| [Monitor device health and compliance](windows10-enable-windows-analytics.md) |

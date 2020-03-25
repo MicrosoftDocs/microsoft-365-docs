@@ -5,19 +5,22 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
 # California Consumer Privacy Act (CCPA)
 
 ## CCPA overview
 
-The California Consumer Privacy Act (CCPA) is the first comprehensive privacy law in the United States. It provides a variety of privacy rights to California consumers.  Businesses regulated by the CCPA will have a number of obligations to those consumers, including disclosures, General Data Protection Regulation (GDPR)-like consumer data subject rights (DSRs), an “opt-out” for certain data transfers, and an “opt-in” requirement for minors.
+The California Consumer Privacy Act (CCPA) is the first comprehensive privacy law in the United States. It provides a variety of privacy rights to California consumers.  Businesses regulated by the CCPA will have a number of obligations to those consumers, including disclosures, General Data Protection Regulation (GDPR)-like consumer data subject rights (DSRs), an 'opt-out' for certain data transfers, and an 'opt-in' requirement for minors.
 
 The CCPA only applies to companies doing business in California which satisfy one or more of the following: (1) have a gross annual revenue of more than $25 million, or (2) derive more than 50% of their annual income from the sale of California consumer personal information, or (3) buy, sell or share the personal information of more than 50,000 California consumers annually.
 
@@ -27,7 +30,7 @@ The California AG will enforce the CCPA and will have power to issue non-complia
 
 ## Microsoft and the CCPA
 
-For commercial customers doing business in California, Microsoft will be acting as a “service provider” with respect to our Online Services and Professional Services offering.  The terms of the Online Services Terms (OST) and the Microsoft Professional Services Data Protection Addendum (MSDPA) already meet the requirements for Service Providers under the CCPA and are generally sufficient to permit customers to continue to transfer data to our Online Services. As such, no additional contractual changes are required for customers to be able to rely on Microsoft as a Service Provider under the CCPA.
+For commercial customers doing business in California, Microsoft will be acting as a 'service provider' with respect to our Online Services and Professional Services offering.  The terms of the Online Services Terms (OST) and the Microsoft Professional Services Data Protection Addendum (MSDPA) already meet the requirements for Service Providers under the CCPA and are generally sufficient to permit customers to continue to transfer data to our Online Services. As such, no additional contractual changes are required for customers to be able to rely on Microsoft as a Service Provider under the CCPA.
 
 As set out in the OST, Microsoft complies with all laws and regulations applicable to its provision of the Online Services, which would include the CCPA.  
 
@@ -45,7 +48,7 @@ As set out in the OST, Microsoft complies with all laws and regulations applicab
 
 Here are a few steps you could take to get ready for the CCPA:
 
-- Start leveraging the GDPR assessment in Compliance Manager as part of your CCPA privacy program.
+- Start leveraging the GDPR assessment in [Compliance Score](compliance-score.md) as part of your CCPA privacy program.
 - Establish a process to efficiently respond to Data Subject Access Requests (DSARs) using the Data Subject Requests tool.
 - Set up label and policies to discover, classify & label, and protect sensitive data with Microsoft Information Protection.
 - Use email encryption capabilities to further control sensitive information.
@@ -64,10 +67,10 @@ There are many differences. It’s easier to focus on the similarities, includin
 
 - Transparency/disclosure obligations,
 - Consumer rights to access, delete, and receive a copy of data,
-- Definition of “service providers” that is similar to how GDPR defines “processors” with a similar contractual obligation, and
-- Definition of “businesses” that encompasses the GDPR definition of “controllers".
+- Definition of 'service providers' that is similar to how GDPR defines 'processors' with a similar contractual obligation, and
+- Definition of 'businesses' that encompasses the GDPR definition of 'controllers'.
 
-The biggest difference in CCPA is the core requirement to enable an opt-out from sales of data to third parties (with “sale” broadly defined to include sharing of data for valuable consideration).
+The biggest difference in CCPA is the core requirement to enable an opt-out from sales of data to third parties (with 'sale' broadly defined to include sharing of data for valuable consideration).
 
 **What rights must companies enable under the CCPA?**
 
@@ -84,6 +87,10 @@ The CCPA requires regulated businesses that collect, transfer, and sell personal
 
 - CCPA introduces parental consent obligations consistent with The Children's Online Privacy Protection Act (COPPA) for children under the age of 13.
 - For children between 13 and 16 years old, CCPA imposes a new obligation to obtain opt-in consent from the child.
+
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [CCPA template](https://go.microsoft.com/fwlink/?linkid=2118004) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
 
 ## Resources
 

@@ -1,5 +1,7 @@
-﻿---
+---
 title: "Tune anti-phishing protection in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -18,7 +20,7 @@ Although Office 365 comes with a variety of anti-phishing features that are enab
 
 ## First things first: deal with any compromised accounts and make sure you block any more phishing messages from getting through
 
-If a recipient's account was compromised as a result of the phishing message, follow the steps in [Responding to a compromised email account in Office 365](../../compliance/responding-to-a-compromised-email-account.md).
+If a recipient's account was compromised as a result of the phishing message, follow the steps in [Responding to a compromised email account in Office 365](responding-to-a-compromised-email-account.md).
 
 If your subscription includes Advanced Threat Protection (ATP), you can use [Office 365 Threat Intelligence](office-365-ti.md) to identify other users who also received the phishing message. You have additional options to block phishing messages:
 

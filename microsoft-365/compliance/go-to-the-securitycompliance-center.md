@@ -1,7 +1,9 @@
 ---
 title: "Go to the Office 365 Security & Compliance Center"
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -33,4 +35,4 @@ Here's the most direct way to get to the Security & Compliance Center:
 
 2. Sign in to Office 365 using your work or school account.
 
-![Office 365 Security & Compliance Center home page](media/f1d35324-ac44-4f59-96a7-b11767b43201.png)
+![Office 365 Security & Compliance Center home page](../media/f1d35324-ac44-4f59-96a7-b11767b43201.png)

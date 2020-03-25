@@ -1,5 +1,7 @@
 ---
 title: "Attributes for information barrier policies"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -20,7 +22,7 @@ Certain attributes in Azure Active Directory can be used to segment users. Once 
 This article describes how to use attributes with information barriers, and it provides a list of attributes that can be used. To learn more about information barriers, see the following resources:
 - [Information barriers](information-barriers.md)
 - [Define policies for information barriers in Microsoft Teams](information-barriers-policies.md)
-- [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md.md)
+- [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md)
 
 ## How to use attributes in information barrier policies
 

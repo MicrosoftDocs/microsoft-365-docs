@@ -1,7 +1,9 @@
 ---
 title: "Overview of file plan manager"
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date:
 audience: Admin
@@ -22,7 +24,7 @@ File plan manager provides advanced management capabilities for retention labels
 
 To access file plan manager in the security and compliance center, go to **Records management** > **File plan**.
 
-![File plan page](media/file-plan-page.png)
+![File plan page](../media/file-plan-page.png)
 
 ## Accessing file plan manager
 
@@ -82,7 +84,7 @@ On the file plan **Labels** tab, the following additional information and capabi
     - Auto-delete
     - Review required (aka Disposition review)
 
-![Label settings in file plan](media/file-plan-label-columns.png)
+![Label settings in file plan](../media/file-plan-label-columns.png)
 
 ### Retention label file plan descriptors columns
 
@@ -92,11 +94,11 @@ To get you started, file plan manager provides some out-of-box values for: Funct
 
 Here's a view of the file plan descriptors step when creating or editing a retention label.
 
-![File plan descriptors](media/file-plan-descriptors.png)
+![File plan descriptors](../media/file-plan-descriptors.png)
 
 Here's a view of the file plan descriptors columns on the **Labels** tab of file plan manager.
 
-![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
+![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## Export all existing retention labels to analyze and/or perform offline reviews
 
@@ -104,11 +106,11 @@ From file plan manager, you can export the details of all retention labels into 
 
 To export all retention labels: On the **File plan** page, **File plan actions** \> **Export labels**.
 
-![Option to export file plan](media/file-plan-export-labels-option.png)
+![Option to export file plan](../media/file-plan-export-labels-option.png)
 
 A *.csv file containing all existing retention labels will open.
 
-![CSV file showing all retention labels](media/file-plan-csv-file.png)
+![CSV file showing all retention labels](../media/file-plan-csv-file.png)
 
 ## Import retention labels into your file plan
 
@@ -118,13 +120,13 @@ To import new retention labels and modify existing retention labels:
 
 1. On the **File plan** page, go to **File plan actions** > **Import labels**.
 
-   ![Option to import file plan](media/file-plan-import-labels-option.png)
+   ![Option to import file plan](../media/file-plan-import-labels-option.png)
 
-   ![Option to download a blank file plan template](media/file-plan-blank-template-option.png)
+   ![Option to download a blank file plan template](../media/file-plan-blank-template-option.png)
 
 2. Download a blank template to import new retention labels. Alternatively, you can start with the .csv file that is exported when you export the existing retention labels in your organization.
 
-   ![Blank file plan template open in Excel](media/file-plan-blank-template.png)
+   ![Blank file plan template open in Excel](../media/file-plan-blank-template.png)
 
 3. Fill-out the template. The following describes the properties and valid values for each property in the file plan template.<br/>
 
@@ -137,7 +139,7 @@ To import new retention labels and modify existing retention labels:
    |RetentionAction|String|This property specifies what action to take after the value specified by the RetentionDuration property expires. Valid values are:</br>**Delete**: Items older than the value specified by the RetentionDuration property are deleted.</br>**Keep**: Retain items for the duration specified by the RetentionDuration property and then doing nothing when the duration period expires. </br>**KeepAndDelete**: Retain items for the duration specified by the RetentionDuration property and then delete them when the duration period expires.   |
    |RetentionDuration|String|This property specifies the number of days to retain the content. Valid values are:</br>**Unlimited**: Items will be retained indefinitely. </br>***n***: A positive integer; for example, **365**. 
    |RetentionType|String|This property specifies whether the retention duration is calculated from the content creation date, event date, labeled (tagged) date, or last modified date. Valid values are:</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
-   |ReviewerEmail|SmtpAddress|When this property is populated, a disposition review will be triggered when the retention duration expires. This property specifies the email address of a reviewer for **Delete** and **KeepAndDelete** retention actions. You can include the email address of individual users, distribution or security groups, or Office 365 groups. You can specify multiple email addresses separated by commas.|
+   |ReviewerEmail|SmtpAddress|When this property is populated, a disposition review will be triggered when the retention duration expires. This property specifies the email address of a reviewer for **Delete** and **KeepAndDelete** retention actions. You can include the email address of individual users, distribution, or security groups. You can specify multiple email addresses separated by semicolons.|
    |ReferenceId|String|This property specifies the value that's displayed in the **Reference Id** file plan descriptor.| 
    |DepartmentName|String|This property specifies the value that's displayed in the **Function/department** file plan descriptor.|
    |Category|String|This property specifies the value that's displayed in the **Category** file plan descriptor.|
@@ -152,16 +154,16 @@ To import new retention labels and modify existing retention labels:
 
    Here's an example the template containing the information about retention labels.
 
-   ![File plan template with information filled in](media/file-plan-filled-out-template.png)
+   ![File plan template with information filled in](../media/file-plan-filled-out-template.png)
 
 4. Under step 3 on the import file plan wizard page, click **Browse for files** to upload the filled-out template. 
 
    File plan manager will validate the entries and display the import statistics.
 
-   ![File plan import statistics](media/file-plan-import-statistics.png)
+   ![File plan import statistics](../media/file-plan-import-statistics.png)
 
    In the event there is a validation error, file plan import will continue to validate every entry in the import file and display all errors referencing line/row numbers in the import file, copy the displayed error results so that you can easily return to the import file and correct the errors.
 
 5. When the import is complete, return to file plan manager to associate the new retention labels to new or existing retention label policies.
 
-   ![Option to publish labels](media/file-plan-publish-labels-option.png)
+   ![Option to publish labels](../media/file-plan-publish-labels-option.png)

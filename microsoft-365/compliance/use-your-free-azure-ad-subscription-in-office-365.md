@@ -1,5 +1,7 @@
 ---
 title: "Use your free Azure Active Directory subscription in Office 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
-description: "Learn how to access Azure Active Directory, which is include in your organization's paid subscription to Office 365."
+description: "Learn how to access Azure Active Directory, which is included in your organization's paid subscription to Office 365."
 ---
 
 # Use your free Azure Active Directory subscription in Office 365
@@ -22,7 +24,11 @@ If your organization has a paid subscription to Office 365, Microsoft Dynamics C
 
 ## Before you begin
 
-Use a private browsing session (not a regular session) to access the Azure portal (in step 1 below) because this will prevent the credential that you are currently logged on with from being passed to Azure. To open an InPrivate Browsing session in Internet Explorer or a Private Browsing session in Mozilla FireFox, just press CTRL+SHIFT+P. To open a private browsing session in Google Chrome (called an incognito window), press CTRL+SHIFT+N.
+Use a private browsing session (not a regular session) to access the Azure portal (in step 1 below) because this prevents the credentials that you're currently logged on with from being passed to Azure. To open an private browsing session:
+
+- In Microsoft Edge (legacy version), Internet Explorer, or Mozilla FireFox, press `CTRL+SHIFT+P`.
+
+- In Microsoft Edge (newest version) or Google Chrome, press `CTRL+SHIFT+N`.
 
 ## Access Azure Active Directory
 
@@ -30,7 +36,7 @@ Use a private browsing session (not a regular session) to access the Azure porta
 
 2. In the left navigation pane in the Azure portal, click **Azure Active Directory**.
 
-    ![Click Azure Active Directory in the left navigation pane in the Azure portal.](media/97d2d72f-ac20-46ab-898c-851f6009b453.png)
+    ![Click Azure Active Directory in the left navigation pane in the Azure portal.](../media/97d2d72f-ac20-46ab-898c-851f6009b453.png)
 
     The **Azure Active Directory** admin center is displayed.
 

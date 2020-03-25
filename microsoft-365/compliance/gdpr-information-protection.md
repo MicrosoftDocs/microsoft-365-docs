@@ -6,6 +6,8 @@ localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
@@ -13,6 +15,7 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
+titleSuffix: Microsoft GDPR
 ---
 
 # Information protection for GDPR with Microsoft 365 capabilities
@@ -52,4 +55,5 @@ Threat protection is built across Microsoft 365 services. Here are a few resourc
 - [Windows Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/). Learn more about Windows Defender Advanced Threat Protection and other capabilities in Windows 10.
 
 ## Learn more
-[Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+
+[Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

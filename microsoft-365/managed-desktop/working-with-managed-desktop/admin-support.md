@@ -52,14 +52,9 @@ We appreciate your feedback and use it to improve the admin support experience.
 
 Once a ticket is in the **Mitigated** or **Resolved** state, you can share your feedback on your experience with that particular issue. To do this, go to the **Support requests** page in the Admin portal. Select the specific ticket. In the fly-in that appears on the right side, select the **Feedback** tab, and provide the requested information. Be careful not to include any personal information in the feedback form. For more information about privacy, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
-![Feedback form](images/feedback_form.png)
+![Feedback form](../../media/feedback_form.png)
 
-## Provide administrator rights to specific users
 
-While working with support personnel, you might need to provide local administrator rights to a user on a device to assist with troubleshooting. To do this, you must already have global administrator or device administrator rights in Microsoft Intune for your own account. Follow either one of these steps, depending on your situation:
-
-- If your users are synchronized from on-premises Active Directory account, run **net localgroup administrators /add "Contoso\username"** from an elevated command prompt.
-- If your users are created in Azure Active Directory, run **net localgroup administrators /add "AzureAD\UserUpn"** from an elevated command prompt.
 
 ## Additional resources
 - [End user support for Microsoft Managed Desktop](end-user-support.md). 

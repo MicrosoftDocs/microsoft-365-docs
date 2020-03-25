@@ -1,8 +1,11 @@
 ---
 title: "Office 365 Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,16 +17,19 @@ ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: "Learn how Office 365 Advanced eDiscovery can help you analyze data within Office 365, streamline document reviews, and make decisions for efficient eDiscovery."
 ---
 
-# Office 365 Advanced eDiscovery
+# Advanced eDiscovery (classic)
 
-> [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> [!IMPORTANT]
+> As we continue to invest in newer versions of Advanced eDiscovery, we are announcing the retirement of Office 365 Advanced eDiscovery, also known as *Advanced eDiscovery (classic)* or *Advanced eDiscovery v1.0*. If you're still using Advanced eDiscovery v1.0, please transition to [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (also known as the *Advanced eDiscovery solution in Microsoft 365*) as soon as possible. Advanced eDiscovery 2.0 contains similar functionality found in Advanced eDiscovery v1.0, but also offers many new features such as custodian management, communications management, and review sets. To learn more about the retirement of Advanced eDiscovery v1.0, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
   
 With Advanced eDiscovery, you can better understand your Office 365 data and reduce your eDiscovery costs. Advanced eDiscovery helps you analyze unstructured data within Office 365, perform more efficient document review, and make decisions to reduce data for eDiscovery. You can work with data stored in Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Office 365 Groups, and Microsoft Teams. You can perform an eDiscovery search in the security and compliance center to search for content in groups, individual mailboxes and sites, and then analyze the search results with Advanced eDiscovery. When you prepare search results for analysis in Advanced eDiscovery, Optical Character Recognition enables the extraction of text from images. This feature allows the powerful text analytic capabilities of Advanced eDiscovery to be applied to image files.
   
 Advanced eDiscovery streamlines and speeds up the document review process by identifying redundant information with features like Near-duplicates detection and Email Thread analysis. The Relevance feature applies predictive coding technology to identify relevant documents. Advanced eDiscovery learns from your tagging decisions on sample documents and applies statistical and self-learning techniques to calculate the relevance of each document in the data set. This enables you to focus on key documents, make quick yet informed decisions on case strategy, cull data, and prioritize review.
   
- **Why advanced eDiscovery?** Office 365 Advanced eDiscovery builds on the existing set of eDiscovery capabilities in Office 365. For example, you can use the Search feature in the Office 365 Security &amp; Compliance Center to perform an initial search of all the content sources in your organization to identify and collect the data that may be relevant to a specific legal case. Then you can perform analysis on that data by applying the text analytics, machine learning, and the Relevance/predictive coding capabilities of Advanced eDiscovery. This can help your organization quickly process thousands of email messages, documents, and other kinds of data to find those items that are most likely relevant to a specific case. The reduced data set can then be exported out of Office 365 for further review. 
+ **Why advanced eDiscovery?** Office 365 Advanced eDiscovery builds on the existing set of eDiscovery capabilities in Office 365. For example, you can use the Search feature in the Office 365 Security &amp; Compliance Center to perform an initial search of all the content sources in your organization to identify and collect the data that may be relevant to a specific legal case. Then you can perform analysis on that data by applying the text analytics, machine learning, and the Relevance/predictive coding capabilities of Advanced eDiscovery. This can help your organization quickly process thousands of email messages, documents, and other kinds of data to find those items that are most likely relevant to a specific 
+ 
+> [!NOTE]
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). case. The reduced data set can then be exported out of Office 365 for further review. 
   
 ## Get started
 

@@ -5,6 +5,8 @@ keywords: security, malware, Microsoft 365, M365, security center, monitor, repo
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
@@ -25,4 +27,4 @@ You can see:
 * How many DLP policies overrides or false positives are reported
 * How many DLP policy matches happened in 3rd party cloud services via Microsoft Cloud App Security
 
-![Data category of reports page](../images/data.png)
+![Data category of reports page](../../media/data.png)

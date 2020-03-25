@@ -1,5 +1,7 @@
 ---
 title: "Prerequisites for protecting data on devices with Microsoft 365 Business"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -13,18 +15,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
-description: "Know the prerequisites for setting up your organization with Microsoft 365 Business."
+description: "Learn about the requirements for setting up your organization with Microsoft 365 Business and protecting work data on your users' devices."
 ---
 
 # Prerequisites for protecting data on devices with Microsoft 365 Business
 
 The first step in setting up your organization with Microsoft 365 Business is to make sure you can meet the prerequisites.
   
-## Prerequisites
+## Requirements for setting up your organization with Microsoft 365 Business
 
 - Windows devices must be running Windows 7 Professional, Windows 8 Pro, or Windows 8.1 Pro.
     

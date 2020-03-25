@@ -1,6 +1,8 @@
 ---
 title: "SharePoint sites for highly regulated data"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/31/2019
@@ -56,7 +58,7 @@ The following table maps the requirements of this scenario to a feature of Micro
 
 Here is an example configuration for a secure SharePoint site.
 
-![The SharePoint sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![The SharePoint sites for highly regulated data scenario](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
 This scenario requires that you have already deployed:
 
@@ -66,9 +68,9 @@ This scenario requires that you have already deployed:
 The following phases step you through designing, configuring, and driving adoption for SharePoint sites for highly regulated data.
 
 <a name="poster"></a>
-For a 1-page summary of this scenario, see the [SharePoint sites for highly regulated data poster](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf).
+For a 1-page summary of this scenario, see the [SharePoint sites for highly regulated data poster](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf).
 
-[![SharePoint sites for highly regulated data poster](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+[![SharePoint sites for highly regulated data poster](../media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
 You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) or [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) formats and print it on letter, legal, or tabloid (11 x 17)-sized paper.
 
@@ -168,11 +170,11 @@ You have configured the following:
 
 Here is the resulting configuration that uses a sublabel of the Highly regulated label.
 
-![The SharePoint sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![The SharePoint sites for highly regulated data scenario](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
 Here is an example of a user that has applied the sublabel to a file stored in the site.
 
-![The SharePoint sites for highly regulated data scenario](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
+![The SharePoint sites for highly regulated data scenario](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
 
 
 ## Phase 3: Drive user adoption

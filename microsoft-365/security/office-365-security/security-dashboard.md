@@ -1,5 +1,7 @@
 ---
 title: "Security dashboard overview"
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -37,7 +39,7 @@ To view the Security Dashboard, in the [Office 365 Security &amp; Compliance Cen
 
 The Threat Management Summary widget tells you at a glance how your organization was protected from threats over the past seven (7) days.
 
-![Security Dashboard - Threat Management Summary widget](../media/SecDash-ThreatMgmtSummary.png)
+![Security Dashboard - Threat Management Summary widget](../../media/SecDash-ThreatMgmtSummary.png)
 
 The information you'll see in the Threat Management Summary depends on what you subscription includes. The following table describes what information is included for Office 365 E3 and Office 365 E5.
 
@@ -52,14 +54,14 @@ To view or access the Threat Management Summary widget, you must have permission
 
 The Threat Protection Status widget shows threat protection effectiveness with a trending and detailed view of phish and malware. 
 
-![Threat protection status widget](../media/tpswidget.png)
+![Threat protection status widget](../../media/tpswidget.png)
 
 The details depend on whether your Office 365 subscription includes [Exchange Online Protection](exchange-online-protection-eop.md) (EOP) with or without [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
 
 
 |If your subscription includes... |You'll see these details |
 |---------|---------|
-|EOP but not Office 365 ATP     |Malicious email that was detected and blocked by EOP<br> See [Threat Protection Status report (EOP)](../../compliance/view-email-security-reports.md#threat-protection-status-report).| 
+|EOP but not Office 365 ATP     |Malicious email that was detected and blocked by EOP<br> See [Threat Protection Status report (EOP)](view-email-security-reports.md#threat-protection-status-report).| 
 |Office 365 ATP |Malicious content and malicious email detected and blocked by EOP and Office 365 ATP<br>Aggregated count of unique email messages with malicious content blocked by the anti-malware engine, [zero-hour auto purge](zero-hour-auto-purge.md), and ATP features (including [Safe Links](atp-safe-links.md), [Safe Attachments](atp-safe-attachments.md), and [ATP anti-phishing](atp-anti-phishing.md)).<br>See [Threat Protection Status report (ATP)](view-reports-for-atp.md#threat-protection-status-report). | 
 
 To view or access the Threat Protection Status widget, you must have permissions to view Advanced Threat Protection reports. To learn more, see [What permissions are needed to view the ATP reports?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
@@ -68,7 +70,7 @@ To view or access the Threat Protection Status widget, you must have permissions
  
 The Global Weekly Threat Detections widget shows how many threats were detected in email messages over the past seven (7) days.
 
-![Global Weekly Threat Detections widget](../media/globalweeklythreatdetections.png)
+![Global Weekly Threat Detections widget](../../media/globalweeklythreatdetections.png)
 
 The metrics are calculated as described in the following table:
 
@@ -83,13 +85,13 @@ The metrics are calculated as described in the following table:
 
 Malware widgets show details about malware trends and malware family types over the past seven (7) days.
 
-![Malware trends and family types](../media/malwarewidgetatpe5.png)
+![Malware trends and family types](../../media/malwarewidgetatpe5.png)
  
 ## Insights
 
 Insights not only surface key issues you should review, they also include recommendations and actions to consider. 
 
-![Smart insights](../media/smartinsights.png)
+![Smart insights](../../media/smartinsights.png)
 
 For example, you might see that phishing email messages are being delivered because some users have disabled their junk mail options. To learn more about how insights work, see [Reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md).
   
@@ -97,14 +99,14 @@ For example, you might see that phishing email messages are being delivered beca
 
 If your organization's subscription includes  [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), your Security Dashboard has a section that includes advanced threat investigation and response tools. Your organization's security team can use the information in this section to understand emerging campaigns, investigate threats and manage incidents. 
   
-![Threat intelligence helps you understand attacks targeted at your organization](../media/threatintelwidget.png)
+![Threat intelligence helps you understand attacks targeted at your organization](../../media/threatintelwidget.png)
   
   
 ## Trends
 
 Near the bottom of the Security Dashboard is a **Trends** section, which summarizes email flow trends for your organization. Reports provide information about email categorized as spam, malware, phishing attempts, and good email. Click a tile to view more detailed information in the report. 
   
-![The Trends section summarizes email flow trends for the organization](../media/trends.png)
+![The Trends section summarizes email flow trends for the organization](../../media/trends.png)
   
 And, if your organization's Office 365 subscription includes [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), you will also have a **Recent threat management alerts** report in this section that enables your security team to view and take action on high-priority security alerts. 
 
@@ -114,7 +116,7 @@ To view or access the Recent Threat Management Alerts widget, you must have perm
   
 ## Related topics
 
-[View email security reports in the Security &amp; Compliance Center](../../compliance/view-email-security-reports.md)
+[View email security reports in the Security &amp; Compliance Center](view-email-security-reports.md)
   
 [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
   

@@ -14,27 +14,14 @@ ms.date: 09/24/2018
 
 Microsoft Managed Desktop uses several Microsoft technologies to help secure managed devices and data. Specifically: 
 
-- [Data security](#data-security) - types of data collected by Microsoft Managed Desktop and where it's securely stored
+
 - [Device security](#device-security) – security and protection on Microsoft Managed Desktop devices
 - [Identity and Access Management](#identity-and-access-management) – managing secure use of devices through Azure Active Directory identity services
 - [Network security](#network-security) – VPN information and Microsoft Managed Desktop recommended solution and settings
 - [Information security](#information-security) – optional available services to further protect sensitive information 
 
-## Data security
 
-Data collected from customer tenants (which enables Microsoft Managed Desktop IT services and operations) is stored in Azure SQL databases in the Microsoft tenant hosted in the United States of America.
-
-For more information, see [Microsoft Azure security](https://docs.microsoft.com/azure/security/azure-database-security-overview).
-
-Listed below are the types of data transmitted from your tenant:
-
-- Device update, usage and reliability data
-- App deployment and reliability data
-- Update and security policy deployment data
-- Users assigned to devices
-- Security logs from your tenant related to the accounts used by Microsoft Managed Desktop to manage the service
-
-
+For more about the Security Operations team at Microsoft Managed Desktop and how they work to provide security for your devices, see the video [Microsoft Managed Desktop Security Operations](https://www.microsoft.com/videoplayer/embed/RE4q6nP). 
 
 ## Device security
 
@@ -72,7 +59,7 @@ VPN | Customers own their VPN infrastructure, to ensure limited corporate resour
 
 ## Information security
 
-Customers may configure these optional services to help protect corporate high-value assets. 
+You can configure these optional services to help protect corporate high-value assets. 
 
 Service | Description
 --- | ---

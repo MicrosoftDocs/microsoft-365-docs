@@ -1,5 +1,7 @@
 ---
 title: "Form a query to find sensitive data stored on sites"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -28,7 +30,7 @@ Users often store sensitive data, such as credit card numbers, social security n
 
 There are three parts that make up a basic DLP query: SensitiveType, count range, and confidence range. As illustrated in the following graphic, **SensitiveType:"\<type\>"** is required, and both**|\<count range\>** and**|\<confidence range\>** are optional. 
   
-![Example query divided into required and optional](media/DLP-query-example-text.png)
+![Example query divided into required and optional](../media/DLP-query-example-text.png)
   
 ### Sensitive type - required
 
@@ -83,7 +85,7 @@ Not all queries are created equal. The following table gives examples of queries
 
 [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
   
-[Run a Content Search in the Office 365 Security &amp; Compliance Center](run-a-content-search-in-the-security-and-compliance-center.md)
+[Run a Content Search](content-search.md)
   
 [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
   

@@ -1,7 +1,9 @@
 ---
 title: "View the data governance reports"
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 6/8/2018
 audience: Admin
@@ -31,10 +33,10 @@ All these reports show labeled content from Exchange, SharePoint, and OneDrive f
   
 You can find these reports in the Security &amp; Compliance Center \> **Information governance** \> **Dashboard**.
   
-![Chart showing label trends over past 90 days](media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
+![Chart showing label trends over past 90 days](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
 You can filter the data governance reports by date (up to 90 days) and location (Exchange, SharePoint, and OneDrive for Business). The most recent data can take up to 24 hours to appear in the reports.
   
-![Filters for data governance reports](media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
+![Filters for data governance reports](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   
 

@@ -1,5 +1,7 @@
 ---
 title: "Validate app protection settings on Windows 10 PCs"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -17,11 +19,12 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: "Learn how to validate Microsoft 365 Business app protection settings on Windows 10 devices."
+description: "Learn how to verify that Microsoft 365 Business app protection settings took effect on your users' Windows 10 devices."
 ---
 
 # Validate device protection settings on Windows 10 PCs
@@ -32,23 +35,23 @@ After you [set up devices policies](protection-settings-for-windows-10-pcs.md), 
   
 1. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Restart options** and confirm that all settings are grayed out. 
     
-    ![All the Restart options are grayed out.](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
+    ![All the Restart options are grayed out.](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
 2. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** and confirm that all settings are grayed out. 
     
-    ![Windows Advanced updates options are all grayed out.](media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Windows Advanced updates options are all grayed out.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.
     
     Confirm that you can see the message (in red) that some settings are hidden or managed by your organization, and all the options are grayed out.
     
-    ![Choose how updates are delivered page indicates settings are hidden or managed by your organization.](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
+    ![Choose how updates are delivered page indicates settings are hidden or managed by your organization.](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
 4. To open the Windows Defender Security Center, go to **Settings** \> **Update &amp; security** \> **Windows Defender** \> click **Open Windows Defender Security Center** \> **Virus &amp; thread protection** \> **Virus &amp; threat protection settings**. 
     
 5. Verify that all options are grayed out. 
     
-    ![The Virus and threat protection settings are grayed out.](media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
+    ![The Virus and threat protection settings are grayed out.](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
 ## Related Topics
 

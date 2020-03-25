@@ -1,7 +1,9 @@
 ---
 title: "Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4"
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -23,19 +25,19 @@ However, some organizations in highly regulated industries are subject to more s
 
 To help these organizations better understand how the Security & Compliance Center can be leveraged to meet their regulatory obligations for Exchange Online, specifically in relation to Rule 17a-4 requirements, we have released an assessment in partnership with Cohasset Associates.
 
-Cohasset validated that when Exchange Online and the Security & Compliance Center are configured as recommended, they meet the relevant storage requirements of CFTC Rule 1.31(c)-(d), FINRA Rule 4511, and SEC Rule 17a-4.  We targeted this set of rules because they represent the most prescriptive guidance globally for records retention for financial institutions.
+Cohasset validated that when Exchange Online and the Security & Compliance Center are configured as recommended, they meet the relevant storage requirements of CFTC Rule 1.31(c)-(d), FINRA Rule 4511, and SEC Rule 17a-4. We targeted this set of rules because they represent the most prescriptive guidance globally for records retention for financial institutions.
 
 ## Download the Cohasset assessment
 
 You can [download the Cohasset assessment here](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers).
 
-![Title page of downloadable assessment by Cohasset Associates](media/cohasset-associates-assessment.png)
+![Title page of downloadable assessment by Cohasset Associates](../media/cohasset-associates-assessment.png)
 
 ## This assessment is specific to Exchange Online
 
 Note that this assessment is specific to Exchange Online. The assessment does not include other Office 365 services such as SharePoint Online or OneDrive for Business, although we are planning support for those services with respect to SEC 17a-4 in the future.
 
-It’s important to understand that Skype for Business and Teams also store data in Exchange Online.  Therefore, the assessment does cover messages from Skype for Business and channel and chat messages from Teams.
+It’s important to understand that Skype for Business and Teams also store data in Exchange Online. Therefore, the assessment does cover messages from Skype for Business and channel and chat messages from Teams.
 
 ## Using Preservation Lock is key to the recommended configuration
 
@@ -60,8 +62,10 @@ You can lock a retention policy by using PowerShell. For more information, see [
 
 ## Known limitations
 
-We’re aware of a few limitations in Exchange Online. We’re actively working on these and expect to release support for these scenarios in July 2019:
+Currently, there are a few limitations for Exchange Online:
 
-- Item-level auditing is not available in Office 365 Group mailboxes.
 - Threaded communications are not available for Teams chat and channel messages.
 - Likes are not retained for Teams chat and channel messages.
+
+> [!NOTE]
+> Item-level auditing is now available for Office 365 Group mailboxes. For more information, see [Manage mailbox auditing](enable-mailbox-auditing.md).

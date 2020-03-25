@@ -5,12 +5,15 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
 # Australian Government Information Security Registered Assessor Program (IRAP)
@@ -77,6 +80,10 @@ Start with [What is IRAP?](https://www.cyber.gov.au/irap/what-irap) and follow i
 - [What is an IRAP assessment?](https://acsc.gov.au/infosec/irap/irap_assessments.htm)
 - [Who provides IRAP training?](https://acsc.gov.au/infosec/irap/training.htm)
 - [Compliance and noncompliance requirements information](https://acsc.gov.au/infosec/irap/compliance.htm)
+
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [IRAP template](https://go.microsoft.com/fwlink/?linkid=2117913) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
 
 ## Resources
 
