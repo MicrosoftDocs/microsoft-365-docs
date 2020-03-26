@@ -96,7 +96,7 @@ The Office built-in labeling client downloads sensitivity labels and sensitivity
 
 To use the Office built-in labeling client, you must have one or more [label policies published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to users from one of the listed admin centers and a [supported version of Office](#support-for-sensitivity-label-capabilities-in-apps).
 
-If both of these conditions are met but you need to disable the Office built-in labeling client, use the following Group Policy setting:
+If both of these conditions are met but you need to turn off the Office built-in labeling client, use the following Group Policy setting:
 
 1. Navigate to **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**
 
@@ -110,9 +110,9 @@ If users have one of the Azure Information Protection clients installed ([unifie
 
 To use built-in labeling rather than the Azure Information Protection client for Office apps, use the instructions from the previous section but set the Group Policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels** to **1**. 
 
-Alternatively, disable or uninstall the Office add-in, **Azure Information Protection**. This method is suitable for a single computer, and ad-hoc testing. For instructions, see [View, manage, and install add-ins in Office programs](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d). 
+Alternatively, disable or remove the Office add-in, **Azure Information Protection**. This method is suitable for a single computer, and ad-hoc testing. For instructions, see [View, manage, and install add-ins in Office programs](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d). 
 
-When you disable or uninstall this Office add-in, the Azure Information Protection client remains installed so that you can continue to label files outside your Office apps. For example, by using File Explorer, or PowerShell.
+When you disable or remove this Office add-in, the Azure Information Protection client remains installed so that you can continue to label files outside your Office apps. For example, by using File Explorer, or PowerShell.
 
 For information about which features are supported by the Azure Information Protection clients and the Office built-in labeling client, see [Choose which labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure Information Protection documentation.
 
