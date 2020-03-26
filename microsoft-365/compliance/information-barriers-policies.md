@@ -1,4 +1,4 @@
-0---
+---
 title: "Define information barrier policies"
 f1.keywords:
 - NOCSH

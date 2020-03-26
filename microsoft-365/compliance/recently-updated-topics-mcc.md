@@ -30,73 +30,7 @@ Just like features in the Microsoft 365 compliance center, our help content is a
 
 ### Auditing
 
-<<<<<<< HEAD
-[Manage mailbox auditing](enable-mailbox-auditing.md#more-information) (updated)<br>Clarified that only mailbox auditing events for E5 users are available in audit log searches in the Office 365 Security & Compliance Center or using the Office 365 Management Activity API. Also details for using Exchange Online cmdlets to retrieve mailbox audit logs for users without E5 licenses.
-
-[Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities) (updated)<br>Added description for the "Performed search query" activity in the SharePoint file and folder activities table.
-
-### Compliance offerings
-
-[ENISA Information Assurance Framework](offering-enisa.md) (new)<br>New offering outlining Microsoft's ENISA compliance.
-
-Updated articles to clarify support for Microsoft Managed Desktop:<br>
-[Cloud Security Alliance (CSA) STAR attestation](offering-CSA-STAR-Attestation.md)<br>
-[Cloud Security Alliance (CSA) STAR certification](offering-CSA-Star-Certification.md)<br>
-[ISO/IEC 20000-1:2011 Information Technology Service Management](offering-ISO-20000-1-2011.md)<br>
-[ISO 22301:2012 Business Continuity Management Standard](offering-ISO-22301.md)<br>
-[ISO/IEC 27001:2013 Information Security Management Standards](offering-ISO-27001.md)<br>
-[ISO/IEC 27017:2015 Code of Practice for Information Security Controls](offering-ISO-27017.md)<br>
-[ISO/IEC 27018 Code of Practice for Protecting Personal Data in the Cloud](offering-ISO-27018.md)<br>
-[ISO/IEC 27701 Privacy Information Management System (PIMS)](offering-iso-27701.md)<br>
-[ISO 9001:2015 Quality Management Systems Standards](offering-ISO-9001.md)<br>
-[Service Organization Controls (SOC)](offering-SOC.md)
-
-### Compliance Score and Compliance Manager
-
-[Microsoft Compliance Score (Preview)](compliance-score.md) (updated)<br>Various updates, including info about pre-configured templates for Brazil LGPD, SOC 1, and SOC 2; improved description of groups; new link at top of article to quickly view what’s new in Compliance Score.
-
-[Microsoft Compliance Score (Preview) calculation](compliance-score-methodology.md#how-compliance-score-continuously-assesses-controls) (updated)<br>Clarified that Secure Score powers Compliance Score's continuous monitoring functionality.
-
-[Microsoft Compliance Score (Preview) release notes](compliance-score-release-notes.md) (updated)<br>Redesigned to display what’s new info at the top of article (particularly new templates for assessments).
-
-[Microsoft Compliance Score (Preview) setup](compliance-score-setup.md) (updated)<br>Added new section on how to configure automatic Secure Score updates and improved guidance on filtering dashboard view by groups.
-
-[Work with Microsoft Compliance Manager (Preview)](working-with-compliance-manager.md) (updated)<br>Improved guidance for creating and working with groups and new instructions for enabling Secure Score updates at the per-action level.
-
-### Content search and core eDiscovery
-
-[Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md) (new)<br>Detailed info about the retirement of In-Place eDiscovery, In-Place Holds, and the Search-Mailbox cmdlet in Exchange Online and the retirement of Advanced eDiscovery v1.0.
-
-[Migrate legacy eDiscovery searches and holds to the Microsoft 365 compliance center](migrate-legacy-eDiscovery-searches-and-holds.md) (new)<br>Guidance on how to migrate In-Place eDiscovery searches and holds from the Exchange admin center to the Microsoft 365 compliance center.
-
-[Use the Office 365 eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md) (new)<br>Details about configuring the new release of Edge to export search results.
-
-[Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md#special-characters) (updated)<br>Added section about special characters in a search query.
-
-[Manage eDiscovery cases](ediscovery-cases.md#optional-step-11-delete-a-case) (updated)<br>Added new optional step about deleting cases and key point that *all* holds associated with the case must be *deleted* before the case can be deleted.
-
-[Search for and delete email messages](search-for-and-delete-messages-in-your-organization.md#step-3-delete-the-message) (updated)<br>Given the upcoming retirement of the Search-Mailbox cmdlet, replaced **Search-Mailbox -DeleteContent** with **New-ComplianceSearchAction -Purge** in the step for deleting item. Coming soon - addition of a sample script that loops the purge command to workaround the 10-item purge limit of the New-ComplianceSearchAction cmdlet.
-
-### Data connectors
-
-[Set up a connector to import HR data](import-hr-data.md) (new)<br>Details about setting up a Human Resources (HR) data connector to import HR data. Supports the new insider risk management solution.
-
-[Archive third-party data](archiving-third-party-data.md) (updated)<br>Data connectors for Facebook, Instant Bloomberg, LinkedIn, and Twitter are now officially released to general availability.
-
-### Insider risk management (preview)
-
-New articles to support the preview release of the insider risk management solution.<br>
-[Insider risk management in Microsoft 365 (preview)](insider-risk-management.md)<br>
-[Get started with insider risk management (preview)](insider-risk-management-configure.md)<br>
-[Insider risk management policies (preview)](insider-risk-management-policies.md)<br>
-[Insider risk management alerts (preview)](insider-risk-management-alerts.md)<br>
-[Insider risk management cases (preview)](insider-risk-management-cases.md)<br>
-[Insider risk management content explorer (preview)](insider-risk-management-content-explorer.md)<br>
-[Insider risk management users (preview)](insider-risk-management-users.md)<br>
-[Insider risk management notice templates (preview)](insider-risk-management-notices.md)<br>
-=======
 [Advanced Audit in Microsoft 365](advanced-audit.md) (new)<br>Available for organizations with an Office 365 E5 or Microsoft 365 Enterprise E5 subscription, advanced audit extends existing audit capabilities by introducing features such as long retention periods for audit logs, new audit log retention policies, and a new mailbox auditing action that tracks mail reads.
->>>>>>> cc1f3200bf63489c8c397aad316ee5a36d6c8d3d
 
 [Manage audit log retention policies](audit-log-retention-policies.md) (new)<br>Details about managing audit log retention policies, the new advanced audit feature that allows you to save audit records from different services for up to one year.
 
