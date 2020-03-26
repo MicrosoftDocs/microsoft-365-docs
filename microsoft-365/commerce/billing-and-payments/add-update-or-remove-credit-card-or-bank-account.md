@@ -80,7 +80,7 @@ You can change the payment method that is used to pay for a single subscription.
 
 ## Remove a payment method
 
-You can only remove a credit or debit card or bank account from your list of payment methods if it’s not attached to a subscription. This applies to all subscriptions, whatever their status. Add a payment method for the subscription, then remove the old one from that subscription. If the payment method is associated with a billing profile, change the payment method used for the billing profile, and then remove the payment method.
+You can only remove a credit or debit card or bank account from your list of payment methods if it's not attached to a subscription. This applies to all subscriptions, whatever their status. Add a payment method for the subscription, then remove the old one from that subscription. If the payment method is associated with a billing profile, change the payment method used for the billing profile, and then remove the payment method.
 
 ### Delete a payment method
 
@@ -153,9 +153,7 @@ If your payment method is associated with a billing profile and is also used to 
 You must be a Global Admin or a Billing Admin to do the tasks described in this article.
   
  **Not an admin?** Contact your IT administrator for help.[Who has admin permissions in my business?](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
-  
- **For Office 365 Home, or Personal**, see [Change the payment method or credit card linked to your Microsoft account](https://support.microsoft.com/help/4026594).
-  
+
 > [!NOTE]
 > The option to pay with a bank account is not available in some countries or regions.
 >
@@ -176,7 +174,7 @@ You must be a Global Admin or a Billing Admin to do the tasks described in this 
 4. Enter the information for the new credit card or bank account, then select **Submit**.
 
     > [!NOTE]
-    > The new credit card or bank account will only be used for the Office 365 subscription you chose in step 2. If you have other subscriptions that you want to use the new credit card or bank account for, follow the steps in this article to change the credit card or bank account used to pay for each subscription.
+    > The new credit card or bank account will only be used for the subscription you chose in step 2. If you have other subscriptions that you want to use the new credit card or bank account for, follow the steps in this article to change the credit card or bank account used to pay for each subscription.
 
 ::: moniker-end
 
@@ -186,8 +184,6 @@ You must be a Global Admin or a Billing Admin to do the tasks described in this 
 You must be a Global Admin or a Billing Admin to do the tasks described in this article.
   
  **Not an admin?** Contact your IT administrator for help. [Who has admin permissions in my business?](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
-  
- **For Office 365 Home, or Personal**, see [Change the payment method or credit card linked to your Microsoft account](https://support.microsoft.com/help/4026594).
   
 > [!NOTE]
 > The option to pay with a bank account is not available in some countries or regions.
@@ -207,7 +203,7 @@ You must be a Global Admin or a Billing Admin to do the tasks described in this 
 4. Enter the information for the new credit card or bank account, then select **Submit**.
 
     > [!NOTE]
-    > The new credit card or bank account will only be used for the Office 365 subscription you chose in step 2. If you have other subscriptions that you want to use the new credit card or bank account for, follow the steps in this article to change the credit card or bank account used to pay for each subscription.
+    > The new credit card or bank account will only be used for the subscription you chose in step 2. If you have other subscriptions that you want to use the new credit card or bank account for, follow the steps in this article to change the credit card or bank account used to pay for each subscription.
 
 ::: moniker-end
 
