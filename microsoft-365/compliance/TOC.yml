@@ -640,6 +640,8 @@
               href: use-advanced-ediscovery-utilities.md
             - name: Run reports
               href: run-reports-in-advanced-ediscovery.md
+    - name: Retirement of legacy eDiscovery tools
+      href: legacy-ediscovery-retirement.md
 - name: Manage data investigations
   items: 
     - name: Overview of data investigations
