@@ -96,9 +96,9 @@ Another easy way for Contoso IT administrators and compliance specialists to acc
 
 ![Compliance center](../media/communication-compliance-case-center.png)
 
-### Starting from the Microsoft 365 Solution catalog
+### Starting from the Microsoft 365 solution catalog
 
-Contoso IT administrators and compliance specialists could also choose to access the communication compliance solution by selecting the Solution catalog. By selecting **Catalog** in **Solutions** section of the left navigation while in the **Microsoft 365 compliance center**, they can open the catalog listing all Microsoft 365 compliance solutions. Scrolling down to the **Insider risk management** section, Contoso IT administrators can select Communication compliance to get started. Contoso IT administrators also decide to use the Show in navigation control to pin the communication compliance solution to the left-navigation pane for quicker access when they sign in going forward.
+Contoso IT administrators and compliance specialists could also choose to access the communication compliance solution by selecting the Microsoft 365 solution catalog. By selecting **Catalog** in **Solutions** section of the left navigation while in the **Microsoft 365 compliance center**, they can open the solution catalog listing all Microsoft 365 compliance solutions. Scrolling down to the **Insider risk management** section, Contoso IT administrators can select Communication compliance to get started. Contoso IT administrators also decide to use the Show in navigation control to pin the communication compliance solution to the left-navigation pane for quicker access when they sign in going forward.
 
 ![Solution catalog](../media/communication-compliance-case-solution.png)
 
