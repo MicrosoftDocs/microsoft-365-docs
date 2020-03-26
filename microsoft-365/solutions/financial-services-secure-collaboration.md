@@ -40,6 +40,8 @@ In the financial services sector, careful consideration is required for the conf
 * Establish ethical walls with information barriers
 * Protect against data exfiltration and insider risk
 
+As a Microsoft partner, Protiviti contributed to and provided material feedback to this article.
+
 ## Empower organizational and employee productivity by using Microsoft 365 and Teams
 
 Collaboration typically requires various forms of communication, the ability to store and access documents/data, and the ability to integrate other applications as needed. Employees in financial services typically need to collaborate and communicate with members of other departments or teams and sometimes with external entities. Therefore, using systems that create silos or make information sharing difficult is undesirable. Instead, it's preferable to leverage platforms and applications that enable employees to communicate, collaborate, and share information securely and according to corporate policy.
