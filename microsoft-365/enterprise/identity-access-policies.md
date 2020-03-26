@@ -43,7 +43,7 @@ To give you time to accomplish these tasks, we recommend implementing the baseli
 |        |[Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication)|Clients that do not use modern authentication can bypass conditional access rules, so it's important to block these|
 |        |[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account|
 |        |[Define app protection policies](#define-app-protection-policies)|One policy per platform (iOS, Android, Windows).|
-|        |[Require approved apps](#require-approved-apps)|Enforces mobile app protection for phones and tablets|
+|        |[Require apps that support Intune app protection policies](#require-apps-that-support-intune-app-protection-policies)|Enforces mobile app protection for phones and tablets|
 |        |[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform|
 |        |[Require compliant PCs](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Enforces Intune management of PCs|
 |**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](#require-mfa-based-on-sign-in-risk)| |
@@ -183,87 +183,41 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 > Be sure to enable this policy, by choosing **On**. Also consider using the [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) tool to test the policy
 
 ## Define app protection policies
-App protection policies define which apps are allowed and the actions they can take with your organization's data. Create Intune app protection policies from within the Azure portal. 
+App protection policies (APP) define which apps are allowed and the actions they can take with your organization's data. The choices available in APP enable organizations to tailor the protection to their specific needs. For some, it may not be obvious which policy settings are required to implement a complete scenario. To help organizations prioritize mobile client endpoint hardening, Microsoft has introduced taxonomy for its APP data protection framework for iOS and Android mobile app management. 
 
-Create a policy for each platform:
-- iOS
-- Android
-- Windows 10
+The APP data protection framework is organized into three distinct configuration levels, with each level building off the previous level: 
 
-To create a new app protection policy, sign in to the Microsoft Azure portal with your administrator credentials, and then navigate to **Client apps** > **App protection policies**. Choose **Create policy**.
+- Enterprise basic data protection ensures that apps are protected with a PIN and encrypted and performs selective wipe operations. For Android devices, this level validates Android device attestation. This is an entry level configuration that provides similar data protection control in Exchange Online mailbox policies and introduces IT and the user population to APP. 
+- Enterprise enhanced data protection introduces APP data leakage prevention mechanisms and minimum OS requirements. This is the configuration that is applicable to most mobile users accessing work or school data. 
+- Enterprise high data protection introduces advanced data protection mechanisms, enhanced PIN configuration, and APP Mobile Threat Defense. This configuration is desirable for users that are accessing high risk data. 
 
-There are slight differences in the app protection policy options between iOS and Android. The below policy is specifically for Android. Use this as a guide for your other policies.
+To see the specific recommendations for each configuration level and the minimum apps that must be protected, review [Data protection framework using app protection policies](https://docs.microsoft.com/mem/intune/apps/app-protection-framework). 
 
-The recommended list of apps includes the following:
-- PowerPoint
-- Excel
-- Word
-- Microsoft Teams
-- Microsoft SharePoint
-- Microsoft Visio Viewer
-- OneDrive
-- OneNote
-- Outlook
+Using the principles outlined in [Identity and device access configurations](microsoft-365-policies-configurations.md), the Baseline and Sensitive protection tiers map closely with the Level 2 enterprise enhanced data protection settings. The Highly regulated protection tier maps closely to the Level 3 enterprise high data protection settings.
 
-The following tables describe the recommended settings:
+|Protection level |App Protection Policy  |More information  |
+|---------|---------|---------|
+|Baseline     | [Level 2 enhanced data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
+|Sensitive     | [Level 2 enhanced data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.        |
+|Highly Regulated     | [Level 3 enterprise high data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)        | The policy settings enforced in level 3 include all the policy settings recommended for level 1 and 2 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 2.        |
 
-|Type|Properties|Values|Notes|
-|:---|:---------|:-----|:----|
-|Data relocation|Prevent Android backup|Yes|On iOS this will specifically call out iTunes and iCloud|
-||Allow app to transfer data to other apps|Policy managed apps||
-||Allow app to receive data from other apps|Policy managed apps||
-||Prevent "Save As"|Yes||
-||Select which storage services corporate data can be saved to|OneDrive for Business, SharePoint||
-||Restrict cut, copy, and paste with other apps|Policy managed apps with paste in||
-||Restrict web content to display in the managed browser|No||
-||Encrypt app data|Yes|On iOS select option: When device is locked|
-||Disable app encryption when device is enabled|Yes|Disable this setting to avoid double encryption|
-||Disable contacts sync|No||
-||Disable printing|No||
-|Access|Require PIN for access|Yes||
-||Select Type|Numeric||
-||Allow simple PIN|No||
-||PIN length|6||
-||Allow fingerprint instead of PIN|Yes||
-||Disable app PIN when device PIN is managed|Yes||
-||Require corporate credentials for access|No||
-||Recheck the access requirement after (minutes)|30||
-||Block screen capture and Android assistant|No|On iOS this is not an available option|
-|Sign-in security requirements|Max PIN attempts|5|Reset Pin|
-||Offline grace period|720|Block access|
-||Offline interval (days) before app data is wiped|90|Wipe data|
-||Jailbroken/rooted devices| |Wipe data|
+To create a new app protection policy for each platform (iOS and Android) within Microsoft Endpoint Manager using the data protection framework settings, administrators can:
+1. Manually create the policies by following the steps in [How to create and deploy app protection policies with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/app-protection-policies).
+2. Import the sample [Intune App Protection Policy Configuration Framework JSON templates](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).
 
-When complete, remember to select "Create". Repeat the above steps and replace the selected platform (dropdown) with iOS. This creates two app policies, so once you create the policy, then assign groups to the policy and deploy it.
+## Require apps that support Intune app protection policies
+With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several conditional access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-To edit the policies and assign these policies to users, see [How to create and assign app protection policies](https://docs.microsoft.com/intune/app-protection-policies). 
+1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Office 365" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
-## Require approved apps
-To require approved apps:
+   > [!NOTE]
+   > This policy ensures mobile users can access all Office endpoints using the applicable apps.
 
-1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure dashboard.
+2. If enabling mobile access to Exchange Online, implement [Block ActiveSync clients] (secure-email-recommended-policies.md#block-activesync-clients), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
 
-2. Choose **Azure Active Directory** from the left menu.
+   The above policies leverage the grant controls [Require approved client app](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) and [Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
-3. Under the **Security** section, choose **Conditional access**.
-
-4. Choose **New policy**.
-
-5. Enter a policy name, then choose the **Users and groups** you want to apply the policy for.
-
-6. Choose **Cloud apps**.
-
-7. Choose **Select apps**, select the desired apps from the **Cloud apps** list. For example, select Office 365 Exchange Online. Choose **Select** and **Done**.
-
-8. Choose **Conditions**, select **Device platforms**, then choose **Configure**
-
-9. Under **Include**, choose **Select device platforms**, select **Android** and **iOS**. Click **Done** and **Done** again
-
-10. Choose **Grant** from the **Access controls** section.
-
-11. Choose **Grant access**, select **Require approved client app**. For multiple controls, select **Require the selected controls**, then choose **Select**. 
-
-12. Choose **Create**.
+3. Disable legacy authentication for other client apps on iOS and Android devices. For more information, see [Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication).
 
 ## Define device-compliance policies
 
@@ -307,7 +261,7 @@ For all the above policies to be considered deployed, they must be targeted at u
 ||Simple passwords|Block||
 ||Password type|Device default||
 ||Minimum password length|6||
-||Maximum minutes of inactivity before password is required|15|This setting is supported for Android versions 4.0 and above or KNOX 4.0 and above. For iOS devices, it’s supported for iOS 8.0 and above|
+||Maximum minutes of inactivity before password is required|15|This setting is supported for Android versions 4.0 and above or KNOX 4.0 and above. For iOS devices, it's supported for iOS 8.0 and above|
 ||Password expiration (days)|41||
 ||Number of previous passwords to prevent reuse|5||
 ||Require password when device returns from idle state (Mobile and Holographic)|Require|Available for Windows 10 and later|
