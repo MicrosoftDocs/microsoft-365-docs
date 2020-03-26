@@ -31,11 +31,13 @@ The Microsoft Junk Email Reporting Add-in for Microsoft Office Outlook offers se
 The Junk Email Reporting Add-in helps you submit reports to the Microsoft Exchange Online Protection (EOP) service. If your mailbox is not protected by the service, your junk email report submission will not affect your spam filters. Administrators can learn about more spam settings that apply to a whole organization at [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md) and [Create blocked sender lists in Office 365](create-block-sender-lists-in-office-365.md). These are helpful if you have administrator-level control and you want to prevent false positives or false negatives.
 
 > [!TIP]
-> You can also submit spam messages directly to Microsoft by using the [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) email address, and false positive (non-spam) messages by using the [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com) email address. For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+> You can also submit false positives (good email marked as spam) and false negatives (bad email allowed) directly to Microsoft. For more information, see [Manually submit messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
 
-### To report junk email messages from Outlook
+### Use the Report Message add-in
 
-[Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+To install the Report Message add-in, see [Enable the Report Message add-in in Office 365](enable-the-report-message-add-in.md).
+
+For instructions about how to use the add-in, see [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 ### To report junk email messages from your Inbox
 

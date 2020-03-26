@@ -60,7 +60,7 @@ The Help content for assisting EOP end users to manage spam consists of the foll
 
 - [Find and release quarantined messages as a user](find-and-release-quarantined-messages-as-a-user.md): Describes how end users can find and release their own spam-quarantined messages in the spam quarantine user interface, and optionally report them as not junk to Microsoft.
 
-- [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md): Describes the different ways end users can submit spam (junk) and non-spam (not junk) messages to Microsoft. This topic includes links to the reporting tools available in Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App).
+- [Manually submit messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md): Describes the different ways end users can submit spam (junk) and non-spam (not junk) messages to Microsoft. This topic includes links to the reporting tools available in Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App).
 
 - [Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md): Describes how end users can submit malware that made it past the filters, or submit a file that was incorrectly identified as malware.
 

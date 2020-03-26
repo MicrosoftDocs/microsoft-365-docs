@@ -41,7 +41,7 @@ To fix this problem, do the following steps:
 If the problem persists, contact your admin.
 
 > [!TIP]
-> You can also submit spam messages directly to Microsoft by using the [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) email address, and false positive messages by using the [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) email address. For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+> You can also submit spam messages directly to Microsoft by using the [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) email address, and false positive messages by using the [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) email address. For more information, see [Manually submit messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
 
 ## Troubleshooting for Administrators
 

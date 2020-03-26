@@ -32,77 +32,56 @@ It can be frustrating when users in your organization receive junk messages (spa
 
 If you receive a message that passed through spam filtering that and should be classified as junk or a phishing scam, you can submit the message to the Microsoft Spam Analysis and Microsoft Phishing Analysis teams, as appropriate. The analysts will review the message and add it to the service-wide filters if it meets the classification criteria.
 
-For more spam settings that apply to the whole organization, see [Anti-spam protection in Office 365](anti-spam-protection.md). This article contains tips to help prevent false negatives.
-
 You can submit junk email messages in the following ways:
 
 - For Outlook and Outlook on the web users, use the Report Message Add-in for Microsoft Outlook. For information about how to install and use this tool, see [Enable the Report Message add-in](enable-the-report-message-add-in.md).
 
-- You can also use email to submit messages to Microsoft that should be classified as junk or phishing scams, as described in the following procedure.
+- You can also use email to submit messages to Microsoft that should be classified as junk or phishing scams as described in the following procedure.
 
-### Use email to submit junk (spam) or phishing scam messages to Microsoft
+  1. Create a new, blank email message with the one of the following recipients:
 
-To submit a junk or phishing scam message to Microsoft:
+     - **Junk**: junk@office365.microsoft.com
 
-1. Create a blank email message.
+     - **Phishing**: phish@office365.microsoft.com
 
-2. Address the message to the Microsoft team that reviews messages, as follows:
+  2. Drag and drop the junk or phishing message into the new message. This will save the junk or phishing message as an attachment in the new message. Don't copy and paste the content of the message or forward the message (we need the original message so we can inspect the message headers).
 
-   - For junk messages: junk@office365.microsoft.com
+     > [!NOTE]
+     > <ul><li>You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing scam messages or junk email messages.</li><li>Leave the body of the new message empty.<li></li>Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.</li></ul>
 
-   - For phishing scam messages: phish@office365.microsoft.com
+  3. When you're finished, click **Send**.
 
-3. Copy and paste the junk or phishing scam message into the new message as an attachment.
+> [!TIP]
+> Admins have several different ways to block specific messages that are being misidentified as spam. For details, see [Create blocked sender lists in Office 365](create-block-sender-lists-in-office-365.md).
 
-   > [!NOTE]
-   > <ul><li>You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing scam messages or junk email messages.</li><li>Leave the body of the new message empty.<li></li>Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.</li></ul>
+## Submit false positives
 
-4. Click **Send**.
-
-## Submit messages that were tagged as junk but should have been allowed through
-
-If a message was incorrectly identified as junk, you can submit the "false positive" message to the Microsoft Spam Analysis Team. The analysts will evaluate and analyze the message. Depending on the results of the analysis, the service-wide spam content filter rules may be adjusted to allow the message through.
-
-Administrators can review more spam setting information that applies to a whole organization. See [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md). This information is helpful if you have administrator-level control and you want to prevent false positives.
+If a message was incorrectly identified as junk, you can submit the message to the Microsoft Spam Analysis Team. The analysts will evaluate the message, and (depending on the results of the analysis) the service-wide filters can be adjusted to allow the message through.
 
 You can submit non-spam messages in the following ways:
 
-- If you use the **Move message to Junk Email folder** action when you configure your content filters (this is the default action), users can release false positive messages in their Outlook or Outlook on the web (formerly known as Outlook Web App) Junk Email folder.
+- If the message is in the Junk Email folder (this is the default action for spam in anti-spam policies), users can release the message (mark as not junk) directly from the Junk Email folder. However, they still need to submit the message to Microsoft as previously described in this topic. For more information, see <>.
 
-  - Outlook users can release false positive messages by using the **Not Junk** right-click menu option. However, they must submit the message to Microsoft through email, as shown in the procedure in this article.
+- If the message was quarantined instead of delivered to the Junk Email folder, you have the following options:
 
-  - Outlook on the web users can release false positive messages and submit them to Microsoft for analysis using the **Mark as not junk** action. For more information about how to do this, see [Report junk email and phishing scams in Outlook on the web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
+  - Admins can release and report all types of quarantined messages. For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
 
-- If you use the **Quarantine message** action instead of the **Move message to Junk Email folder** action when you configure your content filters:
+  - Users can release their own spam and (as of April, 2020) phish messages from quarantine using the following options:
 
-  - Administrators can release spam-quarantined messages and report them as false positives from the Quarantine portal For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
+  - Quarantine in the Office 365 Security & Compliance Center. For more information, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).
 
-  - Users can release their own spam-quarantined messages and report them as false positives through the following channels:
+  - If an admin has [enabled end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in anti-spam policies, user can release spam but not phishing messages from quarantine directly from the notifications. For more information, see [End-user spam notifications in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-  - The Quarantine user interface. For more information, see [Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md).
+- You can also use email to submit messages to Microsoft that should not be classified as spam as described in the following procedure:
 
-  - End-user spam notification messages (if they're enabled by your administrator).
+  1. Create a new, blank email message with not_junk@office365.microsoft.com as the recipient:
 
-- You can also use email to submit messages to Microsoft that should not be classified as spam. When you do this, make sure that you use the steps in the following procedure.
+  2. Drag and drop the misidentified message into the new message. This will save the misidentified message as an attachment in the new message. Don't copy and paste the content of the message or forward the message (we need the original message so we can inspect the message headers).
 
-### Use email to submit false positive messages
+     > [!NOTE]
+     > <ul><li>You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing scam messages or junk email messages.</li><li>Leave the body of the new message empty.<li></li>Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.</li></ul>
 
-Use the same procedure as described in the [Use email to submit junk (spam) or phishing scam messages to Microsoft](#use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft) section, but send the message to not_junk@office365.microsoft.com.
+  3. When you're finished, click **Send**.
 
-## Spam evaluation and rules deployment
-
-The spam analysis team examines messages that you submit, and adjusts the spam filters to prevent future junk mail. As a result, Office 365 spam filters are constantly refined. Any submitted items are evaluated at the network-wide level. False positive submissions are examined and assessed for possible rule adjustment to allow future messages through the spam filters. Therefore, notifying the service of false positives and also false negatives (unfiltered spam) is advantageous for you and all customers who use the global network. The spam team examines indicators within each submitted message, such as the following:
-
-- From address
-
-- Sending IP address
-
-- Keywords
-
-- Phrases
-
-- Frequency of transmission
-
-- Other trends and patterns
-
-Spam evaluation is an ongoing process that applies regardless of the originating language or character set. Because a spam message can be vague or even lack text in the subject or message body, the spam team relies on other message characteristics to perform filtering. This means that after the spam team flags a given message as spam and makes the necessary changes to its rule base, that message will be blocked in the future until its characteristics have been modified enough to avoid our filters. New spam rules are deployed continuously. Time frames for rules on individual submissions vary depending on the quantity and quality of submissions. Because new spam rules are set globally for all customers, not all individual spam submissions will result in a new spam rule.
+> [!TIP]
+> Admins have several different ways to allow specific messages to skip spam filtering. For details, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
