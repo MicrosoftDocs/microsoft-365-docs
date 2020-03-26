@@ -221,18 +221,20 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 ## Define device-compliance policies
 
-Device-compliance policies define the requirements that devices must adhere to in order to be marked as compliant. Create Intune device compliance policies from within the Azure portal. 
+Device-compliance policies define the requirements that devices must adhere to in order to be marked as compliant. Create Intune device compliance policies from within the Microsoft Endpoint Manager admin center.
 
 Create a policy for each platform:
-- Android
-- Android enterprise
-- iOS
+- Android device administrator
+- Android Enterprise
+- iOS/iPadOS
 - macOS
 - Windows Phone 8.1
 - Windows 8.1 and later
 - Windows 10 and later
 
-To create device compliance policies, log in to the Microsoft Azure portal with your administer credentials, and then navigate to **Intune > Device compliance**. Select **Create policy**.
+To create device compliance policies, log in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) with your administer credentials, and then navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
+
+For step-by-step guidance on creating compliance policies in Intune, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) in the Intune documentation.
 
 The following settings are recommended for Windows 10.
 
@@ -251,8 +253,6 @@ The following settings are recommended for Windows 10.
 |:---|:---------|:-----|:----|
 |Operating system version|All|Not configured||
 
-For all the above policies to be considered deployed, they must be targeted at user groups. You can do this by creating the policy (on Save) or later by selecting **Manage Deployment** in the **Policy** section (same level as Add).
-
 **System security**
 
 |Type|Properties|Values|Notes|
@@ -269,9 +269,9 @@ For all the above policies to be considered deployed, they must be targeted at u
 |Device Security|Firewall|Require||
 ||Antivirus|Require||
 ||Antispyware|Require|This setting requires an Anti-Spyware solution registered with Windows Security Center|
-|Defender|Windows Defender Antimalware|Require||
-||Windows Defender Antimalware minimum version||Only supported for Windows 10 desktop. Microsoft recommends versions no more than five behind from the most recent version|
-||Windows Defender Antimalware signature up to date|Require||
+|Defender|Microsoft Defender Antimalware|Require||
+||Microsoft Defender Antimalware minimum version||Only supported for Windows 10 desktop. Microsoft recommends versions no more than five behind from the most recent version|
+||Microsoft Defender Antimalware signature up to date|Require||
 ||Real-time protection|Require|Only supported for Windows 10 desktop|
 
 **Microsoft Defender ATP**
@@ -279,6 +279,8 @@ For all the above policies to be considered deployed, they must be targeted at u
 |Type|Properties|Values|Notes|
 |:---|:---------|:-----|:----|
 |Microsoft Defender Advanced Threat Protection rules|Require the device to be at or under the machine-risk score|Medium||
+
+For the settings in the device configuration policy to be deployed, they must target user groups. You can configure this on the **Assignment** tab when you create the policy, or later by editing the policy in the Microsoft Endpoint Manager Admin Center. To edit the assignments, select the policy and then under **Manage** select **Assignments**. After editing the groups, select **Save** to deploy your changes. 
 
 ## Require compliant PCs (but not compliant phones and tablets)
 Before adding a policy to require compliant PCs, be sure to enroll devices for management into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. 
