@@ -42,12 +42,12 @@ Remediation actions, whether they're pending approval or are already complete, c
 
 When an automated investigation completes, a verdict is reached for every piece of evidence involved, and remediation actions are identified. In some cases, remediation actions are taken automatically; in other cases, remediation actions await approval. The following table lists possible verdicts and outcomes:
 
-|Verdict	|Area	|Outcomes|
+|Verdict    |Area    |Outcomes|
 |------|------|------|
-|Malicious	|Devices (endpoints)	|Remediation actions are taken automatically|
-|Malicious	|Email content (URLs or attachments) | Recommended remediation actions are pending approval|
-|Suspicious	|Devices or email content |Recommended remediation actions are pending approval|
-|Clean	|Devices or email content	|No remediation actions are needed|
+|Malicious    |Devices (endpoints)    |Remediation actions are taken automatically|
+|Malicious    |Email content (URLs or attachments) | Recommended remediation actions are pending approval|
+|Suspicious    |Devices or email content |Recommended remediation actions are pending approval|
+|No threats found    |Devices or email content    |No remediation actions are needed|
 
 [Review a pending action in the Action center](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
 
