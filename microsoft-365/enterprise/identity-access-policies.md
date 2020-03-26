@@ -234,6 +234,8 @@ Create a policy for each platform:
 
 To create device compliance policies, log in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) with your administer credentials, and then navigate to **Devices** > **Compliance policies** > **Policies**. Select **Create Policy**.
 
+For device compliance policies to be deployed, they must be assigned to user groups. You assign a policy after you create and save it. In the admin center, select the policy and then select **Assignments**. After selecting the groups that you want to receive the policy, select **Save** to save that group assignment and deploy the policy.
+
 For step-by-step guidance on creating compliance policies in Intune, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) in the Intune documentation.
 
 The following settings are recommended for Windows 10.
@@ -280,7 +282,6 @@ The following settings are recommended for Windows 10.
 |:---|:---------|:-----|:----|
 |Microsoft Defender Advanced Threat Protection rules|Require the device to be at or under the machine-risk score|Medium||
 
-For the settings in the device configuration policy to be deployed, they must target user groups. You can configure this on the **Assignment** tab when you create the policy, or later by editing the policy in the Microsoft Endpoint Manager Admin Center. To edit the assignments, select the policy and then under **Manage** select **Assignments**. After editing the groups, select **Save** to deploy your changes. 
 
 ## Require compliant PCs (but not compliant phones and tablets)
 Before adding a policy to require compliant PCs, be sure to enroll devices for management into Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user. 
