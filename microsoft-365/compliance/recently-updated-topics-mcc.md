@@ -100,24 +100,7 @@ Updated the following articles to support the official release of insider risk m
 
 [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md) (updated)<br>New options of "None" and "Remove" replaces the encryption toggle, and "Add any authenticated users" is added as a new permission to assign now. The section for letting users assign permission is updated now that prompting users to select custom permissions in Word, PowerPoint, and Excel is rolling out in preview for Windows and Mac. New section for example configurations of how to configure the encryption settings to support specific use cases. New section that lists considerations for encrypting content.
 
-<<<<<<< HEAD
-### Auditing
-
-[Manage mailbox auditing](enable-mailbox-auditing.md#more-information) (updated)<br>Added details about how mailbox audit log events are available only for users with E5 licenses or mailboxes where mailbox auditing was manually turned on by an admin. Also new guidance about using the **Search-MailboxAuditLog** cmdlet in Exchange Online PowerShell to search the mailbox audit log for users without E5 licenses.
-
-[Search the audit log to troubleshoot common scenarios](auditing-troubleshooting-scenarios.md#investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization) (updated)<br>New section about using pass-through authentication to investigate successful logins by external users.
-
-### Content Search & eDiscovery
-
-[Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md#using-a-filters-list-to-combine-filter-types) (updated)<br>Added details about using a filters list, which lets you add a mailbox and site filters to a single search permissions filter.
-
-[Content search in Office 365](content-search.md#searching-disconnected-or-de-licensed-mailboxes) (updated)<br>Added details about searching disconnected or de-licensed mailboxes.
-
-[Content search in Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment) (updated)<br>
-[Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments) (updated)<br>Added details to both articles about searching for content in SharePoint multi-geo environments.
-=======
 [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) (updated)<br>The section for configuring auto-labeling for Office apps now includes the new option to use trainable classifiers.
->>>>>>> cc1f3200bf63489c8c397aad316ee5a36d6c8d3d
 
 [Use sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md) (updated)<br>Revisions throughout for a better reading experience and technical clarifications. Also, per customer feedback, added links to the [Azure AD article](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) for enabling the preview and applying sensitivity labels to Office 365 groups in the Azure portal. Finally, added a new section for auditing sensitivity label activities.
 

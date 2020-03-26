@@ -186,18 +186,3 @@ If you encounter either of these scenarios, you can create a mail flow rule with
 ||
 |:-----|
 |![The short icon for LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Office 365?** Discover free video courses for **Office 365 admins and IT pros**, brought to you by LinkedIn Learning.|
-<<<<<<< HEAD
-
-## For more information
-
-[Safe sender and blocked sender lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
-
-[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)
-
-[Configure the outbound spam policy](configure-the-outbound-spam-policy.md)
-
-[How to prevent good email from being marked as spam](prevent-email-from-being-marked-as-spam.md)
-
-[How to reduce spam email in Office 365](reduce-spam-email.md)
-=======
->>>>>>> cc1f3200bf63489c8c397aad316ee5a36d6c8d3d

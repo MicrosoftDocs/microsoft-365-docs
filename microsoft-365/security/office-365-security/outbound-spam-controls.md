@@ -54,16 +54,3 @@ As described in the [Exchange Online Service Description](https://docs.microsoft
 - **Use a third party bulk email provider**: There are several third party bulk email solution providers that you can use to send mass mailings. These companies have a vested interest in working with customers to ensure good email sending practices.
 
 The Messaging, Mobile, Malware Anti-Abuse Working Group (MAAWG) publishes its membership roster at <https://www.maawg.org/about/roster>. Several bulk email providers are on the list, and are known to be responsible internet citizens.
-<<<<<<< HEAD
-
-## For more information
-
-[Sample notification when a sender is blocked sending outbound spam](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
-
-[Microsoft email anti-spam protection](anti-spam-protection.md)
-
-[Anti-spoofing protection in Office 365](anti-spoofing-protection.md)
-
-[Spam confidence levels](spam-confidence-levels.md)
-=======
->>>>>>> cc1f3200bf63489c8c397aad316ee5a36d6c8d3d

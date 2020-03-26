@@ -627,18 +627,3 @@ There will be times when our filters will miss the message or it takes time for 
 
 > [!TIP]
 > There may be situations where your organization may not agree with the verdict the service provides. In this case, you may want to keep the Allow or Block listing permanent. However, if you are going to put a domain on the Allow list for extended periods of time, you should tell the sender to make sure that their domain is authenticated and set to DMARC reject if it is not.
-<<<<<<< HEAD
-
-## For more information
-
-[Setting up your domain for DMARC](use-dmarc-to-validate-email.md)
-
-[Quarantine](quarantine.md)
-
-[How to prevent good email from being marked as spam](prevent-email-from-being-marked-as-spam.md)
-
-[How to reduce spam email in Office 365](reduce-spam-email.md)
-
-[Spam confidence level (SCL) in Office 365](spam-confidence-levels.md)
-=======
->>>>>>> cc1f3200bf63489c8c397aad316ee5a36d6c8d3d

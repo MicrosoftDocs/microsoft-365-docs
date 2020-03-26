@@ -106,12 +106,3 @@ A: A ZAP action does not make any changes to the message header.
 A: ZAP won't quarantine messages from mailboxes on hold. ZAP can move messages to the Junk Email folder based on the action that's configured for a spam or phishing verdict in anti-spam policies.
 
 For more information about holds in Exchange Online, see [In-Place Hold and Litigation Hold in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds).
-<<<<<<< HEAD
-
-## Related Topics
-
-[Microsoft Email Anti-Spam Protection](anti-spam-protection.md)
-
-[Block email spam with the Microsoft 365 spam filter to prevent false negative issues](reduce-spam-email.md)
-=======
->>>>>>> cc1f3200bf63489c8c397aad316ee5a36d6c8d3d

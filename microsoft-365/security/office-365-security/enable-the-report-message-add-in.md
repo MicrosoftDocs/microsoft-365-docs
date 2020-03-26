@@ -31,19 +31,11 @@ For example, suppose that people are reporting a lot of messages as phishing. Th
 
 The Report Message add-in works with most Office 365 subscriptions and the following products:
 
-<<<<<<< HEAD
  - Outlook on the web
  - Outlook 2013 SP1
  - Outlook 2016
  - Outlook 2016 for Mac
  - Outlook included with Microsoft 365 Apps for enterprise
-=======
-- Outlook on the web
-- Outlook 2013 SP1
-- Outlook 2016
-- Outlook 2016 for Mac
-- Outlook included with Office 365 ProPlus
->>>>>>> cc1f3200bf63489c8c397aad316ee5a36d6c8d3d
 
 The Report Message add-in is currently not available for:
 
