@@ -322,7 +322,7 @@ These operations in the Exchange Web Services API are used by the In-Place eDisc
 
 ### Timeline
 
-- July 1, 2020: The GetSearchableMailboxes, SearchMailboxes, SetHoldOnMailboxes, and GetHoldOnMailboxes operations will no longer be available, and Microsoft Support will no longer provide assistance.
+- July 1, 2020: The **GetSearchableMailboxes**, **SearchMailboxes**, **SetHoldOnMailboxes**, and **GetHoldOnMailboxes** operations will no longer be available, and Microsoft Support will no longer provide assistance.
 
 ## Advanced eDiscovery v1.0
 
