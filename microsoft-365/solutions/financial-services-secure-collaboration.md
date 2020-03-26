@@ -59,7 +59,7 @@ A common scenario where Teams benefits financial services is when running intern
 
 Teams can provide a collaboration space to securely store sensitive client data and conduct conversations between team members where sensitive topics may be discussed. Multiple members of the team can edit or collaborate on a single document at the same time. The program owner or coordinator can be configured as the team owner and can then add and remove members as needed.
 
-Another common scenario is to use Teams as a "virtual data room" to securely collaborate and store and manage documents. Team members and syndicates within investment banking, asset management, or private equity firms can securely collaborate on a deal or investment. Cross-functional teams are often involved in planning and fulfilling such deals, and the ability to securely share data and conduct conversations is a core requirement. Securely sharing related documents with external investors is also a key requirement. Teams provides a secure and fully auditable location from which to centrally store, protect, and share investment data.
+Another common scenario is to use Teams as a "virtual data room" to securely collaborate, including storing and managing documents. Team members and syndicates within investment banking, asset management, or private equity firms can securely collaborate on a deal or investment. Cross-functional teams are often involved in planning and fulfilling such deals, and the ability to securely share data and conduct conversations is a core requirement. Securely sharing related documents with external investors is also a key requirement. Teams provides a secure and fully auditable location from which to centrally store, protect, and share investment data.
 
 :::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="A group of of office workers in a meeting discuss images on a large screen.":::
  
@@ -274,7 +274,7 @@ Information barriers in Microsoft 365 support conversations and files in Teams. 
 
 Financial institutions are typically required to establish and maintain a supervisory function within their organizations to monitor the activities of employees and to help it achieve compliance with applicable securities laws. Specifically, FINRA has established these supervision requirements:
  
-* [FINRA Rule 3110 (Supervision)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) requires firms to have written supervisory procedures (WSPs) to the supervise activities of its employees and the types of businesses in which it engages. In addition to other requirements, procedures must include:
+* [FINRA Rule 3110 (Supervision)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) requires firms to have written supervisory procedures (WSPs) to supervise activities of its employees and the types of businesses in which it engages. In addition to other requirements, procedures must include:
    - Supervision of supervisory personnel
    - Review of a firm's investment banking, securities business, internal communications, and internal investigations
    - Review of transactions for insider trading
@@ -282,7 +282,7 @@ Financial institutions are typically required to establish and maintain a superv
 
    Procedures must describe the individuals responsible for reviews, supervisory activity each person will perform, review frequency, and the types of documentation or communications under review.
  
-* [FINRA Rule 3120 (Supervisory Control System)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) requires firms to have a system of supervisory control policies and procedures (SCPs) that validates their written supervisory procedures as defined by Rule 3110. Firms are required not only to have WSPs but also to have policies that test these procedures annually to validate their ability to ensure compliance with applicable securities laws and regulations. Risked-based methodologies and sampling may be used to define the scope of testing. Among other requirements, this rule requires firms to provide an annual report to senior management that includes a summary of test results and any significant exceptions or amended procedures in response to test results.
+* [FINRA Rule 3120 (Supervisory Control System)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) requires firms to have a system of supervisory control policies and procedures (SCPs) that validates their written supervisory procedures as defined by Rule 3110. Firms are required not only to have WSPs but also to have policies that test these procedures annually to validate their ability to ensure compliance with applicable securities laws and regulations. Risk-based methodologies and sampling may be used to define the scope of testing. Among other requirements, this rule requires firms to provide an annual report to senior management that includes a summary of test results and any significant exceptions or amended procedures in response to test results.
 
 :::image type="content" source="../media/wco18-desk-work-002.jpg" alt-text="An office worker views a chart and tables on a screen while others meet in the background.":::
  
