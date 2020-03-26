@@ -108,7 +108,7 @@ Deploy this setting by using Group Policy, or by using the [Office cloud policy 
 
 If users have one of the Azure Information Protection clients installed ([unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) or [classic client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)), by default, the built-in labeling client is turned off in their Office apps. 
 
-To use built-in labeling rather than the Azure Information Protection client for Office apps, use the Group Policy setting in the previous section. Alternatively, disable or uninstall the Office add-in, **Azure Information Protection**. This method is particularly suitable for a single computer, and ad-hoc testing. For instructions, see [View, manage, and install add-ins in Office programs](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d). 
+To use built-in labeling rather than the Azure Information Protection client for Office apps, use the Group Policy setting in the previous section. Alternatively, disable or uninstall the Office add-in, **Azure Information Protection**. This method is suitable for a single computer, and ad-hoc testing. For instructions, see [View, manage, and install add-ins in Office programs](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d). 
 
 When you disable or uninstall this Office add-in, the Azure Information Protection client remains installed so that you can continue to label files outside your Office apps. For example, by using File Explorer, or PowerShell.
 
