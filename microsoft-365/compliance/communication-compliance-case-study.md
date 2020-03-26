@@ -54,7 +54,7 @@ They must also confirm that users included in communication compliance policies 
 
 Contoso IT administrators take the following steps to verify the licensing support for Contoso:
 
-1. IT administrators sign in to the Microsoft 365 admin center [https://admin.microsoft.com](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center** > **Billing** > **Licenses**.
+1. IT administrators sign in to the **Microsoft 365 admin center** [(https://admin.microsoft.com)](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center** > **Billing** > **Licenses**.
 
 2. Here they confirm that they have one of the [license options](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#before-you-begin) that includes support for communication compliance.
 
@@ -64,7 +64,7 @@ Contoso IT administrators take the following steps to verify the licensing suppo
 
 By default, Global Administrators do not have access to communication compliance features. [Permissions must be configured](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#step-1-required-enable-permissions-for-communication-compliance) so that Contoso IT administrators and compliance specialists have access to communication compliance.
 
-1. Contoso IT administrators sign into the Office 365 Security and Compliance center permissions page [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for a global administrator account and select the link to view and manage roles in Office 365.
+1. Contoso IT administrators sign into the **Office 365 Security and Compliance center** permissions page [(https://protection.office.com/permissions)](https://protection.office.com/permissions) using credentials for a global administrator account and select the link to view and manage roles in Office 365.
 2. After selecting **Create**, they give the new role group a friendly name of "*Communication compliance*" and select **Next**.
 3. They select **Choose roles** and then select **Add**. They add the required roles by selecting the checkbox for *Supervisory Review Administrator*, *Case Management*, *Compliance Administrator*, and *Review*, then they select **Add**, **Done,** and **Next**.
 
@@ -86,37 +86,37 @@ After configuring the permissions for communication compliance, Contoso IT admin
 
 ### Starting directly from the communication compliance solution
 
-The quickest way to access the solution is to sign in directly to the communication compliance solution (<https://compliance.microsoft.com/supervisoryreview>) itself. Using this link, Contoso IT administrators and compliance specialists will be directed to the communication compliance Overview dashboard where you can quickly review the status of alerts and create new policies from the pre-defined templates.
+The quickest way to access the solution is to sign in directly to the **Communication compliance** (<https://compliance.microsoft.com/supervisoryreview>) solution. Using this link, Contoso IT administrators and compliance specialists will be directed to the communication compliance Overview dashboard where you can quickly review the status of alerts and create new policies from the pre-defined templates.
 
 ![Communication compliance overview](../media/communication-compliance-case-overview.png)
 
 ### Starting from the Microsoft 365 compliance center
 
-Another easy way for Contoso IT administrators and compliance specialists to access the communication compliance solution is to sign in directly to the Microsoft 365 compliance center (<https://compliance.microsoft.com>). After signing in, users simply need to select the **Show all** control to display all the compliance solutions and then select the **Communication compliance** solution to get started.
+Another easy way for Contoso IT administrators and compliance specialists to access the communication compliance solution is to sign in directly to the **Microsoft 365 compliance center** [(https://compliance.microsoft.com)](https://compliance.microsoft.com). After signing in, users simply need to select the **Show all** control to display all the compliance solutions and then select the **Communication compliance** solution to get started.
 
 ![Compliance center](../media/communication-compliance-case-center.png)
 
 ### Starting from the Microsoft 365 Solution catalog
 
-Contoso IT administrators and compliance specialists could also choose to access the communication compliance solution by selecting the Solution catalog. By selecting **Catalog** in **Solutions** section of the left navigation while in the Microsoft 365 compliance center, they can open the catalog listing all Microsoft 365 compliance solutions. Scrolling down to the Insider risk management section, Contoso IT administrators can select Communication compliance to get started. Contoso IT administrators also decide to use the Show in navigation control to pin the communication compliance solution to the left-navigation pane for quicker access when they sign in going forward.
+Contoso IT administrators and compliance specialists could also choose to access the communication compliance solution by selecting the Solution catalog. By selecting **Catalog** in **Solutions** section of the left navigation while in the **Microsoft 365 compliance center**, they can open the catalog listing all Microsoft 365 compliance solutions. Scrolling down to the **Insider risk management** section, Contoso IT administrators can select Communication compliance to get started. Contoso IT administrators also decide to use the Show in navigation control to pin the communication compliance solution to the left-navigation pane for quicker access when they sign in going forward.
 
 ![Solution catalog](../media/communication-compliance-case-solution.png)
 
 ### Starting from the Microsoft 365 admin center
 
-To access communication compliance when starting from the Microsoft 365 admin center, Contoso IT administrators and compliance specialists sign in to the Microsoft 365 admin center (<https://admin.microsoft.com>) and navigate to Microsoft 365 admin center \> Compliance.
+To access communication compliance when starting from the Microsoft 365 admin center, Contoso IT administrators and compliance specialists sign in to the Microsoft 365 admin center [(https://admin.microsoft.com)](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center** > **Compliance**.
 
 ![Communication compliance link](../media/communication-compliance-case-compliance-link.png)
 
-This opens the Office 365 Security and Compliance center, and they must select the link to the Microsoft 365 compliance center provided in the banner at the top of the Office 365 Security and Compliance center.
+This opens the **Office 365 Security and Compliance center**, and they must select the link to the **Microsoft 365 compliance center** provided in the banner at the top of the page.
 
 ![Office 365 security and compliance center](../media/communication-compliance-case-scc.png)
 
-Once in the Microsoft 365 compliance center, Contoso IT administrators select **Show all** to display the full list of compliance solutions.
+Once in the **Microsoft 365 compliance center**, Contoso IT administrators select **Show all** to display the full list of compliance solutions.
 
 ![Communication compliance menu](../media/communication-compliance-case-show-all.png)
 
-After selecting Show all, the Contoso IT administrators can access the communication compliance solution.
+After selecting **Show all**, the Contoso IT administrators can access the communication compliance solution.
 
 ![Communication compliance overview](../media/communication-compliance-case-overview.png)
 
@@ -136,12 +136,12 @@ Contoso compliance specialists want to add all employee to the communication pol
 
 They need to create a new group to include all Contoso employees, so they take the following steps:
 
-1. Contoso IT administrators IT sign in to the Microsoft 365 admin center [https://admin.microsoft.com](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center** > **Groups** > **Groups**.
+1. Contoso IT administrators IT sign in to the **Microsoft 365 admin center** [(https://admin.microsoft.com)](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center** > **Groups** > **Groups**.
 2. They select **Add a group** and complete the wizard to create a new *Office 365 group* or *Distribution group*.
 
 ![Groups](../media/communication-compliance-case-all-employees.png)
 
-3. After the new group is created, they need to add all Contoso users to the new group. They open the **Exchange admin center** [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) and navigate to **Exchange admin center** > **recipients** > **groups**. The Contoso IT administrators select the Membership area and the new *All Employees* group they created and select the **Edit** control to add all Contoso employees to the new group in the wizard.
+3. After the new group is created, they need to add all Contoso users to the new group. They open the **Exchange admin center** [(https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp) and navigate to **Exchange admin center** > **recipients** > **groups**. The Contoso IT administrators select the Membership area and the new *All Employees* group they created and select the **Edit** control to add all Contoso employees to the new group in the wizard.
 
 ![Exchange admin center](../media/communication-compliance-case-eac.png)
 
@@ -149,7 +149,7 @@ They need to create a new group to include all Contoso employees, so they take t
 
 With all the prerequisites completed, the IT administrators and the compliance specialists for Contoso are ready to configure the communication compliance policy to monitor for offensive language. Using the new offensive language policy template, configuring this policy is simple and quick.
 
-1. The Contoso IT administrators and compliance specialists sign into the Microsoft 365 compliance center and select **Communication compliance** from the left navigation pane. This action opens the **Overview** dashboard that has quick links for communication compliance policy templates. They choose the **Monitor for offensive language** template by selecting **Get started** for the template.
+1. The Contoso IT administrators and compliance specialists sign into the **Microsoft 365 compliance center** and select **Communication compliance** from the left navigation pane. This action opens the **Overview** dashboard that has quick links for communication compliance policy templates. They choose the **Monitor for offensive language** template by selecting **Get started** for the template.
 
 ![Communication compliance offensive language template](../media/communication-compliance-case-template.png)
 
