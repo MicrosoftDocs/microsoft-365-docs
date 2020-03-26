@@ -596,7 +596,7 @@
         - name: Office 365 Enterprise
           href: https://docs.microsoft.com/office-365-security/Enterprise
         - name: Office 365 for Business
-          href: https://docs.microsoft.com/office-365-security/admin/admin-home
+          href: https://docs.microsoft.com/microsoft-365/admin/admin-home
 
     - name: Microsoft 365 Compliance
       href: https://docs.microsoft.com/microsoft-365/compliance/
