@@ -20,9 +20,11 @@ description: "Summary: Understand data resiliency in Microsoft Office 365."
 
 In addition to using volume-level encryption, Exchange Online, Skype for Business, SharePoint Online, and OneDrive for Business also use Service Encryption to encrypt customer data. Service Encryption allows for two key management options:
 
-- Microsoft manages all cryptographic keys. (This option is currently available in SharePoint Online, OneDrive for Business, and Skype for Business.)
+## Microsoft managed keys: 
+Microsoft manages all cryptographic keys including the root keys for service encryption. This option is currently available in SharePoint Online and OneDrive for Business. This option is currently being rolled out for Exchange Online. This option provides default encryption using Microsoft mangaged keys unless the customer decides to onboard to using Customer Key. If Customer decides to leave Customer Key then the data will still stay encrypted using Microsoft managed keys. 
 
-- The customer supplies root keys used with service encryption and the customer manages these keys using Azure Key Vault. Microsoft manages all other keys. This option is called Customer Key, and it is currently available for Exchange Online, SharePoint Online, and OneDrive for Business. (Previously referred to as Advanced Encryption with BYOK. See [Enhancing transparency and control for Office 365 customers](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) for the original announcement.)
+## Customer Key: 
+The customer supplies root keys used with service encryption and the customer manages these keys using Azure Key Vault. Microsoft manages all other keys. This option is called Customer Key, and it is currently available for Exchange Online, SharePoint Online, and OneDrive for Business. (Previously referred to as Advanced Encryption with BYOK. See [Enhancing transparency and control for Office 365 customers](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) for the original announcement.)
 
 Service encryption provides multiple benefits. For example, Customer Key:
 
@@ -33,8 +35,6 @@ Service encryption provides multiple benefits. For example, Customer Key:
 - Provides separation of Windows operating system administrators from access to customer data stored or processed by the operating system.
 
 - Enhances the ability of Office 365 to meet the demands of customers that have compliance requirements regarding encryption.
-
-## Customer Key
 
 Using Customer Key, you can generate your own cryptographic keys using either an on-premises Hardware Service Module (HSM) or Azure Key Vault (AKV). Regardless of how you generate the key, you use AKV to control and manage the cryptographic keys used by Office 365. Once your keys are stored in AKV, they can be used as the root of one of the keychains that encrypts your mailbox data or files.
 
@@ -51,4 +51,4 @@ To learn how to set up Customer Key for Office 365 for Exchange Online, Skype fo
 - [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md)
 
 - [Understand the availability key](customer-key-availability-key-understand.md)
- 
+
