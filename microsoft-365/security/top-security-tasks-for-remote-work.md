@@ -16,11 +16,11 @@ description: "Protect your business email and data from cyber threats, including
 
 # Top 12 tasks for security teams to support working from home
 
-If you are like [Microsoft](https://www.microsoft.com/en-us/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) and suddenly find yourself supporting a primarily home-based workforce, we want to help you ensure your organization is working as securely as possible. This article prioritizes tasks to help security teams implement the most important security capabilities as quickly as possible. 
+If you are like [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) and suddenly find yourself supporting a primarily home-based workforce, we want to help you ensure your organization is working as securely as possible. This article prioritizes tasks to help security teams implement the most important security capabilities as quickly as possible. 
 
 If you are a small or medium-size organization using one of Microsoft's business plans, see these resources instead:
 - [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](../admin/security-and-compliance/secure-your-business-data.md) 
-- [Microsoft 365 for Campaigns](office-365-security/campaigns.md) (includes a recommended security configuration for Microsoft 365 Business)
+- [Microsoft 365 for Campaigns](https://docs.microsoft.com/microsoft-365/campaigns/?view=o365-worldwide) (includes a recommended security configuration for Microsoft 365 Business)
 
   
 For customers using our enterprise plans, Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. If, instead of purchasing a Microsoft 365 enterprise plan, you are combining subscriptions, note the following:
@@ -59,8 +59,8 @@ Applying these policies will take only a few minutes, but be prepared to support
 
 |Plan  |Recommendation  |
 |---------|---------|
-|Office 365 plans (without Azure AD P1 or P2)     |[Enable Security defaults in Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.   |
-|Microsoft 365 E3 (with Azure AD P1)     | Use [Common Conditional Access policies](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block legacy authentication](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Office 365 plans (without Azure AD P1 or P2)     |[Enable Security defaults in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.   |
+|Microsoft 365 E3 (with Azure AD P1)     | Use [Common Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 (with Azure AD P2)     | Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](../enterprise/identity-access-policies.md) by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Block clients that don't support modern authentication](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [High risk users must change password](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
@@ -102,7 +102,7 @@ You'll need to work with your Exchange Online administrator and SharePoint Onlin
 [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on this next because it protects your on-prem and your cloud infrastructure, has no dependencies or prerequisites, and can provide immediate benefit.
 
 
-- See [Azure ATP Quickstarts](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/install-atp-step1) to get setup quickly 
+- See [Azure ATP Quickstarts](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) to get setup quickly 
 - Watch [Video: Introduction to Azure ATP](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
 - Review the [three phases of Azure ATP deployment](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
 
@@ -166,8 +166,8 @@ Use the following resources to help inform users in your organization:
 
 Get started with Cloud App Security now. Later you can set up more sophisticated monitoring and controls.
 
-- [Quickstart: Get started with Cloud App Security](https://docs.microsoft.com/en-us/cloud-app-security/getting-started-with-cloud-app-security)
-- [Get instantaneous behavioral analytics and anomaly detection](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy)
+- [Quickstart: Get started with Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [Get instantaneous behavioral analytics and anomaly detection](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy)
 - [Learn more about Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 - [Review new features and capabilities](https://docs.microsoft.com/cloud-app-security/release-notes)
 - [See basic setup instructions](https://docs.microsoft.com/cloud-app-security/general-setup)
