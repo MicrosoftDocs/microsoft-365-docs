@@ -21,7 +21,7 @@ description: "Microsoft Compliance Manager is a free workflow-based risk assessm
 > [!IMPORTANT]
 > Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.
 
-[Microsoft Compliance Manager (Preview)](https://servicetrust.microsoft.com/ComplianceManager) is a free workflow-based risk assessment tool that lets you track, assign, and verify regulatory compliance activities related to Microsoft cloud services. Part of your Microsoft 365, Office 365, or Azure Active Directory subscription, Compliance Manager helps you manage regulatory compliance within the shared responsibility model for Microsoft cloud services. Compliance Manager offers a centralized dashboard for viewing standards, regulations, and control implementation details and test results for Microsoft service assessments. It also includes tools allowing you to manage custom control implementations and compliance tracking specific to your organization.
+[Microsoft Compliance Manager (Preview)](https://servicetrust.microsoft.com/ComplianceManager) is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal for managing regulatory compliance activities related to Microsoft cloud services. Part of your Microsoft 365, Office 365, or Azure Active Directory subscription, Compliance Manager helps you manage regulatory compliance within the shared responsibility model for Microsoft cloud services.
 
 With Compliance Manager, your organization can:
   
@@ -34,7 +34,16 @@ With Compliance Manager, your organization can:
 > [!NOTE]
 > The customer actions provided in Compliance Manager are recommendations; it is up to your organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance.
 
-## Compliance Manager relationships
+## Compliance Score
+
+[Microsoft Compliance Score (Preview)](compliance-score.md) is a feature in the Microsoft 365 compliance center that provides a top-level view into your organization's compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. Knowing your overall compliance score helps your organization understand and manage compliance. Understand [how your compliance score is calculated](compliance-score-methodology.md).
+
+Compliance Manager shares the same backend with Compliance Score. During the public preview phase for both tools, Compliance Manager is where you'll manage your assessments and custom control implementations. Learn more about the [relationship between Compliance Score and Compliance Manager](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
+  
+> [!IMPORTANT]
+> Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. No service can guarantee that you are compliant with a standard or regulation, and the Compliance Score should not be interpreted as a guarantee in any way.
+
+## Compliance Manager components
 
 Compliance Manager uses several components to help you with your compliance management activities. These components work together to provide a complete management work flow and hassle-free compliance reports for auditors.
 
@@ -74,7 +83,7 @@ Assessments include several components:
 
 ![Controls in Compliance Manager Version 3](../media/compliance-manager-controls.png)
 
-There are three types of controls in Compliance Manager, **Microsoft-managed controls**, **customer-managed controls**, and **Shared management controls**
+There are three types of controls in Compliance Manager, **Microsoft-managed controls**, **customer-managed controls**, and **Shared management controls**.
 
 ### Microsoft-managed controls
 
@@ -105,6 +114,8 @@ A shared control refers to any control where Microsoft and customers both share 
 People in your organization can use Compliance Manager to review the customer-managed controls from all Assessments for which they're assigned. When a user signs in to Compliance Manager and opens the **Action Items** dashboard, a list of Action Items assigned to them is displayed. Depending on the Compliance Manager role assigned to the user, they can provide implementation or test details, update the Status, or assign Action Items.
 
 Certification controls are usually implemented by one person and tested by another. For example, after Action Items initially assigned to one person for implementation are completed, those Action Items are assigned to the next person to test and upload evidence. Any user with sufficient permissions for control assignments can assign and reassign Action Items. This enables central management of control assignments and decentralized routing of Action Items between implementors and testers.
+
+Note that **Improvement actions** in Compliance Score are the equivalent of **Action Items** in Compliance Manager.
 
 ## Permissions
 
@@ -143,13 +154,6 @@ The pre-configured templates included with Compliance Manager are:
 12. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (Preview)
 13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (Preview)
 14. [Microsoft 365 Data Protection Baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
-
-## Compliance Score
-
-[Microsoft Compliance Score (Preview)](compliance-score.md) is a feature in the Microsoft 365 compliance center that helps you understand your organization’s compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. Knowing your overall compliance score helps your organization understand and manage compliance. Understand [how your compliance score is calculated](compliance-score-methodology.md).
-  
-> [!IMPORTANT]
-> Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. No service can guarantee that you are compliant with a standard or regulation, and the Compliance Score should not be interpreted as a guarantee in any way.
 
 ## Secure Score integration
 
