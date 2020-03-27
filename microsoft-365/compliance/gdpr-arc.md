@@ -1,6 +1,6 @@
 ---
 title: Accountability readiness checklists for the GDPR
-description: How Microsoft services protect against a personal data breach and how Microsoft responds and notifies you if a breach occurs.
+description: In this article, you'll learn about the Accountability readiness checklists to access information for supporting the GDPR when using Microsoft products and services.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise

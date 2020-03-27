@@ -1,6 +1,6 @@
 ---
 title: "GDPR for Office Online Server and Office Web Apps Server"
-description: "Learn about how to address GDPR requirements on-premises Exchange Server."
+description: In this article, you will learn about how to address GDPR requirements for Office Online Server and Office Web Apps Server.
 f1.keywords:
 - NOCSH
 ms.author: mikeplum

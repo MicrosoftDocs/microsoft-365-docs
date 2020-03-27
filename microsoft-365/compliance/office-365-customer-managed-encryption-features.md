@@ -12,7 +12,7 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: Understand data resiliency in Microsoft Office 365."
+description: In this article, you'll learn about encryption technologies that you can manage and configure in Microsoft Office 365.
 ---
 
 # Customer-managed encryption features in Office 365
