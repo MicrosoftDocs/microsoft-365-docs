@@ -412,7 +412,7 @@ Understand that the principles of retention work as a tie-breaking flow from top
   
 Finally, a retention policy or label cannot permanently delete any content that's on hold for eDiscovery. When the hold is released, the content again becomes eligible for the cleanup process described above.
 
-### Labeling precedence for trainable classifiers
+### Precedence for auto-labeling with trainable classifiers
 
 All retention labels that are configured for trainable classifiers are evaluated simultaneously. If an item is detected by more than one trainable classifier, the following criteria is used to determine which retention label to apply:
 
