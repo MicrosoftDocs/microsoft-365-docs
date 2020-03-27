@@ -25,7 +25,7 @@ description: "Create a room or equipment mailbox so that everyone in your organi
 
 # Room and equipment mailboxes
 
-If you have a conference room, company car, or equipment that everyone needs to use, then you need to come up with a way to make those resources reservable to everyone. The best way to do that is to create a room or equipment mailbox in Office 365 for each resource. You might create one for your first floor conference room, media equipment, or a moving truck.
+If you have a conference room, company car, or equipment that everyone needs to use, then you need to come up with a way to make those resources reservable to everyone. The best way to do that is to create a room or equipment mailbox in Microsoft 365 for each resource. You might create one for your first floor conference room, media equipment, or a moving truck.
   
 Once you create a room or equipment mailbox, everyone in the company can reserve it for meetings or events using Outlook. Learn **how to use it** and **how to set it up** on the next two tabs. Here are some other common questions about room and equipment mailboxes. 
   
@@ -61,7 +61,7 @@ To set up a room or equipment mailbox, go to the Microsoft 365 admin center. (Yo
   
 2. Select **Add**.
     
-3. Fill out the room or equipment fields:<br/>![Add a room mailbox in Office 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. Fill out the room or equipment fields:<br/>![Add a room mailbox in Microsoft 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
   
   - **Room** or **Equipment**: the type of mailbox you'd like to create.
     
@@ -100,7 +100,7 @@ Open the meeting you scheduled in Outlook and then remove the room or equipment 
   
 ### Does a room mailbox or equipment mailbox need a product license?
 
-No. While most people in your organization need a license to use Office 365, you don't need to assign a license to a room mailbox or equipment mailbox.
+No. While most people in your organization need a license to use Microsoft 365, you don't need to assign a license to a room mailbox or equipment mailbox.
   
 ### Do I need an owner in charge of booking the rooms or equipment?
 

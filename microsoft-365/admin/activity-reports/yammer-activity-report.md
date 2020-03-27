@@ -77,7 +77,7 @@ The activity report contains the following information.
     
   - **Username** is the email address of the user. You can display the actual email address or make this field anonymous. 
     
-    This grid shows users who logged into Yammer using the Office 365 account or who logged into the network using single sign-on.
+    This grid shows users who logged into Yammer using the Microsoft 365 account or who logged into the network using single sign-on.
     
   - **Display name** is the full name of the user. You can display the actual email address or make this field anonymous. 
     

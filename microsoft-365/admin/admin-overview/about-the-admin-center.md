@@ -61,7 +61,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 2. Select the app launcher icon in the upper-left and choose **Admin**.
 
-    The **Admin** tile appears only to people who have Office 365 [admin permissions](../add-users/about-admin-roles.md). If you don't see the tile, then you don't have permissions to access the admin center for your organization.
+    The **Admin** tile appears only to people who have Microsoft 365 [admin permissions](../add-users/about-admin-roles.md). If you don't see the tile, then you don't have permissions to access the admin center for your organization.
 
 ## Admin center features and settings
 
@@ -76,9 +76,9 @@ Here are the features and settings you'll find in the left-hand navigation of th
 |**Billing** <br/> |View, purchase, or cancel subscriptions for your organization. View past billing statements or view the number of assigned licenses to individual users. Learn how to [manage billing](../../commerce/index.yml).  <br/> |
 |**Support** <br/> | View existing service requests or create new ones. Learn more in [Contact support for business products - Admin Help](../contact-support-for-business-products.md). |
 |**Settings** <br/> |Manage global settings for apps like email, sites, and the Office suite. Change your password policy and expiration date. Add and update domain names like contoso.com. Change your organization profile and release preferences. And choose whether partners can access your admin center.  <br/> |
-|**Setup** <br/> |Manage existing domains, turn on and manage multi-factor authentication, manage admin access, migrate user mailboxes to Office 365, manage feature updates, and help users install their Office apps. |
-|**Reports** <br/> |See at a glance how your organization is using Office 365 with detailed reports on email use, Office activations, and more. Learn how to use the new [activity reports](../activity-reports/activity-reports.md).  <br/> |
-|**Health** <br/> |View the service health at a glance. You can also check out more details and the service health history. Check out [How to check service health](https://support.office.com/article/932AD3AD-533C-418A-B938-6E44E8BC33B0).  <br/> Use Message center to keep track of upcoming changes to features and services. We post announcements there with information that helps you plan for change and understand how it may affect users. Get more details in [Message center in Office 365](../manage/message-center.md).  <br/> |
+|**Setup** <br/> |Manage existing domains, turn on and manage multi-factor authentication, manage admin access, migrate user mailboxes to Microsoft 365, manage feature updates, and help users install their Office apps. |
+|**Reports** <br/> |See at a glance how your organization is using Microsoft 365 with detailed reports on email use, Office activations, and more. Learn how to use the new [activity reports](../activity-reports/activity-reports.md).  <br/> |
+|**Health** <br/> |View the service health at a glance. You can also check out more details and the service health history. Check out [How to check service health](https://support.office.com/article/932AD3AD-533C-418A-B938-6E44E8BC33B0).  <br/> Use Message center to keep track of upcoming changes to features and services. We post announcements there with information that helps you plan for change and understand how it may affect users. Get more details in [Message center in Microsoft 365](../manage/message-center.md).  <br/> |
 |**Admin centers** <br/> |Open separate admin centers for Exchange, Skype for Business, SharePoint, Yammer, and Azure AD. Each admin center includes all available settings for that service.  <br/> For example, in the Exchange admin center, set up and manage email, calendars, distribution groups, and more. In the SharePoint admin center, create and manage site collections, site settings, and OneDrive for Business. In the Skype for Business admin center, set up instant messaging notifications, dial-in conferencing, and online presence.  <br/> Learn more about the [Exchange admin center](https://go.microsoft.com/fwlink/p/?LinkID=271807) and [SharePoint Admin Center](https://docs.microsoft.com/sharepoint/sharepoint-online).<br/> **Note:** The admin centers available to you depend on your plan and region.           |
    
 ## Common tasks in the admin center

@@ -19,7 +19,7 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: "Learn about the Office 365 self-service sign up and available self-service programs such as Microsoft Power Apps, Microsoft Flow, and Dynamics 365 for Financials."
+description: "Learn about the Microsoft 365 self-service sign up and available self-service programs such as Microsoft Power Apps, Microsoft Flow, and Dynamics 365 for Financials."
 ms.custom: okr_SMB
 ---
 
@@ -35,7 +35,7 @@ The following example describes how self-sign up works for a school. The same pr
     
 2. Students and faculty go to [our web site](https://go.microsoft.com/fwlink/p/?LinkId=536628), and use their email address to sign up for the services that your organization offers, such Microsoft 365 Apps for enterprise. They can also sign up for other free services that we offer.
     
-3. We validate their email address, and then they can get started using Office 365, Power BI, or other services right away.
+3. We validate their email address, and then they can get started using Microsoft 365, Power BI, or other services right away.
     
 4. As the business admin, you will see who has signed up for a subscription by viewing the **Subscriptions** page in the admin center. This way you can see when there are new or unrecognized licenses for services in your tenant. 
     

@@ -51,7 +51,7 @@ Distribution groups are best for situations where you need to broadcast informat
 
 ## Security groups
 
-[Security groups](../email/create-edit-or-delete-a-security-group.md) are used for granting access to Office 365 resources, such as SharePoint. They can make administration easier because you need only administer the group rather than adding users to each resource individually.
+[Security groups](../email/create-edit-or-delete-a-security-group.md) are used for granting access to Microsoft 365 resources, such as SharePoint. They can make administration easier because you need only administer the group rather than adding users to each resource individually.
 
 Security groups can contain users or devices. Creating a security group for devices can be used with mobile device management services, such as Intune.
 

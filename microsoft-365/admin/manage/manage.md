@@ -14,12 +14,12 @@ layout: LandingPage
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9f818d7a-78b5-4490-b36c-e3bfe328dfc3
-description: "Quick links for the most common admin tasks in Office 365."
+description: "Quick links for the most common admin tasks in Microsoft 365."
 ---
 
 # Manage
 
-Quick links for the most common admin tasks in Office 365.
+Quick links for the most common admin tasks in Microsoft 365.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -148,7 +148,7 @@ Quick links for the most common admin tasks in Office 365.
                             <p><a href="../add-users/add-users.md">Add a new employee</a></p>
                             <p><a href="https://support.office.com/article/97748418-bbd5-4743-a05b-581f22a466dd">Fix email messages when they won't send</a></p>
                             <p><a href="https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues">Troubleshoot email issues</a></p>
-                            <p><b>More tasks:</b> <a href="../email/email.md">Email in Office 365 for business</a></p>
+                            <p><b>More tasks:</b> <a href="../email/email.md">Email in Microsoft 365 for business</a></p>
                     </div>
                 </div>
             </div>
@@ -165,7 +165,7 @@ Quick links for the most common admin tasks in Office 365.
                             <p><a href="https://docs.microsoft.com/onedrive/manage-sharing">Manage sharing in OneDrive and SharePoint</a></p>
                             <p><a href="https://docs.microsoft.com/onedrive/set-default-storage-space">Set the default storage space for OneDrive users</a></p>
                             <p><a href="https://support.office.com/article/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2">Fix OneDrive sync problems</a></p>
-                            <p><b>More tasks:</b> <a href="https://support.office.com/article/3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb">OneDrive in Office 365</a></p>
+                            <p><b>More tasks:</b> <a href="https://support.office.com/article/3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb">OneDrive in Microsoft 365</a></p>
                     </div>
                 </div>
             </div>

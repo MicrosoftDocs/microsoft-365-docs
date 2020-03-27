@@ -1,5 +1,5 @@
 ---
-title: "Password policy recommendations for Office 365"
+title: "Password policy recommendations"
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -20,11 +20,11 @@ ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: "Learn how to make your organization more secure against password attacks, and why you should ban common passwords and enable risk-based multi-factor authentication."
 ---
 
-# Password policy recommendations for Office 365
+# Password policy recommendations
  
 As the admin of an organization, you're responsible for setting password policy for users in your organization. Setting password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
   
-To determine how often Office 365 passwords expire in your organization, see [Set password expiration policy for Office 365](../manage/set-password-expiration-policy.md).
+To determine how often Microsoft 365 passwords expire in your organization, see [Set password expiration policy for Microsoft 365](../manage/set-password-expiration-policy.md).
   
 ## Understanding password recommendations
 

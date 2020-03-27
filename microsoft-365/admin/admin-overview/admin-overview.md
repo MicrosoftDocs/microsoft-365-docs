@@ -61,6 +61,6 @@ When looking for your admin to reset your password, delete an account, or do oth
     
 - **Small businesses**: Contact the business owner / co-owner. Often they give admin permissions to their IT consultant who does all the computer maintenance work for their business. 
     
-By default, the person who signs up for and buys an Office 365 for business subscription gets admin permissions. That person can assign admin permissions to other people to help them manage Office 365 for their organization.
+By default, the person who signs up for and buys an Microsoft 365 for business subscription gets admin permissions. That person can assign admin permissions to other people to help them manage Microsoft 365 for their organization.
   
 If you have no idea who to contact at your work or school for help, try asking the person who gave you your user account and password.

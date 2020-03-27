@@ -28,7 +28,7 @@ description: "Learn how to control which users can create Office 365 Groups."
   
 Because it's so easy for users to create Office 365 Groups, you aren't inundated with requests to create them on behalf of other people. Depending on your business, however, you might want to control who has the ability to create groups.
   
-This article explains how to disable the ability to create groups in all Office 365 services that use groups, including:
+This article explains how to disable the ability to create groups in all Microsoft 365 services that use groups, including:
   
 - Outlook
     
@@ -166,7 +166,7 @@ If you want to turn off the group creation restriction and again allow all users
     
 ## Step 4: Verify that it works
 
-1. Sign in to Office 365 with a user account of someone who should NOT have the ability to create groups. That is, they are not a member of the security group you created or an administrator.
+1. Sign in with a user account of someone who should NOT have the ability to create groups. That is, they are not a member of the security group you created or an administrator.
     
 2. Select the **Planner** tile. 
     

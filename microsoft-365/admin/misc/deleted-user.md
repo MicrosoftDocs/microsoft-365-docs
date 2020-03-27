@@ -19,7 +19,7 @@ search.appverid:
 - MOE150
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
-description: "Learn how to delete or restore a user's Office 365 account."
+description: "Learn how to delete or restore a user's Microsoft 365 account."
 ---
 
 # Quick help: Deleted user
