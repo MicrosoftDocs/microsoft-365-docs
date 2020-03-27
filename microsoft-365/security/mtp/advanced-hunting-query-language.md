@@ -52,8 +52,9 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 This is how it will look like in advanced hunting.
 
-![Image of Microsoft Threat Protection advanced hunting query](../../media/advanced-hunting-query-example.png)
+![Image of Microsoft Threat Protection advanced hunting query](../../media/advanced-hunting-query-example-2.png)
 
+### Describe the query and specify the tables to search
 A short comment has been added to the beginning of the query to describe what it is for. This helps if you later decide to save the query and share it with others in your organization. 
 
 ```kusto
@@ -65,12 +66,14 @@ The query itself will typically start with a table name followed by a series of 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
+### Set the time range
 The first piped element is a time filter scoped to the previous seven days. Keeping the time range as narrow as possible ensures that queries perform well, return manageable results, and don't time out.
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
+### Check specific processes
 The time range is immediately followed by a search for process file names representing the PowerShell application.
 
 ```
@@ -78,20 +81,23 @@ The time range is immediately followed by a search for process file names repres
 | where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
 
+### Search for specific command strings
 Afterwards, the query looks for strings in command lines that are typically used to download files using PowerShell.
 
 ```kusto
 // Suspicious commands
 | where ProcessCommandLine has_any("WebClient",
- "DownloadFile",
- "DownloadData",
- "DownloadString",
-"WebRequest",
-"Shellcode",
-"http",
-"https")
+    "DownloadFile",
+    "DownloadData",
+    "DownloadString",
+    "WebRequest",
+    "Shellcode",
+    "http",
+    "https")
 ```
-Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. `project` returns specific columns and `top` limits the number of results, helping ensure the results well-formatted and reasonably large and easy to process.
+
+### Customize result columns and length 
+Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. `project` returns specific columns, and `top` limits the number of results. These operators help ensure the results are well-formatted and reasonably large and easy to process.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -99,9 +105,12 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Click **Run query** to see the results. Select the expand icon at the top right of the query editor to focus on your hunting query and the results.
+Click **Run query** to see the results. Select the expand icon at the top right of the query editor to focus on your hunting query and the results. 
 
 ![Image of the Expand control in the advanced hunting query editor](../../media/advanced-hunting-expand.png)
+
+>[!TIP]
+>You can view query results as charts and quickly adjust filters. For guidance, [read about working with query results](advanced-hunting-query-results.md)
 
 ## Learn common query operators for advanced hunting
 
