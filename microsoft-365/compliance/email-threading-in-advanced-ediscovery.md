@@ -1,5 +1,5 @@
 ---
-title: "Email threading"
+title: Email threading and case data
 f1.keywords:
 - NOCSH
 ms.author: markjjo

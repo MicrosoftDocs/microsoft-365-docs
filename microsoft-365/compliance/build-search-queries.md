@@ -1,5 +1,5 @@
 ---
-title: "Build search queries"
+title: Build search queries for an investigation
 f1.keywords:
 - NOCSH
 ms.author: markjjo

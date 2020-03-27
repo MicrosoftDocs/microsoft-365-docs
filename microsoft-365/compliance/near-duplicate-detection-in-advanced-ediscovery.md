@@ -1,5 +1,5 @@
 ---
-title: "Near duplicate detection"
+title: Near duplicate detection for a case
 f1.keywords:
 - NOCSH
 ms.author: markjjo

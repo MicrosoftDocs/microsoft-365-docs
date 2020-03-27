@@ -1,5 +1,5 @@
 ---
-title: "Themes"
+title: Themes and investigations
 f1.keywords:
 - NOCSH
 ms.author: markjjo

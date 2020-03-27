@@ -1,5 +1,5 @@
 ---
-title: "Download export jobs from a data investigation"
+title: Download export jobs for an investigation
 f1.keywords:
 - NOCSH
 ms.author: markjjo

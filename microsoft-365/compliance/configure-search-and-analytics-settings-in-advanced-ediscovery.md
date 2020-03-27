@@ -1,5 +1,5 @@
 ---
-title: "Configure search and analytics settings"
+title: Configure search and analytics settings for an investigation
 f1.keywords:
 - NOCSH
 ms.author: markjjo

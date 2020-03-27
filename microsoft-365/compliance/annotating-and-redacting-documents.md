@@ -1,5 +1,5 @@
 ---
-title: "View documents in a review set"
+title: Viewing documents in a review set
 f1.keywords:
 - NOCSH
 ms.author: markjjo
