@@ -1,5 +1,5 @@
 ---
-title: "Top 10 tasks for security teams to to support working from home"
+title: "Top 12 tasks for security teams to to support working from home"
 f1.keywords:
 - CSH
 ms.author: bcarter
@@ -14,7 +14,7 @@ ms.collection:
 description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments. "
 ---
 
-# Top 10 tasks for security teams to support working from home
+# Top 12 tasks for security teams to support working from home
 
 If you are like [Microsoft](https://www.microsoft.com/en-us/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) and suddenly find yourself supporting a primarily home-based workforce, we want to help you ensure your organization is working as securely as possible. This article prioritizes tasks to help security teams implement the most important security capabilities as quickly as possible. 
 
@@ -39,8 +39,8 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 |8      |  Enroll PCs into device management and require compliant PCs   |  | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9      | Optimize your network for cloud connectivity  |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10   | Train your users  |    ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|11 |Get started with Microsoft Cloud App Security | |
-|12 |Monitor for threats and take action | |
+|11 |Get started with Microsoft Cloud App Security |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|12 |Monitor for threats and take action |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 
 
