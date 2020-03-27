@@ -49,7 +49,9 @@ Additionally, some organizations have to comply with regulations such as Securit
 
 ## Compare retention policies with retention labels
 
-Consider using [retention labels](labels.md) to supplement retention policies. Both methods can retain and delete data in Office 365. However, retention policies apply to data that's already created and stored in Office 365, and the application of the policy isn't real-time but can take several days to be applied. In comparison, both users and admins can apply retention labels as soon as content is created, and the labels get applied immediately. In addition, retention labels have the following capabilities that retention policies don't support:
+Consider using [retention labels](labels.md) to supplement retention policies. Both methods can retain and delete data in Office 365. However, retention policies apply to data that's already created and stored in Office 365, and the application of the policy isn't real-time but can take several days to be applied. Because you can apply retention policies to locations, this method is suitable for labeling at scale.
+
+In comparison, both users and admins can apply retention labels as soon as content is created, and the labels get applied immediately. In addition, retention labels have the following capabilities that retention policies don't support:
 
 - Start the retention period from when the content was labeled, rather than the age of the content or when it was last modified.
 - Use trainable classifers to identify content to label.
