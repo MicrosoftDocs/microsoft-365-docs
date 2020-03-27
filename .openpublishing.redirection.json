@@ -506,7 +506,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/fix-error-code-5-7-7xx-in-exchange-online.md",
       "redirect_url": "https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/manage-safe-sender-lists-for-bulk-mailers.md",
