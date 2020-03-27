@@ -507,7 +507,7 @@ The following table lists events that result from site administration tasks in S
 |Deleted site|SiteDeleted|Site administrator deletes a site.|
 |Enabled document preview|PreviewModeEnabledSet|Site administrator enables document preview for a site.|
 |Enabled legacy workflow|LegacyWorkflowEnabledSet|Site administrator or owner adds the SharePoint 2013 Workflow Task content type to the site. Global administrators can also enable work flows for the entire organization in the SharePoint admin center.|
-|Enabled Office on Demand|OfficeOnDemandSet|Site administrator enables Office on Demand, which lets users access the latest version of Office desktop applications. Office on Demand is enabled in the SharePoint admin center and requires an Office 365 subscription that includes full, installed Office applications.|
+|Enabled Office on Demand|OfficeOnDemandSet|Site administrator enables Office on Demand, which lets users access the latest version of Office desktop applications. Office on Demand is enabled in the SharePoint admin center and requires a Microsoft 365 subscription that includes full, installed Office applications.|
 |Enabled result source for People Searches|PeopleResultsScopeSet|Site administrator creates the result source for People Searches for a site.|
 |Enabled RSS feeds|NewsFeedEnabledSet|Site administrator or owner enables RSS feeds for a site. Global administrators can enable RSS feeds for the entire organization in the SharePoint admin center.|
 |Joined site to hub site|HubSiteJoined|A site owner associates their site with a hub site.|

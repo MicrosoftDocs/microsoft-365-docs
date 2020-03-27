@@ -33,7 +33,7 @@ This article steps you through a simplified deployment of the foundation infrast
 
 ## First, set up your subscription
 
-You must set up the Domain Name System (DNS) domains for your subscription. If you already have an Office 365 subscription, this should have been done. If not, follow the instructions in [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide).
+You must set up the Domain Name System (DNS) domains for your subscription. If you already have a Microsoft 365 subscription, this should have been done. If not, follow the instructions in [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide).
 
 Next, you need to configure additional security for Microsoft 365. Follow the instructions in [Configure increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 

@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
-description: "Backup Outlook, OneDrive, Yammer, and SharePoint content before switching Office 365 subscriptions or if a user leaves the organization."
+description: "Backup Outlook, OneDrive, Yammer, and SharePoint content before switching Microsoft 365 subscriptions or if a user leaves the organization."
 ---
 
 # Back up data before switching Office 365 for business plans

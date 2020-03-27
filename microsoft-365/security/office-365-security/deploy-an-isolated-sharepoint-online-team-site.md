@@ -96,7 +96,7 @@ In this step, do the following:
     
 3. Add the list of users from step 3 to the site viewers access group
     
-If you are managing user accounts and groups through Active Directory Domain Services (AD DS), add users to the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your Office 365 subscription.
+If you are managing user accounts and groups through Active Directory Domain Services (AD DS), add users to the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your Microsoft 365 subscription.
   
 If you are managing user accounts and groups through Office 365, you can use the Microsoft 365 admin center or PowerShell. If you have duplicate group names for any of the access groups, you should use the Microsoft 365 admin center.
   

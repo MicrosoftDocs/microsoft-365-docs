@@ -68,13 +68,13 @@ Azure AD groups for Office 365 are different than Office 365 groups. Azure AD gr
   
 - Active Directory Domain Services (AD DS)
     
-    These are groups that have been created in your on-premises AD DS infrastructure and synchronized to your Office 365 subscription. In the Microsoft 365 admin center, these groups have a **Status** of **Synched with active directory**.
+    These are groups that have been created in your on-premises AD DS infrastructure and synchronized to your Microsoft 365 subscription. In the Microsoft 365 admin center, these groups have a **Status** of **Synched with active directory**.
     
 - Office 365
     
     These are groups that have been created using either the Microsoft 365 admin center, the Azure portal, or Microsoft PowerShell. In the Microsoft 365 admin center, these groups have a **Status** of **Cloud**.
     
- **Best practice:** If you are using AD DS on-premises and synchronizing with your Office 365 subscription, perform your user and group management with AD DS.
+ **Best practice:** If you are using AD DS on-premises and synchronizing with your Microsoft 365 subscription, perform your user and group management with AD DS.
   
 For isolated SharePoint Online team sites, the recommended group structure looks like this:
   
@@ -106,7 +106,7 @@ For a project confined to a small number of people, a single level of Azure AD-b
   
 For example, you want to create an isolated SharePoint online team site for collaboration among the executives of the sales, marketing, engineering, legal, and support departments and those departments already their own groups with executive user account membership. Rather than creating a new group for the new site members and placing all the individual executive user accounts in it, put the existing executive groups for each department in the new group.
   
- If you are sharing an Office 365 subscription between multiple organizations, a single level of group membership for an isolated site for an organization might become difficult to manage due to the sheer number of user accounts. In this case, you can use nested Azure AD groups for each organization that contain the groups within their organizations to manage the permissions.
+ If you are sharing a Microsoft 365 subscription between multiple organizations, a single level of group membership for an isolated site for an organization might become difficult to manage due to the sheer number of user accounts. In this case, you can use nested Azure AD groups for each organization that contain the groups within their organizations to manage the permissions.
   
 To use nested Azure AD groups:
   

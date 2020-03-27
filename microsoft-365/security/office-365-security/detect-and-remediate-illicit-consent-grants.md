@@ -47,7 +47,7 @@ You need to search the Office 365 **audit log** to find signs, also called Indic
 5. Click on the result to see the details of the activity. Click **More Information** to get details of the activity. Check to see if IsAdminContent is set to True.
 
 > [!NOTE]
-> * It can take from 30 minutes up to 24 hours for the corresponding audit log entry to be displayed in the search results after an event occurs. <br/><br/> The length of time that an audit record is retained and searchable in the audit log depends on your Office 365 subscription, and specifically the type of the license that is assigned to a specific user. For more information, see [Audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> * It can take from 30 minutes up to 24 hours for the corresponding audit log entry to be displayed in the search results after an event occurs. <br/><br/> The length of time that an audit record is retained and searchable in the audit log depends on your Microsoft 365 subscription, and specifically the type of the license that is assigned to a specific user. For more information, see [Audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 If this value is true, it indicates that someone with Global Administrator access may have granted broad access to data. If this is unexpected, take steps to [confirm an attack](#how-to-confirm-an-attack).
 
 ## How to confirm an attack
@@ -152,9 +152,9 @@ After you have identified an application with illicit permissions, you have seve
 
 - You can turn integrated applications off for your tenancy. This is a drastic step that disables the ability for end users to grant consent on a tenant-wide basis. This prevents your users from inadvertently granting access to a malicious application. This isn't strongly recommended as it severely impairs your users' ability to be productive with third party applications. You can do this by following the steps in [Turning Integrated Apps on or off](https://docs.microsoft.com/office365/admin/misc/integrated-apps).
 
-## Secure Office 365 like a cybersecurity pro
+## Secure Microsoft 365 like a cybersecurity pro
 
-Your Office 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users. Use the [Office 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Office 365 tenant.
+Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users. Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.
 
 - Tasks to accomplish in the first 30 days. These have immediate affect and are low-impact to your users.
 

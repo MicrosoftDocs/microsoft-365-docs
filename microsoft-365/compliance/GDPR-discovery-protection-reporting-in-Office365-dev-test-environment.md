@@ -44,7 +44,7 @@ Next, use these steps to configure the eDiscovery manager:
 In this phase, you create a document with PII for a set of example International Banking Account Numbers (IBANs) and store it on a SharePoint Online site in your Office 365 dev/test environment.
 
 1. On your local computer, open Microsoft Word.
-2. Paste the following table in the Word file and save it as ‘IBANs.docx’ on your local computer.
+2. Paste the following table in the Word file and save it as 'IBANs.docx' on your local computer.
     
     Number  |Country  |Code |IBAN  |
     |---------|---------|---------|---------|
@@ -62,7 +62,7 @@ In this phase, you create a document with PII for a set of example International
 Note:- This sample data set is derived from publicly available information and is intended to be used for test purposes only.
 
 3. In a new tab of your browser, type:  **https://**\<YourTenantName\>**.sharepoint.com**
-4. Click **Documents** to open the document library for this site. If you’re prompted for a new list experience tour, click **Next** until it’s finished.
+4. Click **Documents** to open the document library for this site. If you're prompted for a new list experience tour, click **Next** until it's finished.
 5.  Click **Upload** > **Files** and select the IBANs.docx you created in step 2.
 
   
@@ -203,7 +203,7 @@ In this phase, you create a new DLP policy and demonstrate how it gets applied t
 17. On your local computer, open a private instance of your browser.
 18. In the address bar, type **https://**\<YourTenantName\>**.sharepoint.com** and sign in using your global administrator account.
 19. Click **Documents**.
-20. Click the file named ‘IBANs.docx’. You should see ‘Policy tip for IBANs.docx’.  The IBANs.docx file was shared with external recipients, which violates the DLP policy. 
+20. Click the file named 'IBANs.docx'. You should see 'Policy tip for IBANs.docx'.  The IBANs.docx file was shared with external recipients, which violates the DLP policy. 
 21. In the address bar, type: `https://outlook.office365.com`
 22. Click **New** - **Email message** and provide the following:  
     - **To:** \<a personal email address\>  

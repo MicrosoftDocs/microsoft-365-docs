@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - GEA150
 ms.assetid: f9877a28-1434-4108-9e92-f29ef8ee5591
-description: "Learn how to try an Office 365 subscription or buy it right away, add subscriptions, or get add-ons to an existing Office 365 account operated by 21Vianet in China."
+description: "Learn how to try a Office 365 subscription or buy it right away, add subscriptions, or get add-ons to an existing Office 365 account operated by 21Vianet in China."
 monikerRange: 'o365-21vianet'
 ---
 

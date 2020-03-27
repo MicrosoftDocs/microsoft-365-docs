@@ -172,7 +172,7 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 
 1. Make sure that you verify your sent items. You may have to inform people on your contacts list that your account was compromised. The attacker may have asked them for money, spoofing, for example, that you were stranded in a different country and needed money, or the attacker may send them a virus to also hijack their computers.
 
-2. Any other service that used this Exchange account as its alternative email account may have been compromised. First, perform these steps for your Office 365 subscription, and then perform these steps for your other accounts.
+2. Any other service that used this Exchange account as its alternative email account may have been compromised. First, perform these steps for your Microsoft 365 subscription, and then perform these steps for your other accounts.
 
 3. Make sure that your contact information, such as telephone numbers and addresses, is correct.
 

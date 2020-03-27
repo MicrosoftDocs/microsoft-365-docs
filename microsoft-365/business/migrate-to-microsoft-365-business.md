@@ -45,7 +45,7 @@ We've added a side-by-side comparison of these two plans to the [Microsoft 365 B
 ## Upgrade to Microsoft 365 Business Premium
 Buy your licenses by following these steps in the [new admin center](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview):
 1. Sign into the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
-2. Go to the navigation pane and select **Billing** \> **Products & Services**. Find your Office 365 subscription and select it to view the details. 
+2. Go to the navigation pane and select **Billing** \> **Products & Services**. Find your subscription and select it to view the details. 
 
     ![A screenshot shows how to find and select your subscription in the admin center.](../media/FindYourSubscription.png)
 

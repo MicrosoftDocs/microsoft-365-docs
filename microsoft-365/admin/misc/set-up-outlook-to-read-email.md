@@ -23,7 +23,7 @@ description: "Learn how to set up an email account in Outlook for both Windows a
 
 # Set up Outlook to read email
 
-Your Office 365 subscription comes with a web-based Outlook, but if your subscription includes Office client apps, you will also get Outlook you can install on your personal computer or devices.
+Your Microsoft 365 subscription comes with a web-based Outlook, but if your subscription includes Office client apps, you will also get Outlook you can install on your personal computer or devices.
   
 ## Set up an email account in Outlook
 

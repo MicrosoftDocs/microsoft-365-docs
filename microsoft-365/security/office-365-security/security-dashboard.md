@@ -56,7 +56,7 @@ The Threat Protection Status widget shows threat protection effectiveness with a
 
 ![Threat protection status widget](../../media/tpswidget.png)
 
-The details depend on whether your Office 365 subscription includes [Exchange Online Protection](exchange-online-protection-eop.md) (EOP) with or without [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
+The details depend on whether your Microsoft 365 subscription includes [Exchange Online Protection](exchange-online-protection-eop.md) (EOP) with or without [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
 
 
 |If your subscription includes... |You'll see these details |
