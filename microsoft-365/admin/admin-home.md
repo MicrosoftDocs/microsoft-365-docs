@@ -22,6 +22,36 @@ ms.custom: okr_smb
 
 Learn about resources available for admins.
 
+<ul class="panelContent cardsJ">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/office/media/icons/whats-new-megaphone-blue.svg" alt="What's new megaphone symbol" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Office 365 will become Microsoft 365</h3>
+                        <p>We're changing some of our Office 365 and Microsoft 365 subscription names. You don't need to do a thing. Your services, apps and features are staying the same, along with the price of your subscription. Your subscription name will automatically update in the Microsoft 365 admin center and your billing statements will update on or after April 21st, 2020</p>
+                        <ul>
+                            <li><p>Office 365 Business Essentials is now Microsoft 365 Business Basic</p></li>
+                            <li><p>Office 365 Business Premium is now Microsoft 365 Business Standard</p></li>
+                            <li><p>Microsoft 365 Business is now Microsoft 365 Business Premium</p></li>
+                            <li><p>Office 365 Business is now Microsoft 365 Apps for business</p></li>
+                            <li><p>Office 365 ProPlus is now Microsoft 365 Apps for enterprise</p></li>
+                        </ul>
+                        <p><a href="https://go.microsoft.com/fwlink/?linkid=2120533">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+
+---
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://products.office.com/compare-all-microsoft-office-products?tab=2">
@@ -30,7 +60,7 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/sign-up.svg" alt="Buy Office" />
+                            <img src="https://docs.microsoft.com/office/media/icons/sign-up-blue.svg" alt="Buy Office" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -48,7 +78,7 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/get-started.svg" alt="Setup" />
+                            <img src="https://docs.microsoft.com/office/media/icons/get-started-blue.svg" alt="Setup" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -66,7 +96,7 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/headset.svg" alt="Contact support" />
+                            <img src="https://docs.microsoft.com/office/media/icons/headset-blue.svg" alt="Contact support" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -84,7 +114,7 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/radar.svg" alt="Get new features" />
+                            <img src="https://docs.microsoft.com/office/media/icons/radar-blue.svg" alt="Get new features" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -142,7 +172,7 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/small-business.svg" alt="Small business" />
+                            <img src="https://docs.microsoft.com/office/media/icons/small-business-blue.svg" alt="Small business" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -159,7 +189,7 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/on-premises.svg" alt="Enterprise" />
+                            <img src="https://docs.microsoft.com/office/media/icons/on-premises-blue.svg" alt="Enterprise" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -176,12 +206,74 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/education-tutorial.svg" alt="Training" />
+                            <img src="https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg" alt="Training" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>For everyone: Office training center</h3>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=124250">Find training for all Office applications.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+
+---
+
+<h2>Featured Articles</h2>
+<ul class="panelContent cardsW">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Get started</h3>
+                        <p><a href="admin-overview/admin-overview.md">Who is my admin?</a></p>
+                        <p><a href="setup/plan-your-setup.md">Plan your setup</a></p>
+                        <p><a href="add-users/add-users.md">Add users</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Troubleshoot</h3>
+                        <p><a href="https://go.microsoft.com/fwlink/?linkid=522692">Fix Office install issues</a></p>
+                        <p><a href="https://diagnostics.outlook.com/">Fix Outlook and Office 365 problems with the Microsoft Support and Recovery Assistant</a></p>
+                        <p><a href="https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues">Fix email issues</a></p>
+                        <p><a href="https://go.microsoft.com/fwlink/?linkid=866431">Fix OneDrive for Business sync issues</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Learn more</h3>
+                        <p><a href="admin-overview/about-the-admin-center.md">Learn about the admin center</a></p>
+                        <p><a href="https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams">Microsoft Teams documentation</a></p>
+                        <p><a href="https://go.microsoft.com/fwlink/?linkid=853063">Advanced IT Pro training from LinkedIn Learning</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Subscribe</h3>
+                        <p><a href="../commerce/buy-a-subscription-from-your-free-trial.md">Buy a subscription from your free trial</a></p>
+                        <p><a href="../commerce/subscriptions/cancel-your-subscription.md">Cancel your subscription</a></p>
                     </div>
                 </div>
             </div>
