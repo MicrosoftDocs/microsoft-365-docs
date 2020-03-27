@@ -32,13 +32,13 @@ There were two ways of creating a template in Compliance Manager. You could copy
 
 ### The new process
 
-We made it easier for you to create new templates. In a one-step **extension** process, you can add a spreadsheet with your actions and controls to an existing Microsoft template to make your own customized version. At your **Templates** page in Compliance Manager, select **+ Add template**. On the **Template** flyout pane, select the **Create extension from global template** checkbox. You can add customizations with a new Excel format that is less complex than the current one. This new process replaces the current **Copy from an existing template** and **Add custom control** functions.
+We made it easier for you to create new templates. In a one-step **extension** process, you can add a spreadsheet with your actions and controls to an existing Microsoft template to make your own customized version. At your **Templates** page in Compliance Manager, select **+ Add template**. On the **Template** flyout pane, select the **Create extension from global template** checkbox. You can add customizations with a new Excel format that is less complex than the previous one. This new process replaces the former **Copy from an existing template** and **Add custom control** functions.
 
 Each time the original assessment is updated through the versioning process outlined below, your customized assessment will inherit those updates and keep your custom controls.
 
 It's also now easier to modify your own existing templates. You can export your template, make changes in the same workbook, then import it with your edits saved.
 
-View detailed instructions on [creating templates](working-with-compliance-manager?#templates) with this new process.
+View detailed instructions on [creating templates](working-with-compliance-manager.md#templates) with this new process.
 
 ## Versioning notice and control
 
