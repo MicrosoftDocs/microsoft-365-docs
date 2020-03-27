@@ -34,7 +34,7 @@ We recommend using TLS in situations where you want to set up a secure channel o
   
 ## How Exchange Online uses TLS between Exchange Online customers
 
-Exchange Online servers always encrypt connections to other Exchange Online servers in our datacenters with TLS 1.2. When you send mail to a recipient that is within your Office 365 organization, that email is automatically sent over a connection that is encrypted using TLS. Also, all email that you send to other customers is sent over connections that are encrypted using TLS and are secured using Forward Secrecy.
+Exchange Online servers always encrypt connections to other Exchange Online servers in our datacenters with TLS 1.2. When you send mail to a recipient that is within your organization, that email is automatically sent over a connection that is encrypted using TLS. Also, all email that you send to other customers is sent over connections that are encrypted using TLS and are secured using Forward Secrecy.
   
 ## How Office 365 uses TLS between Office 365 and external, trusted partners
 

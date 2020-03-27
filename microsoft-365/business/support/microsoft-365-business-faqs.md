@@ -44,7 +44,7 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
 * Streamlined deployment of PCs with Windows AutoPilot.
 
 **Other entitlements** 
-- Microsoft 365 Business Premium customers also have access to Windows Virtual Desktop and Office Shared Computer Activation capabilities. Read the [Microsoft 365 Business Premium blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) to learn more. See also the [Microsoft 365 Business Service Description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
+- Microsoft 365 Business Premium customers also have access to Windows Virtual Desktop and Office Shared Computer Activation capabilities. Read the [Microsoft 365 Business Premium blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) to learn more. See also the [Microsoft 365 for busines service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
 
 ### Who should consider adopting Microsoft 365 Business Premium? 
 Microsoft 365 Business Premium is a comprehensive, cloud-based security solution that lets you:  
@@ -55,10 +55,10 @@ Microsoft 365 Business Premium is a comprehensive, cloud-based security solution
 Microsoft 365 Business Premium is fully integrated with Office 365 to provide you with a familiar location for administration, billing, and 24x7 support. It consists of enterprise-grade technology built for businesses with fewer than 300 employees. 
 
 ### How can I get Microsoft 365 Business Premium for my business? 
-Microsoft 365 Business can be purchased through a <a href="https://www.microsoft.com/solution-providers/search" target="_blank">Microsoft Partner</a> or directly from <a href="https://www.microsoft.com//microsoft-365/business" target="_blank">Microsoft</a>. In choosing whether to purchase directly from Microsoft or via a Microsoft Partner, you should consider your on-staff capability and desire to maintain an IT infrastructure. A Microsoft Partner can help you deploy and manage your IT infrastructure, including Microsoft solutions.
+Microsoft 365 Business Premium can be purchased through a <a href="https://www.microsoft.com/solution-providers/search" target="_blank">Microsoft Partner</a> or directly from <a href="https://www.microsoft.com//microsoft-365/business" target="_blank">Microsoft</a>. In choosing whether to purchase directly from Microsoft or via a Microsoft Partner, you should consider your on-staff capability and desire to maintain an IT infrastructure. A Microsoft Partner can help you deploy and manage your IT infrastructure, including Microsoft solutions.
 
 ### How much does Microsoft 365 Business Premium cost? 
-Microsoft 365 Business is offered at USD$20.00 user/month based on an _annual contract_ if purchased directly from Microsoft. When purchased through a Microsoft Partner, pricing can vary based on the services the partner provides and their pricing model for Microsoft 365 Business Premium. 
+Microsoft 365 Business Premium is offered at USD$20.00 user/month based on an _annual contract_ if purchased directly from Microsoft. When purchased through a Microsoft Partner, pricing can vary based on the services the partner provides and their pricing model for Microsoft 365 Business Premium. 
 
 ### Is there a cap to how many Microsoft 365 Business Premium seats a customer can have? 
 Microsoft 365 Business Premium was designed for small to medium-sized businesses with low to medium IT complexity requirements. Customers can purchase up to 300 Microsoft 365 Business Premium licenses for their organization. Customers can mix and match cloud subscriptions. As a result, depending on their IT requirements, customers may add Microsoft 365 Enterprise licenses to the same account. 
@@ -71,12 +71,12 @@ Yes, customers can combine their Microsoft 365 Business Premium subscriptions wi
 ### Is everyone in my business required to have a Microsoft 365 Business Premium subscription? 
 No, not everyone needs a Microsoft 365 Business Premium subscription, although the security and management benefits are available only to those users with devices managed with a Microsoft 365 Business Premium subscription. 
  
-Standardizing an IT environment helps reduce maintenance and security costs over time and is a state that businesses should strive to attain. However, we recognize that some small and medium-sized customers update their software primarily when they upgrade their hardware, over an extended period. Businesses can deploy Microsoft 365 Business to part of their organization, but for best protection of sensitive business data and consistent collaboration experiences, deployment to all users is recommended.
+Standardizing an IT environment helps reduce maintenance and security costs over time and is a state that businesses should strive to attain. However, we recognize that some small and medium-sized customers update their software primarily when they upgrade their hardware, over an extended period. Businesses can deploy  Premium to part of their organization, but for best protection of sensitive business data and consistent collaboration experiences, deployment to all users is recommended.
 
 ### How can I know if the hardware and software I run today is compatible with Microsoft 365 Business Premium? 
 If the hardware you run today runs Windows 7 Pro or later, it likely meets the minimum requirements for Microsoft 365 Business Premium. Certain Windows 10 features such as Cortana, Windows Hello, and multitouch require specific hardware that is only available on newer PCs. See the <a href="https://www.microsoft.com/windows/windows-10-specifications" target="_blank">Windows 10 Pro system requirements</a> for details. 
  
-Existing desktop (Win32) application compatibility is strong in Windows 10, with most existing applications working without any changes. Customers and their trusted IT advisors should read the recommended application testing process for <a href="https://docs.microsoft.com/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process" target="_blank">Windows 10 compatibility</a> and review the <a href="https://products.office.com/office-system-requirements#subscription-plans-section" target="_blank">Office system requirements</a> to ensure a smooth transition to Microsoft 365 Business. 
+Existing desktop (Win32) application compatibility is strong in Windows 10, with most existing applications working without any changes. Customers and their trusted IT advisors should read the recommended application testing process for <a href="https://docs.microsoft.com/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process" target="_blank">Windows 10 compatibility</a> and review the <a href="https://products.office.com/office-system-requirements#subscription-plans-section" target="_blank">Office system requirements</a> to ensure a smooth transition to Microsoft 365 Business Premium. 
 
 ### What is Windows 10 Business? 
 Windows 10 Business is a set of cloud services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business Premium.
@@ -91,7 +91,7 @@ If you have devices that are licensed for Windows 7, 8, and 8.1 Professional, Mi
 Many employees prefer to use their own mobile phones or tablets to access personal and work information rather than carrying multiple devices for each purpose. The use of personal devices for work, while commonplace, increases the risk that business information could end up in the wrong hands. Many competing mobile data protection solutions require users to switch to a specific mode on their device or use another complex mechanism that users may find intrusive and therefore avoid using. 
  
 Microsoft 365 Business Premium offers customers a simple but powerful means of enabling employees to use their personal devices for work while providing the business with the ability to prevent those devices from accessing, retaining, and/or sharing business information. More specifically: 
-* **App Protection for Office mobile apps** helps protect Office data, including email, calendar, contacts, and documents on iOS and Android mobile devices, by enforcing policies such as automatically deleting business data after a prescribed amount of time of not connecting to the service, requiring that information is stored only in OneDrive for Business, requiring a PIN/fingerprint verification to access Office apps, and preventing company data from being copied from an Office app into personal apps. Mobile application management for other mobile apps through Intune is also available for Microsoft 365 Business subscribers. 
+* **App Protection for Office mobile apps** helps protect Office data, including email, calendar, contacts, and documents on iOS and Android mobile devices, by enforcing policies such as automatically deleting business data after a prescribed amount of time of not connecting to the service, requiring that information is stored only in OneDrive for Business, requiring a PIN/fingerprint verification to access Office apps, and preventing company data from being copied from an Office app into personal apps. Mobile application management for other mobile apps through Intune is also available for Microsoft 365 Business Premium subscribers. 
   
 * **Device Management for Windows 10 PCs** allows businesses to choose to set and enforce capabilities such as Windows Defender protection for malware, automatic updates, and turning off screens after a prescribed amount of time. In addition, lost or stolen Windows 10 devices can be completely wiped of business applications and data through the admin center. 
 
@@ -126,13 +126,13 @@ Customers that wish to experience the complete capabilities of Microsoft 365 Bus
 ## Deployment
 
 ### What should customers consider when planning a Microsoft 365 Business Premium deployment? 
-The most direct path to a successful Microsoft 365 Business deployment is to engage with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs. Customers that have experienced IT on staff can use the <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Microsoft 365 Business Premium Getting Started</a> to assist them in their Microsoft 365 Business Premium deployment. 
+The most direct path to a successful Microsoft 365 Business Premium deployment is to engage with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs. Customers that have experienced IT on staff can use the <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Microsoft 365 Business Premium Getting Started</a> to assist them in their Microsoft 365 Business Premium deployment. 
 
 ### Does Microsoft 365 Business Premium include the full capabilities of Microsoft Intune? 
 Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune capabilities for iOS, Android, MacOS, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business Premium, like third-party app management and configuration of WiFi profiles, VPN certificates, can be managed in the full Intune console. 
   
 
-### Does Azure Active Directory Premium P1 come with Microsoft 365 Business? 
+### Does Azure Active Directory Premium P1 come with Microsoft 365 Business Premium? 
 Microsoft 365 Business Premium includes select Azure AD Premium P1 (AADP P1) features such as self-service password reset with AD write-back, Azure MFA, and conditional access. It does not include the entirety of AADP P1. For more information, see the [Microsoft 365 Business Premium Service Description](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148).
  
  
@@ -145,7 +145,7 @@ Windows AutoPilot is a service that streamlines the deployment of new Windows 10
 ## Compatibility
 
 ### Can I add Office 365 add-ons to Microsoft 365 Business Premium? 
-All the add-ons that can be added to Microsoft 365 Business Standard can be added to Microsoft 365 Business. This means that you can purchase Office 365 Cloud App Security, Advanced Compliance, Threat Intelligence, MyAnalytics, PowerBI Pro, and Audio Conferencing. 
+All the add-ons that can be added to Microsoft 365 Business Standard can be added to Microsoft 365 Business Premium. This means that you can purchase Office 365 Cloud App Security, Advanced Compliance, Threat Intelligence, MyAnalytics, PowerBI Pro, and Audio Conferencing. 
  
 ### Can I add Phone System and Calling Plans to Microsoft 365 Business Premium? 
 No, Phone System and Calling Plan are reserved for customers who have more advanced needs. Customers who require these capabilities should look at Microsoft 365 Enterprise offerings. 
@@ -187,7 +187,7 @@ A Microsoft Cloud Solution Provider should always sell the plan that best suits 
 Microsoft 365 Business Premium doesn't make an otherwise non-genuine version of Windows, genuine. Microsoft 365 Business Premium does provide an upgrade benefit allowing those customers running genuine Windows 7, 8, or 8.1 Pro to upgrade to the most recent, genuine version of Windows 10 Pro. 
 
 ### What is the GDPR and how does Microsoft 365 Business Premium help customers with their compliance obligations?
-The General Data Protection Regulation (GDPR) is a comprehensive new privacy law that gives residents of the European Union (EU) greater control over their "personal data" and requires organizations to maintain the integrity of that personal data. The GDPR requires organizations that control or process personal data tied to EU residents to only use third-party data processors that meet the GDPR requirements for personal data processing. In March 2017, Microsoft made available contractual guarantees that provide these assurances. Customers that have questions about how Microsoft can help them meet their additional GDPR obligations should learn about the advanced compliance and security capabilities available in Microsoft 365 Business (for example, Azure Information Protection, data loss prevention, Advanced Threat Protection, and so on) and in other suites (for example, Microsoft 365 Enterprise E5). To learn more, visit [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
+The General Data Protection Regulation (GDPR) is a comprehensive new privacy law that gives residents of the European Union (EU) greater control over their "personal data" and requires organizations to maintain the integrity of that personal data. The GDPR requires organizations that control or process personal data tied to EU residents to only use third-party data processors that meet the GDPR requirements for personal data processing. In March 2017, Microsoft made available contractual guarantees that provide these assurances. Customers that have questions about how Microsoft can help them meet their additional GDPR obligations should learn about the advanced compliance and security capabilities available in Microsoft 365 Business Premium (for example, Azure Information Protection, data loss prevention, Advanced Threat Protection, and so on) and in other suites (for example, Microsoft 365 Enterprise E5). To learn more, visit [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
 
 
 ## Footnotes

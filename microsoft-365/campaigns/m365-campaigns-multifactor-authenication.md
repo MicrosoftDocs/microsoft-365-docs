@@ -31,7 +31,7 @@ Multi-factor authentication provides more security for your business. After your
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR] 
 
-See more at [Set up multifactor authentication in Microsoft 365 Business](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+See more at [Set up multifactor authentication in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
 ## Use the Outlook app in your devices
 
