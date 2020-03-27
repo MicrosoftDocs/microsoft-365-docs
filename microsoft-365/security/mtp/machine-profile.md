@@ -16,32 +16,74 @@ search.appverid: met150
 
 # Machine profile page
 
-The Microsoft 365 security portal provides you with Machine profile pages, so you can assess the health and status of devices on your network and in the cloud. The page displays a wealth of information, gathered from the [Microsoft Defender Advanced Threat Protect](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) platform, or from the cloud-based [Azure Advanced Threat Protection](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp) platform.
+The Microsoft 365 security portal provides you with Machine profile pages, so you can assess the health and status of devices on your network and in the cloud. The page displays a wealth of information, gathered from the [Microsoft Defender Advanced Threat Protect](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (Microsoft Defender ATP) platform, and/or from the cloud-based [Azure Advanced Threat Protection](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp) (Azure ATP) platform.
 
-> [!IMPORTANT]
-> The machine profile page for a device will differ slightly, based upon the platform the device is enrolled. Devices that have been enrolled in both platforms will display information from both.
+> [!NOTE]
+> Devices that are enrolled in both MDATP and ITP will display information from both.
 
 From the Machine profile, you can review in-depth information about what software the device is running, any past and present security events or alerts, and find links to relevant software patches.
 
-You can also use the Machine profile to perform some common security-related tasks, and quickly review basic details about the device.
+You can also use the Machine profile page to perform some common security-related tasks, and quickly review basic details about the device.
 
 ## Navigating the Machine profile page
 
 You can access the Machine profile page for any device, by selecting the device name on the Incidents list, Incidents overview page, or the Incidents list flyout.
 
-The page is broken up into three sections.
+The profile page is broken up into two broad sections.
 
 ![Image of machine profile page with (1) Tab area (2) Sidebar and (3) Actions highlighted in red](../../media/mtp-machine-profile/mtp-machine-profile-all.png)
 
-The main content area (1) contains seven tabs that you can toggle through to view different kinds of information about the machine.
+> [!IMPORTANT]
+> The machine profile page for a given device may appear slightly different, based upon the platform or platforms where the device is enrolled.
 
-The sidebar (2) lists basic details about the machine.
+The sidebar (1) lists basic details about the device.
 
-There are also response actions available in a header (3) before the sidebar and main content sections. You can use the actions in this header to perform common security-related tasks.
+The main content area (2) contains tabs that you can toggle through to view different kinds of information about the device.
+
+If the device is enrolled in Microsoft Defender ATP, you will also see the response actions bar (3). This area of the page allows you to perform common security-related tasks.
+
+## Sidebar
+
+Beside the main content area of the Machine profile page is the sidebar.
+
+![Image of sidebar tab for Machine profile](../../media/mtp-machine-profile/sidebar.png)
+
+The sidebar provides some important basic information in small subsections which can be toggled open or closed, such as:
+
+* **Tags** - Any Microsoft Defender ATP or Azure ATP tags associated with the device.
+* **Security info** - Open incidents and active alerts. Devices enrolled in Microsoft Defender ATP will also display exposure level and risk level.
+* **Device details** - Domain, OS, SAM name, health state, timestamp for when the device was created, IP addresses, resources. Devices enrolled in Microsoft Defender ATP also display health state.
+* **Network activity** - Timestamps for the first time and last time the device was seen on the network.
+* **Directory data** - [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) flags, [SPNs](https://docs.microsoft.com/windows/win32/ad/service-principal-names), and group memberships.
+
+## Response actions
+
+Response actions offer a quick way to defend against and analyze threats.
+
+![Image of sidebar tab for Machine profile](../../media/mtp-machine-profile/actions.PNG)
+
+> [!IMPORTANT]
+> There will be a variable number of actions listed on the profile page, depending on where the device is enrolled.
+
+Devices that are only enrolled in Azure ATP will not display response actions. Devices enrolled in Microsoft Defender ATP will display the following three response actions:
+
+* **Manage tags** - Updates custom tags you have applied to this device.
+* **Isolate machine** - Isolates the machine from your organization's network while keeping it connected to Microsoft Defender Advanced Threat Protection. You can choose to allow Outlook, Teams, and Skype for Business to run while the machine is isolated, for communication purposes.
+* **Action center** - View the status of submitted actions. Only available if another action has already been selected.
+
+The profile page may also display the following response actions, in addition to the three above:
+
+* **Restrict app execution** - Prevents applications that are not signed by Microsoft from running
+* **Run antivirus scan** - Updates Windows Defender Antivirus definitions and immediately runs an antivirus scan. Choose between Quick scan or Full scan.
+* **Collect investigation package** - Gathers information about the machine. When the investigation is completed, you can download it.
+* **Initiate Live Response session** - Loads a remote shell on the machine for [in-depth security investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response).
+* **Initiate automated investigation** - Automatically [investigates and remediates threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Although you can manually trigger automated investigations to run from this page, [certain alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) trigger automatic investigations on their own.
 
 ## Tabs section
 
-The Machine profile tabs allow you to toggle through an overview of security details about the machine, and tables containing a list of alerts, a timeline, a list of security recommendations, a software inventory, a list of discovered vulnerabilities, and missing KBs (security updates).
+The Machine profile tabs allow you to toggle through an overview of security details about the machine, and tables containing a list of alerts. 
+
+Devices enrolled in Microsoft Defender ATP will also display tabs that feature a timeline, a list of security recommendations, a software inventory, a list of discovered vulnerabilities, and missing KBs (security updates).
 
 ### Overview tab
 
@@ -49,7 +91,7 @@ The default tab is **Overview**. It provides a quick look at the most important 
 
 ![Image of overview tab for Machine profile](../../media/mtp-machine-profile/overview.png)
 
-Here, you can find a chart of the device's risk level and active alerts, any currently logged on users, a brief list of most and least frequent users, and security assessments that detail the device's exposure level, security recommendations, affected software, and discovered vulnerabilities.
+Here, you can get a quick look at the device's active alerts, any currently logged on users, and a brief list of most and least frequent users. If the device is enrolled in Microsoft Defender ATP, you will also see the device's risk level and data on security assessments. The security assessments describe the device's exposure level, provide security recommendations, and list affected software and discovered vulnerabilities.
 
 ### Alerts tab
 
@@ -126,38 +168,6 @@ The default view lists the bulletin containing the updates, OS version, products
 The number of items displayed per page and which columns are displayed can be customized.
 
 Selecting an item will open a flyout that links to the update.
-
-## Sidebar
-
-Beside the main content area of the Machine profile page is the sidebar.
-
-![Image of sidebar tab for Machine profile](../../media/mtp-machine-profile/sidebar.png)
-
-The sidebar provides some important basic information in small subsections which can be toggled open or closed:
-
-* **Tags** - Any tags associated with the device
-* **Security info** - Open incidents, active alerts, exposure level and risk level
-* **Device details** - Domain, OS, Asset group, health state, data sensitivity, and IP addresses
-* **Network activity** - Timestamps for the first time and last time the device was seen on the network
-
-This section also includes the name and exposure level of the device, and an icon to indicate if it is currently active on the network.
-
-## Response actions
-
-Response actions offer a quick way to defend against and analyze threats.
-
-![Image of sidebar tab for Machine profile](../../media/mtp-machine-profile/actions.PNG)
-
-The response actions available to you here include:
-
-* **Manage tags** - Updates custom tags you have applied to this device.
-* **Isolate machine** - Isolates the machine from your organization's network while keeping it connected to Microsoft Defender Advanced Threat Protection. You can choose to allow Outlook, Teams, and Skype for Business to run while the machine is isolated, for communication purposes.
-* **Restrict app execution** - Prevents applications that are not signed by Microsoft from running
-* **Run antivirus scan** - Updates Windows Defender Antivirus definitions and immediately runs an antivirus scan. Choose between Quick scan or Full scan.
-* **Collect investigation package** - Gathers information about the machine. When the investigation is completed, you can download it.
-* **Initiate Live Response session** - Loads a remote shell on the machine for [in-depth security investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response).
-* **Initiate automated investigation** - Automatically [investigates and remediates threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Although you can manually trigger automated investigations to run from this page, [certain alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) trigger automatic investigations on their own.
-* **Action center** - View the status of submitted actions. Only available if another action has already been selected.
 
 ## Related topics
 
