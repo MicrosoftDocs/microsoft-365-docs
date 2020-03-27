@@ -68,7 +68,7 @@ Applying these policies will take only a few minutes, but be prepared to support
   
 ## 2: Protect against threats in Office 365
 
-Office 365 includes a variety of threat protection features. Bumping up protection for these features takes just a few minutes.
+All Office 365 plans include a variety of threat protection features. Bumping up protection for these features takes just a few minutes.
 - Anti-malware protection
 - Protection from malicious URLs and files
 - Anti-phishing protection
@@ -79,7 +79,7 @@ See [Protect against threats in Office 365](office-365-security/protect-against-
 
 ## 3: Configure Office 365 Advanced Threat Protection
 
-Office 365 Advanced Threat Protection (ATP) safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools. This can take several hours to configure.
+Office 365 Advanced Threat Protection (ATP), included with Microsoft 365 E5 and Office 365 E5, safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools. This can take several hours to configure.
 
 Office 365 ATP:
 - Protects your organization from unknown email threats in real-time by using intelligent systems that inspect attachments and links for malicious content. These automated systems include a robust detonation platform, heuristics, and machine learning models. 
