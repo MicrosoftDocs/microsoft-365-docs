@@ -33,7 +33,7 @@ However, in some cases, you want to create a SharePoint Online team site for col
     
 - The resources for a legal action taken by your organization or that to which it is being subjected.
     
-- To share an Office 365 subscription between multiple organizations that have some overlap, but for the most part exist as separate business entities.
+- To share a Microsoft 365 subscription between multiple organizations that have some overlap, but for the most part exist as separate business entities.
     
 Here are the requirements of an isolated site:
   
@@ -43,7 +43,7 @@ Here are the requirements of an isolated site:
     
 - Users who are not members of the isolated site cannot request access to the site. They will receive an access denied web page when they attempt to access any URL associated with the site.
     
-The tradeoff of requiring centralized access control and custom permissions by SharePoint Online administrators is that the site remains isolated over time. For example, current members cannot, either intentionally or accidentally, invite or configure custom permissions for other users within the Office 365 subscription who should not be members of the site.
+The tradeoff of requiring centralized access control and custom permissions by SharePoint Online administrators is that the site remains isolated over time. For example, current members cannot, either intentionally or accidentally, invite or configure custom permissions for other users within the Microsoft 365 subscription who should not be members of the site.
   
 An isolated site can be used with other features, such as:
   

@@ -22,7 +22,7 @@ The public preview of Compliance Manager provides you with early access to upcom
 
 You can use the updated [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) tool on the [Service Trust Portal](https://servicetrust.microsoft.com) to track, assign, and verify regulatory compliance activities related to Microsoft cloud services.
 
-## What’s new in Compliance Manager (Preview)
+## What's new in Compliance Manager (Preview)
 
 - **Role-based access to Compliance Manager:** The default **Guest access** role has been removed. In order for a user to access Compliance Manager, the global admin must [assign each user a permission](compliance-manager-overview.md#permissions).
 
@@ -45,11 +45,11 @@ The following sections cover known issues to be resolved in upcoming releases of
 
 ### Secure Score
 
-- Secure Score results aren't available for some Actions Items in certain Microsoft 365 and Office 365 subscriptions. The Secure Score result is **Could not be detected** in these cases.
+- Secure Score results aren't available for some Actions Items in certain Microsoft 365 subscriptions. The Secure Score result is **Could not be detected** in these cases.
 - Sometimes Secure Score results are returned for corresponding policies and Action Items not completed.
 - For new tenants, Secure Score updates for all actions is automatically turned on. The global administrator can set the Secure Score continuous update switch to off, which turns off updates for all actions.
   - **Note**: when organizations first deploy Microsoft 365 or Office 365, it takes approximately seven days for Secure Score to fully collect data and factor it into your score. During that time, setting the Secure Score continuous update switch to **Off** and manually setting an action to **implemented** will count that action toward your score. After the initial seven days, turning Secure Score continuous update back on will enable continuous monitoring from that point forward.
-- When Secure Score updates are turned on, actions are actively monitored by Secure Score, although the action’s test date won't be updated to reflect monitoring.
+- When Secure Score updates are turned on, actions are actively monitored by Secure Score, although the action's test date won't be updated to reflect monitoring.
 - When new assessments are created, scores automatically include Microsoft-managed control scores and Secure Score integration.
 - Any actions that are not supported by Secure Score integration can be manually implemented. A manual implementation will factor into the score for that action's group.
 
@@ -86,7 +86,7 @@ The following sections cover known issues to be resolved in upcoming releases of
 
 ### Session timeout
 
-- When a session times out, a “Something went wrong” error may appear. To resolve, go to [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) and log in again.
+- When a session times out, a "Something went wrong" error may appear. To resolve, go to [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) and log in again.
  
 ### Language support
 

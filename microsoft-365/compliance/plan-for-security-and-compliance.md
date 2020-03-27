@@ -30,7 +30,7 @@ Orient yourself to the information protection capabilities in the Information Pr
   
 ## Step 2: Check your Secure Score
 
-After setting up your Office 365 subscription, take note of your starting score. Secure Score provides Office 365 configuration suggestions that you can take to increase your score. The goal is to be aware of opportunities that you can take to protect your environment which won't negatively affect the productivity of your users.
+After setting up your Microsoft 365 subscription, take note of your starting score. Secure Score provides Office 365 configuration suggestions that you can take to increase your score. The goal is to be aware of opportunities that you can take to protect your environment which won't negatively affect the productivity of your users.
   
 - [Introducing the Office 365 Secure Score](../security/mtp/microsoft-secure-score.md)
     

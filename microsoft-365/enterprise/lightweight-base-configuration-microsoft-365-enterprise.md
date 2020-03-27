@@ -68,9 +68,9 @@ We have you create a trial subscription of Office 365 so that your test environm
     
 ## Phase 2: Configure your Office 365 trial subscription
 
-In this phase, you configure your Office 365 subscription with additional users and assign them Office 365 E5 licenses.
+In this phase, you configure your subscription with additional users and assign them Office 365 E5 licenses.
   
-Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) to connect to your Office 365 subscription with the Azure Active Directory PowerShell for Graph module from your computer.
+Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) to connect to your subscription with the Azure Active Directory PowerShell for Graph module from your computer.
     
 In the **Windows PowerShell Credential Request** dialog box, type the global administrator name (example: jdoe@contosotoycompany.onmicrosoft.com) and password.
   

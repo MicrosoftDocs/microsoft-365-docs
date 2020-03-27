@@ -27,7 +27,7 @@ search.appverid:
 - GEA150
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
-description: "Learn to add and reduce file storage in your Office 365 subscription. With extra file storage, you can store more content in SharePoint Online and OneDrive."
+description: "Learn to add and reduce file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint Online and OneDrive."
 ---
 
 # Add storage space for your subscription

@@ -29,7 +29,7 @@ The Report Message add-in for Outlook and Outlook on the web (formerly known as 
 
 For example, suppose that people are reporting a lot of messages as phishing. This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated. Or, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-your-spam-filter-policies.md).
 
-The Report Message add-in works with most Office 365 subscriptions and the following products:
+The Report Message add-in works with most Microsoft 365 subscriptions and the following products:
 
  - Outlook on the web
  - Outlook 2013 SP1

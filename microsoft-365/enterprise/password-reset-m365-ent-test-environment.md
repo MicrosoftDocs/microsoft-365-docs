@@ -28,9 +28,9 @@ Azure Active Directory (Azure AD) self-service password reset (SSPR) allows user
 
 This article describes how you can configure and test password resets in your Microsoft 365 test environment in three phases:
 
-1.	Create the Microsoft 365 Enterprise test environment.
+1.    Create the Microsoft 365 Enterprise test environment.
 2.  Enable password writeback.
-3.	Configure and test password reset for the User 3 account.
+3.    Configure and test password reset for the User 3 account.
     
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -47,7 +47,7 @@ This configuration consists of:
   
 - Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
-- Azure AD Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Azure AD tenant of your Microsoft 365 or Office 365 subscription.
+- Azure AD Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Azure AD tenant of your Microsoft 365 subscription.
 
 ## Phase 2: Enable password writeback
 
@@ -76,7 +76,7 @@ Next, you test password reset for the User 3 account.
 1. Open a new private browser instance and browse to [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
 2. Sign in with the User 3 account credentials.
 3. In **More information required**, click **Next**. 
-5. In **Don’t lose access to your account**, set the authentication phone to your mobile phone number and the authentication email to your work or personal email account.
+5. In **Don't lose access to your account**, set the authentication phone to your mobile phone number and the authentication email to your work or personal email account.
 7. After both are verified, click **Looks good** and close the private instance of the browser.
 8. Open a new private browser instance and go to [https://aka.ms/sspr](https://aka.ms/sspr).
 9. Type the User 3 account name, type the characters from the CAPTCHA, and then click **Next**.

@@ -107,6 +107,6 @@ The activity report contains the following information.
     
 - **No external network data** External network data is not included in these reports. 
     
-- **Activated networks** These reports show data for the Yammer network that is part of your Office 365 subscription. The chart aggregates usage of all users who logged into the Yammer network, irrespective of whether they used Office 365 or Yammer to log in. 
+- **Activated networks** These reports show data for the Yammer network that is part of your Microsoft 365 subscription. The chart aggregates usage of all users who logged into the Yammer network, irrespective of whether they used Microsoft 365 or Yammer to log in. 
     
 

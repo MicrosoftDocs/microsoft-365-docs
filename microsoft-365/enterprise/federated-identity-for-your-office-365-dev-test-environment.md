@@ -26,7 +26,7 @@ description: "Summary: Configure federated authentication for your Microsoft 365
 
 *This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
 
-Office 365 supports federated identity. This means that instead of performing the validation of credentials itself, Office 365 refers the connecting user to a federated authentication server that Office 365 trusts. If the user's credentials are correct, the federated authentication server issues a security token that the client then sends to Office 365 as proof of authentication. Federated identity allows for the offloading and scaling up of authentication for an Office 365 subscription and advanced authentication and security scenarios.
+Microsoft 365 supports federated identity. This means that instead of performing the validation of credentials itself, Microsoft 365 refers the connecting user to a federated authentication server that Microsoft 365 trusts. If the user's credentials are correct, the federated authentication server issues a security token that the client then sends to Microsoft 365 as proof of authentication. Federated identity allows for the offloading and scaling up of authentication for a Microsoft 365 subscription and advanced authentication and security scenarios.
   
 This article describes how you can configure federated authentication for your Microsoft 365 or Office 365 test environment, resulting in the following:
 
@@ -62,7 +62,7 @@ Follow the instructions in [password hash synchronization for Microsoft 365](pas
 This configuration consists of: 
   
 - A Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.
-- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 or Office 365 subscriptions periodically.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 subscriptions periodically.
 
 ## Phase 2: Create the AD FS server
 
@@ -348,7 +348,7 @@ Use these steps to configure the web application proxy service to use ADFS1 as i
 
 Use the [Azure portal](https://portal.azure.com) to connect to the APP1 virtual machine with the CORP\\User1 account credentials.
   
-Use these steps to configure Azure AD Connect and your Office 365 subscription for federated authentication:
+Use these steps to configure Azure AD Connect and your Microsoft 365 subscription for federated authentication:
   
 1. From the desktop, double-click **Azure AD Connect**.
     
@@ -368,7 +368,7 @@ Use these steps to configure Azure AD Connect and your Office 365 subscription f
     
 9. On the **AD FS service account** page, type **CORP\\ADFS-Service** in **Domain Username** and the account password in **Domain User Password**, and then click **Next**.
     
-10. On the **Azure AD Domain** page, in **Domain**, select the name of the domain you previously created and added to your Office 365 subscription in Phase 1, and then click **Next**.
+10. On the **Azure AD Domain** page, in **Domain**, select the name of the domain you previously created and added to your subscription in Phase 1, and then click **Next**.
     
 11. On the **Ready to configure** page, click **Configure**.
     

@@ -24,7 +24,7 @@ keywords: billing accounts, organization info, invoices
 
 The invoice provides a summary of your charges and instructions for payment. You can [view your online invoice](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
 
-If you only have an Office 365 subscription, see [View your invoice for Office 365 for business](view-your-bill-or-invoice.md).
+If you only have an Microsoft 365 subscription, see [View your invoice for Microsoft 365 for business](view-your-bill-or-invoice.md).
 
 ## Understand the invoice header
 
