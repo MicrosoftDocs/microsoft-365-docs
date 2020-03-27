@@ -2,8 +2,8 @@
 title: "Create, edit, or delete a custom user view in Office 365"
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
