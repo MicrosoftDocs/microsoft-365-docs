@@ -52,7 +52,8 @@ In the Security &amp; Compliance Center, several [reports and insights](reports-
     
     ![Create schedule](../../media/atpfiletypes-createschedule.png)
 
-    (NOTE: Not all reports have the **+ Create schedule** button.)
+    > [!NOTE]
+    > Not all reports have the **+ Create schedule** button.
   
     The **Create schedule** dialog box opens. 
     

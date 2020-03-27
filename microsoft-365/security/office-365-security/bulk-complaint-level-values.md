@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
-description: "Learn about bulk bomplain level (BCL) values in Office 365."
+description: "Learn about bulk compliance level (BCL) values in Office 365."
 ---
 
 # Bulk complaint level (BCL) in Office 365
@@ -24,7 +24,7 @@ Bulk mailers vary in their sending patterns, content creation, and recipient acq
 
 To distinguish messages from different types of bulk mailers, inbound email from bulk mailers to Office 365 (Exchange Online or standalone Exchange Online Protection (EOP) without Exchange Online mailboxes) is assigned a bulk complaint level (BCL) that's added to the message in an X-header. The BCL is similar to the [spam confidence level (SCL)](spam-confidence-levels.md) that's used to identify messages as spam. A higher BCL indicates a bulk message is more likely to generate complaints (and is therefore more likely to be spam). Microsoft uses both internal and third party sources to identify bulk mail and determine the appropriate BCL.
 
- Spam filtering marks messages as **Bulk email** based on the BCL threshold (the default value or a value you specify) and takes the specified action on the message (the default action is deliver the message to the recipient's Junk Email folder). For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md) and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+ Spam filtering marks messages as **Bulk email** based on the BCL threshold (the default value or a value you specify) and takes the specified action on the message (the default action is deliver the message to the recipient's Junk Email folder). For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md) and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 The BCL thresholds are described in the following table.
 
