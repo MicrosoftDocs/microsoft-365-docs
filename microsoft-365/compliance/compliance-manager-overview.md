@@ -21,6 +21,12 @@ description: "Microsoft Compliance Manager is a free workflow-based risk assessm
 > [!IMPORTANT]
 > Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.
 
+**In this article**: Read this article to learn what Compliance Manager is and understand its main components.
+
+**Learn about updates**: We published several updates in the April 2020 public preview release. Visit the [Compliance Manager release notes](compliance-manager-release-notes.md) to see what's new and known issues.
+
+## What is Compliance Manager
+
 [Microsoft Compliance Manager (Preview)](https://servicetrust.microsoft.com/ComplianceManager) is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal for managing regulatory compliance activities related to Microsoft cloud services. Part of your Microsoft 365, Office 365, or Azure Active Directory subscription, Compliance Manager helps you manage regulatory compliance within the shared responsibility model for Microsoft cloud services.
 
 With Compliance Manager, your organization can:
