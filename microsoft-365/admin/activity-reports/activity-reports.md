@@ -70,6 +70,10 @@ People who have the following permissions:
 - Global reader
     
 - Reports reader
+
+- Teams Service Administrator
+
+- Teams Communications Administrator
     
 To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
   
