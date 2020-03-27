@@ -37,8 +37,11 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 |6      | Configure Intune App protection for phones and tablets |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |7     | Configure MFA and conditional access for guests, including Intune app protection  |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |8      |  Enroll PCs into device management and require compliant PCs   |  | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
-|9      |   |   |      |        | 
-|10   |   |      |      |      | 
+|9      | Optimize your network for cloud connectivity  |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
+|10   | Train your users  |    ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|11 |Get started with Microsoft Cloud App Security | |
+|12 |Monitor for threats and take action | |
+| | | |
 
 
    
