@@ -1,5 +1,5 @@
 ---
-title: "Case study - Contoso quickly configures an offensive language policy"
+title: "Case study - Contoso quickly configures an offensive language policy for Microsoft Teams and Exchange communications"
 description: "A case study for Contoso and how they quickly configure a communication compliance policy to monitor for offensive language in Microsoft Teams and Exchange Online communications"
 f1.keywords:
 - NOCSH
@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 ---
 
-# Case study - Contoso quickly configures an offensive language policy
+# Case study - Contoso quickly configures an offensive language policy for Microsoft Teams and Exchange communications
 
 Communication compliance in Microsoft 365 helps minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's message standards.
 

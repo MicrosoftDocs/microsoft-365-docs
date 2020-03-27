@@ -16,7 +16,7 @@ description: "In-Place eDiscovery and In-Place Hold (and the corresponding Power
 # Retirement of legacy eDiscovery tools
 
 > [!IMPORTANT]
-> Microsoft has been evaluating the public health situation, and we understand the impact this is having on our customers. We want to be strong partners and responsible global citizens. To ease one of the many burdens you are facing, we are going to delay the scheduled retirement for the legacy eDiscovery tools listed below by three months. **The updated retirement dates are reflected below.**
+> Microsoft has been evaluating the public health situation, and we understand the impact this is having on our customers. We want to be strong partners and responsible global citizens. To ease one of the many burdens you are facing, we are going to delay the scheduled retirement for the legacy eDiscovery tools described in this article by three months. **The updated retirement dates are reflected below.**
 
 Over the years, Microsoft has provided eDiscovery tools that let you search, preview, and export email content from Exchange Online. However, these tools no longer offer an effective way to search for non-Exchange content in other Office 365 services, such as SharePoint Online and Office 365 Groups. To address this, Microsoft offers other eDiscovery tools that help you search for a wide variety of Office 365 content. And we've been working hard to incorporate the most current and powerful eDiscovery functionality in the [Microsoft 365 compliance center](https://compliance.microsoft.com). This allows organizations to respond to legal, internal, and other document requests for content across many Office 365 services, including Exchange Online.
 
