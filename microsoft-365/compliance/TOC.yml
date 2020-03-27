@@ -46,6 +46,8 @@
           href: communication-compliance-investigate-remediate.md
         - name: Feature reference for communication compliance
           href: communication-compliance-feature-reference.md
+        - name: Case study - Contoso quickly configures an offensive language policy 
+          href: communication-compliance-case-study.md
         - name: Supervision policies in Office 365
           href: supervision-policies.md
         - name: Configure supervision policies for Office 365
@@ -243,6 +245,8 @@
           href: archive-linkedin-data.md
         - name: Set up a connector to archive Instant Bloomberg data
           href: archive-instant-bloomberg-data.md
+        - name: Set up a connector to archive ICE Chat data (preview)
+          href: archive-icechat-data.md
         - name: Set up a connector to import HR data
           href: import-hr-data.md
         - name: Work with a partner to archive third-party data
@@ -636,6 +640,8 @@
               href: use-advanced-ediscovery-utilities.md
             - name: Run reports
               href: run-reports-in-advanced-ediscovery.md
+    - name: Retirement of legacy eDiscovery tools
+      href: legacy-ediscovery-retirement.md
 - name: Manage data investigations
   items: 
     - name: Overview of data investigations
@@ -816,6 +822,10 @@
           href: gdpr-for-office-online-server.md
         - name: GDPR for on-premises Windows Server file shares
           href: gdpr-for-on-premises-file-shares.md
+    - name: Industry-specific guidance
+      items: 
+        - name: Financial services security and compliance
+          href: ../solutions/financial-services-secure-collaboration.md
 - name: Regulatory compliance action plans
   items: 
     - name: ISO - Recommended action plan

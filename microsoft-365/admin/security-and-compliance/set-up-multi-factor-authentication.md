@@ -26,6 +26,9 @@ monikerRange: 'o365-worldwide'
 
 # Set up multi-factor authentication
   
+> [!IMPORTANT]
+> If you purchased your subscription or trial after October 21, 2019, and you're unexpectedly prompted for MFA, [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) have been automatically enabled for your subscription.
+
 Every new Office 365 for business or Microsoft 365 Business subscription will automatically have security defaults turned on. This means that every user will have to set up multi-factor authentication (MFA) and install the Authenticator app on their mobile device. For more information, see [Set up 2-step verification for Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
 
 The following nine administrator roles will be required to perform additional authentication every time they sign in:
