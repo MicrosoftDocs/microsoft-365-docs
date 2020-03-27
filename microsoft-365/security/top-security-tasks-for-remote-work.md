@@ -54,6 +54,8 @@ The single best thing you can do to improve security for employees working from 
 
 Normally, Microsoft recommends you give users 14 days to register their device for Multi-Factor Authentication before requiring MFA. However, if your workforce is suddenly working from home, go ahead and require MFA as a security priority and be prepared to help users who need it. 
 
+Applying these policies will take only a few minutes, but be prepared to support your users over the next several days.  
+
 
 |Plan  |Recommendation  |
 |---------|---------|
@@ -120,9 +122,15 @@ After you have configured one or more of your advanced threat protection service
 
 ## 6: Configure Intune App protection for phones and tablets
 
+text coming
+
 ## 7: Configure MFA and conditional access for guests, including Intune app protection
 
+text coming. test pending--are app protection policies applied to guests who's organization has also issued app protection policies?
+
 ## 8: Enroll PCs into device management and require compliant PCs
+
+test coming
 
 ## 9: Optimize your network for cloud connectivity
 
@@ -168,8 +176,12 @@ Get started with Cloud App Security now. Later you can set up more sophisticated
 
 Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can view your organization's [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide), and any alerts or entities that require your attention.
 
-<working on monitoring/dashboards by service plan>
+<working on monitoring and dashboards by service plan>
 
 - [Get started with the Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center?view=o365-worldwide)
 - [Monitor and view reports](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting?view=o365-worldwide)
 - [See the security portals in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/portals)
+
+## Next steps
+
+Congratulations! You have quickly implemented some of the most important security protections. Now you're ready to go even further with threat protection capabilities (including Microsoft Defender Advanced Threat Protection), data classification and protection capabilities, and securing administrative accounts. For a deeper methodical set of security recommendations for Microsoft 365, see [Microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md). 
