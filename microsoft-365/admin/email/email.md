@@ -14,12 +14,12 @@ layout: LandingPage
 ms.service: o365-administration
 localization_priority: Priority
 ms.assetid: f7449a18-1400-475a-b158-2668fef93bfe
-description: "Learn how to manage email for your Office 365 mailboxes."
+description: "Learn how to manage email for your Microsoft 365 mailboxes."
 ---
 
 # Email
 
-Learn how to manage email for your Office 365 mailboxes.
+Learn how to manage email for your Microsoft 365 mailboxes.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -141,7 +141,7 @@ Learn how to manage email for your Office 365 mailboxes.
                 <div class="card">
                     <div class="cardText">
                         <h3>Solve email connection and delivery problems</a></h3>
-                        <p><a href="https://diagnostics.outlook.com/#/">Fix Outlook connection problems in Office 365 and Exchange Online</a></p>
+                        <p><a href="https://diagnostics.outlook.com/#/">Fix Outlook connection problems in Microsoft 365 and Exchange Online</a></p>
                         <p><a href="https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox">Recover deleted items in a user's mailbox</a></p>
                         <p><a href="https://support.office.com/article/e7758b99-1896-41db-bf39-51e2dba21de6">Find and fix email delivery issues</a></p>
                         <p><a href="../get-help-with-domains/find-and-fix-issues.md">Find and fix issues (including issues with email) after adding your domain or DNS records</a></p>
@@ -158,8 +158,8 @@ Learn how to manage email for your Office 365 mailboxes.
             <div class="card">
                 <div class="cardText">
                         <h3>Resources for Enterprises</h3>
-                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices">Mail flow best practices for Exchange Online and Office 365</a></p>
-                        <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">Ways to migrate multiple email accounts to Office 365</a></p>
+                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices">Mail flow best practices for Exchange Online and Microsoft 365</a></p>
+                        <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">Ways to migrate multiple email accounts to Microsoft 365</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-hybrid">Exchange hybrid deployment content</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-online">Exchange Online</a></p>
                         <p><a href="https://docs.microsoft.com/office365/securitycompliance/eop/exchange-online-protection-overview">Exchange Online Protection</a></p>

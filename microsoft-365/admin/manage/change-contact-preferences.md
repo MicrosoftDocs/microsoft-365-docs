@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
-description: "Update your organization's contact information and choose the type of Office 365 product-related communications you want to receive."
+description: "Update your organization's contact information and choose the Microsoft 365 product-related communications you want to receive."
 ---
 
 # Change your contact preferences for communications from Microsoft
 
-Use the **Contact preferences** page to update your organizations's contact information, and choose the type of Office 365 product-related communications that you want to receive.
+Use the **Contact preferences** page to update your organizations's contact information, and choose the Microsoft 365 product-related communications that you want to receive.
   
-Read [Update your admin phone number and email address in Office 365](update-phone-number-and-email-address.md) for info on how to change your admin cellular phone number and email address.
+Read [Update your admin phone number and email address in Microsoft 365](update-phone-number-and-email-address.md) for info on how to change your admin cellular phone number and email address.
   
 If you're looking for how to change company profile information, such as organization's name and address, primary company phone number, and technical contact information, see [Change your organization's address, technical contact email, and other information](change-address-contact-and-more.md).
   
@@ -39,9 +39,7 @@ If you're looking for how to change company profile information, such as organiz
 
 5. Choose **Save**.
   
-For Office 365 Enterprise, Microsoft 365 Business Standard, and Microsoft 365 Business Basic, when you first signed up as an admin for Office 365, depending on the country or region of the users in your organization, your users might be automatically signed up to receive product-related communications.
-  
-For Office 365 Small Business, depending on your country or region, you may have been automatically signed up to receive product-related communications.
+For Office 365 Enterprise, Microsoft 365 Business Standard, and Microsoft 365 Business Basic, when you first signed up as an admin for Microsoft 365, depending on the country or region of the users in your organization, your users might be automatically signed up to receive product-related communications.
   
 For answers to billing questions, see:
   

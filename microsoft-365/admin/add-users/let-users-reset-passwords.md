@@ -71,7 +71,7 @@ These steps turn on self-service password reset for everyone in your business.
   
 4. On the Properties page, select **All** to enable it for everyone in your business, and then select **Save**.
   
-5. When your users sign in to Office 365, they will be prompted to enter additional contact information that will help them reset their password in the future.
+5. When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.
 
 ## Related articles
 

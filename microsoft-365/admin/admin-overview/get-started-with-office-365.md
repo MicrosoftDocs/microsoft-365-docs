@@ -61,5 +61,5 @@ Here are some resources to help you get started.
     
 ## Related articles
 
-[Set up Office 365 for business - Admin Help](../setup/setup.md)
+[Set up Microsoft 365 for business - Admin Help](../setup/setup.md)
 

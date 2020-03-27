@@ -1,5 +1,5 @@
 ---
-title: "Update your admin phone number and email address in Office 365"
+title: "Update your admin phone number and email address"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,9 +21,9 @@ ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: "Update your administrator phone number and email address in the admin center. You'll need this information if you want to reset your own admin password."
 ---
 
-# Update your admin phone number and email address in Office 365
+# Update your admin phone number and email address
 
-This article explains how you, the admin, can change your business phone and email address in Office 365.
+This article explains how you, the admin, can change your business phone and email address in Microsoft 365.
   
 If you're looking for how to change your company's profile information, such as company name and address, company phone number, and technical contact information, see [Change your organization's address, technical contact email, and other information](change-address-contact-and-more.md).
   
@@ -44,6 +44,6 @@ Use the **Personal info** page to change your name, mobile phone number, and alt
   
 For answers to billing questions, see:
   
-- [Change your billing addresses for Office 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [Change your billing addresses for Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Add, update, or remove a credit card or bank account in Office 365 for business](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [Add, update, or remove a credit card or bank account in Microsoft 365 for business](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

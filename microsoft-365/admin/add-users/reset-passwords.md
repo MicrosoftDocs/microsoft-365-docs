@@ -38,7 +38,7 @@ If you found this video helpful, check out the [complete training series for sma
   
 ## Let users reset their own passwords
 
-We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
+We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Microsoft 365](let-users-reset-passwords.md).
   
 ## Reset a Microsoft 365 for business password for someone else
 
@@ -135,8 +135,8 @@ Try this article: [I forgot the username or password for the account I use with 
 
 [Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md)
 
-[Restore a user in Office 365](restore-user.md)
+[Restore a user in Microsoft 365](restore-user.md)
 
-[Remove a former employee from Office 365](remove-former-employee.md)
+[Remove a former employee from Microsoft 365](remove-former-employee.md)
 
 [Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

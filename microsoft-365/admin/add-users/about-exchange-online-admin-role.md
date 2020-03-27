@@ -24,7 +24,7 @@ description: "Exchange online admins manage your organization's email and mailbo
 
 # About the Exchange Online admin role
 
-To help you administer Office 365, you can [assign](assign-admin-roles.md) users permissions to manage your organization's email and mailboxes from the [Exchange admin center](https://go.microsoft.com/fwlink/p/?LinkID=271807). You do this by assigning them to the Exchange admin role. 
+To help you administer Microsoft 365, you can [assign](assign-admin-roles.md) users permissions to manage your organization's email and mailboxes from the [Exchange admin center](https://go.microsoft.com/fwlink/p/?LinkID=271807). You do this by assigning them to the Exchange admin role. 
   
  **Tip**: When you assign someone to the Exchange admin role, also assign them to the Service admin role. This way they can see important information in the Microsoft 365 admin center, such as the health of the Exchange Online service, and change and release notifications. 
   

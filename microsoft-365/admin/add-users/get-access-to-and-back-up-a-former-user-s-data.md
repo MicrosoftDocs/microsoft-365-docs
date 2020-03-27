@@ -32,7 +32,7 @@ When an employee leaves your organization, you probably want to access their dat
     
 ## Access a former user's OneDrive documents
 
-If you remove a user's license but don't delete the account, you can give yourself access to the content in the user's OneDrive. If you delete the user's account, you have 30 days by default to access the former user’s OneDrive data. [Learn how to set the OneDrive retention for deleted users](/onedrive/set-retention). If you don't [restore a user account](/office365/admin/add-users/restore-user) within this time, their OneDrive content is deleted. 
+If you remove a user's license but don't delete the account, you can give yourself access to the content in the user's OneDrive. If you delete the user's account, you have 30 days by default to access the former user's OneDrive data. [Learn how to set the OneDrive retention for deleted users](/onedrive/set-retention). If you don't [restore a user account](/office365/admin/add-users/restore-user) within this time, their OneDrive content is deleted. 
 
 To preserve a former user's OneDrive files, first give yourself access to their OneDrive, and then move the files you want to keep. 
 
@@ -89,9 +89,9 @@ To preserve a former user's OneDrive files, first give yourself access to their 
     
 
 
-## Revoke admin access to a user’s OneDrive
+## Revoke admin access to a user's OneDrive
 
-As global admin, you can give yourself access to the content in a user’s OneDrive, but you may want to remove your access when you no longer need it. 
+As global admin, you can give yourself access to the content in a user's OneDrive, but you may want to remove your access when you no longer need it. 
 
 ::: moniker range="o365-worldwide"
 
@@ -211,7 +211,7 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
   
   
 ## Related articles
-[Remove a former employee from Office 365](remove-former-employee.md)
+[Remove a former employee from Microsoft 365](remove-former-employee.md)
 
 [Add and remove admins on a OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
 

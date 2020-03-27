@@ -9,14 +9,14 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 12/23/2019 | [Assign admin roles the Microsoft 365 admin center](/Office365/Admin/add-users/assign-admin-roles?view=o365-worldwide) | modified |
-| 12/23/2019 | [Change a user name and email address in Office 365](/Office365/Admin/add-users/change-a-user-name-and-email-address?view=o365-worldwide) | modified |
-| 12/23/2019 | [Let users reset their own passwords in Office 365](/Office365/Admin/add-users/let-users-reset-passwords?view=o365-worldwide) | modified |
-| 12/23/2019 | [Remove a former employee from Office 365](/Office365/Admin/add-users/remove-former-employee?view=o365-worldwide) | modified |
+| 12/23/2019 | [Change a user name and email address in Microsoft 365](/Office365/Admin/add-users/change-a-user-name-and-email-address?view=o365-worldwide) | modified |
+| 12/23/2019 | [Let users reset their own passwords in Microsoft 365](/Office365/Admin/add-users/let-users-reset-passwords?view=o365-worldwide) | modified |
+| 12/23/2019 | [Remove a former employee from Microsoft 365](/Office365/Admin/add-users/remove-former-employee?view=o365-worldwide) | modified |
 | 12/23/2019 | [Reset Microsoft 365 Apps for business passwords](/Office365/Admin/add-users/reset-passwords?view=o365-worldwide) | modified |
 | 12/23/2019 | [About the Microsoft 365 admin center](/Office365/Admin/admin-overview/about-the-admin-center?view=o365-worldwide) | modified |
 | 12/23/2019 | [Create organization-wide signatures and disclaimers](/Office365/Admin/setup/create-signatures-and-disclaimers?view=o365-worldwide) | modified |
-| 12/23/2019 | [Set up Office 365 file storage and sharing](/Office365/Admin/setup/set-up-file-storage-and-sharing?view=o365-worldwide) | modified |
-| 12/23/2019 | [Remove licenses from your Office 365 for business subscription](/Office365/Admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide) | modified |
+| 12/23/2019 | [Set up Microsoft 365 file storage and sharing](/Office365/Admin/setup/set-up-file-storage-and-sharing?view=o365-worldwide) | modified |
+| 12/23/2019 | [Remove licenses from your Microsoft 365 for business subscription](/Office365/Admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide) | modified |
 | 12/23/2019 | [View your bill or invoice](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?view=o365-worldwide) | modified |
 
 
@@ -42,18 +42,18 @@
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - Yammer device usage report](/Office365/Admin/activity-reports/yammer-device-usage-report?view=o365-worldwide) | modified |
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - Yammer groups activity report](/Office365/Admin/activity-reports/yammer-groups-activity-report?view=o365-worldwide) | modified |
 | 1/10/2020 | [About admin roles in the Microsoft 365 admin center](/Office365/Admin/add-users/about-admin-roles?view=o365-worldwide) | modified |
-| 1/10/2020 | [Add users individually or in bulk to Office 365](/Office365/Admin/add-users/add-users?view=o365-worldwide) | modified |
+| 1/10/2020 | [Add users individually or in bulk to Microsoft 365](/Office365/Admin/add-users/add-users?view=o365-worldwide) | modified |
 | 1/10/2020 | [About admin roles](/Office365/Admin/add-users/admin-roles-page?view=o365-worldwide) | modified |
 | 1/10/2020 | [Assign admin roles the Microsoft 365 admin center](/Office365/Admin/add-users/assign-admin-roles?view=o365-worldwide) | modified |
-| 1/10/2020 | [Create, edit, or delete a custom user view in Office 365](/Office365/Admin/add-users/create-edit-or-delete-a-custom-user-view?view=o365-worldwide) | modified |
+| 1/10/2020 | [Create, edit, or delete a custom user view in Microsoft 365](/Office365/Admin/add-users/create-edit-or-delete-a-custom-user-view?view=o365-worldwide) | modified |
 | 1/10/2020 | [Get access to and back up a former user's data](/Office365/Admin/add-users/get-access-to-and-back-up-a-former-user-s-data?view=o365-worldwide) | modified |
-| 1/10/2020 | [Give mailbox permissions to another user in Office 365 - Admin Help](/Office365/Admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide) | modified |
-| 1/10/2020 | [Remove a former employee from Office 365](/Office365/Admin/add-users/remove-former-employee?view=o365-worldwide) | modified |
+| 1/10/2020 | [Give mailbox permissions to another user in Microsoft 365 - Admin Help](/Office365/Admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide) | modified |
+| 1/10/2020 | [Remove a former employee from Microsoft 365](/Office365/Admin/add-users/remove-former-employee?view=o365-worldwide) | modified |
 | 1/10/2020 | [Reset Microsoft 365 Apps for business passwords](/Office365/Admin/add-users/reset-passwords?view=o365-worldwide) | modified |
-| 1/10/2020 | [Restore a user in Office 365](/Office365/Admin/add-users/restore-user?view=o365-worldwide) | modified |
+| 1/10/2020 | [Restore a user in Microsoft 365](/Office365/Admin/add-users/restore-user?view=o365-worldwide) | modified |
 | 1/10/2020 | [About the Microsoft 365 admin center](/Office365/Admin/admin-overview/about-the-admin-center?view=o365-worldwide) | modified |
-| 1/10/2020 | [Get started with Office 365 for business](/Office365/Admin/admin-overview/get-started-with-office-365?view=o365-worldwide) | modified |
-| 1/10/2020 | [What Office 365 for business subscription do I have?](/Office365/Admin/admin-overview/what-subscription-do-i-have?view=o365-worldwide) | modified |
+| 1/10/2020 | [Get started with Microsoft 365 for business](/Office365/Admin/admin-overview/get-started-with-office-365?view=o365-worldwide) | modified |
+| 1/10/2020 | [What Microsoft 365 for business subscription do I have?](/Office365/Admin/admin-overview/what-subscription-do-i-have?view=o365-worldwide) | modified |
 | 1/10/2020 | [Contact support for business products - Admin Help](/Office365/Admin/contact-support-for-business-products?view=o365-worldwide) | modified |
 | 1/10/2020 | [Compare groups in Office 365](/Office365/Admin/create-groups/compare-groups?view=o365-worldwide) | modified |
 | 1/10/2020 | [Create an Office 365 group in the admin center](/Office365/Admin/create-groups/create-groups?view=o365-worldwide) | modified |

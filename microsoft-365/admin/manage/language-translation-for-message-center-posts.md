@@ -23,16 +23,16 @@ description: "Learn to set your preferred launguage in Message center to automat
 
 # Language translation for Message center posts
 
-Message center posts are written in English-only due to the timeliness of the information we are posting, but can be automatically displayed in the language specified by your personal language settings for Office 365. If you set your preferred language to anything other than English, you'll see an option in Message center to automatically translate posts. The messages will be machine translated to your preferred language, meaning that a computer did the translation. This option controls the default view, but you can also use the drop-down menu to translate and display posts in any of the languages we support for translation. If you select English, we'll revert the message to the original English version.
+Message center posts are written in English-only due to the timeliness of the information we are posting, but can be automatically displayed in the language specified by your personal language settings for Microsoft 365. If you set your preferred language to anything other than English, you'll see an option in Message center to automatically translate posts. The messages will be machine translated to your preferred language, meaning that a computer did the translation. This option controls the default view, but you can also use the drop-down menu to translate and display posts in any of the languages we support for translation. If you select English, we'll revert the message to the original English version.
   
 > [!IMPORTANT]
-> Before you can choose your language settings for Message center, you have to set your preferred language for Office 365. No translation options are shown when your language is set to English. You can't specify a preferred language for others, each person has to change this setting for themselves. 
+> Before you can choose your language settings for Message center, you have to set your preferred language. No translation options are shown when your language is set to English. You can't specify a preferred language for others, each person has to change this setting for themselves. 
   
 ## Set your preferred language
 
 1. From the Microsoft 365 admin center or home page, select the settings icon in the upper-right corner of the window.
   
-2. Under **Language and time zone**, select **View all** to show the available options. Select your desired language from the drop-down menu, and then select **Save**. Office 365 will try to refresh and display the new language. If that doesn't happen immediately or if it seems that it's taking too long, you can either refresh your browser or sign out and then sign back in.
+2. Under **Language and time zone**, select **View all** to show the available options. Select your desired language from the drop-down menu, and then select **Save**. Microsoft 365 will try to refresh and display the new language. If that doesn't happen immediately or if it seems that it's taking too long, you can either refresh your browser or sign out and then sign back in.
   
 ## Machine translation in Message center
 

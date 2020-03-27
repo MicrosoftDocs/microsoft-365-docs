@@ -52,7 +52,7 @@ Depending on where a group is created, certain resources are provisioned automat
 - [OneNote notebook](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97) – For gathering ideas, research, and information
 - [Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc) – For assigning and managing project tasks among your group members
 - [Yammer group](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) – A common place to have conversations and share information
-- Microsoft Teams – A chat-based workspace in Office 365
+- Microsoft Teams – A chat-based workspace in Microsoft 365
 
 To learn more about which resources are created for each group, visit [Learn about Office 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
@@ -124,7 +124,7 @@ Your organization might have specific requirements to implement strict controls 
 |![image desc](../../media/next_steps.png)|Next steps|<ul><li>Document your organization's requirements for group and team creation.</li><li>Plan to implement these requirements as a part of your groups rollout.</li><li>Communicate and publish your policies to inform users of the behavior they can expect</li><li>Plan to implement dynamic membership where applicable.</li></ul>|
 
 > [!Important]
-> Limiting group and team creation can slow users productivity because many Office 365 services require that groups be created for the service to function. To learn more, see [Why control who creates Office 365 Groups?](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide%23why-control-who-creates-office-365-groups)
+> Limiting group and team creation can slow users productivity because many Microsoft 365 services require that groups be created for the service to function. To learn more, see [Why control who creates Office 365 Groups?](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide%23why-control-who-creates-office-365-groups)
 
 #### *Resources*
 - [Manage who can create Office 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide)
@@ -227,7 +227,7 @@ Admins can control whether to allow guest access to Office 365 Groups for their 
 - [Google Federation  ](https://docs.microsoft.com/azure/active-directory/b2b/google-federation)
 
 ### <a name="group-policies--information-protection"></a>Group policies & information protection
-Office 365 groups is built on the advanced security and compliance capabilities of Office 365 and supports classifications, auditing and reporting, compliance content search, e-discovery, Legal Hold, and retention policies.
+Office 365 groups is built on the advanced security and compliance capabilities of Microsoft 365 and supports classifications, auditing and reporting, compliance content search, e-discovery, Legal Hold, and retention policies.
 >[!Tip]
 >- Configure classification, usage guidelines, and labels aligned with your organization's needs.
 >- Retention policies can be defined independently of labels.
@@ -250,7 +250,7 @@ Office 365 groups is built on the advanced security and compliance capabilities 
 - [Search the audit log](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)
 - [Create or remove an in-place legal hold](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds)
 - [Create a preservation policy](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
-- [Run a Content Search in the Office 365 Security & Compliance Center](https://docs.microsoft.com/Office365/SecurityCompliance/content-search)
+- [Run a Content Search in the Security & Compliance Center](https://docs.microsoft.com/Office365/SecurityCompliance/content-search)
 - [Bulk create and publish retention labels by using PowerShell](https://docs.microsoft.com/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 
 ### <a name="upgrade-traditional-collaboration-tools"></a>Upgrade traditional collaboration tools
@@ -309,7 +309,7 @@ Office 365 Groups provides a rich set of governance capabilities your organizati
 - Regulated or enterprise
 
 ### Small business
-Consider an organization that has deployed Office 365 with at least Exchange Online and SharePoint Online licenses that includes the Business Essentials and Business Premium plans, and the Enterprise E1, E3 and E5 plans with no Azure Active Director Premium licensing.
+Consider an organization that has deployed Microsoft 365 with at least Exchange Online and SharePoint Online licenses that includes the Business Essentials and Business Premium plans, and the Enterprise E1, E3 and E5 plans with no Azure Active Director Premium licensing.
 
 | Stage | Description |
 | --------------- | ------------------------------------------------------------ |
@@ -317,7 +317,7 @@ Consider an organization that has deployed Office 365 with at least Exchange Onl
 | Next Steps      |<ul><li>Consider using [site designs and site scripts](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-overview) to define the default design to controls using the actions defined within the [JSON schema reference](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema).</li><li>Review [groups reporting](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</li><li>Track total groups and inactive/active groups.</li><li>Track both Exchange and SharePoint storage used.</li><li>View group activity across group mailbox conversations, group site/files activity, etc.</li></ul> |
 
 ### Medium-sized business
-In addition to the above recommendations consider the following for medium-sized business who has deployed Office 365 with at least an Enterprise E3/E5 with Azure Active Directory Premium P1 licenses.
+In addition to the above recommendations consider the following for medium-sized business who has deployed Microsoft 365 with at least an Enterprise E3/E5 with Azure Active Directory Premium P1 licenses.
 
 | Stage | Description |
 | --------------- | ------------------------------------------------------------ |
@@ -349,7 +349,7 @@ Use the following table to determine which capabilities you will need to deploy 
 | Hidden membership | Hide the members of the Office 365 Group from users who aren't members of the group | No                                    |   TBD        |
 | Expiration policy | Manage the lifecycle of Office 365 groups by setting an expiration policy. | P1                                    |  TBD        |
 | Group activity reports | Gain insights into the activity of Office 365 Groups in your organization and see how many Office 365 Groups are being created and used. | No                                    |    TBD       |
-| Retention policy | Retain or delete data for a specific time period by setting retention policies for Office 365 Groups in the Security & compliance center. **Note:** Using this feature requires licensing of Office 365 Enterprise E3 or above. | No                                    |    TBD       |
+| Retention policy | Retain or delete data for a specific time period by setting retention policies for Office 365 Groups in the Security & Compliance Center. **Note:** Using this feature requires licensing of Office 365 Enterprise E3 or above. | No                                    |    TBD       |
 | Data loss prevention policy | Identify sensitive information across Office 365 group connected sites and prevent the accidental sharing. **Note:** Using this feature requires licensing of Office 365 Enterprise E3 or above. | No                                    |     TBD      |
 | Archive and restore | Archive a team when it's no longer active but you want to keep it around for reference or to reactivate in the future. | No                                    |   TBD        |
 | Access Reviews | Perform reviews to efficiently manage group memberships for both internal and guest users | P2                                    |   TBD       |

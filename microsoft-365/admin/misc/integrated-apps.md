@@ -18,19 +18,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: "Learn about Integrated Apps and how to turn them on to allow third-party apps to access users' Office 365 information."
+description: "Learn about Integrated Apps and how to turn them on to allow third-party apps to access users' Microsoft 365 information."
 ---
 
 # Turning Integrated Apps on or off
 
-When Integrated Apps is turned on, users in your organization can allow third-party apps to access their Office 365 information. For example, when someone uses a third-party app, that app might ask for permission to access their calendar and to edit files that are in a OneDrive folder.
+When Integrated Apps is turned on, users in your organization can allow third-party apps to access their Microsoft 365 information. For example, when someone uses a third-party app, that app might ask for permission to access their calendar and to edit files that are in a OneDrive folder.
 
 ## Turning Integrated Apps on or off
 <a name="__toc379982114"> </a>
 
 Here's how to turn Integrated Apps on or off.
 
-1. In the admin center, go to the **Settings** \> [Services &amp; add-ins](https://go.microsoft.com/fwlink/p/?linkid=2053743) page, and then select **Integrated apps**.
+1. In the Microsoft 365 admin center, go to the **Settings** \> [Services &amp; add-ins](https://go.microsoft.com/fwlink/p/?linkid=2053743) page, and then select **Integrated apps**.
 
 2. On the **Integrated Apps** page, select the option to turn Integrated Apps on or off.
 
@@ -39,9 +39,9 @@ Here's how to turn Integrated Apps on or off.
 
 An integrated app can be created from within your own organization, or it can come from another organization or a third-party.
 
-When Integrated Apps is turned on and an app is used, the app asks for permission to set the level of access it needs when it accesses the user's information. A user can give access only to apps they own that access their Office 365 information. They can't give an app access to any other user's information.
+When Integrated Apps is turned on and an app is used, the app asks for permission to set the level of access it needs when it accesses the user's information. A user can give access only to apps they own that access their Microsoft 365 information. They can't give an app access to any other user's information.
 
-There are two kinds of permissions that are used when using Integrated Apps in Office 365: user permissions and admin permissions. For example, when your organization is enabled for Integrated Apps and a user uses a third-party app, the app might ask for the user's permission to read their user profile details, edit or delete their files, read items contained in site collections, and send email as that user.
+There are two kinds of permissions that are used when using Integrated Apps in Microsoft 365: user permissions and admin permissions. For example, when your organization is enabled for Integrated Apps and a user uses a third-party app, the app might ask for the user's permission to read their user profile details, edit or delete their files, read items contained in site collections, and send email as that user.
 
 ![Integrated Apps User Permissions](../../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
 

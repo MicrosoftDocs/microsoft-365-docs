@@ -22,7 +22,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn about multi-factor authentication in Office 365, and the steps you need to follow to set it up."
 ---
 
-# Plan for multi-factor authentication for Office 365 Deployments
+# Plan for multi-factor authentication for Microsoft 365 Deployments
 
 Multi-factor authentication (MFA) is a method of authentication that requires the use of more than one verification method and adds a second layer of security to user sign-ins and transactions. It works by requiring any two or more of the following verification methods:
   
@@ -34,9 +34,9 @@ Multi-factor authentication (MFA) is a method of authentication that requires th
     
 - A biometric device 
     
-## Multi-factor authentication in Office 365
+## Multi-factor authentication in Microsoft 365
 
-Office 365 uses multi-factor authentication to help provide the extra security and is managed from the Microsoft 365 admin center. Office 365 offers the following subset of Azure multi-factor authentication capabilities as a part of the subscription: 
+Microsoft 365 uses multi-factor authentication to help provide the extra security and is managed from the Microsoft 365 admin center. Microsoft 365 offers the following subset of Azure multi-factor authentication capabilities as a part of the subscription: 
   
 - The ability to enable and enforce multi-factor authentication for end users
     
@@ -52,7 +52,7 @@ Office 365 uses multi-factor authentication to help provide the extra security a
     
 For the full list of added features, see [the comparison of Azure Multi-Factor Authentication version](https://go.microsoft.com/fwlink/?LinkId=506927). You can always get the full functionality by purchasing the Azure Multi-Factor Authentication service. 
   
-You get a different subset of capabilities depending on whether you have a cloud-only deployment for Office 365 or a hybrid set up with single sign-on and Active Directory Federation Services (AD FS). 
+You get a different subset of capabilities depending on whether you have a cloud-only deployment for Microsoft 365 or a hybrid set up with single sign-on and Active Directory Federation Services (AD FS). 
   
 |**Where do you manage your Office 365 tenant?**|**MFA second factor options**|
 |:-----|:-----|
