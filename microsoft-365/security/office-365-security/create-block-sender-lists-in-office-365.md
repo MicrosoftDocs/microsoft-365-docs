@@ -25,7 +25,7 @@ The best method to block senders varies on the scope of impact. For a single use
 
 2. Blocked sender lists or blocked domain lists (anti-spam policies)
 
-3. Mai flow rules
+3. Mail flow rules
 
 4. The IP Block List (connection filtering)
 

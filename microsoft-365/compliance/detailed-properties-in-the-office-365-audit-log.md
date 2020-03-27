@@ -84,12 +84,12 @@ The following table describes the properties that are included (depending on the
 |UserSharedWith|The user that a resource was shared with. This property is included if the value for the **Operation** property is **SharingSet**. This user is also listed in the **Shared with** column in the report.|SharePoint|
 |UserType|The type of user that performed the operation. The following values indicate the user type. <br/> <br/> **0** - A regular user. <br/>**2** - An administrator in your Office 365  organization.<sup>1</sup> <br/>**3** - A Microsoft datacenter administrator or datacenter system account. <br/>**4** - A system account. <br/>**5** - An application. <br/>**6** - A service principal.<br/>**7** - A custom policy.<br/>**8** - A system policy.|All|
 |Version|Indicates the version number of the activity (identified by the **Operation** property) that's logged.|All|
-|Workload|The Office 365 service where the activity occurred. The possible values for this property are:  <br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>Compliance<br/>Sway<br/>Skype for Business<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>Project<br/>PowerApps<br/>Workplace Analytics**<br/>**MicrosoftForms**<br/>**AirInvestigation**|All|
+|Workload|The Office 365 service where the activity occurred.|All|
 ||||
 
 > [!NOTE]
 ><sup>1</sup> For Azure Active Directory-related events, the value for an administrator isn't used in an audit record. Audit records for activities performed by administrators will indicate that a regular user (for example, **UserType: 0**) performed the activity. The **UserID** property will identify the person (regular user or administrator) who performed the activity.<br/>
 
-The properties described above are also displayed when you click **More information** when viewing the details of a specific event. 
+The properties described above are also displayed when you click **More information** when viewing the details of a specific event.
   
 ![Click More information to view the detailed properties of the audit log event record](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)

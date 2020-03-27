@@ -2,8 +2,8 @@
 title: "Views in Threat Explorer and real-time detections"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 08/07/2019
 audience: ITPro

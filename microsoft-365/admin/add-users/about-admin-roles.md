@@ -114,6 +114,7 @@ You'll probably only need to assign the following roles in your organization. (F
 |Power BI admin    |   Full access to Power Bl management tasks, manages service requests, and monitors service health.   |
 |Power platform admin     |    Full access to Microsoft Dynamics 365, PowerApps, data loss prevention policies, and Microsoft Flow.     |
 |Privileged role admin     |    Manages role assignments and all access control features of Privileged Identity Management.     |
+|Privileged authentication admin     |    Resets passwords, updates non-password credentials, forces uses to sign out and monitors service health and manages service requests.     |
 |Reports reader     |   Reads usage reporting data from the reports dashboard, PowerBI adoption content pack, sign-in reports, and Microsoft Graph reporting API.      |
 |Search admin     |    Full access to Microsoft Search, assigns the Search admin and Search editor roles, manages editorial content, monitors service health, and creates service requests.     |
 |Search editor     |    Can only create, edit, and delete content for Microsoft Search, like bookmarks, Q&A, and locations.     |
