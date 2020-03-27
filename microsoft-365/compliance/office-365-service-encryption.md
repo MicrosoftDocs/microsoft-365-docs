@@ -13,7 +13,7 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: Understand data resiliency in Microsoft Office 365."
+description: In this article, you'll learn about Service Encryption that in addition to volume-level encrpytion can be used to encrypt customer data.
 ---
 
 # Office 365 Service Encryption
