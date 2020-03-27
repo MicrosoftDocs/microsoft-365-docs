@@ -1,5 +1,5 @@
 ---
-title: "Office 365 encryption chains - ITAR"
+title: "Office 365 encryption chains - DOD and GCC High"
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -16,14 +16,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: "View a complete list of ITAR root certificates and certificate authorities (CAs) in Office 365."
+description: "View a complete list of DOD and GCC High root certificates and certificate authorities (CAs) in Office 365."
 ---
 
-# Office 365 encryption chains - ITAR
+# Office 365 encryption chains - DOD and GCC High
 
-Office 365 leverages a number of different certificate providers. The following describes the complete list of known Office 365 root certificates that **ITAR customers** (Defense & GCC High) may encounter when accessing Office 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates).
+Office 365 leverages a number of different certificate providers. The following describes the complete list of known Office 365 root certificates that **DOD and GCC High customers** may encounter when accessing Office 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates).
 
-The following certificate information applies to **all ITAR customers** (Defense & GCC High).
+The following certificate information applies to **all DOD and GCC High customers**.
 
 >[!NOTE]
 >For certificate information that applies to **worldwide customers**, see [Office 365 encryption chains](encryption-office-365-certificate-chains.md).
