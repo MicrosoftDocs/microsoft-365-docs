@@ -151,7 +151,7 @@ When users don't know about threat protection features at work in your organizat
 
 Use the following resources to help inform users in your organization:
 
-<do these work for the lower plans?>
+. . . these work for the lower plans? . . .
 
 |Concept  |Resources  |
 |---------|---------|
@@ -176,7 +176,7 @@ Get started with Cloud App Security now. Later you can set up more sophisticated
 
 Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can view your organization's [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide), and any alerts or entities that require your attention.
 
-<working on monitoring and dashboards by service plan>
+. . . working on monitoring and dashboards by service plan . . .
 
 - [Get started with the Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center?view=o365-worldwide)
 - [Monitor and view reports](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting?view=o365-worldwide)
