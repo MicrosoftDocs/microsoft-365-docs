@@ -24,7 +24,7 @@ Microsoft 365 lets administrators import and archive third-party data from socia
   
 - **Social:** Facebook, LinkedIn, Twitter, and Yammer
 
-- **Instant messaging:** ICE Chat, Yahoo Messenger, and GoogleTalk
+- **Instant messaging:** Yahoo Messenger and GoogleTalk
 
 - **Document collaboration:** Box and DropBox
 
@@ -45,8 +45,6 @@ There are two ways to import and archive third-party data in Microsoft 365:
    - **LinkedIn:** [Set up a connector to archive LinkedIn data](archive-linkedin-data.md)
 
    - **Instant Bloomberg:** [Set up a connector to archive Instant Bloomberg data](archive-instant-bloomberg-data.md)
-
-   - **ICE Chat:** [Set up a connector to archive ICE Chat data (preview)](archive-icechat-data.md)
 
    - **HR data:** [Set up a connector to import HR data](import-hr-data.md)
 
