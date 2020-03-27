@@ -36,7 +36,7 @@ After third-party data is imported, you can apply Microsoft 365 compliance featu
 
 There are two ways to import and archive third-party data in Microsoft 365:
 
-- **Use a third-party data connector in the Security & Compliance Center:** Use a custom data connector that's available in the Microsoft 365 compliance center. After you set up and configure the connector, it connects to the third-party data source, converts the content of an item to an email message format, and then imports the item to a mailbox in Microsoft 365. Currently, you can implement connectors to import and archive data from Facebook Business pages, corporate Twitter accounts, LinkedIn, Instant Bloomberg, ICE Chat, and your organization's human resources (HR) data. For the step-by-step instructions to set up one of these connectors, see:
+- **Use a third-party data connector in the Security & Compliance Center:** Use a custom data connector that's available in the Microsoft 365 compliance center. After you set up and configure the connector, it connects to the third-party data source, converts the content of an item to an email message format, and then imports the item to a mailbox in Microsoft 365. Currently, you can implement connectors to import and archive data from Facebook Business pages, corporate Twitter accounts, LinkedIn, Instant Bloomberg, and your organization's human resources (HR) data. For the step-by-step instructions to set up one of these connectors, see:
 
    - **Facebook:** [Use a connector to archive Facebook data](archive-facebook-data-with-sample-connector.md)
 
