@@ -780,7 +780,7 @@
         - name: Compliance Manager (Preview)
           href: compliance-manager-overview.md
           items: 
-            - name: What's new in Compliance Manager (Preview)
+            - name: Compliance Manager (Preview) release notes
               href: compliance-manager-release-notes.md
             - name: Working with Compliance Manager (Preview)
               href: working-with-compliance-manager.md
