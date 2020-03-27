@@ -20,7 +20,7 @@ description: "Admins can view, release, and delete all types of quarantined mess
 
 # Manage quarantined messages and files as an administrator
 
-Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
+Quarantine holds potentially dangerous or unwanted messages in Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
 
 Admins can view, release, and delete all types of quarantined messages for all users. Only admins can manage messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). Admins can also report false positives to Microsoft.
 

@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Get help with increasing the level of protection in Microsoft 365 Business"
+description: "Get help with increasing the level of protection in Microsoft 365"
 ---
 
 # Increase threat protection
@@ -253,7 +253,7 @@ For more information, see [Office 365 ATP safe links](https://go.microsoft.com/f
 
 After you turn on the audit log search in the Security &amp; Compliance center, you can retain the admin and other user activity in the log and search it. 
 
-You must be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Microsoft 365 Business subscription. By default, this role is assigned to the Compliance Management and Organization Management role groups on the Permissions page in the Exchange admin center. Global admins in Microsoft 365 are members of this group by default.
+You must be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Microsoft 365 subscription. By default, this role is assigned to the Compliance Management and Organization Management role groups on the Permissions page in the Exchange admin center. Global admins in Microsoft 365 are members of this group by default.
 
 1. To turn on the audit log search on, go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and then choose **Compliance** under **Admin centers** in the left nav. 
 2. On the **Microsoft 365 compliance** page, choose **More resources**, and then **Open** on the **Office 365 security &amp; center** card.
@@ -278,8 +278,8 @@ To change the sharing settings for OneDrive and SharePoint:
 
 You can use activity alerts to track admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones. For more information, see [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
 
-The following figure shows the default policies that are included with Microsoft 365 Business. <br/><br/>
-    ![Default alert policies included with Microsoft 365 Business.](../media/alertpolicies.png)
+The following figure shows the default policies that are included with Microsoft 365. <br/><br/>
+    ![Default alert policies included with Microsoft 365](../media/alertpolicies.png)
 
 ## Disable or manage calendar sharing
 

@@ -35,7 +35,7 @@ Office 365 groups is the foundational membership service that drives all teamwor
 
 With an Office 365 group, you don't have to manually assign permissions to each of these resources, because adding people to the group automatically gives them the permissions they need to the tools that the group provides.
 
-Any Office 365 user can create a group unless you [limit group creation to a specific set of people](manage-creation-of-groups.md). Note that if you limit group creation, users who cannot create groups will not be able to create SharePoint sites, Planners, or teams. These services require the people creating them to be able to create a group. Users can still participate in group activities, such as creating tasks in Planner or using Teams chat, provided they are a member of the group.
+Any user can create a group unless you [limit group creation to a specific set of people](manage-creation-of-groups.md). Note that if you limit group creation, users who cannot create groups will not be able to create SharePoint sites, Planners, or teams. These services require the people creating them to be able to create a group. Users can still participate in group activities, such as creating tasks in Planner or using Teams chat, provided they are a member of the group.
 
 Groups have the following roles:
 

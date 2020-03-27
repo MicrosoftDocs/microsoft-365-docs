@@ -25,9 +25,9 @@ description: "Learn how to move your business to Microsoft 365 Business Premium 
 
 # Migrating from Office 365 E3 to Microsoft 365 Business Premium 
 
-Microsoft 365 Business Premium has everything you need for your small business, combining the best-in-class cloud-based productivity apps with simple device management and security. If you currently have an Office 365 E3 subscription, but don't have more than 300 employees, consider switching to Microsoft 365 Business for added security features.
+Microsoft 365 Business Premium has everything you need for your small business, combining the best-in-class cloud-based productivity apps with simple device management and security. If you currently have an Office 365 E3 subscription, but don't have more than 300 employees, consider switching to Microsoft 365 Business Premium for added security features.
 
-Migrating is easy: First you switch licenses and all your data and user information in your current subscription is maintained. After the migration, you'll need to set up the features that are added in Microsoft 365 Business.
+Migrating is easy: First you switch licenses and all your data and user information in your current subscription is maintained. After the migration, you'll need to set up the features that are added in Microsoft 365 Business Premium.
 
 ## Differences between Office 365 E3 and Microsoft 365 Business Premium
 

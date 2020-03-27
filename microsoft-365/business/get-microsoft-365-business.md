@@ -1,5 +1,5 @@
 ---
-title: "Get Microsoft 365 Business from partner center"
+title: "Get Microsoft 365 Business Premium from partner center"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw

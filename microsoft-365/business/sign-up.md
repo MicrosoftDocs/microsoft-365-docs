@@ -53,7 +53,7 @@ If you found this video helpful, check out the [complete training series for sma
 To sign up and purchase Microsoft 365 for your business, complete the following steps:
 
 1. On the [Microsoft 365 for business page](https://go.microsoft.com/fwlink/?linkid=2109654), select **See plans & pricing**. 
-2. On the next page, find out the monthly cost, and then scroll down the page to find out more about what's included in Microsoft 365 Business. Under Microsoft 365 Business, select **Buy now**.
+2. On the next page, find out the monthly cost, and then scroll down the page to find out more about what's included in Microsoft 365. Under Microsoft 365 Business Premium, select **Buy now**.
 3. On the **Thank you for choosing Microsoft 365 Business Premium** page, enter your information to get started.
 4. In **step 1**, enter an email address that you already use. This can be your current work email address or any address you want Microsoft to use to communicate with you during setup. It is also the address where we'll send you information about your bill and renewals. Then select, **Set up account**.
 5. In **step 2**, enter your name, business phone number, company name, and location. Your Country or Region determines the exact services you receive from Microsoft, and can't be changed after you complete this step. Select **Next**.

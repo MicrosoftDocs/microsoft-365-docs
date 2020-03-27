@@ -25,7 +25,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: "Learn how to reset password for a user in Microsoft 365 business subscription. "
+description: "Learn how to reset password for a user in Microsoft 365 for business subscription. "
 ---
 
 # Reset business passwords

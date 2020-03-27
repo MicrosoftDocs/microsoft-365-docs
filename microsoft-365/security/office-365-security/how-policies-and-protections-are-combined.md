@@ -1,5 +1,5 @@
 ---
-title: Order and precedence of email protection in Office 365
+title: Order and precedence of email protection
 keywords: security, malware, Microsoft 365, M365, security center, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
 f1.keywords:
 - NOCSH
@@ -16,9 +16,9 @@ ms.collection:
 description: Describes the application order of Office 365 protections, and how the priority value in protection policies determines which policy is applied.
 ---
 
-# Order and precedence of email protection in Office 365
+# Order and precedence of email protection
 
-As Office 365 user, your inbound email may be flagged by multiple forms of protection. For example, the built-in EOP anti-phishing policies that are available to all Office 365 customers, and the more robust ATP anti-phishing policies that are also available to Office 365 Advanced Threat Protection customers. Messages also pass through multiple detection scans for malware, spam, phishing, etc. Given all this activity, there may be some confusion as to which policy is applied.
+As a Microsoft 365 user, your inbound email may be flagged by multiple forms of protection. For example, the built-in EOP anti-phishing policies that are available to all Microsoft 365 customers, and the more robust ATP anti-phishing policies that are also available to Office 365 Advanced Threat Protection customers. Messages also pass through multiple detection scans for malware, spam, phishing, etc. Given all this activity, there may be some confusion as to which policy is applied.
 
 In general, a policy that's applied to a message is identified in the **X-Forefront-Antispam-Report** header in the **CAT (Category)** property. For more information, see [Anti-spam message headers](anti-spam-message-headers.md).
 

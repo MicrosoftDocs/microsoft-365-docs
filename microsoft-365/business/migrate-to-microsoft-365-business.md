@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: "Learn the difference between Microsoft 365 Business Standard and Microsoft 365 Business Premium and how you can upgrade to Microsoft 365 Business."
+description: "Learn the difference between Microsoft 365 Business Standard and Microsoft 365 Business Premium and how you can upgrade to Microsoft 365 Business Premium."
 ---
 
 # Upgrade to Microsoft 365 Business Premium from Microsoft 365 Business Standard

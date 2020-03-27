@@ -59,7 +59,7 @@ Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), 
 
 - **In the United Kingdom, call 0800 032 6417.**
 
-If your Office 365 or Microsoft 365 Business support phone number isn't listed above, use the drop-down menu below to choose your country or region.
+If your Microsoft 365 for business support phone number isn't listed above, use the drop-down menu below to choose your country or region.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 

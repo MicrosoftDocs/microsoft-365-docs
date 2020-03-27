@@ -248,7 +248,7 @@ There are multiple different ways a message can be spoofed (see  [Differentiatin
 |**Type of spoof**|**Category**|**Safety tip added?**|**Applies to**|
 |:-----|:-----|:-----|:-----|
 |DMARC fail (quarantine or reject)|HSPM (default), may also be SPM or PHSH|No (not yet)|All customers, Outlook.com|
-|Self-to-self|SPM|Yes|All Office 365 organizations, Outlook.com|
+|Self-to-self|SPM|Yes|All Microsoft 365 organizations, Outlook.com|
 |Cross-domain|SPOOF|Yes|Office 365 Advanced Threat Protection and E5 customers|
 
 ### Changing your anti-spoofing settings
