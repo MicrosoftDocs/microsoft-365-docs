@@ -134,13 +134,36 @@ To configure mobile app protection, use the guidance in [Common identity and dev
  1. Use the [Apply APP data protection policies](../enterprise/identity-access-policies.md#apply-app-data-protection-policies) guidance to create policies for iOS and Android. Level 2 (enhanced data protection) is recommended for baseline protection. 
  2. Create a conditional access rule to [Require approved apps and APP protection](../enterprise/identity-access-policies.md#require-approved-apps-and-app-protection). 
 
-## 7: Configure MFA and conditional access for guests, including Intune app protection
+## 7: Configure MFA and conditional access for guests, including Intune mobile app protection
 
-text coming. test pending--are app protection policies applied to guests who's organization has also issued app protection policies?
+Next, let's ensure you can continue to collaborate and work with guests. If you're using the Microsoft 365 E3 plan and you implemented MFA for all users, you're set. 
+
+If you're using the Microsoft 365 E5 plan and you're taking advantage of Azure Identity Protection for risk-based MFA, you need to make a couple of adjustments (because Azure AD Identity protection doesn't extend to guests):
+- Create a new conditional access rule to require MFA always for guests and external users.
+- Update the risk-based MFA conditional access rule to exclude guests and external users.
+
+Use the guidance in [Updating the common policies to allow and protect guest and external access](../enterprise/identity-access-policies-guest-access.md) to understand how guest access works with Azure AD and to update the affected policies. 
+
+The Intune mobile app protection policies you created, together with the conditional access rule to require approved apps and APP protection, apply to guests accounts and will help protect your organization data. 
+
+**Note**: If you've already enrolled PCs into device management to require compliant PCs, you'll also need to exclude guest accounts from the conditional access rule that enforces device compliance. 
+
 
 ## 8: Enroll PCs into device management and require compliant PCs
 
-test coming
+There are several methods to enroll your workforce's devices. Each method depends on the device's ownership (personal or corporate), device type (iOS, Windows, Android), and management requirements (resets, affinity, locking). This can take a bit of time to sort out. See: [Enroll devices in Microsoft Intune](https://docs.microsoft.com/mem/intune/enrollment/). 
+
+The quickest way to get going is to [Set up automatic enrollment for Windows 10 devices](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment). 
+
+You can also take advantage of these tutorials:
+- [Use Autopilot to enroll Windows devices in Intune](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
+- [Use Apple's Corporate Device Enrollment features in Apple Business Manager (ABM) to enroll iOS/iPadOS devices in Intune](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
+
+After enrolling devices, use the guidance in [Common identity and device access policies](../enterprise/identity-access-policies.md) to create these policies:
+- [Define device-compliance policies](../enterprise/identity-access-policies.md#define-device-compliance-policies)
+- [Require compliant PCs](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) (conditional access rule)
+
+Only one organization can manage a device, so be sure to exclude guest accounts from the conditional access rule in Azure AD. If you don't exclude guest and external users from policies that require device compliance, these policies will block these users. For more information, see [Updating the common policies to allow and protect guest and external access](../enterprise/identity-access-policies-guest-access.md).
 
 ## 9: Optimize your network for cloud connectivity
 
@@ -150,7 +173,12 @@ Network elements such as VPN concentrators, central network egress equipment (su
 
 Some of the protections that have traditionally been provided by routing traffic back through a corporate network are provided by the cloud apps your users are accessing. If you've reached this step in this article, you've implemented a set of sophisticated cloud security controls for Microsoft 365 services and data. With these controls in place, you may be ready to route remote users' traffic directly to Office 365. If you still require a VPN link for access to other applications, you can greatly improve your performance and user experience by implementing split tunneling. Once you achieve agreement in your oganization, this can be accomplished within a day by a well-coordinated network team.
 
-For more information:
+
+See these resources on Docs for more information:
+- [Overview: Optimize Office 365 connectivity for remote users using VPN split tunnelling](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
+- [Implementing VPN split tunnelling for Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
+
+Recent blog articles on this topic:
 - [How to quickly optimize Office 365 traffic for remote staff & reduce the load on your infrastructure](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
 - [Alternative ways for security professionals and IT to achieve modern security controls in today's unique remote work scenarios](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
