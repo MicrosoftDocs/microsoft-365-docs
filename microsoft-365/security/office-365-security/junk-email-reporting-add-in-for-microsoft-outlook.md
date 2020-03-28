@@ -25,9 +25,6 @@ The Junk Email Reporting Add-in for Microsoft Outlook allows users to submit fal
 
 This topic explains how to install and use the Junk Email Reporting add-in.
 
-> [!TIP]
-> You can also submit false positives, false negatives, and phishing messages directly to Microsoft in email attachments. For more information, see [Manually submit messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
-
 ## What do you need to know before you begin?
 
 - To install the Junk Email Reporting add-in, see the [Install the Junk Email Reporting add-in](#install-the-junk-email-reporting-add-in) section later in this topic.
@@ -36,6 +33,8 @@ This topic explains how to install and use the Junk Email Reporting add-in.
 
   - Outlook 2013 or later
   - Outlook included with Office 365 ProPlus
+
+- For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft in Office 365](report-junk-email-messages-to-microsoft.md).
 
 ## Use the Junk Email Reporting add-in to report spam and phishing messages
 
@@ -189,7 +188,7 @@ To verify that you've successfully installed the Junk Email Reporting Add-in, do
 
   ![Report multiple not junk or phishing email messages from right-click in the Junk Email folder](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
-### Uninstall the Junk Email Reporting Add-in
+## Uninstall the Junk Email Reporting Add-in
 
 After you close Outlook, use any of the following procedures to uninstall the Junk Email Reporting Add-in:
 
@@ -220,3 +219,77 @@ After you close Outlook, use any of the following procedures to uninstall the Ju
     ```
 
 When you open Outlook after the uninstall, the junk, not junk, and phishing reporting options should be gone.
+
+## Troubleshooting the Junk Email Reporting add-in
+
+Occasionally, you might experience trouble with Outlook after adding the Junk Email Reporting Add-In. This section describes problems that you might encounter, along with tips for resolving these issues.
+
+### Troubleshooting for users
+
+You experience one or more of the following problems:
+
+- Nothing happens when you click **Report Junk**
+- Outlook stops responding after you select an email message
+- Reported junk mail cannot be delivered due to an "undeliverable" reply
+
+To fix this problem, do the following steps:
+
+1. Close and restart Outlook.
+2. Create and send a test message, and verify that the recipient received the message.
+3. If the problem persists, contact your admin.
+
+For other methods that you can use to submit messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+
+### Troubleshooting for admins
+
+#### Problem: An error message continually appears that asks users to contact their system administrator
+
+1. Verify or set the `LoggingLevel` registry key to the value "Verbose":
+
+   - **32-bit Outlook on 32-bit Windows**:
+
+     ```text
+     Windows Registry Editor Version 5.00
+
+     [HKEY_LOCAL_MACHINE\Software\Microsoft\Junk Email Reporting\Addins]
+     "LoggingLevel"="Verbose"
+     ```
+
+   - **32-bit Outlook on 64-bit Windows**:
+
+     ```text
+     Windows Registry Editor Version 5.00
+
+     [HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Junk Email Reporting\Addins]
+     "LoggingLevel"="Verbose"
+     ```
+
+   - **64-bit Outlook**:
+
+     ```text
+     Windows Registry Editor Version 5.00
+
+     [HKEY_LOCAL_MACHINE\Software\Microsoft\Junk E-mail Reporting\Addins]
+     "LoggingLevel"="Verbose"
+     ```
+
+2. Restart Outlook and ask users to report back when they see the error message.
+
+3. Collect the log information found at the following location:
+
+   `%LOCALAPPDATA%\Microsoft\Junk Email Reporting Add-in\SpamReporterAddinLog.txt`
+
+4. Contact Exchange Online Protection Technical Support and provide them with the log information.
+
+#### Problem: Users selected not to receive a confirmation prompt when they report messages, and now they want the prompt back
+
+1. Create the `ConfirmReportJunk`registry key wih the value "True":
+
+   ```text
+   Windows Registry Editor Version 5.00
+
+   HKEY_CURRENT_USER\Software\Microsoft\Junk E-mail Reporting\Preferences]
+   "ConfirmReportJunk"="True"
+   ```
+
+2. Restart Outlook.

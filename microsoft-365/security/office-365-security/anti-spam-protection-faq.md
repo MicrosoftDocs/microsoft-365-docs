@@ -37,7 +37,9 @@ A. **For inbound messages:** The majority of spam is deleted via connection filt
 
 ## Q. What's a zero-day spam variant and how is it handled by the service?
 
-A. A zero-day spam variant is a first generation, previously unknown variant of spam that's never been captured or analyzed, so our anti-spam filters don't yet have any information available for detecting it. After a zero-day spam sample is captured and analyzed by our spam analysts, if it meets the spam classification criteria, our anti-spam filters are updated to detect it, and it's no longer considered "zero-day." (**Note:** If you receive a message that may be a zero-day spam variant, in order to help us improve the service, please submit the message to Microsoft using one of the methods described in [Manually submit messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).)
+A. A zero-day spam variant is a first generation, previously unknown variant of spam that's never been captured or analyzed, so our anti-spam filters don't yet have any information available for detecting it. After a zero-day spam sample is captured and analyzed by our spam analysts, if it meets the spam classification criteria, our anti-spam filters are updated to detect it, and it's no longer considered "zero-day."
+
+**Note:** If you receive a message that may be a zero-day spam variant, in order to help us improve the service, please submit the message to Microsoft using one of the methods described in [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## Q. Do I need to configure the service to provide anti-spam protection?
 
@@ -67,7 +69,7 @@ A. Yes, the service has a URL filter that checks for URLs within messages. If UR
 
 ## Q. How can customers using the service send false negative (spam) and false positive (non-spam) messages to Microsoft?
 
-A. Spam and non-spam messages can be submitted to Microsoft for analysis in several ways. For more information, see [Manually submit messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+A. Spam and non-spam messages can be submitted to Microsoft for analysis in several ways. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## Q. Can I get spam reports?
 

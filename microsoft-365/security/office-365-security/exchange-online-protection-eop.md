@@ -58,12 +58,8 @@ The Help content for EOP administrators consists of the following top-level cate
 
 The Help content for assisting EOP end users to manage spam consists of the following topics:
 
-- [Find and release quarantined messages as a user](find-and-release-quarantined-messages-as-a-user.md): Describes how end users can find and release their own spam-quarantined messages in the spam quarantine user interface, and optionally report them as not junk to Microsoft.
+- [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md)
 
-- [Manually submit messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md): Describes the different ways end users can submit spam (junk) and non-spam (not junk) messages to Microsoft. This topic includes links to the reporting tools available in Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App).
-
-- [Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md): Describes how end users can submit malware that made it past the filters, or submit a file that was incorrectly identified as malware.
-
-- End users can add specific users or domains to a safe sender list or a blocked sender list by configuring their junk email settings in Outlook or Outlook on the web. Note that messages that are sent from blocked senders are marked as spam, not rejected, meaning that they can be retrieved from the Junk Email folder or quarantine (depending on where your admin has configured the service to send spam.) For more information, see [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- End users can add senders to their own Safe Senders list or Block Senders list in Outlook or Outlook on the web. Admins can also modify these lists in user mailboxes. For more information, see [About junk email settings in Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook).
 
 - [Help and support for EOP](help-and-support-for-eop.md) Provides information about obtaining help and technical support.

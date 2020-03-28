@@ -24,13 +24,11 @@ If you're an Office 365 customer with Exchange Online mailboxes, you can use the
 
 ## What do you need to know before you begin?
 
-- The recommended way for admins to submit email messages, URLs, or attachments to Microsoft is using the Submissions feature in the Office 365 Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+- If you're an admin in an Office 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Office 365 Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
 - Admins can disable or enable the ability for users to report messages to Microsoft in Outlook on the web. For details, see the [Disable or enable junk email reporting in Outlook on the web](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) section later in this topic.
 
-- The Report Message add-in is also available for users to report messages to Microsoft in Outlook on the web. For details, see [Enable the Report Message add-in in Office 365](enable-the-report-message-add-in.md).
-
-- Users can also manually submit messages to Microsoft. For details, see [Manually submit messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+- For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft in Office 365](report-junk-email-messages-to-microsoft.md).
 
 ## Report spam and phishing messages in Outlook on the web
 

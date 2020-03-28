@@ -30,7 +30,7 @@ The best method to block senders varies on the scope of impact. For a single use
 4. The IP Block List (connection filtering)
 
 > [!NOTE]
-> While you can use organization-wide block settings to address false negatives (missed spam), you should also submit those messages to Microsoft for analysis. Managing false negatives by using block lists significantly increases your administrative overhead. If you use block lists to deflect missed spam, you need to keep the topic [Manually submit messages to Microsoft for analysis](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis) at the ready.
+> While you can use organization-wide block settings to address false negatives (missed spam), you should also submit those messages to Microsoft for analysis. Managing false negatives by using block lists significantly increases your administrative overhead. If you use block lists to deflect missed spam, you need to keep the topic [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md) at the ready.
 
 In contrast, you also have several options to always allow email from specific sources using _safe sender lists_. For more information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
 
