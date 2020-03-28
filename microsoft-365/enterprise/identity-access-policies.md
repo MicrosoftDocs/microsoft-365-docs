@@ -29,6 +29,7 @@ The following diagram illustrates the recommended set of policies. It shows whic
 
 ![Common policies for configuring identity and device access](../media/Identity_device_access_policies_byplan.png)
 
+<br/> [See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
 
 The rest of this article describes how to configure these policies. 
 
