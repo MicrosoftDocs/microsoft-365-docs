@@ -3,12 +3,12 @@
     {
       "source_path": "microsoft-365/commerce/billing-and-payments/apply-for-tax-exempt-status.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/tax-information#apply-for-tax-exempt-status",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/commerce/billing-and-payments/what-tax-will-i-be-charged.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/tax-information",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/commerce/subscriptions/what-happens-if-i-cancel.md",
@@ -505,7 +505,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/fix-error-code-5-7-7xx-in-exchange-online.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750",
+      "redirect_url": "https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750",
       "redirect_document_id": false
     },
     {
