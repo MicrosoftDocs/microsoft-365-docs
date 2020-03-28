@@ -60,7 +60,7 @@ Applying these policies will take only a few minutes, but be prepared to support
 |Plan  |Recommendation  |
 |---------|---------|
 |Office 365 plans (without Azure AD P1 or P2)     |[Enable Security defaults in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.   |
-|Microsoft 365 E3 (with Azure AD P1)     | Use [Common Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block clients that don't support modern authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E3 (with Azure AD P1)     | Use [Common Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 (with Azure AD P2)     | Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](../enterprise/identity-access-policies.md) by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Block clients that don't support modern authentication](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [High risk users must change password](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
@@ -108,7 +108,7 @@ You'll need to work with your Exchange Online administrator and SharePoint Onlin
 
 ## 5: Turn on Microsoft Advanced Threat Protection
 
-Now that you have Office 365 ATP and Azure ATP configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Azure ATP, Office 365 ATP, Microsoft Defender ATP, and Microsoft Cloud App Security) into a single pane of glass experience. 
+Now that you have Office 365 ATP and Azure ATP configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Azure ATP, Office 365 ATP, Microsoft Defender ATP, and Microsoft Cloud App Security) into a single pane at security.microsoft.com. 
 <br>
 
 ![MTP dashboard illustration](../media/top-10-security-remote-work-mtp-dashboard.png)
@@ -120,9 +120,19 @@ After you have configured one or more of your advanced threat protection service
 - [Opt in for preview features](https://docs.microsoft.com/microsoft-365/security/mtp/preview?view=o365-worldwide)
 
 
-## 6: Configure Intune App protection for phones and tablets
+## 6: Configure Intune mobile app protection for phones and tablets
 
-text coming
+Microsoft Intune Mobile Application Management (MAM) allows you to manage and protect your organization's data on phones and tablets without managing these devices. Here's how it works:
+- You create an App Protection Policy (APP) that determines which apps on a device are managed and what behaviors are allowed (such as preventing data from a managed app to be copied to an unmanaged app). You create one policy for each platorm (iOS, Android).
+- After creating the app protection policies, you enforce these by creating a conditional access rule in Azure AD to require approved apps and APP data protection.
+
+APP protection policies include many settings. Fortunately, you don't need to learn about every setting and weigh the options. Microsoft makes it easy to apply a configuration of settings by recommending starting points. The [Data protection framework using app protection policies](https://docs.microsoft.com/mem/intune/apps/app-protection-framework) includes three levels you can choose from. 
+
+Even better, Microsoft coordinates this app protection framework with a set of conditional access and related policies we recommend all organizations use as a starting point. If you've implemented MFA using the guidance in this article, you're half way there!
+
+To configure mobile app protection, use the guidance in [Common identity and device access policies](../enterprise/identity-access-policies.md):
+ 1. Use the [Apply APP data protection policies](../enterprise/identity-access-policies.md#apply-app-data-protection-policies) guidance to create policies for iOS and Android. Level 2 (enhanced data protection) is recommended for baseline protection. 
+ 2. Create a conditional access rule to [Require approved apps and APP protection](../enterprise/identity-access-policies.md#require-approved-apps-and-app-protection). 
 
 ## 7: Configure MFA and conditional access for guests, including Intune app protection
 
