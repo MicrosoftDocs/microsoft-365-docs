@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 2/14/2018
 audience: Admin
 ms.topic: hub-page
