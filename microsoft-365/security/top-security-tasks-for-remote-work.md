@@ -229,12 +229,12 @@ Get started with Cloud App Security now. Later you can set up more sophisticated
 
 Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can view your organization's [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide), and any alerts or entities that require your attention.
 
-. . . working on monitoring and dashboards by service plan . . .
-
 - [Get started with the Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center?view=o365-worldwide)
 - [Monitor and view reports](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting?view=o365-worldwide)
 - [See the security portals in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/portals)
 
 ## Next steps
 
-Congratulations! You have quickly implemented some of the most important security protections. Now you're ready to go even further with threat protection capabilities (including Microsoft Defender Advanced Threat Protection), data classification and protection capabilities, and securing administrative accounts. For a deeper methodical set of security recommendations for Microsoft 365, see [Microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md). 
+Congratulations! You have quickly implemented some of the most important security protections and your organization is much more secure. Now you're ready to go even further with threat protection capabilities (including Microsoft Defender Advanced Threat Protection), data classification and protection capabilities, and securing administrative accounts. For a deeper, methodical set of security recommendations for Microsoft 365, see [Microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md). 
+
+Also visit Microsoft's new security center on [docs.microsoft.com/security](http://docs.microsoft.com/security). 
