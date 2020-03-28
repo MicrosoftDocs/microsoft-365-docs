@@ -3,6 +3,8 @@
   items: 
     - name: Get started
       items: 
+        - name: Top tasks to support working from home
+          href: top-security-tasks-for-remote-work.md
         - name: Microsoft 365 Security for BDMs
           href: Microsoft-365-security-for-bdm.md
         - name: Chief Information Security Officer (CISO) workshop training
