@@ -187,9 +187,9 @@ Recent blog articles on this topic:
 
 When users don't know about threat protection features at work in your organization, they can get frustrated by protection features that are perceived as slowing them down or preventing them from getting their work done. In addition, if they know ahead of time what to watch for with respect to suspicious email messages or URLs, they'll be far less likely to open questionable artifacts. Training users can save your users and security operations team a lot of time and frustration.
 
-Use the following resources to help inform users in your organization:
+The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) provides excellent guidance on establishing a strong culture of security awareness within your organization, including training users to identify phishing attacks. 
 
-. . . these work for the lower plans? . . .
+Microsoft 365 provides the following resources to help inform users in your organization:
 
 |Concept  |Resources  |
 |---------|---------|
@@ -197,6 +197,21 @@ Use the following resources to help inform users in your organization:
 |Microsoft 365 security |[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>This module enables you to describe how Microsoft 365 security features work together and to articulate the benefits of these security features. |
 |Multi-factor authentication     | [Two-step verification: What is the additional verification page?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>This article helps end users understand what multi-factor authentication is and why it's being used at your organization.    |
 | | |
+
+In addition to this guidance, Microsoft recommends that your users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). These actions include:
+  
+- Using strong passwords
+    
+- Protecting devices 
+    
+- Enabling security features on Windows 10 and Mac PCs (for unmanaged devices)
+    
+Microsoft also recommends that users protect their personal email accounts by taking the actions recommended in the following articles:
+  
+- [Help protect your Outlook.com email account](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba.aspx)
+    
+- [Protect your Gmail account with 2-step verification](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
+
 
 ## 11: Get started with Microsoft Cloud App Security
 
