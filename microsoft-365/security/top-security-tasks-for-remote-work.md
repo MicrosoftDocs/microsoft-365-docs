@@ -183,7 +183,7 @@ Recent blog articles on this topic:
 - [Alternative ways for security professionals and IT to achieve modern security controls in today's unique remote work scenarios](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
 
-## 10:  Train users
+## 10: Train users
 
 When users don't know about threat protection features at work in your organization, they can get frustrated by protection features that are perceived as slowing them down or preventing them from getting their work done. In addition, if they know ahead of time what to watch for with respect to suspicious email messages or URLs, they'll be far less likely to open questionable artifacts. Training users can save your users and security operations team a lot of time and frustration.
 
@@ -237,4 +237,4 @@ Microsoft 365 includes several ways to monitor status and take appropriate actio
 
 Congratulations! You have quickly implemented some of the most important security protections and your organization is much more secure. Now you're ready to go even further with threat protection capabilities (including Microsoft Defender Advanced Threat Protection), data classification and protection capabilities, and securing administrative accounts. For a deeper, methodical set of security recommendations for Microsoft 365, see [Microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md). 
 
-Also visit Microsoft's new security center on [docs.microsoft.com/security](http://docs.microsoft.com/security). 
+Also visit Microsoft's new security center on [docs.microsoft.com/security](https://docs.microsoft.com/security). 
