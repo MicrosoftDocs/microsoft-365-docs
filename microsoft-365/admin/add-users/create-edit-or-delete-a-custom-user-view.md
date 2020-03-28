@@ -86,7 +86,7 @@ You can also filter by additional user profile details used in your organization
 - **Unlicensed users with Exchange mailboxes or archives** Select this box to show user accounts that were created in Exchange Online and have an Exchange mailbox, but weren't assigned an Office 365 license. The results of this filter include users who have or who were assigned an Exchange archive. 
 
 > [!NOTE]
-> The unlicnesed users with exchange mailboxes works under the following situaions
+> The **Unlicensed users with Exchange mailboxes** filter works when:
 1. The mailbox has been recently converted from shared to user and it has no license.
 2. The mailbox has been recently migrated to O365 but license has not been assigned.
 3. The mailbox has been created using powershell, and a license has not been assigned.
@@ -172,4 +172,3 @@ You can also filter by additional user profile details used in your organization
 
 
      
-
