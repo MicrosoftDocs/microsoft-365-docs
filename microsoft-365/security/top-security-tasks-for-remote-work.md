@@ -1,5 +1,5 @@
 ---
-title: "Top 12 tasks for security teams to to support working from home"
+title: "Top 12 tasks for security teams to support working from home"
 f1.keywords:
 - CSH
 ms.author: bcarter
