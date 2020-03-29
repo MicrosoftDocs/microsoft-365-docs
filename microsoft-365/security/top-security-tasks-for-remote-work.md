@@ -123,7 +123,7 @@ After you have configured one or more of your advanced threat protection service
 ## 6: Configure Intune mobile app protection for phones and tablets
 
 Microsoft Intune Mobile Application Management (MAM) allows you to manage and protect your organization's data on phones and tablets without managing these devices. Here's how it works:
-- You create an App Protection Policy (APP) that determines which apps on a device are managed and what behaviors are allowed (such as preventing data from a managed app to be copied to an unmanaged app). You create one policy for each platorm (iOS, Android).
+- You create an App Protection Policy (APP) that determines which apps on a device are managed and what behaviors are allowed (such as preventing data from a managed app from being copied to an unmanaged app). You create one policy for each platorm (iOS, Android).
 - After creating the app protection policies, you enforce these by creating a conditional access rule in Azure AD to require approved apps and APP data protection.
 
 APP protection policies include many settings. Fortunately, you don't need to learn about every setting and weigh the options. Microsoft makes it easy to apply a configuration of settings by recommending starting points. The [Data protection framework using app protection policies](https://docs.microsoft.com/mem/intune/apps/app-protection-framework) includes three levels you can choose from. 
