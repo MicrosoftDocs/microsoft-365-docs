@@ -79,11 +79,11 @@ You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-3
 
 ## Avoid end of support for Windows 7 and Office 2010 clients and servers
 
-The following products reach end of support on **January 14, 2020**:
+The following products reached end of support on **January 14, 2020**:
 
 - [Windows 7](https://aka.ms/win7upgrade)
 
-The following products reach end of support on  **October 13, 2020**:
+The following products will reach end of support on **October 13, 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
