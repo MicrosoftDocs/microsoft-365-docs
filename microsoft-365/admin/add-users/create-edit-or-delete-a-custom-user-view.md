@@ -88,7 +88,7 @@ You can also filter by additional user profile details used in your organization
 > [!NOTE]
 > The **Unlicensed users with Exchange mailboxes** filter works when:
 1. The mailbox has been recently converted from **shared** to **user** and it has no license.
-2. The mailbox has been recently migrated to Office 365 but a license has not been assigned.
+2. The mailbox has been recently migrated but a license has not been assigned.
 3. The mailbox has been created using PowerShell, and a license has not been assigned.
 4. A new mailbox that has been created on-premise with a New-RemoteMailbox cmdlet is provisioned for the user.
     

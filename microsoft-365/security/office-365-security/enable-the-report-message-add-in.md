@@ -18,10 +18,10 @@ ms.collection:
 description: "Learn how to enable the Report Message add-in for Outlook and Outlook on the web, for individual users or your entire organization."
 ---
 
-# Enable the Report Message add-in in Office 365
+# Enable the Report Message add-in
 
 > [!NOTE]
-> If you're an admin in an Office 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Office 365 Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> If you're an admin in an organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Office 365 Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
 The Report Message add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis. Microsoft uses these submissions to improve the effectiveness of email protection technologies.
 
@@ -42,7 +42,7 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
   - Outlook on the web
   - Outlook 2013 SP1 or later
   - Outlook 2016 for Mac
-  - Outlook included with Office 365 ProPlus
+  - Outlook included with Microsoft 365 apps for Enterprise
 
 - The Report Message add-in is currently not available for:
 
