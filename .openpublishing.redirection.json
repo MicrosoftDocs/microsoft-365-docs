@@ -586,7 +586,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/ciso-workshop-module-5.md",
       "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-5",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
