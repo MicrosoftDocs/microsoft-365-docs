@@ -26,14 +26,11 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-By using the Microsoft Threat Protection preview you consent to the following terms:
 
-Your applicable Customer Data (as defined in the Online Service Terms ("OST")) will be transferred from other Microsoft services into Microsoft Threat Protection and from Microsoft Threat Protection back to applicable Microsoft services. For the duration of this preview, use of your Customer Data in Microsoft Threat Protection will follow the data handling standards and commitments for Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP). You acknowledge that such commitments may differ from the services from which that Customer Data is transferred. Further, Customer Data stored in Microsoft Threat Protection will be stored at rest in the Geo you selected for storage of your Microsoft Defender ATP Customer Data, which may differ from the Geo you selected in connection with other services. Microsoft will not transfer the Customer Data outside of such Geo except as noted in the "Data Location" section of the Microsoft Trust Center located at [Microsoft Trust Center](https://www.microsoft.com/trust-center).
+By using the Microsoft Threat Protection you consent to the following terms:
 
-Further, while you determine which of your users may access Microsoft Threat Protection, Microsoft Threat Protection does not currently allow for role-based access control ("RBAC"). You acknowledge that to the extent Microsoft Threat Protection receives data from a Microsoft service that does support RBAC, access levels in that service will not apply in Microsoft Threat Protection.
-
+By turning on Microsoft Threat Protection (MTP), you consent to the following terms. Your applicable Customer Data as defined in the Online Service Terms (OST) will be transferred from other Microsoft services into MTP. Use of your Customer Data in MTP will follow the data handling standards and commitments for Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP). You acknowledge that such commitments may differ from the services from which that Customer Data is transferred. Further, Customer Data stored in MTP will be stored at rest in the Geo you selected for storage of your MDATP Customer Data, which may differ from the Geo you selected in connection with other services. Microsoft will not transfer the Customer Data outside of such Geo except as noted in the Data Location section of the [Microsoft Trust Center](https://www.microsoft.com/trust-center)
 
 For more information on the data storage and privacy information of the specific products see:
 - [Microsoft Defender ATP data storage and privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

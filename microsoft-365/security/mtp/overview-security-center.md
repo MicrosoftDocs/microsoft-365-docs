@@ -1,4 +1,4 @@
-﻿---
+---
 title: Overview of the Microsoft 365 security center
 description: Describes the new home for monitoring and managing security across your Microsoft identities, data, devices, and apps.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
@@ -40,7 +40,7 @@ The Microsoft 365 security center includes:
 
 * **Home** – Get at-a-glance view of the overall security health of your organization.
 * **Incidents** - See the broader story of an attack by connecting the dots seen on individual alerts on entities. You'll know exactly where an attack started, what devices are impacted, who are affected, and where the threat has gone.
-* **Alerts** – Have greater visibility into all the alerts across your Microsoft 356 environment, including alerts from Microsoft Cloud App Security, Office 365 ATP, Azure AD, Azure ATP, and Microsoft Defender ATP. Available to E3 and E5 customers.  
+* **Alerts** – Have greater visibility into all the alerts across your Microsoft 365 environment, including alerts from Microsoft Cloud App Security, Office 365 ATP, Azure AD, Azure ATP, and Microsoft Defender ATP. Available to E3 and E5 customers.  
 * **Action center** - Reduce the volume of alerts your security team must address manually, allowing your security operations team to focus on more sophisticated threats and other high-value initiatives.
 * **Reports** – Get the detail and information you need to better protect your users, devices, apps, and more.
 * **Secure score** – Improve your overall security posture with Microsoft Secure Score. This page provides an all up summary of the different security features and capabilities you’ve enabled and includes recommendations for areas to improve.
@@ -58,3 +58,6 @@ Explore these topics about monitoring, reviewing, and responding to your securit
 - [Report](monitoring-and-reporting.md) the status of your identities, data, devices, apps, and infrastructure
 - [Proactively hunt for threats](advanced-hunting-overview.md) for intrusion attempts and breach activity affecting your email, data, devices, and accounts
 - [Understand the latest attack campaigns](latest-attack-campaigns.md) and techniques with threat analytics
+
+## Related topics
+- [Microsoft security portals](portals.md)

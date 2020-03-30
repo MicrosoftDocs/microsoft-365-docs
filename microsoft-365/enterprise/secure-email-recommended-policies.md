@@ -31,7 +31,7 @@ These recommendations require your users to use modern email clients, including 
 
 The following diagram illustrates the common identity and device access policies and indicates which policies need to be updated to protect email. Note the addition of a new rule for Exchange Online to block ActiveSync clients. This forces the use of Outlook mobile.
 
-![Summary of policy updates for protecting email](../images/identity-access-ruleset-mail.png)
+![Summary of policy updates for protecting email](../media/identity-access-ruleset-mail.png)
 
 If you included Exchange Online and Outlook in the scope of the policies when you set them up, you only need to create the new policy to block ActiveSync clients. Review the policies listed in the following table and either make the recommended additions, or confirm that these are already included. Each rule links to the associated configuration instructions in the [Common identity and device access policies](identity-access-policies.md) article.
 
@@ -39,8 +39,8 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 |:---------------|:-------|:----------------|
 |**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignment of cloud apps|
 |        |[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Include Exchange Online in the assignment of cloud apps|
-|        |[Define app protection policies](identity-access-policies.md#high-risk-users-must-change-password)|Be sure Outlook is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows)|
-|        |[Require approved apps](identity-access-policies.md#require-approved-apps)|Include Exchange Online in the list of cloud apps|
+|        |[Apply APP data protection policies](identity-access-policies.md#apply-app-data-protection-policies)|Be sure Outlook is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows)|
+|        |[Require approved apps and APP protection](identity-access-policies.md#require-approved-apps-and-app-protection)|Include Exchange Online in the list of cloud apps|
 |        |[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Include Exchange Online in list of cloud apps|
 |        |[Block ActiveSync clients](#block-activesync-clients)|Add this new policy| 
 |**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Include Exchange Online in the assignment of cloud apps|
@@ -49,31 +49,9 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 
 ## Block ActiveSync clients
 
-This policy prevents ActiveSync clients from bypassing other conditional access rules. The rule configuration applies only to ActiveSync clients. By selecting **Require approved client app**, this policy blocks ActiveSync clients. To configure this policy:
+This policy prevents ActiveSync clients from bypassing other conditional access rules. The rule configuration applies only to ActiveSync clients. By selecting **[Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)**, this policy blocks ActiveSync clients. Details on creating this policy can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-1. Go to the [Azure portal](https://portal.azure.com), and sign in with your credentials. After you've successfully signed in, you see the Azure dashboard.
-
-2. Choose **Azure Active Directory** from the left menu.
-
-3. Under the **Security** section, choose **Conditional access**.
-
-4. Choose **New policy**.
-
-5. Enter a policy name, then choose the **Users and groups** you want to apply the policy for.
-
-6. Choose **Cloud apps**.
-
-7. Choose **Select apps**, select **Office 365 Exchange Online**. Choose **Select** and **Done**.
-
-8. Choose **Conditions**, and then choose **Client apps**.
-
-9. For **Configure**, select **Yes**. Check only the following: **Mobile apps and desktop clients** and **Exchange ActiveSync clients**. Choose **Done**.
-
-10. Choose **Grant** from the **Access controls** section.
-
-11. Choose **Grant access**, select **Require approved client app**.  For multiple controls, select **Require the selected controls**, then choose **Select**.
-
-12. Choose **Create**.
+1. Follow "Step 2: Configure an Azure AD Conditional Access policy for Exchange Online with ActiveSync (EAS)" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
 
 ## Setup Office 365 message encryption
 

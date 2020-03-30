@@ -18,11 +18,12 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Learn how to purchase Microsoft 365 Business from Microsoft Partner Center." 
+description: "Discover your options for purchasing Microsoft 365 Business and step-by-step instructions for purchasing it from Microsoft Partner Center." 
 ---
 
 # Get Microsoft 365 Business
@@ -41,13 +42,13 @@ You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/st
     
 2. On the Partner Dashboard, choose **Customers**, then select your customer or add a new customer before you get Microsoft 365 Business.
     
-    ![In the Microsoft Partner center, add a customer.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
+    ![In the Microsoft Partner center, add a customer.](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
 3. On the customer's **Subscription** page, select **Add subscription**, choose the Small business option under Catalog, and then choose **Microsoft 365 Business**.
     
     Select the number of licenses you need (up to 300). If you have more than 300 users, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) instead. 
     
-    ![On the New subscription page, choose small business.](media/52d99e89-2175-4974-84bb-dd626048541b.png)
+    ![On the New subscription page, choose small business.](../media/52d99e89-2175-4974-84bb-dd626048541b.png)
   
     Complete the rest of the steps for adding a new customer, including the business name.
     

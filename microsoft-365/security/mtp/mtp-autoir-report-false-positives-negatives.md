@@ -1,5 +1,5 @@
 ---
-title: How to report false positives or false negatives in AIR in Microsoft Threat Protection 
+title: Handle false positives or false negatives in AIR in Microsoft Threat Protection 
 description: Was something missed or wrongly detected by AIR in Microsoft Threat Protection? Learn how to submit false positives or false negatives to Microsoft for analysis.
 keywords: automated, investigation, alert, trigger, action, remediation, false positive, false negative
 search.appverid: met150
@@ -21,16 +21,17 @@ ms.topic: conceptual
 ms.custom: autoir
 ---
 
-# How to report false positives/negatives in automated investigation and response capabilities
+# Handle false positives/negatives in automated investigation and response capabilities
 
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
 Did [automated investigation and response capabilities](mtp-autoir.md) in Microsoft Threat Protection miss or wrongly detect something? There are steps you can take to fix it. You can:
+
 - [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
+
 - [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and 
+
 - [Undo remediation actions that were taken on devices](#undo-a-remediation-action-that-was-taken-on-a-device). 
 
 Use this article as a guide. 
@@ -52,7 +53,7 @@ Use this article as a guide.
 
 ## Undo a remediation action that was taken on a device
 
-If a remediation action was taken on a device (such as a Windows 10 device) and the item is actually clean, your security operations team can undo the remediation action in the [Action center](mtp-action-center.md).
+If a remediation action was taken on a device (such as a Windows 10 device) and the item is actually not a threat, your security operations team can undo the remediation action in the [Action center](mtp-action-center.md).
 
 > [!IMPORTANT]
 > Make sure you have the [necessary permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) before attempting to perform the following task.
@@ -76,5 +77,7 @@ If a remediation action was taken on a device (such as a Windows 10 device) and 
 ## Related articles
 
 - [Approve or reject actions related to automated investigation and response](mtp-autoir-actions.md)
+
 - [Learn more about the Action center](mtp-action-center.md)
+
 - [Proactively hunt for threats with advanced hunting in Microsoft Threat Protection](advanced-hunting-overview.md)

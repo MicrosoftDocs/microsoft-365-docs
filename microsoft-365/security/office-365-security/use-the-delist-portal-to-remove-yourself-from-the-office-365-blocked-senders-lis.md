@@ -41,7 +41,7 @@ where  _IP address_ is the IP address of the computer on which the mail server r
 3. Click **Submit**.
 
     The portal sends an email to the email address that you supply. The email will look something like the following:
-    ![Screenshot of email received when you submit a request through the delist portal](../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    ![Screenshot of email received when you submit a request through the delist portal](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. Click the confirmation link in the email sent to you by the delisting portal.
 
@@ -54,4 +54,4 @@ where  _IP address_ is the IP address of the computer on which the mail server r
     > [!NOTE]
     > It may take up to 24 hours or results can vary widely before restrictions are removed.
 
-Read about [How to prevent real email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md ) and [Controlling outbound spam in Office 365](outbound-spam-controls.md) to prevent IP from being blacklisted.
+See [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md) and [Outbound spam protection in Office 365](outbound-spam-controls.md) to prevent IP from being blacklisted.

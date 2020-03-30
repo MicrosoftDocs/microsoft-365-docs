@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 12/9/2016
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -28,13 +28,13 @@ If your organization has existing user accounts in an on-premises Active Directo
 
 ## Recommended settings
 
-We empower security administrators to customize their security settings that satistfy the needs of their environments. Although, as a general rule, there are two security levels in EOP and Office 365 ATP that we recommend: Standard and Strict. These settings are listed in the [Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md). 
+We empower security admins to customize their security settings to satisfy the needs of their organization. Although, as a general rule, there are two security levels in EOP and Office 365 ATP that we recommend: Standard and Strict. These settings are listed in the [Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md).
 
 ### Miscellaneous/non-policy settings
 
 These settings cover a range of features that are outside of security policies.
 
-Security feature name|Standard|Strict|Comment|
+|Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
 |[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Yes|Yes||
 |[Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md)|Yes|Yes||
@@ -43,25 +43,22 @@ Security feature name|Standard|Strict|Comment|
 |Schedule Malware and Spam Reports|Yes|Yes||
 |Auto-forwarding to external domains should be disallowed or monitored|Yes|Yes||
 |Unified Auditing should be enabled|Yes|Yes||
-|IMAP connectivity to mailbox|Disabled|Disabled||
-|POP connectivity to mailbox|Disabled|Disabled||
+|[IMAP connectivity to mailbox](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabled|Disabled||
+|[POP connectivity to mailbox](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabled|Disabled||
 |SMTP Authenticated Submission to mailbox|Disabled|Disabled||
 |EWS connectivity to mailbox|Disabled|Disabled||
-|PowerShell connectivity|Disabled|Disabled||
+|[PowerShell connectivity](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Disabled|Disabled|Available for mailbox users or mail users (user objects returned by the [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) cmdlet).|
 |Use Spoof Intelligence to whitelist senders whenever possible|Yes|Yes||
 |Directory-Based Edge Blocking (DBEB)|Enabled|Enabled|Domain Type = Authoritative|
 |[Set up multi-factor authentication for all admin accounts](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Enabled|Enabled||
 
 ## Troubleshooting
 
-Troubleshoot general issues and trends by using the reports in the admin center. Find single point specific data about a message by using the message trace tool. Learn more about reporting at [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Learn more about the message trace tool at [Trace an Email Message](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message).
+Troubleshoot general issues and trends by using the reports in the admin center. Find single point specific data about a message by using the message trace tool. Learn more about reporting at [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Learn more about the message trace tool at [Message trace in the Security & Compliance Center](message-trace-scc.md).
 
-## Reporting False Positive and False Negatives to Microsoft
+## Report false positive and false negatives to Microsoft
 
-Admins should submit false negatives (spam) and false positives (non-spam) to Microsoft via our Admin Submissions portal. Emails, files, and URLs can be submitted to help admins determine why we delivered or did not deliver messages to end-users. For details, see [How to submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning](admin-submission.md).
-
-End-users can also directly report false negatives (spam) and false positives (non-spam) to Microsoft for analysis when they disagree with verdicts given. For details, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
-
+To help improve spam filtering in the service for everyone, you should report false positives (good email marked as bad) and false negatives (bad email allowed) to Microsoft for analysis. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## Create mail flow rules
 
@@ -72,5 +69,3 @@ When you deploy a new rule to production, select one of the test modes first to 
 When you deploy new rules, consider adding the additional action of **Generate Incident Report** to monitor the rule in action.
 
 In hybrid environments where your organization includes both on-premises Exchange and Office 365, consider the conditions that you use in mail flow rules. If you want the rules to apply to the entire organization, be sure to use conditions that are available in both on-premises Exchange and in Office 365. While most conditions are available in both environments, there are a few that are only available in one environment or the other. Learn more at [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
-
-

@@ -17,7 +17,7 @@ ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: "Learn how to define options for exporting results from Office 365 Advanced eDiscovery, including the procedure for specifying parameters for an export batch. "
 ---
 
-# Export results in Office 365 Advanced eDiscovery
+# Export results in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -63,18 +63,18 @@ The eDiscovery Export Tool is used to export search results from Advanced eDisco
     
     - To export results for new files that you added to an existing case, continue with your current batch. To create a session in the batch, select the same batch number and click **Create export session** You can use this option to export the same parameters as the previous batch, in an incremental manner. 
     
-    - To export to a new batch, click **Add** ![add icon](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)and enter a new name in **Batch name** (or accept the default) and a description in **Batch description**. Click **OK**.
+    - To export to a new batch, click **Add** ![add icon](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)and enter a new name in **Batch name** (or accept the default) and a description in **Batch description**. Click **OK**.
     
-    - To edit a batch name or description, select the name in **Export batch**, click **Edit** ![Edit icon](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png), and then modify the fields.
+    - To edit a batch name or description, select the name in **Export batch**, click **Edit** ![Edit icon](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png), and then modify the fields.
     
       > [!NOTE]
       > After you've run sessions for an export batch, they cannot be deleted. In addition, only some parameters can be edited once the first session is run. 
   
-    - To create a duplicate export batch, choose **Duplicate export batch** ![Create a duplicate export batch icon](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) and enter a name and a description for the duplicate batch in the panel. 
+    - To create a duplicate export batch, choose **Duplicate export batch** ![Create a duplicate export batch icon](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) and enter a name and a description for the duplicate batch in the panel. 
     
-    - To delete an export batch, choose **Delete** ![Delete an export batch icon](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
+    - To delete an export batch, choose **Delete** ![Delete an export batch icon](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
     
-    - To view the history of a batch, choose **Batch history** ![View history icon](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg).
+    - To view the history of a batch, choose **Batch history** ![View history icon](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg).
     
 2. Under **Population**, select **Include only files above Relevance cut-off score** and/or **Refine export batch** if you want to fine-tune the settings for your export batch. 
     
@@ -106,7 +106,7 @@ The eDiscovery Export Tool is used to export search results from Advanced eDisco
   
 6. Click **Modify** to set the 'for review' field settings. 
     
-    ![Set up For review field settings for an export batch](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
+    ![Set up For review field settings for an export batch](../media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
   
    - Under **For review field settings**, in **Select scenario** pull-down list, select the scenario and scope of the review. The settings are displayed based on your selection.
     
@@ -154,13 +154,13 @@ The eDiscovery Export Tool is used to export search results from Advanced eDisco
     
 9. In the **Download files** window, click **Copy to clipboard** to copy the Export key. 
     
-    ![Download files](media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
+    ![Download files](../media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
   
 10. Click **Close**. 
     
     The eDiscovery Export Tool is started.
     
-    ![eDiscovery export tool](media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
+    ![eDiscovery export tool](../media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
   
 11. In the **eDiscovery Export Tool**:
     
@@ -189,7 +189,7 @@ The following table lists the output files that are generated when you run an Ex
    
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Viewing batch history and exporting past results](view-batch-history-and-export-past-results.md)
   

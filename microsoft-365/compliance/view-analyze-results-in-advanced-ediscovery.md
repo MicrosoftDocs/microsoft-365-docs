@@ -19,7 +19,7 @@ description: "Understand where to view the results of the Analyze process in Off
 "
 ---
 
-# View Analyze results in Office 365 Advanced eDiscovery
+# View Analyze results in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -30,7 +30,7 @@ In Advanced eDiscovery, progress and results for the Analyze process can be view
 
 In **Prepare \> Analyze \> Results \> Task status**, the status is displayed during and after Analyze process execution. 
   
-![Analyze task status](media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
+![Analyze task status](../media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   
 The tasks displayed may vary depending on the options selected. 
   
@@ -69,11 +69,11 @@ The **Emails** results display the number of inclusive, inclusive minus, unique 
     
 The **Attachments** results display the number of attachments, according to such type as unique and duplicates. 
   
-![Near-duplicates and Email Threads](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
+![Near-duplicates and Email Threads](../media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
   
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Understanding document similarity](understand-document-similarity-in-advanced-ediscovery.md)
   

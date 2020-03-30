@@ -24,7 +24,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 ## Optimize query performance
 Apply these recommendations to get results faster and avoid timeouts while running complex queries:
@@ -90,8 +90,9 @@ DeviceProcessEvents
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
+- [Work with query results](advanced-hunting-query-results.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)

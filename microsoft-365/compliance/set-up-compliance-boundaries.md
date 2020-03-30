@@ -22,11 +22,13 @@ description: "Use compliance boundaries to create logical boundaries within an O
 
 # Set up compliance boundaries for eDiscovery investigations in Office 365
 
+The guidance in this article can be applied when using either Core eDiscovery or Advanced eDiscovery to manage investigations.
+
 Compliance boundaries create logical boundaries within an Office 365 organization that control the user content locations (such as mailboxes, SharePoint sites, and OneDrive accounts) that eDiscovery managers can search. Also, compliance boundaries control who can access eDiscovery cases used to manage the legal, human resources, or other investigations within your organization. The need for compliance boundaries is often necessary for multi-national corporations that have to respect geographical boarders and regulations and for governments, which are often divided into different agencies. In Office 365, compliance boundaries help you meet these requirements when performing content searches and managing investigations with eDiscovery cases.
   
 We use the example in the following illustration to explain how compliance boundaries work.
   
-![Compliance boundaries consist of search permissions filters that control access to agencies and admin role groups that control access to eDiscovery cases](media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
+![Compliance boundaries consist of search permissions filters that control access to agencies and admin role groups that control access to eDiscovery cases](../media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
   
 In this example, Contoso LTD is an Office 365 organization that consists of two subsidiaries, Fourth Coffee and Coho Winery. The business requires that eDiscovery mangers and investigators can only search the Exchange mailboxes, OneDrive accounts, and SharePoint sites in their agency. Also, eDiscovery managers and investigators can only see eDiscovery cases in their agency, and they can only access the cases that they're a member of. Here's how compliance boundaries meet these requirements.
   
@@ -152,29 +154,29 @@ The final step is to create a eDiscovery case in the Security & Compliance Cente
 - When a member of the role group assigned to a case runs a search associated with the case, they will only be able to search the content locations within their agency (which is defined by the search permissions filter that you created in Step 4.)
 
 To create a case and assign members:
-    
-1. Go to the **eDiscovery** page in the Security & Compliance Center and create a case. 
-    
+
+1. Go to the **eDiscovery** or **Advanced eDiscovery** page in the Security & Compliance Center and create a case. 
+
 2. In the list of eDiscovery cases, click the name of the case you created.
-    
-3. In the **Manage this case** flyout page, under **Manage role groups**, click ![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Add**.
-    
-    ![Add a role group as a member of an eDiscovery case](media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
+
+3. In the **Manage this case** flyout page, under **Manage role groups**, click ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Add**.
+
+    ![Add a role group as a member of an eDiscovery case](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
 4. In the list of role groups, select one of the role groups that you created in Step 3, and click **Add**.
-    
+
 5. Click **Save** on the **Manage this case** flyout to save the change. 
 
 ## Compliance boundary limitations
 
 Keep the following limitations in mind when managing eDiscovery cases and investigations that use of compliance boundaries.
   
-- When creating and running a Content Search, you can select content locations that are outside of your agency. However, because of the search permissions filter, content from those locations isn't included in the search results.
-    
+- When creating and running a search, you can select content locations that are outside of your agency. However, because of the search permissions filter, content from those locations isn't included in the search results.
+
 - Compliance boundaries don't apply to holds in eDiscovery cases. That means an eDiscovery manager in one agency can place a user in a different agency on hold. However, the compliance boundary will be enforced if the eDiscovery manager searches the content locations of the user who was placed on hold. That means the eDiscovery manager won't be able search the user's content locations, even though they were able to place the user on hold.
-    
+
     Also, hold statistics will only apply to content locations in the agency.
-    
+
 - Search permissions filters aren't applied to Exchange public folders.
 
 ## Searching and exporting content in Multi-Geo environments

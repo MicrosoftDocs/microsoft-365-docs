@@ -66,7 +66,7 @@ When you access Service assurance for the first time, the first step is to confi
   
 1. After you access Service assurance, select **Settings** and the Region and industry settings page displays as shown in the following screenshot. 
     
-    ![Shows the Protection center settings page.](media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
+    ![Shows the Protection center settings page.](../media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
   
 2. On the **Settings** page, select the down arrow next to **Region** and check the appropriate regions for your organization. 
     
@@ -81,15 +81,15 @@ To review and download content, select an option from the navigation pane:
   
 - **Compliance reports** to view independent audits and assessments of Office 365 and other Microsoft cloud services as shown in the following screen shot. 
     
-    ![Shows the Service assurance page: Service Compliance Reports.](media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
+    ![Shows the Service assurance page: Service Compliance Reports.](../media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
   
 - **Trust documents** to view information about how Microsoft operates Office 365 as shown in the following screen shot. 
     
-    ![Shows the Service assurance page: Trust documents provided by Microsoft](media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
+    ![Shows the Service assurance page: Trust documents provided by Microsoft](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
 - **Audited controls** to view information about how Office 365 controls meet security, compliance, and privacy requirements, as shown in the following screen shot. 
     
-    ![Shows the Service assurance audited controls screen.](media/4baf252b-603d-45e0-af12-32616154df65.png)
+    ![Shows the Service assurance audited controls screen.](../media/4baf252b-603d-45e0-af12-32616154df65.png)
   
 Select the report you want to download, and select **Save** to download it to your computer. For Audited controls, select the report you want and then select **Download**. The table below describes the reports you can find on each Service assurance page. 
   
@@ -111,15 +111,15 @@ For accessing default reports that are generally available across all Microsoft 
   
 1. In the Security & Compliance Center, select **Permissions** in the left pane as shown in the following screenshot. 
     
-    ![Security &amp; Compliance Permissions menu](media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
+    ![Security &amp; Compliance Permissions menu](../media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
   
 2. In the right pane, select **Service Assurance User**, and then select **Edit Role Group**, and under the **Members** section, select **Edit** to add members to the Service Assurance User role as shown in the following screenshot. 
     
-    ![Service Assurance User - Add](media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
+    ![Service Assurance User - Add](../media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
   
 3. In the next dialog box, search for and choose individuals or groups that need to view Service assurance compliance reports and trust resources, then select **Add** for each selection you make and click the **X** in the upper right corner of the pane when you're finished. 
     
-    ![Service Assurance User - Choose user](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
+    ![Service Assurance User - Choose user](../media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   
 4. Every user or group that you added to the Service Assurance User role can now find Service assurance and download reports and other documents in the Security & Compliance Center.
     

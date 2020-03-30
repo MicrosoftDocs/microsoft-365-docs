@@ -22,10 +22,10 @@ description: Use this Test Lab Guide to enable additional Microsoft 365 security
 
 With the instructions in this article, you configure additional Microsoft 365 settings to increase security in your Microsoft 365 Enterprise test environment.
 
-![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 
@@ -51,7 +51,7 @@ Apps that do not support modern authentication cannot have [identity and device 
   - If you are using the simulated enterprise Microsoft 365 test environment, use the [Azure portal](https://portal.azure.com) to connect to the CLIENT1 virtual machine, and then sign in from CLIENT1.
  
 2. On the new **Microsoft 365 admin center** tab, under **Admin centers** in the left navigation pane, click **SharePoint**.
-3. On the new **SharePoint admin center** tab, click **Access control**.
+3. On the new **SharePoint admin center** tab, click **Policies > Access control**.
 4. Click **Apps that don’t support modern authentication**, select **Block access**, and then click **Save**.
 
 

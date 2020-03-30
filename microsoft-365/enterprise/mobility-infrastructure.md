@@ -20,7 +20,7 @@ ms.custom: microsoft-intune
 
 # Phase 5: Mobile device management for Microsoft 365 Enterprise
 
-![Phase 5: Mobile Device Management](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![Phase 5: Mobile Device Management](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *This feature applies to the E3 and E5 versions of Microsoft 365 Enterprise*
 
@@ -80,7 +80,7 @@ Enrollment is a key step when using Intune. [Enroll devices](https://docs.micros
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: iOS and Android device enrollment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: iOS and Android device enrollment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -98,7 +98,7 @@ The [Add apps](https://docs.microsoft.com/intune/apps/apps-add) article lists th
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Device compliance policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Device compliance policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## Step 6: Turn on compliance and conditional access
@@ -155,7 +155,7 @@ Learn how IT experts at Microsoft [manage devices with EMS](https://www.microsof
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [deployed their mobile device management infrastructure](contoso-mdm.md) with Microsoft 365 cloud services.
 
-![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## Next step
 

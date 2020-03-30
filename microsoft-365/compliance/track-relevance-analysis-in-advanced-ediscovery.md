@@ -19,7 +19,7 @@ description: "Learn how to view and interpret the Relevance training status and 
 "
 ---
 
-# Track Relevance analysis in Office 365 Advanced eDiscovery
+# Track Relevance analysis in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -40,7 +40,7 @@ In Advanced eDiscovery, the Relevance Track tab displays the calculated validity
     
     In the example, a successfully completed Assessment for an issue is shown, indicated by the completed color progress indicator and the checkmark. Tagging is underway, but the case is still considered unstable (stability status also shown in a tool-tip). The next step recommendation is "Training". 
     
-    ![Relevance Track training step 1](media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
+    ![Relevance Track training step 1](../media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
     The expanded view displays additional information and options. The displayed current error margin is the error margin of the recall in the current state of assessment, given the existing (already tagged) assessment files.
     
@@ -51,7 +51,7 @@ In Advanced eDiscovery, the Relevance Track tab displays the calculated validity
     
     In **Relevance** \> **Track**, the training progress indicator and tool-tip indicate the estimated number of additional samples needed to reach stability. This estimate provides a guideline for the additional training needed.
     
-    ![Relevance Track training](media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
+    ![Relevance Track training](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
 2. When you're done tagging and if you need to continue training, click **Training**. Another sample set of files is generated from the loaded file set for additional training. You are then returned to the Tag tab to tag and train more files.
     
@@ -96,13 +96,13 @@ If there are inconsistencies in file tagging, it can affect the analysis. The Ad
 
 In the **Relevance \> Track** tab, expand an issue's row, and next to **Detailed results**, click **View**. The Detailed results panes are displayed, as shown and described below.
   
-![Relevance training detailed results](media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
+![Relevance training detailed results](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
 ### Tagging summary
 
  In the example shown below, the **Tagging summary** displays totals for each of Assessment, Training, and Catch-up file tagging processes. 
   
-![Relevance Track tagging summary](media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
+![Relevance Track tagging summary](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
 ### Keywords
 
@@ -116,7 +116,7 @@ The Advanced eDiscovery list of keywords can be used to supplement a list built 
 
 The **Training Progress** pane includes a training progress graph and quality indicator display, as shown in the example below. 
   
-![Relevance Track training progress](media/8a5089f5-a162-4246-ae09-bc1921859860.png)
+![Relevance Track training progress](../media/8a5089f5-a162-4246-ae09-bc1921859860.png)
   
  **Training quality indicator**: Displays the rating of the tagging consistency as follows:
   
@@ -152,7 +152,7 @@ The **Batch calculation results** pane includes the number of files that were sc
 
 The **Training statistics** pane displays statistics and graphs based on results from Advanced eDiscovery Relevance training. 
   
-![Relevance Track training statistics](media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
+![Relevance Track training statistics](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   
 This view shows the following:
   
@@ -168,7 +168,7 @@ This view shows the following:
     
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
   

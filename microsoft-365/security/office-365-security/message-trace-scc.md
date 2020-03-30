@@ -61,11 +61,11 @@ The default value is **2 days**, but you can specify date/time ranges of up to 9
 
 - By default, you select the time range in **Slider** view using a time line. You can only select the day or time settings that are displayed. Trying to select an in-between value will snap the start/end bubble to the nearest displayed setting.
 
-  ![A Slider time range in a new message trace in the Security & Compliance Center](../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
+  ![A Slider time range in a new message trace in the Security & Compliance Center](../../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
   But, you can also switch to **Custom** view where you can specify the **Start date** and **End date** values (including times), and you can also select the **Time zone** for the date/time range. Note that the **Time zone** setting applies to both your query inputs and your query results.
 
-  ![A Custom time range in a new message trace in the Security & Compliance Center](../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
+  ![A Custom time range in a new message trace in the Security & Compliance Center](../../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 
   For 10 days or less, the results are available instantly as a **Summary** report. If you specify a time range that's even slightly greater than 10 days, the results will be delayed as they are only available as a downloadable CSV file ( **Enhanced summary** or **Extended** reports).
 
@@ -141,7 +141,7 @@ The different report types return different levels of information. The informati
 
 After running the message trace, the results will be listed, sorted by descending date/time (most recent first).
 
-![Summary report results for message trace in the Security & Compliance Center](../media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
+![Summary report results for message trace in the Security & Compliance Center](../../media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
 
 The summary report contains the following information:
 
@@ -167,7 +167,7 @@ You can export the results after you've selected one or more rows by clicking **
 
 Related message records are records that shared the same Message ID. Remember, even a single message sent between two people can generate multiple records. The number of records increases when the message is affected by distribution group expansion, forwarding, mail flow rules (also known as transport rules), etc.
 
-After you select a row's check box, you can find related records for the message by clicking the **Find related** button that appears, or by selecting **More options** ![More](../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **Find related records for this message**).
+After you select a row's check box, you can find related records for the message by clicking the **Find related** button that appears, or by selecting **More options** ![More](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **Find related records for this message**).
 
 For more information about the Message ID, see the Message ID section earlier in this topic.
 
@@ -177,9 +177,9 @@ In the summary report output, you can view details about a message by using eith
 
 - Select the row (click anywhere in the row except the check box).
 
-- Select the row's check box and click **More options** ![More](../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **View message details**.
+- Select the row's check box and click **More options** ![More](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **View message details**.
 
-   ![Details after double-clicking a row in the summary report message trace results in the Security & Compliance Center](../media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
+   ![Details after double-clicking a row in the summary report message trace results in the Security & Compliance Center](../../media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
 
 The message trace details contain the following additional information that's not present in the summary report:
 
@@ -337,8 +337,8 @@ A **custom_data** value that starts with `S:SFA` is from the spam filter agent. 
 |`DI=SQ`|The message was quarantined.|
 |`DI=SD`|The message was deleted.|
 |`DI=SJ`|The message was sent to the recipient's Junk Email folder.|
-|`DI=SN`|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).|
-|`DI=SO`|The message was routed through the normal outbound delivery pool.|
+|`DI=SN`|The message was routed through the normal outbound delivery pool.|
+|`DI=SO`|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).|
 |`SFS=[a]|SFS=[b]`|This denotes that spam rules were matched.|
 |`IPV=CAL`|The message was allowed through the spam filters because the IP address was specified in an IP Allow list in the connection filter.|
 |`H=<EHLOstring>`|The HELO or EHLO string of the connecting email server.|

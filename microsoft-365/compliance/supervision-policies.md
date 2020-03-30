@@ -37,7 +37,7 @@ For a quick overview of Supervision policies, see the [Supervision policy video]
 
 To learn more about upcoming Supervision feature improvements and availability, see the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
-Want to try the new Communication compliance experience in Microsoft 365? Check out the new and improved features available in [Communication compliance in Microsoft 365 (preview)](communication-compliance.md).
+Want to try the new Communication compliance experience in Microsoft 365? Check out the new and improved features available in [Communication compliance in Microsoft 365](communication-compliance.md).
 
 ## Transitioning from Supervision in Office 365
 
@@ -46,7 +46,6 @@ Organizations using supervision policies in Office 365 and planning to transitio
 - The supervision solution in Office 365 will be fully replaced by the communication compliance solution in Microsoft 365. For organizations transitioning to communication compliance from supervision policies, we recommend creating new policies in communication compliance that have the same *conditions* as existing supervision policies to enable new investigation and remediation improvements. When transitioning to communication compliance in Microsoft 365, you should plan to export reporting data from supervision in Office 365 if you have internal compliance retention policy requirements.
 - In the interim, organizations can use both solutions side-by-side until fully migrated, but policies used in each solution must have *unique policy names*. Groups and custom keyword dictionaries can be shared between solutions during the transition period.
 - Messages saved in supervision in Office 365 policy matches cannot be moved or shared into communication compliance in Microsoft 365.
-
 
 For retirement information for supervision in Office 365, see the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) for details.
 
@@ -77,7 +76,7 @@ You create supervision policies in the Compliance center. These policies define 
 Before you start using supervision, you must determine who needs their communications reviewed. In the policy, user email addresses identify individuals or groups of people to supervise. Some examples of these groups are Office 365 Groups, Exchange-based distribution lists, and Microsoft Teams channels. You also can exclude specific users or groups from supervision with a supervised group or a list of groups.
 
 >[!IMPORTANT]
->Users monitored by supervision policies must have either a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription.If you don't have an existing Enterprise E5 plan and want to try supervision, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>Users monitored by supervision policies must have a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription, or be included in a Microsoft 365 E5 subscription.If you don't have an existing Enterprise E5 plan and want to try supervision, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### Reviewers
 
@@ -143,7 +142,7 @@ Monitor sent or received email messages in your organization for offensive langu
 >- monitor Microsoft Teams communications in your organization for offensive language
 >- prevent or block offensive language in communications in your organization
 
-Please note that the model does not provide an exhaustive list of offensive language. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update the model in its discretion. While the model may assist your organization in monitoring offensive language, the model is not intended to provide your organization’s sole means of monitoring or addressing such language. Your organization, not Microsoft, remains responsible for all decisions related to monitoring and blocking offensive language.
+Please note that the model does not provide an exhaustive list of offensive language. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update the model in its discretion. While the model may assist your organization in monitoring offensive language, the model is not intended to provide your organization's sole means of monitoring or addressing such language. Your organization, not Microsoft, remains responsible for all decisions related to monitoring and blocking offensive language.
 
 The offensive language model monitors email for sentiment associated with the following types of language:
 

@@ -43,7 +43,7 @@ Here are few definitions to help you get start using Conversation Reconstruction
 
 - **Conversation:** Represents a grouping of one or more messages. Across different applications, conversations may be represented in different ways. In some applications, there is an explicit action that results from replying to an existing message. Conversations are formed explicitly as a result of this user action. For example, here is a screenshot of a channel conversation in Microsoft Teams.
 
-   ![Microsoft Teams Channel Conversation](media/threadedchat.png)
+   ![Microsoft Teams Channel Conversation](../media/threadedchat.png)
 
    In other apps (such as 1xN chat messages in Teams), there is not a formal reply chain and instead messages appear as a "flat river of messages" within a single thread. In these types apps, conversations are inferred from a group of messages that occur within a certain time. This "soft-grouping" of messages (as opposed to a reply chain) represent the "back and forth" conversation about a specific topic of interest. 
 
@@ -67,15 +67,13 @@ After you have reviewed and finalized your search query, you can add the search 
 
 When you add data from conversations to a review set, you can use the conversation retrieval options to expand your search and include contextual messages. After you set the conversation retrieval options, the following things can happen:
 
-  ![Conversation Retrieval](media/messagesandconversations.png)
+  ![Conversation Retrieval](../media/messagesandconversations.png)
   
 1. Using a keyword and date range query, the search returned a hit on *Message 3*. This message was part of a larger conversation, illustrated by *CRC1*. 
   
 2. When you add the data into a review set and enable the conversation retrieval options, Advanced eDiscovery will go back and collect other items in *CRC1*. 
   
 3. After the items have been added to the review set, you can review all the individual messages from *CRC1*. 
-
-
 
 To enable conversation retrieval:
   
@@ -87,7 +85,7 @@ To enable conversation retrieval:
   
 4. After the **Add to review set** job on the **Jobs** tab has finished, you can start reviewing the conversations.
 
-## Step 4: Review conversations in the review set
+## Step 4: Review and export conversations in a review set
 
 After the content has been processed and added to the review set, you can start reviewing the data in the review set. The review capabilities are different depending on whether the content was added to a standard review set or a conversation review set. 
 
@@ -95,13 +93,13 @@ After the content has been processed and added to the review set, you can start 
 
 In a standard review set, messages are processed and displayed as individual items, similar to how they're stored in a mailbox folder. In this workflow, each message is processed as a separate item. As a result, the threaded summary and export options aren't available in a standard review set. 
 
-  ![Standard review set](media/standardrs.PNG)
+  ![Standard review set](../media/standardrs.PNG)
 
 ### Reviewing conversations in a conversation review set
 
 In a conversation review set, individual messages are threaded together and presented as conversations. This lets you review and export contextual conversations. 
 
-  ![Conversation review set](media/ConversationRSOptions.PNG)
+  ![Conversation review set](../media/ConversationRSOptions.PNG)
 
 The following sections describe reviewing and exporting conversations in a conversation review set.
 
@@ -125,12 +123,11 @@ In a conversation review set, you can use the following options to facilitate th
 
 - **Rerun conversation conversion:** When messages are added to a conversation review set, a conversion job is automatically run to create the threaded summary and annotate views. If the Conversation Reconstruction job fails, you can rerun this job by clicking **Action > Create conversation PDFs** in the review set.
 
-
 #### Exporting conversations
 
 In a conversation review set, you can set the following options to export conversations:
 
-![Export](media/export.png)
+![Export](../media/export.png)
 
 a. Metadata options
 
@@ -157,7 +154,7 @@ c. Other options
 
 To learn more about how to review case data in Advanced eDiscovery, see the following articles:
 
-- [View case data](view-documents-in-review-set.md) 
+- [View case data](view-documents-in-review-set.md)
 
 - [Analyze case data](analyzing-data-in-review-set.md)
 

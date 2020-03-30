@@ -1,5 +1,5 @@
 ---
-title: "Using data classification activity explorer"
+title: "Get started with activity explorer (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,11 +18,11 @@ search.appverid:
 description: "Activity explorer rounds out the functionality of the data classification feature by letting you see and filter on the actions users are taking on your labeled content."
 ---
 
-# View activity on your labeled content (preview)
+# Get started with activity explorer (preview)
 
 The data classification overview and content explorer tabs give you visibility into what content has been discovered and labeled, and where that content is. Activity explorer rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content. Activity explorer provides a historical view.
 
-![placeholder screenshot overview activity explorer](media/data-classification-activity-explorer-1.png)
+![placeholder screenshot overview activity explorer](../media/data-classification-activity-explorer-1.png)
 
 You can filter the data by:
 
@@ -67,11 +67,11 @@ The value of understanding what actions are being taken with your sensitive labe
 Once your filters are set, you can:
 
 - hover over a segment of the bar chart to see the number of items that fall into that category
-![activity explorer hover over](media/data-classification-activity-explorer-hover-over-2.png)
+![activity explorer hover over](../media/data-classification-activity-explorer-hover-over-2.png)
 - export the data
 - select any given item from the list and view the details of the action in the fly-out
 
-![activity explorer details fly out](media/data-classification-activity-explorer-fly-out-3.png)
+![activity explorer details fly out](../media/data-classification-activity-explorer-fly-out-3.png)
 
 ## See also
 - [Sensitivity labels](sensitivity-labels.md)

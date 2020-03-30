@@ -19,7 +19,7 @@ description: "Learn how to use the Test tab after Batch calculation in Office 36
 "
 ---
 
-# Test Relevance analysis in Office 365 Advanced eDiscovery
+# Test Relevance analysis in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -42,7 +42,7 @@ This test provides statistics and a comparison between the Review set and the Te
     
 2. In the **Test** tab, click **New test**. The **Create test** dialog is displayed, as shown in the following example. 
     
-    ![Relevance Test the Rest results](media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
+    ![Relevance Test the Rest results](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
 3. In **Test name**, and **Description**, type the name and description.
     
@@ -62,7 +62,7 @@ This test provides statistics and a comparison between the Review set and the Te
     
 11. In the Test tab, you can click **View results** to see the test results. An example is shown in the following figure. 
     
-    ![Test the rest results](media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
+    ![Test the rest results](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
 In the figure above, the **Sample parameters** section of the table contains details about the number of files in the sample tagged by the expert, and the number of relevant files found in that sample. 
   
@@ -108,7 +108,7 @@ The "Test the Slice" test performs testing similar to the "Test the Rest" test, 
     
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
   

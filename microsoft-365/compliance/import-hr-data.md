@@ -30,7 +30,7 @@ You can set up a data connector in the Microsoft 365 compliance center to import
 
 ## Step 1: Create an app in Azure Active Directory
 
-The first step is to create and register a new app in Azure Active Directory (AAD). The app will correspond to the HR connector that you create in Step 3.  Creating this app will allow AAD to authenticate the HR connector when it runs and attempts to access your organization. This app will also be used to authenticate the script that you run in Step 4 to upload your HR data to the Microsoft cloud. During the creation of this AAD app, be sure to save the following information. These values will be used in later steps is this process.
+The first step is to create and register a new app in Azure Active Directory (AAD). The app will correspond to the HR connector that you create in Step 3. Creating this app will allow AAD to authenticate the HR connector when it runs and attempts to access your organization. This app will also be used to authenticate the script that you run in Step 4 to upload your HR data to the Microsoft cloud. During the creation of this AAD app, be sure to save the following information. These values will be used in later steps.
 
 - AAD application ID (also called the *app Id* or *client Id*)
 
@@ -38,7 +38,7 @@ The first step is to create and register a new app in Azure Active Directory (AA
 
 - Tenant Id (also called the *directory Id*)
 
-For step-by-step instructions for creating an app in AAD, see [Creating an AAD Application](https://docs.microsoft.com/azure/kusto/management/access-control/how-to-provision-aad-app)
+For step-by-step instructions for creating an app in AAD, see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## Step 2: Prepare a CSV file with your HR data
 
@@ -81,7 +81,7 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 5. On the **File mapping** page, type the three column header names (also called *parameters* from the CSV file that you created in Step 2 in each of the appropriate boxes. The names are not case-sensitive. As previously explained, the names that you type in these boxes must match the parameter names in your CSV file. For example, the following screenshot shows the parameter names from the example in sample CSV file shown in Step 2.
 
-   ![Column heading names match the ones in the CSV file](media/HRConnectorWizard3.png)
+   ![Column heading names match the ones in the CSV file](../media/HRConnectorWizard3.png)
 
 6. On the **Review** page, review your settings and then click **Finish** to create the connector.
 
@@ -93,7 +93,7 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 8. Click the HR connector that you just created to display the flyout page, which contains properties and other information about the connector. 
 
-   ![Flyout page for new HR connector](media/HRConnectorWizard7.png)
+   ![Flyout page for new HR connector](../media/HRConnectorWizard7.png)
 
    If you haven't already done so, you can copy the values for the **Azure App ID** and **Connector job ID**. You'll need these to run the script in the next step. You can also download the script from the flyout page (or download it using the link in the next step.)
 
@@ -148,19 +148,19 @@ After you create the HR connector and run the script to upload your HR data, you
 
 2. Click the **Connectors** tab and then select the HR connector to display the flyout page, which contains the properties and information about the connector.
 
-   ![HR connector flyout page with properties and status](media/HRConnectorFlyout1.png)
+   ![HR connector flyout page with properties and status](../media/HRConnectorFlyout1.png)
 
 3. Under **Progress**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about each time the script runs and uploads the data from the CSV file to the Microsoft cloud. 
 
-   ![HR connector log file displays number rows from CSV file that were uploaded](media/HRConnectorLogFile.png)
+   ![HR connector log file displays number rows from CSV file that were uploaded](../media/HRConnectorLogFile.png)
 
-   The **RecordsSaved** field indicates the number of rows in the CSV file that uploaded. For example, if the CSV file contains 4 rows, then the value of the **RecordsSaved** fields is 4, if the script successfully uploaded all the rows in the CSV file.
+   The **RecordsSaved** field indicates the number of rows in the CSV file that uploaded. For example, if the CSV file contains four rows, then the value of the **RecordsSaved** fields is 4, if the script successfully uploaded all the rows in the CSV file.
 
 If you've haven't run the script in Step 4, a link to download the script is displayed under **Last import**. You can download the script and then follow the steps in Step 4 to run it.
 
 ## (Optional) Step 6: Schedule the script to run automatically
 
-To make sure that the latest HR data from your organization is available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a recurring basis, such as once a day. This also requires that you update the HR data in the CSV file on a similar (if not the same) schedule so that it contains the latest information about employees who leave your organization. The goal is to upload the most current HR data so that the HR connector can make it available to the insider risk management solution.
+To make sure the latest HR data from your organization is available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a recurring basis, such as once a day. This also requires that you update the HR data in the CSV file on a similar (if not the same) schedule so that it contains the latest information about employees who leave your organization. The goal is to upload the most current HR data so that the HR connector can make it available to the insider risk management solution.
 
 You can user the Task Scheduler app in Windows to automatically run the script every day.
 
@@ -188,7 +188,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 7. Select the **Actions** tab, click **New**, and then do the following things:
 
-   ![Action settings to create a new scheduled task for the HR connector script](media/HRConnectorScheduleTask1.png)
+   ![Action settings to create a new scheduled task for the HR connector script](../media/HRConnectorScheduleTask1.png)
 
    a. In the **Action** dropdown list, make sure that **Start a program** is selected.
 
@@ -204,8 +204,8 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
    The new task is displayed in the Task Scheduler Library.
 
-   ![The new task is displayed in the Task Scheduler Library](media/HRConnectorTaskSchedulerLibrary.png)
+   ![The new task is displayed in the Task Scheduler Library](../media/HRConnectorTaskSchedulerLibrary.png)
 
-   The last time and the next time the script ran is scheduled to run is displayed. You can double-click the task to edit it.
+   The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
 
    You can also verify the last time the script ran on the flyout page of the corresponding HR connector in the compliance center.

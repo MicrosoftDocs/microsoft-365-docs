@@ -1,9 +1,11 @@
 ---
 title: Transition a Microsoft 365 Business CSP subscription 
-description: Find out how you can transition a Microsoft 365 Business CSP subscription from preview to GA. 
+description: Find out how you can transition a Microsoft 365 Business CSP subscription from preview to general availability (GA).
 author: jasongroce
 f1.keywords:
 - NOCSH
+ms.custom:
+- seo-marvel-mar
 ms.author: jasgro
 ms.topic: article 
 ms.prod: microsoft-365-business
@@ -24,33 +26,33 @@ If you have a Microsoft 365 Business Preview CSP subscription, follow this guide
 
     The subscriptions for the company will be listed.
 
-    ![Customer's subscriptions in Partner Center](images/pc_customer_subscriptions_1.png)
+    ![Customer's subscriptions in Partner Center](../../media/pc_customer_subscriptions_1.png)
     
 3. On the company's **Subscriptions** page, select **Add subscription**.
 4. On the **New subscription** page, select **Small business** and then select **Microsoft 365 Business** from the list.
 5. Add the number of licenses and then select **Next: Review** to review the subscription and then select **Submit**.
 
-    ![Review the new subscription to Microsoft 365 Business](images/pc_customer_reviewnewsubscription.png)
+    ![Review the new subscription to Microsoft 365 Business](../../media/pc_customer_reviewnewsubscription.png)
 
     The **License-based subscriptions** will show **Microsoft 365 Business Preview** and **Microsoft 365 Business**. You'll suspend the Preview subscription next.
 
 6. Select **Microsoft 365 Business Preview**.
 7. On the **Microsoft 365 Business Preview** page, select **Suspended** to suspend the Preview subscription.
 
-    ![Suspend the Microsoft 365 Business Preview subscription](images/pc_customer_m365bpreview_suspend.png)
+    ![Suspend the Microsoft 365 Business Preview subscription](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. Select **Submit** to confirm.
 
     On the **Subscriptions** page, confirm that the **Microsoft 365 Business Preview** status shows **Suspended**.
 
-    ![Confirm the Preview subscription status is suspended](images/pc_customer_m365bpreview_suspend_confirm.png)
+    ![Confirm the Preview subscription status is suspended](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. Optionally, you can also validate the license agreement. To do this, follow these steps:
     1. Select **Users and licenses** from the company's **Subscriptions** page.
     2. On the **Users and licenses** page, select a user.
     3. On the user's page, check the **Assign licenses** section and confirm that it shows **Microsoft 365 Business**.
 
-        ![Confirm the Microsoft 365 Business license is assigned to the user](images/pc_customer_userslicenses_m365b_validate.png)
+        ![Confirm the Microsoft 365 Business license is assigned to the user](../../media/pc_customer_userslicenses_m365b_validate.png)
 
 ## Impact to customers and users during and after transition
 

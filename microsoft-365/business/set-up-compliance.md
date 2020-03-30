@@ -16,14 +16,15 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
-description: "Set up compliance features to prevent data loss and label sensitive data."
+description: "Set up compliance features to prevent data loss and help keep your and your customers' sensitive information secure."
 ---
 # Set up compliance features
 
-Your Microsoft 365 Business comes with features to protect your data and devices, and help you keep yours and your customers' sensitive information secure.
+Your Microsoft 365 Business comes with features to protect your data and devices, and help you keep your and your customers' sensitive information secure.
 
 ## Set up DLP features
 
@@ -64,6 +65,6 @@ To manually install the AIP client:
 1. Download **AzinfoProtection_UL.exe** from [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
  
 2. You can verify that the installation worked by viewing a Word document and making sure that the **Sensitivity** option is available on the **Home** tab. 
-<br/>![Protection tab drop-down in a Word document.](media/word-sensitivity.png)
+<br/>![Protection tab drop-down in a Word document.](../media/word-sensitivity.png)
 
 For more information, see [Install the client](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3).

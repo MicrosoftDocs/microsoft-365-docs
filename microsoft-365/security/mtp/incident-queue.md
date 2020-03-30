@@ -26,7 +26,7 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Microsoft Threat Protection applies correlation analytics and aggregates all related alerts and investigations from different products into one incident. Microsoft Threat Protection also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility that Microsoft Threat Protection has across the entire estate and suite of products. By doing so, Microsoft Threat Protection narrates the broader attack story, allowing a security operations analyst to understand and deal with complex threats across the organization.
 
@@ -34,7 +34,7 @@ Microsoft Threat Protection applies correlation analytics and aggregates all rel
 The **Incidents queue** shows a collection of incidents that were flagged from across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
 
 
-![Image of incidents queue](../images/incidents-queue.png) 
+![Image of incidents queue](../../media/incidents-queue.png) 
 
 By default, the queue in the Microsoft 365 security center displays incidents seen in the last 30 days, with the most recent incident showing at the top of the list, helping you see the most recent incidents first.
 

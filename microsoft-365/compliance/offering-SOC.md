@@ -124,6 +124,10 @@ Yes. When you migrate your applications and data to covered Microsoft cloud serv
 
 The [SOC Toolkit for Service Organizations](https://aka.ms/soc-toolkit) is a helpful resource for understanding SOC reporting processes and promoting your organization’s use of them.
 
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [SOC 1 template](https://go.microsoft.com/fwlink/?linkid=2117918) and the [SOC 2 template](https://go.microsoft.com/fwlink/?linkid=2117919) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
+
 ## Resources
 
 - [Better protect your data by using Microsoft cloud services](https://www.microsoft.com/trustcenter/guidance/protect-data)

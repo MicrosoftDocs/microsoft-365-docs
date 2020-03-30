@@ -19,7 +19,7 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 # Phase 2: Identity infrastructure exit criteria
 
-![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2-Identity](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 Make sure your identity infrastructure meets the following required criteria and that you've considered those that are optional.
 
@@ -113,7 +113,7 @@ If needed, [Step 3](identity-secure-user-sign-ins.md#identity-mfa) can help you 
 
 1.	Create a test user account and assign them a license. 
 2.	Configure Azure Multi-Factor Authentication for the test user account with the additional verification method that you are using for actual user accounts, such as sending a text message to your phone. 
-3.	Sign in to the Office 36 portal with the test user account.
+3.	Sign in to the Office 365 portal with the test user account.
 4.	Verify that MFA prompts you for the additional verification information and results in a successful authentication. 
 5.	Delete the test user account.
 
@@ -289,5 +289,5 @@ Your identity infrastructure in the Microsoft 365 cloud uses strong authenticati
 
 |||
 |:-------|:-----|
-|![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [Windows 10 Enterprise](windows10-infrastructure.md). |
+|![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [Windows 10 Enterprise](windows10-infrastructure.md). |
 

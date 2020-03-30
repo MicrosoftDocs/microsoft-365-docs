@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 08/28/2018
 audience: ITPro
 ms.topic: article
@@ -50,15 +50,16 @@ In the Security &amp; Compliance Center, several [reports and insights](reports-
     
 3. In the upper left corner of the report, choose **+ Create schedule**. 
     
-    ![Create schedule](../media/atpfiletypes-createschedule.png)
+    ![Create schedule](../../media/atpfiletypes-createschedule.png)
 
-    (NOTE: Not all reports have the **+ Create schedule** button.)
+    > [!NOTE]
+    > Not all reports have the **+ Create schedule** button.
   
     The **Create schedule** dialog box opens. 
     
 4. Keep the default settings and choose **Create schedule**, or choose **Customize schedule**.
     
-    ![You can use the default settings or customize a report schedule](../media/04fac327-8f73-4711-8319-58c11880fd96.png)
+    ![You can use the default settings or customize a report schedule](../../media/04fac327-8f73-4711-8319-58c11880fd96.png)
   
     If you choose to customize your report schedule, you can specify the report's frequency, a sender's email address, and a recipient's email address. 
     

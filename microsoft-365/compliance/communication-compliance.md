@@ -32,6 +32,8 @@ Communication compliance policies in Microsoft 365 help you overcome many modern
 
 In some organizations, there may be a separation of duties between IT support and the compliance management group. Microsoft 365 supports the separation between communication compliance configuration and the configuration of policies for scanning communications. For example, the IT group for an organization may be responsible for setting up role permissions and groups to support communication compliance policies configured and managed by the organization's compliance team.
 
+For a quick overview of communication compliance, see the [Detect workplace harassment and respond with Communication Compliance in Microsoft 365](https://youtu.be/z33ji7a7Zho) video on the [Microsoft Mechanics channel](https://www.youtube.com/user/OfficeGarageSeries).
+
 ## Scenarios for communication compliance
 
 Communication compliance policies can assist with reviewing messages in your organization in several important compliance areas:
@@ -46,7 +48,7 @@ Communication compliance policies can assist with reviewing messages in your org
 
 - **Regulatory compliance**
 
-    Most organizations must comply with some type of regulatory compliance standards as part of their normal operating procedures. These regulations often require organizations to implement some type of supervisory or oversight process for messaging that is appropriate for their industry. The Financial Industry Regulatory Authority (FINRA) Rule 3110 is a good example of a requirement for organizations to have supervisory procedures in place to scan employee communications and the types of businesses in which it engages. Another example may be a need to review broker-dealer communications in your organization to safeguard against potential money laundering, insider trading, collusion, or bribery activities. Communication compliance policies can help your organization meet these requirements by providing a process to both scan and report on corporate communications.
+    Most organizations must comply with some type of regulatory compliance standards as part of their normal operating procedures. These regulations often require organizations to implement some type of supervisory or oversight process for messaging that is appropriate for their industry. The Financial Industry Regulatory Authority (FINRA) Rule 3110 is a good example of a requirement for organizations to have supervisory procedures in place to scan employee communications and the types of businesses in which it engages. Another example may be a need to review broker-dealer communications in your organization to safeguard against potential money laundering, insider trading, collusion, or bribery activities. Communication compliance policies can help your organization meet these requirements by providing a process to both scan and report on corporate communications. For more information on support for financial organizations, see [Key compliance and security considerations for US banking and capital markets](../solutions/financial-services-secure-collaboration.md).
 
 ## New enhancements
 
@@ -56,7 +58,7 @@ Communication compliance in Microsoft 365 builds on the features of [Supervision
 - Flexible remediation workflows
 - Actionable insights
 
-![Communication compliance home page](media/communication-compliance-home.png)
+![Communication compliance home page](../media/communication-compliance-home.png)
 
 ### Intelligent customizable templates
 
@@ -103,7 +105,7 @@ Communication compliance helps you address common pain points associated with co
 
 Identifying and resolving compliance issues with communication compliance in Microsoft 365 uses the following workflow:
 
-![Communication compliance workflow](media/communication-compliance-workflow.png)
+![Communication compliance workflow](../media/communication-compliance-workflow.png)
 
 ### Configure
 
@@ -148,4 +150,4 @@ Keeping track and managing compliance issues identified by communication complia
 
 ## Ready to get started?
 
-To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for Microsoft 365 (preview)](communication-compliance-configure.md).
+To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for Microsoft 365](communication-compliance-configure.md) or check out the [case study for Contoso](communication-compliance-case-study.md) and how they quickly configured a communication compliance policy to monitor for offensive language in Microsoft Teams and Exchange Online communications.

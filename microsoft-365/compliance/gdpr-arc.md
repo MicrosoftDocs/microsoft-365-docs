@@ -23,9 +23,7 @@ The General Data Protection Regulation (GDPR) introduces new rules for organizat
 
 ## Accountability Readiness Checklists
 
-Accountability readiness checklists are provided to conveniently access information you may need to support the GDPR when using Microsoft products and services. The checklist lists potential obligations you may have under the GDPR, and points you to information that you can use to support your organizations’ compliance. <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1RP] 
+Accountability readiness checklists are provided to conveniently access information you may need to support the GDPR when using Microsoft products and services. The checklist lists potential obligations you may have under the GDPR, and points you to information that you can use to support your organizations’ compliance.
 
 There is a specific guide for four Microsoft product and services families:
 
@@ -61,6 +59,17 @@ The checklists include the four basic categories of considerations for a privacy
     - Planning  
     - Information Security Policies
 
+## Customer agreements
+
+- **Online service terms**: You can find Microsoft contractual commitments with regard to the GDPR in the [Online Services Terms](https://go.microsoft.com/fwlink/p/?linkid=2052208).
+- **Microsoft product terms**: Microsoft extends the [GDPR Terms commitments](https://go.microsoft.com/fwlink/p/?linkid=2052213) to all Volume Licensing customers.
+- **Data protection addendum**: Microsoft services [extends the commitments](https://go.microsoft.com/fwlink/p/?linkid=2052215) to Microsoft Consulting Services customers and others.
+
+## GDPR compliance controls
+
+- **Use Compliance Score**: Review and incorporate controls Microsoft uses to support obligations in the GDPR with [Compliance Score](compliance-score.md).
+- **GDPR control mapping**: Access a [comprehensive mapping](https://go.microsoft.com/fwlink/p/?linkid=2052220) of Microsoft controls to GDPR obligations.
+
 ## Learn more
 
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

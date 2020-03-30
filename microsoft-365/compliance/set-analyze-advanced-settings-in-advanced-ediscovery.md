@@ -28,7 +28,7 @@ Advanced eDiscovery provides default advanced parameters for Analyze module sett
   
 1. In the **Prepare \> Analyze \> Setup** tab, click **Advanced settings** (at the bottom of the page). The following panel is displayed. 
     
-    ![Set Analyze advanced settings](media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
+    ![Set Analyze advanced settings](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
 2. In **Near-duplicates and Email threads parameters**, select values for the following as necessary:
     
@@ -44,7 +44,7 @@ Advanced eDiscovery provides default advanced parameters for Analyze module sett
     
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Understanding document similarity](understand-document-similarity-in-advanced-ediscovery.md)
   

@@ -31,7 +31,7 @@ When an employee leaves your organization (or goes on an extended leave of absen
 But if your organization needs to retain mailbox content for former employees, you can turn the mailbox into an inactive mailbox by placing the mailbox on Litigation Hold or applying an Office 365 retention policy to the mailbox in the Security & Compliance Center and then removing the corresponding Office 365 account. The contents of an inactive mailbox are retained for the duration of the Litigation Hold placed on the mailbox or the retention period of the Office 365 retention policy applied to it before the mailbox was deleted. You can still recover the corresponding user account for a 30-day period. However, after 30 days, the inactive mailbox is retained in Office 365 until the hold or retention policy is removed. 
   
 > [!IMPORTANT]
-> As we continue to invest in different ways to preserve mailbox content, we're announcing the retirement of In-Place Holds in the Exchange admin center. That means you should use Litigation Holds and Office 365 retention policies to create an inactive mailbox. Starting April 1, 2020 you won't be able to create new In-Place Holds in Exchange Online. But you'll still be able to change the hold duration of an In-Place Hold placed on an inactive mailbox. However, starting July 1, 2020, you won't be able to change the hold duration. You'll only be able to delete an inactive mailbox by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will still be preserved until the hold is removed. For more information about the retirement of In-Place Holds, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
+> As we continue to invest in different ways to preserve mailbox content, we're announcing the retirement of In-Place Holds in the Exchange admin center. That means you should use Litigation Holds and Office 365 retention policies to create an inactive mailbox. Starting July 1, 2020 you won't be able to create new In-Place Holds in Exchange Online. But you'll still be able to change the hold duration of an In-Place Hold placed on an inactive mailbox. However, starting October 1, 2020, you won't be able to change the hold duration. You'll only be able to delete an inactive mailbox by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will still be preserved until the hold is removed. For more information about when In-Place Holds will be retired, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
   
 ## Inactive mailboxes and Office 365 retention policies
 
@@ -65,13 +65,21 @@ You might consider creating an Office 365 retention policy specifically for inac
 If a hold that's associated with an eDiscovery case in the Security & Compliance Center is placed on a mailbox and then the mailbox or the user's Office 365 account is deleted, the mailbox becomes an inactive mailbox. However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. Also, you can't create a time-based eDiscovery hold. That's means that content in an inactive mailbox is retained forever or until the hold is removed and the inactive mailbox is deleted. Therefore, we recommend using a Litigation Hold or an Office 365 retention policy for inactive mailboxes.
   
 For more information about eDiscovery cases and holds, see [eDiscovery cases](ediscovery-cases.md).
-  
+
 ## Inactive mailboxes and Office 365 labels
 
 Labels in Office 365 help you classify email data in your organization for governance, and enforce retention rules based on that classification. A label can be applied to an email item either manually by users or automatically by administrators, and an email item can only have single label assigned to it. If a single email item in a user's mailbox has a label assigned to it (and it's configured to retain or retain and then delete the item) and the mailbox or the user's Office 365 account is deleted, the mailbox becomes an inactive mailbox. Similar to eDiscovery case holds, we don't recommend using labels to make a mailbox inactive. Instead, we recommend that you use a Litigation Hold or an Office 365 retention policy. In the case of labels, you might not realize that a label has been applied to an email item and then inadvertently make an inactive mailbox when you delete the user's account. 
   
 For more information about labels, see [Overview of labels in Office 365](labels.md).
   
+## Inactive mailboxes and auto-expanding archives
+
+An inactive mailbox that's configured with an auto-expanding archive can't be recovered or restored. In situations where it's necessary to recover data from an inactive mailbox with an auto-expanding archive, we recommended that you use the content search tool to export the data from the mailbox and then import to another mailbox. For step-by-step instructions to search an inactive mailbox and export the search results, see:
+
+- [Content Search in Office 365](https://docs.microsoft.com/microsoft-365/compliance/content-search)
+
+- [Export content search results](https://docs.microsoft.com/microsoft-365/compliance/export-search-results)
+
 ## Inactive mailboxes and Exchange MRM retention policies
 
 If an Exchange retention policy (the Messaging Records Management, or MRM, feature in Exchange Online) was applied to mailbox when it was made inactive, any deletion policies (which are retention tags configured with a **Delete** retention action) will continue to be processed on the inactive mailbox. That means items that are tagged with a deletion policy will be moved to the Recoverable Items folder when the retention period expires. Those items are purged from the inactive mailbox when the hold duration expires. If a hold duration isn't specified for the inactive mailbox, items in the Recover Items folder will be retained indefinitely. 

@@ -17,16 +17,17 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: "Learn how to use Microsoft 365 Business to remove company data from user devices or Windows PCs. "
+description: "Discover how to use Microsoft 365 Business to remove company data that your users have on their devices or Windows PCs."
 ---
 
 # Remove company data from devices
 
-[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## Remove company data
 
@@ -40,7 +41,7 @@ You can use Microsoft 365 Business to remove company data that your users have o
     
 4. On the next pane, select the device or devices from the **Devices** list. On the device pane that opens, you can choose to reset the device to factory settings or remove company data, depending on the device type. 
     
-    ![On the remove company data pane, select the device from which you want to remove the data.](media/resetorremove.png)
+    ![On the remove company data pane, select the device from which you want to remove the data.](../media/resetorremove.png)
   
 5. On the confirmation pane, choose **Confirm** \> **Close**.
     

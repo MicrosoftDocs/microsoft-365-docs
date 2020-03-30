@@ -48,7 +48,7 @@ The set of specific permissions that determines what a member of a SharePoint gr
   
 Here are the default SharePoint groups and permission levels.
   
-![The default SharePoint groups and permission levels for a SharePoint Online site.](../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![The default SharePoint groups and permission levels for a SharePoint Online site.](../../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
 ## Phase 2: Assign permissions to users with access groups
 
@@ -88,7 +88,7 @@ For isolated SharePoint Online team sites, the recommended group structure looks
   
 Here are the default SharePoint groups configured to use Azure AD-based access groups.
   
-![Using access groups as members of default SharePoint Online site groups.](../media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
+![Using access groups as members of default SharePoint Online site groups.](../../media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
   
 When designing the three access groups, keep the following in mind:
   
@@ -98,7 +98,7 @@ When designing the three access groups, keep the following in mind:
     
 Here is an example of the SharePoint groups and access groups for an isolated site named ProjectX.
   
-![An example of using access groups for a SharePoint Online site named ProjectX.](../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![An example of using access groups for a SharePoint Online site named ProjectX.](../../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
 ## Phase 3: Use nested Azure AD groups
 
@@ -121,7 +121,7 @@ To use nested Azure AD groups:
   
 Here is an example of nested Azure AD groups for the ProjectX member access group.
   
-![An example of using nested access groups for the members access group for the ProjectX site.](../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
+![An example of using nested access groups for the members access group for the ProjectX site.](../../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
 Because all of the user accounts in the Research, Engineering, and Project leads teams are intended to be site members, it is easier to add their Azure AD groups to the ProjectX Members access group.
   

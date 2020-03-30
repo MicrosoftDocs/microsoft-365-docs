@@ -55,7 +55,7 @@ Check for duplicate users or distribution list with the same user ID.
 An eDiscovery or content search may yield the following error:
 >This search completed with (#) errors.  Would you like to retry the search on the failed locations?
 
-![Search-specific location fails error screenshot]( media/edisc-tshoot-specific-location-search-fails.png)
+![Search-specific location fails error screenshot](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### Resolution
 
@@ -132,7 +132,7 @@ When exporting search results from eDiscovery or Content Search in the Security 
 
 When running an eDiscovery search, if the search continually fails with error similar to "Internal server error (500) occurred", you may need rerun the search only on specific mailbox locations.
 
-![Internal server error 500 screenshot](media/edisc-tshoot-error-500.png)
+![Internal server error 500 screenshot](../media/edisc-tshoot-error-500.png)
 
 ### Resolution
 
