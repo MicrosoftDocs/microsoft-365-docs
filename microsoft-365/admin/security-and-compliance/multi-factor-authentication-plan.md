@@ -1,5 +1,5 @@
 ---
-title: "Plan for multi-factor authentication for Office 365 Deployments"
+title: "Plan for multi-factor authentication for Microsoft 365 Deployments"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,7 +19,7 @@ search.appverid:
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn about multi-factor authentication in Office 365, and the steps you need to follow to set it up."
+description: "Learn about multi-factor authentication in Microsoft 365, and the steps you need to follow to set it up."
 ---
 
 # Plan for multi-factor authentication for Microsoft 365 Deployments
@@ -68,7 +68,7 @@ The following figure shows how the updated Office 2013 device apps (on Windows) 
     
 3. The identity provider returns a token to Azure AD when the user is successfully signed in.
     
-4. Azure AD returns a JSON Web Token (JWT) to the Office device app, and the device app is authenticated by using a JWT with Office 365. 
+4. Azure AD returns a JSON Web Token (JWT) to the Office device app, and the device app is authenticated by using a JWT with Microsoft 365. 
     
 This is detailed in the following figure:
   
@@ -126,9 +126,9 @@ To enable MFA, you have to complete the following:
     
     See the [Advanced scenarios with Azure Multi-Factor Authentication and third-party VPN solutions](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) for information on specific identity providers accepted to this program. 
     
-2. [Set up multi-factor authentication for Office 365](set-up-multi-factor-authentication.md)
+2. [Set up multi-factor authentication for Microsoft 365](set-up-multi-factor-authentication.md)
     
-3. Tell individual users how to sign in by MFA: [Sign in to Office 365 with 2-step verification](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx).
+3. Tell individual users how to sign in by MFA: [Sign in to Microsoft 365 with 2-step verification](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx).
     
 > [!IMPORTANT]
 > If you have enabled your users for Azure AD MFA and they have any devices running Office 2013 that are not enabled for Modern Authentication, they will need to use AppPasswords on those devices. More information on AppPasswords and when/where/how they should be used can be found here: [App Passwords with Azure Multi_Factor Authentication](https://go.microsoft.com/fwlink/p/?LinkId=528178). 

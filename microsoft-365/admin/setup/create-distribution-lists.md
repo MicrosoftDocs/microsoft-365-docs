@@ -51,7 +51,7 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
 
 1. Select the app launcher icon and choose **Admin**.
     
-    Can't find the app you're looking for? From the app launcher, select **All apps** to see an alphabetical list of the Office 365 apps available to you. From there, you can search for a specific app. 
+    Can't find the app you're looking for? From the app launcher, select **All apps** to see an alphabetical list of the apps available to you. From there, you can search for a specific app. 
     
 2. Select **Groups** \> **Groups** in the left navigation pane, and then select **Add a group**. 
       
@@ -61,7 +61,7 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
     
 5. Press **Add** to create a group, and then review your group and choose **Close**. 
     
-6. To add users to your distribution group, see [Add a user or contact to an Office 365 distribution group](../email/add-user-or-contact-to-distribution-list.md).
+6. To add users to your distribution group, see [Add a user or contact to a distribution group](../email/add-user-or-contact-to-distribution-list.md).
     
 Check out how to use group in Outlook 2016 and Outlook on the web in the [Use contact groups (formerly distribution lists) in Outlook](https://support.office.com/article/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39.aspx) topic. 
   

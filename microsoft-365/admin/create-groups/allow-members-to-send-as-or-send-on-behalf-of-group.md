@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: "Learn how to allow members to send email as an Office 365 Group or send email on behalf of an Office 365 Group."
+description: "Learn how to allow members to send email as an Office 365 group or send email on behalf of an Office 365 group."
 ---
 
 # Allow members to send as or send on behalf of a Group
@@ -47,7 +47,7 @@ This section explains how to allow users to send email as a group in the [Exchan
     
 4. In the **Send As** section, select the **+** sign to add the users that you want to send as the Group. 
     
-    ![Select the plus sign to add the users that you want to send as the Office 365 Group](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Select the plus sign to add the users that you want to send as the Office 365 group](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Type to search or pick a user from the list. Select **OK** and **Save**.
     
@@ -65,7 +65,7 @@ This section explains how to allow users to send email on behalf of a group in t
     
 4. In the Send on Behalf section, select the **+** sign to add the users that you want to send as the Group. 
     
-    ![Select the plus sign to add the users that you want to send as the Office 365 Group](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Select the plus sign to add the users that you want to send as the Office 365 group](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Type to search or pick a user from the list. Select **OK** and **Save**.
     
@@ -73,7 +73,7 @@ This section explains how to allow users to send email on behalf of a group in t
 
 ## Related articles
 
-[Learn more about Office 365 Groups](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
+[Learn more about Office 365 groups](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
 
 [Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 

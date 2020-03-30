@@ -334,12 +334,12 @@ When you remove the license, all that user's data is held for 30 days. You can [
 
 When you [add](add-users.md) another person to your business, you'll be prompted to buy a license at the same time, with just one step!
     
-For more information about managing user licenses for Office 365 for business, see [Assign licenses to users in Office 365 for business](../manage/assign-licenses-to-users.md), and [Remove licenses from users in Office 365 for business](../manage/remove-licenses-from-users.md).
+For more information about managing user licenses for Microsoft 365 for business, see [Assign licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md), and [Remove licenses from users in Microsoft 365 for business](../manage/remove-licenses-from-users.md).
   
 ## How the deleted employee account affects Skype for Business
 <a name="bkmk_remove"> </a>
 
-When you remove a user's license from Office 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
+When you remove a user's license from Microsoft 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
   
 If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue. 
   
@@ -387,7 +387,7 @@ When you delete a user, the account becomes inactive for approximately 30 days. 
   
 ### Does your organization use Active Directory?
 
-If your organization synchronizes user accounts to Office 365 from a local Active Directory environment, you must delete and restore those user accounts in your local Active Directory service. You can't delete or restore them in Office 365.
+If your organization synchronizes user accounts to Microsoft 365 from a local Active Directory environment, you must delete and restore those user accounts in your local Active Directory service. You can't delete or restore them in Microsoft 365.
   
 For instructions, see this article: [Delete a User Account](https://go.microsoft.com/fwlink/?linkid=841808).
   

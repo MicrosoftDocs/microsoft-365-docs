@@ -36,7 +36,7 @@ If you want to move some of your personal data over to your new business identit
     
 2. Go to [https://onedrive.live.com/](https://onedrive.live.com/) and sign in using the Microsoft account that you use to access your Office 365 for home subscription. 
     
-3. Copy the files that you want to use with Office 365 for business to the local folder that you created in step 1.
+3. Copy the files that you want to use with Microsoft 365 for business to the local folder that you created in step 1.
     
  **Import OneDrive files to Office 365 for business**
 1. Go to [admin.microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) and sign in with your Microsoft 365 Apps for business user name and password. 

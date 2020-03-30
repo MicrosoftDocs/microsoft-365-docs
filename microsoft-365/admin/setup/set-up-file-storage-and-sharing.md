@@ -1,5 +1,5 @@
 ---
-title: "Set up Office 365 file storage and sharing"
+title: "Set up file storage and sharing"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -29,17 +29,17 @@ ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: "Learn how to use OneDrive and a team site for file storage and sharing."
 ---
 
-# Set up Office 365 file storage and sharing
+# Set up file storage and sharing
 
 One of the best ways to set up file storage and sharing for your business is to use OneDrive and a team site together. This is ideal if you have a small business with a few employees.
 
-Watch a short video about where to store files in Office 365.<br><br>
+Watch a short video about where to store files in Microsoft 365.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## Where you can store documents in Office 365
+## Where you can store documents in Microsoft 365
 
 - OneDrive is designed for individual use, with the occasional sharing of files. 
 
@@ -47,7 +47,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 Both OneDrive and team sites provide anywhere access for you and your employees.
   
-![A diagram that shows how Office 365 products can use OneDrive or Team sites](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![A diagram that shows how Microsoft 365 products can use OneDrive or Team sites](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 Here are recommendations for what to store in each location when you use OneDrive and team sites together:
   
@@ -64,13 +64,13 @@ Here are recommendations for what to store in each location when you use OneDriv
 
 ### Team members can store their own files in OneDrive
 
-Each person in your business who has an Office 365 license assigned (and SharePoint Online selected) gets OneDrive cloud storage. They can store business-related files here for access from any device, and they are only available to that user. For example, they might store a draft proposal, their meeting notes, or the script for a demo they're going to deliver.
+Each person in your business who has an Microsoft 365 license assigned (and SharePoint Online selected) gets OneDrive cloud storage. They can store business-related files here for access from any device, and they are only available to that user. For example, they might store a draft proposal, their meeting notes, or the script for a demo they're going to deliver.
   
 Employees can also share OneDrive files and folders. If an employee is away or leaves the company, others can access shared files stored in OneDrive.
   
 Here's how each person on your team can set up OneDrive and share files.
 
-1. Go to the <a href="https://portal.office.com/ " target="_blank">Office 365 Portal</a>, and sign in with your user name and password.
+1. Go to the <a href="https://portal.office.com/ " target="_blank">Microsoft 365 Portal</a>, and sign in with your user name and password.
 
 2. From the App launcher, select **OneDrive**.
 
@@ -102,7 +102,7 @@ Here are the steps to add files:
   
 1. On the home page of your team site, choose **Documents** from the left-hand navigation menu. This will take you to your **Documents library**.
   
-2. While you're still signed in to Office 365, open Windows **File Explorer** from your taskbar or other location. Go to the files you want to upload to your team site.
+2. While you're still signed in to Microsoft 365, open Windows **File Explorer** from your taskbar or other location. Go to the files you want to upload to your team site.
 
 3. Select the files you want to upload to your team site, and then drag them to the **Document library**.
   
@@ -161,7 +161,7 @@ Here are a few tips for getting the most from OneDrive or your SharePoint team s
 
 When you store a file in OneDrive it's only accessible by you, unless you share it with others. When you share files, you can choose to create a link that can be forwarded, or to share with only specific people. You can also create separate folders in OneDrive for different purposes such as public, personal, or for individual projects. Each folder can be shared with a different person or group, or nobody else at all.
   
-For more information on sharing, also see [Share files and folders with Office 365](https://support.office.com/article/72f26d6c-bf9e-432c-8b96-e3c2437f5b65.aspx).
+For more information on sharing, also see [Share files and folders with Microsoft 365](https://support.office.com/article/72f26d6c-bf9e-432c-8b96-e3c2437f5b65.aspx).
   
 ### Track how much space you have left
 
@@ -173,7 +173,7 @@ While you can upload almost all types of files, some file names and characters i
   
 ### Enable or disable third-party storage services
 
-You can enable third-party storage for your users in Office 365 so they can store and share documents using services like Dropbox in addition to OneDrive and team sites. This can be a great way to provide services that your users may already be using or prefer to use for business projects. If you don't want people in your organization using Office to open files in a third-party service, follow these steps to turn it off.
+You can enable third-party storage for your users in Microsoft 365 so they can store and share documents using services like Dropbox in addition to OneDrive and team sites. This can be a great way to provide services that your users may already be using or prefer to use for business projects. If you don't want people in your organization using Office to open files in a third-party service, follow these steps to turn it off.
   
 > [!IMPORTANT]
 > Third-party storage is enabled by default so you need to perform these steps right away if you don't want it available to your users.
@@ -192,8 +192,8 @@ You can enable third-party storage for your users in Office 365 so they can stor
 
 - **Set up Office apps on your tablets and phones.** You need to do this so you can **edit** files that are stored in OneDrive and on team sites from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files but not edit them.
 
-  - [Install and set up Office on an Android with Office 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [Install and set up Office on an Android with Microsoft 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
 
-  - [Install and set up Office on an iPhone or iPad with Office 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [Install and set up Office on an iPhone or iPad with Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
 
-  - [Set up Office on Windows Phone with Office 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Set up Office on Windows Phone with Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)

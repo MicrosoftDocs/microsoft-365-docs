@@ -38,21 +38,21 @@ To set up your account, go to the [admin center](https://go.microsoft.com/fwlink
 
 The setup wizard guides you through the following steps:
 
-1. Install the Office 365 apps on your computer.
+1. Install the Microsoft 365 apps on your computer.
 
 2. Choose and verify your domain, such as contoso.com.
 
-3. Add new users and assign licenses to them so that they can download and install Office 365 apps.
+3. Add new users and assign licenses to them so that they can download and install Microsoft 365 apps.
 
 4. Connect your domain.
 
 ## Use the Setup page to complete and manage your configuration
 
-To access the **Setup** page in the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), select **Setup** in the navigation pane. Based on products you've purchased, features you've set up, and your admin role, tasks and related information from across Office 365 are surfaced here.
+To access the **Setup** page in the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), select **Setup** in the navigation pane. Based on products you've purchased, features you've set up, and your admin role, tasks and related information from across Microsoft 365 are surfaced here.
 
 You'll see the complete list of setup tasks arranged in logical categories, including those that you completed in the setup wizard.
 
-![Office 365 for Business Setup page](../../media/o365b-setup-page.png)
+![Microsoft 365 for business Setup page](../../media/o365b-setup-page.png)
 
 Choose **View** for any task to get at-a-glance information, such as task description, user impact, prerequisites, effort to implement, and security and adoption statistics to help you understand consequences and impact before proceeding.
 

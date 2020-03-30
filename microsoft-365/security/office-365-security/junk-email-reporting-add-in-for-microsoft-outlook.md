@@ -32,7 +32,7 @@ This topic explains how to install and use the Junk Email Reporting add-in.
 - The Junk Email Reporting add-in works with the following versions of Outlook:
 
   - Outlook 2013 or later
-  - Outlook included with Office 365 ProPlus
+  - Outlook included with Microsoft 365 Apps for enterprise
 
 - For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft in Office 365](report-junk-email-messages-to-microsoft.md).
 

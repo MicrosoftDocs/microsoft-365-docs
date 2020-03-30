@@ -126,7 +126,7 @@ When the tool finishes running, it produces an output file in comma-separated (.
   
 ## User and group assignments
 
-The Centralized Deployment feature currently supports the majority of groups supported by Azure Active Directory, including Office 365 Groups, distribution lists, and security groups.
+The Centralized Deployment feature currently supports the majority of groups supported by Azure Active Directory, including Office 365 groups, distribution lists, and security groups.
   
 > [!NOTE]
 > Non-mail enabled security groups are not currently supported. 
