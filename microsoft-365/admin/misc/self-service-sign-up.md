@@ -32,13 +32,13 @@ We're listening to your feedback and have made it easier for users in your organ
 The following example describes how self-sign up works for a school. The same process works for any organization that has self-service programs enabled in their tenant.
   
 1. Students and faculty members have school email addresses that indicate they are associated with your institution. For example, the email address jakob@uw.edu may indicate a student from the University of Washington.
-    
+
 2. Students and faculty go to [our web site](https://go.microsoft.com/fwlink/p/?LinkId=536628), and use their email address to sign up for the services that your organization offers, such Office 365 ProPlus. They can also sign up for other free services that we offer.
-    
-3. We validate their email address, and then they can get started using Office 365, Power BI, or other services right away.
-    
-4. As the business admin, you will see who has signed up for a subscription by viewing the **Subscriptions** page in the admin center. This way you can see when there are new or unrecognized licenses for services in your tenant. 
-    
+
+3. We validate their email address, and then they can start using Office 365, Power BI, or other services right away.
+
+4. As the business admin, you see who has signed up for a subscription by viewing the **Products & services** page in the admin center. This way you can see when there are new or unrecognized licenses for services in your tenant. To control whether users can sign up for self-service sign-up subscriptions, use the [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell cmdlet with the **AllowAdHocSubscriptions** parameter. For more information, see [How do I control self-service settings?](https://docs.microsoft.com/en-us/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+
 ## Available self-service programs
 
 Following are the currently available self-service programs. This list will be updated as new programs are added.
@@ -61,4 +61,3 @@ Following are the currently available self-service programs. This list will be u
 |**Minecraft Education Edition** <br/> |By using Minecraft as a platform for learning, educators can motivate and inspire every student to achieve more, and ignite a passion for learning. Join a community of educators learning how to use Minecraft to unlock student potential.  <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream** <br/> |Upload and share videos across your organization to improve communication, participation, and learning.  <br/> |[Sign up &amp; Day 0 experience](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Power Virtual Agents** <br/> |Power Virtual Agents empowers teams to easily create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers. Power Virtual Agents addresses many of the major issues with bot building in the industry today. It eliminates the gap between the subject matter experts and the development teams building the bots, and the long latency between teams recognizing an issue and updating the bot to address it.  <br/> |[Licensing and access details](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[Sign up for Power Virtual Agents](https://aka.ms/TryPVA) <br/> |
-
