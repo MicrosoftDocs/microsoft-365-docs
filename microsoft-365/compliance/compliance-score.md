@@ -22,7 +22,7 @@ description: "Microsoft Compliance Score helps organizations simplify and automa
 
 **In this article:** Read this article to understand what Compliance Score is and how to set it up for your organization.
 
-**Learn about updates:** Go to the [Compliance Score release notes](compliance-score-release-notes.md) to see what's new and known issues with the preview version of Compliance Score.
+**Learn about updates:** We published several updates in the April 2020 release. Visit the [Compliance Score release notes](compliance-score-release-notes.md) to see what's new and known issues with the preview version of Compliance Score.
 
 ## What is Compliance Score
 
@@ -95,7 +95,7 @@ Assessments include several components:
 > [!NOTE]
 > Compliance Score displays your assessments and how they factor into your overall score. However, during public preview you will be directed to Compliance Manager to manage your assessments.
 
-View [detailed instructions for managing assessments](working-with-compliance-manager.md#assessments), which is done in Compliance Manager.
+View [detailed instructions for managing assessments](working-with-compliance-manager.md#assessments), which occurs in Compliance Manager.
 
 ### Templates
 
@@ -121,7 +121,7 @@ The pre-configured templates for Compliance Score are:
 16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
 17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
-View [detailed instructions for creating templates](working-with-compliance-manager.md#templates), which is done in Compliance Manager.
+View [detailed instructions for creating templates](working-with-compliance-manager.md#templates), which occurs in Compliance Manager.
 
 ### Groups
 
