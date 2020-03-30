@@ -16,6 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 description: "Install and use the Azure Storage Explorer to download documents that were exported from evidence in a data investigation."
+ms.custom: seo-marvel-mar2020
 
 ---
 

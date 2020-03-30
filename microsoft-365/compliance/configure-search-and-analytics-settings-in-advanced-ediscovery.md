@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
+ms.custom: seo-marvel-mar2020
 description: "Configure Advanced eDiscovery settings that apply to all review set in a case. This includes settings for analytics and OCR."
 ---
 
