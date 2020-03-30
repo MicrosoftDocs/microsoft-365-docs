@@ -15,6 +15,7 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- remotework
 search.appverid:
 - MET150
 - MOE150
