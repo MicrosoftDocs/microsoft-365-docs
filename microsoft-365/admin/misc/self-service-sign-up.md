@@ -37,7 +37,7 @@ The following example describes how self-sign up works for a school. The same pr
 
 3. We validate their email address, and then they can start using Office 365, Power BI, or other services right away.
 
-4. As the business admin, you see who has signed up for a subscription by viewing the **Products & services** page in the admin center. This way you can see when there are new or unrecognized licenses for services in your tenant. To control whether users can sign up for self-service sign-up subscriptions, use the [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell cmdlet with the **AllowAdHocSubscriptions** parameter. For more information, see [How do I control self-service settings?](https://docs.microsoft.com/en-us/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+4. As the business admin, you see who has signed up for a subscription by viewing the **Products & services** page in the admin center. This way you can see when there are new or unrecognized licenses for services in your tenant. To control whether users can sign up for self-service subscriptions, use the [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell cmdlet with the **AllowAdHocSubscriptions** parameter. For more information, see [How do I control self-service settings?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
 
 ## Available self-service programs
 
