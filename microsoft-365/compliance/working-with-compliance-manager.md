@@ -19,7 +19,7 @@ description: "Microsoft Compliance Manager is a free workflow-based risk assessm
 # Work with Microsoft Compliance Manager (Preview)
 
 > [!IMPORTANT]
-> Microsoft Compliance Manager is a dashboard and management tool that provides a summary of your data protection and compliance stature and recommendations to improve data protection and compliance. The customer actions provided in Compliance Manager are recommendations; it is up to your organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance.
+> Microsoft Compliance Manager is a dashboard and management tool that provides a summary of your data protection and compliance stature and recommendations to improve data protection and compliance. The customer actions provided in Compliance Manager are recommendations. It is up to your organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance.
 
 ## Access Compliance Manager
 
@@ -102,9 +102,9 @@ You can group Assessments in a way that is logical to you, such as by year, stan
   - Office 365 + ISO 27018:2014
 
 > [!NOTE]
-> We recommend determining a grouping strategy for your organization *before* adding new Assessments. By default, a group named "Default Group" is available for your initial Assessments.
+> We recommend determining a grouping strategy for your organization *before* adding new Assessments.
 
-To get you started, a Default group is set up for you that contains the Data Protection Baseline. This baseline is a set of controls that includes common industry regulations and standards ([learn more](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
+To get you started, a **Default** group is set up for you that contains the Data Protection Baseline. This baseline is a set of controls that includes common industry regulations and standards ([learn more](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
 
 ### How to create a group
 
@@ -298,7 +298,7 @@ Selecting the alert icon reveals a flyout pane explaining the update and prompti
 
 ![Compliance Score - versioning flyout](../media/compliance-score-assessment-version-accept.png "Assessment update confirmation pane")
 
-We strongly recommend that you accept all updates when you receive notifications.
+We strongly recommend accepting all updates when you receive update notifications.
 
 ### Export an Assessment
 
@@ -408,20 +408,20 @@ There are three ways to create and use a Template:
 2. Customize a pre-configured Template with your own actions and controls through the extension process.
 3. Create your own Template and import it into Compliance Manager.
 
-#### 1. Use a Microsoft pre-configured Template
+#### Use a Microsoft pre-configured Template
 
 The pre-configured templates are available on your **Templates** dashboard. View the current [list of templates](compliance-manager-overview.md#templates), which is updated each time a new template is available.
 
-#### 2. Customize a Template through the extension process
+#### Customize a Template through the extension process
 
 1. Open the **Templates** dashboard and select **+ Add Template**.
 2. On the Template flyout pane, select the **Create extension from global template** checkbox.
 3. Select the template you want to extend from the drop-down menu.
 4. If you have not already formatted your template data in Excel, select the link in the flyout pane to download an Excel file. Fill out the spreadsheet according to the [Import Template data with Excel](#import-template-data-with-excel) instructions below and save it to your local drive.
 5. Import your customized template data by selecting **Browse** to upload your Excel file.
-6. Select **Add to Dashboard**. You will then see your new template added to your Templates dashboard.
+6. Select **Add to Dashboard**. You will then see your new template added to your **Templates** dashboard.
 
-#### 3. Create your own Template and import it into Compliance Manager
+#### Create your own Template and import it into Compliance Manager
 
 1. Open the **Templates** dashboard and select **+ Add Template**.
 2. On the Template flyout pane, select **Create a new template**.
@@ -446,7 +446,7 @@ Your spreadsheet **must include the tabs in this order**, otherwise your data wo
 
 ##### Template tab
 
-The Templates tab is required. The information in this tab provides metadata about the template. There are four required columns, which are listed and explained below. The columns must retain the order on the Excel sheet, as listed below. You can add your own columns **after** the four columns to provide additional data.
+The **Template** tab is required. The information in this tab provides metadata about the template. There are four required columns. The columns must retain the order on the Excel sheet as listed below. You can add your own columns **after** the four columns to provide additional data for your Template.
 
 - **title**: This is the title for your template, which must be unique. It can't share a name with another template you have in Compliance Manager, whether it's a template you already created, or a pre-configured template provided by Microsoft.
 
@@ -457,7 +457,7 @@ The Templates tab is required. The information in this tab provides metadata abo
 - **inScopeServices**: These are the services within the product that this assessment addresses (for example, if you listed Office 365 as the product, Microsoft Teams could be an in-scope service). You can list multiple services separated by two semi-colons.
 
 > [!NOTE]
-> **Regarding product and certification**: The data you insert in the **product** and **certification** cells cannot be edited after you import the spreadsheet to create or customize a template. Also, a group cannot contain two assessments that have the same **product/certification** combination. You can have multiple templates that have the same product/certification combination.
+> Regarding product and certification: The data you insert in the **product** and **certification** cells cannot be edited after you import the spreadsheet to create or customize a template. Also, a group cannot contain two assessments that have the same **product/certification** combination. You can have multiple templates that have the same product/certification combination.
 
 ##### ControlFamily tab
 
@@ -471,11 +471,11 @@ The **ControlFamily** tab is required.  The required columns in this tab, which 
 
 - **controlDescription**: Provide a description of the control.
 
-- **controlActionTitle**: This is the title of an action that you want to relate to this control. You can add multiple actions by separating by two semi-colons. Every control you list must include at least one action, and the action must exist (this means, you can list an action that you list on the Actions tab of the same spreadsheet, an action that exists in a different template, or an action created by Microsoft). Different controls can reference the same action.
+- **controlActionTitle**: This is the title of an action that you want to relate to this control. You can add multiple actions by separating by two semi-colons with no space in between. Every control you list must include at least one action, and the action must exist (this means, you can list an action that you list on the **Actions** tab of the same spreadsheet, an action that exists in a different template, or an action created by Microsoft). Different controls can reference the same action.
 
 ##### Actions tab
 
-The Actions tab is required.  It designates actions of your organization, not the actions of Microsoft, which already exist in Compliance Manager. The required columns for this tab, which must follow the order provided in the sample spreadsheet, are:
+The **Actions** tab is required.  It designates actions of your organization and not the actions of Microsoft, which already exist in Compliance Manager. The required columns for this tab, which must follow the order provided in the sample spreadsheet, are:
 
 - **actionTitle**: This is the title for your action and is a required field. The title you provide must be unique. **Important**: if you reference an action you own that already exists (such as in another template) and you modify any of its elements in the subsequent columns, those changes will propagate to the same action in other templates.
 
