@@ -17,7 +17,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn about Office 365 Groups."
+description: "Learn about Office 365 groups."
 ---
 
 # Overview of Office 365 groups for administrators
@@ -53,11 +53,11 @@ As an administrator, you can:
 - [Manage guest access to groups](manage-guest-access-in-groups.md)
 - [Recover a deleted group](restore-deleted-group.md) (within 30 days of deletion)
 
-If you prefer a more automated way to manage the lifecycle of your Office 365 groups, you can use expiration policies to expire groups at a specific time interval. The group's owners will get an email 30, 15 and 1 day before the group expiration that allows them to easily renew the group if it's still needed. See: [Office 365 Group Expiration Policy](office-365-groups-expiration-policy.md).
+If you prefer a more automated way to manage the lifecycle of your Office 365 groups, you can use expiration policies to expire groups at a specific time interval. The group's owners will get an email 30, 15 and 1 day before the group expiration that allows them to easily renew the group if it's still needed. See: [Office 365 group Expiration Policy](office-365-groups-expiration-policy.md).
 
 You can administer your groups from the Microsoft 365 admin center or [by using PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell).
 
-If you have a lot of users, such as in a large corporation or enterprise, you may have many users who create groups for various purposes. We highly recommend that you review [Plan for governance in Office 365 Groups](plan-for-groups-governance.md) for best practices.
+If you have a lot of users, such as in a large corporation or enterprise, you may have many users who create groups for various purposes. We highly recommend that you review [Plan for governance in Office 365 groups](plan-for-groups-governance.md) for best practices.
 
 ## Group limits
 
@@ -73,7 +73,7 @@ The following limits apply to Office 365 groups:
 |File storage|1 Terabyte + 10 GB per subscribed user + any additional storage purchased. You can purchase an unlimited amount of additional storage.|
 |Group Mailbox size|50 GB|
 
-The default maximum number of Office 365 groups that an Office 365 organization can have is 500,000, but can be increased by request. For more information on Office 365 groups limits, see [Office 365 Groups - Admin help](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx).
+The default maximum number of Office 365 groups that an Office 365 organization can have is 500,000, but can be increased by request. For more information on Office 365 groups limits, see [Office 365 groups - Admin help](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx).
 
 Managing your Office 365 groups is more effective when you have actionable information about groups usage. The Microsoft 365 admin center has a reporting tool that can let you see things such as storage use, how many active groups you have and even how your users are using the groups. See: [Office 365 Reports in the admin center](../activity-reports/office-365-groups.md) for more information.
 
@@ -94,10 +94,10 @@ Office 365 groups work with Azure Active Directory (AAD). The groups features yo
 
 ## Related articles
 
-[Learn about Office 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Learn about Office 365 groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[Upgrade distribution lists to Office 365 Groups](../manage/upgrade-distribution-lists.md)
+[Upgrade distribution lists to Office 365 groups](../manage/upgrade-distribution-lists.md)
 
-[Manage Office 365 Groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Manage Office 365 groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)

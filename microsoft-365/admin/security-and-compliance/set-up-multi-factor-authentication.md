@@ -29,7 +29,7 @@ monikerRange: 'o365-worldwide'
 > [!IMPORTANT]
 > If you purchased your subscription or trial after October 21, 2019, and you're unexpectedly prompted for MFA, [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) have been automatically enabled for your subscription.
 
-Every new Microsoft 365 subscription will automatically have security defaults turned on. This means that every user will have to set up multi-factor authentication (MFA) and install the Authenticator app on their mobile device. For more information, see [Set up 2-step verification for Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
+Every new Microsoft 365 subscription will automatically have security defaults turned on. This means that every user will have to set up multi-factor authentication (MFA) and install the Authenticator app on their mobile device. For more information, see [Set up 2-step verification for Microsoft 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
 
 The following nine administrator roles will be required to perform additional authentication every time they sign in:
 - Global administrator
@@ -92,10 +92,10 @@ All Office 2016 client applications support MFA through the use of the Active Di
 
 5. In the Pop-up window, Click on **Enable Multi-Factor Authentication**.
 
-After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
+After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
     
 > [!TIP]
-> To explain to your users how to set up the Authenticator app, please visit [Use Microsoft Authenticator with office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411?ui=en-US&rs=en-US&ad=US#ID0EAADAAA=_Step_1).
+> To explain to your users how to set up the Authenticator app, please visit [Use Microsoft Authenticator with Microsoft 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411?ui=en-US&rs=en-US&ad=US#ID0EAADAAA=_Step_1).
 
 
 > [!IMPORTANT]

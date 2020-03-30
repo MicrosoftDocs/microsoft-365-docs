@@ -44,7 +44,7 @@ The setup wizard walks you through installing the Microsoft 365 apps on your com
 > [!NOTE]
 > If you need to [Assign admin roles in Microsoft 365 for business](../add-users/assign-admin-roles.md) to the users you add in the wizard, you can do that later on the **Users** page. 
   
-If you don't complete the setup wizard, you can complete setup tasks at any time from [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) > **Setup**. From here you can migrate email and contacts from another email service, change the domain of your admin account, manage your billing information, add or remove users, reset passwords, and do other business functions. For more information about the differences between the setup wizard and the **Setup** page, see [Differences between the Office 365 setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
+If you don't complete the setup wizard, you can complete setup tasks at any time from [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) > **Setup**. From here you can migrate email and contacts from another email service, change the domain of your admin account, manage your billing information, add or remove users, reset passwords, and do other business functions. For more information about the differences between the setup wizard and the **Setup** page, see [Differences between the Microsoft 365 setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
 
 If you get stuck at any point, call us. [We're here to help!](../contact-support-for-business-products.md)
   

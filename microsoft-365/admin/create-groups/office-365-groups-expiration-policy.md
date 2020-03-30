@@ -17,7 +17,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn about Office 365 Groups expiration policies."
+description: "Learn about Office 365 groups expiration policies."
 ---
 
 # Office 365 group expiration policy

@@ -1,5 +1,5 @@
 ---
-title: "Choose the domain to use when creating Office 365 Groups"
+title: "Choose the domain to use when creating Office 365 groups"
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -21,7 +21,7 @@ ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: "Learn to choose the domain to use when creating Office 365 groups by configuring email address policies using PowerShell. "
 ---
 
-# Choose the domain to use when creating Office 365 Groups
+# Choose the domain to use when creating Office 365 groups
 
  Some organizations use separate email domains to segment different parts of their businesses. You can specify which domain should be used when your users create Office 365 groups.
   

@@ -1,5 +1,5 @@
 ---
-title: "Manage guest access in Office 365 Groups"
+title: "Manage guest access in Office 365 groups"
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,10 +17,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
-description: "Learn how to add guests to an Office 365 Group, view guest users, and use PowerShell to control guest access."
+description: "Learn how to add guests to an Office 365 group, view guest users, and use PowerShell to control guest access."
 ---
 
-# Manage guest access in Office 365 Groups
+# Manage guest access in Office 365 groups
 
 By default, guest access for Office 365 groups is turned on for your organization. Admins can control whether to allow guest access to groups for their whole organization or for individual groups.
 

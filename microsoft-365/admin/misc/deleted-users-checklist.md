@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
-description: "Follow this checklist while deleting a user's Office 365 account."
+description: "Follow this checklist while deleting a user's Microsoft 365 account."
 ---
 
 # Quick help: Deleted users checklist
 
 So, you've decided to delete a user from your organization. For example, you can delete a user once that person leaves your organization. There are a few things you should do before and after you delete that user. This quick checklist helps you with the steps.
   
-## Remove the Office 365 license from the user
+## Remove the Microsoft 365 license from the user
 
 You can remove a license from a user by searching for the user on the home page, or from the **Active users** page, and then selecting them. On the **Licenses and Apps** tab, clear the check box for the license you want to remove from the user. [Read full article](../manage/remove-licenses-from-users.md).
   
@@ -44,7 +44,7 @@ You can delete the user by searching for the user on the home page, or from the 
   
 ## What to do with the unassigned license
 
-If you have a new employee or person that's joining your organization, you can assign them this license so they can use Office 365. You can search for the user on the home page, or from the **Active users** page, and then select them. On the **Licenses and Apps** tab, select the check box for the license you want to add to the new user. [Read full article](../manage/assign-licenses-to-users.md).
+If you have a new employee or person that's joining your organization, you can assign them this license so they can use Microsoft 365. You can search for the user on the home page, or from the **Active users** page, and then select them. On the **Licenses and Apps** tab, select the check box for the license you want to add to the new user. [Read full article](../manage/assign-licenses-to-users.md).
   
 ## Remove license so you don't have to pay for it
 

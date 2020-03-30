@@ -194,7 +194,7 @@ Learn about resources available for admins.
                     </div>
                     <div class="cardText">
                         <h3>For the Enterprise</h3>
-                        <p><a href="https://docs.microsoft.com/Office365/Enterprise/">Guidance for IT Professionals who are deploying, configuring, and managing Office 365 in enterprise organizations.</a></p>
+                        <p><a href="https://docs.microsoft.com/Office365/Enterprise/">Guidance for IT Professionals who are deploying, configuring, and managing Microsoft 365 in enterprise organizations.</a></p>
                     </div>
                 </div>
             </div>
