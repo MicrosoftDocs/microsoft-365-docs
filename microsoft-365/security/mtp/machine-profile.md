@@ -16,7 +16,7 @@ search.appverid: met150
 
 # Machine profile page
 
-The Microsoft 365 security portal provides you with Machine profile pages, so you can assess the health and status of devices on your network and in the cloud. The page displays a wealth of information, gathered from the [Microsoft Defender Advanced Threat Protect](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (Microsoft Defender ATP) platform, and/or from the cloud-based [Azure Advanced Threat Protection](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp) (Azure ATP) platform.
+The Microsoft 365 security portal provides you with Machine profile pages, so you can assess the health and status of devices on your network and in the cloud. The page displays a wealth of information, gathered from the [Microsoft Defender Advanced Threat Protect](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (Microsoft Defender ATP) platform, and/or from the cloud-based [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) platform.
 
 > [!NOTE]
 > Devices that are enrolled in both MDATP and ITP will display information from both.
