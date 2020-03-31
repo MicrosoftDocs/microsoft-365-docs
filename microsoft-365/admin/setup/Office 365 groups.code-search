@@ -1,0 +1,435 @@
+# Query: Office 365 groups
+
+317 results - 75 files
+
+microsoft-365\admin\TOC.yml:
+  240:         - name: Plan for governance in Office 365 Groups
+
+microsoft-365\admin\whats-new-in-preview.md:
+  60: - **Restore deleted Office 365 groups**: You don't have to go to the Exchange admin center anymore to restore deleted Office 365 groups. Go to **Microsoft 365 admin center** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. It'll restore the group back to the **Groups** list and restore the group's email, conversations, notebook, files, and calendar.
+
+microsoft-365\admin\activity-reports\activity-reports.md:
+  94: - [Office 365 Groups](office-365-groups.md)
+
+microsoft-365\admin\add-users\about-admin-roles.md:
+  71: |Exchange admin     |   Assign the Exchange admin role to users who need to view and manage your user's email mailboxes, Office 365 Groups, and Exchange Online. <br><br> Exchange admins can also:<br> - Recover deleted items in a user's mailbox <br> - Set up "Send As" and "Send on behalf" delegates <br>  |
+  74: eed to manage all groups settings across admin centers, including the Microsoft 365 admin center and Azure Active Directory portal. <br><br> Groups admins can:<br> - Create, edit, delete, and restore Office 365 groups <br> - Create and update group creation, expiration, and naming policies <br> - Create, edit, delete, and restore Azure Active Directory security groups| 
+  125: |SharePoint admin     |    Full access to SharePoint Online, manages Office 365 Groups, manages service requests, and monitors service health.     |
+  127: |Teams admin     |    Full access to Teams & Skype admin center, manages Office 365 Groups and service requests, and monitors service health.     |
+
+microsoft-365\admin\add-users\about-exchange-online-admin-role.md:
+  45: - Manage Office 365 Groups
+
+microsoft-365\admin\add-users\admin-roles-page.md:
+  53: Assign the Exchange admin role to users who need to view and manage your user's email mailboxes, Office 365 Groups and Exchange Online. They can also open and manage service requests to Microsoft support. [Learn more](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
+  73: r. Users with the SharePoint admin role can create and manage site collections, designate site collection administrators and manage user profiles. Users with the SharePoint admin role can also manage Office 365 groups and open service requests through Microsoft support. [Learn more](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
+  77: Assign the Teams admin role to users who you want to access and manage the Teams & Skype admin center. Users with the Teams admin role can also manage Office 365 groups and open service requests through Microsoft support. [Learn more](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
+
+microsoft-365\admin\create-groups\add-or-remove-members-from-groups.md:
+  2: title: "Add or remove members from Office 365 Groups"
+  25: # Add or remove members from Office 365 Groups using the admin center
+  278: - [Upgrade distribution lists to Office 365 groups in Outlook](../manage/upgrade-distribution-lists.md)
+  282: [Manage guest access in Office 365 Groups](manage-guest-access-in-groups.md)    
+  284: - [Manage Office 365 Groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540): this article introduces you to key cmdlets and provides examples
+  286: - [Office 365 Groups naming policy](groups-naming-policy.md)
+
+microsoft-365\admin\create-groups\allow-members-to-send-as-or-send-on-behalf-of-group.md:
+  76: [Learn more about Office 365 Groups](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
+
+microsoft-365\admin\create-groups\choose-domain-to-create-groups.md:
+  2: title: "Choose the domain to use when creating Office 365 Groups"
+  21: description: "Learn to choose the domain to use when creating Office 365 groups by configuring email address policies using PowerShell. "
+  24: # Choose the domain to use when creating Office 365 groups
+  26:  Some organizations use separate email domains to segment different parts of their businesses. You can specify which domain should be used when your users create Office 365 groups.
+  49: The following example shows you how to provision all Office 365 groups in your organization in the groups.contoso.com domain.
+  57: Let's say you want to control what sub-domains Office 365 groups are created in. You want:
+  100: If your organization is configured in a hybrid scenario, check out [Configure Office 365 Groups with on-premises Exchange hybrid](https://go.microsoft.com/fwlink/p/?LinkId=785430) to make sure your organization meets the requirements for creating Office 365 groups. 
+
+microsoft-365\admin\create-groups\compare-groups.md:
+  28: - **Office 365 Groups** are used for collaboration between users, both inside and outside your company.
+  34: ## Office 365 Groups
+  36: Office 365 groups are used for collaboration between users, both inside and outside your company. With each Office 365 group, members get a group email and shared workspace for conversations, files, and calendar events, and a Planner.
+  40: Office 365 groups can be [configured for dynamic membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type), allowing group members to be added or removed automatically based on user attributes such as department, location, title, etc.
+  42: Office 365 groups can be accessed through mobile apps such as Outlook for iOS and Outlook for Android.
+  78: [Learn about Office 365 Groups](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+microsoft-365\admin\create-groups\create-groups.md:
+  21: description: "Learn to create and delete Office 365 groups, add and remove group members, and customize how the group works."
+  29: > Office 365 connected Yammer groups must be created in Yammer, but can be managed in the Microsoft 365 admin center like other Office 365 groups. To learn more, see [Yammer and Office 365 Groups](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx). 
+  117: [Manage guest access to Office 365 Groups](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+  119: [Choose the domain to use when creating Office 365 groups](choose-domain-to-create-groups.md)
+  121: [Upgrade distribution lists to Office 365 groups](../manage/upgrade-distribution-lists.md)
+
+microsoft-365\admin\create-groups\groups-naming-policy.md:
+  22: description: "Learn how to create a naming policy for Office 365 Groups."
+  32: > An Office 365 group naming policy only applies to Office 365 Groups. It doesn't apply to distribution groups created in Exchange Online. To create a naming policy for distribution groups, see [Create a distribution group naming policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+  42: Using Azure AD naming policy for Office 365 groups requires that you possess but not necessarily assign an Azure Active Directory Premium P1 license or Azure AD Basic EDU license for each unique user (including guests) that is a member of one or more Office 365 groups.
+  128: [Enforce a naming policy for Office 365 groups in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
+
+microsoft-365\admin\create-groups\manage-creation-of-groups.md:
+  2: title: "Manage who can create Office 365 groups"
+  23: description: "Learn how to control which users can create Office 365 groups."
+  29: Because it's so easy for users to create Office 365 groups, you aren't inundated with requests to create them on behalf of other people. Depending on your business, however, you might want to control who has the ability to create groups.
+  69: If you're a member of one of these roles, you can create Office 365 groups for restricted users, and then assign the user as the owner of the group. Users that have this role are able to create connected groups in Yammer, regardless of any PowerShell settings that might prevent creation.
+  80: - People who are members of Office 365 groups and who don't have the ability to create other groups.
+  82: ## Step 1: Create a security group for users who need to create Office 365 groups
+
+microsoft-365\admin\create-groups\manage-groups.md:
+  21: description: "Learn to manage Office 365 groups, including adding remove group members, editing the email address, group name, or description, and customizing how the group works."
+  192: [Manage guest access to Office 365 groups](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+  194: [Choose the domain to use when creating Office 365 groups](choose-domain-to-create-groups.md)
+  198: [Upgrade distribution lists to Office 365 groups](../manage/upgrade-distribution-lists.md)
+  200: [Manage Office 365 Groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+
+microsoft-365\admin\create-groups\manage-guest-access-in-groups.md:
+  2: title: "Manage guest access in Office 365 groups"
+  23: # Manage guest access in Office 365 groups
+  25: By default, guest access for Office 365 Groups is turned on for your organization. Admins can control whether to allow guest access to groups for their whole organization or for individual groups.
+  46: 1. In the admin center, go to the **Settings** \> **Settings** and select **Office 365 Groups**.
+  48: 2. On the **Office 365 Groups** page, choose whether you want to let people outside your organization access group resources or let group owners add people outside your organization to groups.
+
+microsoft-365\admin\create-groups\office-365-groups-expiration-policy.md:
+  20: description: "Learn about Office 365 Groups expiration policies."
+  25: With the increase in usage of Office 365 Groups, administrators and users need a way to clean up unused groups. Expiration policies can help remove inactive groups from the system and make things cleaner.
+  44: > Configuring and using the expiration policy for Office 365 Groups requires you to possess but not necessarily assign Azure AD Premium licenses for the members of all groups to which the expiration policy is applied. For more information see [Getting started with Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
+  46: ## Who can configure and use the Office 365 Groups expiration policy?
+  50: |Global admin (in Azure, the Company administrator), User administrator|Create, read, update, or delete the Office 365 Groups expiration policy settings.|
+  83: [Configure Office 365 Groups expiration](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+
+microsoft-365\admin\create-groups\office-365-groups.md:
+  2: title: "Overview of Office 365 Groups for administrators"
+  20: description: "Learn about Office 365 Groups."
+  23: # Overview of Office 365 Groups for administrators
+  25: Office 365 Groups is the foundational membership service that drives all teamwork across Microsoft 365. With Office 365 Groups, you can give a group of people access to a collection of collaboration resources for those people to share. These resources include:
+  56: If you prefer a more automated way to manage the lifecycle of your Office 365 groups, you can use expiration policies to expire groups at a specific time interval. The group's owners will get an email 30, 15 and 1 day before the group expiration that allows them to easily renew the group if it's still needed. See: [Office 365 group Expiration Policy](office-365-groups-expiration-policy.md).
+  60: If you have a lot of users, such as in a large corporation or enterprise, you may have many users who create groups for various purposes. We highly recommend that you review [Plan for governance in Office 365 Groups](plan-for-groups-governance.md) for best practices.
+  64: The following limits apply to Office 365 Groups:
+  76: The default maximum number of Office 365 groups that an Office 365 organization can have is 500,000, but can be increased by request. For more information on Office 365 Groups limits, see [Office 365 Groups - Admin help](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx).
+  78: Managing your Office 365 groups is more effective when you have actionable information about groups usage. The Microsoft 365 admin center has a reporting tool that can let you see things such as storage use, how many active groups you have and even how your users are using the groups. See: [Reports in the admin center](../activity-reports/office-365-groups.md) for more information.
+  89: Office 365 groups work with Azure Active Directory (AAD). The groups features you get depends on which Azure Active Directory subscription you have, and what license(s) is assigned to the organizer of the group.
+  97: [Learn about Office 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+  99: [Upgrade distribution lists to Office 365 groups](../manage/upgrade-distribution-lists.md)
+  101: [Manage Office 365 Groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+
+microsoft-365\admin\create-groups\Plan-for-groups-governance.md:
+  21: description: "Learn how to plan for Office 365 Groups governance."
+  26: Office 365 Groups has a rich set of tools to implement any governance capabilities your organization might require. This article guides IT Pros to ask the right questions to determine their requirements for governance and how to meet them based on their organizational profile.
+  28: ## Why Office 365 Groups?
+  35: Office 365 Groups empowers users and reduces the risk of shadow IT by providing in a single step many of the tools needed to collaborate. Office 365 Groups lets you choose a set of people with whom you wish to collaborate, and easily set up a collection of resources for those people to share. Manually assigning permissions to resources is a thing of the past as adding members to the group automatically grants the needed permissions to all assets provided by the group.
+  39: There are three main communication methods supported by Office 365 Groups. Groups can be created within these experiences and used across Microsoft 365:
+  57: To learn more about which resources are created for each group, visit [Learn about Office 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+  79:   - Upgrade DLs to Office 365 Groups – [Why you should upgrade?](https://support.office.com/article/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+  81: - SharePoint – Core content collaboration experience for all Office 365 groups
+  84:   - [Connect](https://docs.microsoft.com/sharepoint/dev/features/groupify/groupify-overview) existing SharePoint team sites to new Office 365 groups
+  88: Office 365 Groups has a rich set of tools to implement any governance capabilities your organization might require. The following section describes the capabilities, recommends best practices, and provides guidance to ask the right questions to determine the requirements for governance, and how to meet them.
+  91: - [Control who can create Office 365 groups](https://docs.microsoft.com/office365/admin/create-groups/plan-for-groups-governance#control-who-can-create-office-365-groups)
+  100: ### <a name="control-who-can-create-office-365-groups"></a>Control who can create Office 365 groups
+  117: | Controlled     | Group creation restricted to specific people, teams or services. To learn more, see [Manage who can create Office 365 groups](https://support.office.com/article/manage-who-can-create-office-365-groups-4c46c8cb-17d0-44b5-9776-005fced8e618). |
+  127: imiting group and team creation can slow users productivity because many Microsoft 365 services require that groups be created for the service to function. To learn more, see [Why control who creates Office 365 groups?](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide%23why-control-who-creates-office-365-groups)
+  130: - [Manage who can create Office 365 groups](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide)
+  132: - [How to change the default setting of Office 365 Groups for Outlook, to public or private](https://support.office.com/article/office-365-groups-in-outlook-private-by-default-36236e39-26d3-420b-b0ac-8072d2d2bedc)
+  175: - [Office 365 Groups naming policy](https://docs.microsoft.com/office365/admin/create-groups/groups-naming-policy)
+  176: - [Enforce a naming policy for Office 365 Groups in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
+  206: - [Configure the expiration policy for Office 365 Groups](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
+  209: Admins can control whether to allow guest access to Office 365 groups for their whole organization or for individual Office 365 groups. They can also control who can allow guests to be added to groups.
+  223: - [Manage guest access in Office 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups)
+  224: - [Guest access in Office 365 Groups](https://support.office.com/article/Guest-access-in-Office-365-Groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
+  230: Office 365 groups is built on the advanced security and compliance capabilities of Microsoft 365 and supports classifications, auditing and reporting, compliance content search, e-discovery, Legal Hold, and retention policies.
+  244: - [Link to your Office 365 Groups usage guidelines](https://docs.microsoft.com/office365/enterprise/manage-office-365-groups-with-powershell#link-to-your-office-365-groups-usage-guidelines)
+  257: For years organizations have relied on distribution groups to communicate and collaborate with groups of people both inside and outside the company. Now, however, Office 365 groups in Outlook offer a more powerful solution for collaboration. In addition, being able to connect an Office 365 group to an existing SharePoint site is important if you want to modernize that site.
+  261: >- Connect existing SharePoint team sites to new Office 365 Groups.
+  266: |![image desc](../../media/next_steps.png)|Next steps|<ul><li>Identify which distribution lists would be candidates for upgrading to Office 365 Groups.</li><li>Analyze your existing SharePoint team sites to see which sites are ready to be group-connected.</li><li>Let other teams in your company know that you upgraded your distribution group and what steps you took to make it successful!</li></ul>|
+  272: - [Migrate distribution lists to Office 365 Groups - Admin help](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
+  273: - [Connect existing SharePoint sites to Office 365 Groups:](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group)
+  280: >- You can use the groups activity reports to gain insights into the activity of Office 365 groups in your organization and see how many Groups are being created and used.
+  281: >-The Office 365 Groups report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days.
+  289: |![image desc](../../media/decision_point.png)|Decision points|<ul><li>Does your organization require regular reports to understand usage of Office 365 groups?<li>Does your organization require reporting on all groups that have external members?</li></ul>|
+  298: - [Office 365 Groups Report (Unified Groups)](https://gallery.technet.microsoft.com/office/Office-365-Groups-Report-7e3e161b)
+  304: Office 365 Groups provides a rich set of governance capabilities your organization might require. Consider the following organization profiles as guidance to understand best practices, ask the right questions to determine the requirements for governance, and how to meet them.
+  316: d-team-sites-are-now-private/m-p/186395).</li><li> Groups can be created by upgrading existing distribution lists (DLs) either one-by-one or in bulk via PowerShell. See [Upgrade distribution lists to Office 365 groups](https://support.office.com/article/Upgrade-distribution-lists-to-Office-365-Groups-in-Outlook-787D7A75-E201-46F3-A242-F698162FF09F).</li><li> Enable guest access but govern using allow/block guest domains.</li><li> Use group reporting to gain insights on how users are using groups.</li><li> Consider creating an org-wide team Microsoft Teams team as a way for everyone to be a part of a single team for collaboration. </li></ul>|
+  332: | Guidance |<ul><li> Define policies for data governance of the SharePoint site associated to the group based on classification.</li><li>[Protect SharePoint Online files with Office 365 labels and DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).</li><li>[Protect SharePoint Online files with Azure Information Protection](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection).</li><li> Group site provisioned in region tied to user's Preferred Data Location ([multi-geo](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)).</li><li> Membership reviews for groups with external members ([access reviews](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)).</li><li>Ensure employees or guest users see relevant disclaimers for legal or compliance requirements before getting access. ([terms of use](https://docs.microsoft.com/azure/active-directory/governance/active-directory-tou)).</li><li>Identify and report on Office 365 groups with a certain [classification that also have external users](https://techcommunity.microsoft.com/t5/Office-365-Groups/Sample-Powershell-to-identify-groups-with-HBI-classification-and/m-p/215561).</li><li>Secret groups where memberships needed to be hidden must be created using the [New-UnifiedGroup](https://technet.microsoft.com/library/mt219359(v=exchg.160).aspx) cmdlet (using the HiddenGroup-MembershipEnabled switch) on Group creation.</li><li>Define the [sensitivity labels](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels) for the organization to [Restrict access to content by using encryption](https://docs.microsoft.com/Office365/SecurityCompliance/encryption-sensitivity-labels) and publish to specific Office 365 groups.</li><li>Prevent sensitive content from leaving your organization on devices running Windows using [sensitivity labels with Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). |
+  333: | Next Steps      | <ul><li> Use site design and site scripts to define the default [actions](https://developer.microsoft.com/office/blogs/site-scripts-site-designs-summer-2018-update/) that occur when a new site is created. For example, [configure external sharing setting](https://github.com/SharePoint/sp-dev-site-scripts/tree/master/samples/site-apply-external-sharing-setting) or [trigger a Microsoft Flow to call an Azure function](https://github.com/SharePoint/sp-dev-site-scripts/tree/master/samples/site-azure-function) to apply configurations that are not supported natively. </li><li> Document requirements to [Protect SharePoint Online files with Office 365 labels and DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) to sites associated to Office 365 Groups.</li><li>Document organization requirements to [Secure SharePoint Online sites and files](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files) that are connected to Office 365 groups. </li><li>Document organization requirements to publish [sensitivity labels](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels) to specific users or groups to protect content.</li></ul> |
+  350: | Expiration policy | Manage the lifecycle of Office 365 groups by setting an expiration policy. | P1                                    |  TBD        |
+  351: | Group activity reports | Gain insights into the activity of Office 365 groups in your organization and see how many Office 365 groups are being created and used. | No                                    |    TBD       |
+  352: | Retention policy | Retain or delete data for a specific time period by setting retention policies for Office 365 groups in the Security & Compliance Center. **Note:** Using this feature requires licensing of Office 365 Enterprise E3 or above. | No                                    |    TBD       |
+
+microsoft-365\admin\create-groups\restore-deleted-group.md:
+  30: - Azure Active Directory (AD) Office 365 Groups object, properties, and members.
+  84: ## Got questions about Office 365 Groups?
+  86: Visit the [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) to post questions and participate in conversations about Office 365 groups. 
+  90: [Manage Office 365 Groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+
+microsoft-365\admin\email\create-edit-or-delete-a-security-group.md:
+  31:  a security group rather than being added individually can use only the site mailbox from SharePoint. These users won't be able to access the site mailbox from Outlook. For more information, see [Use Office 365 Groups instead of Site Mailboxes](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx). 
+
+microsoft-365\admin\email\email-collaboration.md:
+  45: |Distribution list (also called distribution group)  <br/> |Used to distribute email messages to two or more people at the same time. Distribution groups are also known as mail-enabled distribution groups. A variant of the distribution group, called the dynamic distribution group, is a mail-enabled Active Directory group object used to send email to a large and evolving group of recipients. The exact recipients are determined by filters and conditions that you specify, such as all members of a particular locale or all full-time employees.   <br/><br/> Office 365 Groups in Outlook offer a more powerful solution for collaboration than distribution groups. To learn more, see [Why you should upgrade your distribution lists to groups in Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx) and [Migrate distribution lists to Office 365 Groups](../manage/upgrade-distribution-lists.md).  <br/> |
+  68: [Use Office 365 Groups instead of Site Mailboxes](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx)
+
+microsoft-365\admin\includes\office365-admin-content-updates.md:
+  36: | 1/10/2020 | [Microsoft 365 Reports in the admin center - Office 365 Groups](/Office365/Admin/activity-reports/office-365-groups?view=o365-worldwide) | modified |
+  61: | 1/10/2020 | [Overview of Office 365 Groups for administrators](/Office365/Admin/create-groups/office-365-groups?view=o365-worldwide) | modified |
+
+microsoft-365\admin\manage\centralized-deployment-of-add-ins.md:
+  129: The Centralized Deployment feature currently supports the majority of groups supported by Azure Active Directory, including Office 365 groups, distribution lists, and security groups.
+
+microsoft-365\admin\manage\upgrade-distribution-lists.md:
+  2: title: "Upgrade distribution lists to Office 365 Groups in Outlook"
+  21: description: "Learn how to upgrade one or many distribution lists to Office 365 Groups in Outlook, and how to use PowerShell to upgrade several distribution lists simultaneously."
+  24: # Upgrade distribution lists to Office 365 Groups in Outlook
+  26: You can upgrade distribution lists to Office 365 Groups with Outlook. This is a great way to give your organization's distribution lists all the features and functionality of Office 365 Groups. [Why you should upgrade your distribution lists to groups in Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+  30: ## Upgrade one or many distribution lists to Office 365 Groups in Outlook
+  32: You must be a global admin or Exchange admin to upgrade a distribution list. To upgrade to Office 365 Groups, a distribution group must have an owner with a mailbox. 
+  36: he Exchange admin center, go to **Recipients** \> **Groups**.<br/>You'll see a notice indicating you have distribution lists (also called **distribution groups** ) that are eligible to be upgraded to Office 365 Groups.<br/> ![Select the Get started button](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+  40: 4. Select the upgrade icon.<br/>![Upgrade to Office 365 Groups icon](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+  114: ## FAQ about upgrading distribution lists to Office 365 Groups in Outlook
+
+microsoft-365\compliance\add-custodians-to-case.md:
+  67: Depending on the case you're investigating, you may also need to search (and preserve content in) mailboxes that a specific custodian may have accessed, Office 365 groups that a custodian is currently a member of, or sites that a custodian has also accessed. So in addition to the primary custodian data sources that you specified in the previous step, you can also associate additional Office 365 data sources with a custodian in the case. 
+
+microsoft-365\compliance\assign-ediscovery-permissions.md:
+  92: s users run the Content Search tool in the Security & Compliance Center to search mailboxes and public folders, SharePoint Online sites, OneDrive for Business sites, Skype for Business conversations, Office 365 Groups, and Microsoft Teams, and Yammer groups. This role allows a user to get an estimate of the search results and create export reports, but additional roles are needed to initiate content search actions such as previewing, exporting, or deleting search results.
+  108: This role lets users place content on hold in mailboxes, public folders, sites, Skype for Business conversations, and Office 365 groups. When content is on hold, content owners can still modify or delete the original content, but the content will be preserved until the hold is removed or until the hold duration expires. 
+  149:     Exchange distribution groups and Office 365 groups aren't supported. You must use a mail-enabled security group, which you can create in Exchange Online PowerShell by using the `New-DistributionGroup -Type Security` command. You can also create a mail-enabled security group (and add members) in the Exchange admin center or in the Microsoft 365 admin center. It might take up to 60 minutes after you create it for a new mail-enabled security to be available to add to the eDiscovery Managers role group. 
+
+microsoft-365\compliance\auto-apply-retention-labels-scenario.md:
+  233:  locations because all production documents are stored only in SharePoint document libraries. Select **Let me choose specific locations**, toggle the status for Exchange email, OneDrive accounts, and Office 365 Groups to off and make sure the status for SharePoint sites is toggled on. 
+
+microsoft-365\compliance\communication-compliance-configure.md:
+  79: |Supervised users <br> Non-supervised users | Distribution groups <br> Office 365 groups | Dynamic distribution groups |
+  87: - [Overview of Office 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+
+microsoft-365\compliance\communication-compliance-feature-reference.md:
+  47: on compliance, you must determine who needs their communications reviewed. In the policy, user email addresses identify individuals or groups of people to supervise. Some examples of these groups are Office 365 Groups, Exchange-based distribution lists, and Microsoft Teams channels. You also can exclude specific users or groups from scanning with a specific exclusion group or a list of groups.
+  69: n every Microsoft Team channel or Office 365 group you want to scan that contains a specific user to the communication compliance policy. If you add the same user to other Microsoft Teams channels or Office 365 groups, be sure to add these new channels and groups to the communication compliance policy.
+
+microsoft-365\compliance\configure-supervision-policies.md:
+  65: |Supervised users <br> Non-supervised users | Distribution groups <br> Office 365 Groups | Dynamic distribution groups |
+  103: - [Overview of Office 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+
+microsoft-365\compliance\content-search.md:
+  21: description: "Use the Content Search tool in the compliance center in Office 365 or Microsoft 365 to search for content in mailboxes, SharePoint Online sites, OneDrive accounts, Microsoft Teams, Office 365 Groups, Yammer Groups, and Skype for Business Conversations. You can use keyword search queries and search conditions to narrow the search results. Then you can preview and export search results. Content Search is also an effective tool to search for content related to a GDPR data subject request."
+  36: - Office 365 Groups
+  83:       - **All locations:** Use this option to search all content locations in your organization. This includes email in all Exchange mailboxes (including all inactive mailboxes, and mailboxes for all Microsoft Teams, Yammer Groups, and Office 365 Groups), all Skype for Business conversations, all SharePoint and OneDrive for Business sites (including the sites for all Microsoft Teams, Yammer Groups, and Office 365 Groups), and items in all Exchange public folders.
+  176: [Searching Microsoft Teams and Office 365 Groups](#searching-microsoft-teams-and-office-365-groups)
+  237: ### Searching Microsoft Teams and Office 365 Groups
+  239: You can search the mailbox that's associated with an Office 365 Group or a Microsoft Team. Because Microsoft Teams is built on Office 365 Groups, searching them is similar. In both cases, only the group or team mailbox is searched. The mailboxes of the group or team members aren't searched. To search them, you have to specifically add them to the search.
+  241: Keep the following things in mind when searching for content in Microsoft Teams and Office 365 Groups.
+  243: - To search for content located in Teams and Office 365 Groups, you have to specify the mailbox and SharePoint site that are associated with a team or group.
+
+microsoft-365\compliance\disposition-reviews.md:
+  52: A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Office 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
+  70: > When you specify the option **Notify these people when there are items ready to review**, specify a user. Office 365 groups are not supported for this option.
+  104: - Office 365 groups aren't supported for this role. Instead, assign user mailboxes or mail users.
+
+microsoft-365\compliance\ediscovery-cases.md:
+  189:     See the [More information](#more-information) section for tips on putting Microsoft Teams, Yammer Groups, and Office 365 Groups on hold. 
+  268:     - **All locations** - Select this option to search all content locations in your organization. When you select this option, you can choose to search all Exchange mailboxes (which includes the mailboxes for all Microsoft Teams, Yammer Groups, and Office 365 Groups), all SharePoint and OneDrive for Business sites (which includes the sites for all Microsoft Teams, Yammer Groups, and Office 365 Groups), and all public folders.
+  284:       - You can add inactive mailboxes, Microsoft Teams, Yammer Groups, Office 365 Groups, and distribution groups to the list of mailboxes to search. Dynamic distribution groups aren't supported. If you add Microsoft Teams, Yammer Groups, or Office 365 Groups, the group or team mailbox is searched; the mailboxes of the group members aren't searched.
+  585: - **What about placing a hold on Office 365 Groups and Microsoft Teams?** Microsoft Teams is built on Office 365 Groups. Therefore, placing them on hold in an eDiscovery case is similar. Keep the following things in mind when placing Office 365 Groups and Microsoft Teams on hold. 
+  587:   - To place content located in Office 365 Groups and Microsoft Teams on hold, you have to specify the mailbox and SharePoint site that associated with a group or team.
+
+microsoft-365\compliance\ediscovery.md:
+  17:  365 offers a number of different eDiscovery tools that you can use to search for and hold content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Office 365 groups, and Skype for Business conversations."
+  22:  the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery in Office 365 to search for content in Exchange Online mailboxes, Office 365 Groups, Microsoft Teams, SharePoint Online and OneDrive for Business sites, and Skype for Business conversations. You can search mailboxes and sites in the same eDiscovery search by using the Content Search tool in the Security & Compliance Center. And you can use eDiscovery cases in the Security & Compliance Center to identify, hold, and export content found in mailboxes and sites. If your organization has an Office 365 E5 subscription, you can further analyze content by using the Advanced eDiscovery solution in Microsoft 365.
+  38: |[Run a Content Search](content-search.md) <br/> |Learn how to use the Content Search tool to search mailboxes, public folders, Office 365 Groups, Microsoft Teams, SharePoint Online sites, One Drive for Business locations, and Skype for Business conversations in your organization in a single search.  <br/> |
+
+microsoft-365\compliance\gdpr-action-plan.md:
+  43: covery cases](https://support.office.com/article/eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-8dd335ab-29d0-41c3-8dd8-9f7c7481e60c) to easily search across mailboxes, public folders, Office 365 Groups, Microsoft Teams, SharePoint Online sites, One Drive for Business sites and Skype for Business conversations. Learn how to use [sensitive information types](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data) to find personal data of EU citizens<br>• When working with vast quantities of content, identify documents that are relevant to a particular subject (for example, a compliance investigation) quickly and with better precision than traditional keyword searches with [Advanced eDiscovery (classic)](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4), powered by machine learning technologies.<br>• Preview search results, get keyword statistics for one or more searches, bulk-edit content sea
+  51:  users identify and classify personal data, as defined by the GDPR, with a classification schema and associated Office 365 Labels for Exchange email, SharePoint sites, OneDrive for Business sites and Office 365 Groups. See [Office 365 Information Protection for GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr).|
+
+microsoft-365\compliance\gdpr-dsr-Office365.md:
+  91: tool to search (and perform other DSR-related actions) across SharePoint Online sites, OneDrive for Business accounts, and Exchange Online mailboxes (including the sites and mailboxes associated with Office 365 Groups, Microsoft Teams, EDU Assignments) to find documents and mailbox items that may be relevant to the DSR you're investigating. You can also use the Content Search tool to discover Customer Data authored in other Office 365 applications.
+  129: - Exchange Online mailboxes. This includes the mailboxes associated with Office 365 Groups and Microsoft Teams
+  131: - SharePoint Online sites. This includes the sites associated with Office 365 Groups and Microsoft Teams
+  1038: Planner plans are associated with an Office 365 Groups, and the files for Office 365 Groups are stored in an associated SharePoint Online site for the group. That means that you can use Content Search to find Planner files by searching the site for the Office 365 Group. To do this, you need to have the URL for the Office 365 Group. See [Searching Microsoft Teams and Office 365 Groups](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) in the "Content Search in Office 365" help topic for tips about getting information about Office 365 Groups to help you search for Planner files in the corresponding SharePoint Online site.
+  1663:    - All mailboxes in your organization (including the mailboxes associated with all Microsoft Teams and Office 365 Groups)
+
+microsoft-365\compliance\get-started-with-sensitivity-labels.md:
+  68: |Use sensitivity labels to protect content in Teams and  SharePoint |[Use sensitivity labels with Microsoft Teams, Office 365 Groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)|
+
+microsoft-365\compliance\identify-a-hold-on-an-exchange-online-mailbox.md:
+  29: t-locations-on-hold):** Holds that are associated with an eDiscovery case in the security and compliance center. eDiscovery holds can be applied to user mailboxes and to the corresponding mailbox for Office 365 Groups and Microsoft Teams.
+  33: - **[Office 365 retention policies](retention-policies.md):** Can be configured to retain (or retain and then delete) content in user mailboxes in Exchange Online and in the corresponding mailbox for Office 365 Groups and Microsoft Teams. You can also create a retention policy to retain Skype for Business Conversations, which are stored in user mailboxes.
+  94: |Office 365 retention policy applied to Office 365 Groups and Teams channel messages     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    Organization-wide retention policies applied to Office 365 groups and channel messages in Microsoft Teams are identified by GUIDs that start with the `grp` prefix. Note channel messages are stored in the group mailbox that is associated with a Microsoft Team.     |
+
+microsoft-365\compliance\keyword-queries-and-search-conditions.md:
+  366: - Changes to group membership, such as adding or removing external users to Office 365 Groups or Office 365 security groups. The property won't automatically be updated for items the group has access to.
+
+microsoft-365\compliance\labels.md:
+  38: - **Enable people in your organization to apply a retention label manually** to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Office 365 Groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate policy applied. 
+  147: |Published to end users  <br/> |Exchange, SharePoint, OneDrive, Office 365 Groups  <br/> |
+  149: |Auto-applied based on a query  <br/> |Exchange, SharePoint, OneDrive, Office 365 Groups  <br/> |
+  179: - Office 365 groups (both the group site and group mailbox in Outlook on the web)
+  231: ### Office 365 Groups
+  235: To retain content for an Office 365 group, you need to use the Office 365 Groups location. Even though an Office 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Office 365 group mailboxes.
+  417: Retention labels can easily be made available to an entire organization and its content across Office 365, including Exchange, SharePoint, OneDrive, and Office 365 Groups. If you need to classify content or manage records anywhere in Office 365, we recommend that you use retention labels.
+
+microsoft-365\compliance\legacy-ediscovery-retirement.md:
+  21: ew, and export email content from Exchange Online. However, these tools no longer offer an effective way to search for non-Exchange content in other Office 365 services, such as SharePoint Online, and Office 365 Groups. To address this, Microsoft offers other eDiscovery tools that help you search for a wide variety of Office 365 content. And we've been working hard to incorporate the most current and powerful eDiscovery functionality in the [Microsoft 365 compliance center](https://compliance.microsoft.com). This allows organizations to respond to legal, internal, and other document requests for content across many Office 365 services, including Exchange Online.
+  108: <p>Searching for content in for Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Microsoft Teams, Yammer Groups, Office 365 Groups, and other content stored in Office 365 applications</p></li></ul>
+  119: <p>Applying policies to specific content locations such as Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Microsoft Teams, and Office 365 Groups</p></li>
+
+microsoft-365\compliance\manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md:
+  283: [Searching and exporting data from Microsoft Teams and Office 365 Groups](#searching-and-exporting-data-from-microsoft-teams-and-office-365-groups)
+  393: ### Searching and exporting data from Microsoft Teams and Office 365 Groups
+  401: For more information about using Content Search to search for items in Microsoft Teams and Office 365 Groups or to see how to get a list of members, see the "Searching Microsoft Teams and Office 365 Groups" section in [Content Search in Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups). 
+
+microsoft-365\compliance\managing-holds.md:
+  74:      See the **FAQ** section for tips on putting Office 365 Groups and Microsoft Teams on hold.
+  116: - **How do I map an additional Office 365 Groups or Microsoft Teams site to a custodian? And what about placing a non-Custodial hold on Office 365 Groups and Microsoft Teams?** Microsoft Teams are built on Office 365 Groups. Therefore, placing them on hold in an eDiscovery case is very similar. Keep the following things in mind when placing Office 365 Groups and Microsoft Teams on hold.
+  117:   - To place content located in Office 365 Groups and Microsoft Teams on hold, you have to specify the mailbox and SharePoint site that associated with a group or team.
+
+microsoft-365\compliance\office-365-advanced-ediscovery.md:
+  25: rform more efficient document review, and make decisions to reduce data for eDiscovery. You can work with data stored in Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Office 365 Groups, and Microsoft Teams. You can perform an eDiscovery search in the security and compliance center to search for content in groups, individual mailboxes and sites, and then analyze the search results with Advanced eDiscovery. When you prepare search results for analysis in Advanced eDiscovery, Optical Character Recognition enables the extraction of text from images. This feature allows the powerful text analytic capabilities of Advanced eDiscovery to be applied to image files.
+
+microsoft-365\compliance\recently-updated-topics-mcc.md:
+  105: [Use sensitivity labels to protect content in Microsoft Teams, Office 365 Groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md) (updated)<br>Revisions throughout for a better reading experience and technical clarifications. Also, per customer feedback, added links to the [Azure AD article](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) for enabling the preview and applying sensitivity labels to Office 365 groups in the Azure portal. Finally, added a new section for auditing sensitivity label activities.
+
+microsoft-365\compliance\retention-policies.md:
+  207: - Office 365 groups (applies to content in the group's mailbox and associated SharePoint site.)
+  228: You can also apply a retention policy to specific users, Office 365 groups, or sites. To do so, toggle the **Status** of that location on, and then use the links to include or exclude specific users, Office 365 groups, or sites. 
+  252: Your retention policy can retain content in SharePoint communication sites, team sites that aren't connected by Office 365 groups, and classic sites. Team sites connected by Office 365 groups aren't supported with this option and instead, use the **Office 365 groups** locations.
+  264: Teams chats and channel messages are not affected by retention policies applied to user or group mailboxes in the Exchange or Office 365 groups locations. Even though Teams chats and channel messages are stored in Exchange, they're affected only by a retention policy that's applied to the Teams location.
+  304: ### Office 365 groups locations
+  306: To retain content for an Office 365 group, you need to use the Office 365 Groups location. Even though an Office 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Office 365 group mailboxes. A retention policy applied to an Office 365 group includes both the group mailbox and site. A retention policy applied to an Office 365 group protects the resources created by an Office 365 group, which would include Microsoft Teams.
+  380: A single retention policy can easily apply to an entire organization and locations across Office 365, including Exchange Online, SharePoint Online, OneDrive for Business, and Office 365 Groups. If you need to retain or delete content anywhere in Office 365, we recommend that you use a retention policy. (You can also use labels with retention settings. For more information, see [Overview of labels](labels.md).)
+
+microsoft-365\compliance\search-cloud-based-mailboxes-for-on-premises-users.md:
+  37: you can use Content Search to search channel conversations without have to file a support request. For more information about searching Teams channel conversations, see [Searching Microsoft Teams and Office 365 Groups](content-search.md#searching-microsoft-teams-and-office-365-groups).
+
+microsoft-365\compliance\search-for-and-find-personal-data.md:
+  30: This article demonstrates how to find personal data stored in SharePoint Online and OneDrive for Business (which includes the sites for all Office 365 groups and Microsoft Teams).
+
+microsoft-365\compliance\search-for-content.md:
+  20: versations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in Office 365 collaboration tools such as Microsoft Teams and Office 365 Groups.
+
+microsoft-365\compliance\search-the-audit-log-in-security-and-compliance.md:
+  360: - Office 365 Groups. When a user or admin creates a new group, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group. These tasks are performed an application on behalf of the user who created the group.
+  362: - Microsoft Teams. Similar to Office 365 groups, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group when a team is created.
+
+microsoft-365\compliance\sensitivity-labels-sharepoint-onedrive-files.md:
+  46: You can also now apply sensitivity labels to Microsoft Teams, Office 365 groups, and SharePoint sites. For more information about this separate preview, see [Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md).
+
+microsoft-365\compliance\sensitivity-labels-teams-groups-sites.md:
+  2: title: "Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)"
+  19: description: "Use sensitivity labels to protect content in SharePoint and Microsoft Teams sites, and Office 365 groups."
+  22: # Use sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)
+  24: When you create sensitivity labels in the [Microsoft 365 compliance center](https://protection.office.com/), you can now apply them to the following containers: Microsoft Teams sites, Office 365 groups, and SharePoint sites. Use the following label settings to help protect the content in those containers:
+  34: ## About the public preview for Microsoft Teams, Office 365 Groups, and SharePoint sites
+  36: Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites are in gradual rollout to tenants and might change before final release. This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
+  42: After you enable and configure this preview, users can additionally see and apply sensitivity labels to Microsoft Teams, Office 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
+  48: 1. Because this feature uses Azure AD functionality, follow the instructions in the Azure AD documentation to enable the preview: [Assign sensitivity labels to Office 365 groups in Azure Active Directory (preview)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
+  61: 3. Run the following command to synchronize your sensitivity labels to Azure AD, so that they can be used with Office 365 groups:
+  99: > Creating, modifying, and deleting sensitivity labels that you use for Microsoft Teams, Office 365 groups, and SharePoint sites requires careful coordination with publishing label policies to users. 
+  127: ## Assign sensitivity labels to Office 365 groups
+  129: You're now ready to apply the sensitivity label or labels to Office 365 groups. Return to the Azure AD documentation for instructions:
+  256: 1. Use PowerShell to apply the sensitivity labels to existing Office 365 groups and SharePoint sites by using name mapping. See the next section for instructions.
+  262: #### Use PowerShell to convert classifications for Office 365 groups to sensitivity labels
+  286: 6. Make a note of the GUIDs for the sensitivity labels you want to apply to your Office 365 groups.
+  317: Having problems with sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites? Check the following:
+  325: If you experience creation errors during the public preview, you can turn off sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites by using the same instructions from [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). However, to disable the preview, in step 5, disable the feature by using `$setting["EnableMIPLabels"] = "False"`.
+
+microsoft-365\compliance\sensitivity-labels.md:
+  78: > - [Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)
+  98: - **Protect content in containers such as sites and groups** when you opt into the preview to [use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md).
+  144: label** to all new documents and email created by the users and groups included in the label policy. This option also applies to containers, if you've [enabled sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md). Users can always change the default label if it's not the right label for their document or email. Consider using a default label to set a base level of protection settings that you want applied to all your content. However, without user training and other controls, this setting can also result in inaccurate labeling. 
+
+microsoft-365\compliance\supervision-policies.md:
+  76: g supervision, you must determine who needs their communications reviewed. In the policy, user email addresses identify individuals or groups of people to supervise. Some examples of these groups are Office 365 Groups, Exchange-based distribution lists, and Microsoft Teams channels. You also can exclude specific users or groups from supervision with a supervised group or a list of groups.
+  100: s:** Assign every Microsoft Team channel or Office 365 group you want to monitor that contains a specific user to the supervision policy. If you add the same user to other Microsoft Teams channels or Office 365 groups, be sure to add these new channels and groups to the supervision policy.
+
+microsoft-365\compliance\what-is-stored-in-exo-mailbox.md:
+  31: |Office 365 Groups|Email messages, calendar items, contacts (People), notes, and tasks are stored in the mailbox that's associated with an Office 365 group.|
+
+microsoft-365\enterprise\deploy-foundation-infrastructure-non-enterprises.md:
+  317: This means you need to create and manage two additional Office 365 groups:
+  403:   - Sensitivity label Office 365 groups (as needed)
+
+microsoft-365\enterprise\exchangeonline-workload.md:
+  73: - [Migrate Exchange Server public folders to Office 365 Groups](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
+
+microsoft-365\enterprise\identity-access-policies.md:
+  65: All Azure AD groups created as part of these recommendations must be created as Office 365 groups. This is specifically important for the deployment of Azure Information Protection (AIP) when securing documents in SharePoint Online.
+  67: ![Screen capture for creating Office 365 groups](../media/identity-device-AAD-groups.png)
+
+microsoft-365\enterprise\identity-exit-criteria.md:
+  211: ## Optional: Self-service group management is enabled for specific Azure AD security and Office 365 groups
+
+microsoft-365\enterprise\identity-use-group-management.md:
+  34: >Self-service group management is available only for Azure AD security and Office 365 groups. It is not available for mail-enabled groups, distribution lists, or any group that has been synchronized from your on-premises Active Directory Domain Services (AD DS).
+
+microsoft-365\enterprise\teams-access-policies.md:
+  34: - Office 365 Groups
+
+microsoft-365\enterprise\teams-sharepoint-online-sites-highly-regulated-data.md:
+  52: | Lock down the site | Office 365 Groups and SharePoint team site permissions |
+
+microsoft-365\enterprise\includes\deployment-exit-criteria-identity.md:
+  186: ### Optional: Self-service group management is enabled for specific Azure AD security and Office 365 groups
+
+microsoft-365\security\office-365-security\design-an-isolated-sharepoint-online-team-site.md:
+  67: Azure AD groups for Office 365 are different than Office 365 groups. Azure AD groups appear in the Microsoft 365 admin center with their **Type** set to **Security** and do not have an email address. Azure AD groups can be managed within:
+  120: > You cannot use nested Office 365 groups. 
+
+microsoft-365\security\office-365-security\isolated-sharepoint-online-team-site-dev-test-environment.md:
+  140: ![The Office 365 groups and their membership for an isolated SharePoint Online Group site](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+
+microsoft-365\security\office-365-security\reporting-and-message-trace-in-exchange-online-protection.md:
+  23: **Office 365 Groups activity**: View information about the number of Office 365 groups that are created and used.
+  33: - [Microsoft 365 Reports in the admin center - Office 365 Groups](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+
+microsoft-365\security\office-365-security\secure-files-in-teams.md:
+  133: - People in your organization can apply a label manually to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Office 365 Groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate DLP policy applied.
+
+microsoft-365\security\office-365-security\secure-sharepoint-online-sites-and-files.md:
+  138: - People in your organization can apply a label manually to content in Outlook on the web, Outlook 2010 and later, OneDrive for Business, SharePoint Online, and Office 365 Groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate DLP policy applied.
+
+microsoft-365\solutions\collaborate-as-team.md:
+  66: ## Office 365 Groups guest settings
+  68: Teams uses Office 365 Groups for team membership. The Office 365 Groups guest settings must be turned on in order for guest access in Teams to work.
+  70: ![Screenshot of Office 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
+  72: To set Office 365 Groups guest settings
+  76: 3. In the list, click **Office 365 Groups**.
+
+microsoft-365\solutions\collaborate-in-site.md:
+  17: If you need to collaborate with guests across documents, data, and lists, you can use a SharePoint site. Modern SharePoint sites are connected to Office 365 Groups which can manage the site membership and provide additional collaboration tools such as a shared mailbox and calendar.
+  46: ## Office 365 Groups guest settings
+  48: Modern SharePoint sites use Office 365 Groups to control site access. The Office 365 Groups guest settings must be turned on in order for guest access in SharePoint sites to work.
+  50: ![Screenshot of Office 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
+  52: To set Office 365 Groups guest settings
+  56: 3. In the list, click **Office 365 Groups**.
+
+microsoft-365\solutions\collaborate-with-people-outside-your-organization.md:
+  21: - **Enable sharing** - Configure the sharing controls across Azure Active Directory, Teams, Office 365 Groups, and SharePoint to allow the level of sharing that you want for your organization.
+
+microsoft-365\solutions\financial-services-secure-collaboration.md:
+  53: Every Microsoft Team is backed by an Office 365 group. That group is considered the membership service for numerous Office 365 services, including Teams. Office 365 groups are used to securely distinguish between "owners" and "members" and to control access to various capabilities within Teams. When coupled with appropriate governance controls and regularly administered access reviews, Teams allows only members and owners to utilize authorized channels and capabilities.
+  68: Microsoft 365 provides other common policy capabilities for Teams through its use of Office 365 Groups as an underlying membership service. These policies can help improve collaboration and meet compliance needs.
+  70: **Office 365 group naming policies** help ensure that Office 365 groups, and therefore teams, are named according to corporate policy. Names can be problematic if they aren't appropriate. For example, employees may not know which teams to work with or share information with if names aren't appropriately applied. Group-naming policies (including support for prefix/suffix-based policies and custom blocked words) can enforce good "hygiene" and prevent use of specific words, such as reserved words or inappropriate terminology.
+  72: **Office 365 group expiration policies** help ensure that Office 365 groups and therefore teams, aren't retained for longer periods of time than the organization wants or needs. This capability helps prevent two key information-management issues:
+  77: Administrators can specify an expiration period for Office 365 groups, such as 90, 180, or 365 days. If a service that's backed by an Office 365 group is inactive for the expiration period, group owners are notified. If no action is taken, the Office 365 group and all its related services, including Teams, is deleted.
+  213: The retention labels are then published to SharePoint or OneDrive sites, Exchange mailboxes, and Office 365 groups. Users can apply the retention labels manually to documents and emails. Record managers can use intelligence to automatically apply the labels. Intelligent capabilities can be based on [ninety-plus built-in sensitive information types](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide) (such as ABA outing number, US bank account number, or US Social Security Number). They're also customizable based on keywords or sensitive data found in documents or emails, such as credit card numbers or other personally identifiable information or based on SharePoint metadata. For data that's not easily identified through manual or automated pattern matching, trainable classifiers can be used to classify documents intelligently based on machine learning techniques.
+
+microsoft-365\solutions\microsoft-365-guest-settings.md:
+  18: This article provides a reference for the various settings that can affect sharing with people outside your organization for the Microsoft 365 workloads: Teams, Office 365 Groups, SharePoint, and OneDrive. These settings are located in the Azure Active Directory, Microsoft 365, Teams, and SharePoint admin centers.
+  24: Azure Active Directory is the directory service used by  Microsoft 365. The Azure Active Directory Organizational relationships settings directly affect sharing in Teams, Office 365 Groups, SharePoint, and OneDrive.
+  50: The Microsoft 365 admin center has organization-level settings for sharing and for Office 365 Groups.
+  62: ### Office 365 Groups
+  64: **Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > Settings > Settings > Office 365 Groups
+  66: ![Screenshot of Office 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
+  70: on access group content|On|When set to **On**, guests can access groups content; when set to **Off**, they can't. This setting should be **On** for any scenario where guest users are interacting with Office 365 Groups or Teams.|
+  71: |Let group owners add people outside your organization to groups|On|When **On**, Owners of Office 365 Groups or Teams can invite new guests to the group. When **Off**, owners can only invite guests who are already in the directory.|
+  134: These settings affect all of the sites in the organization. They do not affect Office 365 Groups or Teams directly, however we recommend that you align these settings with the settings for Office 365 Groups and Teams to avoid user experience issues. (For example, if guest sharing is allowed in Teams but not SharePoint, then guests in Teams will not have access to the Files tab because Teams files are stored in SharePoint.)
+  178: If you want to limit who can share with guests in SharePoint and OneDrive, you can do so by limiting sharing to people in specified security groups. These settings do not affect sharing via Office 365 Groups or Teams. Guests invited via a group or team would also have access to the associated site, though document and folder sharing could only be done by people in the specified security groups.
+  232: |Group-connected sites (including Teams)|**New and existing guests** if the Office 365 Groups setting **Let group owners add people outside the organization to groups** is **On**; otherwise **Existing guests only**|
+  245: [Adding guests to Office 365 Groups](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+
+microsoft-365\solutions\microsoft-365-limit-sharing.md:
+  52: If you want to prevent guest access in Office 365 groups, you can turn off the groups guest access settings in the Microsoft 365 admin center.
+  54: To turn off guest sharing in Office 365 Groups
+  56: 2. On the **Services** tab, click **Office 365 Groups**.
+  60:     ![Screenshot of Office 365 groups sharing settings in the Microsoft 365 admin center](../media/office-365-groups-guest-settings-off.png)
+
+microsoft-365\solutions\share-limit-accidental-exposure.md:
+  79: Note that this affects files, folders, and sites, but not Office 365 groups or Teams. When members invite guests to a private Office 365 group or a private team in Microsoft Teams, the invitation is sent to the group or team owner for approval.

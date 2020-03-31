@@ -76,7 +76,7 @@ Use the following chart to help you configure groups in your organization for co
 
 | **Policy Member** | **Supported Groups** | **Unsupported Groups** |
 |:-----|:-----|:-----|
-|Supervised users <br> Non-supervised users | Distribution groups <br> Office 365 groups | Dynamic distribution groups |
+|Supervised users <br> Non-supervised users | Distribution groups <br> Office 365 Groups | Dynamic distribution groups |
 | Reviewers | None | Distribution groups <br> Dynamic distribution groups <br> Mail-enabled security groups |
   
 When you select an Office 365 group for supervised users, the policy monitors the content of the shared Office 365 mailbox and the Microsoft Teams channels associated with the group. When you select a distribution list, the policy monitors individual user mailboxes.

@@ -21,7 +21,7 @@ This article provides a reference for the various settings that can affect shari
 
 **Admin role:** Global administrator
 
-Azure Active Directory is the directory service used by  Microsoft 365. The Azure Active Directory Organizational relationships settings directly affect sharing in Teams, Office 365 Groups, SharePoint, and OneDrive.
+Azure Active Directory is the directory service used by Microsoft 365. The Azure Active Directory Organizational relationships settings directly affect sharing in Teams, Office 365 Groups, SharePoint, and OneDrive.
 
 > [!NOTE]
 > These settings only affect SharePoint when [SharePoint and OneDrive integration with Azure AD B2B (Preview)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) has been configured. The table below assumes that this has been configured.

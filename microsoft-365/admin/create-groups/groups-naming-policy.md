@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: "Learn how to create a naming policy for Office 365 groups."
+description: "Learn how to create a naming policy for Office 365 Groups."
 ---
 
 # Groups naming policy
@@ -29,7 +29,7 @@ You use a group naming policy to enforce a consistent naming strategy for groups
 The naming policy is applied to groups that are created across all groups workloads (like Outlook, Microsoft Teams, SharePoint, Planner, Yammer, etc.). It gets applied to both the group name and group alias. It gets applied when a user creates a group and when group name or alias is edited for an existing group.
 
 > [!TIP]
-> An Office 365 group naming policy only applies to Office 365 groups. It doesn't apply to distribution groups created in Exchange Online. To create a naming policy for distribution groups, see [Create a distribution group naming policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+> An Office 365 group naming policy only applies to Office 365 Groups. It doesn't apply to distribution groups created in Exchange Online. To create a naming policy for distribution groups, see [Create a distribution group naming policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 The group naming policy consists of the following features:
 
@@ -125,6 +125,6 @@ To set up a naming policy:
 
 ## More articles on naming policy
 
-[Enforce a naming policy for Office 365 groups in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
+[Enforce a naming policy for Office 365 Groups in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
 
 [Azure Active Directory cmdlets for configuring group settings](https://go.microsoft.com/fwlink/?linkid=868341)

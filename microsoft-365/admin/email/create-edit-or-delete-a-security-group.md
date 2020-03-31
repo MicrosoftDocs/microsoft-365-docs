@@ -34,7 +34,7 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 
 ### Add a security group
 
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
+1. In the Microsoft 365 admin center, go to the **Groups** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
   
 2. On the **Groups** page, select **Add a group**.
     
@@ -113,14 +113,14 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
     
 3. In the security group pane, select **Edit** next to either **Name** or **Members** tab to edit either group details or members.
     
-4. After you've made changes, select **Save** \> **Close**.
+4. After you've made changes, select **Save** > **Close**.
 
 ::: moniker-end
 
 
 ### Delete a security group
 
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
+1. In the admin center, go to the **Groups** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
     
 2. On the **Groups** page, select the group's name. 
     

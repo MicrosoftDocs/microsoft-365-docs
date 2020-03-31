@@ -35,7 +35,7 @@ In all of these cases, retention labels in Office 365 can help you take the righ
   
 With retention labels, you can:
   
-- **Enable people in your organization to apply a retention label manually** to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Office 365 groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate policy applied. 
+- **Enable people in your organization to apply a retention label manually** to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Office 365 Groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate policy applied. 
     
 - **Apply retention labels to content automatically** if it matches specific conditions, such as when the content contains: 
     
@@ -144,9 +144,9 @@ Different types of retention labels can be published to different locations, dep
   
 |**If the retention label is…**|**Then the label policy can be applied to…**|
 |:-----|:-----|
-|Published to end users  <br/> |Exchange, SharePoint, OneDrive, Office 365 groups  <br/> |
+|Published to end users  <br/> |Exchange, SharePoint, OneDrive, Office 365 Groups  <br/> |
 |Auto-applied based on sensitive information types  <br/> |Exchange (all mailboxes only), SharePoint, OneDrive  <br/> |
-|Auto-applied based on a query  <br/> |Exchange, SharePoint, OneDrive, Office 365 groups  <br/> |
+|Auto-applied based on a query  <br/> |Exchange, SharePoint, OneDrive, Office 365 Groups  <br/> |
    
 In Exchange, auto-apply retention labels (for both queries and sensitive information types) are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types can apply only to all mailboxes; you can't select the specific mailboxes.
   
@@ -228,11 +228,11 @@ You can also create a view of the library that contains the **Labels** column or
   
 ![Library column for labels shown in custom view](../media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
   
-### Office 365 groups
+### Office 365 Groups
 
 When you publish retention labels to an Office 365 group, the retention labels appear in both the group site and group mailbox in Outlook on the web. The experience of applying a retention label to content is identical to that shown above for email and documents.
 
-To retain content for an Office 365 group, you need to use the Office 365 groups location. Even though an Office 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Office 365 group mailboxes.
+To retain content for an Office 365 group, you need to use the Office 365 Groups location. Even though an Office 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Office 365 group mailboxes.
 
 In addition, it's not possible to use the Exchange location to include or exclude a specific group mailbox. Although the Exchange location initially allows a group mailbox to be selected, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
   
@@ -426,7 +426,7 @@ All retention labels that are configured for trainable classifiers are evaluated
 
 ## Use retention labels instead of these features
 
-Retention labels can easily be made available to an entire organization and its content across Office 365, including Exchange, SharePoint, OneDrive, and Office 365 groups. If you need to classify content or manage records anywhere in Office 365, we recommend that you use retention labels.
+Retention labels can easily be made available to an entire organization and its content across Office 365, including Exchange, SharePoint, OneDrive, and Office 365 Groups. If you need to classify content or manage records anywhere in Microsoft 365, we recommend that you use retention labels.
   
 There are several other features that have previously been used to classify content or manage records in Office 365. These are listed below. These features will continue to work side by side with retention labels. While there are instances where the implementation of retention labels differs from previous features, the evolution of retention labels will drive the future of records management across Office 365. Therefore, moving forward, for data governance, we recommend that you use retention labels instead of these features.
   

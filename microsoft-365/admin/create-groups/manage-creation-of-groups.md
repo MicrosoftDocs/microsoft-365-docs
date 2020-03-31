@@ -1,5 +1,5 @@
 ---
-title: "Manage who can create Office 365 groups"
+title: "Manage who can create groups"
 f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh

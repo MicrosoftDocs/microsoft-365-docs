@@ -197,4 +197,4 @@ This option is great if you want to have a company email address such as info@co
 
 [Upgrade distribution lists to Office 365 groups](../manage/upgrade-distribution-lists.md)
 
-[Manage Office 365 groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[Manage Office 365 Groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
