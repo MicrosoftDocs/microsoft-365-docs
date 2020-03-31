@@ -32,19 +32,19 @@ New pre-configured templates for assessments are released into production for Co
 - SOC 1
 - SOC 2
 
-### Improvements in managing assessments
+## Improvements in managing assessments
 
 The latest release of Compliance Manager in April 2020 includes updates simplifying how you create and customize assessments and keep them updated. View the [Compliance Manager release notes](compliance-manager-release-notes.md) for details.
 
-### Language support
+## Language support
 
 Compliance Score is now available in the following languages in addition to English: Chinese (Simplified), Chinese (Traditional), French, German, Italian, Japanese, Korean, Portuguese (Brazil), Russian, and Spanish.
 
-### Common actions will synch status across groups
+## Common actions will synch status across groups
 
 If your organization has multiple groups of assessments, the behavior of **Technical** actions (that is, actions affecting your entire organization) has changed. Any duplicate actions across groups have been combined into one single action. That single action contains all uploaded notes and evidence from the duplicate versions. With this change, technical actions will now behave as they did when they belonged to the same group. Any change made to the action in one group or assessment will now be reflected in all instances. The **Implementation Status**, **Implementation Date**, **Test Status**, and **Test Date** will reflect the most recent updates.
 
-### Compliance Score relationship to Compliance Manager
+## Compliance Score relationship to Compliance Manager
 
 Many of the compliance functions handled in Compliance Manager can now be done in Compliance Score. However some functionality still resides only in Compliance Manager, and some previous functionality in Compliance Manager is altered during the public preview period. 
 
