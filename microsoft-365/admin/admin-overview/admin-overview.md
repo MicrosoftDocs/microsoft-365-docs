@@ -1,5 +1,5 @@
 ---
-title: "Admin overview"
+title: "Office 365 admin overview"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,10 +21,10 @@ ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: "Learn about the Microsoft 365 admin center: how to sign in, who your admin is, and watch a video introduction about it."
 ---
 
-# Admin overview 
+# Office 365 admin overview 
 
   
-When you buy a [Microsoft 365 Apps for business plan](https://go.microsoft.com/fwlink/?linkid=856886) or a [Microsoft 365 for business plan](https://www.microsoft.com/microsoft-365/business), we give you a special account that has admin permissions. This account is called an admin account.
+When you buy an [Office 365 business plan](https://go.microsoft.com/fwlink/?linkid=856886) or a [Microsoft 365 for business plan](https://www.microsoft.com/microsoft-365/business), we give you a special account that has admin permissions. This account is called an admin account.
   
 With this account you can access the Microsoft 365 admin center to manage your business: add users, manage your subscription, reset passwords, and more. Try it!
   
@@ -61,6 +61,6 @@ When looking for your admin to reset your password, delete an account, or do oth
     
 - **Small businesses**: Contact the business owner / co-owner. Often they give admin permissions to their IT consultant who does all the computer maintenance work for their business. 
     
-By default, the person who signs up for and buys an Microsoft 365 for business subscription gets admin permissions. That person can assign admin permissions to other people to help them manage Microsoft 365 for their organization.
+By default, the person who signs up for and buys an Office 365 for business subscription gets admin permissions. That person can assign admin permissions to other people to help them manage Office 365 for their organization.
   
 If you have no idea who to contact at your work or school for help, try asking the person who gave you your user account and password.
