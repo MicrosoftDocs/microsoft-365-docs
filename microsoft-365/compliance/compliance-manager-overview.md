@@ -10,10 +10,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal. Compliance Manager enables you to track, assign, and verify regulatory compliance activities related to Microsoft cloud services."
+description: In this article, you will get an overview of the Microsoft Compliance Manager; a free workflow-based risk assessment tool in the Microsoft Service Trust Portal.
 ---
 
 # Microsoft Compliance Manager (Preview)

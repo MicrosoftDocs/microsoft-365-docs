@@ -1,5 +1,5 @@
 ---
-title: "Customize your team site for file storage and sharing"
+title: "Customize team site for file storage and sharing - SharePoint Online"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,6 +16,7 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - IT_Networking
+- seo-marvel-mar2020
 search.appverid:
 - BCS160
 - MET150

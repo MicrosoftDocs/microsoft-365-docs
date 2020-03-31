@@ -16,7 +16,9 @@ ms.collection:
 - M365-security-compliance
 search.appverid: 
 - MET150
-description: "The easiest, most common way to get started with DLP policies is to use one of the templates included in Office 365.
+ms.custom:
+- seo-marvel-mar2020
+description: In this article, you'll learn about how to create DLP policies using one of the templates included in Office 365.
 "
 ---
 
