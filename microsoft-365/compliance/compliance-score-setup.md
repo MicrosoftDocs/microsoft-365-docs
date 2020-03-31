@@ -27,6 +27,8 @@ The Microsoft 365 global administrator for your organization will likely be the 
 1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and **sign in** with your Microsoft 365 global admin account.
 2. Select **Compliance Score** on the left navigation pane. You should then see your [Compliance Score dashboard with your score](#understand-the-compliance-score-dashboard).
 
+The direct link to access Compliance Score is: [https://compliance.microsoft.com/compliancescore](https://compliance.microsoft.com/compliancescore).
+
 ## Set user permissions and assign roles
 
 Compliance Score uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Score, and the actions allowed by each user are restricted by role type.
@@ -52,7 +54,7 @@ The table below shows how each Microsoft 365 compliance center role maps to exis
 | **Assign users**| Global administrator | Portal admin | 
 
 > [!NOTE]
-> When you go from Compliance Score to Compliance Manager to complete a task (for example, to manage assessments), your browser will open a new tab and a dialog box appears. In the top section with the header, “Already a Microsoft cloud services customer? Sign in to your account,” select **Sign In** to access Compliance Manager; you will not need to re-enter your credentials.
+> When you go from Compliance Score to Compliance Manager to complete a task (for example, to manage assessments), your browser will open a new tab and a dialog box appears. In the top section with the header, "Already a Microsoft cloud services customer? Sign in to your account," select **Sign In** to access Compliance Manager; you will not need to re-enter your credentials.
 
 ### How to set permissions and roles in the Microsoft 365 compliance center
 
@@ -119,12 +121,12 @@ This section shows which solutions contain actions with the greatest opportunity
 
 This section gives you a more detailed view of your score in two different ways:
 
-- **Categories**: shows the percentage of your overall score within data protection categories, such as “protect information” or “manage devices.”
+- **Categories**: shows the percentage of your overall score within data protection categories, such as "protect information" or "manage devices."
 - **Assessments**: shows the percentage of your progress in managing assessments for particular compliance and data protection standards, regulations, or laws, such as GDPR or NIST 800-53.
 
 ### Filtering your dashboard view
 
-You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, type of action, [groups of assessments you set up](working-with-compliance-manager.md#groups), or data protection categories. Filtering your view in this way will also filter the score on your dashboard, showing how many points you’ve achieved out of total possible points based on your filter criteria.
+You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, type of action, [groups of assessments you set up](working-with-compliance-manager.md#groups), or data protection categories. Filtering your view in this way will also filter the score on your dashboard, showing how many points you've achieved out of total possible points based on your filter criteria.
 
 To apply filters:
 
