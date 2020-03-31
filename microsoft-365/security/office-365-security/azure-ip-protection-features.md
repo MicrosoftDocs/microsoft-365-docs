@@ -24,7 +24,7 @@ To help with the initial step in protecting your information, starting July 2018
 
 ## Changes beginning July 1, 2018
 
-Starting July 1, 2018, Microsoft will enable the protection capability in Azure Information Protection for all Office 365 tenants who have one of the following subscription plans:
+Starting July 1, 2018, Microsoft will enable the protection capability in Azure Information Protection for all organizations with one of the following subscription plans:
 
 - Office 365 Message Encryption is offered as part of Office 365 E3 and E5, Microsoft E3 and E5, Office 365 A1, A3, and A5, and Office 365 G3 and G5. You do not need additional licenses to receive the new protection capabilities powered by Azure Information Protection.
 

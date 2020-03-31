@@ -97,7 +97,7 @@ If a tenant was created by Microsoft, you can claim and manage that tenant by fo
     
 4. Select the app launcher icon in the upper-left and choose **Admin**.
     
-    ![The Office 365 app launcher with the Admin app highlighted](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![App launcher with the Admin app highlighted](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. Read the instructions on the **Become the admin** page and then select **Yes, I want to be the admin**.
     
