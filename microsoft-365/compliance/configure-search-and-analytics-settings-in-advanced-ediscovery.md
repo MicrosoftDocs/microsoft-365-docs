@@ -1,5 +1,5 @@
 ---
-title: "Configure search and analytics settings"
+title: Configure search and analytics settings - eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,6 +17,7 @@ search.appverid:
 ms.assetid: 
 
 description: "Configure Advanced eDiscovery settings that apply to all review set in a case. This includes settings for analytics and OCR."
+ms.custom: seo-marvel-mar2020
 ---
 
 # Configure search and analytics settings

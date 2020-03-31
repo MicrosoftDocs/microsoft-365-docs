@@ -18,7 +18,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to place holds on custodians and their data sources to preserve relevant content for your Advanced eDiscovery case.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Manage holds in Advanced eDiscovery

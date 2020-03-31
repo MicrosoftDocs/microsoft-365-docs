@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to create, configure, and save a new investigation in Data Investigations (Preview) in the Microsoft 365 compliance center.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Create a new investigation in Data Investigations (Preview)

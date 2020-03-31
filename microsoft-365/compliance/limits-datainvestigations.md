@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Find information about description, indexing, search, export, and download limits in Data Investigations (Preview).
+ms.custom: seo-marvel-mar2020
 ---
 
 # Data Investigations (Preview) limits

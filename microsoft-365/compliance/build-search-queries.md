@@ -1,5 +1,5 @@
 ---
-title: "Build search queries"
+title: Build search queries - Data investigations 
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,6 +17,7 @@ search.appverid:
 ms.assetid: 
 
 description: "Use keywords and conditions to narrow the search scope when searching for data using Data Investigation in Microsoft 365."
+ms.custom: seo-marvel-mar2020
 ---
 
 # Build search queries
