@@ -44,7 +44,7 @@ Compliance Score automatically scans through your Microsoft 365 environment and 
 
 Your control status is updated on your Compliance Score dashboard every 24 hours. Once you follow a recommendation to implement a control, you will see the control status updated the next day.
 
-For example, if you turn on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflects that in the control access solution details. Conversely, if you didn’t turn on MFA, Compliance Score flags that as a recommended action for you to take.
+For example, if you turn on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflects that in the control access solution details. Conversely, if you didn't turn on MFA, Compliance Score flags that as a recommended action for you to take.
 
 During public preview, continuous assessment is available to a portion of controls, but not all.
   
@@ -82,3 +82,4 @@ Each control has an assigned value in Compliance Score based on the risk it repr
 | Corrective mandatory | 3 |
 | Corrective discretionary | 1 |
   
+![Compliance Score controls point values](../media/compliance-score-controls-scoring.png)
