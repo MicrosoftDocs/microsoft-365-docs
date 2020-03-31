@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: In this article you will get an overview of the Microsoft Compliance Manager; a free workflow-based risk assessment tool in the Microsoft Service Trust Portal.
+description: In this article, you will get an overview of the Microsoft Compliance Manager; a free workflow-based risk assessment tool in the Microsoft Service Trust Portal.
 ---
 
 # Microsoft Compliance Manager (Preview)
