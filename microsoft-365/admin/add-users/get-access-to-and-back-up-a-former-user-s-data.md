@@ -178,7 +178,7 @@ See how to [Export or backup email, contacts, and calendar to an Outlook .pst fi
   
   
   > [!NOTE]
-  > By default, 12 months of your email is available offline. See how to [Increase the data available offline](Https://docs.microsoft.com/en-us/outlook/troubleshoot/mailboxes/only-subset-items-synchronized)
+  > By default, your email is available offline for a period of 12 months. If required, see how to [increase the data available offline](Https://docs.microsoft.com/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
  
 ## Give another user access to a former user's email 
 
@@ -226,4 +226,3 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
   
 [OneDrive retention and deletion](/onedrive/retention-and-deletion)
   
-
