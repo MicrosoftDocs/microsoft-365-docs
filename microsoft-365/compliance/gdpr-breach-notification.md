@@ -1,6 +1,6 @@
 ---
 title: Breach Notification
-description: How Microsoft services protect against a personal data breach and how Microsoft responds and notifies you if a breach occurs.
+description: Learn how Microsoft services protect against a personal data breach and how Microsoft responds and notifies you if a breach occurs.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -14,6 +14,8 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
 ---
 
