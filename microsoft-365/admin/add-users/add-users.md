@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
-description: "Learn how to add users to Office 365, one at a time or multiple users at the same time from a CSV file."
+description: "Learn how to add users to Microsoft 365, one at a time or multiple users at the same time from a CSV file."
 ---
 
 # Add users individually or in bulk
 
-The people on your team each need a user account before they can sign in and access [Office 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395). The easiest way to add user accounts is to add them one at a time in the Microsoft 365 admin center. After you do this step, your users will have Office 365 licenses, sign in credentials, and Office 365 mailboxes.
+The people on your team each need a user account before they can sign in and access [Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395). The easiest way to add user accounts is to add them one at a time in the Microsoft 365 admin center. After you do this step, your users will have Microsoft 365 licenses, sign in credentials, and Microsoft 365 mailboxes.
 
 ::: moniker range="o365-worldwide"
 
@@ -43,7 +43,7 @@ The people on your team each need a user account before they can sign in and acc
   
 - **Name** Fill in first, last, display name, and username. 
     
-- **Domain** For example, if the user's username is Jakob, and his domain is contoso.com, he'll sign in to Office 365 by typing jakob@contoso.com. 
+- **Domain** For example, if the user's username is Jakob, and his domain is contoso.com, he'll sign in to by typing jakob@contoso.com. 
     
 - **Password settings** Choose to the use auto-generated password or create your own strong password for the user. 
     
@@ -71,7 +71,7 @@ The people on your team each need a user account before they can sign in and acc
   
 - **Name** Fill in first, last, display name, and user name. 
     
-- **Domain** For example, if the user's username is Jakob, and his domain is contoso.com, he'll sign in to Office 365 by typing jakob@contoso.com. 
+- **Domain** For example, if the user's username is Jakob, and his domain is contoso.com, he'll sign in to by typing jakob@contoso.com. 
     
 - **Contact information** Expand to fill in a mobile phone number, address, and so on. 
     
@@ -96,7 +96,7 @@ The people on your team each need a user account before they can sign in and acc
   
 - **Name** Fill in first, last, display name, and user name. 
     
-- **Domain** For example, if the user's username is Jakob, and his domain is contoso.com, he'll sign in to Office 365 by typing jakob@contoso.com. 
+- **Domain** For example, if the user's username is Jakob, and his domain is contoso.com, he'll sign in to by typing jakob@contoso.com. 
     
 - **Contact information** Expand to fill in a mobile phone number, address, and so on. 
     
@@ -110,10 +110,10 @@ The people on your team each need a user account before they can sign in and acc
 
 ::: moniker-end 
   
-After you add a user, you'll get an email notification from the Microsoft Online Services Team. The email will contain the person's Office 365 user ID and password so they can sign in to Office 365. You need to tell your new user about their Office 365 sign in information. Use your normal process for communicating new passwords.
+After you add a user, you'll get an email notification from the Microsoft Online Services Team. The email will contain the person's user ID and password so they can sign in to Microsoft 365. You need to tell your new user about their Microsoft 365 sign in information. Use your normal process for communicating new passwords.
 
 > [!NOTE]
->If you create users by migrating mail boxes, you will need to activate Office 365 user accounts by assigning licenses. If you don't assign a license to a user, their mailbox will be disabled after a grace period of 30 days. See how to [assign licenses to users](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) using the Microsoft 365 admin center.
+>If you create users by migrating mail boxes, you will need to activate user accounts by assigning licenses. If you don't assign a license to a user, their mailbox will be disabled after a grace period of 30 days. See how to [assign licenses to users](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) using the Microsoft 365 admin center.
 
 ### Video: Add and manage users in the admin center
 
@@ -125,7 +125,7 @@ Share the [Employee quick start guide](https://support.office.com/article/b97000
   
 ## Need help?
 
-[Contact Office 365 for business support](../contact-support-for-business-products.md).  
+[Contact Microsoft 365 for business support](../contact-support-for-business-products.md).  
 
 ## Have hundreds or thousands of users to add?
 
@@ -138,15 +138,15 @@ To add multiple users at the same time, follow these steps:
     
 - **Using ActiveDirectory?** [Set up directory synchronization for Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization). Use the Azure AD Connect tool to replicate Active Directory user accounts (and other Active Directory objects) in Office 365. The sync only adds the user accounts. You will need to assign licenses to the synced users before they can use email and other Office apps.
     
-- **Migrating from Exchange?** [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). When you migrate multiple mailboxes to Office 365 by using either cutover, staged, or a hybrid Exchange method, you will add users automatically as part of the migration. The migration only adds the user accounts. You will need assign licenses to the users before they can use email and other Office apps.
+- **Migrating from Exchange?** [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). When you migrate multiple mailboxes to Microsoft 365 by using either cutover, staged, or a hybrid Exchange method, you will add users automatically as part of the migration. The migration only adds the user accounts. You will need assign licenses to the users before they can use email and other Office apps.
 
 ## Related articles
 
-[Add a new employee to Office 365](add-new-employee.md)
+[Add a new employee to Microsoft 365](add-new-employee.md)
 
 [Delete a user from your organization](delete-a-user.md)
 
-[Restore a user in Office 365](restore-user.md)
+[Restore a user in Microsoft 365](restore-user.md)
 
-[Add several users at the same time to Office 365](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time)
+[Add several users at the same time to Microsoft 365](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time)
 

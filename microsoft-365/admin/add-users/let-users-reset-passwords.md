@@ -31,7 +31,7 @@ Getting crushed with people asking you to reset their passwords? As the Microsof
   
 Here are a few things you need to know:
   
-- You get self-service password reset for cloud users **free** with any Office 365 business, education, or nonprofit paid plan. It doesn't work with Office 365 trial. 
+- You get self-service password reset for cloud users **free** with any Microsoft 365 business, education, or nonprofit paid plan. It doesn't work with Microsoft 365 trial. 
     
 - It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features. 
     
