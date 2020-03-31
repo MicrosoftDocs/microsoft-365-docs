@@ -15,6 +15,8 @@ ms.collection:
 - M365-security-compliance
 search.appverid: 
 - MET150
+ms.custom:
+- seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: In this article, you'll learn how to create, test, and tune a DLP policy according to your organizational needs.
 ---
