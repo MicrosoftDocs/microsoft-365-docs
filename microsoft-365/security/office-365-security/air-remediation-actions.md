@@ -29,11 +29,15 @@ The following table summarizes threats and remediation actions in Office 365 ATP
 
 |Category|Threat/risk  |Remediation action(s)  |
 |---------|---------|---------|
-|Email    |Phish     | Soft delete email/cluster​        |
-|Email |Zapped phish​ <br/>(Email messages were delivered, and then [zapped​](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/zero-hour-auto-purge?view=o365-worldwide)) |Soft delete email/cluster​ |
+|Email |Malware <br/>(If more than a handful of email messages in a cluster contain malware, the cluster is considered to be malicious.)​   | Soft delete email/cluster​        |
+|Email |Malicious URL​<br/>(A malicious URL was detected by [Office 365 ATP Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-atp-safe-links-works). Email that contains a malicious URL is considered to be malicious​.)|Soft delete email/cluster​ |
+|Email    |Phish<br/>(If more than a handful of email messages in a cluster contain phishing attempts, the cluster is considered to be phish.)​      | Soft delete email/cluster​        |
+|Email |Zapped phish​ <br/>(Email messages were delivered and then [zapped​](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge).) |Soft delete email/cluster​ |
 |Email |Missed phish email [reported](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) by a user | [Automated investigation triggered by the user's report](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office?view=o365-worldwide#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
-|Email |Malware <br/>(Email cluster analysis found that more than a handful of malware messages are in the email cluster/query; therefore, the cluster is likely malicious.​)   | Soft delete email/cluster​        |
-|Email | | |
+|Email |Volume anomaly​ <br/>(Recent email quantities exceed the previous 7-10 days for matching criteria​)     |Volume anomaly is not a clear threat, but is merely an indication of larger email volumes in recent days compared to the last 7-10 days. Although this can indicate potential issues, confirmation is needed in terms of either malicious verdicts or a manual review of email messages/clusters. See [Find and delete suspicious email that was delivered](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered#find-and-delete-suspicious-email-that-was-delivered). |
+|Email |No threats found <br/>(The system did not find any threats based on files, urls, or analysis of email cluster verdicts.​) |Threats found and zapped after an investigation is complete are not reflected in an investigation's numerical findings, but such threats are viewable in [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer).​ |
+|User |A user clicked a malicious URL <br/>(A user was either allowed to navigate to a page that was later found to be malicious, or the user bypassed a [Safe Links warning page](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-warning-pages) to get to a malicious page.​) | |
+
 
 
 
