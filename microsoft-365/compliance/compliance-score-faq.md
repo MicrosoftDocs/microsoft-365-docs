@@ -20,11 +20,11 @@ description: "Find answers to frequently asked questions about Microsoft Complia
 
 ## What is Compliance Score?
 
-Microsoft Compliance Score is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that helps you understand your organization’s compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. It also provides built-in control mapping that helps connect common controls among key regulations and standards, so you can take one action to satisfy multiple requirements at the same time and better scale your compliance program.
+Microsoft Compliance Score is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that helps you understand your organization's compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. It also provides built-in control mapping that helps connect common controls among key regulations and standards, so you can take one action to satisfy multiple requirements at the same time and better scale your compliance program.
 
 ## How do I access Compliance Score?
 
-Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and **sign in** with a Microsoft 365 global admin, compliance admin, or compliance data admin role. Select **Compliance Score** on the left navigation pane. You should then see your [Compliance Score dashboard with your score](compliance-score-setup.md#understand-the-compliance-score-dashboard). If you don’t have appropriate role access, the global admin for your organization can grant you permission.
+Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and **sign in** with a Microsoft 365 global admin, compliance admin, or compliance data admin role. Select **Compliance Score** on the left navigation pane. You should then see your [Compliance Score dashboard with your score](compliance-score-setup.md#understand-the-compliance-score-dashboard). If you don't have appropriate role access, the global admin for your organization can grant you permission.
 
 ## What roles or permissions are needed to use Compliance Score?
 
@@ -48,7 +48,7 @@ No. Your compliance score measures your progress in completing recommended actio
 
 Compliance Score gives you an initial score based on the Microsoft 365 data protection baseline, which is a set of controls that includes common industry regulations and standards. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
-Organizations can create and add custom assessments that are more relevant to their organization. You can use one of Compliance Score's [out-of-the-box templates](compliance-score.md#templates) to create assessments for particular standards, or [create your own template](working-with-compliance-manager.md#create-a-template-1).
+Organizations can create and add custom assessments that are more relevant to their organization. You can use one of Compliance Score's [out-of-the-box templates](compliance-score.md#templates) to create assessments for particular standards, or [create your own template](working-with-compliance-manager.md#create-a-template).
 
 Read more about [how Compliance Score calculates your score](compliance-score-methodology.md).
 
