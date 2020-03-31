@@ -1,5 +1,5 @@
 ---
-title: "Create, edit, or delete a custom user view"
+title: "Create, edit, or delete a custom user view in Office 365"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
-description: "Learn to use filters to create, edit, or delete custom user view."
+description: "Learn to use filters to create, edit, or delete custom user view in Office 365."
 ---
 
-# Create, edit, or delete a custom user view
+# Create, edit, or delete a custom user view in Office 365
 
-If you're a global or user management admin of Microsoft 365, you can create custom user views to view a specific subset of users. These views are in addition to the standard set of views that come with Microsoft 365. You can create, edit, or delete custom user views, and the custom views you create are available to all admins.
+If you're a global or user management admin of Office 365, you can create custom user views to view a specific subset of users. These views are in addition to the standard set of views that come with Office 365. You can create, edit, or delete custom user views, and the custom views you create are available to all admins.
 
 ::: moniker range="o365-worldwide"
 
@@ -58,7 +58,7 @@ When you create, edit, or delete a custom user view, the changes will be shown i
 A few things to note about standard views: 
 
 - Some standard views display an unsorted list if there are more than 2,000 users in the list. To locate specific users in this list, use the search box. 
-- If you didn't purchase Microsoft 365 from Microsoft, **Billing admins** don't appear in the standard views list. For more information, see [Assigning admin roles](assign-admin-roles.md). 
+- If you didn't purchase Office 365 from Microsoft, **Billing admins** don't appear in the standard views list. For more information, see [Assigning admin roles](assign-admin-roles.md). 
   
 ## Choose the filters for your custom user view
 
@@ -83,12 +83,12 @@ You can also filter by additional user profile details used in your organization
     
 - **Unlicensed users** Select this box to find all the users who haven't been assigned a license. The results for this view can also include users who have an Exchange mailbox but don't have a license. To track those users specifically, use the filter **Unlicensed users with Exchange mailboxes or archives**. The results for this view can also include users who have an Exchange archive, but don't have a license.
     
-- **Unlicensed users with Exchange mailboxes or archives** Select this box to show user accounts that were created in Exchange Online and have an Exchange mailbox, but weren't assigned a Microsoft 365 license. The results of this filter include users who have or who were assigned an Exchange archive. 
+- **Unlicensed users with Exchange mailboxes or archives** Select this box to show user accounts that were created in Exchange Online and have an Exchange mailbox, but weren't assigned an Office 365 license. The results of this filter include users who have or who were assigned an Exchange archive. 
 
 > [!NOTE]
 > The **Unlicensed users with Exchange mailboxes** filter works when:
 1. The mailbox has been recently converted from **shared** to **user** and it has no license.
-2. The mailbox has been recently migrated but a license has not been assigned.
+2. The mailbox has been recently migrated to Office 365 but a license has not been assigned.
 3. The mailbox has been created using PowerShell, and a license has not been assigned.
 4. A new mailbox that has been created on-premise with a New-RemoteMailbox cmdlet is provisioned for the user.
     

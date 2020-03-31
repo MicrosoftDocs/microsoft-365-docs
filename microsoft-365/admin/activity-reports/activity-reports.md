@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: "Get a periodic report of how people in your organization are using Microsoft 365 services. Usage Overview dashboard lets you drill into each chart for more insights."
+description: "Get a periodic report of how people in your organization are using Office 365 services. Usage Overview dashboard lets you drill into each chart for more insights."
 ---
 
 # Activity Reports in the Microsoft 365 admin center
 
-You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.
+You can easily see how people in your business are using Office 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Office 365 license at all.
   
 Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
   
@@ -163,7 +163,7 @@ If you want to hide user level information when you're generating your reports, 
   
 Your user list will look like this:
   
-![Microsoft 365 reports - anonymized user list](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Office 365 reports - anonymized user list](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.
   
@@ -177,4 +177,3 @@ However, when you select a particular day (see number 3), up to 28 days from the
 
 [Reports in the Security &amp; Compliance Center](https://support.office.com/article/7acd33ce-1ec8-49fb-b625-43bac7b58c5a)
   
-
