@@ -34,16 +34,16 @@ Licensing for Advanced eDiscovery requires the appropriate organization subscrip
   - Microsoft 365 E5 or Office 365 E5 subscription
   
   - Microsoft 365 E3 subscription with E5 Compliance add-on
-  
-  - Office 365 E3 subscription with Advanced Compliance add-on
+
+  - Microsoft 365 E3 subscription with E5 eDiscovery and Audit add-on
 
   If you don't have an existing Microsoft 365 E5 plan and want to try Advanced eDiscovery, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 E5.
 
 - **Per-user licensing:** To add a user as a custodian in an Advance eDiscovery case, that user must be assigned one of the following licenses, depending on your organization subscription:
 
-  - Microsoft 365: Users must be assigned a Microsoft 365 E5 license or an E5 Compliance add-on license.
+  - Microsoft 365: Users must be assigned a Microsoft 365 E5 license, an E5 Compliance add-on license, or an E5 eDiscovery and Audit add-on license.
 
-  - Office 365: Users must be assigned an Office 365 E5 license or an Advanced Compliance add-on license.
+  - Office 365: Users must be assigned an Office 365 E5 license
 
    For information about how to assign licenses, see [Assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
