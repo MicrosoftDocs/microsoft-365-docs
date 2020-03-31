@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to use Advanced indexing to make sure your search captures all the data you want to investigate.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Advanced indexing of data for an investigation

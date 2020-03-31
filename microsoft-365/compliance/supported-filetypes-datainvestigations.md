@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: A table listing the supported file types and what viewers they can be viewed in for Data Investigations (Preview).
+ms.custom: seo-marvel-mar2020
 ---
 
 # Supported file types in Data Investigations (Preview)

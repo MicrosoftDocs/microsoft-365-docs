@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: "Learn how you can keep your organization safe from malicious files using ATP Safe Attachments for Office 365."
-ms.custom: seo-marvel-<mar>
+ms.custom: seo-marvel-mar2020
 ---
 
 # How Office 365 ATP Safe Attachments works
