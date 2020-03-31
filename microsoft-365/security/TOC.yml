@@ -257,12 +257,14 @@
                 - name: Report messages and files to Microsoft
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
                   items:
-                    - name: Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft
+                    - name: Use Admin Submission
                       href: ./office-365-security/admin-submission.md
                     - name: Enable the Report Message add-in
                       href: ./office-365-security/enable-the-report-message-add-in.md
                     - name: Install and use the Junk Email Reporting add-in
                       href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
+                    - name: Report junk email and phishing in Outlook on the web
+                      href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                     - name: Manually submit messages to Microsoft
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md 
                     - name: Submit malware and non-malware to Microsoft
