@@ -16,31 +16,30 @@ search.appverid: met150
 
 # Machine profile page
 
-The Microsoft 365 security portal provides you with Machine profile pages, so you can assess the health and status of devices on your network and in the cloud. The page displays a wealth of information, gathered from the [Microsoft Defender Advanced Threat Protect](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (Microsoft Defender ATP) platform, and/or from the cloud-based [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) platform.
+The Microsoft 365 security portal provides you with Machine profile pages, so you can quickly assess the health and status of devices on your network.
 
-> [!NOTE]
-> Devices that are enrolled in both MDATP and ITP will display information from both.
+The page displays a wealth of information, gathered from the [Microsoft Defender Advanced Threat Protect](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (Microsoft Defender ATP) platform, and from the cloud-based [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) platform.
 
-From the Machine profile, you can review in-depth information about what software the device is running, any past and present security events or alerts, and find links to relevant software patches.
+> [!IMPORTANT]
+> The machine profile page may appear slightly different, depending on whether the device is enrolled in Microsoft Defender ATP, Azure ATP, or both.
 
-You can also use the Machine profile page to perform some common security-related tasks, and quickly review basic details about the device.
+On the Machine profile, you can view current and past alerts, and properties related to the device, such as what operating system it is running or which users have logged in to use it.
+
+If the device is enrolled in Microsoft Defender ATP, you can also use the Machine profile page to perform some common security-related tasks, such as patching the device against vulnerabilities.
 
 ## Navigating the Machine profile page
 
-You can access the Machine profile page for any device, by selecting the device name on the Incidents list, Incidents overview page, or the Incidents list flyout.
+You can access the Machine profile page for any device, by selecting the device name from the Incidents list, Incidents overview page, or the Incidents list flyout.
 
 The profile page is broken up into two broad sections.
 
 ![Image of machine profile page with (1) Tab area (2) Sidebar and (3) Actions highlighted in red](../../media/mtp-machine-profile/hybrid-device-overall.PNG)
 
-> [!IMPORTANT]
-> The machine profile page for a given device may appear slightly different, based upon the platform or platforms where the device is enrolled.
-
 The sidebar (1) lists basic details about the device.
 
 The main content area (2) contains tabs that you can toggle through to view different kinds of information about the device.
 
-If the device is enrolled in Microsoft Defender ATP, you will also see the response actions bar (3). This area of the page allows you to perform common security-related tasks.
+If the device is enrolled in Microsoft Defender ATP, you will also see the response actions bar (3). Response actions allow you to perform common security-related tasks.
 
 ## Sidebar
 
@@ -58,26 +57,24 @@ The sidebar provides some important basic information in small subsections which
 
 ## Response actions
 
-Response actions offer a quick way to defend against and analyze threats.
+Response actions offer a quick way to defend against and analyze threats. These actions are only available if the device is enrolled in Microsoft Defender ATP.
 
 ![Image of action bar for Machine profile](../../media/mtp-machine-profile/hybrid-device-short-action-bar.PNG)
 
 > [!IMPORTANT]
-> There will be a variable number of actions listed on the profile page, depending on where the device is enrolled.
+> The number of response actions will vary, depending on where the device is enrolled.
 
-Devices enrolled in Microsoft Defender ATP will display the following three response actions:
+Devices that are enrolled in Microsoft Defender ATP will display the following three response actions:
 
 * **Manage tags** - Updates custom tags you have applied to this device.
 * **Isolate machine** - Isolates the device from your organization's network while keeping it connected to Microsoft Defender Advanced Threat Protection. You can choose to allow Outlook, Teams, and Skype for Business to run while the machine is isolated, for communication purposes.
 * **Action center** - View the status of submitted actions. Only available if another action has already been selected.
-
-The profile page may also display the following response actions, in addition to the three above:
-
 * **Restrict app execution** - Prevents applications that are not signed by Microsoft from running
 * **Run antivirus scan** - Updates Windows Defender Antivirus definitions and immediately runs an antivirus scan. Choose between Quick scan or Full scan.
 * **Collect investigation package** - Gathers information about the device. When the investigation is completed, you can download it.
-* **Initiate Live Response session** - Loads a remote shell on the device for [in-depth security investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response).
+* **Initiate Live Response Session** - Loads a remote shell on the device for [in-depth security investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response).
 * **Initiate automated investigation** - Automatically [investigates and remediates threats](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Although you can manually trigger automated investigations to run from this page, [certain alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) trigger automatic investigations on their own.
+* **Action center** - Displays information about any response actions that are currently running.
 
 ## Tabs section
 
@@ -133,7 +130,7 @@ The **Security recommendations** tab lists actions you can take to protect the d
 
 ![Image of security recommendations tab for Machine profile](../../media/mtp-machine-profile/hybrid-device-tab-security-recs.png)
 
-As with the previous tabs, the number of items displayed per page and which columns are visible can be customized.
+As with the previous tabs, the number of items displayed per page, as well as which columns are visible, can be customized.
 
 The default view includes columns that detail the security weaknesses addressed, the associated threat, the related component or software affected by the threat, and more. Items can be filtered by the recommendation's status.
 
