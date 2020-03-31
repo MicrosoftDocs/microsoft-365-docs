@@ -35,7 +35,7 @@ Alerts in Office 365 are in the Security &amp; Compliance Center. Here's how to 
     
 3. In the left pane, click **Alerts** to see the alerts features. 
     
- **To go to the Security &amp; Compliance Center using the Office 365 app launcher:**
+ **To go to the Security &amp; Compliance Center using the app launcher:**
   
 1. Sign in using your work or school account. 
     
