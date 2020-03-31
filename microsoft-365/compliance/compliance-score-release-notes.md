@@ -22,7 +22,7 @@ The public preview of Microsoft Compliance Score provides you with early access 
 
 Compliance Score is a new feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that calculates a risk-based score, measuring your progress towards completing recommended actions that help reduce compliance risks.
 
-### New templates for assessments
+## New templates for assessments
 
 New pre-configured templates for assessments are released into production for Compliance Score (Preview) as they become available. Check the [full list of templates here](compliance-score.md#templates). Recently-added templates include:
 
