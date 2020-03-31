@@ -211,7 +211,7 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 9. Select **Finish**.
 
 > [!NOTE]
-> The steps remain the same for accessing existing user Onedrive and email data.
+> The steps remain the same for accessing an existing user's OneDrive and email data.
     
 > [!TIP]
 > If you want to import or restore only a few items from an Outlook Data File (.pst), you can open the Outlook Data File. Then, in the navigation pane, drag the items from Outlook Data File folders to your existing Outlook folders. 
