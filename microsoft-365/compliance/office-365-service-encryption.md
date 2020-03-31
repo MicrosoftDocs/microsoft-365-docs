@@ -13,7 +13,7 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: In this article, you'll learn about Service Encryption that in addition to volume-level encrpytion can be used to encrypt customer data.
+description: In this article, you'll learn about Service Encryption that, in addition to volume-level encryption, can be used to encrypt customer data.
 ---
 
 # Office 365 Service Encryption
