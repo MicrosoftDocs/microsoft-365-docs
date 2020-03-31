@@ -161,8 +161,8 @@ You can also take advantage of these tutorials:
 - [Use Apple's Corporate Device Enrollment features in Apple Business Manager (ABM) to enroll iOS/iPadOS devices in Intune](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
 After enrolling devices, use the guidance in [Common identity and device access policies](../enterprise/identity-access-policies.md) to create these policies:
-- [Define device-compliance policies](../enterprise/identity-access-policies.md#define-device-compliance-policies)
-- [Require compliant PCs](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) (conditional access rule)
+- [Define device-compliance policies](../enterprise/identity-access-policies.md#define-device-compliance-policies) — The recommended settings for Windows 10 include requiring antivirus protection and Microsoft Defender Advanced Threat Protection (ATP) with a machine-risk score of Medium or better. Be sure compliance policies for other operating systems include antivirus protection and end-point protection software. 
+- [Require compliant PCs](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) — This is the conditional access rule in Azure AD that enforces the device compliance policies.
 
 Only one organization can manage a device, so be sure to exclude guest accounts from the conditional access rule in Azure AD. If you don't exclude guest and external users from policies that require device compliance, these policies will block these users. For more information, see [Updating the common policies to allow and protect guest and external access](../enterprise/identity-access-policies-guest-access.md).
 
