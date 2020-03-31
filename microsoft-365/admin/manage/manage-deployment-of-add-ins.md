@@ -102,6 +102,8 @@ Admins can turn on or off the add-ins they deploy for all users from the Microso
 2.    Select the deployed add-in. 
 3.    Click the **Status** toggle to turn the add-in **On** or **Off**. 
 4.    Save the changes.  
+
+One of three add-in states is also available.
  
 |**State**|**How the state occurs**|**Impact**|
 |:-----|:-----|:-----|
