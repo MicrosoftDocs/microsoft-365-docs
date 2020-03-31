@@ -2,7 +2,7 @@
   href: index.yml
 - name: Microsoft 365 Admin help center
   href: ../admin/admin-home.md
-  expanded: true
+  expanded: false
   items:
     - name: Try or buy
       items:
