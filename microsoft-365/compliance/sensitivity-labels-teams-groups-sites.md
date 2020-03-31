@@ -21,7 +21,7 @@ description: "Use sensitivity labels to protect content in SharePoint and Micros
 
 # Use sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)
 
-When you create sensitivity labels in the [Microsoft 365 compliance center](https://protection.office.com/), you can now apply them to the following containers: Microsoft Teams sites, Office 365 groups, and SharePoint sites. Use the following label settings to help protect the content in those containers:
+When you create sensitivity labels in the [Microsoft 365 compliance center](https://protection.office.com/), you can now apply them to the following containers: Microsoft Teams sites, Office 365 Groups, and SharePoint sites. Use the following label settings to help protect the content in those containers:
 
 - Privacy (public or private) of Office 365 group-connected teams sites
 - External users access
@@ -31,15 +31,15 @@ When you apply this label to a supported container, the label automatically appl
 
 Content in those containers however, do not inherit the labels for settings such as the label name, visual markings, or encryption. So that users can label their documents in SharePoint sites or team sites, [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## About the public preview for Microsoft Teams, Office 365 groups, and SharePoint sites
+## About the public preview for Microsoft Teams, Office 365 Groups, and SharePoint sites
 
-Sensitivity labels for Microsoft Teams, Office 365 groups, and SharePoint sites are in gradual rollout to tenants and might change before final release. This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
+Sensitivity labels for Microsoft Teams, Office 365 Groups, and SharePoint sites are in gradual rollout to tenants and might change before final release. This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
 
 Before you enable this preview and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
 
 ![A sensitivity label displayed in the Word desktop app](../media/sensitivity-label-word.png)
 
-After you enable and configure this preview, users can additionally see and apply sensitivity labels to Microsoft Teams, Office 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
+After you enable and configure this preview, users can additionally see and apply sensitivity labels to Microsoft Teams, Office 365 Groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
 
 ![A sensitivity label when creating a team site from SharePoint](../media/sensitivity-labels-new-team-site.png)
 
@@ -58,7 +58,7 @@ After you enable and configure this preview, users can additionally see and appl
     
     For full instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-3. Run the following command to synchronize your sensitivity labels to Azure AD, so that they can be used with Office 365 groups:
+3. Run the following command to synchronize your sensitivity labels to Azure AD, so that they can be used with Office 365 Groups:
     
     ```powershell
     Execute-AzureAdLabelSync
@@ -96,7 +96,7 @@ From the label policy, only the policy setting **Apply this label by default to 
 ## Sensitivity label management
 
 > [!WARNING]
-> Creating, modifying, and deleting sensitivity labels that you use for Microsoft Teams, Office 365 groups, and SharePoint sites requires careful coordination with publishing label policies to users. 
+> Creating, modifying, and deleting sensitivity labels that you use for Microsoft Teams, Office 365 Groups, and SharePoint sites requires careful coordination with publishing label policies to users. 
 
 Avoid creation errors for sites and groups that can affect all users by using the following guidance.
 
@@ -124,7 +124,7 @@ If you modify or delete a sensitivity label with the site and group settings ena
 
 4. If the sensitivity label isn't visible, you can now safely modify or delete the label. If the label is still visible, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
-## Assign sensitivity labels to Office 365 groups
+## Assign sensitivity labels to Office 365 Groups
 
 You're now ready to apply the sensitivity label or labels to Office 365 groups. Return to the Azure AD documentation for instructions:
 

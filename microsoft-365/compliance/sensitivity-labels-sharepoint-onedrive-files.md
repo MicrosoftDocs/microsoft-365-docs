@@ -43,7 +43,7 @@ Before this preview, when you applied sensitivity labels that included encryptio
 >
 > The SharePoint behavior also doesn't change for existing labeled and encrypted files in SharePoint before you enable the preview. For these files to benefit from the new capabilities, they must be either downloaded and uploaded, or edited after you enable the preview. For example, they will then be returned in search and eDiscovery results.
 
-You can also now apply sensitivity labels to Microsoft Teams, Office 365 groups, and SharePoint sites. For more information about this separate preview, see [Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md).
+You can also now apply sensitivity labels to Microsoft Teams, Office 365 Groups, and SharePoint sites. For more information about this separate preview, see [Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md).
 
 You always have the choice to opt out of this preview at any time.
 
@@ -109,7 +109,7 @@ Before you enable the preview, ensure that you're running SharePoint Online Mana
 
 4. Select your language and then click **Download**.
 
-5. Choose between the x64 and x86 .msi file. Download the x64 file if you run the 64-bit version of Windows or the x86 file if you run the 32-bit version. If you don’t know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system)
+5. Choose between the x64 and x86 .msi file. Download the x64 file if you run the 64-bit version of Windows or the x86 file if you run the 32-bit version. If you don't know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system)
 
 
 6. After you have downloaded the file, run the file and follow the steps in the Setup Wizard.
@@ -131,7 +131,7 @@ To enable the preview, use the Set-SPOTenant cmdlet:
 
 ## Schedule roll-out after you create or change a sensitivity label
 
-After you create or change a sensitivity label in the Microsoft 365 compliance center, publish it in stages. If you publish labels that haven't fully synchronized, when users apply the labels to files and upload them to SharePoint, the files can’t be opened in the web versions of the Office apps. Search and eDiscovery also don't work for the files.
+After you create or change a sensitivity label in the Microsoft 365 compliance center, publish it in stages. If you publish labels that haven't fully synchronized, when users apply the labels to files and upload them to SharePoint, the files can't be opened in the web versions of the Office apps. Search and eDiscovery also don't work for the files.
 
 We recommend that you follow these steps:
 
