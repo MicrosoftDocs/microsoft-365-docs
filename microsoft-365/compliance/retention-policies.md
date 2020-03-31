@@ -116,13 +116,52 @@ A process periodically evaluates items in the Recoverable Items folder. If an it
   
 When a person attempts to change certain properties of a mailbox item — such as the subject, body, attachments, senders and recipients, or date sent or received for a message — a copy of the original item is saved to the Recoverable Items folder before the change is committed. This action happens for each subsequent change. At the end of the retention period, copies in the Recoverable Items folder are permanently deleted.
   
-When the retention policy assigned to a mailbox or public folder is to retain and delete:
+When the retention policy is to retain and delete:
 
 ![Diagram of retention flow in email and public folders](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **If the item is modified or permanently deleted** by the user (either SHIFT+DELETE or deleted from Deleted Items) during the retention period, the item is moved (or copied, in the case of edit) to the Recoverable Items folder. There, a process runs periodically and identifies items whose retention period has expired, and these items are permanently deleted within 14 days of the end of the retention period. Note that 14 days is the default setting, but it can be configured up to 30 days.
     
 2. **If the item is not modified or deleted** during the retention period, the same process runs periodically on all folders in the mailbox and identifies items whose retention period has expired, and these items are permanently deleted within 14 days of the end of the retention period. Note that 14 days is the default setting, but it can be configured up to 30 days. 
+When the retention policy is retain-only, or delete-only, the contents paths are variations of retain and delete:
+
+#### Content paths for retain-only retention policy
+
+1. **If the item is modified or deleted** during the retention period: A copy of the original item is created in the Recoverable Items folder and retained until the end of the retention period, when the copy in the Recoverable Items folder is permanently deleted within 14 days after the item expires. 
+
+2. **If the item is not modified or deleted** during the retention period: Nothing happens before and after the retention period; the item remains in its original location.
+
+#### Content paths for delete-only retention policy
+
+1. **If the item is not deleted** during the retention period: At the end of the retention period, the item is moved to the Recoverable items folder. 
+
+2. **If the item is deleted** during the period, the item is immediately moved to the Recoverable items folder. If a user deletes the item from there or empties the Recoverable items folder, the item is permanently deleted. Otherwise, the item is permanently deleted after being in the Recoverable items folder for 14 days. 
+
+
+### Content in Teams
+
+When the retention policy is to retain and delete:
+
+1. **If a chat or channel message is modified or deleted** by the user during the retention period, the message is moved (or copied, in the case of edit) to the SubstrateHolds folder (a hidden folder in every user or group mailbox) and is stored in this folder until the retention period expires. The message is permanently deleted within one day after it expires.
+
+2. **If a chat or channel message isn't modified or deleted** during the retention period, the message is moved to the SubstrateHolds folder within one day after the it expires. The message is permanently deleted one day after it is moved to the SubstrateHolds folder.
+
+
+When the retention policy is retain-only, or delete-only, the message paths are variations of retain and delete:
+
+
+#### Content paths for retain-only retention policy
+
+1. **If a chat or channel message is modified or deleted** during the retention period: A copy of the original message is created in the SubstrateHolds folder and retained till the end of the retention period, when the copy in the SubstrateHolds folder is permanently deleted one day after the item expires. 
+
+2. **If the item is not modified or deleted** during the retention period: Nothing happens before and after the retention period; the message remains in its original location.
+
+#### Content paths paths for delete-only retention policy
+
+1. **If the message is not deleted** during the retention period: At the end of the retention period, the message is moved to the SubstrateHolds folder. 
+
+2. **If the item is deleted by the user** during the period, the item is immediately moved to the SubstrateHolds folder. If a user deletes the message from there or empties the SubstrateHolds folder, the item is permanently deleted. Otherwise, the message is permanently deleted one day after being in the SubstrateHolds folder.
+
 
 ### When a user leaves the organization
 
