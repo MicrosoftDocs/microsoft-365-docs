@@ -13,6 +13,8 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
+ms.custom:
+- seo-marvel-mar2020
 description: In this article, you will find release notes containing information about new features and known issues (to be resolve in upcoming releases) in the Microsoft Compliance Manager.
 ---
 
