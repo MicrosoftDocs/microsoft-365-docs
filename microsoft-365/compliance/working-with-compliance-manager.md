@@ -516,8 +516,8 @@ To make changes to a Template you created or customized using the import process
 
 To make changes to one of your organization's existing templates, the general process is:
 
-1. From your **Templates** dashboard, select the Template you want to modify, which brings up your **Controls Info** dashboard.
-2. From here, select **Export**. This brings up an Excel sheet with all your template data.
+1. From your **Templates** dashboard, select the Template you want to modify, which brings up your **Controls Info** dashboard showing your **Template** tab.
+2. From here, select **Export**. An Excel sheet with all your template data will download.
 3. To edit, add, or remove an action, see the sections below.
 4. When you're done making changes to your Excel file, import the file back into the template by selecting the template from your dashboard and selecting **Import**. Your template will now include the changes you made.
 
