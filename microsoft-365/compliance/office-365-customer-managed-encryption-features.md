@@ -12,6 +12,8 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
+ms.custom:
+- seo-marvel-mar2020
 description: In this article, you'll learn about encryption technologies that you can manage and configure in Microsoft Office 365.
 ---
 
