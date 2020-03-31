@@ -29,7 +29,7 @@ Additional recommendations specific to Teams deployment are included in this art
 
 ## Getting started with Teams before other dependent services
 
-You don't need to enable dependent services to get started with Microsoft Teams. These will all 'just work.' However, you do need to be prepared to manage the following:
+You don't need to enable dependent services to get started with Microsoft Teams. These will all "just work." However, you do need to be prepared to manage the following:
 
 - Office 365 groups
 - SharePoint team sites

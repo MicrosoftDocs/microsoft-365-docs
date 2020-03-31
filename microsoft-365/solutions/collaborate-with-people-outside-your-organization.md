@@ -18,7 +18,7 @@ The external sharing capabilities in Microsoft 365 provide an opportunity for pe
 
 Collaborating with people outside your organization consists of two major components:
 
-- **Enable sharing** - Configure the sharing controls across Azure Active Directory, Teams, Office 365 groups, and SharePoint to allow the level of sharing that you want for your organization.
+- **Enable sharing** - Configure the sharing controls across Azure Active Directory, Teams, Office 365 Groups, and SharePoint to allow the level of sharing that you want for your organization.
 - **Enable additional security** - While the basic sharing features can be configured to require people outside your organization to authenticate, Microsoft 365 provides many additional security and compliance features to help you protect your data and maintain your governance policies while sharing externally.
 
 ## Enable sharing

@@ -230,7 +230,7 @@ Now that we verified that the KQL query is working correctly, let's create the l
 
 6. Type a name (for example, **Auto apply Product Specification label**) and an optional description for the label policy, and then select **Next**. 
 
-7. On the **Choose locations** wizard page, you select the content locations that you want to apply the policy to. For this scenario, we apply the policy only to SharePoint locations because all production documents are stored only in SharePoint document libraries. Select **Let me choose specific locations**, toggle the status for Exchange email, OneDrive accounts, and Office 365 groups to off and make sure the status for SharePoint sites is toggled on. 
+7. On the **Choose locations** wizard page, you select the content locations that you want to apply the policy to. For this scenario, we apply the policy only to SharePoint locations because all production documents are stored only in SharePoint document libraries. Select **Let me choose specific locations**, toggle the status for Exchange email, OneDrive accounts, and Office 365 Groups to off and make sure the status for SharePoint sites is toggled on. 
 
     ![Choose specific sites to auto-apply labels to](../media/SPRetentionSPlocations.png)
 

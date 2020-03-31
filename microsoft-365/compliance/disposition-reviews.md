@@ -49,7 +49,7 @@ When you create a retention label in the Microsoft 365 compliance center, Micros
 > [!NOTE]
 > Disposition reviews require an Office 365 Enterprise E5 subscription.
   
-A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Office 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
+A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Office 365 Groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
   
 ![Dispositions page in Security and Compliance Center](../media/Retention-Dispositions-v2-page.png)
 
@@ -101,7 +101,7 @@ Specific to the **View-Only Audit Logs** role:
 
 - Because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet, you must assign users this role by using the [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), rather than by using the **Permissions** page in the Security & Compliance Center. For instructions, see [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- Office 365 Groups aren't supported for this role. Instead, assign user mailboxes or mail users.
+- Office 365 groups aren't supported for this role. Instead, assign user mailboxes or mail users.
   
 ## How long until disposed content is permanently deleted
 

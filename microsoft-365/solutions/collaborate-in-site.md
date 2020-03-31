@@ -14,7 +14,7 @@ description: "Learn how to collaborate with guests in a SharePoint site."
 
 # Collaborate with guests in a site
 
-If you need to collaborate with guests across documents, data, and lists, you can use a SharePoint site. Modern SharePoint sites are connected to Office 365 Groups which can manage the site membership and provide additional collaboration tools such as a shared mailbox and calendar.
+If you need to collaborate with guests across documents, data, and lists, you can use a SharePoint site. Modern SharePoint sites are connected to Office 365 Groups and can manage the site membership and provide additional collaboration tools such as a shared mailbox and calendar.
 
 In this article, we'll walk through the Microsoft 365 configuration steps necessary to set up a SharePoint site for collaboration with guests.
 

@@ -1,5 +1,5 @@
 ---
-title: "Upgrade distribution lists to Office 365 groups in Outlook"
+title: "Upgrade distribution lists to Office 365 Groups in Outlook"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,26 +18,26 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: "Learn how to upgrade one or many distribution lists to Office 365 groups in Outlook, and how to use PowerShell to upgrade several distribution lists simultaneously."
+description: "Learn how to upgrade one or many distribution lists to Office 365 Groups in Outlook, and how to use PowerShell to upgrade several distribution lists simultaneously."
 ---
 
-# Upgrade distribution lists to Office 365 groups in Outlook
+# Upgrade distribution lists to Office 365 Groups in Outlook
 
-You can upgrade distribution lists to Office 365 groups with Outlook. This is a great way to give your organization's distribution lists all the features and functionality of Office 365 groups. [Why you should upgrade your distribution lists to groups in Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+You can upgrade distribution lists to Office 365 Groups with Outlook. This is a great way to give your organization's distribution lists all the features and functionality of Office 365 Groups. [Why you should upgrade your distribution lists to groups in Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
 You can upgrade DLs one at a time, or several at the same time.
 
-## Upgrade one or many distribution lists to Office 365 groups in Outlook
+## Upgrade one or many distribution lists to Office 365 Groups in Outlook
 
-You must be a global admin or Exchange admin to upgrade a distribution list. To upgrade to Office 365 groups, a distribution group must have an owner with a mailbox. 
+You must be a global admin or Exchange admin to upgrade a distribution list. To upgrade to Office 365 Groups, a distribution group must have an owner with a mailbox. 
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
-2. In the Exchange admin center, go to **Recipients** \> **Groups**.<br/>You'll see a notice indicating you have distribution lists (also called **distribution groups** ) that are eligible to be upgraded to Office 365 groups.<br/> ![Select the Get started button](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. In the Exchange admin center, go to **Recipients** \> **Groups**.<br/>You'll see a notice indicating you have distribution lists (also called **distribution groups** ) that are eligible to be upgraded to Office 365 Groups.<br/> ![Select the Get started button](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
 3. Select one or more distribution lists (also called a **distribution group** ) from the **groups** page.<br/>![Select a distribution group](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-4. Select the upgrade icon.<br/>![Upgrade to Office 365 groups icon](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+4. Select the upgrade icon.<br/>![Upgrade to Office 365 Groups icon](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
 5. On the information dialog, select **Yes** to confirm the upgrade. The process begins immediately. Depending on the size and number of DLs you're upgrading, the process can take minutes or hours.<br/>If the distribution list can't be upgraded, a dialog appears saying so. See [Which distribution lists cannot be upgraded?](#which-distribution-lists-cannot-be-upgraded).
 
@@ -111,7 +111,7 @@ Get-DistributionGroup| Foreach-Object{
 }
 ```
 
-## FAQ about upgrading distribution lists to Office 365 groups in Outlook
+## FAQ about upgrading distribution lists to Office 365 Groups in Outlook
 
 ### Which distribution lists cannot be upgraded?
 

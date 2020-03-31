@@ -77,7 +77,7 @@ If needed, [Step 2](identity-secure-your-passwords.md#identity-password-prot) ca
 
 You've used [Azure AD self-service password reset rapid deployment](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to configure password reset for your users.
 
-If you don’t meet this condition, users will be dependent on user account administrators to reset their passwords, resulting in additional IT administration overhead.
+If you don't meet this condition, users will be dependent on user account administrators to reset their passwords, resulting in additional IT administration overhead.
 
 If needed, [Step 2](identity-secure-your-passwords.md#identity-pw-reset) can help you with this option.
 
@@ -93,9 +93,9 @@ If needed, [Step 2](identity-secure-your-passwords.md#identity-sso) can help you
 <a name="crit-identity-custom-sign-in"></a>
 ## Optional: The Office 365 sign-in screen is personalized for your organization
 
-You have used [Add company branding to your sign-in and Access Panel pages](https://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.
+You have used [Add company branding to your sign-in and Access Panel pages](https://aka.ms/aadpaddbranding) to add your organization's branding to the Office 365 sign-in page.
 
-If you skip this option, your users will see a generic Office 365 sign-in screen and might not be confident that they’re signing into your organization’s site.
+If you skip this option, your users will see a generic Office 365 sign-in screen and might not be confident that they're signing into your organization's site.
 
 If needed, [Step 2](identity-secure-your-passwords.md#identity-custom-sign-in) can help you with this option.
 
@@ -105,17 +105,17 @@ If needed, [Step 2](identity-secure-your-passwords.md#identity-custom-sign-in) c
 
 You used [Plan for Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) and [Conditional Access policies](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access) to enable Azure Multi-Factor Authentication (MFA) for your user accounts.
 
-If you skip this option, your user accounts are vulnerable to credential compromise by cyber attackers. If a user account’s password is compromised, all the resources and capabilities of the account, such as administrator roles, are available to the attacker. This allows the attacker to copy, destroy, or hold for ransom internal documents and other data.
+If you skip this option, your user accounts are vulnerable to credential compromise by cyber attackers. If a user account's password is compromised, all the resources and capabilities of the account, such as administrator roles, are available to the attacker. This allows the attacker to copy, destroy, or hold for ransom internal documents and other data.
 
 If needed, [Step 3](identity-secure-user-sign-ins.md#identity-mfa) can help you with this option.
 
 ### How to test
 
-1.	Create a test user account and assign them a license. 
-2.	Configure Azure Multi-Factor Authentication for the test user account with the additional verification method that you are using for actual user accounts, such as sending a text message to your phone. 
-3.	Sign in to the Office 365 portal with the test user account.
-4.	Verify that MFA prompts you for the additional verification information and results in a successful authentication. 
-5.	Delete the test user account.
+1.    Create a test user account and assign them a license. 
+2.    Configure Azure Multi-Factor Authentication for the test user account with the additional verification method that you are using for actual user accounts, such as sending a text message to your phone. 
+3.    Sign in to the Office 365 portal with the test user account.
+4.    Verify that MFA prompts you for the additional verification information and results in a successful authentication. 
+5.    Delete the test user account.
 
 <a name="crit-identity-ident-prot"></a>
 ## Optional: Azure AD Identity Protection is enabled to protect against credential compromise (Microsoft 365 E5 only)
@@ -126,7 +126,7 @@ You've enabled Azure AD Identity Protection to:
 - Detect possible credential compromise attempts.
 - Investigate and address ongoing suspicious identity incidents.
 
-If you skip this option, you won’t be able to detect or automatically thwart credential compromise attempts or investigate identity-related security incidents. This potentially leaves your organization vulnerable to a successful credential compromise and the resulting threat to your organization’s sensitive data.
+If you skip this option, you won't be able to detect or automatically thwart credential compromise attempts or investigate identity-related security incidents. This potentially leaves your organization vulnerable to a successful credential compromise and the resulting threat to your organization's sensitive data.
 
 If needed, [Step 3](identity-secure-user-sign-ins.md#identity-ident-prot) can help you with this option.
 
@@ -147,7 +147,7 @@ With directory synchronization, your users can sign in to Office 365 and other M
 
 If needed, [Step 4](identity-add-user-accounts.md#identity-sync) can help you meet this requirement.
 
-If you skip this requirement, you’ll have two sets of user accounts and groups:
+If you skip this requirement, you'll have two sets of user accounts and groups:
 
 - User accounts and groups that exist in your on-premises AD DS
 - User accounts and groups that exist in your Azure AD tenant
@@ -159,9 +159,9 @@ To verify that authentication with on-premises credentials works correctly, sign
 
 To verify that directory synchronization is working correctly, do the following:
 
-1.	Create a new test group in AD DS.
-2.	Wait for the synchronization time.
-3.	Check your Azure AD tenant to verify that the new test group name appears.
+1.    Create a new test group in AD DS.
+2.    Wait for the synchronization time.
+3.    Check your Azure AD tenant to verify that the new test group name appears.
 
 <a name="crit-identity-sync-health"></a>
 ## Optional: Directory synchronization is monitored
@@ -184,7 +184,7 @@ The Azure AD Connect Health portal shows the current and correct state of your o
 
 You've used the instructions in [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) to enable password writeback for the Azure AD tenant of your Microsoft 365 Enterprise subscription.
 
-If you skip this option, users who aren’t connected to your on-premises network must reset or unlock their AD DS passwords through an IT administrator.
+If you skip this option, users who aren't connected to your on-premises network must reset or unlock their AD DS passwords through an IT administrator.
 
 If needed, [Step 4](identity-add-user-accounts.md#identity-pw-writeback) can help you with this option.
 
@@ -208,7 +208,7 @@ Sign in to the Office 365 portal with your user account name and Azure Multi-Fac
 
 
 <a name="crit-identity-self-service-groups"></a>
-## Optional: Self-service group management is enabled for specific Azure AD security and Office 365 groups
+## Optional: Self-service group management is enabled for specific Azure AD security and Office 365 Groups
 
 You've determined which groups are appropriate for self-service management, instructed their owners on group management workflow and responsibilities, and [set up self-service management in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) for those groups.
 
@@ -217,13 +217,13 @@ If you skip this option, all Azure AD group management tasks must be done by IT 
 If needed, [Step 5](identity-use-group-management.md#identity-self-service-groups) can help you with this option.
 
 ### How to test
-1.	Create a test user account in Azure AD with the Azure portal.
-2.	Sign-in as with the test user account and create a test Azure AD security group.
-3.	Sign out and then sign-in with your IT administrator account.
-4.	Configure the test security group for self-service management for the test user account.
-5.	Sign out and then sign-in with your test user account.
-6.	Use the Azure portal to add members to the test security group.
-7.	Delete the test security group and the test user account.
+1.    Create a test user account in Azure AD with the Azure portal.
+2.    Sign-in as with the test user account and create a test Azure AD security group.
+3.    Sign out and then sign-in with your IT administrator account.
+4.    Configure the test security group for self-service management for the test user account.
+5.    Sign out and then sign-in with your test user account.
+6.    Use the Azure portal to add members to the test security group.
+7.    Delete the test security group and the test user account.
 
 <a name="crit-identity-dyn-groups"></a>
 ## Optional: Dynamic group membership settings automatically add user accounts to groups based on user account attributes
@@ -236,16 +236,16 @@ If you skip this option, group membership must be done manually as new accounts 
 - Manually remove them from the Sales group.
 - Manually add them to the Accounting group.
 
-If the Sales and Accounting groups were dynamic, you would only have to change the user account’s Department value.
+If the Sales and Accounting groups were dynamic, you would only have to change the user account's Department value.
 
 If needed, [Step 5](identity-use-group-management.md#identity-dyn-groups) can help you with this option.
 
 ### How to test
 
-1. Create a test dynamic group in Azure AD with the Azure portal and configure a rule for the Department equals “test1”.
-2. Create a test user account in Azure AD and set the Department property to “test1”.
+1. Create a test dynamic group in Azure AD with the Azure portal and configure a rule for the Department equals "test1".
+2. Create a test user account in Azure AD and set the Department property to "test1".
 3. Examine the properties of the user account to ensure that it was made a member of the test dynamic group.
-4. Change the value of the Department property for the test user account to “test2”.
+4. Change the value of the Department property for the test user account to "test2".
 5. Examine the properties of the user account to ensure that it is no longer a member of the test dynamic group.
 6. Delete the test dynamic group and the test user account.
 

@@ -91,7 +91,7 @@ Depending on your subscription, here are the available reports.
   
 - [Email apps usage](email-apps-usage.md)
   
-- [Office 365 groups](office-365-groups.md)
+- [Office 365 Groups](office-365-groups.md)
   
 - [OneDrive for Business user activity](onedrive-for-business-activity.md)
   

@@ -45,14 +45,14 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 In this section, you'll create a series of rules that automatically add or remove user accounts as members of an Azure AD group. This is known as *dynamic group membership*. The rules are based on user account attributes, such as Department or Country.
 
-Here’s how the rules are applied:
+Here's how the rules are applied:
 
 - If a new user account matches all the rules for the group, it becomes a member.
-- If a user account isn’t a member of the group, but its attributes change so that it matches all the rules for the group, it becomes a member of that group.
-- If a user account doesn’t match all the rules for the group, it isn’t added to the group.
+- If a user account isn't a member of the group, but its attributes change so that it matches all the rules for the group, it becomes a member of that group.
+- If a user account doesn't match all the rules for the group, it isn't added to the group.
 - If a user account is a member of the group, but its attributes change so that it no longer matches all the rules for the group, it is removed as a member of the group.
 
-To use dynamic membership, you must first determine the sets of groups that have a common set of user account attributes. For example, all members of the Sales department should be in the Sales Azure AD group, based on the user account attribute Department set to “Sales”.
+To use dynamic membership, you must first determine the sets of groups that have a common set of user account attributes. For example, all members of the Sales department should be in the Sales Azure AD group, based on the user account attribute Department set to "Sales".
 
 See the [instructions to create and configure the rules for a dynamic Azure AD group](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
 
@@ -73,11 +73,11 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 *This is optional and applies to both the E3 and E5 versions of Microsoft 365*
 
-In this section, you'll configure security groups in Azure AD to automatically assign licenses from a set of subscriptions to all the members of the group. This is known as *group-based licensing*. If a user account is added to or removed from the group, the licenses for the group’s subscriptions will be automatically assigned or unassigned from the user account.
+In this section, you'll configure security groups in Azure AD to automatically assign licenses from a set of subscriptions to all the members of the group. This is known as *group-based licensing*. If a user account is added to or removed from the group, the licenses for the group's subscriptions will be automatically assigned or unassigned from the user account.
 
 For Microsoft 365 Enterprise, you'll configure Azure AD security groups to assign the appropriate Microsoft 365 Enterprise license.
 
-Make sure you have enough licenses for all the group members. If you run out of licenses, new users won’t be assigned licenses until licenses become available.
+Make sure you have enough licenses for all the group members. If you run out of licenses, new users won't be assigned licenses until licenses become available.
 
 >[!Note]
 >You should not configure *group-based licensing* for groups that contain Azure business to business (B2B) accounts.

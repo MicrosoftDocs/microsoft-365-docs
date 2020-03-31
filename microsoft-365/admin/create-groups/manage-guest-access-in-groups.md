@@ -1,5 +1,5 @@
 ---
-title: "Manage guest access in Office 365 groups"
+title: "Manage guest access in Office 365 Groups"
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -20,9 +20,9 @@ ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: "Learn how to add guests to an Office 365 group, view guest users, and use PowerShell to control guest access."
 ---
 
-# Manage guest access in Office 365 groups
+# Manage guest access in Office 365 Groups
 
-By default, guest access for Office 365 groups is turned on for your organization. Admins can control whether to allow guest access to groups for their whole organization or for individual groups.
+By default, guest access for Office 365 Groups is turned on for your organization. Admins can control whether to allow guest access to groups for their whole organization or for individual groups.
 
 When it's turned on, group members can invite guest users to an Office 365 group through Outlook on Web. Invitations are sent to the group owner for approval.
 
@@ -126,7 +126,7 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 ## Related articles
 
-[Manage Group membership in the Microsoft 365 admin center](add-or-remove-members-from-groups.md)
+[Manage group membership in the Microsoft 365 admin center](add-or-remove-members-from-groups.md)
   
 [Azure Active Directory access reviews](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 

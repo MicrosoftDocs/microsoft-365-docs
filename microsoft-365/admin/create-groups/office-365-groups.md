@@ -1,5 +1,5 @@
 ---
-title: "Overview of Office 365 groups for administrators"
+title: "Overview of Office 365 Groups for administrators"
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn about Office 365 groups."
+description: "Learn about Office 365 Groups."
 ---
 
-# Overview of Office 365 groups for administrators
+# Overview of Office 365 Groups for administrators
 
-Office 365 groups is the foundational membership service that drives all teamwork across Microsoft 365. With Office 365 groups, you can give a group of people access to a collection of collaboration resources for those people to share. These resources include:
+Office 365 Groups is the foundational membership service that drives all teamwork across Microsoft 365. With Office 365 Groups, you can give a group of people access to a collection of collaboration resources for those people to share. These resources include:
 
 - A shared Outlook inbox
 - A shared calendar
@@ -61,7 +61,7 @@ If you have a lot of users, such as in a large corporation or enterprise, you ma
 
 ## Group limits
 
-The following limits apply to Office 365 groups:
+The following limits apply to Office 365 Groups:
 
 |Maximum...|Value|
 |:---------|:----|
@@ -73,16 +73,16 @@ The following limits apply to Office 365 groups:
 |File storage|1 Terabyte + 10 GB per subscribed user + any additional storage purchased. You can purchase an unlimited amount of additional storage.|
 |Group Mailbox size|50 GB|
 
-The default maximum number of Office 365 groups that an Office 365 organization can have is 500,000, but can be increased by request. For more information on Office 365 groups limits, see [Office 365 groups - Admin help](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx).
+The default maximum number of Office 365 groups that an organization can have is 500,000, but can be increased by request. For more information on Office 365 Groups limits, see [Office 365 Groups - Admin help](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx).
 
-Managing your Office 365 groups is more effective when you have actionable information about groups usage. The Microsoft 365 admin center has a reporting tool that can let you see things such as storage use, how many active groups you have and even how your users are using the groups. See: [Office 365 Reports in the admin center](../activity-reports/office-365-groups.md) for more information.
+Managing your Office 365 groups is more effective when you have actionable information about groups usage. The Microsoft 365 admin center has a reporting tool that can let you see things such as storage use, how many active groups you have and even how your users are using the groups. See: [Microsoft 365 Reports in the admin center](../activity-reports/office-365-groups.md) for more information.
 
 ## Which Microsoft 365 plans include groups?
 
 Any Microsoft 365 subscription that has Exchange Online and SharePoint Online will support groups. That includes the Business Essentials and Business Premium plans, and the Enterprise E1, E3 and E5 plans. The group takes on the licensing of the person who creates the group (also known as the "organizer" of the group). As long as the organizer has the proper license for whatever features you want the group to have, that license will convey to the group.
 
 > [!NOTE]
-> For more details about Office 365 service families and plans, see [Office 365 plan options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> For more details about Microsoft 365 service families and plans, see [Microsoft 365 plan options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
 
 If you have an Exchange-only plan you can still get the shared inbox and shared calendar features of groups in Outlook but you won't get the document library, Planner or any of the other capabilities.
 
@@ -94,10 +94,10 @@ Office 365 groups work with Azure Active Directory (AAD). The groups features yo
 
 ## Related articles
 
-[Learn about Office 365 groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Learn about Office 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[Upgrade distribution lists to Office 365 groups](../manage/upgrade-distribution-lists.md)
+[Upgrade distribution lists to Office 365 Groups](../manage/upgrade-distribution-lists.md)
 
-[Manage Office 365 groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Manage Office 365 Groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)

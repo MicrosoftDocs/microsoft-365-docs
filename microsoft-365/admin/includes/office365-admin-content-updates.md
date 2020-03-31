@@ -26,7 +26,7 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - Active Users](/Office365/Admin/activity-reports/active-users?view=o365-worldwide) | modified |
-| 1/10/2020 | [Activity Reports in the Microsoft 365 admin center](/Office365/Admin/activity-reports/activity-reports?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center](/Office365/Admin/activity-reports/activity-reports?view=o365-worldwide) | modified |
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - Email activity](/Office365/Admin/activity-reports/email-activity?view=o365-worldwide) | modified |
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - Email apps usage](/Office365/Admin/activity-reports/email-apps-usage?view=o365-worldwide) | modified |
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - Mailbox usage](/Office365/Admin/activity-reports/mailbox-usage?view=o365-worldwide) | modified |
