@@ -1,5 +1,5 @@
 ---
-title: Email threading and case data
+title: Email threading - eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,8 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
+description: When conducting an Advanced eDiscovery analysis, email threading parses an email conversation and separates each message into different categories.
 ms.custom: seo-marvel-mar2020
-description: ""
 ---
 
 # Email threading

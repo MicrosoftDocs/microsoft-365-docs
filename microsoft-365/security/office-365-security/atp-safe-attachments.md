@@ -17,7 +17,7 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: "The ATP Safe Attachments feature for Office 365 provides time-of-click verification of email attachments, protecting your organization from malicious files people send or receive in email."
-ms.custom: seo-marvel-<mar>
+ms.custom: seo-marvel-mar2020
 ---
 
 # Office 365 ATP Safe Attachments

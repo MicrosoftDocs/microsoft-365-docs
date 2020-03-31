@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to identify a document set for review in an investigation using the Search tool in Advanced eDiscovery.
+ms.custom: seo-marvel-2020
 ---
 
 # Collect data for a case in Advanced eDiscovery

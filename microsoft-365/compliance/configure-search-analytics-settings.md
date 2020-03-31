@@ -1,5 +1,5 @@
 ---
-title: Configure search and analytics settings for a case
+title: Configure search and analytics settings - Data investigations
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,8 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
+description: Learn how to configure search and analytics settings, like near duplicates, email threading, and themes when managing data investigations.
 ms.custom: seo-marvel-mar2020
-description: ""
 ---
 
 # Configure search and analytics settings

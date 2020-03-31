@@ -1,5 +1,5 @@
 ---
-title: View documents in a review set
+title: View documents in a review set - eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: ""
+description: Choose how you view content in Advanced eDiscovery, such as text, annotate, converted, or native view.
 ms.custom: seo-marvel-mar2020
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Near duplicate detection for a case
+title: Near duplicate detection - eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,8 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
+description: Use near duplicate detection to group textually similar documents when analyzing case data for Advanced eDiscovery.
 ms.custom: seo-marvel-mar2020
-description: ""
 ---
 
 # Near duplicate detection

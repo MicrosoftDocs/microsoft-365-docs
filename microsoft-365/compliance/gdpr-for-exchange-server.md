@@ -1,6 +1,6 @@
 ---
 title: "GDPR for Exchange Server"
-description: "Learn about how to address GDPR requirements on-premises Exchange Server."
+description:  In this article, you will learn about how to address GDPR requirements for on-premises Exchange Server.
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -10,6 +10,8 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
 ---
 

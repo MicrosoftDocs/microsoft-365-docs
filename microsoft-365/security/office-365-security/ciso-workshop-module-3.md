@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: "In this module, learn how to better protect corporate data inside and outside your network perimeter with identity and zero trust user access strategies."
-ms.custom: seo-marvel-<mar>
+ms.custom: seo-marvel-mar2020
 ---
 
 # CISO Workshop Module 3: Identity and Zero Trust User Access
