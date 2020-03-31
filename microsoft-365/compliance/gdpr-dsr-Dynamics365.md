@@ -15,6 +15,8 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
 ---
 
