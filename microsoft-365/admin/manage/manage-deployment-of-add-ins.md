@@ -55,7 +55,7 @@ Depending on the size of the target audience, you may want to add or remove roll
 Before you begin, see [Determine if Centralized Deployment of add-ins works for your Office 365 organization](centralized-deployment-of-add-ins.md).
 
   
-1. In the admin center, go to the **Settings** \> **Add-ins** page.
+1. In the Microsoft 365 admin center, go to the **Settings** > **Add-ins** page.
     
 2. Select **Deploy Add-in** at the top of the page. On the overview page, select **Next**.
     
@@ -96,12 +96,17 @@ The option that is right for your organization depends on your configuration. Ho
   
 ### Add-in states
 
-An add-in can either be in the **On** or **Off** state.
-  
+Admins can turn on or off the add-ins they deploy for all users from the Microsoft 365 admin center.
+
+1.    In the admin center, go to the **Settings** > **Add-ins** page. 
+2.    Select the deployed add-in. 
+3.    Click the **Status** toggle to turn the add-in **On** or **Off**. 
+4.    Save the changes.  
+ 
 |**State**|**How the state occurs**|**Impact**|
 |:-----|:-----|:-----|
 |**Active**  <br/> |Admin uploaded the add-in and assigned it to users or groups.  <br/> |Users and groups assigned to the add-in see it in the relevant clients.  <br/> |
-|**Turned off**  <br/> |Admin turned off the add-in.  <br/> |Users and groups assigned to the add-in no longer have access to it.  <br/> If the add-in state is changed to Active, the users and groups will have access to it again.  <br/> |
+|**Turned off**  <br/> |Admin turned off the add-in.  <br/> |Users and groups assigned to the add-in no longer have access to it.  <br/> If the add-in state is changed to **Active**, the users and groups will have access to it again.  <br/> |
 |**Deleted**  <br/> |Admin deleted the add-in.  <br/> |Users and groups assigned the add-in no longer have access to it.  <br/> |
    
 Consider deleting an add-in if no one is using it any more. Turning off an add-in may make sense if an add-in is used only during specific times of the year.
