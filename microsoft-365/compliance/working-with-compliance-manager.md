@@ -494,7 +494,7 @@ The **Actions** tab is required.  It designates actions of your organization and
 
 - **actionDescription**: Provide a description of the action. You can apply formatting such as bold text and hyperlinks. This is required field.
 
-- **dimension-Action Purpose**: This is an optional field. You don't need to have dimensions for your actions. Any dimensions you include here will be used as filters in Compliance Score and appear on the improvement actions details page in Compliance Score. If you include dimensions here, you must list them on the Dimensions tab, as explained in the section immediately below.
+- **dimension-Action Purpose**: This is an optional field. You don't need to have dimensions for your actions. Any dimensions you include here will be used as [filters in Compliance Score](compliance-score-setup.md#filtering-your-dashboard-view) and appear on the [improvement actions details page in Compliance Score](working-with-compliance-score#view-your-improvement-actions). If you include dimensions here, you must list them on the Dimensions tab, as explained in the section immediately below.
 
 ##### Dimensions tab
 
