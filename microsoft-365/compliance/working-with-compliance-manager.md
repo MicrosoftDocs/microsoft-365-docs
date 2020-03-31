@@ -488,13 +488,13 @@ The **Actions** tab is required.  It designates actions of your organization and
 
 ![Compliance Manager controls point values](../media/compliance-score-controls-scoring.png)
 
-- **actionOwnership**: This is the person who is responsible for the action overall. It is not necessarily the person who is assigned to complete the action. You can simply list "customer" here. This is a required field.
+- **actionOwnership**: This is the person who is responsible for the action overall. It is not necessarily the person who is assigned to complete the action. You may want to simply list "customer" here. This is a required field.
 
-- **actionDescriptionTitle**: This is the title of the description and is required. This description title allows you to have the same action in multiple templates and surface a different description in each template.  This field helps you clarify what template the description is referencing. So in most cases, you can simply put the name of the template you're creating in this field.
+- **actionDescriptionTitle**: This is the title of the description and is required. This description title allows you to have the same action in multiple templates and surface a different description in each template.  This field helps you clarify what template the description is referencing. In most cases, you can simply put the name of the template you're creating in this field.
 
 - **actionDescription**: Provide a description of the action. You can apply formatting such as bold text and hyperlinks. This is required field.
 
-- **dimension-Action Purpose**: This is an optional; you do not need to have dimensions for your actions. Any dimensions you include here will be used as filters in Compliance Score and appear on the improvement actions details page in Compliance Score. If you include dimensions here, you must list them on the Dimensions tab, as explained in the section immediately below.
+- **dimension-Action Purpose**: This is an optional field. You don't need to have dimensions for your actions. Any dimensions you include here will be used as filters in Compliance Score and appear on the improvement actions details page in Compliance Score. If you include dimensions here, you must list them on the Dimensions tab, as explained in the section immediately below.
 
 ##### Dimensions tab
 
@@ -503,14 +503,14 @@ The **Dimensions** tab is optional. However, if you reference a dimension elsewh
 - **dimensionKey**: list as "product", "certifications," "action purpose"
 - **dimensionValue**: examples: Office 365, HIPPA, Preventative, Detective
 
-You can view your existing dimensions by going to **Tenant Management** in Compliance Manager and selecting the **Dimensions** tab. Also, any time you export an existing template, the exported spreadsheet will have the Dimensions tab, which lists all the dimensions used in the template.
+You can view your existing dimensions by going to **Tenant Management** and selecting the **Dimensions** tab. Also, any time you export an existing template, the exported spreadsheet will have the **Dimensions** tab, which lists all the dimensions used in the template.
 
 #### How to make changes to an existing Template
 
 To make changes to a Template you created or customized using the import process outlined above, you use the same process to import those changes into your Template.
 
 > [!NOTE]
-> **There are several important factors to be aware of as you edit or modify template components, so please review this section carefully.**
+> There are several important factors to be aware of as you edit or modify template components, so please review this section carefully.
 
 ##### General process for editing a Template
 
@@ -519,26 +519,32 @@ To make changes to one of your organization's existing templates, the general pr
 1. From your **Templates** dashboard, select the Template you want to modify, which brings up your **Controls Info** dashboard.
 2. From here, select **Export**. This brings up an Excel sheet with all your template data.
 3. To edit, add, or remove an action, see the sections below.
-4. When you're done making changes to your Excel file, import the Excel file back into the template by selecting the template from your dashboard and selecting **Import**. Your template will now include the changes you made.
+4. When you're done making changes to your Excel file, import the file back into the template by selecting the template from your dashboard and selecting **Import**. Your template will now include the changes you made.
 
 ##### To edit Template attributes
 
-On the Templates tab, you can edit anything in the **title** and **inScopeServices** columns, and in any other column you may have added. However, you cannot edit anything in the **product** or **certification** columns.
+On the **Templates** tab, you can edit anything in the **title** column, the **inScopeServices** column, and in any other column you may have added. However, you can't edit anything in the **product** or **certification** columns.
 
 ##### To add an action to a Template
 
 1. Go to the **Actions** tab and add your information in the required fields in the first empty row underneath your existing actions.
-2. Go to your **ControlFamily** tab and add your new action the control it maps to in the **controlActionTitle** column (remember to separate multiple actions in this field with two semi-colons).
+2. Go to your **ControlFamily** tab and add your new action the control it maps to in the **controlActionTitle** column (remember to separate multiple actions in this field with two semi-colons, no space in between).
 3. Save your spreadsheet to your local machine.
+
+##### To edit an action's information
+
+You can change any action's information *except for its title*. You can edit any cell from columns B onward, and when you import the file back into the template, the actions in that template will now contain the updated data.
+
+You cannot edit the **actionTitle** (column A) because if you do, Compliance Manager considers this to be a new action. If you want to change an action's name, see the instructions immediately below.
 
 ##### To change the name of an action
 
-If you want to change the name of an existing action, you have to explicitly designate in the spreadsheet that you are replacing an existing name with a new name. To change an action's name, follow these steps:
+If you want to change the name of an action, you have to explicitly designate in the spreadsheet that you are replacing an existing name with a new name. To change an action's name, follow these steps:
 
 1. In the **Actions** tab of your spreadsheet, add a new column to the spreadsheet after column A.
-2. In this new column, which is now column B, put as its header in row 1 **oldActionTitle**.
+2. In this new column, which is now column B, put as its header in row one: **oldActionTitle**.
 3. Copy the contents of column A and paste them into column B. This puts your existing action titles, which are what you want to change, into column B.
-4. In column A, **actionTitle**, delete the old name and replace it with the new name you want to call your action.
+4. In column A, **actionTitle**, delete the old name and replace it with the new name for your action.
 
 > [!NOTE]
 > You can use this same process to rename a control or a control family.
@@ -558,7 +564,11 @@ When you import your spreadsheet back into the template, your action will be rem
 If you are removing the last action that a control references, then you need to remove the control.
 
 > [!NOTE]
-> **To remove a control**: Follow the same process for removing an action as outlined above. In the **ControlFamily** tab, add an **Operation** column and put **Delete** next to the control you want to remove.
+> To remove a control: Follow the same process for removing an action as outlined above. In the **ControlFamily** tab, add an **Operation** column and put **Delete** next to the control you want to remove.
+
+#### Updates to Templates
+
+Each time an Assessment is updated through the versioning process, your customized Assessment will inherit those updates and keep your custom controls. See [Versioning alerts for Assessment updates](#versioning-alerts-for-assessment-updates).
 
 ### Export a Template to JSON
 
