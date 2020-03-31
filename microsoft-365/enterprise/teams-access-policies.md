@@ -29,7 +29,7 @@ Additional recommendations specific to Teams deployment are included in this art
 
 ## Getting started with Teams before other dependent services
 
-You don’t need to enable dependent services to get started with Microsoft Teams. These will all ‘just work.’ However, you do need to be prepared to manage the following:
+You don't need to enable dependent services to get started with Microsoft Teams. These will all 'just work.' However, you do need to be prepared to manage the following:
 
 - Office 365 groups
 - SharePoint team sites
@@ -59,8 +59,8 @@ This table lists the policies that need to be revisited and links to each policy
 |**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Be sure Teams and dependent services are included in the list of apps. Teams has Guest Access and External Access rules to consider as well, you'll learn more about these later in this article.|
 |        |[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Include Teams and dependent services in the assignment of cloud apps.|
 |        |[High risk users must change password](identity-access-policies.md#high-risk-users-must-change-password)|Forces Teams users to change their password when signing in if high-risk activity is detected for their account. Be sure Teams and dependent services are included in the list of apps.|
-|        |[Define app protection policies](identity-access-policies.md#define-app-protection-policies)|Be sure Teams and dependent services are included in the list of apps. Update the policy for each platform (iOS, Android, Windows).|
-|        |[Require approved apps](identity-access-policies.md#require-approved-apps)|Include Teams and dependent services in this policy.|
+|        |[Apply APP data protection policies](identity-access-policies.md#apply-app-data-protection-policies)|Be sure Teams and dependent services are included in the list of apps. Update the policy for each platform (iOS, Android, Windows).|
+|        |[Require approved apps and APP protection](identity-access-policies.md#require-approved-apps-and-app-protection)|Include Teams and dependent services in this policy.|
 |        |[Define device compliance policies](identity-access-policies.md#define-device-compliance-policies)|Include Teams and dependent services in this policy.|
 |        |[Require compliant PCs](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Include Teams and dependent services in this policy.|
 |**Sensitive**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams has Guest Access and External Access rules to consider as well, you'll learn more about these later in this article. Include Teams and dependent services in this policy.|

@@ -2,8 +2,8 @@
 title: "Anti-spoofing protection in Office 365"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTtracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date:
 audience: ITPro
@@ -84,10 +84,9 @@ To see Microsoft's general announcement, see [A Sea of Phish Part 2 - Enhanced A
 
 While SPF, DKIM, and DMARC are all useful by themselves, they don't communicate enough authentication status in the event a message has no explicit authentication records. Therefore, Microsoft has developed an algorithm that combines multiple signals into a single value called Composite Authentication, or compauth for short. Customers in Office 365 have compauth values stamped into the *Authentication-Results* header in the message headers.
 
-```
+```text
 Authentication-Results:
   compauth=<fail|pass|softpass|none> reason=<yyy>
-
 ```
 
 |**CompAuth result**|**Description**|
@@ -254,7 +253,7 @@ There are multiple different ways a message can be spoofed (see  [Differentiatin
 
 ### Changing your anti-spoofing settings
 
-To create or update your (cross-domain) anti-spoofing settings, navigate to the Anti-phishing \> Anti-spoofing settings under the Threat Management \> Policy tab in the Security &amp; Compliance Center. If you have never created any anti-phishing settings, you will need to create one:
+To create or update your (cross-domain) anti-spoofing settings, navigate to the Anti-phishing \> Anti-spoofing settings under the Threat Management \> Policy tab in the Security & Compliance Center. If you have never created any anti-phishing settings, you will need to create one:
 
 ![Anti-phishing - create a new policy](../../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
 
@@ -375,19 +374,19 @@ While it may be difficult at first to get sending domains to authenticate, over 
 
 ### Viewing reports of how many messages were marked as spoofed
 
-Once your anti-spoofing policy is enabled, you can use threat investigation and response capabilities to get numbers around how many messages are marked as phish. To do this, go into the Security &amp; Compliance Center (SCC) under Threat Management \> Explorer, set the View to Phish, and group by Sender Domain or Protection Status:
+Once your anti-spoofing policy is enabled, you can use threat investigation and response capabilities to get numbers around how many messages are marked as phish. To do this, go into the Security & Compliance Center (SCC) under Threat Management \> Explorer, set the View to Phish, and group by Sender Domain or Protection Status:
 
 ![Viewing how many messages are marked as phish](../../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
 
 You can interact with the various reports to see how many were marked as phishing, including messages marked as SPOOF. To learn more, see [Get started with Office 365 Threat investigation and response](office-365-ti.md).
 
-You can't yet split out which messages were marked due to spoofing as opposed to other types of phishing (general phishing, domain or user impersonation, and so on). However, later, you will be able to do this through the Security &amp; Compliance Center. Once you do, you can use this report as a starting place to identify sending domains that may be legitimate that are being marked as spoof due to failing authentication.
+You can't yet split out which messages were marked due to spoofing as opposed to other types of phishing (general phishing, domain or user impersonation, and so on). However, later, you will be able to do this through the Security & Compliance Center. Once you do, you can use this report as a starting place to identify sending domains that may be legitimate that are being marked as spoof due to failing authentication.
 
 The following screenshot is a proposal for how this data will look, but may change when released:
 
 ![Viewing phishing reports by detection type](../../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
 
-For non-ATP and E5 customers, these reports will be available later under the Threat Protection Status (TPS) reports, but will be delayed by at least 24 hours. This page will be updated as they are integrated into the Security &amp; Compliance Center.
+For non-ATP and E5 customers, these reports will be available later under the Threat Protection Status (TPS) reports, but will be delayed by at least 24 hours. This page will be updated as they are integrated into the Security & Compliance Center.
 
 ### Predicting how many messages will be marked as spoof
 
@@ -498,7 +497,7 @@ New-AntiphishRule -Name $name -AntiphishPolicy -RecipientDomainIs $domains
 Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 ```
 
-Disabling anti-spoofing is only available via cmdlet (later it will be available in the Security &amp; Compliance Center). If you do not have access to PowerShell, create a support ticket.
+Disabling anti-spoofing is only available via cmdlet (later it will be available in the Security & Compliance Center). If you do not have access to PowerShell, create a support ticket.
 
 Remember, this should only be applied to domains that undergo indirect routing when sent to Office 365. Resist the temptation to disable anti-spoofing because of some false positives, it will be better in the long run to work through them.
 
@@ -628,7 +627,7 @@ Microsoft's anti-spoofing technology was initially deployed to its organizations
 
 ### How can I report spam or non-spam messages back to Microsoft?
 
-You can either use the [Report Message Add-in for Outlook](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2), or if it isn't installed, [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+See [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ### I'm a domain administrator who doesn't know who all my senders are!
 
@@ -646,9 +645,11 @@ Unfortunately, no, because phishers will adapt to use other techniques such as c
 
 Nearly all large email receivers implement traditional SPF, DKIM, and DMARC. Some receivers have other checks that are more strict than just those standards, but few go as far as Office 365 to block unauthenticated email and treat them as a spoof. However, most of the industry is becoming more and more strict about this particular type of email, particularly because of the problem of phishing.
 
-### Do I still need the Advanced Spam Filtering option enabled for "SPF Hard Fail" if I enable anti-spoofing?
+### Do I still need to enable the Advanced Spam Filter (ASF) setting "SPF record: hard fail" (_MarkAsSpamSpfRecordHardFail_) if I enable anti-spoofing?
 
-No, this option is no longer required because the anti-spoofing feature not only considers SPF hard fails, but a much wider set of criteria. If you have anti-spoofing enabled and the SPF Hard Fail option enabled, you will probably get more false positives. We recommend disabling this feature as it would provide almost no additional catch for spam or phish, and instead generate mostly false positives.
+No, this option is no longer required because the anti-spoofing feature not only considers SPF hard fails, but a much wider set of criteria. If you have anti-spoofing enabled and the **SPF record: hard fail** (_MarkAsSpamSpfRecordHardFail_) turned on, you will probably get more false positives.
+
+We recommend disabling this feature as it would provide almost no additional catch for spam or phish, and would instead generate mostly false positives. For more information, see [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
 
 ### Does Sender Rewriting Scheme (SRS) help fix forwarded email?
 

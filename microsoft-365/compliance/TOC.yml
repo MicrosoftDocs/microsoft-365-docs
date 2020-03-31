@@ -46,6 +46,8 @@
           href: communication-compliance-investigate-remediate.md
         - name: Feature reference for communication compliance
           href: communication-compliance-feature-reference.md
+        - name: Case study - Contoso quickly configures an offensive language policy 
+          href: communication-compliance-case-study.md
         - name: Supervision policies in Office 365
           href: supervision-policies.md
         - name: Configure supervision policies for Office 365
@@ -201,13 +203,13 @@
     - name: Understand data classification (preview)
       href: data-classification-overview.md
       items: 
-        - name: View labeled content (preview)
+        - name: Get started with content explorer (preview)
           href: data-classification-content-explorer.md
-        - name: View label activity (preview)
+        - name: Get started with activity explorer (preview)
           href: data-classification-activity-explorer.md
         - name: Data classification public preview release notes (preview)
           href: data-classification-pub-preview-relnotes.md
-        - name: Getting started with trainable classifiers (preview)
+        - name: Get started with trainable classifiers (preview)
           href: classifier-getting-started-with.md
         - name: Using a built-in classifier (preview)
           href: classifier-using-a-ready-to-use-classifier.md
@@ -352,6 +354,8 @@
             href: export-search-results.md
           - name: Export a search report
             href: export-a-content-search-report.md
+          - name: Use Microsoft Edge to download search results
+            href: configure-edge-to-export-search-results.md
           - name: Search for and delete email messages
             href: search-for-and-delete-messages-in-your-organization.md
           - name: Search the cloud-based mailboxes of on-premises users
@@ -428,6 +432,8 @@
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
             href: retry-failed-content-search.md
+          - name: Use Microsoft Edge to download search results
+            href: configure-edge-to-export-search-results.md
     - name: Advanced eDiscovery
       items:
         - name: Overview of Advanced eDiscovery
@@ -632,6 +638,8 @@
               href: use-advanced-ediscovery-utilities.md
             - name: Run reports
               href: run-reports-in-advanced-ediscovery.md
+    - name: Retirement of legacy eDiscovery tools
+      href: legacy-ediscovery-retirement.md
 - name: Manage data investigations
   items: 
     - name: Overview of data investigations
@@ -812,6 +820,10 @@
           href: gdpr-for-office-online-server.md
         - name: GDPR for on-premises Windows Server file shares
           href: gdpr-for-on-premises-file-shares.md
+    - name: Industry-specific guidance
+      items: 
+        - name: Financial services security and compliance
+          href: ../solutions/financial-services-secure-collaboration.md
 - name: Regulatory compliance action plans
   items: 
     - name: ISO - Recommended action plan

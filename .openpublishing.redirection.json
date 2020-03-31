@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/commerce/billing-and-payments/apply-for-tax-exempt-status.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/tax-information#apply-for-tax-exempt-status",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/commerce/billing-and-payments/what-tax-will-i-be-charged.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/tax-information",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/commerce/subscriptions/what-happens-if-i-cancel.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription",
       "redirect_document_id": true
@@ -326,7 +336,7 @@
     },
     {
       "source_path": "microsoft-365/compliance/prevent-email-from-being-marked-as-spam.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/prevent-email-from-being-marked-as-spam",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection",
       "redirect_document_id": true
     },
     {
@@ -447,6 +457,136 @@
       "source_path": "microsoft-365/commerce/billing-and-payments/index.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-the-anti-spam-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/enable-or-disable-safety-tips.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-end-user-spam-notifications-in-eop.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies#configure-end-user-spam-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-end-user-spam-notifications-in-exchange-online.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies#configure-end-user-spam-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/fighting-junk-email.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/prevent-email-from-being-marked-as-spam.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/reduce-spam-email.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-an-administrator.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/fix-error-code-5-7-7xx-in-exchange-online.md",
+      "redirect_url": "https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/manage-safe-sender-lists-for-bulk-mailers.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/safe-sender-and-blocked-sender-lists-faq.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/quarantine.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/quarantine-email-messages",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/outbound-spam-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/troubleshooting-and-support-information.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/ciso-workshop.md",
+      "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/ciso-workshop-module-1.md",
+      "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/ciso-workshop-module-2.md",
+      "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/ciso-workshop-module-3.md",
+      "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-3",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/ciso-workshop-module-4a.md",
+      "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-4a",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/ciso-workshop-module-4b.md",
+      "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-4b",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/ciso-workshop-module-5.md",
+      "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-5",
+      "redirect_document_id": false
     }
   ]
 }
