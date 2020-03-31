@@ -23,9 +23,9 @@ These labs are designed to help you plan, test and validate your deployment and 
 
 This training is highly recommended for organizations preparing for Windows 7 end of life, and also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Additionally, as an isolated environment, the lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
 
-### [**Download the Windows and Office Deployment Lab Kit**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+[**Download the Windows and Office Deployment Lab Kit**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-## **A complete lab environment**
+## A complete lab environment
 
 The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured Configuration Manager instance. The lab contains the latest Evaluation Versions of the following products:
 
@@ -45,31 +45,31 @@ PLUS, the lab is designed to be connected to trials for:
   - Office 365 Enterprise E5
   - Enterprise Mobility + Security
 
-## **Step-by-step labs**
+## Step-by-step labs
 
 Detailed lab guides take you through multiple deployment and management scenarios. The labs have been updated for the latest versions of Intune and Configuration Manager (Version 1910). 
 
-### **Device and App Readiness**
+### Device and App Readiness
 
   - Desktop Analytics
   - NEW! Deploy and update the new Microsoft Edge 
   - Internet Explorer Mode 
   - Application Guard 
 
-### **Directory and Network Readiness**
+### Directory and Network Readiness
 
   - NEW! Optimize Windows 10 Update Delivery 
   - Configuration Manager and Microsoft Intune Co-Management
   - Remote Access (VPN)
 
-### **Office and LOB App Delivery**
+### Office and LOB App Delivery
 
   - Office 365 ProPlus deployment 
   - Enterprise Managed Deployment using Configuration Manager and Microsoft Intune
   - Application deployment and management using Microsoft Intune
   - App deployment and self-service installation using Microsoft Store for Business
 
-### **User File and Settings Migration**
+### User File and Settings Migration
 
   - Known Folder File Migration 
   - User State Migration Tool 
@@ -77,7 +77,7 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Start Menu Customization and UWP App Removal 
   - User Experience Virtualization (UE-V) 
 
-### **Security and Compliance**
+### Security and Compliance
 
   - BitLocker device encryption
   - Windows Defender Antivirus
@@ -88,7 +88,7 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Windows Defender Application Control
   - Windows Defender Advanced Threat Protection
 
-### **OS Deployment and Feature Updates**
+### OS Deployment and Feature Updates
 
   - OS Image Creation
   - OS Deployment Task Sequences in Configuration Manager 
@@ -96,19 +96,19 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Windows Autopilot
   - Provisioning Packages 
 
-### **Windows and Office as a Service**
+### Windows and Office as a Service
   - Manage Windows Updates using Group Policy
   - Servicing Windows 10 with Configuration Manager and Intune
   - Servicing Office 365 ProPlus with Configuration Manager
 
-### **NEW! Windows Virtual Desktop**
+### NEW! Windows Virtual Desktop
   - Windows Virtual Desktop: Prepare, Deploy, Optimize 
 
 ### [**Download the Windows and Office Deployment Lab Kit**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
 *Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires April 18, 2020. A new version will be published prior to expiration.*
 
-## **Additional guidance**
+## Additional guidance
 
   - [Desktop Deployment Center](https://www.aka.ms/howtoshift)
 
@@ -122,7 +122,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
   - [<span class="underline">Getting Started with Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 
-## **Related resources**
+## Related resources
 
   - [<span class="underline">Introducing Microsoft 365</span>](https://www.microsoft.com/microsoft-365/default.aspx)
 
