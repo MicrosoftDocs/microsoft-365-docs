@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
+ms.custom: seo-marvel-mar2020
 description: "Use keywords and conditions to narrow the scope of the search when searching for data using Advanced eDiscovery in Microsoft 365."
 ms.custom: seo-marvel-mar2020
 ---
