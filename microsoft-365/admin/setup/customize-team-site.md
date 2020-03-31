@@ -16,6 +16,7 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - IT_Networking
+- seo-marvel-mar2020
 search.appverid:
 - BCS160
 - MET150
