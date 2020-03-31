@@ -279,7 +279,7 @@ By default, the person who created the group is the group owner. Often a group w
     
 - [Why you should upgrade your distribution lists to groups in Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
-[Manage guest access in Office 365 Groups](manage-guest-access-in-groups.md)    
+- [Manage guest access in Office 365 Groups](manage-guest-access-in-groups.md)    
     
 - [Manage Office 365 Groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540): this article introduces you to key cmdlets and provides examples
     
