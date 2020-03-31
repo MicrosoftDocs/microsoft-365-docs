@@ -29,11 +29,11 @@ description: "Learn to delete a user account. Decide what to do with the user's 
   
 ||
 |:-----|
-|**Looking for how to delete your *own* Office 365 user account that you use at work or school? Contact the technical support at your work or university to do these steps for you.**|
+|**Looking for how to delete your *own* Microsoft 365 user account that you use at work or school? Contact the technical support at your work or university to do these steps for you.**|
    
 ## What you need to know about deleting users
 
-- Only people who have [Office 365 global admin](about-admin-roles.md) or User management permissions for the business or school can delete user accounts. 
+- Only people who have [Microsoft 365 global admin](about-admin-roles.md) or User management permissions for the business or school can delete user accounts. 
     
 - You have 30 days to [restore](restore-user.md) the account before the user's data is permanently deleted. 
     
@@ -41,7 +41,7 @@ description: "Learn to delete a user account. Decide what to do with the user's 
     
 - If you want to keep the user's email, **BEFORE** you delete the account, move the email to a different location. If you've already deleted the account: if it's been less than 30 days you can restore it, then move the email data, then delete the account. See [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md).
     
-- If you have an Enterprise subscription like Office 365 Enterprise E3, you can preserve the mailbox data of a deleted Office 365 user account by turning it into an *inactive mailbox*. To learn more, see [Manage inactive mailboxes in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
+- If you have an Enterprise subscription like Office 365 Enterprise E3, you can preserve the mailbox data of a deleted user account by turning it into an *inactive mailbox*. To learn more, see [Manage inactive mailboxes in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 
 ## Global admin: Delete a user, stop paying for their license, and choose what to do with their email and OneDrive content
@@ -170,13 +170,13 @@ Here are the most common issues people encounter when deleting a user:
   
 - **You get an error message along the lines of "User cannot be deleted. Please try again later."** Doublecheck whether the account has email forwarding set up on it, or it's been converted to a shared mailbox. Both of these will cause that error. Don't delete the account if it has email forwarding or it's been converted to a shared mailbox.
 
-- **You don't have the appropriate permissions to delete a user**. Only people who are [Office 365 global admins or user management admins](about-admin-roles.md) can delete users. Usually this is the technical support in your school or business.
+- **You don't have the appropriate permissions to delete a user**. Only people who are [Microsoft 365 global admins or user management admins](about-admin-roles.md) can delete users. Usually this is the technical support in your school or business.
 
 - **You delete the user but their name continues appear in your global address book**. This happens when a business is using Active Directory. You have to delete the users account from Active Directory. For instructions, see this TechNet article: [Delete a User Account.](https://go.microsoft.com/fwlink/p/?linkid=841808)
 
 ||
 |:-----|
-|**Do you want to delete Office 365 from your computer? Go to [Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).**|
+|**Do you want to delete Microsoft 365 from your computer? Go to [Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).**|
    
 ## Related articles
 
