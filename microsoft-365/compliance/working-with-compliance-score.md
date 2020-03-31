@@ -18,15 +18,19 @@ description: "Learn how to use the workflow tools in Microsoft Compliance Score 
 
 # Working with Microsoft Compliance Score (Preview)
 
-## Managing your workflow with improvement actions
+This article explains how to work with the key elements of Compliance Score. You'll learn how to use **improvement actions** to manage your compliance workflow.
 
-Using improvement actions in Compliance Score centralizes your compliance workflows. Improvement actions suggest recommended actions to align with data protection regulations and standards, and provide detailed implementation guidance. You can assign them to users to perform the necessary implementation and testing work. You can also store documentation and notes, and record status updates right in the improvement action itself.
+You'll also learn how to use the insights displayed on your **Solutions** and **Assessments** pages, and how to produce reports.
+
+## Manage your workflow with improvement actions
+
+**Improvement actions** centralize your compliance activities. Each one lists the actions you can take to help you align with data protection regulations and standards, including detailed implementation guidance. You can assign actions to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
 
 ## View your improvement actions
 
 The Compliance Score dashboard shows your **key improvement actions**—the ones with the most available points which address the most important issues.
 
-To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, or select **View all improvement actions** underneath the list of key improvement actions on your dashboard. This brings you to the the **Improvement actions** page, where you can see all of your organization’s improvement actions.
+To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, or select **View all improvement actions** underneath the list of key improvement actions on your dashboard. This brings you to the the **Improvement actions** page, where you can see all of your organization's improvement actions.
 
 If you have a long list of actions, it may be helpful to filter your view. To do this, select **Filter** at the upper-right corner of the actions list. When the **Filters** flyout pane appears, then select your desired criteria based on regulations and standards, solution, and group. You can also customize your view by selecting **Group** in the upper-right corner and, from the drop-down menu, select to view by group, solution, category, action type, or status.
 
@@ -162,7 +166,7 @@ You can also modify your view to see assessments by group, product, or regulatio
 
 ### Taking actions from the solutions page
 
-The solutions page displays your organization’s solutions that are connected to improvement actions. The table lists each solution's contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score. 
+The solutions page displays your organization's solutions that are connected to improvement actions. The table lists each solution's contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score. 
 
 There are two ways you can take action from this screen:
 
@@ -190,15 +194,15 @@ On this page you can quickly view important information about each assessment:
 
 ### Default assessments
 
-By default, you will see the Microsoft 365 data protection baseline assessment on the assessments page. Compliance Score also provides several out-of-box assessments ([view the full list](compliance-score.md#templates)). If you want to add more assessments to cover additional regulations and standards, you can do this in Compliance Manager.
+By default, you will see the Microsoft 365 data protection baseline assessment on the assessments page. Compliance Score also provides several pre-configured assessments ([view the full list](compliance-score.md#templates)). If you want to add more assessments to cover additional regulations and standards, you can do this in Compliance Manager.
 
 ### Managing assessments
 
-During public preview, functionality for viewing, creating, exporting, and archiving assessments remains in the Compliance Manager tool. 
+During public preview, you will go to the Compliance Manager tool to crate, customize, and manage your assessments.
 
-To manage your assessments, select **Manage Assessments in Compliance Manager** at the top of the assessments list.
+On the **Assessments** page in Compliance Score, select **Manage Assessments in Compliance Manager** at the top of your assessments list. This link takes you to your **Assessments** dashboard in Compliance Manager.
 
-The other link at the top of the assessments list, **Microsoft actions in Compliance Manager**, takes you to the page in Compliance Manager showing Microsoft controls that contribute to your compliance score.
+The other link at the top of the assessments list, **Microsoft actions in Compliance Manager**, takes you to your **Controls Info** dashboard in Compliance Manager showing Microsoft controls that contribute to your compliance score.
 
 ### Filtering your assessments view
 
@@ -218,4 +222,9 @@ From the assessment list, under the **Customer-managed actions** column, select 
 
 You can export a report of all your improvement actions in Compliance Score. From the **Improvement actions** page, select **Export** in the upper-left corner of your screen, above your list of actions. This will produce an Excel worksheet with all your improvement actions and the filter categories shown on the **Improvement actions** page, which you can view and save to your local machine.
 
-You can also export a report from Compliance Manager. In Compliance Manager, go to the **Controls Info** tab and select **Export** in the upper-right section of the screen. This produces an Excel worksheet you can view and save.
+You can also export a report from Compliance Manager by following these steps:
+
+1. In Compliance Manager, go to your **Controls Info** dashboard.
+2. You will see an **Assessment** tab and a **Template** tab.  
+3. To export an assessment: Select the **Assessment** tab. Use the **Group** and **Assessment** drop-down menus to select the assessment you want to export. Select **Export** near the upper right of your screen. An Excel file will download. It includes a list of actions, grouped by control, with your implementation and test details.
+4. To export a template: Select the **Template** tab, and choose the template you want to export from the **Template** drop-down menu. Select **Export** near the upper right of your screen. An Excel file will download. It includes a list of actions, grouped by control, with your implementation and test details..
