@@ -15,7 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
+ms.custom:
+- seo-marvel-mar2020
 description: In this article, you will find release notes for the Data Investigations (Preview) tool in Microsoft 365.
 ---
 
