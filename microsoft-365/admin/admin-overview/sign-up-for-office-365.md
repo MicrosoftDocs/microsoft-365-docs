@@ -25,16 +25,16 @@ search.appverid:
 - GEA150
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
-description: "Understand what you need to know before you go through the sign up process for Microsoft 365. "
+description: "Understand what you need to know before you go through the sign up process for Office 365. "
 ---
 
 # How to sign up - Admin Help
 
 ::: moniker range="o365-worldwide"
 
-Sign up for Microsoft 365 for business so your team can begin using the latest versions of Word, Excel, PowerPoint, and other Office programs in your business.
+Sign up for Office 365 for business so your team can begin using the latest versions of Word, Excel, PowerPoint, and other Office programs in your business.
   
-Watch a quick overview of the Microsoft 365 for business plans, or scroll down for more info.
+Watch a quick overview of the three Office 365 for business plans, or scroll down for more info.
 <br><br>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
@@ -70,7 +70,7 @@ Ready to sign up? [Select a Plan](https://products.office.com/zh-cn/business/com
 
 Before you buy, put some thought into the plan you sign up for. This will help prevent growing pains later.
 
-Watch a short video about choosing a Microsoft 365 for business plan.<br><br>
+Watch a short video about choosing an Office 365 business plan.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
@@ -124,9 +124,9 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
   - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 
     > [!NOTE]
-    > The email address you enter here is different from your Microsoft 365 for business email address (your logon name, below). Because this is where we also send your billing information, we recommend you use an e-mail address that's appropriate for receiving business email.
+    > The email address you enter here is different from your Office 365 email address (your logon name, below). Because this is where we also send your billing information, we recommend you use an e-mail address that's appropriate for receiving business email.
   
-- **A sign-in name (user ID):** This becomes your initial Microsoft email address, just to get you started quickly.
+- **A sign-in name (user ID):** This becomes your initial Office 365 email address, just to get you started quickly.
 
     This is the email address you use to sign in. For example, if your business name is Fourth Coffee, you might choose rob@fourthcoffee.onmicrosoft.com for your user ID.
 
@@ -141,4 +141,4 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
 
 ## See also
 
-[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
