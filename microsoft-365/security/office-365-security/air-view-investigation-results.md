@@ -82,9 +82,9 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 |Status  |What it means  |
 |---------|---------|
-|Starting | The investigation is queued to begin soon |
-|Running | The investigation has started and is conducting its analysis |
-|No Threats Found | The investigation has completed its analysis and no threats were found |
+|Starting | The investigation has been triggered and waiting to start running​. This is the first step. |
+|Running | The investigation process has started and is underway. This state also occurs when [pending actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions) are approved. |
+|No Threats Found | The investigation has finished and no threats (user account, email message, URL, or file) were identified. <br/>If you suspect something was missed (i.e. false negative), you can take action using [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)​. |
 |Terminated By System | The investigation was not closed and expired after 7 days |
 |Pending Action | The investigation found threats with actions recommended.  The investigation continues running after it's found initial threats and recommended actions, so you should check the log before approving actions to see if analyzers are still in-progress. |
 |Threats Found | The investigation found threats, but the threats do not have actions available within AIR.  These are user actions where there is no direction AIR action yet. |
