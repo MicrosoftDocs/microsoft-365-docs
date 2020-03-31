@@ -48,9 +48,9 @@ No. Your compliance score measures your progress in completing recommended actio
 
 Compliance Score gives you an initial score based on the Microsoft 365 data protection baseline, which is a set of controls that includes common industry regulations and standards. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
-Organizations can create and add custom assessments that are more relevant to their organization. You can use one of Compliance Score's [out-of-the-box templates](compliance-score.md#templates) to create assessments for particular standards, or [create your own template](working-with-compliance-manager.md#create-a-template).
+Organizations can create and add custom assessments that are more relevant to their organization. You can use one of Compliance Score's [pre-configured templates](compliance-score.md#templates), you can customize a Microsoft template with your own controls and actions, or you can create your own template. Read details about how to [work with templates](working-with-compliance-manager.md#templates).
 
-Read more about [how Compliance Score calculates your score](compliance-score-methodology.md).
+Learn how [Compliance Score calculates your score](compliance-score-methodology.md).
 
 ## What is the difference between Compliance Score and Secure Score?
 
@@ -66,8 +66,16 @@ Compliance Score currently provides assessments for Office 365 and Intune. Expan
 
 While Compliance Score provides continuous monitoring and recommended actions only for Microsoft cloud services, you can add custom assessments in Compliance Manager for your on-premises, third-party services. In this way, you can use Microsoft Compliance Score as a SaaS compliance management tool to help you manage all the controls across your digital assets.
 
-You can use one of Compliance Score's [out-of-the-box templates](compliance-score.md#templates) to create assessments for particular standards, or [create your own template](working-with-compliance-manager.md#create-a-template-1).
+You can use one of Compliance Score's [out-of-the-box templates](compliance-score.md#templates) to create assessments for particular standards, or [create your own template](working-with-compliance-manager.md#create-a-template).
 
 ## How do I delete a template or assessment I no longer need?
 
 You can't delete an assessment or template, but you can hide them from your view. Review [instructions for hiding assessments](working-with-compliance-manager.md#hide-a-template-or-an-assessment).
+
+## What test procedures does Microsoft follow for controls?
+
+Microsoft participates in annual audits for controls. You can review the audit reports from our auditors, which are available for download from the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3).
+
+## Why are some controls tested annually, and others tested every 3 years?
+
+The FedRAMP assessment is an example of why this might be the case. It is conducted every year and tests a cross-section of controls among major control families. FedRAMP classifies as core controls those which are important enough to require annual testing. Controls designated as non-core are tested every three years. A subset of controls that span all the major control families are tested annually. In this way, each annual audit looks at scenarios across the board to ensure the solution is robust. Read more about the [FedRAMP annual assessment process](https://www.fedramp.gov/annual-assessment-guidance/).
