@@ -90,9 +90,8 @@ The investigation status indicates the progress of the analysis and actions. As 
 |Remediated |The investigation had actions that were fully approved and completed​. <br/> |    
 |Threats Found | The investigation found threats, but the threats do not have actions available within AIR.  These are user actions where there is no direction AIR action yet. |
 |Remediated | The investigation finished and all actions were approved (fully remediated).<br/><br/>**NOTE**: Approved remediation actions can have errors that prevent the actions from being taken. This does not change investigation status. Check the [investigation log](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) for detailed results.​ |
-|Partially Remediated | The investigation finished and some of the recommended actions were approved |
-|Terminated By User | An admin terminated the investigation |
-|Failed | An error occurred during the investigation that prevented it from reaching a conclusion on threats |
+|Partially Remediated | The investigation resulted in remediation actions, and some were approved and completed​. Other actions are still [pending](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
+|Failed | At least one investigation analyzer ran into a problem where it could not complete properly​. <br/><br/>**NOTE**: If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded. ​ |
 |Queued By Throttling | The investigation is waiting for analysis due to system processing limitations (to protect service performance) |
 |Terminated By Throttling | The investigation could not be completed in sufficient time due to investigation volume and system processing limitations. You can retrigger the investigation by selecting the email in Explorer and selecting the Investigate action. |
 
