@@ -18,9 +18,7 @@ description: "Learn how to use the workflow tools in Microsoft Compliance Score 
 
 # Working with Microsoft Compliance Score (Preview)
 
-This article explains how to work with the key elements of Compliance Score. You'll learn how to use **improvement actions** to manage your compliance workflow.
-
-You'll also learn how to use the insights displayed on your **Solutions** and **Assessments** pages, and how to produce reports.
+This article explains how to work with the key elements of Compliance Score. You'll learn how to use **improvement actions** to manage your compliance workflow. You'll also learn how to use the insights displayed on your **Solutions** and **Assessments** pages, and how to produce reports.
 
 ## Manage your workflow with improvement actions
 
