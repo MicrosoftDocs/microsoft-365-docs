@@ -169,6 +169,10 @@ It depends on the capacity of your network, but it typically takes several hours
   
 If different PST files are imported to different target mailboxes, the import process occurs in parallel; in other words, each PST/mailbox pair is imported simultaneously. Likewise, if multiple PST files are imported to the same mailbox, they will be simultaneously imported.
   
+ **How does the PST import process handle duplicate email items?**
+
+The PST import process checks for duplicate items and doesn't copy the items from a PST file to the mailbox or archive if a matching item exists in the target folder in the target mailbox or target archive. If you re-import the same PST file and specify a different target folder (using the TargetRootFolder property in the PST import mapping file) than the one you specified in a previous import job, all items in the PST file will be reimported.
+ 
  **Is there a message size limit when importing PST files?**
   
 Yes. If a PST file contains a mailbox item that is larger than 150 MB, the item will be skipped during the import process.
@@ -266,6 +270,10 @@ Additionally, PST files from Outlook 2007 and later versions can be imported to 
   
 Yes. If a PST file contains a mailbox item that is larger than 150 MB, the item will be skipped during the import process.
   
+  **How does the PST import process handle duplicate email items?**
+
+The PST import process checks for duplicate items and doesn't copy the items from a PST file to the mailbox or archive if a matching item exists in the target folder in the target mailbox or target archive. If you re-import the same PST file and specify a different target folder (using the TargetRootFolder property in the PST import mapping file) than the one you specified in a previous import job, all items in the PST file will be reimported.
+ 
  **Are message properties, such as when the message was sent or received, the list of recipients and other properties, preserved when PST files are imported to an Office 365 mailbox?**
   
 Yes. The original message metadata isn't changed during the import process
