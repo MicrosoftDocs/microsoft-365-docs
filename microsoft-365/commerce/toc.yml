@@ -2,79 +2,77 @@
   href: index.yml
 - name: Microsoft 365 Admin help center
   href: ../admin/admin-home.md
-  expanded: false
+- name: Try or buy
   items:
-    - name: Try or buy
-      items:
-        - name: Sign up for Office 365 trial
-          href: sign-up-for-office-365-trial.md
-        - name: Try or buy Microsoft 365
-          href: try-or-buy-microsoft-365.md
-        - name: Extend your trial
-          href: extend-your-trial.md
-        - name: Buy another subscription
-          href: buy-another-subscription.md
-        - name: Buy or edit an add on
-          href: buy-or-edit-an-add-on.md
-        - name: Add storage space
-          href: add-storage-space.md
-    - name: Manage subscriptions
-      items: 
-        - name: Upgrade subscriptions
-          href: subscriptions/upgrade-to-different-plan.md
-        - name: Renew your subscription
-          href: subscriptions/renew-your-subscription.md
-        - name: Reactivate your subscription
-          href: subscriptions/reactivate-your-subscription.md
-        - name: Cancel your subscription
-          href: subscriptions/cancel-your-subscription.md
-        - name: What if my subscription expires?
-          href: subscriptions/what-if-my-subscription-expires.md
-        - name: Manage third-party apps
-          href: manage-saas-apps.md
-        - name: Manage self-service purchases (Users)
-          href: subscriptions/manage-self-service-purchases-users.md
-        - name: Manage self-service purchases (Admin)
-          href: subscriptions/manage-self-service-purchases-admins.md
-    - name: Manage licenses
-      items:
-        - name: Manage subscription licenses
-          href: licenses/buy-licenses.md
-        - name: Assign licenses to users
-          href: ../admin/manage/assign-licenses-to-users.md
-        - name: Unassign licenses from users`
-          href: ../admin/manage/remove-licenses-from-users.md
-        - name: Understand subscriptions and licenses
-          href: licenses/subscriptions-and-licenses.md
-    - name: Bills and payments
-      items: 
-        - name: View your invoice
-          href: billing-and-payments/view-your-bill-or-invoice.md
-        - name: Understand your invoice
-          href: billing-and-payments/understand-your-invoice.md
-        - name: Manage payment methods
-          href: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
-        - name: Pay for your subscription
-          href: billing-and-payments/pay-for-your-subscription.md
-        - name: Change how you pay
-          href: billing-and-payments/change-payment-method.md
-        - name: Change payment frequency
-          href: billing-and-payments/change-payment-frequency.md
-        - name: Manage billing profiles
-          href: billing-and-payments/manage-billing-profiles.md
-        - name: Change your billing addresses
-          href: billing-and-payments/change-your-billing-addresses.md
-        - name: Payment Services Directive 2 and Strong Customer Authentication
-          href: billing-and-payments/psd2.md
-    - name: Billing accounts
-      items: 
-        - name: Manage billing accounts
-          href: manage-billing-accounts.md
-        - name: Associate a tenant with my billing account
-          href: https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business
-    - name: Manage relationships with my partners
-      href: manage-partners.md
-    - name: Close your account
-      href: close-your-account.md
-    - name: Contact support
-      href: ../admin/contact-support-for-business-products.md
+    - name: Sign up for Office 365 trial
+      href: sign-up-for-office-365-trial.md
+    - name: Try or buy Microsoft 365
+      href: try-or-buy-microsoft-365.md
+    - name: Extend your trial
+      href: extend-your-trial.md
+    - name: Buy another subscription
+      href: buy-another-subscription.md
+    - name: Buy or edit an add on
+      href: buy-or-edit-an-add-on.md
+    - name: Add storage space
+      href: add-storage-space.md
+- name: Manage subscriptions
+  items: 
+    - name: Upgrade subscriptions
+      href: subscriptions/upgrade-to-different-plan.md
+    - name: Renew your subscription
+      href: subscriptions/renew-your-subscription.md
+    - name: Reactivate your subscription
+      href: subscriptions/reactivate-your-subscription.md
+    - name: Cancel your subscription
+      href: subscriptions/cancel-your-subscription.md
+    - name: What if my subscription expires?
+      href: subscriptions/what-if-my-subscription-expires.md
+    - name: Manage third-party apps
+      href: manage-saas-apps.md
+    - name: Manage self-service purchases (Users)
+      href: subscriptions/manage-self-service-purchases-users.md
+    - name: Manage self-service purchases (Admin)
+      href: subscriptions/manage-self-service-purchases-admins.md
+- name: Manage licenses
+  items:
+    - name: Manage subscription licenses
+      href: licenses/buy-licenses.md
+    - name: Assign licenses to users
+      href: ../admin/manage/assign-licenses-to-users.md
+    - name: Unassign licenses from users`
+      href: ../admin/manage/remove-licenses-from-users.md
+    - name: Understand subscriptions and licenses
+      href: licenses/subscriptions-and-licenses.md
+- name: Bills and payments
+  items: 
+    - name: View your invoice
+      href: billing-and-payments/view-your-bill-or-invoice.md
+    - name: Understand your invoice
+      href: billing-and-payments/understand-your-invoice.md
+    - name: Manage payment methods
+      href: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+    - name: Pay for your subscription
+      href: billing-and-payments/pay-for-your-subscription.md
+    - name: Change how you pay
+      href: billing-and-payments/change-payment-method.md
+    - name: Change payment frequency
+      href: billing-and-payments/change-payment-frequency.md
+    - name: Manage billing profiles
+      href: billing-and-payments/manage-billing-profiles.md
+    - name: Change your billing addresses
+      href: billing-and-payments/change-your-billing-addresses.md
+    - name: Payment Services Directive 2 and Strong Customer Authentication
+      href: billing-and-payments/psd2.md
+- name: Billing accounts
+  items: 
+    - name: Manage billing accounts
+      href: manage-billing-accounts.md
+    - name: Associate a tenant with my billing account
+      href: https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business
+- name: Manage relationships with my partners
+  href: manage-partners.md
+- name: Close your account
+  href: close-your-account.md
+- name: Contact support
+  href: ../admin/contact-support-for-business-products.md
