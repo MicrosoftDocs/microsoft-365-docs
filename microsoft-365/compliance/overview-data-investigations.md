@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: In this article, you'll learn about the Data Investigations (Preview) tool in Microsoft 365. Data Investigations tool helps you assess and remediate the data spillage.  
+description: In this article, you'll learn about the Data Investigations (Preview) tool in Microsoft 365. The Data Investigations tool helps you assess and remediate the data spillage.  
 ---
 
 # Overview of Data Investigations (Preview) in Microsoft 365
