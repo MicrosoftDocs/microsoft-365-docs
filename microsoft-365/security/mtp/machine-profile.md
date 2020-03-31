@@ -18,20 +18,20 @@ search.appverid: met150
 
 The Microsoft 365 security portal provides you with Machine profile pages, so you can quickly assess the health and status of devices on your network.
 
-The page displays a wealth of information, gathered from the [Microsoft Defender Advanced Threat Protect](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (Microsoft Defender ATP) platform, and from the cloud-based [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) platform.
+The page displays a wealth of information, gathered from [Microsoft Defender Advanced Threat Protect](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (Microsoft Defender ATP), and from the cloud-based [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) platform.
 
 > [!IMPORTANT]
 > The machine profile page may appear slightly different, depending on whether the device is enrolled in Microsoft Defender ATP, Azure ATP, or both.
 
-On the Machine profile, you can view current and past alerts, and properties related to the device, such as what operating system it is running or which users have logged in to use it.
+On the Machine profile, you can view security alerts, as well as many details about the device, such as which operating system it is running or which users have logged in to use it.
 
-If the device is enrolled in Microsoft Defender ATP, you can also use the Machine profile page to perform some common security-related tasks, such as patching the device against vulnerabilities.
+If the device is enrolled in Microsoft Defender ATP, you can also use the Machine profile page to perform some common security tasks, such as patching the device against vulnerabilities.
 
 ## Navigating the Machine profile page
 
 You can access the Machine profile page for any device, by selecting the device name from the Incidents list, Incidents overview page, or the Incidents list flyout.
 
-The profile page is broken up into two broad sections.
+The profile page is broken up into several broad sections.
 
 ![Image of machine profile page with (1) Tab area (2) Sidebar and (3) Actions highlighted in red](../../media/mtp-machine-profile/hybrid-device-overall.PNG)
 
@@ -39,7 +39,7 @@ The sidebar (1) lists basic details about the device.
 
 The main content area (2) contains tabs that you can toggle through to view different kinds of information about the device.
 
-If the device is enrolled in Microsoft Defender ATP, you will also see the response actions bar (3). Response actions allow you to perform common security-related tasks.
+If the device is enrolled in Microsoft Defender ATP, you will also see a list of response actions (3). Response actions allow you to perform common security-related tasks.
 
 ## Sidebar
 
@@ -59,12 +59,12 @@ The sidebar provides some important basic information in small subsections which
 
 Response actions offer a quick way to defend against and analyze threats. These actions are only available if the device is enrolled in Microsoft Defender ATP.
 
-![Image of action bar for Machine profile](../../media/mtp-machine-profile/hybrid-device-short-action-bar.PNG)
+![Image of action bar for Machine profile](../../media/mtp-machine-profile/hybrid-device-action-bar.PNG)
 
 > [!IMPORTANT]
-> The number of response actions will vary, depending on where the device is enrolled.
+> Devices that aren't enrolled in Microsoft Defender ATP won't have any response actions listed in their Machine profiles.
 
-Devices that are enrolled in Microsoft Defender ATP will display the following three response actions:
+Devices that are enrolled in Microsoft Defender ATP will display the following response actions:
 
 * **Manage tags** - Updates custom tags you have applied to this device.
 * **Isolate machine** - Isolates the device from your organization's network while keeping it connected to Microsoft Defender Advanced Threat Protection. You can choose to allow Outlook, Teams, and Skype for Business to run while the machine is isolated, for communication purposes.
@@ -94,7 +94,7 @@ If the device is enrolled in Microsoft Defender ATP, you will also see the devic
 
 ### Alerts tab
 
-The **Alerts** tab contains a list of alerts that have been reported on the device.
+The **Alerts** tab contains a list of alerts that have been raised on the device.
 
 ![Image of alerts tab for Machine profile](../../media/mtp-machine-profile/hybrid-device-tab-alerts.png)
 
@@ -118,11 +118,11 @@ Below the chart is a list of events for the selected range of dates.
 
 The number of items displayed and the columns on the list can both be customized. The default columns list the event time, active user, action type, entities (processes), and additional information about the event.
 
-Selecting an item from the list will open a flyout displaying an Event entities graph, showing the parent and child processes that triggered the event.
+Selecting an item from this list will open a flyout displaying an Event entities graph, showing the parent and child processes involved in the event.
 
-This list can be filtered by the specific kind of event; for example, Registry events or Smart Screen Events.
+The list can be filtered by the specific kind of event; for example, Registry events or Smart Screen Events.
 
-The list can also be exported to a CSV file, for download. The maximum range of time covered by the exported file is seven days.
+The list can also be exported to a CSV file, for download. Although the file is not limited by number of events, the maximum time range you can choose to export is seven days.
 
 ### Security recommendations tab
 
