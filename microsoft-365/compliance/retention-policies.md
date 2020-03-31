@@ -96,15 +96,15 @@ When the retention policy is retain-only, or delete-only, the contents paths are
 
 #### Content paths for retain-only retention policy
 
-1. **If the content is modified or deleted** during the retention period: A copy of the original document is created in the Preservation Hold library and retained till the end of the retention period, when the copy in the Preservation Hold library is moved to the second-stage Recycle Bin and is permanently deleted after 93 days..
+1. **If the content is modified or deleted** during the retention period: A copy of the original document is created in the Preservation Hold library and retained until the end of the retention period, when the copy in the Preservation Hold library is moved to the second-stage Recycle Bin and is permanently deleted after 93 days.
 
 2. **If the content is not modified or deleted** during the retention period: Nothing happens before and after the retention period; the document remains in its original location.
 
 #### Content paths for delete-only retention policy
 
-1. **If the content is modified or deleted** during the retention period: The document is moved to first-stage Recycle Bin. If a user deletes the document from there or empties this Recycle Bin, the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first-stage and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first-stage or second-stage Recycle Bin.
+1. **If the content is deleted** during the retention period: The document is moved to first-stage Recycle Bin. If a user deletes the document from there or empties this Recycle Bin, the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first-stage and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first-stage or second-stage Recycle Bin. If the content is modified during the retention period, it follows the same deletion path after the content expires.
 
-2. **If the content is not modified or deleted** during the retention period: At the end of the retention period, the document is moved to the first-stage Recycle Bin. If a user deletes the document from there or empties this Recycle Bin (also known as purging), the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first-stage and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first-stage or second-stage Recycle Bin. The Recycle Bin is not indexed and therefore searches do not find content there. This means that an eDiscovery hold can't locate any content in the Recycle Bin to hold it.
+2. **If the content is not deleted** during the retention period: At the end of the retention period, the document is moved to the first-stage Recycle Bin. If the content is deleted during the retention period, the document is immediately moved to first-stage Recycle Bin. If a user deletes the document from there or empties this Recycle Bin (also known as purging), the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first-stage and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first-stage or second-stage Recycle Bin. The Recycle Bin is not indexed and therefore searches do not find content there. This means that an eDiscovery hold can't locate any content in the Recycle Bin to hold it.
 
 ### Content in mailboxes and public folders
 
@@ -116,7 +116,7 @@ A process periodically evaluates items in the Recoverable Items folder. If an it
   
 When a person attempts to change certain properties of a mailbox item — such as the subject, body, attachments, senders and recipients, or date sent or received for a message — a copy of the original item is saved to the Recoverable Items folder before the change is committed. This action happens for each subsequent change. At the end of the retention period, copies in the Recoverable Items folder are permanently deleted.
   
-After a retention policy is assigned to a mailbox or public folder, content can follow one of two paths:
+When the retention policy assigned to a mailbox or public folder is to retain and delete:
 
 ![Diagram of retention flow in email and public folders](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
