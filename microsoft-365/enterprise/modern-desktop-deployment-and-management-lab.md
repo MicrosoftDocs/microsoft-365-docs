@@ -21,13 +21,13 @@ description: Learn about and where to access the Windows and Office Deployment L
 
 These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
 
-This training is highly recommended for organizations preparing for Windows 7 end of life, and also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Addtionally, as an isolated environment, the lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
+This training is highly recommended for organizations preparing for Windows 7 end of life, and also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Additionally, as an isolated environment, the lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
 
 ### [**Download the Windows and Office Deployment Lab Kit**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
 ## **A complete lab environment**
 
-The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured Configuation Manager instance. The lab contains the latest Evaluation Versions of the following products:
+The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured Configuration Manager instance. The lab contains the latest Evaluation Versions of the following products:
 
   - Windows 10 Enterprise
   - Windows 7 Enterprise
@@ -91,7 +91,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 ### **OS Deployment and Feature Updates**
 
   - OS Image Creation
-  - OS Deployment Task Sequences in Configuation Manager 
+  - OS Deployment Task Sequences in Configuration Manager 
   - OS Deployment Task Sequences in MDT
   - Windows Autopilot
   - Provisioning Packages 
