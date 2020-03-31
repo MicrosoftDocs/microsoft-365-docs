@@ -552,6 +552,41 @@
       "source_path": "microsoft-365/security/office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/ciso-workshop.md",
+      "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/ciso-workshop-module-1.md",
+      "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/ciso-workshop-module-2.md",
+      "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/ciso-workshop-module-3.md",
+      "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-3",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/ciso-workshop-module-4a.md",
+      "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-4a",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/ciso-workshop-module-4b.md",
+      "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-4b",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/ciso-workshop-module-5.md",
+      "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-5",
+      "redirect_document_id": false
     }
   ]
 }
