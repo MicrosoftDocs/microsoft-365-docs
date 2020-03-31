@@ -82,4 +82,4 @@ Each control has an assigned value in Compliance Score based on the risk it repr
 | Corrective mandatory | 3 |
 | Corrective discretionary | 1 |
   
-![Compliance Score controls point values](../media/compliance-score-controls-scoring.png)
+![Compliance Score controls point values](../media/compliance-score-controls-scoring.png "Compliance Score controls point values")

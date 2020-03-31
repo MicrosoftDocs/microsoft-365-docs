@@ -486,7 +486,7 @@ The **Actions** tab is required.  It designates actions of your organization and
 
 - **actionScore**: In this required field, provide a numeric score value for your action. It must be a whole number ranging from 1 to 99; it cannot be 0, null, or blank. The higher the number, the greater its value toward improving your compliance posture. For guidance, see below how Microsoft scores its controls:
 
-![Compliance Manager controls point values](../media/compliance-score-controls-scoring.png)
+![Compliance Manager controls point values](../media/compliance-score-controls-scoring.png "Compliance Manager controls point values")
 
 - **actionOwnership**: This is the person who is responsible for the action overall. It is not necessarily the person who is assigned to complete the action. You may want to simply list "customer" here. This is a required field.
 
@@ -584,7 +584,7 @@ You can export an Assessment to an Excel file for compliance stakeholders in you
 2. Select the Group and Assessment in the dropdown menus for the Assessment you want to export.
 3. Select Export. The Assessment export is downloaded as an Excel file.
 
-![Compliance Manager Assessment Excel Report](../media/compliance-manager-assessment-report.png)
+![Compliance Manager Assessment Excel Report](../media/compliance-manager-assessment-report.png "Compliance Manager assessment Excel report")
 
 ## Permissions
 
