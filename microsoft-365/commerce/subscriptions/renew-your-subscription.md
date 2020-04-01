@@ -30,7 +30,7 @@ description: "Learn how to renew your Office 365 for business subscription using
 
 This article applies to most paid Office 365 for business subscriptions.
   
-To renew by using a product key that you bought from a retail store or Office 365 partner, see [EFind and enter your product key](../enter-your-product-key.md).
+To renew by using a product key that you bought from a retail store or Office 365 partner, see [Find and enter your product key](../enter-your-product-key.md).
 
 > [!NOTE]
 > Paying by bank account isn't available in some countries or regions.
@@ -104,7 +104,7 @@ If you prepaid for your subscription with a product key, your subscription will 
 
     > [!NOTE]
     > - You can only change the **Recurring billing** setting for active subscriptions. If your subscription has already expired or is disabled, you will need to [reactivate it](reactivate-your-subscription.md) before you can turn **Recurring billing** on or off.
-    > - When **Recurring billing** is turned off, the subscription isn't cancelled right away. It remains active until it expires. You can view the expiration date on the subscription card
+    > - When **Recurring billing** is turned off, the subscription isn't cancelled right away. It remains active until it expires. You can view the expiration date on the subscription card.
     > - To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).
 
 ::: moniker-end
@@ -115,7 +115,7 @@ If you prepaid for your subscription with a product key, your subscription will 
   
 [Add, update, or remove a credit card or bank account](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
   
-[What happens to my data and access when mysubscription ends?](what-if-my-subscription-expires.md)
+[What happens to my data and access when my subscription ends?](what-if-my-subscription-expires.md)
 
 [Add, update, or remove your payment methods](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 
