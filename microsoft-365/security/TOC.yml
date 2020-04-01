@@ -185,6 +185,8 @@
                   href: mtp/mtp-permissions.md
                 - name: Set time zone
                   href: mtp/mtp-time-zone.md
+            - name: Provide feedback
+              href: mtp/feedback.md
             - name: Manage tickets through ServiceNow
               href: ./mtp/tickets.md
 
