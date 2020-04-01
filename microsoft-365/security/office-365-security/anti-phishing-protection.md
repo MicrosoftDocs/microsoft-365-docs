@@ -2,10 +2,10 @@
 title: "Anti-phishing protection in Office 365"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/11/2018
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
