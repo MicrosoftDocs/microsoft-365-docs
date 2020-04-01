@@ -765,26 +765,26 @@
       href: get-started-with-service-trust-portal.md
     - name: Compliance Score and Compliance Manager
       items: 
-        - name: Compliance Score (Preview)
+        - name: Compliance Score (preview)
           href: compliance-score.md
-        - name: Set up Compliance Score (Preview)
+        - name: Set up Compliance Score (preview)
           href: compliance-score-setup.md
-        - name: Working with Compliance Score (Preview)
+        - name: Working with Compliance Score (preview)
           href: working-with-compliance-score.md
-        - name: Compliance Score calculation (Preview)
+        - name: Compliance Score calculation (preview)
           href: compliance-score-methodology.md
-        - name: Compliance Score release notes (Preview)
+        - name: Compliance Score release notes (preview)
           href: compliance-score-release-notes.md
-        - name: Compliance Score FAQ (Preview)
+        - name: Compliance Score FAQ (preview)
           href: compliance-score-faq.md
-        - name: Compliance Manager (Preview)
+        - name: Compliance Manager (preview)
           href: compliance-manager-overview.md
           items: 
-            - name: Compliance Manager (Preview) release notes
+            - name: Compliance Manager (preview) release notes
               href: compliance-manager-release-notes.md
-            - name: Working with Compliance Manager (Preview)
+            - name: Working with Compliance Manager (preview)
               href: working-with-compliance-manager.md
-            - name: Compliance Manager (Classic)
+            - name: Compliance Manager (classic)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: GDPR data subject request tool
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md

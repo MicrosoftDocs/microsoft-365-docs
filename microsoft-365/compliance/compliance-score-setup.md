@@ -13,14 +13,14 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to sign in, set up permissions, and understand your dashboard for Microsoft Compliance Score, which helps simplify and automate risk assessments."
+description: "Learn how set up and start using Microsoft Compliance Score, which helps simplify and automate risk assessments."
 ---
 
-# Microsoft Compliance Score (Preview) setup
+# Microsoft Compliance Score (preview) setup
 
 ## Before you begin
 
-The Microsoft 365 global administrator for your organization will likely be the first user to access Compliance Score. We recommend the global admin sign in and set user permissions as outlined below when visiting Compliance Score for the first time.
+The Microsoft 365 global administrator for your organization will likely be the first user to access Compliance Score. We recommend the global admin sign-in and set user permissions as outlined below when visiting Compliance Score for the first time.
 
 ## Sign in
 
@@ -35,9 +35,9 @@ Compliance Score uses a role-based access control (RBAC) permission model. Only 
 
 ### Where to set permissions
 
-The global admin for your organization can set user permissions in the Microsoft 365 compliance center or in Azure Active Directory (Azure AD). Once roles are set in either of these locations, users will be able to access Compliance Score (as well as  Compliance Manager).
+The global admin for your organization can set user permissions in the Microsoft 365 compliance center or in Azure Active Directory (Azure AD). Once roles are set in either of these locations, users can access Compliance Score as well as  Compliance Manager.
 
-Note that existing Compliance Manger roles **do not** transfer over to Compliance Score.  This means that if you were previously assigned a role in Compliance Manager, that role will not grant you access to Compliance Score. Your global admin will need to set permissions and a role for you in the Microsoft 365 compliance center or Azure AD so that you can access Compliance Score.
+Note that existing Compliance Manger roles **do not** transfer over to Compliance Score. If you have a role in Compliance Manager and are new to Compliance Score, your Compliance Manager role won't grant you access to Compliance Score. Your global admin will need to set permissions and a role for you in the Microsoft 365 compliance center or Azure AD so that you can access Compliance Score.
 
 ### Role types
 
@@ -65,11 +65,11 @@ To set permissions in the Microsoft 365 compliance center:
 
 ## Configure automatic Secure Score updates
 
-By default, all new tenants have [Secure Score](../security/mtp/microsoft-secure-score.md) automatic updates turned on. This means that all actions that are monitored by Secure Score will automatically update the status for the same action in Compliance Score.
+By default, all new tenants have [Secure Score](../security/mtp/microsoft-secure-score.md) automatic updates turned on. All actions that are monitored by Secure Score will automatically update the status for the same action in Compliance Score.
 
 Your global administrator can manage this setting to turn off automatic updates for all actions, or set updates for actions individually.
 
-During public preview, you will need to go to the Microsoft Service Trust Portal (where Compliance Manger is located) to manage Secure Score updates.
+During public preview, you'll need to go to the Microsoft Service Trust Portal (where Compliance Manger is located) to manage Secure Score updates.
 
 To manage automatic Secure Score updates, follow these steps:
 
@@ -81,7 +81,7 @@ To manage automatic Secure Score updates, follow these steps:
 
 If you choose **set per action,** take these additional steps to turn on Secure Score updates for individual actions:
 
-4. Select **Compliance Manager** from the top menu (note: do not select "Compliance Manager (classic)").
+4. Select **Compliance Manager** from the top menu (do not select "Compliance Manager (classic)," which is a legacy product).
 
 5. Select **Tenant Management** in the upper-right corner of your screen.
 
@@ -103,7 +103,7 @@ The Compliance Score dashboard is designed to provide you an at-a-glance view of
 
 ### Overall compliance score
 
-Your compliance score, featured prominently at the top, shows a percentage based on points achievable for completing improvement actions addressing key data protection standards and regulations.
+Your compliance score is featured prominently at the top. It shows a percentage based on points achievable for completing improvement actions that address key data protection standards and regulations.
 
 When you come to Compliance Score for the first time, your initial score is based on the built-in Microsoft 365 data protection baseline—a set of controls that includes common industry regulations and standards. Because Compliance Score scans your system of existing Microsoft 365 solutions, it gives an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization.
 
@@ -111,11 +111,11 @@ As you add assessments that are relevant to your organization, your score become
 
 ### Key improvement actions
 
-This section lists the top improvement actions you can take right now to make the largest positive impact on your overall compliance score. It lists actions that are not completed or failed with the assessment with high risks.
+This section lists the top improvement actions you can take right now to make the largest positive impact on your overall compliance score.
 
 ### Solutions that affect your score
 
-This section shows which solutions contain actions with the greatest opportunity to positively impact your score, and how many outstanding improvement actions you have in each solution.
+This section shows solutions containing actions with the greatest opportunity to positively impact your score, and the number of outstanding improvement actions in each solution.
 
 ### Compliance Score breakdown
 
@@ -131,9 +131,9 @@ You can filter your dashboard view to see only the items related to particular r
 To apply filters:
 
 1. Select **Filter** on the upper-right side of the dashboard.
-2. Select your filter criteria from the flyout **Filters** pane, then select **Apply**.
+2. Select your filter criteria from the **Filters** flyout pane, then select **Apply**.
 
-Once a filter is applied, you will see your score adjusted in real-time. The compliance score percentage and breakdown information, and the improvement actions and solutions, now only pertain to data covered by your filter criteria. If you sign out of Compliance Score, your filtered view remains when you sign back in.
+After you apply a filter, you;ll see your score adjusted in real time. The compliance score percentage and breakdown information, and the improvement actions and solutions, now only pertain to data covered by your filter criteria. If you sign out of Compliance Score, your filtered view remains when you sign back in.
 
 To remove filters:
 

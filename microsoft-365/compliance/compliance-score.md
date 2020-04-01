@@ -16,7 +16,7 @@ search.appverid:
 description: "Microsoft Compliance Score helps organizations simplify and automate risk assessments, and suggests recommended actions to help address risks."
 ---
 
-# Microsoft Compliance Score (Preview)
+# Microsoft Compliance Score (preview)
 
 [Microsoft Compliance Score](https://compliance.microsoft.com/compliancescore) helps to simplify the way you manage compliance and reduce compliance risks through a user-friendly experience. Compliance Score is available for public preview in the  [Microsoft 365 compliance center](microsoft-365-compliance-center.md).
 
@@ -53,7 +53,7 @@ Think of Compliance Score as a simplified version of Compliance Manager. While t
 
 Compliance Score shares the same backend with Compliance Manager, so any data you may already have in Compliance Manager will show in Compliance Score.
 
-During public preview, some functionality remains solely in Compliance Manager, such as managing assessments and creating templates. We recommend beginning all of your compliance management activities in Compliance Score. When you come to functions handled by Compliance Manager, you will be guided to that tool. For that reason, some of this documentation directs you to Compliance Manager topics.
+Some functionality remains solely in Compliance Manager during public preview, such as managing assessments and creating templates. We recommend beginning all of your compliance management activities in Compliance Score. When you come to functions handled by Compliance Manager, you will be guided to that tool. For that reason, some of this documentation directs you to Compliance Manager topics.
 
 Learn more about the relationship between Compliance Score and Compliance Manager in the [Compliance Score release notes](compliance-score-release-notes.md).
 
@@ -72,20 +72,20 @@ Compliance Score uses several components to help you manage your compliance acti
 
 ### Controls
 
-A control defines how you assess and manage system configuration, organizational process, and people accountability to meet a specific requirement of a regulation, standard, or internal policy.
+A control defines how you assess and manage system configuration, organizational process, and people responsible for meeting a specific requirement of a regulation, standard, or internal policy.
 
 Compliance Score tracks two types of controls:
 
 1. **Microsoft-managed controls**: controls for Microsoft cloud services, which Microsoft is responsible for implementing
-2. **Customer-managed controls**: controls managed by your organization, which you are responsible for implementing
+2. **Customer-managed controls**: controls managed by your organization, which you're responsible for implementing
  
 ### Assessments
 
 An assessment is an evaluation of a template that initiates the scoring process for your organization. Assessments group the actions necessary to meet the requirements of a standard, regulation, or law. For example, you may have an assessment that, when you complete all actions within it, brings your Office 365 settings in line with ISO 27001 requirements.
 
-By default, Compliance Score provides your organization with an assessment based on the Microsoft 365 data protection baseline, a recommendation for reducing your data protection and compliance risks ([learn more](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
+Compliance Score provides your organization with an initial assessment based on the Microsoft 365 data protection baseline. This assessment is a recommendation for reducing your data protection and compliance risks ([learn more](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
 
-Assessments include several components:
+Assessments contain:
 
 - **In-scope services**: the specific set of Microsoft services applicable to the assessment
 - **Microsoft-managed controls**: controls that Microsoft implemented and tested
@@ -99,7 +99,7 @@ View [detailed instructions for managing assessments](working-with-compliance-ma
 
 ### Templates
 
-Compliance Score provides pre-configured templates for assessments. Compliance Score also allows you to take a pre-configured template and customize it by adding your own controls, or create your own templates to suit your needs. For example, you can create a template for your business process control, or a template for a regional data protection or compliance standard that isn't covered by one of the pre-configured templates. By bringing your own templates into Compliance Score, you can track not only Microsoft cloud assessments, but also any other risk assessments in scope for your organization.
+Compliance Score provides pre-configured templates for assessments. You can also customize a pre-configured template by adding your own controls and actions. For example, you can create a template for your business process control, or a template for a regional data protection or compliance standard that isn't covered by one of the pre-configured templates. By bringing your own templates into Compliance Score, you can track not only Microsoft cloud assessments, but also any other risk assessments in scope for your organization.
 
 The pre-configured templates for Compliance Score are:
 
@@ -127,7 +127,7 @@ View [detailed instructions for creating templates](working-with-compliance-mana
 
 Groups allow you to organize assessments in a way that is logical to you. For example, you may choose to group assessments by year, compliance standard, service, teams within your organization, or some other way.
 
-When two different assessments in the same group share customer-managed actions, the completion of implementation details, testing, and status for the action in one assessment automatically synchronizes to the same action in any other assessment in the group. This unifies the assigned improvement actions across the group and reduces duplicating work.
+When two different assessments in the same group share customer-managed actions, updates you make to the implementation details, testing, and status for the action in one assessment will automatically synchronize to the same action in any other assessment in the group. Synching actions in this way unifies the assigned improvement actions across the group and reduces duplicating work.
 
 Learn how to [create groups in Compliance Manager](working-with-compliance-manager.md#groups). Once you create groups, you can [filter you Compliance Score dashboard](compliance-score-setup.md#filtering-your-dashboard-view) to view your score by one or more groups.
 
