@@ -176,6 +176,10 @@ Outlook begins the export immediately unless a new Outlook Data File (.pst) is c
     
 See how to [Export or backup email, contacts, and calendar to an Outlook .pst file](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx) in Outlook 2010. 
   
+  
+  > [!NOTE]
+  > By default, your email is available offline for a period of 12 months. If required, see how to [increase the data available offline](Https://docs.microsoft.com/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
+ 
 ## Give another user access to a former user's email 
 
 To give access to the email messages, calendar, tasks, and contacts of the former employee to another employee, import the information to another employee's Outlook inbox.
@@ -205,6 +209,9 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 8. Set the options for importing items. The default settings usually don't need to be changed.
     
 9. Select **Finish**.
+
+> [!NOTE]
+> The steps remain the same for accessing an existing user's OneDrive and email data.
     
 > [!TIP]
 > If you want to import or restore only a few items from an Outlook Data File (.pst), you can open the Outlook Data File. Then, in the navigation pane, drag the items from Outlook Data File folders to your existing Outlook folders. 
@@ -219,4 +226,3 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
   
 [OneDrive retention and deletion](/onedrive/retention-and-deletion)
   
-
