@@ -135,7 +135,7 @@ What to know when working with groups:
 The **Tenant Management** interface enables you to manage these organization-wide settings:
 
 - **Dimensions:** View metadata for Templates, Assessments, and Action Items that allow you to create custom pivots for filters.
-- **Owners:** Populate a list of people so you can add them as owners of controls.
+- **Owners:** Populate a list of responsible parties that can be associated with actions.
 - **Customer Actions:** Manage the complete list of Actions Items included in Compliance Manager (Preview) and enable/disable Secure Score monitoring for Actions that are integrated with Secure Score.
 
 Select **Tenant Management** from the upper-right corner of your screen to open the management interface, and use the steps below to manage  **Dimensions**, **Owners**, and **Customer Actions**.
@@ -486,13 +486,11 @@ The **Actions** tab is required.  It designates actions of your organization and
 
 ![Compliance Manager controls point values](../media/compliance-score-controls-scoring.png "Compliance Manager controls point values")
 
-- **actionOwnership**: This is the person who is responsible for the action overall. It is not necessarily the person who is assigned to complete the action. You may want to list "customer" here. This is an optional field.
-
 - **actionDescriptionTitle**: This is the title of the description and is required. This description title allows you to have the same action in multiple templates and surface a different description in each template.  This field helps you clarify what template the description is referencing. In most cases, you can put the name of the template you're creating in this field.
 
 - **actionDescription**: Provide a description of the action. You can apply formatting such as bold text and hyperlinks. This is required field.
 
-- **dimension-Action Purpose**: This is an optional field. An entry you list here must carry the prefix "dimension-" (for example, "dimension-XYZ"). You don't need to have dimensions for your actions. Any dimensions you include here will be used as [filters in Compliance Score](compliance-score-setup.md#filtering-your-dashboard-view) and appear on the [improvement actions details page in Compliance Score](working-with-compliance-score.md#view-your-improvement-actions). If you include dimensions here, you must list them on the Dimensions tab, as explained in the section immediately below.
+- **dimension-Action Purpose**: This is an optional field. If you include it, the header must include the "dimension-" prefix. Any dimensions you include here will be used as [filters in Compliance Score](compliance-score-setup.md#filtering-your-dashboard-view) and appear on the [improvement actions details page in Compliance Score](working-with-compliance-score.md#view-your-improvement-actions).
 
 ##### Dimensions tab
 
