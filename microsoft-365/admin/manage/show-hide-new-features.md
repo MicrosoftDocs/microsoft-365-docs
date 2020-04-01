@@ -26,6 +26,8 @@ Office What's New Management for Win 32 allows your organization to decide which
 
 The What's new content in the Office desktop apps highlights a curated list of new features being released for that application, with a short description, and often a picture or a video created by the team releasing the feature to help customers learn how to use the feature. 
 
+Office What's New management is available in the Microsoft 365 admin center and through the [Client Configuration Service](https://config.office.com).
+
 > [!NOTE]
 > Global admin and Office Apps admin roles manage the What's new content that users see in their Office apps.
 
