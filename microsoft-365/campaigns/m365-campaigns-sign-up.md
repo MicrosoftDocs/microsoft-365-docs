@@ -41,7 +41,7 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
 
 1. In your invitation to Microsoft 365 for Campaigns email, select **ENROLL YOUR ORGANIZATION >**. This takes you to Microsoft 365 sign-up.
     > [!NOTE]
-    > If you already have an existing Office 365 for business subscription and you want to add the Microsoft 365 for Campaigns offer to it, go to [add Microsoft 365 for Campaigns to an existing subscription](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
+    > If you already have an existing Microsoft 365 for business subscription and you want to add the Microsoft 365 for Campaigns offer to it, go to [add Microsoft 365 for Campaigns to an existing subscription](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
 1. **On the Microsoft 365 Business page**, enter your business details. For **Business email address**, use a current email address. We only need this address to stay in touch with you during the setup process. Select **Next**.
 1. **On the Create your user ID page**:
     1. In **Username**, enter the name or alias you want for your email address. For example, you might want to be known as just Alice, or Rob. In a larger campaign, AliceC or AliceChavez might make more sense.
@@ -69,9 +69,9 @@ These are called your admin or global admin credentials.
 
 ## Steps to add Microsoft 365 for Campaigns to an existing subscription
 
-If you already have and existing subscription to Office 365 for business, for example, Microsoft 365 Business Standard, you can use the Microsoft 365 for Campaigns offer to add licenses to it.
+If you already have and existing subscription to Microsoft 365 for business, for example, Microsoft 365 Business Standard, you can use the Microsoft 365 for Campaigns offer to add licenses to it.
 > [!IMPORTANT]
-> You cannot add the Microsoft 365 for Campaigns offer to an existing Microsoft 365 tenant.
+> You cannot add the Microsoft 365 for Campaigns offer to an existing Microsoft 365 account.
 
 1. In your invitation to Microsoft 365 for Campaigns email, select **ENROLL YOUR ORGANIZATION >**. This takes you to Microsoft 365 sign-up.
 2. On the **Welcome, let's get to know you** page, click or tap **Want to add this to an existing subscription? Sign in**.

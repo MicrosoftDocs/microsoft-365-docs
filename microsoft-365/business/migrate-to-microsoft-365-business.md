@@ -27,7 +27,7 @@ description: "Learn the difference between Microsoft 365 Business Standard and M
 
 # Upgrade to Microsoft 365 Business Premium from Microsoft 365 Business Standard
 
-If you have an [Office 365 for business subscription](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2), for example, Microsoft 365 Business Standard, you can easily upgrade to Microsoft 365 Business Premium. Upgrade to Microsoft 365 Business Premium if you want to add: 
+If you have an [Microsoft 365 for business subscription](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2), for example, Microsoft 365 Business Standard, you can easily upgrade to Microsoft 365 Business Premium. Upgrade to Microsoft 365 Business Premium if you want to add: 
 - Windows 10 Pro (to PCs running Windows 8 or later)
 - Simple controls that manage business data on devices
 - Advanced security capabilities.
@@ -66,7 +66,7 @@ It takes Microsoft a few minutes to set up your new service plans. To check on p
 1. Once your plan is ready, you might need to complete some additional setup steps in the admin center. In the navigation pane, select **Home** to complete any additional setup steps.
 
 > [!NOTE]
-> You'll receive a prorated refund for the Office 365 licenses that you no longer need. Your bank account or credit card will be charged about two days after you set up the new plan.
+> You'll receive a prorated refund for the Microsoft 365 licenses that you no longer need. Your bank account or credit card will be charged about two days after you set up the new plan.
   
 ## Protect user devices and files
 
