@@ -347,8 +347,6 @@
             - name: What is EOP?
               href: ./office-365-security/what-is-eop.md
               items: 
-                - name: Support for anonymous inbound email messages over IPv6
-                  href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: Block email spam in EOP Standalone
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
                 - name: Protect on-premises mailboxes with Exchange Online Protection
@@ -448,6 +446,8 @@
           items: 
             - name: Message trace in the Security & Compliance Center
               href: ./office-365-security/message-trace-scc.md
+            - name: Add support for anonymous inbound email over IPv6
+              href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: View email security reports in the Security & Compliance Center
               href: ./office-365-security/view-email-security-reports.md
             - name: Mail flow insights in the Security & Compliance Center
