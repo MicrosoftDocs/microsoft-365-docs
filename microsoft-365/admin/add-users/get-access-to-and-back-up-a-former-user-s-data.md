@@ -111,7 +111,7 @@ As global admin, you can give yourself access to the content in a user’s OneDr
 
 ::: moniker-end
 
-   If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
+    If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
 
 2. In the left pane, select **Admin centers** \> **SharePoint**. (You might need to select **Show all** to see the list of admin centers.)
 
