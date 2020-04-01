@@ -29,11 +29,23 @@ Use communication compliance policies to capture employee communications for exa
 
 ## Before you begin
 
-Before you get started with communication compliance, you should confirm your Microsoft 365 subscription. Users included in communication compliance policies must have a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription, or be included in a Microsoft 365 E5 subscription.
+Before you get started with communication compliance, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use communication compliance, your organization must have one of the following subscriptions or add-ons:
+
+- Microsoft 365 E5 subscription (paid or trial version)
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Insider Risk Management add-on
+- Microsoft 365 A5 subscription (paid or trial version)
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
+- Office 365 Enterprise E5 subscription (paid or trial version)
+- Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on
+
+Users included in communication compliance policies must must be assigned one of the licenses above.
+
+>[!IMPORTANT]
+>Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
 If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
-  
-Complete these steps to set up and use communication compliance in your Microsoft 365 organization:
 
 ## Step 1 (required): Enable permissions for communication compliance
 
