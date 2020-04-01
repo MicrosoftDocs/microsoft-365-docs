@@ -51,7 +51,7 @@ Many of the functions handled in Compliance Manager can now be done in Complianc
 Keep these points in mind as you work with Compliance Score and Compliance Manager during public preview:
 
 - **Managing assessments**: users can view assessments and their status details in Compliance Score. However users can only do assessment management tasks in Compliance Manager ([view instructions](working-with-compliance-manager.md#assessments)). Examples of those tasks include:
-    - Create and modify assessments
+    - Create and copy assessments
     - Export assessments
     - Archive assessments
     - View archived assessments

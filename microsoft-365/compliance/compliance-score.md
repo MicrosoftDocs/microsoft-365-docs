@@ -95,7 +95,7 @@ Assessments contain:
 > [!NOTE]
 > Compliance Score displays your assessments and how they factor into your overall score. However, during public preview you will be directed to Compliance Manager to manage your assessments.
 
-View [detailed instructions for managing assessments](working-with-compliance-manager.md#assessments), which occurs in Compliance Manager.
+View detailed instructions for [managing assessments in Compliance Manager](working-with-compliance-manager.md#assessments).
 
 ### Templates
 
@@ -104,13 +104,13 @@ Compliance Score provides pre-configured templates for assessments. You can also
 The pre-configured templates for Compliance Score are:
 
 1. [Brazil General Data Protection Law (LGPD)](https://go.microsoft.com/fwlink/?linkid=2115387)
-2. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (Preview)
+2. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (preview)
 3. [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
 4. [European Union GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
 5. [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](https://go.microsoft.com/fwlink/?linkid=2109077)
 6. [FedRAMP Moderate](https://go.microsoft.com/fwlink/?linkid=2108869)
 7. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
-8. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (Preview)
+8. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (preview)
 9. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
 10. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
 11. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
