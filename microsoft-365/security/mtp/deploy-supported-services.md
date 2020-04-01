@@ -31,7 +31,7 @@ search.appverid:
 [Microsoft Threat Protection](microsoft-threat-protection.md) integrates various Microsoft security services to provide centralized detection, prevention, and investigation capabilities against sophisticated attacks. This article describes the supported services, their licensing requirements, the advantages and limitations associated with deploying one or more services, and links to how you can fully deploy them individually.
 
 ## Supported services
-A [Microsoft 365 E5, E5 Security, or A5 license or a valid combination of licenses](prerequisites.md#licensing-requirements) provides access to the following supported services and entitles you to use Microsoft Threat Protection in Microsoft 365 security center.
+A Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combination of licenses provides access to the following supported services and entitles you to use Microsoft Threat Protection in Microsoft 365 security center. [See licensing requirements](prerequisites.md#licensing-requirements)
 
 | Supported service | Description |
 | ------ | ------ |
@@ -66,7 +66,7 @@ Deploying each service typically requires provisioning to your tenant and some i
 
 | Service | Provisioning instructions | Initial configuration |
 | ------ | ------ | ------ |
-| Microsoft Defender ATP | [Validate licensing provisioning and complete set up for Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/licensing) | *See provisioning instructions* |
+| Microsoft Defender ATP | [Microsoft Defender ATP deployment guide](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *See provisioning instructions* |
 | Office 365 ATP | *None, provisioned with Office 365* | [Configure ATP policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
 | Azure ATP | [Quickstart: Create your Azure ATP instance](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *See provisioning instructions* |
 | Microsoft Cloud App Security | *None* | [Quickstart: Get started with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |

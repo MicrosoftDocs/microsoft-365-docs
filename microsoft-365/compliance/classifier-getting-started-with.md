@@ -31,7 +31,7 @@ This category of classification mechanisms includes finding content by:
 - keywords or metadata values (keyword query language)
 - using previously identified patterns of sensitive information like social security, credit card or bank account numbers [(sensitive information types)](what-the-sensitive-information-types-look-for.md)
 - Recognizing an item because it's a variation on a template [(document finger printing)](document-fingerprinting.md)
-- using the presence of exact strings [(exact data match)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- using the presence of exact strings [(exact data match)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).'
 
 Sensitivity and retention labels can then be automatically applied to make the content available for use in [data loss prevention (DLP)](data-loss-prevention-policies.md) and [retention policies](retention-policies.md).
 
@@ -62,7 +62,17 @@ Microsoft 365 comes with six built-in classifiers:
 
 - **Offensive Language**: detects text items that contain profanities, slurs, taunts, and disguised expressions (which are expressions that have the same meaning as a more offensive term).
 - **Resumes**: detects items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information.
-- **SourceCode**: detects items that contain a set of instructions and statements written in widely used computer programming languages.
+- **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub.
+
+|language name|||||
+|---------|---------|---------|---------|---------|
+|ActionScript|C        |C#       |C++     |Clojure  |
+|CoffeeScript|CSS     |Go       |Haskell |HTML     |
+|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+|Perl     |PHP      |Python   |R        |Ruby     |
+|Scala    |Shell    |Swift    |Tex      |Vim Script|
+
+
 - **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability.
 - **Profanity**: detects a specific category of offensive language text items that contain expressions that embarrass most people.
 - **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property.

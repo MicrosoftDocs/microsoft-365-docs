@@ -41,7 +41,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `RemoteUrl` | string | URL or fully qualified domain name (FQDN) that was being connected to |
 | `LocalIP` | string | IP address assigned to the local machine used during communication |
 | `LocalPort` | int | TCP port on the local machine used during communication |
-| `Protocol` | string | IP protocol used, whether TCP or UDP |
+| `Protocol` | string | Protocol used during the communication |
 | `LocalIPType` | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | `RemoteIPType` | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |
