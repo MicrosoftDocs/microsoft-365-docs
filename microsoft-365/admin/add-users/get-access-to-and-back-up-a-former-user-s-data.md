@@ -95,23 +95,27 @@ As global admin, you can give yourself access to the content in a user’s OneDr
 
 ::: moniker range="o365-worldwide"
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>  as a global admin or SharePoint admin. 
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a global admin or SharePoint admin. 
+
+    If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>  as a global admin or SharePoint admin.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a> as a global admin or SharePoint admin.
+
+    If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>  as a global admin or SharePoint admin.
-
-::: moniker-end
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a> as a global admin or SharePoint admin.
 
     If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
+
+::: moniker-end
 
 2. In the left pane, select **Admin centers** \> **SharePoint**. (You might need to select **Show all** to see the list of admin centers.)
 
