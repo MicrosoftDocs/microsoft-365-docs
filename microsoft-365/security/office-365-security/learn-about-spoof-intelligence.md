@@ -96,7 +96,7 @@ You can review the senders who are spoofing your domain, or external domains, an
 
 6. Choose **Save** to save any changes.
 
-If you have an Office 365 Enterprise E5 subscription or have separately purchased Advanced Threat Protection as an add-on, you can also manage senders who are spoofing your domain through the [Spoof Intelligence Insight](https://docs.microsoft.com/office365/securitycompliance/walkthrough-spoof-intelligence-insight).
+If you have an Office 365 Enterprise E5 subscription or have separately purchased Advanced Threat Protection as an add-on, you can also manage senders who are spoofing your domain through the [Spoof Intelligence insight](walkthrough-spoof-intelligence-insight.md).
 
 ## Configuring the anti-spoofing policy
 <a name="Managespooflist"> </a>
