@@ -1,5 +1,5 @@
 ---
-title: "Upgrade your Office 365 for business users to the latest Office client"
+title: "Upgrade your Microsoft 365 for business users to the latest Office client"
 f1.keywords:
 - NOCSH
 ms.author: janellem
@@ -22,7 +22,7 @@ ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: "Learn how to upgrade your users to the latest Office client."
 ---
 
-# Upgrade your Office 365 for business users to the latest Office client
+# Upgrade your Microsoft 365 for business users to the latest Office client
 
 ## Office 2010 reaches end-of-support
 
@@ -38,9 +38,9 @@ See [Office 2010 end of support roadmap](https://docs.microsoft.com/deployoffice
 
  **Is this the right topic for you?**
   
- If you're the admin responsible for the Office 365 for business subscription in your organization, you're in the right place. Admins are typically responsible for tasks like managing users, resetting passwords, managing Office installs and adding or removing licenses.
+ If you're the admin responsible for the Microsoft 365 for business subscription in your organization, you're in the right place. Admins are typically responsible for tasks like managing users, resetting passwords, managing Office installs and adding or removing licenses.
 
- If you're not an admin and you have an [Office for home](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans) product, see [How do I upgrade Office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx) for information about upgrading your older, home use version of Office.
+ If you're not an admin and you have a [Microsoft 365 Family](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans) product, see [How do I upgrade Office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx) for information about upgrading your older, home use version of Office.
 
 ## Getting ready to upgrade
 
@@ -67,9 +67,9 @@ For example, if you're using third-party add-ins with your current Office instal
   
 ## Step 2 - Check your existing subscription plan
 
-Some Office 365 plans don't include the full desktop versions of Office and the steps to upgrade are different if your plan doesn't include Office.
+Some Microsoft 365 plans don't include the full desktop versions of Office and the steps to upgrade are different if your plan doesn't include Office.
   
-Not sure which subscription plan you have? See [What Office 365 for business subscription do I have?](../admin-overview/what-subscription-do-i-have.md)
+Not sure which subscription plan you have? See [What Microsoft 365 for business subscription do I have?](../admin-overview/what-subscription-do-i-have.md)
   
 If your existing plan includes Office, move on to [Step 3 - Uninstall Office](#step-3---uninstall-office).
   
@@ -79,7 +79,7 @@ If your existing plan doesn't include Office, then select from the options below
 
  **Option 1: Switch Office subscriptions**
 
-Switch to a subscription that includes Office. See [Switch to a different Office 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md).
+Switch to a subscription that includes Office. See [Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md).
 
 **Option 2: Buy individual, one-time purchases of Office, or buy Office through a volume license**
 
@@ -113,7 +113,7 @@ If you'd prefer to install your older version of Office side-by-side with the la
 
 ## Step 4 - Assign Office licenses to users
 
-If you haven't already done so, assign licenses to any users in your organization who need to install Office, see [Assign licenses to users in Office 365 for business](../manage/assign-licenses-to-users.md).
+If you haven't already done so, assign licenses to any users in your organization who need to install Office, see [Assign licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md).
   
 ## Step 5 - Install Office
 

@@ -24,7 +24,7 @@ description: "Learn how to get access to on-premises resources like line of busi
 
 # Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business Premium
 
-Any Windows 10 device that is Azure Active Directory joined has access to all cloud-based resources, such as your Office 365 apps, and can be protected by Microsoft 365 Business Premium. You can also allow access to on-premises resources like line of business (LOB) apps, file shares, and printers. To allow access, use [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to synchronize your on-premises Active Directory with Azure Active Directory. 
+Any Windows 10 device that is Azure Active Directory joined has access to all cloud-based resources, such as your Microsoft 365 apps, and can be protected by Microsoft 365 Business Premium. You can also allow access to on-premises resources like line of business (LOB) apps, file shares, and printers. To allow access, use [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to synchronize your on-premises Active Directory with Azure Active Directory. 
 
 To learn more, see [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 The steps are also summarized in the following sections.

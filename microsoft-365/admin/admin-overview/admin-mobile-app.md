@@ -63,7 +63,7 @@ Below are answers to some frequently asked questions people ask about the app.
 
 You need to have a valid Microsoft 365 Apps for business or Microsoft 365 Business Premium subscription with admin privileges to sign in and use the app. The Admin mobile app isn't an email client. It's a rich administrative app with over 80 features to help you support your org while your on the go.
   
-### Can I use the app with my Office 365 for home subscription?
+### Can I use the app with my Microsoft 365 Family subscription?
 
 No, the app only works with Microsoft 365 Apps for business and Microsoft 365 Business Premium subscriptions. 
   
