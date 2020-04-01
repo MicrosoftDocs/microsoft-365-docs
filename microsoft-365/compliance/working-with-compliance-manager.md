@@ -135,7 +135,7 @@ What to know when working with groups:
 The **Tenant Management** interface enables you to manage these organization-wide settings:
 
 - **Dimensions:** View metadata for Templates, Assessments, and Action Items that allow you to create custom pivots for filters.
-- **Owners:** Specify an owner for each Action Item.
+- **Owners:** Populate a list of people so you can add them as owners of controls.
 - **Customer Actions:** Manage the complete list of Actions Items included in Compliance Manager (Preview) and enable/disable Secure Score monitoring for Actions that are integrated with Secure Score.
 
 Select **Tenant Management** from the upper-right corner of your screen to open the management interface, and use the steps below to manage  **Dimensions**, **Owners**, and **Customer Actions**.
@@ -146,7 +146,7 @@ Dimensions are sets of metadata that provide information about a Template, an As
 
 ### Owners
 
-Owners are used to identify the responsible party for each control. All built-in controls are owned by Microsoft, by customers, or by both. You can create custom values for Owners that can be used to specify more granular responsibilities within your organization. For example, you could create Owners that represent specific groups, teams, or business units within your organization.
+Owners are used to identify the person responsible for each control. All built-in controls are owned by Microsoft, by customers, or by both. You can create custom values for Owners that can be used to specify more granular responsibilities within your organization. For example, you could create Owners that represent specific groups, teams, or business units within your organization.
 
 #### Add an Owner
 
@@ -446,11 +446,11 @@ Your spreadsheet **must include the tabs in this order**, otherwise your data wo
 
 ##### Template tab
 
-The **Template** tab is required. The information in this tab provides metadata about the template. There are four required columns. The columns must retain the order on the Excel sheet as listed below. You can add your own columns **after** the four columns to provide additional data for your Template.
+The **Template** tab is required. The information in this tab provides metadata about the template. There are four required columns. The columns must retain the order on the Excel sheet as listed below. You can add your own column **after** the four columns to provide your own dimensions. If you do this, be sure to add them to the **Dimensions** tab using the [instructions below](#dimensions-tab).
 
 - **title**: This is the title for your template, which must be unique. It can't share a name with another template you have in Compliance Manager, whether it's a template you already created, or a pre-configured template provided by Microsoft.
 
-- **product**: This is a required dimension. List the product associated with the template. You can list multiple products separated by two semi-colons with no space in between (for example: Office 365;;Intune).
+- **product**: This is a required dimension. List the product associated with the template.
 
 - **certification**: This is the regulation you're using for the template.
 
@@ -488,13 +488,13 @@ The **Actions** tab is required.  It designates actions of your organization and
 
 ![Compliance Manager controls point values](../media/compliance-score-controls-scoring.png "Compliance Manager controls point values")
 
-- **actionOwnership**: This is the person who is responsible for the action overall. It is not necessarily the person who is assigned to complete the action. You may want to simply list "customer" here. This is a required field.
+- **actionOwnership**: This is the person who is responsible for the action overall. It is not necessarily the person who is assigned to complete the action. You may want to simply list "customer" here. This is an optional field.
 
 - **actionDescriptionTitle**: This is the title of the description and is required. This description title allows you to have the same action in multiple templates and surface a different description in each template.  This field helps you clarify what template the description is referencing. In most cases, you can simply put the name of the template you're creating in this field.
 
 - **actionDescription**: Provide a description of the action. You can apply formatting such as bold text and hyperlinks. This is required field.
 
-- **dimension-Action Purpose**: This is an optional field. You don't need to have dimensions for your actions. Any dimensions you include here will be used as [filters in Compliance Score](compliance-score-setup.md#filtering-your-dashboard-view) and appear on the [improvement actions details page in Compliance Score](working-with-compliance-score.md#view-your-improvement-actions). If you include dimensions here, you must list them on the Dimensions tab, as explained in the section immediately below.
+- **dimension-Action Purpose**: This is an optional field. An entry you list here must carry the prefix "dimension-" (for example, "dimension-XYZ"). You don't need to have dimensions for your actions. Any dimensions you include here will be used as [filters in Compliance Score](compliance-score-setup.md#filtering-your-dashboard-view) and appear on the [improvement actions details page in Compliance Score](working-with-compliance-score.md#view-your-improvement-actions). If you include dimensions here, you must list them on the Dimensions tab, as explained in the section immediately below.
 
 ##### Dimensions tab
 
@@ -528,7 +528,7 @@ On the **Templates** tab, you can edit anything in the **title** column, the **i
 ##### To add an action to a Template
 
 1. Go to the **Actions** tab and add your information in the required fields in the first empty row underneath your existing actions.
-2. Go to your **ControlFamily** tab and add your new action the control it maps to in the **controlActionTitle** column (remember to separate multiple actions in this field with two semi-colons, no space in between).
+2. Go to your **ControlFamily** tab. Find the row containing the control your action maps to. Add your new action to the **controlActionTitle** column in that row (remember to separate multiple actions in this field with two semi-colons, no space in between).
 3. Save your spreadsheet to your local machine.
 
 ##### To edit an action's information
@@ -545,9 +545,6 @@ If you want to change the name of an action, you have to explicitly designate in
 2. In this new column, which is now column B, put as its header in row one: **oldActionTitle**.
 3. Copy the contents of column A and paste them into column B. This puts your existing action titles, which are what you want to change, into column B.
 4. In column A, **actionTitle**, delete the old name and replace it with the new name for your action.
-
-> [!NOTE]
-> You can use this same process to rename a control or a control family.
 
 ##### To remove an action from a Template
 
