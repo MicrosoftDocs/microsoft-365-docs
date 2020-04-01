@@ -15,7 +15,6 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
 description: When managing a data investigation, email threading parses an email conversation and separates each message into different categories.
 ms.custom: seo-marvel-mar2020
 ---

@@ -15,7 +15,6 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
 description: Learn how to configure search and analytics settings, like near duplicates, email threading, and themes when managing data investigations.
 ms.custom: seo-marvel-mar2020
 ---
