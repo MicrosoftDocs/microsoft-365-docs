@@ -21,7 +21,7 @@ description: "Office 365 Advanced Threat Protection includes safe attachments, s
 # Office 365 Advanced Threat Protection
 
 > [!IMPORTANT]
-> This article is intended for business customers who have [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). If you are using Outlook.com, Office 365 Home, or Office 365 Personal, and you're looking for information about Safe Links or Safe Attachments in Outlook, see [Advanced Outlook.com security for Office 365 subscribers](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> This article is intended for business customers who have [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). If you are using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safe Links or Safe Attachments in Outlook, see [Advanced Outlook.com security for Office 365 subscribers](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## Overview
 
