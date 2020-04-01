@@ -304,6 +304,11 @@
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview",
       "redirect_document_id": true
     },
+	{
+      "source_path": "microsoft-365/security/mtp/mtp-preview.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/preview",
+      "redirect_document_id": true
+    },
     {
       "source_path": "microsoft-365/security/office-365-security/index.md",
       "redirect_url": "eop-features",
