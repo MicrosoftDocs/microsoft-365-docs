@@ -40,7 +40,7 @@ Reporting phishing messages is helpful in tuning the filters that are used to pr
 
 You can examine the headers of the phishing message to see if there's anything that you can do yourself to prevent more phishing messages from coming through. In other words, examining the messages headers can help you identify any settings in your organization that were responsible for allowing the phishing messages in.
 
-Specifically, you should check the **X-Forefront-Antispam-Report** header field in the message headers for indications of skipped spam or phish filtering in the Spam Filtering Verdict (SFV) value. Messages that skip filtering will have an entry of `SCL:-1`, which means one of your settings allowed this message through by overriding the spam or phish verdicts that were determined by the service. For more details on how to get message headers and the complete list of all available anti-spam and anti-phish message headers, see [Anti-spam message headers](https://docs.microsoft.com/office365/SecurityCompliance/anti-spam-message-headers).
+Specifically, you should check the **X-Forefront-Antispam-Report** header field in the message headers for indications of skipped spam or phish filtering in the Spam Filtering Verdict (SFV) value. Messages that skip filtering will have an entry of `SCL:-1`, which means one of your settings allowed this message through by overriding the spam or phish verdicts that were determined by the service. For more details on how to get message headers and the complete list of all available anti-spam and anti-phish message headers, see [Anti-spam message headers in Office 365](anti-spam-message-headers.md).
 
 ## Best practices to stay protected
 
@@ -56,7 +56,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
   - Verify that your SPF record identifies _all_ sources of email for senders in your domain (don't forget third-party services!).
 
-  - Use hard fail (\-) to ensure that unauthorized senders are rejected by email systems that are configured to do so. You can use [spoof intelligence](https://docs.microsoft.com/office365/securitycompliance/learn-about-spoof-intelligence) to help identify senders that are using your domain so that you can include authorized third-party senders in your SPF record.
+  - Use hard fail (\-) to ensure that unauthorized senders are rejected by email systems that are configured to do so. You can use [spoof intelligence](learn-about-spoof-intelligence.md) to help identify senders that are using your domain so that you can include authorized third-party senders in your SPF record.
 
   For configuration instructions, see:
   
@@ -66,8 +66,8 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
   - [Use DMARC to validate email](use-dmarc-to-validate-email.md)
 
-- Whenever possible, we recommend that you deliver email for your domain directly to Microsoft 365. In other words, point your Office 365 domain's MX record to Microsoft 365. Exchange Online Protection (EOP) is able to provide the best protection for your cloud users when their mail is delivered directly to Office 365. If you must use a third-party email hygiene system in front of EOP, ensure you have followed the guidance [here](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud).
+- Whenever possible, we recommend that you deliver email for your domain directly to Office 365. In other words, point your Office 365 domain's MX record to Office 365. Exchange Online Protection (EOP) is able to provide the best protection for your cloud users when their mail is delivered directly to Office 365. If you must use a third-party email hygiene system in front of EOP, use Enhanced Filtering for Connectors. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- Multi factor authentication (MFA) is a really good way to prevent compromised accounts. You should strongly consider enabling MFA for all of your users. For a phased approach, start by enabling MFA for your most sensitive users (admins, executives, etc.) before you enable MFA for everyone. For instructions, see [Set up multi-factor authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+- Multi factor authentication (MFA) is a really good way to prevent compromised accounts. You should strongly consider enabling MFA for all of your users. For a phased approach, start by enabling MFA for your most sensitive users (admins, executives, etc.) before you enable MFA for everyone. For instructions, see [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 - Forwarding rules to external recipients are often used by attackers to extract data. Use the **Review mailbox forwarding rules** information in [Microsoft Secure Score](../mtp/microsoft-secure-score.md) to find and even prevent forwarding rules to external recipients. For more information, see [Mitigating Client External Forwarding Rules with Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).

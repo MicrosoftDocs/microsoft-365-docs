@@ -1,5 +1,5 @@
 ---
-title: "Manage legal investigations"
+title: "Manage legal investigations in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,10 +14,10 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: "Use eDiscovery cases in the Security & Compliance Center in Office 365 to manage your organization's legal investigation. If you have an E5 subscription, you can further analyze case data by using the text analytics, machine learning, and predictive coding capabilities of Advanced eDiscovery."
+description: "Use eDiscovery cases in the Microsoft 365 compliance center to manage your organization's legal investigation. If you have an E5 subscription, you can further analyze case data by using the text analytics, machine learning, and predictive coding capabilities of Advanced eDiscovery."
 ---
 
-# Manage legal investigations
+# Manage legal investigations in Microsoft 365
 
 Organizations have many reasons to respond to a legal case involving certain executives or other employees in your organization. This might involve quickly finding and retaining for further investigation-specific information in email, documents, instant messaging conversations, and other content locations used by people in their day-to-day work tasks. You can perform these and many other similar activities by using the eDiscovery case tools in the security and compliance center.
   
@@ -47,9 +47,9 @@ Like the previous section that listed scripts for content search scenarios, we'v
 
 The Advanced eDiscovery solution in Microsoft 365 builds on the existing eDiscovery and analytics capabilities in Office 365. This new solution, called *Advanced eDiscovery*, provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
 
-Advanced eDiscovery requires an E5 subscription for your Office 365 or Microsoft 365 organization. Alternatively, users with an E3 license require the Advanced Compliance add-on subscription so you can manage them as custodians in an Advanced eDiscovery case.
+Advanced eDiscovery requires an E5 subscription for your Microsoft 365 or Office 365 organization. For more information about licensing, see [Get started with Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
-Here's a quick overview of the built-in workflow in Advanced eDiscovery. For more information, see [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md).
+Here's a quick overview of the built-in workflow in Advanced eDiscovery. For more information, see [Explore the Advanced eDiscovery workflow](get-started-with-advanced-ediscovery.md#explore-the-advanced-ediscovery-workflow).
 
 - [Create a case](create-new-ediscovery-case.md) to get started
 
