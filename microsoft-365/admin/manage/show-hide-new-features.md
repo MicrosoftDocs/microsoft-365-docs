@@ -55,7 +55,7 @@ New features appear in Office What's New Management based on this schedule:
 |**Semi-annual (Targeted)** <br/> |Sept 1 and March 1 <br/> | 2 weeks before the major release that brings new features
 |**Semi-annual** <br/> |Jan 1 and July 1 <br/> | 2 weeks before the major release that brings new features<br/> |
 
-For more information about channel update schedules, see [Update history for Office 365 ProPlus (listed by date)](https://docs.microsoft.com/en-us/officeupdates/update-history-office365-proplus-by-date).
+For more information about channel update schedules, see [Update history for Office 365 ProPlus (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 
 ## Related articles
 
