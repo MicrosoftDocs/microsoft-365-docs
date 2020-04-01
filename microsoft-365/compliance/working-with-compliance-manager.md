@@ -13,10 +13,10 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal. Compliance Manager enables you to track, assign, and verify regulatory compliance activities related to Microsoft products."
+description: "Microsoft Compliance Manager is a free workflow-based risk assessment tool. Use it to track, assign, and verify regulatory compliance activities related to Microsoft products."
 ---
 
-# Working with Microsoft Compliance Manager (Preview)
+# Working with Microsoft Compliance Manager (preview)
 
 > [!IMPORTANT]
 > Microsoft Compliance Manager is a dashboard and management tool that provides a summary of your data protection and compliance stature and recommendations to improve data protection and compliance. The customer actions provided in Compliance Manager are recommendations. It is up to your organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance.
@@ -265,7 +265,7 @@ For Assessments, the Controls Info dashboard displays the following information:
 
 ### Copying information from existing Assessments
 
-When you create an Assessment, you have the option to copy information from an existing group. This allows you to apply the information entered into the copied assessment to the same controls in the new Assessment. For example, if you have a group for all FFIEC-related Assessments in your organization, you can copy the following information from existing assessments:
+When you create an Assessment, you have the option to copy information from an existing group. Copying allows you to apply the information entered into the copied assessment to the same controls in the new Assessment. For example, if you have a group for all FFIEC-related Assessments in your organization, you can copy the following information from existing assessments:
 
 - Implementation Details
 - Test Plan & Additional Information
@@ -370,7 +370,7 @@ Actions Items are the recommended tasks for implementing the requirements of a s
   
 1. On the **Action Items** dashboard, select the **Group** containing the Assessment(s) whose Action you want to assign.
 2. In the **Assessment** dropdown, select the Assessment whose Action you want to assign, or select **All** from the dropdown to see all available Actions.
-3. Locate the Action you want to assign, and in the **Owner** column, select the link for **Review**, **Implemented** or **Test**.
+3. Locate the Action you want to assign, and in the **Owner** column, select the link for **Review**, **Implemented, or **Test**.
 4. Select the **Assign User** field, and a list of users in your organization appear. Scroll the list and select user or filter the list to select a user by typing in the user's name.
 5. In the Implementation Notes field, enter any notes you wish to convey to the assigned user.
 6. Select **Save** to assign the Action.
@@ -388,7 +388,7 @@ This function enables an organization to remove any active or outstanding depend
 
 #### Common Action Items synch status across Groups
 
-If your organization has multiple groups of assessments, there is a behavior of Technical actions (that is, actions affecting your entire organization). Any duplicate action across groups are now combined into one single action. That single action contains all uploaded notes and evidence from previously duplicate versions. Any change made to the action in one group or assessment will be reflected in all instances of that action. The **Implementation Status**, **Implementation Date**, **Test Status**, and **Test Date** reflects the most recent updates.
+If your organization has multiple groups of assessments, there is a behavior of Technical actions (that is, actions affecting your entire organization). Any duplicate actions across groups are now combined into one single action. That single action contains all uploaded notes and evidence from previously duplicate versions. Any change made to the action in one group or assessment will be reflected in all instances of that action. The **Implementation Status**, **Implementation Date**, **Test Status**, and **Test Date** reflects the most recent updates.
 
 ## Templates
 
@@ -398,11 +398,9 @@ A Template is the base object in Compliance Manager (Preview) that is associated
  
 The dashboard displays each Template, along with the Certification and Product associated with the Template, the dates on which the Template was created and last modified, the number of customer and Microsoft-managed controls, the maximum Compliance Score for the Template, and the status of the Template (for example, Approved, Pending Approval, Imported).
 
-The built-in Templates each have a built-in Assessment associated with them, but you can create additional Assessments based on built-in Templates, and you can import your own Templates, and create custom Assessments based off those.
-
 ### Create a Template
 
-There are three ways to create and use a Template:
+There are three ways to work with Templates:
 
 1. Use one of the pre-configured Templates provided by Microsoft.
 2. Customize a pre-configured Template with your own actions and controls through the extension process.
@@ -467,11 +465,11 @@ The **ControlFamily** tab is required.  The required columns in this tab, which 
 
 - **controlFamily**: Provide a word or phrase for the controlFamily, which identifies a broad grouping of controls. A controlFamily doesn't have to be unique; it can be listed more than once in a spreadsheet. The same controlFamily can also be listed in multiple templates, though they have no relation to each other. Every controlFamily must be mapped to at least one control.
 
-- **controlTitle**: Provide a title for the control. Whereas the controlName is a reference code, the title is more rich text and is what it typically seen in the regulations.
+- **controlTitle**: Provide a title for the control. Whereas the controlName is a reference code, the title is a rich text format typically seen in the regulations.
 
 - **controlDescription**: Provide a description of the control.
 
-- **controlActionTitle**: This is the title of an action that you want to relate to this control. You can add multiple actions by separating by two semi-colons with no space in between. Every control you list must include at least one action, and the action must exist (this means, you can list an action that you list on the **Actions** tab of the same spreadsheet, an action that exists in a different template, or an action created by Microsoft). Different controls can reference the same action.
+- **controlActionTitle**: This is the title of an action that you want to relate to this control. You can add multiple actions by separating by two semi-colons with no space in between. Every control you list must include at least one action, and the action must exist (which means you can list an action that you list on the **Actions** tab of the same spreadsheet, an action that exists in a different template, or an action created by Microsoft). Different controls can reference the same action.
 
 ##### Actions tab
 
@@ -488,9 +486,9 @@ The **Actions** tab is required.  It designates actions of your organization and
 
 ![Compliance Manager controls point values](../media/compliance-score-controls-scoring.png "Compliance Manager controls point values")
 
-- **actionOwnership**: This is the person who is responsible for the action overall. It is not necessarily the person who is assigned to complete the action. You may want to simply list "customer" here. This is an optional field.
+- **actionOwnership**: This is the person who is responsible for the action overall. It is not necessarily the person who is assigned to complete the action. You may want to list "customer" here. This is an optional field.
 
-- **actionDescriptionTitle**: This is the title of the description and is required. This description title allows you to have the same action in multiple templates and surface a different description in each template.  This field helps you clarify what template the description is referencing. In most cases, you can simply put the name of the template you're creating in this field.
+- **actionDescriptionTitle**: This is the title of the description and is required. This description title allows you to have the same action in multiple templates and surface a different description in each template.  This field helps you clarify what template the description is referencing. In most cases, you can put the name of the template you're creating in this field.
 
 - **actionDescription**: Provide a description of the action. You can apply formatting such as bold text and hyperlinks. This is required field.
 
@@ -503,7 +501,7 @@ The **Dimensions** tab is optional. However, if you reference a dimension elsewh
 - **dimensionKey**: list as "product", "certifications," "action purpose"
 - **dimensionValue**: examples: Office 365, HIPPA, Preventative, Detective
 
-You can view your existing dimensions by going to **Tenant Management** and selecting the **Dimensions** tab. Also, any time you export an existing template, the exported spreadsheet will have the **Dimensions** tab, which lists all the dimensions used in the template.
+You can view your existing dimensions by going to **Tenant Management** and selecting the **Dimensions** tab. Also, anytime you export an existing template, the exported spreadsheet will have the **Dimensions** tab, which lists all the dimensions used in the template.
 
 #### How to make changes to an existing Template
 
@@ -542,7 +540,7 @@ You cannot edit the **actionTitle** (column A) because if you do, Compliance Man
 If you want to change the name of an action, you have to explicitly designate in the spreadsheet that you are replacing an existing name with a new name. To change an action's name, follow these steps:
 
 1. In the **Actions** tab of your spreadsheet, add a new column to the spreadsheet after column A.
-2. In this new column, which is now column B, put as its header in row one: **oldActionTitle**.
+2. In this new column, which is now column B, put as its header in row 1: **oldActionTitle**.
 3. Copy the contents of column A and paste them into column B. This puts your existing action titles, which are what you want to change, into column B.
 4. In column A, **actionTitle**, delete the old name and replace it with the new name for your action.
 
@@ -552,11 +550,11 @@ Deleting an action from a row in a spreadsheet **does not** remove the action fr
 
 1. On the **Actions** tab, insert a new column as column A and put **Operation** in the header row, which is row number one.
 2. On the row for the action you want to remove, put **Delete** in column A for that row.
-3. Ensure that the this action is no longer referenced by a control. Go to the **ControlFamily** tab and look for your action's title in column F, which is **controlActionTitle**.
+3. Ensure that this action is no longer referenced by a control. Go to the **ControlFamily** tab and look for your action's title in column F, which is **controlActionTitle**.
 4. When you find your action listed in the **controlActionTitle** column, delete it.
 5. Save your spreadsheet to your local machine.
 
-When you import your spreadsheet back into the template, your action will be removed from the template. Note that removing an action from a template does not completely remove the action. That action can still be referenced by another template.
+When you import your spreadsheet back into the template, your action will be removed from the template. Removing an action from a template does not completely remove the action. That action can still be referenced by another template.
 
 If you are removing the last action that a control references, then you need to remove the control.
 
@@ -573,7 +571,7 @@ Compliance Manager (Preview) also supports exporting Templates to JavaScript Obj
 
 ## Reports
 
-You can export an Assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators. The report is a snapshot of the Assessment as of the date and time of the export. The report contains the details for Microsoft and customer-managed controls for the Assessment, control implementation status, control test date, test results, and links to uploaded evidence documents. You should export Assessments before archiving them because archived Assessments do not retain links to uploaded documents.
+You can export an Assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators. The report is a snapshot of the Assessment as of the date and time of the export. The report contains the details for Microsoft and customer-managed controls for the Assessment, control implementation status, control test date, test results, and links to uploaded evidence documents. We recommend exporting Assessments before archiving them, because archived Assessments don't retain links to uploaded documents.
 
 ### Export an Assessment
 

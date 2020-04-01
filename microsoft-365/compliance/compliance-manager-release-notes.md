@@ -16,7 +16,7 @@ search.appverid:
 description: "Microsoft Compliance Manager is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal. Compliance Manager enables you to track, assign, and verify regulatory compliance activities related to Microsoft cloud services."
 ---
 
-# Microsoft Compliance Manager (Preview) release notes
+# Microsoft Compliance Manager (preview) release notes
 
 The public preview of Compliance Manager provides you with early access to upcoming functionality and updates. This page contains updates on new features and functionality, as well as known issues with the current release.
 
@@ -28,7 +28,7 @@ We've updated the process for importing, exporting, and modifying templates for 
 
 ### The old process
 
-There were two ways of creating a template in Compliance Manager. You could copy an existing template, or import template data from an Excel spreadsheet into a new template. From your **Templates** page, you'd select **+ Add template** to create a brand new template by entering a name, selecting dimensions, and uploading an Excel file with a specific format and schema. Or you could check the **Copy from an existing template** box, select a template to copy, and verify dimensions. Customizing your template required a multi-step process that began by selecting **Add custom control** after creating your template.
+There were two ways of creating a template in Compliance Manager. You could copy an existing template, or import template data from an Excel spreadsheet into a new template. From your **Templates** page, you'd select **+ Add template** to create a brand new template by entering a name, selecting dimensions, and uploading an Excel file with a specific format and schema. Or you could check the **Copy from an existing template** box, select a template to copy, and verify dimensions. Design customization your template required a multi-step process that began by selecting **Add custom control** after creating your template.
 
 ### The new process
 
@@ -36,7 +36,7 @@ We made it easier for you to create new templates. In a one-step **extension** p
 
 Each time the original assessment is updated through the versioning process outlined below, your customized assessment will inherit those updates and keep your custom controls.
 
-It's also now easier to modify your own existing templates. You can export your template, make changes in the same workbook, then import it with your edits saved.
+It's also easier to modify your own existing templates. You can export your template, make changes in the same workbook, then import it with your edits saved.
 
 View detailed instructions on [creating templates](working-with-compliance-manager.md#templates) with this new process.
 
@@ -48,7 +48,7 @@ Whenever an update is available for an assessment's template or an improvement a
 
 ## Common actions will synch status across groups
 
-If your organization has multiple groups of assessments, the behavior of **Technical** actions (that is, actions affecting your entire organization) has changed. Any duplicate actions across groups has been combined into one single action. That single action contains all uploaded notes and evidence from the duplicate versions. With this change, technical actions will now behave as they did when they belonged to the same group. Any change made to the action in one group or assessment will now be reflected in all instances. The **Implementation Status**, **Implementation Date**, **Test Status**, and **Test Date** will reflect the most recent updates.
+If your organization has multiple groups of assessments, the behavior of **Technical** actions (that is, actions affecting your entire organization) has changed. Any duplicate actions across groups have been combined into one single action. That single action contains all uploaded notes and evidence from the duplicate versions. With this change, technical actions will now behave as they did when they belonged to the same group. Any change made to the action in one group or assessment will now be reflected in all instances. The **Implementation Status**, **Implementation Date**, **Test Status**, and **Test Date** will reflect the most recent updates.
 
 ## Language support
 
@@ -66,7 +66,7 @@ The following section covers known issues in the current release of Compliance M
 
 - Secure Score results aren't available for some Actions Items in certain Microsoft 365 and Office 365 subscriptions. The Secure Score result is **Could not be detected** in these cases.
 - Sometimes Secure Score results are returned for corresponding policies and Action Items not completed.
-- For new tenants, Secure Score updates for all actions is automatically turned on. The global administrator can set the Secure Score continuous update switch to off, which turns off updates for all actions.
+- For new tenants, Secure Score updates for all actions are automatically turned on. The global administrator can set the Secure Score continuous update switch to off, which turns off updates for all actions.
   - **Note**: when organizations first deploy Microsoft 365 or Office 365, it takes approximately seven days for Secure Score to fully collect data and factor it into your score. During that time, setting the Secure Score continuous update switch to **Off** and manually setting an action to **implemented** will count that action toward your score. After the initial seven days, turning Secure Score continuous update back on will enable continuous monitoring from that point forward.
 - When Secure Score updates are turned on, actions are actively monitored by Secure Score, although the action's test date won't be updated to reflect monitoring.
 - When new assessments are created, scores automatically include Microsoft-managed control scores and Secure Score integration.
