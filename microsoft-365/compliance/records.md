@@ -21,6 +21,8 @@ description: "To implement a records management strategy in your Office 365 or M
 
 # Overview of records
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 Managing records in Microsoft 365 helps an organization comply with their corporate policies, legal and regulatory obligations while reducing risk and legal liability.
 
 At a high level, declaring content as a record means that:

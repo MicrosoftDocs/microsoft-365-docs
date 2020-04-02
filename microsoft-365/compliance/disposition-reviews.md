@@ -20,6 +20,8 @@ description: "When you create a retention label that retains content in Microsof
 
 # Overview of disposition reviews
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 When content reaches the end of its retention period, there are several reasons why you might want to review that content to decide whether it can be safely deleted ("disposed"). For example, you might need to:
   
 - Suspend the deletion ("disposition") of relevant content in the event of litigation or an audit.
