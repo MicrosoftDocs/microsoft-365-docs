@@ -1,6 +1,6 @@
 ---
 title: Create and track tickets through ServiceNow
-description: Microsoft 365 security center is being enhanced with the ability to natively create and track tickets in ServiceNow. Security administrators can send a Secure Score recommendation directly to ServiceNow and create a ticket.
+description: In this article, you'll learn how to create and track tickets in ServiceNow from Microsoft 365 security center.
 keywords: security, Microsoft 365, M365, secure score, security center, ServiceNow, tickets, tasks
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -17,6 +17,8 @@ ms.topic: article
 search.appverid: 
 - MOE150
 - MET150
+ms.custom:
+- seo-marvel-apr2020
 ---
 
 # Manage tickets through ServiceNow

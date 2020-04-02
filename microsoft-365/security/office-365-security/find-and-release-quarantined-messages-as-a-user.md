@@ -16,7 +16,9 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: "As an Office 365 user, you can view, release, and delete your quarantined messages (messages where you are a recipient, and spam filtering quarantined the message as spam or bulk email). You view and manage your quarantined messages in the Security & Compliance Center."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn how to view and manage quarantined messages in the Security & Compliance Center in Office 365."
 ---
 
 # Find and release quarantined messages as a user in Office 365

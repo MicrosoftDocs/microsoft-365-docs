@@ -15,7 +15,9 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: "Basic spam filter settings include selecting the action to take on messages that are identified as spam."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn how to view, edit, configure and customize anti-spam policies in Office 365."
 ---
 
 # Configure anti-spam policies in Office 365

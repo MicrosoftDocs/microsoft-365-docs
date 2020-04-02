@@ -11,7 +11,9 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
-description: "Changing business requirements can sometimes require splitting one Microsoft Exchange Online Protection (EOP) organization (tenant) into two separate organizations, merging two organizations into one, or moving your domains and EOP settings from one organization to another organization."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn how to move domains and settings from one Microsoft Exchange Online Protection (EOP) organization (tenant) to another."
 ---
 
 # Move domains and settings from one EOP organization to another EOP organization

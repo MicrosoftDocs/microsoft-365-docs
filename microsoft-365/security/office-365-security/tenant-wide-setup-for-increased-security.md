@@ -16,7 +16,9 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
-description: "Walks you through recommended configuration for tenant-wide settings that affect the security of your Office 365 environment. Your security needs might require more or less security. Use these recommendations as a starting point."
+ms.custom:
+- seo-marvel-apr2020
+description: "This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Office 365 environment."
 ---
 
 # Configure your Office 365 tenant for increased security

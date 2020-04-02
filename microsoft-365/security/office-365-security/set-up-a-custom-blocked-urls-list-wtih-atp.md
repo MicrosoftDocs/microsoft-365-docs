@@ -16,7 +16,9 @@ search.appverid:
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection: 
 - M365-security-compliance
-description: "Learn how to set up a list of blocked URLs for your organization using Office 365 Advanced Threat Protection. The blocked URLs will apply to email messages and Office documents according to your ATP safe links policies."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn how to set up a list of blocked URLs for your organization using Office 365 Advanced Threat Protection."
 ---
 
 # Set up a custom blocked URLs list using Office 365 ATP Safe Links

@@ -15,7 +15,9 @@ search.appverid:
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
-description: "Microsoft Outlook on the web users can report junk (spam) and phishing scams by using built-in email reporting options. You can also let Microsoft know if an email was incorrectly identified as junk (spam)."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn how to report junk (spam) and phishing scams by using built-in email reporting options."
 ---
 
 # Report junk email and phishing scams in Outlook on the web

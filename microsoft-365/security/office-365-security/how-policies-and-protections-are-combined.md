@@ -13,7 +13,9 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: Describes the application order of Office 365 protections, and how the priority value in protection policies determines which policy is applied.
+ms.custom:
+- seo-marvel-apr2020
+description: Learn about application order of Office 365 protections, and how the priority value in protection policies determines which policy is applied.
 ---
 
 # Order and precedence of email protection in Office 365

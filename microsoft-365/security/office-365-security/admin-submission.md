@@ -14,7 +14,9 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Learn how to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files from your Office 365 tenant to Microsoft for scanning."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn how to submit suspicious emails, suspected phishing mails, spam, & potentially harmful messages, URLs, & files from your Office 365 tenant to Microsoft for scanning."
 ---
 
 # How to submit suspected spam, phish, URLs, and files to Microsoft using Admin Submissions

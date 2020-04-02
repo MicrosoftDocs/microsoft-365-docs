@@ -16,7 +16,9 @@ search.appverid:
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
-description: "When you set up your ATP safe links policies, you can include a do-not-rewrite' list of URLs to enable some people in your organization to visit sites that you include in your list."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn how to setup custom blocked URLs for users and do-not-rewrite list of URLs for a group of users in Office 365 ATP safe links policies."
 ---
 
 # Set up a custom do-not-rewrite URLs list using Office 365 ATP Safe Links

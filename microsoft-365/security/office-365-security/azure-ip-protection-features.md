@@ -15,7 +15,9 @@ search.appverid:
 ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
-description: "To help with the initial step in protecting your information, starting July 2018 all Azure Information Protection eligible tenants will have the protection features in Azure Information Protection turned on by default. The protection features in Azure Information Protection were formerly known in Office 365 as Rights Management or Azure RMS. If your organization has an Office E3 service plan or a higher service plan you will now get a head start protecting information through Azure Information Protection when we roll out these features."
+ms.custom:
+- seo-marvel-apr2020
+description: "This article explains the changes being rolled out to the protection features in Azure Information Protection"
 ---
 
 # Protection features in Azure Information Protection rolling out to existing Office 365 tenants

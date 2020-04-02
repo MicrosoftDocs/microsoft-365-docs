@@ -1,5 +1,5 @@
 ---
-title: "Run an administrator role group report in EOP "
+title: "Run an administrator role group report in EOP"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,7 +11,9 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
-description: "Admins can learn how to run an administrator role group report in Exchange Online Protection (EOP). This report logs when an admin adds members to or removes members from administrator role groups, Microsoft Exchange Online Protection (EOP) logs each occurrence."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn how to run an administrator role group report in Exchange Online Protection (EOP)."
 ---
 
 # Run an administrator role group report in EOP

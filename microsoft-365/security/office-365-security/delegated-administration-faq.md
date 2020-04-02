@@ -11,7 +11,9 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
-description: "This topic provides frequently asked questions and answers for Microsoft partners and resellers who want to perform delegated Office 365 administration tasks, including the ability to manage Exchange Online Protection (EOP) for other tenants (companies)."
+ms.custom:
+- seo-marvel-apr2020
+description: "This topic provides FAQs and answers for Microsoft partners and resellers who want to perform delegated Office 365 administration tasks."
 ---
 
 # Delegated administration FAQ

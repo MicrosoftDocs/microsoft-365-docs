@@ -16,7 +16,9 @@ search.appverid:
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
-description: "Use spoof intelligence in the Security &amp; Compliance Center on the Anti-spam settings page to review all senders who are spoofing either domains that are part of your organization, or spoofing external domains. Spoof intelligence is available as part of Office 365 Enterprise E5 or separately as part of Advanced Threat Protection and Exchange Online Protection."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn how to use and manage spoof intelligence for protection against email spoofing."
 ---
 
 # Learn more about spoof intelligence

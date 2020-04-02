@@ -16,7 +16,9 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: "Learn about the anti-spam settings and filters that will help you prevent spam in Exchange Online and Office 365. Getting too much spam in Office 365? You can customize your spam filters and anti-spam settings."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn about the anti-spam settings and filters that will help you prevent spam in Exchange Online and Office 365."
 ---
 
 # Anti-spam protection in Office 365

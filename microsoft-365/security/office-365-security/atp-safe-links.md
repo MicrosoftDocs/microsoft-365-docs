@@ -15,6 +15,8 @@ localization_priority: Normal
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -23,7 +25,7 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: "The Safe Links feature provides time-of-click verification of hyperlinks in Office documents and in email messages. Use Safe links to protect your organization from phishing and other attacks."
+description: "In this article, you'll learn how to use Safe links to protect your organization from phishing and other attacks."
 ---
 
 # Office 365 ATP Safe Links
