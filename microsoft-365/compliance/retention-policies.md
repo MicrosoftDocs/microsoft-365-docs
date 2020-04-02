@@ -1,5 +1,5 @@
 ---
-title: "Use retention policies to automatically retain or delete stored content"
+title: "Use retention policies to automatically retain or delete content based on Office 365 locations"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -19,7 +19,7 @@ search.appverid:
 description: "Use a retention policy to decide proactively whether to retain content, delete content, or both - retain and then delete the content; apply a single policy to the entire organization or specific locations or users; and apply a policy to all content or content meeting certain conditions."
 ---
 
-# Use retention policies to automatically retain or delete stored content
+# Use retention policies to automatically retain or delete content based on Office 365 locations
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
