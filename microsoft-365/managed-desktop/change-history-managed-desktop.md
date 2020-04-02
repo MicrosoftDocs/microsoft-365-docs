@@ -16,9 +16,33 @@ ms.localizationpriority: normal
 
 This topic lists new and updated topics in the [Microsoft Managed Desktop documentation](index.yml). "Updated" topics are those which have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+## March 2020
+New or changed topic | Description
+--- | ---
+
+[Steps for Partners to register devices](get-started/register-devices-partner.md)| Updated topic
+[Register new devices yourself](get-started/register-devices-self.md) | Updated topic
+[Prepare printing resources for Microsoft Managed Desktop](get-ready/printing.md) | New topic
+
+
+
+
+## February 2020
+New or changed topic | Description
+--- | ---
+
+[Security in Microsoft Managed Desktop](service-description/security.md)| Updated topic
+[Work with insights](working-with-managed-desktop/insights.md) | Updated topic
+[Windows security update insights](working-with-managed-desktop/security-update-insights.md) | New topic
+[How updates are handled in Microsoft Managed Desktop](service-description/updates.md) | Updated topic
+[Microsoft Managed Desktop device services](service-description/device-services.md) | Updated topic
+
+
+
 ## January 2020
 New or changed topic | Description
 --- | ---
+
 [Get your users ready to use devices](get-started/get-started-devices.md)| Updated topic
 [Add and verify admin contacts in the Admin portal](get-started/add-admin-contacts.md) | Updated topic
 [Device configuration](service-description/device-policies.md) | Updated topic
