@@ -49,7 +49,7 @@ Microsoft offers several support options for people having trouble sending mail 
 
   For more information about Microsoft Technical support for Office 365, see [Support](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support).
 
-## Anti-Spam IP Delist Portal
+## Office 365 Anti-Spam IP Delist Portal
 
 This is a self-service portal you can use to remove yourself from the Microsoft 365 blocked senders list. Use this portal if you are you getting an error message when you try to send an email to a recipient whose email address is in Microsoft 365 and you don't think you should be. For more information, see [Use the delist portal to remove yourself from the blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
