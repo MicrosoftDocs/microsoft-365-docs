@@ -21,11 +21,10 @@ description: "Use information barriers to ensure communication compliance using 
 
 
 
- [![Click-Through for Information Barriers](./media/information-barriers/Clickthrough_InformationBarriers_Thumbnail2.png)](./media/information-barriers/Clickthrough_InformationBarriers.pdf)
+ [![Click-Through for Information Barriers](./media/information-barriers/clickthrough-information-barriers-thumbnail.png)](./media/information-barriers/clickthrough-information-barriers.pdf)
 
 
-Click through an overview of Information Barriers: [PDF](./media/information-barriers/Clickthrough_InformationBarriers.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/Click-Through-Test/microsoft-365/compliance/media/information-barriers/InfoBarriersExample.pptx)
-
+Click through an overview of Information Barriers: [PDF](./media/information-barriers/Clickthrough_InformationBarriers.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/Click-Through-Test/microsoft-365/compliance/media/information-barriers/Clickthrough-Information-Barriers.pptx)
 
 <!--
 
