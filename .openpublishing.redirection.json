@@ -592,6 +592,11 @@
       "source_path": "microsoft-365/security/office-365-security/ciso-workshop-module-5.md",
       "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-5",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/set-up-mfa.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication",
+      "redirect_document_id": false
     }
   ]
 }

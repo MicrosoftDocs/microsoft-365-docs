@@ -21,9 +21,6 @@ description: "Use this topic to learn more about privileged access management in
 
 # Privileged access management
 
-> [!IMPORTANT]
-> This topic covers deployment and configuration guidance for features only currently available in Office 365 E5 and Advanced Compliance SKUs.
-
 Privileged access management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. Privileged access management requires users to request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow. This configuration gives users just-enough-access to perform the task at hand, without risking exposure of sensitive data or critical configuration settings. Enabling privileged access management in Office 365 allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
 
 For a quick overview of the integrated Customer Lockbox and privileged access management workflow, see this [Customer Lockbox and privileged access management in Office 365 video](https://go.microsoft.com/fwlink/?linkid=2066800).
@@ -72,7 +69,7 @@ For an approved request, the task is processed by the Exchange Management runspa
 
 ### What SKUs can use privileged access in Office 365?
 
-Privileged access management is available for customers with Office 365 E5 and Advanced Compliance SKUs.
+Privileged access management is available for customers for a wide selection of Microsoft 365 and Office 365 subscriptions and add-ons. See [Get started with privileged access management](privileged-access-management-configuration.md) for details.
 
 ### When will privileged access support Office 365 workloads beyond Exchange?
 
