@@ -49,11 +49,11 @@ Beside the main content area of the Machine profile page is the sidebar.
 
 The sidebar provides some important basic information in small subsections which can be toggled open or closed, such as:
 
-* **Tags** - Any Microsoft Defender ATP or Azure ATP tags associated with the device.
+* **Tags** - Any Microsoft Defender ATP, Azure ATP, or user-defined tags associated with the device.
 * **Security info** - Open incidents and active alerts. Devices enrolled in Microsoft Defender ATP will also display exposure level and risk level.
-* **Device details** - Domain, OS, SAM name, health state, timestamp for when the device was created, IP addresses, resources. Devices enrolled in Microsoft Defender ATP also display health state.
+* **Device details** - Domain, OS, timestamp for when the device was first seen, IP addresses, resources. Devices enrolled in Microsoft Defender ATP also display health state. Devices enrolled in Azure ATP will display SAM name and a timestamp for when the device was first created.
 * **Network activity** - Timestamps for the first time and last time the device was seen on the network.
-* **Directory data** (optional) - [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) flags, [SPNs](https://docs.microsoft.com/windows/win32/ad/service-principal-names), and group memberships.
+* **Directory data** (*only for devices enrolled in Azure ATP*) - [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) flags, [SPNs](https://docs.microsoft.com/windows/win32/ad/service-principal-names), and group memberships.
 
 ## Response actions
 
@@ -110,7 +110,7 @@ This list can be filtered by severity, status, or who the alert has been assigne
 
 ### Timeline tab
 
-The **Timeline** tab includes a interactive, chronological chart of all events raised on the device. By moving the highlighted area of the chart left or right, you can view events over different periods of time. You can also choose a custom range of dates from the dropdown menu in between the interactive chart and the list of events.
+The **Timeline** tab includes an interactive, chronological chart of all events raised on the device. By moving the highlighted area of the chart left or right, you can view events over different periods of time. You can also choose a custom range of dates from the dropdown menu in between the interactive chart and the list of events.
 
 Below the chart is a list of events for the selected range of dates.
 
