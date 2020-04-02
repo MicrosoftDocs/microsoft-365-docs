@@ -24,7 +24,7 @@ description: "Use the Security & Compliance Center to search the unified audit l
 
 ## Introduction
 
-Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Office 365 Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of user and admin activity in Office 365:
+Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of user and admin activity in Office 365:
 
 - User activity in SharePoint Online and OneDrive for Business
 

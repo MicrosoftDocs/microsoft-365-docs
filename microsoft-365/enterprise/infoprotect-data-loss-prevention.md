@@ -23,7 +23,7 @@ description: Understand and deploy Office 365 Data Loss Prevention in Microsoft 
 
 ![Phase 6: Information Protection](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-With data loss prevention (DLP) policies in the Office 365 Security & Compliance center, you can identify, monitor, and automatically protect sensitive information across Microsoft 365. With DLP policies, you can:
+With data loss prevention (DLP) policies in the Security & Compliance center, you can identify, monitor, and automatically protect sensitive information across Microsoft 365. With DLP policies, you can:
 
 - Identify sensitive information across many locations, such as Exchange Online, SharePoint Online, OneDrive for Business, and Microsoft Teams.
 - Prevent the accidental sharing of sensitive information by blocking access to a document or blocking the email that contains it.

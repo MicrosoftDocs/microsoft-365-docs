@@ -30,7 +30,7 @@ For a defined end-to-end path for deployment, you can use these phases to plan f
 |![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)| Your existing Windows-based computers can upgrade to Windows 10 Enterprise and new devices are installed with Windows 10 Enterprise. |
 |![Phase 4: Microsoft 365 Apps for enterprise](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md)| Your existing users of Microsoft Office can upgrade to Microsoft 365 Apps for enterprise. |
 |![Phase 5: Mobile device management](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Phase 5: Mobile device management](mobility-infrastructure.md)| Your devices can be enrolled and managed. |
-|![Phase 6: Information protection](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6: Information protection](infoprotect-infrastructure.md)| Office 365 security features are enabled and your labels and policies are ready to protect documents and email. |
+|![Phase 6: Information protection](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6: Information protection](infoprotect-infrastructure.md)| Microsoft 365 security features are enabled and your labels and policies are ready to protect documents and email. |
 
 The phases start with the most foundational (networking and identity), and then create layers of infrastructure settings and groups to:
 

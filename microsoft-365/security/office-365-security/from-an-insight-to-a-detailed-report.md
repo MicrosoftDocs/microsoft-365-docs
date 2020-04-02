@@ -21,7 +21,7 @@ description: "See how you can move from an insight to a detailed report in the S
 
 # Walkthrough - From an insight to a detailed report
 
-If you're new to [reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md), it might help to see how you can easily navigate from an insight to a detailed report. 
+If you're new to [reports and insights in the Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md), it might help to see how you can easily navigate from an insight to a detailed report. 
   
 This is one of several walkthroughs for the [Security &amp; Compliance Center](https://protection.office.com). To see additional walkthroughs, see the [Related topics](#related-topics) section. 
   

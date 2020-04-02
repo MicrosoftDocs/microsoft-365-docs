@@ -85,7 +85,7 @@ To determine if ZAP moved your message, you can use either the [Threat Protectio
 
 A: You should follow the normal reporting process for [false positives](report-junk-email-messages-to-microsoft.md). The only reason the message would be moved from the Inbox to the Junk Email folder would be because the service has determined that the message was spam or malicious.
 
-### Q: What if I use the Office 365 quarantine instead of the Junk Mail folder?
+### Q: What if I use the Quarantine folder instead of the Junk Mail folder?
 
 A: ZAP will take action on a message based on the configuration your anti-spam policies as described earlier in this topic.
 

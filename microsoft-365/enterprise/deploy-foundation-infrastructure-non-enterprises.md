@@ -307,7 +307,7 @@ Based on these levels of data security, the next step is to identify and impleme
 
 See [Microsoft 365 classification types](infoprotect-configure-classification.md#microsoft-365-classification-types) for more information.
 
-If you use sensitivity labels with permissions, you might have to create additional Office 365 security groups to define who is allowed to do what with email and documents that have the sensitivity label applied. 
+If you use sensitivity labels with permissions, you might have to create additional security groups to define who is allowed to do what with email and documents that have the sensitivity label applied. 
 
 For example, you need to create a RESEARCH sensitivity label to protect the email and documents of your research team. You determine that:
 

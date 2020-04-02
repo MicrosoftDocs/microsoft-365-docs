@@ -61,7 +61,7 @@ The following services and features are available in some [Office 365 Germany su
     
 - Groups
     
-- Office 365 Security &amp; Compliance Center
+- Security &amp; Compliance Center
     
 - Customer Lockbox
     

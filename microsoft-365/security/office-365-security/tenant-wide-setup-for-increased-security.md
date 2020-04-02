@@ -128,7 +128,7 @@ More information:
 
 ## Additional resources
 
-These articles and guides provide additional prescriptive information for securing your Office 365 environment:
+These articles and guides provide additional prescriptive information for securing your Microsoft 365 environment:
 
 - [Microsoft security guidance for political campaigns, nonprofits, and other agile organizations](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) (you can use these recommendation in any environment, especially cloud-only environments)
 

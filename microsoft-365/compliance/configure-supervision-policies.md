@@ -40,7 +40,7 @@ Follow these steps to set up and use supervision in your organization:
 
 - **Step 2 (required)**: [Make supervision available in your organization](#step-2-make-supervision-available-in-your-organization-required)
 
-    Add yourself to the Supervisory Review role group so you can set up policies. Anyone who has this role assigned can access the **Supervision** page in the Office 365 security and compliance center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Add yourself to the Supervisory Review role group so you can set up policies. Anyone who has this role assigned can access the **Supervision** page in the Security & Compliance Center. If reviewable email is hosted on Exchange Online, each reviewer must have [remote PowerShell access to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Step 3 (optional)**: [Create custom sensitive information types and custom keyword dictionaries](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
@@ -48,7 +48,7 @@ Follow these steps to set up and use supervision in your organization:
 
 - **Step 4 (required)**: [Set up a supervision policy](#step-4-set-up-a-supervision-policy-required)
 
-    You create supervision policies in the Office 365 security and compliance center. These policies define which communications are subject to review in your organization and specifies who performs reviews. Communications include email and Microsoft Teams communications, and 3rd-party platform communications (such as Facebook, Twitter, etc.). Supervision policies created in organizations are not supported in communication supervision in Microsoft 365 subscriptions.
+    You create supervision policies in the Security & Compliance Center. These policies define which communications are subject to review in your organization and specifies who performs reviews. Communications include email and Microsoft Teams communications, and 3rd-party platform communications (such as Facebook, Twitter, etc.). Supervision policies created in organizations are not supported in communication supervision in Microsoft 365 subscriptions.
 
 - **Step 5 (optional)**: [Test your communication supervision policy](#step-5-test-your-supervision-policy-optional)
 
@@ -104,7 +104,7 @@ For more information about setting up groups, see:
 
 ## Step 2: Make supervision available in your organization (required)
 
-To make **Supervision** available as a menu option in Office 365 security and compliance center, you must be assigned the Supervisory Review Administrator role.
+To make **Supervision** available as a menu option in Security & Compliance Center, you must be assigned the Supervisory Review Administrator role.
   
 To do this, you can either add yourself as a member of the Supervisory Review role group, or you can create a role group.
   
@@ -112,7 +112,7 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
 
 1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your organization.
 
-2. In the Office 365 security and compliance center, go to **Permissions**.
+2. In the Security & Compliance Center, go to **Permissions**.
 
 3. Select the **Supervisory Review** role group and then click the Edit icon.
 
@@ -122,7 +122,7 @@ To do this, you can either add yourself as a member of the Supervisory Review ro
 
 1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your organization.
 
-2. In the Office 365 security and compliance center, go to **Permissions** and then click Add (**+**).
+2. In the Security & Compliance Center, go to **Permissions** and then click Add (**+**).
 
 3. In the **Roles** section, click Add (**+**) and scroll down to **Supervisory Review Administrator**. Add this role to the role group.
 
@@ -144,7 +144,7 @@ Use a text editor (like Notepad), to create a file that includes the keyword ter
 
 ### Create custom sensitive information types
 
-1. Create a new sensitive information type and add your custom dictionary in the Office 365 Security & Compliance Center. Navigate to **Classifications** \> **Sensitive info types** and follow the steps in the **New sensitive info type wizard**. Here you will:
+1. Create a new sensitive information type and add your custom dictionary in the Security & Compliance Center. Navigate to **Classifications** \> **Sensitive info types** and follow the steps in the **New sensitive info type wizard**. Here you will:
 
     - Define a name and description for the sensitive info type
     - Define the proximity, confidence level, and primary pattern elements
@@ -159,7 +159,7 @@ Use a text editor (like Notepad), to create a file that includes the keyword ter
   
 1. Sign into [https://protection.office.com](https://protection.office.com) using credentials for an admin account in your organization.
 
-2. In the Office 365 security and compliance center, select **Supervision**.
+2. In the Security & Compliance Center, select **Supervision**.
   
 3. Select **Create** and follow the wizard to set up the policy configuration. Using the wizard, you will:
 

@@ -15,12 +15,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-description: "Data loss prevention (DLP) in the Office 365 Security &amp; Compliance Center includes 80 sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
+description: "Data loss prevention (DLP) in the Security &amp; Compliance Center includes 80 sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
 ---
 
 # What the sensitive information types look for
 
-Data loss prevention (DLP) in the Office 365 Security &amp; Compliance Center includes many sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
+Data loss prevention (DLP) in the Security &amp; Compliance Center includes many sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
   
 ## ABA Routing Number
 
@@ -1083,7 +1083,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Identiteit
 - Registratie
 - Identificatie 
-- Carte d’identité 
+- Carte d'identité 
 - numéro d'immatriculation
 - numéro d'identification
 - identité 
@@ -2109,7 +2109,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - expiration date
 - exp date
 - expiry date
-- date d’expiration
+- date d'expiration
 - date d'exp
 - date expiration
 - bank card
@@ -5909,7 +5909,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 ```xml
 <Entity id="dfeb356f-61cd-459e-bf0f-7c6d28b458c6 patternsProximity="300">
-	<Pattern confidenceLevel="75">
+    <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_new_york_drivers_license_number" />
         <Match idRef="Keyword_new_york_drivers_license_name" />
         <Match idRef="Keyword_us_drivers_license" />

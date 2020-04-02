@@ -32,7 +32,7 @@ When content reaches the end of its retention period, there are several reasons 
     
 - Return the content to clients or transfer it to another organization.
     
-When you create a retention label in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center, you can choose to trigger a disposition review at the end of the retention period. In a disposition review:
+When you create a retention label in the Microsoft 365 compliance center, Microsoft 365 security center, or the Security & Compliance Center, you can choose to trigger a disposition review at the end of the retention period. In a disposition review:
   
 - The people you choose receive an email notification that they have content to review. Note that notifications are sent on a weekly basis.
     
@@ -90,7 +90,7 @@ A reviewer can also use the link to view the document in its original location, 
   
 Note that the email notifications are sent automatically to reviewers on a weekly basis. Therefore, when content reaches the end of its retention period, it may take up to seven days for reviewers to receive the email notification that content is awaiting disposition.
   
-Also note that all disposition actions are audited. To ensure this, you must turn on auditing at least one day prior to the first disposition action - for more information, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
+Also note that all disposition actions are audited. To ensure this, you must turn on auditing at least one day prior to the first disposition action - for more information, see [Search the audit log in the Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
   
 ## Permissions for disposition
 

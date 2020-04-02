@@ -111,7 +111,7 @@ To access communication compliance when starting from the Microsoft 365 admin ce
 
 This opens the **Office 365 Security and Compliance center**, and they must select the link to the **Microsoft 365 compliance center** provided in the banner at the top of the page.
 
-![Office 365 security and compliance center](../media/communication-compliance-case-scc.png)
+![Security &amp; Compliance Center](../media/communication-compliance-case-scc.png)
 
 Once in the **Microsoft 365 compliance center**, Contoso IT administrators select **Show all** to display the full list of compliance solutions.
 

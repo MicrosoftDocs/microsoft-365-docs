@@ -41,7 +41,7 @@ To define (or edit) ATP policies, you must be assigned an appropriate role. Some
 
 1. Go to [https://protection.office.com](https://protection.office.com), and sign in with your work or school account.
 
-2. In the Office 365 Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Safe Attachments**.
+2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Safe Attachments**.
 
    ![In the Security & Compliance Center, choose Threat management \> Policy](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
 
@@ -71,7 +71,7 @@ To learn more about the user experience when a file has been detected as malicio
 
 To receive notification when a file in SharePoint Online, OneDrive for Business, or Microsoft Teams has been identified as malicious, you can set up an alert.
 
-1. In the [Office 365 Security & Compliance Center](https://protection.office.com), choose **Alerts** \> **Manage alerts**.
+1. In the [Security & Compliance Center](https://protection.office.com), choose **Alerts** \> **Manage alerts**.
 
 2. Choose **New alert policy**.
 
@@ -89,7 +89,7 @@ To receive notification when a file in SharePoint Online, OneDrive for Business,
 
 7. Click **Save**.
 
-To learn more about alerts, see [Create activity alerts in the Office 365 Security & Compliance Center](../../compliance/create-activity-alerts.md).
+To learn more about alerts, see [Create activity alerts in the Security & Compliance Center](../../compliance/create-activity-alerts.md).
 
 ## Next steps
 

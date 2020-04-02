@@ -111,9 +111,9 @@ To demonstrate mobile device management-related features and capabilities, see:
 
 To demonstrate information protection-related features and capabilities, see:
 
-- [Increased Office 365 security](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
+- [Increased Microsoft 365 security](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
     
-   Configure settings for increased Office 365 security and investigate built-in security tools.
+   Configure settings for increased Microsoft 365 security and investigate built-in security tools.
   
 - [Data classification](data-classification-microsoft-365-enterprise-dev-test-environment.md)
     

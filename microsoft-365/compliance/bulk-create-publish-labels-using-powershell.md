@@ -90,17 +90,17 @@ Copy and paste the below PowerShell script into Notepad. Save the file by using 
 ```
 <#
 . Steps: Import and Publish Compliance Tag
-	○ Load compliance tag csv file 
-	○ Validate csv file input
+    ○ Load compliance tag csv file 
+    ○ Validate csv file input
     ○ Create compliance tag
     ○ Create compliance policy
-	○ Publish compliance tag for the policy
+    ○ Publish compliance tag for the policy
     ○ Generate the log for tags creation
     ○ Generate the csv result for the tags created and published
 . Syntax
-	.\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
+    .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
 . Detailed Description
-	1) [-LabelListCSV <string>]
+    1) [-LabelListCSV <string>]
     -LabelListCSV ".\SampleInputFile_LabelList.csv"
     Load compliance tag for creation.
     2) [-PolicyListCSV <string>]
@@ -338,7 +338,7 @@ Function CreateComplianceTag
     }
     catch
     {
-	    WriteToLog -Type "Failed" "Error in input"
+        WriteToLog -Type "Failed" "Error in input"
     }
 }
 # -------------------
@@ -711,7 +711,7 @@ if ($ResultCSV)
 
 Follow the steps here:
   
-- [Connect to Office 365 Security &amp; Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
+- [Connect to Security &amp; Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
     
 ## Step 5: Run the PowerShell script to create and publish the retention labels
 

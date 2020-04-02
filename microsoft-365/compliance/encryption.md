@@ -76,6 +76,6 @@ To learn more, see the following resources:
 
 ## Related topics
 
-[Plan for Office 365 security and information protection capabilities](plan-for-security-and-compliance.md)
+[Plan for Microsoft 365 security and information protection capabilities](plan-for-security-and-compliance.md)
 
-[Top 10 ways to secure Office 365 and Microsoft 365 for business plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
+[Top 10 ways to secure Microsoft 365 for business plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)

@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: "Learn how to use the Office 365 Security &amp; Compliance Center to access Advanced eDiscovery and run the Process module for a case. 
+description: "Learn how to use the Security &amp; Compliance Center to access Advanced eDiscovery and run the Process module for a case. 
 "
 ---
 
@@ -37,7 +37,7 @@ Advanced eDiscovery provides system metadata values, such as Near-duplicate grou
   
 Perform the following steps to run Process.
   
-1. [Open the Office 365 Security &amp; Compliance Center](go-to-the-securitycompliance-center.md) . 
+1. [Open the Security &amp; Compliance Center](go-to-the-securitycompliance-center.md) . 
     
 2. Go to **Search &amp; investigation** \> **eDiscovery** and then click **Go to Advanced eDiscovery**.
     

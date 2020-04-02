@@ -33,7 +33,7 @@ In this example, you can see that the recipients of the email message have four 
 
 - Your organization must have Office 365 ATP Plan 2 (or Office 365 E5) and Microsoft Defender ATP.
     
-- You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in the [Security &amp; Compliance Center](https://protection.office.com). (See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md))
+- You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in the [Security &amp; Compliance Center](https://protection.office.com). (See [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md))
     
 - You must have access to both [Explorer (or real-time detections)](threat-explorer.md) in the Security & Compliance Center and the Microsoft Defender Security Center.
     

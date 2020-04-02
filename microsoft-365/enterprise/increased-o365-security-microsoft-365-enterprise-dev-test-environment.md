@@ -40,7 +40,7 @@ If you want to configure increased Microsoft 365 security in a simulated enterpr
 
 In this phase, you enable increased Microsoft 365 security for your Microsoft 365 Enterprise test environment. For additional details and settings, see [Configure your Office 365 tenant for increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
-### Configure SharePoint Online to block apps that don’t support modern authentication
+### Configure SharePoint Online to block apps that don't support modern authentication
 
 Apps that do not support modern authentication cannot have [identity and device access configurations](microsoft-365-policies-configurations.md) applied to them, which is an important element of securing your Microsoft 365 subscription and its digital assets. 
 
@@ -52,14 +52,14 @@ Apps that do not support modern authentication cannot have [identity and device 
  
 2. On the new **Microsoft 365 admin center** tab, under **Admin centers** in the left navigation pane, click **SharePoint**.
 3. On the new **SharePoint admin center** tab, click **Policies > Access control**.
-4. Click **Apps that don’t support modern authentication**, select **Block access**, and then click **Save**.
+4. Click **Apps that don't support modern authentication**, select **Block access**, and then click **Save**.
 
 
 ### Enable Advanced Threat Protection for SharePoint, OneDrive for Business, and Microsoft Teams
 
 Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files.
 
-1. Go to the [Office 365 Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
+1. Go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
 
 2. In the left navigation pane, under **Threat management**, click **Policy**, and then click **ATP safe attachments**. 
 
@@ -89,7 +89,7 @@ Office 365 threat management can help you control and manage mobile device acces
 
 To see the security dashboard:
 
-1. If needed, go to the [Office 365 Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
+1. If needed, go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
 
 2. In the left navigation pane, under **Threat management**, click **Dashboard**.
 

@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "With the data governance reports in the Office 365 Security &amp; Compliance Center, you can quickly view whether your labels are being applied to content as you intended."
+description: "With the data governance reports in the Security &amp; Compliance Center, you can quickly view whether your labels are being applied to content as you intended."
 ---
 
 # View the data governance reports
 
-After you create your labels, you'll want to verify that they're being applied to content as you intended. With the data governance reports in the Office 365 Security &amp; Compliance Center, you can quickly view:
+After you create your labels, you'll want to verify that they're being applied to content as you intended. With the data governance reports in the Security &amp; Compliance Center, you can quickly view:
   
 - **Top 5 labels** This report shows the count of the top 5 labels that have been applied to content. Click this report to view a list of all labels that have been recently applied to content. You can see each label's count, location, how it was applied, its retention actions, whether it's a record, and its disposition type. 
     

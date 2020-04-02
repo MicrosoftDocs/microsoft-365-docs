@@ -58,7 +58,7 @@ There are multiple ways to find the Message ID of the email that you want to rev
 
 #### To identify the Message ID of the email you want to revoke by using Message Trace in the Security &amp; Compliance Center
 
-1. Search for the email by sender or recipient using [New Message Trace in Office 365 Security & Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/).
+1. Search for the email by sender or recipient using [New Message Trace in Security & Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/).
 
 2. Once you've located the email, select it to bring up the **Message trace details** pane. Expand **More Information** to locate the Message ID.
 

@@ -36,7 +36,7 @@ Your Office 365 or Microsoft 365 environment includes protection against malware
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your admin account credentials. 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
     
 3. Double-click the default policy to edit this company-wide policy.
     
@@ -124,7 +124,7 @@ To create an ATP anti-phishing policy, watch  [this short training video](https:
   
 1. Go to [https://protection.office.com](https://protection.office.com). 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
     
 3. On the **Policy** page, choose **ATP anti-phishing**.
     
@@ -154,7 +154,7 @@ To create an ATP safe attachment policy, either watch [this short video](https:/
   
 1. Go to [https://protection.office.com](https://protection.office.com), and sign in with your admin account. 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
     
 3. On the Policy page, choose **ATP safe attachments**.
     
@@ -191,7 +191,7 @@ To set up ATP Safe Links, watch [this short training video](https://support.offi
   
 1. Go to [https://protection.office.com](https://protection.office.com), and sign in with your admin account. 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
     
 3. On the Policy page, choose **ATP Safe Links**.
     

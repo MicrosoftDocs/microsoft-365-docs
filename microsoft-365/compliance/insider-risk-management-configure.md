@@ -55,7 +55,7 @@ Complete the following steps to add users to an insider risk management role gro
 
 1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Microsoft 365 organization.""""""""
 
-2. In the Microsoft Office 365 security and compliance center, go to **Permissions**. Select the link to view and manage roles in Office 365.
+2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
 
 3. Select the insider risk management role group you want to add users to, then select **Edit role group**.
 

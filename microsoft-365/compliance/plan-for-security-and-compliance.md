@@ -52,13 +52,13 @@ Review and plan for file protection capabilities organized by three levels of pr
   
 ## Step 5: Leverage the Microsoft 365 Security &amp; Compliance Center
 
-The Security &amp; Compliance Center gives you a single view into the controls you will use to manage the spectrum of Office 365 security, including threat management, data governance, and search and investigation. 
+The Security &amp; Compliance Center gives you a single view into the controls you will use to manage the spectrum of Microsoft 365 security, including threat management, data governance, and search and investigation. 
   
-- [Go to the Office 365 Security &amp; Compliance Center](go-to-the-securitycompliance-center.md)
+- [Go to the Security &amp; Compliance Center](go-to-the-securitycompliance-center.md)
     
-- [Permissions in the Office 365 Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
+- [Permissions in the Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
     
-- [Give users access to the Office 365 Security &amp; Compliance Center](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [Give users access to the Security &amp; Compliance Center](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## Step 6: Use end-to-end security scenarios as starting points
 

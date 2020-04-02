@@ -25,7 +25,7 @@ To help customers take advantage of the new and improved functionality, this art
 
 ## Before you begin
 
-- You have to be a member of the eDiscovery Manager role group in the Office 365 Security & Compliance Center to run the PowerShell commands described in this article. You also have to be a member of the Discovery Management role group in the Exchange admin center.
+- You have to be a member of the eDiscovery Manager role group in the Security & Compliance Center to run the PowerShell commands described in this article. You also have to be a member of the Discovery Management role group in the Exchange admin center.
 
 - This article provides guidance on how to create an eDiscovery hold. The hold policy will be applied to mailboxes through an asynchronous process. When creating an eDiscovery hold, you must create both a CaseHoldPolicy and CaseHoldRule, otherwise the hold will not be created and content locations will not be placed on hold.
 

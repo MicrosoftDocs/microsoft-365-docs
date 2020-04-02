@@ -32,7 +32,7 @@ A policy tip is a notification or warning that appears when someone is working w
   
 You can use email notifications and policy tips to increase awareness and help educate people about your organization's policies. You can also give people the option to override the policy, so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
   
-In the Office 365 Security &amp; Compliance Center, when you create a DLP policy, you can configure the user notifications to:
+In the Security &amp; Compliance Center, when you create a DLP policy, you can configure the user notifications to:
   
 - Send an email notification to the people you choose that describes the issue.
     
@@ -50,7 +50,7 @@ When you create a DLP policy, you can enable **User notifications**. When enable
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in using your work or school account. You're now in the Office 365 Security &amp; Compliance Center.
+2. Sign in using your work or school account. You're now in the Security &amp; Compliance Center.
     
 3. In the Security &amp; Compliance Center \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
     
@@ -215,13 +215,13 @@ Currently, Outlook 2013 and later supports showing policy tips only for these co
 
 Note that all of these conditions work in Outlook, where they will match content and enforce protective actions on content. But showing policy tips to users is not yet supported.
   
-### Policy tips in the Exchange admin center vs. the Office 365 Security &amp; Compliance Center
+### Policy tips in the Exchange admin center vs. the Security &amp; Compliance Center
 
-Policy tips can work either with DLP policies and mail flow rules created in the Exchange admin center, or with DLP policies created in the Office 365 Security &amp; Compliance Center, but not both. This is because these policies are stored in different locations, but policy tips can draw only from a single location.
+Policy tips can work either with DLP policies and mail flow rules created in the Exchange admin center, or with DLP policies created in the Security &amp; Compliance Center, but not both. This is because these policies are stored in different locations, but policy tips can draw only from a single location.
   
-If you've configured policy tips in the Exchange admin center, any policy tips that you configure in the Office 365 Security &amp; Compliance Center won't appear to users in Outlook on the web and Outlook 2013 and later until you turn off the tips in the Exchange admin center. This ensures that your current Exchange mail flow rules (also known as transport rules) will continue to work until you choose to switch over to the Office 365 Security &amp; Compliance Center.
+If you've configured policy tips in the Exchange admin center, any policy tips that you configure in the Security &amp; Compliance Center won't appear to users in Outlook on the web and Outlook 2013 and later until you turn off the tips in the Exchange admin center. This ensures that your current Exchange mail flow rules (also known as transport rules) will continue to work until you choose to switch over to the Security &amp; Compliance Center.
   
-Note that while policy tips can draw only from a single location, email notifications are always sent, even if you're using DLP policies in both the Office 365 Security &amp; Compliance Center and the Exchange admin center.
+Note that while policy tips can draw only from a single location, email notifications are always sent, even if you're using DLP policies in both the Security &amp; Compliance Center and the Exchange admin center.
   
 ### Default text for policy tips in email
 

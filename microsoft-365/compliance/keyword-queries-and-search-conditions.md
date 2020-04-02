@@ -363,7 +363,7 @@ While the  `ViewableByExternalUsers` property represents the status of whether a
   
 - Changes to sharing policy, such as turning off external sharing for a site or for the organization. The property will still show previously shared documents as being externally accessible even though external access might have been revoked.
     
-- Changes to group membership, such as adding or removing external users to Office 365 Groups or Office 365 security groups. The property won't automatically be updated for items the group has access to.
+- Changes to group membership, such as adding or removing external users to Office 365 Groups or Microsoft 365 security groups. The property won't automatically be updated for items the group has access to.
     
 - Sending sharing invitations to external users where the recipient hasn't accepted the invitation, and therefore doesn't yet have access to the content.
     

@@ -26,7 +26,7 @@ Using improvement actions in Compliance Score centralizes your compliance workfl
 
 The Compliance Score dashboard shows your **key improvement actions**—the ones with the most available points which address the most important issues.
 
-To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, or select **View all improvement actions** underneath the list of key improvement actions on your dashboard. This brings you to the the **Improvement actions** page, where you can see all of your organization’s improvement actions.
+To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, or select **View all improvement actions** underneath the list of key improvement actions on your dashboard. This brings you to the the **Improvement actions** page, where you can see all of your organization's improvement actions.
 
 If you have a long list of actions, it may be helpful to filter your view. To do this, select **Filter** at the upper-right corner of the actions list. When the **Filters** flyout pane appears, then select your desired criteria based on regulations and standards, solution, and group. You can also customize your view by selecting **Group** in the upper-right corner and, from the drop-down menu, select to view by group, solution, category, action type, or status.
 
@@ -162,13 +162,13 @@ You can also modify your view to see assessments by group, product, or regulatio
 
 ### Taking actions from the solutions page
 
-The solutions page displays your organization’s solutions that are connected to improvement actions. The table lists each solution's contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score. 
+The solutions page displays your organization's solutions that are connected to improvement actions. The table lists each solution's contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score. 
 
 There are two ways you can take action from this screen:
 
 1. On the row of your intended solution, under the **Remaining actions** column, click or tap on the hyperlinked number. This takes you to a filtered view of the improvement actions screen showing untested improvement actions for that solution.
 
-2. On the row of your intended solution, under the **Open solution** column, select **Open**. This takes you to the solution or location in the Microsoft 365 and Office 365 security and compliance centers where you can take the recommended action.
+2. On the row of your intended solution, under the **Open solution** column, select **Open**. This takes you to the solution or location in the Microsoft 365 security and compliance centers where you can take the recommended action.
 
 ## Assessments page
 

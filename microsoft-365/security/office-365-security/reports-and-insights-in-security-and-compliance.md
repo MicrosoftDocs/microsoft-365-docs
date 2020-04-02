@@ -19,13 +19,13 @@ ms.collection:
 description: "Get an overview of reports and insights avialable in the Security &amp; Compliance Center."
 ---
 
-# Smart reports and insights in the Office 365 Security &amp; Compliance Center
+# Smart reports and insights in the Security &amp; Compliance Center
 
-If you are part of your organization's Microsoft for 365 for business security team and have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md), you can access a variety of reports, including smart reports and insights. Read this article to get an overview of these reports and insights, and where to go to learn more about specific reports.
+If you are part of your organization's Microsoft for 365 for business security team and have the necessary [permissions assigned in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md), you can access a variety of reports, including smart reports and insights. Read this article to get an overview of these reports and insights, and where to go to learn more about specific reports.
       
 ## Smart reports and insights overview
 
-Monitoring capabilities available in the Office 365 Security &amp; Compliance Center include smart reports and insights that enable your security and compliance administrators to focus on high-priority issues, such as security attacks or increased suspicious activity. In a dashboard, smart reports and insights resemble the following image:
+Monitoring capabilities available in the Security &amp; Compliance Center include smart reports and insights that enable your security and compliance administrators to focus on high-priority issues, such as security attacks or increased suspicious activity. In a dashboard, smart reports and insights resemble the following image:
   
 ![In the Security &amp; Compliance Center, choose Reports \> Dashboard](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
@@ -53,7 +53,7 @@ A wide variety of reports are available in the Security &amp; Compliance Center.
 |**Advanced Threat Protection and email security reports** <br/> Email security and threat protection reports (including malware, spam, phishing, and spoofing reports)  <br/> |In the Security &amp; Compliance Center, go to **Reports** \> **Dashboard** <br/> |[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md) <br/><br/> [View email security reports in the Security &amp; Compliance Center](view-email-security-reports.md) <br/> |
 |**Mail flow** <br/> Information about sent and received email messages, recent alerts, top senders and recipients, email forwarding reports, and more  <br/> |In the Security &amp; Compliance Center, go to **Mail flow** \> **Dashboard** <br/> |[Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md)<br/> |
 |**GDPR compliance** <br/> Information about GDPR compliance, including links to data subjects, label trends, and active &amp; closed cases  <br/> |In the Security &amp; Compliance Center, go to **Data privacy** \> **GDPR dashboard** <br/> |[Office 365 Information Protection for GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
-|**Audit log** <br/> Information about Office 365 activities, users, files or folders, and more  <br/> |In the Security &amp; Compliance Center, go to **Search &amp; investigation** \> **Audit log search** <br/> |[Search the audit log in the Office 365 Security &amp; Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
+|**Audit log** <br/> Information about Office 365 activities, users, files or folders, and more  <br/> |In the Security &amp; Compliance Center, go to **Search &amp; investigation** \> **Audit log search** <br/> |[Search the audit log in the Security &amp; Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Compliance reports** <br/> FedRAMP reports, governance, risk and compliance reports, ISO information security management reports, and Service Organization Controls audit and assessment reports  <br/> |In the Security &amp; Compliance Center, go to **Service assurance** \> **Compliance reports** <br/> |[Plan for security &amp; compliance in Office 365](../../compliance/plan-for-security-and-compliance.md) <br/> |
   
 ## Next steps
