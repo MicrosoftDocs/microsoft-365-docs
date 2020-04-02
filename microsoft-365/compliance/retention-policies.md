@@ -74,20 +74,6 @@ For more information about specific workloads, see the following articles:
 - [Learn about retention policies for Microsoft Teams](retention-policies-teams.md)
 - [Learn about retention policies for Exchange](retention-policies-exchange.md)
 
-### When a user leaves the organization 
-
-**Exchange**:  
-
-If a user leaves your organization and the user's mailbox is included in a retention policy, the mailbox becomes an inactive mailbox when the user's Office 365 account is deleted. The contents of an inactive mailbox are still subject to any retention policy that was placed on the mailbox before it was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md). 
-
-**OneDrive**:
-
-If a user leaves your organization, any files subject to a retention policy or containing retention labels will remain for the duration of the policy or label. During that time period, all sharing access continues to work. When the retention period expires, content moves into the Site Collection Recycle Bin and is not accessible to anyone except the admin. If a document is marked by a retention policy as a record, it will not be deleted until the retention period is over, after which time the content is permanently deleted. 
-
-**SharePoint**:
-
-When a user leaves your organization, any content created by that user is not affected because SharePoint is considered a collaborative environment, unlike a user's mailbox or OneDrive account.
-
 ## Permissions
 
 Members of your compliance team who will create and manage retention policies need permissions to the [Microsoft 365 Compliance Center]((https://compliance.microsoft.com/). By default, your tenant admin has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To do this, we recommend that you go to the **Permissions** page of the [Microsoft 365 Compliance Center](https://compliance.microsoft.com/), edit the **Compliance administrator** admin role, and add members to that role group. 

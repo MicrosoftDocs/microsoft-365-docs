@@ -73,8 +73,6 @@ To exclude your selected types for Exchange items in a retention policy, use the
 
 ### When a user leaves the organization 
 
-**Exchange**:  
-
 If a user leaves your organization and the user's mailbox is included in a retention policy, the mailbox becomes an inactive mailbox when the user's Office 365 account is deleted. The contents of an inactive mailbox are still subject to any retention policy that was placed on the mailbox before it was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md). 
 
 ## How to configure a retention policy for Exchange
