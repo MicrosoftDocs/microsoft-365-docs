@@ -38,12 +38,19 @@ You'll have access to upcoming features which you can provide feedback on to hel
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
-1. In the navigation pane, select **Settings** > **Preview features**.
+1. In the navigation pane, select **Settings**.
 
-2. Select **Turn on preview features**. 
+2. Select **Microsoft Threat Protection**.
+
+
+3. Select **Preview features** > **Turn on preview features**. 
 
 3. Select **Save**.
+
+You'll know you have preview features turned on when you see that the **Turn on preview features** check box is selected. 
+
 
 
 ## Preview features
 This section will be updates with a list of features that are in preview as they become available for you to try. 
+
