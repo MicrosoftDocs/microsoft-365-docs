@@ -129,7 +129,7 @@ Learn how to manage email for your Microsoft 365 mailboxes.
                         <p><a href="https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection">Email anti-spam protection</a></p>
                         <p><a href="https://docs.microsoft.com/office365/securitycompliance/block-email-spam-to-prevent-false-negatives">How to set up the spam filter settings to help block spam</a></p>
                         <p><a href="https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection">Anti-spam and anti-malware protection</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/prevent-email-from-being-marked-as-spam-0">Prevent email from being marked as spam</a></p>
+                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/prevent-email-from-being-marked-as-spam">Prevent email from being marked as spam</a></p>
                     </div>
                 </div>
             </div>

@@ -19,29 +19,11 @@ description: "Learn about how users work with sensitivity labels in Office apps 
 
 # Use sensitivity labels in Office apps
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 When you have [published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) sensitivity labels from the Microsoft 365 compliance center or equivalent labeling center, they start to appear in Office apps for users to classify and protect data as it's created or edited.
 
 Use the information in this article to help you successfully manage sensitivity labels in Office apps. For example, identify the minimum versions of apps you need to support built-in labeling, and understand interactions with the Azure Information Protection unified labeling client and compatibility with other apps and services.
-
-## Subscription and licensing requirements for sensitivity labels
-
-Users must have at least one of the following licenses assigned:
-
-- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) or above
-
-- [Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software) or above
-
-- [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) or above
-
-The Office built-in labeling client supports sensitivity labels with a subscription edition of Office. This labeling client doesn't support standalone editions of Office, such as Office 2016 or Office 2019. To use sensitivity labels with these editions of Office on Windows computers, install the Azure Information Protection unified labeling client.
-
-To use automatic or recommended sensitivity labeling, your users need one of the following licenses:
-
-- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) or above
-
-- [Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software) or above
-
-- [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/)
 
 ## Support for sensitivity label capabilities in apps
 

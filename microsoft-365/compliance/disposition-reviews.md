@@ -20,6 +20,8 @@ description: "When you create a retention label that retains content in Microsof
 
 # Overview of disposition reviews
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 When content reaches the end of its retention period, there are several reasons why you might want to review that content to decide whether it can be safely deleted ("disposed"). For example, you might need to:
   
 - Suspend the deletion ("disposition") of relevant content in the event of litigation or an audit.
@@ -46,10 +48,7 @@ When you create a retention label in the Microsoft 365 compliance center, Micros
     
 - Reviewers can view either pending or completed dispositions, and export that list as a .csv file.
 
-> [!NOTE]
-> Disposition reviews require an Office 365 Enterprise E5 subscription.
-  
-A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Office 365 Groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
+A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Office 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
   
 ![Dispositions page in Security and Compliance Center](../media/Retention-Dispositions-v2-page.png)
 

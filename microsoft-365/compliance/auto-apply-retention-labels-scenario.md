@@ -20,6 +20,8 @@ description: "This solution scenario illustrates how to manage the lifecycle of 
 
 # Manage the lifecycle of SharePoint documents with retention labels
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 This article describes how you can manage the lifecycle of product-related documents stored in SharePoint Online by using Office 365 retention labels, and specifically by auto-applying labels and configuring event-based retention. The auto-apply functionality leverages document classification by the use of SharePoint metadata. The scenario in this article is based on product-related documents, but the same concepts can be used for other scenarios. For example, in the oil and gas industry, you could manage the lifecycle of documents related to physical assets such as oil platforms, well logs, or production licenses. In the financial services industry, you can manage documents related to bank accounts, mortgages, or insurance contracts. In the public sector, you can manage documents related to construction permits or tax forms.
 
 Let's look at the scenario for this article. We'll look at the information architecture and the definition of the retention labels. Then we'll look at classifying documents by auto-applying the labels, and finally generating the events that initiate the start of the retention period.

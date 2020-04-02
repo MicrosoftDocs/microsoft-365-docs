@@ -21,6 +21,8 @@ description: "Ready to start implementing sensitivity labels to help protect you
 
 # Get started with sensitivity labels
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 For information about what sensitivity labels are and how they can help you protect your organization's data, see [Learn about sensitivity labels](sensitivity-labels.md).
 
 If you have [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection), determine whether you need to migrate labels to the unified labeling platform, and which labeling client to use:
@@ -40,6 +42,12 @@ When you're ready to start protecting your organization's data by using sensitiv
 The basic flow for deploying and applying sensitivity labels:
 
 ![Diagram showing workflow for sensitivity labels](../media/Sensitivity-label-flow.png)
+
+## Subscription and licensing requirements for sensitivity labels
+
+A number of different subscriptions support sensitivity labels and the licensing requirements for users depend on the features you use.
+
+To see the options for licensing your users to benefit from Microsoft 365 compliance features as of April 1, 2020, see the [Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD). For sensitivity labels, see the [Information Protection](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) section and related PDF download.
 
 ## Permissions required to create and manage sensitivity labels
 

@@ -21,6 +21,8 @@ description: "With a retention policy, you can decide proactively whether to ret
 
 # Overview of retention policies
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 For most organizations, the volume and complexity of their data is increasing daily — email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
   
 - **Comply proactively with industry regulations and internal policies** that require you to retain content for a minimum period of time — for example, the Sarbanes-Oxley Act might require you to retain certain types of content for seven years. 
@@ -453,6 +455,7 @@ These permissions are required only to create and apply a retention policy. Poli
 
 ## More information
 
+- [Retention policies in Microsoft Teams](/microsoftteams/retention-policies#using-powershell )
 - [Overview of labels](labels.md)
 - [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limits and specifications for Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 

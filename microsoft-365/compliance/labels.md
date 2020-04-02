@@ -21,6 +21,8 @@ description: "Use retention labels to classify data across your organization for
 
 # Overview of retention labels
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 Across your organization, you probably have different types of content that require different actions taken on them in order to comply with industry regulations and internal policies. For example, you might have:
   
 - Tax forms that need to be **retained** for a minimum period of time. 
