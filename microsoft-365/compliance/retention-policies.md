@@ -77,6 +77,7 @@ For more information about specific workloads, see the following articles:
 ## Permissions
 
 Members of your compliance team who will create and manage retention policies need permissions to the [Microsoft 365 Compliance Center]((https://compliance.microsoft.com/). By default, your tenant admin has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To do this, we recommend that you go to the **Permissions** page of the [Microsoft 365 Compliance Center](https://compliance.microsoft.com/), edit the **Compliance administrator** admin role, and add members to that role group. 
+
 These permissions are required only to create and apply a retention policy. The person configuring the retention policy doesn't require access to the content.
 
 ## How to create and edit retention policies
@@ -190,7 +191,7 @@ You can easily apply a retention policy to an entire organization, entire locati
   
 ### Org-wide policy
 
-ne of the most powerful features of a retention policy is that it can apply to locations across Office 365, including:
+One of the most powerful features of a retention policy is that it can apply to locations across Office 365, including:
   
 - Exchange email
     
@@ -256,7 +257,7 @@ Understand that the principles of retention work as a tie-breaking flow from top
 Finally, a retention policy or retention label cannot permanently delete any content that's on hold for eDiscovery. When the hold is released, the content again becomes eligible for the cleanup process described above.
   
 
-## Find the PowerShell cmdlets for retention labels
+## Find the PowerShell cmdlets for retention policies
 
 To use the retention policies cmdlets:
   
