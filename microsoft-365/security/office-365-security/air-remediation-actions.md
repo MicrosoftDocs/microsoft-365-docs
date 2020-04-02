@@ -54,12 +54,13 @@ The following table summarizes threats and appropriate remediation actions in Of
 
 ## Next steps
 
+- [View details and results of an automated investigation in Office 365](air-view-investigation-results.md)
+
 - [View pending or completed remediation actions following an automated investigation in Office 365](air-review-approve-pending-completed-actions.md)
 
-- [Details and results of an automated investigation in Office 365](air-view-investigation-results.md)
 
 ## Related articles
 
 - [Automated investigation in Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- [Learn about Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
