@@ -20,6 +20,8 @@ description: "File plan manager provides advanced management capabilities for re
 
 # Overview of file plan manager
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 File plan manager provides advanced management capabilities for retention labels, retention label policies, and provides an integrated way to traverse label and label-to-content activity for your entire content lifecycle – from creation, through collaboration, record declaration, retention, and finally disposition. 
 
 To access file plan manager in the security and compliance center, go to **Records management** > **File plan**.

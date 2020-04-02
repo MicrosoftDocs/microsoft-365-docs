@@ -495,14 +495,14 @@
               href: manage-load-sets-in-advanced-ediscovery.md
         - name: Review case data
           items: 
+            - name: Use the review set dashboard (preview)
+              href: advanced-ediscovery-dashboard.md
             - name: View documents in a review set
               href: view-documents-in-review-set.md
             - name: Query the data in a review set
               href: review-set-search.md
             - name: Tag documents in a review set
               href: tagging-documents.md
-            - name: Use the review set dashboard (preview)
-              href: advanced-ediscovery-dashboard.md
         - name: Analyze case data
           href: analyzing-data-in-review-set.md
           items: 
