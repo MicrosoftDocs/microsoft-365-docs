@@ -30,11 +30,7 @@ To access file plan manager in the security and compliance center, go to **Recor
 
 ## Accessing file plan manager
 
-There are two requirements to access file plan manager, they are:
-
-- An Office 365 Enterprise E5 subscription.
-
-- The user has been in assigned one of the following roles in the security and compliance center:
+To access file plan manager, must have one of the following admin roles:
     
     - Retention Manager
     
