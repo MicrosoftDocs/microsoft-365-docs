@@ -32,7 +32,10 @@ Teams chats and channel messages are not affected by retention policies applied 
 > [!NOTE]
 > If a user is included in an active retention policy that retains Teams data, then deleting a mailbox of such a user is not allowed since the storage of the data needs to be retained. To delete a mailbox of such a user, the admin needs to exclude the user from the retention policy first.
   
-After a retention policy is assigned to a team, chat and channel messages can follow one of two paths:
+
+After a retention policy is assigned to a team, chat and channel messages, the paths the content takes depend on whether the retention policy is to retain and delete, to retain only, or delete only.
+
+When the retention policy is to retain and delete:
 
 ![Diagram of retention flow for Teams chat and channel messages](../media/TeamsRetentionLifecycle.png)
 
@@ -42,6 +45,22 @@ After a retention policy is assigned to a team, chat and channel messages can fo
 
 > [!NOTE]
 > Messages in the SubstrateHolds folder are searchable by eDiscovery tools. After a message is permanently deleted, it won't be returned in an eDiscovery search.
+
+When the retention policy is retain-only, or delete-only, the contents paths are variations of retain and delete:
+
+### Content paths for retain-only retention policy
+
+1. **If a chat or channel message is modified or deleted** during the retention period: A copy of the original message is created in the SubstrateHolds folder and retained till the end of the retention period, when the copy in the SubstrateHolds folder is permanently deleted one day after the item expires. 
+
+2. **If the item is not modified or deleted** during the retention period: Nothing happens before and after the retention period; the message remains in its original location.
+
+#### Content paths paths for delete-only retention policy
+
+1. **If the message is not deleted** during the retention period: At the end of the retention period, the message is moved to the SubstrateHolds folder. 
+
+2. **If the item is deleted by the user** during the period, the item is immediately moved to the SubstrateHolds folder. If a user deletes the message from there or empties the SubstrateHolds folder, the item is permanently deleted. Otherwise, the message is permanently deleted one day after being in the SubstrateHolds folder.
+
+## Limitations
 
 We're continuously working on optimizing retention functionality in Teams, and we plan to release new features in the coming months. In the meantime, here are a few limitations to be aware of:
   

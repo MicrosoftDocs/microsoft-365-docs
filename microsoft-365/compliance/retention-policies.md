@@ -21,6 +21,8 @@ description: "Use a retention policy to decide proactively whether to retain con
 
 # Use retention policies to automatically retain or delete stored content
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 For most organizations, the volume and complexity of their data is increasing daily — email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
   
 - **Comply proactively with industry regulations and internal policies** that require you to retain content for a minimum period of time — for example, the Sarbanes-Oxley Act might require you to retain certain types of content for seven years. 
@@ -46,17 +48,6 @@ With a retention policy, you can:
 When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect.
   
 Additionally, some organizations have to comply with regulations such as Securities and Exchange Commission (SEC) Rule 17a-4, which requires that after a retention policy is turned on, it cannot be turned off or made less restrictive. To meet this requirement, you can use **Preservation Lock**. After a retention policy's been locked, no one (including an administrator) can turn off the retention policy or make it less restrictive.
-
-## Compare retention policies with retention labels
-
-Consider using [retention labels](labels.md) to supplement retention policies. Both methods can retain and delete data in Office 365. However, retention policies apply to data that's already created and stored in Office 365, and the application of the policy isn't real-time but can take several days to be applied. Because you can apply retention policies to locations, this method is suitable for labeling at scale.
-
-In comparison, both users and admins can apply retention labels as soon as content is created, and the labels get applied immediately. In addition, retention labels have the following capabilities that retention policies don't support:
-
-- Start the retention period from when the content was labeled, rather than the age of the content or when it was last modified.
-- Use trainable classifers to identify content to label.
-- Immediately apply a default label for SharePoint documents.
-- Declare content a record as part of the label settings, and then have [records management](records-management.md) control that includes [event-based retention](event-driven-retention.md) to trigger the start of the retention period, and [disposition review](disposition-reviews.md) to review the content before it's permanently deleted.
 
 ## How a retention policy works with content in place
 
@@ -278,6 +269,31 @@ Understand that the principles of retention work as a tie-breaking flow from top
   
 Finally, a retention policy or retention label cannot permanently delete any content that's on hold for eDiscovery. When the hold is released, the content again becomes eligible for the cleanup process described above.
   
+
+## Find the PowerShell cmdlets for retention labels
+
+To use the retention policies cmdlets:
+  
+1. [Connect to the Office 365 Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+    
+2. Use these Office 365 Security & Compliance Center cmdlets:
+    
+    - [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancepolicy)
+    
+    - [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy)
+    
+    - [Remove-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancepolicy)
+    
+    - [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy)
+    
+    - [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule)
+    
+    - [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule)
+    
+    - [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancerule)
+    
+    - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule)
+
 
 ## Use Preservation Lock to comply with regulatory requirements
 
