@@ -21,11 +21,13 @@ description: "Learn about remediation actions in automated investigation and res
 
 ## Remediation actions
 
-[Automated investigation and response capabilities](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) in [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP) Plan 2 include certain remediation actions. Whenever an automated investigation is running or has completed, you'll typically see one or more remediation actions that require approval by your security operations team to proceed. 
+[Automated investigation and response capabilities](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) in [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP) Plan 2 include certain remediation actions. Whenever an automated investigation is running or has completed, you'll typically see one or more remediation actions that require approval by your security operations team to proceed. Such remediation actions can include the following:
+- Soft delete email messages or clusters
+- Block URL (time-of-click)
+- Turn off external mail forwarding
+- Turn off delegation
 
-The following table summarizes threats and remediation actions in Office 365 ATP:  
-
-
+The following table summarizes threats and appropriate remediation actions in Office 365 ATP. 
 
 |Category|Threat/risk  |Remediation action(s)  |
 |---------|---------|---------|
