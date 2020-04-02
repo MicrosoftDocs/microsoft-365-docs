@@ -47,11 +47,11 @@ When you enable this preview, three new [audit events](search-the-audit-log-in-s
 - **Changed sensitivity label applied to file**
 - **Removed sensitivity label from file**
 
-You always have the choice to opt out of this preview at any time.
-
 Watch the following video (no audio) to see these new capabilities in action:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
+
+You always have the choice to opt out of this preview at any time.
 
 ## Requirements
 
