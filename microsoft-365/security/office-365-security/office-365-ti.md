@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection: 
 - M365-security-compliance
-description: "Find out how threat intelligence capabilities in Office 365 Advanced Threat Protection can help you research threats against your organization, respond to malware, phishing, and other attacks that Office 365 has detected on your behalf, and search for threat indicators."
+description: "Find out how threat intelligence capabilities in Office 365 Advanced Threat Protection can help you research threats against your organization, respond to malware, phishing, and other attacks that Microsoft 365 has detected on your behalf, and search for threat indicators."
 ---
 
 # Threat investigation and response
@@ -40,7 +40,7 @@ Threat investigation and response capabilities surface in the Security &amp; Com
 
 ### Threat dashboard
 
-Use the Threat dashboard (this is also referred to as the [Security dashboard](security-dashboard.md)) to quickly see what threats have been addressed, and as a visual way to report to business decision makers how Office 365 services are securing your business.
+Use the Threat dashboard (this is also referred to as the [Security dashboard](security-dashboard.md)) to quickly see what threats have been addressed, and as a visual way to report to business decision makers how Microsoft 365 services are securing your business.
   
 ![Threat Dashboard](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
@@ -80,7 +80,7 @@ As part of the Office 365 Advanced Threat Protection Plan 2 offering, security a
   
 ## How do we get these capabilities?
 
-Office 365 threat investigation and response capabilities are included in Office 365 Advanced Threat Protection Plan 2, which is included in Enterprise E5 or as an add-on to certain subscriptions. To learn more, see [Office 365 ATP Plan 1 and Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
+Microsoft 365 threat investigation and response capabilities are included in Office 365 Advanced Threat Protection Plan 2, which is included in Enterprise E5 or as an add-on to certain subscriptions. To learn more, see [Office 365 ATP Plan 1 and Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
 ## Required roles and permissions
 

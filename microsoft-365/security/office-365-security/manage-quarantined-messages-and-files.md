@@ -26,7 +26,7 @@ Admins can view, release, and delete all types of quarantined messages for all u
 
 Admins in organizations with Office 365 Advance Threat Protection (ATP) can also view, download, and delete quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 
-You view and manage quarantined messages in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Office 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).
+You view and manage quarantined messages in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).
 
 ## What do you need to know before you begin?
 
@@ -38,9 +38,9 @@ You view and manage quarantined messages in the Security & Compliance Center or 
 
 - Quarantined messages are retained for a default period of time before they're automatically deleted:
 
-  - Messages quarantined by anti-spam policies (spam, phishing, and bulk email): 30 days. This is the default and maximum value. To configure this value, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+  - Messages quarantined by anti-spam policies (spam, phishing, and bulk email): 30 days. This is the default and maximum value. To configure this value, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
 
-1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign into Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign into Office 365 and [go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
   - Messages that contain malware: 15 days.
 
@@ -184,7 +184,7 @@ After you select a message, you have several options for what to do with the mes
 
   - Only recipients who haven't received the message will appear in the list of potential recipients.
 
-- **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Office 365 to complete this task). Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:
+- **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Microsoft 365 to complete this task). Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:
 
 - **Preview message**: In the flyout pane that appears, choose one of the following options:
 
@@ -329,7 +329,7 @@ When you select multiple quarantined files in the list (up to 100), the **Bulk a
 
 - **Delete files**:  After you click **Yes** in the warning that appears, the files are immediately deleted.
 
-1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in to Office 365 and [go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
 ## Use Exchange Online PowerShell or standalone Exchange Online Protection PowerShell to view and manage quarantined messages and files
 

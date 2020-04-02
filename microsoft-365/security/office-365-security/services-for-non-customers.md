@@ -35,13 +35,13 @@ This overview provides information about benefits we provide to your organizatio
 
 ## Microsoft support
 
-Microsoft offers several support options for people having trouble sending mail to Office 365 inboxes. We recommend that you:
+Microsoft offers several support options for people having trouble sending mail to Microsoft 365 inboxes. We recommend that you:
 
 - Follow the instructions in any non-delivery report you receive.
 
 - Check out the most common problems that non-customers encounter in [Troubleshooting mail sent to Office 365](troubleshooting-mail-sent-to-office-365.md).
 
-- Use the [Office 365 delist portal](https://sender.office.com) to submit a request to have your IP removed from the blocked sender's list.
+- Use the [Microsoft 365 delist portal](https://sender.office.com) to submit a request to have your IP removed from the blocked sender's list.
 
 - Read the [Microsoft community forums](https://community.office365.com/f/).
 
@@ -49,10 +49,10 @@ Microsoft offers several support options for people having trouble sending mail 
 
   For more information about Microsoft Technical support for Office 365, see [Support](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support).
 
-## Office 365 Anti-Spam IP Delist Portal
+## Anti-Spam IP Delist Portal
 
-This is a self-service portal you can use to remove yourself from the Office 365 blocked senders list. Use this portal if you are you getting an error message when you try to send an email to a recipient whose email address is in Office 365 and you don't think you should be. For more information, see [Use the delist portal to remove yourself from the Office 365 blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+This is a self-service portal you can use to remove yourself from the Microsoft 365 blocked senders list. Use this portal if you are you getting an error message when you try to send an email to a recipient whose email address is in Microsoft 365 and you don't think you should be. For more information, see [Use the delist portal to remove yourself from the blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## Abuse and spam reporting for junk email originating from Exchange Online
 
-Sometimes Office 365 is used by third parties to send junk email, in violation of our terms of use and policy. If you receive any junk email from Office 365, you can report these messages to Microsoft. For instructions, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+Sometimes Microsoft365 is used by third parties to send junk email, in violation of our terms of use and policy. If you receive any junk email from Office 365, you can report these messages to Microsoft. For instructions, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).

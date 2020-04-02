@@ -42,7 +42,7 @@ People regularly send, receive, and share attachments, such as documents, presen
 
   |Role|Where/how assigned|
   |---------|---------|
-  |global administrator |The person who signs up to buy Office 365 is a global admin by default. (See [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)|
+  |global administrator |The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)|
   |Security Administrator |Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
   |Exchange Online Organization Management, Exchange Online Hygiene Management |Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
   |
@@ -51,7 +51,7 @@ People regularly send, receive, and share attachments, such as documents, presen
 
 - [Learn about ATP Safe Attachments policy options](#step-3-learn-about-atp-safe-attachments-policy-options) (in this article). Some options, such as the Monitor or Replace options, can result in a minor delay of email while attachments are scanned. To avoid message delays, consider using [Dynamic Delivery and previewing](dynamic-delivery-and-previewing.md).
 
-- Allow up to 30 minutes for your new or updated policy to spread to all Office 365 datacenters.
+- Allow up to 30 minutes for your new or updated policy to spread to all Microsoft 365 datacenters.
 
 ## Step 2: Set up (or edit) an ATP Safe Attachments policy
 
@@ -59,7 +59,7 @@ People regularly send, receive, and share attachments, such as documents, presen
 
 2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Safe Attachments**.
 
-3. If you see **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams**, we recommend that you select this option. This will enable [Office 365 Advanced Threat Protection for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) for your Office 365 environment.
+3. If you see **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams**, we recommend that you select this option. This will enable [Office 365 Advanced Threat Protection for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) for your Microsoft 365 environment.
 
 4. Choose **New** (the New button resembles a plus sign ( **+**)) to start creating your policy.
 

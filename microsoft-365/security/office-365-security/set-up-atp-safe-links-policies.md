@@ -48,7 +48,7 @@ With ATP Safe Links enabled, if a user clicks on a link in an email and the URL 
 
     |Role  |Where/how assigned  |
     |---------|---------|
-    |global administrator |The person who signs up to buy Office 365 is a global admin by default. (See [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)         |
+    |global administrator |The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)         |
     |Security Administrator |Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Exchange Online Organization Management |Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
@@ -58,7 +58,7 @@ With ATP Safe Links enabled, if a user clicks on a link in an email and the URL 
     
 - [Learn about ATP Safe Links policy options](#step-4-learn-about-atp-safe-links-policy-options) (in this article). 
 
-- Allow up to 30 minutes for your new or updated policy to spread to all Office 365 datacenters.
+- Allow up to 30 minutes for your new or updated policy to spread to all Microsoft 365 datacenters.
     
 ## Step 2: Define (or review) the ATP Safe Links policy that applies to everyone
 

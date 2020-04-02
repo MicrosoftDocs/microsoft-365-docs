@@ -15,7 +15,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: "This solution tells you what the most common cybersecurity attacks might look like in Office 365 and how to respond to them"
+description: "This solution tells you what the most common cybersecurity attacks might look like in Microsoft 365 and how to respond to them"
 ---
 
 # Security Incident Response
@@ -26,7 +26,7 @@ description: "This solution tells you what the most common cybersecurity attacks
 
 Not all cyberattacks can be thwarted. Attackers are constantly looking for new weaknesses in your defensive strategy or they are exploiting old ones. Knowing how to recognize an attack allows you to respond to it faster, which shortens the duration of the security incident.
 
-This series of article helps you understand what a particular type of attack might look like in Office 365 and gives you steps you can take to respond. They are quick entry points to understanding:
+This series of article helps you understand what a particular type of attack might look like in Microsoft 365 and gives you steps you can take to respond. They are quick entry points to understanding:
 
 - What the attack is and how it works.
 
@@ -52,7 +52,7 @@ Check back here monthly as more articles will be added over time.
 
 ## Secure Microsoft 365 like a cybersecurity pro
 
-Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Office 365 tenant.
+Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 organization.
 
 - Tasks to accomplish in the first 30 days.  These have immediate affect and are low-impact to your users.
 

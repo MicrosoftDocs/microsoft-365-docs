@@ -63,7 +63,7 @@ As message security becomes more important, admins need to understand the princi
 
 - **Transport Layer Security (TLS)** encrypts the tunnel or the route between email servers in order to help prevent snooping and eavesdropping.
 
-- **Secure Sockets Layer (SSL)** encrypts the connection between email clients and Office 365 servers.
+- **Secure Sockets Layer (SSL)** encrypts the connection between email clients and Microsoft 365 servers.
 
 - **BitLocker** encrypts the data on a hard drive in a datacenter so that if someone gets unauthorized access, they can't read it.
 

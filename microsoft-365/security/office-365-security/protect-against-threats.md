@@ -21,7 +21,7 @@ description: "Use this article as a guide to configure your threat protection fe
 
 # Protect against threats
 
-Office 365 includes a variety of threat protection features. Here's a quick-start guide you can use as a checklist to make sure your threat protection features are set up for your organization. If you're new to threat protection features in Office 365, or you're just not sure where to begin, use the following guidance as a starting point.
+Microsoft 365 includes a variety of threat protection features. Here's a quick-start guide you can use as a checklist to make sure your threat protection features are set up for your organization. If you're new to threat protection features in Office 365, or you're just not sure where to begin, use the following guidance as a starting point.
 
 > [!IMPORTANT]
 > **Initial recommended settings are included for each kind of policy; however, many options are available, and you can adjust your settings to meet your specific organization's needs**. Allow approximately 30 minutes for your policies or changes to work their way through your datacenter.
@@ -98,7 +98,7 @@ To set up [ATP Safe Attachments](atp-safe-attachments.md), you must define at le
 
 5. Click **Save**.
 
-6. (**Recommended additional step**) As a global administrator or a SharePoint Online administrator run the **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the **DisallowInfectedFileDownload** parameter set to  *true* for your Office 365 environment. (This prevents people from opening, moving, copying, or sharing files that are detected as malicious.)
+6. (**Recommended additional step**) As a global administrator or a SharePoint Online administrator run the **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the **DisallowInfectedFileDownload** parameter set to  *true* for your Microsoft 365 environment. (This prevents people from opening, moving, copying, or sharing files that are detected as malicious.)
 
 To learn more, see [Set up Office 365 ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md) and [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
@@ -211,5 +211,5 @@ After you have configured your threat protection features, make sure to monitor 
 |What to do|Resources to learn more|
 |---------|---------|
 |See how threat protection features are working for your organization by viewing reports|[Security dashboard](security-dashboard.md)<br/>[Email security reports](view-email-security-reports.md)<br/>[Reports for Office 365 ATP](view-reports-for-atp.md)<br/>[Threat Explorer](threat-explorer.md)|
-|Periodically review and revise your threat protection policies as needed|[Secure Score](../mtp/microsoft-secure-score.md)<br/>[Smart reports and insights](reports-and-insights-in-security-and-compliance.md)<br/>[Office 365 threat investigation and response features](keep-users-safe-with-office-365-ti.md)|
+|Periodically review and revise your threat protection policies as needed|[Secure Score](../mtp/microsoft-secure-score.md)<br/>[Smart reports and insights](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 threat investigation and response features](keep-users-safe-with-office-365-ti.md)|
 |Watch for new features and service updates|[Standard and Targeted release options](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|

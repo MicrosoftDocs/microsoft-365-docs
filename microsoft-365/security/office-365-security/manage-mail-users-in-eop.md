@@ -121,7 +121,7 @@ This example uses the [New-EOPMailUser](https://docs.microsoft.com/powershell/mo
 
 - The external email address is jzeng@tailspintoys.com.
 
-- The Office 365 sign in name is jeffreyz@contoso.onmicrosoft.com.
+- The Microsoft 365 sign in name is jeffreyz@contoso.onmicrosoft.com.
 
 - The password is Pa$$word1.
 

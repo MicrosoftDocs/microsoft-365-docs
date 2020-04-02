@@ -21,7 +21,7 @@ description: "Office 365 Advanced Threat Protection includes safe attachments, s
 # Office 365 Advanced Threat Protection
 
 > [!IMPORTANT]
-> This article is intended for business customers who have [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). If you are using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safe Links or Safe Attachments in Outlook, see [Advanced Outlook.com security for Office 365 subscribers](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> This article is intended for business customers who have [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). If you are using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safe Links or Safe Attachments in Outlook, see [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## Overview
 
@@ -104,7 +104,7 @@ To access ATP features in the Security & Compliance Center, you must be assigned
 
 |Role or role group|Resources to learn more|
 |---------|---------|
-|global administrator (this can be assigned in either Azure Active Directory or in the Security & Compliance Center) |[About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|global administrator (this can be assigned in either Azure Active Directory or in the Security & Compliance Center) |[About Microsoft 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
 |Security Administrator (this can be assigned in either Azure Active Directory or the Security & Compliance Center) |[Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online Organization Management (this is assigned in Exchange Online)|[Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |Search and Purge (this is assigned only in the Security & Compliance Center) |[Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md|

@@ -28,7 +28,7 @@ EOP uses outbound spam policies as part of your organization's overall defense a
 
 Admins can view, edit, and configure (but not delete) the default outbound spam policy. For greater granularity, you can also create custom outbound spam policies that apply to specific users, groups, or domains in your organization. Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.
 
-You can configure outbound spam policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Office 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).
+You can configure outbound spam policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).
 
 ## Outbound spam policies in the Security & Compliance Center vs Exchange Online PowerShell or Exchange Online Protection PowerShell
 

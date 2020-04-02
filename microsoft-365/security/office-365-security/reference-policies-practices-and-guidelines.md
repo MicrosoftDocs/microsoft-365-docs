@@ -22,7 +22,7 @@ description: "Microsoft has developed various policies, procedures, and adopted 
 
 Microsoft is dedicated to helping provide the most trusted user experience on the web. Therefore, Microsoft has developed various policies, procedures, and adopted several industry best practices to help protect our users from abusive, unwanted, or malicious email. Senders attempting to send email to users should ensure they fully understand and are following the guidance in this article to help in this effort and to help avoid potential delivery issues.
 
-If you are not in compliance with these policies and guidelines, it may not be possible for our support team to assist you. If you are adhering to the guidelines, practices, and policies presented in this article and are still experiencing delivery issues based on your sending IP address, please follow the steps to submit a delisting request. For instructions, see [Use the delist portal to remove yourself from the Office 365 blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+If you are not in compliance with these policies and guidelines, it may not be possible for our support team to assist you. If you are adhering to the guidelines, practices, and policies presented in this article and are still experiencing delivery issues based on your sending IP address, please follow the steps to submit a delisting request. For instructions, see [Use the delist portal to remove yourself from the blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## General Microsoft policies
 
@@ -42,13 +42,13 @@ Email sent to Microsoft 365 users must adhere to all applicable laws and regulat
 
 ## Technical guidelines
 
-Email sent to Office 365 should comply with the applicable recommendations listed in the documents below (some links are only available in English).
+Email sent to Microsoft 365 should comply with the applicable recommendations listed in the documents below (some links are only available in English).
 
 - [RFC 2505: Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920: SMTP Service Extension for Command Pipelining](https://www.ietf.org/rfc/rfc2920.txt)
 
-In addition, email servers connecting to Office 365 must adhere to the following requirements:
+In addition, email servers connecting to Microsoft 365 must adhere to the following requirements:
 
 - Sender is expected to comply with all technical standards for the transmission of Internet email, as published by The Internet Society's Internet Engineering Task Force (IETF), including RFC 5321, RFC 5322, and others.
 
@@ -68,9 +68,9 @@ In addition, email servers connecting to Office 365 must adhere to the following
 
 Senders, ISP's, and other service providers should actively manage the reputation of your outbound IP addresses.
 
-## Office 365 limits
+## Microsoft 365 limits
 
-Senders must adhere to Office 365 limits listed in [Exchange Online Protection Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
+Senders must adhere to Microsoft 365 limits listed in [Exchange Online Protection Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 
 ## Email delivery resources and organizations
 
