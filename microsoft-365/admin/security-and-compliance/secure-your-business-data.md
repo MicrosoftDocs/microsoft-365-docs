@@ -184,6 +184,7 @@ To create a mail transport rule:
 |:-----|:-----|
 |Name  <br/> |Prevent auto forwarding of email to external domains  <br/> |
 |Apply this rule if ...  <br/> |The sender . . . is external/internal . . . Inside the organization  <br/> |
+|Add condition  <br/> |The recipient . . . is external/internal . . . Outside the organization  <br/> |
 |Add condition  <br/> |The message properties . . . include the message type . . . Auto-forward  <br/> |
 |Do the following ...  <br/> |Block the message . . . reject the message and include an explanation.  <br/> |
 |Provide message text  <br/> |Auto-forwarding email outside this organization is prevented for security reasons.  <br/> |
