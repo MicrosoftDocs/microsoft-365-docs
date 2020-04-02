@@ -21,9 +21,6 @@ description: "Use this topic to learn more about privileged access management in
 
 # Privileged access management in Office 365
 
-> [!IMPORTANT]
-> This topic covers deployment and configuration guidance for features only currently available in Office 365 E5 and Advanced Compliance SKUs.
-
 Privileged access management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. Privileged access management requires users to request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow. This configuration gives users just-enough-access to perform the task at hand, without risking exposure of sensitive data or critical configuration settings. Enabling privileged access management in Office 365 allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
 
 For a quick overview of the integrated Customer Lockbox and privileged access management workflow, see this [Customer Lockbox and privileged access management in Office 365 video](https://go.microsoft.com/fwlink/?linkid=2066800).
@@ -38,7 +35,7 @@ Privileged access management in Office 365 is defined and scoped at the **task**
 
 - **Enabling privileged access management in Office 365 while already using Azure AD Privileged Identity Management:** Adding privileged access management in Office 365 provides another granular layer of protection and audit capabilities for privileged access to Office 365 data.
 
-- **Enabling Azure AD Privileged Identity Management while already using privileged access management in Office 365:**  Adding Azure AD Privileged Identity Management to privileged access management in Office 365 can extend privileged access to data outside of Office 365 that’s primarily defined by user roles or identity.  
+- **Enabling Azure AD Privileged Identity Management while already using privileged access management in Office 365:**  Adding Azure AD Privileged Identity Management to privileged access management in Office 365 can extend privileged access to data outside of Office 365 that's primarily defined by user roles or identity.  
 
 ## Privileged access management architecture and process flow
 
@@ -72,7 +69,7 @@ For an approved request, the task is processed by the Exchange Management runspa
 
 ### What SKUs can use privileged access in Office 365?
 
-Privileged access management is available for customers with Office 365 E5 and Advanced Compliance SKUs.
+Privileged access management is available for customers for a wide selection of Microsoft 365 and Office 365 subscriptions and add-ons. See [Get started with privileged access management](privileged-access-management-configuration.md) for details.
 
 ### When will privileged access support Office 365 workloads beyond Exchange?
 
@@ -84,7 +81,7 @@ Yes, raising the current limit of 30 privileged access policies per Office 365 o
 
 ### Do I need to be a Global Admin to manage privileged access in Office 365?
 
-No, you need the Exchange Role Management role assigned to accounts that manage privileged access in Office 365. If you don’t want to configure the Role Management role as a stand-alone account permission, the Global Administrator role includes this role by default and can manage privileged access. Users included in an approvers’ group don't need to be a Global Admin or have the Role Management role assigned to review and approve requests with PowerShell.
+No, you need the Exchange Role Management role assigned to accounts that manage privileged access in Office 365. If you don't want to configure the Role Management role as a stand-alone account permission, the Global Administrator role includes this role by default and can manage privileged access. Users included in an approvers' group don't need to be a Global Admin or have the Role Management role assigned to review and approve requests with PowerShell.
 
 ### How is privileged access management in Office 365 related to Customer Lockbox?
 
