@@ -455,6 +455,7 @@ These permissions are required only to create and apply a retention policy. Poli
 
 ## More information
 
+- [Retention policies in Microsoft Teams](/microsoftteams/retention-policies#using-powershell )
 - [Overview of labels](labels.md)
 - [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limits and specifications for Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
