@@ -26,7 +26,7 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-Your feedback helps us get better in protecting your environment from advanced attacks. Share your experience and impressions from product capabilities and requests.
+Your feedback helps us get better in protecting your environment from advanced attacks. Share your experience, impressions, and  requests by providing feedback.
 
 1. From any part of the portal, select **Give feedback**. 
 
