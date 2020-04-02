@@ -20,7 +20,7 @@ description: "The Microsoft Junk Email Reporting Add-in for Microsoft Office Out
 
 # Report messages and files to Microsoft
 
-Users and admins in Office 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes to submit email messages have several different methods for reporting messages and files to Microsoft.
+Users and admins in organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes to submit email messages have several different methods for reporting messages and files to Microsoft.
 
 |||
 |---|---|

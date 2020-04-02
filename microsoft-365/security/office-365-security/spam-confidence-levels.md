@@ -41,4 +41,4 @@ Similar to the SCL, the bulk complaint level (BCL) identifies bad bulk email (al
 
 ||
 |:-----|
-|![The short icon for LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Office 365?**         Discover free video courses for **Office 365 admins and IT pros**, brought to you by LinkedIn Learning.|
+|![The short icon for LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Office 365?**         Discover free video courses for **Microsoft 365 admins and IT pros**, brought to you by LinkedIn Learning.|

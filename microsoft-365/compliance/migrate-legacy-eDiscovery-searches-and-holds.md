@@ -29,9 +29,9 @@ To help customers take advantage of the new and improved functionality, this art
 
 - This article provides guidance on how to create an eDiscovery hold. The hold policy will be applied to mailboxes through an asynchronous process. When creating an eDiscovery hold, you must create both a CaseHoldPolicy and CaseHoldRule, otherwise the hold will not be created and content locations will not be placed on hold.
 
-## Step 1: Connect to Exchange Online PowerShell and Office 365 Security & Compliance Center PowerShell
+## Step 1: Connect to Exchange Online PowerShell and Security & Compliance Center PowerShell
 
-The first step is to connect to Exchange Online PowerShell and Office 365 Security & Compliance Center PowerShell. You can copy the following script, paste it into a PowerShell window and then run it. You'll be prompted for credentials for the organization that you want to connect to. 
+The first step is to connect to Exchange Online PowerShell and Security & Compliance Center PowerShell. You can copy the following script, paste it into a PowerShell window and then run it. You'll be prompted for credentials for the organization that you want to connect to. 
 
 ```powershell
 $UserCredential = Get-Credential

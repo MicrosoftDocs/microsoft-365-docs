@@ -58,7 +58,7 @@ After you enable and configure this preview, users can additionally see and appl
     Import-PSSession $Session -DisableNameChecking
     ```
     
-    For full instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+    For full instructions, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 3. Run the following command to synchronize your sensitivity labels to Azure AD, so that they can be used with Office 365 Groups:
     
@@ -180,7 +180,7 @@ To view the applied sensitivity labels, use the **Active sites** page in the new
 
 Whenever you make a change to site and group settings for a label, you must run the following PowerShell commands so that your teams, sites, and groups can use the new settings. As a best practice, don't the change site and group settings for a label after you've applied the label to several teams, groups, or sites.
 
-1. In a PowerShell session that you open with the **Run as Administrator** option, run the following commands to connect to Office 365 Security & Compliance Center PowerShell and get the list of sensitivity labels and their GUIDs.
+1. In a PowerShell session that you open with the **Run as Administrator** option, run the following commands to connect to Security & Compliance Center PowerShell and get the list of sensitivity labels and their GUIDs.
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned

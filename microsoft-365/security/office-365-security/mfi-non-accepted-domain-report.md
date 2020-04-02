@@ -17,7 +17,7 @@ description: "Admins can learn about the non-accepted domain report in the mail 
 
 Similar to the **Sender domain** insight, the **Non-accepted domain** insight identifies messages from your on-premises email organization, but the sender's domain isn't configured as an accepted domain in your organization.
 
-Office 365 might throttle these messages if we have data to prove that the intent of these messages is malicious. Therefore, it's important for you to understand what's happening and to fix the issue.
+Microsoft 365 might throttle these messages if we have data to prove that the intent of these messages is malicious. Therefore, it's important for you to understand what's happening and to fix the issue.
 
 ![The Non-accepted domain report in the mail flow dashboard in the Security & Compliance Center](../../media/non-accepted-domain-report-selected.png)
 

@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Office 365 admins can learn how to recover from a ransomware attack."
+description: "Microsoft 365 admins can learn how to recover from a ransomware attack."
 ---
 
 # Recover from a ransomware attack in Office 365
