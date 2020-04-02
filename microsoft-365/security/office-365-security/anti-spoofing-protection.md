@@ -17,44 +17,53 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: "This article describes how Office 365 mitigates against phishing attacks that use forged sender domains, that is, domains that are spoofed. It accomplishes this by analyzing the messages and blocking the ones that can be authenticated neither by using standard email authentication methods, nor other sender reputation techniques. This change was implemented to reduce the number of phishing attacks to which organizations in Office 365 are exposed."
+description: ""
 ---
 
 # Anti-spoofing protection in Office 365
 
+If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP includes features to help protect your organization from spoofed (forged) senders.
+
+When it comes to protecting its users, Microsoft takes the threat of phishing seriously. Spoofing is a common technique that's used by attackers. The message appears to originate from someone or somewhere other than the actual source. This technique is often used in phishing campaigns that are designed to obtain user credentials. The anti-spoofing technology in EOP specifically examines forgery of the **From** header in the message body (used to display the message sender in email clients). When EOP has high confidence that the **From** header is forged, the message is identified as spoofed.
+
+The following anti-spoofing technologies are available in EOP:
+
+- **Spoof intelligence**: Review spoofed messages from senders in internal and external domains, and allow or block those senders. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
+
+- **Anti-phishing policies**: Basic anti-phishing policies are available in EOP, and more advanced anti-phishing policies are available in Advanced Threat Protection (ATP). For more information, see [Anti-phishing protection in Office 365](anti-phishing-protection.md).
+
+The rest of this topic describes 
 This article describes how Office 365 mitigates against phishing attacks that use forged sender domains, that is, domains that are spoofed. It accomplishes this by analyzing the messages and blocking the ones that cannot be authenticated using standard email authentication methods, nor other sender reputation techniques. This change was implemented to reduce the number of phishing attacks to which organizations in Office 365 are exposed.
 
-This article also describes why this change is being made, how customers can prepare for this change, how to view messages that will be affected, how to report on messages, how to mitigate false positives, as well as how senders to Microsoft should prepare for this change.
-
-Microsoft's anti-spoofing technology was initially deployed to its organizations that had an Office 365 Enterprise E5 subscription or had purchased the Office 365 Advanced Threat Protection (ATP) add-on for their subscription. As of October, 2018 we extended the protection to organizations that have Exchange Online Protection (EOP) as well. Additionally, because of the way all of our filters learn from each other, Outlook.com users may also be affected.
+Microsoft's anti-spoofing technology was originally deployed to Office 365 Enterprise E5 organizations or organizations with an ATP add-on. In October, 2018 anti-spoofing protection was included in EOP. Additionally, because of the way all of our filters learn from each other, Outlook.com users may also be affected.
 
 ## How spoofing is used in phishing attacks
 
-When it comes to protecting its users, Microsoft takes the threat of phishing seriously. One of the techniques that spammers and phishers commonly use is spoofing, which is when the sender is forged, and a message appears to originate from someone or somewhere other than the actual source. This technique is often used in phishing campaigns designed to obtain user credentials. Microsoft's Anti-spoof technology specifically examines forgery of the 'From: header' which is the one that shows up in an email client like Outlook. When Microsoft has high confidence that the From: header is spoofed, it identifies the message as a spoof.
-
 Spoofing messages have two negative implications for real life users:
 
-### 1. Spoofed messages deceive users
+- **Spoofed messages deceive users**: A spoofed message might trick the recipient into clicking a link and and giving up their credentials, downloading malware, or replying to a message with sensitive content (known as a business email compromise or BEC).
 
-First, a spoofed message may trick a user into clicking a link and giving up their credentials, downloading malware, or replying to a message with sensitive content (the latter of which is known as Business Email Compromise). For example, the following is a phishing message with a spoofed sender of msoutlook94@service.outlook.com:
+  The following message is an example of phishing that uses the spoofed sender msoutlook94@service.outlook.com:
 
-![Phishing message impersonating service.outlook.com](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+  ![Phishing message impersonating service.outlook.com](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
-The above did not actually come from service.outlook.com, but instead was spoofed by the phisher to make it look like it did. It is attempting to trick a user into clicking the link within the message.
+  This message didn't actually come from service.outlook.com, but the attacker spoofed the **From** header field to make it look like it did. This was an attempt to trick the recipient into clicking the **change your password** link and giving up their credentials.
 
-The next example is spoofing contoso.com:
+  The following message is an example of BEC that uses the spoofed email domain contoso.com:
 
-![Phishing message - business email compromise](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+  ![Phishing message - business email compromise](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
 
-The message looks legitimate, but in fact is a spoof. This phishing message is a type of Business Email Compromise which is a subcategory of phishing.
+  The message looks legitimate, but the sender is actually spoofed.
 
-### 2. Users confuse real messages for fake ones
+- **Users confuse real messages for fake ones**: Even users who know about phishing might have difficulty seeing the differences between real messages and spoofed messages.
 
-Second, spoofed messages create uncertainty for users who know about phishing messages but cannot tell the difference between a real message and spoofed one. For example, the following is an example of an actual password reset from the Microsoft Security account email address:
+  The following message is an example of a real password reset message from the Microsoft Security account:
 
-![Microsoft legitimate password reset](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+  ![Microsoft legitimate password reset](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
-The above message did come from Microsoft, but at the same time, users are used to getting phishing messages that may trick a user into clicking a link and giving up their credentials, downloading malware, or replying to a message with sensitive content. Because it is difficult to tell the difference between a real password reset and a fake one, many users ignore these messages, report them as spam, or unnecessarily report the messages back to Microsoft as missed phishing scams.
+  The message really did come from Microsoft, but users have been conditioned to be suspicious. Because it's difficult to the difference between a real password reset message and a fake one, users might ignore the message, report it as spam, or unnecessarily report the message to Microsoft as phishing.
+
+## Use email authentication to help stop spoofing
 
 To stop spoofing, the email filtering industry has developed email authentication protocols such as [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md). DMARC prevents spoofing from examining a message's sender. That is, the sender that users see in their email client (in the examples above it is service.outlook.com, outlook.com, and accountprotection.microsoft.com). Furthermore, users can also see that the domain has passed SPF or DKIM, which means that the domain has been authenticated and is therefore not spoofed. For a more complete discussion, see the section "*Understanding why email authentication is not always enough to stop spoofing"*  later on in this article.
 
@@ -68,7 +77,7 @@ This is a big problem because while enterprises may not be aware of how email au
 
 For information on setting up SPF, DKIM, and DMARC, see the section "*Customers of Office 365"*  later on in this document.
 
-## Stopping spoofing with implicit email authentication
+### Stop spoofing with implicit email authentication
 
 Because phishing and spear phishing is such a problem, and because of the limited adoption of strong email authentication policies, Microsoft continues to invest in capabilities to protect its customers. Therefore, Microsoft is moving ahead with  *implicit email authentication* - if a domain doesn't authenticate, Microsoft will treat it as if it had published email authentication records and treat it accordingly if it doesn't pass.
 
@@ -82,28 +91,35 @@ To see Microsoft's general announcement, see [A Sea of Phish Part 2 - Enhanced A
 
 ### Composite authentication
 
-While SPF, DKIM, and DMARC are all useful by themselves, they don't communicate enough authentication status in the event a message has no explicit authentication records. Therefore, Microsoft has developed an algorithm that combines multiple signals into a single value called Composite Authentication, or compauth for short. Customers in Office 365 have compauth values stamped into the *Authentication-Results* header in the message headers.
+While SPF, DKIM, and DMARC are all useful by themselves, they don't communicate enough authentication status in the event a message has no explicit authentication records. Therefore, Microsoft has developed an algorithm that combines multiple signals into a single value called Composite Authentication, or CompAuth for short. Customers in Office 365 have CompAuth values stamped into the **Authentication-Results** header in the message headers.
 
 ```text
 Authentication-Results:
   compauth=<fail|pass|softpass|none> reason=<yyy>
 ```
 
+The CompAuth values are described in the following table.
+
+|||
+|---|---|
 |**CompAuth result**|**Description**|
-|:-----|:-----|
 |fail|Message failed explicit authentication (sending domain published records explicitly in DNS) or implicit authentication (sending domain did not publish records in DNS, so Office 365 interpolated the result as if it had published records).|
 |pass|Message passed explicit authentication (message passed DMARC, or [Best Guess Passed DMARC](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)) or implicit authentication with high confidence (sending domain does not publish email authentication records, but Office 365 has strong backend signals to indicate the message is likely legitimate).|
 |softpass|Message passed implicit authentication with low-to-medium confidence (sending domain does not publish email authentication, but Office 365 has backend signals to indicate the message is legitimate but the strength of the signal is weaker).|
 |none|Message did not authenticate (or it did authenticate but did not align), but composite authentication not applied due to sender reputation or other factors.|
+|
+
+The reason codes are described in the following table.
 
 |||
-|:-----|:-----|
+|---|---|
 |**Reason**|**Description**|
-|0xx |Message failed composite authentication.<br/>**000** means the message failed DMARC with an action of reject or quarantine.  <br/>**001** means the message failed implicit email authentication. This means that the sending domain did not have email authentication records published, or if they did, they had a weaker failure policy (SPF soft fail or neutral, DMARC policy of p=none).  <br/>**002** means the organization has a policy for the sender/domain pair that is explicitly prohibited from sending spoofed email, this setting is manually set by an administrator.  <br/>**010** means the message failed DMARC with an action of reject or quarantine, and the sending domain is one of your organization's accepted-domains (this is part of self-to-self, or intra-org, spoofing).|
-|1xx, 2xx, 3xx, 4xx, and 5xx|Correspond to various internal codes for why a message passed implicit authentication, or had no authentication but no action was applied.|
-|6xx|Means the message failed implicit email authentication, and the sending domain is one of your organization's accepted domains (this is part of self-to-self, or intra-org, spoofing).|
+|0xx|The message failed composite authentication:<ul><li>**000**: The message failed DMARC with an action of reject or quarantine.</li><li>**001**: The message failed implicit email authentication. This means that the sending domain did not have email authentication records published, or if they did, they had a weaker failure policy (SPF soft fail or neutral, DMARC policy of `p=none`).</li><li>**002**: The organization has a policy for the sender/domain pair that is explicitly prohibited from sending spoofed email. This setting is manually set by an admin.</li><li>**010**: The message failed DMARC with an action of reject or quarantine, and the sending domain is one of your organization's accepted-domains (this is part of self-to-self, or intra-org, spoofing).</li></ul>|
+|1xx<br/>2xx<br/>3xx<br/>4xx<br/>5xx|Various internal codes for why a message passed implicit authentication, or had no authentication but no action was applied.|
+|6xx|The message failed implicit email authentication, and the sending domain is one of your organization's accepted domains (this is part of self-to-self, or intra-org, spoofing).|
+|
 
-By looking at the headers of a message, an administrator or even an end user can determine how Office 365 arrives at the conclusion that the sender may be spoofed.
+By looking at the headers of a message, an admin or even an end user can determine how Office 365 arrives at the conclusion that the sender may be spoofed.
 
 ### Differentiating between different types of spoofing
 
@@ -129,7 +145,7 @@ Messages that fail intra-org spoofing contain the following values in the header
 
 `X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
 
-The CAT is the category of the message, and it is normally stamped as SPM (spam), but occasionally may be HSPM (high confidence spam) or PHISH (phishing) depending upon what other types of patterns occur in the message.
+CAT is the category of the message, and it is normally stamped as SPM (spam), but occasionally may be HSPM (high confidence spam) or PHISH (phishing) depending upon what other types of patterns occur in the message.
 
 The SFTY is the safety level of the message, the first digit (9) means the message is phishing, and second set of digits after the dot (11) means it is intra-org spoofing.
 
@@ -245,11 +261,13 @@ This may result in some messages that were previously marked as spam still getti
 
 There are multiple different ways a message can be spoofed (see  [Differentiating between different types of spoofing](#differentiating-between-different-types-of-spoofing) earlier in this article) but as of March 2018 the way Office 365 treats these messages is not yet unified. The following table is a quick summary, with Cross-domain spoofing protection being new behavior:
 
+|||||
+|---|---|---|---|
 |**Type of spoof**|**Category**|**Safety tip added?**|**Applies to**|
-|:-----|:-----|:-----|:-----|
 |DMARC fail (quarantine or reject)|HSPM (default), may also be SPM or PHSH|No (not yet)|All Office 365 customers, Outlook.com|
 |Self-to-self|SPM|Yes|All Office 365 organizations, Outlook.com|
 |Cross-domain|SPOOF|Yes|Office 365 Advanced Threat Protection and E5 customers|
+|
 
 ### Changing your anti-spoofing settings
 
