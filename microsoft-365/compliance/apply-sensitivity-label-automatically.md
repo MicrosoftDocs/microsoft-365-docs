@@ -20,6 +20,8 @@ description: "When you create a sensitivity label, you can automatically assign 
 
 # Apply a sensitivity label to content automatically
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 When you create a sensitivity label, you can automatically assign that label to content when it contains sensitive information, or you can prompt users to apply the label that you recommend.
 
 The ability to apply sensitivity labels to content automatically is important because:
@@ -38,7 +40,7 @@ The auto-labeling settings for Office apps are available when you [create or edi
 
 ## How to configure auto-labeling for Office apps
 
-One of the most powerful features of sensitivity labels is the ability to apply them automatically to content that matches certain conditions. In this case, people in your organization don't need to apply the sensitivity labels — Office 365 does the work for them.
+One of the most powerful features of sensitivity labels is the ability to apply them automatically to content that matches specific conditions. In this case, people in your organization don't need to apply the sensitivity labels — Office 365 does the work for them.
 
 You can choose to apply sensitivity labels to content automatically when that content contains specific types of sensitive information. Choose from a list of sensitive info types or classifers:
 
@@ -47,7 +49,7 @@ You can choose to apply sensitivity labels to content automatically when that co
 > [!NOTE]
 > Currently, the option for **Classifers** is in limited preview and requires you to submit a form to Microsoft to enable this capability for your tenant. For more information, see the blog post [Announcing automatic labeling in Office Apps using built-in classifiers - Limited Preview](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889).
 
-When this sensitivity label is automatically applied, the user sees a notification in their Office app. They can choose **OK** to dismiss the notification.
+When this sensitivity label is automatically applied, the user sees a notification in their Office app. For example:
 
 ![Notification that a document had a label applied automatically](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
@@ -88,23 +90,35 @@ During the preview period, the following apps support classifers for sensitivity
 
 If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label isn't suitable for their content.
 
-Recommended labels are supported for Word, PowerPoint, and Excel.
-
 ![Option for recommending a sensitivity label to users](../media/Sensitivity-labels-Recommended-label-option.png)
 
-Here's an example of a prompt when you configure a condition to apply a label as a recommended action, with a custom policy tip. You can choose what text is displayed in the policy tip.
+Here's an example of a prompt from the Azure Information Protection unified labeling client when you configure a condition to apply a label as a recommended action, with a custom policy tip. You can choose what text is displayed in the policy tip.
 
 ![Prompt to apply a recommended label](../media/Sensitivity-label-Prompt-for-required-label.png)
 
 ## How automatic or recommended labels are applied
 
-- Automatic labeling applies to Word, Excel, and PowerPoint when you save a document, and to Outlook when you send an email. These conditions detect sensitive information in the body text in documents and emails, and to headers and footers — but not in the subject line or attachments of email.
+The implementation of automatic and recommended labeling in Office apps depend on whether you're using labeling that's built into Office, or the Azure Information Protection unified labeling client. In both cases, however:
 
 - You can't use automatic labeling for documents and emails that were previously manually labeled, or previously automatically labeled with a higher sensitivity. Remember, you can only apply a single sensitivity label to a document or email (in addition to a single retention label).
 
-- Recommended labeling applies to Word, Excel, and PowerPoint when you save documents.
+- You can't use recommended labeling for documents or emails that were previously labeled with a higher sensitivity. When the content's already labeled with a higher sensitivity, the user won't see the prompt with the recommendation and policy tip.
 
-- You can't use recommended labeling for documents that were previously labeled with a higher sensitivity. When the content's already labeled with a higher sensitivity, the user won't see the prompt with the recommendation and policy tip.
+Specific to built-in labeling:
+
+- Not all Office apps support automatic (and recommended) labeling. For more information, see [Support for sensitivity label capabilities in apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+
+- For recommended labels in the desktop versions of Word, the sensitive content that triggered the recommendation is flagged so that users can review and remove the sensitive content instead of applying the recommended sensitivity label.
+
+- For details about how these labels are applied in Office apps, example screenshots, and how sensitive information is detected, see [Automatically apply or recommend sensitivity labels to your files and emails in Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+
+Specific to the Azure Information Protection unified labeling client:
+
+-  Automatic and recommended labeling applies to Word, Excel, and PowerPoint when you save a document, and to Outlook when you send an email.
+
+- For Outlook to support recommended labeling, you must first configure an [advanced policy setting](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook).
+
+- Sensitive information can be detected in the body text in documents and emails, and to headers and footers — but not in the subject line or attachments of email.
 
 ## How multiple conditions are evaluated when they apply to more than one label
 

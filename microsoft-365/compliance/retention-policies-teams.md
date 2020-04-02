@@ -21,6 +21,8 @@ description: "Learn about retention policies that apply to Microsoft Teams."
 
 # Learn about retention policies for Microsoft Teams
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 The information in this article supplements [Learn about retention policies](retention-policies.md) because it has information that's specific to Microsoft Teams.
 
 ## How a retention policy works with Microsoft Teams

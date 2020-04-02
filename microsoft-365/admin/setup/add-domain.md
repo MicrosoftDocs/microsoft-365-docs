@@ -62,7 +62,7 @@ description: "Add your domain to Office 365 in the Microsoft 365 admin center by
 
 ::: moniker-end
     
-2. Go to the **Settings** > **Domains** page. 
+2. Go to the **Setup** > **Domains** page. 
 
 3. Select **Add domain**.
     
@@ -107,4 +107,4 @@ description: "Add your domain to Office 365 in the Microsoft 365 admin center by
 
 [Set up your domain (host-specific instructions)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[Get help with Office 365 domains](../get-help-with-domains/get-help-with-domains.yml)
+[Get help with Office 365 domains](../get-help-with-domains/get-help-with-domains.md)

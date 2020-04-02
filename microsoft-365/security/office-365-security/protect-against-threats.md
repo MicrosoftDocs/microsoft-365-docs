@@ -184,7 +184,7 @@ To learn more about your anti-phishing policy options, see [Set up anti-phishing
 
 4. Click **Save**.
 
-To learn more about your anti-spam policy options, see [Configure the anti-spam policies](configure-the-anti-spam-policies.md).
+To learn more about your anti-spam policy options, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
 ## Part 5 - Additional settings to configure
 

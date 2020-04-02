@@ -21,6 +21,8 @@ description: "Learn about retention policies that apply to SharePoint and OneDri
 
 # Learn about retention policies for SharePoint and OneDrive
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 The information in this article supplements [Learn about retention policies](retention-policies.md) because it has information that's specific to SharePoint and OneDrive.
 
 ## How a retention policy works with SharePoint and OneDrive

@@ -21,6 +21,8 @@ description: "Learn about retention policies that apply specifically to Exchange
 
 # Learn about retention policies for Exchange
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 The information in this article supplements [Learn about retention policies](retention-policies.md) because it has information that's specific to Exchange.
 
 ## How a retention policy works with Exchange locations
