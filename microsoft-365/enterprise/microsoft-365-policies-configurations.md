@@ -42,7 +42,7 @@ For those organizations who do not have Enterprise Mobility + Security E5 licens
 
 Your organization may be subject to regulatory or other compliance requirements, including specific recommendations that may require you to apply policies that diverge from these recommended configurations. These configurations recommend usage controls that have not historically been available. We recommend these controls, because we believe they represent a balance between security and productivity.  
 
-We have done our best to account for a wide variety of organizational protection requirements, but we’re not able to account for all possible requirements or for all the unique aspects of your organization.
+We have done our best to account for a wide variety of organizational protection requirements, but we're not able to account for all possible requirements or for all the unique aspects of your organization.
 
 ## Three tiers of protection
 
@@ -58,7 +58,7 @@ Each industry also has their own set of specialized regulations. Rather than pro
 
 This guidance shows you how to implement protection for identities and devices for each of these tiers of protection. Use this guidance as a starting point for your organization and adjust the policies to meet your organization's specific requirements.
 
-It’s important to use consistent levels of protection across your data, identities, and devices. For example, if you implement this guidance, be sure to protect your data at comparable levels. These architecture models show you which capabilities are comparable.
+It's important to use consistent levels of protection across your data, identities, and devices. For example, if you implement this guidance, be sure to protect your data at comparable levels. These architecture models show you which capabilities are comparable.
 
 **Identity and device protection for Office 365**<br/>
 ![Thumbnail for poster "Identity and device protection for Office 365"](../media/O365_Identity_device_protection_thumb.png)<br/>
@@ -99,15 +99,15 @@ Azure AD provides a full suite of identity management capabilities. For securing
 
 - **[Device registration](/azure/active-directory/devices/overview)**: You register a device into Azure AD to provide an identity to the device. This identity is used to authenticate the device when a user signs in and to apply conditional access rules that require domain-joined or compliant PCs. For this guidance, we use device registration to automatically register domain-joined Windows computers. Device registration is a prerequisite for managing devices with Intune. 
 
-- **[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)**: Azure AD Identity Protection enables you to detect potential vulnerabilities affecting your organization’s identities and configure automated remediation policy to low, medium, and high sign-in risk and user risk. This guidance relies on this risk evaluation to apply conditional access policies for multi-factor authentication. This guidance also includes a conditional access policy that requires users to change their password if high-risk activity is detected for their account.
+- **[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)**: Azure AD Identity Protection enables you to detect potential vulnerabilities affecting your organization's identities and configure automated remediation policy to low, medium, and high sign-in risk and user risk. This guidance relies on this risk evaluation to apply conditional access policies for multi-factor authentication. This guidance also includes a conditional access policy that requires users to change their password if high-risk activity is detected for their account.
 
 ### Microsoft Intune
 
-[Intune](https://docs.microsoft.com/intune/introduction-intune) is Microsoft’s cloud-based mobile device management service. This guidance recommends device management of Windows PCs with Intune and recommends device compliance policy configurations. Intune determines whether devices are compliant and sends this data to Azure AD to use when applying conditional access policies.
+[Intune](https://docs.microsoft.com/intune/introduction-intune) is Microsoft's cloud-based mobile device management service. This guidance recommends device management of Windows PCs with Intune and recommends device compliance policy configurations. Intune determines whether devices are compliant and sends this data to Azure AD to use when applying conditional access policies.
 
 #### Intune app protection
 
-[Intune app protection](https://docs.microsoft.com/intune/app-protection-policy) policies can be used to protect your organization’s data in mobile apps, with or without enrolling devices into management. Intune helps protect Office 365 information, making sure your employees can still be productive, and preventing data loss. By implementing app-level policies, you can restrict access to company resources and keep data within the control of your IT department.
+[Intune app protection](https://docs.microsoft.com/intune/app-protection-policy) policies can be used to protect your organization's data in mobile apps, with or without enrolling devices into management. Intune helps protect Office 365 information, making sure your employees can still be productive, and preventing data loss. By implementing app-level policies, you can restrict access to company resources and keep data within the control of your IT department.
 
 This guidance shows you how to create recommended policies to enforce the use of approved apps and to determine how these apps can be used with your business data.
 
@@ -116,7 +116,7 @@ This guidance shows you how to create recommended policies to enforce the use of
 This guidance shows you how to implement a set of policies to protect access to Office 365, including Exchange Online, SharePoint Online, and OneDrive for Business. In addition to implementing these policies, we recommend you also raise the level of protection for your Office 365 tenant using these resources:
 
 - [Configure your Office 365 tenant for increased security](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): These recommendations apply to baseline security for your Office 365 tenant.
-- [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352): These recommendations include logging, data governance, admin access, and threat protection.
+- [Microsoft 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352): These recommendations include logging, data governance, admin access, and threat protection.
 
 
 ### Windows 10 and Microsoft 365 Apps for enterprise

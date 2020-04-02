@@ -42,7 +42,7 @@ The SIEM server or other similar system should poll the **audit.general** worklo
 
 
 > [!IMPORTANT]
-> You must be a global administrator or have the security administrator role assigned for the Security & Compliance Center to set up SIEM integration with Office 365 Advanced Threat Protection.<br/>Audit logging must be turned on for your Office 365 environment. To get help with this, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+> You must be a global administrator or have the security administrator role assigned for the Security & Compliance Center to set up SIEM integration with Office 365 Advanced Threat Protection.<br/>Audit logging must be turned on for your Microsoft 365 environment. To get help with this, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## Related topics
 
@@ -52,7 +52,7 @@ The SIEM server or other similar system should poll the **audit.general** worklo
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)
 
-[Smart reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Smart reports and insights in the Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
-[Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+[Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
   

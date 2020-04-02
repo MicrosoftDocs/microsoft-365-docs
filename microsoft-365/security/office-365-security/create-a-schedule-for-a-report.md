@@ -26,7 +26,7 @@ In the Security &amp; Compliance Center, several [reports and insights](reports-
 ## Create a schedule for a report
 
 > [!IMPORTANT]
-> Make sure that you have the necessary permissions to perform this task. In general, global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. To learn more about permissions, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> Make sure that you have the necessary permissions to perform this task. In general, global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. To learn more about permissions, see [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
 1. In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard**.
     
@@ -67,7 +67,7 @@ Once you have created a schedule for a report, that report will be delivered via
   
 ## Related topics
 
-[Reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Reports and insights in the Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
 [Manage schedules for reports in the Security &amp; Compliance Center](manage-schedules-for-multiple-reports.md)
   

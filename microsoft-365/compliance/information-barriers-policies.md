@@ -32,7 +32,7 @@ When you define policies for information barriers, you'll work with user account
 
 - User account attributes are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details. 
 
-- Segments are sets of users that are defined in the Office 365 Security & Compliance Center using a selected **user account attribute**. (See the [list of supported attributes](information-barriers-attributes.md).) 
+- Segments are sets of users that are defined in the Security & Compliance Center using a selected **user account attribute**. (See the [list of supported attributes](information-barriers-attributes.md).) 
 
 - Information barrier policies determine communication limits or restrictions. When you define information barrier policies, you choose from two kinds of policies:
     - "Block" policies prevent one segment from communicating with another segment.
@@ -238,7 +238,7 @@ Information barrier policies are not in effect until you set them to active stat
 
     Repeat this step as appropriate for each policy.
 
-3. When you have finished setting your information barrier policies to active status, use the **Start-InformationBarrierPoliciesApplication** cmdlet in the Office 365 Security & Compliance Center.
+3. When you have finished setting your information barrier policies to active status, use the **Start-InformationBarrierPoliciesApplication** cmdlet in the Security & Compliance Center.
 
     Syntax: `Start-InformationBarrierPoliciesApplication`
 

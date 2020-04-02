@@ -46,6 +46,6 @@ Microsoft uses [Distributed Key Manager](office-365-bitlocker-and-distributed-ke
   
 [Technical reference details about encryption in Office 365](technical-reference-details-about-encryption.md)
   
-[Service assurance in the Office 365 Security &amp; Compliance Center](https://go.microsoft.com/fwlink/?linkid=874645)
+[Service assurance in the Security &amp; Compliance Center](https://go.microsoft.com/fwlink/?linkid=874645)
   
 

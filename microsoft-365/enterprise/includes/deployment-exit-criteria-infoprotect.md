@@ -28,7 +28,7 @@ If needed, [Step 3](../infoprotect-configure-increased-security-office-365.md) c
 <a name="crit-infoprotect-step2"></a>
 ### Optional: Classification is configured across your environment
 
-You've worked with your legal and compliance teams to develop an appropriate classification and labeling scheme for your organization’s data governance and security policies. 
+You've worked with your legal and compliance teams to develop an appropriate classification and labeling scheme for your organization's data governance and security policies. 
 
 Those policies correspond to the configuration and deployment of:
 
@@ -56,7 +56,7 @@ If needed, [Step 4](../infoprotect-deploy-windows-information-protection.md) can
 
 You have analyzed, tested, and then rolled out the set of DLP policies—with locations and rules with conditions and actions—that your organization requires to protect customer and other types of private data and to adhere to industry and regional regulations and requirements.
 
-Your data compliance and security staff are using the Office 365 Security & Compliance dashboard to monitor DLP incidents.
+Your data compliance and security staff are using the Security & Compliance dashboard to monitor DLP incidents.
 
 If needed, [Step 5](../infoprotect-data-loss-prevention.md) can help you meet this requirement. 
 

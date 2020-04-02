@@ -28,7 +28,7 @@ The Advanced Spam Filter (ASF) settings in anti-spam policies (also known as spa
 > [!NOTE]
 > Enabling one or more of the ASF settings is an aggressive approach to spam filtering. You can't report messages that are filtered by ASF as false positives. You can identify messages that were filtered by ASF by: <ul><li>Periodic end-user spam quarantine notifications.</li><li>The presence of filtered messages in quarantine.</li><li>The specific `X-CustomSpam:` X-header fields that are added to messages as described in this topic.</li></ul>
 
-The following sections describe the ASF settings and options that are available in anti-spam policies in the Office 365 Security & Compliance Center, and in Exchange Online PowerShell or standalone Exchange Online Protection PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+The following sections describe the ASF settings and options that are available in anti-spam policies in the Security & Compliance Center, and in Exchange Online PowerShell or standalone Exchange Online Protection PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
 ## Enable, disable, or test ASF settings
 
@@ -44,7 +44,7 @@ For each ASF setting, the following options are available in anti-spam policies:
 
   - **Add default X-header text (*AddXHeader*)**: The X-header value `X-CustomSpam: This message was filtered by the custom spam filter option` is added to the message. You can use this value in Inbox rules or mail flow rules (also known as transport rules) to affect the routing and delivery of the message.
 
-  - **Send Bcc message (*BccMessage*)**: The specified email addresses (the *TestModeBccToRecipients* parameter value in PowerShell) are added to the Bcc field of the message, and the message is delivered to the Bcc recipients. In the Office 365 Security & Compliance Center, you separate multiple email addresses by semicolons ( ; ). In PowerShell, you separate multiple email addresses by commas.
+  - **Send Bcc message (*BccMessage*)**: The specified email addresses (the *TestModeBccToRecipients* parameter value in PowerShell) are added to the Bcc field of the message, and the message is delivered to the Bcc recipients. In the Security & Compliance Center, you separate multiple email addresses by semicolons ( ; ). In PowerShell, you separate multiple email addresses by commas.
 
   **Notes**:
 

@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
-description: "Learn how to access Advanced eDiscovery from the Office 365 Security &amp; Compliance Center and review the typical workflow for using Advanced eDiscovery. 
+description: "Learn how to access Advanced eDiscovery from the Security &amp; Compliance Center and review the typical workflow for using Advanced eDiscovery. 
 "
 ---
 
@@ -33,7 +33,7 @@ You access Advanced eDiscovery from the Security &amp; Compliance Center. You ha
   
 To go to a case in Advanced eDiscovery: 
   
-1. [Go to the Office 365 Security &amp; Compliance Center](go-to-the-securitycompliance-center.md) . 
+1. [Go to the Security &amp; Compliance Center](go-to-the-securitycompliance-center.md) . 
     
 2. In the Security &amp; Compliance Center, click **Search &amp; investigation** \> **eDiscovery** to display the list of cases in your organization. 
     

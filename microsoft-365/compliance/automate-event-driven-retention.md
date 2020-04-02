@@ -21,9 +21,9 @@ description: "This topic explains how to set up your business process flows to a
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-The explosion of content in organizations and how it can become ROT (redundant, obsolete, trivial) is serious business. To continue to meet legal, business, and regulatory compliance challenges, organizations must be able to keep and protect important information and quickly find what’s relevant. Retaining only important, pertinent information is key to an organization's success.
+The explosion of content in organizations and how it can become ROT (redundant, obsolete, trivial) is serious business. To continue to meet legal, business, and regulatory compliance challenges, organizations must be able to keep and protect important information and quickly find what's relevant. Retaining only important, pertinent information is key to an organization's success.
 
-To help meet this need, organizations can take advantage of retention solutions in the Office 365 Security & Compliance Center. Retention can be triggered by using [retention labels](labels.md). A retention label has the option to [base the retention period on a specific event](event-driven-retention.md). Typically, the retention period is based on a known date, such as the creation date or last modified date for the content. However, organizations also have requirements to dispose of content based on the occurrence of an event, such as seven years after an employee leaves an organization.
+To help meet this need, organizations can take advantage of retention solutions in the Security &amp; Compliance Center. Retention can be triggered by using [retention labels](labels.md). A retention label has the option to [base the retention period on a specific event](event-driven-retention.md). Typically, the retention period is based on a known date, such as the creation date or last modified date for the content. However, organizations also have requirements to dispose of content based on the occurrence of an event, such as seven years after an employee leaves an organization.
 
 To ensure compliant disposal of content, it's imperative to know when an event takes place. With the volume of content increasing rapidly, it's becoming challenging to retain and dispose content in a timely and compliant manner.
 
@@ -106,7 +106,7 @@ A Rest API is a service endpoint that supports sets of HTTP operations (methods)
 
 ## Example scenarios
 
-Let’s consider the following scenarios.
+Let's consider the following scenarios.
 
 ### Scenario 1: Employees leaving the organization 
 
@@ -114,9 +114,9 @@ An organization creates and stores numerous employee-related documents per emplo
 
 Now if multiple employees leave the organization every day, the organization must trigger the retention clock of hundreds if not thousands of documents each day.
 
-In addition to this, the retention period needs to be calculated for each of these employees as Employee termination date + number of days, months, or years based on the type of the employee record. For example, worker’s compensation of the employee vs. benefits filings of the same employee may need different retention.
+In addition to this, the retention period needs to be calculated for each of these employees as Employee termination date + number of days, months, or years based on the type of the employee record. For example, worker's compensation of the employee vs. benefits filings of the same employee may need different retention.
 
-The diagram below shows how there can be multiple labels that are associated with a single event. Here all the files under Worker’s compensation label and all the files under Employee benefits label are both associated with a single event, which is the employee leaving the organization. Each of these different files has different retention clocks. So, when an employee leaves the organization, these files within each label experience a different retention period. Triggering all these different retention clocks for each file type or label for each employee is a very challenging task. Imagine doing this for multiple employees.
+The diagram below shows how there can be multiple labels that are associated with a single event. Here all the files under Worker's compensation label and all the files under Employee benefits label are both associated with a single event, which is the employee leaving the organization. Each of these different files has different retention clocks. So, when an employee leaves the organization, these files within each label experience a different retention period. Triggering all these different retention clocks for each file type or label for each employee is a very challenging task. Imagine doing this for multiple employees.
 
 ![Diagram of event type, event, and labels](../media/automate-event-driven-retention-event-diagram-employee-leaving.png)
 
@@ -128,21 +128,21 @@ Hence an automated process to trigger these different retention clocks for multi
 
   - Admin creates employee folders to the Document set such as Jane Doe, John Smith.
 
-  - Admin adds employee files such as Benefits, Payroll, Worker’s Compensation to each employee folder.
+  - Admin adds employee files such as Benefits, Payroll, Worker's Compensation to each employee folder.
 
   - Admin assigns Asset ID to each employee folder. 
 
   - SCC Admin logs into the Security & Compliance Center.
 
-  - SCC Admin creates employee-related events types such as “Employee Termination”, “Employee Hire” events.
+  - SCC Admin creates employee-related events types such as "Employee Termination", "Employee Hire" events.
 
-  - SCC Admin creates “Employee Retention” label.
+  - SCC Admin creates "Employee Retention" label.
 
-  - This “Employee Retention” label is published and applied manually or automatically to the employee files in SharePoint.
+  - This "Employee Retention" label is published and applied manually or automatically to the employee files in SharePoint.
 
   - HR Management System like Workday can work with Microsoft Flow to run periodically to manage employee files.
 
-  - If an employee has left the organization, the Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific employee’s files.
+  - If an employee has left the organization, the Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific employee's files.
 
 #### Using Microsoft Flow
 
@@ -201,12 +201,12 @@ Sample code to call the REST API
 </tr>
 <tr class="odd">
 <td>Username</td>
-<td>“Complianceuser”</td>
+<td>"Complianceuser"</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>Password</td>
-<td>“Compliancepassword”</td>
+<td>"Compliancepassword"</td>
 <td></td>
 </tr>
 </tbody>
@@ -231,11 +231,11 @@ Sample code to call the REST API
 <tr class="even">
 <td>&lt;d:EventType&gt;&lt;/d:EventType&gt;</td>
 <td>Enter event type name (or Guid),</td>
-<td>Example: “Employee termination”. Event type has to be associated with a retention label.</td>
+<td>Example: "Employee termination". Event type has to be associated with a retention label.</td>
 </tr>
 <tr class="odd">
 <td>&lt;d:SharePointAssetIdQuery&gt;&lt;/d:SharePointAssetIdQuery&gt;</td>
-<td>Enter “ComplianceAssetId:” + employee Id</td>
+<td>Enter "ComplianceAssetId:" + employee Id</td>
 <td>Example:&quot;ComplianceAssetId:12345&quot;</td>
 </tr>
 <tr class="even">
@@ -291,12 +291,12 @@ Sample code to call the REST API
 </tr>
 <tr class="odd">
 <td>Username</td>
-<td>“Complianceuser”</td>
+<td>"Complianceuser"</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>Password</td>
-<td>“Compliancepassword”</td>
+<td>"Compliancepassword"</td>
 <td></td>
 </tr>
 </tbody>
@@ -316,11 +316,11 @@ Sample code to call the REST API
 
 | Method         | GET   |                      |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
-| URL            | [https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent(‘174e9a86-74ff-4450-8666-7c11f7730f66’)](https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent\('174e9a86-74ff-4450-8666-7c11f7730f66'\)) |                      |
+| URL            | [https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('174e9a86-74ff-4450-8666-7c11f7730f66')](https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent\('174e9a86-74ff-4450-8666-7c11f7730f66'\)) |                      |
 | Header         | Content-Type                                                                                                                                                                                                                                                       | application/atom+xml |
 | Authentication | Basic                                                                                                                                                                                                                                                              |                      |
-| Username       | “Complianceuser”                                                                                                                                                                                                                                                   |                      |
-| Password       | “Compliancepassword”                                                                                                                                                                                                                                               |                      |
+| Username       | "Complianceuser"                                                                                                                                                                                                                                                   |                      |
+| Password       | "Compliancepassword"                                                                                                                                                                                                                                               |                      |
 
 ##### Response codes
 
@@ -339,8 +339,8 @@ Sample code to call the REST API
 | URL            | <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('EventByRESTPost-2226bfebcc2841a8968ba71f9516b763')> |                      |
 | Headers        | Content-Type                                                                                                                                 | application/atom+xml |
 | Authentication | Basic                                                                                                                                        |                      |
-| Username       | “Complianceuser”                                                                                                                             |                      |
-| Password       | “Compliancepassword”                                                                                                                         |                      |
+| Username       | "Complianceuser"                                                                                                                             |                      |
+| Password       | "Compliancepassword"                                                                                                                         |                      |
 
 ##### Response codes
 
@@ -430,15 +430,15 @@ A Customer Relationship Management (CRM) system can work with Microsoft 365 and 
 
   - SCC Admin logs into the Security & Compliance Center.
 
-  - SCC Admin creates contract-related events types such as “Contract Creation”, “Contract Expiration” events.
+  - SCC Admin creates contract-related events types such as "Contract Creation", "Contract Expiration" events.
 
-  - SCC Admin creates “Contract Expiration” label.
+  - SCC Admin creates "Contract Expiration" label.
 
-  - This “ Contract Expiration” label is published and applied manually or automatically to the contract files in SharePoint.
+  - This " Contract Expiration" label is published and applied manually or automatically to the contract files in SharePoint.
 
   - Contract Management System can work with Microsoft Flow or a similar application to run periodically to manage contract files.
 
-  - If a contract expires, Microsoft Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific contract’s files.
+  - If a contract expires, Microsoft Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific contract's files.
 
 ### Scenario 3: End of Product Manufacturing
 
@@ -458,15 +458,15 @@ An Enterprise Resource Planning (ERP) system can work with Microsoft 365 and Mic
 
   - SCC Admin logs into the Security & Compliance Center.
 
-  - SCC Admin creates employee-related events types such as “Start of Product Manufacturing”, “End of Product Manufacturing” events.
+  - SCC Admin creates employee-related events types such as "Start of Product Manufacturing", "End of Product Manufacturing" events.
 
-  - SCC Admin creates “End of Product Manufacturing” label.
+  - SCC Admin creates "End of Product Manufacturing" label.
 
-  - This “ End of Product Manufacturing” label is published and applied manually or automatically to the product files in SharePoint.
+  - This " End of Product Manufacturing" label is published and applied manually or automatically to the product files in SharePoint.
 
   - ERP Systems can work with Microsoft Flow or similar applications to run periodically to manage product files.
 
-  - If the manufacturing of a product ends, Microsoft Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific product’s files.
+  - If the manufacturing of a product ends, Microsoft Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific product's files.
 
 ## Appendix
 
@@ -474,7 +474,7 @@ An Enterprise Resource Planning (ERP) system can work with Microsoft 365 and Mic
 
 1. Invoke a POST retention event call using the REST API URL <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (Global Admin permissions are required)
 
-2. Check the response code. If it’s 302, then get the redirected URL from Location property of the response header
+2. Check the response code. If it's 302, then get the redirected URL from Location property of the response header
 
 3. Invoke the POST retention event call again using the redirected URL.
 

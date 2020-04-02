@@ -44,7 +44,7 @@ The Export history dialog provides detailed information of selected export batch
     
 4. If you want to download data at any time from a previously executed export batch session, click the **Download** icon ![Export batch history download icon](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) next to the desired export batch to be exported. 
     
-5. When the **Shared access signature** dialog is displayed, click **Copy to clipboard** to copy the export session data to the local machine, and then click **Close**. The Office 365 Security &amp; Compliance Center **eDiscovery Export Tool** dialog is displayed. 
+5. When the **Shared access signature** dialog is displayed, click **Copy to clipboard** to copy the export session data to the local machine, and then click **Close**. The Security &amp; Compliance Center **eDiscovery Export Tool** dialog is displayed. 
     
     ![Export eDiscovery dialog](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   

@@ -20,7 +20,7 @@ titleSuffix: Microsoft Compliance
 
 ## About CIS Benchmarks
 
-The [Center for Internet Security](https://www.cisecurity.org/) is a nonprofit entity whose mission is to “identify, develop, validate, promote, and sustain best practice solutions for cyberdefense.” It draws on the expertise of cybersecurity and IT professionals from government, business, and academia from around the world. To develop standards and best practices, including CIS benchmarks, controls, and hardened images, they follow a consensus decision-making model.  
+The [Center for Internet Security](https://www.cisecurity.org/) is a nonprofit entity whose mission is to "identify, develop, validate, promote, and sustain best practice solutions for cyberdefense." It draws on the expertise of cybersecurity and IT professionals from government, business, and academia from around the world. To develop standards and best practices, including CIS benchmarks, controls, and hardened images, they follow a consensus decision-making model.  
   
 [CIS benchmarks](https://www.cisecurity.org/cis-benchmarks/) are configuration baselines and best practices for securely configuring a system. Each of the guidance recommendations references one or more [CIS controls](https://www.cisecurity.org/controls/) that were developed to help organizations improve their cyberdefense capabilities. CIS controls map to many established standards and regulatory frameworks, including the NIST Cybersecurity Framework (CSF) and NIST SP 800-53, the ISO 27000 series of standards, PCI DSS, HIPAA, and others.  
   
@@ -41,7 +41,7 @@ CIS benchmarks are internationally recognized as security standards for defendin
   
 Like all CIS benchmarks, the Microsoft benchmarks were created using a consensus review process based on input from subject matter experts with diverse backgrounds spanning software development, audit and compliance, security research, operations, government, and law. Microsoft was an integral partner in these CIS efforts. For example, Office 365 was tested against the listed services, and the resulting Microsoft 365 Foundations Benchmark covers a broad range of recommendations for setting appropriate security policies that cover account and authentication, data management, application permissions, storage, and other security policy areas.  
   
-In addition to the benchmarks for Microsoft products and services, CIS has also published [CIS Hardened Images for use on Azure virtual machines](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/) configured to meet CIS benchmarks. These include the CIS Hardened Image for Microsoft Windows Server 2016 certified to run on Azure. CIS states that, “All CIS hardened images that are available on the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security) are certified to run on Azure. They have been pre-tested for readiness and compatibility with the Azure public cloud, the Microsoft Cloud Platform hosted by service providers through the Cloud OS Network, and on-premise private cloud Windows Server Hyper-V deployments managed by customers.”
+In addition to the benchmarks for Microsoft products and services, CIS has also published [CIS Hardened Images for use on Azure virtual machines](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/) configured to meet CIS benchmarks. These include the CIS Hardened Image for Microsoft Windows Server 2016 certified to run on Azure. CIS states that, "All CIS hardened images that are available on the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security) are certified to run on Azure. They have been pre-tested for readiness and compatibility with the Azure public cloud, the Microsoft Cloud Platform hosted by service providers through the Cloud OS Network, and on-premise private cloud Windows Server Hyper-V deployments managed by customers."
 
 ## Microsoft in-scope cloud services
 
@@ -63,7 +63,7 @@ Get a [complete list of CIS benchmarks](https://www.cisecurity.org/cis-benchmark
 ## How to implement
 
 - [CIS Benchmark for Azure](https://azure.microsoft.com/mediahandler/files/resourcefiles/cis-microsoft-azure-foundations-security-benchmark/CIS_Microsoft_Azure_Foundations_Benchmark_v1.0.0.pdf): Get prescriptive guidance for establishing a secure baseline configuration for Azure.  
-- [Office 365 security roadmap](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): Minimize the potential of a data breach or compromised account by following this roadmap.
+- [Microsoft 365 security roadmap](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): Minimize the potential of a data breach or compromised account by following this roadmap.
 - [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines): Follow these guidelines for effective use of security baselines in your organization.
 - [CIS Controls Cloud Companion Guide](https://www.cisecurity.org/white-papers/cis-controls-cloud-companion-guide/): Get guidance on applying security best practices in CIS Controls Version 7 to cloud environments.
 
@@ -75,11 +75,11 @@ CIS benchmarks establish the basic level of security for anyone adopting in-scop
 
 **How often are CIS Benchmarks updated?**
 
-The release of revised CIS Benchmarks changes depending on the community of IT professionals who developed it and on the release schedule of the technology the benchmark supports. CIS distributes monthly reports that announce new benchmarks and updates to existing benchmarks. To receive these, register for the [CIS Workbench](https://workbench.cisecurity.org/) (it’s free) and check Receive newsletter in your profile.
+The release of revised CIS Benchmarks changes depending on the community of IT professionals who developed it and on the release schedule of the technology the benchmark supports. CIS distributes monthly reports that announce new benchmarks and updates to existing benchmarks. To receive these, register for the [CIS Workbench](https://workbench.cisecurity.org/) (it's free) and check Receive newsletter in your profile.
 
 **Who contributed to the development of Microsoft CIS Benchmarks?**
 
-CIS notes that its “Benchmarks are developed through the generous volunteer efforts of subject matter experts, technology vendors, public and private CIS Benchmark community members, and the CIS Benchmark Development team.” For example, you’ll find a list of Azure contributors on [CIS Microsoft Azure Foundations Benchmark v1.0.0 Now Available](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/).
+CIS notes that its "Benchmarks are developed through the generous volunteer efforts of subject matter experts, technology vendors, public and private CIS Benchmark community members, and the CIS Benchmark Development team." For example, you'll find a list of Azure contributors on [CIS Microsoft Azure Foundations Benchmark v1.0.0 Now Available](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/).
 
 ## Resources
 

@@ -46,7 +46,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
 ## Upload non-Office 365 content into Advanced eDiscovery
 
 
-1. As an eDiscovery Manager or eDiscovery Administrator, open **eDiscovery**, and open the case that the non-Office 365 data will be uploaded to. If you need to create a case, see [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](ediscovery-cases.md)
+1. As an eDiscovery Manager or eDiscovery Administrator, open **eDiscovery**, and open the case that the non-Office 365 data will be uploaded to. If you need to create a case, see [Manage eDiscovery cases in the Security &amp; Compliance Center](ediscovery-cases.md)
     
 2. Click **Switch to Advanced eDiscovery**
     

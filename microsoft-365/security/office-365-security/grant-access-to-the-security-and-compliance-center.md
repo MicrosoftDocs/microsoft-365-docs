@@ -1,5 +1,5 @@
 ---
-title: "Give users access to the Office 365 Security & Compliance Center"
+title: "Give users access to the Security & Compliance Center"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: "Users need to be assigned permissions in the Office 365 Security & Compliance Center before they can manage any of its security or compliance features."
+description: "Users need to be assigned permissions in the Security & Compliance Center before they can manage any of its security or compliance features."
 ---
 
-# Give users access to the Office 365 Security & Compliance Center
+# Give users access to the Security & Compliance Center
 
-Users need to be assigned permissions in the Office 365 Security & Compliance Center before they can manage any of its security or compliance features. As a global admin or member of the OrganizationManagement role group in the Security & Compliance Center, you can give these permissions to users. Users will only be able to manage the security or compliance features that you give them access to.
+Users need to be assigned permissions in the Security & Compliance Center before they can manage any of its security or compliance features. As a global admin or member of the OrganizationManagement role group in the Security & Compliance Center, you can give these permissions to users. Users will only be able to manage the security or compliance features that you give them access to.
 
-For more information about the different permissions you can give to users in the Security & Compliance Center, check out [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+For more information about the different permissions you can give to users in the Security & Compliance Center, check out [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## What do you need to know before you begin?
 

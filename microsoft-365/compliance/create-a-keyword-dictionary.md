@@ -179,9 +179,9 @@ Keyword dictionaries can be used as part of the match requirements for a custom 
   
 ```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">
-	<Pattern confidenceLevel="75">
-		<IdMatch idRef=". . ."/>
-	</Pattern>
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef=". . ."/>
+    </Pattern>
 </Entity>
 ```
 

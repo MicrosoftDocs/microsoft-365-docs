@@ -39,7 +39,7 @@ Your Office 365 or Microsoft 365 environment includes protection against malware
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your admin account credentials. 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
     
 3. Double-click the default policy to edit this company-wide policy.
     
@@ -129,7 +129,7 @@ To create an ATP anti-phishing policy, watch  [this short training video](https:
   
 1. Go to [https://protection.office.com](https://protection.office.com). 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
     
 3. On the **Policy** page, choose **ATP anti-phishing**.
     
@@ -161,7 +161,7 @@ First, make sure, in the admin center at <a href="https://go.microsoft.com/fwlin
 
    ![The new admin center preview on.](../media/previewon.png)
 
-If you don't see the **Setup** page with cards in your tenant yet, see how to complete these steps in Office 365 Security &amp; Compliance Center. See [Set up ATP safe attachments in the Security & Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) and [Set up ATP Safe Links in the Security & Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
+If you don't see the **Setup** page with cards in your tenant yet, see how to complete these steps in Security &amp; Compliance Center. See [Set up ATP safe attachments in the Security & Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) and [Set up ATP Safe Links in the Security & Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
 
 1.  In the left nav, choose **Setup**.
 2. On the **Setup** page, choose **View** on the **Increase protection from advanced threats** card.</br></br>
@@ -183,7 +183,7 @@ To create an ATP safe attachment policy, either watch [this short video](https:/
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your admin account. 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
     
 3. On the Policy page, choose **ATP safe attachments**.
     
@@ -220,7 +220,7 @@ To set up ATP Safe Links, watch [this short training video](https://support.offi
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your admin account. 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
     
 3. On the Policy page, choose **ATP Safe Links**.
     
@@ -258,7 +258,7 @@ You must be assigned the Audit Logs role in Exchange Online to turn audit log se
 1. To turn on the audit log search on, go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and then choose **Compliance** under **Admin centers** in the left nav. 
 2. On the **Microsoft 365 compliance** page, choose **More resources**, and then **Open** on the **Office 365 security &amp; center** card.
 
-    ![Choose Open on the Office 365 security & compliance cars.](../media/gotosecandcomp.png)
+    ![Choose Open on the security & compliance cars.](../media/gotosecandcomp.png)
 3. On the security and compliance page, choose **Search** and then **Audit log search**.
 1. On the top of the **Audit log search** page, choose **Turn on auditing**.
 

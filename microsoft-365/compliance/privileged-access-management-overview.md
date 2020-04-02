@@ -30,7 +30,7 @@ For a quick overview of the integrated Customer Lockbox and privileged access ma
 
 ## Layers of protection
 
-Privileged access management complements other data and access feature protections within the Office 365 security architecture. Including privileged access management as part of an integrated and layered approach to security provides a security model that maximizes protection of sensitive information and Office 365 configuration settings. As shown in the diagram, privileged access management builds on the protection provided with native encryption of Office 365 data and the role-based access control security model of Office 365 services. When used with [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), these two features provide access control with just-in-time access at different scopes.
+Privileged access management complements other data and access feature protections within the Microsoft 365 security architecture. Including privileged access management as part of an integrated and layered approach to security provides a security model that maximizes protection of sensitive information and Office 365 configuration settings. As shown in the diagram, privileged access management builds on the protection provided with native encryption of Office 365 data and the role-based access control security model of Office 365 services. When used with [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), these two features provide access control with just-in-time access at different scopes.
 
 ![Layered protection in Office 365](../media/pam-layered-protection.png)
 
@@ -46,13 +46,13 @@ Each of the following process flows outline the architecture of privileged acces
 
 ### Step 1: Configure a privileged access policy
 
-When you configure a privileged access policy with the [Microsoft 365 admin center](https://admin.microsoft.com) or the Exchange Management PowerShell, you define the policy and the privileged access feature processes and the policy attributes in the Office 365 substrate. The activities are logged in the Office 365 Security and Compliance Center. The policy is now enabled and ready to handle incoming requests for approvals.
+When you configure a privileged access policy with the [Microsoft 365 admin center](https://admin.microsoft.com) or the Exchange Management PowerShell, you define the policy and the privileged access feature processes and the policy attributes in the Office 365 substrate. The activities are logged in the Security &amp; Compliance Center. The policy is now enabled and ready to handle incoming requests for approvals.
 
 ![Step 1: Policy creation](../media/pam-step1-policy-creation.jpg)
 
 ### Step 2: Access request
 
-In the [Microsoft 365 admin center](https://admin.microsoft.com) or with the Exchange Management PowerShell, users can request access to elevated or privileged tasks. The privileged access feature sends the request to the Office 365 substrate for processing against the configured privilege access policy and records the Activity in the Office 365 Security and Compliance Center logs.
+In the [Microsoft 365 admin center](https://admin.microsoft.com) or with the Exchange Management PowerShell, users can request access to elevated or privileged tasks. The privileged access feature sends the request to the Office 365 substrate for processing against the configured privilege access policy and records the Activity in the Security &amp; Compliance Center logs.
 
 ![Step 2: Access request](../media/pam-step2-access-request.jpg)
 
@@ -64,7 +64,7 @@ An approval request is generated and the pending request notification is emailed
 
 ### Step 4: Access processing
 
-For an approved request, the task is processed by the Exchange Management runspace. The approval is checked against the privileged access policy and processed by the Office 365 substrate. All activity for the task is logged in the Office 365 Security and Compliance Center.
+For an approved request, the task is processed by the Exchange Management runspace. The approval is checked against the privileged access policy and processed by the Office 365 substrate. All activity for the task is logged in the Security &amp; Compliance Center.
 
 ![Step 4: Access processing](../media/pam-step4-access-processing.jpg)
 

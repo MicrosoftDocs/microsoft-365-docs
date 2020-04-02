@@ -28,7 +28,7 @@ This article discusses the steps necessary to set up Advanced eDiscovery. This i
 
 Licensing for Advanced eDiscovery requires the appropriate organization subscription and per-user licensing.
 
-- **Organization subscription:** To access Advanced eDiscovery in the Microsoft 365 compliance center or the Office 365 Security & Compliance Center, your organization must have one of the following:
+- **Organization subscription:** To access Advanced eDiscovery in the Microsoft 365 compliance center or the Security & Compliance Center, your organization must have one of the following:
 
   - Microsoft 365 E5 or Office 365 E5 subscription
   
@@ -51,7 +51,7 @@ Licensing for Advanced eDiscovery requires the appropriate organization subscrip
 
 ## Step 2: Assign eDiscovery permissions
 
-To access Advanced eDiscovery or added as a member of an Advanced eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Office 365 Security & Compliance Center. Members of this role group can create and manage Advanced eDiscovery cases. They can add and remove members, place custodians and content locations on hold, manage legal hold notifications, create and edit searches associated in a case, add search results to a review set, analyze data in a review set, and export and download from an Advanced eDiscovery case.
+To access Advanced eDiscovery or added as a member of an Advanced eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Security & Compliance Center. Members of this role group can create and manage Advanced eDiscovery cases. They can add and remove members, place custodians and content locations on hold, manage legal hold notifications, create and edit searches associated in a case, add search results to a review set, analyze data in a review set, and export and download from an Advanced eDiscovery case.
 
 Complete the following steps to add users to the eDiscovery Manager role group:
 

@@ -31,11 +31,11 @@ Safe Documents is a feature in Office 365 Advanced Threat Protection (ATP) that 
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can perform the procedures in this topic. To enable and configure Safe Documents, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions before you can perform the procedures in this topic. To enable and configure Safe Documents, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## Use the Office 365 Security & Compliance Center to configure Safe Documents
+## Use the Security & Compliance Center to configure Safe Documents
 
-1. Open the Office 365 Security & Compliance Center at <https://protection.office.com>.
+1. Open the Security & Compliance Center at <https://protection.office.com>.
 
 2. Go to **Threat management** \> **Policy** \> **ATP Safe Attachments**.
 
