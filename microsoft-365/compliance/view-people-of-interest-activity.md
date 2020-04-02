@@ -15,8 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: ""
+ms.custom: seo-marvel-mar2020
+description: Use the Data Investigations (Preview) People of interest Management tool in your investigation by accessing and searching the activity for people of interest.
 ---
 # View the audit activity of people of interest
 

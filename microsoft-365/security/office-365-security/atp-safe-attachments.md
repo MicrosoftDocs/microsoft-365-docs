@@ -16,7 +16,6 @@ search.appverid:
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
-ms.custom:
 - seo-marvel-apr2020
 description: "In this article, you'll learn about the ATP Safe Attachments feature for Office 365 and how to get the feature for your subscription."
 ---

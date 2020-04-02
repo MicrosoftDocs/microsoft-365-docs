@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: "In this module, learn about threat protection strategies found through the evolution and trajectory of the Microsoft Security Operations Centers (SOC)."
-ms.custom: seo-marvel-<mar>
+ms.custom: seo-marvel-mar2020
 ---
 
 # CISO Workshop Module 4b: Threat Protection Strategy 

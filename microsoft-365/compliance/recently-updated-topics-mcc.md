@@ -1,5 +1,5 @@
 ---
-title: "What's new in the Microsoft 365 compliance center"
+title: Recent updates in the compliance center
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -15,8 +15,9 @@ search.appverid:
 - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
-- m365-security-compliance 
+- m365-security-compliance
 description: "Just like features in the Microsoft 365 compliance center, our help content is always evolving. We're continuously creating new articles, updating existing ones, and making changes based on your feedback. Find out what's new and updated this month."
+ms.custom: seo-marvel-mar2020
 ---
 
 # Recent updates to Microsoft 365 compliance content

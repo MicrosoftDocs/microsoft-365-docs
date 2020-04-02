@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: "This module contains overviews of cybersecurity topics, such as cybersecurity resilience, critical security hygiene, and the Internet of Things (IoT)."
-ms.custom: seo-marvel-<mar>
+ms.custom: seo-marvel-mar2020
 ---
 
 # CISO Workshop Module 1: Microsoft Cybersecurity Briefing

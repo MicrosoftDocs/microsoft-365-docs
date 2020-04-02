@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to create, define, and choose custodians and custodial locations for a search in an Advanced eDiscovery case.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Create a search

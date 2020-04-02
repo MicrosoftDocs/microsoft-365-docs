@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to manage people of interest to scope your search or view information such as contact, location, and activity logs.
+ms.custom: seo-marvel-mar2020
 ---
 # Manage people of interest in Data Investigations (Preview)
 
@@ -74,7 +75,7 @@ In **People of interest** tab, click on a person that you adeed. In a flyout, yo
 
   - **City**: The city in which the person is located.
   - **State**: The state or province in which the person is located.
-  - **Country/Region**: The country/region in which the person is located; for example, “US” or “UK”.
+  - **Country/Region**: The country/region in which the person is located; for example, "US" or "UK".
   - **Office**: The office location of the person.
 
 - Processing status
