@@ -43,7 +43,7 @@ Before you get started with communication compliance, you should confirm your [M
 - Office 365 Enterprise E5 subscription (paid or trial version)
 - Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions, see note)
 
-Users included in communication compliance policies must must be assigned one of the licenses above.
+Users included in communication compliance policies must be assigned one of the licenses above.
 
 >[!IMPORTANT]
 >Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
