@@ -229,7 +229,7 @@ You must be a Global Admin or a Billing Admin to do the tasks described in this 
   
 4. Update your credit card or bank account information (name on the credit card or bank account, billing address. phone number, or expiration date) as needed, then select **Submit**.
 
-5. A confirmation message appears. If it doesn't, see [Troubleshooting credit cards and bank accounts](#troubleshooting-credit-cards-and-bank-accounts).
+5. A confirmation message appears. If it doesn't, see "Troubleshooting credit cards and bank accounts" later in this article.
 
     ![The confirmation message: "Your payment method was successfully updated."](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
@@ -257,7 +257,7 @@ You must be a Global Admin or a Billing Admin to do the tasks described in this 
   
 4. Update your credit card or bank account information (name on the credit card or bank account, billing address. phone number, or expiration date) as needed, then select **Submit**.
 
-5. A confirmation message appears. If it doesn't, see [Troubleshooting credit cards and bank accounts](#troubleshooting-credit-cards-and-bank-accounts).
+5. A confirmation message appears. If it doesn't, see "Troubleshooting credit cards and bank accounts" later in this article.
 
     ![The confirmation message: "Your payment method was successfully updated."](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
