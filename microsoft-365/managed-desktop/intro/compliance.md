@@ -10,7 +10,11 @@ ms.collection: M365-modern-desktop
 
 # Microsoft Managed Desktop and compliance
 
-The Microsoft Managed Desktop IT-as-a-service cloud service provides a number of compliance offerings to help your organization meet various requirements and standards. Specifically, Microsoft Managed Desktop has achieved these certifications:
+When you use the Microsoft Managed Desktop IT-as-a-service cloud service, Microsoft provides a comprehensive set of compliance offerings. This effort helps your organization comply with the various compliance requirements.
+
+## Compliance offerings
+
+Microsoft Managed Desktop has achieved the following certifications:
 
 - [ISO 27001 Information Security Management Standards](../../compliance/offering-ISO-27001.md)
 - [ISO 27701 Privacy Information Management System (PIMS)](../../compliance/offering-iso-27701.md)
