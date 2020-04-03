@@ -17,7 +17,8 @@ search.appverid:
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
-description: "Quarantine in Office 365 holds potentially dangerous or unwanted messages. Admins and end-users can access quarantine."
+description: Learn about how hosted quarantine holds potentially dangerous or unwanted messages in Exchange Online and Exchange Online Protection.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Quarantine in Office 365

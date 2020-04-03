@@ -14,7 +14,8 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
-description: "Learn how to download one or more existing reports in the Security &amp; Compliance Center."
+description: Learn how to download one or more existing reports in the Security & Compliance Center to mitigate and address threats to your organization.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Download existing reports in the Security &amp; Compliance Center

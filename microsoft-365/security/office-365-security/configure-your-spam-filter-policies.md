@@ -15,7 +15,8 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: "Basic spam filter settings include selecting the action to take on messages that are identified as spam."
+description: Learn how to enable and disable safety tips in email messages in Office 365 and Exchange Online Protection (EOP).
+ms.custom: seo-marvel-apr2020
 ---
 
 # Configure anti-spam policies in Office 365

@@ -12,7 +12,8 @@ localization_priority: Normal
 ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 ms.collection:
 - M365-security-compliance
-description: "As an Office 365 admin, you can turn off the ability for people to report email as junk."
+description: As an Office 365 admin, you can turn off the ability for people to use the built-in reporting options in Outlook on the web to report email as junk.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Turn off junk email reporting in Outlook on the web
