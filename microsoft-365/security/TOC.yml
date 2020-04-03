@@ -286,7 +286,7 @@
               items: 
                 - name: Tune anti-phishing protection
                   href: ./office-365-security/tuning-anti-phishing.md
-                - name: ATP anti-phishing capabilities in Office 365
+                - name: Anti-phishing protection in ATP
                   href: ./office-365-security/atp-anti-phishing.md
                 - name: Set up anti-phishing and ATP anti-phishing policies
                   href: ./office-365-security/set-up-anti-phishing-policies.md
@@ -312,7 +312,8 @@
                   href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
                 - name: End-user spam notifications
                   href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
-            - name: Email validation and authentication
+            - name: Email authentication
+            - href: ./office-365-security/email-validation-and-authentication.md
               items: 
                 - name: How Office 365 uses SPF to prevent spoofing
                   href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md

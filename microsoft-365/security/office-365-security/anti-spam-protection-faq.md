@@ -1,11 +1,11 @@
 ---
-title: "Anti-spam protection in Office 365 FAQ"
+title: "Anti-spam protection FAQ
 f1.keywords:
 - NOCSH
-ms.author: krowley
-author: kccross
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/9/2016
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,16 +15,18 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: "This topic provides frequently asked questions and answers about anti-spam protection. Answers are applicable for Microsoft Exchange Online and Exchange Online Protection (EOP) customers."
+description: "Frequently asked questions and answers for admins about anti-spam protection in Exchange Online and standalone Exchange Online Protection (EOP)."
 ---
 
-# Anti-spam protection in Office 365 FAQ
+# Anti-spam protection FAQ in Office 365
 
 This topic provides frequently asked questions and answers about anti-spam protection for Office 365 customers with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) customers without Exchange Online mailboxes.
 
 For questions and answers about the quarantine, see [Quarantine FAQ](quarantine-faq.md).
 
 For questions and answers about anti-malware protection, see [Anti-malware protection FAQ](anti-malware-protection-faq-eop.md).
+
+For questions and answers about anti-spoofing protection, see [Anti-spoofing protection FAQ](anti-spoofing-protection-faq.md).
 
 ## Q. By default, what happens to a spam-detected message?
 

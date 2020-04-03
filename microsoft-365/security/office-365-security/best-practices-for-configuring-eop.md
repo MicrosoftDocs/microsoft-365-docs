@@ -48,7 +48,7 @@ These settings cover a range of features that are outside of security policies.
 |SMTP Authenticated Submission to mailbox|Disabled|Disabled||
 |EWS connectivity to mailbox|Disabled|Disabled||
 |[PowerShell connectivity](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Disabled|Disabled|Available for mailbox users or mail users (user objects returned by the [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) cmdlet).|
-|Use Spoof Intelligence to whitelist senders whenever possible|Yes|Yes||
+|Use [spoof intelligence](learn-about-spoof-intelligence.md) to whitelist senders whenever possible|Yes|Yes||
 |Directory-Based Edge Blocking (DBEB)|Enabled|Enabled|Domain Type = Authoritative|
 |[Set up multi-factor authentication for all admin accounts](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Enabled|Enabled||
 

@@ -47,9 +47,9 @@ If you are an Office 365 customer you can manage this feature through the Office
 
     ![Editing unauthenticated senders in the graphic interface.](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
-- If an admin has identified a false positive, and a sender should not be receiving the unverified sender treatment, one of the following actions can be taken to add the sender to the Spoof Intelligence spoof allow list:
+- If an admin has identified a false positive, and a sender should not be receiving the unverified sender treatment, one of the following actions can be taken to add the sender to the spoof intelligence spoof allow list:
 
-  - Add the domain pair through the Spoof Intelligence Insight. For details, see [Walkthrough: spoof intelligence insight](walkthrough-spoof-intelligence-insight.md).
+  - Add the domain pair through the Spoof Intelligence insight. For details, see [Walkthrough: spoof intelligence insight](walkthrough-spoof-intelligence-insight.md).
 
   - Add the domain pair through the **Set-PhishFilterPolicy** cmdlet in Exchange Online PowerShell. For details, see [Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) and [Set up Office 365 ATP anti-phishing and anti-phishing policies](set-up-anti-phishing-policies.md).
 
@@ -57,17 +57,17 @@ Additionally, we don't apply the unverified sender treatment if the message was 
 
 ## How to manage the 'via' tag 
 
-If you are an Office 365 customer you can manage this feature through the Office 365 Security & Compliance center, the same way that you manage the unverified sender treatment. If you add the sender to the Spoof Intelligence spoof allow list, the 'via' treatment will not be applied.
+If you are an Office 365 customer you can manage this feature through the Office 365 Security & Compliance center, the same way that you manage the unverified sender treatment. If you add the sender to the spoof intelligence spoof allow list, the 'via' treatment will not be applied.
 
 ## Frequently asked questions
 
 ### What criteria does Outlook.com and Outlook Win32 desktop use to add the '?' and the 'via' properties?
 
-For the '?' in the sender image:  Outlook.com requires that the message pass either SPF or DKIM authentication and receive either a dmarc pass, or a composite authentication pass from Office 365 Spoof Intelligence. For details, see [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) and [Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md).
+For the '?' in the sender image:  Outlook.com requires that the message pass either SPF or DKIM authentication and receive either a dmarc pass, or a composite authentication pass from Office 365 spoof intelligence. For details, see [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) and [Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md).
 
 For the via tag: If the domain in the From address is different from the domain in the DKIM signature or the SMTP MAIL FROM, Outlook.com displays the domain in one of those two fields (preferring the DKIM signature).
 
-### How do I remove the '?' without utilizing the Spoof Intelligence spoof allow list?
+### How do I remove the '?' without utilizing the spoof intelligence spoof allow list?
 
 For the '?' in the sender image: As a sender, you should authenticate your message with either SPF or DKIM.
 
