@@ -19,7 +19,7 @@ description: Windows 7 to Windows 10 automated upgrades for large organizations
 
 # Windows 7 to Windows 10 automated in-place upgrades for large organizations
 
-Starting January 14, 2020, security updates or support for PCs running Windows 7 will no longer be provided. With just a months left to shift from Windows 7 to Windows 10 and multiple options to deploy, a common question in the IT community is, “What’s the fastest way to move from Windows 7 to Windows 10?” The short answer is to perform in-place upgrades for existing PCs and in doing that you can reduce focus on several aspects of the desktop deployment process.
+As of January 14, 2020, security updates or support for PCs running Windows 7 are no longer provided. For the shift from Windows 7 to Windows 10 with multiple options to deploy, a common question in the IT community is, “What’s the fastest way to move from Windows 7 to Windows 10?” The short answer is to perform in-place upgrades for existing PCs and in doing that you can reduce focus on several aspects of the desktop deployment process.
 
 <center><img src="../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
@@ -33,7 +33,7 @@ The grayed-out tasks in the deployment process wheel graphic above are not items
 
 ## In-place upgrade reliability, safeguards, and scale
 
-In-place upgrades to Windows 10 are a reliable approach for moving an existing device running Windows 7 or newer to Windows 10, without requiring file migration or application reinstallation. After an in-place upgrade, the user’s files, settings and available apps are consistent with their previous Windows 7 installation. While you might want to take this opportunity to clean-up existing apps or settings, realistically as we get closer to the Windows 7 end of support date in January 2020, time is running out to pursue other options. Upgrades also work when moving from like-to-like architectures (32-bit to 32-bit or 64-bit to 64-bit) and like-to-like editions of Windows (Professional to Pro or Enterprise to Enterprise).
+In-place upgrades to Windows 10 are a reliable approach for moving an existing device running Windows 7 or newer to Windows 10, without requiring file migration or application reinstallation. After an in-place upgrade, the user’s files, settings and available apps are consistent with their previous Windows 7 installation. Upgrades also work when moving from like-to-like architectures (32-bit to 32-bit or 64-bit to 64-bit) and like-to-like editions of Windows (Professional to Pro or Enterprise to Enterprise).
 
 The upgrade process by default backs-up your previous Windows installation as part of upgrade, so that in the event of an upgrade failure or if a device or application doesn’t function properly post-upgrade, the computer can roll back to Windows 7. Upgraded PCs by default have 10 days so you can manually initiate a roll back to Windows 7 if necessary.
 
