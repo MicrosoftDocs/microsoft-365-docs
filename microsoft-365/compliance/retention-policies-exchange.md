@@ -77,7 +77,7 @@ If a user leaves your organization and the user's mailbox is included in a reten
 
 ## How to configure a retention policy for Exchange
 
-See [How to create and edit retention policies](retention-policies.md#how-to-create-and-edit-retention-policies).
+See [Create and configure retention policies to automatically retain or delete content](create-retention-policies.md).
 
 For the **Choose locations** page of the wizard, select one of the following options:
 
