@@ -137,6 +137,9 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
 
 5. (Optional) Expand the **Recipient Limits** section to configure the limits and actions for suspicious outbound email messages:
 ]
+     > [!NOTE]
+     > These settings are only applicable to cloud based mailboxes.
+     
    - **Maximum number of recipients per user**
 
      A valid value is 0 to 10000. The default value is 0, which means the service defaults are used. For more information, see [Sending limits across Office 365 options](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
@@ -160,7 +163,7 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
      - **Restrict the user from sending mail**: Email notifications are sent, the user is added to the **[Restricted Users]<https://sip.protection.office.com/restrictedusers>** portal in the Security & Compliance Center, and the user can't send email until they're removed from the **Restricted Users** portal by an admin. After an admin removes the user from the list, the user won't be restricted again for that day. For instructions, see [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).
 
      - **No action, alert only**: Email notifications are sent.
-
+     
 6. (Required) Expand the **Applied to** section to identify the internal senders that the policy applies to.
 
     You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<sender1\>_ or _\<sender2\>_). Different conditions or exceptions use AND logic (for example, _\<sender1\>_ and _\<member of group 1\>_).
