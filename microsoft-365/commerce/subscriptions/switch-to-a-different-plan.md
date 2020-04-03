@@ -33,18 +33,21 @@ When your business changes, or you need more features, you can switch plans.
 The easiest way to switch plans is to use the **Switch plans** button in the admin center. However, using the **Switch plans** button isn't supported in all situations. In some cases, you might be able to switch plans manually.
 
 ::: moniker range="o365-worldwide"
+
 > [!NOTE]
-> This article applies to the old admin center. To view the article about the new admin center, see [Upgrade to a different plan](upgrade-to-different-plan.md). The new admin center is available to all Microsoft 365 admins, and you can opt in by selecting the **Try the new admin center** toggle located at the top of the Home page. For more information, see[About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md) 
+> This article applies to the old admin center. To view the article about the new admin center, see [Upgrade to a different plan](upgrade-to-different-plan.md). The new admin center is available to all Microsoft 365 admins. For more information, see[About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md).
+
 ::: moniker-end
 
 **Need something else?**
+
 - [Cancel your subscription](cancel-your-subscription.md)
 - [Upgrade Office 365 for home to a business subscription](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [Call Microsoft Support](../../admin/contact-support-for-business-products.md)
 
 ## Use the Switch plans button
 
-When you use the **Switch plans** button, you're led through the process of buying a new plan that you can switch your current plan to, all users are automatically assigned licenses in the new plan, and your old plan is canceled for you. 
+When you use the **Switch plans** button, you're led through the process of buying a new plan that you can switch your current plan to, all users are automatically assigned licenses in the new plan, and your old plan is canceled for you.
   
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Subscriptions</a> page.
 
@@ -80,7 +83,7 @@ When you use the **Switch plans** button, the plans that you can switch to are d
   
 To compare plans before switching, see the [Office 365 for business product comparison](https://go.microsoft.com/fwlink/p/?linkid=842056) page. For technical specifications, see [Office 365 Service Descriptions](https://go.microsoft.com/fwlink/p/?linkid=842275).
   
-If you want to switch to a plan with fewer services, you can [switch plans manually](switch-plans-manually.md), or [Call Microsoft Support](../../admin/contact-support-for-business-products.md) for help.
+If you want to switch to a plan with fewer services, you can [switch plans manually](switch-plans-manually.md), or [call Microsoft Support](../../admin/contact-support-for-business-products.md) for help.
   
 ## Why some switches take longer
 
@@ -90,4 +93,4 @@ If you want to switch to a plan with fewer services, you can [switch plans manua
   
 ## Call support to help you switch plans
 
-![Phone](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) [Call support](../../admin/contact-support-for-business-products.md)
+[Call support](../../admin/contact-support-for-business-products.md)
