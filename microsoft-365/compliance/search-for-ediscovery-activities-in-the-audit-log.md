@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/24/2017
+ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,7 +16,7 @@ ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: "Learn how to search the Office 365 audit log for events that are logged when compliance administrators perform Content Search and eDiscovery case tasks in the Security & Compliance Center."
 ---
 
-# Search for eDiscovery activities in the Office 365 audit log
+# Search for eDiscovery activities in the audit log
 
 Content Search and eDiscovery-related activities that are performed in Security & Compliance Center or by running the corresponding PowerShell cmdlets are logged in the Office 365 audit log. Events are logged when administrators or eDiscovery managers (or any user assigned eDiscovery permissions) perform the following Content Search and Core eDiscovery tasks in the Security & Compliance Center:
   
