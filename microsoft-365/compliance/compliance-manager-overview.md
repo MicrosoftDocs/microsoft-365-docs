@@ -71,11 +71,11 @@ By default, Compliance Manager creates the following Assessments for your organi
 - Office 365 NIST 800-53
 - Office 365 GDPR
 
-Assessments include several components:
+Assessments have several components:
   
 - **In-Scope Services**: Each assessment applies to a specific set of Microsoft services.
 - **Microsoft-managed controls**: For each cloud service, Microsoft implements and manages a set of compliance controls for applicable standards and regulations.
-- **Customer-managed controls**: These collection of controls are implemented by your organization when you take actions for each control.
+- **Customer-managed controls**: These controls are implemented by your organization when you take actions for each control.
 - **Assessment Score**: The percentage of the total possible score for customer-managed controls in the Assessment. This helps you track the implementation of the Actions assigned to each control.
 
 ## Controls

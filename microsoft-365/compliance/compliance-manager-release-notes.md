@@ -18,7 +18,7 @@ description: "Microsoft Compliance Manager is a free workflow-based risk assessm
 
 # Microsoft Compliance Manager (preview) release notes
 
-The public preview of Compliance Manager provides you with early access to upcoming functionality and updates. This page contains updates on new features and functionality, as well as known issues with the current release.
+The public preview of Compliance Manager provides you with early access to upcoming functionality and updates. This page contains updates on new features, improved functionality, and known issues with the current release.
 
 You can use the [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) tool on the [Service Trust Portal](https://servicetrust.microsoft.com) to track, assign, and verify regulatory compliance activities related to Microsoft cloud services.
 
@@ -42,7 +42,7 @@ View detailed instructions on [creating templates](working-with-compliance-manag
 
 ## Versioning notice and control
 
-Your organization received updated assessments in the April 2020 release of Compliance Manager to help you align with certification and regulation updates. Moving forward, we will provide a clear way for you to understand and accept all future updates through **versioning alerts**.
+Your organization received updated assessments in the April 2020 release of Compliance Manager to help you align with certification and regulation updates. Moving forward, we'll provide a clear way for you to understand and accept all future updates through **versioning alerts**.
 
 Whenever an update is available for an assessment's template or an improvement action, an alert icon notifies you that an update is ready. When you click on that icon, a pop-up window explains the update and prompts you to accept. Selecting the alert icon reveals a flyout pane explaining the update and prompting you to accept. Learn more about [accepting updates to assessments](working-with-compliance-manager.md#versioning-alerts-for-assessment-updates).
 

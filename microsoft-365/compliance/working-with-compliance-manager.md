@@ -116,7 +116,7 @@ Follow the steps below to create a group:
 2. From the **Assessment** flyout pane, enter a title for your Assessment and select a template from the drop-down menu.
 3. At **Please select a group or add a new group**, select **Add a new group** and enter your group name in the field below.
 4. To copy information from an existing group, toggle the **Would you like to copy the data from an existing group?** switch to **On.** Select the group you want to copy from the drop-down menu underneath, and select the checkboxes of any fields you want to carry over to the new Assessment in your new group.
-5. Select **Save**. When completed, the flyout pane closes and your new group automatically displays on your dashboard.
+5. Select **Save**. When completed, the flyout pane closes and you'll see your new group on your dashboard.
 
 What to know when working with groups:
   
@@ -302,7 +302,7 @@ We strongly recommend accepting all updates when you receive update notification
 
 ### Export an Assessment
 
-You can export an Assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators. The report is a snapshot of the Assessment as of the date and time that the report is created. The report contains the details for all Microsoft and customer-managed controls for the Assessment, control implementation status, control test date, test results, and provides links to uploaded evidence documents. You should export the Assessment report prior to archiving an assessment because archived assessments do not retain links to uploaded documents.
+You can export an Assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators. The report is a snapshot of the Assessment as of the date and time that the report is created. The report contains the details for all Microsoft and customer-managed controls for the Assessment, control implementation status, control test date, test results, and provides links to uploaded evidence documents.
   
 ### Export an Assessment report
   
@@ -319,7 +319,7 @@ When you are finished with a Template or Assessment and no longer need it for co
 ![Compliance Manager Hidden Template View](../media/compliance-manager-hidden-template.png "Compliance Manager hidden template")
 
 > [!IMPORTANT]
-> Hidden Assessments do not retain their links to uploaded evidence documents. It is highly recommended that you export the Assessment before hiding it to retain links to the evidence documents in the report.
+> Hidden Assessments don't retain their links to uploaded evidence documents. We highly recommended that you export an Assessment before hiding it to retain links to evidence documents in the report.
   
 #### Hiding a Template
 
@@ -388,7 +388,7 @@ This function enables an organization to remove any active or outstanding depend
 
 #### Common Action Items synch status across Groups
 
-If your organization has multiple groups of assessments, there is a behavior of Technical actions (that is, actions affecting your entire organization). Any duplicate actions across groups are now combined into one single action. That single action contains all uploaded notes and evidence from previously duplicate versions. Any change made to the action in one group or assessment will be reflected in all instances of that action. The **Implementation Status**, **Implementation Date**, **Test Status**, and **Test Date** reflects the most recent updates.
+If your organization has multiple groups of assessments, there is a behavior of Technical actions (that is, actions affecting your entire organization). Any duplicate actions across groups are now combined into one single action. That single action contains all uploaded notes and evidence from previously duplicate versions. Any change made to the action in one group or assessment will be reflected in all instances of that action. The **Implementation Status**, **Implementation Date**, **Test Status**, and **Test Date** fields reflect the most recent updates.
 
 ## Templates
 
@@ -569,7 +569,7 @@ Compliance Manager (Preview) supports exporting Templates to JavaScript Object N
 
 ## Reports
 
-You can export an Assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators. The report is a snapshot of the Assessment as of the date and time of the export. The report contains the details for Microsoft and customer-managed controls for the Assessment, control implementation status, control test date, test results, and links to uploaded evidence documents. We recommend exporting Assessments before archiving them, because archived Assessments don't retain links to uploaded documents.
+You can export an Assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators. The report is a snapshot of the Assessment as of the date and time of the export. The report contains the details for Microsoft and customer-managed controls for the Assessment, control implementation status, control test date, test results, and links to uploaded evidence documents. Because hidden Assessments don't retain links to uploaded documents, you should export the Assessment before you hide it.
 
 ### Export an Assessment
 
