@@ -194,9 +194,9 @@ Quick links for the most common admin tasks in Microsoft 365.
                 <div class="card">
                     <div class="cardText">
                         <h3>Yammer</h3>
-                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/office-365-sign-in">Office 365 sign-in for Yammer</a></p>
-                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle">Manage Yammer users from Office 365</a></p>
-                            <p><a href="https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity">Enforce Office 365 identity for Yammer users</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/office-365-sign-in">Microsoft 365 sign-in for Yammer</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle">Manage Yammer users from Microsoft 365</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity">Enforce Microsoft 365 identity for Yammer users</a></p>
                             <p><a href="https://docs.microsoft.com/yammer/integrate-yammer-with-other-apps/embed-a-feed-into-a-sharepoint-site">Embed a Yammer feed into a SharePoint site</a></p>
                             <p><b>More tasks:</b> <a href="https://docs.microsoft.com/yammer/yammer-landing-page">Yammer admin HELP</a></p>
                     </div>
