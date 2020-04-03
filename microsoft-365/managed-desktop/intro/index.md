@@ -70,7 +70,7 @@ Primarily for technical and business decision makers, these topics detail the di
 - [Microsoft Managed Desktop roles and responsibilities](roles-and-responsibilities.md)
 - [Microsoft Managed Desktop technologies](technologies.md)
 - [Microsoft Managed Desktop and ITIL](../MMD-and-ITSM.md)
-- [Microsoft Managed Desktop and compliance](compliance.md)
+- [Compliance](compliance.md)
 - [Microsoft Managed Desktop service description](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
 **Get ready for enrollment**
