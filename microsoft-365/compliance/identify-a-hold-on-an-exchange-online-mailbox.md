@@ -37,7 +37,7 @@ Office 365 offers several ways that your organization can prevent mailbox conten
     - **Specific location retention policies:** These are policies that are assigned to the content locations of specific users. You use the **Get-Mailbox** cmdlet in Exchange Online PowerShell to get information about retention policies assigned to specific mailboxes.
 
     - **Organization-wide retention policies:** These are policies that are assigned to all content locations in your organization. You use the **Get-OrganizationConfig** cmdlet in Exchange Online PowerShell to get information about organization-wide retention policies.
-  For more information, see the "Applying a retention policy to an entire organization or specific locations" section in [Overview of Office 365 retention policies](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+  For more information, see the "Applying a retention policy to an entire organization or specific locations" section in [Overview of Office 365 retention policies](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
 - **[Office 365 retention labels](labels.md):** If a user applies an Office 365 retention label (one that's configured to retain content or retain and then delete content) to *any* folder or item in their mailbox, a hold is placed on the mailbox as if the mailbox was placed on Litigation Hold or assigned to an Office 365 retention policy. For more information, see the [Identifying mailboxes on hold because a retention label has been applied to a folder or item](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) section in this article.
 
@@ -93,7 +93,7 @@ The following table describes the different types of organization-wide holds and
 |Office 365 retention policies applied to Exchange mailboxes, Exchange public folders, and Teams chats    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   Organization-wide retention policies applied to Exchange mailboxes, Exchange public folders, and 1xN chats in Microsoft Teams are identified by GUIDs that start with the `mbx` prefix. Note 1xN chats are stored in the mailbox of the individual chat participants.      |
 |Office 365 retention policy applied to Office 365 Groups and Teams channel messages     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    Organization-wide retention policies applied to Office 365 groups and channel messages in Microsoft Teams are identified by GUIDs that start with the `grp` prefix. Note channel messages are stored in the group mailbox that is associated with a Microsoft Team.     |
 
-For more information retention policies applied to Microsoft Teams, see the "Teams location" section [Overview of retention policies](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+For more information retention policies applied to Microsoft Teams, see the "Teams location" section [Overview of retention policies](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
 ### Understanding the format of the InPlaceHolds value for retention policies
 
@@ -113,7 +113,7 @@ The following table defines the three possible retention actions:
 |**2**    |    Indicates that the retention policy is configured to hold items. The policy doesn't delete items after the retention period expires.     |
 |**3**     |   Indicates that the retention policy is configured to hold items and then delete them after the retention period expires.      |
 
-For more information about retention actions, see the "Retaining content for a specific period of time" section in [Overview of retention policies](retention-policies.md#retaining-content-for-a-specific-period-of-time).
+For more information about retention actions, see the "Retaining content for a specific period of time" section in [Overview of retention policies](create-retention-policies.md#retaining-content-for-a-specific-period-of-time).
    
 ## Step 2: Use the GUID to identify the hold
 

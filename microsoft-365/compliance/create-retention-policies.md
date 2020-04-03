@@ -51,7 +51,7 @@ These permissions are required only to create and apply a retention policy. The 
 
 5. Complete the wizard to save your settings.
 
-When you have more than one retention policy, see [The principles of retention, or what takes precedence?](#the-principles-of-retention-or-what-takes-precedence) on this page.
+When you have more than one retention policy, see [The principles of retention, or what takes precedence?](retention-policies.md#the-principles-of-retention-or-what-takes-precedence) on this page.
 
 ### Configuration information for Office 365 groups
 
@@ -212,7 +212,7 @@ To use the retention policies cmdlets:
 
 ## Lock a retention policy by using PowerShell
 
-You must use PowerShell if you need to need to use [Preservation Lock](retention-policies.md#use=preservation-lock-to-comply-with-regulatory-requirements) to comply with regulatory requirements.
+You must use PowerShell if you need to need to use [Preservation Lock](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements) to comply with regulatory requirements.
 
 1. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 

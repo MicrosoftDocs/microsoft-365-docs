@@ -70,7 +70,7 @@ We're continuously working on optimizing retention functionality in Teams, and w
     
 - **Teams aren't included in an org-wide policy**. If you create an org-wide policy, Teams are not included because they require a separate retention policy. 
     
-- **Teams doesn't support advanced retention**. When you create a retention policy, if you choose the [Advanced settings to identify content that meets specific conditions](retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), the Teams location is not available. At this time, retention in Teams applies to all of the chat and channel message content. 
+- **Teams doesn't support advanced retention**. When you create a retention policy, if you choose the [Advanced settings to identify content that meets specific conditions](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), the Teams location is not available. At this time, retention in Teams applies to all of the chat and channel message content. 
 
 - **Teams content in private channels isn't supported**. At this time, retention policies created for Teams don't apply to private channel messages. Only messages in standard channels are subject to a retention policy created for Teams. Support for retention policies for private channels is coming soon. 
     
