@@ -24,7 +24,7 @@ description: "Learn how to get a Microsoft 365 Apps for Enterprise usage report 
 
 The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
   
-For example, you can understand the activity of each user licensed to user ProPlus clients by looking at their activity across the apps and how they are utilized across platforms.  
+For example, you can understand the activity of each user licensed to use Microsoft 365 Apps for Enterprise apps by looking at their activity across the apps and how they are utilized across platforms.  
   
 > [!NOTE]
 > You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, or Skype for Business administrator to see reports. 
