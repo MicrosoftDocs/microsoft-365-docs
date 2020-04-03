@@ -29,7 +29,7 @@ description: "Learn how to route traffic to an existing public website hosted ou
  **If Office 365 manages your DNS records**, to route traffic to an existing public website hosted outside of Office 365, after you add your domain to Office 365, do the following: 
   
 ## Update DNS records in the Microsoft 365 admin center
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
+1. In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
 2. On the **Domains** page, in the list of domains, select the domain you're using for your website, and then select **DNS settings** in the management pane. 
     
