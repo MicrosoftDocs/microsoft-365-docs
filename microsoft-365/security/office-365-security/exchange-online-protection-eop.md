@@ -11,7 +11,8 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
-description: "Here are a few things you should be aware of before you start working with EOP."
+description: Learn about the Microsoft Exchange Online Protection (EOP) hosted email filtering service, including how to set up your EOP service.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Exchange Online Protection

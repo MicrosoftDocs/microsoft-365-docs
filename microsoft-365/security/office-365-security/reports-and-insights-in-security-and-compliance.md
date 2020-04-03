@@ -16,7 +16,8 @@ search.appverid:
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection: 
 - M365-security-compliance
-description: "Get an overview of reports and insights avialable in the Security &amp; Compliance Center."
+description: Learn about the smart reports and insights available in the Security and Compliance Center, and how to use them to view and explore data and take quick actions.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Smart reports and insights in the Office 365 Security &amp; Compliance Center

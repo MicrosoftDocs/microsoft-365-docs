@@ -10,7 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: "Admins can learn about the mail flow dashboard in the Security & Compliance Center."
+description: Admins can learn about the mail flow dashboard in the Security & Compliance Center, including insights, reports, and widgets.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Mail flow insights in the Security & Compliance Center

@@ -1,5 +1,5 @@
 ---
-title: "Set an expiration date for email encrypted by Office 365 Advanced Message Encryption"
+title: Set expiration date for email encrypted by Office 365 Advanced Message Encryption
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,6 +16,7 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "With Office 365 Advanced Message Encryption capabilities on top of Office 365 Message Encryption (OME), you can extend your email security by setting an expiration date on emails through a custom branded template."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Set an expiration date for email encrypted by Office 365 Advanced Message Encryption

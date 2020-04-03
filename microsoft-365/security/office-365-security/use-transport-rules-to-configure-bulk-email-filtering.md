@@ -14,7 +14,8 @@ search.appverid:
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn how to use mail flow rules in Exchange Online Protection for bulk email filtering."
+description: Admins can learn how to use mail flow rules in Exchange Online Protection (EOP) for bulk email filtering.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Use mail flow rules to filter bulk email in Office 365
