@@ -297,9 +297,9 @@ You can keep using the initial onmicrosoft.com domain even after you add your do
 ::: moniker range="o365-germany"
 ## Why do I have an "onmicrosoft.de" domain?
 
-Office 365 creates a domain for you, like *contoso.onmicrosoft.de*, when you sign up with the service. The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.de*. 
+Office 365 creates a domain for you, like _contoso.onmicrosoft.de_, when you sign up with the service. The user ID that you create when you sign up includes the domain, like _alan@contoso.onmicrosoft.de_. 
   
- **If you want to have your email look like *alan@contoso.de*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Office 365](add-domain.md) if you own it already. 
+ __If you want to have your email look like _alan@contoso.de_:__ [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Office 365](add-domain.md) if you own it already. 
   
 - **You can't rename the onmicrosoft domain after sign-up.** For example, if the initial domain you chose was fourthcoffee.onmicrosoft.de, you can't change it to be fabrikam.onmicrosoft.de. To use a different onmicrosoft.de domain, you'd have to start a new subscription with Office 365. 
     
