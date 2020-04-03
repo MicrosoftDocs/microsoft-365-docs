@@ -16,19 +16,21 @@ search.appverid:
 description: "Learn how to use the workflow tools in Microsoft Compliance Score to help you manage compliance for your organization."
 ---
 
-# Working with Microsoft Compliance Score (Preview)
+# Working with Microsoft Compliance Score (preview)
 
-## Managing your workflow with improvement actions
+This article explains how to work with the key elements of Compliance Score. You'll learn how to use **improvement actions** to manage your compliance workflow. You'll also learn how to use the information on your **Solutions** and **Assessments** pages, and how to produce reports.
 
-Using improvement actions in Compliance Score centralizes your compliance workflows. Improvement actions suggest recommended actions to align with data protection regulations and standards, and provide detailed implementation guidance. You can assign them to users to perform the necessary implementation and testing work. You can also store documentation and notes, and record status updates right in the improvement action itself.
+## Manage your workflow with improvement actions
+
+**Improvement actions** centralize your compliance activities. Each improvement action gives detailed implementation guidance to help you align with data protection regulations and standards. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
 
 ## View your improvement actions
 
-The Compliance Score dashboard shows your **key improvement actions**—the ones with the most available points which address the most important issues.
+The Compliance Score dashboard shows your **key improvement actions**—the ones with the most available points that address the most important issues.
 
-To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, or select **View all improvement actions** underneath the list of key improvement actions on your dashboard. This brings you to the the **Improvement actions** page, where you can see all of your organization’s improvement actions.
+To view all of your improvement actions on your  **Improvement actions** page, select the **Improvement actions** tab on your dashboard. Or, select **View all improvement actions** underneath the list of key improvement actions on your dashboard.
 
-If you have a long list of actions, it may be helpful to filter your view. To do this, select **Filter** at the upper-right corner of the actions list. When the **Filters** flyout pane appears, then select your desired criteria based on regulations and standards, solution, and group. You can also customize your view by selecting **Group** in the upper-right corner and, from the drop-down menu, select to view by group, solution, category, action type, or status.
+If you have a long list of actions, it may be helpful to filter your view. Select **Filter** at the upper-right corner of the actions list. When the **Filters** flyout pane appears, select your criteria based on regulations and standards, solution, and group. You can also customize your view by selecting **Group** in the upper-right corner. From the drop-down menu, select to view by group, solution, category, action type, or status.
 
 The default view for this page does not show improvement actions with a test status of **Passed**. To view actions that have passed testing, check the **Passed** box in the **Filters** flyout pane. Only actions with a test status of **Passed** count toward your score.
 
@@ -39,7 +41,7 @@ The improvement actions page shows the following data points for each improvemen
 - **Group**: the group to which you assigned the action
 - **Solutions**: the solution where you can go to perform the action
 - **Assessments**: the assessment  (which organizes controls to meet a certain compliance objective) in which the action resides
-- **Categories**: the related data protection category (i.e., protect information, manage devices, etc.)
+- **Categories**: the related data protection category (such as, protect information, manage devices, etc.)
 - **Test status**:
     - **None** - no status update recorded
     - **Not assessed** - testing has not started
@@ -51,9 +53,9 @@ The improvement actions page shows the following data points for each improvemen
 
 ### Improvement actions details
 
-Each improvement action has a details page. This page contains detailed implementation instructions, which explain how to take the recommended actions to address the related standards and regulatory requirements listed under the **At a glance** header.
+Each improvement action has a details page. This page has detailed implementation instructions for completing recommended actions to address the related standards and regulatory requirements listed under the **At a glance** header.
 
-The details page is where you can launch the recommended action or assign the work to another user, update status, and attach notes and documentation.
+The details page is where you can launch the recommended action. You can also assign the work to another user, update status, and attach notes and documentation.
 
 To view an improvement action's details page:
 
@@ -68,7 +70,7 @@ To begin implementation work on an improvement action, you can do the work yours
 
 - A business policy owner
 - An IT implementer
-- Another employee with responsibility to perform the task 
+- Another employee with responsibility to perform the task
 
 Once the proper person is identified, be sure they hold a sufficient [role](compliance-score-setup.md#set-user-permissions-and-assign-roles) in Compliance Score (compliance administrator, compliance data administrator, security administrator, or global administrator) to perform the work, then take the following steps: 
 
@@ -82,7 +84,7 @@ The assigned user can then perform the recommended actions outlined in the imple
 
 ## Perform work and store documentation
 
-When you perform implementation work, you can upload files and notes directly to the improvement action in the **Notes and documentation** section. This provides a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. The ability to upload, download, or delete fields, or to enter or edit notes, is restricted to roles with editing rights.
+When you perform implementation work, you can upload files and notes directly to the improvement action in the **Notes and documentation** section.  This environment is a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. Only users with editing rights can upload and download files and enter or edit notes.
 
 Fields in the **Notes and documentation** section include:
 
@@ -99,7 +101,7 @@ Fields in the **Notes and documentation** section include:
 
 **Implementation, Test, and Additional notes**
 
-- To add notes in any of these three fields, select **Edit implementation notes** underneath any of thse fields.
+- To add notes in any of these three fields, select **Edit implementation notes** underneath any of these fields.
 - When the flyout pane opens, enter notes in the text field, then select **Save and close**.
 - To edit notes, select **Edit implementation notes**, make your edits, then select **Save and close**.
 
@@ -152,23 +154,23 @@ The solutions page shows the share of earned and potential points as organized b
 
 ### Filtering your solutions view
 
-To filter you view of solutions: 
+To filter you view of solutions:
 
-1. Select **Filter** at the top left corner of your assessments list.
+1. Select **Filter** at the top-left corner of your assessments list.
 2. On the flyout **Filters** pane, place a check next to the desired criteria (standards and regulations, solution, action type, Compliance Manager group, category).
-3. Select the **Apply** button. The filter pane will close and you will see your filtered view.
+3. Select the **Apply** button. The filter pane will close and you'll see your filtered view.
 
 You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.
 
 ### Taking actions from the solutions page
 
-The solutions page displays your organization’s solutions that are connected to improvement actions. The table lists each solution's contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score. 
+The solutions page displays your organization's solutions that are connected to improvement actions. The table lists each solution's contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score.
 
 There are two ways you can take action from this screen:
 
-1. On the row of your intended solution, under the **Remaining actions** column, click or tap on the hyperlinked number. This takes you to a filtered view of the improvement actions screen showing untested improvement actions for that solution.
+1. On the row of your intended solution, under the **Remaining actions** column, select the hyperlinked number. You'll see a filtered view of the improvement actions screen showing untested improvement actions for that solution.
 
-2. On the row of your intended solution, under the **Open solution** column, select **Open**. This takes you to the solution or location in the Microsoft 365 and Office 365 security and compliance centers where you can take the recommended action.
+2. On the row of your intended solution, under the **Open solution** column, select **Open**. You'll see the solution or location in the Microsoft 365 and Office 365 security and compliance centers where you can take the recommended action.
 
 ## Assessments page
 
@@ -176,35 +178,35 @@ The assessments page lists the assessments you select to track for your organiza
 
 To get to your assessments page, select the **Assessments** tab on your dashboard.
 
-On this page you can quickly view important information about each assessment:
+On this page, you can quickly view important information about each assessment:
 
 - **Status**: the status toward completion of all the improvement actions in the assessment will be listed as either:
     - **Non-compliant**: the improvement actions in the assessment have not been implemented and successfully tested; work has not yet begun
-    - **In progress**: work is underway in implementing or testing the improvement actions; this could mean, for example, that an improvement action in the assessment has been assigned for work, is in the process of being implemented and tested
+    - **In progress**: work is underway in implementing or testing the improvement actions; for example, an improvement action in the assessment has been assigned for work, is in the process of being implemented and tested
 - **Assessment progress**: the percentage of the work done towards final completion of the assessment, as measured by the number of controls successfully tested.
 - **Customer-managed actions**: the number of completed actions to satisfy implementation of  your customer-managed controls
 - **Microsoft-managed actions**: the number of completed actions to satisfy implementation of Microsoft-managed controls
 - **Assessment group**: name of the group you created, in which the assessment resides
 - **Related services**: associated Microsoft 365 service
-- **Related regulations**: the regulatory standard, policy, or law which the assessment seeks to satisfy
+- **Related regulations**: the regulatory standard, policy, or law that the assessment seeks to satisfy
 
 ### Default assessments
 
-By default, you will see the Microsoft 365 data protection baseline assessment on the assessments page. Compliance Score also provides several out-of-box assessments ([view the full list](compliance-score.md#templates)). If you want to add more assessments to cover additional regulations and standards, you can do this in Compliance Manager.
+By default, you will see the Microsoft 365 data protection baseline assessment on the assessments page. Compliance Score also provides several pre-configured assessments ([view the full list](compliance-score.md#templates)). You can add more assessments to cover additional regulations and standards in Compliance Manager.
 
 ### Managing assessments
 
-During public preview, functionality for viewing, creating, exporting, and archiving assessments remains in the Compliance Manager tool. 
+During public preview, you will go to the Compliance Manager tool to crate, customize, and manage your assessments.
 
-To manage your assessments, select **Manage Assessments in Compliance Manager** at the top of the assessments list.
+On the **Assessments** page in Compliance Score, select **Manage Assessments in Compliance Manager** at the top of your assessments list. This link takes you to your **Assessments** dashboard in Compliance Manager.
 
-The other link at the top of the assessments list, **Microsoft actions in Compliance Manager**, takes you to the page in Compliance Manager showing Microsoft controls that contribute to your compliance score.
+The other link at the top of the assessments list, **Microsoft actions in Compliance Manager**, takes you to your **Controls Info** dashboard in Compliance Manager showing Microsoft controls that contribute to your compliance score.
 
 ### Filtering your assessments view
 
 To filter you view of assessments:
 
-1. Select **Filter** at the top left corner of your assessments list.
+1. Select **Filter** at the top-left corner of your assessments list.
 2. On the flyout **Filters** pane, place a check next to the desired criteria (standards and regulations, Compliance Manager group).
 3. Select the **Apply** button. The filter pane will close and you will see your filtered view.
 
@@ -216,6 +218,11 @@ From the assessment list, under the **Customer-managed actions** column, select 
 
 ## Reporting
 
-You can export a report of all your improvement actions in Compliance Score. From the **Improvement actions** page, select **Export** in the upper-left corner of your screen, above your list of actions. This will produce an Excel worksheet with all your improvement actions and the filter categories shown on the **Improvement actions** page, which you can view and save to your local machine.
+You can export a report of all your improvement actions in Compliance Score. From the **Improvement actions** page, select **Export** in the upper-left corner of your screen, above your list of actions. This will produce an Excel worksheet with all your improvement actions and the filter categories shown on the **Improvement actions** page.
 
-You can also export a report from Compliance Manager. In Compliance Manager, go to the **Controls Info** tab and select **Export** in the upper-right section of the screen. This produces an Excel worksheet you can view and save.
+You can also export a report from Compliance Manager by following these steps:
+
+1. In Compliance Manager, go to your **Controls Info** dashboard.
+2. You'll see an **Assessment** tab and a **Template** tab.  
+3. To export an assessment: Select the **Assessment** tab. Use the **Group** and **Assessment** drop-down menus to select the assessment you want to export. Select **Export** near the upper right of your screen. An Excel file will download. It includes a list of actions, grouped by control, with your implementation and test details.
+4. To export a template: Select the **Template** tab, and choose the template you want to export from the **Template** drop-down menu. Select **Export** near the upper right of your screen. An Excel file will download. It includes a list of actions, grouped by control, with your implementation and test details.
