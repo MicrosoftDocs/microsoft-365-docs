@@ -13,7 +13,9 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: "Admins can learn about the available options in Office 365 and EOP that allow inbound messages to skip spam filtering."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn how can admins create a safe senders list in Office 365 and EOP that allows inbound messages to skip spam filtering."
 ---
 
 # Create safe sender lists in Office 365
