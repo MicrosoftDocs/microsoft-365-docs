@@ -202,13 +202,15 @@ If you publish a DMARC reject policy (p=reject), no other customer in Office 365
 ## How Office 365 handles inbound email that fails DMARC
 <a name="inbounddmarcfail"> </a>
 
-If the DMARC policy of the sending server is p=reject, EOP marks the message as spam instead of rejecting it. In other words, for inbound email, Office 365 treats p=reject and p=quarantine the same way.
+If the DMARC policy of the sending server is p=reject, EOP marks the message as spoof instead of rejecting it. In other words, for inbound email, Office 365 treats p=reject and p=quarantine the same way. The admin can define the action to take on messages classified as spoof within the [Anti-phishing policy](set-up-anti-phishing-policies.md).
   
-Office 365 is configured like this because some legitimate email may fail DMARC. For example, a message might fail DMARC if it is sent to a mailing list that then relays the message to all list participants. If Office 365 rejected these messages, people could lose legitimate email and have no way to retrieve it. Instead, these messages will still fail DMARC but they will be marked as spam and not rejected. If desired, users can still get these messages in their inbox through these methods:
+Office 365 is configured like this because some legitimate email may fail DMARC. For example, a message might fail DMARC if it is sent to a mailing list that then relays the message to all list participants. If Office 365 rejected these messages, people could lose legitimate email and have no way to retrieve it. Instead, these messages will still fail DMARC but they will be marked as spoof and not rejected. If desired, users can still get these messages in their inbox through these methods:
   
 - Users add safe senders individually by using their email client
 
-- Administrators create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders. 
+- Administrators can update the [Spoof Intelligence](learn-about-spoof-intelligence.md) reporting to allow the spoof
+
+- Administrators create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
 
 ## How Office 365 utilizes Authenticated Received Chain (ARC)
 <a name="ARC"> </a>
