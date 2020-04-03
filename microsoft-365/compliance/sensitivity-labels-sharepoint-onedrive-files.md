@@ -23,7 +23,9 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Before this preview, when you applied sensitivity labels that included encryption to Office files stored in SharePoint and OneDrive, the service couldn't process the content of these files. Coauthoring, eDiscovery, Data Loss Prevention, search, Delve, and other collaborative features didn't work under these circumstances. This preview enables these features for new and changed files that have a sensitivity label applied that includes encryption with a cloud-based key:
+Before this preview, you couldn't apply your [sensitivity labels](sensitivity-labels.md) in Office on the web. You didn't see the **Sensitivity** option on the ribbon, or the applied label name on the status bar. In addition, if you used desktop apps to label your files and then save them on SharePoint or Onedrive, the service couldn't process the content of these files if the label applied encryption. Coauthoring, eDiscovery, Data Loss Prevention, search, Delve, and other collaborative features didn't work under these circumstances. 
+
+This preview enables all these capabilities. In addition to displaying sensitivity labels to users, for new and changed files that have a sensitivity label applied that includes encryption with a cloud-based key:
 
 - SharePoint recognizes sensitivity labels applied to Word, Excel, and PowerPoint files in SharePoint and OneDrive: While the file is stored in SharePoint, the encryption from Azure Information Protection is removed so that the file contents can be processed. For information about how documents are protected while they are stored in SharePoint, see [Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md).
 
@@ -31,27 +33,25 @@ Before this preview, when you applied sensitivity labels that included encryptio
 
 - For SharePoint to remove the encryption from the file on upload, the user who uploads the labeled and encrypted file must have usage rights to at least view the file. SharePoint doesn't remove encryption from files if the user can't open them outside SharePoint.
 
-- Use Office on the web (Word, Excel, PowerPoint) to open and edit Office files that have sensitivity labels that apply encryption. The permissions that were assigned with the encryption are enforced. With Word on the web, you can also use auto labeling when you edit these documents.
+- Use Office on the web (Word, Excel, PowerPoint) to open and edit Office files that have sensitivity labels that apply encryption. The permissions that were assigned with the encryption are enforced. With Word on the web, you can also use auto-labeling when you edit these documents.
 
 - Office 365 eDiscovery supports full-text search for these files. Data Loss Prevention (DLP) policies cover content in these files.
 
-- Three new [audit events](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) are available for monitoring sensitivity labels that are applied using Office on the web:
-  - **Applied sensitivity label to file**
-  - **Changed sensitivity label applied to file**
-  - **Removed sensitivity label from file**
-
 > [!NOTE]
-> If encryption hasn't been applied with a cloud-based key but an on-premises key, a key management topology often referred to as "hold your own key" (HYOK), the SharePoint behavior doesn't change with this preview.
+> If encryption hasn't been applied with a cloud-based key but an on-premises key, a key management topology often referred to as "hold your own key" (HYOK), the SharePoint behavior for processing the file contents doesn't change with this preview.
 >
 > The SharePoint behavior also doesn't change for existing labeled and encrypted files in SharePoint before you enable the preview. For these files to benefit from the new capabilities, they must be either downloaded and uploaded, or edited after you enable the preview. For example, they will then be returned in search and eDiscovery results.
 
-You can also now apply sensitivity labels to Microsoft Teams, Office 365 Groups, and SharePoint sites. For more information about this separate preview, see [Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md).
-
-You always have the choice to opt out of this preview at any time.
+When you enable this preview, three new [audit events](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) are available for monitoring sensitivity labels that are applied using Office on the web:
+- **Applied sensitivity label to file**
+- **Changed sensitivity label applied to file**
+- **Removed sensitivity label from file**
 
 Watch the following video (no audio) to see these new capabilities in action:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
+
+You always have the choice to opt out of this preview at any time.
 
 ## Requirements
 
