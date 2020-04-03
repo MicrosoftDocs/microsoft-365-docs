@@ -50,7 +50,7 @@ When you create a retention label in the Microsoft 365 compliance center, Micros
 
 A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Office 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
   
-![Dispositions page in Security and Compliance Center](../media/Retention-Dispositions-v2-page.png)
+![Dispositions page in Security and Compliance Center](https://user-images.githubusercontent.com/41186174/78390951-1ef10680-75ee-11ea-921e-5975eeac3c7a.png)
 
 
 ## Setting up the disposition review by creating a retention label
