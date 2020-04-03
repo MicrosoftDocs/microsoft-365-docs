@@ -74,6 +74,29 @@ For more information about specific workloads, see the following articles:
 - [Learn about retention policies for Microsoft Teams](retention-policies-teams.md)
 - [Learn about retention policies for Exchange](retention-policies-exchange.md)
 
+## The principles of retention, or what takes precedence?
+
+It's possible or even likely that content might have several retention policies applied to it, each with a different action (retain, delete, or retain and then delete) and retention period. What takes precedence? At the highest level, rest assured that content being retained by one retention policy can't be permanently deleted by another retention policy.
+  
+![Diagram of the principles of retention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+  
+To understand how different retention policies are applied to content, keep these principles of retention in mind:
+  
+1. **Retention wins over deletion.** Suppose that one retention policy is configured to delete Exchange email after three years, but another retention policy is configured to retain Exchange email for five years and then delete it. Any content that reaches three years old will be deleted and hidden from the users' view, but still retained in the Recoverable Items folder until the content reaches five years old, when it is permanently deleted. 
+    
+2. **The longest retention period wins.** If content is subject to multiple retention policies that retain content, it will be retained until the end of the longest retention period. 
+    
+3. **Explicit inclusion wins over implicit inclusion.** This means: 
+    
+    1. If a retention label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that retention label takes precedence over both a retention policy assigned at the site or mailbox level and a default retention label assigned by the document library. For example, if the explicit retention label is configured to retain content for 10 years, but the retention policy assigned to the site is configured to retain content for only five years, the retention label takes precedence. Auto-applied retention labels are considered implicit rather than explicit, because they're applied automatically by Office 365.
+    
+    2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive for Business account, that retention policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive for Business accounts but doesn't specifically include that user's mailbox.
+    
+4. **The shortest deletion period wins.** Similarly, if content is subject to multiple retention policies that delete content without a retention period, that content will be deleted at the end of the shortest retention period. 
+    
+Understand that the principles of retention work as a tie-breaking flow from top to bottom: If the rules applied by all retention policies or retention labels are the same at one level, the flow moves down to the next level to determine precedence for which rule is applied.
+  
+Finally, a retention policy or retention label cannot permanently delete any content that's on hold for eDiscovery. When the hold is released, the content again becomes eligible for the cleanup process described above.
 
 ## Use Preservation Lock to comply with regulatory requirements
 
