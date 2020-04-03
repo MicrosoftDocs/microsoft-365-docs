@@ -26,8 +26,8 @@ A variety of reports are available in the [Security &amp; Compliance Center](htt
 ![Dashboard where you see how Advanced Threat Protection is working](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Your email security reports include the following:
-- [URL Threat Protection report](#url-threat-protection-report) (**NEW!**)
-- [Compromised Users report](#compromised-users-report-new)
+- [URL Threat Protection report](#url-threat-protection-report-new) (**NEW!**)
+- [Compromised Users report](#compromised-users-report)
 - [Encryption report](#encryption-report)
 - [Threat Protection Status report](#threat-protection-status-report) 
 - [Malware Detections report](#malware-detections-report) 
