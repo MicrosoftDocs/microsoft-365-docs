@@ -26,7 +26,8 @@ A variety of reports are available in the [Security &amp; Compliance Center](htt
 ![Dashboard where you see how Advanced Threat Protection is working](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Your email security reports include the following:
-- [Compromised Users report (**NEW!**)](#compromised-users-report-new)
+- [URL Threat Protection report](#url-threat-protection-report-new) (**NEW!**)
+- [Compromised Users report](#compromised-users-report-new)
 - [Encryption report](#encryption-report)
 - [Threat Protection Status report](#threat-protection-status-report) 
 - [Malware Detections report](#malware-detections-report) 
@@ -38,7 +39,28 @@ Your email security reports include the following:
 - [User-reported messages report](#user-reported-messages-report)
 
 
-## Compromised Users report (**NEW!**) 
+## URL Threat Protection report (**NEW!**)
+
+The URL Threat Protection report is available to anyone with:
+
+- An Exchange Online Protection, *and* Advanced Threat Protection add-on (Plan 1 *or* Plan 2) 
+- A Microsoft 365 E5 subscription
+
+This is a 'click-centric' report that has two aggregated views.
+ 
+1. The first view is by *URL click-protection action*, which is focused on showing the number of URL clicks by users within the tenant, and the result of the click. A click here indicates that the user has clicked through the block page to the malicious website (this can be disabled by the administrator within a Safe Links policy).
+ 
+2. The second view is *URL click by applications*, which shows the number of URLs click in different applications that support Safe Links today, such as in an email client or in Microsoft Word. Data in both aggregated views are refreshed once every 4 hours.
+
+The details table of the URL Threat Protection report provides a near-real-time view of all clicks that happen within the tenant, and it includes investigative information such as *username*, *URL*, the *network message ID* (if the URL was clicked from an email), and other valuable pieces of information useful for investigations and analyses.  
+
+By default, the report only shows data on clicks from URLs that were blocked by Safe Links, but it is also possible to see information for all URL clicks through selecting *Allowed URLs* checkbox in the filters.  
+
+This report will not have data of clicks from users where the Safe Links policy applied has the *Do not track user clicks* option selected.
+
+![Graphic of the URL Threat Protection Report in action.](../../media/tp-URLThreatProRpt1.PNG)
+
+## Compromised Users report 
 
 This report, available to anyone with Exchange Online Protection, shows the number of user accounts marked as Suspicious or Restricted users, data particularly useful as accounts enter either of the states that indicate the user account may be problematic, or even compromised. With frequent use, the Compromised User report can spot spikes, and even trends, in accounts marked in suspicious or restricted states, giving evidence there could be an issue with security and the wellness of your tenant.
 
