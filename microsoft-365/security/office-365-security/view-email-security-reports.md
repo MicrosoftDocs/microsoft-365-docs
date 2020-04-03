@@ -27,7 +27,7 @@ A variety of reports are available in the [Security &amp; Compliance Center](htt
   
 Your email security reports include the following:
 - [URL Threat Protection report](#url-threat-protection-report-new) (**NEW!**)
-- [Compromised Users report](#compromised-users-report-new)
+- [Compromised Users report](#compromised-users-report)
 - [Encryption report](#encryption-report)
 - [Threat Protection Status report](#threat-protection-status-report) 
 - [Malware Detections report](#malware-detections-report) 
