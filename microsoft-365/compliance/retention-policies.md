@@ -75,6 +75,34 @@ For more information about specific workloads, see the following articles:
 - [Learn about retention policies for Exchange](retention-policies-exchange.md)
 
 
+## Use Preservation Lock to comply with regulatory requirements
+
+Some organizations might need to comply with rules defined by regulatory bodies such as the Securities and Exchange Commission (SEC) Rule 17a-4, which requires that after a retention policy is turned on, it cannot be turned off or made less restrictive. 
+
+Preservation Lock ensures your organization can meet such regulatory requirements because it locks a retention policy so that no one — including the administrator — can turn off the policy or make it less restrictive.
+  
+When a retention policy is locked:
+
+- No one can it turn off
+- Locations can be added but not removed 
+- Content subject to the policy can't be modified or deleted during the retention period
+- You can extend a retention period but not decrease it
+
+In summary, a locked retention policy can be increased or extended, but it can't be reduced or turned off.
+  
+> [!IMPORTANT]
+> Before you lock a retention policy, it's critical that you understand the impact and confirm whether it's required for your organization to meet compliance requirements.
+
+## Releasing a retention policy
+
+Providing your retention policy doesn't have a Preservation Lock, you can can turn off or delete a retention policy at any time. 
+
+When you do so, any SharePoint or OneDrive content that's being retained in the Preservation Hold library is not immediately and permanently deleted. Instead, to help prevent inadvertent data loss, there is a 30-day grace period, during which content expiration for that policy does not happen in the Preservation Hold library, so that you can restore any content from there, if needed. 
+
+You can also turn on the retention policy again during the grace period, and no content will be deleted for that policy.
+
+This 30-day grace period in SharePoint and OneDrive corresponds to the 30-day delay hold in Exchange. For more information, see [Managing mailboxes on delay hold](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
+
 ## Use a retention policy instead of older features
 
 A single retention policy can easily apply to an entire organization and locations across Office 365, including Exchange Online, SharePoint Online, OneDrive for Business, and Office 365 groups. If you need to retain or delete content anywhere in Office 365, we recommend that you use a retention policy and optionally supplement this with [retention labels](labels.md).
@@ -122,6 +150,7 @@ You can find any configured preservation policies on the **Policies** page in th
 
 ## Related information
 
+- [Create and configure retention policies](create-retention-policies.md)
 - [Overview of labels](labels.md)
 - [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limits and specifications for Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
