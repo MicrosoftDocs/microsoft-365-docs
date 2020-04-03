@@ -46,9 +46,7 @@ If your organization has multiple groups of assessments, the behavior of **Tec
 
 ## Compliance Score relationship to Compliance Manager
 
-Many of the functions handled in Compliance Manager can now be done in Compliance Score. However some functionality still resides only in Compliance Manager, and some previous functionality in Compliance Manager is altered during the public preview period. 
-
-Keep these points in mind as you work with Compliance Score and Compliance Manager during public preview:
+Many of the functions handled in Compliance Manager can now be done in Compliance Score. However some functions still live in Compliance Manager. Keep these points in mind as you work with Compliance Score and Compliance Manager during public preview:
 
 - **Managing assessments**: users can view assessments and their status details in Compliance Score. However users can only do assessment management tasks in Compliance Manager ([view instructions](working-with-compliance-manager.md#assessments)). Examples of those tasks include:
     - Create and copy assessments

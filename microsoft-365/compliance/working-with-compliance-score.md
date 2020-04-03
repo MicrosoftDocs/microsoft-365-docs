@@ -22,7 +22,7 @@ This article explains how to work with the key elements of Compliance Score. You
 
 ## Manage your workflow with improvement actions
 
-**Improvement actions** centralize your compliance activities. Each one lists actions you can take to help you align with data protection regulations and standards, with detailed implementation guidance. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
+**Improvement actions** centralize your compliance activities. Each improvement action gives detailed implementation guidance to help you align with data protection regulations and standards. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
 
 ## View your improvement actions
 
@@ -164,11 +164,11 @@ You can also modify your view to see assessments by group, product, or regulatio
 
 ### Taking actions from the solutions page
 
-The solutions page displays your organization's solutions that are connected to improvement actions. The table lists each solution's contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score. 
+The solutions page displays your organization's solutions that are connected to improvement actions. The table lists each solution's contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score.
 
 There are two ways you can take action from this screen:
 
-1. On the row of your intended solution, under the **Remaining actions** column, click or tap the hyperlinked number. You'll see a filtered view of the improvement actions screen showing untested improvement actions for that solution.
+1. On the row of your intended solution, under the **Remaining actions** column, select the hyperlinked number. You'll see a filtered view of the improvement actions screen showing untested improvement actions for that solution.
 
 2. On the row of your intended solution, under the **Open solution** column, select **Open**. You'll see the solution or location in the Microsoft 365 and Office 365 security and compliance centers where you can take the recommended action.
 
@@ -192,7 +192,7 @@ On this page, you can quickly view important information about each assessment:
 
 ### Default assessments
 
-By default, you will see the Microsoft 365 data protection baseline assessment on the assessments page. Compliance Score also provides several pre-configured assessments ([view the full list](compliance-score.md#templates)). If you want to add more assessments to cover additional regulations and standards, you can do this in Compliance Manager.
+By default, you will see the Microsoft 365 data protection baseline assessment on the assessments page. Compliance Score also provides several pre-configured assessments ([view the full list](compliance-score.md#templates)). You can add more assessments to cover additional regulations and standards in Compliance Manager.
 
 ### Managing assessments
 

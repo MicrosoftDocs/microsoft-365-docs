@@ -53,7 +53,7 @@ Think of Compliance Score as a simplified version of Compliance Manager. While t
 
 Compliance Score shares the same backend with Compliance Manager, so any data you may already have in Compliance Manager will show in Compliance Score.
 
-Some functionality remains solely in Compliance Manager during public preview, such as managing assessments and creating templates. We recommend beginning all of your compliance management activities in Compliance Score. When you come to functions handled by Compliance Manager, you will be guided to that tool. For that reason, some of this documentation directs you to Compliance Manager topics.
+Some functionality remains solely in Compliance Manager during public preview, such as managing assessments and creating templates. We recommend beginning all of your compliance management activities in Compliance Score. When you come to functions handled by Compliance Manager, you'll be guided to that tool. For that reason, some of this documentation directs you to Compliance Manager topics.
 
 Learn more about the relationship between Compliance Score and Compliance Manager in the [Compliance Score release notes](compliance-score-release-notes.md).
 
@@ -85,7 +85,7 @@ An assessment is an evaluation of a template that initiates the scoring process 
 
 Compliance Score provides your organization with an initial assessment based on the Microsoft 365 data protection baseline. This assessment is a recommendation for reducing your data protection and compliance risks ([learn more](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
 
-Assessments contain:
+Assessments have several components:
 
 - **In-scope services**: the specific set of Microsoft services applicable to the assessment
 - **Microsoft-managed controls**: controls that Microsoft implemented and tested

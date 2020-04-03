@@ -133,7 +133,7 @@ To apply filters:
 1. Select **Filter** on the upper-right side of the dashboard.
 2. Select your filter criteria from the **Filters** flyout pane, then select **Apply**.
 
-After you apply a filter, you;ll see your score adjusted in real time. The compliance score percentage and breakdown information, and the improvement actions and solutions, now only pertain to data covered by your filter criteria. If you sign out of Compliance Score, your filtered view remains when you sign back in.
+After you apply a filter, you'll see your score adjusted in real time. The compliance score percentage and breakdown information, and the improvement actions and solutions, now only pertain to data covered by your filter criteria. If you sign out of Compliance Score, your filtered view remains when you sign back in.
 
 To remove filters:
 
