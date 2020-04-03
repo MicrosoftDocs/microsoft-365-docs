@@ -30,7 +30,7 @@ description: "Learn how to renew your Office 365 for business subscription using
 
 This article applies to most paid Office 365 for business subscriptions.
   
-To renew by using a product key that you bought from a retail store or Office 365 partner, see [EFind and enter your product key](../enter-your-product-key.md).
+To renew by using a product key that you bought from a retail store or Office 365 partner, see [Find and enter your product key](../enter-your-product-key.md).
 
 > [!NOTE]
 > Paying by bank account isn't available in some countries or regions.
@@ -42,9 +42,6 @@ If you pay by credit card or bank account, **Recurring billing** is turned on by
 If you prepaid for your subscription with a product key, your subscription will expire at the end of subscription term. You can turn on **Recurring billing** and provide credit card or bank account information so that your subscription will continue to be billed every year on the day you subscribed. You also have the option to pay every month, or to pay for the entire year up front. Your credit card or bank account will not be charged until your initial subscription term has expired.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
@@ -104,7 +101,7 @@ If you prepaid for your subscription with a product key, your subscription will 
 
     > [!NOTE]
     > - You can only change the **Recurring billing** setting for active subscriptions. If your subscription has already expired or is disabled, you will need to [reactivate it](reactivate-your-subscription.md) before you can turn **Recurring billing** on or off.
-    > - When **Recurring billing** is turned off, the subscription isn't cancelled right away. It remains active until it expires. You can view the expiration date on the subscription card
+    > - When **Recurring billing** is turned off, the subscription isn't cancelled right away. It remains active until it expires. You can view the expiration date on the subscription card.
     > - To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).
 
 ::: moniker-end
@@ -112,10 +109,8 @@ If you prepaid for your subscription with a product key, your subscription will 
 ## Related articles
 
 [Reactivate your subscription](reactivate-your-subscription.md)
-  
-[Add, update, or remove a credit card or bank account](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
-  
-[What happens to my data and access when mysubscription ends?](what-if-my-subscription-expires.md)
+
+[What happens to my data and access when my subscription ends?](what-if-my-subscription-expires.md)
 
 [Add, update, or remove your payment methods](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 
