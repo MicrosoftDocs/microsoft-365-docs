@@ -1,5 +1,5 @@
 ---
-title: "Submit spam, non-spam, and phishing scam messages to Microsoft for analysis"
+title: "Manually submit messages to Microsoft for analysis"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,109 +18,131 @@ ms.collection:
 description: "You and your users can submit false negative and false positive spam messages to Microsoft for analysis. "
 ---
 
-# Submit spam, non-spam, and phishing scam messages to Microsoft for analysis
+# Manually submit messages to Microsoft for analysis
 
-It can be frustrating when users in your organization receive junk messages (spam) or phishing scam messages in their Inbox, or if they don't receive a legitimate email message because it's marked as junk. We're constantly fine-tuning our spam filters to be more accurate. You and your users can help this process by submitting false negative and false positive spam messages to Microsoft for analysis. A "false negative" is a spam message that should have been but was not identified as spam. A "false positive" is a legitimate email message that was incorrectly identified as spam. 
-  
 > [!NOTE]
-> Because of the high volume of submissions that we receive, we may not be able to answer all requests for analysis. 
+> If you're an admin in an Office 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Office 365 Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-Admins can send email, url, and attachments to Microsoft for review. See [Admin submissions in Office 365 ATP](admin-submission.md).
-  
-## Submit junk or phishing messages that passed through the spam filters
-<a name="sectionSection0"> </a>
+It can be frustrating when users in your organization receive junk messages (spam) or phishing messages in their Inbox, or if they don't receive a legitimate email message because it's marked as junk. We're constantly fine-tuning our spam filters to be more accurate.
 
-If you receive a message that passed through the spam filters that and should be classified as junk or a phishing scam, you can submit the "false negative" message to the Microsoft Spam Analysis and Microsoft Phishing Analysis teams, as appropriate. The analysts will review the message and add it to the service-wide filters if it meets the classification criteria. 
-  
-For more spam settings that apply to the whole organization, see [Block email spam with the Office 365 spam filter to prevent false negative issues](reduce-spam-email.md). This article contains tips to help prevent false negatives.
-  
-You can submit junk email messages in the following ways:
-  
-- For Outlook and Outlook on the web users, use the Report Message Add-in for Microsoft Outlook. For information about how to install and use this tool, see [Enable the Report Message add-in](enable-the-report-message-add-in.md). 
-        
-- You can also use email to submit messages to Microsoft that should be classified as junk or phishing scams, as described in the following procedure.
-    
-### Use email to submit junk (spam) or phishing scam messages to Microsoft
-<a name="Useemailtosubmitjunkspamorphishingscammessages"> </a>
+You and your users can help this process by submitting false positives (good email marked as bad), false negatives (bad mail allowed) and phishing messages to Microsoft for analysis.
 
-To submit a junk or phishing scam message to Microsoft:
-  
-1. Create a blank email message.
-    
-2. Address the message to the Microsoft team that reviews messages, as follows: 
-    
-  - For junk messages: junk@office365.microsoft.com
-    
-  - For phishing scam messages: phish@office365.microsoft.com
-    
-3. Copy and paste the junk or phishing scam message into the new message as an attachment. 
-    
+> [!NOTE]
+> Because of the high volume of submissions that we receive, we may not be able to answer all requests for analysis.
+
+## Submit false negatives to Microsoft
+
+> [!TIP]
+> Instead of using the following procedures to report false negatives, users in Outlook and Outlook on the web (formerly known as Outlook Web App) can use the Report Message Add-in for Microsoft Outlook. For information about how to install and use this tool, see [Enable the Report Message add-in](enable-the-report-message-add-in.md).
+
+If you receive a message that passed through spam filtering that should have been identified as spam or phishing, you can submit the message to the Microsoft Spam Analysis and Microsoft Phishing Analysis teams as appropriate. The analysts will review the message and add it to the service-wide filters if it meets the classification criteria.
+
+1. Create a new, blank email message with the one of the following recipients:
+
+   - **Junk**: `junk@office365.microsoft.com`
+
+   - **Phishing**: `phish@office365.microsoft.com`
+
+2. Drag and drop the junk or phishing message into the new message. This will save the junk or phishing message as an attachment in the new message. Don't copy and paste the content of the message or forward the message (we need the original message so we can inspect the message headers).
+
    > [!NOTE]
-   > • You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing scam messages or junk email messages. <br/><br/>• Leave the body of the new message empty. <br/><br/>• Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.
-  
-4. Click **Send**.
-    
-## Submit messages that were tagged as junk but should have been allowed through
-<a name="sectionSection1"> </a>
+   > <ul><li>You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing scam messages or junk email messages.</li><li>Leave the body of the new message empty.<li></li>Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.</li></ul>
 
-If a message was incorrectly identified as junk, you can submit the "false positive" message to the Microsoft Spam Analysis Team. The analysts will evaluate and analyze the message. Depending on the results of the analysis, the service-wide spam content filter rules may be adjusted to allow the message through.
-  
-Administrators can review more spam setting information that applies to a whole organization. See [How to help ensure that a message isn't marked as spam](prevent-email-from-being-marked-as-spam.md). This information is helpful if you have administrator-level control and you want to prevent false positives.
-  
-You can submit non-spam messages in the following ways:
-  
-- If you use the **Move message to Junk Email folder** action when you configure your content filters (this is the default action), users can release false positive messages in their Outlook or Outlook on the web (formerly known as Outlook Web App) Junk Email folder. 
-    
-  - Outlook users can release false positive messages by using the **Not Junk** right-click menu option. However, they must submit the message to Microsoft through email, as shown in the procedure in this article. 
-    
-  - Outlook on the web users can release false positive messages and submit them to Microsoft for analysis using the **Mark as not junk** action. For more information about how to do this, see [Report junk email and phishing scams in Outlook on the web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
-    
-- If you use the **Quarantine message** action instead of the **Move message to Junk Email folder** action when you configure your content filters: 
-    
-  - Administrators can release spam-quarantined messages and report them as false positives from the Exchange admin center. For more information, see [Find and release quarantined messages as an administrator](find-and-release-quarantined-messages-as-an-administrator.md).
-    
-  - Users can release their own spam-quarantined messages and report them as false positives through the following channels: 
-    
-  - The Exchange admin center (EAC) user interface. For more information, see [Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md).
-    
-  - End-user spam notification messages (if they're enabled by your administrator). 
-    
-- You can also use email to submit messages to Microsoft that should not be classified as spam. When you do this, make sure that you use the steps in the following procedure.
-    
-### Use email to submit false positive messages
+3. When you're finished, click **Send**.
 
-Use the same procedure as described in the "[Use email to submit junk (spam) or phishing scam messages to Microsoft ](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md#Useemailtosubmitjunkspamorphishingscammessages)," but send the message to not_junk@office365.microsoft.com.
-  
-## Spam evaluation and rules deployment
-<a name="sectionSection2"> </a>
+> [!TIP]
+> Admins have several different ways to block specific messages that are being misidentified as spam. For details, see [Create blocked sender lists in Office 365](create-block-sender-lists-in-office-365.md).
 
-The spam analysis team examines messages that you submit, and adjusts the spam filters to prevent future junk mail. As a result, Office 365 spam filters areconstantly refined. Any submitted items are evaluated at the network-wide level. False positive submissions are examined and assessed for possible rule adjustment to allow future messages through the spam filters. Therefore, notifying the service of false positives and also false negatives (unfiltered spam) is advantageous for you and all customers who use the global network. The spam team examines indicators within each submitted message, such as the following:
-  
-- From address
-    
-- Sending IP address
-    
-- Keywords
-    
-- Phrases
-    
-- Frequency of transmission
-    
-- Other trends and patterns
-    
-After they review this information, the spam team might make changes to the service's spam filtering layers. For more information about the spam team, you can watch the following English-only video:
-  
-[Microsoft Exchange Spam team video](https://youtu.be/-TpX_-GMC7o?hd=1)
-  
-Spam evaluation is an ongoing process that applies regardless of the originating language or character set. Because a spam message can be vague or even lack text in the subject or message body, the spam team relies on other message characteristics to perform filtering. This means that after the spam team flags a given message as spam and makes the necessary changes to its rule base, that message will be blocked in the future until its characteristics have been modified enough to avoid our filters. New spam rules are deployed continuously. Time frames for rules on individual submissions vary depending on the quantity and quality of submissions. Because new spam rules are set globally for all customers, not all individual spam submissions will result in a new spam rule.
-   
-## For more information
-<a name="sectionSection4"> </a>
+## Submit false positives to Microsoft
 
-[Anti-spam and anti-malware protection](anti-spam-and-anti-malware-protection.md)
-  
-[How to help ensure that a message isn't marked as spam](prevent-email-from-being-marked-as-spam.md)
-  
-[Block email spam with the Office 365 spam filter to prevent false negative issues](reduce-spam-email.md)
-  
+> [!TIP]
+> Instead of using the following procedures to report false positives, users in Outlook and Outlook on the web can use the Report Message Add-in for Microsoft Outlook. For information about how to install and use this tool, see [Enable the Report Message add-in](enable-the-report-message-add-in.md).
 
+If a message was incorrectly identified as spam, you can submit the message to the Microsoft Spam Analysis Team. The analysts will evaluate the message, and (depending on the results of the analysis) the service-wide filters can be adjusted to allow the message through.
+
+1. Create a new, blank email message with `not_junk@office365.microsoft.com` as the recipient:
+
+2. Drag and drop the misidentified message into the new message. This will save the misidentified message as an attachment in the new message. Don't copy and paste the content of the message or forward the message (we need the original message so we can inspect the message headers).
+
+   > [!NOTE]
+   > <ul><li>You can attach multiple messages in the new message. Make sure that all the messages are the same type: either phishing scam messages or junk email messages.</li><li>Leave the body of the new message empty.<li></li>Use either .msg (default Outlook format) or .eml (default Outlook on the Web format) formats for the attached messages.</li></ul>
+
+3. When you're finished, click **Send**.
+
+> [!TIP]
+> Admins have several different ways to allow specific messages to skip spam filtering. For details, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
+
+## Create a mail flow rule to receive copies of messages that are reported to Microsoft
+
+You can create a mail flow rule (also known as a transport rule) that looks for email messages that are reported to Microsoft by using the methods described in this topic, and you can configure Bcc recipients to receive copies of these reported messages.
+
+You can create the mail flow rule in the Exchange admin center (EAC) and PowerShell (Exchange Online PowerShell for Office 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).
+
+### What do you need to know before you begin?
+
+- You need to be assigned permissions in Exchange Online before you can do these procedures. Specifically, you need to be assigned the **Transport Rules** role, which is assigned to the **Organization Management**, **Compliance Management**, and **Records Management** roles by default. For more information, see [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+
+- To open the EAC in Exchange Online, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+
+- For more information about mail flow rules in Exchange Online and standalone EOP, see the following topics:
+
+  - [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+
+  - [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
+
+  - [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+
+### Use the EAC to create a mail flow rule to receive copies of reported messages
+
+1. In the EAC, go to **Mail flow** \> **Rules**.
+
+2. Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
+
+3. In the **New rule** page that opens, configure the following settings:
+
+   - **Name**: Enter a unique, descriptive name for the rule. For example, Bcc Messages Reported to Microsoft.
+
+   - Click **More Options**.
+
+   - **Apply this rule if**: Select **The recipient** \> **address includes any of these words**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat until you've entered all the values.
+
+     - `junk@office365.microsoft.com`
+     - `abuse@messaging.microsoft.com`
+     - `phish@office365.microsoft.com`
+     - `false_positive@messaging.microsoft.com`
+
+     To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).
+
+     When you're finished, click **OK**.
+
+   - **Do the following**: Select **Add recipients** \> **to the Bcc box**. In the dialog that appears, find and select the recipients that you want to add. When you're finished, click **OK**.
+
+4. You can make additional selections to audit the rule, test the rule, activate the rule during a specific time period, and other settings. We recommend testing the rule before you enforce it.
+
+5. When you're finished, click **Save**.
+
+### Use PowerShell to create a mail flow rule to receive copies of reported messages
+
+This example creates a new mail flow rule named Bcc Messages Reported to Microsoft that looks for email messages that are reported to Microsoft by using the methods described in this topic, and adds the users laura@contoso.com and julia@contoso.com as Bcc recipients.
+
+```powershell
+New-TransportRule -Name "Bcc Messages Reported to Microsoft" -RecipientAddressContainsWords "junk@office365.microsoft.com","abuse@messaging.microsoft.com","phish@office365.microsoft.com","false_positive@messaging.microsoft.com" -BlindCopyTo "laura@contoso.com","julia@contoso.com".
+```
+
+For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+
+### How do you know this worked?
+
+To verify that you've configured a mail flow rules to receive copies of reported messages, do any of the following steps:
+
+- In the EAC, go to **Mail flow** \> **Rules** \> select the rule \> click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png), and verify the settings.
+
+- In PowerShell, run the following command to verify the settings:
+
+  ```powershell
+  Get-TransportRule -Identity "Bcc Messages Reported to Microsoft" | Format-List
+  ```
+
+- Send a test messages to one of the reporting email addresses and verify the results.

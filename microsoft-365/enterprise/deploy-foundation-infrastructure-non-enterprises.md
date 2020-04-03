@@ -68,11 +68,11 @@ If your organization requires high security and you have Microsoft 365 E5, use A
 
 If you have an on-premises AD DS domain, continue to use those groups in Microsoft 365 for enterprise as groups in Azure AD.
 
-If you don’t have an on-premises AD DS domain, create security groups in Azure AD using these levels of security.
+If you don't have an on-premises AD DS domain, create security groups in Azure AD using these levels of security.
 
 | Security level | Description | Examples |
 |:-------|:-----|:-----|
-| Baseline | This is a minimum and default  standard for protecting data and the identities and devices that access your data. <BR><BR> This is typically most of your organization’s data managed by most of your users. | Groups for first line workers, such as sales, marketing, support, administration, and manufacturing. |
+| Baseline | This is a minimum and default  standard for protecting data and the identities and devices that access your data. <BR><BR> This is typically most of your organization's data managed by most of your users. | Groups for first line workers, such as sales, marketing, support, administration, and manufacturing. |
 | Sensitive | This is additional protection for a subset of your data that must be protected beyond the baseline level. These groups contain users that use and create sensitive data that is specific to departments and projects that are not meant to be available to everyone. | Product or marketing teams that are developing future products |
 | Highly regulated | This is the highest level of protection for a typically small amount of data that is highly classified, considered intellectual property or trade secrets, or data that must adhere to security regulations. |  Research, legal, and financial teams, or teams storing or using customer or partner data. |
 ||||
@@ -108,7 +108,7 @@ Here is the list of Azure AD Conditional Access policies to enable or create.
 | Azure AD Conditional Access policy | Groups to which it applies |
 |:------|:-----|
 | Baseline policy: Require MFA for admins | This policy applies to admin roles, so no groups need to be specified. This policy just needs to be enabled. All subsequent policies need to be created and enabled. |
-| Block clients that don't support modern authentication | Select “All users” in the policy settings. |
+| Block clients that don't support modern authentication | Select "All users" in the policy settings. |
 | Require MFA when sign-in risk is medium or high (requires Microsoft 365 E5) | BASELINE |
 | Require MFA when sign-in risk is low, medium, or high (requires Microsoft 365 E5) | SENSITIVE |
 | Always require MFA | HIGHLY-REGULATED |
@@ -121,7 +121,7 @@ Here is the Azure AD Identity Protection (requires Microsoft 365 E5) user risk p
 
 | Azure AD Identity Protection user risk policy | Groups to which it applies |
 |:------|:-----|
-| High risk users must change passwords | Select “All users” in the policy settings. |
+| High risk users must change passwords | Select "All users" in the policy settings. |
 |||
 
 See [Common identity and device access policies](identity-access-policies.md) for the instructions.
@@ -254,7 +254,7 @@ Intune policies can enforce device compliance and app protection. Here is the li
 | App protection policy for macOS | BASELINE, SENSITIVE, HIGHLY-REGULATED |
 | App protection policy for Android and Android Enterprise | BASELINE, SENSITIVE, HIGHLY-REGULATED |
 |||
-	
+    
 See [Common identity and device access policies](identity-access-policies.md) for the instructions.
 
 ### Your configuration so far
@@ -289,7 +289,7 @@ The first step to an information protection strategy is to determine the levels 
 
 - Highly regulated
 
-  Examples include customer and partner personally identifiable information and your organization’s strategic plans or intellectual property.
+  Examples include customer and partner personally identifiable information and your organization's strategic plans or intellectual property.
 
 Based on these levels of data security, the next step is to identify and implement:
 
@@ -366,7 +366,7 @@ The existing employee should already be added to the appropriate workgroup, depa
 
 You can add a user account to multiple Azure AD groups in the Microsoft 365 admin center. From the properties of the user account, click **Manage groups > Add memberships**.
 
-If you want to use PowerShell, see this [downloadable Excel workbook](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx), which generates the PowerShell commands based on a specified user account and selected group names.
+If you want to use PowerShell, see this [downloadable Excel workbook](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx), which generates the PowerShell commands based on a specified user account and selected group names.
 
 ### New employee with a cloud-only user account
 

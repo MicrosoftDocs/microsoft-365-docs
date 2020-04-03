@@ -25,7 +25,7 @@ description: "What are best practices for Exchange Online Protection (EOP) and A
 Although we empower security administrators to customize their security settings, there are two security levels in EOP and Office 365 ATP that we recommend: **Standard** and **Strict**. Each customer's environment and needs are different, but we believe that these levels of mail filtering configurations will help prevent unwanted mail from reaching your employees' inbox in most situations.
 
 > [!IMPORTANT]
-> The Junk Email Configuration has to be enabled on the mailbox in order for filtering to work properly. This is enabled by default, but should be checked if filtering does not seem to be working. Read [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) to find out more. 
+> The junk email rule needs to be enabled on a mailbox in order for filtering to work properly. It's enabled by default, but you should check it if filtering does not seem to be working. For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 This topic describes these Microsoft-recommended settings to help protect your Office 365 users.
 
@@ -38,64 +38,80 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 
 ### EOP anti-spam policy settings
 
-|Security feature name|Standard|Strict|Comment|
-|---------|---------|---------|---------|
-|Spam detection action|Move message to Junk Email folder|Quarantine message||
-|High confidence spam detection action|Quarantine message|Quarantine message||
-|Phishing email detection action|Quarantine message|Quarantine message||
-|High confidence Phish email detection action|Quarantine message|Quarantine message||
-|Bulk email detection action|Move message to Junk Email folder|Quarantine message||
-|Set Bulk email threshold to|6|4|The default value is currently 7, but we recommend that you change it to 6. For details, see [Bulk Complaint Level values](bulk-complaint-level-values.md).|
-|Quarantine retention period|30 days|30 days||
-|Safety tips|On|On||
-|Allowed Senders|None|None||
-|Allowed Senders Domains|None|None|Adding domains that you own (also known as _accepted domains_) to the allowed senders list is not required. In fact, it's considered high risk since it creates opportunities for bad actors to send you mail that would otherwise be filtered out. Use [spoof intelligence](learn-about-spoof-intelligence.md) in the Security & Compliance Center on the **Anti-spam settings** page to review all senders who are spoofing either domains that are part of your organization, or spoofing external domains.|
-|Blocked Senders|None|None||
-|Blocked Senders domains|None|None||
-|End user spam notification frequency|Enabled|Enabled|3 days|
-|Zero Hour auto purge|On|On|For both Spam and Phish ZAP|
-|MarkAsSpamBulkMail|On|On|This setting is only available in PowerShell|
+To create and configure anti-spam policies, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
-There are several other parameters in the Anti-spam policy called Advanced Spam filter (ASF) that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this topic.
+|||||
+|---|---|---|---|
+|**Security feature name**|**Standard**|**Strict**|**Comment**|
+|**Spam** detection action <br/><br/> _SpamAction_|**Move message to Junk Email folder** <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`||
+|**High confidence spam** detection action <br/><br/> _HighConfidenceSpamAction_|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`||
+|**Phishing email** detection action <br/><br/> _PhishSpamAction_|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`||
+|**High confidence phishing email** detection action <br/><br/> _HighConfidencePhishAction_|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`||
+|**Bulk email** detection action <br/><br/> _BulkSpamAction_|**Move message to Junk Email folder** <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`||
+|Bulk email threshold <br/><br/> _BulkThreshold_|6|4|The default value is currently 7, but we recommend that you change it to 6. For details, see [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md).|
+|Quarantine retention period <br/><br/> _QuarantineRetentionPeriod_|30 days|30 days||
+|**Safety Tips** <br/><br/> _InlineSafetyTipsEnabled_|On <br/><br/> `$true`|On <br/><br/> `$true`||
+|Allowed Senders <br/><br/> _AllowedSenders_|None|None||
+|Allowed Sender Domains <br/><br/> _AllowedSenderDomains_|None|None|Adding domains that you own (also known as _accepted domains_) to the allowed senders list is not required. In fact, it's considered high risk since it creates opportunities for bad actors to send you mail that would otherwise be filtered out. Use [spoof intelligence](learn-about-spoof-intelligence.md) in the Security & Compliance Center on the **Anti-spam settings** page to review all senders who are spoofing either domains that are part of your organization, or spoofing external domains.|
+|Blocked Senders <br/><br/> _BlockedSenders_|None|None||
+|Blocked Sender Domains <br/><br/> _BlockedSenderDomains_|None|None||
+|**Enable end-user spam notifications** <br/><br/> _EnableEndUserSpamNotifications_|Enabled <br/><br/> `$true`|Enabled <br/><br/> `$true`||
+|**Send end-user spam notifications every (days)** <br/><br/> _EndUserSpamNotificationFrequency_|3 days|3 days||
+|**Spam ZAP** <br/><br/> _SpamZapEnabled_|Enabled <br/><br/> `$true`|Enabled <br/><br/> `$true`||
+|**Phish ZAP** <br/><br/> _PhishZapEnabled_|Enabled <br/><br/> `$true`|Enabled <br/><br/> `$true`||
+|_MarkAsSpamBulkMail_|On|On|This setting is only available in PowerShell.|
+|
 
-We recommend that you turn these settings **OFF** for both Standard and Strict levels:
+There are several other Advanced Spam Filter (ASF) settings in anti-spam policies that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this topic.
 
-|Security feature name|Comments|
-|---------|---------|
-|IncreaseScoreWithImageLinks||
-|IncreaseScoreWithNumericIps||
-|IncreaseScoreWithRedirectToOtherPort||
-|IncreaseScoreWithBizOrInfoUrls||
-|MarkAsSpamEmptyMessages||
-|MarkAsSpamJavaScriptInHtml||
-|MarkAsSpamFramesInHtml||
-|MarkAsSpamObjectTagsInHtml||
-|MarkAsSpamEmbedTagsInHtml||
-|MarkAsSpamFormTagsInHtml||
-|MarkAsSpamWebBugsInHtml||
-|MarkAsSpamSensitiveWordList||
-|MarkAsSpamFromAddressAuthFail||
-|MarkAsSpamNdrBackscatter||
-|MarkAsSpamSpfRecordHardFail||
+We recommend that you turn these ASF settings **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
 
-#### EOP outbound spam filter policy settings
+|||
+|----|---|
+|**Security feature name**|**Comments**|
+|**Image links to remote sites** (_IncreaseScoreWithImageLinks_)||
+|**Numeric IP address in URL** (_IncreaseScoreWithNumericIps_)||
+|**UL redirect to other port** (_IncreaseScoreWithRedirectToOtherPort_)||
+|**URL to .biz or .info websites** (_IncreaseScoreWithBizOrInfoUrls_)||
+|**Empty messages** (_MarkAsSpamEmptyMessages_)||
+|**JavaScript or VBScript in HTML** (_MarkAsSpamJavaScriptInHtml_)||
+|**Frame or IFrame tags in HTML** (_MarkAsSpamFramesInHtml_)||
+|**Object tags in HTML** (_MarkAsSpamObjectTagsInHtml_)||
+|**Embed tags in HTML** (_MarkAsSpamEmbedTagsInHtml_)||
+|**Form tags in HTML** (_MarkAsSpamFormTagsInHtml_)||
+|**Web bugs in HTML** (_MarkAsSpamWebBugsInHtml_)||
+|**Apply sensitive word list** (_MarkAsSpamSensitiveWordList_)||
+|**SPF record: hard fail** (_MarkAsSpamSpfRecordHardFail_)||
+|**Conditional Sender ID filtering: hard fail** (_MarkAsSpamFromAddressAuthFail_)||
+|**NDR backscatter** (_MarkAsSpamNdrBackscatter_)||
+|
 
-|Security feature name|Standard|Strict|Comment|
-|---------|---------|---------|---------|
-|Outbound spam policy Recipient Limits - External hourly limit|500|400||
-|Outbound spam policy Recipient Limits - Internal hourly limit|1000|800||
-|Outbound spam policy Recipient Limits - Daily limit|1000|800||
-|Action when a user exceeds the limits|Restrict the user from sending mail|Restrict the user from sending mail||
+#### EOP outbound spam policy settings
+
+To create and configure outbound spam policies, see [Configure outbound spam filtering in Office 365](configure-the-outbound-spam-policy.md).
+
+||||
+|---|---|---|---|
+|**Security feature name**|**Standard**|**Strict**|**Comment**|
+|**Maximum number of recipients per user: External hourly limit** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
+|**Maximum number of recipients per user: Internal hourly limit** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
+|**Maximum number of recipients per user: Daily limit** <br/><br/> _RecipientLimitPerDay_|1000|800||
+|**Action when a user exceeds the limits** <br/><br/> _ActionWhenThresholdReached_|**Restrict the user from sending mail** <br/><br/> `BlockUser`|**Restrict the user from sending mail** <br/><br/> `BlockUser`||
+|
 
 ### EOP anti-malware policy settings
 
-|Security feature name|Standard|Strict|Comment|
-|---------|---------|---------|---------|
-|Malware Detection Response|No|No|If malware is detected in an email attachment, the message will be quarantined and can be released only by an admin.|
-|"Common Attachment Types Filter" for blocking suspicious file types|On|On||
-|Malware Zero-hour Auto Purge|On|On||
-|Notify internal senders of the undelivered message|Disabled|Disabled||
-|Notify external senders of the undelivered message|Disabled|Disabled||
+To create and configure anti-malware policies, see [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
+
+|||||
+|---|---|---|---|
+|**Security feature name**|**Standard**|**Strict**|**Comment**|
+|**Do you want to notify recipients if their messages are quarantined?** <br/><br/> _Action_|No <br/><br/> _DeleteMessage_|No <br/><br/> _DeleteMessage_|If malware is detected in an email attachment, the message is quarantined and can be released only by an admin.|
+|**Common Attachment Types Filter** <br/><br/> _EnableFileFilter_|On <br/><br/> `$true`|On <br/><br/> `$true`|This setting quarantines messages that contain executable attachments based on file type, regardless of the attachment content.|
+|**Malware Zero-hour Auto Purge** <br/><br/> _ZapEnabled_|On <br/><br/> `$true`|On <br/><br/> `$true`||
+|**Notify internal senders** of the undelivered message <br/><br/> _EnableInternalSenderNotifications_|Disabled <br/><br/> `$false`|Disabled <br/><br/> `$false`||
+|**Notify external senders** of the undelivered message <br/><br/> _EnableExternalSenderNotifications_|Disabled <br/><br/> `$false`|Disabled <br/><br/> `$false`||
+|
 
 ### EOP anti-phishing policy settings
 
@@ -169,12 +185,11 @@ Do not track when users click safe links|Disabled|Disabled|This is for both poli
 |Redirect attachment on detection|Enabled|Enabled|Redirect to email address for a security administrator that knows how to determine if the attachment is malware or not|
 |ATP Safe attachments response if malware scanning for attachments times out or error occurs|Enabled|Enabled||
 
-
 ## Related topics
 
 - Are you looking for best practices with **Exchange Mail Flow / Exchange Transport Rules**? Please see [this article](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) for details.
 
-- Send suspicious mails, suspected spam, phish, or URLs to Microsoft for scan. Use the **Admin Submissions** directions in [this article](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
+- Admins and users can submit false positives (good email marked as bad) and false negatives (bad email allowed) to Microsoft for analysis. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - Use these links for info on how to **set up** your [EOP service](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service), and **configure** [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). (Don't forget to see the helpful directions in '[Protect Against Threats in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)'.)
 

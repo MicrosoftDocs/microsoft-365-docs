@@ -190,16 +190,16 @@ You can use custom branding templates to force recipients to receive a wrapper m
 
    - `template name` is the name you gave the custom branding template, for example `OME Configuration`.
 
-   To encrypt all external email with the "One week sale" template and apply the Encrypt-Only option:
+   To encrypt all external email with the "OME Configuration" template and apply the Encrypt-Only option:
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "OME Configuration"
    ```
 
    To encrypt all external email with the "OME Configuration" template and apply the Do Not Forward option:
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "OME Configuration"
    ```
 
 ## Customize the appearance of email messages and the OME portal
