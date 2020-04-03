@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to use the built-in custodian management tool in Advanced eDiscovery to coordinate your workflows and identify relevant data sources in a case.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Add custodians to an Advanced eDiscovery case

@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: "In this module, learn how to protect sensitive information using automatic classification and persistent encryption across devices."
-ms.custom: seo-marvel-<seo>
+ms.custom: seo-marvel-mar2020
 ---
 
 # CISO Workshop Module 5: Information Protection
