@@ -20,6 +20,8 @@ description: "When you create a sensitivity label, you can automatically assign 
 
 # Apply a sensitivity label to content automatically
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 When you create a sensitivity label, you can automatically assign that label to content when it contains sensitive information, or you can prompt users to apply the label that you recommend.
 
 The ability to apply sensitivity labels to content automatically is important because:
