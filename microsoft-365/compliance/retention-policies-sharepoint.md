@@ -89,7 +89,7 @@ If a user leaves your organization, any files subject to a retention policy or c
 
 ## How to configure a retention policy for SharePoint and OneDrive
 
-See [Create and configure retention policies to automatically retain or delete content](create-retention-policies.md).
+See [Create and configure retention policies](create-retention-policies.md).
 
 For the **Choose locations** page of the wizard, select one of the following options:
 

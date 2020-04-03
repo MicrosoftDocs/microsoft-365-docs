@@ -90,7 +90,7 @@ A retention policy that applies to Teams can use [Preservation Lock](retention-p
 
 ## How to configure a retention policy for Microsoft Teams
 
-See [Create and configure retention policies to automatically retain or delete content](create-retention-policies.md).
+See [Create and configure retention policies](create-retention-policies.md).
 
 For the **Choose locations** page of the wizard, select one of the following options:
 

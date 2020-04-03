@@ -19,7 +19,7 @@ search.appverid:
 description: "Use a retention policy to decide proactively whether to retain content, delete content, or both - retain and then delete the content; apply a single policy to the entire organization or specific locations or users; and apply a policy to all content or content meeting certain conditions."
 ---
 
-# Learn about retention policies to automatically retain or delete content
+# Learn about retention policies
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 

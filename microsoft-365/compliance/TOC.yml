@@ -269,7 +269,7 @@
           href: retention-policies-teams.md
         - name: Retention policies for Exchange
           href: retention-policies-exchange.md
-        - name: Create retention policies
+        - name: Create and configure retention policies
           href: create-retention-policies.md
         - name: File plan manager
           href: file-plan-manager.md
