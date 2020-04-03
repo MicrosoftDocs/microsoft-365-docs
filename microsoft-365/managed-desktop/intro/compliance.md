@@ -1,5 +1,5 @@
 ---
-title: Microsoft Managed Desktop and compliance
+title: Compliance
 description:  This article lists the compliance standards relevant to Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -8,9 +8,9 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
 
-# Microsoft Managed Desktop and compliance
+# Compliance
 
-When you use the Microsoft Managed Desktop IT-as-a-service cloud service, Microsoft provides a comprehensive set of compliance offerings. This effort helps your organization comply with the various compliance requirements.
+When you use Microsoft Managed Desktop IT-as-a-service, Microsoft provides you with a comprehensive set of compliance offerings. This effort helps your organization comply with the various compliance requirements.
 
 ## Compliance offerings
 
@@ -37,4 +37,4 @@ You can find relevant information, including control and technical requirements,
 
 ## Shared responsibility
 
-Compliance in cloud services is a shared responsibility between cloud service providers and their customers. For more, see [Shared Responsibilities for Cloud Computing](https://gallery.technet.microsoft.com/Shared-Responsibilities-81d0ff91) in the TechNet Gallery.
+Compliance for cloud services is a shared responsibility between cloud service providers and their customers. For more, see [Shared Responsibilities for Cloud Computing](https://gallery.technet.microsoft.com/Shared-Responsibilities-81d0ff91) in the TechNet Gallery.
