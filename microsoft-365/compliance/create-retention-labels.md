@@ -96,7 +96,7 @@ Auto-apply a retention label, based on the conditions that you specify.
 
 2. Follow the prompts in the wizard.
     
-    For information about configuring the conditions that automatically apply the retention label, see the [Applying a retention label automatically based on conditions](#applying-a-retention-label-automatically-based-on-conditions) section on this page.
+    For information about configuring the conditions that automatically apply the retention label, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention labels) section on this page.
     
     For inforamtion about configuring the locations, see the [Retention label policies and locations](#retention-label-policies-and-locations) section on this page.
 
@@ -115,7 +115,7 @@ In Exchange, auto-apply retention labels (for both queries and sensitive informa
 Exchange public folders and Skype do not support retention labels.
 
 
-## Auto-apply retention labels
+## Configuring conditions for auto-apply retention labels
 
 You can apply retention labels to content automatically when that content contains:
   
