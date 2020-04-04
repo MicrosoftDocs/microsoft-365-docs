@@ -115,41 +115,8 @@ In addition, a retention label has two retention options that are available only
 ![Retention settings with options specific to labels](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   
 
-## The principles of retention, or what takes precedence?
 
-It's possible or even likely that content might have several retention policies applied to it, each with a different action (retain, delete, or both) and retention period. What takes precedence? At the highest level, rest assured that content being retained by one policy can't be permanently deleted by another policy.
-  
-![Diagram of the principles of retention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
-  
-To understand how different labels with retention actions are applied to content, keep these principles of retention in mind:
-  
-1. **Retention wins over deletion.** Suppose that one retention policy says to delete Exchange email after three years, but another retention policy says to retain Exchange email for five years and then delete it. Any content that reaches three years old will be deleted and hidden from the users' view, but still retained in the Recoverable Items folder until the content reaches five years old, when it will be permanently deleted. 
-    
-2. **The longest retention period wins.** If content's subject to multiple policies that retain content, it will be retained until the end of the longest retention period. 
-    
-3. **Explicit inclusion wins over implicit inclusion.** This means: 
-    
-    1. If a retention label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that retention label takes precedence over both a policy assigned at the site or mailbox level and a default retention label assigned by the document library. For example, if the explicit retention label says to retain for 10 years, but the retention policy assigned to the site says to retain for only five years, the retention label takes precedence. Auto-applied retention labels are considered implicit, not explicit, because they're applied automatically by Office 365.
-    
-    2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive for Business account, that policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive for Business accounts but doesn't specifically include that user's mailbox.
-    
-4. **The shortest deletion period wins.** Similarly, if content's subject to multiple policies that delete content (with no retention), it will be deleted at the end of the shortest retention period. 
-    
-Understand that the principles of retention work as a tie-breaking flow from top to bottom: If the rules applied by all policies or labels are the same at one level, the flow moves down to the next level to determine precedence for which rule is applied.
-  
-Finally, a retention policy or retention label cannot permanently delete any content that's on hold for eDiscovery. When the hold is released, the content again becomes eligible for the cleanup process described above.
 
-### Precedence for auto-labeling with trainable classifiers
-
-All retention labels that are configured for trainable classifiers are evaluated simultaneously. If an item is detected by more than one trainable classifier, the following criteria is used to determine which retention label to apply:
-
-1. Retention labels configured for retain-only or retain and then delete have a higher priority over retention labels that are configured for delete-only.
-
-2. For retention labels that are configured for retain-only or retain and then delete, the retention label that is configured for the longest retention period wins.
-
-3. For retention labels that are configured for delete-only, the retention label that has been configured for the shortest period wins.
-
-4. Retention labels with the same action and the same period result in a retention label selection that is non-deterministic.
 
 ## Where published retention labels can appear to end users
 
@@ -226,6 +193,33 @@ First, create and configure the sensitivity labels that you want to make availab
 
 Then, create one or more label policies that contain the labels and policy settings that you configure. It's the label policy that publishes the labels and settings for your chosen users and locations.
 
+## Applying a retention label automatically based on conditions
+
+One of the most powerful features of retention labels is the ability to apply them automatically to content that matches certain conditions. In this case, people in your organization don't need to apply the retention labels. Office 365 does the work for them.
+  
+![Diagram of roles and tasks for auto-apply labels](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
+  
+Auto-applying retention labels are powerful because:
+  
+- You don't need to train your users on all of your classifications.
+    
+- You don't need to rely on users to classify all content correctly.
+    
+- Users no longer need to know about data governance policies - they can focus on their work.
+    
+You can choose to apply retention labels to content automatically when that content contains:
+  
+- [Specific types of sensitive information](create-retention-labels.md#auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information)
+    
+- [Specific keywords that match a query you create](create-retention-labels.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+
+- [A match for trainable classifiers](create-retention-labels.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
+    
+![Choose condition page for auto-apply label](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
+
+> [!TIP]
+> See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-driven retention.
+
 ## Applying a retention label to email by using rules
 
 In Outlook, you can create rules to apply a retention label or retention policy.
@@ -254,6 +248,43 @@ A retention label can enforce retention actions on content. In addition, you can
   
 For more information, see [Using a label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy).
   
+
+## The principles of retention, or what takes precedence?
+
+It's possible or even likely that content might have several retention policies applied to it, each with a different action (retain, delete, or both) and retention period. What takes precedence? At the highest level, rest assured that content being retained by one policy can't be permanently deleted by another policy.
+  
+![Diagram of the principles of retention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+  
+To understand how different labels with retention actions are applied to content, keep these principles of retention in mind:
+  
+1. **Retention wins over deletion.** Suppose that one retention policy says to delete Exchange email after three years, but another retention policy says to retain Exchange email for five years and then delete it. Any content that reaches three years old will be deleted and hidden from the users' view, but still retained in the Recoverable Items folder until the content reaches five years old, when it will be permanently deleted. 
+    
+2. **The longest retention period wins.** If content's subject to multiple policies that retain content, it will be retained until the end of the longest retention period. 
+    
+3. **Explicit inclusion wins over implicit inclusion.** This means: 
+    
+    1. If a retention label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that retention label takes precedence over both a policy assigned at the site or mailbox level and a default retention label assigned by the document library. For example, if the explicit retention label says to retain for 10 years, but the retention policy assigned to the site says to retain for only five years, the retention label takes precedence. Auto-applied retention labels are considered implicit, not explicit, because they're applied automatically by Office 365.
+    
+    2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive for Business account, that policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive for Business accounts but doesn't specifically include that user's mailbox.
+    
+4. **The shortest deletion period wins.** Similarly, if content's subject to multiple policies that delete content (with no retention), it will be deleted at the end of the shortest retention period. 
+    
+Understand that the principles of retention work as a tie-breaking flow from top to bottom: If the rules applied by all policies or labels are the same at one level, the flow moves down to the next level to determine precedence for which rule is applied.
+  
+Finally, a retention policy or retention label cannot permanently delete any content that's on hold for eDiscovery. When the hold is released, the content again becomes eligible for the cleanup process described above.
+
+### Precedence for auto-labeling with trainable classifiers
+
+All retention labels that are configured for trainable classifiers are evaluated simultaneously. If an item is detected by more than one trainable classifier, the following criteria is used to determine which retention label to apply:
+
+1. Retention labels configured for retain-only or retain and then delete have a higher priority over retention labels that are configured for delete-only.
+
+2. For retention labels that are configured for retain-only or retain and then delete, the retention label that is configured for the longest retention period wins.
+
+3. For retention labels that are configured for delete-only, the retention label that has been configured for the shortest period wins.
+
+4. Retention labels with the same action and the same period result in a retention label selection that is non-deterministic.
+
 ## Monitor retention labels
 
 After you publish or auto-apply your retention labels, you'll want to verify that they're being applied to content as you intended. To monitor your retention labels:
