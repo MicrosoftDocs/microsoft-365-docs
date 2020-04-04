@@ -79,10 +79,10 @@ Publish retention labels so that they can be manually applied by users.
 
 ## Auto-apply a retention label
 
+Auto-apply a retention label, based on the conditions that you specify.
+
 > [!NOTE]
 > If you are using records management: You can auto-apply a retention label only when it's not configured to declare content as a record. 
-
-Auto-apply a retention label, based on the conditions that you specify. 
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
     
