@@ -36,7 +36,7 @@ Here are some of the key tasks users can do when they are assigned to the Exchan
     
 - Set up mailbox features such as the mailbox sharing policy: how users can share calendar and contacts information with others outside of your organization. 
     
-- Set up "[Send As](https://support.office.com/article/2B828C5F-41AB-4904-97B9-3B63D8129C4E.aspx)" and "[Send on Behalf](https://support.office.com/article/C5E7749D-244E-477F-998E-55D3876C22EC.aspx)" delegates for someone's mailbox. For example, an executive may want their assistant to have the ability to send mail on their behalf. 
+- Set up "[Send As](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)" and "[Send on Behalf](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)" delegates for someone's mailbox. For example, an executive may want their assistant to have the ability to send mail on their behalf. 
     
 - [Create a shared mailbox](../email/create-a-shared-mailbox.md) so a group of people can monitor and send email from a common email address. 
     
