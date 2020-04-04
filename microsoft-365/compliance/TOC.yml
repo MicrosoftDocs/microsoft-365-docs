@@ -279,7 +279,7 @@
           href: create-retention-labels.md
         - name: Comply with SEC Rule 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Create and publish retention labels by using PowerShell
+        - name: Use PowerShell to create and publish retention labels
           href: bulk-create-publish-labels-using-powershell.md
         - name: Event-based retention
           href: event-driven-retention.md
