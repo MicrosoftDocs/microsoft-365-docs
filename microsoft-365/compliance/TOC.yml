@@ -261,7 +261,7 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Retain data
       items: 
-        - name: Understand retention policies
+        - name: Learn about retention policies
           href: retention-policies.md
         - name: Retention policies for SharePoint
           href: retention-policies-sharepoint.md

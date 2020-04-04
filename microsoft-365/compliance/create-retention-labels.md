@@ -41,10 +41,10 @@ These permissions are required only to create and apply retention labels and a l
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
     
-    If you are using records management: **Information governance**:
+    - If you are using records management:
         - **Solutions** > **Records management** > **File plan** tab > **+ Create a label** > **Retention label**
-    
-    If you are not using records management:
+        
+        - If you are not using records management:
         - **Solutions** > **Information governance** > **Labels** tab > + **Create a label**
     
     Don't immediately see your option? First select **Show all**. 
@@ -65,17 +65,17 @@ Publish retention labels so that they can be manually applied by users.
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
     
-    If you are using records management: **Information governance**:
-        - **Solutions** > **Records management** > **Label policies** tab > **Publish labels**
+    If you are using records management:
+        - **Solutions** > **Records management** > > **Label policies** tab > **Publish labels**
     
-    If you are not using records management::
+    If you are not using records management:
         - **Solutions** > **Information governance** > **Label policies** tab > **Publish labels**
     
     Don't immediately see your option? First select **Show all**. 
 
 2. Follow the prompts in the wizard.
     
-    For inforamtion about configuring the locations, see the [Retention label policies and locations](#retention-label-policies-and-locations) section on this page. 
+    For information about configuring the locations, see the [Retention label policies and locations](#retention-label-policies-and-locations) section on this page. 
 
 ## Auto-apply a retention label
 
@@ -89,7 +89,7 @@ Auto-apply a retention label, based on the conditions that you specify.
     If you are using records management: **Information governance**:
         - **Solutions** > **Records management** > **Label policies** tab > **Auto-apply label**
     
-    If you are not using records management::
+    If you are not using records management:
         - **Solutions** > **Information governance** > **Label policies** tab > **Auto-apply label**
     
     Don't immediately see your option? First select **Show all**. 
