@@ -149,6 +149,8 @@
           href: document-fingerprinting.md
         - name: DLP functions for sensitive information
           href: what-the-dlp-functions-look-for.md
+    - name: Encryption in M365
+      href: encryption.md
     - name: Customer Key
       items: 
         - name: Service encryption with Customer Key in Office 365
@@ -200,6 +202,8 @@
               href: legacy-information-for-message-encryption.md
             - name: Set up Azure Rights Management for the previous version of Office 365 Message Encryption
               href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: Set up IRM in SharePoint admin center
+      href: set-up-irm-in-sp-admin-center.md
     - name: Understand data classification (preview)
       href: data-classification-overview.md
       items: 
