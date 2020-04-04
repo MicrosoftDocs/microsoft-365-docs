@@ -32,9 +32,9 @@ To access file plan manager in the security and compliance center, go to **Recor
 
 To access file plan manager, must have one of the following admin roles:
     
-    - Retention Manager
-    
-    - View-only Retention Manager
+- Retention Manager
+
+- View-only Retention Manager
 
 ## Default retention labels and label policy
 
