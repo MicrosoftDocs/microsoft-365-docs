@@ -30,7 +30,7 @@ To access file plan manager in the security and compliance center, go to **Recor
 
 ## Accessing file plan manager
 
-To access file plan manager, must have one of the following admin roles:
+To access file plan manager, you must have one of the following admin roles:
     
 - Retention Manager
 
