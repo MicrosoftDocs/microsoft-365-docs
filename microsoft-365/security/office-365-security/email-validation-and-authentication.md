@@ -33,7 +33,7 @@ Email authentication verify email messages are sent by that sender email address
 
 The rest of this topic explains how these technologies work, and how EOP uses them to check inbound email.
 
-## Use email authentication to help stop spoofing
+## Use email authentication to help prevent spoofing
 
 DMARC prevents spoofing by examining the **From** address in messages (the sender email address that users see in their email client). Destination email organizations can also verify that the email domain has passed SPF or DKIM, which means that the domain has been authenticated and is therefore not spoofed. 
 
@@ -45,158 +45,107 @@ As of March 2018, only 9% of domains of companies in the Fortune 500 publish str
 
 The proportion of small-to-medium sized companies that are not in the Fortune 500 that publish strong email authentication policies is smaller, and smaller still for email domains that are outside of North America and western Europe.
 
-This is a big problem because while enterprises may not be aware of how email authentication works, attackers fully understand and take advantage it.
+This is a big problem because while enterprises may not be aware of how email authentication works, attackers fully understand and take advantage it. Because phishing is such a problem, and because of the limited adoption of strong email authentication policies, Microsoft uses *implicit email authentication* to check inbound email.
 
-For information on setting up SPF, DKIM, and DMARC, see the section "*Customers of Office 365"*  later on in this document.
-
-### Stop spoofing with implicit email authentication
-
-Because phishing is such a problem, and because of the limited adoption of strong email authentication policies, Microsoft uses what's called *implicit email authentication* for inbound email. Implicit email authentication is built on numerous extensions to regular email authentication policies. These include sender reputation, sender history, recipient history, behavioral analysis, and other advanced techniques. A message sent from a domain that doesn't use email authentication policies will be marked as spoof unless it contains other signals to indicate that it is legitimate.
+Implicit email authentication is built on numerous extensions to regular email authentication policies. These extensions include sender reputation, sender history, recipient history, behavioral analysis, and other advanced techniques. A message sent from a domain that doesn't use email authentication policies will be marked as spoof unless it contains other signals to indicate that it's legitimate.
 
 To see Microsoft's general announcement, see [A Sea of Phish Part 2 - Enhanced Anti-spoofing in Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
 
-## Identifying that a message is classified as spoofed
+## Composite authentication
 
-### Composite authentication
+While SPF, DKIM, and DMARC are all useful by themselves, they don't communicate enough authentication status in the event a message has no explicit authentication records. Therefore, Microsoft has developed an algorithm for implicit email authentication that combines multiple signals into a single value called _composite authentication_, or compauth for short. The compauth value is stamped into the **Authentication-Results** header in the message headers.
 
-While SPF, DKIM, and DMARC are all useful by themselves, they don't communicate enough authentication status in the event a message has no explicit authentication records. Therefore, Microsoft has developed an algorithm that combines multiple signals into a single value called Composite Authentication, or CompAuth for short. Customers in Office 365 have CompAuth values stamped into the **Authentication-Results** header in the message headers.
+> Authentication-Results:<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> reason=\<yyy\>
 
-```text
-Authentication-Results:
-  compauth=<fail|pass|softpass|none> reason=<yyy>
-```
+The values are explained at [Authentication-results message header fields used by Office 365 email authentication](anti-spam-message-headers.md#authentication-results-message-header-fields-used-by-office-365-email-authentication).
 
-The CompAuth values are described in the following table.
+By looking at the headers of a message, admins or even end users can determine how Office 365 arrived at the conclusion that the sender is spoofed.
 
-|||
-|---|---|
-|**CompAuth result**|**Description**|
-|fail|Message failed explicit authentication (sending domain published records explicitly in DNS) or implicit authentication (sending domain did not publish records in DNS, so Office 365 interpolated the result as if it had published records).|
-|pass|Message passed explicit authentication (message passed DMARC, or [Best Guess Passed DMARC](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)) or implicit authentication with high confidence (sending domain does not publish email authentication records, but Office 365 has strong backend signals to indicate the message is likely legitimate).|
-|softpass|Message passed implicit authentication with low-to-medium confidence (sending domain does not publish email authentication, but Office 365 has backend signals to indicate the message is legitimate but the strength of the signal is weaker).|
-|none|Message did not authenticate (or it did authenticate but did not align), but composite authentication not applied due to sender reputation or other factors.|
-|
+### Differentiate between different types of spoofing
 
-The reason codes are described in the following table.
+Microsoft differentiates between two different types of spoofed messages:
 
-|||
-|---|---|
-|**Reason**|**Description**|
-|0xx|The message failed composite authentication:<ul><li>**000**: The message failed DMARC with an action of reject or quarantine.</li><li>**001**: The message failed implicit email authentication. This means that the sending domain did not have email authentication records published, or if they did, they had a weaker failure policy (SPF soft fail or neutral, DMARC policy of `p=none`).</li><li>**002**: The organization has a policy for the sender/domain pair that is explicitly prohibited from sending spoofed email. This setting is manually set by an admin.</li><li>**010**: The message failed DMARC with an action of reject or quarantine, and the sending domain is one of your organization's accepted-domains (this is part of self-to-self, or intra-org, spoofing).</li></ul>|
-|1xx<br/>2xx<br/>3xx<br/>4xx<br/>5xx|Various internal codes for why a message passed implicit authentication, or had no authentication but no action was applied.|
-|6xx|The message failed implicit email authentication, and the sending domain is one of your organization's accepted domains (this is part of self-to-self, or intra-org, spoofing).|
-|
+- **Intra-org spoofing**: Also known as self-to-self spoofing. For example:
 
-By looking at the headers of a message, an admin or even an end user can determine how Office 365 arrives at the conclusion that the sender may be spoofed.
+  - The sender and recipient are in the same domain. For example:
+    > From: chris@contoso.com <br/> To: michelle@contoso.com
 
-### Differentiating between different types of spoofing
+  - The sender and the recipient are in subdomains of the same domain:
+    > From: laura@marketing.fabrikam.com <br/> To: julia@engineering.fabrikam.com
 
-Microsoft differentiates between two different types of spoofing messages:
+  - The sender and recipient are in different domains that belong to the same organization (that is, both domains are configured as [accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the same organization):
+    > From: sender @ microsoft.com <br/> To: recipient @ bing.com
 
-#### Intra-org spoofing
+    Spaces are used in the email addresses to prevent spambot harvesting.
 
-Also known as self-to-self spoofing, this occurs when the domain in the From: address is the same as, or aligns with, the recipient domain (when recipient domain is one of your organization's [accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)); or, when the domain in the From: address is part of the same organization.
+  Messages that fail composite authentication due to intra-org spoofing contain the following header values:
 
-For example, the following has sender and recipient from the same domain (contoso.com). Spaces are inserted into the email address to prevent spambot harvesting on this page):
+  `Authentication-Results: ... compauth=fail reason=6xx`
 
-> From: sender @ contoso.com <br/> To: recipient @ contoso.com
+  `X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
 
-The following has the sender and recipient domains aligning with the organizational domain (fabrikam.com):
+  - `reason=6xx` indicates intra-org spoofing.
 
-> From: sender @ foo.fabrikam.com <br/> To: recipient @ bar.fabrikam.com
+  - CAT is the category of the message, and it is normally SPM (spam), but occasionally might be HSPM (high confidence spam) or PHISH (phishing) depending upon what other types of patterns were detected in the message.
 
-The following sender and recipient domains are different (microsoft.com and bing.com), but they belong to the same organization (that is, both are part of the organization's Accepted Domains):
+  - SFTY is the safety level of the message. 9 indicates phishing, .11 indicates intra-org spoofing.
 
-> From: sender @ microsoft.com <br/> To: recipient @ bing.com
+- **Cross-domain spoofing**: The sender and recipient domains are different, and have no relationship to each other (also known as external domains). For example:
+    > From: chris@contoso.com <br/> To: michelle@tailspintoys.com
 
-Messages that fail intra-org spoofing contain the following values in the headers:
+  Messages that fail composite authentication due to cross-domain spoofing contain the following headers values:
 
-`X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
+  `Authentication-Results: ... compauth=fail reason=000/001`
 
-CAT is the category of the message, and it is normally stamped as SPM (spam), but occasionally may be HSPM (high confidence spam) or PHISH (phishing) depending upon what other types of patterns occur in the message.
+  `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
 
-The SFTY is the safety level of the message, the first digit (9) means the message is phishing, and second set of digits after the dot (11) means it is intra-org spoofing.
+  - `reason=000` value indicates the message failed explicit email authentication. `reason=001` indicates the message failed implicit email authentication.
 
-There is no specific reason code for Composite Authentication for intra-org spoofing, that will be stamped later in 2018 (timeline not yet defined).
+  - SFTY is the safety level of the message. 9 indicates phishing, .22 indicates cross-domain spoofing.
 
-#### Cross-domain spoofing
+For both intra-org and cross-domain spoofing, the following red safety tip is stamped on the message:
 
-This occurs when the sending domain in the From: address is an external domain to the receiving organization. Messages that fail Composite Authentication due to cross-domain spoofing contain the following values in the headers:
+> The sender failed our fraud detection checks and may not be who they appear to be.
 
-`Authentication-Results: ... compauth=fail reason=000/001`
+You can only differentiate between intra-org spoofing and cross-domain spoofing when you compare the From address to the recipient's address, or by inspecting the message headers.
 
-`X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
+## Why email authentication is not always enough to stop spoofing
 
-In both cases, the following red safety tip is stamped in the message, or an equivalent that is customized to the recipient mailbox's language:
+If a domain has no SPF records or if they're incorrectly configured, messages from senders in the domain will be identified as spoofed unless the destination email service has back-end intelligence that says the message is legitimate.
 
-![Red safety tip - fraud detection](../../media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
+For example, prior to spoof intelligence, inbound messages from senders in the fabrikam domain would have the following values stamped in the message header if the fabrikam domain has no SPF, DKIM, or DMARC records:
 
-It's only by looking at the From: address and knowing what your recipient email is, or by inspecting the email headers, that you can differentiate between intra-org and cross-domain spoofing.
+> Authentication-Results: spf=none (sender IP is 10.2.3.4)<br/>&nbsp;&nbsp;&nbsp;smtp.mailfrom=fabrikam.com; contoso.com; dkim=none<br/>&nbsp;&nbsp;&nbsp;(message not signed) header.d=none; contoso.com; dmarc=none<br/>&nbsp;&nbsp;&nbsp;action=none header.from=fabrikam.com;<br/>From: chris@fabrikam.com<br/>To: michelle@ contoso.com
 
-## How customers of Office 365 can prepare themselves for the new anti-spoofing protection
+With spoof intelligence and implicit email authentication, the same message is stamped with the additional value `compauth=fail reason=001`.
 
-### Information for administrators
+If fabrikam.com configures an SPF without a DKIM record, the message would pass composite authentication, because the domain that passed SPF is aligned with the domain in the From address:
 
-As an administrator of an organization in Office 365, there are several key pieces of information you should be aware of.
+> Authentication-Results: spf=pass (sender IP is 10.2.3.4)<br/>&nbsp;&nbsp;&nbsp;smtp.mailfrom=fabrikam.com; contoso.com; dkim=none<br/>&nbsp;&nbsp;&nbsp;(message not signed) header.d=none; contoso.com; dmarc=bestguesspass<br/>&nbsp;&nbsp;&nbsp;action=none header.from=fabrikam.com; compauth=pass reason=109<br/>From: chris@fabrikam.com<br/>To: michelle@ contoso.com
 
-### Understanding why email authentication is not always enough to stop spoofing
+If fabrikam.com configures a DKIM record without an SPF record, the message would also pass composite authentication, because the domain in the DKIM-Signature that passed is aligned with the domain in the From address:
 
-The new anti-spoofing protection relies on email authentication (SPF, DKIM, and DMARC) to not mark a message as spoofing. A common example is when a sending domain has never published SPF records. If there are no SPF records or they are incorrectly set up, a sent message will be marked as spoofed unless Microsoft has back-end intelligence that says the message is legitimate.
-
-For example, prior to anti-spoofing being deployed, a message may have looked like the following with no SPF record, no DKIM record, and no DMARC record:
+> Authentication-Results: spf=none (sender IP is 10.2.3.4)<br/>&nbsp;&nbsp;&nbsp;smtp.mailfrom=fabrikam.com; contoso.com; dkim=pass<br/>&nbsp;&nbsp;&nbsp;(signature was verified) header.d=outbound.fabrikam.com;<br/>&nbsp;&nbsp;&nbsp;contoso.com; contoso.com; dmarc=bestguesspass action=none<br/>&nbsp;&nbsp;&nbsp;action=none<br/>&nbsp;&nbsp;&nbsp;header.from=fabrikam.com; compauth=pass reason=109<br/>From: chris@fabrikam.com<br/>To: michelle@ contoso.com
 
 ```text
-Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
-  (message not signed) header.d=none; contoso.com; dmarc=none
-  action=none header.from=fabrikam.com;
-From: sender @ fabrikam.com
-To: receiver @ contoso.com
-```
-
-After anti-spoofing, if you have Office 365 Enterprise E5, EOP, or ATP, the compauth value is stamped:
-
-```text
-Authentication-Results: spf=none (sender IP is 1.2.3.4)
-  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
-  (message not signed) header.d=none; contoso.com; dmarc=none
-  action=none header.from=fabrikam.com; compauth=fail reason=001
-From: sender @ fabrikam.com
-To: receiver @ contoso.com
-```
-
-If fabrikam.com fixed this by setting up an SPF record but not a DKIM record, this would pass composite authentication because the domain that passed SPF aligned with the domain in the From: address:
-
-```text
-Authentication-Results: spf=pass (sender IP is 1.2.3.4)
-  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
-  (message not signed) header.d=none; contoso.com; dmarc=bestguesspass
-  action=none header.from=fabrikam.com; compauth=pass reason=109
-From: sender @ fabrikam.com
-To: receiver @ contoso.com
-```
-
-Or, if they set up a DKIM record but not an SPF record, this would also pass composite authentication because the domain in the DKIM-Signature that passed aligned with the domain in the From: address:
-
-```text
-Authentication-Results: spf=none (sender IP is 1.2.3.4)
+Authentication-Results: spf=none (sender IP is 10.2.3.4)
   smtp.mailfrom=fabrikam.com; contoso.com; dkim=pass
   (signature was verified) header.d=outbound.fabrikam.com;
   contoso.com; dmarc=bestguesspass action=none
   header.from=fabrikam.com; compauth=pass reason=109
-From: sender @ fabrikam.com
-To: receiver @ contoso.com
+From: chris@fabrikam.com
+To: michelle@contoso.com
 ```
 
 However, a attacker may also set up SPF and DKIM and sign the message with their own domain, but specify a different domain in the From: address. Neither SPF nor DKIM requires the domain to align with the domain in the From: address, so unless fabrikam.com published DMARC records, this would not be marked as a spoof using DMARC:
 
 ```text
-Authentication-Results: spf=pass (sender IP is 5.6.7.8)
+Authentication-Results: spf=pass (sender IP is 172.17.17.8)
   smtp.mailfrom=maliciousDomain.com; contoso.com; dkim=pass
   (signature was verified) header.d=maliciousDomain.com;
   contoso.com; dmarc=none action=none header.from=fabrikam.com;
-From: sender @ fabrikam.com
-To: receiver @ contoso.com
+From: chris@fabrikam.com
+To: michelle@contoso.com
 ```
 
 In the email client (Outlook, Outlook on the web, or any other email client), only the From: domain is displayed, not the domain in the SPF or DKIM, and that can mislead the user into thinking the message came from fabrikam.com, but actually came from maliciousDomain.com.
