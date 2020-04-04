@@ -75,7 +75,7 @@ Publish retention labels so that they can be manually applied by users.
 
 2. Follow the prompts in the wizard.
     
-    For information about configuring the locations, see the [Retention label policies and locations](#retention-label-policies-and-locations) section on this page. 
+    For information about configuring the locations, see the [Retention labels and locations](#retention-labels-and-locations) section on this page. 
 
 ## Auto-apply a retention label
 
