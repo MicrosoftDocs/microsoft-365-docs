@@ -583,9 +583,9 @@ The following table lists user administration activities that are logged when an
 |:-----|:-----|:-----|
 |Added user|Add user|An Office 365 user account was created.|
 |Changed user license|Change user license|The license assigned to a user what changed. To see what licenses were changes, see the corresponding **Updated user** activity.|
-|Changed user password|Change user password|Administrator changed the password for a user.|
+|Changed user password|Change user password|A user changes their password. Self-service password reset has to be enabled (for all or selected users) in your organization to allow users to reset their password. You can also track self-service password reset activity in Azure Active Directory. For more information, see [Reporting options for Azure AD password management](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
 |Deleted user|Delete user|An Office 365 user account was deleted.|
-|Reset user password|Reset user password|Administrator reset the password for a user.|
+|Reset user password|Reset user password|Administrator resets the password for a user.|
 |Set property that forces user to change password|Set force change user password|Administrator set the property that forces a user to change their password the next time the user sign in to Office 365.|
 |Set license properties|Set license properties|Administrator modifies the properties of a licensed assigned to a user.|
 |Updated user|Update user|Administrator changes one or more properties of a user account. For a list of the user properties that can be updated, see the "Update user attributes" section in [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).|
