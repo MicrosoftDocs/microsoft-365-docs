@@ -273,8 +273,10 @@
           href: create-retention-policies.md
         - name: File plan manager
           href: file-plan-manager.md
-        - name: Retention labels
+        - name: Learn about retention labels
           href: labels.md
+        - name: Create and publish retention labels
+          href: create-retention-labels.md
         - name: Comply with SEC Rule 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
         - name: Create and publish retention labels by using PowerShell
@@ -323,9 +325,11 @@
           items: 
             - name: File plan manager
               href: file-plan-manager.md
-            - name: Retention labels
+            - name: Learn about retention labels
               href: labels.md
-            - name: Create and publish retention labels by using PowerShell
+            - name: Create and publish retention labels
+              href: create-retention-labels.md
+            - name: Use PowerShell to create and publish retention labels at scale
               href: bulk-create-publish-labels-using-powershell.md
             - name: View label usage with label analytics
               href: label-analytics.md
