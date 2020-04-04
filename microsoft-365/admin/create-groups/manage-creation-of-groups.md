@@ -76,7 +76,7 @@ To manage who creates Groups, the following people need Azure AD Premium license
 - The members of the security group who are allowed to create groups
 
 > [!NOTE]
-> Check [this article](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups) for more details about how to assign Azure licenses.
+> See [Assign or remove licenses in the Azure Active Directory portal](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) for more details about how to assign Azure licenses.
 
 The following people don't need Azure AD Premium or Azure AD Basic EDU licenses assigned to them:
 
