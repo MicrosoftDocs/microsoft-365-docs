@@ -275,7 +275,7 @@
           href: file-plan-manager.md
         - name: Learn about retention labels
           href: labels.md
-        - name: Create and publish retention labels
+        - name: Create, publish, and auto-apply retention labels
           href: create-retention-labels.md
         - name: Comply with SEC Rule 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md

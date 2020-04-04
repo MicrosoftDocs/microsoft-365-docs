@@ -1,5 +1,5 @@
 ---
-title: "Learn about retention labels"
+title: "Create, publish, and auto-apply retention labels"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,10 +16,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Use retention labels to classify data across your organization for governance, and enforce retention rules based on that classification. You can also use retention labels to implement a records management solution for Microsoft 365."
+description: "Instructions to create, publish, and auto-apply retention labels to retain what you need, delete what you don't, and declare an item a record in your Office 365 environment."
 ---
 
-# Create and publish retention labels
+# Create, publish, and auto-apply retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
