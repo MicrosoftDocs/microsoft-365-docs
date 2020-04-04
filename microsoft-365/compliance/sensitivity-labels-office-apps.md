@@ -25,6 +25,12 @@ When you have [published](create-sensitivity-labels.md#publish-sensitivity-label
 
 Use the information in this article to help you successfully manage sensitivity labels in Office apps. For example, identify the minimum versions of apps you need to support built-in labeling, and understand interactions with the Azure Information Protection unified labeling client and compatibility with other apps and services.
 
+## Labeling client for desktop apps
+
+To use sensitivity labels that are built into Office desktop apps for Windows and Mac, you must have a subscription edition of Office. This labeling client doesn't support standalone editions of Office, such as Office 2016 or Office 2019.
+
+To use sensitivity labels with these standalone editions of Office on Windows computers, install the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2).
+
 ## Support for sensitivity label capabilities in apps
 
 For each capability, the following tables list the minimum version you need for that app to support sensitivity labels using built-in labeling. Or, if the label capability is in public preview or under review for a future release.
