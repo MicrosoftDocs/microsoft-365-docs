@@ -1,5 +1,5 @@
 ---
-title: "Permissions in the Microsoft 365 compliance center and Microsoft 365 security center"
+title: Permissions in the security and compliance centers
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,6 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 description: "By using the Microsoft 365 security center or Microsoft 365 compliance center, you can manage permissions centrally for all tasks related to security or compliance."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Permissions in the Microsoft 365 compliance center and Microsoft 365 security center

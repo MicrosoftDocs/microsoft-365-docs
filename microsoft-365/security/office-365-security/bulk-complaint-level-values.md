@@ -1,5 +1,5 @@
 ---
-title: "Bulk Complaint Level values, bulk mailers, BCL levels, how BCL works, BCL ratings, Antispam, Antispam header, bulk mail filtering, stop bulk mail"
+title: Bulk Complaint Level values
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,6 +16,7 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: "Learn about bulk bomplain level (BCL) values in Office 365."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Bulk complaint level (BCL) in Office 365

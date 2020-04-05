@@ -1,5 +1,5 @@
 ---
-title: "Install the Junk Email Reporting Add-in for Microsoft Outlook"
+title: Install junk email reporting add-in - Microsoft Outlook
 f1.keywords:
 - NOCSH
 ms.author: MSFTTracyP
@@ -14,6 +14,7 @@ ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: "In this articleSupported LanguagesInstall the Junk Email Reporting Add-inUninstall the Junk Email Reporting Add-inFor more information"
+ms.custom: seo-marvel-apr2020
 ---
 
 # Install the Junk Email Reporting Add-in for Microsoft Outlook

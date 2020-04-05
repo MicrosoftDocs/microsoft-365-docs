@@ -1,5 +1,5 @@
 ---
-title: "Manage quarantined messages and files as an admin in Office 365"
+title: Manage quarantined messages and files as an admin
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,6 +16,7 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: "Admins can view, release, and delete all types of quarantined messages for all users. Only admins can manage messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (transport rules)."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Manage quarantined messages and files as an admin in Office 365

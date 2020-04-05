@@ -1,5 +1,5 @@
 ---
-title: App monitoring and reporting in the Microsoft 365 security center
+title: App monitoring & reporting - Security center
 description: Describes how you can gain more insight into cloud app use in your organization
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, apps
 ms.prod: microsoft-365-enterprise
@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance  
 ms.topic: article
 search.appverid: met150
+ms.custom: seo-marvel-apr2020
 ---
 
 # App monitoring and reporting in the Microsoft 365 security center

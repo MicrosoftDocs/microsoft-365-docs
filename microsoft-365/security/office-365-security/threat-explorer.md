@@ -1,5 +1,5 @@
 ---
-title: "Threat Explorer and real-time detections, new to Threat Explorer, changes to Threat Explorer, new to Office 365, Security, Cloud Security, new to Security in ATP, new ATP features"
+title: Threat Explorer and real-time detections
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,6 +16,7 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection: 
 - M365-security-compliance
 description: "Learn about Explorer and real-time detections in the Security &amp; Compliance Center."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Threat Explorer and real-time detections

@@ -1,5 +1,5 @@
 ---
-title: " Security Information and Event Management (SIEM) server integration with Microsoft 365 services and applications"
+title: SIEM server integration with Microsoft 365 services and applications
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,6 +15,7 @@ ms.collection:
 ms.custom: 
  - Ent_Solutions
  - SIEM
+ - seo-marvel-apr2020
 description: "Get an overview of Security Information and Event Management (SIEM) server integration with your Microsoft 365 cloud services and applications"
 ---
 

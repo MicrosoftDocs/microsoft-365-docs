@@ -1,5 +1,5 @@
 ---
-title: Order and precedence of email protection in Office 365
+title: Order and precedence of email protection
 keywords: security, malware, Microsoft 365, M365, security center, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
 f1.keywords:
 - NOCSH
@@ -14,6 +14,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Describes the application order of Office 365 protections, and how the priority value in protection policies determines which policy is applied.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Order and precedence of email protection in Office 365

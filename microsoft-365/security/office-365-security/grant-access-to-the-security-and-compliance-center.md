@@ -1,5 +1,5 @@
 ---
-title: "Give users access to the Office 365 Security & Compliance Center"
+title: Provide user access - Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,6 +18,7 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: "Users need to be assigned permissions in the Office 365 Security & Compliance Center before they can manage any of its security or compliance features."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Give users access to the Office 365 Security & Compliance Center

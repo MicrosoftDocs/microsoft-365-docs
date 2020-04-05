@@ -1,5 +1,5 @@
 ---
-title: "Download existing reports in the Security &amp; Compliance Center"
+title: Download existing reports - Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: "Learn how to download one or more existing reports in the Security &amp; Compliance Center."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Download existing reports in the Security &amp; Compliance Center

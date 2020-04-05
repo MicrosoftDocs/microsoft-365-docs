@@ -1,5 +1,5 @@
 ---
-title: "S/MIME for message signing and encryption in Exchange Online"
+title: S/MIME for encryption in Exchange Online - Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,6 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: "Admins can learn about using S/MIME in Exchange Online."
+ms.custom: seo-marvel-apr2020
 ---
 
 # S/MIME for message signing and encryption in Exchange Online

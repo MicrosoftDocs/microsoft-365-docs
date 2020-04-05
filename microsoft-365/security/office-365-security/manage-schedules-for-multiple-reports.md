@@ -1,5 +1,5 @@
 ---
-title: "Manage schedules for multiple reports in the Security &amp; Compliance Center"
+title: Schedules for multiple reports - Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -14,6 +14,7 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: "Learn how to view, edit, and manage schedules for reports in the Security &amp; Compliance Center."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Manage schedules for multiple reports in the Security &amp; Compliance Center

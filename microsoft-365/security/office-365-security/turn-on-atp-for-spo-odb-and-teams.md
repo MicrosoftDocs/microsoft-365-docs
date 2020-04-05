@@ -1,5 +1,5 @@
 ---
-title: "Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams"
+title: Turn on Office 365 ATP - SharePoint, OneDrive, & Teams
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,6 +18,7 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: "Learn how to turn on ATP for SharePoint, OneDrive, and Teams, including how to set alerts for detected files."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams

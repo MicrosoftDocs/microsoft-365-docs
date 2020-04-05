@@ -1,5 +1,5 @@
 ---
-title: "Set up and download a custom report in the Security &amp; Compliance Center"
+title: Set up & download a custom report - Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,6 +16,7 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: "Learn how to set up and download a report with a custom date range and filters in the Security &amp; Compliance Center."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Set up and download a custom report in the Security &amp; Compliance Center
