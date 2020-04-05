@@ -21,6 +21,8 @@ description: "Use retention labels to classify data across your organization for
 
 # Overview of retention labels
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 Across your organization, you probably have different types of content that require different actions taken on them in order to comply with industry regulations and internal policies. For example, you might have:
   
 - Tax forms that need to be **retained** for a minimum period of time. 
@@ -69,7 +71,7 @@ Retention labels are independent, reusable building blocks that are included in 
   
 ![Diagram of labels, label policies, and locations](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. When you publish retention labels, they're included in a retention label policy. Please note, retention label names are immutable and cannot be edited once created.
+1. When you publish retention labels, they're included in a retention label policy. Retention label names are immutable, which means that they and cannot be edited after they're created.
 
 
 2. A single retention label can be included in many retention label policies.
@@ -92,7 +94,7 @@ It's important to know that content like an email or document can have only a si
     
 Manually assigned labels are explicitly assigned; auto-apply labels are implicitly assigned; an explicit retention label takes precedence over an implicit label. For more information, see the below section on [The principles of retention, or what takes precedence?](#the-principles-of-retention-or-what-takes-precedence).
 
-All of the information in this section applies only to retention labels. Note that an item of content can also have one sensitivity label applied to it, in addition to one retention label.
+All the information in this section applies only to retention labels. Note that an item of content can also have one sensitivity label applied to it, in addition to one retention label.
   
 ## How long it takes for retention labels to take effect
 
@@ -178,7 +180,7 @@ If your retention label will be assigned to content by end users, you can publis
     
 - Office 365 groups (both the group site and group mailbox in Outlook on the web)
     
-The sections below show how labels appear in different apps to people in your organization.
+The sections that follow explain how labels appear in different apps to people in your organization.
   
 ### Outlook on the web
 
@@ -411,7 +413,19 @@ To understand how different labels with retention actions are applied to content
 Understand that the principles of retention work as a tie-breaking flow from top to bottom: If the rules applied by all policies or labels are the same at one level, the flow moves down to the next level to determine precedence for which rule is applied.
   
 Finally, a retention policy or label cannot permanently delete any content that's on hold for eDiscovery. When the hold is released, the content again becomes eligible for the cleanup process described above.
-  
+
+### Precedence for auto-labeling with trainable classifiers
+
+All retention labels that are configured for trainable classifiers are evaluated simultaneously. If an item is detected by more than one trainable classifier, the following criteria is used to determine which retention label to apply:
+
+1. Retention labels configured for retain-only or retain and then delete have a higher priority over retention labels that are configured for delete-only.
+
+2. For retention labels that are configured for retain-only or retain and then delete, the retention label that is configured for the longest retention period wins.
+
+3. For retention labels that are configured for delete-only, the retention label that has been configured for the shortest period wins.
+
+4. Retention labels with the same action and the same period result in a retention label selection that is non-deterministic.
+
 ## Use retention labels instead of these features
 
 Retention labels can easily be made available to an entire organization and its content across Office 365, including Exchange, SharePoint, OneDrive, and Office 365 groups. If you need to classify content or manage records anywhere in Office 365, we recommend that you use retention labels.

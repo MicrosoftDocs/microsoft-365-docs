@@ -57,9 +57,6 @@ If you're using Office 365 operated by 21Vianet in China, see [View your bill or
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
 ::: moniker-end
 
 ## Change your Sold-To address
@@ -171,12 +168,24 @@ By default, your organization's billing notifications are sent to the Office 365
 ## Change the alternate email address for another admin
 
 You can also change the alternate email address of other global and billing admins in your organization.
-  
+
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 
-    If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
+::: moniker-end
 
-    If you're using Office 365 operated by 21Vianet, go to this  <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing Notifications</a> page.
+::: moniker range="o365-germany"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing Notifications</a> page.
+
+::: moniker-end
 
 2. On the **Billing notifications** page, select the admin you want to change.
 
@@ -188,6 +197,4 @@ You can also change the alternate email address of other global and billing admi
 
 [Understand your invoice](understand-your-invoice2.md)
 
-[Pay for yoursubscription](pay-for-your-subscription.md)
-
-[Subscriptions and billing - Admin Help](../index.yml)
+[Pay for your subscription](pay-for-your-subscription.md)

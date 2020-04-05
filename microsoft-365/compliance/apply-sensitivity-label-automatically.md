@@ -20,6 +20,8 @@ description: "When you create a sensitivity label, you can automatically assign 
 
 # Apply a sensitivity label to content automatically
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 When you create a sensitivity label, you can automatically assign that label to content when it matches conditions that you specify.
 
 The ability to apply sensitivity labels to content automatically is important because:
@@ -56,6 +58,9 @@ There are two different methods for automatically applying a sensitivity label:
     - If you have Exchange mail flow rules or data loss prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
     - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
     - Incoming email is labeled when there is a match with your auto-labeling conditions. However, if the label is configured for encryption, that encryption isn't applied.
+    
+    > [!NOTE]
+    > Incoming email is labeled when there is a match with your auto-labeling conditions.
 
 ## Compare auto-labeling for Office apps with auto-labeling policies
 
@@ -100,7 +105,7 @@ You can choose to apply sensitivity labels to content automatically when that co
 > [!NOTE]
 > Currently, the option for **Classifers** is in limited preview and requires you to submit a form to Microsoft to enable this capability for your tenant. For more information, see the blog post [Announcing automatic labeling in Office Apps using built-in classifiers - Limited Preview](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889).
 
-When this sensitivity label is automatically applied, the user sees a notification in their Office app. They can choose **OK** to dismiss the notification.
+When this sensitivity label is automatically applied, the user sees a notification in their Office app. For example:
 
 ![Notification that a document had a label applied automatically](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
@@ -141,34 +146,41 @@ During the preview period, the following apps support classifers for sensitivity
 
 If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label isn't suitable for their content.
 
-Recommended labels are supported for Word, Excel, and PowerPoint.
-
 ![Option for recommending a sensitivity label to users](../media/Sensitivity-labels-Recommended-label-option.png)
 
-Here's an example of a prompt when you configure a condition to apply a label as a recommended action, with a custom policy tip. You can choose what text is displayed in the policy tip.
+Here's an example of a prompt from the Azure Information Protection unified labeling client when you configure a condition to apply a label as a recommended action, with a custom policy tip. You can choose what text is displayed in the policy tip.
 
 ![Prompt to apply a recommended label](../media/Sensitivity-label-Prompt-for-required-label.png)
 
 ### When automatic or recommended labels are applied in Office apps
 
-- Automatic labeling for Office apps applies to Word, Excel, and PowerPoint when you save a document, and to Outlook when you send an email. The conditions detect sensitive information in the body text in documents and emails, and to headers and footers — but not in the subject line or attachments of email.
+The implementation of automatic and recommended labeling in Office apps depend on whether you're using labeling that's built into Office, or the Azure Information Protection unified labeling client. In both cases, however:
 
 - You can't use automatic labeling for documents and emails that were previously manually labeled, or previously automatically labeled with a higher sensitivity. Remember, you can only apply a single sensitivity label to a document or email (in addition to a single retention label).
 
-- Recommended labeling applies to Word, Excel, and PowerPoint when you save documents.
+- You can't use recommended labeling for documents or emails that were previously labeled with a higher sensitivity. When the content's already labeled with a higher sensitivity, the user won't see the prompt with the recommendation and policy tip.
 
-- You can't use recommended labeling for documents that were previously labeled with a higher sensitivity. When the content's already labeled with a higher sensitivity, the user won't see the prompt with the recommendation and policy tip.
+Specific to built-in labeling:
+
+- Not all Office apps support automatic (and recommended) labeling. For more information, see [Support for sensitivity label capabilities in apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+
+- For recommended labels in the desktop versions of Word, the sensitive content that triggered the recommendation is flagged so that users can review and remove the sensitive content instead of applying the recommended sensitivity label.
+
+- For details about how these labels are applied in Office apps, example screenshots, and how sensitive information is detected, see [Automatically apply or recommend sensitivity labels to your files and emails in Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+
+Specific to the Azure Information Protection unified labeling client:
+
+-  Automatic and recommended labeling applies to Word, Excel, and PowerPoint when you save a document, and to Outlook when you send an email.
+
+- For Outlook to support recommended labeling, you must first configure an [advanced policy setting](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook).
+
+- Sensitive information can be detected in the body text in documents and emails, and to headers and footers — but not in the subject line or attachments of email.
 
 ## How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange
 > [!NOTE]
 > Auto-labeling policies are currently in public preview and subject to change.
 
 ### Prerequisites for auto-labeling policies
-
-- At least one of the following licenses in your tenant:
-    - Microsoft 365 (E5) 
-    - Office 365 (E5)
-    - Advanced Compliance (E5) add-on 
 
 - Auditing for Office 365 must be turned on for simulation mode. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).
 
@@ -188,12 +200,23 @@ Here's an example of a prompt when you configure a condition to apply a label as
 
 Simulation mode is unique to auto-labeling policies and woven into the workflow. You can't automatically label documents and emails until your policy has run at least one simulation.
 
+Workflow for an auto-labeling policy:
+
+1. Create and configure an auto-labeling policy
+
+2. Run the policy in simulation mode and wait at least 24 hours
+
+3. Review the results, and if necessary, refine your policy, rerun simulation mode and wait at least 24 hours
+
+4. Repeat step 3 as needed
+
+5. Deploy in production
+
 The simulated deployment runs like the WhatIf parameter for PowerShell. You see results reported as if the auto-labeling policy had applied your selected label, using the rules that you defined. You can then refine your rules for accuracy if needed, and rerun the simulation. However, because auto-labeling for Exchange applies to emails that are sent and received, rather than emails stored in mailboxes, don't expect results for email in a simulation to be consistent unless you're able to send and receive the exact same email messages.
 
 Simulation mode also lets you gradually increase the scope of your auto-labeling policy before deployment. For example, you might start with a single location, such as a SharePoint site, with a single document library. Then, with iterative changes, increase the scope to multiple sites, and then to another location, such as OneDrive.
 
 Finally, you can use simulation mode to provide an approximation of the time needed to run your auto-labeling policy, to help you plan and schedule when to run it without simulation mode.
-
 
 ### Creating an auto-labeling policy
 

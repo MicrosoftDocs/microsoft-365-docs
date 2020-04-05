@@ -485,10 +485,9 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 For detailed syntax and parameter information, see [Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterrule).
 
-
 ## For more information
 
-[Removing a user from the Restricted Users portal after sending spam email](https://docs.microsoft.com/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
+[Remove blocked users from the Restricted Users portal in Office 365](removing-user-from-restricted-users-portal-after-spam.md)
 
 [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md)
 
