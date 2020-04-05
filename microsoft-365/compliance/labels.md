@@ -209,7 +209,7 @@ Auto-applying retention labels are powerful because:
     
 You can choose to apply retention labels to content automatically when that content contains:
   
-- [Specific types of sensitive information](create-retention-labels.md#auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information)
+- [Specific types of sensitive information](create-retention-labels.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
     
 - [Specific keywords that match a query you create](create-retention-labels.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 

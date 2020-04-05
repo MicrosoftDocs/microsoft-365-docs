@@ -81,9 +81,6 @@ Publish retention labels so that they can be manually applied by users.
 
 Auto-apply a retention label, based on the conditions that you specify.
 
-> [!NOTE]
-> If you are using records management: You can auto-apply a retention label only when it's not configured to declare content as a record. 
-
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
     
     - If you are using records management: **Information governance**:
@@ -98,7 +95,7 @@ Auto-apply a retention label, based on the conditions that you specify.
     
     For information about configuring the conditions that automatically apply the retention label, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
     
-    For information about configuring the locations, see the [Retention label policies and locations](#retention-label-policies-and-locations) section on this page.
+    For information about configuring the locations, see the [Retention label policies and locations](#retention-label-and-locations) section on this page.
 
 ## Retention labels and locations
 
@@ -119,7 +116,7 @@ Exchange public folders and Skype do not support retention labels.
 
 You can apply retention labels to content automatically when that content contains:
   
-- [Specific types of sensitive information](#auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information)
+- [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
     
 - [Specific keywords that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 

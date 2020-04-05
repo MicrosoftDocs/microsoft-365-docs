@@ -1,5 +1,5 @@
 ---
-title: "Overview of records"
+title: "Learn about records"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,10 +16,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "To implement a records management strategy in your Office 365 or Microsoft organization, use retention labels that declare content as a record. Then publish or auto-apply the retention record label."
+description: "Learn about records To implement a records management strategy in your Office 365 or Microsoft organization, use retention labels that declare content as a record. Then publish or auto-apply the retention record label."
 ---
 
-# Overview of records
+# Learn about records
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
@@ -33,7 +33,9 @@ At a high level, declaring content as a record means that:
 
 - Records are disposed of after their stated retention period is past
 
-You can use [retention labels](labels.md) to classify content as a record. After you create retention labels that declare records, you can either [publish](labels.md#how-retention-labels-work-with-retention-label-policies) those labels (so that users can use them to classify content as records) or [auto-apply those labels](labels.md#applying-a-retention-label-automatically-based-on-conditions) to content that you want to classify as a record. By using retention labels to declare records, you can implement a single, consistent records-management strategy across all of Office 365, whereas other records-management features such as the Record Center apply only to content in SharePoint Online.
+You use [retention labels](labels.md) to classify content as a record. After you create retention labels that declare records, you can either [publish](labels.md#how-retention-labels-work-with-retention-label-policies) those labels so that users can apply them to content, or [auto-apply those labels](labels.md#applying-a-retention-label-automatically-based-on-conditions) to content that you want to classify as a record. 
+
+By using retention labels to declare records, you can implement a single, consistent records-management strategy across your Office 365 environment.
 
 Keep the following things in mind about records:
 
