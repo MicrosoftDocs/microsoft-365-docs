@@ -26,12 +26,9 @@ description: "Learn how to upgrade to a new subscription."
 monikerRange: 'o365-worldwide'
 ---
 
-# Upgrade to a different plan 
+# Upgrade to a different plan
 
 When your business changes, or you need more features, you can upgrade plans. The easiest way to do this is to use the **Upgrade** tab in the admin center. However, using the **Upgrade** tab isn't supported in all situations. In some cases, you might be able to change plans manually.
-
-> [!NOTE]
-> This article applies to the new admin center. If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page. To view the article about the old admin center, see [Switch to a different Office 365 for business plan](switch-to-a-different-plan.md).
 
 ## Use the Upgrade tab
 
@@ -76,7 +73,7 @@ If you want to move to a plan with fewer services, you can [change plans manuall
 
 If you don't see any plans on the **Upgrade** tab, it means your plan can't be upgraded automatically. In some cases, you might be able to resolve the issue so that you can view plans available for upgrade, or you might be able to upgrade or change plans manually, instead.
 
- ### Why are there no plans listed to upgrade?
+### Why are there no plans listed to upgrade?
 
 #### You can't upgrade subscriptions now because you have more users than licenses.
 
@@ -140,13 +137,13 @@ To resolve this, find the subscription on the <a href="https://go.microsoft.com/
 
 ## What does upgrading a plan do to my service and billing?
 
-When you upgrade plans automatically by using the **Switch plans** button (or the **Upgrade** tab in the new admin center), your services and billing are affected.
+When you upgrade plans automatically by using the **Upgrade** tab in the admin center, your services and billing are affected.
 
 ### Access to services
 
- **Admins** won't be able to use the admin center while the plan is being upgraded. This can take up to an hour.
-  
- **Users** will experience no interruption of service. They will continue to have the existing service until the upgrade is fully completed.
+**Admins** won't be able to use the admin center while the plan is being upgraded. This can take up to an hour.
+
+**Users** will experience no interruption of service. They will continue to have the existing service until the upgrade is fully completed.
   
 ### Users and licenses
 
@@ -163,9 +160,9 @@ All user data will be retained during the upgrade, including Exchange mailboxes 
 The day your plan upgrade is complete, the billing on your old subscription will be turned off and the billing on your new subscription will be turned on. You'll get a prorated credit for any unused service on the old subscription. You'll receive a new invoice that includes the credit for your old subscription within 30 days of upgrading to the new subscription.
   
 > [!NOTE]
-> The length of time it takes to actually credit your payment account depends on the payment method that was used for the subscription. 
-  
- **Upgrading from a prepaid subscription before it expires?** If the total cost of your new subscription is greater than or equal to the remaining value of your prepaid subscription, you won't lose any prepaid time. On the checkout page, you'll see a credit for your unused time. However, if the total cost of your new subscription is less than the remaining value of your current prepaid subscription, you'll forfeit some of your unused time. You'll be notified before you checkout, and you can wait to upgrade until closer to your prepaid subscription's expiration date.
+> The length of time it takes to actually credit your payment account depends on the payment method that was used for the subscription.
+
+**Upgrading from a prepaid subscription before it expires?** If the total cost of your new subscription is greater than or equal to the remaining value of your prepaid subscription, you won't lose any prepaid time. On the checkout page, you'll see a credit for your unused time. However, if the total cost of your new subscription is less than the remaining value of your current prepaid subscription, you'll forfeit some of your unused time. You'll be notified before you checkout, and you can wait to upgrade until closer to your prepaid subscription's expiration date.
 
 ## Call support to help you upgrade plans
 
