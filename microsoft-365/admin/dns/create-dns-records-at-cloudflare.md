@@ -161,7 +161,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |30 minutes  <br/> |
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |30 minutes  <br/> |
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |30 minutes  <br/> |
-    |CNAME  <br/> |msoid*  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minutes  <br/> |
+    |CNAME  <br/> |msoid<sup>**1**</sup>  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minutes  <br/> |
 
 * Applies to Office 365 operated by 21Vianet.
   
