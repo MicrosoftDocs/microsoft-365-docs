@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
-description: "Learn about bulk bomplain level (BCL) values in Office 365."
+description: Learn about Bulk Complaint Level (BCL) values and how spam filtering marks messages as bulk email based on the BCL threshold you specify in Office 365.
 ms.custom: seo-marvel-apr2020
 ---
 

@@ -13,7 +13,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
-description: "Admins can learn about using S/MIME in Exchange Online."
+description: Admins can learn about using S/MIME (Secure/Multipurpose Internet Mail Extensions) in Exchange Online to encrypt emails and digitally sign them.
 ms.custom: seo-marvel-apr2020
 ---
 

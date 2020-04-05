@@ -17,7 +17,8 @@ search.appverid:
 ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
-description: "Document for EOP Standalone admins to help prevent spam false negatives"
+description: Learn how to configure the Office 365 anti-spam filter to block email spam and prevent false negative messages.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Customize the Office 365 anti-spam filter with these settings
