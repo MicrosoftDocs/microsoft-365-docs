@@ -33,7 +33,7 @@ At a high level, declaring content as a record means that:
 
 - Records are disposed of after their stated retention period is past
 
-You use [retention labels](labels.md) to classify content as a record. After you create retention labels that declare records, you can either [publish](labels.md#how-retention-labels-work-with-retention-label-policies) those labels so that users can apply them to content, or [auto-apply those labels](labels.md#applying-a-retention-label-automatically-based-on-conditions) to content that you want to classify as a record. 
+You use [retention labels](labels.md) to classify content as a record. After you create retention labels that declare records, you can either publish those labels so that users can apply them to content, or auto-apply those labels to content that you want to classify as a record. For instructions, see [Create, publish, and auto-apply retention labels ](create-retention-labels.md).
 
 By using retention labels to declare records, you can implement a single, consistent records-management strategy across your Office 365 environment.
 
@@ -67,17 +67,6 @@ Keep the following things in mind about records:
 
   - **Records labels can't be removed.** Once a record label has been applied to an item, only the admin of that location (for example, a site collection admin of a SharePoint site) can remove that record label.
 
-## Using retention labels to declare records
-
-When you create a retention label, you have the option to use the retention label to classify the content as a record. To declare content as a record, follow these steps:
-
-1. Create a retention label. In the Microsoft 365 compliance center, go to **Records Management** \> **File Plan**. On the **File plan** page, click  **Create a label**.
-
-2. On the **Label settings** page in the wizard, choose the option to set the retention label to declare content as a record.<br/>
-
-   ![Click Use label to classify content as a Record checkbox](../media/recordversioning6.png)
-
-3. [Publish](labels.md#how-retention-labels-work-with-retention-label-policies) or [auto-apply](labels.md#applying-a-retention-label-automatically-based-on-conditions) the retention label to SharePoint sites and/or OneDrive accounts.
 
 ### Applying a retention label to content
 
