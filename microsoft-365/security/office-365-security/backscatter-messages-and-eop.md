@@ -15,7 +15,8 @@ search.appverid:
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
-description: "Backscatter is automated bounce messages that are sent to forged email addresses. The Backscatterer DNSBL identifies servers that send backscatter messages (which could include many legitimate email sources). Since it isn't a spammer list, we don't try to remove ourselves from the Backscatterer DNSBL."
+description: Backscatter messages are automated bounce messages that are sent to forged email addresses. The Backscatterer DNSBL identifies servers that send backscatter messages (which could include many legitimate email sources). Since it isn&apos;t a spammer list, we don&apos;t try to remove ourselves from the Backscatterer DNSBL.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Backscatter and EOP

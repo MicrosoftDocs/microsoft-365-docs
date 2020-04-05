@@ -15,7 +15,8 @@ search.appverid:
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
-description: "To make sure that email sent from people you trust isn't blocked, you can use the connection filter policy to create an Allow list of IP addresses that you trust. You can also create an IP Block List of blocked senders."
+description: To make sure that email sent from people you trust isn&apos;t blocked, you can use the connection filter policy to create an Allow list, also known as a safe sender list, of IP addresses that you trust. You can also create a blocked senders list.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Configure connection filtering in Office 365
