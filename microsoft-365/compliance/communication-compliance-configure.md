@@ -37,8 +37,11 @@ Before you get started with communication compliance, you should confirm your [M
 - Microsoft 365 A5 subscription (paid or trial version)
 - Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
 - Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
+- Microsoft 365 G5 subscription (paid or trial version)
+- Microsoft 365 G5 subscription + the Microsoft 365 G5 Compliance add-on
+- Microsoft 365 G5 subscription + the Microsoft 365 G5 Insider Risk Management add-on
 - Office 365 Enterprise E5 subscription (paid or trial version)
-- Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on
+- Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions, see note)
 
 Users included in communication compliance policies must must be assigned one of the licenses above.
 
