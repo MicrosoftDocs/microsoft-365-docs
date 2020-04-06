@@ -28,13 +28,6 @@ ms.custom: okr_SMB
 
 Several of the Office 365 for business plans have add-ons that you can buy for your subscription. An add-on provides additional functionality to the subscription that you buy it for.
 
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-::: moniker-end 
-
 ## Buy an add-on
 
 ::: moniker range="o365-worldwide"
@@ -105,7 +98,7 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
 
 *Traditional add-ons* are linked to a specific subscription. If you cancel the subscription, the associated add-on is also cancelled.
   
-*Standalone add-ons* are not linked to a specific subscription. Standalone add-ons appear as a separate subscription on the **Subscriptions** page (or on the **Your products** page in the new admin center), and have their own expiration date. You manage a standalone add-on the same way that you manage any other subscription.
+*Standalone add-ons* are not linked to a specific subscription. Standalone add-ons appear as a separate subscription on the **Your products** page, and have their own expiration date. You manage a standalone add-on the same way that you manage any other subscription.
   
 ### Update a traditional add-on
 
@@ -221,8 +214,6 @@ The following table lists add-ons that are available for different editions of O
   
 For information about Skype for Business add-ons, see [Skype for Business and Microsoft Teams add-on licensing](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
   
-****
-
 |**Add-on**|**Available in these subscriptions**|
 |:-----|:-----|
 |Customer Lockbox  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |

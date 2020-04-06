@@ -20,9 +20,6 @@ description: "Users can learn how to manage their self-service purchases."
 
 As a user, you can buy subscriptions to certain products and assign licenses for those subscriptions to people in your team. You are responsible for paying for any self-service purchases you make. You can manage your subscriptions in the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 
-> [!NOTE]
-> You must turn on the new admin center experience.
-
 Your admin has a read-only view into any subscriptions that you buy. They can see the product, purchaser name, subscriptions purchased, expiry date, purchase price, and assigned users for each subscription that you buy.
 
 ## View your subscriptions
