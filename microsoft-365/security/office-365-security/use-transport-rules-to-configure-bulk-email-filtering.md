@@ -61,7 +61,7 @@ This topic explains how create these mail flow rules in the Exchange admin cente
 
    - **Apply this rule if**: Configure one of the following settings to look for content in messages using regular expressions (RegEx) or words or phrases:
 
-     - **The subject or body** \> **subject or body matches these text patterns**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat as many times as necessary.
+     - **The subject or body** \> **subject or body matches these text patterns**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat until you've entered all the values.
 
        - `If you are unable to view the content of this email\, please`
 
@@ -91,7 +91,7 @@ This topic explains how create these mail flow rules in the Exchange admin cente
 
        When you're finished, click **OK**.
 
-     - **The subject or body** \> **subject or body includes any of these words**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat as many times as necessary.
+     - **The subject or body** \> **subject or body includes any of these words**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat until you've entered all the values.
 
        - `to change your preferences or unsubscribe`
 
@@ -133,7 +133,7 @@ This topic explains how create these mail flow rules in the Exchange admin cente
 
    When you're finished, click **Save**
 
-## Use PowerShell to create a mail flow rules that filter bulk email
+## Use PowerShell to create mail flow rules that filter bulk email
 
 Use the following syntax to create one or both of the mail flow rules (regular expressions vs. words):
 

@@ -2,8 +2,8 @@
 title: "View reports for Office 365 Advanced Threat Protection, malware reports, phish reports, compromised accounts, URL protection status, threat reporting, report threats"
 f1.keywords:
 - CSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 02/07/2020
 audience: ITPro

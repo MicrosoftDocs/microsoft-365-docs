@@ -34,7 +34,7 @@ For example, you can understand the activity of every user licensed to use Share
 If you want to understand the amount of activity happening against each SharePoint site and the storage utilization, view the [SharePoint site usage report](sharepoint-site-usage.md).
   
 > [!NOTE]
-> You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, or Skype for Business administrator to see reports. 
+> You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, Teams Service, Teams Communications, or Skype for Business administrator to see reports.  
  
 ## How do I get to the to the SharePoint activity report?
 

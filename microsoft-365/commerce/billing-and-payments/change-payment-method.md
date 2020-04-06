@@ -82,8 +82,6 @@ If you're moving from *credit card or bank account to invoice*, any outstanding 
   
 When you change from paying by invoice to paying with a credit card or bank account, we automatically create a new subscription for you, move your users to the new subscription, and then disable your old subscription. Don't worry, your users won't see a disruption in service and all their information will be available through the new subscription.
 
-### Use the new admin center to change from invoice to credit card or bank account
-
 1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
 2. If you're in **Table** view, select **Cards**.
@@ -97,28 +95,6 @@ When you change from paying by invoice to paying with a credit card or bank acco
 6. If you add a payment method, enter the card or account details, then select **Save**.
   
 7. Verify that the selected payment method is correct, then select **Save**.
-
-### Use the old admin center to change from invoice to credit card or bank account
-
-1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Subscriptions</a> page.
-
-2. Find the subscription that you want to change. In the **Payment details** section, select **Change payment details**.
-  
-3. In the **Change payment details** pane, select **Change your payment method**.
-  
-4. In the **Change your payment method** dialog box, select **Continue**.
-  
-5. On the **How does this look?** page, you can optionally increase the number of licenses that you want for this subscription. To continue, select **Next**.
-
-6. Some subscriptions have the option to choose a monthly or annual commitment. If you see a choice to pay by the year or by the month on the **How do you want to pay?** page, choose how frequently you want to pay.
-  
-7. In the **Payment method** list, choose **Existing card**, **New credit card**, or **New bank account**.
-  
-8. If you chose the **New credit card** or **New bank account** option, fill out the rest of your payment information.
-
-9. When you're done filling out the form, select **Place order**.
-
-When you return to the **Subscriptions** page, you will see the old subscription marked **Disabled** and the new one marked **Active**. You can let the old subscription expire.
 
 ::: moniker-end
 
@@ -155,20 +131,18 @@ When you return to the **Subscriptions** page, you will see the old subscription
 ::: moniker range="o365-worldwide"
 ## Change from credit card or bank account to invoice
 
-You can change to pay by invoice only if your order is above a certain quantity. If you do not meet the requirement, you see the message “Your order quantity isn’t large enough to qualify for invoice with check wire.”
+You can change to pay by invoice only if your order is above a certain quantity. If you do not meet the requirement, you see the message "Your order quantity isn't large enough to qualify for invoice with check wire."
 
-If your order quantity is too high, a credit check might be required. If so, you see the message “Not eligible to change to invoice. Your order requires a credit check.” In this case, you change to pay by invoice manually. Use the following steps to complete the manual change.
-
-If no credit check is required, use the steps in [Use the new admin center to change from credit card or bank account to invoice](#use-the-new-admin-center-to-change-from-credit-card-or-bank-account-to-invoice).
+If your order quantity is too high, a credit check might be required. If so, you see the message "Not eligible to change to invoice. Your order requires a credit check." In this case, you change to pay by invoice manually. Use the following steps to complete the manual change.
 
 1. Go to <a href="https://Office365.com" target="_blank">Office365.com</a> and buy the same subscription as the one you currently have. At check-out, choose the option to pay by invoice.
 
 > [!IMPORTANT]
-> You can’t use the **Products & services** page in the admin center to buy the subscription. You must use  <a href="https://Office365.com" target="_blank">Office365.com</a>.
+> You can't use the **Products & services** page in the admin center to buy the subscription. You must use  <a href="https://Office365.com" target="_blank">Office365.com</a>.
 
 2. After the purchase is complete, cancel the original subscription. Your users are automatically moved to the new subscription.
 
-### Use the new admin center to change from credit card or bank account to invoice
+If no credit check is required, use the following steps to change to paying by invoice.
 
 1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
@@ -185,23 +159,6 @@ If no credit check is required, use the steps in [Use the new admin center to ch
 7. When you're finished, select **Save**.
 
 8. Verify that the selected payment method is correct, then select **Save**.
-
-### Use the old admin center to change from credit card or bank account to invoice
-
-1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Subscriptions</a> page.
-
-2. Find the subscription that you want to change. In the **Payment method** section, select **Change payment details**.
-
-    ![The Payment method section of a Subscription card for a subscription that pays by credit card.](../../media/6c9d9cae-6086-4687-a979-bb971f35f1b4.png)
-  
-3. In the **Change payment details** pane, select **Change your payment method**.
-
-    > [!TIP]
-    > If the **Change your payment method** link isn't displayed, it means that you can't change from credit card or bank account to invoice because the subscription doesn't meet the minimum cost amount required to pay by invoice. The minimum cost amount varies by geographic location.
-  
-4. In the **Change your payment method** dialog box, select **Continue**.
-  
-5. Select **OK** to return to the admin center.
 
 ::: moniker-end
 
@@ -231,20 +188,9 @@ If no credit check is required, use the steps in [Use the new admin center to ch
 
 You can use the following steps at any time to verify the payment method that's configured for a subscription.
 
-> [!NOTE]
-> If you don't currently use the new Microsoft 365 admin center, you must first turn it on. To turn it on, select the **Try the new admin center** toggle located at the top of the Home page.
-
-### Use the new admin center to verify which payment method is configured
-
 1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
 2. Find the subscription that you want to verify. The payment method that's configured for the subscription appears in the **Billing** section.
-
-### Use the old admin center to verify which payment method is configured
-
-1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Subscriptions</a> page.
-
-2. Find the subscription that you want to verify. The payment method that's configured for the subscription appears under **Payment method**.
 
 ::: moniker-end
 
