@@ -59,8 +59,6 @@ There are two different methods for automatically applying a sensitivity label:
     - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
     - Incoming email is labeled when there is a match with your auto-labeling conditions. However, if the label is configured for encryption, that encryption isn't applied.
     
-    > [!NOTE]
-    > Incoming email is labeled when there is a match with your auto-labeling conditions.
 
 ## Compare auto-labeling for Office apps with auto-labeling policies
 
