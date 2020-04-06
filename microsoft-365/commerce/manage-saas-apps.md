@@ -51,50 +51,43 @@ Support for third-party apps is available in these regions:
 - United States
 - Western Europe
 
-## Set up app
+## Activate third-party apps
 
-Admins need to activate third-party apps before assigning them to users. These apps are activated in the third-party publisher's portal.
+Admins must activate third-party apps before assigning them to users. These apps are activated in the third-party publisher's portal.
 
-**To activate third-party apps**
-
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, and turn on **Try the preview**.
-2. Select **Billing** > **Products & services** > **Apps**.
-3. Find and select the app you want to manage.
-4. Under **Settings & actions**, select **Manage in publisher's portal**.
+1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
+2. Find and select the app you want to manage.
+3. Under **Settings & actions**, select **Manage in publisher's portal**.
 
 You'll be directed to the app publisher's site where you can activate the app.
 
-## Managing third-party apps
+## Manage third-party apps
 
 Admins manage third-party apps in two locations: Microsoft 365 admin center, and the third-party app provider's portal.
 
 Here's what you can do in each portal.
 
-### App status
-
-After the app is activated, it remains active unless it's canceled, expires, or if payment isn't kept current. These events change the app status to disabled. Once an app is disabled, it can't be reactivated. To continue using the app, buy another copy of it.
-
 | Microsoft 365 admin center | App publisher portal |
 | --- | --- |
 | Change license quantity <br> Manage how you pay your bill <br> Manage how you pay your bill <br> Change payment method (credit card) <br> View invoice <br> Cancel app subscription | Set up app (once for each app) <br> Assign licenses to users <br> Technical support |
+
+After the app is activated, it remains active unless it's canceled, expires, or if payment isn't kept current. These events change the app status to disabled. Once an app is disabled, it can't be reactivated. To continue using the app, buy another copy of it.
 
 ## Assign licenses
 
 Admins need to activate third-party apps before assigning them to users. They're activated in the third-party publisher's portal. On the app page, under **Settings & actions**, select the link to assign licenses.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, and turn on **Try the preview**.
-2. Select **Billing** > **Products & services** > **Apps**.
-3. Find and select the app you want to manage.
-4. Under **Settings & actions**, select the link to **Manage in publisher's portal**.
+1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
+2. Find and select the app you want to manage.
+3. Under **Settings & actions**, select the link to **Manage in publisher's portal**.
 
 ## Change license quantity
 
 Admins can change the number of licenses owned by their organization. This only applies to apps purchased with seat-based pricing.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, and turn on **Try the preview**.
-2. Select **Billing** > **Products & services** > **Apps**.
-3. Find and select the app you want to manage.
-4. Select **Change license quantity**.
+1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.2. Select **Billing** > **Your products** > **Apps**.
+2. Find and select the app you want to manage.
+3. Select **Change license quantity**.
 
 ## Manage payment methods
 
@@ -106,20 +99,18 @@ Software-as-a-service apps each have a billing profile assigned to them. Billing
 
 For more information on billing profiles, see [Understand billing profiles](https://docs.microsoft.com/microsoft-store/billing-profile).
 
-### To change the billing profile on a software-as-a-service app subscription
+### Change the billing profile on a software-as-a-service app subscription
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, and turn on **Try the preview**.
-2. Select **Billing** > **Products & services** > **Apps**.
-3. Find and select the app you want to manage. 
-4. Next to **Billing profile**, select **Edit**.
+1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.2. Select **Billing** > **Your products** > **Apps**.
+2. Find and select the app you want to manage.
+3. Next to **Billing profile**, select **Edit**.
 
-For more information on invoices, see [Understand your Microsoft Customer Agreement invoice](https://docs.microsoft.com/microsoft-store/billing-understand-your-invoice-msfb).
+For more information on invoices, see [Understand your invoice](billing-and-payments/understand-your-invoice.md).
 
-## Cancel subscription
+## Cancel a software-as-a-service app subscription
 
-Customers can cancel software-as-a-service app from the app page.
+You can cancel a software-as-a-service app from the app page.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, and turn on **Try the preview**.
-2. Select **Billing** > **Products & services** > **Apps**.
-3. Find and select the app you want to manage.
-4. Under **Settings & actions**, select **Cancel subscription**.
+1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.2. Select **Billing** > **Your products** > **Apps**.
+2. Find and select the app you want to manage.
+3. Under **Settings & actions**, select **Cancel subscription**.
