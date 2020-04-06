@@ -93,9 +93,6 @@ If you purchase a different type of subscription than your trial, you will have 
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 
 2. On the **Purchase services** page, select the subscription that you want to buy, then select **Buy**.
@@ -134,7 +131,6 @@ If you purchase a different type of subscription than your trial, you will have 
 
 ::: moniker range="o365-21vianet"
 
-
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
 
 2. On the **Subscription** page, select **Add subscriptions**.
@@ -154,7 +150,6 @@ If you purchase a different type of subscription than your trial, you will have 
 8. On the confirmation page, select **Go to Admin Home**.
 
 ::: moniker-end
-
 
 ## Related articles
 

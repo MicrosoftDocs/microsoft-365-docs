@@ -149,6 +149,8 @@
           href: document-fingerprinting.md
         - name: DLP functions for sensitive information
           href: what-the-dlp-functions-look-for.md
+    - name: Encryption in M365
+      href: encryption.md
     - name: Customer Key
       items: 
         - name: Service encryption with Customer Key in Office 365
@@ -200,6 +202,8 @@
               href: legacy-information-for-message-encryption.md
             - name: Set up Azure Rights Management for the previous version of Office 365 Message Encryption
               href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: Set up IRM in SharePoint admin center
+      href: set-up-irm-in-sp-admin-center.md
     - name: Understand data classification (preview)
       href: data-classification-overview.md
       items: 
@@ -765,26 +769,26 @@
       href: get-started-with-service-trust-portal.md
     - name: Compliance Score and Compliance Manager
       items: 
-        - name: Compliance Score (Preview)
+        - name: Compliance Score (preview)
           href: compliance-score.md
-        - name: Set up Compliance Score (Preview)
+        - name: Set up Compliance Score (preview)
           href: compliance-score-setup.md
-        - name: Working with Compliance Score (Preview)
+        - name: Working with Compliance Score (preview)
           href: working-with-compliance-score.md
-        - name: Compliance Score calculation (Preview)
+        - name: Compliance Score calculation (preview)
           href: compliance-score-methodology.md
-        - name: Compliance Score release notes (Preview)
+        - name: Compliance Score release notes (preview)
           href: compliance-score-release-notes.md
-        - name: Compliance Score FAQ (Preview)
+        - name: Compliance Score FAQ (preview)
           href: compliance-score-faq.md
-        - name: Compliance Manager (Preview)
+        - name: Compliance Manager (preview)
           href: compliance-manager-overview.md
           items: 
-            - name: What's new in Compliance Manager (Preview)
+            - name: Compliance Manager (preview) release notes
               href: compliance-manager-release-notes.md
-            - name: Working with Compliance Manager (Preview)
+            - name: Working with Compliance Manager (preview)
               href: working-with-compliance-manager.md
-            - name: Compliance Manager (Classic)
+            - name: Compliance Manager (classic)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: GDPR data subject request tool
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md

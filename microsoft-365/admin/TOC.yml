@@ -187,8 +187,8 @@
           href: manage/remove-licenses-from-users.md
         - name: Resolve license conflicts
           href: manage/resolve-license-conflicts.md
-        - name: Manage messages in the Message center
-          href: manage/manage-messages.md
+        - name: Show or hide new features using What's New Management
+          href: manage/show-hide-new-features.md
     - name: Subscriptions and billing
       items: 
         - name: Manage your subscriptions
