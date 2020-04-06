@@ -18,7 +18,6 @@ metadata:
 # productDirectory section (optional)
 productDirectory:
   title: Secure remote work with Microsoft 365 Business # < 60 chars (optional)
-  summary: Set up your subscription and email, add users, and install apps. # < 160 chars (optional)
   items:
     # Card
     - title: What's new?
