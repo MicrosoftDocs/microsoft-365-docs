@@ -35,7 +35,7 @@ You use the [**Set-MsolCompanySettings**](https://docs.microsoft.com/powershell/
 ## Delete a free subscription
 
 > [!IMPORTANT]
-When you delete a self-service sign-up subscription, you block all users from accessing their data and email and delete all data and email.
+> When you delete a self-service sign-up subscription, you block all users from accessing their data and email and delete all data and email.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 2. Find the self-service sign-up subscription that you want to delete. In the **Settings & Actions** section, select **Delete subscription**.
