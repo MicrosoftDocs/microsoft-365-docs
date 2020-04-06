@@ -15,6 +15,28 @@ metadata:
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   ms.date: 10/01/2019 #Required; mm/dd/yyyy format.
 
+# productDirectory section (optional)
+productDirectory:
+  title: Secure remote work with Microsoft 365 Business # < 60 chars (optional)
+  summary: Set up your subscription and email, add users, and install apps. # < 160 chars (optional)
+  items:
+    # Card
+    - title: What's new?
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+      summary: Azure AD Premium P1 is coming to Microsoft 365 Business!
+      url: https://aka.ms/aadp1smbblog
+    # Card
+    - title: Watch partner webinar
+      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      summary: Secure your SMB customers as they cope with Covid-19.
+      url: https://aka.ms/M365v253PAL-Register
+    # Card
+    - title: Buy
+      imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+      summary: Contact your partner or buy now!
+      url: https://aka.ms/m365bweb
+
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
