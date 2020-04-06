@@ -163,7 +163,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |30 minutes  <br/> |
     |CNAME  <br/> |msoid<sup>**1**</sup>  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minutes  <br/> |
 
-<sup>**1**</sup> Applies to Office 365 operated by 21Vianet.
+    <sup>**1**</sup> Applies to Office 365 operated by 21Vianet.
   
 5. Select the **DNS Traffic** icon (orange cloud) to bypass the Cloudflare servers.
   
