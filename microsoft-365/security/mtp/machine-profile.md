@@ -9,7 +9,7 @@ ms.author: v-maave
 author: martyav
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ---
