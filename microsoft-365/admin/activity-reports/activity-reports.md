@@ -175,6 +175,6 @@ However, when you select a particular day (see number 3), up to 28 days from the
   
 ## Related articles
 
-[Reports in the Security &amp; Compliance Center](https://support.office.com/article/7acd33ce-1ec8-49fb-b625-43bac7b58c5a)
+[Reports in the Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
   
 
