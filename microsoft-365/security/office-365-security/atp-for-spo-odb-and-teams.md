@@ -1,5 +1,5 @@
 ---
-title: "Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams"
+title: Office 365 ATP - SharePoint, OneDrive, and Teams
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,6 +18,7 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: "Extend Office 365 Advanced Threat Protection to files in SharePoint Online, OneDrive for Business, and Microsoft Teams to enable safer collaboration for your organization."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams

@@ -1,5 +1,5 @@
 ---
-title: "SIEM integration with Office 365 Advanced Threat Protection"
+title: SIEM integration with Advanced Threat Protection
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -17,6 +17,7 @@ ms.date: 11/22/2019
 ms.collection:
 - M365-security-compliance
 description: "Integrate your organization's SIEM server with Office 365 Advanced Threat Protection and related threat events in the Office 365 Activity Management API."
+ms.custom: seo-marvel-apr2020
 ---
 
 # SIEM integration with Office 365 Advanced Threat Protection

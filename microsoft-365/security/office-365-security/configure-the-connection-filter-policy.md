@@ -1,5 +1,5 @@
 ---
-title: "Configure the default connection filter policy, IP Allow List, IP Block List, enable or disable safe list"
+title: Configure the default connection filter policy
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,6 +16,7 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: "To make sure that email sent from people you trust isn't blocked, you can use the connection filter policy to create an Allow list of IP addresses that you trust. You can also create an IP Block List of blocked senders."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Configure connection filtering in Office 365

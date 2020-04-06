@@ -1,5 +1,5 @@
 ---
-title: "Chief Information Security Officer (CISO) Workshop, Module 4a: Threat Protection Strategy"
+title: CISO Workshop Module 4a - Threat Protection Strategy
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -12,7 +12,9 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: "In this module, learn more about threat protection strategies, security roadmaps, and security evolution."
-ms.custom: seo-marvel-mar2020
+ms.custom: 
+ - seo-marvel-mar2020
+ - seo-marvel-apr2020
 ---
 
 # CISO Workshop Module 4a: Threat Protection Strategy

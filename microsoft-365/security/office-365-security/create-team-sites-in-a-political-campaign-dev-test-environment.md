@@ -1,5 +1,5 @@
 ---
-title: "Create team sites in a political campaign dev/test environment"
+title: Create team sites - Political campaign dev environment
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,7 +15,7 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom:
+ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: "Summary: Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment."
 ---

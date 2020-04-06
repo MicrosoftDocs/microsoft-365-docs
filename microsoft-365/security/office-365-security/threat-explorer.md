@@ -1,5 +1,5 @@
 ---
-title: "Threat Explorer and real-time detections, new to Threat Explorer, changes to Threat Explorer, new to Office 365, Security, Cloud Security, new to Security in ATP, new ATP features"
+title: Threat Explorer and real-time detections
 f1.keywords:
 - NOCSH
 ms.author: deniseb

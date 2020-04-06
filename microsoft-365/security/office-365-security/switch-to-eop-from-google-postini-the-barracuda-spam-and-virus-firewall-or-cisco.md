@@ -1,5 +1,5 @@
 ---
-title: "Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort"
+title: Switch to EOP from another protection service
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,6 +12,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: "The purpose of this topic is to help you understand the process for switching to Exchange Online Protection (EOP) from an on-premises email hygiene appliance or cloud-based protection service, and then to provide you with help resources to get started."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort

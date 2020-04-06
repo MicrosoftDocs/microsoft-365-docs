@@ -1,5 +1,5 @@
 ---
-title: "Mail flow rules (transport rules) in Exchange Online Protection"
+title: Mail flow rules (transport rules) - Exchange Online Protection
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,6 +12,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: "You can use mail flow rules (transport rules) to identify and take action on messages that flow through your Office 365 organization."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Mail flow rules (transport rules) in Exchange Online Protection
