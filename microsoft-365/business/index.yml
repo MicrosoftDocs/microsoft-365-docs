@@ -33,7 +33,7 @@ productDirectory:
     # Card
     - title: Buy
       imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-      summary: Contact your partner or buy now!
+      summary: Click the link to buy or contact your partner.
       url: https://aka.ms/m365bweb
 
 # conceptualContent section (optional)
