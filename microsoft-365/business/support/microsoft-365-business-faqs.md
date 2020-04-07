@@ -33,7 +33,7 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
 -  Helps protect, preserve, and back up your data with Exchange Online Archiving.  
 -   App protection for Office and other mobile apps with Intune App Protection. 
 -  Device management for Windows 10 PCs, MacOS, and mobile devices with Intune device management. 
--  Identity protection with multi-factor authentication, self-service password reset, and conditional access.
+-  Identity protection with multi-factor authentication (MFA), self-service password reset, and Conditional Access.
 -  Consistent security configuration across devices&mdash;protection of company data across devices; Windows Defender, which is always on and up to date. 
  
  
@@ -132,8 +132,8 @@ The most direct path to a successful Microsoft 365 Business Premium deployment i
 Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune capabilities for iOS, Android, MacOS, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business Premium, like third-party app management and configuration of WiFi profiles, VPN certificates, can be managed in the full Intune console. 
   
 
-### Does Azure Active Directory Premium P1 come with Microsoft 365 Business Premium? 
-Microsoft 365 Business Premium includes select Azure AD Premium P1 (AADP P1) features such as self-service password reset with AD write-back, Azure MFA, and conditional access. It does not include the entirety of AADP P1. For more information, see the [Microsoft 365 Business Premium Service Description](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148).
+### Does Azure Active Directory (Azure AD) Premium P1 come with Microsoft 365 Business? 
+Microsoft 365 Business includes select Azure AD Premium P1 features such as self-service password reset with Azure AD writeback, Azure Multi-Factor Authentication, and Conditional Access. It does not include the entirety of Azure AD Premium P1. For more information, see the [Microsoft 365 Business Service Description](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148).
  
  
 ### Does Microsoft 365 Business Premium allow customers to manage Macs? 

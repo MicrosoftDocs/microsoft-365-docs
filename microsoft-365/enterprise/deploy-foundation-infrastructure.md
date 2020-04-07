@@ -83,17 +83,17 @@ For example, you create the settings for:
 
 | Phase | Results |
 |:-------|:-----|
-| Identity | Account synchronization and groups for identity-based conditional access policies. |
+| Identity | Account synchronization and groups for identity-based Conditional Access policies. |
 | Windows 10 Enterprise | Groups to automatically upgrade computers running Windows 7 or Windows 8.1 to Windows 10 Enterprise in place. |
 | Microsoft 365 Apps for enterprise | Groups to automatically deploy Microsoft 365 Apps for enterprise for users with Office 2010, Office 2013, or Office 2016. |
-| Mobile device management | Groups for device enrollment and device-based conditional access policies. |
+| Mobile device management | Groups for device enrollment and device-based Conditional Access policies. |
 | Information protection | Groups for Office 365 sensitivity labels. |
 
 When you are ready to rollout elements of this infrastructure to users, you:
 
 | Phase | Rollout action |
 |:-------|:-----|
-| Identity | Add user accounts to the groups for identity-based conditional access policies. |
+| Identity | Add user accounts to the groups for identity-based Conditional Access policies. |
 | Windows 10 Enterprise | Add accounts to the groups to automatically deploy Windows 10 Enterprise in place for users with Windows 7 or Windows 8.1. |
 | Microsoft 365 Apps for enterprise | Add user accounts to the groups to automatically deploy Microsoft 365 Apps for enterprise for users with Office 2010, Office 2013, or Office 2016. |
 | Mobile device management | Add accounts to the groups for device enrollment and device-based conditional access policies. |

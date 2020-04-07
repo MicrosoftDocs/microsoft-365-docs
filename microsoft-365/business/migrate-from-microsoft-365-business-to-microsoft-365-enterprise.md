@@ -56,10 +56,10 @@ This table shows the differences between Microsoft 365 Business Premium and Micr
 | Attack surface reduction capabilities    | [See this list](#threat-protection) | Enterprise management of hardware-based isolation for Microsoft Edge | 
 | Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
 | **Identity management**        | | | 
-| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
+| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure Multi-Factor Authentication, Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
 | Cloud App Discovery, Azure AD Connect Health    |     | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
-| Azure AD Office 365 apps Single Sign-On (SSO): 10 apps per user (Gallery SaaS apps such as Salesforce)* | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
-| Azure AD Premium 1 SSO: no limit (On-premises apps through Azure AD Application Proxy and non-gallery apps using Self-Service App Integration templates)    |     | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
+| Azure AD Office 365 apps Single Sign-On (SSO): 10 apps per user (Gallery SaaS apps such as Salesforce)* | ![Included with Microsoft 365 Business](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
+| Azure AD Premium P1 SSO: no limit (On-premises apps through Azure AD Application Proxy and non-gallery apps using Self-Service App Integration templates)    |     | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
 | **Device and app management**        | | | 
 | Microsoft Intune, Windows Autopilot|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Microsoft 365 E3](../media/check-mark.png) | 
 |Virtual Desktop Access (VDA)    |  |     ![Included with Microsoft 365 E3](../media/check-mark.png) | 
@@ -92,7 +92,7 @@ The following sections describe what changes you need to make, if any, and what 
 You don't need to make any changes to your current subscription or data before migrating, which includes:
 
 - Subscription configuration, such as DNS domain names.
-- User and group accounts and authentication settings, such as multi factor authentication or conditional access policies.
+- User and group accounts and authentication settings, such as multi factor authentication or Conditional Access policies.
 - Productivity service configurations and their data, such as Teams, Exchange Online mailboxes, SharePoint Online sites, OneDrive for Business folders, and OneNote notebooks.
 
 Your users can now enjoy unlimited storage in the Exchange Online mailboxes and OneDrive for Business folders.

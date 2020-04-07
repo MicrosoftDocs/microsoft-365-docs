@@ -47,7 +47,7 @@ This table shows the differences between Microsoft 365 Business Premium and Offi
 | **Threat Protection**        | | | 
 | Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | Not included, but can be added on | 
 | **Identity management**        | | | 
-| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
+| Self-service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure Multi-Factor Authentication, Conditional Access, password writeback for on-premises identities|     ![Included with Microsoft 365 Business](../media/check-mark.png)    |  | 
 | **Device and app management**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    |  |
 | Shared computer activation|     ![Included with Microsoft 365 Business Premium](../media/check-mark.png)    | ![Included with Office 365 E3](../media/check-mark.png)| 
@@ -70,7 +70,7 @@ The following sections describe the changes you need to make, if any, and what y
 You don't need to do any changes to your current subscription or data before migrating, which includes:
 
 - Subscription configuration, such as DNS records and domain names.
-- User and group accounts and authentication settings, such as multi factor authentication or conditional access policies.
+- User and group accounts and authentication settings, such as multi factor authentication or Conditional Access policies.
 - Productivity service configurations and their data, such as Teams, Exchange Online mailboxes, SharePoint Online sites, OneDrive for Business folders, and OneNote notebooks.
 
 ### Windows 10

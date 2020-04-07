@@ -82,18 +82,16 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 |Status  |What it means  |
 |---------|---------|
-|Starting | The investigation is queued to begin soon |
-|Running | The investigation has started and is conducting its analysis |
-|No Threats Found | The investigation has completed its analysis and no threats were found |
-|Terminated By System | The investigation was not closed and expired after 7 days |
-|Pending Action | The investigation found threats with actions recommended.  The investigation continues running after it's found initial threats and recommended actions, so you should check the log before approving actions to see if analyzers are still in-progress. |
-|Threats Found | The investigation found threats, but the threats do not have actions available within AIR.  These are user actions where there is no direction AIR action yet. |
-|Remediated | The investigation finished and was fully remediated (all actions were approved) |
-|Partially Remediated | The investigation finished and some of the recommended actions were approved |
-|Terminated By User | An admin terminated the investigation |
-|Failed | An error occurred during the investigation that prevented it from reaching a conclusion on threats |
-|Queued By Throttling | The investigation is waiting for analysis due to system processing limitations (to protect service performance) |
-|Terminated By Throttling | The investigation could not be completed in sufficient time due to investigation volume and system processing limitations. You can retrigger the investigation by selecting the email in Explorer and selecting the Investigate action. |
+|Starting | The investigation has been triggered and waiting to start running​. This is the first step. |
+|Running | The investigation process has started and is underway. This state also occurs when [pending actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) are approved. |
+|No Threats Found | The investigation has finished and no threats (user account, email message, URL, or file) were identified. <br/><br/>**TIP**: If you suspect something was missed (such as a false negative), you can take action using [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)​. |
+|Terminated By System | The investigation stopped. This can happen for a number of reasons. Here are the two most common reasons:​<br/>- The investigation's pending actions expired. Pending actions time out after awaiting approval for one week. <br/>- There are too many actions. For example, if there are too many users clicking on malicious URLs, it can exceed the investigation's ability to run all the analyzers, so the investigation halts​. <br/><br/>**TIP**: If an investigation halts before actions were taken, try using [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) to find and address threats.  |
+|Pending Action | The investigation has found a threat, such as a malicious email, a malicious URL, or a risky mailbox setting​, and an action to remediate that threat is awaiting [approval](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>The Pending Action state is triggered when any threat with a corresponding action is found; however, note that the investigation might not be entirely complete yet.  Check the [investigation log](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) to see if other items are still pending completion.​ |
+|Remediated | The investigation finished and all actions were approved (fully remediated).<br/><br/>**NOTE**: Approved remediation actions can have errors that prevent the actions from being taken. This does not change investigation status. Check the [investigation log](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) for detailed results.​ |
+|Partially Remediated | The investigation resulted in remediation actions, and some were approved and completed​. Other actions are still [pending](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
+|Failed | At least one investigation analyzer ran into a problem where it could not complete properly​. <br/><br/>**NOTE**: If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded. Check the [investigation log](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) for detailed results.​​ |
+|Queued By Throttling | An investigation is being held in a queue. When other investigations complete, queued investigations begin. This helps avoid poor service performance. <br/>​<br/>**TIP**: Pending actions can limit how many new investigations can run. Make sure to [approve (or reject) pending actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
+|Terminated By Throttling | If an investigation is held in the queue too long, it is stopped. <br/><br/>**TIP**: You can [start an investigation from Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
 
 ### Investigation graph
 
