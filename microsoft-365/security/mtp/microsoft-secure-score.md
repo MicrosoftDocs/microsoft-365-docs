@@ -61,6 +61,7 @@ With read and write access, you can make changes and directly interact with Secu
 * Security administrator
 * Exchange administrator
 * SharePoint administrator
+* Account administrator
 
 ### Read-only roles
 

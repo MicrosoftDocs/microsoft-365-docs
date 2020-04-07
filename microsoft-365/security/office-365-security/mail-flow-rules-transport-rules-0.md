@@ -121,6 +121,6 @@ There are several types of messages that pass through an organization. The follo
 
 [Use mail flow rules to inspect message attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
-[Email encryption in Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
+[Email encryption in Office 365](../../compliance/email-encryption.md)
 
 [Journal, transport, and inbox rule limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)
