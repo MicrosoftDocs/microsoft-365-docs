@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2020
 ---
 
 # What's new in Office 365 ATP
@@ -31,6 +30,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 ## January/February 2020
 
+- [General Availability of Campaign Views in Office 365 ATP](campaigns.md)
 - Enhancements to [Threat Explorer](threat-explorer.md) to enable security operations teams to search and filter on multiple fields while [investigating email](investigate-malicious-email-that-was-delivered.md):
     - Delivery location and special actions
     - Directionality (inbound, outbound, or intra-org)

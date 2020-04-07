@@ -81,6 +81,9 @@ To learn how to use the add-in, see [Use the Report Message add-in](https://supp
 
 ## Get and enable the Report Message add-in for your organization
 
+> [!NOTE]
+> It could take up to 12 hours for the add-in to appear in your organization.
+
 1. In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>, and then click **Deploy Add-In**.
 
    ![Services and add-ins page in the Microsoft 365 admin center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
@@ -122,9 +125,6 @@ To learn how to use the add-in, see [Use the Report Message add-in](https://supp
 8. On the **Announce add-in** page that appears, review the information, and then click **Close**.
 
    ![Announce add-in page](../../media/announce-add-in-page.png)
-
-> [!TIP]
-> To be notified when users report messages, see [Use mail flow rules to filter bulk email in Office 365](use-transport-rules-to-configure-bulk-email-filtering.md).
 
 ### Learn how to use the Report Message add-in
 

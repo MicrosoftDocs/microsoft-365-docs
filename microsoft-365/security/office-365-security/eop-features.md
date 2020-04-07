@@ -86,4 +86,4 @@ The following table provides a list of features that are available in the Exchan
 |**Other features**||
 |A geo-redundant global network of servers|EOP runs on a worldwide network of datacenters that are designed to help provide the best availability. For more information, see the "EOP data centers" section in [Exchange Online Protection overview](exchange-online-protection-overview.md).|
 |Message queuing when the on-premises server cannot accept mail|Messages in deferral remain in our queues for one day. Message retry attempts are based on the error we get back from the recipient's mail system. On average, messages are retried every 5 minutes. For more information, see [EOP queued, deferred, and bounced messages FAQ](eop-queued-deferred-and-bounced-messages-faq.md).|
-|Office 365 Message Encryption available as an add-on service|For more information, see [Encryption in Office 365](https://docs.microsoft.com/office365/securitycompliance/encryption).|
+|Office 365 Message Encryption available as an add-on service|For more information, see [Encryption in Office 365](../../compliance/encryption.md).|

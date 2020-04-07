@@ -68,13 +68,19 @@ If you're an Office 365 customer with Exchange Online mailboxes, you can use the
 
 ## Disable or enable junk email reporting in Outlook on the web
 
-By default, users can report spam false positives, false negatives, and phishing messages to Microsoft for analysis in Outlook on the web. Admins can use Outlook on the web mailbox policies in Exchange Online to disable or enable this ability, but only in Exchange Online PowerShell.
+By default, users can report spam false positives, false negatives, and phishing messages to Microsoft for analysis in Outlook on the web. Admins can configure Outlook on the web mailbox policies in Exchange Online PowerShell to prevent users from reporting spam false positives and spam false negatives to Microsoft. You can't disable the ability for users to report phishing messages to Microsoft.
+
+### What do you need to know before you begin?
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can perform these procedures. Specifically you need the **Recipient Policies** or **Mail Recipients** roles in Exchange Online, which are assigned to the **Organization Management** and **Recipient Management** role groups by default. For more information about role groups in Exchange Online, see [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).
 
 - Every organization has a default policy named OwaMailboxPolicy-Default, but you can create custom policies. Custom policies are applied to scoped users before the default policy. For more information about Outlook on the web mailbox policies, see [Outlook on the web mailbox policies in Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies).
+
+- Disabling junk email reporting doesn't remove the ability to mark a message as junk or not junk in Outlook on the web. Selecting a message in the Junk email folder and clicking **Not junk** \> **Not junk** still moves the message back into the Inbox. Selecting a message in any other email folder and clicking **Junk** \> **Junk** still moves the message into the Junk Email folder. What's no longer available is the option to report the message to Microsoft.
+
+### Use Exchange Online PowerShell to disable or enable junk email reporting in Outlook on the web
 
 1. To find your existing Outlook on the web mailbox policies and the status of junk email reporting, run the following command:
 
@@ -94,7 +100,7 @@ By default, users can report spam false positives, false negatives, and phishing
    Set-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" -ReportJunkEmailEnabled $false
    ```
 
-   This example enabled junk email reporting in the custom policy named Contoso Managers.
+   This example enables junk email reporting in the custom policy named Contoso Managers.
 
    ```powershell
    Set-OwaMailboxPolicy -Identity "Contoso Managers" -ReportJunkEmailEnabled $true
@@ -112,4 +118,13 @@ To verify that you've successfully enabled or disabled junk email reporting in O
   Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
   ```
 
-- Open an affected user's mailbox in Outlook on the web, and verify the options to report junk, not junk, and phishing messages are available or not available. Note that the user can still mark messages as junk, phishing, and not junk, but the user can't report them to Microsoft.
+- Open an affected user's mailbox in Outlook on the web, select a message in the Inbox, click **Junk** \> **Junk** and verify the prompt to report the message to Microsoft is or is not displayed.<sup>\*</sup>
+
+- Open an affected user's mailbox in Outlook on the web, select a message in the Junk Email folder, click **Junk** \> **Junk** and verify the prompt to report the message to Microsoft is or is not displayed.<sup>\*</sup>
+
+<sup>\*</sup> Users can hide the prompt to report the message while still reporting the message. To check this setting in Outlook on the web:
+
+1. Click **Settings** ![Outlook on the web settings icon](../../media/owa-settings-icon.png) \> **View all Outlook settings** \> **Junk email**.
+2. In the **Reporting** section, verify the value: **Ask me before sending a report**.
+
+   ![Outlook on the web Junk Email Reporting settings](../../media/owa-junk-email-reporting-options.png)
