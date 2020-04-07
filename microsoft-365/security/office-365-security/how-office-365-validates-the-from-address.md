@@ -1,5 +1,5 @@
 ---
-title: "How Office 365 validates the From address to prevent phishing"
+title: How Office 365 validates From address to prevent phishing
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,6 +17,7 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: "To help prevent phishing, Office 365 and Outlook.com now require RFC compliance for From: addresses."
+ms.custom: seo-marvel-apr2020
 ---
 
 # How Office 365 validates the From address to prevent phishing

@@ -1,5 +1,5 @@
 ---
-title: "S/MIME for message signing and encryption in Exchange Online"
+title: S/MIME for encryption in Exchange Online - Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda

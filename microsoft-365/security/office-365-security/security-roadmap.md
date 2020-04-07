@@ -1,5 +1,5 @@
 ---
-title: "Office 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond"
+title: Office 365 security roadmap - Top priorities
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -17,7 +17,8 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
-description: "Top recommendations from Microsoft&amp;s cybersecurity team for implementing security capabilities to protect your Office 365 environment. "
+description: "Top recommendations from Microsoft's cybersecurity team for implementing security capabilities to protect your Office 365 environment. "
+ms.custom: seo-marvel-apr2020
 ---
 
 # Office 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond

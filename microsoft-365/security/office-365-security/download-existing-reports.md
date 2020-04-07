@@ -1,5 +1,5 @@
 ---
-title: "Download existing reports in the Security &amp; Compliance Center"
+title: Download existing reports - Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: deniseb

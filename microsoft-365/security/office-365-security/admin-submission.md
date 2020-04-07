@@ -1,5 +1,5 @@
 ---
-title: "Admin submissions in Office 365, O365 submissions, Office 365 spam problem, O365 false negative, submit phish in office 365, submit email for scanning, suspicious email in Office 365, scan a mail, have Microsoft scan for phish, have Microsoft scan for spam, submit e-mail, submit email, dodgy email, bad actor mail, suspicious, untrusted mail, report phish emails to Microsoft, report phish emails to Microsoft, report malicious email to Microsoft, report scam email to Microsoft, report malware in email to Microsoft, spam email in inbox office 365, virus in email office 365"
+title: Admin submissions in Office 365
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,6 +15,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: "Learn how to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files from your Office 365 tenant to Microsoft for scanning."
+ms.custom: seo-marvel-apr2020
 ---
 
 # How to submit suspected spam, phish, URLs, and files to Microsoft using Admin Submissions

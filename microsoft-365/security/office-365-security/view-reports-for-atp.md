@@ -1,5 +1,5 @@
 ---
-title: "View reports for Office 365 Advanced Threat Protection, malware reports, phish reports, compromised accounts, URL protection status, threat reporting, report threats"
+title: View reports for Advanced Threat Protection
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -17,6 +17,7 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection: 
 - M365-security-compliance
 description: "Find and use reports for Office 365 Advanced Threat Protection in the Security &amp; Compliance Center."
+ms.custom: seo-marvel-apr2020
 ---
 
 # View reports for Office 365 Advanced Threat Protection

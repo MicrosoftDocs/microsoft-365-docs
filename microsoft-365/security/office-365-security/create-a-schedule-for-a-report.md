@@ -1,5 +1,5 @@
 ---
-title: "Create a schedule for a report in the Security &amp; Compliance Center"
+title: Create schedule for report - Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: deniseb

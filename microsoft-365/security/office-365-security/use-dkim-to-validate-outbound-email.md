@@ -1,5 +1,5 @@
 ---
-title: "Use DKIM for email in your custom domain in Office 365, 2048-bit, 1024-bit, steps, How it works, SPF, DMARC"
+title: How to use DKIM for email in your custom domain
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,6 +16,7 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: "Summary: This article describes how you use DomainKeys Identified Mail (DKIM) with Office 365 to ensure that destination email systems trust messages sent from your custom domain."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Use DKIM to validate outbound email sent from your custom domain in Office 365
@@ -134,13 +135,13 @@ Use the following format for the CNAME records.
 > If you are one of our GCC High customers, we calculate _domainGuid_ differently! Instead of looking up the MX record for your _initialDomain_ to calculate _domainGuid_, instead we calculate it directly from the customized domain. For example, if your customized domain is "contoso.com" your domainGuid becomes "contoso-com", any periods are replaced with a dash. So, regardless of what MX record your initialDomain points to, you'll always use the above method to calculate the domainGuid to use in your CNAME records.
 
 ```text
-Host name:			selector1._domainkey
-Points to address or value:	selector1-<domainGUID>._domainkey.<initialDomain>
-TTL:				3600
+Host name:            selector1._domainkey
+Points to address or value:    selector1-<domainGUID>._domainkey.<initialDomain>
+TTL:                3600
 
-Host name:			selector2._domainkey
-Points to address or value:	selector2-<domainGUID>._domainkey.<initialDomain>
-TTL:				3600
+Host name:            selector2._domainkey
+Points to address or value:    selector2-<domainGUID>._domainkey.<initialDomain>
+TTL:                3600
 ```
 
 Where:
@@ -158,21 +159,21 @@ Where:
 For example, if you have an initial domain of cohovineyardandwinery.onmicrosoft.com, and two custom domains cohovineyard.com and cohowinery.com, you would need to set up two CNAME records for each additional domain, for a total of four CNAME records.
 
 ```text
-Host name:			selector1._domainkey
-Points to address or value:	selector1-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
-TTL:				3600
+Host name:            selector1._domainkey
+Points to address or value:    selector1-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
+TTL:                3600
 
-Host name:			selector2._domainkey
-Points to address or value:	selector2-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
-TTL:				3600
+Host name:            selector2._domainkey
+Points to address or value:    selector2-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
+TTL:                3600
 
-Host name:			selector1._domainkey
-Points to address or value:	selector1-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com
-TTL:				3600
+Host name:            selector1._domainkey
+Points to address or value:    selector1-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com
+TTL:                3600
 
-Host name:			selector2._domainkey
-Points to address or value:	selector2-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com
-TTL:				3600
+Host name:            selector2._domainkey
+Points to address or value:    selector2-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com
+TTL:                3600
 ```
 
 > [!NOTE]

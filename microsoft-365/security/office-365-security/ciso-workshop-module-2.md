@@ -1,5 +1,5 @@
 ---
-title: "Chief Information Security Officer (CISO) Workshop, Module 2: Security Management"
+title: "CISO Workshop, Module 2: Security Management"
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -12,7 +12,9 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: "In this module, learn about different aspects of security management, such as meeting productivity and security goals."
-ms.custom: seo-marvel-mar2020
+ms.custom: 
+ - seo-marvel-mar2020
+ - seo-marvel-apr2020
 ---
 
 # CISO Workshop Module 2: Security Management 

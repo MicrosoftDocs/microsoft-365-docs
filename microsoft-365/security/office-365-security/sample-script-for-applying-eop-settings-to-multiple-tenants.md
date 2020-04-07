@@ -1,5 +1,5 @@
 ---
-title: "Sample script for applying EOP settings to multiple tenants"
+title: Sample script for EOP settings - multiple tenants
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,6 +12,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 description: "The following sample script lets Microsoft Exchange Online Protection (EOP) admins who manage multiple tenants (companies) use Windows PowerShell to apply configuration settings to their tenants."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Sample script for applying EOP settings to multiple tenants
