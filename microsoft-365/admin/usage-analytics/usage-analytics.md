@@ -22,7 +22,7 @@ description: "Get an overview of how your organization is adopting Microsoft 365
 
 # Microsoft 365 usage analytics
 
-Microsoft 365 usage analytics is currenty not available for Power BI Government Customers
+Microsoft 365 usage analytics is currently not available for Power BI Government customers.
  
 ## Overview of Microsoft 365 usage analytics
 
