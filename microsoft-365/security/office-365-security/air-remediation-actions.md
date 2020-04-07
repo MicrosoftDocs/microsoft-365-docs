@@ -28,7 +28,7 @@ description: "Learn about remediation actions in automated investigation and res
 - Turn off delegation
 
 > [!NOTE]
-> In Office 365 ATP, no remediation actions are taken automatically. Remediation actions are taken only upon approval by your organization's security team. 
+> In Office 365 ATP, automated investigations do not automatically remediate. Remediation actions are taken only upon approval by your organization's security team. 
 
 ## Threats and remediation actions
 
