@@ -31,12 +31,13 @@ We're continuously adding new features to [the Microsoft 365 admin center](micro
 > **"Classic" admin center retirement starting in March**<br><br>
 When you sign-in to admin.microsoft.com, you'll now go to the new admin center every time. And in March, we will start disabling the ability to switch back to the classic admin center. For now, you can still switch back, but as the new admin center comes to parity (and exceeds it) we will turn off the switch for all organizations. <br><br> *Last updated: March 2, 2020*
 
-And if you're interested in what's new in other admin centers:
+And if you're interested in what's new in other Microsoft cloud services:
 
 - [What's New in Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
 - [What's New in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Office updates](https://docs.microsoft.com/en-us/OfficeUpdates/)
 
 ## March 2020
 
@@ -48,7 +49,7 @@ We received a lot of feedback from admins about the how hard it is to assign lic
 
 ### Microsoft Teams home page card
 
-With the uptick in Teams usage, we created a dashboard card that makes turning Teams on more discoverable. The card also has links to training and docs to help your org transition to remote work. Just go to the **Home** page to see the new card.
+With the uptick in Teams usage, some orgs will get a pinned dashboard card that makes turning Teams on more discoverable. The card also has links to training and docs to help your org transition to remote work. Just go to the **Home** page to see the new card.
 
 :::image type="content" source="../media/MAC-WN-TeamsCard.png" alt-text="Microsoft Teams home page card":::
 
@@ -60,11 +61,14 @@ Using the Microsoft 365 admin center, you can now customize your organization's 
 
 :::image-end:::
 
-### Microsoft 365 offerings for small businesses
+### Improvements to the "Add a group" wizard
+
+When admins created a new group - and made it a Team at they same time, they could assign owners who don't have a license that includes Teams. And that created some headaches. We've updated the wizard flow to verify that owners have a Teams license and if they don't the option to turn the group into a Team is disabled.
+
+### Microsoft 365 offerings for small and medium businesses
 
 We know that this is an announcement for next month, but we want to make sure you're prepared.
 
-Microsoft 365 offerings for small and medium-sized businesses
 Starting on April 21, we're making changes related to our Office 365 subscriptions for SMBs – and to Office 365 ProPlus. These products will now use the Microsoft 365 brand.
 
 The new product names go into effect on April 21, 2020. This is a change to the product name only, and there are no pricing or feature changes at this time.
@@ -74,7 +78,8 @@ The new product names go into effect on April 21, 2020. This is a change to the 
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business<br> Office 365 ProPlus     |    Microsoft 365 Apps<br><br>  We will use the "for business" and "for enterprise" labels to distinguish between the two.     |
+|Office 365 Business<br>     |    Microsoft 365 Apps for business       | 
+|Office 365 ProPlus    |   Microsoft 365 apps for enterprise      |
 
 ### Videos, training, and docs
 
