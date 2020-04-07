@@ -51,7 +51,7 @@ We received a lot of feedback from admins about the how hard it is to assign lic
 
 With the uptick in Teams usage, some orgs will get a pinned dashboard card that makes turning Teams on more discoverable. The card also has links to training and docs to help your org transition to remote work. Just go to the **Home** page to see the new card.
 
-:::image type="content" source="../media/MAC-WN-TeamsCard.png" alt-text="Microsoft Teams home page card":::
+:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Microsoft Teams home page card":::
 
 ### Customize your organization's SharePoint mobile app theme
 
@@ -69,7 +69,7 @@ When admins created a new group - and made it a Team at they same time, they cou
 
 We know that this is an announcement for next month, but we want to make sure you're prepared.
 
-Starting on April 21, we're making changes related to our Office 365 subscriptions for SMBs – and to Office 365 ProPlus. These products will now use the Microsoft 365 brand.
+Starting on April 21, we're making changes related to our Office 365 subscriptions for small and medium businesses – and to Office 365 ProPlus. These products will now use the Microsoft 365 brand.
 
 The new product names go into effect on April 21, 2020. This is a change to the product name only, and there are no pricing or feature changes at this time.
 
@@ -78,7 +78,7 @@ The new product names go into effect on April 21, 2020. This is a change to the 
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business<br>     |    Microsoft 365 Apps for business       | 
+|Office 365 Business     |    Microsoft 365 Apps for business       | 
 |Office 365 ProPlus    |   Microsoft 365 apps for enterprise      |
 
 ### Videos, training, and docs
