@@ -111,21 +111,40 @@ You can only differentiate between intra-org spoofing and cross-domain spoofing 
 
 ## Why email authentication is not always enough to stop spoofing
 
-If a domain has no SPF records or if they're incorrectly configured, messages from senders in the domain will be identified as spoofed unless the destination email service has back-end intelligence that says the message is legitimate.
+Relying only on email authentication records to determine if an incoming message is spoofed has the following limitations:
 
-For example, prior to spoof intelligence, inbound messages from senders in the fabrikam domain would have the following values stamped in the message header if the fabrikam domain has no SPF, DKIM, or DMARC records:
+- The sending domain might lack the required DNS records, or the records are incorrectly configured.
 
-> Authentication-Results: spf=none (sender IP is 10.2.3.4)<br/>&nbsp;&nbsp;&nbsp;smtp.mailfrom=fabrikam.com; contoso.com; dkim=none<br/>&nbsp;&nbsp;&nbsp;(message not signed) header.d=none; contoso.com; dmarc=none<br/>&nbsp;&nbsp;&nbsp;action=none header.from=fabrikam.com;<br/>From: chris@fabrikam.com<br/>To: michelle@ contoso.com
+- The source domain has correctly configured DNS records, but that domain doesn't match the domain in the From address. SPF and DKIM don't require the domain to be used in the From address. Attackers or legitimate services can register a domain, configure SPF and DKIM for the domain, use a completely different domain in the From address, and that message will pass SPF and DKIM.
 
-With spoof intelligence and implicit email authentication, the same message is stamped with the additional value `compauth=fail reason=001`.
+Composite authentication can address these limitations by passing messages that would otherwise fail email authentication checks.
 
-If fabrikam.com configures an SPF without a DKIM record, the message would pass composite authentication, because the domain that passed SPF is aligned with the domain in the From address:
+> [!NOTE]
+> As described earlier, implicit email authentication uses multiple signals to determine if a message is legitimate. For simplicity, the following examples concentrate on email authentication results. Other back-end intelligence factors could identify messages that pass email authentication as spoofed, or messages that fail email email authentication as legitimate.
 
-> Authentication-Results: spf=pass (sender IP is 10.2.3.4)<br/>&nbsp;&nbsp;&nbsp;smtp.mailfrom=fabrikam.com; contoso.com; dkim=none<br/>&nbsp;&nbsp;&nbsp;(message not signed) header.d=none; contoso.com; dmarc=bestguesspass<br/>&nbsp;&nbsp;&nbsp;action=none header.from=fabrikam.com; compauth=pass reason=109<br/>From: chris@fabrikam.com<br/>To: michelle@ contoso.com
+For example, the fabrikam.com domain has no SPF, DKIM, or DMARC records. Messages from senders in the fabrikam.com domain can fail composite authentication (note the `compauth` value and reason):
 
-If fabrikam.com configures a DKIM record without an SPF record, the message would also pass composite authentication, because the domain in the DKIM-Signature that passed is aligned with the domain in the From address:
+```text
+Authentication-Results: spf=none (sender IP is 10.2.3.4)
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
+  (message not signed) header.d=none; contoso.com; dmarc=none
+  action=none header.from=fabrikam.com; compauth=fail reason=001
+From: chris@fabrikam.com
+To: michelle@contoso.com
+```
 
-> Authentication-Results: spf=none (sender IP is 10.2.3.4)<br/>&nbsp;&nbsp;&nbsp;smtp.mailfrom=fabrikam.com; contoso.com; dkim=pass<br/>&nbsp;&nbsp;&nbsp;(signature was verified) header.d=outbound.fabrikam.com;<br/>&nbsp;&nbsp;&nbsp;contoso.com; contoso.com; dmarc=bestguesspass action=none<br/>&nbsp;&nbsp;&nbsp;action=none<br/>&nbsp;&nbsp;&nbsp;header.from=fabrikam.com; compauth=pass reason=109<br/>From: chris@fabrikam.com<br/>To: michelle@ contoso.com
+If fabrikam.com configures an SPF without a DKIM record, the message can pass composite authentication, because the domain that passed SPF is aligned with the domain in the From address:
+
+```text
+Authentication-Results: spf=pass (sender IP is 10.2.3.4)
+  smtp.mailfrom=fabrikam.com; contoso.com; dkim=none
+  (message not signed) header.d=none; contoso.com; dmarc=bestguesspass
+  action=none header.from=fabrikam.com; compauth=pass reason=109
+From: chris@fabrikam.com
+To: michelle@contoso.com
+```
+
+If fabrikam.com configures a DKIM record without an SPF record, the message can pass composite authentication, because the domain in the passed DKIM signature is aligned with the domain in the From address:
 
 ```text
 Authentication-Results: spf=none (sender IP is 10.2.3.4)
@@ -137,53 +156,28 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-However, a attacker may also set up SPF and DKIM and sign the message with their own domain, but specify a different domain in the From: address. Neither SPF nor DKIM requires the domain to align with the domain in the From: address, so unless fabrikam.com published DMARC records, this would not be marked as a spoof using DMARC:
+If the domain in SPF or the DKIM signature don't align with the domain in the From address, the message can fail composite authentication:
 
 ```text
-Authentication-Results: spf=pass (sender IP is 172.17.17.8)
-  smtp.mailfrom=maliciousDomain.com; contoso.com; dkim=pass
-  (signature was verified) header.d=maliciousDomain.com;
-  contoso.com; dmarc=none action=none header.from=fabrikam.com;
-From: chris@fabrikam.com
-To: michelle@contoso.com
-```
-
-In the email client (Outlook, Outlook on the web, or any other email client), only the From: domain is displayed, not the domain in the SPF or DKIM, and that can mislead the user into thinking the message came from fabrikam.com, but actually came from maliciousDomain.com.
-
-![Authenticated message but From: domain does not align with what passed SPF or DKIM](../../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
-
-For that reason, Office 365 requires that the domain in the From: address aligns with the domain in the SPF or DKIM signature, and if it doesn't, contains some other internal signals that indicates that the message is legitimate. Otherwise, the message would be a compauth fail.
-
-```text
-Authentication-Results: spf=none (sender IP is 5.6.7.8)
-  smtp.mailfrom=maliciousDomain.com; contoso.com; dkim=pass
-  (signature was verified) header.d=maliciousDomain.com;
+Authentication-Results: spf=none (sender IP is 192.168.1.8)
+  smtp.mailfrom=maliciousdomain.com; contoso.com; dkim=pass
+  (signature was verified) header.d=maliciousdomain.com;
   contoso.com; dmarc=none action=none header.from=contoso.com;
   compauth=fail reason=001
-From: sender@contoso.com
-To: someone@fabrikam.com
+From: chris@contoso.com
+To: michelle@fabrikam.com
 ```
 
-Thus, Office 365 anti-spoofing protects against domains with no authentication, and against domains who set up authentication but mismatch against the domain in the From: address as that is the one that the user sees and believes is the sender of the message. This is true both of domains external to your organization, as well as domains within your organization.
+### Understanding changes in how spoofed email is treated
 
-Therefore, if you ever receive a message that failed composite authentication and is marked as spoofed, even though the message passed SPF and DKIM, it's because the domain that passed SPF and DKIM are not aligned with the domain in the From: address.
-
-### Understanding changes in how spoofed emails are treated
-
-Currently, for all organizations in Office 365 - ATP and non-ATP - messages that fail DMARC with a policy of reject or quarantine are marked as spam and usually take the high confidence spam action, or sometimes the regular spam action (depending on whether other spam rules first identify it as spam). Intra-org spoof detections take the regular spam action. This behavior does not need to be enabled, nor can it be disabled.
-
-However, for cross-domain spoofing messages, before this change they would go through regular spam, phish, and malware checks and if other parts of the filter identified them as suspicious, would mark them as spam, phish, or malware respectively. With the new cross-domain spoofing protection, any message that can't be authenticated will, by default, take the action defined in the Anti-phishing \> Anti-spoofing policy. If one is not defined, it will be moved to a users Junk Email folder. In some cases, more suspicious messages will also have the red safety tip added to the message.
-
-This may result in some messages that were previously marked as spam still getting marked as spam but will now also have a red safety tip; in other cases, messages that were previously marked as non-spam will start getting marked as spam (CAT:SPOOF) with a red safety tip added. In still other cases, customers that were moving all spam and phish to the quarantine would now see them going to the Junk Mail Folder (this behavior can be changed, see [Changing your anti-spoofing settings](#changing-your-anti-spoofing-settings)).
-
-There are multiple different ways a message can be spoofed (see  [Differentiating between different types of spoofing](#differentiating-between-different-types-of-spoofing) earlier in this article) but as of March 2018 the way Office 365 treats these messages is not yet unified. The following table is a quick summary, with Cross-domain spoofing protection being new behavior:
+The following table summarizes how spoofed email is treated
 
 |||||
 |---|---|---|---|
 |**Type of spoof**|**Category**|**Safety tip added?**|**Applies to**|
-|DMARC fail (quarantine or reject)|HSPM (default), may also be SPM or PHSH|No (not yet)|All Office 365 customers, Outlook.com|
-|Self-to-self|SPM|Yes|All Office 365 organizations, Outlook.com|
-|Cross-domain|SPOOF|Yes|Office 365 Advanced Threat Protection and E5 customers|
+|DMARC fail (quarantine or reject)|HSPM (default), may also be SPM or PHSH|No|All Office 365, Outlook.com|
+|Intra-org|SPM|Yes|All Office 365, Outlook.com|
+|Cross-domain|SPOOF|Yes|Office 365 ATP and E5|
 |
 
 ### Changing your anti-spoofing settings

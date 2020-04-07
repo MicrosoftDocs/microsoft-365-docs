@@ -113,13 +113,15 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 |**Notify external senders** of the undelivered message <br/><br/> _EnableExternalSenderNotifications_|Disabled <br/><br/> `$false`|Disabled <br/><br/> `$false`||
 |
 
-### EOP anti-phishing policy settings
+### EOP default anti-phishing policy settings
 
-|Security feature name|Standard|Strict|Comment|
-|---------|---------|---------|---------|
-|Enable anti-spoofing protection|On|On||
-|Enable Unauthenticated Sender (tagging)|On|On||
-|If email is sent by someone who's not allowed to spoof your domain|Move message to the recipients' Junk Email folders|Quarantine the message||
+|||||
+|---|---|---|---|
+|**Security feature name**|**Standard**|**Strict**|**Comment**|
+|**Enable anti-spoofing protection** <br/><br/> _EnableAntispoofEnforcement_|On <br/><br/> `$true`|On <br/><br/> `$true`||
+|**Enable Unauthenticated Sender** <br/><br/> _EnableUnauthenticatedSender_|On <br/><br/> `$true`|On <br/><br/> `$true`|Adds a question mark (?) to the sender's photo in Outlook.|
+|**If email is sent by someone who's not allowed to spoof your domain** <br/><br/> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br/><br/> `MoveToJmf`|**Quarantine the message** <br/><br/> `Quarantine`||
+|
 
 ## Office 365 Advanced Threat Protection security
 
@@ -158,7 +160,6 @@ EOP customers get basic anti-phishing as previously described, but Office 365 AT
 |If email is sent by someone who's not allowed to spoof your domain|Move message to the recipients' Junk Email folders|Quarantine the message||
 |EnableSuspiciousSafetyTip|False|True|This setting is only available in PowerShell|
 |TreatSoftPassAsAuthenticated|True|False|This setting is only available in PowerShell|
-
 
 |Advanced settings security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|

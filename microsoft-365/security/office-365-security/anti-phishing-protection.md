@@ -21,6 +21,8 @@ description: "Office 365 offers a variety of protection against phishing attacks
 
 # Anti-phishing protection in Office 365
 
+Phishing attacks come in a variety of forms from commodity-based attacks to targeted spear phishing or whaling. With the growing complexity, it's difficult for even a trained eye to identify some of these sophisticated attacks. Fortunately, Office 365 Advanced Threat Protection can help. You can set up an ATP anti-phishing policy to help ensure that your organization is protected against such attacks.
+
 Office 365 offers a variety of protection against phishing attacks by default and also through additional offerings such as ATP anti-phishing. This topic introduces the online resources you can use to learn about and implement anti-phishing options and strategies in Office 365.
 
 ## Protect your organization against phishing attacks in Office 365
