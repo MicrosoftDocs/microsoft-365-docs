@@ -37,7 +37,7 @@ And if you're interested in what's new in other Microsoft cloud services:
 - [What's New in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
-- [Office updates](https://docs.microsoft.com/en-us/OfficeUpdates/)
+- [Office updates](https://docs.microsoft.com/OfficeUpdates/)
 
 ## March 2020
 
