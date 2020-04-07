@@ -11,7 +11,7 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.custom:
 - SMB_SuccessCenter
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - MET150
 - MOE150

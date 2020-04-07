@@ -95,4 +95,4 @@ When providing notice to customers of a personal data breach, Microsoft will inc
 
 ## Learn more
 
-Find out more about Microsoft Professional Services (<https://aka.ms/pstrust>). 
+Find out more about Microsoft Professional Services (<https://aka.ms/pstrust>).

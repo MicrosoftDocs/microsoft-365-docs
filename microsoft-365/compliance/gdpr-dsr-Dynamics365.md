@@ -246,4 +246,4 @@ Permanently deleting a user account removes the user’s data from system-genera
 
 ## Learn more
 
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

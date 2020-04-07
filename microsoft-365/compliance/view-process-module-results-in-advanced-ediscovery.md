@@ -19,7 +19,7 @@ description: "Learn about how to find the results of a Process Module run in Off
 "
 ---
 
-# View Process module results in Office 365 Advanced eDiscovery
+# View Process module results in Advanced eDiscovery (classic)
 
 After **Prepare** \> **Process** is initiated, you can view progress and results. 
   
@@ -106,7 +106,7 @@ In Prepare \> Process \> Results \> Last process errors, details of the errors i
   
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Running the Process module and loading data](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

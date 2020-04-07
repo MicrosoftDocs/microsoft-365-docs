@@ -74,14 +74,14 @@ Be sure to read the following items before you start searching the Office 365 au
   > [!IMPORTANT]
   > If you assign a user the View-Only Audit Logs or Audit Logs role on the **Permissions** page in the Security & Compliance Center, they won't be able to search the Office 365 audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
 
-- When an audited activity is performed by a user or admin, an audit record is generated and stored in the Office 365 audit log for your organization. The length of time that an audit record is retained (and searchable in the audit log) depends on your Office 365 or Microsoft 365 subscription, and specifically the type of the license that is assigned to a specific user.
+- When an audited activity is performed by a user or admin, an audit record is generated and stored in the Office 365 audit log for your organization. The length of time that an audit record is retained (and searchable in the audit log) depends on your Office 365 or Microsoft 365 enterprise subscription, and specifically the type of the license that is assigned to a specific user.
 
-  - **Office 365 and Microsoft 365 E3:** Audit records are retained for 90 days. That means you can search the audit log for activities that were performed within the last 90 days.
+  - **Office 365 E3 or Microsoft 365 E3:** Audit records are retained for 90 days. That means you can search the audit log for activities that were performed within the last 90 days.
 
     > [!NOTE]
     > Even when mailbox auditing on by default is turned on, you might notice that mailbox audit events for some users aren't found in audit log searches in the Security & Compliance Center or via the Office 365 Management Activity API. For more information, see [More information about mailbox audit logging](enable-mailbox-auditing.md#more-information).
 
-  - **Office 365 or Microsoft 365 E5 or users with a Microsoft 365 E5 Compliance add-on license:** Audit records for Azure Active Directory, Exchange, and SharePoint activity are retained for one year by default. Organizations can also create audit log retention policies to retain audit records for activity in other services for up to one year. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
+  - **Office 365 E5 or Microsoft 365 E5 or users with a Microsoft 365 E5 Compliance add-on license:** Audit records for Azure Active Directory, Exchange, and SharePoint activity are retained for one year by default. Organizations can also create audit log retention policies to retain audit records for activity in other services for up to one year. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
 
     > [!NOTE]
     > If your organization participated in the private preview program for the one-year retention of audit records, the retention duration for audit records that were generated before the general availability rollout date will not be reset.
@@ -306,7 +306,8 @@ Click one of the following links to go to a specific table.
 |[Advanced eDiscovery activities](#advanced-ediscovery-activities)|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Yammer activities](#yammer-activities)|
 |[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|[Microsoft Stream activities](#microsoft-stream-activities)|
-|[Microsoft Forms activities](#microsoft-forms-activities)|[Sensitivity label activities](#sensitivity-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)||
+|[Content explorer activities](#content-explorer-activities)|[Quarantine activities](#quarantine-activities)|[Microsoft Forms activities](#microsoft-forms-activities)
+|[Sensitivity label activities](#sensitivity-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)|||
 ||||
 
 ### File and page activities
@@ -335,7 +336,7 @@ The following table describes the file and page activities in SharePoint Online 
 |(none)|FileModifiedExtended|This is related to the "Modified file" (FileModified) activity. A FileModifiedExtended event is logged when the same person continually modifies a file for an extended period (up to 3 hours). <br/><br/> The purpose of logging FileModifiedExtended events is to reduce the number of FileModified events that are logged when a file is continually modified. This helps reduce the noise of multiple FileModified records for what is essentially the same user activity, and lets you focus on the initial (and more important) FileModified event.|
 |Moved file|FileMoved|User moves a document from its current location on a site to a new location.|
 |(none)|FilePreviewed|User previews files on a SharePoint or OneDrive for Business site. These events typically occur in high volumes based on a single activity, such as viewing an image gallery.|
-|Performed search query|SearchQueryPerformed|User or system account performs a search in SharePoint or OneDrive for Business. Some common scenarios where a service account performs a search query include applying an eDiscovery hold or retention policy to sites and OneDrive accounts, and when retention or sensitivity labels are auto-applied to site content. In many of these cases, the name of the service account that's logged in the User field of the audit record is **app\@sharepoint**. </br></br> **Tip:** The ApplicationDisplayName and EventData fields in the audit record for the Performed search query activity may help you identify the scenario or service that triggered this event.|
+|Performed search query|SearchQueryPerformed|User or system account performs a search in SharePoint or OneDrive for Business. Some common scenarios where a service account performs a search query include applying an eDiscovery holds and retention policy to sites and OneDrive accounts, and auto-applying retention or sensitivity labels to site content.|
 |Recycled all minor versions of file|FileVersionsAllMinorsRecycled|User deletes all minor versions from the version history of a file. The deleted versions are moved to the site's recycle bin.|
 |Recycled all versions of file|FileVersionsAllRecycled|User deletes all versions from the version history of a file. The deleted versions are moved to the site's recycle bin.|
 |Recycled version of file|FileVersionRecycled|User deletes a version from the version history of a file. The deleted version is moved to the site's recycle bin.|
@@ -344,14 +345,29 @@ The following table describes the file and page activities in SharePoint Online 
 |Uploaded file|FileUploaded|User uploads a document to a folder on a site.|
 |Viewed page|PageViewed|User views a page on a site. This doesn't include using a Web browser to view files located in a document library.|
 |(none)|PageViewedExtended|This is related to the "Viewed page" (PageViewed) activity. A PageViewedExtended event is logged when the same person continually views a web page for an extended period (up to 3 hours). <br/><br/> The purpose of logging PageViewedExtended events is to reduce the number of PageViewed events that are logged when a page is continually viewed. This helps reduce the noise of multiple PageViewed records for what is essentially the same user activity, and lets you focus on the initial (and more important) PageViewed event.|
-|View signaled by client|ClientViewSignaled|A user’s client (such as website or mobile app) has signaled that the indicated page has been viewed by the user. This activity is often logged following a PagePrefetched event for a page. <br/><br/>**NOTE**: Because ClientViewSignaled events are signaled by the client, rather than the server, it's possible the event may not be logged by the server and therefore may not appear in the audit log. It's also possible that information in the audit record may not be trustworthy. However, because the user’s identity is validated by the token used to create the signal, the user’s identity listed in the corresponding audit record is accurate. |
-|(none)|PagePrefetched|A user’s client (such as website or mobile app) has requested the indicated page to help improve performance if the user browses to it. This event is logged to indicate that the page content has been served to the user’s client. This event isn't a definitive indication that the user navigated to the page. <br/><br/> When the page content is rendered by the client (as per the user’s request) a ClientViewSignaled event should be generated. Not all clients support indicating a pre-fetch, and therefore some pre-fetched activities might instead be logged as PageViewed events.|
+|View signaled by client|ClientViewSignaled|A user's client (such as website or mobile app) has signaled that the indicated page has been viewed by the user. This activity is often logged following a PagePrefetched event for a page. <br/><br/>**NOTE**: Because ClientViewSignaled events are signaled by the client, rather than the server, it's possible the event may not be logged by the server and therefore may not appear in the audit log. It's also possible that information in the audit record may not be trustworthy. However, because the user's identity is validated by the token used to create the signal, the user's identity listed in the corresponding audit record is accurate. |
+|(none)|PagePrefetched|A user's client (such as website or mobile app) has requested the indicated page to help improve performance if the user browses to it. This event is logged to indicate that the page content has been served to the user's client. This event isn't a definitive indication that the user navigated to the page. <br/><br/> When the page content is rendered by the client (as per the user's request) a ClientViewSignaled event should be generated. Not all clients support indicating a pre-fetch, and therefore some pre-fetched activities might instead be logged as PageViewed events.|
 ||||
 
+#### The app\@sharepoint user in audit records
+
+In audit records for some file activities (and other SharePoint-related activities), you may notice the user who performed the activity (identified in the User and UserId fields) is app@sharepoint. This indicates that the "user" who performed the activity was an application. In this case, the application was granted permissions in SharePoint to perform organization-wide actions (such as search a SharePoint site or OneDrive account) on behalf of a user, admin, or service. This process of giving permissions to an application is called *SharePoint App-Only* access. This indicates that the authentication presented to SharePoint to perform an action was made by an application, instead of a user. This is why the app@sharepoint user is identified in certain audit records. For more information, see [Grant access using SharePoint App-Only](https://docs.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs).
+
+For example, app@sharepoint is often identified as the user for "Performed search query" and "Accessed file" events. That's because an application with SharePoint App-Only access in your organization performs search queries and accesses files when applying retention policies to sites and OneDrive accounts.
+
+Here are a few other scenarios where app@sharepoint may be identified in an audit record as the user who performed an activity:
+
+- Office 365 Groups. When a user or admin creates a new group, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group. These tasks are performed an application on behalf of the user who created the group.
+
+- Microsoft Teams. Similar to Office 365 groups, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group when a team is created.
+
+- Compliance features. When an admin implements compliance features, such as retention policies, eDiscovery holds, and auto-applying sensitivity labels.
+
+In these and other scenarios, you'll also notice that multiple audit records with app@sharepoint as the specified user were created within a very short time frame, often within a few seconds of each other. This also indicates they were probably triggered by the same user-initiated task. Also, the ApplicationDisplayName and EventData fields in the audit record may help you identify the scenario or application that triggered the event.
 
 ### Folder activities
 
-The following table describes the folder activities in SharePoint Online and OneDrive for Business.
+The following table describes the folder activities in SharePoint Online and OneDrive for Business. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -368,7 +384,7 @@ The following table describes the folder activities in SharePoint Online and One
 
 ### SharePoint list activities
 
-The following table describes activities related to when users interact with lists and list items in SharePoint Online.
+The following table describes activities related to when users interact with lists and list items in SharePoint Online. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -446,7 +462,7 @@ The following table lists file synchronization activities in SharePoint Online a
 
 ### Site permissions activities
 
-The following table lists events related to assigning permissions in SharePoint and using groups to give (and revoke) access to sites.
+The following table lists events related to assigning permissions in SharePoint and using groups to give (and revoke) access to sites. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -470,7 +486,7 @@ The following table lists events related to assigning permissions in SharePoint 
 
 ### Site administration activities
 
-The following table lists events that result from site administration tasks in SharePoint Online.
+The following table lists events that result from site administration tasks in SharePoint Online. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -567,9 +583,9 @@ The following table lists user administration activities that are logged when an
 |:-----|:-----|:-----|
 |Added user|Add user|An Office 365 user account was created.|
 |Changed user license|Change user license|The license assigned to a user what changed. To see what licenses were changes, see the corresponding **Updated user** activity.|
-|Changed user password|Change user password|Administrator changed the password for a user.|
+|Changed user password|Change user password|A user changes their password. Self-service password reset has to be enabled (for all or selected users) in your organization to allow users to reset their password. You can also track self-service password reset activity in Azure Active Directory. For more information, see [Reporting options for Azure AD password management](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
 |Deleted user|Delete user|An Office 365 user account was deleted.|
-|Reset user password|Reset user password|Administrator reset the password for a user.|
+|Reset user password|Reset user password|Administrator resets the password for a user.|
 |Set property that forces user to change password|Set force change user password|Administrator set the property that forces a user to change their password the next time the user sign in to Office 365.|
 |Set license properties|Set license properties|Administrator modifies the properties of a licensed assigned to a user.|
 |Updated user|Update user|Administrator changes one or more properties of a user account. For a list of the user properties that can be updated, see the "Update user attributes" section in [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).|
@@ -723,10 +739,10 @@ The following table lists the user and admin activities in Microsoft Teams that 
 |Added connector|ConnectorAdded|A user adds a connector to a channel.|
 |Added members|MemberAdded|A team owner adds members to a team, channel, or group chat.|
 |Added tab|TabAdded|A user adds a tab to a channel.|
-|Changed channel setting|ChannelSettingChanged|The ChannelSettingChanged operation is logged when the following activities are performed by a team member. For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>• Changes the name of a team channel (**Channel name**). <br/><br/>• Changes the description of a team channel (**Channel description**).|
-|Changed organization setting|TeamsTenantSettingChanged|The TeamsTenantSettingChanged operation is logged when the following activities are performed by a global admin (using the Microsoft 365 admin center); note that these activities affect organization-wide Microsoft Teams settings. For more information, see [Administrator settings for Microsoft Teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2). <br/> For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>• Enables or disables Microsoft Teams for the organization (**Microsoft Teams**). <br/><br/>• Enables or disables interoperability between Microsoft Teams and Skype for Business for the organization (**Skype for Business interoperability**). <br/><br/>• Enables or disables the organizational chart view in Microsoft Teams clients (Org chart view**). <br/><br/>• Enables or disables the ability for team members to schedule private meetings (**Private meeting scheduling**). <br/><br/>• Enables or disables the ability for team members to schedule channel meetings (Channel meeting scheduling**). <br/><br/>• Enables or disables video calling in Teams meetings (Video for Skype meetings**). <br/><br/>• Enables or disables screen sharing in Microsoft Teams meetups for the organization (**Screen sharing for Skype meetings**). <br/><br/>• Enables or disables that ability to add animated images (called Giphys) to Teams conversations (Animated images**). <br/><br/>• Changes the content rating setting for the organization (**Content rating**). The content rating restricts the type of animated image that can be displayed in conversations. <br/><br/>• Enables or disables the ability for team members to add customizable images (called custom memes) from the Internet to team conversations (Customizable images from the Internet**). <br/><br/>• Enables or disables the ability for team members to add editable images (called stickers) to team conversations (**Editable images**).<br/><br/>• Enables or disables that ability for team members to use bots in Microsoft Teams chats and channels (Org-wide bots**). <br/><br/>• Enables specific bots for Microsoft Teams. This doesn't include the T-Bot, which is Teams help bot that's available when bots are enabled for the organization (**Individual bots**). <br/><br/>• Enables or disables the ability for team members to add extensions or tabs (**Extensions or tabs**). <br/><br/>• Enables or disables the side-loading of proprietary Bots for Microsoft Teams (**Side loading of Bots**). <br/><br/>• Enables or disables the ability for users to send email messages to a Microsoft Teams channel (**Channel email**).|
+|Changed channel setting|ChannelSettingChanged|The ChannelSettingChanged operation is logged when the following activities are performed by a team member. For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>* Changes the name of a team channel (**Channel name**). <br/><br/>* Changes the description of a team channel (**Channel description**).|
+|Changed organization setting|TeamsTenantSettingChanged|The TeamsTenantSettingChanged operation is logged when the following activities are performed by a global admin (using the Microsoft 365 admin center); note that these activities affect organization-wide Microsoft Teams settings. For more information, see [Administrator settings for Microsoft Teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2). <br/> For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>* Enables or disables Microsoft Teams for the organization (**Microsoft Teams**). <br/><br/>* Enables or disables interoperability between Microsoft Teams and Skype for Business for the organization (**Skype for Business interoperability**). <br/><br/>* Enables or disables the organizational chart view in Microsoft Teams clients (Org chart view**). <br/><br/>* Enables or disables the ability for team members to schedule private meetings (**Private meeting scheduling**). <br/><br/>* Enables or disables the ability for team members to schedule channel meetings (Channel meeting scheduling**). <br/><br/>* Enables or disables video calling in Teams meetings (Video for Skype meetings**). <br/><br/>* Enables or disables screen sharing in Microsoft Teams meetups for the organization (**Screen sharing for Skype meetings**). <br/><br/>* Enables or disables that ability to add animated images (called Giphys) to Teams conversations (Animated images**). <br/><br/>* Changes the content rating setting for the organization (**Content rating**). The content rating restricts the type of animated image that can be displayed in conversations. <br/><br/>* Enables or disables the ability for team members to add customizable images (called custom memes) from the Internet to team conversations (Customizable images from the Internet**). <br/><br/>* Enables or disables the ability for team members to add editable images (called stickers) to team conversations (**Editable images**).<br/><br/>* Enables or disables that ability for team members to use bots in Microsoft Teams chats and channels (Org-wide bots**). <br/><br/>* Enables specific bots for Microsoft Teams. This doesn't include the T-Bot, which is Teams help bot that's available when bots are enabled for the organization (**Individual bots**). <br/><br/>* Enables or disables the ability for team members to add extensions or tabs (**Extensions or tabs**). <br/><br/>* Enables or disables the side-loading of proprietary Bots for Microsoft Teams (**Side loading of Bots**). <br/><br/>* Enables or disables the ability for users to send email messages to a Microsoft Teams channel (**Channel email**).|
 |Changed role of members in team|MemberRoleChanged|A team owner changes the role of members in a team. The following values indicate the Role type assigned to the user. <br/><br/> **1** - Indicates the Owner role.<br/>**2** - Indicates the Member role. <br/>**3** - Indicates the Guest role. <br/><br/> The Members property also includes the name of your organization, and the member's email address.|
-|Changed team setting|TeamSettingChanged|The TeamSettingChanged operation is logged when the following activities are performed by a team owner. For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>• Changes the access type for a team. Teams can be set as Private or Public (**Team access type**). When a team is private (the default setting), users can access the team only by invitation. When a team is public, it's discoverable by anyone. <br/><br/>• Changes the information classification of a team (**Team classification**). <br/> For example, team data can be classified as high business impact, medium business impact, or low business impact.<br/><br/>• Changes the name of a team (**Team name**). <br/><br/>• Changes the team description (Team description**). <br/><br/>• Changes made to any of the team settings. A team owner can access these settings in a Teams client by right-clicking a team, clicking **Manage team**, and then clicking the **Settings** tab. For these activities, the name of the setting that was changed is displayed in the **Item** column in the audit log search results.|
+|Changed team setting|TeamSettingChanged|The TeamSettingChanged operation is logged when the following activities are performed by a team owner. For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>* Changes the access type for a team. Teams can be set as Private or Public (**Team access type**). When a team is private (the default setting), users can access the team only by invitation. When a team is public, it's discoverable by anyone. <br/><br/>* Changes the information classification of a team (**Team classification**). <br/> For example, team data can be classified as high business impact, medium business impact, or low business impact.<br/><br/>* Changes the name of a team (**Team name**). <br/><br/>* Changes the team description (Team description**). <br/><br/>* Changes made to any of the team settings. A team owner can access these settings in a Teams client by right-clicking a team, clicking **Manage team**, and then clicking the **Settings** tab. For these activities, the name of the setting that was changed is displayed in the **Item** column in the audit log search results.|
 |Created team|TeamCreated|A user creates a team.|
 |Deleted channel|ChannelDeleted|A user deletes a channel from a team.|
 |Deleted team|TeamDeleted|A team owner deletes a team.|
@@ -782,7 +798,29 @@ You can search the audit log for app-related activities in Power Apps. These act
 
 ### Microsoft Stream activities
 
-You can search the audit log for activities in Microsoft Stream. These activities include video activities performed by users, group channel activities, and admin activities such as managing users, managing organization settings, and exporting reports. For a description of these activities, see the "Activities logged in Microsoft Stream" section in [Audit Logs in Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
+You can search the audit log for activities in Microsoft Stream. These activities include video activities performed by users, group channel activities, and admin activities such as managing users, managing organization settings, and exporting reports. For a description of these activities, see the "Actions logged in Stream" section in [Audit Logs in Microsoft Stream](https://docs.microsoft.com/stream/audit-logs#actions-logged-in-stream).
+
+### Content explorer activities
+
+The following table lists the activities in content explorer that are logged in the Office 365 audit log. Content explorer, which is accessed on the Data classifications tool in the Microsoft 365 compliance center. For more information, see [Using data classification content explorer](data-classification-content-explorer.md).
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Accessed item|LabelContentExplorerAccessedItem|An admin (or a user who's a member of the Content Explorer Content Viewer role group) uses content explorer to view an email message or SharePoint/OneDrive document.|
+||||
+
+### Quarantine activities
+
+The following table lists the quarantine activities that you can search for in the audit log. For more information about quarantine, see [Quarantine email messages in Office 365](../security/office-365-security/quarantine-email-messages.md).
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Deleted quarantine message|QuarantineDelete|A user deleted an email message that was deemed to be harmful.|
+|Exported quarantine message|QuarantineExport|A user exported an email message that was deemed to be harmful.|
+|Previewed quarantine message|QuarantinePreview|A user previewed an email message that was deemed to be harmful.|
+|Released quarantine message|QuarantineRelease|A user released an email message from quarantine that was deemed to be harmful.|
+|Viewed quarantine message's header|QuarantineViewHeader|A user viewed the header an email message that was deemed to be harmful.|
+||||
 
 ### Microsoft Forms activities
 
@@ -897,11 +935,11 @@ Most auditing data is available within 30 minutes but it may take up to 24 hours
 
 **How long are the audit records retained for?**
 
-As previously explained, the retention period for audit records depends on your organization's Office 365 or Microsoft subscription.
+As previously explained, the retention period for audit records depends on your organization's Office 365 or Microsoft 365 enterprise subscription.
 
-  - **Office 365 and Microsoft 365 E3:** Audit records are retained for 90 days. That means you can search the audit log for activities that were performed within the last 90 days.
+  - **Office 365 E3 and Microsoft 365 E3:** Audit records are retained for 90 days. That means you can search the audit log for activities that were performed within the last 90 days.
 
-  - **Office 365 or Microsoft 365 E5 or users with a Microsoft 365 E5 Compliance add-on license:** Audit records for Azure Active Directory, Exchange, and SharePoint activity are retained for one year by default. Organizations can also create audit log retention policies to retain audit records for activity in other services for up to one year. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
+  - **Office 365 E5 and Microsoft 365 E5 or users with a Microsoft 365 E5 Compliance add-on license:** Audit records for Azure Active Directory, Exchange, and SharePoint activity are retained for one year by default. Organizations can also create audit log retention policies to retain audit records for activity in other services for up to one year. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
 
 Also note that the duration of the retention duration for audit records is based on per-user licensing. For example, if a user in your organization is assigned an Office 365 E3 license, then the audit records for activities performed by that user are retained for 90 days.
 

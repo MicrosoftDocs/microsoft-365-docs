@@ -16,10 +16,11 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
-description: "Set up Office 365 Advanced Threat Protection, and safeguard sensitive data."
+description: "Set up Office 365 Advanced Threat Protection and safeguard sensitive data against phishing, malware, and other threats."
 ---
 # Increase threat protection
 

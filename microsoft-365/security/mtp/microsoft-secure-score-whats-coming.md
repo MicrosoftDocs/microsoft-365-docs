@@ -25,26 +25,31 @@ To make Microsoft Secure Score a better representative of your security posture 
 
 To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
 
-## March 16th 2020
+## April 21st 2020
 
 ### Removing improvement actions that don't meet expectations for reliable measurement or don't provide a useful representation of security posture
 
 To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement actions.
 
-- Store user documents in OneDrive for Business
-- Set up Office 365 ATP Safe Attachment policies
-- Set up Office 365 Safe Links to verify URLs
-- Do not allow mailbox delegation
-- Allow anonymous guest sharing links for sites and docs
-- Turn on Cloud App Security Console
-- Configure expiration time for external sharing links
+- Delete/block accounts not used in last 30 days
+- Designate fewer than 5 global admins
+- Apply IRM protections to documents
+- Apply Data Loss Prevention policies
 
-### Supporting security defaults for Azure AD improvement actions
+### Adding additional control support in the preview version
+- Do not allow users to grant consent to unmanaged applications (currently available in released version)
 
-Microsoft Secure Score will be updating improvement actions to support [security defaults in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which make it easier to help protect your organization with pre-configured security settings for common attacks.
+#### Support for additional Microsoft Cloud App Security improvement actions
+- Disable Print spooler service on domain controllers
+- Modify unsecure Kerberos delegations to prevent impersonation
+- Protect and manage local admin passwords with Microsoft LAPS
+- Reduce lateral movement path risk to sensitive entities
+- Remove dormant accounts from sensitive groups
+- Remove unsecure SID history attributes from entities
+- Resolve unsecure account attributes
+- Stop clear text credentials exposure
+- Stop legacy protocols communication
+- Stop weak cipher usage
 
-It will affect the following improvement actions:
-
-- Ensure all users can complete multi-factor authentication for secure access
-- Require MFA for administrative roles
-- Enable policy to block legacy authentication
+#### Support for Microsoft Defender ATP Threat & Vulnerability Management (TVM) security recommendations
+- All released security recommendations supplied by TVM will now also be available in Microsoft Secure Score

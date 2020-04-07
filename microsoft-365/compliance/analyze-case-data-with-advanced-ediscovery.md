@@ -18,7 +18,7 @@ description: "Get an overview of the Analyze process, which allows you to set pa
 
 ---
 
-# Analyze case data with Office 365 Advanced eDiscovery
+# Analyze case data with Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -41,7 +41,7 @@ Before running Analyze, define the criteria for selecting and processing files, 
   
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Understanding document similarity](understand-document-similarity-in-advanced-ediscovery.md)
   

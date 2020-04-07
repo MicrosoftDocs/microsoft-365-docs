@@ -1,5 +1,5 @@
 ---
-title: "Using data classification content explorer (preview)"
+title: "Get started with content explorer (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,7 +18,7 @@ search.appverid:
 description: "Content explorer allows you to natively view labeled items."
 ---
 
-# Using data classification content explorer (preview)
+# Get started with content explorer (preview)
 
 The data classification content explorer allows you to natively view the items that were summarized on the overview page.
 

@@ -120,24 +120,24 @@ The diagram contains the following information:
 
 - **Sender domains**
 
-- **Filter verdicts**: The values here are related to the available anti-phishing and anti-spam filter verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). The available values are described in the following table:
+- **Filter verdicts**: The values here are related to the available phishing and spam filtering verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). The available values are described in the following table:
 
   |Value|Spam filter verdict|Description|
   |:-----|:-----|:-----|
-  | **Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by the spam filter (for example, by a mail flow rule, also known as a transport rule).<br/><br/>The message skipped spam filtering for other reasons (for example, the sender and recipient appear to be in the same organization).|
-  |**Blocked**|`SFV:SKS`|The message was marked as spam before being evaluated by the spam filter (for example, by a mail flow rule).|
-  |**Detected**|`SFV:SPM`|The message was marked as spam by the spam filter.|
-  |**Not Detected**|`SFV:NSPM`|The message was marked as not spam by the spam filter.|
+  | **Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by spam filtering (for example, by a mail flow rule, also known as a transport rule).<br/><br/>The message skipped spam filtering for other reasons (for example, the sender and recipient appear to be in the same organization).|
+  |**Blocked**|`SFV:SKS`|The message was marked as spam before being evaluated by spam filtering (for example, by a mail flow rule).|
+  |**Detected**|`SFV:SPM`|The message was marked as spam by spam filtering.|
+  |**Not Detected**|`SFV:NSPM`|The message was marked as not spam by spam filtering.|
   |**Released**|`SFV:SKQ`|The message skipped spam filtering because it was released from quarantine.|
-  |**Tenant Allow**<sup>\*</sup>|`SFV:SKA`|The message skipped spam filtering due to the spam filter policy configuration (for example, the sender or domain was in hte **Sender allow** list).|
-  |**Tenant Block**<sup>\*\*</sup>|`SFV:SKA`|The message was blocked by spam filtering due to the spam filter policy configuration (for example, the sender or domain was in the **Sender block** list).|
+  |**Tenant Allow**<sup>\*</sup>|`SFV:SKA`|The message skipped spam filtering due to anti-spam policy settings (for example, the sender was in the allowed sender list or allowed domain list).|
+  |**Tenant Block**<sup>\*\*</sup>|`SFV:SKA`|The message was blocked by spam filtering due to anti-spam policy settings (for example, the sender was in the allowed sender list or allowed domain list).|
   |**User Allow**<sup>\*</sup>|`SFV:SFE`|The message skipped spam filtering because the sender was in a user's Safe Senders list in Outlook.|
   |**User Block**<sup>\*\*</sup>|`SFV:BLK`|The message was blocked by spam filtering because the sender was in a user's Blocked Senders list in Outlook.|
-  |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) took action on the delivered message according to your spam filter policy configuration (moved to the Junk Email folder or Quarantined).|
+  |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) took action on the delivered message according to your anti-spam policy settings (moved to the Junk Email folder or Quarantined).|
 
-  <sup>\*</sup> Review your spam filter policy configuration settings, because the allowed message would have likely been blocked by the service.
+  <sup>\*</sup> Review your anti-spam policies, because the allowed message would have likely been blocked by the service.
 
-  <sup>\*\*</sup> Review your spam filter policy configuration settings, because these messages should be quarantined, not delivered.
+  <sup>\*\*</sup> Review your anti-spam policies, because these messages should be quarantined, not delivered.
 
 - **Delivery locations**: You'll likely want to investigate messages that were actually delivered to recipients (either to the Inbox or the Junk Email folder), even if users didn't click on the payload URL in the message. You can also remove the quarantined messages from quarantine. For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
 

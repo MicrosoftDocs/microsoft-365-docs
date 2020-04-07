@@ -19,6 +19,8 @@ description: "When you create a sensitivity label, you can restrict access to co
 
 # Restrict access to content by using sensitivity labels to apply encryption 
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 When you create a sensitivity label, you can restrict access to content that the label will be applied to. For example, with the encryption settings for a sensitivity label, you can protect content so that:
 
 - Only users within your organization can open a confidential document or email.
@@ -54,7 +56,7 @@ When you use this encryption solution, the **super user** feature ensures that a
 - **Remove**: Removes encryption if the document or email is encrypted.
 
 > [!NOTE]
-> The **Remove** option is supported by the Azure Information Protection unified labeling client only. When you use built-in labeling, a label with this option is visible in Office apps and if selected, the encryption behavior is the same as **None**.
+> The **Remove** option is supported by the Azure Information Protection unified labeling client only. When you use built-in labeling, a label with this option is visible in Office apps and services and if selected, the encryption behavior is the same as **None**.
 
 Configuring the encryption options:
 

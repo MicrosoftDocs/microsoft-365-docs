@@ -117,3 +117,5 @@ After you register your domain (at a domain registrar), you sign in to Office 36
 [Domains FAQ](../setup/domains-faq.md)
 
 [Get help with Office 365 domains](get-help-with-domains.md)
+
+[Update DNS records to keep your website with your current hosting provider](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider) 

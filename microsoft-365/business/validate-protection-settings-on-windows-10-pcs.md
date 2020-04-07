@@ -16,11 +16,12 @@ ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: "Learn how to validate Microsoft 365 Business app protection settings in Windows 10 devices."
+description: "Validate Microsoft 365 Business app protection settings on Windows 10 devices and verify users cannot copy company data to personal files or non-managed apps."
 ---
 
 # Validate app protection settings on Windows 10 PCs

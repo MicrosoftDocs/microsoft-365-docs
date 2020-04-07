@@ -23,14 +23,11 @@ description: "Import non-Office 365 data to a review set in an Advanced eDiscove
 
 Not all documents that you need to analyze in Advanced eDiscovery are located in Office 365. With the non-Office 365 data import feature in Advanced eDiscovery, you can upload documents that aren't located in Office 365 to a review set. This article shows you how to bring your non-Office 365 documents into Advanced eDiscovery for analysis.
 
->[!Note]
->Advanced eDiscovery requires an Microsoft 365 or Office 365 E5 subscription for your organization or an E3 subscription with the Advanced Compliance add-on subscription. If you don't have that plan and want to try Advanced eDiscovery, you can sign up for a trial of Office 365 Enterprise E5.
-
 ## Before you begin
 
 Using the upload non-Office 365 feature described in this article requires that you have the following:
 
-- All custodians that you want to associate non-Office 365 content to must be assigned an E5 license, or an E3 license with an Advanced Compliance add-on license.
+- All custodians that you want to associate non-Office 365 content to must be assigned the appropriate license. For more information, see [Get started with Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
 - An existing Advanced eDiscovery case.
 
@@ -57,7 +54,7 @@ Using the upload non-Office 365 feature described in this article requires that 
 
 ## Upload non-Office 365 content into Advanced eDiscovery
 
-1. As an eDiscovery Manager or eDiscovery Administrator, open Advanced eDiscovery, then the case that the non-Office 365 data will be uploaded to.  
+1. As an eDiscovery Manager or eDiscovery Administrator, open Advanced eDiscovery, and go to the case that the non-Office 365 data will be uploaded to.  
 
 2. Click **Review sets**, and then select the review set to upload the non-Office 365 data to.  If you don't have a review set, you can create one. 
  

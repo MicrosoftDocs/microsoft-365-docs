@@ -18,7 +18,7 @@ ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: "Learn how to run the Express analysis mode of Office 365 Advanced eDiscovery"
 ---
 
-# Use Express Analysis in Office 365 Advanced eDiscovery
+# Use Express Analysis in Advanced eDiscovery (classic) 
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -127,5 +127,5 @@ Choose **OK**to save the advanced settings, **Restore defaults** to use default 
 ## See also
 <a name="BK_AdvancedSettings"> </a>
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
 

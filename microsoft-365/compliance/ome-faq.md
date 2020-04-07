@@ -110,7 +110,8 @@ Yes! You can enable encryption for PDF attachments for your Office 365 organizat
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. Messages inherit the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. If an Outlook or Outlook on the web user attaches an unprotected PDF attachment to a protected message, the message inherits the protection of the message. Users can only open the encrypted attachments in applications that support protected PDFs (for example, the OME Portal and the Azure Information Protection Viewer).
+PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. For all Outlook clients, messages and unprotected PDF attachments inherit the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Also, if an Outlook on the web user attaches an unprotected PDF document and applies protection to message, the message inherits the protection of the message. Users can only open the encrypted attachments in applications that support protected PDFs (for example, the OME Portal and the Azure Information Protection Viewer).
+
   
 ## Are OneDrive for Business attachments supported?
 
@@ -118,7 +119,7 @@ Not yet. OneDrive for Business attachments are not supported and end-users can't
   
 ## What email clients support preview of encrypted attachments in protected emails?
 
-When attachments are protected with a protected mail, Outlook clients provide tha ability to preview the document directly. Outlook supports preview of Office documents (Docx, xlsx, pptx, doc, xls, ppt). Outlook on the web supports preview of Office documents (docx, xlsx, pptx) and PDF.  
+When attachments are protected with a protected mail, Outlook clients provide tha ability to preview the document directly. Outlook supports preview of Office documents (docx, xlsx, pptx, doc, xls, ppt). Outlook on the web supports preview of Office documents (docx, xlsx, pptx) and PDF.  
 
 ## Can I automatically encrypt messages by setting up policies?
 
@@ -156,7 +157,7 @@ Not at this time.
 
 Yes! Encrypted messages are supported for a shared mailbox.
 
-- Users can open protected mails in a shared mMailbox where the shared mailbox received a protected mail as part of a distribution group.
+- Users can open protected mails in a shared mailbox where the shared mailbox received a protected mail as part of a distribution group.
 
 - Users can view attachments that inherit protection from email when they use Outlook for Windows, Outlook for Mac, and Outlook on the web.
 

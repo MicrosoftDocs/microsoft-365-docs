@@ -20,10 +20,11 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
-description: "Learn how to purchase and sign up for Microsoft 365 Business."
+description: "Learn what Microsoft 365 Business includes, and get step-by-step guidance in signing up for Microsoft 365 Business."
 ---
 
 # Sign up for Microsoft 365 Business

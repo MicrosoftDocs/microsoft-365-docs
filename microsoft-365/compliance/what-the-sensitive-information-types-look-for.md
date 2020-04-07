@@ -5908,7 +5908,8 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - No keyword from Keyword_us_drivers_license is found.
 
 ```xml
-    <Pattern confidenceLevel="75">
+<Entity id="dfeb356f-61cd-459e-bf0f-7c6d28b458c6 patternsProximity="300">
+	<Pattern confidenceLevel="75">
         <IdMatch idRef="Func_new_york_drivers_license_number" />
         <Match idRef="Keyword_new_york_drivers_license_name" />
         <Match idRef="Keyword_us_drivers_license" />
@@ -5921,6 +5922,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
           <Match idRef="Keyword_us_drivers_license" />
         </Any>
     </Pattern>
+</Entity>
 ```
 
 ### Keywords

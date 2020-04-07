@@ -20,6 +20,8 @@ description: "File plan manager provides advanced management capabilities for re
 
 # Overview of file plan manager
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 File plan manager provides advanced management capabilities for retention labels, retention label policies, and provides an integrated way to traverse label and label-to-content activity for your entire content lifecycle – from creation, through collaboration, record declaration, retention, and finally disposition. 
 
 To access file plan manager in the security and compliance center, go to **Records management** > **File plan**.
@@ -28,15 +30,11 @@ To access file plan manager in the security and compliance center, go to **Recor
 
 ## Accessing file plan manager
 
-There are two requirements to access file plan manager, they are:
-
-- An Office 365 Enterprise E5 subscription.
-
-- The user has been in assigned one of the following roles in the security and compliance center:
+To access file plan manager, you must have one of the following admin roles:
     
-    - Retention Manager
-    
-    - View-only Retention Manager
+- Retention Manager
+
+- View-only Retention Manager
 
 ## Default retention labels and label policy
 
@@ -139,7 +137,7 @@ To import new retention labels and modify existing retention labels:
    |RetentionAction|String|This property specifies what action to take after the value specified by the RetentionDuration property expires. Valid values are:</br>**Delete**: Items older than the value specified by the RetentionDuration property are deleted.</br>**Keep**: Retain items for the duration specified by the RetentionDuration property and then doing nothing when the duration period expires. </br>**KeepAndDelete**: Retain items for the duration specified by the RetentionDuration property and then delete them when the duration period expires.   |
    |RetentionDuration|String|This property specifies the number of days to retain the content. Valid values are:</br>**Unlimited**: Items will be retained indefinitely. </br>***n***: A positive integer; for example, **365**. 
    |RetentionType|String|This property specifies whether the retention duration is calculated from the content creation date, event date, labeled (tagged) date, or last modified date. Valid values are:</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
-   |ReviewerEmail|SmtpAddress|When this property is populated, a disposition review will be triggered when the retention duration expires. This property specifies the email address of a reviewer for **Delete** and **KeepAndDelete** retention actions. You can include the email address of individual users, distribution or security groups, or Office 365 groups. You can specify multiple email addresses separated by commas.|
+   |ReviewerEmail|SmtpAddress|When this property is populated, a disposition review will be triggered when the retention duration expires. This property specifies the email address of a reviewer for **Delete** and **KeepAndDelete** retention actions. You can include the email address of individual users, distribution, or security groups. You can specify multiple email addresses separated by semicolons.|
    |ReferenceId|String|This property specifies the value that's displayed in the **Reference Id** file plan descriptor.| 
    |DepartmentName|String|This property specifies the value that's displayed in the **Function/department** file plan descriptor.|
    |Category|String|This property specifies the value that's displayed in the **Category** file plan descriptor.|

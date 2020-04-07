@@ -20,12 +20,13 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: "Learn to reset or wipe a device that is managed through protection policies."
+description: "Learn to remove company data from devices managed through protection policies as well as reset Windows 10 devices to their factory settings."
 ---
 
 # Manage protected devices with Microsoft 365 Business

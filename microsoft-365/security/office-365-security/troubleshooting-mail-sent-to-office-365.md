@@ -165,7 +165,7 @@ Just as important as the way the emails are sent is the content they contain. Wh
 
   `unsubscribe.bulkmailer.com`
 
-  `profiles.excite.com`
+  `profile.excite.com`
 
   `options.yahoo.com`
 

@@ -2,4 +2,4 @@
 - You have enrolled devices in Intune so that the devices can receive the policies you create.
 - Apps are added to devices so your users get access to your organization's Microsoft 365 cloud services, such as Exchange Online and SharePoint Online.
 - Features and settings are configured and applied to your devices using the Azure AD users and groups you create, which might include enabling anti-virus and restricting specific apps.
-- Compliance policies are in place to require a firewall or a password length on a device. If devices aren't compliant, conditional access blocks access to your organization's data.
+- Compliance policies are in place to require a firewall or a password length on a device. If devices aren't compliant, Conditional Access blocks access to your organization's data.

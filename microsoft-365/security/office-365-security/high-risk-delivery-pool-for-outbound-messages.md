@@ -2,10 +2,10 @@
 title: "High-risk delivery pool for outbound messages"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 8/24/2016
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,37 +15,36 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: "When a customer's email system has been compromised by malware or a malicious spam attack, and it's sending outbound spam through the hosted filtering service, this can result in the IP addresses of the Office 365 data center servers being listed on third-party block lists."
+description: "Learn how the high risk delivery pool is used to protect the reputation of email servers in the Office 365 datacenters."
 ---
 
-# High-risk delivery pool for outbound messages
+# High-risk delivery pool for outbound messages in Office 365
 
-When a customer's email system has been compromised by malware or a malicious spam attack, and it's sending outbound spam through the hosted filtering service, this can result in the IP addresses of the Office 365 data center servers being listed on third-party block lists. Destination servers that do not use the hosted filtering service, but do use these block lists, reject all email sent from any of the hosted filtering IP addresses that have been added to those lists. To prevent this, all outbound messages that exceed the spam threshold are sent through a high-risk delivery pool. This secondary outbound email pool is only used to send messages that may be of low quality. This helps to protect the rest of the network from sending messages that are more likely to result in the sending IP address being blocked.
-  
-The use of a dedicated high-risk delivery pool helps ensure that the normal outbound pool is only sending messages that are known to be of a high-quality. Using this secondary IP pool helps to reduce the probability of the normal outbound-IP pool being added to a blocked list. The possibility of the high-risk delivery pool being placed on a blocked list remains a risk. This is by design.
-  
-Messages where the sending domain has no address record (A record), which gives you the IP address of the domain, and no MX record, which helps direct mail to the servers that should receive the mail for a particular domain in the DNS, are always routed through the high-risk delivery pool regardless of their spam disposition.
-  
-## Understanding Delivery Status Notification (DSN) messages
+Email servers in the Office 365 datacenters might be temporarily guilty of sending spam. For example, a malware or malicious spam attack in an on-premises email organization that sends outbound mail through Office 365, or compromised Office 365 accounts. These scenarios can result in the IP address of the affected Office 365 datacenter servers appearing on third-party block lists. Destination email organizations that use these block lists will reject email from those messages sources.
 
-The outbound high-risk delivery pool manages the delivery for all "bounced" or "failed" (DSN) messages.
-  
-Possible causes for a surge in DSN messages include the following:
-  
-- A spoofing campaign affecting one of the customers using the service
-    
-- A directory harvest attack
-    
-- A spam attack
-    
-- A rogue SMTP server
-    
-All of these issues can result in a sudden increase in the number of DSN messages being processed by the service. Many times, these DSN messages appear to be spam to other email servers and services.
-  
-## For more information
+To prevent this, all outbound messages from Office 365 datacenter servers that's determined to be spam or that exceeds the sending limits of [the service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or [outbound spam policies](configure-the-outbound-spam-policy.md) are sent through the _high-risk delivery pool_.
 
-[Configure the outbound spam policy](configure-the-outbound-spam-policy.md)
-  
-[Anti-spam protection FAQ](anti-spam-protection-faq.md)
-  
+The high risk delivery pool is a secondary IP address pool for outbound email that's only used to send "low quality" messages (for example, spam and [backscatter](backscatter-messages-and-eop.md)). Using the high risk delivery pool helps prevent the normal IP address pool for outbound email from sending spam. The normal IP address pool for outbound email maintains the reputation sending "high quality" messages, which reduces the likelihood that these IP address will appear on IP block lists.
 
+The very real possibility that IP addresses in the high-risk delivery pool will be placed on IP block lists remains, but this is by design. Delivery to the intended recipients isn't guaranteed, because many email organizations won't accept messages from the high risk delivery pool.
+
+For more information, see [Control outbound spam in Office 365](outbound-spam-controls.md).
+
+> [!NOTE]
+> Messages where the source email domain has no A record and no MX record defined in public DNS are always routed through the high-risk delivery pool, regardless of their spam or sending limit disposition.
+
+## Bounce messages
+
+The outbound high-risk delivery pool manages the delivery for all non-delivery reports (also known as NDRs, bounce messages, delivery status notifications, or DSNs).
+
+Possible causes for a surge in NDRs include:
+
+- A spoofing campaign that affects one of the customers using the service.
+
+- A directory harvest attack.
+
+- A spam attack.
+
+- A rogue email server.
+
+All of these issues can result in a sudden increase in the number of NDRs being processed by the service. Many times, these NDRs appear to be spam to other email servers and services (also known as _[backscatter](backscatter-messages-and-eop.md)_).

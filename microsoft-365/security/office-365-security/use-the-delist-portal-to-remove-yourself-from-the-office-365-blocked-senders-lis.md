@@ -54,4 +54,4 @@ where  _IP address_ is the IP address of the computer on which the mail server r
     > [!NOTE]
     > It may take up to 24 hours or results can vary widely before restrictions are removed.
 
-Read about [How to prevent real email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md ) and [Controlling outbound spam in Office 365](outbound-spam-controls.md) to prevent IP from being blacklisted.
+See [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md) and [Outbound spam protection in Office 365](outbound-spam-controls.md) to prevent IP from being blacklisted.

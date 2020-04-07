@@ -56,11 +56,9 @@ These settings cover a range of features that are outside of security policies.
 
 Troubleshoot general issues and trends by using the reports in the admin center. Find single point specific data about a message by using the message trace tool. Learn more about reporting at [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Learn more about the message trace tool at [Message trace in the Security & Compliance Center](message-trace-scc.md).
 
-## Reporting False Positive and False Negatives to Microsoft
+## Report false positive and false negatives to Microsoft
 
-Admins should submit false negatives (spam) and false positives (non-spam) to Microsoft via our Admin Submissions portal. Emails, files, and URLs can be submitted to help admins determine why we delivered or did not deliver messages to end-users. For details, see [How to submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning](admin-submission.md).
-
-End-users can also directly report false negatives (spam) and false positives (non-spam) to Microsoft for analysis when they disagree with verdicts given. For details, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+To help improve spam filtering in the service for everyone, you should report false positives (good email marked as bad) and false negatives (bad email allowed) to Microsoft for analysis. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## Create mail flow rules
 

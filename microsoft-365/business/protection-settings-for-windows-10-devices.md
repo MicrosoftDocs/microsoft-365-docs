@@ -21,12 +21,13 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: "Learn how to create an app management policy and protect work files on Windows 10 devices."
+description: "Learn how to create an app management policy and protect work files on your users' personal Windows 10 devices."
 ---
 
 # Set application protection settings for Windows 10 devices

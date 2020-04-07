@@ -167,7 +167,6 @@ This will prevent all users from acquiring the following add-ins from the store.
     
   - Office
     
-  - iOS (iPad only)
     
 - Acquisitions starting within **AppSource**
     
@@ -212,7 +211,6 @@ To be GDPR compliant for minors you need to ensure that one of following builds 
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
-|Office 2016 for iOS (ipad only)  <br/> |2.12.18032600  <br/> |
 |Office for the web  <br/> |N/A  <br/> |
    
  **For Outlook**: 

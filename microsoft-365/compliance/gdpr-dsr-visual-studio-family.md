@@ -211,7 +211,7 @@ From time to time, we invite customers to provide feedback on these products via
 ## Learn more
 
 - [Microsoft's GDPR Commitments to Customers of our Generally Available Enterprise Software Products](https://docs.microsoft.com/legal/gdpr)
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [Microsoft Privacy Dashboard](https://account.microsoft.com/privacy)
 - [Microsoft Privacy Response Center](https://aka.ms/userprivacysite)

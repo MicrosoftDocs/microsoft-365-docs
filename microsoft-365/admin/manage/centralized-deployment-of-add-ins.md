@@ -51,7 +51,7 @@ Centralized Deployment doesn't support the following:
 - For Word, Excel, and PowerPoint add-ins, your users must be using one of the following:
   - On a Windows device, Version 1704 or later of Office 365 ProPlus.
   - On a Mac, Version 15.34 or later.
-      - On iOS (iPad only), Version 2.9.18010804 or later.
+
 - For Outlook, your users must be using one of the following: 
   - Version 1701 or later of Office 365 ProPlus.
   - Version 1808 or later of Office Professional Plus 2019 or Office Standard 2019.
