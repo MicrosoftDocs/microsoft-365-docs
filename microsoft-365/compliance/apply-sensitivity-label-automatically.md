@@ -42,7 +42,7 @@ There are two different methods for automatically applying a sensitivity label:
 
 - **Service-side labeling when content is already saved (in SharePoint Online or OneDrive for Business) or emailed (processed by Exchange Online)**: Use an auto-labeling policy—currently in preview. 
     
-    This method is sometimes referred to as auto-classification with sensitivity labels. You might also hear it referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes). 
+    This method is sometimes referred to as auto-classification with sensitivity labels. You might also hear it referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes). See the preview announcement, [Announcing public preview of auto classification with sensitivity labels in Microsoft 365 services](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961).
     
     Because this labeling is applied by services rather than by applications, you don't need to worry about what apps users have and what version. As a result, this capability is immediately available throughout your organization and suitable for labeling at scale. Auto-labeling policies don't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label.
     
@@ -176,7 +176,7 @@ Specific to the Azure Information Protection unified labeling client:
 
 ## How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange
 > [!NOTE]
-> Auto-labeling policies are currently in public preview and subject to change.
+> Auto-labeling policies are gradually rolling out to tenants in public preview and subject to change.
 
 ### Prerequisites for auto-labeling policies
 
