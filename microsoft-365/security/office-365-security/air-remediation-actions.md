@@ -32,9 +32,7 @@ description: "Learn about remediation actions in automated investigation and res
 
 ## Threats and remediation actions
 
-The following table summarizes threats and appropriate remediation actions in Office 365 ATP. 
-
-In some cases, an automated investigation does not result in a specific remediation action. Your security operations team can further investigate and take appropriate actions as described in the table below.
+The following table summarizes threats and appropriate remediation actions in Office 365 ATP. In some cases, an automated investigation does not result in a specific remediation action. Your security operations team can further investigate and take appropriate actions as described in the table below.
 
 |Category|Threat/risk  |Remediation action(s)  |
 |---------|---------|---------|
