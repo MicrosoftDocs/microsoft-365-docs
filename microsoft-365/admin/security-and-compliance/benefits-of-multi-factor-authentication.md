@@ -59,7 +59,7 @@ For any size subscription, Microsoft strongly recommends MFA for user accounts t
 
 You enable MFA for individual user accounts from the **Active user** pane of the Microsoft 365 admin center.
 
-![](../media/benefits-of-multi-factor-authentication/per-user-mfa.png)
+![](../../media/benefits-of-multi-factor-authentication/per-user-mfa.png)
 
 ### Security defaults
 
@@ -71,7 +71,7 @@ Security defaults ensure that all organizations have a basic level of security f
 
 You enable or disable security defaults from the **Properties pane** for Azure Active Directory (Azure AD) in the Azure portal.
 
-![](../media/benefits-of-multi-factor-authentication/security-defaults-mfa.png)
+![](../../media/benefits-of-multi-factor-authentication/security-defaults-mfa.png)
 
 ### Conditional Access
 
@@ -85,7 +85,7 @@ You can also use Conditional Access policies for more advanced capabilities, suc
 
 You configure Conditional Access policies from the **Security** pane for Azure AD in the Azure portal.
 
-![](../media/benefits-of-multi-factor-authentication/conditional-access-mfa.png)
+![](../../media/benefits-of-multi-factor-authentication/conditional-access-mfa.png)
 
 ### Using these together
 
@@ -106,6 +106,8 @@ This table shows the results of enabling MFA with security defaults, Conditional
 
 ## Related articles
 
-[Top 10 ways to secure Office 365 and Microsoft 365 Business plans](secure-your-business-data.md)
+[Set up multi-factor authentication for Office 365 users](set-up-multi-factor-authentication.md)
 
-[Enable Modern Authentication for Office 2013 on Windows devices](enable-modern-authentication.md)
+[What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+
+[What are security defaults?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
