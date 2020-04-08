@@ -32,8 +32,7 @@ When we detect significant issues within Microsoft's Global Network or with inte
 
 | Location | Issue Type | Detail |
 | --- | --- | --- |
-| Italy | ISP Infrastructure (External) | Congestion detected within Internet Service Provider infrastructure in Italy could result in a poor Microsoft 365 user experience. Please check the Service Health dashboard for more details. |
-| South Africa | Microsoft Global Network | Congestion detected within Microsoft's network in South Africa impacts services delivered from that region. Please check the Service Health dashboard for more details. |
+| **No current issues** |  |  |
 
 ## Recommendations to improve network experience
 
