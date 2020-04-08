@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "This article describes how to get started using core eDiscovery in Microsoft 365. After you assign eDiscovery permissions and create a new case, you can add members, create eDiscovery holds, and then search for and export data that's relevant to your investigation."
+description: "This article describes how to get started using core eDiscovery in Microsoft 365. After you assign eDiscovery permissions and create a case, you can add members, create eDiscovery holds, and then search for and export data that's relevant to your investigation."
 ---
 
 # Get started with Core eDiscovery
@@ -45,7 +45,7 @@ For information about Microsoft 365 and Office 365 licensing, download and see t
 
 ## Step 2: Assign eDiscovery permissions
 
-To access Core eDiscovery or be added as a member of an Core eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Office 365 Security & Compliance Center. Members of this role group can create and manage Core eDiscovery cases. They can add and remove members, place an eDiscovery hold on users, create and edit searches, and export content from a Core eDiscovery case.
+To access Core eDiscovery or be added as a member of a Core eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Office 365 Security & Compliance Center. Members of this role group can create and manage Core eDiscovery cases. They can add and remove members, place an eDiscovery hold on users, create and edit searches, and export content from a Core eDiscovery case.
 
 Complete the following steps to add users to the eDiscovery Manager role group:
 
@@ -105,10 +105,23 @@ If you create a case in Step 3 and you're the only person who will use the case,
 
 2. On the **Manage this case** flyout page, under **Manage members**, click **Add** to add members to the case. 
 
-    You can also choose to add a role group to the case. Under **Manage role groups**, click **Add**. Role groups control who can assign members to an eDiscovery case. That means you can only assign the role groups that you are a member of to a case.
+    You can also choose to add role group as members of a case. Under **Manage role groups**, click **Add**. You can only assign the role groups that you are a member of to a case. That's because role groups control who can assign members to an eDiscovery case.
 
 3. In the list of people or role groups that can be added as members of the case, click the check box next to the names of the people (or role groups) that you want to add. If you have a large list of people who can added as members, use the **Search** box to search for a specific person in the list.
   
 4. After you select the people or role groups to add as members of the case, click **Add**.
-    
+
 5. Click **Save** to save the new list of case members.
+
+## Explore the Core eDiscovery workflow
+
+To get you started using core eDiscovery, here's a simple workflow of creating eDiscovery holds for people of interest, searching for content that relevant to your investigation, and then exporting that data for further review. In each of these steps, we'll also highlight some extended Core eDiscovery functionality that you can explore.
+
+![Core eDiscovery workflow](../media/CoreEdiscoveryWorkflow.png)
+
+1. **[Create an eDiscovery hold](create-ediscovery-holds.md)**.  
+
+2. **[Search for content](search-for-content-in-core-ediscovery.md)**. 
+
+3. **[Export and download search results](export-content-in-core-ediscovery.md)**. 
+
