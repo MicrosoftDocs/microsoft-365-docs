@@ -168,7 +168,7 @@ Suppose that you want to see email messages that users in your organization have
 
 1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
-2. In the **View** menu, choose **Email** > **Submissions**.
+2. In the **View** menu, choose **Email** > **Submissions**. (This was formerly called **User-reported**.)
 
    ![View menu for Explorer](../../media/ExplorerViewMenuEmailUserReported.png)
 
