@@ -158,3 +158,7 @@ To disable the preview, use the Set-SPOTenant cmdlet:
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $false
     ```
+
+## Next steps
+
+Now that you've enabled sensitivity labels for Office files in SharePoint and OneDrive, consider automatically labeling these files with auto-labeling policies. For more information, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically).
