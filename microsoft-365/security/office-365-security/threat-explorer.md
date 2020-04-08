@@ -232,4 +232,4 @@ To learn more about roles and permissions, see the following resources:
 - An **All email** view is available in **Threat Explorer** (and is not in the **real-time detections** report).
 - More filtering capabilities and available actions are included in **Threat Explorer**.
 
-For more details, see [Office 365 ATP Service Description: Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/en-us/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
+For more details, see [Office 365 ATP Service Description: Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
