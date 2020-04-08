@@ -31,7 +31,7 @@ DoD Cloud Service Support defines the policies, security controls, and other req
 Microsoft's government cloud services meet the demanding requirements of the US Department of Defense, from impact levels 2 through 5, enabling U.S. defense agencies to benefit from the cost savings and rigorous security of the Microsoft Cloud. By deploying protected services including Azure Government, Office 365 U.S. Government, and Dynamics 365 Government, defense agencies can use a rich array of compliant services.
 
 - Learn about the benefits of DoD DISA L2, L4 on the Microsoft Cloud: [Download the Department of Defense DISA Backgrounder](https://aka.ms/disa-backgrounder)
-- Learn how to accelerate your DoD DISA L2, L4 deployment with our [Azure DoD Blueprint](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)
+- Learn how to accelerate your DoD DISA L2, L4 deployment with our [Azure DoD Blueprints](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy)
 
 ## DoD Impact Level 5 Provisional Authorization
 

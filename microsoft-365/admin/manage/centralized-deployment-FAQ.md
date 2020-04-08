@@ -28,7 +28,7 @@ Centralized Deployment is the recommended way for an Office 365 admin to deploy 
 
 Centralized deployment of add-ins requires that users are using Office 365 ProPlus (and are signed into Office using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Azure Active Directory.  
  
-Centralized Deployment is only supported for a Outlook Online mailboxes. It does not support deployment to on-premises Exchange mailboxes.
+Centralized Deployment is only supported for online mailboxes. It does not support deployment to on-premises Exchange mailboxes.
  
 You can use the [Office 365 Centralized Deployment Compatibility Checker](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
   
@@ -42,7 +42,7 @@ For more details, see [User and Group assignments](https://docs.microsoft.com/mi
    
 ## How long does it take for add-ins to show up for all users?  
 
-It can take up to 12 hours for an add-in to show up for all users. It can take the same amount of time for add-in updates, changes from turn on or turn off, or add-in removals. 
+It can take up to 24 hours for an add-in to show up for all users. It can take the same amount of time for add-in updates, changes from turn on or turn off, or add-in removals. 
   
 ## As an administrator, how do I manage the user access to add-ins for my organization?
 
