@@ -18,9 +18,13 @@ description: "Microsoft 365 comes with a number of built-in classifiers you can 
 
 # Using a built-in classifier (preview)
 
-Microsoft has trained and tested a number of classifiers using very large sample data sets, which can help to identify certain categories of content. See [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md). These classifiers show up in the `Ready to use` group by default.
+Microsoft has trained and tested five classifiers using very large sample data sets, which can help to identify certain categories of content. See [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md). These classifiers show up in the `Ready to use` group by default.
 
-- **Offensive Language**: detects text items that contain profanities, slurs, taunts, and disguised expressions (which are expressions that have the same meaning as a more offensive term).
+Microsoft 365 comes with five recommended built-in classifiers:
+
+> [!CAUTION]
+> We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** built-in classifiers instead.
+
 - **Resumes**: detects items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information.
 - **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub.
 
