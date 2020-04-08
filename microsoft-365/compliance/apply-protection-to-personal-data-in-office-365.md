@@ -18,7 +18,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Learn how to use data loss prevention (DLP) policies to protect personal data in Office 365."
+description: Learn how to use data loss prevention (DLP) policies in the compliance center to protect personal data in Office 365.
+ms.custom: seo-marvel-apr2020
 ---
 # Apply protection to personal data in Office 365
 
@@ -36,7 +37,7 @@ With DLP, you can:
 
 -   Help users learn how to stay compliant without interrupting their workflow.
 
--   View DLP reports showing content that matches your organization’s DLP policies.
+-   View DLP reports showing content that matches your organization's DLP policies.
 
 For more information, see [Overview of data loss prevention policies](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
@@ -130,22 +131,22 @@ Description: Display policy tips to employees, notify compliance teams when this
 </tr>
 <tr class="odd">
 <td align="left">Find content that contains</td>
-<td align="left">Click ‘Edit’ and add all the sensitive information types you curated for your environment.</td>
+<td align="left">Click 'Edit' and add all the sensitive information types you curated for your environment.</td>
 </tr>
 <tr class="even">
 <td align="left">Detect when this content is shared</td>
-<td align="left">Check this box and select ‘with people outside my organization.’</td>
+<td align="left">Check this box and select 'with people outside my organization.'</td>
 </tr>
 <tr class="odd">
 <td align="left">Notify users when content matches the policy settings</td>
-<td align="left"><p>Check this box (“Show policy tips to users and send them an email notification.”)</p>
-<p>Click ‘Customize the tip and email’ and update these for your environment. See the default notifications in this article: <a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Send email notifications and show policy tips for DLP policies</a>.</p></td>
+<td align="left"><p>Check this box ("Show policy tips to users and send them an email notification.")</p>
+<p>Click 'Customize the tip and email' and update these for your environment. See the default notifications in this article: <a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Send email notifications and show policy tips for DLP policies</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Detect when a specific amount of sensitive info is being shared at one time</td>
-<td align="left"><p>‘Detect when content that’s being shared contains: At least ____ instances of the same sensitive info type’ — Set this to 1.</p>
-<p>‘Send incident reports in email’ — check this box. Click ‘Choose what to include in the report and who receives it.’ Be sure to add your compliance team.</p>
-<p>‘Restrict who can access the content and override the policy’ — clear this checkbox to receive notifications about sensitive information without preventing users from access that information.</p></td>
+<td align="left"><p>'Detect when content that's being shared contains: At least ____ instances of the same sensitive info type' — Set this to 1.</p>
+<p>'Send incident reports in email' — check this box. Click 'Choose what to include in the report and who receives it.' Be sure to add your compliance team.</p>
+<p>'Restrict who can access the content and override the policy' — clear this checkbox to receive notifications about sensitive information without preventing users from access that information.</p></td>
 </tr>
 </tbody>
 </table>
@@ -158,7 +159,7 @@ All locations includes:
 
 - Exchange mailboxes
 
-Because Content Search doesn’t currently let you test sensitive information types with email, consider creating separate policies for Exchange with a subset of sensitive information types in each policy and monitoring the rollout of these policies.
+Because Content Search doesn't currently let you test sensitive information types with email, consider creating separate policies for Exchange with a subset of sensitive information types in each policy and monitoring the rollout of these policies.
 
 ## Additional protection you can apply to protect personal data in Office 365
 
@@ -273,7 +274,7 @@ The following table summarizes the controls you can configure.
 <tbody>
 <tr class="odd">
 <td align="left">Type of sharing</td>
-<td align="left"><p>Don’t allow sharing outside your organization (can be set for individual site collections)</p>
+<td align="left"><p>Don't allow sharing outside your organization (can be set for individual site collections)</p>
 <p>Allow sharing to authenticated external users only (allow new or limit to existing, can be set for individual site collections)*</p>
 <p>Allow sharing to external users with an anonymous access link (can be set for individual site collections)</p>
 <p>Limit external sharing using domains (allow and deny list)</p>
@@ -282,7 +283,7 @@ The following table summarizes the controls you can configure.
 </tr>
 <tr class="even">
 <td align="left">What external users can do</td>
-<td align="left"><p>Prevent external users from sharing files, folders, sites they don’t own</p>
+<td align="left"><p>Prevent external users from sharing files, folders, sites they don't own</p>
 <p>Require external users to accept sharing invitations with the same account the invitation was sent to</p></td>
 </tr>
 <tr class="odd">
@@ -360,7 +361,7 @@ For starting point recommendations and configuration guidance, see [Microsoft se
 
 For hybrid identity environments with AD FS, see [Recommended security policies and configurations](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
-The following illustration describes how cloud services (SaaS, PaaS), account types (tenant domain accounts vs. B2B accounts), and service access capabilities relate. It’s important to note which capabilities can be used with B2B accounts.
+The following illustration describes how cloud services (SaaS, PaaS), account types (tenant domain accounts vs. B2B accounts), and service access capabilities relate. It's important to note which capabilities can be used with B2B accounts.
 
 ![Cloud services, account types, and access capabilities](../media/Apply-protection-to-personal-data-in-Office-365-image4.png)
 
@@ -368,7 +369,7 @@ For accessibility, the rest of this section describes this illustration.
 
 ### Cloud services
 
-Azure Active Directory provides identity access to any cloud service, including non-Microsoft providers such as Amazon Web Services. The illustration shows Office 365, “Other SaaS app,” and “PaaS app.” Arrows point from Azure Active Directory to each of these services, showing that Azure Active Directory can be used for authentication to all of these app types.
+Azure Active Directory provides identity access to any cloud service, including non-Microsoft providers such as Amazon Web Services. The illustration shows Office 365, "Other SaaS app," and "PaaS app." Arrows point from Azure Active Directory to each of these services, showing that Azure Active Directory can be used for authentication to all of these app types.
 
 ### Types of accounts
 

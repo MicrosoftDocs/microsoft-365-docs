@@ -14,9 +14,11 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-ms.custom: Ent_Solutions
+ms.custom: 
+ - Ent_Solutions
+ - seo-marvel-apr2020
 ms.assetid: 
-description: "Use this topic to learn more about configuring privileged access management."
+description: Use this article to learn more about enabling and configuring privileged access management in Office 365.
 ---
 
 # Get started with privileged access management
@@ -32,7 +34,7 @@ Follow these steps to set up and use privileged access in your Office 365 organi
 
 - [Step 1: Create an approver's group](privileged-access-management-configuration.md#step1)
 
-    Before you start using privilege access, determine who needs approval authority for incoming requests for access to elevated and privileged tasks. Any user who is part of the Approvers’ group is able to approve access requests. This group is enabled by creating a mail-enabled security group in Office 365.
+    Before you start using privilege access, determine who needs approval authority for incoming requests for access to elevated and privileged tasks. Any user who is part of the Approvers' group is able to approve access requests. This group is enabled by creating a mail-enabled security group in Office 365.
 
 - [Step 2: Enable privileged access](privileged-access-management-configuration.md#step2)
 

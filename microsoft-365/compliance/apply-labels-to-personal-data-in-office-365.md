@@ -16,7 +16,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Learn how to use Office labels as part of your GDPR protection plan."
+description: Learn how to use Office labels as part of your General Data Protection Regulation (GDPR) protection plan.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Apply labels to personal data in Office 365
@@ -32,7 +33,7 @@ Cloud App Security doesn't currently support retention labels, but you can use O
 
 [Sensitivity labels](sensitivity-labels.md) are currently recommended for applying labels to files on premises and in other cloud services and providers. These are also recommended for files in Office 365 that require Azure Information Protection encryption for data protection, such as trade secret files.
 
-At this time, using Azure Information Protection to apply encryption is not recommended for files in Office 365 with data that is subject to the GDPR. Office 365 services currently cannot read into AIP-encrypted files. Therefore, the service can’t find sensitive data in these files.
+At this time, using Azure Information Protection to apply encryption is not recommended for files in Office 365 with data that is subject to the GDPR. Office 365 services currently cannot read into AIP-encrypted files. Therefore, the service can't find sensitive data in these files.
 
 Retention labels can be applied to mail in Exchange Online and these labels work with Office 365 data loss prevention. 
 
@@ -96,7 +97,7 @@ For accessibility, the following table provides the same examples in the illustr
 
 For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment. It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.
 
-The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here’s what you need to know.
+The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here's what you need to know.
 
 ### One label at a time
 
@@ -195,8 +196,8 @@ The following illustration shows how to create an auto-apply label for the Custo
 
 In the illustration:
 
-- The “Customer data” label is created.
+- The "Customer data" label is created.
 
 - The desired sensitive information types for GDPR are listed: Belgium National Number, Credit Card Number, Croatia Identity Card Number, Finland National ID.
 
-- Create an auto-apply policy assigns the label “Customer data” to any file that includes one of the sensitive information types that you add to the policy.
+- Create an auto-apply policy assigns the label "Customer data" to any file that includes one of the sensitive information types that you add to the policy.
