@@ -11,7 +11,9 @@ ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
-description: "Microsoft Exchange Online Protection (EOP) is a cloud-based email filtering service that helps protect your organization against spam and malware, and includes features to safeguard your organization from messaging-policy violations."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn about Microsoft Exchange Online Protection (EOP) and how it helps protect your organization against spam and malware."
 ---
 
 # Exchange Online Protection overview

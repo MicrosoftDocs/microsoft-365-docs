@@ -15,9 +15,11 @@ ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-ms.custom: TopSMBIssues
+ms.custom: 
+- TopSMBIssues
+- seo-marvel-apr2020
 localization_priority: Priority
-description: "This article describes how Office 365 mitigates against phishing attacks that use forged sender domains, that is, domains that are spoofed. It accomplishes this by analyzing the messages and blocking the ones that can be authenticated neither by using standard email authentication methods, nor other sender reputation techniques. This change was implemented to reduce the number of phishing attacks to which organizations in Office 365 are exposed."
+description: "In this article, you'll learn about the anti-spoofing protection in Office 365, which mitigates against phishing attacks from spoofed domains."
 ---
 
 # Anti-spoofing protection in Office 365

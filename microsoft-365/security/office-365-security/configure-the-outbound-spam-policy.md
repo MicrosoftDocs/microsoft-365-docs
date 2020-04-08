@@ -15,7 +15,9 @@ search.appverid:
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
-description: "Outbound spam filtering is always enabled if you use the service for sending outbound email, thereby protecting organizations using the service and their intended recipients."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn about how to configure outbound spam policies that apply to specific users, groups, or domains in your organization."
 ---
 
 # Configure outbound spam filtering in Office 365
