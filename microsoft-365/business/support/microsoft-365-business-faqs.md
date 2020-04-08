@@ -133,7 +133,8 @@ Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune 
   
 
 ### Does Azure Active Directory (Azure AD) Premium P1 come with Microsoft 365 Business? 
-Microsoft 365 Business includes select Azure AD Premium P1 features such as self-service password reset with Azure AD writeback, Azure Multi-Factor Authentication, and Conditional Access. It does not include the entirety of Azure AD Premium P1. For more information, see the [Microsoft 365 Business Service Description](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148).
+
+Formerly Microsoft 365 Business had a subset of Azure AD Premium Plan 1 capabilities including Conditional Access, self-service password reset, and Multi-Factor Authentication. We are now rolling out the full Azure AD Premium P1 license to Microsoft 365 Business subscribers, initially to new customers and then to current subscribers. For more information, see [Microsoft 365 Business Service Description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) and this [blog](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/azure-active-directory-premium-p1-is-coming-to-microsoft-365/ba-p/1275496).
  
  
 ### Does Microsoft 365 Business Premium allow customers to manage Macs? 
@@ -156,6 +157,7 @@ No, customers that require Windows Defender Advanced Threat Protection need eith
 ## Partner opportunity
 
 ### Where can I learn more about the opportunities and benefits in becoming a Microsoft Partner? 
+
 IT service providers that are not already Microsoft partners can learn more about the Microsoft Cloud Solution Provider program at
 [https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business).
 

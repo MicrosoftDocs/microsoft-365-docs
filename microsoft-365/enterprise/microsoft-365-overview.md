@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 04/07/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -40,7 +40,7 @@ Microsoft 365 for enterprise is available in three plans.
 |:-------|:-----|
 | E3 | Access core products and features within Microsoft 365 to enhance workplace productivity and drive innovation, securely. |
 | E5 | Access the latest products and features within Microsoft 365, including advanced threat protection, security and collaboration tools.. Includes all of E3's capabilities plus advanced security, voice, and data analysis tools. |
-| F1 | Connect with your Firstline Workers through purpose-built tools and resources that allow them to do their best work. |
+| F3 | Connect with your Firstline Workers through purpose-built tools and resources that allow them to do their best work. |
 |||
 
 If you have Microsoft 365 E3, you can also get these [offerings](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
@@ -50,7 +50,7 @@ If you have Microsoft 365 E3, you can also get these [offerings](https://www.mic
 
 These offerings contain additional features that are included with Microsoft 365 E5.
 
-For more information, see [Features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+For more information about what's included with each plan, see [Transform your enterprise with Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
 
 ## Get the big picture
 
