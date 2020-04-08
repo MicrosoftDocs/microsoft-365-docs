@@ -61,54 +61,6 @@ The values are explained at [Authentication-results message header fields used b
 
 By looking at the headers of a message, admins or even end users can determine how Office 365 arrived at the conclusion that the sender is spoofed.
 
-### Differentiate between different types of spoofing
-
-Microsoft differentiates between two different types of spoofed messages:
-
-- **Intra-org spoofing**: Also known as self-to-self spoofing. For example:
-
-  - The sender and recipient are in the same domain. For example:
-    > From: chris@contoso.com <br/> To: michelle@contoso.com
-
-  - The sender and the recipient are in subdomains of the same domain:
-    > From: laura@marketing.fabrikam.com <br/> To: julia@engineering.fabrikam.com
-
-  - The sender and recipient are in different domains that belong to the same organization (that is, both domains are configured as [accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the same organization):
-    > From: sender @ microsoft.com <br/> To: recipient @ bing.com
-
-    Spaces are used in the email addresses to prevent spambot harvesting.
-
-  Messages that fail composite authentication due to intra-org spoofing contain the following header values:
-
-  `Authentication-Results: ... compauth=fail reason=6xx`
-
-  `X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
-
-  - `reason=6xx` indicates intra-org spoofing.
-
-  - CAT is the category of the message, and it is normally SPM (spam), but occasionally might be HSPM (high confidence spam) or PHISH (phishing) depending upon what other types of patterns were detected in the message.
-
-  - SFTY is the safety level of the message. 9 indicates phishing, .11 indicates intra-org spoofing.
-
-- **Cross-domain spoofing**: The sender and recipient domains are different, and have no relationship to each other (also known as external domains). For example:
-    > From: chris@contoso.com <br/> To: michelle@tailspintoys.com
-
-  Messages that fail composite authentication due to cross-domain spoofing contain the following headers values:
-
-  `Authentication-Results: ... compauth=fail reason=000/001`
-
-  `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
-
-  - `reason=000` value indicates the message failed explicit email authentication. `reason=001` indicates the message failed implicit email authentication.
-
-  - SFTY is the safety level of the message. 9 indicates phishing, .22 indicates cross-domain spoofing.
-
-For both intra-org and cross-domain spoofing, the following red safety tip is stamped on the message:
-
-> The sender failed our fraud detection checks and may not be who they appear to be.
-
-You can only differentiate between intra-org spoofing and cross-domain spoofing when you compare the From address to the recipient's address, or by inspecting the message headers.
-
 ## Why email authentication is not always enough to stop spoofing
 
 Relying only on email authentication records to determine if an incoming message is spoofed has the following limitations:
@@ -170,15 +122,7 @@ To: michelle@fabrikam.com
 
 ### Understanding changes in how spoofed email is treated
 
-The following table summarizes how spoofed email is treated
 
-|||||
-|---|---|---|---|
-|**Type of spoof**|**Category**|**Safety tip added?**|**Applies to**|
-|DMARC fail (quarantine or reject)|HSPM (default), may also be SPM or PHSH|No|All Office 365, Outlook.com|
-|Intra-org|SPM|Yes|All Office 365, Outlook.com|
-|Cross-domain|SPOOF|Yes|Office 365 ATP and E5|
-|
 
 ### Changing your anti-spoofing settings
 

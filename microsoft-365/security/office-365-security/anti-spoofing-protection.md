@@ -30,7 +30,7 @@ The following anti-spoofing technologies are available in EOP:
 
 - **Spoof intelligence**: Review spoofed messages from senders in internal and external domains, and allow or block those senders. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
 
-- **Anti-phishing policies**: Basic anti-phishing policies are available in EOP, and more advanced anti-phishing policies are available in Advanced Threat Protection (ATP). For more information, see [Anti-phishing protection in Office 365](anti-phishing-protection.md).
+- **Anti-phishing policies**: Basic anti-phishing policies are available in EOP, and more advanced anti-phishing policies are available in Office 365 Advanced Threat Protection (ATP). For more information, see [Anti-phishing protection in Office 365](anti-phishing-protection.md).
 
 - **Email authentication**: An integral part of any anti-spoofing effort is the use of email authentication (also known as email validation) by using SPF, DKIM, and DMARC. For more information, see [Email authentication in Office 365](email-validation-and-authentication.md).
 
@@ -65,21 +65,71 @@ Spoofing messages have two negative implications for real life users:
 
   The message really did come from Microsoft, but users have been conditioned to be suspicious. Because it's difficult to the difference between a real password reset message and a fake one, users might ignore the message, report it as spam, or unnecessarily report the message to Microsoft as phishing.
 
-## Viewing reports of how many messages were marked as spoofed
+## Different types of spoofing
 
-Once your anti-spoofing policy is enabled, you can use threat investigation and response capabilities to get numbers around how many messages are marked as phish. To do this, go into the Security & Compliance Center (SCC) under Threat Management \> Explorer, set the View to Phish, and group by Sender Domain or Protection Status:
+Microsoft differentiates between two different types of spoofed messages:
 
-![Viewing how many messages are marked as phish](../../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
+- **Intra-org spoofing**: Protection from this type of spoofing is available in EOP. Also known as _self-to-self_ spoofing. For example:
 
-You can interact with the various reports to see how many were marked as phishing, including messages marked as SPOOF. To learn more, see [Get started with Office 365 Threat investigation and response](office-365-ti.md).
+  - The sender and recipient are in the same domain:
+    > From: chris@contoso.com <br/> To: michelle@contoso.com
 
-You can't yet split out which messages were marked due to spoofing as opposed to other types of phishing (general phishing, domain or user impersonation, and so on). However, later, you will be able to do this through the Security & Compliance Center. Once you do, you can use this report as a starting place to identify sending domains that may be legitimate that are being marked as spoof due to failing authentication.
+  - The sender and the recipient are in subdomains of the same domain:
+    > From: laura@marketing.fabrikam.com <br/> To: julia@engineering.fabrikam.com
 
-The following screenshot is a proposal for how this data will look, but may change when released:
+  - The sender and recipient are in different domains that belong to the same organization (that is, both domains are configured as [accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the same organization):
+    > From: sender @ microsoft.com <br/> To: recipient @ bing.com
 
-![Viewing phishing reports by detection type](../../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
+    Spaces are used in the email addresses to prevent spambot harvesting.
 
-For non-ATP and E5 customers, these reports will be available later under the Threat Protection Status (TPS) reports, but will be delayed by at least 24 hours. This page will be updated as they are integrated into the Security & Compliance Center.
+  Messages that fail [composite authentication](email-validation-and-authentication.md#composite-authentication) due to intra-org spoofing contain the following header values:
+
+  `Authentication-Results: ... compauth=fail reason=6xx`
+
+  `X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
+
+  - `reason=6xx` indicates intra-org spoofing.
+
+  - CAT is the category of the message, and it is normally SPM (spam), but occasionally might be HSPM (high confidence spam) or PHISH (phishing) depending upon what other types of patterns were detected in the message.
+
+  - SFTY is the safety level of the message. 9 indicates phishing, .11 indicates intra-org spoofing.
+
+- **Cross-domain spoofing**: Protection from this type of spoofing is only available in Office 365 ATP. The sender and recipient domains are different, and have no relationship to each other (also known as external domains). For example:
+    > From: chris@contoso.com <br/> To: michelle@tailspintoys.com
+
+  Messages that fail [composite authentication](email-validation-and-authentication.md#composite-authentication) due to cross-domain spoofing contain the following headers values:
+
+  `Authentication-Results: ... compauth=fail reason=000/001`
+
+  `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
+
+  - `reason=000` value indicates the message failed explicit email authentication. `reason=001` indicates the message failed implicit email authentication.
+
+  - SFTY is the safety level of the message. 9 indicates phishing, .22 indicates cross-domain spoofing.
+
+For both intra-org and cross-domain spoofing, the following red safety tip is stamped on the message:
+
+> The sender failed our fraud detection checks and may not be who they appear to be.
+
+You can only differentiate between intra-org spoofing and cross-domain spoofing when you compare the From address to the recipient's address, or by inspecting the message headers.
+
+The following table summarizes how spoofed email is treated:
+
+|||||
+|---|---|---|---|
+|**Type of spoof**|**Category**|**Safety tip added?**|**Applies to**|
+|DMARC fail (quarantine or reject)|HSPM (default), may also be SPM or PHSH|No|EOP, Outlook.com|
+|Intra-org|SPM|Yes|EOP, Outlook.com|
+|Cross-domain|SPOOF|Yes|Office 365 ATP|
+|
+
+For more information about the Category and compauth values, see [Anti-spam message headers in Office 365](anti-spam-message-headers.md).
+
+## Spoofed message reports of how many messages were marked as spoofed
+
+EOP organizations can the **Spoof detections** report in the reports dashboard. For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
+
+Office 365 ATP organization can use Threat Explorer to view information about phishing attempts. For more information, see [Office 365 threat investigation and response](office-365-ti.md).
 
 ### Predicting how many messages will be marked as spoof
 
@@ -93,15 +143,11 @@ This feature is currently under development. As more details are defined, this p
 
 ### Legitimate scenarios to disable anti-spoofing
 
-Anti-spoofing better protects customers from phishing attacks, and therefore disabling anti-spoofing protection is strongly discouraged. By disabling it, you may resolve some short-term false positives, but long term you will be exposed to more risk. The cost for setting up email authentication for the source email system, or making adjustments in the phishing policies, are usually one-time events or require only minimal, periodic maintenance. However, the cost to recover from a phishing attack where data has been exposed, or assets have been compromised is much higher.
+We strongly discourage disabling anti-spoofing protection because of the protection it provides from phishing attacks. In the short term, disabling anti-spoofing protection might resolve some short-term problems with false positives (good mail marked as bad), but in the long term, you risk exposure to phishing attack. The cost that's required to configure [email authentication](email-validation-and-authentication.md) for the source email system is a one-time expense. The cost for you to adjust your protection settings will at most require minimal, periodic maintenance. However, the cost to recover from a phishing attack where data has been exposed or where company assets have been compromised is much, much higher.
 
-For this reason, it is better to work through anti-spoofing false positives than to disable anti-spoof protection.
-
-However, there is a legitimate scenario where anti-spoofing should be disabled, and that is when there are additional mail-filtering products in the message routing, and Office 365 is not the first hop in the email path:
+The only legitimate scenario where you really might need to disable anti-spoofing is if your inbound email is delivered to a third-party filtering product or service (on-premises Exchange, Ironport, etc.) before it reaches EOP as show in the following diagram:
 
 ![Customer MX record does not point to Office 365](../../media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
-
-The other server may be an Exchange on-premises mail server, a mail filtering device such as Ironport, or another cloud hosted service.
 
 If the MX record of the recipient domain does not point to Office 365, then there is no need to disable anti-spoofing because Office 365 looks up your receiving domain's MX record and suppresses anti-spoofing if it points to another service. If you don't know if your domain has another server in front, you can use a website like MX Toolbox to look up the MX record. It might say something like the following:
 
